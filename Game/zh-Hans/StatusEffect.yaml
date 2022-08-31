@@ -4,25 +4,25 @@ TempFirepower:
   Name: 暂得火力
   Description: |-
     在一回合内，获得 {Level} 点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
   Brief: |-
     在一回合内，获得若干点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
 
 Firepower:
   Name: 火力
   Description: |-
     获得 {Level} 点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
   Brief: |-
     获得若干点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
 
 TempFirepowerNegative:
   Name: 暂失火力
   Description: |-
     在一回合内，失去 {Level} 点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
   Brief: |-
     在一回合内，失去若干点火力。
     火力提高攻击造成的伤害。
@@ -31,10 +31,10 @@ FirepowerNegative:
   Name: 失去火力
   Description: |-
     失去 {Level} 点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
   Brief: |-
     失去若干点火力。
-    火力提高|攻击|造成的伤害。
+    火力提高攻击造成的伤害。
 
 TempSpirit:
   Name: 暂得灵力
@@ -79,40 +79,36 @@ Fragil:
 
 Weak:
   Name: 虚弱
-  Description: '{OwnerName}|攻击|造成的伤害降低 {Value}%，剩余 {Duration} 回合。'
+  Description: '{OwnerName}攻击造成的伤害降低 {Value}%，剩余 {Duration} 回合。'
   Brief: '{OwnerName}攻击造成的伤害降低 {Value}% ，持续一定的回合数。'
 
 Vulnerable:
   Name: 易伤
-  Description: '{OwnerName}受到|攻击|的伤害增加 {Value}%，剩余 {Duration} 回合。'
+  Description: '{OwnerName}受到攻击的伤害增加 {Value}%，剩余 {Duration} 回合。'
   Brief: '{OwnerName}受到攻击的伤害增加 {Value}% ，持续一定的回合数。'
 
 LockedOn:
   Name: 锁定
   Description: |-
-    {OwnerName}受到的伤害增加 {Level} 点。
+    {OwnerName}受到的攻击伤害增加 {Level} 点。
     回合开始时降低 1 层。
   Brief: |-
-    {OwnerName}受到的伤害增加若干点。
+    {OwnerName}受到的攻击伤害增加若干点。
     回合开始时降低 1 层。
 
 Graze:
   Name: 闪避
   Description: |-
-    {OwnerName}受到的|攻击|伤害降至 0 ，剩余 {Level} 次。
+    {OwnerName}受到的攻击伤害降至 0 ，剩余 {Level} 次。
     生效和回合开始时降低 1 层。
   Brief: |-
-    {OwnerName}受到的|攻击|伤害降至 0 。
+    {OwnerName}受到的攻击伤害降至 0 。
     生效和回合开始时降低 1 层。
 
 ExtraTurn:
   Name: 额外回合
-  Description: |-
-    {OwnerName}的回合结束后，进行额外的回合，剩余 {Level} 次。
-    额外的回合开始时不会失去|格挡|。
-  Brief: |-
-    {OwnerName}的回合结束后，进行额外的回合。
-    额外的回合开始时不会失去|格挡|。
+  Description: '{OwnerName}的回合结束后，进行额外的回合，剩余 {Level} 次。'
+  Brief: '{OwnerName}的回合结束后，进行额外的回合。'
 
 LimitedDamage:
   Name: 有限伤害
@@ -123,6 +119,11 @@ Invincible:
   Name: 天衣无缝
   Description: '{OwnerName}受到的伤害不会超过 1 ，剩余 {Duration} 回合。'
   Brief: '{OwnerName}受到的伤害不会超过 1 。'
+
+TurnStartDontLoseBlock:
+  Name: 保留格挡
+  Description: '{OwnerName}的回合开始时，不会失去|格挡|，剩余 {Level} 次。'
+  Brief: '{OwnerName}的回合开始时，不会失去|格挡|，剩余若干次。'
 
 Amulet:
   Name: 护身符
@@ -155,133 +156,53 @@ NextAttackUp:
 
 LoseRandomMana:
   Name: 失去法力
-  Description: 回合开始时，失去 {Level} 点随机的法力。
-  Brief: 回合开始时，失去若干点随机的法力。
+  Description: '{OwnerName}的回合开始时，失去 {Level} 点随机的法力。'
+  Brief: '{OwnerName}的回合开始时，失去若干点随机的法力。'
 
 NextTurnLoseRandomMana:
   Name: 下回合失去法力
-  Description: 下个回合开始时，失去 {Level} 点随机的法力。
-  Brief: 下个回合开始时，失去若干点随机的法力。
+  Description: '{OwnerName}的下个回合开始时，失去 {Level} 点随机的法力。'
+  Brief: '{OwnerName}的下个回合开始时，失去若干点随机的法力。'
 
 NextTurnLoseHp:
   Name: 下回合失去生命
-  Description: 下个回合开始时，失去 {Level} 点生命。
-  Brief: 下个回合开始时，失去若干点生命。
+  Description: '{OwnerName}的下个回合开始时，失去 {Level} 点生命。'
+  Brief: '{OwnerName}的下个回合开始时，失去若干点生命。'
 
 NextTurnGainBlock:
   Name: 下回合获得格挡
-  Description: 下个回合开始时，获得 {Level} 点|格挡|。
-  Brief: 下个回合开始时，获得若干点|格挡|。
+  Description: '{OwnerName}的下个回合开始时，获得 {Level} 点|格挡|。'
+  Brief: '{OwnerName}的下个回合开始时，获得若干点|格挡|。'
 
-NextTurnGraze:
-  Name: 下回合额外闪避
-  Description: 下个回合开始时，获得 {Level} 层|闪避|。
-  Brief: 下个回合开始时，获得若干层|闪避|。
+CantDrawNextTurn:
+  Name: 下回合无法抽牌
+  Description: 下回合抽牌阶段结束后无法再抽牌。
+  Brief: 下回合抽牌阶段结束后无法再抽牌。
 
-NextTurnExtraW:
-  Name: 下回合额外白色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraW}。
-  Brief: 下个回合开始时，获得{ExtraW}。
+CantDrawThisTurn:
+  Name: 无法抽牌
+  Description: 这回合内无法再抽牌。
+  Brief: 这回合内无法再抽牌。
 
-NextTurnExtraU:
-  Name: 下回合额外蓝色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraU}。
-  Brief: 下个回合开始时，获得{ExtraU}。
+NoAttackDamageNextTurn:
+  Name: 下回合时空破损
+  Description: 下回合无法造成攻击伤害。
+  Brief: 下回合无法造成攻击伤害。
 
-NextTurnExtraB:
-  Name: 下回合额外黑色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraB}。
-  Brief: 下个回合开始时，获得{ExtraB}。
+NoAttackDamageThisTurn:
+  Name: 时空破损
+  Description: 这回合内无法造成攻击伤害。
+  Brief: 这回合内无法造成攻击伤害。
 
-NextTurnExtraR:
-  Name: 下回合额外红色
-  Description: 下个回合开始时，获得 {Level} 点{rIcon}。
-  Brief: 下个回合开始时，获得{rIcon}。
-
-NextTurnExtraG:
-  Name: 下回合额外绿色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraG}。
-  Brief: 下个回合开始时，获得{ExtraG}。
-
-NextTurnExtraP:
-  Name: 下回合额外彩色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraP}。
-  Brief: 下个回合开始时，获得{ExtraP}。
-
-NextTurnExtraC:
-  Name: 下回合额外无色
-  Description: 下个回合开始时，获得 {Level} 点{ExtraC}。
-  Brief: 下个回合开始时，获得{ExtraC}。
-
-TurnExtraW:
-  Name: 回合额外白色
-  Description: 每回合开始时，获得 {Level} 点{ExtraW}。
-  Brief: 每回合开始时，获得{ExtraW}。
-
-TurnExtraU:
-  Name: 回合额外蓝色
-  Description: 每回合开始时，获得 {Level} 点{ExtraU}。
-  Brief: 每回合开始时，获得{ExtraU}。
-
-TurnExtraB:
-  Name: 回合额外黑色
-  Description: 每回合开始时，获得 {Level} 点{ExtraB}。
-  Brief: 每回合开始时，获得{ExtraB}。
-
-TurnExtraR:
-  Name: 回合额外红色
-  Description: 每回合开始时，获得 {Level} 点{ExtraR}。
-  Brief: 每回合开始时，获得{ExtraR}。
-
-TurnExtraG:
-  Name: 回合额外绿色
-  Description: 每回合开始时，获得 {Level} 点{ExtraG}。
-  Brief: 每回合开始时，获得{ExtraG}。
-
-TurnExtraP:
-  Name: 回合额外彩色
-  Description: 每回合开始时，获得 {Level} 点{ExtraP}。
-  Brief: 每回合开始时，获得{ExtraP}。
-
-TurnExtraC:
-  Name: 回合额外无色
-  Description: 每回合开始时，获得 {Level} 点{ExtraC}。
-  Brief: 每回合开始时，获得{ExtraC}。
-
-NextTurnExtraCards:
-  Name: 下回合额外抽牌
-  Description: 下个回合开始时，额外抽 {Level} 张牌。
-  Brief: 下个回合开始时，额外抽若干张牌。
-
-NextTurnFirepower:
-  Name: 下回合暂得火力
-  Description: 下个回合开始时，获得 {Level} 点|暂得火力|。
-  Brief: 下个回合开始时，获得若干点|暂得火力|。
-
-NextTurnSpirit:
-  Name: 下回合暂得灵力
-  Description: 下个回合开始时，获得 {Level} 点|暂得灵力|。
-  Brief: 下个回合开始时，获得若干点|暂得灵力|。
-
-NextTurnFirepowerNegative:
-  Name: 下回合暂失火力
-  Description: 下个回合开始时，获得 {Level} 点|暂失火力|。
-  Brief: 下个回合开始时，获得若干点|暂失火力|。
-
-NextTurnSpiritNegative:
-  Name: 下回合暂失灵力
-  Description: 下个回合开始时，获得 {Level} 点|暂失灵力|。
-  Brief: 下个回合开始时，获得若干点|暂失灵力|。
-
-ForbidTurnStartDraw:
-  Name: 回合开始时无法抽牌
-  Description: '{PlayerName}在回合开始时无法抽牌。'
-  Brief: '{PlayerName}在回合开始时无法抽牌。'
+TimeIsLimited:
+  Name: 时间有限
+  Description: 卡牌费用增加{Mana}，直到敌人行动完毕。
+  Brief: 卡牌费用增加若干，直到敌人行动完毕。
 
 MaoyuBlock:
   Name: 毛茸茸
-  Description: '{OwnerName}被|攻击|后获得 {Level} 点|格挡|。'
-  Brief: '{OwnerName}被|攻击|后获得若干点|格挡|。'
+  Description: '{OwnerName}被攻击后获得 {Level} 点|格挡|。'
+  Brief: '{OwnerName}被攻击后获得若干点|格挡|。'
 
 Servant:
   Name: 使魔
@@ -295,13 +216,13 @@ Servant:
 DeathExplodeNotCount:
   Name: 死亡弹幕
   Description: |-
-    {OwnerName}被击败时对{PlayerName}造成 {Level} 点|攻击|伤害。
+    {OwnerName}被击败时对{PlayerName}造成 {Level} 点攻击伤害。
     主动引爆时伤害翻倍。
 
 DeathExplodeCount:
   Name: 死亡弹幕
   Description: |-
-    {OwnerName}被击败时对{PlayerName}造成 {Level} 点|攻击|伤害。
+    {OwnerName}被击败时对{PlayerName}造成 {Level} 点攻击伤害。
     {Count} 回合后主动引爆，伤害翻倍。
 
 PhoneBillSe:
@@ -358,7 +279,7 @@ RinAura:
 
 Fengyin:
   Name: 封印
-  Description: '{PlayerName}无法打出|攻击|牌，剩余 {Duration} 回合。'
+  Description: '{PlayerName}无法打出攻击牌，剩余 {Duration} 回合。'
 
 FirepowerIsJustice:
   Name: 火力就是正义！
@@ -367,7 +288,7 @@ FirepowerIsJustice:
 PrivateSquare:
   Name: 个人空间
   Description: |-
-    每打出 {Limit} 张卡牌，{OwnerName}就会对{PlayerName}造成 {Level} 点|攻击|伤害。
+    每打出 {Limit} 张卡牌，{OwnerName}就会对{PlayerName}造成 {Level} 点攻击伤害。
     剩余 {Count} 张。
 
 Emi:
@@ -390,16 +311,16 @@ TurnStartPurify:
 
 GuangxueMicai:
   Name: 光学迷彩
-  Description: '{OwnerName}受到的|攻击|伤害降低一半，剩余 {Duration} 回合。'
-  Brief: '{OwnerName}受到的|攻击|伤害降低一半，剩余若干回合。'
+  Description: '{OwnerName}受到的攻击伤害降低一半，剩余 {Duration} 回合。'
+  Brief: '{OwnerName}受到的攻击伤害降低一半，剩余若干回合。'
 
 RockHard:
   Name: 硬！
-  Description: '{OwnerName}受到的未被阻挡|攻击|伤害降低 {Level} 点。'
+  Description: '{OwnerName}受到的未被阻挡攻击伤害降低 {Level} 点。'
 
 RockHardAura:
   Name: 要石庇护
-  Description: '{OwnerName}处于要石的庇护之下，受到的未被阻挡|攻击|伤害降低 {Level} 点。'
+  Description: '{OwnerName}处于要石的庇护之下，受到的未被阻挡攻击伤害降低 {Level} 点。'
 
 LouguanJianSe:
   Name: 楼观剑
@@ -457,7 +378,7 @@ Sleep:
 
 Curiosity:
   Name: 我很好奇！
-  Description: 每当{PlayerName}打出一张|能力|牌，{OwnerName}获得 {Level} 点|火力|。
+  Description: 每当{PlayerName}打出一张能力牌，{OwnerName}获得 {Level} 点|火力|。
 
 ScarletDestiny:
   Name: 绯色命运
@@ -518,11 +439,6 @@ DoubleLianhuadieSe:
   Description: 每当{PlayerName}获得|格挡|或|护盾|时，对随机一名敌人造成 {Level} 点伤害。
   Brief: 每当{PlayerName}获得|格挡|或|护盾|时，对随机一名敌人造成若干点伤害。
 
-ReimuInstantSe:
-  Name: 时间有限
-  Description: 这个回合中卡牌费用增加{Mana}。
-  Brief: 这个回合中卡牌费用增加{Mana}。
-
 DanceAroundLakeSe:
   Name: 池边起舞
   Description: 每|放逐|一张牌，就抽 {Level} 张牌。
@@ -567,11 +483,11 @@ Burst:
   Name: 爆发
   Description: |-
     {PlayerName}进入|爆发|状态时，获得{Mana}。
-    |攻击|造成 {DamageRate} 倍伤害。
+    攻击造成 {DamageRate} 倍伤害。
     回合结束时离开|爆发|状态。
   Brief: |-
     {PlayerName}进入|爆发|状态时，获得{Mana}。
-    |攻击|造成 {DamageRate} 倍伤害。
+    攻击造成 {DamageRate} 倍伤害。
     回合结束时离开|爆发|状态。
 
 Concentration:
@@ -606,7 +522,7 @@ LearnAstrologySe:
   Brief: '{PlayerName}的回合开始时，如果手中|占星|不足若干张，加|占星|加入手中直到若干张。'
 
 PotionJungleSe:
-  Name: 魔弹轰炸
+  Name: 荧光森林
   Description: '{PlayerName}的回合结束时，将 {Level} 张|不稳定魔药|洗入弃牌堆。'
   Brief: '{PlayerName}的回合结束时，将若干张|不稳定魔药|洗入弃牌堆。'
 
@@ -632,79 +548,72 @@ ChargingPotionSe:
 
 TimeAuraSe:
   Name: 时域冲击
-  Description: '{PlayerName}的回合结束时，对所有敌人造成 {Level} 点伤害。'
-  Brief: '{PlayerName}的回合结束时，对所有敌人造成若干点伤害。'
+  Description: |-
+    {PlayerName}的回合结束时，对所有敌人造成 {Level} 点伤害。
+    每伤害了一个敌人减少一层。
+  Brief: |-
+    {PlayerName}的回合结束时，对所有敌人造成若干点伤害。
+    每伤害了一个敌人减少一层。
 
 GainKnifeSe:
   Name: 星剑飞舞
   Description: '{PlayerName}的回合开始时，将 {Level} 张|飞刀|加入手中。'
   Brief: '{PlayerName}的回合开始时，将若干张|飞刀|加入手中。'
 
-QuickSilverSe:
-  Name: 快闪之银
-  Description: 下 {Level} 次伤害将翻倍。
-  Brief: 下若干次伤害将翻倍。
+PerfectServantUSe:
+  Name: 额外备案
+  Description: '{OwnerName}的下个回合开始时，获得 {Level} 点{Mana}，额外抽 {Level} 张牌。'
+  Brief: '{OwnerName}的下个回合开始时，获得若干点{Mana}，额外抽若干张牌。'
 
-EternalMeekSe:
-  Name: 永恒的温柔
-  Description: |-
-    {PlayerName}的回合开始后，将一张随机攻击牌加入手中，并使其费用|重塑|为无色。
-    打出一张费用为无色的牌后，抽 {Level} 张牌。
-  Brief: |-
-    {PlayerName}的回合开始后，将一张随机攻击牌加入手中，并使其费用|重塑|为无色。
-    打出一张费用为无色的牌后，抽若干张牌。
+PerfectServantWSe:
+  Name: 准备就绪
+  Description: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时减少|{Anys}。'
+  Brief: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时减少|一些费用。'
+  ExtraDescription: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时减少| {Level} 点随机的费用。'
 
-DancingStarSwordSe:
-  Name: 星剑飞舞
-  Description: '{PlayerName}的回合开始时，将至多 {Level} 张手牌洗入抽牌堆顶。若如此做，对一个随机敌人造成等同于抽牌堆牌的数量的伤害。'
-  Brief: '{PlayerName}的回合开始时，将若干张手牌洗入抽牌堆顶。若如此做，对一个随机敌人造成等同于抽牌堆牌的数量的伤害。'
+EvilMaidSe:
+  Name: 恶魔的女仆
+  Description: 下面 {Level} 个回合的攻击伤害翻倍。
+  Brief: 下面若干个回合的攻击伤害翻倍。
 
-RhombophyllumSe:
-  Name: 快刀乱麻
-  Description: '{PlayerName}的回合结束时，在弃牌堆洗入 {Level} 张|飞刀|。'
-  Brief: '{PlayerName}的回合结束时，在弃牌堆洗入若干张|飞刀|。'
+EvilMaidDoubleAttack:
+  Name: 恶魔之力
+  Description: '{PlayerName}的攻击伤害翻倍，剩余 {Duration} 回合。'
+  Brief: '{PlayerName}的攻击伤害翻倍，剩余若干回合。'
 
-FrozenTimeSe:
+MihuanJackSe:
+  Name: 迷幻杰克
+  Description: 回合开始时，获得 {Level} 层|时域冲击|。
+  Brief: 回合开始时，获得若干层|时域冲击|。
+
+StopTimeSe:
   Name: 凝固时间
-  Description: '{PlayerName}的回合结束时不会失去{ManaC}。'
-  Brief: '{PlayerName}的回合结束时不会失去{ManaC}。'
+  Description: '{PlayerName}的回合结束时，剩余法力中随机的 {Level} 点，不会流失。'
+  Brief: '{PlayerName}的回合结束时，剩余法力中随机的若干点，不会流失。'
 
-MoonTimerSe:
-  Name: 月时计
-  Description: 下 {Level} 个额外回合获得的法术力将被转化为{ManaC}。
-  Brief: 下个额外回合获得的法术力将被转化为{ManaC}。
-  ExtraDescription:  {Level} 个额外回合内获得的法术力将被转化为{ManaC}。
+SakuyaKillerSe:
+  Name: 夜雾幻影杀人鬼
+  Description: |-
+    回合结束时将 {Level} 张|飞刀|洗入弃牌堆。
+    每当一名敌人被击败时亦如此。
+  Brief: |-
+    回合结束时将若干张|飞刀|洗入弃牌堆。
+    每当一名敌人被击败时亦如此。
 
-PrivateVisionSe:
-  Name: 个人幻影
-  Description: 下 {Level} 个回合{PlayerName}将无法获得|格挡|和|护盾|。
-  Brief: 下个回合{PlayerName}将无法获得|格挡|和|护盾|。
-  ExtraDescription:  {Level} 个回合内{PlayerName}无法获得|格挡|和|护盾|。。
+SilverBladeSe:
+  Name: 银色异次元
+  Description: 每一张攻击牌生效后，获得 {Level} 点|护盾|。
+  Brief: 每一张攻击牌生效后，获得若干点|护盾|。
 
-InflationSquareSe:
-  Name: 膨胀空间
-  Description: 当{PlayerName}失去|护身符|时，获得 {Level} 回合|虚弱|、|易伤|和脆弱。
-  Brief: 当{PlayerName}失去|护身符|时，获得若干回合|虚弱|、|易伤|和脆弱。
+SpecialClockSe:
+  Name: 特制的秒表
+  Description: 在{PlayerName}的回合开始时，选择至多 {Level} 张手牌丢弃，抽等量的牌。
+  Brief: 在{PlayerName}的回合开始时，选择若干张手牌丢弃，抽等量的牌。
 
-MendedClockSe:
-  Name: 修复的钟表
-  Description: 下回合开始时，将{PlayerName}的生命值恢复或失去至 {Level} 点生命。
-  Brief: 下回合开始时，{PlayerName}的生命值恢复或失去至记录值。
-
-SilverGapSe:
-  Name: 妖器「银色异次元」
-  Description: '{PlayerName}的回合结束时，将被本效果|放逐|的手牌的 {Level} 张复制洗入抽牌堆顶。'
-  Brief: '{PlayerName}的回合结束时，将被本效果|放逐|的手牌的复制洗入抽牌堆顶。'
-
-SakuyasWorldSe:
-  Name: 咲夜的世界
-  Description: 回合开始后，如果本回合是|额外回合|，将所有的手牌的费用|重塑|为无色且减少{ManaA}。
-  Brief: 回合开始后，如果本回合是|额外回合|，将所有的手牌的费用|重塑|为无色且减少{ManaABrief}。
-
-KnifeRecursionSe:
-  Name: 幻术「吾刃回归」
-  Description: '{PlayerName}的回合开始时，获得 {Level} 点{ManaCBrief}并使获得量翻倍。若以此法获得的{ManaCBrief}不小于16点，将获得量重设为1，并将放逐区的所有|飞刀|洗入抽牌堆。'
-  Brief: '{PlayerName}的回合开始时，获得1点{ManaCBrief}并使获得量翻倍。若以此法获得的{ManaCBrief}不小于16点，将获得量重设为1，并将放逐区的所有|飞刀|洗入抽牌堆。'
+KnifeWithLockedOn:
+  Name: 下一个就轮到你了！
+  Description: 主动使用的|飞刀|施加 {Level} 层|锁定|。
+  Brief: 主动使用的|飞刀|施加若干层|锁定|。
 
 Cold:
   Name: 寒冷
@@ -727,8 +636,8 @@ SeeFengshuiSe:
 
 YonglinCardSe:
   Name: 贤者的归隐
-  Description: '{PlayerName}的每回合使用第一张牌后，将 {Level} 张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。'
-  Brief: '{PlayerName}的每回合使用第一张牌后，将 {Level} 张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。'
+  Description: '{PlayerName}的每回合使用第一张牌后，将 {Level} 张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|和|虚无|。'
+  Brief: '{PlayerName}的每回合使用第一张牌后，将 {Level} 张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|和|虚无|。'
 
 ChillSe:
   Name: 严寒
@@ -757,22 +666,17 @@ ShannvAbilitySe:
 
 BailianBlackSe:
   Name: 拥抱黑暗
-  Description: 所有的非|攻击|非|能力|牌的费用降至{Mana}，它们打出后被|放逐|。
-  Brief: 所有的非|攻击|非|能力|牌的费用降至{Mana}，它们打出后被|放逐|。
-
-RemiliaJizaoSe:
-  Name: 无法抽牌
-  Description: 这回合内无法再抽任何牌。
-  Brief: 这回合内无法再抽任何牌。
+  Description: 所有的非攻击非能力牌的费用降至{Mana}，它们打出后被|放逐|。
+  Brief: 所有的非攻击非能力牌的费用降至{Mana}，它们打出后被|放逐|。
 
 MeihongFireSe:
   Name: 无差别起火符
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Level} 点伤害。
-    每抽到一张|厄运|或|状态|牌时亦如此。
+    每抽到一张|厄运|或状态牌时亦如此。
   Brief: |-
     {PlayerName}的回合结束时，对所有敌人造成若干点伤害。
-    每抽到一张|厄运|或|状态|牌时亦如此。
+    每抽到一张|厄运|或状态牌时亦如此。
 
 MeihongPowerSe:
   Name: 不死的烈焰
@@ -817,8 +721,8 @@ HekaHellRainSe:
 
 TiangouOrderSe:
   Name: 大天狗的号令
-  Description: 当{OwnerName}受到|攻击|时，{PlayerName}获得 {Level} 点|格挡|。
-  Brief: 当{OwnerName}受到|攻击|时，{PlayerName}获得若干点|格挡|。
+  Description: 当{OwnerName}受到攻击时，{PlayerName}获得 {Level} 点|格挡|。
+  Brief: 当{OwnerName}受到攻击时，{PlayerName}获得若干点|格挡|。
 
 RainbowMarketSe:
   Name: 月虹市场

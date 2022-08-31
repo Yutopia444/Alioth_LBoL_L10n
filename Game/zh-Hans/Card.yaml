@@ -297,7 +297,8 @@ ReimuInstant:
   Name: 「梦想封印 瞬」
   Description: |-
     造成 {Damage} 点伤害。
-    结束{PlayerName}的回合，进行一个额外的回合，在这个回合中卡牌费用增加{Mana}。
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |时间有限|{Mana}。
 
 DoubleLianhuadie:
   Name: 二色莲花蝶
@@ -514,7 +515,7 @@ AccuracyLaser:
 ScryBlock:
   Name: 早有预谋
   Description: 每次|占卜|时，{PlayerName}获得 {Value1} 点|格挡|。
-  FlavorText: 「晚饭后我都会外出散步，看看谁家让我可以闯空门——我是说串门。」
+  FlavorText: 「晚饭后我都会外出散步，看看谁家可以让我闯空门——我是说串门。」
 
 PotionJungle:
   Name: 荧光森林
@@ -572,7 +573,7 @@ ShootMoon:
   Name: 射月
   Description: |-
     造成 {Damage} 点伤害。
-    敌人的意图为|攻击|时，获得 {Value1} 层|充能|。
+    敌人的意图为攻击时，获得 {Value1} 层|充能|。
 
 RunAway:
   Name: 逃离现场
@@ -600,8 +601,8 @@ WizardStudy:
 
 ExilePotion:
   Name: 废物利用
-  Description: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它，将等量的|不稳定魔药|加入弃牌堆。
-  UpgradedDescription: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|加入弃牌堆。
+  Description: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它，将等量的|不稳定魔药|洗入弃牌堆。
+  UpgradedDescription: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|洗入弃牌堆。
 
 PotionDefense:
   Name: 流星共鸣
@@ -623,7 +624,9 @@ UpgradePotion:
 
 OpenUniverse:
   Name: 开放宇宙
-  Description: 选择抽牌堆中的一张牌，将它移出战斗；将两张它|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。
+  Description: |-
+    选择抽牌堆中的一张牌，将它移出本场战斗。
+    将两张它|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。
 
 RedGiantStar:
   Name: 红巨星陨落
@@ -686,16 +689,17 @@ WhiteLaser:
 BlazingStar:
   Name: 彗星
   Description: |-
-    获得 {Block} 点|格挡|。
+    获得 {Block} 点|格挡|。|保留格挡|。
     结束{PlayerName}的回合，进行一个额外的回合。
-
-ChargingToMana:
-  Name: 充能转化
-  Description: 失去所有的|充能|，每失去一层：获得{Mana}，抽一张牌。
+    |时间有限|{Mana}。
 
 IceSpark:
   Name: 冰冻射线
   Description: 对所有敌人造成 {Damage} 点伤害，施加 {Value1} |严寒|（目标失去与|严寒|层数相等的生命）。
+
+ChargingToMana:
+  Name: 充能转化
+  Description: 失去所有的|充能|，每失去一层：获得{Mana}，抽一张牌。
 
 ManaJungle:
   Name: 森林探险
@@ -738,7 +742,7 @@ Lijian:
   Description: |-
     获得 {Value1} 层|闪避|。
     造成 {Damage} 点伤害。
-    抽取时：费用降低{Mana}，直到战斗结束。
+    |抽取时|：费用降低{Mana}，直到战斗结束。
 
 Dejavu:
   Name: 既视感
@@ -748,25 +752,24 @@ Dejavu:
     获得{Mana}。
   FlavorText: 又是同一只黑猫。
 
-CleanRoom:
-  Name: 打扫房间
-  Description: |-
-    选择一张手牌丢弃。
-    抽 {Value1} 张牌。
-    随机升级 {Value2} 张手牌。
-
-CoolMaid:
-  Name: 潇洒女仆
-  Description: |-
-    将 {Value1} 张|飞刀|加入手中。
-    将 {Value2} 张|飞刀|置于抽牌堆顶。
-
 SakuyaSnow:
   Name: 雪地決行
   Description: |-
     获得 {Block} 点|格挡|。
     将 {Value1} 张|飞刀|加入手中。
   FlavorText: 尽职的女仆，就算踏着及腰的积雪也要出门。
+
+CoolMaid:
+  Name: 潇洒女仆
+  Description: |-
+    将 {Value1} 张|飞刀|加入手中。
+    将 {Value2} 张|飞刀|洗入抽牌堆。
+
+SakuyaTwiceAttack:
+  Name: 闪光弹跳
+  Description: |-
+    对所有敌人 {Damage} 点伤害 {Value1} 次。
+    将 {Value2} 张|飞刀|洗入弃牌堆。
 
 SakuyaWeak:
   Name: 时空压制
@@ -775,11 +778,11 @@ SakuyaWeak:
     获得{Mana}。
   FlavorText: 时间减缓，用以防御弹幕，和食材保鲜。
 
-DefenseDraw:
-  Name: 幻惑误导
+TimeAuraAttack:
+  Name: 时间魔术
   Description: |-
-    获得 {Block} 点|格挡|。
-    抽 {Value1} 张牌。
+    造成 {Damage} 点伤害。
+    获得 {Value1} 层|时域冲击|。
 
 SakuyaTea:
   Name: 泡制红茶
@@ -790,11 +793,12 @@ SakuyaTea:
     抽 {Value1} 张牌。
     |d:初见：恢复 {Value2} 点生命，费用降低{Mana}，直到战斗结束。|
 
-TimeAuraAttack:
-  Name: 时域冲击
+DefenseDraw:
+  Name: 月相轮转
   Description: |-
-    造成 {Damage} 点伤害。
-    获得 {Value1} 层|时域冲击|。
+    获得 {Block} 点|格挡|。
+    抽 {Value1} 张牌。
+    |抽取时|：费用降低{Mana}，直到战斗结束。
 
 AttackMagic:
   Name: 弹幕戏法
@@ -803,9 +807,42 @@ AttackMagic:
     抽 {Value1} 张牌。
     选择 {Value2} 张手牌丢弃。
 
-SakuyaTwiceAttack:
-  Name: 闪光弹跳
-  Description: 对所有敌人 {Damage} 点伤害 {Value1} 次。
+CleanRoom:
+  Name: 打扫房间
+  Description: |-
+    选择一张手牌丢弃。
+    抽 {Value1} 张牌。
+    随机|升级| {Value2} 张手牌。
+
+BladePower:
+  Name: 快闪之银
+  Description: |-
+    抽 {Value2} 张牌。
+    |进入手中时|：如果本牌是唯一的手牌，获得 {Value1} 点|火力|，|放逐|本牌。
+
+ExileMagic:
+  Name: 调换魔法
+  Description: 选择至多 {Value1} 张手牌，|放逐|它们，将等量的|飞刀|加入手中。
+
+SilverBullet:
+  Name: 银线编织
+  Description: 对所有敌人造成 {Damage} 点伤害。
+
+SilverJump:
+  Name: 达摩克之刃
+  Description: |-
+    施加 {Value1} 回合|易伤|。
+    向抽牌堆和弃牌堆各洗入 {Value2} 张|飞刀|。
+
+SakuyaSleep:
+  Name: 稍作休息
+  Description: 获得{Mana}。
+
+SakuyaDefenseRetain:
+  Name: 时刻警戒
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |保留格挡|。
 
 GainKnife:
   Name: 星剑飞舞
@@ -813,204 +850,180 @@ GainKnife:
     将 {Value1} 张|飞刀|加入手中。
     {PlayerName}的回合开始时，将 {Value2} 张|飞刀|加入手中。
 
-CSakuyaWU1:
-  Name: 假想时轴
-  Description: |-
-    抽等同于手牌数量的牌，然后将先前的手牌洗入抽牌堆顶。
-    对所有敌人造成等同于抽牌堆中牌的数量的伤害。
+SakuyaAttackX:
+  Name: 推进之银
+  Description: '|每支付{Mana}：|造成 {Damage} 点伤害。'
 
-CSakuyaWW2:
-  Name: 神秘杰克
-  Description: 造成 {Damage} 点伤害。将 {Value1} 张|飞刀|洗入弃牌堆。
-  UpgradedDescription: 造成 {Damage} 点伤害。将 {Value1} 张|飞刀+|洗入弃牌堆。
-  FlavorText: 「我的刀太多啦。」
+SakuyaDraw:
+  Name: 毫无破绽
+  Description: 当此牌被主动弃掉时，抽 {Value1} 张牌 。
 
-USakuyaU1:
-  Name: 小隐于林
+PrepareParty:
+  Name: 准备宴会
   Description: |-
+    获得 {Block} 点|格挡|。
+    选择至多 {Value1} 张手牌置于抽牌堆顶，抽等量的牌。
+
+MihuanJack:
+  Name: 迷幻杰克
+  Description: 回合开始时，获得 {Value1} 层|时域冲击|。
+
+TimeLord:
+  Name: 主宰时空
+  Description: 获得 {Value1} 层|时域冲击|。
+
+SakuyaClock:
+  Name: 咲夜特制怀表
+  Description: |-
+    造成 {Damage} 点伤害。
+    |退治|时，结束{PlayerName}的回合，进行一个额外的回合。
+
+SakuyaGraze:
+  Name: 意外躲避
+  Description: |-
+    获得 {Shield} 点|护盾|。
     获得 {Value1} 层|闪避|。
-    |洗牌时：|将本牌从放逐区以外的区域移回入手牌。
+    洗牌时回到手中。
 
-USakuyaU2:
-  Name: 时域特技
-  Description: |-
-    获得 {Value2} 层|额外抽牌|。
-    TODO 移除了倒计时
+SakuyaSpeedup:
+  Name: 加速时空
+  Description: 将|时域冲击|的层数翻倍。
 
-USakuyaUU1:
-  Name: 月时计
-  Description: |-
-    抽取时：减少 {Mana} 点费用。
-    获得 {Value1} 个|额外回合|，这个|额外回合|中获得的有色法力将替换为 {ManaC} 。
-
-USakuyaUU2:
-  Name: 凝固时间
-  Description: |-
-    获得 {Value1} 点 {Mana} 。
-    {PlayerName}的回合结束时不会失去 {Mana} 。
-
-USakuyaUU3:
+SakuyaColorless:
   Name: 胜券在握
   Description: 获得{Mana}。
 
-USakuyaUUU1:
-  Name: 时停者咲夜
-  Description: |-
-    {PlayerName}获得 {Value2} 个|额外回合|。
-    TODO 移除了倒计时
-
-USakuyaW1:
-  Name: 银之庇护
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |放逐|手牌中的|飞刀|，每以此法|放逐|一张|飞刀|，抽 {Value1} 张牌并获得 {Shield} 点|护盾|。
-
-USakuyaW2:
-  Name: 银弹射击
-  Description: 失去所有的|格挡|，对所有敌人造成 {Value1} 次等量的伤害。
-
-USakuyaWW1:
-  Name: 双重消失
-  Description: 获得 {Value1} 层|闪避|。下回合开始时获得 {Value2} 层|闪避|。
-
-USakuyaWW2:
-  Name: 银之跳跃
-  Description: |-
-    造成 {Damage} 点伤害。选择至多 {Value1} 张手牌洗入抽牌堆顶。
-    每以此法洗入一张只有无色费用的牌，抽一张牌。
-
-USakuyaUW1:
-  Name: 调换魔法
-  Description: |-
-    |放逐| {Value1} 张牌，然后抽等量的牌。
-    |每支付<sprite="ManaSprite" name="W">：|放逐的数量增加一。
-    |每支付<sprite="ManaSprite" name="U">：|获得{Mana}。
-
-USakuyaUW2:
-  Name: 快刀乱麻
-  Description: '{PlayerName}的回合结束时，在弃牌堆洗入 {Value1} 张|飞刀|。'
-
-USakuyaUW3:
-  Name: 个人幻影
-  Description: |-
-    失去一半的|格挡|和|护盾|。
-    获得 {Value1} 个额外回合，这个额外的回合中{PlayerName}无法获得|格挡|和|护盾|。
-
-USakuyaR1:
-  Name: 夜雾幻影杀人鬼
-  Description: |-
-    对随机目标造成 {Damage} 点伤害。放逐区每有一张|飞刀|重复一次。
-    （共重复 {KnifeCount} 次）
-  NonbattleDescription: 对随机目标造成 {Damage} 点伤害。放逐区每有一张飞刀重复一次。
-  UpgradedNonbattleDescription: 对随机目标造成 {Damage} 点伤害。放逐区每有一张飞刀重复一次。
-
-USakuyaR2:
-  Name: 隧穿效应
+LightSpeed:
+  Name: 光速跃迁
   Description: |-
     造成 {Damage} 点伤害。
-    抽取时：本牌在本场战斗造成的伤害增加 {Value1} 点。
+    如果这回合内弃过牌，获得{Mana}。
 
-UsakuyaB1:
-  Name: 恶魔的女仆
+PrivateVision:
+  Name: 双重幻影
   Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
+    造成 {Damage} 点伤害 {Value1} 次。
+    获得等量于未被阻挡伤害的|反射|。
 
-RSakuyaW1:
-  Name: 快闪之银
+FakeTimeline:
+  Name: 假想时轴
   Description: |-
-    下 {Value1} 次攻击牌的伤害将翻倍。
-    抽取时：如果本牌是唯一的手牌，获得 {Value2} 点|火力|。
+    获得 {Block} 点|格挡|。
+    对所有敌人造成 {Damage} 点伤害。
+    获得 {Value1} 层|时域冲击|。
 
-RSakuyaW2:
-  Name: 钟表的残骸
+SakuyaShop:
+  Name: 采购物资
+  Description: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+
+LoyalMaid:
+  Name: 忠实的仆从
   Description: |-
     获得 {Shield} 点|护盾|。
-    当打出和洗牌次数达到 {Value1} 次时，|放逐|本牌，将一张|修复的钟表|加入抽牌堆。
-    （已记录 {shuffleTimes} 次）
+    在额外回合开始时，从弃牌堆回到手中，暂塑为{Mana}。
 
-TRSakuyaW2:
-  Name: 修复的钟表
+SilverBlade:
+  Name: 银色异次元
+  Description: 每一张攻击牌生效后，获得 {Value1} 点|护盾|。
+
+KnifeHell:
+  Name: 银之优雅
   Description: |-
-    记录{PlayerName}的当前生命。下回合开始时，将{PlayerName}的生命还原至记录值。
-    将一张|钟表的残骸|加入抽牌堆。
+    将 {Value1} 张|飞刀|加入手中。
+    升级手牌，抽牌堆和弃牌堆中所有的|飞刀|。
 
-RSakuyaWW1:
+BackOfKnife:
+  Name: 吾刃回归
+  Description: |-
+    将一张|尖刀快车|加入手中。
+    |放逐|区内的每张|飞刀|提高|尖刀快车| {Value1} 点伤害，将这些|飞刀|移出本场战斗。
+
+GroupOfKnife:
+  Name: 尖刀快车
+  Description: 造成 {Damage} 点伤害。
+
+ClockCorpse:
+  Name: 钟表的残骸
+  Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合的抽牌阶段结束后无法再抽牌。
+
+StopTime:
+  Name: 凝固时间
+  Description: '{PlayerName}的回合结束时，剩余法力中随机的 {Value1} 点，不会流失。'
+
+LunaDial:
+  Name: 个人空间
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    抽取时：费用降低{Mana}，直到战斗结束。
+
+LunaClock:
+  Name: 月神之钟
+  Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合攻击无法造成伤害。
+
+SpecialClock:
+  Name: 女仆秘技
+  Description: 在{PlayerName}的回合开始时，选择至多一张手牌丢弃，抽等量的牌。
+  FlavorText: 客厅扫除的用时：0.4秒
+
+DropToKnife:
+  Name: 银之壁垒
+  Description: 丢弃所有非|保留|的手牌，每丢弃一张牌，将一张|飞刀|加入手中。
+
+SakuyaDio:
+  Name: 轮到你了
+  Description: |-
+    主动使用的|飞刀|施加 {Value1} 层|锁定|。
+    手牌中的|飞刀|费用|临时减少|{Mana}。
+
+TimeWalk:
+  Name: 时间行走
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    打出后将所有其他的|时间行走|移出本场战斗。
+  FlavorText: 虽然削弱了费用，但它还是太强了。
+
+PerfectServant:
+  Name: 完美从者
+  Description: |-
+    |每支付<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">：|下回合抽牌阶段结束时，所有手牌|暂时减少|<sprite="ManaSprite" name="1">。
+    |每支付<sprite="ManaSprite" name="U">：|下回开始时获得{Mana}，并多抽 {Value1} 张牌。
+  UpgradedDescription: |-
+    |每支付<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">：|下回合抽牌阶段结束时，所有手牌|暂时减少| {Value1} 点随机的费用。
+    |每支付<sprite="ManaSprite" name="U">：|下回开始时获得{Mana}，并多抽 {Value1} 张牌。
+
+BackToFuture:
+  Name: 回到未来
+  Description: 对调抽牌堆和弃牌堆。
+  UpgradedDescription: |-
+    对调抽牌堆和弃牌堆。
+    抽 {Value1} 张牌。
+
+EvilMaid:
+  Name: 恶魔的女仆
+  Description: |-
+    失去 {Value1} 点生命。
+    {PlayerName}的下个回合，所有的攻击造成双倍伤害。
+
+ExtraTurnEveryone:
   Name: 膨胀空间
   Description: |-
-    当{PlayerName}失去|护身符|时，获得 {Value1} 回合|虚弱|、|易伤|和|脆弱|。
-    获得 {Value1} 层|护身符|。
+    结束{PlayerName}的回合，进行一个额外的回合。
+    所有的敌人下次行动时，亦获得一个额外的回合。
 
-RSakuyaWW2:
-  Name: 永恒的温柔
+TunnelEffect:
+  Name: 隧穿效应
   Description: |-
-    {PlayerName}的回合开始后，将一张随机攻击牌加入手中，并使其费用|重塑|为无色。
-    打出一张费用为无色的牌后，抽 {Value1} 张牌。
+    对一个随机敌人造成 {Damage} 点伤害。
+    获得{Mana}。
+    洗牌时回到手中。
 
-RSakuyaWWW1:
-  Name: 妖器「银色异次元」
+SakuyaKiller:
+  Name: 夜雾幻影杀人鬼
   Description: |-
-    |放逐| {Value1} 张手牌。结束{PlayerName}的回合。
-    {PlayerName}的回合结束时，将被本牌|放逐|的手牌的 {Value1} 张复制洗入抽牌堆顶。
-
-RSakuyaU1:
-  Name: 迷幻的杰克
-  Description: |-
-    获得 {Shield} 点|护盾|和 {Value1} 层|暂得火力|。
-    |洗牌时：|将本牌移回手牌。
-
-RSakuyaU2:
-  Name: 奇术「幻惑误导」
-  Description: 抽取时：弃掉 {Value1} 张本牌之外的手牌，然后复制 {Value1} 张本牌之外的手牌。
-  UpgradedDescription: 抽取时：选择 {Value1} 张本牌之外的手牌|放逐|，然后复制 {Value1} 张本牌之外的手牌。
-  ExtraDescription1: 复制 {Value1} 张本牌之外的手牌。
-
-RSakuyaU3:
-  Name: 宴会准备
-  Description: |-
-    从 {totalSelection} 张随机非{PlayerName}技能牌中选择一张加入手中，且|暂塑|为 {Mana} 。
-    每打出一张非{PlayerName}角色牌或中立牌后，可选的牌的张数增加一。
-  UpgradedDescription: |-
-    从 {totalSelection} 张随机已|升级|的技能牌中选择一张加入手中，且|暂塑|为 {Mana} 。
-    每打出一张非{PlayerName}角色牌或中立牌后，可选的牌的张数增加一。
-  NonbattleDescription: |-
-    从 {Value1} 张随机技能牌中选择一张加入手中，且|暂塑|为 {Mana} 。
-    每打出一张非{PlayerName}角色牌或中立牌后，可选的牌的张数增加一。
-  UpgradedNonbattleDescription: |-
-    从 {Value1} 张随机已|升级|的技能牌中选择一张加入手中，且|暂塑|为 {Mana} 。
-    每打出一张非{PlayerName}角色牌或中立牌后，可选的牌的张数增加一。
-
-RSakuyaUU1:
-  Name: 咲夜特制秒表
-  Description: |-
-    造成 {Damage} 点伤害。本牌被|保留|时，伤害值增加 {Value1} 点且费用减少 {Mana} 。
-    |退治时：|获得 {Value2} 回合|虚弱|和一个|额外回合|，然后|放逐|本牌。
-
-RSakuyaUU2:
-  Name: 幻术「吾刃回归」
-  Description: '{PlayerName}的回合开始时，获得 {Mana} 并使获得量翻倍。若以此法获得的 {Mana} 不小于十六点，将获得量重设为一，并将放逐区的所有|飞刀|洗入抽牌堆。'
-
-RSakuyaUUU1:
-  Name: 月神之钟
-  Description: 获得 {Value1} 个|额外回合|。结束{PlayerName}的当前回合。
-
-RSakuyaWU1:
-  Name: 完美的从者
-  Description: |-
-    将手牌和弃牌堆中的牌洗入抽牌堆。
-    洗牌。
-    抽取等同于手牌上限的牌。
-
-RSakuyaWU2:
-  Name: 咲夜的世界
-  Description: 回合开始后，如果本回合是|额外回合|，将所有的手牌的费用|重塑|为无色且减少 {Mana} 。
-
-RSakuyaR1:
-  Name: 时间悖论
-  Description: |-
-    造成 {Damage} 点伤害 {ShuffleCount} 次。
-    （本场对战每打出过一次，多造成一次伤害。)
-    |洗牌时：|将这牌加入手中，且费用临时为{Mana}。 
+    回合结束时将 {Value1} 张|飞刀|洗入弃牌堆。
+    每当一名敌人被击败时亦如此。
 
 CirnoAttackU:
   Name: 冰锥射击
@@ -1152,7 +1165,7 @@ KokoroAttack:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     随机弃一张牌。
-  FlavorText: 受「情感暴走」影响的患者出现了精神疾病躯体化的现象。永远亭对此高度重视，邀请精神卫生专家觉医生联合会诊。
+  FlavorText: 被下一餐吃什么这个问题严重困扰。
 
 NitoriUnderWater:
   Name: 水色绒毯
@@ -1168,11 +1181,11 @@ HatateDiscard:
   Description: |-
     选择 {Value1} 张手牌丢弃。
     获得 {Mana} 。
-  FlavorText: 「犯人就是魔理沙」——节选自「抓捕犯人就是魔理沙今晚的首要目标。」
+  FlavorText: 「犯人不是魔理沙。」
 
 DoremyDuplicate:
   Name: 梦我梦中
-  Description: 选择手牌的一张|攻击|或|能力|牌，将 {Value1} 张的它的复制加入手中。
+  Description: 选择手牌的一张攻击或能力牌，将 {Value1} 张的它的复制加入手中。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
 
 LeidiBlizzard:
@@ -1212,8 +1225,7 @@ WaterPrincess:
 
 YonglinCard:
   Name: 贤者的归隐
-  Description: '{PlayerName}的每回合使用第一张牌后，将一张它|暂塑|为<sprite="ManaSprite" name="1">的复制加入手中，这张复制具有|放逐|。'
-  UpgradedDescription: '{PlayerName}的每回合使用第一张牌后，将一张它|暂塑|为<sprite="ManaSprite" name="0">的复制加入手中，这张复制具有|放逐|。'
+  Description: '{PlayerName}的每回合使用第一张牌后，将一张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。'
   FlavorText: 智慧之神选择了逃匿，所以逃匿这算是智慧之行吗？
 
 ShannvAttack:
@@ -1227,7 +1239,7 @@ SatoriAttack:
   Name: 心花绽放
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    |直觉|：每有一个敌人的意图为|攻击|时，获得 {Value1} 点|格挡|。
+    |直觉|：每有一个敌人的意图为攻击时，获得 {Value1} 点|格挡|。
   FlavorText: 和外界流行的"比心"有异曲同工之妙。
 
 RumiaBlock:
@@ -1248,7 +1260,7 @@ HinaAttack:
   Name: 厄运之轮
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
-    卡组里每有一张|厄运|牌，重复一次伤害。
+    卡组里每有一张|厄运|，重复一次伤害。
   FlavorText: 别担心，坏运气之后还会是坏运气。
 
 BlackHorseZui:
@@ -1286,7 +1298,7 @@ GrimoireStudy:
 
 BailianBlack:
   Name: 拥抱黑暗
-  Description: 所有的非|攻击|非|能力|牌的费用降至{Mana}，它们打出后被|放逐|。
+  Description: 所有的非攻击非能力牌的费用降至{Mana}，它们打出后被|放逐|。
   FlavorText: 妖术通念过，佛祖心中留。世人若学我，如同进魔道。
 
 TrueMoon:
@@ -1354,7 +1366,7 @@ MeihongFire:
   Name: 无差别起火符
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Value1} 点伤害。
-    每抽到一张|厄运|或|状态|牌时亦如此。
+    每抽到一张|厄运|或状态牌时亦如此。
 
 YongyiAttack:
   Name: 鬼气狂澜
@@ -1406,7 +1418,7 @@ TiangouOrder:
   Name: 大天狗的号令
   Description: |-
     造成 {Damage} 点伤害。
-    当目标敌人受到|攻击|时，{PlayerName}获得 {Value1} 点|格挡|。
+    当目标敌人受到攻击时，{PlayerName}获得 {Value1} 点|格挡|。
   FlavorText: 饭纲丸龙从星座的底层逻辑中感知现代舞蹈发展痛点，完成了天狗中流行的舞蹈的迭代。
 
 ShuimuBlock:
@@ -1452,7 +1464,7 @@ XiaodingKill:
 
 SijiCard:
   Name: 有罪或无罪
-  Description: 选择一张手牌，如果它是状态或|厄运|牌，将它|放逐|；否则|保留|它一回合，它的费用减少{Mana}，直到战斗结束。
+  Description: 选择一张手牌，如果它是|厄运|或状态牌，将它|放逐|；否则|保留|它一回合，它的费用减少{Mana}，直到战斗结束。
   FlavorText: 饭后是否付钱是重要的裁决依据。
 
 QingeUpgrade:
@@ -1559,7 +1571,7 @@ HuiyinRetain:
 XiaosanReflect:
   Name: 反击弹幕
   Description: |-
-    获得 {Block} 点|格挡|。
+    获得 {Shield} 点|护盾|。
     获得 {Value1} 点|反射|。
 
 YijiuAttack:
@@ -1586,7 +1598,7 @@ HekaHellRain:
 
 ReisenAttack:
   Name: 疯狂之梦
-  Description: '|每支付<sprite="ManaSprite" name="1">：|对所有敌人造成 {Damage} 点伤害。'
+  Description: '|每支付{Mana}：|对所有敌人造成 {Damage} 点伤害。'
 
 HehuanAttack:
   Name: 深山菜刀狂
@@ -1775,7 +1787,7 @@ MoonWorld:
   Description: '{PlayerName}的回合开始后，|净化| {Value1} 张随机的手牌，在本场战斗中移除其费用的有色部分。'
 
 MoonPurify:
-  Name: 祛秽
+  Name: 除秽
   Description: '|净化|一张随机的手牌，在本场战斗中移除其费用的有色部分。'
   UpgradedDescription: 选择一张手牌|净化|，在本场战斗中移除其费用的有色部分。
 
@@ -2032,7 +2044,7 @@ SakuyaLock:
   Name: 时间封锁
   Description: |-
     触发一次|个人空间|效果。
-    （受到 {Value1} 点|攻击|伤害。）
+    （受到 {Value1} 点攻击伤害。）
   NonbattleDescription: 触发一次|个人空间|效果。
   FlavorText: 「还是让未来的我担心血量的问题吧。」
 
