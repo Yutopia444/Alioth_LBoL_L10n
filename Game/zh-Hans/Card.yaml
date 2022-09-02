@@ -343,8 +343,8 @@ GapLady:
 ReimuSakura:
   Name: 梦想樱花封印
   Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
+    对所有敌人造成 {Damage} 点伤害。
+    |成长|：费用降低{Mana}。
 
 MarisaAttackB:
   Name: 幻象激光
@@ -525,6 +525,7 @@ PotionJungle:
 LearnAstrology:
   Name: 天文研修
   Description: '{PlayerName}的回合开始时，如果手中没有|占星|，将一张|占星|加入手中。'
+  FlavorText: 「她怎么就只愿意看星星不愿意看看我呢。」
 
 MarisaEat:
   Name: 大快朵颐
@@ -627,12 +628,14 @@ OpenUniverse:
   Description: |-
     选择抽牌堆中的一张牌，将它移出本场战斗。
     将两张它|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。
+  FlavorText: 宇宙的本质是复读（？）
 
 RedGiantStar:
   Name: 红巨星陨落
   Description: |-
     造成 {Damage} 点伤害。
     如果本场战斗打出的上一张牌包含红色，将一张|火焰|加入手中。
+  FlavorText: 「幸好对面不是芙兰」
 
 FinalSpark:
   Name: 究极火花
@@ -650,6 +653,7 @@ HuoliQuankai:
   UpgradedDescription: |-
     |爆发|造成三倍伤害，进入|爆发|时，改为获得{Mana}。
     进入|爆发|。
+  FlavorText: 启动后备隐藏能源！
 
 StarlightTaifengSummoner:
   Name: 汇聚星光
@@ -700,6 +704,7 @@ IceSpark:
 ChargingToMana:
   Name: 充能转化
   Description: 失去所有的|充能|，每失去一层：获得{Mana}，抽一张牌。
+  FlavorText: 一开始用蓝色形态战斗不就好了吗。
 
 ManaJungle:
   Name: 森林探险
@@ -885,10 +890,6 @@ SakuyaGraze:
     获得 {Value1} 层|闪避|。
     洗牌时回到手中。
 
-SakuyaSpeedup:
-  Name: 加速时空
-  Description: 将|时域冲击|的层数翻倍。
-
 SakuyaColorless:
   Name: 胜券在握
   Description: 获得{Mana}。
@@ -1024,6 +1025,10 @@ SakuyaKiller:
   Description: |-
     回合结束时将 {Value1} 张|飞刀|洗入弃牌堆。
     每当一名敌人被击败时亦如此。
+
+SakuyaSpeedup:
+  Name: 加速时空
+  Description: 将|时域冲击|的层数翻倍。
 
 CirnoAttackU:
   Name: 冰锥射击
@@ -1598,7 +1603,7 @@ HekaHellRain:
 
 ReisenAttack:
   Name: 疯狂之梦
-  Description: '|每支付{Mana}：|对所有敌人造成 {Damage} 点伤害。'
+  Description: '|每支付<sprite="ManaSprite" name="2">：|对所有敌人造成 {Damage} 点伤害。'
 
 HehuanAttack:
   Name: 深山菜刀狂
