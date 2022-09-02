@@ -75,6 +75,7 @@ UI:
   CopyHint: 已复制游戏种子
   SaveHint: 已存储进度
   Numbers: ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+  Divide: 、
   CurrentSkill: 当前装备中
   DefaultStatus: 初始状态
   SideCloseHint: 点击边缘处关闭
@@ -137,7 +138,8 @@ StartGame:
     这名角色还没有准备好
     请期待游戏更新
   IsLockHint: |-
-    这名角色将在调查等级达到 {0} 级后可选
+    这名角色将在调查等级
+    达到 {0} 级后可选
   CheckDeck: 初始牌库
   SkillSpellCard: 携带符卡
   SkillExhibit: 初始展品
@@ -147,8 +149,12 @@ StartGame:
   ClearNormal: 已通关
   ClearTrue: 已完美通关
   NeedClear: 通关前一个难度解锁
-  Advance: 难题
-  AdvanceTip: 难题系统将在9月30日前准备好
+  Puzzle: 难题
+  PuzzleTip: |-
+    难题系统还处于测试阶段
+    调查等级 4 级后开始解锁
+  Puzzles: '{0}个难题'
+  LockPuzzle: 调查等级达到 {0} 级后解锁
   
 
 Museum:
@@ -225,23 +231,41 @@ Setting:
   HintLevel: 教学性提示
   ResetHint: 重置提示
 
-  KeysTitle: 暂不支持按键设置
+  KeysTitle: 按键设置
   KeysLeft: |-
     鼠标左键: 点击以确认
     鼠标右键: 卡牌详情
     鼠标滚轮: 滚动一些界面
-    
-    Shift: 显示敌人行动顺序
-    Ctrl: 快进对话/事件
-    Esc: 取消/返回，呼出系统菜单
-    Enter: 确认
-  KeysRight: |-
     在大部分界面的上下边缘左键，都可以关闭界面（相当于按下返回按钮）
   KeysDebug: |-
     ----测试版本功能----
     F3/鼠标中键: 调试菜单 (DebugMenu)
     F4: 战斗信息 (DebugBattleLog)
     `: 控制台 (DebugConsole)
+  
+  Actions:
+    Action: 操作
+    Button: 按键
+    Select1: 快速选择 1
+    Select2: 快速选择 2
+    Select3: 快速选择 3
+    Select4: 快速选择 4
+    Select5: 快速选择 5
+    Select6: 快速选择 6
+    Select7: 快速选择 7
+    Select8: 快速选择 8
+    Select9: 快速选择 9
+    Select10: 快速选择 10
+    UseUs: 使用符卡
+    EndTurn: 结束回合
+    ToggleBaseDeck: 显示牌库
+    ToggleDrawZone: 显示抽牌堆
+    ToggleDiscardZone: 显示弃牌堆
+    ToggleExileZone: 显示放逐区
+    ToggleMap: 显示地图
+    SkipDialog: 对话快进（按住）
+    ShowEnemyMoveOrder: 显示敌方行动顺序（按住）
+    RebindMessage: 请按下对应“{0}”的按键，按 Esc 取消
 
 System:
   ReenterStation: 重开当前关卡
