@@ -22,12 +22,16 @@ UI:
   Take: Собрать
   MainMenuAlert: Вернуться в главное меню?
   ExitGameAlert: Выйти на рабочий стол?
+  On: Вкл
+  Off: Выкл
+  Yes: Да
+  No: Нет
 MainMenu:
   Setting: Настройки
   LifeData: Статистика
-  NewGame: Новая забег
+  NewGame: Новый забег
   AbandonGame: Отменить забег
-  Database: Дополнительный контент
+  Database: Дополнительно
   Characters: Персонажи
   MusicRoom: Музыкальная комната
   Changelog: Список изменений
@@ -50,7 +54,7 @@ Game:
   Money: Деньги
   Hp: Здоровье
   Card: Карты
-  EnemyTurn: Оппонент
+  EnemyTurn: Враг
   Level: Уровень
   EndTurn: Конец хода
   DiscardZone: Сброс
@@ -63,9 +67,15 @@ Game:
   DefaultOwnerName: Этот персонаж
   Archievement: Достижения
   BattleStart: Начало битвы
+  PlayerTurn: Игрок
 StartGame:
   StartMoney: Стартовые деньги
   StartHp: Стартовое здоровье
+  SetSeed: Выбрать семя
+  InvalidSeed: Нерабочее семя
+  FreeMode: Свободный режим
+  NotReadyHint: Этот персонаж ещё не готов, пожалуйста. подождите обновлений игры
+  Puzzle: Головоломка
 Museum:
   UnlockAndReveal: Просмотренные карты
   Rarity: Редкость
@@ -93,21 +103,24 @@ Setting:
   Vsync: Вертикальная синхронизация
   ScreenVibration: Тряска экрана
   AudioMaster: Общая громкость
-  AudioBgm: Громкость музыки
-  AudioUi: Громкость интерфейса
-  AudioSfx: Громкость звуков
-  RecommendVolume: Восстановить настройки громкости по умолчанию
+  AudioBgm: Музыка
+  AudioUi: Интерфейс
+  AudioSfx: Звуки
+  RecommendVolume: Громкость по умолчанию
   TurboMode: Турбо мод
   Keyword: Ключевые слова
-  Detailed: Детали
-  DontShow: Выключенная
-  Illustrator: Художник
+  Detailed: Детально
+  DontShow: Выкл
+  Illustrator: Показывать Художников
   TooltipSize: Размер подсказки
   Large: Большой
   Small: Маленький
-  XCostWarning: Предупреждать о X цене?
-  HintLevel: Описание подсказки
-  ResetHint: Восстановить настройки графики по умолчанию
+  XCostWarning: Оповещать о X цене?
+  HintLevel: Подсказки
+  ResetHint: Графика по умолчанию
+  Language: Язык
+  Key: Управление
+  Brief: Кратко
 Map:
   DefeatScore: Счёт
   Map: Карта
@@ -152,14 +165,14 @@ Rarity:
 CardType:
   Attack: Атака
   Defense: Защита
-  Skill: Умение
-  Ability: Способность
-  Status: Статус
-  Misfortune: Проклятие
-  Tool: Инструмент
+  Skill: Умения
+  Ability: Способности
+  Status: Статусы
+  Misfortune: Проклятия
+  Tool: Инструменты
 StatusEffectType:
-  Negative: Негативный эффект
-  Positive: Положительный эффект
+  Negative: Дебафф
+  Positive: Бафф
 Tooltip:
   Character:
     Name: '{0}'
@@ -188,7 +201,7 @@ Tooltip:
     Description: У противников больше здоровья и урона
   DifficultyLunatic:
     Name: 'Сложность: Безумная'
-    Description: У противников больше здоровья, урона и опасных возможностей сходить.
+    Description: У противников больше здоровья, урона и опасных способов сходить.
   DrawZone:
     Name: Колода
     Description: "Во время фазы взятия карт, потяните {0} карты из своей колоды. |d:(Фаза\
