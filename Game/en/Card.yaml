@@ -327,8 +327,8 @@ SakuyaBlockW:
 
 Knife:
   Name: 'Throwing Knife'
-  Description: "Deal {Damage} damage.\n|未打出而离开手牌：| Deal {DropDamage} to the enemy\
-    \ with the least life."
+  Description: "Deal {Damage} damage.\n|When discarded:| Deal {DropDamage} to the\
+    \ enemy with the least life."
 KnifeBounce:
   Description: "Deal {Damage} damage.\nConjure a |Throwing Knife| into your hand."
 Lijian:
@@ -337,15 +337,15 @@ Lijian:
 
 Dejavu:
   Name: 'Déjà Vu'
-  Description: "Place up to {Value1} card from your hand and put it on top of your\
-    \ draw pile.\nDraw {Value1} cards.\nGain {Mana}."
+  Description: "Place up to {Value1} card from your hand on top of your draw pile.\n\
+    Draw {Value1} cards.\nGain {Mana}."
 CleanRoom:
   Description: "Discard a card.\nDraw {Value1} cards.\nUpgrade {Value2} random card(s)\
     \ in your hand."
 
 CoolMaid:
   Description: "Conjure {Value1} |Throwing Knife| into your hand.\nConjure {Value2}\
-    \ |Throwing Knife| into your draw pile."
+    \ |Throwing Knife| into your library."
 
 SakuyaSnow:
   Description: "Gain {Block} |Block|.\nConjure a |Throwing Knife| into your hand."
@@ -371,7 +371,7 @@ SakuyaTwiceAttack:
 
 GainKnife:
   Description: "Conjure {Value1} |Throwing Knife| into your hand.\nAt the start of\
-    \ {PlayerName}'s turn, conjure {Value2} |Throwing Knife| into your hand."
+    \ your turn, conjure {Value2} |Throwing Knife| into your hand."
 
 CirnoAttackU:
   Description: "Deal {Damage} damage.\nApply |寒冷|."
@@ -665,14 +665,14 @@ SilverJump:
   Description: "Apply {Value1} Weak.\nShuffle {Value2} |Throwing Knives| into your\
     \ draw pile and discard pile."
 SakuyaDefenseRetain:
-  Description: "Gain {Block} |Block|.\n|Block| is not lost at the start of {PlayerName}'s\
-    \ next turn."
+  Description: "Gain {Block} |Block|.\n|Block| is not lost at the start of your next\
+    \ turn."
 SakuyaAttackX:
   Description: '|For each <sprite="ManaSprite" name="1"> spent to play:| Deal {Damage}
     damage.'
 PrepareParty:
-  Description: "Gain {Block} |Block|.\nChoose up to {Value1} cards to place on the\
-    \ top of the draw pile then draw an equal number of cards."
+  Description: "Gain {Block} |Block|.\nPlace up to {Value1} cards on top of the draw\
+    \ pile then draw an equal number of cards."
 SakuyaColorless:
   Description: Gain {Mana}.
 LightSpeed:
@@ -686,7 +686,7 @@ FakeTimeline:
 SakuyaShop:
   Description: "Gain {Mana}.\nDraw {Value1} cards."
 SilverBlade:
-  Description: Whenever you play an Attack card, gain {Value1} |Barrier|.
+  Description: Whenever you play an |Attack| card, gain {Value1} |Barrier|.
 KnifeHell:
   Description: "Conjure {Value1} |Throwing Knives| into your hand.\nUpgrade all |Throwing\
     \ Knives| in your hand, draw pile, and discard pile."
@@ -705,13 +705,13 @@ SpecialClock:
   Description: At the beginning of {PlayerName}'s turn, choose up to one card from
     your hand to discard. Draw an equal number of cards.
 DropToKnife:
-  Description: Discard your hand except for any cards with |Retain|. For each card
-    discarded conjure a |Throwing Knife| into your hand.
+  Description: Discard your hand except for any cards with |Retain|. Conjure a |Throwing
+    Knife| into your hand for each card that was discarded.
 ExileMagic:
   Description: Select up to {Value1} card(s) in your hand and exile them. Conjure
     the same number of |Throwing Knife| into your hand.
 SakuyaSleep:
-  Description: "Conjure a |幻虹| into your hand.\nEnd the turn."
+  Description: "Conjure a |幻虹| into your hand.\nEnd your turn."
 SakuyaDraw:
   Description: '|When discarded:| Draw {Value1} card(s).'
 TimeLord:
@@ -733,11 +733,11 @@ BackOfKnife:
     \ increase the damage of |尖刀快车| by {Value1}. Remove all of these |Throwing Knives|\
     \ from the game."
 LunaDial:
-  Description: "End {PlayerName}'s turn and take an extra turn.\n|When Drawn:| This\
-    \ cost is this card is reduced by {Mana} until the end of combat."
+  Description: "End {PlayerName}'s turn and take an extra turn.\n|When Drawn:| The\
+    \ cost of this card is reduced by {Mana} until the end of combat."
 SakuyaDio:
-  Description: "Actively used |Throwing Knives| inflict {Value1} |Lock-On|.\nThe cost\
-    \ of each |Throwing Knife| in your hand is reduced by {Mana}."
+  Description: "Whenever you play a |Throwing Knife|, apply {Value1} |Lock-On| to\
+    \ the target.\n|Throwing Knives| in your hand |temporarily cost| {Mana} less."
 TimeWalk:
   Description: "End {PlayerName}'s turn and take an extra turn.\nRemove all other\
     \ copies of this card from the game until the end of combat."
@@ -745,8 +745,8 @@ BackToFuture:
   Description: Swap your discard and draw piles.
   UpgradedDescription: "Swap your discard and draw piles.\nDraw {Value1} card(s)."
 EvilMaid:
-  Description: "Lose {Value1} life.\nDuring {PlayerName}'s next turn, all attacks\
-    \ deal double damage."
+  Description: "Lose {Value1} life.\nDuring {PlayerName}'s next turn, all |Attack|\
+    \ cards deal double damage."
 TunnelEffect:
   Description: "Deal {Damage} damage to a random enemy.\nAdd {Mana}.\nWhen you shuffle\
     \ your draw pile, return this card to your hand instead of the draw pile."
