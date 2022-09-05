@@ -90,13 +90,13 @@ HuanxiangBlock:
 JiejieAttack:
   Description: |-
     Deal {Damage} damage.
-    Then, deal damage ({ShieldDamage}) equal to your |Barrier|.
+    Then, deal damage ({ShieldDamage}) equal to {PlayerName}'s |Barrier|.
   NonbattleDescription: |-
     Deal {Damage} damage.
-    Then, deal damage equal to your |Barrier|.
+    Then, deal damage equal to {PlayerName}'s |Barrier|.
   UpgradedNonbattleDescription: |-
     Deal {Damage} damage.
-    Then, deal damage equal to your |Barrier|.
+    Then, deal damage equal to {PlayerName}'s |Barrier|.
 ReimuWeiyan:
   Description: Apply {Value1} |Weak| to each enemy.
 
@@ -171,8 +171,8 @@ Jiangshen:
     Whenever you conjure a card, |Upgrade| it.
     Conjure {Value1} |阴阳玉|s into your hand.
 BoliDajiejie:
-  Description: Whenever {PlayerName} would gain an amount of |Block|, they gain that
-    much |Barrier| instead.
+  Description: Whenever {PlayerName} would gain |Block|, gain that much |Barrier|
+    instead.
 
 EvilTuiZhi:
   Description: The next |Attack| card played this turn deals double damage.
@@ -182,7 +182,7 @@ MomentPower:
 
 TaijiLiangyi:
   Description: 'At the start of {PlayerName}''s turn, if there are no |Yin-Yang Orb|s
-    in hand, conjure a |Yin-Yang Orb| into your hand.'
+    in hand, conjure a |Yin-Yang Orb| into the hand.'
 
 Wunvyu:
   Description: |-
@@ -204,7 +204,7 @@ FreeFly:
 ReimuInstant:
   Description: |-
     Deal {Damage} damage.
-    End the turn. Then, take an |Extra Turn| with |Time Surge| {Mana}.
+    End the turn. Then, {PlayerName} takes an |Extra Turn| with |Time Surge| {Mana}.
 
 DoubleLianhuadie:
   Description: Whenever {PlayerName} gains |Block| or |Barrier|, deal {Value1} damage
@@ -637,3 +637,20 @@ ExtraTurnEveryone:
     \ an |Extra Turn| the next time it is their turn."
 Shoot:
   Description: Deal {Damage} damage.
+LearnAstrology:
+  Description: At the start of {PlayerName}'s turn, if there are no |占星| in hand,
+    conjure a |占星| into the hand.
+StarShower:
+  Description: "Gain {Block} |Block|.\nIf {PlayerName} has no |Charge|, gain {Value2}\
+    \ |Charge|. Otherwise, gain {Value1} |Charge|."
+SolarSystem:
+  Description: At the start of {PlayerName}'s turn, gain {Value1} |Charge|.
+ScryBlock:
+  Description: Whenever {PlayerName} |scries|, gain {Value1} |Block|.
+PotionJungle:
+  Description: At the end of {PlayerName}'s turn, conjure {Value1} |不稳定魔药| into the
+    discard pile.
+UpgradePotion:
+  Description: "Conjure {Value2} |不稳定魔药| into the discard pile.\nAt the end of {PlayerName}'s\
+    \ turn, increase the damage of all cards named |不稳定魔药| in the draw and discard\
+    \ piles."
