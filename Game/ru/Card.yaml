@@ -10,7 +10,7 @@ ReimuBlockR:
 YaoguaiBuster:
   Description: Наносит {Damage} урона {Value1} раз.
 DoubleJiejie:
-  UpgradedDescription: "Наносит {Damage} урона.\nВместо этого наносит {Damage} дважды,\
+  UpgradedDescription: "Наносит {Damage} урона.\nНаносит {Damage} дважды вместо этого,\
     \ если {PlayerName} имеет |барьер| или |защиту|."
   Description: "Наносит {Damage} урона.\nЕсли {PlayerName} имеет |Барьер| вместо этого\
     \ наносит {Damage} дважды."
@@ -205,13 +205,13 @@ SilverJump:
   Description: "Накладывает {Value1} |Слабости|.\nЗамешивает {Value2} |Метательный\
     \ Нож| в стопки добора и сброса."
 GainKnife:
-  Description: "Сотворите |Метательный Нож| в руку.\nВ начале хода {PlayerName} призывает\
+  Description: "Сотворите |Метательный Нож| в руку.\nВ начале хода {PlayerName} сотворяет\
     \ |Метательный Нож| в руку."
 TimeLord:
   Description: Даёт {Value1} |Всплеска Времени|.
 SakuyaClock:
   Description: "Наносит {Damage} урона.\n|Ссылка|: Ход {PlayerName} заканчивается\
-    \ и он делает |Доп. Ход|."
+    \ и она делает |Доп. Ход|."
 SakuyaGraze:
   Description: "Даёт {Shield} |Барьера|.\nДаёт {Value1} |Уворота|.\nКогда вы перетасовываете\
     \ колоду, эта карта возвращается в руку заместо стопки добора."
@@ -241,7 +241,7 @@ SilverBullet:
 SakuyaSleep:
   Description: "Сотворите |幻虹| в руку.\n{PlayerName} закончит ход."
 SakuyaDefenseRetain:
-  Description: "Даёт {Block} |Защиты|.\nЗащита не исчезнет в начале вашего след. хода."
+  Description: "Даёт {Block} |Защиты|.\nЗащита не исчезнет в начале след. хода. {PlayerName}."
 ExileMagic:
   Description: Изгоните до {Value1} карт из руки. Сотворите столько же |Метательных
     Ножей| в руку.
@@ -268,9 +268,12 @@ FakeTimeline:
   Description: "Даёт {Block} |Защиты|.\nНаносит {Damage} урона всем врагам.\nДаёт\
     \ {Value1} |Всплеска Времени|."
 SakuyaShop:
-  Description: "Даёт {Mana}.\nВы берёте {Value1} карт(ы)."
+  Description: "Даёт {Mana}.\nВы берёте {Value1:plural one='% карту' other='% карты'}."
 NazrinBaota:
   FlavorText: "Не используйте дальний свет в туннеле!\n- Куродани Ямаме"
+  Name: Сияние Пагоды
+  Description: "Наносит {Damage} урона всем врагам.\n|Улучшает| {Value1} случайные\
+    \ карты, атакующие карты в первую очередь."
 HuashanQingjing:
   UpgradedDescription: "Даёт {Block} |Защиты|.\nУбирает |Уязвимости| {PlayerName}."
   Name: Безмятежность
@@ -300,14 +303,17 @@ WaterPrincess:
   Description: "Даёт {Value1} |Барьера| за каждую карту в руке.\n|Дебют:| Сотворите\
     \ |将一张| в руку."
 RingoJinghua:
-  Name: Очистить землю
-  Description: "Выберите максимум из {Value1} карт, чтобы |Изгнать|.\nДаёт {Value2}\
+  Name: Очищение земли
+  Description: "Выберите максимум из {Value1} карт, чтобы |Изгнать| их.\nДаёт {Value2}\
     \ очков <sprite=\"Point\" name=\"Power\">."
 ShenziUpgradeAll:
   Name: Апофеоз
   Description: '|Улучшает| все карты до конца битва.'
 ShenziWake:
   Name: Оживление святого
+  Description: "Выберите одну из {Value1} случайных карт и сотворите её в руку. Она\
+    \ |временно стоит| {Mana} и имеет эффекты |Изгнания| и |Эфирности|.\nСтоимость\
+    \ оригинала этой карты X+1."
 YuetuInvincible:
   Name: Кролик падающий с небес
   Description: "Даёт |Безупречность|.\nПотеряйте {Value2} |Духовности|."
@@ -331,3 +337,153 @@ Boundary:
   Description: Даёт {Block} |Защиты|.
 Shoot:
   Description: Наносит {Damage} урона.
+KnifeHell:
+  Description: "Сотворите |{Value1:plural one='% Метательный Нож' other='% Метательных\
+    \ Ножей'}| в руку.\nУлучшите все |Метательные Ножи| в руке, стопке добора, стопке\
+    \ сброса."
+ClockCorpse:
+  Description: Заканчивает ход {PlayerName} и начинает её |Доп. Ход|. Вы не можете
+    брать карты после начальной фазы взятия карт.
+LunaClock:
+  Description: Заканчивает ход {PlayerName} и начинает её |Доп. Ход|. В этом ходу
+    атаки не наносят урона.
+DropToKnife:
+  Description: Сбросьте все карты с руки кроме карт, которые |Оставляются|. Сотворите
+    |Метательные Ножи| в руку за каждую сброшенную карту.
+TimeWalk:
+  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\nУдаляет все\
+    \ другие копии этой карты из игры до конца битвы."
+PerfectServant:
+  Description: "|За каждую потраченную <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"W\">:| Стоимость каждой карты находящейся в руке во время\
+    \ конца фазы взятия карт, на следующий ход |временно понижается| на <sprite=\"\
+    ManaSprite\" name=\"1\">.\n|За каждую потраченную <sprite=\"ManaSprite\" name=\"\
+    U\">:| Даёт {Mana} в начале вашего следующего хода и вы берёте {Value1:plural\
+    \ one='% дополнительную карту' other='% дополнительные карты'}."
+EvilMaid:
+  Description: "Потеряйте {Value1} здоровья.\nВо время следующего хода {PlayerName},\
+    \ все атаки наносят двойной урон."
+TunnelEffect:
+  Description: "Наносит {Damage} урона случайному врагу.\nДаёт {Mana}.\nКогда стопка\
+    \ добора тасуется, эта карта возвращается в руку заместо стопки добора."
+CirnoBlockU:
+  Description: Даёт {Block} |Защиты|.
+SummerFlower:
+  Description: "Наносит {Damage} урона.\n|Рост|: Увеличивает урон на{Value1} ."
+BailianJingang:
+  Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Отражения|."
+Astrology:
+  Description: "Предскажите {Scry}.\nВы берёте {Value1} карту."
+RandomShoot:
+  Description: Наносит {Damage} урона случайному врагу {Value1} раза.
+DropBook:
+  Description: "Даёт {Block} |Защиты|.\nСотворите {Value1} |Астрологию| в руку."
+DarkSatellite:
+  Description: "Даёт {Block} |Защиты|.\nВы берёте {Value1} карты. если последняя разыгранная\
+    \ карта в этом бою была чёрной."
+WinterWarm:
+  ExtraDescription1: "Даёт {Value1} |Сосредоточение|.\n|d:Дебют:| Вы берёте {Value2}\
+    \ карты."
+  Description: "Даёт {Value1} |Сосредоточение|.\n|Дебют:| Вы берёте {Value2} карты."
+AsteroidBelt:
+  Description: "Наносит {Damage} урона.\nДаёт {Value1} |Заряда|, если последняя разыгранная\
+    \ карта в этом бою была красной."
+JinjiBlock:
+  UpgradedDescription: "Даёт {Block} |Защиты|.\n|Перегруз {Value2}: Даёт вместо этого\
+    \ {OverdriveBlock} |Защиты|."
+  Description: Даёт {Block} |Защиты|.
+RedLaser:
+  Description: "Наносит {Damage} урона.\n|Перегруз {Value2}: Наносит вместо этого\
+    \ {OverdriveDamage} урона."
+MarisaDraw:
+  Description: "Вы берёте {Value1} карты.\nДаёт {Mana}, если у {PlayerName} есть эффект\
+    \ |Взрыва|."
+SatelliteIllusion:
+  Description: "Наносит {Damage} урона.\nСотворите {Value1} |Астрологию| в руку."
+ReadyForBurst:
+  Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Заряд|."
+HuojianSaoba:
+  Description: "Даёт {Value1} |Уворота|.\nДаёт {Value1} |Заряда|."
+Alioth:
+  Description: "Предскажите {Scry}.\nДаёт {Value2} |Заряда|.\nВы берёте {Value1:plural\
+    \ one='% карту' other='% карты'}."
+ScryAttack:
+  Description: "Наносит {Damage} урона.\nВозвращается в руку из стопки сброса, когда\
+    \ {PlayerName} |предсказывает|."
+NightSeeStar:
+  Description: "Предскажите {Scry}.\nВы берёте {Value1:plural one='% карту' other='%\
+    \ карты'}."
+BackOfKnife:
+  Description: "Сотворите |尖刀快车| в руку.\nЗа каждый |Метательный Нож| в |Изгнании|,\
+    \ увеличивает урон |尖刀快车| на {Value1}. Удаляет эти |Метательные Ножи| из игры."
+SilverBlade:
+  Description: Даёт {Value1} |Барьера|, когда {PlayerName} играет карту |Атаки.
+GroupOfKnife:
+  Description: Наносит {Damage} урона.
+StopTime:
+  Description: В конце хода {PlayerName} {Value1} маны (выбирается случайно) не будет
+    потеряно.
+LunaDial:
+  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\n|Когда берётся:|\
+    \ Стоимость этой карты уменьшается на {Mana}."
+SpecialClock:
+  Description: В начале хода {PlayerName} выберите не более одной карты в руке и сбросьте
+    её. Возьмите столько же карт.
+SakuyaDio:
+  Description: "Накладывает {Value1} |Захвата| на цель, когда разыгрывается |Метательный\
+    \ Нож|.\nСтоимость |Метательных Ножей| в руке |временно снижена| на {Mana}."
+BackToFuture:
+  Description: Поменяйте местами стопку сброса и стопку добора.
+  UpgradedDescription: "Поменяйте местами стопку сброса и стопку добора.\nВы берёте\
+    \ {Value1:plural one='% карту' other='% карты'}."
+ExtraTurnEveryone:
+  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\nВраги также\
+    \ сделают |Доп. Ход| во время их следующего хода."
+SakuyaKiller:
+  Description: Сотворите |{Value1:plural one='% Метательный Нож' other='% Метательные
+    Ножи'}| в стопку сброса, когда {PlayerName} заканчивает ход или когда повергается
+    враг.
+CirnoAttackU:
+  Description: "Наносит {Damage} урона.\nНакладывает |Холод|."
+CirnoBlockG:
+  Description: Даёт {Block} |Защиты|.
+CirnoAttackG:
+  Description: Наносит {Damage} урона.
+IceLaser:
+  Description: "Наносит {Damage} урона.\nНаносит двойной, если у врага есть |Холод|."
+KoishiAttackG:
+  Description: Наносит {Damage} урона.
+KoishiBlockB:
+  Description: Даёт {Block} |Защиты|.
+KoishiAttackB:
+  Description: Наносит {Damage} урона.
+KoishiBlockG:
+  Description: Даёт {Block} |Защиты|.
+YunyouShengdi:
+  Description: "Даёт {Block} |Защиты|.\n|Улучшите| выбранную карту в руке."
+  UpgradedDescription: "Даёт {Block} |Block|.\n|Улучшает| все карты в руке до конца\
+    \ битвы."
+  FlavorText: Дом бездельников.
+ShannvAttack:
+  Description: "Наносит {Damage} урона.\nНакладывает {Value1} |Яда|."
+WManaCard:
+  Description: Даёт {Mana}.
+UManaCard:
+  Description: Даёт {Mana}.
+BManaCard:
+  Description: Даёт {Mana}.
+RManaCard:
+  Description: Даёт {Mana}.
+GManaCard:
+  Description: Даёт {Mana}.
+CManaCard:
+  Description: Даёт {Mana}.
+PManaCard:
+  Description: Даёт {Mana}.
+MultiShoot:
+  Description: Наносит {Damage} урона {Value1} раза.
+Yuebiao:
+  Description: '|When берётся:| |Очищение| {Value1}.'
+BuyPeace:
+  Description: В конце хода {PlayerName} потеряйте {Value1} <sprite="Point" name="Gold">
+    и восполните {Value2} здоровья.
