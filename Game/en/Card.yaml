@@ -39,10 +39,10 @@ YinyangCard:
 LingfuHuti:
   Description: |-
     Gain {Block} |Block|.
-    Conjure a |神域札| into the hand.
+    Conjure a |Kami-Aura Talisman| into the hand.
   UpgradedDescription: |-
     Gain {Shield} |Barrier|.
-    Conjure a |神域札| into the hand.
+    Conjure a |Kami-Aura Talisman| into the hand.
   Name: Amulet Protection
 Jinfuzhen:
   Description: |-
@@ -55,17 +55,17 @@ JingshenYishi:
     |Exile| a random card in the hand.
   UpgradedDescription: |-
     Gain {Block} |Block|.
-    |Exile| a card from the hand.
+    |Exile| target card in the hand.
   Name: Ritual of Purification
 ShengtianKick:
   Description: |-
-    Draw {Value1} card.
+    Draw {Value1:plural one='% card' other='% cards'}.
     Gain {Value2} |Temp-Firepower|.
   Name: Ascension Kick
 MengzhiYuzha:
   Description: |-
     Deal {Damage} damage.
-    Conjure a |封魔针| into the hand.
+    Conjure a |Sealing Needle| into the hand.
   Name: Amulet of Dream
 Fengmozhen4:
   Description: Deal {Damage} damage to each enemy.
@@ -75,7 +75,7 @@ TuimofuLuanwu:
 WunvKongwu:
   Description: |-
     Gain {Value1} |Graze|.
-    Draw {Value2} card.
+    Draw {Value2:plural one='% card' other='% cards'}.
   Name: Miko Sky Dance
 YinyangBaoyu:
   Description: |-
@@ -101,7 +101,7 @@ MingzhuAntou:
     It |temporarily costs| {Mana}.
 
 HuanxiangBlock:
-  Description: Whenever a card is |Exiled|, {PlayerName} gains {Value1} |Block|.
+  Description: Whenever a card is |Exiled|, gain {Value1} |Block|.
 
   Name: Edge of Fantasy
 JiejieAttack:
@@ -120,7 +120,7 @@ ReimuWeiyan:
   Name: True Majestic
 ZhujiThreeGod:
   Description: |-
-    Draw {Value1} cards.
+    Draw {Value1:plural one='% card' other='% cards'}.
     Whenever an |Attack| or |Defense| card is drawn this way, gain {Value2} |Temp-Firepower| or {Value2} |Temp-Spirit|, respectively.
 
   Name: Summoning Sumiyoshi
@@ -202,7 +202,8 @@ BoliDajiejie:
     instead.
 
 EvilTuiZhi:
-  Description: The next |Attack| card played this turn deals double damage.
+  Description: The next {Value1:plural one='' other='%'} |Attack| {Value1:plural one='card'
+    other='cards'} played this turn deal{Value1:plural one='s'} double damage.
 
 MomentPower:
   Description: 'Convert all of {PlayerName}''s |Temp-Firepower| into |Firepower|.'
