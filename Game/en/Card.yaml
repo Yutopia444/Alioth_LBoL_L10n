@@ -219,8 +219,8 @@ Wunvyu:
 
 KuosanJiejie:
   Description: |-
-    |For each <sprite="ManaSprite" name="W"> spent to play:| Gain {Block} |Block|.
-    |For each <sprite="ManaSprite" name="R"> spent to play:| Deal {Damage} damage to each enemy.
+    |For each <sprite="ManaSprite" name="W"> spent:| Gain {Block} |Block|.
+    |For each <sprite="ManaSprite" name="R"> spent:| Deal {Damage} damage to each enemy.
 
 HuijuQiankun:
   Description: |-
@@ -609,8 +609,7 @@ SakuyaDefenseRetain:
   Description: "Gain {Block} |Block|.\n|Block| is not lost at the start of {PlayerName}'s\
     \ next turn."
 SakuyaAttackX:
-  Description: '|For each <sprite="ManaSprite" name="1"> spent to play:| Deal {Damage}
-    damage.'
+  Description: '|For each <sprite="ManaSprite" name="1"> spent:| Deal {Damage} damage.'
 PrepareParty:
   Description: "Gain {Block} |Block|.\nPlace up to {Value1:plural one='% card' other='%\
     \ cards'} from the hand on top of the draw pile then draw an equal number of cards."
@@ -722,10 +721,10 @@ SakuyaSpeedup:
   Description: Double the current |Time Pulse|.
 PerfectServant:
   Description: "|For each <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"W\"> spent to play:| At the start of {PlayerName}'s next turn, each card\
-    \ in the hand |temporarily costs| <sprite=\"ManaSprite\" name=\"1\"> less to play.\n\
-    |For each <sprite=\"ManaSprite\" name=\"U\"> spent to play:| During {PlayerName}'s\
-    \ next turn, draw {Value1} additional cards during the draw step and add {Mana}."
+    \ name=\"W\"> spent:| At the start of {PlayerName}'s next turn, each card in the\
+    \ hand |temporarily costs| <sprite=\"ManaSprite\" name=\"1\"> less to play.\n\
+    |For each <sprite=\"ManaSprite\" name=\"U\"> spent:| During {PlayerName}'s next\
+    \ turn, draw {Value1} additional cards during the draw step and add {Mana}."
   Name: Perfect Servant
 ExtraTurnEveryone:
   Description: "End {PlayerName}'s turn and take an |Extra Turn|.\nEnemies also take\
@@ -752,7 +751,7 @@ PotionJungle:
   Name: Fluorescent Forest
 UpgradePotion:
   Description: "Conjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|' into the discard pile.\nAt the end of {PlayerName}'s turn, increase\
+    \ Potions|'} into the discard pile.\nAt the end of {PlayerName}'s turn, increase\
     \ the damage of all |Unstable Potions| in the draw and discard piles by {Value1}."
 HuojianSaoba:
   Description: "Gain {Value1} |Graze|.\nGain {Value2} |Charge|."
@@ -805,12 +804,12 @@ MarisaSteal:
 RainbowStar:
   Name: Rainbow Star Blast
   Description: "Deal {Damage} damage.\n|For each <sprite=\"ManaSprite\" name=\"P\"\
-    > spent to play:| Increases damage dealt by {Value1}. Gain {Value2} <sprite=\"\
-    Point\" name=\"Power\">."
+    > spent:| Increases damage dealt by {Value1}. Gain {Value2} <sprite=\"Point\"\
+    \ name=\"Power\">."
 ShibaiChanwu:
   Name: Product of Failure
   Description: "Conjure {Value1:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|'} into the discard pile.\nConjure {Value2:plural one='% |暗影| other='%\
+    \ Potions|'} into the discard pile.\nConjure {Value2:plural one='% |暗影|' other='%\
     \ |暗影s|} into the draw pile."
 Yinhe:
   Name: Milky Way
@@ -821,7 +820,7 @@ StarSky:
   Description: Gain {Value1} |Charge|.
 AccuracyLaser:
   Name: Directional Laser
-  Description: "Deal {Damage} damage.\n|When Retained:| This card |costs| {Mana} less\
+  Description: "Deal {Damage} damage.\n|When Retained:| This card costs {Mana} less\
     \ this combat."
 ShinningPotion:
   Name: Luminous Mushroom
@@ -854,7 +853,7 @@ BurstDraw:
     other='% cards'}.
 StarlightTaifeng:
   Name: Starlight Typhoon
-  Description: Deal {Damage} damage {Value1} times.
+  Description: Deal {Damage} damage {Value1:plural one='% time' other='% times'}.
 StarlightTaifengSummoner:
   Name: Convergence Starlight
   Description: "Conjure a |星光台风| into the draw pile.\n|For each {Mana} spent:| The\
@@ -875,20 +874,21 @@ RedGiantStar:
 OpenUniverse:
   Name: Boundless Universe
   Description: Choose target card in your draw pile. Remove the chosen card from combat,
-    then conjure two |Copies| of the chosen card into the hand. The copies |temporarily
-    cost| {Mana} and have |Exile|.
+    then conjure two |copies| of the chosen card into the hand that |temporarily cost|
+    {Mana} and have |Exile|.
 IceSpark:
   Name: Frozen Laser
   Description: "Deal {Damage} damage to each enemy.\nApply {Value1} |Hypothermia|\
     \ to each enemy. |d:(Hypothermia causes the character to lose that much life.)|"
 ChargingPotion:
   Name: Radioactive Elements
-  Description: "Conjure {Value2:plural one='% Unstable Potion' other='% Unstable Potions'}\
-    \ into the draw pile.\nWhenever an |Unstable Potion| is drawn, gain {Value1} |Charge|."
+  Description: "Conjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
+    \ Potions|'} into the draw pile.\nWhenever an |Unstable Potion| is drawn, gain\
+    \ {Value1} |Charge|."
 MasterOfCollection:
   Name: Master of Collection
-  Description: Whenever a card is |Retained|, it |costs| {Value1} random mana less
-    this combat.
+  Description: Whenever a card is |Retained|, it costs {Value1} random mana less this
+    combat.
 HinaAttack:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
     For each |Curse| card in the library, deal damage an additional time."
@@ -897,7 +897,7 @@ SatoriMemory:
     |直觉|: The cost of these cards is |temporarily reduced| by {Mana}."
 GrimoireStudy:
   Description: "Lose {Value1} life.\n|For each <sprite=\"ManaSprite\" name=\"1\">\
-    \ spent to play|: This effect lasts for an additional turn.\nAt the end of {PlayerName}'s\
+    \ spent:| This effect lasts for an additional turn.\nAt the end of {PlayerName}'s\
     \ turn, conjure a |幻虹| into the hand."
 DoremyDuplicate:
   Description: Conjure a copy of an |ability| or |attack| card in the hand {Value1}
@@ -1029,8 +1029,8 @@ FourFlan:
     \ Those copies cost {Mana} and have |Exile| and |Ethereal|."
   ExtraDescription1: Deal {Damage} damage {Value1:plural one='% time' other='% times'}.
 ReisenAttack:
-  Description: '|For each <sprite="ManaSprite" name="2"> spent to play:| Deal {Damage}
-    damage to all enemies.'
+  Description: '|For each <sprite="ManaSprite" name="2"> spent:| Deal {Damage} damage
+    to each enemy.'
 FangxiangHeal:
   Description: Randomly |exile| {Value1:plural one='% card' other='% cards'} from
     the discard pile. Gain {Value2} life for each card exiled ??(need to test for
@@ -1205,9 +1205,9 @@ ShootMoon:
     \ |Charge|."
 RunAway:
   Description: "Discard each card in the hand. Cards discarded this way |temporarily\
-    \ cost| {Mana} less.\nGale {Value1} |Graze|."
+    \ cost| {Mana} less.\nGain {Value1} |Graze|."
   UpgradedDescription: "Discard each card in the hand. Cards discarded this way |temporarily\
-    \ cost| {Mana} less.\nGale {Value1} |Graze|.\nDraw {Value2:plural one='% card'\
+    \ cost| {Mana} less.\nGain {Value1} |Graze|.\nDraw {Value2:plural one='% card'\
     \ other='% cards'}."
 MixAndShake:
   Description: "Deal {Damage} damage to each enemy.\nThis card's damage is increased\
@@ -1216,12 +1216,13 @@ PotionDefense:
   Description: "Gain {Block} |Block|.\nUntil end of turn, whenever an |Unstable Potion|\
     \ is drawn, gain {Value1} |Barrier|."
 EventHorizon:
-  Description: "Enter |Burst|.\nAt the start of {PlayerName}'s next turn, |r:die|."
+  Description: "Enter |Burst|.\nAt the start of {PlayerName}'s next turn |d:(this\
+    \ combat)|, lose the game."
 HuoliQuankai:
   Description: "While in |Burst|, {PlayerName}'s |Attacks| deal triple damage instead\
     \ of double.\nEnter |Burst|."
   UpgradedDescription: "When {PlayerName} enters |Burst|, add {Mana} instead of <sprite=\"\
-    ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"W\">.\nWhile in |Burst|,\
+    ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"P\">.\nWhile in |Burst|,\
     \ {PlayerName}'s |Attacks| deal triple damage instead of double.\nEnter |Burst|."
 WhiteLaser:
   Description: "Deal {Damage] damage.\nGain {Shield} |Barrier|. This |Barrier| gain\
