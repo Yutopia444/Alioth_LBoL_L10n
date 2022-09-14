@@ -151,8 +151,8 @@ AutoQumobang:
     \ фазы взятия карт.\nКогда эта карта |Оставляется| {Value2} раза, |Изгоните| эту\
     \ карту."
 Potion:
-  Description: 'Когда вы получаете эту карту в руку: Получите {Mana}, нанесите {Damage}
-    урона случайному врагу, |Изгоните| эту карту.'
+  Description: '|Когда берётся в руку:| Даёт {Mana}, наносит {Damage} урона случайному
+    врагу, затем |Изгоняется|.'
   Name: Нестабильное зелье
 Jiangshen:
   Description: "Когда вы призываете карту, она улучшается.\nСотворите {Value1} |阴阳玉|\
@@ -174,9 +174,9 @@ BoliDajiejie:
   Description: Когда {PlayerName} получает |Защиту|, вместо этого она получает столько
     же |Барьера|.
 KuosanJiejie:
-  Description: "|За каждую потраченную <sprite=\"ManaSprite\" name=\"W\">:| Даёт {Block}\
-    \ |Защиты|.\n|За каждую потраченную <sprite=\"ManaSprite\" name=\"R\">:| Наносит\
-    \ {Damage} урона всем врагам."
+  Description: "|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"W\">:| Даёт\
+    \ {Block} |Защиты|.\n|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"\
+    R\">:| Наносит {Damage} урона всем врагам."
 HuijuQiankun:
   Description: "|Изгоните| свою руку. Затем призовите |Шар Инь-Янь| в руку.\nУрон\
     \ призванных карт повышается на {Value1} за каждую карту |Изгнанную| таким способом."
@@ -205,7 +205,7 @@ MarisaBlockB:
   Description: Даёт {Block} |Защиты|.
   Name: Защита звездной пылью
 CraftPotion:
-  Description: Возьмите {Value1} |不稳定魔药| в свою руку.
+  Description: Сотворите {Value1} |Нестабильное зелье| в руку.
   UpgradedDescription: "Возьмите {Value1} |不稳定魔药| в свою руку.\nВы берёте {Value1}\
     \ карту."
   Name: Зельеварение
@@ -294,7 +294,7 @@ ExileMagic:
   Description: Изгоните до {Value1} карт из руки. Сотворите столько же |Метательных
     Ножей| в руку.
 SakuyaAttackX:
-  Description: '|За каждую потраченную <sprite="ManaSprite" name="1">:| Наносит {Damage} урона.'
+  Description: '|За каждую затраченную ею <sprite="ManaSprite" name="1">:| Наносит {Damage} урона.'
 SakuyaDraw:
   Description: '|Когда сбрасывается:| Вы берёте {Value1} карт(у).'
   Name: Безупречность
@@ -344,7 +344,7 @@ BailianNingshen:
   Description: Выберите одну из {Value1} случайных нейтральных карт и сотворите её
     в руку. Она |временно стоит| {Mana} и имеет эффекты |Изгнания| и |Эфирности|.
 QinglanAttack:
-  Description: "Наносит {Damage} урона.\n|Предскажите| {Scry}.\nВы берёте {Value2:plural\
+  Description: "Наносит {Damage} урона.\n|Предскажите| {Scry} карты.\nВы берёте {Value2:plural\
     \ one='% карту' other='% карты'}."
 HatateDiscard:
   Description: "Сбросьте {Value1} карты.\nДаёт {Mana}."
@@ -363,7 +363,7 @@ GuijiZaoxingFang:
   Name: Навык скульптора - квадрат
 WaterPrincess:
   Description: "Даёт {Value1} |Барьера| за каждую карту в руке.\n|Дебют:| Сотворите\
-    \ |将一张| в руку."
+    \ |水花| в руку."
   Name: Принцесса воды
 RingoJinghua:
   Name: Очищение земли
@@ -428,10 +428,10 @@ TimeWalk:
     \ другие копии этой карты из игры до конца битвы."
   Name: Прогулка во времени
 PerfectServant:
-  Description: "|За каждую потраченную <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+  Description: "|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
     ManaSprite\" name=\"W\">:| В начале хода {PlayerName} стоимость каждой карты в\
     \ руке |временно понижается| на <sprite=\"ManaSprite\" name=\"1\">.\n|За каждую\
-    \ потраченную <sprite=\"ManaSprite\" name=\"U\">:| Даёт {Mana} в начале вашего\
+    \ затраченную ею <sprite=\"ManaSprite\" name=\"U\">:| Даёт {Mana} в начале вашего\
     \ следующего хода и вы берёте {Value1:plural one='% дополнительную карту' other='%\
     \ дополнительные карты'}."
   Name: Идеальная служанка
@@ -449,7 +449,7 @@ SummerFlower:
 BailianJingang:
   Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Отражения|."
 Astrology:
-  Description: "Предскажите {Scry}.\nВы берёте {Value1} карту."
+  Description: "Предскажите {Scry} карты.\nВы берёте {Value1} карту."
   Name: Астрология
 RandomShoot:
   Description: Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'
@@ -477,7 +477,7 @@ JinjiBlock:
   Description: Даёт {Block} |Защиты|.
   Name: Экстренная защита
 RedLaser:
-  Description: "Наносит {Damage} урона.\n|Перегрузка {Value2}: Наносит вместо этого\
+  Description: "Наносит {Damage} урона.\n|Перегрузка {Value2}:| Наносит вместо этого\
     \ {OverdriveDamage} урона."
   Name: Огненный лазер
 MarisaDraw:
@@ -494,7 +494,7 @@ HuojianSaoba:
   Description: "Даёт {Value1} |Уворота|.\nДаёт {Value1} |Заряда|."
   Name: Ракетная метла
 Alioth:
-  Description: "Предскажите {Scry}.\nДаёт {Value2} |Заряда|.\nВы берёте {Value1:plural\
+  Description: "Предскажите {Scry} карты.\nДаёт {Value2} |Заряда|.\nВы берёте {Value1:plural\
     \ one='% карту' other='% карты'}."
   Name: Алиот
 ScryAttack:
@@ -502,8 +502,8 @@ ScryAttack:
     \ {PlayerName} |предсказывает|."
   Name: Путеводная звезда
 NightSeeStar:
-  Description: "Предскажите {Scry}.\nВы берёте {Value1:plural one='% карту' other='%\
-    \ карты'}."
+  Description: "Предскажите {Scry} карты.\nВы берёте {Value1:plural one='% карту'\
+    \ other='% карты'}."
   Name: Наблюдение за звездами
 BackOfKnife:
   Description: "Сотворите |尖刀快车| в руку.\nЗа каждый |Метательный Нож| в |Изгнании|,\
@@ -519,8 +519,8 @@ StopTime:
     потеряно.
   Name: Остановка времени
 LunaDial:
-  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\n|Когда берётся:|\
-    \ Стоимость этой карты уменьшается на {Mana}."
+  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\n|Когда берётся\
+    \ в руку:| Стоимость этой карты уменьшается на {Mana}."
 SpecialClock:
   Description: В начале хода {PlayerName} выберите не более одной карты в руке и сбросьте
     её. Возьмите столько же карт.
@@ -590,7 +590,7 @@ MultiShoot:
   Description: Наносит {Damage} урона {Value1} раза.
   Name: Многократный выстрел
 Yuebiao:
-  Description: '|Когда берётся:| |Очищение| {Value1}.'
+  Description: '|Когда берётся в руку:| |Очищение| {Value1}.'
   Name: Лунный пейзаж
 BuyPeace:
   Description: В конце хода {PlayerName} потеряйте {Value1} <sprite="Point" name="Gold">
@@ -642,12 +642,13 @@ AyaNewsKoishiSp:
 Riguang:
   Description: В конце хода {PlayerName} получает {Value1} урона.
 Yueguang:
-  Description: '|Когда берётся:| Отнимает {Value1} случайной маны.'
+  Description: '|Когда берётся в руку:| Отнимает {Value1} случайной маны.'
 BlackResidue:
   Description: В конце хода {PlayerName} потеряйте {Value1} здоровья.
   Name: Темный осадок
 Wushuai:
-  Description: '|Когда берётся|: Получите {Value1} |Захват| и |изгоните| эту карту.'
+  Description: '|Когда берётся в руку|: Получите {Value1} |Захват| и |изгоните| эту
+    карту.'
   Name: Сияющий меч
 MarisaSteal:
   Name: '"Одолжить" материалы'
@@ -675,13 +676,14 @@ ShinningPotion:
     |Перегрузка {Value2}:| Сотворите ещё одно |Нестабильное Зелье| в стопку добора."
 RainbowStar:
   Name: Взрыв радужной звезды
-  Description: "Наносит {Damage} урона.\n|За каждую потраченную <sprite=\"ManaSprite\"\
+  Description: "Наносит {Damage} урона.\n|За каждую затраченную ею <sprite=\"ManaSprite\"\
     \ name=\"P\">:| увеличивает наносимый урон на {Value1}. Даёт {Value2} <sprite=\"\
     Point\" name=\"Power\">."
 ShibaiChanwu:
   Name: Результат ошибки
-  Description: Сотворите {Value1:plural one='% |Нестабильное зелье|' other='% |Нестабильных
-    Зелья|'} в стопку сброса.
+  Description: "Сотворите {Value1:plural one='% |Нестабильное зелье|' other='% |Нестабильных\
+    \ Зелья|'} в стопку сброса.\nСотворите  {Value2:plural one='% |Тень|' other='%\
+    \ |Тени|} в стопку добора."
 Yinhe:
   Name: Млечный путь
   Description: "Даёт {Block} |Защиты|.\n|Когда оставляется:| повышает кол-во даваемой\
@@ -747,14 +749,14 @@ FinalSpark:
     \ из стопки сброса в руку, когда {PlayerName} получает эффект |Ража|."
 StarlightTaifengSummoner:
   Name: Конвергенция звездного света
-  Description: "Сотворите |Звёздный Тайфун| в стопку добора.\n|За каждую потраченную\
-    \ {Mana}:| Сотворённая карта наносит урон один дополнительный раз.\n|За каждую\
-    \ потраченную <sprite=\"ManaSprite\" name=\"R\">:| Увеличивает урон сотворённой\
+  Description: "Сотворите |Звёздный Тайфун| в стопку добора.\n|За каждую затраченную\
+    \ ёю {Mana}:| Сотворённая карта наносит урон один дополнительный раз.\n|За каждую\
+    \ затраченную ею <sprite=\"ManaSprite\" name=\"R\">:| Увеличивает урон сотворённой\
     \ карты на {Value1}."
   UpgradedDescription: "Сотворите |Звёздный Тайфун+| в стопку добора.\n|За каждую\
-    \ потраченную {Mana}:| Сотворённая карта наносит урон один дополнительный раз.\n\
-    |За каждую потраченную <sprite=\"ManaSprite\" name=\"R\">:| Увеличивает урон сотворённой\
-    \ карты на {Value1}."
+    \ затраченную ёю {Mana}:| Сотворённая карта наносит урон один дополнительный раз.\n\
+    |За каждую затраченную ею <sprite=\"ManaSprite\" name=\"R\">:| Увеличивает урон\
+    \ сотворённой карты на {Value1}."
 StarlightTaifeng:
   Name: Звездный тайфун
   Description: Наносит {Damage} урона {Value1} раза.
@@ -962,7 +964,7 @@ HehuanAttack:
   Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
     Вы берёте {Value1:plural one='% карту' other='% карты'}."
 ReisenAttack:
-  Description: '|За каждую потраченную <sprite="ManaSprite" name="2">:| Наносит {Damage} урона
+  Description: '|За каждую затраченную ею <sprite="ManaSprite" name="2">:| Наносит {Damage} урона
     всем врагам.'
   Name: Безумный сон
 XiaosanReflect:
@@ -972,8 +974,8 @@ NueExile:
   Description: "|Изгоните| карту с руки.\nСотворите случайную карту в руку. Она |временно\
     \ стоит| {Mana}."
 YukariBox:
-  Description: "Предскажите {Scry}.\nВы берёте {Value1:plural one='% карту' other='%\
-    \ карты'}.\nПеремешайте стопку сброса в стопку добора."
+  Description: "Предскажите {Scry} карты.\nВы берёте {Value1:plural one='% карту'\
+    \ other='% карты'}.\nПеремешайте стопку сброса в стопку добора."
 SnowGirlCard:
   Description: Накладывает {Value1} |严寒| (Цель теряет здоровье в зависимости от её
     |严寒| ).
@@ -1099,7 +1101,7 @@ TrueMoon:
   FlavorText: При истинном полнолунии все является лишь тщеславной фантазией.
   Name: Истинное полнолуние
 GrimoireStudy:
-  Description: "Отнимает {Value1} здоровья.\nЗа каждую потраченную <sprite=\"ManaSprite\"\
+  Description: "Отнимает {Value1} здоровья.\nЗа каждую затраченную ею <sprite=\"ManaSprite\"\
     \ name=\"1\">: Продлевает эффект этой карты на один дополнительный ход.\nВ конце\
     \ хода {PlayerName} сотворите |Радугу| в руку."
   Name: Изучить гримуар
@@ -1149,14 +1151,14 @@ HinaAttack:
     За каждую карту |Проклятья| в колоде наносит урон дополнительный раз."
   Name: Колесо невезения
 RumiaBlock:
-  Description: "Даёт {Block} |Защиты|.\nСотворите |暗影| в руку."
+  Description: "Даёт {Block} |Защиты|.\nСотворите |Тень| в руку."
   Name: Уход в тень
 SatoriAttack:
   Description: "Наносит {Damage} урона всем врагам.\n|Интуиция:| Даёт {Value1} |Защиты|\
     \ за каждого врага с намерением атаковать."
 MystiaSing:
-  Description: "Накладывает {Value1} |暂失火力| на всех врагов.\nДаёт {Value2} <sprite=\"\
-    Point\" name=\"Power\">."
+  Description: "Накладывает {Value1} |Временного понижения Огневой Мощи| на всех врагов.\n\
+    Даёт {Value2} <sprite=\"Point\" name=\"Power\">."
   Name: Песнь ночной птицы
 LoveLetter:
   Name: Любовное письмо
@@ -1205,7 +1207,7 @@ FakeHuiye:
 FlanBlack:
   Description: "|d:Эта карта находится в разработке.\nПожалуйста, следите за обновлениями!|"
 AttackWithEveryColor:
-  Description: '|За каждую потраченную ману разного цвета:| Наносит {Damage} урона.'
+  Description: '|За каждую затраченную ею ману разного цвета:| Наносит {Damage} урона.'
 Zhulianshen:
   Description: "|d:Эта карта находится в разработке.\nПожалуйста, следите за обновлениями!|"
 YuyukoSing:
