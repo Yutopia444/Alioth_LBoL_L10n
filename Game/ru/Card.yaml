@@ -162,13 +162,13 @@ EvilTuiZhi:
 MomentPower:
   Description: Преобразует всю |Временную Огневую Мощь| в |Огневую Мощь|.
 TaijiLiangyi:
-  Description: В начале хода {PlayerName} если в руке нет |Шаров Инь-Янь|, призовите
+  Description: В начале хода {PlayerName:g} если в руке нет |Шаров Инь-Янь|, призовите
     |Шар Инь-Янь| в руку.
 Wunvyu:
   Description: "Наносит {Damage} урона {Value1} раза.\n|Пока находиться в руке:| Когда\
     \ вы берёте карты вне фазы взятия карт, урон этих карт увеличивается на {Value2}."
 FreeFly:
-  Description: В начале хода {PlayerName} даёт {Mana}.
+  Description: В начале хода {PlayerName:g} даёт {Mana}.
   Name: Свободный полёт
 BoliDajiejie:
   Description: Когда {PlayerName} получает |Защиту|, вместо этого она получает столько
@@ -243,8 +243,8 @@ SilverJump:
     \ Нож| в стопки добора и сброса."
   Name: Дамоклов нож
 GainKnife:
-  Description: "Сотворите |Метательный Нож| в руку.\nВ начале хода {PlayerName} сотворяет\
-    \ |Метательный Нож| в руку."
+  Description: "Сотворите |Метательный Нож| в руку.\nВ начале хода {PlayerName:g}\
+    \ сотворяет |Метательный Нож| в руку."
   Name: Нож в рукаве
 TimeLord:
   Description: Даёт {Value1} |Всплеска Времени|.
@@ -396,7 +396,7 @@ GuijiZaoxingHu:
     \ в другую карту до конца битвы."
   Name: Навык скульптора -кривая линия
 YonglinCard:
-  Description: Когда разыгрывается первая карта во время хода {PlayerName}, в руку
+  Description: Когда разыгрывается первая карта во время хода {PlayerName:g}, в руку
     сотворяется её копия. Она |временно стоит| {Mana} и имеет эффекты |Изгнания| и
     |Эфирности|..
   Name: Повязка мудреца
@@ -429,14 +429,14 @@ TimeWalk:
   Name: Прогулка во времени
 PerfectServant:
   Description: "|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
-    ManaSprite\" name=\"W\">:| В начале хода {PlayerName} стоимость каждой карты в\
-    \ руке |временно понижается| на <sprite=\"ManaSprite\" name=\"1\">.\n|За каждую\
+    ManaSprite\" name=\"W\">:| В начале хода {PlayerName:g} стоимость каждой карты\
+    \ в руке |временно понижается| на <sprite=\"ManaSprite\" name=\"1\">.\n|За каждую\
     \ затраченную ею <sprite=\"ManaSprite\" name=\"U\">:| Даёт {Mana} в начале вашего\
     \ следующего хода и вы берёте {Value1:plural one='% дополнительную карту' other='%\
     \ дополнительные карты'}."
   Name: Идеальная служанка
 EvilMaid:
-  Description: "Отнимает {Value1} здоровья.\nВо время следующего хода {PlayerName},\
+  Description: "Отнимает {Value1} здоровья.\nВо время следующего хода {PlayerName:g},\
     \ все атаки наносят двойной урон."
   Name: Дьявольская горничная
 TunnelEffect:
@@ -515,15 +515,15 @@ GroupOfKnife:
   Description: Наносит {Damage} урона.
   Name: Колкая поездка
 StopTime:
-  Description: В конце хода {PlayerName} {Value1} маны (выбирается случайно) не будет
-    потеряно.
+  Description: В конце хода {PlayerName:g} {Value1} маны (выбирается случайно) не
+    будет потеряно.
   Name: Остановка времени
 LunaDial:
   Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\n|Когда берётся\
     \ в руку:| Стоимость этой карты уменьшается на {Mana}."
 SpecialClock:
-  Description: В начале хода {PlayerName} выберите не более одной карты в руке и сбросьте
-    её. Возьмите столько же карт.
+  Description: В начале хода {PlayerName:g} выберите не более одной карты в руке и
+    сбросьте её. Возьмите столько же карт.
   Name: Уловка горничной
 SakuyaDio:
   Description: "Накладывает {Value1} |Захвата| на цель, когда разыгрывается |Метательный\
@@ -593,11 +593,11 @@ Yuebiao:
   Description: '|Когда берётся в руку:| |Очищение| {Value1}.'
   Name: Лунный пейзаж
 BuyPeace:
-  Description: В конце хода {PlayerName} потеряйте {Value1} <sprite="Point" name="Gold">
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} <sprite="Point" name="Gold">
     и восполните {Value2} здоровья.
   Name: Купить безопасность
 Pressure:
-  Description: В начале хода {PlayerName} потеряйте {Value1} <sprite="Point" name="Power">.
+  Description: В начале хода {PlayerName:g} потеряйте {Value1} <sprite="Point" name="Power">.
   Name: Незримое давление
 Drunk:
   Description: "|Пока находиться в руке:| За ход можно сыграть лишь {Value1} карты.\n\
@@ -606,12 +606,12 @@ Drunk:
     карты.'
   Name: Опьянение
 FanzhuanChongdong:
-  Description: В начале хода {PlayerName} потеряйте {Value1} здоровья, если в этом
+  Description: В начале хода {PlayerName:g} потеряйте {Value1} здоровья, если в этом
     ходу здоровье не восполнялось.
   FlavorText: Цена которую нужно заплатить, чтобы стать приспешником вампира.
   Name: Обратный голод
 Misfortune:
-  Description: '|Пока находиться в руке:| В конце хода {PlayerName} потеряйте {Value1}
+  Description: '|Пока находиться в руке:| В конце хода {PlayerName:g} потеряйте {Value1}
     здоровья за каждые 100 <sprite="Point" name="Gold">, которыми вы владеете.'
   Name: Несчастье
 YuyukoMisfortune:
@@ -624,27 +624,27 @@ Xiaozhuo:
 AyaNews:
   Description: Наносит {Damage} урона случайному врагу.
 AyaNewsReimuSp:
-  Description: В конце хода {PlayerName} потеряйте {Value1} |Духовности|.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} |Духовности|.
 XiaosanJingxia:
-  Description: В конце хода {PlayerName} получите {Value1} |Слабости|.
+  Description: В конце хода {PlayerName:g} получите {Value1} |Слабости|.
   Name: Испуг
 MarisaForget:
-  Description: В конце хода {PlayerName} получите {Value1} |Уязвимости|.
+  Description: В конце хода {PlayerName:g} получите {Value1} |Уязвимости|.
   Name: Забывчивость
 AyaNewsMarisaSp:
-  Description: В конце хода {PlayerName} потеряйте {Value1} |Духовности|.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} |Духовности|.
 AyaNewsSakuyaSp:
-  Description: В конце хода {PlayerName} потеряйте {Value1} |Духовности|.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} |Духовности|.
 AyaNewsCirnoSp:
-  Description: В конце хода {PlayerName} потеряйте {Value1} |Духовности|.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} |Духовности|.
 AyaNewsKoishiSp:
-  Description: В конце хода {PlayerName} потеряйте {Value1} |Духовности|.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} |Духовности|.
 Riguang:
-  Description: В конце хода {PlayerName} получает {Value1} урона.
+  Description: В конце хода {PlayerName:g} получает {Value1} урона.
 Yueguang:
   Description: '|Когда берётся в руку:| Отнимает {Value1} случайной маны.'
 BlackResidue:
-  Description: В конце хода {PlayerName} потеряйте {Value1} здоровья.
+  Description: В конце хода {PlayerName:g} потеряйте {Value1} здоровья.
   Name: Темный осадок
 Wushuai:
   Description: '|Когда берётся в руку|: Получите {Value1} |Захват| и |изгоните| эту
@@ -652,7 +652,7 @@ Wushuai:
   Name: Сияющий меч
 MarisaSteal:
   Name: '"Одолжить" материалы'
-  Description: "Сотворите |Радугу| в руку.\nВ начале следующего хода {PlayerName},\
+  Description: "Сотворите |Радугу| в руку.\nВ начале следующего хода {PlayerName:g},\
     \ потеряйте {Value1} случайной маны."
   UpgradedDescription: Сотворите |Радугу| в руку.
 AccuracyLaser:
@@ -663,7 +663,7 @@ ScryBlock:
   Description: Даёт {Value1} |Защиты|, когда {PlayerName} предсказывает.
   Name: Преднамеренность
 LearnAstrology:
-  Description: В начале хода {PlayerName}, если в руке нету |Астрологии| сотворите
+  Description: В начале хода {PlayerName:g}, если в руке нету |Астрологии| сотворите
     |Астрологию| в руку.
   Name: Изучение звёзд
 StarShower:
@@ -690,7 +690,7 @@ Yinhe:
     \ |Защиты| на {Block}."
 PotionJungle:
   Name: Светящийся лес
-  Description: В конце хода {PlayerName}, сотворите {Value1:plural one='% |Нестабильное
+  Description: В конце хода {PlayerName:g}, сотворите {Value1:plural one='% |Нестабильное
     зелье|' other='% |Нестабильных зелья|'} в стопку сброса.
 MarisaEat:
   Name: Поедание грибов
@@ -711,14 +711,14 @@ ThrowBigStar:
     \ этого наносит {Damage} урона всем врагам дважды."
 SolarSystem:
   Name: Солнечная система
-  Description: В начале хода {PlayerName} даёт {Value1} |Заряда|.
+  Description: В начале хода {PlayerName:g} даёт {Value1} |Заряда|.
 ShootMoon:
   Name: Прострели Луну
   Description: "Наносит {Damage} урона.\nДаёт {Value1} |Заряда|, если выбранный враг\
     \ намеревается |Атаковать|."
 WizardStudy:
   Name: Горнило ведьмы
-  Description: "Даёт {Value1} |Огневой Мощи| и |Духовности|.\nВ начале хода {PlayerName}\
+  Description: "Даёт {Value1} |Огневой Мощи| и |Духовности|.\nВ начале хода {PlayerName:g}\
     \ отнимает {Value2} случайной маны."
 ExilePotion:
   Name: Утилизация отходов
@@ -730,7 +730,7 @@ PotionDefense:
     \ Зелье| берётся в руку."
 UpgradePotion:
   Description: "Сотворите {Value2:plural one='% |Нестабильное Зелье|' other='% |Нестабильных\
-    \ Зелья|'} в стопку сброса.\nВ конце хода {PlayerName} урон всех |Нестабильных\
+    \ Зелья|'} в стопку сброса.\nВ конце хода {PlayerName:g} урон всех |Нестабильных\
     \ Зелий|, находящихся в стопке сброса и добора, увеличивается на {Value1}."
   Name: Зелье улучшения
 OpenUniverse:
@@ -784,7 +784,7 @@ WhiteLaser:
 EventHorizon:
   Name: Горизонт событий
   Description: "Войдите в |Раж|.\n|d:(В этой битве)| вы проиграете в начале следующего\
-    \ хода {PlayerName}."
+    \ хода {PlayerName:g}."
 HuoliQuankai:
   Description: В эффекте |Ража| |Атаки| {PlayerName} наносят тройной урон вместо двойного.
   UpgradedDescription: "Даёт {Mana} вместо <sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
@@ -799,7 +799,7 @@ IceSpark:
   Name: Ледяной лазер
 BlazingStar:
   Description: "Даёт {Block} |Защиты|. Защита не исчезнет в начале следующего хода\
-    \ {PlayerName}.\nЗакончите ход, затем сделайте |Доп. Ход| с |Всплеском Времени|\
+    \ {PlayerName:g}.\nЗакончите ход, затем сделайте |Доп. Ход| с |Всплеском Времени|\
     \ {Mana}."
 MixAndShake:
   Description: "Наносит {Damage} урона всем врагам.\nУрон этой карты увеличивается\
@@ -879,7 +879,7 @@ ToolMicai:
   Description: "Даёт {Value1} |Оптический камуфляж|.\n|Количество использовании【{DeckCounter}】|"
   Name: Одежда с оптическим камуфляжем
 Payment:
-  Description: "Заплатите {MoneyCost} <sprite=\"Point\" name=\"Gold\".\nКролик мошенник\
+  Description: "Заплатите {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nКролик мошенник\
     \ сразу же уйдёт."
   Name: Перевод средств
 ToolHeal:
@@ -921,7 +921,7 @@ ToolDraw:
     \ использовании【{DeckCounter}】|"
   Name: Рюкзак снабжения
 MoonWorld:
-  Description: В начале хода {PlayerName}, |Очищает| {Value1} случайную карту.
+  Description: В начале хода {PlayerName:g}, |Очищает| {Value1} случайную карту.
   Name: Очищенный мир
 ToolAmulet:
   Description: "Даёт {Value1} |Талисман|.\n|Количество использовании【{DeckCounter}】|"
@@ -951,8 +951,8 @@ FlanPlayAlone:
     Сбросьте все карты с руки кроме |Attack|."
   Name: Игра в одиночку
 HekaHellRain:
-  Description: В конце хода {PlayerName}. Наносит {Value1} урона всем врагам за каждую
-    сыгранную карту.
+  Description: В конце хода {PlayerName:g}. Наносит {Value1} урона всем врагам за
+    каждую сыгранную карту.
   Name: Дождь из ада
 FourFlan:
   Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
@@ -1064,7 +1064,7 @@ XingMoney:
     \ name=\"Gold\">."
 HuashanDefense:
   Description: "Даёт {Block} |Защиты|.\nПолучите {Value1} |格挡| до следующего хода\
-    \ {PlayerName}."
+    \ {PlayerName:g}."
   Name: Удар молнии
 TianziMana:
   Description: Даёт {Mana}.
@@ -1073,12 +1073,12 @@ MogongAttack:
     \ |Атака|, урон этой карты становится уроном разыгранной карты |Атаки|."
   Name: Форма Ханивы
 MeihongPower:
-  Description: "В начале хода {PlayerName} даёт {Value1} |Огневой Мощи|.\nВ конце\
+  Description: "В начале хода {PlayerName:g} даёт {Value1} |Огневой Мощи|.\nВ конце\
     \ битвы, если у {PlayerName} меньше половины здоровья, восполняет {Value2} здоровья."
   FlavorText: Она проклята бессмертием, живёт своей жизнью аскета.
   Name: Бессмертное пламя
 HuiyeMana:
-  Description: В начале хода {PlayerName} даёт {Value1} случайной маны; увеличивается
+  Description: В начале хода {PlayerName:g} даёт {Value1} случайной маны; увеличивается
     на {Value1} каждый ход.
   Name: Повесть о старике Такэтори
 YongyiAttack:
@@ -1103,10 +1103,10 @@ TrueMoon:
 GrimoireStudy:
   Description: "Отнимает {Value1} здоровья.\nЗа каждую затраченную ею <sprite=\"ManaSprite\"\
     \ name=\"1\">: Продлевает эффект этой карты на один дополнительный ход.\nВ конце\
-    \ хода {PlayerName} сотворите |Радугу| в руку."
+    \ хода {PlayerName:g} сотворите |Радугу| в руку."
   Name: Изучить гримуар
 ShannvAbility:
-  Description: Накладывает {Value1} |Яда| на всех врагов в начале хода {PlayerName}.
+  Description: Накладывает {Value1} |Яда| на всех врагов в начале хода {PlayerName:g}.
   FlavorText: Врач напоминает вам пить много горячей воды.
   Name: Неизвестная болезнь
 SatoriMemory:
@@ -1200,7 +1200,7 @@ ReadBook:
   ExtraDescription1: "Даёт {Block} |Защиты|.\n|d:Дебют:| Выберите одну из {Value1}\
     \ карт и сотворите её в руку (карты могут быть только белыми или синими)."
 SeeFengshui:
-  Description: "В начале хода {PlayerName} |Предскажите| {Value1}.\nДаёт {Value2}\
+  Description: "В начале хода {PlayerName:g} |Предскажите| {Value1}.\nДаёт {Value2}\
     \ |Защиты|, когда карта |Защиты| отправляется в стопку сброса во время предсказывания."
 FakeHuiye:
   Description: "|d:Эта карта пока в разработке.\nПожалуйста, следите за обновлениями!|"
