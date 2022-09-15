@@ -199,17 +199,18 @@ TimeIsLimited:
   Description: 卡牌费用增加{Mana}，直到敌人行动完毕。
   Brief: 卡牌费用增加若干，直到敌人行动完毕。
 
+GuangxueMicai:
+  Name: 光学迷彩
+  Description: '{OwnerName}受到的攻击伤害降低一半，剩余 {Duration} 回合。'
+  Brief: '{OwnerName}受到的攻击伤害降低一半，剩余若干回合。'
+
 MaoyuBlock:
   Name: 毛茸茸
   Description: '{OwnerName}被攻击后获得 {Level} 点|格挡|。'
-  Brief: '{OwnerName}被攻击后获得若干点|格挡|。'
 
 Servant:
   Name: 使魔
   Description: |-
-    主人被击败后，使魔会被一同击败。
-    不会触发其死亡效果。
-  Brief: |-
     主人被击败后，使魔会被一同击败。
     不会触发其死亡效果。
 
@@ -228,12 +229,10 @@ DeathExplodeCount:
 DeathVulnerable:
   Name: 疾病缠身
   Description: '{OwnerName}被击败时对{PlayerName}施加 {Level} 回合|易伤|。'
-  Brief: '{OwnerName}被击败时对{PlayerName}施加若干回合|易伤|。'
 
 Drowning:
   Name: 溺水
   Description: '{OwnerName}的回合结束时，受到 {Level} 点伤害。'
-  Brief: '{OwnerName}的回合结束时，受到若干点伤害。'
 
 LoveGirlDamageReduce:
   Name: 留恋尘世
@@ -252,12 +251,10 @@ PhoneBillSe:
 AbsorbPower:
   Name: 红玉之力
   Description: '{OwnerName}的回合结束时获得 {Level} 点|火力|。'
-  Brief: 回合结束时获得若干点火力。
 
 AbsorbSpirit:
   Name: 蓝玉之力
   Description: '{OwnerName}的回合结束时获得 {Level} 点|灵力|。'
-  Brief: 回合结束时获得若干点灵力。
 
 Lunatic:
   Name: 疯狂
@@ -316,21 +313,12 @@ Emi:
 DroneBlock:
   Name: 防御矩阵
   Description: '{OwnerName}回合结束时，获得 {Level} 点|格挡|。'
-  Brief: '{OwnerName}回合结束时，获得若干点|格挡|。'
 
 TurnStartPurify:
   Name: 消毒完毕
   Description: |-
     {PlayerName}的回合开始时，|纯化| {Level} 。
     回合结束时移除本效果。
-  Brief: |-
-    {PlayerName}的回合开始时，|纯化| X 。
-    回合结束时移除本效果。
-
-GuangxueMicai:
-  Name: 光学迷彩
-  Description: '{OwnerName}受到的攻击伤害降低一半，剩余 {Duration} 回合。'
-  Brief: '{OwnerName}受到的攻击伤害降低一半，剩余若干回合。'
 
 RockHard:
   Name: 硬！
@@ -356,10 +344,13 @@ KokoroYou:
   Name: 忧
   Description: '{OwnerName}的回合结束时，{PlayerName}受到 {Level} 回合|虚弱|。'
 
+LongEscape:
+  Name: 放水
+  Description: '{OwnerName}会在生命值低于 {Level} 时离开战斗。'
+
 FlatPeach:
   Name: 仙桃
   Description: '{OwnerName}受到伤害时，恢复 {Level} 点生命。'
-  Brief: '{OwnerName}受到伤害时，恢复若干点生命。'
 
 EnemyEnergy:
   Name: 能量
@@ -392,7 +383,6 @@ PowerByDefense:
 SijiZui:
   Name: 是非曲直
   Description: '{PlayerName}的罪孽：轻度。'
-  Brief: '{PlayerName}的罪孽：轻度。'
   ExtraDescription: '{PlayerName}的罪孽：一般。'
   ExtraDescription2: '{PlayerName}的罪孽：深重。'
 
@@ -401,9 +391,14 @@ MirrorImage:
   Description: '{OwnerName}的镜中倒影。'
 
 Sleep:
-  Name: 睡眠
-  Description: 受到伤害后醒来。
-  Brief: 受到伤害后醒来。
+  Name: 永远的春梦
+  Description: |-
+    {OwnerName}的回合结束时，将|护盾|补至 {Level} 点。
+    {Count} 回合后或受到伤害时醒来。
+
+DoremyLevel:
+  Name: 梦境等级
+  Description: 在深层的梦境里，{OwnerName}会发挥更强的实力。
 
 Curiosity:
   Name: 我很好奇！
