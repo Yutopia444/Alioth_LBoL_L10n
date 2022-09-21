@@ -55,6 +55,9 @@ SpiritNegative:
 
 Invincible:
   Name: Flawless
+  Description: "{OwnerName} cannot be dealt more than 1 damage at a time {Duration:plural\
+    \ one='until end of turn' other='for the next % turns'}."
+  Brief: '{OwnerName} cannot be dealt more than 1 damage at a time.'
 LearnAstrologySe:
   Name: 天文进修
   Description: '{PlayerName}的回合结束时，如果手中没有|占星|，将一张|占星|加入手中。'
@@ -64,11 +67,54 @@ Fragil:
   Name: Frail
   Brief: '{PlayerName} gains {Value}% less |Block| and |Barrier| from card effects.'
   Description: "{PlayerName} gains {Value}% less |Block| and |Barrier| from card effects\
-    \ for the next {Duration:plural one='% turn' other='% turns'}."
+    \ {Duration:plural one='until end of turn' other='for the next % turns'}."
 Weak:
   Name: Weak
   Brief: "{OwnerName}'s |Attacks| deal {Value}% less damage."
-  Description: "{OwnerName}'s |Attacks| deal {Value}% less damage for the next {Duration:plural\
-    \ one='% turn' other='% turns'}."
+  Description: "{OwnerName}'s |Attacks| deal {Value}% less damage {Duration:plural\
+    \ one='until end of turn' other='for the next % turns'}."
 Vulnerable:
   Name: Vulnerable
+  Description: "{OwnerName} takes {Value}% more damage from |Attacks| {Duration:plural\
+    \ one='until end of turn' other='for the next % turns'}."
+  Brief: '{OwnerName} takes {Value}% more damage from |Attacks|.'
+LockedOn:
+  Description: "{OwnerName} takes {Level} more damage from |Attacks|.\nAt the start\
+    \ of the round, remove 1 |Lock On| from them."
+  Name: Lock On
+  Brief: "{OwnerName} takes more damage from |Attacks|.\nAt the start of each round:\
+    \ They lose 1 |Lock On|."
+Graze:
+  Description: "{OwnerName} takes 0 damage instead of the damage that would be dealt\
+    \ by the next {Level} |Attack{Level:plural one='' other='s'}|.\nAt the end of\
+    \ their turn, they lose 1 |Graze|."
+  Name: Graze
+  Brief: "{OwnerName} takes 0 damage from |Attacks|.\nWhenever attacked, or at the\
+    \ end of their turn, they lose 1 |Graze|."
+TurnStartDontLoseBlock:
+  Description: "{OwnerName} does not lose their |Block| at the start of their {Level:plural\
+    \ one='next turn' other='next % turns'}."
+  Name: Retain Block
+  Brief: '{OwnerName} does not lose |Block| at the start of their turn.'
+Electric:
+  Brief: '{OwnerName} deals damage to the attacker when damaged with an |Attack|.'
+  Name: Static Charge
+  Description: When damaged with an |Attack|, the attacker takes {Level} damage.
+ExtraTurn:
+  Name: Extra Turn
+  Description: "{OwnerName} will take {Level:plural one='% extra turn' other='% extra\
+    \ turns'} after this one."
+  Brief: '{OwnerName} will take one or more additional turns when they end their turn.'
+LimitedDamage:
+  Name: Damage Limiter
+  Description: "{OwnerName} may only be dealt up to {Limit} damage each turn. |d:(Excess\
+    \ damage is reduced to 0.)|\n{OwnerName} has been dealt {Count} damage this turn."
+  Brief: '{OwnerName} may only be dealt a certain amount of damage each turn. |d:(Excess
+    damage is reduced to 0.)|'
+Amulet:
+  Name: Amulet
+  Description: Negate the next {Level} |Debuff{Level:plural one='' other='s'}| that
+    would be applied.
+  Brief: Negates incoming |Debuffs|.
+TempElectric:
+  Name: Temporary Charge
