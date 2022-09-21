@@ -252,7 +252,7 @@ Jiangshen:
   Description: |-
     本场战斗中，所有临时增加的牌将会|升级|。
     将 {Value1} 张|阴阳玉|加入手中。
-  FlavorText: 『我向神明许愿，下一抽抽到「出入境界」——』
+  FlavorText: 「我向神明许愿，下一抽抽到『出入境界』——」
 
 BoliDajiejie:
   Name: 博丽大结界
@@ -508,7 +508,7 @@ StarSky:
 AccuracyLaser:
   Name: 定向激光
   Description: |-
-    造成 {Damage} 点伤害。
+    造成 {Damage} 点伤害 {Value1} 次。
     每当这张牌被|保留|时，费用降低{Mana}，直到战斗结束。
   FlavorText: 「你以为我会出非定向激光？没想到吧！」
 
@@ -564,7 +564,7 @@ ThrowBigStar:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     |超载 {Value2} ：|造成两次伤害。
-  FlavorText: 『欢迎收听废线铁路电台。本月，来自魔理沙·雾雨演唱的「ThrowingStar」再度登上幻想乡流行音乐榜单的首位……』
+  FlavorText: 「欢迎收听废线铁路电台。本月，来自魔理沙·雾雨演唱的『ThrowingSta』再度登上幻想乡流行音乐榜单的首位……」
 
 SolarSystem:
   Name: 太阳系仪
@@ -669,7 +669,7 @@ StarlightTaifengSummoner:
 StarlightTaifeng:
   Name: 星光台风
   Description: 造成 {Damage} 点伤害 {Value1} 次。
-  FlavorText: 『最后一击！等等，我看看这个叫「有限伤害」的效果是什么……』
+  FlavorText: 「最后一击！等等，我看看这个叫『有限伤害』的效果是什么……」
 
 MasterOfCollection:
   Name: 收集专家
@@ -765,9 +765,7 @@ SakuyaSnow:
 
 CoolMaid:
   Name: 潇洒女仆
-  Description: |-
-    将 {Value1} 张|飞刀|加入手中。
-    将 {Value2} 张|飞刀|洗入抽牌堆。
+  Description: 将 {Value1} 张|飞刀|加入手中。
 
 SakuyaTwiceAttack:
   Name: 闪光弹跳
@@ -816,7 +814,7 @@ CleanRoom:
   Description: |-
     选择一张手牌丢弃。
     抽 {Value1} 张牌。
-    随机|升级| {Value2} 张手牌。
+    随机|升级| {Value2} 张手牌，如果丢弃的是|飞刀|，改为升级所有手牌。
 
 ExileMagic:
   Name: 调换魔法
@@ -844,17 +842,17 @@ SakuyaDefenseRetain:
     获得 {Block} 点|格挡|。
     |保留格挡|。
 
+GainKnife:
+  Name: 星剑飞舞
+  Description: |-
+    {PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。
+    将 {Value2} 张|飞刀|加入手中。
+
 BladePower:
   Name: 快闪之银
   Description: |-
     获得 {Value1} 点|火力|。
     |进入手中时|：如果本牌是唯一的手牌，|暂塑|为{Mana}。
-
-GainKnife:
-  Name: 星剑飞舞
-  Description: |-
-    将 {Value1} 张|飞刀|加入手中。
-    {PlayerName}的回合开始时，将 {Value2} 张|飞刀|加入手中。
 
 SakuyaAttackX:
   Name: 推进之银
@@ -868,7 +866,7 @@ PrepareParty:
   Name: 准备宴会
   Description: |-
     获得 {Block} 点|格挡|。
-    选择至多 {Value1} 张手牌置于抽牌堆顶，抽等量的牌。
+    将一张手牌置于抽牌堆顶，否则获得{Mana}。
 
 MihuanJack:
   Name: 迷幻杰克
@@ -882,7 +880,7 @@ SakuyaClock:
   Name: 咲夜特制怀表
   Description: |-
     造成 {Damage} 点伤害。
-    |退治|时，结束{PlayerName}的回合，进行一个额外的回合。
+    以本牌击败一名敌人时，|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
 
 SakuyaGraze:
   Name: 意外躲避
@@ -891,7 +889,7 @@ SakuyaGraze:
     获得 {Value1} 层|闪避|。
     洗牌时回到手中。
 
-SakuyaColorless:
+ShengquanZaiwo:
   Name: 胜券在握
   Description: 获得{Mana}。
 
@@ -960,6 +958,16 @@ LunaDial:
     结束{PlayerName}的回合，进行一个额外的回合。
     抽取时：费用降低{Mana}，直到战斗结束。
 
+TimeWalk:
+  Name: 时间行走
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    每场战斗中，只有第一张|时间行走|生效。
+  ExtraDescription1: |-
+    |d:结束{PlayerName}的回合，进行一个额外的回合。|
+    每场战斗中，只有第一张|时间行走|生效。
+  FlavorText: 虽然削弱了费用，但它还是太强了。
+
 LunaClock:
   Name: 月神之钟
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合攻击无法造成伤害。
@@ -977,14 +985,8 @@ SakuyaDio:
   Name: 轮到你了
   Description: |-
     主动使用的|飞刀|施加 {Value1} 层|锁定|。
-    手牌中的|飞刀|费用|临时减少|{Mana}。
-
-TimeWalk:
-  Name: 时间行走
-  Description: |-
     结束{PlayerName}的回合，进行一个额外的回合。
-    打出后将所有其他的|时间行走|移出本场战斗。
-  FlavorText: 虽然削弱了费用，但它还是太强了。
+    跳过这个额外回合的抽牌阶段，改为将 {Value2} 张|飞刀|加入手中。
 
 PerfectServant:
   Name: 完美从者
@@ -1191,7 +1193,7 @@ HatateDiscard:
 
 DoremyDuplicate:
   Name: 梦我梦中
-  Description: 选择手牌的一张攻击或能力牌，将 {Value1} 张的它的复制加入手中。
+  Description: 选择一张手牌，将 {Value1} 张的它的复制加入手中。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
 
 LeidiBlizzard:
@@ -1248,6 +1250,13 @@ SatoriAttack:
     |直觉|：每有一个敌人的意图为攻击时，获得 {Value1} 点|格挡|。
   FlavorText: 和外界流行的"比心"有异曲同工之妙。
 
+MystiaSing:
+  Name: 夜雀之歌
+  Description: |-
+    对所有敌人施加 {Value1} 点|暂失火力|。
+    获得 {Value2} 点<sprite="Point" name="Power">。
+  FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
+
 RumiaBlock:
   Name: 遮光
   Description: |-
@@ -1255,12 +1264,9 @@ RumiaBlock:
     将一张|暗影|加入手中。
   FlavorText: 没看见就是 0 伤害。
 
-MystiaSing:
-  Name: 夜雀之歌
-  Description: |-
-    对所有敌人施加 {Value1} 点|暂失火力|。
-    获得 {Value2} 点<sprite="Point" name="Power">。
-  FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
+YuyukoDebuff:
+  Name: 无寿之梦
+  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
 
 HinaAttack:
   Name: 厄运之轮
@@ -1317,7 +1323,9 @@ TrueMoon:
 
 LeiguAttack:
   Name: 低音的雷鼓
-  Description: 对所有敌人造成 {Damage} 点伤害，施加 {Value1} 回合|易伤|。
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    拥有|护盾|或|格挡|的敌人会受到两次伤害。
   FlavorText: 希望你的邻居不喜欢玩这个。
 
 MeihongAttack:
@@ -1453,9 +1461,9 @@ NiuqiDefense:
     获得 {Block} 点|格挡|。
     弃牌堆中每有一张牌，|格挡|提高 {Value1} 点。
 
-YuyukoDebuff:
-  Name: 无寿之梦
-  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
+XiaodingKill:
+  Name: 脱魂仪式
+  Description: 如果目标敌人的生命值不超过 {Value1} 点，使其直接死亡。
 
 YukariAttack:
   Name: 生与死的境界
@@ -1463,10 +1471,6 @@ YukariAttack:
     造成 {Damage} 点伤害。
     如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时本牌从弃牌堆回到手中且|暂塑|为{Mana}。
   FlavorText: 「生与死之间有一条纤薄的境界线。你会在那里找到我。」
-
-XiaodingKill:
-  Name: 脱魂仪式
-  Description: 如果目标敌人的生命值不超过 {Value1} 点，使其直接死亡。
 
 SijiCard:
   Name: 有罪或无罪
@@ -1901,7 +1905,7 @@ ToolRandomTool:
   Description: |-
     从 {Value1} 张随机|道具牌|中选择一张，将其复制加入手中，这张复制的使用次数为一。
     |消耗品【{DeckCounter}】|
-  FlavorText: ' 『这里是「裴廓德号」，空投补给舱来了！ 』'
+  FlavorText: ' 「这里是『裴廓德号』，空投补给舱来了！ 」'
 
 VampireShoot1:
   Name: 使魔的射击
