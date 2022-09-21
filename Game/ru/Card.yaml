@@ -64,7 +64,8 @@ ShengtianKick:
   Description: "Вы берёте {Value1} карту.\nДаёт {Value2} |Временной Огневой Мощи|."
   Name: Пинок вознесения
 ShensheRichang:
-  Description: "Даёт {Value1} здоровья.\nПреобразует всю |Защиту| {PlayerName} в |Барьер|."
+  Description: "Даёт {Value1} здоровья.\nПреобразует всю |Защиту| {PlayerName:g} в\
+    \ |Барьер|."
   Name: Повседневная жизнь храма
 ZhujiThreeGod:
   Description: "Вы берёте {Value1} карты.\nКогда вы берёте карту |Атаки| или |Защиты|\
@@ -106,11 +107,11 @@ HuanxiangBlock:
   Name: Грань фантазий
 JiejieAttack:
   Description: "Наносит {Damage} урона.\nЗатем наносит ({ShieldDamage}) урона равного\
-    \ значению |Барьера| {PlayerName}."
+    \ значению |Барьера| {PlayerName:g}."
   NonbattleDescription: "Наносит {Damage} урона.\nЗатем наносит урон равный значению\
-    \ |Барьера| {PlayerName}."
+    \ |Барьера| {PlayerName:g}."
   UpgradedNonbattleDescription: "Наносит {Damage} урона.\nЗатем наносит урон равный\
-    \ значению |Барьера| {PlayerName}."
+    \ значению |Барьера| {PlayerName:g}."
 ReimuWeiyan:
   Description: Накладывает {Value1} |Слабости| на каждого врага.
   Name: Истинное величие
@@ -240,6 +241,7 @@ AttackMagic:
 BladePower:
   Description: "Вы берёте {Value1} карты.\nКогда берется в руку: Если это единственная\
     \ карта в вашей руке, получите {Value1} |Огневой Мощи| и |Изгоните| эту карту."
+  Name: Ослепительный рывок
 SilverJump:
   Description: "Накладывает {Value1} |Слабости|.\nЗамешивает {Value2} |Метательный\
     \ Нож| в стопки добора и сброса."
@@ -293,18 +295,20 @@ SakuyaSleep:
   Name: Небольшой перерыв
 SakuyaDefenseRetain:
   Description: "Даёт {Block} |Защиты|.\nЗащита не исчезнет в начале след. хода. {PlayerName:g}."
+  Name: Поднять щит
 ExileMagic:
   Description: Изгоните до {Value1} карт из руки. Сотворите столько же |Метательных
     Ножей| в руку.
   Name: Переключатель
 SakuyaAttackX:
   Description: '|За каждую затраченную ею <sprite="ManaSprite" name="1">:| Наносит {Damage} урона.'
+  Name: Серебряное вторжение
 SakuyaDraw:
   Description: '|Когда сбрасывается:| Вы берёте {Value1} карт(у).'
   Name: Безупречность
 PrepareParty:
-  Description: "Даёт {Block} |Защиты|.\nПоложите на верх стопки добора до {Value1}\
-    \ карт, затем вы берёте столько же карт."
+  Description: "Даёт {Block} |Защиты|.\nПоместите карту с руки на верх стопки добора,\
+    \ в противном случае получите {Mana}."
   Name: Подготовка банкета
 MihuanJack:
   Description: В начале вашего хода даёт {Value1} |Всплеска Времени|.
@@ -425,8 +429,8 @@ DropToKnife:
     |Метательные Ножи| в руку за каждую сброшенную таким способом карту.
   Name: Серебряная крепость
 TimeWalk:
-  Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\nУдаляет все\
-    \ другие копии этой карты из игры до конца битвы."
+  Description: "Заканчивает ход {PlayerName:g} и начинает её |Доп. Ход|.\nУдаляет\
+    \ все другие копии этой карты из игры до конца битвы."
   Name: Прогулка во времени
 PerfectServant:
   Description: "|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
@@ -512,6 +516,7 @@ BackOfKnife:
   Name: Нож-бумеранг
 SilverBlade:
   Description: Даёт {Value1} |Барьера|, когда {PlayerName} играет карту |Атаки|.
+  Name: Пространство серебра
 GroupOfKnife:
   Description: Наносит {Damage} урона.
   Name: Колкая поездка
@@ -522,13 +527,17 @@ StopTime:
 LunaDial:
   Description: "Заканчивает ход {PlayerName} и начинает её |Доп. Ход|.\n|Когда берётся\
     \ в руку:| Стоимость этой карты уменьшается на {Mana}."
+  Name: Личное время
 SpecialClock:
   Description: В начале хода {PlayerName:g} выберите не более одной карты в руке и
     сбросьте её. Возьмите столько же карт.
   Name: Уловка горничной
 SakuyaDio:
   Description: "Накладывает {Value1} |Захвата| на цель, когда разыгрывается |Метательный\
-    \ Нож|.\nСтоимость |Метательных Ножей| в руке |временно снижена| на {Mana}."
+    \ Нож|.\n{PlayerName} завершает свой ход и делает доп. ход.\nПропустите фазу взятия\
+    \ карт в этом доп. ходу и вместо этого сотворите в руку {Value2} |Метательных\
+    \ ножа|."
+  Name: Ты следующий
 BackToFuture:
   Description: Поменяйте местами стопку сброса и стопку добора.
   UpgradedDescription: "Поменяйте местами стопку сброса и стопку добора.\nВы берёте\
@@ -1239,3 +1248,6 @@ SakuyaLock:
   Name: Блокировка времени
 BefuddledLife:
   Name: Замешательство
+ShengquanZaiwo:
+  Name: Победа в рукаве
+  Description: Даёт {Mana}.
