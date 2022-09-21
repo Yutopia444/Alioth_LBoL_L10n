@@ -186,6 +186,7 @@ QinggeManwu:
   Name: Miko's Silent Dance
 YinyangXueyin:
   Description: |-
+    Lose {Value2} Life.
     Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temp-Firepower| and {Value1} |Temp-Spirit|.
 
   Name: Bloodshed Yin-yang Orbs
@@ -359,8 +360,8 @@ WinterWarm:
     \ one='% card' other='% cards'}.|"
   Name: Hand Warmer
 ManaJungle:
-  Description: '|When drawn:| Conjure {Value1} |幻虹| into the hand and |Exile| this
-    card.'
+  Description: '|When drawn:| Conjure |{Value1:plural one=''% Rainbow'' other=''%
+    Rainbows''}| into the hand and |Exile| this card.'
   Name: Jungle Adventure
   FlavorText: "\"Eureka! I've got it!\""
 SakuyaAttackW:
@@ -733,7 +734,7 @@ ExileMagic:
     \ hand. Conjure the same number of |Throwing Knives| into the hand."
   Name: Switcheroo
 SakuyaSleep:
-  Description: "Conjure a |幻虹| into the hand.\nEnd the turn."
+  Description: "Conjure a |Rainbow| into the hand.\nEnd the turn."
   Name: Short Break
 SakuyaDraw:
   Description: '|When discarded:| Draw {Value1:plural one=''% card'' other=''% cards''}.'
@@ -804,6 +805,11 @@ PerfectServant:
     \ draw {Value1} more {Value1:plural one='card' other='cards'} during the draw\
     \ step and add {Mana}."
   Name: Perfect Servant
+  UpgradedDescription: "|For each <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"> spent:| At the start of {PlayerName}'s next turn, each card in the\
+    \ hand |temporarily costs| {Value1} random mana less.\n|For each <sprite=\"ManaSprite\"\
+    \ name=\"U\"> spent:| During {PlayerName}'s next turn, draw {Value1} more {Value1:plural\
+    \ one='card' other='cards'} during the draw step and add {Mana}."
 ExtraTurnEveryone:
   Description: "End {PlayerName}'s turn and take an |Extra Turn|.\nEnemies also take\
     \ an |Extra Turn| the next time it is their turn."
@@ -881,9 +887,9 @@ NightSeeStar:
   Description: "|Scry| {Scry}.\nDraw {Value1:plural one='% card' other='% cards'}."
   Name: Stargazing
 MarisaSteal:
-  Description: "Conjure a |幻虹| into the hand.\nAt the start of {PlayerName}'s next\
-    \ turn, lose {Value1} random mana."
-  UpgradedDescription: Conjure a |幻虹| into the hand.
+  Description: "Conjure a |Rainbow| into the hand.\nAt the start of {PlayerName}'s\
+    \ next turn, lose {Value1} random mana."
+  UpgradedDescription: Conjure a |Rainbow| into the hand.
   Name: '"Borrow" Materials'
 RainbowStar:
   Name: Rainbow Star Blast
@@ -893,8 +899,8 @@ RainbowStar:
 ShibaiChanwu:
   Name: Product of Failure
   Description: "Conjure {Value1:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|'} into the discard pile.\nConjure {Value2:plural one='% |暗影|' other='%\
-    \ |暗影s|} into the draw pile."
+    \ Potions|'} into the discard pile.\nConjure {Value2:plural one='% |Shadow|' other='%\
+    \ |Shadows|} into the draw pile."
   FlavorText: Even making desserts can be a risk of failure.
 Yinhe:
   Name: Milky Way
@@ -980,13 +986,13 @@ HinaAttack:
   Name: Misfortune's Wheel
 SatoriMemory:
   Description: "Return {Value1} random attack cards from the discard pile to the hand.\n\
-    |直觉|: The cost of these cards is |temporarily reduced| by {Mana}."
+    |Instinct:| The cost of these cards is |temporarily reduced| by {Mana}."
   Name: Deep Memories
   FlavorText: "\"What's the password for this website?\""
 GrimoireStudy:
   Description: "Lose {Value1} life.\n|For each <sprite=\"ManaSprite\" name=\"1\">\
     \ spent:| This effect lasts for an additional turn.\nAt the end of {PlayerName}'s\
-    \ turn, conjure a |幻虹| into the hand."
+    \ turn, conjure a |Rainbow| into the hand."
   Name: Studying Grimoire
   FlavorText: "\"Let me check the monster's weakness...\""
 DoremyDuplicate:
@@ -999,7 +1005,7 @@ SatoriAttack:
   Description: "Deal {Damage} damage to all enemies.\n|Instinct:| For each enemy with\
     \ an attack intention, gain {Value1} |Block|."
 RumiaBlock:
-  Description: "Gain {Block} |Block|.\nConjure a |暗影| into the hand."
+  Description: "Gain {Block} |Block|.\nConjure a |Shadow| into the hand."
   Name: Shading
 MystiaSing:
   Description: "Apply {Value1} |暂失火力| to all enemies.\nGain {Value2} <sprite=\"Point\"\
@@ -1154,9 +1160,9 @@ FangxiangHeal:
   Name: Devour Desires
 KongMana:
   Description: "|Exile| a random card from the hand. Add mana equal to that card's\
-    \ cost.\nConjure a |幻虹| into the hand."
+    \ cost.\nConjure a |Rainbow| into the hand."
   UpgradedDescription: "|Exile| target card from the hand. Add mana equal to that\
-    \ card's cost.\nConjure a |幻虹| into the hand."
+    \ card's cost.\nConjure a |Rainbow| into the hand."
   Name: Meltdown
 RandomShoot:
   Description: Deal {Damage} damage to a random enemy {Value1:plural one='% time'
@@ -1203,7 +1209,7 @@ ToolMana:
   Description: "Add {Mana}.\n|Limited【{DeckCounter}】|"
   Name: Energy Drinks
 ToolMicai:
-  Description: "Gain {Value1} |光学迷彩|.\n|Limited【{DeckCounter}】|"
+  Description: "Gain {Value1} |Camouflage|.\n|Limited【{DeckCounter}】|"
   Name: Optical Camouflage Clothing
 ToolExile:
   Description: "|Exile| target card from the hand.\n|Limited【{DeckCounter}】|"
