@@ -13,6 +13,7 @@ ReimuAttackW:
 ReimuBlockR:
   Description: Gain {Block} |Block|.
   Name: Exterminate Danmaku
+  FlavorText: The savior can stop the bullet with a wave of hand.
 YaoguaiBuster:
   Description: Deal {Damage} damage {Value1} times.
   Name: Youkai Buster
@@ -189,7 +190,7 @@ YinyangXueyin:
     Lose {Value2} Life.
     Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temp-Firepower| and {Value1} |Temp-Spirit|.
 
-  Name: Bloodshed Yin-yang Orbs
+  Name: Yin-Yang Rune
 HuanxiangTouying:
   Description: |-
     Add {Mana}.
@@ -302,6 +303,7 @@ ReimuSakura:
     Deal {Damage} damage to each enemy.
     |Growth:| Reduce this card's mana cost by {Mana}.
 
+  Name: Dream Cherry Blossom Seal
 MarisaAttackB:
   Description: Deal {Damage} damage.
   Name: Laser Illusion
@@ -576,7 +578,7 @@ HatateDiscard:
 LeidiBlizzard:
   Description: 'Deal {Damage} damage all enemies.
 
-    Apply {Value1} |严寒| to all enemies.'
+    Apply {Value1} |Chill| to all enemies.'
   Name: Lingering Cold
 GuijiZaoxingYuan:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nThis card transforms\
@@ -766,10 +768,10 @@ LunaDial:
     \ cost of this card is reduced by {Mana}."
   Name: Private Time
 SakuyaDio:
-  Description: "Each |Throwing Knife| in the hand |temporarily costs| {Mana} less.\n\
-    End {PlayerName}'s turn and take an |extra turn.|\nDuring the |extra turn,| skip\
-    \ the draw phase and conjure |{Value2:plural one='% Throwing Knife' other='% Throwing\
-    \ Knives'}| into the hand instead."
+  Description: "Whenever a played |Throwing Knife| deals damage to an enemy, apply\
+    \ {Value1} |Lock-On| to it.\nEnd {PlayerName}'s turn and take an |extra turn.|\n\
+    During the |extra turn,| skip the draw phase and conjure |{Value2:plural one='%\
+    \ Throwing Knife' other='% Throwing Knives'}| into the hand instead."
   Name: You Are Next
 TimeWalk:
   Description: "End {PlayerName}'s turn and take an |Extra Turn|.\nRemove all other\
@@ -1003,13 +1005,14 @@ ShannvAttack:
 SatoriAttack:
   Description: "Deal {Damage} damage to all enemies.\n|Instinct:| For each enemy with\
     \ an attack intention, gain {Value1} |Block|."
+  Name: Heart Blossoms
 RumiaBlock:
   Description: "Gain {Block} |Block|.\nConjure a |Shadow| into the hand."
   Name: Shading
 MystiaSing:
   Description: "Apply {Value1} |暂失火力| to all enemies.\nGain {Value2} <sprite=\"Point\"\
     \ name=\"Power\">."
-  Name: Night-Bird's Song
+  Name: Song of the Night Sparrow
 BlackHorseZui:
   Description: "Lose {Value1} life.\nDeal {Damage} damage to all enemies {Value2:plural\
     \ one='% time' other='% times'}."
@@ -1030,9 +1033,11 @@ LeiguAttack:
   Description: "Deal {Damage} damage to all enemies.\nEnemies with |Barrier| or |Block|\
     \ will be dealt damage twice."
   FlavorText: Hope your neighbor don't like this.
+  Name: Bass of Taiko
 MeihongFire:
   Description: At the end of {PlayerName}'s turn and whenever a |Curse| or |Status|
     card is drawn, deal {Value1} damage to all enemies.
+  Name: Indiscriminately Ignited
 TiangouOrder:
   Description: "Deals {Damage} damage.\nWhen the target is attacked, {PlayerName}\
     \ gains {Value1} |Block|."
@@ -1040,6 +1045,7 @@ TiangouOrder:
 SeeFengshui:
   Description: "At the start of {PlayerName}'s turn, |Scry| {Value1}.\nWhenever a\
     \ |Defense| card is sent to the discard pile while |scrying|, gain {Value2} |Block|."
+  Name: Manipulating Feng-Shui
 YukariAttack:
   Description: "Deal {Damage} damage.\nAt the end of the turn, if {PlayerName}'s life\
     \ total changed during the turn, return this card from the discard pile to the\
@@ -1059,33 +1065,37 @@ SuikaBigball:
     \ all other enemies.\nLose {Value1} |Firepower|."
   Description: "Deal {Damage} damage. Then, deal {HalfDamage} damage to all other\
     \ enemies.\nLose {Value1} |Firepower|."
+  Name: Oni Spirit Bomb
 MeilingBlock:
   Description: "Gain {Block} |Block| and {Shield} |Barrier|.\nThis card is affected\
     \ by |Firepower|."
-  Name: Red Trigger Force
+  Name: Crimson Energy Release
   FlavorText: Be prepared to be hit before threatening to hit others.
 BailianPower:
   Description: Gain {Value1} |Firepower|.
-  Name: Body Building
+  Name: Strengthens Body
   FlavorText: The scriptures talk about BMI and building muscle.
 MeihongAttack:
   Description: "Lose {Value1} life.\nDeal {Damage} damage."
+  Name: Feng Wing Ascension
 YongyiAttack:
   Description: "Deal {Damage} damage to each enemy {Value1} times.\nIf {PlayerName}\
     \ has |Temp-Firepower|, this card deals {Damage} damage to each enemy {Value1}+1\
     \ times instead."
+  Name: Dreadful Raging Waves
 RemiliaBat:
   Description: "Gain {Value1} |Temp-Firepower|.\nGain {Value2} |Graze|."
   Name: Incarnate the bat
 HuiyinAttack:
   Description: "Deal {Damage} damage.\nDiscard up to {Value1:plural one='% card' other='%\
     \ cards'}."
+  Name: Mito no Mitsukuni
 ReadBook:
   Description: "Gain {Block} |Block|.\n|Debut:| Choose one of {Value1} blue and/or\
     \ white cards to conjure into the hand."
   ExtraDescription1: "Gain {Block} |Block|.\n|d:Debut: Choose one of {Value1} blue\
     \ and/or white cards to conjure into the hand.|"
-  Name: Read Books
+  Name: Youkai Study
 Panzi:
   Description: "Deal {Damage} damage.\n|When drawn:| Conjure a copy of this card into\
     \ the hand."
@@ -1097,14 +1107,17 @@ ShuimuBlock:
 LanCard:
   Description: Conjure a random rare card with mana value {Value1} into the hand.
     It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
+  Name: Shiki Analytics
 RainbowMarket:
   Description: Whenever a card is |Exiled|, conjure a random card into the hand.
+  Name: Lunar Rainbow Market
 NiuqiDefense:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Block| for each card in the\
     \ discard pile."
   Name: The Baby of the Stone
 YuyukoDebuff:
   Description: Apply {Value1} |Weak| and |Vulnerable|.
+  Name: Ageless Dream
 ArtificialJewellery:
   Description: Gain one mana of a random color.
   UpgradedDescription: Gain {Mana}.
