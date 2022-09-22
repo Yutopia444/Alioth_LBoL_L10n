@@ -16,7 +16,7 @@ YaoguaiBuster:
   Name: Истребитель ёкаев
 DoubleJiejie:
   UpgradedDescription: "Наносит {Damage} урона.\nНаносит {Damage} дважды вместо этого,\
-    \ если {PlayerName} имеет |барьер| или |защиту|."
+    \ если у {PlayerName:g} есть |Барьер| или |Защита|."
   Description: "Наносит {Damage} урона.\nЕсли {PlayerName} имеет |Барьер| вместо этого\
     \ наносит {Damage} дважды."
   Name: Двухуровневый барьер
@@ -35,8 +35,8 @@ LingfuHuti:
   UpgradedDescription: "Даёт {Shield} |Барьера|.\nСотворите |Ауру защиты| в руку."
   Name: Талисман защиты
 Jinfuzhen:
-  Description: "Наносит {Damage} урона.\nНакладывает {Value1} |Уязвимости|, если {PlayerName}\
-    \ имеет |Барьер|."
+  Description: "Наносит {Damage} урона.\nНакладывает {Value1} |Уязвимости|, если у\
+    \ {PlayerName:g} есть |Барьер|."
   Name: Связывающий барьер
 JingshenYishi:
   Description: "Даёт {Block} |Защиты|.\n|Изгоняет| случайную карту из руки."
@@ -74,7 +74,7 @@ ZhujiThreeGod:
   Name: Призыв Сумиёси
 Zhuizongfu:
   Description: "Наносит {Damage} урона случайному врагу {Value1} раза.\nДаёт {Mana},\
-    \ если {PlayerName} имеет |Барьер|."
+    \ если у {PlayerName:g} есть |Барьер|."
   Name: Самонаводящийся талисман
 YakongDianxue:
   Description: "Наносит {Damage} урона.\nЭта карта возвращается из Сброса в руку,\
@@ -445,10 +445,13 @@ EvilMaid:
 TunnelEffect:
   Description: "Наносит {Damage} урона случайному врагу.\nДаёт {Mana}.\nКогда стопка\
     \ добора тасуется, эта карта возвращается в руку заместо стопки добора."
+  Name: Туннельный эффект
 CirnoBlockU:
   Description: Даёт {Block} |Защиты|.
+  Name: Ледяной щит
 SummerFlower:
   Description: "Наносит {Damage} урона.\n|Рост|: Увеличивает урон на{Value1} ."
+  Name: Уход за цветами
 BailianJingang:
   Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Отражения|."
 Astrology:
@@ -549,14 +552,19 @@ SakuyaKiller:
   Description: Сотворите |{Value1:plural one='% Метательный Нож' other='% Метательные
     Ножи'}| в стопку сброса, когда {PlayerName} заканчивает ход или когда повергается
     враг.
+  Name: Потрошитель в тумане
 CirnoAttackU:
   Description: "Наносит {Damage} урона.\nНакладывает |Холод|."
+  Name: Ледяной выстрел
 CirnoBlockG:
   Description: Даёт {Block} |Защиты|.
+  Name: Листовая защита
 CirnoAttackG:
   Description: Наносит {Damage} урона.
+  Name: Лезвие
 IceLaser:
   Description: "Наносит {Damage} урона.\nНаносит двойной, если у врага есть |Холод|."
+  Name: Замораживающий выстрел
 KoishiAttackG:
   Description: Наносит {Damage} урона.
 KoishiBlockB:
@@ -821,6 +829,7 @@ RunAway:
     \ one='% карту' other='% карты'}."
 SakuyaSpeedup:
   Description: Удвойте текущий |Всплеск Времени|.
+  Name: Ускорить время и пространство
 RabbitFoot:
   Description: В конце битвы, если эта карта не |Изгналась|, получите {Value1} <sprite="Point"
     name="Gold">.
