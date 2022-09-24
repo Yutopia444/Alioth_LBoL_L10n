@@ -167,8 +167,8 @@ ReverseJiejie:
 Changzhizhen:
   Name: 常置阵
   Description: |-
-    |保留时：|对随机敌人造成 {Value1} 点伤害。
-    |手牌中：|当{PlayerName}失去一个正面效果时，伤害提高 {Value2} 点。
+    |保留时|：对随机敌人造成 {Value1} 点伤害。
+    |手牌中|：当{PlayerName}失去一个正面效果时，伤害提高 {Value2} 点。
 
 ReimuLucky:
   Name: 吉签开运
@@ -242,7 +242,7 @@ Wunvyu:
   Name: 最凶恶的巫女玉
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。 
-    |手牌中：|抽牌阶段外每抽一张牌，伤害提高 {Value2} 。
+    |手牌中|：抽牌阶段外每抽一张牌，伤害提高 {Value2} 。
 
 MomentPower:
   Name: 刹那亚空穴
@@ -334,7 +334,7 @@ Qingshan:
 AutoQumobang:
   Name: 暴走驱魔棒
   Description: |-
-    |手牌中：|回合开始时多抽 {Value1} 张牌。
+    |手牌中|：回合开始时多抽 {Value1} 张牌。
     生效 {Value2} 次后|放逐|自身。
   FlavorText: 「自主的驱魔棒正在抢夺巫女们的工作岗位。」——《文文新闻·经济版》
 
@@ -387,7 +387,7 @@ RedLaser:
 
 Potion:
   Name: 不稳定魔药
-  Description: 进入手中时：获得 {Mana} ，对一个随机敌人造成 {Damage} 点伤害，|放逐|本牌。
+  Description: '|进入手中时|：获得 {Mana} ，对一个随机敌人造成 {Damage} 点伤害，|放逐|本牌。'
   FlavorText: 警告！该魔药随时可能爆炸！
 
 MarisaDraw:
@@ -713,7 +713,7 @@ ChargingToMana:
 
 ManaJungle:
   Name: 森林探险
-  Description: 抽取时：将 {Value1} 张|幻虹|加入手中，然后|放逐|本牌。
+  Description: '|抽取时|：将 {Value1} 张|幻虹|加入手中，然后|放逐|本牌。'
   FlavorText: 「天呀还有意外收获！」
 
 SakuyaAttackW:
@@ -879,9 +879,12 @@ MihuanJack:
   Name: 迷幻杰克
   Description: 回合开始时，获得 {Value1} 层|时域冲击|。
 
-TimeLord:
-  Name: 主宰时空
-  Description: 获得 {Value1} 层|时域冲击|。
+SakuyaGraze:
+  Name: 意外躲避
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    获得 {Value1} 层|闪避|。
+    洗牌时回到手中。
 
 SakuyaClock:
   Name: 咲夜特制怀表
@@ -889,12 +892,9 @@ SakuyaClock:
     造成 {Damage} 点伤害。
     以本牌击败一名敌人时，|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
 
-SakuyaGraze:
-  Name: 意外躲避
-  Description: |-
-    获得 {Shield} 点|护盾|。
-    获得 {Value1} 层|闪避|。
-    洗牌时回到手中。
+DangerousMagician:
+  Name: 危险的魔术师
+  Description: 每当一张|飞刀|生效时，{PlayerName}获得 {Value1} 层|时域冲击|。
 
 ShengquanZaiwo:
   Name: 胜券在握
@@ -959,15 +959,9 @@ StopTime:
   Name: 凝固时间
   Description: '{PlayerName}的回合结束时，剩余法力中随机的 {Value1} 点，不会流失。'
 
-DangerousMagician:
-  Name: 危险的魔术师
-  Description: TODO
-
-LunaDial:
-  Name: 个人空间
-  Description: |-
-    结束{PlayerName}的回合，进行一个额外的回合。
-    抽取时：费用降低{Mana}，直到战斗结束。
+TimeLord:
+  Name: 主宰时空
+  Description: 获得 {Value1} 层|时域冲击|。
 
 TimeWalk:
   Name: 时间行走
@@ -982,6 +976,12 @@ TimeWalk:
 LunaClock:
   Name: 月神之钟
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合攻击无法造成伤害。
+
+LunaDial:
+  Name: 个人空间
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |抽取时|：费用降低{Mana}，直到战斗结束。
 
 SpecialClock:
   Name: 女仆秘技
@@ -1010,8 +1010,7 @@ PerfectServant:
 
 BackToFuture:
   Name: 回到未来
-  Description: 对调抽牌堆和弃牌堆。
-  UpgradedDescription: |-
+  Description: |-
     对调抽牌堆和弃牌堆。
     抽 {Value1} 张牌。
 
@@ -1138,6 +1137,12 @@ HuashanQingjing:
 BailianNingshen:
   Name: 凝神
   Description: 从 {Value1} 张随机的普通牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  UpgradedDescription: |-
+    从 {Value1} 张随机的普通牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+    |初见：|将一张|光芒|加入手中。
+  ExtraDescription1: |-
+    从 {Value1} 张随机的普通牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+    |d:初见：将一张光芒加入手中。|
   FlavorText: 圣白莲女士的「佛家讲坛」系列短视频很受中老年村民和年轻妖怪的欢迎。
 
 RingoJinghua:
@@ -1164,6 +1169,13 @@ YuetuInvincible:
     失去 {Value2} 点|灵力|。
   FlavorText: 逃离了无秽的世界，来到了污秽的乐园。
 
+PlayWithWater:
+  Name: 戏水
+  Description: |-
+    抽 {Value1} 张牌。
+    选择一张手牌丢弃。
+  FlavorText: Play with water.
+
 QinglanAttack:
   Name: 兔已着陆
   Description: |-
@@ -1171,13 +1183,6 @@ QinglanAttack:
     |占卜| {Scry} 。
     抽 {Value2} 张牌。
   FlavorText: 好像原地传送了……
-
-PlayWithWater:
-  Name: 戏水
-  Description: |-
-    抽 {Value1} 张牌。
-    选择一张手牌丢弃。
-  FlavorText: Play with water.
 
 KokoroAttack:
   Name: 杞人忧地
@@ -1268,30 +1273,16 @@ MystiaSing:
     获得 {Value2} 点<sprite="Point" name="Power">。
   FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
 
+YuyukoDebuff:
+  Name: 无寿之梦
+  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
+
 RumiaBlock:
   Name: 遮光
   Description: |-
     获得 {Block} 点|格挡|。
     将一张|暗影|加入手中。
   FlavorText: 没看见就是 0 伤害。
-
-YuyukoDebuff:
-  Name: 无寿之梦
-  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
-
-HinaAttack:
-  Name: 厄运之轮
-  Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
-    卡组里每有一张|厄运|，重复一次伤害。
-  FlavorText: 别担心，坏运气之后还会是坏运气。
-
-BlackHorseZui:
-  Name: 黑天马的罪孽
-  Description: |-
-    失去 {Value1} 点生命。
-    对所有敌人 {Damage} 点伤害 {Value2} 次。
-  FlavorText: 「这个弹幕是….超速罚单？！」
 
 SatoriMemory:
   Name: 深沉回忆
@@ -1300,29 +1291,52 @@ SatoriMemory:
     |直觉|：这些牌的费用|暂时减少|{Mana}。
   FlavorText: 「这个网站的密码是什么来着？」
 
-XiaoemoBook:
-  Name: 恶魔典籍
+HinaAttack:
+  Name: 厄运之轮
   Description: |-
-    选择一张手牌|放逐|，将一张|灵异|加入手中。
-    抽 {Value1} 张牌。
-  FlavorText: 里面记载着诸如「往汽水里丢放糖」之类的内容。
+    造成 {Damage} 点伤害 {Value1} 次。
+    卡组里每有一张|厄运|，重复一次伤害。
+  FlavorText: 别担心，坏运气之后还会是坏运气。
 
 ShannvAbility:
   Name: 原因不明的热病
   Description: 在{PlayerName}的回合结束时，对所有敌人施加 {Value1} 层|中毒|。
   FlavorText: 医生提醒您，多喝热水。
 
-GrimoireStudy:
-  Name: 研读魔导书
+BlackHorseZui:
+  Name: 黑天马的罪孽
   Description: |-
     失去 {Value1} 点生命。
-    |每支付<sprite="ManaSprite" name="1">|就多持续一回合：回合结束时将一张|幻虹|加入手中。
-  FlavorText: 「先等我查查这个妖怪的弱点……」
+    对所有敌人 {Damage} 点伤害 {Value2} 次。
+  FlavorText: 「这个弹幕是….超速罚单？！」
+
+XiaoemoBook:
+  Name: 恶魔典籍
+  Description: |-
+    选择一张手牌|放逐|。
+    抽 {Value1} 张牌。
+    |初见：|将一张|灵异|加入手中。
+  ExtraDescription1: |-
+    选择一张手牌|放逐|。
+    抽 {Value1} 张牌。
+    |d:初见：将一张灵异加入手中。|
+  FlavorText: 里面记载着诸如「往汽水里丢放糖」之类的内容。
 
 BailianBlack:
   Name: 拥抱黑暗
   Description: 所有的非攻击非能力牌的费用降至{Mana}，它们打出后被|放逐|。
   FlavorText: 妖术通念过，佛祖心中留。世人若学我，如同进魔道。
+
+GrimoireStudy:
+  Name: 研读魔导书
+  Description: |-
+    失去 {Value1} 点生命。
+    |每支付<sprite="ManaSprite" name="1">|就多持续一回合：回合结束时将一张|幻虹|加入手中。
+  UpgradedDescription: |-
+    失去 {Value1} 点生命。
+    将一张|幻虹|加入手中。
+    |每支付<sprite="ManaSprite" name="1">|就多持续一回合：回合结束时将一张|幻虹|加入手中。
+  FlavorText: 「先等我查查这个妖怪的弱点……」
 
 TrueMoon:
   Name: 真实的满月
@@ -1331,6 +1345,19 @@ TrueMoon:
     获得 {Value1} 点|火力|。
     打出 {Value2} 张牌后死亡。
   FlavorText: 真实的满月下，一切皆为狂妄的幻想。
+
+YinglangHowl:
+  Name: 满月咆哮
+  Description: 对所有敌人施加 {Value1} 点|暂失火力|和 {Value2} 回合|易伤|。
+
+RemiliaJizao:
+  Name: 急躁
+  Description: |-
+    抽 {Value1} 张牌。
+    这个回合内无法再抽牌。
+  FlavorText: |-
+    「如果下一抽还是"人造珠宝"我就要闹了！」
+    ——周五欢乐夜
 
 LeiguAttack:
   Name: 低音的雷鼓
@@ -1352,18 +1379,17 @@ HuaBlock:
     获得 {Value1} 点|暂得火力|。
   FlavorText: 犬走椛的仇恨拉得很稳，妖怪之山的妖怪们都抢着拉她进队。
 
-YinglangHowl:
-  Name: 满月咆哮
-  Description: 对所有敌人施加 {Value1} 点|暂失火力|和 {Value2} 回合|易伤|。
+BailianPower:
+  Name: 肉体强化
+  Description: 获得 {Value1} 点|火力|。
+  FlavorText: 经书上写了BMI和增肌的内容。
 
-RemiliaJizao:
-  Name: 急躁
+MeilingBlock:
+  Name: 红寸劲
   Description: |-
-    抽 {Value1} 张牌。
-    这个回合内无法再抽牌。
-  FlavorText: |-
-    「如果下一抽还是"人造珠宝"我就要闹了！」
-    ——周五欢乐夜
+    获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
+    本牌亦受|火力|加成。
+  FlavorText: 威胁打人之前先做好挨打的准备。
 
 SuikaBigball:
   Name: 元鬼玉
@@ -1374,18 +1400,6 @@ SuikaBigball:
     造成 {Damage} 点伤害，对其他敌人造成一半的伤害。
     失去 {Value1} |火力|。
   FlavorText: 对其他种族而言，鬼的力量还是太难掌控了。
-
-MeilingBlock:
-  Name: 红寸劲
-  Description: |-
-    获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
-    本牌亦受|火力|加成。
-  FlavorText: 威胁打人之前先做好挨打的准备。
-
-BailianPower:
-  Name: 肉体强化
-  Description: 获得 {Value1} 点|火力|。
-  FlavorText: 经书上写了BMI和增肌的内容。
 
 MeihongFire:
   Name: 无差别起火符
@@ -1437,7 +1451,7 @@ Panzi:
   Name: 水盘子
   Description: |-
     造成 {Damage} 点伤害。
-    抽取时：将一张本牌的复制加入手中。
+    |抽取时|：将一张本牌的复制加入手中。
 
 TiangouOrder:
   Name: 大天狗的号令
@@ -1476,6 +1490,11 @@ XiaodingKill:
   Name: 脱魂仪式
   Description: 如果目标敌人的生命值不超过 {Value1} 点，使其直接死亡。
 
+SijiCard:
+  Name: 有罪或无罪
+  Description: 选择一张手牌，如果它是|厄运|或状态牌，将它|放逐|；否则|保留|它一回合，它的费用减少{Mana}，直到战斗结束。
+  FlavorText: 饭后是否付钱是重要的裁决依据。
+
 YukariAttack:
   Name: 生与死的境界
   Description: |-
@@ -1483,24 +1502,19 @@ YukariAttack:
     如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时本牌从弃牌堆回到手中且|暂塑|为{Mana}。
   FlavorText: 「生与死之间有一条纤薄的境界线。你会在那里找到我。」
 
-SijiCard:
-  Name: 有罪或无罪
-  Description: 选择一张手牌，如果它是|厄运|或状态牌，将它|放逐|；否则|保留|它一回合，它的费用减少{Mana}，直到战斗结束。
-  FlavorText: 饭后是否付钱是重要的裁决依据。
-
 QingeUpgrade:
   Name: 邪仙秘法
   Description: |-
     造成 {Damage} 点伤害。
     |退治|时，永久|升级|一张牌。
 
-TannvCard:
-  Name: 形势逆转
-  Description: 将抽牌堆顶和弃牌堆顶的各一张牌加入手中，它们|暂塑|为{Mana}。
-
 KokoroDance:
   Name: 假面丧心舞
   Description: 每当敌人受到负面状态时，{PlayerName}对他造成 {Value1} 点伤害。
+
+TannvCard:
+  Name: 形势逆转
+  Description: 将抽牌堆顶和弃牌堆顶的各一张牌加入手中，它们|暂塑|为{Mana}。
 
 ChengDefense:
   Name: 天仙鸣动
@@ -1512,17 +1526,11 @@ MogongAttack:
   Name: 埴轮造形
   Description: |-
     造成 {Damage} 点伤害。
-    |手牌中：|打出其他攻击牌时，复制其基本伤害值。
+    |手牌中|：打出其他攻击牌时，复制其基本伤害值。
 
 TianziMana:
   Name: 天人飞翔
   Description: 获得{Mana}。
-
-HuashanDefense:
-  Name: 务光雷击
-  Description: |-
-    获得 {Block} 点|格挡|。
-    在这回合内，获得 {Value1} 点|带电|。
 
 HappyNewYear:
   Name: 新年参拜
@@ -1530,11 +1538,11 @@ HappyNewYear:
     从三张随机的攻击或防御牌里选择一张加入手中。
     如果选择了攻击牌，获得 {Value1} 点|火力|；否则获得 {Value1} 点|灵力|。
 
-XingMoney:
-  Name: 光辉宝枪
+HuashanDefense:
+  Name: 务光雷击
   Description: |-
-    造成 {Damage} 点伤害。
-    |退治|时，获得 {Value1} 点<sprite="Point" name="Gold">。
+    获得 {Block} 点|格挡|。
+    在这回合内，获得 {Value1} 点|带电|。
 
 ZhenmiaowanAttack:
   Name: 一寸法师的末裔
@@ -1545,10 +1553,16 @@ ZhenmiaowanAttack:
     造成 {Damage} 点伤害。
     本回合内技能牌和防御牌的费用降低{Mana}。
 
+XingMoney:
+  Name: 光辉宝枪
+  Description: |-
+    造成 {Damage} 点伤害。
+    |退治|时，获得 {Value1} 点<sprite="Point" name="Gold">。
+
 PoorAttack:
   Name: 陷入贫困
   Description: |-
-    支付 {MoneyCost} 点<sprite="Point" name="Gold">。
+    失去 {Value1} 点<sprite="Point" name="Gold">。
     造成 {Damage} 点伤害。
   FlavorText: 莫欺少女穷。
 
@@ -1587,6 +1601,9 @@ HuiyinRetain:
   Name: 一条归桥
   Description: |-
     获得 {Block} 点格挡。
+    从弃牌堆中选择至多 {Value1} 张牌加入手中，|保留|它一回合。
+  UpgradedDescription: |-
+    获得 {Block} 点格挡。
     从弃牌堆中选择至多 {Value1} 张牌加入手中，|保留|它们一回合。
 
 XiaosanReflect:
@@ -1599,7 +1616,7 @@ YijiuAttack:
   Name: 龙神电光
   Description: |-
     造成 {Damage} 点伤害。
-    |退治|时，获得 {Value1} 回合|天衣无缝|。
+    以本牌击败一名敌人时，|放逐|本牌，获得 {Value1} 回合|天衣无缝|。
 
 ReisenMana:
   Name: 幻视调律
@@ -1610,7 +1627,7 @@ FourFlan:
   Name: 四重存在
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
-    战斗开始时，将 {Value2} 张复制加入抽牌堆中：这些复制|暂塑|为{Mana}，具有|放逐|、|虚无|。
+    战斗开始时，将 {Value2} 张复制加入抽牌堆中，这些复制|暂塑|为{Mana}，具有|放逐|、|虚无|。
   ExtraDescription1: 造成 {Damage} 点伤害 {Value1} 次。
 
 HekaHellRain:
@@ -1620,12 +1637,6 @@ HekaHellRain:
 ReisenAttack:
   Name: 疯狂之梦
   Description: '|每支付<sprite="ManaSprite" name="2">：|对所有敌人造成 {Damage} 点伤害。'
-
-HehuanAttack:
-  Name: 深山菜刀狂
-  Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
-    抽 {Value1} 张牌。
 
 FlanPlayAlone:
   Name: 独自玩耍
@@ -1639,9 +1650,11 @@ FangxiangHeal:
   Description: 从弃牌堆里随机选择 {Value1} 张牌|放逐|，每|放逐|一张牌恢复 {Value2} 点生命。
   FlavorText: 「她的手不会酸的吗？」
 
-CloseEyeShoot:
-  Name: 闭目射击
-  Description: 随机对敌人造成 {Damage} 点伤害 {Value1} 次。
+HehuanAttack:
+  Name: 深山菜刀狂
+  Description: |-
+    造成 {Damage} 点伤害 {Value1} 次。
+    抽 {Value1} 张牌。
 
 QingeHeal:
   Name: 通灵之术
@@ -1655,11 +1668,9 @@ RinDraw:
   Description: 每抽到一张状态牌，抽 {Value1} 张牌。
   FlavorText: 猫猫擅长和奇怪的东西对话。
 
-Shengyan:
-  Name: 盛宴
-  Description: |-
-    造成 {Damage} 点伤害。
-    |退治|时，永久获得 {Value1} 点最大生命值。
+CloseEyeShoot:
+  Name: 闭目射击
+  Description: 随机对敌人造成 {Damage} 点伤害 {Value1} 次。
 
 KongMana:
   Name: 炉心融解
@@ -1669,6 +1680,12 @@ KongMana:
   UpgradedDescription: |-
     选择一张手牌|放逐|，获得相当于它费用的法力。
     将一张|幻虹|加入手中。
+
+Shengyan:
+  Name: 盛宴
+  Description: |-
+    造成 {Damage} 点伤害。
+    |退治|时，永久获得 {Value1} 点最大生命值。
 
 ModuoluoFire:
   Name: 秽那之火
@@ -2042,7 +2059,7 @@ Riguang:
 
 Yueguang:
   Name: 寂静月光
-  Description: 抽取时：失去 {Value1} 点随机的法力。
+  Description: '|抽取时|：失去 {Value1} 点随机的法力。'
   FlavorText: 「当月光洒在我的脸上，我想我这把肯定能过~」
 
 Xingguang:
@@ -2071,12 +2088,12 @@ SakuyaLock:
 
 Wushuai:
   Name: 凌冽剑光
-  Description: 抽取时：受到 {Value1} 层|锁定|，然后|放逐|本牌。
+  Description: '|抽取时|：受到 {Value1} 层|锁定|，然后|放逐|本牌。'
   FlavorText: 「看啊，你的死兆星在天上闪耀！」
 
 Chunguang:
   Name: 纯粹的光芒
-  Description: 抽取时：|纯化| {Value1} 。
+  Description: '|抽取时|：|纯化| {Value1} 。'
 
 Payment:
   Name: 转账
@@ -2150,15 +2167,15 @@ Misfortune:
 
 YuyukoMisfortune:
   Name: 饿灵附身
-  Description: '|手牌中：|每当{PlayerName}打出一张牌，失去 {Value1} 点生命。'
+  Description: '|手牌中|：每当{PlayerName}打出一张牌，失去 {Value1} 点生命。'
   FlavorText: 我常常在想，如果一个人失去了「死亡的能力」，他还能被算作人类吗？
 
 Drunk:
   Name: 醉酒
   Description: |-
-    |手牌中：|本回合只能打出 {Value1} 张牌。
+    |手牌中|：本回合只能打出 {Value1} 张牌。
     （已经打出 {Count} 张。）
-  NonbattleDescription: '|手牌中：|本回合只能打出 {Value1} 张牌。'
+  NonbattleDescription: '|手牌中|：本回合只能打出 {Value1} 张牌。'
   FlavorText: 针对不满符卡规则的妖怪们，鬼们特地制定了「豪饮决斗」的规则，在幻想乡发扬传统酒桌文化。
 
 Zhukeling:
