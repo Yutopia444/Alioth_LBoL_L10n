@@ -704,7 +704,7 @@ SakuyaShop:
   Description: "Gain {Mana}.\nDraw {Value1:plural one='% card' other='% cards'}."
   Name: Purchasing Materials
 SilverBlade:
-  Description: Whenever {PlayerName} plays an |Attack| card, gain {Value1} |Barrier|.
+  Description: Whenever an |Attack| card is played, gain {Value1} |Barrier|.
   Name: Silver Dimension
 KnifeHell:
   Description: "Conjure |{Value1:plural one='% Throwing Knife' other='% Throwing Knives'}|\
@@ -1273,8 +1273,7 @@ XingMoney:
   Description: "Deal {Damage} damage.\n|Expel|: Gain {Value1} <sprite=\"Point\" name=\"\
     Gold\">."
 PoorAttack:
-  Description: "Lose {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage}\
-    \ damage."
+  Description: "Lose {Value1} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage} damage."
   Name: Fall into Poverty
 SnowGirlCard:
   Description: Apply {Value1} |Hypothermia|. (Target loses life equal to their |Hypothermia|).
@@ -1307,7 +1306,7 @@ FlanPlayAlone:
     \ non-|Attack| cards in the hand."
   Name: Play Alone
 CloseEyeShoot:
-  Description: Deal {Damage} damage to random enemies {Value1:plural one='% time'
+  Description: Deal {Damage} damage to a random enemy {Value1:plural one='% time'
     other='% times'}
   Name: Close-Eye Shot
 RinDraw:
@@ -1487,12 +1486,13 @@ Jealousy:
   Name: Jealous
 ShengquanZaiwo:
   Name: Aces Up
+  Description: Gain {Mana}.
 Nightmare:
   Name: Nightmare
-  Description: "When there are {Value1} |噩梦| in the hand, draw pile, and discard pile,\
-    \ {PlayerName} loses the game.\nThere are currently {NightmareCount}."
-  NonbattleDescription: When there are {Value1} |噩梦| in the hand, draw pile, and discard
-    pile, {PlayerName} loses the game.
+  Description: "When there are {Value1} |Nightmares| in the hand, draw pile, and discard\
+    \ pile, {PlayerName} loses the game.\nThere are currently {NightmareCount}."
+  NonbattleDescription: When there are {Value1} |Nightmares| in the hand, draw pile,
+    and discard pile, {PlayerName} loses the game.
 AyaNewsSakuyaSp:
   Name: Aya News - Sakuya Special
 AyaNewsCirnoSp:
@@ -1517,3 +1517,5 @@ LigeluCard:
   Name: Glowing Night
 YuyukoSing:
   Name: Song of the Other Side
+DangerousMagician:
+  Description: Whenever a |Throwing Knife| leaves the hand, gain {Value1} |Time Pulse|.
