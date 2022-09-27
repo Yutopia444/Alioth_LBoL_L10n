@@ -100,7 +100,8 @@ StartGame:
   Seed: 种子
   SetSeed: 设定种子
   InvalidSeed: 无效种子
-  SetJadeBox: 设定玉匣
+  SetJadeBox: 设定玉匣（开发中）
+  JadeBoxLock: 玉匣系统将在调查等级10级时解锁
   OpeningComic: 观看序幕剧情
   StoryMode: 故事模式
   StoryDescription: |-
@@ -205,6 +206,10 @@ Setting:
     随机结果对于本场游戏是确定的，且不会由于重开游戏而改变。
   Show: 显示
   Hide: 隐藏
+  SingleEnemyAutoSelect: 自动选择单个敌人
+  SingleEnemyAutoSelectDescription: 是否在剩下单个敌人时自动打出需要选择目标的牌。
+  Enable: 启用
+  Disable: 禁用
   XCostWarning: 费用 X 空法力提示
   XCostWarningDescription: 在打出费用 X 的牌时，没有手动选择法力的情况下提醒玩家。
   Warn: 提示
@@ -247,6 +252,7 @@ System:
   NoJadeBox:
     Title: 无玉匣效果
     Description: 没什么特别的。
+  EA: 游戏目前处于抢先体验，不代表最终品质
 
 Map:
   Map: 地图
@@ -265,7 +271,6 @@ Map:
   Select: 选择对手
   Trade: 交易
   BattleAdvTest: 测试
-  DefeatScore: 击破得点
 
 Chat:
   #诈骗兔子
@@ -500,11 +505,11 @@ Tooltip:
     Description: 主要用于在商店购买各种道具
 
   Stage:
-    Name: <cspace=10>第{0}幕
+    Name: 第{0}幕
     Description: 在这次游戏中所处的位置，每一幕形成一张地图
 
   FinalStage:
-    Name: <cspace=10>最终幕
+    Name: 最终幕
     Description: 马上到游戏的终点了，继续前进吧！
 
   Level:

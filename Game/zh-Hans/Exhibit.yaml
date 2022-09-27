@@ -91,7 +91,7 @@ SakuyaW:
   Name: 备用的飞刀
   Description: |-
     提供基础法力 {BaseMana} ，|咲夜|的专属卡牌会加入牌池。
-    {PlayerName}的第一回合开始时，将 {Value1} 张|飞刀|加入手中。
+    {PlayerName}的第一回合开始时，将 {Value1} 张|飞刀+|加入手中。
   FlavorText: 只要备品足够多，就不用把扔出去的飞刀再捡回来了。
 
 SakuyaU:
@@ -197,7 +197,7 @@ Wanbaochui:
   Name: 万宝槌
   Description: |-
     提供基础法力 {BaseMana} 。
-    基础牌的效果提高 {Value1} 点。
+    每支付一点{Mana}打出基础牌时，该牌的基础效果增加一倍。（支付<sprite="ManaSprite" name="P">无效）
   FlavorText: 平凡之物获得非凡的力量。
 
 Yuerang:
@@ -221,25 +221,28 @@ KongbaiKapai:
     奖励和售卖的卡牌从所有颜色中随机。卡牌奖励选择数量加 {Value1} 。
   FlavorText: 让人不禁思考「卡牌究竟是什么样的存在」的危险道具。
 
-QipaiYouhua:
-  Name: 气派的油画
-  Description: 获得 {Value1}<sprite="Point" name="Gold">，最大生命值提高 {Value2} 点，随机|升级| {Value3} 张牌。
-  FlavorText: |-
-    解开画上的谜题，就能继承辉夜的全部遗产。
-    当然得等到她死后。
-
 HuiyeBaoxiang:
-  Name: 辉夜姬的宝箱
+  Name: 辉夜的宝箱
   Description: |-
+    {PlayerName}的回合开始时，获得一点随机法力。
     随机获得 {Value1} 个展品。
     厄运：|逐客令|。
   FlavorText: 打开这个宝箱后，里面有三个锦囊。
 
+QipaiYouhua:
+  Name: 气派的油画
+  Description: |-
+    {PlayerName}的回合开始时，获得一点随机法力。
+    获得 {Value1}<sprite="Point" name="Gold">，随机|升级| {Value2} 张牌，{PlayerName}的最大生命值提高 {Value3} 点。
+  FlavorText: |-
+    解开画上的谜题，就能继承辉夜的全部遗产。
+    当然得等到她死后。
+
 YizangnuoWuzhi:
   Name: 伊奘诺物质
   Description: |-
+    {PlayerName}的回合开始时，获得一点随机法力。
     击败精英敌人时，额外掉落一件|展品|。
-    {PlayerName}的第一回合开始时，将 {Value1} 张|幻虹|加入手中。
   FlavorText: 可以用来打造各种神兵利器的神秘原料，产地是虹龙洞。
 
 LouguanJian:
@@ -266,7 +269,7 @@ XijianSan:
 
 Taozi:
   Name: 桃子
-  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 。
+  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 点。
   FlavorText: 不少人以为这是天子头上的仙桃，但其实它产自月之都。
 
 PenzaiYoutan:
@@ -423,7 +426,7 @@ ZheyangSan:
 
 Pingguo:
   Name: 苹果
-  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 。
+  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 点。
   FlavorText: 产地是红魔馆的水果园。
 
 PortalGun:
@@ -548,7 +551,7 @@ TangSan:
 
 Putao:
   Name: 葡萄
-  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 。
+  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 点。
   FlavorText: 由丰收之神秋穰子提供。
 
 TiangouMuji:
@@ -704,7 +707,7 @@ Yushenqian:
 
 Cookie:
   Name: 好吃的曲奇
-  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} ，并恢复全部生命值。
+  Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 点，并恢复全部生命值。
   FlavorText: 「今天也是好天气。」
 
 ZhinengYinxiang:
