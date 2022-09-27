@@ -664,11 +664,11 @@ StarlightTaifengSummoner:
   Name: 汇聚星光
   Description: |-
     将一张|星光台风|加入抽牌堆。
-    |每支付{Mana}：|它多攻击一次。
+    |每支付{Mana}：|它多造成一次伤害。
     |每支付<sprite="ManaSprite" name="R">：|它多造成 {Value1} 点伤害。
   UpgradedDescription: |-
     将一张|星光台风+|加入抽牌堆。
-    |每支付{Mana}：|它多攻击一次。
+    |每支付{Mana}：|它多造成一次伤害。
     |每支付<sprite="ManaSprite" name="R">：|它多造成 {Value1} 点伤害。
   FlavorText: 攒法力千日，用法力一时。
 
@@ -1252,6 +1252,10 @@ YonglinCard:
   Description: '{PlayerName}的每回合使用第一张牌后，将一张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。'
   FlavorText: 智慧之神选择了逃匿，所以逃匿这算是智慧之行吗？
 
+YuyukoDebuff:
+  Name: 无寿之梦
+  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
+
 ShannvAttack:
   Name: 瘴气四溢
   Description: |-
@@ -1263,7 +1267,7 @@ SatoriAttack:
   Name: 心花绽放
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    |直觉|：每有一个敌人的意图为攻击时，获得 {Value1} 点|格挡|。
+    |直觉|：如果有敌人的意图为攻击，获得 {Block} 点|格挡|。
   FlavorText: 和外界流行的"比心"有异曲同工之妙。
 
 MystiaSing:
@@ -1272,10 +1276,6 @@ MystiaSing:
     对所有敌人施加 {Value1} 点|暂失火力|。
     获得 {Value2} 点<sprite="Point" name="Power">。
   FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
-
-YuyukoDebuff:
-  Name: 无寿之梦
-  Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
 
 RumiaBlock:
   Name: 遮光
@@ -1287,15 +1287,15 @@ RumiaBlock:
 SatoriMemory:
   Name: 深沉回忆
   Description: |-
-    将弃牌堆中随机的 {Value1} 张攻击牌移回手牌。
-    |直觉|：这些牌的费用|暂时减少|{Mana}。
+    从弃牌堆的随机 {Value1} 张牌中选择一张移回手中。
+    |直觉|：它|暂塑|为{Mana}。
   FlavorText: 「这个网站的密码是什么来着？」
 
 HinaAttack:
   Name: 厄运之轮
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
-    卡组里每有一张|厄运|，重复一次伤害。
+    卡组里每有一张|厄运|，多造成一次伤害。
   FlavorText: 别担心，坏运气之后还会是坏运气。
 
 ShannvAbility:
