@@ -101,8 +101,8 @@ ShensheRichang:
   Name: Shrine Daily Life
 Changzhizhen:
   Description: |-
-    Increase this card's damage by {Value2} this combat.
     |When Retained:| Deal {Value1} damage to a random enemy.
+    Whenever {PlayerName} loses a buff, increase this card's damage by {Value2}.
 
   Name: Permanent Border
 MingzhuAntou:
@@ -181,8 +181,9 @@ ReimuLucky:
 QinggeManwu:
   Description: |-
     Draw {Value1} cards and |Upgrade| them until end of combat.
-    For each already |Upgraded| card drawn this way, gain {Value2} |Block|.
   Name: Miko's Silent Dance
+  UpgradedDescription: "Draw {Value1} cards and |Upgrade| them until end of combat.\n\
+    For each already |Upgraded| card drawn this way, gain {Value2} |Block|."
 YinyangXueyin:
   Description: |-
     Lose {Value2} Life.
@@ -446,7 +447,7 @@ GainKnife:
   Description: "Conjure |{Value1:plural one='% Throwing Knife' other='% Throwing Knives'}|\
     \ into the hand."
 
-  Name: Circle of Knife
+  Name: Circle of Knives
   UpgradedDescription: "Conjure |{Value1:plural one='% Throwing Knife' other='% Throwing\
     \ Knives'}| into the hand.\nAt the start of {PlayerName}'s turn, Conjure |{Value2:plural\
     \ one='% Throwing Knife' other='% Throwing Knives'}| into the hand."
@@ -543,7 +544,7 @@ BailianNingshen:
     \ Conjure a |Radiance| into the hand."
   ExtraDescription1: "Choose one of {Value1} random Neutral cards to conjure into\
     \ the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\n|d:Debut:\
-    \ Conjure a |Radiance| into the hand.|"
+    \ Conjure a Radiance into the hand.|"
 RingoJinghua:
   Name: Purify the land
   Description: |-
@@ -935,9 +936,9 @@ MarisaEat:
   ExtraDescription1: "Gain {Value1} |Concentration|.\n|d:Debut: Gain {Value2} life.|"
 ExilePotion:
   Name: Waste Utilization
-  Description: Choose up to {Value1} target |Curse| or |Status| {Value1:plural one='card'
-    other='cards'} in the draw pile. |Exile| {Value1:plural one='that card' other='those
-    cards'}, then conjure that many |Unstable Potions| into the discard pile.
+  Description: "|Exile| up to {Value1} |Curse| or |Status| {Value1:plural one='card'\
+    \ other='cards'} from the draw pile and conjure that many |Unstable Potions| into\
+    \ the discard pile."
 WizardStudy:
   Name: Witch's Crucible
   Description: "Gain {Value1} |Firepower| and |Spirit|.\nThe first card played each\
@@ -1519,7 +1520,7 @@ AyaNewsMarisaSp:
   Name: Aya News - Marisa Special
 ReverseJiejie:
   Name: Reversal Boundaries
-  Description: Whenever one of {PlayerName}'s buffs expire, gain {Value1}|Barrier|.
+  Description: Whenever one of {PlayerName}'s buffs expire, gain {Value1} |Barrier|.
 MedicineGarden:
   Name: Suzuran Garden
 YachieDefend:
