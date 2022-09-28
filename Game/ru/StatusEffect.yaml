@@ -29,8 +29,12 @@ LockedOn:
   Name: Захват
   Description: "Урон от атак по {OwnerName} увеличивается на {Level}.\nУменьшается\
     \ на 1 уровень в начале хода."
+  Brief: "{OwnerName} получает больше урона с |Атак|.\nВ конце каждого хода |Захват|\
+    \ понижается на 1."
 Amulet:
-  Description: Сопротивление {Level} к отрицательным эффектам.
+  Description: Предотвращает получение {Level:plural one='|Дебафа|' other='% |Дебафов|'}.
+  Name: Талисман
+  Brief: Предотвращает получение |Дебафов|.
 Reflect:
   Description: При получении урона от атаки нанесите {Level} урона атакующему, затем
     снимите этот эффект.
@@ -47,28 +51,36 @@ Fragil:
   Name: Хрупкость
   Description: '{PlayerName} получает меньше |Защиты| и |Барьера| на {Value}%. Длительность:
     {Duration}.'
+  Brief: '{PlayerName} получает на {Value}% меньше |Защиты| и |Барьера| с карт.'
 Weak:
   Name: Слабость
   Description: 'Понижает понижает наносимый урон {OwnerName} на {Value}%. Длительность:
     {Duration}.'
+  Brief: '{OwnerName} наносит на {Value}% меньше урона с |Атак|.'
 Vulnerable:
   Name: Уязвимость
   Description: 'Увеличивает получаемый {OwnerName} урон на {Value}%. Длительность:
     {Duration}.'
+  Brief: '{OwnerName} получает на {Value}% больше урона с |Атак|.'
 Graze:
   Name: Уворот
 ExtraTurn:
   Name: Доп. Ход
+  Brief: '{OwnerName} сделает один или более доп. ходов после этого.'
+  Description: "{OwnerName} сделает {Level:plural one='% Доп. Ход' other='% Доп. Хода'}\
+    \ после этого."
 Concentration:
   Name: Сосредоточенность
 GuangxueMicai:
   Name: Оптический камуфляж
 Invincible:
   Description: '{OwnerName} получает не более 1 урона с атаки. Длительность: {Duration}.'
+  Name: Безупречность
 TurnStartDontLoseBlock:
   Name: Баррикада
   Description: '{OwnerName} не теряет |Защиту| в начале своего хода. Длительность:
     {Level}.'
+  Brief: '{OwnerName} не теряет защиту в начале хода.'
 LimitedDamage:
   Name: Лимит урона
   Description: '{OwnerName} может получить только  {Limit} урона за ход. Длительность:
