@@ -180,9 +180,9 @@ ReimuLucky:
   Name: Lucky Charm
 QinggeManwu:
   Description: |-
-    Draw {Value1} cards and |Upgrade| them until end of combat.
+    Draw {Value1} cards and |Upgrade| them until the end of combat.
   Name: Miko's Silent Dance
-  UpgradedDescription: "Draw {Value1} cards and |Upgrade| them until end of combat.\n\
+  UpgradedDescription: "Draw {Value1} cards and |Upgrade| them until the end of combat.\n\
     For each already |Upgraded| card drawn this way, gain {Value2} |Block|."
 YinyangXueyin:
   Description: |-
@@ -236,7 +236,7 @@ TaijiLiangyi:
 Wunvyu:
   Description: |-
     Deal {Damage} damage {Value1} times.
-    |While in Hand:| Whenever a card is drawn, except during the draw step, increase this card's damage by {Value2} this combat.
+    |While in hand:| Whenever a card is drawn, except during the draw step, increase this card's damage by {Value2} this combat.
 
   Name: Most Evil Surprise Miko Orbs
 KuosanJiejie:
@@ -389,7 +389,7 @@ KnifeBounce:
     \ other='% Throwing Knives'}| into the hand."
   Name: Bouncing Knives
 Lijian:
-  Description: "Gain {Value1} |Graze|.\nDeal {Damage} damage.\n|When drawn|: This\
+  Description: "Gain {Value1} |Graze|.\nDeal {Damage} damage.\n|When drawn:| This\
     \ card costs {Mana} less this combat."
 
   Name: Sight of Distant Blade
@@ -417,11 +417,11 @@ SakuyaWeak:
   Name: Time Suppression
 DefenseDraw:
   Description: "Gain {Block} |Block|.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    |When drawn|: The cost of this card is reduced by {Mana}."
+    |When drawn:| The cost of this card is reduced by {Mana}."
 
   Name: Moon Phase Rotation
 SakuyaTea:
-  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|Debut|: Gain\
+  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|Debut:| Gain\
     \ {Value2} life. The cost of this card is reduced by {Mana}."
   ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|d: Debut:\
     \ Gain {Value2} life. The cost of this card is reduced by {Mana}.|"
@@ -472,7 +472,7 @@ IceLaser:
 
   Name: Freeze Shot
 SummerFlower:
-  Description: "Deal {Damage} damage.\n|Grow|: Increase damage by {Value1}."
+  Description: "Deal {Damage} damage.\n|Growth:| Increase damage by {Value1}."
 
   Name: Grooming Flowers
 KoishiAttackG:
@@ -510,10 +510,10 @@ YunyouShengdi:
   Name: Wander in the Heaven
   Description: |-
     Gain {Block} |Block|.
-    |Upgrade| a card in the hand.
+    |Upgrade| a card in the hand until the end of combat.
   UpgradedDescription: |-
     Gain {Block} |Block|.
-    |Upgrade| all cards in the hand.
+    |Upgrade| all cards in the hand until the end of combat.
   FlavorText: Home of the idlers.
 
 NazrinBaota:
@@ -595,17 +595,17 @@ LeidiBlizzard:
   Name: Lingering Cold
 GuijiZaoxingYuan:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nThis card transforms\
-    \ into another |Shaping Skill| until end of combat."
+    \ into another |Shaping Skill| until the end of combat."
 
   Name: Shaping Skill - Circle
 GuijiZaoxingFang:
   Description: "Deal {Damage} damage {Value1} times.\nThis card transforms into another\
-    \ |Shaping Skill| until end of combat."
+    \ |Shaping Skill| until the end of combat."
 
   Name: Shaping Skill - Square
 GuijiZaoxingHu:
   Description: "Deal {Damage} damage.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    This card transforms into another |Shaping Skill| until end of combat."
+    This card transforms into another |Shaping Skill| until the end of combat."
 
   Name: Shaping Skill - Curvilinear
 WaterPrincess:
@@ -677,7 +677,7 @@ FanzhuanChongdong:
 
   Name: Reversed Hunger
 BladePower:
-  Description: "Draw {Value2:plural one='% card' other='% cards'}.\n|When drawn|:\
+  Description: "Draw {Value2:plural one='% card' other='% cards'}.\n|When drawn:|\
     \ If this is the only card in the hand, it |temporarily costs| {Mana}."
   Name: Dazzling Dash
 SilverBullet:
@@ -728,12 +728,12 @@ ClockCorpse:
     cards can't be drawn outside of the draw step.
   Name: Clock Corpse
 StopTime:
-  Description: When {PlayerName} ends their turn, they lose all but {Value1} random
-    unspent mana |d:(instead of all of it)|.
+  Description: When {PlayerName}'s turn ends, lose all but {Value1} random unspent
+    mana |d:(instead of all of it)|.
   Name: Freezing Time
 LunaClock:
-  Description: End {PlayerName}'s turn and take an |Extra Turn|. No attacks in that
-    turn will deal damage.
+  Description: End the turn. Then, take an |Extra Turn|. No attacks in that turn will
+    deal damage.
   Name: Luna Clock
 SpecialClock:
   Description: At the beginning of {PlayerName}'s turn, choose up to one card from
@@ -760,7 +760,7 @@ MihuanJack:
   Description: At the start of {PlayerName}'s turn, gain {Value1} |Time Pulse|.
   Name: Jack of Time
 SakuyaClock:
-  Description: "Deal {Damage} damage.\n|Expel|: End the turn. Then, take an |Extra\
+  Description: "Deal {Damage} damage.\n|Expel:| End the turn. Then, take an |Extra\
     \ Turn|."
   Name: Maid's Special Watch
 SakuyaGraze:
@@ -778,8 +778,8 @@ BackOfKnife:
     \ {Value1} for each card removed this way."
   Name: My Blade Returns
 LunaDial:
-  Description: "End {PlayerName}'s turn and take an |Extra Turn|.\n|When drawn:| The\
-    \ cost of this card is reduced by {Mana}."
+  Description: "End the turn. Then, take an |Extra Turn|.\n|When drawn:| The cost\
+    \ of this card is reduced by {Mana}."
   Name: Private Square
 SakuyaDio:
   Description: "Whenever a played |Throwing Knife| deals damage to an enemy, apply\
@@ -824,8 +824,8 @@ PerfectServant:
     \ name=\"U\"> spent:| During {PlayerName}'s next turn, draw {Value1} more {Value1:plural\
     \ one='card' other='cards'} during the draw step and add {Mana}."
 ExtraTurnEveryone:
-  Description: "End {PlayerName}'s turn and take an |Extra Turn|.\nEnemies also take\
-    \ an |Extra Turn| the next time it is their turn."
+  Description: "End the turn. Then, take an |Extra Turn|.\nEnemies also take an |Extra\
+    \ Turn| the next time it is their turn."
   Name: Expansion Space
 Shoot:
   Description: Deal {Damage} damage.
@@ -1149,7 +1149,7 @@ GainTreasure:
   Description: Gain {Value1} <sprite="Point" name="Gold">.
   Name: Money Shower
 QingeUpgrade:
-  Description: "Deal {Damage} damage.\n|Expel|: Permanently |Upgrade| a card."
+  Description: "Deal {Damage} damage.\n|Expel:| Permanently |Upgrade| a card."
   Name: Trick of Wicked Hermit
 TannvCard:
   Description: Put the top card of the draw and discard piles into the hand. Those
@@ -1285,7 +1285,7 @@ HappyNewYear:
     \ into the hand. \nGain {Value1} |Firepower| or {Value1} |Spirit| if an |Attack|\
     \ or |Defense| card is chosen, respectively."
 XingMoney:
-  Description: "Deal {Damage} damage.\n|Expel|: Gain {Value1} <sprite=\"Point\" name=\"\
+  Description: "Deal {Damage} damage.\n|Expel:| Gain {Value1} <sprite=\"Point\" name=\"\
     Gold\">."
 PoorAttack:
   Description: "Lose {Value1} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage} damage."
@@ -1307,7 +1307,7 @@ HuiyinRetain:
 XiaosanReflect:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|."
 YijiuAttack:
-  Description: "Deal {Damage} damage.\n|Expel|: Gain {Value1} |Flawless|."
+  Description: "Deal {Damage} damage.\n|Expel:| Gain {Value1} |Flawless|."
 HekaHellRain:
   Description: At the end of {PlayerName}'s turn, deal {Value1} damage to each enemy
     for each card played that turn.
@@ -1330,7 +1330,7 @@ RinDraw:
   Name: Spectre Domination
   FlavorText: Cats are good at talking to weird things.
 Shengyan:
-  Description: "Deal {Damage} damage.\n|Expel|: Gain {Value1} maximum life."
+  Description: "Deal {Damage} damage.\n|Expel:| Gain {Value1} maximum life."
   Name: Feast
 ModuoluoFire:
   Description: Whenever <sprite="ManaSprite" name="P"> is spent, deal {Value1} damage
