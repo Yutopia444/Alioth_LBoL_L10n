@@ -422,26 +422,28 @@ Explain:
   Title: Note
   LoseShinning: You always have access to the exclusive cards of the character you
     are controlling, even if you lose the initial exhibit.
-  RollCard: "<size=96%>The Candidate rule of \"Card Reward Pool\":\n\nA card must\
-    \ meet all of the following rules in order to enter the alternative pool.\nRule\
-    \ 1. The current base mana is enough to play this card.\nRule 2. If it is a character\
-    \ exclusive card, it requires the player to play as that character, or have an\
-    \ exclusive exhibit for that character.\nRule 3. The color of base mana must include\
-    \ every color of this card. At this point, chromatic mana will not be treated\
-    \ as any type of color.\n\nExample:\nThe player plays as Reimu and has the following\
-    \ legendary exhibits: Dark Grimoire, Philosopher's Stone and Miracle Mallet.\n\
-    The total 7 base mana is<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+  RollCard: "|Discoverable Cards through Card Rewards|\n\n You can only find cards\
+    \ in Card Rewards if they meet the following criteria:\n 1: The card's mana cost\
+    \ can be paid using the mana in the |mana base|.\n 2: If it's a Unique card, it\
+    \ can only be found if you're playing as that character, or if you hold one of\
+    \ their |Legendary Exhibits|.\n    3: Each of that card's colors is present in\
+    \ your |mana base|. Chromatic mana doesn't count toward this rule.\n\n    As an\
+    \ example, say you're playing as Reimu and you hold |Dark Grimoire|, |Philosopher's\
+    \ Stone| and |Miracle Mallet|. |d:(You traded your Legendary Exhibit to Eirin...)|\
+    \ \n    The |mana base| holds <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
     R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
-    ManaSprite\" name=\"C\">, and you can get access to Reimu, Marisa and Neutral\
-    \ cards.\n\nA black card that costs <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
-    ManaSprite\" name=\"B\">can be a valid candidate, because there is <sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> in base mana which\
-    \ is enough to cast it.\nA Blue and Black multicolor card that costs <sprite=\"\
-    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"> cannot be a valid candidate,\
-    \ because there is no <sprite=\"ManaSprite\" name=\"U\"> in basemana, even if\
-    \ your <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> is\
-    \ enough to cast that it.\n\n*Legendary exhibit: Blank Card will invalidate Rule\
-    \ 3.\n*For a card with a total cost of 5 or more, its numerical cost <sprite=\"\
-    ManaSprite\" name=\"X\"> will not be bound by Rule 1. That's because are multiple\
-    \ ways to reduce thier numerical costs."
+    ManaSprite\" name=\"C\">. You can find cards Unqiue to Reimu and Marisa, since\
+    \ you hold |Dark Grimoire|.\n\n    In this case, you can find a black card that\
+    \ costs <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"B\"> since\
+    \ you can pay <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"> to play it. However, you |r:cannot| find a blue and black card that costs\
+    \ <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\">, since\
+    \ there is no <sprite=\"ManaSprite\" name=\"U\"> in the |mana base|, even if you\
+    \ could pay <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"\
+    > to play it.\n\n    P.S.\n    |Blank Card|, a |Legendary Exhibit|, allows you\
+    \ to find cards of |p:any color|.\n    Cards with mana value 5 or greater and\
+    \ have a generic mana cost component |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"\
+    ManaSprite\" name=\"2\">, etc.)| can still be found even if there isn't enough\
+    \ mana in the |mana base| to play it. There are several ways to reduce the mana\
+    \ cost of these cards."
