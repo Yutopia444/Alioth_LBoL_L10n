@@ -420,15 +420,26 @@ Explain:
   Title: Note
   LoseShinning: You always have access to the exclusive cards of the character you
     are controlling, even if you lose the initial exhibit.
-  RollCard: "The Candidate rule of \"Card Reward Pool\":\n\nA card must meet all of\
-    \ the following rules in order to enter the alternative pool.\nRule 1. The current\
-    \ base mana is enough to play this card.\nRule 2. If it is a character exclusive\
-    \ card, it requires the player to play as that character, or have an exclusive\
-    \ exhibit for that character.\nRule 3. The color of base mana must include every\
-    \ color of this card. At this point, chromatic mana will not be treated as any\
-    \ type of color.\n\nThe player plays as Reimu, have the following legendary exhibits:\
-    \ Dark Grimoire, Philosopher's Stone and Miracle Mallet.\nThe total 7 base mana\
-    \ is <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
-    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
-    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
-    C\">, and you can get access to Reimu, Marisa and Neutral cards."
+  RollCard: "<size=96%>The Candidate rule of \"Card Reward Pool\":\n\nA card must\
+    \ meet all of the following rules in order to enter the alternative pool.\nRule\
+    \ 1. The current base mana is enough to play this card.\nRule 2. If it is a character\
+    \ exclusive card, it requires the player to play as that character, or have an\
+    \ exclusive exhibit for that character.\nRule 3. The color of base mana must include\
+    \ every color of this card. At this point, chromatic mana will not be treated\
+    \ as any type of color.\n\nExample:\nThe player plays as Reimu, has the following\
+    \ legendary exhibits: Dark Grimoire, Philosopher's Stone and Miracle Mallet.\n\
+    The total 7 base mana is <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
+    ManaSprite\" name=\"C\">, and you can get access to Reimu, Marisa and Neutral\
+    \ cards.\n\nA black card costs <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"> can be a valid candidate, because there are <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> in the base mana which are enough\
+    \ to cast it.\nA blue-and-black multicolor card costs <sprite=\"ManaSprite\" name=\"\
+    U\"><sprite=\"ManaSprite\" name=\"B\"> cannot be a valid candidate, because there\
+    \ is no <sprite=\"ManaSprite\" name=\"U\"> in the base mana, even if your <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> is enough to cast that\
+    \ it.\n\n*Legendary exhibit: Blank Card will invalidate Rule 3.\n*For a card with\
+    \ a total cost of 5 or more, its numerical cost <sprite=\"ManaSprite\" name=\"\
+    X\"> will not be bound by Rule 1. That's because are multiple ways to reduce thier\
+    \ numerical costs."
