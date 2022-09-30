@@ -486,6 +486,11 @@ RainbowStar:
     造成 {Damage} 点伤害。
     |每支付<sprite="ManaSprite" name="P">：|伤害提高 {Value1} 点，获得 {Value2} 点<sprite="Point" name="Power">。
 
+ScryBlock:
+  Name: 早有预谋
+  Description: 每次|占卜|时，{PlayerName}获得 {Value1} 点|格挡|。
+  FlavorText: 「晚饭后我都会外出散步，看看谁家可以让我闯空门——我是说串门。」
+
 ShinningPotion:
   Name: 夜光蘑菇
   Description: |-
@@ -511,6 +516,22 @@ StarSky:
   Name: 璀璨星空
   Description: 获得 {Value1} 层|充能|。
 
+LearnAstrology:
+  Name: 天文研修
+  Description: '{PlayerName}的回合开始时，如果手中没有|占星|，将一张|占星|加入手中。'
+  FlavorText: 「她怎么就只愿意看星星不愿意看看我呢。」
+
+PoisonPotion:
+  Name: 魔女坩埚
+  Description: |-
+    |不稳定魔药|还会施加 {Value1} 层|中毒|。
+    将 {Value2} 张|不稳定魔药|加入手中。
+
+PotionJungle:
+  Name: 荧光森林
+  Description: '{PlayerName}的回合结束时，将 {Value1} 张|不稳定魔药|洗入弃牌堆。'
+  FlavorText: 炸裂的魔药滋养了原料的生长，实现了魔力内循环。
+
 AccuracyLaser:
   Name: 定向激光
   Description: |-
@@ -518,20 +539,12 @@ AccuracyLaser:
     每当这张牌被|保留|时，费用降低{Mana}，直到战斗结束。
   FlavorText: 「你以为我会出非定向激光？没想到吧！」
 
-ScryBlock:
-  Name: 早有预谋
-  Description: 每次|占卜|时，{PlayerName}获得 {Value1} 点|格挡|。
-  FlavorText: 「晚饭后我都会外出散步，看看谁家可以让我闯空门——我是说串门。」
-
-PotionJungle:
-  Name: 荧光森林
-  Description: '{PlayerName}的回合结束时，将 {Value1} 张|不稳定魔药|洗入弃牌堆。'
-  FlavorText: 炸裂的魔药滋养了原料的生长，实现了魔力内循环。
-
-LearnAstrology:
-  Name: 天文研修
-  Description: '{PlayerName}的回合开始时，如果手中没有|占星|，将一张|占星|加入手中。'
-  FlavorText: 「她怎么就只愿意看星星不愿意看看我呢。」
+CollectionDefense:
+  Name: 藏品结界
+  Description: 获得相当于抽牌堆数量的|格挡|。（{Block} 点）
+  UpgradedDescription: 获得相当于抽牌堆数量的|护盾|。（{Shield} 点）
+  NonbattleDescription: 获得相当于抽牌堆数量的|格挡|。
+  UpgradedNonbattleDescription: 获得相当于抽牌堆数量的|护盾|。
 
 MarisaEat:
   Name: 大快朵颐
@@ -572,10 +585,6 @@ ThrowBigStar:
     |超载 {Value2} ：|造成两次伤害。
   FlavorText: 「欢迎收听废线铁路电台。本月，来自魔理沙·雾雨演唱的『ThrowingSta』再度登上幻想乡流行音乐榜单的首位……」
 
-SolarSystem:
-  Name: 太阳系仪
-  Description: '{PlayerName}的回合开始时，获得 {Value1} 层|充能|。'
-
 ShootMoon:
   Name: 射月
   Description: |-
@@ -599,12 +608,6 @@ MixAndShake:
     对所有敌人造成 {Damage} 点伤害。
     抽牌堆和弃牌堆中每有一张|不稳定魔药|，伤害提高 {Value1} 点。
   FlavorText: 打开前请勿摇晃。
-
-WizardStudy:
-  Name: 魔女的坩埚
-  Description: |-
-    获得 {Value1} 点|火力|和|灵力|。
-    每回合打出的第一张牌费用增加{Mana}。
 
 ExilePotion:
   Name: 废物利用
@@ -642,6 +645,10 @@ RedGiantStar:
     如果{PlayerName}处于|爆发|，将一张|火焰|加入手中。
   FlavorText: 「幸好对面不是芙兰」
 
+SolarSystem:
+  Name: 太阳系仪
+  Description: '{PlayerName}的回合开始时，获得 {Value1} 层|充能|。'
+
 FinalSpark:
   Name: 究极火花
   Description: 对所有敌人造成 {Damage} 点伤害。
@@ -660,6 +667,17 @@ HuoliQuankai:
     进入|爆发|。
   FlavorText: 启动后备隐藏能源！
 
+MasterOfCollection:
+  Name: 收集专家
+  Description: 每一张牌被|保留|时，减少 {Value1} 点它的随机费用，直到战斗结束。
+  FlavorText: 「垃圾？这些怎么会是垃圾呢？」
+
+ChargingPotion:
+  Name: 放射元素
+  Description: |-
+    每当一张|不稳定魔药|触发时，获得 {Value1} 层|充能|。
+    将 {Value2} 张|不稳定魔药|加入手中。
+
 StarlightTaifengSummoner:
   Name: 汇聚星光
   Description: |-
@@ -677,16 +695,9 @@ StarlightTaifeng:
   Description: 造成 {Damage} 点伤害 {Value1} 次。
   FlavorText: 「最后一击！等等，我看看这个叫『有限伤害』的效果是什么……」
 
-MasterOfCollection:
-  Name: 收集专家
-  Description: 每一张牌被|保留|时，减少 {Value1} 点它的随机费用，直到战斗结束。
-  FlavorText: 「垃圾？这些怎么会是垃圾呢？」
-
-ChargingPotion:
-  Name: 放射元素
-  Description: |-
-    将 {Value2} 张|不稳定魔药|洗入抽牌堆。
-    每当一张|不稳定魔药|触发时，获得 {Value1} 层|充能|。
+FindCollection:
+  Name: 翻找藏品
+  Description: 从 {Value1} 张随机的非{PlayerName}牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
 
 WhiteLaser:
   Name: 镭光射击
@@ -1072,6 +1083,10 @@ SummerFlower:
   Description: |-
     造成 {Damage} 点伤害。
     |成长|：伤害提高 {Value1} 点。
+
+CirnoCangni:
+  Name: 藏匿于林
+  Description: 获得护盾，将一张生机加入你的手牌。
 
 KoishiAttackG:
   Name: 蔷薇花开
@@ -1704,6 +1719,12 @@ FlanBlack:
 AttackWithEveryColor:
   Name: 多彩攻击
   Description: '|每支付一点不同颜色的费用：|造成 {Damage} 点伤害。'
+
+WizardStudy:
+  Name: 老魔女坩埚
+  Description: |-
+    获得 {Value1} 点|火力|和|灵力|。
+    每回合打出的第一张牌费用增加{Mana}。
 
 Zhulianshen:
   Name: 山神的注连绳
