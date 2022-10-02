@@ -243,7 +243,7 @@ SakuyaAttackW:
   Description: Наносит {Damage} урона.
   Name: Заблуждение
 Knife:
-  Description: "Наносит {Damage} урона.\n|Когда сбрасывается:| Наносит {DropDamage}\
+  Description: "Наносит {Damage} урона.\n|Когда покидает руку:| Наносит {DropDamage}\
     \ урона врагу с наименьшим здоровьем."
   Name: Метательный нож
 Lijian:
@@ -287,8 +287,8 @@ TimeLord:
   Description: Даёт {Value1} |Всплеска Времени|.
   Name: Властелин времени
 SakuyaClock:
-  Description: "Наносит {Damage} урона.\n|Ссылка|: Ход {PlayerName} заканчивается\
-    \ и она делает |Доп. Ход|."
+  Description: "Наносит {Damage} урона.\nКогда вы побеждаете врага этой картой, эта\
+    \ карта |Изгоняется| завершает ход {PlayerName:g} и начинает её |Доп. Ход|."
   Name: Специальные часы Сакуи
 SakuyaGraze:
   Description: "Даёт {Shield} |Барьера|.\nДаёт {Value1} |Уворота|.\nКогда {PlayerName}\
@@ -413,8 +413,8 @@ WaterPrincess:
   Name: Принцесса-ундина
 RingoJinghua:
   Name: Очищение земли
-  Description: "Выберите максимум из {Value1} карт, чтобы |Изгнать| их.\nДаёт {Value2}\
-    \ очков <sprite=\"Point\" name=\"Power\">."
+  Description: "|Изгоните| {Value1} карты с руки.\nДаёт {Value2} очков <sprite=\"\
+    Point\" name=\"Power\">."
 ShenziUpgradeAll:
   Name: Апофеоз
   Description: '|Улучшает| все карты до конца битва.'
@@ -554,6 +554,8 @@ ScryAttack:
   Description: "Наносит {Damage} урона.\nВозвращается в руку из стопки сброса, когда\
     \ {PlayerName} |предсказывает|."
   Name: Путеводная звезда
+  FlavorText: Умение находить Большую Медведицу под ночным небом было утрачено во
+    внешнем мире.
 NightSeeStar:
   Description: "Предскажите {Scry} карты.\nВозьмите {Value1:plural one='% карту' other='%\
     \ карты'}."
@@ -730,6 +732,7 @@ MarisaSteal:
   Description: "Сотворите |Радугу| в руку.\nВ начале следующего хода {PlayerName:g},\
     \ потеряйте {Value1} случайной маны."
   UpgradedDescription: Сотворите |Радугу| в руку.
+  FlavorText: '"Есть ли у вас дома какие-нибудь хорошие магические материалы?"'
 AccuracyLaser:
   Name: Направленный лазер
   Description: "Наносит {Damage} урона.\n|Когда оставляется:| Стоимость этой карты\
@@ -757,12 +760,13 @@ RainbowStar:
 ShibaiChanwu:
   Name: Результат ошибки
   Description: "Сотворите {Value1:plural one='% |Нестабильное зелье|' other='% |Нестабильных\
-    \ Зелья|'} в стопку сброса.\nСотворите  {Value2:plural one='% |Тень|' other='%\
+    \ Зелья|'} в стопку сброса.\nСотворите {Value2:plural one='% |Тень|' other='%\
     \ |Тени|} в стопку добора."
+  FlavorText: Даже приготовление десертов может быть сопряжено с риском.
 Yinhe:
   Name: Млечный путь
   Description: "Даёт {Block} |Защиты|.\n|Когда оставляется:| повышает кол-во даваемой\
-    \ |Защиты| на {Block}."
+    \ |Защиты| на {Value1}."
 PotionJungle:
   Name: Светящийся лес
   Description: В конце хода {PlayerName:g}, сотворите {Value1:plural one='% |Нестабильное
@@ -792,7 +796,7 @@ ShootMoon:
   Description: "Наносит {Damage} урона.\nДаёт {Value1} |Заряда|, если выбранный враг\
     \ намеревается |Атаковать|."
 WizardStudy:
-  Name: Горнило ведьмы
+  Name: Магический трансформатор
   Description: "Даёт {Value1} |Огневой Мощи| и |Духовности|.\nПервая разыгрываемая\
     \ карта за ход стоит на {Mana} больше."
 ExilePotion:
