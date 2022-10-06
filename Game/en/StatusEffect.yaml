@@ -53,6 +53,7 @@ SpiritNegative:
   Brief: |-
     {OwnerName} gains less |Block| and |Barrier|.
 
+  Name: Temporary Dispirit
 Invincible:
   Name: Flawless
   Description: "{OwnerName} cannot be dealt more than 1 damage at a time {Duration:plural\
@@ -119,6 +120,8 @@ Amulet:
 TempElectric:
   Name: Temporary Charge
   Description: When damaged with an |Attack|, the attacker takes {Level} damage.
+  Brief: Until {OwnerName}'s next turn, whenever they take damage from an attack,
+    damage is dealt to the attacker.
 ScarletDestiny:
   Name: Scarlet Destiny
   Description: Whenever {Limit} cards are played, {OwnerName} ends the turn. |d:({Count}
@@ -239,3 +242,69 @@ MeihongPowerSe:
   Name: The Immortal Flame
 GrimoireStudySe:
   Name: Dark Grimoire
+MaoyuBlock:
+  Name: Fluffy
+  Description: The next time {OwnerName} is dealt attack damage, they gain {Level}
+    |Block|.
+GuangxueMicai:
+  Name: Optical Camouflage
+  Description: "{OwnerName} takes half as much damage from all attacks {Duration:plural\
+    \ one='until end of turn' other='for the next % turns'}."
+  Brief: '{OwnerName} takes half as much damage from all attacks.'
+NextTurnLoseHp:
+  Name: Life Leak
+  Description: At the start of {OwnerName}'s next turn, they lose {Level} life.
+  Brief: At the start of {OwnerName}'s next turn, they lose life.
+NextTurnGainBlock:
+  Name: Next Turn Block
+  Description: At the start of {OwnerName}'s next turn, they gain {Level} |Block|.
+  Brief: At the start of {OwnerName}'s next turn, they gain |Block|.
+CantDrawThisTurn:
+  Name: Draw Negation
+  Brief: No more cards may be drawn this turn.
+  Description: Until end of turn, {OwnerName} can't draw cards.
+NoAttackDamageNextTurn:
+  Description: Attacks deal no damage during {OwnerName}'s next turn.
+  Brief: Can't deal attack damage next turn.
+  Name: Next Turn Chronocrush
+NoAttackDamageThisTurn:
+  Description: Until end of turn, {OwnerName} can't deal damage with attacks.
+  Brief: Can't deal attack damage this turn.
+  Name: Chronocrush
+TimeIsLimited:
+  Name: Time Surge
+  Description: Until the enemy's next turn, cards cost {Mana} more to play.
+  Brief: Until the enemy's next turn, cards cost more to play.
+Servant:
+  Name: Summon
+  Description: When the summoner is defeated, all |Summons| are defeated too. Does
+    not trigger any effects that trigger when an enemy is defeated.
+Reflect:
+  Name: Reflection
+  Description: The next time {OwnerName} is dealt damage from an attack, they deal
+    {Level} damage to the attacker.
+  Brief: The next time {OwnerName} is dealt damage from an attack, they deal damage
+    to the attacker.
+NextTurnLoseRandomMana:
+  Brief: At the start of {OwnerName}'s next turn, they lose some mana at random.
+  Name: Mana Leak
+  Description: At the start of {OwnerName}'s next turn, they lose {Level} random mana.
+NextAttackUp:
+  Name: Attack Boost
+  Description: The next attack card played deals {Level} more damage.
+  Brief: The next attack card played deals more damage.
+CantDrawNextTurn:
+  Name: Next Turn Draw Negation
+  Description: Cards can't be drawn during {OwnerName}'s next turn |d:(except during
+    the draw step)|.
+  Brief: Cards can't be drawn next turn.
+DroneBlock:
+  Name: Drone Phalanx
+  Description: At the end of {OwnerName}'s turn, they gain {Level} |Block|.
+  Brief: At the end of {OwnerName}'s turn, they gain |Block|.
+DeathExplodeNotCount:
+  Name: Deathblast
+  Description: "When defeated, {OwnerName} deals {Level} damage to {PlayerName}.\n\
+    If {OwnerName} is detonated, it deals twice that much damage instead."
+DeathExplodeCount:
+  Name: Deathblast
