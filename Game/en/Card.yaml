@@ -875,8 +875,9 @@ MeihongPower:
     \ life."
   FlavorText: She's a cursed immortal, living her life as an ascetic.
 MoonWorld:
-  Description: At the start of {PlayerName}'s turn, |Purify| {Value1} random card(s),
-    remove their colored cost in this battle.
+  Description: At the start of {PlayerName}'s turn, {Value1:plural one='% random card
+    in the hand gains' other='% random cards in the hand gain'} |Pure| this combat.
+    |d:(You may spend mana as though it were mana of any color to play it.)|
   Name: The Unsullied World
 HuiyeMana:
   Name: The Tale of the Bamboo Cutter
@@ -989,9 +990,9 @@ IceSpark:
     \ to each enemy. |d:(Hypothermia causes the character to lose that much life.)|"
 ChargingPotion:
   Name: Radioactive Elements
-  Description: "Conjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|'} into the draw pile.\nWhenever an |Unstable Potion| is drawn, gain\
-    \ {Value1} |Charge|."
+  Description: "Whenever an |Unstable Potion| is drawn, gain {Value1} |Charge|.\n\
+    |When played:| Conjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
+    \ Potions|'} into the hand."
 MasterOfCollection:
   Name: Master of Collection
   Description: Whenever a card is |Retained|, it costs {Value1} random mana less this
@@ -1002,8 +1003,7 @@ HinaAttack:
   Name: Misfortune's Wheel
 SatoriMemory:
   Description: "Choose one of {Value1} random cards from the discard pile to return\
-    \ to the hand.\n|Instinct:| The card that was returned |temporarily costs| {Mana}\
-    \ less."
+    \ to the hand.\n|Instinct:| The card that was returned |temporarily costs| {Mana}."
   Name: Deep Memories
   FlavorText: "\"What's the password for this website?\""
 GrimoireStudy:
@@ -1039,11 +1039,11 @@ BlackHorseZui:
     \ one='% time' other='% times'}."
   Name: The Sin of the Black Horse
 XiaoemoBook:
-  Description: "|Exile| a card from the hand.\nConjure an |Occult| into the hand.\n\
-    |Debut:| Draw {Value1:plural one='% card' other='% cards'}"
+  Description: "|Exile| a card from the hand.\nDraw {Value1:plural one='% card' other='%\
+    \ cards'}\n|Debut:| Conjure an |Occult| into the hand."
   Name: Book of Devils
-  ExtraDescription1: "|Exile| a card from the hand.\nConjure an |Occult| into the\
-    \ hand.\n|d:Debut: Draw {Value1:plural one='% card' other='% cards'}|"
+  ExtraDescription1: "|Exile| a card from the hand.\nDraw {Value1:plural one='% card'\
+    \ other='% cards'}\n|d:Debut: Conjure an Occult into the hand.|"
 ShannvAbility:
   Description: At the start of {PlayerName}'s turn, apply {Value1} |Poison| to each
     enemy.
@@ -1211,7 +1211,7 @@ ToolUpgrade:
   Description: "|Upgrade| each card in the hand this combat.\n|Limited【{DeckCounter}】|"
   Name: Floppy Disk
 ToolDroneBlock:
-  Description: "Gain {Value1} |防御矩阵|.\n|Limited【{DeckCounter}】|"
+  Description: "Gain {Value1} |Drone Phalanx|.\n|Limited【{DeckCounter}】|"
   Name: Mechanical Core
 NewsPositive:
   Description: "Gain {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limited【{DeckCounter}】|"
@@ -1508,7 +1508,7 @@ ShengquanZaiwo:
 Nightmare:
   Name: Nightmare
   Description: "When there are {Value1} |Nightmares| in the hand, draw pile, and discard\
-    \ pile, {PlayerName} loses the game.\nThere are currently {NightmareCount}."
+    \ pile, {PlayerName} loses the game.\nThere is currently {NightmareCount}."
   NonbattleDescription: When there are {Value1} |Nightmares| in the hand, draw pile,
     and discard pile, {PlayerName} loses the game.
 AyaNewsSakuyaSp:
@@ -1546,8 +1546,8 @@ GreenMogu:
     Potions|'} into the draw pile.
 ChillPotion:
   Description: "Whenever an |Unstable Potion| targets an enemy, it applies {Value1}\
-    \ |Chill|.\nConjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|'} into the hand."
+    \ |Chill|.\n|When played:| Conjure {Value2:plural one='% |Unstable Potion|' other='%\
+    \ |Unstable Potions|'} into the hand."
 SenluoJiejie:
   Description: "Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s next turn,\
     \ lose all |Barrier| and deal damage to each enemy equal to the amount of |Barrier|\
@@ -1562,8 +1562,8 @@ QiqingYishi:
   Description: Conjure a |Rainbow| into the hand.
 PoisonPotion:
   Description: "Whenever an |Unstable Potion| targets an enemy, it applies {Value1}\
-    \ |Poison|.\nConjure {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
-    \ Potions|'} into the hand."
+    \ |Poison|.\n|When played:| Conjure {Value2:plural one='% |Unstable Potion|' other='%\
+    \ |Unstable Potions|'} into the hand."
 PurpleMogu:
   Description: Gain {Value1} life.
 BlueMogu:
