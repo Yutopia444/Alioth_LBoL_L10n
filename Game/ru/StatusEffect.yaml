@@ -108,10 +108,12 @@ TempElectric:
 Servant:
   Description: "Когда мастер побежден, прислужники побеждаются вместе с ним.\nЭффект\
     \ смерти при этом не срабатывает."
+  Name: Призыв
 RinSummon:
   Name: Воскрешение духов
 MaoyuBlock:
   Description: '{OwnerName} получает {Level} |Защиты| при получении урона.'
+  Name: Пушистость
 ScarletDestiny:
   Name: Алая судьба
   Description: Когда разыгрывается {Limit} карт, {OwnerName} заставляет {PlayerName:a}
@@ -173,14 +175,17 @@ AbsorbSpirit:
 DeathExplodeCount:
   Description: "При поражении {OwnerName} наносит {Level} урона {PlayerName:d}.\n\
     Урон удваивается при самоуничтожении.\n{Count} ходов осталось до самоуничтожения."
+  Name: Самоуничтожение
 DeathVulnerable:
   Description: При поражении {OwnerName} накладывает на {PlayerName:a} {Level} |Уязвимости|.
 DroneBlock:
   Description: В конце хода {OwnerName} получит {Level} |Защиты|.
   Brief: В конце хода {OwnerName} получит некоторое количество |Защиты|.
+  Name: Фаланга дронов
 DeathExplodeNotCount:
   Description: "При поражении {OwnerName} наносит {Level} урона {PlayerName:d}.\n\
-    Урон удваивается при активной детонации."
+    Урон удваивается при самоуничтожении."
+  Name: Самоуничтожение
 LoveGirlDamageIncrease:
   Description: Желание {OwnerName:g} было исполнено, получаемый ею урон увеличивается
     на {Rate}%.
@@ -216,10 +221,24 @@ Charging:
   Brief: '{PlayerName} когда накапливает {TriggerLevel} |заряда| переходит в состояние
     |Раж|.'
 CantDrawNextTurn:
-  Name: В следующем ходу отказ от взятия карт
+  Name: В следующем ходу вы не берёте карты
+  Description: Нельзя брать карты во время следующего хода {OwnerName:g} |d:(за исключением
+    фазы взятия карт)|.
+  Brief: Нельзя брать карты во время следующего хода.
 BurstUpgrade:
   ExtraDescription: Увеличивает урон от |ража| и накопление манны.
   Description: Увеличивает урон от |ража|.
   Brief: Увеличивает урон от |ража|.
   Name: Усиленный раж
   ExtraDescription2: Увеличивает урон от |ража| и накопление манны.
+NoAttackDamageNextTurn:
+  Brief: Нельзя нанести урон в следующем ходу.
+  Description: Атаки не будут наносить урон во время следующего хода {OwnerName:g}.
+NoAttackDamageThisTurn:
+  Name: Распределение времени
+  Description: Атаки {OwnerName} не наносят урона до конца хода.
+  Brief: Не может нанести урон в этом ходу.
+TimeIsLimited:
+  Name: Всплеск времени
+  Description: До следующего хода врагов карты стоят на {Mana} больше.
+  Brief: До следующего хода врагов карты стоят дороже.
