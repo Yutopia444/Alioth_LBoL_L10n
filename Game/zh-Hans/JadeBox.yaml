@@ -1,10 +1,8 @@
 # This file contains generated content from config data
 
 NoRareCard:
-  Name: 凡庸之乐（未生效）
-  Description: |-
-    |稀有牌|获得|填充|。
-    每当抽取到一张|稀有牌|，或将一张|稀有牌|加入手牌时，将其放逐且获得{Mana}。
+  Name: 凡庸之乐
+  Description: 稀有牌被抽取或加入手牌时，|放逐|它，抽一张牌，获得{Mana}。
 
 Start50:
   Name: 虹色主宰
@@ -13,26 +11,26 @@ Start50:
     回合开始时，一点随机的法力转化为{Mana}。
 
 FastMana:
-  Name: 先手致胜（未生效）
+  Name: 先手致胜
   Description: |-
-    所有卡牌的费用减少{Mana}。
+    战斗开始后，所有卡牌的费用减少{Mana}；
     {PlayerName}每经过个 {Value1} 个回合，所有卡牌的费用增加{Mana}。
 
 SlowMana:
-  Name: 超凡入圣（未生效）
-  Description: 所有|非普通牌|的费用增加{Mana}，且在打出后随机减少 {Value1} 点费用直至战斗结束。
+  Name: 超凡入圣
+  Description: |-
+    非普通的牌费用增加{Mana}；
+    它们被打出后，费用随机减少 {Value1} 点，直到战斗结束。
 
 ExtraTurn:
-  Name: 空间畸变（未生效）
-  Description: |-
-    每 {Value1} 个回合，将一张|重塑|为{Mana}的|膨胀空间|加入手中。
-    每抽取到一张|膨胀空间|时，失去 {Value2} 点随机法力。
+  Name: 时空紊乱
+  Description: 战斗开始后，{PlayerName}每经过个 {Value1} 个回合，将一张|重塑|为{Mana}的|膨胀空间|加入手中。
 
 Capital:
-  Name: 资本积累（未生效）
+  Name: 资本积累
   Description: |-
-    回合结束时，每有100金币，受到1点伤害。
-    战斗结束时，获得现有金币15%的金币。
+    回合结束时，每有 {Value1}<sprite="Point" name="Gold">，受到 {Value2} 点伤害。
+    战斗结束时，获得现有<sprite="Point" name="Gold">的 {Value3}% 。
 
 SelectCard:
   Name: 精挑细选
@@ -41,16 +39,18 @@ SelectCard:
     厄运：|逐客令|。
 
 AllCharacterCards:
-  Name: 通感通意（未生效）
-  Description: 可以获得所有角色卡。
+  Name: 通感通意
+  Description: |-
+    可以获得所有角色牌。
+    卡牌奖励中，第二张牌固定为其他角色牌。（原为 60% 几率）
 
 FourCards:
-  Name: 四重存在（未生效）
-  Description: 奖励和售卖的卡牌进入卡组时，如果它不是稀有牌，将它的 {Value1} 张复制加入牌组。
+  Name: 四重存在
+  Description: 奖励和商店卡牌进入卡组时，如果它是普通/罕见牌，将它的 {Value1}/{Value2} 张复制加入卡组。
 
 DefensePhilosophy:
-  Name: 白茧之梦（未生效）
-  Description: 打出防御牌后获得P和1层纯化。
+  Name: 幻茧之梦
+  Description: 打出一张防御牌时，{PlayerName}获得{Mana}，丢弃最左边的手牌。
 
 HpToPower:
   Name: 沸血之舞
