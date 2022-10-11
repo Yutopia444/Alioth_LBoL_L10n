@@ -49,7 +49,7 @@ Spirit:
     Has {Level} more |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    Has inreased |Spirit|.
+    Has increased |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 TempSpiritNegative:
@@ -102,8 +102,9 @@ LockedOn:
   Brief: "{OwnerName} takes more damage from attacks.\nAt the start of each round,\
     \ they lose 1 |Lock On|."
 Graze:
-  Description: "{OwnerName} takes 0 damage from attacks.\nWhenever {OwnerName} is\
-    \ attacked, or at the start of their turn, they lose 1 |Graze|."
+  Description: "{OwnerName} takes 0 damage from the next {Level:plural one='attack'\
+    \ other='% attacks'}.\nWhenever {OwnerName} is attacked, or at the start of their\
+    \ turn, they lose 1 |Graze|."
   Name: Graze
   Brief: "{OwnerName} takes 0 damage from attacks.\nWhenever attacked, or at the start\
     \ of their turn, they lose 1 |Graze|."
@@ -120,7 +121,7 @@ ExtraTurn:
   Name: Extra Turn
   Description: "{OwnerName} will take {Level:plural one='% extra turn' other='% extra\
     \ turns'} after this one."
-  Brief: '{OwnerName} will take one or more additional turns after this one.'
+  Brief: '{OwnerName} will take one or more extra turns after this one.'
 LimitedDamage:
   Name: Damage Limiter
   Description: "{OwnerName} may only be dealt up to {Limit} damage each turn. Can\
@@ -263,9 +264,9 @@ MaoyuBlock:
     |Block|.
 GuangxueMicai:
   Name: Optical Camouflage
-  Description: "{OwnerName} takes half as much damage from all attacks {Duration:plural\
+  Description: "{OwnerName} takes half as much damage from attacks {Duration:plural\
     \ one='until end of turn' other='for the next % turns'}."
-  Brief: '{OwnerName} takes half as much damage from all attacks.'
+  Brief: '{OwnerName} takes half as much damage from attacks.'
 NextTurnLoseHp:
   Name: Life Leak
   Description: At the start of {OwnerName}'s next turn, they lose {Level} life.
@@ -276,24 +277,24 @@ NextTurnGainBlock:
   Brief: At the start of {OwnerName}'s next turn, they gain some |Block|.
 CantDrawThisTurn:
   Name: Draw Negation
-  Brief: Can't draw any more cards this turn.
-  Description: Can't draw any more cards this turn.
+  Brief: Can't draw cards until end of turn.
+  Description: Can't draw cards until end of turn.
 NoAttackDamageNextTurn:
-  Description: Attacks deal no damage during {OwnerName}'s next turn.
+  Description: Can't deal attack damage next turn.
   Brief: Can't deal attack damage next turn.
   Name: Next Turn Chronocrush
 NoAttackDamageThisTurn:
-  Description: Until end of turn, {OwnerName} can't deal damage with attacks.
-  Brief: Can't deal attack damage this turn.
+  Description: Can't deal attack damage until end of turn.
+  Brief: Can't deal attack damage until end of turn.
   Name: Chronocrush
 TimeIsLimited:
   Name: Time Surge
   Description: Until the enemy's next turn, cards cost {Mana} more to play.
-  Brief: Until the enemy's next turn, cards cost more to play.
+  Brief: Until the enemy's next turn, cards cost more mana to play.
 Servant:
   Name: Summon
-  Description: When the summoner is defeated, all |Summons| are defeated too. Does
-    not trigger any effects that trigger when an enemy is defeated.
+  Description: "When the summoner is defeated, all |Summons| are defeated too. \n\
+    Doesn't trigger defeat effects when defeated this way."
 Reflect:
   Name: Reflection
   Description: When damaged with an |Attack|, the attacker takes {Level} damage, then
@@ -309,15 +310,30 @@ NextAttackUp:
   Brief: The next attack card played deals increased damage.
 CantDrawNextTurn:
   Name: Next Turn Draw Negation
-  Description: Can't draw cards until next turn, after next turn's draw step.
-  Brief: Can't draw cards until next turn, after next turn's draw step.
+  Description: Can't draw cards next turn, after its draw step.
+  Brief: Can't draw cards next turn, after its draw step.
 DroneBlock:
   Name: Drone Phalanx
   Description: At the end of {OwnerName}'s turn, they gain {Level} |Block|.
-  Brief: At the end of {OwnerName}'s turn, they gain |Block|.
+  Brief: At the end of {OwnerName}'s turn, they gain some |Block|.
 DeathExplodeNotCount:
-  Name: Deathblast
-  Description: "When defeated, {OwnerName} deals {Level} damage to {PlayerName}.\n\
+  Name: Revenge Bullet
+  Description: "When {OwnerName} is defeated, it deals {Level} damage to {PlayerName}.\n\
     If {OwnerName} is detonated, it deals twice that much damage instead."
 DeathExplodeCount:
-  Name: Deathblast
+  Name: Revenge Bullet
+  Description: "When {OwnerName} is defeated, it deals {Level} damage to {PlayerName}.\n\
+    After {Count} more {Count:plural one='turn' other='turns'}, it detonates, dealing\
+    \ twice that much damage instead."
+DeathVulnerable:
+  Name: Diseased
+  Description: When {OwnerName} is defeated, {PlayerName} gains {Level} |Vulnerable|.
+Drowning:
+  Name: Drowning
+  Description: At the end of {OwnerName}'s turn, they take {Level} damage.
+LoveGirlDamageReduce:
+  Description: "{OwnerName}'s feelings remain unrequited. They take {Rate}% less damage."
+LoveGirlDamageIncrease:
+  Description: "{OwnerName}'s feelings are requited. They take {Rate}% more damage."
+PhoneBillSe:
+  Name: Phone Bill
