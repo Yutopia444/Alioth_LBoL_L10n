@@ -1,59 +1,75 @@
 TempFirepower:
   Name: Temporary Firepower
   Description: |-
-    {OwnerName} deals {Level} more damage with attacks until end of turn.
+    Until end of turn, has {Level} more |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
   Brief: |-
-    This turn: {OwnerName} deals more damage with attacks.
+    Until end of turn, has increased |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
 
 Firepower:
   Name: Firepower
   Description: |-
-    {OwnerName} deals {Level} more damage with attacks.
+    Has {Level} more |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
   Brief: |-
-    {OwnerName} deals more damage with attacks.
+    Has increased |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
 
 TempFirepowerNegative:
   Name: Temporary Firepower Down
   Description: |-
-    {OwnerName} deals {Level} less damage with attacks until end of turn.
+    Until end of turn, has {Level} less |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
   Brief: |-
-    This turn: {OwnerName} deals less damage with attacks.
+    Until end of turn, has decreased |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
 
 FirepowerNegative:
   Name: Firepower Down
   Description: |-
-    {OwnerName} deals {Level} less damage with attacks.
+    Has {Level} less |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
   Brief: |-
-    {OwnerName} deals less damage with attacks.
+    Has decreased |Firepower|.
+    (|Firepower| increases damage dealt with attacks.)
 
 TempSpirit:
   Name: Temporary Spirit
   Description: |-
-    {OwnerName} gains {Level} more |Block| and |Barrier| from card effects |d:(or Defense moves)| until end of turn.
+    Until end of turn, has {Level} more |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    This turn: {OwnerName} gains more |Block| and |Barrier|.
+    Until end of turn, has increased |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 Spirit:
   Name: Spirit
   Description: |-
-    {OwnerName} gains {Level} more |Block| and |Barrier| from card effects |d:(or Defense moves)|.
+    Has {Level} more |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    {OwnerName} gains more |Block| and |Barrier|.
+    Has inreased |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 TempSpiritNegative:
   Name: Temporary Dispirit
   Description: |-
-    {OwnerName} gains {Level} less |Block| and |Barrier| from card effects |d:(or Defense moves)| until end of turn.
+    Until end of turn, has {Level} less |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    This turn: {OwnerName} gains less |Block| and |Barrier|.
+    Until end of turn, has decreased |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 SpiritNegative:
   Description: |-
-    {OwnerName} gains {Level} less |Block| and |Barrier| from card effects |d:(or Defense moves)|.
+    Has {Level} less |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    {OwnerName} gains less |Block| and |Barrier|.
+    Has decreased |Spirit|.
+    (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
-  Name: Temporary Dispirit
+  Name: Dispirit
 Invincible:
   Name: Flawless
   Description: "{OwnerName} cannot be dealt more than 1 damage at a time {Duration:plural\
@@ -71,58 +87,56 @@ Fragil:
     \ {Duration:plural one='until end of turn' other='for the next % turns'}."
 Weak:
   Name: Weak
-  Brief: "{OwnerName}'s |Attacks| deal {Value}% less damage."
-  Description: "{OwnerName}'s |Attacks| deal {Value}% less damage {Duration:plural\
-    \ one='until end of turn' other='for the next % turns'}."
+  Brief: "{OwnerName}'s attacks deal {Value}% less damage."
+  Description: "{OwnerName}'s attacks deal {Value}% less damage {Duration:plural one='until\
+    \ end of turn' other='for the next % turns'}."
 Vulnerable:
   Name: Vulnerable
-  Description: "{OwnerName} takes {Value}% more damage from |Attacks| {Duration:plural\
+  Description: "{OwnerName} takes {Value}% more damage from attacks {Duration:plural\
     \ one='until end of turn' other='for the next % turns'}."
-  Brief: '{OwnerName} takes {Value}% more damage from |Attacks|.'
+  Brief: '{OwnerName} takes {Value}% more damage from attacks.'
 LockedOn:
-  Description: "{OwnerName} takes {Level} more damage from |Attacks|.\nAt the start\
-    \ of the round, remove 1 |Lock On| from them."
+  Description: "{OwnerName} takes {Level} more damage from attacks.\nAt the start\
+    \ of each round, they lose 1 |Lock On|."
   Name: Lock On
-  Brief: "{OwnerName} takes more damage from |Attacks|.\nAt the start of each round:\
-    \ They lose 1 |Lock On|."
+  Brief: "{OwnerName} takes more damage from attacks.\nAt the start of each round,\
+    \ they lose 1 |Lock On|."
 Graze:
-  Description: "{OwnerName} takes 0 damage instead of the damage that would be dealt\
-    \ by the next {Level} |Attack{Level:plural one='' other='s'}|.\nAt the end of\
-    \ their turn, they lose 1 |Graze|."
+  Description: "{OwnerName} takes 0 damage from attacks.\nWhenever {OwnerName} is\
+    \ attacked, or at the start of their turn, they lose 1 |Graze|."
   Name: Graze
-  Brief: "{OwnerName} takes 0 damage from |Attacks|.\nWhenever attacked, or at the\
-    \ end of their turn, they lose 1 |Graze|."
+  Brief: "{OwnerName} takes 0 damage from attacks.\nWhenever attacked, or at the start\
+    \ of their turn, they lose 1 |Graze|."
 TurnStartDontLoseBlock:
   Description: "{OwnerName} does not lose their |Block| at the start of their {Level:plural\
     \ one='next turn' other='next % turns'}."
   Name: Retain Block
   Brief: '{OwnerName} does not lose |Block| at the start of their turn.'
 Electric:
-  Brief: '{OwnerName} deals damage to the attacker when damaged with an |Attack|.'
+  Brief: 'Whenever attacked, they deal damage back to the attacker.'
   Name: Static Charge
   Description: When damaged with an |Attack|, the attacker takes {Level} damage.
 ExtraTurn:
   Name: Extra Turn
   Description: "{OwnerName} will take {Level:plural one='% extra turn' other='% extra\
     \ turns'} after this one."
-  Brief: '{OwnerName} will take one or more additional turns when they end their turn.'
+  Brief: '{OwnerName} will take one or more additional turns after this one.'
 LimitedDamage:
   Name: Damage Limiter
-  Description: "{OwnerName} may only be dealt up to {Limit} damage each turn. |d:(Excess\
-    \ damage is reduced to 0.)|\n{OwnerName} can still be dealt {Count} damage this\
-    \ turn."
-  Brief: '{OwnerName} may only be dealt a certain amount of damage each turn. |d:(Excess
-    damage is reduced to 0.)|'
+  Description: "{OwnerName} may only be dealt up to {Limit} damage each turn. Can\
+    \ still be dealt {Count} damage this turn."
+  Brief: '{OwnerName} may only be dealt a limited amount of damage each turn.'
 Amulet:
   Name: Amulet
-  Description: Negate the next {Level:plural one='|Debuff|' other='% |Debuffs|'} that
-    would be applied.
+  Description: Negates the next {Level:plural one='|Debuff|' other='% |Debuffs|'}
+    that would be applied.
   Brief: Negates incoming |Debuffs|.
 TempElectric:
   Name: Temporary Charge
-  Description: When damaged with an |Attack|, the attacker takes {Level} damage.
-  Brief: Until {OwnerName}'s next turn, whenever they take damage from an attack,
-    damage is dealt to the attacker.
+  Description: "When damaged with an |Attack|, the attacker takes {Level} damage.\n\
+    Removed at the start of {OwnerName}'s next turn."
+  Brief: "When attacked, they deal damage back to the attacker.\nRemoved at the start\
+    \ of {OwnerName}'s next turn."
 ScarletDestiny:
   Name: Scarlet Destiny
   Description: Whenever {Limit} cards are played, {OwnerName} ends the turn. |d:({Count}
@@ -255,15 +269,15 @@ GuangxueMicai:
 NextTurnLoseHp:
   Name: Life Leak
   Description: At the start of {OwnerName}'s next turn, they lose {Level} life.
-  Brief: At the start of {OwnerName}'s next turn, they lose life.
+  Brief: At the start of {OwnerName}'s next turn, they lose some life.
 NextTurnGainBlock:
   Name: Next Turn Block
   Description: At the start of {OwnerName}'s next turn, they gain {Level} |Block|.
-  Brief: At the start of {OwnerName}'s next turn, they gain |Block|.
+  Brief: At the start of {OwnerName}'s next turn, they gain some |Block|.
 CantDrawThisTurn:
   Name: Draw Negation
-  Brief: No more cards may be drawn this turn.
-  Description: Until end of turn, {OwnerName} can't draw cards.
+  Brief: Can't draw any more cards this turn.
+  Description: Can't draw any more cards this turn.
 NoAttackDamageNextTurn:
   Description: Attacks deal no damage during {OwnerName}'s next turn.
   Brief: Can't deal attack damage next turn.
@@ -282,10 +296,9 @@ Servant:
     not trigger any effects that trigger when an enemy is defeated.
 Reflect:
   Name: Reflection
-  Description: The next time {OwnerName} is dealt damage from an attack, they deal
-    {Level} damage to the attacker.
-  Brief: The next time {OwnerName} is dealt damage from an attack, they deal damage
-    to the attacker.
+  Description: When damaged with an |Attack|, the attacker takes {Level} damage, then
+    they lose this status effect.
+  Brief: When attacked, they deal damage back to the attacker, then loses this effect.
 NextTurnLoseRandomMana:
   Brief: At the start of {OwnerName}'s next turn, they lose some mana at random.
   Name: Mana Leak
@@ -293,12 +306,11 @@ NextTurnLoseRandomMana:
 NextAttackUp:
   Name: Attack Boost
   Description: The next attack card played deals {Level} more damage.
-  Brief: The next attack card played deals more damage.
+  Brief: The next attack card played deals increased damage.
 CantDrawNextTurn:
   Name: Next Turn Draw Negation
-  Description: Cards can't be drawn during {OwnerName}'s next turn |d:(except during
-    the draw step)|.
-  Brief: Cards can't be drawn next turn.
+  Description: Can't draw cards until next turn, after next turn's draw step.
+  Brief: Can't draw cards until next turn, after next turn's draw step.
 DroneBlock:
   Name: Drone Phalanx
   Description: At the end of {OwnerName}'s turn, they gain {Level} |Block|.
