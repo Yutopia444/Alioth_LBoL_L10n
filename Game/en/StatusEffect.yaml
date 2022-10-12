@@ -140,8 +140,8 @@ TempElectric:
     \ of {OwnerName}'s next turn."
 ScarletDestiny:
   Name: Scarlet Destiny
-  Description: Whenever {Limit} cards are played, {OwnerName} ends the turn. |d:({Count}
-    cards left.)|
+  Description: "Whenever {Limit} cards are played, {OwnerName} ends {PlayerName}'s\
+    \ turn.\n|d:({Count} cards left.)|"
 QiannianShenqiSe:
   Name: Pyramid-Shaped Puzzle
   Description: "{PlayerName} may only draw up to {Limit} cards each turn.\n|d:({Count}\
@@ -159,6 +159,7 @@ BoliPhantomSe:
   Name: Hakurei Phantom
 SingleJiandaoSe:
   Name: Giant Scissor Blade
+  Description: Whenever {PlayerName} plays a card, they take {Level} damage.
 SakuraWandSe:
   Name: Winged Key
 ReverseJiejieSe:
@@ -183,13 +184,13 @@ TaijiLiangyiSe:
   Brief: At the start of {PlayerName}'s turn, if there's less than this many |Yin-Yang
     Orbs| in the hand, conjure them into the hand until there are that many.
 Curiosity:
-  Description: Whenever {PlayerName} plays an |Ability| card, {OwnerName} gains {Level}
+  Description: Whenever {PlayerName} plays an ability card, {OwnerName} gains {Level}
     |Firepower|.
 JunkoPurify:
-  Description: Whenever {PlayerName} plays a card, |Purify| {Level}.
+  Description: Whenever {PlayerName} plays a card, |Cleanse| {Level}.
 MadokaBowSe:
-  Description: "At the end of {OwnerName}'s turn, conjure {Level} random |Status|\
-    \ cards into the draw pile.\n|d:(Conjures more potent cards on higher difficulties.)|"
+  Description: "At the end of {OwnerName}'s turn, add {Level} random |Status| cards\
+    \ to the draw pile.\n|d:(Adds more potent cards at higher difficulties.)|"
 ShendengSe:
   Description: At the end of {OwnerName}'s turn, {PlayerName} randomly gains {Level}
     |Weak|, |Frail| or |Vulnerable|.
@@ -198,7 +199,7 @@ MasterOfCollectionSe:
 UpgradePotionSe:
   Name: Refine Potion
 InfinityGemsSe:
-  Description: At the start of {OwnerName}'s turns, |Exile| half of all cards in combat.
+  Description: At the start of {OwnerName}'s turn, |Exile| half of all cards in combat.
     Cards are chosen randomly from among the hand, the draw pile and/or the discard
     pile.
 GainKnifeSe:
@@ -355,7 +356,7 @@ Emi:
   Description: "{OwnerName} can't act {Duration:plural one='until end of turn' other='for\
     \ the next % turns'}."
 RockHard:
-  Description: '{OwnerName} loses {Level} less life from unblocked attacks.'
+  Description: '{OwnerName} takes {Level} less damage from unblocked attacks.'
 AbsorbPower:
   Description: At the end of {OwnerName}'s turn, they gain {Level} |Firepower|.
 RinAura:
@@ -368,3 +369,38 @@ TurnStartPurify:
   Name: Next Turn Cleanse
   Description: "At the start of {PlayerName}'s next turn, |Cleanse| {Level}.\nRemove\
     \ this effect at the end of the round."
+LouguanJianSe:
+  Description: After {OwnerName} attacks, they apply {Level} |Lock On| to their target(s).
+RockHardAura:
+  Description: While {OwnerName} is protected by a keystone, they take {Level} less
+    damage from unblocked attacks.
+KokoroXi:
+  Description: At the end of {OwnerName}'s turn, they |Summon| a face aura.
+KokoroNu:
+  Description: At the end of {OwnerName}'s turn, all enemies gain {Level} |Firepower|.
+KokoroYou:
+  Description: At the end of {OwnerName}'s turn, {PlayerName} gains {Level} |Weak|.
+LongEscape:
+  Description: When {OwnerName}'s life is less than {Level}, they run away.
+FlatPeach:
+  Description: Whenever {OwnerName} is dealt damage, they gain {Level} life.
+Sleep:
+  Description: "At the end of {OwnerName}'s turn, they gain |Barrier| until they have\
+    \ {Level} |Barrier|.\nWakes up when dealt damage or after {Count} turns."
+YuyukoDeath:
+  Description: "At the end of {OwnerName}'s turn, they lose {Level} life.\n{OwnerName}\
+    \ can't gain life."
+PowerByDefense:
+  Description: Whenever a defense card is played, {OwnerName} gains {Level} |Firepower|.
+MirrorImage:
+  Description: A reflection of {OwnerName}...
+DreamServant:
+  Description: "{OwnerName} can't lose life."
+LongLight:
+  Description: '{OwnerName} shines like a star! Their |Status| cards are more powerful.'
+Vampire:
+  Description: Whenever {OwnerName} deals unblocked damage, they gain that much life.
+    Scary!
+FastAttack:
+  Description: When {PlayerName} plays their first card each turn, {OwnerName} deals
+    {Level} damage to them.
