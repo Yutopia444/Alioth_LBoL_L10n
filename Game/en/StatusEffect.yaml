@@ -148,42 +148,53 @@ QiannianShenqiSe:
     \ cards left.)|"
 HolyGrailSe:
   Name: Overdecorated Gold Cup
-  Description: At the start of {OwnerName}'s turn, lose all non-|Legendary| non-|Mythic
-    Rare| |Exhibits|.
+  Description: At the start of {OwnerName}'s turn, {PlayerName} loses all non-|Legendary|
+    non-|Mythic Rare| |Exhibits|.
 BoliDajiejieSe:
   Name: Great Hakurei Barrier
-  Description: Whenever {OwnerName} would gain |Block|, they gain that much |Barrier|
+  Description: Whenever {OwnerName} would have |Block|, they gain that much |Barrier|
     instead.
   Brief: "{OwnerName}'s |Block| is converted into |Barrier|."
 BoliPhantomSe:
   Name: Hakurei Phantom
+  Description: Whenever a card not named |Persuasion Needle| is |Exiled|, add {Level}
+    |Persuasion Needle{Level:plural one='' other='s'}| to the hand that |temporarily
+    cost| {Mana}.
+  Brief: Whenever a card not named |Persuasion Needle| is |Exiled|, add one or more
+    Persuasion Needles to the hand that |temporarily cost| {Mana}.
 SingleJiandaoSe:
   Name: Giant Scissor Blade
   Description: Whenever {PlayerName} plays a card, they take {Level} damage.
 SakuraWandSe:
   Name: Winged Key
-  Description: '{OwnerName} attacks doubled times.'
+  Description: '{OwnerName} attacks twice as many times.'
 ReverseJiejieSe:
   Name: Reversal Boundaries
+  Description: Whenever {PlayerName} loses a |Buff|, they gain {Level} |Barrier|.
+  Brief: Whenever {PlayerName} loses a |Buff|, they gain some |Barrier|.
 DragonBallSe:
   Name: Starred Crystalline Ball
-  Description: 'At the start of {OwnerName}''s turn, her |wish| is granted... |d:(and
-    {PlayerName} loses the game.)|'
+  Description: 'At the start of {OwnerName}''s turn, her |wish| is granted: {PlayerName}
+    loses the game.'
 DoubleLianhuadieSe:
   Name: Dichromatic Lotus Butterfly
   Description: Whenever {PlayerName} gains |Block| or |Barrier|, they deal {Level}
     damage to a random enemy.
-  Brief: Whenever {PlayerName} gains |Block| or |Barrier|, they deal damage to a random
-    enemy.
+  Brief: Whenever {PlayerName} gains |Block| or |Barrier|, they deal some damage to
+    a random enemy.
 MomentPowerSe:
   Name: Instant Dimensional Rift
+  Description: Whenever {OwnerName} gains |Temporary Firepower| or |Temporary Spirit|,
+    convert {Level} of them into |Firepower| or |Spirit|, respectively.
+  Brief: Whenever {OwnerName} gains |Temporary Firepower| or |Temporary Spirit|, convert
+    some of it into |Firepower| or |Spirit|, respectively.
 TaijiLiangyiSe:
   Description: At the start of {PlayerName}'s turn, if there are {Level:plural one='no'
-    other='less than %'} |Yin-Yang Orbs| in the hand, conjure {Level:plural one='a
-    |Yin-Yang Orb| into' other='|Yin-Yang Orbs|'} into the hand{Level:plural one='.'
-    other=' until there are %.'}
+    other='less than %'} |Yin-Yang Orbs| in the hand, add {Level:plural one='a |Yin-Yang
+    Orb|' other='|Yin-Yang Orbs|'} to the hand{Level:plural one='.' other=' until
+    there are %.'}
   Brief: At the start of {PlayerName}'s turn, if there's less than this many |Yin-Yang
-    Orbs| in the hand, conjure them into the hand until there are that many.
+    Orbs| in the hand, add them to the hand until there are that many.
 Curiosity:
   Description: Whenever {PlayerName} plays an ability card, {OwnerName} gains {Level}
     |Firepower|.
@@ -218,18 +229,19 @@ ChargingPotionSe:
 SakuyaKillerSe:
   Name: Ripper in the Fog
 JiangshenSe:
-  Brief: Whenever {PlayerName} conjures a card, they |Upgrade| it.
-  Description: Whenever {PlayerName} conjures a card, they |Upgrade| it.
+  Brief: Whenever a card is added during combat, |Upgrade| it.
+  Description: Whenever a card is added during combat, |Upgrade| it.
 FreeFlySe:
   Description: At the start of {PlayerName}'s turn, add {Level} {Mana}.
   Brief: At the start of {PlayerName}'s turn, add {Level} {Mana}.
 DanceAroundLakeSe:
   Description: Whenever a card is |Exiled|, draw {Level:plural one='% card.' other='%
     cards.'}
-  Brief: Whenever a card is |Exiled|, draw this many cards.
+  Brief: Whenever a card is |Exiled|, draw one or more cards.
 EvilTuiZhiSe:
   Description: The next {Level:plural one='attack card' other='% attack cards'} played
-    this turn deals double damage.
+    this turn deal{Level:plural one='s' other=''} double damage.
+  Brief: The next one or more attack cards played this turn deal double damage.
 SilverBladeSe:
   Name: Silver Another Dimension
 SpecialClockSe:
@@ -405,3 +417,11 @@ Vampire:
 FastAttack:
   Description: When {PlayerName} plays their first card each turn, {OwnerName} deals
     {Level} damage to them.
+HuanxiangBlockSe:
+  Description: Whenever a card is |Exiled|, {PlayerName} gains {Level} |Block|.
+  Brief: Whenever a card is |Exiled|, {PlayerName} gains some |Block|.
+YinyangXueyinSe:
+  Description: After playing a |Yin-Yang Orb|, gain {Level} |Temporary Firepower|
+    and |Temporary Spirit|.
+  Brief: After playing a |Yin-Yang Orb|, gains some |Temporary Firepower| and |Temporary
+    Spirit|.
