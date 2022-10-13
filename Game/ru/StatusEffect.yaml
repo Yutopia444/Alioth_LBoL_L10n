@@ -81,8 +81,9 @@ Concentration:
   Description: Активируйте эффект карты |перегрузка| бесплатно, оставляя {Level} зарядов.
 GuangxueMicai:
   Name: Оптический камуфляж
-  Description: '{OwnerName} получает вполовину меньше урона. Длительность: {Duration}.'
-  Brief: '{OwnerName} получает вполовину меньше урона.'
+  Description: '{OwnerName} получает вполовину меньше урона от атак. Длительность:
+    {Duration:plural one=''ход'' other=''хода''}.'
+  Brief: '{OwnerName} получает вполовину меньше урона от атак.'
 Invincible:
   Description: '{OwnerName} получает не более 1 урона с атаки. Длительность: {Duration}.'
   Name: Безупречность
@@ -106,13 +107,13 @@ TempElectric:
   Description: При получении урона от |Атаки| наносит {Level} урона атакующему.
   Brief: '{OwnerName} наносит урон атакующему, когда получает урон с |Атаки|.'
 Servant:
-  Description: "Когда мастер побежден, прислужники побеждаются вместе с ним.\nЭффект\
-    \ смерти при этом не срабатывает."
+  Description: "При повержении призывателя, призванные существа повергаются вместе\
+    \ с ним.\nЭффект смерти при этом не срабатывает."
   Name: Призыв
 RinSummon:
   Name: Воскрешение духов
 MaoyuBlock:
-  Description: '{OwnerName} получает {Level} |Защиты| при получении урона.'
+  Description: '{OwnerName} получает {Level} |Защиты| при получении урона от атак.'
   Name: Пушистость
 ScarletDestiny:
   Name: Алая судьба
@@ -128,9 +129,10 @@ Burst:
     \ раунда."
 Drowning:
   Name: Утопление
-  Description: '{OwnerName} получает {Level} урона в конце хода.'
+  Description: '{OwnerName} получает {Level} урона в конце своего хода.'
 SingleJiandaoSe:
   Name: Лезвие гигантских ножниц
+  Description: '{PlayerName} получает {Level} урона, когда разыгрывает карту.'
 Curiosity:
   Description: Когда {PlayerName} разыгрывает карту |Навыка|, {OwnerName} получает
     {Level} |Огневой мощи|.
@@ -150,23 +152,29 @@ NextTurnLoseRandomMana:
   Brief: В начале следующего хода {OwnerName:g} потеряйте случайное количество маны.
   Name: Утечка маны
 NextTurnLoseHp:
-  Description: В начале следующего хода {OwnerName} потеряет {Level} здоровья.
-  Brief: В начале следующего хода {OwnerName} потеряет некоторое количество здоровья.
+  Description: В начале следующего своего хода {OwnerName} потеряет {Level} здоровья.
+  Brief: В начале следующего своего хода {OwnerName} потеряет некоторое количество
+    здоровья.
   Name: Утечка жизни
 NextTurnGainBlock:
-  Description: В начале следующего хода {OwnerName} получит {Level} |Защиты|.
-  Brief: В начале следующего хода {OwnerName} получит некоторое количество |Защиты|.
+  Description: В начале следующего своего хода {OwnerName} получит {Level} |Защиты|.
+  Brief: В начале следующего своего хода {OwnerName} получит некоторое количество
+    |Защиты|.
   Name: Получение защитыв следующем ходу
 Vampire:
   Name: Вампиризм
+  Description: Когда {OwnerName} наносит незаблокированный урон, она восполняет здоровье
+    равное количеству нанесённого урона. Страшно!
 Emi:
   Name: Электромагнитные помехи
   Description: '{OwnerName} не может действовать. Длительность: {Duration}.'
 TurnStartPurify:
-  Description: "В начале хода {PlayerName:g}, |Очищает| {Level}.\nЭтот эффект снимается\
+  Description: "В начале хода {PlayerName:g}, |Очищение| {Level}.\nЭтот эффект снимается\
     \ в конце хода."
+  Name: Очищение в следующий ход
 RockHard:
-  Description: Урон от незаблокированных атак {OwnerName:g} уменьшается на {Level}.
+  Description: '{OwnerName} получает на {Level} меньше урона от незаблокированных
+    атак.'
 YuyukoDeath:
   Description: "В конце хода {OwnerName} теряет {Level} здоровья.\n{OwnerName} не\
     \ может восполнять здоровье."
@@ -177,7 +185,8 @@ DeathExplodeCount:
     Урон удваивается при самоуничтожении.\n{Count} ходов осталось до самоуничтожения."
   Name: Самоуничтожение
 DeathVulnerable:
-  Description: При поражении {OwnerName} накладывает на {PlayerName:a} {Level} |Уязвимости|.
+  Description: При поражении {OwnerName:g} накладывает на {PlayerName:a} {Level} |Уязвимости|.
+  Name: Болезнь
 DroneBlock:
   Description: В конце хода {OwnerName} получит {Level} |Защиты|.
   Brief: В конце хода {OwnerName} получит некоторое количество |Защиты|.
@@ -187,12 +196,14 @@ DeathExplodeNotCount:
     Урон удваивается при самоуничтожении."
   Name: Самоуничтожение
 LoveGirlDamageIncrease:
-  Description: Желание {OwnerName:g} было исполнено, получаемый ею урон увеличивается
-    на {Rate}%.
+  Description: Чувства {OwnerName:g} получили ответ. Она получают на {Rate}% больше
+    урона.
 AbsorbPower:
   Description: '{OwnerName} получает {Level} |Огневой Мощи| в конце своего хода.'
 WindGirl:
-  Description: '{OwnerName} получает {Level} |Уклонения| в конце хода.'
+  Description: '{OwnerName} получает |Уклонение| в конце хода до тех пор, пока у неё
+    не будет {Level} |Уклонения|.'
+  Name: Девушка-богиня ветра
 RinAura:
   Description: Вызванные {OwnerName} духи увеличивают урон своего эффекта смерти на
     {Level}.
@@ -211,9 +222,9 @@ KokoroDanceSe:
   Brief: Всякий раз, когда враг находится в отрицательном состоянии, {PlayerName}
     наносит ему несколько повреждений.
 CantDrawThisTurn:
-  Brief: В этом ходу больше нельзя брать карты.
+  Brief: Нельзя брать карты до конца хода.
   Name: Отказ от взятия карт
-  Description: До конца хода {OwnerName} не может брать карты.
+  Description: Нельзя брать карты до конца хода.
 Charging:
   Name: Заряд
   Description: '{PlayerName} когда накапливает {TriggerLevel} |заряда| переходит в
@@ -222,8 +233,8 @@ Charging:
     |Раж|.'
 CantDrawNextTurn:
   Name: В следующем ходу вы не берёте карты
-  Description: Нельзя брать карты во время следующего хода {OwnerName:g} |d:(за исключением
-    фазы взятия карт)|.
+  Description: Нельзя брать карты во время следующего хода. |d:(за исключением фазы
+    взятия карт)|.
   Brief: Нельзя брать карты во время следующего хода.
 BurstUpgrade:
   ExtraDescription: Увеличивает урон от |ража| и накопление манны.
@@ -233,12 +244,62 @@ BurstUpgrade:
   ExtraDescription2: Увеличивает урон от |ража| и накопление манны.
 NoAttackDamageNextTurn:
   Brief: Нельзя нанести урон в следующем ходу.
-  Description: Атаки не будут наносить урон во время следующего хода {OwnerName:g}.
+  Description: Атаки не будут наносить урон во время следующего хода.
+  Name: Распределение времени следующего хода
 NoAttackDamageThisTurn:
   Name: Распределение времени
-  Description: Атаки {OwnerName} не наносят урона до конца хода.
-  Brief: Не может нанести урон в этом ходу.
+  Description: Атаки не наносят урона до конца хода.
+  Brief: Атаки не наносят урона до конца хода.
 TimeIsLimited:
   Name: Всплеск времени
   Description: До следующего хода врагов карты стоят на {Mana} больше.
   Brief: До следующего хода врагов карты стоят дороже.
+Sleep:
+  Description: "{OwnerName} получает |Барьер| в конце своего хода до тех пор, пока\
+    \ не наберётся {Level} |Барьера|.\nПросыпается при получении урона или через {Count}\
+    \ ходов."
+DreamServant:
+  Description: '{OwnerName} не может потерять здоровье.'
+ShendengSe:
+  Description: В конце хода {OwnerName}, {PlayerName} случайным образом получает {Level}
+    |Слабости|, |Хрупкости| или |Уязвимости|.
+MadokaBowSe:
+  Description: "В конце хода {OwnerName}, положите {Level} случайных карт |Статуса|\
+    \ в стопку добора.\n|d:(Чем выше сложность тем сильнее эти карты.)|"
+QiannianShenqiSe:
+  Description: "{PlayerName} может взять не более {Limit} карт за ход.\n|d:({Count}\
+    \ карт осталось.)|"
+LoveGirlDamageReduce:
+  Description: Чувства {OwnerName:g} остаются безответными. Она получают на {Rate}%
+    меньше урона.
+PhoneBillSe:
+  Name: Счет за телефон
+KokoroXi:
+  Description: В конце своего хода {OwnerName} |Призывает| ауру лица.
+KokoroNu:
+  Name: Гнев
+  Description: В конце хода {OwnerName} все враги получают {Level} |Огневой Мощи|.
+Lunatic:
+  Name: Безумие
+FirepowerIsJustice:
+  Description: '|Огневая Мощь| {OwnerName:g} никогда не будет ниже чем у {PlayerName:g}.'
+RockHardAura:
+  Description: '{OwnerName} получает на {Level} меньше урона от незаблокированных
+    атак, если находиться под защитой Краеугольного Камня.'
+LouguanJianSe:
+  Description: После атаки {OwnerName} накладывает {Level} |Захвата| на цель.
+KokoroYou:
+  Name: Тревога
+  Description: В конце хода {OwnerName:g}, {PlayerName} получает {Level} |Слабости|.
+LongEscape:
+  Description: Сбегает, если здоровье опускается ниже {Level}.
+FlatPeach:
+  Description: При получении урона восполняет себе {Level} здоровья.
+FastAttack:
+  Description: Когда {PlayerName} разыгрывает свою первую карту за ход, {OwnerName}
+    наносит ей {Level} урона.
+PowerByDefense:
+  Description: '{OwnerName} получает {Level} |Огневой мощи|, когда разыгрывается карта
+    |Защиты|.'
+LongLight:
+  Description: '{OwnerName} сияет словно звезда! Карты |Статуса| становятся сильнее.'
