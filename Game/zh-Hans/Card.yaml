@@ -397,7 +397,7 @@ RedLaser:
   Name: 火热射线
   Description: |-
     造成 {Damage} 点伤害。
-    |超载 {Value2} ：|改为造成 {OverdriveDamage} 点伤害。
+    |超载 {Value2} ：|造成两次伤害。
   FlavorText: 对策冬日异变的招式之一。
 
 Potion:
@@ -463,9 +463,6 @@ HuojianSaoba:
 JinjiBlock:
   Name: 紧急防御
   Description: 获得 {Block} 点|格挡|。
-  UpgradedDescription: |-
-    获得 {Block} 点|格挡|。
-    |超载 {Value2} ：|改为获得 {OverdriveBlock} 点|格挡|。
 
 Alioth:
   Name: 玉衡星
@@ -506,6 +503,13 @@ ScryBlock:
   Description: 每次|占卜|时，{PlayerName}获得 {Value1} 点|格挡|。
   FlavorText: 「晚饭后我都会外出散步，看看谁家可以让我闯空门——我是说串门。」
 
+ShibaiChanwu:
+  Name: 失败产物
+  Description: |-
+    将 {Value1} 张|不稳定魔药|洗入弃牌堆。
+    将 {Value2} 张|暗影|洗入抽牌堆。
+  FlavorText: 即便是制作甜品都可能有风险。
+
 ShinningPotion:
   Name: 夜光蘑菇
   Description: |-
@@ -513,13 +517,6 @@ ShinningPotion:
     将一张|不稳定魔药|洗入抽牌堆。
     |超载 {Value2} ：|改为两张。
   FlavorText: 「博丽神社火锅宴」采购的「菌类拼盘」由魔理沙亲手栽培，经数道工序秘制，绝无食品安全问题。
-
-ShibaiChanwu:
-  Name: 失败产物
-  Description: |-
-    将 {Value1} 张|不稳定魔药|洗入弃牌堆。
-    将 {Value2} 张|暗影|洗入抽牌堆。
-  FlavorText: 即便是制作甜品都可能有风险。
 
 Yinhe:
   Name: 银河
@@ -604,7 +601,7 @@ ShootMoon:
   Name: 射月
   Description: |-
     造成 {Damage} 点伤害。
-    敌人的意图为攻击时，获得 {Value1} 层|充能|。
+    |超载 {Value2} ：|获得 {Value1} 层|闪避|。
 
 RunAway:
   Name: 逃离现场
@@ -645,6 +642,10 @@ EventHorizon:
   Description: |-
     进入|爆发|。
     下回合开始时死亡。
+  UpgradedDescription: |-
+    进入|爆发|。
+    获得 {Value1} 点|暂得火力|。
+    下回合开始时死亡。
 
 UpgradePotion:
   Name: 精研药水
@@ -663,7 +664,10 @@ RedGiantStar:
   Name: 红巨星陨落
   Description: |-
     造成 {Damage} 点伤害。
-    如果{PlayerName}处于|爆发|，将一张|火焰|加入手中。
+    |超载 {Value2} ：|将一张|火焰|加入手中。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    |超载 {Value2} ：|将一张|幻虹|加入手中。
   FlavorText: 「幸好对面不是芙兰」
 
 SolarSystem:
@@ -749,20 +753,9 @@ ChargingToMana:
   Description: 失去所有的|充能|，每失去一层：获得{Mana}，抽一张牌。
   FlavorText: 一开始用蓝色形态战斗不就好了吗。
 
-JungleMaster:
-  Name: 森林居民
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |战斗开始时|：获得 {Value1} 点|护盾|。
-
 MoguMaster:
   Name: 蘑菇专家
   Description: 从 {Value1} 张随机的|蘑菇|中选择 {Value2} 张加入手中。
-
-ManaJungle:
-  Name: 森林探险
-  Description: '|抽取时|：将 {Value1} 张|幻虹|加入手中，然后|放逐|本牌。'
-  FlavorText: 「天呀还有意外收获！」
 
 RedMogu:
   Name: 毒蝇伞
@@ -779,6 +772,17 @@ BlueMogu:
 PurpleMogu:
   Name: 紫蜡蘑
   Description: 恢复 {Value1} 点生命。
+
+JungleMaster:
+  Name: 森林居民
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |战斗开始时|：获得 {Value1} 点|护盾|。
+
+ManaJungle:
+  Name: 森林探险
+  Description: '|抽取时|：将 {Value1} 张|幻虹|加入手中，然后|放逐|本牌。'
+  FlavorText: 「天呀还有意外收获！」
 
 SakuyaAttackW:
   Name: 误导投掷
