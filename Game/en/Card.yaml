@@ -400,10 +400,12 @@ Dejavu:
   Name: 'Déjà Vu'
   Description: "Place up to {Value1:plural one='% card' other='% cards'} from the\
     \ hand on top of the draw pile.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    Add {Mana}."
+    Gain {Mana}."
 CleanRoom:
   Description: "Discard a card.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    Upgrade {Value1:plural one='% random card' other='% random cards'} in the hand."
+    |Upgrade| {Value1:plural one='% random card' other='% random cards'} in the hand\
+    \ this combat. If a |Throwing Knife| was discarded this way, instead |Upgrade|\
+    \ all cards in the hand this combat."
 
   Name: Room Cleaning
 CoolMaid:
@@ -416,18 +418,18 @@ SakuyaSnow:
     \ other='% Throwing Knives'}| to the hand."
   Name: Maid's Determination
 SakuyaWeak:
-  Description: "Apply {Value1} |Weak|.\nAdd {Mana}."
+  Description: "Apply {Value1} |Weak|.\nGain {Mana}."
   Name: Time Suppression
 DefenseDraw:
   Description: "Gain {Block} |Block|.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    |When drawn:| The cost of this card is reduced by {Mana}."
+    |When drawn:| This card costs {Mana} less this combat."
 
   Name: Moon Phase Rotation
 SakuyaTea:
   Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|Debut:| Gain\
-    \ {Value2} life. The cost of this card is reduced by {Mana}."
+    \ {Value2} life. This card costs {Mana} less to play."
   ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|d: Debut:\
-    \ Gain {Value2} life. The cost of this card is reduced by {Mana}.|"
+    \ Gain {Value2} life. This card costs {Mana} less to play.|"
   Name: Brewing Tea
 TimeAuraAttack:
   Description: "Deal {Damage} damage.\nGain {Value1} |Time Pulse|."
@@ -687,25 +689,25 @@ SilverBullet:
   Name: Silver Loom
 SilverJump:
   Description: "Apply {Value1} |Vulnerable|.\nAdd |{Value2:plural one='% Throwing\
-    \ Knife' other='% Throwing Knives'}| to the draw pile and the discard pile."
+    \ Knife' other='% Throwing Knives'}| to the draw and discard piles."
   Name: Knife of Damocles
 SakuyaDefenseRetain:
   Description: "Gain {Block} |Block|.\n|Block| is not lost at the start of {PlayerName}'s\
     \ next turn."
   Name: Guard Up
 SakuyaAttackX:
-  Description: '|For each <sprite="ManaSprite" name="1"> spent:| Deal {Damage} damage.'
+  Description: '|For each {Mana} spent:| Deal {Damage} damage.'
   Name: Silver Invasion
 PrepareParty:
   Description: "Gain {Block} |Block|.\nPlace a card from the hand on top of the draw\
     \ pile or gain {Mana}."
   Name: Preparing the Banquet
 LightSpeed:
-  Description: "Deal {Damage} damage.\nIf a card was discarded this turn, add {Mana}."
+  Description: "Deal {Damage} damage.\nIf a card was discarded this turn, gain {Mana}."
   Name: Light Speed Leapfrog
 PrivateVision:
   Description: "Deal {Damage} damage {Value1} times.\nGain |Reflection| equal to the\
-    \ unblocked damage."
+    \ amount of unblocked damage dealt this way."
   Name: Double Image
 FakeTimeline:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage to each enemy.\nGain {Value1}\
@@ -715,7 +717,7 @@ SakuyaShop:
   Description: "Gain {Mana}.\nDraw {Value1:plural one='% card' other='% cards'}."
   Name: Purchasing Materials
 SilverBlade:
-  Description: Whenever an |Attack| card concludes, gain {Value1} |Barrier|.
+  Description: Whenever an attack card is used, gain {Value1} |Barrier|.
   Name: Silver Another Dimension
 KnifeHell:
   Description: "Add |{Value1:plural one='% Throwing Knife' other='% Throwing Knives'}|\
@@ -730,27 +732,27 @@ ClockCorpse:
     cards can't be drawn outside of the draw step.
   Name: Clock Corpse
 StopTime:
-  Description: When {PlayerName}'s turn ends, lose all but {Value1} random unspent
-    mana |d:(instead of all of it)|.
+  Description: When {PlayerName}'s turn ends, keep {Value1} random unspent mana instead
+    of losing it.
   Name: Freezing Time
 LunaClock:
-  Description: End the turn. Then, take an |Extra Turn|. No attacks in that turn will
-    deal damage.
+  Description: End the turn. Then, take an |Extra Turn|. {PlayerName}'s attacks deal
+    no damage during that |Extra Turn|.
   Name: Luna Clock
 SpecialClock:
-  Description: At the start of {PlayerName}'s turn, choose up to one card from the
-    hand to discard. Draw an equal number of cards.
+  Description: At the start of {PlayerName}'s turn, discard up to 1 card from the
+    hand. Draw that many cards.
   Name: Maid's Trick
 DropToKnife:
-  Description: Discard each card without |Retain| from the hand. Add a |Throwing Knife|
-    to the hand for each card discarded this way.
+  Description: Discard each card without |Retain| from the hand. Add that many |Throwing
+    Knives| to the hand.
   Name: Fortress of Silver
 ExileMagic:
   Description: "|Exile| up to {Value1:plural one='% card' other='% cards'} in the\
-    \ hand. Add the same number of |Throwing Knives| to the hand."
+    \ hand. Add that many |Throwing Knives| to the hand."
   Name: Switcheroo
 SakuyaSleep:
-  Description: "Add a |Rainbow| to the hand.\nEnd the turn."
+  Description: "Add a |Rainbow| to the hand.\nEnd {PlayerName}'s turn."
   Name: Short Break
 SakuyaDraw:
   Description: '|When discarded:| Draw {Value1:plural one=''% card'' other=''% cards''}.'
@@ -762,25 +764,25 @@ MihuanJack:
   Description: At the start of {PlayerName}'s turn, gain {Value1} |Time Pulse|.
   Name: Jack of Time
 SakuyaClock:
-  Description: "Deal {Damage} damage.\n|Expel:| End the turn. Then, take an |Extra\
-    \ Turn|."
+  Description: "Deal {Damage} damage.\n|Expel:| |Exile| this card and end {PlayerName}'s\
+    \ turn. They take an |Extra Turn|."
   Name: Maid's Special Watch
 SakuyaGraze:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Graze|.\nWhen the draw pile\
     \ is shuffled, return this card to the hand instead of the draw pile."
   Name: Accidental Dodge
 LoyalMaid:
-  Description: "Gain {Shield} |Barrier|.\nAt the start of an |Extra turn|, return\
+  Description: "Gain {Shield} |Barrier|.\nAt the start of each |Extra Turn|, return\
     \ this card from the discard pile to the hand. It |temporarily costs| {Mana}."
   Name: Loyal Servant
 BackOfKnife:
   Description: "Remove all |Exiled Throwing Knives| from combat.\nThen, add a |Sharp\
-    \ Knife Express| to the hand. Increase that card's damage by {Value1} for each\
-    \ card removed this way."
+    \ Knife Express| to the hand. It deals {Value1} more damage for each card removed\
+    \ this way."
   Name: My Blade Returns
 LunaDial:
-  Description: "End the turn. Then, take an |Extra Turn|.\n|When drawn:| The cost\
-    \ of this card is reduced by {Mana}."
+  Description: "End the turn. Then, take an |Extra Turn|.\n|When drawn:| This card\
+    \ costs {Mana} less this combat."
   Name: Private Square
 SakuyaDio:
   Description: "Whenever a played |Throwing Knife| deals damage to an enemy, it applies\
