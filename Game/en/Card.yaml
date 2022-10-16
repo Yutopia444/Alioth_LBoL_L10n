@@ -457,7 +457,7 @@ GainKnife:
     \ Knives'}| to the hand.\nAt the start of {PlayerName}'s turn, add |{Value1:plural\
     \ one='% Throwing Knife' other='% Throwing Knives'}| to the hand."
 CirnoAttackU:
-  Description: "Deal {Damage} damage.\nApply |寒冷|."
+  Description: "Deal {Damage} damage."
 
   Name: Ice Shot
 CirnoBlockG:
@@ -785,10 +785,10 @@ LunaDial:
     \ costs {Mana} less this combat."
   Name: Private Square
 SakuyaDio:
-  Description: "Whenever a played |Throwing Knife| deals damage to an enemy, it applies\
-    \ {Value1} |Lock-On|.\nEnd the turn. Then, {PlayerName} takes an |Extra Turn|.\n\
-    During that turn, add |{Value2:plural one='% Throwing Knife' other='% Throwing\
-    \ Knives'}| to the hand instead of drawing cards during the draw step."
+  Description: "Played |Throwing Knives| apply {Value1} |Lock-On|.\nEnd the turn.\
+    \ Then, {PlayerName} takes an |Extra Turn|.\nDuring that turn, add |{Value2:plural\
+    \ one='% Throwing Knife' other='% Throwing Knives'}| to the hand instead of drawing\
+    \ cards during the draw step."
   Name: You Are Next
 TimeWalk:
   Description: "End the turn. Then, {PlayerName} takes an |Extra Turn|.\n|Time Walks|\
@@ -797,7 +797,8 @@ TimeWalk:
   ExtraDescription1: "|d: End the turn. Then, {PlayerName} takes an Extra Turn.|\n\
     |Time Walks| lose all effects for the rest of combat."
 BackToFuture:
-  Description: Swap the discard pile and the draw pile.
+  Description: "Swap the discard pile and the draw pile.\nDraw {Value1:plural one='%\
+    \ card' other='% cards'}."
   Name: Back to Future
 EvilMaid:
   Description: "Lose {Value1} life.\nDuring {PlayerName}'s next turn, all |Attacks|\
@@ -928,8 +929,8 @@ StarSky:
   Description: Gain {Value1} |Charge|.
 AccuracyLaser:
   Name: Directional Laser
-  Description: "Deal {Damage} damage.\n|When Retained:| This card costs {Mana} less\
-    \ this combat."
+  Description: "Deal {Damage} damage {Value1} times.\n|When Retained:| This card costs\
+    \ {Mana} less this combat."
 ShinningPotion:
   Name: Luminous Mushroom
   Description: "Gain {Block} Block.\nAdd an |Unstable Potion| to the draw pile.\n\
@@ -999,7 +1000,7 @@ MasterOfCollection:
     combat.
 HinaAttack:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
-    For each |Curse| card in the library, deal damage an additional time."
+    For each |Misfortune| card in the library, deal damage an additional time."
   Name: Misfortune's Wheel
 SatoriMemory:
   Description: "Choose one of {Value1} random cards from the discard pile to return\
@@ -1053,7 +1054,7 @@ BailianBlack:
   Name: Embrace the Darkness
 LeiguAttack:
   Description: "Deal {Damage} damage to each enemy.\nEnemies with |Barrier| or |Block|\
-    \ will be dealt damage twice."
+    \ are dealt damage twice instead."
   FlavorText: Hope your neighbor don't like this.
   Name: Bass of Taiko
 MeihongFire:
@@ -1245,7 +1246,7 @@ ToolMana:
   Description: "Add {Mana}.\n|Limited【{DeckCounter}】|"
   Name: Energy Drinks
 ToolMicai:
-  Description: "Gain {Value1} |Camouflage|.\n|Limited【{DeckCounter}】|"
+  Description: "Gain {Value1} |Optical Camouflage|.\n|Limited【{DeckCounter}】|"
   Name: Optical Camouflage Clothing
 ToolExile:
   Description: "|Exile| a card from the hand.\n|Limited【{DeckCounter}】|"
@@ -1291,7 +1292,7 @@ PoorAttack:
   Description: "Lose {Value1} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage} damage."
   Name: Fall into Poverty
 SnowGirlCard:
-  Description: Apply {Value1} |Hypothermia|. (Target loses life equal to their |Hypothermia|).
+  Description: Apply {Value1} |Frostbite|.
   Name: Yuki-Onna Visitation
 AliceAttack:
   Description: "Deal {Damage} damage.\nAdd {Mana}."
@@ -1307,7 +1308,8 @@ HuiyinRetain:
 XiaosanReflect:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|."
 YijiuAttack:
-  Description: "Deal {Damage} damage.\n|Expel:| Gain {Value1} |Flawless|."
+  Description: "Deal {Damage} damage.\n|Expel:| Gain {Value1} |Flawless| and |Exile|\
+    \ this card."
 HekaHellRain:
   Description: At the end of {PlayerName}'s turn, deal {Value1} damage to each enemy
     for each card played that turn.
@@ -1419,7 +1421,7 @@ Chunguang:
   Description: '|When drawn:| |Purify| {Value1}.'
   Name: Pure Radiance
 Payment:
-  Description: "Pay {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nThe scammer rabbit\
+  Description: "Pay {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nThe Rabbit Trickster\
     \ immediately leaves."
   Name: Funds Transfer
 FireUpBagualu:
@@ -1531,6 +1533,8 @@ PaluxiCurse:
   Name: Shrine Visit in the Dead of Night
 TodayYesterday:
   Name: Gensokyo, Past and Present
+  Description: "Whenever {PlayerName} grazes an attack, gain {Value1} |Firepower|.\n\
+    Gain {Value2} |Graze|."
 LigeluCard:
   Name: Glowing Night
 YuyukoSing:
