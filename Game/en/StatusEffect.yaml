@@ -40,41 +40,41 @@ TempSpirit:
     Until end of turn, gain {Level} |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    Until end of turn, has increased |Spirit|.
+    |Spirit| increased until end of turn.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 Spirit:
   Name: Spirit
   Description: |-
-    Has {Level} more |Spirit|.
+    Gain {Level} |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    Has increased |Spirit|.
+    |Spirit| increased.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 TempSpiritNegative:
-  Name: Temporary Dispirit
+  Name: Temporary Spirit Down
   Description: |-
-    Until end of turn, has {Level} less |Spirit|.
+    Until end of turn, lose {Level} |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    Until end of turn, has decreased |Spirit|.
+    Spirit decreased until end of turn.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
 SpiritNegative:
   Description: |-
-    Has {Level} less |Spirit|.
+    Lose {Level} |Spirit|.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
   Brief: |-
-    Has decreased |Spirit|.
+    |Spirit| decreased.
     (|Spirit| increases |Block| and |Barrier| gained from defending.)
 
-  Name: Dispirit
+  Name: Spirit Down
 Invincible:
-  Name: Flawless
-  Description: "{OwnerName} cannot be dealt more than 1 damage at a time {Duration:plural\
-    \ one='until end of turn' other='for the next % turns'}."
-  Brief: '{OwnerName} cannot be dealt more than 1 damage at a time.'
+  Name: Celestial Clothing
+  Description: "{OwnerName} will not take more than 1 damage {Duration:plural one='until\
+    \ end of turn' other='for the next % turns'}."
+  Brief: '{OwnerName} will not take more than 1 damage.'
 LearnAstrologySe:
   Name: Astrology Study
   Description: '{PlayerName}的回合结束时，如果手中没有|占星|，将一张|占星|加入手中。'
@@ -96,32 +96,31 @@ Vulnerable:
     \ one='until end of turn' other='for the next % turns'}."
   Brief: '{OwnerName} takes {Value}% more damage from attacks.'
 LockedOn:
-  Description: "{OwnerName} takes {Level} more damage from attacks.\nAt the start\
-    \ of each round, they lose 1 |Lock On|."
+  Description: "{OwnerName} takes {Level} more damage from attacks.\nLose 1 |Lock\
+    \ On| at the start of each turn."
   Name: Lock On
-  Brief: "{OwnerName} takes more damage from attacks.\nAt the start of each round,\
-    \ they lose 1 |Lock On|."
+  Brief: "{OwnerName} takes more damage from attacks.\nLose 1 |Lock On| at the start\
+    \ of each turn."
 Graze:
   Description: "{OwnerName} takes 0 damage from the next {Level:plural one='attack'\
-    \ other='% attacks'}.\nWhenever {OwnerName} is attacked, or at the start of their\
-    \ turn, they lose 1 |Graze|."
+    \ other='% attacks'}.\nLose 1 |Graze| when attacked or when turn starts."
   Name: Graze
-  Brief: "{OwnerName} takes 0 damage from attacks.\nWhenever attacked, or at the start\
-    \ of their turn, they lose 1 |Graze|."
+  Brief: "{OwnerName} takes 0 damage from attacks.\nLose 1 |Graze| when attacked or\
+    \ when turn starts."
 TurnStartDontLoseBlock:
-  Description: "{OwnerName} does not lose their |Block| at the start of their {Level:plural\
+  Description: "{OwnerName} does not lose |Block| at the start of the {Level:plural\
     \ one='next turn' other='next % turns'}."
   Name: Retain Block
-  Brief: '{OwnerName} does not lose |Block| at the start of their turn.'
+  Brief: '{OwnerName} does not lose |Block| at the start of each turn.'
 Electric:
-  Brief: 'Whenever attacked, they deal damage back to the attacker.'
+  Brief: 'When damaged, deal damage back to the attacker.'
   Name: Static Charge
-  Description: When damaged with an |Attack|, the attacker takes {Level} damage.
+  Description: When damaged, deal {level} damage back to the attacker.
 ExtraTurn:
   Name: Extra Turn
   Description: "{OwnerName} will take {Level:plural one='% extra turn' other='% extra\
     \ turns'} after this one."
-  Brief: '{OwnerName} will take one or more extra turns after this one.'
+  Brief: 'When {OwnerName}’s turn ends, take another turn.'
 LimitedDamage:
   Name: Damage Limiter
   Description: "{OwnerName} may only be dealt up to {Limit} damage each turn. Can\
@@ -129,19 +128,18 @@ LimitedDamage:
   Brief: '{OwnerName} may only be dealt a limited amount of damage each turn.'
 Amulet:
   Name: Amulet
-  Description: Negates the next {Level:plural one='|Debuff|' other='% |Debuffs|'}
-    that would be applied.
-  Brief: Negates incoming |Debuffs|.
+  Description: Negates the next {Level:plural one='debuff' other='% debuffs'}.
+  Brief: Negates incoming debuffs.
 TempElectric:
-  Name: Temporary Charge
-  Description: "When damaged with an |Attack|, the attacker takes {Level} damage.\n\
-    Removed at the start of {OwnerName}'s next turn."
-  Brief: "When attacked, they deal damage back to the attacker.\nRemoved at the start\
-    \ of {OwnerName}'s next turn."
+  Name: Static Charge
+  Description: "When damaged, deal {level} damage back to the attacker.\nRemoved at\
+    \ the start of {OwnerName}'s next turn."
+  Brief: "When damaged, deal damage back to the attacker.\nRemoved at the start of\
+    \ {OwnerName}'s next turn."
 ScarletDestiny:
-  Name: Scarlet Destiny
-  Description: "Whenever {Limit} cards are played, {OwnerName} ends {PlayerName}'s\
-    \ turn.\n|d:({Count} cards left.)|"
+  Name: Scarlet Fate
+  Description: "After {Limit} cards are played, {OwnerName} ends {PlayerName}'s turn.\n\
+    |d:({Count} cards left.)|"
 QiannianShenqiSe:
   Name: Pyramid-Shaped Puzzle
   Description: "{PlayerName} may only draw up to {Limit} cards each turn.\n|d:({Count}\
@@ -164,7 +162,7 @@ BoliPhantomSe:
     Persuasion Needles to the hand that |temporarily cost| {Mana}.
 SingleJiandaoSe:
   Name: Giant Scissor Blade
-  Description: Whenever {PlayerName} plays a card, they take {Level} damage.
+  Description: Whenever {PlayerName} plays a card, take {Level} damage.
 SakuraWandSe:
   Name: Winged Key
   Description: '{OwnerName} attacks twice as many times.'
@@ -198,14 +196,18 @@ TaijiLiangyiSe:
 Curiosity:
   Description: Whenever {PlayerName} plays an ability card, {OwnerName} gains {Level}
     |Firepower|.
+  Name: I’m Really Curious!
 JunkoPurify:
-  Description: Whenever {PlayerName} plays a card, |Cleanse| {Level}.
+  Description: Whenever {PlayerName} plays a card, |Purify| {Level}.
+  Name: Purifying Light
 MadokaBowSe:
   Description: "At the end of {OwnerName}'s turn, add {Level} random |Status| cards\
     \ to the draw pile.\n|d:(Adds more potent cards at higher difficulties.)|"
+  Name: Bow Which Shoots Light
 ShendengSe:
   Description: At the end of {OwnerName}'s turn, {PlayerName} randomly gains {Level}
     |Weak|, |Frail| or |Vulnerable|.
+  Name: Teapot With Long Spout
 MasterOfCollectionSe:
   Name: Master of Collection
   Description: Whenever a card is |Retained|, reduce its cost by {Level} random mana
@@ -215,9 +217,9 @@ UpgradePotionSe:
   Description: At the end of {PlayerName}'s turn, increase the damage dealt by |Unstable
     Potions| in the draw and discard piles by {Level}.
 InfinityGemsSe:
-  Description: At the start of {OwnerName}'s turn, |Exile| half of all cards in combat.
-    Cards are chosen randomly from among the hand, the draw pile and/or the discard
-    pile.
+  Description: At the start of {OwnerName}'s turn, |Exile| half of all cards in combat,
+    regardless of where they are located.
+  Name: Glove With Embedded Gems
 GainKnifeSe:
   Name: Circle of Knives
   Description: At the start of {PlayerName}'s turn, add {Level} |Throwing {Level:plural
@@ -285,21 +287,20 @@ GrimoireStudySe:
   Name: Dark Grimoire
 MaoyuBlock:
   Name: Fluffy
-  Description: The next time {OwnerName} is dealt attack damage, they gain {Level}
-    |Block|.
+  Description: '{OwnerName} gains {Level} |Block| when attacked.'
 GuangxueMicai:
   Name: Optical Camouflage
   Description: "{OwnerName} takes half as much damage from attacks {Duration:plural\
     \ one='until end of turn' other='for the next % turns'}."
   Brief: '{OwnerName} takes half as much damage from attacks.'
 NextTurnLoseHp:
-  Name: Life Leak
-  Description: At the start of {OwnerName}'s next turn, they lose {Level} life.
-  Brief: At the start of {OwnerName}'s next turn, they lose some life.
+  Name: Next Turn Life Loss
+  Description: At the start of {OwnerName}'s next turn, lose {Level} life.
+  Brief: At the start of {OwnerName}'s next turn, lose life.
 NextTurnGainBlock:
   Name: Next Turn Block
-  Description: At the start of {OwnerName}'s next turn, they gain {Level} |Block|.
-  Brief: At the start of {OwnerName}'s next turn, they gain some |Block|.
+  Description: At the start of {OwnerName}'s next turn, gain {Level} |Block|.
+  Brief: At the start of {OwnerName}'s next turn, gain some |Block|.
 CantDrawThisTurn:
   Name: Draw Negation
   Brief: Can't draw cards until end of turn.
@@ -307,127 +308,155 @@ CantDrawThisTurn:
 NoAttackDamageNextTurn:
   Description: Can't deal attack damage next turn.
   Brief: Can't deal attack damage next turn.
-  Name: Next Turn Chronocrush
+  Name: Next Turn Time Break
 NoAttackDamageThisTurn:
-  Description: Can't deal attack damage until end of turn.
-  Brief: Can't deal attack damage until end of turn.
-  Name: Chronocrush
+  Description: Can't deal attack damage this turn.
+  Brief: Can't deal attack damage this turn.
+  Name: Time Break
 TimeIsLimited:
   Name: Time Surge
   Description: Until the enemy's next turn, cards cost {Mana} more to play.
   Brief: Until the enemy's next turn, cards cost more mana to play.
 Servant:
   Name: Summon
-  Description: "When the summoner is defeated, all |Summons| are defeated too. \n\
-    Doesn't trigger defeat effects when defeated this way."
+  Description: "When the summoner is defeated, all summons are defeated too.\nDoes\
+    \ not trigger death effects."
 Reflect:
   Name: Reflection
-  Description: When damaged with an |Attack|, the attacker takes {Level} damage, then
-    they lose this status effect.
-  Brief: When attacked, they deal damage back to the attacker, then loses this effect.
+  Description: When damaged, deal {level} damage back to the attacker and remove this
+    effect.
+  Brief: When damaged, deal damage back to the attacker and remove this effect.
 NextTurnLoseRandomMana:
-  Brief: At the start of {OwnerName}'s next turn, they lose some mana at random.
-  Name: Mana Leak
-  Description: At the start of {OwnerName}'s next turn, they lose {Level} random mana.
+  Brief: At the start of {OwnerName}'s next turn, lose random points of mana.
+  Name: Next Turn Mana Loss
+  Description: At the start of {OwnerName}'s next turn, lose {Level} random points
+    of mana.
 NextAttackUp:
   Name: Attack Boost
-  Description: The next attack card played deals {Level} more damage.
-  Brief: The next attack card played deals increased damage.
+  Description: The next |Attack| card played deals {Level} more damage.
+  Brief: The next |Attack| card played deals increased damage.
 CantDrawNextTurn:
   Name: Next Turn Draw Negation
-  Description: Can't draw cards next turn, after its draw step.
-  Brief: Can't draw cards next turn, after its draw step.
+  Description: Can't draw cards next turn, after its draw phase.
+  Brief: Can't draw cards next turn, after its draw phase.
 DroneBlock:
-  Name: Drone Phalanx
-  Description: At the end of {OwnerName}'s turn, they gain {Level} |Block|.
-  Brief: At the end of {OwnerName}'s turn, they gain some |Block|.
+  Name: Defense Matrix
+  Description: At the end of {OwnerName}'s turn, gain {Level} |Block|.
+  Brief: At the end of {OwnerName}'s turn, gain some |Block|.
 DeathExplodeNotCount:
   Name: Revenge Bullet
-  Description: "When {OwnerName} is defeated, it deals {Level} damage to {PlayerName}.\n\
-    If {OwnerName} is detonated, it deals twice that much damage instead."
+  Description: "Deal {Level} damage to {PlayerName} when {OwnerName} is defeated.\n\
+    Deal twice as much damage if detonated."
 DeathExplodeCount:
   Name: Revenge Bullet
   Description: "When {OwnerName} is defeated, it deals {Level} damage to {PlayerName}.\n\
-    After {Count} more {Count:plural one='turn' other='turns'}, it detonates, dealing\
-    \ twice that much damage instead."
+    Will detonate after {Count} more {Count:plural one='turn' other='turns'}, dealing\
+    \ twice that much damage."
 DeathVulnerable:
-  Name: Diseased
+  Name: Deathly Pale
   Description: When {OwnerName} is defeated, {PlayerName} gains {Level} |Vulnerable|.
 Drowning:
   Name: Drowning
-  Description: At the end of {OwnerName}'s turn, they take {Level} damage.
+  Description: '{OwnerName} takes {Level} damage at the end of each turn.'
 LoveGirlDamageReduce:
-  Description: "{OwnerName}'s feelings remain unrequited. They take {Rate}% less damage."
+  Description: "{OwnerName}'s feelings remain unrequited. She takes {Rate}% less damage."
+  Name: Lingering Regrets
 LoveGirlDamageIncrease:
-  Description: "{OwnerName}'s feelings are requited. They take {Rate}% more damage."
+  Description: "{OwnerName}'s feelings are requited. She takes {Rate}% more damage."
+  Name: Fluttering Heart
 PhoneBillSe:
   Name: Phone Bill
+  Description: "{OwnerName} collects {Level} <sprite=\"Point\" name=\"Gold”> for every\
+    \ phone call.\nWill drop {Count} <sprite=\"Point\" name=\"Gold”> when defeated."
 AbsorbSpirit:
-  Description: At the end of {OwnerName}'s turn, they gain {Level} |Spirit|.
+  Description: At the end of {OwnerName}'s turn, gain {Level} |Spirit|.
+  Name: Blue Orb
 Lunatic:
-  Name: Lunacy
+  Name: Madness
+  Description: "Rays of lunacy shine over everyone. Driven to madness, {OwnerName}’s\
+    \ actions are amplified.\nGain {Mana} at the start of {PlayerName}’s turn."
 WindGirl:
   Name: Wind God Girl
-  Description: At the end of {OwnerName}'s turn, they gain |Graze| until they have
-    {Level} |Graze|.
+  Description: "{OwnerName}'s |Graze| is replenished to {Level} at the end of her\
+    \ turn."
 FirepowerIsJustice:
   Description: "{OwnerName}'s |Firepower| will never be lower than {PlayerName}'s."
+  Name: Might Makes Right!
 PrivateSquare:
-  Description: "Whenever {Limit} cards are played, {OwnerName} deals {Level} damage\
-    \ to {PlayerName}.\n{Count} cards left."
+  Description: "For every {Limit} cards played, {OwnerName} deals {Level} damage to\
+    \ {PlayerName}.\n{Count} cards left."
+  Name: Silver Lock
 Emi:
-  Name: EMP'ed
+  Name: Electromagnetic Interference
   Description: "{OwnerName} can't act {Duration:plural one='until end of turn' other='for\
     \ the next % turns'}."
 RockHard:
   Description: '{OwnerName} takes {Level} less damage from unblocked attacks.'
+  Name: Rock Hard!
 AbsorbPower:
-  Description: At the end of {OwnerName}'s turn, they gain {Level} |Firepower|.
+  Description: At the end of {OwnerName}'s turn, gain {Level} |Firepower|.
+  Name: Red Orb
 RinAura:
-  Description: When {OwnerName} summons a spirit, it deals {Level} more damage with
-    its |Revenge Bullet|.
+  Description: Vengeful Spirits summoned by {OwnerName} deal {Level} more damage with
+    revenge bullets.
+  Name: Blazing Fires of Hell
 Fengyin:
   Description: "{PlayerName} can't play attack cards {Duration:plural one='until end\
     \ of turn' other='for the next % turns'}."
+  Name: Sealed
 TurnStartPurify:
   Name: Next Turn Cleanse
-  Description: "At the start of {PlayerName}'s next turn, |Cleanse| {Level}.\nRemove\
+  Description: "At the start of {PlayerName}'s next turn, |Purify| {Level}.\nRemove\
     \ this effect at the end of the round."
 LouguanJianSe:
-  Description: After {OwnerName} attacks, they apply {Level} |Lock On| to their target(s).
+  Description: '{OwnerName}’s attacks apply {Level} |Lock On| to the target.'
+  Name: Roukanken
 RockHardAura:
-  Description: While {OwnerName} is protected by a keystone, they take {Level} less
-    damage from unblocked attacks.
+  Description: '{OwnerName} is protected by a keystone, taking {Level} less damage
+    from unblocked attacks.'
+  Name: Keystone Protection
 KokoroXi:
-  Description: At the end of {OwnerName}'s turn, they |Summon| a face aura.
+  Description: At the end of {OwnerName}'s turn, summon a Menreiki.
+  Name: Joy
 KokoroNu:
   Description: At the end of {OwnerName}'s turn, all enemies gain {Level} |Firepower|.
+  Name: Anger
 KokoroYou:
   Description: At the end of {OwnerName}'s turn, {PlayerName} gains {Level} |Weak|.
+  Name: Sorrow
 LongEscape:
-  Description: When {OwnerName}'s life is less than {Level}, they run away.
+  Description: '{OwnerName} will leave the battle when her life is less than {Level}.'
+  Name: Ease Up
 FlatPeach:
-  Description: Whenever {OwnerName} is dealt damage, they gain {Level} life.
+  Description: Whenever {OwnerName} is dealt damage, she gains {Level} life.
+  Name: Heavenly Peach
 Sleep:
-  Description: "At the end of {OwnerName}'s turn, they gain |Barrier| until they have\
-    \ {Level} |Barrier|.\nWakes up when dealt damage or after {Count} turns."
+  Description: "{OwnerName}’s |Barrier| is replenished to {Level} at the end of her\
+    \ turn.\nWakes up when dealt damage or after {Count} turns."
+  Name: Devourer of Dreams
 YuyukoDeath:
-  Description: "At the end of {OwnerName}'s turn, they lose {Level} life.\n{OwnerName}\
+  Description: "At the end of {OwnerName}'s turn, lose {Level} life.\n{OwnerName}\
     \ can't gain life."
+  Name: Law of Mortality
 PowerByDefense:
   Description: Whenever a defense card is played, {OwnerName} gains {Level} |Firepower|.
+  Name: Unfaltering Shield
 MirrorImage:
-  Description: A reflection of {OwnerName}...
+  Description: A reflection of {OwnerName}.
+  Name: Mirror Image
 DreamServant:
-  Description: "{OwnerName} can't lose life."
+  Description: "{OwnerName} cannot be harmed."
+  Name: Dream Inhabitant
 LongLight:
-  Description: '{OwnerName} shines like a star! Their |Status| cards are more powerful.'
+  Description: '{OwnerName} shines like a star! Her |Status| cards are more powerful.'
+  Name: Shining Tripod
 Vampire:
-  Description: Whenever {OwnerName} deals unblocked damage, they gain that much life.
-    Scary!
+  Description: '{OwnerName} gains life equal to unblocked damage dealt. Scary!'
+  Name: Vampire
 FastAttack:
-  Description: When {PlayerName} plays their first card each turn, {OwnerName} deals
-    {Level} damage to them.
+  Description: After playing the first card of a turn, {OwnerName} deals {Level} damage
+    to {PlayerName}.
+  Name: Apex Speedster
 HuanxiangBlockSe:
   Description: Whenever a card is |Exiled|, {PlayerName} gains {Level} |Block|.
   Brief: Whenever a card is |Exiled|, {PlayerName} gains some |Block|.
@@ -495,3 +524,37 @@ KokoroDanceSe:
     to them.
 TiangouOrderSe:
   Description: When {OwnerName} is attacked, {PlayerName} gains {Level} |Block|
+Interview:
+  Name: Ongoing Interview
+  Description: '{OwnerName} is conducting on-site interviews of the incident.'
+RinSummon:
+  Name: Revival of Dead Spirits
+  Description: "{OwnerName} can revive {Level} Vengeful Spirits.\nOne is added every\
+    \ {Limit} turns."
+InterviewDone:
+  Name: Completed Interview
+  Description: "{OwnerName} has pieced together the truth of the incident!\nShe will\
+    \ distribute a special issue of the Bunbunmaru Newspaper."
+EnemyEnergy:
+  Description: '{OwnerName} gains <sprite="Point" name=”Power”> equal to damage taken.
+    Used to unleash spell cards.'
+  Name: Energy
+EnemyEnergyNegative:
+  Description: "{OwnerName} has expended <sprite=\"Point\" name=\"Power”>.\nThis should\
+    \ not be shown in gameplay."
+  Name: Energy Expenditure
+LunaticTorch:
+  Description: "{OwnerName}’s torch shines with a peculiar light, all enemies are\
+    \ driven to |Madness|.\nGain {Mana} at the start of {PlayerName}’s turn."
+  Name: Lunatic Torch
+DoremyLevel:
+  Description: The deeper into the dream, the stronger {OwnerName}’s attacks get.
+  Name: Dream Level
+DreamMaster:
+  Name: Creator of Dreams
+  Description: '{OwnerName} is the ruler of dreams.'
+SijiZui:
+  Name: Judgement of Right and Wrong
+  Description: '{PlayerName}’s sins: Minor.'
+  ExtraDescription: '{PlayerName}’s sins: Average.'
+  ExtraDescription2: '{PlayerName}’s sins: Major.'
