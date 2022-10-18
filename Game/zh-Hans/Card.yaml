@@ -402,13 +402,6 @@ Potion:
   Description: '|进入手中时|：获得 {Mana} ，对一个随机敌人造成 {Damage} 点伤害，|放逐|本牌。'
   FlavorText: 警告！该魔药随时可能爆炸！
 
-MarisaDraw:
-  Name: 随机应变
-  Description: |-
-    抽 {Value1} 张牌。
-    如果{PlayerName}处于|爆发|，获得{Mana}。
-  FlavorText: 人生最悲哀的莫过于牌打完了，但法力没花完。
-
 SatelliteIllusion:
   Name: 卫星幻觉
   Description: |-
@@ -421,6 +414,13 @@ DropBook:
     获得 {Block} 点|格挡|。
     将 {Value1} 张|占星|加入手中。
   FlavorText: 「我对传统魔法没有兴趣，请不要再来了！」
+
+MarisaDraw:
+  Name: 随机应变
+  Description: |-
+    抽 {Value1} 张牌。
+    如果{PlayerName}处于|爆发|，获得{Mana}。
+  FlavorText: 人生最悲哀的莫过于牌打完了，但法力没花完。
 
 DarkSatellite:
   Name: 至暗卫星
@@ -447,8 +447,8 @@ WinterWarm:
 AsteroidBelt:
   Name: 小行星带
   Description: |-
-    造成 {Damage} 点伤害。
-    如果本场战斗打出的上一张牌包含红色：获得 {Value1} 层|充能|。
+    造成 {Damage} 点伤害 {Value1} 次。
+    如果本场战斗打出的上一张牌包含红色：获得 {Value2} 层|充能|。
   FlavorText: 请勿在扣动扳机时直视八卦炉。
 
 HuojianSaoba:
@@ -564,12 +564,6 @@ MarisaEat:
     获得 {Value1} 层|专注|。
     |d:初见：恢复 {Value2} 点生命值。|
 
-FireUpBagualu:
-  Name: 点燃炉火
-  Description: |-
-    下一张攻击牌造成的伤害加 {Value1} 点。
-    获得 {Value2} 层|充能|。
-
 BurstDraw:
   Name: 速度对决
   Description: 进入|爆发|时抽 {Value1} 张牌。
@@ -593,6 +587,12 @@ ThrowBigStar:
     对所有敌人造成 {Damage} 点伤害。
     |超载 {Value2} ：|造成两次伤害。
   FlavorText: 「欢迎收听废线铁路电台。本月，来自魔理沙·雾雨演唱的『ThrowingSta』再度登上幻想乡流行音乐榜单的首位……」
+
+FireUpBagualu:
+  Name: 点燃炉火
+  Description: |-
+    获得 {Value1} 层|充能|。
+    获得 {Value2} 点|火力|，此效果受到|爆发|加成。
 
 ShootMoon:
   Name: 射月
@@ -627,6 +627,7 @@ WizardStudy:
 ExilePotion:
   Name: 废物利用
   Description: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|洗入弃牌堆。
+  UpgradedDescription: 选择抽牌堆和手中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|洗入弃牌堆。
 
 PotionDefense:
   Name: 伴星飞行
@@ -683,9 +684,9 @@ HuoliQuankai:
   Name: 火力全开
   Description: |-
     |爆发|造成三倍伤害。
-    进入|爆发|。
+    获得 {Value1} 层|充能|。
   UpgradedDescription: |-
-    |爆发|造成三倍伤害，进入|爆发|时，改为获得{Mana}。
+    |爆发|造成三倍伤害。
     进入|爆发|。
   FlavorText: 启动后备隐藏能源！
 
