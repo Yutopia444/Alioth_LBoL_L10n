@@ -108,8 +108,8 @@ StartGame:
     \ in some Acts\nBan some \"Friendly Encounters\"."
   NotReadyHint: "This character is not ready yet,\nPlease look forward to game updates."
   IsLockHint: "This character will be available\nat Unlock Level {0}"
-  Puzzle: Puzzle
-  Puzzles: "{0:plural one='% |puzzle|' other='% |puzzles|'}"
+  Puzzle: Requests
+  Puzzles: "{0:plural one='% |request|' other='% |requests|'}"
   DifficultyHint: If you haven't played "Slay the Spire", it is recommended to play
     Easy difficulty first.
   JadeBoxLock: Jade Box Mode will be available at Unlock Level 10.
@@ -142,7 +142,7 @@ Museum:
     \ the card illustration you like to display at the card detail panel."
 Setting:
   Main: General
-  Preference: Preferences
+  Preference: Gameplay
   Key: Controls
   Resolution: Resolution
   RefreshRate: Refresh Rate
@@ -436,6 +436,10 @@ Cards:
   IsUpgraded: Upgraded
   Size:  {0:plural one='% card' other='% cards'}
   Show: Hover or right click the cards to see details
+  UpgradeDialog: ''
+  Remove: Remove {0} cards from the library.
+  UpgradeTips: Choose a card to Upgrade
+  RemoveTips: Choose a card to Remove
 ErrorChat:
   CardCostChanged: The cost of specified card has changed.
   UsUsedThisBattle: I've used spell this battle already
@@ -449,8 +453,8 @@ ErrorChat:
   CardNotUsable: Cannot use this card.
 Explain:
   Title: Note
-  LoseShinning: You always have access to the exclusive cards of the character you
-    are controlling, even if you lose the initial exhibit.
+  LoseShinning: You can always find cards exclusive to the character you're playing
+    as, even if you lose their |Legendary Exhibit|.
   RollCard: "|Discoverable Cards through Card Rewards|\n\n You can only find cards\
     \ in Card Rewards if they meet the following criteria:\n 1: The card's mana cost\
     \ can be paid using the mana in the |mana base|.\n 2: If it's a Unique card, it\
