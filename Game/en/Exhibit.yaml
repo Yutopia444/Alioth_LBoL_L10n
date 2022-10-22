@@ -1,5 +1,5 @@
 LongjingYu:
-  Description: At the start of combat, add {Mana}.
+  Description: At the start of combat, gain {Mana}.
   Name: Jewel from the Dragon's Neck
 FoyushiBo:
   Description: Whenever a defense card is played, gain {Value1} random mana.
@@ -12,83 +12,77 @@ YanZianbei:
   Name: Swallow's Cowrie Shell
 PenglaiYuzhi:
   Description: |-
-    Whenever {PlayerName} would add mana, they add that much <sprite="ManaSprite" name="P"> instead.
-    You doesn't lose unspent mana as turns end.
+    Whenever {PlayerName} would gain an amount of mana, they gain that much <sprite="ManaSprite" name="P"> instead.
+    Unspent mana isn't lost at the end of each turn.
   Name: Jeweled Branch of Hourai
 ReimuR:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Reimu|.
+    Adds {BaseMana} to the |mana base| and allows to find cards exclusive to |Reimu|.
     Whenever an enemy is defeated, {PlayerName} gains {Value1} |Firepower| and {Value2} life.
   Name: Bloodthirsty Yin-Yang Orb
 ReimuW:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Reimu|.
+    Adds {BaseMana} to the |mana base| and allows to find cards exclusive to |Reimu|.
     At the end of each turn, if {PlayerName} has unspent mana, gain {Value1} |Barrier|.
   Name: Hakurei Purification Rod
 MarisaB:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Marisa|.
+    Adds {BaseMana} to your |mana base| and allows to find cards exclusive to |Marisa|.
     At the start of combat, add an |Occult| to the hand.
   Name: Dark Grimoire
 MarisaR:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Marisa|.
-    At the start of {PlayerName}'s turn, they gain {Value1} |Charge|.
+    Adds {BaseMana} to the |mana base| and allows to find cards exclusive to |Marisa|.
+    Whenever {PlayerName} plays an attack card, gain {Value1} |Charge|.
   Name: Mini-Hakkero
 SakuyaW:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Sakuya|.
+    Adds {BaseMana} to the |mana base| and allows to find cards exclusive to |Sakuya|.
     At the start of combat, add {Value1:plural one='% |Throwing Knife+|' other='% |Throwing Knives+|'} to the hand.
   Name: Spare Throwing Knives
 SakuyaU:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Allows you to find cards exclusive to |Sakuya|.
-    During your first {Value2} turns of each combat, draw {Value1} more card during your draw step.
+    Adds {BaseMana} to the |mana base| and allows to find cards exclusive to |Sakuya|.
+    During {PlayerName}'s first {Value2:plural one='turn' other='% turns'} each combat, draw {Value1} more {Value1:plural one='card' other='cards'} during the draw step.
   Name: Magic poker
 CirnoU:
-  Description: "Adds {BaseMana} to your |mana base|."
-  FlavorText: '|d:Cirno''s cards are currently in development. Please check back in
-    a future update!|'
+  Description: "Adds {BaseMana} to the mana base and allows to find cards exclusive\
+    \ to |Cirno|.\nBlue attack cards also apply |Cold| to their target(s)."
+  FlavorText: '{Work in progress...)'
 
   Name: Cirno's ice crystal
 CirnoG:
-  Description: "Adds {BaseMana} to your |mana base|."
-  FlavorText: '|d:Cirno''s cards are currently in development. Please check back in
-    a future update!|'
+  Description: "Adds {BaseMana} to the mana base and allows to find cards exclusive\
+    \ to |Cirno|."
+  FlavorText: '(Work in progress...)'
 
   Name: Fairy's green branch
 KoishiG:
-  Description: "Adds {BaseMana} to your |mana base|."
-  FlavorText: '|d:Koishi''s cards are currently in development. Please check back
-    in a future update!|'
+  Description: "Adds {BaseMana} to the mana base and allows to find cards exclusive\
+    \ to |Koishi|."
+  FlavorText: '(Work in progress...)'
 
   Name: The thorny rose
 KoishiB:
-  Description: "Adds {BaseMana} to your |mana base|."
-  FlavorText: '|d:Koishi''s cards are currently in development. Please check back
-    in a future update!|'
+  Description: "Adds {BaseMana} to the mana base and allows to find cards exclusive\
+    \ to |Koishi|."
+  FlavorText: '(Work in progress...)'
 
   Name: Imaginary friend
 PiaoliangPanzi:
   Description: |-
     Adds {BaseMana} to your |mana base|.
-    At the start of combat, |Upgrade| {Value1} random cards in your starting hand until end of combat.
+    After {PlayerName}'s first draw step each combat, upgrade {Value1} random cards in the hand until end of combat.
   Name: Beautiful Plate
 DatiangouMaifan:
   Description: |-
     Adds {BaseMana} to your |mana base|.
-    After every {Value1} combats, {PlayerName} gains {Value2} <sprite="Point" name="Power">.
+    After every {Value1:plural one='combat,' other='% combats,'} {PlayerName} gains {Value2} <sprite="Point" name="Power">.
   Name: Great Tengu's Barley Rice
 Bingzhilin:
   Description: |-
-    Adds {BaseMana} to your |mana base|.
-    Whenever an |Ability| card is played, {Value1} cards in the hand |temporarily cost| {Mana} less to cast.
+    Adds {BaseMana} to the mana base.
+    Whenever an ability card is played, {Value1} cards in the hand |temporarily cost| {Mana} less to cast.
   Name: Ice Scale
 ShijieSuipian:
   Description: |-
@@ -606,8 +600,8 @@ FengshouGuolan:
   Description: "Adds {BaseMana} to your |mana base|.\nWhenever a card is added to\
     \ the library, gain {Value1} <sprite=\"Point\" name=\"Power\">."
 ClassicWunvfu:
-  Description: "Adds {BaseMana} to your |mana base|.\nAt the beginning of {PlayerName}'s\
-    \ turn, gain {Value1} |Block| for each upgraded card in the hand."
+  Description: "Adds {BaseMana} to the mana base.\nAt the start of {PlayerName}'s\
+    \ turn, gain {Value1} |Block| for each |Upgraded| card in the hand."
 TianwenWangyuanjing:
   Description: "Adds {BaseMana} to your |mana base|.\nAt the beginning of {PlayerName}'s\
     \ first turn, add {Value1} |Astrology| to the hand."
