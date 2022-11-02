@@ -112,6 +112,9 @@ Servant:
   Name: Призыв
 RinSummon:
   Name: Воскрешение духов
+  Description: "{OwnerName} может оживить {Level:plural one='% Мстительного духа'\
+    \ other='% Мстительных духов'}.\nВоскрешает на одного больше после каждого {Limit}\
+    \ хода."
 MaoyuBlock:
   Description: '{OwnerName} получает {Level} |Защиты| при получении урона от атак.'
   Name: Пушистость
@@ -177,9 +180,11 @@ TurnStartPurify:
 RockHard:
   Description: '{OwnerName} получает на {Level} меньше урона от незаблокированных
     атак.'
+  Name: Крепкий орешек!
 YuyukoDeath:
   Description: "В конце хода {OwnerName} теряет {Level} здоровья.\n{OwnerName} не\
     \ может восполнять здоровье."
+  Name: Закон смертности
 AbsorbSpirit:
   Description: '{OwnerName} получает {Level} |Духовности| в конце своего хода.'
   Name: Синяя сфера
@@ -206,15 +211,16 @@ AbsorbPower:
   Description: '{OwnerName} получает {Level} |Огневой Мощи| в конце своего хода.'
   Name: Красная сфера
 WindGirl:
-  Description: '{OwnerName} получает |Уклонение| в конце хода до тех пор, пока у неё
-    не будет {Level} |Уклонения|.'
+  Description: '{OwnerName} восполняет |Уворот| до {Level} в конце своего хода.'
   Name: Девушка-богиня ветра
 RinAura:
   Description: Вызванные {OwnerName} духи увеличивают урон своего эффекта смерти на
     {Level}.
+  Name: Пылающий огонь
 Fengyin:
   Description: '{PlayerName} не может разыгрывать карты |Атаки| Длительность: {Duration}
     хода.'
+  Name: Печать
 Poison:
   Name: Отравление
   Description: В начале хода {OwnerName} потеряйте {Level} здоровья, и один уровень
@@ -258,9 +264,8 @@ TimeIsLimited:
   Description: До следующего хода врагов карты стоят на {Mana} больше.
   Brief: До следующего хода врагов карты стоят дороже.
 Sleep:
-  Description: "{OwnerName} получает |Барьер| в конце своего хода до тех пор, пока\
-    \ не наберётся {Level} |Барьера|.\nПросыпается при получении урона или через {Count}\
-    \ ходов."
+  Description: "{OwnerName} восполняет свой |Барьер| до {Level} в конце своего хода.\n\
+    Просыпается при получении урона или по истечению {Count} ходов."
   Name: Пожиратель снов
 DreamServant:
   Description: '{OwnerName} не может потерять здоровье.'
@@ -272,7 +277,7 @@ ShendengSe:
 MadokaBowSe:
   Description: "В конце хода {OwnerName}, положите {Level} случайных карт |Статуса|\
     \ в стопку добора.\n|d:(Чем выше сложность тем сильнее эти карты.)|"
-  Name: Длинный светящийся лук
+  Name: Лук стреляющий светом
 QiannianShenqiSe:
   Description: "{PlayerName} может взять не более {Limit} карт за ход.\n|d:({Count}\
     \ карт осталось.)|"
@@ -287,34 +292,44 @@ PhoneBillSe:
     \ телефонный звонок.\nПри повержении выронит {Count} <sprite=\"Point\" name=\"\
     Gold”>."
 KokoroXi:
-  Description: В конце своего хода {OwnerName} |Призывает| ауру лица.
+  Description: В конце своего хода {OwnerName} |Призывает| Менрейки.
+  Name: Счастье
 KokoroNu:
   Name: Гнев
-  Description: В конце хода {OwnerName} все враги получают {Level} |Огневой Мощи|.
+  Description: В конце хода {OwnerName:g} все враги получают {Level} |Огневой Мощи|.
 Lunatic:
   Name: Безумие
+  Description: "Магический свет сияет над всеми. Доведенные до безумия, действия {OwnerName}\
+    \ усиливаются.\nПолучите {Mana} в начале хода {PlayerName}."
 FirepowerIsJustice:
   Description: '|Огневая Мощь| {OwnerName:g} никогда не будет ниже чем у {PlayerName:g}.'
+  Name: Право сильного!
 RockHardAura:
   Description: '{OwnerName} получает на {Level} меньше урона от незаблокированных
     атак, если находиться под защитой Краеугольного Камня.'
+  Name: Защита краеугольного камня
 LouguanJianSe:
-  Description: После атаки {OwnerName} накладывает {Level} |Захвата| на цель.
+  Description: Атаки {OwnerName:g} накладывают {Level} |Захвата| на цель.
+  Name: Роканкен
 KokoroYou:
-  Name: Тревога
+  Name: Печаль
   Description: В конце хода {OwnerName:g}, {PlayerName} получает {Level} |Слабости|.
 LongEscape:
   Description: Сбегает, если здоровье опускается ниже {Level}.
+  Name: Расслабленность
 FlatPeach:
-  Description: При получении урона восполняет себе {Level} здоровья.
+  Description: При получении урона {OwnerName} восполняет себе {Level} здоровья.
+  Name: Райский персик
 FastAttack:
   Description: Когда {PlayerName} разыгрывает свою первую карту за ход, {OwnerName}
     наносит ей {Level} урона.
 PowerByDefense:
   Description: '{OwnerName} получает {Level} |Огневой мощи|, когда разыгрывается карта
     |Защиты|.'
+  Name: Непоколебимая защита
 LongLight:
   Description: '{OwnerName} сияет словно звезда! Карты |Статуса| становятся сильнее.'
+  Name: Сияющая тренога
 InfinityGemsSe:
   Description: В начале хода {OwnerName:g} половина карт |Изгоняется|. Карты выбираются
     случайным образом из руки, стопки добора и стопки сброса.
@@ -414,6 +429,7 @@ TaijiLiangyiSe:
   Name: Рождение Инь-Янь
 DoremyLevel:
   Description: Чем глубже сон, тем сильнее атаки {OwnerName:g}.
+  Name: Степень сна
 DreamMaster:
   Description: '{OwnerName} - владыка снов.'
   Name: Творец снов
@@ -442,5 +458,22 @@ InterviewDone:
     \ выпуск Газеты Бумбуммару."
 Interview:
   Name: Продолжительное интервью
+  Description: '{OwnerName} проводит опросы на месте инцидента.'
 UseCardToLoseGame:
   Description: Умирает после того, как сыграет {Count} карт.
+SijiZui:
+  Name: Суждение о правильном и неправильном
+  Description: 'Грехи {PlayerName:g}: Незначительные.'
+  ExtraDescription: 'Грехи {PlayerName}: Средние.'
+  ExtraDescription2: 'Грехи {PlayerName}: Серьезные.'
+MirrorImage:
+  Description: Отражение {OwnerName}.
+  Name: Зеркальное отражение
+EnemyEnergy:
+  Name: Энергия
+  Description: '{OwnerName} получает <sprite="Point" name=”Power”> равной полученному
+    урону. Используется для активаций Спеллкарты.'
+EnemyEnergyNegative:
+  Description: "{OwnerName} расширяет <sprite=\"Point\" name=\"Power”>.\nЭто не должно\
+    \ отображаться в игровом процессе."
+  Name: Затрата энергии
