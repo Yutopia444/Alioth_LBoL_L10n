@@ -82,6 +82,9 @@ MainMenu:
   DeleteNo: Nevermind
   EarlyAccess: EA Notice
 
+  PlayedTime: Played Time
+  StartDate: Start Date
+  LastPlayed: Last Played
 StartGame:
   StartMoney: Starting Money
   StartHp: Starting Life
@@ -221,6 +224,7 @@ Setting:
   SingleEnemyAutoSelect: Auto Select Single
   SingleEnemyAutoSelectDescription: Whether to use a card without selecting target
     if the card need a target enemy while there's only one enemy.
+  AnimatingEnvironment: Animating Environment
 System:
   ReenterStation: Restart Level
   ResumeGame: Resume Game
@@ -257,14 +261,24 @@ Debut:
   - I'll leave the house in your care, Eirin
   - Remember to be back by sunrise~
 Shop:
-  BoughtQuotes: []
-  CantAffordQuotes: []
-  WelcomeQuotes: []
-  Chats: []
+  BoughtQuotes:
+  - Thank you for your purchase.
+  CantAffordQuotes:
+  - I'm not a charity y'know.
+  - You can't afford this.
+  - You don't have enough money.
+  WelcomeQuotes:
+  - Welcome!
+  - Have a look around.
+  Chats:
+  - Over here, dear customer~
+  - Fair prices all around! Are you sure you don't need anything?
   Skip: Skip
   Remove: Remove Card
   RemoveSoldOut: Sold-out
   Close: Close
+  RemoveTooltip: Remove a card from your library and increase the price each time|
+    {0} money|
 Reward:
   Headers:
   - Excellent!
@@ -284,7 +298,10 @@ CardDetail:
 
   SwitchCardStyle: Switch card style
 Gap:
-  Headers: []
+  Headers:
+  - What should I do now~
+  - So tired...…
+  HeaderInitial: Time to take a break~
 Rarity:
   Common: Common
   Uncommon: Uncommon
@@ -414,6 +431,8 @@ Tooltip:
     Character: ' Unique'
   FinalStage:
     Name: Final Act
+  BriefHint:
+    Name: Brief Hint
 MessageDialog:
   GameAbandonWarning: Abandon your current run?
   ReturnToMainMenu: Return to the main menu?
@@ -433,6 +452,15 @@ MessageDialog:
   CorruptedGameRunSaveData: Game run is corrupted
   CorruptedSaveData: Save data is corrupted
   CannotReenterStation: Unable to enter the level
+  InvalidProfileName: Invalid Profile Name
+  SkipDialog: Skip Dialog?
+  CloseBattleHint: Close Battle Hint Confirm
+  GameRunSaveDiscardedSubText: Player profile is not affected by this
+  CannotRestoreEndedGameRun: Cannot Restore Ended Game Run
+  ResetKeyBindingsWarning: Reset Key Bindings Confirm
+  CannotStartGameRunWithoutProfile: 'Cannot Start Game: Run Without Player Profile'
+  AlreadyInGameRun: Already In Game Run
+  ResetHintWarning: Reset Hint Confirm
 BattleHint:
   Prev: Prev
   Next: Next
@@ -456,6 +484,10 @@ ErrorChat:
   LowMana: I don't have enough mana.
   LowPower: I don't have enough power.
   CardNotUsable: Cannot use this card.
+  NoTarget: No legal target
+  CardDrunk: I'm not drunk!
+  CardFengyin: I'm Sealed
+  TargetAlreadyDead: Target Already Dead
 Explain:
   Title: Note
   LoseShinning: You can always find cards exclusive to the character you're playing
@@ -552,6 +584,15 @@ TopInfo:
   Artist: 'Arrangement:'
 GameResult:
   Score: Score
+  Unlock: New Item Unlock
+  Deprecated: ??? (Deprecated)
+  ClickToFold: Click to Fold
+  ClickToOpen: Click To Open
+  NormalEnd: But the Jeweled Branch of Hourai is still missing
+  DifficultyFactor: Difficulty
+  TrueEndFail: The real culprit was found, but the Jeweled Branch of Hourai was not
+    retrieved
+  FailReason: 'Fail Reason:'
 JadeBoxPage:
   JadeBoxDaily: Daily Jade Box
   JadeBoxHint: "Accept Eirin's special gift, Jade box comes with powerful and weird\
