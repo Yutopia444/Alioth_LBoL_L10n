@@ -117,10 +117,10 @@ HuanxiangBlock:
 JiejieAttack:
   Description: |-
     Deal {Damage} damage.
-    Then, if {PlayerName} has |Barrier|, deal damage equal to the amount of |Barrier| they have. ({ShieldDamage})
+    Deal additional damage equal to {PlayerName}'s |Barrier|. ({ShieldDamage})
   NonbattleDescription: |-
     Deal {Damage} damage.
-    Then, if {PlayerName} has |Barrier|, deal damage equal to the amount of |Barrier| they have.
+    Deal additional damage equal to {PlayerName}'s |Barrier|.
   Name: Barrier Slam
 ReimuWeiyan:
   Description: Apply {Value1} |Weak| to each enemy.
@@ -234,7 +234,7 @@ TaijiLiangyi:
 Wunvyu:
   Description: |-
     Deal {Damage} damage {Value1} times.
-    |While in hand:| Whenever a card is drawn, except during the draw step, increase this card's damage by {Value2} this combat.
+    |While in hand|: Whenever a card is drawn, except during the draw step, increase this card's damage by {Value2} this combat.
 
   Name: Most Evil Surprise Miko Orbs
 KuosanJiejie:
@@ -700,7 +700,7 @@ SakuyaAttackX:
   Name: Silver Invasion
 PrepareParty:
   Description: "Gain {Block} |Block|.\nPlace a card from the hand on top of the draw\
-    \ pile or gain {Mana}."
+    \ pile. If you didn't, gain {Mana} instead."
   Name: Preparing the Banquet
 LightSpeed:
   Description: "Deal {Damage} damage.\nIf a card was discarded this turn, gain {Mana}."
@@ -785,8 +785,8 @@ LunaDial:
     \ costs {Mana} less this combat."
   Name: Private Square
 SakuyaDio:
-  Description: "Played |Throwing Knives| apply {Value1} |Lock-On|.\nEnd the turn.\
-    \ Then, {PlayerName} takes an |Extra Turn|.\nDuring that turn, add |{Value2:plural\
+  Description: "|Throwing Knives| also apply {Value1} |Lock On| when played.\nEnd\
+    \ the turn. Then, {PlayerName} takes an |Extra Turn|.\nDuring that turn, add |{Value2:plural\
     \ one='% Throwing Knife' other='% Throwing Knives'}| to the hand instead of drawing\
     \ cards during the draw step."
   Name: You Are Next
@@ -797,8 +797,8 @@ TimeWalk:
   ExtraDescription1: "|d: End the turn. Then, {PlayerName} takes an Extra Turn.|\n\
     |Time Walks| lose all effects for the rest of combat."
 BackToFuture:
-  Description: "Swap the discard pile and the draw pile.\nDraw {Value1:plural one='%\
-    \ card' other='% cards'}."
+  Description: "Swap the draw and discard piles.\nDraw {Value1:plural one='% card'\
+    \ other='% cards'}."
   Name: Back to Future
 EvilMaid:
   Description: "Lose {Value1} life.\nDuring {PlayerName}'s next turn, all |Attacks|\
@@ -827,8 +827,9 @@ PerfectServant:
   UpgradedDescription: "|For each <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"> spent:| At the start of {PlayerName}'s next turn, each card in the\
     \ hand |temporarily costs| {Value1} random mana less.\n|For each <sprite=\"ManaSprite\"\
-    \ name=\"U\"> spent:| During {PlayerName}'s next turn, draw {Value1} more {Value1:plural\
-    \ one='card' other='cards'} during the draw step and gain {Mana}."
+    \ name=\"U\"> spent:| At the start of {PlayerName}'s next turn, draw {Value1}\
+    \ more {Value1:plural one='card' other='cards'} during the draw step and gain\
+    \ {Mana}."
 ExtraTurnEveryone:
   Description: "End the turn. Then, take an |Extra Turn|.\nEnemies also take an |Extra\
     \ Turn| the next time it is their turn."
@@ -933,7 +934,7 @@ AccuracyLaser:
 ShinningPotion:
   Name: Luminous Mushroom
   Description: "Gain {Block} Block.\nAdd an |Unstable Potion| to the draw pile.\n\
-    |Overdrive {Value2}:| Add two of that card instead."
+    |Overdrive {Value2}:| Add two instead."
 MarisaEat:
   Name: Mushroom Feast
   Description: "Gain {Value1} |Concentration|.\n|Debut:| Gain {Value2} life."
@@ -967,11 +968,11 @@ StarlightTaifeng:
 StarlightTaifengSummoner:
   Name: Convergence Starlight
   Description: "Add a |Starlight Typhoon| to the draw pile.\n|For each {Mana} spent:|\
-    \ The conjured card deals damage an additional time.\n|For each <sprite=\"ManaSprite\"\
-    \ name=\"R\"> spent:| Increase the conjured card's damage by {Value1}."
+    \ The added card deals damage an additional time.\n|For each <sprite=\"ManaSprite\"\
+    \ name=\"R\"> spent:| Increase the added card's damage by {Value1}."
   UpgradedDescription: "Add a |Starlight Typhoon+| to the draw pile.\n|For each {Mana}\
-    \ spent:| The conjured card deals damage an additional time.\n|For each <sprite=\"\
-    ManaSprite\" name=\"R\"> spent:| Increase the conjured card's damage by {Value1}."
+    \ spent:| The added card deals damage an additional time.\n|For each <sprite=\"\
+    ManaSprite\" name=\"R\"> spent:| Increase the added card's damage by {Value1}."
 FinalSpark:
   Name: Final Spark
   Description: Deal {Damage} damage to each enemy.
@@ -1002,7 +1003,7 @@ MasterOfCollection:
     combat.
 HinaAttack:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
-    For each |Misfortune| card in the library, deal damage an additional time."
+    For each |Misfortune| in the library, deal that damage an additional time."
   Name: Misfortune's Wheel
 SatoriMemory:
   Description: "Choose one of {Value1} random cards from the discard pile to return\
@@ -1015,9 +1016,9 @@ GrimoireStudy:
     \ turn, add a |Rainbow| to the hand."
   Name: Studying Grimoire
   FlavorText: "\"Let me check the monster's weakness...\""
-  UpgradedDescription: "Lose {Value1} life and add a |Rainbow| to the hand.\n|For\
-    \ each <sprite=\"ManaSprite\" name=\"1\"> spent:| This effect lasts for an additional\
-    \ turn. At the end of {PlayerName}'s turn, add a |Rainbow| to the hand."
+  UpgradedDescription: "Lose {Value1} life.\nAdd a |Rainbow| to the hand.\n|For each\
+    \ <sprite=\"ManaSprite\" name=\"1\"> spent:| Gain the following effect for an\
+    \ additional turn: At the end of {PlayerName}'s turn, add a |Rainbow| to the hand."
 DoremyDuplicate:
   Description: Choose a card in the hand and add {Value1:plural one='% |copy|' other='%
     |copies|'} to the hand.
@@ -1056,7 +1057,7 @@ BailianBlack:
   Name: Embrace the Darkness
 LeiguAttack:
   Description: "Deal {Damage} damage to each enemy.\nEnemies with |Barrier| or |Block|\
-    \ are dealt damage twice instead."
+    \ are dealt that damage twice."
   FlavorText: Hope your neighbor don't like this.
   Name: Bass of Taiko
 MeihongFire:
@@ -1161,8 +1162,8 @@ TannvCard:
     cards |temporarily cost| {Mana}.
   Name: Turning the Tables
 MogongAttack:
-  Description: "Deal {Damage} damage.\n|While in hand:| Whenever an |Attack| card\
-    \ is played, this card's damage becomes that card's damage."
+  Description: "Deal {Damage} damage.\n|While in hand:| Whenever an Attack card is\
+    \ played, this card's damage becomes that card's damage."
   Name: Haniwa Front
 TianziMana:
   Description: Gain {Mana}.
@@ -1276,8 +1277,8 @@ XiaodingKill:
   Description: If the target has {Value1} or less life, defeat it.
   Name: The Ritual of Exorcism
 SijiCard:
-  Description: Choose a card in the hand. If it's a |Misfortune| or |Status| card,
-    |Exile| it. Otherwise, it costs {Mana} less this combat.
+  Description: Choose a card in the hand. If it's a |Misfortune| or Status card, |Exile|
+    it. Otherwise, it costs {Mana} less this combat and can be |Retained| once.
   Name: Guilty or Not Guilty
 KokoroDance:
   Description: Whenever an enemy gains a debuff, deal {Value1} damage to it.
@@ -1430,8 +1431,8 @@ Payment:
     \ immediately leaves."
   Name: Funds Transfer
 FireUpBagualu:
-  Description: "The next attack card played deals {Value1} more damage.\nGain {Value2}\
-    \ |Charge|."
+  Description: "Gain {Value1} |Charge|.\nGain {Value2} |Firepower|. This effect is\
+    \ affected by |Burst|."
   Name: Light the Furnace
 ShootMoon:
   Description: "Deal {Damage} damage.\n|Overdrive {Value2}:| Gain {Value1} |Graze|."
