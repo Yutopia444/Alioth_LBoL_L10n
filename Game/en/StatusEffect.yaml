@@ -236,9 +236,11 @@ EvilMaidSe:
   Name: Devil's Maid
   Description: "{OwnerName}'s attacks deal double damage {Level:plural one='until\
     \ end of turn' other='for the next % turns'}."
-  Brief: All |Attacks| deal double damage for turns.
+  Brief: The next several turns deal double damage.
 MihuanJackSe:
   Name: Jack of Time
+  Description: At the start of {PlayerName}'s turn, gain {Level} |Time Pulse|.
+  Brief: At the start of {PlayerName}'s turn, gain|Time Pulse|.
 PotionJungleSe:
   Name: Fluorescent Forest
   Description: At the end of {PlayerName}'s turn, add {Level:plural one='|% Unstable
@@ -256,6 +258,11 @@ ChargingPotionSe:
   Brief: Whenever an |Unstable Potion| triggers, gain |Charging|.
 SakuyaKillerSe:
   Name: Ripper in the Fog
+  Brief: At the end of {PlayerName}'s turn and whenever an enemy is defeated, conjure
+    |Throwing Knives| into the draw pile.
+  Description: At the end of {PlayerName}'s turn and whenever an enemy is defeated,
+    conjure |{Level:plural one='% Throwing Knife' other='% Throwing Knives'}| into
+    the draw pile.
 JiangshenSe:
   Brief: Whenever a card is added during combat, |Upgrade| it.
   Description: Whenever a card is added during combat, |Upgrade| it.
@@ -276,8 +283,13 @@ EvilTuiZhiSe:
   Name: Evil Exterminate
 SilverBladeSe:
   Name: Silver Another Dimension
+  Brief: After an attack card takes effect, gain |Block|.
 SpecialClockSe:
   Name: Special Stopwatch
+  Description: At the start of {PlayerName}'s turn, select {Level:plural one='a card'
+    other='up to % cards'} and discard them, draw as much as discarded.
+  Brief: At the start of {PlayerName}'s turn, select some card, discard them and draw
+    as much as discarded.
 BurstDrawSe:
   Name: Speed Duel
   Description: When entering |Burst|, draw {Level:plural one='% card' other='% cards'}.
@@ -286,26 +298,58 @@ DangerousMagicianSe:
   Name: Dangerous Illusionist
 SeeFengshuiSe:
   Name: Manipulating Feng-Shui
+  Description: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a |Defense|\
+    \ card is sent to the discard pile while |scrying|, gain {Block} |Block|."
+  Brief: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a |Defense|\
+    \ card is sent to the discard pile while |scrying|, gain |Block|."
 YonglinCardSe:
   Name: The Sage's Blindfold
+  Brief: When {PlayerName} plays their first card each turn, conjure copies of that
+    card into the hand. They |temporarily cost| {Mana} and have |Exile| and |Ethereal|.
+  Description: When {PlayerName} plays their first card each turn, conjure {Level:plural
+    one='a copy' other='% copies'} of that card into the hand. {Level:plural one='It
+    |temporarily costs|' other='They |temporarily cost|' {Mana} and {Level:plural
+    one='has' other='have'} |Exile| and |Ethereal|.
 ShannvAbilitySe:
   Name: Unknown Fever
   Description: At the start of {PlayerName}'s turn, apply {Level} |Poison| to each
     enemy.
+  Brief: At the start of {PlayerName}'s turn, apply |Poison| to each enemy.
 BailianBlackSe:
   Name: Embrace the Darkness
+  Brief: All non-attack, non-ability cards are reduced by {Mana} and gain |Exile|.
+  Description: All non-attack, non-ability cards are reduced by {Mana} and gain |Exile|.
 HuiyeManaSe:
   Name: The Tale of the Bamboo Cutter
+  Description: At the start of {PlayerName}'s turn, gain {Count} random mana; increase
+    by {Level} every turn.
+  Brief: At the start of {PlayerName}'s turn, gain random mana; increase every turn.
 ModuoluoFireSe:
   Name: Fire of Ena
+  Brief: Whenever <sprite="ManaSprite" name="P"> is spent, deal damage to each enemy.
+  Description: Whenever <sprite="ManaSprite" name="P"> is spent, deal {Level} damage
+    to each enemy.
 RinDrawSe:
   Name: Spirit Assignment
+  Description: Whenever a |Status| card is drawn, draw {Level:plural one='% card'
+    other='% cards'}.
+  Brief: Whenever a |Status| card is drawn, draw cards.
 MeihongFireSe:
   Name: Indiscriminately Ignited
+  Description: At the end of {PlayerName}'s turn and whenever a |Curse| or |Status|
+    card is drawn, deal {Level} damage to each enemy.
+  Brief: At the end of {PlayerName}'s turn and whenever a |Curse| or |Status| card
+    is drawn, deal damage to each enemy.
 MeihongPowerSe:
   Name: The Immortal Flame
+  Brief: "At the start of {PlayerName}'s turn, gain |Firepower|\nAt the end of combat,\
+    \ if {PlayerName}'s life is less than half, gains life."
+  Description: "At the start of {PlayerName}'s turn, gain {Level} |Firepower|\nAt\
+    \ the end of combat, if {PlayerName}'s life is less than half, gains {Heal} life."
 GrimoireStudySe:
   Name: Dark Grimoire
+  Description: At the end of {OwnerName}'s turn, conjure a |Rainbow| into the hand.
+  Brief: At the end of {OwnerName}'s turn, conjure a |Rainbow| into the hand.
 MaoyuBlock:
   Name: Fluffy
   Description: '{OwnerName} gains {Level} |Block| when attacked.'
@@ -530,6 +574,8 @@ TimeAuraSe:
 PerfectServantUSe:
   Description: At the start of {OwnerName}'s next turn, they add {Level} {Mana} and
     draw {Level:plural one='% card' other='% cards'}.
+  Brief: At the start of the next turn of {OwnerName}, gain some {Mana}, draw extra
+    cards.
 PerfectServantWSe:
   Description: After {OwnerName}'s next draw step, all cards in the hand |temporarily
     cost| {Anys} less to play.
@@ -537,6 +583,8 @@ PerfectServantWSe:
     cost| {Level} random mana less to play.
   ExtraDescription2: After {OwnerName}'s next draw step, all cards in the hand |temporarily
     cost| {Level} random mana less to play.
+  Brief: After drawing card at the start of the next turn, each hand |temp reduce
+    cost|.
 Poison:
   Description: At the start of {OwnerName}'s turn, they lose {Level} life, then loses
     1 |Poison|.
@@ -559,7 +607,7 @@ KokoroDanceSe:
   Name: Dance of the Empty-Hearted Masks
 TiangouOrderSe:
   Description: When {OwnerName} is attacked, {PlayerName} gains {Level} |Block|
-  Name: Order of the Great Tengu
+  Name: Great Tengu's Order
   Brief: Whenever the {OwnerName} is attacked, {PlayerName} gains |Block|.
 Interview:
   Name: Ongoing Interview
@@ -607,10 +655,39 @@ TodayYesterdaySe:
   Name: Gensokyo, Past and Present
 UseCardToLoseGame:
   Brief: Next Turn Lose
+  Name: Short Life Expectancy
 AmuletForCard:
   Name: Exorcism
   Description: Resist the next {Level} status cards you receive (exile them|).
   Brief: Resist the next status cards you receive (exile them|).
 EvilMaidDoubleAttack:
   Name: Devil's Maid
-  Description: "{PlayerName}'s all |Attacks| deal double damage for {Duration} turn."
+  Description: "Double the attack damage of {PlayerName} (remain: {Duration} turns)."
+  Brief: Double the attack damage of {PlayerName}.
+DrawPhaseAddKnife:
+  Name: Turn Start Gain |Knives| Instead of Draw Cards
+  Description: Skip the card drawing phase of turn starting, add {Limit} |Knives|
+    to hand instead.
+  Brief: Skip the card drawing phase of turn starting, add |Knives| to hand instead.
+HekaHellRainSe:
+  Name: Hell Rain
+  Brief: For each card played, deal damage to each enemy at the end of turn.
+  Description: For each card played, deal {Level} damage to each enemy at the end
+    of turn. (Currently {Count})
+KnifeWithLockedOn:
+  Description: The |Knives| you actively played apply {Level} |Locked-On|.
+  Brief: The |Knives| you actively played apply |Locked-On|.
+ZhenmiaowanAttackSe:
+  Description: Cost of skill card decrease by {Mana} in this turn.
+  Brief: Cost of skill card decrease by {Mana} in this turn.
+  ExtraDescription: Cost of skill card and defense card decrease by {Mana} in this
+    turn.
+  ExtraDescription2: Cost of skill card and defense card decrease by {Mana} in this
+    turn.
+  Name: Descendant of Issun-Boushi
+StopTimeSe:
+  Name: Freezing Time
+  Brief: When {PlayerName} ends their turn, they lose all but some random unspent
+    mana |d:(instead of all of it)|.
+  Description: When {PlayerName} ends their turn, they lose all but {Level} random
+    unspent mana |d:(instead of all of it)|.
