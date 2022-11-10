@@ -81,7 +81,8 @@ LearnAstrologySe:
     other=''less than %''} |Astrology| in the hand, conjure {Level:plural one=''a
     |Astrology| into'' other=''|Astrologies|''} into the hand{Level:plural one=''.''
     other='' until there are %.''}'
-  Brief: '{PlayerName}的回合结束时，如果手中没有|占星|，将一张|占星|加入手中。'
+  Brief: 'At the start of {PlayerName}''s turn, if there''s less than this many |Astrology|
+    in the hand, conjure them into the hand until there are that many.'
 
 Fragil:
   Name: Frail
@@ -220,6 +221,8 @@ UpgradePotionSe:
   Name: Refine Potion
   Description: At the end of {PlayerName}'s turn, increase the damage dealt by |Unstable
     Potions| in the draw and discard piles by {Level}.
+  Brief: At the end of {PlayerName}'s turn, the damage of |Unstable Potion| in the
+    draw pile and discard pile increases.
 InfinityGemsSe:
   Description: At the start of {OwnerName}'s turn, |Exile| half of all cards in combat,
     regardless of where they are located.
@@ -228,6 +231,7 @@ GainKnifeSe:
   Name: Circle of Knives
   Description: At the start of {PlayerName}'s turn, add {Level} |Throwing {Level:plural
     one='Knife' other='Knives'}| to the hand.
+  Brief: At the start of {PlayerName}'s turn, conjure |Throwing Knives| into the hand.
 EvilMaidSe:
   Name: Devil's Maid
   Description: "{OwnerName}'s attacks deal double damage {Level:plural one='until\
@@ -239,10 +243,17 @@ PotionJungleSe:
   Name: Fluorescent Forest
   Description: At the end of {PlayerName}'s turn, add {Level:plural one='|% Unstable
     Potion|' other='|% Unstable Potions|'} to the discard pile.
+  Brief: At the end of {PlayerName}'s turn, conjure several |Unstable Potions| into
+    the discard pile.
 PotionDefenseSe:
   Name: Shooting Echo
+  Brief: In this turn, whenver an |Unstable Potion| is triggered, gain |Barrier|.
+  Description: In this turn, whenver an |Unstable Potion| is triggered, gain {Level}
+    |Barrier|.
 ChargingPotionSe:
   Name: Radioactive Elements
+  Description: Whenever an |Unstable Potion| triggers, gain {Level} |Charging|.
+  Brief: Whenever an |Unstable Potion| triggers, gain |Charging|.
 SakuyaKillerSe:
   Name: Ripper in the Fog
 JiangshenSe:
@@ -509,12 +520,13 @@ ChillPotionSe:
     to its target.
 WizardStudySe:
   Description: The first card played each turn costs {Mana} more to play.
+  Brief: The first card used in every turn cost more.
 TimeAuraSe:
   Description: "At the end of {PlayerName}'s turn, deal {Level} damage to all enemies.\n\
     Lose a level for each damaged enemy."
   Name: Time Pulse
-  Brief: "At the end of {PlayerName}'s turn, deal damage to all enemies.\nLose a level\
-    \ for each damaged enemy."
+  Brief: "At the end of {PlayerName}'s turn, deal damage to each enemy.\nDecrease\
+    \ level whenever damaged an enemy."
 PerfectServantUSe:
   Description: At the start of {OwnerName}'s next turn, they add {Level} {Mana} and
     draw {Level:plural one='% card' other='% cards'}.
