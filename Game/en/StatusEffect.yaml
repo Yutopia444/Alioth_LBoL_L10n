@@ -77,7 +77,10 @@ Invincible:
   Brief: '{OwnerName} will not lose more than 1 life at once.'
 LearnAstrologySe:
   Name: Astrology Study
-  Description: '{PlayerName}的回合结束时，如果手中没有|占星|，将一张|占星|加入手中。'
+  Description: 'At the start of {PlayerName}''s turn, if there are {Level:plural one=''no''
+    other=''less than %''} |Astrology| in the hand, conjure {Level:plural one=''a
+    |Astrology| into'' other=''|Astrologies|''} into the hand{Level:plural one=''.''
+    other='' until there are %.''}'
   Brief: '{PlayerName}的回合结束时，如果手中没有|占星|，将一张|占星|加入手中。'
 
 Fragil:
@@ -267,6 +270,7 @@ SpecialClockSe:
 BurstDrawSe:
   Name: Speed Duel
   Description: When entering |Burst|, draw {Level:plural one='% card' other='% cards'}.
+  Brief: Draw several cards when enter |Burst|.
 DangerousMagicianSe:
   Name: Dangerous Illusionist
 SeeFengshuiSe:
@@ -491,6 +495,7 @@ Concentration:
 BurstUpgrade:
   Description: Increases the damage multiplier while in |Burst|.
   Name: Go All Out
+  Brief: Increase the |Burst| damage multiplier.
 SolarSystemSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Charge|.
   Name: Solar System
