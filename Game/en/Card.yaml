@@ -1065,8 +1065,8 @@ MeihongFire:
     card is drawn, deal {Value1} damage to each enemy.
   Name: Indiscriminately Ignited
 TiangouOrder:
-  Description: "Deal {Damage} damage.\nWhen the target is attacked, {PlayerName} gains\
-    \ {Value1} |Block|."
+  Description: "Deal {Damage} damage.\nWhenever the target is attacked, {PlayerName}\
+    \ gains {Value1} |Block|."
   Name: Order of the Great Tengu
 SeeFengshui:
   Description: "At the start of {PlayerName}'s turn, |Scry| {Value1}.\nWhenever a\
@@ -1214,7 +1214,7 @@ ToolUpgrade:
   Description: "|Upgrade| each card in the hand this combat.\n|Limited【{DeckCounter}】|"
   Name: Floppy Disk
 ToolDroneBlock:
-  Description: "Gain {Value1} |Drone Phalanx|.\n|Limited【{DeckCounter}】|"
+  Description: "Gain {Value1} |Defense Matrix|.\n|Limited【{DeckCounter}】|"
   Name: Mechanical Core
 NewsPositive:
   Description: "Gain {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limited【{DeckCounter}】|"
@@ -1226,7 +1226,7 @@ NewsTidbit:
   Description: "Gain {Value1} |Lock-On|.\n|Limited【{DeckCounter}】|"
   Name: Gossip
 EmpCard:
-  Description: "Deal {Damage} |Attack| damage.\nIf the target is |无人机|, it cannot\
+  Description: "Deal {Damage} |Attack| damage.\nIf the target is a |drone|, it cannot\
     \ act for {Value1} turns.\n|Limited【{DeckCounter}】|"
   Name: EMP Device
 SweetPoison:
@@ -1519,14 +1519,24 @@ Nightmare:
     draw pile, and discard pile, {PlayerName} loses the game.
 AyaNewsSakuyaSp:
   Name: Aya News - Sakuya Special
+  Description: "|While in hand:| At the end of {PlayerName}'s turn, lose {Value1}\
+    \ |Spirit|."
 AyaNewsCirnoSp:
   Name: Aya News - Cirno Special
+  Description: "|While in hand:| At the end of {PlayerName}'s turn, lose {Value1}\
+    \ |Spirit|."
 AyaNewsKoishiSp:
   Name: Aya News - Koishi Special
+  Description: "|While in hand:| At the end of {PlayerName}'s turn, lose {Value1}\
+    \ |Spirit|."
 AyaNewsReimuSp:
   Name: Aya News - Reimu Special
+  Description: "|While in hand:| At the end of {PlayerName}'s turn, lose {Value1}\
+    \ |Spirit|."
 AyaNewsMarisaSp:
   Name: Aya News - Marisa Special
+  Description: "|While in hand:| At the end of {PlayerName}'s turn, lose {Value1}\
+    \ |Spirit|."
 ReverseJiejie:
   Name: Reverse Boundary
   Description: Whenever {PlayerName} loses a buff, gain {Value1} |Barrier|.
@@ -1598,7 +1608,7 @@ HatateNews:
   Name: Kakashi Spirit News
 ZoufangSnake:
   Description: "Lose {Value1} life.\nChoose one of {Value2} random neutral rare ability\
-    \ cards to add to the hand. It temporarily costs {Mana}."
+    \ cards to add to the hand. It |temporarily costs| {Mana}."
 ZoufangWater:
   Description: "Deal {Damage}  damage {Value1} times.\nThis damage is increased by\
     \ {Value2} for each ability card played this combat. (Total {Additional Damage})"
