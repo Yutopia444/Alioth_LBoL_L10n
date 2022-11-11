@@ -348,9 +348,9 @@ MeihongFireSe:
 MeihongPowerSe:
   Name: The Immortal Flame
   Brief: "At the start of {PlayerName}'s turn, gain |Firepower|\nAt the end of combat,\
-    \ if {PlayerName}'s life is less than half, gains life."
+    \ if {PlayerName}'s life is less than half, gain life."
   Description: "At the start of {PlayerName}'s turn, gain {Level} |Firepower|\nAt\
-    \ the end of combat, if {PlayerName}'s life is less than half, gains {Heal} life."
+    \ the end of combat, if {PlayerName}'s life is less than half, gain {Heal} life."
 GrimoireStudySe:
   Name: Dark Grimoire
   Description: At the end of {OwnerName}'s turn, conjure a |Rainbow| into the hand.
@@ -563,12 +563,17 @@ SolarSystemSe:
 ScryBlockSe:
   Description: Whenever {PlayerName} |scries|, they gain {Level} |Block|.
   Name: Premeditation
+  Brief: Whenever {PlayerName} |scries|, they gain some |Block|.
 PoisonPotionSe:
   Description: Whenever an |Unstable Potion| is used, it also applies {Level} |Poison|
     to its target.
+  Brief: Whenever an |Unstable Potion| is used, it also applies some |Poison| to its
+    target.
 ChillPotionSe:
   Description: Whenever an |Unstable Potion| is used, it also applies {Level} |Frostbite|
     to its target.
+  Brief: Whenever an |Unstable Potion| is used, it also applies some |Frostbite| to
+    its target.
 WizardStudySe:
   Description: The first card played each turn costs {Mana} more to play.
   Brief: The first card used in every turn cost more.
@@ -596,6 +601,7 @@ Poison:
   Description: At the start of {OwnerName}'s turn, they lose {Level} life, then lose
     1 |Poison|.
   Name: Poison
+  Brief: At the start of {OwnerName}'s turn, they lose some life, then lose some |Poison|.
 MoonWorldSe:
   Description: At the start of {PlayerName}'s turn, |Purify| {Level} card{Level:plural
     one='' other='s'}, removing their colored mana cost component.
@@ -657,11 +663,18 @@ SenluoJiejieSe:
   Name: Aggregate Border
 YachieDefendSe:
   Name: Tortoiseshell Hell
+  Description: "Prevent the next {Level:plural one='% time' other='% times'} {OwnerName}\
+    \ would lose life.\nIf the source is an enemy, that enemy loses that much life\
+    \ instead."
 TodayYesterdaySe:
   Name: Gensokyo, Past and Present
+  Brief: Whenever {OwnerName} grazes an attack, they gain some |Firepower|.
+  Description: Whenever {OwnerName} grazes an attack, they gain {Level} |Firepower|.
 UseCardToLoseGame:
   Brief: Next Turn Lose
   Name: Short Life Expectancy
+  Description: Lose the game after playing {Count:plural one='% more card' other='%
+    more cards'}.
 AmuletForCard:
   Name: Exorcism
   Description: Resist the next {Level} status cards you receive (|Exile| them).
@@ -700,3 +713,6 @@ StopTimeSe:
 LoseSpiritSe:
   Description: At the start of {PlayerName}'s turn, lose {Level} |Spirit|.
   Brief: At the start of {PlayerName}'s turn, lose some |Spirit|.
+NextTurnLoseGame:
+  Description: Lose the game next turn.
+  Brief: Lose the game next turn.
