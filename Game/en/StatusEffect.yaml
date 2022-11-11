@@ -143,7 +143,7 @@ TempElectric:
 ScarletDestiny:
   Name: Scarlet Fate
   Description: "After {Limit} cards are played, {OwnerName} ends {PlayerName}'s turn.\n\
-    |d:({Count} cards left.)|"
+    |d:({Count:plural one='% card left' other='% cards left'})|"
 QiannianShenqiSe:
   Name: Pyramid-Shaped Puzzle
   Description: "{PlayerName} may only draw up to {Limit} cards each turn.\n|d:({Count}\
@@ -159,10 +159,10 @@ BoliDajiejieSe:
   Brief: "{OwnerName}'s |Block| is converted into |Barrier|."
 BoliPhantomSe:
   Name: Hakurei Phantom
-  Description: Whenever a card not named |Persuasion Needle| is |Exiled|, add {Level}
+  Description: Whenever a card that isn't |Persuasion Needle| is |Exiled|, add {Level}
     |Persuasion Needle{Level:plural one='' other='s'}| to the hand that |temporarily
     cost| {Mana}.
-  Brief: Whenever a card not named |Persuasion Needle| is |Exiled|, add one or more
+  Brief: Whenever a card that isn't |Persuasion Needle| is |Exiled|, add one or more
     Persuasion Needles to the hand that |temporarily cost| {Mana}.
 SingleJiandaoSe:
   Name: Giant Scissor Blade
@@ -171,7 +171,7 @@ SakuraWandSe:
   Name: Winged Key
   Description: '{OwnerName} attacks twice as many times.'
 ReverseJiejieSe:
-  Name: Reversal Boundaries
+  Name: Reverse Boundary
   Description: Whenever {PlayerName} loses a |Buff|, they gain {Level} |Barrier|.
   Brief: Whenever {PlayerName} loses a |Buff|, they gain some |Barrier|.
 DragonBallSe:
@@ -217,6 +217,7 @@ MasterOfCollectionSe:
   Name: Master of Collection
   Description: Whenever a card is |Retained|, reduce its cost by {Level} random mana
     this combat.
+  Brief: Whenever a card is |Retained|, reduce its cost by some random mana this combat.
 UpgradePotionSe:
   Name: Refine Potion
   Description: At the end of {PlayerName}'s turn, increase the damage dealt by |Unstable
@@ -231,7 +232,7 @@ GainKnifeSe:
   Name: Circle of Knives
   Description: At the start of {PlayerName}'s turn, add {Level} |Throwing {Level:plural
     one='Knife' other='Knives'}| to the hand.
-  Brief: At the start of {PlayerName}'s turn, add |Throwing Knives| into the hand.
+  Brief: At the start of {PlayerName}'s turn, add |Throwing Knives| to the hand.
 EvilMaidSe:
   Name: Devil's Maid
   Description: "{OwnerName}'s attacks deal double damage {Level:plural one='until\
@@ -249,13 +250,13 @@ PotionJungleSe:
     discard pile.
 PotionDefenseSe:
   Name: Shooting Echo
-  Brief: In this turn, whenver an |Unstable Potion| is triggered, gain |Barrier|.
+  Brief: Until end of turn, whenever an |Unstable Potion| is used, gain |Barrier|.
   Description: Until end of turn, whenever an |Unstable Potion| is used, gain {Level}
     |Barrier|.
 ChargingPotionSe:
   Name: Radioactive Elements
-  Description: Whenever an |Unstable Potion| triggers, gain {Level} |Charging|.
-  Brief: Whenever an |Unstable Potion| triggers, gain |Charging|.
+  Description: Whenever an |Unstable Potion| is used, gain {Level} |Charge|.
+  Brief: Whenever an |Unstable Potion| is used, gain |Charge|.
 SakuyaKillerSe:
   Name: Ripper in the Fog
   Brief: At the end of {PlayerName}'s turn and whenever an enemy is defeated, conjure
@@ -284,6 +285,7 @@ EvilTuiZhiSe:
 SilverBladeSe:
   Name: Silver Another Dimension
   Brief: After an attack card takes effect, gain |Block|.
+  Description: Whenever an attack card is used, gain {Level} |Barrier|.
 SpecialClockSe:
   Name: Special Stopwatch
   Description: At the start of {PlayerName}'s turn, select {Level:plural one='a card'
@@ -293,9 +295,12 @@ SpecialClockSe:
 BurstDrawSe:
   Name: Speed Duel
   Description: When entering |Burst|, draw {Level:plural one='% card' other='% cards'}.
-  Brief: Draw several cards when enter |Burst|.
+  Brief: Draw several cards when entering |Burst|.
 DangerousMagicianSe:
   Name: Dangerous Illusionist
+  Brief: Whenever a |Throwing Knife| is used, {PlayerName} gains some |Time Pulse|.
+  Description: Whenever a |Throwing Knife| is used, {PlayerName} gains {Level} |Time
+    Pulse|.
 SeeFengshuiSe:
   Name: Manipulating Feng-Shui
   Description: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a |Defense|\
@@ -336,10 +341,10 @@ RinDrawSe:
   Brief: Whenever a |Status| card is drawn, draw cards.
 MeihongFireSe:
   Name: Indiscriminately Ignited
-  Description: At the end of {PlayerName}'s turn and whenever a |Curse| or |Status|
+  Description: At the end of {PlayerName}'s turn and whenever a |Misfortune| or |Status|
     card is drawn, deal {Level} damage to each enemy.
-  Brief: At the end of {PlayerName}'s turn and whenever a |Curse| or |Status| card
-    is drawn, deal damage to each enemy.
+  Brief: At the end of {PlayerName}'s turn and whenever a |Misfortune| or |Status|
+    card is drawn, deal damage to each enemy.
 MeihongPowerSe:
   Name: The Immortal Flame
   Brief: "At the start of {PlayerName}'s turn, gain |Firepower|\nAt the end of combat,\
@@ -554,8 +559,10 @@ BurstUpgrade:
 SolarSystemSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Charge|.
   Name: Solar System
+  Brief: At the start of {PlayerName}'s turn, gain some |Charge|.
 ScryBlockSe:
   Description: Whenever {PlayerName} |scries|, they gain {Level} |Block|.
+  Name: Premeditation
 PoisonPotionSe:
   Description: Whenever an |Unstable Potion| is used, it also applies {Level} |Poison|
     to its target.
@@ -586,7 +593,7 @@ PerfectServantWSe:
   Brief: After drawing card at the start of the next turn, each hand |temp reduce
     cost|.
 Poison:
-  Description: At the start of {OwnerName}'s turn, they lose {Level} life, then loses
+  Description: At the start of {OwnerName}'s turn, they lose {Level} life, then lose
     1 |Poison|.
   Name: Poison
 MoonWorldSe:
@@ -658,8 +665,8 @@ UseCardToLoseGame:
   Name: Short Life Expectancy
 AmuletForCard:
   Name: Exorcism
-  Description: Resist the next {Level} status cards you receive (exile them|).
-  Brief: Resist the next status cards you receive (exile them|).
+  Description: Resist the next {Level} status cards you receive (|Exile| them).
+  Brief: Resist the next status cards you receive (|Exile| them).
 EvilMaidDoubleAttack:
   Name: Devil's Maid
   Description: "Double the attack damage of {PlayerName} (remain: {Duration} turns)."
@@ -675,8 +682,8 @@ HekaHellRainSe:
   Description: For each card played, deal {Level} damage to each enemy at the end
     of turn. (Currently {Count})
 KnifeWithLockedOn:
-  Description: The |Knives| you actively played apply {Level} |Locked-On|.
-  Brief: The |Knives| you actively played apply |Locked-On|.
+  Description: '|Throwing Knives| apply {Level} |Lock On| when played.'
+  Brief: '|Throwing Knives| apply |Lock On| when played.'
 ZhenmiaowanAttackSe:
   Description: Cost of skill card decrease by {Mana} in this turn.
   Brief: Cost of skill card decrease by {Mana} in this turn.
@@ -687,7 +694,10 @@ ZhenmiaowanAttackSe:
   Name: Descendant of Issun-Boushi
 StopTimeSe:
   Name: Freezing Time
-  Brief: When {PlayerName} ends their turn, they lose all but some random unspent
-    mana |d:(instead of all of it)|.
-  Description: When {PlayerName} ends their turn, they lose all but {Level} random
-    unspent mana |d:(instead of all of it)|.
+  Brief: When {PlayerName}'s turn ends, keep some random unspent mana instead of losing
+    it.
+  Description: When {PlayerName}'s turn ends, keep {Level} random unspent mana instead
+    of losing it.
+LoseSpiritSe:
+  Description: At the start of {PlayerName}'s turn, lose {Level} |Spirit|.
+  Brief: At the start of {PlayerName}'s turn, lose some |Spirit|.
