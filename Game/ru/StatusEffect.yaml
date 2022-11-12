@@ -238,10 +238,10 @@ CantDrawThisTurn:
   Description: Нельзя брать карты до конца хода.
 Charging:
   Name: Заряд
-  Description: '{PlayerName} когда накапливает {TriggerLevel} |заряда| переходит в
-    состояние |Раж|.'
-  Brief: '{PlayerName} когда накапливает {TriggerLevel} |заряда| переходит в состояние
-    |Раж|.'
+  Description: 'Когда {PlayerName} накапливает {TriggerLevel} |Заряда| она переходит
+    в состояние |Ража|.'
+  Brief: 'Когда {PlayerName} накапливает {TriggerLevel} |Заряда| она переходит в состояние
+    |Ража|.'
 CantDrawNextTurn:
   Name: Предотвращение взятия карт в следующем ходу
   Description: Нельзя брать карты во время следующего хода. |d:(за исключением фазы
@@ -323,6 +323,7 @@ FlatPeach:
 FastAttack:
   Description: Когда {PlayerName} разыгрывает свою первую карту за ход, {OwnerName}
     наносит ей {Level} урона.
+  Name: Апекс Спидстер
 PowerByDefense:
   Description: '{OwnerName} получает {Level} |Огневой мощи|, когда разыгрывается карта
     |Защиты|.'
@@ -336,12 +337,16 @@ InfinityGemsSe:
   Name: Украшенные драгоценностями перчатки
 ChillPotionSe:
   Description: '|Нестабильное зелье| также накладывает на цель {Level} |Обморожения|.'
+  Brief: '|Нестабильное зелье| также накладывает на цель |Обморожение|.'
 PoisonPotionSe:
   Description: '|Нестабильное зелье| также накладывает на цель {Level} |Яда|.'
+  Brief: '|Нестабильное зелье| также накладывает на цель |Яд|.'
 PotionJungleSe:
   Description: В конце хода {PlayerName:g} добавляет {Level:plural one='|% Нестабильное
-    зелье|' other='|% Нестабильных зелья|'}.
+    зелье|' other='|% Нестабильных зелья|'} в стопку сброса.
   Name: Светящийся лес
+  Brief: В конце хода {PlayerName:g} добавляет несколько |Нестабильных зелий| в стопку
+    сброса.
 DragonBallSe:
   Name: Стеклянный звёздный шар
   Description: 'В начале хода {OwnerName:g} ее |желание| исполняется: {PlayerName}
@@ -363,8 +368,8 @@ BoliDajiejieSe:
   Name: Великий барьер Хакурей
   Brief: Преобразует всю получаемую |Защиту| в |Барьер|.
 HolyGrailSe:
-  Description: В начале хода {OwnerName}, {PlayerName} теряет все не|легендарные|
-    и не|мифические редкие| |экспонаты|.
+  Description: В начале хода {OwnerName:g}, {PlayerName} теряет все не-|легендарные|
+    и не-|мифические редкие| |Экспонаты|.
   Name: Святой Грааль
 PerfectServantWSe:
   Description: После следующей фазы взятия карт {OwnerName:g} стоимость всех карт
@@ -373,6 +378,8 @@ PerfectServantWSe:
     карт в руке |временно понижается| на {Level} случайную ману.
   ExtraDescription: После следующей фазы взятия карт {OwnerName:g} стоимость всех
     карт в руке |временно понижается| на {Level} случайную ману.
+  Brief: После следующей фазы взятия карт {OwnerName:g} стоимость всех карт в руке
+    |временно понижается|.
 SakuraWandSe:
   Name: Крылатый ключ
   Description: '{OwnerName} удваивает количество атак.'
@@ -387,9 +394,12 @@ DanceAroundLakeSe:
   Name: Танец возле речки
 ScryBlockSe:
   Description: Даёт {Level} |Защиты|, когда {PlayerName} |Предсказывает|.
+  Name: Преднамеренность
+  Brief: Даёт {Level} |Защиты|, когда {PlayerName} |Предсказывает|.
 HuanxiangBlockSe:
   Description: Даёт {Level} |Защиты|, когда |Изгоняется| карта.
   Brief: Когда |Изгоняется| карта, {PlayerName} получает |Защиту|.
+  Name: Грань фантазий
 EvilTuiZhiSe:
   Brief: Одна или более следующих карт атаки нанесут двойной урон.
   Description: "{Level:plural one='следующая карта атаки разыгранная в этом ходу нанесёт'\
@@ -409,6 +419,7 @@ BurstDrawSe:
   Description: Возьмите {Level:plural one='% карту' other='% карты'} при вхождении
     в |Раж|.
   Name: Поединок скорости
+  Brief: Возьмите несколько карт при вхождении в |Раж|.
 MomentPowerSe:
   Description: Когда {OwnerName} получает |Временную Огневую Мощь| или |Временную
     Духовность| {Level} её преобразуется в |Огневую Мощь| или |Духовность| соответственно.
@@ -421,6 +432,7 @@ ReverseJiejieSe:
   Name: Обратный барьер
 WizardStudySe:
   Description: Первая разыгрываемая карта за ход стоит на {Mana} больше.
+  Brief: Первая разыгрываемая карта за ход стоит дороже.
 BoliPhantomSe:
   Brief: Когда |Изгоняется| карта, названная не |Игла Запечатывания|, добавляет одну
     или более |Иглу Запечатывания| в руку и её стоимость временно понижается на {Mana}.
@@ -440,18 +452,22 @@ EvilMaidSe:
   Name: Горничная дьяволицы
   Description: Атаки {OwnerName:g} наносят двойной урон в течение {Level:plural one='%
     хода' other='% ходов'}.
-  Brief: Атаки {OwnerName:g} наносят двойной урон.
+  Brief: Следующие несколько атак наносят двойной урон.
 PerfectServantUSe:
   Description: Возьмите {Level:plural one='% карту' other='% карты'} и получите {Level}
     {Mana} в начале следующего хода {OwnerName:g}.
+  Brief: Возьмите карты и получите {Level} {Mana} в начале следующего хода {OwnerName:g}.
 TimeAuraSe:
   Description: "Наносит {Level} урона всем врагам в конце хода {PlayerName:g}.\nЕсли\
     \ {PlayerName} получает урон, урон этого эффекта снижается."
   Name: Всплеск времени
+  Brief: "Наносит урон всем врагам в конце хода {PlayerName:g}.\nУрон этого эффекта\
+    \ снижается, если {PlayerName} получает урон."
 GainKnifeSe:
   Name: Круг ножей
   Description: Добавьте |{Level:plural one='% Метательный нож' other='% Метательных
     ножа'}| в руку в начале хода {PlayerName:g}.
+  Brief: Добавьте |Метательные ножи| в руку в начале хода {PlayerName:g}.
 ShannvAbilitySe:
   Description: Накладывает {Level} |Яда| на всех врагов в начале хода {PlayerName:g}.
 LunaticTorch:
@@ -465,6 +481,8 @@ Interview:
   Description: '{OwnerName} проводит опросы на месте инцидента.'
 UseCardToLoseGame:
   Description: Умирает после того, как сыграет {Count} карт.
+  Name: Жить осталось совсем недолго
+  Brief: Проигрывает после того, как сыграет некоторое количество карт.
 SijiZui:
   Name: Суждение о правильном и неправильном
   Description: 'Грехи {PlayerName:g}: Незначительные.'
@@ -485,6 +503,8 @@ UpgradePotionSe:
   Name: Очищающее зелье
   Description: В конце хода {PlayerName:g} урон |Нестабильных зелий| в стопках добора
     и сброса увеличивается на {Level}.
+  Brief: В конце хода {PlayerName:g} урон |Нестабильных зелий| в стопках добора и
+    сброса увеличивается.
 MasterOfCollectionSe:
   Name: Эксперт коллекционирования
   Description: Когда карта |Оставляется|, её стоимость понижается на {Level} случайную
@@ -493,16 +513,27 @@ LearnAstrologySe:
   Name: Изучение звёзд
 ChargingPotionSe:
   Name: Радиоактивные элементы
+  Description: Даёт {Level} |Заряда|, каждый раз, когда используется |Нестабильное
+    зелье|.
+  Brief: Даёт |Заряд|, каждый раз, когда используется |Нестабильное зелье|.
 PotionDefenseSe:
   Name: Выстрел эхом
+  Description: До конца хода даёт {Level} |Барьера|, каждый раз, когда используется
+    |Нестабильное зелье|.
+  Brief: До конца хода даёт |Барьер|, каждый раз, когда используется |Нестабильное
+    зелье|.
 YonglinCardSe:
   Name: Повязка мудреца
   Description: Когда разыгрывается первая карта во время хода {PlayerName:g}, в руку
     добавляется её копия. Она |временно стоит| {Mana} и имеет эффекты |Изгнания| и
     |Эфирности|..
+  Brief: В каждом ходу когда {PlayerName} разыгрывает свою первую карту, в руку добавляется
+    её копия. Она |временно стоит| {Mana} и имеет эффекты |Изгнания| и |Эфирности|.
 EvilMaidDoubleAttack:
   Description: "Aтаки {PlayerName:g} наносят двойной урон. Длительность: {Duration:plural\
     \ one='ход' other='хода'}."
+  Name: Горничная дьяволицы
+  Brief: Атаки {PlayerName:g} наносят двойной урон.
 LoseSpiritSe:
   Brief: В начале хода {PlayerName} теряет |Духовность|.
   Description: В начале хода {PlayerName} теряет {Level} |Духовности|.
@@ -514,3 +545,49 @@ SeeFengshuiSe:
     сброса во время предсказывания.
 DangerousMagicianSe:
   Name: Опасный иллюзионист
+  Description: Даёт {Level} |Всплеска Времени|, когда |Метательный нож| покидает руку.
+  Brief: Даёт |Всплеск Времени|, когда |Метательный нож| покидает руку.
+MihuanJackSe:
+  Description: Даёт {Level} |Всплеска времени|, в начале хода {PlayerName:g}.
+  Name: Джек Лудо Биле
+  Brief: Даёт |Всплеск времени|, в начале хода {PlayerName:g}.
+StopTimeSe:
+  Name: Остановка времени
+  Brief: В конце хода {PlayerName:g} некоторое количество маны (выбирается случайно)
+    не будет потеряно.
+  Description: В конце хода {PlayerName:g} {Level} маны (выбирается случайно) не будет
+    потеряно.
+SenluoJiejieSe:
+  Name: Агрегатный барьер
+  Description: Взрывает |Барьер| в начале следующего хода.
+  Brief: Взрывает |Барьер| в начале следующего хода.
+SakuyaKillerSe:
+  Brief: Добавьте |Метательные ножи| в стопку сброса, когда {PlayerName} заканчивает
+    ход или когда повергается враг.
+  Description: Добавьте |{Level:plural one='% Метательный нож' other='% Метательные
+    ножи'}| в стопку сброса, когда {PlayerName} заканчивает ход или когда повергается
+    враг.
+  Name: Потрошитель в тумане
+SilverBladeSe:
+  Name: Другое серебряное измерение
+  Brief: Даёт |Барьер|, когда {PlayerName} играет карту |Атаки|.
+  Description: Даёт {Level} |Барьера|, когда {PlayerName} играет карту |Атаки|.
+SpecialClockSe:
+  Name: Уловка горничной
+  Description: В начале хода {PlayerName:g} выберите {Level:plural one='карту и сбросьте
+    её' other='up to % карты и сбросьте их'}. Возьмите столько же карт.
+  Brief: В начале хода {PlayerName:g} выберите некоторое количество карт и сбросьте
+    их. Возьмите столько же карт.
+Cold:
+  Name: Холод
+AmuletForCard:
+  Name: Экзорцизм
+  Description: Сопротивление к следующим {Level} картам статуса (|Изгоните| их).
+  Brief: Сопротивление к картам статуса (|Изгоните| их).
+DrawPhaseAddKnife:
+  Name: Начало хода добавьте |Ножи| вместо взятия карт
+  Description: Пропустите фазу взятия карт в начале хода и вместо этого добавьте в
+    руку {Limit} |Ножа|.
+GrimoireStudySe:
+  Name: Изучить гримуар
+  Description: В начале хода {OwnerName}, добавляет |Радугу| в руку.
