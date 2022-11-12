@@ -225,6 +225,7 @@ Setting:
   SingleEnemyAutoSelectDescription: Whether to use a card without selecting target
     if the card need a target enemy while there's only one enemy.
   AnimatingEnvironment: Animating Environment
+  AnimatingEnvironmentDescription: Show dynamic background during the battle.
 System:
   ReenterStation: Restart Level
   ResumeGame: Resume Game
@@ -431,6 +432,7 @@ Tooltip:
     Character: ' Unique'
   FinalStage:
     Name: Final Act
+    Description: So close to the end of the game, let's move on!
   BriefHint:
     Name: Brief Hints
     Description: "Only partial hints will be displayed.\nI've played similar games,\
@@ -470,6 +472,9 @@ MessageDialog:
   CannotStartGameRunWithoutProfile: 'Cannot Start Game: Run Without Player Profile'
   AlreadyInGameRun: Already In Game Run
   ResetHintWarning: Reset Hint Confirm
+  XCostEmptyUsageTips: You can set mana at the bottom-left mana panel for X-cost card.
+  DontShowHintWarning: Disable all game hints?
+  XCostEmptyUsageWarning: Use {0} without setting its mana?
 BattleHint:
   Prev: Prev
   Next: Next
@@ -494,6 +499,21 @@ BattleHint:
     \ your hand will be moved to the discard pile. At the end of the player's turn,\
     \ cards that remain in your hand will also be moved to the discard pile.\nNew\
     \ cards will be drawn at the beginning of the player's turn."
+  ManaPanel: "The mana panel shows the remaining mana for the current turn.\nLeft\
+    \ click on any mana to move mana to the pending area. The mana in the pending\
+    \ area will be consumed first.\nRight click on any mana to move all mana of that\
+    \ color to the pending area.\nMana is restored at the beginning of the player's\
+    \ turn."
+  BlockShield: "Before taking damage, play a defense card to gain |block| and |s:shield|.\n\
+    |block| and |s:shield| reduce the amount of damage that will be dealt.\n|block|\
+    \ disappears at the beginning of the main character's next turn, but |s:shield|\
+    \ does not."
+  Intention: "The enemy's intent is displayed above them.\nEnemies may have intentions\
+    \ such as attack, defend, buff, apply debuff, or cast a spell card."
+  UltimateSkill: "Cast the spell card to turn the tide of battle!\nUsing a spell card\
+    \ consumes a full tube of power. Defeated enemies drop <sprite=\"Point\" name=\"\
+    Power\">, which replenishes the power needed for the spell card.\nSpell card can\
+    \ only be used once per turn."
 Cards:
   UnUpgradable: Non-Upgradable
   IsUpgraded: Upgraded
@@ -518,6 +538,7 @@ ErrorChat:
   CardDrunk: I'm not drunk!
   CardFengyin: I'm Sealed
   TargetAlreadyDead: Target Already Dead
+  NoCardByMama: There is no such a card with the target cost.
 Explain:
   Title: Note
   LoseShinning: You can always find cards exclusive to the character you're playing
@@ -625,6 +646,11 @@ GameResult:
   FailReason: 'Fail Reason:'
   Abandon: Abandon
   ReturnHint: Click anywhere to return to the main menu
+  UnlockHint: Newly unlocked exhibits and cards will appear in the future game run.
+  Win: Incident Solved
+  TrueEnd: Solve the incident perfectly.
+  Lose: Game Over
+  BadEnd: Let's back to the past and restart.
 JadeBoxPage:
   JadeBoxDaily: Daily Jade Box
   JadeBoxHint: "Accept Eirin's special gift, Jade box comes with powerful and weird\
