@@ -564,7 +564,7 @@ ShenziUpgradeAll:
 ShenziWake:
   Name: Revive the Saint
   Description: |-
-    Choose one of {Value1} random cards with mana value X+1 to conjuire into the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
+    Choose one of {Value1} random cards with a total cost of X+1 to conjuire into the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
 
 YuetuInvincible:
   Name: The Falling Moon-Rabbit
@@ -840,7 +840,7 @@ Shoot:
   Name: Shoot
 LearnAstrology:
   Description: At the start of {PlayerName}'s turn, if there are no |Astrologies|
-    in hand, add an |Astrology| to the hand.
+    in the hand, add an |Astrology| to the hand.
   Name: Astrology Study
   FlavorText: '"Why does she only want to look at the stars instead of me?"'
 StarShower:
@@ -1005,7 +1005,7 @@ MasterOfCollection:
     combat.
 HinaAttack:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
-    For each |Misfortune| in the library, deal that damage an additional time."
+    For each |Misfortune| in the deck, deal that damage an additional time."
   Name: Misfortune's Wheel
 SatoriMemory:
   Description: "Choose one of {Value1} random cards from the discard pile to return\
@@ -1565,7 +1565,8 @@ YachieDefend:
 PaluxiCurse:
   Name: Shrine Visit in the Dead of Night
   Description: "Deal {Damage} damage.\nApply {Value1} |Weak| and |Vulnerable|.\nAdd\
-    \ a random |Misfortune| to the discard pile."
+    \ a random |Misfortune| to the discard pile (it will not remain in the library\
+    \ after this combat)."
 TodayYesterday:
   Name: Gensokyo, Past and Present
   Description: "Whenever {PlayerName} grazes an attack, gain {Value1} |Firepower|.\n\
