@@ -420,7 +420,7 @@ MarisaDraw:
   Description: |-
     抽 {Value1} 张牌。
     如果{PlayerName}处于|爆发|，获得{Mana}。
-  FlavorText: 人生最悲哀的莫过于牌打完了，但法力没花完。
+  FlavorText: 「我有个计划的，相信我」
 
 DarkSatellite:
   Name: 至暗卫星
@@ -460,6 +460,7 @@ HuojianSaoba:
 JinjiBlock:
   Name: 紧急防御
   Description: 获得 {Block} 点|格挡|。
+  FlavorText: 「呼~好险，轮到我啦！」
 
 Alioth:
   Name: 玉衡星
@@ -513,7 +514,6 @@ ShinningPotion:
     获得 {Block} 点|格挡|。
     将一张|不稳定魔药|洗入抽牌堆。
     |超载 {Value2} ：|改为两张。
-  FlavorText: 「博丽神社火锅宴」采购的「菌类拼盘」由魔理沙亲手栽培，经数道工序秘制，绝无食品安全问题。
 
 Yinhe:
   Name: 银河
@@ -535,6 +535,7 @@ PoisonPotion:
   Description: |-
     |不稳定魔药|还会施加 {Value1} 层|中毒|。
     将 {Value2} 张|不稳定魔药|洗入抽牌堆。
+  FlavorText: 加一点毒蘑菇，再加一点旧鞋跟。
 
 PotionJungle:
   Name: 荧光森林
@@ -563,6 +564,7 @@ MarisaEat:
   ExtraDescription1: |-
     获得 {Value1} 层|专注|。
     |d:初见：恢复 {Value2} 点生命值。|
+  FlavorText: 「博丽神社火锅宴」采购的「菌类拼盘」由魔理沙亲手栽培，经数道工序秘制，绝无食品安全问题。
 
 BurstDraw:
   Name: 速度对决
@@ -580,6 +582,7 @@ StarShower:
   Description: |-
     获得 {Block} 点|格挡|。
     获得 {Value1} 层|充能|；如果{PlayerName}没有|充能|，改为 {Value2} 层。
+  FlavorText: 「人生不如意十有八九呀。」
 
 ThrowBigStar:
   Name: 赤星炸裂
@@ -650,6 +653,7 @@ UpgradePotion:
   Description: |-
     将 {Value2} 张|不稳定魔药|洗入弃牌堆。
     {PlayerName}的回合结束时，抽牌堆和弃牌堆中的|不稳定魔药|伤害提高 {Value1} 点。
+  FlavorText: 「加热、蒸馏、反应、催化，要打赢弹幕战就得做好充足准备！」
 
 OpenUniverse:
   Name: 开放宇宙
@@ -666,7 +670,6 @@ RedGiantStar:
   UpgradedDescription: |-
     造成 {Damage} 点伤害。
     |超载 {Value2} ：|将一张|幻虹|加入手中。
-  FlavorText: 「幸好对面不是芙兰」
 
 SolarSystem:
   Name: 太阳系仪
@@ -1396,7 +1399,9 @@ HinaAttack:
 
 BailianBlack:
   Name: 拥抱黑暗
-  Description: 所有的非攻击非能力牌的费用降至{Mana}，它们打出后被|放逐|。
+  Description: |-
+    所有非攻击非能力的牌，打出后被|放逐|。
+    它们的费用降至{Mana}。
   FlavorText: 妖术通念过，佛祖心中留。世人若学我，如同进魔道。
 
 GrimoireStudy:
@@ -2051,6 +2056,12 @@ ArtificialJewellery:
   UpgradedDescription: 获得{Mana}。
   FlavorText: 虽然实际价值远低于它的价格，但珠宝还是有无法用金钱衡量的、提振精神的功效。
 
+Xiaozhuo:
+  Name: 小酌怡情
+  Description: |
+    获得 {Value1} 点|暂得火力|。
+  FlavorText: 你醉了，敌人的机会来了。
+
 LilyoftheValley:
   Name: 铃铃
   Description: |-
@@ -2097,12 +2108,6 @@ EmpCard:
     造成 {Damage} 点攻击伤害。
     如果目标是|无人机|，它 {Value1} 回合无法行动。
     |消耗品【{DeckCounter}】|
-
-Xiaozhuo:
-  Name: 小酌怡情
-  Description: |
-    获得 {Value1} 点|暂得火力|。
-  FlavorText: 你醉了，敌人的机会来了。
 
 AyaNews:
   Name: 《文文新闻》
@@ -2268,5 +2273,9 @@ FanzhuanChongdong:
   Name: 反转冲动
   Description: '{PlayerName}的回合结束时，如果本回合没有恢复过生命，便失去 {Value1} 点生命。'
   FlavorText: 成为吸血鬼眷属的代价。
+
+TestUpgradable:
+  Name: 测试升级
+  Description: 造成{Damage}点伤害。
 
 
