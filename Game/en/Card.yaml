@@ -404,8 +404,8 @@ Dejavu:
 CleanRoom:
   Description: "Discard a card.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
     |Upgrade| {Value1:plural one='% random card' other='% random cards'} in the hand\
-    \ this combat. If a |Throwing Knife| was discarded this way, instead |Upgrade|\
-    \ all cards in the hand this combat."
+    \ until the end of combat. If a |Throwing Knife| was discarded this way, instead\
+    \ |Upgrade| all cards in the hand until the end of combat."
 
   Name: Room Cleaning
 CoolMaid:
@@ -559,7 +559,7 @@ RingoJinghua:
 
 ShenziUpgradeAll:
   Name: Apotheosis
-  Description: '|Upgrade| all cards this combat.'
+  Description: '|Upgrade| all cards until the end of combat.'
 
 ShenziWake:
   Name: Revive the Saint
@@ -1055,7 +1055,8 @@ ShannvAbility:
   Name: Unknown Fever
   FlavorText: The doctor reminds you to drink plenty of hot water.
 BailianBlack:
-  Description: All non-attack, non-ability cards are reduced by {Mana} and gain |Exile|.
+  Description: All non-attack, non-ability cards cost {Mana} this combat and are |Exiled|
+    when played.
   Name: Embrace the Darkness
 LeiguAttack:
   Description: "Deal {Damage} damage to each enemy.\nEnemies with |Barrier| or |Block|\
@@ -1178,6 +1179,8 @@ HuashanDefense:
 ZhenmiaowanAttack:
   Description: "Deal {Damage} damage.\n|Skill| cards cost {Mana} less this turn."
   Name: Descendent of the Inchlings
+  UpgradedDescription: "Deal {Damage} damage.\n|Skill| and |Defense| cards cost {Mana}\
+    \ less this turn."
 BaitianCard:
   UpgradedDescription: "Gain {Block} |Block|.\nPlace a card from the discard pile\
     \ on top of the draw pile."
@@ -1218,7 +1221,7 @@ RandomShoot:
     other='% times'}.
   Name: RandomShoot
 ToolUpgrade:
-  Description: "|Upgrade| each card in the hand this combat.\n|Limited【{DeckCounter}】|"
+  Description: "|Upgrade| each card in the hand until the end of combat.\n|Limited【{DeckCounter}】|"
   Name: Floppy Disk
 ToolDroneBlock:
   Description: "Gain {Value1} |Defense Matrix|.\n|Limited【{DeckCounter}】|"
