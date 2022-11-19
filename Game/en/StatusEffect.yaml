@@ -78,11 +78,11 @@ Invincible:
 LearnAstrologySe:
   Name: Astrology Study
   Description: 'At the start of {PlayerName}''s turn, if there are {Level:plural one=''no''
-    other=''less than %''} |Astrology| in the hand, conjure {Level:plural one=''a
-    |Astrology| into'' other=''|Astrologies|''} into the hand{Level:plural one=''.''
-    other='' until there are %.''}'
+    other=''less than %''} |Astrology| in the hand, add {Level:plural one=''a |Astrology|
+    into'' other=''|Astrologies|''} to the hand{Level:plural one=''.'' other='' until
+    there are %.''}'
   Brief: 'At the start of {PlayerName}''s turn, if there''s less than this many |Astrology|
-    in the hand, conjure them into the hand until there are that many.'
+    in the hand, add them to the hand until there are that many.'
 
 Fragil:
   Name: Frail
@@ -206,7 +206,7 @@ JunkoPurify:
   Description: Whenever {PlayerName} plays a card, |Purify| {Level}.
   Name: Purifying Light
 MadokaBowSe:
-  Description: "At the end of {OwnerName}'s turn, add {Level} random |Status| cards\
+  Description: "At the end of {OwnerName}'s turn, add {Level} random Status cards\
     \ to the draw pile.\n|d:(Adds more potent cards at higher difficulties.)|"
   Name: Bow Which Shoots Light
 ShendengSe:
@@ -259,11 +259,11 @@ ChargingPotionSe:
   Brief: Whenever an |Unstable Potion| is used, gain |Charge|.
 SakuyaKillerSe:
   Name: Ripper in the Fog
-  Brief: At the end of {PlayerName}'s turn and whenever an enemy is defeated, conjure
-    |Throwing Knives| into the draw pile.
+  Brief: At the end of {PlayerName}'s turn and whenever an enemy is defeated, add
+    |Throwing Knives| to the draw pile.
   Description: At the end of {PlayerName}'s turn and whenever an enemy is defeated,
-    conjure |{Level:plural one='% Throwing Knife' other='% Throwing Knives'}| into
-    the draw pile.
+    add |{Level:plural one='% Throwing Knife' other='% Throwing Knives'}| to the draw
+    pile.
 JiangshenSe:
   Brief: Whenever a card is added during combat, |Upgrade| it.
   Description: Whenever a card is added during combat, |Upgrade| it.
@@ -309,10 +309,10 @@ SeeFengshuiSe:
     \ card is sent to the discard pile while |scrying|, gain |Block|."
 YonglinCardSe:
   Name: The Reclusive Sage
-  Brief: When {PlayerName} plays their first card each turn, conjure copies of that
-    card into the hand. They |temporarily cost| {Mana} and have |Exile| and |Ethereal|.
-  Description: When {PlayerName} plays their first card each turn, conjure {Level:plural
-    one='a copy' other='% copies'} of that card into the hand. {Level:plural one='It
+  Brief: When {PlayerName} plays their first card each turn, add copies of that card
+    to the hand. They |temporarily cost| {Mana} and have |Exile| and |Ethereal|.
+  Description: When {PlayerName} plays their first card each turn, add {Level:plural
+    one='a copy' other='% copies'} of that card to the hand. {Level:plural one='It
     |temporarily costs|' other='They |temporarily cost|' {Mana} and {Level:plural
     one='has' other='have'} |Exile| and |Ethereal|.
 ShannvAbilitySe:
@@ -335,15 +335,15 @@ ModuoluoFireSe:
     to each enemy.
 RinDrawSe:
   Name: Spirit Assignment
-  Description: Whenever a |Status| card is drawn, draw {Level:plural one='% card'
-    other='% cards'}.
-  Brief: Whenever a |Status| card is drawn, draw cards.
+  Description: Whenever a Status card is drawn, draw {Level:plural one='% card' other='%
+    cards'}.
+  Brief: Whenever a Status card is drawn, draw cards.
 MeihongFireSe:
   Name: Indiscriminate Ignition
-  Description: At the end of {PlayerName}'s turn and whenever a |Misfortune| or |Status|
+  Description: At the end of {PlayerName}'s turn and whenever a |Misfortune| or Status
     card is drawn, deal {Level} damage to each enemy.
-  Brief: At the end of {PlayerName}'s turn and whenever a |Misfortune| or |Status|
-    card is drawn, deal damage to each enemy.
+  Brief: At the end of {PlayerName}'s turn and whenever a |Misfortune| or Status card
+    is drawn, deal damage to each enemy.
 MeihongPowerSe:
   Name: The Immortal Flame
   Brief: "At the start of {PlayerName}'s turn, gain |Firepower|\nAt the end of combat,\
@@ -352,8 +352,8 @@ MeihongPowerSe:
     \ the end of combat, if {PlayerName}'s life is less than half, gain {Heal} life."
 GrimoireStudySe:
   Name: Dark Grimoire
-  Description: At the end of {OwnerName}'s turn, conjure a |Rainbow| into the hand.
-  Brief: At the end of {OwnerName}'s turn, conjure a |Rainbow| into the hand.
+  Description: At the end of {OwnerName}'s turn, add a |Rainbow| to the hand.
+  Brief: At the end of {OwnerName}'s turn, add a |Rainbow| to the hand.
 MaoyuBlock:
   Name: Fluffy
   Description: '{OwnerName} gains {Level} |Block| when attacked.'
@@ -517,7 +517,7 @@ DreamServant:
   Description: "{OwnerName} cannot be harmed."
   Name: Dream Inhabitant
 LongLight:
-  Description: '{OwnerName} shines like a star! Her |Status| cards are more powerful.'
+  Description: '{OwnerName} shines like a star! Her Status cards are more powerful.'
   Name: Shining Tripod
 Vampire:
   Description: '{OwnerName} gains life equal to unblocked damage dealt. Scary!'
