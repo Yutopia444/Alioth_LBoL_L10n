@@ -283,8 +283,8 @@ Bianhua:
   Description: Whenever an enemy is defeated, gain {Mana}.
   Name: Spider Lily
 Xiangrikui:
-  Description: Every {Value1} turns, if the current turn counter is between {Value2}
-    and {Value3}, gain {Mana}.
+  Description: Every {Value1} turns, at the start of turns {Value2} through {Value3},
+    gain {Mana}.
   Name: Sunflower
 ZheyangSan:
   Description: 'At the start of {PlayerName}''s second turn each combat, gain {Value1}
@@ -298,8 +298,8 @@ PortalGun:
   Description: Takane's shop prices are {Value1}% cheaper. Takane's shop no longer
     runs out of things to buy.
 TiangouYuyi:
-  Description: '{PlayerName} may ignore paths when choosing the next level up to {Counter}
-    times.'
+  Description: '{PlayerName} may ignore paths when choosing the next level, up to
+    {Counter} times.'
   Name: Crow Tengu's Wing
 BoreMianju:
   Description: Whenever {Value1} attack cards are played in a turn, {PlayerName} gains
@@ -325,9 +325,8 @@ LoushuiShaozi:
   Description: Whenever {Value1} skill cards are played in a turn, draw {Value2} cards.
   Name: Leaky Ladle
 WeifengHuban:
-  Description: Defeated enemies grant between {Value1} to {Value2} additional <sprite="Point"
-    name="Power"> |d:(inclusive; in addition to <sprite="Point" name="Power"> gained
-    normally)|.
+  Description: Defeated enemies drop between {Value1} to {Value2} more <sprite="Point"
+    name="Power">.
   Name: The Mighty Shaku
 Zixingche:
   Description: Whenever an attack card is added to the library, |Upgrade| it.
@@ -342,12 +341,12 @@ Shouyinji:
   Description: Whenever an ability card is added to the library, |Upgrade| it.
   Name: Radio
 SongjingMuyu:
-  Description: At the start of each Boss combat, gain life equal to the number of
-    cards in the library.
+  Description: At the start of each Boss combat, {PlayerName} gains life equal to
+    the number of cards in the library.
   Name: Wooden Fish
 Saiqianxiang:
-  Description: "Unlocks a new option at Gaps.\nYou can gain {Value1} <sprite=\"Point\"\
-    \ name=\"Gold\"> at a Gap."
+  Description: "Unlocks the ability to |Fundraise| at Gaps, granting {Value1} <sprite=\"\
+    Point\" name=\"Gold\">."
   Name: Donation Box
 Shanbibu:
   Description: 'At the start of {PlayerName}''s second turn each combat, gain {Value1}
@@ -358,56 +357,62 @@ XiaorenWan:
   Name: Inchling's Bowl
 Tnt:
   Name: TNT
-  Description: 'At the start of {PlayerName}''s {Value1}th turn each combat, deal
-    {Value2} damage to each enemy.'
+  Description: 'At the start of {PlayerName}''s {Value1:select one=''%st'' two=''%nd''
+    three=''%rd'' other=''%th''} turn each combat, deal {Value2} damage to each enemy.'
   FlavorText: '"You there? Hey, so I blew up your house."'
 
 Shaoyao:
-  Description: Whenever you spend {Value1} {Mana} in a combat, gain {Value2} life.
+  Description: Whenever {Value1} {Mana} is spent, gain {Value2} life. Then, reduce
+    this recovery by 1 until end of combat.
   Name: Peony
 Bingkuai:
-  Description: Whenever {Value1} {Mana} is spent in a combat, gain {Value2} |Barrier|.
+  Description: Whenever {Value1} {Mana} is spent, gain {Value2} |Barrier|. Resets
+    at the end of combat.
   Name: Ice Cube
 HeijiaoChangpian:
-  Description: Whenever {Value1} {Mana} is spent in a combat, gain {Value2} random
-    mana.
+  Description: Whenever {Value1} {Mana} is spent, gain {Value2} random mana. Resets
+    at end of combat.
   Name: Vinyl
 JingwanMudan:
-  Description: Whenever {Value1} {Mana} is spent in a combat, deal {Value2} damage
-    to each enemy.
+  Description: Whenever {Value1} {Mana} is spent, deal {Value2} damage to each enemy.
+    Resets at end of combat.
   Name: Peony Stone
 Shuye:
-  Description: Whenever {Value1} {Mana} is spent in a combat, gain {Value2} |Graze|.
+  Description: Whenever {Value1} {Mana} is spent, gain {Value2} |Graze|. Resets at
+    end of combat.
   Name: Leaf
 TangSan:
-  Description: 'At the start of combat, gain {Value1} |Block| and |Upgrade| {Value2:plural
-    one=''% random card'' other=''% random cards''} in the hand until end of combat.'
+  Description: 'At the start of {PlayerName}''s first turn each combat, gain {Value1}
+    |Block| and |Upgrade| {Value2:plural one=''% random card'' other=''% random cards''}
+    in the hand until end of combat.'
   Name: Karakasa
 Putao:
   Description: When acquired, gain {Value1} maximum life.
   Name: Grape
 TiangouMuji:
-  Description: At the start of combat, gain {Value1} |Firepower|.
+  Description: At the start of combat, {PlayerName} gains {Value1} |Firepower|.
   Name: Tengu's Clog
 TiangouRongqiu:
-  Description: At the start of combat, gain {Value1} |Spirit|.
+  Description: At the start of combat, {PlayerName} gains {Value1} |Spirit|.
   Name: Tengu's Pompoms
 TiangouShanzi:
-  Description: 'At the start of combat, gain {Value1} |Graze|.'
+  Description: 'At the start of {PlayerName}''s first turn each combat, gain {Value1}
+    |Graze|.'
   Name: Tengu's Fan
 TiangouXiangji:
   Description: At the start of combat, apply {Value1} |Lock On| to each enemy.
   Name: Tengu's Camera
 TiangouShouji:
-  Description: 'At the start of combat, draw additional {Value1} cards.'
+  Description: 'At the start of {PlayerName}''s first turn each combat, draw additional
+    {Value1} cards.'
   Name: Tengu's Cellphone
 ShenmiPifeng:
-  Description: At the end of each turn, gain {Value1} |Block| for each card in the
-    hand |d:(before discarding)|.
+  Description: At the end of {PlayerName}'s turn, gain {Value1} |Block| for each card
+    in the hand.
   Name: Secret Cloak
 ChuRenou:
-  Description: Negate the next {Counter} times a |Misfortune| would be added to the
-    library.
+  Description: "Negate the next {InitialCounter} |Misfortunes| added to the library.\n\
+    {Counter} time{Counter:plural one='' other='s'} left."
   Name: Hina Doll
 SunhuaiHufu:
   Description: At the start of combat, gain {Value1} |Firepower| and {Value1} |Spirit|
@@ -604,8 +609,7 @@ YueYuyi:
   Description: 'At the start of combat, gain {Value1} |Flawless|.'
 LinghunBaoshi:
   Name: Soulgem
-  Description: "At the start of the next combat, gain {Mana}.\n|Recharges when {PlayerName}\
-    \ visits a Gap.|"
+  Description: "After visiting a Gap, at the start of the next combat, gain {Mana}."
 FengshouGuolan:
   Description: "Adds {BaseMana} to the mana base.\nWhenever a card is added to the\
     \ library, gain {Value1} <sprite=\"Point\" name=\"Power\">."
