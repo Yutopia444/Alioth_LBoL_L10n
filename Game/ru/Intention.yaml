@@ -1,64 +1,67 @@
 AttackIntention:
-  AccurateMultiDamageDescription: Нанесёт {Damage} урона игроку {Times} раз. |Точность|
+  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона игроку {Times}
+    раз. |Точность|'
   Name: Атака
-  Description: Нанесёт {Damage} урона игроку.
-  MultiDamageDescription: Нанесёт {Damage} урона игроку {Times} раз.
-  AccurateDescription: Нанесёт {Damage} урона игроку. |Точность|
+  Description: '{OwnerName} нанесёт {Damage} урона игроку.'
+  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона игроку {Times} раз.'
+  AccurateDescription: '{OwnerName} нанесёт {Damage} урона игроку. |Точность|'
 AddCardIntention:
-  Description: Призовёт карты |Статуса| в вашу стопку добора или сброса.
+  Description: '{OwnerName} добавит карты |Статуса| в вашу стопку добора и/или сброса.'
   Name: Статус
 DefendIntention:
-  Description: Накладывает |Защиту| или |Барьер| на одного или нескольких врагов.
+  Description: '{OwnerName} накладывает |Защиту| или |Барьер| на одного или нескольких
+    врагов.'
   Name: Защита
 StunIntention:
-  Description: '|d: Не может действовать в этот ход.|'
+  Description: '|d: {OwnerName} не может действовать в этот ход.|'
   Name: Оглушение
 ExplodeAllyIntention:
-  Description: '|Взорвёт| врага с меньшим здоровьем.'
+  Description: '{OwnerName} |Взорвёт| врага с меньшим здоровьем.'
   Name: Детонация
 PositiveEffectIntention:
-  Name: Бафф
-  Description: Накладывает |бафф| на одного или нескольких врагов.
+  Name: Баф
+  Description: '{OwnerName} накладывает |баф| на одного или нескольких врагов.'
 NegativeEffectIntention:
-  Name: Дебафф
-  Description: Накладывает |дебафф| на игрока.
+  Name: Дебаф
+  Description: '{OwnerName} накладывает |дебаф| на {PlayerName:a}.'
 GrazeIntention:
   Name: Уворот
-  Description: Накладывает |Уворот| на одного или нескольких врагов.
+  Description: '{OwnerName} накладывает |Уворот| на одного или нескольких врагов.'
 SpawnIntention:
   Name: Призыв
-  Description: Призовёт дополнительного врага в битву.
+  Description: '{OwnerName} призовёт дополнительных врагов в битву.'
 SleepIntention:
   Name: Сон
-  Description: '|d:В данный момент находиться в царстве снов. Zzz...|'
+  Description: '|d:{OwnerName} в данный момент находиться в царстве снов. Zzz...|'
 EscapeIntention:
   Name: Побег
-  Description: '|Сбежит| из битвы.'
+  Description: '{OwnerName} намеревается |Сбежать| из битвы.'
 ExplodeIntention:
   Name: Детонация
-  Description: '|Взорвётся|, нанеся {Damage} урона.'
+  Description: '{OwnerName} намеревается |Взорваться|, нанеся {Damage} урона.'
 CountDownIntention:
   Name: Отсчёт
-  Description: Активирует свою |Карту Заклинания| через {Counter} ходов.
+  Description: '{OwnerName} активирует свою |Карту Заклинания| через {Counter} ходов.'
 ChargeIntention:
-  Description: Собирается с силами, чтобы сделать |мощный ход|.
+  Description: '{OwnerName} собирается с силами, чтобы сделать |мощный ход|.'
   Name: Подготовка
 HealIntention:
   Name: Лечение
-  Description: '|Восполнит| здоровье одному или нескольким врагам.'
+  Description: '{OwnerName} |Восполнит| здоровье одному или нескольким врагам.'
 RepairIntention:
   Name: Починка
-  Description: '|Восполнит| здоровье одному или нескольким врагам.'
+  Description: '{OwnerName} |Восполнит| здоровье одному или нескольким врагам.'
 SpellCardIntention:
-  Name: Спелл Карта
-  DamageDescription: Активирует свою |Спелл Карту| нанеся {Damage} урона игроку.
-  Description: Активирует свою |Спелл Карту|.
-  MultiDamageDescription: Активирует свою |Спелл Карту| нанеся {Damage} урона игроку
-    {Times} раз.
-  AccurateDamageDescription: Активирует свою |Спелл Карту| нанеся {Damage} урона игроку.
-    |Точность|
-  AccurateMultiDamageDescription: Активирует свою |Спелл Карту| нанеся {Damage} урона
-    игроку {Times} раз. |Точность|
+  Name: Спеллкарта
+  DamageDescription: '{OwnerName} активирует свою |Спеллкарту| нанеся {Damage} урона
+    игроку.'
+  Description: '{OwnerName} активирует свою |Спеллкарту|.'
+  MultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся {Damage}
+    урона игроку {Times} раз.'
+  AccurateDamageDescription: '{OwnerName} активирует свою |Спелл Карту|, нанеся {Damage}
+    урона игроку. |Точность|'
+  AccurateMultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся
+    {Damage} урона игроку {Times} раз. |Точность|'
 UnknownIntention:
   Name: ???
-  Description: Хочет сделать... |что-то|.
+  Description: '{OwnerName} хочет сделать... что-то.'

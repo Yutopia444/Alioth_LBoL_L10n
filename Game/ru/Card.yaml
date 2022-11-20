@@ -61,11 +61,12 @@ TwoBalls:
   Name: Сбалансированные сферы
 Changzhizhen:
   Description: "|Пока находиться в руке:| Урон этой карты на {Value2} в этом бою,\
-    \ когда один из баффов {PlayerName:g} исчезает.\n|Когда оставляется:| Наносит\
-    \ {Value1} урона случайному врагу."
+    \ когда один из бафов {PlayerName:g} исчезает.\n|Когда оставляется:| Наносит {Value1}\
+    \ урона случайному врагу."
   Name: Постоянный барьер
 TuimofuLuanwu:
-  Description: Наносит {Damage} урона случайному врагу {Value1} раз.
+  Description: Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'
+    other='% раза'}.
   Name: Бурный танец экзорцизма
 WunvKongwu:
   Description: "Даёт {Value1} |Уворота|.\nВозьмите {Value2} карт."
@@ -84,12 +85,12 @@ ZhujiThreeGod:
     \ |Временной Духовности|, соответственно."
   Name: Призыв Сумиёси
 Zhuizongfu:
-  Description: "Наносит {Damage} урона случайному врагу {Value1} раза.\nДаёт {Mana},\
-    \ если у {PlayerName:g} есть |Барьер|."
+  Description: "Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'\
+    \ other='% раза'}.\nДаёт {Mana}, если у {PlayerName:g} есть |Барьер|."
   Name: Амулет наведения
 YakongDianxue:
   Description: "Наносит {Damage} урона.\nЭта карта возвращается из Сброса в руку,\
-    \ когда один из баффов {PlayerName} заканчивается."
+    \ когда один из бафов {PlayerName} заканчивается."
   FlavorText: Это удар в спину!
   Name: Пространственный удар
 QinggeManwu:
@@ -193,9 +194,9 @@ TaijiLiangyi:
     |Сферу Инь-Янь| в руку.
   Name: Рождение Инь-Янь
 Wunvyu:
-  Description: "Наносит {Damage} урона {Value1} раза.\n|Пока находиться в руке:| Когда\
-    \ {PlayerName} берёт карты вне фазы взятия карт, урон этих карт увеличивается\
-    \ на {Value2} в этой битве."
+  Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
+    |Пока находиться в руке:| Когда {PlayerName} берёт карты вне фазы взятия карт,\
+    \ урон этих карт увеличивается на {Value2} в этой битве."
   Name: Сферы страха наизлейшей из жриц
 FreeFly:
   Description: В начале хода {PlayerName:g} даёт {Mana}.
@@ -368,8 +369,8 @@ LightSpeed:
     \ карту в этом ходу."
   Name: Скачок со скоростью света
 PrivateVision:
-  Description: "Наносит {Damage} урона {Value1} раза.\nДаёт |Отражение| равное незаблокированному\
-    \ урону."
+  Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
+    Даёт |Отражение| равное незаблокированному урону."
   Name: Двойной фантом
 Chaowo:
   Name: Сверх-Эго
@@ -420,8 +421,8 @@ GuijiZaoxingYuan:
     \ в другую карту до конца битвы."
   Name: Навык скульптора - круг
 GuijiZaoxingFang:
-  Description: "Наносит {Damage} урона {Value1} раза\nЭта карта превратится в другую\
-    \ карту до конца битвы."
+  Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
+    Эта карта превратится в другую карту до конца битвы."
   Name: Навык скульптора - квадрат
 WaterPrincess:
   Description: "Даёт {Value1} |Барьера| за каждую карту в руке.\n|Дебют:| Добавьте\
@@ -431,8 +432,8 @@ WaterPrincess:
     \ Добавьте |Всплеск| в руку."
 RingoJinghua:
   Name: Очищение земли
-  Description: "|Изгоните| {Value1} карты с руки.\nДаёт {Value2} очков <sprite=\"\
-    Point\" name=\"Power\">."
+  Description: "|Изгоните| {Value1} карты с руки.\nДаёт {Value2} <sprite=\"Point\"\
+    \ name=\"Power\">."
 ShenziUpgradeAll:
   Name: Апофеоз
   Description: '|Улучшает| все карты до конца битва.'
@@ -866,7 +867,7 @@ StarlightTaifengSummoner:
     \ карты на {Value1}."
 StarlightTaifeng:
   Name: Звездный тайфун
-  Description: Наносит {Damage} урона {Value1} раза.
+  Description: Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.
 MasterOfCollection:
   Name: Эксперт коллекционирования
   Description: Каждый раз, когда карта |Оставляется|, стоимость её случайной маны
@@ -1124,7 +1125,7 @@ ChengDefense:
     \ хода."
   Name: Гул Тяньсяна
 KokoroDance:
-  Description: Когда враг получает дебафф, ему наносится {Value1} урона.
+  Description: Когда враг получает дебаф, ему наносится {Value1} урона.
   Name: Маскарадный танец
 SijiCard:
   Description: Выберите карту из руки. Если это карта |Проклятия| или |Статуса|, |Изгоните|
@@ -1349,8 +1350,8 @@ Bribery:
   Name: Взятка
 BailianBlack:
   Name: Объятья тьмы
-  Description: "Все разыгранные карты, не обладающие атакующими способностями, получают\
-    \ эффект |Изгнания|.\nИх стоимость снижается до {Mana}."
+  Description: "Все разыгранные карты, не являющиеся Атакой или Умением, |Изгоняются|.\n\
+    Их стоимость снижается до {Mana} до конца битвы."
 HuiyinAttack:
   Description: "Наносит {Damage} урона.\nСбросьте до {Value1:plural one='% карту'\
     \ other='% карты'}."
@@ -1429,7 +1430,7 @@ Nightmare:
     \ |Кошмаров|, {PlayerName} проиграет.\nТекущее количество: {NightmareCount}."
 ReverseJiejie:
   Name: Обратные границы
-  Description: Даёт {Value1} |Барьера|, когда один из баффов {PlayerName:g} исчезает.
+  Description: Даёт {Value1} |Барьера|, когда один из бафов {PlayerName:g} исчезает.
 DangerousMagician:
   Description: Даёт {Value1} |Всплеска Времени|, когда |Метательный нож| покидает
     руку.
