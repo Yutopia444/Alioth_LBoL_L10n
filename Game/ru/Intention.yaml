@@ -1,10 +1,11 @@
 AttackIntention:
-  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона игроку {Times}
-    раз. |Точность|'
+  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}
+    {Times} раз. |Точность|'
   Name: Атака
-  Description: '{OwnerName} нанесёт {Damage} урона игроку.'
-  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона игроку {Times} раз.'
-  AccurateDescription: '{OwnerName} нанесёт {Damage} урона игроку. |Точность|'
+  Description: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}.'
+  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a} {Times}
+    раз.'
+  AccurateDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}. |Точность|'
 AddCardIntention:
   Description: '{OwnerName} добавит карты |Статуса| в вашу стопку добора и/или сброса.'
   Name: Статус
@@ -54,14 +55,14 @@ RepairIntention:
 SpellCardIntention:
   Name: Спеллкарта
   DamageDescription: '{OwnerName} активирует свою |Спеллкарту| нанеся {Damage} урона
-    игроку.'
+    {PlayerName:a}.'
   Description: '{OwnerName} активирует свою |Спеллкарту|.'
   MultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся {Damage}
-    урона игроку {Times} раз.'
+    урона {PlayerName:a} {Times} раз.'
   AccurateDamageDescription: '{OwnerName} активирует свою |Спелл Карту|, нанеся {Damage}
-    урона игроку. |Точность|'
+    урона {PlayerName:a}. |Точность|'
   AccurateMultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся
-    {Damage} урона игроку {Times} раз. |Точность|'
+    {Damage} урона {PlayerName:a} {Times} раз. |Точность|'
 UnknownIntention:
   Name: ???
   Description: '{OwnerName} хочет сделать... что-то.'
