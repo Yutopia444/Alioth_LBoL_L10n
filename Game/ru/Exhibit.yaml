@@ -245,7 +245,7 @@ Pingguo:
   Description: При получении повышает максимальное здоровье на {Value1}.
   Name: Яблоко
 PortalGun:
-  Description: Товары в лавке Таканэ стоят на {Value1}% дешевле. В лавке Таканэ больше
+  Description: Товары в лавке Такане стоят на {Value1}% дешевле. В лавке Такане больше
     не заканчиваются товары.
   Name: Портальная пушка
 TiangouYuyi:
@@ -320,7 +320,7 @@ Bingkuai:
   Name: Куб льда
 JingwanMudan:
   Description: Наносит {Value2} урона всем врагам, когда {PlayerName} тратит {Value1}
-    {Mana} в битве.
+    {Mana} в битве. Сбрасывается в конце битвы.
   Name: Каменный пион
 Putao:
   Description: При получении повышает максимальное здоровье на {Value1}.
@@ -339,15 +339,15 @@ HeijiaoChangpian:
   Description: Даёт {Mana}, когда вы сбрасываете первую карту за ход.
   Name: Виниловая пластина
 Shuye:
-  Description: Даёт {Value2} маны случайного типа (цветная мана, <sprite="ManaSprite"
-    name="C"> or <sprite="ManaSprite" name="P">).
+  Description: Даёт {Value2} |Уворота|, когда тратится {Value1} {Mana}. Сбрасывается
+    в конце битвы.
   Name: Лист
 TangSan:
-  Description: В начале битвы даёт {Value1} |Защиты| и |Улучшает| {Value2} случайные
-    карты в вашей стартовой руке до конца битвы.
+  Description: В начале каждой битвы даёт {Value1} |Защиты| и |Улучшает| {Value2}
+    случайные карты стартовой руки до конца битвы.
   Name: Каракаса
 TiangouRongqiu:
-  Description: Даёт {Value1} |Духовности| в начале битвы.
+  Description: В начале битвы {PlayerName} получает {Value1} |Духовности|.
   Name: Помпоны тэнгу
 Saiqianxiang:
   Description: "Позволяет получать {Value1} <sprite=\"Point\" name=\"Gold\"> в Разрыве."
@@ -356,17 +356,17 @@ Shanbibu:
   Description: Даёт {Value1} |Уворота| в начале третьего хода {PlayerName:g}.
   Name: Лёгкая ткань
 TiangouMuji:
-  Description: Даёт {Value1} |Огневой Мощи| в начале битвы.
+  Description: В начале битвы {PlayerName} получает {Value1} |Огневой Мощи|.
   Name: Тенгу гета
 TiangouShanzi:
-  Description: Даёт {Value1} |Уворота| в начале битвы.
+  Description: В начале битвы {PlayerName} получает {Value1} |Уворота|.
   Name: Веер тэнгу
 TiangouXiangji:
-  Description: Накладывает {Value1} |Захвата|. в начале битвы.
+  Description: В начале битвы накладывает {Value1} |Захвата| на всех врагов.
   Name: Камера тэнгу
 TiangouShouji:
-  Description: В начале битвы вы берёте {Value1:plural one='% карту' other='% карты'}
-    |d:(В дополнение к стартовой руке)|.
+  Description: В начале битвы {PlayerName} берёт на {Value1:plural one='% карту' other='%
+    карты'} больше.
   Name: Сотовый тэнгу
 Shaoyao:
   Description: Восполняет {Value2} здоровья, когда {PlayerName} тратит {Value1} {Mana}
@@ -375,8 +375,8 @@ Shaoyao:
 SunhuaiHufu:
   ExtraDescription: "В начале битвы даёт {Value1} |Огневой Мощи| и {Value1} |Духовности|\
     \ за каждое |Несчастье| в колоде. \nПолучите |Несчастье| {Misfortunes}. "
-  Description: В начале битвы даёт {Value1} |Огневой Мощи| и {Value1} |Духовности|
-    за каждое |Несчастье| в колоде.
+  Description: В начале битвы {PlayerName} получает {Value1} |Огневой Мощи| и {Value1}
+    |Духовности| за каждое |Несчастье| в колоде.
   Name: Сломанный талисман
 Gongjuxiang:
   Description: "Добавляет {BaseMana} к вашей |базовой мане|.\nДаёт дополнительную\
@@ -384,7 +384,7 @@ Gongjuxiang:
   Name: Ящик с инструментами
   FlavorText: Необходимо для ремонта.
 Jiaobu:
-  Description: При получении |Улучшите| {Value1} случайные карты |Защиты| в колоде.
+  Description: При получении |Улучшает| {Value1} случайные карты |Защиты| в колоде.
   Name: Изолента
 ChaojiMogu:
   Description: При получении даёт {Value1} <sprite="Point" name="Power">.
@@ -393,14 +393,15 @@ JingzhiChaju:
   Description: '|Распитие чая| в Разрыве восполняет на {Value1} больше здоровья.'
   Name: Дорогой чайный сервиз
 DiannaoPeijian:
-  Description: '|Распитие чая| в Разрыве также даёт {Value1} <sprite="Point" name="Power">.'
+  Description: '|Распитие чая| в Разрыве дополнительно даёт {Value1} <sprite="Point"
+    name="Power">.'
   Name: Части компьютера
 HuangyouJiqiren:
   FlavorText: "Робот задающийся вопросом о причине его создания.\n«Какова моя цель?»"
   Name: Масляный робот
-  Description: '|Питье чая| в Разрыве также дает карту.'
+  Description: '|Питье чая| в Разрыве дополнительно дает карту.'
 Bumengwang:
-  Description: Услуга удаления карт у Таканэ всегда стоит {Value1} <sprite="Point"
+  Description: Услуга удаления карт у Такане всегда стоит {Value1} <sprite="Point"
     name="Gold">.
   Name: Ловец снов
 JudaShaozi:
@@ -409,13 +410,13 @@ JudaShaozi:
   Name: Большая ложка
 JiangyouPing:
   Description: Даёт {Value2} <sprite="Point" name="Power"> и восполняет {Value1} здоровья,
-    при посещении Таканэ.
+    когда {PlayerName} посещает Такане.
   Name: Бутылка соевого соуса
 YinzhiHuaibiao:
-  Description: Даёт {Mana}, когда вы разыгрываете {Value1} карты.
+  Description: Даёт {Mana}, когда разыгрывается {Value1} карт.
   Name: Серебряный карманные часы
 ShiyanQicai:
-  Description: Даёт {Mana}, когда вы перемешиваете колоду. |d:(Исключая начало битвы)|
+  Description: Даёт {Mana}, при перемешивании колоды.
   Name: Научное оборудование
 Shiyou:
   Description: Даёт {Mana} при получении или потере <sprite="Point" name="Gold"> во
@@ -425,10 +426,11 @@ ShenmiPifeng:
   Description: Даёт {Value1} |Защиты| в конце хода за каждую карту в руке.
   Name: Таинственный плащ
 ChuRenou:
-  Description: Предотвращает добавление {Counter} следующих |Несчастий| в колоду.
+  Description: "Предотвращает добавление |Несчастий| в колоду {Counter} раз.\n{Counter}\
+    \ раз осталось."
   Name: Кукла Хины
 Chaidao:
-  Description: При получении |Улучшите| {Value1} случайные карты |Атаки| в колоде.
+  Description: При получении |Улучшает| {Value1} случайные карты |Атаки| в колоде.
   Name: Чоппер
 Tuanzi:
   Description: В конце битвы {PlayerName} восполняет {Value1} здоровья и получает
@@ -442,10 +444,10 @@ Zhuzi:
   Description: Даёт {Mana}, когда {PlayerName} |Уворачивается| от |Атаки|.
   Name: Бамбук
 FaliJingdian:
-  Description: Даёт {Mana}, когда {PlayerName} активирует свою |Спелл Карту|.
+  Description: Даёт {Mana}, при активаций |Спеллкарты|.
   Name: Свиток колдовских сутр
 Huiyuanka:
-  Description: Товары в лавке Таканэ стоят на {Value1}% дешевле.
+  Description: Товары в лавке Такане стоят на {Value1}% дешевле.
   Name: Карточка участника
 Moping:
   Description: "В конце каждой {Value2} битвы восполняет {Value1} здоровья и даёт\
@@ -459,8 +461,8 @@ ZhuQingting:
   Description: Даёт {Value1} |Уворота| каждый {Value1} ход.
   Name: Лопасти
 Pijiu:
-  Description: "В начале битвы даёт {Value1} |Временной Мощи|.\nДобавьте |Лёгкое опьянение|\
-    \ в колоду."
+  Description: "В начале битвы даёт {Value1} |Временной Огневой Мощи|.\nДобавьте |Лёгкое\
+    \ опьянение| в колоду."
   Name: Пиво
 HeiseBijiben:
   Description: В начале битвы все именные противники теряют {Value1} здоровья.
@@ -476,7 +478,7 @@ Yushenqian:
   Name: Омикудзи
 Cookie:
   Description: При получении повышает максимальное здоровье на {Value1} и полностью
-    восполняет его.
+    его восполняет.
   Name: Вкусная печенька
 ZhinengYinxiang:
   Description: При получении выберите карту. Она получает эффект |Стартовая|.
@@ -484,7 +486,8 @@ ZhinengYinxiang:
   ExtraDescription: "При получении выберите карту из колоды. Она становится |Стартовой|.\n\
     Выбранная карта: | {HoldedCard} |."
 ShoubiaoMazuiqiang:
-  Description: В начале битвы накладывает {Value1} |Захвата| на всех врагов.
+  Description: В начале битвы накладывает {Value1} |Слабости| или |Уязвимости| на
+    всех врагов.
   Name: Умные часы
 Guangjian:
   Description: Даёт {Value1} |Огневой мощи| в начале битвы с Боссом.
@@ -498,8 +501,8 @@ JingboliJing:
     карты больше.
   Name: Кристально чистое зеркало
 Headphone:
-  Description: Когда вы играете карту с эффектом |Синергии|, повторите эффект |Синергии|
-    дополнительный раз.
+  Description: Когда разыгрывается карта с эффектом |Синергии|, эффект |Синергии|
+    повторяется один дополнительный раз.
   Name: Наушники с высокой чёткостью
 WaijieYanjing:
   Description: Денежные награды с битв дают на {Value1}% больше <sprite="Point" name="Gold">.
@@ -511,7 +514,8 @@ JingjieGanzhiyi:
   Description: '|p:Позволяет увидеть истинную природу реальности.|'
   Name: Прибор восприятия реальности
 Dahuoji:
-  Description: Первая ваша |Атака| за битву накладывает {Value1} |Уязвимости| на цель.
+  Description: Первая |Атака| {PlayerName:g} за битву накладывает {Value1} |Уязвимости|
+    на цель.
   Name: Зажигалка
 JingQiXi:
   Description: В начале каждого нечётного хода потеряйте случайную ману. В начале
