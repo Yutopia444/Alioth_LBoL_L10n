@@ -1140,9 +1140,94 @@ SummerFlower:
     造成 {Damage} 点伤害。
     |成长|：伤害提高 {Value1} 点。
 
-CirnoCangni:
-  Name: 藏匿于林
-  Description: 获得护盾，将一张生机加入你的手牌。
+LarvaSkill:
+  Name: 细碎鳞粉
+  Description: |-
+    施加 {Value1} 点临时火力减少。
+    将一张|拉尔瓦的鳞粉|加入手牌。
+
+IceBlock:
+  Name: 寒冰屏障
+  Description: |-
+    获得 {Block} 点格挡，然后结束本回合。
+    如果这是本回合你打出的第一张牌，下个回合开始时，对所有敌人施加|寒冷|并获得 {Shield} 点护盾。
+
+FairyIntellect:
+  Name: 妖精智慧
+  Description: |-
+    抽 {Value1} 张牌。
+    {PlayerName}回合开始时，抽 {Value2} 张牌。
+
+FairyWar:
+  Name: 妖精大战争
+  Description: 将放逐区所有的|妖精援助|牌移入你的手牌。
+
+StarAttack:
+  Name: 星辰阵雨
+  Description: |-
+    对目标造成{Value1}次{Damage}点伤害。
+    将一张|斯塔的侦察|加入你的手牌。
+
+LunaAttack:
+  Name: 沐浴月光
+  Description: |-
+    对目标造成{Damage}点伤害，目标失去{Value1}点临时火力。
+    将一张|露娜的静谧|加入你的手牌。
+
+WhiteWorld:
+  Name: 纯白的世界
+  Description: |-
+    {PlayerName}的回合结束时，获得一层|冰河护甲|。
+    |冰河护甲|：每回合打出的第一张牌费用增加{Mana}。
+    {PlayerName}的回合开始后，获得 4 点|临时火力|和|临时灵力|。
+
+BrainOverclock:
+  Name: 大脑超频
+  Description: |-
+    直到回合结束，每当{PlayerName}打出一张牌后就抽 2 张牌；
+    当{PlayerName}拥有超过 {Value1} 张手牌或丢弃任意手牌时，结束本回合。
+
+SunnyDefense:
+  Name: 妖精天幕
+  Description: |-
+    获得{Block}点格挡，获得等量于{PlayerName}当前|反射|层数的护盾。
+    将一张|桑尼的折射|加入你的手牌。
+
+ClownAbility:
+  Name: 地狱之蚀
+  Description: |-
+    回合开始后，随机将所有手牌的费用增加或减少{Mana1}。
+    将一张|皮斯的疯狂|加入你的手牌。
+
+FairySupportLarva:
+  Name: 拉尔瓦的鳞粉
+  Description: '|妖精支援|：获得 {Value1} 点格挡。'
+
+FairySupportDaiyo:
+  Name: 大妖精的协同
+  Description: '|妖精支援|：将抽牌堆中的一张基本攻击牌的伤害提高 {Value1}。（如果没有，则选择抽牌堆或弃牌堆的基本攻击牌）'
+
+FairySupportLily:
+  Name: 莉莉白的报春
+  Description: '|妖精支援|：获得{Mana}并保留。'
+
+FairySupportSunny:
+  Name: 桑尼的折射
+  Description: '|妖精支援|：获得 {Value1} 点反射。'
+
+FairySupportLuna:
+  Name: 露娜的静谧
+  Description: '|妖精支援|：获得 {Value1} 层庇邪，每有1层庇邪获得 {Value2} 点格挡。'
+
+FairySupportStar:
+  Name: 斯塔的侦测
+  Description: '|妖精支援|：对随机敌人施加 {Value1} 层虚弱，{Value1} 层易伤，{Value2} 层锁定。'
+
+FairySupportClown:
+  Name: 皮斯的疯狂
+  Description: |-
+    每当你支付合计 3 点以上的费用打出一张卡牌时，翻倍这张卡牌的伤害。
+    |妖精支援|：对随机敌人造成 {Value1} 点伤害。
 
 KoishiAttackG:
   Name: 蔷薇花开
@@ -1509,6 +1594,12 @@ Reborn:
     丢弃最左边的手牌。
     抽一张牌。
 
+YuyukoSing:
+  Name: 彼岸歌声
+  Description: |-
+    造成 {Damage} 点伤害。
+    可以多次|升级|。
+
 HuiyeMana:
   Name: 竹取的物语
   Description: '{PlayerName}的回合开始时，获得 {Value1} 点随机的法力；每回合提高 {Value1} 点。'
@@ -1826,12 +1917,6 @@ FlanBlack:
 AttackWithEveryColor:
   Name: 多彩攻击
   Description: '|每支付一点不同颜色的费用：|造成 {Damage} 点伤害。'
-
-YuyukoSing:
-  Name: 彼岸歌声
-  Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
 
 LigeluCard:
   Name: 萤光现象
@@ -2274,8 +2359,24 @@ FanzhuanChongdong:
   Description: '{PlayerName}的回合结束时，如果本回合没有恢复过生命，便失去 {Value1} 点生命。'
   FlavorText: 成为吸血鬼眷属的代价。
 
-TestUpgradable:
-  Name: 测试升级
-  Description: 造成{Damage}点伤害。
+DeployAttackDoll:
+  Name: (WIP) Attack Doll
+  Description: (WIP) 配置 AttackDoll
+
+DeployDefenseDoll:
+  Name: (WIP) Defense Doll
+  Description: (WIP) 配置 DefenseDoll
+
+DeployChargeDoll:
+  Name: (WIP) Charge Doll
+  Description: (WIP) 配置 ChargeDoll
+
+DoubleActiveTrigger:
+  Name: (WIP) 双重触发
+  Description: (WIP) 触发最前面的 Doll 主动效果两次
+
+TriggerAllPassive:
+  Name: (WIP) 触发全部被动
+  Description: (WIP) 触发所有 Doll 被动效果
 
 
