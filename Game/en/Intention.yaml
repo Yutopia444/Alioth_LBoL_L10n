@@ -1,88 +1,90 @@
 AttackIntention:
   Name: Attack
-  Description: This enemy intends to deal {Damage} damage to the Player.
-  MultiDamageDescription: This enemy intends to deal {Damage} damage to the Player
-    {Times} times.
-  AccurateDescription: This enemy intends to deal {Damage} damage to the Player. |Accurate|
-  AccurateMultiDamageDescription: This enemy intends to deal {Damage} damage to the
-    Player {Times} times. |Accurate|
+  Description: '{OwnerName} intends to |Attack|, dealing {Damage} damage.'
+  MultiDamageDescription: "{OwnerName} intends to |Attack|, dealing {Damage} damage\
+    \ {Times} time{Times:plural one='' other='s'}."
+  AccurateDescription: '{OwnerName} intends to |Attack|, dealing {Damage} damage.
+    Cannot be |Grazed|.'
+  AccurateMultiDamageDescription: "{OwnerName} intends to |Attack|, dealing {Damage}\
+    \ damage {Times} time{Times:plural one='' other='s'}. Cannot be |Grazed|."
 
 PositiveEffectIntention:
   Name: Buff
-  Description: This enemy intends to apply a |buff| to one or more enemies.
+  Description: '{OwnerName} intends to apply a |positive effect| to its allies.'
 
 NegativeEffectIntention:
   Name: Debuff
-  Description: This enemy intends to apply a |debuff| to the Player.
+  Description: '{OwnerName} intends to apply a |negative effect| to {PlayerName}.'
 
 AddCardIntention:
   Name: Status
-  Description: This enemy intends to add Status cards to the draw and/or discard pile(s).
+  Description: '{OwnerName} intends to add |Status cards| with negative effects.'
 
 DefendIntention:
   Name: Defense
-  Description: This enemy intends to grant |Block| or |Barrier| to one or more enemies.
+  Description: '{OwnerName} intends to apply a |defensive effect| to its allies.'
 
 GrazeIntention:
   Name: Graze
-  Description: This enemy intends to grant |Graze| to one or more enemies.
+  Description: '{OwnerName} intends to apply |Graze| to its allies.'
 
 SpawnIntention:
   Name: Summon
-  Description: This enemy intends to |Summon| additional enemies into combat.
+  Description: '{OwnerName} intends to |summon reinforcements|.'
 
 SleepIntention:
   Name: Sleep
-  Description: '|d:Currently away in the kingdom of dreams. Zzz...|'
+  Description: '{OwnerName} is asleep. |d:Zzz~|'
 
 StunIntention:
   Name: Stunned
-  Description: '|d: Can''t act this turn.|'
+  Description: '{OwnerName} can''t act this turn.'
 
 EscapeIntention:
   Name: Escape
-  Description: This enemy intends to |run away| from combat.
+  Description: '{OwnerName} intends to |flee|.'
 
 ExplodeIntention:
   Name: Detonate
-  Description: This enemy intends to |detonate|, defeating itself to deal {Damage}
-    damage to the Player.
+  Description: '{OwnerName} intends to |detonate|, dealing {Damage} damage.'
 
 ExplodeAllyIntention:
   Name: Detonate
-  Description: This enemy intends to |detonate| the enemy with the least life.
+  Description: '{OwnerName} intends to |detonate| the enemy with the least life.'
 
 CountDownIntention:
   Name: Countdown
-  Description: This enemy intends to unleash their |Spell Card| after {Counter} more
-    turn(s).
+  Description: "{OwnerName} intends to unleash their |Spell Card| after {Counter}\
+    \ turn{Counter:plural one='' other='s'}."
 
 ChargeIntention:
   Name: Charge
-  Description: This enemy intends to gather strength for a |powerful move|.
+  Description: '{OwnerName} is gathering strength...'
 
 HealIntention:
   Name: Heal
-  Description: This enemy intends to |heal| one or more enemies.
+  Description: '{OwnerName} intends to |heal| its allies, restoring their life.'
 
 RepairIntention:
   Name: Repair
-  Description: This enemy intends to |heal| one or more enemies.
+  Description: '{OwnerName} intends to |repair| its allies, restoring their life.'
 
 SpellCardIntention:
   Name: Spell Card
-  Description: This enemy intends to unleash their |Spell Card|.
+  Description: '{OwnerName} intends to unleash their |Spell Card|.'
   DamageDescription: |-
-    This enemy intends to unleash their |Spell Card|, dealing {Damage} damage to the Player.
+    {OwnerName} intends to unleash their |Spell Card|, dealing {Damage} damage.
   MultiDamageDescription: |-
-    This enemy intends to unleash their |Spell Card|, dealing {Damage} damage to the Player {Times} times.
+    {OwnerName} intends to unleash their |Spell Card|, dealing {Damage} damage {Times} time{Times:plural one='' other='s'}.
   AccurateDamageDescription: |-
-    This enemy intends to unleash their |Spell Card|, dealing {Damage} damage to the Player. |Accurate|
+    {OwnerName} intends to unleash their |Spell Card|, dealing {Damage} damage. 
+    Cannot be |Grazed|.
   AccurateMultiDamageDescription: |-
-    This enemy intends to unleash their |Spell Card|, dealing {Damage} damage to the Player {Times} times. |Accurate|
+    {OwnerName} intends to unleash their |Spell Card|, dealing {Damage} damage {Times} time{Times:plural one='' other='s'}.
+    Cannot be |Grazed|.
 
 UnknownIntention:
-  Name: '???'
-  Description: This enemy intends to do... |something|.
+  Name: 'Unknown'
+  Description: '{OwnerName} intends to do... something.'
 
 
