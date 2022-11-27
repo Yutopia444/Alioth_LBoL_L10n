@@ -1,10 +1,10 @@
 AttackIntention:
-  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}
-    {Times} раз. |Точность|'
+  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:d}
+    {Times:plural one=''% раз'' other=''% раза''}. |Точность|'
   Name: Атака
-  Description: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}.'
-  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a} {Times}
-    раз.'
+  Description: '{OwnerName} нанесёт {Damage} урона {PlayerName:d}.'
+  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:d} {Times:plural
+    one=''% раз'' other=''% раза''}.'
   AccurateDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}. |Точность|'
 AddCardIntention:
   Description: '{OwnerName} добавит карты |Статуса| в вашу стопку добора и/или сброса.'
@@ -14,7 +14,7 @@ DefendIntention:
     врагов.'
   Name: Защита
 StunIntention:
-  Description: '|d: {OwnerName} не может действовать в этот ход.|'
+  Description: '|d: {OwnerName} не может действовать в этоv ходу.|'
   Name: Оглушение
 ExplodeAllyIntention:
   Description: '{OwnerName} |Взорвёт| врага с меньшим здоровьем.'
@@ -36,7 +36,7 @@ SleepIntention:
   Description: '|d:{OwnerName} в данный момент находиться в царстве снов. Zzz...|'
 EscapeIntention:
   Name: Побег
-  Description: '{OwnerName} намеревается |Сбежать| из битвы.'
+  Description: '{OwnerName} намеревается |сбежать|.'
 ExplodeIntention:
   Name: Детонация
   Description: '{OwnerName} намеревается |Взорваться|, нанеся {Damage} урона.'
