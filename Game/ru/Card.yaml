@@ -787,7 +787,7 @@ AccuracyLaser:
   Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
     |Когда оставляется:| Стоимость этой карты понижается на {Mana}."
 ScryBlock:
-  Description: Даёт {Value1} |Защиты|, когда {PlayerName} предсказывает.
+  Description: Даёт {Value1} |Защиты|, когда {PlayerName} |предсказывает|.
   Name: Преднамеренность
 LearnAstrology:
   Description: В начале хода {PlayerName:g}, если в руке нет |Астрологии| добавляет
@@ -816,7 +816,7 @@ ShibaiChanwu:
 Yinhe:
   Name: Млечный путь
   Description: "Даёт {Block} |Защиты|.\n|Когда оставляется:| повышает кол-во даваемой\
-    \ |Защиты| на {Value1}."
+    \ |Защиты| на {Value1} в этой битве."
 PotionJungle:
   Name: Светящийся лес
   Description: В конце хода {PlayerName:g}, добавляет {Value1:plural one='% |Нестабильное
@@ -1268,11 +1268,11 @@ TrueMoon:
   Name: Истинное полнолуние
 GrimoireStudy:
   Description: "Отнимает {Value1} здоровья.\nВ конце хода {PlayerName:g} добавляет\
-    \ |Радугу| в руку.\nЗа каждую затраченную ею <sprite=\"ManaSprite\" name=\"1\"\
-    >: Продлевает эффект этой карты на один дополнительный ход."
+    \ |Радугу| в руку.\n|За каждую затраченную ею <sprite=\"ManaSprite\" name=\"1\"\
+    >:| Продлевает эффект этой карты на один дополнительный ход."
   Name: Изучить гримуар
   UpgradedDescription: "Отнимает {Value1} здоровья.\nДобавляет |Радугу| в руку.\n\
-    За каждую затраченную ею <sprite=\"ManaSprite\" name=\"1\">: Продлевает эффект\
+    |За каждую затраченную ею <sprite=\"ManaSprite\" name=\"1\">:| Продлевает эффект\
     \ этой карты на один дополнительный ход."
   FlavorText: '"Позвольте мне сначала проверить слабые места этого монстра..."'
 ShannvAbility:
@@ -1460,8 +1460,8 @@ DangerousMagician:
     руку.
   Name: Опасный иллюзионист
 PoisonPotion:
-  Description: "|Нестабильные зелья| накладывают {Value1} |Яда|.\nДобавляет {Value2}\
-    \ |Нестабильных зелий| в стопку добора."
+  Description: "|Нестабильные зелья| накладывают {Value1} |Яда|.\nДобавляет {Value2:plural\
+    \ one='% |Нестабильное зелье|' other='% |Нестабильных зелий|'} в стопку добора."
   Name: Ведьмин котёл
 CollectionDefense:
   Description: Даёт |Защиту|, равную количеству карт в стопке добора. ({Block} Защиты)
@@ -1469,6 +1469,7 @@ CollectionDefense:
     Барьера)
   NonbattleDescription: Даёт |Защиту|, равную количеству карт в стопке добора.
   UpgradedNonbattleDescription: Даёт |Барьер|, равный количеству карт в стопке добора.
+  Name: Слишком крута для неудачи
 ToolFirstAid:
   Name: Аптечка
   Description: "Удаляет все негативные статусы с {PlayerName:g}.\nВосполняет {Value1}\
