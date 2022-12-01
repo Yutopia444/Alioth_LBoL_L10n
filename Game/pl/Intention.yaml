@@ -5,19 +5,19 @@ SleepIntention:
   Description: '{OwnerName} śpi. |d:Zzz~|'
   Name: Sen
 ExplodeIntention:
-  Description: "{OwnerName} zamierza się |zdetonować|, zadawając {Damage:plural one:'%\
-    \ obrażenie' few:'% obrażenia' many:'% obrażeń'}."
+  Description: "{OwnerName} zamierza się |zdetonować|, zadawając {Damage:plural one='%\
+    \ obrażenie' few='% obrażenia' many='% obrażeń'}."
   Name: Detonacja
 AttackIntention:
   Name: Atak
-  Description: "{OwnerName} ma zamiar |Zaatakować|, zadawając {Damage:plural one:'%\
-    \ obrażenie' few:'% obrażenia' many:'% obrażeń'}."
+  Description: "{OwnerName} ma zamiar |Zaatakować|, zadawając {Damage:plural one='%\
+    \ obrażenie' few='% obrażenia' many='% obrażeń'}."
   MultiDamageDescription: "{OwnerName} ma zamiar |Zaatakować|, zadawając {Damage:plural\
-    \ one:'% obrażenie' few:'% obrażenia' many:'% obrażeń'} {Times} razy."
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} {Times} razy."
   AccurateDescription: "{OwnerName} ma zamiar |Zaatakować|, zadawając {Damage:plural\
-    \ one:'% obrażenie' few:'% obrażenia' many:'% obrażeń'}. Jest nie do |Uniknięcia|."
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}. Jest nie do |Uniknięcia|."
   AccurateMultiDamageDescription: "{OwnerName} ma zamiar |Zaatakować|, zadawając {Damage:plural\
-    \ one:'% obrażenie' few:'% obrażenia' many:'% obrażeń'} {Times} razy. Jest nie\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} {Times} razy. Jest nie\
     \ do |Uniknięcia|."
 PositiveEffectIntention:
   Name: Buff
@@ -46,4 +46,31 @@ ExplodeAllyIntention:
 CountDownIntention:
   Name: Odliczanie
   Description: "{OwnerName} zamierza wywołać swoją |Kartę Zaklęć| {Counter:plural\
-    \ one:'w następnej turze' few:'za % tury' many:'za % tur'}."
+    \ one='w następnej turze' few='za % tury' many='za % tur'}."
+HealIntention:
+  Description: '{OwnerName} zamierza |uleczyć| swoich sojuszników, odnawiając im zdrowie.'
+  Name: Leczenie
+RepairIntention:
+  Description: '{OwnerName} zamierza |naprawić| swoich sojuszników, odnawiając im
+    zdrowie.'
+  Name: Naprawa
+SpellCardIntention:
+  DamageDescription: "{OwnerName} zamierza wywołać swoją |Kartę Zaklęć|, zadawając\
+    \ {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
+  AccurateDamageDescription: "{OwnerName} zamierza wywołać swoją |Kartę Zaklęć|, zadawając\
+    \ {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\nJest\
+    \ nie do |Uniknięcia|."
+  Name: Karta Zaklęć
+  Description: '{OwnerName} zamierza wywołać swoją |Kartę Zaklęć|.'
+  MultiDamageDescription: "{OwnerName} zamierza wywołać swoją |Kartę Zaklęć|, zadawając\
+    \ {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'} {Times}\
+    \ razy."
+  AccurateMultiDamageDescription: "{OwnerName} zamierza wywołać swoją |Kartę Zaklęć|,\
+    \ zadawając {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Times} razy.\nJest nie do |Uniknięcia|."
+ChargeIntention:
+  Name: Ładowanie
+  Description: '{OwnerName} zbiera swoją siłę...'
+UnknownIntention:
+  Name: Nieznany
+  Description: '{OwnerName} zamierza zrobić... coś.'

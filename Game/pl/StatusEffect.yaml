@@ -51,30 +51,30 @@ Weak:
     one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}.
   Brief: Ataki {OwnerName:g} zadawają o {Value}% mniej obrażeń.
 Graze:
-  Description: "{OwnerName} niweluje {Level:plural one:'następn otrzymanyy atak' few:'naztępne\
-    \ % otrzymane ataki' many:'następne % otrzymanych ataków'}.\nStrać 1 |Unik| po\
+  Description: "{OwnerName} niweluje {Level:plural one='następn otrzymanyy atak' few='naztępne\
+    \ % otrzymane ataki' many='następne % otrzymanych ataków'}.\nStrać 1 |Unik| po\
     \ otrzymanym ataku lub na początku każdej tury."
   Name: Unik
   Brief: "{OwnerName} niweluje otrzymywane ataki.\nStrać 1 |Unik| po otrzymanym ataku\
     \ lub na początku każdej tury."
 ExtraTurn:
-  Description: "{OwnerName} weźmie {Level:plural one:'dodatkową turę' few:'% dodatkowe\
-    \ tury' many:'% dodatkowych tur'} po tej turze."
+  Description: "{OwnerName} weźmie {Level:plural one='dodatkową turę' few='% dodatkowe\
+    \ tury' many='% dodatkowych tur'} po tej turze."
   Name: Dodatkowa Tura
   Brief: Gdy {OwnerName} zakończy turę, rozpocznie kolejną.
 LimitedDamage:
-  Description: "{OwnerName} może otrzymać conajwyżej {Limit} obrażeń w każdej turze.\
-    \ Może jeszcze otrzymać {Count:plural one:'% obrażenie' few:'% obrażenia' many:'%\
+  Description: "{OwnerName} może otrzymać co najwyżej {Limit} obrażeń w każdej turze.\
+    \ Może jeszcze otrzymać {Count:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'} w tej turze."
   Name: Ogranicznik Obrażeń
   Brief: '{OwnerName} może otrzymać tylko ograniczoną ilość obrażeń.'
 TurnStartDontLoseBlock:
-  Description: "{OwnerName} nie utraci |Bloku| na początku {Level:plural one:'następnej\
-    \ tury' other:'następnych % tur'}."
+  Description: "{OwnerName} nie utraci |Bloku| na początku {Level:plural one='następnej\
+    \ tury' other='następnych % tur'}."
   Name: Przetrzymaj Blok
   Brief: '{OwnerName} nie utraci |Bloku| na początku kolejnych tur.'
 AmuletForCard:
-  Description: Oprzyj się {Level:plural one:'kolejnej karcie statusu, ktòrą' other:'kolejnym
+  Description: Oprzyj się {Level:plural one='kolejnej karcie statusu, którą' other='kolejnym
     % kartom statusu, które'} otrzymasz (zostają |Wydalone|).
   Name: Egzorcyzm
   Brief: Oprzyj się następnym kartom statusu, które otrzymasz (zostają |Wydalone|).
@@ -85,8 +85,8 @@ Vulnerable:
   Brief: '{OwnerName} otrzymuje o {Value}% więcej obrażeń od ataków.'
 LockedOn:
   Name: Cel
-  Description: "{OwnerName} otrzymuje o {Level:plural one:'% obrażenie' few:'% obrażenia'\
-    \ many:'% obrażeń'} więcej.\nStrać 1 |Cel| na początku każdej tury."
+  Description: "{OwnerName} otrzymuje o {Level:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} więcej.\nStrać 1 |Cel| na początku każdej tury."
   Brief: "{OwnerName} otrzymuje więcej obrażeń od ataków.\nStrać 1 |Cel| na początku\
     \ każdej tury."
 Invincible:
@@ -96,28 +96,152 @@ Invincible:
   Brief: '{OwnerName} nie będzie tracić więcej niż 1 punkt życia na raz.'
 Amulet:
   Name: Amulet
-  Description: Niweluje {Level:plural one:'następny debuff' few:'następne % debuffy'
-    many:'następne % debuffów'}.
+  Description: Niweluje {Level:plural one='następny debuff' few='następne % debuffy'
+    many='następne % debuffów'}.
   Brief: Niweluje nakładane debuffy.
 NextAttackUp:
-  Description: Następna karta |Ataku| zada o {Level:plural one:'% obrażenie' few:'%
-    obrażenia' many:'% obrażeń'} więcej.
+  Description: Następna karta |Ataku| zada o {Level:plural one='% obrażenie' few='%
+    obrażenia' many='% obrażeń'} więcej.
   Name: Zwiększone Obrażenia
   Brief: Następna karta |Ataku| zadaje zwiększone obrażenia.
 TempElectric:
   Name: Ładunek Statyczny
-  Description: "Gdy trafiony, oddaj {Level:plural one:'% obrażenie' few:'% obrażenia'\
-    \ many:'% obrażeń'} napastnikowi.\nUsunięty na początku następnej tury {OwnerName:g}."
+  Description: "Gdy trafiony, oddaj {Level:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} napastnikowi.\nUsunięty na początku następnej tury {OwnerName:g}."
   Brief: "Gdy trafiony, oddaj napastnikowi.\nUsunięty na początku następnej tury {OwnerName:g}."
 Electric:
   Name: Ładunek Statyczny
-  Description: Gdy trafiony, oddaj {Level:plural one:'% obrażenie' few:'% obrażenia'
-    many:'% obrażeń'} napastnikowi.
+  Description: Gdy trafiony, oddaj {Level:plural one='% obrażenie' few='% obrażenia'
+    many='% obrażeń'} napastnikowi.
   Brief: Gdy trafiony, oddaj napastnikowi.
 Reflect:
   Name: Odbicie
-  Description: Gdy trafiony, oddaj {Level:plural one:'% obrażenie' few:'% obrażenia'
-    many:'% obrażeń'} napastnikowi i usuń ten efekt.
+  Description: Gdy trafiony, oddaj {Level:plural one='% obrażenie' few='% obrażenia'
+    many='% obrażeń'} napastnikowi i usuń ten efekt.
   Brief: Gdy trafiony, oddaj napastnikowi i usuń ten efekt.
 NextTurnLoseRandomMana:
   Name: Utrata Many w Następnej Turze
+  Description: Na początku następnej tury {OwnerName:g}, strać {Level:plural one='%
+    losowy punkt' few='% losowe punkty' many='% losowych punktów'} many.
+  Brief: Na początku następnej tury {OwnerName:g}, strać losowe punkty many.
+NextTurnLoseHp:
+  Description: Na początku następnej tury {OwnerName:g}, strać {Level:plural one='%
+    punkt' few='% punky' many='% punktów'} życia.
+  Name: Utrata Życia w Następnej Turze
+  Brief: Na początku następnej tury {OwnerName:g}, utrać punkty życia.
+NextTurnGainBlock:
+  Description: Na początku następnej tury {OwnerName:g}, zyskaj {Level:plural one='%
+    punkt' few='% punkty' many='% punktów'} |Bloku|.
+  Name: Blok w Następnej Turze
+  Brief: Na początku następnej tury {OwnerName:g}, zyskaj trochę |Bloku|.
+CantDrawThisTurn:
+  Description: Nie można dobrać kart do końca tury.
+  Name: Niwelacja Doboru
+  Brief: Nie można dobrać kart do końca tury.
+CantDrawNextTurn:
+  Brief: Nie będzie można dobrać kart w następnej turze po jej fazie doboru.
+  Name: Negacja Doboru w Następnej Turze
+  Description: Nie będzie można dobrać kart w następnej turze po jej fazie doboru.
+NoAttackDamageThisTurn:
+  Brief: Nie można zadawać obrażeń w tej turze.
+  Description: Nie można zadawać obrażeń w tej turze.
+GuangxueMicai:
+  Description: "{OwnerName} dostaje o połowę mniej obrażeń od ataków {Duration:plural\
+    \ one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
+  Name: Kamuflaż Optyczny
+  Brief: '{OwnerName} dostaje o połowę mniej obrażeń od ataków.'
+DroneBlock:
+  Brief: Na końcu tury {OwnerName:g}, zyskaj trochę |Bloku|.
+  Name: Macierz Obronna
+  Description: Na końcu tury {OwnerName:g}, zyskaj {Level:plural one='% punkt' few='%
+    punkty' many='% punktów'} |Bloku|.
+Servant:
+  Description: "Gdy przywołujący zostanie pokonany, wszystkie przywołańce też zostaną\
+    \ pokonane.\nNie aktywuje efektów wywołanych śmiercią."
+  Name: Przyzwany
+DeathExplodeCount:
+  Description: "Zadaj {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {PlayerName:d} gdy {OwnerName} zostenie pokonana.\nZadaj zdetonuj się za {Count:plural\
+    \ one='% turę' few='% tury' many='% tur'}, zadawając dwukrotne obrażenia."
+  Name: Pocisk Zemsty
+DeathVulnerable:
+  Description: Gdy {OwnerName} zostanie pokonana, nałóż {PlayerName:d} {Level:plural
+    one='% |Wrażliwość|' few='% |Wrażliwości|' many='% |Wrażliwości|'}.
+  Name: Śmiertelnie Blady
+LoveGirlDamageReduce:
+  Description: Uczucia {OwnerName:g} pozostają nieodwzajemnione. Otrzymuje o {Rate}%
+    mniej obrażeń.
+  Name: Zwlekający Żal
+PhoneBillSe:
+  Description: "{OwnerName} zabiera {Level} <sprite=\"Point\" name=\"Gold\"> za każde\
+    \ połączenie.\nUpuści {Count} <sprite=\"Point\" name=\"Gold\">, gdy zostanie pokonana."
+  Name: Rachunek za Telefon
+Lunatic:
+  Description: "Magiczne światło świeci nad wszystkimi. Pchnięta ku szaleństwu, czyny\
+    \ {OwnerName:g} są wzmocnione.\nZyskaj {Mana} na początku tury {PlayerName:g}."
+  Name: Szaleństwo
+InterviewDone:
+  Description: "{OwnerName} odkryła prawdę o tym incydencie!\nZacznie dystrybucję\
+    \ specjalnego wydania Gazety Bunbunmaru."
+  Name: Zakończony Wywiad
+RinAura:
+  Description: Mściwe Dusze przyzwane przez {OwnerName:a} zadawają o {Level:plural
+    one='% obrażenie' few='% obrażenia' many='% obrażeń'} więcej pociskami zemsty.
+  Name: Gwałtowny Płomień
+FirepowerIsJustice:
+  Description: '|Moc| {OwnerName:g} nigdy nie będzie niższa od {PlayerName:g}.'
+  Name: Siła Jest Nieomylna!
+NextTurnGainShield:
+  Name: Bariera w Następnej Turze
+  Description: Na początku następnej tury {OwnerName:g}, zyskaj {Level:plural one='%
+    punkt' few='% punkty' many='% punktów'} |Bariery|.
+  Brief: Na początku następnej tury {OwnerName:g}, zyskaj trochę |Bariery|.
+NoAttackDamageNextTurn:
+  Description: Nie będzie można zadawać obrażeń w następnej turze.
+  Brief: Nie będzie można zadawać obrażeń w następnej turze.
+TimeIsLimited:
+  Name: Limit Czasowy
+  Description: Do następnej tury przeciwnika karty kosztują o {Mana} więcej, aby zagrać.
+  Brief: Do następnej tury przeciwnika karty kosztują więcej many, aby zagrać.
+MaoyuBlock:
+  Name: Puszysty
+  Description: "{OwnerName} zyskuje {Level:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} |Bloku|, gdy zostanie zaatakowana."
+DeathExplodeNotCount:
+  Description: "Zadaj {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {PlayerName:d} gdy {OwnerName} zostenie pokonana.\nZadaj dwukrotne obrażenia,\
+    \ jeśli zostanie zdetonowana."
+  Name: Pocisk Zemsty
+Drowning:
+  Name: Tonięcie
+  Description: "{OwnerName} otrzymuje {Level:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} na końcu każdej swojej tury."
+LoveGirlDamageIncrease:
+  Name: Trzepotające się Serce
+  Description: Uczucia {OwnerName:g} zostały odwzajemnione. Otrzymuje o {Rate}% więcej
+    obrażeń.
+AbsorbPower:
+  Name: Czerwona Kula
+  Description: Na końcu tury {OwnerName:g}, podnosi ono |Moc| o {Level}.
+AbsorbSpirit:
+  Name: Niebieska Kula
+  Description: Na końcu tury {OwnerName:g}, podnosi ono |Uduchowienie| o {Level}.
+LunaticTorch:
+  Name: Pochodnia Obłędu
+  Description: "Pochodnia {OwnerName:g} świeci osobliwym światłem. Wszyscy wrogowie\
+    \ są pchnięci ku |Szaleństwu|.\nZyskaj {Mana} na początku tury {PlayerName:g}."
+WindGirl:
+  Name: Dziewczyna Boga Wiatru
+  Description: '|Unik| {OwnerName:g} jest uzupełniany do {Level} na końcu jej tury.'
+Interview:
+  Name: Trwający Wywiad
+  Description: '{OwnerName} prowadzi wywiady o incydencie na miejscu.'
+RinSummon:
+  Name: Wskrzeszenie Duszy
+  Description: "{OwnerName} can revive {Level:plural one='% Mściwą Duszę' other='%\
+    \ Mściwe Dusze'}.\nJedna jest dodana co {Limit:plural one='turę' few='% tury'\
+    \ many='% tur'}."
+Fengyin:
+  Name: Zapieczętowana
+  Description: "{PlayerName} nie może zagrać kart ataku {Duration:plural one='do końca\
+    \ tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
