@@ -179,8 +179,8 @@ AutoQumobang:
     \ фазы взятия карт.\nКогда эта карта |Оставляется| {Value2} раза, |Изгоните| её."
   Name: Яростный жезл очищения
 Potion:
-  Description: '|Когда берётся в руку:| Даёт {Mana}, наносит {Damage} урона случайному
-    врагу, затем |Изгоняется|.'
+  Description: '|Когда попадает в руку:| Даёт {Mana}, наносит {Damage} урона случайному
+    врагу и |Изгоняется|.'
   Name: Нестабильное зелье
   FlavorText: ВНИМАНИЕ! Зелья могут взорваться!
 Jiangshen:
@@ -252,7 +252,8 @@ MarisaBlockB:
   Description: Даёт {Block} |Защиты|.
   Name: Защита звездной пылью
 CraftPotion:
-  Description: Добавляет {Value1} |Нестабильное зелье| в стопку добора.
+  Description: Добавляет {Value1:plural one='% |Нестабильное зелье|' other='% |Нестабильных
+    зелий|'} в стопку добора.
   UpgradedDescription: "Добавляет {Value1} |Нестабильное зелье| в стопку добора.\n\
     Возьмите {Value1:plural one='% карту' other='% карты'}."
   Name: Зельеварение
@@ -453,12 +454,12 @@ ShenziUpgradeAll:
   Name: Апофеоз
   Description: '|Улучшает| все карты до конца битва.'
 ShenziWake:
-  Name: Оживление святого
+  Name: Воскрешение святого
   Description: "Выберите одну из {Value1} случайных карт со стоимость Х+1 и добавьте\
     \ её в руку. Она |временно стоит| {Mana} и имеет эффекты |Изгнания| и |Эфирности|."
 YuetuInvincible:
   Name: Кролик падающий с небес
-  Description: "Даёт {Value1} |Безупречности|.\nОтнимает {Value2} |Духовности|."
+  Description: "Даёт {Value1} |Бесшовности|.\nОтнимает {Value2} |Духовности|."
   FlavorText: Бегство из очищенного мира в рай грязи.
 PlayWithWater:
   Description: "Возьмите {Value1:plural one='% карту' other='% карты'}.\nСбросьте\
@@ -555,16 +556,19 @@ RandomShoot:
     other='% раза'}.
   Name: Непроизвольный выстрел
 DropBook:
-  Description: "Даёт {Block} |Защиты|.\nДобавляет {Value1} |Астрологию| в руку."
+  Description: "Даёт {Block} |Защиты|.\nДобавляет {Value1:plural one='% |Астрологию|'\
+    \ other='% |Астрологии|'} в руку."
   Name: Правоверное восстание
 DarkSatellite:
   Description: "Даёт {Block} |Защиты|.\nВозьмите {Value1} карты. если последняя разыгранная\
     \ карта в этом бою была чёрной."
   Name: Темный спутник
 WinterWarm:
-  ExtraDescription1: "Даёт {Value1} |Собранности|.\n|d:Дебют:| Возьмите {Value2} карты."
-  Description: "Даёт {Value1} |Собранности|.\n|Дебют:| Возьмите {Value2} карты."
-  Name: Тепло в холодную зиму
+  ExtraDescription1: "Даёт {Value1} |Собранности|.\n|d:Дебют:| Возьмите {Value2:plural\
+    \ one='% карту' other='% карты'}."
+  Description: "Даёт {Value1} |Собранности|.\n|Дебют:| Возьмите {Value2:plural one='%\
+    \ карту' other='% карты'}."
+  Name: Рукогрейка
 AsteroidBelt:
   Description: "Наносит {Damage} урона {Value1:plural one='% раз' other='% раза'}.\n\
     Даёт {Value1} |Заряда|, если последняя разыгранная карта в этом бою была красной."
@@ -580,17 +584,18 @@ MarisaDraw:
     \ эффект |Ража|."
   Name: Импровизация
 SatelliteIllusion:
-  Description: "Наносит {Damage} урона.\nДобавляет {Value1} |Астрологию| в руку."
+  Description: "Наносит {Damage} урона.\nДобавляет {Value1:plural one='% |Астрологию|'\
+    \ other='% |Астрологии|'} в руку."
   Name: Иллюзия спутника
 ReadyForBurst:
-  Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Заряд|."
-  Name: Готовность ко взрыву
+  Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Заряда|."
+  Name: Готовность к действию
 HuojianSaoba:
   Description: "Даёт {Value1} |Уворота|.\nДаёт {Value1} |Заряда|."
   Name: Ракетная метла
 Alioth:
-  Description: "Предскажите {Scry} карты.\nДаёт {Value2} |Заряда|.\nВозьмите {Value1:plural\
-    \ one='% карту' other='% карты'}."
+  Description: "Предскажите {Scry} карты.\nВозьмите {Value1:plural one='% карту' other='%\
+    \ карты'}.\nДаёт {Value2} |Заряда|."
   Name: Алиот
 ScryAttack:
   Description: "Наносит {Damage} урона.\nВозвращается в руку из стопки сброса, когда\
@@ -982,7 +987,7 @@ ToolRandomTool:
     \ в руку. |Кол-во её использовании[{1}]|\n|Кол-во использовании [{DeckCounter}]|"
   Name: Тактическая рация
 WanderingSoul:
-  Description: "Даёт {Value1} |Безупречности|.\nЭта карта все еще находится в разработке.\n\
+  Description: "Даёт {Value1} |Бесшовности|.\nЭта карта все еще находится в разработке.\n\
     Пожалуйста, ожидайте грядущих обновлений."
   Name: Блуждающая душа
 VampireShoot2:
@@ -1016,7 +1021,7 @@ ToolMaxHp:
   Description: "Повышает макс. здоровье на {Value1}.\n|Кол-во использовании [{DeckCounter}]|"
   Name: Хрустящий огурец
 ToolInvincible:
-  Description: "Даёт {Value1} |Безупречности|.\n|Кол-во использовании [{DeckCounter}]|"
+  Description: "Даёт {Value1} |Бесшовности|.\n|Кол-во использовании [{DeckCounter}]|"
   Name: Одеяние ангела
 ToolExile:
   Description: "|Изгоните| любое количество карт из руки.\n|Кол-во использовании [{DeckCounter}]|"
@@ -1205,7 +1210,7 @@ ReisenMana:
   Name: Улучшение зрения
 YijiuAttack:
   Description: "Наносит {Damage} урона.\nПри повержений врага этой картой, даёт {Value1}\
-    \ |Безупречности| и |Изгоняется|."
+    \ |Бесшовности| и |Изгоняется|."
   Name: Электрическая дрель
 HuiyinRetain:
   Description: "Даёт {Block} |Защиты|.\nВерните до {Value1} выбранных карт из стопки\
