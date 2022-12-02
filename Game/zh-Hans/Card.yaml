@@ -1140,17 +1140,30 @@ SummerFlower:
     造成 {Damage} 点伤害。
     |成长|：伤害提高 {Value1} 点。
 
+CoolBreeze:
+  Name: 凝露清风
+  Description: |-
+    攻击|寒冷|的目标使这张牌的伤害提高{Value1}。
+    造成{Damage}点伤害。
+
 LarvaSkill:
   Name: 细碎鳞粉
   Description: |-
-    施加 {Value1} 点临时火力减少。
-    将一张|拉尔瓦的鳞粉|加入手牌。
+    施加 {Value1} 层|中毒|。
+    将一张|拉尔瓦的振翅|加入手牌。
 
 CallFriend:
   Name: 呼朋唤友
   Description: |-
     获得 {Value1} 层闪避。
     从 {Value2} 张附带|应援|的卡牌中选择一张加入你的手牌。
+
+IceSword:
+  Name: 塑冰成剑
+  Description: |-
+    选择任意数量附带保留的手牌丢弃，每丢弃一张牌使本牌伤害提高 {Value1} 点。
+    造成 {Damage} 点伤害。
+  FlavorText: 曾今有把名剑叫霜之哀伤。
 
 IceBlock:
   Name: 寒冰屏障
@@ -1168,9 +1181,41 @@ FairyTree:
   Name: 妖精的大树
   Description: 每回合第一次你将一张技能卡加入手牌后，获得{Mana}并抽1张牌。
 
+SenlinTanxian:
+  Name: 森林探险
+  Description: 向牌库加入一个随机工具牌（无法在本场战斗中使用）。（没写）
+
+DaiyoDefense:
+  Name: 大妖精
+  Description: |-
+    获得{Shield}点护盾。
+    将一张|大妖精的应援|加入手牌。
+
+LilyAttack:
+  Name: 惊喜之春
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    将一张|莉莉白的报春|加入手牌。
+
+GatherFairy:
+  Name: 妖精集结
+  Description: 抽取 {Value1} 张费用大于2的卡牌，其费用暂时减少1并附带|保留|。
+
 FairyWar:
   Name: 妖精大战争
   Description: 将放逐区所有的|妖精援助|牌移入你的手牌。
+
+Jubin:
+  Name: 巨冰炸裂
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    移除所有敌人的寒冷，每移除一个寒冷，将一张水流加入手牌。
+
+FairyEzuoju:
+  Name: 妖精恶作剧
+  Description: |-
+    将{Value1}张随机|妖精支援|牌置入弃牌堆，使其附带|填充|。
+    将一张{Value2}张|黑暗残留|置入弃牌堆。
 
 StarAttack:
   Name: 星辰阵雨
@@ -1210,7 +1255,7 @@ ClownAbility:
     将一张|皮斯的疯狂|加入你的手牌。
 
 FairySupportLarva:
-  Name: 拉尔瓦的鳞粉
+  Name: 拉尔瓦的振翅
   Description: '|妖精支援|：获得 {Value1} 点格挡。'
 
 FairySupportDaiyo:
@@ -1466,13 +1511,6 @@ ShannvAbility:
   Description: 在{PlayerName}的回合结束时，对所有敌人施加 {Value1} 层|中毒|。
   FlavorText: 医生提醒您，多喝热水。
 
-BlackHorseZui:
-  Name: 黑天马的罪孽
-  Description: |-
-    失去 {Value1} 点生命。
-    对所有敌人 {Damage} 点伤害 {Value2} 次。
-  FlavorText: 「这个弹幕是….超速罚单？！」
-
 XiaoemoBook:
   Name: 恶魔典籍
   Description: |-
@@ -1484,6 +1522,13 @@ XiaoemoBook:
     抽 {Value1} 张牌。
     |d:初见：将一张灵异加入手中。|
   FlavorText: 里面记载着诸如「往汽水里丢放糖」之类的内容。
+
+BlackHorseZui:
+  Name: 黑天马的罪孽
+  Description: |-
+    失去 {Value1} 点生命。
+    对所有敌人 {Damage} 点伤害 {Value2} 次。
+  FlavorText: 「这个弹幕是….超速罚单？！」
 
 HinaAttack:
   Name: 厄运之轮
@@ -1613,6 +1658,7 @@ LigeluCard:
 QiuSeed:
   Name: 春种秋收
   Description: 将一张|生机|置入抽牌堆顶部，其附带填充。
+  UpgradedDescription: 将一张|幻虹|置入抽牌堆顶部，其附带填充。
 
 QianGui:
   Name: 前鬼后鬼的守护
@@ -1936,17 +1982,75 @@ Zhulianshen:
     获得 {Block} 点|格挡|。
     抵挡接下来受到的 {Value1} 张状态牌（将它|放逐|）。
 
+YoumuSakura:
+  Name: 樱花一闪
+  Description: |-
+    获得{Value1}层闪避。
+    对所有敌人造成等量于放逐区卡牌数量的伤害{Value2}次。
+
+BaoziBird:
+  Name: 虹鹰信标
+  Description: |-
+    移除目标所有的闪避，施加{Value1}层锁定。
+    将至多{Value2}个剩余法力转化为{Mana}。
+
+SanaeRice:
+  Name: 五谷丰登米之浴
+  Description: 对所有敌人造成伤害，回复等量未被格挡的生命值。
+
+KaguyaTreeSee:
+  Name: 蓬莱的树海
+  Description: |-
+    每次收到伤害时，费用降低{Mana}。
+    将所有放逐区内附带|放逐|的卡牌移入抽牌堆。
+    所有卡牌失去|放逐|。
+
+MistLake:
+  Name: 迷雾之湖
+  Description: |-
+    获得 {Value1} 层闪避。
+    如果你的剩余法力大于 3，抽 {Value2} 张牌。
+
+LongArm:
+  Name: 延长的手臂
+  Description: |-
+    造成 {Damage} 点伤害。
+    如果你的手牌数量大于 {Value1} 张，获得{Mana}。
+
 ZoufangWater:
   Name: 诹访清流
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
     每打出一张能力牌，伤害提高 {Value2} 点。（共计 {AdditionalDamage} 点）
 
+SkyWater:
+  Name: 天水的奇迹
+  Description: |-
+    抽 {Value1} 张牌。
+    {PlayerName}回合结束时，每有一张不附带保留的手牌获得 {Value2} 点格挡。
+
+MeilingRain:
+  Name: 极彩沛雨
+  Description: |-
+    |每支付<sprite="ManaSprite" name="C">：|获得{Value1}点|格挡|，抽{Value2}张牌。
+    |每支付<sprite="ManaSprite" name="P"><sprite="ManaSprite" name="P">：|将一张|生机|加入手牌。
+
 KanakoWalk:
   Name: 神踏足的御神渡
   Description: |-
-    抽取10张牌，放逐所有抽取到的状态牌与诅咒牌。
-    结束本回合，本回合不会流失法力与丢弃卡牌。
+    抽取{Value1}张牌，放逐所有抽取到的状态牌与诅咒牌。
+    结束本回合，临时保留所有卡牌和法力。
+
+LifeGame:
+  Name: 生命游戏
+  Description: |-
+    只有当抽牌堆卡牌数量大于{PlayerName}生命时可以打出。
+    对目标造成等量于当前生命值的伤害。
+    |初见|：恢复 {Value1} 点生命。
+  ExtraDescription1: |-
+    只有当抽牌堆卡牌数量大于{PlayerName}生命时可以打出。
+    对目标造成等量于当前生命值的伤害。
+    |d:初见：恢复 {Value1} 点生命。|
 
 PaluxiCurse:
   Name: 丑时参拜
@@ -1955,6 +2059,10 @@ PaluxiCurse:
     施加 {Value1} 回合|虚弱|和|易伤|。
     将一张随机的|厄运|加入弃牌堆（不会进入卡组）。
   FlavorText: 今日凌晨二时三十分，桥姬水某某在一神社违规参拜时被执勤巫女当场抓获。
+
+YequePoison:
+  Name: 毒蛾的鳞粉
+  Description: 直到回合结束，每次攻击伤害造成未被格挡的伤害时，施加 {Value1} 层|毒|。
 
 ZoufangSnake:
   Name: 土著神崇拜
@@ -1967,6 +2075,24 @@ YachieDefend:
   Description: |-
     阻挡{PlayerName}的下 {Value1} 次生命损失。
     如果伤害来源是敌人，还会反弹给他。
+
+QiuGraze:
+  Name: 纷乱的落叶
+  Description: 获得{Value1}层|闪避|，每有一层闪避获得{Value2}层临时火力。
+
+FangxiangAttack:
+  Name: 剧毒抹消
+  Description: 对带有|毒|的目标造成{Damage}点伤害，否则施加{Value1}层|毒|。
+
+TigerNeijin:
+  Name: 沉寂的怒气
+  Description: |-
+    获得 {Value1} 点|火力|，这张牌提供的火力提高 {Value2} 点。
+    当你收到未被格挡的攻击伤害时，将弃牌区内的这张牌移入手牌。
+
+MeilingAbility:
+  Name: 芳华绚烂
+  Description: 每当你获得火力或临时火力时，获得{Value1}倍的|护盾|。
 
 TodayYesterday:
   Name: 今昔幻想乡
