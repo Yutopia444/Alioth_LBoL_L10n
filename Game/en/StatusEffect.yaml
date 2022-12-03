@@ -309,9 +309,9 @@ SeeFengshuiSe:
     \ card is sent to the discard pile while |scrying|, gain |Block|."
 YonglinCardSe:
   Name: The Reclusive Sage
-  Brief: When {PlayerName} plays their first card each turn, add copies of that card
+  Brief: When {PlayerName} plays the first card each turn, add copies of that card
     to the hand. They |temporarily cost| {Mana} and have |Exile| and |Ethereal|.
-  Description: When {PlayerName} plays their first card each turn, add {Level:plural
+  Description: When {PlayerName} plays the first card each turn, add {Level:plural
     one='a copy' other='% copies'} of that card to the hand. {Level:plural one='It
     |temporarily costs|' other='They |temporarily cost|'} {Mana} and {Level:plural
     one='has' other='have'} |Exile| and |Ethereal|.
@@ -396,18 +396,17 @@ Reflect:
     effect.
   Brief: When damaged, deal damage back to the attacker and remove this effect.
 NextTurnLoseRandomMana:
-  Brief: At the start of {OwnerName}'s next turn, lose random points of mana.
+  Brief: At the start of {OwnerName}'s next turn, lose random mana.
   Name: Next Turn Mana Loss
-  Description: At the start of {OwnerName}'s next turn, lose {Level} random points
-    of mana.
+  Description: At the start of {OwnerName}'s next turn, lose {Level} random mana.
 NextAttackUp:
   Name: Attack Boost
   Description: The next |Attack| card played deals {Level} more damage.
   Brief: The next |Attack| card played deals increased damage.
 CantDrawNextTurn:
   Name: Next Turn Draw Negation
-  Description: Can't draw cards next turn, after its draw phase.
-  Brief: Can't draw cards next turn, after its draw phase.
+  Description: Can't draw cards next turn, after the draw phase.
+  Brief: Can't draw cards next turn, after the draw phase.
 DroneBlock:
   Name: Defense Matrix
   Description: At the end of {OwnerName}'s turn, gain {Level} |Block|.
@@ -426,7 +425,7 @@ DeathVulnerable:
   Description: When {OwnerName} is defeated, {PlayerName} gains {Level} |Vulnerable|.
 Drowning:
   Name: Drowning
-  Description: '{OwnerName} takes {Level} damage at the end of each turn.'
+  Description: '{OwnerName} takes {Level} damage at the end of her turn.'
 LoveGirlDamageReduce:
   Description: "{OwnerName}'s feelings remain unrequited. She takes {Rate}% less damage."
   Name: Lingering Regrets
@@ -478,7 +477,8 @@ TurnStartPurify:
   Description: "At the start of {PlayerName}'s next turn, |Purify| {Level}.\nRemove\
     \ this effect at the end of the round."
 LouguanJianSe:
-  Description: '{OwnerName}''s ungrazed attacks apply {Level} |Lock On| to the target.'
+  Description: 'After {OwnerName} deals attack damage, {Level} |Lock On| is applied
+    to the target.'
   Name: Roukanken
 RockHardAura:
   Description: '{OwnerName} is protected by a keystone, taking {Level} less damage
@@ -544,8 +544,8 @@ Burst:
   Name: Burst
   Description: "When {PlayerName} enters |Burst|, gain {Mana}.\nAll attacks deal {DamageRate}\
     \ times as much damage.\nAt the end of the turn, lose |Burst|."
-  Brief: "When {PlayerName} enters |Burst|, gain {Mana}.\nAll their attacks deal {DamageRate}\
-    \ times as much damage.\nAt the end of their turn, they lose |Burst|."
+  Brief: "When {PlayerName} enters |Burst|, gain {Mana}.\nAll attacks deal {DamageRate}\
+    \ times as much damage.\nAt the end of the turn, lose |Burst|."
 Concentration:
   Name: Concentration
   Description: 'The next {Level:plural one='''' other=''% ''}|Overdrive| effect{Level:plural
@@ -684,8 +684,9 @@ UseCardToLoseGame:
     more cards'}.
 AmuletForCard:
   Name: Exorcism
-  Description: Resist the next {Level} status cards you receive (|Exile| them).
-  Brief: Resist the next status cards you receive (|Exile| them).
+  Description: Negate the next {Level} Status cards that would be added (|Exile| {Level:plural
+    one='it' other='them'} instead).
+  Brief: Negate the next Status cards that would be added (|Exile| them instead).
 EvilMaidDoubleAttack:
   Name: Devil's Maid
   Description: "Double the attack damage of {PlayerName} (remain: {Duration} turns)."
