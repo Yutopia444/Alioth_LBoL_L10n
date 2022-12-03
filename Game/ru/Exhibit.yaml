@@ -340,7 +340,7 @@ HeijiaoChangpian:
   Description: Даёт {Mana}, когда вы сбрасываете первую карту за ход.
   Name: Виниловая пластина
 Shuye:
-  Description: Даёт {Value2} |Уворота|, когда тратится {Value1} {Mana}. Сбрасывается
+  Description: Даёт {Value2} |Уворота|, когда тратится {Value1} {Mana}. Обнуляется
     в конце битвы.
   Name: Лист
 TangSan:
@@ -370,8 +370,8 @@ TiangouShouji:
     карты'} больше.
   Name: Сотовый тэнгу
 Shaoyao:
-  Description: Восполняет {Value2} здоровья, когда {PlayerName} тратит {Value1} {Mana}
-    в битве. Уменьшите количество восполняемого здоровья на 1.
+  Description: Восполняет {Value2} здоровья, когда {PlayerName} тратит {Value1} {Mana}.
+    Количество восполняемого здоровья уменьшается на 1 до конца битвы.
   Name: Пион
 SunhuaiHufu:
   ExtraDescription: "В начале битвы даёт {Value1} |Огневой Мощи| и {Value1} |Духовности|\
@@ -491,15 +491,16 @@ ShoubiaoMazuiqiang:
     всех врагов.
   Name: Умные часы
 Guangjian:
-  Description: Даёт {Value1} |Огневой мощи| в начале битвы с Боссом.
+  Description: Первая |Атака| {PlayerName:g} за битву накладывает {Value1} |Захвата|
+    на цель.
   Name: Световой меч
 LuoboMoxing:
   Description: Даёт {Value1} |Огневой мощи| в начале битвы с Боссом или с Элитными
     врагами.
   Name: Модель робота
 JingboliJing:
-  Description: При |Предсказывании| какого-то количества карт, |Предскажите| на {Value1}
-    карты больше.
+  Description: При |Предсказывании| какого-то количества карт, |Предскажите| на {Value1:plural
+    one='% карту' other='% карты'} больше.
   Name: Кристально чистое зеркало
 Headphone:
   Description: Когда разыгрывается карта с эффектом |Синергии|, эффект |Синергии|
@@ -552,7 +553,8 @@ KoishiB:
   Name: Воображаемый друг
 YueYuyi:
   Name: Лунная завеса
-  Description: Даёт {Value1} |Бесшовности| в начале битвы.
+  Description: Даёт |Бесшовность| на {Value1:plural one='% ход' other='% хода'} в
+    начале битвы.
 LinghunBaoshi:
   Name: Камень души
   Description: "В битве следующей, после посещения Разрыва, даёт {Mana}."
