@@ -58,7 +58,7 @@ Graze:
   Brief: "{OwnerName} niweluje otrzymywane ataki.\nStrać 1 |Unik| po otrzymanym ataku\
     \ lub na początku każdej tury."
 ExtraTurn:
-  Description: "{OwnerName} weźmie {Level:plural one='dodatkową turę' few='% dodatkowe\
+  Description: "{OwnerName} zacznie {Level:plural one='dodatkową turę' few='% dodatkowe\
     \ tury' many='% dodatkowych tur'} po tej turze."
   Name: Dodatkowa Tura
   Brief: Gdy {OwnerName} zakończy turę, rozpocznie kolejną.
@@ -84,10 +84,10 @@ Vulnerable:
     \ one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
   Brief: '{OwnerName} otrzymuje o {Value}% więcej obrażeń od ataków.'
 LockedOn:
-  Name: Cel
+  Name: Namiar
   Description: "{OwnerName} otrzymuje o {Level:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'} więcej.\nStrać 1 |Cel| na początku każdej tury."
-  Brief: "{OwnerName} otrzymuje więcej obrażeń od ataków.\nStrać 1 |Cel| na początku\
+    \ many='% obrażeń'} więcej.\nStrać 1 |Namiar| na początku każdej tury."
+  Brief: "{OwnerName} otrzymuje więcej obrażeń od ataków.\nStrać 1 |Namiar| na początku\
     \ każdej tury."
 Invincible:
   Name: Nieskazitelny Jedwab
@@ -313,10 +313,10 @@ DoubleLianhuadieSe:
   Brief: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj trochę losowemu wrogowi.
 EvilTuiZhiSe:
   Description: "{Level:plural one='Następna karta' few='Następne % karty' many='Następne\
-    \ % kart'} ataku w tej turze {Level:plural one='zada' other='zadadzą'} dwukrotne\
-    \ obrażenia."
+    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
+    \ w tej turze."
   Name: Ztępić Zło
-  Brief: Następne karty ataku w tej turze zadadzą dwukrotne obrażenia.
+  Brief: Następne karty ataku zadadzą dwukrotne obrażenia w tej turze.
 BoliPhantomSe:
   Description: Gdy karta inna od |Igły Perswazji| zostanie |Wydalona|, dodaj {Level:plural
     one='% |Igłę|' few='% |Igły|' many='% |Igieł|'} |Perswazji| do ręki |tymczasowo
@@ -335,7 +335,7 @@ HuanxiangBlockSe:
   Description: Gdy karta zostanie |Wydalona|, {PlayerName} zyskuje {Level:plural one='%
     punkt' few='% punky' many='% punktów'} |Bloku|.
   Brief: Gdy karta zostanie |Wydalona|, {PlayerName} zyskuje trochę |Bloku|.
-  Name: Kres Fantazji
+  Name: Na Skraju Fantazji
 PrivateSquare:
   Name: Srebrne Oblężenie
   Description: "Za {Limit:plural one='każdą zagraną kartę' few='każde % zagrane karty'\
@@ -362,7 +362,7 @@ RockHardAura:
 LouguanJianSe:
   Name: Roukanken
   Description: "{OwnerName} nakłada {Level:plural one='% |Namiar|' few='% |Namiary|'\
-    \ many='% |Namiarów|'} każdym nieuniknionym atakiem."
+    \ many='% |Namiarów|'} zadawając obrażenia atakami."
 KokoroYou:
   Name: Smutek
   Description: Na końcu tury {OwnerName:g}, nałóż {Level:plural one='% |Osłabienie|
@@ -444,17 +444,17 @@ ReverseJiejieSe:
   Name: Odwrotna Granica
   Brief: Gdy {PlayerName} straci |Buffa|, zyskuje trochę |Bariery|.
 MomentPowerSe:
-  Description: Gdy {OwnerName} |tymczasowo| zdobywanego |Moc| lub |Uduchowienie|,
-    zamień {Level:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego
-    z nich w ich permanentny odpowiednik.
+  Description: Gdy {OwnerName} |tymczasowo| zwiększa |Moc| lub |Uduchowienie|, zamień
+    {Level:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego z nich
+    w ich permanentny odpowiednik.
   Name: Natychmiastowa Wymiarowa Wyrwa
   Brief: Gdy {OwnerName} |tymczasowo| zdobywa |Moc| lub |Uduchowienie|, zamień je
     częściowo w ich permanentny odpowiednik.
 Burst:
-  Description: "Gdy {PlayerName} wchodzi w stan |Zrywu|, zyskuje {Mana}.\nAtaki zadawają\
+  Description: "Gdy {PlayerName} wchodzi w stan |Zrywu|, zyskaj {Mana}.\nAtaki zadawają\
     \ {DamageRate} razy więcej obrażeń.\nNa końcu tury, strać stan |Zrywu|."
   Name: Zryw
-  Brief: "Gdy {PlayerName} wchodzi w stan |Zrywu|, zyskuje {Mana}.\nAtaki zadawają\
+  Brief: "Gdy {PlayerName} wchodzi w stan |Zrywu|, zyskaj {Mana}.\nAtaki zadawają\
     \ {DamageRate} razy więcej obrażeń.\nNa końcu tury, strać stan |Zrywu|."
 BurstUpgrade:
   Description: Zwiększa mnożnik obrażeń w stanie |Zrywu|.
@@ -495,13 +495,13 @@ MasterOfCollectionSe:
     w tej walce.
   Name: Mistrzyni Zbierania
 ChargingPotionSe:
-  Description: Gdy zostanie użyty |Niestabilny Eliksir|, zyskaj {Level} |Ładunku|.
+  Description: Gdy zostanie użyta |Niestabilna Mikstura|, zyskaj {Level} |Ładunku|.
   Name: Radioaktywne Składniki
-  Brief: Gdy zostanie użyty |Niestabilny Eliksir|, zyskaj |Ładunek|.
+  Brief: Gdy zostanie użyta |Niestabilna Mikstura|, zyskaj |Ładunek|.
 PoisonPotionSe:
-  Brief: '|Niestabilne Eliksiry| nakładają na cel trochę |Trucizny|.'
+  Brief: '|Niestabilne Mikstury| nakładają na cel trochę |Trucizny|.'
   Name: Tygielek Czarownicy
-  Description: "|Niestabilne Eliksiry| nakładają na cel {Level:plural one='% punkt'\
+  Description: "|Niestabilne Mikstury| nakładają na cel {Level:plural one='% punkt'\
     \ few='% punkty' many='% punktów'} |Trucizny|."
 WizardStudySe:
   Description: Pierwsza karta zagrana w każdej turze kosztuje o {Mana} więcej.
@@ -534,27 +534,27 @@ LearnAstrologySe:
     ich zapas.
 PotionJungleSe:
   Name: Fluorescencyjny Las
-  Description: N końcu tury {PlayerName:g}, dodaj {Level:plural one='|% Niestabilny
-    Eliksir|' few='|% Niestabilne Eliksiry|' many='|% Niestabilnych Eliksirów|'} do
+  Description: N końcu tury {PlayerName:g}, dodaj {Level:plural one='|% Niestabilną
+    Miksturę|' few='|% Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do
     stosu zrzutek.
-  Brief: Na końcu tury {PlayerName:g}, dodaj kilka |Niestabilnych Eliksirów| do stosu
+  Brief: Na końcu tury {PlayerName:g}, dodaj kilka |Niestabilnych Mikstur| do stosu
     zrzutek.
 UpgradePotionSe:
   Name: Udoskonalenie Eliksiru
-  Description: Na końcu tury {PlayerName:g}, zwiększ siłę |Niestabilnych Eliksirów|
+  Description: Na końcu tury {PlayerName:g}, zwiększ obrażenia |Niestabilnych Mikstur|
     w stosach doboru i zrzutek o {Level}.
-  Brief: Na końcu tury {PlayerName:g}, siła |Niestabilnych Eliksirów| w stosach doboru
-    i zrzutek rośnie.
+  Brief: Na końcu tury {PlayerName:g}, obrażenia |Niestabilnych Eliksirów| w stosach
+    doboru i zrzutek rośną.
 PotionDefenseSe:
   Name: Strzelające Echo
-  Description: Do końca tury, gdy zostanie użyty |Niestabilny Eliksir|, zyskaj {Level:plural
+  Description: Do końca tury, gdy zostanie użyta |Niestabilna Mikstura|, zyskaj {Level:plural
     one='% punkt' few='% punkty' many='% punktów'} |Bariery|.
-  Brief: Do końca tury, gdy zostanie użyty |Niestabilny Eliksir|, zyskaj |Barierę|.
+  Brief: Do końca tury, gdy zostanie użyta |Niestabilna Mikstura|, zyskaj |Barierę|.
 ChillPotionSe:
   Name: Płyn Chłodzący
-  Description: "|Niestabilne Eliksiry| nakładają na cel {Level:plural one='% punkt'\
+  Description: "|Niestabilne Mikstury| nakładają na cel {Level:plural one='% punkt'\
     \ few='% punkty' many='% punktów'} |Odmrożenia|."
-  Brief: '|Niestabilne Eliksiry| nakładają na cel trochę |Odmrożenia|.'
+  Brief: '|Niestabilne Mikstury| nakładają na cel trochę |Odmrożenia|.'
 PerfectServantWSe:
   Name: Sługa Idealny
   Description: Po następnej fazie doboru {OwnerName:g}, wszystkie karty w dłoni |tymczasowo

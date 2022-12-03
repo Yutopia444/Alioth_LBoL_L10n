@@ -19,7 +19,7 @@ ReimuBlockR:
     |Bloku|.
   FlavorText: Zbawiciel może zatrzymać pocisk machnięciem ręki.
 YaoguaiBuster:
-  Name: Pogromca Youkaiów
+  Name: Pogromczyni Youkaiów
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}
     {Value1:plural one='% raz' other='% razy'}.
 DoubleJiejie:
@@ -46,8 +46,8 @@ YinyangCard:
     Zyskaj {Shield:plural one='% punkt' few='% punkty' many='% punktów'} |Bariery|."
 ShengtianKick:
   Name: Kopniak z Przewrotem
-  Description: "Wyciągnij {Value1:plural one='% kartę' other='% karty'}.\n|Tymczasowo|\
-    \ zwiększ |Moc| o {Value 2}."
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    |Tymczasowo| zwiększ |Moc| o {Value 2}."
   FlavorText: Udane trafienie przyniesie uśmiech na twarzy.
 TuimofuLuanwu:
   Name: Dziki Taniec Egzorcyzmu
@@ -63,9 +63,9 @@ Fengmozhen4:
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}
     wszystkim wrogom.
 WunvKongwu:
-  Name: Powietrzny Taniec Miko
+  Name: Powietrzny Taniec Kapłanki
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
-    Wyciągnij {Value2:plural one='% kartę' other='% karty'}."
+    Dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}."
   FlavorText: Prosimy nie naśladować tego w domu (Za wyjątkiem duchów).
 LingfuHuti:
   Name: Talizman Ochrony
@@ -92,9 +92,9 @@ YinyangBaoyu:
   FlavorText: Złapiesz tym dziką wróżkę.
 ZhujiThreeGod:
   Name: Trzej Bogowie Sumiyoshi
-  Description: "Wyciągnij {Value1:plural one='% kartę' other='% karty'}.\n|Tymczasowo|\
-    \ zwiększ |Moc| o {Value2} za każdą kartę ataku i |Ducha| o {Value2} za każdą\
-    \ kartę obrony wyciągniętą w ten sposób."
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}\n\
+    |Tymczasowo| zwiększ |Moc| o {Value2} za każdą kartę ataku i |Duchowość| o {Value2}\
+    \ za każdą kartę obrony wyciągniętą w ten sposób."
 OverJingjie:
   Name: Ponad Rzeczywistość
   Description: Wybierz jedną z {Value1} losowych kart aby dodać do ręki. Ona |tymczasowo
@@ -119,7 +119,298 @@ ReimuWeiyan:
     |Osłabień|'} na wszystkich wrogów.
 DanmuDuijue:
   Name: Pojedynek na Karty Zaklęć
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nZyskaj {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Odbicia|.\n|Moc| ma wpływ na tę kartę."
+  UpgradedDescription: "Zyskaj {Shield:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} |Bariery|.\nZyskaj {Value1:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} |Odbicia|.\n|Moc| ma wpływ na tę kartę."
 Benwo:
   Name: Id
 Chaowo:
   Name: Super-ego
+ReimuLucky:
+  Description: Zyskaj {Value1:plural one='% |Amulet|' few='% |Amulety|' many='% |Amuletów|''}.
+  Name: Przerwa Szczęściary
+ShensheRichang:
+  Name: Życie Codzienne
+  Description: "Zyskaj {Value1} życia.\nZamień cały |Blok| {PlayerName:g} w |Barierę|."
+  FlavorText: Dzisiaj sobie odpocznę.
+TwoBalls:
+  Name: Kule Balansu
+  Description: Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'
+    many='% |Kul Yin-Yang|'} do ręki.
+MingzhuAntou:
+  Name: Sekretna Granica
+  Description: Wybierz jedną z {Value1} losowych kart obrony aby dodać do ręki. |Tymczasowo
+    kosztuje| {Mana}.
+HuanxiangBlock:
+  Name: Na Skraju Fantazji
+  Description: Gdy karta zostanie |Wygnana|, zyskaj {Value1:plural one='% punkt' few='%
+    punkty' many='% punktów'} |Bloku|.
+JiejieAttack:
+  Name: Cios Barierą
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Zadaj dodatkowe obrażenia równym |Barierze| {PlayerName:g}. ({ShieldDamage})"
+  NonbattleDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń''}.\nZadaj dodatkowe obrażenia równym |Barierze| {PlayerName:g}."
+YakongDianxue:
+  Name: Punkt Wyrwy Wymiaru
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Gdy {PlayerName} straci buffa, zwróć tę kartę ze stosu zrzutek do ręki."
+  FlavorText: Dźgnięcie w plecy!
+HuojianSaoba:
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
+    Zyskaj {Value2} |Ładunku|."
+  Name: Miotła Rakietowa
+QinggeManwu:
+  Name: Walec Kapłanki
+  Description: Dobierz {Value1:plural one='% kartę' other='% karty'} i ulepsz je na
+    czas walki.
+  UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}. i ulepsz je na czas walki.\nZa każdą dobraną w ten sposób kartę zyskaj\
+    \ {Value2:plural one='% punkt' few='% punkty' many='% punktów'} |Bariery|."
+FreeFly:
+  Name: Swobodny Lot
+  Description: Na początku tury {PlayerName:g}, zyskaj {Mana}.
+  FlavorText: Zdolność fruwania, co jest niebywale rzadkie w zewnętrznym świecie,
+    jest codziennością w Gensoukyou.
+YinyangXueyin:
+  Name: Runa Yin-Yang
+  Description: "Strać {Value2} życia.\nGdy {PlayerName} zagra |Kulą Yin-Yang|, |tymczasowo|\
+    \ zwiększ |Moc| i |Uduchowienie| o {Value1}."
+EvilTuiZhi:
+  Name: Eksterminacja Zła
+  Description: "{Value1:plural one='Następna karta' few='Następne % karty' many='Następne\
+    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
+    \ w tej turze."
+TaijiLiangyi:
+  Name: Narodziny Kuli Yin-Yang
+  Description: Na początku tury {PlayerName:g}, jeżeli nie ma w dłoni |Kul Yin-Yang|,
+    dodaj |Kulę Yin-Yang| do ręki.
+Wunvyu:
+  Name: Najgroźniejsza Kula Hakurei
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ {Value1:plural one='% raz' other='% razy'}.\n|gdy w dłoni:| Gdy karta zostanie\
+    \ dobrana poza fazą doboru, zwiększ obrażenia tej karty o {Value2}."
+MomentPower:
+  Name: Natychmiastowa Wymiarowa Wyrwa
+  Description: Gdy {OwnerName} |tymczasowo| zwiększa |Moc| lub |Uduchowienie|, zamień
+    {Level:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego z nich
+    w ich permanentny odpowiednik.
+ChuanyueJiejie:
+  Name: Przechodzenie Granicy
+  Description: "Zyskaj {Shield:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bariery|.\nZwróć |Wygnaną| kartę z powrotem do ręki."
+HuanxiangTouying:
+  Name: Podążaj
+  Description: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart. Ma ona |Wygnanie|\
+    \ oraz |Eteryczność|.\nTe karty kosztują łącznie 1, 2 i 3."
+  UpgradedDescription: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart. Ma\
+    \ ona |Wygnanie| oraz |Eteryczność|.\nTe karty kosztują łącznie 1, 2, 3, 4 i 5."
+OutInGap:
+  Name: Łamanie Granic
+  Description: Wybierz jedną z {Value1} losowych kart |p:dowolnego koloru| aby dodać
+    do ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
+BoliDajiejie:
+  Name: Wielka Bariera Hakurei
+  Description: Gdy {PlayerName} ma |Blok|, zamień go na |Barierę|.
+Jiangshen:
+  Name: Wierna Medytacja
+  Description: "Gdy karta zostanie dodana podczas walki, |Ulepsz| ją.\nDodaj {Value1:plural\
+    \ one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|' many='% |Kul Yin-Yang|'} do\
+    \ ręki."
+HuijuQiankun:
+  Name: Zgromadzenie Yin-Yanga
+  Description: "|Wydal| wszystkie karty w dłoni.\nNastępnie dodaj |Kulę Yin-Yang|\
+    \ do ręki. Zadaje ona o {Value1} więcej obrażeń z każdą kartę wydaloną tym sposobem."
+ReimuInstant:
+  Name: '"Pieczęć Snów -Mignięcie-"'
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Zakończ turę. Następnie {PlayerName} zacznie dodatkową turę.\n|Limit Czasowy|\
+    \ {Mana}."
+DoubleLianhuadie:
+  Name: Dwubarwny Motyl Lotusu
+  Description: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj {Value1:plural
+    one='% obrażenie' few='% obrażenia' many='% obrażeń''} losowemu wrogowi.
+BoliPhantom:
+  Name: Iluzja Hakurei
+  Description: Gdy karta inna od |Igły Perswazji| zostanie |Wydalona|, dodaj |Igłę
+    Perswazji| do ręki |tymczasowo kosztującą| {Mana}.
+KuosanJiejie:
+  Name: Rozszerzając Granicę
+  Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\">:| Zyskaj {Block:plural\
+    \ one='% punkt' few='% punkty' many='% punktów'} |Bloku|.\n|Za każde wydane <sprite=\"\
+    ManaSprite\" name=\"R\">:| Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń''}."
+QiqingYishi:
+  Name: Słoneczna Modlitwa
+  Description: Dodaj |Tęczę| do ręki.
+  UpgradedDescription: Dodaj |Tęczę| i |Światłość| do ręki.
+KuosanLingfu:
+  Name: Rozszerzająca się Pieczęć
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ wszystkim wrogom.\nZyskaj |Barierę| równej zadanym w ten sposób niezablokowanym\
+    \ obrażeniom."
+DanceAroundLake:
+  Name: Taniec nad Jeziorem
+  Description: Gdy karta zostanie |Wydalona|, dobierz {Level:plural one='% kartę'
+    few='% karty' many='% kart'}.
+Qingshan:
+  Name: Czyiś Ostatni Dom
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\n|Gdy Wydalona:| Zyskaj {Mana}."
+AutoQumobang:
+  Name: Rozwścieczony Gohei
+  Description: "|Gdy w dłoni:| Dobierz o {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'} podczas każdej fazy doboru.\nGdy ta karta zostanie |Przetrzymana|\
+    \ {Value2:plural one='% raz' other='% razy'}, |Wygnaj| ją."
+GapLady:
+  Name: Panna Szpar
+  Description: "Strać {Value1} życia.\nZyskaj {Mana}.\nDobierz {Value2:plural one='%\
+    \ kartę' few='% karty' many='% kart'}."
+ChunseXiaojing:
+  Name: Ścieżka Koloru Wiosny
+  Description: Dodaj {Value1:plural one='% |Noworodka|' few='% |Noworodki|' many='%
+    |Noworodków|'} do ręki.
+ReimuSakura:
+  Name: Pieczęć Fantazji Kwitnącej Wiśni
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ wszystkim wrogom.\nZyskaj {Value1} życia.\n|Przyrost:| Kosztuje o {Mana} mniej."
+SenluoJiejie:
+  Name: Zagreguj Granicę
+  Description: "Zyskaj {Shield:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bariery|.\nNa początku następnej tury {PlayerName:g}, strać całą |Barierę|\
+    \ i zadaj tyle obrażeń wszystkim wrogom."
+MarisaAttackB:
+  Name: Iluzja Laserów
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.
+MarisaBlockR:
+  Name: Obrona Miotłą
+  Description: Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}
+    |Bloku|.
+MarisaAttackR:
+  Name: Zderzenie Gorącej Gwiazdy
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.
+MarisaBlockB:
+  Name: Defensywa Gwiezdnym Pyłem
+  Description: Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}
+    |Bloku|.
+CraftPotion:
+  Name: Wyprodukuj Miksturę
+  Description: Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne
+    Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.
+  UpgradedDescription: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|%\
+    \ Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\n\
+    Dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}."
+RedLaser:
+  Name: Ognisty Laser
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    |Załaduj {Value2}:| Zadaj tyle obrażeń kolejny raz."
+Potion:
+  Name: Niestabilna Mikstura
+  FlavorText: UWAGA! Mikstury mogą być wybuchowe!
+  Description: "|Gdy ta karta wejdzie do dłoni:| Zyskaj {Mana}, zadaj {Damage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń''} losowemu wrogowi i |Wygnaj|\
+    \ tę kartę."
+SatelliteIllusion:
+  Name: Iluzja Satelity
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Dodaj |{Value1:plural one='% |Astrologię|' few='% |Astrologie|' many='% |Astrologii|'}\
+    \ do ręki."
+DropBook:
+  Name: Szablonowa Rebelia
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nDodaj |{Value1:plural one='% |Astrologię|' few='% |Astrologie|' many='%\
+    \ |Astrologii|'} do ręki."
+MarisaDraw:
+  Name: Improwizacja
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Jeżeli {PlayerName} jest w stanie |Zrywu|, zyskaj {Mana}."
+DarkSatellite:
+  Name: Ciemna Satelita
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nJeżeli ostatnia zagrana karta była czarna, dobierz {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'}."
+ReadyForBurst:
+  Name: Gotowa do Zrywu
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nZyskaj {Value1} |Ładunku|."
+WinterWarm:
+  Name: Ogrzewacz Dłoni
+  Description: "Zyskaj {Value1:plural one='% |Koncentrację|' few='% |Koncentracje|'\
+    \ many='% |Koncentracji|'}.\n|Debiut:| Dobierz {Value2:plural one='% kartę' few='%\
+    \ karty' many='% kart'}."
+  ExtraDescription1: "Zyskaj {Value1:plural one='% |Koncentrację|' few='% |Koncentracje|'\
+    \ many='% |Koncentracji|'}.\n|d:Debiut:| Dobierz {Value2:plural one='% kartę'\
+    \ few='% karty' many='% kart'}."
+AsteroidBelt:
+  Name: Pas Asteroidów
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nJeżeli ostatnia zagrana karta była\
+    \ czerwona, Zyskaj {Value2} |Ładunku|."
+JinjiBlock:
+  Name: Awaryjna Obrona
+  Description: Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}
+    |Bloku|.
+Alioth:
+  Name: Alioth
+  Description: "|Przewidź| {Scry}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\nZyskaj {Value2} |Ładunku|."
+ScryAttack:
+  Name: Gwiazda Nawigacyjna
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Gdy {PlayerName} zrobi |Przewidzenie|, zwróć tę kartę ze stosu zrzutek do ręki."
+  FlavorText: Umiejętność znalezienia Wielkiego Wozu na nocnym niebie została stracona
+    w świecie zewnętrznym.
+NightSeeStar:
+  Name: Oglądanie Gwiazd
+  Description: "|Przewidź| {Scry}\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}."
+MarisaSteal:
+  Name: '"Pożycz" Składniki'
+  Description: "Dodaj |Tęczę| do ręki.\nNa początku następnej tury {PlayerName:g},\
+    \ strać {Value1:plural one='% losową manę' few='% losowe many' many='% losowych\
+    \ man'}."
+  UpgradedDescription: Dodaj |Tęczę| do ręki.
+RainbowStar:
+  Name: Wybuch Tęczowej Gwiazdy
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    |Za każdą wydaną <sprite=\"ManaSprite\" name=\"P\">:| Ta karta zadaje o {Value1}\
+    \ więcej obrażeń. Zyskaj {Value2}<sprite=\"Point\" name=\"Power\">."
+ScryBlock:
+  Name: Premedytacja
+  Description: Gdy {PlayerName} zrobi |Przewidzenie|, zyskaj {Level:plural one='%
+    punkt' few='% punkty' many='% punktów'} |Bloku|.
+ShibaiChanwu:
+  Name: Produkt Porażki
+  Description: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne\
+    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu zrzutek.\nDodaj {Value2:plural\
+    \ one='|% Cień|' few='|% Cienie|' many='|% Cieni|'} do stosu doboru."
+  FlavorText: Nawet robiąc desery ryzykujesz porażką.
+ShinningPotion:
+  Name: Świetlny Grzyb
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nDodaj |Niestabilną Miksturę| do stosu doboru.\n|Załaduj 2:| Dodaj\
+    \ jeszcze jedną."
+Yinhe:
+  Name: Droga Mleczna
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\n|Gdy Przetrzymana:| Zwiększ |Blok| tej kart o {Value1} w tej walce."
+StarSky:
+  Name: Jasne Gwiezdne Niebo
+  Description: Zyskaj {Value1} |Ładunku|.
+LearnAstrology:
+  Name: Badanie Astrologii
+  Description: Na początku tury {PlayerName:g}, jeżeli w dłoni nie man |Astrologii|,
+    dodaj |Astrologię| do ręki.
+  FlavorText: '"Dlaczego ona ciągle chce patrzeć na gwiazdy zamiast na mnie?"'
+ReverseJiejie:
+  Name: Odwrotna Bariera
+  Description: Gdy {PlayerName} straci buffa, zyskaj {Value1:plural one='% punkt'
+    few='% punkty' many='% punktów'} |Bariery|.
+Changzhizhen:
+  Name: Stała Bariera
+  Description: "|Gdy Przetrzymana:| Zadaj {Value1:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń''}.\n|Gdy w dłoni:| Gdy {PlayerName} straci buffa,\
+    \ zwiększ obrażenia tej karty o {Value2} na czas walki."
