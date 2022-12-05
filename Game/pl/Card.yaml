@@ -182,7 +182,7 @@ YinyangXueyin:
 EvilTuiZhi:
   Name: Eksterminacja Zła
   Description: "{Value1:plural one='Następna karta' few='Następne % karty' many='Następne\
-    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
+    \ % kart'} ataku {Value1:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
     \ w tej turze."
 TaijiLiangyi:
   Name: Narodziny Kuli Yin-Yang
@@ -196,7 +196,7 @@ Wunvyu:
 MomentPower:
   Name: Natychmiastowa Wymiarowa Wyrwa
   Description: Gdy {OwnerName} |tymczasowo| zwiększa |Moc| lub |Uduchowienie|, zamień
-    {Level:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego z nich
+    {Value1:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego z nich
     w ich permanentny odpowiednik.
 ChuanyueJiejie:
   Name: Przechodzenie Granicy
@@ -254,7 +254,7 @@ KuosanLingfu:
     \ obrażeniom."
 DanceAroundLake:
   Name: Taniec nad Jeziorem
-  Description: Gdy karta zostanie |Wydalona|, dobierz {Level:plural one='% kartę'
+  Description: Gdy karta zostanie |Wydalona|, dobierz {Value1:plural one='% kartę'
     few='% karty' many='% kart'}.
 Qingshan:
   Name: Czyiś Ostatni Dom
@@ -380,7 +380,7 @@ RainbowStar:
     \ więcej obrażeń. Zyskaj {Value2}<sprite=\"Point\" name=\"Power\">."
 ScryBlock:
   Name: Premedytacja
-  Description: Gdy {PlayerName} zrobi |Przewidzenie|, zyskaj {Level:plural one='%
+  Description: Gdy {PlayerName} zrobi |Przewidzenie|, zyskaj {Value1:plural one='%
     punkt' few='% punkty' many='% punktów'} |Bloku|.
 ShibaiChanwu:
   Name: Produkt Porażki
@@ -552,7 +552,7 @@ HuoliQuankai:
     \ obrażenia zamiast podwójnych.\nWejdź w stan |Zrywu|."
 MasterOfCollection:
   Name: Mistrzyni Zbieractwa
-  Description: Gdy karta zostanie |Przetrzymana|, obniż jej koszt o {Level:plural
+  Description: Gdy karta zostanie |Przetrzymana|, obniż jej koszt o {Value1:plural
     one='% losowy punkt' few='% losowe punkty' many='% losowych punktów'} many na
     czas walki.
 ChargingPotion:
@@ -755,3 +755,130 @@ SakuyaClock:
     \ Wtem, zacznij dodatkową turę."
 DangerousMagician:
   Name: Niebezpieczna Iluzjonistka
+  Description: Gdy |Sztylet do Rzucania| zostanie użyty, zyskaj {Value1:plural one='%
+    |Puls Czasu|' few='% |Pulsy Czasu|' many='% |Pulsów Czasu|'}.
+SakuyaDio:
+  Description: "|Noże do Rzucania| nakładają {Value1:plural one='% |Namiar|' few='%\
+    \ |Namiary|' many='% |Namiarów|}, gdy zostaną zagrane.\nZakończ turę. Wtem, {PlayerName}\
+    \ zaczyna dodatkową turę. Podczas tej tury, zamiast dobierania kart dodaj {Value2:plural\
+    \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
+    \ do Rzucania|} do ręki."
+  Name: Teraz Kolej na Ciebie
+PerfectServant:
+  UpgradedDescription: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"W\">:| Na początku następnej tury {PlayerName:g}, wszystkie\
+    \ karty w dłoni |tymczasowo kosztują| o {Value1:plural one='% losową manę' few='%\
+    \ losowe many' many='% losowych man'} mniej.\n|Za każde wydane <sprite=\"ManaSprite\"\
+    \ name=\"U\">:| Na początku następnej tury {PlayerName:g}, dobierz o {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'} więcej i zyskaj {Mana}."
+  Name: Sługa Idealny
+  Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\">:| Na początku następnej tury {PlayerName:g}, wszystkie karty w dłoni\
+    \ |tymczasowo kosztują| o <sprite=\"ManaSprite\" name=\"1\"> mniej.\n|Za każde\
+    \ wydane <sprite=\"ManaSprite\" name=\"U\">:| Na początku następnej tury {PlayerName:g},\
+    \ dobierz o {Value1:plural one='% kartę' few='% karty' many='% kart'} więcej i\
+    \ zyskaj {Mana}."
+SakuyaKiller:
+  Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany przeciwnik, dodaj
+    {Value1:plural one='% |Nóż do Rzucania|' few='% |Noże do Rzucania|' many='% |Noży
+    do Rzucania|} do stosu doboru.
+  Name: Rozpruwacz w Mgle
+ShengquanZaiwo:
+  Name: Poker Królewski
+  Description: Zyskaj {Mana}.
+LightSpeed:
+  Name: Skok Kwantowy
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.\n\
+    Jeżeli jakaś karta została odrzucona w tej turze, zyskaj {Mana}."
+PrivateVision:
+  Name: Podwójny Miraż
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nZyskaj |Odbicie| równym zadanym\
+    \ niezablokowanym obrażeniom."
+FakeTimeline:
+  Name: Urojona Oś Czasu
+  Description: "Zyskaj {Block:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ wszystkim wrogom.\nZyskaj {Value1:plural one='% |Puls Czasu|' few='% |Pulsy\
+    \ Czasu|' many='% |Pulsów Czasu|'}."
+SakuyaShop:
+  Name: Kup Składniki
+  Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}."
+LoyalMaid:
+  Name: Lojalna Służąca
+  Description: "Zyskaj {Shield:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ |Bariery|.\nNa początku każdej dodatkowej tury, zwróć tę kartę ze stosu zrzutek\
+    \ do ręki. |Tymczasowo kosztuje| {Mana}."
+SilverBlade:
+  Name: Srebrny Wymiar
+  Description: Gdy zostanie użyta karta ataku, zyskaj {Value1:plural one='% punkt'
+    few='% punkty' many='% punktów'} |Bariery|.
+KnifeHell:
+  Name: Srebrna Elegancja
+  Description: "Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety\
+    \ do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki.\nUlepsz wszystkie |Sztylety\
+    \ do Rzucania| w dłoni, w stosie doboru i w stosie zrzutek."
+BackOfKnife:
+  Name: Moje Ostrze Powraca
+  Description: "Usuń wszystkie |Wygnane Sztylety do Rzucania| z walki.\nWtem, dodaj\
+    \ |Ekspres Ostrych Sztyletów| do ręki. Zadaje o {Value1} obrażeń więcej za każdą\
+    \ usuniętą w ten sposób kartę."
+GroupOfKnife:
+  Name: Ekspres Ostrych Sztyletów
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}.
+ClockCorpse:
+  Name: Zrujnowany Zegarek
+  Description: Zakończ turę. Wtem, zacznij dodatkową turę. Dodatkowe karty nie mogą
+    zostać dobrane poza fazą doboru podczas tej tury.
+StopTime:
+  Name: Zamrożony Czas
+  Description: Gdy {PlayerName} zakończy turę, przetrzymaj {Value1:plural one='% losową
+    niewydaną manę' few='% losowe niewydane many' many='% losowych niewydanych man'}
+    zamiast {Value1:plural one='jej' other='ich'} stracenia.
+TimeLord:
+  Name: Dominacja Czasowa
+  Description: Zyskaj {Value1:plural one='% |Puls Czasu|' few='% |Pulsy Czasu|' many='%
+    |Pulsów Czasu|'}.
+TimeWalk:
+  Name: Spacer w Czasie
+  Description: "Zakończ turę. Wtem, zacznij dodatkową turę.\nPrzez resztę wlki |Spacery\
+    \ w Czasie| tracą swoje efekty."
+  ExtraDescription1: "|d:Zakończ turę. Wtem, zacznij dodatkową turę.|\nPrzez resztę\
+    \ wlki |Spacery w Czasie| tracą swoje efekty."
+LunaClock:
+  Name: Zegar Księżycowy
+  Description: Zakończ turę. Wtem, zacznij dodatkową turę. Ataki {PlayerName:g} nie
+    będą zadawały obrażeń podczas tej dodatkowej tury.
+LunaDial:
+  Name: Prywatny Skwer
+  Description: "Zakończ turę. Wtem, zacznij dodatkową turę.\n|Przy doborze:| Ta karta\
+    \ kosztuje o {Mana} mniej na czas walki."
+SpecialClock:
+  Name: Podstęp Pokojówki
+  Description: Na początku tury {PlayerName:g}, zrzuć do 1 karty z ręki. Dobierz tyle
+    samo kart.
+DropToKnife:
+  Name: Forteca Srebra
+  Description: Zrzuć wszystkie karty w dłoni bez |Przetrzymania|. Dodaj tyle samo
+    |Sztyletów do Rzucania| do ręki.
+BackToFuture:
+  Name: Powrót do Przyszłości
+  Description: "Zamień stosy doboru i zrzutek miejscami.\nDobierz {Value1:plural one='%\
+    \ kartę' few='% karty' many='% kart'}."
+EvilMaid:
+  Name: Pokojówka Diabła
+  Description: "Strać {Value1} życia.\nPodczas następnej tury {PlayerName:g}, wszystkie\
+    \ |Ataki| zadawają podwójne obrażenia."
+ExtraTurnEveryone:
+  Name: Rozszerzenie Przestrzeni
+  Description: "Zakończ turę, Wtem, zacznij dodatkową turę.\nWrogowie też wezmą dodatkową\
+    \ turę gdy nadejdzie ich tura."
+TunnelEffect:
+  Name: Tunel Kwantowy
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń''}\
+    \ losowemu wrogowi.\nZyskaj {Mana}.\nGdy stos doboru jest przetasowywany, zwróć\
+    \ tę kartę do ręki."
+SakuyaSpeedup:
+  Name: Przyspiesz Czas
+  Description: Podwój aktualny |Puls Czasu|.
