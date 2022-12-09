@@ -198,7 +198,7 @@ Setting:
     Select2: 2'yi Seç
     Select9: 9'u Seç
     ToggleExileZone: Sürgün Kartları Göster
-    RebindMessage: Lütfen "{0}" için butona basın, iptal etmek için ESC butonuna basın
+    RebindMessage: Lütfen "{0}" için tuşa basın, iptal etmek için ESC butonuna basın.
     Action: Eylem
     Button: Anahtar
     Select1: 1'i Seç
@@ -268,8 +268,8 @@ System:
   ReenterStation: Bölümü Tekrarla
   ResumeGame: Oyuna Devam Et
   ReturnMainMenu: Ana Menü
-  SystemMenu: Duraklatma & Ayarlar
-  DoremyLevel: Rüya Katmanı {0}
+  SystemMenu: Duraklatma ve Ayarlar
+  DoremyLevel: Hayal Katmanı {0}
   NoJadeBox:
     Title: Yeşim Kutusu Efekti Yok
     Description: Önemli bir şey değil.
@@ -332,7 +332,7 @@ Chat:
     bülteni sunar.
   Aya3: "{0}'ın elindekine bakın! Suçlu olduğunun kanıtı işte!"
   Rin1: Çok tatlı bir {0}'ın var! Bende istiyorum!
-  Rin2: Çok acımasızsın ya-
+  Rin2: Çok acımasızsın-
   Nitori1: Bunu modifiye ederken çok zaman ve emek harcadım.
   Youmu1: En garde!
   YoumuTuanzi: Daha çok Soğuk Üçrenkli Dango istiyorsan, lütfen hemen geri dön!
@@ -362,12 +362,12 @@ Chat:
   YuyukoMooncake: Canım çok {0} çekiyor...
 Debut:
   EirinChats:
-  - Boşta dolaşmayı bırak, {0}
+  - Boşta durmayı bırak, {0}
   - Yakın bir zamanda yola çıkmazsan ilacın etkisi geçecek~
   KaguyaChats:
-  - Durumu bende kontrol edeceğim
+  - Ben de durumu kontrol edeceğim.
   - Evi sana bırakıyorum, Eirin
-  - Gün doğumundan önce gelmeyi unutmayın~
+  - Gün doğumundan önce gelmeyi unutma~
 Cards:
   Show: Kartların detaylarını görmek için üzerine gelin veya sağ tıklayın
   RemoveTips: Kaldırmak için bir kart seç
@@ -382,17 +382,17 @@ Shop:
     {0} para|
   Skip: Atla
   Close: Kapat
-  Remove: Bir Kart Kaldır
-  RemoveSoldOut: Hepsi Satıldı
+  Remove: Bir kart kaldır
+  RemoveSoldOut: Stok Tükendi
   BoughtQuotes:
-  - Satın aldığınız için teşekkür ederim.
+  - Alışverişin için teşekkürler.
   CantAffordQuotes:
-  - Hayır işi yönetmiyoruz burada, Okumayı bilmiyor musun?
+  - Hayır işi yönetmiyorum.
   - Buna paran yetmiyor.
   - Yeterince paran yok.
   WelcomeQuotes:
   - Hoş geldiniz!
-  - Eşyalara göz atin.
+  - Eşyalara bir göz gezdir.
   Chats:
   - Bu tarafa, sayın müşterim~
   - Fiyatlarımızın hepsi çok uygundur! bir şey istemediğinizden emin misiniz?
@@ -404,19 +404,20 @@ Gap:
   - Acaba şimdi ne yapmalıyım~
   - Çok yorgunum...…
 GameResult:
-  TrueEnd: Vaka kusursuz bir şekilde çözüldü
-  UnlockHint: Yeni açılmış yadigarlar ve kartlar gelecek turlarında kullanılabilecek
-    olacak.
+  TrueEnd: Vaka kusursuz bir şekilde çözüldü.
+  UnlockHint: Yeni açılmış yadigarlar ve kartlar gelecek turlarında kullanılabileceklerdir.
   Score: Skor
   DifficultyFactor: Zorluk
   Win: Vaka Çözüldü
   Lose: Başarısız
   ClickToOpen: Açmak için Tıkla
   ClickToFold: Kapatmak için Tıkla
-  BadEnd: Zamanda geri gidim bunu tekrardan deneyelim...
+  BadEnd: Zamanda geri gidip bunu tekrardan deneyelim...
   FailReason: 'Kaybetme Nedeni:'
   Abandon: Terk et
-  ReturnHint: Ana menüye dönmek için her hangi bir yere tıkla
+  ReturnHint: Ana menüye dönmek için herhangi bir yere tıkla
+  Deprecated: ??? (Eski)
+  Unlock: Yeni Eşya Açıldı
 CardType:
   Ability: Yetenek
   Misfortune: Şanssızlık
@@ -440,7 +441,7 @@ Tooltip:
     Description: Sağlığın 0'a geldiğinde, |r:oyunu kaybedersin|.
   Money:
     Name: 'Para: {0}'
-    Description: Takane'nin mağazasında eşyalar harcanılabilir
+    Description: Takane'nin mağazasında eşyalar için harcanılabilir.
   FinalStage:
     Name: Sonuncu Sahne
     Description: Oyunun sonuna çok yakınız, hadi hareket edelim!
@@ -460,24 +461,23 @@ Tooltip:
       hareketleri vardır.
   DrawZone:
     Name: Kart Çekme Yığını
-    Description: "Kart çekme adımında, kart çekme yığınından {0} kart çekersin. (Kart\
-      \ çekme adımın her turun başında yaşanır, tur başlangıcında yaşanan efektlerden\
-      \ bile daha önce.)\nKart çekme yığınındaki kartların sıfıra inerse, ıskarta\
-      \ yığındaki kartların kart çekme yığınına tekrardan karıştırılır.\n\nKart çekme\
-      \ yığınındaki kartlarını görmek için tıklayın. |Bu kartlarının kart çekme yığınındaki\
-      \ sırasını göstermez.|"
+    Description: "Kart çekme adımında, kart çekme yığınından {0} kart çekersin. |d:(Kart\
+      \ çekme adımı, tur başlangıcı öncesi efektlerinden önce, her turun başında yaşanır.)|\n\
+      Kart çekme yığınındaki kartların bittiğinde, ıskarta yığınındaki kartların kart\
+      \ çekme yığınına tekrardan karıştırılır.\n \nKart çekme yığınındaki kartlarını\
+      \ görmek için tıklayın. |Bu kartlarının çekilme sıralarını göstermez.|"
   DetailedHint:
     Name: Detaylı İpuçları
-    Description: "Oyunda ki tüm ipuçlarını göster.\nİlk defa bir deste-kurma oyunu\
+    Description: "Oyundaki tüm ipuçlarını göster.\nİlk defa bir deste-kurma oyunu\
       \ oynuyorum."
   DontShowHint:
-    Name: İpuçusuz
+    Name: İpuçları Kapalı
     Description: "Hiç bir ipucu gösterme.\nDaha önce <Touhou: Lost Branch of Legend>\
       \ oynadım."
   DiscardZone:
     Name: Iskarta
-    Description: "Ne zaman bir kartı ıskartalarsan, buraya gönderirsin\nTurunun sonunda,\
-      \ elinde kalan tüm kartları |d:(ıskarta efektlerini çalıştırmadan)| ıskartalarsın."
+    Description: "Ne zaman bir kartı ıskartalarsan buraya gönderirsin.\nTurunun sonunda,\
+      \ elinde kalan tüm kartları |d:(efektlerini çalıştırmadan)| ıskartalarsın."
   ExileZone:
     Name: Sürgün
     Description: "|Sürgünlenmiş| kartların buraya gönderilir.\n\n|Sürgünlenmiş| kartlarını\
@@ -489,10 +489,10 @@ Tooltip:
       \ göre hareket eder.\nHer düşman hareket ettikten sonra, yeni bir tur başlar."
   BattleMana:
     Name: Mana Havuzu
-    Description: "Harcanmamış mana burada gösterilir.\nKart oynamak ve |X| bedelini\
-      \ ödemek için manaya ihtiyacın vardır.\n\nBir manayı \"yüzdürmek\" için ona\
-      \ tıklayın, bu o mananın ilk harcanmasını veya |X| bedelini ödemesini sağlar.\n\
-      Mana havuzunuza geri göndermek için yüzen bir manaya tıklayın."
+    Description: "Harcanmamış mana burada gösterilir.\nKart oynamak ve |X| bedellerini\
+      \ ödemek için mana gereklidir.\n\nBir manayı \"yüzdürmek\" için ona tıklayın,\
+      \ bu o mananın ilk harcanmasını veya |X| bedelini ödemesini sağlar.\nMana havuzunuza\
+      \ geri göndermek için yüzen bir manaya tıklayın."
   BaseMana:
     Name: Mana Haznesi
     Description: "Her bir turun başında, |mana haznesi|ndeki manaya eşit değerinde\
@@ -500,11 +500,11 @@ Tooltip:
       \n|Mana haznen| bulabildiğin kartları da etkiler."
   GameSeed:
     Name: Seed
-    Description: "Her bir yeni oyun farklı bir seed oluşturur. Aynı seede sahip olan\
-      \ turlar birebir aynı olacaktır.\n\nSeedi panoya kopyalamak için tıklayın."
+    Description: "Her bir yeni oyun farklı bir seed oluşturur. Aynı Seed'e sahip olan\
+      \ turlar birebir aynı olacaktır.\n\nSeed'i panoya kopyalamak için tıklayın."
   EntityTitle:
     Character: Özel
-    Neutral: Doğal
+    Neutral: Nötr
     White: Beyaz
     Blue: Mavi
     Black: Siyah
@@ -514,24 +514,24 @@ Tooltip:
     MultiColor: Rengarenk
   BriefHint:
     Name: Bazı İpuçları
-    Description: "Sadece kısmi ipuçları gösterilecektir.\nBuna benzer oyunlar oynadım,\
-      \ Slay the Spire gibi."
+    Description: "Sadece kısmi ipuçları gösterilecektir.\nSlay the Spire gibi benzer\
+      \ oyunlar oynadım."
 ErrorChat:
   MoneyNotEnough: Yeterince param yok.
   LowMana: Yeterince manam yok.
   LowPower: Yeterine gücüm yok.
-  CardNotInHand: Belirtilen kart zaten elinizde değil.
+  CardNotInHand: Belirtilen kart elinizde değil.
   CardNotUsable: Bu kart kullanılamaz.
   CardCostChanged: Belirtilmiş kartın bedeli değişti.
-  CardFengyin: Mühürlendim
+  CardFengyin: Mühürlüyüm
   CardDrunk: Sarhoş değilim!
-  UsUsedThisTurn: Bu büyüyü tur içerisinde zaten kullandım
-  TargetAlreadyDead: Hedef Çoktan Öldü
+  UsUsedThisTurn: Bu büyüyü tur içerisinde zaten kullandım.
+  TargetAlreadyDead: Hedef Zaten Ölü
   NoTarget: Geçerli bir hedef yok
   HandFull: Elim zaten dolu.
-  EmptyDraw: Kart Çekme Yığını boş.
+  EmptyDraw: Kart çekme yığını boş.
   NoCardByMama: Bu bedele sahip bir kart yok.
-  UsUsedThisBattle: Bu büyüyü savaş içerisinde zaten kullandım
+  UsUsedThisBattle: Bu büyüyü zaten savaş içerisinde kullandım
 Reward:
   Headers:
   - Mükemmel!
@@ -543,15 +543,15 @@ Reward:
   Skip: Ödülleri Atla
   Abandon: Kartı Atla
   AbandonMoney: '{0} <sprite="Gold" name="gold"> Kazan'
-  AbandonMaxHp: '{0} Maksimum Sağlık Kazan'
+  AbandonMaxHp: '{0} Maksimum Sağlık Edin'
 ManaSelect:
   Title: Bir mana tipi seç
 CardDetail:
   UpgradeYes: Yükseltilmiş
   UpgradeNo: Normal
-  Illustrator: 'Ressam:'
+  Illustrator: 'Çizer:'
   SwitchCardStyle: Kart stilini değiştir
-  Sketch: Bitirilmemiş
+  Sketch: Tamamlanmamış
 Rarity:
   Common: Sıradan
   Uncommon: Sıra dışı
@@ -560,9 +560,17 @@ Rarity:
   Mythic: Efsanevi
 StatusEffectType:
   Special: Özel
+  Positive: Buff
+  Negative: Debuff
 BattleHint:
   Detailed: Detaylı ipuçları göster
-  Brief: Bazı ipuçları göster
-  DontShow: Hiç bir ipucu gösterme
+  Brief: Kısa ipuçları göster
+  DontShow: Hiçbir ipucu gösterme
   Prev: Önceki
   Next: Sonraki
+MessageDialog:
+  XCostEmptyUsageWarning: Mana ayarlamadan {0} 'ı kullan?
+  GameAbandonWarning: Şu anki turu yarıda bırak?
+  ReturnToMainMenu: Ana menüye dön?
+  QuitGame: Oyundan ayrıl?
+  UnsavedWarning: Son kayıt noktasın devamı kayıt edilmeyecektir.
