@@ -70,7 +70,7 @@ UI:
   SideCloseHint: Kapatmak için tıkla
   Yes: Evet
   No: Hayır
-  On: Aktif
+  On: Açık
   Off: Kapalı
   Display: Göster
   Hide: Sakla
@@ -120,11 +120,11 @@ StartGame:
   Seed: Seed
   SetSeed: Seed Düzenle
   InvalidSeed: Geçersiz Seed
-  SetJadeBox: Yeşim Kutusunu Ayarla (Kurulum Altında)
+  SetJadeBox: Yeşim Kutusu Ayarları
   NoClearHind: Yeşim Kutular veya seed kullanır iken başarımlar devre dışıdır.
   OpeningComic: Prologu Izle
   StoryMode: Hikaye modu
-  FreeMode: Özgür Modu
+  FreeMode: Serbest Mod
   CharacterUnset: Lütfen bir karakter seçin
   JadeBoxLock: Yeşim Kutu Modu 10. Seviyede açılacaktır.
   PuzzleHint: "Mavi puanların edinilmesini arttırmak için kendini bulmacalar ile sına.\n\
@@ -150,8 +150,8 @@ StartGame:
     zorluğunda oynamanız önerilir.'
   FreeDescription: "Vakayı favori karakterlerin ile gider \nÇoğu hikaye-diyalogları\
     \ kaldırılmıştır \nTüm \"Dostçul Rastlanmalar\" mevcuttur"
-  StoryDescription: "Vakayı Reimu Hakurei ile gider \nBazı sahnelerin düşmanlar her\
-    \ zaman aynıdır\nBazı \"Dostçul Rastlanmalar\" yasaklanmıştır"
+  StoryDescription: "Vakayı Reimu Hakurei ile gider \nBazı sahnelerin düşmanları her\
+    \ seferinde aynıdır\nBazı \"Dostçul Rastlanmalar\" yasaklanmıştır"
 JadeBoxPage:
   JadeBoxDaily: Günlük Yeşim Kutusu
   JadeBoxRandom: Rastgele Yeşim Kutusu
@@ -240,15 +240,15 @@ Setting:
   AnimatingEnvironment: Animasyonlu Çevre
   AnimatingEnvironmentDescription: Savaş içerisinde dinamik arka planlar gösterir
   SingleEnemyAutoSelect: Otomatik Tek Seçim
-  SingleEnemyAutoSelectDescription: Eğer sadece bir hedef varsa, düşman seçmeden otomatik
-    olarak kartı oynamayı veya oynamamayı sağlar.
+  SingleEnemyAutoSelectDescription: Eğer sadece bir hedef varsa, düşman seçmeden kartı
+    oynamayı sağlar.
   Enable: Etkin
   Disable: Kapalı
-  XCostWarning: X Bedeli Uyarısı?
+  XCostWarning: X Bedeli Uyarısı
   XCostWarningDescription: Elle mana seçmeden X bedelli bir kart oynadığınızda uyarı
     göstermesini veya göstermemesini sağlar.
-  DontWarn: Uyarma
-  Warn: Uyar
+  DontWarn: Kapalı
+  Warn: Açık
   HintLevel: Oyun İpuçları
   ResetHint: İpuçları Sıfırla
   EnableKeyboard: Klavyeyi etkinleştir
@@ -398,6 +398,7 @@ Shop:
   - Fiyatlarımızın hepsi çok uygundur! bir şey istemediğinizden emin misiniz?
 TopInfo:
   Original: 'Orijinal:'
+  Artist: 'Aranjman:'
 Gap:
   HeaderInitial: Mola zamanı~
   Headers:
@@ -431,7 +432,7 @@ Tooltip:
     Description: Sahneyi geçmek için her haritanın sonundaki bossu alt et.
     Name: Sahne {0}
   DifficultyHard:
-    Description: Düşmanların daha fazla sağlığı vardır ve daha fazla hasar vururlar.
+    Description: Düşmanların daha çok sağlığı vardır ve daha fazla hasar vururlar.
     Name: 'Zorluk: Zor'
   Character:
     Name: '{0}'
@@ -450,14 +451,14 @@ Tooltip:
     Description: Şuan ki sahnede ki ilerlemen.
   DifficultyEasy:
     Name: 'Zorluk: Kolay'
-    Description: "Her Tura Kaguya'nın |Hazineleri|nden biri ile başla.\nSon sahneye\
+    Description: "Her tur Kaguya'nın Hazinelerinden| biri ile başlar.\nSon sahneye\
       \ |r:erişemezsin|."
   DifficultyNormal:
     Name: 'Zorluk: Normal'
     Description: Standart zorluk.
   DifficultyLunatic:
     Name: 'Zorluk: Lunatik'
-    Description: Düşmanların daha fazla sağlığı, daha fazla hasarları ve daha tehlikeli
+    Description: Düşmanların daha çok sağlığı, daha fazla hasarları ve daha tehlikeli
       hareketleri vardır.
   DrawZone:
     Name: Kart Çekme Yığını
@@ -568,9 +569,49 @@ BattleHint:
   DontShow: Hiçbir ipucu gösterme
   Prev: Önceki
   Next: Sonraki
+  ManaPanel: "Soldaki mana paneli turdaki kalan mana miktarını gösterir.\nHerhangi\
+    \ bir manaya sol tıklayarak bekleme alanına götür. Beklemede olan manalar önceliklilerdir\
+    \ ve ilk onlar kullanılır.\nSağ tıklama ile aynı renkte olan bütün manalara öncelik\
+    \ verebilirsin.\nMana her oyuncu turunun başlangıcında yenilenir."
+  UltimateSkill: "Savaşının gidişini değiştirmek için bir büyü kartı kullan!\nYenilmiş\
+    \ düşmanlar <sprite=\"Point\" name=\"Güç\"> düşürür ve büyü kartı ibreni doldurur.\n\
+    Büyü kartları tur başı sadece bir sefer kullanılabilir."
+  Intention: "Düşmanların saldırmak, savunmak, büyü kartı kullanmak, buff veya debuff\
+    \ vermek gibi niyetleri olabilir.\nBunu üzerlerindeki ikon araclılığı ile görebilirsin."
+  BlockShield: "Hasar almadan önce, |Blok| veya |s:Bariyer| edinmek için defans kartları\
+    \ oyna.\nBu verilen hasarın miktarını azaltacaktır.\n|Blok| oyuncunun sıradaki\
+    \ turunda kaybolur, |s:Bariyer| kaybolmaz."
+  Mana: "Bir kartın detaylarını görmek için sağ tıkla. (Oyundaki birçok panel de size\
+    \ bu şekilde bilgi verebilir.)\nKart oynamak mana gerektirir. Kart'ın mana bedeli\
+    \ kartın sağ üst köşesinde gösterilir.\n7 farklı çeşit mana bulunmaktadır: renkli\
+    \ mana <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"G\">, renksiz mana <sprite=\"ManaSprite\" name=\"C\"> ve bütün manalar\
+    \ olarak kullanılabilen <sprite=\"ManaSprite\" name=\"P\"> .\n<sprite=\"ManaSprite\"\
+    \ name=\"2\"> gibi sıradan bedeller herhangi bir renk mana ile ödenebilir."
 MessageDialog:
   XCostEmptyUsageWarning: Mana ayarlamadan {0} 'ı kullan?
   GameAbandonWarning: Şu anki turu yarıda bırak?
   ReturnToMainMenu: Ana menüye dön?
   QuitGame: Oyundan ayrıl?
   UnsavedWarning: Son kayıt noktasın devamı kayıt edilmeyecektir.
+  XCostEmptyUsageTips: X bedelli kartlar için ekranın sol alt kısmında mana seçebilirsin.
+  DontShowHintWarning: Bütün ipuçlarını kapat?
+  ResetHintWarning: İpuçlarını yenilemeyi onayla?
+  CloseBattleHint: İpuçlarını yenilemeyi kapat?
+  SkipDialog: Diyaloğu geç?
+  ResetKeyBindingsWarning: Tuş ayarlarını yenilemeyi onayla?
+  GameRunSaveDiscarded: Oyun güncellendiğinden dolayı son turunuza erişemezsiniz.
+  GameRunSaveDiscardedSubText: Oyuncu profiliniz bundan etkilenmez
+  InvalidProfileName: Geçersiz Profil İsmi
+  AlreadyInGameRun: Zaten bir tur oynuyorsunuz.
+  CannotStartGameRunWithoutProfile: 'Hata: Oyuncu profili olmadan tur başlatılamaz'
+  CannotRestoreEndedGameRun: Bitirilmiş turlara geri dönemezsiniz
+  CorruptedSaveData: Kayıt dosyası verileri bozuk
+  CorruptedGameRunSaveData: Oyun turu verileri bozuk
+  CannotReenterStation: Bölüme giriş yapılamıyor
+  EarlyAccess: "|Touhou: Lost Branch of Legend| şu anda |d:Erken Erişimde|. \nHer\
+    \ şey değişikliğe tabi olabilir. \nŞu anda |b:Cirno| ve yeşil doğal kartlar üzerinde\
+    \ çalışıyoruz. \nOndan sonra ise |g:Koishi| ve hikaye moduna odaklanacağız. \n\
+    \ \nOynanış esnasında herhangi bir hata ile karşılaşırsanız, Steam topluluğunda\
+    \ veya Discord sunucusunda bizimle iletişime geçebilirsiniz."
