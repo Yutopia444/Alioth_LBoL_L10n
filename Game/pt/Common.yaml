@@ -20,7 +20,7 @@ Game:
   NextSkip: Ignorar Recompensas
   NextStage: Próximo Ato
   Archievement: Conquistas
-  UnlockLevel: Desbloquear Nível
+  UnlockLevel: Nível de Desbloqueio
   Title: 'Touhou: Lost Branch of Legend'
   DrawZone: Pilha de Compra
   PlayerTurn: Jogador
@@ -28,17 +28,44 @@ Explain:
   Title: Observação
   LoseShinning: Você sempre pode encontrar cartas exclusivas para o personagem que
     está usando, mesmo que perca sua |Exposição Inicial|.
+  RollCard: "|Cartas Encontraveis como Prémios de Carta|\n\n Você apenas pode encontrar\
+    \ cartas como Prémios de Carta se os seguintes critérios se aplicarem:\n 1: O\
+    \ custo de mana da carta pode ser pago usando a mana disponivel na sua |base de\
+    \ mana|.\n 2: Se for uma carta Única, somente pode ser encontrada se você estiver\
+    \ a jogar com a respetiva personagem, ou se você tiver uma das suas |Exibições\
+    \ Brilhantes|.\n    3: Todas as cores da carta estão presentes na sua |base de\
+    \ mana|. Mana cromática não é considerada para este requisito.\n\n    Como exemplo,\
+    \ digamos que você está a jogar de Reimu e possui o |Grimório Negro|, a |Pedra\
+    \ Filosofal| e o |Martelo Milagroso|. |d:(Você trocou a sua Exibição Brilhante\
+    \ com a Eirin...)|\n    A |base de mana| contém <sprite=\"ManaSprite\" name=\"\
+    W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. Você pode encontrar cartas Únicas\
+    \ da Reimu e da Marisa, visto que possui o |Grimório Negro|.\n\n    Neste case,\
+    \ pode encontrar uma carta preta que custe <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"B\"> visto que você pode pagar <sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"P\"> para a jogar. Contudo, você |r:não pode|\
+    \ encontrar uma carta azul e preta que custe <sprite=\"ManaSprite\" name=\"U\"\
+    ><sprite=\"ManaSprite\" name=\"B\">, visto que não existe nenhum <sprite=\"ManaSprite\"\
+    \ name=\"U\"> na |base de mana|, mesmo que pudesse pagar <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> para a jogar.\n\n    P.S.\n  \
+    \  A |Carta Branca|, uma |Exibição Brilhante|, permite ao jogador encontrar cartas\
+    \ de |p:qualquer cor|.\n    Cartas com um custo de mana de 5 ou acima e que tenham\
+    \ um componente de custo genérico |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"\
+    ManaSprite\" name=\"2\">, etc.)| podem sempre ser encontradas mesmo que a |base\
+    \ de mana| não tenha mana suficiente para a pagar. Existem várias maneiras de\
+    \ reduzir o custo de mana dessas cartas."
 UI:
   Yes: Sim
   No: Não
   Off: Inativo
   Display: Mostrar
-  Hide: Esconder
-  Hiding: Escondido
+  Hide: Ocultar
+  Hiding: Ocultado
   On: Ativo
   Confirm: Confirmar
   Cancel: Cancelar
-  Return: Retornar
+  Return: Voltar
   Close: Fechar
   Take: Coletar
   Setting: Configurações
@@ -89,7 +116,7 @@ MainMenu:
   EarlyAccess: Acesso Antecipado
   StartDate: Data de Início
   PlayedTime: Tempo Jogado
-  LastPlayed: Última Jogo
+  LastPlayed: Último Jogo
 StartGame:
   CharacterUnset: Selecione um personagem
   DifficultyTitle: Selecione a dificuldade
@@ -100,11 +127,11 @@ StartGame:
   OpeningComic: Assista o prólogo
   StoryMode: Modo História
   FreeMode: Modo Livre
-  NoStoryMode: "Modo História ainda não está pronto.\nFique de olho em atualizações\
+  NoStoryMode: "O Modo História ainda não está pronto.\nFique de olho em atualizações\
     \ futuras."
   NotReadyHint: "Essa personagem ainda não está pronta.\nFique de olho em atualizações\
     \ futuras."
-  IsLockHint: "Essa personagem estará disponível\nDesbloqueando o Nível {0}"
+  IsLockHint: "Essa personagem estará disponível\ndesbloqueando o Nível {0}"
   CheckDeck: Deck Inicial
   SkillSpellCard: Spell Card
   SkillExhibit: Exibição Inicial
@@ -188,15 +215,15 @@ Setting:
   Small: Pequeno
   RandomResult: Mostrar resultados aleatórios
   Show: Mostrar
-  Hide: Esconder
+  Hide: Ocultar
   AnimatingEnvironment: Fundo Animado
   AnimatingEnvironmentDescription: Mostrar fundos dinâmicos durante a batalha.
-  SingleEnemyAutoSelect: Seleção Automática Único
-  SingleEnemyAutoSelectDescription: Se deseja usar uma carta sem selecionar o alvo
-    se ele for o último inimigo.
+  SingleEnemyAutoSelect: Auto-Alvejo Único
+  SingleEnemyAutoSelectDescription: Se deseja usar uma carta sem ter que selecionar
+    o alvo se apenas houver um inimigo.
   Enable: Habilitar
   Disable: Desabilitar
-  XCostWarning: Aviso de Custo X?
+  XCostWarning: Aviso de Custo X
   XCostWarningDescription: Se deseja ver um aviso quando uma carta de custo X for
     usada sem escolher manualmente a mana.
   Warn: Avisar
@@ -233,10 +260,15 @@ Setting:
   RefreshRate: Taxa de Atualização
   ScreenVibration: Tremor de Tela
   TurboModeDescription: Faz com que a maioria das animações e efeitos sejam |significativamente
-    mais rápido|.
+    mais rápidos|.
   RandomResultDescription: "Se deseja mostrar os resultados aleatórios (cartas, exibições,\
-    \ etc) no evento.\nOs resultados aleatórios são determinados para essa partida\
+    \ etc) dos eventos.\nOs resultados aleatórios são predeterminados para essa partida\
     \ e não mudarão quando você reiniciar o jogo."
+  KeywordDescription: "Quando definido como |Breve|, descrições para palavras-chave\
+    \ e mecânicas comuns deixam de ser exibidas nas dicas.\n|r: Somente recomendado\
+    \ para jogadores experientes.|\n|d:(Palavras-chave e mecânicas comuns inclui ||Poder||d:,|\
+    \ |Espírito||d:,| |Proteção||d:,| |Barreira||d:,| |Preciso||d:,| |Mana Cromática||d:,|\
+    \ Aprimorar| |d: e| |Habilidades||d:.)|"
 Chat:
   Sunny1: Hoje mostraremos {0} quão poderosas somos!
   Aya3: Veja o que {0} tem em suas mãos! Essa é a prova de sua culpa!
@@ -265,7 +297,7 @@ Chat:
   HetongKailang3: Vamos lá pessoal, vocês conseguem!
   HetongYinchen1: Oh não, você quebrou {0}.
   HetongYinchen2: '{0}!'
-  Scout: Explorar
+  Scout: Sonda
   Purifier: Baymax
   Terminator:  T-800 
   Terminator0: DIAGNÓSTICOS EM ANDAMENTO...
@@ -285,7 +317,7 @@ Chat:
   YoumuTuanzi: Se você quiser mais Dango Congelado, volte imediatamente!
   YoumuMooncake: Devolve o meu {0}!
   Kokoro1: Sinto como se muitas das minhas máscaras tivessem desaparecido recentemente.
-  Clownpiece1: Fadas! Mais danmaku! Mais
+  Clownpiece1: Fadas! Mais danmaku! Mais!
   Siji1: Roubar exposições sob o pretexto de investigação de incidentes.
   SijiMystia: Comer e sair sem pagar. Sentença estendida por um ano.
   SijiTurn2: Desrespeito ao tribunal. Sentença estendida por um ano.
@@ -295,7 +327,7 @@ Chat:
   DoremyAwake: Acabei de chegar na melhor parte!
   DoremyMaster: Agora você está na fronteira dos sonhos.
   Clownpiece3: É hora da lunática!
-  LongBribery1: Você é muito boa~
+  LongBribery1: É isso mesmo~
   LongBribery2: Legal. Legal.
   LongEscape1: Oh não, fui derrotada.
   YuyukoMooncake: Estou realmente desejando um pouco {0}...
@@ -344,10 +376,10 @@ Shop:
 Cards:
   Show: Passe o mouse sobre as cartas ou clique com o botão direito do mouse para
     ver os detalhes.
-  RemoveTips: Escolha uma carta para remover
+  RemoveTips: Escolha uma carta para Remover
   Size:  {0:plural one='% carta' other='% cartas'}
   Remove: Remova {0} cartas da pilha.
-  UpgradeTips: Escolha uma carta para aprimorar
+  UpgradeTips: Escolha uma carta para Aprimorar
   UpgradeDialog: Confirmar Melhoria
   IsUpgraded: Melhorada
   UnUpgradable: Não-Melhorável
@@ -397,7 +429,7 @@ Reward:
   - Coletar Prêmios
   - Coletar Recompensas
   CardHeader: Escolha uma Carta
-  Card: Adicione uma carta à sua pilha
+  Card: Adicione uma carta à sua pilha.
   Money: '{0} Dinheiro'
   Skip: Pular Recompensas
   Abandon: Pular Carta
@@ -406,7 +438,8 @@ Reward:
 Tooltip:
   DifficultyLunatic:
     Name: 'Dificuldade: Lunático'
-    Description: Inimigos possuem mais vida, dão mais dano e têm movimentos mais perigosos.
+    Description: Inimigos possuem mais vida, causam mais dano e têm movimentos mais
+      perigosos.
   Character:
     Description: Este é o personagem que você está jogando.
     Name: '{0}'
@@ -418,9 +451,84 @@ Tooltip:
     Description: Quando sua vida chega a 0, você |r:perde o jogo|.
   Money:
     Name: Dinheiro：{0}
-    Description: Pode ser usado pra comprar na loja da Takane.
+    Description: Pode ser usado para comprar na loja da Takane.
   FinalStage:
     Name: Ato Final
+    Description: Quase no fim do jogo, vamos lá!
+  Level:
+    Description: O seu progresso neste Ato.
+    Name: Nível {0}
+  DifficultyEasy:
+    Description: "Comece cada partida com um dos |Tesouros| da Kaguya.\nVocê |não\
+      \ pode| alcançar o Ato Final."
+    Name: 'Dificuldade: Fácil'
+  DrawZone:
+    Description: "Durante a sua fase de compra, você compra {0} cartas da sua pilha\
+      \ de compra. |d:(A sua fase de compra acontece no início do seu turno, antes\
+      \ dos efeitos de início de turno)|\nSempre que a sua pilha de compra estiver\
+      \ vazia, as cartas na sua pilha de discartes são novamente baralhadas para a\
+      \ sua pilha de compra.\n\nClique para ver que cartas ainda estão na sua pilha\
+      \ de compra. |Isto não revela a ordem das cartas na sua pilha de compra.|"
+    Name: Pilha de Compra
+  EndTurn:
+    Description: "Clique para terminar o seu turno.\n\nVocê descarta a sua mão |d:(sem\
+      \ ativar os seus efeitos de descarte)|, e depois cada inimigo atua consoante\
+      \ o seu |Intuito|.\nApós todos os inimigos terem atuado, começa um turno novo."
+    Name: Terminar Turno
+  BattleMana:
+    Description: "Mana que não tenha sido gasta aparece aqui.\nVocê precisa de mana\
+      \ para jogar cartas e para pagar para custos |X|.\n\nClique num símbolo de mana\
+      \ para o \"flutuar\", para que seja o primeiro a ser gasto ou para o usar para\
+      \ pagar um custo |X|.\nClique num símbolo de mana flutoado para o retornar à\
+      \ sua reserva de mana."
+    Name: Reserva de Mana
+  UsTitle: '{1}'
+  DetailedHint:
+    Description: "Mostra todas as dicas do jogo.\nÉ a minha primeira vez a jogar um\
+      \ jogo de deck-building."
+    Name: Dicas Detalhadas
+  DontShowHint:
+    Description: "Não mostrar dicas.\nJá joguei <Touhou: Lost Branch of Legend>."
+    Name: Sem Dicas
+  DifficultyNormal:
+    Name: 'Dificuldade: Normal'
+    Description: Dificuldade padrão.
+  DifficultyHard:
+    Name: 'Dificuldade: Difícil'
+    Description: Inimigos possuem mais vida e causam mais dano.
+  DiscardZone:
+    Name: Pilha de Descarte
+    Description: "Sempre que voçe descarta uma carta, ela vem para aqui.\nNo fim do\
+      \ seu turno, todas as cartas que sobrarem na sua mão também são descartadas\
+      \ |d:(sem ativar os seus efeitos de descarte)|.\n\nClique para ver as cartas\
+      \ que estão na sua pilha de descarte."
+  ExileZone:
+    Name: Exílio
+    Description: "Cartas |Exiladas| vêm para aqui.\n\nClique para ver as cartas que\
+      \ foram |Exiladas| neste combate."
+  BaseMana:
+    Name: Base de Mana
+    Description: "No inicio de cada turno, você obtem mana igual à mana presente na\
+      \ sua |base de mana|.\nA sua |base de mana| pode aumentar adquirindo |Exibições\
+      \ Brilhantes|.\n\nA sua |base de mana| também afeta os tipos de cartas que você\
+      \ pode encontrar."
+  GameSeed:
+    Name: Seed
+    Description: "Cada partida gera uma Seed aleatória. Duas partidas com a mesma\
+      \ Seed serão idênticas.\n\nClique para copiar a Seed para a sua área de transferência."
+  EntityTitle:
+    Neutral: Neutra
+    White: Branca
+    Blue: Azul
+    Black: Preta
+    Red: Vermelha
+    Green: Verde
+    Colorless: Incolor
+    MultiColor: Multicolorida
+  BriefHint:
+    Name: Dicas Breves
+    Description: "Apenas dicas parciais serão mostradas.\nJá joguei jogos parecidos,\
+      \ como Slay the Spire."
 Gap:
   Headers:
   - O que devo fazer agora~
@@ -467,3 +575,69 @@ StatusEffectType:
   Positive: Buff
   Negative: Debuff
   Special: Especial
+BattleHint:
+  Intro: "Sejam bem-vindos à Exposição da Capital Lunar! Faça o seu melhor para achar\
+    \ o ramo perdido das lendas!\nSe já jogou um jogo de deck-building antes, você\
+    \ pode escolher |Dicas Breve| para ver a parte especial do jogo.\nAs dicas de\
+    \ jogo seguintes também seguirão esta preferência. Você pode ajustar as dicas\
+    \ de jogo no ecrã de configurações a qualquer altura."
+  Mana: "Clique com o botão direito na carta para uma vista detalhada. (Isto também\
+    \ funciona com a maioria dos ecrãs do jogo.)\nJogar cartas requer gastar mana.\
+    \ O custo de mana da carta é mostreado no canto superior direito.\nExistem 7 tipos\
+    \ de base de mana: mana colorida <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, mana incolor <sprite=\"ManaSprite\"\
+    \ name=\"C\"> e <sprite=\"ManaSprite\" name=\"P\"> que pode ser usado para pagar\
+    \ qualquer custo de mana.\nCustos genéricos como <sprite=\"ManaSprite\" name=\"\
+    2\"> podem ser pagos com 2 manas quaisqueres."
+  UltimateSkill: "Use o seu spell card para alterar o rumo do combate!\nUsar um spell\
+    \ gasta um nível inteiro de poder. Inimigos derrotados largam <sprite=\"Point\"\
+    \ name=\"Power\">, que recupera poder necessário para usar spells.\nSpells só\
+    \ podem ser usados uma vez por turno."
+  Detailed: Mostrar dicas detalhadas
+  Brief: Mostrar dicas breves
+  DontShow: Não mostrar dicas
+  Prev: Atrás
+  Next: Próx.
+  BasicBattle: "Jogue cartas da mão para expelir o inimigo!\nCartas jogadas de sua\
+    \ maõ são movidas para a pilha de descarters. No fim do turno do jogador, as cartas\
+    \ que restarem na sua mão também serão movidas para a pilha de descartes.\nNo\
+    \ início do turno do jogador, um novo conjunto de cartas é comprado."
+  ManaPanel: "A barra de mana mostra a mana disponivel para o resto do turno atual.\n\
+    Clique com o botão esquerdo em qualquer mana para a mover para a zona pendente.\
+    \ A mana na zona pendente é gasta primeiro.\nClique com o botão direito em qualquer\
+    \ mana para mover toda a mana dessa cor para a zona pendente.\nA mana é restaurada\
+    \ no início do turno do jogador."
+  BlockShield: "Antes de sofrer dano, jogue uma carta de defesa para ganhar |Proteção|\
+    \ e |s:Barreira|.\n|Proteção| e |s:Barreira| reduzem o dano que vai ser provocado.\n\
+    |Proteção| desaparece no início do turno da personagem, mas |s:Barreira| não."
+  Intention: "O intuito do inimigo é mostrado por cima dele.\nInimigos podem ter várias\
+    \ intenções, como atacar, defender, aplicar buffs e debuffs, ou usar spells."
+MessageDialog:
+  ResetKeyBindingsWarning: Confirmar Redefinição de Mapeamento de Controles
+  GameRunSaveDiscarded: Visto que o jogo foi atualizado, a partida mais recente foi
+    descartada.
+  EarlyAccess: "|Touhou: Lost Branch of Legend| é um jogo em |d: Acesso Antecipado|.\n\
+    Tudo poderá está sujeito a alterações.\nDe momento, estamos a trabalhar na |b:Cirno|\
+    \ e em cartas neutras verdes.\nDepois disso iremos trabalhar na |g:Koishi| e no\
+    \ Modo História.\n\nSe encontrar bugs durante o jogo, pode entrar em contato connosco\
+    \ na nossa comunidade Steam ou no nosso servidor de Discord."
+  GameRunSaveDiscardedSubText: O seu perfil de jogador não será afetado.
+  GameAbandonWarning: Abandonar a partida atual?
+  ReturnToMainMenu: Retornar ao menu principal?
+  QuitGame: Sair do jogo?
+  UnsavedWarning: O seu progresso desde o último ponto de gravação será perdido.
+  XCostEmptyUsageWarning: Usar {0} sem especificar o custo?
+  XCostEmptyUsageTips: Você pode escolher que mana usar para cartas de custo X na
+    barra de mana no canto inferior esquerdo.
+  DontShowHintWarning: Desativar todas as dicas?
+  ResetHintWarning: Confirmar Redefinição de Dicas
+  CloseBattleHint: Fechar Confirmação de Dica de Combate
+  SkipDialog: Saltar Diálogo?
+  InvalidProfileName: Nome de Perfil Inválido
+  CannotStartGameRunWithoutProfile: 'Não é Possível Começar o Jogo: Partida Sem Perfil
+    de Jogador'
+  CannotRestoreEndedGameRun: Não é Possível Restaurar Partida Terminada
+  CorruptedSaveData: Dados de gravação corrompidos
+  CorruptedGameRunSaveData: Partida corrompida
+  CannotReenterStation: Impossível entrar no nível
