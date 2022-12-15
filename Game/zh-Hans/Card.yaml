@@ -629,8 +629,7 @@ WizardStudy:
 
 ExilePotion:
   Name: 废物利用
-  Description: 选择抽牌堆中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|洗入弃牌堆。
-  UpgradedDescription: 选择抽牌堆和手中的至多 {Value1} 张|厄运|或状态牌，|放逐|它们，将等量的|不稳定魔药|洗入弃牌堆。
+  Description: 从手牌、抽牌堆和弃牌堆中选择至多 {Value1} 张牌|放逐|，将等量的|不稳定魔药|洗入弃牌堆。
 
 PotionDefense:
   Name: 伴星飞行
@@ -1251,8 +1250,10 @@ SunnyDefense:
 ClownAbility:
   Name: 地狱之蚀
   Description: |-
-    回合开始后，随机将所有手牌的费用增加或减少{Mana1}。
     将一张|皮斯的疯狂|加入你的手牌。
+    每当你抽取到一张手牌时，随机结算一个效果：
+    - 费用增加{Mana}
+    - 移除{Value1}点随机费用
 
 FairySupportLarva:
   Name: 拉尔瓦的振翅
@@ -1338,6 +1339,16 @@ NazrinBaota:
     「不要在隧道里开远光灯啊！」
     ——黑谷山女
 
+RingoJinghua:
+  Name: 净化大地
+  Description: |-
+    选择至多 {Value1} 张手牌|放逐|。
+    获得 {Value2} 点<sprite="Point" name="Power">。
+  UpgradedDescription: |-
+    从手牌、抽牌堆和弃牌堆中选择至多 {Value1} 张牌|放逐|。
+    获得 {Value2} 点<sprite="Point" name="Power">。
+  FlavorText: 此次作战被命名为「地上补完计划」。
+
 HuashanQingjing:
   Name: 清静
   Description: 获得 {Block} 点|格挡|。
@@ -1355,13 +1366,6 @@ BailianNingshen:
     从 {Value1} 张随机的普通牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
     |d:初见：将一张光芒加入手中。|
   FlavorText: 圣白莲女士的「佛家讲坛」系列短视频很受中老年村民和年轻妖怪的欢迎。
-
-RingoJinghua:
-  Name: 净化大地
-  Description: |-
-    选择至多 {Value1} 张手牌|放逐|。
-    获得 {Value2} 点<sprite="Point" name="Power">。
-  FlavorText: 此次作战被命名为「地上补完计划」。
 
 ShenziUpgradeAll:
   Name: 得道升仙
@@ -1385,6 +1389,9 @@ PlayWithWater:
   Description: |-
     抽 {Value1} 张牌。
     选择一张手牌丢弃。
+  UpgradedDescription: |-
+    抽 {Value1} 张牌。
+    选择至多一张手牌丢弃。
   FlavorText: Play with water.
 
 QinglanAttack:
@@ -1467,6 +1474,13 @@ Shadow:
   Name: 暗影
   FlavorText: 「我本可以忍受光明，如果我不曾见过露米娅。」
 
+RumiaBlock:
+  Name: 遮光
+  Description: |-
+    获得 {Block} 点|格挡|。
+    将一张|暗影|加入手中。
+  FlavorText: 没看见就是 0 伤害。
+
 YuyukoDebuff:
   Name: 无寿之梦
   Description: 施加 {Value1} 回合的|虚弱|和|易伤|。
@@ -1489,15 +1503,9 @@ MystiaSing:
   Name: 夜雀之歌
   Description: |-
     对所有敌人施加 {Value1} 点|暂失火力|。
-    获得 {Value2} 点<sprite="Point" name="Power">。
+    获得 {Value1} 点<sprite="Point" name="Power">。
+    将 {Value2} 张|暗影|加入弃牌堆。
   FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
-
-RumiaBlock:
-  Name: 遮光
-  Description: |-
-    获得 {Block} 点|格挡|。
-    将一张|暗影|加入手中。
-  FlavorText: 没看见就是 0 伤害。
 
 SatoriMemory:
   Name: 深沉回忆
@@ -1653,7 +1661,7 @@ LigeluCard:
   Name: 荧光之夜
   Description: |-
     获得 {Block} 点|格挡|。
-    每失去 1 点法力，本牌的|格挡|提高 {Value1}。
+    |手牌中：|每次支付{Mana}，使下一次打出时的格挡值提高{Value1}。
 
 QiuSeed:
   Name: 春种秋收
@@ -1664,7 +1672,10 @@ QianGui:
   Name: 前鬼后鬼的守护
   Description: |-
     造成 {Damage} 点伤害。
-    获得 {Value1} 点临时灵力。
+    |初见：|获得{Value1}层闪避。
+  ExtraDescription1: |-
+    造成 {Damage} 点伤害。
+    |d:初见：获得{Value1}层闪避。|
 
 YuyukoSing:
   Name: 彼岸歌声
@@ -1690,7 +1701,12 @@ DanmakuJade:
 
 Danmaku10Morph:
   Name: 狸猫变化
-  Description: 选择1张弹幕变化加入手牌。你将获得以下效果之一，获得4点最大生命；获得3层闪避；获得50点金币；获得3点火力。
+  Description: |-
+    选择1张弹幕变化加入手牌。你将获得以下效果之一，
+    获得 4 点最大生命；
+    获得 4 层闪避；
+    获得 50 点金币；
+    获得 3 点火力。
 
 MorphFrog:
   Name: 蛤变化
@@ -1723,7 +1739,7 @@ HuiyinAttack:
   Name: 水户光国
   Description: |-
     造成 {Damage} 点伤害。
-    选择至多 {Value1} 张手牌丢弃。
+    选择至多 {Value1} 张手牌丢弃，抽等量的牌。
 
 ReadBook:
   Name: 读书看报
@@ -1839,7 +1855,7 @@ ZhenmiaowanAttack:
     本回合内技能牌的费用降低{Mana}。
   UpgradedDescription: |-
     造成 {Damage} 点伤害。
-    本回合内技能牌和防御牌的费用降低{Mana}。
+    本回合内所有卡牌的费用降低{Mana}。
 
 XingMoney:
   Name: 光辉宝枪
@@ -1868,9 +1884,6 @@ BaitianCard:
   Name: 稗田的转生
   Description: |-
     获得 {Block} 点格挡。
-    从弃牌堆中选择一张牌，将它洗入抽牌堆。
-  UpgradedDescription: |-
-    获得 {Block} 点格挡。
     从弃牌堆中选择一张牌，将它置于抽牌堆顶。
   FlavorText: 在尝试了电子的信息存储媒介后，稗田阿求小姐有了更多喝下午茶的闲暇时间。
 
@@ -1888,8 +1901,9 @@ NueExile:
 HuiyinRetain:
   Name: 一条归桥
   Description: |-
-    获得 {Block} 点格挡。
     从弃牌堆中选择至多 {Value1} 张牌加入手中，|保留|它们一回合。
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |时间有限|{Mana}。
 
 XiaosanReflect:
   Name: 反击弹幕
@@ -1906,7 +1920,6 @@ YijiuAttack:
 ReisenMana:
   Name: 幻视调律
   Description: 从|水花|和|火焰|中选择一张，将它的两张复制加入手中。
-  UpgradedDescription: 从|水花|、|水花|、|火焰|、|火焰|中选择两张加入手中。
 
 FourFlan:
   Name: 四重存在
@@ -2001,7 +2014,7 @@ SanaeRice:
 KaguyaTreeSee:
   Name: 蓬莱的树海
   Description: |-
-    每次收到伤害时，费用降低{Mana}。
+    每次受到伤害时，费用降低{Mana}。
     将所有放逐区内附带|放逐|的卡牌移入抽牌堆。
     所有卡牌失去|放逐|。
 
@@ -2082,7 +2095,7 @@ QiuGraze:
 
 FangxiangAttack:
   Name: 剧毒抹消
-  Description: 对带有|毒|的目标造成{Damage}点伤害，否则施加{Value1}层|毒|。
+  Description: 如果目标已经中毒，对目标造成{Damage}点伤害，否则施加{Value1}层|毒|。
 
 TigerNeijin:
   Name: 沉寂的怒气
