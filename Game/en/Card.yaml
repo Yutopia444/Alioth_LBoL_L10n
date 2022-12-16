@@ -943,9 +943,8 @@ MarisaEat:
   ExtraDescription1: "Gain {Value1} |Concentration|.\n|d:Debut: Gain {Value2} life.|"
 ExilePotion:
   Name: Waste Utilization
-  Description: "|Exile| up to {Value1} |Misfortune| or Status {Value1:plural one='card'\
-    \ other='cards'} from the draw pile. Add that many |Unstable Potions| to the discard\
-    \ pile."
+  Description: "Choose up to {Value1} cards from the hand, draw pile and discard pile.\
+    \ |Exile| them and add that many |Unstable Potions| to the discard pile."
 WizardStudy:
   Description: "Gain {Value1} |Firepower| and |Spirit|.\nThe first card played each\
     \ turn costs {Mana} more to play."
@@ -1034,8 +1033,9 @@ RumiaBlock:
   Description: "Gain {Block} |Block|.\nAdd a |Shadow| to the hand."
   Name: Shade
 MystiaSing:
-  Description: "Apply {Value1} |Temporary Firepower Down| to each enemy.\nGain {Value2}\
-    \ <sprite=\"Point\" name=\"Power\">."
+  Description: "Apply {Value1} |Temporary Firepower Down| to each enemy.\nGain {Value1}\
+    \ <sprite=\"Point\" name=\"Power\">.\nAdd {Value2} |Shadow{Value2:plural one=''\
+    \ other='s'}| to the discard pile."
   Name: Song of the Night Sparrow
 BlackHorseZui:
   Description: "Lose {Value1} life.\nDeal {Damage} damage to each enemy {Value2:plural\
@@ -1074,8 +1074,8 @@ SeeFengshui:
     \ |Defense| card is sent to the discard pile this way, gain {Value2} |Block|."
   Name: Feng Shui Manipulation
 YukariAttack:
-  Description: "Deal {Damage} damage.\nAt the end of the turn, if {PlayerName}'s life\
-    \ total changed during the turn, return this card from the discard pile to the\
+  Description: "Deal {Damage} damage.\nAt the end of {PlayerName}'s turn, if their\
+    \ life total changed that turn, return this card from the discard pile to the\
     \ hand. It |temporarily costs| {Mana}."
   Name: Boundary of Life and Death
 HuaBlock:
@@ -1116,7 +1116,7 @@ RemiliaBat:
   Name: Bat Incarnation
 HuiyinAttack:
   Description: "Deal {Damage} damage.\nDiscard up to {Value1:plural one='% card' other='%\
-    \ cards'}."
+    \ cards'}, then draw that many cards."
   Name: Mito no Mitsukuni
 ReadBook:
   Description: "Gain {Block} |Block|.\n|Debut:| Choose 1 of {Value1} blue and/or white\
@@ -1177,11 +1177,10 @@ HuashanDefense:
 ZhenmiaowanAttack:
   Description: "Deal {Damage} damage.\n|Skill| cards cost {Mana} less this turn."
   Name: Descendent of the Inchlings
-  UpgradedDescription: "Deal {Damage} damage.\n|Skill| and |Defense| cards cost {Mana}\
-    \ less this turn."
+  UpgradedDescription: "Deal {Damage} damage.\nCards cost {Mana} less this turn."
 BaitianCard:
   Description: "Gain {Block} |Block|.\nReturn a card from the discard pile to the\
-    \ draw pile."
+    \ top of the draw pile."
   Name: Transmigration of Hieda
 NueExile:
   Description: "|Exile| a card from the hand.\nAdd a random card to the hand. It |temporarily\
@@ -1318,8 +1317,9 @@ YukariBox:
     Shuffle the discard pile into the draw pile."
   Name: '"Gifts" Given'
 HuiyinRetain:
-  Description: "Gain {Block} |Block|.\nReturn up to {Value1:plural one='% card' other='%\
-    \ cards'} from the discard pile to the hand. |Retain| them this turn."
+  Description: "Return up to {Value1:plural one='% card' other='% cards'} from the\
+    \ discard pile to the hand. |Retain| them this turn.\nEnd the turn. Then, {PlayerName}\
+    \ takes an additional turn.\n|Time Limit| {Mana}"
   Name: Ichijou Returning Bridge
 XiaosanReflect:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|."
@@ -1561,8 +1561,7 @@ MedicineGarden:
 YachieDefend:
   Name: Tortoiseshell Hell
   Description: "Prevent the next {Value1:plural one='% time' other='% times'} {PlayerName}\
-    \ would lose life.\nIf the source is an enemy, that enemy loses that much life\
-    \ instead."
+    \ would lose life.\nIf that life loss was from an enemy, they lose that much life."
 PaluxiCurse:
   Name: Grudge Returning
   Description: "Deal {Damage} damage.\nApply {Value1} |Weak| and |Vulnerable|.\nAdd\
@@ -1574,12 +1573,11 @@ TodayYesterday:
     Gain {Value2} |Graze|."
 LigeluCard:
   Name: Glowing Night
-  Description: "|d:This card is currently in development.\nPlease check back in a\
-    \ future update!|"
+  Description: "Gain {Block} |Block|.\n|While in hand:| Whenever {Mana} is spent,\
+    \ increase this card's |Block| by {Value1} until played."
 YuyukoSing:
   Name: Song of Distant Shore
-  Description: "Deal {Damage} damage.\nThis card can be |Upgdraded| any number of\
-    \ times."
+  Description: "Deal {Damage} damage.\nThis card can be |Upgraded| any number of times."
 DangerousMagician:
   Description: Whenever a |Throwing Knife| is used, gain {Value1} |Time Pulse|.
   Name: Dangerous Illusionist
@@ -1663,7 +1661,8 @@ MorphDog:
 DizangLove:
   Description: At the end of combat, gain {Value1} life.
 QianGui:
-  Description: "Deal {Damage} damage.\nGain {Value1} |Temporary Spirit|."
+  Description: "Deal {Damage} damage.\n|Debut:| Gain {Value1} |Graze|."
+  ExtraDescription1: "Deal {Damage} damage.\n|d:Debut: Gain {Value1} Graze.|"
 QiuSeed:
   Description: Add a |Vitality| with |Replenish| to the top of the draw pile.
 MorphBird:
