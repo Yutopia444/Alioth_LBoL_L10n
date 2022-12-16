@@ -26,7 +26,7 @@ DoubleJiejie:
   Name: Podwójna Bariera
   FlavorText: Weź dwa lustra a zobaczysz nieskończoną pętlę.
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Jeżeli {PlayerName} ma |Barierę|, to zadaj {Damage=plural one:'% obrażenie' few='%\
+    Jeżeli {PlayerName} ma |Barierę|, to zadaj {Damage:plural one='% obrażenie' few='%\
     \ obrażenia' many='% obrażeń'} kolejny raz."
   UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'}.\nJeżeli {PlayerName} ma |Barierę| lub |Blok|, to zadaj {Damage:plural\
@@ -189,7 +189,7 @@ Wunvyu:
     \ dobrana poza fazą doboru, zwiększ obrażenia tej karty o {Value2}."
 MomentPower:
   Name: Wyrwa Wymiarowa
-  Description: Gdy {OwnerName} zyskuje |Tymczasową Moc| lub |Tymczasowe Uduchowienie|,
+  Description: Gdy {PlayerName} zyskuje |Tymczasową Moc| lub |Tymczasowe Uduchowienie|,
     zamień {Value1:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego
     z nich w ich permanentny odpowiednik.
 ChuanyueJiejie:
@@ -921,6 +921,8 @@ RingoJinghua:
   Description: "|Wygnaj| do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ z dłoni.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
   FlavorText: Ta operacja została nazwana "Projektem Narzędności Ziem".
+  UpgradedDescription: "|Wygnaj| do {Value1:plural one='% karty' other='% kart'} obecnie\
+    \ w obiegu.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
 ShenziUpgradeAll:
   Name: Apoteoza
   Description: '|Ulepsz| wszystkie karty na czas walki.'
@@ -1160,8 +1162,6 @@ MeihongPower:
   Description: "Na początku tury {PlayerName:g} zyskaj {Value1} |Mocy|.\nNa końcu\
     \ walki, jeżeli {PlayerName} ma mniej niż połowę życia, ulecz {Value2} życia."
   FlavorText: Jest przeklętą nieśmiertelniczką, prowadząc życie w ascezie.
-Reborn:
-  Description: "Zrzuć kartę po lewej stronie dłoni.\nDobierz kartę."
 QianGui:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zyskaj {Value1} |Tymczasowego Uduchowienia|."
@@ -1247,8 +1247,9 @@ NueExile:
   Name: Ciemne Chmury Heian
 HuiyinRetain:
   Name: Most Powrotu Ichijou
-  Description: "Zyskaj {Block} |Bloku|.\nZwróć do {Value1:plural one='% karty' few='%\
-    \ kart' many='% kart'} ze stosu zrzutek do ręki. |Przetrzymaj| je na tę turę."
+  Description: "Zwróć do {Value1:plural one='% karty' few='% kart' many='% kart'}\
+    \ ze stosu zrzutek do ręki. |Przetrzymaj| {Value1:plural one='ją' other='je'}\
+    \ na tę turę."
 TianziMana:
   Name: Niebiański Lot
   Description: Zyskaj {Mana}.
@@ -1280,7 +1281,7 @@ ReisenMana:
   Description: Dodaj dwa |Płomienie| lub dwa |Pluski| do ręki.
 HekaHellRain:
   Name: Piekielny Deszcz
-  Description: Za każdą zagraną kartę zadaj {Level:plural one='% obrażenie' few='%
+  Description: Za każdą zagraną kartę zadaj {Value1:plural one='% obrażenie' few='%
     obrażenia' many='% obrażeń'} wszystkim wrogom na końcu tury {PlayerName:g}.
 ReisenAttack:
   Name: Obłędny Sen
@@ -1371,7 +1372,7 @@ ZoufangSnake:
     kart aby dodać do ręki. |Tymczasowo kosztuje| ona {Mana}.
 YachieDefend:
   Name: Szylkretowe Piekło
-  Description: Zapobiedz następn{Level:plural one='y raz' other='e % razy'}, gdyby
+  Description: Zapobiedz następn{Value1:plural one='y raz' other='e % razy'}, gdyby
     {PlayerName} miałaby stracić życie. Jeżeli źródłem był wróg, zamiast tego oni
     tracą życie.
 TodayYesterday:
@@ -1386,7 +1387,11 @@ MedicineGarden:
   Description: "|d:Ta karta jest w trakcie rozwoju.\nProsimy czekać do następnej aktualizacji!|"
 RuowujiCard:
   Name: Fale Odwróconych Łusek
-  Description: "|d:Ta karta jest w trakcie rozwoju.\nProsimy czekać do następnej aktualizacji!|"
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\n|Za każde wydane <sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"U\">:| Zyskaj <sprite=\"ManaSprite\" name=\"G\">.\n|Za każde\
+    \ wydane <sprite=\"ManaSprite\" name=\"G\"><sprite=\"ManaSprite\" name=\"G\">:|\
+    \ Zyskaj <sprite=\"ManaSprite\" name=\"U\">."
 Shoot:
   Name: Strzał
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -1636,3 +1641,18 @@ Regret:
 Yuebiao:
   Name: Krajobraz Księżyca
   Description: '|Gdy dobraba:| |Oczyść| {Value1}.'
+RangziSeed:
+  Name: Jesienne Żniwa
+RangziFanshu:
+  Name: Słodki Batat
+LilyChun:
+  Name: Jest Wiosna!
+CoolBreeze:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Jeżeli cel jest |Zimny|, ta karta zadaje o {Value1} więcej obrażeń"
+SkyWater:
+  Name: Niebiański Cud Wodny
+DanmuJade:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nDodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='%\
+    \ |Tęcz|'} do ręki.\n|Za każde wydane {Mana}:| Zyskaj {Value1} |Mocy| i |Uduchowienia|."
