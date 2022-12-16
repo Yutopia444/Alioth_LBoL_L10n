@@ -42,7 +42,7 @@ Fragil:
   Name: Kırılgan
   Description: "{PlayerName} {Duration:plural one='turun sonuna kadar' other='sıradaki\
     \ % tur'} kart etkilerinden %{Value} daha az |Blok| ve |Bariyer| edinir."
-  Brief: '{PlayerName} kartlardan %{Value} daha az |Blok| ve |Bariyer| edinir.'
+  Brief: '{PlayerName:sg} kartlardan |Blok| ve |Bariyer| edinişi %{Value} azalır.'
 Weak:
   Name: Zayıf
   Description: "{OwnerName:sg} saldırıları {Duration:plural one='turun sonuna kadar'\
@@ -108,18 +108,18 @@ Vulnerable:
   Brief: '{OwnerName} saldırılardan %{Value} daha fazla hasar alır.'
   Name: Savunmasız
 LockedOn:
-  Description: "{OwnerName} saldırılardan fazladan {Level} hasar alır.\nHer turun\
+  Description: "{OwnerName:sg} saldırılardan aldığı hasar {Level} artar.\nHer turun\
     \ başlangıcında 1 |Kenetlenme| kaybedersin."
   Brief: "{OwnerName} saldırılardan daha fazla hasar alır.\nHer turun başlangıcında\
-    \ 1 |Kenetlenme| kaybet."
+    \ 1 |Kenetlenme| kaybedersin."
   Name: Kenetlenme
 Graze:
   Description: "{OwnerName} sıradaki {Level:plural one='saldırıdan' other='% saldırıdan'}\
     \ hasar almaz.\nSaldırıldığında veya sıradaki turun başlangıcında 1 |Sıyrılma|\
-    \ kaybet."
+    \ kaybedersin."
   Name: Sıyrılma
   Brief: "{OwnerName} saldırılardan hasar almaz.\nSaldırıldığında veya her turun başlangıcında\
-    \ 1 |Sıyrılma| kaybet."
+    \ 1 |Sıyrılma| kaybedersin."
 ExtraTurn:
   Description: "{OwnerName} bu turun bitişinde {Level:plural one='% ekstra tur' other='%\
     \ ekstra tur'} daha oynayacak."
@@ -137,8 +137,8 @@ Invincible:
   Brief: "{OwnerName} tek seferde 1'den daha fazla sağlık kaybedemez."
 SolarSystemSe:
   Name: Orerry'nin Güneşi
-  Description: '{PlayerName:sg} turu başladığında, {Level} |Hücum| elde eder.'
-  Brief: '{PlayerName:sg} turu başladığında, biraz |Hücum| elde eder.'
+  Description: '{PlayerName:sg} turu başladığında, {Level} |Enerji| elde eder.'
+  Brief: '{PlayerName:sg} turu başladığında, bir miktar |Enerji| elde eder.'
 LearnAstrologySe:
   Description: "{PlayerName:sg} turu başladığında, elinde {Level:plural one='0' other='%'den\
     \ az'} |Astroloji| bulunuyorsa, ele {Level:plural one='bir |Astroloji|' other='%\
@@ -151,10 +151,10 @@ SenluoJiejieSe:
   Description: Sıradaki turun başlangıcında, |Bariyer|i patlat.
   Brief: Sıradaki turun başlangıcında, |Bariyer|i patlat.
 Charging:
-  Name: Hücum
-  Description: '{PlayerName:sg} ne zaman {TriggerLevel} veya fazlası |Hücum|u varsa,
+  Name: Enerji
+  Description: '{PlayerName:sg} ne zaman {TriggerLevel} veya fazlası |Enerji|si varsa,
     kendisi |Patlama|ya girer.'
-  Brief: '{PlayerName:sg} ne zaman {TriggerLevel} veya fazlası |Hücum|u varsa, kendisi
+  Brief: '{PlayerName:sg} {TriggerLevel} veya fazla |Enerji|si olduğunda, kendisi
     |Patlama|ya girer.'
 Burst:
   Name: Patlama
@@ -165,8 +165,8 @@ Burst:
 Concentration:
   Name: Konsantre
   Description: Sonraki {Level:plural one='' other='% '}|Aşırı| efekt{Level:plural
-    one='ini' other='lerini'} çalıştırmak için |Hücum| harcanması gerekmez.
-  Brief: Sıradaki bir veya daha fazla |Aşırı| efektlerini çalıştırmak için |Hücum|
+    one='ini' other='lerini'} çalıştırmak için |Enerji| harcanması gerekmez.
+  Brief: Sıradaki bir veya daha fazla |Aşırı| efektlerini çalıştırmak için |Enerji|
     harcanması gerekmez.
 BurstUpgrade:
   Name: Tüm Gücünle
@@ -230,13 +230,13 @@ PhoneBillSe:
     \" name=\\\"Gold\\\"> toplar.\nYenildiğinde {Count} <sprite=\\\"Point\\\" name=\\\
     \"Gold\\\"> düşürür."
 DroneBlock:
-  Brief: '{OwnerName:sg} turu sonlandığında, Biraz |Blok| elde eder.'
+  Brief: '{OwnerName:sg} turu sonlandığında, bir miktar |Blok| edinir.'
   Name: Defans Mekanizimi
-  Description: '{OwnerName:sg} turu sonlandığında, {Level} |Blok| elde eder.'
+  Description: '{OwnerName:sg} turu sonlandığında, {Level} |Blok| edinir.'
 Servant:
-  Name: Çağılmış
-  Description: "Çağıran kişi yenildiğinde, çağırılan her şeyde yenilir.\nÖlüm efektlerini\
-    \ çalıştırmaz."
+  Name: Çağırma
+  Description: "Çağıranın yenilmesi çağırılanların da yenilmesine sebep olur.\nÖlüm\
+    \ efektlerini çalıştırmaz."
 DeathExplodeNotCount:
   Name: İntikam Mermisi
   Description: "{OwnerName} yenildiğinde, {PlayerName} {Level} hasar yer.\nEğer Patlarsa\
@@ -258,31 +258,33 @@ LoveGirlDamageIncrease:
     alır.'
 AbsorbSpirit:
   Name: Mavi Küre
-  Description: '{OwnerName:sg} turu sonlandığında, {Level} |Ruh| elde eder.'
+  Description: '{OwnerName:sg} turunun sonunda {Level} |Ruh| elde eder.'
 Lunatic:
-  Name: Çılgınlık
-  Description: "Herkesin üzerine büyülü bir ışık parlar. Çılgınlığa sürülmüş, {OwnerName:sg}\
-    \ hareketleri güçlenmiştir.\n{PlayerName:sg} sıradaki turunun başlangıcında {Mana}\
-    \ elde et."
+  Name: Delilik
+  Description: "Herkesin üstünde fevkalade bir aydınlık parıldar. Deliliğe sürüklenmiş\
+    \ olan {OwnerName:sg} hareketleri güçlenir.\n{PlayerName:sg} turunun başlangıcında\
+    \ {Mana} elde et."
 WindGirl:
   Name: Rüzgarların Kızı
   Description: '{OwnerName:sg} turu sonlandığında, |Sıyrılma|sı {Level} olana kadar
     yenilenir.'
 FirepowerIsJustice:
   Name: Kudretli Haklıdır!
-  Description: '{OwnerName:sg} |Ateşgücü|sü asla {PlayerName:sg}kinden az olmaz.'
+  Description: '{OwnerName:sg} kendi |Ateşgücü| asla {PlayerName:sl}n az olmaz.'
 PrivateSquare:
-  Name: Gümüş Kilitlenmesi
-  Description: "Oynanmış her {Limit} kart için, {OwnerName} {PlayerName:sd} {Level}\
+  Name: Gümüş Kısıtlama
+  Description: "{OwnerName} {PlayerName:sd} oynanmış her {Limit} kart için {Level}\
     \ hasar verir.\n{Count} kart kaldı."
 AmuletForCard:
   Name: Egzorsizm
+  Brief: Eklenecek sıradaki durum kartlarını engelleyip |Sürgün| et.
+  Description: Eklenecek sıradaki {Level} durum kartını engelleyip |Sürgün| et.
 CantDrawThisTurn:
-  Name: Çekme Anlaşması
+  Name: Çekme Engeli
   Description: Turun sonuna kadar kart çekilemez.
   Brief: Turun sonuna kadar kart çekilemez.
 CantDrawNextTurn:
-  Name: Sıradaki Tur Çekme Anlaşması
+  Name: Sıradaki Tur Çekme Engeli
   Description: Sıradaki tur kart çekme fazından sonra kart çekilemez.
   Brief: Sıradaki tur kart çekme fazından sonra kart çekilemez.
 NoAttackDamageNextTurn:
@@ -297,3 +299,45 @@ TimeIsLimited:
   Name: Zaman Limiti
   Description: Düşmanların sıradaki turuna kadar, kart oynamak daha fazla {Mana} ister.
   Brief: Düşmanların sıradaki turuna kadar, kart oynamak daha fazla mana ister.
+GuangxueMicai:
+  Name: Optik Kamuflaj
+  Description: "{OwnerName:sg} aldığı hasar {Duration:plural one='turun sonuna kadar'\
+    \ other='sıradaki % tur'} yarıya iner."
+  Brief: '{OwnerName} saldırılardan hasarın yarısını alır.'
+MaoyuBlock:
+  Name: Tüylü
+  Description: '{OwnerName} saldırıldığında {Level} |Blok| edinir.'
+DeathVulnerable:
+  Name: Akça Ölüm
+  Description: '{OwnerName} yenildiğinde {PlayerName} {Level} tur |Savunmasız| kalır.'
+AbsorbPower:
+  Name: Kırmızı Orb
+  Description: '{OwnerName:sg} turunun sonunda {Level} |Ateşgücü| edin.'
+LunaticTorch:
+  Name: Divane Meşale
+  Description: '{OwnerName:sg} meşalesi acayip bir ışık ile parıldar, her düşman |Deliliğe|'
+Interview:
+  Description: '{OwnerName} olay yerinde vaka hakkında soruşturma yürütmekte.'
+  Name: Süregiden Görüşme
+InterviewDone:
+  Name: Tamamlanmış Görüşme
+  Description: "{OwnerName} vakanın gerçeklerini bir araya getirdi! \nBunbunmaru gazetesinde\
+    \ özel sayı yayınlayacak."
+RinSummon:
+  Name: Ruhsal Diriliş
+  Description: "{OwnerName} {Level} Hıçlı Ruhu canlandırabilir.\nHer {Limit} tur başı\
+    \ yeni bir tane eklenir."
+RinAura:
+  Name: Coşkun Alev
+  Description: '{OwnerName} tarafından çağırılmış Hıçlı Ruhlar intikam mermileri ile
+    {Level} hasar verirler.'
+Fengyin:
+  Name: Mühürlenme
+  Description: "{PlayerName} {Duration:plural one='turun sonuna kadar' other= 'sıradaki\
+    \ % tur'} saldırı kartları kullanamaz."
+Emi:
+  Name: Elektromanyetik Müdahale
+  Description: "{OwnerName} {Duration:plural one='turun sonuna kadar' other='sıradaki\
+    \ % tur'} hareket edemez."
+TurnStartPurify:
+  Name: Sıradaki Tur Saflaştırma
