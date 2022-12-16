@@ -349,7 +349,9 @@ GapLady:
 
 ChunseXiaojing:
   Name: 春色小径
-  Description: 将 {Value1} 张|新生|加入手中。
+  Description: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
 
 ReimuSakura:
   Name: 梦想樱花封印
@@ -811,9 +813,18 @@ KnifeBounce:
 Lijian:
   Name: 离剑之见
   Description: |-
-    获得 {Value1} 层|闪避|。
     造成 {Damage} 点伤害。
     |抽取时|：费用降低{Mana}，直到战斗结束。
+
+PrivateVision:
+  Name: 个人幻影
+  Description: |-
+    选择一张手牌丢弃。
+    获得 {Value1} 层|闪避|。
+  UpgradedDescription: |-
+    选择一张手牌丢弃。
+    获得 {Value1} 层|闪避|。
+    获得 {Value2} 点|反射|。
 
 Knife:
   Name: 飞刀
@@ -881,7 +892,7 @@ AttackMagic:
   Description: |-
     造成 {Damage} 点伤害。
     抽 {Value1} 张牌。
-    选择 {Value2} 张手牌丢弃。
+    将 {Value2} 张|飞刀|加入手中。
 
 CleanRoom:
   Name: 打扫房间
@@ -962,11 +973,19 @@ SakuyaClock:
 
 DangerousMagician:
   Name: 危险的魔术师
-  Description: 每当一张|飞刀|生效时，{PlayerName}获得 {Value1} 层|时域冲击|。
+  Description: |-
+    每当一张|飞刀|生效时，{PlayerName}获得 {Value1} 层|时域冲击|。
+    将 {Value2} 张|飞刀|加入抽牌堆。
 
 ShengquanZaiwo:
   Name: 胜券在握
   Description: 获得{Mana}。
+
+LunaDial:
+  Name: 个人空间
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |抽取时|：费用降低{Mana}，直到战斗结束。
 
 LightSpeed:
   Name: 光速跃迁
@@ -974,11 +993,11 @@ LightSpeed:
     造成 {Damage} 点伤害。
     如果这回合内弃过牌，获得{Mana}。
 
-PrivateVision:
-  Name: 双重幻影
+DropToKnife:
+  Name: 银之壁垒
   Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
-    获得等量于未被阻挡伤害的|反射|。
+    选择 {Value1} 张手牌丢弃。
+    每丢弃一张牌，将一张|飞刀|加入手中。
 
 FakeTimeline:
   Name: 假想时轴
@@ -1045,20 +1064,10 @@ LunaClock:
   Name: 月神之钟
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合攻击无法造成伤害。
 
-LunaDial:
-  Name: 个人空间
-  Description: |-
-    结束{PlayerName}的回合，进行一个额外的回合。
-    |抽取时|：费用降低{Mana}，直到战斗结束。
-
 SpecialClock:
   Name: 女仆秘技
   Description: 在{PlayerName}的回合开始时，选择至多一张手牌丢弃，抽等量的牌。
   FlavorText: 客厅扫除的用时：0.4秒
-
-DropToKnife:
-  Name: 银之壁垒
-  Description: 丢弃所有非|保留|的手牌，每丢弃一张牌，将一张|飞刀|加入手中。
 
 SakuyaDio:
   Name: 轮到你了
@@ -1651,22 +1660,10 @@ MeihongPower:
     战斗结束时，如{PlayerName}的生命值低于一半，恢复 {Value2} 点生命。
   FlavorText: 被诅咒的永生者，此世永为苦行。
 
-Reborn:
-  Name: 新生
-  Description: |-
-    丢弃最左边的手牌。
-    抽一张牌。
-
-LigeluCard:
-  Name: 荧光之夜
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |手牌中：|每次支付{Mana}，使下一次打出时的格挡值提高{Value1}。
-
-QiuSeed:
+RangziSeed:
   Name: 春种秋收
-  Description: 将一张|生机|置入抽牌堆顶部，其附带填充。
-  UpgradedDescription: 将一张|幻虹|置入抽牌堆顶部，其附带填充。
+  Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
+  UpgradedDescription: 将一张|幻虹|置于抽牌堆顶，它具有|填充|。
 
 QianGui:
   Name: 前鬼后鬼的守护
@@ -1678,26 +1675,25 @@ QianGui:
     |d:初见：获得{Value1}层闪避。|
 
 YuyukoSing:
-  Name: 彼岸歌声
+  Name: 蝶之羽风
   Description: |-
     造成 {Damage} 点伤害。
     可以多次|升级|。
 
-DizangLove:
-  Name: 慈爱的地藏
-  Description: 战斗结束后恢复 {Value1} 点生命值。
+RangziFanshu:
+  Name: 香甜的番薯
+  Description: 战斗结束后恢复 {Value1} 点生命。
 
 DeepForest:
   Name: 最深的森域
-  Description: |-
-    每支付(1)：获得1层闪避。
-    （升级后：你每次与山城高岭相遇时，获得20金。  对山城很喜欢这个的某种表达）
+  Description: 没效果
 
-DanmakuJade:
+DanmuJade:
   Name: 弹幕的玉茧
   Description: |-
-    对所有敌人造成伤害，将 {Value1} 张|幻虹|加入手牌。
-    每支付{Mana}：获得 {Value2} 点火力和灵力。
+    对所有敌人造成 {Damage} 点伤害。
+    将 {Value1} 张|幻虹|加入手牌。
+    |每支付{Mana}：|获得 {Value2} 点火力和灵力。
 
 Danmaku10Morph:
   Name: 狸猫变化
@@ -1995,6 +1991,11 @@ Zhulianshen:
     获得 {Block} 点|格挡|。
     抵挡接下来受到的 {Value1} 张状态牌（将它|放逐|）。
 
+LilyChun:
+  Name: 春天到了！
+  Description: 将 {Value1} 张随机一费卡牌加入手中，它们具有|放逐|、|虚无|。
+  UpgradedDescription: 将 {Value1} 张随机一费卡牌加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
+
 YoumuSakura:
   Name: 樱花一闪
   Description: |-
@@ -2014,7 +2015,7 @@ SanaeRice:
 KaguyaTreeSee:
   Name: 蓬莱的树海
   Description: |-
-    每次受到伤害时，费用降低{Mana}。
+    每次受到伤害时，这张牌费用降低{Mana}。
     将所有放逐区内附带|放逐|的卡牌移入抽牌堆。
     所有卡牌失去|放逐|。
 
@@ -2036,17 +2037,24 @@ ZoufangWater:
     造成 {Damage} 点伤害 {Value1} 次。
     每打出一张能力牌，伤害提高 {Value2} 点。（共计 {AdditionalDamage} 点）
 
-SkyWater:
-  Name: 天水的奇迹
-  Description: |-
-    抽 {Value1} 张牌。
-    {PlayerName}回合结束时，每有一张不附带保留的手牌获得 {Value2} 点格挡。
-
 MeilingRain:
   Name: 极彩沛雨
   Description: |-
     |每支付<sprite="ManaSprite" name="C">：|获得{Value1}点|格挡|，抽{Value2}张牌。
     |每支付<sprite="ManaSprite" name="P"><sprite="ManaSprite" name="P">：|将一张|生机|加入手牌。
+
+RuowujiCard:
+  Name: 逆鳞的惊涛
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |每支付<sprite="ManaSprite" name="U"><sprite="ManaSprite" name="U">：|获得<sprite="ManaSprite" name="G">。
+    |每支付<sprite="ManaSprite" name="G"><sprite="ManaSprite" name="G">：|获得<sprite="ManaSprite" name="U">。
+
+SkyWater:
+  Name: 天水的奇迹
+  Description: |-
+    抽 {Value1} 张牌。
+    {PlayerName}的回合结束时，每弃一张牌获得 {Value2} 点|格挡|。
 
 KanakoWalk:
   Name: 神踏足的御神渡
@@ -2065,6 +2073,12 @@ LifeGame:
     对目标造成等量于当前生命值的伤害。
     |d:初见：恢复 {Value1} 点生命。|
 
+LigeluCard:
+  Name: 荧光之夜
+  Description: |-
+    获得 {Block} 点|格挡|。
+    获得 {Value1} 点<sprite="Point" name="Power">。
+
 PaluxiCurse:
   Name: 丑时参拜
   Description: |-
@@ -2076,6 +2090,12 @@ PaluxiCurse:
 YequePoison:
   Name: 毒蛾的鳞粉
   Description: 直到回合结束，每次攻击伤害造成未被格挡的伤害时，施加 {Value1} 层|毒|。
+
+MedicineGarden:
+  Name: 铃兰花园
+  Description: |-
+    为所有敌人恢复 {Value1} 点生命。
+    对所有敌人施加 {Value1} 层|毒|。
 
 ZoufangSnake:
   Name: 土著神崇拜
@@ -2089,9 +2109,11 @@ YachieDefend:
     阻挡{PlayerName}的下 {Value1} 次生命损失。
     如果伤害来源是敌人，还会反弹给他。
 
-QiuGraze:
+JingyeGraze:
   Name: 纷乱的落叶
-  Description: 获得{Value1}层|闪避|，每有一层闪避获得{Value2}层临时火力。
+  Description: |-
+    获得 {Value1} 层|闪避|。
+    获得|闪避|层数 {Value2} 倍的|暂得火力|。
 
 FangxiangAttack:
   Name: 剧毒抹消
@@ -2130,18 +2152,6 @@ FlanBlack:
 AttackWithEveryColor:
   Name: 多彩攻击
   Description: '|每支付一点不同颜色的费用：|造成 {Damage} 点伤害。'
-
-MedicineGarden:
-  Name: 铃兰花园
-  Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
-
-RuowujiCard:
-  Name: 逆鳞的惊涛
-  Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
 
 JunkoNightmare:
   Name: 震颤的冰封噩梦
