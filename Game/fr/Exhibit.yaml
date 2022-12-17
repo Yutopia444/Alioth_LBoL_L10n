@@ -21,7 +21,8 @@ Shendeng:
 ReimuR:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Reimu|\
     \ sont ajoutés aux cartes disponibles.\nChaque fois qu'un ennemi est vaincu, {PlayerName}\
-    \ gagne {Value1} |Puissance| et {Value2} santé."
+    \ gagne {Value1} |Puissance| et {Value2} point{Value2:plural one='' other='s'}\
+    \ de vie."
   Name: Orbe Yin-Yang Sanguinaire
   FlavorText: Ça doit faire mal d'être touché par ça.
 ReimuW:
@@ -77,7 +78,8 @@ ShijieSuipian:
     autres joueurs.
 QinaKapian:
   Description: "Ajoute {BaseMana} à la base de mana.\nÀ chaque fois que {PlayerName}\
-    \ active sa |Carte Sort|, perdez {Value1} santé et pioche {Value2} cartes."
+    \ active sa |Carte Sort|, perdez {Value1} point{Value1:plural one='' other='s'}\
+    \ de vie et piochez {Value2} carte{Value2:plural one='' other='s'}."
   FlavorText: "Selon les rumeurs du monde extérieur :\n\"Devinez quel motif est dessus,\
     \ et vous développerez des super pouvoirs\"."
   Name: Cartes Zener
@@ -91,7 +93,7 @@ HuoshuPiyi:
   FlavorText: 「Bouclier Salamandre」
 YanZianbei:
   Name: Cauri d'Hirondelle
-  Description: Au début du tour de {PlayerName}, elle gagne {Value1} santé.
+  Description: Au début du tour de {PlayerName}, elle gagne {Value1} points de vie.
   FlavorText: 「Source de Vie Infini」
 SingleJiandao:
   Name: Lame de Ciseaux Géante
@@ -201,7 +203,8 @@ HouhuMen:
 BaochunRenou:
   Name: Poupée d'Annonce du Printemps
   Description: "Ajoute {BaseMana} à la base de mana.\nÀ chaque fois que {PlayerName}\
-    \ active sa |Carte Sort|, gagnez {Value1} santé."
+    \ active sa |Carte Sort|, gagnez {Value1} point{Value1:plural one='' other='s'}\
+    \ de vie."
   FlavorText: Le printemps arrive !
 FengshouGuolan:
   Name: Corbeille de Fruits de la Récolte
@@ -218,7 +221,7 @@ Wanbaochui:
 TaiguGouyu:
   Name: Magatama Antique
   Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquis, {PlayerName}\
-    \ gagne {Value1} de santé maximale."
+    \ gagne {Value1} point{Value1:plural one='' other='s'} de vie maximum."
   FlavorText: Plus vous avez de gemmes, plus votre santé maximale est élevée.
 KongbaiKapai:
   Name: Carte Vierge
@@ -235,7 +238,7 @@ QipaiYouhua:
   Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nUne fois\
     \ acquis, gagnez {Value1} <sprite=\"Point\" name=\"Gold\">, {Value2} {Value2:plural\
     \ one='carte |Améliorée| aléatoire' other='cartes |Améliorées| aléatoires'} dans\
-    \ la bibliothèque et augmente la santé maximale de {Value3}."
+    \ la bibliothèque et augmente la vie maximum de {Value3}."
   FlavorText: "Résolvez les énigmes du tableau et vous pourrez obtenir tout l'héritage\
     \ de Kaguya.\nBien sûr, il faudra attendre après sa mort."
 Baota:
@@ -252,13 +255,12 @@ Yuhangfu:
     y a quelques décennies.
   Name: Combinaison Spatiale
   Description: À chaque fois que {PlayerName} doit perdre un certain nombre de points
-    de santé, il perd ce nombre de points de santé moins {Value1} à la place.
+    de vie, il perd ce nombre de points de vie moins {Value1} à la place.
 GanzhuYao:
   Description: "La prochaine fois que {PlayerName} est vaincue, elle guérira à la\
-    \ place jusqu'à son maximum de points de santé. Cet effet ne fonctionne qu'une\
-    \ seule fois.\nAprès que cette |Merveille| a pris effet, la santé maximale de\
-    \ {PlayerName} est réduite de {Value1} % et au début du combat, il gagne {Value2}\
-    \ |Puissance|."
+    \ place jusqu'à son maximum de points de vie. Cet effet ne fonctionne qu'une seule\
+    \ fois.\nAprès que cette |Merveille| a pris effet, la vie maximum de {PlayerName}\
+    \ est réduite de {Value1} % et au début du combat, elle gagne {Value2} |Puissance|."
   Name: Élixir d'Orbe Outremer
   FlavorText: Je suis mort et je suis devenu plus fort.
 YizangnuoWuzhi:
@@ -282,7 +284,8 @@ XijianSan:
     {Value1} |Boucliers| et gagnez {Mana}.
 Taozi:
   Name: Pêche
-  Description: Une fois acquise, {PlayerName} gagne {Value1} de santé maximale.
+  Description: Une fois acquise, {PlayerName} gagne {Value1} point{Value1:plural one=''
+    other='s'} de vie maximum.
 Xunlongchi:
   Name: Baguettes de Radiesthésie
   Description: Débloque la capacité de |Radiesthésie| dans les Failles pour trouver
@@ -305,8 +308,8 @@ GaodangShoubao:
     dépensent beaucoup d'argent pour en avoir un.
 WanglingTideng:
   Name: Torche de l'Âme
-  Description: Empêche la première fois que {PlayerName} perde des points de santé
-    à chaque combat.
+  Description: Empêche la première fois que {PlayerName} perde des points de vie à
+    chaque combat.
   FlavorText: Transformez son possesseur en fantôme et il découvrira le monde après
     la mort en avance.
 Zijing:
@@ -325,10 +328,119 @@ Zuoshan:
     de cette carte à la main. Elle |coûte temporairement| {Mana} et a |Exil|.
 HuanxiangxiangYuanqi:
   Name: Chronique de Gensokyo
-  Description: À chaque fois que {PlayerName} joue un pouvoir, gagnez {Value1} points
-    de santé.
+  Description: À chaque fois que {PlayerName} joue un pouvoir, gagnez {Value1} point{Value1:plural
+    one='' other='s'} de vie.
   FlavorText: Une transcription bien conservée.
 DiyuChepiao:
   Name: Billet pour l'Enfer
   Description: À chaque fois que {PlayerName} perd des points de vie, piochez {Value1:plural
     one='% carte' other='% cartes'}.
+  FlavorText: Plus vous vous en servez, plus vous vous rapprochez de l'enfer.
+ShoushiYubi:
+  Name: Bâton de Purification Moriya
+  Description: Débloque la capacité de |Purifier| dans les Failles pour retirer une
+    carte de la bibliothèque.
+ShanliangDengpao:
+  Name: Ampoule Brillante
+  Description: "Débloque une nouvelle option dans les Failles.\nVous pouvez ajouter\
+    \ une carte Rare aléatoire à votre bibliothèque dans une Faille."
+  FlavorText: Eurêka !
+ZhanshuDaoliqi:
+  Name: Guide Tactique
+  Description: Les cartes de Talent coûtent {Mana} de moins.
+  FlavorText: Il n'y a qu'une longue chaîne dessus, ce qui est bien pour lancer des
+    sorts
+Yashemao:
+  Name: Casquette Plate
+  Description: Piochez {Value1} {Value1:plural one='carte' other='cartes'} de plus
+    pendant l'étape de pioche.
+ShanshuoBishou:
+  Name: Dague Éclair
+  FlavorText: "Prix d'origine : 2150<sprite=\"Point\" name=\"Gold\">."
+  Description: Au début du combat, défaussez n'importe quel nombre de cartes. Ensuite,
+    piochez autant de cartes.
+Yueshan:
+  Name: Éventail Lunaire
+  Description: Au début du tour de {PlayerName}, elle ne perd que la moitié de ses
+    |Boucliers| au lieu de la totalité.
+ZhangchibangQiu:
+  Name: Balle avec des Ailes
+  FlavorText: Elle vole vite et rapporte un bon prix.
+  Description: Une fois acquise, gagnez {Value1} <sprite="Point" name="Gold">.
+YueYuyi:
+  Name: Voile Lunaire
+  Description: Au début du combat, gagne |Perfection| pendant {Value1} tour{Value1:plural
+    one='' other='s'}.
+  FlavorText: Pas très utile lorsque vous combattez des boss.
+FeixiangJian:
+  Name: Épée d'Hisou
+  Description: Au début du tour de {PlayerName}, infligez {Value1} dégâts à chaque
+    ennemi.
+YuekuangQiang:
+  Name: Pistolet Lunaire
+  Description: Chaque fois qu'une carte est défaussée, sauf à la fin du tour, inflige
+    {Value1} dégâts à un ennemi aléatoire.
+Yaoshi:
+  Name: Clef de Voûte
+  Description: Lorsque {PlayerName} subit des dégâts pour la première fois à chaque
+    combat, gagnez {Mana}.
+Mengriji:
+  Description: Au début du tour de {PlayerName}, si aucune carte de défense n'a été
+    jouée au dernier tour, gagnez {Mana}.
+  FlavorText: "\"Le contenu à l'intérieur doit être regardé en compagnie des parents.\""
+  Name: Journal du Rêve
+Heilianhua:
+  Name: Lotus Noir
+  Description: Au début du combat, gagnez {Mana}.
+  FlavorText: Ce ne serait pas super s'il pouvait ajouter trois manas d'une même couleur
+    ?
+Bianhua:
+  Name: Lys Araignée
+  Description: Chaque fois qu'un ennemi est vaincu, gagnez {Mana}.
+Xiangrikui:
+  Name: Tournesol
+  Description: Chaque cycle de {Value1} tours, au début des tours {Value2} à {Value3},
+    gagnez {Mana}.
+LinghunBaoshi:
+  Name: Âme-joyau
+  Description: Après avoir visité une Faille, au début du prochain combat, gagnez
+    {Mana}.
+ZheyangSan:
+  Name: Parasol
+  FlavorText: Ce soir, son propriétaire n'en a pas besoin.
+  Description: Au début du deuxième tour de {PlayerName} à chaque combat, gagnez {Value1}
+    |Bouclier{Value1:plural one='' other='s'}| et {Value2} |Puissance temporaire|.
+Pingguo:
+  Name: Pomme
+  Description: Une fois acquise, gagnez {Value1} de vie maximum.
+  FlavorText: Le lieu de production est le jardin fruitier du Manoir du Démon Écarlate.
+PortalGun:
+  Name: Pistolet de Portail
+  Description: Les prix de la boutique de Takane sont {Value1} % moins chers. La boutique
+    de Takane ne manque plus d'articles à acheter.
+TiangouYuyi:
+  FlavorText: À Gensokyo, la raison pour laquelle les Tengus se déplacent plus vite
+    que n'importe qui d'autre en dépend.
+  Name: Plume de Tengu
+  Description: "{PlayerName} peut ignorer les chemins lors du choix du niveau suivant,\
+    \ jusqu'à {Counter} fois."
+BoreMianju:
+  Name: Masque Hannya
+  Description: Chaque fois que {Value1} cartes d'attaque sont jouées dans un tour,
+    {PlayerName} gagne {Value2} |Puissance|.
+HuliMianju:
+  Name: Masque de Renard
+  Description: Chaque fois que {Value1} cartes d'attaque sont jouées dans un tour,
+    {PlayerName} gagne {Value2} |Esprit|.
+  FlavorText: Le style de masque le plus courant.
+HuonanMianju:
+  Name: Masque Hyottoko
+  FlavorText: Si vous le regardez attentivement, vous pouvez même voir des poils de
+    nez.
+  Description: Chaque fois que {Value1} cartes d'attaque sont jouées dans un tour,
+    {PlayerName} gagne {Value2} |Boucliers|.
+XiwangMianju:
+  Name: Masque d'Espoir
+  Description: Chaque fois que {Value1} cartes d'attaque sont jouées dans un tour,
+    gagnez {Value2} <sprite="Point" name="Power">.
+  FlavorText: Un espoir retrouvé.
