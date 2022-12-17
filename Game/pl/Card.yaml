@@ -262,8 +262,8 @@ GapLady:
     \ kartę' few='% karty' many='% kart'}."
 ChunseXiaojing:
   Name: Ścieżka Koloru Wiosny
-  Description: Dodaj {Value1:plural one='% |Noworodka|' few='% |Noworodki|' many='%
-    |Noworodków|'} do ręki.
+  Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}."
 ReimuSakura:
   Name: Pieczęć Kwitnącej Wiśni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -637,8 +637,7 @@ KnifeBounce:
     \ many='% |Sztyletów do Rzucania|} do ręki."
 Lijian:
   Name: Widok Oddalonego Ostrza
-  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
-    Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Przy doborze:| Ta karta kosztuje o {Mana} mniej na czas walki."
 Knife:
   Name: Sztylet do Rzucania
@@ -677,8 +676,9 @@ DefenseDraw:
 AttackMagic:
   Name: Podstępne Pociski
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nZrzuć {Value2:plural\
-    \ one='% kartę' few='% karty' many='% kart'}."
+    Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nDodaj {Value2:plural\
+    \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
+    \ do Rzucania|} do ręki."
 CleanRoom:
   Name: Porządki
   Description: "Zrzuć kartę.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
@@ -727,8 +727,10 @@ SakuyaClock:
     \ Wtem, zacznij dodatkową turę."
 DangerousMagician:
   Name: Niebezpieczna Iluzjonistka
-  Description: Gdy |Sztylet do Rzucania| zostanie użyty, zyskaj {Value1:plural one='%
-    |Puls Czasu|' few='% |Pulsy Czasu|' many='% |Pulsów Czasu|'}.
+  Description: "Gdy |Sztylet do Rzucania| zostanie użyty, zyskaj {Value1:plural one='%\
+    \ |Puls Czasu|' few='% |Pulsy Czasu|' many='% |Pulsów Czasu|'}.\nDodaj {Value2:plural\
+    \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
+    \ do Rzucania|} do stosu doboru."
 SakuyaDio:
   Description: "|Sztylety do Rzucania| nakładają {Value1:plural one='% |Namiar|' few='%\
     \ |Namiary|' many='% |Namiarów|}, gdy zostaną zagrane.\nZakończ turę. Wtem, {PlayerName}\
@@ -764,9 +766,10 @@ LightSpeed:
     Jeżeli jakaś karta została odrzucona w tej turze, zyskaj {Mana}."
 PrivateVision:
   Name: Prywatna Wizja
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\nZyskaj |Odbicie| równym zadanym\
-    \ niezablokowanym obrażeniom."
+  Description: "Zrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
+    \ many='% |Uników|'}."
+  UpgradedDescription: "Zrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='%\
+    \ |Uniki|' many='% |Uników|'}.\nZyskaj {Value2} |Odbicia|."
 FakeTimeline:
   Name: Urojona Oś Czasu
   Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
@@ -778,7 +781,7 @@ SakuyaShop:
     \ many='% kart'}."
 LoyalMaid:
   Name: Lojalna Służąca
-  Description: "Zyskaj {Shield} |Bariery|.\nNa początku każdej dodatkowej tury zwróć\
+  Description: "Zyskaj {Shield} |Bariery|.\nNa początku każdej Dodatkowej Tury zwróć\
     \ tę kartę ze stosu zrzutek do ręki. Ona |tymczasowo kosztuje| {Mana}."
 SilverBlade:
   Name: Srebrny Wymiar
@@ -830,8 +833,8 @@ SpecialClock:
     samo kart.
 DropToKnife:
   Name: Forteca Srebra
-  Description: Zrzuć wszystkie karty w dłoni bez |Przetrzymania|. Dodaj tyle samo
-    |Sztyletów do Rzucania| do ręki.
+  Description: Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'} z ręki.
+    Dodaj tyle samo |Sztyletów do Rzucania| do ręki.
 BackToFuture:
   Name: Powrót do Przyszłości
   Description: "Zamień stosy doboru i zrzutek miejscami.\nDobierz {Value1:plural one='%\
@@ -1060,7 +1063,7 @@ RumiaBlock:
 SatoriMemory:
   Name: Głębokie Wspomnienia
   Description: "Wybierz jedną z {Value1} losowych kart ze stosu zrzutek, aby zwrócić\
-    \ do ręki.\n|Instynkt:| Zwrócona karta |tymczasowo kosztuje| {Mana}."
+    \ do ręki.\n|Instynkt:| Ona |tymczasowo kosztuje| {Mana}."
   FlavorText: '"Jakie było hasło do tej strony?"'
 BlackHorseZui:
   Name: Grzech Czarnego Konia
@@ -1095,7 +1098,7 @@ YongyiAttack:
 YuyukoSing:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Ta karta może zostać |Ulepszona| dowolną ilość razy."
-  Name: Śpiew z Odległego Brzegu
+  Name: Trzepot Skrzydeł Motyla
 MorphBird:
   Description: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.
 MorphDog:
@@ -1118,7 +1121,8 @@ TiangouOrder:
   Name: Dekret Wielkiej Tengu
 SeeFengshui:
   Description: "Na początku tury {PlayerName:g} |Przewidź| {Value1}.\nZa każdą kartę\
-    \ |Obrony| wysłaną do stosu zrzutek podczas |Przewidywania| zyskaj {Value2} |Bloku|."
+    \ |Obrony| wysłaną do stosu zrzutek podczas tego |Przewidywania| zyskaj {Value2}\
+    \ |Bloku|."
   Name: Manipulacja Feng Shui
 NiuqiDefense:
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Bloku| za każdą kartę w\
@@ -1139,7 +1143,8 @@ Panzi:
     |Przy doborze:| Dodaj |kopię| tej karty do ręki."
 LigeluCard:
   Name: Świetlista Noc
-  Description: "|d:Ta karta jest w trakcie rozwoju.\nProsimy czekać do następnej aktualizacji!|"
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value2} <sprite=\"Point\" name=\"\
+    Power\">."
 SuikaBigball:
   Name: Kula Życia Oni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\
@@ -1165,6 +1170,9 @@ MeihongPower:
 QianGui:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zyskaj {Value1} |Tymczasowego Uduchowienia|."
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\n|d: Debut: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
+    \ many='% |Uników|'}.|"
 MorphFrog:
   Description: Zyskaj {Value1} maksymalnego życia.
 HuiyinAttack:
@@ -1383,8 +1391,9 @@ FlanBlack:
   Name: Demonizacja
   Description: "|d:Ta karta jest w trakcie rozwoju.\nProsimy czekać do następnej aktualizacji!|"
 MedicineGarden:
-  Name: Ogród Suzuran
-  Description: "|d:Ta karta jest w trakcie rozwoju.\nProsimy czekać do następnej aktualizacji!|"
+  Name: Melancholijny Ogród
+  Description: "Wszyscy wrogowie leczą {Value1} życia.\nNałóż {Value1} |Trucizny|\
+    \ na wszystkich wrogów."
 RuowujiCard:
   Name: Fale Odwróconych Łusek
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1643,19 +1652,34 @@ Yuebiao:
   Description: '|Gdy dobraba:| |Oczyść| {Value1}.'
 RangziSeed:
   Name: Jesienne Żniwa
+  UpgradedDescription: Dodaj |Tęczę| na szczyt stosu doboru. Ma |Dopełnienie|.
+  Description: Dodaj |Witalność| na szczyt stosu doboru. Ma |Dopełnienie|.
 RangziFanshu:
   Name: Słodki Batat
+  Description: Na końcu walki ulecz {Value1} życia.
 LilyChun:
   Name: Jest Wiosna!
+  UpgradedDescription: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'
+    many='% losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural
+    one='Ona |tymczasowo kosztuje|' other='One |tymczasowo kosztują|'} {Mana} i {Value1:plural
+    one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.
+  Description: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty' many='%
+    losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural one='Ona'
+    other='One'} {Value1:plural one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.
 CoolBreeze:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli cel jest |Zimny|, ta karta zadaje o {Value1} więcej obrażeń"
 SkyWater:
   Name: Niebiański Cud Wodny
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Na końcu tury {PlayerName:g} zyskaj {Vlaue2} |Bloku| z każdą zrzuconą kartę w\
+    \ fazie zrzucania."
 DanmuJade:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nDodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='%\
     \ |Tęcz|'} do ręki.\n|Za każde wydane {Mana}:| Zyskaj {Value1} |Mocy| i |Uduchowienia|."
+  Name: Dupion Tęczowego Danmaku
 JingyeGraze:
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
     Zyskaj {Value2} |Tymczasowej Mocy| za każdy punkt |Uniku| posiadanych przez {PlayerName:g}."
+  Name: Spadające Liście Szaleństwa
