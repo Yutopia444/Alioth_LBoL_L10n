@@ -500,7 +500,7 @@ StarlightTaifengSummoner:
     ManaSprite\" name=\"R\">:| Zwiększ obrażenia dodanej karty o {Value1}."
 FindCollection:
   Name: Zdalne Wsparcie
-  Description: Wybierz jedną z {Value1} losowych kart unikalnych dla innych postaci
+  Description: Wybierz 1 z {Value1} losowych kart innych od unikalnych kart {PlayerName:a}
     aby dodać do ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
 EventHorizon:
   Name: Horyzont Zdarzeń
@@ -682,7 +682,7 @@ AttackMagic:
 CleanRoom:
   Name: Porządki
   Description: "Zrzuć kartę.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}.\n|Ulepsz| {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ kart'}.\n|Ulepsz| {Value2:plural one='% kartę' few='% karty' many='% kart'}\
     \ w dłoni na czas walki. Jeżeli zrzucono |Sztylet do Rzucania|, |Ulepsz| wszystkie\
     \ karty w dłoni na czas walki."
 ExileMagic:
@@ -1025,6 +1025,8 @@ PlayWithWater:
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
     Zrzuć kartę."
   FlavorText: Pobaw się wodą.
+  UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}.\nZrzuć do jednej karty."
 QinglanAttack:
   Name: Lądowanie Królików
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
