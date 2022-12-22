@@ -20,7 +20,7 @@ LockedOn:
     \ 1 |Verrouillé| au début de chaque tour."
   Brief: "{OwnerName} subit plus de dégâts des attaques.\nPerdez 1 |Verrouillé| au\
     \ début de chaque tour."
-  Name: Verouillé
+  Name: Verrouillé
 Graze:
   Brief: "{OwnerName} subit 0 dégâts des attaques.\nPerdez 1 |Esquive| lorsqu'il est\
     \ attaqué ou au début du tour."
@@ -76,3 +76,78 @@ SpiritNegative:
     \ obtenus en défendant.)"
   Brief: "|Esprit| diminué.\n(|Esprit| augmente les |Boucliers| et |Barrières| obtenus\
     \ en défendant.)"
+Invincible:
+  Description: "{OwnerName} ne perdra pas plus de 1 point de vie à la fois {Duration:plural\
+    \ one='jusqu'à la fin du tour' other='pendant % tours'}."
+  Name: Perfection
+  Brief: '{OwnerName} ne perdra pas plus de 1 point de vie à la fois.'
+AmuletForCard:
+  Description: Annulez [Level:plural one='la prochaine carte Statut qui est ajoutée'
+    other='les % prochaines cartes Statut qui sont ajoutées'} (|Exilez|-{Level:plural
+    one='la' other='les'} à la place).
+  Name: Exorcisme
+  Brief: Annule les prochaines cartes Statut qui sont ajoutées (|Exilez|-les à la
+    place).
+Electric:
+  Description: En cas de dégâts reçus, inflige {Level} dégâts en retour à l'attaquant.
+  Name: Charge Statique
+  Brief: En cas de dégâts reçus, inflige des dégâts en retour à l'attaquant.
+TempElectric:
+  Brief: "En cas de dégâts reçus, inflige des dégâts en retour à l'attaquant.\nRetiré\
+    \ au début du prochain tour de {OwnerName}."
+  Name: Charge Statique
+  Description: "En cas de dégâts reçus, inflige {Level} dégâts en retour à l'attaquant.\n\
+    Retiré au début du prochain tour de {OwnerName}."
+NextTurnLoseRandomMana:
+  Name: Perte de Mana au Tour Suivant
+  Description: Au début du prochain tour de {OwnerName}, perdez {Level} mana{Level:plural
+    one='' other='s'} aléatoire{Level:plural one='' other='s'}.
+  Brief: Au début du prochain tour de {OwnerName}, perdez du mana aléatoire.
+NextTurnGainBlock:
+  Description: Au début du prochain tour de {OwnerName}, gagnez {Level} |Bouclier{Level:plural
+    one='' other='s'}|.
+  Brief: Au début du prochain tour de {OwnerName}, gagnez du |Bouclier|.
+  Name: Bouclier au Prochain tour
+NextTurnGainShield:
+  Description: Au début du prochain tour de {OwnerName}, gagnez {Level} |Barrière{Level:plural
+    one='' other='s'}|.
+  Name: Barrière au Prochain tour
+  Brief: Au début du prochain tour de {OwnerName}, gagnez de la |Barrière|.
+ExtraTurn:
+  Name: Tour Supplémentaire
+  Description: "{OwnerName} jouera {Level:plural one='% tour supplémentaire' other='%\
+    \ tours supplémentaires'} après celui-ci."
+  Brief: Lorsque le tour de {OwnerName} se termine, jouez un autre tour.
+LimitedDamage:
+  Name: Limiteur de Dégâts
+  Brief: "{OwnerName} ne peut subir qu'un nombre limité de dégâts à chaque tour."
+  Description: '{OwnerName} ne peut subir que {Limit} dégâts à chaque tour. Peut encore
+    subir {Count} dégâts ce tour-ci.'
+TurnStartDontLoseBlock:
+  Name: Conserver Bouclier
+  Brief: '{OwnerName} ne perd pas de |Bouclier| au début de chaque tour.'
+  Description: "{OwnerName} ne perd pas de |Bouclier| au début {Level:plural one='du\
+    \ prochain tour' other='des % prochains tours'}."
+Amulet:
+  Name: Amulette
+  Brief: Annule les prochains malus.
+  Description: Annulez {Level:plural one='le prochain' other='les % prochains'} malus.
+Reflect:
+  Name: Réflexion
+  Description: En cas de dégâts reçus, infligez {Level} dégâts en retour à l'attaquant
+    et supprimez cet effet.
+  Brief: En cas de dégâts reçus, infligez des dégâts à l'attaquant et supprimez cet
+    effet.
+NextAttackUp:
+  Name: Boost d'Attaque
+  Description: La prochaine carte d'|Attaque| jouée inflige {Level} dégâts supplémentaires.
+  Brief: La prochaine carte d'|Attaque| jouée inflige des dégâts accrus.
+NextTurnLoseHp:
+  Name: Perte de Vie au Tour Suivant
+  Description: Au début du prochain tour de {OwnerName}, perdez {Level} points de
+    vie.
+  Brief: Au début du prochain tour de {OwnerName}, perdez des points de vie.
+CantDrawThisTurn:
+  Name: Annulation de Pioche
+  Description: Impossible de piocher des cartes jusqu'à la fin du tour.
+  Brief: Impossible de piocher des cartes jusqu'à la fin du tour.
