@@ -1,20 +1,20 @@
 Fragil:
   Name: Fragile
   Description: "{PlayerName} gagne {Value} % de |Bouclier| et |Barrière| en moins\
-    \ des effets de la carte {Duration:plural one='jusqu'à la fin du tour' other='pour\
+    \ des effets de la carte {Duration:plural one='jusqu\\'à la fin du tour' other='pour\
     \ les % prochains tours'}."
   Brief: '{PlayerName} gagne {Value} % de |Bouclier| et |Barrière| en moins à partir
     de cartes.'
 Weak:
   Description: Les attaques de {OwnerName} infligent {Value} % de dégâts en moins
-    {Duration:plural one='jusqu'à la fin du tour' other='pour les % tours suivants'}.
+    {Duration:plural one='jusqu\'à la fin du tour' other='pour les % tours suivants'}.
   Name: Faible
   Brief: Les attaques de {OwnerName} infligent {Value} % de dégâts en moins.
 Vulnerable:
   Brief: '{OwnerName} subit {Value} % de dégâts supplémentaires des attaques.'
   Name: Vulnérable
   Description: "{OwnerName} subit {Value} % de dégâts supplémentaires des attaques\
-    \ {Duration:plural one='jusqu'à la fin du tour' other='pour les % tours suivants'}."
+    \ {Duration:plural one='jusqu:\\'à la fin du tour' other='pour les % tours suivants'}."
 LockedOn:
   Description: "{OwnerName} subit {Level} dégâts supplémentaires des attaques.\nPerdez\
     \ 1 |Verrouillé| au début de chaque tour."
@@ -78,7 +78,7 @@ SpiritNegative:
     \ en défendant.)"
 Invincible:
   Description: "{OwnerName} ne perdra pas plus de 1 point de vie à la fois {Duration:plural\
-    \ one='jusqu'à la fin du tour' other='pendant % tours'}."
+    \ one='jusqu\\'à la fin du tour' other='pendant % tours'}."
   Name: Perfection
   Brief: '{OwnerName} ne perdra pas plus de 1 point de vie à la fois.'
 AmuletForCard:
@@ -161,3 +161,422 @@ NoAttackDamageNextTurn:
   Name: Espace-temps Brisé au Prochain Tour
 NoAttackDamageThisTurn:
   Name: Espace-temps Brisé
+  Description: Ne peut pas infliger de dégâts d'attaque ce tour-ci.
+  Brief: Ne peut pas infliger de dégâts d'attaque ce tour-ci.
+DeathVulnerable:
+  Description: Lorsque {OwnerName} est vaincu, {PlayerName} gagne {Level} |Vulnérable|.
+  Name: Maladie
+LoveGirlDamageIncrease:
+  Description: Les sentiments de {OwnerName} sont récompensés. Elle subit {Rate} %
+    de dégâts supplémentaires.
+  Name: Cœur Indécis
+AbsorbPower:
+  Description: À la fin du tour de {OwnerName}, gagnez {Level} |Puissance|.
+  Name: Orbe Rouge
+Lunatic:
+  Description: "La lumière magique brille sur tout le monde. Poussé à la folie, les\
+    \ actions de {OwnerName} sont amplifiées.\nGagnez {Mana} au début du tour de {PlayerName}."
+  Name: Folie
+WindGirl:
+  Description: l'|Esquive| de {OwnerName} est réapprovisionné à {Level} à la fin de
+    son tour.
+  Name: Fille du Dieu du Vent
+RinSummon:
+  Description: "{OwnerName} peut raviver {Level} esprit{Level:plural one=' vengeur'\
+    \ other='s vengeurs'}.\nUn est ajouté tous les {Limit} tour{Limit:plural one=''\
+    \ other='s'}."
+  Name: Résurrection Spirituelle
+RinAura:
+  Description: Les esprits vengeurs invoqués par {OwnerName} infligent {Level} dégâts
+    supplémentaires avec leur frappe de vengeance.
+  Name: Feu Ardent
+PrivateSquare:
+  Description: "Toutes les {Limit} cartes jouées, {OwnerName} inflige {Level} dégâts\
+    \ à {PlayerName}.\n{Count} carte{Count:plural one=' restante' other='s restantes'}."
+  Name: Blocus d'Argent
+RockHardAura:
+  Description: '{OwnerName} est protégé par une clé de voûte, subissant {Level} moins
+    de dégâts des attaques non bloquées.'
+  Name: Protection de la Clé de Voûte
+KokoroNu:
+  Description: À la fin du tour de {OwnerName}, tous les ennemis gagnent {Level} |Puissance|.
+  Name: Colère
+LongEscape:
+  Description: '{OwnerName} quittera la bataille lorsque sa vie sera inférieure à
+    {Level}.'
+  Name: Du Calme
+EnemyEnergy:
+  Description: '{OwnerName} gagne <sprite="Point" name="Power"> égal aux dégâts subis.
+    Utilisé pour jouer des cartes de sorts.'
+  Name: Énergie
+YuyukoDeath:
+  Description: "À la fin du tour de {OwnerName}, perdez {Level} points de vie.\n{OwnerName}\
+    \ ne peut pas gagner de points de vie."
+  Name: Loi de la Mortalité
+FastAttack:
+  Description: Après avoir joué la première carte du tour, {PlayerName} reçoit {Level}
+    dégâts de {OwnerName}.
+  Name: Vitesse Pure
+DoremyLevel:
+  Description: Plus on s'enfonce dans le rêve, plus les attaques de {OwnerName} sont
+    fortes.
+  Name: Niveau de Rêve
+DreamServant:
+  Description: '{OwnerName} ne peut pas être blessé.'
+  Name: Habitant du Rêve
+ScarletDestiny:
+  Description: "Après {Limit} cartes jouées, {OwnerName} termine le tour de {PlayerName}.\n\
+    |d:({Count:pluriel one='% carte restante' autre='% cartes restantes'})|"
+  Name: Destin Écarlate
+SingleJiandaoSe:
+  Description: Chaque fois que {PlayerName} joue une carte, subissez {Level} dégâts.
+  Name: Lame de Ciseaux Géante
+MadokaBowSe:
+  Description: "À la fin du tour de {OwnerName}, ajoutez {Level} cartes Statut aléatoires\
+    \ à la pioche.\n|d :(Ajoute des cartes plus puissantes à des difficultés plus\
+    \ élevées.)|"
+  Name: Arc qui Tire de la Lumière
+HolyGrailSe:
+  Description: Au début du tour de {OwnerName}, {PlayerName} perd toutes ses |merveilles|
+    non-|Brillantes| non-|Rare Mythique|.
+  Name: Coupe d'Or Surdécorée
+DragonBallSe:
+  Description: 'Au début du tour de {OwnerName}, son |souhait| est exaucé : {PlayerName}
+    perd la partie.'
+  Name: Boule Cristalline Étoilée
+BoliDajiejieSe:
+  Description: Chaque fois que {OwnerName} a du |Bouclier|, il gagne autant de |Barrière|
+    à la place.
+  Name: Grande Barrière Hakurei
+  Brief: les |Boucliers| de {OwnerName} sont converti en |Barrières|.
+DoubleLianhuadieSe:
+  Description: Chaque fois que {PlayerName} gagne |Bouclier| ou |Barrière|, il inflige
+    {Niveau} dégâts à un ennemi aléatoire.
+  Name: Papillon Lotus Dichromatique
+  Brief: Chaque fois que {PlayerName} gagne |Bouclier| ou |Barrière|, il inflige des
+    dégâts à un ennemi aléatoire.
+DanceAroundLakeSe:
+  Brief: À chaque fois qu'une carte est |Exilée|, piochez 1 carte ou plus.
+  Name: Danse au Bord du Lac
+  Description: À chaque fois qu'une carte est |Exilée|, piochez {Level:plural one='%
+    carte.' other='% cartes.'}
+EvilTuiZhiSe:
+  Description: "{Level:plural one='La prochaine carte attaque jouée' other='Les %\
+    \ prochaines cartes attaque jouées'} ce tour inflige{Level:plural one='' other='nt'}\
+    \ le double de dégâts."
+  Name: Extermination du Mal
+  Brief: Les 1 ou plusieurs prochaines cartes d'attaque jouées ce tour infligent le
+    double de dégâts.
+BoliPhantomSe:
+  Description: Chaque fois qu'une carte qui n'est pas une |Aiguille de Persuasion|
+    est |Exilé|, ajoutez {Level} |Aiguille{Level:plural one='' other='s'} de Persuasion|
+    à la main qui |coûte{Level:plural one='' other='nt'} temporairement| {Mana}.
+  Name: Fantôme Hakurei
+  Brief: Chaque fois qu'une carte qui n'est pas une |Aiguille de Persuasion| est |Exilé|,
+    ajoutez 1 Aiguille de Persuasion ou plus à la main qui |coûte temporairement|
+    {Mana}.
+TaijiLiangyiSe:
+  Description: Au début du tour de {PlayerName}, s'il {Level:plural one='n\'y a aucune
+    |Orbe Yin-Yang|' other='y a moins de % |Orbes Yin-Yang|'} dans la main, ajoutez
+    {Level:plural one='une |Orbe Yin-Yang|' other='des |Orbes Yin-Yang|'} à la main{Niveau
+    :pluriel='.' other=' jusqu\'à ce qu'il y en ait %.'}
+  Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Orbes
+    Yin-Yang| dans la main, ajoutez-les à la main jusqu'à ce qu'il y en ait suffisamment.
+  Name: La Naissance du Yin-Yang
+GuangxueMicai:
+  Description: "{OwnerName} subit la moitié des dégâts des attaques {Duration:plural\
+    \ one='jusqu\\'à la fin du tour' other='pendant % tours'}."
+  Name: Camouflage Optique
+  Brief: '{OwnerName} subit moitié moins de dégâts des attaques.'
+Fengyin:
+  Description: "{PlayerName} ne peut pas jouer de cartes d'attaque {Duration:plural\
+    \ one='jusqu\\'à la fin du tour' other='pendant % tours'}."
+  Name: Scellé
+MomentPowerSe:
+  Description: Chaque fois que {OwnerName} gagne de la |Puissance temporaire| ou de
+    l'|Esprit temporaire|, convertissez-en {Level} en |Puissance| ou |Esprit|, respectivement.
+  Name: Faille Dimensionnelle Instantanée
+  Brief: Chaque fois que {OwnerName} gagne de la |Puissance temporaire| ou de l'|Esprit
+    temporaire|, convertissez-en une partie en |Puissance| ou |Esprit|, respectivement.
+Charging:
+  Description: Lorsque {PlayerName} a {TriggerLevel} ou plus de |Charge|, il entre
+    en |Saturation|.
+  Name: Charge
+  Brief: Lorsque {PlayerName} a {TriggerLevel} ou plus de |Charge|, il entre en |Saturation|.
+Burst:
+  Description: "Lorsque {PlayerName} entre en |Saturation|, gagnez {Mana}.\nToutes\
+    \ les attaques infligent {DamageRate} fois plus de dégâts.\nÀ la fin du tour,\
+    \ perdez |Saturation|."
+  Name: Saturation
+  Brief: "Lorsque {PlayerName} entre en |Saturation|, gagnez {Mana}.\nToutes les attaques\
+    \ infligent {DamageRate} fois plus de dégâts.\nÀ la fin du tour, perdez |Saturation|."
+Concentration:
+  Description: "{Level:plural one='Le prochain effet de' other='Les % prochains effets\
+    \ de'} |Surcharge| ne coûte{Level:plural one='' other='nt'} pas de |Charge| pour\
+    \ s'activer."
+  Name: Concentration
+  Brief: Le ou les prochains effets de |Surcharge| ne coûtent pas de |Charge| pour
+    s'activer.
+BurstDrawSe:
+  Brief: Piochez plusieurs cartes en entrant en |Saturation|.
+  Name: Duel de Vitesse
+  Description: En entrant en |Saturation|, piochez {Level:plural one='% carte' other='%
+    cartes'}.
+SolarSystemSe:
+  Brief: Au début du tour de {PlayerName}, gagnez des |Charges|.
+  Name: Soleil d'Orrery
+  Description: Au début du tour de {PlayerName}, gagnez {Level} |Charge{Level:plural
+    one='' other='s'}|.
+LearnAstrologySe:
+  Description: Au début du tour de {PlayerName}, s'il {Level:plural one='n\'y a aucune'
+    other='y a moins de %'} |Astrologie| dans la main, ajoutez {Level:plural one='une
+    |Astrologie| dans' other='des |Astrologie|'} à la main{Niveau:pluriel='.' other='
+    jusqu\'à ce qu'il y en ait %.'}
+  Name: Étude d'Astrologie
+  Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Astrologie|
+    dans la main, ajoutez-les à la main jusqu'à ce qu'il y en ait suffisamment.
+PotionJungleSe:
+  Description: À la fin du tour de {PlayerName}, ajoutez {Level:plural one='|% Potion
+    instable|' other='|% Potions instables|'} à la pile de défausse.
+  Name: Forêt Fluorescente
+  Brief: À la fin du tour de {PlayerName}, ajoutez plusieurs |Potions instables| dans
+    la défausse.
+UpgradePotionSe:
+  Description: À la fin du tour de {PlayerName}, augmentez les dégâts infligés par
+    les |Potions instables| dans les piles de pioche et de défausse par {Level}.
+  Name: Potion Raffinée
+  Brief: À la fin du tour de {PlayerName}, les dégâts de |Potion instable| dans la
+    pioche et la pile de défausse augmente.
+PotionDefenseSe:
+  Description: Jusqu'à la fin du tour, chaque fois qu'une |Potion instable| est utilisée,
+    gagnez {Level} |Barrière{Level:plural one='' other='s'}|.
+  Name: Écho de Tir
+  Brief: Jusqu'à la fin du tour, chaque fois qu'une |Potion instable| est utilisée,
+    gagnez de la |Barrière|.
+ChargingPotionSe:
+  Brief: Chaque fois qu'une |Potion instable| est utilisé, gagnez des |Charges|.
+  Name: Éléments Radioactifs
+  Description: Chaque fois qu'une |Potion instable| est utilisée, gagnez {Level} |Charge{Level:plural
+    one='' other='s'}|.
+ChillPotionSe:
+  Description: Chaque fois qu'une |Potion instable| est utilisée, elle applique également
+    {Level} |Gelure{Level:plural one='' other='s'}| à sa cible.
+  Brief: Chaque fois qu'une |Potion instable| est utilisée, elle applique également
+    des |Gelures| à sa cible.
+  Name: Produits Chimiques Surgelés
+TimeAuraSe:
+  Description: "À la fin du tour de {PlayerName}, infligez {Level} dégâts à tous les\
+    \ ennemis.\nPerdez un niveau pour chaque ennemi endommagé."
+  Name: Impulsion Temporelle
+  Brief: "À la fin du tour de {PlayerName}, infligez des dégâts à chaque ennemi.\n\
+    Diminuez le niveau chaque fois que vous blessez un ennemi."
+GainKnifeSe:
+  Description: Au début du tour de {PlayerName}, ajoutez {Level} |Couteau{Level:plural
+    one='' other='x'} de lancer| à la main.
+  Name: Danse de l'Épée Étoilée
+  Brief: Au début du tour de {PlayerName}, ajoutez des |Couteaux de lancer| à la main.
+PerfectServantUSe:
+  Description: Au début du prochain tour de {OwnerName}, il ajoute {Level} {Mana}
+    et pioche {Level:plural one='% carte' other='% cartes'}.
+  Name: Parfait Serviteur
+  Brief: Au début du prochain tour de {OwnerName}, gagnez {Mana}, piochez des cartes
+    supplémentaires.
+PerfectServantWSe:
+  ExtraDescription: Après la prochaine étape de pioche de {OwnerName}, toutes les
+    cartes de la main |coûtent temporairement| {Level} mana aléatoire de moins à jouer.
+  Name: Parfait Serviteur
+  Description: Après la prochaine étape de pioche de {OwnerName}, toutes les cartes
+    de la main |coûtent temporairement| {Anys} de moins à jouer.
+  Brief: Après avoir pioché au début du tour suivant, chaque carte de la main a un
+    |coût temporaire réduit|.
+  ExtraDescription2: Après la prochaine étape de pioche de {OwnerName}, toutes les
+    cartes de la main |coûtent temporairement| {Level} mana aléatoire de moins à jouer.
+TimeIsLimited:
+  Description: Jusqu'au prochain tour de l'ennemi, les cartes coûtent {Mana} de plus
+    pour être jouées.
+  Name: Temps Limité
+  Brief: Jusqu'au prochain tour de l'ennemi, les cartes coûtent plus de mana pour
+    être jouées.
+DroneBlock:
+  Name: Matrice de Défense
+  Description: À la fin du tour de {OwnerName}, gagnez {Level} |Bouclier{Level:plural
+    one='' other='s'}|.
+  Brief: À la fin du tour de {OwnerName}, gagnez du |Bouclier|.
+MaoyuBlock:
+  Name: Duveteux
+  Description: "{OwnerName} gagne {Level} |Bouclier{Level:plural one='' other='s'}|\
+    \ lorsqu'il est attaqué."
+Servant:
+  Name: Invocation
+  Description: "Lorsque l'invocateur est vaincu, toutes les invocations sont également\
+    \ vaincues.\nNe déclenche pas d'effets de mort."
+DeathExplodeNotCount:
+  Name: Balle de Vengeance
+  Description: "Infligez {Level} dégâts à {PlayerName} lorsque {OwnerName} est vaincu.\n\
+    Inflige deux fois plus de dégâts en cas d'explosion."
+DeathExplodeCount:
+  Description: "Lorsque {OwnerName} est vaincu, il inflige {Level} dégâts à {PlayerName}.\n\
+    Explosera après {Count} tour{Count:plural one=' supplémentaire' other='s supplémentaires'},\
+    \ infligeant deux fois plus de dégâts."
+  Name: Frappe de Vengeance
+Drowning:
+  Name: Noyade
+  Description: '{OwnerName} subit {Level} dégâts à la fin de son tour.'
+LoveGirlDamageReduce:
+  Name: Regrets Persistants
+  Description: Les sentiments de {OwnerName} ne sont pas partagés. Elle subit {Rate}
+    % de dégâts en moins.
+PhoneBillSe:
+  Name: Facture Téléphonique
+  Description: "{OwnerName} collecte {Level} <sprite=\"Point\" name=\"Gold\"> pour\
+    \ chaque appel téléphonique.\nPerd {Count} <sprite=\"Point\" name=\"Gold\"> une\
+    \ fois vaincu."
+AbsorbSpirit:
+  Name: Orbe Bleue
+  Description: À la fin du tour de {OwnerName}, gagnez {Level} |Esprit|.
+LunaticTorch:
+  Name: Torche Lunatique
+  Description: "La torche de {OwnerName} brille d'une lumière particulière, tous les\
+    \ ennemis sont poussés à la |Folie|.\nGagnez {Mana} au début du tour de {PlayerName}."
+Interview:
+  Name: Interview en Cours
+  Description: "{OwnerName} réalise des interviews sur place concernant l'incident."
+InterviewDone:
+  Name: Interview Terminé
+  Description: "{OwnerName} a reconstitué la vérité sur l'incident !\nElle va distribuer\
+    \ un numéro spécial du journal Bunbunmaru."
+FirepowerIsJustice:
+  Name: Le pouvoir fait le bien !
+  Description: La |Puissance| de {OwnerName} ne sera jamais inférieure à celle de
+    {PlayerName}.
+Emi:
+  Name: Interférence Électromagnétique
+  Description: "{OwnerName} ne peut pas agir {Duration:plural one='jusqu\\'à la fin\
+    \ du tour' other='pendant % tours'}."
+TurnStartPurify:
+  Name: Purification au Prochain tour
+  Description: "Au début du prochain tour de {PlayerName}, |Purifie| {Level}.\nRetirez\
+    \ cet effet à la fin du tour."
+RockHard:
+  Name: Tête Dure !
+  Description: '{OwnerName} subit {Level} dégâts en moins des attaques non bloquées.'
+LouguanJianSe:
+  Name: Roukanken
+  Description: Après que {OwnerName} ait infligé des dégâts d'attaque, {Level} |Verrouillé|
+    {Level:plural one='est appliqué' other='sont appliqués'} à la cible.
+KokoroXi:
+  Name: Joie
+  Description: À la fin du tour de {OwnerName}, invoque un Menreiki.
+KokoroYou:
+  Name: Tristesse
+  Description: À la fin du tour de {OwnerName}, {PlayerName} gagne {Level} |Faible|.
+LongLight:
+  Name: Trépied Brillant
+  Description: '{OwnerName} brille comme une étoile ! Ses cartes de statut sont plus
+    puissantes.'
+FlatPeach:
+  Name: Pêche Céleste
+  Description: Chaque fois que {OwnerName} subit des blessures, elle gagne {Level}
+    points de vie.
+EnemyEnergyNegative:
+  Name: Dépenses d'Énergie
+  Description: "{OwnerName} a dépensé <sprite=\"Point\" name=\"Power\">.\nCela ne\
+    \ devrait pas être affiché dans le gameplay."
+Vampire:
+  Name: Vampire
+  Description: '{OwnerName} gagne un nombre de points de vie égal aux dégâts non bloqués
+    infligés. Angoissant !'
+PowerByDefense:
+  Name: Bouclier Infaillible
+  Description: Chaque fois qu'une carte de défense est jouée, {OwnerName} gagne {Level}
+    |Puissance|.
+SijiZui:
+  Name: Jugement du Bien et du Mal
+  Description: 'Péchés de {PlayerName} : mineurs.'
+  ExtraDescription: 'Péchés de {PlayerName} : moyens.'
+  ExtraDescription2: 'Péchés de {PlayerName} : majeurs.'
+MirrorImage:
+  Name: Image Miroir
+  Description: Un reflet de {OwnerName}.
+Sleep:
+  Name: Dévoreur de Rêves
+  Description: "La |Barrière| de {OwnerName} est reconstituée à {Level} à la fin de\
+    \ son tour.\nSe réveille lorsqu'il subit des dégâts ou après {Count} tours."
+DreamMaster:
+  Name: Créateur de Rêves
+  Description: '{OwnerName} est le maître des rêves.'
+Curiosity:
+  Name: Je Suis Vraiment Curieuse !
+  Description: Chaque fois que {PlayerName} joue une carte de pouvoir, {OwnerName}
+    gagne {Level} |Puissance|.
+JunkoPurify:
+  Name: Lumière Purifiante
+  Description: Chaque fois que {PlayerName} joue une carte, |Purifie| {Level}.
+ShendengSe:
+  Description: À la fin du tour de {OwnerName}, {PlayerName} gagne aléatoirement {Level}
+    |Faible|, |Fragile| ou |Vulnérable|.
+  Name: Lampe à Huile Orientale
+QiannianShenqiSe:
+  Name: Puzzle en Forme de Pyramide
+  Description: "{PlayerName} ne peut piocher que {Limit} cartes à chaque tour.\n|d\
+    \ :({Count} cartes restantes.)|"
+InfinityGemsSe:
+  Name: Gant avec Pierres Précieuses Incrustées
+  Description: Au début du tour de {OwnerName}, |Exile| aléatoirement la moitié des
+    cartes de {PlayerName}, quel que soit leur emplacement.
+SakuraWandSe:
+  Name: Clé Ailée
+  Description: '{OwnerName} attaque deux fois plus souvent.'
+JiangshenSe:
+  Name: Méditation Pieuse
+  Description: Chaque fois qu'une carte est ajoutée pendant le combat, |Améliorez|-la.
+  Brief: Chaque fois qu'une carte est ajoutée pendant le combat, |Améliorez|-la.
+FreeFlySe:
+  Name: Vol Libre
+  Description: Au début du tour de {PlayerName}, ajoutez {Level} {Mana}.
+  Brief: Au début du tour de {PlayerName}, ajoutez {Level} {Mana}.
+YinyangXueyinSe:
+  Name: Rune Yin-Yang
+  Description: Après avoir joué une |Orbe Yin-Yang|, gagnez {Level} |Puissance temporaire|
+    et |Esprit Temporaire|.
+  Brief: Après avoir joué une |Orbe Yin-Yang|, gagnez de la |Puissance temporaire|
+    et de l'|Esprit Temporaire|.
+HuanxiangBlockSe:
+  Name: Bord de la Fantaisie
+  Description: À chaque fois qu'une carte est |Exilée|, {PlayerName} gagne {Level}
+    |Bouclier{Level:plural one='' other='s'}|.
+  Brief: À chaque fois qu'une carte est |Exilée|, {PlayerName} gagne du |Bouclier|.
+ReverseJiejieSe:
+  Name: Limite Inversée
+  Description: Chaque fois que {PlayerName} perd un |Bonus|, il gagne {Level} |Barrière{Level:plural
+    one='' other='s'}|.
+  Brief: Chaque fois que {PlayerName} perd un |Bonus|, il gagne de la |Barrière|.
+SenluoJiejieSe:
+  Name: Agrégat de Bordure
+  Description: Fait exploser la |Barrière| au début du tour suivant.
+  Brief: Fait exploser la |Barrière| au début du tour suivant.
+BurstUpgrade:
+  Name: Enflammé
+  Description: Augmente le multiplicateur de dégâts en mode |Saturation|.
+  Brief: Augmente le multiplicateur de dégâts du mode |Saturation|.
+ScryBlockSe:
+  Name: Préméditation
+  Description: Chaque fois que {PlayerName} |sonde|, il gagne {Level} |Bouclier{Level:plural
+    one='' other='s'}|.
+  Brief: Chaque fois que {PlayerName} |sonde|, il gagne du |Bouclier|.
+MasterOfCollectionSe:
+  Name: Maître de Collection
+  Description: À chaque fois qu'une carte est |Retenue|, réduisez son coût de {Level}
+    mana aléatoire pendant ce combat.
+  Brief: À chaque fois qu'une carte est |Retenue|, réduisez son coût d'un mana aléatoire
+    pendant ce combat.
+PoisonPotionSe:
+  Name: Creuset de Sorcière
+  Description: Chaque fois qu'une |Potion instable| est utilisée, elle applique également
+    {Level} |Poison{Level:plural one='' other='s'}| à sa cible.
+  Brief: Chaque fois qu'une |Potion instable| est utilisée, elle applique également
+    du |Poison| à sa cible.
+WizardStudySe:
+  Name: Convertisseur Magique
+  Description: La première carte jouée à chaque tour coûte {Mana} de plus à jouer.
+  Brief: La première carte utilisée à chaque tour coûte plus cher.
