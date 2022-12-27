@@ -216,7 +216,7 @@ YuyukoDeath:
   Name: Loi de la Mortalité
 FastAttack:
   Description: Après avoir joué la première carte du tour, {PlayerName} reçoit {Level}
-    dégâts de {OwnerName}.
+    dégât{Level:plural one='' other='s'} de {OwnerName}.
   Name: Vitesse Pure
 DoremyLevel:
   Description: Plus on s'enfonce dans le rêve, plus les attaques de {OwnerName} sont
@@ -227,10 +227,11 @@ DreamServant:
   Name: Habitant du Rêve
 ScarletDestiny:
   Description: "Après {Limit} cartes jouées, {OwnerName} termine le tour de {PlayerName}.\n\
-    |d:({Count:pluriel one='% carte restante' autre='% cartes restantes'})|"
+    |d:({Count:plural one='% carte restante' other='% cartes restantes'})|"
   Name: Destin Écarlate
 SingleJiandaoSe:
-  Description: Chaque fois que {PlayerName} joue une carte, subissez {Level} dégâts.
+  Description: Chaque fois que {PlayerName} joue une carte, subissez {Level} dégât{Level:plural
+    one='' other='s'}.
   Name: Lame de Ciseaux Géante
 MadokaBowSe:
   Description: "À la fin du tour de {OwnerName}, ajoutez {Level} cartes Statut aléatoires\
@@ -252,7 +253,7 @@ BoliDajiejieSe:
   Brief: les |Boucliers| de {OwnerName} sont converti en |Barrières|.
 DoubleLianhuadieSe:
   Description: Chaque fois que {PlayerName} gagne |Bouclier| ou |Barrière|, il inflige
-    {Niveau} dégâts à un ennemi aléatoire.
+    {Level} dégât{Level:plural one='' other='s'} à un ennemi aléatoire.
   Name: Papillon Lotus Dichromatique
   Brief: Chaque fois que {PlayerName} gagne |Bouclier| ou |Barrière|, il inflige des
     dégâts à un ennemi aléatoire.
@@ -279,8 +280,8 @@ BoliPhantomSe:
 TaijiLiangyiSe:
   Description: Au début du tour de {PlayerName}, s'il {Level:plural one="n'y a aucune
     |Orbe Yin-Yang|" other="y a moins de % |Orbes Yin-Yang|"} dans la main, ajoutez
-    {Level:plural one='une |Orbe Yin-Yang|' other='des |Orbes Yin-Yang|'} à la main{Niveau
-    :pluriel="." other=" jusqu'à ce qu'il y en ait %."}
+    {Level:plural one='une |Orbe Yin-Yang|' other='des |Orbes Yin-Yang|'} à la main{Level:plural
+    one="." other=" jusqu'à ce qu'il y en ait %."}
   Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Orbes
     Yin-Yang| dans la main, ajoutez-les à la main jusqu'à ce qu'il y en ait suffisamment.
   Name: La Naissance du Yin-Yang
@@ -331,7 +332,7 @@ SolarSystemSe:
 LearnAstrologySe:
   Description: Au début du tour de {PlayerName}, s'il {Level:plural one="n'y a aucune"
     other="y a moins de %"} |Astrologie| dans la main, ajoutez {Level:plural one='une
-    |Astrologie| dans' other='des |Astrologie|'} à la main{Niveau:pluriel="." other="
+    |Astrologie| dans' other='des |Astrologies|'} à la main{Level:plural one="." other="
     jusqu'à ce qu'il y en ait %."}
   Name: Étude d'Astrologie
   Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Astrologie|
@@ -366,8 +367,8 @@ ChillPotionSe:
     des |Gelures| à sa cible.
   Name: Produits Chimiques Surgelés
 TimeAuraSe:
-  Description: "À la fin du tour de {PlayerName}, infligez {Level} dégâts à tous les\
-    \ ennemis.\nPerdez un niveau pour chaque ennemi endommagé."
+  Description: "À la fin du tour de {PlayerName}, infligez {Level} dégât{Level:plural\
+    \ one='' other='s'} à tous les ennemis.\nPerdez un niveau pour chaque ennemi endommagé."
   Name: Impulsion Temporelle
   Brief: "À la fin du tour de {PlayerName}, infligez des dégâts à chaque ennemi.\n\
     Diminuez le niveau chaque fois que vous blessez un ennemi."
@@ -502,7 +503,8 @@ MirrorImage:
 Sleep:
   Name: Dévoreur de Rêves
   Description: "La |Barrière| de {OwnerName} est reconstituée à {Level} à la fin de\
-    \ son tour.\nSe réveille lorsqu'il subit des dégâts ou après {Count} tours."
+    \ son tour.\nSe réveille lorsqu'il subit des dégâts ou après {Count} tour{Count:plural\
+    \ one='' other='s'}."
 DreamMaster:
   Name: Créateur de Rêves
   Description: '{OwnerName} est le maître des rêves.'
@@ -646,7 +648,8 @@ BailianBlackSe:
 MeihongFireSe:
   Name: Allumage sans Distinction
   Description: À la fin du tour de {PlayerName} et chaque fois qu'un |Malheur| ou
-    une carte Statut est piochée, infligez {Level} dégâts à chaque ennemi.
+    une carte Statut est piochée, infligez {Level} dégât{Level:plural one='' other='s'}
+    à chaque ennemi.
   Brief: À la fin du tour de {PlayerName} et chaque fois qu'un |Malheur| ou une carte
     Statut est piochée, infligez des dégâts à chaque ennemi.
 HuiyeManaSe:
@@ -663,8 +666,8 @@ RinDrawSe:
   Brief: À chaque fois qu'une carte Statut est tirée, piochez des cartes.
   Name: Affectation Spirituelle
 HekaHellRainSe:
-  Description: Pour chaque carte jouée, infligez {Level} dégâts à chaque ennemi à
-    la fin du tour. (Actuellement {Count})
+  Description: Pour chaque carte jouée, infligez {Level} dégât{Level:plural one=''
+    other='s'} à chaque ennemi à la fin du tour. (Actuellement {Count})
   Brief: Pour chaque carte jouée, infligez des dégâts à chaque ennemi à la fin du
     tour.
   Name: Pluie de l'Enfer
@@ -682,7 +685,7 @@ RainbowMarketSe:
 KokoroDanceSe:
   Name: Nô des Ténèbres
   Description: Chaque fois qu'un ennemi reçoit un |Malus|, {PlayerName} lui inflige
-    {Level} dégâts.
+    {Level} dégât{Level:plural one='' other='s'}.
   Brief: Lorsque l'ennemi gagne des effets négatifs, {PlayerName} lui inflige des
     dégâts.
 YachieDefendSe:
@@ -714,7 +717,7 @@ ZhenmiaowanAttackSe:
 ModuoluoFireSe:
   Name: Feu d'Ena
   Description: Chaque fois que <sprite="ManaSprite" name="P"> est dépensé, infligez
-    {Level} dégâts à chaque ennemi.
+    {Level} dégât{Level:plural one='' other='s'} à chaque ennemi.
   Brief: Chaque fois que <sprite="ManaSprite" name="P"> est dépensé, infligez des
     dégâts à chaque ennemi.
 MeihongPowerSe:
