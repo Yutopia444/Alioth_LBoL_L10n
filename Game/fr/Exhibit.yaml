@@ -4,7 +4,7 @@ FoyushiBo:
   Name: Bol en Pierre de Bouddha
   FlavorText: 「Diamant bouddhiste」
 PenglaiYuzhi:
-  Description: "Chaque fois que {PlayerName} gagne une quantité de mana, elle gagne\
+  Description: "Chaque fois que {PlayerName} gagne une quantité de mana, il gagne\
     \ autant de <sprite=\"ManaSprite\" name=\"P\"> à la place.\nLe mana non dépensé\
     \ n'est pas perdu à la fin de chaque tour."
   Name: Branche Ornée de Joyaux d'Hourai
@@ -20,30 +20,28 @@ Shendeng:
   FlavorText: Lampe Magique d'Aladdin (caché)
 ReimuR:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Reimu|\
-    \ sont ajoutés aux cartes disponibles.\nChaque fois qu'un ennemi est vaincu, {PlayerName}\
-    \ gagne {Value1} |Puissance| et {Value2} point{Value2:plural one='' other='s'}\
-    \ de vie."
+    \ sont ajoutées aux cartes disponibles.\nChaque fois qu'un ennemi est vaincu,\
+    \ {PlayerName} gagne {Value1} |Puissance| et {Value2} point{Value2:plural one=''\
+    \ other='s'} de vie."
   Name: Orbe Yin-Yang Sanguinaire
   FlavorText: Ça doit faire mal d'être touché par ça.
 ReimuW:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Reimu|\
-    \ sont ajoutés aux cartes disponibles.\nÀ la fin du tour de {PlayerName}, s'il\
+    \ sont ajoutées aux cartes disponibles.\nÀ la fin du tour de {PlayerName}, s'il\
     \ reste du mana non dépensé, gagnez {Value1} |Barrière|."
   Name: Bâton de Purification Hakurei
   FlavorText: Accessoire très polyvalent, utilisé pour lancer des barrages, créer
     des enchantements, purifier des malédictions, etc.
 MarisaR:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Marisa|\
-    \ sont ajoutés aux cartes disponibles.\nChaque fois que {Mana} est dépensé pour\
+    \ sont ajoutées aux cartes disponibles.\nChaque fois que {Mana} est dépensé pour\
     \ jouer une attaque, {PlayerName} gagne {Value1} |Charge|."
   Name: Mini-Hakkero
   FlavorText: Ce qui est imprimé dessus, ce sont les commérages innés de Fuxi.
 SakuyaU:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Sakuya|\
-    \ sont ajoutés aux cartes disponibles.\nPendant {Value2:plural one='le premier\
-    \ tour' other='Les % premiers tours'} de chaque combat de {PlayerName}, piochez\
-    \ {Value1} {Value1:plural one='carte' other='cartes'} de plus pendant l'étape\
-    \ de pioche."
+    \ sont ajoutées aux cartes disponibles.\nPiochez {Value1} {Value1:plural one='carte'\
+    \ other='cartes'} de plus pendant l'étape de pioche."
   Name: Poker Magique
   FlavorText: Femme de chambre appliquée, distribuant des cartes en rafale.
 CirnoU:
@@ -51,12 +49,13 @@ CirnoU:
     \ sont ajoutées aux cartes disponibles.\nLes cartes d'attaque bleues appliquent\
     \ également le |Froid| à leur(s) cible(s)."
   Name: Cristal de Glace de Cirno
+  FlavorText: (Travail en cours...)
 PiaoliangPanzi:
-  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du premier tour de\
-    \ {PlayerName} à chaque combat, améliorez {Value1} cartes aléatoires dans la main\
-    \ jusqu'à la fin du combat."
-  Name: Belle Assiette
-  FlavorText: La méthode d'utilisation consiste à la jeter et à la casser.
+  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du premier tour à chaque\
+    \ combat, {PlayerName} améliore {Value1} cartes aléatoires dans la main jusqu'à\
+    \ la fin du combat."
+  Name: Pile d'Assiettes
+  FlavorText: La méthode d'utilisation consiste à les jeter et à les casser.
 DatiangouMaifan:
   Description: "Ajoute {BaseMana} à la base de mana.\nAprès chaque {Value1:plural\
     \ one='combat,' other='suite de % combats,'} {PlayerName} gagne {Value2} <sprite=\"\
@@ -64,10 +63,10 @@ DatiangouMaifan:
   Name: Riz d'Orge du Grand Tengu
   FlavorText: Le goût est moyen.
 Bingzhilin:
-  Description: "Ajoute {BaseMana} à la base de mana.\nChaque fois qu'une capacité\
-    \ est jouée, {Value1:plural one='% carte aléatoire' other='% cartes aléatoires'}\
-    \ dans la main |coûte{Value1:plural one='' other='nt'} temporairement| {Mana}\
-    \ moins à jouer."
+  Description: "Ajoute {BaseMana} à la base de mana.\nChaque fois qu'un pouvoir est\
+    \ joué, {Value1:plural one='% carte aléatoire' other='% cartes aléatoires'} dans\
+    \ la main |coûte{Value1:plural one='' other='nt'} temporairement| {Mana} moins\
+    \ à jouer."
   Name: Écaille de Glace
   FlavorText: Elle ne fond pas au feu.
 ShijieSuipian:
@@ -94,7 +93,8 @@ HuoshuPiyi:
   FlavorText: 「Bouclier Salamandre」
 YanZianbei:
   Name: Cauri d'Hirondelle
-  Description: Au début du tour de {PlayerName}, elle gagne {Value1} points de vie.
+  Description: Au début du tour de {PlayerName}, il gagne {Value1} point{Value1:plural
+    one='' other='s'} de vie.
   FlavorText: 「Source de Vie Infini」
 SingleJiandao:
   Name: Lame de Ciseaux Géante
@@ -120,22 +120,25 @@ MarisaB:
 SakuyaW:
   Name: Couteaux à Lancer de Rechange
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Sakuya|\
-    \ sont ajoutés aux cartes disponibles.\nAu début du combat, ajoutez {Value1:plural\
+    \ sont ajoutées aux cartes disponibles.\nAu début du combat, ajoutez {Value1:plural\
     \ one='% |Couteau de Lancer+|' other='% |Couteaux de lancer+|'} à la main."
   FlavorText: Tant qu'il y a suffisamment de couteaux en réserve, il n'est pas nécessaire
     de reprendre le couteau de lancer.
 CirnoG:
   Name: Branche Verte de la Fée
   Description: Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Cirno| sont
-    ajoutés aux cartes disponibles.
+    ajoutées aux cartes disponibles.
+  FlavorText: (Travail en cours...)
 KoishiG:
   Name: Rose Épineuse
   Description: Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Koishi|
-    sont ajoutés aux cartes disponibles.
+    sont ajoutées aux cartes disponibles.
+  FlavorText: (Travail en cours...)
 KoishiB:
   Name: Ami Imaginaire
   Description: Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Koishi|
-    sont ajoutés aux cartes disponibles.
+    sont ajoutées aux cartes disponibles.
+  FlavorText: (Travail en cours...)
 ClassicWunvfu:
   Name: Costume de Miko à l'Ancienne
   Description: "Ajoute {BaseMana} à la base de mana.\nAu début du tour de {PlayerName},\
@@ -163,8 +166,8 @@ Gongjuxiang:
 Yuerang:
   FlavorText: Une terre pure sans aucun souffle de vie.
   Name: Sol Lunaire
-  Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquis, ajoutez |Le\
-    \ Paysage Lunaire| à la bibliothèque."
+  Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquis, ajoutez |Paysage\
+    \ Lunaire| à la bibliothèque."
 XianzheShi:
   Description: "Ajoute {BaseMana} à la base de mana.\nGagnez {Value1} <sprite=\"Point\"\
     \ name=\"Gold\"> de plus lorsque vous ignorez une récompense de carte."
@@ -202,7 +205,7 @@ HouhuMen:
   FlavorText: Porte dérobée qui mène à un emplacement aléatoire ce qui en fait une
     poubelle pratique.
 BaochunRenou:
-  Name: Poupée d'Annonce du Printemps
+  Name: Poupée du Printemps
   Description: "Ajoute {BaseMana} à la base de mana.\nÀ chaque fois que {PlayerName}\
     \ active sa |Carte Sort|, gagnez {Value1} point{Value1:plural one='' other='s'}\
     \ de vie."
@@ -233,7 +236,7 @@ HuiyeBaoxiang:
   Name: Coffre au Trésor de Kaguya
   Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nUne fois\
     \ acquis, gagnez {Value1} |Merveilles| aléatoires.\nEnsuite, ajoutez une |Ordonnance\
-    \ d'expulsion| à la bibliothèque."
+    \ d'Expulsion| à la bibliothèque."
 QipaiYouhua:
   Name: Peinture à l'Huile Imposante
   Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nUne fois\
@@ -413,7 +416,8 @@ ZheyangSan:
     |Bouclier{Value1:plural one='' other='s'}| et {Value2} |Puissance temporaire|.
 Pingguo:
   Name: Pomme
-  Description: Une fois acquise, gagnez {Value1} de vie maximum.
+  Description: Une fois acquise, gagnez {Value1} point{Value1:plural one='' other='s'}
+    de vie maximum.
   FlavorText: Le lieu de production est le jardin fruitier du Manoir du Démon Écarlate.
 PortalGun:
   Name: Pistolet de Portail
@@ -556,7 +560,7 @@ TiangouRongqiu:
     élevé, plus ils portent de pompons.
 TiangouShanzi:
   Name: Éventail de Tengu
-  Description: Au début du premier tour de {PlayerName} de chaque combat, gagnez {Value1}
+  Description: Au début du premier tour à chaque combat, {PlayerName} gagne {Value1}
     |Esquive{Value1:plural one='' other='s'}|.
   FlavorText: Cela peut rendre son porteur plus léger et réduire sa vitesse de chute
     dans l'air.
@@ -565,7 +569,7 @@ TiangouXiangji:
   Description: Au début du combat, appliquez {Value1} |Verrouillé| à chaque ennemi.
   FlavorText: Il a l'air très sophistiqué.
 TiangouShouji:
-  Name: Téléphone Portable de Tengu
+  Name: Téléphone Tengu
   FlavorText: La fonction appareil photo est également très bonne.
   Description: Au début du premier tour de {PlayerName} de chaque combat, piochez
     {Value1} carte{Value1:plural one='' other='s'} supplémentaire{Value1:plural one=''
@@ -590,7 +594,7 @@ SunhuaiHufu:
     pour chaque |Malheur| dans la bibliothèque.
 Chaidao:
   Name: Hachoir
-  Description: Une fois acquis, |Améliorer| {Value1} carte{Value1:plural one='' other='s'}
+  Description: Une fois acquis, |Améliorez| {Value1} carte{Value1:plural one='' other='s'}
     d'attaque aléatoire{Value1:plural one='' other='s'} dans la bibliothèque.
 Zhuzi:
   FlavorText: Est-il vraiment nécessaire d'exposer des choses que l'on voit partout
@@ -645,8 +649,8 @@ JingjieGanzhiyi:
   Name: Radar de Bordure
   Description: '|p:Permet de percevoir la vraie nature de la réalité.|'
 JingesiYushou:
-  Description: Chaque fois que {PlayerName} gagne un debuff pour la première fois
-    à chaque combat, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
+  Description: Chaque fois que {PlayerName} gagne un malus pour la première fois à
+    chaque combat, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
   Name: Amulette Kinkaku-Ji
 JingQiXi:
   ExtraDescription: "Au début de chaque tour impair, perdez 1 mana aléatoire. Au début\
