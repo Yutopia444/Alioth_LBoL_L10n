@@ -27,8 +27,8 @@ ReimuR:
   FlavorText: Ça doit faire mal d'être touché par ça.
 ReimuW:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Reimu|\
-    \ sont ajoutées aux cartes disponibles.\nÀ la fin du tour de {PlayerName}, s'il\
-    \ reste du mana non dépensé, gagnez {Value1} |Barrière|."
+    \ sont ajoutées aux cartes disponibles.\nLorsque {PlayerName} finit son tour,\
+    \ s'il reste du mana non dépensé, gagnez {Value1} |Barrière|."
   Name: Bâton de Purification Hakurei
   FlavorText: Accessoire très polyvalent, utilisé pour lancer des barrages, créer
     des enchantements, purifier des malédictions, etc.
@@ -93,7 +93,7 @@ HuoshuPiyi:
   FlavorText: 「Bouclier Salamandre」
 YanZianbei:
   Name: Cauri d'Hirondelle
-  Description: Au début du tour de {PlayerName}, il gagne {Value1} point{Value1:plural
+  Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} point{Value1:plural
     one='' other='s'} de vie.
   FlavorText: 「Source de Vie Infini」
 SingleJiandao:
@@ -141,14 +141,15 @@ KoishiB:
   FlavorText: (Travail en cours...)
 ClassicWunvfu:
   Name: Costume de Miko à l'Ancienne
-  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du tour de {PlayerName},\
-    \ gagnez {Value1} |Boucliers| pour chaque carte |Améliorée| dans la main."
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
+    \ son tour, gagnez {Value1} |Boucliers| pour chaque carte |Améliorée| dans la\
+    \ main."
   FlavorText: Style classique.
 TianwenWangyuanjing:
   Name: Télescope Astronomique
-  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du premier tour de\
-    \ {PlayerName} à chaque combat, ajoutez {Value1} |Astrologie{Value1:plural one=''\
-    \ other='s'}| à la main."
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
+    \ son premier tour à chaque combat, ajoutez {Value1} |Astrologie{Value1:plural\
+    \ one='' other='s'}| à la main."
   FlavorText: La lune et la Grande Ourse peuvent être observées attentivement.
 PingzhuangLinghun:
   Name: Âme en Bouteille
@@ -177,8 +178,8 @@ XianzheShi:
 Laiwating:
   Name: Lævateinn
   Description: "Ajoute {BaseMana} à la base de mana.\nL'effet de |Vulnérable| est\
-    \ augmenté de {Value1} % lorsqu'il est appliqué aux ennemis.\nL'effet de |Vulnérable|\
-    \ est augmenté de {Value2} % lorsqu'il est appliqué à {PlayerName}."
+    \ augmenté de {Value1} % lorsque subi par les ennemis.\nL'effet de |Vulnérable|\
+    \ est augmenté de {Value2} % lorsque subi par {PlayerName}."
   FlavorText: Cela ressemble à une aiguille d'horloge tordue.
 Ganggenier:
   Name: Gungnir
@@ -188,14 +189,14 @@ Ganggenier:
     l'éviter.
 GuizuJiubei:
   Name: Plat à Saké Oni
-  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du tour de {PlayerName},\
-    \ gagnez une |Puissance temporaire| égale au nombre d'attaques jouées au dernier\
-    \ tour de ce combat."
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
+    \ son tour, gagnez une |Puissance Temporaire| égale au nombre d'attaques jouées\
+    \ au dernier tour de ce combat."
   FlavorText: Il ressemble plus à un grand bol.
 AizheHongshi:
   Name: Pierre d'Aja
-  Description: "Ajoute {BaseMana} à la base de mana.\nÀ la fin du tour de {PlayerName},\
-    \ gagnez {Value1} |Puissance|. Ensuite, ajoutez {Value2} |Lumière{Value2:plural\
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} finit son\
+    \ tour, gagnez {Value1} |Puissance|. Ensuite, ajoutez {Value2} |Lumière{Value2:plural\
     \ one=' Solaire Réfractée' other='s Solaires Réfractées'}| à la défausse."
   FlavorText: Peut être utilisé pour faire fondre les écailles de glace.
 HouhuMen:
@@ -234,13 +235,13 @@ KongbaiKapai:
     \ les couleurs sont ajoutées aux cartes disponibles."
 HuiyeBaoxiang:
   Name: Coffre au Trésor de Kaguya
-  Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nUne fois\
-    \ acquis, gagnez {Value1} |Merveilles| aléatoires.\nEnsuite, ajoutez une |Ordonnance\
-    \ d'Expulsion| à la bibliothèque."
+  Description: "Lorsque {PlayerName} débute son tour, gagnez 1 mana aléatoire.\nUne\
+    \ fois acquis, gagnez {Value1} |Merveilles| aléatoires.\nEnsuite, ajoutez une\
+    \ |Ordonnance d'Expulsion| à la bibliothèque."
 QipaiYouhua:
   Name: Peinture à l'Huile Imposante
-  Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nUne fois\
-    \ acquis, gagnez {Value1} <sprite=\"Point\" name=\"Gold\">, {Value2} {Value2:plural\
+  Description: "Lorsque {PlayerName} débute son tour, gagnez 1 mana aléatoire.\nUne\
+    \ fois acquis, gagnez {Value1} <sprite=\"Point\" name=\"Gold\">, {Value2} {Value2:plural\
     \ one='carte |Améliorée| aléatoire' other='cartes |Améliorées| aléatoires'} dans\
     \ la bibliothèque et augmente la vie maximum de {Value3}."
   FlavorText: "Résolvez les énigmes du tableau et vous pourrez obtenir tout l'héritage\
@@ -261,16 +262,16 @@ Yuhangfu:
   Description: À chaque fois que {PlayerName} doit perdre un certain nombre de points
     de vie, il perd ce nombre de points de vie moins {Value1} à la place.
 GanzhuYao:
-  Description: "La prochaine fois que {PlayerName} est vaincue, elle guérira à la\
-    \ place jusqu'à son maximum de points de vie. Cet effet ne fonctionne qu'une seule\
-    \ fois.\nAprès que cette |Merveille| a pris effet, la vie maximum de {PlayerName}\
-    \ est réduite de {Value1} % et au début du combat, elle gagne {Value2} |Puissance|."
+  Description: "La prochaine fois que {PlayerName} est vaincu, guérissez à la place\
+    \ jusqu'à son maximum de points de vie. Cet effet ne fonctionne qu'une seule fois.\n\
+    Après que cette |Merveille| a pris effet, {PlayerName} a sa vie maximum réduite\
+    \ de {Value1} % et au début du combat, gagne {Value2} |Puissance|."
   Name: Élixir d'Orbe Outremer
   FlavorText: Je suis mort et je suis devenu plus fort.
 YizangnuoWuzhi:
   Name: Objet Izanagi
-  Description: "Au début du tour de {PlayerName}, gagnez 1 mana aléatoire.\nLes combats\
-    \ d'élite sont récompensés par une |Merveille| supplémentaire."
+  Description: "Lorsque {PlayerName} débute son tour, gagnez 1 mana aléatoire.\nLes\
+    \ combats d'élite sont récompensés par une |Merveille| supplémentaire."
   FlavorText: Les matières premières mystérieuses qui peuvent être utilisées pour
     créer diverses armes magiques sont produites dans la grotte du dragon.
 LouguanJian:
@@ -284,7 +285,7 @@ He3:
     carte, gagnez {Mana}.
 XijianSan:
   Name: Parasol des Failles
-  Description: Au début du troisième tour de {PlayerName} à chaque combat, gagnez
+  Description: Lorsque {PlayerName} débute son troisième tour à chaque combat, gagnez
     {Value1} |Boucliers| et gagnez {Mana}.
 Taozi:
   Name: Pêche
@@ -312,7 +313,7 @@ GaodangShoubao:
     dépensent beaucoup d'argent pour en avoir un.
 WanglingTideng:
   Name: Torche de l'Âme
-  Description: Empêche la première fois que {PlayerName} perde des points de vie à
+  Description: Empêche la première fois que {PlayerName} perd des points de vie à
     chaque combat.
   FlavorText: Transformez son possesseur en fantôme et il découvrira le monde après
     la mort en avance.
@@ -365,7 +366,7 @@ ShanshuoBishou:
     piochez autant de cartes.
 Yueshan:
   Name: Éventail Lunaire
-  Description: Au début du tour de {PlayerName}, elle ne perd que la moitié de ses
+  Description: Lorsque {PlayerName} débute son tour, ne perd que la moitié de ses
     |Boucliers| au lieu de la totalité.
 ZhangchibangQiu:
   Name: Balle avec des Ailes
@@ -378,7 +379,7 @@ YueYuyi:
   FlavorText: Pas très utile lorsque vous combattez des boss.
 FeixiangJian:
   Name: Épée d'Hisou
-  Description: Au début du tour de {PlayerName}, infligez {Value1} dégât{Value1:plural
+  Description: Lorsque {PlayerName} débute son tour, infligez {Value1} dégât{Value1:plural
     one='' other='s'} à chaque ennemi.
 YuekuangQiang:
   Name: Pistolet Lunaire
@@ -389,8 +390,8 @@ Yaoshi:
   Description: Lorsque {PlayerName} subit des dégâts pour la première fois à chaque
     combat, gagnez {Mana}.
 Mengriji:
-  Description: Au début du tour de {PlayerName}, si aucune carte de défense n'a été
-    jouée au dernier tour, gagnez {Mana}.
+  Description: Lorsque {PlayerName} débute son tour, si aucune carte de défense n'a
+    été jouée au dernier tour, gagnez {Mana}.
   FlavorText: "\"Le contenu à l'intérieur doit être regardé en compagnie des parents.\""
   Name: Journal du Rêve
 Heilianhua:
@@ -412,8 +413,8 @@ LinghunBaoshi:
 ZheyangSan:
   Name: Parasol
   FlavorText: Ce soir, son propriétaire n'en a pas besoin.
-  Description: Au début du deuxième tour de {PlayerName} à chaque combat, gagnez {Value1}
-    |Bouclier{Value1:plural one='' other='s'}| et {Value2} |Puissance temporaire|.
+  Description: Lorsque {PlayerName} débute son deuxième tour à chaque combat, gagnez
+    {Value1} |Bouclier{Value1:plural one='' other='s'}| et {Value2} |Puissance temporaire|.
 Pingguo:
   Name: Pomme
   Description: Une fois acquise, gagnez {Value1} point{Value1:plural one='' other='s'}
@@ -494,8 +495,8 @@ Saiqianxiang:
   FlavorText: Elle est vide.
 Shanbibu:
   Name: Tissu Agile
-  Description: Au début du deuxième tour de {PlayerName} à chaque combat, gagnez {Value1}
-    |Esquive{Value1:plural one='' other='s'}|.
+  Description: Lorsque {PlayerName} débute son deuxième tour à chaque combat, gagnez
+    {Value1} |Esquive{Value1:plural one='' other='s'}|.
 XiaorenWan:
   FlavorText: 'Surnom : Navire de Shinmyoumaru.'
   Name: Bol de Lilliputien
@@ -504,8 +505,8 @@ XiaorenWan:
 Tnt:
   Name: TNT
   FlavorText: "\"Tu es là ? Hé, alors j'ai fait sauter ta maison.\""
-  Description: Au début du {Value1:plural one='premier' two='second' other='%ème'}
-    tour de combat de {PlayerName}, infligez {Value2} dégât{Value2:plural one='' other='s'}
+  Description: Lorsque {PlayerName} débute son {Value1:plural one='premier' two='second'
+    other='%ème'} tour de combat, infligez {Value2} dégât{Value2:plural one='' other='s'}
     à chaque ennemi.
 Modaoshu:
   Name: Guide Magique
@@ -541,12 +542,14 @@ Shuye:
 TangSan:
   Name: Karakasa
   FlavorText: L'amoureux d'enfance de Tatara Kogasa.
-  Description: Au début du premier tour de {PlayerName} à chaque combat, gagnez {Value1}
-    |Bouclier{Value1:plural one='' other='s'}| et |Améliorez| {Value2:plural one='%
-    carte aléatoire' other='% cartes aléatoires'} dans la main jusqu'à la fin de combat.
+  Description: Lorsque {PlayerName} débute son premier tour à chaque combat, gagnez
+    {Value1} |Bouclier{Value1:plural one='' other='s'}| et |Améliorez| {Value2:plural
+    one='% carte aléatoire' other='% cartes aléatoires'} dans la main jusqu'à la fin
+    de combat.
 Putao:
   Name: Raisins
-  Description: Une fois acquis, gagnez {Value1} de vie maximum.
+  Description: Une fois acquis, {PlayerName} gagne {Value1} point{Value1:plural one=''
+    other='s'} de vie maximum.
 TiangouMuji:
   Name: Sabots de Tengu
   Description: Au début du combat, {PlayerName} gagne {Value1} |Puissance|.
@@ -571,13 +574,13 @@ TiangouXiangji:
 TiangouShouji:
   Name: Téléphone Tengu
   FlavorText: La fonction appareil photo est également très bonne.
-  Description: Au début du premier tour de {PlayerName} de chaque combat, piochez
+  Description: Lorsque {PlayerName} débute son premier tour à chaque combat, piochez
     {Value1} carte{Value1:plural one='' other='s'} supplémentaire{Value1:plural one=''
     other='s'}.
 ShenmiPifeng:
   Name: Cape Mystérieuse
   FlavorText: L'intérieur est brodé de runes
-  Description: À la fin du tour de {PlayerName}, gagnez {Value1} |Bouclier{Value1:plural
+  Description: Lorsque {PlayerName} finit son tour, gagnez {Value1} |Bouclier{Value1:plural
     one='' other='s'}| pour chaque carte dans la main.
 ChuRenou:
   Name: Poupée Hina
@@ -587,11 +590,12 @@ ChuRenou:
     \ one='' other='s'}."
 SunhuaiHufu:
   Name: Amulette Brisée
-  ExtraDescription: "Au début du combat, gagnez {Value1} |Puissance| et {Value1} |Esprit|\
-    \ pour chaque |Malheur| dans la bibliothèque.\nActuels |Malheurs| : {Misfortunes} "
+  ExtraDescription: "Au début du combat, {PlayerName} gagne {Value1} |Puissance| et\
+    \ {Value1} |Esprit| pour chaque |Malheur| dans la bibliothèque.\nActuels |Malheurs|\
+    \ : {Misfortunes} "
   FlavorText: "\"Désolé, tu n'es pas un quasi-dieu.\""
-  Description: Au début du combat, gagnez {Value1} |Puissance| et {Value1} |Esprit|
-    pour chaque |Malheur| dans la bibliothèque.
+  Description: Au début du combat, {PlayerName} gagne {Value1} |Puissance| et {Value1}
+    |Esprit| pour chaque |Malheur| dans la bibliothèque.
 Chaidao:
   Name: Hachoir
   Description: Une fois acquis, |Améliorez| {Value1} carte{Value1:plural one='' other='s'}
@@ -600,15 +604,15 @@ Zhuzi:
   FlavorText: Est-il vraiment nécessaire d'exposer des choses que l'on voit partout
     dans la forêt de bambous ?
   Name: Bambou
-  Description: Chaque fois que {PlayerName} |Effleure| une attaque, gagnez {Mana}.
+  Description: Chaque fois que {PlayerName} |Esquive| une attaque, gagnez {Mana}.
 Huiyuanka:
   FlavorText: '"Adhésion VIP ! Vous pouvez récupérer votre argent dès le premier achat,
     alors pourquoi hésiter ?"'
   Name: Carte de Membre
   Description: Les prix de la boutique de Takane sont {Value1} % moins chers.
 Cookie:
-  Description: Une fois acquis, gagnez {Value1} points de vie maximum, puis soignez-vous
-    au maximum.
+  Description: Une fois acquis, {PlayerName} gagne {Value1} point{Value1:plural one=''
+    other='s'} de vie maximum, puis se soigne au maximum.
   Name: Cookie Délicieux
 ZhinengYinxiang:
   ExtraDescription: "Une fois acquis, choisissez une carte dans la bibliothèque.\n\
@@ -618,8 +622,8 @@ ZhinengYinxiang:
   Description: "Une fois acquis, choisissez une carte dans la bibliothèque.\nCommencez\
     \ chaque combat avec celle-ci au-dessus de la pioche."
 ZhuQingting:
-  Description: Tous les {Value1} tour{Value1:plural one='' other='s'}, gagnez {Value2}
-    |Esquive{Value2:plural one='' other='s'}|.
+  Description: Tous les {Value1} tour{Value1:plural one='' other='s'}, {PlayerName}
+    gagne {Value2} |Esquive{Value2:plural one='' other='s'}|.
   Name: Také-Copter
 Guangjian:
   Name: Sabre Laser
@@ -639,7 +643,8 @@ WaijieYanjing:
     % de <sprite="Point" name="Gold"> en plus.
   Name: Lunettes Hi-Tech du Monde Extérieur
 WaijieYanshuang:
-  Description: À la fin de chaque combat, gagnez {Value1} points de vie.
+  Description: À la fin de chaque combat, gagnez {Value1} point{Value1:plural one=''
+    other='s'} de vie.
   Name: Crème pour les Yeux du Monde Extérieur
   FlavorText: 'Le slogan publicitaire imprimé dessus : " Triomphez du vieillissement,
     paraissez plus jeune !"'
@@ -720,8 +725,8 @@ Shiyou:
     très précieux.
 Duandai:
   Name: Ruban
-  Description: Pendant un combat contre un boss ou un combat d'élite, au début du
-    tour de {PlayerName}, gagnez {Mana}.
+  Description: Pendant un combat contre un boss ou un combat d'élite, lorsque {PlayerName}
+    débute son tour, gagnez {Mana}.
 FaliJingdian:
   Name: Sutra du Pouvoir Dharmatique
   Description: Chaque fois que la |Carte Sort| est activée, gagnez {Mana}.
@@ -739,15 +744,16 @@ ShoubiaoMazuiqiang:
   FlavorText: "\"Très furtif, l'ennemi ne pourra pas le repérer lorsqu'on l'utilise.\""
 Pijiu:
   Name: Bière
-  Description: "Au début du combat, gagnez {Value1} |Puissance temporaire|.\nUne fois\
-    \ acquise, ajoutez |Pompette| à la bibliothèque."
+  Description: "Au début du combat, {PlayerName} gagne {Value1} |Puissance temporaire|.\n\
+    Une fois acquise, ajoutez |Pompette| à la bibliothèque."
 HeiseBijiben:
   Name: Cahier Noir
   Description: Au début du combat, tous les ennemis avec des noms connus perdent {Value1}
     points de vie.
 LuoboMoxing:
   Name: Modèle de Robot
-  Description: Au début de chaque combat d'élite et de boss, gagnez {Value1} |Puissance|.
+  Description: Au début de chaque combat d'élite et de boss, {PlayerName} gagne {Value1}
+    |Puissance|.
   FlavorText: "\"Je pense que la jeune fille du sanctuaire de la montagne l'aimerait\
     \ beaucoup.\""
 JingboliJing:

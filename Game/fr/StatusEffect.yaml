@@ -175,8 +175,8 @@ AbsorbPower:
   Description: À la fin du tour de {OwnerName}, gagnez {Level} |Puissance|.
   Name: Orbe Rouge
 Lunatic:
-  Description: "La lumière magique brille sur tout le monde. Poussé à la folie, les\
-    \ actions de {OwnerName} sont amplifiées.\nGagnez {Mana} au début du tour de {PlayerName}."
+  Description: "Une étrange lueur affecte tout le monde. Poussé à la folie, les actions\
+    \ de {OwnerName} sont amplifiées.\nGagnez {Mana} au début du tour de {PlayerName}."
   Name: Folie
 WindGirl:
   Description: l'|Esquive| de {OwnerName} est réapprovisionné à {Level} à la fin de
@@ -192,8 +192,9 @@ RinAura:
     supplémentaires avec leur frappe de vengeance.
   Name: Feu Ardent
 PrivateSquare:
-  Description: "Toutes les {Limit} cartes jouées, {OwnerName} inflige {Level} dégâts\
-    \ à {PlayerName}.\n{Count} carte{Count:plural one=' restante' other='s restantes'}."
+  Description: "Toutes les {Limit} cartes jouées, {OwnerName} inflige {Level} dégât{Level:plural\
+    \ one='' other='s'} à {PlayerName}.\n{Count} carte{Count:plural one=' restante'\
+    \ other='s restantes'}."
   Name: Blocus d'Argent
 RockHardAura:
   Description: '{OwnerName} est protégé par une clé de voûte, subissant {Level} moins
@@ -282,8 +283,9 @@ TaijiLiangyiSe:
     |Orbe Yin-Yang|" other="y a moins de % |Orbes Yin-Yang|"} dans la main, ajoutez
     {Level:plural one='une |Orbe Yin-Yang|' other='des |Orbes Yin-Yang|'} à la main{Level:plural
     one="." other=" jusqu'à ce qu'il y en ait %."}
-  Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Orbes
-    Yin-Yang| dans la main, ajoutez-les à la main jusqu'à ce qu'il y en ait suffisamment.
+  Brief: Au début du tour de {PlayerName}, s'il y a moins d'une certaine quantité
+    d'|Orbes Yin-Yang| dans la main, ajoutez-en à la main jusqu'à ce qu'il y en ait
+    suffisamment.
   Name: La Naissance du Yin-Yang
 GuangxueMicai:
   Description: "{OwnerName} subit la moitié des dégâts des attaques {Duration:plural\
@@ -325,30 +327,30 @@ BurstDrawSe:
   Description: En entrant en |Saturation|, piochez {Level:plural one='% carte' other='%
     cartes'}.
 SolarSystemSe:
-  Brief: Au début du tour de {PlayerName}, gagnez des |Charges|.
+  Brief: Lorsque {PlayerName} débute son tour, gagnez des |Charges|.
   Name: Soleil d'Orrery
-  Description: Au début du tour de {PlayerName}, gagnez {Level} |Charge{Level:plural
+  Description: Lorsque {PlayerName} débute son tour, gagnez {Level} |Charge{Level:plural
     one='' other='s'}|.
 LearnAstrologySe:
-  Description: Au début du tour de {PlayerName}, s'il {Level:plural one="n'y a aucune"
-    other="y a moins de %"} |Astrologie| dans la main, ajoutez {Level:plural one='une
-    |Astrologie| dans' other='des |Astrologies|'} à la main{Level:plural one="." other="
-    jusqu'à ce qu'il y en ait %."}
+  Description: Lorsque {PlayerName} débute son tour, s'il {Level:plural one="n'y a
+    aucune" other="y a moins de %"} |Astrologie| dans la main, ajoutez {Level:plural
+    one='une |Astrologie| dans' other='des |Astrologies|'} à la main{Level:plural
+    one="." other=" jusqu'à ce qu'il y en ait %."}
   Name: Étude d'Astrologie
-  Brief: Au début du tour de {PlayerName}, s'il y a moins que cette quantité d'|Astrologie|
+  Brief: Lorsque {PlayerName} débute son tour, s'il y a moins que cette quantité d'|Astrologie|
     dans la main, ajoutez-les à la main jusqu'à ce qu'il y en ait suffisamment.
 PotionJungleSe:
-  Description: À la fin du tour de {PlayerName}, ajoutez {Level:plural one='|% Potion
-    instable|' other='|% Potions instables|'} à la pile de défausse.
+  Description: Lorsque {PlayerName} finit son tour, ajoutez {Level:plural one='|%
+    Potion instable|' other='|% Potions instables|'} à la pile de défausse.
   Name: Forêt Fluorescente
-  Brief: À la fin du tour de {PlayerName}, ajoutez plusieurs |Potions instables| dans
-    la défausse.
+  Brief: Lorsque {PlayerName} finit son tour, ajoutez plusieurs |Potions instables|
+    dans la défausse.
 UpgradePotionSe:
-  Description: À la fin du tour de {PlayerName}, augmentez les dégâts infligés par
-    les |Potions instables| dans les piles de pioche et de défausse par {Level}.
+  Description: Lorsque {PlayerName} finit son tour, augmentez les dégâts infligés
+    par les |Potions instables| dans les piles de pioche et de défausse par {Level}.
   Name: Potion Raffinée
-  Brief: À la fin du tour de {PlayerName}, les dégâts de |Potion instable| dans la
-    pioche et la pile de défausse augmente.
+  Brief: Lorsque {PlayerName} finit son tour, les dégâts de |Potion instable| dans
+    la pioche et la pile de défausse augmente.
 PotionDefenseSe:
   Description: Jusqu'à la fin du tour, chaque fois qu'une |Potion instable| est utilisée,
     gagnez {Level} |Barrière{Level:plural one='' other='s'}|.
@@ -367,16 +369,17 @@ ChillPotionSe:
     des |Gelures| à sa cible.
   Name: Produits Chimiques Surgelés
 TimeAuraSe:
-  Description: "À la fin du tour de {PlayerName}, infligez {Level} dégât{Level:plural\
+  Description: "Lorsque {PlayerName} finit son tour, infligez {Level} dégât{Level:plural\
     \ one='' other='s'} à tous les ennemis.\nPerdez un niveau pour chaque ennemi endommagé."
   Name: Impulsion Temporelle
-  Brief: "À la fin du tour de {PlayerName}, infligez des dégâts à chaque ennemi.\n\
+  Brief: "Lorsque {PlayerName} finit son tour, infligez des dégâts à chaque ennemi.\n\
     Diminuez le niveau chaque fois que vous blessez un ennemi."
 GainKnifeSe:
-  Description: Au début du tour de {PlayerName}, ajoutez {Level} |Couteau{Level:plural
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} |Couteau{Level:plural
     one='' other='x'} de lancer| à la main.
   Name: Danse de l'Épée Étoilée
-  Brief: Au début du tour de {PlayerName}, ajoutez des |Couteaux de lancer| à la main.
+  Brief: Lorsque {PlayerName} débute son tour, ajoutez des |Couteaux de lancer| à
+    la main.
 PerfectServantUSe:
   Description: Au début du prochain tour de {OwnerName}, il ajoute {Level} {Mana}
     et pioche {Level:plural one='% carte' other='% cartes'}.
@@ -439,7 +442,8 @@ AbsorbSpirit:
 LunaticTorch:
   Name: Torche Lunatique
   Description: "La torche de {OwnerName} brille d'une lumière particulière, tous les\
-    \ ennemis sont poussés à la |Folie|.\nGagnez {Mana} au début du tour de {PlayerName}."
+    \ ennemis sont poussés à la |Folie|.\nGagnez {Mana} lorsque {PlayerName} débute\
+    \ son tour."
 Interview:
   Name: Interview en Cours
   Description: "{OwnerName} réalise des interviews sur place concernant l'incident."
@@ -457,8 +461,8 @@ Emi:
     \ du tour\" other=\"pendant % tours\"}."
 TurnStartPurify:
   Name: Purification Imminente
-  Description: "Au début du prochain tour de {PlayerName}, |Purifie| {Level}.\nRetirez\
-    \ cet effet à la fin du tour."
+  Description: "Lorsque {PlayerName} débute son prochain tour, |Purifie| {Level}.\n\
+    Retirez cet effet à la fin du tour."
 RockHard:
   Name: Tête Dure !
   Description: '{OwnerName} subit {Level} dégâts en moins des attaques non bloquées.'
@@ -536,8 +540,8 @@ JiangshenSe:
   Brief: Chaque fois qu'une carte est ajoutée pendant le combat, |Améliorez|-la.
 FreeFlySe:
   Name: Vol Libre
-  Description: Au début du tour de {PlayerName}, ajoutez {Level} {Mana}.
-  Brief: Au début du tour de {PlayerName}, ajoutez {Level} {Mana}.
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} {Mana}.
+  Brief: Lorsque {PlayerName} débute son tour, ajoutez {Level} {Mana}.
 YinyangXueyinSe:
   Name: Rune Yin-Yang
   Description: Après avoir joué une |Orbe Yin-Yang|, gagnez {Level} |Puissance temporaire|
