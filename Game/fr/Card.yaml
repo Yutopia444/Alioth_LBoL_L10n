@@ -173,6 +173,7 @@ QinggeManwu:
   Description: Piochez {Value1} carte{Value1:plural one='' other='s'} et |Améliorez|-{Value1:plural
     one='la' other='les'} jusqu'à la fin du combat.
   Name: Valse de Jeune Fille
+  FlavorText: Reimu fait de petits pas et les chaussettes sont poussiéreuses.
 Wunvyu:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     |En main| : à chaque fois qu'une carte est piochée, sauf durant l'étape de pioche,\
@@ -186,6 +187,7 @@ HuanxiangTouying:
   UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires\
     \ à ajouter à la main. elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
     \ de 1, 2, 3, 4 et 5."
+  FlavorText: '"...Moteur, action !"'
 OutInGap:
   Description: Choisissez l'une des {Value1} cartes aléatoires de |p:n'importe quelle
     couleur| à ajouter à la main. Elle |coûte temporairement| {Mana} et a |Exil| et
@@ -268,6 +270,8 @@ UpgradePotion:
     \ instables|'} à la défausse.\nLorsque {PlayerName} finit son tour, augmentez\
     \ les dégâts de toutes les |Potions instables| de la pioche et des piles de défausse\
     \ de {Value1}."
+  FlavorText: '"Chauffage, distillation, réaction, catalyse, si vous voulez gagner
+    une bataille de danmaku, vous devez être bien préparé !"'
 OpenUniverse:
   Name: Univers Ouvert
   Description: "Retirez une carte de la pioche du combat.\nAjoutez-en 2 |copies| à\
@@ -289,6 +293,8 @@ FinalSpark:
   UpgradedDescription: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque\
     \ ennemi.\nLorsque {PlayerName} entre en |Saturation|, renvoyez cette carte de\
     \ la pile de défausse à la main."
+  FlavorText: "\"La chose la plus importante dans un combat c'est la puissance de\
+    \ feu !\""
 HuoliQuankai:
   Name: Pleine Puissance
   UpgradedDescription: "En mode |Saturation|, les |Attaques| jouées par {PlayerName}\
@@ -312,9 +318,12 @@ StarlightTaifengSummoner:
     \ dépensé :| La carte ajoutée inflige des dégâts une fois supplémentaire.\n|Pour\
     \ chaque <sprite=\"ManaSprite\" name=\"R\"> dépensé :| Augmentez les dégâts de\
     \ la carte ajoutée de {Value1}."
+  FlavorText: Accumulez du mana pendant mille jours, utilisez ce mana en un instant.
 StarlightTaifeng:
   Name: Typhon Étoilé
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.
+  FlavorText: "\"Le coup final ! Attendez, laissez-moi voir ce qu'est cet effet appelé\
+    \ \"Dégâts limités\"...\""
 FindCollection:
   Name: Assistance à Distance
   Description: Choisissez une parmi {Value1} cartes aléatoires que {PlayerName} ne
@@ -345,6 +354,8 @@ ChargingToMana:
   Name: Conversion de Charge
   Description: Perdez toutes vos |Charges|. Pour chaque |Charge| perdue de cette manière,
     gagnez {Mana} et piochez une carte.
+  FlavorText: Ne serait-il pas agréable de combattre sous la forme bleue au début
+    ?
 MoguMaster:
   Name: Spécialiste des Champignons
   Description: Choisissez {Value2} parmi {Value1} |Champignons| aléatoires à ajouter
@@ -394,6 +405,9 @@ DanceAroundLake:
   Name: Danse au Bord du Lac
   Description: À chaque fois qu'une carte est |Exilée|, piochez {Value1:plural one='%
     carte' other='% cartes'}.
+  FlavorText: J'ai été le premier à me lever et j'ai été enivré pendant longtemps
+    par la danse impitoyable et agressive. Peu de temps après, il a commencé à pleuvoir,
+    et quand j'ai repris mes esprits, la prêtresse était introuvable.
 Qingshan:
   Name: Dernière Demeure
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Quand\
@@ -448,6 +462,7 @@ RedLaser:
   Name: Laser Inflammable
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
     \ {Value2} :| Infligez les dégâts deux fois à la place."
+  FlavorText: Un des gestes pour faire face à la période hivernale.
 Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
@@ -462,6 +477,8 @@ DropBook:
   Name: Rébellion Orthodoxe
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
     \ |{Value1:plural one='% Astrologie' other='% Astrologies'}| à la main."
+  FlavorText: "\"Je ne suis pas intéressée par la magie traditionnelle, s'il vous\
+    \ plaît, ne revenez pas !\""
 MarisaDraw:
   Name: Improvisation
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nSi {PlayerName}\
@@ -472,6 +489,7 @@ DarkSatellite:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi la dernière\
     \ carte jouée ce combat était noire, piochez {Value1:plural one='% carte' other='%\
     \ cartes'}."
+  FlavorText: Utilisez des balles pour contrôler les balles !
 ReadyForBurst:
   Name: Prêt à Saturer
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
@@ -555,14 +573,19 @@ PoisonPotion:
   Description: "Les |Potions Instables| appliquent également {Value1} |Poison| lorsqu'elles\
     \ sont utilisées.\nAjoutez {Value2:plural one='% |Potion Instable|' other='% |Potions\
     \ Instables|'} à la pioche."
+  FlavorText: Ajoutez un peu de champignons et un peu de vieille chaussure.
 PotionJungle:
   Name: Forêt Fluorescente
   Description: Lorsque {PlayerName} finit son tour, ajoutez {Value1:plural one='%
     |Potion Instable|' other='% |Potions Instables|'} à la défausse.
+  FlavorText: La potion explosive nourrissait la croissance des matières premières
+    et réalisait ainsi la circulation interne du pouvoir magique.
 AccuracyLaser:
   Name: Laser Directionnel
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     |Lorsque retenue :| Cette carte coûte {Mana} de moins ce combat."
+  FlavorText: "\"Vous pensiez que j'allais tirer avec un laser non directionnel ?\
+    \ N'importe quoi !\""
 CollectionDefense:
   Name: Trop Gros pour Échouer
   Description: Gagnez un |Bouclier| égal au nombre de cartes dans la pioche. ({Block})
@@ -577,6 +600,9 @@ MarisaEat:
     |d:Début :| Gagnez {Value2} point{Value2:plural one='' other='s'} de vie."
   Description: "Gagnez {Value1} |Concentration{Value1:plural one='' other='s'}|.\n\
     |Début :| Gagnez {Value2} point{Value2:plural one='' other='s'} de vie."
+  FlavorText: Le "plateau de champignons" acheté pour la "soirée fondue au sanctuaire
+    Hakurei" est cultivé par Marisa elle-même, et il a été secrètement préparé à travers
+    plusieurs processus, il n'y a donc absolument aucun problème de sécurité alimentaire.
 BurstDraw:
   Name: Duel de Vitesse
   Description: Chaque fois que {PlayerName} entre en |Saturation|, piochez {Value1:plural
@@ -596,6 +622,8 @@ ThrowBigStar:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     |Surcharge {Value2} :| Infligez autant de dégâts à chaque ennemi deux fois à la\
     \ place."
+  FlavorText: '"Bienvenue à la gare de la ferraille. Ce mois-ci, "ThrowingSta" chanté
+    par Marisa Kirisame a de nouveau dominé le palmarès de la musique pop de Gensokyo..."'
 FireUpBagualu:
   Name: Allumage du Four
   Description: "Gagnez {Value1} |Charge{Value1:plural one='' other='s'}|.\nGagne {Value2}\
@@ -743,6 +771,8 @@ HuaBlock:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
     \ {Value1} |Puissance Temporaire|."
   Name: Position de Combat
+  FlavorText: La haine d'Inubashiri Momiji est très stable et les monstres de la Montagne
+    des Youkais se précipitent pour l'attirer dans l'équipe.
 MeilingBlock:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et {Shield}\
     \ |Barrière{Shield:plural one='' other='s'}|.\nCette carte est affectée par |Puissance|."
@@ -808,6 +838,9 @@ TiangouOrder:
     \ que cet ennemi subit des dégâts d'attaque, {PlayerName} gagne {Value1} |Bouclier{Value1:plural\
     \ one='' other='s'}|."
   Name: Décret du Grand Tengu
+  FlavorText: Iizunamaru perçoit les points douloureux du développement de la danse
+    moderne à partir de la logique sous-jacente de la constellation et complète l'itération
+    de la danse populaire en Tengu.
 LanCard:
   Description: Choisissez 1 parmi {Value1} cartes inhabituelles aléatoires à ajouter
     à la main. Elle |coûte temporairement|{Mana} et a |Exil| et |Éthéré|.
@@ -822,6 +855,8 @@ SijiCard:
     de statut, |Exilez|-la. Sinon, elle coûte {Mana} de moins ce combat et peut être
     |Retenue| une fois.
   Name: Jugement en Noir et Blanc
+  FlavorText: La décision de payer ou non après un repas est une base importante pour
+    l’arbitrage.
 QingeUpgrade:
   Name: Ruse de la Méchante Ermite
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulser\
@@ -1028,6 +1063,7 @@ TimeWalk:
   Name: Marches du Temps
   ExtraDescription1: "|d:Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.|\n\
     Les |Marches du Temps| perdent tous leurs effets pour le reste du combat."
+  FlavorText: Bien que le coût ait été nerfé, ça restait trop fort.
 SpecialClock:
   FlavorText: 'Temps de nettoyage du salon : 0,4 seconde'
   Name: Astuces de Domestique
@@ -1124,6 +1160,7 @@ PlayWithWater:
   Name: Jeux Aquatiques
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nDéfaussez\
     \ une carte."
+  FlavorText: Play with water.
 NitoriUnderWater:
   Name: Couverture Aquatique
   Description: Gagnez {Value1} |Camouflage{Value1:plural one=' Optique' other='s Optiques'}|.
@@ -1136,6 +1173,8 @@ LeidiBlizzard:
   Name: Froid Persistant
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     Applique {Value1} |Gelure| à chaque ennemi."
+  FlavorText: L'hiver arrive. L'hiver est arrivé. Combattez à nouveau l'hiver. Retour
+    à l'hiver.
 SeeFengshui:
   Name: Manipulation Feng Shui
   Description: "Lorsque {PlayerName} débute son tour, |Sonde| {Value1}.\nChaque fois\
@@ -1172,6 +1211,7 @@ RumiaBlock:
   Name: Voile d'Ombre
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
     \ une |Ombre| à la main."
+  FlavorText: Si vous ne le voyez pas, cela signifie  0  dégâts.
 YuyukoDebuff:
   Name: Rêve sans Vie
   Description: Appliquez {Value1} |Faible| et |Vulnérable|.
@@ -1186,11 +1226,14 @@ SatoriAttack:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     |Instinct :| Si un ennemi a l'intention d'attaquer, gagnez {Block} |Bouclier{Block:plural\
     \ one='' other='s'}|."
+  FlavorText: Il est similaire au "Cœur" populaire dans le monde extérieur.
 MystiaSing:
   Description: "Appliquez {Value1} |Réduction Temporaire de Puissance| à chaque ennemi.\n\
     Gagnez {Value1} <sprite=\"Point\" name=\"Power\">.\nAjoutez {Value2} |Ombre{Value2:plural\
     \ one='' other='s'}| à la défausse."
   Name: Chant du Moineau Nocturne
+  FlavorText: Les moineaux de nuit peuvent-ils chanter comme des trompettes et des
+    réchauds à gaz ?
 SatoriMemory:
   Name: Souvenirs Profonds
   Description: "Choisissez 1 carte parmi {Value1} au hasard dans la pile de défausse\
@@ -1216,6 +1259,8 @@ BailianBlack:
   Name: Embrasser les Ténèbres
   Description: "À chaque fois qu'une carte non-attaque non-pouvoir est jouée, |Exilez|-la.\n\
     Ces cartes coûtent {Mana} ce combat."
+  FlavorText: La sorcellerie a été lue, et le Bouddha l'a gardée dans son cœur. Si
+    le monde apprend de moi, c'est comme entrer dans la voie d'un démon.
 YinglangHowl:
   Name: Hurlement de Pleine Lune
   Description: Appliquez {Value1} |Réduction Temporaire de Puissance| et {Value2}
@@ -1224,6 +1269,8 @@ RemiliaJizao:
   Name: Impatience
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nAucune autre\
     \ carte ne peut être piochée ce tour-ci."
+  FlavorText: "\"Si le prochain tirage est \"Bijoux fantaisie\", je vais en faire\
+    \ tout un plat !\"\n- Amusement du vendredi soir"
 LeiguAttack:
   Name: Basse de Taiko
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -1296,6 +1343,8 @@ YukariBox:
   Description: "|Sonde| {Scry}.\nPiochez {Value1:plural one='% carte' other='% cartes'}.\n\
     Mélangez la pile de défausse dans la pioche."
   Name: '"Cadeaux" Donnés'
+  FlavorText: La vie est comme une dérive dans la faille, vous ne savez jamais ce
+    qui va tomber ensuite.
 NueExile:
   Name: Nuages Sombres Heian
   Description: "|Exilez| une carte de la main.\nAjoutez une carte aléatoire à la main.\
@@ -1417,6 +1466,7 @@ FangxiangHeal:
   Description: "|Exilez| {Value1} carte{Value1:plural one=' aléatoire' other='s aléatoires'}\
     \ de la pile de défausse. Gagnez {Value2} point{Value2:plural one='' other='s'}\
     \ de vie pour chaque carte exilée de cette manière."
+  FlavorText: '"Est-ce que ses mains ne seront pas douloureuses ?"'
 HehuanAttack:
   Name: Fou de Machette
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -1456,7 +1506,7 @@ RuowujiCard:
     U\"> dépensé :| Gagnez <sprite=\"ManaSprite\" name=\"G\">.\n|Pour chaque <sprite=\"\
     ManaSprite\" name=\"G\"><sprite=\"ManaSprite\" name=\"G\"> dépensé :| Gagnez <sprite=\"\
     ManaSprite\" name=\"U\">."
-  Name: Ondes à échelle inversée
+  Name: Ondes à Échelle Inversée
 KanakoWalk:
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'} et |Exilez|\
     \ toutes les cartes de Statut et les cartes de Malheur piochées.\nTerminez le\
@@ -1471,6 +1521,9 @@ PaluxiCurse:
     \ {Value1} |Faible| et |Vulnérable|.\nAjoutez un |Malheur| aléatoire à la défausse.\
     \ |d:(Il ne restera pas dans la bibliothèque après ce combat.)|"
   Name: Retour de Rancune
+  FlavorText: À 2 h 30 aujourd'hui, Mizuhashi Parsee a été arrêtée sur place par la
+    femme de chambre de service alors qu'elle visitait un sanctuaire en violation
+    des règlements.
 ZoufangSnake:
   Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nChoisissez\
     \ 1 parmi {Value2} cartes de pouvoir neutres rares aléatoires à ajouter à la main.\
@@ -1486,6 +1539,7 @@ TodayYesterday:
 FakeHuiye:
   Description: "|d :Cette carte est actuellement en cours de développement.\nVeuillez\
     \ revenir dans une future mise à jour !|"
+  Name: (Pseudo) histoire de bambou
 AttackWithEveryColor:
   Description: "|Pour chaque mana de couleur différente dépensé :| Inflige {Damage}\
     \ dégât{Damage:plural one='' other='s'}."
@@ -1505,6 +1559,9 @@ RandomShoot:
 ToolHeal:
   Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.\n|Limité【{DeckCounter}】|"
   Name: Nourriture en Boîte
+  FlavorText: Pendant la période de mue, il n'est pas pratique de sortir, il doit
+    donc y avoir des kappa se précipitant au supermarché, pour acheter du jade shiriko
+    en conserve.
 ToolBlock:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Limité【{DeckCounter}】|"
   Name: Bouclier Balistique
@@ -1512,6 +1569,9 @@ ToolMicai:
   Description: "Gagnez {Value1} |Camouflage{Value1:plural one=' Optique' other='s\
     \ Optiques'}|.\n|Limité【{DeckCounter}】|"
   Name: Camouflage Optique
+  FlavorText: "\"Lorsque vous portez ce produit, veuillez ne pas participer à des\
+    \ activités susceptibles de mettre en danger votre sécurité personnelle, telles\
+    \ que le saut à l'élastique en haute altitude\""
 ToolFirstAid:
   Description: "Supprimez tous les Malus sur {PlayerName}.\nGagnez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie.\n|Limité【{DeckCounter}】|"
@@ -1519,6 +1579,8 @@ ToolFirstAid:
 ToolExile:
   Description: "|Exilez| n'importe quel nombre de cartes de la main.\n|Limité【{DeckCounter}】|"
   Name: Robot Nettoyeur
+  FlavorText: C'est une balayeuse intelligente qui balaie la poussière de la maison
+    en criant "Élimination ! Élimination !"
 ToolInvincible:
   Description: "Gagnez |Perfection| pendant {Value1} tour{Value1:plural one='' other='s'}.\n\
     |Limité【{DeckCounter}】|"
@@ -1531,6 +1593,8 @@ VampireShoot2:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
     \ point{Value1:plural one='' other='s'} de vie."
   Name: Pluie du Démon
+  FlavorText: "\"Je peux boire le sang même avec un bouclier !\"——Le prix à payer\
+    \ pour devenir membre d'une famille de vampires est la gingivite"
 WanderingSoul:
   Description: "Gagnez |Perfection| pendant {Value1} tour{Value1:plural one='' other='s'}.\n\
     Cette carte est encore en développement.\nVeuillez vous attendre à une future\
@@ -1539,15 +1603,34 @@ WanderingSoul:
 NewsPositive:
   Description: "Gagnez {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limité【{DeckCounter}】|"
   Name: Nouvelles Positives
+  FlavorText: "[Des nouvelles! #Reimu enquête sur le vol de merveilles#] Le journaliste\
+    \ de notre journal au pavillon Eientei a rapporté qu'à 21h00 heure locale, le\
+    \ trésor secret de la branche de jade de Hourai exposé à la 11e exposition mensuelle\
+    \ de merveilles a été mystérieusement volé. Il est rapporté que la prêtresse Hakurei\
+    \ Reimu du sanctuaire Hakurei…"
 NewsNegative:
   Description: "Perdez {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limité【{DeckCounter}】|"
   Name: Nouvelles Négatives
+  FlavorText: "... est partie à la recherche du vrai coupable qui a volé la branche\
+    \ de jade. Avant que Reimu ne soit invité en tant qu'exposante cette fois-ci,\
+    \ il a été révélé que le sanctuaire Hakurei traversait une crise financière profonde\
+    \ et que ses dépenses quotidiennes n'étaient pas viables. Pendant ce temps, les\
+    \ organisateurs de l'exposition…"
 NewsEntertainment:
   Name: Nouvelles Divertissantes
   Description: "Piochez des cartes jusqu'à ce que la main soit pleine.\n|Limité【{DeckCounter}】|"
+  FlavorText: "... Houraisan Kaguya a déclaré aux journalistes que les organisations\
+    \ ou les habitants de Gensokyo qui fourniraient des indices valables seraient\
+    \ récompensés par des poupées de lapin lunaire en édition limitée. S'adressant\
+    \ à notre journaliste, une sorcière bien connue qui ne voulait pas être nommé…"
 NewsTidbit:
   Description: "Gagnez {Value1} |Verrouillé|.\n|Limité【{DeckCounter}】|"
   Name: Potins
+  FlavorText: "... a révélé que le voyage de Reimu n'était pas seulement lié à des\
+    \ considérations financières, mais également à sa relation personnelle étroite\
+    \ avec Kaguya. Il est rapporté que Reimu entre et sort souvent du Pavillon de\
+    \ l'Éternité, et des images de son comportement intime avec Kaguya sortent également\
+    \ fréquemment. (Lecture d'un client du journal)"
 EmpCard:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} d'|Attaque|\
     \ .\nSi la cible est un |drone|, il ne peut pas agir pendant {Value1} tours.\n\
@@ -1639,6 +1722,8 @@ FlanBlack:
   Name: Diabolisation
   Description: "|d :Cette carte est actuellement en cours de développement.\nVeuillez\
     \ revenir dans une future mise à jour !|"
+  FlavorText: Portant le nom de U.N. Owen, la fille qui a abandonné tout le monde
+    pour se battre ~
 JunkoNightmare:
   Name: Cauchemar Tremblant
   Description: "|d :Cette carte est actuellement en cours de développement.\nVeuillez\
@@ -1646,9 +1731,11 @@ JunkoNightmare:
 Shoot:
   Name: Tir
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
+  FlavorText: Les danmakus que l'on peut voir partout à Gensokyo.
 Boundary:
   Name: Frontière
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+  FlavorText: Elle est de la même essence que la Grande Barrière.
 WManaCard:
   Name: Éclat
   Description: Gagnez {Mana}.
@@ -1689,34 +1776,52 @@ ToolAmulet:
 ToolMana:
   Name: Boisson Énergisante
   Description: "Gagnez {Mana}.\n|Limité【{DeckCounter}】|"
+  FlavorText: Insistez pour utiliser les concombres fraîchement pressés de Kawashiro
+    Nitori. "J'en bois depuis que je suis enfant." - Hijiri Byakuren
 ToolUpgrade:
   Description: "|Améliorez| chaque carte de la main jusqu'à la fin du combat.\n|Limité【{DeckCounter}】|"
   Name: Disquette
+  FlavorText: "Tant qu'elle est insérée dans le cerveau, de puissantes capacités peuvent\
+    \ y être lues. La question est : comment l'insérer ?"
 ToolRandomTool:
   Description: "Choisissez 1 parmi {Value1} cartes |Outil| aléatoires à ajouter à\
     \ la main. Elle a |Limité【1】|.\n|Limité【{DeckCounter}】|"
   Name: Talkie-walkie Tactique
+  FlavorText: " \"Ici \"USS Palanquin Divin\", le largage de la nacelle d'approvisionnement\
+    \ est prêt !\""
 VampireShoot1:
   Name: Tir de Démon
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
     \ point{Value1:plural one='' other='s'} de vie."
+  FlavorText: '"Je peux aussi sucer le sang !"'
 RabbitFoot:
   Name: Patte de Lapin Porte-bonheur
   Description: "|À la fin du combat :| Si cette carte n'est pas |Exilée|, gagnez {Value1}\
     \ <sprite=\"Point\" name=\"Gold\">."
+  FlavorText: Si vous obtenez une patte de lapin, vous deviendrez chanceux... En fait,
+    c'est la personne chanceuse qui peut obtenir une patte de lapin.
 GainTreasure:
   Name: Pluie d'Or
   Description: Gagnez {Value1} <sprite="Point" name="Gold">.
+  FlavorText: "\"Pensez-vous que l'utilisation de l'argent comme récompense a nui\
+    \ à la belle intention originale du Duel de Cartes Sort ? Ne vous inquiétez pas,\
+    \ la technologie X block chain vous aidera à résoudre votre problème d'argent\
+    \ de manière plus civilisée.\""
 ArtificialJewellery:
   Name: Bijou Artificiel
   Description: Gagnez 1 mana aléatoire.
   UpgradedDescription: Gagnez {Mana}.
+  FlavorText: Bien que leur valeur réelle soit bien inférieure à leur prix, les bijoux
+    ont toujours un effet spirituel qui ne peut être mesuré en argent.
 Xiaozhuo:
   Name: Pompette
   Description: "Gagnez {Value1} |Puissance Temporaire|.\n"
+  FlavorText: Vous êtes ivre, une occasion se présente pour l'ennemi.
 LilyoftheValley:
   Name: Muguet
   Description: "Gagnez {Mana}.\n|Limité【{DeckCounter}】|"
+  FlavorText: Le muguet sous la garde de Medicine contenait parfois un pouvoir magique,
+    mais le plus souvent il contenait du poison.
 WolfFur:
   Name: Fourrure de Loup
   Description: '|Limité【{DeckCounter}】|'
@@ -1780,9 +1885,13 @@ SkyWater:
 ToolDraw:
   Name: Sac à Dos Rempli
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\n|Limité【{DeckCounter}】|"
+  FlavorText: '"Cher utilisateur, après avoir ouvert le sac à dos, assurez-vous de
+    dire en silence ce que vous voulez emporter——"'
 ToolWeak:
   Name: Flash d'Appareil Photo
   Description: "Appliquer {Value1} |Faible|.\n|Limité【{DeckCounter}】|"
+  FlavorText: "\"Kappa Select & Co. promet que ce flash portable rétro n'aura aucun\
+    \ effet secondaire époustouflant et accélérant le vieillissement.\""
 ToolMaxHp:
   Name: Concombre Croquant
   Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum.\n\
@@ -1905,6 +2014,9 @@ LilyAttack:
     \ ennemis.\nAjoutez |Héraut de Lily White| à votre main."
 GatherFairy:
   Name: Assemblée de Fées
+  Description: Piochez {Value1} carte{Value1:plural one='' other='s'} avec un coût
+    supérieur à 2, {Value1:plural one='son coût' other='leur coût'} sera temporairement
+    réduit de 1 et {Value1:plural one='elle sera |Retenue|' other='elles seront |Retenues|'}.
 Jubin:
   Name: Brise Iceberg
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -1972,3 +2084,9 @@ FairySupportDaiyo:
   Description: "|Soutien Fée| : augmente les dégâts d'une carte d'attaque de base\
     \ dans la pioche de {Valeur1}. (Sinon, choisissez la carte d'attaque de base de\
     \ la pioche ou de la défausse)"
+Danmaku10Morph:
+  Name: Transformation Tanuki
+  Description: "Choisissez 1 Transformation de Tir et ajoutez-la à votre main. Vous\
+    \ obtiendrez l'un des effets suivants :\nGagnez  4  points de vie maximale ;\n\
+    Gagnez  4  |Esquives| ;\nObtenez  50  <sprite=\"Point\" name=\"Gold\"> ;\nGagne\
+    \  3  |Puissance|."
