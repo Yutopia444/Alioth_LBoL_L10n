@@ -70,6 +70,7 @@ Misfortune:
   Name: Infortune
   Description: "|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie pour chaque 100 <sprite=\"Point\" name=\"Gold\"> possédés."
+  FlavorText: '"Ces choses extérieures sont la source de votre malheur."'
 Jinfuzhen:
   Name: Bordure Imposée
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi {PlayerName}\
@@ -84,7 +85,7 @@ YinyangBaoyu:
 ZhujiThreeGod:
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nGagnez {Value2}\
     \ |Puissance temporaire| pour chaque carte d'attaque et {Value2} |Esprit temporaire|\
-    \ pour chaque carte de défense tirée de cette façon."
+    \ pour chaque carte de défense piochée de cette façon."
   Name: Trois Dieux de Sumiyoshi
 LingfuHuti:
   Name: Protection Talismanique
@@ -185,7 +186,7 @@ HuanxiangTouying:
     \ de 1, 2 et 3."
   Name: Trace Activée
   UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires\
-    \ à ajouter à la main. elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
+    \ à ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
     \ de 1, 2, 3, 4 et 5."
   FlavorText: '"...Moteur, action !"'
 OutInGap:
@@ -250,7 +251,7 @@ HuijuQiankun:
     \ à la main. Elle inflige {Value1} dégâts supplémentaires pour chaque carte |Exilée|\
     \ ainsi."
 ReimuInstant:
-  Name: '"Sceau de Rêve -Cligne-"'
+  Name: '"Sceau de Rêve -Instantané-"'
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nFin du tour.\
     \ Ensuite, {PlayerName} joue un tour supplémentaire.\n|Limite de temps| {Mana}."
 BoliPhantom:
@@ -1639,13 +1640,19 @@ EmpCard:
 AyaNewsSakuyaSp:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
   Name: Bunbunmaru - Spécial Sakuya
+  FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
+    potins sur {PlayerName}.
 AyaNewsKoishiSp:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
   Name: Bunbunmaru - Spécial Koishi
+  FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
+    potins sur {PlayerName}.
 Riguang:
   Description: "|En main :| À la fin du tour, {PlayerName} subit {Value1} dégât{Value1:plural\
     \ one='' other='s'}."
   Name: Lumière Solaire Réfractée
+  FlavorText: Ne regardez jamais directement le soleil, surtout si vous utilisez un
+    télescope.
 BlackResidue:
   Name: Résidu Sombre
   Description: "|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural\
@@ -1654,6 +1661,7 @@ Wushuai:
   Description: '|Lorsque piochée :| Gagnez {Value1} |Verrouillé| et |Exilez| cette
     carte.'
   Name: Épée Brillante
+  FlavorText: '"Voyez, votre étoile de la mort brille dans le ciel !"'
 Chunguang:
   Description: '|Lorsque pioché :| |Purifie| {Valeur1}.'
   Name: Éclat Pur
@@ -1661,6 +1669,8 @@ Bribery:
   Description: "Payez {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nMegumu abandonnera\
     \ plus facilement ce combat."
   Name: Corruption
+  FlavorText: "\"C'est bien d'être riche ? L’argent peut-il rendre les hommes miséricordieux\
+    \ ? L'observation des humains est fascinante~\""
 Nightmare:
   Description: "Lorsqu'il y a un total de {Value1} |Cauchemars| dans la main, la pioche\
     \ et la pile de défausse, {PlayerName} perd la partie.\nIl y a actuellement un\
@@ -1670,14 +1680,23 @@ Nightmare:
     la pioche et la pile de défausse, {PlayerName} perd la partie.
 BefuddledLife:
   Name: Embrouille
+  FlavorText: "Il y a des rumeurs sur la plate-forme d'information mobile construite\
+    \ par une Tengu dans le village humain. Les utilisateurs ont dit l'un après l'autre\
+    \ : \"Ce n'est pas grave de regarder le téléphone et d'y faire défiler les informations,\
+    \ ça occupe la journée.\""
 XiaosanJingxia:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Faible|.'
   Name: Peur
+  FlavorText: Récemment, Kogasa Tatara a essayé de regarder des films d'horreur du
+    monde extérieur pour réfléchir à des compétences effrayantes. On dit que le film
+    classique "shy Ning" lui fait très peur.
 BuyPeace:
   Description: "|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} <sprite=\"\
     Point\" name=\"Gold\">, gagnez {Value2} point{Value2:plural one='' other='s'}\
     \ de vie."
   Name: Faillite
+  FlavorText: "\"Si vous n'avez pas d'argent, vous ne souffrirez pas de malheur financier,\
+    \ n'est-ce pas ?\""
 SweetPoison:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Poison|.'
   Name: Doux Poison
@@ -1686,6 +1705,8 @@ YuyukoMisfortune:
   Description: "|En main :| À chaque fois que {PlayerName} joue une carte, elle perd\
     \ {Value1} point{Value1:plural one='' other='s'} de vie."
   Name: Esprit Affamé
+  FlavorText: Je me demande souvent, si une personne perd la "capacité de mourir",
+    peut-elle encore être considérée comme un être humain ?
 FanzhuanChongdong:
   Description: "|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie si aucune vie n'a été gagnée ce tour-ci."
@@ -1829,29 +1850,40 @@ AyaNews:
   Name: Journal Bunbunmaru
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'} à un ennemi
     aléatoire.
+  FlavorText: Un journal tengu qui publie toutes sortes de potins.
 HatateNews:
   Name: News de Kakashi l'Esprit
+  FlavorText: Un journal tengu avec une photo à la une.
 AyaNewsReimuSp:
   Name: Bunbunmaru - Spécial Reimu
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
+    potins sur {PlayerName}.
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Spécial Marisa
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
+    potins sur {PlayerName}.
 AyaNewsCirnoSp:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
   Name: Bunbunmaru - Spécial Cirno
+  FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
+    potins sur {PlayerName}.
 Yueguang:
   Name: Clair de Lune Calme
   Description: '|Lorsque pioché :| perdez {Value1} mana aléatoire.'
 Xingguang:
   Name: Lumière des Étoiles Glamour
+  FlavorText: La lumière des étoiles tachetée a perturbé les pensées de {PlayerName}.
 Xuanguang:
   Name: Éblouissement
+  FlavorText: '{PlayerName} est étourdi par les lumières vives du tir.'
 SakuyaLock:
   Name: Verrouillage du Temps
   Description: "Déclenche | Blocus d'argent |.\n( {PlayerName} subit {Value1} dégât{Value1:plural\
     \ one='' other='s'} d'attaque. )"
   NonbattleDescription: Déclenche | Blocus d'argent |.
+  FlavorText: "\"Laissez mon futur moi s'inquiéter du volume sanguin.\""
 LoveLetter:
   Description: Donnez-le à la <color=#eab8bf>Fille en Mal d'Amour</color>, elle sera
     heureuse.
@@ -1870,8 +1902,12 @@ Drunk:
     ({Count:plural one='% carte jouée' other='% cartes jouées'} ce tour.)"
   NonbattleDescription: '|En main :| Seules {Value1} cartes peuvent être jouées à
     chaque tour.'
+  FlavorText: Pour les yôkais qui ne sont pas satisfaits des règles des Cartes Sorts,
+    une oni a spécialement formulé les règles du « duel à boire » pour perpétuer la
+    culture traditionnelle de la beuverie à Gensokyo.
 Zhukeling:
   Name: Ordonnance d'Expulsion
+  FlavorText: '"Vous êtes un invité indésirable, reconsidérez votre position."'
 YoumuSakura:
   Name: Cerisier Scintillant
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nInflige\
@@ -1900,12 +1936,17 @@ Payment:
   Name: Transfert de Fonds
   Description: "Payez {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nLe Lapin Farceur\
     \ part immédiatement."
+  FlavorText: L'organisateur de l'Exposition de la Métropole Lunaire vous rappelle
+    de ne faire confiance à aucune demande d'argent, de transfert d'argent ou de remise
+    au nom de la fourniture d'indices.
 MarisaForget:
   Name: Oubli
   Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Fragile|.'
+  FlavorText: "\"Est-ce que j'ai éteint le gaz quand je suis sorti aujourd'hui ?\""
 Yuebiao:
   Name: Paysage Lunaire
   Description: '|Lorsque piochée :| Purifie {Valeur1}.'
+  FlavorText: Nulle part où vivre.
 DeepForest:
   Name: Profondeurs de la Forêt
   Description: Aucun effet.
