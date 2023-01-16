@@ -1,70 +1,79 @@
 AttackIntention:
-  AccurateMultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:d}
-    {Times:plural one=''% раз'' other=''% раза''}. |Точность|'
+  AccurateMultiDamageDescription: '{OwnerName} собирается атаковать {PlayerName:d},
+    нанеся {Damage} урона {Times:plural one=''% раз'' many=''% раз'' other=''% раза''}.
+    |Точность|'
   Name: Атака
-  Description: '{OwnerName} нанесёт {Damage} урона {PlayerName:d}.'
-  MultiDamageDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:d} {Times:plural
-    one=''% раз'' other=''% раза''}.'
-  AccurateDescription: '{OwnerName} нанесёт {Damage} урона {PlayerName:a}. |Точность|'
+  Description: '{OwnerName} собирается атаковать {PlayerName:d}б, нанеся {Damage}
+    урона .'
+  MultiDamageDescription: '{OwnerName} собирается атаковать {PlayerName:d}, нанеся
+    {Damage} урона {Times:plural one=''% раз'' many=''% раз'' other=''% раза''}.'
+  AccurateDescription: '{OwnerName} собирается атаковать {PlayerName:a}, нанеся {Damage}
+    урона . |Точность|'
 AddCardIntention:
-  Description: '{OwnerName} намеревается добавить вам карты |Статуса| с отрицательными
+  Description: '{OwnerName} собирается замешать вам карты |Статуса| с негативными
     эффектами.'
   Name: Статус
 DefendIntention:
-  Description: '{OwnerName} накладывает |Защиту| или |Барьер| на одного или нескольких
-    врагов.'
-  Name: Защита
+  Description: '{OwnerName} собирается наложить |защитный эффект| на одного или нескольких
+    своих союзников.'
+  Name: Оборона
 StunIntention:
-  Description: '|d: {OwnerName} не может действовать в этоv ходу.|'
+  Description: '{OwnerName} оглушён и пропускает этот ход.'
   Name: Оглушение
 ExplodeAllyIntention:
-  Description: '{OwnerName} |Взорвёт| врага с меньшим здоровьем.'
+  Description: '{OwnerName} собирается |взорвать| врага с наименьшим количеством здоровья.'
   Name: Детонация
 PositiveEffectIntention:
-  Name: Баф
-  Description: '{OwnerName} накладывает |положительный эффект| на одного или нескольких
-    врагов.'
+  Name: Позитивный эффект
+  Description: '{OwnerName} собирается наложить |позитивный эффект| на одного или
+    нескольких своих союзников.'
 NegativeEffectIntention:
-  Name: Дебаф
-  Description: '{OwnerName} накладывает |отрицательный эффект| на {PlayerName:a}.'
+  Name: Негативный эффект
+  Description: '{OwnerName} собирается наложить |негативный эффект| на {PlayerName}.'
 GrazeIntention:
-  Name: Уворот
-  Description: '{OwnerName} накладывает |Уворот| на одного или нескольких врагов.'
+  Name: Уклонение
+  Description: '{OwnerName} собирается наложить |Уклонение| на одного или нескольких
+    своих союзников.'
 SpawnIntention:
   Name: Призыв
-  Description: '{OwnerName} призовёт дополнительных врагов в битву.'
+  Description: '{OwnerName} собирается |призвать| дополнительных врагов в битву.'
 SleepIntention:
   Name: Сон
-  Description: '|d:{OwnerName} в данный момент находиться в царстве снов. Zzz...|'
+  Description: '{OwnerName} находится в царстве снов. |d:Zzz...|'
 EscapeIntention:
   Name: Побег
-  Description: '{OwnerName} намеревается |сбежать|.'
+  Description: '{OwnerName} собирается |сбежать|.'
 ExplodeIntention:
   Name: Детонация
-  Description: '{OwnerName} намеревается |Взорваться|, нанеся {Damage} урона.'
+  Description: '{OwnerName} собирается |взорваться|, нанеся {Damage} урона.'
 CountDownIntention:
   Name: Отсчёт
-  Description: '{OwnerName} активирует свою |Карту Заклинания| через {Counter} ходов.'
+  Description: '{OwnerName} собирается активировать свою |спелл-карту| через {Counter}
+    {Counter:plural one=''% ход'' few=''% хода'' many=''% ходов'' other=''% ходов''}.'
 ChargeIntention:
-  Description: '{OwnerName} собирается с силами, чтобы сделать |мощный ход|.'
+  Description: '{OwnerName} собирается с силами...'
   Name: Подготовка
 HealIntention:
-  Name: Лечение
-  Description: '{OwnerName} |Восполнит| здоровье одному или нескольким врагам.'
+  Name: Исцеление
+  Description: '{OwnerName} собирается |восполнить| здоровье одному или нескольким
+    своим союзникам.'
 RepairIntention:
   Name: Починка
-  Description: '{OwnerName} |Восполнит| здоровье одному или нескольким врагам.'
+  Description: '{OwnerName} собирается |восполнить| здоровье одному или нескольким
+    своим союзникам.'
 SpellCardIntention:
-  Name: Спеллкарта
-  DamageDescription: '{OwnerName} активирует свою |Спеллкарту| нанеся {Damage} урона
-    {PlayerName:a}.'
-  Description: '{OwnerName} активирует свою |Спеллкарту|.'
-  MultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся {Damage}
-    урона {PlayerName:a} {Times} раз.'
-  AccurateDamageDescription: '{OwnerName} активирует свою |Спелл Карту|, нанеся {Damage}
-    урона {PlayerName:a}. |Точность|'
-  AccurateMultiDamageDescription: '{OwnerName} активирует свою |Спеллкарту|, нанеся
-    {Damage} урона {PlayerName:a} {Times} раз. |Точность|'
+  Name: Спелл-карта
+  DamageDescription: '{OwnerName} собирается активировать свою |спелл-карту|, нанеся
+    {Damage} урона {PlayerName:a}.'
+  Description: '{OwnerName} собирается активировать свою |спелл-карту|.'
+  MultiDamageDescription: '{OwnerName} собирается активировать свою |спелл-карту|,
+    нанеся {Damage} урона {PlayerName:a} {Times} {Times:plural one=''% раз'' few=''%
+    раза'' many=''% раз'' other=''% раза''}.'
+  AccurateDamageDescription: '{OwnerName} собирается активировать свою |спелл-карту|,
+    нанеся {Damage} урона {PlayerName:a}. |Точность|'
+  AccurateMultiDamageDescription: '{OwnerName} собирается активировать свою |спелл-карту|,
+    нанеся {Damage} урона {PlayerName:a} {Times} {Times:plural one=''% раз'' few=''%
+    раза'' many=''% раз'' other=''% раза''}. |Точность|'
 UnknownIntention:
-  Name: ???
-  Description: '{OwnerName} хочет сделать... что-то.'
+  Name: Неизвестно
+  Description: '{OwnerName} собирается сделать... Что-то.'
