@@ -138,9 +138,11 @@ FengyinYaomo:
 DanmuDuijue:
   Name: Duel de Cartes Sorts
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Réflexion|.\nCette carte est affectée par |Puissance|."
+    \ {Value1} |Réflexion{Value1:plural one='' other='s'}|.\nCette carte est affectée\
+    \ par |Puissance|."
   UpgradedDescription: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n\
-    Gagnez {Value1} |Réflexion|.\nCette carte est affectée par |Puissance|."
+    Gagnez {Value1} |Réflexion{Value1:plural one='' other='s'}|.\nCette carte est\
+    \ affectée par |Puissance|."
 ReverseJiejie:
   Name: Limite Inversée
   Description: Chaque fois que {PlayerName} perd un bonus, gagnez {Value1} |Barrière{Value1:plural
@@ -189,7 +191,7 @@ HuanxiangTouying:
   Description: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires à\
     \ ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
     \ de 1, 2 et 3."
-  Name: Trace Activée
+  Name: Poursuite Activée
   UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires\
     \ à ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
     \ de 1, 2, 3, 4 et 5."
@@ -483,8 +485,8 @@ DropBook:
   Name: Rébellion Orthodoxe
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
     \ |{Value1:plural one='% Astrologie' other='% Astrologies'}| à la main."
-  FlavorText: "\"Je ne suis pas intéressée par la magie traditionnelle, s'il vous\
-    \ plaît, ne revenez pas !\""
+  FlavorText: "\"Je ne suis pas intéressée par la magie traditionnelle.\n- Dans ce\
+    \ cas, ne reviens pas !\""
 MarisaDraw:
   Name: Improvisation
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nSi {PlayerName}\
@@ -693,7 +695,7 @@ PrivateVision:
   Description: "Défaussez une carte.\nGagnez {Value1} |Esquive{Value1:plural one=''\
     \ other='s'}|."
   UpgradedDescription: "Défaussez une carte.\nGagnez {Value1} |Esquive{Value1:plural\
-    \ one='' other='s'}|.\nGagnez {Value2} |Réflexion|."
+    \ one='' other='s'}|.\nGagnez {Value2} |Réflexion{Value2:plural one='' other='s'}|."
 Dejavu:
   FlavorText: C'était encore le même chat noir.
   Description: "Placez jusqu'à {Value1:plural one='% carte' other='% cartes'} de la\
@@ -862,8 +864,8 @@ SijiCard:
     de statut, |Exilez|-la. Sinon, elle coûte {Mana} de moins ce combat et peut être
     |Retenue| une fois.
   Name: Jugement en Noir et Blanc
-  FlavorText: La décision de payer ou non après un repas est une base importante pour
-    l’arbitrage.
+  FlavorText: La décision de payer ou non après un repas est une base importante du
+    jugement.
 QingeUpgrade:
   Name: Ruse de la Méchante Ermite
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulser\
@@ -913,7 +915,7 @@ PoorAttack:
   Name: Tomber dans la Misère
   FlavorText: Ne harcelez pas les pauvres filles.
 SnowGirlCard:
-  Description: Appliquez {Value1} |Gelure|.
+  Description: Appliquez {Value1} |Gelure{Value1:plural one='' other='s'}|.
   Name: Visite de Yuki-Onna
 AliceAttack:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Mana}."
@@ -1115,7 +1117,7 @@ CirnoAttackU:
   Name: Tir de Glace
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoAttackG:
-  Name: Feuille Rasoir
+  Name: Fléchettes à Feuilles Vertes
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoBlockU:
   Name: Bouclier de Glace
@@ -1129,7 +1131,7 @@ SummerFlower:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Croissance\
     \ :| Augmente les dégâts de {Value1}."
 CoolBreeze:
-  Name: Brise du Matin
+  Name: Brise Fraîche
   Description: "Si la cible a |Froid|, cette carte inflige {Value1} dégât{Value1:plural\
     \ one=' supplémentaire' other='s supplémentaires'}.\nInflige {Damage} dégât{Damage:plural\
     \ one='' other='s'}."
@@ -1179,7 +1181,7 @@ ShuimiUnderWater:
 LeidiBlizzard:
   Name: Froid Persistant
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    Applique {Value1} |Gelure| à chaque ennemi."
+    Applique {Value1} |Gelure{Value1:plural one='' other='s'}| à chaque ennemi."
   FlavorText: L'hiver arrive. L'hiver est arrivé. Combattez à nouveau l'hiver. Retour
     à l'hiver.
 SeeFengshui:
@@ -1303,7 +1305,7 @@ MeihongFire:
     à chaque ennemi.
 RemiliaBat:
   Name: Changé en Chauve-souris
-  Description: "Gagnez {Value1} |Puissance Temporaire|.\nGagnez {Value2}|Esquive{Value2:plural\
+  Description: "Gagnez {Value1} |Puissance Temporaire|.\nGagnez {Value2} |Esquive{Value2:plural\
     \ one='' other='s'}|."
 RangziSeed:
   Name: Récolte d'Automne
@@ -1359,7 +1361,7 @@ NueExile:
 XiaosanReflect:
   Name: Contre Danmaku
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Réflexion|."
+    \ {Value1} |Réflexion{Value1:plural one='' other='s'}|."
 YijiuAttack:
   Name: Foudre du Dragon Céleste
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nLorsqu'un\
@@ -1444,7 +1446,7 @@ KoishiAttackG:
 BailianJingang:
   Name: Corps en Diamant
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Réflexion|."
+    \ {Value1} |Réflexion{Value1:plural one='' other='s'}|."
   FlavorText: Selon Bouddha, l'effet de la force est réciproque.
 YunyouShengdi:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Améliorez|\
@@ -1600,7 +1602,7 @@ VampireShoot2:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
     \ point{Value1:plural one='' other='s'} de vie."
   Name: Pluie du Démon
-  FlavorText: "\"Je peux boire le sang même avec un bouclier !\"——Le prix à payer\
+  FlavorText: "\"Je peux même boire le sang avec un bouclier !\" — Le prix à payer\
     \ pour devenir membre d'une famille de vampires est la gingivite"
 WanderingSoul:
   Description: "Gagnez |Perfection| pendant {Value1} tour{Value1:plural one='' other='s'}.\n\
@@ -1610,7 +1612,7 @@ WanderingSoul:
 NewsPositive:
   Description: "Gagnez {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limité【{DeckCounter}】|"
   Name: Nouvelles Positives
-  FlavorText: "[Des nouvelles! #Reimu enquête sur le vol de merveilles#] Le journaliste\
+  FlavorText: "[Nouvelles du soir ! #Reimu enquête sur le vol de merveilles#] Le journaliste\
     \ de notre journal au pavillon Eientei a rapporté qu'à 21h00 heure locale, le\
     \ trésor secret de la branche de jade de Hourai exposé à la 11e exposition mensuelle\
     \ de merveilles a été mystérieusement volé. Il est rapporté que la prêtresse Hakurei\
@@ -1621,8 +1623,8 @@ NewsNegative:
   FlavorText: "... est partie à la recherche du vrai coupable qui a volé la branche\
     \ de jade. Avant que Reimu ne soit invité en tant qu'exposante cette fois-ci,\
     \ il a été révélé que le sanctuaire Hakurei traversait une crise financière profonde\
-    \ et que ses dépenses quotidiennes n'étaient pas viables. Pendant ce temps, les\
-    \ organisateurs de l'exposition…"
+    \ et que ses dépenses quotidiennes n'étaient pas viables. Pendant ce temps, l'organisatrice\
+    \ de l'exposition…"
 NewsEntertainment:
   Name: Nouvelles Divertissantes
   Description: "Piochez des cartes jusqu'à ce que la main soit pleine.\n|Limité【{DeckCounter}】|"
@@ -1669,7 +1671,7 @@ Wushuai:
   Name: Épée Brillante
   FlavorText: '"Voyez, votre étoile de la mort brille dans le ciel !"'
 Chunguang:
-  Description: '|Lorsque pioché :| |Purifie| {Valeur1}.'
+  Description: '|Lorsque pioché :| |Purifie| {Value1}.'
   Name: Éclat Pur
 Bribery:
   Description: "Payez {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nMegumu abandonnera\
@@ -1820,13 +1822,13 @@ VampireShoot1:
   Name: Tir de Démon
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
     \ point{Value1:plural one='' other='s'} de vie."
-  FlavorText: '"Je peux aussi sucer le sang !"'
+  FlavorText: '"Je peux moi aussi sucer le sang !"'
 RabbitFoot:
   Name: Patte de Lapin Porte-bonheur
   Description: "|À la fin du combat :| Si cette carte n'est pas |Exilée|, gagnez {Value1}\
     \ <sprite=\"Point\" name=\"Gold\">."
   FlavorText: Si vous obtenez une patte de lapin, vous deviendrez chanceux... En fait,
-    c'est la personne chanceuse qui peut obtenir une patte de lapin.
+    c'est parce que la personne est chanceuse qu'elle peut obtenir une patte de lapin.
 GainTreasure:
   Name: Pluie d'Or
   Description: Gagnez {Value1} <sprite="Point" name="Gold">.
@@ -1952,7 +1954,7 @@ MarisaForget:
   FlavorText: "\"Est-ce que j'ai éteint le gaz quand je suis sorti aujourd'hui ?\""
 Yuebiao:
   Name: Paysage Lunaire
-  Description: '|Lorsque piochée :| Purifie {Valeur1}.'
+  Description: '|Lorsque piochée :| Purifie {Value1}.'
   FlavorText: Nulle part où vivre.
 DeepForest:
   Name: Profondeurs de la Forêt
@@ -1969,7 +1971,7 @@ FairyWar:
     main.
 EryanMana:
   Name: Fleurs et Oiseaux
-  Description: "Pour chaque groupe de {Valeur1} carte{Value1:plural one='' other='s'}\
+  Description: "Pour chaque groupe de {Value1} carte{Value1:plural one='' other='s'}\
     \ dans votre bibliothèque, ajoutez |Vitalité| à votre main.\nRetire un point de\
     \ mana aléatoire après que la carte a été jouée."
 KaguyaTreeSee:
@@ -1984,17 +1986,17 @@ FangxiangAttack:
 TigerNeijin:
   Name: Colère Silencieuse
   Description: "Gagnez {Value1} |Puissance|, et cette valeur augmente de {Value2}\
-    \ jusqu'à la fin du combat.\nLorsque vous subissez des dégâts d'une attaque non\
-    \ bloquée, placez cette carte depuis votre défausse dans votre main."
+    \ jusqu'à la fin du combat.\nLorsque vous subissez des dégâts non bloqués d'une\
+    \ attaque, placez cette carte depuis votre défausse dans votre main."
 MeilingAbility:
   Name: Magnifique Jeunesse
   Description: Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}| chaque fois
     que vous gagnez de la |Puissance| ou de la |Puissance Temporaire|.
 MeilingRain:
-  Description: "Pour chaque <sprite=\"ManaSprite\" name=\"C\"> dépensé : |Gagnez {Value1}\
+  Description: "Pour chaque <sprite=\"ManaSprite\" name=\"C\"> dépensé : gagnez {Value1}\
     \ |Bouclier{Value1:plural one='' other='s'}|, piochez {Value2} carte{Value2:plural\
     \ one='' other='s'}.\nPour chaque <sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
-    ManaSprite\" name=\"P\"> dépensé : Ajoutez une |Vitalité| à votre main."
+    ManaSprite\" name=\"P\"> dépensé : ajoutez une |Vitalité| à votre main."
   Name: Pluie Très Colorée
 LifeGame:
   Name: Jeu de la Vie
@@ -2012,8 +2014,8 @@ BaoziBird:
     \ |Verrouillé|.\nConvertissez jusqu'à {Value2} du mana restant en {Mana}."
 SanaeRice:
   Name: Rinçage du Riz
-  Description: Inflige des dégâts à tous les ennemis et restaure une quantité égale
-    de santé non bloquée.
+  Description: Inflige des dégâts à tous les ennemis et restaure une quantité de santé
+    égale aux dégâts non bloqués.
 MistLake:
   Name: Lac de Brume
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nS'il vous\
@@ -2024,7 +2026,7 @@ LongArm:
     \ plus de {Value1} carte{Value1:plural one='' other='s'} dans votre main, obtenez\
     \ {Mana}."
 YequePoison:
-  Description: Jusqu'à la fin du tour, appliquez {Valeur1} |Poison| pour chaque dégât
+  Description: Jusqu'à la fin du tour, appliquez {Value1} |Poison| pour chaque dégât
     d'attaque non-bloqué infligé.
   Name: Poudre d'Écailles de Papillon
 FairyIntellect:
@@ -2033,7 +2035,7 @@ FairyIntellect:
   Name: Sagesse de Fée
 LarvaSkill:
   Name: Fine Poudre
-  Description: "Appliquez {Valeur1} |Poison|.\nAjoutez |Ailes de Larva| à votre main."
+  Description: "Appliquez {Value1} |Poison|.\nAjoutez |Ailes de Larva| à votre main."
 CallFriend:
   Name: Appel des Amis
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nChoisissez\
@@ -2106,17 +2108,18 @@ ClownAbility:
     \ vous piochez une carte dans votre main, résolvez un effet aléatoire :\n- Coûts\
     \ augmentés de {Mana}\n- Diminuer un coût aléatoire de {Value1} points"
 FairySupportLily:
-  Description: '|Soutien Fée| : Gagnez {Mana} et conservez-le.'
+  Description: '|Soutien Fée| : gagnez {Mana} et conservez-le.'
   Name: Primevère de Lily White
 FairySupportSunny:
-  Description: '|Soutien Fée| : gagne {Value1} |Réflexion|.'
+  Description: '|Soutien Fée| : gagnez {Value1} |Réflexion{Value1:plural one=''''
+    other=''s''}|.'
   Name: Réfraction de Sunny
 FairySupportLuna:
   Name: Tranquillité de Luna
-  Description: "|Soutien Fée| : Gagnez {Value1} |Amulette{Value1:plural one='' other='s'}|\
+  Description: "|Soutien Fée| : gagnez {Value1} |Amulette{Value1:plural one='' other='s'}|\
     \ et gagnez {Value2} |Bouclier{Value2:plural one='' other='s'}| pour chaque |Amulette|."
 FairySupportStar:
-  Name: Détection d'Étoiles
+  Name: Détection par les Étoiles
   Description: '|Soutien Fée| : applique aléatoirement aux ennemis {Value1} |Faible|,
     {Value1} |Vulnérable|, et {Value2} |Verrouillé|.'
 FairySupportClown:
@@ -2126,11 +2129,11 @@ FairySupportClown:
     \ one='' other='s'} à un ennemi aléatoire."
 FairySupportLarva:
   Name: Ailes de Larva
-  Description: "|Soutien Fée| : Gagnez {Valeur1} |Bouclier{Value1:plural one='' other='s'}|."
+  Description: "|Soutien Fée| : gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|."
 FairySupportDaiyo:
   Name: Collaboration de la Grande Fée
   Description: "|Soutien Fée| : augmente les dégâts d'une carte d'attaque de base\
-    \ dans la pioche de {Valeur1}. (Sinon, choisissez la carte d'attaque de base de\
+    \ dans la pioche de {Value1}. (Sinon, choisissez la carte d'attaque de base de\
     \ la pioche ou de la défausse)"
 Danmaku10Morph:
   Name: Transformation Tanuki
