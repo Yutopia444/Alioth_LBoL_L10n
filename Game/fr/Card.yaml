@@ -44,7 +44,7 @@ YinyangCard:
 ShengtianKick:
   Name: Coup de Pied Ascensionnel
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nGagnez {Value2}\
-    \ |Puissance Temporaire|."
+    \ |Puissance{Value2:plural one=' Temporaire' other='s Temporaires'}|."
   FlavorText: Un coup réussi apportera un sourire sur votre visage.
 MengzhiYuzha:
   Name: Talisman des Rêves
@@ -80,7 +80,7 @@ Misfortune:
 Jinfuzhen:
   Name: Bordure Imposée
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi {PlayerName}\
-    \ a |Barrière|, appliquez {Value1} |Vulnérable|."
+    \ a |Barrière|, appliquez {Value1} |Vulnérable{Value1:plural one='' other='s'}|."
   FlavorText: Tant que vous n'essayez pas de vous en échapper, cette méthode n'est
     pas aussi puissante qu'il n'y paraît.
 YinyangBaoyu:
@@ -90,8 +90,9 @@ YinyangBaoyu:
   FlavorText: Poké-monstre devient étourdi !
 ZhujiThreeGod:
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nGagnez {Value2}\
-    \ |Puissance temporaire| pour chaque carte d'attaque et {Value2} |Esprit temporaire|\
-    \ pour chaque carte de défense piochée de cette façon."
+    \ |Puissance{Value2:plural one=' Temporaire' other='s Temporaires'}| pour chaque\
+    \ carte d'attaque et {Value2} |Esprit{Value2:plural one=' Temporaire' other='s\
+    \ Temporaires'}| pour chaque carte de défense piochée de cette façon."
   Name: Trois Dieux de Sumiyoshi
 LingfuHuti:
   Name: Protection Talismanique
@@ -110,7 +111,8 @@ JingshenYishi:
     elle-même besoin
 ReimuWeiyan:
   Name: Vraie Majesté
-  Description: Appliquez {Value1} |Faible| à chaque ennemi.
+  Description: Appliquez {Value1} |Faible{Value1:plural one='' other='s'}| à chaque
+    ennemi.
 OverJingjie:
   Name: Au-dessus du Royaume
   Description: Choisissez une parmi {Value1} cartes d'attaque aléatoires à ajouter
@@ -126,7 +128,7 @@ JiejieAttack:
 SmallPanding:
   Name: Petite Hitbox
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nGagnez\
-    \ {Value2} |Vulnérable|."
+    \ {Value2} |Vulnérable{Value2:plural one='' other='s'}|."
   FlavorText: "\"Tant que le point vital n'est pas atteint, ce n'est pas grave !\""
 Zhuizongfu:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
@@ -136,7 +138,8 @@ Zhuizongfu:
 FengyinYaomo:
   Name: Massacre du Dragon
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAppliquez\
-    \ {Value1} |Faible| et |Vulnérable|."
+    \ {Value1} |Faible{Value1:plural one='' other='s'}| et |Vulnérable{Value1:plural\
+    \ one='' other='s'}|."
 DanmuDuijue:
   Name: Duel de Cartes Sorts
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
@@ -243,8 +246,9 @@ FreeFly:
 YinyangXueyin:
   Name: Rune Yin-Yang
   Description: "Perdez {Value2} point{Value2:plural one='' other='s'} de vie.\nChaque\
-    \ fois que {PlayerName} joue une |Orbe Yin-Yang|, gagnez {Value1} |Puissance temporaire|\
-    \ et {Value1} |Esprit temporaire|."
+    \ fois que {PlayerName} joue une |Orbe Yin-Yang|, gagnez {Value1} |Puissance{Value1:plural\
+    \ one=' Temporaire' other='s Temporaires'}| et {Value1} |Esprit{Value1:plural\
+    \ one=' Temporaire' other='s Temporaires'}|."
 TaijiLiangyi:
   Name: Naissance du Yin-Yang
   Description: Lorsque {PlayerName} débute son tour, s'il n'y a aucune |Orbe Yin-Yang|
@@ -277,9 +281,10 @@ BoliPhantom:
 EventHorizon:
   Name: Horizon des Événements
   Description: "Entrez en |Saturation|.\nLorsque {PlayerName} débute son prochain\
-    \ tour, il perd la partie."
-  UpgradedDescription: "Entrez en |Saturation|.\nGagnez {Value1} |Puissance temporaire|.\n\
-    Lorsque {PlayerName} débute son prochain tour, il perd la partie."
+    \ tour, vous perdez la partie."
+  UpgradedDescription: "Entrez en |Saturation|.\nGagnez {Value1} |Puissance{Value1:plural\
+    \ one=' Temporaire' other='s Temporaires'}|.\nLorsque {PlayerName} débute son\
+    \ prochain tour, vous perdez la partie."
 UpgradePotion:
   Name: Potion Raffinée
   Description: "Ajoutez {Value2:plural one='% |Potion instable|' other='% |Potions\
@@ -378,7 +383,7 @@ MoguMaster:
     à la main.
 RedMogu:
   Name: Amanite Muscaria
-  Description: Appliquez {Value1} |Poison|.
+  Description: Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|.
 GreenMogu:
   Name: Panellus Stipticus
   Description: Ajoutez {Value1:plural one='% |Potion instable|' other='% |Potions
@@ -589,9 +594,9 @@ LearnAstrology:
   FlavorText: '"Pourquoi elle ne veut regarder que les étoiles et pas moi ?"'
 PoisonPotion:
   Name: Creuset de Sorcière
-  Description: "Les |Potions Instables| appliquent également {Value1} |Poison| lorsqu'elles\
-    \ sont utilisées.\nAjoutez {Value2:plural one='% |Potion Instable|' other='% |Potions\
-    \ Instables|'} à la pioche."
+  Description: "Les |Potions Instables| appliquent également {Value1} |Poison{Value1:plural\
+    \ one='' other='s'}| lorsqu'elles sont utilisées.\nAjoutez {Value2:plural one='%\
+    \ |Potion Instable|' other='% |Potions Instables|'} à la pioche."
   FlavorText: Ajoutez un peu de champignons et un peu de vieille chaussure.
 PotionJungle:
   Name: Forêt Fluorescente
@@ -649,7 +654,7 @@ ThrowBigStar:
 FireUpBagualu:
   Name: Allumage du Four
   Description: "Gagnez {Value1} |Charge{Value1:plural one='' other='s'}|.\nGagne {Value2}\
-    \ |Puissance|. Cet effet est affecté par la |Saturation|."
+    \ |Puissance{Value2:plural one='' other='s'}|. Cet effet est affecté par la |Saturation|."
 ShootMoon:
   Name: Tir sur la Lune
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
@@ -673,8 +678,9 @@ MixAndShake:
   FlavorText: Ne pas agiter avant ouverture.
 WizardStudy:
   Name: Convertisseur Magique
-  Description: "Gagnez {Value1} |Puissance| et |Esprit|.\nLa première carte jouée\
-    \ à chaque tour coûte {Mana} de plus à jouer."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural\
+    \ one='' other='s'}|.\nLa première carte jouée à chaque tour coûte {Mana} de plus\
+    \ à jouer."
 ExilePotion:
   Name: Utilisation des Déchets
   Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} de
@@ -760,8 +766,9 @@ SilverBullet:
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
 SilverJump:
   Name: Couteau de Damoclès
-  Description: "Appliquez {Value1} |Vulnérable|.\nAjoutez |{Value2:plural one='% Couteau\
-    \ de lancer' other='% Couteaux de lancer'}| à la pioche et à la défausse."
+  Description: "Appliquez {Value1} |Vulnérable{Value1:plural one='' other='s'}|.\n\
+    Ajoutez |{Value2:plural one='% Couteau de lancer' other='% Couteaux de lancer'}|\
+    \ à la pioche et à la défausse."
 SakuyaSleep:
   Name: Courte Pause
   Description: "Ajoutez un |Arc-en-ciel| à la main.\n{PlayerName} termine son tour."
@@ -777,12 +784,13 @@ CoolMaid:
     de lancer'}| à la main.
 SakuyaTwiceAttack:
   Name: Ricochet Lumineux
-  Description: "Infligez {Damage} {Damage:plural one='' other='s'} à chaque ennemi\
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi\
     \ {Value1} fois.\nAjoutez |{Value2:plural one='% Couteau de lancer' other='% Couteaux\
     \ de lancer'}| à la défausse."
 SakuyaWeak:
   Name: Suppression du Temps
-  Description: "Appliquez {Value1} |Faible|.\nGagnez {Mana}."
+  Description: "Appliquez {Value1} |Faible{Value1:plural one='' other='s'}|.\nGagnez\
+    \ {Mana}."
   FlavorText: Le temps ralenti permet de se défendre contre les attaques, et de garder
     les ingrédients frais.
 SakuyaDefenseRetain:
@@ -791,7 +799,7 @@ SakuyaDefenseRetain:
     \ ne sont pas perdus lorsque {PlayerName} débute son prochain tour."
 HuaBlock:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Puissance Temporaire|."
+    \ {Value1} |Puissance{Value1:plural one=' Temporaire' other='s Temporaires'}|."
   Name: Position de Combat
   FlavorText: La haine d'Inubashiri Momiji est très stable et les monstres de la Montagne
     des Yōkais se précipitent pour l'attirer dans leur groupe.
@@ -803,28 +811,30 @@ MeilingBlock:
 SuikaBigball:
   NonbattleDescription: "Inflige {Damage} dégât{Damage:plural one='' other='s'}. Ensuite,\
     \ infligez la moitié de ces dégâts à tous les autres ennemis.\nPerdez {Value1}\
-    \ |Puissance|."
+    \ |Puissance{Value1:plural one='' other='s'}|."
   FlavorText: Pour les autres races, le pouvoir des fantômes est encore trop difficile
     à contrôler.
   Name: Bombe Spirituelle Oni
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}. Ensuite, infligez\
     \ {HalfDamage} dégât{HalfDamage:plural one='' other='s'} à tous les autres ennemis.\n\
-    Perdez {Value1} |Puissance|."
+    Perdez {Value1} |Puissance{Value1:plural one='' other='s'}|."
 YongyiAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi\
     \ {Value1} fois.\nSi {PlayerName} a |Puissance Temporaire|, infligez autant de\
     \ dégâts 1 fois de plus."
   Name: Déferlement de Violence
 MeihongPower:
-  Description: "Lorsque {PlayerName} débute son tour, gagnez {Value1} |Puissance|\n\
-    À la fin du combat, si {PlayerName} a un montant de points de vie inférieur à\
-    \ la moitié, gagnez {Value2} point{Value2:plural one='' other='s'} de vie."
+  Description: "Lorsque {PlayerName} débute son tour, gagnez {Value1} |Puissance{Value1:plural\
+    \ one='' other='s'}|\nÀ la fin du combat, si {PlayerName} a un montant de points\
+    \ de vie inférieur à la moitié, gagnez {Value2} point{Value2:plural one='' other='s'}\
+    \ de vie."
   Name: La flamme Immortelle
   FlavorText: C'est une immortelle maudite, vivant sa vie comme une ermite.
 DanmuJade:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     Ajoutez {Value1} |Arc{Value1:plural one='' other='s'}-en-ciel| à la main.\n|Pour\
-    \ chaque {Mana} dépensé :| Gagnez {Value2} |Puissance| et |Esprit|."
+    \ chaque {Mana} dépensé :| Gagnez {Value2} |Puissance{Value2:plural one='' other='s'}|\
+    \ et |Esprit{Value2:plural one='' other='s'}|."
   Name: Cocon de Danmaku
 MorphFrog:
   Description: Gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum.
@@ -865,7 +875,7 @@ TiangouOrder:
     de la danse populaire en Tengu.
 LanCard:
   Description: Choisissez 1 parmi {Value1} cartes inhabituelles aléatoires à ajouter
-    à la main. Elle |coûte temporairement|{Mana} et a |Exil| et |Éthéré|.
+    à la main. Elle |coûte temporairement| {Mana} et a |Exil| et |Éthéré|.
   Name: Protection Shikigami
 NiuqiDefense:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
@@ -881,7 +891,7 @@ SijiCard:
     jugement.
 QingeUpgrade:
   Name: Ruse de la Méchante Ermite
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulser\
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulsion\
     \ :| |Améliorez| de façon permanente une carte."
 ShuimuBlock:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAugmente\
@@ -899,8 +909,9 @@ ChengDefense:
 HappyNewYear:
   Name: Visite du Nouvel An
   Description: "Choisissez 1 parmi 3 cartes d'attaque ou de défense aléatoires à ajouter\
-    \ à la main.\nGagnez {Value1} |Puissance| si une carte d'attaque est choisie,\
-    \ ou {Value1} |Esprit| si une carte de défense est choisie."
+    \ à la main.\nGagnez {Value1} |Puissance{Value1:plural one='' other='s'}| si une\
+    \ carte d'attaque est choisie, ou {Value1} |Esprit{Value1:plural one='' other='s'}|\
+    \ si une carte de défense est choisie."
 QinglanAttack:
   FlavorText: Il semble avoir été téléporté sur place…
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Sonde| {Scry}.\n\
@@ -981,8 +992,9 @@ GrimoireStudy:
 TrueMoon:
   Name: Vraie Pleine Lune
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Puissance|.\nLorsque {Value2:plural one='% carte est jouée' other='%\
-    \ cartes sont jouées'}, {PlayerName} perd la partie."
+    \ {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLorsque {Value2:plural\
+    \ one='% carte est jouée' other='% cartes sont jouées'}, {PlayerName} perd la\
+    \ partie."
   FlavorText: Sous la vraie pleine lune, tout n'est que fantasme vaniteux.
 QianGui:
   Name: Gardien Spirituel
@@ -1003,8 +1015,8 @@ GainKnife:
     one='' other='x'} de Lancer| dans la main.
 BladePower:
   Name: Ruée Éblouissante
-  Description: "Gagnez {Value1} |Puissance|.\n|Lorsque piochée:| Si c'est la seule\
-    \ carte de la main, elle |coûte temporairement| {Mana}."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Lorsque\
+    \ piochée:| Si c'est la seule carte de la main, elle |coûte temporairement| {Mana}."
 SakuyaAttackX:
   Name: Propulsion d'Argent
   Description: "|Pour chaque {Mana} dépensé :| Inflige {Damage} dégât{Damage:plural\
@@ -1236,11 +1248,12 @@ RumiaBlock:
   FlavorText: Si vous ne le voyez pas, cela signifie  0  dégâts.
 YuyukoDebuff:
   Name: Rêve sans Vie
-  Description: Appliquez {Value1} |Faible| et |Vulnérable|.
+  Description: Appliquez {Value1} |Faible{Value1:plural one='' other='s'}| et |Vulnérable{Value1:plural
+    one='' other='s'}|.
 ShannvAttack:
   Name: Miasme Suintant
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nAppliquez\
-    \ {Value1} |Poison|."
+    \ {Value1} |Poison{Value1:plural one='' other='s'}|."
   FlavorText: Dans les espaces restreints, tout gaz expulsé par l'arrière-train peut
     être mortel.
 SatoriAttack:
@@ -1250,9 +1263,10 @@ SatoriAttack:
     \ one='' other='s'}|."
   FlavorText: Il est similaire au "Cœur" populaire dans le monde extérieur.
 MystiaSing:
-  Description: "Appliquez {Value1} |Réduction Temporaire de Puissance| à chaque ennemi.\n\
-    Gagnez {Value1} <sprite=\"Point\" name=\"Power\">.\nAjoutez {Value2} |Ombre{Value2:plural\
-    \ one='' other='s'}| à la défausse."
+  Description: "Appliquez {Value1} |Réduction{Value1:plural one=' Temporaire' other='s\
+    \ Temporaires'} de Puissance| à chaque ennemi.\nGagnez {Value1} <sprite=\"Point\"\
+    \ name=\"Power\">.\nAjoutez {Value2} |Ombre{Value2:plural one='' other='s'}| à\
+    \ la défausse."
   Name: Chant du Moineau Nocturne
   FlavorText: Les moineaux de nuit peuvent-ils chanter comme des trompettes et des
     réchauds à gaz ?
@@ -1264,8 +1278,8 @@ SatoriMemory:
 ShannvAbility:
   Name: Fièvre Inconnue
   FlavorText: Le médecin vous rappelle de boire beaucoup d'eau chaude.
-  Description: Lorsque {PlayerName} finit son tour, appliquez {Value1} |Poison| à
-    chaque ennemi.
+  Description: Lorsque {PlayerName} finit son tour, appliquez {Value1} |Poison{Value1:plural
+    one='' other='s'}| à chaque ennemi.
 BlackHorseZui:
   Name: Péché du Pégase Noir
   Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nInfligez\
@@ -1285,8 +1299,9 @@ BailianBlack:
     le monde apprend de moi, c'est comme entrer dans la voie d'un démon.
 YinglangHowl:
   Name: Hurlement de Pleine Lune
-  Description: Appliquez {Value1} |Réduction Temporaire de Puissance| et {Value2}
-    |Vulnérable| à chaque ennemi.
+  Description: Appliquez {Value1} |Réduction{Value1:plural one=' Temporaire' other='s
+    Temporaires'} de Puissance| et {Value2} |Vulnérable{Value2:plural one='' other='s'}|
+    à chaque ennemi.
 RemiliaJizao:
   Name: Impatience
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nAucune autre\
@@ -1308,7 +1323,7 @@ RangziFanshu:
   Name: Patate Douce Douce
 BailianPower:
   Name: Corps Renforcé
-  Description: Gagnez {Value1} |Puissance|.
+  Description: Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.
   FlavorText: Les Écritures parlent d'Indice de Masse Corporelle et de construction
     musculaire.
 MeihongFire:
@@ -1318,8 +1333,8 @@ MeihongFire:
     à chaque ennemi.
 RemiliaBat:
   Name: Changé en Chauve-souris
-  Description: "Gagnez {Value1} |Puissance Temporaire|.\nGagnez {Value2} |Esquive{Value2:plural\
-    \ one='' other='s'}|."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one=' Temporaire' other='s\
+    \ Temporaires'}|.\nGagnez {Value2} |Esquive{Value2:plural one='' other='s'}|."
 RangziSeed:
   Name: Récolte d'Automne
   Description: Ajoutez une |Vitalité| en haut de la pioche. Elle a |Renfloue|.
@@ -1328,7 +1343,7 @@ MorphMan:
   Description: Obtenez {Value1} <sprite="Point" name="Gold">.
   Name: Changé en Homme
 MorphDog:
-  Description: Gagnez {Value1} |Puissance|.
+  Description: Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.
   Name: Changé en Chien
 XiaodingKill:
   Name: Rituel d'Exorcisme
@@ -1359,7 +1374,7 @@ HuashanDefense:
     \ prochain tour."
 XingMoney:
   Name: Lance Glorieuse
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulser\
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulsion\
     \ :| Gagnez {Value1} <sprite=\"Point\" name=\"Gold\">."
 YukariBox:
   Description: "|Sonde| {Scry}.\nPiochez {Value1:plural one='% carte' other='% cartes'}.\n\
@@ -1402,15 +1417,15 @@ ReisenAttack:
 FlanPlayAlone:
   Name: Jeu Solitaire
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Puissance Temporaire|.\nDéfaussez toutes les cartes non-attaque de\
-    \ la main."
+    \ {Value1} |Puissance{Value1:plural one=' Temporaire' other='s Temporaires'}|.\n\
+    Défaussez toutes les cartes non-attaque de la main."
 ShenziWake:
   Description: Choisissez 1 carte aléatoire parmi {Value1} avec un coût total de X+1
     à ajouter à la main. Elle |coûte temporairement|{Mana} et a |Exil| et |Ethéré|.
   Name: Renaissance du Saint
 YuetuInvincible:
   Description: "Gagnez |Perfection| pendant {Value1} tour{Value1:plural one='' other='s'}.\n\
-    Perdez {Value2} |Esprit|."
+    Perdez {Value2} |Esprit{Value2:plural one='' other='s'}|."
   Name: Chute du Lapin Lunaire
   FlavorText: Évadez-vous du monde purifié, vers le paradis de la crasse.
 KoishiAttackB:
@@ -1438,10 +1453,11 @@ LunaClock:
     jouées par {PlayerName} n'infligent aucun dégât pendant ce tour supplémentaire.
 SakuyaDio:
   Name: Tu es le Prochain
-  Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé|.\n\
-    Finissez le tour. Ensuite, {PlayerName} joue un tour supplémentaire. Pendant ce\
-    \ tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='% Couteaux de\
-    \ Lancer'}| à la main au lieu de piocher des cartes pendant l'étape de pioche."
+  Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé{Value1:plural\
+    \ one='' other='s'}|.\nFinissez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.\
+    \ Pendant ce tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='%\
+    \ Couteaux de Lancer'}| à la main au lieu de piocher des cartes pendant l'étape\
+    \ de pioche."
 TunnelEffect:
   Name: Effet Tunnel
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
@@ -1478,9 +1494,10 @@ UManaCard:
   Name: Geyser
   Description: Gagnez {Mana}.
 QingeHeal:
-  Description: "Gagnez {Value1} |Puissance Temporaire|.\nGagnez {Value2} point{Value2:plural\
-    \ one='' other='s'} de vie. Lorsque {PlayerName} débute son prochain tour, perdez\
-    \ {Value2} point{Value2:plural one='' other='s'} de vie."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one=' Temporaire' other='s\
+    \ Temporaires'}|.\nGagnez {Value2} point{Value2:plural one='' other='s'} de vie.\
+    \ Lorsque {PlayerName} débute son prochain tour, perdez {Value2} point{Value2:plural\
+    \ one='' other='s'} de vie."
   FlavorText: '"Maintenant que tu es retapée, en avant !"'
   Name: Nécromancie
 FangxiangHeal:
@@ -1540,8 +1557,9 @@ LigeluCard:
     \ {Value1} <sprite=\"Point\" name=\"Power\">."
 PaluxiCurse:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nAppliquez\
-    \ {Value1} |Faible| et |Vulnérable|.\nAjoutez un |Malheur| aléatoire à la défausse.\
-    \ |d:(Il ne restera pas dans la bibliothèque après ce combat.)|"
+    \ {Value1} |Faible{Value1:plural one='' other='s'}| et |Vulnérable{Value1:plural\
+    \ one='' other='s'}|.\nAjoutez un |Malheur| aléatoire à la défausse. |d:(Il ne\
+    \ restera pas dans la bibliothèque après ce combat.)|"
   Name: Retour de Rancune
   FlavorText: À 2 h 30 aujourd'hui, Mizuhashi Parsee a été arrêtée sur place par la
     femme de chambre de service alors qu'elle visitait un sanctuaire en violation
@@ -1553,7 +1571,8 @@ ZoufangSnake:
   Name: Foi du Dieu Natif
 TodayYesterday:
   Description: "Chaque fois que {PlayerName} |Esquive| une attaque, gagnez {Value1}\
-    \ |Puissance|.\nGagnez {Value2} |Esquive{Value2:plural one='' other='s'}|."
+    \ |Puissance{Value1:plural one='' other='s'}|.\nGagnez {Value2} |Esquive{Value2:plural\
+    \ one='' other='s'}|."
   FlavorText: La légende raconte qu'il y avait un épéiste puissant qui était oisif,
     et il prenait souvent plaisir à piller et brûler les champs de fleurs d'innocents
     jardiniers. Heureusement, il n'a pas rencontré Yuuka Kazami.
@@ -1646,7 +1665,7 @@ NewsEntertainment:
     \ récompensés par des poupées de lapin lunaire en édition limitée. S'adressant\
     \ à notre journaliste, une sorcière bien connue qui ne voulait pas être nommé…"
 NewsTidbit:
-  Description: "Gagnez {Value1} |Verrouillé|.\n|Limité【{DeckCounter}】|"
+  Description: "Gagnez {Value1} |Verrouillé{Value1:plural one='' other='s'}|.\n|Limité【{DeckCounter}】|"
   Name: Potins
   FlavorText: "... a révélé que le voyage de Reimu n'était pas seulement lié à des\
     \ considérations financières, mais également à sa relation personnelle étroite\
@@ -1659,12 +1678,14 @@ EmpCard:
     |Limité【{DeckCounter}】|"
   Name: Disrupteur Électro-magnétique
 AyaNewsSakuyaSp:
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit{Value1:plural
+    one='''' other=''s''}|.'
   Name: Bunbunmaru - Spécial Sakuya
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
 AyaNewsKoishiSp:
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit{Value1:plural
+    one='''' other=''s''}|.'
   Name: Bunbunmaru - Spécial Koishi
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
@@ -1679,8 +1700,8 @@ BlackResidue:
   Description: "|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie."
 Wushuai:
-  Description: '|Lorsque piochée :| Gagnez {Value1} |Verrouillé| et |Exilez| cette
-    carte.'
+  Description: '|Lorsque piochée :| Gagnez {Value1} |Verrouillé{Value1:plural one=''''
+    other=''s''}| et |Exilez| cette carte.'
   Name: Épée Brillante
   FlavorText: '"Voyez, votre étoile de la mort brille dans le ciel !"'
 Chunguang:
@@ -1706,7 +1727,8 @@ BefuddledLife:
     \ : \"Ce n'est pas grave de regarder le téléphone et d'y faire défiler les informations,\
     \ ça occupe la journée.\""
 XiaosanJingxia:
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Faible|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Faible{Value1:plural
+    one='''' other=''s''}|.'
   Name: Peur
   FlavorText: Récemment, Kogasa Tatara a essayé de regarder des films d'horreur du
     monde extérieur pour réfléchir à des compétences effrayantes. On dit que le film
@@ -1719,7 +1741,8 @@ BuyPeace:
   FlavorText: "\"Si vous n'avez pas d'argent, vous ne souffrirez pas de malheur financier,\
     \ n'est-ce pas ?\""
 SweetPoison:
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Poison|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, gagnez {Value1} |Poison{Value1:plural
+    one='''' other=''s''}|.'
   Name: Doux Poison
   FlavorText: Eirin ! Eirin ! Tasukete EIRIN !
 YuyukoMisfortune:
@@ -1741,7 +1764,7 @@ KongMana:
     \ de cette carte.\nAjoutez un |Arc-en-ciel| à la main."
 Shengyan:
   Name: Banquet
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulser\
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Expulsion\
     \ :| Gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum."
 ModuoluoFire:
   Name: Feu d'Ena
@@ -1749,7 +1772,8 @@ ModuoluoFire:
     {Value1} dégât{Value1:plural one='' other='s'} à chaque ennemi.
 MedicineGarden:
   Description: "Chaque ennemi gagne {Value1} point{Value1:plural one='' other='s'}\
-    \ de vie.\nAppliquez {Value1} |Poison| à chaque ennemi."
+    \ de vie.\nAppliquez {Value1} |Poison{Value1:plural one='' other='s'}| à chaque\
+    \ ennemi."
   Name: Jardin Mélancolique
 YachieDefend:
   Description: "Empêche {Value1:plural one='la prochaine fois' other='les % prochaines\
@@ -1759,7 +1783,8 @@ YachieDefend:
 JingyeGraze:
   Name: Feuilles Mortes en Folie
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nGagnez\
-    \ {Value2} |Puissance Temporaire| pour chaque |Esquive| que {PlayerName} possède."
+    \ {Value2} |Puissance{Value2:plural one=' Temporaire' other='s Temporaires'}|\
+    \ pour chaque |Esquive| que {PlayerName} possède."
 FlanBlack:
   Name: Diabolisation
   Description: "|d :Cette carte est actuellement en cours de développement.\nVeuillez\
@@ -1768,7 +1793,7 @@ FlanBlack:
     pour se battre ~
 JunkoNightmare:
   Name: Cauchemar Tremblant
-  Description: "|d :Cette carte est actuellement en cours de développement.\nVeuillez\
+  Description: "|d:Cette carte est actuellement en cours de développement.\nVeuillez\
     \ revenir dans une future mise à jour !|"
 Shoot:
   Name: Tir
@@ -1807,7 +1832,8 @@ MultiShoot:
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}{Value1:plural
     one='' other=' % fois'}.
 ToolVulnerable:
-  Description: "Appliquer {Value1} |Vulnérable|.\n|Limité【{DeckCounter}】|"
+  Description: "Appliquer {Value1} |Vulnérable{Value1:plural one='' other='s'}|.\n\
+    |Limité【{DeckCounter}】|"
   Name: Tambour Électrique
 ToolAttack:
   Name: Pistolet à Eau
@@ -1857,7 +1883,8 @@ ArtificialJewellery:
     ont toujours un effet spirituel qui ne peut être mesuré en argent.
 Xiaozhuo:
   Name: Pompette
-  Description: "Gagnez {Value1} |Puissance Temporaire|.\n"
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one=' Temporaire' other='s\
+    \ Temporaires'}|.\n"
   FlavorText: Vous êtes ivre, la chance de l'ennemi est venue.
 LilyoftheValley:
   Name: Muguet
@@ -1879,16 +1906,19 @@ HatateNews:
   FlavorText: Un journal tengu avec une photo à la une.
 AyaNewsReimuSp:
   Name: Bunbunmaru - Spécial Reimu
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit{Value1:plural
+    one='''' other=''s''}|.'
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Spécial Marisa
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit{Value1:plural
+    one='''' other=''s''}|.'
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
 AyaNewsCirnoSp:
-  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit|.'
+  Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} |Esprit{Value1:plural
+    one='''' other=''s''}|.'
   Name: Bunbunmaru - Spécial Cirno
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
@@ -1951,7 +1981,7 @@ ToolDraw:
     dire en silence ce que vous voulez emporter——"'
 ToolWeak:
   Name: Flash d'Appareil Photo
-  Description: "Appliquer {Value1} |Faible|.\n|Limité【{DeckCounter}】|"
+  Description: "Appliquer {Value1} |Faible{Value1:plural one='' other='s'}|.\n|Limité【{DeckCounter}】|"
   FlavorText: "\"Kappa Select & Co. promet que ce flash portable rétro n'aura aucun\
     \ effet secondaire époustouflant et accélérant le vieillissement.\""
 ToolMaxHp:
@@ -1998,13 +2028,14 @@ KaguyaTreeSee:
   Name: Mer d'Arbres de Hourai
 FangxiangAttack:
   Description: Si la cible est empoisonnée, infligez {Damage} dégât{Damage:plural
-    one='' other='s'}, sinon appliquez {Value1} |Poison|.
+    one='' other='s'}, sinon appliquez {Value1} |Poison{Value1:plural one='' other='s'}|.
   Name: Effacement Toxique
 TigerNeijin:
   Name: Colère Silencieuse
-  Description: "Gagnez {Value1} |Puissance|, et cette valeur augmente de {Value2}\
-    \ jusqu'à la fin du combat.\nLorsque vous subissez des dégâts non bloqués d'une\
-    \ attaque, placez cette carte depuis votre défausse dans votre main."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|, et cette\
+    \ valeur augmente de {Value2} jusqu'à la fin du combat.\nLorsque vous subissez\
+    \ des dégâts non bloqués d'une attaque, placez cette carte depuis votre défausse\
+    \ dans votre main."
 MeilingAbility:
   Name: Magnifique Jeunesse
   Description: Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}| chaque fois
@@ -2028,7 +2059,8 @@ LifeGame:
 BaoziBird:
   Name: Balise d'Aigle Arc-en-ciel
   Description: "Supprime toutes les |Esquives| de la cible, et lui applique {Value1}\
-    \ |Verrouillé|.\nConvertissez jusqu'à {Value2} du mana restant en {Mana}."
+    \ |Verrouillé{Value1:plural one='' other='s'}|.\nConvertissez jusqu'à {Value2}\
+    \ du mana restant en {Mana}."
 SanaeRice:
   Name: Rinçage du Riz
   Description: Inflige des dégâts à tous les ennemis et restaure une quantité de santé
@@ -2043,8 +2075,8 @@ LongArm:
     \ plus de {Value1} carte{Value1:plural one='' other='s'} dans votre main, obtenez\
     \ {Mana}."
 YequePoison:
-  Description: Jusqu'à la fin du tour, appliquez {Value1} |Poison| pour chaque dégât
-    d'attaque non-bloqué infligé.
+  Description: Jusqu'à la fin du tour, appliquez {Value1} |Poison{Value1:plural one=''
+    other='s'}| pour chaque dégât d'attaque non-bloqué infligé.
   Name: Poudre d'Écailles de Papillon
 FairyIntellect:
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nLorsque {PlayerName}\
@@ -2052,7 +2084,8 @@ FairyIntellect:
   Name: Sagesse de Fée
 LarvaSkill:
   Name: Poudre de Papillon
-  Description: "Appliquez {Value1} |Poison|.\nAjoutez |Ailes de Larva| à votre main."
+  Description: "Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|.\nAjoutez\
+    \ |Ailes de Larva| à votre main."
 CallFriend:
   Name: Appel des Amis
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nChoisissez\
@@ -2101,8 +2134,8 @@ StarAttack:
 LunaAttack:
   Name: Bain au Clair de Lune
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à la cible\
-    \ et la cible perd temporairement {Value1} |Puissance|.\nAjoutez une |Tranquillité\
-    \ de Luna| à votre main."
+    \ et la cible perd temporairement {Value1} |Puissance{Value1:plural one='' other='s'}|.\n\
+    Ajoutez une |Tranquillité de Luna| à votre main."
 WhiteWorld:
   Name: Monde Blanc Pur
   Description: "Lorsque {PlayerName} finit son tour, gagnez une |Armure Glaciaire|.\n\
@@ -2137,8 +2170,9 @@ FairySupportLuna:
     \ et gagnez {Value2} |Bouclier{Value2:plural one='' other='s'}| pour chaque |Amulette|."
 FairySupportStar:
   Name: Détection par les Étoiles
-  Description: '|Soutien Fée| : applique aléatoirement aux ennemis {Value1} |Faible|,
-    {Value1} |Vulnérable|, et {Value2} |Verrouillé|.'
+  Description: '|Soutien Fée| : applique aléatoirement aux ennemis {Value1} |Faible{Value1:plural
+    one='''' other=''s''}|, {Value1} |Vulnérable{Value1:plural one='''' other=''s''}|,
+    et {Value2} |Verrouillé{Value2:plural one='''' other=''s''}|.'
 FairySupportClown:
   Name: Folie des Pois
   Description: "Chaque fois que vous jouez une carte pour un coût total de 3 ou plus,\
@@ -2156,7 +2190,7 @@ Danmaku10Morph:
   Name: Transformation Tanuki
   Description: "Choisissez 1 Transformation et ajoutez-la à votre main. Vous obtiendrez\
     \ l'un des effets suivants :\nGagnez  4  points de vie maximale ;\nGagnez  4 \
-    \ |Esquives| ;\nObtenez  50  <sprite=\"Point\" name=\"Gold\"> ;\nGagne  3  |Puissance|."
+    \ |Esquives| ;\nObtenez  50  <sprite=\"Point\" name=\"Gold\"> ;\nGagne  3  |Puissances|."
 ReimuFestival:
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
     \ de |Puissance Temporaire| au début de son tour."
