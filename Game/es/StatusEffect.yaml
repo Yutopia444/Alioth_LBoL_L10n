@@ -6,11 +6,11 @@ Firepower:
 TempFirepowerNegative:
   Description: "Hasta el final del turno, pierde {Level} puntos de |Poder|.\n(|Poder|\
     \ aumenta el daño hecho con ataques.)"
-  Name: Poder Temporal Disminuido
+  Name: Reducción Temporal de Poder
   Brief: "|Poder| disminuido hasta el final del turno.\n(|Poder| aumenta el daño hecho\
     \ con ataques.)"
 FirepowerNegative:
-  Name: Poder Disminuido
+  Name: Reducción de Poder
   Description: "Pierde {Level} puntos de |Poder|.\n(|Poder| aumenta el daño hecho\
     \ con ataques.)"
   Brief: "|Poder| disminuido.\n(|Poder| aumenta el daño hecho con ataques.)"
@@ -29,26 +29,28 @@ Spirit:
 TempSpiritNegative:
   Brief: "|Espíritu| disminuido hasta el final del turno.\n(|Espíritu| aumenta el\
     \ |Bloqueo| y |Barrera| obtenidos al defender.)"
-  Name: Espíritu Temporal Disminuido
+  Name: Reducción Temporal de Espíritu
   Description: "Hasta el final del turno, pierde {Level} puntos de |Espíritu|.\n(|Espíritu|\
     \ aumenta el |Bloqueo| y |Barrera| obtenidos al defender.)"
 SpiritNegative:
-  Name: Espíritu Disminuido
+  Name: Reducción de Espíritu
   Description: "Pierde {Level} puntos de |Espíritu|.\n(|Espíritu| aumenta el |Bloqueo|\
     \ y |Barrera| obtenidos al defender.)"
   Brief: "|Espíritu| disminuido.\n(|Espíritu| aumenta el |Bloqueo| y |Barrera| obtenidos\
     \ al defender.)"
 Fragil:
   Name: Frágil
-  Description: "{PlayerName} obtiene {Value}% menos de |Bloqueo| y |Barrera| a través\
-    \ de efectos de cartas {Duration:plural one='hasta el final del turno' other='durante\
-    \ los próximos % turnos'}."
-  Brief: '{PlayerName} obtiene {Value}% menos |Bloqueo| y |Barrera| de cartas.'
+  Description: "{PlayerName} obtiene {Value}% menos de puntos de |Bloqueo| y |Barrera|\
+    \ a través de efectos de cartas {Duration:plural one='hasta el final del turno'\
+    \ other='durante los próximos % turnos'}."
+  Brief: '{PlayerName} obtiene {Value}% menos de puntos de |Bloqueo| y |Barrera| de
+    cartas.'
 Weak:
   Name: Débil
-  Brief: Los ataques de {OwnerName} infligen {Value}% menos daño.
-  Description: Los ataques de {OwnerName} infligen {Value}% menos de daño {Duration:plural
-    one='hasta el final del turno' other='durante los próximos % turnos'}.
+  Brief: Los ataques de {OwnerName} infligen {Value}% menos puntos de daño.
+  Description: Los ataques de {OwnerName} infligen {Value}% menos de puntos de daño
+    {Duration:plural one='hasta el final del turno' other='durante los próximos %
+    turnos'}.
 Vulnerable:
   Name: Vulnerable
   Brief: '{OwnerName} es dañado un {Value}% mas por ataques.'
@@ -63,31 +65,32 @@ LockedOn:
 Graze:
   Name: Roce
   Brief: "{OwnerName} es infligida 0 puntos de daño causado por ataques.\n|Roce| disminuye\
-    \ en 1 punto al inicio de cada turno."
+    \ en 1 punto al inicio de cada turno, o al ser atacada."
   Description: "{OwnerName} es infligida 0 puntos de daño {Level:plural one='del próximo\
     \ ataque' other='de los próximos % ataques'}.\n|Roce| disminuye en 1 punto al\
-    \ inicio de cada turno."
+    \ inicio de cada turno, o al ser atacada."
 ExtraTurn:
   Name: Turno Extra
-  Brief: Al terminar su turno, {OwnerName} obtiene inmediatamente otro turno.
+  Brief: Al terminar su turno, {OwnerName} obtiene otro turno.
   Description: "{OwnerName} obtendrá {Level:plural one='% turno extra' other='% turnos\
     \ extra'} al terminar su turno actual."
 LimitedDamage:
   Name: Limitador de Daño
   Description: '{OwnerName} solo puede ser infligida {Limit} puntos de daño cada turno.
-    Todavía puede ser dañada {Count} puntos.'
+    Todavía puede ser dañada {Count} puntos este turno.'
   Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de puntos de daño
     cada turno.'
 Invincible:
-  Name: Invencibilidad
-  Description: "{OwnerName} no será infilngida mas de 1 daño {Duration:plural one='hasta\
-    \ el final de su turno' other='durante los próximos % turnos'}."
-  Brief: '{OwnerName} no perderá mas de un punto de vida de una vez.'
+  Name: Perfección
+  Description: "{OwnerName} no perderá mas de 1 punto de vida cada vez que pierda\
+    \ vida {Duration:plural one='hasta el final de su turno' other='durante los próximos\
+    \ % turnos'}."
+  Brief: '{OwnerName} no perderá mas de 1 punto de vida de una vez.'
 TurnStartDontLoseBlock:
   Name: Bloqueo Conservado
-  Brief: '{OwnerName} no pierde |Bloqueo| al inicio de cada turno.'
-  Description: "{OwnerName} no pierde |Bloqueo| al inicio {Level:plural one='del próximo\
-    \ turno' other='de los próximos % turnos'}."
+  Brief: '{OwnerName} no pierde puntos de |Bloqueo| al inicio de cada turno.'
+  Description: "{OwnerName} no pierde sus puntos de |Bloqueo| al inicio {Level:plural\
+    \ one='del próximo turno' other='de los próximos % turnos'}."
 Amulet:
   Name: Amuleto
   Description: Niega {Level:plural one='el siguiente debuff' other='los siguientes
