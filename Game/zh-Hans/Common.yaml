@@ -27,7 +27,6 @@ Game:
 
 Explain:
   Title: 说明
-  LoseShinning: '你总是能获取正在操控角色的专属卡牌，即使你失去了初始展品。'
   RollCard: |-
     「奖励卡牌池」备选规则：
 
@@ -45,6 +44,11 @@ Explain:
 
     * 光耀展品：空白卡牌 会直接让规则 3 失效。
     * 一张总费用不少于 5 的卡牌，其数字费用部分<sprite="ManaSprite" name="X">不受规则 1 约束。它们往往具备减少数字费用的办法。
+  LoseShinning: '你总是能获取正在操控角色的专属卡牌，即使你失去了初始展品。'
+  RemiliaMeet: |-
+    1.替换为相同费用的吸血牌。
+    2.替换时保留卡牌的升级性。
+  ShinmyoumaruForge: '攻击牌替换为攻击牌，防御牌替换为防御牌。'
 
 UI:
   Yes: 是
@@ -168,6 +172,9 @@ Museum:
   Character: 角色
   ManaType: 法力类型
   CardType: 卡牌类型
+  CardNotReady: |-
+    这张牌还没有准备好。
+    请期待游戏更新。
   UnRevealCard: 未知卡牌
   UnRevealExhibit: 未发现展品
   LockExhibit: 未解锁展品
@@ -675,7 +682,7 @@ BattleHint:
   Mana: |-
     鼠标右键点击卡牌可查看详情。（游戏中的大多数卡牌面板均可如此操作。）
     打出卡牌需要消费法力。卡牌的法力费用显示在右上角。
-    法力的种类有<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="U"><sprite="ManaSprite" name="B"><sprite="ManaSprite" name="R"><sprite="ManaSprite" name="G">五种颜色的基础法力，无色法力<sprite="ManaSprite" name="C">及可以用于支付任意费用的<sprite="ManaSprite" name="P">。
+    法力的种类有<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="U"><sprite="ManaSprite" name="B"><sprite="ManaSprite" name="R"><sprite="ManaSprite" name="G">五种颜色的基础法力，无色法力<sprite="ManaSprite" name="C">及可以用于支付任意费用的彩色法力<sprite="ManaSprite" name="P">。
     如同<sprite="ManaSprite" name="2">的数字费用，表示该费用可以使用任意的 2 点法力支付。
   ManaPanel: |-
     法力面板显示了主角当前回合剩余的法力。
