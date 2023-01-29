@@ -14,7 +14,8 @@ HuoshuPiyi:
 YanZianbei:
   Name: Muszelka Kauri Jaskółki
   FlavorText: 「Nieszkończone Źródło Życia」
-  Description: Na początku tury {PlayerName:g} ulecz {Value1} życia.
+  Description: Na początku tury {PlayerName:g} ulecz {Value1:plural one='% punkt'
+    few='% punkty' many='% punktów'} życia.
 PenglaiYuzhi:
   Name: Gałąź z Hourai Obsadzona Klejnotami
   FlavorText: 「Ziemie Kolorów Snów」
@@ -74,7 +75,8 @@ GuizuJiubei:
   Name: Misa Sake Oni
 BaochunRenou:
   Description: "Dodaje {BaseMana} do bazy many.\nGdy {PlayerName} aktywuje swoją |Kartę\
-    \ Zaklęć|, ulecz {Value1} życia."
+    \ Zaklęć|, ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia."
   Name: Kukiełka Ogłoszająca Wiosnę
   FlavorText: Jest Wiosna!
 Wanbaochui:
@@ -171,7 +173,7 @@ ReimuR:
   Name: Krwiożercza Kula Yin-Yang
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Reimu| są dodane\
     \ do puli kart.\nGdy wróg zostanie pokonany {PlayerName} zyskuje {Value1} |Mocy|\
-    \ oraz leczy {Value2} życia."
+    \ oraz leczy {Value2:plural one='% punkt' few='% punkty' many='% punktów'} życia."
   FlavorText: Cios od tego powinien być bolesny.
 MarisaB:
   Name: Mroczna Księga Czarów
@@ -217,7 +219,7 @@ KoishiB:
     do puli kart.
   FlavorText: (W trakcie rozwoju...)
 PiaoliangPanzi:
-  Name: Piękny Tależ
+  Name: Piękny Talerz
   Description: "Dodaje {BaseMana} do bazy many.\nNa początku pierwszej tury {PlayerName:g}\
     \ ulepsz {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych\
     \ kart'} w dłoni na czas walki."
@@ -248,8 +250,8 @@ ShijieSuipian:
 QinaKapian:
   Name: Karty Zenera
   Description: "Dodają {BaseMana} do bazy many.\nGdy {PlayerName} aktywuje jej |Kartę\
-    \ Zaklęć|, strać {Value1} życia i dobierz {Value2:plural one='% kartę' few='%\
-    \ karty' many='% kart'}."
+    \ Zaklęć|, strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia i dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}."
   FlavorText: ENIGMA = 31# + 6# + 30#
 Laiwating:
   Name: Lævateinn
@@ -334,7 +336,8 @@ JimuWanju:
   FlavorText: Zabawki, które rozwijają zainteresowania dzieci. Wyglądają znajomo.
 HuanxiangxiangYuanqi:
   Name: Kronika Gensoukyou
-  Description: Gdy {PlayerName} zagra kartę zdolności, ulecz {Value1} życia.
+  Description: Gdy {PlayerName} zagra kartę zdolności, ulecz {Value1:plural one='%
+    punkt' few='% punkty' many='% punktów'} życia.
   FlavorText: Dobrze przechowany kodeks.
 DiyuChepiao:
   Name: Bilet do Piekła
@@ -352,9 +355,9 @@ ZhanshuDaoliqi:
     zaklęć.
 Yashemao:
   Name: Czapka z Daszkiem
-  Description: Dobierz o {Value1} więcej {Value1:plural one='% kartę' few='% kart'
-    many='% kart'} podczas fazy doboru.
-  FlavorText: Załóż tą czapkę i będziesz pisała opowieści wyciskające łzy.
+  Description: Dobierz o {Value1} więcej {Value1:plural one='kartę' few='kart' many='kart'}
+    podczas fazy doboru.
+  FlavorText: Załóż tę czapkę i będziesz pisała opowieści wyciskające łzy.
 YueYuyi:
   Name: Księżycowy Welon
   Description: Na początku walki zyskaj |Nieskazitelny Jedwab| na {Value1:plural one='%
@@ -362,13 +365,14 @@ YueYuyi:
   FlavorText: Nie jest zbyt użyteczny w walce z bossami.
 Yaoshi:
   Name: Filar
-  Description: Gdy {PlayerName} otrzyma obrażenia poraz pierwszy w walce, zyskaj {Mana}.
+  Description: Gdy {PlayerName} otrzyma obrażenia po raz pierwszy w walce, zyskaj
+    {Mana}.
 Mengriji:
   Name: Pamiętnik Snów
   Description: Na początku tury {PlayerName:g}, jeżeli w poprzedniej turze nie zagrano
     karty obrony, zyskaj {Mana}.
 Heilianhua:
-  Name: Czarny Lotus
+  Name: Czarny Lotos
   Description: Na początku walki zyskaj {Mana}.
   FlavorText: Czy nie byłoby miło, gdyby mogł dodać trzy many dowolnego koloru?
 Bianhua:
@@ -489,8 +493,8 @@ Jiaobu:
     karty' many='% losowych kart'} obrony w bibliotece.
   Name: Taśma Klejąca
 Tuanzi:
-  Description: Na końcu walki {PlayerName} leczy {Value1} życia i zyskuje {Value2}
-    <sprite="Point" name="Power">.
+  Description: Na końcu walki {PlayerName} leczy {Value1:plural one='% punkt' few='%
+    punkty' many='% punktów'} życia i zyskuje {Value2} <sprite="Point" name="Power">.
   Name: Dango
 HuangyouJiqiren:
   FlavorText: "Robocik zastanawiający się nad sensem jego istnienia.\n\"What is my\
@@ -498,8 +502,8 @@ HuangyouJiqiren:
   Name: Robocik od Masła
   Description: '|Picie herbaty| w Szparach przyznaje nagrodę kart.'
 JiangyouPing:
-  Description: Gdy {PlayerName} odwiedza Takanę, ulecz {Value1} życia i zyskaj {Value2}
-    <sprite="Point" name="Power">.
+  Description: Gdy {PlayerName} odwiedza Takanę, ulecz {Value1:plural one='% punkt'
+    few='% punkty' many='% punktów'} życia i zyskaj {Value2} <sprite="Point" name="Power">.
   Name: Butelka Sosu Sojowego
 Shiyou:
   Description: Za każde wydane {Value1} {Mana} zyskaj {Value2} <sprite="Point" name="Gold">.
@@ -531,22 +535,24 @@ Pijiu:
     \ dodaj |Podpity| do biblioteki."
   Name: Piwo
 Guangjian:
-  Description: Na początku walki z Bossem zyskaj {Value1} |Mocy|.
+  Description: Gdy {PlayerName} zada obrażenia po raz pierwszy w walce, nałóż {Value1:plural
+    one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|} na cel(e).
   Name: Miecz Świetlny
 Moping:
   Name: Butelka
   Description: "Na końcu {Value2:plural one='następnej walki' other='następnych %\
-    \ walk'} ulecz {Value1} życia i zyskaj {Value1} <sprite=\"Point\" name=\"Power\"\
-    >.\n|Odnawiane, gdy wejdziesz w Szparę.|"
+    \ walk'} ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'} życia\
+    \ i zyskaj {Value1} <sprite=\"Point\" name=\"Power\">.\n|Odnawiane, gdy wejdziesz\
+    \ w Szparę.|"
 Modaoshu:
   Name: Magiczny Przewodnik
   Description: Gdy nabyta, dodaj jedną z {Value1} losowych rzadkich neutralnych kart
     aby dodać do biblioteki.
 Shaoyao:
   Name: Piwonia
-  Description: Za każde wydane {Value1} {Mana} ulecz {Value2} życia. Ten efekt aktywuje
-    się jedynie {Value3:plural one="raz" other="razy"} na walkę. Resetowane na końcu
-    walki.
+  Description: Za każde wydane {Value1} {Mana} ulecz {Value2:plural one='% punkt'
+    few='% punkty' many='% punktów'} życia. Ten efekt aktywuje się jedynie {Value3:plural
+    one="raz" other="razy"} na walkę. Resetowane na końcu walki.
   FlavorText: Roślina lecznicza kultywowana przez Eientei.
 Bingkuai:
   Name: Kostka Lodu
@@ -561,7 +567,7 @@ Shuye:
   Description: Za każde wydane {Value1} {Mana} zyskaj {Value2:plural one='% |Unik|'
     few='% |Uniki|' many='% |Uników|'}. Resetowane na końcu walki.
 Putao:
-  Name: Winogrony
+  Name: Winogrona
   Description: Gdy nabyta, zyskaj {Value1} maksymalnego życia.
 TiangouMuji:
   Name: Chodaki Tengu
@@ -627,14 +633,14 @@ ZhuQingting:
     one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.
 HeiseBijiben:
   Name: Czarny Notatnik
-  Description: Na początku walki wszyscy przeciwnicy ze znanym imieniem tracą {Value1}
-    życia.
+  Description: Na początku walki wszyscy przeciwnicy ze znanym imieniem tracą {Value1:plural
+    one='% punkt' few='% punkty' many='% punktów'} życia.
 LuoboMoxing:
   Name: Model Robota
   Description: Na początku walki z Elitarnym wrogiem lub Bossem zyskaj {Value1} |Mocy|.
 JingboliJing:
   Name: Oczyszczone Kryształowe Zwierciadło
-  Description: Podczas |Przewidzeń|, |Przweidź| o {Value1:plural one='% kartę' few='%
+  Description: Podczas |Przewidzeń|, |Przewidź| o {Value1:plural one='% kartę' few='%
     karty' many='% kart'} więcej.
 Headphone:
   Name: Słuchawki Wysokiej Jakości
@@ -649,13 +655,14 @@ WaijieYouxiji:
   Description: Na końcu walki zyskaj {Value1} <sprite="Point" name="Power">.
 WaijieYanshuang:
   Name: Krem pod Oczy ze Świata Zewnętrznego
-  Description: Na końcu walki ulecz {Value1} życia.
+  Description: Na końcu walki ulecz {Value1:plural one='% punkt' few='% punkty' many='%
+    punktów'} życia.
 JingjieGanzhiyi:
   Name: Graniczny Wykrywacz
   Description: '|p:Pozwoli spostrzeżyć prawdziwe oblicza rzeczywistości.|'
 Dahuoji:
   Name: Zapalniczka
-  Description: Gdy {PlayerName} zada obrażenia atakami poraz pierwszy w walce, nałóż
+  Description: Gdy {PlayerName} zada obrażenia atakami po raz pierwszy w walce, nałóż
     na cel(e) {Value1} |Wrażliwości|.
 JingQiXi:
   Name: Wyziew Wieloryba
