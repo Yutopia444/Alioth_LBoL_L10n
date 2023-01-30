@@ -196,9 +196,9 @@ GuizuJiubei:
 AizheHongshi:
   Name: Pierre d'Aja
   Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} finit son\
-    \ tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|. Ensuite,\
-    \ ajoutez {Value2} |Lumière{Value2:plural one=' Solaire Réfractée' other='s Solaires\
-    \ Réfractées'}| à la défausse."
+    \ tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nAu début\
+    \ du combat, ajoutez {Value2} |Lumière{Value2:plural one=' Solaire Réfractée'\
+    \ other='s Solaires Réfractées'}| à la pioche."
   FlavorText: Peut être utilisé pour faire fondre les écailles de glace.
 HouhuMen:
   Name: Porte Dérobée
@@ -234,20 +234,20 @@ KongbaiKapai:
   Description: "Ajoute {BaseMana} à la base de mana.\nLes récompenses de carte ont\
     \ {Value1} option{Value1:plural one=''others='s'} en plus. Des cartes de toutes\
     \ les couleurs sont ajoutées aux cartes disponibles."
-  FlavorText: Des accessoires dangereux qui amènent les gens à se demander "quel genre
-    d'existence est une carte".
+  FlavorText: Une merveille dangereuse qui vous amène à vous demander "quel genre
+    d'existence sont les cartes".
 HuiyeBaoxiang:
   Name: Coffre au Trésor de Kaguya
   Description: "Lorsque {PlayerName} débute son tour, gagnez 1 mana aléatoire.\nUne\
     \ fois acquis, gagnez {Value1} |Merveilles| aléatoires.\nEnsuite, ajoutez une\
     \ |Ordonnance d'Expulsion| à la bibliothèque."
-  FlavorText: Après avoir ouvert ce coffre au trésor, il y a trois kits à l'intérieur.
+  FlavorText: Lorsque vous ouvrez ce coffre au trésor, il y a trois brocarts à l'intérieur.
 QipaiYouhua:
   Name: Peinture à l'Huile Imposante
   Description: "Lorsque {PlayerName} débute son tour, gagnez 1 mana aléatoire.\nUne\
-    \ fois acquis, gagnez {Value1} <sprite=\"Point\" name=\"Gold\">, {Value2} {Value2:plural\
-    \ one='carte |Améliorée| aléatoire' other='cartes |Améliorées| aléatoires'} dans\
-    \ la bibliothèque et augmente la vie maximum de {Value3}."
+    \ fois acquis, gagnez {Value1} <sprite=\"Point\" name=\"Gold\">, |améliorez| {Value2}\
+    \ {Value2:plural one='carte aléatoire' other='cartes aléatoires'} dans la bibliothèque\
+    \ et augmentez la vie maximum de {Value3}."
   FlavorText: "Résolvez les énigmes du tableau et vous pourrez obtenir tout l'héritage\
     \ de Kaguya.\nBien sûr, il faudra attendre après sa mort."
 Baota:
@@ -272,7 +272,7 @@ GanzhuYao:
     \ jusqu'à son maximum de points de vie. Cet effet ne fonctionne qu'une seule fois.\n\
     Après que cette |Merveille| a pris effet, {PlayerName} a sa vie maximum réduite\
     \ de {Value1} % et au début du combat, gagne {Value2} |Puissance{Value2:plural\
-    \ one='' other='s'}|."
+    \ one='' other='s'}|.\nNe sera pas perdue."
   Name: Élixir d'Orbe Outremer
   FlavorText: Je suis mort et je suis devenu plus fort.
 YizangnuoWuzhi:
@@ -367,9 +367,9 @@ ShanliangDengpao:
   FlavorText: Eurêka !
 ZhanshuDaoliqi:
   Name: Guide Tactique
-  Description: Les cartes de Talent coûtent {Mana} de moins.
+  Description: En combat, les cartes de Talent coûtent {Mana} de moins.
   FlavorText: Il n'y a qu'une longue chaîne dessus, ce qui est bien pour lancer des
-    sorts
+    sorts.
 Yashemao:
   Name: Casquette Plate
   Description: Piochez {Value1} {Value1:plural one='carte' other='cartes'} de plus
@@ -385,7 +385,7 @@ Yueshan:
   Name: Éventail Lunaire
   Description: Lorsque {PlayerName} débute son tour, ne perd que la moitié de ses
     |Boucliers| au lieu de la totalité.
-  FlavorText: J'ai entendu dire qu'il était utilisé en infraction auparavant.
+  FlavorText: J'ai entendu dire qu'il était autrefois utilisé dans des combats.
 ZhangchibangQiu:
   Name: Balle avec des Ailes
   FlavorText: Elle vole vite et rapporte un bon prix.
@@ -399,17 +399,17 @@ FeixiangJian:
   Name: Épée d'Hisou
   Description: Lorsque {PlayerName} débute son tour, infligez {Value1} dégât{Value1:plural
     one='' other='s'} à chaque ennemi.
-  FlavorText: Dans les travaux précédents, c'était un fusil de chasse.
+  FlavorText: Dans mon jeu précédent, c'était un fusil de chasse.
 YuekuangQiang:
   Name: Pistolet Lunaire
   Description: Chaque fois qu'une carte est défaussée, sauf à la fin du tour, inflige
     {Value1} dégât{Value1:plural one='' other='s'} à un ennemi aléatoire.
-  FlavorText: Dans les travaux précédents, c'était un fusil automatique.
+  FlavorText: Dans mon jeu précédent, c'était un fusil automatique.
 Yaoshi:
   Name: Clé de Voûte
   Description: Lorsque {PlayerName} subit des dégâts pour la première fois à chaque
     combat, gagnez {Mana}.
-  FlavorText: '"Répète !"'
+  FlavorText: '"Reviens, reviens !"'
 Mengriji:
   Description: Lorsque {PlayerName} débute son tour, si aucune carte de défense n'a
     été jouée au dernier tour, gagnez {Mana}.
@@ -517,11 +517,12 @@ SongjingMuyu:
   Name: Poisson en Bois
   Description: Au début de chaque combat contre un Boss, {PlayerName} gagne un nombre
     de points de vie égal au nombre de cartes dans la bibliothèque.
-  FlavorText: Utilisez-le pour chanter sur un ennemi, infligeant des dégâts magiques.
+  FlavorText: Utilisez-le pour réciter des incantations sur un ennemi, infligeant
+    des dégâts magiques.
 Saiqianxiang:
   Name: Boîte de Dons
-  Description: Déverrouille la capacité de | Collecter des fonds | dans les Failles,
-    accordant {Value1} <sprite="Point" name="Gold">.
+  Description: Déverrouille la capacité de |Lever des fonds| dans les Failles, accordant
+    {Value1} <sprite="Point" name="Gold">.
   FlavorText: Elle est vide.
 Shanbibu:
   Name: Tissu Agile
@@ -697,7 +698,7 @@ WaijieYanshuang:
 JingjieGanzhiyi:
   FlavorText: '"Cette chose est évidemment inutile, pourquoi est-ce un trésor caché
     ?"'
-  Name: Radar de Bordure
+  Name: Radar de Frontière
   Description: '|p:Permet de percevoir la vraie nature de la réalité.|'
 JingesiYushou:
   Description: Chaque fois que {PlayerName} gagne un malus pour la première fois à
@@ -724,8 +725,8 @@ Jiaobu:
   Name: Ruban Adhésif
   Description: Une fois acquis, |Améliore| {Value1} carte{Value1:plural one='' other='s'}
     de défense aléatoire{Value1:plural one='' other='s'} dans la bibliothèque.
-  FlavorText: Rien que par l'existence de ces deux frontières+, je peux me défendre
-    contre tous les tirs. Vous en pensez quoi, tous ?
+  FlavorText: "\"Rien que par l'existence de ces deux frontières+, je peux me défendre\
+    \ contre tous les tirs. Vous en pensez quoi, tous ?\""
 ChaojiMogu:
   Name: Super Champignon
   Description: Une fois acquis, gagnez {Value1} <sprite="Point" name="Power">.
@@ -775,12 +776,13 @@ YinzhiHuaibiao:
 ShiyanQicai:
   Name: Appareil de Laboratoire
   Description: Chaque fois que la pioche est mélangée, gagnez {Mana}.
-  FlavorText: "\"Eirin a dit qu'il pouvait amener le pouvoir bien au-delà de Gensokyo\""
+  FlavorText: "\"Eirin a dit que cela pouvait étendre leur pouvoir bien au-delà de\
+    \ Gensokyo\""
 Shiyou:
   Name: Pétrole
   Description: Chaque fois que {Value1} {Mana} ont été dépensés, gagnez {Value2} <sprite="Point"
-    name="Gold">. Prend effet jusqu'à {Value3} fois par bataille, se réinitialise
-    à la fin du combat.
+    name="Gold">. Prend effet jusqu'à {Value3} fois par combat. Se réinitialise à
+    la fin du combat.
   FlavorText: Connu sous le nom d'or liquide dans le monde extérieur, il doit être
     très précieux.
 Duandai:
@@ -788,7 +790,7 @@ Duandai:
   Description: Pendant un combat contre un boss ou un combat d'élite, lorsque {PlayerName}
     débute son tour, gagnez {Mana}.
   FlavorText: "\"J'ai entendu dire que si vous le détachez, vous pouvez libérer le\
-    \ pouvoir du démon scellé. Ça n'a aucun sens. Je suis tout à fait normale\""
+    \ pouvoir du démon scellé. Ça n'a aucun sens. Je suis tout à fait normale.\""
 FaliJingdian:
   Name: Sutra du Pouvoir Dharmatique
   Description: Chaque fois que la |Carte Sort| est activée, gagnez {Mana}.
@@ -810,9 +812,9 @@ ShoubiaoMazuiqiang:
   FlavorText: "\"Très furtif, l'ennemi ne pourra pas le repérer lorsqu'on l'utilise.\""
 Pijiu:
   Name: Bière
-  Description: "Au début du combat, {PlayerName} gagne {Value1} |Puissance{Value1:plural\
-    \ one=' Temporaire' other='s Temporaires'}|.\nUne fois acquise, ajoutez |Pompette|\
-    \ à la bibliothèque."
+  Description: "Au début du combat, {PlayerName} gagnez {Value1} |Puissance{Value1:plural\
+    \ one=' Temporaire' other='s Temporaires'}| et ajoutez {Value2} |Pompette{Value2:plural\
+    \ one='' other='s'}| à la bibliothèque."
   FlavorText: Tout le monde l'aime.
 HeiseBijiben:
   Name: Cahier Noir

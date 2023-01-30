@@ -687,7 +687,7 @@ ExilePotion:
     instables| à la défausse.
 PotionDefense:
   Name: Écho de Tir
-  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nJusqu'à\
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nJusqu'à\
     \ la fin du tour, chaque fois qu'une |Potion Instable| est utilisée, gagnez {Value1}\
     \ |Barrière{Value1:plural one='' other='s'}|."
 MasterOfCollection:
@@ -861,8 +861,8 @@ ReadBook:
   FlavorText: Dans le rapport annuel de Suzunaan l'année dernière, le nombre de livres
     empruntés par Toki a atteint la première place dans le groupe des enfants.
 Panzi:
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Lorsque\
-    \ piochée :| Ajoutez une |copie| de cette carte à la main."
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Arrivée\
+    \ dans la main :| Ajoutez une |copie| de cette carte à la main."
   Name: Assiette Remplie d'Eau
 TiangouOrder:
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nChaque fois\
@@ -1029,7 +1029,7 @@ PrepareParty:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPlacez\
     \ une carte de la main au-dessus de la pioche ou gagnez {Mana}."
 MihuanJack:
-  Name: Jack Psychédélique
+  Name: Jack the Ludo Bile
   Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} |Impulsions temporelles|.
 SakuyaGraze:
   Name: Esquive Accidentelle
@@ -1106,10 +1106,10 @@ PerfectServant:
   Name: Servante Parfaite
   Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"> dépensé :| Lorsque {PlayerName} débute son prochain tour, chaque\
-    \ carte dans la main |coûte temporairement| <sprite=\"ManaSprite\" name=\"1\"\
-    > de moins.\n|Pour chaque <sprite=\"ManaSprite\" name=\"U\"> dépensé :| Lorsque\
-    \ {PlayerName} débute son prochain tour, piochez {Value1} {Value1:plural one='carte'\
-    \ other='cartes'} de plus pendant l'étape de pioche et gagnez {Mana}."
+    \ carte dans la main |coûte temporairement| 1 mana aléatoire de moins.\n|Pour\
+    \ chaque <sprite=\"ManaSprite\" name=\"U\"> dépensé :| Lorsque {PlayerName} débute\
+    \ son prochain tour, piochez 1 carte de plus pendant l'étape de pioche et gagnez\
+    \ {Mana}."
 BackToFuture:
   Name: Retour vers le Futur
   Description: "Échangez les piles de pioche et de défausse.\nPiochez {Value1:plural\
@@ -1187,7 +1187,7 @@ PlayWithWater:
   Name: Jeux Aquatiques
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nDéfaussez\
     \ une carte."
-  FlavorText: Play with water.
+  FlavorText: Simple, mais amusant.
 NitoriUnderWater:
   Name: Couverture Aquatique
   Description: Gagnez {Value1} |Camouflage{Value1:plural one=' Optique' other='s Optiques'}|.
@@ -1405,8 +1405,8 @@ HekaHellRain:
     one='' other='s'} à chaque ennemi pour chaque carte jouée ce tour.
 ReisenAttack:
   Name: Rêve Lunatique
-  Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"2\"> dépensé :| Inflige\
-    \ {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi."
+  Description: "|Pour chaque {Mana} dépensé :| Inflige {Damage} dégât{Damage:plural\
+    \ one='' other='s'} à chaque ennemi."
 FlanPlayAlone:
   Name: Jeu Solitaire
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
@@ -1573,7 +1573,7 @@ TodayYesterday:
 FakeHuiye:
   Description: "|d:Cette carte est actuellement en cours de développement.\nVeuillez\
     \ revenir dans une future mise à jour !|"
-  Name: (Pseudo) histoire de bambou
+  Name: Conte du coupeur de bambou (faux)
 AttackWithEveryColor:
   Description: "|Pour chaque mana de couleur différente dépensé :| Inflige {Damage}\
     \ dégât{Damage:plural one='' other='s'}."
@@ -1696,7 +1696,7 @@ Wushuai:
   Description: '|Lorsque piochée :| Gagnez {Value1} |Verrouillé{Value1:plural one=''''
     other=''s''}| et |Exilez| cette carte.'
   Name: Épée Brillante
-  FlavorText: '"Voyez, votre étoile de la mort brille dans le ciel !"'
+  FlavorText: '"Regardez, votre étoile de la mort brille dans le ciel !"'
 Chunguang:
   Description: '|Lorsque pioché :| |Purifie| {Value1}.'
   Name: Éclat Pur
@@ -1786,8 +1786,8 @@ FlanBlack:
     pour se battre ~
 JunkoNightmare:
   Name: Cauchemar Tremblant
-  Description: "|d:Cette carte est actuellement en cours de développement.\nVeuillez\
-    \ revenir dans une future mise à jour !|"
+  Description: "|d:Nous ne savons pas encore si nous allons faire dix cartes de cycle\
+    \ tricolores.\nVeuillez revenir dans une future mise à jour !|"
 Shoot:
   Name: Tir
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
@@ -1816,8 +1816,8 @@ PManaCard:
   Description: Gagnez {Mana}.
 MoonPurify:
   Name: Purification
-  Description: Une carte aléatoire dans la main gagne |Pur| ce combat, supprimant
-    son composant de coût de mana coloré.
+  Description: "Une carte aléatoire dans la main gagne |Pur| ce combat, supprimant\
+    \ son composant de coût de mana coloré.\nPriorité aux cartes pouvant être purifiées."
   UpgradedDescription: Choisissez une carte dans la main. Elle gagne |Pur| ce combat,
     supprimant sa composante colorée de coût en mana.
 MultiShoot:
@@ -1877,7 +1877,7 @@ ArtificialJewellery:
 Xiaozhuo:
   Name: Pompette
   Description: "Gagnez {Value1} |Puissance{Value1:plural one=' Temporaire' other='s\
-    \ Temporaires'}|.\n"
+    \ Temporaires'}|."
   FlavorText: Vous êtes ivre, la chance de l'ennemi est venue.
 LilyoftheValley:
   Name: Muguet
@@ -2022,7 +2022,7 @@ TigerNeijin:
     \ des dégâts non bloqués d'une attaque, placez cette carte depuis votre défausse\
     \ dans votre main."
 MeilingAbility:
-  Name: Magnifique Jeunesse
+  Name: Poing Arc-en-ciel Intense
   Description: Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}| chaque fois
     que vous gagnez de la |Puissance| ou de la |Puissance Temporaire|.
 MeilingRain:
@@ -2043,7 +2043,7 @@ LifeGame:
     \ one='' other='s'} de vie.|"
 SanaeRice:
   Name: Rinçage du Riz
-  Description: Inflige des dégâts à tous les ennemis et restaure une quantité de santé
+  Description: Inflige 10 dégâts à tous les ennemis et restaure une quantité de santé
     égale aux dégâts non bloqués.
 MistLake:
   Name: Lac de Brume
@@ -2094,9 +2094,8 @@ LilyAttack:
     \ ennemis.\nAjoutez |Héraut de Lily White| à votre main."
 GatherFairy:
   Name: Assemblée de Fées
-  Description: Piochez {Value1} carte{Value1:plural one='' other='s'} avec un coût
-    supérieur à 2, {Value1:plural one='son coût' other='leur coût'} sera temporairement
-    réduit de 1 et {Value1:plural one='elle sera |Retenue|' other='elles seront |Retenues|'}.
+  Description: "(code non écrit)\nPiochez 4 cartes et augmentez la limite de main\
+    \ à 12.\n"
 Jubin:
   Name: Brise Iceberg
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -2178,3 +2177,8 @@ ReimuFestival:
 FrostNova:
   Name: Nova de Givre
   Description: Effacez le Froid et la Barrière ou Bouclier.
+Psychedelic:
+  Name: Psychédélique
+  Description: Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural
+    one='' other='s'} de vie et gagnez {Value2} <sprite="Point" name="Power">.
+  FlavorText: '"Est-ce que je rêve encore ?"'
