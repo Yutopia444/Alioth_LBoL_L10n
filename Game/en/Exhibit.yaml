@@ -29,14 +29,14 @@ ReimuR:
 ReimuW:
   Description: |-
     Adds {BaseMana} to the mana base. Cards unique to |Reimu| are added to the card pool.
-    At the end of {PlayerName}'s turn, if there is any unspent mana, gain {Value1} |Barrier|.
+    If there is any unspent mana at the end of {PlayerName}'s turn, gain {Value1} |Barrier|.
   Name: Hakurei Purification Rod
   FlavorText: A very versatile prop that is used to launch projectiles, create boundaries,
     purify curses, etc.
 MarisaB:
   Description: |-
     Adds {BaseMana} to the mana base. Cards unique to |Marisa| are added to the card pool.
-    At the start of combat, add an |Occult| to the hand.
+    At the start of {PlayerName}'s first turn each combat, add an |Occult| to the hand.
   Name: Dark Grimoire
   FlavorText: It contains a terrific amount of Dark♂ knowledge.
 MarisaR:
@@ -48,19 +48,19 @@ MarisaR:
 SakuyaW:
   Description: |-
     Adds {BaseMana} to the mana base. Cards unique to |Sakuya| are added to the card pool.
-    At the start of combat, add {Value1:plural one='% |Throwing Knife+|' other='% |Throwing Knives+|'} to the hand.
+    At the start of {PlayerName}'s first turn each combat, add {Value1:plural one='% |Throwing Knife+|' other='% |Throwing Knives+|'} to the hand.
   Name: Spare Throwing Knives
   FlavorText: As long as there are enough spares, you don't have to pick up the thrown
     flyers again.
 SakuyaU:
   Description: |-
     Adds {BaseMana} to the mana base. Cards unique to |Sakuya| are added to the card pool.
-    Draw {Value1} more {Value1:plural one='card' other='cards'} during the draw step.
+    Draw {Value1} more {Value1:plural one='card' other='cards'} during each draw step.
   Name: Magic Poker
   FlavorText: Hardworking maids, online licensing (Chinese meme).
 CirnoU:
   Description: "Adds {BaseMana} to the mana base. Cards unique to |Cirno| are added\
-    \ to the card pool.\nBlue attack cards also apply |Cold| to their target(s)."
+    \ to the card pool.\nBlue attack cards also apply |Cold|."
   FlavorText: '{Work in progress...)'
 
   Name: Cirno's Ice Crystal
@@ -85,7 +85,7 @@ KoishiB:
 PiaoliangPanzi:
   Description: |-
     Adds {BaseMana} to the mana base.
-    At the start of {PlayerName}'s first turn each combat, upgrade {Value1} random cards in the hand until the end of combat.
+    At the start of {PlayerName}'s first turn each combat, upgrade {Value1} random cards in the hand until end of combat.
   Name: Beautiful Plate
   FlavorText: Use by throwing it out and breaking it.
 DatiangouMaifan:
@@ -97,7 +97,7 @@ DatiangouMaifan:
 Bingzhilin:
   Description: |-
     Adds {BaseMana} to the mana base.
-    Whenever an ability is played, {Value1:plural one='% random card' other='% random cards'} in the hand |temporarily cost{Value1:plural one='s' other=''}| {Mana} less to play.
+    Whenever an ability is played, {Value1:plural one='% random card' other='% random cards'} in the hand |temporarily cost{Value1:plural one='s' other=''}| {Mana} less.
   Name: Ice Scale
   FlavorText: It doesn't even melt when you hold it over a fire.
 ShijieSuipian:
@@ -125,12 +125,13 @@ Ganggenier:
   Description: |-
     Adds {BaseMana} to the mana base.
     All attack cards are |Accurate|.
-  FlavorText: A must-hit shot. But in quite a few storys, people always manage to
+  FlavorText: A must-hit shot. But in quite a few stories, people always manage to
     avoid it.
 AizheHongshi:
   Description: |-
     Adds {BaseMana} to the mana base.
-    At the end of {PlayerName}'s turn, gain {Value1} |Firepower|. Then, add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the discard pile.
+    At the end of {PlayerName}'s turn, gain {Value1} |Firepower|.
+    At the start of combat, add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the draw pile.
   Name: Stone of Aja
   FlavorText: It can be used to melt the Ice Scale.
 HouhuMen:
@@ -142,13 +143,13 @@ HouhuMen:
 BaochunRenou:
   Description: |-
     Adds {BaseMana} to the mana base.
-    Whenever {PlayerName} activates her |Spell Card|, gain {Value1} life.
+    Whenever {PlayerName} activates her Spell Card, gain {Value1} life.
   Name: Doll of Announcing Spring
   FlavorText: It's Spring!
 Wanbaochui:
   Description: |-
     Adds {BaseMana} to the mana base.
-    For each {Mana} spent to play a |Basic| card, increase its numeric effects by 100%. (Spending <sprite="ManaSprite" name="P"> does not apply.)
+    For each {Mana} spent to play a |Basic| card, increase its numeric effects by 100%. (Spending <sprite="ManaSprite" name="P"> does not apply this effect.)
   Name: Miracle Mallet
   FlavorText: Ordinary things gain extraordinary power.
 Yuerang:
@@ -174,7 +175,8 @@ KongbaiKapai:
 QipaiYouhua:
   Description: "At the start of {PlayerName}'s turn, gain 1 random mana.\nWhen acquired,\
     \ gain {Value1} <sprite=\"Point\" name=\"Gold\">, |Upgrade| {Value2} random card{Value2:plural\
-    \ one='' other='s'} in the library and increase maximum life by {Value3}."
+    \ one='' other='s'} in the library and {PlayerName}'s maximum life is increased\
+    \ by {Value3}."
   Name: Imposing Oil Painting
   FlavorText: "Solve the riddle on the painting and you will inherit Kaguya's entire\
     \ estate.\nOnly after her death, of course."
@@ -228,8 +230,8 @@ Yuhangfu:
   FlavorText: It was quite popular decades ago in outside world.
 GanzhuYao:
   Description: |-
-    The next time {PlayerName} would be defeated, they heal to maximum life instead. This effect only works once.
-    After this |Exhibit| has taken effect, {PlayerName}'s maximum life is reduced by {Value1}% and at the start of combat, they gain {Value2} |Firepower|.
+    The next time {PlayerName} would be defeated,heal to maximum life instead. This effect only works once.
+    After this |Exhibit| has taken effect, {PlayerName}'s maximum life is reduced by {Value1}% and at the start of combat, gain {Value2} |Firepower|.
   Name: Ultramarine Orb Elixir
   FlavorText: I died and became stronger.
 Xunlongchi:
@@ -354,7 +356,7 @@ ZheyangSan:
   Name: Parasol
   FlavorText: Tonight, its owner don't need it anymore.
 Pingguo:
-  Description: When acquired, gain {Value1} maximum life.
+  Description: When acquired, {PlayerName} gains {Value1} maximum life.
   Name: Apple
   FlavorText: The place of production is the fruit garden of the Scarlet Devil Mansion.
 PortalGun:
@@ -370,23 +372,23 @@ TiangouYuyi:
   FlavorText: The raven tengus rely on it for the reason they run faster than anyone
     else.
 BoreMianju:
-  Description: Whenever {Value1} attack cards are played in a turn, {PlayerName} gains
-    {Value2} |Firepower|.
+  Description: Whenever {PlayerName} plays {Value1} attack card{Value1:plural one=''
+    other='s'} in a turn, gain {Value2} |Firepower|.
   Name: Hannya Mask
   FlavorText: Pronounced 'Bojar'.
 HuliMianju:
-  Description: Whenever {Value1} attack cards are played in a turn, {PlayerName} gains
-    {Value2} |Spirit|.
+  Description: Whenever {PlayerName} plays {Value1} attack card{Value1:plural one=''
+    other='s'} in a turn, {PlayerName} gains {Value2} |Spirit|.
   Name: Fox Mask
   FlavorText: The most common style of mask.
 HuonanMianju:
-  Description: Whenever {Value1} attack cards are played in a turn, {PlayerName} gains
-    {Value2} |Block|.
+  Description: Whenever {PlayerName} plays {Value1} attack card{Value1:plural one=''
+    other='s'} in a turn, {PlayerName} gains {Value2} |Block|.
   Name: Hyottoko Mask
   FlavorText: If you look closely, you can even see the nose hairs.
 XiwangMianju:
-  Description: Whenever {Value1} attack cards are played in a turn, gain {Value2}
-    <sprite="Point" name="Power">.
+  Description: Whenever {PlayerName} plays {Value1} attack card{Value1:plural one=''
+    other='s'} in a turn, {PlayerName} gains {Value2} <sprite="Point" name="Power">.
   Name: Mask of Hope
   FlavorText: The hope of being rediscovered.
 DiyinLeigu:
@@ -477,7 +479,7 @@ TangSan:
   Name: Karakasa
   FlavorText: A childhood friend of Kogasa.
 Putao:
-  Description: When acquired, gain {Value1} maximum life.
+  Description: When acquired, {PlayerName} gains {Value1} maximum life.
   Name: Grape
   FlavorText: Courtesy of Monoriko Aki, God of Harvest.
 TiangouMuji:
@@ -565,8 +567,8 @@ Bumengwang:
   Name: Dream Catcher
   FlavorText: Also known as a 'hoover', it is mainly used to catch ghosts.
 JudaShaozi:
-  Description: 'Whenever a |Misfortune| is added to the library, gain {Value1} maximum
-    life.'
+  Description: 'Whenever a |Misfortune| is added to the library, {PlayerName} gains
+    {Value1} maximum life.'
   Name: Huge Spoon
   FlavorText: Its owner comes and eats everything.
 JiangyouPing:
@@ -625,7 +627,8 @@ Yushenqian:
   Name: Omikuji
   FlavorText: '"I got it from Moriya Shrine on the mountain."'
 Cookie:
-  Description: When acquired, gain {Value1} maximum life. Then, heal to max.
+  Description: When acquired, {PlayerName} gains {Value1} maximum life. Then, heal
+    to maximum life.
   Name: Delicious Cookie
   FlavorText: "\"It's a good day.\""
 ZhinengYinxiang:
@@ -797,8 +800,8 @@ TianwenWangyuanjing:
   FlavorText: The Moon and the Big Dipper can be observed closely.
 GuizuJiubei:
   Description: "Adds {BaseMana} to the mana base.\nAt the start of {PlayerName}'s\
-    \ turn, gain |Temporary Firepower| equal to the number of attacks played last\
-    \ turn this combat."
+    \ turn, gain |Temporary Firepower| equal to the number of attack cards played\
+    \ last turn this combat."
   Name: Oni Sake Dish
   FlavorText: It looks more like a large bowl.
 Modaoshu:
@@ -809,7 +812,7 @@ Modaoshu:
 PingzhuangLinghun:
   Description: "Adds {BaseMana} to the mana base.\nDefeated enemies no longer drop\
     \ <sprite=\"Point\" name=\"Power\">. For each <sprite=\"Point\" name=\"Power\"\
-    > that would have dropped, gain {Value1} <sprite=\"Point\" name=\"Gold\"> instead."
+    > that would have dropped, gain {Value1} <sprite=\"Point\" name=\"Gold\">."
   Name: Bottled Soul
   FlavorText: "\"I hope you won't come to a devastating end.\""
 TaiguGouyu:
