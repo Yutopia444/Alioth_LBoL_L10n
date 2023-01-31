@@ -15,15 +15,15 @@ ReimuBlockR:
   Name: Bullet Extermination
   FlavorText: The savior can stop the bullet with a wave of hand.
 YaoguaiBuster:
-  Description: Deal {Damage} damage {Value1} times.
+  Description: Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.
   Name: Youkai Buster
 DoubleJiejie:
   Description: |-
     Deal {Damage} damage.
-    If {PlayerName} has |Barrier|, instead deal {Damage} damage twice.
+    If {PlayerName} has |Barrier|, instead deal that damage twice.
   UpgradedDescription: |-
     Deal {Damage} damage.
-    If {PlayerName} has |Barrier| or |Block|, instead deal {Damage} damage twice.
+    If {PlayerName} has |Barrier| or |Block|, instead deal that damage twice.
   Name: Duplex Barrier
 Fengmozhen:
   Description: Deal {Damage} damage.
@@ -56,10 +56,10 @@ Jinfuzhen:
 JingshenYishi:
   Description: |-
     Gain {Block} |Block|.
-    |Exile| a random card in the hand.
+    |Exile| a random card from the hand.
   UpgradedDescription: |-
     Gain {Block} |Block|.
-    |Exile| a card in the hand.
+    |Exile| a card from the hand.
   Name: Cleansing Ritual
 ShengtianKick:
   Description: |-
@@ -76,7 +76,8 @@ Fengmozhen4:
 
   Name: Evil-Sealing Circle
 TuimofuLuanwu:
-  Description: Deal {Damage} damage to a random enemy {Value1} times.
+  Description: Deal {Damage} damage to a random enemy {Value1} time{Value1:plural
+    one='' other='s'}.
   Name: Wild Exorcism Dance
 WunvKongwu:
   Description: |-
@@ -97,7 +98,7 @@ TwoBalls:
 ShensheRichang:
   Description: |-
     Gain {Value1} life.
-    Convert all of {PlayerName}'s |Block| into |Barrier|.
+    Convert {PlayerName}'s |Block| into |Barrier|.
   Name: Slice of Life
 Changzhizhen:
   Description: |-
@@ -139,7 +140,7 @@ OverJingjie:
   Name: Above the Realm
 Zhuizongfu:
   Description: |-
-    Deal {Damage} damage to a random enemy {Value1} times.
+    Deal {Damage} damage to a random enemy {Value1} time{Value1:plural one='' other='s'}.
     If {PlayerName} has |Temporary Firepower|, gain {Mana}.
 
   Name: Homing Amulet
@@ -153,15 +154,16 @@ DanmuDuijue:
   Description: |-
     Gain {Block} |Block|.
     Gain {Value1} |Reflection|.
-    This card is affected by |Firepower|.
+    This card is also affected by |Firepower|.
   Name: Spell Card Duel
   UpgradedDescription: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|.\nThis\
-    \ card is affected by |Firepower|."
+    \ card is also affected by |Firepower|."
 SmallPanding:
   Description: |-
     Gain {Value1} |Graze|.
     Gain {Value2} |Vulnerable|.
   Name: Tiny Hitbox
+  UpgradedDescription: Gain {Value1} |Graze|.
 YakongDianxue:
   Description: |-
     Deal {Damage} damage.
@@ -180,11 +182,11 @@ QinggeManwu:
     Draw {Value1} cards and |Upgrade| them until the end of combat.
   Name: Maiden's Waltz
   UpgradedDescription: "Draw {Value1} cards and |Upgrade| them until the end of combat.\n\
-    For each already |Upgraded| card drawn this way, gain {Value2} |Barrier|."
+    Gain {Value2} |Barrier| for each already |Upgraded| card drawn this way."
 YinyangXueyin:
   Description: |-
     Lose {Value2} life.
-    Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and {Value1} |Temporary Spirit|.
+    Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
 
   Name: Yin-Yang Rune
 HuanxiangTouying:
@@ -200,7 +202,7 @@ HuanxiangTouying:
 ChuanyueJiejie:
   Description: |-
     Gain {Shield} |Barrier|.
-    Return an |Exiled| card to the hand.
+    Choose an |Exiled| card. Return it to the hand.
 
   Name: Crossing the Border
 OutInGap:
@@ -214,7 +216,7 @@ Jiangshen:
     Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang Orbs|'} to the hand.
   Name: Faithful Meditation
 BoliDajiejie:
-  Description: "Whenever {PlayerName} has |Block|, convert it to |Barrier|."
+  Description: "For the rest of combat, {PlayerName}'s |Block| is converted into |Barrier|."
 
   Name: The Great Hakurei Barrier
 EvilTuiZhi:
@@ -234,8 +236,8 @@ TaijiLiangyi:
   Name: The Birth of Yin-Yang
 Wunvyu:
   Description: |-
-    Deal {Damage} damage {Value1} times.
-    |While in hand|: Whenever a card is drawn, except during the draw step, increase this card's damage by {Value2} this combat.
+    Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.
+    |While in hand|: Whenever a card is drawn outside of the draw step, increase this card's damage by {Value2} this combat.
 
   Name: Hakurei's Evilest Orbs
 KuosanJiejie:
