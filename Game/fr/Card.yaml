@@ -39,7 +39,7 @@ Shenyuzha:
 YinyangCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Shield}\
     \ |Barrière{Shield:plural one='' other='s'}|."
-  Name: Jade Yin-Yang
+  Name: Orbe Yin-Yang
   FlavorText: Misumaru Tamatsukuri fournira le service après-vente.
 ShengtianKick:
   Name: Coup de Pied Ascensionnel
@@ -130,6 +130,7 @@ SmallPanding:
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nGagnez\
     \ {Value2} |Vulnérable{Value2:plural one='' other='s'}|."
   FlavorText: "\"Tant que le point vital n'est pas atteint, ce n'est pas grave !\""
+  UpgradedDescription: Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.
 Zhuizongfu:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
     \ aléatoire {Value1} fois.\nSi {PlayerName} a de la |Puissance Temporaire|, gagnez\
@@ -172,6 +173,8 @@ TwoBalls:
   Name: Orbes Équilibrés
   Description: Ajoutez {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}
     à la main.
+  FlavorText: L'Éternité donne naissance à l'Absolu, et l'Absolu donne naissance à
+    deux rituels.
 MingzhuAntou:
   Name: Frontière Secrète
   Description: Choisissez une parmi {Value1} cartes de défense aléatoires à ajouter
@@ -216,8 +219,8 @@ Jiangshen:
   FlavorText: "\"J'ai fait un vœu aux Dieux, et j'ai immédiatement choisi [Briser\
     \ les Frontières] ...\""
 EvilTuiZhi:
-  Description: "{Value1:plural one='La prochaine carte d'attaque jouée' other='Les\
-    \ % prochaines cartes d'attaque jouées'} ce tour inflige{Value1:plural one=''\
+  Description: "{Value1:plural one=\"La prochaine carte d'attaque jouée\" other=\"\
+    Les % prochaines cartes d'attaque jouées\"} ce tour inflige{Value1:plural one=''\
     \ other='nt'} le double de dégâts."
   Name: Exterminer le Mal
 DoubleLianhuadie:
@@ -292,6 +295,11 @@ UpgradePotion:
     \ de {Value1} point{Value1:plural one='' other='s'}."
   FlavorText: '"Chauffage, distillation, réaction, catalyse, si vous voulez gagner
     une bataille de danmaku, vous devez être bien préparé !"'
+  UpgradedDescription: "Ajoutez {Value2:plural one='% |Potion instable|' other='%\
+    \ |Potions instables|'} à la pioche.\nLes dégâts de base de la |Potion instable|\
+    \ sont augmentés de {Value1} point{Value1:plural one='' other='s'}.\nLorsque {PlayerName}\
+    \ finit son tour, les dégâts des |Potions instables| dans les piles de pioche\
+    \ et de défausse sont augmentés de {Value1}."
 OpenUniverse:
   Name: Univers Ouvert
   Description: "Retirez une carte de la pioche du combat.\nAjoutez-en 2 |copies| à\
@@ -478,6 +486,8 @@ CraftPotion:
   UpgradedDescription: "Ajoutez {Value1:plural one='% |Potion Instable|' other='%\
     \ |Potions instables|'} à la pioche.\nPiochez {Value2:plural one='% carte' other='%\
     \ cartes'}."
+  FlavorText: Parapluies rouges, perches blanches, après avoir mangé, allongez-vous
+    sur la planche...
 RedLaser:
   Name: Laser Inflammable
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
@@ -685,6 +695,9 @@ ExilePotion:
   Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} de
     la main. |Exilez|-{Value1:plural one='la' other='les'} et ajoutez autant de |Potions
     instables| à la défausse.
+  UpgradedDescription: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}
+    de la main, pioche et défausse. |Exilez|-{Value1:plural one='la' other='les'}
+    et ajoutez autant de |Potions instables| à la défausse.
 PotionDefense:
   Name: Écho de Tir
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nJusqu'à\
@@ -819,8 +832,8 @@ SuikaBigball:
     Perdez {Value1} |Puissance{Value1:plural one='' other='s'}|."
 YongyiAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi\
-    \ {Value1} fois.\nSi {PlayerName} a |Puissance Temporaire|, infligez autant de\
-    \ dégâts 1 fois de plus."
+    \ {Value1} fois.\nSi {PlayerName} a de la |Puissance Temporaire|, infligez autant\
+    \ de dégâts 1 fois de plus."
   Name: Déferlement de Violence
 MeihongPower:
   Description: "Lorsque {PlayerName} débute son tour, gagnez {Value1} |Puissance{Value1:plural\
@@ -931,7 +944,10 @@ ZhenmiaowanAttack:
 HatateDiscard:
   Name: Fabrication de l'Actualité
   FlavorText: "\"Le coupable n'est pas Marisa.\""
-  Description: "Jetez {Value1:plural one='% carte' other='% cartes'}.\nGagnez {Mana}."
+  Description: "Choisissez {Value1:plural one='% carte' other='% cartes'} de votre\
+    \ main et défaussez-{Value1:plural one='la' other='les'}.\nGagnez {Mana}."
+  UpgradedDescription: "Choisissez de {Value1} à {Value2} cartes de votre main et\
+    \ défaussez-les.\nObtenez {Mana}."
 PoorAttack:
   Description: "Perdez {Value1} <sprite=\"Point\" name=\"Gold\">.\nInflige {Damage}\
     \ dégât{Damage:plural one='' other='s'}."
@@ -1135,7 +1151,7 @@ CirnoAttackU:
   Name: Tir de Glace
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoAttackG:
-  Name: Fléchettes à Feuilles Vertes
+  Name: Feuilles Fléchettes
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoBlockU:
   Name: Bouclier de Glace
@@ -1227,7 +1243,7 @@ WaterPrincess:
 YonglinCard:
   Name: Le sage Reclus
   Description: Lorsque {PlayerName} joue la première carte à chaque tour, ajoutez
-    une copie de cette carte à la main. Elle |coûte temporairement|{Mana} et a |Exil|
+    une copie de cette carte à la main. Elle |coûte temporairement| {Mana} et a |Exil|
     et |Ethéré|.
   FlavorText: La représentante de la sagesse a choisi de se cacher, alors se cacher
     est-il un acte de sagesse ?
@@ -1256,10 +1272,9 @@ SatoriAttack:
     \ one='' other='s'}|."
   FlavorText: Il est similaire au "Cœur" populaire dans le monde extérieur.
 MystiaSing:
-  Description: "Appliquez {Value1} |Réduction{Value1:plural one=' Temporaire' other='s\
-    \ Temporaires'} de Puissance| à chaque ennemi.\nGagnez {Value1} <sprite=\"Point\"\
-    \ name=\"Power\">.\nAjoutez {Value2} |Ombre{Value2:plural one='' other='s'}| à\
-    \ la défausse."
+  Description: "Appliquez {Value1} |Réduction{Value1:plural one='' other='s'} de Puissance\
+    \ Temporaire| à chaque ennemi.\nGagnez {Value1} <sprite=\"Point\" name=\"Power\"\
+    >.\nAjoutez {Value2} |Ombre{Value2:plural one='' other='s'}| à la défausse."
   Name: Chant du Moineau Nocturne
   FlavorText: Les moineaux de nuit peuvent-ils chanter comme des trompettes et des
     réchauds à gaz ?
@@ -1292,9 +1307,9 @@ BailianBlack:
     le monde apprend de moi, c'est comme entrer dans la voie d'un démon.
 YinglangHowl:
   Name: Hurlement de Pleine Lune
-  Description: Appliquez {Value1} |Réduction{Value1:plural one=' Temporaire' other='s
-    Temporaires'} de Puissance| et {Value2} |Vulnérable{Value2:plural one='' other='s'}|
-    à chaque ennemi.
+  Description: Appliquez {Value1} |Réduction{Value1:plural one='' other='s'} de Puissance
+    Temporaire| et {Value2} |Vulnérable{Value2:plural one='' other='s'}| à chaque
+    ennemi.
 RemiliaJizao:
   Name: Impatience
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\nAucune autre\
@@ -1713,6 +1728,7 @@ Nightmare:
   Name: Cauchemar
   NonbattleDescription: Lorsqu'il y a un total de {Value1} |Cauchemars| dans la main,
     la pioche et la pile de défausse, {PlayerName} perd la partie.
+  FlavorText: Je me suis réveillé et je ne me souvenais plus des détails.
 BefuddledLife:
   Name: Embrouille
   FlavorText: "Il y a des rumeurs sur la plate-forme d'information mobile construite\
@@ -1937,14 +1953,18 @@ LoveLetter:
   Description: Donnez-le à la <color=#eab8bf>Fille en Mal d'Amour</color>, elle sera
     heureuse.
   Name: Lettre d'Amour
+  FlavorText: Ne doit pas être ouvert pour y jeter un coup d'œil.
 Regret:
   Name: Regret
+  FlavorText: Le désir d'amour parfait est façonné par les histoires, n'est-ce pas
+    ?
 Jealousy:
   Name: Jalousie
 Pressure:
   Description: '|En main :| Lorsque {PlayerName} finit son tour, perdez {Value1} <sprite="Point"
     name="Power">.'
   Name: Pression Invisible
+  FlavorText: Yachie simulera sa demande comme si c'était celle de quelqu'un d'autre.
 Drunk:
   Name: Ivre
   Description: "|En main :| Seules {Value1} cartes peuvent être jouées à chaque tour.\n\
@@ -2025,6 +2045,7 @@ MeilingAbility:
   Name: Poing Arc-en-ciel Intense
   Description: Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}| chaque fois
     que vous gagnez de la |Puissance| ou de la |Puissance Temporaire|.
+  FlavorText: Tout intrus sera traduit en justice.
 MeilingRain:
   Description: "Pour chaque <sprite=\"ManaSprite\" name=\"C\"> dépensé : gagnez {Value1}\
     \ |Bouclier{Value1:plural one='' other='s'}|, piochez {Value2} carte{Value2:plural\
@@ -2182,3 +2203,21 @@ Psychedelic:
   Description: Lorsque {PlayerName} finit son tour, perdez {Value1} point{Value1:plural
     one='' other='s'} de vie et gagnez {Value2} <sprite="Point" name="Power">.
   FlavorText: '"Est-ce que je rêve encore ?"'
+DragonYinyang:
+  Name: Orbes Yin-Yang du Dragon Arc-en-ciel
+  Description: '|d:Travaux en cours.|'
+DizangLove:
+  Name: Bodhi Instantané
+  Description: "|d:En travaux|\nChaque fois que vous jouez une carte avec une rareté\
+    \ |Commun|, gagnez 1 Puissance Temporaire.\n"
+SakuraBlade:
+  Name: Sakura Scintillant
+  Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nInfligez\
+    \ des dégâts égaux au nombre de cartes dans la zone d'exil {Valeur2} fois à tous\
+    \ les ennemis."
+MoonCat:
+  Name: Pompokorin Pleine Lune
+  Description: "|d:Travaux en cours|\nInfligez {Damage} dégât{Damage:plural one=''\
+    \ other='s'} à tous les ennemis, gagnez <sprite=\"ManaSprite\" name=\"G\">.\n\
+    |Croissance :| Le nombre de <sprite=\"ManaSprite\" name=\"G\"> gagnés augmente\
+    \ de 1."
