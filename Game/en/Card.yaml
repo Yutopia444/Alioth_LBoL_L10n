@@ -431,7 +431,7 @@ DefenseDraw:
   Name: Lunar Cycle
 SakuyaTea:
   Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|Debut:| Gain\
-    \ {Value2} life. This card costs {Mana} less to play this combat."
+    \ {Value2} life. This card costs {Mana} less this combat."
   ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|d:Debut:\
     \ Gain {Value2} life. This card costs {Mana} less this combat.|"
   Name: Tea Brewing
@@ -717,7 +717,7 @@ LightSpeed:
 PrivateVision:
   Description: "Discard a card.\nGain {Value1} |Graze|."
   Name: Private Vision
-  UpgradedDescription: "Discard a card.\nGain {Value1} |Graze|.\nGain {Value2} |Reflect|."
+  UpgradedDescription: "Discard a card.\nGain {Value1} |Graze|.\nGain {Value2} |Reflection|."
 FakeTimeline:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage to each enemy.\nGain {Value1}\
     \ |Time Pulse|."
@@ -781,7 +781,7 @@ SakuyaGraze:
     \ is shuffled, return this card to the hand instead of the draw pile."
   Name: Accidental Dodge
 LoyalMaid:
-  Description: "Gain {Shield} |Barrier|.\nAt the start of each Extra Turn, return\
+  Description: "Gain {Shield} |Barrier|.\nAt the start of each extra turn, return\
     \ this card from the discard pile to the hand. It |temporarily costs| {Mana}."
   Name: Loyal Servant
 BackOfKnife:
@@ -861,9 +861,12 @@ PotionJungle:
   Name: Fluorescent Forest
 UpgradePotion:
   Description: "Add {Value2:plural one='% |Unstable Potion|' other='% |Unstable Potions|'}\
-    \ to the discard pile.\nAt the end of {PlayerName}'s turn, increase the damage\
-    \ of all |Unstable Potions| in the draw and discard piles by {Value1}."
+    \ to the discard pile.\nIncrease the damage of |Unstable Potions| by {Value1}."
   Name: Refine Potion
+  UpgradedDescription: "Add {Value2:plural one='% |Unstable Potion|' other='% |Unstable\
+    \ Potions|'} to the discard pile.\nIncrease the damage of |Unstable Potions| by\
+    \ {Value1}.\nAt the end of {PlayerName}'s turn, increase the damage of all |Unstable\
+    \ Potions| in the draw and discard piles by {Value1}."
 HuojianSaoba:
   Description: "Gain {Value1} |Graze|.\nGain {Value2} |Charge|."
   Name: Rocket Broom
@@ -898,7 +901,7 @@ Alioth:
     Gain {Value2} |Charge|."
   Name: Alioth
 ScryAttack:
-  Description: "Deal {Damage} damage.\nWhenever {PlayerName} |scries|, return this\
+  Description: "Deal {Damage} damage.\nWhenever {PlayerName} |Scries|, return this\
     \ card from the discard pile to the hand."
   Name: Navigation Star
   FlavorText: The skill of finding the Big Dipper under the night sky has been lost
@@ -1477,14 +1480,14 @@ EventHorizon:
   UpgradedDescription: "Enter |Burst|.\nGain {Value1} |Temporary Firepower|.\nAt the\
     \ start of {PlayerName}'s next turn, they lose the game."
 HuoliQuankai:
-  Description: "While in |Burst|, {PlayerName}'s |Attacks| deal triple damage instead\
-    \ of double.\nGain {Value1} |Charge|."
+  Description: "While in |Burst|, {PlayerName}'s |Attacks| deal triple damage instead.\n\
+    Gain {Value1} |Charge|."
   UpgradedDescription: "While in |Burst|, {PlayerName}'s |Attacks| deal triple damage\
-    \ instead of double.\nEnter |Burst|."
+    \ instead.\nEnter |Burst|."
   Name: All Out
 WhiteLaser:
-  Description: "Deal {Damage} damage.\nGain {Shield} |Barrier|. This |Barrier| gain\
-    \ is affected by |Burst|."
+  Description: "Deal {Damage} damage.\nGain {Shield} |Barrier|. This effect is affected\
+    \ by |Burst|."
   Name: Lightning Laser
 BlazingStar:
   Description: "Gain {Block} |Block|. |Block| is not lost at the start of {PlayerName}'s\
