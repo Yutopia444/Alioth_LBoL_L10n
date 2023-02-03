@@ -71,7 +71,7 @@ SpiritNegative:
 
   Name: Spirit Down
 Invincible:
-  Name: Flawless
+  Name: Seamless
   Description: "{OwnerName} will not lose more than 1 life at once {Duration:plural\
     \ one='until end of turn' other='for the next % turns'}."
   Brief: '{OwnerName} will not lose more than 1 life at once.'
@@ -303,10 +303,10 @@ DangerousMagicianSe:
     Pulse|.
 SeeFengshuiSe:
   Name: Feng Shui Manipulation
-  Description: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a |Defense|\
-    \ card is sent to the discard pile this way, gain {Block} |Block|."
-  Brief: "At the start of {PlayerName}'s turn, |Scry|.\nWhenever a |Defense| card\
-    \ is sent to the discard pile this way, gain |Block|."
+  Description: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a defense\
+    \ card is sent to the discard pile while |Scrying|, gain {Block} |Block|."
+  Brief: "At the start of {PlayerName}'s turn, |Scry|.\nWhenever a defense card is\
+    \ sent to the discard pile while |Scrying|, gain |Block|."
 YonglinCardSe:
   Name: The Reclusive Sage
   Brief: When {PlayerName} plays the first card each round, add copies of that card
@@ -396,7 +396,7 @@ Reflect:
     effect.
   Brief: When damaged, deal damage back to the attacker and remove this effect.
 NextTurnLoseRandomMana:
-  Brief: At the start of {OwnerName}'s next turn, lose random mana.
+  Brief: At the start of {OwnerName}'s next turn, lose some mana at random.
   Name: Next Turn Mana Loss
   Description: At the start of {OwnerName}'s next turn, lose {Level} random mana.
 NextAttackUp:
@@ -477,8 +477,8 @@ TurnStartPurify:
   Description: "At the start of {PlayerName}'s next turn, |Purify| {Level}.\nRemove\
     \ this effect at the end of the round."
 LouguanJianSe:
-  Description: 'After {OwnerName} deals attack damage, {Level} |Lock On| is applied
-    to the target.'
+  Description: 'After {OwnerName} deals attack damage, apply {Level} |Lock-On| to
+    the target.'
   Name: Roukanken
 RockHardAura:
   Description: '{OwnerName} is protected by a keystone, taking {Level} less damage
@@ -550,7 +550,7 @@ Concentration:
   Name: Concentration
   Description: 'The next {Level:plural one='''' other=''% ''}|Overdrive| effect{Level:plural
     one='' does not'' other=''s do not''} cost |Charge| to activate.'
-  Brief: The next 1 or more |Overdrive| effects do not cost |Charge| to activate.
+  Brief: The next |Overdrive| effect does not cost |Charge| to activate.
 BurstUpgrade:
   Description: Increases the damage multiplier while in |Burst|.
   Name: All Out
@@ -558,7 +558,7 @@ BurstUpgrade:
 SolarSystemSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Charge|.
   Name: Orrery's Sun
-  Brief: At the start of {PlayerName}'s turn, gain some |Charge|.
+  Brief: At the start of {PlayerName}'s turn, gain |Charge|.
 ScryBlockSe:
   Description: Whenever {PlayerName} |scries|, they gain {Level} |Block|.
   Name: Premeditation
@@ -593,9 +593,9 @@ PerfectServantUSe:
   Name: Perfect Servant
 PerfectServantWSe:
   Description: After {OwnerName}'s next draw step, all cards in the hand |temporarily
-    cost| {Anys} less to play.
+    cost| {Level} less to play.
   Brief: After {OwnerName}'s next draw step, all cards in the hand |temporarily cost|
-    {Anys} less to play.
+    some random mana less to play.
   Name: Perfect Servant
 Poison:
   Description: At the start of {OwnerName}'s turn, they lose {Level} life, then lose
@@ -605,8 +605,8 @@ Poison:
 MoonWorldSe:
   Description: At the start of {PlayerName}'s turn, {Level} random card{Level:plural
     one='' other='s'} in the hand gain |Pure| this combat.
-  Brief: At the start of {PlayerName}'s turn, some random card{Level:plural one=''
-    other='s'} in the hand gain |Pure| this combat.
+  Brief: At the start of {PlayerName}'s turn, a number of random cards in the hand
+    gain |Pure| this combat.
   Name: Pure World
 RainbowMarketSe:
   Description: Whenever a card is |Exiled|, add {Level} random card{Level:plural one=''
@@ -619,7 +619,7 @@ KokoroDanceSe:
   Name: Noh of Darkness
   Brief: When enemy gain negative effects, {PlayerName} deals damage to her.
 TiangouOrderSe:
-  Description: When {OwnerName} takes attack damage, {PlayerName} gains {Level} |Block|
+  Description: When {OwnerName} takes attack damage, {PlayerName} gains {Level} |Block|.
   Name: Great Tengu's Decree
   Brief: When {OwnerName} takes attack damage, {PlayerName} gains |Block|.
 Interview:
@@ -635,7 +635,7 @@ InterviewDone:
     \ distribute a special issue of the Bunbunmaru Newspaper."
 EnemyEnergy:
   Description: '{OwnerName} gains <sprite="Point" name="Power"> equal to damage taken.
-    Used to unleash spell cards.'
+    Used to unleash Spell Cards.'
   Name: Energy
 EnemyEnergyNegative:
   Description: "{OwnerName} has expended <sprite=\"Point\" name=\"Power”>.\nThis should\
@@ -661,18 +661,20 @@ ChillSe:
   Description: '{OwnerName} loses {Level} life after Frostbite is applied.'
   Brief: '{OwnerName} loses life after Frostbite is applied.'
 SenluoJiejieSe:
-  Description: Detonate |Barrier| at the beginning of the next turn.
-  Brief: Detonate |Barrier| at the beginning of the next turn.
+  Description: At the start of {OwnerName}'s next turn, detonate all their |Barrier|.
+  Brief: At the start of {OwnerName}'s next turn, detonate all their |Barrier|.
   Name: Aggregate Border
 YachieDefendSe:
   Name: Tortoiseshell Hell
   Description: "Prevent the next {Level:plural one='% time' other='% times'} {OwnerName}\
     \ would lose life.\nIf the source is an enemy, that enemy loses that much life\
     \ instead."
+  Brief: "Prevents the next time {OwnerName} would lose life.\nIf the source is an\
+    \ enemy, that enemy loses that much life instead."
 TodayYesterdaySe:
   Name: Gensokyo, Past and Present
-  Brief: Whenever {OwnerName} grazes an attack, they gain some |Firepower|.
-  Description: Whenever {OwnerName} grazes an attack, they gain {Level} |Firepower|.
+  Brief: Whenever {OwnerName} |Grazes| an attack, they gain some |Firepower|.
+  Description: Whenever {OwnerName} |Grazes| an attack, they gain {Level} |Firepower|.
 UseCardToLoseGame:
   Brief: Lose the game after playing a certain number of cards.
   Name: Short Life Expectancy
@@ -705,7 +707,7 @@ KnifeWithLockedOn:
 ZhenmiaowanAttackSe:
   Description: Cost of skill card decrease by {Mana} in this turn.
   Brief: Cost of skill card decrease by {Mana} in this turn.
-  ExtraDescription: Cost of all cards decrease by {Mana} in this turn.
+  ExtraDescription: Cards cost {Mana} less to play this turn.
   Name: Descendant of Issun-Boushi
 StopTimeSe:
   Name: Frozen Time
@@ -716,6 +718,7 @@ StopTimeSe:
 LoseSpiritSe:
   Description: At the start of {PlayerName}'s turn, lose {Level} |Spirit|.
   Brief: At the start of {PlayerName}'s turn, lose some |Spirit|.
+  Name: Lost Cloak of Feathers
 NextTurnLoseGame:
   Description: Lose the game next turn.
   Brief: Lose the game next turn.
@@ -739,3 +742,75 @@ SkyWaterSe:
 ReimuFestivalSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Temporary Firepower|.
   Brief: At the start of {PlayerName}'s turn, gain |Temporary Firepower|.
+  Name: Endless Banquets
+ClownAbilitySe:
+  Name: Eclipse of Hell
+  Description: "Whenever a card is drawn, do one at random {Level} time{Level:plural\
+    \ one='' other='s'}:\n• It costs 1 more.\n• It costs 1 random mana less."
+  Brief: "Whenever a card is drawn, do one at random:\n• It costs 1 more.\n• It costs\
+    \ 1 random mana less."
+EryanManaSe:
+  Name: Wild Deserted Island
+  Brief: After playing a card, it costs less mana.
+  Description: After playing a card, it costs {Level} random mana less.
+BrainOverclockSe:
+  Name: Brain Overclocking
+  Description: "Until end of turn, whenever {PlayerName} plays a card, draw 2 cards.\n\
+    When {PlayerName} has more than {Level} cards in the hand, or discards any cards,\
+    \ end the turn."
+  Brief: "Until end of turn, whenever {PlayerName} plays a card, draw 2 cards.\nWhen\
+    \ {PlayerName} has more than a number of cards in the hand, or discards any cards,\
+    \ end the turn."
+GlacialPlatingSe:
+  Name: Glacial Plating
+  Brief: "The first card played each turn costs more to play.\nAt the start of {PlayerName}'s\
+    \ turn, gain 4 |Temporary Firepower| and 4 |Temporary Spirit|."
+  Description: "The first card played each turn costs {Mana} more to play.\nAt the\
+    \ start of {PlayerName}'s turn, gain {TotalTemp} |Temporary Firepower| and {TotalTemp}\
+    \ |Temporary Spirit|."
+PotionBaseDamageSe:
+  Name: Explosive Components
+  Brief: '|Unstable Potions| deal more damage.'
+  Description: '|Unstable Potions| deal {Level} more damage.'
+WhiteWorldSe:
+  Brief: "At the end of {PlayerName}'s turn, gain 1 |Glacial Plating|.\n|Glacial Plating|:\
+    \ The first card played each turn costs more to play.\nAt the start of {PlayerName}'s\
+    \ turn, gain 4 |Temporary Firepower| and 4 |Temporary Spirit|."
+  Name: Pure White World
+  Description: "At the end of {PlayerName}'s turn, gain 1 |Glacial Plating|.\n|Glacial\
+    \ Plating|: The first card played each turn costs {Mana} more to play.\nAt the\
+    \ start of {PlayerName}'s turn, gain 4 |Temporary Firepower| and 4 |Temporary\
+    \ Spirit|."
+ExtraDraw:
+  Name: Extra Draw
+  Description: At the start of {PlayerName}'s turn, draw {Level} card{Level:plural
+    one='' other='s'}.
+  Brief: At the start of {PlayerName}'s turn, draw a card.
+FairyTreeSe:
+  Name: Great Fairy Tree
+  Description: When a skill card enters the hand for the first time each turn, gain
+    {Mana} and draw 1 card.
+  Brief: When a skill card enters the hand for the first time each turn, gain mana
+    and draw 1 card.
+NextTurnColdAll:
+  Name: Winter is Coming
+  Description: At the start of {PlayerName}'s next turn, apply |Cold| to each enemy.
+  Brief: At the start of {PlayerName}'s next turn, apply |Cold| to each enemy.
+KaguyaTreeSeeSe:
+  Description: All cards lose |Exile|.
+  Brief: All cards lose |Exile|.
+  Name: Tree-Ocean of Hourai
+YequePoisonSe:
+  Name: Poisonous Moth's Scales
+  Brief: Until end of turn, apply some |Poison| when dealing unblocked attack damage.
+  Description: Until end of turn, apply {Level} |Poison| when dealing unblocked attack
+    damage.
+MeilingAbilitySe:
+  Description: Whenever {OwnerName} gains |Firepower| or |Temporary Firepower|, gain
+    {Level} |Barrier|.
+  Brief: Whenever {OwnerName} gains |Firepower| or |Temporary Firepower|, gain some
+    |Barrier|.
+  Name: Gorgeous Sweet Flower
+NextTurnGainShield:
+  Description: At the start of {OwnerName}'s next turn, gain {Level} |Barrier|.
+  Brief: At the start of {OwnerName}'s next turn, gain some |Barrier|.

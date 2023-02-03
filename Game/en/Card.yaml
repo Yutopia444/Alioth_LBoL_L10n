@@ -595,7 +595,7 @@ NitoriUnderWater:
   Description: 'Gain {Value1} |Optical Camouflage|.'
   Name: Water Blanket
 ShuimiUnderWater:
-  Description: 'When this card is discarded, gain {Mana}.'
+  Description: '|When discarded:| Gain {Mana}.'
 
   Name: Ship's Phantom
 HatateDiscard:
@@ -828,10 +828,9 @@ SakuyaSpeedup:
 PerfectServant:
   Description: "|For each <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"> spent:| At the start of {PlayerName}'s next turn, each card in the\
-    \ hand |temporarily costs| <sprite=\"ManaSprite\" name=\"1\"> less.\n|For each\
-    \ <sprite=\"ManaSprite\" name=\"U\"> spent:| During {PlayerName}'s next turn,\
-    \ draw {Value1} more {Value1:plural one='card' other='cards'} during the draw\
-    \ step and gain {Mana}."
+    \ hand |temporarily costs| 1 random mana less.\n|For each <sprite=\"ManaSprite\"\
+    \ name=\"U\"> spent:| At the start of {PlayerName}'s next turn, gain {Mana} and\
+    \ draw an extra card."
   Name: Perfect Servant
 ExtraTurnEveryone:
   Description: "End the turn. Then, take an extra turn.\nEnemies also take an extra\
@@ -1130,8 +1129,8 @@ ReadBook:
     \ white cards to add to the hand.|"
   Name: Youkai Study
 Panzi:
-  Description: "Deal {Damage} damage.\n|When drawn:| Add a |copy| of this card to\
-    \ the hand."
+  Description: "Deal {Damage} damage.\n|When this card enters the hand:| Add a |copy|\
+    \ of this card to the hand."
   Name: Water Plate
 ShuimuBlock:
   Description: "Gain {Block} |Block|.\n|Permanently| increase this card's |Block|\
@@ -1201,8 +1200,7 @@ FourFlan:
   ExtraDescription1: Deal {Damage} damage {Value1:plural one='% time' other='% times'}.
   Name: Four of a Kind
 ReisenAttack:
-  Description: '|For each <sprite="ManaSprite" name="2"> spent:| Deal {Damage} damage
-    to each enemy.'
+  Description: '|For each {Mana} spent:| Deal {Damage} damage to each enemy.'
   Name: Lunatic Dream
 FangxiangHeal:
   Description: "|Exile| {Value1} random card{Value1:plural one='' other='s'} from\
@@ -1400,7 +1398,9 @@ PManaCard:
   Name: Rainbow
 MoonPurify:
   Description: 'A random card in the hand gains |Pure| this combat, removing its colored
-    mana cost component.'
+    mana cost component.
+
+    Prioritizes cards with colored mana costs.'
   UpgradedDescription: 'Choose a card in the hand. It gains |Pure| this combat, removing
     its colored mana cost component.'
   Name: Remove Impurity
@@ -1434,7 +1434,7 @@ WolfFur:
   Description: '|Limited【{DeckCounter}】|'
   Name: Wolf Fur
 Xiaozhuo:
-  Description: "Gain {Value1} |Temporary Firepower|.\n"
+  Description: "Gain {Value1} |Temporary Firepower|."
   Name: Tipsy
 Riguang:
   Description: '|While in hand:| At the end of the turn, {PlayerName} takes {Value1}
@@ -1522,7 +1522,7 @@ Regret:
   Name: Regret
 LoveLetter:
   Name: Loveletter
-  Description: Give it to <color=#eab8bf>Lovesick Girl</color>, she will be happy.
+  Description: Give this to <color=#eab8bf>Lovesick Girl</color>. She'll be happy.
 Xingguang:
   Name: Glamorous Starlight
 Jealousy:
@@ -1659,8 +1659,8 @@ RuowujiCard:
     \ name=\"G\"> spent:| Gain <sprite=\"ManaSprite\" name=\"U\">."
 JunkoNightmare:
   Name: Shivering Nightmare
-  Description: "|d:This card is currently in development.\nPlease check back in a\
-    \ future update!|"
+  Description: "|d:We're not sure if we're going to make ten different three-colored\
+    \ cards.\nPlease check back in a future update!|"
 MorphDog:
   Description: Gain {Value1} |Firepower|.
 QianGui:
