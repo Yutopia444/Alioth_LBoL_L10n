@@ -155,7 +155,7 @@ ShijieSuipian:
   Name: 世界的碎片
   Description: |-
     提供基础法力{BaseMana}。
-    获取时，选择牌库中的 {Value1} 张牌，随机变化为稀有牌。
+    获取时，选择牌库中的至多 {Value1} 张牌，随机变化为一张稀有牌和一张罕见牌。
   FlavorText: 透过这些碎片，能观察到其他玩家的游戏情况。
 
 TianwenWangyuanjing:
@@ -207,8 +207,7 @@ AizheHongshi:
   Name: 艾哲红石
   Description: |-
     提供基础法力{BaseMana}。
-    {PlayerName}回合结束时，提高 {Value1} 点|火力|。
-    战斗开始时，将 {Value2} 张|折射日光|加入弃牌堆。
+    {PlayerName}回合开始时，提高 {Value1} 点|火力|，将 {Value2} 张|折射日光|加入弃牌堆。
   FlavorText: 可以用来融化冰之鳞。
 
 HouhuMen:
@@ -443,7 +442,7 @@ FeixiangJian:
 
 YuekuangQiang:
   Name: 月狂枪
-  Description: '{PlayerName}在回合内每丢弃一张牌，对一个随机敌人造成 {Value1} 点伤害。'
+  Description: 每丢弃一张牌，{PlayerName}对一个随机敌人造成 {Value1} 点伤害。
   FlavorText: 在上一款作品里，它是一把自动步枪。
 
 Yaoshi:
@@ -573,7 +572,7 @@ Tnt:
 
 Modaoshu:
   Name: 魔导书
-  Description: 获取时，从 {Value1} 张中立稀有卡牌里选择一张加入牌组。
+  Description: 获取时，从 {Value1} 张中立稀有卡牌里，选择至多一张加入牌组。
   FlavorText: 里面蕴含着十分深奥的魔法知识。
 
 TiangouDunpai:
@@ -710,6 +709,13 @@ JiangyouPing:
   Description: 每次遇见商人时，恢复 {Value1} 点生命，获得 {Value2} 点<sprite="Point" name="Power">。
   FlavorText: 「我是来打酱油的，咪啪。」
 
+PingfanDao:
+  Name: 平凡的刀
+  Description: |-
+    提高基础牌的攻击伤害。
+    初始费用为{Mana}的提高 {Value1} 点，其余提高 {Value2} 点。
+  FlavorText: 只是另一把幻想乡里的刀。
+
 YinzhiHuaibiao:
   Name: 银质怀表
   Description: 每打出 {Value1} 张牌，获得{Mana}。
@@ -762,17 +768,6 @@ Cookie:
   Description: 获取时，{PlayerName}的最大生命值提高 {Value1} 点，并恢复全部生命值。
   FlavorText: 「今天也是好天气。」
 
-ZhinengYinxiang:
-  Name: 智能音箱
-  Description: |-
-    获取时，选择一张牌。
-    它在战斗开始时置于牌堆顶。
-  ExtraDescription: |-
-    获取时，选择一张牌。
-    它在战斗开始时置于牌堆顶。
-    当前：| {HoldedCard} |
-  FlavorText: 「小 x 同学，帮我抽这张牌。」
-
 ShoubiaoMazuiqiang:
   Name: 手表麻醉枪
   Description: 战斗开始时，对所有敌人施加 {Value1} 回合|虚弱|或|易伤|。
@@ -820,6 +815,17 @@ Headphone:
   Description: 所有的|每支付|效果多结算一次。
   FlavorText: 「低频下潜，高频通透。」
 
+ZhinengYinxiang:
+  Name: 智能音箱
+  Description: |-
+    获取时，选择一张牌。
+    它在战斗开始时置于牌堆顶。
+  ExtraDescription: |-
+    获取时，选择一张牌。
+    它在战斗开始时置于牌堆顶。
+    当前：| {HoldedCard} |
+  FlavorText: 「小 x 同学，帮我抽这张牌。」
+
 WaijieYanjing:
   Name: 外界的高科技眼镜
   Description: 战斗结束时，{PlayerName}获得的<sprite="Point" name="Gold">奖励提高 {Value1}% 。
@@ -858,6 +864,18 @@ JingQiXi:
     下回合获得{ManaGain}。
   FlavorText: 「鲸吞亭」只对访客开放。
 
+SadinYuebing:
+  Name: 撒丁岛月饼
+  Description: '{PlayerName}的回合开始时，随机升级 {Value1} 张手牌（多色牌优先）。'
+  FlavorText: 骚灵三女士、红美铃小姐等美食评论家对此菜品表达了强烈不满。
+
+IdolTshirt:
+  Name: 偶像 T 恤
+  Description: 战斗开始时，{PlayerName}的最大生命值提高 {Value1} 点，受到 {Value2} 层|锁定|。
+  FlavorText: |-
+    （图标未完成）
+    穿着这个，你受到了周围人们的侧目，脸皮也变厚了。
+
 Dianshiji:
   Name: 电视机
   Description: '{PlayerName}再也不会|虚弱|了。'
@@ -872,11 +890,6 @@ Bingxiang:
   Name: 冰箱
   Description: '{PlayerName}再也不会|脆弱|了。'
   FlavorText: 能冷冻食材的盒子，河童们很喜欢。
-
-SadinYuebing:
-  Name: 撒丁岛月饼
-  Description: '{PlayerName}的回合开始时，随机升级 {Value1} 张手牌（多色牌优先）。'
-  FlavorText: 骚灵三女士、红美铃小姐等美食评论家对此菜品表达了强烈不满。
 
 KongZhanpinhe:
   Name: 空的展品盒
