@@ -239,7 +239,7 @@ SingleJiandaoSe:
   Name: Lame de Ciseaux Géante
 MadokaBowSe:
   Description: "À la fin du tour de {OwnerName}, ajoutez {Level} cartes Statut aléatoires\
-    \ à la pioche.\n|d:(Ajoute des cartes plus puissantes à des difficultés plus élevées.)|"
+    \ à la pioche."
   Name: Arc qui Tire de la Lumière
 HolyGrailSe:
   Description: Au début du tour de {OwnerName}, {PlayerName} perd toutes ses |merveilles|
@@ -299,11 +299,11 @@ Fengyin:
     \ one=\"jusqu'à la fin du tour\" other=\"pendant % tours\"}."
   Name: Scellé
 MomentPowerSe:
-  Description: Chaque fois que {OwnerName} gagne de la |Puissance temporaire| ou de
-    l'|Esprit temporaire|, convertissez-en {Level} en |Puissance| ou |Esprit|, respectivement.
+  Description: Chaque fois que {OwnerName} gagne de la |Puissance Temporaire| ou de
+    l'|Esprit Temporaire|, convertissez-en {Level} en |Puissance| ou |Esprit|, respectivement.
   Name: Faille Dimensionnelle Instantanée
-  Brief: Chaque fois que {OwnerName} gagne de la |Puissance temporaire| ou de l'|Esprit
-    temporaire|, convertissez-en une partie en |Puissance| ou |Esprit|, respectivement.
+  Brief: Chaque fois que {OwnerName} gagne de la |Puissance Temporaire| ou de l'|Esprit
+    Temporaire|, convertissez-en une partie en |Puissance| ou |Esprit|, respectivement.
 Charging:
   Description: Lorsque {PlayerName} a {TriggerLevel} ou plus de |Charge|, {PlayerName}
     entre en |Saturation|.
@@ -426,6 +426,7 @@ DeathExplodeCount:
 Drowning:
   Name: Noyade
   Description: '{OwnerName} subit {Level} dégâts à la fin de son tour.'
+  Brief: Lorsque {OwnerName} finit son tour, il subit des dégâts.
 LoveGirlDamageReduce:
   Name: Regrets Persistants
   Description: Les sentiments de {OwnerName} ne sont pas partagés. Elle subit {Rate}
@@ -479,8 +480,8 @@ KokoroYou:
     one='' other='s'}|.
 LongLight:
   Name: Trépied Brillant
-  Description: '{OwnerName} brille comme une étoile ! Ses cartes de statut sont plus
-    puissantes.'
+  Description: '{OwnerName} brille comme une étoile ! Elle fait plus de dégâts, et
+    ses cartes de statut sont plus puissantes.'
 FlatPeach:
   Name: Pêche Céleste
   Description: Chaque fois que {OwnerName} subit des blessures, elle gagne {Level}
@@ -549,7 +550,7 @@ YinyangXueyinSe:
   Description: Après avoir joué une |Orbe Yin-Yang|, gagnez {Level} |Puissance{Level:plural
     one=' Temporaire' other='s Temporaires'}| et |Esprit{Level:plural one=' Temporaire'
     other='s Temporaires'}|.
-  Brief: Après avoir joué une |Orbe Yin-Yang|, gagnez de la |Puissance temporaire|
+  Brief: Après avoir joué une |Orbe Yin-Yang|, gagnez de la |Puissance Temporaire|
     et de l'|Esprit Temporaire|.
 HuanxiangBlockSe:
   Name: Bord de la Fantaisie
@@ -818,12 +819,9 @@ ClownAbilitySe:
     \ de 1 (aléatoire)"
   Brief: "À chaque fois que vous piochez une carte dans votre main, résolvez un effet\
     \ aléatoire :\n- coût augmenté de 1\n- coût diminué de 1 (aléatoire)"
-EryanManaSe:
-  Name: Île Sauvage
 YequePoisonSe:
   Brief: Jusqu'à la fin du tour, applique du |Poison| pour chaque dégât d'attaque
     non-bloqué infligé.
-  Name: Poudre d'Écailles de Papillon
 BrainOverclockSe:
   Description: "Jusqu'à la fin du tour, chaque fois que {PlayerName} joue une carte,\
     \ piochez 2 cartes ;\nLorsque {PlayerName} a plus de {Level} cartes en main ou\
@@ -856,11 +854,9 @@ KaguyaTreeSeeSe:
   Description: Toutes les cartes |Exilées| sont perdues.
   Brief: Toutes les cartes |Exilées| sont perdues.
 MeilingAbilitySe:
-  Name: Magnifique Jeunesse
-  Description: Gagnez {Level} |Bouclier{Level:plural one='' other='s'}| chaque fois
-    que vous gagnez de la |Puissance| ou de la |Puissance Temporaire|.
-  Brief: Gagnez du |Bouclier| chaque fois que vous gagnez de la |Puissance| ou de
-    la |Puissance Temporaire|.
+  Name: Véritable Poing Ardent Arc-en-ciel
+  Description: '{PlayerName} gagne le double de |Puissance| et |Puissance Temporaire|.'
+  Brief: '{PlayerName} gagne le double de |Puissance| et |Puissance Temporaire|.'
 ExtraDraw:
   Name: Tirage Supplémentaire
   Description: Au début du tour de {PlayerName}, piochez {Level} carte{Level:plural
@@ -884,3 +880,30 @@ TempMagic:
   Name: (WIP) Pouvoir magique temporaire
 TempMagicNegative:
   Name: (WIP) Magie perdue
+ReimuShrineSe:
+  Name: Grande Foire du Temple
+  Description: "{PlayerName} gagne {Level} |Esprit{Level:plural one=' Temporaire'\
+    \ other='s Temporaires'}| au début du tour."
+  Brief: "{PlayerName} gagne de l'|Esprit Temporaire| au début du tour."
+ReimuFreeAttackSe:
+  Description: Le coût {Level:plural one='de la prochaine carte' other='des % prochaines
+    cartes'} d'attaque de ce tour est de {Mana}.
+  Name: Poing sans Ombre
+  Brief: Le coût des prochaines cartes d'attaque de ce tour est de {Mana}.
+YouxiangManaSe:
+  Name: Fleurs et Oiseaux
+  Description: Les cartes réduisent {Level} points de consommation de mana aléatoire
+    après avoir été jouées.
+  Brief: Les cartes réduisent les coûts de mana aléatoirement après avoir été jouées.
+DizangLoveSe:
+  Description: Après avoir joué une carte commune, {OwnerName} obtient {Level} |Puissance{Level:plural
+    one=' Temporaire' other='s Temporaires'}|.
+  Name: Bodhi Instantané
+  Brief: Après avoir joué une carte commune, {OwnerName} obtient de la |Puissance
+    Temporaire|.
+BlackPoisonSe:
+  Name: Danse Sombre
+  Description: "{PlayerName} applique {Level} |Poison{Level:plural one='' other='s'}|\
+    \ chaque fois qu'il attaque en infligeant des dégâts non bloqués."
+  Brief: Appliquez du |Poison| chaque fois que {PlayerName} attaque en infligeant
+    des dégâts non bloqués.
