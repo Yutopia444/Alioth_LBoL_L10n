@@ -71,7 +71,8 @@ Bingzhilin:
   FlavorText: Elle ne fond pas au feu.
 ShijieSuipian:
   Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquis, transformez\
-    \ {Value1} cartes de la bibliothèque en cartes rares."
+    \ jusqu'à {Value1} carte{Value1:plural one='' other='s'} de la bibliothèque en\
+    \ une carte rare et une carte inhabituelle."
   Name: Fragments du Monde
   FlavorText: A travers ces fragments, vous pouvez observer la situation de jeu des
     autres joueurs.
@@ -195,10 +196,10 @@ GuizuJiubei:
   FlavorText: Il ressemble plus à un grand bol.
 AizheHongshi:
   Name: Pierre d'Aja
-  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} finit son\
-    \ tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nAu début\
-    \ du combat, ajoutez {Value2} |Lumière{Value2:plural one=' Solaire Réfractée'\
-    \ other='s Solaires Réfractées'}| à la pioche."
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
+    \ son tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|, et ajoutez\
+    \ {Value2} |Lumière{Value2:plural one=' Solaire Réfractée' other='s Solaires Réfractées'}|\
+    \ à la pile de défausse."
   FlavorText: Peut être utilisé pour faire fondre les écailles de glace.
 HouhuMen:
   Name: Porte Dérobée
@@ -402,8 +403,8 @@ FeixiangJian:
   FlavorText: Dans mon jeu précédent, c'était un fusil de chasse.
 YuekuangQiang:
   Name: Pistolet Lunaire
-  Description: Chaque fois qu'une carte est défaussée, sauf à la fin du tour, inflige
-    {Value1} dégât{Value1:plural one='' other='s'} à un ennemi aléatoire.
+  Description: Pour chaque carte défaussée, {PlayerName} inflige {Value1} dégât{Value1:plural
+    one='' other='s'} à un ennemi aléatoire.
   FlavorText: Dans mon jeu précédent, c'était un fusil automatique.
 Yaoshi:
   Name: Clé de Voûte
@@ -543,8 +544,8 @@ Tnt:
     à chaque ennemi.
 Modaoshu:
   Name: Guide Magique
-  Description: Une fois acquis, choisissez 1 carte rare neutre aléatoire parmi {Value1}
-    à ajouter à la bibliothèque.
+  Description: Une fois acquis, choisissez jusqu'à 1 carte rare neutre parmi {Value1}
+    aléatoires à ajouter à la bibliothèque.
   FlavorText: Il contient des connaissances magiques très profondes.
 Shaoyao:
   Name: Pivoine
@@ -769,6 +770,7 @@ JiangyouPing:
   Name: Bouteille de Sauce Soja
   Description: Chaque fois que {PlayerName} rend visite à Takane, gagnez {Value1}
     points de vie et {Value2} <sprite="Point" name="Power">.
+  FlavorText: '"Je suis là pour la sauce, Mipa."'
 YinzhiHuaibiao:
   Name: Montre de Poche en Argent
   Description: Chaque fois que {Value1} cartes sont jouées, gagnez {Mana}.
@@ -871,3 +873,15 @@ InitialAttackDoll:
 InitialDefenseDoll:
   Name: (WIP) Poupée de Défense
   Description: (WIP) Configurez une Poupée d'Attaque au début du combat
+PingfanDao:
+  Name: Couteau Ordinaire
+  Description: "Augmente les dégâts d'attaque des cartes de base.\nLe coût initial\
+    \ augmente de {Mana}, et les dégâts augmentent de {Value2}."
+  FlavorText: Juste un des nombreux couteaux de Gensokyo.
+IdolTshirt:
+  Name: T-Shirt d'Idole
+  Description: Au début du combat, {PlayerName} gagne {Value1} point{Value1:plural
+    one='' other='s'} de vie maximum, et {Value2} |Verrouillé{Value2:plural one=''
+    other='s'}|.
+  FlavorText: "(En travaux)\nEn portant cela, vous attirez beaucoup les regards des\
+    \ gens autour de vous et cela vous endurcit."
