@@ -25,6 +25,21 @@ Game:
   NextSkip: Skip Rewards
   Next: Forward
   NextStage: Next Act
+  ActualOrder: Actual order
+  IndexOrder: Index
+  IndexOrderExplain: "Cards are displayed in the order of the collection.\nCards of\
+    \ the same name are displayed in the actual order of each other."
+  RarityOrder: Rarity
+  TypeOrder: Type
+  ActualOrderExplain: "Displays the cards in the order in which they entered the pile.\n\
+    \nDeck: The order in which the cards are acquired in this game.\nDraw pile: The\
+    \ first one is \"top of the pile\".\nDiscard Pile: The last one is \"top of the\
+    \ pile\".\n\nBy default, you cannot display the draw pile in this order."
+  TypeOrderExplain: "Cards of the same type are displayed in the order of the cards\
+    \ between them.\nCards of the same name are displayed in the actual order of each\
+    \ other."
+  RarityOrderExplain: "Cards of the same rarity are displayed in card order between\
+    \ them.\nCards with the same name are displayed in the actual order between them."
 UI:
   Display: Show
   Hide: Hide
@@ -61,6 +76,7 @@ UI:
   SeRemove: '{0} Disappeared'
   SpellTitled: '  {0} "{1}"'
   SpellUntitled: '"{0}"'
+  Skip: Skip
 MainMenu:
   NewGame: New Run
   RestoreGame: Continue Run
@@ -139,7 +155,7 @@ Museum:
     T4: Uncommon
     T5: Common
     T6: Shop
-    T7: Event
+    T7: Event&Other
 
 
   UnRevealCard: Unknown card
@@ -148,6 +164,7 @@ Museum:
   CardStyleFilter: Card Style
   CardStyleTooltip: "Only cards that have multiple card styles are displayed.\nChoose\
     \ the card illustration you like to display at the card detail panel."
+  CardNotReady: "This card is not ready yet.\nPlease wait for the game update."
 Setting:
   Main: General
   Preference: Gameplay
@@ -211,6 +228,14 @@ Setting:
     SkipDialog: Dialogue Fast Foward (Hold)
     ShowEnemyMoveOrder: Show Enemy Turn Order (Hold)
     RebindMessage: Please press the key for "{0}", press ESC to cancel.
+    PoolC: Move <sprite="ManaSprite" name="C"> to the selected selection
+    PoolG: Move <sprite="ManaSprite" name="G"> to the selected selection
+    ToggleMinimize: Temporary hidden interface
+    PoolP: Move <sprite="ManaSprite" name="P"> to the selected selection
+    PoolR: Move <sprite="ManaSprite" name="R"> to the selected selection
+    PoolB: Move <sprite="ManaSprite" name="B"> to the selected selection
+    PoolU: Move <sprite="ManaSprite" name="U"> to the selected selection
+    PoolW: Move <sprite="ManaSprite" name="W"> to the selected selection
   IllustratorDescription: Whether to show the illustrator's name in the card.
   TooltipSizeDescription: Adjust the overall size of the tooltips for cards, exhibits,
     etc.
@@ -229,7 +254,7 @@ Setting:
   SingleEnemyAutoSelectDescription: Whether to use a card without selecting target
     if the card need a target enemy while there's only one enemy.
   AnimatingEnvironment: Animated Environment
-  AnimatingEnvironmentDescription: Show dynamic backgrounds during battle.
+  AnimatingEnvironmentDescription: Show dynamic backgrounds during Yukari‘s room.
 System:
   ReenterStation: Restart Level
   ResumeGame: Resume Game
@@ -573,6 +598,10 @@ Explain:
     ManaSprite\" name=\"2\">, etc.)| can still be found even if there isn't enough\
     \ mana in the |mana base| to play it. There are several ways to reduce the mana\
     \ cost of these cards."
+  ShinmyoumaruForge: Attack cards are replaced with attack cards and defense cards
+    are replaced with defense cards.
+  RemiliaMeet: "1. Replace the cards with the same cost.\n2. Keep the upgrade of the\
+    \ card when replacing"
 Chat:
   FraudRabbitNoMoney: Not even a single penny left? How lame.
   LoveGirlRespond: I'm so happy!
