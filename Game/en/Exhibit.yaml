@@ -103,7 +103,7 @@ Bingzhilin:
 ShijieSuipian:
   Description: |-
     Adds {BaseMana} to the mana base.
-    When acquired, transform {Value1} cards in the library into rare cards.
+    When acquired, choose up to {Value1} card{Value1:plural one='' other='s'} in the library. Replace them with that many random uncommon cards and random rare cards.
   Name: Fragments of the World
   FlavorText: Through these fragments, it is possible to observe the play of other
     players.
@@ -129,8 +129,7 @@ Ganggenier:
 AizheHongshi:
   Description: |-
     Adds {BaseMana} to the mana base.
-    At the end of {PlayerName}'s turn, gain {Value1} |Firepower|.
-    At the start of combat, add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the discard pile.
+    At the start of {PlayerName}'s turn, gain {Value1} |Firepower| and add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the discard pile.
   Name: Stone of Aja
   FlavorText: It can be used to melt the Ice Scale.
 HouhuMen:
@@ -320,8 +319,7 @@ FeixiangJian:
   Name: Sword of Hisou
   FlavorText: In my last game, it was a shotgun.
 YuekuangQiang:
-  Description: 'Whenever a card is discarded during {PlayerName}''s turn, deal {Value1}
-    damage to a random enemy.'
+  Description: 'Whenever a card is discarded, deal {Value1} damage to a random enemy.'
   Name: Lunatic Gun
   FlavorText: In my last game, it was a automatic rifle.
 Yaoshi:
@@ -818,3 +816,10 @@ TaiguGouyu:
     \ {Value1} maximum life."
   Name: Ancient Magatama
   FlavorText: The more hooks you have, the higher the maximum life value .
+PingfanDao:
+  Description: "Increases the damage of basic attack cards.\nIf a basic attack card\
+    \ has a base cost of {Mana}, it deals {Value1} more damage. Otherwise, it deals\
+    \ {Value2} more damage."
+IdolTshirt:
+  Description: At the start of combat, {PlayerName} gains {Value1} maximum life, then
+    gains {Value2} |Lock-On|.
