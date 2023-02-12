@@ -242,8 +242,8 @@ Wunvyu:
   Name: Hakurei's Evilest Orbs
 KuosanJiejie:
   Description: |-
-    |For each <sprite="ManaSprite" name="W"> spent:| Gain {Block} |Block|.
-    |For each <sprite="ManaSprite" name="R"> spent:| Deal {Damage} damage to each enemy.
+    |For each <sprite="ManaSprite" name="W"> spent|: Gain {Block} |Block|.
+    |For each <sprite="ManaSprite" name="R"> spent|: Deal {Damage} damage to each enemy.
 
   Name: Expanding Border
 HuijuQiankun:
@@ -575,7 +575,7 @@ ShenziWake:
 YuetuInvincible:
   Name: The Falling Moon-Rabbit
   Description: |-
-    Gain |Flawless| for {Value1} turn{Value1:plural one='' other='s'}.
+    Gain |Seamless| for {Value1} turn{Value1:plural one='' other='s'}.
     Add {Value2} |Lost Raiments| to the draw pile.
   FlavorText: Escape from the purified world, to the paradise of filth.
 
@@ -601,7 +601,7 @@ ShuimiUnderWater:
 HatateDiscard:
   Description: "Discard {Value1:plural one='% card' other='% cards'}.\nGain {Mana}."
   Name: News Fabrication
-  UpgradedDescription: "Discard between {Value1} to {Value3} cards.\nGain {Mana}."
+  UpgradedDescription: "Discard between {Value1} to {Value2} cards.\nGain {Mana}."
 LeidiBlizzard:
   Description: 'Deal {Damage} damage to each enemy.
 
@@ -1110,7 +1110,8 @@ BailianPower:
   Name: Strengthen Body
   FlavorText: The scriptures talk about BMI and building muscle.
 MeihongAttack:
-  Description: "Lose {Value1} life.\nDeal {Damage} damage."
+  Description: "Lose {Value1} life.\nDeal {Damage} damage {Value2} time{Value2:plural\
+    \ one='' other='s'}."
   Name: Phoenix Wings Rise
 YongyiAttack:
   Description: "Deal {Damage} damage to each enemy {Value1} times.\nIf {PlayerName}\
@@ -1265,7 +1266,7 @@ ToolExile:
   Description: "|Exile| any number of cards from the hand.\n|Limited【{DeckCounter}】|"
   Name: Intelligent Sweeping Robot
 ToolInvincible:
-  Description: "Gain |Flawless| for {Value1} turn{Value1:plural one='' other='s'}.\n\
+  Description: "Gain |Seamless| for {Value1} turn{Value1:plural one='' other='s'}.\n\
     |Limited【{DeckCounter}】|"
   Name: Angel's Raiment
 XiaosanJingxia:
@@ -1308,7 +1309,8 @@ XingMoney:
     Gold\">."
   Name: Glorious Treasure Spear
 PoorAttack:
-  Description: "Lose {Value1} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage} damage."
+  Description: "Lose {Value1} <sprite=\"Point\" name=\"Gold\">.\nDeal {Damage} damage\
+    \ {Value2} time{Value2:plural one='' other='s'}."
   Name: Fall into Poverty
 SnowGirlCard:
   Description: Apply {Value1} |Frostbite|.
@@ -1330,7 +1332,7 @@ XiaosanReflect:
   Name: Counter Danmaku
 YijiuAttack:
   Description: "Deal {Damage} damage.\nWhen an enemy is defeated using this card,\
-    \ |Exile| it and gain |Flawless| for {Value1} turn{Value1:plural one='' other='s'}."
+    \ |Exile| it and gain |Seamless| for {Value1} turn{Value1:plural one='' other='s'}."
   Name: Dragon God's Thunderbolt
 HekaHellRain:
   Description: At the end of {PlayerName}'s turn, deal {Value1} damage to each enemy
@@ -1418,7 +1420,7 @@ VampireShoot2:
   Description: "Deal {Damage} damage. \nGain {Value1} life."
   Name: Devil's Rain
 WanderingSoul:
-  Description: "Gain |Flawless| for {Value1} turn{Value1:plural one='' other='s'}.\n\
+  Description: "Gain |Seamless| for {Value1} turn{Value1:plural one='' other='s'}.\n\
     This card is still in development.\nPlease look forward to a future update."
   Name: Wandering Soul
 RabbitFoot:
@@ -1654,7 +1656,7 @@ ZoufangWater:
   Name: Suwa Clear Water
 RuowujiCard:
   Name: Waves of Reversed Scale
-  Description: "Deal {Damage} damage to each enemy, apply {Value1} |Drowning|."
+  Description: "Deal {Damage} damage to each enemy. \nApply {Value1} |Drowning|."
 JunkoNightmare:
   Name: Shivering Nightmare
   Description: "|d:We're not sure if we're going to make ten different three-colored\
@@ -1750,7 +1752,7 @@ LunaAttack:
   Description: no need to translate
 ReimuFreeAttack:
   Description: "Gain {Block} |Block|.\nThe next {Value1} attack card{Value1:plural\
-    \ one='' other='s'} played cost {Mana} less to play."
+    \ one='' other='s'} played cost {Mana} to play."
   Name: Fleeting Fantasy
 FrostNova:
   Description: no need to translate
@@ -1782,11 +1784,11 @@ FairySupportClown:
   Description: no need to translate
 YuetuYuyi:
   Name: Lost Raiment
-  Description: Gain |Flawless| for {Value1:plural one='% turn' other='% turns'}.
+  Description: Gain |Seamless| for {Value1:plural one='% turn' other='% turns'}.
 DizangLove:
   Name: Instant Bodhi
-  Description: "{PlayerName} gain {Value1} |Temporary Firepower| after playing a card\
-    \ with a |d:Common Rarity|.\n"
+  Description: "Whenever {PlayerName} plays a |d:common| card, gain {Value1} |Temporary\
+    \ Firepower|.\n"
 LimaoSchool:
   Name: Tanuki's School
   Description: Choose {Value2} of {Value1} random |Animal Transformations|. Gain their
@@ -1844,8 +1846,8 @@ KaguyaTreeSee:
     \ this combat.\nMove all cards with |Exile| from exile to the draw pile.\nAll\
     \ cards lose |Exile|."
 MeilingRain:
-  Description: "Deal {Damage} damage to each enemy {AttackTimes} times.\n|For every\
-    \ {Mana} paid:| Deal that damage to each enemy an additional time."
+  Description: "Deal {Damage} damage to each enemy {AttackTimes} times.\n|For each\
+    \ {Mana} spent:| Deal that damage to each enemy an additional time."
   Name: Vivid Color Downpour
 SenlinTanxian:
   Description: Add a random Tool card to the library. (It's not available during this
@@ -1867,4 +1869,5 @@ SanaeMiracle:
     \ one='' other='s'}.|\nCan only be played if the draw pile is empty."
 YouxiangGrow:
   Name: Flowers, Birds, Wind and Moon
-  Description: In this battle, |Growth| trigger {Level} extra times.
+  Description: All |Growth| effects trigger {Value1} additional time{Value1:plural
+    one='' other='s'}.
