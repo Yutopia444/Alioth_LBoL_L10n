@@ -137,8 +137,8 @@ StartGame:
     Easy difficulty first.
   JadeBoxLock: Jade Box Mode will be available at Unlock Level 10.
   NoStoryMode: "Story mode is not ready yet,\nPlease look forward to future updates."
-  PuzzleHint: "Challenge some puzzles to increase the acquisition of blue points and\
-    \ investigation experience.\nUnlocked after reaching Unlock level 4."
+  PuzzleHint: "Take on additional Requests to increase your blue points and investigation\
+    \ experience.\nUnlocked after reaching Unlock Level 4."
   SelectAll: Select All
   NoClearHind: Achievements are disabled when using seeds or Jade Box.
 Museum:
@@ -425,7 +425,7 @@ Tooltip:
       Click to end your turn.
 
       You discard your hand |d:(without triggering discard effects)|, then each enemy acts based on their |Intent|.
-      After each enemy has acted, a new turn begins.
+      After each enemy has acted, {0} takes their next turn.
 
   BattleMana:
     Name: Mana Pool
@@ -464,18 +464,18 @@ Tooltip:
     Character: ' Unique'
   FinalStage:
     Name: Final Act
-    Description: So close to the end of the game, let's move on!
+    Description: You've almost reached the end. Keep going!
   BriefHint:
     Name: Brief Hints
-    Description: "Only partial hints will be displayed.\nI've played similar games,\
-      \ such as Slay the Spire."
+    Description: "Only hints relevant to this game's unique mechanics will be displayed.\n\
+      I've played similar games, such as Slay the Spire."
   DontShowHint:
     Name: No Hints
-    Description: "Don't show any hints.\nI have played <Touhou: Lost Branch of Legend>."
+    Description: "Don't display any hints.\nI've played Touhou: Lost Branch of Legend\
+      \ before."
   DetailedHint:
     Name: Detailed Hints
-    Description: "Show all hints of the game.\nIt's the first time I play a deck-building\
-      \ game."
+    Description: "Display all hints.\nThis is the first deckbuilder game I've played..."
   UsTitle: '{1}'
 MessageDialog:
   GameAbandonWarning: Abandon your current run?
@@ -511,40 +511,39 @@ BattleHint:
   Next: Next
   DontShow: Show no hints
   Detailed: Show detailed hints
-  Intro: "Welcome to Lunar Capital Exposition! Try hard to find the lost branch of\
-    \ legend!\nIf you have played any other deck-building game, you can select |Brief\
-    \ Hints| to check the special part of the game.\nSubsequent gameplay hints will\
-    \ also follow this preference. You can adjust the gameplay hints settings in the\
-    \ settings panel at any time."
-  Mana: "Right click on the card to view its details. (This also works for most of\
-    \ the panels in the game.)\nPlaying cards requires mana consumption. The card's\
-    \ mana cost is displayed in the upper right corner.\nThere are 7 types of mana\
-    \ base: colored mana <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
-    R\"><sprite=\"ManaSprite\" name=\"G\">, colorless mana <sprite=\"ManaSprite\"\
-    \ name=\"C\"> and <sprite=\"ManaSprite\" name=\"P\"> which can fill into any mana\
-    \ cost requirement.\nGeneric cost like <sprite=\"ManaSprite\" name=\"2\"> can\
-    \ be paid with any 2 mana."
+  Intro: "Welcome to Lunar Capital Exposition! Try your best to find the lost branch\
+    \ of legend!\nIf you've played other deckbuilding games before, you can choose\
+    \ |Brief Hints| to only display hints about this game's unique mechanics.\nSubsequent\
+    \ gameplay hints will also follow this preference. You can adjust the gameplay\
+    \ hints settings in the settings panel at any time."
+  Mana: "Right click on a card to view its details. (This also works for most other\
+    \ places you see cards in the game.)\nPlaying cards costs mana. The card's mana\
+    \ cost is displayed in the upper right corner.\nThere are 7 types of mana base:\
+    \ colored mana <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
+    U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
+    ManaSprite\" name=\"G\">, colorless mana <sprite=\"ManaSprite\" name=\"C\"> and\
+    \ <sprite=\"ManaSprite\" name=\"P\"> which can fill into any mana cost requirement.\n\
+    Generic costs like <sprite=\"ManaSprite\" name=\"2\"> can be paid with any 2 mana."
   Brief: Show brief hints
   BasicBattle: "Play cards from your hand to expel the enemy!\nCards played from your\
     \ hand will be moved to the discard pile. At the end of the player's turn, cards\
     \ that remain in your hand will also be moved to the discard pile.\nNew cards\
     \ will be drawn at the beginning of the player's turn."
-  ManaPanel: "The mana panel shows the remaining mana for the current turn.\nLeft\
-    \ click on any mana to move mana to the pending area. The mana in the pending\
-    \ area will be consumed first.\nRight click on any mana to move all mana of that\
-    \ color to the pending area.\nMana is restored at the beginning of the player's\
-    \ turn."
+  ManaPanel: "The mana panel shows how much mana is left.\nLeft click on a mana symbol\
+    \ to \"float\" it. Floating mana will be spent before all other mana.\nRight click\
+    \ on a mana symbol to float all mana of that color.\nMana is restored at the beginning\
+    \ of the player's turn."
   BlockShield: "Before taking damage, play a defense card to gain |Block| and |s:Barrier|.\n\
     |Block| and |s:Barrier| reduce the amount of damage that will be dealt.\n|Block|\
     \ disappears at the beginning of the main character's next turn, but |s:Barrier|\
     \ does not."
   Intention: "The enemy's intent is displayed above them.\nEnemies may have intentions\
-    \ such as attack, defend, buff, apply debuff, or cast a spell card."
-  UltimateSkill: "Cast the spell card to turn the tide of battle!\nUsing a spell card\
-    \ consumes a full tube of power. Defeated enemies drop <sprite=\"Point\" name=\"\
-    Power\">, which replenishes the power needed for the spell card.\nSpell card can\
-    \ only be used once per turn."
+    \ such as attack, defend, buffing their allies, applying debuffs, or casting a\
+    \ Spell Card."
+  UltimateSkill: "Cast the Spell Card to turn the tide of battle!\nUsing a Spell Card\
+    \ consumes a full power gauge. Defeated enemies drop <sprite=\"Point\" name=\"\
+    Power\">, which replenishes the power needed for the Spell Card.\nSpell Cards\
+    \ can only be used once per turn."
 Cards:
   UnUpgradable: Non-Upgradable
   IsUpgraded: Upgraded
@@ -682,15 +681,16 @@ GameResult:
   FailReason: 'Fail Reason:'
   Abandon: Abandon
   ReturnHint: Click anywhere to return to the main menu
-  UnlockHint: Newly unlocked exhibits and cards will appear in the future game run.
+  UnlockHint: Newly unlocked exhibits and cards will appear in future runs.
   Win: Incident Resolved
   TrueEnd: Resolve the incident perfectly.
   Lose: Failure
   BadEnd: Let's go back in time and try that again...
 JadeBoxPage:
   JadeBoxDaily: Daily Jade Box
-  JadeBoxHint: "Accept Eirin's special gift, Jade box comes with powerful and weird\
-    \ ability, hope you are ready.\nThe game run with Jade box will not unlock achievements."
+  JadeBoxHint: "Eirin's special gift. The Jade Box contains weird and powerful modifiers.\
+    \ Hope you're ready to take them on!\nYou can't unlock achievements while using\
+    \ the Jade Box."
   JadeBoxRandom: Random Jade Box
   JadeBoxLast: Last Jade Box
   JadeBoxRandomHint: Refresh the random result once every time you successfully enter
@@ -702,7 +702,7 @@ History:
   Exhibit: 'Exhibit: {0}'
   Mana: Mana
   Money: Money {0}
-  Puzzles: '{0} Puzzle'
+  Puzzles: '{0} Requests'
   PlayedTime: 'Played Time: {0}'
 ManaSelect:
   Title: Select a mana type
