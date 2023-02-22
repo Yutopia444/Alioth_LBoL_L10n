@@ -717,7 +717,7 @@ FinalSpark:
   Description: 对所有敌人造成 {Damage} 点伤害。
   UpgradedDescription: |-
     对所有敌人造成 {Damage} 点伤害。
-    {PlayerName}进入爆发时，从弃牌堆回到手中。
+    {PlayerName}进入|爆发|时，从弃牌堆回到手中。
   FlavorText: 「弹幕最重要的就是火力！」
 
 HuoliQuankai:
@@ -1149,9 +1149,19 @@ SakuyaKiller:
     回合结束时将 {Value1} 张|飞刀|洗入抽牌堆。
     每当一名敌人被击败时亦如此。
 
+BrokenTimeline:
+  Name: 破碎的时间线
+  Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合开始时不会从基础法力中获得法力。
+
 SakuyaSpeedup:
   Name: 加速时空
   Description: 将|时域冲击|的层数翻倍。
+
+SakuyaUsage:
+  Name: 咲夜的正确用法
+  Description: |-
+    抽 {Value1} 张牌。
+    第 {Value2} 次打出时：改为|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
 
 CirnoAttackU:
   Name: 冰锥射击
@@ -1339,7 +1349,7 @@ KoishiAttackG:
   Description: 造成 {Damage} 点伤害。
 
 KoishiBlockB:
-  Name: 忘我之爱
+  Name: 入梦
   Description: 获得 {Block} 点|格挡|。
 
 KoishiAttackB:
@@ -1350,17 +1360,24 @@ KoishiBlockG:
   Name: 蔷薇花谢
   Description: 获得 {Block} 点|格挡|。
 
-Benwo:
+BenwoCard:
   Name: 本我
   Description: |-
     造成 {Damage} 点伤害。
     进入|本我|。
 
-Chaowo:
+ChaowoCard:
   Name: 超我
   Description: |-
     获得 {Block} 点|格挡|。
     进入|超我|。
+
+ZiwoCard:
+  Name: 忘我之爱
+  Description: |-
+    造成 {Damage} 点伤害。
+    恢复自我，离开其它|精神状态|。
+    |直觉|：改为进入|本我|。
 
 BailianJingang:
   Name: 金刚体
@@ -1603,9 +1620,7 @@ HinaAttack:
 
 BailianBlack:
   Name: 拥抱黑暗
-  Description: |-
-    所有非攻击非|能力|的牌，打出后被|放逐|。
-    它们的费用降至{Mana}。
+  Description: 所有非攻击非|能力|的牌，打出后被|放逐|，它们的费用降至{Mana}。
   FlavorText: 妖术通念过，佛祖心中留。世人若学我，如同进魔道。
 
 GrimoireStudy:
@@ -2009,8 +2024,7 @@ CloseEyeShoot:
 
 KongMana:
   Name: 炉心融解
-  Description: 选择一张手牌|放逐|，获得相当于它费用的法力。
-  UpgradedDescription: |-
+  Description: |-
     选择一张手牌|放逐|，获得相当于它费用的法力。
     将一张|幻虹|加入手中。
 
