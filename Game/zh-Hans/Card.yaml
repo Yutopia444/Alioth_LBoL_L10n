@@ -285,7 +285,7 @@ ChuanyueJiejie:
   Name: 穿越结界
   Description: |-
     获得 {Shield} 点|护盾|。
-    从|放逐区|选择一张牌移回手牌。
+    从|放逐|区选择一张牌移回手中。
 
 HuanxiangTouying:
   Name: 幻想投影
@@ -894,6 +894,13 @@ SakuyaTwiceAttack:
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
     将 {Value2} 张|飞刀|洗入弃牌堆。
 
+SakuyaGoOut:
+  Name: 出行准备
+  Description: |-
+    抽 {Value1} 张牌。
+    选择 {Value1} 张手牌丢弃。
+    获得{Mana}。
+
 SakuyaWeak:
   Name: 时空压制
   Description: |-
@@ -970,6 +977,12 @@ BladePower:
     获得 {Value1} 点|火力|。
     |进入手中时|：如果本牌是唯一的手牌，|暂塑|为{Mana}。
 
+SakuyaInvestigate:
+  Name: 时停侦探
+  Description: |-
+    施加 {Value1} 层|锁定|。
+    在额外回合开始时，从|放逐|区回到手中，|暂塑|为{Mana}。
+
 SakuyaDefenseRetain:
   Name: 时刻警戒
   Description: |-
@@ -983,6 +996,12 @@ SakuyaAttackX:
 SakuyaDraw:
   Name: 毫无破绽
   Description: 当此牌被主动弃掉时，抽 {Value1} 张牌 。
+
+VampireHunter:
+  Name: 吸血鬼猎手
+  Description: |-
+    造成 {Damage} 点伤害。
+    如果目标具有|吸血鬼|效果，造成 {Value1} 倍伤害。
 
 PrepareParty:
   Name: 准备宴会
@@ -1034,6 +1053,13 @@ DropToKnife:
   Description: |-
     选择 {Value1} 张手牌丢弃。
     每丢弃一张牌，将一张|飞刀|加入手中。
+
+SakuyaFuneral:
+  Name: 过早的埋葬
+  Description: |-
+    失去 {Value1} 点生命。
+    从|放逐|区选择一张牌移回手中，它暂塑为{Mana}。
+  FlavorText: 「我还没死呢，大小姐。」
 
 FakeTimeline:
   Name: 假想时轴
@@ -1123,6 +1149,7 @@ BackToFuture:
   Description: |-
     对调抽牌堆和弃牌堆。
     抽 {Value1} 张牌。
+  FlavorText: Roads? Where we're going, we don't need roads.
 
 EvilMaid:
   Name: 恶魔的女仆
@@ -1152,16 +1179,27 @@ SakuyaKiller:
 BrokenTimeline:
   Name: 破碎的时间线
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合开始时不会从基础法力中获得法力。
+  FlavorText: 这条时间线不能要了，下一把。
 
 SakuyaSpeedup:
   Name: 加速时空
   Description: 将|时域冲击|的层数翻倍。
+  FlavorText: 我在你背后。
+
+SakuyaDetective:
+  Name: 追查真凶
+  Description: 对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
+  ExtraDescription1: |-
+    对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
+    （已累计 {BossDamage} 点）
+  FlavorText: 虽然大家可能已经忘记了，其实本作品是一款查案游戏。
 
 SakuyaUsage:
   Name: 咲夜的正确用法
   Description: |-
     抽 {Value1} 张牌。
     第 {Value2} 次打出时：改为|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
+  FlavorText: 就是时停做家务。
 
 CirnoAttackU:
   Name: 冰锥射击
