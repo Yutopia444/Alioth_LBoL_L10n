@@ -241,12 +241,6 @@ Drowning:
   Description: '{OwnerName}的回合结束时，受到 {Level} 点伤害。'
   Brief: '{OwnerName}的回合结束时，受到若干点伤害。'
 
-FoxCharm:
-  Name: 妖狐魅惑
-  Description: |-
-    在一回合内打出 {Limit} 张牌后，
-    剩余 {Count} 张。
-
 Vampire:
   Name: 吸血鬼
   Description: '{OwnerName}造成未被阻挡的伤害时，恢复等量的生命。真可怕！'
@@ -291,6 +285,12 @@ PhoneBillSe:
   Description: |-
     {OwnerName}打电话时收取{PlayerName} {Level} 点<sprite="Point" name="Gold">。
     被击败时掉落 {Count} 点<sprite="Point" name="Gold">。
+
+FoxCharm:
+  Name: 妖狐魅惑
+  Description: |-
+    一回合只能打出 {Limit} 张牌，剩余 {Count} 张。
+    击败妖狐移除本效果。
 
 DeathPoison:
   Name: 死亡剧毒
@@ -800,16 +800,20 @@ FairyTreeSe:
   Description: 每回合第一次你将一张技能卡加入手牌后，获得{Mana}并抽1张牌。
   Brief: 每回合第一次你将一张技能卡加入手牌后，获得法力并抽1张牌。
 
-ClownAbilitySe:
-  Name: 地狱之蚀
-  Description: |-
-    每当你抽取到一张手牌时，随机结算一个效果{Level}次：
-    - 费用增加1
-    - 移除1点随机费用
-  Brief: |-
-    每当你抽取到一张手牌时，随机结算一个效果：
-    - 费用增加1
-    - 移除1点随机费用
+PisiSkillSe:
+  Name: 寒狱之蚀
+  Description: 直至回合结束，每当你获得|格挡|时，改为对随机敌人造成 {Level} 倍的伤害。
+  Brief: 直至回合结束，每当你获得|格挡|时，改为对随机敌人造成若干倍的伤害。
+
+DaiyoSe:
+  Name: 大妖精的协同
+  Description: 在你下一次攻击造成伤害后，额外追加一次 {Level} 点的伤害。
+  Brief: 在你下一次攻击造成伤害后，额外追加一次若干点的伤害。
+
+MinengZhuruSe:
+  Name: 秘能注入
+  Description: 因回合结束触发的|妖精支援|效果增加 {Level} 倍。
+  Brief: 因回合结束触发的|妖精支援|效果增加若干倍。
 
 Benwo:
   Name: 本我

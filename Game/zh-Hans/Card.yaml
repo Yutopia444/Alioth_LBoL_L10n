@@ -108,9 +108,6 @@ JingshenYishi:
   Name: 净身仪式
   Description: |-
     获得 {Block} 点|格挡|。
-    |放逐|一张随机的手牌。
-  UpgradedDescription: |-
-    获得 {Block} 点|格挡|。
     选择一张手牌|放逐|。
   FlavorText: 与铜臭绝缘的巫女好像没有这么做的必要。
 
@@ -1006,8 +1003,8 @@ VampireHunter:
 PrepareParty:
   Name: 准备宴会
   Description: |-
+    将至多一张手牌置于抽牌堆顶。
     获得 {Block} 点|格挡|。
-    将一张手牌置于抽牌堆顶，否则获得{Mana}。
 
 MihuanJack:
   Name: 迷幻杰克
@@ -1181,11 +1178,6 @@ BrokenTimeline:
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合开始时不会从基础法力中获得法力。
   FlavorText: 这条时间线不能要了，下一把。
 
-SakuyaSpeedup:
-  Name: 加速时空
-  Description: 将|时域冲击|的层数翻倍。
-  FlavorText: 我在你背后。
-
 SakuyaDetective:
   Name: 追查真凶
   Description: 对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
@@ -1193,6 +1185,11 @@ SakuyaDetective:
     对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
     （已累计 {BossDamage} 点）
   FlavorText: 虽然大家可能已经忘记了，其实本作品是一款查案游戏。
+
+SakuyaSpeedup:
+  Name: 加速时空
+  Description: 将|时域冲击|的层数翻倍。
+  FlavorText: 我在你背后。
 
 SakuyaUsage:
   Name: 咲夜的正确用法
@@ -1210,7 +1207,7 @@ CirnoBlockG:
   Description: 获得 {Block} 点|格挡|。
 
 CirnoAttackG:
-  Name: 绿叶飞镖
+  Name: 霜叶飞镖
   Description: 造成 {Damage} 点伤害。
 
 CirnoBlockU:
@@ -1229,6 +1226,10 @@ SummerFlower:
     造成 {Damage} 点伤害。
     |成长|：伤害提高 {Value1} 点。
 
+XisuiBinbao:
+  Name: 细碎冰雹
+  Description: 造成 {Damage} 点伤害。
+
 CoolBreeze:
   Name: 凉爽清风
   Description: |-
@@ -1245,7 +1246,11 @@ CallFriend:
   Name: 呼朋唤友
   Description: |-
     获得 {Value1} 层闪避。
-    从 {Value2} 张附带|应援|的卡牌中选择一张加入你的手牌。
+    从 {Value2} 张附带|妖精支援|的卡牌中选择一张加入你的手牌。
+
+YiwaiHuakai:
+  Name: 意外花开
+  Description: 获得 {Block} 点|格挡|。
 
 IceSword:
   Name: 塑冰成剑
@@ -1264,19 +1269,30 @@ IceBlock:
     获得 {Block} 点格挡，然后结束本回合。
     如果这是本回合你打出的第一张牌，下个回合开始时，对所有敌人施加|寒冷|并获得 {Shield} 点护盾。
 
+IceJiguanqiang:
+  Name: 冰柱机枪
+  Description: 造成伤害。
+
 FairyIntellect:
   Name: 妖精智慧
   Description: |-
     抽 {Value1} 张牌。
     {PlayerName}回合开始时，抽 {Value2} 张牌。
 
+MinengZhuru:
+  Name: 秘能注入
+  Description: 回合结束时触发的|妖精援助|效果增加 {Value1} 倍。
+
 FairyTree:
   Name: 妖精的大树
   Description: 每回合第一次你将一张技能卡加入手中后，获得{Mana}并抽1张牌。
 
-SenlinTanxian:
-  Name: 森林探险
-  Description: 向牌库加入一个随机工具牌（无法在本场战斗中使用）。（没写）
+BestFairy:
+  Name: 最强的妖精
+  Description: 手中每有一张|妖精支援|牌，获得 {Value1} 点|临时火力|。
+
+FairyHeal:
+  Name: 妖精再生
 
 DaiyoDefense:
   Name: 大妖精
@@ -1294,8 +1310,10 @@ GatherFairy:
   Name: 妖精集结
   Description: |-
     代码没写
-    抽4张牌，手牌上限提升至12。
-    这个效果给一张蓝绿中立牌。
+    手牌上限提升至12，抽4张牌。
+
+IceTornado:
+  Name: 碎冰龙卷
 
 FairyWar:
   Name: 妖精大战争
@@ -1307,17 +1325,17 @@ Jubin:
     对所有敌人造成 {Damage} 点伤害。
     移除所有敌人的寒冷，每移除一个寒冷，将一张水流加入手中。
 
-FairyEzuoju:
-  Name: 妖精恶作剧
-  Description: |-
-    将{Value1}张随机|妖精支援|牌洗入弃牌堆，使其附带|填充|。
-    将一张{Value2}张|黑暗残留|洗入弃牌堆。
-
 StarAttack:
   Name: 星辰阵雨
   Description: |-
     对目标造成{Value1}次{Damage}点伤害。
     将一张|斯塔的侦察|加入你的手牌。
+
+FairyEzuoju:
+  Name: 妖精恶作剧
+  Description: |-
+    将{Value1}张随机|妖精支援|牌洗入弃牌堆，使其附带|填充|。
+    将一张{Value2}张|黑暗残留|洗入弃牌堆。
 
 LunaAttack:
   Name: 沐浴月光
@@ -1344,13 +1362,11 @@ SunnyDefense:
     获得{Block}点格挡，获得等量于{PlayerName}当前|反射|层数的护盾。
     将一张|桑尼的折射|加入你的手牌。
 
-ClownAbility:
-  Name: 地狱之蚀
+PisiSkill:
+  Name: 寒狱之蚀
   Description: |-
-    将一张|皮斯的疯狂|加入你的手牌。
-    每当你抽取到一张手牌时，随机结算一个效果：
-    - 费用增加{Mana}
-    - 移除{Value1}点随机费用
+    抽 {Value1} 张牌。
+    直至回合结束，每当你获得|格挡|时，改为对随机敌人造成 {Value2} 倍的伤害。
 
 FairySupportLarva:
   Name: 拉尔瓦的振翅
@@ -1358,29 +1374,27 @@ FairySupportLarva:
 
 FairySupportDaiyo:
   Name: 大妖精的协同
-  Description: '|妖精支援|：将抽牌堆中的一张基本攻击牌的伤害提高 {Value1}。（如果没有，则选择抽牌堆或弃牌堆的基本攻击牌）'
+  Description: |-
+    |妖精支援|：使你下一次攻击牌的伤害额外附带一次 {Value1} 点伤害。
+    （没写，闪电球的变体）
 
 FairySupportLily:
   Name: 莉莉白的报春
-  Description: '|妖精支援|：获得{Mana}并保留。'
+  Description: '|妖精支援|：获得{Mana}。'
 
 FairySupportSunny:
   Name: 桑尼的折射
-  Description: '|妖精支援|：获得 {Value1} 点反射。'
+  Description: |-
+    |被放逐|：对生命值最高的敌人造成 {Value1} 点伤害。
+    |妖精支援|：使伤害提高 {Value2} 点。
 
 FairySupportLuna:
   Name: 露娜的静谧
-  Description: '|妖精支援|：获得 {Value1} 层庇邪，每有1层庇邪获得 {Value2} 点格挡。'
+  Description: '|妖精支援|：获得 {Value1} 层庇邪，每有1层庇邪获得 {Value2} 点反射。'
 
 FairySupportStar:
   Name: 斯塔的侦测
   Description: '|妖精支援|：对随机敌人施加 {Value1} 层虚弱，{Value1} 层易伤，{Value2} 层锁定。'
-
-FairySupportClown:
-  Name: 皮斯的疯狂
-  Description: |-
-    每当你支付合计 3 点以上的费用打出一张卡牌时，翻倍这张卡牌的伤害。
-    |妖精支援|：对随机敌人造成 {Value1} 点伤害。
 
 KoishiAttackG:
   Name: 蔷薇花开
