@@ -96,7 +96,7 @@ LingfuHuti:
 JingshenYishi:
   Name: Rituel Purifiant
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Exilez|\
-    \ une carte au hasard dans la main."
+    \ une carte de la main."
   FlavorText: La prêtresse, qui est isolée du reste du monde, ne semble pas en avoir
     elle-même besoin
 ReimuWeiyan:
@@ -1032,8 +1032,8 @@ SakuyaDraw:
     \ cartes'}."
 PrepareParty:
   Name: Préparation du Banquet
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPlacez\
-    \ une carte de la main au-dessus de la pioche ou gagnez {Mana}."
+  Description: "Mettez jusqu'à une carte de votre main au-dessus de la pioche.\nGagnez\
+    \ {Block} |Bouclier{Block:plural one='' other='s'}|."
 MihuanJack:
   Name: Jack the Ludo Bile
   Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} |Impulsions temporelles|.
@@ -1143,7 +1143,7 @@ CirnoAttackU:
   Name: Tir de Glace
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoAttackG:
-  Name: Feuilles Fléchettes
+  Name: Fléchettes Feuille de Givre
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 CirnoBlockU:
   Name: Bouclier de Glace
@@ -2064,7 +2064,7 @@ LarvaSkill:
 CallFriend:
   Name: Appel des Amis
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nChoisissez\
-    \ une parmi {Value2} cartes avec |Support| à ajouter à votre main."
+    \ une parmi {Value2} cartes avec |Soutien Fée| à ajouter à votre main."
 IceBlock:
   Name: Barrière de Glace
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}] et terminez\
@@ -2075,9 +2075,6 @@ FairyTree:
   Name: Arbre Féerique
   Description: La première fois que vous ajoutez une carte de Talent à votre main
     à chaque tour, obtenez {Mana} et piochez 1 carte.
-SenlinTanxian:
-  Description: Ajoutez une carte outil aléatoire au paquet (ne peut pas être utilisée
-    dans cette bataille). |d:(travaux en cours)|
 DaiyoDefense:
   Name: Grande Fée
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nAjoutez\
@@ -2088,8 +2085,7 @@ LilyAttack:
     \ ennemis.\nAjoutez |Héraut de Lily White| à votre main."
 GatherFairy:
   Name: Assemblée de Fées
-  Description: "(code non écrit)\nPiochez 4 cartes et augmentez la limite de main\
-    \ à 12.\nCet effet donne une carte neutre bleu-vert."
+  Description: "(code non écrit)\nAugmentez la limite de main à 12, piochez 4 cartes."
 Jubin:
   Name: Brise Iceberg
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -2125,38 +2121,31 @@ SunnyDefense:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|, puis gagnez\
     \ un bouclier égal à la |Réflexion| que {PlayerName} possède.\nAjoutez une |Réfraction\
     \ de Sunny| à votre main."
-ClownAbility:
-  Description: "Ajoutez une |Folie de Clownpiece| à votre main.\nÀ chaque fois que\
-    \ vous piochez une carte dans votre main, résolvez un effet aléatoire :\n- Coûts\
-    \ augmentés de {Mana}\n- Diminuer un coût aléatoire de {Value1} points"
 FairySupportLily:
-  Description: '|Soutien Fée| : gagnez {Mana} et conservez-le.'
+  Description: '|Soutien Fée| : gagnez {Mana}.'
   Name: Primevère de Lily White
 FairySupportSunny:
-  Description: '|Soutien Fée| : gagnez {Value1} |Réflexion{Value1:plural one=''''
-    other=''s''}|.'
+  Description: '|Exilé| : inflige {Value1} dégât{Value1:plural one='''' other=''s''}
+    à l''ennemi avec la santé la plus élevée.
+
+    |Soutien Fée| : augmente de {Value2} les dégâts.'
   Name: Réfraction de Sunny
 FairySupportLuna:
   Name: Tranquillité de Luna
   Description: "|Soutien Fée| : gagnez {Value1} |Amulette{Value1:plural one='' other='s'}|\
-    \ et gagnez {Value2} |Bouclier{Value2:plural one='' other='s'}| pour chaque |Amulette|."
+    \ et gagnez {Value2} |Réflexion{Value2:plural one='' other='s'}| pour chaque |Amulette|."
 FairySupportStar:
   Name: Détection par les Étoiles
   Description: '|Soutien Fée| : applique aléatoirement aux ennemis {Value1} |Faible{Value1:plural
     one='''' other=''s''}|, {Value1} |Vulnérable{Value1:plural one='''' other=''s''}|,
     et {Value2} |Verrouillé{Value2:plural one='''' other=''s''}|.'
-FairySupportClown:
-  Description: "Chaque fois que vous jouez une carte pour un coût total de 3 ou plus,\
-    \ doublez les dégâts de cette carte.\n|Soutien Fée| : inflige {Value1} dégât{Value1:plural\
-    \ one='' other='s'} à un ennemi aléatoire."
 FairySupportLarva:
   Name: Ailes de Larva
   Description: "|Soutien Fée| : gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|."
 FairySupportDaiyo:
-  Name: Collaboration de la Grande Fée
-  Description: "|Soutien Fée| : augmente les dégâts d'une carte d'attaque de base\
-    \ dans la pioche de {Value1}. (Sinon, choisissez la carte d'attaque de base de\
-    \ la pioche ou de la défausse)"
+  Name: Assistance de Daiyousei
+  Description: "|Soutien Fée| : ajoute {Value1} dégâts supplémentaires aux dégâts\
+    \ de votre prochaine carte d'attaque.\n(Non écrit, variante de Lightning Ball)"
 ReimuFestival:
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
     \ de |Puissance Temporaire| au début de son tour."
@@ -2321,3 +2310,29 @@ SakuyaDetective:
     one='' other='s'} au début du combat.
   FlavorText: Bien que vous ayez peut-être oublié, ce jeu est en fait un jeu d'enquête
     criminelle.
+XisuiBinbao:
+  Name: Belle Grêle
+  Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
+YiwaiHuakai:
+  Name: Floraison Inattendue
+  Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+IceJiguanqiang:
+  Name: Mitrailleuse à Glaçons
+  Description: Cause quelques dégâts.
+MinengZhuru:
+  Name: Infusion Arcanique
+  Description: L'effet de |Aide des Fées| déclenché à la fin du tour est multiplié
+    par {Value1} fois.
+BestFairy:
+  Name: la Plus Forte des Fées
+  Description: Gagnez {Value1} |Puissance{}Value1:plural one=' Temporaire' other='s
+    Temporaires'| pour chaque carte |Soutien Fée| en main.
+FairyHeal:
+  Name: Renaissance des Fées
+IceTornado:
+  Name: Tornade de Glace
+PisiSkill:
+  Name: Éclipse d'Enfer
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nJusqu'à la\
+    \ fin du tour, chaque fois que vous gagnez du |Bouclier|, infligez à la place\
+    \ {Valeur2} fois cette valeur en dégâts à un ennemi aléatoire."
