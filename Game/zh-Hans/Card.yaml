@@ -262,7 +262,7 @@ ReimuDrink:
 
 EvilTuiZhi:
   Name: 妖邪退治
-  Description: 这个回合内的下 {Value1} 张攻击牌造成双倍伤害。
+  Description: 下 {Value1} 张攻击牌造成双倍伤害。
 
 TaijiLiangyi:
   Name: 太极生两仪
@@ -289,11 +289,11 @@ HuanxiangTouying:
   Description: |-
     获得{Mana}。
     从 {Value1} 张卡牌中选择一张加入手中，它具有|放逐|、|虚无|。
-    这些卡牌的费用总数为一二三。
+    这些卡牌的费用总数分别为一二三。
   UpgradedDescription: |-
     获得{Mana}。
     从 {Value1} 张卡牌中选择一张加入手中，它具有|放逐|、|虚无|。
-    这些卡牌的费用总数为一二三四五。
+    这些卡牌的费用总数分别为一二三四五。
   FlavorText: 「────投影，开始。」
 
 OutInGap:
@@ -534,8 +534,8 @@ ScryBlock:
 ShibaiChanwu:
   Name: 失败产物
   Description: |-
-    将 {Value1} 张|不稳定魔药|洗入弃牌堆。
-    将 {Value2} 张|暗影|洗入抽牌堆。
+    将 {Value1} 张|不稳定魔药|洗入抽牌堆。
+    将 {Value2} 张|暗影|加入手中。
   FlavorText: 即便是制作甜品都可能有风险。
 
 ShinningPotion:
@@ -1180,8 +1180,7 @@ BrokenTimeline:
 
 SakuyaDetective:
   Name: 追查真凶
-  Description: 对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
-  ExtraDescription1: |-
+  Description: |-
     对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
     （已累计 {BossDamage} 点）
   FlavorText: 虽然大家可能已经忘记了，其实本作品是一款查案游戏。
@@ -1603,7 +1602,7 @@ RumiaBlock:
   Name: 遮光
   Description: |-
     获得 {Block} 点|格挡|。
-    将一张|暗影|加入手中。
+    将 {Value1} 张|暗影|加入手中。
   FlavorText: 没看见就是 0 伤害。
 
 YuyukoDebuff:
@@ -1629,7 +1628,7 @@ MystiaSing:
   Description: |-
     对所有敌人施加 {Value1} 点|暂失火力|。
     获得 {Value1} 点<sprite="Point" name="Power">。
-    将 {Value2} 张|暗影|洗入弃牌堆。
+    将 {Value2} 张|暗影|加入手中。
   FlavorText: 夜雀能唱出小号和煤气灶的音色吗？
 
 SatoriMemory:
@@ -1810,6 +1809,10 @@ DanmuJade:
     将 {Value1} 张|幻虹|加入手中。
     |每支付{Mana}|：获得 {Value2} 点|火力|和|灵力|。
 
+YouxiangGrow:
+  Name: 花鸟风月
+  Description: '|成长|卡牌计数时，额外增加 {Value1} 次。'
+
 LimaoSchool:
   Name: 狸猫的变身学校
   Description: 从 {Value1} 张随机的|狸猫变化|中选择 {Value2} 张生效。
@@ -1829,10 +1832,6 @@ MorphFrog:
 MorphMan:
   Name: 灵长变化
   Description: 获得 {Value1} 点<sprite="Point" name="Power">。
-
-YouxiangGrow:
-  Name: 花鸟风月
-  Description: '|成长|卡牌计数时，额外增加 {Value1} 次。'
 
 HuiyeMana:
   Name: 竹取的物语
