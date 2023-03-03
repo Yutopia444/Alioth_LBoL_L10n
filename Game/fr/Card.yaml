@@ -189,12 +189,12 @@ Wunvyu:
   Name: Orbes Vicieuses d'Hakurei
 HuanxiangTouying:
   Description: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires à\
-    \ ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
-    \ de 1, 2 et 3."
+    \ ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont respectivement\
+    \ un coût total de 1, 2 et 3."
   Name: Poursuite Activée
   UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires\
-    \ à ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont un coût total\
-    \ de 1, 2, 3, 4 et 5."
+    \ à ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont respectivement\
+    \ un coût total de 1, 2, 3, 4 et 5."
   FlavorText: '"...Moteur, action !"'
 OutInGap:
   Description: Choisissez une parmi {Value1} cartes aléatoires de |p:n'importe quelle
@@ -210,8 +210,8 @@ Jiangshen:
     \ les Frontières] ...\""
 EvilTuiZhi:
   Description: "{Value1:plural one=\"La prochaine carte d'attaque jouée\" other=\"\
-    Les % prochaines cartes d'attaque jouées\"} ce tour inflige{Value1:plural one=''\
-    \ other='nt'} le double de dégâts."
+    Les % prochaines cartes d'attaque jouées\"} inflige{Value1:plural one='' other='nt'}\
+    \ le double de dégâts."
   Name: Exterminer le Mal
 DoubleLianhuadie:
   Name: Papillon Lotus Dichromatique
@@ -572,8 +572,8 @@ ShibaiChanwu:
   Name: Produit de l'Échec
   FlavorText: Même faire des desserts comporte un risque d'échec.
   Description: "Ajoutez {Value1:plural one='% |Potion Instable|' other='% |Potions\
-    \ Instables|'} à la pile de défausse.\nAjoutez {Value2:plural one='% |Ombre|'\
-    \ other='% |Ombres|} à la pioche."
+    \ Instables|'} à la pioche.\nAjoutez {Value2:plural one='% |Ombre|' other='% |Ombres|}\
+    \ à votre main."
 ShinningPotion:
   Name: Champignon Lumineux
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
@@ -856,11 +856,12 @@ HuiyinAttack:
   Name: Mito no Mitsukuni
 ReadBook:
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
-    |d:Début : Choisissez 1 parmi {Value1} cartes bleues et/ou blanches à ajouter\
+    |d:Début : Choisissez une parmi {Value1} cartes bleues et/ou blanches à ajouter\
     \ à la main.|"
   Name: Étude Yōkai
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Début|\
-    \ : Choisissez 1 parmi {Value1} cartes bleues et/ou blanches à ajouter à la main."
+    \ : Choisissez une parmi {Value1} cartes bleues et/ou blanches à ajouter à la\
+    \ main."
   FlavorText: Dans le rapport annuel de Suzunaan l'année dernière, le nombre de livres
     empruntés par Toki a atteint la première place dans le groupe des enfants.
 Panzi:
@@ -1102,7 +1103,7 @@ TimeWalk:
   Name: Marches du Temps
   ExtraDescription1: "|d:Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.|\n\
     Les |Marches du Temps| perdent tous leurs effets pour le reste du combat."
-  FlavorText: Bien que le coût ait été nerfé, ça restait trop fort.
+  FlavorText: C'est certainement moins cher, mais ça reste fort.
 SpecialClock:
   FlavorText: 'Temps de nettoyage du salon : 0,4 seconde'
   Name: Astuces de Domestique
@@ -1245,7 +1246,7 @@ Shadow:
 RumiaBlock:
   Name: Voile d'Ombre
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
-    \ une |Ombre| à la main."
+    \ {Value1} |Ombre{Value1:plural one='' other='s'}| à la main."
   FlavorText: Si vous ne le voyez pas, cela signifie 0 dégâts.
 YuyukoDebuff:
   Name: Rêve sans Vie
@@ -1266,7 +1267,7 @@ SatoriAttack:
 MystiaSing:
   Description: "Appliquez {Value1} |Réduction{Value1:plural one='' other='s'} de Puissance\
     \ Temporaire| à chaque ennemi.\nGagnez {Value1} <sprite=\"Point\" name=\"Power\"\
-    >.\nMélangez {Value2} |Ombre{Value2:plural one='' other='s'}| à la défausse."
+    >.\nAjoutez {Value2} |Ombre{Value2:plural one='' other='s'}| à la main."
   Name: Chant du Moineau Nocturne
   FlavorText: Les moineaux de nuit peuvent-ils chanter comme des trompettes et des
     réchauds à gaz ?
@@ -1933,10 +1934,10 @@ Xuanguang:
   FlavorText: '{PlayerName} est étourdi par les lumières vives du tir.'
 SakuyaLock:
   Name: Verrouillage du Temps
-  Description: "Déclenche | Blocus d'argent |.\n( {PlayerName} subit {Value1} dégât{Value1:plural\
+  Description: "Déclenche |Blocus d'argent|.\n( {PlayerName} subit {Value1} dégât{Value1:plural\
     \ one='' other='s'} d'attaque. )"
-  NonbattleDescription: Déclenche | Blocus d'argent |.
-  FlavorText: "\"Laisse-moi m’occuper de mon volume sanguin.\""
+  NonbattleDescription: Déclenche |Blocus d'argent|.
+  FlavorText: "\"Laisse-moi tout de même m’occuper de ton volume sanguin.\""
 LoveLetter:
   Description: Donnez-le à la <color=#eab8bf>Fille en Mal d'Amour</color>, elle sera
     heureuse.
@@ -2282,7 +2283,7 @@ BenwoCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEntrez en\
     \ état d'|Ego|."
 SakuyaGoOut:
-  Name: Préparation du Voyage
+  Name: Préparation au Voyage
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nChoisissez\
     \ {Value1} carte{Value1:plural one='' other='s'} de votre main et défaussez-{Value1:plural\
     \ one='la' other='les'}.\nObtenez {Mana}."
@@ -2303,12 +2304,13 @@ SakuyaFuneral:
   FlavorText: '"Je ne suis pas encore mort, ma dame."'
 SakuyaDetective:
   Name: Traquer le Coupable
-  Description: Lorsque vous jouez contre un vrai coupable, infligez-lui {Value1} dégât{Value1:plural
-    one='' other='s'} au début du combat.
+  Description: "Lorsque vous jouez contre un vrai coupable, infligez-lui {Value1}\
+    \ dégât{Value1:plural one='' other='s'} au début du combat.\n({BossDamage} dégâts\
+    \ ont été accumulés)"
   FlavorText: Bien que vous ayez peut-être oublié, ce jeu est en fait un jeu d'enquête
     criminelle.
 XisuiBinbao:
-  Name: Belle Grêle
+  Name: Grêle Fine
   Description: Inflige {Damage} dégât{Damage:plural one='' other='s'}.
 YiwaiHuakai:
   Name: Floraison Inattendue
