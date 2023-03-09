@@ -57,10 +57,10 @@ Vulnerable:
   Description: "{OwnerName} es dañado un {Value}% mas por ataques {Duration:plural\
     \ one='hasta el final del turno' other='durante los próximos % turnos'}."
 LockedOn:
-  Name: Fijación
+  Name: Marcado
   Description: "{OwnerName} es infligida {Level} mas puntos de daño por cada ataque.\n\
-    |Fijación| disminuye en 1 punto al inicio de cada turno."
-  Brief: "{OwnerName} es infligida mas puntos de daño por cada ataque.\n|Fijación|\
+    |Marcado| disminuye en 1 punto al inicio de cada turno."
+  Brief: "{OwnerName} es infligida mas puntos de daño por cada ataque.\n|Marcado|\
     \ disminuye en 1 punto al inicio de cada turno."
 Graze:
   Name: Roce
@@ -75,7 +75,7 @@ ExtraTurn:
   Description: "{OwnerName} obtendrá {Level:plural one='% turno extra' other='% turnos\
     \ extra'} al terminar su turno actual."
 LimitedDamage:
-  Name: Limitador de Daño
+  Name: Liberador de articulos
   Description: '{OwnerName} solo puede ser infligida {Limit} puntos de daño cada turno.
     Todavía puede ser dañada {Count} puntos este turno.'
   Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de puntos de daño
@@ -200,6 +200,7 @@ DeathVulnerable:
 Drowning:
   Name: Ahogo
   Description: '{OwnerName} es infligida {Level} puntos de daño al final de cada turno.'
+  Brief: '{OwnerName} recibe daño al final de su turno.'
 LoveGirlDamageReduce:
   Name: Persistentes Remordimientos
   Description: Los sentimientos de {OwnerName} siguen siendo no correspondidos. Ella
@@ -268,3 +269,23 @@ Emi:
   Name: Interferencia Electromagnética
   Description: "{OwnerName} no puede actuar {Duration:plural one='hasta el final del\
     \ turno' other='durante los próximos % turnos'}."
+NoBaseManaThisTurn:
+  Brief: No obtienes maná del maná base al comienzo de este turno.
+  Name: Línea Temporal Rota
+  Description: No obtienes maná del maná base al comienzo de este turno.
+NoBaseManaNextTurn:
+  Brief: No obtienes maná del maná base al comienzo del siguiente turno.
+  Name: Línea Temporal Rota del Siguiente Turno
+  Description: No obtienes maná del maná base al comienzo del siguiente turno.
+Vampire:
+  Brief: '{OwnerName} gana vida igual al daño infligido sin bloquear. ¡Que miedo!'
+  Name: Vampiro
+  Description: '{OwnerName} gana vida igual al daño infligido sin bloquear. ¡Que miedo!'
+FoxCharm:
+  Name: Encanto del Zorro
+  Description: "Solo {Limit} cartas se pueden jugar cada turno, {Count} cartas restantes.\n\
+    Derrota a |Zorro Youkai| para eliminar este efecto."
+DeathPoison:
+  Name: Veneno Mortal
+  Description: "{PlayerName} recibe {Level} |Poison{Level:plural one='' other='s'}|\
+    \ cuando {OwnerName} es derrotado."
