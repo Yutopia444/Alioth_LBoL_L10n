@@ -8,13 +8,13 @@ Game:
   Level: Nivel
   Difficulty: Dificultad
   Deck: Biblioteca
-  DrawZone: Pila de Extracción
+  DrawZone: Pila de Cartas
   TurnCounter: Turno {0}
   ExtraTurn: Extra
   Next: Adelante
   NextSkip: Ignorar Recompensas
   NextStage: Siguiente Acto
-  UnlockLevel: Nivel de Desbloqueo
+  UnlockLevel: Nivel Desbloqueado
   ActualOrder: Orden Real
   DiscardZone: Pila de Descarte
   IndexOrder: Índice
@@ -26,45 +26,536 @@ Game:
   RarityOrder: Rareza
   RarityOrderExplain: "Cartas de la misma rareza son mostradas en su orden de colección.\n\
     Cartas con el mismo nombre son mostradas de acuerdo al orden real de cada una."
-  DrawZoneOutOfOrder: Pila de Extracción (No Ordenada)
-  BattleStart: Inicio del Combate
+  DrawZoneOutOfOrder: Pila de Cartas (No Ordenada)
+  BattleStart: Empieza la Batalla
   PlayerTurn: Jugador
   EndTurn: Fin del Turno
   ActualOrderExplain: "Muestra las cartas en el orden en que entran la pila.\n\nMazo:\
-    \ El orden en que las cartas fueron adquiridas en este juego.\nPila de Extracción:\
-    \ La primera está en la \"parte superior\" de la pila.\nPila de Descarte: La última\
+    \ El orden en que las cartas fueron adquiridas en este juego.\nPila de carta:\
+    \ La primera está en la \"parte superior\" de la pila.\nPila de descarte: La última\
     \ está en la \"parte superior\" de la pila.\n\nPor defecto, no puedes ver la pila\
     \ de extracción en este orden."
-  DrawZoneInOrder: Pila de Extracción (Ordenada)
+  DrawZoneInOrder: Pila de Cartas (Ordenada)
   ManaAmountOrder: Cantidad de Maná
   ExileZone: Exilio
   EnemyTurn: Enemigo
   Achievement: Logro
 Explain:
   Title: Nota
-  RollCard: "|Cartas Descubribles a través de Recompensas de Carta|\n\n Solo puedes\
-    \ encontrar ciertas cartas en Recompensas de Carta, si cumplen las siguientes\
-    \ características:\n 1: El costo de maná de la carta puede ser pagado usando el\
-    \ maná del |maná base|.\n 2: Si es una carta Única, solo puede ser encontrada\
-    \ si estas jugando como su personaje correspondiente, o si tienes una de sus |Exposiciones\
-    \ Brillantes|.\n     3: Cada uno de los colores de la carta esta presente en tu\
-    \ |maná base|. Maná cromático no cuenta para esta regla.\n\n    Por ejemplo, supongamos\
-    \ que estás jugando como Reimu y obtienes |Grimorio Oscuro|, |Piedra Filosofal|\
-    \ y |Mazo Milagroso| como Exposiciones. |d:(Cambiaste tu Exposición Brillante\
-    \ con Eirin...)| \n    El |maná base| tendría <sprite=\"ManaSprite\" name=\"W\"\
-    ><sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
-    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
-    \ name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. Puedes encontrar cartas Únicas\
-    \ a Reimu y Marisa, ya que tienes el |Grimorio Oscuro|.\n\n    En este caso, puedes\
-    \ encontrar una carta negra wue cueste <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
-    ManaSprite\" name=\"B\"> dado que puedes pagar <sprite=\"ManaSprite\" name=\"\
-    B\"><sprite=\"ManaSprite\" name=\"P\"> para usarla. Sin embargo, |r:no puedes|\
-    \ encontrar una carta negra y azul que cueste <sprite=\"ManaSprite\" name=\"U\"\
-    ><sprite=\"ManaSprite\" name=\"B\">, dado que no hay <sprite=\"ManaSprite\" name=\"\
-    U\"> en el |maná base|, aún aunque puedas pagar <sprite=\"ManaSprite\" name=\"\
-    B\"><sprite=\"ManaSprite\" name=\"P\"> para usarla.\n\n    P.S.\n    |Carta Blanca|,\
-    \ una |Exposición Brillante|, permite encontrar cartas de |p:cualquier color|.\n\
-    \    Cards with mana value 5 or greater and have a generic mana cost component\
-    \ |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">,\
-    \ etc.)| can still be found even if there isn't enough mana in the |mana base|\
-    \ to play it. There are several ways to reduce the mana cost of these cards."
+  RollCard: "|Descubre Cartas a través de Recompensas de Carta|\n\n Solo puedes encontrar\
+    \ ciertas cartas en Recompensas de Carta, si cumplen las siguientes características:\n\
+    \ 1: El costo de maná de la carta puede ser pagado usando el maná del |maná base|.\n\
+    \ 2: Si es una carta Única, solo puede ser encontrada si estas jugando como su\
+    \ personaje correspondiente, o si tienes una de sus |Exposiciones Brillantes|.\n\
+    \ 3: Cada uno de los colores de la carta esta presente en tu |maná base|. Maná\
+    \ cromático no cuenta para esta regla.\n\n Por ejemplo, supongamos que estás jugando\
+    \ como Reimu y obtienes |Grimorio Oscuro|, |Piedra Filosofal| y |Mazo Milagroso|\
+    \ como Exposiciones. |d:(Cambiaste tu Exposición Brillante con Eirin...)| \n El\
+    \ |maná base| tendría <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
+    ManaSprite\" name=\"C\">. Puedes encontrar cartas Únicas a Reimu y Marisa, ya\
+    \ que tienes el |Grimorio Oscuro|.\n\n En este caso, puedes encontrar una carta\
+    \ negra que cueste <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    B\"> dado que puedes pagar <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"> para usarla. Sin embargo, |r:no puedes| encontrar una carta negra\
+    \ y azul que cueste <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
+    B\">, dado que no hay <sprite=\"ManaSprite\" name=\"U\"> en el |maná base|, incluso\
+    \ si pudieras pagar <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"> para usarla.\n\n P.S.\n |Carta Blanca|, una |Exposición Brillante|, permite\
+    \ encontrar cartas de |p:cualquier color|.\n Cards with mana value 5 or greater\
+    \ and have a generic mana cost component |d:(<sprite=\"ManaSprite\" name=\"1\"\
+    >, <sprite=\"ManaSprite\" name=\"2\">, etc.)| can still be found even if there\
+    \ isn't enough mana in the |mana base| to play it. There are several ways to reduce\
+    \ the mana cost of these cards."
+  LoseShinning: Siempre puedes encontrar cartas exclusivas del personaje con el que
+    estás jugando, incluso si pierde su |Exposición Inicial|.
+  RemiliaMeet: "1. Reemplace las tarjetas con el mismo costo.\n2. Mantenga las carta\
+    \ mejorada cuando la reemplaces."
+  ShinmyoumaruForge: Las cartas de ataque se reemplazan con cartas de ataque y las
+    cartas de defensa se reemplazan con cartas de defensa.
+  SaveWhenSelect: Al seleccionar esto, se guardará el progreso inmediatamente.
+Chat:
+  DoremySleepLast: Ya no puedo comer~
+  FraudRabbitNoMoney: ¿No te queda ni un céntimo? Patético.
+  FraudRabbitLongTurn: Tch, esto está tomando demasiado tiempo. Me largo.
+  Siji1: Robar exhibiciones con el pretexto de investigar un incidente.
+  Fox0: Oooh, Que linda chica~
+  Fox1: Cariño, te va a encantar esto~
+  Fox2: Bebé, todavía tengo muchos movimientos ~
+  YoumuTuanzi: ¡Si quieres más Helado de Dango Tricolor, por favor vuelve a verme!
+  WaterGirl: ¡Haré que pruebes mi agonía!
+  DoremyMaster: Estás en la frontera de los sueños ahora.
+  YuyukoMooncake: Tengo muchas ganas de {0}...
+  Scout: Sonda
+  YoumuMooncake: Regrésame mi {0}!
+  Clownpiece3: It's lunatic time!
+  FraudRabbitStart1: Tengo pistas sobre el culpable, es tuyo por un buen precio.
+  FraudRabbitStart2: Tengo la última tecnología de la luna, es tuya por un precio.
+  FraudRabbitOnlyOne: ¡Por qué soy el único que queda! Montón de idiotas inútiles.
+  SickGirl: '*Cof*... *cof*...'
+  FraudRabbitPlayer: ¡Oye! ¡Se ha escapado!
+  LoveGirlEscape: Todavía no he encontrado a mi verdadero amor.
+  Star: ¡Entendido!
+  SijiMystia: Comer sin pagar. Sentencia extendida por un año.
+  Terminator1: "SISTEMAS OPERATIVOS...\nREMOVIENDO LIMITADORES."
+  LunaSpell: Que el danmaku se silencie.
+  Terminator3: "DAÑOS CRÍTICOS RECIBIDOS...\nREPARANDO..."
+  Terminator2: "DAÑO SUFRIDO...\nREPARANDO..."
+  Rin2: ¡Auch! Eres demasiado cruel~
+  Sunny2: ¡La primera en agarrar la exhibición se la queda!
+  HetongKailang1: ¡Listo, está como nuevo!
+  HetongKailang2: Bueno~, supongo que esto tendrá que ser suficiente por ahora.
+  HetongYinchen1: Oh no, has roto {0}.
+  HetongYinchen2: ¡Mi {0}!
+  HetongKailang3: ¡Vamos todos, puedes hacerlo!
+  LoveGirlPlayer: ¡Te amo!
+  LoveGirlRespond: ¡Estoy tan feliz!
+  LoveGirlFallInLove: Mi deseo finalmente se hizo realidad.
+  Sunny1: ¡Hoy vamos a mostrarle a {0} lo poderosos que somos!
+  Luna: ¡Entendido!
+  SijiTurn3: Decir que soy pequeña. Sentencia extendida por un año.
+  DoremySleep: Zzzzz~
+  Purifier: Baymax
+  Terminator:  T-800 
+  Terminator0: EJECUTANDO DIAGNÓSTICO...
+  SunnySpell: ¡Rayos de luz convergen sobre mí!
+  Clownpiece1: ¡Hadas! ¡Mas Danmaku! ¡Mas!
+  Siji2: Qué repugnante, {0}.
+  SijiTurn1: Excusa inválida. Sentencia extendida por un año.
+  DoremyKill: Ya no necesitas despertarte~
+  DoremyAwake: ¡Acababa de llegar a la mejor parte!
+  SijiTurn2: Desacato al tribunal. Sentencia extendida por un año.
+  LongBribery1: Ese es el boleto~
+  LongBribery2: Genial. genial.
+  LongEscape1: Oh no, estoy derrotada.
+  LongEscape2: Dirígete al Santuario de Moriya en esta dirección~
+  Clownpiece2: ¡Absorbe estas joyas de luz!
+  StarSpell: Puedo captar cada pequeño movimiento tuyo~
+  Aya1: La verdad detrás de los disturbios de esta noche en Eientei, presentada por
+    el periódico Bunbunmaru.
+  Rin1: ¡Qué bonito {0} que tienes ahí! Yo también lo quiero!
+  Aya2: ¡Tenemos una sospechosa descontenta tratando de interrumpir la entrevista!
+  Aya3: ¡Mira lo que {0} tiene en sus manos! ¡Esa es la prueba de que ella es la culpable!
+  Nitori1: Pasé mucho tiempo y esfuerzo modificando esto.
+  Nitori2: Supongo que sus capacidades defensivas necesitan algo de trabajo.
+  Youmu1: ¡En Guardia!
+  Kokoro1: Siento que muchas de mis máscaras se han perdido recientemente.
+UI:
+  Cancel: Cancelar
+  Numbers:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  Yes: Si
+  Display: Mostrar
+  Hide: Ocultar
+  Hiding: Ocultado
+  Confirm: Confirmar
+  On: Activado
+  No: No
+  Off: Desactivado
+  Return: Atrás
+  Divide: ','
+  SpellUntitled: '"{0}"'
+  SideCloseHint: Clic para cerrar
+  SeRemove: '{0} Desaparecido'
+  SeAmulet: '{0} Resistido'
+  SpellTitled: '  {0} "{1}"'
+  Close: Cerrar
+  Take: Recolectar
+  Setting: Configuración
+  Skip: Omitir
+  Exit: Salir
+  ExitGame: Salir del Juego
+  CopyHint: La semilla se ha copiado en el portapapeles.
+  SaveHint: Juego Guardado
+MainMenu:
+  Setting: Configuración
+  Collection: Colección
+  Changelog: Registro de Cambios
+  Credits: Créditos
+  StartDate: Fecha de inicio
+  PlayedTime: Tiempo Jugado
+  NewGame: Nueva Partida
+  RestoreGame: Continuar Partida
+  SelectProfile: Seleccionar Perfil
+  InputName: Introducir Nombre
+  LastPlayed: Ultimo Juego
+  Characters: Personajes
+  LifeData: Estadísticas
+  AbandonGame: Abandonar Partida
+  Database: Extras
+  EmptyProfile: Espacio vacío
+  DeleteYes: Eliminar
+  DeleteNo: Cancelar
+  EarlyAccess: Noticias EA
+  ComplexRules: Reglas Avanzadas
+  History: Historial de Partidas
+  MusicRoom: Sala de Música
+  Licenses: Licencia
+  ExitGame: Salir del Juego
+  DeleteProfile: ¿Eliminar este Perfil?
+StartGame:
+  JadeBoxLock: El modo Caja de Jade estará disponible al desbloquear el nivel 10.
+  NoStoryMode: "El modo historia aún no está listo,\nEspere a futuras actualizaciones."
+  ClearNormal: Completado
+  ClearTrue: Completado Perfectamente
+  Puzzles: 0:plural one='% |petición|' other='% |peticiones|'}
+  Rate: Complejidad
+  SetJadeBox: Establecer la Caja de Jade (Trabajo en progreso)
+  OpeningComic: Mirar el Prologo
+  CheckDeck: Mazo Inicial
+  Puzzle: Peticiones
+  CharacterUnset: Por favor seleccione un personaje
+  NotReadyHint: "Este personaje aún no está listo,\nEspere a futuras actualizaciones."
+  IsLockHint: "Este personaje estará disponible.\nal desbloquear el nivel {0}"
+  SelectAll: Seleccionar Todo
+  FreeMode: Modo Libre
+  DifficultyTitle: Por favor seleccione una dificultad
+  Seed: Semilla
+  SetSeed: Modificar Semilla
+  InvalidSeed: Semilla invalida
+  StoryMode: Modo Historia
+  StoryDescription: "Resuelve el incidente con Reimu Hakurei\nAlgunos actos tienen\
+    \ enemigos fijos.\nAlgunos \"Encuentros Amistosos\" son imposibles."
+  FreeDescription: "Resuelve el incidente con tu personaje favorito\nSe elimina la\
+    \ mayor parte del diálogo de la historia.\nTodos los \"Encuentros Amistosos\"\
+    \ están presentes"
+  PuzzleHint: "Acepte solicitudes adicionales para aumentar puntos azules y su experiencia\
+    \ de investigación.\nDesbloqueado después de alcanzar el nivel 4."
+  LockPuzzle: Desbloqueado en el nivel {0} de investigación.
+  NoClearHind: Los logros están deshabilitados cuando se usan semillas o la Caja de
+    Jade.
+  SkillSpellCard: Spell Card
+  SkillExhibit: Exhibición inicial
+  StartMoney: Dinero inicial
+  StartHp: Vida Inicial
+  DifficultyHint: Si no has jugado "Slay the Spire", se recomienda jugar primero en
+    dificultad Fácil.
+  NeedClear: Completa la dificultad anterior para desbloquear.
+Setting:
+  Key: Controles
+  ResetDefault: Por Defecto
+  AudioMaster: Volumen Maestro
+  IllustratorDescription: Mostrar o no el nombre del ilustrador en el carta.
+  Warn: Advertir
+  Actions:
+    Select1: Seleccionar 1
+    Select10: Seleccionar 10
+    Select2: Seleccionar 2
+    Button: Tecla
+    UseUs: Usar Spell
+    EndTurn: Finalizar Turno
+    ToggleBaseDeck: Mostrar Mazo
+    ToggleDrawZone: Mostrar Pila de Cartas
+    ToggleDiscardZone: Mostrar Pila de Descartes
+    SkipDialog: Avance Rápido de Diálogo (Mantener)
+    PoolC: Mover <sprite="ManaSprite" name="C"> a la selección de paga
+    ToggleMap: Mostrar el Mapa
+    PoolW: Mover <sprite="ManaSprite" name="W"> a la selección de paga
+    PoolU: Mover <sprite="ManaSprite" name="U"> a la selección de paga
+    PoolP: Mover <sprite="ManaSprite" name="P"> a la selección de paga
+    ToggleMinimize: Ocultado temporalmente el interfaz
+    ShowEnemyMoveOrder: Mostrar Orden de Turno del Enemigo (Mantener)
+    RebindMessage: Presione la tecla para "{0}", presione ESC para cancelar.
+    Action: Acción
+    Select3: Seleccionar 3
+    Select5: Seleccionar 5
+    Select6: Seleccionar 6
+    Select7: Seleccionar 7
+    Select8: Seleccionar 8
+    Select9: Seleccionar 9
+    PoolB: Mover <sprite="ManaSprite" name="B"> a la selección de paga
+    PoolR: Mover <sprite="ManaSprite" name="R"> a la selección de paga
+    PoolG: Mover <sprite="ManaSprite" name="G"> a la selección de paga
+    Select4: Seleccionar 4
+    ToggleExileZone: Mostrar Exiliados
+  Resolution: Resolución
+  RefreshRate: Frecuencia de Actualización
+  FullScreen: Pantalla Completa
+  AudioBgm: Volumen BGM
+  TurboMode: Modo Turbo
+  TurboModeDescription: Permite que la mayoría de las animaciones y efectos se reproduzcan
+    |significativamente más rápido|.
+  Illustrator: Crédito de ilustración
+  TooltipSize: Tamaño de la descripción emergente
+  TooltipSizeDescription: Ajuste el tamaño general de la información sobre herramientas
+    para cartas, exhibiciones, etc.
+  DontShow: Desactivado
+  AnimatingEnvironment: Entorno Animado
+  AnimatingEnvironmentDescription: Muestra fondos dinámicos en el cuarto de Yukari
+    y peleas.
+  SingleEnemyAutoSelect: Selección Automática Individual
+  Hide: Ocultar
+  Enable: Activar
+  SingleEnemyAutoSelectDescription: Usar una carta sin seleccionar un objetivo cuando
+    solo hay un enemigo.
+  Vsync: VSync
+  RecommendVolume: Reiniciar
+  Main: General
+  Preference: Jugabilidad
+  ScreenVibration: Sacudida de Pantalla
+  Language: Lenguaje
+  AudioUi: Volumen UI
+  AudioSfx: Volumen SFX
+  VideoQuality: Calidad
+  RenderScale: Escala de resolución
+  LostFocusMute: Silenciar en Segundo Plano
+  Keyword: Palabra Clave
+  KeywordDescription: "Cuando se establece en |Corto|, ya no se muestran las descripciones\
+    \ de información sobre herramientas para palabras clave y mecánicas comunes.\n\
+    |r:Recomendado solo para jugadores experimentados.|\n|d:(Las palabras clave y\
+    \ mecánicas comunes incluyen ||Poder||d:,| |Espíritu||d:,| |Bloqueo||d:,| |Barrera||d:,|\
+    \ |Rozar||d:,| |Preciso||d:,| |Maná cromático||d:,| |Mejora| |d:y| |Habilidades||d:.)|"
+  Detailed: Detallado
+  Brief: Corto
+  Large: Grande
+  Small: Pequeño
+  Disable: Desactivar
+  RandomResult: Mostrar resultados aleatorios
+  XCostWarning: ¿Advertencia de costo X?
+  XCostWarningDescription: Ya sea para mostrar una advertencia cuando usa una tarjeta
+    de costo X sin elegir maná manualmente.
+  ResetHint: Restablecer Consejos
+  EnableKeyboard: Activar Teclado
+  RandomResultDescription: "Muestra resultados aleatorios (tarjetas, exhibiciones,\
+    \ etc.) en el evento.\nLos resultados aleatorios se determinan para esta partida\
+    \ y no cambiarán cuando reinicie el juego."
+  Show: Mostrar
+  DontWarn: No Advertir
+  HintLevel: Consejos del juego
+History:
+  StatsSegment: '{0}: {1}'
+  Puzzles: "{0:plural one='% Solicitud' other='% Solicitudes'}"
+  PlayedTime: 'Tiempo Jugado: {0}'
+  Card: Cartas {0}
+  Money: Dinero {0}
+  Mana: Mana
+  Exhibit: 'Exhibición: {0}'
+Map:
+  Gap: Brecha
+  Shop: Tienda de Takane
+  Adventure: Evento
+  Boss: Jefe
+  Entry: Inicio
+  Previous: Anterior
+  Next: Siguiente
+  Enemy: Enemigo
+  Map: Mapa
+  Hint: Haga clic en cualquier parte del mapa para cerrarlo
+  Supply: Suministro de Reisen
+  Select: Seleccionar Jefe
+  Trade: Comerciar
+  BattleAdvTest: Prueba
+  EliteEnemy: Elite
+CardType:
+  Misfortune: Infortunio
+  Ability: Habilidad
+  Defense: Defensa
+  Skill: Técnica
+  Tool: Herramienta
+  Status: Estado
+  Attack: Ataque
+Museum:
+  ManaType: Colores
+  CardType: Tipos de Cartas
+  Character: Personajes
+  UpgradedFilter: Mejorado
+  CardStyleFilter: Estilo de Carta
+  UnlockAndReveal: Cartas Vistas
+  ManaCost: Valor de maná
+  CardNotReady: "Esta carta aún no está lista.\nEspera la próxima actualización del\
+    \ juego."
+  UnRevealCard: Carta Desconocida
+  CardStyleTooltip: "Solo se muestran las cartas que tienen varios estilos de ilustración.\n\
+    Elija la ilustración de la carta que desea mostrar en el panel de detalles de\
+    \ la carta."
+  Rarity: Rareza
+  UnRevealExhibit: Exhibición desconocida
+  LockExhibit: Exhibición bloqueada
+  ExhibitType:
+    T1: Tesoros
+    T2: Brillante
+    T3: Raro
+    T5: Común
+    T6: Tienda
+    T7: Eventos y otros
+    T4: Poco Común
+System:
+  EA: 'Acceso Anticipado: No representa la calidad final.'
+  NoJadeBox:
+    Title: Sin Efecto de Caja de Jade
+    Description: Nada Especial
+  SystemMenu: Pausa y Configuración
+  DoremyLevel: Capa de Ensueño {0}
+  ReenterStation: Reiniciar Nivel
+  ReturnMainMenu: Menú Principal
+  ResumeGame: Reanudar Juego
+GameResult:
+  Win: Incidente Resuelto
+  Lose: Fracaso
+  FailReason: 'Motivo del Fracaso:'
+  Deprecated: ??? (Obsoleto)
+  ClickToFold: Clic para Cerrar
+  Abandon: Abandonar
+  ReturnHint: Clic en cualquier lugar para volver al menú principal
+  TrueEnd: Incidente Resuelto Perfectamente
+  BadEnd: Retrocedamos en el tiempo y volvamos a intentarlo...
+  TrueEndFail: Se encontró a la verdadera culpable, pero no se recuperó la Rama Enjoyada
+    de Hourai.
+  ClickToOpen: Clic para Abrir
+  UnlockHint: Las exhibiciones y cartas recién desbloqueadas aparecerán en futuras
+    partidas.
+  NormalEnd: Pero la Rama Enjoyada de Hourai sigue desaparecida.
+  Unlock: Nuevo Objeto Desbloqueado
+  Score: Puntuación
+  DifficultyFactor: Dificultad
+Rarity:
+  Common: Común
+  Shining: Brillante
+  Uncommon: Poco Común
+  Rare: Raro
+  Mythic: Raro Mítico
+Tooltip:
+  Stage:
+    Description: Derrota al jefe al final de cada mapa para completar el acto.
+    Name: Acto {0}
+  FinalStage:
+    Name: Acto Final
+    Description: Casi has llegado al final. ¡Sigue adelante!
+  DifficultyLunatic:
+    Description: Los enemigos tienen más vida, golpean más fuerte y tienen movimientos
+      más peligrosos.
+    Name: 'Dificultad: Lunático'
+  DrawZone:
+    Name: Pila de Cartas
+  Hp:
+    Name: 'Vida: {0}'
+    Description: Cuando tu vida llega a 0, |r:pierdes el juego|.
+  Level:
+    Name: Nivel {0}
+    Description: Tu actual progreso en el Acto.
+  Money:
+    Description: Se puede cambiar por productos en la tienda de Takane.
+    Name: 'Dinero: {0}'
+  DifficultyHard:
+    Description: Las enemigas tienen más vida y golpean más fuerte.
+    Name: 'Dificultad: Difícil'
+  Character:
+    Name: '{0}'
+    Description: Este es el personaje con el que estás jugando.
+  DifficultyEasy:
+    Name: 'Dificultad: Fácil'
+    Description: "Comienza cada partida con uno de los |Tesoros| de Kaguya.\nTú |r:no\
+      \ puedes| llegar al Acto final."
+  DifficultyNormal:
+    Name: 'Dificultad: Normal'
+    Description: Dificultad estándar.
+MessageDialog:
+  CannotReenterStation: No se puede ingresar al nivel
+  CorruptedGameRunSaveData: El archivo guardado del juego actual está corrompido
+Debut:
+  KaguyaChats:
+  - Voy a comprobar la situación también.
+  - Dejaré la casa a tu cuidado, Eirin.
+  - Recuerda estar de regreso al amanecer~
+  EirinChats:
+  - Deja de perder el tiempo, {0}
+  - El efecto de la medicina desaparecerá si no sales pronto~
+Reward:
+  Headers:
+  - ¡Excelente!
+  - Reclamar Premios
+  - Reclamar Recompensas
+  CardHeader: Elige una Carta
+  Money: '{0} Dinero'
+  Card: Agrega una carta a tu biblioteca.
+  Skip: Saltar Recompensas
+  Abandon: Saltar Carta
+  AbandonMoney: Gana {0} <sprite="Gold" name="gold">
+  AbandonMaxHp: Gana {0} Vida Máxima
+JadeBoxPage:
+  JadeBoxList: Lista de la Caja de Jade
+  JadeBoxHint: "El regalo especial de Eirin. La Caja de Jade contiene modificadores\
+    \ extraños y poderosos. ¡Espero que estés listo para enfrentarlos!\nNo puedes\
+    \ desbloquear logros mientras usas la Caja de Jade."
+  JadeBoxDaily: Caja de Jade Diaria
+  JadeBoxLast: Última Caja de Jade
+  JadeBoxRandom: Caja de Jade Aleatoria
+  JadeBoxRandomHint: Actualice el resultado aleatorio una vez cada vez que logre ingresar
+    con éxito al nivel final del primer acto.
+Shop:
+  Close: Cerrar
+  Skip: Pasar
+  Remove: Remover Carta
+  CantAffordQuotes:
+  - No soy una organización benéfica, ¿sabes?
+  - No te lo puedes permitir.
+  - No tienes suficiente dinero.
+  RemoveSoldOut: Agotado
+  RemoveTooltip: Elimina una carta de tu biblioteca y aumenta el precio cada vez en
+    |{0}|<sprite="Point" name="Gold">
+  BoughtQuotes:
+  - Gracias por su compra.
+  WelcomeQuotes:
+  - ¡Bienvenido!
+  - Echa un vistazo.
+  Chats:
+  - Por aquí, querida cliente~
+  - ¡Precios justos por todas partes! ¿Estás seguro de que no necesitas nada?
+Gap:
+  Headers:
+  - Que debo hacer ahora~
+  - Tan cansada…
+  HeaderInitial: Es hora de tomar un descanso~
+Cards:
+  Remove: Remueve {0} cartas de la biblioteca.
+  IsUpgraded: Mejorado
+  UnUpgradable: No-Mejorable
+  UpgradeTips: Elija una carta para Mejorar
+  RemoveTips: Elija una carta para remover
+  UpgradeDialog: Confirmar Mejora
+  Size:  {0:plural one='% carta' other='% cartas'}
+  Show: Pase el cursor o haga clic con el botón derecho en las cartas para ver los
+    detalles
+CardDetail:
+  Sketch: Inacabado
+  Illustrator: 'Artista:'
+  SwitchCardStyle: Cambiar estilo de carta
+  UpgradeYes: Mejorado
+  UpgradeNo: Base
+ErrorChat:
+  MoneyNotEnough: No tengo suficiente dinero.
+  LowMana: No tengo suficiente maná.
+  CardNotUsable: No puedo usar esta carta.
+  LowPower: No tengo suficiente poder.
+  CardNotInHand: La carta especificada aún no está en la mano.
+  CardCostChanged: El costo de la carta especificada ha cambiado.
+  CardFengyin: Estoy sellado.
+  CardDrunk: ¡No estoy borracha!
+  UsUsedThisTurn: Ya he usado la Spell en este turno.
+  UsUsedThisBattle: Ya he usado la spell en esta batalla.
+  NoTarget: Objetivo no Valido
+  CardCharm: Me siento confundida.
+  TargetAlreadyDead: Objetivo ya ha muerto
+  HandFull: Mi mano ya está llena.
+  EmptyDraw: La pila de cartas esta vacía.
+  NoCardByMama: No existe tal carta con el costo objetivo.
+TopInfo:
+  Original: 'Original:'
+  Artist: 'Arreglo:'
+StatusEffectType:
+  Special: Especial
+  Positive: Buff
+  Negative: Debuff
+ManaSelect:
+  Title: Selecciona un tipo de mana
