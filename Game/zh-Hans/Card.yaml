@@ -359,7 +359,7 @@ Qingshan:
   Name: 人至之处的青山
   Description: |-
     获得 {Block} 点|格挡|。
-    被|放逐|时获得{Mana}。
+    |被放逐时|：获得{Mana}。
 
 AutoQumobang:
   Name: 暴走驱魔棒
@@ -1292,6 +1292,7 @@ BestFairy:
 
 FairyHeal:
   Name: 妖精再生
+  Description: 回血
 
 DaiyoDefense:
   Name: 大妖精
@@ -1305,14 +1306,9 @@ LilyAttack:
     对所有敌人造成 {Damage} 点伤害。
     将一张|莉莉白的报春|加入手中。
 
-GatherFairy:
-  Name: 妖精集结
-  Description: |-
-    代码没写
-    手牌上限提升至12，抽4张牌。
-
 IceTornado:
   Name: 碎冰龙卷
+  Description: AOE
 
 FairyWar:
   Name: 妖精大战争
@@ -1323,6 +1319,17 @@ Jubin:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     移除所有敌人的寒冷，每移除一个寒冷，将一张水流加入手中。
+
+GatherFairy:
+  Name: 妖精集结
+  Description: |-
+    手牌上限提高至 {MaxHand} 张。
+    抽 {Value1} 张牌。
+  UpgradedDescription: |-
+    手牌上限提高至 {MaxHand} 张。
+    将 {Value2} 张随机的|妖精援助|牌加入手中。
+    抽 {Value1} 张牌。
+  FlavorText: 你们都是我的翅膀。
 
 StarAttack:
   Name: 星辰阵雨
@@ -1369,31 +1376,45 @@ PisiSkill:
 
 FairySupportLarva:
   Name: 拉尔瓦的振翅
-  Description: '|妖精支援|：获得 {Value1} 点格挡。'
+  Description: |-
+    |保留时|：获得 {Value1} 点|格挡|。
+    |被放逐时|：获得 {Value2} 点|格挡|。
 
 FairySupportDaiyo:
   Name: 大妖精的协同
   Description: |-
-    |妖精支援|：使你下一次攻击牌的伤害额外附带一次 {Value1} 点伤害。
-    （没写，闪电球的变体）
+    |保留时|：获得 {Value1} 层|协同|。
+    |被放逐时|：获得 {Value2} 层|协同|。
 
 FairySupportLily:
   Name: 莉莉白的报春
-  Description: '|妖精支援|：获得{Mana}。'
+  Description: |-
+    |回合开始时|：获得{Mana}。
+    |被放逐时|：获得{ExileMana}。
 
 FairySupportSunny:
   Name: 桑尼的折射
   Description: |-
-    |被放逐|：对生命值最高的敌人造成 {Value1} 点伤害。
-    |妖精支援|：使伤害提高 {Value2} 点。
+    |保留时|：伤害提高 {Value2} 点。
+    |被放逐时|：对生命值最高的敌人造成 {Value1} 点伤害。
 
 FairySupportLuna:
   Name: 露娜的静谧
-  Description: '|妖精支援|：获得 {Value1} 层庇邪，每有1层庇邪获得 {Value2} 点反射。'
+  Description: |-
+    |保留时|：获得 {Value1} 层|闪避|。
+    |被放逐时|：获得 {Value2} 点|护盾|。
 
 FairySupportStar:
   Name: 斯塔的侦测
-  Description: '|妖精支援|：对随机敌人施加 {Value1} 层虚弱，{Value1} 层易伤，{Value2} 层锁定。'
+  Description: |-
+    |回合开始时|：对所有敌人施加 {Value1} 点|暂失火力|。
+    |被放逐时|：对随机敌人施加 {Value2} 层|锁定|。
+
+FairySupportClownpiece:
+  Name: 克劳恩皮丝的疯狂
+  Description: |-
+    |手牌中|：攻击伤害提高 {Value1} 点。
+    |被放逐时|：获得 {Value1} 点|火力|。
 
 KoishiAttackG:
   Name: 蔷薇花开
@@ -1483,6 +1504,23 @@ BailianNingshen:
     从 {Value1} 张随机的普通牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
     |d:初见：将一张光芒加入手中。|
   FlavorText: 圣白莲女士的「佛家讲坛」系列短视频很受中老年村民和年轻妖怪的欢迎。
+
+PrismriverWhite:
+  Name: 小号独奏
+  Description: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|折射日光|洗入弃牌堆。
+  UpgradedDescription: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|折射日光|洗入弃牌堆。
+    |初见|：获得 {Value2} 点<sprite="Point" name="Power">。
+  ExtraDescription1: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|折射日光|洗入弃牌堆。
+    |d:初见：获得 {Value2} 点<sprite="Point" name="Power">。|
 
 ShenziUpgradeAll:
   Name: 得道升仙
@@ -1655,6 +1693,23 @@ XiaoemoBook:
     |d:初见：将一张灵异加入手中。|
   FlavorText: 里面记载着诸如「往汽水里丢放糖」之类的内容。
 
+PrismriverBlack:
+  Name: 提琴独奏
+  Description: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|寂静月光|洗入弃牌堆。
+  UpgradedDescription: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|寂静月光|洗入弃牌堆。
+    |初见|：获得 {Value2} 点<sprite="Point" name="Power">。
+  ExtraDescription1: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|寂静月光|洗入弃牌堆。
+    |d:初见：获得 {Value2} 点<sprite="Point" name="Power">。|
+
 BlackHorseZui:
   Name: 黑天马的罪孽
   Description: |-
@@ -1753,6 +1808,23 @@ MeihongFire:
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Value1} 点伤害。
     每抽到一张|厄运|或状态牌时亦如此。
+
+PrismriverRed:
+  Name: 键盘独奏
+  Description: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|璀璨星光|洗入弃牌堆。
+  UpgradedDescription: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|璀璨星光|洗入弃牌堆。
+    |初见|：获得 {Value2} 点<sprite="Point" name="Power">。
+  ExtraDescription1: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    将 {Light} 张|璀璨星光|洗入弃牌堆。
+    |d:初见：获得 {Value2} 点<sprite="Point" name="Power">。|
 
 YongyiAttack:
   Name: 鬼气狂澜
@@ -2230,7 +2302,7 @@ YachieDefend:
   Name: 龟甲地狱
   Description: |-
     阻挡{PlayerName}的下 {Value1} 次生命损失。
-    如果伤害来源是敌人，还会反弹给他。
+    如果伤害来源是敌人，还会将伤害反弹给对方。
 
 JingyeGraze:
   Name: 纷乱的落叶
@@ -2286,6 +2358,18 @@ FlanBlack:
 AttackWithEveryColor:
   Name: 多彩攻击
   Description: '|每支付一点不同颜色的费用|：造成 {Damage} 点伤害。'
+
+PrismriverAll:
+  Name: 合葬「棱镜协奏曲」
+  Description: |-
+    获得{Mana}。
+    本场战斗中，{PlayerName}获得的所有法力都转化为|彩色|。
+    将|折射日光|、|寂静月光|和|璀璨星光|洗入弃牌堆。
+  UpgradedDescription: |-
+    获得{Mana}。
+    抽 {Value1} 张牌。
+    本场战斗中，{PlayerName}获得的所有法力都转化为|彩色|。
+    将|折射日光|、|寂静月光|和|璀璨星光|洗入弃牌堆。
 
 JunkoNightmare:
   Name: 震颤的冰封噩梦

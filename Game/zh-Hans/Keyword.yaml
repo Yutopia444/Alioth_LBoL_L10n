@@ -56,7 +56,7 @@ Power:
   Name: 能量<sprite="Point" name="Power">
   Description: '用于释放符卡（画面左上角）。'
 
-#卡牌固有关键字
+#卡牌固有关键字_自动添加
 Forbidden:
   Name: 禁止
   Description: '无法打出。'
@@ -64,6 +64,10 @@ Forbidden:
 Exile:
   Name: 放逐
   Description: '打出后进入放逐区。'
+
+Echo:
+  Name: 回响
+  Description: '如果这张卡牌不是复制品，打出后将一张复制加入手中。'
 
 Ethereal:
   Name: 虚无
@@ -89,6 +93,13 @@ Purified:
   Name: 已净化
   Description: '移除卡牌费用的有色部分。'
 
+AutoExile:
+  Name: 妖精支援
+  Description: |-
+    手牌即将超过上限时，自动|放逐|。
+    手牌中最左侧的|妖精支援|牌优先。
+
+#卡牌固有关键字_不会自动添加
 Debut:
   Name: 初见
   Description: '本场战斗第一次打出时，触发额外效果。'
@@ -130,12 +141,6 @@ Overdrive:
   Name: 超载 X
   Description: '如果可能，消耗 X 层|充能|触发效果。'
 
-FairySupport:
-  Name: 妖精援助
-  Description: |-
-    回合结束时，结算一次妖精援助效果。
-    手牌已满时，放逐这张牌并结算两次妖精援助效果。
-
 Grow:
   Name: 成长
   Description: '卡牌每打出一次，提高一次|成长|效果，直到战斗结束。'
@@ -143,7 +148,3 @@ Grow:
 Agent:
   Name: 精神状态
   Description: '在同一时刻，只能处于一种|精神状态|中。'
-
-Echo:
-  Name: 回响
-  Description: '如果这张卡牌不是复制品，打出后将一张复制加入手中。'
