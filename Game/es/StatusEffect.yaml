@@ -399,7 +399,7 @@ BoliDajiejieSe:
   Brief: '|Bloqueo| de {OwnerName} se convierte en |Barrera|.'
 DoubleLianhuadieSe:
   Name: Mariposa de Loto Dicromática
-  Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Nivel}
+  Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Level}
     de daño a un enemigo aleatorio.
   Brief: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige algo daño a
     un enemigo aleatorio.
@@ -411,7 +411,9 @@ DanceAroundLakeSe:
 EvilTuiZhiSe:
   Name: Exterminar el Mal
   Description: "{Level:plural one='La siguiente carta' other='% Las siguientes cartas'}\
-    \ de ataque jugado inflige {Level:plural one='s' other=''} daño doble."
+    \ de ataque jugado {Level:plural one='inflige' other='infligen'} el doble de daño."
+  Brief: La siguiente 1 o más cartas de ataque jugadas en este turno infligen el doble
+    de daño.
 HolyGrailSe:
   Description: Al comienzo del turno de {OwnerName}, {PlayerName} pierde todo lo que
     no sea |Exhibiciones| |Brillantes| y |Mítico Raro|.
@@ -435,3 +437,55 @@ ShendengSe:
   Name: Lampara Oriental Larga
   Description: Al final del turno de {OwnerName}, {PlayerName} gana aleatoriamente
     {Level} |Débil|, |Frágil| o |Vulnerable|.
+TaijiLiangyiSe:
+  Description: Al comienzo del turno de {PlayerName}, si {Level:plural one='no hay'
+    other='hay menos de %'} |Orbe Yin-Yang| en la mano, agregue {Level:plural one='un
+    |Orbe Yin-Yang|' other='|Orbes Yin-Yang|'} a la mano{Level:plural one='.' other='
+    hasta que haya %.'}
+  Name: El Nacimiento del Yin-Yang
+  Brief: Al comienzo del turno de {PlayerName}, si hay menos |Orbes Yin-Yang| en la
+    mano, agrégalos a la mano hasta que haya tantos.
+ReimuShrineSe:
+  Description: Al comienzo del turno de {PlayerName}, gana {Level} de |Espíritu Temporal|.
+  Name: Feria del Templo Hakurei
+  Brief: Al comienzo del turno de {PlayerName}, gana |Espíritu Temporal|.
+ReimuFreeAttackSe:
+  Brief: Las siguientes cartas de ataque jugadas cuestan {Mana} para jugar.
+  Name: Fantasía Fugaz
+  Description: El coste de ataque de la siguiente {Level:plural one='carta' other='%
+    cartas'} de ataque es de coste {Mana}.
+MomentPowerSe:
+  Description: Siempre que {OwnerName} gana |Poder Temporal| o |Espíritu temporal|,
+    convierte {Level} de ellos en |Poder| o |Espíritu|, respectivamente.
+  Name: Grieta Dimensional Instantánea
+  Brief: Siempre que {OwnerName} gana |Poder Temporal| o |Espíritu Temporal|, convierte
+    parte de él en |Poder| o |Espíritu|, respectivamente.
+ReimuFestivalSe:
+  Name: Banquetes Sin Fin
+  Brief: Al comienzo del turno de {PlayerName}, gana |Poder Temporal|.
+  Description: Al comienzo del turno de {PlayerName}, gana {Level} de |Poder Temporal|.
+ReverseJiejieSe:
+  Description: Cada vez que {PlayerName} pierde un |Buff|, gana {Level} de |Barrera|.
+  Brief: Cada vez que {PlayerName} pierde un |Buff|, gana algo de |Barrera|.
+  Name: Limite Inverso
+SenluoJiejieSe:
+  Name: Frontera Agregada
+  Description: Al comienzo del próximo turno de {OwnerName}, detona toda su |Barrera|.
+  Brief: Al comienzo del próximo turno de {OwnerName}, detona toda su |Barrera|.
+YinyangXueyinSe:
+  Name: Runa Yin-Tang
+  Description: Después de jugar un |Orbe Yin-Yang|, gana {Level} de |Poder Temporal|
+    y |Espíritu Temporal|.
+  Brief: Después de jugar un |Orbe Yin-Yang|, gana algo de |Poder Temporal| y |Espíritu
+    Temporal|.
+BoliPhantomSe:
+  Name: Espectro Hakurei
+  Description: Siempre que una carta que no sea |Aguja Persuasiva| está |Exiliado|,
+    agregue {Level} |{Nivel:plural uno='Aguja Persuasiva' otro='Agujas Persuasivas'}|
+    a la mano con |costó temporal| {Maná}.
+  Brief: Siempre que una carta que no sea |Aguja Persuasiva| está |Exiliado|, añade
+    1 o más Agujas Persuasivas a la mano que |cuesta temporalmente| {Maná}.
+HuanxiangBlockSe:
+  Description: Cada vez que una carta es |Exiliada|, {PlayerName} gana {Level} de
+    |Bloqueo|.
+  Brief: Cada vez que una carta es |Exiliada|, {PlayerName} gana algo de |Bloqueo|.
