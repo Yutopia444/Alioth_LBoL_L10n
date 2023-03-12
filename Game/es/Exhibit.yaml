@@ -134,14 +134,14 @@ ClassicWunvfu:
 Bingzhilin:
   Name: Escama de Hielo
   Description: "Agrega {BaseMana} al maná base.\nCada vez que se juega una habilidad,\
-    \ {Value1:plural one='% una carta aleatoria' other='% las cartas aleatorias'}\
-    \ en la mano |cuesta {Value1:plural one='' other='n'} temporalmente| {Maná} menos\
-    \ de mana."
+    \ {Value1:plural one='% carta aleatoria' other='% cartas aleatorias'} en la mano\
+    \ |{Value1:plural one='cuesta' other='cuestan'} temporalmente| {Mana} menos de\
+    \ mana."
   FlavorText: Ni siquiera se derrite cuando lo dejas sobre el fuego.
 ShijieSuipian:
   Name: Fragmentos del Mundo
   Description: "Agrega {BaseMana} al maná base.\nCuando lo adquieres, elige hasta\
-    \ {Value1} carta{Value1:plural one='' other='as'} de la biblioteca en una carta\
+    \ {Value1} cart{Value1:plural one='a' other='as'} de la biblioteca en una carta\
     \ rara y en una carta poco común."
   FlavorText: A través de estos fragmentos, es posible observar la partida de otros
     jugadores.
@@ -204,7 +204,7 @@ FengshouGuolan:
 Wanbaochui:
   Name: Mazo Milagroso
   Description: "Agrega {BaseMana} al maná base.\nPor cada {Mana} gastado por usarse\
-    \ en una carta |Básica|, aumenta sus efectos numéricos en un 100%. (Spending <sprite=\"\
+    \ en una carta |Básica|, aumenta sus efectos numéricos en un 100%. (Gastar <sprite=\"\
     ManaSprite\" name=\"P\"> no aplica este efecto.)"
   FlavorText: Las cosas ordinarias adquieren un poder extraordinario.
 Gongjuxiang:
@@ -220,7 +220,7 @@ Yuerang:
 XianzheShi:
   Name: Piedra Filosofal
   Description: "Agrega {BaseMana} al maná base.\nGanas {Value1} <sprite=\"Point\"\
-    \ name=\"Gold\"> al omitir una recompensa de carta."
+    \ name=\"Gold\"> al omitir una carta por recompensa."
   FlavorText: Mientras que las Piedras Filosofales son la búsqueda alquímica definitiva,
     Patchouli las dispara como Balas.
 TaiguGouyu:
@@ -238,7 +238,7 @@ KongbaiKapai:
 HuiyeBaoxiang:
   Name: Cofre del tesoro de Kaguya
   Description: "Al comienzo del turno de {PlayerName}, gana 1 maná aleatorio.\nCuando\
-    \ se adquiere, gana {Valor1} |Exhibiciones| aleatorias.\nLuego, se agregara un\
+    \ se adquiere, gana {Value1} |Exhibiciones| aleatorias.\nLuego, se agregara un\
     \ |Orden de desalojo| a la biblioteca."
   FlavorText: Cuando abres el cofre del tesoro, hay tres brocados adentro.
 QipaiYouhua:
@@ -247,7 +247,8 @@ QipaiYouhua:
     \ de Kaguya.\nSólo después de su muerte, por supuesto."
   Description: "Al comienzo del turno de {PlayerName}, gana 1 maná aleatorio.\nCuando\
     \ se adquiere, gana {Value2} {Value2:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} en la biblioteca y la vida máxima de {PlayerName} aumenta en {Value3}."
+    \ aleatorias'} para la biblioteca y la vida máxima de {PlayerName} aumenta en\
+    \ {Value3}."
 YizangnuoWuzhi:
   Name: Objeto Izanagi
   FlavorText: Una materia prima misteriosa que se puede usar para crear varias armas
@@ -257,5 +258,137 @@ YizangnuoWuzhi:
 LouguanJian:
   Name: Roukanken
   Description: Después de que {PlayerName} inflija daño de ataque, aplica {Value1}
-    |Marcado| al objetivo.
+    |Marcado| al objetivo o objetivos.
   FlavorText: '"¡Cortado!"'
+Baota:
+  Name: Pagoda Enjoyada del Bishamonten
+  Description: "Al comienzo del combate, gana {Counter} de {Mana} y {Counter} de |Poder|.\n\
+    Esta |Exhibición| se puede mejorar en la brecha, hasta un máximo de {Value1} veces."
+  FlavorText: Se ha perdido otra vez.
+XijianSan:
+  Name: Sombrilla de las Brechas
+  Description: Al comienzo del tercer turno de {PlayerName} de cada combate, gana
+    {Value1} de |Bloqueo| y gana {Mana}.
+  FlavorText: En este juego, no es posible cruzar el borde de la pantalla.
+Taozi:
+  Name: Durazno
+  Description: Cuando se adquiere, {PlayerName} gana de {Value1} vida máxima.
+  FlavorText: Mucha gente piensa que es del sombrero de Tenshi, pero en realidad proviene
+    de la capital de la luna.
+PenzaiYoutan:
+  Name: Udonge en una Maceta
+  FlavorText: La verdad, está bien si no puedes encontrar la legendaria rama perdida.
+  Description: El maná no gastado no se pierde al final de cada turno.
+Xunlongchi:
+  Description: Desbloquea la capacidad |Radiestesia| en las Brechas para encontrar
+    nuevas |Exhibiciones|.
+  FlavorText: Su antigua dueña decidió vivir una verdadera aventura y las dejó atrás.
+  Name: Varillas de Radiestesia
+BaochuanMoxing:
+  Name: Modelo de Barco del Tesoro
+  Description: Cada vez que {PlayerName} avanza un nivel, gana {Value1} <sprite="Point"
+    name="Gold">.
+  FlavorText: Una maqueta a escala 1:100 de la nave Loto Estelar, encargada por Kaguya
+    y fabricada por Keiki Haniyasushin.
+GaodangShoubao:
+  Name: Bolso de Mano de Alta Calidad
+  Description: Ambas |Exhibiciones| se puede tomar cuando se visita a Reisen.
+  FlavorText: Una bolsa de marca famosa en el mundo exterior, muchas chicas tiran
+    su dinero por ella.
+WanglingTideng:
+  Name: Antorcha del Alma
+  Description: Evita que {PlayerName} pierda vida la primera vez en cada combate.
+  FlavorText: Transforma a la portadora en una forma fantasmal para una experiencia
+    temprana del mundo después de la muerte.
+Zijing:
+  Name: Espejo Morado
+  Description: Cuando se adquiere, elija {Value1:plural one='% carta de la biblioteca
+    y agrega una copia de ella.' other='% cartas de la biblioteca y agregas copias
+    de ella.'}
+  FlavorText: Tu carta es genial, pero al siguiente segundo...... se convierte en
+    dos.
+SunhuaiHufu:
+  Name: Amuleto Roto
+  FlavorText: '"Lo siento, no estas rota en la tierlist."'
+  Description: Al comienzo del combate, gana {Value1} de |Poder| y {Value1} de |Espíritu|
+    por cada carta de |Infortunio| en la biblioteca.
+  ExtraDescription: "Al comienzo del combate, gana {Value1} de |Poder| y {Value1}\
+    \ de |Espíritu| por cada carta de |Infortunio| en la biblioteca.\n|Infortunio|\
+    \ actual : {Counter}."
+JimuWanju:
+  Name: Bloques de Juguete
+  Description: Los combates normales otorgan una carta adicional por recompensa.
+  FlavorText: Los juguetes que usan en sus tiempos libre los niños parecen tan familiares.
+Zuoshan:
+  Name: Abanico Izquierdo
+  Description: Cuando se juega la primera carta de cada combate, añade una |copia|
+    de esa carta a la mano. |Cuesta temporalmente| {Mana} y tiene |Exilio|.
+  FlavorText: ¿A quién se lo robaron, a Yukari o Yuyuko?
+HuanxiangxiangYuanqi:
+  Name: Crónica de Gensokyo
+  Description: Siempre que {PlayerName} juegue una habilidad, gana {Value1} de vida.
+  FlavorText: Una transcripción bien conservada.
+DiyuChepiao:
+  Name: Boleto al Infierno
+  Description: Siempre que {PlayerName} pierda vida, roba {Value1:plural one='% carta'
+    other='% cartas'}.
+  FlavorText: Cuanto más hace efecto, más te acercas al infierno.
+ShoushiYubi:
+  Name: Vara de purificación Moriya
+  Description: Desbloquea la habilidad de |Purificar| en las Brechas para eliminar
+    una carta de la biblioteca.
+  FlavorText: ¡Mucho más poderosa que la Vara de Purificación Hakurei!
+ShanliangDengpao:
+  Name: Bombilla Brillante
+  Description: Desbloquea la habilidad de |Pensar| en las Brechas para agregar una
+    carta Rara aleatoria la biblioteca.
+  FlavorText: Eureka!
+ZhanshuDaoliqi:
+  Name: Conductor Táctico
+  Description: En combate, las cartas Técnicas cuestan {Mana} menos.
+  FlavorText: Solo tiene una cadena larga, que es perfecta para lanzar hechizos.
+Yashemao:
+  Name: Gorra Plana
+  Description: Saca {Value1} {Value1:plural one='carta' other='cartas'} más durante
+    la fase de robar.
+  FlavorText: Usa este sombrero y estarás escribiendo historias hilarantes .
+ShanshuoBishou:
+  Name: Daga Destellante
+  Description: Al comienzo del combate, descarta cualquier cantidad de cartas. Luego,
+    roba esa misma cantidad de cartas.
+  FlavorText: 'Precio original: 2150<sprite="Point" name="Gold">.'
+Yueshan:
+  Name: Abanico Lunar
+  Description: Al comienzo del turno de {PlayerName}, solo pierde la mitad del |Bloqueo|.
+  FlavorText: Me han dicho que se usó anteriormente en batallas.
+ZhangchibangQiu:
+  Description: Cuando se adquiere, gana {Value1} <sprite="Point" name="Gold">.
+  Name: Pelota con Alas
+  FlavorText: Vuela rápido y alcanza un buen precio.
+YueYuyi:
+  Name: Velo Lunar
+  Description: Al comienzo del combate, gana |Perfección| por {Value1} turn{Value1:plural
+    one='o' other='os'}.
+  FlavorText: No es muy útil cuando se lucha contra jefes.
+FeixiangJian:
+  Name: Espada de Hisou
+  Description: Al comienzo del turno de {PlayerName}, inflige {Value1} de daño a cada
+    enemigo.
+  FlavorText: En mi última partida, fue una escopeta.
+YuekuangQiang:
+  Description: Cada vez que se descarta una carta, inflige {Value1} de daño a un enemigo
+    aleatorio.
+  FlavorText: En mi última partida, era un rifle automático.
+  Name: Pistola Lunar
+Yuhangfu:
+  Description: Siempre que {PlayerName} vaya a perder una cantidad de vida, recibirá
+    {Value1} menos de daño.
+  FlavorText: Hace décadas fue bastante popular en el mundo exterior.
+  Name: Traje Espacial
+GanzhuYao:
+  Name: Elixir de Orbe Ultramarino
+  FlavorText: Morí y me volví más fuerte.
+  Description: "La próxima vez que {PlayerName} sea derrotado, se curara al máximo\
+    \ la vida. Este efecto solo funciona una vez.\nDespués de que la |Exhibición|\
+    \ ha tenido su efecto, la vida máxima de {PlayerName} se reduce en {Value1}% y\
+    \ al comienzo del combate, gana {Value2} de |Poder|."
