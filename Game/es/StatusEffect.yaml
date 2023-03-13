@@ -41,14 +41,12 @@ Fragil:
   Description: "{PlayerName} obtiene {Value}% menos |Bloqueo| y |Barrera| a través\
     \ de efectos de cartas {Duration:plural one='hasta el final del turno' other='durante\
     \ los próximos % turnos'}."
-  Brief: '{PlayerName} obtiene {Value}% menos de puntos de |Bloqueo| y |Barrera| de
-    cartas.'
+  Brief: '{PlayerName} obtiene {Value}% menos de |Bloqueo| y |Barrera| por cartas.'
 Weak:
   Name: Débil
-  Brief: Los ataques de {OwnerName} infligen {Value}% menos puntos de daño.
-  Description: Los ataques de {OwnerName} infligen {Value}% menos de puntos de daño
-    {Duration:plural one='hasta el final del turno' other='durante los próximos %
-    turnos'}.
+  Brief: Los ataques de {OwnerName} infligen {Value}% menos de daño.
+  Description: Los ataques de {OwnerName} infligen {Value}% menos de daño {Duration:plural
+    one='hasta el final del turno' other='durante los próximos % turnos'}.
 Vulnerable:
   Name: Vulnerable
   Brief: '{OwnerName} es dañado un {Value}% mas por ataques.'
@@ -56,17 +54,17 @@ Vulnerable:
     \ one='hasta el final del turno' other='durante los próximos % turnos'}."
 LockedOn:
   Name: Marcado
-  Description: "{OwnerName} es infligida {Level} mas puntos de daño por cada ataque.\n\
-    |Marcado| disminuye en 1 punto al inicio de cada turno."
-  Brief: "{OwnerName} es infligida mas puntos de daño por cada ataque.\n|Marcado|\
-    \ disminuye en 1 punto al inicio de cada turno."
+  Description: "{OwnerName} recibe {Level} de daño por cada ataque.\nPierde 1 |Marcado|\
+    \ al inicio de cada turno."
+  Brief: "{OwnerName} recibe mas daño por cada ataque.\nPierde 1 |Marcado| al inicio\
+    \ de cada turno."
 Graze:
   Name: Roce
-  Brief: "{OwnerName} es infligida 0 puntos de daño causado por ataques.\n|Roce| disminuye\
-    \ en 1 punto al inicio de cada turno, o al ser atacada."
-  Description: "{OwnerName} es infligida 0 puntos de daño {Level:plural one='del próximo\
-    \ ataque' other='de los próximos % ataques'}.\n|Roce| disminuye en 1 punto al\
-    \ inicio de cada turno, o al ser atacada."
+  Brief: "{OwnerName} recibe 0 de daño causado por ataques.\nPierde 1 |Roce| al inicio\
+    \ de cada turno, o al ser atacada."
+  Description: "{OwnerName} recibe 0 de daño {Level:plural one='del próximo ataque'\
+    \ other='de los próximos % ataques'}.\nPierde 1 |Roce| al inicio de cada turno,\
+    \ o al ser atacada."
 ExtraTurn:
   Name: Turno Extra
   Brief: Al terminar su turno, {OwnerName} obtiene otro turno.
@@ -74,10 +72,9 @@ ExtraTurn:
     \ extra'} al terminar su turno actual."
 LimitedDamage:
   Name: Liberador de articulos
-  Description: '{OwnerName} solo puede ser infligida {Limit} puntos de daño cada turno.
-    Todavía puede ser dañada {Count} puntos este turno.'
-  Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de puntos de daño
-    cada turno.'
+  Description: '{OwnerName} solo puede recibir {Limit} de daño cada turno. Todavía
+    se le puede recibir {Count} daño este turno.'
+  Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de daño cada turno.'
 Invincible:
   Name: Perfección
   Description: "{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño {Duration:plural\
@@ -85,9 +82,9 @@ Invincible:
   Brief: '{OwnerName} no perderá mas de 1 de vida cada vez.'
 TurnStartDontLoseBlock:
   Name: Bloqueo Conservado
-  Brief: '{OwnerName} no pierde puntos de |Bloqueo| al inicio de cada turno.'
-  Description: "{OwnerName} no pierde sus puntos de |Bloqueo| al inicio {Level:plural\
-    \ one='del próximo turno' other='de los próximos % turnos'}."
+  Brief: '{OwnerName} no pierde |Bloqueo| al inicio de cada turno.'
+  Description: "{OwnerName} no pierde |Bloqueo| al inicio {Level:plural one='del próximo\
+    \ turno' other='de los próximos % turnos'}."
 Amulet:
   Name: Amuleto
   Description: Niega {Level:plural one='el siguiente debuff' other='los siguientes
@@ -101,11 +98,11 @@ AmuletForCard:
 Electric:
   Name: Descarga Estática
   Brief: Al ser dañada, inflige daño al atacante.
-  Description: Al ser dañada, inflige {level} puntos de daño al atacante.
+  Description: Al ser dañada, inflige {level} de daño al atacante.
 TempElectric:
   Name: Descarga Estática Temporal
-  Description: "Al ser dañada, inflige {level} puntos de daño al atacante.\nEste efecto\
-    \ es removido al inicio del próximo turno de {OwnerName}."
+  Description: "Al ser dañada, inflige {level} de daño al atacante.\nEste efecto es\
+    \ removido al inicio del próximo turno de {OwnerName}."
   Brief: "Al ser dañada, inflige daño al atacante.\nEste efecto es removido al inicio\
     \ del próximo turno de {OwnerName}."
 Reflect:
@@ -114,28 +111,25 @@ Reflect:
   Brief: Al ser dañada, inflige daño al atacante, y este efecto se remueve.
 NextAttackUp:
   Name: Ataque Aumentado
-  Description: La próxima carta de |Ataque| inflige {Level} puntos de daño más.
+  Description: La próxima carta de |Ataque| inflige {Level} mas de daño.
   Brief: La próxima carta de |Ataque| inflige un mayor daño.
 NextTurnLoseRandomMana:
   Name: Pérdida de Maná en Próximo Turno
-  Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} puntos de
-    maná aleatorios.
-  Brief: Al inicio del próximo turno de {OwnerName}, pierde puntos de maná aleatorios.
+  Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} de maná
+    aleatorio.
+  Brief: Al inicio del próximo turno de {OwnerName}, pierde maná aleatorio.
 NextTurnLoseHp:
   Name: Pérdida de Vida en Próximo Turno
-  Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} puntos de
-    vida.
-  Brief: Al inicio del próximo turno de {OwnerName}, pierde puntos de vida.
+  Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} de vida.
+  Brief: Al inicio del próximo turno de {OwnerName}, pierde de vida.
 NextTurnGainBlock:
-  Brief: Al inicio del próximo turno de {OwnerName}, obtén puntos de |Bloqueo|.
+  Brief: Al inicio del próximo turno de {OwnerName}, obtén |Bloqueo|.
   Name: Bloqueo en Próximo Turno
-  Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} puntos de
-    |Bloqueo|.
+  Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} de |Bloqueo|.
 NextTurnGainShield:
   Name: Barrera en Próximo Turno
-  Brief: Al inicio del próximo turno de {OwnerName}, obtén puntos de |Barrera|.
-  Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} puntos de
-    |Barrera|.
+  Brief: Al inicio del próximo turno de {OwnerName}, obtén |Barrera|.
+  Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} de |Barrera|.
 CantDrawThisTurn:
   Name: Negación de Saque
   Description: No puedes sacar cartas hasta el final del turno.
@@ -166,46 +160,45 @@ TimeIsLimited:
   Brief: Hasta el próximo turno del enemigo, las cartas necesitan más maná para ser
     jugadas.
 GuangxueMicai:
-  Brief: '{OwnerName} es infligida la mitad de daño de ataques.'
+  Brief: '{OwnerName} recibe la mitad de daño de ataques.'
   Name: Camuflaje Óptico
-  Description: "{OwnerName} es infligida la mitad de daño de ataques {Duration:plural\
-    \ one='hasta el final del turno' other='por los próximos % turnos'}."
+  Description: "{OwnerName} recibe la mitad de daño de ataques {Duration:plural one='hasta\
+    \ el final del turno' other='por los próximos % turnos'}."
 DroneBlock:
   Name: Matriz Defensiva
-  Description: Al final del turno de {OwnerName}, obtén {Level} puntos de |Bloqueo|.
-  Brief: Al final del turno de {OwnerName}, obtén puntos de |Bloqueo|.
+  Description: Al final del turno de {OwnerName}, obtén {Level} de |Bloqueo|.
+  Brief: Al final del turno de {OwnerName}, obtén |Bloqueo|.
 MaoyuBlock:
   Name: Mullida
-  Description: '{OwnerName} obtiene {Level} puntos de |Bloqueo| al ser atacada.'
+  Description: '{OwnerName} obtiene {Level} de |Bloqueo| al ser atacada.'
 Servant:
   Name: Invocación
   Description: "Cuando el invocador es vencido, todas sus invocaciones son vencidas\
     \ también.\nNo desencadena efectos de muerte."
 DeathExplodeNotCount:
   Name: Balas Vengativas
-  Description: "Inflige {Level} puntos de daño a {PlayerName} cuando {OwnerName} es\
-    \ vencida.\nInflige el doble de daño si es detonado activamente."
+  Description: "Inflige {Level} de daño a {PlayerName} cuando {OwnerName} es vencida.\n\
+    Inflige el doble de daño si se detona."
 DeathExplodeCount:
   Name: Balas Vengativas
-  Description: "Inflige {Level} puntos de daño a {PlayerName} cuando {OwnerName} es\
-    \ vencida.\nDetonará después de {Count} {Count:plural one='turno' other='turnos'},\
-    \ infligiendo el doble de daño."
+  Description: "Inflige {Level} de daño a {PlayerName} cuando {OwnerName} es vencida.\n\
+    Detonará después de {Count} {Count:plural one='turno' other='turnos'}, infligiendo\
+    \ el doble de daño."
 DeathVulnerable:
   Name: Palidez Mortal
-  Description: Cuando {OwnerName} es vencida, {PlayerName} obtiene {Level} puntos
-    de |Vulnerable|.
+  Description: Cuando {OwnerName} es vencida, {PlayerName} obtiene {Level} de |Vulnerable|.
 Drowning:
   Name: Ahogo
-  Description: '{OwnerName} es infligida {Level} puntos de daño al final de cada turno.'
+  Description: '{OwnerName} recibe {Level} de daño al final de cada turno.'
   Brief: '{OwnerName} recibe daño al final de su turno.'
 LoveGirlDamageReduce:
   Name: Persistentes Remordimientos
   Description: Los sentimientos de {OwnerName} siguen siendo no correspondidos. Ella
-    es infligida {Rate}% menos puntos de daño.
+    recibe {Rate}% menos de daño.
 LoveGirlDamageIncrease:
   Name: Corazón Revoloteado
-  Description: Los sentimientos de {OwnerName} son correspondidos. Ella es infligida
-    {Rate}% más puntos de daño.
+  Description: Los sentimientos de {OwnerName} son correspondidos. Ella recibe {Rate}%
+    más de daño.
 PhoneBillSe:
   Name: Cuenta Telefónica
   Description: "{OwnerName} recolecta {Level} <sprite=\"Point\" name=\"Gold\"> por\
@@ -213,24 +206,23 @@ PhoneBillSe:
     > al ser vencida."
 AbsorbPower:
   Name: Orbe Rojo
-  Description: Al final del turno del {OwnerName}, obtiene {Level} puntos de |Poder|.
+  Description: Al final del turno del {OwnerName}, obtiene {Level} de |Poder|.
 AbsorbSpirit:
   Name: Orbe Azul
-  Description: Al final del turno de {OwnerName}, obtiene {Level} puntos de |Espíritu|.
+  Description: Al final del turno de {OwnerName}, obtiene {Level} de |Espíritu|.
 Lunatic:
   Name: Locura
-  Description: "Luz mágica brilla sobre todos. Llevando a la locura, las acciones\
-    \ de {OwnerName} se amplifican.\nGana {Mana} puntos de maná al inicio del turno\
-    \ de {PlayerName}."
+  Description: "Una luz mágica brilla sobre todos. Llevando a la locura, las acciones\
+    \ de {OwnerName} se amplifican.\nGana {Mana} de maná al inicio del turno de {PlayerName}."
 LunaticTorch:
   Name: Antorcha Lunática
   Description: "La antorcha de {OwnerName} brilla con una luz peculiar, todos los\
-    \ enemigos son llevados a la |Locura|.\nGana {Mana} puntos de mana al inicio del\
-    \ turno de {PlayerName}."
+    \ enemigos son llevados a la |Locura|.\nGana {Mana} de mana al inicio del turno\
+    \ de {PlayerName}."
 WindGirl:
   Name: Chica Diosa del Viento
-  Description: El |Roce| de {OwnerName} es reabastecido hasta {Level} puntos al final
-    de su turno.
+  Description: El |Roce| de {OwnerName} es reabastecido hasta {Level} al final de
+    su turno.
 Interview:
   Name: Entrevista en Curso
   Description: '{OwnerName} lleva a cabo entrevistas en el sitio con respecto al incidente.'
@@ -251,9 +243,8 @@ FirepowerIsJustice:
   Description: El |Poder| de {OwnerName} nunca será más bajo que el de {PlayerName}.
 PrivateSquare:
   Name: Encierro Plateado
-  Description: "Por cada {Limit} cartas jugadas, {OwnerName} inflige {Level} puntos\
-    \ de daño a {PlayerName}.\n{Count:plural one='% carta restante' other='% cartas\
-    \ restantes'}."
+  Description: "Por cada {Limit} cartas jugadas, {OwnerName} inflige {Level} de daño\
+    \ a {PlayerName}.\n{Count:plural one='% carta restante' other='% cartas restantes'}."
 TurnStartPurify:
   Name: Purificación Inminente
   Description: "Al inicio del próximo turno de {PlayerName}, se realiza una |Purificación|\
