@@ -1,8 +1,76 @@
 General:
-  Name: Prefacio
+  Name: Introducción
   Description: "¡No necesitas conocer estas reglas avanzadas para disfrutar Lost Branch\
     \ of Legend!\n\nPero, una vez hayas jugado durante un tiempo...\n¡Si sientes que\
     \ quieres dominar todo lo que el juego tiene para ofrecer, te invitamos a que\
     \ sigas leyendo!"
 ManaColor:
   Name: Colores de Maná
+  Description: "Uno de los objetivos detrás del diseño de Lost Branch of Legend era\
+    \ combinar los personajes de Touhou con un sistema de maná coloreado como el que\
+    \ se encuentra en Magic.\nHay 7 tipos de maná diferentes en el juego.\n5 normales\
+    \ de color simple: blanco, azul, negro, rojo y verde, maná incoloro que no tiene\
+    \ color y maná filosofal que tiene todos los colores. Los costes de maná genéricos\
+    \ se pueden pagar con cualquier color y se representan con un número.\nLos costos\
+    \ de algunas cartas requieren maná de un solo color, específicamente.\nEs importante\
+    \ mencionar que el Mana Filosofal, al ser todos los colores a la vez, puede ser\
+    \ más poderosa que las multicolores del Magic. Por ejemplo, si el jugador tiene\
+    \ la exhibición |Peonía de Piedra| que requiere gastar maná rojo y |Cubo de Hielo|\
+    \ que requiere que se gastes maná azul, un solo maná de filosofal gastado se aplicará\
+    \ para ambos efectos."
+CardPool:
+  Description: "Solo puede encontrar cartas especificas en las recompensas de cartas\
+    \ si cumplen con los siguientes criterios:\n1: El costo de maná de la carta se\
+    \ puede pagar por completo usando maná en la base de maná.\n2: Si es una carta\
+    \ Única, solo se puede encontrar si juegas como ese personaje o si tienes una\
+    \ de sus Exhibiciones Brillantes.\n3: Cada uno de los colores de esa carta está\
+    \ presente en tu base de maná. El maná cromático no cuenta para esta regla.\n\n\
+    Como ejemplo, supongamos que juegas como Reimu y tienes el Grimorio Oscuro, la\
+    \ Piedra Filosofal y el Mazo Milagroso. (Cambiaste tu Exhibición inicial a Eirin...)\n\
+    La base de maná contendrá <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
+    ManaSprite\" name=\"C\">. Podrás encontrar cartas Únicas de Reimu y Marisa, ya\
+    \ que tienes el Grimorio Oscuro.\n\nEn este caso, puedes encontrar una carta negra\
+    \ que cueste <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    B\"> ya que puedes pagar <sprite=\"ManaSprite\" name=\"B \"><sprite=\"ManaSprite\"\
+    \ name=\"P\"> para jugarlo. Sin embargo, no puedes encontrar una carta azul y\
+    \ negra que cueste <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
+    B\">, ya que no hay <sprite=\"ManaSprite\" name=\"U\"> en la base de maná, incluso\
+    \ si pudieras pagar <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"> para jugarlo.\n\nP.D.\nCarta Blanca, una exhibición brillante, te permite\
+    \ encontrar cartas de cualquier color.\nPara las cartas con un valor de maná de\
+    \ 5 o más que tengan un componente de costo de maná genérico (<sprite=\"ManaSprite\"\
+    \ name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, etc.), solo sus cartas que\
+    \ no sean el coste de maná genérico contará para la regla 1. Los costes de maná\
+    \ de estas cartas se pueden reducir mediante efectos."
+  Name: Grupo de Cartas
+BossLoot:
+  Description: "Al derrotar a un jefe, se te ofrecerá tres |Exhibiciones Brillantes|\
+    \ diferentes. como recompensa. Estas |Exhibiciones| sigue este patrón:\nLa |Exhibición|\
+    \ más a la derecha depende del Jefe. En el Acto 1, será una de las |Exhibiciones\
+    \ Brillantes| únicas del Jefe, mientras que los Actos posteriores recompensarán\
+    \ las |Exhibiciones Brillantes| neutrales. basado en el color del jefe. (Por ejemplo,\
+    \ Remilia otorgaría una |Exhibición| Roja.)\nLa |Exhibición| más a la izquierda\
+    \ dependerá de tu base de maná. Esta |Exhibición| siempre será una |Exhibición\
+    \ Brillante| neutral que otorga maná de un color de tu base de maná y será de\
+    \ un color diferente a la |Exhibición| más a la derecha.\nPor último, la |Exhibición|\
+    \ del medio siempre será una |Exhibición Brillante| neutral de un color diferente\
+    \ de las |Exhibidas| del lado, y potencialmente puede ser una |Exhibición| que\
+    \ no agrega maná a la base de maná de ninguna forma (como la Pintura al Óleo Imponente).\n\
+    \nSi el grupo de posibles de |Exhibiciones| para elegir en un acto se ha agotado,\
+    \ será reemplazado por una |Exhibición Rara| al azar. (Principalmente esto lo\
+    \ verás después del jefe del Acto 3, para la |Exhibición| más a la derecha.)"
+  Name: Recompensas de Jefe
+DamageType:
+  Name: Tipos de Daño
+  Description: "Hay 3 tipos de daño: \"Daño de ataque\", \"Daño directo\" y \"Pérdida\
+    \ de vida\".\nLa mayor parte del daño del juego es daño de ataque, afectado por\
+    \ cosas como Poder, Débil, Burst, Evasión, Certero y más. El daño de ataque se\
+    \ reduce con Bloqueo y Barrera. La animación visual suele ser un proyectil o un\
+    \ láser.\n\"Daño directo\" y \"Pérdida de vida\" son efectos que no interactúan\
+    \ con la mayoría de las palabras clave; el \"Daño directo\" también se reduce\
+    \ con Bloqueo y Barrera, pero no lo es la pérdida de vida.\nSería engorroso enumerar\
+    \ uno por uno los dos primeros tipos de daño, por lo que el texto no hará una\
+    \ distinción; básicamente, cualquier daño que no sea por ataques es \"Daño Directo\"\
+    ."
