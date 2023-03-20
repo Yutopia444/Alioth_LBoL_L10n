@@ -115,11 +115,11 @@ TurnStartDontLoseBlock:
   Description: "{OwnerName} does not lose |Block| at the start of the {Level:plural\
     \ one='next turn' other='next % turns'}."
   Name: Retain Block
-  Brief: '{OwnerName} does not lose |Block| at the start of each round.'
+  Brief: '{OwnerName} does not lose |Block| at the start of each turn.'
 Electric:
   Brief: 'When damaged, deal damage back to the attacker.'
   Name: Static Charge
-  Description: When damaged, deal {level} damage back to the attacker.
+  Description: When damaged, deal {Level} damage back to the attacker.
 ExtraTurn:
   Name: Extra Turn
   Description: "{OwnerName} will take {Level:plural one='% extra turn' other='% extra\
@@ -136,44 +136,43 @@ Amulet:
   Brief: Negates incoming debuffs.
 TempElectric:
   Name: Static Charge
-  Description: "When damaged, deal {level} damage back to the attacker.\nRemoved at\
+  Description: "When damaged, deal {Level} damage back to the attacker.\nRemoved at\
     \ the start of {OwnerName}'s next turn."
   Brief: "When damaged, deal damage back to the attacker.\nRemoved at the start of\
     \ {OwnerName}'s next turn."
 ScarletDestiny:
   Name: Scarlet Fate
   Description: "After {Limit} cards are played, {OwnerName} ends {PlayerName}'s turn.\n\
-    |d:({Count:plural one='% card left' other='% cards left'})|"
+    |d:({Count:plural one='% card left' other='% cards left'}.)|"
 QiannianShenqiSe:
   Name: Pyramid-Shaped Puzzle
   Description: "{PlayerName} may only draw up to {Limit} cards each round.\n|d:({Count}\
-    \ cards left.)|"
+    \ card{Count:plural one='' other='s'} left.)|"
 HolyGrailSe:
   Name: Overdecorated Gold Cup
   Description: At the start of {OwnerName}'s turn, {PlayerName} loses all non-|Shining|
     non-|Mythic Rare| |Exhibits|.
 BoliDajiejieSe:
   Name: Great Hakurei Barrier
-  Description: Whenever {OwnerName} would have |Block|, they gain that much |Barrier|
-    instead.
+  Description: This combat, all of {OwnerName}'s |Block| is converted into |Barrier|.
   Brief: "{OwnerName}'s |Block| is converted into |Barrier|."
 BoliPhantomSe:
   Name: Hakurei Phantom
   Description: Whenever a card that isn't |Persuasion Needle| is |Exiled|, add {Level}
     |Persuasion Needle{Level:plural one='' other='s'}| to the hand that |temporarily
     cost| {Mana}.
-  Brief: Whenever a card that isn't |Persuasion Needle| is |Exiled|, add 1 or more
-    Persuasion Needles to the hand that |temporarily cost| {Mana}.
+  Brief: Whenever a card that isn't |Persuasion Needle| is |Exiled|, add some Persuasion
+    Needles to the hand that |temporarily cost| {Mana}.
 SingleJiandaoSe:
   Name: Giant Scissor Blade
-  Description: Whenever {PlayerName} plays a card, take {Level} damage.
+  Description: Whenever {PlayerName} plays a card, she takes {Level} damage.
 SakuraWandSe:
   Name: Winged Key
   Description: '{OwnerName} attacks twice as many times.'
 ReverseJiejieSe:
   Name: Reverse Boundary
-  Description: Whenever {PlayerName} loses a |Buff|, they gain {Level} |Barrier|.
-  Brief: Whenever {PlayerName} loses a |Buff|, they gain some |Barrier|.
+  Description: Whenever {PlayerName} loses a |Buff|, she gains {Level} |Barrier|.
+  Brief: Whenever {PlayerName} loses a |Buff|, she gains |Barrier|.
 DragonBallSe:
   Name: Starred Crystalline Ball
   Description: 'At the start of {OwnerName}''s turn, her |wish| is granted: {PlayerName}
@@ -275,12 +274,12 @@ FreeFlySe:
 DanceAroundLakeSe:
   Description: Whenever a card is |Exiled|, draw {Level:plural one='% card.' other='%
     cards.'}
-  Brief: Whenever a card is |Exiled|, draw 1 or more cards.
+  Brief: Whenever a card is |Exiled|, draw some cards.
   Name: Lakeside Dance
 EvilTuiZhiSe:
   Description: The next {Level:plural one='attack card' other='% attack cards'} played
     deal{Level:plural one='s' other=''} double damage.
-  Brief: The next 1 or more attack cards played this turn deal double damage.
+  Brief: The next few attack cards played deal double damage.
   Name: Evil Exterminate
 SilverBladeSe:
   Name: Silver Dimension
@@ -295,7 +294,7 @@ SpecialClockSe:
 BurstDrawSe:
   Name: Speed Duel
   Description: When entering |Burst|, draw {Level:plural one='% card' other='% cards'}.
-  Brief: Draw several cards when entering |Burst|.
+  Brief: Draw cards when entering |Burst|.
 DangerousMagicianSe:
   Name: Dangerous Illusionist
   Brief: Whenever a |Throwing Knife| is used, {PlayerName} gains some |Time Pulse|.
@@ -392,7 +391,7 @@ Servant:
     \ not trigger death effects."
 Reflect:
   Name: Reflection
-  Description: When damaged, deal {level} damage back to the attacker and remove this
+  Description: When damaged, deal {Level} damage back to the attacker and remove this
     effect.
   Brief: When damaged, deal damage back to the attacker and remove this effect.
 NextTurnLoseRandomMana:
@@ -401,8 +400,8 @@ NextTurnLoseRandomMana:
   Description: At the start of {OwnerName}'s next turn, lose {Level} random mana.
 NextAttackUp:
   Name: Attack Boost
-  Description: The next |Attack| card played deals {Level} more damage.
-  Brief: The next |Attack| card played deals increased damage.
+  Description: The next attack card played deals {Level} more damage.
+  Brief: The next attack card played deals increased damage.
 CantDrawNextTurn:
   Name: Next Turn Draw Negation
   Description: Can't draw cards next turn, after the draw phase.
@@ -453,7 +452,7 @@ FirepowerIsJustice:
   Name: Might Makes Right!
 PrivateSquare:
   Description: "For every {Limit} cards played, {OwnerName} deals {Level} damage to\
-    \ {PlayerName}.\n{Count} cards left."
+    \ {PlayerName}.\n{Count} card{Count:plural one='' other='s'} left."
   Name: Silver Lockdown
 Emi:
   Name: Electromagnetic Interference
@@ -466,8 +465,8 @@ AbsorbPower:
   Description: At the end of {OwnerName}'s turn, gain {Level} |Firepower|.
   Name: Red Orb
 RinAura:
-  Description: Vengeful Spirits summoned by {OwnerName} deal {Level} more damage with
-    revenge bullets.
+  Description: '|Vengeful Spirits| summoned by {OwnerName} deal {Level} more damage
+    with |Revenge Bullet|.'
   Name: Blazing Fire
 Fengyin:
   Description: "{PlayerName} can't play attack cards {Duration:plural one='until end\
@@ -486,7 +485,7 @@ RockHardAura:
     from unblocked attacks.'
   Name: Keystone Protection
 KokoroXi:
-  Description: At the end of {OwnerName}'s turn, summon a Menreiki.
+  Description: At the end of {OwnerName}'s turn, summon a |Menreiki|.
   Name: Joy
 KokoroNu:
   Description: At the end of {OwnerName}'s turn, all enemies gain {Level} |Firepower|.
@@ -524,8 +523,9 @@ LongLight:
 Vampire:
   Description: '{OwnerName} gains life equal to unblocked damage dealt. Scary!'
   Name: Vampire
+  Brief: '{OwnerName} gains life equal to unblocked damage dealt. Scary!'
 FastAttack:
-  Description: After playing the first card of a turn, {OwnerName} deals {Level} damage
+  Description: After playing the first card each turn, {OwnerName} deals {Level} damage
     to {PlayerName}.
   Name: Apex Speedster
 HuanxiangBlockSe:
@@ -535,12 +535,12 @@ HuanxiangBlockSe:
 YinyangXueyinSe:
   Description: After playing a |Yin-Yang Orb|, gain {Level} |Temporary Firepower|
     and |Temporary Spirit|.
-  Brief: After playing a |Yin-Yang Orb|, gains some |Temporary Firepower| and |Temporary
+  Brief: After playing a |Yin-Yang Orb|, gain some |Temporary Firepower| and |Temporary
     Spirit|.
   Name: Yin-Yang Rune
 Charging:
-  Description: When {PlayerName} has {TriggerLevel} or more |Charge|, they enter |Burst|.
-  Brief: When {PlayerName} has {TriggerLevel} or more |Charge|, they enter |Burst|.
+  Description: When {PlayerName} has {TriggerLevel} or more |Charge|, she enters |Burst|.
+  Brief: When {PlayerName} has {TriggerLevel} or more |Charge|, she enters |Burst|.
   Name: Charge
 Burst:
   Name: Burst
@@ -552,11 +552,11 @@ Concentration:
   Name: Concentration
   Description: 'The next {Level:plural one='''' other=''% ''}|Overdrive| effect{Level:plural
     one='' does not'' other=''s do not''} cost |Charge| to activate.'
-  Brief: The next |Overdrive| effect does not cost |Charge| to activate.
+  Brief: The next few |Overdrive| effects do not cost |Charge| to activate.
 BurstUpgrade:
   Description: Increases the damage multiplier while in |Burst|.
   Name: All Out
-  Brief: Increase the |Burst| damage multiplier.
+  Brief: Increases the damage multiplier while in |Burst|.
 SolarSystemSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Charge|.
   Name: Orrery's Sun
@@ -644,7 +644,7 @@ EnemyEnergyNegative:
     \ not be shown in gameplay."
   Name: Energy Expenditure
 LunaticTorch:
-  Description: "{OwnerName}'s torch shines with a peculiar light, all enemies are\
+  Description: "{OwnerName}'s torch shines with a peculiar light. All enemies are\
     \ driven to |Madness|.\nGain {Mana} at the start of {PlayerName}'s turn."
   Name: Lunatic Torch
 DoremyLevel:
@@ -663,8 +663,8 @@ ChillSe:
   Description: '{OwnerName} loses {Level} life after Frostbite is applied.'
   Brief: '{OwnerName} loses life after Frostbite is applied.'
 SenluoJiejieSe:
-  Description: At the start of {OwnerName}'s next turn, detonate all their |Barrier|.
-  Brief: At the start of {OwnerName}'s next turn, detonate all their |Barrier|.
+  Description: At the start of {OwnerName}'s next turn, she detonates all of her |Barrier|.
+  Brief: At the start of {OwnerName}'s next turn, she detonates all of her |Barrier|.
   Name: Aggregate Border
 YachieDefendSe:
   Name: Tortoiseshell Hell
@@ -683,9 +683,9 @@ UseCardToLoseGame:
   Description: Lose the game after playing {Count:plural one='% more card' other='%
     more cards'}.
 AmuletForCard:
-  Name: Exorcism
-  Description: Negate the next {Level} Status cards that would be added (|Exile| {Level:plural
-    one='it' other='them'} instead).
+  Name: Ward
+  Description: Negate the next {Level} Status card{Level:plural one='' other='s'}
+    that would be added (|Exile| {Level:plural one='it' other='them'} instead).
   Brief: Negate the next Status cards that would be added (|Exile| them instead).
 EvilMaidDoubleAttack:
   Name: Devil's Maid
@@ -800,7 +800,7 @@ MeilingAbilitySe:
 NextTurnGainShield:
   Description: At the start of {OwnerName}'s next turn, gain {Level} |Barrier|.
   Brief: At the start of {OwnerName}'s next turn, gain some |Barrier|.
-  Name: Next Turn Gain Shield
+  Name: Next Turn Barrier
 YouxiangGrowSe:
   Brief: All |Growth| effects trigger an additional number of times.
   Name: Flowers, Birds, Wind and Moon
@@ -827,22 +827,28 @@ BlackPoisonSe:
     |Poison| to that enemy.
 SihunYuSe:
   Name: Pendants that emit evil spirits
-  Description: At the end of the {OwnerName} turn, attract some enemies into the battle.
+  Description: At the end of {OwnerName}'s turn, she attracts more enemies into this
+    combat.
 NoBaseManaNextTurn:
   Name: Next Turn Broken Timeline
-  Description: Gained no mana from base mana at the beginning of next turn.
-  Brief: Gained no mana from base mana at the beginning of next turn.
+  Description: At the start of the next turn, negate any mana that would be gained
+    from the mana base.
+  Brief: At the start of the next turn, negate any mana that would be gained from
+    the mana base.
 NoBaseManaThisTurn:
-  Description: Gained no mana from base mana at the beginning of this turn.
-  Brief: Gained no mana from base mana at the beginning of this turn.
+  Description: At the start of the turn, negate any mana that would be gained from
+    the mana base.
+  Brief: At the start of the turn, negate any mana that would be gained from the mana
+    base.
   Name: Broken Timeline
 FoxCharm:
   Name: Fox Charm
-  Description: "Only {Limit} cards may be played each turn, {Count} cards left.\n\
-    Defeat |Fox Youkai| remove this effect."
+  Description: "Only up to {Limit} card{Limit:plural one='' other='s'} can be played\
+    \ each turn.\n{Count} card{Count:plural one='' other='s'} left.\nDefeat the |Fox\
+    \ Youkai| to remove this effect."
 DeathPoison:
   Name: Death Poison
-  Description: Apply {Level} |Poison| to {PlayerName} when {OwnerName} is defeated.
+  Description: When {OwnerName} is defeated, {PlayerName} gains {Level} |Poison|.
 PrismriverSe:
   Name: Prism Concerto
   Brief: Whenever {PlayerName} would gain an amount of mana, they gain that much <sprite="ManaSprite"
@@ -851,5 +857,5 @@ PrismriverSe:
     much <sprite="ManaSprite" name="P"> instead.
 KnifeHellSe:
   Name: Silver Elegance
-  Description: For the rest of combat, |Throwing Knives| has |Auto Exile|.
-  Brief: For the rest of combat, |Throwing Knives| has |Auto Exile|.
+  Description: For the rest of combat, |Throwing Knives| have |Auto Exile|.
+  Brief: For the rest of combat, |Throwing Knives| have |Auto Exile|.
