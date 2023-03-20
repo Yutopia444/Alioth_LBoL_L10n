@@ -26,7 +26,7 @@ YaoguaiBuster:
   Description: Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}.
 Fengmozhen:
   Name: Aguja Persuasiva
-  Description: Inflige {Damage}.
+  Description: Inflige {Damage} de daño.
   FlavorText: Una obra maestra, forjada por Kogasa Tatara.
 Shenyuzha:
   Name: Talismán Sagrado
@@ -46,7 +46,7 @@ Fengmozhen4:
   Name: Circulo Sellador
   Description: Inflige {Damage} de daño a cada enemigo.
 TuimofuLuanwu:
-  Name: Loco Baile Exorcista
+  Name: Danza de Exorcismo Salvaje
   Description: Inflige {Damage} de daño a un enemigo aleatorio {Value1} veces.
 WunvKongwu:
   Name: Danza Aérea de Miko
@@ -75,7 +75,7 @@ ReimuWeiyan:
   Name: Majestad Verdadera
   Description: Aplica {Value1} de |Débil| a cada enemigo.
 ZhujiThreeGod:
-  Name: Tres Dioses Shinto
+  Name: Tres Dioses del Sumiyoshi
   Description: "Saca {Value1:plural one='% carta' other='% cartas'}.\nObtén {Value2}\
     \ |Poder Temporal| por cada carta de ataque y {Value2} |Espíritu Temporal| por\
     \ cada carta de defensa, sacadas por esta carta."
@@ -90,7 +90,7 @@ SmallPanding:
 Zhuizongfu:
   Name: Amuleto Teledirigido
   Description: "Inflige {Damage} daño a un enemigo aleatorio {Value1} veces.\nSi {PlayerName}\
-    \ tiene |Barrera|, obtiene {Mana}."
+    \ tiene |Poder Temporal|, obtiene {Mana}."
 DanmuDuijue:
   Name: Duelo de SpellCards
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Reflejo|.\nEsta carta\
@@ -147,7 +147,7 @@ UManaCard:
   Description: Gana {Mana}.
   Name: Roció
 BManaCard:
-  Name: Enigma
+  Name: Ocultismo
   Description: Gana {Mana}.
 RManaCard:
   Name: Flama
@@ -172,5 +172,266 @@ ReimuFestival:
   Description: Al comienzo del turno de {PlayerName}, gana {Value1} de |Poder Temporal|.
   Name: Banquete Interminable
 SuikaOut:
-  Name: Exorcizar la Plaga
+  Name: Exorcismo de Limpieza
   Description: "|Exilia| una carta de la mano.\nGana {Value1} de |Exorcismo|."
+JiejieAttack:
+  Name: Golpe de Barrera
+  NonbattleDescription: "Inflige {Damage} de daño.\nInflige daño adicional igual a\
+    \ la |Barrera| de {PlayerName}."
+  Description: "Inflige {Damage} de daño.\nInflige daño adicional igual a la |Barrera|\
+    \ de {PlayerName}. ({ShieldDamage})"
+HuanxiangBlock:
+  Name: Frontera de la Fantasía
+  Description: Cada vez que una carta es |Exiliada|, gana {Value1} de |Bloqueo|.
+QinggeManwu:
+  Name: Vals de la Doncella
+  Description: Roba {Value1} cartas y se |Mejoran| hasta el final del combate.
+  UpgradedDescription: "Roba {Value1} cartas y se |Mejoran| hasta el final del combate.\n\
+    Para cada carta robada ya |Mejorada|, gana {Value2} de |Barrera|."
+FreeFly:
+  Description: Al comienzo del turno de {PlayerName}, gana {Mana}.
+  FlavorText: La capacidad de volar, que es extremadamente rara en el exterior, es
+    algo normal en Gensokyo.
+  Name: Vuelo Libre
+YinyangXueyin:
+  Name: Runa Yin-Yang
+  Description: "Pierde {Value2} de vida.\nCada vez que {PlayerName} juega un |Orbe\
+    \ Yin-Yang|, gana {Value1} de |Poder Temporal| y |Espíritu Temporal|."
+MarisaBlockR:
+  Description: Obtén {Block} de |Bloqueo|.
+SakuyaAttackU:
+  Name: Tiro de Póquer
+  Description: Inflige {Damage} de daño.
+ReimuDrink:
+  UpgradedDescription: "Gana {Value1} de vida.\nObtenga {Value1} |Poder Temporal|.\n\
+    Añade {Value2} |Ebrio{Value2:plural one='' other='s'}| a tu mano."
+  Name: Ofrenda de Sake
+  Description: "Gana {Value1} de vida.\nAñadir {Value2} |Ebrio{Value2:plural one=''\
+    \ other='s'}| a tu mano"
+YakongDianxue:
+  Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} pierda un buff,\
+    \ devuelve esta carta de la pila de descartes a la mano."
+  FlavorText: ¡Es una puñalada por la espalda!
+  Name: Marca de Grieta Dimensional
+ReimuFreeAttack:
+  Description: "Gane {Block} de |Bloqueo|.\n{Value1:plural one='La siguiente carta'\
+    \ other='Las siguientes % cartas'} de ataque jugada cuestan {Mana} para usarse."
+  Name: Fantasía Fugaz
+MinengZhuru:
+  Name: Inyección de Energía Mental
+SummerFlower:
+  Description: "Inflige {Damage} de daño.\n|Crecimiento:| Aumenta el daño en {Value1}."
+  Name: Flores de Verano
+YiwaiHuakai:
+  Description: Obtén {Block} de |Bloqueo|.
+  Name: Floración Inesperada
+MarisaAttackB:
+  Description: Inflige {Damage} de daño.
+KoishiAttackG:
+  Description: Inflige {Damage} de daño.
+  Name: Flor de Rosas
+FairySupportStar:
+  Name: Detección de Star
+ToolBlock:
+  Name: Escudo Balístico
+  Description: "Obtén {Block} de |Bloqueo|.\n|Limitado【{DeckCounter}】|"
+KoishiBlockB:
+  Name: Amor Desinteresado
+  Description: Obtén {Block} de |Bloqueo|.
+EmpCard:
+  Description: "Inflige {Damage} daño de |Ataque|.\nSi el objetivo es un |drone|,\
+    \ no puede actuar durante {Value1} turnos.\n|Limitado【{DeckCounter}】|"
+  Name: Dispositivo EMP
+NewsEntertainment:
+  Name: Entretenimiento
+  Description: "Roba cartas hasta que la mano esté llena.\n|Limitado【{DeckCounter}】|"
+GroupOfKnife:
+  Description: Inflige {Damage} de daño.
+MultiShoot:
+  Description: Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}.
+  Name: Multi Disparo
+RandomShoot:
+  Name: Disparo Aleatorio
+  Description: Inflige {Damage} de daño a un enemigo aleatorio {Value1:plural one='%
+    vez' other='% veces'}.
+ToolDraw:
+  Name: Mochila de Suministro
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Limitado【{DeckCounter}】|"
+ToolWeak:
+  Name: Linterna
+  Description: "Aplica {Value1} de |Débil|.\n|Limitado【{DeckCounter}】|"
+ToolHeal:
+  Name: Comida Enlatada
+  Description: "Gana {Value1} de vida.\n|Limitado【{DeckCounter}】|"
+ToolAmulet:
+  Name: Amuleto Desechable
+  Description: "Gana {Value1} |Amuleto|.\n|Limitado【{DeckCounter}】|"
+ToolMana:
+  Name: Bebida Energética
+  Description: "Gana {Mana}.\n|Limitado【{DeckCounter}】|"
+ToolMicai:
+  Description: "Gana {Value1} |Camuflaje Óptico|.\n|Limitado【{DeckCounter}】|"
+  Name: Ropa de Camuflaje Óptico
+ToolFirstAid:
+  Description: "Elimina todas los debuff de {PlayerName}.\nGana {Value1} de vida.\n\
+    |Limitado【{DeckCounter}】|"
+  Name: Kit de Primeros Auxilios
+ToolInvincible:
+  Name: Vestido de Ángel
+  Description: "Gane |Impecable| por {Value1} turno{Value1:plural one='' other='s'}.\n\
+    |Limitado【{DeckCounter}】|"
+VampireShoot1:
+  Name: Disparo del Diablo
+  Description: "Inflige {Damage} de daño.\nGana {Value1} de vida."
+  FlavorText: '"¡Puedo chupar la sangre incluso si lo bloqueas!"'
+VampireShoot2:
+  FlavorText: '"¡Puedo chupar la sangre incluso si te proteges!" --El precio de convertirse
+    en un vampiro es la gingivitis'
+  Name: Lluvia del Diablo
+  Description: "Inflige {Damage} de daño.\nGana {Value1} de vida."
+WanderingSoul:
+  Name: Alma Errante
+RabbitFoot:
+  Name: Pata de Conejo de la Suerte
+  Description: '|Al final del combate:| Si esta carta no está |Exiliada|, gana {Value1}<sprite="Point"
+    name="Gold">。'
+GainTreasure:
+  Name: Lluvia de Dinero
+  Description: Gana {Value1} <sprite="Point" name="Gold">.
+LilyoftheValley:
+  Name: Lirio del Valle
+  Description: "Gana {Mana}.\n|Limitado【{DeckCounter}】|"
+NewsPositive:
+  Name: Noticias Positivas
+  Description: "Gana {Value1} <sprite=\"Point\" name=\"Power\">。\n|Limitado【{DeckCounter}】|"
+HatateNews:
+  Name: Noticias del Kakashi Spirit
+AyaNewsReimuSp:
+  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
+    {Value1} de |Espíritu|.'
+  Name: Bunbunmaru - Especial de Reimu
+AyaNewsSakuyaSp:
+  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
+    {Value1} de |Espíritu|.'
+  Name: Bunbunmaru - Especial de Sakuya
+AyaNewsMarisaSp:
+  Name: Bunbunmaru - Especial de Marisa
+  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
+    {Value1} de |Espíritu|.'
+AyaNewsCirnoSp:
+  Name: Bunbunmaru - Especial de Cirno
+  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
+    {Value1} de |Espíritu|.'
+AyaNewsKoishiSp:
+  Name: Bunbunmaru - Especial de Koishi
+  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
+    {Value1} de |Espíritu|.'
+CirnoBlockG:
+  Description: Obtén {Block} de |Bloqueo|.
+  Name: Protección de Hojas
+CirnoAttackG:
+  Name: Navaja de Hoja Helada
+  Description: Inflige {Damage} de daño.
+CirnoAttackU:
+  Description: Inflige {Damage} de daño.
+  Name: Disparo de Hielo
+FairySupportLarva:
+  Name: Alas de Larva
+HuashanQingjing:
+  Description: Obtén {Block} de |Bloqueo|.
+EvilTuiZhi:
+  Name: Exterminar el Mal
+MarisaAttackR:
+  Description: Inflige {Damage} de daño.
+SakuyaBlockU:
+  Description: Obtén {Block} de |Bloqueo|.
+SakuyaAttackW:
+  Description: Inflige {Damage} de daño.
+SakuyaBlockW:
+  Description: Obtén {Block} de |Bloqueo|.
+SakuyaUsage:
+  FlavorText: Solo detén el tiempo y haz las tareas del hogar.
+XisuiBinbao:
+  Description: Inflige {Damage} de daño.
+CallFriend:
+  Name: Llamar a Amigos
+CoolBreeze:
+  Description: "Si el objetivo esta |Gélido|, esta carta inflige {Value1} más de daño.\n\
+    Inflige {Damage} de daño."
+CirnoBlockU:
+  Description: Obtén {Block} de |Bloqueo|.
+  Name: Escudo de Hielo
+IceJiguanqiang:
+  Name: Ametralladora de Hielo
+FairyHeal:
+  Name: Regeneración de Hada
+IceTornado:
+  Name: Tornado de Hielo Triturado
+MingzhuAntou:
+  Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
+    mano. Cuesta |temporalmente| {Mana}.
+  Name: Frontera Secreta
+NewsNegative:
+  Name: Noticias Negativas
+  Description: "Pierde {Value1} <sprite=\"Point\" name=\"Power\">。\n|Limitado【{DeckCounter}】|"
+ToolMaxHp:
+  Name: Pepino Crujiente
+  Description: "Gana {Value1} de vida máxima.\n|Limitado【{DeckCounter}】|"
+ToolDroneBlock:
+  Name: Núcleo Mecánico
+  Description: "Gana {Value1} |Matriz de Defensa|.\n|Limitado【{DeckCounter}】|"
+ToolRandomTool:
+  Name: Walkie-Talkie Táctico
+  Description: "Elija 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
+    \ Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
+ArtificialJewellery:
+  Name: Joya Artificial
+  Description: Gana 1 maná aleatorio.
+  UpgradedDescription: Gana {Mana}.
+JinjiBlock:
+  Description: Obtén {Block} de |Bloqueo|.
+IceLaser:
+  Description: "Inflige {Damage} de daño.\nSi el enemigo tiene |Gélido|, inflige el\
+    \ doble de daño."
+  Name: Disparo Congelador
+NewsTidbit:
+  Description: "Gana {Value1} |Marcados|.\n|Limitado【{DeckCounter}】|"
+  Name: Chismes
+WolfFur:
+  Name: Pelaje de Lobo
+  Description: '|Limitado【{DeckCounter}】|'
+ReimuShrine:
+  Name: Feria del Templo Hakurei
+  Description: Al comienzo del turno de {PlayerName}, gana {Value1} de |Espíritu Temporal|.
+MarisaBlockB:
+  Description: Obtén {Block} de |Bloqueo|.
+KoishiAttackB:
+  Description: Inflige {Damage} de daño.
+  Name: Defecto de ADN
+FairySupportMaid:
+  Name: Limpieza del Hada Sirvienta
+FairySupportClownpiece:
+  Name: Locura de Clownpiece
+ToolVulnerable:
+  Name: Tambor Cargado
+  Description: "Aplica {Value1} de |Vulnerable|.\n|Limitado【{DeckCounter}】|"
+ToolAttack:
+  Description: "Inflige {Damage} de daño.\n|Limitado【{DeckCounter}】|"
+  Name: Pistola de Agua
+AyaNews:
+  Name: Periódico Bunbunmaru
+  Description: Inflige {Damage} de daño a un enemigo aleatorio.
+FairySupportDaiyo:
+  Name: Asistencia de Daiyousei
+FairySupportLily:
+  Name: Anuncio de Lily White
+FairySupportSunny:
+  Name: Refracción de Sunny
+KoishiBlockG:
+  Description: Obtén {Block} de |Bloqueo|.
+  Name: Marchitamiento de Rosas
+FairySupportLuna:
+  Name: Silencio de Luna
+ToolUpgrade:
+  Name: Disquete
+  Description: "|Mejora| cada carta de la mano hasta el final del combate.\n|Limitado【{DeckCounter}】|"
