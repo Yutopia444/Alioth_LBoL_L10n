@@ -137,7 +137,7 @@ GManaCard:
   Description: Gana {Mana}.
 MoonWorld:
   Description: Al comienzo del turno de {PlayerName}, {Value1:plural one='% carta
-    aleatoria' other='% cartas aleatorias'} de la mano gana |Puro| este combate.
+    aleatoria' other='% cartas aleatorias'} de la mano gana |Puro| en este combate.
   Name: Mundo Purgado
 Shoot:
   Name: Disparar
@@ -201,11 +201,12 @@ YinyangXueyin:
     \ Yin-Yang|, gana {Value1} de |Poder Temporal| y |Espíritu Temporal|."
 MarisaBlockR:
   Description: Obtén {Block} de |Bloqueo|.
+  Name: Defensa de Escoba
 SakuyaAttackU:
   Name: Tiro de Póquer
   Description: Inflige {Damage} de daño.
 ReimuDrink:
-  UpgradedDescription: "Gana {Value1} de vida.\nObtenga {Value1} |Poder Temporal|.\n\
+  UpgradedDescription: "Gana {Value1} de vida.\nObtén {Value1} de |Poder Temporal|.\n\
     Añade {Value2} |Ebrio{Value2:plural one='' other='s'}| a tu mano."
   Name: Ofrenda de Sake
   Description: "Gana {Value1} de vida.\nAñadir {Value2} |Ebrio{Value2:plural one=''\
@@ -216,8 +217,8 @@ YakongDianxue:
   FlavorText: ¡Es una puñalada por la espalda!
   Name: Marca de Grieta Dimensional
 ReimuFreeAttack:
-  Description: "Gane {Block} de |Bloqueo|.\n{Value1:plural one='La siguiente carta'\
-    \ other='Las siguientes % cartas'} de ataque jugada cuestan {Mana} para usarse."
+  Description: "Obtén {Block} de |Bloqueo|.\n{Value1:plural one='La siguiente carta'\
+    \ other='Las siguientes % cartas'} de ataque jugada cuesta {Mana} para usarse."
   Name: Fantasía Fugaz
 MinengZhuru:
   Name: Inyección de Energía Mental
@@ -229,6 +230,7 @@ YiwaiHuakai:
   Name: Floración Inesperada
 MarisaAttackB:
   Description: Inflige {Damage} de daño.
+  Name: Laser Ilusorio
 KoishiAttackG:
   Description: Inflige {Damage} de daño.
   Name: Flor de Rosas
@@ -280,7 +282,7 @@ ToolFirstAid:
   Name: Kit de Primeros Auxilios
 ToolInvincible:
   Name: Vestido de Ángel
-  Description: "Gane |Impecable| por {Value1} turno{Value1:plural one='' other='s'}.\n\
+  Description: "Gana |Perfección| por {Value1} turno{Value1:plural one='' other='s'}.\n\
     |Limitado【{DeckCounter}】|"
 VampireShoot1:
   Name: Disparo del Diablo
@@ -343,8 +345,11 @@ HuashanQingjing:
   Description: Obtén {Block} de |Bloqueo|.
 EvilTuiZhi:
   Name: Exterminar el Mal
+  Description: "{Value1:plural one='La siguiente carta jugada' other='La siguientes\
+    \ % cartas jugadas'} infligirá el doble de daño."
 MarisaAttackR:
   Description: Inflige {Damage} de daño.
+  Name: Impacto de Estrella Caliente
 SakuyaBlockU:
   Description: Obtén {Block} de |Bloqueo|.
 SakuyaAttackW:
@@ -381,7 +386,7 @@ ToolMaxHp:
   Description: "Gana {Value1} de vida máxima.\n|Limitado【{DeckCounter}】|"
 ToolDroneBlock:
   Name: Núcleo Mecánico
-  Description: "Gana {Value1} |Matriz de Defensa|.\n|Limitado【{DeckCounter}】|"
+  Description: "Gana {Value1} |Matriz Defensiva|.\n|Limitado【{DeckCounter}】|"
 ToolRandomTool:
   Name: Walkie-Talkie Táctico
   Description: "Elija 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
@@ -407,6 +412,7 @@ ReimuShrine:
   Description: Al comienzo del turno de {PlayerName}, gana {Value1} de |Espíritu Temporal|.
 MarisaBlockB:
   Description: Obtén {Block} de |Bloqueo|.
+  Name: Defensa de Polvo de Estelar
 KoishiAttackB:
   Description: Inflige {Damage} de daño.
   Name: Defecto de ADN
@@ -474,7 +480,7 @@ SakuyaLock:
     \ daño de ataque)."
   NonbattleDescription: Activa |Encierro Plateado|.
 Chunguang:
-  Description: '|Cuando se roba:| |Purifica| {Valor1}.'
+  Description: '|Cuando se roba:| |Purifica| {Value1}.'
   Name: Resplandor Puro
   FlavorText: Por favor, no ajustes la saturación al máximo, ¡y el mínimo tampoco
     servirá!
@@ -516,7 +522,7 @@ Psychedelic:
   FlavorText: '"¿Todavía sigo soñando ?"'
 Yuebiao:
   Name: El Paisaje Lunar
-  Description: '|Cuando se roba:| Purifica {Valor1}.'
+  Description: '|Cuando se roba:| Purifica {Value1}.'
 LoveLetter:
   Name: Carta de Amor
   Description: Dale esto a <color=#eab8bf>Chica Enferma de Amor</color>. Ella será
@@ -538,3 +544,112 @@ Yueguang:
   Description: '|Cuando se roba:| Pierde {Value1} maná aleatorio.'
 Jealousy:
   Name: Celosa
+TaijiLiangyi:
+  Name: El Nacimiento del Yin-Yang
+  Description: Al comienzo del turno de {PlayerName}, si no hay |Orbes Yin-Yang| en
+    la mano, añade un |Orbe Yin-Yang| a la mano.
+HuanxiangTouying:
+  Name: Proyección de Fantasía
+  Description: "Gana {Mana}.\nElige 1 de {Value1} cartas al azar para agregar a la\
+    \ mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un costo total de 1, 2\
+    \ y 3 respectivamente."
+  UpgradedDescription: "Gana {Mana}.\nElige 1 de {Value1} cartas al azar para agregar\
+    \ a la mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un costo total de\
+    \ 1, 2, 3, 4 y 5 respectivamente."
+HuijuQiankun:
+  Name: Confluencia del Yin-Yang
+  Description: "|Exilia| cada carta de la mano.\nLuego, agrega un |Orbe Yin-Yang|\
+    \ a la mano Inflige {Value1} más de daño por cada carta |Exiliada| de esa manera."
+QiqingYishi:
+  Name: Oración a la Luz del Sol
+  Description: Añade un |Arcoíris| a la mano.
+  UpgradedDescription: Añade un |Arcoíris| y un |Resplandor| a la mano
+ChuanyueJiejie:
+  Description: "Obtén {Shield} de |Barrera|.\nElige una carta |Exiliada| devolviéndola\
+    \ a la mano."
+  Name: Cruzando la Frontera
+OutInGap:
+  Description: Elige 1 de {Value1} cartas |p:completamente aleatorias| para añadirla
+    a la mano. Cuesta |temporalmente| {Mana} y tiene |Exilio| y |Etéreo|.
+  Name: Rompiendo Límites
+Jiangshen:
+  Name: Meditación Fiel
+  Description: "Siempre que {PlayerName} agregue una carta durante este combate, se\
+    \ |Mejora|.\nAñade {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}\
+    \ a la mano."
+BoliPhantom:
+  Description: Siempre que {PlayerName} |Exilia| una carta que no sea |Aguja de persuasión|,
+    añade una |Aguja de persuasión| a la mano que |cuesta temporalmente| {Mana}.
+  Name: Ilusión Hakurei
+KuosanJiejie:
+  Name: Expansión de Fronteras
+  Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: Obtiene {Block}\
+    \ de |Bloqueo|.\n|Por cada <sprite=\"ManaSprite\" name=\"R\"> gastado|: Inflige\
+    \ {Damage} de daño a cada enemigo."
+DanceAroundLake:
+  Description: Cada vez que una carta esté |Exiliada|, roba {Value1:plural one='%
+    carta' other='% cartas'}.
+  Name: Danza Junto al Lago
+AutoQumobang:
+  Description: "|Mientras está en la mano:| Roba {Value1} {Value1:plural one='carta'\
+    \ other='cartas'} más durante cada fase de robo.\nCuando esta carta es |Retenida|\
+    \ {Value2} veces, se |Exilia|."
+  Name: Vara de Purificación Furiosa
+SenluoJiejie:
+  Name: Frontera Agregada
+  Description: "Gana {Shield} |Barrera|.\nAl comienzo del próximo turno de {PlayerName},\
+    \ pierde todas la |Barrera| y infligiendo el mismo daño a cada enemigo."
+RedLaser:
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Inflige en su lugar\
+    \ dos veces seguidas."
+  Name: Láser Inflamable
+Potion:
+  Name: Poción Inestable
+  Description: '|Cuando esta carta entra en la mano:| Gana {Mana}, inflige {Damage}
+    de daño a un enemigo aleatorio y se |Exilia| esta carta.'
+  FlavorText: ¡ADVERTENCIA! ¡Las pociones pueden explotar!
+MomentPower:
+  Name: Grieta Dimensional Instantánea
+  Description: Siempre que {PlayerName} gana |Poder Temporal| o |Espíritu temporal|,
+    convierte {Value1} de él en |Poder| o |Espíritu|, respectivamente.
+BoliDajiejie:
+  Name: Gran Barrera Hakurei
+  Description: Para el resto del combate, el |Bloqueo| de {PlayerName} se convierte
+    en |Barrera|.
+KuosanLingfu:
+  Name: Amuleto Expandido
+  Description: "Inflige {Damage} de daño a cada enemigo.\nObtienes |Barrera| igual\
+    \ a la cantidad de daño infligido no bloqueado de esa manera."
+GapLady:
+  Description: "Pierde {Value1} de vida.\nGana {Mana}.\nRoba {Value2} cartas."
+  Name: Dama de las Brechas
+ReimuSakura:
+  Name: Sello de Fantasía Floreciente
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Value1} de vida.\n\
+    |Crecimiento:| Cuesta {Mana} menos."
+Qingshan:
+  Name: El último Hogar de Uno
+  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia:| Gana {Mana}."
+CraftPotion:
+  Description: Agrega {Value1:plural one='% |Poción inestable|' other='% |Pociones
+    inestables|'} a la pila de carta.
+  Name: Crear Poción
+  UpgradedDescription: "Agrega {Value1:plural one='% |Poción inestable|' other='%\
+    \ |Pociones inestables|'} a la pila de carta.\nRoba {Value2:plural one='% carta'\
+    \ other='% cartas'}."
+DoubleLianhuadie:
+  Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Value1}
+    de daño a un enemigo aleatorio.
+  Name: Mariposa de Loto Dicromática
+Wunvyu:
+  Name: Orbe Malvado Hakurei
+  Description: "Inflige {Damage} daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
+    |Mientras esté en la mano|: Cada vez que se roba una carta fuera de la fase de\
+    \ robar, aumenta el daño de esta carta en {Value2} en este combate."
+ChunseXiaojing:
+  Name: Senda de Color Primaveral
+  Description: "Gana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
+ReimuInstant:
+  Name: '"Sello de Ensueño -Destello-"'
+  Description: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
+    \ toma un turno extra.\n|Límite de tiempo| {Mana}."
