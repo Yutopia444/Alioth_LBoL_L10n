@@ -152,7 +152,7 @@ BManaCard:
   Name: Ocultismo
   Description: Gana {Mana}.
 RManaCard:
-  Name: Flama
+  Name: Llama
   Description: Gana {Mana}.
 PManaCard:
   Name: Arcoíris
@@ -344,7 +344,7 @@ FairySupportLarva:
 HuashanQingjing:
   Description: Obtén {Block} de |Bloqueo|.
 EvilTuiZhi:
-  Name: Exterminar el Mal
+  Name: Exterminación Malvada
   Description: "{Value1:plural one='La siguiente carta jugada' other='La siguientes\
     \ % cartas jugadas'} infligirá el doble de daño."
 MarisaAttackR:
@@ -602,6 +602,7 @@ RedLaser:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Inflige {Value1}\
     \ veces seguidas."
   Name: Láser Inflamable
+  UpgradedDescription: Inflige {Damage} de daño {Value1} veces seguidas.
 Potion:
   Name: Poción Inestable
   Description: '|Cuando esta carta entra en la mano:| Gana {Mana}, inflige {Damage}
@@ -668,30 +669,35 @@ SatelliteIllusion:
   Name: Ilusión Satelital
 MarisaDraw:
   Name: Improvisación
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nSi {PlayerName}\
+    \ está en |Supernova|, gana {Mana}."
 DarkSatellite:
   Name: Satélite Oscuro
   Description: "Obtén {Block} de |Bloqueo|.\nSi la última carta jugada en este combate\
     \ fue negro, roba {Value1:plural one='% carta' other='% cartas'}."
 AsteroidBelt:
   Name: Cinturón de Asteroides
+  Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
+    Si la última carta jugada en este combate fue roja, gana {Value2} |Cargas|."
 ScryBlock:
   Name: Premeditación
   Description: Siempre que {PlayerName} |explora|, obtiene {Value1} de |Bloqueo|.
 MarisaSteal:
   Description: "Añade un |Arcoíris| a la mano.\nAl comienzo del próximo turno de {PlayerName},\
     \ pierde {Value1} maná aleatorio."
-  UpgradedDescription: Añade un |Arcoiris| a la mano.
+  UpgradedDescription: Añade un |Arcoíris| a la mano.
   Name: Materiales "Prestados"
 RainbowStar:
   Description: "Inflige {Damage} de daño.\n|Por cada <sprite=\"ManaSprite\" name=\"\
     P\"> gastado:| Esta carta inflige {Value1} más de daño. Ganas {Value2}<sprite=\"\
     Point\" name=\"Power\">."
-  Name: Ráfagas de Estrellas Arcoíris
+  Name: Explosión de Estrellas Arcoíris
 ShibaiChanwu:
   Description: "Agrega {Value1:plural one='% |Poción inestable|' other='% |Pociones\
     \ inestables|'} a la pila de robo.\nAñade {Value2:plural one='% |Sombra|' other='%\
     \ |Sombras|} a la mano."
   Name: Producto Fallido
+  FlavorText: Incluso hacer postres puede ser un riesgo de fracaso.
 PotionJungle:
   Name: Bosque Fluorescente
   Description: Al final del turno de {PlayerName}, agrega {Value1:plural one='% |Poción
@@ -712,6 +718,8 @@ NightSeeStar:
   Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
 HuojianSaoba:
   Name: Escoba Cohete
+  Description: "Gana {Valor1} |Evasión|.\nGana {Valor2} |Carga{Value2:plural one=''\
+    \ other='s'}|."
 ShinningPotion:
   Description: "Obtén {Block} de Bloqueo.\nAñade una |Poción inestable| a la pila\
     \ de robo.\n|Sobrecarga {Value2}:| Agrega 2 en su lugar."
@@ -721,7 +729,8 @@ Yinhe:
   Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se retiene:| Aumenta el |Bloqueo|\
     \ de esta carta. por {Value1} en este combate."
 StarSky:
-  Name: Brillante Cielo Estrellado
+  Name: Cielo Estrellado Luminoso
+  Description: Gana {Value1} |Cargas|.
 PoisonPotion:
   Name: Caldera de la Bruja
   Description: "Las |Pociones Inestables| también aplican {Valor1} de |Veneno| cuando\
@@ -747,8 +756,81 @@ AccuracyLaser:
     \ carta cuesta {Mana} menos en este combate."
 Alioth:
   Name: Alioth
+  Description: "|Explorar| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
+    Gana {Value2} |Cargas|."
 BurstDraw:
   Name: Duelo de Velocidad
+  Description: Siempre que {PlayerName} entre en |Supernova|, roba {Value1:plural
+    one='% carta' other='% cartas'}.
 StarFantasy:
   Description: "Inflige {Damage} de daño.\n|Cuando se retiene:| Aumenta el daño de\
     \ esta carta en {Value1} en este combate."
+  Name: Fantasía de Polvo Estelar
+RunAway:
+  UpgradedDescription: "Descartar cada carta de la mano. Las cartas descartadas de\
+    \ esta manera |cuestan temporalmente| {Mana} menos.\nGana {Value1} |Evasión|.\n\
+    Roba {Value2:plural one='% carta' other='% cartas'}."
+  Name: Escapar
+  Description: "Descartar cada carta de la mano. Las cartas descartadas de esta manera\
+    \ |cuestan temporalmente| {Mana} menos.\nGana {Value1} |Evasión|."
+ExilePotion:
+  UpgradedDescription: Elige hasta {Value1} cartas de la mano, pila de robo y pila
+    de descarte. |Exílialo{Value1:plural one='' other='s'}| y añade ese número de
+    |Pociones inestables| a la pila de descarte.
+  Name: Utilización de Residuos
+  Description: Elige hasta {Value1} cartas de la mano. |Exílialo{Value1:plural one=''
+    other='s'}| y añade ese número de |Pociones inestables| a la pila de descarte.
+OpenUniverse:
+  Description: "Retira una carta de la pila de robo del combate.\nAñade 2 |copias|\
+    \ de ello a la mano que |costara temporalmente| {Mana} y tendrá |Exilio|."
+  Name: Abriendo el Universo
+StarShower:
+  Description: "Obtén {Block} de |Bloqueo|.\nSi {PlayerName} no tiene |Cargas|, gana\
+    \ {Value2} |Cargas|. De lo contrario, gana {Value1} |Cargas|."
+  Name: Bañarse en Polvo Estelar
+WizardStudy:
+  Name: Convertidor Mágico
+  Description: "Gana {Value1} de |Poder| y |Espíritu|.\nLa primera carta jugada en\
+    \ cada turno cuesta {Mana} más para usarse."
+UpgradePotion:
+  Name: Poción Refinada
+  Description: "Agrega {Value2:plural one='% |Poción inestable|' other='% |Pociones\
+    \ inestables|'} a la pila de descarte.\nAumenta el daño de las |Pociones inestables|\
+    \ por {Value1}."
+  UpgradedDescription: "Agrega {Value2:plural one='% |Poción inestable|' other='%\
+    \ |Pociones inestables|'} a la pila de descarte.\nAumenta el daño de las |Pociones\
+    \ inestables| por {Value1}.\nAl final del turno de {PlayerName}, aumenta el daño\
+    \ de todas las |Pociones inestables| en las pilas de robo y descarte por {Value1}."
+MixAndShake:
+  Name: Poción de Fuegos Artificiales
+  FlavorText: No agitar antes de abrir.
+  Description: "Inflige {Damage} de daño a cada enemigo.\nEl daño de esta carta aumenta\
+    \ en {Value1} por cada |Poción inestable| en las pila de robo y descarte."
+ShootMoon:
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Gana {Value1} |Evasión|."
+  Name: Disparar a la Luna
+PotionDefense:
+  Description: "Obtén {Block} de |Bloqueo|.\nHasta el final del turno, siempre que\
+    \ una |Poción inestable| se use, gana {Value1} de |Barrera|."
+  Name: Eco Resonante
+FireUpBagualu:
+  Name: Encendiendo el Horno
+  Description: "Gana {Value1} |Cargas|.\nGana {Value2} de |Poder|. Este efecto se\
+    \ ve afectado por |Supernova|."
+RedGiantStar:
+  Name: Impacto del Gigante Rojo
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Añade una |Llama|\
+    \ a la mano."
+ThrowBigStar:
+  Name: Explosión de Estrella Roja
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|Sobrecarga {Valor2}:| Inflige\
+    \ tanto daño a cada enemigo dos veces en su lugar."
+EventHorizon:
+  Name: Evento del Horizonte
+  Description: "Entra en modo |Supernova|.\nAl comienzo del próximo turno de {PlayerName},\
+    \ pierde la partida."
+  UpgradedDescription: "Entra en modo |Supernova|.\nGanas {Value1} de |Poder Temporal|.\n\
+    Al comienzo del próximo turno de {PlayerName}, pierde la partida."
+ReadyForBurst:
+  Name: Lista para Atacar
+  Description: "Obtén {Block} de |Bloqueo|.\nGana {Value1} |Cargas|."
