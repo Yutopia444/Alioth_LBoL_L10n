@@ -519,9 +519,11 @@ CraftPotion:
     sur la planche...
 RedLaser:
   Name: Laser Inflammable
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
-    \ {Value2}| : Infligez les dégâts deux fois à la place."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
+    \ {Value2}| : Infligez les dégâts {Value1} fois à la place."
   FlavorText: Un des gestes pour faire face à la période hivernale.
+  UpgradedDescription: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}
+    fois.
 Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
@@ -1122,8 +1124,9 @@ SilverBlade:
     one='' other='s'}|.
 KnifeHell:
   Name: Élégance Argentée
-  Description: "Dans cette bataille, les |Couteaux de lancer| ont |Exil Automatique|.\n\
-    Ajoutez {Value1} |Couteau{Value1:plural one='' other='x'} de lancer| à votre main."
+  Description: "Ajoutez |{Value1} Couteau{Value1:plural one='' other='x'} de lancer|\
+    \ dans la main.\nAméliorez tous les |Couteaux de lancer| de la main, de la pioche\
+    \ et de la défausse."
 BackOfKnife:
   Name: Couteau Récursif
   Description: "Supprimez tous les |Couteaux de lancer exilés| du combat.\nEnsuite,\
@@ -2329,10 +2332,10 @@ YouxiangGrow:
   Description: Les effets de |Croissance| s'appliquent {Value1} fois supplémentaire{Value1:plural
     one='' other='s'}.
 SakuyaUsage:
-  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nLorsque cette\
-    \ carte est jouée pour la {Value2}ème fois : à la place de piocher, |exilez| cette\
-    \ carte, {PlayerName} termine son tour et effectue un tour supplémentaire."
-  Name: Mode d'Emploi de Sakuya
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n|Lorsque\
+    \ jouée {Value2} fois| : Retirez cette carte du combat. Terminez le tour. Placez\
+    \ une carte |Marches circulaires| au-dessus de la pioche."
+  Name: Abus de Sakuya
   FlavorText: Arrêtez simplement de faire des corvées.
 ChaowoCard:
   Description: "Gagnez {Block} |Bouclier{Block:plural one ='' other='s'}|.\nEntrez\
@@ -2463,3 +2466,10 @@ FairySupportMaid:
   Description: "|Lorsque retenue| : dégâts augmentés de {Value2} points.\n|Quand exilée|\
     \ : inflige {Value1} dégât{Value1:plural one='' other='s'} à l'ennemi avec la\
     \ santé la plus élevée."
+AutoKnife:
+  Name: Couteau d'Argent Ensorcelé
+  FlavorText: Réglez le mode d'attaque du familier sur attaque active.
+  Description: "Dans cette bataille, les |Couteaux de lancer| ont |Exil automatique|.\n\
+    Ajoutez {Value1} |Couteau{Value1:plural one='' other='x'} volant| à votre main."
+SakuyaUsage2:
+  Name: Marches Circulaires
