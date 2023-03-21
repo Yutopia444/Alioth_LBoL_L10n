@@ -8,10 +8,10 @@ Game:
   Deck: デッキ
   ExtraTurn: Extra
   TurnCounter: ターン {0}
-  Next: 前述
+  Next: 進む
   EndTurn: ターン終了
-  ActualOrderExplain: "各場所にカードが追加された順番で表示します。 \n \nデッキ：ゲーム中に獲得した順番 \n山札：\n捨て札：\n \n\
-    通常、山札をこの順番で表示することはできません。"
+  ActualOrderExplain: "各場所にはカードが追加された順番で表示されます。 \n \nデッキ：ゲーム中に獲得した順番 \n山札：先頭のカードが山札の一番上\n\
+    捨て札：最後尾のカードが捨て札の一番上\n \n通常、山札をこの順番で表示することはできません。"
   EnemyTurn: エネミー
   BattleStart: 戦闘開始
   PlayerTurn: プレイヤー
@@ -31,6 +31,7 @@ Game:
   RarityOrder: レア度
   RarityOrderExplain: "同じレア度のカードを索引順に表示します。\n同名カードは追加順で並べられます。"
   DiscardZone: 捨て札
+  Exhibit: 展示物
 Explain:
   Title: 説明
   RemiliaMeet: "1．同じコストでカートを交換できる\n2．交換の際、カードのアップグレードは維持したまま"
@@ -98,6 +99,7 @@ StartGame:
   StartMoney: 所持金
   CharacterUnset: 主人公を選択
   SkillSpellCard: スペルカード
+  Puzzle: 難題
 Museum:
   UpgradedFilter: アップグレード
   UnlockAndReveal: 発見したカード
@@ -166,6 +168,14 @@ Setting:
     Select11: カード選択 11
     Select12: カード選択 12
     EndTurn: ターン終了
+    PoolU: <sprite="ManaSprite" name="U">を候補地に移動させる
+    PoolB: <sprite="ManaSprite" name="B">を候補地に移動させる
+    PoolR: <sprite="ManaSprite" name="R">を候補地に移動させる
+    PoolG: <sprite="ManaSprite" name="G">を候補地に移動させる
+    PoolC: <sprite="ManaSprite" name="C">を候補地に移動させる
+    PoolW: <sprite="ManaSprite" name="W">を候補地に移動させる
+    PoolP: <sprite="ManaSprite" name="P">を候補地に移動させる
+    UseUs: スペルカードの使用
   XCostWarningDescription: 手動でマナを選択せずにコストXのカードをプレイするとき、プレイヤーに警告します。
   Warn: 表示
   DontWarn: 非表示
@@ -184,3 +194,5 @@ Tooltip:
     Blue: 青
     Black: 黒
   UsTitle: '{1}'
+BattleHint:
+  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
