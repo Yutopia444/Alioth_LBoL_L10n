@@ -397,6 +397,7 @@ ArtificialJewellery:
   UpgradedDescription: Gana {Mana}.
 JinjiBlock:
   Description: Obtén {Block} de |Bloqueo|.
+  Name: Defensa de Emergencia
 IceLaser:
   Description: "Inflige {Damage} de daño.\nSi el enemigo tiene |Gélido|, inflige el\
     \ doble de daño."
@@ -598,8 +599,8 @@ SenluoJiejie:
   Description: "Gana {Shield} |Barrera|.\nAl comienzo del próximo turno de {PlayerName},\
     \ pierde toda la |Barrera| e infligiendo el mismo daño a cada enemigo."
 RedLaser:
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Inflige en su lugar\
-    \ dos veces seguidas."
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Inflige {Value1}\
+    \ veces seguidas."
   Name: Láser Inflamable
 Potion:
   Name: Poción Inestable
@@ -630,10 +631,10 @@ Qingshan:
   Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia:| Gana {Mana}."
 CraftPotion:
   Description: Agrega {Value1:plural one='% |Poción inestable|' other='% |Pociones
-    inestables|'} a la pila de carta.
+    inestables|'} a la pila de robo.
   Name: Crear Poción
   UpgradedDescription: "Agrega {Value1:plural one='% |Poción inestable|' other='%\
-    \ |Pociones inestables|'} a la pila de carta.\nRoba {Value2:plural one='% carta'\
+    \ |Pociones inestables|'} a la pila de robo.\nRoba {Value2:plural one='% carta'\
     \ other='% cartas'}."
 DoubleLianhuadie:
   Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Value1}
@@ -660,7 +661,7 @@ WinterWarm:
 DropBook:
   Name: Rebelión Ortodoxa
   Description: "Obtén {Block} de |Bloqueo|.\nAñade |{Value1:plural one='% Astrología'\
-    \ other='% Astrologías'}| a la mano"
+    \ other='% Astrologías'}| a la mano."
 SatelliteIllusion:
   Description: "Inflige {Damage} de daño.\nAñade |{Value1:plural one='% Astrología'\
     \ other='% Astrologías'}| a la mano."
@@ -672,4 +673,82 @@ DarkSatellite:
   Description: "Obtén {Block} de |Bloqueo|.\nSi la última carta jugada en este combate\
     \ fue negro, roba {Value1:plural one='% carta' other='% cartas'}."
 AsteroidBelt:
-  Name: Cinturón de Asteróides
+  Name: Cinturón de Asteroides
+ScryBlock:
+  Name: Premeditación
+  Description: Siempre que {PlayerName} |explora|, obtiene {Value1} de |Bloqueo|.
+MarisaSteal:
+  Description: "Añade un |Arcoíris| a la mano.\nAl comienzo del próximo turno de {PlayerName},\
+    \ pierde {Value1} maná aleatorio."
+  UpgradedDescription: Añade un |Arcoiris| a la mano.
+  Name: Materiales "Prestados"
+RainbowStar:
+  Description: "Inflige {Damage} de daño.\n|Por cada <sprite=\"ManaSprite\" name=\"\
+    P\"> gastado:| Esta carta inflige {Value1} más de daño. Ganas {Value2}<sprite=\"\
+    Point\" name=\"Power\">."
+  Name: Ráfagas de Estrellas Arcoíris
+ShibaiChanwu:
+  Description: "Agrega {Value1:plural one='% |Poción inestable|' other='% |Pociones\
+    \ inestables|'} a la pila de robo.\nAñade {Value2:plural one='% |Sombra|' other='%\
+    \ |Sombras|} a la mano."
+  Name: Producto Fallido
+PotionJungle:
+  Name: Bosque Fluorescente
+  Description: Al final del turno de {PlayerName}, agrega {Value1:plural one='% |Poción
+    inestable|' other='% |Pociones inestables|'} a la pila de descarte.
+MarisaEat:
+  ExtraDescription1: "Ganas {Value1} de |Concentración|.\n|Debut:| Gana {Value2} de\
+    \ vida."
+  Name: Festín de Hongos
+  Description: "Gana {Value1} de |Concentración|.\n|Debut:| Gana {Value2} de vida."
+ScryAttack:
+  FlavorText: La habilidad de encontrar a la Osa Mayor bajo el cielo nocturno se ha
+    perdido en el exterior.
+  Name: Estrella de Navegación
+  Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} |Explora|, devuelve\
+    \ esta carta de la pila de descarte a la mano."
+NightSeeStar:
+  Name: Observación Estelar
+  Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
+HuojianSaoba:
+  Name: Escoba Cohete
+ShinningPotion:
+  Description: "Obtén {Block} de Bloqueo.\nAñade una |Poción inestable| a la pila\
+    \ de robo.\n|Sobrecarga {Value2}:| Agrega 2 en su lugar."
+  Name: Hongo Luminoso
+Yinhe:
+  Name: Vía Láctea
+  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se retiene:| Aumenta el |Bloqueo|\
+    \ de esta carta. por {Value1} en este combate."
+StarSky:
+  Name: Brillante Cielo Estrellado
+PoisonPotion:
+  Name: Caldera de la Bruja
+  Description: "Las |Pociones Inestables| también aplican {Valor1} de |Veneno| cuando\
+    \ se usa.\nAgrega {Value2:plural one='% |Poción inestable|' other='% |Pociones\
+    \ inestables|'} a la pila de robo."
+LearnAstrology:
+  Name: Estudio de Astrología
+  Description: Al comienzo del turno de {PlayerName}, si no hay |Astrologías| en la
+    mano, añade una |Astrología| a la mano.
+  FlavorText: '"¿Por qué ella solo quiere mirar las estrellas en lugar de mí?"'
+CollectionDefense:
+  NonbattleDescription: Obtienes |Bloqueo| igual al número de cartas de la pila de
+    robo.
+  Name: Muy Grande para Fallar
+  Description: Obtienes |Bloqueo| igual al número de cartas de la pila de robo. ({Block})
+  UpgradedDescription: Obtienes |Barrera| igual al número de cartas de la pila de
+    robo. ({Block})
+  UpgradedNonbattleDescription: Obtienes |Barrera| igual al número de cartas de la
+    pila de robo.
+AccuracyLaser:
+  Name: Láser Direccional
+  Description: "Inflige {Damage} de daño {Value1} veces.\n|Cuando se retiene:| Esta\
+    \ carta cuesta {Mana} menos en este combate."
+Alioth:
+  Name: Alioth
+BurstDraw:
+  Name: Duelo de Velocidad
+StarFantasy:
+  Description: "Inflige {Damage} de daño.\n|Cuando se retiene:| Aumenta el daño de\
+    \ esta carta en {Value1} en este combate."
