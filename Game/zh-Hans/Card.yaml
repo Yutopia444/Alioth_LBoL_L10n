@@ -452,7 +452,8 @@ RedLaser:
   Name: 火热射线
   Description: |-
     造成 {Damage} 点伤害。
-    |超载 {Value2} |：造成两次伤害。
+    |超载 {Value2} |：造成 {Value1} 次伤害。
+  UpgradedDescription: 造成 {Damage} 点伤害 {Value1} 次。
   FlavorText: 对策冬日异变的招式之一。
 
 Potion:
@@ -1234,10 +1235,18 @@ SakuyaSpeedup:
   FlavorText: 我在你背后。
 
 SakuyaUsage:
-  Name: 咲夜的正确用法
+  Name: 咲夜的错误用法
   Description: |-
     抽 {Value1} 张牌。
-    第 {Value2} 次打出时：改为|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
+    第 {Value2} 次打出后，移出本场战斗；将一张|咲夜的正确用法|置于抽牌堆顶。
+  ExtraDescription1: |-
+    抽 {Value1} 张牌。
+    第 {Value2} 次打出后，移出本场战斗；将一张|咲夜的正确用法|置于抽牌堆顶。（已打出 {PlayCount} 次）
+  FlavorText: 时停然后把别人搬下楼梯。
+
+SakuyaUsage2:
+  Name: 咲夜的正确用法
+  Description: 结束{PlayerName}的回合，进行一个额外的回合。
   FlavorText: 就是时停做家务。
 
 CirnoAttackU:
