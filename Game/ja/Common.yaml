@@ -1,7 +1,7 @@
 Game:
   Hp: ライフ
   PowerPoint: パワー
-  Money: お金
+  Money: 資金力
   Card: カード
   Level: レベル
   Difficulty: 難易度
@@ -15,9 +15,9 @@ Game:
   EnemyTurn: エネミー
   BattleStart: 戦闘開始
   PlayerTurn: プレイヤー
-  ManaAmountOrder: マナコスト
+  ManaAmountOrder: コスト
   NextSkip: 報酬をスキップ
-  NextStage: 次のActへ
+  NextStage: 次の章へ
   Achievement: 実績
   UnlockLevel: Unlock Level
   IndexOrder: 索引順
@@ -32,6 +32,8 @@ Game:
   RarityOrderExplain: "同じレア度のカードを索引順に表示します。\n同名カードは追加順で並べられます。"
   DiscardZone: 捨て札
   Exhibit: 展示物
+  Title: 東方光耀夜 ~ Lost Branch of Legend
+  ExileZone: 廃棄済
 Explain:
   Title: 説明
   RemiliaMeet: "1．同じコストでカートを交換できる\n2．交換の際、カードのアップグレードは維持したまま"
@@ -41,7 +43,7 @@ UI:
   No: いいえ
   On: オン
   Off: オフ
-  Display: Show
+  Display: 表示
   Setting: 設定
   ExitGame: Exit Game
   Exit: Exit
@@ -57,20 +59,21 @@ UI:
   - '8'
   - '9'
   - '10'
-  Hide: Hide
-  Confirm: 確認
+  Hide: 隠す
+  Confirm: 決定
   Skip: スキップ
   Divide: 、
   Take: 取得
   Cancel: キャンセル
-  Return: バック
+  Return: 戻る
   Close: 閉じる
-  CopyHint: シード値をコピーする
+  CopyHint: シード値をコピーしました
   SaveHint: セーブしました
-  SideCloseHint: Click to close
+  SideCloseHint: クリックで閉じる
+  Hiding: UI非表示
 MainMenu:
   NewGame: New Run
-  Licenses: Licenses
+  Licenses: ライセンス
   SelectProfile: Select Profile
   RestoreGame: Continue Run
   Setting: Settings
@@ -87,7 +90,11 @@ MainMenu:
   StartDate: 作成日
   PlayedTime: プレイ時間
   MusicRoom: Music Room
-  Credits: Credits
+  Credits: クレジット
+  History: プレイ履歴
+  Changelog: 更新内容
+  EarlyAccess: 早期アクセスについて
+  LastPlayed: 最後にプレイ
 StartGame:
   DifficultyTitle: 難易度を選択
   SetSeed: シード値を設定
@@ -96,10 +103,13 @@ StartGame:
   DifficultyHint: 「Slay the Spire」を遊んだことが無い場合、Easyを最初にプレイすることを推奨します。
   NeedClear: 前の難易度クリアでプレイ可能
   CheckDeck: 初期デッキ
-  StartMoney: 所持金
+  StartMoney: 資金力
   CharacterUnset: 主人公を選択
   SkillSpellCard: スペルカード
   Puzzle: 難題
+  Rate: 複雑さ
+  InvalidSeed: 無効なシード値
+  SetJadeBox: 玉匣を設定
 Museum:
   UpgradedFilter: アップグレード
   UnlockAndReveal: 発見したカード
@@ -130,10 +140,10 @@ Setting:
   IllustratorDescription: カードのイラストレーターの名前の表示。
   DontShow: 非表示
   KeywordDescription: "簡潔モードにすると、以下の基本的なキーワードの説明が表示されません。\nゲームに慣れてからの利用をお勧めします。\n\
-    火力、霊力、ブロック、バリア、グレイズ、精確、虹色マナ、アップグレード、能力。"
+    火力、霊力、ブロック、バリア、グレイズ、精確、彩色、アップグレード、能力。"
   RefreshRate: リフレッシュレート
   VideoQuality: 品質
-  TooltipSizeDescription: カードや展示品などのツールチップのサイズ調整。
+  TooltipSizeDescription: カードや展示物などのツールチップのサイズ調整。
   Large: 大
   RandomResult: ランダム抽選の結果表示
   Small: 小
@@ -179,7 +189,7 @@ Setting:
     ToggleMinimize: UIを一時的に隠す
     ShowEnemyMoveOrder: エネミーの行動順を表示（長押し）
     SkipDialog: メッセージのスキップ（長押し）
-    ToggleExileZone: Exileの表示
+    ToggleExileZone: 廃棄済の表示
     ToggleBaseDeck: デッキの表示
     ToggleDrawZone: 山札の表示
     ToggleDiscardZone: 捨て札の表示
@@ -214,7 +224,7 @@ Tooltip:
     Name: 難易度：Hard
   DiscardZone:
     Name: 捨て札
-    Description: "使用した、あるいは捨てたカードをここに置く。\nターン終了時、手札に残ったカードをここに置く。 |d:(「捨てた時」の効果は発動しない)|.\n\
+    Description: "使用した、あるいは捨てたカードをここに置く。\nターン終了時、手札に残ったカードをここに置く。 |d:(「捨てた時」の効果は発動しない)|。\n\
       クリックすることで捨て札のカードを表示する。"
   EndTurn:
     Name: ターン終了
@@ -230,6 +240,9 @@ Tooltip:
   DifficultyNormal:
     Name: 難易度：Normal
     Description: 標準的な難易度。
+  ExileZone:
+    Description: "|廃棄|されたカードをここに置く。\n\nクリックしてこの戦闘中に|廃棄|したカードを見る。"
+    Name: 廃棄済
 BattleHint:
   ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
 History:
