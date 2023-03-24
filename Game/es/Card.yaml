@@ -251,6 +251,7 @@ NewsEntertainment:
   Description: "Roba cartas hasta que la mano esté llena.\n|Limitado【{DeckCounter}】|"
 GroupOfKnife:
   Description: Inflige {Damage} de daño.
+  Name: Cuchillo Afilado Expreso
 MultiShoot:
   Description: Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}.
   Name: Multi Disparo
@@ -352,12 +353,24 @@ MarisaAttackR:
   Name: Impacto de Estrella Caliente
 SakuyaBlockU:
   Description: Obtén {Block} de |Bloqueo|.
+  Name: Anticipar Peligro
 SakuyaAttackW:
   Description: Inflige {Damage} de daño.
+  Name: Lanzamiento Desviado
 SakuyaBlockW:
   Description: Obtén {Block} de |Bloqueo|.
+  Name: Defensa de Llave Negra
 SakuyaUsage:
   FlavorText: Solo detén el tiempo y haz las tareas del hogar.
+  Name: Manual de Sakuya
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando se juega\
+    \ {Value2} veces|: Quita esta carta de esta batalla. Coloca un |Pasos Circulares|\
+    \ en la parte superior de la pila de robo."
+  ExtraDescription1: "Roba {Value1:plural one='% carta' otro='% cartas'}.\n|Cuando\
+    \ se juega por {Value2:ordinal one='%ºra' two='%ºda' few='%ºra' other='%ºta'}\
+    \ vez|: Retira esta carta del combate. Finaliza el turno. Agrega un |Pasos Circulares|\
+    \ a la parte superior de la pila de robo.\n(Se han jugado {PlayCount:plural one='%\
+    \ vez' other='% veces'})."
 XisuiBinbao:
   Description: Inflige {Damage} de daño.
 CallFriend:
@@ -925,6 +938,12 @@ MoguMaster:
     a la mano.
 GainKnife:
   Name: Espada Estrella Danzante
+  UpgradedDescription: "Añade |{Value2:plural one='% Cuchillo arrojadizo' other='%\
+    \ Cuchillos arrojadizos'}| a la mano.\nAl comienzo del turno de {PlayerName},\
+    \ agrega |{Value1:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|\
+    \ a la mano."
+  Description: Al comienzo del turno de {PlayerName}, agrega |{Value1:plural one='%
+    Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano.
 Dejavu:
   Name: Déjà Vu
   Description: "Coloque hasta {Value1:plural one='% carta' other='% cartas'} de la\
@@ -934,6 +953,7 @@ PrivateVision:
   Description: "Descartar una carta.\nObtén {Value1} de |Evasión|."
   UpgradedDescription: "Descartar una carta.\nGana {Value1} de |Evasión|.\nGana {Value1}\
     \ de |Reflejo|."
+  Name: Visión Privada
 KnifeBounce:
   Name: Cuchillos Rebotadores
   Description: "Inflige {Damage} de daño.\nAñade |{Value1:plural one='% Cuchillo arrojadizo'\
@@ -941,6 +961,7 @@ KnifeBounce:
 Lijian:
   Description: "Inflige {Damage} de daño.\n|Cuando se roba:| Esta carta cuesta {Mana}\
     \ menos en este combate."
+  Name: Vista de Hoja Distante
 CoolMaid:
   Description: "Añade |{Value1:plural one='% Cuchillo arrojadizo' other='% Cuchillos\
     \ arrojadizos'}| a la mano.\nGana {Mana}."
@@ -953,3 +974,226 @@ Knife:
   Name: Cuchillo Arrojadizo
   Description: "Inflige {Damage} de daño.\n|Cuando esta carta sale de la mano:| Si\
     \ no se ha jugado, inflige {DropDamage} de daño al enemigo con menos vida."
+SakuyaKiller:
+  Name: Destripadora en la Niebla
+  Description: Al final del turno de {PlayerName} y siempre que un enemigo sea derrotado,
+    agrega |{Value1:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|
+    a la pila de robo.
+SakuyaGoOut:
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nDescarta {Value1}\
+    \ carta{Value1:plural one='' other='s'}.\nGana {Mana}."
+  Name: Preparación de Viaje
+SakuyaSleep:
+  Description: "Añade un |Arcoíris| a la mano.\nTermina el turno de {PlayerName}."
+  Name: Breve Descanso
+SakuyaDefenseRetain:
+  Name: Guardia Arriba
+  Description: "Obtén {Block} de |Bloqueo|.\nEl |Bloqueo| no se pierde de {PlayerName}\
+    \ al comienzo del próximo turno."
+VampireHunter:
+  Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Vampiro|, inflige\
+    \ {Value1} veces más de daño."
+  Name: Cazadora de Vampiros
+MihuanJack:
+  Description: Al comienzo del turno de {PlayerName}, gana {Value1} |Pulso Temporal|.
+  Name: Jack the Ludo Bile
+PrepareParty:
+  Description: "Coloca hasta una carta de la mano en la parte superior de la pila\
+    \ de robo.\nObtén {Block} de |Bloqueo|."
+  Name: Preparando el Banquete
+SakuyaClock:
+  Description: "Inflige {Damage} de daño.\nCuando un enemigo es derrotado usando esta\
+    \ carta, se |Exilia| y finaliza el turno de {PlayerName}. Luego, toma un turno\
+    \ extra."
+  Name: Reloj Especial de Sakuya
+LunaDial:
+  Name: Tiempo Personal
+  Description: "Finaliza el turno. Luego, toma un turno extra.\n|Cuando se roba:|\
+    \ Esta carta cuesta {Mana} menos en este combate."
+SakuyaShop:
+  Name: Compra de Materiales
+  Description: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
+KnifeHell:
+  Name: Elegancia Plateada
+  Description: "Añade |{Value1:plural one='% Cuchillo arrojadizo' other='% Cuchillos\
+    \ arrojadizos'}| a la mano.\nMejora todos los |Cuchillos arrojadizos| en la mano,\
+    \ la pila de robo y la pila de descarte."
+BackOfKnife:
+  Name: Mis Cuchillos Regresaran
+  Description: "Elimina todos los |Cuchillos arrojadizos exiliados| del combate.\n\
+    Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Inflige {Value1} de daño\
+    \ por cada carta eliminada de esa manera."
+StopTime:
+  Name: Tiempo Congelado
+  Description: Cuando termine el turno de {PlayerName}, conserva {Value1} de maná
+    aleatorio sin gastar en lugar de perderlo.
+TimeLord:
+  Description: Gana {Value1} |Pulso Temporal|.
+  Name: Dominación del Tiempo
+TimeWalk:
+  ExtraDescription1: "|d: Finaliza el turno. Luego, {PlayerName} toma un turno extra.|\n\
+    El |Paseo en el Tiempo| pierde todos los efectos por el resto del combate."
+  Description: "Finaliza el turno. Luego, {PlayerName} toma un turno extra.\nEl |Paseo\
+    \ en el Tiempo| pierde todos los efectos por el resto del combate."
+  Name: Paseo en el Tiempo
+LunaClock:
+  Description: Finaliza el turno. Luego, toma un turno extra. Los ataques de {PlayerName}
+    no infligen daño durante ese turno adicional.
+  Name: Reloj Lunar
+PerfectServant:
+  Name: Sirviente Perfecta
+  Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"> gastado:| Al comienzo del próximo turno de {PlayerName}, cada carta\
+    \ en la mano |cuesta temporalmente| 1 maná aleatorio menos.\n|Por cada <sprite=\"\
+    ManaSprite\" name=\"U\"> gastado:| Al comienzo del próximo turno de {PlayerName},\
+    \ gana {Mana} y roba una carta adicional."
+BackToFuture:
+  FlavorText: ¿Carretera? a donde vamos, no necesitamos... carreteras.
+  Description: "Intercambia las pilas para robar y descartar.\nRoba {Value1:plural\
+    \ one='% carta' other='% cartas'}."
+  Name: Regreso al Futuro
+EvilMaid:
+  Description: "Pierde {Value1} de vida.\nDurante el próximo turno de {PlayerName},\
+    \ todos los |Ataques| hacen el doble de daño."
+  Name: Sirvienta del Demonio
+SakuyaDetective:
+  Name: Rastreando al Culpable
+  Description: "Cuando luches contra el verdadero culpable, inflige {Value1} de daño\
+    \ al comienzo de la batalla.\n(Se han acumulado {BossDamage} de daño)"
+  FlavorText: Aunque es posible que lo hayas olvidado, este juego es en realidad un
+    juego de investigación criminal.
+TimeAuraAttack:
+  Name: Magia del Tiempo
+  Description: "Inflige {Damage} de daño.\nGana {Value1} |Pulso Temporal|."
+LightSpeed:
+  Name: Rebote de Luz Plateada
+  Description: "Inflige {Damage} de daño.\nSi se descartó una carta en este turno,\
+    \ gana {Mana}."
+SilverBlade:
+  Name: Dimensión Plateada
+  Description: Cada vez que se usa una carta de ataque, obtén {Value1} de |Barrera|.
+ClockCorpse:
+  Name: Reloj Muerto
+  Description: Finaliza el turno. Luego, toma un turno extra. No se pueden robar cartas
+    fuera de la fase de robo durante ese turno.
+ExtraTurnEveryone:
+  Name: Expansión del Espacio Tiempo
+  Description: "Finaliza el turno. Luego, toma un turno extra.\nLos enemigos también\
+    \ toman un turno extra la próxima vez que es su turno."
+SakuyaTea:
+  ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|d:Debut:|\
+    \ Gana {Value2} de vida. Esta carta cuesta {Mana} menos en este combate."
+  Name: Preparar el Té
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Debut:| Gana\
+    \ {Value2} de vida. Esta carta cuesta {Mana} menos en este combate."
+AttackMagic:
+  Description: "Inflige {Damage} de daño.\nRoba {Value1:plural one='% carta' other='%\
+    \ cartas'}.\nAñade {Value2} |{Value2:plural one='Cuchillo arrojadizo' other='Cuchillos\
+    \ arrojadizos'}| a la mano."
+  Name: Proyectiles Astutos
+CleanRoom:
+  Description: "Descartar una carta.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
+    |Mejora| {Value2:plural one='% carta aleatoria' other='% cartas aleatorias'} de\
+    \ la mano hasta el final del combate. Si de esta manera un |Cuchillo arrojadizo|\
+    \ fue descartado, se |Mejoran| todas las cartas de la mano hasta el final del\
+    \ combate."
+  Name: Limpieza de Habitación
+DangerousMagician:
+  Description: "Siempre que un |Cuchillo arrojadizo| se utiliza, gane {Value1} |Pulso\
+    \ Temporal|.\nAñade {Value2} |{Value2:plural one='Cuchillo arrojadizo' other='Cuchillos\
+    \ arrojadizos'}| a la pila de robo."
+  Name: Ilusionista Peligrosa
+AutoKnife:
+  Name: Cuchillo de Plata Embrujado
+  Description: "Todos los |Cuchillos arrojadizos| ganan |Auto Exilio| hasta el final\
+    \ del combate.\nAgrega {Value1) {Value1:plural one='Cuchillo Arrojadizo' other='Cuchillos\
+    \ Arrojadizos'} a la mano."
+SakuyaDraw:
+  Name: Conseguir la Perfección
+  Description: "|Cuando se descarta:| Roba {Value1:plural one='% carta' other='% cartas'}."
+ShengquanZaiwo:
+  Name: Apuesta Segura
+  Description: Gana {Mana}.
+DropToKnife:
+  Name: Fortaleza de Plata
+  Description: "Descarta {Value1} carta{Value1:plural one='' other='s'}.\nAñade esa\
+    \ misma cantidad de |Cuchillos arrojadizos| a la mano."
+BrokenTimeline:
+  Name: Línea Temporal Rota
+  FlavorText: No puedo aguantar en esta línea temporal, siguiente partida.
+  Description: Finaliza el turno. Luego, toma un turno extra. No obtienes maná del
+    maná base al comienzo de ese turno.
+SakuyaSpeedup:
+  Name: Acelerar el Tiempo
+  Description: Duplica el |Pulso Temporal| actual.
+DefenseDraw:
+  Name: Ciclo Lunar
+  Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1:plural one='% carta' other='%\
+    \ cartas'}.\n|Cuando se roba:| Esta carta cuesta {Mana} menos en este combate."
+ExileMagic:
+  Name: Magia Cambiante
+  Description: "|Exilia| hasta {Value1:plural one='% carta' other='% cartas'} de la\
+    \ mano. Añade esa cantidad de |Cuchillos arrojadizos| a la mano."
+SakuyaInvestigate:
+  Name: Detective de Parada de Tiempo
+  Description: "Aplica {Value1} |Marcado|.\nAl comienzo de cada turno extra, devuelve\
+    \ esta carta del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
+SakuyaAttackX:
+  Name: Propulsión Plateada
+  Description: '|Por cada {Mana} gastado:| Inflige {Damage} de daño.'
+SakuyaGraze:
+  Description: "Obtén {Shield} de |Barrera|.\nObtén {Value1} de |Evasión|.\nCuando\
+    \ se baraja la pila de robo, devuelve esta carta a la mano en lugar de la pila\
+    \ de robo."
+  Name: Evasión Accidental
+SakuyaFuneral:
+  Name: Entierro Prematuro
+  FlavorText: '"Todavía no estoy muerta, mi señora."'
+  Description: "Pierde {Value1} de vida.\nElige un carta |Exiliada|. Devuélvelo a\
+    \ la mano, |cuesta temporalmente| {Mana}."
+FakeTimeline:
+  Description: "Obtén {Block} de |Bloqueo|.\nInflige {Damage} de daño a cada enemigo.\n\
+    Gana {Value1} |Pulso Temporal|."
+  Name: Línea de Tiempo Imaginaria
+LoyalMaid:
+  Name: Sirvienta Leal
+  Description: "Obtén {Shield} de |Barrera|.\nAl comienzo de cada turno extra, devuelve\
+    \ esta carta de la pila de descarte a la mano. Cuesta |temporalmente| {Mana}."
+SpecialClock:
+  Name: Trucos de la Doncella
+  Description: Al comienzo del turno de {PlayerName}, descarta hasta 1 carta, Después
+    roba esa misma cantidad de cartas.
+  FlavorText: 'Tiempo de limpieza de la sala de descanso: 0,4 segundos'
+SakuyaDio:
+  Name: Tu eres el Siguiente
+  Description: "Cuando un |Cuchillo arrojadizo| es usado, aplica {Value1} |Marcado|.\n\
+    Finaliza el turno. Luego, {PlayerName} toma un turno extra. Durante ese turno,\
+    \ añade |{Value2:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|\
+    \ a la mano en lugar de robar cartas durante el fase de robo."
+TunnelEffect:
+  Name: Túnel Cuántico
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio.\nGana {Mana}.\nCuando\
+    \ se baraja la pila de robo, devuelve esta carta a la mano en lugar de la pila\
+    \ de robo."
+SakuyaWeak:
+  Name: Supresión del Tiempo
+  Description: "Aplica {Value1} |Débil|.\nGana {Mana}."
+SakuyaTwiceAttack:
+  Description: "Inflige {Damage} de daño a cada enemigo {Value1:plural one='% vez'\
+    \ other='% veces'}.\nAñade |{Value2:plural one='% Cuchillo arrojadizo' other='%\
+    \ Cuchillos arrojadizos'}| a la pila de descarte."
+  Name: Rebote Luminoso
+SilverBullet:
+  Name: Balas de Plata
+  Description: Inflige {Damage} de daño a cada enemigo.
+SilverJump:
+  Name: Cuchillo de Damocles
+  Description: "Aplica {Value1} |Vulnerable|.\nAñade |{Value2:plural one='% Cuchillo\
+    \ arrojadizo' other='% Cuchillos arrojadizos'}| a las pilas de robo y descarte."
+BladePower:
+  Name: Carrera Deslumbrante
+  Description: "Gana {Value1} |Poder|.\n|Cuando se roba:| Si esta carta es la única\
+    \ carta en la mano, |cuesta temporalmente| {Mana}."
+SakuyaUsage2:
+  Name: Pasos Circulares
+  Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
