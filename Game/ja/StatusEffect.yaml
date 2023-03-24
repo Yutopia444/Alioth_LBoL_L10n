@@ -1,5 +1,7 @@
 Graze:
   Name: グレイズ
+  Brief: "{OwnerName}が受けるダメージを 0 にする。\n攻撃されるかターン開始時に 1 減少する。"
+  Description: "{OwnerName}が受けるダメージを 0 にする。残り {Level} 回有効。\n攻撃されるかターン開始時に 1 減少する。"
 Reflect:
   Name: 反射
 GuangxueMicai:
@@ -20,24 +22,44 @@ Interview:
   Name: 取材中
 Firepower:
   Name: 火力
+  Description: "{Level} 点の火力を得る。\n火力は攻撃のダメージを増加させる。"
+  Brief: "火力を得る。\n火力は攻撃のダメージを増加させる。"
 TempFirepower:
   Name: 臨時火力
+  Description: "ターン終了まで {Level} 点の火力を得る。\n火力は攻撃のダメージを増加させる。"
+  Brief: "ターン終了まで火力を得る。\n火力は攻撃のダメージを増加させる。"
 TempFirepowerNegative:
   Name: 臨時火力ダウン
+  Description: "ターン終了まで {Level} 点の火力を失う。\n火力は攻撃のダメージを増加させる。"
+  Brief: "ターン終了まで火力を失う。\n火力は攻撃のダメージを増加させる。"
 FirepowerNegative:
   Name: 火力ダウン
+  Description: "{Level} 点の火力を失う。\n火力は攻撃のダメージを増加させる。"
+  Brief: "火力を失う。\n火力は攻撃のダメージを増加させる。"
 TempSpirit:
   Name: 臨時霊力
+  Description: "ターン終了まで {Level} 点の霊力を得る。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
+  Brief: "ターン終了まで霊力を得る。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
 Spirit:
   Name: 霊力
+  Description: "{Level} 点の霊力を得る。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
+  Brief: "霊力を得る。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
 TempSpiritNegative:
   Name: 臨時霊力ダウン
+  Description: "ターン終了まで {Level} 点の霊力を失う。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
+  Brief: "ターン終了まで霊力を失う。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
 SpiritNegative:
   Name: 霊力ダウン
+  Description: "{Level} 点の霊力を失う。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
+  Brief: "霊力を失う。\n霊力は得られる|ブロック|、|バリア|を増加させる。"
 Weak:
   Name: 脱力
+  Description: '{OwnerName}の攻撃ダメージが {Value}%減少する。残り {Duration} ターン持続。'
+  Brief: '{OwnerName}の攻撃ダメージが {Value}%減少する。'
 Fragil:
   Name: 脆弱化
+  Description: '{PlayerName}が得る|ブロック|と|バリア|が {Value}%減少する。残り {Duration} ターン持続。'
+  Brief: '{PlayerName}が得る|ブロック|と|バリア|が {Value}%減少する。'
 TempMagic:
   Name: 臨時魔力
 Magic:
@@ -48,8 +70,12 @@ MagicNegative:
   Name: 魔力ダウン
 Vulnerable:
   Name: 弱体
+  Description: '{OwnerName}が受けるダメージが {Value}%増加する。残り {Duration} ターン持続。'
+  Brief: '{OwnerName}が受けるダメージが {Value}%増加する。'
 Invincible:
   Name: 天衣無縫
+  Brief: '{OwnerName}は一ヒットにつき 1 ダメージ以上受けない。'
+  Description: '{OwnerName}は一ヒットにつき 1 ダメージ以上受けない。残り {Duration} ターン持続。'
 TurnStartDontLoseBlock:
   Name: ブロック保留
 Burst:
@@ -62,3 +88,15 @@ KokoroXi:
   Name: 喜
 InterviewDone:
   Name: 取材完遂
+LockedOn:
+  Name: ロックオン
+  Description: "{OwnerName}が受けるダメージが {Level} 点増加する。\n各ターン開始時に 1 減少する。"
+  Brief: "{OwnerName}が受けるダメージが数値分増加する。\n各ターン開始時に 1 減少する。"
+ExtraTurn:
+  Name: 追加ターン
+  Description: '{OwnerName}のターン終了時、追加のターンを得る。残り {Level} 回有効。'
+  Brief: '{OwnerName}のターン終了時、追加のターンを得る。'
+LimitedDamage:
+  Name: 道具の解放者
+  Brief: '{OwnerName}は各ターンにつき一定のダメージしか受けない。'
+  Description: '{OwnerName}は各ターンにつき最大 {Limit} 点のダメージしか受けない。このターンの上限まで残り {Count} 点。'
