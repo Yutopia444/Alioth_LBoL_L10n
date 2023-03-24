@@ -6,7 +6,7 @@ Game:
   Level: レベル
   Difficulty: 難易度
   Deck: デッキ
-  ExtraTurn: Extra
+  ExtraTurn: 追加ターン
   TurnCounter: ターン {0}
   Next: 進む
   EndTurn: ターン終了
@@ -19,7 +19,7 @@ Game:
   NextSkip: 報酬をスキップ
   NextStage: 次の章へ
   Achievement: 実績
-  UnlockLevel: Unlock Level
+  UnlockLevel: 調査レベル
   IndexOrder: 索引順
   TypeOrder: 種類順
   ActualOrder: 追加順
@@ -40,6 +40,20 @@ Explain:
   SaveWhenSelect: セーブ
   LoseShinning: 操作キャラクターの専用カードは対応する展示物を持っていなくても出現する。
   ShinmyoumaruForge: 攻撃カードは攻撃カードに、防御カードは防御カードに変化する。
+  RollCard: "カード報酬のルール：\n\n報酬で出現するカードは、以下のすべての条件を満たしている必要があります。\n1. マナ基盤の範囲(数)でそのカードを使用できる。\n\
+    2. キャラクター専用のカードの場合、そのキャラクターでプレイしているか、そのキャラクターのカードが報酬に追加される展示物(ボス報酬)を持っている。\n3.\
+    \ マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の耀展品(ボス報酬)を所有していると：黑暗魔导书、贤者之石、万宝槌\n\
+    マナ基盤は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
+    C\">計7点で、霊夢専用、魔理沙専用、共通のカードを獲得できます。\n\nこのときコストが<sprite=\"ManaSprite\" name=\"B\"\
+    ><sprite=\"ManaSprite\" name=\"B\">の黒のカードは取得できます。マナ基盤にコストを支払うのに十分な量<sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\">があるからです。\n<sprite=\"\
+    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\">のコストを持つ青と黒のカードは、<sprite=\"\
+    ManaSprite\" name=\"U\">を持っていないため、<sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\">でコストを支払えても取得できません。\nこれは彩色マナがカードプールを混乱させて、「贤者之石」をピックしたくないという事態を防ぐためです。\n\
+    \nボス報酬「空白卡牌」はルール3を直接無効にします。\nコストの合計が5以上のカードで、数字部分<sprite=\"ManaSprite\" name=\"\
+    X\">を含めると現在のマナ基盤で支払うことのできないカードはルール１の対象外です。数字部分を軽減する方法は多くあります。"
 UI:
   Yes: はい
   No: いいえ
