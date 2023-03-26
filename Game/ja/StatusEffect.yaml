@@ -4,22 +4,33 @@ Graze:
   Description: "{OwnerName}が受けるダメージを 0 にする。残り {Level} 回有効。\n攻撃されるかターン開始時に 1 減少する。"
 Reflect:
   Name: 反射
+  Description: 攻撃してきた相手に {Level} 点のダメージを与え、この効果を取り除く。
+  Brief: 攻撃してきた相手にダメージを与え、この効果を取り除く。
 GuangxueMicai:
-  Name: 光学迷彩
+  Name: オプティカルカモフラージュ
+  Description: '{OwnerName}が受けるダメージが半減する。残り {Duration} ターン持続。'
+  Brief: '{OwnerName}が受けるダメージが半減する。'
 Vampire:
   Name: 吸血鬼
+  Description: '{OwnerName}がブロックされていないダメージを与えたとき、同量のライフを回復する。こわい！'
+  Brief: '{OwnerName}がブロックされていないダメージを与えたとき、同量のライフを回復する。こわい！'
 Fengyin:
   Name: 封印
 TimeIsLimited:
   Name: 時間制限
+  Brief: 次の相手ターンまで、カードの使用コストが増加する。
+  Description: 次の相手ターンまで、カードの使用コストが{Mana}増加する。
 Servant:
   Name: 使い魔
+  Description: "操り主を倒したとき、全ての使い魔も倒される。\n敵を倒したことによる効果が発生しない。"
 WindGirl:
-  Name: 風人少女
+  Name: 風神少女
+  Description: '{OwnerName}のターン終了時、|グレイズ|が {Level} まで補充される。'
 RinAura:
   Name: 灼熱地獄
 Interview:
   Name: 取材中
+  Description: '{OwnerName}は事件の最前線でインタビュー中。'
 Firepower:
   Name: 火力
   Description: "{Level} 点の火力を得る。\n火力は攻撃のダメージを増加させる。"
@@ -78,6 +89,8 @@ Invincible:
   Description: '{OwnerName}は一ヒットにつき 1 ダメージ以上受けない。残り {Duration} ターン持続。'
 TurnStartDontLoseBlock:
   Name: ブロック保留
+  Description: '{OwnerName}の次のターン開始時、|ブロック|が失われない。残り {Level} ターン持続。'
+  Brief: '{OwnerName}の次のターン開始時、|ブロック|が失われない。'
 Burst:
   Name: バースト
 RinSummon:
@@ -88,6 +101,7 @@ KokoroXi:
   Name: 喜
 InterviewDone:
   Name: 取材完遂
+  Description: "{OwnerName}は事件の真相をまとめあげた！\n彼女は《文文。新聞》号外を発行する。"
 LockedOn:
   Name: ロックオン
   Description: "{OwnerName}が受けるダメージが {Level} 点増加する。\n各ターン開始時に 1 減少する。"
@@ -100,3 +114,112 @@ LimitedDamage:
   Name: 道具の解放者
   Brief: '{OwnerName}は各ターンにつき一定のダメージしか受けない。'
   Description: '{OwnerName}は各ターンにつき最大 {Limit} 点のダメージしか受けない。このターンの上限まで残り {Count} 点。'
+Amulet:
+  Name: アミュレット
+  Description: 次の {Level} 回のデバフを無効化する。
+  Brief: デバフの付与を無効化する。
+AmuletForCard:
+  Name: 庇護
+  Description: 次の {Level} 回の状態異常カードの追加を無効化する。（それらを|廃棄|する）。
+  Brief: 状態異常カードの追加を無効化する。（それらを|廃棄|する）。
+Electric:
+  Name: 帯電
+  Description: 攻撃してきた相手に {Level} 点のダメージを与える。
+  Brief: 攻撃してきた相手にダメージを与える。
+TempElectric:
+  Name: 帯電
+  Brief: "攻撃してきた相手にダメージを与える。\n{OwnerName}のターン開始時にこの効果は取り除かれる。"
+  Description: "攻撃してきた相手に {Level} 点のダメージを与える。\n{OwnerName}のターン開始時にこの効果は取り除かれる。"
+NextAttackUp:
+  Name: 攻撃ダメージ増加
+  Description: 次に使用する|攻撃カード|のダメージが {Level} 点増加する。
+  Brief: 次に使用する|攻撃カード|のダメージが増加する。
+NextTurnLoseRandomMana:
+  Name: 次ターンマナ喪失
+  Brief: '{OwnerName}の次のターン、ランダムなマナを失う。'
+  Description: '{OwnerName}の次のターン、 {Level} 点のランダムなマナを失う。'
+NextTurnLoseHp:
+  Name: 次ターンライフ喪失
+  Description: '{OwnerName}の次のターン開始時、 {Level} 点のライフを失う。'
+  Brief: '{OwnerName}の次のターン開始時、ライフを失う。'
+NextTurnGainBlock:
+  Name: 次ターンブロック
+  Description: '{OwnerName}の次のターン開始時、 {Level} 点の|ブロック|を得る。'
+  Brief: '{OwnerName}の次のターン開始時、|ブロック|を得る。'
+NextTurnGainShield:
+  Name: 次ターンバリア
+  Description: '{OwnerName}の次のターン開始時、 {Level} 点の|バリア|を得る。'
+  Brief: '{OwnerName}の次のターン開始時、|バリア|を得る。'
+CantDrawThisTurn:
+  Name: ドロー無効
+  Description: ターン終了までドローできない。
+  Brief: ターン終了までドローできない。
+NoAttackDamageThisTurn:
+  Description: このターン中、攻撃ダメージを与えられない。
+  Brief: このターン中、攻撃ダメージを与えられない。
+  Name: 時空破損
+CantDrawNextTurn:
+  Name: 次ターンドロー無効
+  Description: 次のターンのドローフェイズ終了後、ターン終了までドローできない。
+  Brief: 次のターンのドローフェイズ終了後、ターン終了までドローできない。
+NoAttackDamageNextTurn:
+  Name: 次ターン時空破損
+  Description: 次のターン中、攻撃ダメージを与えられない。
+  Brief: 次のターン中、攻撃ダメージを与えられない。
+MaoyuBlock:
+  Name: ふかふか
+  Description: '{OwnerName}が攻撃されたとき {Level} 点の|ブロック|を得る。'
+DeathExplodeNotCount:
+  Name: 撃ち返し弾
+  Description: "{OwnerName}が倒されたとき、{PlayerName}に {Level} 点のダメージを与える。\n起爆されたとき、 2 倍のダメージを与える。"
+Drowning:
+  Name: 溺水
+  Description: '{OwnerName}のターン終了時、 {Level} 点のダメージを受ける。'
+  Brief: '{OwnerName}のターン終了時、ダメージを受ける。'
+DeathExplodeCount:
+  Description: "{OwnerName}が倒されたとき、{PlayerName}に {Level} 点のダメージを与える。\n{Count} ターン後に起爆され、\
+    \ 2 倍のダメージを与える。"
+  Name: 撃ち返し弾
+PhoneBillSe:
+  Name: 電話代
+  Description: "{OwnerName}が通話する度に、{PlayerName}から {Level} 点の<sprite=\"Point\" name=\"\
+    Gold\">が課金される。\n倒されたとき {Count} 点の<sprite=\"Point\" name=\"Gold\">をドロップする。"
+Lunatic:
+  Description: "不思議な光が辺りの全員に影響を与えている。{OwnerName}は狂い、行動が強化される。\n{PlayerName}はターン開始時に{Mana}を得る。"
+  Name: 狂気
+NoBaseManaNextTurn:
+  Description: 次ターン開始時、マナ基盤からマナを得られない。
+  Name: 次ターン壊れた時間軸
+  Brief: 次ターン開始時、マナ基盤からマナを得られない。
+DroneBlock:
+  Brief: '{OwnerName}のターン終了時、|ブロック|を得る。'
+  Name: ディフェンスマトリックス
+  Description: '{OwnerName}のターン終了時、 {Level} 点の|ブロック|を得る。'
+LoveGirlDamageReduce:
+  Description: '{OwnerName}には未だ叶わぬ願いがあり、受けるダメージが {Rate}% 軽減される。'
+  Name: 浮き世への未練
+LoveGirlDamageIncrease:
+  Description: '{OwnerName}の願いは叶った。彼女が受けるダメージが {Rate}% 増加する。'
+  Name: 揺らぐ心
+NoBaseManaThisTurn:
+  Name: 壊れた時間軸
+  Description: ターン開始時、マナ基盤からマナを得られない。
+  Brief: ターン開始時、マナ基盤からマナを得られない。
+DeathVulnerable:
+  Name: 病気
+  Description: '{OwnerName}が倒されたとき、{PlayerName}は {Level} ターン分の|弱体|を得る。'
+AbsorbPower:
+  Name: 赤陰陽玉の力
+  Description: '{OwnerName}のターン終了時、 {Level} 点の|火力|を得る。'
+LunaticTorch:
+  Name: 狂気の松明
+  Description: "{OwnerName}の松明が奇妙な光を放っている。すべての敵は|狂気|状態に陥る。\n{PlayerName}はターン開始時に{Mana}を得る。"
+AbsorbSpirit:
+  Name: 青陰陽玉の力
+  Description: '{OwnerName}のターン終了時、 {Level} の|霊力|を得る。'
+FoxCharm:
+  Name: 妖狐の魅惑
+  Description: "一ターンに {Limit} 枚のカードしか使えない。残り {Count} 枚。\n妖狐を倒すとこの効果は消える。"
+DeathPoison:
+  Name: ポイズンデス
+  Description: '{OwnerName}が倒されたとき、{PlayerName}は {Level} 点の|毒|を得る。'
