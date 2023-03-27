@@ -296,6 +296,8 @@ VampireShoot2:
   Description: "Inflige {Damage} de daño.\nGana {Value1} de vida."
 WanderingSoul:
   Name: Alma Errante
+  Description: "Gana |Perfección| por {Value1} turno{Value1:plural one='' other='s'}.\n\
+    |d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en una futura actualización!|"
 RabbitFoot:
   Name: Pata de Conejo de la Suerte
   Description: '|Al final del combate:| Si esta carta no está |Exiliada|, gana {Value1}<sprite="Point"
@@ -368,7 +370,7 @@ SakuyaUsage:
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando se juega\
     \ {Value2} veces|: Quita esta carta de esta batalla. Coloca un |Pasos Circulares|\
     \ en la parte superior de la pila de robo."
-  ExtraDescription1: "Roba {Value1:plural one='% carta' otro='% cartas'}.\n|Cuando\
+  ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando\
     \ se juega por {Value2:ordinal one='%ºra' two='%ºda' few='%ºra' other='%ºta'}\
     \ vez|: Retira esta carta del combate. Finaliza el turno. Agrega un |Pasos Circulares|\
     \ a la parte superior de la pila de robo.\n(Se han jugado {PlayCount:plural one='%\
@@ -971,7 +973,7 @@ CoolMaid:
 SakuyaSnow:
   Name: Resolución de Invierno
   Description: "Obtén {Block} de |Bloqueo|.\nAñade |{Value1:plural one='% Cuchillo\
-    \ Arrojadizo' otro='% Cuchillos Arrojadizos'}| a la mano."
+    \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano."
 Knife:
   Name: Cuchillo Arrojadizo
   Description: "Inflige {Damage} de daño.\n|Cuando esta carta sale de la mano:| Si\
@@ -1389,8 +1391,8 @@ HinaAttack:
     Por cada |Desgracia| en la biblioteca, esta carta inflige daño una vez más."
 BlackHorseZui:
   Name: Pecado del Caballo Negro
-  Description: "Pierde {Value1} de vida.\nInflige {Daño} de daño a cada enemigo {Value2:plural\
-    \ one='% vez' other='% veces'}."
+  Description: "Pierde {Value1} de vida.\nInflige {Damage} de daño a cada enemigo\
+    \ {Value2:plural one='% vez' other='% veces'}."
 YinglangHowl:
   Description: Aplica {Value1} de |Reducción de Poder Temporal| y {Value2} de |Vulnerable|
     a cada enemigo.
@@ -1609,7 +1611,7 @@ RangziFanshu:
   Name: Dulce Dulce Patata
 YukariBox:
   Name: '"Regalos" Entragados'
-  Description: "|Explora| {Scry}.\nRoba {Valor1:plural one='% carta' other='% cartas'}.\n\
+  Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
     Baraja la pila de descarte en la pila de robo."
 YijiuAttack:
   Description: "Inflige {Damage} de daño.\nCuando un enemigo es derrotado usando esta\
@@ -1652,7 +1654,7 @@ CloseEyeShoot:
     vez' other='% veces'}
 FlanPlayAlone:
   Name: Jugar Solo
-  Description: "Obtén {Valor1} de |Poder Temporal|.\nDescarta todas las cartas que\
+  Description: "Obtén {Value1} de |Poder Temporal|.\nDescarta todas las cartas que\
     \ no sean de ataque de la mano."
 FangxiangHeal:
   Name: Devorar Deseos
@@ -1665,7 +1667,7 @@ HehuanAttack:
     Roba {Value1:plural one='% carta' other='% cartas'}."
 QingeHeal:
   Name: Necromancia
-  Description: "Obtén {Valor1} de |Poder Temporal|.\nGana {Valor2} de vida. Al comienzo\
+  Description: "Obtén {Value1} de |Poder Temporal|.\nGana {Value2} de vida. Al comienzo\
     \ del próximo turno de {PlayerName}, pierde {Value2} de vida."
   FlavorText: '"¡Te has potenciado ¡Entra ahí!"'
 HekaHellRain:
@@ -1674,10 +1676,11 @@ HekaHellRain:
   Name: Lluvia del Infierno
 FourFlan:
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
-    |Al comienzo del combate:| Añade {Valor2} |copias| de esta carta a la pila de\
+    |Al comienzo del combate:| Añade {Value2} |copias| de esta carta a la pila de\
     \ robo. Las copias no tienen este efecto, cuestan {Mana} teniendo |Exilio| y |Etéreo|."
   ExtraDescription1: Inflige {Damage} de daño {Value1:plural one='% vez' other='%
     veces'}.
+  Name: Cuatro de uno Mismo
 ReisenAttack:
   Description: '|Por cada {Mana} gastado:| Inflige {Damage} de daño a cada enemigo.'
   Name: Sueño Lunático
@@ -1688,3 +1691,130 @@ RinDraw:
   FlavorText: Los gatos son buenos para hablar con cosas raras.
 KongMana:
   Name: Derretir el Núcleo
+  Description: "|Exilia| una carta de la mano. Gana maná igual al costo de esa carta.\n\
+    Añade un |Arcoíris| a la mano."
+FangxiangAttack:
+  Description: "Si el objetivo está |Envenenado|, inflige {Damage} daño {Value2} {Value2:plural\
+    \ one='vez' other='veces'}.\nDe lo contrario, aplica {Value1} de |Veneno|."
+  Name: Toxina Devastadora
+JunkoNightmare:
+  Description: "|d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en\
+    \ una futura actualización!|"
+  Name: Pesadilla Escalofriante
+ZoufangWater:
+  Name: Agua Cristalina de Suwa
+  Description: "Inflige {Damage} de daño {Value1} veces.\nEste daño se incrementa\
+    \ en {Value2} por cada carta de |Habilidad| jugada en este combate. ({AdditionalDamage})"
+LigeluCard:
+  Description: "Obtén {Block} de |Bloqueo|.\nGana {Value1} <sprite=\"Point\" name=\"\
+    Power\">."
+  Name: Noche Luminiscente
+JingyeGraze:
+  Name: Frenética Caída de Hojas
+  Description: "Obtén {Value1} de |Evasión|.\nObtén {Value2} de |Poder Temporal| por\
+    \ cada |Evasión| que {PlayerName} tiene."
+MeilingAbility:
+  Name: Puño de Arcoíris Vibrante
+  Description: "{PlayerName} gana el doble de |Poder| y |Poder Temporal|.\nObtén {Value1}\
+    \ de |Poder|."
+TodayYesterday:
+  Name: Gensokyo, Pasado y Presente
+  Description: "Siempre que {PlayerName} |Evada| un ataque, gana {Value1} de |Poder|.\n\
+    Obtén {Value2} de |Evasión|."
+FakeHuiye:
+  Description: "|d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en\
+    \ una futura actualización!|"
+  Name: Cuento del Cortador de Bambú (Forjado)
+LilyChun:
+  Name: ¡La Primavera ha Llegado!
+  Description: Añade {Value1} {Value1:plural one='carta aleatoria' other='cartas aleatorias'}
+    que {Value1:plural one='tiene' other='tienen'} un costo total de 1 en la mano.
+    {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|.
+  UpgradedDescription: Añade {Value1} {Value1:plural one='carta aleatoria' other='cartas
+    aleatorias'} que {Value1:plural one='tiene' other='tienen'} un costo total de
+    1 en la mano. |{Value1:plural one='cuesta' other='cuestan'} temporalmente| {Mana}
+    y {Value1:plural one='tiene' other='tienen'} |Exilio| y |Etéreo|.
+PaluxiCurse:
+  Name: Regreso del Rencor
+  Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil| y |Vulnerable|.\n\
+    Añade una |Desgracia| al azar a la pila de descarte. |d:(No permanecerá en la\
+    \ biblioteca después de este combate.)|"
+MeilingRain:
+  Description: "Inflige {Damage} de daño a cada enemigo {AttackTimes} {Damage:plural\
+    \ one='vez' other='veces'}.\n|Por cada {Mana} gastado:| Inflige ese daño a cada\
+    \ enemigo una vez más."
+  Name: Lluvia de Colores Vivos
+MedicineGarden:
+  Description: "Cada enemigo gana {Value1} de vida.\nAplica {Value1} de |Veneno| a\
+    \ cada enemigo."
+  Name: Jardín Melancólico
+ZoufangSnake:
+  Name: Fe de la Diosa Nativa
+  Description: "Pierde {Value1} de vida.\nElige 1 de {Value2} cartas de |Habilidad|\
+    \ raras neutrales aleatorias para añadirla a la mano. |Cuesta temporalmente| {Mana}."
+YachieDefend:
+  Name: Caparazón de Tortuga Infernal
+  Description: "Evita que {Value1:plural one='la siguiente % vez' other='las siguientes\
+    \ % veces'} {PlayerName} pierda vida.\nSi esa pérdida de vida fue de un enemigo,\
+    \ pierde esa cantidad de vida."
+LimaoAttack:
+  Name: Pompokolín de Luna Llena
+  Description: "Inflige {Damage} de daño a cada enemigo. Gana {Mana}.\n|Crecimiento:|\
+    \ Esta carta da {Mana} más."
+RuowujiCard:
+  Name: Olas de Escala Invertida
+  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica {Value1} de |Ahogar|."
+PrismriverAll:
+  Name: Concierto Prismiriver
+  Description: "Gana {Mana}.\nConvierte todo el maná que {PlayerName} ganaría en este\
+    \ combate en <sprite=\"ManaSprite\" name=\"P\">.\nAgrega una |Luz Solar Refractada|,\
+    \ |Luz Lunar Serena| y |Luz Estelar Glamorosa| a la pila de descarte."
+  UpgradedDescription: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
+    Convierte todo el maná que {PlayerName} ganaría en este combate en <sprite=\"\
+    ManaSprite\" name=\"P\">.\nAgrega una |Luz Solar Refractada|, |Luz Lunar Serena|\
+    \ y |Luz Estelar Glamorosa| a la pila de descarte."
+Shengyan:
+  Description: "Inflige {Damage} de daño.\n|Exterminar:| Gana {Value1} de vida máxima."
+  Name: Festín
+BlackPoison:
+  Name: Bailar en la Oscuridad
+  Description: Siempre que {PlayerName} inflija daño de ataque no bloqueado, aplica
+    {Value1} de |Veneno| a ese enemigo.
+Zhulianshen:
+  Name: Shimenawa de la Diosa
+  Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Protección|."
+FengleiCard:
+  Name: Orbe de Viento y Trueno
+  Description: Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'
+    other='veces'}.
+YinyangQueen:
+  Description: Añade {Value1} {Value1:plural one='aleatorio' other='aleatorios'} |{Value1:plural
+    one='Orbe' other='Orbes'} Yin-Yang de Arcoíris| a la mano.
+  Name: Reina del Orbe Yin-Yang
+ShuihuoCard:
+  Name: Orbe de Agua y Fuego
+  Description: "Inflige {Damage} de daño.\nObtén {Block} de |Bloqueo|."
+SanaeRice:
+  Name: Cosecha de Arroz Abundante
+  Description: "Elimina todas los debuff de {PlayerName}.\nGana {Value1} de vida."
+ModuoluoFire:
+  Name: Fuego de Ena
+  Description: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige {Value1}
+    de daño a cada enemigo.
+SakuraBlade:
+  Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
+    Obtén {Value1} de |Bloqueo|.\nAplica {Value1} de |Marcado|."
+  Name: Flor de Cerezo Centelleante
+ShanyuCard:
+  Name: Orbe de Montaña y Lluvia
+  Description: "Obtén {Block} de |Bloqueo|.\nObtén {Shield} de |Barrera|."
+SkyWater:
+  Name: Milagro del Agua Celestial
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nAl final del\
+    \ turno de {PlayerName}, obtén {Value2} de |Bloqueo| por cada carta descartada\
+    \ al finalizar el turno."
+LifeGame:
+  Name: Juego de la Vida
+  Description: "Devuelve todas las cartas de la mano y la pila de descarte a la pila\
+    \ de robo.\nBaraja la pila de robo.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'}."
