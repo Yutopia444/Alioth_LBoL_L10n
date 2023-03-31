@@ -171,10 +171,10 @@ NextAttackUp:
   Description: 下一张|攻击牌|的伤害提高 {Level} 点。
   Brief: 下一张|攻击牌|的伤害提高若干点。
 
-NextTurnLoseRandomMana:
-  Name: 下回合失去法力
-  Description: '{OwnerName}的下个回合开始时，失去 {Level} 点随机的法力。'
-  Brief: '{OwnerName}的下个回合开始时，失去若干点随机的法力。'
+ManaFreezed:
+  Name: 法力冻结
+  Description: 每回合打出的第一张牌费用增加{Mana}。
+  Brief: 每回合打出的第一张牌费用增加若干。
 
 NextTurnLoseHp:
   Name: 下回合失去生命
@@ -294,7 +294,7 @@ FoxCharm:
 
 DeathPoison:
   Name: 死亡剧毒
-  Description: '{OwnerName}被击败时对{PlayerName}施加 {Level} 层|毒|。'
+  Description: '{OwnerName}被击败时对{PlayerName}施加 {Level} 层|中毒|。'
 
 AbsorbPower:
   Name: 红玉之力
@@ -414,7 +414,7 @@ YuyukoDeath:
   Name: 生者必灭
   Description: |-
     {OwnerName}的回合结束时，失去 {Level} 点生命。
-    {OwnerName}无法恢复生命值。
+    {OwnerName}无法恢复生命。
 
 FastAttack:
   Name: 唯快不破
@@ -645,8 +645,8 @@ PotionBaseDamageSe:
 
 MasterOfCollectionSe:
   Name: 收集专家
-  Description: 每一张牌被|保留|时，减少 {Level} 点它的随机费用，直到战斗结束。
-  Brief: 每一张牌被|保留|时，减少若干点它的随机费用，直到战斗结束。
+  Description: 每一张牌被|保留|时，降低 {Level} 点它的随机费用，直到战斗结束。
+  Brief: 每一张牌被|保留|时，降低若干点它的随机费用，直到战斗结束。
 
 PotionDefenseSe:
   Name: 流星共鸣
@@ -663,24 +663,19 @@ PoisonPotionSe:
   Description: '|不稳定魔药|还会施加 {Level} 层|中毒|。'
   Brief: '|不稳定魔药|还会施加若干层|中毒|。'
 
-ChillPotionSe:
+ColdPotionSe:
   Name: 冷却剂
-  Description: '|不稳定魔药|还会施加 {Level} 层|严寒|。'
-  Brief: '|不稳定魔药|还会施加若干层|严寒|。'
-
-WizardStudySe:
-  Name: 魔力转化器
-  Description: 每回合打出的第一张牌费用增加{Mana}。
-  Brief: 每回合打出的第一张牌费用增加若干。
+  Description: '|不稳定魔药|还会施加|寒冷|。'
+  Brief: '|不稳定魔药|还会施加|寒冷|。'
 
 TimeAuraSe:
   Name: 时域冲击
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Level} 点伤害。
-    每伤害了一个敌人减少一层。
+    每伤害一个敌人就降低一层。
   Brief: |-
     {PlayerName}的回合结束时，对所有敌人造成若干点伤害。
-    每伤害了一个敌人减少一层。
+    每伤害一个敌人就降低一层。
 
 GainKnifeSe:
   Name: 星剑飞舞
@@ -694,8 +689,8 @@ PerfectServantUSe:
 
 PerfectServantWSe:
   Name: 准备就绪
-  Description: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时减少| {Level} 点随机的费用。'
-  Brief: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时减少|若干点随机的费用。'
+  Description: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时降低| {Level} 点随机的费用。'
+  Brief: '{OwnerName}的下回合抽牌阶段结束时，所有手牌|暂时降低|若干点随机的费用。'
 
 EvilMaidSe:
   Name: 恶魔的女仆
@@ -758,57 +753,74 @@ AutoKnifeSe:
 
 Cold:
   Name: 寒冷
-  Description: '{OwnerName}冷得手都发抖了！下回合开始时恢复常温。'
-  Brief: '{OwnerName}冷得手都发抖了！下回合开始时恢复常温。'
+  Description: |-
+    {OwnerName}回合开始时失去 {BaseDamage} 点生命，移除|寒冷|。
+    再次受到|寒冷|效果时失去 {StackMultiply} 倍生命（{StackDamage}点）。
+  Brief: |-
+    {OwnerName}回合开始时失去 {BaseDamage} 点生命，移除|寒冷|。
+    再次受到|寒冷|效果时失去双倍生命（{StackDamage}点）。
+
+ColdUp:
+  Name: 严寒刺骨
+  Description: 提高 {Level} 倍|寒冷|的叠加伤害。
+  Brief: 提高若干倍|寒冷|的叠加伤害。
 
 NextTurnColdAll:
   Name: 寒流来袭
-  Description: '{PlayerName}下回合开始时，对所有敌方单位施加|寒冷|。'
-  Brief: '{PlayerName}下回合开始时，对所有敌方单位施加|寒冷|。'
+  Description: '{OwnerName}的下回合开始时，对所有敌方单位施加|寒冷|。'
+  Brief: '{OwnerName}的下回合开始时，对所有敌方单位施加|寒冷|。'
 
 SynergySe:
   Name: 协同
   Description: '{PlayerName}的下一次攻击后，对目标造成 {Level} 点伤害。'
   Brief: '{PlayerName}的下一次攻击后，对目标造成若干点伤害。'
 
-BrainOverclockSe:
-  Name: 大脑超频
+FrostArmor:
+  Name: 寒冰甲
   Description: |-
-    直到回合结束，每当{PlayerName}打出一张牌后就抽 2 张牌；
-    当{PlayerName}拥有超过 {Level} 张手牌或丢弃任意手牌时，结束本回合。
+    {OwnerName}的回合结束时，获得 {Level} 点|格挡|，降低一层。
+    受到攻击伤害时，降低一层。
   Brief: |-
-    直到回合结束，每当{PlayerName}打出一张牌后就抽 2 张牌；
-    当{PlayerName}拥有超过若干张手牌或丢弃任意手牌时，结束本回合。
+    {OwnerName}的回合结束时，获得若干点|格挡|，降低一层。
+    受到攻击伤害时，降低一层。
 
-GlacialPlatingSe:
-  Name: 冰河护甲
-  Description: |-
-    每回合打出的第一张牌费用增加{Mana}。
-    {PlayerName}的回合开始后，获得 {TotalTemp} 点临时火力和 {TotalTemp} 点临时灵力。
-  Brief: |-
-    每回合打出的第一张牌费用增加。
-    {PlayerName}的回合开始后，获得 4 点|临时火力|和|临时灵力|。
+IceMatrixSe:
+  Name: 冰冻矩阵
+  Description: 受到敌人攻击时，额外失去 {Level} 层|寒冰甲|并向敌人施加 {Level} 次|寒冷|。
+  Brief: 受到敌人攻击时，额外失去若干层|寒冰甲|并向敌人施加若干次|寒冷|。
+
+Immune:
+  Name: 寒冰屏障
+  Description: '{OwnerName}免疫所有伤害 ，剩余 {Duration} 回合。'
+  Brief: '{OwnerName}免疫所有伤害。'
+
+ExtraBlizzard:
+  Name: 风雪来袭
+  Description: '{OwnerName}的下回合开始时，对所有敌人造成 {Damage} 点|精准|的伤害，施加|寒冷|。'
+  Brief: '{OwnerName}的下回合开始时，对所有敌人造成若干点|精准|的伤害，施加|寒冷|。'
+
+ExtraDraw:
+  Name: 妖精智慧
+  Description: '{OwnerName}的下回合开始时，额外抽 {Level} 张牌。'
+  Brief: '{OwnerName}的下回合开始时，额外抽若干张牌。'
 
 WhiteWorldSe:
   Name: 纯白的世界
   Description: |-
-    {PlayerName}的回合结束时，获得一层|冰河护甲|。
-    |冰河护甲|：每回合打出的第一张牌费用增加{Mana}。
-    {PlayerName}的回合开始后，获得 4 点|临时火力|和|临时灵力|。
+    {PlayerName}的回合结束时，获得 {Level} 点|火力|和|灵力|，
+    |法力冻结|{Mana}。
   Brief: |-
-    {PlayerName}的回合结束时，获得一层|冰河护甲|。
-    |冰河护甲|：每回合打出的第一张牌费用增加。
-    {PlayerName}的回合开始后，获得 4 点|临时火力|和|临时灵力|。
-
-ExtraDraw:
-  Name: 额外抽牌
-  Description: '{PlayerName}的回合开始时，抽 {Level} 张牌。'
-  Brief: '{PlayerName}的回合开始时，抽牌。'
+    {PlayerName}的回合结束时，获得若干点|火力|和|灵力|，
+    |法力冻结|{Mana}。
 
 FairyTreeSe:
-  Name: 妖精的大树
-  Description: 每回合第一次你将一张技能卡加入手牌后，获得{Mana}并抽1张牌。
-  Brief: 每回合第一次你将一张技能卡加入手牌后，获得法力并抽1张牌。
+  Name: 妖精之家
+  Description: |-
+    当一张技能牌加入手中时，获得{Mana}并抽 {Level} 张牌。
+    每回合可以触发一次。
+  Brief: |-
+    当一张技能牌加入手中时，获得{Mana}并抽若干张牌。
+    每回合可以触发一次。
 
 PisiSkillSe:
   Name: 寒狱之蚀
@@ -817,8 +829,12 @@ PisiSkillSe:
 
 MinengZhuruSe:
   Name: 秘能注入
-  Description: 因回合结束触发的|妖精支援|效果增加 {Level} 倍。
-  Brief: 因回合结束触发的|妖精支援|效果增加若干倍。
+  Description: |-
+    |妖精支援|的被动效果提高 {Level} 倍。
+    （手牌中、回合开始或结束时）
+  Brief: |-
+    |妖精支援|的被动效果提高若干倍。
+    （手牌中、回合开始或结束时）
 
 Benwo:
   Name: 本我
@@ -848,11 +864,6 @@ YonglinCardSe:
   Name: 贤者的归隐
   Description: '{PlayerName}的每回合使用第一张牌后，将 {Level} 张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|和|虚无|。'
   Brief: '{PlayerName}的每回合使用第一张牌后，将若干张该牌|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|和|虚无|。'
-
-ChillSe:
-  Name: 严寒
-  Description: '{OwnerName}受到严寒后，失去 {Level} 点生命值。'
-  Brief: '{OwnerName}受到严寒后，失去与层数相等的生命值。'
 
 UseCardToLoseGame:
   Name: 余命无多
@@ -906,10 +917,10 @@ HuiyeManaSe:
     {PlayerName}的回合开始时，获得若干点随机的法力。
     每次生效前提高若干点。
 
-YouxiangGrowSe:
+YouxiangMoonSe:
   Name: 花鸟风月
-  Description: '|成长|卡牌计数时，额外增加 {Level} 次。'
-  Brief: '|成长|卡牌计数时，额外增加若干次。'
+  Description: 本场战斗中，{PlayerName}不再会|透支|。
+  Brief: 本场战斗中，{PlayerName}不再会|透支|。
 
 RangziFanshuSe:
   Name: 香甜的番薯
@@ -985,8 +996,8 @@ KaguyaTreeSeeSe:
 
 BlackPoisonSe:
   Name: 黑暗演舞
-  Description: '{PlayerName}每次攻击造成未被阻挡的伤害时，施加 {Level} 层|毒|。'
-  Brief: '{PlayerName}每次攻击造成未被阻挡的伤害时，施加若干层|毒|。'
+  Description: '{PlayerName}每次攻击造成未被阻挡的伤害时，施加 {Level} 层|中毒|。'
+  Brief: '{PlayerName}每次攻击造成未被阻挡的伤害时，施加若干层|中毒|。'
 
 MeilingAbilitySe:
   Name: 烈虹真拳
@@ -1005,7 +1016,7 @@ MoonWorldSe:
 
 Poison:
   Name: 中毒
-  Description: '{OwnerName}的回合开始时，失去 {Level} 点生命并减少一层|中毒|。'
-  Brief: '{OwnerName}的回合开始时，失去若干点生命并减少一层|中毒|。'
+  Description: '{OwnerName}的回合开始时，失去 {Level} 点生命并降低一层|中毒|。'
+  Brief: '{OwnerName}的回合开始时，失去若干点生命并降低一层|中毒|。'
 
 
