@@ -166,7 +166,7 @@ GuangxueMicai:
 DroneBlock:
   Name: Matriz de Defensa
   Description: Al final del turno de {OwnerName}, obtén {Level} de |Bloqueo|.
-  Brief: Al final del turno de {OwnerName}, obtén |Bloqueo|.
+  Brief: Al final del turno de {OwnerName}, obtienes |Bloqueo|.
 MaoyuBlock:
   Name: Mullida
   Description: '{OwnerName} obtiene {Level} de |Bloqueo| al ser atacada.'
@@ -739,10 +739,12 @@ MeilingAbilitySe:
   Description: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
 Cold:
   Name: Frío
-  Description: ¡Las manos de {OwnerName} están temblando por el frío! La temperatura
-    se restablecerá al comienzo del siguiente turno.
-  Brief: ¡Las manos de {OwnerName} están temblando por el frío! La temperatura se
-    restablecerá al comienzo del siguiente turno.
+  Description: "Al comienzo del turno de {OwnerName}, pierde {BaseDamage} de vida\
+    \ y desaparece el |Frío|.\nSiempre que |Frío| se aplica a {OwnerName}, pierde\
+    \ {StackMultiply} veces esa cantidad de vida. ({StackDamage} de vida.)"
+  Brief: "Al comienzo del turno de {OwnerName}, pierde {BaseDamage} de vida y desaparece\
+    \ el |Frío|.\nSiempre que |Frío| se aplica a {OwnerName}, pierde el doble de vida.\
+    \ ({StackDamage} de vida.)"
 MoonWorldSe:
   Name: Mundo Purgado
   Description: Al comienzo del turno de {PlayerName}, {Level} {Level:plural one='carta
@@ -809,3 +811,16 @@ NextTurnColdAll:
   Description: Al comienzo del próximo turno de {OwnerName}, aplica |Frío| a cada
     enemigo.
   Brief: Al comienzo del próximo turno de {OwnerName}, aplica |Frío| a cada enemigo.
+ColdUp:
+  Description: El multiplicador de daño al volverse a aplicar el |Frío| se incrementa
+    en {Level}.
+  Name: Frío Escalofriante
+  Brief: El multiplicador de daño al volverse a aplicar el |Frío| es incrementado.
+ManaFreezed:
+  Description: La primera carta jugada en cada turno cuesta {Mana} más para jugar.
+  Name: Congelación del maná
+  Brief: La primera carta jugada de cada turno cuesta más maná para jugar.
+ColdPotionSe:
+  Name: Liquido Refrigerante
+  Description: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
+  Brief: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
