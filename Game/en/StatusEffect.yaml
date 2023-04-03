@@ -394,8 +394,6 @@ Reflect:
   Description: When damaged, deal {Level} damage back to the attacker and remove this
     effect.
   Brief: When damaged, deal damage back to the attacker and remove this effect.
-NextTurnLoseRandomMana:
-  Name: Next Turn Mana Loss
 NextAttackUp:
   Name: Attack Boost
   Description: The next attack card played deals {Level} more damage.
@@ -569,12 +567,8 @@ PoisonPotionSe:
   Brief: Whenever an |Unstable Potion| is used, it also applies some |Poison| to its
     target.
   Name: Witch's Crucible
-ChillPotionSe:
-  Brief: Whenever an |Unstable Potion| is used, it also applies some |Frostbite| to
-    its target.
 WizardStudySe:
   Description: The first card played each round costs {Mana} more to play.
-  Name: Magic Converter
 TimeAuraSe:
   Description: "At the end of {PlayerName}'s turn, deal {Level} damage to all enemies.\n\
     Lose a level for each damaged enemy."
@@ -652,8 +646,6 @@ SijiZui:
   Description: '{PlayerName}''s sins: Minor.'
   ExtraDescription: '{PlayerName}''s sins: Average.'
   ExtraDescription2: '{PlayerName}''s sins: Major.'
-ChillSe:
-  Description: '{OwnerName} loses {Level} life after Frostbite is applied.'
 SenluoJiejieSe:
   Description: At the start of {OwnerName}'s next turn, she detonates all of her |Barrier|.
   Brief: At the start of {OwnerName}'s next turn, she detonates all of her |Barrier|.
@@ -719,10 +711,12 @@ NextTurnLoseGame:
   Name: Next Turn Lose
 Cold:
   Name: Cold
-  Description: "{OwnerName}'s hands are shaking from the cold! The temperature will\
-    \ be restored at the start of the next turn."
-  Brief: "{OwnerName}'s hands are shaking from the cold! The temperature will be restored\
-    \ at the start of the next turn."
+  Description: "At the start of {OwnerName}'s turn, they lose {BaseDamage} life and\
+    \ lose |Cold|.\nWhenever |Cold| is applied to {OwnerName}, they lose {StackMultiply}\
+    \ times that much life. ({StackDamage} life.)"
+  Brief: "At the start of {OwnerName}'s turn, they lose {BaseDamage} life and lose\
+    \ |Cold|.\nWhenever |Cold| is applied to {OwnerName}, they lose twice that much\
+    \ life. ({StackDamage} life.)"
 RangziFanshuSe:
   Name: Sweet Sweet Potato
   Description: After this combat, gain {Level} life.
@@ -737,15 +731,8 @@ ReimuFestivalSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Temporary Firepower|.
   Brief: At the start of {PlayerName}'s turn, gain |Temporary Firepower|.
   Name: Endless Banquets
-BrainOverclockSe:
-  Description: "Until end of turn, whenever {PlayerName} plays a card, draw 2 cards.\n\
-    When {PlayerName} has more than {Level} cards in the hand, or discards any cards,\
-    \ end the turn."
 GlacialPlatingSe:
   Name: Glacial Plating
-  Description: "The first card played each turn costs {Mana} more to play.\nAt the\
-    \ start of {PlayerName}'s turn, gain {TotalTemp} |Temporary Firepower| and {TotalTemp}\
-    \ |Temporary Spirit|."
 PotionBaseDamageSe:
   Name: Explosive Components
   Brief: '|Unstable Potions| deal more damage.'
@@ -772,8 +759,8 @@ FairyTreeSe:
     and draw 1 card.
 NextTurnColdAll:
   Name: Winter is Coming
-  Description: At the start of {PlayerName}'s next turn, apply |Cold| to each enemy.
-  Brief: At the start of {PlayerName}'s next turn, apply |Cold| to each enemy.
+  Description: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy.
+  Brief: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy.
 KaguyaTreeSeeSe:
   Description: All cards lose |Exile|.
   Brief: All cards lose |Exile|.
@@ -787,8 +774,6 @@ NextTurnGainShield:
   Description: At the start of {OwnerName}'s next turn, gain {Level} |Barrier|.
   Brief: At the start of {OwnerName}'s next turn, gain some |Barrier|.
   Name: Next Turn Barrier
-YouxiangGrowSe:
-  Name: Flowers, Birds, Wind and Moon
 ReimuShrineSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Temporary Spirit|.
   Name: Hakurei Temple Fair
@@ -842,3 +827,15 @@ AutoKnifeSe:
   Description: All |Throwing Knives| are |Auto Exile|.
   Brief: All |Throwing Knives| are |Auto Exile|.
   Name: Bewitched Silver Knife
+ManaFreezed:
+  Name: Mana Freeze
+  Description: The first card played each turn costs {Mana} more to play.
+  Brief: The first card played each turn costs more mana to play.
+ColdPotionSe:
+  Name: Cooling Agent
+  Description: '|Unstable Potions| also apply |Cold| when used.'
+  Brief: '|Unstable Potions| also apply |Cold| when used.'
+ColdUp:
+  Name: Bone-chilling Cold
+  Description: The damage multiplier when re-applying |Cold| is increased by {Level}.
+  Brief: The damage multiplier when re-applying |Cold| is increased.
