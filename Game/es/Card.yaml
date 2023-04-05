@@ -15,8 +15,7 @@ ReimuBlockR:
   FlavorText: Una salvadora puede parar danmaku con una mano.
   Name: Exterminio de Balas
 DoubleJiejie:
-  UpgradedDescription: "Inflige {Damage}.\nSi {PlayerName} tiene |Barrera| o |Bloqueo|,\
-    \ inflige {Damage} dos veces."
+  UpgradedDescription: "Inflige {Damage} de daño 2 veces.\n"
   Name: Barrera Dúplex
   Description: "Inflige {Damage}.\nSi {PlayerName} tiene |Barrera|, inflige {Damage}\
     \ de daño dos veces."
@@ -102,9 +101,9 @@ ReverseJiejie:
   Name: Limite Inverso
 Changzhizhen:
   Name: Borde Permanente
-  Description: "|Al Retenerse:| Inflige {Value1} daño a un enemigo aleatorio.\n|Al\
-    \ estar en mano:| Cuando {PlayerName} pierde un buff, el daño de esta carta aumenta\
-    \ en {Value2} por el combate."
+  Description: "|Al final del turno|: Inflige {Value1} daño a un enemigo aleatorio.\n\
+    |Al estar en mano|: Cuando {PlayerName} pierde un beneficio, el daño de esta carta\
+    \ aumenta en {Value2} por el combate."
 ReimuLucky:
   Name: Golpe de Suerte
   Description: "Obtén {Value1} |Amuleto|.\nObtén {Value2} <sprite=\"Point\" name=\"\
@@ -121,8 +120,8 @@ TwoBalls:
   Description: Añade {Value1} |Orbe Yin-Yang| a tu mano.
 Misfortune:
   Name: Desafortunada
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} vidas por cada 100 <sprite="Point" name="Gold"> que posea.'
+  Description: '|Al final del turno|: Pierde {Value1} de vida por cada 100 <sprite="Point"
+    name="Gold"> que tengas.'
 ToolExile:
   Description: "|Exilia| cualquier número de cartas de la mano.\n|Limitado【{DeckCounter}】|"
   Name: Robot de Limpieza Inteligente
@@ -233,6 +232,8 @@ KoishiAttackG:
   Name: Flor de Rosas
 FairySupportStar:
   Name: Detección de Star
+  Description: "|Al comienzo del turno|: Aplica {Value1} |Reducción de Poder Temporal|\
+    \ a cada enemigo.\n|Al Exiliarse|: Aplica {Value2} |Marcado| a un enemigo al aleatorio."
 ToolBlock:
   Name: Escudo Balístico
   Description: "Obtén {Block} de |Bloqueo|.\n|Limitado【{DeckCounter}】|"
@@ -311,25 +312,20 @@ NewsPositive:
 HatateNews:
   Name: Noticias del Kakashi Spirit
 AyaNewsReimuSp:
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de |Espíritu|.'
+  Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   Name: Bunbunmaru - Especial de Reimu
 AyaNewsSakuyaSp:
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de |Espíritu|.'
+  Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   Name: Bunbunmaru - Especial de Sakuya
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Especial de Marisa
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de |Espíritu|.'
+  Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
 AyaNewsCirnoSp:
   Name: Bunbunmaru - Especial de Cirno
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de |Espíritu|.'
+  Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
 AyaNewsKoishiSp:
   Name: Bunbunmaru - Especial de Koishi
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de |Espíritu|.'
+  Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
 CirnoBlockG:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Protección de Hojas
@@ -341,6 +337,8 @@ CirnoAttackU:
   Name: Disparo de Hielo
 FairySupportLarva:
   Name: Alas de Larva
+  Description: "|Al comienzo del turno|: Obtén {Value1} de |Bloqueo|.\n|Al Exiliarse|:\
+    \ Obtén {Value2} de |Bloqueo|."
 HuashanQingjing:
   Description: Obtén {Block} de |Bloqueo|.
   UpgradedDescription: "Obtén {Block} de |Bloqueo|.\nRemueve |Vulnerable| de {PlayerName}."
@@ -373,9 +371,9 @@ SakuyaUsage:
     \ a la parte superior de la pila de robo.\n(Se han jugado {PlayCount:plural one='%\
     \ vez' other='% veces'})."
 CoolBreeze:
-  Description: "Obtén {Block} de |Bloqueo|.\nCuando un enemigo está |Frío|, |Mejora|\
-    \ {Value1} carta{Value1:plural one='aleatoria' other='s aleatorias'} en la mano,\
-    \ las cartas de ataque tienen prioridad."
+  Description: "Obtén {Block} de |Bloqueo|.\nSi algún enemigo tiene |Frío|, |Mejora|\
+    \ {Value1} {Value1:plural one='carta aleatoria' other='cartas aleatorias'} en\
+    \ la mano. Prioriza las cartas de ataque."
   Name: Brisa Fresca
 CirnoBlockU:
   Description: Obtén {Block} de |Bloqueo|.
@@ -405,7 +403,7 @@ JinjiBlock:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Defensa de Emergencia
 IceLaser:
-  Description: "Inflige {Damage} de daño.\nAplica |Frío|."
+  Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear."
   Name: Rayo Congelador
 NewsTidbit:
   Description: "Gana {Value1} |Marcados|.\n|Limitado【{DeckCounter}】|"
@@ -437,13 +435,18 @@ AyaNews:
   Description: Inflige {Damage} de daño a un enemigo aleatorio.
 FairySupportLily:
   Name: Anuncio de Lily White
+  Description: "|Al comienzo del turno|: Gana {TurnMana}.\n|Al Exiliarse|: Gana {ExileMana}."
 FairySupportSunny:
   Name: Refracción de Sunny
+  Description: "|Mientras está en la mano|: aumenta el daño de las cartas de ataque\
+    \ en {Value1}.\n|Al Exiliarse|: Gana {Valor2} de |Poder|."
 KoishiBlockG:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Marchitamiento de Rosas
 FairySupportLuna:
   Name: Silencio de Luna
+  Description: "|Al comienzo del turno|: Obtén {Value1} de |Barrera|.\n|Al Exiliarse|:\
+    \ Gana {Value2} |Evasión|."
 ToolUpgrade:
   Name: Disquete
   Description: "|Mejora| cada carta de la mano hasta el final del combate.\n|Limitado【{DeckCounter}】|"
@@ -453,8 +456,7 @@ Wushuai:
   Description: '|Cuando se roba:| Gana {Value1} |Marcado| y se |Exilia| esta carta.'
   Name: Espada Brillante
 XiaosanJingxia:
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, gana
-    {Value1} |Débil|.'
+  Description: '|Al final del turno|: Gana {Value1} |Débil|.'
   Name: Asustada
 YuyukoMisfortune:
   Name: Hambre Voraz
@@ -462,13 +464,12 @@ YuyukoMisfortune:
     pierde {Value1} de vida.'
 FanzhuanChongdong:
   Name: Hambre Inversa
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de vida si no gana ninguna vida en este turno.'
+  Description: '|Al final del turno|: Pierde {Value1} de vida si no gana ninguna vida
+    en este turno.'
   FlavorText: El precio a pagar para convertirse en un esbirro de un vampiro.
 Riguang:
   Name: Luz Solar Refractada
-  Description: '|Mientras está en la mano:| Al final del turno, {PlayerName} recibe
-    {Value1} de daño.'
+  Description: '|Al final del turno|: Recibe {Value1} de daño.'
 Xingguang:
   Name: Luz Estelar Glamurosa
 Xuanguang:
@@ -476,8 +477,7 @@ Xuanguang:
   FlavorText: '{PlayerName} está mareado por las luces brillantes de la cámara.'
 BlackResidue:
   Name: Residuo Oscuro
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de vida.'
+  Description: '|Al final del turno|: Pierde {Value1} de vida.'
 SakuyaLock:
   Name: Encierro de Tiempo
   Description: "Activa |Encierro Plateado| una vez.\n({PlayerName} recibe {Value1}\
@@ -506,12 +506,10 @@ Nightmare:
 SweetPoison:
   FlavorText: Eirin! Eirin! Tasukete EIRIN!
   Name: Dulce Veneno
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, gana
-    {Value1} de |Veneno|.'
+  Description: '|Al final del turno|: Gana {Value1} de |Veneno|.'
 Pressure:
   Name: Presión Invisible
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} <sprite="Point" name="Power">.'
+  Description: '|Al final del turno|: Pierde {Value1} <sprite="Point" name="Power">.'
 Drunk:
   NonbattleDescription: '|Mientras está en la mano:| Solo se pueden jugar {Value1}
     cartas en cada turno.'
@@ -520,13 +518,13 @@ Drunk:
     \ este turno.)"
   Name: Borracho
 Psychedelic:
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} de vida, gana {Value2} <sprite="Point" name="Power">.'
+  Description: '|Al final del turno|: Pierde {Value1} de vida, gana {Value2} <sprite="Point"
+    name="Power">.'
   Name: Psicodélico
   FlavorText: '"¿Todavía sigo soñando ?"'
 Yuebiao:
   Name: El Paisaje Lunar
-  Description: '|Cuando se roba:| Purifica {Value1}.'
+  Description: '|Cuando se roba|: Purifica {Value1}.'
 LoveLetter:
   Name: Carta de Amor
   Description: Dale esto a la <color=#eab8bf>Chica con Mal de Amor</color>. Ella será
@@ -537,12 +535,11 @@ BefuddledLife:
   Name: Perpleja
 BuyPeace:
   Name: Bancarrota
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, pierde
-    {Value1} <sprite="Point" name="Gold">, gana {Value2} de vida.'
+  Description: '|Al final del turno|: Pierde {Value1} <sprite="Point" name="Gold">,
+    gana {Value2} de vida.'
 MarisaForget:
   Name: Olvidadiza
-  Description: '|Mientras está en la mano:| Al final del turno de {PlayerName}, gana
-    {Value1} |Frágil|.'
+  Description: '|Al final del turno|: Gana {Value1} |Frágil|.'
 Yueguang:
   Name: Luz Lunar Serena
   Description: '|Cuando se roba:| Pierde {Value1} maná aleatorio.'
@@ -569,7 +566,7 @@ QiqingYishi:
   Description: Añade un |Arcoíris| a la mano.
   UpgradedDescription: Añade un |Arcoíris| y un |Resplandor| a la mano
 ChuanyueJiejie:
-  Description: "Obtén {Shield} de |Barrera|.\nElige una carta |Exiliada| devolviéndola\
+  Description: "Obtén {Shield} de |Barrera|.\nDevuelve una carta que esta |Exiliada|\
     \ a la mano."
   Name: Cruzando la Frontera
 OutInGap:
@@ -634,7 +631,7 @@ ReimuSakura:
     |Crecimiento:| Cuesta {Mana} menos."
 Qingshan:
   Name: El último Hogar de Uno
-  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia:| Gana {Mana}."
+  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia|: Gana {Mana}."
 CraftPotion:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
     \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
@@ -708,7 +705,7 @@ MarisaEat:
   ExtraDescription1: "Ganas {Value1} de |Concentración|.\n|Debut:| Gana {Value2} de\
     \ vida."
   Name: Festín de Hongos
-  Description: "Gana {Value1} de |Concentración|.\n|Debut:| Gana {Value2} de vida."
+  Description: "Gana {Value1} de |Concentración|.\n|Debut|: Gana {Value2} de vida."
 ScryAttack:
   FlavorText: La habilidad de encontrar a la Osa Mayor bajo el cielo nocturno se ha
     perdido en el exterior.
@@ -724,11 +721,11 @@ HuojianSaoba:
     \ other='s'}|."
 ShinningPotion:
   Description: "Obtén {Block} de Bloqueo.\nAñade una |Poción Inestable| a la pila\
-    \ de robo.\n|Sobrecarga {Value2}:| Agrega 2 en su lugar."
+    \ de robo.\n|Sobrecarga {Value2}|: Agrega 2 en su lugar."
   Name: Hongo Luminoso
 Yinhe:
   Name: Vía Láctea
-  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se retiene:| Aumenta el |Bloqueo|\
+  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se retiene|: Aumenta el |Bloqueo|\
     \ de esta carta. por {Value1} en este combate."
 StarSky:
   Name: Cielo Estrellado Luminoso
@@ -754,7 +751,7 @@ CollectionDefense:
     pila de robo.
 AccuracyLaser:
   Name: Láser Direccional
-  Description: "Inflige {Damage} de daño {Value1} veces.\n|Cuando se retiene:| Esta\
+  Description: "Inflige {Damage} de daño {Value1} veces.\n|Cuando se retiene|: Esta\
     \ carta cuesta {Mana} menos en este combate."
 Alioth:
   Name: Alioth
@@ -792,8 +789,7 @@ StarShower:
   Name: Baño de Polvo Estelar
 WizardStudy:
   Name: Convertidor Mágico
-  Description: "Gana {Value1} de |Poder| y |Espíritu|.\nLa primera carta jugada en\
-    \ cada turno cuesta {Mana} más para usarse."
+  Description: "Gana {Value1} de |Poder| y |Espíritu|.\n|Congelación de Maná| {Mana}."
 UpgradePotion:
   Name: Poción Refinada
   Description: "Agrega {Value2:plural one='% |Poción Inestable|' other='% |Pociones\
@@ -809,7 +805,7 @@ MixAndShake:
   Description: "Inflige {Damage} de daño a cada enemigo.\nEl daño de esta carta aumenta\
     \ en {Value1} por cada |Poción Inestable| en las pila de robo y descarte."
 ShootMoon:
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Gana {Value1} |Evasión|."
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Gana {Value1} |Evasión|."
   Name: Disparar a la Luna
 PotionDefense:
   Description: "Obtén {Shield} de |Barrera|.\nHasta el final del turno, siempre que\
@@ -821,14 +817,14 @@ FireUpBagualu:
     \ ve afectado por |Supernova|."
 RedGiantStar:
   Name: Impacto del Gigante Rojo
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Añade una |Llama|\
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Añade una |Llama|\
     \ a la mano."
-  UpgradedDescription: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Añade un\
+  UpgradedDescription: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Añade un\
     \ |Arcoíris| a la mano."
 ThrowBigStar:
   Name: Explosión de Estrella Roja
-  Description: "Inflige {Damage} de daño a cada enemigo.\n|Sobrecarga {Value2}:| Inflige\
-    \ tanto daño a cada enemigo dos veces en su lugar."
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|Sobrecarga {Value2}|: Inflige\
+    \ daño a cada enemigo dos veces en su lugar."
 EventHorizon:
   Name: Evento del Horizonte
   Description: "Entra en modo |Supernova|.\nAl comienzo del próximo turno de {PlayerName},\
@@ -851,7 +847,7 @@ WhiteLaser:
     \ se ve afectado por la bonificación del |Supernova|."
   Name: Láser Relámpago
 IceSpark:
-  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo."
+  Description: "Inflige {Damage} de daño a cada enemigo y aplica |Frío| a cada enemigo."
   Name: Laser de Hielo
 GreenMogu:
   Name: Panellus Stipticus
@@ -911,12 +907,12 @@ ManaJungle:
   FlavorText: '"¡Eureka! ¡Ya lo tengo!"'
 StarlightTaifengSummoner:
   Description: "Añade un |Tifón de Luz Estelar| a la pila de robo.\n|Por cada {Mana}\
-    \ gastado:| La carta añadida inflige daño una vez más.\n|Por cada <sprite=\"ManaSprite\"\
-    \ name=\"R\"> gastado:| Aumenta el daño de la carta agregada en {Value1}."
-  UpgradedDescription: "Añade un |Tifón de Luz Estelar+| a la pila de robo.\n|Por\
-    \ cada {Mana} gastado:| La carta añadida inflige daño una vez más.\n|Por cada\
-    \ <sprite=\"ManaSprite\" name=\"R\"> gastado:| Aumenta el daño de la carta agregada\
-    \ en {Value1}."
+    \ gastado|: La carta añadida inflige daño una vez más.\n|Por cada <sprite=\"ManaSprite\"\
+    \ name=\"R\"> gastado|: Aumenta el daño de la carta agregada en {Value1}."
+  UpgradedDescription: "Añade un |Tifón de Luz Estelar+| en la parte superior de la\
+    \ pila de robo.\n|Por cada {Mana} gastado|: La carta añadida inflige daño una\
+    \ vez más.\n|Por cada <sprite=\"ManaSprite\" name=\"R\"> gastado|: Aumenta el\
+    \ daño de la carta agregada en {Value1}."
   Name: Convergencia de Luz Estelar
 MoguMaster:
   Name: Especialista en Hongos
@@ -958,8 +954,8 @@ SakuyaSnow:
     \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano."
 Knife:
   Name: Cuchillo Arrojadizo
-  Description: "Inflige {Damage} de daño.\n|Cuando esta carta sale de la mano:| Si\
-    \ no se ha jugado, inflige {DropDamage} de daño al enemigo con menos vida."
+  Description: "Inflige {Damage} de daño.\n|Cuando esta carta sale de la mano sin\
+    \ ser jugada|: Inflige 15 de daño al enemigo con menos vida."
 SakuyaKiller:
   Name: Destripadora en la Niebla
   Description: Al final del turno de {PlayerName} y siempre que un enemigo sea derrotado,
@@ -1029,9 +1025,9 @@ LunaClock:
 PerfectServant:
   Name: Sirviente Perfecta
   Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"W\"> gastado:| Al comienzo del próximo turno de {PlayerName}, cada carta\
+    \ name=\"W\"> gastado|: Al comienzo del próximo turno de {PlayerName}, cada carta\
     \ en la mano |cuesta temporalmente| 1 maná aleatorio menos.\n|Por cada <sprite=\"\
-    ManaSprite\" name=\"U\"> gastado:| Al comienzo del próximo turno de {PlayerName},\
+    ManaSprite\" name=\"U\"> gastado|: Al comienzo del próximo turno de {PlayerName},\
     \ gana {Mana} y roba una carta adicional."
 BackToFuture:
   FlavorText: ¿Carretera? a donde vamos, no necesitamos... carreteras.
@@ -1085,7 +1081,7 @@ CleanRoom:
     \ combate."
   Name: Limpieza de Habitación
 DangerousMagician:
-  Description: "Siempre que un |Cuchillo Arrojadizo| se utiliza, gane {Value1} |Pulso\
+  Description: "Siempre que un |Cuchillo Arrojadizo| se utiliza, gana {Value1} |Pulso\
     \ Temporal|.\nAñade {Value2} |{Value2:plural one='Cuchillo Arrojadizo' other='Cuchillos\
     \ Arrojadizos'}| a la pila de robo."
   Name: Ilusionista Peligrosa
@@ -1126,7 +1122,7 @@ SakuyaInvestigate:
     \ esta carta del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
 SakuyaAttackX:
   Name: Propulsión Plateada
-  Description: '|Por cada {Mana} gastado:| Inflige {Damage} de daño.'
+  Description: '|Por cada {Mana} gastado|: Inflige {Damage} de daño.'
 SakuyaGraze:
   Description: "Obtén {Shield} de |Barrera|.\nObtén {Value1} de |Evasión|.\nCuando\
     \ se baraja la pila de robo, devuelve esta carta a la mano en lugar de la pila\
@@ -1198,7 +1194,7 @@ YunyouShengdi:
   FlavorText: Hogar de los holgazanes.
 BailianNingshen:
   UpgradedDescription: "Elija 1 de {Value1} cartas comunes al azar para agregarla\
-    \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\n|Debut:|\
+    \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\n|Debut|:\
     \ Añade un |Resplandor| a la mano."
   ExtraDescription1: "Elija 1 de {Value1} cartas comunes al azar para agregarla a\
     \ la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\n|d:Debut:\
@@ -1237,7 +1233,7 @@ WaterPrincess:
   Name: Princesa Undine
   ExtraDescription1: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|d:Debut:|\
     \ Añade un |Roció| a la mano."
-  Description: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|Debut:| Añade\
+  Description: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|Debut|: Añade\
     \ un |Roció| a la mano."
 Shadow:
   Name: Sombra
@@ -1357,7 +1353,7 @@ ShannvAbility:
 XiaoemoBook:
   Name: Códice del Demonio
   Description: "|Exilia| una carta de la mano.\nRoba {Value1:plural one='% carta'\
-    \ other='% cartas'}\n|Debut:| Añade un |Ocultismo| a la mano."
+    \ other='% cartas'}\n|Debut|: Añade un |Ocultismo| a la mano."
   ExtraDescription1: "|Exilia| una carta de la mano.\nRoba {Value1:plural one='% carta'\
     \ other='% cartas'}\n|d:Debut: Añade un Ocultismo a la mano.|"
 ShannvAttack:
@@ -1389,7 +1385,7 @@ YongyiAttack:
     \ tiene |Poder Temporal|, inflige esa misma cantidad de daño 1 vez adicional."
 DanmuJade:
   Description: "Inflige {Damage} de daño a cada enemigo.\nAñade {Value1} |Arcoíris|\
-    \ a la mano.\n|Por cada {Mana} gastado:| Obtén {Value2} de |Poder| y |Espíritu|."
+    \ a la mano.\n|Por cada {Mana} gastado|: Obtén {Value2} de |Poder| y |Espíritu|."
   Name: Telar Danmaku Arcoíris
 MorphBird:
   Name: Forma de Ave
@@ -1401,7 +1397,7 @@ HuiyinAttack:
 SijiCard:
   Name: Juicio de los Pecados
   Description: Elige una carta en la mano. Si es una |Desgracia| o carta de Estado,
-    |Exílialo|. De lo contrario, cuesta {Mana} menos este combate y se puede |Retener|
+    |Exílialo|. De lo contrario, cuesta {Mana} menos en este combate y se puede |Retener|
     una vez.
 HappyNewYear:
   Name: Visita de Año Nuevo
@@ -1419,8 +1415,8 @@ XiaosanReflect:
   Name: Contra Danmaku
   Description: "Obtén {Shield} de |Barrera|.\nObtén {Value1} de |Reflejo|."
 BailianBlack:
-  Description: "Todas las cartas que no son de ataque ni de habilidad serán |Exiliadas|\
-    \ cuando se juega.\nLos costes de esas cartas se reducen a {Mana}."
+  Description: "Todas las cartas que no son de ataque ni de habilidad tendrán |Exilio|.\n\
+    Sus costes se reducen a {Mana}."
   Name: Abraza la Oscuridad
 GrimoireStudy:
   Name: Estudio del Grimorio
@@ -1560,7 +1556,7 @@ NueExile:
   Description: "|Exilia| una carta de la mano.\nAñade una carta aleatoria a la mano.\
     \ |Cuesta temporalmente| {Mana}."
 ReadBook:
-  Description: "Obtén {Block} de |Bloqueo|.\n|Debut:| Elige 1 de {Value1} cartas azules\
+  Description: "Obtén {Block} de |Bloqueo|.\n|Debut|: Elige 1 de {Value1} cartas azules\
     \ y/o blancas para agregarla a la mano."
   ExtraDescription1: "Obtén {Block} de |Bloqueo|.\n|d:Debut: Elige 1 de {Value1} cartas\
     \ azules y/o blancas para agregarla a la mano.|"
@@ -1571,7 +1567,8 @@ Panzi:
   Name: Plato de Agua
 SnowGirlCard:
   Name: Visita de la Yuki-Onna
-  Description: Aplica {Value1} de |Frío|.
+  Description: Aplica {Value1} de |Frío| a un enemigo aleatorio {Value1:plural one='%
+    vez' other='% veces'}.
 TrueMoon:
   Name: Verdadera Luna Llena
   FlavorText: Bajo la verdadera luna llena, todo es una fantasía vanidosa.
@@ -1585,7 +1582,7 @@ SuikaBigball:
     \ daño a los demás enemigos.\nPierde {Value1} de |Poder|."
   Name: Bomba de Espíritu Oni
 QianGui:
-  Description: "Inflige {Damage} de daño.\n|Debut:| Obtén {Value1} de |Evasión|."
+  Description: "Inflige {Damage} de daño.\n|Debut|: Obtén {Value1} de |Evasión|."
   ExtraDescription1: "Inflige {Damage} de daño.\n|d:Debut: Obtén {Value1} de Evasión.|"
 RangziFanshu:
   Description: Al final del combate, gana {Value1} de vida.
@@ -1653,13 +1650,13 @@ HekaHellRain:
   Name: Lluvia del Infierno
 FourFlan:
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
-    |Al comienzo del combate:| Añade {Value2} |copias| de esta carta a la pila de\
+    |Al comienzo del combate|: Añade {Value2} |copias| de esta carta a la pila de\
     \ robo. Las copias no tienen este efecto, cuestan {Mana} teniendo |Exilio| y |Etéreo|."
   ExtraDescription1: Inflige {Damage} de daño {Value1:plural one='% vez' other='%
     veces'}.
   Name: Cuatro de uno Mismo
 ReisenAttack:
-  Description: '|Por cada {Mana} gastado:| Inflige {Damage} de daño a cada enemigo.'
+  Description: '|Por cada {Mana} gastado|: Inflige {Damage} de daño a cada enemigo.'
   Name: Sueño Lunático
 RinDraw:
   Name: Asignación de Espíritus
@@ -1676,8 +1673,8 @@ FangxiangAttack:
   Name: Toxina Devastadora
 JunkoNightmare:
   Description: "Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}\
-    \ a todos los enemigos.\n|Exilia| todas las cartas en tu mano, luego agrega una\
-    \ cantidad igual de |Puro| a tu mano."
+    \ a todos los enemigos.\n|Exilia| toda la mano. Agrega esa misma cantidad de |Puros|\
+    \ a la mano."
   Name: Pesadilla Escalofriante
   UpgradedDescription: "Inflige {Damage} de daño {Value1} {Damage:plural one='vez'\
     \ other='veces'} a todos los enemigos.\n|Exilia| cualquier cantidad de cartas\
@@ -1737,11 +1734,12 @@ YachieDefend:
   Name: Caparazón de Tortuga Infernal
   Description: "Evita que {Value1:plural one='la siguiente % vez' other='las siguientes\
     \ % veces'} {PlayerName} pierda vida.\nSi esa pérdida de vida fue de un enemigo,\
-    \ pierde esa cantidad de vida."
+    \ redirige esa pérdida de vida a ese enemigo."
 LimaoAttack:
   Name: Pompokolín de Luna Llena
   Description: "Inflige {Damage} de daño a cada enemigo. Gana {Mana}.\n|Crecimiento:|\
-    \ Esta carta da {Mana} más."
+    \ Esta carta da más {Mana}. (Actualmente ha |Crecido| {GrowCount} {GrowCount:plural\
+    \ one='vez' other='veces'}.)"
 RuowujiCard:
   Name: Olas de Escala Invertida
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica {Value1} de |Ahogar|."
@@ -1755,12 +1753,12 @@ PrismriverAll:
     ManaSprite\" name=\"P\">.\nAgrega una |Luz Solar Refractada|, |Luz Lunar Serena|\
     \ y |Luz Estelar Glamorosa| a la pila de descarte."
 Shengyan:
-  Description: "Inflige {Damage} de daño.\n|Exterminar:| Gana {Value1} de vida máxima."
+  Description: "Inflige {Damage} de daño.\n|Exterminar|: Gana {Value1} de vida máxima."
   Name: Festín
 BlackPoison:
   Name: Bailar en la Oscuridad
-  Description: Siempre que {PlayerName} inflija daño de ataque no bloqueado, aplica
-    {Value1} de |Veneno| a ese enemigo.
+  Description: Siempre que {PlayerName} inflija daño de ataque no bloqueado, también
+    aplica {Value1} de |Veneno|.
 Zhulianshen:
   Name: Shimenawa de la Diosa
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Resguardo|."
@@ -1813,6 +1811,10 @@ IceBlock:
     \ y |Evasión|.\nFinaliza el turno de {PlayerName}."
 FairyEzuoju:
   Name: Travesura de Hadas
+  Description: "Agrega {Valor1} carta{Value1:plural one='' other='s'} de |Apoyo de\
+    \ hadas| aleatoria{Value1:plural one='' other='s'} a la pila de robo. {Value1:plural\
+    \ one='Tiene' other='Tienen'} |Reponer|.\nAgrega {Valor2} |Residuo Oscuro{Value2:plural\
+    \ one=' Oscuro' other='s Oscuros'}| a la pila de descarte."
 FairyTree:
   Name: Morada de las Hadas
   Description: Añade una carta de habilidad a la mano. Gana {Mana} y roba {Value1:plural
@@ -1887,3 +1889,11 @@ FairyWar:
   Description: Añade todas las cartas exiliadas de |Apoyo a las hadas| a la mano.
 GainLuna:
   Name: Baño Lunar
+WhiteWorld:
+  Description: "Al final del turno de {PlayerName}, gana {Value1} de |Poder| y |Espíritu|.\n\
+    |Congelación de Maná| {Mana}."
+FrostNova:
+  Description: "Remueve el |Frío| de un enemigo\nObtén |Bloqueo| o |Barrera|."
+AttackWithEveryColor:
+  Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
+    daño.'
