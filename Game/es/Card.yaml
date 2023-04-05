@@ -45,6 +45,7 @@ MengzhiYuzha:
 Fengmozhen4:
   Name: Circulo Sellador
   Description: Inflige {Damage} de daño a cada enemigo.
+  UpgradedDescription: Inflige {Damage} de daño {Value1} veces a todos los enemigos.
 TuimofuLuanwu:
   Name: Danza de Exorcismo Salvaje
   Description: Inflige {Damage} de daño a un enemigo aleatorio {Value1} veces.
@@ -621,7 +622,7 @@ BoliDajiejie:
   Description: Para el resto del combate, el |Bloqueo| de {PlayerName} se convierte
     en |Barrera|.
 KuosanLingfu:
-  Name: Amuleto Expandido
+  Name: Amuleto de Propagación
   Description: "Inflige {Damage} de daño a cada enemigo.\nObtienes |Barrera| igual\
     \ a la cantidad de daño infligido no bloqueado de esa manera."
 GapLady:
@@ -637,7 +638,7 @@ Qingshan:
 CraftPotion:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
     \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
-  Name: Crear Poción
+  Name: Poción Artesanal
 DoubleLianhuadie:
   Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Value1}
     de daño a un enemigo aleatorio.
@@ -655,6 +656,8 @@ ReimuInstant:
   Name: '"Sello de Ensueño -Destello-"'
   Description: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
     \ toma un turno extra.\n|Límite de tiempo| {Mana}."
+  ExtraDescription1: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
+    \ toma un turno extra.\n|d:Límite de tiempo {Mana}.|"
 WinterWarm:
   Name: Calentadora de Manos
   Description: "Gana {Value1} |Concentraci{Value1:plural one='ón' other='ones'}|."
@@ -786,7 +789,7 @@ OpenUniverse:
 StarShower:
   Description: "Obtén {Block} de |Bloqueo|.\nSi {PlayerName} no tiene |Cargas|, gana\
     \ {Value2} |Cargas|. De lo contrario, gana {Value1} |Cargas|."
-  Name: Bañarse en Polvo Estelar
+  Name: Baño de Polvo Estelar
 WizardStudy:
   Name: Convertidor Mágico
   Description: "Gana {Value1} de |Poder| y |Espíritu|.\nLa primera carta jugada en\
@@ -811,7 +814,7 @@ ShootMoon:
 PotionDefense:
   Description: "Obtén {Shield} de |Barrera|.\nHasta el final del turno, siempre que\
     \ una |Poción Inestable| se use, gana {Value1} de |Barrera|."
-  Name: Eco Resonante
+  Name: Vuelo Estelar
 FireUpBagualu:
   Name: Encendiendo el Horno
   Description: "Gana {Value1} |Cargas|.\nGana {Value2} de |Poder|. Este efecto se\
@@ -883,7 +886,7 @@ BlazingStar:
     \ extra.\n|Límite de tiempo| {Mana}."
   ExtraDescription1: "Obtén {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo\
     \ del próximo turno de {PlayerName}.\nFinaliza el turno. Luego, toma un turno\
-    \ extra.\n|d: Límite de tiempo {Mana}.|"
+    \ extra.\n|d:Límite de tiempo {Mana}.|"
 ChargingToMana:
   Name: Conversión de Cargas
   Description: Pierde todas las |Cargas|. Por cada |Carga| perdida de esta manera,
@@ -1800,16 +1803,23 @@ FairySupportDayaojing:
   Name: Unidad de Daiyousei
 GatherFairy:
   Name: Asamblea de Hadas
+  Description: "El límite de cartas en la mano aumenta en {MaxHand}.\nRoba {Value1:plural\
+    \ one='% carta' other='% cartas'}."
 RemoveOverdraft:
   Name: Curar Heridas
 IceBlock:
   Name: Barrera Gélida
+  Description: "Inmune al daño durante un turno.\nElimina todo el |Bloqueo|, |Barrera|\
+    \ y |Evasión|.\nFinaliza el turno de {PlayerName}."
 FairyEzuoju:
   Name: Travesura de Hadas
 FairyTree:
   Name: Morada de las Hadas
+  Description: Añade una carta de habilidad a la mano. Gana {Mana} y roba {Value1:plural
+    one='% carta' other='% cartas'}.
 BrainOverclock:
   Name: Overclocking Cerebral
+  Description: "Gana {Mana}.\n|Sobregiro| {Value1}."
 ColdPotion:
   Name: Liquido Refrigerante
   Description: "Las |Pociones Inestables| también aplican |Frío|.\nAgrega {Value1:plural\
@@ -1839,6 +1849,8 @@ GainDayaojing:
   Name: Mejores Amigas
 GainStar:
   Name: Lluvia de Estrellas
+  Description: Inflige {Damage} de daño al objetivo {Value1:plural one="% vez" other="%
+    veces"}
 YouxiangMoon:
   Name: Belleza de la Naturaleza
 IceSaber:
@@ -1870,3 +1882,8 @@ PatchouliLibrary:
   Name: Gran Biblioteca Inamovible
 BailianFire:
   Name: Fuego del Dharma
+FairyWar:
+  Name: Gran Guerra de Hadas
+  Description: Añade todas las cartas exiliadas de |Apoyo a las hadas| a la mano.
+GainLuna:
+  Name: Baño Lunar
