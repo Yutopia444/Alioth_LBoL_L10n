@@ -21,9 +21,8 @@ YaoguaiBuster:
     mise à niveau !
 DoubleJiejie:
   Name: Barrière Duplex
-  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
-    Si {PlayerName} a |Barrière| ou |Bouclier|, infligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'} une seconde fois."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} 2\
+    \ fois.\n"
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi {PlayerName}\
     \ a |Barrière|, infligez {Damage} dégât{Damage:plural one='' other='s'} une seconde\
     \ fois."
@@ -57,6 +56,8 @@ Fengmozhen4:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
   FlavorText: Ce sort ne touche pas la personne maléfique, mais la personne qui se
     tient du côté droit de l'écran.
+  UpgradedDescription: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}
+    fois à tous les ennemis.
 TuimofuLuanwu:
   Name: Danse d'Exorcisme Sauvage
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi
@@ -108,13 +109,12 @@ ReimuWeiyan:
   Name: Vraie Majesté
   Description: Appliquez {Value1} |Faible{Value1:plural one='' other='s'}| à chaque
     ennemi.
-  FlavorText: La majesté des pirates boit du thé noir chez elle.
+  FlavorText: Dans la version pirate, Reimu boit du thé noir au lieu du thé vert.
 OverJingjie:
   Name: Au-dessus du Royaume
   Description: Choisissez une parmi {Value1} cartes d'attaque aléatoires à ajouter
     à la main. Elle |coûte temporairement| {Mana}.
-  FlavorText: J'espère qu'il n'y aura pas de points d'acupuncture sous-kon et d'étoiles
-    de navigation dans le ciel au-dessus du royaume.
+  FlavorText: J'espère juste qu'il n'y a pas d'étoiles directrices ici.
 JiejieAttack:
   Name: Coup de Barrière
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n{PlayerName}\
@@ -301,6 +301,9 @@ ReimuInstant:
     \ Ensuite, {PlayerName} joue un tour supplémentaire.\n|Limite de temps| {Mana}."
   FlavorText: Elle a été évaluée comme "la carte la plus recherchée dans le ciel au-dessus
     du royaume"
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nFin\
+    \ du tour. Ensuite, {PlayerName} joue un tour supplémentaire.\n|d:Limite de temps\
+    \ {Mana}. |"
 BoliPhantom:
   Name: Illusion Hakurei
   Description: Chaque fois que {PlayerName} |Exile| une carte qui n'est pas |Aiguille
@@ -369,7 +372,7 @@ StarlightTaifengSummoner:
     \ : La carte ajoutée inflige des dégâts une fois supplémentaire.\n|Pour chaque\
     \ <sprite=\"ManaSprite\" name=\"R\"> dépensé| : Augmentez les dégâts de la carte\
     \ ajoutée de {Value1}."
-  UpgradedDescription: "Mélangez un |Typhon Étoilé+| à la pioche.\n|Pour chaque {Mana}\
+  UpgradedDescription: "Placez un |Typhon Étoilé+| sur la pioche.\n|Pour chaque {Mana}\
     \ dépensé| : La carte ajoutée inflige des dégâts une fois supplémentaire.\n|Pour\
     \ chaque <sprite=\"ManaSprite\" name=\"R\"> dépensé| : Augmentez les dégâts de\
     \ la carte ajoutée de {Value1}."
@@ -394,6 +397,9 @@ BlazingStar:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|. {PlayerName}\
     \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, puis\
     \ effectuez un tour supplémentaire.\n|Limite de temps| {Mana}."
+  ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|. {PlayerName}\
+    \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, puis\
+    \ effectuez un tour supplémentaire.\n|d:Limite de temps {Mana}. |"
 IceSpark:
   Name: Laser Gelé
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
@@ -474,7 +480,8 @@ GapLady:
     \ {Mana}.\nPiochez {Value2} carte{Value2:plural one='' other='s'}."
 ChunseXiaojing:
   Name: Sentier Printanier
-  Description: "Gagnez {Mana}.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  Description: "Gagnez {Mana}.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\n\
+    |Découvert| {Value2}."
 ReimuSakura:
   Name: Sceau Fantaisiste en Fleurs
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -505,8 +512,8 @@ MarisaBlockB:
     de l'aide.
 CraftPotion:
   Name: Potion Artisanale
-  Description: Ajoutez {Value1:plural one='% |Potion Instable|' other='% |Potions
-    Instables|'} à la pioche.
+  Description: "Ajoutez {Value1:plural one='% |Potion Instable|' other='% |Potions\
+    \ Instables|'} à la pioche.\nPiochez {Value2} carte{Value2:plural one='' other='s'}."
   FlavorText: Parapluies rouges, perches blanches, après avoir mangé, allongez-vous
     sur la planche...
 RedLaser:
@@ -549,9 +556,10 @@ ReadyForBurst:
     \ {Value1} |Charge{Value1:plural one='' other='s'}|."
 WinterWarm:
   Name: Chauffe-mains
-  Description: "Gagnez {Value1} |Concentration{Value1:plural one='' other='s'}|.\n\
-    |Début| : Piochez {Value2:plural one='% carte' other='% cartes'}"
+  Description: "Gagnez {Value1} |Concentration{Value1:plural one='' other='s'}|."
   FlavorText: Tenir à l'écart des combustibles.
+  UpgradedDescription: "Gagnez {Value1} |Concentration{Value1:plural one='' other='s'}|.\n\
+    Piochez {Value2} carte{Value2:plural one='' other='s'}."
 AsteroidBelt:
   Name: Ceinture d'Astéroïdes
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -586,13 +594,14 @@ NightSeeStar:
 MarisaSteal:
   Name: Matériaux "Empruntés"
   FlavorText: '"Quels matériaux magiques utiles avez-vous à la maison ?"'
-  Description: "Ajoutez un |Arc-en-ciel| à la main.\n|Découvert| {Value1}."
+  Description: "Ajoutez {Value1} |Arc{Value1:plural one='' other='s'}-en-ciel| à la\
+    \ main.\n|Découvert| {Value2}."
 RainbowStar:
   Name: Explosion d'Étoiles Arc-en-ciel
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
-    \ <sprite=\"ManaSprite\" name=\"P\"> dépensé| : Cette carte inflige {Value1} dégât{Damage:plural\
-    \ one=' supplémentaire' other='s supplémentaires'}. Gagnez {Value2}<sprite=\"\
-    Point\" name=\"Power\">."
+    \ <sprite=\"ManaSprite\" name=\"1\"> dépensé| : Augmentez les dégâts de {Value1}.\n\
+    |Pour chaque <sprite=\"ManaSprite\" name=\"P\"> dépensé| : Augmentez les dégâts\
+    \ de {Value2}."
 ScryBlock:
   Name: Préméditation
   FlavorText: "\"J'irais me promener après le dîner pour voir qui me laissera entrer\
@@ -724,7 +733,7 @@ ExilePotion:
     \ C'est facile, ce n'est pas à moi de toute façon.\""
 PotionDefense:
   Name: Écho de Tir
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nJusqu'à\
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nJusqu'à\
     \ la fin du tour, chaque fois qu'une |Potion Instable| est utilisée, gagnez {Value1}\
     \ |Barrière{Value1:plural one='' other='s'}|."
 MasterOfCollection:
@@ -982,7 +991,8 @@ PoorAttack:
   Name: Tomber dans la Misère
   FlavorText: Ne harcelez pas les pauvres filles.
 SnowGirlCard:
-  Description: Appliquez {Value1} |Froid{Value1:plural one='' other='s'}|.
+  Description: Appliquez {Value1} fois le |Froid{Value1:plural one='' other='s'}|
+    à un ennemi aléatoire.
   Name: Visite de Yuki-Onna
 AliceAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Mana}."
@@ -994,11 +1004,15 @@ BaitianCard:
     Mlle Hieda no Akyuu a eu plus de temps libre pour le thé de l'après-midi.
   Name: Transmigration de Hieda
 HuiyinRetain:
-  Description: "Remettez jusqu'à {Value1:plural one='% carte' other='% cartes'} de\
-    \ la pile de défausse dans la main. |Retenez|-{Value1:plural one='la' other='les'}\
-    \ ce tour.\nFinissez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.\n\
-    |Limite de temps| {Mana}"
+  Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de la défausse et ajoutez-{Value1:plural one='la' other='les'} à votre main,\
+    \ avec |Retenue| pendant un tour.\n{PlayerName} termine son tour, jouez un tour\
+    \ supplémentaire.\n|limite de temps| {Mana}."
   Name: Pont du Retour
+  ExtraDescription1: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de la défausse et ajoutez-{Value1:plural one='la' other='les'} à votre main,\
+    \ avec |Retenue| pendant un tour.\n{PlayerName} termine son tour, jouez un tour\
+    \ supplémentaire.\n|d:Limite de temps {Mana}. |"
 DoremyDuplicate:
   Name: Rêve dans le Rêve
   Description: Choisissez une carte dans la main et ajoutez {Value1:plural one='%
@@ -2119,7 +2133,7 @@ BrainOverclock:
   Name: Surcadence de Cerveau
   Description: "Obtenez {Mana}.\n|Découvert| {Value1}."
 FairySupportLily:
-  Description: '|Au début du tour| : Gagnez {TurnMana}.
+  Description: '|Début du tour| : Gagnez {TurnMana}.
 
     |Quand exilée| : Gagnez {ExileMana}.'
   Name: Primevère de Lily White
@@ -2130,18 +2144,18 @@ FairySupportSunny:
   Name: Réfraction de Sunny
 FairySupportLuna:
   Name: Tranquillité de Luna
-  Description: "|Fin du tour| : Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.\n\
+  Description: "|Début du tour| : Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.\n\
     |Quand exilée| : Gagnez {Value2} |Esquive{Value2:plural one='' other='s'}|."
 FairySupportStar:
   Name: Détection par les Étoiles
-  Description: '|Au début du tour| : Appliquez {Value1} |Perte{Value1:plural one=''''
+  Description: '|Début du tour| : Appliquez {Value1} |Perte{Value1:plural one=''''
     other=''s''} de Puissance Temporaire| à tous les ennemis.
 
     |Quand exilée| : Appliquez {Value2} |Verrouillé{Value2:plural one='''' other=''s''}|
     à un ennemi aléatoire.'
 FairySupportLarva:
   Name: Ailes de Larva
-  Description: "|Fin du tour| : Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|.\n\
+  Description: "|Début du tour| : Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|.\n\
     |Quand exilée| : Gagnez {Value2} |Bouclier{Value2:plural one='' other='s'}|."
 ReimuFestival:
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
@@ -2323,7 +2337,7 @@ SakuyaDetective:
 MinengZhuru:
   Name: Infusion Arcanique
   Description: "L'effet passif de |Soutien Fée| est augmenté de {Value1} fois.\n(en\
-    \ main, en début ou en fin de tour)"
+    \ main, ou en début de tour)"
 FairySupportClownpiece:
   Name: Folie de Clownpiece
   Description: "|Quand exilée| : Gagnez {Mana}."
@@ -2378,7 +2392,7 @@ PrismriverAll:
     \ à la pile de défausse."
 FairySupportMaid:
   Name: Ménage de la Bonne Fée
-  Description: "|Fin du tour| : dégâts augmentés de {Value1} points.\n|Quand exilée|\
+  Description: "|Début du tour| : dégâts augmentés de {Value1} points.\n|Quand exilée|\
     \ : inflige {Value2} dégât{Value2:plural one='' other='s'} à l'ennemi avec la\
     \ santé la plus élevée."
 AutoKnife:
@@ -2392,7 +2406,7 @@ SakuyaUsage2:
   FlavorText: Arrêtez simplement de faire des corvées.
 FairySupportDayaojing:
   Name: Collaboration de la Grande Fée
-  Description: "|Fin du tour| : Gagnez {Value1} |Synergie{Value1:plural one='' other='s'}|.\n\
+  Description: "|Début du tour| : Gagnez {Value1} |Synergie{Value1:plural one='' other='s'}|.\n\
     |Quand exilée| : Gagnez {Value2} |Synergie{Value2:plural one='' other='s'}|."
 GrowDrawAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Croissance|\
@@ -2422,16 +2436,15 @@ FrostGarden:
     \ les ennemis.\nApplique |Froid| à tous les ennemis."
   FlavorText: Climatisation gratuite.
 GainMaid:
-  Description: "Pendant votre tour, lorsque le nombre de cartes dans votre main est\
-    \ inférieur ou égal à 3, ajoutez |Ménage de la Bonne Fée| à votre main.\nDéclenché\
-    \ une fois par tour.\n(Le code n'est pas écrit, il est conçu avec désinvolture\
-    \ et il manque un GainMaid)"
-  Name: Infiltration du Manoir du Démon Écarlate
+  Description: "Ajoutez un |Ménage de la Bonne Fée| à votre main."
+  Name: Couteau de Lancer de Combat
+  UpgradedDescription: "Ajoutez un |Ménage de la Bonne Fée| à votre main.\nLes dégâts\
+    \ de |Ménage de la Bonne Fée| sont augmentés d'une fois."
 IceGun:
   Description: "Infligez aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
     \ aux ennemis {Value1} fois.\nInfligez {Value2} fois ces dégâts aux cibles qui\
     \ ont |Froid|."
-  Name: Pistolet à Glaçons
+  Name: Cannon à Glaçons
   FlavorText: La vraie technique de la "lance" de glace.
 RemoveOverdraft:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nRestaure\
@@ -2440,7 +2453,7 @@ RemoveOverdraft:
 GainDayaojing:
   ExtraDescription1: "Ajoutez une |Collaboration de la Grande Fée| à votre main.\n\
     |d:Début : récupérez {Value1} point{Value1:plural one='' other='s'} de vie.|"
-  Name: Meilleur Ami
+  Name: Meilleure Amie
   Description: "Ajoutez une |Collaboration de la Grande Fée| à votre main.\n|Début|\
     \ : récupérez {Value1} point{Value1:plural one='' other='s'} de vie."
 CallFriends:
@@ -2523,3 +2536,58 @@ GainLuna:
 YouxiangMoon:
   Name: Fleurs et Oiseaux
   Description: '{PlayerName} ne sera plus à |Découvert| pendant cette bataille.'
+ReimuHeavyAttack:
+  FlavorText: '"Tu es déjà mort !"'
+  Name: Boli Punch
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nL'effet de\
+    \ |Puissance| sur cette carte est augmenté de {Value1} fois."
+HoldAllCard:
+  Name: Difficile de Lâcher Prise
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nToutes\
+    \ les cartes de votre main actuelle ont |Retenue| pendant un tour."
+  FlavorText: '"Ne le jetez pas, il pourrait être utile plus tard"'
+KnifeAim:
+  Name: Monde qui Rétrécit
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nJette tous\
+    \ les |Couteaux de lancer| en main, infligeant des dégâts à la cible."
+BulletStudy:
+  Name: Étude des Tirs de Barrage
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
+    \ {Value2}| : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    |Surcharge {Value2}| : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
+  FlavorText: Étudiant les tirs de barrage ennemis afin de s'en approprier les connaissances,
+    Marisa a publié de nombreux livres à un jeune âge.
+SplitPotion:
+  Name: Stimulateur
+  Description: "les |Potions instables| Attaquent une cible supplémentaire.\nMélangez\
+    \ {Value1} |Potion{Value1:plural one=' instable' other='s instables'}| dans la\
+    \ pioche."
+  FlavorText: La clé pour faire des potions le plus rapidement possible.
+DiscardToCharging:
+  Name: Ravitaillement
+  Description: "Choisissez n'importe quelle carte de votre main et défaussez-la.\n\
+    Pour chaque carte défaussée, gagnez {Value1} |Charge{Value1:plural one='' other='s'}|."
+  FlavorText: Le Hakkero peut brûler n'importe quoi.
+UnlimitedTime:
+  Name: Arrêt du Temps Parfait
+  Description: "Choisissez une parmi {Value1} cartes aléatoires avec |Limite de temps|\
+    \ et ajoutez-la à votre main, elle |coûte temporairement| {Mana}, avec |Exil|,\
+    \ |Éthéré|.\nLa |Limite de temps| est effacée."
+  FlavorText: Désolé, mon temps est illimité.
+XiangziEcho:
+  Name: Écho de la Vallée
+  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} dans
+    votre main, {Value1:plural one='elle obtient' other='elles obtiennent'} |Echo|.
+  FlavorText: '"Ya—hoo—"'
+PatchouliLibrary:
+  Name: Grande Bibliothèque Immobile
+  Description: Choisissez une parmi {Value1} cartes rares aléatoires à ajouter à votre
+    main, elle |coûte temporairement| {Mana}, avec |Exil|, |Éthéré|.
+BailianFire:
+  Name: Feu du Dharma
+  Description: Lorsque {PlayerName} débute son tour, ajoutez une carte de talent aléatoire
+    à la main, elle |coûte temporairement| {Mana}, avec |Exil|, |Éthéré|.
+  UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez une carte de\
+    \ talent aléatoire à la main, elle |coûte temporairement| {Mana}, avec |Exil|,\
+    \ |Éthéré|.\nPrend effet immédiatement."
