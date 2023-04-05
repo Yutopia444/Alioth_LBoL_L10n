@@ -35,8 +35,8 @@ YinyangCard:
   Description: "Inflige {Damage}.\nObtén {Shield} de |Barrera|."
 ShengtianKick:
   Name: Patada Ascendente
-  Description: "Saca {Value1:plural one='% carta' other='% cartas'} de tu mazo.\n\
-    Obtén {Value2} de |Poder Temporal|"
+  Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nObtén {Value2}\
+    \ de |Poder Temporal|"
 MengzhiYuzha:
   Name: Talismán de los Sueños
   Description: "Inflige {Damage} de daño.\nAñade la carta |Aguja Persuasiva| a tu\
@@ -276,8 +276,8 @@ ToolMicai:
   Description: "Gana {Value1} |Camuflaje Óptico|.\n|Limitado【{DeckCounter}】|"
   Name: Ropa de Camuflaje Óptico
 ToolFirstAid:
-  Description: "Elimina todas los debuff de {PlayerName}.\nGana {Value1} de vida.\n\
-    |Limitado【{DeckCounter}】|"
+  Description: "Elimina todas los efectos negativos de {PlayerName}.\nGana {Value1}\
+    \ de vida.\n|Limitado【{DeckCounter}】|"
   Name: Kit de Primeros Auxilios
 ToolInvincible:
   Name: Vestido de Ángel
@@ -360,7 +360,7 @@ SakuyaBlockW:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Defensa de Llave Negra
 SakuyaUsage:
-  FlavorText: Solo detén el tiempo y haz las tareas del hogar.
+  FlavorText: Solo detén el tiempo y luego tira lo demás por las escaleras.
   Name: Manual de Sakuya
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando se juega\
     \ {Value2} veces|: Quita esta carta de esta batalla. Coloca un |Pasos Circulares|\
@@ -395,6 +395,7 @@ ToolRandomTool:
   Name: Walkie-Talkie Táctico
   Description: "Elija 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
     \ Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
+  FlavorText: ' "¡Este es el USS Palanquin, lanzamiento aéreo entrante!"'
 ArtificialJewellery:
   Name: Joya Artificial
   Description: Gana 1 maná aleatorio.
@@ -439,7 +440,7 @@ FairySupportLily:
 FairySupportSunny:
   Name: Refracción de Sunny
   Description: "|Mientras está en la mano|: aumenta el daño de las cartas de ataque\
-    \ en {Value1}.\n|Al Exiliarse|: Gana {Valor2} de |Poder|."
+    \ en {Value1}.\n|Al Exiliarse|: Gana {Value2} de |Poder|."
 KoishiBlockG:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Marchitamiento de Rosas
@@ -969,7 +970,7 @@ SakuyaSleep:
   Description: "Añade un |Arcoíris| a la mano.\nTermina el turno de {PlayerName}."
   Name: Breve Descanso
 SakuyaDefenseRetain:
-  Name: Guardia Arriba
+  Name: Vigilancia
   Description: "Obtén {Block} de |Bloqueo|.\nEl |Bloqueo| no se pierde de {PlayerName}\
     \ al comienzo del próximo turno."
 VampireHunter:
@@ -1117,7 +1118,7 @@ ExileMagic:
   Description: "|Exilia| hasta {Value1:plural one='% carta' other='% cartas'} de la\
     \ mano. Añade esa cantidad de |Cuchillos Arrojadizos| a la mano."
 SakuyaInvestigate:
-  Name: Detective de Parada de Tiempo
+  Name: Detective del Tiempo Detenido
   Description: "Aplica {Value1} |Marcado|.\nAl comienzo de cada turno extra, devuelve\
     \ esta carta del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
 SakuyaAttackX:
@@ -1174,10 +1175,10 @@ SilverJump:
     \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a las pilas de robo y descarte."
 BladePower:
   Name: Carrera Deslumbrante
-  Description: "Gana {Value1} |Poder|.\n|Cuando se roba:| Si esta carta es la única\
-    \ carta en la mano, |cuesta temporalmente| {Mana}."
+  Description: "Obtén {Value1} de |Poder|.\n|Cuando se roba|: Si esta carta es la\
+    \ única carta en la mano, |cuesta temporalmente| {Mana}."
 SakuyaUsage2:
-  Name: Pasos Circulares
+  Name: Escalones Circulares
   Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
 NazrinBaota:
   FlavorText: "¡No uses grandes láseres en el túnel!\n-Kurodani Yamame"
@@ -1277,6 +1278,7 @@ YonglinCard:
 BailianJingang:
   Name: Cuerpo Reforzado
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Reflejo|."
+  FlavorText: También es consistente con las leyes de movimiento de Byakuren.
 PrismriverWhite:
   UpgradedDescription: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
     Añade {Light} |{Light:plural one='Luz Solar Refractada' other='Luces Solares Refractadas'}|\
@@ -1388,14 +1390,14 @@ DanmuJade:
     \ a la mano.\n|Por cada {Mana} gastado|: Obtén {Value2} de |Poder| y |Espíritu|."
   Name: Telar Danmaku Arcoíris
 MorphBird:
-  Name: Forma de Ave
+  Name: Forma Aviar
   Description: Obtén {Value1} de |Evasión|.
 HuiyinAttack:
   Name: Mito no Mitsukuni
   Description: "Inflige {Damage} de daño.\nDescarta hasta {Value1:plural one='% carta'\
     \ other='% cartas'}, luego roba esa misma cantidad de cartas."
 SijiCard:
-  Name: Juicio de los Pecados
+  Name: Juicio de los Pecadores
   Description: Elige una carta en la mano. Si es una |Desgracia| o carta de Estado,
     |Exílialo|. De lo contrario, cuesta {Mana} menos en este combate y se puede |Retener|
     una vez.
@@ -1595,7 +1597,7 @@ YijiuAttack:
   Description: "Inflige {Damage} de daño.\nCuando un enemigo es derrotado usando esta\
     \ carta, |Exílialo| y gana |Perfección| por {Value1} {Value1:plural one='turno'\
     \ other='turnos'}."
-  Name: Rayo del Dios Dragón
+  Name: Trueno del Dios Dragón
 ReisenMana:
   Name: Afinación Visionaria
   Description: Agrega 2 |Llamas| o 2 |Rocíos| a la mano.
@@ -1608,6 +1610,9 @@ HuiyinRetain:
   Description: "Devuelve hasta {Value1:plural one='% carta' other='% cartas'} de la\
     \ pila de descarte a la mano. |Retiene| ellos en este turno.\nFinaliza el turno.\
     \ Luego, {PlayerName} toma un turno adicional.\n|Límite de tiempo| {mana}"
+  ExtraDescription1: "Devuelve hasta {Value1:plural one='% carta' other='% cartas'}\
+    \ de la pila de descarte a la mano. |Retiene| ellos en este turno.\nFinaliza el\
+    \ turno. Luego, {PlayerName} toma un turno adicional.\n|d:Límite de tiempo {mana}|"
 BaitianCard:
   Name: Transmigración de Hieda
   Description: "Obtén {Block} de |Bloqueo|.\nDevuelve una carta de la pila de descarte\
@@ -1775,14 +1780,15 @@ ShuihuoCard:
   Description: "Inflige {Damage} de daño.\nObtén {Block} de |Bloqueo|."
 SanaeRice:
   Name: Cosecha de Arroz Abundante
-  Description: "Elimina todas los debuff de {PlayerName}.\nGana {Value1} de vida."
+  Description: "Elimina todas los efectos negativos de {PlayerName}.\nGana {Value1}\
+    \ de vida."
 ModuoluoFire:
   Name: Fuego de Ena
   Description: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige {Value1}
     de daño a cada enemigo.
 SakuraBlade:
   Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
-    Obtén {Value1} de |Bloqueo|.\nAplica {Value1} de |Marcado|."
+    Aplica {Value1} de |Marcado|.\nObtén {Value1} de |Evasión|."
   Name: Flor de Cerezo Centelleante
 ShanyuCard:
   Name: Orbe de Montaña y Lluvia
@@ -1811,9 +1817,9 @@ IceBlock:
     \ y |Evasión|.\nFinaliza el turno de {PlayerName}."
 FairyEzuoju:
   Name: Travesura de Hadas
-  Description: "Agrega {Valor1} carta{Value1:plural one='' other='s'} de |Apoyo de\
+  Description: "Agrega {Value1} carta{Value1:plural one='' other='s'} de |Apoyo de\
     \ hadas| aleatoria{Value1:plural one='' other='s'} a la pila de robo. {Value1:plural\
-    \ one='Tiene' other='Tienen'} |Reponer|.\nAgrega {Valor2} |Residuo Oscuro{Value2:plural\
+    \ one='Tiene' other='Tienen'} |Reponer|.\nAgrega {Value2} |Residuo Oscuro{Value2:plural\
     \ one=' Oscuro' other='s Oscuros'}| a la pila de descarte."
 FairyTree:
   Name: Morada de las Hadas
@@ -1831,6 +1837,7 @@ Ice:
   Description: Aplica |Frío|.
 OverdraftDefense:
   Name: Floración Asombrosa
+  Description: "Obtén {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
 FrostGarden:
   Name: Jardín Escarchado
 IceLance:
@@ -1845,6 +1852,7 @@ GainMaid:
   Name: Infiltración en la Mansión
 CirnoDraw:
   Name: Sabiduría de la Hada
+  Description: Roba {Value1} carta{Value1:plural one='' other='s'}.
 Tether:
   Name: Compañeras
 GainDayaojing:
@@ -1862,8 +1870,8 @@ XiangziEcho:
 ReimuHeavyAttack:
   Name: Saco de Boxeo
 BulletStudy:
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Block} de\
-    \ |Bloqueo|."
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Shield}\
+    \ de |Barrera|."
   UpgradedDescription: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Shield}\
     \ de |Barrera|."
 HoldAllCard:
@@ -1872,7 +1880,7 @@ HoldAllCard:
     \ |Retención| por un turno."
 SplitPotion:
   Description: "Las |Pociones inestables| Atacan a un objetivo adicional.\nAgrega\
-    \ {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'} en\
+    \ {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'} a\
     \ la pila de robo."
   Name: Estimulantes
 DiscardToCharging:
@@ -1897,3 +1905,33 @@ FrostNova:
 AttackWithEveryColor:
   Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
     daño.'
+  Name: Ataque Colorido
+ZiwoCard:
+  Name: Amor Desinteresado
+SanaeMiracle:
+  Description: ":Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'\
+    \ other='veces'}.\nSolo se puede usarse si la pila de robo está vacía."
+  ExtraDescription1: "|d:Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural\
+    \ one='vez' other='veces'}.|\nSolo se puede usarse si la pila de robo está vacía."
+KaguyaTreeSee:
+  Description: "Esta carta cuesta {Mana} menos por cada vez que {PlayerName} recibe\
+    \ daño en este combate.\nMueve todas las cartas con |Exilio| del exilio a la pila\
+    \ de robo.\nTodas las cartas pierden |Exilio|."
+MistLake:
+  Description: "Obtén {Valor1} de |Evasión|.\nSi hay 3 o más manás sin gastar, roba\
+    \ {Value2} carta{Value2:plural one='' other='s'}."
+KanakoWalk:
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}. |Exilia| todas\
+    \ las cartas de Estado y |Desgracia| robadas de esta manera.\nFinaliza el turno.\
+    \ |Retienes| en la mano las cartas y todo el maná no gastado."
+FlanBlack:
+  Name: Demonización
+  Description: "|d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en\
+    \ una futura actualización!|"
+TigerNeijin:
+  Description: "Obtén {Value1} de |Poder|. Aumenta el |Poder| de esta carta. por {Value2}\
+    \ en este combate.\nSiempre que {PlayerName} reciba daño por un ataque no bloqueado,\
+    \ devuelve esta carta de la pila de descarte a la mano."
+LongArm:
+  Description: "Inflige {Damage} de daño.\nSi hay más de {Value1} carta{Value1:plural\
+    \ one='' other='s'} en la mano, gana {Mana}."
