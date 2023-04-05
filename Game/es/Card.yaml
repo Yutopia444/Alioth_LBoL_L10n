@@ -208,7 +208,7 @@ ReimuDrink:
   UpgradedDescription: "Gana {Value1} de vida.\nObtén {Value1} de |Poder Temporal|.\n\
     Añade {Value2} |Ebrio{Value2:plural one='' other='s'}| a tu mano."
   Name: Ofrenda de Sake
-  Description: "Gana {Value1} de vida.\nAñadir {Value2} |Ebrio{Value2:plural one=''\
+  Description: "Gana {Value1} de vida.\nAñade {Value2} |Ebrio{Value2:plural one=''\
     \ other='s'}| a tu mano"
 YakongDianxue:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} pierda un buff,\
@@ -635,8 +635,8 @@ Qingshan:
   Name: El último Hogar de Uno
   Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia:| Gana {Mana}."
 CraftPotion:
-  Description: Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones
-    Inestables|'} a la pila de robo.
+  Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
+    \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
   Name: Crear Poción
 DoubleLianhuadie:
   Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Value1}
@@ -649,15 +649,17 @@ Wunvyu:
     \ robar, aumenta el daño de esta carta en {Value2} en este combate."
 ChunseXiaojing:
   Name: Senda de Color Primaveral
-  Description: "Gana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
+  Description: "Gana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}.\n\
+    |Sobregiro| {Value2}."
 ReimuInstant:
   Name: '"Sello de Ensueño -Destello-"'
   Description: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
     \ toma un turno extra.\n|Límite de tiempo| {Mana}."
 WinterWarm:
   Name: Calentadora de Manos
-  Description: "Gana {Value1} |Concentraci{Value1:plural one='ón' other='ones'}|.\n\
-    |Debut:| Roba {Value2:plural one='% carta' other='% cartas'}."
+  Description: "Gana {Value1} |Concentraci{Value1:plural one='ón' other='ones'}|."
+  UpgradedDescription: "Gana {Value1} |Concentraci{Value1:plural one='ón' other='ones'}|.\n\
+    Roba {Value2:plural one='% carta' other='% cartas'}."
 DropBook:
   Name: Rebelión Ortodoxa
   Description: "Obtén {Block} de |Bloqueo|.\nAñade |{Value1:plural one='% Astrología'\
@@ -682,13 +684,12 @@ ScryBlock:
   Name: Premeditación
   Description: Siempre que {PlayerName} |explora|, obtiene {Value1} de |Bloqueo|.
 MarisaSteal:
-  Description: "Añade un |Arcoíris| a la mano.\nAl comienzo del próximo turno de {PlayerName},\
-    \ pierde {Value1} maná aleatorio."
+  Description: "Añade {Value1} |Arcoíris| a la mano.\n|Sobregiro| {Value2}."
   Name: Materiales "Prestados"
 RainbowStar:
   Description: "Inflige {Damage} de daño.\n|Por cada <sprite=\"ManaSprite\" name=\"\
-    P\"> gastado:| Esta carta inflige {Value1} más de daño. Ganas {Value2}<sprite=\"\
-    Point\" name=\"Power\">."
+    1\"> gastado:| Aumenta el daño en {Value1}.\n|Por cada <sprite=\"ManaSprite\"\
+    \ name=\"P\"> gastado:| Aumenta el daño en {Value2}."
   Name: Explosión de Estrellas Arcoíris
 ShibaiChanwu:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
@@ -808,7 +809,7 @@ ShootMoon:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}:| Gana {Value1} |Evasión|."
   Name: Disparar a la Luna
 PotionDefense:
-  Description: "Obtén {Block} de |Bloqueo|.\nHasta el final del turno, siempre que\
+  Description: "Obtén {Shield} de |Barrera|.\nHasta el final del turno, siempre que\
     \ una |Poción Inestable| se use, gana {Value1} de |Barrera|."
   Name: Eco Resonante
 FireUpBagualu:
@@ -880,6 +881,9 @@ BlazingStar:
   Description: "Obtén {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo\
     \ del próximo turno de {PlayerName}.\nFinaliza el turno. Luego, toma un turno\
     \ extra.\n|Límite de tiempo| {Mana}."
+  ExtraDescription1: "Obtén {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo\
+    \ del próximo turno de {PlayerName}.\nFinaliza el turno. Luego, toma un turno\
+    \ extra.\n|d: Límite de tiempo {Mana}.|"
 ChargingToMana:
   Name: Conversión de Cargas
   Description: Pierde todas las |Cargas|. Por cada |Carga| perdida de esta manera,
@@ -1839,3 +1843,30 @@ YouxiangMoon:
   Name: Belleza de la Naturaleza
 IceSaber:
   Name: Espada de Hielo
+XiangziEcho:
+  Name: Eco del Valle
+ReimuHeavyAttack:
+  Name: Saco de Boxeo
+BulletStudy:
+  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Block} de\
+    \ |Bloqueo|."
+  UpgradedDescription: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Shield}\
+    \ de |Barrera|."
+HoldAllCard:
+  Name: Difícil de Dejarlo
+  Description: "Obtén {Block} de |Bloqueo|.\nTodas las cartas en tu mano actual tienen\
+    \ |Retención| por un turno."
+SplitPotion:
+  Description: "Las |Pociones inestables| Atacan a un objetivo adicional.\nAgrega\
+    \ {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'} en\
+    \ la pila de robo."
+  Name: Estimulantes
+DiscardToCharging:
+  Name: Reabastecimiento
+KnifeAim:
+  Description: "Inflige {Damage} de daño.\nLanza todos los |Cuchillos arrojadizos|\
+    \ en la mano, infligiendo daño al objetivo."
+PatchouliLibrary:
+  Name: Gran Biblioteca Inamovible
+BailianFire:
+  Name: Fuego del Dharma
