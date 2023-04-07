@@ -89,9 +89,9 @@ TurnStartDontLoseBlock:
     \ turno' other='de los próximos % turnos'}."
 Amulet:
   Name: Amuleto
-  Description: Niega {Level:plural one='el siguiente debuff' other='los siguientes
-    % debuffs'}.
-  Brief: Niega el siguiente debuff.
+  Description: Niega {Level:plural one='el siguiente efecto negativo' other='los siguientes
+    % efectos negativos'}.
+  Brief: Niega el siguiente efecto negativo.
 AmuletForCard:
   Brief: Resiste las próximas cartas de estado que recibas (Las vas a |Exiliar|).
   Name: Resguardo
@@ -323,7 +323,7 @@ EnemyEnergy:
 FastAttack:
   Description: Después de jugar la primera carta de un turno, {OwnerName} inflige
     {Level} de daño a {PlayerName}.
-  Name: Velocidad Pura
+  Name: Velocista Extrema
 PowerByDefense:
   Name: Escudo Inquebrantable
   Description: Cada vez que se juega una carta de defensa, {OwnerName} gana {Level}
@@ -426,9 +426,9 @@ ShendengSe:
     {Level} |Débil|, |Frágil| o |Vulnerable|.
 TaijiLiangyiSe:
   Description: Al comienzo del turno de {PlayerName}, si {Level:plural one='no hay'
-    other='hay menos de %'} |Orbe Yin-Yang| en la mano, agregue {Level:plural one='un
-    |Orbe Yin-Yang|' other='|Orbes Yin-Yang|'} a la mano{Level:plural one='.' other='
-    hasta que haya %.'}
+    other='hay menos de %'} |Orbe Yin-Yang| en la mano, agrega {Level:plural one='un
+    |Orbe Yin-Yang|' other='varios |Orbes Yin-Yang|'} a la mano{Level:plural one='.'
+    other=' hasta que haya %.'}
   Name: El Nacimiento del Yin-Yang
   Brief: Al comienzo del turno de {PlayerName}, si hay menos |Orbes Yin-Yang| en la
     mano, agrégalos a la mano hasta que haya tantos.
@@ -476,6 +476,7 @@ HuanxiangBlockSe:
   Description: Cada vez que una carta es |Exiliada|, {PlayerName} gana {Level} de
     |Bloqueo|.
   Brief: Cada vez que una carta es |Exiliada|, {PlayerName} gana algo de |Bloqueo|.
+  Name: Frontera de la Fantasía
 BurstDrawSe:
   Name: Duelo de Velocidad
   Description: Al entrar en |Supernova|, roba {Level:plural one='% carta' other='%
@@ -560,8 +561,8 @@ PoisonPotionSe:
 TimeAuraSe:
   Name: Pulso Temporal
   Description: "Al final del turno de {PlayerName}, inflige {Level} de daño a todos\
-    \ los enemigos.\nPierde un nivel por cada enemigo dañado."
-  Brief: "Al final del turno de {PlayerName}, inflige daño a cada enemigo.\nPierde\
+    \ los enemigos.\nDisminuye un nivel por cada enemigo dañado."
+  Brief: "Al final del turno de {PlayerName}, inflige daño a cada enemigo.\nDisminuye\
     \ un nivel por cada enemigo dañado."
 GainKnifeSe:
   Brief: Al comienzo del turno de {PlayerName}, agrega |Cuchillos Arrojadizos| a la
@@ -717,8 +718,8 @@ TiangouOrderSe:
     de |Bloqueo|.
   Brief: Cuando {OwnerName} recibe daño de ataque, {PlayerName} obtiene |Bloqueo|.
 KokoroDanceSe:
-  Description: Cada vez que un enemigo recibe una |Debuff|, {PlayerName} le inflige
-    {Level} de daño.
+  Description: Cada vez que un enemigo recibe un |Efecto Negativo|, {PlayerName} le
+    inflige {Level} de daño.
   Brief: Cuando el enemigo obtiene efectos negativos, {PlayerName} le inflige daño.
   Name: Noh de la Oscuridad
 SkyWaterSe:
@@ -734,7 +735,7 @@ BlackPoisonSe:
   Brief: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, agrega
     acumulaciones de |Veneno| a ese enemigo.
 MeilingAbilitySe:
-  Brief: Siempre que {OwnerName} gana |Poder| o |Poder Temporal|, gana algo de |Barrera|.
+  Brief: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
   Name: Puño de Arcoíris Vibrante
   Description: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
 Cold:
@@ -754,6 +755,7 @@ MoonWorldSe:
 LoseSpiritSe:
   Description: Al comienzo del turno de {PlayerName}, pierde {Level} de |Espíritu|.
   Brief: Al comienzo del turno de {PlayerName}, pierde algo de |Espíritu|.
+  Name: Capa de Plumas Perdida
 UseCardToLoseGame:
   Name: Corta Esperanza de Vida
   Description: Pierde la partida después de jugar {Count:plural one='% carta mas'
@@ -824,3 +826,9 @@ ColdPotionSe:
   Name: Liquido Refrigerante
   Description: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
   Brief: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
+ExtraDraw:
+  Name: Sabiduría de la Hada
+WhiteWorldSe:
+  Name: Mundo de Blanco Puro
+BailianFireSe:
+  Name: Fuego del Dharma
