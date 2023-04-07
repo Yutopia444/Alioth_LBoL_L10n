@@ -13,7 +13,7 @@ Game:
   ActualOrderExplain: "各場所にはカードが追加された順番で表示されます。 \n \nデッキ：ゲーム中に獲得した順番 \n山札：先頭のカードが山札の一番上\n\
     捨て札：最後尾のカードが捨て札の一番上\n \n通常、山札をこの順番で表示することはできません。"
   EnemyTurn: エネミー
-  BattleStart: 戦闘開始
+  BattleStart: 決闘開始
   PlayerTurn: プレイヤー
   ManaAmountOrder: コスト
   NextSkip: 報酬をスキップ
@@ -31,7 +31,7 @@ Game:
   RarityOrder: レア度
   RarityOrderExplain: "同じレア度のカードを索引順に表示します。\n同名カードは追加順で並べられます。"
   DiscardZone: 捨て札
-  Exhibit: 展示物
+  Exhibit: 展示品
   Title: 東方光耀夜 ~ Lost Branch of Legend
   ExileZone: 廃棄済
 Explain:
@@ -42,7 +42,7 @@ Explain:
   ShinmyoumaruForge: 攻撃カードは攻撃カードに、防御カードは防御カードに変化する。
   RollCard: "カード報酬のルール：\n\n報酬で出現するカードは、以下のすべての条件を満たしている必要があります。\n1. マナ基盤の範囲(数)でそのカードを使用できる。\n\
     2. キャラクター専用のカードの場合、そのキャラクターでプレイしているか、そのキャラクターのカードが報酬に追加される展示物(ボス報酬)を持っている。\n3.\
-    \ マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の耀展品(ボス報酬)を所有していると：黑暗魔导书、贤者之石、万宝槌\n\
+    \ マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の耀展品(ボス報酬)を所有していると：黒魔術の本、賢者の石、打ち出の小槌\n\
     マナ基盤は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
     ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
     \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
@@ -51,8 +51,8 @@ Explain:
     ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\">があるからです。\n<sprite=\"\
     ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\">のコストを持つ青と黒のカードは、<sprite=\"\
     ManaSprite\" name=\"U\">を持っていないため、<sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
-    ManaSprite\" name=\"P\">でコストを支払えても取得できません。\nこれは彩色マナがカードプールを混乱させて、「贤者之石」をピックしたくないという事態を防ぐためです。\n\
-    \nボス報酬「空白卡牌」はルール3を直接無効にします。\nコストの合計が5以上のカードで、数字部分<sprite=\"ManaSprite\" name=\"\
+    ManaSprite\" name=\"P\">でコストを支払えても取得できません。\nこれは彩色マナがカードプールを混乱させて、「賢者の石」をピックしたくないという事態を防ぐためです。\n\
+    \nボス報酬「空白のカード」はルール3を直接無効にします。\nコストの合計が5以上のカードで、数字部分<sprite=\"ManaSprite\" name=\"\
     X\">を含めると現在のマナ基盤で支払うことのできないカードはルール１の対象外です。数字部分を軽減する方法は多くあります。"
 UI:
   Yes: はい
@@ -119,7 +119,7 @@ StartGame:
   DifficultyHint: 「Slay the Spire」を遊んだことが無い場合、Easyを最初にプレイすることを推奨します。
   NeedClear: 前の難易度をクリアすると解放される
   CheckDeck: 初期デッキ
-  StartMoney: 資金力
+  StartMoney: 初期資金力
   CharacterUnset: 主人公を選択
   SkillSpellCard: スペルカード
   Puzzle: 難題
@@ -270,6 +270,8 @@ Tooltip:
   ExileZone:
     Description: "|廃棄|されたカードをここに置く。\n\nクリックしてこの戦闘中に|廃棄|したカードを見る。"
     Name: 廃棄済
+  Character:
+    Name: '{0}'
 BattleHint:
   ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
 History:
@@ -283,3 +285,7 @@ CardType:
   Ability: 能力
   Skill: スキル
   Misfortune: 厄災
+StatusEffectType:
+  Special: 特殊効果
+  Positive: バフ
+  Negative: デバフ
