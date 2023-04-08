@@ -45,7 +45,8 @@ MengzhiYuzha:
 Fengmozhen4:
   Name: Circulo Sella-Maldad
   Description: Inflige {Damage} de daño a cada enemigo.
-  UpgradedDescription: Inflige {Damage} de daño {Value1} veces a todos los enemigos.
+  UpgradedDescription: Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural
+    one='vez' other='veces'}.
 TuimofuLuanwu:
   Name: Danza de Exorcismo Salvaje
   Description: Inflige {Damage} de daño a un enemigo aleatorio {Value1} veces.
@@ -365,18 +366,17 @@ SakuyaUsage:
   FlavorText: Solo detén el tiempo y luego tira lo demás por las escaleras.
   Name: Manual de Sakuya
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando se juega\
-    \ {Value2} veces|: Quita esta carta de esta batalla. Coloca un |Escalones Circulares|\
-    \ en la parte superior de la pila de robo."
+    \ por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira esta carta del combate.\
+    \ Agrega |Escaleras Circulares| a la parte superior de la pila de robo."
   ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando\
     \ se juega por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira esta carta\
-    \ del combate. Finaliza el turno. Agrega un |Escalones Circulares| a la parte\
-    \ superior de la pila de robo.\n(Se ha jugado {PlayCount:plural one='% vez' other='%\
-    \ veces'})."
+    \ del combate. Finaliza el turno. Agrega |Escaleras Circulares| a la parte superior\
+    \ de la pila de robo.\n(Se ha jugado {PlayCount:plural one='% vez' other='% veces'})."
 CoolBreeze:
   Description: "Obtén {Block} de |Bloqueo|.\nSi algún enemigo tiene |Frío|, |Mejora|\
     \ {Value1} {Value1:plural one='carta aleatoria' other='cartas aleatorias'} en\
     \ la mano. Prioriza las cartas de ataque."
-  Name: Brisa Fresca
+  Name: Brisa Refrescante
 CirnoBlockU:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Escudo de Hielo
@@ -1181,7 +1181,7 @@ BladePower:
   Description: "Obtén {Value1} de |Poder|.\n|Cuando se roba|: Si esta carta es la\
     \ única carta en la mano, |cuesta temporalmente| {Mana}."
 SakuyaUsage2:
-  Name: Escalones Circulares
+  Name: Escaleras Circulares
   Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
 NazrinBaota:
   FlavorText: "¡No uses grandes láseres en el túnel!\n-Kurodani Yamame"
@@ -1681,13 +1681,14 @@ FangxiangAttack:
     \ one='vez' other='veces'}.\nDe lo contrario, aplica {Value1} de |Veneno|."
   Name: Toxina Devastadora
 JunkoNightmare:
-  Description: "Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}\
-    \ a todos los enemigos.\n|Exilia| toda la mano. Agrega esa misma cantidad de |Puros|\
+  Description: "Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'\
+    \ other='veces'}.\n|Exilia| toda la mano. Agrega esa misma cantidad de |Puros|\
     \ a la mano."
   Name: Pesadilla Escalofriante
-  UpgradedDescription: "Inflige {Damage} de daño {Value1} {Damage:plural one='vez'\
-    \ other='veces'} a todos los enemigos.\n|Exilia| cualquier cantidad de cartas\
-    \ elegidas de tu mano, luego agrega una cantidad igual de |Puro| a tu mano."
+  UpgradedDescription: "Elige hasta {Value2} carta{Value1:plural one='' other='s'}.\n\
+    Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez' other='veces'}.\n\
+    |Exilia| toda la mano, excepto las cartas elegidas. Agrega esa misma cantidad\
+    \ de |Puros| a la mano."
 ZoufangWater:
   Name: Agua Cristalina de Suwa
   Description: "Inflige {Damage} de daño {Value1} veces.\nEste daño se incrementa\
@@ -1815,11 +1816,11 @@ GatherFairy:
 RemoveOverdraft:
   Name: Curar Heridas
 IceBlock:
-  Name: Barrera Gélida
+  Name: Bloque de Hielo
   Description: "Inmune al daño durante un turno.\nElimina todo el |Bloqueo|, |Barrera|\
     \ y |Evasión|.\nFinaliza el turno de {PlayerName}."
 FairyTree:
-  Name: Morada de las Hadas
+  Name: Hogar de las Hadas
   Description: Añade una carta de habilidad a la mano. Gana {Mana} y roba {Value1:plural
     one='% carta' other='% cartas'}.
 BrainOverclock:
@@ -1861,33 +1862,47 @@ GainStar:
 YouxiangMoon:
   Name: Belleza de la Naturaleza
 IceSaber:
-  Name: Espada de Hielo
+  Name: Espada Forjada en Hielo
 XiangziEcho:
-  Name: Eco del Valle
+  Name: Eco de la Montaña
+  Description: Elige {Value1} carta{Value1:plural one='' other='s'} en tu mano. {Value1:plural
+    one='Obtiene' other='Obtienen'} |Eco|.
 ReimuHeavyAttack:
-  Name: Saco de Boxeo
+  Name: Puño de los Hakurei
+  Description: "Inflige {Damage} de daño.\nEl |Poder| aumenta el daño de esta carta\
+    \ {Value1} {Value1:plural one='vez' other='veces'}."
 BulletStudy:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Shield}\
     \ de |Barrera|."
+  Name: Estudio Danmaku
 SplitPotion:
   Description: "Las |Pociones inestables| Atacan a un objetivo adicional.\nAgrega\
     \ {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'} a\
     \ la pila de robo."
-  Name: Estimulantes
+  Name: Químico Doble
 DiscardToCharging:
-  Name: Reabastecimiento
+  Name: Reponer Combustible
+  Description: "Descarta cualquier cantidad de cartas de la mano.\nPor cada carta\
+    \ descartada de esta manera, gana {Value1} |Carga|."
 KnifeAim:
-  Description: "Inflige {Damage} de daño.\nLanza todos los |Cuchillos arrojadizos|\
+  Description: "Inflige {Damage} de daño.\nDescarta todos los |Cuchillos arrojadizos|\
     \ en la mano, infligiendo daño al objetivo."
+  Name: Mundo de la Deflación
 PatchouliLibrary:
   Name: Gran Biblioteca Inamovible
 BailianFire:
-  Name: Fuego del Dharma
+  Name: Fuegos de Hokkai
+  Description: Al comienzo del turno de {PlayerName}, agrega una carta técnica aleatoria
+    a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
+  UpgradedDescription: "Al comienzo del turno de {PlayerName}, agrega una carta de\
+    \ técnica aleatoria a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio|\
+    \ y |Etéreo|.\nEste efecto se aplica inmediatamente."
 GainLuna:
-  Name: Baño Lunar
+  Name: Luz de la Luna
 WhiteWorld:
   Description: "Al final del turno de {PlayerName}, gana {Value1} de |Poder| y |Espíritu|.\n\
     |Congelación de Maná| {Mana}."
+  Name: Mundo de Blanco Puro
 AttackWithEveryColor:
   Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
     daño.'
@@ -1923,3 +1938,50 @@ LongArm:
     \ one='' other='s'} en la mano, gana {Mana}."
 CallFriends:
   Name: Llamar a los Amigos
+HualiIce:
+  Name: Imponente Hielo de Verano
+ForeverCool:
+  Name: La Siempre Fresca Temporada
+IceBarrier:
+  Name: Barrera de Hielo
+MarisaHoldCard:
+  Description: "Elige hasta {Value1} {Value1:plural one='carta' other='cartas'} en\
+    \ la mano. |Retenlo| en este turno.\nObtén {Block} de |Bloqueo|."
+UnlimitedTime:
+  Description: "Elige 1 de {Value1} cartas con |Límite de Tiempo| para agregarla a\
+    \ la mano. |Cuesta temporalmente| {Mana}, teniendo |Exilio| y |Etéreo|, \nEl |Limite\
+    \ de Tiempo| se elimina."
+ZeroK:
+  Name: Cero Absoluto
+Blizzard:
+  Name: Tormenta de Nieve
+IceMatrix:
+  Name: Matriz Congelada
+GainSunny:
+  Name: Amanecer
+FreezeToIce:
+  Name: Espécimen Congelado
+FairyOnIce:
+  Name: Hada sobre Hielo
+CirnoFestival:
+  Name: Infiltración en el Banquete
+DeepFreeze:
+  Name: Congelación Profunda
+FairyTeam:
+  Name: Gran Guerra de Hadas
+CirnoEcho:
+  Name: Regalo de la Naturaleza
+ColdBreath:
+  Name: Aliento de Diamante
+GainLily:
+  Name: Primavera Sorpresa
+IceGun:
+  Name: Ametralladora de Carámbanos
+CirnoInForest:
+  Name: A Plena Vista
+MoreFriends:
+  Name: Mariposa Social
+GainLarva:
+  Name: Espray en Polvo Escamado
+FairyTrick:
+  Name: Travesura de Hadas
