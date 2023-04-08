@@ -29,9 +29,9 @@ DoubleJiejie:
   Name: 二重结界
   Description: |-
     造成 {Damage} 点伤害。
-    如果{PlayerName}拥有|护盾|，造成两次伤害。
+    如果{PlayerName}拥有|护盾|，造成 {Value1} 次伤害。
   UpgradedDescription: |
-    造成 {Damage} 点伤害两次。
+    造成 {Damage} 点伤害 {Value1} 次。
   FlavorText: 只需要两面镜子就可以看到无限循环的世界。
 
 Fengmozhen:
@@ -517,9 +517,6 @@ BulletStudy:
   Name: 弹幕研习
   Description: |-
     造成 {Damage} 点伤害。
-    |超载 {Value2} |：获得 {Block} 点|格挡|。
-  UpgradedDescription: |-
-    造成 {Damage} 点伤害。
     |超载 {Value2} |：获得 {Shield} 点|护盾|。
   FlavorText: 研究对方的弹幕化为自己的知识，魔理沙年纪轻轻，却已出版了多部书籍。
 
@@ -665,11 +662,11 @@ StarShower:
     获得 {Value1} 层|充能|；如果{PlayerName}没有|充能|，改为 {Value2} 层。
   FlavorText: 「人生不如意十有八九呀。」
 
-HoldAllCard:
+MarisaHoldCard:
   Name: 难以割舍
   Description: |-
+    选择至多 {Value1} 张手牌，|保留|一回合。
     获得 {Block} 点|格挡|。
-    |保留|当前所有的手牌一回合。
   FlavorText: 「别扔啊，这东西将来也许有用呢」
 
 ThrowBigStar:
@@ -1152,12 +1149,6 @@ SakuyaShop:
     抽 {Value1} 张牌。
   FlavorText: 请不要误会，幻想乡的超市不贩卖吸血鬼。
 
-LoyalMaid:
-  Name: 忠实的仆从
-  Description: |-
-    获得 {Shield} 点|护盾|。
-    在额外回合开始时，从弃牌堆回到手中，暂塑为{Mana}。
-
 SilverBlade:
   Name: 银色异次元
   Description: 每一张攻击牌生效后，获得 {Value1} 点|护盾|。
@@ -1179,6 +1170,10 @@ BackOfKnife:
   Description: |-
     将一张|尖刀快车|加入手中。
     |放逐|区内的每张|飞刀|提高|尖刀快车| {Value1} 点伤害，将这些|飞刀|移出本场战斗。
+    （将会提高 {IncreasedDamage} 点伤害）
+  NonbattleDescription: |-
+    将一张|尖刀快车|加入手中。
+    |放逐|区内的每张|飞刀|提高|尖刀快车| {Value1} 点伤害，将这些|飞刀|移出本场战斗。
 
 GroupOfKnife:
   Name: 尖刀快车
@@ -1191,6 +1186,12 @@ ClockCorpse:
 StopTime:
   Name: 凝固时间
   Description: '{PlayerName}的回合结束时，剩余法力中随机的 {Value1} 点，不会流失。'
+
+LoyalMaid:
+  Name: 忠实的仆从
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    在额外回合开始时，从弃牌堆回到手中，暂塑为{Mana}。
 
 TimeLord:
   Name: 主宰时空
@@ -1338,6 +1339,16 @@ Ice:
   Name: 冰晶
   Description: 施加|寒冷|。
 
+ColdBreath:
+  Name: 钻石气息
+  Description: 随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
+  UpgradedDescription: |-
+    随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
+    |初见|：将 {Value1} 张|冰晶|置于抽牌堆顶。
+  ExtraDescription1: |-
+    随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
+    |d:初见：将 {Value1} 张冰晶置于抽牌堆顶。|
+
 IceLance:
   Name: 冰枪术
   Description: |-
@@ -1357,7 +1368,7 @@ OverdraftDefense:
     |透支| {Value1} 。
 
 GrowDrawAttack:
-  Name: 自然的眷顾
+  Name: 牵牛花藤
   Description: |-
     造成 {Damage} 点伤害。
     |成长|：额外抽 {Value1} 张牌（最多 {Value2} 张）。
@@ -1373,7 +1384,7 @@ GainLarva:
     将一张|拉尔瓦的振翅|加入手中。
 
 BlueRose:
-  Name: 蓝玫瑰
+  Name: 冰蔷薇
   Description: |-
     造成 {Damage} 点伤害。
     如果目标处于|寒冷|，获得 {Block} 点|格挡|。
@@ -1385,7 +1396,7 @@ CoolBreeze:
   Name: 凉爽清风
   Description: |-
     获得 {Block} 点|格挡|。
-    任意敌人处于|寒冷|时，|升级| {Value1} 张随机的手牌，攻击牌优先。
+    任意敌人处于|寒冷|时，|升级| {Value1} 张随机的手牌，技能牌优先。
 
 FrostGarden:
   Name: 冷雾花园
@@ -1410,7 +1421,14 @@ CirnoDraw:
   Description: 抽 {Value1} 张牌。
   UpgradedDescription: |-
     抽 {Value1} 张牌。
-    下一回合开始时，额外抽 {Value2} 张牌。
+    下一回合开始时，抽 {Value2} 张牌。
+
+IceBlock:
+  Name: 寒冰屏障
+  Description: |-
+    免疫所有的伤害一回合。
+    移除所有的|格挡|、|护盾|和|闪避|。
+    |保留|手牌一回合，结束{PlayerName}的回合。
 
 IceSaber:
   Name: 塑冰成剑
@@ -1419,23 +1437,29 @@ IceSaber:
     打出时可以弃掉任意张数的蓝色手牌，每一张多攻击一次。
   FlavorText: 曾今有把名剑叫霜之哀伤。
 
+IceBarrier:
+  Name: 寒冰护体
+  Description: 获得 {Value1} 层|寒冰甲|。
+
+ZeroK:
+  Name: 绝对零度
+  Description: |-
+    提高 {Value1} 倍|寒冷|的叠加伤害。
+    对所有敌人施加|寒冷|。
+
+Blizzard:
+  Name: 暴风雪
+  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+    下回合开始时再次生效。
+
 IceGun:
   Name: 冰柱机枪
   Description: |-
     随机对敌人造成 {Damage} 点伤害 {Value1} 次。
     对|寒冷|的目标造成 {Value2} 倍伤害。
   FlavorText: 真正的冰「枪」术。
-
-IceBlock:
-  Name: 寒冰屏障
-  Description: |-
-    免疫所有的伤害一回合。
-    移除所有的|格挡|、|护盾|和|闪避|。
-    结束{PlayerName}的回合。
-
-IceBarrier:
-  Name: 寒冰护体
-  Description: 获得 {Value1} 层|寒冰甲|。
 
 Tether:
   Name: 羁绊
@@ -1475,24 +1499,59 @@ GainLily:
     随机对敌人造成 {Damage} 点伤害 {Value1} 次。
     将一张|莉莉白的报春|加入手中。
 
-ZeroK:
-  Name: 绝对零度
+CirnoInForest:
+  Name: 绝妙的伪装
   Description: |-
-    提高 {Value1} 倍|寒冷|的叠加伤害。
-    对所有敌人施加|寒冷|。
+    获得 {Block} 点|格挡|，获得{GainMana}。
+    |成长|：额外获得{Mana}。
+  FlavorText: 森之妖精。
 
-Blizzard:
-  Name: 暴风雪
-  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  UpgradedDescription: |-
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-    下回合开始时再次生效。
+MoreFriends:
+  Name: 社交达人
+  Description: '{PlayerName}的回合结束时，将 {Value1} 张随机的|妖精支援|加入手中。'
+
+FreezeToIce:
+  Name: 冰冻标本
+  Description: 选择至多 {Value1} 张手牌，|放逐|它们，将等量的|冰晶|加入手中。
+
+FairyOnIce:
+  Name: 冰上的妖精
+  Description: |-
+    抽 {Value1} 张牌。
+    每有一个处于|寒冷|的敌人，{PlayerName}获得 {Value2} 层|闪避|。 
+
+CirnoFestival:
+  Name: 混入宴会
+  Description: 每打出一张|能力|牌，将 {Value1} 张随机的|妖精支援|加入手中。
+
+DeepFreeze:
+  Name: 深度冻结
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    对所有敌人施加|寒冷|，如果目标已经处于|寒冷|，改为施加|深度冻结|。
 
 IceMatrix:
   Name: 冰冻矩阵
   Description: |-
     受到敌人攻击时，额外失去一层|寒冰甲|并向敌人施加|寒冷|。
     获得 {Value1} 层|寒冰甲|。
+
+CirnoEcho:
+  Name: 自然的馈赠
+  Description: 从弃牌堆中选择 {Value1} 张牌加入手中，赋予|回响|。
+
+FairyTeam:
+  Name: 妖精大战争
+  Description: |-
+    将|放逐|区内|妖精支援|移回手中，每种各一张。
+    （有 {TeamCount} 种）
+  NonbattleDescription: 将|放逐|区内|妖精支援|移回手中，每种各一张。
+
+MinengZhuru:
+  Name: 秘能注入
+  Description: |-
+    |妖精支援|的被动效果提高 {Value1} 倍。
+    （手牌中、回合开始时）
 
 GatherFairy:
   Name: 妖精集结
@@ -1505,43 +1564,56 @@ GatherFairy:
     抽 {Value1} 张牌。
   FlavorText: 你们都是我的翅膀。
 
-MinengZhuru:
-  Name: 秘能注入
+HualiIce:
+  Name: 华丽夏日冰
+  Description: |
+    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    （剩余 {Countdown} 张）
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+  UpgradedDescription: |-
+    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    （剩余 {Countdown} 张）
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
+  NonbattleDescription: |
+    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+  UpgradedNonbattleDescription: |-
+    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
+
+ForeverCool:
+  Name: 永远凉爽的幻想四季
   Description: |-
-    |妖精支援|的被动效果提高 {Value1} 倍。
-    （手牌中、回合开始时）
-
-FrostNova:
-  Name: 冰霜新星
-  Description: 清除寒冷加格挡or护盾
-
-FairyWar:
-  Name: 妖精大战争
-  Description: 将放逐区所有的|妖精援助|牌移入你的手牌。
-
-GainStar:
-  Name: 星辰阵雨
-  Description: |-
-    对目标造成{Value1}次{Damage}点伤害。
-    将一张|斯塔的侦察|加入你的手牌。
-
-FairyEzuoju:
-  Name: 妖精恶作剧
-  Description: |-
-    将{Value1}张随机|妖精支援|牌洗入弃牌堆，使其附带|填充|。
-    将一张{Value2}张|黑暗残留|洗入弃牌堆。
+    每|放逐|一张|妖精支援|，对随机敌人施加|寒冷|。
+    每打出一张|妖精支援|，将一张随机的|妖精支援|洗入弃牌堆。
+  UpgradedDescription: |-
+    每|放逐|一张|妖精支援|，对随机敌人施加|寒冷|。
+    每打出一张|妖精支援|，将一张随机的|妖精支援|洗入弃牌堆。
+    将 {Value1} 张随机的|妖精支援|加入手中。
 
 GainLuna:
   Name: 沐浴月光
   Description: |-
-    对目标造成{Damage}点伤害，目标失去{Value1}点|暂得火力|。
-    将一张|露娜的静谧|加入你的手牌。
+    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
+    将一张|露娜的静谧|加入手中。
 
 WhiteWorld:
   Name: 纯白的世界
   Description: |-
     {PlayerName}的回合结束时，获得 {Value1} 点|火力|和|灵力|，
     |法力冻结|{Mana}。
+
+GainStar:
+  Name: 星辰阵雨
+  Description: |-
+    造成 {Damage} 点伤害 {Value1} 次。
+    将一张|斯塔的侦察|加入手中。
+
+FairyTrick:
+  Name: 妖精恶作剧
+  Description: |-
+    将 {Value1} 张随机的|妖精支援|洗入抽牌堆，它们具有|填充|。
+    将 {Value2} 张|黑暗残留|洗入弃牌堆。
 
 BrainOverclock:
   Name: 大脑超频
@@ -1550,10 +1622,10 @@ BrainOverclock:
     |透支| {Value1} 。
 
 GainSunny:
-  Name: 妖精天幕
+  Name: 天幕降临
   Description: |-
-    获得{Block}点格挡，获得等量于{PlayerName}当前|反射|层数的护盾。
-    将一张|桑尼的折射|加入你的手牌。
+    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
+    将一张|桑尼的折射|加入手中。
 
 FairySupportMaid:
   Name: 女仆妖精的清扫
@@ -2269,7 +2341,7 @@ NueExile:
 HuiyinRetain:
   Name: 一条归桥
   Description: |-
-    从弃牌堆中选择至多 {Value1} 张牌加入手中，|保留|它们一回合。
+    从弃牌堆中选择至多 {Value1} 张牌移回手中，|保留|它们一回合。
     结束{PlayerName}的回合，进行一个额外的回合。
     |时间有限|{Mana}。
   ExtraDescription1: |-
@@ -2533,11 +2605,7 @@ MeilingAbility:
 LimaoAttack:
   Name: 月下的腹鼓舞
   Description: |-
-    对所有敌人造成 {Damage} 点伤害，获得{Mana}。
-    |成长|：额外获得{Mana}。
-    （已|成长| {GrowCount} 次）
-  NonbattleDescription: |-
-    对所有敌人造成 {Damage} 点伤害，获得{Mana}。
+    对所有敌人造成 {Damage} 点伤害，获得{GainMana}。
     |成长|：额外获得{Mana}。
 
 TodayYesterday:
@@ -2565,12 +2633,15 @@ JunkoNightmare:
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
     |放逐|所有的手牌，将等量的|纯粹|加入手中。
   UpgradedDescription: |-
+    选择至多 {Value2} 张手牌免于|纯粹|化。
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
-    选择任意张手牌|放逐|，将等量的|纯粹|加入手中。
+    |放逐|所有的手牌，将等量的|纯粹|加入手中。
 
 PatchouliLibrary:
   Name: 不动的大图书馆
-  Description: 从 {Value1} 张随机的稀有牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  Description: |-
+    获得{Mana}。
+    从 {Value1} 张随机的稀有牌中选择一张加入手中，它具有|放逐|、|虚无|。
 
 BailianFire:
   Name: 法界之火
