@@ -1847,9 +1847,11 @@ JunkoNightmare:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois\
     \ à tous les ennemis.\n|Exilez| toutes les cartes de votre main, puis ajoutez\
     \ une quantité égale de cartes |Pureté| à votre main."
-  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}\
-    \ fois à tous les ennemis.\n|Exilez| n'importe quel nombre de cartes choisies\
-    \ de votre main, puis ajoutez une quantité égale de cartes |Pureté| à votre main."
+  UpgradedDescription: "Choisissez jusqu'à {Value2} carte{Value2:plural one='' other='s'}\
+    \ dans votre main pour vous exempter de la |Purification| qui suit.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois à tous les ennemis.\n\
+    |Exilez| toutes les cartes de votre main, puis ajoutez une quantité égale de cartes\
+    \ |Pureté| à votre main."
 Shoot:
   Name: Tir
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2220,8 +2222,7 @@ ReimuFreeAttack:
 LimaoAttack:
   Name: Inspiration Sous la Pleine Lune
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
-    \ ennemis, gagnez {Mana}.\n|Croissance| : Gagnez {Mana} supplémentaire.\n(Déjà\
-    \ {GrowCount} |croissance{GrowCount:plural one='' other='s'}|)"
+    \ ennemis, gagnez {GainMana}.\n|Croissance| : Gagnez {Mana} supplémentaire."
 ReimuDrink:
   Name: Saké Royal
   Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.\nAjoutez\
@@ -2385,8 +2386,8 @@ FairySupportMaid:
 AutoKnife:
   Name: Couteau d'Argent Ensorcelé
   FlavorText: Réglez le mode d'attaque du familier sur attaque active.
-  Description: "Dans cette bataille, les |Couteaux de lancer| ont |Exil automatique|.\n\
-    Ajoutez {Value1} |Couteau{Value1:plural one='' other='x'} de lancer| à votre main."
+  Description: "Dans cette bataille, les |Couteaux de lancer| ont |Auto-exil|.\nAjoutez\
+    \ {Value1} |Couteau{Value1:plural one='' other='x'} de lancer| à votre main."
 SakuyaUsage2:
   Name: Marches Circulaires
   Description: Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.
@@ -2559,8 +2560,8 @@ XiangziEcho:
   FlavorText: '"Ya—hoo—"'
 PatchouliLibrary:
   Name: Grande Bibliothèque Immobile
-  Description: Choisissez une parmi {Value1} cartes rares aléatoires à ajouter à votre
-    main, elle |coûte temporairement| {Mana}, avec |Exil|, |Éthéré|.
+  Description: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes rares aléatoires\
+    \ à ajouter à votre main, elle gagne |Exil| et |Éthéré|."
 BailianFire:
   Name: Feu du Dharma
   Description: Lorsque {PlayerName} débute son tour, ajoutez une carte de talent aléatoire
@@ -2639,7 +2640,7 @@ FairyTeam:
   NonbattleDescription: Renvoyez en main un exemplaire de chaque |Soutien Fée| différent
     |exilé|.
 ForeverCool:
-  Name: saisons fantastiques pour toujours cool
+  Name: La Saison Toujours Cool
   UpgradedDescription: "Pour chaque |Soutien Fée| qui est |Exilé|, appliquez |Froid|\
     \ à un ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, un |Soutien\
     \ Fée| aléatoire est mélangé dans la pile de défausse.\nAjoutez {Value1} |Soutien{Value1:plural\
