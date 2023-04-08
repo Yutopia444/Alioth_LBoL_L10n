@@ -21,11 +21,10 @@ YaoguaiBuster:
     mise à niveau !
 DoubleJiejie:
   Name: Barrière Duplex
-  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} 2\
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}\
     \ fois.\n"
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi {PlayerName}\
-    \ a |Barrière|, infligez {Damage} dégât{Damage:plural one='' other='s'} une seconde\
-    \ fois."
+    \ a |Barrière|, infligez {Damage} dégât{Damage:plural one='' other='s'}."
   FlavorText: Seuls deux miroirs sont nécessaires pour voir une infinité de copies
     du monde.
 Fengmozhen:
@@ -1017,7 +1016,7 @@ DoremyDuplicate:
   Name: Rêve dans le Rêve
   Description: Choisissez une carte dans la main et ajoutez {Value1:plural one='%
     |copie|' other='% |copies|'} à la main.
-  FlavorText: Lorsque Doremi aura soif, elle se concentrera sur les rêves de ceux
+  FlavorText: Lorsque Doremy aura soif, elle se concentrera sur les rêves de ceux
     qui aiment boire beaucoup d'eau avant d'aller se coucher.
 GuijiZaoxingYuan:
   Name: Sculpture - Cercle
@@ -1134,7 +1133,11 @@ BackOfKnife:
   Description: "Supprimez tous les |Couteaux de lancer exilés| du combat.\nEnsuite,\
     \ ajoutez un |Couteau Tranchant Express| à la main. Il inflige {Value1} dégât{Value1:plural\
     \ one=' supplémentaire' other='s supplémentaires'} pour chaque carte retirée de\
-    \ cette manière."
+    \ cette manière.\n(augmentera de {IncreasedDamage} dégâts)"
+  NonbattleDescription: "Supprimez tous les |Couteaux de lancer exilés| du combat.\n\
+    Ensuite, ajoutez un |Couteau Tranchant Express| à la main. Il inflige {Value1}\
+    \ dégât{Value1:plural one=' supplémentaire' other='s supplémentaires'} pour chaque\
+    \ carte retirée de cette manière."
 GroupOfKnife:
   Name: Couteau Tranchant Express
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -1213,7 +1216,7 @@ CoolBreeze:
   Name: Brise Fraîche
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nLorsqu'un\
     \ ennemi a |Froid|, |améliorez| {Value1} carte{Value1:plural one=' aléatoire'\
-    \ other='s aléatoires'} en main, les cartes attaquantes ont la priorité."
+    \ other='s aléatoires'} en main, les cartes de talent ont la priorité."
 KoishiBlockG:
   Name: Flétrissement des Roses
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
@@ -2054,9 +2057,6 @@ Yuebiao:
   Name: Paysage Lunaire
   Description: '|Lorsque piochée| : Purifie {Value1}.'
   FlavorText: Nulle part où vivre.
-FairyWar:
-  Description: Déplacez toutes les cartes |Aide des Fées| depuis l'exil vers votre
-    main.
 KaguyaTreeSee:
   Description: "Chaque fois que des dégâts sont subis, cette carte coûte {Mana} de\
     \ moins.\nDéplacez toutes les cartes avec |Exil| de l'exil vers la pioche.\nJusqu'à\
@@ -2103,7 +2103,8 @@ LongArm:
 IceBlock:
   Name: Barrière de Glace
   Description: "Immunité à tous les dégâts pendant un tour.\nSuppression de tous |Bouclier|,\
-    \ |Barrière| et |Esquive|.\n{PlayerName} termine son tour."
+    \ |Barrière| et |Esquive|.\nLes cartes de votre main sont |retenues| ce tour-ci,\
+    \ {PlayerName} termine son tour."
 FairyTree:
   Name: Maison de Fées
   Description: "Lorsqu'une carte de talent est ajoutée à la main, obtenez {Mana} et\
@@ -2118,10 +2119,6 @@ GatherFairy:
     \ one=' commune' other='s communes'} à votre main.\nPiochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
   FlavorText: Vous êtes toutes mes ailes.
-FairyEzuoju:
-  Description: "Mélangez {Value1} carte{Value1:plural one='' other='s'} |Soutien Fée|\
-    \ aléatoire{Value1:plural one='' other='s'} dans la pile de défausse avec |Renfloue|.\n\
-    Mélangez {Value2} |Résidu Sombre| dans la pile de défausse."
 WhiteWorld:
   Name: Monde Blanc Pur
   Description: "Lorsque {PlayerName} finit son tour, gagnez {Value1} |Puissance{Value1:plural\
@@ -2162,8 +2159,6 @@ ReimuFestival:
   FlavorText: Quand vous n'utilisez pas le système AA (partage équitable des dépenses
     nécessaires), vous pouvez toujours jouer à un jeu appelé "le paiement du prochain
     repas est pour moi".
-FrostNova:
-  Description: Supprimez le Froid et la Barrière ou Bouclier.
 Psychedelic:
   Name: Psychédélique
   Description: "|Fin du tour| : Perdez {Value1} point{Value1:plural one='' other='s'}\
@@ -2407,7 +2402,7 @@ GrowDrawAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Croissance|\
     \ : Piochez {Value1:plural one='% carte supplémentaire' other='% cartes supplémentaires'}\
     \ (jusqu'à {Value2} cartes)."
-  Name: Faveur de la Nature
+  Name: vigne de gloire du matin
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
     \  {DrawCount}  carte{DrawCount:plural one='' other='s'}.\n|Croissance| : Piochez\
     \ {Value1:plural one='% carte supplémentaire' other='% cartes supplémentaires'}\
@@ -2419,7 +2414,7 @@ GainLarva:
 BlueRose:
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
     Si la cible a |Froid|, gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
-  Name: Rose Bleue
+  Name: Rose de Glace
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
     \ a |Froid|, gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 FrostGarden:
@@ -2491,8 +2486,7 @@ CirnoDraw:
   Name: Sagesse Féerique
   Description: Piochez {Value1} carte{Value1:plural one='' other='s'}.
   UpgradedDescription: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n\
-    Au début du tour suivant, piochez {Value2} carte{Value2:plural one=' supplémentaire'\
-    \ other='s supplémentaires'}."
+    Au début du tour suivant, piochez {Value2} carte{Value2:plural one='' other='s'}."
 IceSaber:
   Name: Glace en Épée
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -2534,11 +2528,8 @@ YouxiangMoon:
 ReimuHeavyAttack:
   FlavorText: '"Tu es déjà mort !"'
   Name: Boli Punch
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nL'effet de\
-    \ |Puissance| sur cette carte est augmenté de {Value1} fois."
-HoldAllCard:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nToutes\
-    \ les cartes de votre main actuelle ont |Retenue| pendant un tour."
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nLa |Puissance|\
+    \ augmente {Value1} fois les dégâts de cette carte."
 KnifeAim:
   Name: Monde qui Rétrécit
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nJette tous\
@@ -2546,7 +2537,7 @@ KnifeAim:
 BulletStudy:
   Name: Étude des Tirs de Barrage
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
-    \ {Value2}| : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+    \ {Value2}| : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
   FlavorText: Étudiant les tirs de barrage ennemis afin de s'en approprier les connaissances,
     Marisa a publié de nombreux livres à un jeune âge.
 SplitPotion:
@@ -2582,3 +2573,75 @@ BailianFire:
   UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez une carte de\
     \ talent aléatoire à la main, elle |coûte temporairement| {Mana}, avec |Exil|,\
     \ |Éthéré|.\nPrend effet immédiatement."
+MarisaHoldCard:
+  Name: Difficile de Lâcher Prise
+  Description: "Choisissez jusqu'à {Value1} cartes en main, |gardez| pendant un tour.\n\
+    Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  FlavorText: '"Ne le jetez pas, ça pourrait être utile plus tard"'
+CirnoInForest:
+  Name: Camouflage Brillant
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|, obtenez\
+    \ {GainMana}.\n|Croissance| : Gagnez {Mana} supplémentaire."
+  FlavorText: Fée de la forêt.
+MoreFriends:
+  Description: À la fin du tour de {PlayerName}, ajoutez {Value1} |Soutien{Value1:plural
+    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+  Name: Experte en Relations
+FairyOnIce:
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n{PlayerName}\
+    \ gagne {Value2} |Esquive{Value2:plural one='' other='s'}| pour chaque ennemi\
+    \ qui a |Froid|. "
+  Name: Fée sur Glace
+CirnoEcho:
+  Description: Choisissez {Value1} carte{Value1:plural one='' other='s'} dans la pile
+    de défausse et ajoutez-{Value1:plural one='la' other='les'} à votre main, en {Value1:plural
+    one='lui' other='leur'} conférant |Echo|.
+  Name: Don de la Nature
+HualiIce:
+  Description: "Cette carte ne peut être joué qu'après qu'un total de {Value1} cartes\
+    \ avec |Exil| aient été jouées.\n({Compte à rebours} cartes restantes)\nInflige\
+    \ {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, en appliquant\
+    \ le |Froid|.\n"
+  UpgradedDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
+    \ cartes avec |Exil| aient été jouées.\n({Compte à rebours} cartes restantes)\n\
+    Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, en\
+    \ appliquant le |Froid| {Value2} fois."
+  NonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
+    \ cartes avec |Exil| aient été jouées.\nInflige {Damage} dégât{Damage:plural one=''\
+    \ other='s'} à tous les ennemis, en appliquant le |Froid|.\n"
+  Name: Magnifique Glace d'Été
+  UpgradedNonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total\
+    \ de {Value1} cartes avec |Exil| aient été jouées.\nInflige {Damage} dégât{Damage:plural\
+    \ one='' other='s'} à tous les ennemis, en appliquant le |Froid| {Value2} fois."
+ColdBreath:
+  Name: Souffle de Diamant
+  Description: Inflige {Damage} dégât{Damage:plural one='' other='s'} et |Froid| à
+    un ennemi aléatoire.
+  UpgradedDescription: "Inflige {Damage} dégât{Damage:plural one='' other='s'} et\
+    \ |Froid| à un ennemi aléatoire.\n|Début| : Placez {Value1} |Crista{Value1:plural\
+    \ one='l' other='ux'} de glace| au-dessus de la pioche."
+  ExtraDescription1: "Inflige {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
+    \ à un ennemi aléatoire.\n|d:Début : Placez {Value1} |Crista{Value1:plural one='l'\
+    \ other='ux'} de glace| au-dessus de la pioche.|"
+FreezeToIce:
+  Name: Spécimen Congelé
+  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} dans
+    votre main et |exilez-{Value1:plural one='la' other='les'}|, en ajoutant une quantité
+    égale de |Cristaux de glace| à votre main.
+CirnoFestival:
+  Name: Mêlée au Banquet
+  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Value1} |Soutien{Value1:plural
+    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+DeepFreeze:
+  Name: Surgelé
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
+    \ ennemis.\nApplique |Froid| à tous les ennemis ; si la cible a déjà |Froid|,\
+    \ applique |Surgelé| à la place."
+FairyTeam:
+  Name: Guerre des Fées
+  Description: "Renvoyez en main un exemplaire de chaque |Soutien Fée| différent |exilé|.\n\
+    (Il y en a {TeamCount} différents)"
+  NonbattleDescription: Renvoyez en main un exemplaire de chaque |Soutien Fée| différent
+    |exilé|.
+ForeverCool:
+  Name: saisons fantastiques pour toujours cool

@@ -129,8 +129,8 @@ SakuyaW:
 CirnoG:
   Name: Branche Verte Luxuriante
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Cirno|\
-    \ sont ajoutées aux cartes disponibles.\nLorsqu'une |Croissance| de carte est\
-    \ effectuée, elle se produit {Value1} fois supplémentaire."
+    \ sont ajoutées aux cartes disponibles.\nL'effet |Croissance| est considéré comme\
+    \ ayant été joué {Value1} fois."
   FlavorText: (conception sujette à changement)
 KoishiG:
   Name: Rose Épineuse
@@ -487,9 +487,15 @@ XiwangMianju:
   FlavorText: Un espoir retrouvé.
 DiyinLeigu:
   Name: Grosse Caisse Lourde
-  Description: Chaque fois que {Value1} cartes de défense sont jouées dans un tour,
-    infligez {Value2} dégât{Value2:plural one='' other='s'} à chaque ennemi.
+  Description: "{PlayerName} gagne {Value1:plural one='% |Puissance temporaire| et\
+    \ |Esprit temporaire|' other='% |Puissances temporaires| et |Esprits temporaires|'}\
+    \ lorsque la carte jouée par {PlayerName} dans un tour est de la même couleur\
+    \ que la précédente."
   FlavorText: Quand les enfants passent, ils aiment jouer avec et frapper dessus.
+  ExtraDescription: "Lorsque la couleur de la carte jouée par {PlayerName} est la\
+    \ même que celle de la précédente, gagnez {Value1:plural one='% |Puissance temporaire|\
+    \ et |Esprit temporaire|' other='% |Puissances temporaires| et |Esprits temporaires|'}.\n\
+    La dernière couleur est {LastColor}."
 LoushuiShaozi:
   Name: Louche qui Fuit
   Description: Chaque fois que {Value1} carte{Value1:plural one='' other='s'} de talent
