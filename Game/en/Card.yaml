@@ -1641,6 +1641,9 @@ JunkoNightmare:
   Name: Shivering Nightmare
   Description: "Deal {Damage} damage to each enemy {Value1} time{Value1:plural one=''\
     \ other='s'}.\n|Exile| the hand. Add that many |Pures| to the hand."
+  UpgradedDescription: "Choose up to {Value2} card{Value1:plural one='' other='s'}.\n\
+    Deal {Damage} damage to each enemy {Value1} time{Value1:plural one='' other='s'}.\n\
+    |Exile| all but the chosen cards from the hand. Add that many |Pures| to the hand."
 MorphDog:
   Description: Gain {Value1} |Firepower|.
   Name: Form of Carnivora
@@ -1862,9 +1865,10 @@ SakuyaDetective:
 SakuyaUsage:
   FlavorText: Just stop time, then move everyone else downstairs.
   Name: Sakuya Manuals
-  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|When played at\
-    \ {Value2} times|: Remove this card from this battle. Place a |Circular Steps|\
-    \ on top of the draw pile."
+  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|When played for\
+    \ the {Value2:ordinal one='%st' two='%nd' few='%rd' other='%th'} time|: Remove\
+    \ this card from combat. End the turn. Add a |Circular Steps| on top of the draw\
+    \ pile."
   ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|When played\
     \ for the {Value2:ordinal one='%st' two='%nd' few='%rd' other='%th'} time|: Remove\
     \ this card from combat. End the turn. Add a |Circular Steps| to the top of the\
@@ -1961,6 +1965,11 @@ GainLuna:
   Name: Moonbathe
 BailianFire:
   Name: Fire of Dharma
+  UpgradedDescription: "At the start of {PlayerName}'s turn, add a random skill card\
+    \ to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\n\
+    This also happens when this card is played."
+  Description: At the start of {PlayerName}'s turn, add a random skill card to the
+    hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
 CallFriends:
   Name: Call On Friends
 MarisaHoldCard:
@@ -1969,5 +1978,24 @@ MarisaHoldCard:
 ReimuHeavyAttack:
   Description: "Deal {Damage} damage.\n|Firepower| increases this card's damage {Value1}\
     \ time{Value1:plural one='' other='s'}."
+  Name: Hakurei Fist
 BulletStudy:
   Description: "Deal {Damage} damage.\n|Overdrive| {Value2}: Gain {Shield} |Barrier|."
+PatchouliLibrary:
+  Name: Unmoving Great Library
+  Description: "Gain {Mana}.\nChoose 1 of {value} rare cards to add to the hand. It\
+    \ has |Exile| and |Ethereal|."
+XiangziEcho:
+  Name: Mountain Echo
+  Description: Choose {Value1} card{Value1:plural one='' other='s'} in your hand.
+    {Value1:plural one='It gains' other='They gain'} |Echo|.
+KnifeAim:
+  Description: "Deal {Damage} damage.\nDiscard all |Throwing Knives| in the hand.\
+    \ They target this enemy."
+DiscardToCharging:
+  Description: "Discard any number of cards from the hand.\nFor each card discarded\
+    \ this way, gain {Value1} Charge."
+UnlimitedTime:
+  Description: Choose 1 of {Value1} cards with |Time Limit| to add to the hand. It
+    |temporarily costs| {Mana}, has |Exile| and |Ethereal|, and loses |Time Limit|.
+  Name: Perfect Pause
