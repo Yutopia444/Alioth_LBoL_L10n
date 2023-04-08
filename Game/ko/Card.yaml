@@ -328,7 +328,7 @@ MarisaSteal:
   Name: 빌려쓰기
   Description: "|무지개|를 얻습니다.\n다음 턴에 무작위 마나를 {Value1} 잃습니다."
 WinterWarm:
-  Description: "|집중|을 {Value1} 얻습니다.\n|기습|: 카드를 {Value2}장 뽑습니다."
+  Description: "|집중|을 {Value1} 얻습니다.\n|선보임|: 카드를 {Value2}장 뽑습니다."
 NightSeeStar:
   Description: "|예지| {Scry}.\n카드를 {Value1}장 뽑습니다."
 RainbowStar:
@@ -407,9 +407,9 @@ CollectionDefense:
   NonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 방어를 얻습니다.
   UpgradedNonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 보호막을 얻습니다.
 MarisaEat:
-  Description: "|집중|을 {Value1} 얻습니다.\n|기습: | 체력을 {Value2} 회복합니다."
+  Description: "|집중|을 {Value1} 얻습니다.\n|선보임|: 체력을 {Value2} 회복합니다."
   Name: 진수성찬
-  ExtraDescription1: "|집중|을 {Value1} 얻습니다.\n|d:기습: | 체력을 {Value2} 회복합니다."
+  ExtraDescription1: "|집중|을 {Value1} 얻습니다.\n|d:선보임: 체력을 {Value2} 회복합니다.|"
 PoisonPotion:
   Name: 마녀의 도가니
   Description: "|불안정한 물약|이 중독도 {Value1} 줍니다.\n|불안정한 물약|을 뽑을 카드 더미에 {Value2}장 섞어 넣습니다."
@@ -543,3 +543,133 @@ FairySupportMaid:
 FairySupportClownpiece:
   Name: 클라운피스의 광기
   Description: '|소멸될 시|: {Mana}를 얻습니다.'
+SummerFlower:
+  Description: "피해를 {Damage} 줍니다.\n|성장|: 피해량이 {Value1} 증가합니다."
+  Name: 한여름의 꽃
+ColdBreath:
+  Name: 차가운 숨결
+  Description: '|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.'
+  UpgradedDescription: "|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.\n|선보임|: 뽑을 카드 더미에 |얼음\
+    \ 조각|을 {Value1}장 추가합니다."
+  ExtraDescription1: "|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.\n|d:선보임: 뽑을 카드 더미에 얼음 조각을\
+    \ {Value1}장 추가합니다.|"
+GrowDrawAttack:
+  Name: 나팔꽃 덩굴
+  Description: "피해를 {Damage} 줍니다.\n|성장|: 추가로 카드를 {Value1}장 뽑습니다(최대 {Value2}장)."
+  ExtraDescription1: "피해를 {Damage} 줍니다.\n카드를 {DrawCount}장 뽑습니다.\n|성장|: 추가로 카드를 {Value1}장\
+    \ 뽑습니다(최대 {Value2}장)."
+GainLarva:
+  Description: "|중독|을 {Value1} 가합니다.\n|라바의 날갯짓|을 손으로 한 장 가져옵니다."
+  Name: 비늘가루 살포
+IceLance:
+  Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 {Value1}배의 피해를 가합니다."
+  Name: 얼음 창
+BlueRose:
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 |보호막|을 {Shield} 얻습니다."
+  Name: 얼음 장미
+  Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 |방어|를 {Block} 얻습니다."
+IceBlock:
+  Description: "모든 피해를 한 번 무시합니다.\n모든 |방어|, |보호막|, |그레이즈|를 잃습니다.\n손패를 한 번 |보존|한 뒤\
+    \ 내 턴을 끝냅니다."
+  Name: 얼음 장벽
+CallFriends:
+  Description: 무작위 일반 |요정의 지원| 카드를 {Value1}장 얻습니다.
+  Name: 친구들 부르기
+  UpgradedDescription: 무작위 |요정의 지원| 카드를 {Value1}장 얻습니다.
+CirnoInForest:
+  Description: "|방어|를 {Block} 얻고 {Mana}를 얻습니다.\n|성장|: 추가로 {Mana}를 얻습니다."
+  Name: 감쪽같은 위장
+  FlavorText: 숲의 요정.
+FreezeToIce:
+  Description: 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의 |얼음 조각|을 얻습니다.
+  Name: 냉동 표본
+DeepFreeze:
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n모든 적에게 |빙결|을 가하고, 대상한테 이미 |빙결|이 있을 경우 |딥\
+    \ 프리즈|를 가합니다."
+  Name: 딥 프리즈
+CoolBreeze:
+  Description: "|방어|를 {Block} 얻습니다.\n무작위 적에게 |빙결|을 가하고 손패의 무작위 카드 {Value1}장을 |강화|시킵니다.\n\
+    강화되는 카드는 스킬 카드가 우선권을 갖습니다."
+  Name: 쿨 브리즈
+CirnoBlockG:
+  Name: 나뭇잎 방어
+  Description: '|방어|를 {Block} 얻습니다.'
+CirnoAttackU:
+  Description: 피해를 {Damage} 줍니다.
+  Name: 얼음 사격
+CirnoAttackG:
+  Name: 서릿잎 사격
+  Description: 피해를 {Damage} 줍니다.
+CirnoBlockU:
+  Name: 얼음 방패
+  Description: '|방어|를 {Block} 얻습니다.'
+IceLaser:
+  Name: 냉동광선
+  Description: "피해를 {Damage} 줍니다.\n명중한 적에게 |빙결|을 가합니다."
+Ice:
+  Description: '|빙결|을 가합니다.'
+  Name: 얼음 조각
+FreezeBullet:
+  Name: 동결탄막
+  Description: "|방어|를 {Block} 얻습니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
+FrostGarden:
+  FlavorText: 에어컨은 필요 없어.
+  UpgradedDescription: "모든 적의 체력을 {Value1} 회복시킵니다.\n모든 적에게 |빙결|을 가합니다.\n|얼음 조각|을 {Value2}장 얻습니다."
+  Name: 얼어붙은 화원
+  Description: "모든 적의 체력을 {Value1} 회복시킵니다.\n모든 적에게 |빙결|을 가합니다."
+IceSaber:
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n사용 시 손에 있는 파란색 카드를 무작위만큼 버립니다.\n버린 카드의\
+    \ 수만큼 공격을 한 번씩 더 가합니다."
+  Name: 얼음 검
+  FlavorText: 이 검의 이름은... 서리의 한?
+GainMaid:
+  UpgradedDescription: "|메이드 요정의 청소|를 {Value1}장 얻습니다.\n모든 |메이드 요정의 청소|의 피해가 1 증가합니다."
+  Name: 투검술 훈련
+  Description: '|메이드 요정의 청소|를 {Value1}장 얻습니다.'
+CirnoDraw:
+  Name: 요정의 지혜
+  Description: 카드를 {Value1}장 뽑습니다.
+  UpgradedDescription: "카드를 {Value1}장 뽑습니다.\n다음 턴 시작 시 카드를 {Value2}장 뽑습니다."
+IceGun:
+  Name: 고드름 기관총
+  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|빙결|이 있는 적에겐 {Value2}배의 피해를\
+    \ 줍니다."
+  FlavorText: 얼음 창보단 얼음 총이지.
+Tether:
+  Name: 에워싸기
+  Description: "손에 있는 |요정의 지원| 카드 한 장마다 |일시 화력|을 {Value1} 얻습니다.\n(총 {TotalFire}점)"
+IceBarrier:
+  Name: 얼음 보호막
+  Description: '|얼음 갑옷|을 {Value1} 얻습니다.'
+GainDayaojing:
+  Name: 최고의 친구
+  Description: "|대요정의 협력|을 {Value1}장 얻습니다.\n|선보임|: 체력을 {Value1} 회복합니다."
+  ExtraDescription1: "|대요정의 협력|을 {Value1}장 얻습니다.\n|d:선보임: 체력을 {Value1} 회복합니다.|"
+RemoveOverdraft:
+  Name: 상처 치유
+  Description: "피해를 {Damage} 줍니다.\n|가불|한 마나를 전부 회복합니다."
+ZeroK:
+  Name: 앱솔루트 제로
+  Description: "|빙결|이 가하는 피해를 {Value1}배 높입니다.\n모든 적에게 |빙결|을 가합니다."
+FairyTree:
+  Name: 요정의 집
+  Description: "손에 스킬 카드가 들어올 시 {Mana}를 얻고 카드를 {Value1}장 뽑습니다.\n매 턴마다 한 번씩만 발동합니다."
+Blizzard:
+  Name: 아이스 블리자드
+  Description: 모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n다음 턴 시작 시 효과를 한 번 더 발동시킵니다."
+GainLily:
+  Name: 깜짝스런 봄
+  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|릴리의 봄 알림|을 {Value1}장 얻습니다."
+OverdraftDefense:
+  Name: 때아닌 개화
+  Description: "|방어|를 {Block} 얻습니다.\n|가불| {Value1}."
+MoreFriends:
+  Name: 사교의 달인
+  Description: 내 턴 종료 시 무작위 |요정의 지원| 카드를 {Value1}장 얻습니다.
+FairyOnIce:
+  Name: 빙상의 요정
+  Description: "카드를 {Value1}장 뽑습니다.\n적에게 |빙결|을 가할 때마다 |그레이즈|를 {Value2} 얻습니다. "
+CirnoFestival:
+  Name: 연회 난입
+  Description: '|능력| 카드를 사용할 때마다 무작위 |요정의 지원| 카드를 {Value1}장 얻습니다.'
