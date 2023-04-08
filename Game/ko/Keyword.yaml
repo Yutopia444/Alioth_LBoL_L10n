@@ -5,13 +5,13 @@ Philosophy:
   Name: 무지갯빛 마나 <sprite="ManaSprite" name="P">
   Description: 어떤 종류의 마나로도 사용할 수 있습니다.
 Power:
-  Description: 스펠 카드를 사용하는 데 소모됩니다 (화면 좌상단에 위치함).
+  Description: 스펠 카드를 사용하는 데 소모됩니다 |d:(화면 좌상단에 위치함)|.
   Name: 파워 <sprite="Point" name="Power">
 Ethereal:
   Description: 내 턴의 종료 시, 손에 이 카드가 있다면 |소멸|합니다.
   Name: 휘발성
 TempRetain:
-  Description: 이번 턴이 끝나도 카드를 손패에 보존합니다. 다음 턴이 되거나 카드를 사용하고 나면 효과가 사라집니다.
+  Description: 이번 턴이 끝나도 카드를 손패에 보존합니다. 다음 턴이 되거나 사용하면 효과가 사라집니다.
   Name: 일시 보존
 Purified:
   Name: 정화
@@ -39,7 +39,7 @@ Ability:
   Description: "전투 종료까지 효과가 지속되는 카드입니다.\n매 |능력| 카드는 전투당 한 번씩만 사용할 수 있습니다."
 Misfortune:
   Name: 액운
-  Description: 전투가 끝나도 지속되는 부정적 효과의 카드입니다.
+  Description: 전투가 끝나도 덱에 지속되는 부정적 효과의 카드입니다.
 Unremovable:
   Name: 제거 불가
   Description: 덱에서 제거할 수 없습니다.
@@ -84,13 +84,32 @@ TempMorph:
   Description: 이 카드의 마나 비용이 손패를 떠나기 전까지 조정됩니다.
 Grow:
   Name: 성장
-  Description: 전투 종료 시까지, 매 번 손패에 들어올 때마다 효과가 성장합니다.
+  Description: 전투 종료 시까지, 매 번 손패에 들어올 때마다 효과가 |성장|합니다.
 XCost:
   Name: 코스트 X
-  Description: 마나가  X 만큼 추가로 소모됩니다.
+  Description: "마나가  X 만큼 추가로 소모됩니다.\n(화면 좌측 하단에서 소모할 마나 배치 가능)"
 Synergy:
   Name: 시너지 Y
   Description: 마나를  Y 만큼 소모할 때마다 카드 효과가 더 발현됩니다.
 Purify:
   Name: 순화 X
   Description: 현재 가장 많이 지니고 있는 색깔의 마나 중  X 개를 <sprite="ManaSprite" name="C">으로 전환합니다.
+AutoExile:
+  Name: 자동 소멸
+  Description: "손패의 카드 상한이 초과될 시 이 카드를 자동으로 |소멸|시킵니다.\n|자동 소멸| 카드 중에는 가장 왼쪽에 있는 카드가\
+    \ 먼저 |소멸|됩니다.\n무한 루프가 유발되는 일부 효과는 발동하지 않습니다."
+Echo:
+  Name: 메아리
+  Description: 이 카드가 |복사본|이 아닌 경우 |소멸|이 있는 |복사본|을 손패로 가져옵니다.
+Agent:
+  Name: 정신상태
+  Description: 한 번에 하나의 |정신상태|만 유지할 수 있습니다.
+FairySupport:
+  Name: 요정의 지원
+  Description: '|요정의 지원| 카드들은 손에 있을 시 효과가 발동합니다.'
+FairySupportCard:
+  Name: 요정의 지원
+  Description: 이 카드는 요정의 지원 카드입니다.
+Overdraft:
+  Name: 가불 X
+  Description: "X만큼의 마나를 다음 턴의 시작 마나에서 가불해 옵니다.\n(잃은 마나는 화면 좌측 상단에 표시)"
