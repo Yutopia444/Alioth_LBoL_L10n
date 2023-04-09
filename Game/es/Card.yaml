@@ -17,8 +17,8 @@ ReimuBlockR:
 DoubleJiejie:
   UpgradedDescription: "Inflige {Damage} de daño 2 veces.\n"
   Name: Barrera Dúplex
-  Description: "Inflige {Damage}.\nSi {PlayerName} tiene |Barrera|, inflige {Damage}\
-    \ de daño dos veces."
+  Description: "Inflige {Damage} de daño.\nSi {PlayerName} tiene |Barrera|, inflige\
+    \ {Value1} veces ese daño en su lugar."
   FlavorText: Solo se necesitan dos espejos, para ver el mundo en un bucle infinito.
 YaoguaiBuster:
   Name: Cazadora de Youkais
@@ -1008,7 +1008,8 @@ BackOfKnife:
   Name: Mis Cuchillos Regresaran
   Description: "Elimina todos los |Cuchillos Arrojadizos exiliados| del combate.\n\
     Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Inflige {Value1} de daño\
-    \ por cada carta eliminada de esa manera."
+    \ por cada carta eliminada de esa manera.\n(Infligirá {IncreasedDamage} más de\
+    \ daño)."
 StopTime:
   Name: Tiempo Congelado
   Description: Cuando termine el turno de {PlayerName}, conserva {Value1} de maná
@@ -1817,8 +1818,9 @@ RemoveOverdraft:
   Name: Curar Heridas
 IceBlock:
   Name: Bloque de Hielo
-  Description: "Inmune al daño durante un turno.\nElimina todo el |Bloqueo|, |Barrera|\
-    \ y |Evasión|.\nFinaliza el turno de {PlayerName}."
+  Description: "{PlayerName} no puede perder vida por un turno.\nPierde todo el |Bloqueo|,\
+    \ |Barrera| y |Evasión|.\n|Retiene| la mano de este turno. Termina el turno de\
+    \ {PlayerName}."
 FairyTree:
   Name: Hogar de las Hadas
   Description: Añade una carta de habilidad a la mano. Gana {Mana} y roba {Value1:plural
@@ -1838,16 +1840,35 @@ OverdraftDefense:
   Description: "Obtén {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
 FrostGarden:
   Name: Jardín Escarchado
+  Description: "Cada enemigo gana {Value1} de vida.\nAplica |Frío| a cada enemigo."
+  UpgradedDescription: "Cada enemigo gana {Value1} de vida.\nAplica |Frío| a cada\
+    \ enemigo.\nAñade {Value2} |Glaciar{Value2:plural one='' other ='es'}| a la mano."
 IceLance:
   Name: Lanza de Hielo
+  Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, inflige el\
+    \ doble de daño en su lugar."
 FreezeBullet:
   Name: Congelar Disparos
+  Description: "Obtén {Block} de |Bloqueo|.\nGana {Value1} |Armadura Helada|."
 GrowDrawAttack:
   Name: Benevolencia de la Naturaleza
+  Description: "Inflige {Damage} de daño.\n|Crecimiento|: Roba {Value1} carta{Value1:plural\
+    \ one='' other='s'} más (hasta {Value2})."
+  ExtraDescription1: "Inflige {Damage} de daño.\nRoba {DrawCount} carta{DrawCount:plural\
+    \ one='' other='s}.\n|Crecimiento|: Roba {Value1} carta{Value1:plural one='' other='s'}\
+    \ más (hasta {Value2})."
 BlueRose:
   Name: Rosa Azul
+  Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, obtén {Block}\
+    \ de |Bloqueo|."
+  UpgradedDescription: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, obtén\
+    \ {Shield} de |Barrera|."
 GainMaid:
   Name: Infiltración en la Mansión
+  UpgradedDescription: "Agrega una |Limpieza del Hada Sirvienta| a la mano.\nTodas\
+    \ las |Limpieza del Hada Sirvienta| en la mano activan su efecto de aumento de\
+    \ daño una vez."
+  Description: Agrega una |Limpieza del Hada Sirvienta| a la mano.
 CirnoDraw:
   Name: Intelecto de Hada
   Description: Roba {Value1} carta{Value1:plural one='' other='s'}.
@@ -1975,6 +1996,13 @@ CirnoEcho:
   Name: Regalo de la Naturaleza
 ColdBreath:
   Name: Aliento de Diamante
+  Description: Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.
+  UpgradedDescription: "Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.\n\
+    |Debut|: Agrega {Value1} |Glaciar{Value1:plural one='' other='es'}| a la pila\
+    \ de robo."
+  ExtraDescription1: "Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.\n\
+    |d:Debut: Agrega {Value1} Glaciar{Value1:plural one='' other='es'} a la pila de\
+    \ robo."
 GainLily:
   Name: Primavera Sorpresa
 IceGun:
@@ -1985,5 +2013,6 @@ MoreFriends:
   Name: Mariposa Social
 GainLarva:
   Name: Espray en Polvo Escamado
+  Description: "Aplica {Value1} de |Veneno|.\nAñade una |Alas de Larva| a la mano."
 FairyTrick:
   Name: Travesura de Hadas
