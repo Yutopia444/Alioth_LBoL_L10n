@@ -1,3 +1,189 @@
 Game:
   Title: 'Touhou: Lost Branch of Legend'
   Hp: HP
+  PowerPoint: P
+  Money: Vàng
+  Card: Thẻ
+  Exhibit: Chứng vật
+  Level: Cấp
+  Difficulty: Độ khó
+  Deck: Thư Viện
+  ActualOrder: Theo đúng thứ tự
+  IndexOrder: Theo Mục Lục
+  IndexOrderExplain: "Thẻ được sắp xếp theo thứ tự trong bộ sưu tập.\nCác thẻ trùng\
+    \ tên sẽ được sắp xếp theo thứ tự thật của chúng."
+  ActualOrderExplain: "Hiện các thẻ theo thứ tự mà nó vào chồng bài.\n\nBộ: Thứ tự\
+    \ nhận được các thẻ trong lần chơi này.\nChồng bài bốc: Thẻ đầu tiên là thẻ \"\
+    đầu chồng\".\nChồng bài bỏ: Thẻ cuối cùng là thẻ \"đầu chồng\".\n\nMặc định bạn\
+    \ không thể xem chồng bài bốc theo thứ tự này."
+  TypeOrder: Theo Loại
+  TypeOrderExplain: "Các thẻ cùng loại sẽ được sắp xếp theo thứ tự của các thẻ giữa\
+    \ chúng.\nCác thẻ trùng tên sẽ được sắp xếp theo thứ tự thật của chúng."
+  RarityOrder: Theo Độ Hiếm
+  RarityOrderExplain: "Các thẻ cùng một độ hiếm sẽ được sắp xếp theo thứ tự của các\
+    \ thẻ giữa chúng.\nCác thẻ trùng tên sẽ được sắp xếp theo thứ tự thật của chúng."
+  ManaAmountOrder: Chi Phí
+  DrawZone: Chồng Bài Bốc
+  DrawZoneInOrder: Chồng Bài Bốc (đã sắp xếp)
+  DrawZoneOutOfOrder: Chồng Bài Bốc (chưa sắp xếp)
+  DiscardZone: Chồng Bài Bỏ
+  ExileZone: Khu Trục Xuất
+  EndTurn: Kết Thúc Lượt
+  BattleStart: Bắt Đầu Giao Tranh
+  PlayerTurn: Người Chơi
+  EnemyTurn: Địch
+  ExtraTurn: Thêm
+  TurnCounter: Lượt {0}
+  Next: Tiếp
+  NextSkip: Bỏ Qua
+  NextStage: Sang Chương
+  Achievement: Thành tựu
+  UnlockLevel: Cấp Độ
+Explain:
+  RollCard: "|Tìm thẻ thông qua Thẻ Thưởng|\n\nBạn chỉ có thể tìm được 1 thẻ nào đó\
+    \ khi đáp ứng đủ các tiêu chí sau:\n1: |Kho mana| phải đáp ứng được toàn bộ chi\
+    \ phí của thẻ.\n2: Nếu đó là một thẻ Đặc Trưng, Nó chỉ có thể được tìm thấy khi\
+    \ bạn đang chơi bằng nhân vật đó, hoặc bạn đang câm |Chứng Vật Hoàn Mỹ| của nhân\
+    \ vật đó.\n3: Toàn bộ màu của thẻ đều nằm trong |kho Mana| của bạn. Mana Cầu Vồng\
+    \ không được tính vào tiêu chí này.\n\nVí dụ, bạn chơi bằng Reimu và bạn có |Sách\
+    \ Quỷ|, |Đá Hiền Triết| và |Vồ Thần Kỳ|. |d:(Bạn đổi Chứng Vật Hoàn Mỹ của bạn\
+    \ cho Eirin...)| \n|Kho mana| có <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"><sprite=\"ManaSprite\" name=\"C\">. Bạn có thể tìm thẻ Đặc Trưng của Reimu\
+    \ và Marisa, vì bạn đang có |Sách Quỷ|.\n\nTrong trường hợp này, bạn có thể tìm\
+    \ được 1 thẻ đen có chi phí <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"> vì bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"> để chơi nó. Tuy nhiên, bạn |r:không thể| tìm một thẻ xanh dương\
+    \ và đen tốn <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
+    B\">, bởi vì bạn không có <sprite=\"ManaSprite\" name=\"U\"> trong |kho mana|,\
+    \ ngay cả khi bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"> để chơi nó.\n\nLưu ý:\n|Thẻ bài Trắng|, một |Chứng Vật Hoàn Mỹ|,\
+    \ cho phép bạn tìm thẻ có |p:bất cứ màu nào|.\nThẻ tốn 5 mana hoặc cao hơn và\
+    \ có phí mana chung |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
+    \ name=\"2\">, etc.)| vẫn có thể được tìm thấy ngay cả khi không đủ mana trong\
+    \ |kho mana| để chơi vì có nhiều cách để giảm chi phí của các thẻ này."
+  Title: Chú Ý
+  LoseShinning: Bạn luôn có thể tìm thẻ của nhân vật bạn đang chơi, ngay cả khi bạn
+    làm mất |Chứng Vật Hoàn Mỹ| của nhân vật đó.
+  RemiliaMeet: "1. Thay thế thẻ có cùng chi phí.\n2. Giữ nâng cấp của thẻ khi thay\
+    \ thế."
+  ShinmyoumaruForge: Thẻ tấn công được thay bởi thẻ tấn công và thẻ phòng thủ được
+    thay bởi thẻ phòng thủ.
+  SaveWhenSelect: Việc chọn này sẽ lưu tiến trình của bạn ngay lập tức.
+StartGame:
+  NoClearHind: Thành tựu sẽ bị tắt khi đặt seed hoặc sử dụng Hộp Ngọc
+  DifficultyTitle: Hãy Chọn Độ Khó
+  CharacterUnset: Hãy Chọn Nhân Vật
+  Rate: Độ Phức Tạp
+  Seed: Seed
+  SetSeed: Đặt Seed
+  InvalidSeed: Seed không hợp lệ
+  SetJadeBox: Đặt Hộp Ngọc
+  JadeBoxLock: Chế độ Hộp Ngọc chỉ có sẵn ở Cấp Độ 10.
+  OpeningComic: Xem phần mở đầu
+  StoryMode: Chế độ Cốt truyện
+  StoryDescription: "Giải quyết vụ án bằng Hakurei Reimu\nVài chương sẽ có kẻ địch\
+    \ đã được định trước\nMột số \"Sự Kiện\" sẽ bị cấm"
+  FreeMode: Chế độ tự do
+  FreeDescription: "Giải quyết vụ án với nhân vật yêu thích của bạn\nPhần lớn giai\
+    \ thoại đã bị loại bỏ\nTất cả \"Sự Kiện\" đều có sẵn"
+  NoStoryMode: "Chế độ Cốt truyện chưa sẵn sàng\nVui lòng chờ vào những bản cập nhật\
+    \ tiếp theo."
+  NotReadyHint: "Nhân vật này chưa sẵn sàng\nVui lòng chờ vào những bản cập nhật tiếp\
+    \ theo."
+  IsLockHint: "Nhân vật này sẽ được mở\nở Cấp Độ {0}"
+  CheckDeck: Bộ Bài Khởi Đầu
+  SkillSpellCard: Spell Card
+  SkillExhibit: Chứng Vật Khởi Đầu
+  StartMoney: Vàng Khởi Đầu
+  StartHp: HP Khởi Đầu
+  DifficultyHint: Nếu bạn chưa chơi "Slay the Spire", chúng tôi khuyên bạn nên chơi
+    chế độ Dễ trước.
+  ClearNormal: Hoàn Thành
+  ClearTrue: Hoàn Hảo
+  NeedClear: Thắng độ khó trước để mở.
+  Puzzle: Yêu Cầu
+  SelectAll: Chọn Hết
+  PuzzleHint: "Nhận thêm Yêu Cầu để nhận thêm điểm và kinh nghiệm.\nSẽ được mở sau\
+    \ khi lên Cấp Độ 4."
+  Puzzles: '{0} Yêu Cầu'
+  LockPuzzle: Lên Cấp Độ {0} để mở.
+JadeBoxPage:
+  JadeBoxHint: "Quà đặc biệt của Eirin. Hộp Ngọc chứa những sửa đổi mạnh mẽ và kỳ\
+    \ bí. Hy vọng bạn sẵn sàng để đối đầu với chúng!\nBạn không thể nhận thành tựu\
+    \ khi sử dụng Hộp Ngọc."
+  JadeBoxDaily: Hộp Ngọc Hằng Ngày
+  JadeBoxRandom: Hộp Ngọc Ngẫu Nhiên
+  JadeBoxRandomHint: Làm mới các kết quả ngẫu nhiên mỗi khi bạn đạt tới màn cuối của
+    chương đầu tiên.
+  JadeBoxLast: Hộp Ngọc Cuối Cùng
+  JadeBoxList: Danh Sách Hộp Ngọc
+UI:
+  Yes: Có
+  No: Không
+  On: Bật
+  Off: Tắt
+  Display: Hiện
+  Hide: Ẩn
+  Confirm: Xác Nhận
+  Hiding: Đã Ẩn
+  Cancel: Huỷ Bỏ
+  Return: Quay Lại
+  Close: Đóng
+  Take: Nhận
+  Skip: Bỏ Qua
+  Setting: Cài Đặt
+  Exit: Thoát
+  ExitGame: Thoát Game
+  CopyHint: Seed đã được sao chép vào bản nhớ tạm.
+  SaveHint: Đã Lưu.
+  Numbers:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  Divide: ','
+  SideCloseHint: Nhấn để đóng
+  SeRemove: Đã hết {0}
+  SeAmulet: Đã kháng {0}
+  SpellTitled: '  {0} "{1}"'
+  SpellUntitled: '"{0}"'
+MainMenu:
+  NewGame: Game Mới
+  RestoreGame: Tiếp Tục
+  AbandonGame: Bỏ Trận
+  Setting: Cài Đặt
+  Collection: Bô Sưu Tập
+  Database: Thêm
+  ComplexRules: Lượt Nâng Cao
+  Characters: Nhân Vật
+  LifeData: Thông Số
+  History: Lịch Sử
+  MusicRoom: Phòng Nghe Nhạc
+  Changelog: Nhật Ký Sửa Đổi
+  Credits: Nhà Làm Game
+  Licenses: Giấy Phép
+  ExitGame: Thoát Game
+  SelectProfile: Chọn File
+  InputName: Nhập Tên
+  DeleteProfile: Xoá File?
+  EmptyProfile: File Trống
+  DeleteYes: Xoá
+  DeleteNo: Huỷ
+  EarlyAccess: Thông Báo Truy Cập Sớm (Early Access)
+  StartDate: Ngày Bắt Đầu
+  PlayedTime: Thời Gian Chơi
+  LastPlayed: Lần Chơi Cuối
+Museum:
+  UpgradedFilter: Đã Nâng Cấp
+  CardStyleTooltip: "Chỉ những thẻ có nhiều thiết kế sẽ được hiển thị ở đây.\nChọn\
+    \ thiết kế mà bạn muốn thấy ở màn hình chi tiết của thẻ."
+  CardStyleFilter: Thiết Kế
