@@ -15,10 +15,9 @@ YaoguaiBuster:
   Name: 요괴 버스터
   Description: 피해를 {Damage}씩 {Value1}번 줍니다.
 DoubleJiejie:
-  UpgradedDescription: "피해를 {Damage} 줍니다.\n만약 |보호막|이나 |방어|가 있다면, \n피해를 {Damage}씩 두\
-    \ 번 줍니다."
+  UpgradedDescription: "피해를 {Damage}씩 {Value1}번 줍니다.\n"
   Name: 이중결계
-  Description: "피해를 {Damage} 줍니다.\n만약 |보호막|이 있다면, \n피해를 {Damage}씩 두 번 줍니다."
+  Description: "피해를 {Damage} 줍니다.\n만약 |보호막|이 있다면,\n피해를 {Damage}씩 {Value1}번 줍니다."
   FlavorText: 거울 두 개만 있으면 무한히 펼쳐진 세계를 볼 수가 있을 텐데.
 ShengtianKick:
   Description: "카드를 {Value1}장 뽑습니다.\n|일시 화력|을 {Value2} 얻습니다."
@@ -28,6 +27,7 @@ Fengmozhen4:
   Description: 모든 적에게 피해를 {Damage} 줍니다.
   Name: 봉마진
   FlavorText: 악마를 봉인한다기 보다는 화면 오른쪽에 있는 애들을 봉인하는 것 같아요.
+  UpgradedDescription: 모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.
 TuimofuLuanwu:
   FlavorText: '"이제 너만 남았네?"'
   Name: 퇴마부난무
@@ -61,7 +61,8 @@ PManaCard:
   Name: 채홍
 Knife:
   Name: 단검
-  Description: "피해를 {Damage} 줍니다.\n|카드가 손에서 사라질 시: |체력이 가장 적은 적에게 피해를 {DropDamage} 줍니다."
+  Description: "피해를 {Damage} 줍니다.\n|사용되지 않고 사라질 시|: 체력이 가장 적은 적에게 피해를 {DropDamage} 줍니다."
+  FlavorText: 보안 검사대에서 걸립니다.
 ReimuBlockW:
   Name: 탄막 방어
   FlavorText: 들어오지 마!
@@ -256,6 +257,7 @@ BoliDajiejie:
 ReimuInstant:
   Name: 「몽상봉인 순」
   Description: "피해를 {Damage} 줍니다.\n내 턴을 종료합니다. 이후 추가 턴을 진행합니다.\n|시간 제한| {Mana}."
+  ExtraDescription1: "피해를 {Damage} 줍니다.\n내 턴을 종료합니다. 이후 추가 턴을 진행합니다.\n|d:시간 제한 {Mana}.|"
 DoubleLianhuadie:
   Name: 이색연화접
   Description: '|방어|나 |보호막|을 얻을 시, 무작위 적에게 피해를 {Value1} 줍니다.'
@@ -304,7 +306,7 @@ ReverseJiejie:
   Description: 버프를 잃을 때마다, |보호막|을 {Value1} 얻습니다.
 Changzhizhen:
   Name: 상치진
-  Description: "|보존될 때마다|: 무작위 적에게 피해를 {Value1} 줍니다.\n|손에 있을 경우|: 버프를 잃을 때마다 이번 전투에서\
+  Description: "|턴 종료 시|: 무작위 적에게 피해를 {Value1} 줍니다.\n|손에 있을 경우|: 버프를 잃을 때마다 이번 전투에서\
     \ 이 카드의 피해량이 {Value2} 증가합니다."
 DanceAroundLake:
   Description: 카드가 소멸될 때마다, 카드를 {Value1}장 뽑습니다.
@@ -326,20 +328,26 @@ CraftPotion:
   Description: '|불안정한 물약| {Value1}개를 뽑을 카드 더미에 섞어 넣습니다.'
 MarisaSteal:
   Name: 빌려쓰기
-  Description: "|무지개|를 얻습니다.\n다음 턴에 무작위 마나를 {Value1} 잃습니다."
+  Description: "|채홍|을 한 장 얻습니다.\n|가불| {Value2}."
 WinterWarm:
-  Description: "|집중|을 {Value1} 얻습니다.\n|선보임|: 카드를 {Value2}장 뽑습니다."
+  Description: "|집중|을 {Value1} 얻습니다."
+  Name: 손난로
+  UpgradedDescription: "|집중|을 {Value1} 얻습니다.\n카드를 {Value2}장 뽑습니다."
 NightSeeStar:
   Description: "|예지| {Scry}.\n카드를 {Value1}장 뽑습니다."
+  Name: 밤하늘 관측
 RainbowStar:
-  Description: "피해를 {Damage} 줍니다.\n|지불한 <sprite=\"ManaSprite\" name=\"P\">마다: 피해를\
-    \ {Value1} 더 주고, <sprite=\"Point\" name=\"Power\">을 {Value2} 얻습니다."
+  Description: "피해를 {Damage} 줍니다.\n|지불한 <sprite=\"ManaSprite\" name=\"1\">마다|: 피해가\
+    \ {Value1} 증가합니다.\n|지불한 <sprite=\"ManaSprite\" name=\"P\">마다|: 피해가 {Value2} 증가합니다."
+  Name: 레인보우 스타 임팩트
 ShinningPotion:
-  Description: "|방어|를 {Block} 얻습니다.\n|불안정한 물약|을 뽑을 카드 더미에 한 장 섞어 넣습니다.\n|과충전 {Value2}:|\
+  Description: "|방어|를 {Block} 얻습니다.\n|불안정한 물약|을 뽑을 카드 더미에 한 장 섞어 넣습니다.\n|과충전 {Value2}|:\
     \ 대신 두 장을 섞어 넣습니다."
-  Name: 야광버섯
+  Name: 야광 버섯
 RedLaser:
-  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}:| 대신 그만큼의 피해를 두 번 줍니다."
+  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 피해를 {Damage}씩 {Value1}번 줍니다."
+  Name: 가연 레이저
+  UpgradedDescription: 피해를 {Damage}씩 {Value1}번 줍니다.
 Potion:
   Name: 불안정한 물약
   Description: '|이 카드를 손에 넣을 시|: {Mana}를 얻고 무작위 적에게 {Damage} 피해를 준 뒤, 이 카드는 소멸됩니다.'
@@ -348,11 +356,15 @@ SatelliteIllusion:
   Name: 새틀라이트 일루전
 MarisaDraw:
   Name: 임기응변
-  Description: "카드를 {Value1}장 뽑습니다.\n{PlayerName}이 |폭발| 상태라면, {Mana}를 얻습니다."
+  Description: "카드를 {Value1}장 뽑습니다.\n|버스트| 상태라면, {Mana}를 얻습니다."
 DropBook:
   Description: "|방어|를 {Block} 얻습니다.\n|점성술|을 {Value1}장 얻습니다."
+  Name: 상궤를 벗어난 길
+  FlavorText: "\"전통의 마법 따위엔 관심 없다구.\n- 그럼 썩 나가!\""
 DarkSatellite:
   Description: "|방어|를 {Block} 얻습니다.\n이 전투에서 마지막으로 사용된 카드가 흑색이라면, 카드를 {Value}장 뽑습니다."
+  Name: 다크 새틀라이트
+  FlavorText: 탄막에는 탄막으로!
 AsteroidBelt:
   Name: 소행성대
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n이 전투에서 마지막으로 사용된 카드가 적색이라면, |충전|을 {Value2}\
@@ -367,24 +379,23 @@ Alioth:
   Description: "|예지| {Scry}.\n카드를 {Value1}장 뽑습니다.\n|충전|을 {Value2} 얻습니다."
   Name: 알리오스
 ScryAttack:
-  Description: "피해를 {Damage} 줍니다.\n|예지|할 때마다 이 카드를 버린 카드더미에서 손으로 가져옵니다."
+  Description: "피해를 {Damage} 줍니다.\n|예지|할 때마다 이 카드를 버린 카드 더미에서 손으로 가져옵니다."
   Name: 인도하는 별
 ScryBlock:
   Name: 사전계획
-  Description: '{PlayerName}이 |예지|할 때마다, |방어|를 {Value1} 얻습니다.'
+  Description: '|예지|할 때마다 |방어|를 {Value1} 얻습니다.'
 ShibaiChanwu:
   Name: 실패의 산물
-  Description: "|불안정한 물약|을 버린 카드 더미에 {Value1}장 섞어 넣습니다.\n|그림자|를 뽑을 카드더미에 {Value2}장\
-    \ 섞어 넣습니다."
+  Description: "|불안정한 물약|을 뽑을 카드 더미에 {Value1}장 섞어 넣습니다.\n|그림자|를 {Value2}장 얻습니다."
 Yinhe:
-  Name: 밀키웨이
-  Description: "|방어|를 {Block} 얻습니다.\n|보존|될 때마다: 이번 전투에서 이 카드의 |방어|가 {Value1} 증가합니다."
+  Name: 밀키 웨이
+  Description: "|방어|를 {Block} 얻습니다.\n|보존될 시|: 이번 전투에서 이 카드의 |방어|가 {Value1} 증가합니다."
 StarSky:
   Name: 반짝이는 별하늘
   Description: '|충전|을 {Value1} 얻습니다.'
 LearnAstrology:
-  Name: 천문연구
-  Description: '{PlayerName}의 턴 시작에, 손에 |점성술|이 없다면 |점성술|을 한 장 얻습니다.'
+  Name: 천문 연구
+  Description: '내 턴 시작 시 손에 |점성술|이 없다면 |점성술|을 한 장 얻습니다.'
 AutoQumobang:
   Description: "|손에 있을 경우|: 턴마다 카드를 {Value1}장 더 뽑습니다.\n이 효과를 {Value2}회 발동한 후 |소멸|됩니다."
   Name: 난폭한 불제봉
@@ -392,42 +403,44 @@ Shadow:
   Name: 그림자
   FlavorText: '"루미아만 안 봤어도, 빛을 봐도 아무렇지 않았을 텐데."'
 PotionJungle:
-  Description: '{PlayerName}의 턴 끝에, |불안정한 물약을| 버린 카드 더미에 {Value1}장 섞어 넣습니다.'
-  Name: 형광 숲
+  Description: '내 턴 종료 시 |불안정한 물약|을 버린 카드 더미에 {Value1}장 섞어 넣습니다.'
+  Name: 반딧불의 숲
 AccuracyLaser:
   Name: 디렉셔널 레이저
-  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|보존|될 때마다: 이 카드는 {Mana}를 덜 소모합니다."
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|보존될 시|: 이번 전투에서 이 카드의 비용이 {Mana} 감소합니다."
 ReimuSakura:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n체력을 {Value1} 회복합니다.\n|성장|: {Mana}를 덜 소모합니다."
   Name: 몽상앵화봉인
 CollectionDefense:
-  UpgradedDescription: 뽑을 카드 더미에 있는 카드의 수만큼 보호막을 얻습니다. ({Shield})
+  UpgradedDescription: 뽑을 카드 더미에 있는 카드의 수만큼 |보호막|을 얻습니다. ({Shield})
   Name: 대마불사
-  Description: 뽑을 카드 더미에 있는 카드의 수만큼 방어를 얻습니다. ({Block})
-  NonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 방어를 얻습니다.
-  UpgradedNonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 보호막을 얻습니다.
+  Description: 뽑을 카드 더미에 있는 카드의 수만큼 |방어|를 얻습니다. ({Block})
+  NonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 |방어|를 얻습니다.
+  UpgradedNonbattleDescription: 뽑을 카드 더미에 있는 카드의 수만큼 |보호막|을 얻습니다.
 MarisaEat:
   Description: "|집중|을 {Value1} 얻습니다.\n|선보임|: 체력을 {Value2} 회복합니다."
   Name: 진수성찬
   ExtraDescription1: "|집중|을 {Value1} 얻습니다.\n|d:선보임: 체력을 {Value2} 회복합니다.|"
 PoisonPotion:
   Name: 마녀의 도가니
-  Description: "|불안정한 물약|이 중독도 {Value1} 줍니다.\n|불안정한 물약|을 뽑을 카드 더미에 {Value2}장 섞어 넣습니다."
+  Description: "|불안정한 물약|이 적에게 |중독|을 {Value1} 가합니다.\n|불안정한 물약|을 뽑을 카드 더미에 {Value2}장\
+    \ 섞어 넣습니다."
 BurstDraw:
   Name: 속도 대결
-  Description: '{PlayerName}이 |폭발| 상태가 될 때마다 카드를 {Value1}장 뽑습니다.'
+  Description: '|버스트| 상태가 되면 카드를 {Value1}장 뽑습니다.'
 StarFantasy:
   Name: 스타더스트 레버리
-  Description: "피해를 {Damage} 줍니다.\n|보존|될 때마다: 이 전투에서 이 카드의 피해가 {Value1} 증가합니다."
+  Description: "피해를 {Damage} 줍니다.\n|보존될 시|: 이 전투에서 이 카드의 피해가 {Value1} 증가합니다."
 StarShower:
-  Description: "|방어|를 {Block} 얻습니다.\n|충전|을 {Value1} 얻습니다. {PlayerName}이 |충전|을 가지고\
-    \ 있다면 대신 충전을 {Value2} 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n|충전|을 {Value1} 얻습니다.\n|충전|이 하나도 없다면 |충전|을 {Value2}\
+    \ 얻습니다."
   Name: 별가루에 잠기다
 ThrowBigStar:
-  Name: 적성 폭발
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|과충전 {Value2}:| 대신 그만큼의 피해를 두 번 줍니다."
+  Name: 적색왜성 폭발
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 피해를 {Damage}씩 두 번 줍니다."
 ShootMoon:
   Name: 슛 더 문
+  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: |그레이즈|를 {Value1} 얻습니다."
 Psychedelic:
   Name: 환혹
   Description: 내 턴 종료 시 체력을 {Value1} 잃고, <sprite="Point" name="Power">를 {Value2} 얻습니다.
@@ -459,7 +472,7 @@ GapLady:
   Description: "체력을 {Value1} 잃습니다.\n{Mana}를 얻습니다.\n카드를 {Value2}장 뽑습니다."
 ChunseXiaojing:
   Name: 봄빛 오솔길
-  Description: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다."
+  Description: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n|가불| {Value2}."
 SenluoJiejie:
   Name: 삼라결계
   Description: "|보호막|을 {Shield} 얻습니다.\n다음 턴 시작 시 |보호막|을 전부 잃고, 잃은 |보호막|의 수치만큼 모든 적에게\
@@ -775,3 +788,228 @@ BenwoCard:
 ChaowoCard:
   Name: 초자아
   Description: "|방어|를 {Block} 얻습니다.\n|초자아| 상태가 됩니다."
+Dejavu:
+  Name: 데자뷔
+  Description: "손에서 카드를 최대 {Value1}장까지 선택해 뽑을 카드 더미의 맨 위에 올려놓습니다.\n카드를 {Value1}장 뽑습니다.\n\
+    {Mana}를 얻습니다."
+  FlavorText: 이 고양이 어디서 본 것 같은데.
+CoolMaid:
+  Name: 소쇄한 메이드
+  Description: "|단검|을 {Value1}장 얻습니다.\n{Mana}를 얻습니다."
+AttackMagic:
+  Name: 탄막의 마술
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|단검|을 {Value2}장 얻습니다."
+SakuyaSleep:
+  Name: 잠깐의 휴식
+  Description: "|채홍|을 한 장 얻습니다.\n턴을 종료합니다."
+Lijian:
+  Name: 흐릿한 칼날
+  Description: "피해를 {Damage} 줍니다.\n|카드를 뽑을 시|: 이번 전투에서 코스트가 {Mana} 감소합니다."
+SakuyaBlockU:
+  Name: 위험 감지
+  Description: '|방어|를 {Block} 얻습니다.'
+RunAway:
+  Description: "손의 모든 카드를 버립니다. 버려진 카드들은 |일시적으로 코스트가| {Mana} 감소합니다.\n|그레이즈|를 {Value1}\
+    \ 얻습니다."
+  UpgradedDescription: "손의 모든 카드를 버립니다. 버려진 카드들은 |일시적으로 코스트가| {Mana} 감소합니다.\n|그레이즈|를\
+    \ {Value1} 얻습니다.\n카드를 {Value2}장 뽑습니다."
+  Name: 현장 도주
+PotionDefense:
+  Description: "|보호막|을 {Shield} 얻습니다.\n이번 턴에 발동한 |불안정한 물약|의 횟수만큼 |보호막|을 {Shield} 얻습니다."
+  Name: 야간비행
+UpgradePotion:
+  UpgradedDescription: "뽑을 카드 더미에 |불안정한 물약|을 {Value2}장 섞어넣습니다.\n|불안정한 물약|의 피해가 {Value1}\
+    \ 증가합니다.\n내 턴 종료 시 뽑을 카드 더미와 버린 카드 더미에 있는 |불안정한 물약|의 피해가 {Value1} 증가합니다."
+  Description: "뽑을 카드 더미에 |불안정한 물약|을 {Value2}장 섞어넣습니다.\n|불안정한 물약|의 피해가 {Value1} 증가합니다."
+  Name: 포션 정제
+FindCollection:
+  Description: '{PlayerName}의 전용 카드가 아닌 카드 {Value1}장 중 한 장을 선택해 손에 넣습니다. 해당 카드는 |일시적으로|
+    코스트가 {Mana}이며, |소멸|과 |휘발성|을 갖습니다.'
+  Name: 원격 지원
+BlazingStar:
+  ExtraDescription1: "|방어|를 {Block} 얻습니다. |방어|가 다음 턴이 되도 사라지지 않습니다.\n턴을 종료하고, 턴을 한\
+    \ 번 더 진행합니다.\n|d:시간 제한 {Mana}.|"
+  Name: 블레이징 스타
+  Description: "|방어|를 {Block} 얻습니다. |방어|가 다음 턴이 되도 사라지지 않습니다.\n턴을 종료하고, 턴을 한 번 더 진행합니다.\n\
+    |시간 제한| {Mana}."
+ColdPotion:
+  Description: "|불안정한 포션|에 |빙결| 효과가 추가됩니다.\n뽑을 카드 더미에 |불안정한 포션|을 {Value1}장 섞어넣습니다."
+  Name: 냉각제
+MoguMaster:
+  Description: 무작위 |버섯| 카드 {Value1}개 중 {Value2}장을 골라 손에 넣습니다.
+  Name: 버섯 전문가
+SakuyaGoOut:
+  Name: 출진 준비
+  Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드 {Value1}장을 골라 버립니다.\n{Mana}를 얻습니다."
+BladePower:
+  Description: "|화력|을 {Value1} 얻습니다.\n|카드를 뽑을 시|: 손에 있는 유일한 카드라면 |일시적으로| 코스트가 {Mana}가\
+    \ 됩니다."
+  Name: 은빛 질주
+ReimuHeavyAttack:
+  Name: 하쿠레이 일격
+  Description: "피해를 {Damage} 줍니다.\n|화력|이 있을 시 이 카드의 효과가 {Value1}배 상승합니다."
+  FlavorText: '"너는 이미 죽어있다."'
+ReadyForBurst:
+  Name: 발진 준비
+  Description: "|방어|를 {Block} 얻습니다.\n|충전|을 {Value1} 얻습니다."
+FireUpBagualu:
+  Description: "|충전|을 {Value1} 얻습니다.\n|화력|을 {Value2} 얻습니다. 이 효과는 |버스트|에 영향을 받습니다."
+  Name: 불 붙이기
+MixAndShake:
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n뽑을 카드 더미와 버린 카드 더미에 있는 |불안정한 물약|의 갯수만큼 피해가\
+    \ {Value1} 증가합니다."
+  Name: 불꽃놀이 물약
+WizardStudy:
+  Name: 매직 컨버터
+  Description: "|화력|과 |영력|을 {Value1} 얻습니다.\n|마나 동결| {Mana}."
+ExilePotion:
+  Name: 폐품 재활용
+  UpgradedDescription: 뽑을 카드 더미, 버린 카드 더미, 손에서 카드를 최대 {Value1}장을 골라 |소멸|시킨 뒤, 그만큼의
+    |불안정한 물약|을 버린 카드 더미에 섞어넣습니다.
+  Description: 손에서 카드를 최대 {Value1}장을 골라 |소멸|시킨 뒤, 그만큼의 |불안정한 물약|을 버린 카드 더미에 섞어넣습니다.
+OpenUniverse:
+  Name: 오픈 유니버스
+  Description: "뽑을 카드 더미에서 카드를 한 장 골라 이번 전투에서 제외합니다.\n그 카드의 |일시적으로| 코스트가 {Mana}이고\
+    \ |소멸|이 달린 |복사본| 2장을 만들어 손으로 가져옵니다."
+  FlavorText: 우주의 본질은 복제(?)
+SolarSystem:
+  Description: 내 턴 시작 시 |충전|을 {Value1} 얻습니다.
+  Name: 오러리스 선
+FinalSpark:
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n|버스트| 상태일 시 이 카드를 버린 카드 더미에서 다시\
+    \ 손으로 가져옵니다."
+  FlavorText: '"탄막에서 가장 중요한 건 화력이라구!"'
+  Name: 파이널 스파크
+  Description: 모든 적에게 피해를 {Damage} 줍니다.
+RedMogu:
+  Description: '|중독|을 {Value1} 줍니다.'
+  Name: 광대버섯
+SakuyaSnow:
+  Description: "|방어|를 {Block} 얻습니다.\n|단검|을 {Value1}장 얻습니다."
+  Name: 윈터 레졸루션
+SakuyaTea:
+  Description: "카드를 {Value1}장 뽑습니다.\n|선보임|: 체력을 {Value2} 회복합니다. 이 카드의 코스트가 이번 전투동안\
+    \ {Mana} 감소합니다."
+  ExtraDescription1: "카드를 {Value1}장 뽑습니다.\n|d:선보임: 체력을 {Value2} 회복합니다. 이 카드의 코스트가\
+    \ 이번 전투동안 {Mana} 감소합니다.|"
+  Name: 홍차 끓이기
+CleanRoom:
+  Description: "카드를 한 장 골라 버립니다.\n카드를 {Value1}장 뽑습니다.\n손에서 무작위 카드 {Value2}장을 |강화|시킵니다.\
+    \ 버린 카드가 |단검|이라면 손의 모든 카드를 |강화|합니다."
+  Name: 방 청소
+GainKnife:
+  Name: 성검비무
+  UpgradedDescription: "내 턴 시작 시 |단검|을 {Value1}장 얻습니다.\n|단검|을 {Value2}장 얻습니다."
+  Description: 내 턴 시작 시 |단검|을 {Value1}장 얻습니다.
+BulletStudy:
+  Name: 탄막 연구
+  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: |보호막|을 {Shield} 얻습니다."
+EventHorizon:
+  Name: 이벤트 호라이즌
+  Description: "|버스트| 상태가 됩니다.\n다음 턴 시작 시 사망합니다."
+  UpgradedDescription: "|버스트| 상태가 됩니다.\n|일시 화력|을 {Value1} 얻습니다.\n다음 턴 시작 시 사망합니다."
+HuoliQuankai:
+  UpgradedDescription: "|버스트| 시 세 배의 피해를 가합니다.\n|버스트| 상태가 됩니다."
+  Name: 화력 전개
+  Description: "|버스트| 시 세 배의 피해를 가합니다.\n|충전|을 {Value1} 얻습니다."
+MasterOfCollection:
+  Name: 수집 전문가
+  Description: 카드가 |보존|될 시 해당 카드의 코스트를 이번 전투동안 무작위 마나 {Value1}개 낮춥니다.
+ChargingPotion:
+  Name: 방사성 원소
+  Description: "|불안정한 물약|이 발동될 때마다 |충전|을 {Value1} 얻습니다.\n|불안정한 물약|을 {Value2}장 얻습니다."
+StarlightTaifengSummoner:
+  UpgradedDescription: "뽑을 카드 더미의 맨 위에 |스타라이트 타이푼+|을 한 장 넣습니다.\n|지불한 {Mana}마다|: 카드의\
+    \ 공격 횟수가 늘어납니다.\n|지불한 <sprite=\"ManaSprite\" name=\"R\">마다|: 카드의 피해가 {Value1}\
+    \ 늘어납니다."
+  Name: 모여드는 별빛
+  Description: "뽑을 카드 더미에 |스타라이트 타이푼|을 한 장 섞어넣습니다.\n|지불한 {Mana}마다|: 카드의 공격 횟수가 늘어납니다.\n\
+    |지불한 <sprite=\"ManaSprite\" name=\"R\">마다|: 카드의 피해가 {Value1} 늘어납니다."
+StarlightTaifeng:
+  Name: 스타라이트 타이푼
+  Description: 피해를 {Damage}씩 {Value1}번 줍니다.
+DiscardToCharging:
+  Name: 보충 연료
+  Description: "손에서 무작위 카드를 골라 버립니다.\n버린 카드의 갯수만큼 |충전|을 {Value1} 얻습니다."
+PrivateVision:
+  Description: "카드 한 장을 골라 버립니다.\n|그레이즈|를 {Value1} 얻습니다."
+  Name: 프라이빗 비전
+  UpgradedDescription: "카드 한 장을 골라 버립니다.\n|그레이즈|를 {Value1} 얻습니다.\n|반사|를 {Value2} 얻습니다."
+SakuyaTwiceAttack:
+  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n버린 카드 더미에 |단검|을 {Value2}장 섞어넣습니다."
+  Name: 번쩍이는 도탄
+SakuyaWeak:
+  Name: 타임 서프레션
+  Description: "|허약|을 {Value1} 줍니다.\n{Mana}를 얻습니다."
+TimeAuraAttack:
+  Name: 시간의 마술
+  Description: "피해를 {Damage} 줍니다.\n|시간 펄스|를 {Value1} 얻습니다."
+DefenseDraw:
+  Name: 루나 사이클
+  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n|카드를 뽑을 시|: 이 카드의 코스트가 이번\
+    \ 전투동안 {Mana} 감소합니다."
+ExileMagic:
+  Description: 손의 카드를 최대 {Value1}장 골라 |소멸|시키고, |소멸|된 카드의 갯수만큼 |단검|을 얻습니다.
+  Name: 전환 마법
+SilverBullet:
+  Name: 은탄
+  Description: 모든 적에게 피해를 {Damage} 줍니다.
+SilverJump:
+  Name: 다모클레스의 칼날
+  Description: "|취약|을 {Value1} 줍니다.\n뽑을 카드 더미와 버린 카드 더미에 |단검|을 {Value2}장 섞어넣습니다."
+SakuyaDefenseRetain:
+  Name: 시각 경계
+  Description: "|방어|를 {Block} 얻습니다.\n|방어|가 다음 턴이 되도 사라지지 않습니다."
+SakuyaAttackU:
+  Name: 카드 날리기
+  Description: 피해를 {Damage} 줍니다.
+MarisaBlockB:
+  Name: 스타더스트 디펜스
+  Description: '|방어|를 {Block} 얻습니다.'
+SakuyaAttackW:
+  Name: 미스디렉션
+  Description: 피해를 {Damage} 줍니다.
+SakuyaBlockW:
+  Description: '|방어|를 {Block} 얻습니다.'
+  Name: 블랙 키 디펜스
+GreenMogu:
+  Description: 뽑을 카드 더미에 |불안정한 포션|을 {Value1}장 섞어넣습니다.
+  Name: 부채버섯
+BlueMogu:
+  Name: 청느타리버섯
+  Description: 카드를 {Value1}장 뽑습니다.
+PurpleMogu:
+  Name: 자색졸각버섯
+  Description: 체력을 {Value1} 회복합니다.
+ManaJungle:
+  Description: '|카드를 뽑을 시|: |채홍|을 {Value1}장 얻고, 이 카드를 |소멸|시킵니다.'
+  Name: 삼림 탐험
+KnifeBounce:
+  Name: 나이프 도탄
+  Description: "피해를 {Damage} 줍니다.\n|단검|을 {Value1}장 얻습니다."
+ChargingToMana:
+  Name: 차지 컨버터
+  Description: 모든 |충전|을 잃습니다. 이렇게 잃은 |충전|만큼 {Mana}를 얻고 카드를 한 장 뽑습니다.
+JungleMaster:
+  Name: 숲의 주민
+  Description: "|방어|를 {Block} 얻습니다.\n|전투 시작 시|: |보호막|을 {Value1} 얻습니다."
+MarisaHoldCard:
+  Name: 버리기 아까운 것
+  Description: "손의 카드를 최대 {Value1}장 골라 한 턴 간 |보존|합니다.\n|방어|를 {Block} 얻습니다."
+RedGiantStar:
+  Name: 적색거성 지다
+  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: |화염|을 한 장 얻습니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: |채홍|을 한 장 얻습니다."
+WhiteLaser:
+  Name: 라이트닝 레이저
+  Description: "피해를 {Damage} 줍니다.\n|보호막|을 {Shield} 얻습니다. 이 효과는 |버스트|에 영향을 받습니다."
+SplitPotion:
+  Description: "|불안정한 포션|이 한 번 더 공격합니다.\n뽑을 카드 더미에 |불안정한 포션|을 {Value1}장 섞어넣습니다."
+  Name: 이중활성제
+IceSpark:
+  Name: 프로즌 레이저
+  Description: 모든 적에게 피해를 {Damage} 주고, |빙결|을 가합니다.
+SakuyaInvestigate:
+  Name: 일시정지 탐정
+  Description: "|록온|을 {Value1} 줍니다.\n추가 턴을 진행할 시 |소멸|된 카드 더미에서 이 카드를 |일시적으로| {Mana}\
+    \ 코스트로 만들고 가져옵니다."
