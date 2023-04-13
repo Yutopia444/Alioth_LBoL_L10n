@@ -375,7 +375,7 @@ SakuyaUsage:
 CoolBreeze:
   Description: "Obtén {Block} de |Bloqueo|.\nSi algún enemigo tiene |Frío|, |Mejora|\
     \ {Value1} {Value1:plural one='carta aleatoria' other='cartas aleatorias'} en\
-    \ la mano. Prioriza las cartas de ataque."
+    \ la mano. Prioriza las cartas de técnica."
   Name: Brisa Refrescante
 CirnoBlockU:
   Description: Obtén {Block} de |Bloqueo|.
@@ -1532,8 +1532,8 @@ MeihongPower:
   FlavorText: Es una inmortal maldita que vive su vida como una ermitaña.
   Name: La Llama Inmortal
 DizangLove:
-  Description: "Cada vez que {PlayerName} juega una carta |d:común|, gana {Value1}\
-    \ de |Poder Temporal|.\n"
+  Description: "Cada vez que {PlayerName} juega una carta común, gana {Value1} de\
+    \ |Poder Temporal|.\n"
   Name: Bodhi Instantáneo
 HuiyeMana:
   FlavorText: Esta canción de cuna cuenta una historia de privilegiados pecadores.
@@ -1816,6 +1816,7 @@ GatherFairy:
     \ one='% carta' other='% cartas'}."
 RemoveOverdraft:
   Name: Curar Heridas
+  Description: "Inflige {Damage} de daño.\nElimina el |Sobregiro| de {PlayerName}."
 IceBlock:
   Name: Bloque de Hielo
   Description: "{PlayerName} no puede perder vida por un turno.\nPierde todo el |Bloqueo|,\
@@ -1823,8 +1824,8 @@ IceBlock:
     \ {PlayerName}."
 FairyTree:
   Name: Hogar de las Hadas
-  Description: Añade una carta de habilidad a la mano. Gana {Mana} y roba {Value1:plural
-    one='% carta' other='% cartas'}.
+  Description: Cuando una carta de técnica entra en la mano por primera vez en cada
+    turno, gana {Mana} y roba {Value1} carta{Value1:plural one='' other='s'}.
 BrainOverclock:
   Name: Overclocking Cerebral
   Description: "Gana {Mana}.\n|Sobregiro| {Value1}."
@@ -1875,9 +1876,15 @@ CirnoDraw:
   UpgradedDescription: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nAl comienzo\
     \ del siguiente turno, roba {Value2} carta{Value2:plural one='' other='s'}."
 Tether:
-  Name: Compañeras
+  Name: Lazos
+  Description: "Para cada carta de |Apoyo de las Hadas| en la mano, obtén {Value1}\
+    \ de |Poder Temporal|.\n(Obtén {TotalFire} de |Poder Temporal|.)"
 GainDayaojing:
   Name: Mejores Amigas
+  Description: "Añade una |Unidad de Daiyousei| a la mano.\n|Debut|: Gana {Value1}\
+    \ de vida."
+  ExtraDescription1: "Añade una |Unidad de Daiyousei| a la mano.\n|d:Debut: Gana {Value1}\
+    \ de vida.|"
 GainStar:
   Name: Lluvia de Estrellas
   Description: Inflige {Damage} de daño al objetivo {Value1:plural one="% vez" other="%
@@ -1886,6 +1893,9 @@ YouxiangMoon:
   Name: Belleza de la Naturaleza
 IceSaber:
   Name: Espada Forjada en Hielo
+  Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
+    Descarta cualquier cantidad de cartas azules. Inflige ese daño una vez más por\
+    \ cada carta descartada de esta manera."
 XiangziEcho:
   Name: Eco de la Montaña
   Description: Elige {Value1} carta{Value1:plural one='' other='s'} en tu mano. {Value1:plural
@@ -1899,9 +1909,9 @@ BulletStudy:
     \ de |Barrera|."
   Name: Estudio Danmaku
 SplitPotion:
-  Description: "Las |Pociones inestables| Atacan a un objetivo adicional.\nAgrega\
-    \ {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'} a\
-    \ la pila de robo."
+  Description: "Las |Pociones Inestables| infligen daño una vez más.\nAgrega {Value1}\
+    \ {Value1:plural one='|Poción Inestable|' other='|Pociones Inestables|'} a la\
+    \ pila de robo."
   Name: Químico Doble
 DiscardToCharging:
   Name: Reponer Combustible
@@ -1963,12 +1973,17 @@ LongArm:
     \ one='' other='s'} en la mano, gana {Mana}."
 CallFriends:
   Name: Llamar a los Amigos
+  Description: Agrega {Value1} carta{Value1:plural one=' aleatoria común' other='s
+    aleatorias comunes'} de |Apoyo de las Hadas| a la mano.
+  UpgradedDescription: Agrega {Value1} carta{Value1:plural one=' aleatoria' other='s
+    aleatorias'} de |Apoyo de las Hadas| a la mano.
 HualiIce:
   Name: Imponente Hielo de Verano
 ForeverCool:
   Name: La Siempre Fresca Temporada
 IceBarrier:
   Name: Barrera de Hielo
+  Description: Gana {Value1} |Armadura de Escarcha|.
 MarisaHoldCard:
   Description: "Elige hasta {Value1} {Value1:plural one='carta' other='cartas'} en\
     \ la mano. |Retenlo| en este turno.\nObtén {Block} de |Bloqueo|."
@@ -1978,8 +1993,13 @@ UnlimitedTime:
     \ de Tiempo| se elimina."
 ZeroK:
   Name: Cero Absoluto
+  Description: "Aumenta el daño infligido al acumular |Frío| {Value1} veces.\nAplica\
+    \ |Frío| a cada enemigo."
 Blizzard:
   Name: Ventisca
+  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo."
+  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
+    \ cada enemigo.\nAl comienzo del próximo turno de {PlayerName}, repite este efecto."
 IceMatrix:
   Name: Matriz Congelada
 GainSunny:
@@ -1996,6 +2016,9 @@ FairyTeam:
   Name: Gran Guerra de Hadas
 CirnoEcho:
   Name: Regalo de la Naturaleza
+  Description: "Elige {Value1} carta{Value1:plural one='' other='s'} de la pila de\
+    \ descarte y devuélvelo{Value1:plural one='' other='s'} a la mano. {Value1Plural:\
+    \ one='Obtiene' other='Obtienen'} |Eco|."
 ColdBreath:
   Name: Aliento de Diamante
   Description: Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.
@@ -2007,8 +2030,12 @@ ColdBreath:
     \ robo."
 GainLily:
   Name: Primavera Sorpresa
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} {Value1:plural\
+    \ one='vez' other='veces'} .\nAgrega un |Anuncio de Lily White| a la mano."
 IceGun:
   Name: Ametralladora de Carámbanos
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} {Value1:plural\
+    \ one='vez' other='veces'}.\nEnemigos con |Frío| reciben {Value2} veces ese daño."
 CirnoInForest:
   Name: A Plena Vista
 MoreFriends:
