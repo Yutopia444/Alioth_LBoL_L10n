@@ -15,17 +15,18 @@ YaoguaiBuster:
     many='раз' other='раза'}.
   Name: Истребитель ёкаев
 DoubleJiejie:
-  UpgradedDescription: "Наносит {Damage} урона.\nЕсли у {PlayerName:g} есть |Барьер|\
-    \ или |Защита|, вместо этого наносит {Damage} урона дважды."
+  UpgradedDescription: "Наносит {Damage} урона {Value1} {Value1:plural one='раз' few='раза'\
+    \ many='раз' other='раза'}.\n"
   Description: "Наносит {Damage} урона.\nЕсли у {PlayerName:g} есть |Барьер|, вместо\
-    \ этого наносит {Damage} урона дважды."
+    \ этого наносит столько же урона {Value1} {Value1:plural one='раз' few='раза'\
+    \ many='раз' other='раза'}."
   Name: Двухуровневый барьер
 Fengmozhen:
   Description: Наносит {Damage} урона.
-  Name: Очищающие иглы
+  Name: Усмиряющие иглы
 Shenyuzha:
   Description: Даёт {Block} |Защиты|.
-  Name: Талисман божественной ауры
+  Name: Божественный талисман
 YinyangCard:
   Name: Сфера Инь-ян
   Description: "Наносит {Damage} урона.\nДаёт {Shield} |Барьера|."
@@ -40,7 +41,7 @@ Jinfuzhen:
     \ {PlayerName:g} есть |Барьер|."
   Name: Связывающий барьер
 JingshenYishi:
-  Description: "Даёт {Block} |Защиты|.\n|Изгоняет| случайную карту из руки."
+  Description: "Даёт {Block} |Защиты|.\n|Изгоните| карту из руки."
   Name: Ритуал очищения
 MengzhiYuzha:
   Description: "Наносит {Damage} урона.\nДобавляет |Иглу запечатывания| в руку."
@@ -49,6 +50,8 @@ MengzhiYuzha:
 Fengmozhen4:
   Description: Наносит {Damage} урона всем врагам.
   Name: Круг, запечатывающий зло
+  UpgradedDescription: Наносит {Damage} урона всем врагам {Value1} {Value1:plural
+    one='раз' few='раза' many='раз' other='раза'}.
 YinyangBaoyu:
   Description: "Наносит {Damage} урона.\nДобавляет |Сферу Инь-Янь| в руку."
   Name: Сфера двойственности
@@ -58,9 +61,9 @@ TwoBalls:
     в руку.
   Name: Сбалансированные сферы
 Changzhizhen:
-  Description: "|Пока находиться в руке:| Урон этой карты увеличивается на {Value2}\
-    \ в этом бою, когда один из бафов {PlayerName:g} исчезает.\n|Когда оставляется:|\
-    \ Наносит {Value1} урона случайному врагу."
+  Description: "|Пока находится в руке:| Урон этой карты в текущем бою увеличивается\
+    \ на {Value2}, когда {PlayerName:g} теряет поз. эффект.\n|В конце хода:| Наносит\
+    \ {Value1} урона случайному врагу."
   Name: Постоянный барьер
 TuimofuLuanwu:
   Description: Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'
@@ -87,7 +90,8 @@ ZhujiThreeGod:
   Name: Призыв Сумиёси
 Zhuizongfu:
   Description: "Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'\
-    \ other='% раза'}.\nДобавляет {Mana}, если у {PlayerName:g} есть |Барьер|."
+    \ other='% раза'}.\nЕсли у {PlayerName:g} есть |Временная огневая мощь|, даёт\
+    \ {Mana} маны."
   Name: Амулет наведения
 YakongDianxue:
   Description: "Наносит {Damage} урона.\nЭта карта возвращается из Сброса в руку,\
@@ -145,6 +149,7 @@ DanmuDuijue:
 SmallPanding:
   Description: "Даёт {Value1} |Уворота|.\nДаёт {Value2} |Уязвимости|."
   Name: Маленький хитбокс
+  UpgradedDescription: Даёт {Value1} |Уворота|.
 ReimuLucky:
   Description: "Даёт {Value1} |Талисман|.\nДаёт {Value2} <sprite=\"Point\" name=\"\
     Gold\">."
@@ -201,7 +206,7 @@ Wunvyu:
     \ урон этой карты увеличивается на {Value2} в этой битве."
   Name: Самые зловещие сферы Хакурей
 FreeFly:
-  Description: В начале хода {PlayerName:g} добавляет {Mana}.
+  Description: В начале хода {PlayerName:g} получает {Mana}.
   Name: Свободный полёт
   FlavorText: Способность летать - это чрезвычайная редкость во внешнем мире, однако
     в Генсокё - это обыденность.
@@ -1557,3 +1562,16 @@ Psychedelic:
 FangxiangAttack:
   Description: Если цель находится под действием |Яда|, нанести {Damage} урона. Иначе,
     наложить на цель {Value1} |Яда|.
+ReimuHeavyAttack:
+  Name: Кулак Хакурей
+  Description: "Наносит {Damage} урона.\nКаждая |Огневая мощь| дополнительно увеличивает\
+    \ урон этой карты на {Value1}."
+ReimuFreeAttack:
+  Description: "Даёт {Block} |Защиты|.\n{Value1:plural one='Следующая' other='Следующие'}\
+    \ {Value1} {Value1:plural one='атака' few='атаки' many='атак' other='атаки'} будут\
+    \ стоить {Mana} {Mana:plural one='ману' other='маны'}"
+ReimuShrine:
+  Name: Праздник в храме
+  Description: В начале хода {PlayerName} получает {Value1} |Временной духовности|.
+SuikaOut:
+  Name: Очищающий экзорцизм
