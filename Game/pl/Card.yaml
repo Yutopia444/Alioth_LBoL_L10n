@@ -27,11 +27,10 @@ DoubleJiejie:
   Name: Podwójna Bariera
   FlavorText: Weź dwa lustra a zobaczysz nieskończoną pętlę.
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Jeżeli {PlayerName} ma |Barierę|, to zadaj {Damage:plural one='% obrażenie' few='%\
-    \ obrażenia' many='% obrażeń'} kolejny raz."
+    Jeżeli {PlayerName} ma |Barierę|, to zadaj {Value1:plural one='% raz' few='% razy'\
+    \ many='% razy'} więcej obrażeń."
   UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
-    \ obrażeń'}.\nJeżeli {PlayerName} ma |Barierę| lub |Blok|, to zadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} kolejny raz."
+    \ obrażeń'} dwa razy.\n"
 Fengmozhen:
   Name: Igła Perswazji
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -62,6 +61,8 @@ Fengmozhen4:
   Name: Krąg Pieczętujący Zło
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
     wszystkim wrogom.
+  UpgradedDescription: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%
+    obrażeń'} wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.
 WunvKongwu:
   Name: Powietrzny Taniec Kapłanki
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
@@ -79,7 +80,7 @@ Jinfuzhen:
     Jeżeli {PlayerName} ma |Barierę|, nałóż {Value1} |Wrażliwości|."
 JingshenYishi:
   Name: Oczyszczający Rytuał
-  Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| losową kartę z ręki."
+  Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| kartę z ręki."
 YinyangBaoyu:
   Name: Kula Dualizmu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -182,8 +183,8 @@ TaijiLiangyi:
 Wunvyu:
   Name: Najgroźniejsza Kula Hakurei
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\n|gdy w dłoni:| Gdy karta zostanie\
-    \ dobrana poza fazą doboru, zwiększ obrażenia tej karty o {Value2}."
+    \ {Value1:plural one='% raz' other='% razy'}.\n|Gdy w dłoni:| Gdy karta zostanie\
+    \ dobrana poza fazą doboru, zwiększ obrażenia tej karty o {Value2} na czas walki."
 MomentPower:
   Name: Wyrwa Wymiarowa
   Description: Gdy {PlayerName} zyskuje |Tymczasową Moc| lub |Tymczasowe Uduchowienie|,
@@ -195,9 +196,10 @@ ChuanyueJiejie:
 HuanxiangTouying:
   Name: Podążaj
   Description: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart. Ma ona |Wygnanie|\
-    \ oraz |Eteryczność|.\nTe karty kosztują łącznie 1, 2 i 3."
+    \ oraz |Eteryczność|.\nTe karty kosztują odpowiednio 1, 2 i 3."
   UpgradedDescription: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart. Ma\
-    \ ona |Wygnanie| oraz |Eteryczność|.\nTe karty kosztują łącznie 1, 2, 3, 4 i 5."
+    \ ona |Wygnanie| oraz |Eteryczność|.\nTe karty kosztują odpowiednio 1, 2, 3, 4\
+    \ i 5."
 OutInGap:
   Name: Łamanie Granic
   Description: Wybierz jedną z {Value1} losowych kart |p:dowolnego koloru| aby dodać
@@ -219,6 +221,9 @@ ReimuInstant:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zakończ turę. Następnie {PlayerName} zacznie dodatkową turę.\n|Limit Czasowy|\
     \ {Mana}."
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nZakończ turę. Wtem {PlayerName} zaczyna następną.\n|d:Limit Czasowy\
+    \ {Mana}|"
 DoubleLianhuadie:
   Name: Dwubarwny Motyl Lotusu
   Description: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj {Value1:plural
@@ -247,7 +252,7 @@ DanceAroundLake:
     few='% karty' many='% kart'}.
 Qingshan:
   Name: Czyiś Ostatni Dom
-  Description: "Zyskaj {Block} |Bloku|.\n|Gdy Wygnana:| Zyskaj {Mana}."
+  Description: "Zyskaj {Block} |Bloku|.\n|Gdy Wygnana|: Zyskaj {Mana}."
 AutoQumobang:
   Name: Rozwścieczony Gohei
   Description: "|Gdy w dłoni:| Dobierz o {Value1:plural one='% kartę' few='% karty'\
@@ -261,12 +266,12 @@ GapLady:
 ChunseXiaojing:
   Name: Ścieżka Koloru Wiosny
   Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
-    \ many='% kart'}."
+    \ many='% kart'}.\n|Naddobór| {Value2}."
 ReimuSakura:
   Name: Pieczęć Kwitnącej Wiśni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nUlecz {Value1:plural one='% punkt' few='% punkty' many='%\
-    \ punktów'} życia.\n|Przyrost:| Kosztuje o {Mana} mniej."
+    \ punktów'} życia.\n|Przyrost|: Kosztuje o {Mana} mniej."
 SenluoJiejie:
   Name: Zagreguj Granicę
   Description: "Zyskaj {Shield} |Bariery|.\nNa początku następnej tury {PlayerName:g}\
@@ -285,12 +290,15 @@ MarisaBlockB:
   Description: Zyskaj {Block} |Bloku|.
 CraftPotion:
   Name: Wywarz Miksturę
-  Description: Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne
-    Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.
+  Description: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne\
+    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\nDobierz {Value2:plural\
+    \ one='% kartę' few='% karty' many='% kart'}."
 RedLaser:
   Name: Ognisty Laser
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj {Value2}:| Zadaj tyle obrażeń kolejny raz."
+    |Załaduj {Value2}:| Zadaj tyle obrażeń {Value1:plural one='% raz' other='% razy'}."
+  UpgradedDescription: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%
+    obrażeń'} {Value1:plural one='% raz' other='% razy'}.
 Potion:
   Name: Niestabilna Mikstura
   FlavorText: UWAGA! Mikstury mogą być wybuchowe!
@@ -320,8 +328,10 @@ ReadyForBurst:
 WinterWarm:
   Name: Ogrzewacz Dłoni
   Description: "Zyskaj {Value1:plural one='% |Koncentrację|' few='% |Koncentracje|'\
-    \ many='% |Koncentracji|'}.\n|Debiut:| Dobierz {Value2:plural one='% kartę' few='%\
-    \ karty' many='% kart'}."
+    \ many='% |Koncentracji|'}."
+  UpgradedDescription: "Zyskaj {Value1:plural one='% |Koncentrację|' few='% |Koncentracje|'\
+    \ many='% |Koncentracji|'}.\nDobierz {Value2:plural one='% kartę' few='% karty'\
+    \ many='% kart'}."
 AsteroidBelt:
   Name: Pas Asteroidów
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -346,14 +356,14 @@ NightSeeStar:
     \ many='% kart'}."
 MarisaSteal:
   Name: '"Pożycz" Składniki'
-  Description: "Dodaj |Tęczę| do ręki.\nNa początku następnej tury {PlayerName:g}\
-    \ strać {Value1:plural one='% losową manę' few='% losowe many' many='% losowych\
-    \ man'}."
+  Description: "Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='% |Tęcz|'}\
+    \ do ręki.\n|Naddobór| {Value2}."
 RainbowStar:
   Name: Wybuch Tęczowej Gwiazdy
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Za każdą wydaną <sprite=\"ManaSprite\" name=\"P\">:| Ta karta zadaje o {Value1}\
-    \ więcej obrażeń. Zyskaj {Value2}<sprite=\"Point\" name=\"Power\">."
+    |Za każdą wydaną <sprite=\"ManaSprite\" name=\"1\">:| Ta karta zadaje o {Value1}\
+    \ więcej obrażeń.\n|Za każdą wydaną <sprite=\"ManaSprite\" name=\"P\">:| Ta karta\
+    \ zadaje o {Value2} więcej obrażeń."
 ScryBlock:
   Name: Premedytacja
   Description: Gdy {PlayerName} zrobi |Przewidzenie|, zyskaj {Value1:plural one='%
@@ -361,16 +371,16 @@ ScryBlock:
 ShibaiChanwu:
   Name: Produkt Porażki
   Description: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne\
-    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu zrzutek.\nDodaj {Value2:plural\
-    \ one='|% Cień|' few='|% Cienie|' many='|% Cieni|'} do stosu doboru."
+    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\nDodaj {Value2:plural\
+    \ one='|% Cień|' few='|% Cienie|' many='|% Cieni|'} do ręki."
   FlavorText: Nawet robiąc desery ryzykujesz porażką.
 ShinningPotion:
   Name: Świetlny Grzyb
   Description: "Zyskaj {Block} |Bloku|.\nDodaj |Niestabilną Miksturę| do stosu doboru.\n\
-    |Załaduj 2:| Dodaj jeszcze jedną."
+    |Załaduj 2|: Dodaj jeszcze jedną."
 Yinhe:
   Name: Droga Mleczna
-  Description: "Zyskaj {Block} |Bloku|.\n|Gdy Przetrzymana:| Zwiększ |Blok| tej karty\
+  Description: "Zyskaj {Block} |Bloku|.\n|Gdy Przetrzymana|: Zwiększ |Blok| tej karty\
     \ o {Value1} w tej walce."
 StarSky:
   Name: Jasne Gwiezdne Niebo
@@ -385,9 +395,9 @@ ReverseJiejie:
   Description: Gdy {PlayerName} straci buffa, zyskaj {Value1} |Bariery|.
 Changzhizhen:
   Name: Stała Bariera
-  Description: "|Gdy Przetrzymana:| Zadaj {Value1:plural one='% obrażenie' few='%\
-    \ obrażenia' many='% obrażeń'}.\n|Gdy w dłoni:| Gdy {PlayerName} straci buffa,\
-    \ zwiększ obrażenia tej karty o {Value2} na czas walki."
+  Description: "|Na końcu tury:| Zadaj {Value1:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} losowemu wrogowi.\n|Gdy w dłoni:| Gdy {PlayerName} straci\
+    \ buffa, zwiększ obrażenia tej karty o {Value2} na czas walki."
 PoisonPotion:
   Description: "|Niestabilne Mikstury| nakładają {Value1} |Trucizny| na cel.\nDodaj\
     \ {Value2:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne Mikstury|'\
@@ -399,7 +409,7 @@ MarisaEat:
     \ punkty' many='% punktów'} życia.|"
   Name: Wyżerka Grzybami
   Description: "Zyskaj {Value1:plural one='% |Koncentrację|' few='% |Koncentracje|'\
-    \ many='% |Koncentracji|'}.\n|Debiut:| Ulecz {Value2:plural one='% punkt' few='%\
+    \ many='% |Koncentracji|'}.\n|Debiut|: Ulecz {Value2:plural one='% punkt' few='%\
     \ punkty' many='% punktów'} życia."
 StarShower:
   Description: "Zyskaj {Block} |Bloku|.\nJeżeli {PlayerName} nie ma |Ładunku|, zyskaj\
@@ -407,7 +417,7 @@ StarShower:
   Name: Kąpiel w Gwiezdnym Pyle
 ShootMoon:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj {Value2}:| Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='%\
+    |Załaduj {Value2}|: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='%\
     \ |Uników|'}."
   Name: Strzał w Księżyc
 RunAway:
@@ -422,8 +432,10 @@ RunAway:
 ExilePotion:
   Name: Utylizacja Odpadów
   Description: Wygnaj co najwyżej {Value1:plural one='% kartę' few='% karty' many='%
-    kart'} |Nieszczęścia| lub Statusu ze stosu doboru. Dodaj tyle samo |Niestabilnych
-    Mikstur| do stosu zrzutek.
+    kart'} z dłoni. Dodaj tyle samo |Niestabilnych Mikstur| do stosu zrzutek.
+  UpgradedDescription: Wybierz do {Value1:plural one='% karty' few='% kart' many='%
+    kart'} w obiegu do |Wygnania|. Dodaj tyle samo |Niestabilnych Mikstur| do stosu
+    zrzutek.
 PotionJungle:
   Name: Fluorescencyjny Las
   Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='|% Niestabilną
@@ -432,8 +444,8 @@ PotionJungle:
 AccuracyLaser:
   Name: Kierunkowy Laser
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\n|Gdy Przetrzymana:| Ta karta kosztuje\
-    \ o {Mana} mniej w tej walce."
+    \ {Value1:plural one='% raz' other='% razy'}.\n|Gdy Przetrzymana|: Ta karta kosztuje\
+    \ o {Mana} mniej na czas walki."
 CollectionDefense:
   Name: Zbyt Wielki, Aby Upaść
   Description: Zyskaj |Blok| równy ilości kart w stosie doboru. ({Block})
@@ -447,11 +459,11 @@ BurstDraw:
 StarFantasy:
   Name: Fantazja Gwiezdnego Pyłu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Gdy Przetrzymana:| Zwiększ obrażenia tej karty o {Value1} na czas walki."
+    |Gdy Przetrzymana|: Zwiększ obrażenia tej karty o {Value1} na czas walki."
 ThrowBigStar:
   Name: Eksplozja Czerwonej Gwiazdy
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\n|Załaduj {Value2}:| Zadaj tyle obrażeń wszystkim wrogom jeszcze\
+    \ wszystkim wrogom.\n|Załaduj {Value2}|: Zadaj tyle obrażeń wszystkim wrogom jeszcze\
     \ raz."
 FireUpBagualu:
   Name: Rozpal Ogień
@@ -465,33 +477,35 @@ MixAndShake:
   FlavorText: Przed otwieraniem nie potrząsywaj.
 WizardStudy:
   Name: Przewrotnica Magii
-  Description: "Zyskaj {Value1} |Mocy| i |Uduchowienia|.\nPierwsza karta zagrana w\
-    \ każdej turze kosztuje o {Mana} więcej."
+  Description: "Zyskaj {Value1} |Mocy| i |Uduchowienia|.\n|Zamrożenie Many| {Mana}."
 PotionDefense:
-  Description: "Zyskaj {Block} |Bloku|.\nDo końca tej tury za każdą użytą |Niestabilną\
+  Description: "Zyskaj {Shield} |Bariery|.\nDo końca tej tury za każdą użytą |Niestabilną\
     \ Miksturę| zyskaj {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
     \ |Bariery|."
   Name: Spadające Echo
 UpgradePotion:
   Description: "Dodaj {Value2:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne\
-    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu zrzutek.\nNa końcu tury\
-    \ {PlayerName:g} zwiększ obrażenia |Niestabilnych Mikstur| w stosach doboru i\
-    \ zrzutek o {Value1}."
+    \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu zrzutek.\nZwiększ obrażenia\
+    \ |Niestabilnych Mikstur| o {Value1}."
   Name: Udoskonalenie Eliksiru
+  UpgradedDescription: "Dodaj {Value2:plural one='|% Niestabilną Miksturę|' few='|%\
+    \ Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu zrzutek.\n\
+    Zwiększ obrażenia |Niestabilnych Mikstur| o {Value1}.\nNa końcu tury {PlayerName:g}\
+    \ zwiększ obrażenia wszystkich |Niestabilnych Mikstur| o {Value1}."
 RedGiantStar:
   UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
-    \ obrażeń'}.\n|Załaduj {Value2}:| Dodaj |Tęczę| do ręki."
+    \ obrażeń'}.\n|Załaduj {Value2}|: Dodaj |Tęczę| do ręki."
   Name: Wielki Czerwony Wstrząs
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj {Value2}:| Dodaj |Płomień| do ręki."
+    |Załaduj {Value2}|: Dodaj |Płomień| do ręki."
 StarlightTaifengSummoner:
-  Description: "Dodaj |Gwiezdny Tajfun| do stosu doboru.\n|Za każde wydane {Mana}:|\
+  Description: "Dodaj |Gwiezdny Tajfun| do stosu doboru.\n|Za każde wydane {Mana}|:\
     \ Dodana karta zadaje obrażenia dodatkowy raz.\n|Za każde wydane <sprite=\"ManaSprite\"\
-    \ name=\"R\">:| Zwiększ obrażenia dodanej karty o {Value1}."
+    \ name=\"R\">|: Zwiększ obrażenia dodanej karty o {Value1}."
   Name: Konwergencja Gwiazd
   UpgradedDescription: "Dodaj |Gwiezdny Tajfun+| do stosu doboru.\n|Za każde wydane\
-    \ {Mana}:| Dodana karta zadaje obrażenia dodatkowy raz.\n|Za każde wydane <sprite=\"\
-    ManaSprite\" name=\"R\">:| Zwiększ obrażenia dodanej karty o {Value1}."
+    \ {Mana}|: Dodana karta zadaje obrażenia dodatkowy raz.\n|Za każde wydane <sprite=\"\
+    ManaSprite\" name=\"R\">|: Zwiększ obrażenia dodanej karty o {Value1}."
 FindCollection:
   Name: Zdalne Wsparcie
   Description: Wybierz 1 z {Value1} losowych kart innych od unikalnych kart {PlayerName:a}
@@ -545,10 +559,12 @@ BlazingStar:
   Description: "Zyskaj {Block} |Bloku|. |PlayerName| nie traci |Bloku| na początku\
     \ następnej tury.\nZakończ turę, po czym zacznij dodatkową turę.\n|Limit Czasowy|\
     \ {Mana}."
+  ExtraDescription1: "Zyskaj {Block} |Bloku|. |Przetrzymaj Blok|.\nZakończ turę. Wtem\
+    \ zacznij kolejną.\n|d: Limit Czasowy {Mana}.|"
 IceSpark:
   Name: Lodowaty Laser
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\nNałóż {Value1} |Odmrożenia| na wszystkich wrogów."
+    \ wszystkim wrogom i nałóż |Chłód|."
 ChargingToMana:
   Name: Konwersja Ładunku
   Description: Strać cały |Ładunek|. Za każdy |Ładunek| stracony w ten sposób zyskaj
@@ -608,7 +624,7 @@ GainKnife:
   Name: Koło Sztyletów
 SakuyaAttackX:
   Name: Srebrny Napad
-  Description: "|Za każde wydane {Mana}:| Zadaj {Damage:plural one='% obrażenie' few='%\
+  Description: "|Za każde wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
     \ obrażenia' many='% obrażeń'}."
 SakuyaAttackW:
   Name: Zmylenie
@@ -634,7 +650,7 @@ Lijian:
 Knife:
   Name: Sztylet do Rzucania
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Gdy ta karta opuszcza dłoń:| Jeżeli nie została zagrana, zadaj {DropDamage:plural\
+    |Gdy ta karta opuszcza dłoń|: Jeżeli nie została zagrana, zadaj {DropDamage:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wrogowi, który ma najmniej\
     \ życia."
 Dejavu:
@@ -648,8 +664,8 @@ SakuyaSnow:
     \ few='% |Sztylety do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki."
 CoolMaid:
   Name: Elegancka Pokojówka
-  Description: Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety
-    do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki.
+  Description: "Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety\
+    \ do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki.\nZyskaj {Mana}."
 SakuyaTwiceAttack:
   Name: Błysk Odbicia
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -702,8 +718,7 @@ SakuyaDraw:
     \ many='% kart'}."
 PrepareParty:
   Name: Przygotowanie Przyjęcia
-  Description: "Zyskaj {Block} |Bloku|.\nPołóż kartę z ręki na szczycie stosu doboru\
-    \ lub zyskaj {Mana}."
+  Description: "Połóż kartę z ręki na szczyt stosu doboru.\nZyskaj {Block} |Bloku|."
 MihuanJack:
   Name: Złodziejka Czasu
   Description: Na początku tury {PlayerName:g} zyskaj {Value1} |Pulsu Czasu|.
@@ -782,7 +797,7 @@ BackOfKnife:
   Name: Moje Ostrze Powraca
   Description: "Usuń wszystkie |Wygnane Sztylety do Rzucania| z walki.\nWtem, dodaj\
     \ |Ekspres Ostrych Sztyletów| do ręki. Zadaje o {Value1} obrażeń więcej za każdą\
-    \ usuniętą w ten sposób kartę."
+    \ usuniętą w ten sposób kartę.\n(Zada o {IncreasedDamage} więcej obrażeń.)"
 GroupOfKnife:
   Name: Ekspres Ostrych Sztyletów
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -825,6 +840,7 @@ BackToFuture:
   Name: Powrót do Przyszłości
   Description: "Zamień stosy doboru i zrzutek miejscami.\nDobierz {Value1:plural one='%\
     \ kartę' few='% karty' many='% kart'}."
+  FlavorText: Drogi? Tam, gdzie zmierzamy, nie potrzebujemy dróg.
 EvilMaid:
   Name: Pokojówka Diabła
   Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
@@ -1699,10 +1715,73 @@ ReimuDrink:
 ReimuShrine:
   Description: '{PlayerName} zyskuje {Value1} |Tymczasowego Uduchowienia| na początku
     tury.'
+  Name: Jarmark Świątyni Hakurei
 SuikaOut:
-  Description: "Wybierz kartę w dłoni, aby |Wygnać|.\nOprzyj się {Level:plural one='kolejnej\
-    \ karcie statusu, którą' other='kolejnym % kartom statusu, które'} otrzymasz."
+  Description: "Wybierz kartę w dłoni, aby |Wygnać|.\nZyskaj {Value1} |Odparcia|."
+  Name: Oczyszczający Egzorcyzm
 ReimuFreeAttack:
   Description: "Zyskaj {Block} |Bloku|.\n{Value1:plural one='Następna karta' few='Następne\
     \ % karty' many='Następne % kart'} ataku kosztuj{Value1:plural one='e' few='ą'\
     \ many='e'} o {Mana} mniej."
+  Name: Chwilowa Fantazja
+SakuyaGoOut:
+  Name: Przygotowania do Podróży
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nZyskaj {Mana}."
+SakuyaInvestigate:
+  Name: Detektyw Zatrzymanego Czasu
+  Description: "Nałóż {Value1:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\n\
+    Na początku każdej dodatkowej tury zwróć tę kartę z |Wygnania| do ręki. |Tymczasowo\
+    \ Kosztuje| {Mana}."
+SakuyaDetective:
+  Name: List Gończy
+ReimuHeavyAttack:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na tę kartę."
+  Name: Pięść Hakurei
+BrokenTimeline:
+  Name: Zniszczona Linia Czasowa
+  Description: Zakończ turę. Wtem, zacznij kolejną. Nie zyska się żadnej many z bazy
+    many na początku tury.
+  FlavorText: '"Cała misterna linia czasowa w pizdu."'
+BulletStudy:
+  Name: Badanie Danmaku
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Załaduj| {Value2}: Zyskaj {Shield} |Bariery|."
+DiscardToCharging:
+  Name: Odnowa Paliwa
+  Description: "Zrzuć dowolną ilość kart z ręki.\nZa każdą zrzuconą kartę zyskaj {Value1}\
+    \ |Ładunku|."
+AutoKnife:
+  Description: "Wszystkie |Sztylety do Rzucania| zyskują |Samowygnanie| na czas walki.\n\
+    Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|'\
+    \ many='% |Sztyletów do Rzucania|} do ręki."
+  Name: Opętany Miecz "Srebrne Ostrze"
+ColdPotion:
+  Name: Czynnik Chłodzący
+  Description: "|Niestabilne Mikstury| nakładają |Chłód|.\nDodaj {Value1:plural one='|%\
+    \ Niestabilną Miksturę|' few='|% Niestabilne Mikstury|' many='|% Niestabilnych\
+    \ Mikstur|'} do stosu doboru."
+MarisaHoldCard:
+  Description: "Wybierz do {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ w dłoni. |Przetrzymaj| je na tę turę.\nZyskaj {Block} |Bloku|."
+SplitPotion:
+  Name: Podwójne Chemikalia
+  Description: "|Niestabilne Mikstury| zadają obrażenia dodatkowy raz.\nDodaj {Value1:plural\
+    \ one='|% Niestabilną Miksturę|' few='|% Niestabilne Mikstury|' many='|% Niestabilnych\
+    \ Mikstur|'} do stosu doboru."
+VampireHunter:
+  Name: Łowczyni Wampirów
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Jeżeli cel ma status |Vampira|, zadaj {Value1:plural one='% raz' other='% razy'}\
+    \ więcej obrażeń."
+SakuyaFuneral:
+  Name: Przedwczesny Pogrzeb
+  Description: "Strać {0:plural one='% punkt' few='% punkty' many='% punktów'} życia.\n\
+    Wybierz |Wygnaną| kartę, aby ją zwrócić do ręki. Będzie ona |Tymczasowo Kosztować|\
+    \ {Mana}."
+  FlavorText: '"Jeszcze nie jestem martwa, Ojousama."'
+KnifeAim:
+  Name: Świat Deflacji
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Zrzuć wszystkie |Sztylety do Rzucania| z dłoni. Celują w wybranego wroga."

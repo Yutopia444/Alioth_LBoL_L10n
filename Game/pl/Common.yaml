@@ -24,6 +24,21 @@ Game:
   UnlockLevel: Poziom Odblokowania
   EnemyTurn: Wróg
   RarityOrder: Rzadkość
+  ActualOrder: Kolejność
+  IndexOrder: Indeks
+  IndexOrderExplain: "Karty są pokazane w kolejności Kolekcji.\nKarty o tej samej\
+    \ nazwie są ustawione w kolejności nabycia."
+  TypeOrderExplain: "Karty tego samego rodzaju są pokazane w kolejności w Kolekcji.\n\
+    Karty o tej samej nazwie są pokazane w kolejności nabycia."
+  RarityOrderExplain: "Karty o tej same rzadkości są pokazane w kolejności w Kolekcji.\n\
+    Karty o tej samej nazwie są pokazane w kolejności nabycia."
+  TypeOrder: Rodzaj
+  ActualOrderExplain: "Pokazuje karty w kolejności, w której weszły w stos.\n\nBiblioteka:\
+    \ Kolejność, w której karty zostały pozyskane w tej grze.\nStos doboru: Pierwsza\
+    \ jest na \"szczycie stosu\".\nStos zrzutek: Ostatnia jest na \"szczycie stosu\"\
+    .\n\nDomyślnie nie można obejrzeć stosu doboru w tej kolejności."
+  ManaAmountOrder: Koszt
+  Achievement: Osiągnięcia
 MainMenu:
   ExitGame: Wyjdź z Gry
   SelectProfile: Wybierz Profil
@@ -78,6 +93,11 @@ Explain:
     \ ogólny komponent kosztu |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
     \ name=\"2\"> itd.)| nadal mogą być znalezione, nawet jeśli nie ma wystarczająco\
     \ many w |bazie many| aby ją zagrać, gdyż istnieją sposoby, aby obniżyć ich cenę."
+  RemiliaMeet: "1. Zastąp karty o tym samym koszcie.\n2. Zachowaj status ulepszenia\
+    \ przy zamianie."
+  ShinmyoumaruForge: Karty ataku są zastąpione kartami ataku a karty obrony kartami
+    obrony.
+  SaveWhenSelect: Wybór tego natychmiast zapisze grę.
 UI:
   Yes: Tak
   No: Nie
@@ -114,6 +134,7 @@ UI:
   SeAmulet: '{0} Odparte'
   SpellTitled: '  {0} "{1}"'
   SpellUntitled: '"{0}"'
+  Skip: Pomiń
 StartGame:
   DifficultyTitle: Proszę wybrać poziom trudności
   Rate: Złożoność
@@ -156,7 +177,7 @@ StartGame:
     przejścia i nie odblokowywują osiągnięć.
 Museum:
   UpgradedFilter: Ulepszenie
-  CardStyleFilter: Typ Karty
+  CardStyleFilter: Styl Karty
   CardStyleTooltip: "Tylko karty o różnych typach są wyświetlane.\nWybierz ilustrację\
     \ karty, którą chcesz wyświetlić, w sekcji informacji o karcie."
   UnlockAndReveal: Widziane Karty
@@ -219,7 +240,8 @@ Setting:
   Show: Pokaż
   Hide: Ukryj
   AnimatingEnvironment: Animowane Otoczenie
-  AnimatingEnvironmentDescription: Pokazuj dynamiczne tło podczas walki.
+  AnimatingEnvironmentDescription: Pokazuj dynamiczne tło podczas walki i w pokoju
+    Yukari.
   SingleEnemyAutoSelect: Automatyczne Wybieranie
   SingleEnemyAutoSelectDescription: Czy zagrać karty które wybierają wroga bez wybierania
     wroga, gdy jest tylko jeden.
@@ -255,7 +277,19 @@ Setting:
     Select8: Wybierz 8
     ToggleDiscardZone: Pokaż Stos Zrzutek
     RebindMessage: Proszę wcisnąć klawisz dla {0}. Wciśnij ESC aby anulować.
+    Select12: Wybierz 12
+    ToggleMinimize: Tymczasowo ukryj interfejs
+    PoolW: Przenieś <sprite="ManaSprite" name="W"> do wybranej sekcji
+    PoolU: Przenieś <sprite="ManaSprite" name="U"> do wybranej sekcji
+    PoolB: Przenieś <sprite="ManaSprite" name="B"> do wybranej sekcji
+    PoolR: Przenieś <sprite="ManaSprite" name="R"> do wybranej sekcji
+    PoolG: Przenieś <sprite="ManaSprite" name="G"> do wybranej sekcji
+    PoolC: Przenieś <sprite="ManaSprite" name="C"> do wybranej sekcji
+    PoolP: Przenieś <sprite="ManaSprite" name="P"> do wybranej sekcji
+    Select11: Wybierz 11
   EnableKeyboard: Włącz Klawiaturę
+  ShowShortcut: Skrót do Pokazania Kart w Dłoni
+  ShowShortcutDescription: Pokaż skróty nad kartami w dłoni
 History:
   Puzzles: "{0:plural one:'% Prośba' two:'% Prośby' many:'% Próśb'}"
   Mana: Mana
@@ -301,9 +335,9 @@ JadeBoxPage:
   JadeBoxLast: Ostatnia Cudowna Szkatułka
   JadeBoxList: Lista Cudownej Szkatułki
 Chat:
-  FraudRabbitStart2: Mam najnowszą technologię z księżyca. Mogę ci ją sprzedać.
+  FraudRabbitStart2: Mam najnowszą technologię z Księżyca. Mogę ci ją sprzedać.
   FraudRabbitOnlyOne: Ci gamonie! Że też zostałam jako ostatnia.
-  FraudRabbitNoMoney: Ani jednego pieniążka nie masz? Jaki luj.
+  FraudRabbitNoMoney: Ani jednego pieniążka nie masz? Ale luj.
   FraudRabbitPlayer: Hej! Wracaj tu!
   SickGirl: Khy, khy...
   WaterGirl: Zasmakujesz mojego cierpienia!
@@ -343,8 +377,8 @@ Chat:
   LongBribery1: Jak chcesz~
   LongBribery2: Okej. Okej.
   LongEscape1: O nie, zostałam pokonana.
-  FraudRabbitStart1: Wiem, kto jest sprawcą. Powiem ci, jak mi zapłacisz
-  FraudRabbitLongTurn: Hym, to trwa już za długo. Spadam.
+  FraudRabbitStart1: Wiem, kto jest sprawcą. Powiem ci, jak mi zapłacisz.
+  FraudRabbitLongTurn: Hm, to trwa już za długo. Spadam.
   HetongKailang3: Wiem, że stać wam na to!
   Terminator2: "OTRZYMANO USZKODZENIA...\nPROWADZENIE NAPRAW..."
   SunnySpell: Promienie światła zbiegają się że mną!
@@ -361,6 +395,10 @@ Chat:
   Rin1: Och panienko! Widzę, że masz {0:a}! Podoba mi się! Wzięłabym!
   YoumuMooncake: Zwróć moje {0:a}!
   YuyukoMooncake: Bardzo mocno pragnę sobie zjeść {0:a}...
+  Fox2: To jeszcze nic, kochana~
+  Fox0: Ach jaka piękna młoda panienka~
+  Fox1: Och pokochasz to, kochanie~
+  LoveGirlFallInLove: Moje życzenie w końcu się spełniło.
 ErrorChat:
   MoneyNotEnough: Nie starczy mi pieniędzy.
   LowMana: Nie starczy mi many.
@@ -377,6 +415,7 @@ ErrorChat:
   NoCardByMama: Nie ma karty o takim koszcie.
   CardFengyin: Zostałam zapieczętowana.
   HandFull: Moja dłoń jest już pełna.
+  CardCharm: Czuję się zdezorientowana.
 Debut:
   EirinChats:
   - Nie marnuj czasu, {0:cv}

@@ -66,7 +66,7 @@ LimitedDamage:
   Description: "{OwnerName} może otrzymać co najwyżej {Limit} obrażeń w każdej turze.\
     \ Może jeszcze otrzymać {Count:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'} w tej turze."
-  Name: Ogranicznik Obrażeń
+  Name: Oswobodzicielka Przedmiotów
   Brief: '{OwnerName} może otrzymać tylko ograniczoną ilość obrażeń.'
 TurnStartDontLoseBlock:
   Description: "{OwnerName} nie utraci |Bloku| na początku {Level:plural one='następnej\
@@ -76,7 +76,7 @@ TurnStartDontLoseBlock:
 AmuletForCard:
   Description: Oprzyj się {Level:plural one='kolejnej karcie statusu, którą' other='kolejnym
     % kartom statusu, które'} otrzymasz (zostają |Wygnane|).
-  Name: Egzorcyzm
+  Name: Odparcie
   Brief: Oprzyj się następnym kartom statusu, które otrzymasz (zostają |Wygnane|).
 Vulnerable:
   Name: Wrażliwy
@@ -212,6 +212,7 @@ Drowning:
   Name: Tonięcie
   Description: "{OwnerName} otrzymuje {Level:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} na końcu każdej swojej tury."
+  Brief: '{OwnerName} otrzymuje obrażenia na końcu tury.'
 LoveGirlDamageIncrease:
   Name: Trzepotające się Serce
   Description: Uczucia {OwnerName:g} zostały odwzajemnione. Otrzymuje o {Rate}% więcej
@@ -305,10 +306,9 @@ DoubleLianhuadieSe:
   Brief: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj trochę losowemu wrogowi.
 EvilTuiZhiSe:
   Description: "{Level:plural one='Następna karta' few='Następne % karty' many='Następne\
-    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
-    \ w tej turze."
+    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia."
   Name: Ztępić Zło
-  Brief: Następne karty ataku zadadzą dwukrotne obrażenia w tej turze.
+  Brief: Kilka następnych kart ataku zada dwukrotne obrażenia.
 BoliPhantomSe:
   Description: Gdy karta inna od |Igły Perswazji| zostanie |Wygnana|, dodaj {Level:plural
     one='% |Igłę|' few='% |Igły|' many='% |Igieł|'} |Perswazji| do ręki |tymczasowo
@@ -372,6 +372,7 @@ Vampire:
   Name: Vampir
   Description: '{OwnerName} uzdrawia życie równe zadanym niezablokowanym obrażeniom.
     Straszne!'
+  Brief: '{OwnerName} uzdrawia życie równe zadanym niezablokowanym obrażeniom. Straszne!'
 FastAttack:
   Name: Szczytowy Pędziwiatr
   Description: Po zagraniu pierwszej karty w turze, {OwnerName} zadaje {PlayerName:d}
@@ -495,10 +496,10 @@ PoisonPotionSe:
     \ few='% punkty' many='% punktów'} |Trucizny|."
 TimeAuraSe:
   Description: "Na końcu tury {PlayerName:g} zadaj {Level:plural one='% obrażenie'\
-    \ few='% obrażenia' many='% obrażeń'} wszystkim wrogom.\nStrać stopień za każdego\
+    \ few='% obrażenia' many='% obrażeń'} wszystkim wrogom.\nStrać ilość za każdego\
     \ trafionego wroga."
   Name: Puls Czasu
-  Brief: "Na końcu tury {PlayerName:g} zadaj obrażenia wszystkim wrogom.\nStrać stopień\
+  Brief: "Na końcu tury {PlayerName:g} zadaj obrażenia wszystkim wrogom.\nStrać ilość\
     \ za każdego trafionego wroga."
 GainKnifeSe:
   Brief: Na początku każdej tury {PlayerName:g} dodaj |Sztylety do Rzucania| do ręki.
@@ -587,6 +588,7 @@ DangerousMagicianSe:
 LoseSpiritSe:
   Description: Na początku tury {PlayerName:g} zmniejsz |Uduchowienie| o {Level}.
   Brief: Na początku tury {PlayerName:g} strać trochę |Uduchowienia|.
+  Name: Zagubiony Płaszcz Piór
 SeeFengshuiSe:
   Description: "Na początku tury {PlayerName:g} |Przewidź| {Scry}.\nZa każdą kartę\
     \ |Obrony| wysłaną do stosu zrzutek podczas tego |Przewidywania| zyskaj {Block}\
@@ -689,8 +691,13 @@ SilverBladeSe:
   Brief: Gdy zostanie użyta karta ataku, zyskaj |Barierę|.
 Cold:
   Name: Zimno
-  Description: Ręce {OwnerName:g} trzęsą się z zimna! Ocieplą się w następnej turze.
-  Brief: Ręce {OwnerName:g} trzęsą się z zimna! Ocieplą się w następnej turze.
+  Description: "Na początku tury, {OwnerName} traci {BaseDamage:plural one='% punkt'\
+    \ few='% punkty' many='% punktów'} życia i traci |Chłód|.\nJak |Chłód| zostanie\
+    \ nałożony na {OwnerName:d} to straci {StackMultiply:plural one='% raz' other='%\
+    \ razy'} tyle życia. ({StackDamage} życia.)"
+  Brief: "Na początku tury, {OwnerName} traci {BaseDamage:plural one='% punkt' few='%\
+    \ punkty' many='% punktów'} życia i traci |Chłód|.\nJak |Chłód| zostanie nałożony\
+    \ na {OwnerName:d} to straci dwa razy tyle życia. ({StackDamage} życia.)"
 UseCardToLoseGame:
   Name: Krótki Żywot
   Description: Po zagraniu jeszcze {Count:plural one='% karty' other='% kart'} przegraj
@@ -738,3 +745,108 @@ MeilingAbilitySe:
   Description: Gdy {OwnerName} zyskuje |Moc| lub |Tymczasową Moc|, zyskuje {Level}
     |Bariery|.
   Name: Piękny Słodki Kwiat
+PrismriverSe:
+  Brief: Gdy {PlayerName} ma zyskać jakąś ilość many, zyskuje zamiast tego tą samą
+    ilość <sprite="ManaSprite" name="P">.
+  Name: Concert Prism
+  Description: Gdy {PlayerName} ma zyskać jakąś ilość many, zyskuje zamiast tego tą
+    samą ilość <sprite="ManaSprite" name="P">.
+ManaFreezed:
+  Name: Zamrożenie Many
+  Brief: Pierwsza karta zagrana w każdej turze kosztuje więcej.
+  Description: Pierwsza karta zagrana w każdej turze kosztuje o {Mana} więcej.
+PurifyModule:
+  Name: Moduł Oczyszczający
+LightingModule:
+  Name: Moduł Błyskowy
+AccuracyModule:
+  Name: Moduł Naprowadzający
+EnemyTuanzi:
+  Name: Pyszne Dango
+ReimuShrineSe:
+  Name: Jarmark Świątyni Hakurei
+  Description: Na początku tury {PlayerName:g} zyskaj {Level} |Tymczasowego Uduchowienia|.
+  Brief: Na początku tury {PlayerName:g} zyskaj |Tymczasowe Uduchowienie|.
+PotionBaseDamageSe:
+  Brief: '|Niestabilne Mikstury| zadają więcej obrażeń.'
+  Name: Wybuchowe Składniki
+  Description: '|Niestabilne Mikstury| zadają o {Level} więcej obrażeń.'
+ColdPotionSe:
+  Name: Czynnik Chłodzący
+  Description: '|Niestabilne Mikstury| nakładają |Chłód|.'
+  Brief: '|Niestabilne Mikstury| nakładają |Chłód|.'
+SplitPotionSe:
+  Name: Podwójne Chemikalia
+ColdUp:
+  Brief: Mnożnik obrażeń ponownego nałożenia |Chłodu| jest zwiększony.
+  Name: Zamarznięcie do Szpiku Kości
+  Description: Mnożnik obrażeń ponownego nałożenia |Chłodu| wzrasta o {Level}.
+NextTurnColdAll:
+  Description: Na początku następnej tury {OwnerName:g} nałóż |Chłód| na wszystkich
+    wrogów.
+  Name: Nadciąga Zima
+  Brief: Na początku następnej tury {OwnerName:g} nałóż |Chłód| na wszystkich wrogów.
+ExtraDraw:
+  Brief: Na początku tury {PlayerName:g} dobierz kartę.
+  Name: Dodatkowy Dobór
+  Description: Na początku tury {PlayerName:g} dobierz {Level:plural one='% kartę'
+    few='% karty' many='% kart'}.
+AutoKnifeSe:
+  Name: Opętany Miecz "Srebrne Ostrze"
+  Description: Wszystkie |Sztylety do Rzucania| zyskują |Samowygnanie|.
+  Brief: Wszystkie |Sztylety do Rzucania| zyskują |Samowygnanie|.
+ReimuFreeAttackSe:
+  Description: "{Level:plural one='Następna karta' few='Następne % karty' many='Następne\
+    \ % kart'} ataku kosztuj{Level:plural one='e' few='ą' many='e'} {Mana}."
+  Brief: Następne kilka kart ataku kosztuje {Mana}.
+  Name: Chwilowa Fantazja
+BlackPoisonSe:
+  Name: Taniec w Ciemnościach
+  Description: Za każdym razem, gdy {PlayerName} zada niezablokowane obrażenia wrogom,
+    nakłada im {Level} |Trucizny|.
+  Brief: Za każdym razem, gdy {PlayerName} zada niezablokowane obrażenia wrogom, nakłada
+    im |Truciznę|.
+SihunYuSe:
+  Name: Wisiorki Wydzielające Złowrogie Dusze
+  Description: Na końcu tury {OwnerName:g} przyciąga ona więcej wrogów.
+DizangLoveSe:
+  Description: Gdy pospolita karta zostanie zagrana {OwnerName} zyskuje {Level} |Tymczasowej
+    Mocy|.
+  Name: Natychmiastowa Bodhi
+NoBaseManaThisTurn:
+  Name: Zniszczona Linia Czasowa
+  Description: Na początku tury zaneguj jakąkolwiek manę która byłaby zyskana z bazy
+    many.
+  Brief: Na początku tury zaneguj jakąkolwiek manę która byłaby zyskana z bazy many.
+NoBaseManaNextTurn:
+  Name: Zniszczona Linia Czasowa w Następnej Turze
+  Description: Na początku następnej tury zaneguj jakąkolwiek manę która byłaby zyskana
+    z bazy many.
+  Brief: Na początku następnej tury zaneguj jakąkolwiek manę która byłaby zyskana
+    z bazy many.
+ForeverCoolSe:
+  Name: Fantazja Wiecznie Mroźnej Pory Roku
+Benwo:
+  Name: Id
+  Description: Zadawaj i dostawaj podwójne obrażenia w stanie |Id|.
+  Brief: Zadawaj i dostawaj podwójne obrażenia w stanie |Id|.
+Chaowo:
+  Name: Super-ego
+YouxiangMoonSe:
+  Name: Piękności Natury
+KaguyaTreeSeeSe:
+  Name: Ocean Drzew Hourai
+  Description: Wszystkie karty tracą |Wygnanie|.
+  Brief: Wszystkie karty tracą |Wygnanie|.
+FoxCharm:
+  Name: Lisi Urok
+  Description: "Można zagrać co najwyżej {Limit:plural one='% kartę' few='% karty'\
+    \ many='% kart'} w jednej turze.\n{Count:plural one='Została % karta' few='Zostały\
+    \ % karty' many='Zostało % kart}.\nPokonaj |Lisią Youkai|, aby usunąć ten efekt."
+DeathPoison:
+  Name: Trucizna Śmierci
+  Description: Po pokonaniu {OwnerName:g} {PlayerName} zyskuje {Level} |Trucizny|.
+WhiteWorldSe:
+  Name: Czysto Biały Świat
+FairyTreeSe:
+  Name: Wielkie Drzewo Wróżek
