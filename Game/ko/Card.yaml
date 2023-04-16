@@ -112,11 +112,11 @@ YinyangBaoyu:
 SweetPoison:
   FlavorText: 에링..에링..다스케테..
   Name: 달콤한 독
-  Description: 내 턴 종료 시, |중독|을 {Value1} 얻습니다.
+  Description: '|턴 종료 시|: |중독|을 {Value1} 얻습니다.'
 Pressure:
   FlavorText: 야치에는 자기 주장을 남의 주장인 것마냥 속일 겁니다.
   Name: 위압감
-  Description: 내 턴 종료 시, <sprite="Point" name="Power">를 {Value1} 잃습니다.
+  Description: '|턴 종료 시|: <sprite="Point" name="Power">를 {Value1} 잃습니다.'
 YuyukoMisfortune:
   Description: '|손에 있을 시|: 카드를 사용할 때마다 체력을 {Value1} 잃습니다.'
   Name: 굶주림 빙의
@@ -137,31 +137,31 @@ BefuddledLife:
     얘기합니다.
 Yuebiao:
   Name: 월면
-  Description: '카드를 뽑을 시: |순화| {Value1}'
+  Description: '|카드를 뽑을 시|: |순화| {Value1}'
   FlavorText: 생기라곤 전혀 없는 땅.
 BuyPeace:
   Name: 액땜
-  Description: 내 턴 종료 시, <sprite="Point" name="Gold">를 {Value1} 잃고 체력을 {Value2} 회복합니다.
+  Description: '|턴 종료 시|: <sprite="Point" name="Gold">를 {Value1} 잃고 체력을 {Value2} 회복합니다.'
   FlavorText: '"돈이 없으면 돈을 잃을 일도 없는 거 아냐?"'
 XiaosanJingxia:
   Name: 공포
-  Description: 내 턴 종료 시, |허약|을 {Value1} 얻습니다.
+  Description: '|턴 종료 시|: |허약|을 {Value1} 얻습니다.'
   FlavorText: 요즘 코가사는 바깥 세계의 공포영화를 보면서 사람을 놀래키는 법을 연구하고 있습니다. 최근에는 "샤이닝"이라는 영화를 봤다고
     하네요.
 MarisaForget:
   Name: 망각
-  Description: 내 턴 종료 시, |연약|을 {Value1} 얻습니다.
+  Description: '|턴 종료 시|: |연약|을 {Value1} 얻습니다.'
   FlavorText: '"가스불 잠갔던가?"'
 Misfortune:
   Name: 불행
-  Description: 내 턴 종료 시, <sprite="Point" name="Gold"> 100마다 체력을 {Value1} 잃습니다.
+  Description: '턴 종료 시|: <sprite="Point" name="Gold"> 100마다 체력을 {Value1} 잃습니다.'
   FlavorText: '"불행의 근원은 이것으로부터 나오는 것이랍니다."'
 Zhukeling:
   Name: 퇴거령
   FlavorText: '"당장 나가서 반성하세요."'
 FanzhuanChongdong:
   Name: 역전된 충동
-  Description: 내 턴 종료 시, 이번 턴 체력을 회복하지 않았을 경우 체력을 {Value1} 잃습니다.
+  Description: '|턴 종료 시|: 이번 턴 체력을 회복하지 않았을 경우 체력을 {Value1} 잃습니다.'
   FlavorText: 흡혈귀의 권속이 되는 대가.
 Jiangshen:
   Name: 정신 수행
@@ -326,7 +326,9 @@ MarisaAttackR:
   Description: 피해를 {Damage} 줍니다.
 CraftPotion:
   Name: 물약 제조
-  Description: '|불안정한 물약| {Value1}개를 뽑을 카드 더미에 섞어 넣습니다.'
+  Description: '|불안정한 물약| {Value1}개를 뽑을 카드 더미에 섞어 넣습니다.
+
+    카드를 {Value2}장 뽑습니다.'
 MarisaSteal:
   Name: 빌려쓰기
   Description: "|채홍|을 한 장 얻습니다.\n|가불| {Value2}."
@@ -444,7 +446,8 @@ ShootMoon:
   Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: |그레이즈|를 {Value1} 얻습니다."
 Psychedelic:
   Name: 환혹
-  Description: 내 턴 종료 시 체력을 {Value1} 잃고, <sprite="Point" name="Power">를 {Value2} 얻습니다.
+  Description: '|턴 종료 시|: 체력을 {Value1} 잃고, <sprite="Point" name="Power">를 {Value2}
+    얻습니다.'
   FlavorText: '"아직도 꿈 속인가?"'
 ExtraTurnEveryone:
   Name: 인플레이션 스퀘어
@@ -1232,3 +1235,109 @@ KnifeAim:
 StopTime:
   Name: 프로즌 타임
   Description: 내 턴 종료 시 사용되지 않은 무작위 마나 {Value1}개를 잃지 않고 남깁니다.
+NazrinBaota:
+  Name: 보탑의 빛
+  FlavorText: "\"터널에서 하이빔 좀 쏘지 말라고!\"\n─쿠로다니 야마메"
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 있는 무작위 카드 {Value1}장을 |강화|합니다.\n강화되는 카드는\
+    \ 공격 카드가 우선시됩니다."
+QinglanAttack:
+  Name: 토끼는 내려앉았다
+  Description: "피해를 {Damage} 줍니다.\n|예지| {Scry}.\n카드를 {Value2}장 뽑습니다."
+KokoroAttack:
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n무작위 카드 한 장을 버립니다."
+  Name: 기나라 사람 땅을 걱정하다
+YuetuYuyi:
+  Name: 잃어버린 깃옷
+  FlavorText: 남아있는 달의 추억.
+  Description: '{Value1}턴 간 |천의무봉| 상태가 됩니다.'
+DoremyDuplicate:
+  Description: 손에서 카드를 한 장 골라 그 카드의 복사본을 {Value1}장 얻습니다.
+  Name: 몽아몽중
+LeidiBlizzard:
+  Description: 모든 적에게 피해를 {Damage} 주고 |빙결|을 부여합니다.
+  Name: 링거링 콜드
+GuijiZaoxingYuan:
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+  Name: 진원 조형술
+GuijiZaoxingFang:
+  Name: 사각형 조형술
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+MogongAttack:
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n|손에 있을 경우|: 다른 카드를 먼저 사용할\
+    \ 시 이 카드의 피해와 |방어|를 해당 카드의 기본 피해와 |방어|로 바꿉니다."
+  Name: 하니와 조형술
+YunyouShengdi:
+  UpgradedDescription: "|방어|를 {Block} 얻습니다.\n손에 있는 모든 카드를 이번 전투동안 |강화|합니다."
+  Name: 성지순례
+  Description: "|방어|를 {Block} 얻습니다.\n손에서 카드 한 장을 골라 이번 전투동안 |강화|합니다."
+GuijiZaoxingHu:
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+  Name: 호형 조형술
+YongyiAttack:
+  Name: 귀기광란
+  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|일시 화력|이 있다면 한 번 더 줍니다."
+RingoJinghua:
+  Name: 대지 정화
+  Description: "손에서 카드를 최대 {Value1}장 골라 |소멸|시킵니다.\n<sprite=\"Point\" name=\"Power\"\
+    >를 {Value2} 얻습니다."
+  UpgradedDescription: "손패, 뽑을 카드 더미, 버린 카드 더미에서 카드를 최대 {Value1}장 골라 |소멸|시킵니다.\n<sprite=\"\
+    Point\" name=\"Power\">를 {Value2} 얻습니다."
+  FlavorText: 작전명 "지상 정화 계획"을 시작한다.
+HuashanQingjing:
+  UpgradedDescription: "|방어|를 {Block} 얻습니다.\n가진 |취약|을 모두 제거합니다."
+  Description: '|방어|를 {Block} 얻습니다.'
+  Name: 고요
+HatateDiscard:
+  UpgradedDescription: "손에서 카드 {Value1}~{Value2}장을 골라 버립니다.\n{Mana}를 얻습니다."
+  Name: 뉴스 날조
+  Description: "손에서 카드 {Value1}장을 골라 버립니다.\n{Mana}를 얻습니다."
+  FlavorText: '"마리사는.. 범인이.. 아니다.."'
+PrismriverWhite:
+  Description: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |굴절된 햇빛|을 {Light}장 섞어넣습니다."
+  ExtraDescription1: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |굴절된 햇빛|을 {Light}장\
+    \ 섞어넣습니다.\n|d:선보임: <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다.|"
+  Name: 트럼펫 독주
+  UpgradedDescription: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |굴절된 햇빛|을 {Light}장\
+    \ 섞어넣습니다.\n|선보임|: <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다."
+YuetuInvincible:
+  Description: "{Value1}턴 간 |천의무봉| 상태가 됩니다.\n뽑을 카드 더미에 |잃어버린 깃옷|을 {Value2}장 섞어넣습니다."
+  Name: 내려온 달토끼
+YonglinCard:
+  Description: 내 턴에서 첫 카드 사용 시 그 카드의 복사본을 손으로 가져옵니다. 해당 복사본은 |일시적으로| {Mana}의 코스트를
+    갖고, |소멸|과 |휘발성|을 지닙니다.
+  Name: 은퇴한 현자
+BailianNingshen:
+  ExtraDescription1: "무작위 일반 카드 {Value1}장 중 하나를 골라 손으로 가져옵니다. 그 카드는 |일시적으로| {Mana}의\
+    \ 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다.\n|d:선보임: 광휘를 한 장 얻습니다.|"
+  Description: 무작위 일반 카드 {Value1}장 중 하나를 골라 손으로 가져옵니다. 그 카드는 |일시적으로| {Mana}의 코스트를
+    갖고, |소멸|과 |휘발성|을 지닙니다.
+  UpgradedDescription: "무작위 일반 카드 {Value1}장 중 하나를 골라 손으로 가져옵니다. 그 카드는 |일시적으로| {Mana}의\
+    \ 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다.\n|선보임|: |광휘|를 한 장 얻습니다."
+  Name: 명상
+ShenziUpgradeAll:
+  Name: 득도
+  Description: 모든 카드를 이번 전투동안 |강화|합니다.
+PlayWithWater:
+  Name: 물장난
+  UpgradedDescription: "카드를 {Value1}장 뽑습니다.\n카드를 최대 한 장 골라 버립니다."
+  Description: "카드를 {Value1}장 뽑습니다.\n카드를 한 장 골라 버립니다."
+BailianJingang:
+  Name: 금강불괴
+  Description: "|방어|를 {Block} 얻습니다.\n|반사|를 {Value1} 얻습니다."
+NitoriUnderWater:
+  Name: 물빛 양탄자
+  Description: '|광학미채|를 {Value1} 얻습니다.'
+ShuimiUnderWater:
+  Name: 가라앉은 뱃유령
+  Description: '|버릴 시|: {Mana}를 얻습니다.'
+SakuyaLock:
+  Name: 타임 락다운
+  Description: "|실버 락다운| 효과를 한 번 발동시킵니다.\n(피해를 {Value1} 받습니다.)"
+  NonbattleDescription: '|실버 락다운| 효과를 한 번 발동시킵니다.'
+ShenziWake:
+  Name: 성인의 부활
+  Description: "무작위 카드 {Value1}장 중 한 장을 고릅니다. 카드들의 비용 총합은 X+1으로 이루어집니다.\n선택한 카드는 |일시적으로|\
+    \ {Mana}의 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다."
+RumiaBlock:
+  Name: 차광
+  Description: "|방어|를 {Block} 얻습니다.\n|그림자|를 {Value1}장 얻습니다."
