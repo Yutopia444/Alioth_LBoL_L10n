@@ -41,8 +41,8 @@ Explain:
   LoseShinning: 操作キャラクターの専用カードは対応する展示物を持っていなくても出現する。
   ShinmyoumaruForge: 攻撃カードは攻撃カードに、防御カードは防御カードに変化する。
   RollCard: "カード報酬のルール：\n\n報酬で出現するカードは、以下のすべての条件を満たしている必要があります。\n1. マナ基盤の範囲(数)でそのカードを使用できる。\n\
-    2. キャラクター専用のカードの場合、そのキャラクターでプレイしているか、そのキャラクターのカードが報酬に追加される展示物(ボス報酬)を持っている。\n3.\
-    \ マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の耀展品(ボス報酬)を所有していると：黒魔術の本、賢者の石、打ち出の小槌\n\
+    2. キャラクター専用のカードの場合、そのキャラクターでプレイしているか、そのキャラクターのカードが報酬に追加される光耀展示物(ボス報酬)を持っている。\n\
+    3. マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の光耀展示物(ボス報酬)を所有していると：黒魔術の本、賢者の石、打ち出の小槌\n\
     マナ基盤は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
     ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
     \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
@@ -87,6 +87,10 @@ UI:
   SaveHint: セーブしました
   SideCloseHint: クリックで閉じる
   Hiding: UI非表示
+  SpellUntitled: 「{0}」
+  SeRemove: '{0} 消失'
+  SpellTitled: '  {0}「{1}」'
+  SeAmulet: '{0} 無効化'
 MainMenu:
   NewGame: 新規ラン
   Licenses: ライセンス
@@ -111,6 +115,8 @@ MainMenu:
   Changelog: 更新内容
   EarlyAccess: 早期アクセス情報
   LastPlayed: 最後にプレイ
+  Characters: 登場人物
+  LifeData: 統計
 StartGame:
   DifficultyTitle: 難易度を選択
   SetSeed: シード値を設定
@@ -134,13 +140,14 @@ StartGame:
   LockPuzzle: 調査レベル{0}でアンロックされます。
   ClearNormal: クリア
   PuzzleHint: "難題に挑戦することで、スコアと経験値を多く獲得することができます。\n調査レベル4でアンロックされます。"
-  JadeBoxLock: 玉匣はレベル10でアンロックされます。
+  JadeBoxLock: 玉匣は調査レベル10でアンロックされます。
   NoClearHind: シード値や玉匣を設定した場合、クリアと実績の達成は記録されない。
   IsLockHint: "このキャラクターは、\n調査レベル{0}で解放できます"
   StoryMode: ストーリーモード
   NoStoryMode: "ストーリーモードはまだ実装されてません\nアップデートを楽しみに待ってね"
   NotReadyHint: "このキャラクターはまだ実装されてません\nアップデートを楽しみに待ってね"
   FreeMode: フリーモード
+  StoryDescription: "博麗霊夢を操作して異変を解決しよう。\n一部で固定の敵が出現します。\n一部の「友好的な遭遇」が発生しません。"
 Museum:
   UpgradedFilter: アップグレード
   UnlockAndReveal: 発見したカード
@@ -148,6 +155,10 @@ Museum:
   Rarity: レア度
   Character: キャラクター
   ManaCost: マナコスト
+  CardStyleFilter: 別イラスト
+  ExhibitType:
+    T1: 秘宝
+    T2: 光耀
 Setting:
   Resolution: 解像度
   Key: 操作
@@ -269,7 +280,7 @@ Tooltip:
     Name: マナ基盤
   DifficultyEasy:
     Name: 難易度：Easy
-    Description: "輝夜の秘宝を探し始めましょう\n最終章はプレイできません"
+    Description: "輝夜の秘宝を持って調査を始めましょう。\n最終章はプレイできません"
   DifficultyNormal:
     Name: 難易度：Normal
     Description: 標準的な難易度。
@@ -283,6 +294,11 @@ BattleHint:
 History:
   Puzzles: '{0}個の難題'
   Mana: マナ
+  Money: 資金力 {0}
+  Exhibit: 展示品数：{0}
+  Card: カード枚数：{0}
+  StatsSegment: '{0}：{1}'
+  PlayedTime: プレイ時間：{0}
 CardType:
   Attack: 攻撃
   Defense: 防御
@@ -322,6 +338,7 @@ Chat:
   Clownpiece2: この宝石たちの光を受けなさい！
   Clownpiece3: イッツ、ルナティックターイム！
   Clownpiece1: 妖精たちよ、もっと弾幕出していこうよ！
+  WaterGirl: 私が受けた苦痛をお前も味わえ！
 ErrorChat:
   MoneyNotEnough: 資金力が足りません
   LowMana: マナが足りません
@@ -375,3 +392,16 @@ Reward:
   AbandonMaxHp: '{0}最大HPが増える'
 MessageDialog:
   GameAbandonWarning: 現在のランの進行状況を放棄してよいですか？
+  EarlyAccess: "《東方光耀夜》はアーリーアクセスで、デザインは変更される場合があります。\n現在プレイヤーキャラのチルノと緑色のカードを作成中です。\n\
+    その後古明地こいしやストーリーモードを製作していきます。\n\nゲーム中に問題が発生した場合は、 steam コミュニティやDiscordなどでご連絡ください。\n\
+    頻繁なアップデートによる追加、変更が行われるため、日本語訳の協力も募集しています。\n機械翻訳の手直しや、カードの説明を同じ効果の先例を参考に訳すだけでも助かります。\n\
+    詳しくはストアページ掲載のDiscordの日本語チャンネルをご覧ください。"
+JadeBoxPage:
+  JadeBoxLast: 前回の玉匣
+  JadeBoxDaily: デイリー玉匣
+  JadeBoxRandom: ランダム玉匣
+  JadeBoxHint: "永琳の特別な道具、玉匣には強力で奇妙な能力が備わっています。この能力を準備ができていることを願っています。\n玉匣を使用したゲームはクリアとみなされず、実績の解除もできません。"
+  JadeBoxRandomHint: ランダムの結果は、第一章のボスに到達したときに更新されます。
+  JadeBoxList: 全ての玉匣を見る
+Rarity:
+  Shining: 光耀

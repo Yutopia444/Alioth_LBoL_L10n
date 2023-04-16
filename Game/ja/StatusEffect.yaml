@@ -95,6 +95,9 @@ TurnStartDontLoseBlock:
   Brief: '{OwnerName}の次のターン開始時、|ブロック|が失われない。'
 Burst:
   Name: バースト
+  Description: "{PlayerName}が|バースト|状態に入った際、{Mana}を得る。\n攻撃ダメージが {DamageRate} 倍になる。\n\
+    ターン終了時|バースト|状態から抜ける。"
+  Brief: "{PlayerName}が|バースト|状態に入った際、{Mana}を得る。\n攻撃ダメージが {DamageRate} 倍になる。\nターン終了時|バースト|状態から抜ける。"
 RinSummon:
   Name: 怨霊復活
   Description: "{OwnerName}は {Level} 回怨霊を復活させられる。\n {Limit} ターンごとに一体追加。"
@@ -300,7 +303,7 @@ PurifyModule:
   Description: '{OwnerName}の攻撃が命中時、次のターンのマナ {Level} 点を|浄化|する。'
 LightingModule:
   Name: 閃光モジュール
-  Description: '{OwnerName}の攻撃が命中時、 {Level} 枚の|眩光|が山札にシャッフルされる。'
+  Description: '{OwnerName}の攻撃が命中時、 {Level} 枚の|眩輝|が山札にシャッフルされる。'
 AccuracyModule:
   Description: '{OwnerName}の攻撃は|精密|になる。'
   Name: 誘導モジュール
@@ -316,3 +319,431 @@ DreamServant:
 Curiosity:
   Name: わたし、気になります！
   Description: '{PlayerName}が能力カードを使うたびに、{OwnerName}は {Level} 点の|火力|を得る。'
+FreeFlySe:
+  Description: '{PlayerName}のターン開始時、 {Level} 点の{Mana}を得る。'
+  Brief: '{PlayerName}のターン開始時、 {Level} 点の{Mana}を得る。'
+  Name: 自由飛行
+HuanxiangBlockSe:
+  Name: 幻想防御
+  Description: カードが|廃棄|されるたび、{PlayerName}は {Level} 点の|ブロック|を得る。
+  Brief: カードが|廃棄|されるたび、{PlayerName}は|ブロック|を得る。
+ReverseJiejieSe:
+  Name: 逆転結界
+  Description: '{PlayerName}がバフを失うたび、 {Level} 点の|バリア|を得る。'
+  Brief: '{PlayerName}がバフを失うたび、|バリア|を得る。'
+SenluoJiejieSe:
+  Name: 森羅結界
+  Description: 次のターン開始時に|バリア|を爆発させる。
+  Brief: 次のターン開始時に|バリア|を爆発させる。
+SolarSystemSe:
+  Name: 太陽系儀
+  Description: '{PlayerName}のターン開始時、 {Level} 点の|チャージ|を得る。'
+  Brief: '{PlayerName}のターン開始時、|チャージ|を得る。'
+ScryBlockSe:
+  Description: '{PlayerName}は|星見|するたび、 {Level} 点の|ブロック|を得る。'
+  Name: 権謀術数
+  Brief: '{PlayerName}は|星見|するたび、|ブロック|を得る。'
+PotionDefenseSe:
+  Name: 流星共鳴
+  Brief: ターン終了まで、|不安定なポーション|が使用されるたび、|バリア|を得る。
+  Description: ターン終了まで、|不安定なポーション|が使用されるたび、 {Level} 点の|バリア|を得る。
+ChargingPotionSe:
+  Name: 放射性元素
+  Description: '|不安定なポーション|が使用されるたび、 {Level} 点の|チャージ|を得る。'
+  Brief: '|不安定なポーション|が使用されるたび、|チャージ|を得る。'
+GainKnifeSe:
+  Name: 星剣の舞
+  Description: '{PlayerName}のターン開始時、 {Level} 枚の|投げナイフ|を手札に加える。'
+  Brief: '{PlayerName}のターン開始時、|投げナイフ|を手札に加える。'
+TimeAuraSe:
+  Brief: "{PlayerName}のターン終了時、全ての敵にダメージを与える。\nダメージを受けた敵ごとに数値が 1 減る。"
+  Name: タイムパルス
+  Description: "{PlayerName}のターン終了時、全ての敵に {Level} 点のダメージを与える。\nダメージを受けた敵ごとに数値が 1 減る。"
+EvilMaidDoubleAttack:
+  Name: 悪魔の力
+  Brief: '{PlayerName}の攻撃ダメージが 2 倍になる。'
+  Description: '{PlayerName}の攻撃ダメージが 2 倍になる。残り {Duration} ターン持続。'
+SpecialClockSe:
+  Name: 咲夜特製ストップウォッチ
+  Description: '{PlayerName}のターン開始時、手札から {Level} 枚まで選んで捨て、同数のカードを引く。'
+  Brief: '{PlayerName}のターン開始時、手札からカードを選んで捨て、同数のカードを引く。'
+LoseSpiritSe:
+  Name: 失われた羽衣
+  Description: '{PlayerName}のターン開始時、 {Level} 点の|霊力|を失う。'
+  Brief: '{PlayerName}のターン開始時、|霊力|を失う。'
+UseCardToLoseGame:
+  Name: 余命僅か
+  Description: '{Count} 枚のカードを使用した後に死ぬ。'
+  Brief: カードを数枚使用した後死ぬ。
+MeihongFireSe:
+  Brief: "{PlayerName}のターン終了時、敵全体にダメージを与える。\nこの効果は|厄災|または状態異常カードを引いた際にも発動する。"
+  Description: "{PlayerName}のターン終了時、敵全体に {Level} 点のダメージを与える。\nこの効果は|厄災|または状態異常カードを引いた際にも発動する。"
+  Name: 無差符発火符
+MeihongPowerSe:
+  Name: 不死の焔
+  Description: "{PlayerName}のターン開始時、 {Level} 点の|火力|を得る。\n戦闘終了時、{PlayerName}のライフが半分以下だった場合、 {Heal} 点のライフを回復する。"
+  Brief: "{PlayerName}のターン開始時、|火力|を得る。\n戦闘終了時、{PlayerName}のライフが半分以下だった場合、ライフを回復する。"
+Poison:
+  Name: 毒
+  Description: '{OwnerName}のターン開始時、 {Level} 点のライフを失い、|毒|の値を 1 減らす。'
+  Brief: '{OwnerName}のターン開始時、ライフを失い、|毒|の値を 1 減らす。'
+JunkoPurify:
+  Description: '{PlayerName}がカードを使用するたび、|純化| {Level} 。'
+  Name: 純化の光
+InfinityGemsSe:
+  Name: 宝石が埋め込まれたガントレット
+  Description: '{OwnerName}のターン開始時、{PlayerName}のカードの半分を|廃棄|する。カードの場所は問わない。'
+SakuraWandSe:
+  Description: '{OwnerName}の攻撃回数が二倍になる。'
+  Name: 翼のついた鍵
+DragonBallSe:
+  Name: 星が描かれたボール
+  Description: '{OwnerName}のターン開始時、彼女の願いが叶う：{PlayerName}は敗北する。避けられない。'
+JiangshenSe:
+  Name: 神降ろしの修行
+  Description: この戦闘中、一時的に追加されるすべてのカードは|アップグレード|される。
+  Brief: この戦闘中、一時的に追加されるすべてのカードは|アップグレード|される。
+BoliDajiejieSe:
+  Brief: '{OwnerName}の|ブロック|は|バリア|に変換される。'
+  Name: 博麗大結界
+  Description: この戦闘中、{OwnerName}の|ブロック|は|バリア|に変換される。
+DoubleLianhuadieSe:
+  Name: 二色蓮花蝶
+  Description: '{PlayerName}が|ブロック|または|バリア|を得るたび、ランダムな敵に {Level} 点のダメージを与える。'
+  Brief: '{PlayerName}が|ブロック|または|バリア|を得るたび、ランダムな敵にダメージを与える。'
+DanceAroundLakeSe:
+  Name: 湖畔の舞
+  Description: カードを|廃棄|するたび、カードを {Level} 枚引く。
+  Brief: カードを|廃棄|するたび、カードを引く。
+EvilTuiZhiSe:
+  Description: 次の {Level} 枚の攻撃カードは2倍のダメージを与える。
+  Brief: 次の攻撃カードは2倍のダメージを与える。
+  Name: 妖怪退治
+BoliPhantomSe:
+  Brief: '|封魔針|以外のカードが|廃棄|されるたび、|封魔針|を手札に加える。その|臨時コスト|は{Mana}となる。'
+  Description: '|封魔針|以外のカードが|廃棄|されるたび、 {Level} 枚の|封魔針|を手札に加える。その|臨時コスト|は{Mana}となる。'
+  Name: 博麗幻影
+TaijiLiangyiSe:
+  Description: '{PlayerName}のターン開始時、手札の|陰陽玉|が {Level} 枚に満たない場合、|陰陽玉|を {Level} 枚になるまで手札に加える。'
+  Brief: '{PlayerName}のターン開始時、手札の|陰陽玉|が一定数に満たない場合、|陰陽玉|を手札に加える。'
+  Name: 太極は両儀を生ず
+ReimuFestivalSe:
+  Name: 終わらぬ宴会
+  Description: '{PlayerName}のターン開始時、 {Level} 点の|臨時火力|を得る。'
+  Brief: '{PlayerName}のターン開始時、|臨時火力|を得る。'
+ReimuShrineSe:
+  Name: 博麗縁日
+  Description: '{PlayerName}のターン開始時、 {Level} 点の|臨時霊力|を得る。'
+  Brief: '{PlayerName}のターン開始時、|臨時霊力|を得る。'
+ReimuFreeAttackSe:
+  Description: 次の {Level} 枚の攻撃カードのコストは{Mana}となる。
+  Brief: 次の攻撃カードのコストは{Mana}となる。
+  Name: 幻想一重
+MomentPowerSe:
+  Description: '{OwnerName}が|臨時火力|または|臨時霊力|を得るたび、そのうち {Level} 点を|火力|または|霊力|それぞれに変換する。'
+  Brief: '{OwnerName}が|臨時火力|または|臨時霊力|を得るたび、|火力|または|霊力|それぞれに変換する。'
+  Name: 刹那亜空穴
+Charging:
+  Name: チャージ
+  Description: '{PlayerName}が {TriggerLevel} 以上の|チャージ|を得ると、|バースト|状態に入る。'
+  Brief: '{PlayerName}が {TriggerLevel} 以上の|チャージ|を得ると、|バースト|状態に入る。'
+Concentration:
+  Brief: '|オーバードライブ|効果を|チャージ|を消費せずに発動する。'
+  Name: 集中
+  Description: '|オーバードライブ|効果を|チャージ|を消費せずに発動する、残り {Level} 回。'
+BurstUpgrade:
+  Name: 火力全開
+  Description: '|バースト|のダメージ倍率を増やす。'
+  Brief: '|バースト|のダメージ倍率を増やす。'
+BurstDrawSe:
+  Name: スピードバトル
+  Brief: '|バースト|突入時、カードを引く。'
+  Description: '|バースト|突入時、カードを {Level} 枚引く。'
+LearnAstrologySe:
+  Name: 天文研修
+  Brief: '{PlayerName}のターン開始時、手札の|星占い|が一定数に満たない場合、|星占い|を手札に加える。'
+  Description: '{PlayerName}のターン開始時、手札の|星占い|が {Level} 枚に満たない場合、|星占い|を {Level} 枚になるまで手札に加える。'
+UpgradePotionSe:
+  Name: ポーションの精錬
+  Brief: '{PlayerName}のターン終了時、山札と捨て札の|不安定なポーション|のダメージが増加する。'
+  Description: '{PlayerName}のターン終了時、山札と捨て札の|不安定なポーション|のダメージが {Level} 点増加する。'
+PotionBaseDamageSe:
+  Name: 爆薬成分
+  Description: '|不安定なポーション|のダメージが {Level} 点増加する。'
+  Brief: '|不安定なポーション|のダメージが増加する。'
+MasterOfCollectionSe:
+  Name: 収集家
+  Brief: カードが|保留|されるたび、戦闘終了までランダムコストを減らす。
+  Description: カードが|保留|されるたび、戦闘終了までランダムコストを {Level} 点減らす。
+PoisonPotionSe:
+  Name: 魔女の大釜
+  Brief: '|不安定なポーション|が使用されるたび、|毒|を対象に与える。'
+  Description: '|不安定なポーション|が使用されるたび、 {Level} 点の|毒|を対象に与える。'
+SplitPotionSe:
+  Name: 増産剤
+  Description: '|不安定なポーション|の攻撃対象が {Level} 増える。'
+  Brief: '|不安定なポーション|の攻撃対象が増える。'
+PerfectServantUSe:
+  Brief: '{OwnerName}の次ターン開始時、{Mana}を得てカードを引く。'
+  Description: '{OwnerName}の次ターン開始時、 {Level} 点の{Mana}を得て、 {Level} 枚のカードを引く。'
+  Name: 追加申告
+EvilMaidSe:
+  Description: '{Level} ターンの間攻撃ダメージが 2 倍になる。'
+  Brief: 数ターンの間攻撃ダメージが 2 倍になる。
+  Name: 悪魔のメイド
+MihuanJackSe:
+  Description: ターン開始時、|タイムパルス| {Level} を得る。
+  Name: ジャック・ザ・ルドビレ
+  Brief: ターン開始時、|タイムパルス|を得る。
+StopTimeSe:
+  Brief: '{PlayerName}のターン終了時、ランダムな未使用のマナが持ち越される。'
+  Name: 時間凝固
+  Description: '{PlayerName}のターン終了時、ランダムな未使用のマナ {Level} 点が持ち越される。'
+SilverBladeSe:
+  Brief: 攻撃カードを使用するたび、|バリア|を得る。
+  Description: 攻撃カードを使用するたび、 {Level} 点の|バリア|を得る。
+  Name: 銀色のアナザーディメンジョン
+KnifeWithLockedOn:
+  Description: '|投げナイフ|を使用時、対象に|ロックオン| {Level} を与える。'
+  Brief: '|投げナイフ|を使用時、対象に|ロックオン|を与える。'
+  Name: 次はあなたね！
+KnifeTarget:
+  Name: ターゲット固定
+  Description: '|投げナイフ|は{OwnerName}を優先して狙う。'
+  Brief: '|投げナイフ|は{OwnerName}を優先して狙う。'
+SynergySe:
+  Description: '{PlayerName}の次の攻撃の後、対象に {Level} 点のダメージを与える。'
+  Brief: '{PlayerName}の次の攻撃の後、対象にダメージを与える。'
+  Name: 相乗効果
+FrostArmor:
+  Brief: "{OwnerName}のターン終了時、|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が 1 下がる。"
+  Name: フロストアーマー
+  Description: "{OwnerName}のターン終了時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が\
+    \ 1 下がる。"
+ExtraBlizzard:
+  Brief: '{OwnerName}の次ターン開始時、敵全体に|精密|ダメージを与え、|冷気|を付与する。'
+  Name: 吹雪到来
+  Description: '{OwnerName}の次ターン開始時、敵全体に {Damage} 点の|精密|ダメージを与え、|冷気|を付与する。'
+WhiteWorldSe:
+  Name: 純白の世界
+  Description: '{PlayerName}のターン終了時、 {Level} 点の|火力|と|霊力|を得たうえで、|マナ凍結|{Mana}を得る。'
+  Brief: '{PlayerName}のターン終了時、|火力|と|霊力|を得たうえで、|マナ凍結|{Mana}を得る。'
+PisiSkillSe:
+  Brief: ターン終了まで、|ブロック|を得るたびに、代わりに数倍のダメージをランダムな敵に与える。
+  Name: 寒獄の蝕
+  Description: ターン終了まで、|ブロック|を得るたびに、代わりに {Level} 倍のダメージをランダムな敵に与える。
+MinengZhuruSe:
+  Name: 秘能注入
+  Description: "|支援妖精|のパッシブ効果が {Level} 倍になる。\n（手札にあるとき、ターン開始時）"
+  Brief: "|支援妖精|のパッシブ効果が数倍になる。\n（手札にあるとき、ターン開始時）"
+PotionJungleSe:
+  Description: '{PlayerName}のターン開始時、 {Level} 枚の|不安定なポーション|を捨て札に加える。'
+  Name: 蛍光の森
+  Brief: '{PlayerName}のターン開始時、|不安定なポーション|を捨て札に加える。'
+PerfectServantWSe:
+  Description: '{OwnerName}の次のドローフェイズ終了後、手札のすべてのカードのコストが|一時的に| {Level} 点減少する。'
+  Brief: '{OwnerName}の次のドローフェイズ終了後、手札のすべてのカードのコストが|一時的に|減少する。'
+  Name: 準備万端
+DrawPhaseAddKnife:
+  Name: ドローフェイズで投げナイフを取得
+  Description: ターン開始時にドローを行わず、 {Limit} 枚の|投げナイフ|を手札に加える。
+  Brief: ターン開始時にドローを行わず、|投げナイフ|を手札に加える。
+ColdUp:
+  Description: '|冷気|を繰り返し付与したときのダメージ倍率を {Level} 増加させる。'
+  Name: ひどいかぜ
+  Brief: '|冷気|を繰り返し付与したときのダメージ倍率を増加させる。'
+BailianFireSe:
+  Description: '{PlayerName}のターン開始時、 {Level} 枚のランダムなスキルカードを手札に加える。これは|臨時コスト|{Mana}で、|廃棄|、|虚無|を持つ。'
+  Name: 法界の火
+  Brief: '{PlayerName}のターン開始時、ランダムなスキルカードを手札に加える。これは|臨時コスト|{Mana}で、|廃棄|、|虚無|を持つ。'
+MoonWorldSe:
+  Brief: '{PlayerName}のターン開始時、手札のランダムな数枚のカードが|浄化|され、有色のコストが取り除かれる。'
+  Name: 穢れ無き世界
+  Description: '{PlayerName}のターン開始時、手札の {Level} 枚のカードが|浄化|され、有色のコストが取り除かれる。'
+ColdPotionSe:
+  Description: '|不安定なポーション|が|冷気|を与える。'
+  Name: 冷却材
+  Brief: '|不安定なポーション|が|冷気|を与える。'
+SakuyaKillerSe:
+  Name: 夜霧の幻影殺人鬼
+  Description: "ターン終了時 {Level} 枚の|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
+  Brief: "ターン終了時|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
+DangerousMagicianSe:
+  Description: '|投げナイフ|使用時、{PlayerName}は|タイムパルス| {Level} を得る。'
+  Brief: '|投げナイフ|使用時、{PlayerName}は|タイムパルス|を得る。'
+  Name: 危険な手品師
+IceMatrixSe:
+  Name: フリーズマトリックス
+  Description: 攻撃ダメージを受けた際、追加で {Level} 点の|フロストアーマー|を失い、敵に|冷気| {Level} を付与する。
+  Brief: 攻撃ダメージを受けた際、追加で|フロストアーマー|を失い、敵に|冷気|を付与する。
+Immune:
+  Name: アイスバリア
+  Description: '{OwnerName}はあらゆるダメージを受けない。残り {Duration} ターン持続。'
+  Brief: '{OwnerName}はあらゆるダメージを受けない。残り {Duration} ターン持続。'
+ExtraDraw:
+  Brief: '{OwnerName}の次ターン開始時、追加でカードを引く。'
+  Description: '{OwnerName}の次ターン開始時、追加でカードを {Level} 枚引く。'
+  Name: 妖精の智慧
+FairyTreeSe:
+  Name: 妖精の家
+  Description: "スキルカードが手札に加わるとき、{Mana}を獲得し、カードを {Level} 枚引く。\n各ターンに一回発動可能。"
+  Brief: "スキルカードが手札に加わるとき、{Mana}を獲得し、カードを引く。\n各ターンに一回発動可能。"
+BailianBlackSe:
+  Description: 攻撃または能力でないカードのコストが{Mana}になり、使用時に|廃棄|される。
+  Name: 闇の抱擁
+  Brief: 攻撃または能力でないカードのコストが{Mana}になり、使用時に|廃棄|される。
+HuiyeManaSe:
+  Name: 竹取物語
+  Description: "{PlayerName}のターン開始時、 {Count} 点のランダムなマナを得る。\nこの効果はターンごとに {Level} 点増加する。"
+  Brief: "{PlayerName}のターン開始時、ランダムなマナを得る。\nこの効果はターンごとに増加する。"
+ZhenmiaowanAttackSe:
+  Brief: このターン中、スキルカードのコストが{Mana}減る。
+  Name: 一寸法師の末裔
+  Description: このターン中、スキルカードのコストが{Mana}減る。
+  ExtraDescription: このターン中、カードのコストが{Mana}減る。
+YouxiangMoonSe:
+  Brief: この戦闘中、{PlayerName}は|オーバードラフト|を受けない。
+  Name: 花鳥風月
+  Description: この戦闘中、{PlayerName}は|オーバードラフト|を受けない。
+KokoroDanceSe:
+  Description: 敵がデバフを得るたび、{PlayerName}は対象に{Level} 点のダメージを与える。
+  Name: 仮面喪心舞
+  Brief: 敵がデバフを得るたび、{PlayerName}は対象にダメージを与える。
+SkyWaterSe:
+  Description: '{PlayerName}のターン終了時、捨てたカード一枚につき {Level} 点の|ブロック|を得る。'
+  Brief: '{PlayerName}のターン終了時、捨てたカード一枚につき|ブロック|を得る。'
+  Name: お天水の奇跡
+TodayYesterdaySe:
+  Brief: '{OwnerName}が攻撃を|グレイズ|するたび、|火力|を得る。'
+  Name: 今昔幻想郷
+  Description: '{OwnerName}が攻撃を|グレイズ|するたび、 {Level} 点の|火力|を得る。'
+BlackPoisonSe:
+  Description: '{PlayerName}がブロックされないダメージを与えるたび、対象に|中毒| {Level} を付与する。'
+  Brief: '{PlayerName}がブロックされないダメージを与えるたび、対象に|中毒|を付与する。'
+  Name: 暗闇演舞
+ScarletDestiny:
+  Name: 紅色の運命
+  Description: "一ターンのうちに {Limit} 枚のカードを使用すると、{OwnerName}は{PlayerName}のターンを終了する。\n\
+    残り {Count} 枚。"
+AutoKnifeSe:
+  Description: この戦闘中、|投げナイフ|は|自動廃棄|を得る。
+  Name: 妖器「シルバーブレード」
+  Brief: この戦闘中、|投げナイフ|は|自動廃棄|を得る。
+Cold:
+  Name: 冷気
+  Brief: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、倍のライフを失う。（{StackDamage}点）。"
+  Description: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、 {StackMultiply} 倍のライフを失う。（{StackDamage}点）。"
+NextTurnColdAll:
+  Name: 寒波到来
+  Description: '{OwnerName}の次ターン開始時、敵全体に|冷気|を付与する。'
+  Brief: '{OwnerName}の次ターン開始時、敵全体に|冷気|を付与する。'
+QiannianShenqiSe:
+  Name: ピラミッド型のパズル
+  Description: '{PlayerName}は各ターン {Limit} 枚しかドローできない。残り {Count} 枚。'
+SihunYuSe:
+  Name: 邪気を放つペンダント
+  Description: '{OwnerName}のターン終了時、ランダムな敵を戦闘に呼ぶ。'
+MadokaBowSe:
+  Description: '{OwnerName}のターン開始時、 {Level} 枚のランダムな状態異常カードを山札に加える。'
+  Name: 光輝く長弓
+Chaowo:
+  Name: 超自我
+  Description: '|超自我|状態から抜けたとき、{Mana}を得る。'
+  Brief: '|超自我|状態から抜けたとき、{Mana}を得る。'
+Benwo:
+  Description: '|イド|状態時、与えるダメージと受けるダメージが 2 倍になる。'
+  Name: イド
+  Brief: '|イド|状態時、与えるダメージと受けるダメージが 2 倍になる。'
+SingleJiandaoSe:
+  Name: 半分の巨大な鋏
+  Description: '{PlayerName}はカードを使用するたびに、 {Level} ダメージを受ける。'
+ShendengSe:
+  Name: 注ぎ口の長いティーポット
+  Description: '{OwnerName}のターン終了時、{PlayerName}は|脱力|、|脆弱化|、|弱体|のうちランダムな一つを {Level} 得る。'
+HolyGrailSe:
+  Name: 装飾が施された金の杯
+  Description: '{OwnerName}のターン開始時、{PlayerName}は|秘宝|と|光耀|を除くすべての展示品を失う。'
+YinyangXueyinSe:
+  Name: 陰陽血印
+  Description: '|陰陽玉|の使用時、 {Level} 点の|臨時火力|と|臨時霊力|を得る。'
+  Brief: '|陰陽玉|の使用時、|臨時火力|と|臨時霊力|を得る。'
+RangziFanshuSe:
+  Description: 戦闘終了時、 {Level} 点のライフを回復する。
+  Name: スイートポテト
+  Brief: 戦闘終了時、ライフを回復する。
+IceVulnerable:
+  Name: 凍結深度
+  Description: "{OwnerName}が受けるあらゆるダメージが 2 倍になる。\n{OwnerName}のターン終了時|凍結深度|は取り除かれる。"
+  Brief: "{OwnerName}が受けるあらゆるダメージが 2 倍になる。\n{OwnerName}のターン終了時|凍結深度|は取り除かれる。"
+ForeverCoolSe:
+  Name: エバークールシーズンファンタジア
+  Description: "|支援妖精|を|廃棄|するたびに、敵に|冷気|を {Level} 回ランダムに付与する。\n|支援妖精|を使用するたびに、 {Level} 枚のランダムな|支援妖精|カードが捨て札に混ぜられる。"
+  Brief: "|支援妖精|を|廃棄|するたびに、敵に|冷気|をランダムに付与する。\n|支援妖精|を使用するたびに、ランダムな|支援妖精|カードが捨て札に混ぜられる。"
+MoreFriendsSe:
+  Description: '{PlayerName}のターン終了時、 {Level} 枚のランダムな|支援妖精|カードを手札に加える。'
+  Brief: '{PlayerName}のターン終了時、ランダムな|支援妖精|カードを手札に加える。'
+  Name: 社交的な妖精
+CirnoFestivalSe:
+  Name: 宴会に混ざる
+  Description: '|能力|カードを使用するたび、 {Level} 枚のランダムな|支援妖精|カードを手札に加える。'
+  Brief: '|能力|カードを使用するたび、ランダムな|支援妖精|カードを手札に加える。'
+SeeFengshuiSe:
+  Name: 風水を操る程度の能力
+  Description: "{PlayerName}のターン開始時、|星見| {Scry} 。\n|星見|によって防御カードが捨てられるたび、 {Block} 点の|ブロック|を得る。"
+  Brief: "{PlayerName}のターン開始時、|星見|。\n|星見|によって防御カードが捨てられるたび、|ブロック|を得る。"
+YonglinCardSe:
+  Description: '{PlayerName}が各ターンに最初のカードを使用した際、そのカードの複製を {Level} 枚手札に加える。この複製は|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。'
+  Brief: '{PlayerName}が各ターンに最初のカードを使用した際、そのカードの複製を手札に加える。この複製は|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。'
+  Name: 賢者の隠遁
+NextTurnLoseGame:
+  Name: 棺桶に片足を突っ込んでいる
+  Description: 次ターン開始時に死ぬ。
+  Brief: 次ターン開始時に死ぬ。
+GrimoireStudySe:
+  Description: '{OwnerName}のターン終了時、|月虹|を手札に加える。'
+  Name: 黒魔術の本
+  Brief: '{OwnerName}のターン終了時、|月虹|を手札に加える。'
+ShannvAbilitySe:
+  Name: 原因不明の熱病
+  Description: '{PlayerName}のターン終了時、敵全体に|毒| {Level} を付与する。'
+  Brief: '{PlayerName}のターン終了時、敵全体に|毒|を付与する。'
+DizangLoveSe:
+  Name: インスタントボーディ
+  Description: コモンカードを使用するたび、{OwnerName}は {Level} 点の|臨時火力|を得る。
+  Brief: コモンカードを使用するたび、{OwnerName}は|臨時火力|を得る。
+ModuoluoFireSe:
+  Name: 穢那の火
+  Description: <sprite="ManaSprite" name="P">が消費されるたび、敵全体に {Level} 点のダメージを与える。
+  Brief: <sprite="ManaSprite" name="P">が消費されるたび、敵全体にダメージを与える。
+RinDrawSe:
+  Name: 怨霊を操る者
+  Description: 状態異常カードを引くたび、 {Level} 枚のカードを引く。
+  Brief: 状態異常カードを引くたび、 カードを引く。
+HekaHellRainSe:
+  Name: 地獄に降る雨
+  Description: "カードを使用するたび、ターン終了時にすべての敵に {Level} のダメージを与える。\nこのターン中 {Count} 枚のカードを使用した。"
+  Brief: カードを使用するたび、ターン終了時にすべての敵にダメージを与える。
+TiangouOrderSe:
+  Name: 大天狗の号令
+  Description: '{OwnerName}がダメージを受けるたび、{PlayerName}は {Level} 点の|ブロック|を得る。'
+  Brief: '{OwnerName}がダメージを受けるたび、{PlayerName}は|ブロック|を得る。'
+RainbowMarketSe:
+  Name: 月虹市場
+  Description: カードが|廃棄|されるたび、 {Level} 枚のランダムなカードを手札に加える。
+  Brief: カードが|廃棄|されるたび、ランダムなカードを手札に加える。
+YachieDefendSe:
+  Name: 亀甲地獄
+  Description: "{OwnerName}の {Level} 回のライフ喪失を防ぐ。\nダメージの発生源が敵の場合、反射する。"
+  Brief: "{OwnerName}のライフ喪失を防ぐ。\nダメージの発生源が敵の場合、反射する。"
+KaguyaTreeSeeSe:
+  Name: 蓬莱の樹海
+  Description: 全てのカードが|廃棄|を失う。
+  Brief: 全てのカードが|廃棄|を失う。
+MeilingAbilitySe:
+  Name: 烈虹真拳
+  Description: '{PlayerName}は 2 倍の|火力|と|臨時火力|を得る。'
+  Brief: '{PlayerName}は 2 倍の|火力|と|臨時火力|を得る。'
+PrismriverSe:
+  Name: プリズムコンチェルト
+  Description: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
+  Brief: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
