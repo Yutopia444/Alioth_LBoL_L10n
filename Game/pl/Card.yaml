@@ -222,8 +222,7 @@ ReimuInstant:
     Zakończ turę. Następnie {PlayerName} zacznie dodatkową turę.\n|Limit Czasowy|\
     \ {Mana}."
   ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
-    \ obrażeń'}.\nZakończ turę. Wtem {PlayerName} zaczyna następną.\n|d:Limit Czasowy\
-    \ {Mana}|"
+    \ obrażeń'}.\nZakończ turę. Wtem, zacznij dodatkową turę.\n|d:Limit Czasowy {Mana}|"
 DoubleLianhuadie:
   Name: Dwubarwny Motyl Lotusu
   Description: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj {Value1:plural
@@ -559,8 +558,8 @@ BlazingStar:
   Description: "Zyskaj {Block} |Bloku|. |PlayerName| nie traci |Bloku| na początku\
     \ następnej tury.\nZakończ turę, po czym zacznij dodatkową turę.\n|Limit Czasowy|\
     \ {Mana}."
-  ExtraDescription1: "Zyskaj {Block} |Bloku|. |Przetrzymaj Blok|.\nZakończ turę. Wtem\
-    \ zacznij kolejną.\n|d: Limit Czasowy {Mana}.|"
+  ExtraDescription1: "Zyskaj {Block} |Bloku|. |Przetrzymaj Blok|.\nZakończ turę. Wtem,\
+    \ zacznij dodatkową turę.\n|d: Limit Czasowy {Mana}.|"
 IceSpark:
   Name: Lodowaty Laser
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -740,8 +739,8 @@ DangerousMagician:
     \ do Rzucania|} do stosu doboru."
 SakuyaDio:
   Description: "|Sztylety do Rzucania| nakładają {Value1:plural one='% |Namiar|' few='%\
-    \ |Namiary|' many='% |Namiarów|}, gdy zostaną zagrane.\nZakończ turę. Wtem, {PlayerName}\
-    \ zaczyna dodatkową turę. Podczas tej tury, zamiast dobierania kart dodaj {Value2:plural\
+    \ |Namiary|' many='% |Namiarów|}, gdy zostaną zagrane.\nZakończ turę. Wtem, zacznij\
+    \ dodatkową turę. Podczas tej tury, zamiast dobierania kart dodaj {Value2:plural\
     \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
     \ do Rzucania|'} do ręki."
   Name: Teraz Kolej na Ciebie
@@ -897,7 +896,7 @@ CirnoBlockG:
   Name: Liściana Ochrona
   Description: Zyskaj {Block} |Bloku|.
 CirnoAttackG:
-  Name: Liść Brzytwy
+  Name: Mroźny Liść Brzytwy
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 CirnoBlockU:
   Name: Lodowa Tarcza
@@ -905,7 +904,7 @@ CirnoBlockU:
 IceLaser:
   Name: Zamrażający Strzał
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Jeżeli wróg jest |Zimny|, zadaj podwójne obrażenia."
+    Nałóż |Chłód| przy trafieniu."
 SummerFlower:
   Name: Hodowanie Kwiatów
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1685,8 +1684,10 @@ LilyChun:
     losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural one='Ona'
     other='One'} {Value1:plural one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.
 CoolBreeze:
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Jeżeli cel jest |Zimny|, ta karta zadaje o {Value1} więcej obrażeń"
+  Description: "Zyskaj {Block} |Bloku|.\nJeżeli jakikolwiek wróg ma |Chłód|, |Ulepsz|\
+    \ {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych kart'}\
+    \ w dłoni. Priorytetuje karty umiejętności."
+  Name: Orzeźwiający Wiaterek
 SkyWater:
   Name: Niebiański Cud Wodny
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
@@ -1735,6 +1736,11 @@ SakuyaInvestigate:
     \ Kosztuje| {Mana}."
 SakuyaDetective:
   Name: List Gończy
+  FlavorText: Nie wiem, czy pamiętasz, ale w tej grze dokonujesz śledztwa.
+  Description: "Walcząc przeciw prawdziwej sprawczyni zadaj jej {Value1:plural one='%\
+    \ obrażenie' few='% obrażenia' many='% obrażeń'} na początku walki.\n({BossDamage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} zostało {BossDamage:plural\
+    \ one='skumulowane' few='skumulowane' many='skumulowanych'}.)"
 ReimuHeavyAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na tę kartę."
@@ -1785,3 +1791,140 @@ KnifeAim:
   Name: Świat Deflacji
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zrzuć wszystkie |Sztylety do Rzucania| z dłoni. Celują w wybranego wroga."
+SakuyaUsage:
+  FlavorText: Po prostu zatrzymaj czas i przesuń wszystkich innych na sam dół schodów.
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    |Po Zagraniu tej Karty {Value2:plural one='% raz' other='% razy'}|: Usuń tę kartę\
+    \ z walki. Dodaj |Kołowe Kroki| na szczyt stosu doboru."
+  ExtraDescription1: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    |Po Zagraniu tej Karty {Value2:plural one='% raz' other='% razy'}|: Usuń tę kartę\
+    \ z walki. Dodaj |Kołowe Kroki| na szczyt stosu doboru.\n(Została zagrana {PlayCount:plural\
+    \ one='% raz' other='% razy'}.)"
+  Name: Instrukcje Sakuyi
+UnlimitedTime:
+  Description: Wybierz jedną z {Value1} kart z |Limitem Czasowym| aby dodać do ręki.
+    |Tymczasowo Kosztuje| {Mana}, ma |Wygnanie|, |Eteryczność| i traci |Limit Czasowy|.
+FreezeBullet:
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Lodowego Pancerza|."
+  Name: Zamrażający Strzał
+OverdraftDefense:
+  Description: "Zyskaj {Block} |Bloku|.\n|Naddobór| {Value1}."
+  Name: Zaskakujący Rozkwit
+GrowDrawAttack:
+  Name: Hojność Natury
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Przyrost|: Dobierz o {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ więcej (aż do {Value2})."
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nDobierz {DrawCount:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    |Przyrost|: Dobierz o {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ więcej (aż do {Value2})."
+GainLarva:
+  Name: Sprej z Prochu z Łusek
+  Description: "Nałóż {Value1} |Trucizny|.\nDodaj |Skrzydła Larvy| do ręki."
+BlueRose:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Jeżeli cel ma |Chłód|, zyskaj {Block} |Bloku|."
+  Name: Niebieska Róża
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nJeżeli cel ma |Chłód|, zyskaj {Shield} |Bariery|."
+CirnoDraw:
+  UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}.\nNa początku następnej tury dobierz {Value2:plural one='% kartę' few='%\
+    \ karty' many='% kart'}."
+  Name: Intelekt Wróżki
+  Description: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
+IceSaber:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nZrzuć dowolną ilość niebieskich\
+    \ kart. Zadaj obrażenia dodatkowy raz za każdą zrzuconą kartę."
+  Name: Ostrze Wykute z Lodu
+FairyTree:
+  Description: Gdy karta umiejętności wejdzie do ręki po raz pierwszy w turze zyskaj
+    {Mana} i dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
+  Name: Siedziba Wróżek
+SakuyaUsage2:
+  Name: Kołowe Kroki
+  Description: Zakończ turę. Wtem, zacznij dodatkową turę.
+IceBlock:
+  Description: "{PlayerName} nie może stracić życia na jedną rundę.\nStrać cały |Blok|,\
+    \ |Barierę| i |Uniki|.\n|Przetrzymaj| dłoń w tej turze. Zakończ turę {PlayerName:g}."
+  Name: Blok Lodu
+Ice:
+  Name: Lodowiec
+  Description: Nałóż |Chłód|.
+IceLance:
+  Name: Lodowa Kopia
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Jeżeli cel ma |Chłód|, zadaj podwójne obrażenia."
+FrostGarden:
+  Name: Mroźny Ogród
+  Description: "Wszyscy wrogowie leczą {Value1:plural one='% punkt' few='% punkty'\
+    \ many='% punktów'} życia.\nNałóż |Chłód| na wszystkich wrogów."
+  UpgradedDescription: "Wszyscy wrogowie leczą {Value1:plural one='% punkt' few='%\
+    \ punkty' many='% punktów'} życia.\nNałóż |Chłód| na wszystkich wrogów.\nDodaj\
+    \ {Value2:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do\
+    \ ręki."
+GainMaid:
+  Name: Infiltracja Rezydencji
+  Description: Dodaj |Sprzątanie Wróżki Pokojówki| do ręki.
+  UpgradedDescription: "Dodaj |Sprzątanie Wróżki Pokojówki| do ręki.\nWszystkie |Sprzątania\
+    \ Wróżki Pokojówki| w dłoni aktywują swój efekt zwiększania obrażeń."
+RemoveOverdraft:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Usuń |Naddobór| {PlayerName:g}."
+  Name: Uleczyć Blizny
+GainDayaojing:
+  ExtraDescription1: "Dodaj |Wspólność Daiyousei| do ręki.\n|d:Debiut: Ulecz {Value1:plural\
+    \ one='% punkt' few='% punkty' many='% punktów'} życia.|"
+  Name: Najlepsze Przyjaciółki
+  Description: "Dodaj |Wspólność Daiyousei| do ręki.\n|Debiut|: Ulecz {Value1:plural\
+    \ one='% punkt' few='% punkty' many='% punktów'} życia."
+CallFriends:
+  Name: Wezwać Przyjaciół
+  Description: Dodaj {Value1:plural one='% losową pospolitą kartę' few='% losowe pospolite
+    karty' many='% losowych pospolitych kart'} |Wsparcia Wróżek| do ręki.
+  UpgradedDescription: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'
+    many='% losowych kart'} |Wsparcia Wróżek| do ręki.
+GainLily:
+  Name: Zaskakująca Wiosna
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ losowym wrogom {Value1:plural one='% raz' other='% razy'}.\nDodaj |Ogłoszenie\
+    \ Lily White| do ręki."
+Blizzard:
+  Name: Śnieżyca
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nNałóż |Chłód| na wszystkich wrogów."
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom.\nNałóż |Chłód| na wszystkich wrogów.\nNa początku\
+    \ następnej tury powtórz ten efekt."
+ZeroK:
+  Name: Zero Absolutne
+  Description: "Zwiększ mnożnik zadawanych obrażeń wielokrotnie nakładając |Chłód|\
+    \ o {Value1}.\nNałóż |Chłód| na wszystkich wrogów."
+ColdBreath:
+  Name: Diamentowy Oddech
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
+    losowemu wrogowi z |Chłodem|.
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} losowemu wrogowi z |Chłodem|.\n|Debiut|: Dodaj {Value1:plural one='%\
+    \ |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do stosu doboru."
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} losowemu wrogowi z |Chłodem|.\n|d:Debiut: Dodaj {Value1:plural one='%\
+    \ Lodowiec' few='% Lodowce' many='% Lodowców'} do stosu doboru.|"
+IceBarrier:
+  Name: Bariera Lodu
+  Description: Zyskaj {Value1} |Lodowego Pancerza|.
+IceGun:
+  Name: Soplowy Karabin Maszynowy
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ losowym wrogom {Value1:plural one='% raz' other='% razy'}.\nWrogowie z |Chłodem|\
+    \ otrzymują {Value2:plural one='% raz' other='% razy'} więcej obrażeń."
+Tether:
+  Name: Więzi
+  Description: "Za każdą kartę |Wsparcia Wróżek| w dłoni zyskaj {Value1} |Tymczasowej\
+    \ Mocy|.\n(Zyskaj {TotalFire} |Tymczasowej Mocy|.)"
+CirnoInForest:
+  Name: Na Widoku
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {GainMana}.\n|Przyrost|: Zyskaj dodatkową\
+    \ {Mana}."
