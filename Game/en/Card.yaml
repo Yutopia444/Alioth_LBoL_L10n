@@ -619,8 +619,8 @@ WaterPrincess:
     \ Add a |Splash| to the hand."
   Name: Princess Undine
 YonglinCard:
-  Description: 'When the first card is played each turn, add a |copy| of that card
-    to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.'
+  Description: 'At the end of {PlayerName}''s turn, add {Value1} |虚假之月{Value1:plural
+    one='''' other=''s''}| to the draw pile.'
   Name: The Reclusive Sage
   FlavorText: The sage of wisdom chose to hide, so is hiding an act of wisdom?
 QingeHeal:
@@ -1003,7 +1003,7 @@ SatoriMemory:
   FlavorText: "\"What's the password for this website?\""
 GrimoireStudy:
   Description: "Lose {Value1} life.\n|For each <sprite=\"ManaSprite\" name=\"1\">\
-    \ spent:| This effect lasts for an additional turn.\nAt the end of {PlayerName}'s\
+    \ spent:| Gain the following effect for an additional turn: At the end of {PlayerName}'s\
     \ turn, add a |Rainbow| to the hand."
   Name: Grimoire Study
   FlavorText: "\"Let me check the monster's weakness...\""
@@ -1066,9 +1066,9 @@ SeeFengshui:
     \ |Defense| card is sent to the discard pile this way, gain {Value2} |Block|."
   Name: Feng Shui Manipulation
 YukariAttack:
-  Description: "Deal {Damage} damage.\nAt the end of {PlayerName}'s turn, if their\
-    \ life total changed that turn, return this card from the discard pile to the\
-    \ hand. It |temporarily costs| {Mana}."
+  Description: "Deal {Damage} damage.\nAt the end of {PlayerName}'s turn, if her life\
+    \ total changed that turn, return {SelfName} from the discard pile to the hand.\
+    \ It |temporarily costs| {Mana}."
   Name: Boundary of Life and Death
 HuaBlock:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Temporary Firepower|."
@@ -1088,7 +1088,7 @@ SuikaBigball:
     \ enemy.\nLose {Value1} |Firepower|."
   Name: Oni Spirit Bomb
 MeilingBlock:
-  Description: "Gain {Block} |Block| and {Shield} |Barrier|.\nThis card is affected\
+  Description: "Gain {Block} |Block| and {Shield} |Barrier|.\n{SelfName} is also affected\
     \ by |Firepower|."
   Name: Crimson Energy Release
   FlavorText: Be prepared to be hit before threatening to hit others.
@@ -1118,8 +1118,8 @@ ReadBook:
     \ white cards to add to the hand.|"
   Name: Youkai Study
 Panzi:
-  Description: "Deal {Damage} damage.\n|When this card enters the hand:| Add a |copy|\
-    \ of this card to the hand."
+  Description: "Deal {Damage} damage.\n|When {SelfName} enters the hand:| Add a |Copy|\
+    \ of it to the hand."
   Name: Water Plate
 ShuimuBlock:
   Description: "Gain {Block} |Block|.\n|Permanently| increase this card's |Block|\
@@ -1158,7 +1158,7 @@ TannvCard:
   Name: Turning the Tables
 MogongAttack:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\n|While in hand|: Whenever\
-    \ another card is played, increase this card's damage and |Block| to match that\
+    \ another card is played, increase {SelfName}'s damage and |Block| to match that\
     \ card's base damage and |Block|."
   Name: Haniwa Front
 TianziMana:
@@ -1304,14 +1304,14 @@ YukariBox:
   Name: '"Gifts" Given'
 HuiyinRetain:
   Description: "Return up to {Value1:plural one='% card' other='% cards'} from the\
-    \ discard pile to the hand. |Retain| them this turn.\nEnd the turn. Then, {PlayerName}\
-    \ takes an additional turn.\n|Time Limit| {Mana}"
+    \ discard pile to the hand. |Retain| them this turn.\nEnd {PlayerName} turn. Then,\
+    \ take an extra turn.\n|Time Limit| {Mana}."
   Name: Ichijou Returning Bridge
 XiaosanReflect:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|."
   Name: Counter Danmaku
 YijiuAttack:
-  Description: "Deal {Damage} damage.\nWhen an enemy is defeated using this card,\
+  Description: "Deal {Damage} damage.\nWhen an enemy is defeated using {SelfName},\
     \ |Exile| it and gain |Flawless| for {Value1} turn{Value1:plural one='' other='s'}."
   Name: Dragon God's Thunderbolt
 HekaHellRain:
@@ -1404,7 +1404,7 @@ WanderingSoul:
     This card is still in development.\nPlease look forward to a future update."
   Name: Wandering Soul
 RabbitFoot:
-  Description: "|At the end of combat:| If this card isn't |Exiled|, gain {Value1}\
+  Description: "|At the end of combat:| If {SelfName} isn't |Exiled|, gain {Value1}\
     \ <sprite=\"Point\" name=\"Gold\">."
   Name: Lucky Rabbit's Foot
 ToolVulnerable:
@@ -1423,7 +1423,7 @@ Riguang:
   Description: '|At the end of the turn|: Take {Value1} damage.'
   Name: Refracted Sunlight
 Wushuai:
-  Description: '|When drawn:| Gain {Value1} |Lock On| and |Exile| this card.'
+  Description: '|When drawn:| Gain {Value1} |Lock On| and |Exile| {SelfName}.'
   Name: Shining Sword
 Chunguang:
   Description: '|When drawn:| |Purify| {Value1}.'
@@ -1517,11 +1517,11 @@ ShengquanZaiwo:
   Description: Gain {Mana}.
 Nightmare:
   Name: Nightmare
-  Description: "When there is a total of {Value1} |Nightmares| in the hand, draw pile,\
-    \ and discard pile, {PlayerName} loses the game.\nThere is currently a total of\
+  Description: "When there are a total of {Value1} |e:Nightmares| in the hand, draw\
+    \ pile, and/or discard pile, {PlayerName} loses the game.\nThere are currently\
     \ {NightmareCount}."
-  NonbattleDescription: When there is a total of {Value1} |Nightmares| in the hand,
-    draw pile, and discard pile, {PlayerName} loses the game.
+  NonbattleDescription: When there are a total of {Value1} |e:Nightmares| in the hand,
+    draw pile, and/or discard pile, {PlayerName} loses the game.
 AyaNewsSakuyaSp:
   Name: Bunbunmaru - Sakuya Special
   Description: "|At the end of the turn|: Lose {Value1} |Spirit|."
@@ -1676,9 +1676,8 @@ LilyChun:
     one='has' other='have'} |Exile| and |Ethereal|.
   Name: Spring is Here!
 SkyWater:
-  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nAt the end of\
-    \ {PlayerName}'s turn, gain {Value2} |Block| for each card discarded while ending\
-    \ the turn."
+  Description: "Gain {Shield} |Barrier|.\nAt the end of {PlayerName}'s turn, gain\
+    \ {Value2} |协力| for each card discarded while ending the turn."
   Name: Heavenly Water Miracle
 CoolBreeze:
   Description: "Gain {Block} |Block|.\nIf any enemy has |Cold|, |Upgrade| {Value1}\
@@ -1811,7 +1810,7 @@ KaguyaTreeSee:
     \ cards lose |Exile|."
 MeilingRain:
   Description: "Deal {Damage} damage to each enemy {AttackTimes} times.\n|For each\
-    \ {Mana} spent:| Deal that damage to each enemy an additional time."
+    \ {Mana} spent|: Deal that damage to each enemy an additional time."
   Name: Vivid Color Downpour
 KanakoWalk:
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}. |Exile| all status\
