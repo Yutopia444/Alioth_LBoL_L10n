@@ -22,7 +22,7 @@ DoubleJiejie:
     Deal {Damage} damage.
     If {PlayerName} has |Barrier|, deal {Value1} times that much damage instead.
   UpgradedDescription: |
-    Deal {Damage} damage twice.
+    Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.
   Name: Duplex Barrier
 Fengmozhen:
   Description: Deal {Damage} damage.
@@ -153,10 +153,10 @@ DanmuDuijue:
   Description: |-
     Gain {Block} |Block|.
     Gain {Value1} |Reflection|.
-    This card is also affected by |Firepower|.
+    {SelfName} is also affected by |Firepower|.
   Name: Spell Card Duel
-  UpgradedDescription: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|.\nThis\
-    \ card is also affected by |Firepower|."
+  UpgradedDescription: "Gain {Shield} |Barrier|.\nGain {Value1} |Reflection|.\n{SelfName}\
+    \ is also affected by |Firepower|."
 SmallPanding:
   Description: |-
     Gain {Value1} |Graze|.
@@ -978,7 +978,8 @@ RedGiantStar:
 OpenUniverse:
   Name: Open Universe
   Description: "Remove a card in the draw pile from combat.\nAdd 2 |copies| of it\
-    \ to the hand that |temporarily cost| {Mana} and have |Exile|."
+    \ to the hand that |temporarily cost| {Mana} and have |Exile|.\nYou can't choose\
+    \ |Copies| for this effect."
 IceSpark:
   Name: Frozen Laser
   Description: "Deal {Damage} damage and apply |Cold| to each enemy."
@@ -1199,8 +1200,6 @@ KongMana:
   Description: "|Exile| a card from the hand. Gain mana equal to that card's cost.\n\
     Add a |Rainbow| to the hand."
   Name: Meltdown
-RandomShoot:
-  Name: RandomShoot
 ToolUpgrade:
   Description: "|Upgrade| each card in the hand until the end of combat.\n|Limited【{DeckCounter}】|"
   Name: Floppy Disk
@@ -1388,8 +1387,6 @@ MoonPurify:
   UpgradedDescription: 'Choose a card in the hand. It gains |Pure| this combat, removing
     its colored mana cost component.'
   Name: Remove Impurity
-MultiShoot:
-  Name: Multi-Shot
 ToolMaxHp:
   Description: "Gain {Value1} maximum life.\n|Limited【{DeckCounter}】|"
   Name: Crispy Cucumber
@@ -2004,7 +2001,7 @@ MarisaHoldCard:
   Description: "Choose up to {Value1} card{Value1:plural one='' other='s'} in the\
     \ hand. |Retain| them this turn.\nGain {Block} |Block|."
 ReimuHeavyAttack:
-  Description: "Deal {Damage} damage.\n|Firepower| increases this card's damage {Value1}\
+  Description: "Deal {Damage} damage.\n|Firepower| increases {SelfName}'s damage {Value1}\
     \ time{Value1:plural one='' other='s'}."
   Name: Fist of the Hakurei
 BulletStudy:
