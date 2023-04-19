@@ -170,18 +170,18 @@ DanmuDuijue:
   Description: |-
     获得 {Block} 点|格挡|。
     获得 {Value1} 点|反射|。
-    本牌亦受|火力|加成。
+    {SelfName}亦受|火力|加成。
   UpgradedDescription: |-
     获得 {Shield} 点|护盾|。
     获得 {Value1} 点|反射|。
-    本牌亦受|火力|加成。
+    {SelfName}亦受|火力|加成。
   FlavorText: 符卡规则从未收取过版权费，也许这就是「互联网精神」吧。
 
 ReimuHeavyAttack:
   Name: 博丽一拳
   Description: |-
     造成 {Damage} 点伤害。
-    |火力|对本牌效果提升为 {Value1} 倍。
+    |火力|对{SelfName}效果提升为 {Value1} 倍。
   FlavorText: 「你已经死了！」
 
 ReverseJiejie:
@@ -371,8 +371,8 @@ BoliPhantom:
 KuosanJiejie:
   Name: 扩散结界
   Description: |-
-    |每支付<sprite="ManaSprite" name="W">|：获得 {Block} 点|格挡|。
-    |每支付<sprite="ManaSprite" name="R">|：对所有敌人造成 {Damage} 点伤害。
+    |每支付|<sprite="ManaSprite" name="W">：获得 {Block} 点|格挡|。
+    |每支付|<sprite="ManaSprite" name="R">：对所有敌人造成 {Damage} 点伤害。
   FlavorText: 我需要很多彩色法力，这回合就要！
 
 QiqingYishi:
@@ -469,7 +469,7 @@ RedLaser:
 
 Potion:
   Name: 不稳定魔药
-  Description: '|进入手中时|：获得{Mana}，对一个随机敌人造成 {Damage} 点伤害，|放逐|本牌。'
+  Description: '|进入手中时|：获得{Mana}，对一个随机敌人造成 {Damage} 点伤害，|放逐|{SelfName}。'
   FlavorText: 警告！该魔药随时可能爆炸！
 
 SatelliteIllusion:
@@ -514,7 +514,7 @@ ReadyForBurst:
     获得 {Value1} 层|充能|。
 
 BulletStudy:
-  Name: 弹幕研习
+  Name: 弹幕笔记
   Description: |-
     造成 {Damage} 点伤害。
     |超载 {Value2} |：获得 {Shield} 点|护盾|。
@@ -623,8 +623,8 @@ RainbowStar:
   Name: 虹星冲击
   Description: |-
     造成 {Damage} 点伤害。
-    |每支付<sprite="ManaSprite" name="1">|：伤害提高 {Value1} 点。
-    |每支付<sprite="ManaSprite" name="P">|：伤害提高 {Value2} 点。
+    |每支付|<sprite="ManaSprite" name="1">：伤害提高 {Value1} 点。
+    |每支付|<sprite="ManaSprite" name="P">：伤害提高 {Value2} 点。
 
 MarisaEat:
   Name: 大快朵颐
@@ -751,6 +751,7 @@ OpenUniverse:
   Description: |-
     选择抽牌堆中的一张牌，将它移出本场战斗。
     将两张它|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。
+    不能以|复制品|为目标。
   FlavorText: 宇宙的本质是复读（？）
 
 RedGiantStar:
@@ -799,12 +800,12 @@ StarlightTaifengSummoner:
   Name: 汇聚星光
   Description: |-
     将一张|星光台风|洗入抽牌堆。
-    |每支付{Mana}|：它多造成一次伤害。
-    |每支付<sprite="ManaSprite" name="R">|：它多造成 {Value1} 点伤害。
+    |每支付|{Mana}：它多造成一次伤害。
+    |每支付|<sprite="ManaSprite" name="R">：它多造成 {Value1} 点伤害。
   UpgradedDescription: |-
     将一张|星光台风+|置于抽牌堆顶。
-    |每支付{Mana}|：它多造成一次伤害。
-    |每支付<sprite="ManaSprite" name="R">|：它多造成 {Value1} 点伤害。
+    |每支付|{Mana}：它多造成一次伤害。
+    |每支付|<sprite="ManaSprite" name="R">：它多造成 {Value1} 点伤害。
   FlavorText: 攒法力千日，用法力一时。
 
 StarlightTaifeng:
@@ -890,7 +891,7 @@ JungleMaster:
 
 ManaJungle:
   Name: 森林探险
-  Description: '|抽取时|：将 {Value1} 张|幻虹|加入手中，然后|放逐|本牌。'
+  Description: '|抽取时|：将 {Value1} 张|幻虹|加入手中，然后|放逐|{SelfName}。'
   FlavorText: 「天呀还有意外收获！」
 
 SakuyaAttackW:
@@ -1049,7 +1050,7 @@ BladePower:
   Name: 快闪之银
   Description: |-
     获得 {Value1} 点|火力|。
-    |进入手中时|：如果本牌是唯一的手牌，|暂塑|为{Mana}。
+    |进入手中时|：如果{SelfName}是唯一的手牌，|暂塑|为{Mana}。
 
 SakuyaInvestigate:
   Name: 时停侦探
@@ -1065,7 +1066,7 @@ SakuyaDefenseRetain:
 
 SakuyaAttackX:
   Name: 推进之银
-  Description: '|每支付{Mana}|：造成 {Damage} 点伤害。'
+  Description: '|每支付|{Mana}：造成 {Damage} 点伤害。'
 
 SakuyaDraw:
   Name: 毫无破绽
@@ -1098,7 +1099,7 @@ SakuyaClock:
   Name: 咲夜特制怀表
   Description: |-
     造成 {Damage} 点伤害。
-    以本牌击败一名敌人时，|放逐|本牌，结束{PlayerName}的回合，进行一个额外的回合。
+    以{SelfName}击败一名敌人时，|放逐|{SelfName}，结束{PlayerName}的回合，进行一个额外的回合。
 
 DangerousMagician:
   Name: 危险的魔术师
@@ -1226,8 +1227,8 @@ SakuyaDio:
 PerfectServant:
   Name: 完美从者
   Description: |-
-    |每支付<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">|：下回合抽牌阶段结束时，所有手牌|暂时降低|一点随机的费用。
-    |每支付<sprite="ManaSprite" name="U">|：下回开始时获得{Mana}，并多抽一张牌。
+    |每支付|<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">：下回合抽牌阶段结束时，所有手牌|暂时降低|一点随机的费用。
+    |每支付|<sprite="ManaSprite" name="U">：下回开始时获得{Mana}，并多抽一张牌。
 
 BackToFuture:
   Name: 回到未来
@@ -1251,14 +1252,14 @@ ExtraTurnEveryone:
 TunnelEffect:
   Name: 隧穿效应
   Description: |-
-    对一个随机敌人造成 {Damage} 点伤害。
+    随机对敌人造成 {Damage} 点伤害。
     获得{Mana}。
     洗牌时回到手中。
 
 SakuyaKiller:
   Name: 夜雾幻影杀人鬼
   Description: |-
-    回合结束时将 {Value1} 张|飞刀|洗入抽牌堆。
+    {PlayerName}的回合结束时，将 {Value1} 张|飞刀|洗入抽牌堆。
     每当一名敌人被击败时亦如此。
 
 BrokenTimeline:
@@ -1310,30 +1311,38 @@ UnlimitedTime:
 CirnoAttackU:
   Name: 冰锥射击
   Description: 造成 {Damage} 点伤害。
+  FlavorText: 直到最后一刻，琪露诺才想起来她正在和朋友玩打雪仗。
 
 CirnoBlockG:
   Name: 绿叶护体
   Description: 获得 {Block} 点|格挡|。
+  FlavorText: 夏威夷的妖精很擅长在跳舞时使用这个招式。
 
 CirnoAttackG:
   Name: 霜叶飞镖
   Description: 造成 {Damage} 点伤害。
+  FlavorText: 琪露诺喜欢用冰冻的树叶和朋友玩打水漂。
 
 CirnoBlockU:
   Name: 寒冰护体
   Description: 获得 {Block} 点|格挡|。
+  FlavorText: 冷藏多年的英吉利牛肉也是防身利器。
 
 IceLaser:
   Name: 冰冻光线
   Description: |-
     造成 {Damage} 点伤害。
     命中时施加|寒冷|。
-
-SummerFlower:
-  Name: 盛夏之花
-  Description: |-
+  UpgradedDescription: |-
     造成 {Damage} 点伤害。
-    |成长|：伤害提高 {Value1} 点。
+    施加|寒冷|。
+  FlavorText: 琪露诺因此荣获1997年诺贝尔物理学奖特殊贡献者。
+
+SummerIce:
+  Name: 夏日之冰
+  Description: |-
+    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
+    |透支| {Value2} 。
 
 Ice:
   Name: 冰晶
@@ -1348,6 +1357,7 @@ ColdBreath:
   ExtraDescription1: |-
     随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
     |d:初见：将 {Value1} 张冰晶置于抽牌堆顶。|
+  FlavorText: 格斗游戏中的强力招式。
 
 IceLance:
   Name: 冰枪术
@@ -1355,17 +1365,44 @@ IceLance:
     造成 {Damage} 点伤害。
     对|寒冷|的目标造成 {Value1} 倍伤害。
 
+Opt:
+  Name: 抉择
+  Description: |-
+    展示抽牌堆顶的牌，你可以将它置于抽牌堆底。
+    抽一张牌。
+    获得{Mana}。
+
+OptBottom:
+  Name: 置于抽牌堆底
+  Description: 将{TargetName}置于抽牌堆底。
+
 FreezeBullet:
   Name: 冻结弹幕
   Description: |-
     获得 {Block} 点|格挡|。
     获得 {Value1} 层|寒冰甲|。
 
+BlueRose:
+  Name: 冰蔷薇
+  Description: |-
+    造成 {Damage} 点伤害。
+    如果目标处于|寒冷|，获得 {Block} 点|格挡|。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    如果目标具有|寒冷|，获得 {Shield} 点|护盾|。
+
 OverdraftDefense:
   Name: 意外花开
   Description: |-
     获得 {Block} 点|格挡|。
     |透支| {Value1} 。
+
+SummerFlower:
+  Name: 盛夏之花
+  Description: |-
+    造成 {Damage} 点伤害。
+    |成长|：伤害提高 {Value1} 点。
+  FlavorText: 这个石头能在你脑袋上打出一个很漂亮的形状。
 
 GrowDrawAttack:
   Name: 牵牛花藤
@@ -1383,14 +1420,17 @@ GainLarva:
     施加 {Value1} 层|中毒|。
     将一张|拉尔瓦的振翅|加入手中。
 
-BlueRose:
-  Name: 冰蔷薇
-  Description: |-
-    造成 {Damage} 点伤害。
-    如果目标处于|寒冷|，获得 {Block} 点|格挡|。
-  UpgradedDescription: |-
-    造成 {Damage} 点伤害。
-    如果目标具有|寒冷|，获得 {Shield} 点|护盾|。
+CirnoConsider:
+  Name: 深思熟虑
+  Description: '|抉择|：获得 {Block} 点|格挡|；或抽 {Value1} 张牌。'
+
+CirnoConsiderDefense:
+  Name: 深思熟虑：沉寂
+  Description: 获得|格挡|。
+
+CirnoConsiderDraw:
+  Name: 深思熟虑：醒悟
+  Description: 抽牌。
 
 CoolBreeze:
   Name: 凉爽清风
@@ -1423,19 +1463,19 @@ CirnoDraw:
     抽 {Value1} 张牌。
     下一回合开始时，抽 {Value2} 张牌。
 
-IceBlock:
-  Name: 寒冰屏障
-  Description: |-
-    免疫所有的伤害一回合。
-    移除所有的|格挡|、|护盾|和|闪避|。
-    |保留|手牌一回合，结束{PlayerName}的回合。
-
 IceSaber:
   Name: 塑冰成剑
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
     打出时可以弃掉任意张数的蓝色手牌，每一张多攻击一次。
   FlavorText: 曾今有把名剑叫霜之哀伤。
+
+ColdSnap:
+  Name: 急速冷却
+  Description: |-
+    获得 {Block} 点|格挡|。
+    抽 {Value1} 张牌。
+    将一张手牌置于抽牌堆底。
 
 IceBarrier:
   Name: 寒冰护体
@@ -1446,13 +1486,10 @@ ZeroK:
   Description: |-
     提高 {Value1} 倍|寒冷|的叠加伤害。
     对所有敌人施加|寒冷|。
-
-Blizzard:
-  Name: 暴风雪
-  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
   UpgradedDescription: |-
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-    下回合开始时再次生效。
+    提高 {Value1} 倍|寒冷|的叠加伤害。
+    对所有敌人施加|寒冷|。
+    将 {Value2} 张|冰晶|置于抽牌堆顶。
 
 IceGun:
   Name: 冰柱机枪
@@ -1468,19 +1505,33 @@ Tether:
     (总计 {TotalFire} 点)
 
 RemoveOverdraft:
-  Name: 抚平伤痕
+  Name: 水果碎碎冰
   Description: |-
     造成 {Damage} 点伤害。
     恢复所有|透支|的法力。
+  FlavorText: 热带水果口味，冰爽好滋味！
 
 GainDayaojing:
-  Name: 最好的朋友
+  Name: 默默的支持
   Description: |-
-    将一张|大妖精的协同|加入手中。
+    将一张|大妖精的协力|加入手中。
     |初见|：恢复 {Value1} 点生命。
   ExtraDescription1: |-
-    将一张|大妖精的协同|加入手中。
+    将一张|大妖精的协力|加入手中。
     |d:初见：恢复 {Value1} 点生命。|
+
+ManaReflection:
+  Name: 法力映象
+  Description: |-
+    翻倍法力。
+    |透支| {Value1} 。
+
+FairyWrath:
+  Name: 自然之怒
+  Description: |-
+    对两个随机敌人造成 {Damage} 点伤害。
+    |放逐|区里每有一张|妖精支援|，伤害提高 {Value1} 点。
+    |透支| {Value2} 。
 
 FairyTree:
   Name: 妖精之家
@@ -1524,11 +1575,47 @@ CirnoFestival:
   Name: 混入宴会
   Description: 每打出一张|能力|牌，将 {Value1} 张随机的|妖精支援|加入手中。
 
+DiamondBlizzard:
+  Name: 钻石风暴
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |抉择|：对所有敌人施加|寒冷|；或获得 {Block} 点|格挡|。
+
+DiamondBlizzardCold:
+  Name: 钻石风暴：寒冷
+  Description: 造成伤害，施加|寒冷|。
+
+DiamondBlizzardDefense:
+  Name: 钻石风暴：护体
+  Description: 造成伤害，获得|格挡|。
+
+ColdChain:
+  Name: 冷链物流
+  Description: 从抽牌堆中选择至多 {Value1} 张加入手中，赋予|保留|。
+
 DeepFreeze:
-  Name: 深度冻结
+  Name: 冰尖之舞
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     对所有敌人施加|寒冷|，如果目标已经处于|寒冷|，改为施加|深度冻结|。
+
+IceBlock:
+  Name: 寒冰屏障
+  Description: |-
+    免疫所有的伤害一回合。
+    移除所有的|格挡|、|护盾|和|闪避|。
+    |保留|手牌一回合，结束{PlayerName}的回合。
+
+FreezeRiver:
+  Name: 冻结河流
+  Description: 将抽牌堆底的牌加入手中，暂塑为{Mana}。
+
+Blizzard:
+  Name: 暴风雪
+  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+    下回合开始时再次生效。
 
 IceMatrix:
   Name: 冰冻矩阵
@@ -1536,15 +1623,26 @@ IceMatrix:
     受到敌人攻击时，额外失去一层|寒冰甲|并向敌人施加|寒冷|。
     获得 {Value1} 层|寒冰甲|。
 
+FairyTeam:
+  Name: 妖精大战争
+  Description: |-
+    将|放逐|区内|妖精支援|移回手中，每种各一张。（有 {TeamCount} 种）
+    |透支| {Value1} 。
+  NonbattleDescription: 将|放逐|区内|妖精支援|移回手中，每种各一张。
+
+BestFriend:
+  Name: 最好的朋友
+  Description: 选择手牌中至多 {Value1} 张|妖精支援|，触发其主动效果。(不会导致|放逐|)
+
 CirnoEcho:
   Name: 自然的馈赠
   Description: 从弃牌堆中选择 {Value1} 张牌加入手中，赋予|回响|。
 
-FairyTeam:
-  Name: 妖精大战争
+FairyAllOut:
+  Name: 全体出动
   Description: |-
-    将|放逐|区内|妖精支援|移回手中，每种各一张。
-    （有 {TeamCount} 种）
+    对所有敌人造成 {Damage} 点伤害。
+    |放逐|手中全部的|妖精支援|。
   NonbattleDescription: 将|放逐|区内|妖精支援|移回手中，每种各一张。
 
 MinengZhuru:
@@ -1552,17 +1650,6 @@ MinengZhuru:
   Description: |-
     |妖精支援|的被动效果提高 {Value1} 倍。
     （手牌中、回合开始时）
-
-GatherFairy:
-  Name: 妖精集结
-  Description: |-
-    手牌上限提高至 {MaxHand} 张。
-    抽 {Value1} 张牌。
-  UpgradedDescription: |-
-    手牌上限提高至 {MaxHand} 张。
-    将 {Value2} 张随机的普通|妖精支援|加入手中。
-    抽 {Value1} 张牌。
-  FlavorText: 你们都是我的翅膀。
 
 HualiIce:
   Name: 华丽夏日冰
@@ -1581,6 +1668,17 @@ HualiIce:
     本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
     对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
 
+GatherFairy:
+  Name: 妖精集结
+  Description: |-
+    手牌上限提高至 {MaxHand} 张。
+    抽 {Value1} 张牌。
+  UpgradedDescription: |-
+    手牌上限提高至 {MaxHand} 张。
+    将 {Value2} 张随机的普通|妖精支援|加入手中。
+    抽 {Value1} 张牌。
+  FlavorText: 你们都是我的翅膀。
+
 ForeverCool:
   Name: 永远凉爽的幻想四季
   Description: |-
@@ -1590,6 +1688,16 @@ ForeverCool:
     每|放逐|一张|妖精支援|，对随机敌人施加|寒冷|。
     每打出一张|妖精支援|，将一张随机的|妖精支援|洗入弃牌堆。
     将 {Value1} 张随机的|妖精支援|加入手中。
+
+SummerParty:
+  Name: 冰霜派对
+  Description: |-
+    将 {Value2} 张随机的普通|妖精支援|加入手中。
+    |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
+    |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
+  UpgradedDescription: |-
+    |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
+    |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
 
 GainLuna:
   Name: 沐浴月光
@@ -1628,10 +1736,11 @@ GainSunny:
     将一张|桑尼的折射|加入手中。
 
 FairySupportMaid:
-  Name: 女仆妖精的清扫
+  Name: 小霞的清扫
   Description: |-
     |回合开始时|：伤害提高 {Value1} 点。
     |被放逐时|：对生命值最高的敌人造成 {Value2} 点伤害。
+  FlavorText: 小霞已经是红魔馆的女仆妖精里，最认真干活的了。
 
 FairySupportLarva:
   Name: 拉尔瓦的振翅
@@ -1640,10 +1749,10 @@ FairySupportLarva:
     |被放逐时|：获得 {Value2} 点|格挡|。
 
 FairySupportDayaojing:
-  Name: 大妖精的协同
+  Name: 大妖精的协力
   Description: |-
-    |回合开始时|：获得 {Value1} 层|协同|。
-    |被放逐时|：获得 {Value2} 层|协同|。
+    |回合开始时|：获得 {Value1} 层|协力|。
+    |被放逐时|：获得 {Value2} 层|协力|。
 
 FairySupportLily:
   Name: 莉莉白的报春
@@ -1666,12 +1775,14 @@ FairySupportLuna:
 FairySupportStar:
   Name: 斯塔的侦测
   Description: |-
-    |回合开始时|：对所有敌人施加 {Value1} 点|暂失火力|。
-    |被放逐时|：对随机敌人施加 {Value2} 层|锁定|。
+    |回合开始时|：对随机敌人施加 {Value1} 层|锁定|。
+    |被放逐时|：对所有敌人施加 {Value2} 层|锁定|。
 
 FairySupportClownpiece:
   Name: 克劳恩皮丝的疯狂
-  Description: '|被放逐时|：获得{Mana}。'
+  Description: |-
+    |回合开始时|：降低 {Value1} 点随机费用。
+    |被放逐时|：获得{Mana}。
 
 KoishiAttackG:
   Name: 蔷薇花开
@@ -1850,7 +1961,9 @@ HatateDiscard:
 
 DoremyDuplicate:
   Name: 梦我梦中
-  Description: 选择一张手牌，将 {Value1} 张的它的复制加入手中。
+  Description: |-
+    选择一张手牌，将 {Value1} 张的它的复制加入手中。
+    不能以|复制品|为目标。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
 
 LeidiBlizzard:
@@ -1890,8 +2003,18 @@ WaterPrincess:
 
 YonglinCard:
   Name: 贤者的归隐
-  Description: '{PlayerName}的每回合使用第一张牌后，将一张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。'
+  Description: '{PlayerName}的回合结束时，将 {Value1} 张|虚假之月|洗入抽牌堆。'
+  UpgradedDescription: |-
+    {PlayerName}的回合结束时，将 {Value1} 张|虚假之月|洗入抽牌堆。
+    将 {Value2} 张|虚假之月|加入手中。
   FlavorText: 智慧之神选择了逃匿，所以逃匿这算是智慧之行吗？
+
+FakeMoon:
+  Name: 虚假之月
+  Description: |-
+    选择一张手牌，将 {Value1} 张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。
+    不能以|复制品|为目标。
+  FlavorText: 比真正的月亮还要豪华。
 
 Shadow:
   Name: 暗影
@@ -1994,11 +2117,11 @@ GrimoireStudy:
   Name: 研读魔导书
   Description: |-
     失去 {Value1} 点生命。
-    |每支付<sprite="ManaSprite" name="1">|就多持续一回合：回合结束时将一张|幻虹|加入手中。
+    |每支付|<sprite="ManaSprite" name="1">就多持续一回合：回合结束时将一张|幻虹|加入手中。
   UpgradedDescription: |-
     失去 {Value1} 点生命。
     将一张|幻虹|加入手中。
-    |每支付<sprite="ManaSprite" name="1">|就多持续一回合：回合结束时将一张|幻虹|加入手中。
+    |每支付|<sprite="ManaSprite" name="1">就多持续一回合：回合结束时将一张|幻虹|加入手中。
   FlavorText: 「先等我查查这个妖怪的弱点……」
 
 TrueMoon:
@@ -2053,7 +2176,7 @@ MeilingBlock:
   Name: 红寸劲
   Description: |-
     获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
-    本牌亦受|火力|加成。
+    {SelfName}亦受|火力|加成。
   FlavorText: 威胁打人之前先做好挨打的准备。
 
 SuikaBigball:
@@ -2143,7 +2266,7 @@ DanmuJade:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     将 {Value1} 张|幻虹|加入手中。
-    |每支付{Mana}|：获得 {Value2} 点|火力|和|灵力|。
+    |每支付|{Mana}：获得 {Value2} 点|火力|和|灵力|。
 
 YouxiangMoon:
   Name: 花鸟风月
@@ -2194,7 +2317,7 @@ Panzi:
   Name: 水盘子
   Description: |-
     造成 {Damage} 点伤害。
-    |进入手中时|：将一张本牌的复制加入手中。
+    |进入手中时|：将一张{SelfName}的复制加入手中。
 
 TiangouOrder:
   Name: 大天狗的号令
@@ -2242,7 +2365,7 @@ YukariAttack:
   Name: 生与死的境界
   Description: |-
     造成 {Damage} 点伤害。
-    如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时本牌从弃牌堆回到手中且|暂塑|为{Mana}。
+    如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时{SelfName}从弃牌堆回到手中且|暂塑|为{Mana}。
   FlavorText: 「生与死之间有一条纤薄的境界线。你会在那里找到我。」
 
 QingeUpgrade:
@@ -2270,7 +2393,7 @@ MogongAttack:
   Description: |-
     获得 {Block} 点|格挡|。
     造成 {Damage} 点伤害。
-    |手牌中|：打出其它牌时，提高本牌的伤害和|格挡|，直到与打出卡牌的基础值相等。
+    |手牌中|：打出其它牌时，提高{SelfName}的伤害和|格挡|，直到与打出卡牌的基础值相等。
 
 TianziMana:
   Name: 天人飞翔
@@ -2359,7 +2482,7 @@ YijiuAttack:
   Name: 龙神电光
   Description: |-
     造成 {Damage} 点伤害。
-    以本牌击败一名敌人时，|放逐|本牌，获得 {Value1} 回合|天衣无缝|。
+    以{SelfName}击败一名敌人时，|放逐|{SelfName}，获得 {Value1} 回合|天衣无缝|。
 
 ReisenMana:
   Name: 幻视调律
@@ -2378,7 +2501,7 @@ HekaHellRain:
 
 ReisenAttack:
   Name: 疯狂之梦
-  Description: '|每支付{Mana}|：对所有敌人造成 {Damage} 点伤害。'
+  Description: '|每支付|{Mana}：对所有敌人造成 {Damage} 点伤害。'
 
 FlanPlayAlone:
   Name: 独自玩耍
@@ -2495,7 +2618,7 @@ SanaeMiracle:
     只有在抽牌堆为空时可以打出。
 
 MistLake:
-  Name: 迷雾之湖
+  Name: 来个蓝绿
   Description: |-
     获得 {Value1} 层闪避。
     如果你的剩余法力大于 3，抽 {Value2} 张牌。
@@ -2516,7 +2639,7 @@ MeilingRain:
   Name: 极彩沛雨
   Description: |-
     对所有敌人造成 {Damage} 点伤害 {AttackTimes} 次。
-    |每支付{Mana}|：额外造成一次伤害。
+    |每支付|{Mana}：额外造成一次伤害。
 
 RuowujiCard:
   Name: 逆鳞的惊涛
@@ -2525,8 +2648,8 @@ RuowujiCard:
 SkyWater:
   Name: 天水的奇迹
   Description: |-
-    抽 {Value1} 张牌。
-    {PlayerName}的回合结束时，每弃一张牌获得 {Value2} 点|格挡|。
+    获得 {Shield} 点|护盾|。
+    {PlayerName}的回合结束时，每弃一张牌获得 {Value2} 点|协力|。
 
 KanakoWalk:
   Name: 神踏足的御神渡
@@ -2650,23 +2773,6 @@ BailianFire:
     {PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
     立刻生效一次。
 
-FakeHuiye:
-  Name: 竹取物语（伪）
-  Description: |-
-    将来游戏更新时，会新增更多的待解锁卡牌。
-    敬请期待。
-
-FlanBlack:
-  Name: 魔化
-  Description: |-
-    这张牌还没有准备好。
-    请期待游戏更新。
-  FlavorText: 背负U·N·欧文之名，舍弃所有人去战斗的少女~
-
-AttackWithEveryColor:
-  Name: 多彩攻击
-  Description: '|每支付一点不同颜色的费用|：造成 {Damage} 点伤害。'
-
 Shoot:
   Name: 射击
   Description: 造成 {Damage} 点伤害。
@@ -2716,6 +2822,15 @@ PManaCard:
   Name: 幻虹
   Description: 获得{Mana}。
 
+Thought:
+  Name: 念想
+  Description: |-
+    |进入手中时|：|放逐|{SelfName}。
+    将一张法力费用合为 {Value1} 的随机的卡牌加入手牌，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  UpgradedDescription: |-
+    |进入手中时|：|放逐|{SelfName}。
+    将一张法力费用合为 {Value1} 的随机|已升级|卡牌加入手牌，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+
 MoonPurify:
   Name: 除秽
   Description: |-
@@ -2726,14 +2841,6 @@ MoonPurify:
 MoonWorld:
   Name: 无秽的世界
   Description: '{PlayerName}的回合开始后，|净化| {Value1} 张随机的手牌，在本场战斗中移除其费用的有色部分。'
-
-MultiShoot:
-  Name: 多段射击
-  Description: 造成 {Damage} 点伤害 {Value1} 次。
-
-RandomShoot:
-  Name: 随机射击
-  Description: 对随机敌人造成 {Damage} 点伤害，重复 {Value1} 次。
 
 ToolDraw:
   Name: 补给包
@@ -2859,7 +2966,7 @@ WanderingSoul:
 
 RabbitFoot:
   Name: 幸运兔腿
-  Description: 战斗结束时，如果本牌没有被|放逐|，获得 {Value1} 点<sprite="Point" name="Gold">。
+  Description: 战斗结束时，如果{SelfName}没有被|放逐|，获得 {Value1} 点<sprite="Point" name="Gold">。
   FlavorText: 拿到兔脚会变得幸运，其实是幸运的人才能获得兔脚。
 
 GainTreasure:
@@ -2918,6 +3025,12 @@ EmpCard:
   Description: |-
     造成 {Damage} 点攻击伤害。
     如果目标是|无人机|，它 {Value1} 回合无法行动。
+    |消耗品【{DeckCounter}】|
+
+LarvaCure:
+  Name: 解毒剂
+  Description: |-
+    移除{PlayerName}身上的|中毒|。
     |消耗品【{DeckCounter}】|
 
 AyaNews:
@@ -2984,9 +3097,15 @@ SakuyaLock:
   NonbattleDescription: 触发一次|银之封锁|效果。
   FlavorText: 「还是让未来的我担心血量的问题吧。」
 
+CirnoFreeze:
+  Name: 法力冻结
+  Description: |-
+    如果手中有|法力冻结|，所有手牌费用增加{Mana}。
+    每打出一张牌，|放逐|一张手中的|e:法力冻结|。
+
 Wushuai:
   Name: 凌冽剑光
-  Description: '|抽取时|：受到 {Value1} 层|锁定|，然后|放逐|本牌。'
+  Description: '|抽取时|：受到 {Value1} 层|锁定|，然后|放逐|{SelfName}。'
   FlavorText: 「看啊，你的死兆星在天上闪耀！」
 
 Chunguang:
@@ -3016,9 +3135,9 @@ LoveLetter:
 Nightmare:
   Name: 噩梦
   Description: |-
-    手牌、抽牌堆和弃牌堆中总计有 {Value1} 张|噩梦|时，{PlayerName}立刻失败，无法避免。
+    手牌、抽牌堆和弃牌堆中总计有 {Value1} 张|e:噩梦|时，{PlayerName}立刻失败，无法避免。
     现有 {NightmareCount} 张。
-  NonbattleDescription: 手牌、抽牌堆和弃牌堆中总计有 {Value1} 张|噩梦|时，{PlayerName}立刻失败，无法避免。
+  NonbattleDescription: 手牌、抽牌堆和弃牌堆中总计有 {Value1} 张|e:噩梦|时，{PlayerName}立刻失败，无法避免。
   FlavorText: 醒来就不记得细节了。
 
 Regret:
@@ -3094,6 +3213,23 @@ FanzhuanChongdong:
   Name: 反转冲动
   Description: '|回合结束时|：如果本回合没有恢复过生命，便失去 {Value1} 点生命。'
   FlavorText: 成为吸血鬼眷属的代价。
+
+FakeHuiye:
+  Name: 竹取物语（伪）
+  Description: |-
+    将来游戏更新时，会新增更多的待解锁卡牌。
+    敬请期待。
+
+FlanBlack:
+  Name: 魔化
+  Description: |-
+    这张牌还没有准备好。
+    请期待游戏更新。
+  FlavorText: 背负U·N·欧文之名，舍弃所有人去战斗的少女~
+
+AttackWithEveryColor:
+  Name: 多彩攻击
+  Description: '|每支付一点不同颜色的费用|：造成 {Damage} 点伤害。'
 
 DeployAttackDoll:
   Name: (WIP) Attack Doll
