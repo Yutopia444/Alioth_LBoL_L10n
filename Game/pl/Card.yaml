@@ -886,7 +886,7 @@ BailianNingshen:
   Name: Medytacja
   UpgradedDescription: "Wybierz jedną z {Value1} losowych pospolitych kart aby dodać\
     \ do ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.\n\
-    |Debiut:| Dodaj |Światłość| do ręki."
+    |Debiut|: Dodaj |Światłość| do ręki."
   FlavorText: Krótkie filmiki z serii "Głos Myorenji" Panny Byakuren są popularne
     wśród chłopów wieku średniego, starców oraz młodych youkai.
 CirnoAttackU:
@@ -934,7 +934,7 @@ ShenziUpgradeAll:
 LeidiBlizzard:
   Name: Trwający Mróz
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\nNałóż {Value1} |Odmrożenia| wszystkim wrogom."
+    \ wszystkim wrogom.\nNałóż |Chłód| przy trafieniu."
 GuijiZaoxingFang:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ {Value1:plural one='% raz' other='% razy'}.\nTa karta zamienia się w inną |Rzeźbę|\
@@ -962,11 +962,11 @@ SatoriAttack:
 MystiaSing:
   Description: "Nałóż {Value1} |Tymczasowej Utraty Mocy| na wszystkich wrogów.\nZyskaj\
     \ {Value1} <sprite=\"Point\" name=\"Power\">.\nDodaj {Value2:plural one='|% Cień|'\
-    \ few='|% Cienie|' many='|% Cieni|'} do stosu zrzutek."
+    \ few='|% Cienie|' many='|% Cieni|'} do ręki."
   Name: Śpiew Nocnego Wróbla
 ShannvAbility:
-  Description: Na końcu tury {PlayerName:g} nałóż {Value1:plural one='% punkt' few='%
-    punkty' many='% punktów'} |Trucizny| na wszystkich wrogów.
+  Description: Na końcu tury {PlayerName:g} nałóż {Value1} |Trucizny| na wszystkich
+    wrogów.
   Name: Tajemnicza Gorączka
   FlavorText: Pani doktor ci przypomina, abyś pił dużo gorącej wody.
 XiaoemoBook:
@@ -974,7 +974,7 @@ XiaoemoBook:
     \ few='% karty' many='% kart'}.\n|d:Debiut: Dodaj Okultyzm do ręki.|"
   Name: Kodeks Diabła
   Description: "|Wygnaj| kartę z ręki.\nDobierz {Value1:plural one='% kartę' few='%\
-    \ karty' many='% kart'}.\n|Debiut:| Dodaj |Okultyzm| do ręki."
+    \ karty' many='% kart'}.\n|Debiut|: Dodaj |Okultyzm| do ręki."
 HinaAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ {Value1:plural one='% raz' other='% razy'}.\nZadaj obrażenia dodatkowy raz za\
@@ -1006,7 +1006,7 @@ MeihongAttack:
   Name: Latający Feniks
 WaterPrincess:
   Name: Księżniczka Ondyna
-  Description: "Zyskaj {Value1} |Bariery| za każdą kartę w dłoni.\n|Debiut:| Dodaj\
+  Description: "Zyskaj {Value1} |Bariery| za każdą kartę w dłoni.\n|Debiut|: Dodaj\
     \ |Plusk| do ręki."
   ExtraDescription1: "Zyskaj {Value1} |Bariery| za każdą kartę w dłoni.\n|d:Debiut:\
     \ Dodaj Plusk do ręki.|"
@@ -1021,7 +1021,7 @@ ShenziWake:
 YuetuInvincible:
   Name: Spadający Królik Księżyca
   Description: "Zyskaj |Nieskazitelny Jedwab| na {Value1:plural one='% turę' few='%\
-    \ tury' many='% tur'}.\nZmniejsz |Uduchowienie| o {Value2}."
+    \ tury' many='% tur'}.\nDodaj {Value2} |Zgubione Szaty| do stosu doboru."
   FlavorText: Ucieknij z oczyszczonego świata do plugawego raju.
 PlayWithWater:
   Name: Zabawa Wodą
@@ -1044,11 +1044,12 @@ NitoriUnderWater:
   Description: Zyskaj {Value1} |Kamuflażu Optycznego|.
 ShuimiUnderWater:
   Name: Duch Okrętu
-  Description: Gdy ta karta zostanie zrzucona, zyskaj {Mana}.
+  Description: '|Gdy Zrzucona|: Zyskaj {Mana}.'
 HatateDiscard:
   Name: Fabrykacja Wiadomości
   Description: "Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
     Zyskaj {Mana}."
+  UpgradedDescription: "Zrzuć między {Value1} a {Value2} kartami.\nZyskaj {Mana}."
 DoremyDuplicate:
   Name: Zatracona w Raju
   Description: Wybierz kartę w dłoni i dodaj {Value1:plural one='% |kopię|' other='%
@@ -1065,7 +1066,8 @@ YuyukoDebuff:
   Description: Nałóż {Value1} |Osłabienia| i |Wrażliwości|.
 RumiaBlock:
   Name: Przyćmienie
-  Description: "Zyskaj {Block} |Bloku|.\nDodaj |Cień| do ręki."
+  Description: "Zyskaj {Block} |Bloku|.\nDodaj {Value1:plural one='% |Cień|' few='%\
+    \ |Cienie|' many='% |Cienie|'} do ręki."
 SatoriMemory:
   Name: Głębokie Wspomnienia
   Description: "Wybierz jedną z {Value1} losowych kart ze stosu zrzutek, aby zwrócić\
@@ -1438,8 +1440,6 @@ GManaCard:
 PManaCard:
   Name: Tęcza
   Description: Zyskaj {Mana}.
-RandomShoot:
-  Name: Losowy Strzał
 ToolHeal:
   Description: "Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
     \ życia.\n|Ograniczony【{DeckCounter}】|"
@@ -1519,9 +1519,6 @@ Bribery:
   Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nMegumu ci zelży\
     \ w tej walce."
   Name: Przekupstwo
-MultiShoot:
-  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
-    {Value1:plural one='% raz' other='% razy'}.
 ToolDraw:
   Name: Plecak z Zapasami
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
@@ -1971,3 +1968,57 @@ MinengZhuru:
   Name: Zastrzyk Energii Myślowej
 HualiIce:
   Name: Zachwycający Letni Lód
+FairySupportDayaojing:
+  Name: Wspólność Daiyousei
+FairySupportLily:
+  Description: "|Na Początku Tury|: Zyskaj {TurnMana}.\n|Gdy Wygnana|: Zyskaj {ExileMana}."
+  Name: Ogłoszenie Lily White
+FairySupportStar:
+  Description: "|Na Początku Tury|: Nałóż {Value1} |Tymczasowej Utraty Mocy| na wszystkich\
+    \ wrogów.\n|Gdy Wygnana|: Nałóż {Value2:plural one='% |Namiar|' few='% |Namiary|'\
+    \ many='% |Namiarów|} na losowego wroga."
+  Name: Wykrywanie Star
+FairySupportClownpiece:
+  Name: Obłęd Clownpiece
+PrismriverWhite:
+  Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\nDodaj {Light:plural one='% |Załamane Światło|' few='% |Załamane\
+    \ Światła|' many='% |Załamanych Świateł|'} do stosu zrzutek."
+  ExtraDescription1: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light:plural one='% |Załamane Światło|' few='%\
+    \ |Załamane Światła|' many='% |Załamanych Świateł|'} do stosu zrzutek.\n|d:Debiut:\
+    \ Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">.|"
+  Name: Solówka Trąbki
+  UpgradedDescription: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light:plural one='% |Załamane Światło|' few='%\
+    \ |Załamane Światła|' many='% |Załamanych Świateł|'} do stosu zrzutek.\n|Debiut|:\
+    \ Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
+YuetuYuyi:
+  Name: Zgubione Szaty
+  Description: Zyskaj |Nieskazitelny Jedwab| na {Value1:plural one='% turę' few='%
+    tury' many='% tur'}.
+GainStar:
+  Name: Spadająca Gwiazda
+FairyTrick:
+  Name: Psota Wróżek
+BrainOverclock:
+  Name: Burza Mózgu
+  Description: "Zyskaj {Mana}.\n|Naddobór| {Value1}."
+GainSunny:
+  Name: Świt
+FairySupportSunny:
+  Description: "|Gdy w Dłoni|: Zwiększ obrażenia kart ataku o {Value1}.\n|Gdy Wygnana|:\
+    \ Zyskaj {Value2} |Mocy|."
+  Name: Refrakcja Sunny
+FairySupportLuna:
+  Name: Cisza Luny
+  Description: "|Na Początku Tury|: Zyskaj {Value1} |Bariery|.\n|Gdy Wygnana|: Zyskaj\
+    \ {Value2:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}."
+FairySupportLarva:
+  Name: Skrzydła Larvy
+  Description: "|Na Początku Tury|: Zyskaj {Value1} |Bloku|.\n|Gdy Wygnana|: Zyskaj\
+    \ {Value2} |Bloku|."
+FairySupportMaid:
+  Name: Sprzątanie Wróżki Pokojówki
+PrismriverBlack:
+  Name: Solówka Skrzypiec
