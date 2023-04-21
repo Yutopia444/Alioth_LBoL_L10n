@@ -116,9 +116,9 @@ ReimuWeiyan:
 DanmuDuijue:
   Name: Pojedynek na Karty Zaklęć
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Odbicia|.\n|Moc| ma wpływ\
-    \ na tę kartę."
+    \ na {SelfName:d}."
   UpgradedDescription: "Zyskaj {Shield} |Bariery|.\nZyskaj {Value1} |Odbicia|.\n|Moc|\
-    \ ma wpływ na tę kartę."
+    \ ma wpływ na {SelfName:d}."
 ReimuLucky:
   Description: "Zyskaj {Value1:plural one='% |Amulet|' few='% |Amulety|' many='% |Amuletów|'}.\n\
     Zyskaj {Value2} <sprite=\"Point\" name=\"Gold\">."
@@ -233,8 +233,8 @@ BoliPhantom:
     Perswazji| do ręki |tymczasowo kosztującą| {Mana}.
 KuosanJiejie:
   Name: Rozszerzając Granicę
-  Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\">:| Zyskaj {Block}\
-    \ |Bloku|.\n|Za każde wydane <sprite=\"ManaSprite\" name=\"R\">:| Zadaj {Damage:plural\
+  Description: "|Za Każde Wydane <sprite=\"ManaSprite\" name=\"W\">|: Zyskaj {Block}\
+    \ |Bloku|.\n|Za Każde Wydane <sprite=\"ManaSprite\" name=\"R\">|: Zadaj {Damage:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
 QiqingYishi:
   Name: Słoneczna Modlitwa
@@ -301,9 +301,9 @@ RedLaser:
 Potion:
   Name: Niestabilna Mikstura
   FlavorText: UWAGA! Mikstury mogą być wybuchowe!
-  Description: "|Gdy ta karta wejdzie do dłoni:| Zyskaj {Mana}, zadaj {Damage:plural\
+  Description: "|Gdy Self Name} Wejdzie do Ręki|: Zyskaj {Mana}, zadaj {Damage:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} losowemu wrogowi i |Wygnaj|\
-    \ tę kartę."
+    \ {SelfName:d}."
 SatelliteIllusion:
   Name: Iluzja Satelity
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -360,8 +360,8 @@ MarisaSteal:
 RainbowStar:
   Name: Wybuch Tęczowej Gwiazdy
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Za każdą wydaną <sprite=\"ManaSprite\" name=\"1\">:| Ta karta zadaje o {Value1}\
-    \ więcej obrażeń.\n|Za każdą wydaną <sprite=\"ManaSprite\" name=\"P\">:| Ta karta\
+    |Za Każde Wydane <sprite=\"ManaSprite\" name=\"1\">|: Ta karta zadaje o {Value1}\
+    \ więcej obrażeń.\n|Za Każde Wydane <sprite=\"ManaSprite\" name=\"P\">|: Ta karta\
     \ zadaje o {Value2} więcej obrażeń."
 ScryBlock:
   Name: Premedytacja
@@ -1002,7 +1002,8 @@ LeiguAttack:
   Name: Basy Taiko
 MeihongAttack:
   Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
+    \ życia.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value2:plural one='% raz' few='% razy' many='% razy'}."
   Name: Latający Feniks
 WaterPrincess:
   Name: Księżniczka Ondyna
@@ -1080,8 +1081,8 @@ BlackHorseZui:
     \ wszystkim wrogom {Value2:plural one='% raz' other='% razy'}."
 BailianBlack:
   Name: Otworzyć się na Mrok
-  Description: "Gdy zostanie zagrana karta poza kartami ataku bądź zdolności, zostaje\
-    \ ona |Wygnana|.\nOne kosztują {Mana} na czas walki."
+  Description: "Wszystkie karty poza kartami ataku bądź zdolności zyskują |Wygnanie|.\
+    \ One kosztują {Mana} na czas walki."
 YinglangHowl:
   Name: Ryk Pełni Księżyca
   Description: 'Nałóż {Value1} |Tymczasowej Utraty Mocy| oraz nałóż {Value2} |Wrażliwości|
@@ -1109,8 +1110,10 @@ YuyukoSing:
   Name: Trzepot Skrzydeł Motyla
 MorphBird:
   Description: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.
+  Name: Forma Ptaków
 MorphDog:
   Description: Zyskaj {Value1} |Mocy|.
+  Name: Forma Drapieżników
 HuiyeMana:
   Description: "Na początku tury {PlayerName:g} zyskaj {Value1:plural one='% losową\
     \ manę' few='% losowe many' many='% losowych man'}.\nZwiększ ten efekt o {Value1}\
@@ -1118,7 +1121,7 @@ HuiyeMana:
   Name: Bajka Zbieracza Bambusu
   FlavorText: Ta rymowanka opowiada bajki o lśniących grzesznikach.
 ReadBook:
-  Description: "Zyskaj {Block} |Bloku|.\n|Debut:| Wybierz jedną z {Value1} niebieskich\
+  Description: "Zyskaj {Block} |Bloku|.\n|Debut|: Wybierz jedną z {Value1} niebieskich\
     \ bądź białych kart aby dodać do ręki."
   Name: Badania nad Youkai
   ExtraDescription1: "Zyskaj {Block} |Bloku|.\n|d:Debut: Wybierz jedną z {Value1}\
@@ -1148,7 +1151,7 @@ KokoroDance:
 Panzi:
   Name: Talerz Wody
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Przy doborze:| Dodaj |kopię| tej karty do ręki."
+    |Gdy {SelfName} Wejdzie do Ręki|: Dodaj |Kopię| tej karty do ręki."
 LigeluCard:
   Name: Świetlista Noc
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} <sprite=\"Point\" name=\"\
@@ -1178,12 +1181,13 @@ MeihongPower:
   FlavorText: Jest przeklętą nieśmiertelniczką, prowadząc życie w ascezie.
 QianGui:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Debiut:| Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}."
+    |Debiut|: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}."
   ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'}.\n|d: Debut: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
     \ many='% |Uników|'}.|"
 MorphFrog:
   Description: Zyskaj {Value1} maksymalnego życia.
+  Name: Forma Płazów
 HuiyinAttack:
   Name: Mito no Mitsukuni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1223,9 +1227,10 @@ ChengDefense:
     \ zyskaj {Block} |Bloku|."
 MogongAttack:
   Name: Front Haniwa
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Gdy w dłoni:| Gdy zagrana zostanie inna karta ataku, obrażenia tej karty stają\
-    \ się takie same jak bazowe obrażenia tamtej karty."
+  Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\n|Gdy w dłoni|: Gdy zagrana zostanie inna karta,\
+    \ obrażenia i |Blok| {SelfName:g} wzrastają do tej samej wartości jak bazowe obrażenia\
+    \ i |Blok| tamtej karty."
 ZhenmiaowanAttack:
   Name: Potomkini Kobito
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1285,10 +1290,12 @@ HuashanDefense:
 PoorAttack:
   Name: Podupaść w Biedę
   Description: "Strać {Value1} <sprite=\"Point\" name=\"Gold\">.\nZadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} {Value2:plural one='%\
+    \ raz' other='% razy'}."
 SnowGirlCard:
   Name: Wizyta Yuki-Onny
-  Description: Nałóż {Value1} |Odmrożenia|.
+  Description: Nałóż |Chłód| losowemu wrogowi {Value1:plural one='% raz' other='%
+    razy'}.
 AliceAttack:
   Name: Promień Diabelskiego Światła
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1690,7 +1697,7 @@ SkyWater:
 DanmuJade:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nDodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='%\
-    \ |Tęcz|'} do ręki.\n|Za każde wydane {Mana}:| Zyskaj {Value2} |Mocy| i |Uduchowienia|."
+    \ |Tęcz|'} do ręki.\n|Za każde wydane {Mana}|: Zyskaj {Value2} |Mocy| i |Uduchowienia|."
   Name: Dupion Tęczowego Danmaku
 JingyeGraze:
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
@@ -1737,7 +1744,7 @@ SakuyaDetective:
     \ one='skumulowane' few='skumulowane' many='skumulowanych'}.)"
 ReimuHeavyAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na tę kartę."
+    |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na {SelfName:d}."
   Name: Pięść Hakurei
 BrokenTimeline:
   Name: Zniszczona Linia Czasowa
@@ -2022,3 +2029,37 @@ FairySupportMaid:
   Name: Sprzątanie Wróżki Pokojówki
 PrismriverBlack:
   Name: Solówka Skrzypiec
+  ExtraDescription1: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light:plural one='% |Cichą Noc|' few='% |Ciche\
+    \ Noce|' many='% |Cichych Nocy|'} do stosu zrzutek.\n|d:Debiut: Zyskaj {Value2}\
+    \ <sprite=\"Point\" name=\"Power\">.|"
+  Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\nDodaj {Light:plural one='% |Cichą Noc|' few='% |Ciche Noce|'\
+    \ many='% |Cichych Nocy|'} do stosu zrzutek."
+  UpgradedDescription: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light:plural one='% |Cichą Noc|' few='% |Ciche\
+    \ Noce|' many='% |Cichych Nocy|'} do stosu zrzutek.\n|Debiut|: Zyskaj {Value2}\
+    \ <sprite=\"Point\" name=\"Power\">."
+PrismriverRed:
+  Name: Solówka Keyboardu
+  Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\nDodaj {Light} |Olśniewających Gwiazd| do stosu zrzutek."
+  UpgradedDescription: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light} |Olśniewających Gwiazd| do stosu zrzutek.\n\
+    |Debiut|: Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
+  ExtraDescription1: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nDodaj {Light} |Olśniewających Gwiazd| do stosu zrzutek.\n\
+    |d:Debiut: Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">.|"
+YouxiangMoon:
+  Name: Piękności Natury
+DizangLove:
+  Description: "Gdy {PlayerName} zagra pospolitą kartą, zyskaj {Value1} |Tymczasowej\
+    \ Mocy|.\n"
+  Name: Natychmiastowe Bodhi
+LimaoSchool:
+  Name: Uczelnia Zmiennokształtnych
+  Description: Wybierz {Value2} z {Value1} losowych |Zwierzęcych Przemian|. Zyskaj
+    ich efekty.
+MorphMan:
+  Name: Forma Człowieka
+  Description: Zyskaj {Value1} <sprite="Point" name="Power">.
