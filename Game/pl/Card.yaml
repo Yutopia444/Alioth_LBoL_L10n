@@ -498,12 +498,12 @@ RedGiantStar:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Załaduj {Value2}|: Dodaj |Płomień| do ręki."
 StarlightTaifengSummoner:
-  Description: "Dodaj |Gwiezdny Tajfun| do stosu doboru.\n|Za każde wydane {Mana}|:\
-    \ Dodana karta zadaje obrażenia dodatkowy raz.\n|Za każde wydane <sprite=\"ManaSprite\"\
+  Description: "Dodaj |Gwiezdny Tajfun| do stosu doboru.\n|Za Każde Wydane {Mana}|:\
+    \ Dodana karta zadaje obrażenia dodatkowy raz.\n|Za Każde Wydane <sprite=\"ManaSprite\"\
     \ name=\"R\">|: Zwiększ obrażenia dodanej karty o {Value1}."
   Name: Konwergencja Gwiazd
-  UpgradedDescription: "Dodaj |Gwiezdny Tajfun+| do stosu doboru.\n|Za każde wydane\
-    \ {Mana}|: Dodana karta zadaje obrażenia dodatkowy raz.\n|Za każde wydane <sprite=\"\
+  UpgradedDescription: "Dodaj |Gwiezdny Tajfun+| do stosu doboru.\n|Za Każde Wydane\
+    \ {Mana}|: Dodana karta zadaje obrażenia dodatkowy raz.\n|Za Każde Wydane <sprite=\"\
     ManaSprite\" name=\"R\">|: Zwiększ obrażenia dodanej karty o {Value1}."
 FindCollection:
   Name: Zdalne Wsparcie
@@ -518,7 +518,8 @@ EventHorizon:
 OpenUniverse:
   Name: Otwarty Wszechświat
   Description: "Usuń kartę w stosie doboru z gry na czas walki.\nDodaj dwie |kopie|\
-    \ tej karty do ręki |tymczasowo kosztujące| {Mana} i mające |Wygnanie|."
+    \ tej karty do ręki |tymczasowo kosztujące| {Mana} i mające |Wygnanie|.\nNie możesz\
+    \ wybrać |Kopii| dla tego efektu."
 SolarSystem:
   Name: Słoneczne Tellurium
   Description: Na początku tury {PlayerName:g} zyskaj {Value1} |Ładunku|.
@@ -591,8 +592,8 @@ JungleMaster:
     \ one='% punkt' few='% punkty' many='% punktów'} |Bariery|."
 ManaJungle:
   Name: Leśna Przygoda
-  Description: "|Gdy dobrana:| Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|'\
-    \ many='% |Tęcz|'} do ręki i |Wygnaj| tę kartę."
+  Description: "|Gdy Dobrana|: Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|'\
+    \ many='% |Tęcz|'} do ręki i |Wygnaj| {SelfName:d}."
   FlavorText: '"Eureka!"'
 TimeAuraAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -623,7 +624,7 @@ GainKnife:
   Name: Koło Sztyletów
 SakuyaAttackX:
   Name: Srebrny Napad
-  Description: "|Za każde wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
+  Description: "|Za Każde Wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
     \ obrażenia' many='% obrażeń'}."
 SakuyaAttackW:
   Name: Zmylenie
@@ -709,8 +710,8 @@ SakuyaDefenseRetain:
     \ tury {PlayerName:g}."
 BladePower:
   Name: Olśniewający Pęd
-  Description: "Zyskaj {Value1} |Mocy|.\n|Przy doborze:| Jeżeli jest to jedyna karta\
-    \ w dłoni, ta karta |tymczasowo kosztuje| {Mana}."
+  Description: "Zyskaj {Value1} |Mocy|.\n|Przy Doborze|: Jeżeli {SelfName} jest jedyną\
+    \ kartą w dłoni, ta karta |Tymczasowo Kosztuje| {Mana}."
 SakuyaDraw:
   Name: Szczytowa Perfekcja
   Description: "|Gdy zrzucona:| Dobierz {Value1:plural one='% kartę' few='% karty'\
@@ -729,8 +730,8 @@ SakuyaGraze:
 SakuyaClock:
   Name: Specjalny Zegarek Sakuyi
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Gdy wróg zostanie pokonany tą kartą, |Wygnaj| ją i zakończ turę {PlayerName:g}.\
-    \ Wtem, zacznij dodatkową turę."
+    Gdy wróg zostanie pokonany {SelfName:i}, |Wygnaj| ją i zakończ turę. Wtem, zacznij\
+    \ dodatkową turę."
 DangerousMagician:
   Name: Niebezpieczna Iluzjonistka
   Description: "Gdy |Sztylet do Rzucania| zostanie użyty, zyskaj {Value1:plural one='%\
@@ -746,10 +747,10 @@ SakuyaDio:
   Name: Teraz Kolej na Ciebie
 PerfectServant:
   Name: Sługa Idealny
-  Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"W\">:| Na początku następnej tury {PlayerName:g} wszystkie karty w dłoni\
-    \ |tymczasowo kosztują| o <sprite=\"ManaSprite\" name=\"1\"> mniej.\n|Za każde\
-    \ wydane <sprite=\"ManaSprite\" name=\"U\">:| Na początku następnej tury {PlayerName:g}\
+  Description: "|Za Każde Wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\">|: Na początku następnej tury {PlayerName:g} wszystkie karty w dłoni\
+    \ |tymczasowo kosztują| o <sprite=\"ManaSprite\" name=\"1\"> mniej.\n|Za Każde\
+    \ Wydane <sprite=\"ManaSprite\" name=\"U\">|: Na początku następnej tury {PlayerName:g}\
     \ dobierz o {Value1:plural one='% kartę' few='% karty' many='% kart'} więcej i\
     \ zyskaj {Mana}."
 SakuyaKiller:
@@ -903,8 +904,8 @@ CirnoBlockU:
   Description: Zyskaj {Block} |Bloku|.
 IceLaser:
   Name: Zamrażający Strzał
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Nałóż |Chłód| przy trafieniu."
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ i nałóż |Chłód|."
 SummerFlower:
   Name: Hodowanie Kwiatów
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
