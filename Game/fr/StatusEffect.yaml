@@ -609,13 +609,10 @@ SeeFengshuiSe:
     \ est envoyée à la pile de défausse de cette façon, gagnez du |Bouclier|."
 YonglinCardSe:
   Name: Le Sage Reclus
-  Brief: Lorsque {PlayerName} joue la première carte à chaque tour, ajoutez des copies
-    de cette carte à la main. Elles |coûtent temporairement| {Mana} et ont |Exil|
-    et |Éthéré|.
-  Description: Lorsque {PlayerName} joue la première carte à chaque tour, ajoutez
-    {Level:plural one='une copie' other='% copies'} de cette carte à la main. {Level:plural
-    one='Elle |coûte temporairement|' other='Elles |coûtent temporairement|'} {Mana}
-    et {Level:plural one='a' other='ont'} |Exil| et |Éthéré|.
+  Brief: À la fin du tour de {PlayerName}, mélangez plusieurs |Fausses Lunes| dans
+    la pioche.
+  Description: À la fin du tour de {PlayerName}, {Level} |Fausse{Level:plural one='
+    Lune| est mélangée' other='s Lunes| sont mélangées'} dans la pioche.
 UseCardToLoseGame:
   Name: Espérance de Vie Courte
   Description: Perdez la partie après avoir joué {Count:plural one='% carte' other='%
@@ -699,10 +696,10 @@ TodayYesterdaySe:
     one='' other='s'}|.
 SkyWaterSe:
   Name: Miracle de l'Eau Céleste
-  Description: Lorsque {PlayerName} finit son tour, gagnez {Level} |Bouclier{Level:plural
-    one='' other='s'}| pour chaque carte défaussée de cette manière.
-  Brief: Lorsque {PlayerName} finit son tour, gagnez du |Bouclier| pour chaque carte
-    défaussée.
+  Description: Lorsque {PlayerName} finit son tour, gagnez {Level} |Coopération{Level:plural
+    one='' other='s'}| pour chaque carte défaussée.
+  Brief: Lorsque {PlayerName} finit son tour, gagnez de la |Coopération| pour chaque
+    carte défaussée.
 Poison:
   Brief: Au début du tour de {OwnerName}, il perd de la vie, puis perd du |Poison|.
   Name: Poison
@@ -734,8 +731,7 @@ Cold:
     \ est supprimé.\nPerd {StackMultiply} fois ce montant de vie ({StackDamage} points)\
     \ lorsqu'à nouveau affecté par le |Froid|."
   Brief: "{OwnerName} perd {BaseDamage} points de vie au début du tour, le |Froid|\
-    \ est supprimé.\nPerd le double de ce montant de vie ({StackDamage} points) lorsqu'à\
-    \ nouveau affecté par le |Froid|."
+    \ est supprimé.\nPerd plus de points de vie lorsqu'à nouveau affecté par le |Froid|."
 StopTimeSe:
   Name: Temps Gelé
   Description: À la fin du tour de {PlayerName}, gardez {Level:plural one='% mana
@@ -939,10 +935,10 @@ ColdUp:
   Brief: Augmente plusieurs fois les dégâts superposés du |Froid|.
   Description: Augmente de {Level} fois les dégâts superposés du |Froid|.
 FrostArmor:
-  Description: "Lorsque {OwnerName} finit son tour, gagnez {Level} |Bouclier{Level:plural\
+  Description: "Lorsque {OwnerName} débute son tour, gagnez {Level} |Bouclier{Level:plural\
     \ one='' other='s'}|, et réduisez cet effet d'un niveau.\nLorsque vous subissez\
     \ des dégâts d'une attaque, l'effet est réduit d'un niveau."
-  Brief: "Lorsque {OwnerName} finit son tour, gagnez du |Bouclier|, et réduisez cet\
+  Brief: "Lorsque {OwnerName} débute son tour, gagnez du |Bouclier|, et réduisez cet\
     \ effet d'un niveau.\nLorsque vous subissez des dégâts d'une attaque, l'effet\
     \ est réduit d'un niveau."
   Name: Armure de Glace
@@ -972,7 +968,7 @@ AccuracyModule:
   Description: Les attaques de {OwnerName} ont toutes |Précis|.
 EnemyTuanzi:
   Name: Boulette Délicieuse
-  Description: Au début du tour de {OwnerName}, restaure {Level} point{Level:plural
+  Description: À la fin du tour de {OwnerName}, restaure {Level} point{Level:plural
     one='' other='s'} de vie.
 SplitPotionSe:
   Name: Stimulateur
@@ -1029,3 +1025,11 @@ EnemyLarva:
 EnemyLily:
   Name: Primevère de Lily White
   Description: Toutes les actions de {OwnerName} sont améliorées.
+EnemyMaid:
+  Description: À la fin du tour de {OwnerName}, infligez {Level} dégâts à {PlayerName}.
+  Name: Petit Nettoyage de Kasumi
+AssistSe:
+  Name: Coopération
+  Description: Après la prochaine attaque de {PlayerName}, inflige {Level} dégât{Level:plural
+    one='' other='s'} à la cible.
+  Brief: Après la prochaine attaque de {PlayerName}, inflige des dégâts à la cible.
