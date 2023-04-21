@@ -727,9 +727,9 @@ MeihongPowerSe:
     \ des points de vie."
 Cold:
   Name: Froid
-  Description: "{OwnerName} perd {BaseDamage} points de vie au début du tour, le |Froid|\
-    \ est supprimé.\nPerd {StackMultiply} fois ce montant de vie ({StackDamage} points)\
-    \ lorsqu'à nouveau affecté par le |Froid|."
+  Description: "{OwnerName} perd {BaseDamage} points de vie au début de son tour,\
+    \ et le |Froid| est supprimé.\nPerd {StackMultiply} fois ce montant de vie ({StackDamage}\
+    \ points) lorsqu'à nouveau affecté par le |Froid|."
   Brief: "{OwnerName} perd {BaseDamage} points de vie au début du tour, le |Froid|\
     \ est supprimé.\nPerd plus de points de vie lorsqu'à nouveau affecté par le |Froid|."
 StopTimeSe:
@@ -919,12 +919,11 @@ ExtraBlizzard:
   Brief: Au début du prochain tour que {OwnerName} effectue, infligez des dégâts |Précis|
     et appliquez |Froid| à tous les ennemis.
 IceMatrixSe:
-  Description: Lorsque vous êtes attaqué par un ennemi, {Level:plural one='% couche
-    supplémentaire d'|Armure de Glace| sera perdue' other='% couches supplémentaires
-    d'|Armure de Glace| seront perdues'} et |Froid| sera appliqué à l'ennemi {Level}
-    fois.
-  Brief: Lorsque vous êtes attaqué par un ennemi, des couches supplémentaires d'|Armure
-    de Glace| seront perdues et |Froid| sera appliqué à l'ennemi autant de fois.
+  Description: Après avoir été attaqué par un ennemi, {Level:plural one='% |Armure
+    de Glace| est perdue' other='% |Armures de Glace| sont perdues'} et |Froid| est
+    appliqué à l'ennemi {Level} fois.
+  Brief: Après avoir été attaqué par un ennemi, des |Armures de Glace| sont perdues
+    et |Froid| est appliqué à l'ennemi un certain nombre de fois.
   Name: Matrice Congelée
 ColdPotionSe:
   Name: Liquide de Refroidissement
@@ -938,9 +937,10 @@ FrostArmor:
   Description: "Lorsque {OwnerName} débute son tour, gagnez {Level} |Bouclier{Level:plural\
     \ one='' other='s'}|, et réduisez cet effet d'un niveau.\nLorsque vous subissez\
     \ des dégâts d'une attaque, l'effet est réduit d'un niveau."
-  Brief: "Lorsque {OwnerName} débute son tour, gagnez du |Bouclier|, et réduisez cet\
-    \ effet d'un niveau.\nLorsque vous subissez des dégâts d'une attaque, l'effet\
-    \ est réduit d'un niveau."
+  Brief: "Gagnez la même quantité de |Bouclier| immédiatement lorsque de l'|Armure\
+    \ de glace| est acquise.\nLorsque {OwnerName} débute son tour, gagnez autant de\
+    \ |Boucliers|, et réduisez cet effet d'un niveau.\nLorsque vous subissez des dégâts\
+    \ d'une attaque, l'effet est réduit d'un niveau."
   Name: Armure de Glace
 Immune:
   Name: Barrière de Glace
@@ -1033,3 +1033,9 @@ AssistSe:
   Description: Après la prochaine attaque de {PlayerName}, inflige {Level} dégât{Level:plural
     one='' other='s'} à la cible.
   Brief: Après la prochaine attaque de {PlayerName}, inflige des dégâts à la cible.
+FrozenThroneSe:
+  Name: Trône de Glace
+  Description: À la fin du tour de {PlayerName}, {Level} |Crista{Level:plural one='l
+    de Glace| est mélangé' other='ux de Glace| sont mélangés'} dans la pioche.
+  Brief: À la fin du tour de {PlayerName}, mélangez plusieurs |Cristaux de Glace|
+    dans la pioche.
