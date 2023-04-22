@@ -983,13 +983,13 @@ HinaAttack:
   Name: Koło Nie-fortuny
 GrimoireStudy:
   Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\n|Za każde wydane <sprite=\"ManaSprite\" name=\"1\">:| Ten efekt trwa\
-    \ dodatkową turę.\nNa końcu tury {PlayerName:g} dodaj |Tęczę| do ręki."
+    \ życia.\n|Za Każde Wydane <sprite=\"ManaSprite\" name=\"1\">|: Zyskaj następujący\
+    \ efekt na dodatkową turę: Na końcu tury {PlayerName:g} dodaj |Tęczę| do ręki."
   Name: Badanie Księgi Zaklęć
   UpgradedDescription: "Strać {Value1:plural one='% punkt' few='% punkty' many='%\
-    \ punktów'} życia.\nDodaj |Tęczę| do ręki.\n|Za każde wydane <sprite=\"ManaSprite\"\
-    \ name=\"1\">:| Ten efekt trwa dodatkową turę.\nNa końcu tury {PlayerName:g} dodaj\
-    \ |Tęczę| do ręki."
+    \ punktów'} życia.\nDodaj |Tęczę| do ręki.\n|Za Każde Wydane <sprite=\"ManaSprite\"\
+    \ name=\"1\">|: Zyskaj następujący efekt na dodatkową turę: Na końcu tury {PlayerName:g}\
+    \ dodaj |Tęczę| do ręki."
   FlavorText: '"Daj mi spojrzeć na słabość tego stwora..."'
 TrueMoon:
   Description: "Zyskaj {Shield} |Bariery|.\nZyskaj {Value1} |Mocy|.\nJak zostanie\
@@ -1054,8 +1054,8 @@ HatateDiscard:
   UpgradedDescription: "Zrzuć między {Value1} a {Value2} kartami.\nZyskaj {Mana}."
 DoremyDuplicate:
   Name: Zatracona w Raju
-  Description: Wybierz kartę w dłoni i dodaj {Value1:plural one='% |kopię|' other='%
-    |kopie|'} do ręki.
+  Description: "Wybierz kartę w dłoni i dodaj {Value1:plural one='% |kopię|' other='%\
+    \ |kopie|'} do ręki.\nNie możesz wybrać |Kopii| dla tego efektu."
 GuijiZaoxingYuan:
   Name: Rzeźba - Koło
   Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
@@ -1098,7 +1098,7 @@ HuaBlock:
 MeilingBlock:
   Name: Karmazynowa Energia
   Description: "Zyskaj {Block} |Bloku| oraz {Shield} |Bariery|.\n|Moc| ma wpływ na\
-    \ tę kartę."
+    \ {SelfName:d}."
   FlavorText: Przygotuj się do bycia przywalonym zanim będziesz groził innym.
 YongyiAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1869,9 +1869,9 @@ FrostGarden:
     \ ręki."
 GainMaid:
   Name: Infiltracja Rezydencji
-  Description: Dodaj |Sprzątanie Wróżki Pokojówki| do ręki.
-  UpgradedDescription: "Dodaj |Sprzątanie Wróżki Pokojówki| do ręki.\nWszystkie |Sprzątania\
-    \ Wróżki Pokojówki| w dłoni aktywują swój efekt zwiększania obrażeń."
+  Description: Dodaj |Sprzątanie Kasumi| do ręki.
+  UpgradedDescription: "Dodaj |Sprzątanie Kasumi| do ręki.\nWszystkie |Sprzątania\
+    \ Kasumi| w dłoni aktywują swój efekt zwiększania obrażeń."
 RemoveOverdraft:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Usuń |Naddobór| {PlayerName:g}."
@@ -1933,7 +1933,7 @@ CirnoInForest:
 IceMatrix:
   Name: Zamrożona Macierz
   Description: "Gdy {PlayerName} otrzymuje obrażenia od ataku, traci 1 dodatkowy |Lodowy\
-    \ Pancerz| aby nałóżyć |Chłód| na atakującego.\nZyaskaj {Value1} |Lodowego Pancerza|."
+    \ Pancerz| aby nałożyć |Chłód| na atakującego.\nZyaskaj {Value1} |Lodowego Pancerza|."
 MoreFriends:
   Name: Dusza Towarzyska
   Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% losową kartę'
@@ -1970,12 +1970,40 @@ GainLuna:
   Name: Światło Księżyca
 WhiteWorld:
   Name: Czysto Biały Świat
+  Description: "Na końcu tury {PlayerName:g} zyskaj {Value1} |Mocy| i |Uduchowienia|.\n\
+    |Zamrożenie Many| {Mana}."
 FairyTeam:
   Name: Wielka Wojna Wróżek
+  Description: "Zwróć po jednej z każdej |Wygnanej| karty |Wsparcia Wróżek| o różnych\
+    \ imieniach do ręki. ({TeamCount:plural few='Są %' other='Jest %'}.)\n|Naddobór|\
+    \ {Value1}."
+  NonbattleDescription: "Zwróć po jednej z każdej |Wygnanej| karty |Wsparcia Wróżek|\
+    \ o różnych imieniach do ręki.\n|Naddobór| {Value1}."
 MinengZhuru:
   Name: Zastrzyk Energii Myślowej
+  Description: "Bierne efekty kart |Wsparcia Wróżek| aktywują się {Value1:plural one='%\
+    \ dodatkowy raz' few='% dodatkowe razy' many='% dodatkowych razy'}.\n(Są to \"\
+    Gdy w Dłoni:\" w \"Na Początku Tury:\".)"
 HualiIce:
   Name: Zachwycający Letni Lód
+  Description: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural one='%\
+    \ kartę' few='% karty' many='% kart'} w tej turze.\n({Countdown:plural one='Została\
+    \ % karta' few='Zostały % karty' many='Zostało % kart}.)\nZadaj {Damage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
+    \ |Chłód|.\n"
+  UpgradedDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\n({Countdown:plural\
+    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}.)\nZadaj {Damage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
+    \ |Chłód| {Value2:plural one='% raz' other='% razy'}."
+  NonbattleDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\nZadaj {Damage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
+    \ |Chłód|.\n"
+  UpgradedNonbattleDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\nZadaj {Damage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
+    \ |Chłód| {Value2:plural one='% raz' other='% razy'}."
 FairySupportDayaojing:
   Name: Wspólność Daiyousei
 FairySupportLily:
@@ -2007,6 +2035,8 @@ YuetuYuyi:
     tury' many='% tur'}.
 GainStar:
   Name: Spadająca Gwiazda
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nDodaj |Wykrywanie Star| do ręki."
 FairyTrick:
   Name: Psota Wróżek
 BrainOverclock:
@@ -2064,3 +2094,7 @@ LimaoSchool:
 MorphMan:
   Name: Forma Człowieka
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
+BenwoCard:
+  Name: ''
+FrozenThrone:
+  FlavorText: Now, we are one!
