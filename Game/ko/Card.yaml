@@ -726,7 +726,7 @@ BrainOverclock:
   Description: "{Mana}를 얻습니다.\n|가불| {Value1}."
 IceMatrix:
   Name: 냉동 매트릭스
-  Description: "공격을 받을 경우 |얼음 갑옷|을 1 더 감소시키고 적에게 |빙결|을 가합니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
+  Description: "공격받을 시 |얼음 갑옷|을 한 겹 더 감소시키고 적에게 |빙결|을 가합니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
 GainLuna:
   Name: 쏟아지는 달빛
   Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|루나의 고요|를 한 장 얻습니다."
@@ -744,7 +744,9 @@ CirnoEcho:
   Description: 버린 카드 더미에서 {Value1}장을 골라 손패로 되돌리고, 해당 카드에 |메아리|를 부여합니다.
 FairyTeam:
   Name: 요정대전쟁
-  NonbattleDescription: '|소멸|된 카드 더미에 있는 |요정의 지원|의 카드를 1종 1패씩 손으로 되돌립니다.'
+  NonbattleDescription: '|소멸|된 카드 더미에 있는 |요정의 지원|의 카드를 1종 1패씩 손으로 되돌립니다.
+
+    |가불| {Value1}.'
   Description: "|소멸|된 카드 더미에 있는 |요정의 지원|의 카드를 1종 1패씩 손으로 되돌립니다. (현재 {TeamCount}종)\n\
     |가불| {Value1}."
 HualiIce:
@@ -1368,7 +1370,7 @@ ColdSnap:
   Name: 급속 냉각
 DiamondBlizzard:
   Name: 다이아몬드 블리자드
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|선택| 모든 적에게 |빙결|을 가합니다; 혹은 |방어|를 {Block} 얻습니다."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|선택|: 모든 적에게 |빙결|을 가합니다; 혹은 |방어|를 {Block} 얻습니다."
 DiamondBlizzardCold:
   Description: 피해와 함께 |빙결|을 가합니다.
   Name: '다이아몬드 블리자드: 한랭'
@@ -1460,3 +1462,22 @@ ArtificialJewellery:
   Description: 무작위 유색 마나를 얻습니다.
   UpgradedDescription: '{Mana}를 얻습니다.'
   Name: 인공 보석
+CirnoFire:
+  Name: 불타는 얼음
+  Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 코스트가 {Mana} 감소합니다."
+FrozenThrone:
+  Name: 얼어붙은 왕좌
+  Description: 턴 종료 시 뽑을 카드 더미에 |얼음 조각|을 {Value1}장 섞어넣습니다.
+  FlavorText: Now, we are one!
+ChooseFairy:
+  Name: 약속의 호수
+  Description: 모든 일반 |요정의 지원| 카드 중 {Value1}장을 선택해 손으로 가져옵니다.
+PlayWithWaste:
+  Name: 폐품 탐험
+  Description: "무작위 일반 |도구 카드| {Value1}장 중 한 장을 선택해 얻습니다.\n해당 카드는 |복사본|으로 표시되며, 단\
+    \ 한 번 사용할 수 있습니다."
+Xiguadao:
+  Name: 수박 검
+  Description: "|지불한 {Mana}마다|: 피해를 {Damage} 줍니다.\n공격 횟수가 남은 상태에서 대상이 사라질 경우 무작위 적에게\
+    \ 공격을 이어나갑니다."
+  FlavorText: 초⑨무신패참!
