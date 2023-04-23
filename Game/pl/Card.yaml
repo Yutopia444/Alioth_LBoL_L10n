@@ -1363,9 +1363,14 @@ AttackWithEveryColor:
     \ obrażenie' few='% obrażenia' many='% obrażeń'}."
   Name: Tęczowy Atak
 JunkoNightmare:
-  Description: "|d:Nie jesteśmy pewni, czy zrobimy dziesięć różnych trójkolorowych\
-    \ kart.\nProsimy czekać do następnej aktualizacji!|"
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\n|Wygnaj| całą\
+    \ dłoń. Dodaj tyle samo |Czystości| do ręki."
   Name: Drżący Koszmar
+  UpgradedDescription: "Wybierz do {Value1:plural one='% karty' few='% kart' many='%\
+    \ kart'} w dłoni.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\n|Wygnaj|\
+    \ wszystkie karty w dłoni poza wybranymi. Dodaj tyle samo |Czystości| do ręki."
 WManaCard:
   Description: Zyskaj {Mana}.
   Name: Światłość
@@ -1404,9 +1409,9 @@ ZoufangSnake:
     \ aby dodać do ręki. |Tymczasowo kosztuje| ona {Mana}."
 YachieDefend:
   Name: Szylkretowe Piekło
-  Description: Zapobiedz następn{Value1:plural one='y raz' other='e % razy'}, gdyby
-    {PlayerName} miałaby stracić życie. Jeżeli źródłem był wróg, zamiast tego oni
-    tracą życie.
+  Description: "Zapobiedz następn{Value1:plural one='y raz' other='e % razy'}, gdyby\
+    \ {PlayerName} miałaby stracić życie.\nJeżeli źródłem utraty życia był wróg, zamiast\
+    \ tego oni tracą życie."
 TodayYesterday:
   Name: Przeszłość i Przyszłość
   Description: "Gdy {PlayerName} |Uniknie| atak, zyskaj {Value1} |Mocy|.\nZyskaj {Value1:plural\
@@ -1480,8 +1485,8 @@ WanderingSoul:
   Name: Wędrująca Dusza
 RabbitFoot:
   Name: Szczęśliwa Stópka Królika
-  Description: '|Na końcu walki:| Jeżeli ta karta nie została |Wygnana|, zyskaj {Value1}
-    <sprite="Point" name="Gold">.'
+  Description: '|Na końcu walki|: Jeżeli {SelfName} nie została |Wygnana|, zyskaj
+    {Value1} <sprite="Point" name="Gold">.'
 ArtificialJewellery:
   UpgradedDescription: Zyskaj {Mana}.
   Name: Sztuczna Biżuteria
@@ -1503,24 +1508,24 @@ EmpCard:
   Name: Przyrząd EMP
 AyaNewsSakuyaSp:
   Name: Bunbunmaru - Edycja Sakuyi
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} |Uduchowienia|.'
+  Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
 AyaNewsCirnoSp:
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} |Uduchowienia|.'
+  Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
   Name: Bunbunmaru - Edycja Cirno
 AyaNewsKoishiSp:
   Name: Bunbunmaru - Edycja Koishi
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} |Uduchowienia|.'
+  Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
 Riguang:
-  Description: "|Gdy w dłoni:| Na końcu tury {PlayerName} otrzymuje {Value1:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
+  Description: "|Na Końcu Tury|: Otrzymaj {Value1:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}."
   Name: Załamane Światło
 BlackResidue:
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1:plural one=''%
-    punkt'' few=''% punkty'' many=''% punktów''} życia.'
+  Description: '|Na Końcu Tury|: Strać {Value1:plural one=''% punkt'' few=''% punkty''
+    many=''% punktów''} życia.'
   Name: Ciemny Osad
 Wushuai:
-  Description: "|Gdy dobrana:| Zyskaj {Value1:plural one='% |Namiar|' few='% |Namiary|'\
-    \ many='% |Namiarów|} i |Wygnaj| tę kartę."
+  Description: "|Przy Doborze|: Zyskaj {Value1:plural one='% |Namiar|' few='% |Namiary|'\
+    \ many='% |Namiarów|} i |Wygnaj| {SelfName:a}."
   Name: Lśniący Miecz
 Bribery:
   Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nMegumu ci zelży\
@@ -1559,10 +1564,13 @@ VampireShoot1:
   Name: Diabelski Strzał
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'} życia."
+  FlavorText: '"Mogę wyssać krew nawet jeśli to zablokujesz!"'
 VampireShoot2:
   Name: Diabelski Deszcz
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'} życia."
+  FlavorText: '"Mogę wyssać krew nawet jeśli to zablokujesz!" -- Cena zostania wampirem
+    jest zapalenie dziąseł.'
 GainTreasure:
   Name: Deszcz Pieniędzy
   Description: Zyskaj {Value1} <sprite="Point" name="Gold">.
@@ -1586,10 +1594,10 @@ HatateNews:
   Name: Wiadomości Kakashi Spirit
 AyaNewsReimuSp:
   Name: Bunbunmaru - Edycja Reimu
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} |Uduchowienia|.'
+  Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Edycja Marisy
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} |Uduchowienia|.'
+  Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
 Yueguang:
   Name: Cicha Noc
   Description: "|Gdy dobrana:| Strać {Value1:plural one='% losową manę' few='% losowe\
@@ -1600,7 +1608,7 @@ Xuanguang:
   Name: Blask
 SakuyaLock:
   Name: Oblężenie Czasowe
-  Description: "Wywołaj |Srebrne Oblężenie| raz.\n({PlayerName} otrzymuje {Value1:plural\
+  Description: "Wywołaj <color=#B7F0FF>Srebrne Oblężenie</color> raz.\n(Otrzymaj {Value1:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}.)"
   NonbattleDescription: Wywołaj |Srebrne Oblężenie|.
 Chunguang:
@@ -1608,8 +1616,8 @@ Chunguang:
   Description: '|Gdy dobrana:| |Oczyść| {Value1}.'
 Payment:
   Name: Transfer Funduszy
-  Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nKrólik Naciągacz\
-    \ natychmiastowo odejdzie."
+  Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#b7646b>Królik\
+    \ Naciągacz</color> odejdzie natychmiast."
 Nightmare:
   Name: Koszmar
   NonbattleDescription: Gdy całkowita ilość |Koszmarów| w dłoni, stosie doboru i w
@@ -2159,3 +2167,44 @@ KanakoWalk:
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\
     \ |Wygnaj| wszystkie dobrane karty statusu i |Nieszczęścia| dobrane w ten sposób.\n\
     Zakończ turę. |Zachowaj| całą dłoń i całą niewydaną manę."
+PrismriverAll:
+  Description: "Zyskaj {Mana}.\nZamień całą manę, którą {PlayerName} zdobyłaby w tej\
+    \ walce na <sprite=\"ManaSprite\" name=\"P\">.\nDodaj |Załamane Światło|, |Cicha\
+    \ Noc| oraz |Olśniewające Gwiazdy| do stosu zrzutek."
+  UpgradedDescription: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nZamień całą manę, którą {PlayerName} zdobyłaby w tej\
+    \ walce na <sprite=\"ManaSprite\" name=\"P\">.\nDodaj |Załamane Światło|, |Cicha\
+    \ Noc| oraz |Olśniewające Gwiazdy| do stosu zrzutek."
+  Name: Koncert Pryzmatu
+BailianFire:
+  UpgradedDescription: "Na początku tury {PlayerName:g} dodaj losową kartę umiejętności\
+    \ do ręki. |Tymczasowo Kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.\n\
+    To również się dzieje gdy ta karta jest zagrana."
+  Name: Ogień Hokkai
+  Description: Na początku tury {PlayerName:g} dodaj losową kartę umiejętności do
+    ręki. |Tymczasowo Kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
+BlackPoison:
+  Name: Mroczna Tancerka
+  Description: Gdy {PlayerName} zadaje niezablokowane obrażenia, nakłada {Value1}
+    |Trucizny|.
+LimaoAttack:
+  Name: Pompkolin Pełni Księżyca
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nZyskaj {Mana}.\n|Przyrost|: Zyskaj dodatkowe {Mana}."
+MeilingAbility:
+  Name: Intensywna Tęczowa Pięść
+  Description: "{PlayerName} zyskuje dwa razy więcej |Mocy| i |Tymczasowej Mocy|.\n\
+    Zyskaj {Value1} |Mocy|."
+FangxiangAttack:
+  Name: Niszcząca Trucizna
+  Description: "Jeżeli cel jest |Zatruty|, zadaj {Damage:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} {Value2:plural one='% raz' other='% razy'}.\n\
+    W innym wypadku nałóż {Value1} |Trucizny|."
+TigerNeijin:
+  Description: "Zyskaj {Value1} |Mocy|. Zwiększ |Moc| tej karty o {Value2} na czas\
+    \ walki.\nGdy {PlayerName:d} zadano niezablokowane obrażenia zwróć tę kartę ze\
+    \ stosu zrzutek do ręki."
+PatchouliLibrary:
+  Name: Wielka Nieruchoma Biblioteka
+  Description: "Zyskaj {Mana}.\nWybierz 1 z {Value1} rzadkich kart aby dodać do ręki.\
+    \ Ma |Wygnanie| oraz |Eteryczność|."
