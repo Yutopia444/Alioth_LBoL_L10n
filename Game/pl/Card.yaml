@@ -1212,8 +1212,8 @@ XiaodingKill:
 YukariAttack:
   Name: Granica Życia i Śmierci
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Na końcu tury, jeżeli życie {PlayerName:g} zmieniło swoją wartość, zwróć tę kartę\
-    \ ze stosu zrzutek do ręki |tymczasowo kosztując| {Mana}."
+    Na końcu tury, jeżeli życie {PlayerName:g} zmieniło swoją wartość, zwróć {SelfName:d}\
+    \ ze stosu zrzutek do ręki |Tymczasowo Kosztując| {Mana}."
 QingeUpgrade:
   Name: Nikczemna Pustelniczka
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1252,7 +1252,7 @@ YukariBox:
   Name: Podarowane "Prezenty"
 YijiuAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Gdy wróg zostanie pokonany za pomocą tej karty, |Wygnaj| ją i zyskaj |Nieskazitelny\
+    Gdy wróg zostanie pokonany za pomocą {SelfName:g}, |Wygnaj| ją i zyskaj |Nieskazitelny\
     \ Jedwab| na {Value1:plural one='% turę' few='% tury' many='% tur'}."
   Name: Błyskawica Smoczego Boga
 FourFlan:
@@ -1275,7 +1275,10 @@ HuiyinRetain:
   Name: Most Powrotu Ichijou
   Description: "Zwróć do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ ze stosu zrzutek do ręki. |Przetrzymaj| {Value1:plural one='ją' other='je'}\
-    \ na tę turę."
+    \ na tę turę.\nZakończ turę. Wtem, zacznij dodatkową turę.\n|Limit Czasowy| {Mana}."
+  ExtraDescription1: "Zwróć do {Value1:plural one='% karty' few='% kart' many='% kart'}\
+    \ ze stosu zrzutek do ręki. |Przetrzymaj| {Value1:plural one='ją' other='je'}\
+    \ na tę turę.\nZakończ turę. Wtem, zacznij dodatkową turę.\n|d:Limit Czasowy {Mana}.|"
 TianziMana:
   Name: Niebiański Lot
   Description: Zyskaj {Mana}.
@@ -1313,8 +1316,8 @@ HekaHellRain:
     obrażenia' many='% obrażeń'} wszystkim wrogom na końcu tury {PlayerName:g}.
 ReisenAttack:
   Name: Obłędny Sen
-  Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"2\">:| Zadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom."
+  Description: "|Za Każde Wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'} wszystkim wrogom."
 FangxiangHeal:
   Name: Wchłonąć Pragnienia
   Description: "|Wygnaj| {Value1:plural one='% losową kartę' few='% losowe karty'\
@@ -1336,12 +1339,11 @@ CloseEyeShoot:
   Name: Strzelanie na Oślep
 Shengyan:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Finiszer:| Zyskaj {Value1} maksymalnego życia."
+    |Finiszer|: Zyskaj {Value1} maksymalnego życia."
   Name: Uczta
 Zhulianshen:
-  Description: "Zyskaj {Block} |Bloku|.\nOprzyj się {Value1:plural one='kolejnej karcie\
-    \ Statusu, którą' other='kolejnym % kartom Statusu, które'} otrzymasz |d:(zostają\
-    \ ||Wygnane||d:)|."
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1:plural one='% |Odparcie|'\
+    \ few='% |Odparcia|' many='% |Odparć|'}."
   Name: Lina Bogini Gór
 ZoufangWater:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1389,8 +1391,8 @@ QingeHeal:
   FlavorText: '"Zyskałaś siły! A teraz naprzód!"'
 KongMana:
   Name: Stopnienie Rdzenia
-  Description: "|Wygnaj| losową kartę w dłoni. Zyskaj manę równą kosztu tamtej karty.\n\
-    Dodaj |Tęczę| do ręki."
+  Description: "|Wygnaj| kartę w dłoni. Zyskaj manę równą kosztu tamtej karty.\nDodaj\
+    \ |Tęczę| do ręki."
 ModuoluoFire:
   Name: Ogień Eny
   Description: Gdy zostanie wydana <sprite="ManaSprite" name="P">, zadaj {Value1:plural
@@ -1419,10 +1421,7 @@ MedicineGarden:
 RuowujiCard:
   Name: Fale Odwróconych Łusek
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\n|Za każde wydane <sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
-    ManaSprite\" name=\"U\">:| Zyskaj <sprite=\"ManaSprite\" name=\"G\">.\n|Za każde\
-    \ wydane <sprite=\"ManaSprite\" name=\"G\"><sprite=\"ManaSprite\" name=\"G\">:|\
-    \ Zyskaj <sprite=\"ManaSprite\" name=\"U\">."
+    \ wszystkim wrogom.\nNałóż {Value1} |Tonięcia|."
 Shoot:
   Name: Strzał
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -1692,9 +1691,8 @@ CoolBreeze:
   Name: Orzeźwiający Wiaterek
 SkyWater:
   Name: Niebiański Cud Wodny
-  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Na końcu tury {PlayerName:g} zyskaj {Value2} |Bloku| za każdą zrzuconą kartę w\
-    \ fazie zrzucania."
+  Description: "Zyskaj {Shield} |Bariery|.\nNa końcu tury {PlayerName:g} zyskaj {Value2}\
+    \ |Bloku| za każdą zrzuconą kartę w fazie zrzucania."
 DanmuJade:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nDodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='%\
@@ -1771,7 +1769,7 @@ ColdPotion:
     \ Niestabilną Miksturę|' few='|% Niestabilne Mikstury|' many='|% Niestabilnych\
     \ Mikstur|'} do stosu doboru."
 MarisaHoldCard:
-  Description: "Wybierz do {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+  Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ w dłoni. |Przetrzymaj| je na tę turę.\nZyskaj {Block} |Bloku|."
 SplitPotion:
   Name: Podwójne Chemikalia
@@ -2096,3 +2094,68 @@ MorphMan:
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
 FrozenThrone:
   FlavorText: Now, we are one!
+LongArm:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Jeżeli w dłoni jest więcej niż {Value1:plural one='% inna karta' few='% inne karty'\
+    \ many='% innych kart'} zyskaj {Mana}."
+FengleiCard:
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
+    wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.
+  Name: Kula Wiatru i Burzy
+XiangziEcho:
+  Name: Echo Górskie
+  Description: Wybierz {Value1:plural one='% kartę' few='% karty' many='% kart'} w
+    dłoni. {Value1:plural one='Zyskuje ona' other='Zyskują one'} |Echo|.
+ShanyuCard:
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Shield} |Bariery|."
+  Name: Kula Gór i Deszczu
+YinyangQueen:
+  Name: Królowa Kul Yin-Yang
+  Description: Dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego Smoka|'
+    few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul Yin-Yang
+    Tęczowego Smoka|'} do ręki.
+SanaeRice:
+  Name: Deszcz Ryżu Rekordowego Zbioru
+  Description: "Usuń wszystkie debuffy z {PlayerName:g}.\nUlecz {0:plural one='% punkt'\
+    \ few='% punkty' many='% punktów'} życia."
+SakuraBlade:
+  Name: Rozbłysk Kwitnącej Wiśni
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż {Value1:plural one='% |Namiar|'\
+    \ few='% |Namiary|' many='% |Namiarów|}.\nZyskaj {Value2:plural one='% |Unik|'\
+    \ few='% |Uniki|' many='% |Uników|'}."
+LifeGame:
+  Name: Gra Życia
+  Description: "Zwróć wszystkie karty w dłoni i w stosie zrzutek do stosu doboru.\n\
+    Przetasuj stos doboru.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}."
+SanaeMiracle:
+  Name: Gościnne Gwiazdy Dzienne
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\nMoże zostać zagrana\
+    \ jedynie gdy stos doboru jest pusty."
+  ExtraDescription1: "|d:Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.|\n\
+    Może zostać zagrana jedynie gdy stos doboru jest pusty."
+ShuihuoCard:
+  Name: Kula Ognia i Wody
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Zyskaj {Block} |Bloku|."
+KaguyaTreeSee:
+  Name: Ocean Drzew Hourai
+  Description: "Ta karta kosztuje o {Mana} mniej za każdym razem, gdy {PlayerName}\
+    \ otrzymuje obrażenia.\nPrzenieś wszystkie karty z |Wygnaniem| z wygnania do stosu\
+    \ doboru.\nWszystkie karty tracą |Wygnanie|."
+MistLake:
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
+    Jeżeli jest 3 lub więcej niewydanej many, dobierz {Value2:plural one='% kartę'\
+    \ few='% karty' many='% kart'}."
+MeilingRain:
+  Name: Bujna Kolorowa Ulewa
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom {AttackTimes:plural one='% raz' other='% razy'}.\n|Za Każde\
+    \ Wydane {Mana}|: Zadaj tyle obrażeń dodatkowy raz."
+KanakoWalk:
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\
+    \ |Wygnaj| wszystkie dobrane karty statusu i |Nieszczęścia| dobrane w ten sposób.\n\
+    Zakończ turę. |Zachowaj| całą dłoń i całą niewydaną manę."
