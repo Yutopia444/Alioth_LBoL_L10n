@@ -1,8 +1,7 @@
 Misfortune:
   Name: Niefortunny
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1:plural one=''%
-    punkt'' few=''% punkty'' many=''% punktów''} życia za każde posiadane 100 <sprite="Point"
-    name="Gold">.'
+  Description: '|Na Końcu Tury|: Strać {Value1:plural one=''% punkt'' few=''% punkty''
+    many=''% punktów''} życia za każde posiadane 100 <sprite="Point" name="Gold">.'
 ReimuBlockW:
   Name: Obrona przed Danmaku
   Description: Zyskaj {Block} |Bloku|.
@@ -116,9 +115,9 @@ ReimuWeiyan:
 DanmuDuijue:
   Name: Pojedynek na Karty Zaklęć
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Odbicia|.\n|Moc| ma wpływ\
-    \ na {SelfName:d}."
+    \ na {SelfName:a}."
   UpgradedDescription: "Zyskaj {Shield} |Bariery|.\nZyskaj {Value1} |Odbicia|.\n|Moc|\
-    \ ma wpływ na {SelfName:d}."
+    \ ma wpływ na {SelfName:a}."
 ReimuLucky:
   Description: "Zyskaj {Value1:plural one='% |Amulet|' few='% |Amulety|' many='% |Amuletów|'}.\n\
     Zyskaj {Value2} <sprite=\"Point\" name=\"Gold\">."
@@ -301,9 +300,9 @@ RedLaser:
 Potion:
   Name: Niestabilna Mikstura
   FlavorText: UWAGA! Mikstury mogą być wybuchowe!
-  Description: "|Gdy Self Name} Wejdzie do Ręki|: Zyskaj {Mana}, zadaj {Damage:plural\
+  Description: "|Gdy {SelfName} Wejdzie do Ręki|: Zyskaj {Mana}, zadaj {Damage:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} losowemu wrogowi i |Wygnaj|\
-    \ {SelfName:d}."
+    \ {SelfName:a}."
 SatelliteIllusion:
   Name: Iluzja Satelity
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -593,7 +592,7 @@ JungleMaster:
 ManaJungle:
   Name: Leśna Przygoda
   Description: "|Gdy Dobrana|: Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|'\
-    \ many='% |Tęcz|'} do ręki i |Wygnaj| {SelfName:d}."
+    \ many='% |Tęcz|'} do ręki i |Wygnaj| {SelfName:a}."
   FlavorText: '"Eureka!"'
 TimeAuraAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -650,9 +649,8 @@ Lijian:
 Knife:
   Name: Sztylet do Rzucania
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Gdy ta karta opuszcza dłoń|: Jeżeli nie została zagrana, zadaj {DropDamage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wrogowi, który ma najmniej\
-    \ życia."
+    |Gdy {SelfName} Opuszcza Dłoń Bez Zagrania|: Zadaj {DropDamage:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} wrogowi, który ma najmniej życia."
 Dejavu:
   Name: Déjà Vu
   Description: "Połóż do {Value1:plural one='% kartę' few='% kart' many='% kart'}\
@@ -1098,7 +1096,7 @@ HuaBlock:
 MeilingBlock:
   Name: Karmazynowa Energia
   Description: "Zyskaj {Block} |Bloku| oraz {Shield} |Bariery|.\n|Moc| ma wpływ na\
-    \ {SelfName:d}."
+    \ {SelfName:a}."
   FlavorText: Przygotuj się do bycia przywalonym zanim będziesz groził innym.
 YongyiAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1212,7 +1210,7 @@ XiaodingKill:
 YukariAttack:
   Name: Granica Życia i Śmierci
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Na końcu tury, jeżeli życie {PlayerName:g} zmieniło swoją wartość, zwróć {SelfName:d}\
+    Na końcu tury, jeżeli życie {PlayerName:g} zmieniło swoją wartość, zwróć {SelfName:a}\
     \ ze stosu zrzutek do ręki |Tymczasowo Kosztując| {Mana}."
 QingeUpgrade:
   Name: Nikczemna Pustelniczka
@@ -1528,8 +1526,8 @@ Wushuai:
     \ many='% |Namiarów|} i |Wygnaj| {SelfName:a}."
   Name: Lśniący Miecz
 Bribery:
-  Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nMegumu ci zelży\
-    \ w tej walce."
+  Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#4f6e97>Megumu\
+    \ Iizunamaru</color> ci zelży w tej walce."
   Name: Przekupstwo
 ToolDraw:
   Name: Plecak z Zapasami
@@ -1620,33 +1618,31 @@ Payment:
     \ Naciągacz</color> odejdzie natychmiast."
 Nightmare:
   Name: Koszmar
-  NonbattleDescription: Gdy całkowita ilość |Koszmarów| w dłoni, stosie doboru i w
-    stosie zrzutek wyniesie {Value1}, {PlayerName} przegrywa grę.
-  Description: "Gdy całkowita ilość |Koszmarów| w dłoni, stosie doboru i w stosie\
-    \ zrzutek wyniesie {Value1}, {PlayerName} przegrywa grę.\nAktualnie jest razem\
-    \ {NightmareCount}."
+  NonbattleDescription: Gdy całkowita ilość |e:Koszmarów| w obiegu wyniesie {Value1},
+    {PlayerName} przegrywa grę.
+  Description: "Gdy całkowita ilość |e:Koszmarów| w obiegu wyniesie {Value1}, {PlayerName}\
+    \ przegrywa grę.\nAktualnie jest razem {NightmareCount}."
 Jealousy:
   Name: Zazdrość
 BefuddledLife:
   Name: Niezręczność
 XiaosanJingxia:
   Name: Przestraszenie
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} zyskaj {Value1} |Osłabienia|.'
+  Description: '|Na Końcu Tury|: Zyskaj {Value1} |Osłabienia|.'
 MarisaForget:
   Name: Skleroza
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} zyskaj {Value1} |Kruchości|.'
+  Description: '|Na Końcu Tury|: Zyskaj {Value1} |Kruchości|.'
 BuyPeace:
   Name: Kup Bezpieczeństwo
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} <sprite="Point"
-    name="Gold"> i ulecz {Value2} zdrowia.'
+  Description: '|Na Końcu Tury|: Strać {Value1} <sprite="Point" name="Gold"> i ulecz
+    {Value2} zdrowia.'
 SweetPoison:
   Name: Trująca Słodkość
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} zyskaj {Value1} |Trucizny|.'
+  Description: '|Na Końcu Tury|: Zyskaj {Value1} |Trucizny|.'
   FlavorText: Eirin! Eirin! Tasukete EIRIN!
 Pressure:
   Name: Niewidzialna Presja
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1} <sprite="Point"
-    name="Power">.'
+  Description: '|Na Końcu Tury|: Strać {Value1} <sprite="Point" name="Power">.'
 YuyukoMisfortune:
   Name: Pełzający Głód
   Description: '|Gdy w dłoni:| Gdy {PlayerName} zagra kartę, strać {Value1:plural
@@ -1663,9 +1659,8 @@ Zhukeling:
   Name: Nakaz Eksmisji
 FanzhuanChongdong:
   Name: Odwrócony Głód
-  Description: '|Gdy w dłoni:| Na końcu tury {PlayerName:g} strać {Value1:plural one=''%
-    punkt'' few=''% punkty'' many=''% punktów''} życia jeżeli w przeciągu tury nie
-    uleczono życia.'
+  Description: '|Na Końcu Tury|: Strać {Value1:plural one=''% punkt'' few=''% punkty''
+    many=''% punktów''} życia jeżeli w przeciągu tury nie uleczono życia.'
   FlavorText: Koszt do zostania pachołkiem wampira.
 LoveLetter:
   Name: List Miłosny
@@ -1751,7 +1746,7 @@ SakuyaDetective:
     \ one='skumulowane' few='skumulowane' many='skumulowanych'}.)"
 ReimuHeavyAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na {SelfName:d}."
+    |Moc| ma {Value1:plural one='% raz' other='% razy'} większy wpływ na {SelfName:a}."
   Name: Pięść Hakurei
 BrokenTimeline:
   Name: Zniszczona Linia Czasowa
@@ -2208,3 +2203,7 @@ PatchouliLibrary:
   Name: Wielka Nieruchoma Biblioteka
   Description: "Zyskaj {Mana}.\nWybierz 1 z {Value1} rzadkich kart aby dodać do ręki.\
     \ Ma |Wygnanie| oraz |Eteryczność|."
+Psychedelic:
+  Name: Halucynogen
+  Description: "|Na Końcu Tury|: Strać {Value1:plural one='% punkt' few='% punkty'\
+    \ many='% punktów'} życia i zyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
