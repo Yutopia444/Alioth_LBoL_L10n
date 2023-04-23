@@ -511,8 +511,8 @@ ToolDroneBlock:
 ToolRandomTool:
   FlavorText: ' "여기는 피쿼드 호. 공중보급품을 투하한다!"'
   Name: 전술 무전기
-  Description: "무작위 |도구| 카드 {Value1}장 중 1장을 선택해 손으로 가져옵니다. 해당 카드는 |사용 제한 [1]|이 걸려\
-    \ 있습니다.\n|사용 제한 [{DeckCounter}]|"
+  Description: "무작위 |도구| 카드 {Value1}장 중 1장을 선택해 손으로 가져옵니다.\n해당 카드는 |복사본| 표시가 붙으며,\
+    \ |사용 제한 [1]|이 걸려 있습니다.\n|사용 제한 [{DeckCounter}]|"
 ToolMicai:
   Name: 광학미채복
   Description: "|광학미채|를 {Value1} 얻습니다.\n|사용 제한 [{DeckCounter}]|"
@@ -625,8 +625,8 @@ CirnoBlockU:
   Description: '|방어|를 {Block} 얻습니다.'
 IceLaser:
   Name: 냉동광선
-  Description: "피해를 {Damage} 줍니다.\n명중한 적에게 |빙결|을 가합니다."
-  UpgradedDescription: "피해를 {Damage} 줍니다.\n적에게 |빙결|을 가합니다."
+  Description: "피해를 {Damage} 주고 |빙결|을 가합니다."
+  UpgradedDescription: "피해를 {Damage} 주고 |빙결|을 가합니다.\n다른 무작위 적에게 효과를 한 번 더 발동시킵니다."
   FlavorText: 치르노는 이 공로로 1997년 노벨 물리학상 특별상을 수상했습니다.
 Ice:
   Description: '|빙결|을 가합니다.'
@@ -645,9 +645,9 @@ IceSaber:
   Name: 얼음 검
   FlavorText: 이 검의 이름은... 서리의 한?
 GainMaid:
-  UpgradedDescription: "|메이드 요정의 청소|를 한 장 얻습니다.\n모든 |메이드 요정의 청소|의 피해가 1 증가합니다."
+  UpgradedDescription: "|요정 메이드의 청소|를 한 장 얻습니다.\n모든 |요정 메이드의 청소|의 피해가 1 증가합니다."
   Name: 투검술 훈련
-  Description: '|메이드 요정의 청소|를 한 장 얻습니다.'
+  Description: '|요정 메이드의 청소|를 한 장 얻습니다.'
 CirnoDraw:
   Name: 요정의 지혜
   Description: 카드를 {Value1}장 뽑습니다.
@@ -768,17 +768,17 @@ LoveLetter:
   Name: 러브레터
 Nightmare:
   Name: 악몽
-  Description: "손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 |e:악몽|이 있을 시 패배합니다.\n현재 {NightmareCount}장의\
-    \ |악몽|이 있습니다."
-  NonbattleDescription: 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 |e:악몽|이 있을 시 패배합니다.
+  Description: "손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 패배합니다.\n현재\
+    \ {NightmareCount}장의 {SelfName}이 있습니다."
+  NonbattleDescription: 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 패배합니다.
 Bribery:
-  Description: "{MoneyCost}<sprite=\"Point\" name=\"Gold\">를 지불합니다.\n이즈나마루 메구무가 약간\
-    \ 봐줍니다."
+  Description: "{MoneyCost}<sprite=\"Point\" name=\"Gold\">를 지불합니다.\n<color=#4f6e97>이즈나마루\
+    \ 메구무</color>가 약간 봐줍니다."
   Name: 뇌물
 Payment:
   Name: 송금
-  Description: "{MoneyCost}<sprite=\"Point\" name=\"Gold\">를 지불합니다.\n사기꾼 토끼가 전투에서\
-    \ 이탈합니다."
+  Description: "{MoneyCost}<sprite=\"Point\" name=\"Gold\">를 지불합니다.\n<color=#b7646b>사기꾼\
+    \ 토끼</color>가 전투에서 이탈합니다."
   FlavorText: 월도만상전 주최 측에서는 단서를 제공한다는 명목으로 금전이나 개인정보를 요구하는 것을 주의하라는 성명을 발표했습니다.
 KoishiAttackB:
   Name: DNA의 흠
@@ -1043,7 +1043,7 @@ Chunguang:
 MoonPurify:
   Description: "손에 있는 무작위 카드가 |정화|됩니다.\n|정화| 가능한 카드가 우선시됩니다."
   Name: 더러움 정화
-  UpgradedDescription: 손에 있는 무작위 카드가 |정화|됩니다.
+  UpgradedDescription: 손에 있는 카드 중 한 장을 |정화|합니다.
 AyaNewsSakuyaSp:
   Name: 붕붕마루 사쿠야 특간호
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
@@ -1339,7 +1339,7 @@ ShuimiUnderWater:
   Description: '|버릴 시|: {Mana}를 얻습니다.'
 SakuyaLock:
   Name: 타임 락다운
-  Description: "|실버 락다운| 효과를 한 번 발동시킵니다.\n(피해를 {Value1} 받습니다.)"
+  Description: "<color=#B7F0FF>사쿠야</color>의 |실버 락다운|을 발동시킵니다.\n(피해를 {Value1} 받습니다.)"
   NonbattleDescription: '|실버 락다운| 효과를 한 번 발동시킵니다.'
 ShenziWake:
   Name: 성인의 부활
@@ -1360,14 +1360,14 @@ SummerIce:
   Name: 서머 아이스
 Opt:
   Description: "뽑을 카드 더미에서 카드 한 장을 골라 바닥으로 보냅니다.\n카드를 한 장 뽑습니다.\n{Mana}를 얻습니다."
-  Name: 선택
+  Name: 여리박빙
 OptBottom:
   Description: '{TargetName}을 뽑을 카드 더미의 바닥으로 보냅니다.'
-  Name: 뽑을 카드 더미 바닥으로 보내기
+  Name: 침몰
 ColdSnap:
   Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n손의 카드 한 장을 골라 뽑을 카드 더미의\
     \ 마지막으로 보냅니다."
-  Name: 급속 냉각
+  Name: 급속냉각
 DiamondBlizzard:
   Name: 다이아몬드 블리자드
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|선택|: 모든 적에게 |빙결|을 가합니다; 혹은 |방어|를 {Block} 얻습니다."
@@ -1378,7 +1378,7 @@ ColdChain:
   Description: 뽑을 카드 더미에서 최대 {Value1}장을 골라 손으로 가져옵니다. 해당 카드는 |보존|이 붙습니다.
   Name: 콜드 체인
 FreezeRiver:
-  Name: 얼어붙은 강
+  Name: 유빙
   Description: 뽑을 카드 더미의 바닥에서 카드를 가져옵니다. 해당 카드는 |일시적으로| {Mana}의 코스트를 갖습니다.
 BestFriend:
   Description: 손에서 |요정의 지원| 카드를 최대 {Value1}장 골라 해당 카드들을 |소멸|시키지 않고 능력을 발동합니다.
@@ -1425,7 +1425,7 @@ CirnoConsiderDraw:
   Name: '심사숙고: 각성'
   Description: 카드를 뽑습니다.
 ManaReflection:
-  Name: 마나 리플렉션
+  Name: 요정의 기상
   Description: "현재 마나가 두 배가 됩니다.\n|가불| {Value1}."
 FairyWrath:
   Name: 자연의 분노
@@ -1502,3 +1502,46 @@ ReadBook:
     \ 골라 손으로 가져옵니다.|"
   Description: "|방어|를 {Block} 얻습니다.\n|선보임|: 무작위 파란색/흰색 카드 {Value1}장 중 한 장을 골라 손으로\
     \ 가져옵니다."
+FlanBlack:
+  Description: "|d:해당 카드는 아직 준비중입니다.\n차후의 업데이트를 기다려 주세요!|"
+  Name: 악마화
+LarvaCure:
+  Description: "|중독|을 제거합니다.\n|사용 제한 [{DeckCounter}]|"
+  Name: 해독제
+AttackWithEveryColor:
+  Description: '|서로 다른 종류의 마나를 지불할 때마다|: 피해를 {Damage} 줍니다.'
+  Name: 다채로운 공격
+DeployManaDoll:
+  Name: 마나 인형
+  Description: '|마나 인형|을 배치합니다.'
+DeployChargeDoll:
+  Description: '|축전 인형|을 배치합니다.'
+  Name: 축전 인형
+AttackAndLoseMagic:
+  Description: 피해를 {Damage} 주고, 마력을 {Value1} 잃습니다.
+  Name: 공격 & 마력 상실
+GainMagic:
+  Description: 마력을 {Value1} 얻습니다.
+  Name: 마력 모으기
+DeployAttackDoll:
+  Description: '|공격 인형|을 배치합니다.'
+  Name: 공격 인형
+TriggerAllPassive:
+  Name: 패시브 전부 발동
+  Description: 모든 인형의 패시브 효과를 전부 발동시킵니다.
+DeployDefenseDoll:
+  Description: '|방어 인형|을 배치합니다.'
+  Name: 방어 인형
+CirnoFreeze:
+  Name: 마나 동결
+  Description: "손에 {SelfName}이 있을 경우, 손에 있는 다른 모든 카드의 코스트가 {Mana} 증가합니다.\n카드를 사용할\
+    \ 때마다 손에 있는 {SelfName}을 한 장씩 |소멸|시킵니다."
+Wushuai:
+  Name: 능렬검광
+  Description: '|카드를 뽑을 시|: |록온|을 {Value1} 받습니다. 이후 {SelfName}은 |소멸|됩니다.'
+DoubleActiveTrigger:
+  Name: 이중촉발
+  Description: 가장 앞에 배치된 인형의 액티브 효과를 두 번 발동시킵니다.
+GainDollSlot:
+  Name: 인형 슬롯 획득
+  Description: 인형 슬롯을 {Value1} 얻습니다.
