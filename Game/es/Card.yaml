@@ -819,7 +819,7 @@ StarShower:
   Name: Baño de Polvo Estelar
 WizardStudy:
   Name: Convertidor Mágico
-  Description: "Gana {Value1} de |Poder| y |Espíritu|.\n|Congelación de Maná| {Mana}."
+  Description: "Gana {Value1} de |Poder| y |Espíritu|.\n|Maná Congelado| {Mana}."
 UpgradePotion:
   Name: Poción Refinada
   Description: "Agrega {Value2:plural one='% |Poción Inestable|' other='% |Pociones\
@@ -1968,7 +1968,7 @@ GainLuna:
     \ one='z' other='ces'}\nAñade un |Silencio de Luna| a la mano."
 WhiteWorld:
   Description: "Al final del turno de {PlayerName}, gana {Value1} de |Poder| y |Espíritu|.\n\
-    |Congelación de Maná| {Mana}."
+    |Maná Congelado| {Mana}."
   Name: Mundo de Blanco Puro
 AttackWithEveryColor:
   Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
@@ -2031,6 +2031,9 @@ HualiIce:
     \ {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\n"
 ForeverCool:
   Name: Eterna Fría Época de Fantasía
+  Description: "Siempre que una carta de |Apoyo de las Hadas| este |Exiliada|, aplica\
+    \ |Frío| a un enemigo aleatorio.\nSiempre que una carta de |Apoyo de las Hada|\
+    \ se juega, añade una carta aleatoria de |Apoyo de las Hadas| a la pila de descarte."
 IceBarrier:
   Name: Barrera de Hielo
   Description: Gana {Value1} |Armadura de Escarcha|.
@@ -2057,8 +2060,8 @@ IceMatrix:
     \ de Escarcha|."
 GainSunny:
   Name: Amanecer
-  Description: "Inflige {Damage} a cada enemigo {Value1} veces.\nAñade una |Refracción\
-    \ de Sunny| a la mano."
+  Description: "Inflige {Damage} de daño a cada enemigo {Value1} veces.\nAñade una\
+    \ |Refracción de Sunny| a la mano."
 FreezeToIce:
   Name: Espécimen Congelado
   Description: "|Exilia| hasta {Value1} carta{Value1:plural one='' other='s'} en la\
@@ -2136,6 +2139,8 @@ Xiguadao:
     \ es derrotado mientras aún quedan golpes, cambia el objetivo a otro enemigo aleatorio."
 ChooseFairy:
   Name: Encuentro en el Lago Brumoso
+  Description: Elige un tipo de carta común de |Apoyo de las Hadas|. Agrega {Value1}
+    carta{Value1:plural one='' other='s'} de ese mismo tipo a la mano.
 CirnoFire:
   Name: Hielo Inflamable
   Description: "Gana {Value1} de |Poder|.\nCuesta {Mana} menos por cada enemigo con\
@@ -2147,6 +2152,9 @@ FrozenThrone:
     a la pila de robo.
 FairyWrath:
   Name: Ira de la Naturaleza
+  Description: "Inflige {Damage} de daño a 2 enemigos aleatorios.\nPor cada cartas\
+    \ de |Apoyo de las Hadas| Exiliada, aumenta el daño de esta carta en {Value1}.\n\
+    |Sobregiro| {Value2}."
 ManaReflection:
   Name: Levántate y Despierta
   Description: "Duplica tu actual maná.\n|Sobregiro| {Value1}."
@@ -2164,8 +2172,13 @@ ColdChain:
     de robo y agrégala{Value1:plural one='' other='s'} a la mano, con |Retener|.
 BestFriend:
   Name: Mejores Amigas
+  Description: "Elige hasta {Value1} carta{Value1: plural one='' other='s'}|Apoyo\
+    \ de las Hadas| en la mano. Activa su{Value1:plural one=' efecto activo' other='s\
+    \ efectos activos'}. (No se activa el |Exilio|)"
 PlayWithWaste:
   Name: Buceo en la Basura
+  Description: "Elige 1 de {Value1} cartas |Herramientas| no raras para agregarla\
+    \ a la mano.\nSe considera una |Copia| y solo se puede usar una vez."
 SummerIce:
   Name: Hielo de Verano
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
@@ -2181,9 +2194,19 @@ CirnoConsider:
 ColdSnap:
   Name: Frescor Rápido
   Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
-    \ other='s'}.\nElige una carta de la mano a la parte inferior de la pila de robo."
+    \ other='s'}.\nElige una carta de la mano envíalo a la parte inferior de la pila\
+    \ de robo."
 SummerParty:
   Name: Fiesta Escarchada
+  Description: "Agrega {Value2} carta{Value2:plural one=' común aleatorio' other='s\
+    \ comunes aleatorios'} de |Apoyo de las Hadas| a la mano.\n|Por cada <sprite=\"\
+    ManaSprite\" name=\"U\"> gastado|: Gana {Value1} |Armadura de Escarcha|.\n|Por\
+    \ cada {Mana} gastado|: Agrega {Value2} carta{Value2:plural one=' común aleatorio'\
+    \ other='s comunes aleatorios'} de |Apoyo de las Hadas| a la mano."
+  UpgradedDescription: "|Por cada <sprite=\"ManaSprite\" name=\"U\"> gastado|: Gana\
+    \ {Value1} |Armadura de Escarcha|.\n|Por cada {Mana} gastado|: Agrega {Value2}\
+    \ carta{Value2:plural one=' común aleatorio' other='s comunes aleatorios'} de\
+    \ |Apoyo de las Hadas| a la mano."
 FairyAllOut:
   Name: Todas Manos a la Obra
   Description: "Inflige {Damage} de daño a todos los enemigos.\n|Exilia| todas las\
