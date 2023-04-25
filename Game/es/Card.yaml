@@ -382,10 +382,10 @@ SakuyaUsage:
   FlavorText: Solo detén el tiempo y luego tira lo demás por las escaleras.
   Name: Manual de Sakuya
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando se juega\
-    \ por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira esta carta del combate.\
+    \ por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira {SelfName} del combate.\
     \ Agrega |Escaleras Circulares| a la parte superior de la pila de robo."
   ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Cuando\
-    \ se juega por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira esta carta\
+    \ se juega por {Value2:ordinal one='%ºra' other='%ºda'} vez|: Retira {SelfName}\
     \ del combate. Finaliza el turno. Agrega |Escaleras Circulares| a la parte superior\
     \ de la pila de robo.\n(Se ha jugado {PlayCount:plural one='% vez' other='% veces'})."
 CoolBreeze:
@@ -428,7 +428,7 @@ IceLaser:
   Name: Rayo Congelador
   FlavorText: Gracias a esto, Cirno ganó el Premio Nobel de Física en 1997 como una
     colaboradora especial.
-  UpgradedDescription: "Inflige {Damage} de daño.\nAplica |Frío|.\nRepite este efecto\
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica |Frío|.\nSe repite el efecto\
     \ en otro enemigo aleatorio."
 NewsTidbit:
   Description: "Gana {Value1} |Marcados|.\n|Limitado【{DeckCounter}】|"
@@ -448,12 +448,12 @@ KoishiAttackB:
   Name: Defecto de ADN
 FairySupportMaid:
   Name: Limpieza de Kasumi
-  Description: "|Al comienzo del turno|: Daño aumentado en {Value1}.\n|Al exiliarse|:\
-    \ Inflige {Value2} de daño al enemigo con la mayor vida."
+  Description: "|Al comienzo del turno|: Aumenta el daño de {SelfName} en {Value1}.\n\
+    |Al exiliarse|: Inflige {Value2} de daño al enemigo con más vida."
 FairySupportClownpiece:
   Name: Locura de Clownpiece
-  Description: "|Al comienzo del turno|: Reduce el coste de una carta aleatoria en\
-    \ {Value1}.\n|Al exiliarse|: Gana {Mana}."
+  Description: "|Al comienzo del turno|: {SelfName} cuesta {Value1} maná aleatorio\
+    \ menos.\n|Al exiliarse|: Gana {Mana}."
 ToolVulnerable:
   Name: Tambor Cargado
   Description: "Aplica {Value1} de |Vulnerable|.\n|Limitado【{DeckCounter}】|"
@@ -1261,7 +1261,7 @@ RumiaBlock:
 GuijiZaoxingHu:
   Name: Escultura - Arco
   Description: "Inflige {Damage} de daño.\nRoba {Value1:plural one='% carta' other='%\
-    \ cartas'}.\nEsta carta se transforma en otra |Escultura| hasta el final del combate."
+    \ cartas'}.\n{SelfName} se transforma en otra |Escultura| hasta el final del combate."
 WaterPrincess:
   Name: Princesa Undine
   ExtraDescription1: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|d:Debut|:\
@@ -1306,6 +1306,9 @@ YonglinCard:
   Name: La Sabia Recluida
   Description: Al final del turno de {PlayerName}, agrega {Value1} |{Value1:plural
     one='Luna Falsa' other='Lunas Falsas'}| a la pila de robo.
+  UpgradedDescription: "Al final del turno de {PlayerName}, agrega {Value1} |{Value1:plural\
+    \ one='Luna Falsa' other='Lunas Falsas'}| a la pila de robo.\nAgrega {Value2}\
+    \ |{Value1:plural one='Luna Falsa' other='Lunas Falsas'}| a la pila de robo."
 BailianJingang:
   Name: Cuerpo Reforzado
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Reflejo|."
@@ -1325,11 +1328,11 @@ PrismriverWhite:
   Name: Solo de Trompeta
 GuijiZaoxingYuan:
   Name: Escultura - Círculo
-  Description: "Obtén {Block} de |Bloqueo|.\nInflige {Damage} de daño.\nEsta carta\
+  Description: "Obtén {Block} de |Bloqueo|.\nInflige {Damage} de daño.\n{SelfName}\
     \ se transforma en otra |Escultura| hasta el final del combate."
 GuijiZaoxingFang:
   Name: Escultura - Cuadrado
-  Description: "Inflige {Damage} daño {Value1} veces.\nEsta carta se transforma en\
+  Description: "Inflige {Damage} daño {Value1} veces.\n{SelfName} se transforma en\
     \ otra |Escultura| hasta el final del combate."
 ShenziUpgradeAll:
   Name: Apoteosis
@@ -1398,7 +1401,7 @@ YuyukoDebuff:
 HinaAttack:
   Name: Rueda de la Desgracia
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
-    Por cada |Desgracia| en la biblioteca, esta carta inflige daño una vez más."
+    Por cada |Desgracia| en la biblioteca, {SelfName} inflige daño una vez más."
 BlackHorseZui:
   Name: Pecado del Caballo Negro
   Description: "Pierde {Value1} de vida.\nInflige {Damage} de daño a cada enemigo\
@@ -1470,7 +1473,7 @@ RemiliaBat:
   Description: "Obtén {Value1} de |Poder Temporal|.\nObtén {Value2} de |Evasión|."
 YuyukoSing:
   Name: Aleteos de Mariposa
-  Description: "Inflige {Damage} de daño.\nEsta carta se puede |Mejorar| una cantidad\
+  Description: "Inflige {Damage} de daño.\n{SelfName} se puede |Mejorar| una cantidad\
     \ infinita de veces."
 LimaoSchool:
   Name: Academia de Cambiaformas
@@ -1482,7 +1485,7 @@ MorphDog:
 ShuimuBlock:
   Name: Apilar Piedras
   Description: "Obtén {Block} de |Bloqueo|.\nAumenta |Permanentemente| el |Bloqueo|\
-    \ de esta carta por {Value1}."
+    \ de {SelfName} por {Value1}."
 LanCard:
   Description: Elige 1 de {Value1} cartas poco comunes al azar para agregarla a la
     mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
@@ -1686,8 +1689,8 @@ HekaHellRain:
   Name: Lluvia del Infierno
 FourFlan:
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
-    |Al comienzo del combate|: Añade {Value2} |copias| de esta carta a la pila de\
-    \ robo. Las copias no tienen este efecto, cuestan {Mana} teniendo |Exilio| y |Etéreo|."
+    |Al comienzo del combate|: Añade {Value2} |copias| de {SelfName} a la pila de\
+    \ robo. |Cuestan temporalmente| {Maná} teniendo |Exilio| y |Etéreo|."
   ExtraDescription1: Inflige {Damage} de daño {Value1:plural one='% vez' other='%
     veces'}.
   Name: Cuatro de uno Mismo
@@ -1839,11 +1842,11 @@ FairySupportDayaojing:
     \ {Value2} |Unidad|"
 GatherFairy:
   Name: Asamblea de Hadas
-  Description: "El límite de cartas en la mano aumenta en {MaxHand}.\nRoba {Value1:plural\
-    \ one='% carta' other='% cartas'}."
-  UpgradedDescription: "El límite de cartas en la mano aumenta en {MaxHand}.\nAgrega\
+  Description: "El tamaño máximo de la mano se convierte en {MaxHand}.\nRoba {Value1}\
+    \ carta{Value1:plural one='' other='s'}."
+  UpgradedDescription: "El tamaño máximo de la mano se convierte en {MaxHand}.\nAgrega\
     \ {Value2} carta{Value2:plural one=' común' other='s comunes'} de |Apoyo de hadas|\
-    \ a la mano.\nRoba {Value1:plural one='% carta' other='% cartas'}."
+    \ a la mano.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
 RemoveOverdraft:
   Name: Hielo Picado de Frutas
   Description: "Inflige {Damage} de daño.\nElimina el |Sobregiro| de {PlayerName}."
@@ -1876,8 +1879,8 @@ FrostGarden:
     \ enemigo.\nAñade {Value2} |Glaciar{Value2:plural one='' other ='es'}| a la mano."
 IceLance:
   Name: Lanza de Hielo
-  Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, inflige el\
-    \ doble de daño en su lugar."
+  Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, inflige {Value1}\
+    \ veces ese daño en su lugar."
 FreezeBullet:
   Name: Congelar Disparos
   Description: "Obtén {Block} de |Bloqueo|.\nGana {Value1} |Armadura de Escarcha|."
@@ -2060,7 +2063,7 @@ Blizzard:
   Name: Ventisca
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo."
   UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
-    \ cada enemigo.\nAl comienzo del próximo turno de {PlayerName}, repite este efecto."
+    \ cada enemigo.\nSe repite de nuevo al comienzo del próximo turno de {PlayerName}."
 IceMatrix:
   Name: Matriz Congelador
   Description: "Cada vez que {PlayerName} recibe daño por ataque, pierde 1 |Armadura\
@@ -2143,16 +2146,17 @@ BenwoCard:
 Xiguadao:
   FlavorText: ¡Súper Corte de la Dama Suprema de la ⑨ Diosa Marcial!
   Name: Cuchillo de Sandia
-  Description: "|Por cada {Mana} gastado|: Inflige {Damage} de daño.\nSi el objetivo\
-    \ es derrotado mientras aún quedan golpes, cambia el objetivo a otro enemigo aleatorio."
+  Description: "|Por cada {Mana} gastado|: Inflige {Damage} de daño.\nCuando el objetivo\
+    \ de {SelfName} es derrotado, si aún quedan golpes, continúa atacando usando un\
+    \ enemigo aleatorio como nuevo objetivo."
 ChooseFairy:
   Name: Encuentro en el Lago Brumoso
-  Description: Elige un tipo de carta común de |Apoyo de las Hadas|. Agrega {Value1}
-    carta{Value1:plural one='' other='s'} de ese mismo tipo a la mano.
+  Description: Elige {Value1} carta{Value1:plural one=' común' other='s comunes'}
+    de |Apoyo de hadas|. Agrégalo{Value1:plural one='' other='s'} a la mano.
 CirnoFire:
   Name: Hielo Inflamable
-  Description: "Gana {Value1} de |Poder|.\nCuesta {Mana} menos por cada enemigo con\
-    \ |Frío|."
+  Description: "Gana {Value1} de |Poder|.\nPor cada enemigo con |Frío|, {SelfName}\
+    \ cuesta {Mana} menos para jugar."
 FrozenThrone:
   Name: Trono de Hielo
   FlavorText: Now, we are one!
@@ -2161,32 +2165,33 @@ FrozenThrone:
 FairyWrath:
   Name: Ira de la Naturaleza
   Description: "Inflige {Damage} de daño a 2 enemigos aleatorios.\nPor cada cartas\
-    \ de |Apoyo de las Hadas| Exiliada, aumenta el daño de esta carta en {Value1}.\n\
+    \ de |Apoyo de las Hadas| Exiliada, {SelfName} inflige {Value1} más de daño.\n\
     |Sobregiro| {Value2}."
 ManaReflection:
   Name: Levántate y Despierta
-  Description: "Duplica tu actual maná.\n|Sobregiro| {Value1}."
+  Description: "Duplica todo el maná de la reserva de maná.\n|Sobregiro| {Value1}."
 DiamondBlizzard:
   Name: Pilar de Diamante
-  Description: "Inflige {Damage} de daño a todos los enemigos.\n|Elegir| : Aplica\
-    \ |Frío| a todos los enemigos; o obtén {Block} de |Bloqueo|."
+  Description: "Inflige {Damage} de daño a todos los enemigos.\n|Elegir|: Aplica |Frío|\
+    \ a todos los enemigos; o obtén {Block} de |Bloqueo|."
 FreezeRiver:
   Name: Paquete de Hielo
-  Description: Agrega la carta de la parte inferior de la pila de robo a la mano y
-    |cuesta temporalmente| {Mana}.
+  Description: Coloca la carta en la parte inferior de la pila de robo en la mano.
+    |Cuesta temporalmente| {Mana}.
 ColdChain:
   Name: Cadena de Logística Frío
   Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
-    de robo y agrégala{Value1:plural one='' other='s'} a la mano, con |Retener|.
+    de robo y colocalo{Value1:plural one='' other='s'} en la mano, tiene{Value1:plural
+    one='' other='n'} |Retener|.
 BestFriend:
   Name: Mejores Amigas
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} de |Apoyo\
-    \ de las Hadas| en la mano. Activa su{Value1:plural one=' efecto activo' other='s\
-    \ efectos activos'}. (No se activa el |Exilio|)"
+    \ de las Hadas| en la mano. Usa cada uno de sus efectos activos una vez. (Sin\
+    \ |Exiliarlos|)"
 PlayWithWaste:
   Name: Buceo en la Basura
   Description: "Elige 1 de {Value1} cartas |Herramientas| no raras para agregarla\
-    \ a la mano.\nSe considera una |Copia| y solo se puede usar una vez."
+    \ a la mano.\nSe considera una |Copia| y tiene |Limitado【1】|."
 SummerIce:
   Name: Hielo de Verano
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
@@ -2202,7 +2207,7 @@ CirnoConsider:
 ColdSnap:
   Name: Frescor Rápido
   Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
-    \ other='s'}.\nElige una carta de la mano envíalo a la parte inferior de la pila\
+    \ other='s'}.\nColoca una carta de la mano envíalo a la parte inferior de la pila\
     \ de robo."
 SummerParty:
   Name: Fiesta Escarchada
@@ -2218,18 +2223,22 @@ SummerParty:
 FairyAllOut:
   Name: Todas Manos a la Obra
   Description: "Inflige {Damage} de daño a todos los enemigos.\n|Exilia| todas las\
-    \ |Apoyo de las Hadas| de la mano."
+    \ cartas de |Apoyo de las Hadas| de la mano."
 DiamondBlizzardCold:
   Name: 'Pilar de Diamante: Frío'
-  Description: Inflige daño y aplica |Frío|.
+  Description: Inflige daño y después aplica |Frío|.
 DiamondBlizzardDefense:
   Name: 'Pilar de Diamante: Barrera'
-  Description: Inflige daño y obtén |Bloqueo|.
+  Description: Inflige daño y después obtén |Bloqueo|.
 FakeMoon:
   Name: Luna Falsa
+  Description: "Elige una carta en la mano. Añade {Value1} |copia{Value1:plural one=''\
+    \ other='s'}| de ella en la mano. {Value1:plural one='' other='s'} |cuesta{Value1:plural\
+    \ one='' other='n'} temporalmente| {Mana} y {Value1:plural one='tiene' other='tienen'}\
+    \ |Exilio| y |Etéreo|.\nNo se puede elegir |Copias| para este efecto."
 OptBottom:
   Name: Hundirse
-  Description: Coloque {TargetName} en la parte inferior de la pila de robo.
+  Description: Coloca {TargetName} en la parte inferior de la pila de robo.
 CirnoConsiderDefense:
   Name: 'Cuidadosa Deliberación: Silencio'
   Description: Obtén |Bloqueo|.
@@ -2239,3 +2248,15 @@ CirnoConsiderDraw:
 LarvaCure:
   Name: Antídoto
   Description: "Elimina el |Veneno| de {PlayerName}.\n|Limitado【{DeckCounter}】|"
+CirnoFreeze:
+  Description: "Por cada {SelfName} en la mano, todas las cartas cuestan {Mana} más\
+    \ para jugar.\nCada vez que se juega una carta, se |Exilia| un {SelfName} de la\
+    \ mano."
+  Name: Maná Congelado
+Thought:
+  Description: "|Cuando {SelfName} entra en la mano|: Se |exilia|.\nAgrega una carta\
+    \ aleatoria con un coste total de {Value1} en la mano. |Cuesta temporalmente|\
+    \ {Mana} teniendo |Exilio| y |Etéreo|."
+  UpgradedDescription: "|Cuando {SelfName} entra en la mano|: Se |exilia|.\nAgrega\
+    \ una carta aleatoria |Mejorada| con un coste total de {Value1} en la mano. |Cuesta\
+    \ temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
