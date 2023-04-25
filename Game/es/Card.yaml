@@ -112,8 +112,8 @@ ReverseJiejie:
 Changzhizhen:
   Name: Borde Permanente
   Description: "|Al final del turno|: Inflige {Value1} daño a un enemigo aleatorio.\n\
-    |Al estar en mano|: Cuando {PlayerName} pierde un beneficio, el daño de esta carta\
-    \ aumenta en {Value2} por el combate."
+    |Al estar en la mano|: Cuando {PlayerName} pierde un beneficio, el daño de {SelfName}\
+    \ aumenta en {Value2} en este combate."
 ReimuLucky:
   Name: Golpe de Suerte
   Description: "Obtén {Value1} |Amuleto|.\nObtén {Value2} <sprite=\"Point\" name=\"\
@@ -226,7 +226,7 @@ ReimuDrink:
     \ other='s'}| a tu mano"
 YakongDianxue:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} pierda un buff,\
-    \ devuelve esta carta de la pila de descarte a la mano."
+    \ devuelve {SelfName} de la pila de descarte a la mano."
   FlavorText: ¡Es un ataque por la espalda!
   Name: Marca de Grieta Dimensional
 ReimuFreeAttack:
@@ -428,6 +428,8 @@ IceLaser:
   Name: Rayo Congelador
   FlavorText: Gracias a esto, Cirno ganó el Premio Nobel de Física en 1997 como una
     colaboradora especial.
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica |Frío|.\nRepite este efecto\
+    \ en otro enemigo aleatorio."
 NewsTidbit:
   Description: "Gana {Value1} |Marcados|.\n|Limitado【{DeckCounter}】|"
   Name: Chismes
@@ -621,7 +623,7 @@ DanceAroundLake:
   Name: Danza Junto al Lago
 AutoQumobang:
   Description: "|Mientras está en la mano|: Roba {Value1} {Value1:plural one='carta'\
-    \ other='cartas'} más durante cada fase de robo.\nCuando esta carta es |Retenida|\
+    \ other='cartas'} más durante cada fase de robo.\nCuando {SelfName} es |Retenida|\
     \ {Value2} veces, se |Exilia|."
   Name: Vara de Purificación Furiosa
 SenluoJiejie:
@@ -673,7 +675,7 @@ Wunvyu:
   Name: Orbe Malvado Hakurei
   Description: "Inflige {Damage} daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
     |Mientras esté en la mano|: Cada vez que se roba una carta fuera de la fase de\
-    \ robar, aumenta el daño de esta carta en {Value2} en este combate."
+    \ robar, aumenta el daño de {SelfName} en {Value2} en este combate."
 ChunseXiaojing:
   Name: Senda de Color Primaveral
   Description: "Gana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}.\n\
@@ -740,7 +742,7 @@ ScryAttack:
     perdido en el exterior.
   Name: Estrella de Navegación
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} |Explora|, devuelve\
-    \ esta carta de la pila de descarte a la mano."
+    \ {SelfName} de la pila de descarte a la mano."
 NightSeeStar:
   Name: Observación Estelar
   Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
@@ -755,7 +757,7 @@ ShinningPotion:
 Yinhe:
   Name: Vía Láctea
   Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se retiene|: Aumenta el |Bloqueo|\
-    \ de esta carta. por {Value1} en este combate."
+    \ de {SelfName} por {Value1} en este combate."
 StarSky:
   Name: Cielo Estrellado Luminoso
   Description: Gana {Value1} |Cargas|.
@@ -780,8 +782,8 @@ CollectionDefense:
     pila de robo.
 AccuracyLaser:
   Name: Láser Direccional
-  Description: "Inflige {Damage} de daño {Value1} veces.\n|Cuando se retiene|: Esta\
-    \ carta cuesta {Mana} menos en este combate."
+  Description: "Inflige {Damage} de daño {Value1} veces.\n|Cuando se retiene|: {SelfName}\
+    \ cuesta {Mana} menos en este combate."
 Alioth:
   Name: Alioth
   Description: "|Explorar| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
@@ -792,7 +794,7 @@ BurstDraw:
     one='% carta' other='% cartas'}.
 StarFantasy:
   Description: "Inflige {Damage} de daño.\n|Cuando se retiene|: Aumenta el daño de\
-    \ esta carta en {Value1} en este combate."
+    \ {SelfName} en {Value1} en este combate."
   Name: Fantasía de Polvo Estelar
 RunAway:
   UpgradedDescription: "Descarta cada carta de la mano. Las cartas descartadas de\
@@ -832,8 +834,8 @@ UpgradePotion:
 MixAndShake:
   Name: Poción de Fuegos Artificiales
   FlavorText: No agitar antes de abrir.
-  Description: "Inflige {Damage} de daño a cada enemigo.\nEl daño de esta carta aumenta\
-    \ en {Value1} por cada |Poción Inestable| en las pila de robo y descarte."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nEl daño aumenta en {Value1}\
+    \ por cada |Poción Inestable| en las pila de robo y descarte."
 ShootMoon:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Gana {Value1} |Evasión|."
   Name: Disparar a la Luna
@@ -867,7 +869,7 @@ ReadyForBurst:
 FinalSpark:
   Name: Final Spark
   UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nCuando {PlayerName}\
-    \ entra en |Supernova|, devuelve esta carta de la pila de descarte a la mano."
+    \ entra en |Supernova|, devuelve {SelfName} de la pila de descarte a la mano."
   Description: Inflige {Damage} de daño a cada enemigo.
 SolarSystem:
   Description: Al comienzo del turno de {PlayerName}, gana {Value1} |Cargas|.
@@ -974,7 +976,7 @@ KnifeBounce:
   FlavorText: Los cuchillos arrojadizos lanzados por Sakuya parecen ser bastantes,
     pero todos fueron recogidos del suelo después de que detuvo el tiempo.
 Lijian:
-  Description: "Inflige {Damage} de daño.\n|Cuando se roba|: Esta carta cuesta {Mana}\
+  Description: "Inflige {Damage} de daño.\n|Cuando se roba|: {SelfName} cuesta {Mana}\
     \ menos en este combate."
   Name: Vista de Hoja Distante
 CoolMaid:
@@ -1023,7 +1025,7 @@ SakuyaClock:
 LunaDial:
   Name: Crono-Espacio Privado
   Description: "Finaliza el turno. Luego, toma un turno extra.\n|Cuando se roba|:\
-    \ Esta carta cuesta {Mana} menos en este combate."
+    \ {SelfName} cuesta {Mana} menos en este combate."
 SakuyaShop:
   Name: Compra de Materiales
   Description: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
@@ -1097,10 +1099,10 @@ ExtraTurnEveryone:
     \ toman un turno extra la próxima vez que es su turno."
 SakuyaTea:
   ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|d:Debut:\
-    \ Gana {Value2} de vida. Esta carta cuesta {Mana} menos en este combate.|"
+    \ Gana {Value2} de vida. {SelfName} cuesta {Mana} menos en este combate.|"
   Name: Preparar el Té
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|Debut|: Gana\
-    \ {Value2} de vida. Esta carta cuesta {Mana} menos en este combate."
+    \ {Value2} de vida. {SelfName} cuesta {Mana} menos en este combate."
 AttackMagic:
   Description: "Inflige {Damage} de daño.\nRoba {Value1:plural one='% carta' other='%\
     \ cartas'}.\nAñade {Value2} |{Value2:plural one='Cuchillo Arrojadizo' other='Cuchillos\
@@ -1144,7 +1146,7 @@ SakuyaSpeedup:
 DefenseDraw:
   Name: Ciclo Lunar
   Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1:plural one='% carta' other='%\
-    \ cartas'}.\n|Cuando se roba|: Esta carta cuesta {Mana} menos en este combate."
+    \ cartas'}.\n|Cuando se roba|: {SelfName} cuesta {Mana} menos en este combate."
 ExileMagic:
   Name: Magia Cambiante
   Description: "|Exilia| hasta {Value1:plural one='% carta' other='% cartas'} de la\
@@ -1152,14 +1154,13 @@ ExileMagic:
 SakuyaInvestigate:
   Name: Detective del Tiempo Detenido
   Description: "Aplica {Value1} |Marcado|.\nAl comienzo de cada turno extra, devuelve\
-    \ esta carta del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
+    \ {SelfName} del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
 SakuyaAttackX:
   Name: Propulsión Plateada
   Description: '|Por cada {Mana} gastado|: Inflige {Damage} de daño.'
 SakuyaGraze:
   Description: "Obtén {Shield} de |Barrera|.\nObtén {Value1} de |Evasión|.\nCuando\
-    \ se baraja la pila de robo, devuelve esta carta a la mano en lugar de la pila\
-    \ de robo."
+    \ se baraja la pila de robo, se devuelve {SelfName} a la mano."
   Name: Evasión Accidental
 SakuyaFuneral:
   Name: Entierro Prematuro
@@ -1173,7 +1174,7 @@ FakeTimeline:
 LoyalMaid:
   Name: Sirvienta Leal
   Description: "Obtén {Shield} de |Barrera|.\nAl comienzo de cada turno extra, devuelve\
-    \ esta carta de la pila de descarte a la mano. |Cuesta temporalmente| {Mana}."
+    \ {SelfName} de la pila de descarte a la mano. |Cuesta temporalmente| {Mana}."
 SpecialClock:
   Name: Trucos de la Doncella
   Description: Al comienzo del turno de {PlayerName}, descarta hasta 1 carta, Después
@@ -2237,3 +2238,4 @@ CirnoConsiderDraw:
   Description: Roba Cartas
 LarvaCure:
   Name: Antídoto
+  Description: "Elimina el |Veneno| de {PlayerName}.\n|Limitado【{DeckCounter}】|"
