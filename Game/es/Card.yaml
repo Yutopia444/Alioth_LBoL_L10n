@@ -446,8 +446,12 @@ KoishiAttackB:
   Name: Defecto de ADN
 FairySupportMaid:
   Name: Limpieza de Kasumi
+  Description: "|Al comienzo del turno|: Daño aumentado en {Value1}.\n|Al exiliarse|:\
+    \ Inflige {Value2} de daño al enemigo con la mayor vida."
 FairySupportClownpiece:
   Name: Locura de Clownpiece
+  Description: "|Al comienzo del turno|: Reduce el coste de una carta aleatoria en\
+    \ {Value1}.\n|Al exiliarse|: Gana {Mana}."
 ToolVulnerable:
   Name: Tambor Cargado
   Description: "Aplica {Value1} de |Vulnerable|.\n|Limitado【{DeckCounter}】|"
@@ -900,7 +904,7 @@ StarlightTaifeng:
 FindCollection:
   Name: Asistencia Remota
   Description: Elige 1 de {Value1} cartas aleatorias que no sean de {PlayerName} para
-    agregarla a la mano. Cuesta |temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
+    agregarla a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
 BlazingStar:
   Name: Estrella Radiante
   Description: "Obtén {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo\
@@ -1299,9 +1303,8 @@ YonglinCard:
   FlavorText: La sabia de la sabiduría eligió esconderse, entonces, ¿esconderse es
     un acto de sabiduría?
   Name: La Sabia Recluida
-  Description: Cuando {PlayerName} juega la primera carta de cada turno, agrega una
-    copia de esa carta a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio|
-    y |Etéreo|.
+  Description: Al final del turno de {PlayerName}, agrega {Value1} |{Value1:plural
+    one='Luna Falsa' other='Lunas Falsas'}| a la pila de robo.
 BailianJingang:
   Name: Cuerpo Reforzado
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Value1} de |Reflejo|."
@@ -1831,6 +1834,8 @@ LifeGame:
     \ other='s'}."
 FairySupportDayaojing:
   Name: Unidad de Daiyousei
+  Description: "|Al comienzo del turno|: Gana {Value1} |Unidad|\n|Al Exiliarse|: Gana\
+    \ {Value2} |Unidad|"
 GatherFairy:
   Name: Asamblea de Hadas
   Description: "El límite de cartas en la mano aumenta en {MaxHand}.\nRoba {Value1:plural\
@@ -1900,7 +1905,7 @@ Tether:
   Description: "Para cada carta de |Apoyo de las Hadas| en la mano, obtén {Value1}\
     \ de |Poder Temporal|.\n(Obtén {TotalFire} de |Poder Temporal|.)"
 GainDayaojing:
-  Name: Mejores Amigas
+  Name: Asistencia Silenciosa
   Description: "Añade una |Unidad de Daiyousei| a la mano.\n|Debut|: Gana {Value1}\
     \ de vida."
   ExtraDescription1: "Añade una |Unidad de Daiyousei| a la mano.\n|d:Debut: Gana {Value1}\
@@ -1911,6 +1916,8 @@ GainStar:
     veces\"}\nAgrega una |Detección de Star| a la mano."
 YouxiangMoon:
   Name: Belleza de la Naturaleza
+  Description: Durante el resto del combate, {PlayerName} no se ve afectado por el
+    |Sobregiro|.
 IceSaber:
   Name: Espada Forjada en Hielo
   Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
@@ -2118,6 +2125,8 @@ ChooseFairy:
   Name: Encuentro en el Lago Brumoso
 CirnoFire:
   Name: Hielo Inflamable
+  Description: "Gana {Value1} de |Poder|.\nCuesta {Mana} menos por cada enemigo con\
+    \ |Frío|."
 FrozenThrone:
   Name: Trono de Hielo
   FlavorText: Now, we are one!
@@ -2127,12 +2136,19 @@ FairyWrath:
   Name: Ira de la Naturaleza
 ManaReflection:
   Name: Levántate y Despierta
+  Description: "Duplica tu actual maná.\n|Sobregiro| {Value1}."
 DiamondBlizzard:
   Name: Pilar de Diamante
+  Description: "Inflige {Damage} de daño a todos los enemigos.\n|Elegir| : Aplica\
+    \ |Frío| a todos los enemigos; o obtén {Block} de |Bloqueo|."
 FreezeRiver:
   Name: Paquete de Hielo
+  Description: Agrega la carta de la parte inferior de la pila de robo a la mano y
+    |cuesta temporalmente| {Mana}.
 ColdChain:
   Name: Cadena de Logística Frío
+  Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
+    de robo y agrégala{Value1:plural one='' other='s'} a la mano, con |Retener|.
 BestFriend:
   Name: Mejores Amigas
 PlayWithWaste:
@@ -2143,13 +2159,36 @@ SummerIce:
     \ one='z' other='veces'}.\n|Sobregiro| {Value2}."
 Opt:
   Name: En Hielo Frágil
+  Description: "Revela la carta superior de la pila de robo, será enviado a la parte\
+    \ inferior de la pila de robo.\nRoba una carta.\nGana {Mana}."
 CirnoConsider:
   Name: Cuidadosa Deliberación
-  Description: "|Elige|: Obtén {Block} de |Bloqueo|, o roba {Value1} carta{Value1:plural\
+  Description: "|Elegir|: Obtén {Block} de |Bloqueo|, o roba {Value1} carta{Value1:plural\
     \ one='' other='s'}."
 ColdSnap:
   Name: Frescor Rápido
+  Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'}.\nElige una carta de la mano a la parte inferior de la pila de robo."
 SummerParty:
   Name: Fiesta Escarchada
 FairyAllOut:
   Name: Todas Manos a la Obra
+  Description: "Inflige {Damage} de daño a todos los enemigos.\n|Exilia| todas las\
+    \ |Apoyo de las Hadas| de la mano."
+DiamondBlizzardCold:
+  Name: 'Pilar de Diamante: Frío'
+  Description: Inflige daño y aplica |Frío|.
+DiamondBlizzardDefense:
+  Name: 'Pilar de Diamante: Defensa'
+  Description: Inflige daño y obtén |Bloqueo|.
+FakeMoon:
+  Name: Luna Falsa
+OptBottom:
+  Name: Enviado al fondo
+  Description: Coloque {TargetName} en la parte inferior de la pila de robo.
+CirnoConsiderDefense:
+  Name: 'Cuidadosa Deliberación: Silencio'
+  Description: Obtén |Bloqueo|.
+CirnoConsiderDraw:
+  Name: 'Cuidadosa Deliberación: Despertar'
+  Description: Roba Cartas
