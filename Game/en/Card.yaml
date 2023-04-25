@@ -999,7 +999,7 @@ MasterOfCollection:
     combat.
 HinaAttack:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
-    For each |Misfortune| in the library, this card deals damage an additional time."
+    For each |Misfortune| in the library, {SelfName} deals damage an additional time."
   Name: Wheel of Misfortune
 SatoriMemory:
   Description: "Choose 1 of {Value1} random cards from the discard pile to return\
@@ -1127,7 +1127,7 @@ Panzi:
     \ of it to the hand."
   Name: Water Plate
 ShuimuBlock:
-  Description: "Gain {Block} |Block|.\n|Permanently| increase this card's |Block|\
+  Description: "Gain {Block} |Block|.\n|Permanently| increase {SelfName}'s |Block|\
     \ by {Value1}."
   Name: Stone Stacking
 LanCard:
@@ -1190,7 +1190,7 @@ ReisenMana:
   Name: Visionary Tuning
 FourFlan:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
-    |At the start of combat|: Add {Value2} |copies| of this card to the draw pile.\
+    |At the start of combat|: Add {Value2} |copies| of {SelfName} to the draw pile.\
     \ The copies don't have this effect, cost {Mana} and have |Exile| and |Ethereal|."
   ExtraDescription1: Deal {Damage} damage {Value1:plural one='% time' other='% times'}.
   Name: Four of a Kind
@@ -1571,7 +1571,8 @@ LigeluCard:
     >."
 YuyukoSing:
   Name: Butterfly's Wingbeats
-  Description: "Deal {Damage} damage.\nThis card can be |Upgraded| any number of times."
+  Description: "Deal {Damage} damage.\n{SelfName} can be |Upgraded| any number of\
+    \ times."
 DangerousMagician:
   Description: "Whenever a |Throwing Knife| is used, gain {Value1} |Time Pulse|.\n\
     Add {Value2} |Throwing Kni{Value2:plural one='fe' other='ves'}| to the draw pile."
@@ -2164,6 +2165,7 @@ GainSunny:
     Add a |Sunny's Refraction| to the hand."
 YouxiangMoon:
   Name: Beauties of Nature
+  Description: For the rest of combat, {PlayerName} is unaffected by |Overdraft|.
 CirnoFire:
   Name: Flammable Ice
   Description: "Gain {Value1} |Firepower|.\nFor each enemy with |Cold|, {SelfName}\
