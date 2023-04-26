@@ -234,6 +234,7 @@ PrivateSquare:
   Description: "カードを {Limit} 枚使用するごとに、{OwnerName}は{PlayerName}に {Level} 点のダメージを与える。\n\
     残り {Count} 枚。"
   Name: シルバーロックダウン
+  Brief: カードを何枚か使用するたび、<color=#B7F0FF>十六夜咲夜</color>は{PlayerName}にダメージを与える。
 RockHardAura:
   Description: '{OwnerName}は要石の庇護の下にある。受けるブロックされなかったダメージが {Level} 点減少する。'
   Name: 要石の庇護
@@ -287,7 +288,7 @@ FastAttack:
   Description: 各ターンに初めてカードを使用したとき、{OwnerName}は{PlayerName}に {Level} 点のダメージを与える。
   Name: 破られることのない速さ
 EnemyTuanzi:
-  Description: '{OwnerName}のターン開始時、 {Level} 点のライフを回復する。'
+  Description: '{OwnerName}のターン終了時、 {Level} 点のライフを回復する。'
   Name: おいしい団子
 Sleep:
   Description: "{OwnerName}のターン開始時、|バリア|が {Level} 点まで回復する。\n{Count} ターン経つかダメージを受けると目覚める。"
@@ -512,9 +513,10 @@ KnifeTarget:
   Description: '|投げナイフ|は{OwnerName}を優先して狙う。'
   Brief: '|投げナイフ|は{OwnerName}を優先して狙う。'
 FrostArmor:
-  Brief: "{OwnerName}のターン終了時、|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が 1 下がる。"
+  Brief: "|フロストアーマー|を獲得するたび、同量の|ブロック|を得る。\n{OwnerName}のターン終了時、|ブロック|を得て、数値を 1 下げる。\n\
+    攻撃ダメージを受けると、数値が 1 下がる。"
   Name: フロストアーマー
-  Description: "{OwnerName}のターン終了時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が\
+  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が\
     \ 1 下がる。"
 ExtraBlizzard:
   Brief: '{OwnerName}の次ターン開始時、敵全体に|精密|ダメージを与え、|冷気|を付与する。'
@@ -562,8 +564,8 @@ ColdPotionSe:
   Brief: '|不安定なポーション|が|冷気|を与える。'
 SakuyaKillerSe:
   Name: 夜霧の幻影殺人鬼
-  Description: "ターン終了時 {Level} 枚の|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
-  Brief: "ターン終了時|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
+  Description: "{PlayerName}のターン終了時、 {Level} 枚の|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
+  Brief: "{PlayerName}のターン終了時、|投げナイフ|を山札に混ぜる。\n敵を倒したときにも同じ効果を発動する。"
 DangerousMagicianSe:
   Description: '|投げナイフ|使用時、{PlayerName}は|タイムパルス| {Level} を得る。'
   Brief: '|投げナイフ|使用時、{PlayerName}は|タイムパルス|を得る。'
@@ -627,7 +629,7 @@ AutoKnifeSe:
   Brief: この戦闘中、|投げナイフ|は|自動廃棄|を得る。
 Cold:
   Name: 冷気
-  Brief: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、倍のライフを失う。（{StackDamage}点）。"
+  Brief: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、より多くのライフを失う。"
   Description: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、 {StackMultiply} 倍のライフを失う。（{StackDamage}点）。"
 NextTurnColdAll:
   Name: 寒波到来
@@ -743,3 +745,23 @@ PrismriverSe:
   Name: プリズムコンチェルト
   Description: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
   Brief: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
+AssistSe:
+  Description: '{PlayerName}の次の攻撃時、対象に {Level} 点のダメージを与える。'
+  Name: 協力
+  Brief: '{PlayerName}の次の攻撃時、対象にダメージを与える。'
+FrozenThroneSe:
+  Name: 凍った玉座
+  Description: '{PlayerName}のターン終了時、 {Level} 枚の|氷晶|を山札に混ぜる。'
+  Brief: '{PlayerName}のターン終了時、|氷晶|を山札に混ぜる。'
+EnemyDayaojing:
+  Name: 大妖精の協力
+  Description: '{OwnerName}のターン終了時、 {Level} 点のライフを回復する。'
+EnemyLarva:
+  Name: ラルバの羽
+  Description: '{PlayerName}が{OwnerName}にダメージを与えるたび、対象は|毒| {Level} を得る。'
+EnemyMaid:
+  Description: '{OwnerName}のターン終了時、{PlayerName}に {Level} 点のダメージを与える。'
+  Name: カスミの掃除
+EnemyLily:
+  Name: リリーホワイトの報せ
+  Description: '{OwnerName}の行動が強化される。'
