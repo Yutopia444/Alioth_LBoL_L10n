@@ -723,10 +723,10 @@ KokoroDanceSe:
   Brief: Cuando el enemigo obtiene efectos negativos, {PlayerName} le inflige daño.
   Name: Noh de la Oscuridad
 SkyWaterSe:
-  Description: Al final del turno de {PlayerName}, obtén {Level} de |Bloqueo| por
-    cada carta descartada de esa manera.
+  Description: Al final del turno de {PlayerName}, obtén {Level} |Unidad| por cada
+    carta descartada de esa manera.
   Name: Milagro del Agua Celestial
-  Brief: Al final del turno de {PlayerName}, obtén |Bloqueo| por cada carta descartada
+  Brief: Al final del turno de {PlayerName}, obtén |Unidad| por cada carta descartada
     de esa manera.
 BlackPoisonSe:
   Description: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, agrega
@@ -835,18 +835,44 @@ WhiteWorldSe:
   Name: Mundo de Blanco Puro
 BailianFireSe:
   Name: Fuegos de Hokkai
+  Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
+    \ one='' other='s'} de habilidad aleatoria a la mano.\n|Cuesta{Level:plural one=''\
+    \ other='n'} temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
+  Brief: "Al comienzo del turno de {PlayerName}, agrega cartas de habilidad aleatorias\
+    \ a la mano.\n|Cuestan temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
 FairyTreeSe:
   Name: Hogar de las Hadas
 CirnoFestivalSe:
   Name: Infiltración en el Banquete
+  Description: Después de una carta de |Habilidad| se juega, añade {Level} carta{Level:plural
+    one=' aleatoria' other='s aleatorias'} de |Apoyo de las Hadas| a la mano.
+  Brief: Después de una carta de |Habilidad| se juega, añade cartas aleatorias de
+    |Apoyo de las Hadas| a la mano.
 FrostArmor:
   Name: Armadura de Escarcha
+  Description: "Al final del turno de {OwnerName}, gana {Level} de |Bloqueo| y pierde\
+    \ 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe daño de ataque no\
+    \ bloqueado, pierde 1 |Armadura de Escarcha|."
+  Brief: "Cada vez que {PlayerName} gana |Armadura de Escarcha|, gana esa misma cantidad\
+    \ de |Bloqueo|.\nAl final del turno de {OwnerName}, gana {Level} de |Bloqueo|\
+    \ y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe daño de\
+    \ ataque no bloqueado, pierde 1 |Armadura de Escarcha|."
 InvincibleEternal:
   Name: Perfección
+  Description: '{OwnerName} no perderá mas de 1 de vida a la vez.'
+  Brief: '{OwnerName} no perderá mas de 1 de vida a la vez.'
 SplitPotionSe:
   Name: Químico Doble
+  Description: Las |Pociones Inestables| inflige daño a {Level} objetivo{Level:plural
+    one=' adicional' other='s adicionales'}.
+  Brief: Las |Pociones Inestables| infligen daño a un objetivo adicional.
 IceMatrixSe:
   Name: Matriz Congelador
+  Brief: Cada vez que {OwnerName} recibe daño de ataque, pierde |Armadura de Escarcha|
+    adicional para aplicarle |Frío| al atacante.
+  Description: Cada vez que {OwnerName} recibe daño de ataque, pierde {Level} de |Armadura
+    de Escarcha| adicional para aplicarle |Frío| al atacante {Level} ve{Level:plural
+    one='z' other='ces'}.
 Benwo:
   Name: Subconsciente
   Description: Inflige y recibe el doble de daño mientras esta en el estado |Subconsciente|.
@@ -857,10 +883,26 @@ Chaowo:
   Description: Gana {Mana} al salir del estado |Super-ego|.
 IceVulnerable:
   Name: Congelación Profunda
+  Brief: "{OwnerName} pierde el doble de vida.\nAl final del turno de {OwnerName},\
+    \ pierde |Congelación Profunda|."
+  Description: "{OwnerName} pierde el doble de vida.\nAl final del turno de {OwnerName},\
+    \ pierde |Congelación Profunda|."
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
+  Brief: "Siempre que una carta de |Apoyo de las Hadas| está |Exiliada|, aplica |Frío|\
+    \ a un enemigo aleatorio.\nSiempre que una carta de |Apoyo de las Hadas| se juega\
+    \ , añade al azar un |Apoyo de las Hadas| cartas a la pila de descarte."
+  Description: "Siempre que una carta de |Apoyo de las Hadas| está |Exiliada|, aplica\
+    \ |Frío| a un enemigo aleatorio {Level} ve{Level:plural one='z' other='ces'}.\n\
+    Siempre que una carta de |Apoyo de las Hadas| se juega , añade {Level} carta{Level:plural\
+    \ one=' aleatoria' other='s aleatorias'} de |Apoyo de las Hadas| a la pila de\
+    \ descarte."
 MoreFriendsSe:
   Name: Mariposa Social
+  Description: Al final del turno de {PlayerName}, agrega {Level} carta{Level:plural
+    one=' aleatoria' other='s aleatorias'} |Apoyo de las Hadas| a la mano.
+  Brief: Al final del turno de {PlayerName}, agrega cartas aleatorias de |Apoyo de
+    las Hadas| a la mano.
 YouxiangMoonSe:
   Name: Belleza de la Naturaleza
   Description: Durante el resto del combate, {PlayerName} no se ve afectado por el
@@ -868,14 +910,26 @@ YouxiangMoonSe:
   Brief: Durante el resto del combate, {PlayerName} no se ve afectado por el |Sobregiro|.
 MinengZhuruSe:
   Name: Inyección de Energía Mental
+  Description: "Los efectos pasivos de las cartas de |Apoyo de las Hadas| se activan\
+    \ {Level} ve{Level:plural one='z adicional' other='ces adicionales'}.\n(Esos efectos\
+    \ son \"Mientras está en la mano:\" y \"Al comienzo del turno:\".)"
+  Brief: "Los efectos pasivos de las cartas de |Apoyo de las Hadas| se activan varias\
+    \ veces adicionales.\n(Esos efectos son \"Mientras está en la mano:\" y \"Al comienzo\
+    \ del turno:\".)"
 PurifyModule:
   Name: Módulo de Purificación
+  Description: Cada vez que {OwnerName} golpea a {PlayerName} con un ataque, se |Purifica|{Level}
+    al comienzo del próximo turno de {PlayerName}.
 LightingModule:
   Name: Módulo de Destello
+  Description: Cada vez que {OwnerName} golpea a {PlayerName} con un ataque, agrega
+    {Level} |Destello{Level:plural one='' other='s'}| a la pila de robo.
 EnemyTuanzi:
   Name: Dango Sabroso
+  Description: Al final del turno de {OwnerName}, gana {Level} de vida.
 AccuracyModule:
   Name: Módulo de Orientación
+  Description: Los ataques de {OwnerName} son |Certeros|.
 TempMagic:
   Name: Poder Mágico Temporal
 Magic:
@@ -886,21 +940,44 @@ MagicNegative:
   Name: Perder Magia
 EnemyMaid:
   Name: Limpieza de Kasumi
+  Description: Al final del turno de {OwnerName}, inflige {Level} de daño a {PlayerName}.
 ExtraBlizzard:
   Name: Llegada de la Ventisca
+  Description: Al comienzo del próximo turno de {OwnerName}, inflige {Damage} de daño
+    |Certero| y aplica |Frío| a cada enemigo.
+  Brief: Al comienzo del próximo turno de {OwnerName}, inflige daño |Certero| y aplica
+    |Frío| a cada enemigo.
 FrozenThroneSe:
   Name: Trono de Hielo
+  Description: Al final del turno de {PlayerName}, agrega {Level} |Glaciar{Level:plural
+    one='' other='es'}| a la pila de robo.
+  Brief: Al final del turno de {PlayerName}, agrega |Glaciares| a la pila de robo.
 Immune:
   Name: Bloque de Hielo
+  Description: "{OwnerName} no puede perder vida durante {Duration} turno{Duration:plural\
+    \ one='' other='s'}."
+  Brief: '{OwnerName} no puede perder vida.'
 EnemyDayaojing:
   Name: Unidad de Daiyousei
+  Description: Al final del turno de {OwnerName}, gana {Level} de vida.
 EnemyLarva:
   Name: Alas de Larva
+  Description: Cada vez que {PlayerName} inflige daño por ataque a {OwnerName}, gana
+    {Level} de |Veneno|.
 EnemyLily:
   Name: Anuncio de Lily White
+  Description: Las acciones de {OwnerName} son más poderosas.
 KnifeTarget:
   Name: Objetivo Marcado
+  Brief: Los |Cuchillos Arrojadizos| tendrán como objetivo a {OwnerName}.
+  Description: Los |Cuchillos Arrojadizos| tendrán como objetivo a {OwnerName} cuando
+    se utilice.
 PisiSkillSe:
   Name: Decadencia del Infierno Helado
+  Description: Hasta el final del turno, cada vez que {PlayerName} fuera a ganar |Bloqueo|,
+    inflige {Level} veces más de daño a un enemigo aleatorio.
 AssistSe:
   Name: Unidad
+  Brief: Después del próximo ataque de {PlayerName}, inflige daño a los objetivos.
+  Description: Después del próximo ataque de {PlayerName}, inflige {Level} de daño
+    a los objetivos.
