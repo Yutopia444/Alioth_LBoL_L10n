@@ -428,7 +428,7 @@ PurpleMogu:
   Name: Laccaire d'Améthyste
   Description: Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.
 JungleMaster:
-  Name: Habitants de la Forêt
+  Name: Habitante de la Forêt
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Au début\
     \ du combat| : Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|."
 ManaJungle:
@@ -931,6 +931,7 @@ NiuqiDefense:
     \ {Value1} |Bouclier{Value1:plural one='' other='s'}| pour chaque carte de la\
     \ pile de défausse."
   Name: Bébé de Pierre
+  FlavorText: Heureusement qu'elle n'a pas à élever des bébés transparents.
 SijiCard:
   Description: Choisissez une carte dans la main. Si c'est un |Malheur| ou une carte
     de statut, |Exilez|-la. Sinon, elle coûte {Mana} de moins ce combat et peut être
@@ -1600,7 +1601,7 @@ CloseEyeShoot:
     aléatoire {Value1} fois.
 Zhulianshen:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Exorcisme{Value1:plural one='' other='s'}|."
+    \ {Value1} |Protection{Value1:plural one='' other='s'}|."
   Name: Shimenawa
 LilyChun:
   UpgradedDescription: Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s
@@ -2033,10 +2034,10 @@ Zhukeling:
   Name: Ordre d'Expulsion
   FlavorText: '"Vous êtes un invité indésirable, veuillez reconsidérer votre position."'
 SkyWater:
-  Description: "Gagnez {Shield} |Barrière{Value1:plural one='' other='s'}|.\nLorsque\
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nLorsque\
     \ {PlayerName} finit son tour, gagnez {Value2} |Coopération{Value2:plural one=''\
     \ other='s'}| pour chaque carte défaussée."
-  Name: Miracle Céleste de l'Eau
+  Name: Miracle de l'Eau Céleste
 ToolDraw:
   Name: Sac à Dos Rempli
   Description: "Piochez {Value1:plural one='% carte' other='% cartes'}.\n|Limité【{DeckCounter}】|"
@@ -2094,8 +2095,8 @@ MeilingRain:
   Name: Pluie Très Colorée
 LifeGame:
   Name: Jeu de la Vie
-  Description: "Mélangez la main et la pile de défausse dans la pioche.\nRemélangez\
-    \ la pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  Description: "Placez la main et la pile de défausse dans la pioche.\nMélangez la\
+    \ pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
 SanaeRice:
   Name: Rinçage du Riz
   Description: "Supprimez tous les Malus sur {PlayerName}.\nGagnez {Value1} point{Value1:plural\
@@ -2214,7 +2215,7 @@ DeployDefenseDoll:
 SuikaOut:
   Name: Exorcisme de la Peste
   Description: "Choisissez une carte dans votre main et |Exilez|-la.\nGagnez {Value1}\
-    \ |Exorcisme{Value1:plural one='' other='s'}|."
+    \ |Protection{Value1:plural one='' other='s'}|."
   FlavorText: Il semble que cela n'ait aucun effet sur les ennemis avec une puissance
     de 999.
 ReimuShrine:
@@ -2326,7 +2327,7 @@ SakuyaFuneral:
     \ de {Mana}."
   FlavorText: '"Je ne suis pas encore mort, ma dame."'
 SakuyaDetective:
-  Name: Traquer le Coupable
+  Name: Traque du Coupable
   Description: "Lorsque vous jouez contre un vrai coupable, infligez-lui {Value1}\
     \ dégât{Value1:plural one='' other='s'} au début du combat.\n({BossDamage} dégâts\
     \ ont été accumulés)"
@@ -2450,7 +2451,7 @@ IceGun:
   FlavorText: La vraie technique de la "lance" de glace.
 RemoveOverdraft:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nRestaure\
-    \ tout le mana |Découvert|."
+    \ tout le mana à |Découvert|."
   Name: Glace Pilée aux Fruits
   FlavorText: Saveur fruits tropicaux, frais et délicieux !
 GainDayaojing:
@@ -2484,8 +2485,8 @@ Ice:
   Name: Cristal de Glace
 IceLance:
   Name: Lance de Glace
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nInfligez\
-    \ {Value1} fois les dégâts aux cibles qui ont |Froid|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
+    \ a |Froid|, infligez {Value1} fois les dégâts à la place."
 FreezeBullet:
   Name: Tir Gelé
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nObtenez\
@@ -2509,7 +2510,7 @@ IceBarrier:
   Name: Bouclier de Glace
   Description: Gagnez {Value1} |Armure{Value1:plural one='' other='s'} de Glace|.
 Tether:
-  Name: Esclavage
+  Name: Liens
   Description: "Pour chaque |Soutien Fée| en main, gagnez {Value1} |Puissance{Value1:plural\
     \ one=' Temporaire' other='s Temporaires'}|.\n(total {TotalFire} points)"
 GainLily:
@@ -2577,6 +2578,9 @@ PatchouliLibrary:
   Name: Grande Bibliothèque Immobile
   Description: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes rares aléatoires\
     \ à ajouter à votre main, elle gagne |Exil| et |Éthéré|."
+  UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes rares\
+    \ aléatoires et {Value2} cartes inhabituelles aléatoires à ajouter à votre main,\
+    \ elle a |Exil|, |Éthéré|."
 BailianFire:
   Name: Feu du Dharma
   Description: Lorsque {PlayerName} débute son tour, ajoutez une carte de talent aléatoire
@@ -2595,8 +2599,8 @@ CirnoInForest:
     \ {GainMana}.\n|Croissance| : Gagnez {Mana} supplémentaire."
   FlavorText: Fée de la forêt.
 MoreFriends:
-  Description: À la fin du tour de {PlayerName}, ajoutez {Value1} |Soutien{Value1:plural
-    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+  Description: À la fin du tour de {PlayerName}, ajoutez {Value1:plural one='% |Soutien
+    Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre main.
   Name: Experte en Relations
 FairyOnIce:
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n{PlayerName}\
@@ -2641,8 +2645,10 @@ FreezeToIce:
     égale de |Cristaux de glace| à votre main.
 CirnoFestival:
   Name: Mêlée au Banquet
-  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Value1} |Soutien{Value1:plural
-    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Value1:plural one='% |Soutien
+    Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre main.
+  FlavorText: Des types étranges se sont mélangés à la fête de célébration de l'opération
+    spéciale contre les Lunariens.
 DeepFreeze:
   Name: Danse sur Glace
   Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -2665,15 +2671,16 @@ ForeverCool:
     \ aléatoire est mélangé dans la pile de défausse."
 FairyTrick:
   Name: Farce de Fée
-  Description: "Mélangez {Value1} |Soutien{Value1:plural one=' Fée| aléatoire' other='s\
-    \ Fées| aléatoires'} dans la pioche avec |Renfloue|.\nMélangez {Value2} |Résidu{Value2:plural\
-    \ one=' Sombre' other='s Sombres'}| dans la pile de défausse."
+  Description: "Mélangez {Value1:plural one='% |Soutien Fée| aléatoire' other='% |Soutiens\
+    \ Fées| aléatoires'} dans la pioche avec |Renfloue|.\nMélangez {Value2:plural\
+    \ one='% |Résidu Sombre|' other='% |Résidus Sombres|'} dans la pile de défausse."
 SummerIce:
-  Name: Glace d'Été
+  Name: Smoothie d'Été
   Description: "Inflige aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
     \ aux ennemis {Value1} fois.\n|Découvert| {Value2}."
+  FlavorText: Manger trop de smoothies donne mal à la tête, allez-y doucement !
 Opt:
-  Name: Marcher sur de la Glace Mince
+  Name: Marche sur une Glace Mince
   Description: "Révélez la carte du dessus de la pioche, que vous pouvez placer au-dessous\
     \ de la pioche.\nPiochez une carte.\nObtenez {Mana}."
 OptBottom:
@@ -2684,11 +2691,11 @@ CirnoConsider:
   Description: "|Choix| : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|\
     \ ; ou piochez {Value1} carte{Value1:plural one='' other='s'}."
 CirnoConsiderDefense:
-  Description: Gagnez |Bouclier|.
+  Description: Gagnez des |Boucliers|.
   Name: 'Réflexion : Silence'
 CirnoConsiderDraw:
   Name: 'Réflexion : Réveil'
-  Description: Piochez une carte.
+  Description: Piochez des cartes.
 ColdSnap:
   Name: Refroidissement Rapide
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
@@ -2717,6 +2724,7 @@ FairyAllOut:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis.\n|Exilez| tout les |Soutiens Fées| dans votre main."
   Name: Tous Dehors
+  FlavorText: Tout le monde sort et ne revient jamais.
 FakeMoon:
   Name: Fausse Lune
   FlavorText: Plus luxueux qu'une vraie lune.
@@ -2742,13 +2750,13 @@ CirnoFreeze:
 FairyWrath:
   Name: Colère de la Nature
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à deux ennemis\
-    \ aléatoires.\nPour chaque carte de |Soutien Fée| dans la zone |Exil|, les dégâts\
-    \ sont augmentés de {Value1} point{Value1:plural one='' other='s'}.\n|Découvert|\
-    \ {Value2}."
+    \ aléatoires différents.\nPour chaque carte de |Soutien Fée| dans la zone |Exil|,\
+    \ les dégâts sont augmentés de {Value1} point{Value1:plural one='' other='s'}.\n\
+    |Découvert| {Value2}."
 BestFriend:
   Name: Meilleure Amie
-  Description: Sélectionnez jusqu'à {Value1} |Soutien{Value1:plural one=' Fée' other='s
-    Fées'| dans votre main pour déclencher {Value1:plural one='son' other='leur'}
+  Description: Sélectionnez jusqu'à {Value1:plural one='% |Soutien Fée|' other='%
+    |Soutiens Fées|'} dans votre main pour déclencher {Value1:plural one='son' other='leur'}
     effet actif. (ne cause pas l'|Exil|)
 SummerParty:
   Name: Fête du Gel
@@ -2763,8 +2771,8 @@ SummerParty:
     \ aléatoire' other='s Fées| communs aléatoires'} à votre main."
 FrozenThrone:
   Name: Trône de Glace
-  Description: À la fin du tour, {Value1} |Crista{Value1:plural one='l de Glace| est
-    mélangé' other='ux de Glace| sont mélangés'} dans la pioche.
+  Description: À la fin du tour, {Value1:plural one='% |Cristal de Glace| est mélangé'
+    other='% |Cristaux de Glace| sont mélangés'} dans la pioche.
   FlavorText: Now, we are one !
 ChooseFairy:
   FlavorText: Si vous êtes amoureux, tenez-vous la main.
@@ -2785,3 +2793,6 @@ CirnoFire:
   Name: Glace Combustible
   Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLe coût\
     \ est réduit de {Mana} pour chaque ennemi ayant |Froid|."
+DoubleMana:
+  Name: Réveil de la Fée
+  Description: "Doublez votre mana actuel.\n|Découvert| {Value1}."
