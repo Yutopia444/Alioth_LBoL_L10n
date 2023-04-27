@@ -216,22 +216,25 @@ SakuyaU:
 CirnoU:
   Name: Lodowe Skrzydła
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Cirno| są dodane\
-    \ do puli kart.\nNiebieskie ataki nakładają też |Zimno| na wrogów."
+    \ do puli kart.\nNa początku pierwszej tury {PlayerName:g} w każdej walce dodaj\
+    \ {Value1:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do\
+    \ ręki."
   FlavorText: (W trakcie rozwoju...)
 CirnoG:
   Name: Bujne Zielone Gałęzie
-  Description: Dodaje {BaseMana} do bazy many. Karty unikalne dla |Cirno| są dodane
-    do puli kart.
+  Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Cirno| są dodane\
+    \ do puli kart.\nJeżeli jest jakakolwiek |Naddobrana| mana, zwiększ numeryczne\
+    \ efekty kart ataku i obrony o {Value1}."
   FlavorText: (W trakcie rozwoju...)
 KoishiG:
   Name: Koląca Róża
-  Description: Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane
-    do puli kart.
+  Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
+    \ do puli kart.\nNa początku walki {PlayerName} wchodzi w stan |Super-Ego|."
   FlavorText: (W trakcie rozwoju...)
 KoishiB:
   Name: Wymyślony Przyjaciel
-  Description: Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane
-    do puli kart.
+  Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
+    \ do puli kart.\nGdy {PlayerName} wchodzi w stan |Id|, zyskaj {Value1} |Bariery|."
   FlavorText: (W trakcie rozwoju...)
 PiaoliangPanzi:
   Name: Piękny Talerz
@@ -450,11 +453,12 @@ XiwangMianju:
   FlavorText: Nadzieja na zostanie ponownie odkrytym.
 DiyinLeigu:
   Name: Ciężki Bęben Basowy
-  Description: Gdy {Value1:plural one='% karta' few='% karty' many='% kart'} obrony
-    {Value1:plural one='zostanie zagrana' other='zostaną zagrane'} w jednej turze,
-    zadaj {Value2:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim
-    wrogom.
+  Description: Gdy {PlayerName} zagra kartę tego samego koloru, co ostatnia zagrana
+    karta w tej turze, zyskaj {Value1} |Tymczasowej Mocy|.
   FlavorText: Dzieci lubią w niego walić po kilka razy dla zabawy gdy przechodzą obok.
+  ExtraDescription: "Gdy {PlayerName} zagra kartę tego samego koloru, co ostatnia\
+    \ zagrana karta w tej turze, zyskaj {Value1} |Tymczasowej Mocy|.\nOstatnia zagrana\
+    \ karta była {LastColor}."
 WeifengHuban:
   Name: Potężne Shaku
   Description: Pokonani wrogowie upuszczają między {Value1} a {Value2} więcej <sprite="Point"
