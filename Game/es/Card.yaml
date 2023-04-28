@@ -413,7 +413,7 @@ ToolDroneBlock:
   Description: "Gana {Value1} |Matriz Defensiva|.\n|Limitado【{DeckCounter}】|"
 ToolRandomTool:
   Name: Walkie-Talkie Táctico
-  Description: "Elija 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
+  Description: "Elige 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
     \ Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
   FlavorText: ' "¡Este es el USS Palanquin, lanzamiento aéreo entrante!"'
 ArtificialJewellery:
@@ -590,7 +590,7 @@ HuanxiangTouying:
 HuijuQiankun:
   Name: Confluencia del Yin-Yang
   Description: "|Exilia| cada carta de la mano.\nLuego, agrega un |Orbe Yin-Yang|\
-    \ a la mano Inflige {Value1} más de daño por cada carta |Exiliada| de esa manera."
+    \ a la mano. Aumenta su daño en {Value1} por cada carta |Exiliada| de esta manera."
 QiqingYishi:
   Name: Oración a la Luz del Sol
   Description: Añade un |Arcoíris| a la mano.
@@ -719,8 +719,8 @@ MarisaSteal:
   Name: Materiales "Prestados"
 RainbowStar:
   Description: "Inflige {Damage} de daño.\n|Por cada <sprite=\"ManaSprite\" name=\"\
-    1\"> gastado|: Aumenta el daño en {Value1}.\n|Por cada <sprite=\"ManaSprite\"\
-    \ name=\"P\"> gastado|: Aumenta el daño en {Value2}."
+    1\"> gastado|: {SelfName} inflige {Value1} más de daño.\n|Por cada <sprite=\"\
+    ManaSprite\" name=\"P\"> gastado|: {SelfName} inflige {Value2} más de daño."
   Name: Explosión de Estrellas Arcoíris
 ShibaiChanwu:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
@@ -834,8 +834,8 @@ UpgradePotion:
 MixAndShake:
   Name: Poción de Fuegos Artificiales
   FlavorText: No agitar antes de abrir.
-  Description: "Inflige {Damage} de daño a cada enemigo.\nEl daño aumenta en {Value1}\
-    \ por cada |Poción Inestable| en las pila de robo y descarte."
+  Description: "Inflige {Damage} de daño a cada enemigo.\n{SelfName} inflige {Value1}\
+    \ más de daño por cada |Poción Inestable| en las pilas de robo y de descarte."
 ShootMoon:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Gana {Value1} |Evasión|."
   Name: Disparar a la Luna
@@ -1037,9 +1037,8 @@ KnifeHell:
 BackOfKnife:
   Name: Mis Cuchillos Regresaran
   Description: "Elimina todos los |Cuchillos Arrojadizos exiliados| del combate.\n\
-    Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Inflige {Value1} de daño\
-    \ por cada carta eliminada de esa manera.\n(Infligirá {IncreasedDamage} más de\
-    \ daño)."
+    Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Aumenta su daño en {Value1}\
+    \ por cada carta eliminada de esta manera.\n(Su daño aumentará en {IncreasedDamage}.)"
 StopTime:
   Name: Tiempo Congelado
   Description: Cuando termine el turno de {PlayerName}, conserva {Value1} de maná
@@ -1366,7 +1365,7 @@ DoremyDuplicate:
     \ other='|copias|'} a la mano.\nNo puede elegir |Copias| para este efecto."
 LeidiBlizzard:
   Name: Frío Persistente
-  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo."
+  Description: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo."
 MystiaSing:
   Name: Canción del Gorrión Nocturno
   Description: "Aplica {Value1} |Reducción de Poder Temporal| a cada enemigo.\nGana\
@@ -1721,7 +1720,7 @@ JunkoNightmare:
     \ de |Puros| a la mano."
 ZoufangWater:
   Name: Agua Cristalina de Suwa
-  Description: "Inflige {Damage} de daño {Value1} veces.\nEste daño se incrementa\
+  Description: "Inflige {Damage} de daño {Value1} veces.\nAumenta el daño de {SelfName}\
     \ en {Value2} por cada carta de |Habilidad| jugada en este combate. ({AdditionalDamage})"
 LigeluCard:
   Description: "Obtén {Block} de |Bloqueo|.\nGana {Value1} <sprite=\"Point\" name=\"\
@@ -1740,8 +1739,8 @@ TodayYesterday:
   Description: "Siempre que {PlayerName} |Evada| un ataque, gana {Value1} de |Poder|.\n\
     Obtén {Value2} de |Evasión|."
 FakeHuiye:
-  Description: "|d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en\
-    \ una futura actualización!|"
+  Description: "|d:Habrá más cartas para desbloquear en futuras actualizaciones.\n\
+    Estén atentos.|"
   Name: Cuento del Cortador de Bambú (Forjado)
 LilyChun:
   Name: ¡Llego la Primavera!
@@ -1777,11 +1776,11 @@ YachieDefend:
     \ redirige esa pérdida de vida a ese enemigo."
 LimaoAttack:
   Name: Pompokolín de Luna Llena
-  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\n|Crecimiento|:\
-    \ Gana un {Mana} adicional."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {GainMana}.\n|Crecimiento|:\
+    \ Gana {Mana} más."
 RuowujiCard:
   Name: Olas de Escala Invertida
-  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica {Value1} de |Ahogar|."
+  Description: "Inflige {Damage} de daño y aplica {Value1} de |Ahogar| a cada enemigo."
 PrismriverAll:
   Name: Concierto Prísmico
   Description: "Gana {Mana}.\nConvierte todo el maná que {PlayerName} ganaría este\
@@ -1967,7 +1966,7 @@ BailianFire:
     a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
   UpgradedDescription: "Al comienzo del turno de {PlayerName}, agrega una carta técnica\
     \ aleatoria a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\n\
-    Este efecto se aplica inmediatamente."
+    Se activa {SelfName} inmediatamente."
 GainLuna:
   Name: Luz de la Luna
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
@@ -1990,9 +1989,9 @@ SanaeMiracle:
   ExtraDescription1: "|d:Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural\
     \ one='vez' other='veces'}.|\nSolo se puede usarse si la pila de robo está vacía."
 KaguyaTreeSee:
-  Description: "Esta carta cuesta {Mana} menos por cada vez que {PlayerName} recibe\
-    \ daño en este combate.\nMueve todas las cartas con |Exilio| del exilio a la pila\
-    \ de robo.\nTodas las cartas pierden |Exilio|."
+  Description: "{SelfName} cuesta {Mana} menos cada vez que {PlayerName} ha recibido\
+    \ daño en este combate.\nDevuelve todas las cartas |Exiliadas| con |Exilio| a\
+    \ la pila de robo.\nTodas las cartas pierden |Exilio|."
 MistLake:
   Description: "Obtén {Value1} de |Evasión|.\nSi hay 3 o más manás sin gastar, roba\
     \ {Value2} carta{Value2:plural one='' other='s'}."
@@ -2002,12 +2001,12 @@ KanakoWalk:
     \ |Retienes| en la mano las cartas y todo el maná no gastado."
 FlanBlack:
   Name: Demonización
-  Description: "|d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en\
-    \ una futura actualización!|"
+  Description: "|d:Esta carta está actualmente en desarrollo.\nVuelva a mirar en una\
+    \ futura actualización.|"
 TigerNeijin:
   Description: "Obtén {Value1} de |Poder|. Aumenta el |Poder| de esta carta. por {Value2}\
     \ en este combate.\nSiempre que {PlayerName} reciba daño por un ataque no bloqueado,\
-    \ devuelve esta carta de la pila de descarte a la mano."
+    \ devuelve {SelfName} de la pila de descarte a la mano."
 LongArm:
   Description: "Inflige {Damage} de daño.\nSi hay más de {Value1} carta{Value1:plural\
     \ one='' other='s'} en la mano, gana {Mana}."
@@ -2020,11 +2019,11 @@ CallFriends:
 HualiIce:
   Name: Imponente Hielo de Verano
   UpgradedDescription: "Juega esto solo si un total de {Value1} cartas que han sido\
-    \ jugadas o |Exiliadas| en este turno\n({Countdown:plural one='% carta restante'\
+    \ jugadas o |Exiliadas| en este turno. ({Countdown:plural one='% carta restante'\
     \ other='% cartas restantes'}.)\nInflige {Damage} de daño a cada enemigo.\nAplica\
     \ |Frío| a cada enemigo {Value2} ve{Value2:plural one='z' other='ces'}."
   Description: "Juega esto solo si un total de {Value1} cartas que han sido jugadas\
-    \ o |Exiliadas| en este turno\n({Countdown:plural one='% carta restante' other='%\
+    \ o |Exiliadas| en este turno. ({Countdown:plural one='% carta restante' other='%\
     \ cartas restantes'}.)\nInflige {Damage} de daño a cada enemigo.\nAplica |Frío|\
     \ a cada enemigo.\n"
   UpgradedNonbattleDescription: "Juega esto solo si hay un total de {Value1} carta{Value1:plural\
@@ -2067,9 +2066,9 @@ Blizzard:
     \ cada enemigo.\nSe repite de nuevo al comienzo del próximo turno de {PlayerName}."
 IceMatrix:
   Name: Matriz Congelador
-  Description: "Cada vez que {PlayerName} recibe daño por ataque, pierde 1 |Armadura\
-    \ de Escarcha| adicional para aplicarle |Frío| al atacante.\nGana {Value1} |Armadura\
-    \ de Escarcha|."
+  Description: "Después de que {PlayerName} sea atacada, si fue golpeado, pierde 1\
+    \ |Armadura de Escarcha| adicional para aplicarle |Frío| al atacante.\nGana {Value1}\
+    \ |Armadura de Escarcha|."
 GainSunny:
   Name: Amanecer
   Description: "Inflige {Damage} de daño a cada enemigo {Value1} veces.\nAñade una\
