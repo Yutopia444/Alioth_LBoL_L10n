@@ -308,12 +308,9 @@ SeeFengshuiSe:
     \ sent to the discard pile while |Scrying|, gain |Block|."
 YonglinCardSe:
   Name: The Reclusive Sage
-  Brief: When {PlayerName} plays the first card each round, add copies of that card
-    to the hand. They |temporarily cost| {Mana} and have |Exile| and |Ethereal|.
-  Description: When {PlayerName} plays the first card each round, add {Level:plural
-    one='a copy' other='% copies'} of that card to the hand. {Level:plural one='It
-    |temporarily costs|' other='They |temporarily cost|'} {Mana} and {Level:plural
-    one='has' other='have'} |Exile| and |Ethereal|.
+  Brief: At the end of {PlayerName}'s turn, add a |False Moon| to the draw pile.
+  Description: At the end of {PlayerName}'s turn, add {Level} |False Moon{Level:plural
+    one='' other='s'}| to the draw pile.
 ShannvAbilitySe:
   Name: Unknown Fever
   Description: At the end of {PlayerName}'s turn, apply {Level} |Poison| to each enemy.
@@ -493,7 +490,7 @@ LongEscape:
   Description: '{OwnerName} will leave the battle when her life is less than {Level}.'
   Name: Ease Up
 FlatPeach:
-  Description: Whenever {OwnerName} is dealt damage, she gains {Level} life.
+  Description: Whenever {OwnerName} takes damage, she gains {Level} life.
   Name: Heavenly Peach
 Sleep:
   Description: "{OwnerName}'s |Barrier| is replenished to {Level} at the end of her\
@@ -721,9 +718,9 @@ RangziFanshuSe:
   Brief: Gain some life at the end of combat.
 SkyWaterSe:
   Name: Heavenly Water Miracle
-  Brief: At the end of {PlayerName}'s turn, gain |协力| for each card discarded that
+  Brief: At the end of {PlayerName}'s turn, gain |Unity| for each card discarded that
     way.
-  Description: At the end of {PlayerName}'s turn, gain {Level} |协力| for each card
+  Description: At the end of {PlayerName}'s turn, gain {Level} |Unity| for each card
     discarded that way.
 ReimuFestivalSe:
   Description: At the start of {PlayerName}'s turn, gain {Level} |Temporary Firepower|.
@@ -884,11 +881,10 @@ FrozenThroneSe:
     one='' other='s'}| to the draw pile.
 IceMatrixSe:
   Name: Frozen Matrix
-  Description: Whenever {OwnerName} recieves attack damage, lose {Level} additional
-    |Frost Armor| to apply |Cold| to the attacker {Level} time{Level:plural one=''
-    other='s'}.
-  Brief: Whenever {OwnerName} receives attack damage, lose additonal |Frost Armor|
-    to apply |Cold| to the attacker.
+  Description: Whenever {OwnerName} takes attack damage, lose {Level} additional |Frost
+    Armor| to apply |Cold| to the attacker {Level} time{Level:plural one='' other='s'}.
+  Brief: Whenever {OwnerName} takes attack damage, lose additonal |Frost Armor| to
+    apply |Cold| to the attacker.
 Immune:
   Name: Ice Block
   Description: "{Owner Name} can't lose life for {Duration} turn{Duration:plural one=''\
@@ -920,7 +916,7 @@ FrostArmor:
     \ |Frost Armor|."
   Brief: "Whenever {PlayerName} gains |Frost Armor|, gain that much |Block|.\nAt the\
     \ start of {OwnerName}'s turn, gain |Block| and lose 1 |Frost Armor|.\nWhenever\
-    \ {OwnerName} recieves unblocked attack damage, lose 1 |Frost Armor|."
+    \ {OwnerName} takes unblocked attack damage, lose 1 |Frost Armor|."
 ExtraBlizzard:
   Name: Blizzard's Advent
   Description: At the start of {OwnerName}'s next turn, she deals {Damage} |Accurate|
