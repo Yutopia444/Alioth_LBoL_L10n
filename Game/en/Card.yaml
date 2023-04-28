@@ -595,9 +595,7 @@ HatateDiscard:
   Name: News Fabrication
   UpgradedDescription: "Discard between {Value1} to {Value2} cards.\nGain {Mana}."
 LeidiBlizzard:
-  Description: 'Deal {Damage} damage to each enemy.
-
-    Apply |Cold| on hit.'
+  Description: 'Deal {Damage} damage and apply |Cold| to each enemy.'
   Name: Lingering Cold
 GuijiZaoxingYuan:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\n{SelfName} transforms\
@@ -621,7 +619,7 @@ WaterPrincess:
     \ Add a |Splash| to the hand."
   Name: Princess Undine
 YonglinCard:
-  Description: 'At the end of {PlayerName}''s turn, add {Value1} |虚假之月{Value1:plural
+  Description: 'At the end of {PlayerName}''s turn, add {Value1} |False Moon{Value1:plural
     one='''' other=''s''}| to the draw pile.'
   Name: The Reclusive Sage
   FlavorText: The sage of wisdom chose to hide, so is hiding an act of wisdom?
@@ -1063,8 +1061,8 @@ MeihongFire:
     This also happens when a |Misfortune| or Status card is drawn."
   Name: Indiscriminate Ignition
 TiangouOrder:
-  Description: "Deal {Damage} damage.\nWhenever that enemy is dealt attack damage,\
-    \ {PlayerName} gains {Value1} |Block|."
+  Description: "Deal {Damage} damage.\nWhenever that enemy takes attack damage, {PlayerName}\
+    \ gains {Value1} |Block|."
   Name: Great Tengu's Decree
 SeeFengshui:
   Description: "At the start of {PlayerName}'s turn, |Scry| {Value1}.\nWhenever a\
@@ -1639,7 +1637,7 @@ ZoufangWater:
   Name: Suwa Clear Water
 RuowujiCard:
   Name: Waves of Reversed Scale
-  Description: "Deal {Damage} damage to each enemy. \nApply {Value1} |Drowning|."
+  Description: "Deal {Damage} damage and apply {Value1} |Drowning| to each enemy."
 JunkoNightmare:
   Name: Shivering Nightmare
   Description: "Deal {Damage} damage to each enemy {Value1} time{Value1:plural one=''\
@@ -1814,15 +1812,16 @@ LimaoAttack:
     \ an additional {Mana}."
 TigerNeijin:
   Description: "Gain {Value1} |Firepower|. Increase this card's |Firepower| by {Value2}\
-    \ this combat.\nWhenever {PlayerName} is dealt unblocked attack damage, return\
-    \ this card from the discard pile to the hand."
+    \ this combat.\nWhenever {PlayerName} takes unblocked attack damage, return this\
+    \ card from the discard pile to the hand."
 KaguyaTreeSee:
   Description: "This card costs {Mana} less for each time {PlayerName} took damage\
     \ this combat.\nMove all cards with |Exile| from exile to the draw pile.\nAll\
     \ cards lose |Exile|."
 MeilingRain:
-  Description: "Deal {Damage} damage to each enemy {AttackTimes} times.\n|For each\
-    \ {Mana} spent|: Deal that damage to each enemy an additional time."
+  Description: "Deal {Damage} damage to each enemy {AttackTimes} time{AttackTimes:plural\
+    \ one='' other='s'}.\n|For each {Mana} spent|: Deal that damage to each enemy\
+    \ an additional time."
   Name: Vivid Color Downpour
 KanakoWalk:
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}. |Exile| all status\
@@ -2100,7 +2099,7 @@ DeepFreeze:
     \ an enemy already has |Cold|, apply |Deep Freeze| to them instead."
 IceMatrix:
   Name: Frozen Matrix
-  Description: "Whenever {PlayerName} recieves attack damage, lose 1 additional |Frost\
+  Description: "Whenever {PlayerName} takes attack damage, lose 1 additional |Frost\
     \ Armor| to apply |Cold| to the attacker.\nGain {Value1} |Frost Armor|."
 CirnoEcho:
   Name: Gift of Nature
