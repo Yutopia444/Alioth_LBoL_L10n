@@ -571,17 +571,16 @@ TimeAuraSe:
   Brief: "At the end of {PlayerName}'s turn, deal damage to each enemy.\nLose a level\
     \ for each enemy damaged."
 PerfectServantUSe:
-  Description: At the start of {OwnerName}'s next turn, they add {Level} {Mana} and
-    draw {Level:plural one='% card' other='% cards'}.
-  Brief: At the start of the next turn of {OwnerName}, gain some {Mana}, draw extra
-    cards.
+  Description: At the start of {OwnerName}'s next turn, gain {Level} {Mana} and draw
+    {Level:plural one='% card' other='% cards'}.
+  Brief: At the start of {OwnerName}'s next turn, gain {Mana} and draw extra cards.
   Name: Additional Solutions
 PerfectServantWSe:
   Description: After {OwnerName}'s next draw step, all cards in the hand |temporarily
-    cost| {Level} less to play.
+    cost| {Level} random mana less to play.
   Brief: After {OwnerName}'s next draw step, all cards in the hand |temporarily cost|
     some random mana less to play.
-  Name: Ready to go
+  Name: Ready to Go
 Poison:
   Description: At the start of {OwnerName}'s turn, they lose {Level} life, then lose
     1 |Poison|.
@@ -731,14 +730,11 @@ PotionBaseDamageSe:
   Brief: '|Unstable Potions| deal more damage.'
   Description: '|Unstable Potions| deal {Level} more damage.'
 WhiteWorldSe:
-  Brief: "At the end of {PlayerName}'s turn, gain 1 |Glacial Plating|.\n|Glacial Plating|:\
-    \ The first card played each turn costs more to play.\nAt the start of {PlayerName}'s\
-    \ turn, gain 4 |Temporary Firepower| and 4 |Temporary Spirit|."
+  Brief: "At the end of {PlayerName}'s turn, gain |Firepower| and |Spirit|, and |Mana\
+    \ Freeze| {Mana}."
   Name: Pure White World
-  Description: "At the end of {PlayerName}'s turn, gain 1 |Glacial Plating|.\n|Glacial\
-    \ Plating|: The first card played each turn costs {Mana} more to play.\nAt the\
-    \ start of {PlayerName}'s turn, gain 4 |Temporary Firepower| and 4 |Temporary\
-    \ Spirit|."
+  Description: "At the end of {PlayerName}'s turn, gain {Level} |Firepower| and |Spirit|,\
+    \ and |Mana Freeze| {Mana}."
 ExtraDraw:
   Name: Extra Draw
   Description: At the start of {PlayerName}'s turn, draw {Level} card{Level:plural
@@ -746,10 +742,10 @@ ExtraDraw:
   Brief: At the start of {PlayerName}'s turn, draw a card.
 FairyTreeSe:
   Name: Fairies' Abode
-  Description: When a skill card enters the hand for the first time each turn, gain
-    {Mana} and draw 1 card.
-  Brief: When a skill card enters the hand for the first time each turn, gain mana
-    and draw 1 card.
+  Description: When a skill card is added to the hand for the first time each turn,
+    gain {Mana} and draw {Level} card{Level:plural one='' other='s'}.
+  Brief: When a skill card is added to the hand for the first time each turn, gain
+    {Mana} and draw cards.
 NextTurnColdAll:
   Name: Winter is Coming
   Description: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy.
