@@ -904,6 +904,8 @@ IceLaser:
   Name: Zamrażający Strzał
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ i nałóż |Chłód|."
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nNałóż |Chłód|.\nZrób to ponownie losowemu wrogowi."
 SummerFlower:
   Name: Hodowanie Kwiatów
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1807,6 +1809,7 @@ SakuyaUsage:
 UnlimitedTime:
   Description: Wybierz jedną z {Value1} kart z |Limitem Czasowym| aby dodać do ręki.
     |Tymczasowo Kosztuje| {Mana}, ma |Wygnanie|, |Eteryczność| i traci |Limit Czasowy|.
+  Name: Pełne Zatrzymanie Czasu
 FreezeBullet:
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Lodowego Pancerza|."
   Name: Zamrażający Strzał
@@ -1876,11 +1879,11 @@ GainMaid:
 RemoveOverdraft:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Usuń |Naddobór| {PlayerName:g}."
-  Name: Uleczyć Blizny
+  Name: Owocowy Kruszony Lód
 GainDayaojing:
   ExtraDescription1: "Dodaj |Wspólność Daiyousei| do ręki.\n|d:Debiut: Ulecz {Value1:plural\
     \ one='% punkt' few='% punkty' many='% punktów'} życia.|"
-  Name: Najlepsze Przyjaciółki
+  Name: Ciche Kibicowanie
   Description: "Dodaj |Wspólność Daiyousei| do ręki.\n|Debiut|: Ulecz {Value1:plural\
     \ one='% punkt' few='% punkty' many='% punktów'} życia."
 CallFriends:
@@ -2097,6 +2100,9 @@ MorphMan:
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
 FrozenThrone:
   FlavorText: Now, we are one!
+  Name: Zamrożony Tron
+  Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% |Lodowiec|'
+    few='% |Lodowce|' many='% |Lodowców|'} do stosu doboru.
 LongArm:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli w dłoni jest więcej niż {Value1:plural one='% inna karta' few='% inne karty'\
@@ -2207,3 +2213,60 @@ Psychedelic:
   Name: Halucynogen
   Description: "|Na Końcu Tury|: Strać {Value1:plural one='% punkt' few='% punkty'\
     \ many='% punktów'} życia i zyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
+OptBottom:
+  Name: Zatop
+  Description: Umieść tę kartę na spód stosu doboru.
+CirnoConsiderDefense:
+  Name: 'Ostrożna Rozwaga: Cisza'
+  Description: Zyskaj |Blok|.
+CirnoConsiderDraw:
+  Description: Dobierz karty.
+  Name: 'Ostrożna Rozwaga: Objawienie'
+ColdSnap:
+  Name: Prędki Chłód
+  Description: "Zyskaj {Block} |Bloku|.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nUmieść kartę w dłoni na spód stosu doboru."
+SummerIce:
+  Name: Letni Lód
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\n|Naddobór| {Value2}."
+CirnoConsider:
+  Name: Ostrożna Rozwaga
+  Description: "|Wybierz|: Zyskaj {Block} |Bloku| lub dobierz {Value1:plural one='%\
+    \ kartę' few='% karty' many='% kart'}."
+DoubleMana:
+  Description: "Podwój istniejącą manę.\n|Naddobór| {Valuie1|."
+  Name: Obudzenie Wróżki
+BestFriend:
+  Name: Najlepsza Przyjaciółka
+  Description: Wybierz do {Value1:plural one='% karty' other='% kart'} |Wsparcia Wróżek|
+    w dłoni. Użyj ich efektu aktywowania raz (Bez ich |Wygnania|).
+DiamondBlizzard:
+  Name: Diamentowy Filar
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\n|Wybierz|: Nałóż |Chłód| wszystkim wrogom lub zyskaj {Block}\
+    \ |Bloku|."
+ColdChain:
+  Description: Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}
+    ze stosu doboru i umieść {Value1:plural one='ją' other='je'} w dłoni. {Value1:plural
+    one='Zyskuje ona' other='Zyskują one'} |Przetrzymanie|.
+  Name: Zimny Łańcuch Logistyczny
+Opt:
+  Name: Na Cienkim Lodzie
+  Description: "Spójrz na kartę na szczycie stosu doboru. Możesz ją umieścić na spód\
+    \ stosu doboru.\nDobierz kartę.\nZyskaj {Mana}."
+CirnoFire:
+  Name: Łatwopalny Lód
+  Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| {SelfName} kosztuje\
+    \ o {Mana} mniej."
+FairyWrath:
+  Name: Gniew Natury
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ dwóm losowym wrogom.\nZa każdą |Wygnaną| kartę |Wsparcia Wróżek| {SelfName}\
+    \ zadaje o (Value1} więcej obrażeń.\n|Naddobór| {Value2}."
+DiamondBlizzardCold:
+  Name: 'Diamentowy Filar: Chłód'
+  Description: Zadaj obrażenie i nałóż |Chłód|.
+DiamondBlizzardDefense:
+  Name: 'Diamentowy Filar: Bariera'
+  Description: Zadaj obrażenia i zyskaj |Blok|.
