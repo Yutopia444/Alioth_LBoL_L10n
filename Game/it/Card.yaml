@@ -94,7 +94,8 @@ Zhuizongfu:
     \ Ottieni {Mana}."
 ReimuFestival:
   Name: Banchetto Senza Fine
-  Description: All'inizio del turno di {PlayerName}, ottieni {Value1} |Potenza Temporanea|.
+  Description: "{PlayerName} ottiene {Value1} |Potenza Temporanea| all'inizio del\
+    \ suo turno."
 FengyinYaomo:
   Name: Cerchio Ammazza Draghi
   Description: "Causa {Damage} {Damage:plural one='danno' other='danni'}\nApplica\
@@ -111,13 +112,12 @@ ReimuHeavyAttack:
     aumenta i danni di {SelfName} {Value1} volt{Value1:plural one='a' other='e'}.
 ReverseJiejie:
   Name: Limite Inverso
-  Description: Quando {PlayerName} perde uno status positivo, Ottieni {Value1} |Barriera|.
+  Description: Quando {PlayerName} perde un buff, Ottieni {Value1} |Barriera|.
 Changzhizhen:
   Name: Limite Permanente
   Description: "|Alla fine del turno|: Causa {Value1} {Value1:plural one='danno' other='danni'}\
-    \ ad un nemico casuale.\n|Mentre è nella mano|: Quando {PlayerName} perde uno\
-    \ status positivo, aumenta di {Value2} i danni causati da {SelfName} per il resto\
-    \ del combattimento."
+    \ ad un nemico casuale.\n|Mentre è nella mano|: Quando {PlayerName} perde un buff,\
+    \ aumenta di {Value2} i danni causati da {SelfName} per il resto del combattimento."
 ReimuLucky:
   Name: Colpo di Fortuna
   Description: "Ottieni {Value1} |{Value1:plural one='Amuleto' other='Amuleti'}|.\n\
@@ -134,6 +134,8 @@ JiejieAttack:
   Name: Colpo di Barriera
   Description: "Causa {Damage} {Damage:plural one='danno other='danni'}.\nCausa danni\
     \ extra uguali alla |Barriera| in possesso di {PlayerName}. ({ShieldDamage})"
+  NonbattleDescription: "Causa {Damage} {Damage:plural one='danno other='danni'}.\n\
+    Causa danni extra uguali alla |Barriera| in possesso di {PlayerName}."
 MengzhiYuzha:
   Name: Talismano dei Sogni
   Description: "Causa {Damage} {Damage:plural one='danno' other='danni'}.\nAggiungi\
@@ -145,3 +147,71 @@ WunvKongwu:
 ShensheRichang:
   Name: Vita Quotidiana
   Description: "Ottieni {Value1} Vita.\nConverti lo |Scudo| di {PlayerName} in |Barriera|."
+ReimuShrine:
+  Name: Fiera del Tempio
+  Description: "{PlayerName} ottiene {Value1} |Spirito Temporaneo| all'inizio del\
+    \ suo turno."
+YakongDianxue:
+  Name: Fenditura Dimensionale
+  FlavorText: È una pugnalata alle spalle!
+  Description: "Causa {Damage} {Damage:plural one='danno' other='danni'}.\nQuando\
+    \ {PlayerName} perde un buff, {SelfName} ritorna alla mano dalla pila degli scarti."
+FreeFly:
+  Description: "{PlayerName} ottiene {Mana} all'inizio del suo turno."
+  Name: Volo libero
+  FlavorText: Essere in grado di volare, una cosa estremamente rara nel mondo esterno,
+    è comune in Gensokyo.
+YinyangXueyin:
+  Name: Runa Yin-Yang
+  Description: "Perdi {Value2} vita.\nQuando {PlayerName} usa una |Sfera Yin-Yang|,\
+    \ ottieni {Value1} |Potenza Temporanea| e |Spirito Temporaneo|."
+ReimuDrink:
+  Name: Offerta di sakè
+  Description: "Ottieni {Value1} vita.\nAggiungi {Value2} cart{Value2:plural one='a'\
+    \ other='e'} |Brilla| alla mano."
+  UpgradedDescription: "Ottieni {Value1} vita.\nOttieni {Value1} |Potenza Temporanea|.\n\
+    Aggiungi {Value2} cart{Value2:plural one='a' other='e'} |Brilla| alla mano."
+TaijiLiangyi:
+  Name: Nascita dello Yin-Yang
+  Description: All'inizio del turno suo turno, {PlayerName} aggiunge una |Sfera Yin-Yang|
+    alla mano se non ce n'è neanche una in mano.
+Wunvyu:
+  Name: Sfere Hakurei Malvagie
+  Description: "Causa {Damage} {Damage:plural one='danno' other='danni'} {Value1}\
+    \ volt{Value1:plural one='a' other='e'}.\n|Mentre è nella mano|: Quando una carta\
+    \ viene pescata al di fuori della fase di pesca, I danni di {SelfName} aumentano\
+    \ di {Value2} per il resto del combattimento."
+MomentPower:
+  Name: Frattura Dimensionale Instantanea
+  Description: Quando {PlayerName} ottiene |Potenza Temporanea| or |Spirito Temporaneo|,
+    trasformane rispettivamente {Value1} in |Potenza| o |Spirito|.
+ChuanyueJiejie:
+  Name: Attraversare il Confine
+  Description: "Ottieni {Shield} |Barrier|.\nRitorna una carta |Esiliata| alla mano."
+HuanxiangTouying:
+  Name: Trace On
+  UpgradedDescription: "Ottieni {Mana}.\nScegli una su {Value1} carte casuali ed aggiungila\
+    \ alla mano. La carta avrà |Esilia| ed |Eterea|.\nIl costo di mana totale delle\
+    \ carte sarà rispettivamente 1, 2, 3, 4 e 5."
+  Description: "Ottieni {Mana}.\nScegli una su {Value1} carte casuali ed aggiungila\
+    \ alla mano. La carta avrà |Esilia| ed |Eterea|.\nIl costo di mana totale delle\
+    \ carte sarà rispettivamente 1, 2 e 3."
+Misfortune:
+  Name: Sventura
+HuanxiangBlock:
+  Name: Frontiera della Fantasia
+  Description: Quando una carta viene |Esiliata|, ottieni {Value1} |Scudo|.
+QinggeManwu:
+  Name: Valzer della Sacerdotessa
+  Description: Pesca {Value1} cart{Value1:plural one='a' other='e'} e |Miglioral{Value1:plural
+    one='a' other='e'}| fino alla fine del combattimento.
+  UpgradedDescription: "Pesca {Value1} cart{Value1:plural one='a' other='e'} e |Miglioral{Value1:plural\
+    \ one='a' other='e'}| fino alla fine del combattimento. \nOttieni {Value2} |Barriera|\
+    \ per ogni carta che viene pescata già |Migliorata| usando {SelfName}."
+ReimuFreeAttack:
+  Description: "Ottieni {Block} |Scudo|.\n{Value1:plural one='La prossima carta' other='Le\
+    \ prossime % carte'} attacco costa{Value1:plural one='' other='no'} {Mana}."
+EvilTuiZhi:
+  Name: Sterminare il Male
+  Description: "{Value1:plural one='La prossima carta' other='Le prossime % carte'}\
+    \ giocate causa{Value1:plural one='' other='no'} il doppio dei danni."
