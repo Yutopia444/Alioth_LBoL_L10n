@@ -573,7 +573,7 @@ LilyoftheValley:
 NewsNegative:
   Description: "<sprite=\"Point\" name=\"Power\">{Value1}を失う。\n|消耗品【{DeckCounter}】|"
 EmpCard:
-  Description: "{Damage}ダメージを与える。\n対象が|ドローン|である場合、それは{Value1}ターン行動できない。\n|消耗品【{DeckCounter}】|"
+  Description: "{Damage}ダメージを与える。\n対象が|ドローン|なら、それは{Value1}ターン行動できなくなる。\n|消耗品【{DeckCounter}】|"
 HatateNews:
   Name: 花果子念報
 LoveLetter:
@@ -660,7 +660,7 @@ XiaodingKill:
   Description: ライフが{Value1}以下の対象を即死させる。
 QingeUpgrade:
   Name: 邪仙の秘法
-  Description: "{Damage}のダメージを与える。\n|退治|：デッキのカードを1枚アップグレードする。"
+  Description: "{Damage}のダメージを与える。\n|退治|：デッキのカードを1枚永久に|アップグレード|する。"
 RainbowMarket:
   Name: 月虹市場
   Description: カードを|廃棄|する度、ランダムなカードを手札に加える。
@@ -709,7 +709,7 @@ SakuyaAttackU:
   Description: '{Damage}のダメージを与える。'
   Name: トランプ射撃
 SilverBullet:
-  Description: 敵全体に{Damage}のダメージを与える。
+  Description: 敵全体に{Damage}ダメージを与える。
 SakuyaBlockW:
   Description: '{Block}のブロックを得る。'
 VampireHunter:
@@ -719,19 +719,23 @@ LunaDial:
 ShengquanZaiwo:
   Description: '{Mana}を得る'
 PrivateVision:
-  Name: パーソナルビジョン
+  Name: プライベートヴィジョン
+  Description: "手札を1枚捨てる。\n|グレイズ|{Value1}を得る。"
+  UpgradedDescription: "手札を1枚捨てる。\n|グレイズ|{Value1}を得る。\n|反射|{Value2}を得る。"
 KnifeBounce:
-  Description: "{Damage}ダメージを与える。\n|投げナイフ|{Value1}枚を手札に加える。"
+  Description: "{Damage}ダメージを与える。\n|投げナイフ|を{Value1}枚手札に加える。"
   Name: 跳弾するナイフ
 Lijian:
   Name: 離剣乱舞
-  Description: "{Damage}ダメージを与える。\n|ドロー時|：戦闘終了までこのカードのコストを{Mana}少なくする。"
+  Description: "{Damage}ダメージを与える。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}少なくする。"
 SakuyaDetective:
   Name: 真犯人を追及する
 SakuyaKiller:
   Name: 夜霧の幻影殺人鬼
 SakuyaTea:
   Name: 紅茶を入れる
+  ExtraDescription1: "カードを {Value1} 枚引く。\n|初見}：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
+  Description: "カードを{Value1}枚引く。\n|初見}：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
 SakuyaShop:
   Description: "{Mana}を得る\nカードを{Value1}枚引く"
   Name: 物資を仕入れる
@@ -739,3 +743,53 @@ BackToFuture:
   Name: 未来に戻る
 SakuyaClock:
   Name: 咲夜特製ストップウォッチ
+SakuyaWeak:
+  Description: "|脱力|{Value1}を与える。\n{Mana}を得る。"
+  Name: 拘束時間
+  FlavorText: 時を止めれば休憩時間は無限大。
+DefenseDraw:
+  Name: ルナクロック
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}下げる。"
+AttackMagic:
+  Name: 弾幕手品
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\n|投げナイフ|を{Value2}枚手札に加える。"
+SilverJump:
+  Description: "|弱体|{Value1}を与える。\n山札と捨て札に|投げナイフ|を{Value2}枚ずつ加える。"
+  Name: ダモクレスの刃
+CoolMaid:
+  Name: 瀟洒なメイド
+  Description: "|投げナイフ|を{Value1}枚手札に加える。\n{Mana}を得る。"
+BladePower:
+  Description: "|火力|{Value1}を得る。\nこのカードを引いた時、手札に他のカードが無い場合このカードの|臨時コスト|を{Mana}にする。"
+Dejavu:
+  Name: デジャヴ
+  Description: "手札から最大{Value1}枚のカードを選び山札の一番上に置いてもよい。\nカードを{Value1}枚引く。\n{Mana}を得る。"
+  FlavorText: なんだ猫か…
+CleanRoom:
+  Name: 部屋掃除
+  Description: "手札を1枚捨てる。カードを{Value1}枚引く。\n手札のランダムなカード{Value2}枚を戦闘終了まで|アップグレード|する。\n\
+    このカードの効果で|投げナイフ|を捨てていたなら代わりに手札のカードを全てアップグレードする。"
+SakuyaSleep:
+  Name: 一休み
+  Description: "|幻虹|を手札に加える。\n{PlayerName}のターンを終了する。"
+TimeAuraAttack:
+  Name: タイムマジック
+  Description: "{Damage}ダメージを与える。\n|タイムパルス| {Value1} を得る。"
+Knife:
+  Name: 投げナイフ
+  Description: "{Damage}ダメージを与える。\n{SelfName}が使用される以外の方法で手札を離れた時、ライフが最も少ない敵に{DropDamage}ダメージを与える。"
+SakuyaSnow:
+  Name: 降雪決行
+  Description: "{Block}|ブロック|を得る。\n|投げナイフ|を{Value1}枚手札に加える。"
+ExileMagic:
+  Description: 手札のカードを{Value1}枚まで|廃棄|する。廃棄した枚数と同じ数の|投げナイフ|を手札に加える。
+  Name: チェンジリングマジック
+GainKnife:
+  Description: '{PlayerName}のターン開始時に|投げナイフ|を{Value1}枚手札に加える。'
+  UpgradedDescription: "{PlayerName}のターン開始時に|投げナイフ|を{Value1}枚手札に加える。\n|投げナイフ|を{Value2}枚手札に加える。"
+SakuyaTwiceAttack:
+  Name: ルミネスリコシェ
+  Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n|投げナイフ|を{Value2}枚手札に加える。"
+SakuyaGoOut:
+  Name: 準備
+  Description: "カードを{Value1}枚引く。\n手札を{Value1}枚捨てる。\n{Mana}を得る。"
