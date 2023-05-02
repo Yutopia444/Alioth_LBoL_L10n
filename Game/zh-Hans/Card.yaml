@@ -1352,10 +1352,10 @@ ColdBreath:
   Description: 随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
   UpgradedDescription: |-
     随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
-    |初见|：将 {Value1} 张|冰晶|置于抽牌堆顶。
+    |初见|：将 {Value1} 张|冰晶|加入手中。
   ExtraDescription1: |-
     随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
-    |d:初见：将 {Value1} 张冰晶置于抽牌堆顶。|
+    |d:初见：将 {Value1} 张冰晶加入手中。|
   FlavorText: 格斗游戏中的强力招式。
 
 IceLance:
@@ -1388,7 +1388,7 @@ BlueRose:
     如果目标处于|寒冷|，获得 {Block} 点|格挡|。
   UpgradedDescription: |-
     造成 {Damage} 点伤害。
-    如果目标具有|寒冷|，获得 {Shield} 点|护盾|。
+    如果目标处于|寒冷|，获得 {Shield} 点|护盾|。
 
 OverdraftDefense:
   Name: 意外花开
@@ -1402,16 +1402,6 @@ SummerFlower:
     造成 {Damage} 点伤害。
     |成长|：伤害提高 {Value1} 点。
   FlavorText: 这个石头能在你脑袋上打出一个很漂亮的形状。
-
-GrowDrawAttack:
-  Name: 牵牛花藤
-  Description: |-
-    造成 {Damage} 点伤害。
-    |成长|：额外抽 {Value1} 张牌（最多 {Value2} 张）。
-  ExtraDescription1: |-
-    造成 {Damage} 点伤害。
-    抽 {DrawCount} 张牌。
-    |成长|：额外抽 {Value1} 张牌（最多 {Value2} 张）。
 
 GainLarva:
   Name: 喷射鳞粉
@@ -1493,16 +1483,17 @@ IceGun:
     对|寒冷|的目标造成 {Value2} 倍伤害。
   FlavorText: 真正的冰「枪」术。
 
+Blizzard:
+  Name: 暴风雪
+  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+    下回合开始时再次生效。
+
 FrozenThrone:
   Name: 冰封王座
-  Description: 回合结束时，将 {Value1} 张|冰晶|洗入抽牌堆。
+  Description: '{PlayerName}的回合开始时，如果手中没有|冰晶|，将一张|冰晶|加入手中。'
   FlavorText: Now, we are one!
-
-Tether:
-  Name: 羁绊
-  Description: |-
-    手中每有一张|妖精支援|，获得 {Value1} 点|暂得火力|。
-    (总计 {TotalFire} 点)
 
 RemoveOverdraft:
   Name: 水果碎碎冰
@@ -1525,6 +1516,15 @@ DoubleMana:
   Description: |-
     翻倍法力。
     |透支| {Value1} 。
+
+Tether:
+  Name: 羁绊
+  Description: |-
+    获得 {Block} 点|格挡|。
+    手中每有一张|妖精支援|，就提高 {Value1} 点。（总计 {Special} 点）
+  UpgradedDescription: |-
+    获得 {Shield} 点|护盾|。
+    手中每有一张|妖精支援|，就提高 {Value1} 点。（总计 {Special} 点）
 
 BestFriend:
   Name: 最好的朋友
@@ -1604,6 +1604,11 @@ DeepFreeze:
     对所有敌人造成 {Damage} 点伤害。
     对所有敌人施加|寒冷|，如果目标已经处于|寒冷|，改为施加|深度冻结|。
 
+FreezeRiver:
+  Name: 浮冰
+  Description: 将抽牌堆底的牌加入手中，|暂塑|为{Mana}。
+  UpgradedDescription: 将抽牌堆底的牌加入手中，|重塑|为{Mana}。
+
 IceBlock:
   Name: 寒冰屏障
   Description: |-
@@ -1611,28 +1616,17 @@ IceBlock:
     移除所有的|格挡|、|护盾|和|闪避|。
     |保留|手牌一回合，结束{PlayerName}的回合。
 
-FreezeRiver:
-  Name: 浮冰
-  Description: 将抽牌堆底的牌加入手中，暂塑为{Mana}。
-
 ZeroK:
   Name: 绝对零度
   Description: |-
     提高 {Value1} 倍|寒冷|的叠加伤害。
     对所有敌人施加|寒冷|。
 
-Blizzard:
-  Name: 暴风雪
-  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  UpgradedDescription: |-
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-    下回合开始时再次生效。
-
 IceMatrix:
   Name: 冰冻矩阵
   Description: |-
-    受到敌人一轮攻击后，额外失去一层|寒冰甲|并向敌人施加|寒冷|。
-    获得 {Value1} 层|寒冰甲|。
+    {PlayerName}对敌人施加|寒冷|时，获得 {Value1} 层|寒冰甲|。
+    对所有敌人施加|寒冷|。
 
 FairyTeam:
   Name: 妖精大战争
@@ -1699,12 +1693,8 @@ ForeverCool:
     将 {Value1} 张随机的|妖精支援|加入手中。
 
 SummerParty:
-  Name: 冰霜派对
+  Name: 冰爽派对
   Description: |-
-    将 {Value2} 张随机的普通|妖精支援|加入手中。
-    |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
-    |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
-  UpgradedDescription: |-
     |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
     |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
 
@@ -1759,14 +1749,14 @@ Xiguadao:
   Name: 西瓜刀
   Description: |-
     |每支付|{Mana}：造成 {Damage} 点伤害。
-    目标被击败而攻击次数任有剩余时，以另一个随机敌人为目标继续攻击。
+    目标被击败而攻击次数仍有剩余时，以另一个随机敌人为目标继续攻击。
   FlavorText: 超⑨武神霸斩！
 
 FairySupportMaid:
   Name: 小霞的清扫
   Description: |-
     |回合开始时|：伤害提高 {Value1} 点。
-    |被放逐时|：对生命值最高的敌人造成 {Value2} 点伤害。
+    |被放逐时|：对生命值最低的敌人造成 {Damage} 点攻击伤害。
   FlavorText: 小霞已经是红魔馆的女仆妖精里，最认真干活的了。
 
 FairySupportLarva:
@@ -1776,10 +1766,10 @@ FairySupportLarva:
     |被放逐时|：获得 {Value2} 点|格挡|。
 
 FairySupportDayaojing:
-  Name: 大妖精的协力
+  Name: 大妖精的弹幕
   Description: |-
-    |回合开始时|：获得 {Value1} 层|协力|。
-    |被放逐时|：获得 {Value2} 层|协力|。
+    |回合开始时|：对随机敌人造成 {Damage} 点攻击伤害。
+    |被放逐时|：生效 {Value2} 次。
 
 FairySupportLily:
   Name: 莉莉白的报春
@@ -2021,10 +2011,15 @@ GuijiZaoxingHu:
 WaterPrincess:
   Name: 水精公主
   Description: |-
+    获得 {Shield} 点|护盾|。
+    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
+    |初见|：将一张|水花|加入手中。
+  NonbattleDescription: |-
     每有一张手牌，就获得 {Value1} 点|护盾|。
     |初见|：将一张|水花|加入手中。
   ExtraDescription1: |-
-    每有一张手牌，就获得 {Value1} 点|护盾|。
+    获得 {Shield} 点|护盾|。
+    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
     |d:初见：将一张水花加入手中。|
   FlavorText: 精装魔导书有100米防水功能。
 
@@ -2677,7 +2672,7 @@ SkyWater:
   Name: 天水的奇迹
   Description: |-
     获得 {Shield} 点|护盾|。
-    {PlayerName}的回合结束时，每弃一张牌获得 {Value2} 点|协力|。
+    抽牌阶段多抽 {Value1} 张牌。
 
 KanakoWalk:
   Name: 神踏足的御神渡
