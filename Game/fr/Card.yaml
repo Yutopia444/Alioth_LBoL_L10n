@@ -209,7 +209,7 @@ HuanxiangTouying:
   Description: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires à\
     \ ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont respectivement\
     \ un coût total de 1, 2 et 3."
-  Name: Poursuite Activée
+  Name: Projection Fantastique
   UpgradedDescription: "Gagnez {Mana}.\nChoisissez une parmi {Value1} cartes aléatoires\
     \ à ajouter à la main. Elle a |Exil| et |Éthéré|.\nCes cartes ont respectivement\
     \ un coût total de 1, 2, 3, 4 et 5."
@@ -820,9 +820,9 @@ SakuyaSleep:
   Name: Courte Pause
   Description: "Ajoutez un |Arc-en-ciel| à la main.\n{PlayerName} termine son tour."
 Knife:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quand cette\
-    \ carte quitte la main| : Si elle n'a pas été jouée, inflige {DropDamage} dégâts\
-    \ à l'ennemi avec le moins de points de vie."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quand {SelfName}\
+    \ quitte la main sans être jouée| : Infligez {DropDamage} dégâts à l'ennemi avec\
+    \ le moins de points de vie."
   FlavorText: Impossible de passer la sécurité.
   Name: Couteau de Lancer
 CoolMaid:
@@ -1862,10 +1862,9 @@ JunkoNightmare:
     \ à tous les ennemis.\n|Exilez| toutes les cartes de votre main, puis ajoutez\
     \ une quantité égale de cartes |Pureté| à votre main."
   UpgradedDescription: "Choisissez jusqu'à {Value2} carte{Value2:plural one='' other='s'}\
-    \ dans votre main pour vous exempter de la |Purification| qui suit.\nInfligez\
-    \ {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois à tous les ennemis.\n\
-    |Exilez| toutes les cartes de votre main, puis ajoutez une quantité égale de cartes\
-    \ |Pureté| à votre main."
+    \ dans votre main.\nInfligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}\
+    \ fois à tous les ennemis.\n|Exilez| toutes les cartes de votre main sauf celles\
+    \ choisies, puis ajoutez une quantité égale de cartes |Pureté| à votre main."
 Shoot:
   Name: Tir
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2112,9 +2111,9 @@ LongArm:
     \ obtenez {Mana}."
 IceBlock:
   Name: Barrière de Glace
-  Description: "Immunité à tous les dégâts pendant un tour.\nSuppression de tous |Bouclier|,\
-    \ |Barrière| et |Esquive|.\nLes cartes de votre main sont |retenues| ce tour-ci,\
-    \ {PlayerName} termine son tour."
+  Description: "{PlayerName} ne peut pas perdre de vie jusqu'au prochain tour.\nPerdez\
+    \ tout |Bouclier|, |Barrière| et |Esquive|.\nLes cartes de votre main sont |retenues|\
+    \ ce tour-ci, {PlayerName} termine son tour."
 FairyTree:
   Name: Maison de Fées
   Description: "Lorsqu'une carte de talent est ajoutée à la main, obtenez {Mana} et\
@@ -2143,9 +2142,10 @@ FairySupportLily:
     |Quand exilée| : Gagnez {ExileMana}.'
   Name: Primevère de Lily White
 FairySupportSunny:
-  Description: '|En main| : dégâts d''attaque augmentés de {Value1} points.
+  Description: '|En main| : Les dégâts des cartes d''attaque sont augmentés de {Value1}
+    points.
 
-    |Quand exilée| : gagne {Value2} |Puissance{Value2:plural one='''' other=''s''}|'
+    |Quand exilée| : Gagnez {Value2} |Puissance{Value2:plural one='''' other=''s''}|'
   Name: Réfraction de Sunny
 FairySupportLuna:
   Name: Tranquillité de Luna
@@ -2339,8 +2339,8 @@ MinengZhuru:
     \ main, ou en début de tour)"
 FairySupportClownpiece:
   Name: Folie de Clownpiece
-  Description: "|Début du tour| : réduisez de {Value1} le coût d'une carte aléatoire.\n\
-    |Quand exilée| : Gagnez {Mana}."
+  Description: "|Début du tour| : le coût de {SelfName} est réduit de {Value1} mana\
+    \ aléatoire.\n|Quand exilée| : Gagnez {Mana}."
 PrismriverWhite:
   Name: Solo de Trompette
   Description: "Gagnez {Mana}.\nPiochez {Value1:plural one='% carte' other='% cartes'}.\n\
@@ -2381,7 +2381,7 @@ PrismriverRed:
     \ other='Lumières des Étoiles Glamours'}|' à la pile de défausse.\n|d:Début :\
     \ Gagnez {Value2} <sprite=\"Point\" name=\"Power\">.|"
 PrismriverAll:
-  Name: Concert funèbre "Concerto prismatique"
+  Name: Concerto Prismatique
   Description: "Gagnez {Mana}.\nConvertissez tout le mana que {PlayerName} gagne ce\
     \ combat en <sprite=\"ManaSprite\" name=\"P\">.\nAjoutez une |Lumière Solaire\
     \ Réfractée|, un |Clair de Lune Calme| et une |Lumière des Étoiles Glamour| à\
@@ -2392,9 +2392,9 @@ PrismriverAll:
     \ à la pile de défausse."
 FairySupportMaid:
   Name: Petit Nettoyage de Kasumi
-  Description: "|Début du tour| : dégâts augmentés de {Value1} points.\n|Quand exilée|\
-    \ : inflige {Value2} dégât{Value2:plural one='' other='s'} à l'ennemi avec la\
-    \ santé la plus élevée."
+  Description: "|Début du tour| : les dégâts de {SelfName} sont augmentés de {Value1}\
+    \ points.\n|Quand exilée| : infligez {Value2} dégât{Value2:plural one='' other='s'}\
+    \ à l'ennemi avec la santé la plus élevée."
   FlavorText: Kasumi est déjà la travailleuse la plus sérieuse parmi les servantes
     et les fées du Manoir du Démon Écarlate.
 AutoKnife:
@@ -2432,11 +2432,11 @@ BlueRose:
     \ a |Froid|, gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 FrostGarden:
   UpgradedDescription: "Rend {Value1} point{Value1:plural one='' other='s'} de vie\
-    \ à tous les ennemis.\nApplique |Froid| à tous les ennemis.\nAjoutez {Value2}\
+    \ à tous les ennemis.\nAppliquez |Froid| à tous les ennemis.\nAjoutez {Value2}\
     \ |Crista{Value2:plural one='l' other='ux'} de glace| à votre main."
   Name: Jardin de Brume
   Description: "Rend {Value1} point{Value1:plural one='' other='s'} de vie à tous\
-    \ les ennemis.\nApplique |Froid| à tous les ennemis."
+    \ les ennemis.\nAppliquez |Froid| à tous les ennemis."
   FlavorText: Climatisation gratuite.
 GainMaid:
   Description: "Ajoutez un |Petit Nettoyage de Kasumi| à votre main."
@@ -2515,12 +2515,12 @@ Tether:
     \ one=' Temporaire' other='s Temporaires'}|.\n(total {TotalFire} points)"
 GainLily:
   Name: Printemps Surprise
-  Description: "Inflige aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
+  Description: "Infligez aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
     \ aux ennemis {Value1} fois.\nAjoutez une |Primevère de Lily White| à votre main."
 ZeroK:
   Name: Zéro Absolu
-  Description: "Augmente {Value1} fois les dégâts superposés du |Froid|.\nApplique\
-    \ |Froid| à tous les ennemis."
+  Description: "Augmentez {Value1} fois les dégâts lors d'une superposition du |Froid|.\n\
+    Appliquez |Froid| à tous les ennemis."
 IceMatrix:
   Name: Matrice Congelée
   Description: "Après avoir été attaqué par un ennemi, perdez une |Armure de Glace|\
@@ -2540,12 +2540,12 @@ YouxiangMoon:
 ReimuHeavyAttack:
   FlavorText: '"Tu es déjà mort !"'
   Name: Boli Punch
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nLa |Puissance|\
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nLa |Puissance|\
     \ augmente {Value1} fois les dégâts de {SelfName}."
 KnifeAim:
   Name: Monde qui Rétrécit
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\nJette tous\
-    \ les |Couteaux de lancer| en main, infligeant des dégâts à la cible."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nDéfaussez\
+    \ tous les |Couteaux de lancer| en main, ils ciblent cet ennemi."
 BulletStudy:
   Name: Notes de Danmaku
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
@@ -2614,29 +2614,31 @@ CirnoEcho:
   Name: Don de la Nature
 HualiIce:
   Description: "Cette carte ne peut être joué qu'après qu'un total de {Value1} cartes\
-    \ avec |Exil| aient été jouées.\n({Countdown} cartes restantes)\nInflige {Damage}\
-    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, en appliquant le |Froid|.\n"
+    \ avec |Exil| aient été jouées.\n({Countdown} cartes restantes)\nInfligez {Damage}\
+    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez leur\
+    \ le |Froid|.\n"
   UpgradedDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
     \ cartes avec |Exil| aient été jouées.\n({Countdown} cartes restantes)\nInflige\
-    \ {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, en appliquant\
-    \ le |Froid| {Value2} fois."
+    \ {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez\
+    \ leur le |Froid| {Value2} fois."
   NonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
-    \ cartes avec |Exil| aient été jouées.\nInflige {Damage} dégât{Damage:plural one=''\
-    \ other='s'} à tous les ennemis, en appliquant le |Froid|.\n"
+    \ cartes avec |Exil| aient été jouées.\nInfligez {Damage} dégât{Damage:plural\
+    \ one='' other='s'} à tous les ennemis, et appliquez leur le |Froid|.\n"
   Name: Magnifique Glace d'Été
   UpgradedNonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total\
-    \ de {Value1} cartes avec |Exil| aient été jouées.\nInflige {Damage} dégât{Damage:plural\
-    \ one='' other='s'} à tous les ennemis, en appliquant le |Froid| {Value2} fois."
+    \ de {Value1} cartes avec |Exil| aient été jouées.\nInfligez {Damage} dégât{Damage:plural\
+    \ one='' other='s'} à tous les ennemis, et appliquez leur le |Froid| {Value2}\
+    \ fois."
 ColdBreath:
   Name: Souffle de Diamant
-  Description: Inflige {Damage} dégât{Damage:plural one='' other='s'} et |Froid| à
-    un ennemi aléatoire.
-  UpgradedDescription: "Inflige {Damage} dégât{Damage:plural one='' other='s'} et\
-    \ |Froid| à un ennemi aléatoire.\n|Début| : Placez {Value1} |Crista{Value1:plural\
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi
+    aléatoire qui a |Froid|.
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
+    \ un ennemi aléatoire qui a |Froid|.\n|Début| : Placez {Value1} |Crista{Value1:plural\
     \ one='l' other='ux'} de glace| au-dessus de la pioche."
-  ExtraDescription1: "Inflige {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
-    \ à un ennemi aléatoire.\n|d:Début : Placez {Value1} |Crista{Value1:plural one='l'\
-    \ other='ux'} de glace| au-dessus de la pioche.|"
+  ExtraDescription1: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à un\
+    \ ennemi aléatoire qui a |Froid|.\n|d:Début : Placez {Value1} |Crista{Value1:plural\
+    \ one='l' other='ux'} de glace| au-dessus de la pioche.|"
   FlavorText: Un coup puissant dans les jeux de combat.
 FreezeToIce:
   Name: Spécimen Congelé
@@ -2651,9 +2653,9 @@ CirnoFestival:
     spéciale contre les Lunariens.
 DeepFreeze:
   Name: Danse sur Glace
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
-    \ ennemis.\nApplique |Froid| à tous les ennemis ; si la cible a déjà |Froid|,\
-    \ applique |Surgelé| à la place."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
+    \ ennemis.\nAppliquez |Froid| à tous les ennemis ; si la cible a déjà |Froid|,\
+    \ appliquez |Surgelé| à la place."
 FairyTeam:
   Name: Guerre des Fées
   Description: "Renvoyez en main un exemplaire de chaque |Soutien Fée| différent |exilé|.\
@@ -2676,8 +2678,8 @@ FairyTrick:
     \ one='% |Résidu Sombre|' other='% |Résidus Sombres|'} dans la pile de défausse."
 SummerIce:
   Name: Smoothie d'Été
-  Description: "Inflige aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
-    \ aux ennemis {Value1} fois.\n|Découvert| {Value2}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
+    \ aléatoire {Value1} fois.\n|Découvert| {Value2}."
   FlavorText: Manger trop de smoothies donne mal à la tête, allez-y doucement !
 Opt:
   Name: Marche sur une Glace Mince
@@ -2703,7 +2705,7 @@ ColdSnap:
     \ au-dessous de votre pioche."
 DiamondBlizzard:
   Name: Colonne Carrée en Diamant
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous les\
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis.\n|Choix| : appliquez le |Froid| à tous les ennemis ; ou gagnez {Block}\
     \ |Bouclier{Block:plural one='' other='s'}|."
 DiamondBlizzardCold:
@@ -2750,9 +2752,8 @@ CirnoFreeze:
 FairyWrath:
   Name: Colère de la Nature
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à deux ennemis\
-    \ aléatoires différents.\nPour chaque carte de |Soutien Fée| dans la zone |Exil|,\
-    \ les dégâts sont augmentés de {Value1} point{Value1:plural one='' other='s'}.\n\
-    |Découvert| {Value2}."
+    \ aléatoires différents.\nPour chaque carte de |Soutien Fée| exilée, les dégâts\
+    \ de {SelfName} sont augmentés de {Value1}.\n|Découvert| {Value2}."
 BestFriend:
   Name: Meilleure Amie
   Description: Sélectionnez jusqu'à {Value1:plural one='% |Soutien Fée|' other='%
