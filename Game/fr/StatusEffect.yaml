@@ -696,10 +696,9 @@ TodayYesterdaySe:
     one='' other='s'}|.
 SkyWaterSe:
   Name: Miracle de l'Eau Céleste
-  Description: Lorsque {PlayerName} finit son tour, gagnez {Level} |Coopération{Level:plural
-    one='' other='s'}| pour chaque carte défaussée.
-  Brief: Lorsque {PlayerName} finit son tour, gagnez de la |Coopération| pour chaque
-    carte défaussée.
+  Description: Pendant la phase de pioche, piochez {Level} carte{Level:plural one='
+    supplémentaire' other='s supplémentaires'}.
+  Brief: Pendant la phase de pioche, piochez des cartes supplémentaires.
 Poison:
   Brief: Au début du tour de {OwnerName}, il perd de la vie, puis perd du |Poison|.
   Name: Poison
@@ -919,11 +918,10 @@ ExtraBlizzard:
   Brief: Au début du prochain tour que {OwnerName} effectue, infligez des dégâts |Précis|
     et appliquez |Froid| à tous les ennemis.
 IceMatrixSe:
-  Description: Après avoir été attaqué par un ennemi, {Level:plural one='% |Armure
-    de Glace| est perdue' other='% |Armures de Glace| sont perdues'} et |Froid| est
-    appliqué à l'ennemi {Level} fois.
-  Brief: Après avoir été attaqué par un ennemi, des |Armures de Glace| sont perdues
-    et |Froid| est appliqué à l'ennemi un certain nombre de fois.
+  Description: "{PlayerName} gagne {Level} |Armure{Level:plural one='' other='s'}\
+    \ de Glace| lors de l'application du |Froid| à un ennemi."
+  Brief: "{PlayerName} gagne de l'|Armure de Glace| lors de l'application du |Froid|\
+    \ à un ennemi."
   Name: Matrice Congelée
 ColdPotionSe:
   Name: Liquide de Refroidissement
@@ -935,12 +933,10 @@ ColdUp:
   Description: Augmente de {Level} fois les dégâts superposés du |Froid|.
 FrostArmor:
   Description: "Lorsque {OwnerName} débute son tour, gagnez {Level} |Bouclier{Level:plural\
-    \ one='' other='s'}|, et réduisez cet effet d'un niveau.\nLorsque vous subissez\
-    \ des dégâts d'une attaque, l'effet est réduit d'un niveau."
+    \ one='' other='s'}|, et réduisez cet effet d'un niveau."
   Brief: "Gagnez la même quantité de |Bouclier| immédiatement lorsque de l'|Armure\
     \ de glace| est acquise.\nLorsque {OwnerName} débute son tour, gagnez autant de\
-    \ |Boucliers|, et réduisez cet effet d'un niveau.\nLorsque vous subissez des dégâts\
-    \ d'une attaque, l'effet est réduit d'un niveau."
+    \ |Boucliers|, et réduisez cet effet d'un niveau."
   Name: Armure de Glace
 Immune:
   Name: Barrière de Glace
@@ -999,23 +995,23 @@ ForeverCoolSe:
     \ à un ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, des |Soutiens\
     \ Fées| aléatoires sont mélangés dans la pile de défausse."
   Description: "Pour chaque |Soutien Fée| qui est |Exilé|, appliquez |Froid| {Level}\
-    \ fois à un ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, {Level}\
-    \ |Soutien{Level:plural one=' Fée| aléatoire est mélangé' other='s Fées| aléatoires\
+    \ fois à un ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, {Level:plural\
+    \ one='% |Soutien Fée| aléatoire est mélangé' other='% |Soutiens Fées| aléatoires\
     \ sont mélangés'} dans la pile de défausse."
 MoreFriendsSe:
   Brief: Lorsque {PlayerName} finit son tour, ajoutez des |Soutiens Fées| aléatoires
     à votre main.
-  Description: Lorsque {PlayerName} finit son tour, ajoutez {Level} |Soutien{Level:plural
-    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+  Description: Lorsque {PlayerName} finit son tour, ajoutez {Level:plural one='% |Soutien
+    Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre main.
   Name: Experte en Relations
 CirnoFestivalSe:
   Name: Mêlée au Banquet
-  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Level} |Soutien{Level:plural
-    one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main.
+  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Level:plural one='% |Soutien
+    Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre main.
   Brief: Pour chaque carte |Pouvoir| jouée, ajoutez des |Soutiens Fées| aléatoires
     à votre main.
 EnemyDayaojing:
-  Name: Collaboration de la Grande Fée
+  Name: Collaboration de Daiyousei
   Description: Lorsque {OwnerName} finit son tour, récupérez {Level} point{Level:plural
     one='' other='s'} de vie.
 EnemyLarva:
@@ -1028,12 +1024,11 @@ EnemyLily:
 EnemyMaid:
   Description: À la fin du tour de {OwnerName}, infligez {Level} dégâts à {PlayerName}.
   Name: Petit Nettoyage de Kasumi
-AssistSe:
-  Description: Après la prochaine attaque de {PlayerName}, inflige {Level} dégât{Level:plural
-    one='' other='s'} à la cible.
 FrozenThroneSe:
   Name: Trône de Glace
-  Description: À la fin du tour de {PlayerName}, {Level} |Crista{Level:plural one='l
-    de Glace| est mélangé' other='ux de Glace| sont mélangés'} dans la pioche.
-  Brief: À la fin du tour de {PlayerName}, mélangez plusieurs |Cristaux de Glace|
-    dans la pioche.
+  Description: Lorsque {PlayerName} débute son tour, s'il y a moins de {Level} |Crista{Level:plural
+    one='l' other='ux'} de Glace| dans votre main, ajoutez des |Cristaux de Glace|
+    dans votre main jusqu'à ce que vous en ayez {Level}.
+  Brief: Lorsque {PlayerName} débute son tour, s'il y a moins de {Level} |Crista{Level:plural
+    one='l' other='ux'} de Glace| dans votre main, ajoutez-y les |Cristaux de Glace|
+    manquant.

@@ -1295,12 +1295,16 @@ GuijiZaoxingHu:
     \ une autre |Sculpture| jusqu'à la fin du combat."
 WaterPrincess:
   Name: Princesse Ondine
-  Description: "Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}| pour chaque\
-    \ carte dans votre main.\n|Début| : Ajoutez un |Geyser| à la main."
-  ExtraDescription1: "Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}| pour\
-    \ chaque carte dans votre main.\n|d:Début| : Ajoutez un |Geyser| à la main."
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nCet effet\
+    \ est augmenté de {Value1} pour chaque carte dans votre main. (total {Special}\
+    \ points)\n|Début| : Ajoutez un |Geyser| à la main."
+  ExtraDescription1: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n\
+    Cet effet est augmenté de {Value1} pour chaque carte dans votre main. (total {Special}\
+    \ points)\n|d:Début : Ajoutez un |Geyser| à la main.|"
   FlavorText: Le livre magique à couverture rigide a une fonction étanche jusqu'à
     100 mètres de profondeur.
+  NonbattleDescription: "Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|\
+    \ pour chaque carte en main.\n|Début| : Ajoutez un |Geyser| à la main."
 YonglinCard:
   Name: Le sage Reclus
   Description: Lorsque {PlayerName} finit son tour, {Value1} |Fausse{Value1:plural
@@ -1545,7 +1549,7 @@ TunnelEffect:
 CirnoBlockG:
   Name: Protection Feuillue
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
-  FlavorText: Les fées d'Hawaï sont très doués pour utiliser ce mouvement en dansant.
+  FlavorText: Les fées hawaïennes sont très doués pour utiliser ce mouvement en dansant.
 KoishiBlockB:
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
   Name: S'Endormir
@@ -2033,9 +2037,9 @@ Zhukeling:
   Name: Ordre d'Expulsion
   FlavorText: '"Vous êtes un invité indésirable, veuillez reconsidérer votre position."'
 SkyWater:
-  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nLorsque\
-    \ {PlayerName} finit son tour, gagnez {Value2} |Coopération{Value2:plural one=''\
-    \ other='s'}| pour chaque carte défaussée."
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nPendant\
+    \ la phase de pioche, piochez {Value1} carte{Value1:plural one=' supplémentaire'\
+    \ other='s supplémentaires'}."
   Name: Miracle de l'Eau Céleste
 ToolDraw:
   Name: Sac à Dos Rempli
@@ -2393,8 +2397,8 @@ PrismriverAll:
 FairySupportMaid:
   Name: Petit Nettoyage de Kasumi
   Description: "|Début du tour| : les dégâts de {SelfName} sont augmentés de {Value1}\
-    \ points.\n|Quand exilée| : infligez {Value2} dégât{Value2:plural one='' other='s'}\
-    \ à l'ennemi avec la santé la plus élevée."
+    \ points.\n|Quand exilée| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi avec la santé la moins élevée."
   FlavorText: Kasumi est déjà la travailleuse la plus sérieuse parmi les servantes
     et les fées du Manoir du Démon Écarlate.
 AutoKnife:
@@ -2407,12 +2411,9 @@ SakuyaUsage2:
   Description: Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.
   FlavorText: Arrêtez simplement de faire des corvées.
 FairySupportDayaojing:
-  Name: Collaboration de la Grande Fée
-  Description: "|Début du tour| : Gagnez {Value1} |Coopération{Value1:plural one=''\
-    \ other='s'}|.\n|Quand exilée| : Gagnez {Value2} |Coopération{Value2:plural one=''\
-    \ other='s'}|."
-GrowDrawAttack:
-  Name: Vigne de Gloire du Matin
+  Name: Barrage de Daiyousei
+  Description: "|Début du tour| : Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à un ennemi aléatoire.\n|Quand exilée| : Prend effet {Value2} fois."
 GainLarva:
   Description: "Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|.\nAjoutez\
     \ la carte |Ailes de Larva| à votre main."
@@ -2448,11 +2449,11 @@ RemoveOverdraft:
   Name: Glace Pilée aux Fruits
   FlavorText: Saveur fruits tropicaux, frais et délicieux !
 GainDayaojing:
-  ExtraDescription1: "Ajoutez une |Collaboration de la Grande Fée| à votre main.\n\
-    |d:Début : récupérez {Value1} point{Value1:plural one='' other='s'} de vie.|"
+  ExtraDescription1: "Ajoutez un |Barrage de Daiyousei| à votre main.\n|d:Début :\
+    \ récupérez {Value1} point{Value1:plural one='' other='s'} de vie.|"
   Name: Assistance Silencieuse
-  Description: "Ajoutez une |Collaboration de la Grande Fée| à votre main.\n|Début|\
-    \ : récupérez {Value1} point{Value1:plural one='' other='s'} de vie."
+  Description: "Ajoutez un |Barrage de Daiyousei| à votre main.\n|Début| : récupérez\
+    \ {Value1} point{Value1:plural one='' other='s'} de vie."
 CallFriends:
   Description: Ajoutez {Value1:plural one='% |Soutien Fée| commun aléatoire' other='%
     |Soutiens Fées| communs aléatoires'} à votre main.
@@ -2504,8 +2505,12 @@ IceBarrier:
   Description: Gagnez {Value1} |Armure{Value1:plural one='' other='s'} de Glace|.
 Tether:
   Name: Liens
-  Description: "Pour chaque |Soutien Fée| en main, gagnez {Value1} |Puissance{Value1:plural\
-    \ one=' Temporaire' other='s Temporaires'}|.\n(total {TotalFire} points)"
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPour chaque\
+    \ |Soutien Fée| en main, l'effet de cette carte est augmenté de {Value1}. (total\
+    \ {Special} points)"
+  UpgradedDescription: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n\
+    Pour chaque |Soutien Fée| en main, l'effet de cette carte est augmenté de {Value1}.\
+    \ (total {Special} points)"
 GainLily:
   Name: Printemps Surprise
   Description: "Infligez aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
@@ -2516,9 +2521,9 @@ ZeroK:
     Appliquez |Froid| à tous les ennemis."
 IceMatrix:
   Name: Matrice Congelée
-  Description: "Après avoir été attaqué par un ennemi, perdez une |Armure de Glace|\
-    \ et appliquez |Froid| à l'ennemi.\nObtenez {Value1} |Armure{Value1:plural one=''\
-    \ other='s'} de Glace|."
+  Description: "{PlayerName} gagne {Value1} |Armure{Value1:plural one='' other='s'}\
+    \ de Glace| lorsqu'il applique |Froid| à un ennemi.\nAppliquez |Froid| à tous\
+    \ les ennemis."
 GainStar:
   Name: Douche Étoile
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -2627,11 +2632,11 @@ ColdBreath:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi
     aléatoire qui a |Froid|.
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
-    \ un ennemi aléatoire qui a |Froid|.\n|Début| : Placez {Value1} |Crista{Value1:plural\
-    \ one='l' other='ux'} de glace| au-dessus de la pioche."
+    \ un ennemi aléatoire qui a |Froid|.\n|Début| : Ajoutez {Value1} |Crista{Value1:plural\
+    \ one='l' other='ux'} de glace| à votre main."
   ExtraDescription1: "Inflige {Damage} dégât{Damage:plural one='' other='s'} à un\
-    \ ennemi aléatoire qui a |Froid|.\n|d:Début : Placez {Value1} |Crista{Value1:plural\
-    \ one='l' other='ux'} de glace| au-dessus de la pioche.|"
+    \ ennemi aléatoire qui a |Froid|.\n|d:Début : Ajoutez {Value1} |Crista{Value1:plural\
+    \ one='l' other='ux'} de glace| à votre main.|"
   FlavorText: Un coup puissant dans les jeux de combat.
 FreezeToIce:
   Name: Spécimen Congelé
@@ -2659,8 +2664,9 @@ ForeverCool:
   Name: La Saison Toujours Cool
   UpgradedDescription: "Pour chaque |Soutien Fée| qui est |Exilé|, appliquez |Froid|\
     \ à un ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, un |Soutien\
-    \ Fée| aléatoire est mélangé dans la pile de défausse.\nAjoutez {Value1} |Soutien{Value1:plural\
-    \ one=' Fée| aléatoire' other='s Fées| aléatoires'} à votre main."
+    \ Fée| aléatoire est mélangé dans la pile de défausse.\nAjoutez {Value1:plural\
+    \ one='% |Soutien Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre\
+    \ main."
   Description: "Pour chaque |Soutien Fée| qui est |Exilé|, appliquez |Froid| à un\
     \ ennemi aléatoire.\nChaque fois qu'un |Soutien Fée| est joué, un |Soutien Fée|\
     \ aléatoire est mélangé dans la pile de défausse."
@@ -2715,6 +2721,8 @@ FreezeRiver:
   Name: Glace Flottante
   Description: Ajoutez la carte du bas de la pioche à votre main et elle |coûte temporairement|
     {Mana}.
+  UpgradedDescription: Ajoutez la carte du bas de la pioche à votre main et |changez
+    son coût| en {Mana}.
 FairyAllOut:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis.\n|Exilez| tout les |Soutiens Fées| dans votre main."
@@ -2753,16 +2761,15 @@ BestFriend:
     |Soutiens Fées|'} dans votre main pour déclencher {Value1:plural one='son' other='leur'}
     effet actif. (ne cause pas l'|Exil|)
 SummerParty:
-  Name: Fête du Gel
-  Description: "Ajoutez {Value2} |Soutien{Value2:plural one=' Fée| commun aléatoire'\
-    \ other='s Fées| communs aléatoires'} à votre main.\n|Pour chaque <sprite=\"ManaSprite\"\
-    \ name=\"U\"> dépensé| : obtenez {Value1} |Armure{Value1:plural one='' other='s'}\
-    \ de Glace|.\n|Pour chaque {Mana} dépensé| : Ajoutez {Value2} |Soutien{Value2:plural\
-    \ one=' Fée| commun aléatoire' other='s Fées| communs aléatoires'} à votre main."
+  Name: Fête de la Glace
+  Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"U\"> dépensé| : obtenez\
+    \ {Value1} |Armure{Value1:plural one='' other='s'} de Glace|.\n|Pour chaque {Mana}\
+    \ dépensé| : Ajoutez {Value2:plural one='% |Soutien Fée| commun aléatoire' other='%\
+    \ |Soutiens Fées| communs aléatoires'} à votre main."
 FrozenThrone:
   Name: Trône de Glace
-  Description: À la fin du tour, {Value1:plural one='% |Cristal de Glace| est mélangé'
-    other='% |Cristaux de Glace| sont mélangés'} dans la pioche.
+  Description: Lorsque {PlayerName} débute son tour, s'il n'y a pas de |Cristal de
+    glace| en main, ajoutez un |Cristal de glace| à la main.
   FlavorText: Now, we are one !
 ChooseFairy:
   FlavorText: Si vous êtes amoureux, tenez-vous la main.
