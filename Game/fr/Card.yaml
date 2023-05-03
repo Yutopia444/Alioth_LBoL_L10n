@@ -1307,14 +1307,14 @@ WaterPrincess:
     \ pour chaque carte en main.\n|Début| : Ajoutez un |Geyser| à la main."
 YonglinCard:
   Name: Le sage Reclus
-  Description: Lorsque {PlayerName} finit son tour, {Value1} |Fausse{Value1:plural
-    one=' Lune| est mélangée' other='s Lunes| sont mélangées'} dans la pioche.
+  Description: Lorsque {PlayerName} finit son tour, {Value1:plural one='% |Fausse
+    Lune| est mélangée' other='% |Fausses Lunes| sont mélangées'} dans la pioche.
   FlavorText: La représentante de la sagesse a choisi de se cacher, alors se cacher
     est-il un acte de sagesse ?
-  UpgradedDescription: "Lorsque {PlayerName} finit son tour, {Value1} |Fausse{Value1:plural\
-    \ one=' Lune| est mélangée' other='s Lunes| sont mélangées'} dans la pioche.\n\
-    Ajoutez {Value2} |Fausse{Value2:plural one=' Lune' other='s Lunes'}| au-dessus\
-    \ de la pioche."
+  UpgradedDescription: "Lorsque {PlayerName} finit son tour, {Value1:plural one='%\
+    \ |Fausse Lune| est mélangée' other='% |Fausses Lunes| sont mélangées'} dans la\
+    \ pioche.\nAjoutez {Value2:plural one='% |Fausse Lune|' other='% |Fausses Lunes|'}\
+    \ au-dessus de la pioche."
 Shadow:
   Name: Ombre
   FlavorText: "\"J'aurais pu supporter la lumière si je n'avais pas croisé Rumia.\""
@@ -1437,7 +1437,7 @@ YukariAttack:
 TannvCard:
   Name: Changement de Paradigme
   Description: Mettez la carte du dessus de la pioche et celle du dessus de la défausse
-    dans la main. Ces cartes |coûtent temporairement| {mana}.
+    dans la main. Ces cartes |coûtent temporairement| {Mana}.
 MogongAttack:
   Name: Coalition Haniwa
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
@@ -1605,7 +1605,7 @@ CloseEyeShoot:
     aléatoire {Value1} fois.
 Zhulianshen:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Protection{Value1:plural one='' other='s'}|."
+    \ {Value1} |Exorcisme{Value1:plural one='' other='s'}|."
   Name: Shimenawa
 LilyChun:
   UpgradedDescription: Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s
@@ -2134,9 +2134,9 @@ GatherFairy:
   FlavorText: Vous êtes toutes mes ailes.
 WhiteWorld:
   Name: Monde Blanc Pur
-  Description: "Lorsque {PlayerName} finit son tour, gagnez {Value1} |Puissance{Value1:plural\
-    \ one='' other='s'}| et |Esprit{Value1:plural one='' other='s'}|,\n|Gel de mana|\
-    \ {Mana}."
+  Description: "Chaque fois qu'un effet |découvert| est jouée, {Value1:plural one='%\
+    \ carte aléatoire de la main a' other='% cartes aléatoires de la main ont'} un\
+    \ |coût temporairement| réduit de 1 mana aléatoire."
 BrainOverclock:
   Name: Surcadence de Cerveau
   Description: "Obtenez {Mana}.\n|Découvert| {Value1}."
@@ -2219,7 +2219,7 @@ DeployDefenseDoll:
 SuikaOut:
   Name: Exorcisme de la Peste
   Description: "Choisissez une carte dans votre main et |Exilez|-la.\nGagnez {Value1}\
-    \ |Protection{Value1:plural one='' other='s'}|."
+    \ |Exorcisme{Value1:plural one='' other='s'}|."
   FlavorText: Il semble que cela n'ait aucun effet sur les ennemis avec une puissance
     de 999.
 ReimuShrine:
@@ -2522,8 +2522,8 @@ ZeroK:
 IceMatrix:
   Name: Matrice Congelée
   Description: "{PlayerName} gagne {Value1} |Armure{Value1:plural one='' other='s'}\
-    \ de Glace| lorsqu'il applique |Froid| à un ennemi.\nAppliquez |Froid| à tous\
-    \ les ennemis."
+    \ de Glace| lorsque le |Froid| est appliqué à un ennemi.\nAppliquez |Froid| à\
+    \ tous les ennemis."
 GainStar:
   Name: Douche Étoile
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -2645,8 +2645,9 @@ FreezeToIce:
     égale de |Cristaux de glace| à votre main.
 CirnoFestival:
   Name: Mêlée au Banquet
-  Description: Pour chaque carte |Pouvoir| jouée, ajoutez {Value1:plural one='% |Soutien
-    Fée| aléatoire' other='% |Soutiens Fées| aléatoires'} à votre main.
+  Description: "|Choix| : Ajoutez |{Value1:plural one='% Geyser' other='% Geysers'}|\
+    \ à la main ; ou ajoutez {Value2:plural one='% |Soutien Fée| commun aléatoire'\
+    \ other='% |Soutiens Fées| communs aléatoires'} à votre main."
   FlavorText: Des types étranges se sont mélangés à la fête de célébration de l'opération
     spéciale contre les Lunariens.
 DeepFreeze:
@@ -2766,6 +2767,11 @@ SummerParty:
     \ {Value1} |Armure{Value1:plural one='' other='s'} de Glace|.\n|Pour chaque {Mana}\
     \ dépensé| : Ajoutez {Value2:plural one='% |Soutien Fée| commun aléatoire' other='%\
     \ |Soutiens Fées| communs aléatoires'} à votre main."
+  UpgradedDescription: "Ajoutez un |Soutien Fée| commun aléatoire à votre main.\n\
+    |Pour chaque <sprite=\"ManaSprite\" name=\"U\"> dépensé| : obtenez {Value1} |Armure{Value1:plural\
+    \ one='' other='s'} de Glace|.\n|Pour chaque {Mana} dépensé| : Ajoutez {Value2:plural\
+    \ one='% |Soutien Fée| commun aléatoire' other='% |Soutiens Fées| communs aléatoires'}\
+    \ à votre main."
 FrozenThrone:
   Name: Trône de Glace
   Description: Lorsque {PlayerName} débute son tour, s'il n'y a pas de |Cristal de
@@ -2793,3 +2799,10 @@ CirnoFire:
 DoubleMana:
   Name: Réveil de la Fée
   Description: "Doublez votre mana actuel.\n|Découvert| {Value1}."
+CirnoFestivalBlue:
+  Name: Talent d'Acteur
+  Description: Ajoutez {Value1} |Geyser{Value1:plural one='' other='s'}| à votre main.
+CirnoFestivalGreen:
+  Name: Auto-cuit
+  Description: Ajoutez {Value1:plural one='% |Soutien Fée| commun aléatoire' other='%
+    |Soutiens Fées| communs aléatoires'} à votre main.
