@@ -451,7 +451,9 @@ KoishiAttackB:
 FairySupportMaid:
   Name: Limpieza de Kasumi
   Description: "|Al comienzo del turno|: Aumenta el daño de {SelfName} en {Value1}.\n\
-    |Al exiliarse|: Inflige {Value2} de daño al enemigo con más vida."
+    |Al exiliarse|: Inflige {Damage} de daño al enemigo con menos vida."
+  FlavorText: Aunque Kasumi pasa mucho tiempo jugando con sus amigas hadas, ella ya
+    es considerada una trabajadora diligente entre las muchas sirvientas.
 FairySupportClownpiece:
   Name: Locura de Clownpiece
   Description: "|Al comienzo del turno|: {SelfName} cuesta {Value1} maná aleatorio\
@@ -1265,10 +1267,13 @@ GuijiZaoxingHu:
     \ cartas'}.\n{SelfName} se transforma en otra |Escultura| hasta el final del combate."
 WaterPrincess:
   Name: Princesa Undine
-  ExtraDescription1: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|d:Debut|:\
-    \ Añade un |Roció| a la mano."
-  Description: "Obtén {Value1} de |Barrera| por cada carta en tu mano.\n|Debut|: Añade\
-    \ un |Roció| a la mano."
+  ExtraDescription1: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta\
+    \ {Value1} de |Barrera|. (|Barrera| total {Special})\n|d:Debut: Añade un Roció\
+    \ a la mano.|"
+  Description: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta {Value1}\
+    \ de |Barrera|. (|Barrera| total {Special})\n|Debut|: Añade un |Roció| a la mano."
+  NonbattleDescription: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano,\
+    \ aumenta {Value1} de |Barrera|.\n|Debut|: Añade un |Roció| a la mano."
 Shadow:
   Name: Sombra
 PrismriverRed:
@@ -1830,17 +1835,17 @@ ShanyuCard:
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Shield} de |Barrera|."
 SkyWater:
   Name: Milagro del Agua Celestial
-  Description: "Obtén {Shield} de |Barrera|.\nAl final del turno de {PlayerName},\
-    \ gana {Value2} |Unidad| por cada carta descartada al finalizar el turno."
+  Description: "Obtén {Shield} de |Barrera|.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'} más durante la fase de robo."
 LifeGame:
   Name: Juego de la Vida
   Description: "Devuelve todas las cartas de la mano y la pila de descarte a la pila\
     \ de robo.\nBaraja la pila de robo.\nRoba {Value1} carta{Value1:plural one=''\
     \ other='s'}."
 FairySupportDayaojing:
-  Name: Unidad de Daiyousei
-  Description: "|Al comienzo del turno|: Gana {Value1} |Unidad|\n|Al Exiliarse|: Gana\
-    \ {Value2} |Unidad|"
+  Name: Danmaku de Daiyousei
+  Description: "|Al comienzo del turno|: Inflige {Damage} de daño a un enemigo aleatorio.\n\
+    |Al Exiliarse|: Se activa {Value2} veces."
 GatherFairy:
   Name: Asamblea de Hadas
   Description: "El tamaño máximo de la mano se convierte en {MaxHand}.\nRoba {Value1}\
@@ -2061,9 +2066,8 @@ Blizzard:
     \ cada enemigo.\nSe repite de nuevo al comienzo del próximo turno de {PlayerName}."
 IceMatrix:
   Name: Matriz Congelador
-  Description: "Después de que {PlayerName} sea atacada, si fue golpeado, pierde 1\
-    \ |Armadura de Escarcha| adicional para aplicarle |Frío| al atacante.\nGana {Value1}\
-    \ |Armadura de Escarcha|."
+  Description: "Cuando {PlayerName} aplica |Frío| al enemigo, gana {Value1} |Armadura\
+    \ de Escarcha|.\nAplica |Frío| a cada enemigo."
 GainSunny:
   Name: Amanecer
   Description: "Inflige {Damage} de daño a cada enemigo {Value1} veces.\nAñade una\
@@ -2170,6 +2174,8 @@ FreezeRiver:
   Name: Hielo Flotante
   Description: Coloca la carta en la parte inferior de la pila de robo en la mano.
     |Cuesta temporalmente| {Mana}.
+  UpgradedDescription: Coloca la carta de la parte inferior de la pila de robo a la
+    mano. |Cuesta| {Mana}.
 ColdChain:
   Name: Cadena de Logística Frío
   Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
