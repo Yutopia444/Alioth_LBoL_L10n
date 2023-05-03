@@ -1708,7 +1708,7 @@ KongMana:
   Description: "|Exilia| una carta de la mano. Gana maná igual al costo de esa carta.\n\
     Añade un |Arcoíris| a la mano."
 FangxiangAttack:
-  Description: "Si el objetivo está |Envenenado|, inflige {Damage} daño {Value2} {Value2:plural\
+  Description: "Si el objetivo tiene |Veneno|, inflige {Damage} daño {Value2} {Value2:plural\
     \ one='vez' other='veces'}.\nDe lo contrario, aplica {Value1} de |Veneno|."
   Name: Toxina Devastadora
 JunkoNightmare:
@@ -2101,11 +2101,9 @@ ColdBreath:
   Name: Aliento de Diamante
   Description: Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.
   UpgradedDescription: "Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.\n\
-    |Debut|: Agrega {Value1} |Glaciar{Value1:plural one='' other='es'}| a la pila\
-    \ de robo."
+    |Debut|: Agrega {Value1} |Glaciar{Value1:plural one='' other='es'}| a la mano."
   ExtraDescription1: "Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.\n\
-    |d:Debut: Agrega {Value1} Glaciar{Value1:plural one='' other='es'} a la pila de\
-    \ robo."
+    |d:Debut: Agrega {Value1} Glaciar{Value1:plural one='' other='es'} a la mano."
 GainLily:
   Name: Primavera Sorpresa
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} {Value1:plural\
@@ -2142,8 +2140,8 @@ Xiguadao:
   FlavorText: ¡Súper Corte de la Dama Suprema de la ⑨ Diosa Marcial!
   Name: Cuchillo de Sandia
   Description: "|Por cada {Mana} gastado|: Inflige {Damage} de daño.\nCuando el objetivo\
-    \ de {SelfName} es derrotado, si aún quedan golpes, continúa atacando usando un\
-    \ enemigo aleatorio como nuevo objetivo."
+    \ de {SelfName} es derrotado, si aún quedan golpes, continuara atacando eligiendo\
+    \ a un enemigo aleatorio como nuevo objetivo."
 ChooseFairy:
   Name: Encuentro en el Lago Brumoso
   Description: Elige {Value1} carta{Value1:plural one=' común' other='s comunes'}
@@ -2155,8 +2153,8 @@ CirnoFire:
 FrozenThrone:
   Name: Trono de Hielo
   FlavorText: Now, we are one!
-  Description: Al final del turno, agrega {Value1} |Glaciar{Value1:plural one='' other='es'}|
-    a la pila de robo.
+  Description: Al comienzo del turno de {PlayerName}, si no hay un |Glaciar| en la
+    mano, añade un |Glaciar| a la mano.
 FairyWrath:
   Name: Ira de la Naturaleza
   Description: "Inflige {Damage} de daño a 2 enemigos aleatorios.\nPor cada cartas\
