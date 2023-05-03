@@ -151,9 +151,9 @@ StartGame:
   OpeningComic: Guarda il prologo
   StoryMode: Modalità Storia
   FreeMode: Modalità Libera
-  FreeDescription: "Risolvi l'incidente con il personaggio che preferisci\nGran parte\
-    \ dei dialoghi della storia sono rimossi\nTutti gli \"Incontri Amichevoli\" sono\
-    \ possibili"
+  FreeDescription: "Risolvi l'incidente con il personaggio che preferisci.\nGran parte\
+    \ dei dialoghi della storia sono rimossi.\nTutti gli \"Incontri Amichevoli\" sono\
+    \ possibili."
   NoStoryMode: "Modalità storia non è ancora pronta.\nSi prega di attendere i futuri\
     \ aggiornamenti."
   CheckDeck: Mazzo Iniziale
@@ -170,8 +170,8 @@ StartGame:
   CharacterUnset: Scegli un personaggio
   SetJadeBox: Imposta la Scatola di Giada
   JadeBoxLock: La Scatola di Giada sarà disponibile dal Livello di Sblocco 10.
-  StoryDescription: "Risolvi l'incidente con Reimu Hakurei\nAlcuni atti hanno incontri\
-    \ predefiniti\nAlcuni \"Incontri Amichevoli\" sono impossibili"
+  StoryDescription: "Risolvi l'incidente con Reimu Hakurei.\nAlcuni atti hanno incontri\
+    \ predefiniti.\nAlcuni \"Incontri Amichevoli\" sono impossibili."
   NotReadyHint: "Questo personaggio non è ancora pronto.\nSi prega di attendere i\
     \ futuri aggiornamenti."
   IsLockHint: "Questo personaggio sarà disponibile\nal Livello di Sblocco {0}"
@@ -231,7 +231,7 @@ Setting:
   LostFocusMute: Disattiva audio quando il gioco è in secondo piano
   TurboMode: Modalità Turbo
   Keyword: Parole Chiave
-  Detailed: Dettagliate
+  Detailed: Con dettagli
   Brief: Brevi
   DontShow: Disattivo
   Illustrator: Credito d'illustrazione
@@ -310,6 +310,8 @@ Setting:
   ShowShortcutDescription: Mostra I pulsanti Scorciatoia sopra le carte nella mano.
   XCostWarningDescription: Scegli se visualizzare un avvertimento quando usi una carta
     con costo X senza scegliere manualmente il mana.
+  Shake: Vibrazione Schemo
+  ShakeDescription: Imposta se i danni causano una vibrazione dello schermo.
 History:
   Puzzles: "{0:plural one='% Richiesta' other='% Richieste'}"
   Money: Soldi {0}
@@ -497,7 +499,7 @@ GameResult:
   Win: Incidente Risolto
   ClickToOpen: Clicca Per Aprire
   NormalEnd: Ma il Ramo Ingioiellato di Hourai manca ancora
-  TrueEnd: Incidente risolto perfettamente.
+  TrueEnd: Incidente risolto perfettamente
   BadEnd: Torniamo indietro nel tempo e riproviamoci...
   FailReason: 'Motivo del fallimento:'
   Deprecated: ??? (Obsoleto)
@@ -570,11 +572,39 @@ Tooltip:
     Description: I nemici hanno più vita, causano più danni ed usano azioni più pericolose.
   BattleMana:
     Name: Mana Disponibile
-    Description: "Mana non speso viene visualizzato qui.\nHai bisogno di mana per\
-      \ pagare i costi delle carte e per pagare |X|.\n\nClicca una icona del mana\
-      \ per farla \"galleggiare\" e far si che venga speso prima il mana galleggiante\
-      \ del mana disponibile, o venga speso per pagare mana |X|.\nClicca sul mana\
-      \ galleggiante per farlo tornare tra il mana disponibile."
+    Description: "Il mana non speso viene visualizzato qui.\nTi serve il mana per\
+      \ pagare i costi delle carte, e per pagare |X|.\n\nClicca una icona del mana\
+      \ per farla \"galleggiare\". Viene speso prima il mana galleggiante, o viene\
+      \ utilizzato per pagare mana |X|.\nClicca sul mana galleggiante per farlo tornare\
+      \ tra il mana disponibile."
+  BaseMana:
+    Description: "All'inizio di ogni turno ricevi mana equivalente al tuo |mana base|.\n\
+      Il tuo |mana base| può essere esteso ottenendo |Esposizioni Brillanti|.\n\n\
+      il tuo |mana base| inoltre influisce su quali carte che puoi trovare."
+    Name: Mana Base
+  EntityTitle:
+    Character: ' Unico'
+    Neutral: Neutrale
+    Red: Rosso
+    Green: Verde
+    Colorless: Incolore
+    White: Bianco
+    Blue: Blu
+    Black: Nero
+    MultiColor: Multicolore
+  DontShowHint:
+    Name: Nessun Consiglio
+    Description: "Non visualizzare consigli.\nHo già giocato a <Touhou : Lost Branch\
+      \ of Legend>."
+  BriefHint:
+    Description: "Saranno visualizzati solo consigli rilevanti alle meccaniche uniche\
+      \ di questo gioco.\nHo giocato a giochi simili, come Slay the Spire."
+    Name: Consigli Brevi
+  UsTitle: '{1}'
+  DetailedHint:
+    Name: Consigli Dettagliati
+    Description: "Visualizza tutti i consigli.\nÈ il primo gioco di costruzione-mazzo\
+      \ al quale ho mai giocato..."
 CardType:
   Skill: Tecnica
   Tool: Oggetto
@@ -593,3 +623,71 @@ StatusEffectType:
   Negative: Debuff
   Special: Speciale
   Positive: Buff
+BattleHint:
+  Detailed: Mostra consigli dettagliati
+  Brief: Mostra consigli brevi
+  DontShow: Non mostrare consigli
+  Prev: Precedente
+  Next: Prossimo
+  ManaPanel: "Il pannello di mana disponibile mostra quanto mana hai a disposizione.\n\
+    Clicca con il sinirto per far \"galleggiare\" il mana. Mana galleggiante viene\
+    \ speso prima del resto.\nClicca con il destro per far \"galleggiare\" tutto il\
+    \ mana di quel colore.\nIl mana viene ripristinato all'inizio del turno del giocatore."
+  Intention: "Le intenzioni del nemico sono visualizzate sopra di esso.\nI nemici\
+    \ possono avere intenzioni come attaccare, difendere, assegnare buff agli alleati,\
+    \ applicare debuff, o lanciare una Carta Incantesimo."
+  UltimateSkill: "Lancia la Carta Incantesimo per cambiare le sorti della battaglia!\n\
+    Usare una Carta Incantesimo consuma una barra completa di potere. Nemici sconfitti\
+    \ rilasciano <sprite=\"Point\" name=\"Power\">, che riempie la barra del potere\
+    \ necessario per utilizzare la Carta Incantesimo.\nLe Carte Incantesimo possono\
+    \ essere utilizzate solo una volta per turno."
+  Intro: "Benvenuto alla Esposizione della Capitale Lunare! Prova a trovare il ramo\
+    \ leggendario perduto!\nSe hai giocato ad altri giochi di costruzione-mazzo, puoi\
+    \ scegliere |Consigli Brevi| per visualizzare solo consigli riguardanti le meccaniche\
+    \ uniche di questo gioco.\nAnche i consigli successivi seguiranno questa preferenza.\
+    \ Puoi cambiare i consigli nel menu d'impostazioni in qualsiasi momento."
+  BasicBattle: "Gioca le carte dalla tua mano per rimuovere i nemici!\nLe carte giocate\
+    \ saranno spostate nella Pila di Scarto. Alla fine del turno del giocatore, le\
+    \ carte rimaste nella mano verranno anch'esse spostate nella Pila di Scarto.\n\
+    Nuove carte vengono pescate all'inizio del turno del giocatore."
+  Mana: "Usa il clic destro per viualizzare i dettagli di una carta. (Questo funziona\
+    \ nella gran parte dei luoghi in cui vedi delle carte).\nGiocare le carte costa\
+    \ mana. Il costo di mana è visualizzato nel angolo in alto a destra della carta.\n\
+    Ci sono 7 tipi di mana: colorati <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, Incolore <sprite=\"ManaSprite\"\
+    \ name=\"C\"> e <sprite=\"ManaSprite\" name=\"P\"> che può essere utilizzato per\
+    \ qualsiasi esigenza di costo.\nCosti generici come <sprite=\"ManaSprite\" name=\"\
+    2\"> possono essere pagati con qualsiasi 2 mana."
+  BlockShield: "Prima di subire danni, gioca una carta Difesa per ottenere |Scudo|\
+    \ e |s:Barriera|.\n|Scudo| e |s:Barriera| riducono di danni che verranno assegnati.\n\
+    |Scudo| sparisce all'inizio del prossimo turno del giocatore, |s:Barriera|no."
+MessageDialog:
+  GameAbandonWarning: Abbandonare la partita in corso?
+  QuitGame: Uscire dal gioco?
+  UnsavedWarning: Il progresso non salvato verrà perso.
+  XCostEmptyUsageWarning: Usa {0} senza selezionare il mana?
+  XCostEmptyUsageTips: Puoi selezionare il mana nel pannello di Mana Disponibile per
+    le carte con costo X.
+  SkipDialog: Salta il Dialogo?
+  GameRunSaveDiscarded: Il gioco è stato aggiornato, la partita ancora in corso è
+    stata annullata.
+  GameRunSaveDiscardedSubText: Il tuo profilo non ne risente.
+  ResetKeyBindingsWarning: Ripristinare I tasti predefiniti?
+  InvalidProfileName: Nome del Profilo Invalido
+  ReturnToMainMenu: Ritornare all menu principale?
+  DontShowHintWarning: Distattiva tutti i consigli di gioco?
+  ResetHintWarning: Confermare il ripristino dei consigli?
+  CloseBattleHint: Chiudere i Consigli sui Combattimenti?
+  EarlyAccess: "|Touhou: Lost Branch of Legend| è in |d:Accesso Anticipato|.\nTutto\
+    \ potrebbe essere soggetto a cambiamenti.\nStiamo lavorando su |b:Cirno| e sulle\
+    \ carte verdi neutrali.\nDopodichè inizieremo a lavorare su |g:Koishi| e sulla\
+    \ modalità storia.\n\nSe incontri problemi durante l'esperienza di gioco, puoi\
+    \ contattarci attraverso la nostra Community di Steam o il server di Discord."
+  AlreadyInGameRun: Partita già in corso
+  CannotStartGameRunWithoutProfile: 'Impossibile Avviare il Gioco: Avvia Senza Profilo
+    Giocatore'
+  CannotRestoreEndedGameRun: Impossibile Ripristinare Una Partita Terminata
+  CorruptedSaveData: Il salvataggio è danneggiato
+  CorruptedGameRunSaveData: Il file di salvataggio della partita in corso è danneggiato
+  CannotReenterStation: Impossibile entrare nel livello
