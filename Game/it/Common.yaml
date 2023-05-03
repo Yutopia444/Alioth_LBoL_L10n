@@ -113,6 +113,7 @@ UI:
   Hiding: Nascosto
   Confirm: Conferma
   CopyHint: Il Seme è stato copiato negli appunti.
+  Exit: Esci
 MainMenu:
   RestoreGame: Continua la Partita
   AbandonGame: Abbandona la Partita
@@ -213,6 +214,7 @@ Museum:
   UpgradedFilter: MIgliorata
   CardStyleTooltip: "Solo carte con più illustrazioni vengono visualizzate.\nScegli\
     \ la illustrazione che preferisci nel pannello di visualizzazione della carta."
+  AchievementCount: Obbiettivi Raggiunti
 Setting:
   Preference: Gioco
   Key: Controlli
@@ -404,6 +406,10 @@ Chat:
   SijiMystia: Mangiare e scappare senza pagare. Sentenza estesa di un anno.
   SijiTurn3: Dire che sono bassa. Sentenza estesa di due anni.
   LongEscape2: Da questa parte per il Santuario Moriya~
+  FraudRabbitStart1: Ho degli indizi sul colpevole, posso darteli ma ti costeranno.
+  FraudRabbitOnlyOne: Perché sono rimasta sola?! Inutili idiote.
+  FraudRabbitLongTurn: Tsé, sto perdendo troppo tempo, me ne vado.
+  FraudRabbitNoMoney: Non hai neanche un soldo? Fai pena.
 ErrorChat:
   MoneyNotEnough: Non ho abbastanza soldi.
   LowMana: Non ho abbastanza mana.
@@ -502,8 +508,88 @@ GameResult:
     \ il Ramo Ingioiellato di Hourai.\n(Vale come una vittoria normale)"
   ReturnHint: Clicca ovunque per tornare al menu principale
   Unlock: Nuovo Oggetto Sbloccato
+  UnlockHint: Carte ed Esposizioni recentementete sbloccate appariranno nelle partite
+    future.
 Tooltip:
   GameSeed:
     Name: Seme
     Description: "Ogni partita genera un Seme casuale. Due partite con lo stesso Seme\
       \ saranno identiche.\n\nClicca per copiare il Seme negli appunti."
+  Hp:
+    Name: 'Vita: {0}'
+    Description: Quando la tua Vita raggiunge lo 0, |r:perdi la partita|.
+  Money:
+    Name: 'Soldi: {0}'
+    Description: Possono essere scambiati con i prodotti nel negozio di Takane.
+  Character:
+    Name: '{0}'
+    Description: Lei è il personaggio con cui stai giocando.
+  FinalStage:
+    Name: Atto Finale
+    Description: Sei quasi alla fine. Continua!
+  Level:
+    Name: Livello {0}
+    Description: Il tuo progresso in questo Atto.
+  Stage:
+    Description: Sconfiggi il boss alla fine di ogni mappa per completare L'atto.
+    Name: Atto {0}
+  DifficultyNormal:
+    Name: 'Difficoltà: Normale'
+    Description: Difficoltà Standard.
+  DrawZone:
+    Name: Pila di Pesca
+    Description: "Pesca {0} carte durante la Fase di Pesca |d:(La Fase di Pesca avviene\
+      \ all'inizio del tuo turno, prima degli altri effetti \"All'inizio del turno\"\
+      )|\nSe la Pila di Pesca viene svuotata, le carte nella Pila di scarto vengono\
+      \ rimescolate nella Pila di Pesca.\n\nClicca per Visualizzare le carte nella\
+      \ Pila di Pesca. |Visualizzare la Pila di Pesca non ti permette di vedere l'ordine\
+      \ delle carte al suo interno.|"
+  DiscardZone:
+    Name: Pila di Scarto
+    Description: "Quando scarti una carta, questa finisce nella Pila di Scarto.\n\
+      Alla fine del turno, scarti tutte le carte rimaste nella mano |d:(senza attivare\
+      \ gli effetti)|.\n\nClicca per visualizzare la Pila di Scarto."
+  ExileZone:
+    Name: Esilio
+    Description: "Le carte |Esiliate| finiscono qui.\n\nClicca per vedere le carte\
+      \ |Esiliate| durante questo combattimento."
+  EndTurn:
+    Name: Fine Turno
+    Description: "Clicca per finire il tuo turno.\n\nScarti la tua mano |d:(senza\
+      \ attivare gli effetti)|.\nOgni nemico agirà in base alle sue |Intenzioni|,\
+      \ poi pescherai {0} carte e comincierai il tuo prossimo turno."
+  DifficultyEasy:
+    Name: 'Difficoltà: Facile'
+    Description: "Inizia ogni partita con uno dei |Tesori| di Kaguya.\nNon puoi raggiungere\
+      \ l'Atto Finale."
+  DifficultyHard:
+    Name: 'Difficoltà: Difficile'
+    Description: I nemici hanno più vita e causano più danni.
+  DifficultyLunatic:
+    Name: 'Difficoltà: Lunatico'
+    Description: I nemici hanno più vita, causano più danni ed usano azioni più pericolose.
+  BattleMana:
+    Name: Mana Disponibile
+    Description: "Mana non speso viene visualizzato qui.\nHai bisogno di mana per\
+      \ pagare i costi delle carte e per pagare |X|.\n\nClicca una icona del mana\
+      \ per farla \"galleggiare\" e far si che venga speso prima il mana galleggiante\
+      \ del mana disponibile, o venga speso per pagare mana |X|.\nClicca sul mana\
+      \ galleggiante per farlo tornare tra il mana disponibile."
+CardType:
+  Skill: Tecnica
+  Tool: Oggetto
+  Status: Stato
+  Misfortune: Sventura
+  Attack: Attacco
+  Defense: Difesa
+  Ability: Abilità
+Rarity:
+  Common: Comune
+  Shining: Brillante
+  Rare: Raro
+  Uncommon: Insolito
+  Mythic: Mitico
+StatusEffectType:
+  Negative: Debuff
+  Special: Speciale
+  Positive: Buff
