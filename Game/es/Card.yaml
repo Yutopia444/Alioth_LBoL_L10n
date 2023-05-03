@@ -415,8 +415,8 @@ ToolDroneBlock:
   Description: "Gana {Value1} |Matriz Defensiva|.\n|Limitado【{DeckCounter}】|"
 ToolRandomTool:
   Name: Walkie-Talkie Táctico
-  Description: "Elige 1 de {Value1} aleatorias |Herramientas| para añadir a la mano.\
-    \ Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
+  Description: "Elige 1 de {Value1} aleatorias |Herramientas| para añade una |copia|\
+    \ a la mano. Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
   FlavorText: ' "¡Este es el USS Palanquin, lanzamiento aéreo entrante!"'
 ArtificialJewellery:
   Name: Joya Artificial
@@ -1272,8 +1272,8 @@ WaterPrincess:
     \ a la mano.|"
   Description: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta {Value1}\
     \ de |Barrera|. (|Barrera| total {Special})\n|Debut|: Añade un |Roció| a la mano."
-  NonbattleDescription: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano,\
-    \ aumenta {Value1} de |Barrera|.\n|Debut|: Añade un |Roció| a la mano."
+  NonbattleDescription: "Obtén {Value1} de |Barrera| por cada carta en la mano.\n\
+    |Debut|: Añade un |Roció| a la mano."
 Shadow:
   Name: Sombra
 PrismriverRed:
@@ -1908,13 +1908,15 @@ CirnoDraw:
     \ del siguiente turno, roba {Value2} carta{Value2:plural one='' other='s'}."
 Tether:
   Name: Lazos
-  Description: "Obtén {Block} de |Bloqueo|.\nPara cada carta de |Apoyo de las Hadas|\
+  Description: "Obtén {Block} de |Bloqueo|.\nPor cada carta de |Apoyo de las Hadas|\
     \ en la mano, aumenta {Value1} de |Bloqueo|. (|Bloqueo| total {Special})"
+  UpgradedDescription: "Obtén {Shield} de |Barrera|.\nPor cada carta de |Apoyo de\
+    \ las Hadas| en la mano, aumenta {Value1} de |Barrera|. (|Barrera| total {Special})"
 GainDayaojing:
   Name: Animadora Silenciosa
-  Description: "Añade una |Unidad de Daiyousei| a la mano.\n|Debut|: Gana {Value1}\
+  Description: "Añade un |Danmaku de Daiyousei| a la mano.\n|Debut|: Gana {Value1}\
     \ de vida."
-  ExtraDescription1: "Añade una |Unidad de Daiyousei| a la mano.\n|d:Debut: Gana {Value1}\
+  ExtraDescription1: "Añade un |Danmaku de Daiyousei| a la mano.\n|d:Debut: Gana {Value1}\
     \ de vida.|"
 GainStar:
   Name: Lluvia de Estrellas
@@ -1972,8 +1974,9 @@ GainLuna:
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
     \ one='z' other='ces'}\nAñade un |Silencio de Luna| a la mano."
 WhiteWorld:
-  Description: "Al final del turno de {PlayerName}, gana {Value1} de |Poder| y |Espíritu|.\n\
-    |Maná Congelado| {Mana}."
+  Description: "Siempre que una carta con |Sobregiro| se juega, {Value1} carta{Value1:plural\
+    \ one=' aleatoria' other='s aleatorias'} en la mano cuestan temporalmente 1 maná\
+    \ aleatorio menos."
   Name: Mundo de Blanco Puro
 AttackWithEveryColor:
   Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
@@ -2083,8 +2086,9 @@ FairyOnIce:
     \ que tiene |Frío|, {PlayerName} gana {Value2} de |Evasión|. "
 CirnoFestival:
   Name: Infiltración en el Banquete
-  Description: Después de jugar una carta de |Habilidad|, agrega {Value1} carta{Value1:plural
-    one=' aleatoria' other='s aleatorias'} de |Apoyo de las Hadas| a la mano.
+  Description: "|Elegir|: Añade |{Value1:plural one='% Roció' other='% Rocios'}| a\
+    \ la mano, o añade {Value2} carta{Value2:plural one=' aleatoria común' other='s\
+    \ aleatorias comunes'} de |Apoyo de las Hadas| a la mano."
 DeepFreeze:
   Name: Congelación Profunda
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\
@@ -2162,7 +2166,7 @@ FrozenThrone:
   Description: Al comienzo del turno de {PlayerName}, si no hay un |Glaciar| en la
     mano, añade un |Glaciar| a la mano.
 FairyWrath:
-  Name: Ira de la Naturaleza
+  Name: Cólera de la Naturaleza
   Description: "Inflige {Damage} de daño a 2 enemigos aleatorios.\nPor cada cartas\
     \ de |Apoyo de las Hadas| Exiliada, {SelfName} inflige {Value1} más de daño.\n\
     |Sobregiro| {Value2}."
@@ -2213,6 +2217,10 @@ SummerParty:
     \ |Armadura de Escarcha|.\n|Por cada {Mana} gastado|: Agrega {Value2} carta{Value2:plural\
     \ one=' común aleatorio' other='s comunes aleatorios'} de |Apoyo de las Hadas|\
     \ a la mano."
+  UpgradedDescription: "|Por cada <sprite=\"ManaSprite\" name=\"U\"> gastado|: Gana\
+    \ {Value1} |Armadura de Escarcha|.\n|Por cada {Mana} gastado|: Agrega {Value2}\
+    \ carta{Value2:plural one=' común aleatorio' other='s comunes aleatorios'} de\
+    \ |Apoyo de las Hadas| a la mano."
 FairyAllOut:
   Name: Todas Manos a la Obra
   Description: "Inflige {Damage} de daño a todos los enemigos.\n|Exilia| todas las\
@@ -2256,3 +2264,8 @@ Thought:
 DoubleMana:
   Name: Despertar de las Hadas
   Description: "Duplica el maná existente.\n|Sobregiro| {Value1} ."
+CirnoFestivalBlue:
+  Description: Añade |{Value1:plural one='% Roció' other='% Rocios'}| a la mano.
+CirnoFestivalGreen:
+  Description: Añade {Value2} carta{Value2:plural one=' aleatoria común' other='s
+    aleatorias comunes'} de |Apoyo de las Hadas| a la mano.

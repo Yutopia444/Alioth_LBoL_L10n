@@ -244,6 +244,8 @@ PrivateSquare:
   Name: Encierro Plateado
   Description: "Por cada {Limit} cartas jugadas, {OwnerName} inflige {Level} de daño\
     \ a {PlayerName}.\n{Count:plural one='% carta restante' other='% cartas restantes'}."
+  Brief: Siempre que se juegue una cierta cantidad de cartas, <color=#B7F0FF>Sakuya
+    Izayoi</color> infligirá daño a {PlayerName}.
 TurnStartPurify:
   Name: Purificación Inminente
   Description: "Al inicio del próximo turno de {PlayerName}, se |Purifica|{Level}.\n\
@@ -411,8 +413,9 @@ MadokaBowSe:
     aleatorias a la pila de robo.
 InfinityGemsSe:
   Name: Guante con Gemas Incrustadas
-  Description: Al comienzo del turno de {OwnerName}, |Exilia| la mitad de todas las
-    cartas en combate, independientemente de dónde se encuentren.
+  Description: "Al comienzo del turno de {OwnerName}, |Exilia| la mitad de todas las\
+    \ cartas en combate, independientemente de dónde se encuentren.\n{Count} veces\
+    \ restantes."
 SakuraWandSe:
   Name: Llave Alada
   Description: '{OwnerName} ataca el doble de veces seguidas.'
@@ -829,8 +832,9 @@ ExtraDraw:
     one='' other='s'}.
 WhiteWorldSe:
   Name: Mundo de Blanco Puro
-  Description: Al final del turno de {PlayerName}, gana {Level} |Poder|, |Espíritu|,
-    y |Maná Congelado| {Mana}.
+  Description: Siempre que una carta con |Sobregiro| se juega, {Level} carta{Level:plural
+    one=' aleatoria' other='s aleatorias'} en la mano cuestan temporalmente 1 maná
+    aleatorio menos.
   Brief: Al final del turno de {PlayerName}, gana |Poder|, |Espíritu|, y |Maná Congelado|
     {Mana}.
 BailianFireSe:
@@ -870,11 +874,9 @@ SplitPotionSe:
   Brief: Las |Pociones Inestables| infligen daño a un objetivo adicional.
 IceMatrixSe:
   Name: Matriz Congelador
-  Brief: Cada vez que {OwnerName} recibe daño de ataque, pierde |Armadura de Escarcha|
-    adicional para aplicarle |Frío| al atacante.
-  Description: Cada vez que {OwnerName} recibe daño de ataque, pierde {Level} de |Armadura
-    de Escarcha| adicional para aplicarle |Frío| al atacante {Level} ve{Level:plural
-    one='z' other='ces'}.
+  Brief: '{PlayerName} gana |Armadura de Escarcha| al aplicar |Frío| a un enemigo.'
+  Description: '{PlayerName} gana {Level} |Armadura de Escarcha| al aplicar |Frío|
+    a un enemigo.'
 Benwo:
   Name: Id
   Description: Inflige y recibe el doble de daño mientras esta en el estado |Id|.
