@@ -1267,13 +1267,14 @@ GuijiZaoxingHu:
     \ cartas'}.\n{SelfName} se transforma en otra |Escultura| hasta el final del combate."
 WaterPrincess:
   Name: Princesa Undine
-  ExtraDescription1: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta\
-    \ {Value1} de |Barrera|. (|Barrera| total {Special})\n|d:Debut: Añade un Roció\
-    \ a la mano.|"
-  Description: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta {Value1}\
-    \ de |Barrera|. (|Barrera| total {Special})\n|Debut|: Añade un |Roció| a la mano."
-  NonbattleDescription: "Obtén {Value1} de |Barrera| por cada carta en la mano.\n\
-    |Debut|: Añade un |Roció| a la mano."
+  ExtraDescription1: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, {SelfName}\
+    \ da {Value1} más de |Barrera|. (|Barrera| total {Special})\n|d:Debut: Añade un\
+    \ Roció a la mano.|"
+  Description: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, {SelfName}\
+    \ da {Value1} más de |Barrera|. (|Barrera| total {Special})\n|Debut|: Añade un\
+    \ |Roció| a la mano."
+  NonbattleDescription: "{SelfName} da {Value1} más de |Barrera| por cada carta en\
+    \ la mano.\n|Debut|: Añade un |Roció| a la mano."
 Shadow:
   Name: Sombra
 PrismriverRed:
@@ -1748,7 +1749,7 @@ TodayYesterday:
 FakeHuiye:
   Description: "|d:Habrá más cartas para desbloquear en futuras actualizaciones.\n\
     Estén atentos.|"
-  Name: Cuento del Cortador de Bambú (Forjado)
+  Name: Sueños Ancestrales (Forjado)
 LilyChun:
   Name: ¡Llego la Primavera!
   Description: Añade {Value1} {Value1:plural one='carta aleatoria' other='cartas aleatorias'}
@@ -2069,8 +2070,8 @@ Blizzard:
     \ cada enemigo.\nSe repite de nuevo al comienzo del próximo turno de {PlayerName}."
 IceMatrix:
   Name: Matriz Congelador
-  Description: "Cuando {PlayerName} aplica |Frío| al enemigo, gana {Value1} |Armadura\
-    \ de Escarcha|.\nAplica |Frío| a cada enemigo."
+  Description: "Siempre que {PlayerName} aplica |Frío| a un enemigo, gana {Value1}\
+    \ |Armadura de Escarcha|.\nAplica |Frío| a cada enemigo."
 GainSunny:
   Name: Amanecer
   Description: "Inflige {Damage} de daño a cada enemigo {Value1} veces.\nAñade una\
@@ -2236,7 +2237,9 @@ FakeMoon:
   Description: "Elige una carta en la mano. Añade {Value1} |copia{Value1:plural one=''\
     \ other='s'}| de ella en la mano. {Value1:plural one='' other='s'} |cuesta{Value1:plural\
     \ one='' other='n'} temporalmente| {Mana} y {Value1:plural one='tiene' other='tienen'}\
-    \ |Exilio| y |Etéreo|.\nNo se puede elegir |Copias| para este efecto."
+    \ |Exilio| y |Etéreo|.\nSi el objetivo es una carta de |Habilidad| o tiene |Exilio|,\
+    \ el objetivo se convierte en una |Copia|.\nNo se puede elegir |Copias| para este\
+    \ efecto."
 OptBottom:
   Name: Hundirse
   Description: Coloca {TargetName} en la parte inferior de la pila de robo.
