@@ -696,8 +696,12 @@ DanmuJade:
     \ {Value2} 얻습니다."
 WaterPrincess:
   Name: 프린세스 운디네
-  Description: "손에 있는 카드 한 장마다 |보호막|을 {Value1} 얻습니다.\n|선보임|: |물결|을 한 장 얻습니다."
-  ExtraDescription1: "손에 있는 카드 한 장마다 |보호막|을 {Value1} 얻습니다.\n|d:선보임: 물결을 한 장 얻습니다.|"
+  Description: "|보호막|을 {Shield} 얻습니다.\n손에 있는 카드 한 장 당 얻는 |보호막|이 {Value1}씩 늘어납니다. (총\
+    \ {Special})\n|선보임|: |물결|을 한 장 얻습니다."
+  ExtraDescription1: "|보호막|을 {Shield} 얻습니다.\n손에 있는 카드 한 장 당 얻는 |보호막|이 {Value1}씩 늘어납니다.\
+    \ (총 {Special})\n|d:선보임: 물결을 한 장 얻습니다.|"
+  NonbattleDescription: "보호막을 {Shield} 얻습니다.\n손에 있는 카드 한 장 당 얻는 |보호막|이 {Value1}씩 늘어납니다.\n\
+    |선보임|: |물결|을 한 장 얻습니다."
 ForeverCool:
   UpgradedDescription: "|소멸|당한 |요정의 지원| 카드 한 장마다 무작위 적에게 |빙결|을 가합니다.\n사용한 |요정의 지원|\
     \ 카드 한 장마다 무작위 |요정의 지원| 카드를 버린 카드 더미에 넣습니다.\n무작위 |요정의 지원| 카드를 {Value1}장 얻습니다."
@@ -1308,6 +1312,8 @@ YuetuInvincible:
 YonglinCard:
   Description: 내 턴 종료 시 뽑을 카드 더미에 |거짓된 달|을 {Value1}장 섞어넣습니다.
   Name: 은퇴한 현자
+  UpgradedDescription: "내 턴 종료 시 뽑을 카드 더미에 |거짓된 달|을 {Value1}장 섞어넣습니다.\n뽑을 카드 더미의 맨\
+    \ 위에 |거짓된 달|을 {Value2}장 올려놓습니다."
 BailianNingshen:
   ExtraDescription1: "무작위 일반 카드 {Value1}장 중 하나를 골라 손으로 가져옵니다. 그 카드는 |일시적으로| {Mana}의\
     \ 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다.\n|d:선보임: 광휘를 한 장 얻습니다.|"
@@ -1611,3 +1617,34 @@ WanderingSoul:
 VampireShoot1:
   Name: 악마의 사격
   Description: 피해를 {Damage} 줍니다. 체력을 {Value1} 회복합니다.
+ShannvAttack:
+  Description: "피해를 {Damage} 줍니다.\n|중독|을 {Value1} 줍니다."
+  Name: 필드 미아즈마
+YuyukoDebuff:
+  Name: 무수의 꿈
+  Description: '|허약|과 |취약|을 {Value1} 줍니다.'
+SuikaBigball:
+  Name: 원귀옥
+  NonbattleDescription: "대상에 피해를 {Damage} 주고, 나머지 적에게 피해를 절반만큼 줍니다.\n|화력|을 {Value1}\
+    \ 잃습니다."
+  Description: "대상에 피해를 {Damage} 주고, 나머지 적에게 피해를 {HalfDamage} 줍니다.\n|화력|을 {Value1}\
+    \ 잃습니다."
+FakeMoon:
+  Name: 거짓된 달
+  FlavorText: 진정한 달보다 아릅답구나.
+  Description: "카드를 선택해 |일시적으로| 코스트가 {Mana}인 복제본을 {Value1}장 얻습니다. 해당 카드는 |소멸|과 |휘발성|이\
+    \ 붙습니다.\n대상 카드가 |능력| 카드이거나 |소멸|이 있는 경우 대상 카드가 |복사본|이 됩니다.\n|복사본|을 대상으로 할 수 없습니다."
+MeihongFire:
+  Description: "내 턴 종료 시 적 모두에게 피해를 {Value1} 줍니다.\n|액운|이나 |상태| 카드를 뽑을 시에도 효과가 발동합니다."
+  Name: 무차별 발화의 부적
+PrismriverRed:
+  Description: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |찬란한 별빛|을 한 장 섞어넣습니다."
+  ExtraDescription1: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |찬란한 별빛|을 한 장\
+    \ 섞어넣습니다.\n|d:선보임: <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다.|"
+  UpgradedDescription: "{Mana}를 얻습니다.\n카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에 |찬란한 별빛|을 한\
+    \ 장 섞어넣습니다.\n|선보임|: <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다."
+  Name: 키보드 독주
+MeihongPower:
+  Description: "내 턴 시작 시 |화력|을 {Value1} 얻습니다.\n전투 종료 시 체력이 절반 이하일 경우 체력을 {Value2}\
+    \ 회복합니다."
+  Name: 불사의 불꽃
