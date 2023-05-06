@@ -1909,6 +1909,7 @@ ColdBreath:
   ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'} losowemu wrogowi z |Chłodem|.\n|d:Debiut: Dodaj {Value1:plural one='%\
     \ Lodowiec' few='% Lodowce' many='% Lodowców'} do stosu doboru.|"
+  FlavorText: Możesz tego użycz aby wygrać tegoroczny The Queen of Fighters.
 IceBarrier:
   Name: Bariera Lodu
   Description: Zyskaj {Value1} |Lodowego Pancerza|.
@@ -1919,16 +1920,18 @@ IceGun:
     \ otrzymują {Value2:plural one='% raz' other='% razy'} więcej obrażeń."
 Tether:
   Name: Więzi
-  Description: "Za każdą kartę |Wsparcia Wróżek| w dłoni zyskaj {Value1} |Tymczasowej\
-    \ Mocy|.\n(Zyskaj {TotalFire} |Tymczasowej Mocy|.)"
+  Description: "Zyskaj {Block} |Bloku|.\nZa każdą kartę |Wsparcia Wróżek| w dłoni\
+    \ zyskaj o {Value1} więcej |Bloku|. (Łącznie {Special} |Bloku|)"
+  UpgradedDescription: "Zyskaj {Shield} |Bariery|.\nZa każdą kartę |Wsparcia Wróżek|\
+    \ w dłoni zyskaj o {Value1} więcej |Bariery|. (Łącznie {Special} |Bariery|)"
 CirnoInForest:
   Name: Na Widoku
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {GainMana}.\n|Przyrost|: Zyskaj dodatkową\
     \ {Mana}."
 IceMatrix:
   Name: Zamrożona Macierz
-  Description: "Gdy {PlayerName} otrzymuje obrażenia od ataku, traci 1 dodatkowy |Lodowy\
-    \ Pancerz| aby nałożyć |Chłód| na atakującego.\nZyaskaj {Value1} |Lodowego Pancerza|."
+  Description: "Gdy {PlayerName} nakłada |Chłód| na wroga, zyaskaj {Value1} |Lodowego\
+    \ Pancerza|.\nNałóż |Chłód| na wszystkich wrogów."
 MoreFriends:
   Name: Dusza Towarzyska
   Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% losową kartę'
@@ -1944,8 +1947,10 @@ FairyOnIce:
     \ few='% |Uniki|' many='% |Uników|'}. "
 CirnoFestival:
   Name: Infiltracja Bankietu
-  Description: Po zagraniu karty |Zdolności| dodaj {Value1:plural one='% losowa karta'
-    few='% losowe karty' many='% losowych kart'} |Wsparcia Wróżek| do ręki.
+  Description: "|Wybierz|: Dodaj {Value1:plural one='% |Plusk| few='% |Pluski| many='%\
+    \ |Plusków|'} do ręki lub dodaj {Value2:plural one='% losową pospolitą kartę'\
+    \ few='% losowe pospolite karty' many='% losowych pospolitych kart'} |Wsparcia\
+    \ Wróżek| do ręki."
 DeepFreeze:
   Name: Zamrożenie
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1958,6 +1963,13 @@ CirnoEcho:
     other='Zyskują'} |Echo|.
 ForeverCool:
   Name: Wiecznie Zimna Sezonowa Fantazja
+  Description: "Gdy karta |Wsparcia Wróżek| zostaje |Wygnana|, nałóż |Chłód| na losowego\
+    \ wroga.\nGdy karta |Wsparcia Wróżek| zostaje zagrana, dodaj losową kartę |Wsparcia\
+    \ Wróżek| do stosu zrzutek."
+  UpgradedDescription: "Gdy karta |Wsparcia Wróżek| zostaje |Wygnana|, nałóż |Chłód|\
+    \ na losowego wroga.\nGdy karta |Wsparcia Wróżek| zostaje zagrana, dodaj losową\
+    \ kartę |Wsparcia Wróżek| do stosu zrzutek.\nDodaj {Value1:plural one='% losową\
+    \ kartę' few='% losowe karty' many='% losowych kart'} |Wsparcia Wróżek| do ręki."
 GatherFairy:
   Description: Wielkość dłoni wzrasta do {MaxHand} kart.
   Name: Zebranie Wróżek
@@ -2096,8 +2108,8 @@ MorphMan:
 FrozenThrone:
   FlavorText: Now, we are one!
   Name: Zamrożony Tron
-  Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% |Lodowiec|'
-    few='% |Lodowce|' many='% |Lodowców|'} do stosu doboru.
+  Description: Na początku tury {PlayerName:g}, jeżeli nie ma |Lodowca| w dłoni, dodaj
+    {Value1:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do ręki.
 LongArm:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli w dłoni jest więcej niż {Value1:plural one='% inna karta' few='% inne karty'\
@@ -2269,7 +2281,22 @@ FreezeRiver:
   Name: Kra
   Description: Umieść kartę ze spodu stosu doboru do ręki. Ona |Tymczasowo Kosztuje|
     {Mana}.
+  UpgradedDescription: Umieść kartę ze spodu stosu doboru do ręki. Ona |Kosztuje|
+    {Mana}.
 FairyAllOut:
   Name: Wszyscy na Pokład
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\n|Wygnaj| wszystkie karty |Wsparcia Wróżek| w dłoni."
+CirnoWinter:
+  Name: Zimna Wiosna
+  Description: Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich wrogów.
+  UpgradedDescription: "Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich\
+    \ wrogów.\nNałóż |Chłód| na wszystkich wrogów."
+CirnoFestivalBlue:
+  Description: Dodaj {Value1:plural one='% losową pospolitą kartę' few='% losowe pospolite
+    karty' many='% losowych pospolitych kart'} |Wsparcia Wróżek| do ręki.
+CirnoFestivalGreen:
+  Description: Dodaj {Value1:plural one='% losową pospolitą kartę' few='% losowe pospolite
+    karty' many='% losowych pospolitych kart'} |Wsparcia Wróżek| do ręki.
+SummerParty:
+  Name: Lodowa Impreza
