@@ -13,7 +13,7 @@ ManaColor:
     \ generico può essere pagato da qualsiasi tipo di mana.\nAlcune carte richiedono\
     \ specificamente mana incolore.\nÈ importante menzionare che il mana Filosofale,\
     \ essendo valido come ogni colore, può essere più efficace delle terre multicolore\
-    \ di Magic.\nPer esemipio se il giocatore possiede |Peonia di Pietra|, che richiede\
+    \ di Magic.\nPer esemipio se il giocatore possiede |Pietra Peonica|, che richiede\
     \ mana rosso, e |Cubo di Ghiaccio|, che richiede mana blu, gli effetti di entrambe\
     \ le Esposizioni si attiveranno con l'uso di un singolo mana Filosofale."
 DamageType:
@@ -30,3 +30,44 @@ DamageType:
     ."
 CardPool:
   Name: Carte Disponibili
+  Description: "Puoi trovare carte come Ricompensa solo se soddisfano i seguenti criteri:\n\
+    1: Il costo della carta può essere pagato usando il mana presente nel mana base.\n\
+    2: Se si tratta di una carta Esclusiva, può essere trovata solo se stai giocando\
+    \ con il suo personaggio, o se ne possiedi una Esposizione Brillante.\n3: Ogni\
+    \ colore della carta è presente nel mana base. Il Mana Filosofale non viene calcolato\
+    \ per questo criterio.\n\nPer esempio, se stai giocando come Reimu e possiedi\
+    \ Grimorio Oscuro, Pietra Filosofale e Martello Miracoloso, (Hai scambiato la\
+    \ tua Esposizione Brillante consegnandola ad Eirin...)\nil mana base ha <sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. In questo\
+    \ caso puoi trovare carte Esclusive di Reimu e Marisa, visto che possiedi il Grimorio\
+    \ Oscuro.\n\nIn questo caso puoi trovare una carta nera che costa <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"B\"> visto che puoi pagare <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> per giocarla. Tuttavia,\
+    \ non puoi trovare una carta blu e nera che costa <sprite=\"ManaSprite\" name=\"\
+    U\"><sprite=\"ManaSprite\" name=\"B\">, visto che non c'è <sprite=\"ManaSprite\"\
+    \ name=\"U\"> nel mana base, anche se potresti pagare <sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"P\"> per giocarla.\n\nP.S.\nCarta Bianca, una\
+    \ Esposizione Brillante, ti permette di trovare carte di qualsiasi colore.\nCarte\
+    \ con Costo totale di 5 o più che hanno componenti di mana generico (<sprite=\"\
+    ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, eccetera) possono\
+    \ essere trovate anche se non c'è mana sufficiente nel mana base per giocarle.\
+    \ Ci sono diversi metodi per ridurre il prezzo di queste carte."
+BossLoot:
+  Name: Ricompense dell Boss
+  Description: "Quando sconfiggi un Boss, ti viene offerta a scelta una su tre |Esposizioni\
+    \ Brillanti| diverse come ricompensa. Queste |Esposizioni| seguono la seguente\
+    \ regola:\nL'|Esposizione| a destra dipende dal Boss. Nel primo Atto, sarà una\
+    \ delle |Esposizioni Brillanti| del Boss, mentre negli Atti successivi sarà una\
+    \ |Esposizione Brillante| basata sul colore del Boss. (Per esempio Remilia avrà\
+    \ come ricompensa una |Esposizione| rossa.)\nL'|Esposizione| a sinistra dipende\
+    \ dal tuo mana base. Questa |esposizione| sarà sempre una |Esposizione Brillante|\
+    \ che dona mana di un colore nel tuo mana base ed il colore sarà sempre diverso\
+    \ dal colore della |Esposizione| a destra.\nL'|Esposizione| centrale sarà sempre\
+    \ una |Esposizione Brillante| dal colore diverso delle altre due, e può essere\
+    \ una |Esposizione| che non aggiunge mana al mana base. (Come Ritratto ad Olio\
+    \ Imponente)\n\nSe non ci sono più |Esposizioni Brillanti| selezionabili alla\
+    \ fine di un Atto, le |Esposizioni| offerte saranno invece sostituite da |Comuni|,\
+    \ |Insolite| e |Rare|. (Questo normalmente accade dopo il boss dell'Atto 3, nell'|Esposizione|\
+    \ a destra.)"
