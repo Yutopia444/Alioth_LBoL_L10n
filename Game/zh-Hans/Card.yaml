@@ -1324,7 +1324,7 @@ CirnoAttackG:
   FlavorText: 琪露诺喜欢用冰冻的树叶和朋友玩打水漂。
 
 CirnoBlockU:
-  Name: 寒冰护体
+  Name: 冰晶护罩
   Description: 获得 {Block} 点|格挡|。
   FlavorText: 冷藏多年的英吉利牛肉也是防身利器。
 
@@ -1542,6 +1542,7 @@ FairyTree:
   Description: |-
     当一张技能牌加入手中时，获得{Mana}并抽 {Value1} 张牌。
     每回合可以触发一次。
+    （抽取技能牌时不生效。）
 
 CallFriends:
   Name: 呼朋唤友
@@ -2336,6 +2337,19 @@ HuiyeMana:
   Description: '{PlayerName}的回合开始时，获得 {Value1} 点随机的法力；每回合提高 {Value1} 点。'
   FlavorText: 孩童的歌谣传唱着光辉的罪人的传说。
 
+OtherBlock:
+  Name: 惹是生非
+  Description: |-
+    获得 {Block} 点|格挡|。
+    抽 {Value1} 张牌，优先抽取不属于{PlayerName}的角色卡。
+
+OtherSkill:
+  Name: 冒名顶替
+  Description: |-
+    抽 {Value1} 张牌。
+    获得{GainMana}。
+    每当你打出一张不属于{PlayerName}的角色牌时，{SelfName}额外提供<sprite="ManaSprite" name="C">。
+
 HuiyinAttack:
   Name: 水户光国
   Description: |-
@@ -2420,7 +2434,7 @@ KokoroDance:
 
 TannvCard:
   Name: 形势逆转
-  Description: 将抽牌堆顶和弃牌堆顶的各一张牌加入手中，它们|暂塑|为{Mana}。
+  Description: 将抽牌堆顶和弃牌堆顶的各一张牌移回手中，它们|暂塑|为{Mana}。
 
 ChengDefense:
   Name: 天仙鸣动
@@ -2628,6 +2642,12 @@ XiangziEcho:
   Description: 选择至多 {Value1} 张手牌，赋予|回响|。
   FlavorText: 「呀————呼————」
 
+YonglinUpgrade:
+  Name: 仙香玉兔
+  Description: |-
+    {PlayerName}的回合开始时，升级 {Value1} 张随机的手牌。
+    恢复 {Value2} 点生命。
+
 SanaeRice:
   Name: 五谷丰登米之浴
   Description: |-
@@ -2800,6 +2820,13 @@ JunkoNightmare:
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
     |放逐|所有的手牌，将等量的|纯粹|加入手中。
 
+BailianFire:
+  Name: 法界之火
+  Description: '{PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。'
+  UpgradedDescription: |-
+    {PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+    立刻生效一次。
+
 PatchouliLibrary:
   Name: 不动的大图书馆
   Description: |-
@@ -2808,13 +2835,6 @@ PatchouliLibrary:
   UpgradedDescription: |-
     获得{Mana}。
     从 {Value1} 张随机的稀有牌和 {Value2} 张随机的罕见牌中选择一张加入手中，它具有|放逐|、|虚无|。
-
-BailianFire:
-  Name: 法界之火
-  Description: '{PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。'
-  UpgradedDescription: |-
-    {PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
-    立刻生效一次。
 
 Shoot:
   Name: 射击
@@ -2993,12 +3013,16 @@ ToolRandomTool:
 
 VampireShoot1:
   Name: 使魔的射击
-  Description: 造成 {Damage} 点伤害。恢复 {Value1} 点生命。
+  Description: |-
+    造成 {Damage} 点伤害。
+    恢复 {Value1} 点生命。
   FlavorText: 「格挡了我也能吸出血！」
 
 VampireShoot2:
   Name: 使魔的红雨
-  Description: 造成 {Damage} 点伤害。恢复 {Value1} 点生命。
+  Description: |-
+    造成 {Damage} 点伤害。
+    恢复 {Value1} 点生命。
   FlavorText: 「有护盾我也能咬出血！」——成为吸血鬼眷属的代价就是牙龈炎
 
 WanderingSoul:
@@ -3076,6 +3100,25 @@ LarvaCure:
   Description: |-
     移除{PlayerName}身上的|中毒|。
     |消耗品【{DeckCounter}】|
+
+MoonTipsBag:
+  Name: 对月锦囊
+  Description: |-
+    从 {Value1} 条|c:对月锦囊妙计|中选择一项。
+    |消耗品【{DeckCounter}】|
+  FlavorText: 八云紫：「看来{PlayerName}遇到麻烦了呢」
+
+MoonTipsAttack:
+  Name: 补充弹幕
+  Description: 将 {Value1} 张|射击|洗入抽牌堆中，它们具有|填充|。
+
+MoonTipsDefense:
+  Name: 强化结界
+  Description: 获得 {Value1} 点|护盾|。
+
+MoonTipsHeal:
+  Name: 医治伤痛
+  Description: 恢复 {Value1} 点生命。
 
 AyaNews:
   Name: 《文文新闻》
