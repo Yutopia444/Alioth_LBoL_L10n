@@ -324,7 +324,7 @@ EnemyEnergy:
     Se usa para desatar su Cartas Mágica.'
 FastAttack:
   Description: Después de jugar la primera carta de un turno, {OwnerName} inflige
-    {Level} de daño a {PlayerName}.
+    un |Ataque| de {Level} de daño a {PlayerName}.
   Name: Velocista Extrema
 PowerByDefense:
   Name: Escudo Inquebrantable
@@ -743,8 +743,8 @@ Cold:
     \ y desaparece el |Frío|.\nSiempre que |Frío| se aplica a {OwnerName}, pierde\
     \ {StackMultiply} veces esa cantidad de vida. ({StackDamage} de vida.)"
   Brief: "Al comienzo del turno de {OwnerName}, pierde {BaseDamage} de vida y desaparece\
-    \ el |Frío|.\nSiempre que |Frío| se aplica a {OwnerName}, pierde el doble de vida.\
-    \ ({StackDamage} de vida.)"
+    \ el |Frío|.\nSiempre que el |Frío| se aplica de nuevo a {OwnerName}, perderá\
+    \ el doble de vida."
 MoonWorldSe:
   Name: Mundo Purgado
   Description: Al comienzo del turno de {PlayerName}, {Level} {Level:plural one='carta
@@ -927,7 +927,8 @@ PurifyModule:
 LightingModule:
   Name: Módulo de Destello
   Description: Cada vez que {OwnerName} golpea a {PlayerName} con un ataque, agrega
-    {Level} |Destello{Level:plural one='' other='s'}| a la pila de robo.
+    {Level} |Lu{Level:plural one='z Estelar Glamurosa' other='Luces Estelares Glamurosas'}|
+    a la pila de robo.
 EnemyTuanzi:
   Name: Dango Sabroso
   Description: Al final del turno de {OwnerName}, gana {Level} de vida.
@@ -986,3 +987,8 @@ FrostArmorReduce:
   Description: "Al comienzo del turno de {OwnerName}, gana {Level} de |Bloqueo| y\
     \ pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe un ataque,\
     \ pierde 1 |Armadura de Escarcha|."
+YonglinUpgradeSe:
+  Name: Incienso del Conejo Lunar
+  Description: Al comienzo del turno de {PlayerName}, |mejora| {Value1} carta{Value1:plural
+    one=' aleatoria' other='s aleatorias'} en la mano.
+  Brief: Al comienzo del turno de {PlayerName}, |mejora| cartas aleatorias en la mano.
