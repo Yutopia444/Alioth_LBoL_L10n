@@ -1206,7 +1206,7 @@ CirnoAttackG:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
   FlavorText: Cirno aime utiliser des feuilles gelées pour jouer avec ses amies.
 CirnoBlockU:
-  Name: Bouclier de Glace
+  Name: Bouclier de Crystal
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
   FlavorText: Le boeuf anglais qui a été réfrigéré pendant de nombreuses années est
     aussi une arme d'autodéfense.
@@ -1742,7 +1742,7 @@ NewsTidbit:
   Description: "Gagnez {Value1} |Verrouillé{Value1:plural one='' other='s'}|.\n|Limité【{DeckCounter}】|"
   Name: Potins
   FlavorText: "... a révélé que le voyage de Reimu n'était pas seulement lié à des\
-    \ considérations financières, mais également à sa relation personnelle étroite\
+    \ considérations financières, mais également à son étroite relation personnelle\
     \ avec Kaguya. Il est rapporté que Reimu entre et sort souvent du Pavillon de\
     \ l'Éternité, et des images de son comportement intime avec Kaguya sortent également\
     \ fréquemment. (Lecture d'un client du journal)"
@@ -2120,9 +2120,9 @@ IceBlock:
     \ ce tour-ci, {PlayerName} termine son tour."
 FairyTree:
   Name: Maison de Fées
-  Description: "Lorsqu'une carte de talent est ajoutée à la main, obtenez {Mana} et\
-    \ piochez {Value1} carte{Value1:plural one='' other='s'}.\nPeut être déclenché\
-    \ une fois par tour."
+  Description: "Lorsqu'une carte de talent est ajoutée à la main pour la première\
+    \ fois du tour, obtenez {Mana} et piochez {Value1} carte{Value1:plural one=''\
+    \ other='s'}.\n(Ne prend pas effet quand vous piochez une carte de talent.)"
 GatherFairy:
   Name: Assemblée de Fées
   Description: "Limite de main augmentée à {MaxHand} cartes.\nPiochez {Value1} carte{Value1:plural\
@@ -2813,3 +2813,33 @@ CirnoWinter:
   Description: Lorsque {PlayerName} débute son tour, appliquez |Froid| à chaque ennemi.
   UpgradedDescription: "Lorsque {PlayerName} débute son tour, appliquez |Froid| à\
     \ chaque ennemi.\nAppliquez |Froid| à chaque ennemi."
+OtherSkill:
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez {GainMana}.\n\
+    Chaque fois que vous jouez une carte d'un autre personnage que {PlayerName}, {SelfName}\
+    \ fournit <sprite=\"ManaSprite\" name=\"C\"> en plus."
+  Name: Imposteur
+YonglinUpgrade:
+  Description: "Lorsque {PlayerName} débute son tour, améliorez {Value1} carte{Value1:plural\
+    \ one=' aléatoire' other='s aléatoires'} en main.\nRestaure {Value2} point{Value2:plural\
+    \ one='' other='s'} de vie."
+  Name: Encens de Lapin Lunaire
+MoonTipsBag:
+  Description: "Choisissez {Value1} |Astuce{Value1:plural one='' other='s'} Contre\
+    \ la Lune|.\n|Limité【{DeckCounter}】|"
+  Name: Sac à Astuces de Yukari
+  FlavorText: 'Yukari : "On dirait que {PlayerName} est en difficulté."'
+MoonTipsAttack:
+  Name: Extra Danmaku
+  Description: Ajoutez {Valeur1} carte{Value1:plural one='' other='s'} |Tir| à la
+    pioche. {Value1:plural one='Elle a' other='Elles ont'} |Renfloue|.
+MoonTipsDefense:
+  Name: Défense Renforcée
+  Description: Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
+MoonTipsHeal:
+  Name: Astuces Santé
+  Description: Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.
+OtherBlock:
+  Name: Semer la Zizanie
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
+    \ {Value1} carte{Value1:plural one='' other='s'} en donnant la priorité aux cartes\
+    \ d'autres personnages que {PlayerName}."

@@ -216,8 +216,8 @@ YuyukoDeath:
     \ ne peut pas gagner de points de vie."
   Name: Loi de la Mortalité
 FastAttack:
-  Description: Après avoir joué la première carte du tour, {PlayerName} reçoit {Level}
-    dégât{Level:plural one='' other='s'} de {OwnerName}.
+  Description: Après avoir joué la première carte du tour, {OwnerName} effectue une
+    |attaque| qui inflige {Level} dégât{Level:plural one='' other='s'} à {PlayerName}.
   Name: Vitesse Pure
 DoremyLevel:
   Description: Plus on s'enfonce dans le rêve, plus les attaques de {OwnerName} sont
@@ -953,8 +953,9 @@ InvincibleEternal:
   Description: '{OwnerName} ne peut pas subir plus de 1 dégât.'
 LightingModule:
   Name: Module Flash
-  Description: Lorsque l'attaque de {OwnerName} touche, {Level:plural one='% |Éblouissement|
-    est mélangé' other='% |Éblouissements| sont mélangés'} dans la pioche.
+  Description: Chaque fois que {OwnerName} frappe {PlayerName} avec une attaque, {Level:plural
+    one='% |Lumière des Étoiles Glamour| est mélangé' other='% |Lumières des Étoiles
+    Glamours| sont mélangés'} dans la pioche.
 PurifyModule:
   Name: Module d'Épuration
   Description: Lorsque l'attaque de {OwnerName} touche, |purifie| {Level} mana au
@@ -1011,7 +1012,7 @@ CirnoFestivalSe:
   Brief: Pour chaque carte |Pouvoir| jouée, ajoutez des |Soutiens Fées| aléatoires
     à votre main.
 EnemyDayaojing:
-  Name: Collaboration de Daiyousei
+  Name: Soutien de Daiyousei
   Description: Lorsque {OwnerName} finit son tour, récupérez {Level} point{Level:plural
     one='' other='s'} de vie.
 EnemyLarva:
@@ -1041,3 +1042,15 @@ FrostArmorReduce:
   Description: "Lorsque {OwnerName} débute son tour, elle gagne {Level} |Bouclier{Level:plural\
     \ one='' other='s'}| et perd 1 |Armure de Givre|.\nChaque fois que {OwnerName}\
     \ est touché par une attaque, elle perd 1 |Armure de Givre|."
+CirnoWinterSe:
+  Name: Printemps Froid
+  Description: Lorsque {PlayerName} débute son tour, appliquez |Froid| {Level} fois
+    à chaque ennemi.
+  Brief: Au début du tour de {PlayerName}, appliquez |Froid| à chaque ennemi plusieurs
+    fois.
+YonglinUpgradeSe:
+  Name: Encens de Lapin Lunaire
+  Description: Lorsque {PlayerName} débute son tour, améliorez {Level} carte{Level:plural
+    one=' aléatoire' other='s aléatoires'} dans la main.
+  Brief: Lorsque {PlayerName} débute son tour, améliorez des cartes aléatoires dans
+    la main.
