@@ -133,7 +133,7 @@ JiejieAttack:
   Name: 結界猛撃
   Description: '{PlayerName}の|バリア|値{ShieldDamage}＋{Damage}のダメージを与える。'
   NonbattleDescription: '{PlayerName}の|バリア|値＋{Damage}のダメージを与える。'
-  FlavorText: 最強の排除型結界、弾幕を遮るだけでなく、結界でそのまま殴る事も可能だ。
+  FlavorText: 敵への拒絶を目的とした最強の結界、弾幕を遮るだけでなく、結界でそのまま殴る事も可能だ。
 YakongDianxue:
   Name: 亜空点穴
   Description: "{Damage}のダメージを与える。\n{PlayerName}がバフを失うたび、捨て札からこのカードを手札に戻す。"
@@ -336,10 +336,10 @@ AccuracyLaser:
 CollectionDefense:
   NonbattleDescription: 山札にあるカードの数だけ|ブロック|を得る。
   UpgradedNonbattleDescription: 山札にあるカードの数だけ|バリア|を得る。
-  Name: 大きすぎて潰せない
+  Name: 山の如し
   Description: 山札にあるカードの数だけ|ブロック|を得る（ブロック{Block}）。
   UpgradedDescription: 山札にあるカードの数だけ|バリア|を得る（バリア{Shield}）。
-  FlavorText: 貸しも作りまくれば、いずれ無敵になる。 -《カモが出来上がるまで》
+  FlavorText: 貸しは積もれば無敵となる。 -《カモが出来上がるまで》
 MarisaEat:
   Name: ドカ食い
   Description: "|専念|{Value1}を得る。\n|初見|：ライフを{Value2}回復する。"
@@ -355,14 +355,14 @@ PoisonPotion:
 LearnAstrology:
   Description: '{PlayerName}のターン開始時、手札に|星占い|がない場合、|星占い|1枚を手札に加える。'
   Name: 天文研修
-  FlavorText: 「魔理沙ってば星の方ばっかり見て......。偶にはこっちも——」
+  FlavorText: 「魔理沙ってば星空ばっかり眺めて.....。偶にはこっちも——」
 StarFantasy:
   Name: スターダストレヴァリエ
   Description: "{Damage}のダメージを与える。\nこのカードが|保留|されるたびに、戦闘終了までダメージ{Value1}増加。"
 ScryBlock:
   Description: '|星見|をするたび、{PlayerName}が{Value1}|ブロック|を得る。'
   Name: 権謀術数
-  FlavorText: 「夕食後はいつも散歩しながら確認してるぜ。誰の家に忍び込めるか——じゃなくてお邪魔できるかをだな——」
+  FlavorText: 「夕食後はいつも外へ出て確認してるぜ。誰の家に忍び込めるか——じゃなくてお邪魔できるかをだな——」
 PotionJungle:
   Name: 蛍光の森
   Description: '{PlayerName}のターン終了時、|不安定なポーション|を{Value1}枚捨て札に加える。'
@@ -909,6 +909,7 @@ KnifeHell:
   Name: シルバーエレガント
 FindCollection:
   Name: リモートサポート
+  Description: ランダムな{PlayerName}専用のものでないカードを {Value1} 枚の中から一つ選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。
 IceSaber:
   Name: ソードフリーザー
 IceLaser:
@@ -1023,6 +1024,7 @@ MoguMaster:
 ReimuHeavyAttack:
   Name: 博霊神拳
   FlavorText: 「あなたはもう死んでいる」
+  Description: "{Damage}のダメージを与える。\n|火力|から受ける効果 {Value1} 倍。"
 TimeLord:
   Name: 時間支配
   Description: '|タイムパルス|{Value1}を得る。'
@@ -1044,6 +1046,7 @@ DoremyDuplicate:
   FlavorText: ドレミーは喉が渇く際、寝る直前に大量の水を飲む人の見る夢へと好き好んで入る傾向がある。
 ReisenAttack:
   Name: 狂乱の夢
+  Description: '|エンハンス|{Mana}：敵全体に{Damage}のダメージを与える'
 DizangLove:
   Name: 即席菩薩
 LoyalMaid:
@@ -1070,5 +1073,22 @@ TodayYesterday:
   Name: 今昔幻想郷
 MarisaHoldCard:
   FlavorText: 「ヒトツダケナンテエラベナイヨー！」
+  Name: 勿体無い
+  Description: "手札を {Value1} 枚選び、1ターン|保留|する。\n{Block}|ブロック|を得る"
 Xingguang:
   Name: まばゆい星の光
+WhiteLaser:
+  Name: ラジエーションレーザー
+  Description: "{Damage}のダメージを与える。\n {Shield} 点の|バリア|を得る、これは|バースト|の効果対象となる。"
+MasterOfCollection:
+  Name: アイテムコレクター
+  Description: '|保留|が発動する度，そのカードにかかるランダムなマナを {Value1} つ減らす。戦闘終了時まで続く。'
+ChargingPotion:
+  Name: 元素放射
+  Description: "|不安定なポーション|を一枚打ち出す度に， {Value1} 層の|チャージ|を得る。\n|不安定なポーション| {Value2} 枚を手札に加える。"
+StarlightTaifengSummoner:
+  Name: アンリミテッドスター
+  Description: "|スターライトタイフーン|を一枚山札に加える。\n|シナジー|{Mana}：それの攻撃回数を＋１する。\n|シナジー|<sprite=\"\
+    ManaSprite\" name=\"R\">：それに {Value1} のダメージを追加する。"
+  UpgradedDescription: "|スターライトタイフーン＋|を一枚山札に加える。\n|シナジー|{Mana}：それの攻撃回数を＋１する。\n|シナジー|<sprite=\"\
+    ManaSprite\" name=\"R\">：それに {Value1} のダメージを追加する。"
