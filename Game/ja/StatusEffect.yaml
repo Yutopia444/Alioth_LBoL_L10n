@@ -285,7 +285,7 @@ DreamMaster:
   Description: '{OwnerName}は夢の支配者だ。'
   Name: 夢を創る者
 FastAttack:
-  Description: 各ターンに初めてカードを使用したとき、{OwnerName}は{PlayerName}に {Level} 点のダメージを与える。
+  Description: 各ターンに初めてカードを使用したとき、{OwnerName}は{PlayerName}に {Level} 点の攻撃ダメージを与える(ブロック可)。
   Name: 破られることのない速さ
 EnemyTuanzi:
   Description: '{OwnerName}のターン終了時、 {Level} 点のライフを回復する。'
@@ -304,7 +304,7 @@ PurifyModule:
   Description: '{OwnerName}の攻撃が命中時、次のターンのマナ {Level} 点を|浄化|する。'
 LightingModule:
   Name: 閃光モジュール
-  Description: '{OwnerName}の攻撃が命中時、 {Level} 枚の|眩輝|が山札にシャッフルされる。'
+  Description: '{OwnerName}の攻撃が命中時、 {Level} 枚の|まばゆい星の光|が山札にシャッフルされる。'
 AccuracyModule:
   Description: '{OwnerName}の攻撃は|精密|になる。'
   Name: 誘導モジュール
@@ -393,7 +393,7 @@ JunkoPurify:
   Name: 純化の光
 InfinityGemsSe:
   Name: 宝石が埋め込まれたガントレット
-  Description: '{OwnerName}のターン開始時、{PlayerName}のカードの半分を|廃棄|する。カードの場所は問わない。'
+  Description: '{OwnerName}のターン開始時、{PlayerName}のカードの半分を|廃棄|する。カードの場所は問わない。残り{Count} 回。'
 SakuraWandSe:
   Description: '{OwnerName}の攻撃回数が二倍になる。'
   Name: 翼のついた鍵
@@ -513,19 +513,17 @@ KnifeTarget:
   Description: '|投げナイフ|は{OwnerName}を優先して狙う。'
   Brief: '|投げナイフ|は{OwnerName}を優先して狙う。'
 FrostArmor:
-  Brief: "|フロストアーマー|を獲得するたび、同量の|ブロック|を得る。\n{OwnerName}のターン終了時、|ブロック|を得て、数値を 1 下げる。\n\
-    攻撃ダメージを受けると、数値が 1 下がる。"
+  Brief: "|フロストアーマー|を獲得するたび、同量の|ブロック|を得る。\n{OwnerName}のターン終了時、|ブロック|を得て、数値を 1 下げる。"
   Name: フロストアーマー
-  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。\n攻撃ダメージを受けると、数値が\
-    \ 1 下がる。"
+  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。"
 ExtraBlizzard:
   Brief: '{OwnerName}の次ターン開始時、敵全体に|精密|ダメージを与え、|冷気|を付与する。'
   Name: 吹雪到来
   Description: '{OwnerName}の次ターン開始時、敵全体に {Damage} 点の|精密|ダメージを与え、|冷気|を付与する。'
 WhiteWorldSe:
   Name: 純白の世界
-  Description: '{PlayerName}のターン終了時、 {Level} 点の|火力|と|霊力|を得たうえで、|マナ凍結|{Mana}を得る。'
-  Brief: '{PlayerName}のターン終了時、|火力|と|霊力|を得たうえで、|マナ凍結|{Mana}を得る。'
+  Description: '|オーバードラフト|カードを使用した後、手札の {Level} 枚のランダムなカードのランダムなマナコストが| 1 点減る。'
+  Brief: '|オーバードラフト|カードを使用した後、一時的に手札のランダムなカードのランダムなマナコストが| 1 点減る。'
 PisiSkillSe:
   Brief: ターン終了まで、|ブロック|を得るたびに、代わりに数倍のダメージをランダムな敵に与える。
   Name: 寒獄の蝕
@@ -572,8 +570,8 @@ DangerousMagicianSe:
   Name: 危険な手品師
 IceMatrixSe:
   Name: フリーズマトリックス
-  Description: 攻撃ダメージを受けた際、追加で {Level} 点の|フロストアーマー|を失い、敵に|冷気| {Level} を付与する。
-  Brief: 攻撃ダメージを受けた際、追加で|フロストアーマー|を失い、敵に|冷気|を付与する。
+  Description: '{PlayerName}が敵に|冷気|を付与した際、|フロストアーマー| {Level} を得る。'
+  Brief: '{PlayerName}が敵に|冷気|を付与した際、|フロストアーマー|を得る。'
 Immune:
   Name: アイスバリア
   Description: '{OwnerName}はあらゆるダメージを受けない。残り {Duration} ターン持続。'
@@ -608,8 +606,8 @@ KokoroDanceSe:
   Name: 仮面喪心舞
   Brief: 敵がデバフを得るたび、{PlayerName}は対象にダメージを与える。
 SkyWaterSe:
-  Description: '{PlayerName}のターン終了時、捨てたカード 1 枚につき {Level} 点の|協力|を得る。'
-  Brief: '{PlayerName}のターン終了時、捨てたカード一枚につき|協力|を得る。'
+  Description: 'ドローフェイズ時、追加で {Level} 枚のカードを引く。'
+  Brief: 'ドローフェイズ時、追加でカードを引く。'
   Name: お天水の奇跡
 TodayYesterdaySe:
   Brief: '{OwnerName}が攻撃を|グレイズ|するたび、|火力|を得る。'
@@ -747,10 +745,10 @@ PrismriverSe:
   Brief: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
 FrozenThroneSe:
   Name: 凍った玉座
-  Description: '{PlayerName}のターン終了時、 {Level} 枚の|氷晶|を山札に混ぜる。'
-  Brief: '{PlayerName}のターン終了時、|氷晶|を山札に混ぜる。'
+  Description: '{PlayerName}のターン開始時、手札の|氷晶|が {Level} 枚になるように補充される。'
+  Brief: '{PlayerName}のターン開始時、手札の|氷晶|が {Level} 枚になるように補充される。'
 EnemyDayaojing:
-  Name: 大妖精の協力
+  Name: 大妖精のサポート
   Description: '{OwnerName}のターン終了時、 {Level} 点のライフを回復する。'
 EnemyLarva:
   Name: ラルバの羽
@@ -761,3 +759,17 @@ EnemyMaid:
 EnemyLily:
   Name: リリーホワイトの報せ
   Description: '{OwnerName}の行動が強化される。'
+FrostArmorReduce:
+  Name: フロストアーマー（敵）
+  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値が 1 下がる。\n攻撃ダメージを受けたとき、\
+    \ 1 下がる。"
+  Brief: "|フロストアーマー|を得たとき、即座に同量の|ブロック|を得る。\n{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値が\
+    \ 1 下がる。\n攻撃ダメージを受けたとき、 1 下がる。"
+CirnoWinterSe:
+  Name: 春雪異変
+  Description: '{PlayerName}のターン開始時、敵全体に|冷気| {Level} を与える。'
+  Brief: '{PlayerName}のターン開始時、敵全体に|冷気|を与える。'
+YonglinUpgradeSe:
+  Description: '{PlayerName}のターン開始時、 {Level} 枚のランダムな手札をアップグレードする。'
+  Brief: '{PlayerName}のターン開始時、ランダムな手札をアップグレードする。'
+  Name: 仙香玉兎
