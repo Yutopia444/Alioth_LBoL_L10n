@@ -80,7 +80,7 @@ ReimuWeiyan:
   Description: Her düşmana {Value1} |Zayıflık| verir.
 OverJingjie:
   Name: Alemlerin Üstünde
-  Description: '{Value1} saldırı kartı arasından birini eklemek için seç. |Geçici
+  Description: '{Value1} saldırı kartı arasından birini eline eklemek için seç. |Geçici
     olarak| {Mana} bedelindedir.'
 Zhuizongfu:
   Name: Güdümlü Tılsım
@@ -279,9 +279,9 @@ KnifeBounce:
   Name: Seken Bıçaklar
 PrivateVision:
   Name: Özel Vizyon
-  Description: "Bir kartı ıskartala.\n{Value1} |Sıyrılma| edin."
-  UpgradedDescription: "Bir kartı ıskartala.\n{Value1} |Sıyrılma| edin.\n{Value2}\
-    \ |Refleksiyon| edin."
+  Description: "Bir kartı dışla.\n{Value1} |Sıyrılma| edin."
+  UpgradedDescription: "Bir kartı dışla.\n{Value1} |Sıyrılma| edin.\n{Value2} |Refleksiyon|\
+    \ edin."
 Dejavu:
   Description: "Destenin en üstüne koymak amacıyla elinden en fazla {Value1} tane\
     \ kart seç.\n{Value1} Kart çek.\n{Mana} Edin."
@@ -393,7 +393,7 @@ SakuyaWeak:
   Description: "{Value1} |Zayıf| uygula.\n{Mana} Edin."
 SakuyaGoOut:
   Name: Seyahat Hazırlığı
-  Description: "{Value1} Tane kart çek.\n{Value1} Kart ıskartala.\n{Mana} Edin."
+  Description: "{Value1} Tane kart çek.\n{Value1} Kart dışla.\n{Mana} Edin."
 TimeAuraAttack:
   Description: "{Damage} Hasar ver.\n{Value1} |Zaman Titreşimi| edin."
   Name: Zaman Büyüsü
@@ -412,7 +412,84 @@ NightSeeStar:
   Description: "|Kehanet| {Scry}\n{Value1} Kart çek."
 MarisaSteal:
   Name: '"Ödünç Alınmış" Malzeme'
+  Description: "Ele {Value1} |Rengarenk| ekle.\n|Limit Aşımı| {Value2}."
 AttackMagic:
   Name: Sihirli Mermiler
   Description: "{Damage} Hasar ver.\n{Value1} Tane kart çek.\nEline {Value2} tane\
     \ |Fırlatma Bıçağı| ekle."
+ShinningPotion:
+  Name: Parlak Mantar
+  Description: "{Block} |Blok| edin.\nDesteye |Dengesiz İksir| ekle.\n|Aşırı {Value2}|:\
+    \ 2 iksir ekle."
+Yinhe:
+  Name: Samanyolu Galaksisi
+  Description: "{Block} |Blok| edin.\n|Saklandığında|: Kartın |Bloğunu| bu savaşlığına\
+    \ {Value1} arttır."
+LearnAstrology:
+  Name: Astroloji Çalışması
+  FlavorText: '"Neden benim yerime sadece yıldızlara bakmayı istiyor?"'
+  Description: '{PlayerName:sg} turunun başlangıcında elde hiç |Astroloji| yoksa ekle.'
+PoisonPotion:
+  Description: "|Dengesiz İksirler| ayrıca {Value1} |Zehir| uygular.\nDesteye {Value2}\
+    \ |Dengesiz İksir| ekle."
+  Name: Cadının Kazanı
+AccuracyLaser:
+  Description: "{Value1} sefer {Damage} hasar ver.\n|Saklandığında|: Bu kart bu savaşlığına\
+    \ {Mana} ucuzlar."
+  Name: Yönlü Lazer
+BurstDraw:
+  Name: Hızlı Düello
+  Description: '{PlayerName} |Patlamadayken| {Value1} kart çek.'
+StarShower:
+  Name: Yıldız Altı Güneşlenme
+  Description: "{Block} |Blok| edin.\n{Value2} |Enerji| edin. Eğer {PlayerName:sg}\
+    \ zaten |Enerjisi| var ise {Value1} |Enerji| edin."
+MarisaHoldCard:
+  Name: Kederden Ayrılık
+  Description: "Bu turluğuna onları |Saklamak| için en fazla {Value1} olmak üzere\
+    \ kart seç.\n{Block} |Blok| edin."
+CollectionDefense:
+  Name: Batamayacak Kadar Büyük
+  Description: Destedeki kart sayısı kadar |Blok| edin. ({Block})
+  UpgradedDescription: Destedeki kart sayısı kadar |Bariyer| edin. ({Shield})
+  NonbattleDescription: Destedeki kart sayısı kadar |Blok| edin.
+  UpgradedNonbattleDescription: Destedeki kart sayısı kadar |Bariyer| edin.
+MarisaEat:
+  Name: Mantar Ziyafeti
+  ExtraDescription1: "{Value1} |Odaklanma| edin.\n|d:Debü: {Value2} sağlık edin.|"
+  Description: "{Value1} |Odaklanma| edin.\n|Debü|: {Value2} sağlık edin."
+ThrowBigStar:
+  Name: Kızıl Yıldız Patlaması
+  Description: "Her düşmana {Damage} hasar ver.\n|Aşırı {Value2}|: Hasarını ikiye\
+    \ katlar."
+StarSky:
+  Description: '{Value1} |Enerji| edin.'
+  Name: Parlak Gökyüzü
+PotionJungle:
+  Name: Aydınlık Orman
+  Description: '{PlayerName:sg} turunun başlangıcında ıskarta yığınına {Value1} |Dengesiz
+    İksir| ekle.'
+ShootMoon:
+  Name: Risk Atmak
+  Description: "{Damage} Hasar ver.\n|Aşırı {Value2}|: {Value1} |Sıyrılma| edin."
+RunAway:
+  Name: Kaçış
+FireUpBagualu:
+  Name: Fırını Yak
+  Description: "{Value1} |Enerji| edin.\n{Value2} |Ateşgücü| edin. Bu etki |Patlamadan|\
+    \ etkilenir."
+ScryBlock:
+  Name: Taammüt
+  Description: '{PlayerName} |Kehanet| kullandığında {Value1} |Blok| edin.'
+StarFantasy:
+  Name: Yıldız Hülyası
+  Description: "{Damage} Hasar ver.\n|Saklandığında|: Kartın hasarını bu savaşlığına\
+    \ {Value1} arttır."
+ShibaiChanwu:
+  Name: Başarısızlığın Sonucu
+  Description: "Desteye {Value1} |Dengesiz İksir| ekle.\nEle {Value2} |Gölge| ekle."
+RainbowStar:
+  Name: Gökkuşağı Yıldızı
+  Description: "{Damage} Hasar ver.\n|Harcanan her <sprite=\"ManaSprite\" name=\"\
+    1\"> için|: Kartın hasarı {Value1} artar.\n|Harcanan her <sprite=\"ManaSprite\"\
+    \ name=\"P\"> için|: Kartın hasarı {Value2} artar."
