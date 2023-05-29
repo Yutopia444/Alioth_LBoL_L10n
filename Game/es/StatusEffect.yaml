@@ -219,7 +219,7 @@ LunaticTorch:
     \ enemigos son llevados a la |Locura|.\nGana {Mana} de mana al inicio del turno\
     \ de {PlayerName}."
 WindGirl:
-  Name: Chica Diosa del Viento
+  Name: Chica de la Diosa del Viento
   Description: La |Evasión| de {OwnerName} es reabastecido hasta {Level} al final
     de su turno.
 Interview:
@@ -779,6 +779,7 @@ DizangLoveSe:
   Name: Bodhi Instantáneo
   Description: Cada vez que se juega una carta común, {OwnerName} gana {Level} de
     |Poder Temporal|.
+  Brief: Después de jugar una carta común, {OwnerName} obtiene |Poder Temporal|.
 ModuoluoFireSe:
   Name: Fuego de Ena
   Description: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige {Level}
@@ -833,8 +834,8 @@ WhiteWorldSe:
   Description: Siempre que una carta con |Sobregiro| se juega, {Level} carta{Level:plural
     one=' aleatoria' other='s aleatorias'} en la mano cuestan temporalmente 1 maná
     aleatorio menos.
-  Brief: Al final del turno de {PlayerName}, gana |Poder|, |Espíritu|, y |Maná Congelado|
-    {Mana}.
+  Brief: Siempre que una carta con |Sobregiro| se juega, varias cartas en la mano
+    cuestan temporalmente 1 maná aleatorio menos.
 BailianFireSe:
   Name: Fuegos de Hokkai
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
@@ -978,15 +979,27 @@ KnifeTarget:
     se utilice.
 PisiSkillSe:
   Name: Decadencia del Infierno Helado
-  Description: Hasta el final del turno, cada vez que {PlayerName} fuera a ganar |Bloqueo|,
-    inflige {Level} veces más de daño a un enemigo aleatorio.
+  Description: Hasta el final del turno, cada vez que {PlayerName} obtiene |Bloqueo|,
+    inflige {Level} veces esa cantidad de daño a un enemigo aleatorio.
+  Brief: Hasta el final del turno, cada vez que {PlayerName} obtiene |Bloqueo|, inflige
+    varias veces esa cantidad de daño a un enemigo aleatorio.
 FrostArmorReduce:
   Name: Armadura de Escarcha (Enemigo)
   Description: "Al comienzo del turno de {OwnerName}, gana {Level} de |Bloqueo| y\
     \ pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe un ataque,\
+    \ pierde 1 |Armadura de Escarcha|."
+  Brief: "Gana Inmediatamente la misma cantidad de |Bloqueo| cuando la |Armadura de\
+    \ Escarcha| es obtenido.\nAl comienzo del turno de {OwnerName}, gana algo de |Bloqueo|\
+    \ y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe un ataque,\
     \ pierde 1 |Armadura de Escarcha|."
 YonglinUpgradeSe:
   Name: Incienso del Conejo Lunar
   Description: Al comienzo del turno de {PlayerName}, |mejora| {Value1} carta{Value1:plural
     one=' aleatoria' other='s aleatorias'} en la mano.
   Brief: Al comienzo del turno de {PlayerName}, |mejora| cartas aleatorias en la mano.
+CirnoWinterSe:
+  Description: Cuando {PlayerName} comienza su turno, aplica {Level} de |Frío| a cada
+    enemigo.
+  Brief: Al comienzo del turno de {PlayerName}, aplica varias veces |Frío| a cada
+    enemigo.
+  Name: Primavera Fría
