@@ -60,7 +60,7 @@ ZhujiThreeGod:
   Description: "カードを{Value1}枚引く。\n攻撃カード1枚につき|臨時火力|{Value2}を得る。\n防御カード1枚につき|臨時霊力|{Value2}を得る。"
 OverJingjie:
   Name: 境界上空
-  Description: "{Value1}枚のランダムな攻撃カードから1枚選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
+  Description: "{Value1}枚のランダムな攻撃カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
 SmallPanding:
   Name: 当たり判定・小
   UpgradedDescription: '|グレイズ|{Value1}を得る。'
@@ -347,7 +347,7 @@ MarisaEat:
 BurstDraw:
   Description: '|バースト|発生時、カードを{Value1}枚引く。'
   Name: スピードバトル
-  FlavorText: 論争？交渉？直談？決闘すりゃあ良くないか。
+  FlavorText: 論争？交渉？直談？もう決闘すりゃあ良くないか。
 PoisonPotion:
   Description: "|毒|{Value1}を敵に与える効果を|不安定なポーション|に追加する。\n|不安定なポーション|を{Value2}枚山札に加える。"
   Name: 魔女の大釜
@@ -770,6 +770,7 @@ ShenziUpgradeAll:
   Description: 全てのカードを戦闘終了時まで|アップグレード|する。
 SakuyaAttackW:
   Description: '{Damage}のダメージを与える。'
+  Name: 誤投
 SakuyaBlockU:
   Description: '{Block}ブロックを得る。'
 SakuyaAttackU:
@@ -1028,6 +1029,7 @@ BulletStudy:
   Description: "{Damage}のダメージを与える。\n|オーバードライブ{Value2}|：{Shield}|バリア|を得る。"
 MoguMaster:
   Name: キノコの専門家
+  Description: '{Value1} 枚のランダムな|キノコ|から {Value2} 枚を選び、手札に加える。'
 ReimuHeavyAttack:
   Name: 博霊神拳
   FlavorText: 「あなたはもう死んでいる」
@@ -1048,7 +1050,7 @@ DoubleMana:
   Name: 妖精の起床
 DiscardToCharging:
   Name: オーバーチャージ
-  Description: "手札のカードを選んだ数だけ捨てる。\nその後、捨てたカード一枚につき {Value1} 層の|チャージ|を得る。"
+  Description: "選んだ分の数だけ手札のカードを捨てる。\nその後、捨てたカード一枚につき {Value1} 層の|チャージ|を得る。"
 DoremyDuplicate:
   Name: 夢我夢中
   FlavorText: ドレミーは喉が渇く際、寝る直前に大量の水を飲む人の見る夢へと好き好んで入る傾向がある。
@@ -1093,10 +1095,15 @@ MasterOfCollection:
   Description: '|保留|が発動する度，そのカードにかかるランダムなマナを {Value1} つ減らす。それは戦闘終了時まで続く。'
 ChargingPotion:
   Name: 元素放射
-  Description: "|不安定なポーション|を一枚打ち出す度に， {Value1} 層の|チャージ|を得る。\n|不安定なポーション| {Value2} 枚を手札に加える。"
+  Description: "|不安定なポーション|を一枚打ち出す度に， {Value1} 層の|チャージ|を得る。\n|不安定なポーション|を {Value2} 枚手札に加える。"
 StarlightTaifengSummoner:
   Name: アンリミテッドスターライト
-  Description: "|スターライトタイフーン|を一枚山札に加える。\n|シナジー|{Mana}：それの攻撃回数を＋１する。\n|シナジー|<sprite=\"\
-    ManaSprite\" name=\"R\">：それに {Value1} のダメージを追加する。"
-  UpgradedDescription: "|スターライトタイフーン＋|を一枚山札に加える。\n|シナジー|{Mana}：それの攻撃回数を＋１する。\n|シナジー|<sprite=\"\
-    ManaSprite\" name=\"R\">：それに {Value1} のダメージを追加する。"
+  Description: "|スターライトタイフーン|を一枚山札に加える。\n|シナジー|{Mana}：それのダメージを与える回数を+1する。\n|シナジー|<sprite=\"\
+    ManaSprite\" name=\"R\">：それは {Value1} のダメージを追加で持つ。"
+  UpgradedDescription: "|スターライトタイフーン＋|を一枚山札に加える。\n|シナジー|{Mana}：それのダメージを与える回数を+1する。\n\
+    |シナジー|<sprite=\"ManaSprite\" name=\"R\">：それは {Value1} のダメージを追加で持つ。"
+SplitPotion:
+  Name: 膨張剤
+  Description: "|不安定なポーション|は追加で一人多くの敵にダメージを与えるようになる。\n|不安定なポーション|を {Value1} 枚山札に加える。"
+RedMogu:
+  Name: テングタケ
