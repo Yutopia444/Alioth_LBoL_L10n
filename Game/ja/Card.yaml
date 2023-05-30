@@ -191,6 +191,7 @@ ReimuInstant:
   Name: 「夢想封印　瞬」
   Description: "{Damage}のダメージを与える。\nこのターンを終了し、次の自分のターンを開始する。\n|時間制限|{Mana}。"
   FlavorText: そのスペルは、"死ぬまでに一度は眼にしたい"という噂で持ち切りだ。
+  ExtraDescription1: "{Damage}のダメージを与える。。\n{PlayerName}はターンを終了し，|追加ターン|を得る。\n|d:時間制限{Mana}。|"
 BoliPhantom:
   Name: 博麗幻影
   Description: '|封魔針|以外のカードを|廃棄|するたび、|封魔針|を1枚手札に加え、臨時コストを{Mana}にする。'
@@ -681,6 +682,7 @@ Zhukeling:
   Name: 立ち退き命令
 ExtraTurnEveryone:
   Name: 膨張する空間
+  Description: "{PlayerName}はターンを終了し，|追加ターン|を得る。\n全ての敵は次の行動開始時、|追加ターン|を行う。"
 YachieDefend:
   Name: 亀甲地獄
 JunkoNightmare:
@@ -802,9 +804,11 @@ Lijian:
   Name: 離剣乱舞
   Description: "{Damage}ダメージを与える。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}少なくする。"
 SakuyaDetective:
-  Name: 真犯人を追及する
+  Name: 追求～追いつめてやれ
+  Description: "黒幕との決闘の際、 {Value1} のダメージを戦闘開始時に与える。\n（累計 {BossDamage}ダメージ ）"
 SakuyaKiller:
   Name: 夜霧の幻影殺人鬼
+  Description: "{PlayerName}はターン終了時、 {Value1} 枚の|投げナイフ|を山札に加える。\nまた、敵を一体撃破した場合にもこれと同じ効果を発動する。"
 SakuyaTea:
   Name: 紅茶を入れる
   ExtraDescription1: "カードを {Value1} 枚引く。\n|初見}：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
@@ -812,9 +816,11 @@ SakuyaTea:
 SakuyaShop:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。"
   Name: 物資を仕入れる
-  FlavorText: あっ。この吸血鬼は売り物じゃないですよ。誤解のないよう。
+  FlavorText: この吸血鬼は売り物じゃないですよ。誤解のないよう。
 BackToFuture:
-  Name: 未来に戻る
+  Name: 未来逆行
+  FlavorText: Roads? Where we're going, we don't need roads.
+  Description: "捨て札と山札にあるカードを入れ替える。\nカードを {Value1} 枚引く。"
 SakuyaClock:
   Name: 咲夜特製ストップウォッチ
   Description: "{Damage}ダメージを与える。\n{SelfName}で敵を撃破した場合、{SelfName}を|廃棄|した後{PlayerName}のターンを終了して|追加ターン|を得る。"
@@ -872,6 +878,7 @@ SakuyaGoOut:
   Description: "カードを{Value1}枚引く。\n手札を{Value1}枚捨てる。\n{Mana}を得る。"
 LunaClock:
   Name: ルナクロック
+  Description: '{PlayerName}はこのターンを終了する代わり、|追加ターン|を得る。しかし、そのターンはカードによって敵に与えるダメージが0となる。'
 MihuanJack:
   Name: ジャック・ザ・ルドビレ
   Description: ターン開始時、|タイムパルス|{Value1}を得る。
@@ -880,10 +887,15 @@ LightSpeed:
   Description: "{Damage}ダメージを与える。\nこのターンにカードを捨てていた場合、{Mana}を得る。"
 SilverBlade:
   Name: 银色のアナザーディメンジョン
+  Description: 攻撃カードの効果が発動する度、バリアを {Value1} 得る。
 ClockCorpse:
   Name: クロックコープス
+  Description: '{PlayerName}はこのターンを終了する代わり、|追加ターン|を得る。しかし、そのターンはカードを追加で引く事が出来なくなる。'
 BackOfKnife:
   Name: マイナイフリカージョン
+  NonbattleDescription: "|閃刀エクスプレス|一枚を手札に加え、|廃棄済み|にある|投げナイフ|全てをこの戦闘から消滅させる。\n加えた|閃刀エクスプレス|は消滅させた|投げナイフ|一枚ごとに、| {Value1} ダメージを追加で与えるようになる。"
+  Description: "|閃刀エクスプレス|一枚を手札に加え、|廃棄済み|にある|投げナイフ|全てをこの戦闘から消滅させる。\n加えた|閃刀エクスプレス|は消滅させた|投げナイフ|一枚ごとに、| {Value1} ダメージを追加で与えるようになる。\n\
+    （ {IncreasedDamage} 点の追加ダメージ）"
 FakeTimeline:
   Name: イマジナリバーチカルタイム
   Description: "{Block}ブロックを得る。\n敵全体に{Damage}のダメージを与える。\n|タイムパルス|{Value1}を得る。"
@@ -912,8 +924,10 @@ DangerousMagician:
   Description: "|投げナイフ|を使用する度、タイムパルス|{Value1}を得る。\n|投げナイフ|{Value2}枚を山札に加える。"
 KnifeAim:
   Name: デフレーションワールド
+  Description: "{Damage}ダメージを与える。\n手札にある全ての|投げナイフ|を山札に捨て、効果を発動させる。"
 KnifeHell:
   Name: シルバーエレガント
+  Description: "|投げナイフ|を {Value1} 枚手札に加える。\n全ての|投げナイフ|を|アップグレード|させる。"
 FindCollection:
   Name: リモートサポート
   Description: ランダムな{PlayerName}専用のものでないカードを {Value1} 枚の中から一つ選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。
@@ -963,7 +977,7 @@ ShuimiUnderWater:
   Description: このカードを捨てた時、{Mana}を得る。
 DropToKnife:
   Description: "手札を{Value1}枚捨てる。\n捨てた枚数と同じ数の|投げナイフ|を手札に加える。"
-  Name: 銀なる防壁
+  Name: 銀の防壁
 YongyiAttack:
   Name: 鬼気怒濤
 YouxiangMoon:
@@ -1017,6 +1031,7 @@ LimaoAttack:
   Name: 満月のポンポコリン
 JingyeGraze:
   Name: 狂いの落葉
+  Description: "|グレイズ|を {Value1} 層得る。\nこのカードで得た|グレイズ|の層数の {Value2} 倍の|臨時火力|を得る。"
 IceSpark:
   Name: 凍結レーザ
   Description: 敵全体に{Damage}のダメージを与える、|冷気|を与える。
@@ -1041,8 +1056,11 @@ TimeLord:
   Description: '|タイムパルス|{Value1}を得る。'
 SakuyaUsage2:
   Name: 咲夜の正しい使い方
+  Description: '{PlayerName}はターンを終了し，|追加ターン|を得る。'
 SakuyaUsage:
   Name: 咲夜の間違った使い方
+  ExtraDescription1: "カードを {Value1} 枚引く。\nこのカードの {Value2} 回目使用時、|咲夜の正しい使い方|一枚を山札の一番前へ加え、このカードは消滅する。（現在のプレイ回数は {PlayCount} 回）"
+  Description: "カードを {Value1} 枚引く。\nこのカードの {Value2} 回目使用時、|咲夜の正しい使い方|一枚を山札の一番前へ加え、このカードは消滅する。"
 ZoufangWater:
   Name: 諏訪清水
 SanaeRice:
@@ -1063,24 +1081,37 @@ DizangLove:
   Name: 即席菩薩
 LoyalMaid:
   Name: 忠実なる召使い
+  Description: "{Value1} の|バリア|を得る。\n|追加ターン|を得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}となる。"
 EvilMaid:
   Name: 悪魔のメイド
+  Description: "ライフを {Value1} 失う。\n{PlayerName}は次のターン、カードによる全てのダメージが倍となる。"
 SakuyaDio:
   Name: 次は貴様だ
+  Description: "直接使用された|投げナイフ|は {Value1}層の|ロックオン|を付与するようになる。\n{PlayerName}はターンを終了し，|追加ターン|を得る。\n\
+    その追加ターンはドローフェイズが無くなる代わり、 {Value2} 枚の|投げナイフ|が手札に加えられる。"
 BrokenTimeline:
   Name: 壊れた時間軸
+  Description: '{PlayerName}はターンを終了し，|追加ターン|を得る。そのターンは開始時に得られるマナが0となる。'
 UnlimitedTime:
   Name: 完全なる時停め
   FlavorText: すまないわね、ここから先は私の時間よ。
+  Description: "{Value1} 枚のランダムな|時間制限|を持つカードを中から一つを選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。\n\
+    そのカードの|時間制限|を無くす。"
 GroupOfKnife:
-  Name: ナイフザエクスプレス
+  Name: 閃刀エクスプレス
+  Description: '{Damage}のダメージを与える。'
 StopTime:
   Name: 凝固する時間
+  Description: '{PlayerName}はターン終了時に余剰のマナがある場合、ランダムなマナ {Value1} つを次のターンへ持ち越せるようになる。'
 PerfectServant:
   Name: 完全で瀟洒な従者
+  Description: "|シナジー|<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
+    W\">：次のターンのドローフェイズ終了時、手札全てのカードにかかるランダムなマナコスト－1。\n|シナジー|<sprite=\"ManaSprite\"\
+    \ name=\"U\">：次のターン開始時に{Mana}を得る、カードを追加で一枚引く。"
 SakuyaSpeedup:
   FlavorText: 今、あなたの後ろに居るの。
   Name: タイムアクセル
+  Description: 今ある|タイムパルス|の層数を2倍にする。
 TodayYesterday:
   Name: 今昔幻想郷
 MarisaHoldCard:
@@ -1109,3 +1140,22 @@ SplitPotion:
   Description: "|不安定なポーション|は追加で一人多くの敵にダメージを与えるようになる。\n|不安定なポーション|を {Value1} 枚山札に加える。"
 RedMogu:
   Name: テングタケ
+  Description: '{Value1} 層の|中毒|を付与する。'
+JungleMaster:
+  Name: 森の住民
+  Description: "{Block}|ブロック|を得る。\n|戦闘開始時|： {Value1} バリアを得る"
+BlueMogu:
+  Name: スカイブルーマッシュルーム
+  Description: カードを {Value1} 枚引く。
+ManaJungle:
+  Description: このカードを引いた時、 {Value1} 枚の|幻虹|を手札に加え、{SelfName}を|廃棄|する。
+  Name: 森林探検
+GreenMogu:
+  Description: '|不安定なポーション|を{Value1}枚山札に加える。'
+  Name: ワサビタケ
+PurpleMogu:
+  Description: 体力を{Value1}回復する。
+  Name: ウラムラサキ
+AutoKnife:
+  Description: "この戦闘中，|投げナイフ|は|自動廃棄|を持つようになる。\n|投げナイフ|を {Value1} 枚手札に加える。"
+  Name: 妖器「銀製ナイフ」
