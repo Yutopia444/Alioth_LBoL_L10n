@@ -298,6 +298,7 @@ Tooltip:
       候補地のマナは優先して使用されるほか、|X|コストの支払いに充てられる。"
   BaseMana:
     Name: マナ基盤
+    Description: "ターン開始時、マナ基盤と等しいマナを獲得します。\nマナ基盤は光耀展示品を集めることで拡張できます。\n\nマナ基盤はドロップするカードにも影響します。"
   DifficultyEasy:
     Name: 難易度：Easy
     Description: "輝夜の秘宝を持って調査を始めましょう。\n最終章はプレイできません"
@@ -312,11 +313,13 @@ Tooltip:
     Description: あなたがプレイしているキャラクター
   GameSeed:
     Name: シード
+    Description: "ゲーム内容はシードによって生成されます。\n\nクリックしてクリップボードにシードをコピーします。"
   BriefHint:
     Name: 簡易ヒント
+    Description: "本作特有のシステムに関するヒントのみが表示されます。\n『Slay the Spire』などの似たゲームをプレイした方向け。"
   FinalStage:
     Description: もうすぐこのゲームの終点だ、先へ進もう！
-    Name: 最終幕
+    Name: 最終章
   Money:
     Description: 主にショップで物を買う際に使われる
     Name: 資金力：{0}
@@ -325,8 +328,16 @@ Tooltip:
     Name: ライフ：{0}
   Level:
     Name: レベル{0}
+    Description: 現在の章の進度
   Stage:
-    Name: 第{0}幕
+    Name: 第{0}章
+    Description: 本作では、各章が一つのマップで構成されています。
+  DontShowHint:
+    Name: ヒント非表示
+    Description: "ヒントを一切表示しません。\n『東方光耀夜』をプレイ済みの方向け"
+  DetailedHint:
+    Name: 詳細ヒント
+    Description: "全てのヒントを表示します。\nデッキ構築ゲームが初めての方向け。"
 BattleHint:
   ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
   Prev: 前のページ
@@ -334,6 +345,20 @@ BattleHint:
   Brief: 簡易ヒントを表示
   Intro: "月都万象展へようこそ！蓬莱の玉の枝の行方を探しましょう！\nデッキ構築ゲームを遊んだことがある場合は、|簡易ヒント|をを選択して、本作の特別な部分を確認できます。\n\
     以後のゲームプレイヒントもこの設定に従います。またメニューからいつでも変更できます。"
+  DontShow: ヒントを表示しない
+  BasicBattle: "手札からカードを使用して敵を倒しましょう！\n手札から使用されたカードは捨て札に送られます。プレイヤーのターン終了時、手札に残っているカードも捨て札に送られます。\n\
+    次のプレイヤーのターン開始時に手札に新しくカードが引かれます"
+  BlockShield: "ダメージを受ける前に、防御カードを使用して|ブロック|と|s:バリア|を得ましょう。\n|ブロック|と|s:バリア|は受けるダメージを数値分減らします。\n\
+    |ブロック|はキャラクターの次のターン開始時に消滅しますが、|s:バリア|は残ります。"
+  Intention: "敵の行動予定が頭上に表示されます。\n敵は攻撃、防御、バフ、デバフ、スペルカードなどの行動予定を示します。"
+  UltimateSkill: "スペルカードで戦いの流れを変えましょう！\nスペルカードを使用するためにはパワーゲージが一本（100P）必要です。倒した敵はパワーを補充する\
+    \ <sprite=\"Point\" name=\"Power\">をドロップします。\nスペルカードは一ターンに一回まで使用できます。"
+  Detailed: 詳細ヒントを表示する
+  Mana: "カードを右クリックして詳細を表示します。 (報酬画面などゲーム内のほとんどのカードパネルで機能します。)\nカードを使用するにはマナを消費する必要があります。カードのマナコストは右上隅に表示されます。\n\
+    マナの種類は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"G\">, 無色のマナ <sprite=\"ManaSprite\" name=\"C\"> 、そして任意のコストの支払いに使用できる彩色マナ<sprite=\"\
+    ManaSprite\" name=\"P\"> があります。\n数字部分の<sprite=\"ManaSprite\" name=\"2\">のようなコストは任意の2マナで支払うことができるという意味です。"
 History:
   Puzzles: '{0}個の難題'
   Mana: マナ
@@ -367,11 +392,11 @@ Shop:
   RemoveSoldOut: 売り切れ
   WelcomeQuotes:
   - いらっしゃいませ
-  - 見るだけ
+  - 見るだけ見て行って
   Chats:
   - そこの姉さん、こちらを見てくれ
   - 市販より安いぞ！本当に要らないのか！？
-  RemoveTooltip: デッキからカード一枚を取り除く、そして使用必要の金を上がる| {0} 金|
+  RemoveTooltip: デッキからカード一枚を取り除く、利用するたびに費用が| {0} 金|ずつ上がる
 Map:
   Shop: ショップ
   Adventure: イベント
@@ -399,13 +424,13 @@ Chat:
   Terminator:  T-800 
   DoremyMaster: 夢の辺境へと辿り着いたようね。
   DoremyKill: もう夢から覚めなくていいのよ～
-  DoremyAwake: ここが一番いいところなんですよ！
+  DoremyAwake: 今一番いいところだったんですよ！
   FraudRabbitStart1: 犯人の情報を教えてあげるわ、金を払えるならね。
   LongBribery1: あんた中々やるわね～
   DoremySleepLast: もう食べきれないよ～
   LongEscape1: ありゃ、負けちゃった。
   LongEscape2: ここから先は守矢神社への道よ～
-  YuyukoMooncake: おまえ、うまそうだな
+  YuyukoMooncake: 美味しそうな「{0}」ね～
   LongBribery2: 中々悪くないわ。
   LoveGirlPlayer: 好き！
   LoveGirlRespond: うれしい！
@@ -413,11 +438,11 @@ Chat:
   HetongYinchen1: おい、お前は{0}を壊した。
   Fox1: これから、君に目を離させないわよ～
   Fox0: おやおや！なんて素敵なお嬢さんなんでしょう〜
-  LoveGirlFallInLove: 私の願望がついに叶えだ。
+  LoveGirlFallInLove: 私の願望がついに叶った。
   HetongKailang1: 新品のように直りました！
   HetongKailang2: まあまあ～、これで間に合わせよう。
-  FraudRabbitStart2: 月の都の最新技術、金を払えれば手に入れますよ。
-  FraudRabbitPlayer: おい！彼女が逃げてしました！
+  FraudRabbitStart2: 月の都の最新技術、金を払えれば手に入りますよ。
+  FraudRabbitPlayer: おい！あいつ逃げちゃった！
   Fox2: まだまだ、夜は長いぞ、ハニー～
   LoveGirlEscape: 結局、本当の愛を見つけることができなかったな。
   HetongKailang3: みんな、頑張ってね！
@@ -425,35 +450,35 @@ Chat:
   Purifier: 「ベイマックス」
   HardworkRabbit2: もっと頑張らないと！
   Sunny2: 展示品を奪った者が持ち主だ！
-  StarSpell: あんたのほのかの動きも私に取れますよ~
-  Nitori2: どうやら、防御性能にまだ改善の余地があるみたいね。
+  StarSpell: あんたのわずかな動きも私にはお見通しよ～
+  Nitori2: どうやら、防御性能に改善の余地があるみたいね。
   Youmu1: 斬！
   YoumuTuanzi: もしまだ「冷やし三色団子」が欲しいなら、ここで引き返しなさい！
   Siji1: 異変調査の裏で展示品を盗む。
   SijiMystia: 食い逃げ、罪を重ねる。
-  SijiTurn3: 私に背が低いと辱める、罪を重ねの重ねる。
+  SijiTurn3: 私を背が低いと言って辱める、罪を重ねに重ねる。
   LunaSpell: 弾幕よ、沈黙せよ。
   SijiTurn2: 法廷侮辱、罪を重ねる。
   Sunny1: 今日は{0:cs}に、私たちの力を見せてあげるわ！
   HardworkRabbit1: 地球人を発見！
-  Luna: はいーー！
+  Luna: おーーー！
   Aya2: 逆上した不審者が取材を妨害しています！
-  Aya3: '{0:cs}の手に持ってるものを見ろ！それは彼女が犯人である証拠です！'
-  Terminator3: "致命的ダメージが発見...\n自己回復中..."
-  Rin2: いてえ！ お姉は本当に薄情だよ～
-  Nitori1: これは私の精一杯努力を出して改装した品物よ。
-  Star: はいーー！
-  SunnySpell: 全ての光がここで集めよう！
+  Aya3: '{0:cs}の手に持ってるものを見てください！彼女が犯人である証拠です！'
+  Terminator3: "致命的損傷を検知...\n自己修復中..."
+  Rin2: いてえ！ お姉さんは全く薄情だよ～
+  Nitori1: これは私が精一杯努力して改装した機体よ。
+  Star: おーーー！
+  SunnySpell: 全ての光よここに集まれ！
   YoumuMooncake: 「{0}」を返して！
   SijiTurn1: 反対無効、罪を重ねる。
   Siji2: 美しくないよ、{0:cf}。
   Terminator1: "システムチェック終了...\n制限を解除します"
-  Rin1: お姉、あんたの「{0}」本当に可愛くて家まで連れてきたい！
+  Rin1: お姉さん、貴方の「{0}」本当に可愛い！家まで持って帰っちゃいたい！
   Terminator0: 診断実行中...
-  Terminator2: "ダメージが発見...\n自己回復中..."
+  Terminator2: "損傷を検知...\n自己修復中..."
   LazyRabbit: 使えないやつだなー、もうサボれないじゃないか。
   Aya1: 今宵の永遠亭騒動の真相に迫る！現場から私がお伝えします。
-  FraudRabbitOnlyOne: 残ったの私だけ！？ほんと役立たず共ね。
+  FraudRabbitOnlyOne: 残ったのは私だけ！？ほんと役立たず共ね。
   FraudRabbitNoMoney: 一銭も無いのか、この貧乏人が。
   FraudRabbitLongTurn: これでも引っかからないとか、もういい、帰る。
 ErrorChat:
@@ -472,7 +497,7 @@ ErrorChat:
   HandFull: 手札が満杯です
   EmptyDraw: 山札が空っぽです
   NoCardByMama: 支払うコストを指定していません
-  UsUsedThisBattle: この戦闘はスペルカードを使用済みです
+  UsUsedThisBattle: この戦闘ではスペルカードを使用済みです
 Cards:
   Show: 右クリックか、カーソルを合わせると詳細が表示されます。
   Remove: 'デッキからカード{0}枚を捨てる'
@@ -529,7 +554,7 @@ Reward:
   Skip: 報酬をスキップ
   Abandon: カードを諦める
   AbandonMoney: '{0}手に入れる <sprite="Gold" name="gold">'
-  AbandonMaxHp: '{0}最大HPが増える'
+  AbandonMaxHp: '最大ライフが{0}増える'
 MessageDialog:
   GameAbandonWarning: 現在のランの進行状況を放棄してよいですか？
   EarlyAccess: "《東方光耀夜》はアーリーアクセスで、デザインは変更される場合があります。\n現在プレイヤーキャラのチルノと緑色のカードを作成中です。\n\
@@ -539,8 +564,22 @@ MessageDialog:
   QuitGame: ゲームを終了しますか？
   ReturnToMainMenu: タイトルに戻りますか？
   InvalidProfileName: この名前は使用できません
-  AlreadyInGameRun: ''
+  AlreadyInGameRun: '既にゲーム進行中'
   UnsavedWarning: 最後のセーブポイントからの記録は保存されません。
+  SkipDialog: 会話をスキップしますか？
+  ResetKeyBindingsWarning: キーバインドをリセットしますか？
+  GameRunSaveDiscarded: "バージョンが更新されました\n中断されていたランの進行状況は破棄されます"
+  GameRunSaveDiscardedSubText: プレイヤーのプロフィールはこの影響を受けません
+  CannotStartGameRunWithoutProfile: ゲームを開始できません：プロフィールが作成されていません
+  CannotReenterStation: ステージに再入場できません
+  XCostEmptyUsageWarning: マナを設定せずに{0}を使用しますか？
+  DontShowHintWarning: 全てのヒントを非表示にしますか？
+  ResetHintWarning: 全てのヒントをリセットしてよろしいですか？
+  CloseBattleHint: 戦闘ヒントを閉じますか？
+  CorruptedGameRunSaveData: ゲーム進行状況のセーブファイルが破損しています
+  CannotRestoreEndedGameRun: 終了したゲームの進行状況を復元できません
+  CorruptedSaveData: セーブファイルが破損しています
+  XCostEmptyUsageTips: 左下のマナパネルから X コストカードに使用するマナを設定できます
 JadeBoxPage:
   JadeBoxLast: 前回の玉匣
   JadeBoxDaily: デイリー玉匣
