@@ -596,7 +596,7 @@ HuanxiangBlockSe:
   Brief: 每当一张牌被|放逐|时，{PlayerName}获得若干点|格挡|。
 
 ReimuFestivalSe:
-  Name: 不散宴席
+  Name: 神樱之舞
   Description: '{PlayerName}的回合开始时获得 {Level} 点|暂得火力|。'
   Brief: '{PlayerName}的回合开始时获得若干点|暂得火力|。'
 
@@ -860,11 +860,6 @@ ExtraDraw:
   Description: '{OwnerName}的下回合开始时，额外抽 {Level} 张牌。'
   Brief: '{OwnerName}的下回合开始时，额外抽若干张牌。'
 
-WhiteWorldSe:
-  Name: 纯白的世界
-  Description: 打出一张|透支|牌后， {Level} 张随机的手牌|临时降低| 1 点随机费用。
-  Brief: 打出一张|透支|牌后，若干张随机的手牌|临时降低| 1 点随机费用。
-
 FairyTreeSe:
   Name: 妖精之家
   Description: |-
@@ -874,19 +869,10 @@ FairyTreeSe:
     当一张技能牌加入手中时，获得{Mana}并抽若干张牌。
     每回合可以触发一次。
 
-PisiSkillSe:
-  Name: 寒狱之蚀
-  Description: 直至回合结束，每当你获得|格挡|时，改为对随机敌人造成 {Level} 倍的伤害。
-  Brief: 直至回合结束，每当你获得|格挡|时，改为对随机敌人造成若干倍的伤害。
-
 MinengZhuruSe:
   Name: 秘能注入
-  Description: |-
-    |妖精支援|的被动效果提高 {Level} 倍。
-    （手牌中、回合开始时）
-  Brief: |-
-    |妖精支援|的被动效果提高若干倍。
-    （手牌中、回合开始时）
+  Description: 已召唤的|同伴|牌，被动效果额外触发 {Level} 次。
+  Brief: 已召唤的|同伴|牌，被动效果额外触发若干次。
 
 IceVulnerable:
   Name: 深度冻结
@@ -900,16 +886,20 @@ IceVulnerable:
 ForeverCoolSe:
   Name: 永远凉爽的幻想四季
   Description: |-
-    每|放逐|一张|妖精支援|，随机对敌人施加|寒冷| {Level} 次。
-    每打出一张|妖精支援|，将 {Level} 张随机的|妖精支援|洗入弃牌堆。
+    使用|同伴|的|a:主动技能|或|u:终结技|后，对随机 {Level} 名敌人施加|寒冷|。
+    任意敌人受到|寒冷|时，手中随机 {Level} 张|同伴|牌获得一点|支援度|。
   Brief: |-
-    每|放逐|一张|妖精支援|，随机对敌人施加|寒冷|若干次。
-    每打出一张|妖精支援|，将若干张随机的|妖精支援|洗入弃牌堆。
+    使用|同伴|的|a:主动技能|或|u:终结技|后，对随机若干名敌人施加|寒冷|。
+    任意敌人受到|寒冷|时，手中随机若干张|同伴|牌获得一点|支援度|。
 
 MoreFriendsSe:
   Name: 社交达人
-  Description: '{PlayerName}的回合结束时，将 {Level} 张随机的|妖精支援|加入手中。'
-  Brief: '{PlayerName}的回合结束时，将若干张随机的|妖精支援|加入手中。'
+  Description: |-
+    {PlayerName}的回合开始时，将 {Level} 张随机的|同伴|牌加入手中。
+    如此获得的|同伴|牌具有|虚无|，被召唤后会移除|虚无|。
+  Brief: |-
+    {PlayerName}的回合开始时，将若干张随机的|同伴|牌加入手中。
+    如此获得的|同伴|牌具有|虚无|，被召唤后会移除|虚无|。
 
 CirnoFestivalSe:
   Name: 混入宴会
@@ -921,10 +911,25 @@ FrozenThroneSe:
   Description: '{PlayerName}的回合开始时，如果手中|冰晶|不足 {Level} 张，将|冰晶|加入手中直到 {Level} 张。'
   Brief: '{PlayerName}的回合开始时，如果手中|冰晶|不足 {Level} 张，将|冰晶|加入手中直到若干张。'
 
-CirnoWinterSe:
-  Name: 春雪异变
+WhiteWorldSe:
+  Name: 纯白的世界
   Description: '{PlayerName}的回合开始时，对所有敌人施加|寒冷| {Level} 次。'
   Brief: '{PlayerName}的回合开始时，对所有敌人施加|寒冷|若干次。'
+
+SummerFlowerSe:
+  Name: 盛夏花开
+  Description: '{SourceCardName}额外造成 {Level} 点伤害。'
+  Brief: '{SourceCardName}额外造成若干点伤害。'
+
+MaidFriendSe:
+  Name: 飞刀陪练
+  Description: '{SourceCardName}额外造成 {Level} 点伤害。'
+  Brief: '{SourceCardName}额外造成若干点伤害。'
+
+StarFriendSe:
+  Name: 星罗棋布
+  Description: '{SourceCardName}造成伤害时，施加 {Level} 层|锁定|。'
+  Brief: '{SourceCardName}造成伤害时，施加若干层|锁定|。'
 
 Benwo:
   Name: 本我
@@ -1099,6 +1104,11 @@ YonglinUpgradeSe:
   Description: '{PlayerName}的回合开始时，升级 {Level} 张随机的手牌。'
   Brief: '{PlayerName}的回合开始时，升级若干张随机的手牌。'
 
+YinyangQueenSe:
+  Name: 能工巧匠魅须丸
+  Description: 所有的|阴阳玉|效果提高 {Level} 倍。
+  Brief: 所有的|阴阳玉|效果提高若干倍。
+
 PrismriverSe:
   Name: 棱镜协奏曲
   Description: 本场战斗中，{PlayerName}获得的所有法力都转化为|彩色|。
@@ -1113,5 +1123,10 @@ MoonWorldSe:
   Name: 无秽的世界
   Description: '{PlayerName}的回合开始后，|净化| {Level} 张随机手牌，移除其有色费用。'
   Brief: '{PlayerName}的回合开始后，|净化|若干张随机手牌，移除其有色费用。'
+
+CatchGoblinSe:
+  Name: 福星高照
+  Description: 受到的伤害减少 33%，击败后掉落 50<sprite="Point" name="Gold">。
+  Brief: 受到的伤害减少33%，击败后掉落 50<sprite="Point" name="Gold">。
 
 
