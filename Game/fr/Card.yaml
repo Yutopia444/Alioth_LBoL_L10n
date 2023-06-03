@@ -2528,19 +2528,19 @@ CirnoEcho:
   Name: Don de la Nature
 HualiIce:
   Description: "Cette carte ne peut être joué qu'après qu'un total de {Value1} cartes\
-    \ aient été jouées ou |exilées| ce tour.\n({Countdown} cartes restantes)\nInfligez\
-    \ {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez\
-    \ leur le |Froid|.\n"
+    \ aient été jouées ce tour.\n({Countdown} cartes restantes)\nInfligez {Damage}\
+    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez leur\
+    \ le |Froid|.\n"
   UpgradedDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
-    \ cartes avec |Exil| aient été jouées.\n({Countdown} cartes restantes)\nInflige\
-    \ {Damage} dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez\
-    \ leur le |Froid| {Value2} fois."
+    \ cartes aient été jouées ce tour.\n({Countdown} cartes restantes)\nInflige {Damage}\
+    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez leur\
+    \ le |Froid| {Value2} fois."
   NonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
-    \ cartes avec |Exil| aient été jouées.\nInfligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'} à tous les ennemis, et appliquez leur le |Froid|.\n"
+    \ cartes aient été jouées ce tour.\nInfligez {Damage} dégât{Damage:plural one=''\
+    \ other='s'} à tous les ennemis, et appliquez leur le |Froid|.\n"
   Name: Magnifique Glace d'Été
   UpgradedNonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total\
-    \ de {Value1} cartes avec |Exil| aient été jouées.\nInfligez {Damage} dégât{Damage:plural\
+    \ de {Value1} cartes aient été jouées ce tour.\nInfligez {Damage} dégât{Damage:plural\
     \ one='' other='s'} à tous les ennemis, et appliquez leur le |Froid| {Value2}\
     \ fois."
 ColdBreath:
@@ -2823,12 +2823,14 @@ ClownpieceFriend:
     \ other='s'}."
 Lunatic:
   Name: Folie
-  Description: "Lorsque {PlayerName} finit son tour, s'il y a plus de {Value1} cartes\
-    \ dans la main de {SelfName}, piochez et défaussez-les, |exilez|, {PlayerName} perd\
-    \ {Value2} point{Value2:plural one='' other='s'} de vie.\n{LunaticCount} disponible."
+  Description: "Lorsque {PlayerName} finit son tour, s'il y a plus de {Value1} {SelfName}{Value1:plural\
+    \ one='' other='s'} dans la main, pioche et défausse réunis, |exilez|-les, et\
+    \ {PlayerName} perd {Value2} point{Value2:plural one='' other='s'} de vie.\n{LunaticCount}\
+    \ actuellement."
   NonbattleDescription: Lorsque {PlayerName} finit son tour, s'il y a plus de {Value1}
-    cartes dans la main de {SelfName}, piochez et défaussez-les, |exilez|, {PlayerName} perd
-    {Value2} point{Value2:plural one='' other='s'} de vie.
+    {SelfName}{Value1:plural one='' other='s'} dans la main, pioche et défausse réunis,
+    |exilez|-les, et {PlayerName} perd {Value2} point{Value2:plural one='' other='s'}
+    de vie.
 LeidiFriend:
   ExtraDescription2: "{FriendU} infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ à tous les ennemis, en appliquant |froid|."
@@ -2846,3 +2848,7 @@ FakeCard:
   Description: "|Komeiji Koishi| Dort encore chez elle. \nRestez à l'écoute des futures\
     \ mises à jour."
   Name: Rêve d'ancêtre (faux)
+HistoryCard:
+  Description: "Cette carte a été supprimée dans la version actuelle.\nCarte ID :\
+    \ {CardId}"
+  Name: Carte Historique
