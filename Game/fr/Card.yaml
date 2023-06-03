@@ -2115,9 +2115,8 @@ IceBlock:
     \ ce tour-ci, {PlayerName} termine son tour."
 FairyTree:
   Name: Maison de Fées
-  Description: "Lorsqu'une carte de talent est ajoutée à la main pour la première\
-    \ fois du tour, obtenez {Mana} et piochez {Value1} carte{Value1:plural one=''\
-    \ other='s'}.\n(Ne prend pas effet quand vous piochez une carte de talent.)"
+  Description: "Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}| lors de\
+    \ l'invocation d'une |alliée|."
 GatherFairy:
   Name: Assemblée de Fées
   Description: "Limite de main augmentée à {MaxHand} cartes.\nPiochez {Value1} carte{Value1:plural\
@@ -2370,7 +2369,7 @@ AutoKnife:
 SakuyaUsage2:
   Name: Marches Circulaires
   Description: Terminez le tour, et {PlayerName} joue un tour supplémentaire.
-  FlavorText: Arrêtez simplement de faire des corvées.
+  FlavorText: Arrêtez le temps et arrêtez de faire le ménage.
 BlueRose:
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
     Si la cible a |Froid|, gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
@@ -2378,12 +2377,12 @@ BlueRose:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
     \ a |Froid|, gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 FrostGarden:
-  UpgradedDescription: "Rend {Value1} point{Value1:plural one='' other='s'} de vie\
-    \ à tous les ennemis.\nAppliquez |Froid| à tous les ennemis.\nAjoutez {Value2}\
-    \ |Crista{Value2:plural one='l' other='ux'} de glace| à votre main."
+  UpgradedDescription: "Appliquez |Froid| à tous les ennemis.\nAjoutez {Value2} |Crista{Value2:plural\
+    \ one='l' other='ux'} de glace| à votre main.\nSi vous avez une carte |alliée|\
+    \ invoquée dans votre main, {SelfName} coûte {Mana}."
   Name: Jardin de Brume
-  Description: "Rend {Value1} point{Value1:plural one='' other='s'} de vie à tous\
-    \ les ennemis.\nAppliquez |Froid| à tous les ennemis."
+  Description: "Appliquez |Froid| à tous les ennemis.\nSi vous avez une carte |alliée|\
+    \ invoquée dans votre main, {SelfName} coûte {Mana}."
   FlavorText: Climatisation gratuite.
 IceGun:
   Description: "Infligez aléatoirement {Damage} dégât{Damage:plural one='' other='s'}\
@@ -2399,8 +2398,9 @@ CallFriends:
     \ invoquez-la immédiatement et ajoutez-la à votre main.\nAjoutez une des trois\
     \ |e:Fées de Lumière| en option supplémentaire."
 Blizzard:
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez
-    le |Froid| à tous les ennemis.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez\
+    \ le |Froid| à tous les ennemis.\nSi vous avez invoqué |Letty, Incarnation de\
+    \ l'Hiver|, cet effet se reproduit au début du tour suivant."
   Name: Tempête de Neige
 ColdPotion:
   Name: Liquide de Refroidissement
@@ -2433,9 +2433,9 @@ IceBarrier:
   Description: Gagnez {Value1} |Armure{Value1:plural one='' other='s'} de Glace|.
 Tether:
   Name: Liens
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nChaque\
-    \ carte |alliée| dans la main gagne {Value1} point{Value1:plural one='' other='s'}\
-    \ |Soutien|."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nToutes\
+    \ les cartes |alliées| dans la main gagnent {Value1} point{Value1:plural one=''\
+    \ other='s'} |Soutien|."
 ZeroK:
   Name: Zéro Absolu
   Description: "Augmentez {Value1} fois les dégâts lors d'une superposition du |Froid|.\n\
@@ -2556,9 +2556,8 @@ FreezeToIce:
     égale de |Cristaux de glace| à votre main.
 CirnoFestival:
   Name: Mêlée au Banquet
-  Description: "|Choix| : Ajoutez |{Value1:plural one='% Geyser' other='% Geysers'}|\
-    \ à la main ; ou ajoutez {Value2:plural one='% |Soutien Fée| commun aléatoire'\
-    \ other='% |Soutiens Fées| communs aléatoires'} à votre main."
+  Description: "Gagnez {Value1}|Esquive{Value1:plural one='' other='s'}|.\nJusqu'à\
+    \ {Value2} cartes |alliées| aléatoires dans votre main ont un coût réduit aléatoirement."
   FlavorText: Des types étranges se sont mélangés à la fête de célébration de l'opération
     spéciale contre les Lunariens.
 DeepFreeze:
@@ -2668,9 +2667,14 @@ CirnoFreeze:
     Chaque fois qu'une carte est jouée, |exilez| un {SelfName} de votre main."
 FairyWrath:
   Name: Colère de la Nature
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à jusqu'à\
-    \ deux ennemis aléatoires différents.\nPour chaque carte de |Soutien Fée| exilée,\
-    \ les dégâts de {SelfName} sont augmentés de {Value1}.\n|Découvert| {Value2}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
+    \ ennemis.\nSi vous avez |Daiyousei, Assistante d'Enquête| invoquée dans votre\
+    \ main, ajoutez {Value1} |Fleur{Value1:plural one='' other='s'} d'été| à votre\
+    \ main."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
+    \ tous les ennemis.\nSi vous avez |Daiyousei, Assistante d'Enquête| invoquée dans\
+    \ votre main, ajoutez {Value1} |Fleur{Value1:plural one='' other='s'} d'été+|\
+    \ à votre main."
 BestFriend:
   Name: Meilleure Amie
   Description: Choisissez jusqu'à {Value1} carte{Value1:plural one=' |alliée|' other='s
@@ -2678,11 +2682,9 @@ BestFriend:
     le maximum de points |Soutien|.
 SummerParty:
   Name: Fête de la Glace
-  Description: "Ajoutez un |Soutien Fée| commun aléatoire à votre main.\n|Pour chaque\
-    \ <sprite=\"ManaSprite\" name=\"U\"> dépensé| : obtenez {Value1} |Armure{Value1:plural\
-    \ one='' other='s'} de Glace|.\n|Pour chaque {Mana} dépensé| : Ajoutez {Value2:plural\
-    \ one='% |Soutien Fée| commun aléatoire' other='% |Soutiens Fées| communs aléatoires'}\
-    \ à votre main."
+  Description: "Obtenez {Value1} |Armure{Value1:plural one='' other='s'} de glace|.\n\
+    Toutes les cartes |alliées| en main gagnent {Value1} point{Value1:plural one=''\
+    \ other='s'} |Soutien|."
 FrozenThrone:
   Name: Trône de Glace
   Description: Lorsque {PlayerName} débute son tour, s'il n'y a pas de |Cristal de
@@ -2827,3 +2829,16 @@ Lunatic:
   NonbattleDescription: Lorsque {PlayerName} finit son tour, s'il y a plus de {Value1}
     cartes dans la main de {SelfName}, piochez et défaussez-les, |exilez|, {PlayerName} perd
     {Value2} point{Value2:plural one='' other='s'} de vie.
+LeidiFriend:
+  ExtraDescription2: "{FriendU} infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à tous les ennemis, en appliquant |froid|."
+  FlavorText: L'hiver arrive. L'hiver est arrivé. Combattez à nouveau l'hiver. Hiver
+    suivant.
+  Name: Letty, Incarnation de l'Hiver
+  Description: '{FriendP} appliquez |froid| à un ennemi aléatoire.'
+LarvaDefense:
+  Name: Battement d'Ailes
+FakeCard:
+  Description: "|Komeiji Koishi| Dort encore chez elle. \nRestez à l'écoute des futures\
+    \ mises à jour."
+  Name: Rêve d'ancêtre (faux)
