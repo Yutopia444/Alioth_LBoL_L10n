@@ -274,7 +274,7 @@ ToolWeak:
   Description: "Aplica {Value1} de |Débil|.\n|Limitado【{DeckCounter}】|"
 ToolHeal:
   Name: Comida Enlatada
-  Description: "Gana {Value1} de vida.\n|Limitado【{DeckCounter}】|"
+  Description: "Cura {Value1} de vida.\n|Limitado【{DeckCounter}】|"
 ToolAmulet:
   Name: Amuleto Desechable
   Description: "Gana {Value1} |Amuleto|.\n|Limitado【{DeckCounter}】|"
@@ -285,7 +285,7 @@ ToolMicai:
   Description: "Gana {Value1} |Camuflaje Óptico|.\n|Limitado【{DeckCounter}】|"
   Name: Ropa de Camuflaje Óptico
 ToolFirstAid:
-  Description: "Elimina todas los efectos negativos de {PlayerName}.\nGana {Value1}\
+  Description: "Elimina todas los efectos negativos de {PlayerName}.\nCura {Value1}\
     \ de vida.\n|Limitado【{DeckCounter}】|"
   Name: Kit de Primeros Auxilios
 ToolInvincible:
@@ -294,13 +294,13 @@ ToolInvincible:
     |Limitado【{DeckCounter}】|"
 VampireShoot1:
   Name: Disparo del Demonio
-  Description: "Inflige {Damage} de daño.\nGana {Value1} de vida."
+  Description: "Inflige {Damage} de daño.\nCura {Value1} de vida."
   FlavorText: '"¡Puedo chupar la sangre incluso si lo bloqueas!"'
 VampireShoot2:
   FlavorText: '"¡Puedo chupar la sangre incluso si te proteges!" --El precio de convertirse
     en un vampiro es la gingivitis'
   Name: Lluvia del Demonio
-  Description: "Inflige {Damage} de daño.\nGana {Value1} de vida."
+  Description: "Inflige {Damage} de daño.\nCura {Value1} de vida."
 WanderingSoul:
   Name: Alma Errante
   Description: "Gana |Perfección| por {Value1} turno{Value1:plural one='' other='s'}.\n\
@@ -1535,8 +1535,8 @@ RangziSeed:
     Tiene |Reponer|.
 MeihongPower:
   Description: "Al comienzo del turno de {PlayerName}, gana {Value1} de |Poder|\n\
-    Al final del combate, si la vida de {PlayerName} es menos de la mitad, gana {Value2}\
-    \ de vida."
+    Al final del combate, si la vida de {PlayerName} es menos de la mitad, se cura\
+    \ {Value2} de vida."
   FlavorText: Es una inmortal maldita que vive su vida como una ermitaña.
   Name: La Llama Inmortal
 DizangLove:
@@ -1600,7 +1600,7 @@ QianGui:
   Description: "Inflige {Damage} de daño.\n|Debut|: Obtén {Value1} de |Evasión|."
   ExtraDescription1: "Inflige {Damage} de daño.\n|d:Debut: Obtén {Value1} de Evasión.|"
 RangziFanshu:
-  Description: Al final del combate, gana {Value1} de vida.
+  Description: Al final del combate, se cura {Value1} de vida.
   Name: Dulce Dulce Patata
 YukariBox:
   Name: '"Regalos" Entragados'
@@ -1650,7 +1650,7 @@ FlanPlayAlone:
 FangxiangHeal:
   Name: Devorar Deseos
   Description: "|Exilia| {Value1} {Value1:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} de la pila de descarte. Gana {Value2} de vida por cada carta exiliada\
+    \ aleatorias'} de la pila de descarte. Cura {Value2} de vida por cada carta exiliada\
     \ de esta manera."
 HehuanAttack:
   Name: Machete Maníaca
@@ -1658,7 +1658,7 @@ HehuanAttack:
     Roba {Value1:plural one='% carta' other='% cartas'}."
 QingeHeal:
   Name: Necromancia
-  Description: "Obtén {Value1} de |Poder Temporal|.\nGana {Value2} de vida. Al comienzo\
+  Description: "Obtén {Value1} de |Poder Temporal|.\nCura {Value2} de vida. Al comienzo\
     \ del próximo turno de {PlayerName}, pierde {Value2} de vida."
   FlavorText: '"¡Te has potenciado ¡Entra ahí!"'
 HekaHellRain:
@@ -1737,8 +1737,8 @@ MeilingRain:
     \ enemigo una vez más."
   Name: Lluvia de Colores Vivos
 MedicineGarden:
-  Description: "Cada enemigo gana {Value1} de vida.\nAplica {Value1} de |Veneno| a\
-    \ cada enemigo."
+  Description: "Cada enemigo se cura {Value1} de vida.\nAplica {Value1} de |Veneno|\
+    \ a cada enemigo."
   Name: Jardín Melancólico
 ZoufangSnake:
   Name: Fe de la Diosa Nativa
@@ -1791,7 +1791,7 @@ ShuihuoCard:
   Description: "Inflige {Damage} de daño.\nObtén {Block} de |Bloqueo|."
 SanaeRice:
   Name: Cosecha de Arroz Abundante
-  Description: "Elimina todos los efectos negativos de {PlayerName}.\nGana {Value1}\
+  Description: "Elimina todos los efectos negativos de {PlayerName}.\nCura {Value1}\
     \ de vida."
 ModuoluoFire:
   Name: Fuego de Ena
@@ -1843,7 +1843,8 @@ Ice:
   Description: Aplica |Frío|.
 FrostGarden:
   Name: Jardín Escarchado
-  Description: "Cada enemigo gana {Value1} de vida.\nAplica |Frío| a cada enemigo."
+  Description: "Aplica |Frío| a todos los enemigos.\nSi tienes una carta de |Compañero|\
+    \ invocada en tu mano, {SelfName} cuesta {Mana}."
   UpgradedDescription: "Cada enemigo gana {Value1} de vida.\nAplica |Frío| a cada\
     \ enemigo.\nAñade {Value2} |Glaciar{Value2:plural one='' other ='es'}| a la mano."
 IceLance:
@@ -2188,7 +2189,7 @@ DoubleMana:
 YonglinUpgrade:
   Name: Incienso del Conejo Lunar
   Description: "Al comienzo del turno de {PlayerName}, mejora {Value1} carta{Value1:plural\
-    \ one=' aleatoria' other='s aleatorias'} en la mano.\nGana {Value2} de vida."
+    \ one=' aleatoria' other='s aleatorias'} en la mano.\nCura {Value2} de vida."
 MoonTipsBag:
   Name: Bolsa de Ayuda de Yukari
   FlavorText: 'Yukari: "Parece que {PlayerName} está en problemas."'
@@ -2202,7 +2203,7 @@ MoonTipsDefense:
   Description: Obtén {Value1} de |Barrera|.
 MoonTipsHeal:
   Name: Consejos de Curación
-  Description: Gana {Value1} de vida.
+  Description: Cura {Value1} de vida.
 Lunatic:
   Name: Locura
 FruitShake:
@@ -2227,6 +2228,8 @@ LilyFriend:
   ExtraDescription1: '{FriendA} Gana {Value2} de maná aleatorio.'
 MaidFriend:
   Description: '{FriendP} Inflige {Damage} de daño al enemigo con menos vida.'
+  ExtraDescription2: "{FriendU} Inflige daño inmediatamente.\nCada {SelfName} inflige\
+    \ {Value1} de daño adicional."
 LarvaFriend:
   Description: '{FriendP} Aplica {Value1} de |Veneno| a un enemigo aleatorio.'
   ExtraDescription1: '{FriendA} |Mejora| todas las cartas en la mano.'
@@ -2242,3 +2245,20 @@ LeidiFriend:
   Name: Letty la Encarnación del Invierno
   ExtraDescription2: '{FriendU} Inflige {Damage} y aplica |Frío| a cada enemigo.'
   Description: '{FriendP} Aplica |Frío| a un enemigo aleatorio.'
+SunnyFriend:
+  Description: '{FriendP} Inflige {Damage} de daño a un enemigo aleatorio {Value1}
+    veces.'
+  ExtraDescription1: "{FriendA} Gana |Camuflaje Óptico| por {Light} turno{Light:plural\
+    \ one=''other='s'}."
+  ExtraDescription2: "{FriendU} Inflige {Value1} de daño.\nObtén {Value2} de |Poder|."
+StarFriend:
+  Description: '{FriendP} Inflige {Damage} de daño a todos los enemigos.'
+  ExtraDescription1: '{FriendA} Inflige {Value1} daño inmediatamente.'
+  ExtraDescription2: "{FriendU} Siempre que cada {SelfName} inflija daño, aplica {Light}\
+    \ |Marcado|.\nInflige daño inmediatamente {Value2} veces."
+ClownpieceFriend:
+  Description: '{FriendS} Gana {StartMana}.'
+  ExtraDescription1: "{FriendA} Roba {Value1} carta{Value1:plural one='' other='s'}\
+    \ y agrega una |Locura| a la pila de descarte."
+  UpgradedExtraDescription1: "{FriendA} Roba {Value1} carta{Value1:plural one='' other='s'}."
+  ExtraDescription2: '{FriendU} Gana {Mana} y agrega una |Locura| a la pila de descarte.'
