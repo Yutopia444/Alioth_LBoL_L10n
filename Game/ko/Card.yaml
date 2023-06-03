@@ -188,7 +188,9 @@ QinggeManwu:
   FlavorText: 레이무의 가벼운 몸동작과 함께, 먼지가 내려앉는다.
 OutInGap:
   Description: '|p:완전 무작위| 카드 {Value1}장 중 하나를 얻습니다. 해당 카드는 {Mana}의 |일시 코스트|를 가지며,
-    |소멸|과 |휘발성|을 가집니다.'
+    |소멸|과 |휘발성|을 가집니다.
+
+    |e:대상 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다.'
   Name: 경계 드나들기
 HuijuQiankun:
   Description: "손에 있는 모든 카드를 |소멸|시키고, |음양옥|을 1장 얻습니다.\n|소멸|시킨 카드 한 장마다 그 |음양옥|의 피해량이 {Value1}씩\
@@ -202,9 +204,9 @@ KuosanJiejie:
     |지불한 <sprite=\"ManaSprite\" name=\"R\"> 만큼|: 모든 적에게 피해를 {Damage} 줍니다."
   Name: 확산결계
 ReimuFestival:
-  Name: 끝나지 않는 연회
+  Name: 카미자쿠라 무도
   Description: 내 턴 시작 시 |일시 화력|을 {Value1} 얻습니다.
-  FlavorText: 더치페이만 아니면 "다음엔 내가 낼게"라고 말해도 괜찮습니다.
+  FlavorText: 하쿠레이 신사의 새로운 주 수입원(인기 만점).
 ReimuLucky:
   Name: 길첨개운
   Description: "|부적|을 {Value1} 얻습니다.\n<sprite=\"Point\" name=\"Gold\">를 {Value2} 얻습니다."
@@ -534,23 +536,20 @@ ToolFirstAid:
 ToolExile:
   Name: 로봇청소기
   Description: "손에서 임의의 카드를 골라 |소멸|시킵니다.\n|사용 제한 [{DeckCounter}]|"
-FairySupportLuna:
-  Name: 루나의 고요
 FairySupportSunny:
   Name: 서니의 굴절
-FairySupportStar:
-  Description: "|내 턴 시작 시|: 무작위 적에게 |록온|을 {Value1} 줍니다.\n|소멸될 시|: 모든 적에게 |록온|을 {Value2}\
-    \ 줍니다."
 FairySupportClownpiece:
   Name: 클라운피스의 광기
 SummerFlower:
-  Description: "피해를 {Damage} 줍니다.\n|성장|: 피해량이 {Value1} 증가합니다."
+  Description: "피해를 {Damage} 줍니다.\n이번 전투에서 모든 {SelfName}의 피해량이 {Value1} 증가합니다."
   Name: 한여름의 꽃
 ColdBreath:
   Name: 차가운 숨결
-  Description: '|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.'
-GainLarva:
-  Name: 비늘가루 살포
+  Description: '|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.
+
+    카드를 {Value1}장 뽑습니다.
+
+    적에게 |빙결|이 없을 시 공격하지 않습니다.'
 IceLance:
   Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 {Value1}배의 피해를 가합니다."
   Name: 얼음 창
@@ -563,11 +562,12 @@ IceBlock:
     \ 내 턴을 끝냅니다."
   Name: 얼음 장벽
 CallFriends:
-  Description: 무작위 일반 |요정의 지원| 카드를 {Value1}장 얻습니다.
+  Description: 무작위 |동료| 카드 {Value1}장 중 한 장을 고른 뒤 손으로 소환해 가져옵니다.
   Name: 친구들 부르기
-  UpgradedDescription: 무작위 |요정의 지원| 카드를 {Value1}장 얻습니다.
+  UpgradedDescription: "무작위 |동료| 카드 {Value1}장 중 한 장을 고른 뒤 손으로 소환해 가져옵니다.\n추가로 |e:삼월정|\
+    \ 중 하나를 선택해 가져옵니다."
 CirnoInForest:
-  Description: "|방어|를 {Block} 얻고 {Mana}를 얻습니다.\n|성장|: 추가로 {Mana}를 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n|가불| {Value1}."
   Name: 감쪽같은 위장
   FlavorText: 숲의 요정.
 FreezeToIce:
@@ -606,9 +606,11 @@ FreezeBullet:
   Description: "|방어|를 {Block} 얻습니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
 FrostGarden:
   FlavorText: 에어컨은 필요 없어.
-  UpgradedDescription: "모든 적의 체력을 {Value1} 회복시킵니다.\n모든 적에게 |빙결|을 가합니다.\n|얼음 조각|을 {Value2}장 얻습니다."
+  UpgradedDescription: "모든 적에게 |빙결|을 가합니다.\n|얼음 조각|을 {Value2}장 얻습니다.\n손에 소환한 |동료|\
+    \ 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가 됩니다."
   Name: 얼어붙은 화원
-  Description: "모든 적의 체력을 {Value1} 회복시킵니다.\n모든 적에게 |빙결|을 가합니다."
+  Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가\
+    \ 됩니다."
 IceSaber:
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n사용 시 손에 있는 파란색 카드를 무작위만큼 버립니다.\n버린 카드의\
     \ 수만큼 공격을 한 번씩 더 가합니다."
@@ -625,34 +627,32 @@ IceGun:
   FlavorText: 얼음 창보단 얼음 총이지.
 Tether:
   Name: 에워싸기
-  Description: "|방어|를 {Block} 얻습니다.\n손에 있는 |요정의 지원| 카드 한 장마다 |방어|가 {Value1}씩 늘어납니다.\
-    \ (총 {Special})"
+  Description: "|방어|를 {Block} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value1} 얻습니다."
 IceBarrier:
   Name: 얼음 보호막
   Description: '|얼음 갑옷|을 {Value1} 얻습니다.'
-RemoveOverdraft:
-  Name: 얼린 과일
 ZeroK:
   Name: 앱솔루트 제로
   Description: "|빙결|이 가하는 피해를 {Value1}배 높입니다.\n모든 적에게 |빙결|을 가합니다."
 FairyTree:
   Name: 요정의 집
-  Description: "손에 스킬 카드가 들어올 시 {Mana}를 얻고 카드를 {Value1}장 뽑습니다.\n매 턴마다 한 번씩만 발동합니다.\
-    \ (카드를 추가로 뽑을 때엔 발동되지 않습니다.)"
+  Description: "|동료|를 소환시킬때마다 |방어|를 {Value1} 얻습니다."
 Blizzard:
   Name: 아이스 블리자드
-  Description: 모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.
-GainLily:
-  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|릴리의 봄 알림|을 한 장 얻습니다."
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n손에 |겨울의 화신 레티|를 소환했을 경우 다음 턴 시작\
+    \ 시 효과를 한 번 더 발동시킵니다."
 MoreFriends:
   Name: 사교의 달인
-  Description: 내 턴 종료 시 무작위 |요정의 지원| 카드를 {Value1}장 얻습니다.
+  Description: "내 턴 시작 시 무작위 |동료| 카드를 {Value1}장 얻습니다.\n획득한 |동료| 카드는 |휘발성|을 지니며, 소환할\
+    \ 시 |휘발성|은 사라집니다."
 FairyOnIce:
   Name: 빙상의 요정
   Description: "카드를 {Value1}장 뽑습니다.\n적에게 |빙결|을 가할 때마다 |그레이즈|를 {Value2} 얻습니다. "
 CirnoFestival:
   Name: 연회 난입
-  Description: '|선택|: |물결|을 {Value1}장 얻습니다; 혹은 무작위 일반 |요정의 지원| 카드를 {Value2}장 얻습니다.'
+  Description: '|그레이즈|를 {Value1} 얻습니다.
+
+    손에 |동료| 카드가 {Value2}장 있을 때마다 무작위 코스트가 하나 감소합니다.'
 DanmuJade:
   Name: 탄막의 쌍고치
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|채홍|을 한 장 얻습니다.\n|지불한 {Mana}마다|: |화력|과 |영력|을\
@@ -666,55 +666,53 @@ WaterPrincess:
   NonbattleDescription: "보호막을 {Shield} 얻습니다.\n손에 있는 카드 한 장 당 얻는 |보호막|이 {Value1}씩 늘어납니다.\n\
     |선보임|: |물결|을 한 장 얻습니다."
 ForeverCool:
-  UpgradedDescription: "|소멸|당한 |요정의 지원| 카드 한 장마다 무작위 적에게 |빙결|을 가합니다.\n사용한 |요정의 지원|\
-    \ 카드 한 장마다 무작위 |요정의 지원| 카드를 버린 카드 더미에 넣습니다.\n무작위 |요정의 지원| 카드를 {Value1}장 얻습니다."
+  UpgradedDescription: "|동료| 카드의 |a:액티브 능력|을 발동하거나 |u:궁극기|를 사용할 때 무작위 적에게 |빙결|을 가합니다.\n\
+    적이 |빙결|을 받을 시 손에 있는 무작위 |동료| 카드가 |지원력|을 1 얻습니다.\n모든 적에게 |빙결|을 가합니다."
   Name: 영원히 상쾌한 환상의 사계
-  Description: "|소멸|당한 |요정의 지원| 카드 한 장마다 무작위 적에게 |빙결|을 가합니다.\n사용한 |요정의 지원| 카드 한 장마다\
-    \ 무작위 |요정의 지원| 카드를 버린 카드 더미에 넣습니다."
+  Description: "|동료| 카드의 |a:액티브 능력|을 발동하거나 |u:궁극기|를 사용할 때 무작위 적에게 |빙결|을 가합니다.\n적이\
+    \ |빙결|을 받을 시 손에 있는 무작위 |동료| 카드가 |지원력|을 1 얻습니다."
 BlackResidue:
   Name: 어둠의 잔재
   Description: '|턴 종료 시|: 체력을 {Value1} 잃습니다.'
 WhiteWorld:
-  Description: "|가불| 카드를 사용한 후 손의 무작위 카드 {Value1}장이 |일시적으로| 코스트가 1 감소합니다."
+  Description: "내 턴 시작 시 모든 적에게 |빙결|을 가합니다."
   Name: 순백의 세계
 GatherFairy:
   Description: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n카드를 {Value1}장 뽑습니다."
   Name: 요정 소집
-  UpgradedDescription: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n무작위 일반 |요정의 지원| 카드를 {Value2}장 얻습니다.\n\
-    카드를 {Value1}장 뽑습니다."
+  UpgradedDescription: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n카드를 {Value1}장 뽑습니다.\n손에 있는 모든\
+    \ |동료| 카드가 |지원력|을 {Value2} 얻습니다."
   FlavorText: 너희는 나의 날개일지어니.
 BrainOverclock:
   Name: 뇌 과부하
-  Description: "{Mana}를 얻습니다.\n|가불| {Value1}."
+  Description: "{Mana}를 얻습니다.\n카드를 {Value2}장 뽑습니다.\n|가불| {Value1}."
 IceMatrix:
   Name: 냉동 매트릭스
   Description: "적에게 |빙결|을 가할 시 |얼음 갑옷|을 {Value1} 얻습니다.\n모든 적에게 |빙결|을 가합니다."
 MinengZhuru:
   Name: 비능의 주입
-  Description: "|요정의 지원| 카드들의 패시브 효과가 {Value1}배가 됩니다.\n(손에 있을 시/내 턴 시작 시 효과)"
-GainStar:
-  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|스타의 탐지|를 한 장 얻습니다."
+  Description: "|동료| 카드의 |f:패시브 능력|이 발동할 시 한 번 더 발동합니다."
 CirnoEcho:
   Name: 자연의 선물
   Description: 버린 카드 더미에서 {Value1}장을 골라 손패로 되돌리고, 해당 카드에 |메아리|를 부여합니다.
 FairyTeam:
   Name: 요정대전쟁
-  Description: "|소멸|된 카드 더미에 있는 |요정의 지원|의 카드를 1종 1패씩 손으로 되돌립니다. (현재 {TeamCount}종)\n\
-    |가불| {Value1}."
+  Description: "손에서 |동료| 카드를 원하는 만큼 선택해 |소멸|시키고 기본 코스트를 얻습니다.\n선택된 장수만큼 무작위 적에게 피해를\
+    \ {Damage} 줍니다."
 HualiIce:
   Name: 퍼펙트 서머 아이스
-  Description: "이 턴에서 카드가 {Value1}장 이상 사용되거나 |소멸|되어야 사용할 수 있습니다.\n(현재 {Countdown}장\
-    \ 남음)\n모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n"
-  UpgradedDescription: "이 턴에서 카드가 {Value1}장 이상 사용되거나 |소멸|되어야 사용할 수 있습니다.\n(현재 {Countdown}장\
+  Description: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n(현재 {Countdown}장 남음)\n모든\
+    \ 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n"
+  UpgradedDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n(현재 {Countdown}장\
     \ 남음)\n모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2} 가합니다."
-  NonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되거나 |소멸|되어야 사용할 수 있습니다.\n모든 적에게\
-    \ 피해를 {Damage} 주고 |빙결|을 가합니다.\n"
-  UpgradedNonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되거나 |소멸|되어야 사용할 수 있습니다.\n\
-    모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2} 가합니다."
+  NonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n모든 적에게 피해를 {Damage}\
+    \ 주고 |빙결|을 가합니다.\n"
+  UpgradedNonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n모든 적에게\
+    \ 피해를 {Damage} 주고 |빙결|을 {Value2} 가합니다."
 FairyTrick:
   Name: 요정의 장난
-  Description: "|보충|이 있는 무작위 |요정의 지원| 카드 {Value1}장을 뽑을 카드 더미에 넣습니다.\n버린 카드 더미에 |어둠의\
-    \ 잔재|를 {Value2}장 넣습니다."
+  Description: "체력을 {Value1} 잃습니다.\n|e:삼월정|을 세 장 소환하고, 무작위 한 장을 손으로 가져오고 나머지는 뽑을 카드\
+    \ 더미에 섞어넣습니다."
 LoveLetter:
   Description: <color=#eab8bf>사랑에 빠진 소녀</color>에게 주면 기뻐할 겁니다.
   Name: 러브레터
@@ -978,8 +976,6 @@ SakuyaInvestigate:
   Name: 일시정지 탐정
   Description: "|록온|을 {Value1} 줍니다.\n추가 턴을 진행할 시 |소멸|된 카드 더미에서 이 카드를 |일시적으로| {Mana}\
     \ 코스트로 만들고 가져옵니다."
-FakeHuiye:
-  Description: "|코이시|는 아직 집에서 자고 있습니다.\n차후의 업데이트를 기다려 주세요."
 AyaNewsReimuSp:
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
   Name: 붕붕마루 레이무 특간호
@@ -1212,8 +1208,6 @@ YuetuYuyi:
 DoremyDuplicate:
   Description: "손에서 카드를 한 장 골라 그 카드의 복사본을 {Value1}장 얻습니다.\n|복사본|을 대상으로 할 수 없습니다."
   Name: 몽아몽중
-LeidiBlizzard:
-  Name: 링거링 콜드
 GuijiZaoxingYuan:
   Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
   Name: 진원 조형술
@@ -1308,7 +1302,7 @@ HappyNewYear:
     \ 카드를 고를 시 |영력|을 {Value1} 얻습니다."
   Name: 새해 참배
 SummerIce:
-  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|가불| {Value2}."
+  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n다음 턴 시작 시 {Mana}를 얻습니다."
   Name: 서머 아이스
 Opt:
   Description: "뽑을 카드 더미에서 카드 한 장을 골라 바닥으로 보냅니다.\n카드를 한 장 뽑습니다.\n{Mana}를 얻습니다."
@@ -1334,13 +1328,11 @@ FreezeRiver:
   Description: 뽑을 카드 더미의 바닥에서 카드를 가져옵니다. 해당 카드는 |일시적으로| {Mana}의 코스트를 갖습니다.
   UpgradedDescription: 뽑을 카드 더미의 바닥에서 카드를 가져옵니다. 해당 카드는 {Mana}의 코스트를 갖습니다.
 BestFriend:
-  Description: 손에서 |요정의 지원| 카드를 최대 {Value1}장 골라 해당 카드들을 |소멸|시키지 않고 능력을 발동합니다.
+  Description: 손에서 |동료| 카드를 최대 {Value1}장 골라 해당 카드들의 |지원력|을 최대로 채웁니다.
   Name: 최고의 친구
 SummerParty:
   Name: 아이스 파티
-  Description: "무작위 일반 |요정의 지원| 카드를 한 장 얻습니다.\n|지불한 <sprite=\"ManaSprite\" name=\"\
-    U\">마다|: |얼음 갑옷|을 {Value1} 얻습니다.\n|지불한 {Mana}마다|: 무작위 일반 |요정의 지원| 카드를 {Value2}장\
-    \ 얻습니다."
+  Description: "|얼음 갑옷|을 {Value1} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value1} 얻습니다."
 RabbitFoot:
   Description: 전투 종료 시 {SelfName}이 |소멸|되지 않았다면 <sprite="Point" name="Gold">를 {Value1}
     얻습니다.
@@ -1377,14 +1369,14 @@ CirnoConsiderDraw:
   Description: 카드를 뽑습니다.
 FairyWrath:
   Name: 자연의 분노
-  Description: "무작위 적 두 명에게 피해를 {Damage} 줍니다.\n|소멸|된 |요정의 지원| 카드 한 장 당 피해량이 {Value1}\
-    \ 증가합니다.\n|가불| {Value2}."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 소환된 |협조적인 대요정|이 있을 경우 |한여름의 꽃|을 {Value1}장\
+    \ 얻습니다."
 DiamondBlizzardDefense:
   Name: '다이아몬드 블리자드: 방어'
   Description: 피해를 가하면서 |방어|를 얻습니다.
 FairyAllOut:
   Name: 전원 출동
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 있는 모든 |요정의 지원| 카드를 |소멸|시킵니다."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 있는 모든 소환된 |동료| 카드의 |f:패시브 능력|을 발동시킵니다."
 SatoriMemory:
   Name: 딥 메모리
   Description: "버린 카드 더미에서 무작위 {Value1}장 중 한 장을 골라 손으로 가져옵니다.\n|직감|: 해당 카드는 |일시적으로|\
@@ -1514,7 +1506,7 @@ YachieDefend:
   Name: 귀갑지옥
 ZoufangSnake:
   Description: "체력을 {Value1} 잃습니다.\n무작위 중립 희귀 |능력| 카드 {Value2}장 중 한 장을 골라 얻습니다. 그\
-    \ 카드는 |일시적으로| {Mana}의 코스트를 갖습니다."
+    \ 카드는 |일시적으로| {Mana}의 코스트를 갖습니다.\n|e:대상 카드군|은 마나 및 색상 제한에서 자유롭습니다."
   Name: 네이티브 페이스
 JingyeGraze:
   Name: 광기의 낙엽
@@ -1740,10 +1732,11 @@ XiaosanReflect:
   Name: 탄막 반사
   Description: "|보호막|을 {Shield} 얻습니다.\n|반사|를 {Value1} 얻습니다."
 LilyChun:
-  Description: 무작위 코스트 1 카드 {Value1}장을 얻습니다. 그 카드는 |소멸|과 |휘발성|을 지닙니다.
+  Description: "무작위 코스트 1 카드 {Value1}장을 얻습니다. 그 카드는 |소멸|과 |휘발성|을 지닙니다.\n|e:대상 카드군|은\
+    \ 소유자 제한에서 자유롭습니다."
   Name: 봄이에요!
-  UpgradedDescription: 무작위 코스트 1 카드 {Value1}장을 얻습니다. 그 카드는 |일시적으로| {Mana}의 코스트를 갖고,
-    |소멸|과 |휘발성|을 지닙니다.
+  UpgradedDescription: "무작위 코스트 1 카드 {Value1}장을 얻습니다. 그 카드는 |소멸|과 |휘발성|을 지닙니다.\n|e:대상\
+    \ 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다."
 KaguyaTreeSee:
   Name: 봉래의 수해
   Description: "피해를 입을 때마다 {SelfName}의 코스트가 {Mana}씩 감소합니다.\n모든 카드가 |소멸|을 잃습니다.\n모든\
@@ -1779,8 +1772,8 @@ FlanPlayAlone:
   Name: 외톨이
   Description: "|일시 화력|을 {Value1} 얻습니다.\n공격 카드가 아닌 모든 카드를 버립니다."
 YinyangQueen:
-  Name: 음양옥의 여왕
-  Description: 무작위 |홍룡음양옥|을 {Value1}장 얻습니다.
+  Name: 장인 미스마루
+  Description: '{FriendP}|방어|와 |보호막|을 {Value2} 얻습니다.'
 SanaeRice:
   Name: 오곡풍양 라이스 샤워
   Description: "지니고 있는 모든 부정적 효과를 제거합니다.\n체력을 {Value1} 회복합니다."
@@ -1869,8 +1862,6 @@ ZoufangWater:
 DoubleMana:
   Name: 요정의 기상
   Description: "마나가 두 배가 됩니다.\n|가불| {Value1}."
-CirnoFestivalBlue:
-  Description: '|물결|을 {Value1}장 얻습니다.'
 CirnoFestivalGreen:
   Description: 무작위 일반 |요정의 지원| 카드를 {Value1}장 얻습니다.
 MoonTipsBag:
