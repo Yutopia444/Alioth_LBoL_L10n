@@ -297,8 +297,8 @@ HuijuQiankun:
   FlavorText: Sélectionnez tout, faites un clic droit pour supprimer et videz la corbeille.
 ReimuInstant:
   Name: '"Sceau de Rêve -Instantané-"'
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nFin du tour.\
-    \ Ensuite, {PlayerName} joue un tour supplémentaire.\n|Limite de temps| {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nTerminez\
+    \ le tour, et {PlayerName} joue un tour supplémentaire.\n|Limite de temps| {Mana}."
   FlavorText: Elle a été évaluée comme "la carte la plus recherchée dans le ciel au-dessus
     du royaume"
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nFin\
@@ -396,11 +396,11 @@ WhiteLaser:
 BlazingStar:
   Name: Étoile Flamboyante
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|. {PlayerName}\
-    \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, puis\
-    \ effectuez un tour supplémentaire.\n|Limite de temps| {Mana}."
+    \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, et {PlayerName}\
+    \ joue un tour supplémentaire.\n|Limite de temps| {Mana}."
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|. {PlayerName}\
-    \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, puis\
-    \ effectuez un tour supplémentaire.\n|d:Limite de temps {Mana}. |"
+    \ ne perd pas de |Bouclier| au début du prochain tour.\nTerminez le tour, et {PlayerName}\
+    \ joue un tour supplémentaire.\n|d:Limite de temps {Mana}. |"
 IceSpark:
   Name: Laser Gelé
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
@@ -1006,8 +1006,8 @@ BaitianCard:
   Name: Transmigration de Hieda
 HuiyinRetain:
   Description: "Renvoyez dans la main jusqu'à {Value1} carte{Value1:plural one=''\
-    \ other='s'} de la défausse, avec |Retenue| pendant un tour.\n{PlayerName} termine\
-    \ son tour, jouez un tour supplémentaire.\n|limite de temps| {Mana}."
+    \ other='s'} de la défausse, avec |Retenue| pendant un tour.\nTerminez le tour,\
+    \ et {PlayerName} joue un tour supplémentaire.\n|Limite de temps| {Mana}."
   Name: Pont du Retour
   ExtraDescription1: "Renvoyez dans la main jusqu'à {Value1} carte{Value1:plural one=''\
     \ other='s'} de la défausse, avec |Retenue| pendant un tour.\n{PlayerName} termine\
@@ -1155,10 +1155,10 @@ TimeLord:
   Name: Domination du Temps
   Description: Gagnez {Value1} |Impulsions temporelles|.
 TimeWalk:
-  Description: "Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.\n\
-    Les |Marches du Temps| perdent tous leurs effets pour le reste du combat."
+  Description: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\nLes\
+    \ |Marches du Temps| perdent tous leurs effets pour le reste du combat."
   Name: Marches du Temps
-  ExtraDescription1: "|d:Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.|\n\
+  ExtraDescription1: "|d:Terminez le tour, et {PlayerName} joue un tour supplémentaire.|\n\
     Les |Marches du Temps| perdent tous leurs effets pour le reste du combat."
   FlavorText: C'est certainement moins cher, mais ça reste fort.
 SpecialClock:
@@ -1533,7 +1533,7 @@ LunaClock:
 SakuyaDio:
   Name: Tu es le Prochain
   Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé{Value1:plural\
-    \ one='' other='s'}|.\nTerminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.\
+    \ one='' other='s'}|.\nTerminez le tour, et {PlayerName} joue un tour supplémentaire.\
     \ Pendant ce tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='%\
     \ Couteaux de Lancer'}| à la main au lieu de piocher des cartes pendant l'étape\
     \ de pioche."
@@ -2369,7 +2369,7 @@ AutoKnife:
     \ {Value1} |Couteau{Value1:plural one='' other='x'} de lancer| à votre main."
 SakuyaUsage2:
   Name: Marches Circulaires
-  Description: Terminez le tour. Ensuite, {PlayerName} joue un tour supplémentaire.
+  Description: Terminez le tour, et {PlayerName} joue un tour supplémentaire.
   FlavorText: Arrêtez simplement de faire des corvées.
 BlueRose:
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
@@ -2757,7 +2757,7 @@ LilyFriend:
     \ à un ennemi aléatoire {Value1} fois.\n{FriendP} gagnez {TurnMana}."
   ExtraDescription2: "{FriendU} restaurez {Heal} point{Heal:plural one='' other='s'}\
     \ de vie."
-  Name: ". . Lily White, Annonciatrice de Printemps"
+  Name: ". . Lily, Annonciatrice de Printemps"
   ExtraDescription1: "{FriendA} gagnez {Value2:plural one='% mana aléatoire' other='%\
     \ manas aléatoires'}."
 MaidFriend:
@@ -2769,7 +2769,7 @@ MaidFriend:
   FlavorText: Kasumi est déjà la travailleuse la plus sérieuse parmi les servantes
     et les fées du Manoir du Démon Écarlate.
 LarvaFriend:
-  Name: ".\tLarva, Déesse de la Nuit d'Été"
+  Name: ". . Larva, Déesse de la Nuit d'Été"
   ExtraDescription1: '{FriendA} |améliorez| toutes les cartes en main.'
   ExtraDescription2: "{FriendU} appliquez {Value2} |Poison{Value2:plural one='' other='s'}|\
     \ à tous les ennemis, et déclenchez les dégâts de |poison| une fois."
