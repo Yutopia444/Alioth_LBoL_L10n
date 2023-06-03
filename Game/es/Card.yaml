@@ -1827,9 +1827,7 @@ IceBlock:
     \ {PlayerName}."
 FairyTree:
   Name: Hogar de las Hadas
-  Description: "Cuando se añade una carta de técnica a la mano por primera vez en\
-    \ cada turno, gana {Mana} y roba {Value1} carta{Value1:plural one='' other='s'}.\n\
-    (No es efectiva al robar cartas de técnica.)"
+  Description: "Siempre que un |Aliado| es convocado, obtén {Value1} de |Bloqueo|."
 BrainOverclock:
   Name: Overclocking Cerebral
   Description: "Gana {Mana}.\nRoba {Value2} carta{Value2:plural one='' other='s'}.\n\
@@ -2034,9 +2032,9 @@ DeepFreeze:
     \ Si un enemigo ya tiene |Frío|, en su lugar aplica |Congelación Profunda| a ellos."
 FairyTeam:
   Name: Gran Guerra de Hadas
-  Description: "Devuelve 1 de cada carta de |Apoyo de las Hadas Exiliada| con un nombre\
-    \ diferente al de la mano. (Hay {TeamCount:plural one='%' other='%'}).\n|Sobregiro|\
-    \ {Value1}."
+  Description: "Elige cualquier número de |Aliados| en la mano y |Exílialos| , ganando\
+    \ maná igual a su costo.\nPor cada carta |Exiliada| de esta manera, inflige {Damage}\
+    \ de daño a un enemigo aleatorio."
 CirnoEcho:
   Name: Regalo de la Naturaleza
   Description: "Elige {Value1} carta{Value1:plural one='' other='s'} de la pila de\
@@ -2063,10 +2061,10 @@ MoreFriends:
     de las Hadas| {Value1:plural one='aleatoria' other='aleatorias'} a la mano.
 FairyTrick:
   Name: Travesura de Hadas
-  Description: "Agrega {Value1} carta{Value1:plural one=' aleatoria' other='s aleatorias'}\
-    \ de |Apoyo de las hadas| a la pila de robo. {Value1:plural one='Tiene' other='Tienen'}\
-    \ |Reponer|.\nAgrega {Value2} | {Value2:plural one='Residuo oscuro' other='Residuos\
-    \ oscuros'}| a la pila de robo."
+  Description: "Pierde {Value1} de vida.\nInvoca las 3 |e:Hadas de la Luz|. Agrega\
+    \ uno a la mano y baraja los demás a la pila de robo."
+  UpgradedDescription: "Pierde {Value1} de vida.\nInvoca 4 |e:Hadas de la Luz|. Agrega\
+    \ uno a la mano y baraja los demás a la pila de robo."
 ChaowoCard:
   Description: "Obtén {Block} de |Bloqueo|.\nEntra en el estado |Super-ego|."
   Name: Super-ego
@@ -2090,9 +2088,8 @@ FrozenThrone:
     mano, añade un |Glaciar| a la mano.
 FairyWrath:
   Name: Cólera de la Naturaleza
-  Description: "Inflige {Damage} de daño a 2 enemigos aleatorios.\nPor cada carta\
-    \ de |Apoyo de las Hadas| Exiliada, {SelfName} inflige {Value1} más de daño.\n\
-    |Sobregiro| {Value2}."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay un |Daiyousei| convocado\
+    \ en la mano, añade {Value1} |Flores de verano| a la mano."
 DiamondBlizzard:
   Name: Pilar de Diamante
   Description: "Inflige {Damage} de daño a todos los enemigos.\n|Elegir|: Aplica |Frío|\
@@ -2208,14 +2205,19 @@ Lunatic:
   Name: Locura
 FruitShake:
   Name: Hielo Triturado de Frutas
+  Description: "Inflige {Damage} de daño.\nSi un |Aliado| fue invocado en este turno,\
+    \ inflige {Daño} de daño a todos los enemigos."
 DayaojingFriend:
   Description: '{FriendP} Inflige {Damage} de daño a un enemigo aleatorio.'
-  ExtraDescription1: '{FriendA} Obtiene {Block} de |Bloqueo|.'
+  ExtraDescription1: '{FriendA} Obtén {Block} de |Bloqueo|.'
   UpgradedExtraDescription1: '{FriendA} Obtén {Block} de |Bloqueo| y {Shield} de |Barrera|.'
   ExtraDescription2: '{FriendU} Agrega {Value1} |Flores de Verano| a la mano.'
   UpgradedExtraDescription2: '{FriendU} Agrega {Value1} |Flores de Verano+| a la mano.'
 ChooseFriend:
   Name: Encuentro en el Lago Brumoso
+  Description: "Elige {Value2} de {Value1} cartas |Aliadas| aleatorias para añadirla\
+    \ a la mano. Su coste de maná se puede pagar con cualquier maná.\nLas |e:Cartas\
+    \ alteradas| no están sujetos a restricciones de maná, color y propietario."
 InstantFreeze:
   Description: "Aplica |Frío| a todos los enemigos.\nTermina el turno de {PlayerName}.\
     \ Luego, toma un turno extra.\n|Límite de Tiempo| {Mana}."
@@ -2262,3 +2264,6 @@ ClownpieceFriend:
     \ y agrega una |Locura| a la pila de descarte."
   UpgradedExtraDescription1: "{FriendA} Roba {Value1} carta{Value1:plural one='' other='s'}."
   ExtraDescription2: '{FriendU} Gana {Mana} y agrega una |Locura| a la pila de descarte.'
+LarvaDefense:
+  Description: "Obtén {Block} de |Bloqueo|.\nSi hay un |Larva| invocado en la mano,\
+    \ aplica {Value1} |Débil| y |Vulnerable| a cada enemigo."
