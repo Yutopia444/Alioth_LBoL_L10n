@@ -536,8 +536,6 @@ ToolFirstAid:
 ToolExile:
   Name: 로봇청소기
   Description: "손에서 임의의 카드를 골라 |소멸|시킵니다.\n|사용 제한 [{DeckCounter}]|"
-FairySupportSunny:
-  Name: 서니의 굴절
 FairySupportClownpiece:
   Name: 클라운피스의 광기
 SummerFlower:
@@ -639,8 +637,8 @@ FairyTree:
   Description: "|동료|를 소환시킬때마다 |방어|를 {Value1} 얻습니다."
 Blizzard:
   Name: 아이스 블리자드
-  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n손에 |겨울의 화신 레티|를 소환했을 경우 다음 턴 시작\
-    \ 시 효과를 한 번 더 발동시킵니다."
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n손에 |겨울의 화신, 레티|를 소환했을 경우 다음 턴\
+    \ 시작 시 효과를 한 번 더 발동시킵니다."
 MoreFriends:
   Name: 사교의 달인
   Description: "내 턴 시작 시 무작위 |동료| 카드를 {Value1}장 얻습니다.\n획득한 |동료| 카드는 |휘발성|을 지니며, 소환할\
@@ -1303,7 +1301,7 @@ HappyNewYear:
   Name: 새해 참배
 SummerIce:
   Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n다음 턴 시작 시 {Mana}를 얻습니다."
-  Name: 서머 아이스
+  Name: 여름날의 빙수
 Opt:
   Description: "뽑을 카드 더미에서 카드 한 장을 골라 바닥으로 보냅니다.\n카드를 한 장 뽑습니다.\n{Mana}를 얻습니다."
   Name: 여리박빙
@@ -1369,8 +1367,10 @@ CirnoConsiderDraw:
   Description: 카드를 뽑습니다.
 FairyWrath:
   Name: 자연의 분노
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 소환된 |협조적인 대요정|이 있을 경우 |한여름의 꽃|을 {Value1}장\
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 소환된 |탐험 조수, 대요정|이 있을 경우 |한여름의 꽃|을 {Value1}장\
     \ 얻습니다."
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n손에 소환된 |탐험 조수, 대요정|이 있을 경우 |한여름의\
+    \ 꽃+|을 {Value1}장 얻습니다."
 DiamondBlizzardDefense:
   Name: '다이아몬드 블리자드: 방어'
   Description: 피해를 가하면서 |방어|를 얻습니다.
@@ -1774,6 +1774,8 @@ FlanPlayAlone:
 YinyangQueen:
   Name: 장인 미스마루
   Description: '{FriendP}|방어|와 |보호막|을 {Value2} 얻습니다.'
+  ExtraDescription1: '{FriendA}무작위 |홍룡음양옥| {Value1}장을 얻습니다.'
+  ExtraDescription2: '{FriendU}이번 전투 중 모든 |음양옥|의 효과가 두 배가 됩니다. 즉시 |홍룡음양옥|을 하나 획득합니다.'
 SanaeRice:
   Name: 오곡풍양 라이스 샤워
   Description: "지니고 있는 모든 부정적 효과를 제거합니다.\n체력을 {Value1} 회복합니다."
@@ -1862,8 +1864,6 @@ ZoufangWater:
 DoubleMana:
   Name: 요정의 기상
   Description: "마나가 두 배가 됩니다.\n|가불| {Value1}."
-CirnoFestivalGreen:
-  Description: 무작위 일반 |요정의 지원| 카드를 {Value1}장 얻습니다.
 MoonTipsBag:
   Description: "|c:묘책| {Value1}가지 중 하나를 선택해 얻습니다.\n|사용 제한 [{DeckCounter}]|"
   Name: 비단 주머니
@@ -1888,3 +1888,79 @@ MoonTipsDefense:
 MoonTipsHeal:
   Name: 상처 치유
   Description: 체력을 {Value1} 회복합니다.
+DayaojingFriend:
+  Description: '{FriendP}무작위 적에게 공격 피해를 {Damage} 줍니다.'
+  ExtraDescription1: '{FriendA}|방어|를 {Block} 얻습니다.'
+  Name: 탐험 조수, 대요정
+  UpgradedExtraDescription1: '{FriendA}|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.'
+  ExtraDescription2: '{FriendU}|한여름의 꽃|을 {Value1}장 얻습니다.'
+  UpgradedExtraDescription2: '{FriendU}|한여름의 꽃+|을 {Value1}장 얻습니다.'
+FruitShake:
+  Description: "피해를 {Damage} 줍니다.\n이번 턴에서 |동료|를 소환했을 시 모든 적에게 피해를 {Damage} 줍니다."
+  Name: 아이스 후르츠
+MaidFriend:
+  Name: 양관의 메이드, 카스미
+  ExtraDescription2: "{FriendU}곧바로 피해를 가합니다.\n모든 {SelfName}가 추가로 피해를 {Value1} 가합니다."
+  Description: '{FriendP}체력이 가장 적은 적에게 공격 피해를 {Damage} 줍니다.'
+LarvaFriend:
+  ExtraDescription2: '{FriendU}모든 적에게 |중독|을 {Value2} 주고, |중독| 피해를 한 번 발동시킵니다.'
+  Description: '{FriendP}무작위 적에게 |중독|을 {Value1} 줍니다.'
+  ExtraDescription1: '{FriendA}손의 모든 카드를 |강화|시킵니다.'
+  Name: 한여름 밤의 신, 라바
+ChooseFriend:
+  Name: 약속의 호수
+  Description: "무작위 |동료| 카드 {Value1}장 중 최대 {Value2}장까지를 골라 얻습니다. 해당 카드의 코스트는 임의의 마나로\
+    \ 지불할 수 있습니다.\n|e:대상 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다."
+LunaFriend:
+  Name: 적막한 달빛, 루나
+  Description: '{FriendP}|방어|를 {Block} 얻습니다.'
+  ExtraDescription1: '{FriendA}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.'
+  ExtraDescription2: '{FriendU}|천의무봉|을 {Value2} 얻습니다.'
+StarFriend:
+  Name: 쏟아지는 별빛, 스타
+  Description: '{FriendP}모든 적에게 공격 피해를 {Damage} 줍니다.'
+  ExtraDescription1: '{FriendA}즉시 피해를 {Value1}번 줍니다.'
+  ExtraDescription2: "{FriendU}{SelfName}가 피해를 줄 때마다 대상에게 |록온|을 {Light} 줍니다.\n즉시 피해를\
+    \ {Value2}번 줍니다."
+SunnyFriend:
+  Name: 내리쬐는 햇빛, 서니
+  ExtraDescription1: '{FriendA}|광학미채|를 {Light} 얻습니다.'
+  ExtraDescription2: "{FriendU}즉시 피해를 {Value1} 줍니다.\n|화력|을 {Value2} 얻습니다."
+  Description: '{FriendP}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.'
+ClownpieceFriend:
+  Name: 광기의 요정, 클라운피스
+  Description: '{FriendS}{StartMana}를 얻습니다.'
+  UpgradedExtraDescription1: '{FriendA}카드를 {Value1}장 뽑습니다.'
+  ExtraDescription2: '{FriendU}{Mana}를 얻습니다. 버린 카드 더미에 |광기|를 한 장 섞어넣습니다.'
+  ExtraDescription1: '{FriendA}카드를 {Value1}장 뽑습니다. 버린 카드 더미에 |광기|를 한 장 섞어넣습니다.'
+Lunatic:
+  NonbattleDescription: 내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장 이상의 {SelfName}가
+    있을 시 |소멸|시키고 체력을 {Value2} 잃습니다.
+  Name: 광기
+  Description: "내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장 이상의 {SelfName}가 있을 시\
+    \ |소멸|시키고 체력을 {Value2} 잃습니다.\n현재 {LunaticCount}장의 {SelfName}가 있습니다."
+LeidiFriend:
+  Name: 겨울의 화신, 레티
+  Description: '{FriendP}무작위 적 하나에게 |빙결|을 가합니다.'
+  ExtraDescription2: '{FriendU}모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.'
+LilyFriend:
+  Name: 봄의 강림, 릴리 화이트
+  Description: "{FriendS}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n[FriendP}{TurnMana}를\
+    \ 얻습니다."
+  ExtraDescription1: '{FriendA}무작위 마나를 {Value2}개 얻습니다.'
+  ExtraDescription2: '{FriendU}체력을 {Heal} 회복합니다.'
+InstantFreeze:
+  Name: 급속냉동
+  Description: "모든 적에게 |빙결|을 가합니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|시간 제한| {Mana}."
+  ExtraDescription1: "모든 적에게 |빙결|을 가합니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|d:시간 제한\
+    \ {Mana}.|"
+LarvaDefense:
+  Name: 날갯짓 비행
+  Description: "|방어|를 {Block} 얻습니다.\n|한여름 밤의 신, 라바|를 소환했다면 모든 적에게 |허약|과 |취약|을 {Value1}\
+    \ 줍니다."
+FakeCard:
+  Name: 꿈자리에 조상님 총기립(임시)
+  Description: "|코메이지 코이시|는 아직 집에서 자는 중입니다.\n차후의 업데이트를 기다려 주세요."
+HistoryCard:
+  Description: "이 카드는 현재 버전에서 삭제되었습니다.\n카드 ID: {CardId}"
+  Name: 이전의 카드
