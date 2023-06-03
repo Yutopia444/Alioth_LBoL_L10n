@@ -440,8 +440,6 @@ MarisaBlockB:
 KoishiAttackB:
   Description: Inflige {Damage} de daño.
   Name: Defecto de ADN
-FairySupportClownpiece:
-  Name: Locura de Clownpiece
 ToolVulnerable:
   Name: Tambor Cargado
   Description: "Aplica {Value1} de |Vulnerable|.\n|Limitado【{DeckCounter}】|"
@@ -451,9 +449,6 @@ ToolAttack:
 AyaNews:
   Name: Periódico Bunbunmaru
   Description: Inflige {Damage} de daño a un enemigo aleatorio.
-FairySupportSunny:
-  Description: "|Mientras está en la mano|: Aumenta el daño de las cartas de ataque\
-    \ en {Value1}.\n|Al Exiliarse|: Gana {Value2} de |Poder|."
 KoishiBlockG:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Marchitamiento de Rosas
@@ -662,8 +657,8 @@ ChunseXiaojing:
     |Sobregiro| {Value2}."
 ReimuInstant:
   Name: '"Sello de Ensueño -Destello-"'
-  Description: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
-    \ toma un turno extra.\n|Límite de Tiempo| {Mana}."
+  Description: "Inflige {Damage} de daño.\nFinaliza el turno. Luego {PlayerName} toma\
+    \ un turno extra.\n|Límite de Tiempo| {Mana}."
   ExtraDescription1: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
     \ toma un turno extra.\n|d:Límite de tiempo {Mana}.|"
 WinterWarm:
@@ -1019,6 +1014,9 @@ BackOfKnife:
   Description: "Elimina todos los |Cuchillos Arrojadizos exiliados| del combate.\n\
     Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Aumenta su daño en {Value1}\
     \ por cada carta eliminada de esta manera.\n(Su daño aumentará en {IncreasedDamage}.)"
+  NonbattleDescription: "Elimina todos los |Cuchillos Arrojadizos exiliados| del combate.\n\
+    Luego, agrega un |Cuchillo Afilado Expreso| a la mano, Aumenta su daño en {Value1}\
+    \ por cada carta eliminada de esta manera."
 StopTime:
   Name: Tiempo Congelado
   Description: Cuando termine el turno de {PlayerName}, conserva {Value1} de maná
@@ -1789,8 +1787,7 @@ FengleiCard:
   Description: Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'
     other='veces'}.
 YinyangQueen:
-  Description: Añade {Value1} {Value1:plural one='aleatorio' other='aleatorios'} |{Value1:plural
-    one='Orbe' other='Orbes'} Yin-Yang de Arcoíris| a la mano.
+  Description: '{FriendP} Obtén {Value2} de |Bloqueo| y |Barrera|'
   Name: Reina del Orbe Yin-Yang
 ShuihuoCard:
   Name: Orbe de Agua y Fuego
@@ -1838,7 +1835,8 @@ FairyTree:
     (No es efectiva al robar cartas de técnica.)"
 BrainOverclock:
   Name: Overclocking Cerebral
-  Description: "Gana {Mana}.\n|Sobregiro| {Value1}."
+  Description: "Gana {Mana}.\nRoba {Value2} carta{Value2:plural one='' other='s'}.\n\
+    |Sobregiro| {Value1}."
 ColdPotion:
   Name: Liquido Refrigerante
   Description: "Las |Pociones Inestables| también aplican |Frío|.\nAgrega {Value1:plural\
@@ -1875,8 +1873,6 @@ Tether:
     \ en la mano, aumenta {Value1} de |Bloqueo|. (|Bloqueo| total {Special})"
   UpgradedDescription: "Obtén {Shield} de |Barrera|.\nPor cada carta de |Apoyo de\
     \ las Hadas| en la mano, aumenta {Value1} de |Barrera|. (|Barrera| total {Special})"
-GainStar:
-  Name: Lluvia de Estrellas
 YouxiangMoon:
   Name: Belleza de la Naturaleza
   Description: Durante el resto del combate, {PlayerName} no se ve afectado por el
@@ -1925,10 +1921,10 @@ BailianFire:
     \ aleatoria a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\n\
     Se activa {SelfName} inmediatamente."
 WhiteWorld:
-  Description: "Siempre que una carta con |Sobregiro| se juega, {Value1} carta{Value1:plural\
-    \ one=' aleatoria' other='s aleatorias'} en la mano cuestan temporalmente 1 maná\
-    \ aleatorio menos."
+  Description: "Al comienzo del turno de {PlayerName}, aplica |Frío| a todos los enemigos."
   Name: Mundo de Blanco Puro
+  UpgradedDescription: "Al comienzo del turno de {PlayerName}, aplica |Frío| a todos\
+    \ los enemigos.\nAplica |Frío| a todos los enemigos."
 AttackWithEveryColor:
   Description: '|Por cada maná gastado de un color diferente|: Inflige {Damage} de
     daño.'
@@ -2054,7 +2050,9 @@ CirnoEcho:
     \ one='Obtiene' other='Obtienen'} |Eco|."
 ColdBreath:
   Name: Aliento de Diamante
-  Description: Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio con |Frío|.\nRoba\
+    \ {Value1} carta{Value1:plural one='' other='s'}.\nNo se puede jugar mientras\
+    \ los enemigos no tengan |Frío|."
   FlavorText: Puedes usar este movimiento para ganar el "The Queen of Fighters" de
     este año.
 IceGun:
@@ -2064,8 +2062,7 @@ IceGun:
     \ daño."
 CirnoInForest:
   Name: A Plena Vista
-  Description: "Obtén {Block} de |Bloqueo|.\nGana {GainMana}.\n|Crecimiento|: Gana\
-    \ un {Mana} adicional."
+  Description: "Obtén {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
 MoreFriends:
   Name: Mariposa Social
   Description: Al final del turno de {PlayerName}, agrega {Value1} carta de |Apoyo
@@ -2129,7 +2126,7 @@ PlayWithWaste:
 SummerIce:
   Name: Granizado de Verano
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
-    \ one='z' other='ces'}.\n|Sobregiro| {Value2}."
+    \ one='z' other='ces'}.\nGana {Mana} al comienzo del siguiente turno."
 Opt:
   Name: En Hielo Frágil
   Description: "Revela la carta superior de la pila de robo, será enviado a la parte\
@@ -2227,11 +2224,34 @@ Lunatic:
 FruitShake:
   Name: Hielo Triturado de Frutas
 DayaojingFriend:
-  Description: '{FriendP} Inflige {Daño} de daño a un enemigo aleatorio.'
-  ExtraDescription1: '{FriendA} obtiene {Block} de |Bloqueo|.'
-  UpgradedExtraDescription1: '{FriendA} obtiene {Block} de |Bloqueo| y {Escudo} de
-    |Barrera|.'
-  ExtraDescription2: '{FriendU} agrega {Value1} |Flores de Verano| a la mano.'
-  UpgradedExtraDescription2: '{FriendU} agrega {Value1} |Flores de Verano+| a la mano.'
+  Description: '{FriendP} Inflige {Damage} de daño a un enemigo aleatorio.'
+  ExtraDescription1: '{FriendA} Obtiene {Block} de |Bloqueo|.'
+  UpgradedExtraDescription1: '{FriendA} Obtén {Block} de |Bloqueo| y {Shield} de |Barrera|.'
+  ExtraDescription2: '{FriendU} Agrega {Value1} |Flores de Verano| a la mano.'
+  UpgradedExtraDescription2: '{FriendU} Agrega {Value1} |Flores de Verano+| a la mano.'
 ChooseFriend:
   Name: Encuentro en el Lago Brumoso
+InstantFreeze:
+  Description: "Aplica |Frío| a todos los enemigos.\nTermina el turno de {PlayerName}.\
+    \ Luego, toma un turno extra.\n|Límite de Tiempo| {Mana}."
+  ExtraDescription1: "Aplica |Frío| a todos los enemigos.\nTermina el turno de {PlayerName}.\
+    \ Luego, toma un turno extra.\n|d:Límite de Tiempo {Mana}.|"
+LilyFriend:
+  Description: "{FriendS} Inflige {Damage} de daño a un enemigo aleatorio {Value1}\
+    \ veces.\n{FriendP} Gana {TurnMana}."
+  ExtraDescription2: '{FriendU} Gana {Heal} de vida.'
+  ExtraDescription1: '{FriendA} Gana {Value2} maná aleatorio.'
+MaidFriend:
+  Description: '{FriendP} Inflige {Damage} de daño de ataque al enemigo con menos
+    vida.'
+LarvaFriend:
+  Description: '{FriendP} Aplica {Valor1} de |Veneno| a un enemigo aleatorio.'
+  ExtraDescription1: '{FriendA} |Mejora| todas las cartas en la mano.'
+  ExtraDescription2: '{FriendU} Aplica {Value2} de |Veneno| a cada enemigo y activa
+    el efecto del |Veneno| una vez.'
+LunaFriend:
+  Description: '{FriendP} Obtén {Block} de |Bloqueo|.'
+  ExtraDescription1: '{FriendA} Inflige {Damage} de daño de ataque a un enemigo aleatorio
+    {Value1} veces.'
+  ExtraDescription2: "{FriendU} Gana |Perfección| por {Value2} turno{Value2:plural\
+    \ one='' other='s'}."
