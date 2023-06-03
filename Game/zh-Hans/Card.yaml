@@ -1389,13 +1389,6 @@ BlueRose:
     造成 {Damage} 点伤害。
     如果目标处于|寒冷|，获得 {Shield} 点|护盾|。
 
-SummerIce:
-  Name: 夏日冰沙
-  Description: |-
-    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
-    下回合开始时获得{Mana}。
-  FlavorText: 吃多冰沙导致脑袋酸痛的感觉，让你也感受一下！
-
 CirnoInForest:
   Name: 绝妙的伪装
   Description: |-
@@ -1410,13 +1403,19 @@ FruitShake:
     如果本回合召唤过一名|同伴|，对所有敌人造成 {Damage} 点伤害。
   FlavorText: 热带水果口味，冰爽好滋味！
 
-LilyFriend:
-  Name: 春日降临莉莉白
+SummerIce:
+  Name: 夏日冰沙
   Description: |-
-    {FriendS}随机对敌人造成 {Damage} 点攻击伤害 {Value1} 次。
-    {FriendP}获得{TurnMana}。
-  ExtraDescription1: '{FriendA}获得 {Value2} 点随机的法力。'
-  ExtraDescription2: '{FriendU}恢复 {Heal} 点生命。'
+    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
+    下回合开始时获得{Mana}。
+  FlavorText: 吃多冰沙导致脑袋酸痛的感觉，让你也感受一下！
+
+CirnoFestival:
+  Name: 混入宴会
+  Description: |-
+    获得 {Value1} 层|闪避|。
+    手中随机的 {Value2} 张|同伴|牌，减少一点随机费用。
+  FlavorText: 在对月球人的特别作战庆功宴上混入了奇怪的家伙。
 
 CirnoConsider:
   Name: 深思熟虑
@@ -1447,12 +1446,12 @@ ColdBreath:
 FrostGarden:
   Name: 冷雾花园
   Description: |-
-    为所有敌人恢复 {Value1} 点生命。
     对所有敌人施加|寒冷|。
+    如果你手中有已召唤的|同伴|牌，{SelfName}费用为{Mana}。
   UpgradedDescription: |-
-    为所有敌人恢复 {Value1} 点生命。
     对所有敌人施加|寒冷|。
     将 {Value2} 张|冰晶|加入手中。
+    如果你手中有已召唤的|同伴|牌，{SelfName}费用为{Mana}。
   FlavorText: 免费的空调。
 
 CirnoDraw:
@@ -1490,6 +1489,12 @@ ColdSnap:
     抽 {Value1} 张牌。
     将一张手牌置于抽牌堆底。
 
+LeidiFriend:
+  Name: 凛冬的化身蕾蒂
+  Description: '{FriendP}对随机一名敌人施加|寒冷|。'
+  ExtraDescription2: '{FriendU}对所有敌人造成 {Damage} 点伤害，施加|寒冷|。'
+  FlavorText: 冬日将至。冬日已来。再战冬日。重返冬日。
+
 IceBarrier:
   Name: 寒冰护体
   Description: 获得 {Value1} 层|寒冰甲|。
@@ -1503,10 +1508,9 @@ IceGun:
 
 Blizzard:
   Name: 暴风雪
-  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  UpgradedDescription: |-
+  Description: |-
     对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-    下回合开始时再次生效。
+    如果手中有已召唤的|凛冬的化身蕾蒂|，下回合开始时再次生效。
 
 FrozenThrone:
   Name: 冰封王座
@@ -1523,34 +1527,7 @@ Tether:
   Name: 羁绊
   Description: |-
     获得 {Block} 点|格挡|。
-    手中的每张|同伴|牌获得 {Value1} 点|支援度|。
-  UpgradedDescription: |-
-    获得 {Block} 点|格挡|。
-    手中的每张|同伴|牌获得 {Value1} 点|支援度|，额外提供 {Value2} 点|护盾|（总计 {Special} 点）。
-
-BestFriend:
-  Name: 最好的朋友
-  Description: 选择手中至多 {Value1} 张|同伴|牌，其|支援度|达到最高。
-
-FairyWrath:
-  Name: 自然之怒
-  Description: |-
-    对两个随机敌人造成 {Damage} 点伤害。
-    |放逐|区里每有一张|妖精支援|，伤害提高 {Value1} 点。
-    |透支| {Value2} 。
-
-FairyTree:
-  Name: 妖精之家
-  Description: |-
-    当一张技能牌加入手中时，获得{Mana}并抽 {Value1} 张牌。
-    每回合可以触发一次。
-    （抽取技能牌时不生效。）
-
-LarvaFriend:
-  Name: 夏夜之神拉尔瓦
-  Description: '{FriendP}对随机敌人施加 {Value1} 层|中毒|。'
-  ExtraDescription1: '{FriendA}|升级|所有的手牌。'
-  ExtraDescription2: '{FriendU}对所有敌人施加 {Value2} 层|中毒|，触发一次|中毒|伤害。'
+    手中的所有|同伴|牌获得 {Value1} 点|支援度|。
 
 CallFriends:
   Name: 呼朋唤友
@@ -1558,6 +1535,39 @@ CallFriends:
   UpgradedDescription: |-
     从 {Value1} 张随机的|同伴|牌中选择一张，立刻召唤并加入手中。
     额外添加一张|e:三月精|作为选项。
+
+FairyWrath:
+  Name: 自然之怒
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    如果手中有已召唤的|调查助手大妖精|，将 {Value1} 张|盛夏之花|加入手中。
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害。
+    如果手中有已召唤的|调查助手大妖精|，将 {Value1} 张|盛夏之花+|加入手中。
+
+LarvaFriend:
+  Name: 夏夜之神拉尔瓦
+  Description: '{FriendP}对随机敌人施加 {Value1} 层|中毒|。'
+  ExtraDescription1: '{FriendA}|升级|所有的手牌。'
+  ExtraDescription2: '{FriendU}对所有敌人施加 {Value2} 层|中毒|，触发一次|中毒|伤害。'
+
+LilyFriend:
+  Name: 春日降临莉莉白
+  Description: |-
+    {FriendS}随机对敌人造成 {Damage} 点攻击伤害 {Value1} 次。
+    {FriendP}获得{TurnMana}。
+  ExtraDescription1: '{FriendA}获得 {Value2} 点随机的法力。'
+  ExtraDescription2: '{FriendU}恢复 {Heal} 点生命。'
+
+FairyTeam:
+  Name: 妖精大战争
+  Description: |-
+    选择手中任意张|同伴|牌，|放逐|它们，获得它们的基础费用。
+    每选择了一张牌，对随机敌人造成 {Damage} 点伤害。
+
+FairyTree:
+  Name: 妖精之家
+  Description: 召唤一名|同伴|时，获得 {Value1} 点|格挡|。
 
 MoreFriends:
   Name: 社交达人
@@ -1575,18 +1585,11 @@ FairyOnIce:
     抽 {Value1} 张牌。
     每有一个处于|寒冷|的敌人，{PlayerName}获得 {Value2} 层|闪避|。 
 
-CirnoFestival:
-  Name: 混入宴会
-  Description: '|抉择|：将 {Value1} 张|水花|加入手中；或将 {Value2} 张随机的普通|妖精支援|加入手中。'
-  FlavorText: 在对月球人的特别作战庆功宴上混入了奇怪的家伙。
-
-CirnoFestivalBlue:
-  Name: 表演才艺
-  Description: 将 {Value1} 张|水花|加入手中。
-
-CirnoFestivalGreen:
-  Name: 自来熟
-  Description: 将 {Value1} 张随机的普通|妖精支援|加入手中。
+SummerParty:
+  Name: 冰爽派对
+  Description: |-
+    获得 {Value1} 层|寒冰甲|。
+    手中的所有|同伴|牌获得 {Value1} 点|支援度|。
 
 DiamondBlizzard:
   Name: 钻石方柱
@@ -1647,15 +1650,19 @@ InstantFreeze:
     结束{PlayerName}的回合，进行一个额外的回合。
     |d:时间有限{Mana}。|
 
+BestFriend:
+  Name: 最好的朋友
+  Description: 选择手中至多 {Value1} 张|同伴|牌，其|支援度|达到最高。
+
 CirnoEcho:
   Name: 自然的馈赠
   Description: 从弃牌堆中选择 {Value1} 张牌加入手中，赋予|回响|。
 
-FairyTeam:
-  Name: 妖精大战争
+LarvaDefense:
+  Name: 振翅飞行
   Description: |-
-    选择手中任意张|同伴|牌，|放逐|它们，获得它们的基础费用。
-    每选择了一张牌，对随机敌人造成 {Damage} 点伤害。
+    获得 {Block} 点|格挡|。
+    如果手中有已召唤的|夏夜之神拉尔瓦|，对所有敌人施加 {Value1} 回合|虚弱|和|易伤|。
 
 FairyAllOut:
   Name: 全体出动
@@ -1670,18 +1677,18 @@ MinengZhuru:
 HualiIce:
   Name: 华丽夏日冰
   Description: |
-    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    本回合累计打出 {Value1} 张卡牌后才能打出。
     （剩余 {Countdown} 张）
     对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
   UpgradedDescription: |-
-    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    本回合累计打出 {Value1} 张卡牌后才能打出。
     （剩余 {Countdown} 张）
     对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
   NonbattleDescription: |
-    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    本回合累计打出 {Value1} 张卡牌后才能打出。
     对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
   UpgradedNonbattleDescription: |-
-    本回合累计打出或|放逐| {Value1} 张卡牌后才能打出。
+    本回合累计打出 {Value1} 张卡牌后才能打出。
     对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
 
 GatherFairy:
@@ -1704,16 +1711,6 @@ ForeverCool:
     使用|同伴|的|a:主动技能|或|u:终结技|后，对随机敌人施加|寒冷|。
     任意敌人受到|寒冷|时，手中随机的|同伴|牌获得一点|支援度|。
     对所有敌人施加|寒冷|。
-
-SummerParty:
-  Name: 冰爽派对
-  Description: |-
-    将一张随机的普通|妖精支援|加入手中。
-    |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
-    |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
-  UpgradedDescription: |-
-    |每支付|<sprite="ManaSprite" name="U">：获得 {Value1} 层|寒冰甲|。
-    |每支付|{Mana}：将 {Value2} 张随机的普通|妖精支援|加入手中。
 
 ChooseFriend:
   Name: 相约雾之湖
@@ -1969,11 +1966,6 @@ DoremyDuplicate:
     选择一张手牌，将 {Value1} 张的它的复制加入手中。
     不能以|复制品|为目标。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
-
-LeidiBlizzard:
-  Name: 延长的冬日
-  Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  FlavorText: 冬日将至。冬日已来。再战冬日。重返冬日。
 
 GuijiZaoxingYuan:
   Name: 圆形造形术
@@ -3284,11 +3276,17 @@ FanzhuanChongdong:
   Description: '|回合结束时|：如果本回合没有恢复过生命，便失去 {Value1} 点生命。'
   FlavorText: 成为吸血鬼眷属的代价。
 
-FakeHuiye:
+FakeCard:
   Name: 祖先托梦（伪）
   Description: |-
     |古明地恋|还在家里睡觉。
     敬请期待游戏更新。
+
+HistoryCard:
+  Name: 历史卡牌
+  Description: |-
+    这张卡牌在当前版本已经被移除。
+    卡牌 Id: {CardId}
 
 FlanBlack:
   Name: 魔化
