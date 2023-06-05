@@ -687,18 +687,21 @@ YachieDefend:
   Name: 亀甲地獄
 JunkoNightmare:
   Name: 震え凍える悪夢
-  UpgradedDescription: "最大{Value 2}の手札を選択して純粋しません。\n敵全体に{Damage}のダメージを{Value1}回与える。\n\
+  UpgradedDescription: "最大{Value 2}枚の手札を選択して純粋しません。\n敵全体に{Damage}のダメージを{Value1}回与える。\n\
     すべての手札を廃棄して，等量の|純粋|を手札に加える 。"
   Description: "敵全体に {Damage} のダメージを {Value1} 回与える 。\nすべての手札を廃棄して，等量の|純粋|を手札に加える。"
 PatchouliLibrary:
   Name: 動かない大図書館
-  Description: "{Mana}を得る。\n{Value 1}のランダムなレアカードの中から1枚を選んで手に入れて、それは｜廃棄｜、｜虚無｜を持っています。"
+  Description: "{Mana}を得る。\n{Value 1}のランダムなレアカードの中から1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
+  UpgradedDescription: "{Mana}を得る。\n{Value 1}のランダムなレアカードと{Value2}の アンコモンカードの中から1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
 Riguang:
   Name: 屈折光
   Description: '|ターン終了時|：{Value1}ダメージを受ける。'
 BailianFire:
   Name: 法界の火
   Description: '{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。'
+  UpgradedDescription: "中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。 \t{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。\n\
+    即座に効果を発動します。"
 Chunguang:
   Name: 純粋なる輝き
   Description: このカードを引いた時、|純化|{Value1}。
@@ -997,6 +1000,7 @@ HekaHellRain:
   Name: 地獄の雨
 FourFlan:
   Name: フォーオブアカインド
+  ExtraDescription1: '{Damage}のダメージを{Value1}回与える、'
 XingMoney:
   Name: レイディアントトレジャーガン
   Description: "{Damage}のダメージを与える。\n|退治|：{Value1}<sprite=\"Point\" name=\"Gold\">を得る。"
@@ -1008,6 +1012,7 @@ SakuraBlade:
   Description: "{Damage}のダメージを{Value1}回与える。\n|ロックオン|{Value1}を与える。\n|グレイズ|{Value1}を得る。"
 RuowujiCard:
   Name: 逆鱗の荒波
+  Description: 敵全体に{Damage}のダメージを与える、|溺水|{Value1}を与える。
 LifeGame:
   Name: 生命遊戯-ライフゲーム-
   Description: "手札と捨て札にある全てのカードを山札に加える。\n山札をシャッフルした後、カードを{Value1}枚引く"
@@ -1015,7 +1020,7 @@ YinyangQueen:
   Name: 陰陽玉の女王
 SkyWater:
   Name: お天水の奇跡
-  Description: "{Shield}バリアを得る。\nドローフェイズで追加で{Value 1}枚を引く。"
+  Description: "{Shield}バリアを得る。\nドローフェイズで追加で{Value 1}枚のカードを引く。"
 MeilingRain:
   Name: 極彩沛雨
 LimaoSchool:
@@ -1034,6 +1039,7 @@ SakuyaLock:
   Name: タイムロックダウン
 LimaoAttack:
   Name: 満月のポンポコリン
+  Description: "敵全体に{Damage}のダメージを与える、{GainMana}を得る。\n|成長|：追加の {Mana} を得る。"
 JingyeGraze:
   Name: 狂いの落葉
   Description: "|グレイズ|を {Value1} 層得る。\nこのカードで得た|グレイズ|の層数の {Value2} 倍の|臨時火力|を得る。"
@@ -1145,7 +1151,7 @@ SplitPotion:
   Description: "|不安定なポーション|は追加で一人多くの敵にダメージを与えるようになる。\n|不安定なポーション|を {Value1} 枚山札に加える。"
 RedMogu:
   Name: テングタケ
-  Description: '{Value1} 層の|中毒|を付与する。'
+  Description: '{Value1} 層の|毒|を付与する。'
 JungleMaster:
   Name: 森の住民
   Description: "{Block}|ブロック|を得る。\n|戦闘開始時|： {Value1} バリアを得る"
@@ -1221,3 +1227,35 @@ HuashanDefense:
   Description: "{Block}ブロックを得る。\nこのターン、帯電{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
+XiangziEcho:
+  Description: 手札からカードを{Value1}枚まで選び、反復を与える。
+RinDraw:
+  Description: 状態異常を引くたび、カードを{Value1}引く。
+XiaosanReflect:
+  Name: 反撃の弾幕
+  Description: "{Shield}バリアを得る。\n{Value1}反射を得る。"
+CloseEyeShoot:
+  Description: ランダムな敵に{Damage}のダメージを{Value1}回与える。
+HehuanAttack:
+  Description: "{Damage}のダメージを{Value1}回与える。\nカードを{Value1}枚引く。"
+Shengyan:
+  Description: "{Damage}のダメージを与える。\n|退治|：{Value1}の最大ライフを得る。"
+  Name: 祝宴
+LigeluCard:
+  Name: 蛍光の夜
+  Description: "{Block}ブロックを得る。\n<sprite=\"Point\" name=\"Power\">{Value1}を得る。"
+MedicineGarden:
+  Name: スズランガーデン
+BlackPoison:
+  Name: 暗闇演舞
+ZoufangSnake:
+  Name: 土着神崇拝
+FlanPlayAlone:
+  Description: "|臨時火力|{Value1}を得る。\nすべての攻撃カードを捨てる。"
+  Name: ひとり遊び
+YijiuAttack:
+  Description: "{Damage}ダメージを与える。\n{SelfName}で敵を撃破した場合、{SelfName}を|廃棄|した後{PlayerName}のターンを終了して{Value1}天衣無縫を得る。"
+PaluxiCurse:
+  Name: 丑の刻参り
+ModuoluoFire:
+  Name: 穢那の火
