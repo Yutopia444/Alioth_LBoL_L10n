@@ -187,8 +187,8 @@ HuanxiangBlock:
   Name: Bord de la Fantaisie
   Description: À chaque fois qu'une carte est |Exilée|, gagnez {Value1} |Bouclier{Value1:plural
     one='' other='s'}|.
-  FlavorText: Le signal de la mini-carte dans le jeu vidéo a été inspiré par l'enchantement
-    Hakurei (pas du tout)
+  FlavorText: Depuis que les romans de voyage dans le temps sont devenus populaires
+    à l'extérieur, le travail de Reimu est devenu encore plus chargé.
 QinggeManwu:
   UpgradedDescription: "Piochez {Value1} carte{Value1:plural one='' other='s'} et\
     \ |Améliorez|-{Value1:plural one='la' other='les'} jusqu'à la fin du combat.\n\
@@ -528,7 +528,7 @@ Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
   Description: "|Arrivée en main| : Gagnez {Mana}, infligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'} à un ennemi au hasard et |Exilez| {SelfName}."
+    \ one='' other='s'} à un ennemi aléatoire et |Exilez| {SelfName}."
 SatelliteIllusion:
   Name: Illusion Satellite
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAjoutez\
@@ -821,9 +821,9 @@ SakuyaSleep:
   Name: Courte Pause
   Description: "Ajoutez un |Arc-en-ciel| à la main.\n{PlayerName} termine son tour."
 Knife:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quand {SelfName}\
-    \ quitte la main sans être joué| : Infligez {DropDamage} dégâts à l'ennemi avec\
-    \ le moins de points de vie."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quitte\
+    \ la main sans être joué| : Infligez {DropDamage} dégâts à l'ennemi avec le moins\
+    \ de points de vie."
   FlavorText: Impossible de passer la sécurité.
   Name: Couteau de Lancer
 CoolMaid:
@@ -2377,9 +2377,9 @@ BlueRose:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
     \ a |Froid|, gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 FrostGarden:
-  UpgradedDescription: "Appliquez |Froid| à tous les ennemis.\nAjoutez {Value2} |Crista{Value2:plural\
-    \ one='l' other='ux'} de glace| à votre main.\nSi vous avez une carte |alliée|\
-    \ invoquée dans votre main, {SelfName} coûte {Mana}."
+  UpgradedDescription: "Appliquez |Froid| à tous les ennemis.\nReprend effet au début\
+    \ du tour suivant.\nSi vous avez une carte |alliée| invoquée dans votre main,\
+    \ {SelfName} coûte {Mana}."
   Name: Jardin de Brume
   Description: "Appliquez |Froid| à tous les ennemis.\nSi vous avez une carte |alliée|\
     \ invoquée dans votre main, {SelfName} coûte {Mana}."
@@ -2391,12 +2391,12 @@ IceGun:
   Name: Canon à Glaçons
   FlavorText: La vraie technique de la "lance" de glace.
 CallFriends:
-  Description: Choisissez une parmi {Value1} cartes |alliées| aléatoires, invoquez-la
-    immédiatement et ajoutez-la à votre main.
+  Description: Choisissez une parmi {Value1} cartes |alliées| invoquées aléatoires
+    et ajoutez-la à votre main.
   Name: Appel des Amis
-  UpgradedDescription: "Choisissez une parmi {Value1} cartes |alliées| aléatoires,\
-    \ invoquez-la immédiatement et ajoutez-la à votre main.\nAjoutez une des trois\
-    \ |e:Fées de Lumière| en option supplémentaire."
+  UpgradedDescription: "Choisissez une parmi {Value1} cartes |alliées| invoquées aléatoires\
+    \ et ajoutez-la à votre main.\nAjoutez une des trois |e:Fées de Lumière| en option\
+    \ supplémentaire."
 Blizzard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez\
     \ le |Froid| à tous les ennemis.\nSi vous avez invoqué |Letty, Incarnation de\
@@ -2447,7 +2447,11 @@ IceMatrix:
     \ tous les ennemis."
 YouxiangMoon:
   Name: Fleurs et Oiseaux
-  Description: '{PlayerName} ne sera plus à |Découvert| pendant cette bataille.'
+  Description: 'Lorsque {PlayerName} débute son tour, ajoutez une |Fleur d''Été| avec
+    |Éthéré| à la main.'
+  UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez une |Fleur d'Été|\
+    \ avec |Éthéré| à votre main.\nAjoutez {Value1} |Fleur{Value1:plural one='' other='s'}\
+    \ d'Été| à votre main."
 ReimuHeavyAttack:
   FlavorText: '"Tu es déjà mort !"'
   Name: Poing de Hakurei
@@ -2580,9 +2584,9 @@ FairyTrick:
     \ les trois |e:Fées de Lumière|, ajoutez-en une au hasard à la main et mélangez\
     \ le reste dans la pioche."
   UpgradedDescription: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\n\
-    Invoquez quatre |e:Fées de Lumière|, ajoutez-en une au hasard à la main et mélangez\
-    \ le reste dans la pioche."
-  FlavorText: Bien sûr, il y en a quatre en mars !
+    Invoquez les quatre |e:Fées de Lumière|, ajoutez-en une au hasard à la main et\
+    \ mélangez le reste dans la pioche."
+  FlavorText: Bien sûr, il y en a quatre dans le groupe de trois !
 SummerIce:
   Name: Smoothie d'Été
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
@@ -2708,9 +2712,9 @@ OtherSkill:
     \ fournit <sprite=\"ManaSprite\" name=\"C\"> en plus."
   Name: Imposteur
 YonglinUpgrade:
-  Description: "Lorsque {PlayerName} débute son tour, améliorez {Value1} carte{Value1:plural\
-    \ one=' aléatoire' other='s aléatoires'} en main.\nGagnez {Value2} point{Value2:plural\
-    \ one='' other='s'} de vie."
+  Description: "Gagnez {Value2} point{Value2:plural one='' other='s'} de vie.\nLorsque\
+    \ {PlayerName} débute son tour, améliorez {Value1} carte{Value1:plural one=' aléatoire'\
+    \ other='s aléatoires'} en main.\n"
   Name: Encens de Lapin Lunaire
 MoonTipsBag:
   Description: "Choisissez une parmi {Value1} |Astuce{Value1:plural one='' other='s'}\
@@ -2847,3 +2851,8 @@ HistoryCard:
   Description: "Cette carte a été supprimée dans la version actuelle.\nCarte ID :\
     \ {CardId}"
   Name: Carte Archivée
+YouxiangAttack:
+  Name: Fleurs de Gensokyo
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
+    \ {Mana} supplémentaire dépensé| : dégâts augmentés de {Value1}.\nLorsque le coût\
+    \ total du paiement n'est pas inférieur à {Value2}, l'attaque gagne |Précis|."
