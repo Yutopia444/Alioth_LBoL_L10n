@@ -236,7 +236,7 @@ ReimuShrine:
 HuanxiangBlock:
   Name: 幻想边境
   Description: 每当一张牌被|放逐|时，{PlayerName}获得 {Value1} 点|格挡|。
-  FlavorText: 电子游戏中的小地图提示信号是被受到博丽结界启发而设计出来的(并不是)
+  FlavorText: 自从穿越小说在外界流行之后，灵梦的工作就变得更繁忙了。
 
 YakongDianxue:
   Name: 亚空点穴
@@ -1350,13 +1350,6 @@ Ice:
   Name: 冰晶
   Description: 施加|寒冷|。
 
-SummerFlower:
-  Name: 盛夏之花
-  Description: |-
-    造成 {Damage} 点伤害。
-    本场战斗中，所有的{SelfName}伤害提高 {Value1} 点。
-  FlavorText: 这个石头能在你脑袋上打出一个很漂亮的形状。
-
 IceLance:
   Name: 冰枪术
   Description: |-
@@ -1450,7 +1443,7 @@ FrostGarden:
     如果你手中有已召唤的|同伴|牌，{SelfName}费用为{Mana}。
   UpgradedDescription: |-
     对所有敌人施加|寒冷|。
-    将 {Value2} 张|冰晶|加入手中。
+    下回合开始时再次生效。
     如果你手中有已召唤的|同伴|牌，{SelfName}费用为{Mana}。
   FlavorText: 免费的空调。
 
@@ -1459,7 +1452,7 @@ CirnoDraw:
   Description: 抽 {Value1} 张牌。
   UpgradedDescription: |-
     抽 {Value1} 张牌。
-    下一回合开始时，抽 {Value2} 张牌。
+    下回合开始时，抽 {Value2} 张牌。
 
 MaidFriend:
   Name: 洋馆的女仆小霞
@@ -1531,9 +1524,9 @@ Tether:
 
 CallFriends:
   Name: 呼朋唤友
-  Description: 从 {Value1} 张随机的|同伴|牌中选择一张，立刻召唤并加入手中。
+  Description: 从 {Value1} 张随机的已召唤|同伴|牌中选择一张加入手中。
   UpgradedDescription: |-
-    从 {Value1} 张随机的|同伴|牌中选择一张，立刻召唤并加入手中。
+    从 {Value1} 张随机的已召唤|同伴|牌中选择一张加入手中。
     额外添加一张|e:三月精|作为选项。
 
 FairyWrath:
@@ -1589,7 +1582,7 @@ SummerParty:
   Name: 冰爽派对
   Description: |-
     获得 {Value1} 层|寒冰甲|。
-    手中的所有|同伴|牌获得 {Value1} 点|支援度|。
+    手中的所有|同伴|牌获得 {Value2} 点|支援度|。
 
 DiamondBlizzard:
   Name: 钻石方柱
@@ -1707,10 +1700,6 @@ ForeverCool:
   Description: |-
     使用|同伴|的|a:主动技能|或|u:终结技|后，对随机敌人施加|寒冷|。
     任意敌人受到|寒冷|时，手中随机的|同伴|牌获得一点|支援度|。
-  UpgradedDescription: |-
-    使用|同伴|的|a:主动技能|或|u:终结技|后，对随机敌人施加|寒冷|。
-    任意敌人受到|寒冷|时，手中随机的|同伴|牌获得一点|支援度|。
-    对所有敌人施加|寒冷|。
 
 ChooseFriend:
   Name: 相约雾之湖
@@ -2233,6 +2222,13 @@ MeihongPower:
     战斗结束时，如{PlayerName}的生命值低于一半，恢复 {Value2} 点生命。
   FlavorText: 被诅咒的永生者，此世永为苦行。
 
+SummerFlower:
+  Name: 盛夏之花
+  Description: |-
+    造成 {Damage} 点伤害。
+    本场战斗中，所有的{SelfName}伤害提高 {Value1} 点。
+  FlavorText: 这个石头能在你脑袋上打出一个很漂亮的形状。
+
 RangziSeed:
   Name: 春种秋收
   Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
@@ -2269,9 +2265,19 @@ DanmuJade:
     将 {Value1} 张|幻虹|加入手中。
     |每支付|{Mana}：获得 {Value2} 点|火力|和|灵力|。
 
+YouxiangAttack:
+  Name: 幻想乡的花开
+  Description: |-
+    造成 {Damage} 点伤害。
+    |每额外支付|{Mana}：伤害提高 {Value1} 点。
+    总计支付费用不低于 {Value2} 点时，攻击具有|精准|。
+
 YouxiangMoon:
   Name: 花鸟风月
-  Description: 本场战斗中，{PlayerName}不再会|透支|。
+  Description: '{PlayerName}的回合开始时，将一张具有|虚无|的|盛夏之花|加入手中。'
+  UpgradedDescription: |-
+    {PlayerName}的回合开始时，将一张具有|虚无|的|盛夏之花|加入手中。
+    立刻获得 {Value1} 张。
 
 LimaoSchool:
   Name: 狸猫的变身学校
@@ -2605,9 +2611,9 @@ XiangziEcho:
 
 YonglinUpgrade:
   Name: 仙香玉兔
-  Description: |-
-    {PlayerName}的回合开始时，升级 {Value1} 张随机的手牌。
+  Description: |
     恢复 {Value2} 点生命。
+    {PlayerName}的回合开始时，升级 {Value1} 张随机的手牌。
 
 YinyangQueen:
   Name: 能工巧匠魅须丸
