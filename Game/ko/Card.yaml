@@ -222,7 +222,7 @@ TwoBalls:
 HuanxiangBlock:
   Name: 환상의 테두리
   Description: 카드가 |소멸|될 때마다 |방어|를 {Value1} 얻습니다.
-  FlavorText: 게임에서의 미니맵은 사실 하쿠레이 대결계를 본따 만들어졌다고 합니다(아님 말고)
+  FlavorText: 크로스오버 소설이 유행하다 보니 레이무도 덩달아 바빠졌습니다.
 FreeFly:
   Name: 자유 비행
   Description: 내 턴 시작 시, {Mana}를 얻습니다.
@@ -558,10 +558,10 @@ IceBlock:
     \ 내 턴을 끝냅니다."
   Name: 얼음 장벽
 CallFriends:
-  Description: 무작위 |동료| 카드 {Value1}장 중 한 장을 고른 뒤 손으로 소환해 가져옵니다.
+  Description: 무작위 |동료| 카드 {Value1}장 중 한 장을 골라 가져옵니다.
   Name: 친구들 부르기
-  UpgradedDescription: "무작위 |동료| 카드 {Value1}장 중 한 장을 고른 뒤 손으로 소환해 가져옵니다.\n추가로 |e:삼월정|\
-    \ 중 하나를 선택해 가져옵니다."
+  UpgradedDescription: "무작위 |동료| 카드 {Value1}장 중 한 장을 골라 가져옵니다.\n추가로 |e:삼월정| 중 하나를\
+    \ 선택해 가져옵니다."
 CirnoInForest:
   Description: "|방어|를 {Block} 얻습니다.\n|가불| {Value1}."
   Name: 감쪽같은 위장
@@ -602,7 +602,7 @@ FreezeBullet:
   Description: "|방어|를 {Block} 얻습니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
 FrostGarden:
   FlavorText: 에어컨은 필요 없어.
-  UpgradedDescription: "모든 적에게 |빙결|을 가합니다.\n|얼음 조각|을 {Value2}장 얻습니다.\n손에 소환한 |동료|\
+  UpgradedDescription: "모든 적에게 |빙결|을 가합니다.\n다음 턴 시작 시 효과를 한 번 더 발동합니다.\n손에 소환한 |동료|\
     \ 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가 됩니다."
   Name: 얼어붙은 화원
   Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가\
@@ -671,6 +671,7 @@ BlackResidue:
 WhiteWorld:
   Description: "내 턴 시작 시 모든 적에게 |빙결|을 가합니다."
   Name: 순백의 세계
+  UpgradedDescription: "내 턴 시작 시 모든 적에게 |빙결|을 가합니다.\n모든 적에게 |빙결|을 가합니다."
 GatherFairy:
   Description: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n카드를 {Value1}장 뽑습니다."
   Name: 요정 소집
@@ -707,6 +708,8 @@ FairyTrick:
   Name: 요정의 장난
   Description: "체력을 {Value1} 잃습니다.\n|e:삼월정|을 세 장 소환하고, 무작위 한 장을 손으로 가져오고 나머지는 뽑을 카드\
     \ 더미에 섞어넣습니다."
+  UpgradedDescription: "체력을 {Value1} 잃습니다.\n|e:삼월정|을 네 장 소환하고, 무작위 한 장을 손으로 가져오고 나머지는\
+    \ 뽑을 카드 더미에 섞어넣습니다."
 LoveLetter:
   Description: <color=#eab8bf>사랑에 빠진 소녀</color>에게 주면 기뻐할 겁니다.
   Name: 러브레터
@@ -804,7 +807,7 @@ BladePower:
   Name: 은빛 질주
 ReimuHeavyAttack:
   Name: 하쿠레이 일격
-  Description: "피해를 {Damage} 줍니다.\n|화력|이 있을 시 {SelfName}의 효과가 {Value1}배 상승합니다."
+  Description: "피해를 {Damage} 줍니다.\n{SelfName}에 한해 |화력|의 효과가 {Value1}배로 적용됩니다."
   FlavorText: '"너는 이미 죽어있다."'
 ReadyForBurst:
   Name: 발진 준비
@@ -1326,7 +1329,7 @@ BestFriend:
   Name: 최고의 친구
 SummerParty:
   Name: 아이스 파티
-  Description: "|얼음 갑옷|을 {Value1} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value1} 얻습니다."
+  Description: "|얼음 갑옷|을 {Value1} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value2} 얻습니다."
 RabbitFoot:
   Description: 전투 종료 시 {SelfName}이 |소멸|되지 않았다면 <sprite="Point" name="Gold">를 {Value1}
     얻습니다.
@@ -1676,7 +1679,9 @@ MeilingBlock:
   Description: "|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.\n{SelfName}은 |화력|에 영향을 받습니다."
 YouxiangMoon:
   Name: 화조풍월
-  Description: 이번 전투 중 |가불|의 효과를 받지 않습니다.
+  Description: 내 턴 시작 시 |휘발성|이 있는 |한여름의 꽃|을 한 장 얻습니다.
+  UpgradedDescription: "내 턴 시작 시 |휘발성|이 있는 |한여름의 꽃|을 한 장 얻습니다.\n즉시 |한여름의 꽃|을 {Value1}장\
+    \ 얻습니다."
 MorphBird:
   Description: '|그레이즈|를 {Value1} 얻습니다.'
   Name: 연우화탄막변화
@@ -1877,7 +1882,7 @@ OtherSkill:
     \ 뽑을 때마다 {SelfName}은 추가로 <sprite=\"ManaSprite\" name=\"C\">를 제공합니다."
 YonglinUpgrade:
   Name: 선향옥토
-  Description: "내 턴 시작 시 손의 무작위 카드 {Value1}장을 강화합니다.\n체력을 {Value2} 회복합니다."
+  Description: "체력을 {Value2} 회복합니다.\n내 턴 시작 시 손의 무작위 카드 {Value1}장을 강화합니다.\n"
 MoonTipsDefense:
   Name: 결계 강화
   Description: '|보호막|을 {Value1} 얻습니다.'
@@ -1960,3 +1965,7 @@ FakeCard:
 HistoryCard:
   Description: "이 카드는 현재 버전에서 삭제되었습니다.\n카드 ID: {CardId}"
   Name: 이전의 카드
+YouxiangAttack:
+  Name: 환상향의 개화
+  Description: "피해를 {Damage} 줍니다.\n|지불한| {Mana}|마다|: 피해량이 {Value1} 늘어납니다.\n총 코스트가\
+    \ {Value2} 이상일 때 |명중|이 붙습니다."
