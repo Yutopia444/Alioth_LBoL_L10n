@@ -175,7 +175,7 @@ HuanxiangTouying:
 OutInGap:
   Description: カード入手制限を無視し、ランダムな{Value1}枚のカードから1枚を選んで、{臨時コスト}を{Mana}にして|廃棄|と|虚無|を与える。
   Name: 境界遊行
-  FlavorText: 八雲紫は境界の出入りを境界の出入りで見張る事を規則で無しにした。
+  FlavorText: 八雲紫は境界の出入りを境界の出入りで見張る事を無しとした。
 BoliDajiejie:
   Name: 博麗大結界
   Description: この戦闘中、{PlayerName}の|ブロック|を得る効果はすべて|バリア|を得る効果になる。
@@ -333,7 +333,7 @@ ShinningPotion:
 AccuracyLaser:
   Name: ダイレクティドレイザー
   Description: "{Damage}のダメージを{Value1}回与える。\nこのカードが|保留|されるたびに、戦闘終了までコストを{Mana}減らす。"
-  FlavorText: 「今回もバラバラな方向に撃つと思ったか？　残念！！」
+  FlavorText: 「バラバラな方向に撃つと思ったか？　残念！！」
 CollectionDefense:
   NonbattleDescription: 山札にあるカードの数だけ|ブロック|を得る。
   UpgradedNonbattleDescription: 山札にあるカードの数だけ|バリア|を得る。
@@ -944,12 +944,15 @@ FindCollection:
   Description: ランダムな{PlayerName}専用のものでないカードを {Value1} 枚の中から一つ選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。
 IceSaber:
   Name: ソードフリーザー
+  Description: "{Damage} ダメージを2回与える。\n手札の青色カードを好きな数だけ捨てる事が出来る。捨てたカード一枚につき攻撃回数＋1。"
 IceLaser:
   Name: 冷凍ビーム
   UpgradedDescription: "{Damage} ダメージを与え、|冷気|を付与する\nこれをランダムな敵にもう一度発動する"
   Description: '{Damage} ダメージを与え、|冷気|を付与する'
 IceGun:
   Name: アイシクルマシンガン
+  Description: "ランダムな敵に {Damage} ダメージを {Value1} 回与える。\n|冷気|が付与されている敵には {Value2} 倍のダメージ。"
+  FlavorText: 槍の次は銃ってか！？
 TunnelEffect:
   Description: "ランダムな敵に{Damage}のダメージを与える\n{Mana}を得る\n山札をシャッフルした時、このカードを手札に戻す"
   Name: トンネルエフェクト
@@ -1216,6 +1219,8 @@ CirnoConsiderDefense:
   Description: '|ブロック|を得る。'
 FrostGarden:
   Name: 冷霧の花園
+  UpgradedDescription: "敵全体に|冷気|を付与する。\n次のターン開始時これを再度行う。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
+  Description: "敵全体に|冷気|を付与する。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
 CirnoConsiderDraw:
   Name: 審念熟慮：目覚め
   Description: カードを引く。
@@ -1296,6 +1301,7 @@ DayaojingFriend:
 MaidFriend:
   Name: メイド妖精、カスミ
   Description: '{FriendP}最もライフの少ない敵に{Damage}ダメージを与える。'
+  ExtraDescription2: "{FriendU}上記のダメージを即時に与える。\n全ての{SelfName}は追加で {Value1} ダメージを与えるようになる。"
 LilyFriend:
   Name: 春告精、リリーホワイト
 LarvaFriend:
@@ -1368,7 +1374,18 @@ CallFriends:
   Name: 友を呼ぶ
 CirnoFire:
   Name: 可燃冰
+  Description: "{Value1} の|火力|を得る。\n敵に|寒冷|が付与される度、コストが{Mana}減る。"
 Blizzard:
   Name: 暴風吹雪
 FairyOnIce:
   Name: 冰上の妖精
+ColdSnap:
+  Name: 高速なる下熱
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\n手札を一枚山札の最後尾に置く。"
+IceBarrier:
+  Description: '|フロストアーマー|を {Value1} 層得る。'
+  Name: アイスシールド
+LeidiFriend:
+  Description: '{FriendP}ランダムな敵一体に|冷気|を付与する。'
+  Name: 真冬の化身、レティ
+  ExtraDescription2: '{FriendU}敵全体に {Damage} ダメージを与え、|冷気|を付与する。'
