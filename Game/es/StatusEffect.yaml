@@ -845,17 +845,17 @@ BailianFireSe:
     \ a la mano.\n|Cuestan temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
 FairyTreeSe:
   Name: Hogar de las Hadas
-  Brief: Cuando se añade una carta de técnica a la mano por primera vez en cada turno,
-    gana {Mana} y roba cartas.
-  Description: Cuando se añade una carta de técnica a la mano por primera vez en cada
-    turno, gana {Mana} y roba {Level} carta{Level:plural one='' other='s'}.
+  Brief: Siempre que una |Aliada| es invocada, obtén algo de |Bloqueo|.
+  Description: Siempre que una |Aliada| es invocada, obtén {Level} de |Bloqueo|.
 FrostArmor:
   Name: Armadura de Escarcha
   Description: "Al comienzo de cada turno de {OwnerName}, gana {Level} de |Bloqueo|\
-    \ y pierde 1 |Armadura de Escarcha|."
+    \ y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe daño por\
+    \ un ataque, pierde 1 |Armadura de Escarcha|."
   Brief: "Cada vez que {PlayerName} gana |Armadura de Escarcha|, gana esa misma cantidad\
     \ de |Bloqueo|.\nAl comienzo de cada turno de {OwnerName}, gana {Level} de |Bloqueo|\
-    \ y pierde 1 |Armadura de Escarcha|."
+    \ y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe daño por\
+    \ un ataque, pierde 1 |Armadura de Escarcha|."
 InvincibleEternal:
   Name: Perfección
   Description: '{OwnerName} no perderá mas de 1 de vida a la vez.'
@@ -886,20 +886,23 @@ IceVulnerable:
     \ pierde |Congelación Profunda|."
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
-  Brief: "Siempre que una carta de |Apoyo de las Hadas| está |Exiliada|, aplica |Frío|\
-    \ a un enemigo aleatorio.\nSiempre que una carta de |Apoyo de las Hadas| se juega\
-    \ , añade al azar un |Apoyo de las Hadas| cartas a la pila de descarte."
-  Description: "Siempre que una carta de |Apoyo de las Hadas| está |Exiliada|, aplica\
-    \ |Frío| a un enemigo aleatorio {Level} ve{Level:plural one='z' other='ces'}.\n\
-    Siempre que una carta de |Apoyo de las Hadas| se juega , añade {Level} carta{Level:plural\
-    \ one=' aleatoria' other='s aleatorias'} de |Apoyo de las Hadas| a la pila de\
-    \ descarte."
+  Brief: "Siempre que un |Aliado| usa su habilidad |a:Activa| o |u:Definitiva| , aplica\
+    \ |Frío| a un enemigo aleatorio.\nSiempre que un enemigo gana |Frío|, unas |Aliadas|\
+    \ aleatorias en la mano ganan 1 de |Lealtad|."
+  Description: "Siempre que un |Aliado| usa su habilidad |a:Activa| o |u:Definitiva|\
+    \ , aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural one='s' other='ces'}.\n\
+    Siempre que un enemigo gana |Frío|, {Level} |Aliada{Level:plural one='' other='s'}|\
+    \ aleatoria{Level:plural one='' other='s'} en la mano gana{Level:plural one=''\
+    \ other='n'} 1 de |Lealtad|."
 MoreFriendsSe:
   Name: Mariposa Social
-  Description: Al final del turno de {PlayerName}, agrega {Level} carta{Level:plural
-    one=' aleatoria' other='s aleatorias'} |Apoyo de las Hadas| a la mano.
-  Brief: Al final del turno de {PlayerName}, agrega cartas aleatorias de |Apoyo de
-    las Hadas| a la mano.
+  Description: "Al final del turno de {PlayerName}, agrega {Level} carta{Level:plural\
+    \ one=' aleatoria' other='s aleatorias'} de |Aliada{Level:plural one='' other='s'}|\
+    \ a la mano.\nLas cartas |Aliadas| añadidas de esta manera tienen |Etéreo| hasta\
+    \ que sean convocados."
+  Brief: "Al final del turno de {PlayerName}, agrega cartas aleatorias de |Aliadas|\
+    \ a la mano.\nLas cartas |Aliadas| añadidas de esta manera tienen |Etéreo| hasta\
+    \ que sean convocados."
 YouxiangMoonSe:
   Name: Belleza de la Naturaleza
   Description: Al comienzo del turno de {PlayerName}, añade {Level} |Flores de Verano|
@@ -908,12 +911,10 @@ YouxiangMoonSe:
     |Etéreo| a la mano.
 MinengZhuruSe:
   Name: Inyección de Energía Mental
-  Description: "Los efectos pasivos de las cartas de |Apoyo de las Hadas| se activan\
-    \ {Level} ve{Level:plural one='z adicional' other='ces adicionales'}.\n(Esos efectos\
-    \ son \"Mientras está en la mano:\" y \"Al comienzo del turno:\".)"
-  Brief: "Los efectos pasivos de las cartas de |Apoyo de las Hadas| se activan varias\
-    \ veces adicionales.\n(Esos efectos son \"Mientras está en la mano:\" y \"Al comienzo\
-    \ del turno:\".)"
+  Description: "Las habilidades pasivas de las cartas |Aliadas| convocadas se activan\
+    \ {Level} ve{Level:plural one='z' other='ces'} mas."
+  Brief: "Las habilidades pasivas de las cartas |Aliadas| convocadas se activan varias\
+    \ veces mas."
 PurifyModule:
   Name: Módulo de Purificación
   Description: Cada vez que {OwnerName} golpea a {PlayerName} con un ataque, se |Purifica|{Level}
@@ -992,3 +993,8 @@ CatchGoblinSe:
     al ser derrotado.
   Brief: Daño recibido reducido en un 33%, Otorga 50<sprite="Point" name="Gold"> al
     ser derrotado.
+  Name: Mi Estrella de la Suerte
+YinyangQueenSe:
+  Brief: El efecto de todos los |Orbes Yin Yang| se incrementa varias veces.
+  Description: El efecto de todos los |Orbes Yin Yang| se incrementa {Level} veces.
+  Name: Misumaru la Artesana
