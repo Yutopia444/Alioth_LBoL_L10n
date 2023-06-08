@@ -68,7 +68,7 @@ SmallPanding:
   FlavorText: 「当たらなきゃどうってことないわよ！」
 ReimuAttackR:
   Name: 博麗アミュレット
-  Description: '{Damage}のダメージを与える'
+  Description: '{Damage}のダメージを与える。'
   FlavorText: 斜めに弾幕を打てれば、一々背後を取る手間も省けるわよね。
 ReimuBlockR:
   Name: 弾幕退治
@@ -442,6 +442,8 @@ StarlightTaifeng:
   Description: '{Damage}のダメージを{Value1}回与える。'
 PrismriverAll:
   Name: 合葬「プリズムコンチェルト」
+  Description: "{Mana}を得る。\nこの戦闘中、{PlayerName}が得るマナは全て<sprite=\"ManaSprite\" name=\"\
+    P\">になる。"
 RabbitFoot:
   Name: 幸運うさぎの足
   Description: 戦闘終了時、このカードが|廃棄|されていない場合<sprite="Point" name="Gold">{Value1}を得る。
@@ -691,6 +693,7 @@ ExtraTurnEveryone:
   Description: "{PlayerName}はターンを終了し，|追加ターン|を得る\n全ての敵は次の行動開始時、|追加ターン|を行う"
 YachieDefend:
   Name: 亀甲地獄
+  Description: "次の{Value1}回、{PlayerName}がライフを失うときそれを無効化する。\nその発生源が敵である場合、その敵は同量のライフを失う。"
 JunkoNightmare:
   Name: 震え凍える悪夢
   UpgradedDescription: "{Value2}枚までの手札を選択して|純粋|しない。\n敵全体に{Damage}のダメージを{Value1}回与える。\n\
@@ -707,7 +710,7 @@ BailianFire:
   Name: 法界の火
   Description: '{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。'
   UpgradedDescription: "{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。\n\
-    即座に効果を発動します。"
+    この効果を1回発動する。"
 Chunguang:
   Name: 純粋なる輝き
   Description: このカードを引いた時、|純化|{Value1}。
@@ -772,11 +775,12 @@ Ice:
   Name: 氷晶
   Description: '|冷気|を付与する。'
 CirnoDraw:
-  Name: 知性の妖精
+  Name: 知性なる妖精
   UpgradedDescription: "カードを{Value1}枚引く。\n次のターン開始時にカードを{Value2}枚引く。"
   Description: カードを{Value1}枚引く。
 FrozenThrone:
   Name: 凍てつく玉座
+  Description: '{PlayerName}のターン開始時、手札に|氷晶|が無い場合|氷晶|を手札に加える。'
 FakeMoon:
   Name: 偽物の月
 ShenziWake:
@@ -921,7 +925,7 @@ SakuyaInvestigate:
 WaterPrincess:
   Name: プリンセスウンディネ
 SakuyaAttackX:
-  Description: '|支払った{Mana}ごとに|：{Damage}ダメージを与える。'
+  Description: '|シナジー{Mana}|：{Damage}ダメージを与える。'
   Name: シルバープッシュ
 SakuyaDraw:
   Description: このカードを捨てた時、{Value1}を得る。
@@ -949,7 +953,7 @@ IceSaber:
   Description: "{Damage} ダメージを2回与える。\n手札の青色カードを好きな数だけ捨てる事が出来る。捨てたカード一枚につき攻撃回数＋1。"
 IceLaser:
   Name: 冷凍ビーム
-  UpgradedDescription: "{Damage} ダメージを与え、|冷気|を付与する\nこれをランダムな敵にもう一度発動する"
+  UpgradedDescription: "{Damage} ダメージを与え、|冷気|を付与する\nこれを他のランダムな敵にもう一度発動する"
   Description: '{Damage} ダメージを与え、|冷気|を付与する'
 IceGun:
   Name: アイシクルマシンガン
@@ -960,6 +964,7 @@ TunnelEffect:
   Name: トンネルエフェクト
 Tether:
   Name: 絆
+  Description: "{Block}|ブロック|を得る。\n手札の|パートナー|カードは|支援度|{Value1}を得る。"
 GatherFairy:
   FlavorText: お前が、お前達が、俺の翼だ！
 BailianPower:
@@ -1032,12 +1037,16 @@ LifeGame:
   Name: 生命遊戯-ライフゲーム-
   Description: "手札と捨て札にある全てのカードを山札に加える。\n山札をシャッフルした後、カードを{Value1}枚引く"
 YinyangQueen:
-  Name: 陰陽玉の女王
+  Name: 陰陽玉職人、玉造魅須丸
+  Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
+  ExtraDescription1: '{FriendA}ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
+  ExtraDescription2: '{FriendU}この戦闘中、全ての|陰陽玉|の効果は倍になる。ランダムな|虹龍陰陽玉|を1枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
   Description: "{Shield}|バリア|を得る。\nドローフェイズで追加で{Value1}枚のカードを引く。"
 MeilingRain:
   Name: 極彩沛雨
+  Description: "敵全体に{Damage}ダメージを{AttackTimes}回与える。\n|シナジー|{Mana}：追加で1回ダメージを与える。"
 LimaoSchool:
   Name: 狸の化け学校
 MorphBird:
@@ -1091,11 +1100,14 @@ SakuyaUsage:
   Description: "カードを {Value1} 枚引く\nこのカードの {Value2} 回目使用時、|咲夜の正しい使い方|一枚を山札の一番前へ加え、このカードは消滅する"
 ZoufangWater:
   Name: 諏訪清水
+  Description: "{Damage}ダメージを{Value1}回与える。\nこの戦闘中に使用した|能力|カード1枚につきダメージが{Value2}増加する。\n\
+    （追加ダメージ:{AdditionalDamage}）"
 SanaeRice:
   Name: 五穀豊穣ライスシャワー
   Description: "{PlayerName}にかかっているすべての状態異常を取り除く。\nライフを{Value1}回復する。"
 DoubleMana:
   Name: 妖精の起床
+  Description: "手持ちのマナを倍にする。\n|オーバードラフト|{Value1}。"
 DiscardToCharging:
   Name: オーバーチャージ
   Description: "選んだ分の数だけ手札のカードを捨てる。\nその後、捨てたカード一枚につき {Value1} 層の|チャージ|を得る。"
@@ -1142,6 +1154,7 @@ SakuyaSpeedup:
   Description: 今ある|タイムパルス|の層数を2倍にする
 TodayYesterday:
   Name: 今昔幻想郷
+  Description: "{PlayerName}が敵の攻撃を|グレイズ|したとき|火力|を得る。\n|グレイズ|{Value2}を得る。"
 MarisaHoldCard:
   FlavorText: 「ヒトツダケナンテエラベナイヨー！」
   Name: 勿体無い
@@ -1189,7 +1202,7 @@ AutoKnife:
   Name: 妖器「銀製ナイフ」
 SummerIce:
   Name: かき氷
-  Description: "ランダムな敵に {Damage} ダメージを {Value1} 回与える\n|オーバードラフト|| {Value2}"
+  Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n次のターン開始時、{Mana}を得る。"
 Opt:
   Name: 危ない冰を渡る
   Description: "山札の先頭のカードを展示する、それを山札の最後尾に置くかどうか選択する。\nカードを一枚引く。\n{Mana}を獲得する。"
@@ -1205,13 +1218,13 @@ ColdBreath:
 
     カードを {Value1} 枚引く。
 
-    このカードは|冷気|が付与されている敵がいる場合のみ打ち出せる。'
+    このカードは|冷気|が付与されている敵がいる場合のみ使用できる。'
   Name: ダイヤブレス
 OptBottom:
   Name: 沈没
   Description: '{TargetName}を山札の最後尾に置く。'
 FreezeBullet:
-  Description: "{Block}|ブロック|を得る。\n|フロストアーマー|を {Value1} 層得る。"
+  Description: "{Block}|ブロック|を得る。\n|フロストアーマー|を {Value1} 得る。"
   Name: 凍結弾幕
 IceLance:
   Name: 氷槍術
@@ -1269,11 +1282,14 @@ LigeluCard:
   Description: "{Block}|ブロック|を得る。\n<sprite=\"Point\" name=\"Power\">{Value1}を得る。"
 MedicineGarden:
   Name: スズランガーデン
-  Description: "敵全体のライフを{Value1}回復する。\n敵全体に|毒|を{Value1}層を与える。"
+  Description: "敵全体のライフを{Value1}回復する。\n敵全体に|毒|{Value1}を与える。"
 BlackPoison:
   Name: 暗闇演舞
+  Description: '{PlayerName}が攻撃で敵のライフを減らす度、|毒|{Value1}を与える。'
 ZoufangSnake:
   Name: 土着神崇拝
+  Description: "ライフを{Value1}失う。\n{Value2}枚のランダムな共通の|能力|レアカードから1枚選び、|臨時コスト|{Mana}にして手札に加える。\n\
+    候補になるカードは色の制限を無視して選ばれる。"
 FlanPlayAlone:
   Description: "|臨時火力|{Value1}を得る。\nすべての攻撃カードを捨てる。"
   Name: ひとり遊び
@@ -1292,8 +1308,10 @@ ShuihuoCard:
   Description: "{Damage}のダメージを与える。\n{Block}|ブロック|を得る。"
 MeilingAbility:
   Name: 烈虹真拳
+  Description: "{PlayerName}は|火力|や|臨時火力|を本来の倍得る。\n|火力|{Value1}を得る。"
 FangxiangAttack:
   Name: ポイズンレイズ
+  Description: "{Damage}ダメージを{Value2}回与える。\n対象が|毒|を受けていない場合、代わりに|毒|{Value1} を与える。"
 FengleiCard:
   Name: 風雷玉
   Description: 敵全体に{Damage}のダメージを{Value1}回与える。
@@ -1302,8 +1320,8 @@ CirnoInForest:
   Description: "{Block}|ブロック|を得る\n|オーバードラフト| {Value1} 。"
 DayaojingFriend:
   Name: 異変調査助手、大妖精
-  ExtraDescription1: '{FriendA}{Block}|ブロック|を得る'
-  UpgradedExtraDescription1: '{FriendA} {Block} ブロックと {Shield} バリアを得る。'
+  ExtraDescription1: '{FriendA}{Block}|ブロック|を得る。'
+  UpgradedExtraDescription1: '{FriendA}{Block}ブロックと{Shield}バリアを得る。'
   UpgradedExtraDescription2: '{FriendU}|真夏の花+|を一枚手札に加える。'
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを与える。'
   ExtraDescription2: '{FriendU}|真夏の花|を一枚手札に加える。'
@@ -1313,8 +1331,14 @@ MaidFriend:
   ExtraDescription2: "{FriendU}上記のダメージを即時に与える。\n全ての{SelfName}は追加で {Value1} ダメージを与えるようになる。"
 LilyFriend:
   Name: 春告精、リリーホワイト
+  ExtraDescription1: '{FriendA}ランダムなマナ{Value2}点を得る。'
+  ExtraDescription2: '{FriendU}ライフを{Heal}回復する。'
+  Description: "{FriendS}ランダムな敵に{Damage}ダメージを{Value1}回与える。\n{FriendP}{TurnMana}を得る。"
 LarvaFriend:
   Name: 真夏の妖精の夢、ラルバ
+  ExtraDescription1: '{FriendA}手札のカードを全て|アップグレード|する。'
+  Description: '{FriendP}ランダムな敵に|毒|{Value1}を与える。'
+  ExtraDescription2: '{FriendU}敵全体に|毒|{Value2}を与える。|毒|ダメージを誘発させる。'
 LunaFriend:
   Name: 静かなる月の光、ルナ
 StarFriend:
@@ -1357,11 +1381,14 @@ RumiaBlock:
   Description: "{Block}|ブロック|を得る。\n|暗闇|を{Value1}枚手札に加える。"
 FairyWrath:
   Name: 自然の怒り
+  Description: "敵全体に{Damage}を与える。\n手札に召喚済みの|異変調査助手、大妖精|が存在する場合、|真夏の花|{Value1}枚を手札に加える。"
+  UpgradedDescription: "敵全体に{Damage}を与える。\n手札に召喚済みの|異変調査助手、大妖精|が存在する場合、|真夏の花+|{Value1}枚を手札に加える。"
 FreezeToIce:
   Name: 凍結された標本
+  Description: 手札を最大{Value1}枚|廃棄|する。同数の|氷晶|を手札に加える。
 CirnoFestival:
   Name: 宴会潜入
-  Description: "|グレイズ|を {Value1} 層得る。\n手札のランダムな {Value2} 枚の|パートナー|カードの、適当なマナコスト－1。"
+  Description: "|グレイズ|を {Value1} 層得る。\n手札のランダムな {Value2} 枚の|パートナー|カードの、適当なマナコストを1減らす。"
 DiamondBlizzard:
   Name: ダイヤプリズム
 DiamondBlizzardDefense:
@@ -1373,19 +1400,25 @@ DiamondBlizzardCold:
   Name: ダイヤプリズム：冷気
 FairyTeam:
   Name: 妖精大戦争
+  Description: "手札の|パートナー|カードを任意の枚数|廃棄|し、それらの本来のマナコストと同じマナを得る。\n|廃棄|した枚数と同じ回数、ランダムな敵に{Damage}ダメージを与える。"
 FairyTree:
   Name: 妖精の家
+  Description: '|パートナー|を召喚する度、|ブロック|{Value1}を得る。'
 SummerParty:
   Name: 冰爽なパーティー
 MoreFriends:
   Name: 交際マスター
+  Description: "{PlayerName}のターン開始時、ランダムな|パートナー|カードを1枚手札に加える。\nそのカードは召喚されるまで|虚無|を持つ。"
 CallFriends:
   Name: 友を呼ぶ
+  UpgradedDescription: "ランダムな{Value1}枚の|パートナー|カードから1枚を選び、召喚済みの状態で手札に加える。\nランダムな|e:三月精|が追加の選択肢として出現する。"
+  Description: '{Value1}枚のランダムな|パートナー|カードから1枚選び、召喚済みの状態で手札に加える。'
 CirnoFire:
   Name: 可燃冰
-  Description: "{Value1} の|火力|を得る。\n敵に|寒冷|が付与される度、コストが{Mana}減る。"
+  Description: "{Value1} の|火力|を得る。\n|寒冷|が付与されている敵1体につき、コストが{Mana}減る。"
 Blizzard:
   Name: 暴風吹雪
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を付与する。\n手札に召喚済みの|真冬の化身、レティ|が存在する場合、次のターン開始時にこの攻撃をもう一度行う。"
 FairyOnIce:
   Name: 冰上の妖精
 ColdSnap:
@@ -1427,3 +1460,8 @@ SeeFengshui:
   Description: "{PlayerName}のターンが開始時、|星見|{Value1}。\n今回|星見|では防御カードを1枚選ぶごとに、{Value2}|ブロック|を得る。"
 YuyukoSing:
   Description: "{Damage}のダメージを与える。\nこのカードは複数回 |アップグレード| できる。"
+LilyChun:
+  Name: 春ですよー！
+  Description: "{Value1}枚のランダムなマナ総量が1のカードから1枚を選び、手札に加える。それは|廃棄|と|虚無|を得る。\n候補になるカードはキャラクターの制限を無視して選ばれる。"
+  UpgradedDescription: "{Value1}枚のランダムなマナ総量が1のカードから1枚を選び、手札に加える。それは|臨時コスト|{Mana}と|廃棄|、|虚無|を得る。\n\
+    候補になるカードはキャラクターと色の制限を無視して選ばれる。"
