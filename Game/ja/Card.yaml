@@ -793,14 +793,14 @@ SakuyaAttackW:
   Description: '{Damage}のダメージを与える。'
   Name: 誤投
 SakuyaBlockU:
-  Description: '{Block}ブロックを得る。'
+  Description: '{Block}|ブロック|得る。'
 SakuyaAttackU:
   Description: '{Damage}のダメージを与える。'
   Name: トランプ射撃
 SilverBullet:
   Description: 敵全体に{Damage}のダメージを与える。
 SakuyaBlockW:
-  Description: '{Block}ブロックを得る。'
+  Description: '{Block}|ブロック|を得る。'
 VampireHunter:
   Name: 吸血鬼ハンター
   Description: "{Damage}ダメージを与える。\n対象が|吸血鬼|を持っている場合、与えるダメージを{Value1}倍する。"
@@ -827,12 +827,12 @@ SakuyaKiller:
   Name: 夜霧の幻影殺人鬼
   Description: "{PlayerName}はターン終了時、 {Value1} 枚の|投げナイフ|を山札に加える。\nまた、敵を一体撃破した場合にもこれと同じ効果を発動する。"
 SakuyaTea:
-  Name: 紅茶を入れる
+  Name: 紅茶タイム
   ExtraDescription1: "カードを {Value1} 枚引く。\n|初見}：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
   Description: "カードを{Value1}枚引く。\n|初見}：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
 SakuyaShop:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。"
-  Name: 物資を仕入れる
+  Name: 物資の購入
   FlavorText: この吸血鬼は売り物じゃないですよ。誤解のないよう。
 BackToFuture:
   Name: 未来逆行
@@ -915,7 +915,7 @@ BackOfKnife:
     （ {IncreasedDamage} 点の追加ダメージ）"
 FakeTimeline:
   Name: イマジナリバーチカルタイム
-  Description: "{Block}ブロックを得る。\n敵全体に{Damage}のダメージを与える。\n|タイムパルス|{Value1}を得る。"
+  Description: "{Block}|ブロック|を得る。\n敵全体に{Damage}のダメージを与える。\n|タイムパルス|{Value1}を得る。"
 SakuyaDefenseRetain:
   Name: 時間厳守
   Description: "{Block}|ブロック|を得る。\n次の{PlayerName}のターンの開始時、ブロックを失わない。"
@@ -1012,12 +1012,13 @@ YouxiangMoon:
   UpgradedDescription: "{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。\n{Value1}枚の|真夏の花|を手札に加える。"
   Description: '{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。'
 HuaBlock:
-  Description: "{Block}ブロックを得る\n|臨時火力|{Value1}を得る"
+  Description: "{Block}|ブロック|を得る\n|臨時火力|{Value1}を得る"
   Name: 作戦姿勢
 HuiyeMana:
   Name: 竹取の物語
 MeihongPower:
   Name: 不死の炎
+  Description: "{PlayerName}のターンが開始時、|火力|{Value1}を得る。\n決闘終了時、{PlayerName} のライフが半分以下の場合、ライフを{Value2}回復する。"
 HekaHellRain:
   Name: 地獄の雨
 FourFlan:
@@ -1027,7 +1028,7 @@ XingMoney:
   Name: レイディアントトレジャーガン
   Description: "{Damage}のダメージを与える。\n|退治|：{Value1}<sprite=\"Point\" name=\"Gold\">を得る。"
 PoorAttack:
-  Name: 貧困に陥る
+  Name: ようこそ極貧の世界へ
   Description: "<sprite=\"Point\" name=\"Gold\">を{Value1}失う。\n{Damage}のダメージを2回与える。"
 SakuraBlade:
   Name: 桜花閃々
@@ -1265,6 +1266,10 @@ HuashanDefense:
   Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
+  Description: "捨て札から{Value1}までのカードを選び手札に戻す、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+    |時間制限|{Mana}。"
+  ExtraDescription1: "捨て札から{Value1}までのカードを選び手札に戻す、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+    |d:時間制限{Mana}。|"
 XiangziEcho:
   Description: 手札からカードを{Value1}枚まで選び、反復を与える。
 RinDraw:
@@ -1495,3 +1500,9 @@ InstantFreeze:
   ExtraDescription1: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|d:時間制限||{Mana}。"
 CirnoEcho:
   Name: 自然な贈り物
+YukariBox:
+  Description: "|星見|{Scry}、カードを{Value1}引く。\n捨て札を山札に加えて、山札をシャッフルする。"
+NewsTidbit:
+  Description: "|ロックオン|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
+NueExile:
+  Description: "手札を一枚|廃棄|する。\nランダムなカードを得る、臨時コストを{Mana}にする。"
