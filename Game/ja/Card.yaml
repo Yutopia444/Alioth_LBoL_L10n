@@ -975,6 +975,8 @@ TrueMoon:
   Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2} カードをプレイした後、{PlayerName}に即死ダメージを与える。"
 FreezeRiver:
   Name: 流氷
+  Description: 山札最後尾のカードを手札に加える、それは|臨時コスト|{Mana}となる。
+  UpgradedDescription: 山札最後尾のカードを手札に加える、それは|再設定|{Mana}となる。
 SakuyaFuneral:
   Name: 早すぎた埋葬
   Description: "ライフを{Value1}失う。\n|廃棄済|のカードを1枚選び、|臨時コスト|{Mana}にして手札に加える。"
@@ -1391,13 +1393,16 @@ CirnoFestival:
   Description: "|グレイズ|を {Value1} 層得る。\n手札のランダムな {Value2} 枚の|パートナー|カードの、適当なマナコストを1減らす。"
 DiamondBlizzard:
   Name: ダイヤプリズム
+  Description: "敵全体に{Damage}ダメージを与える。\n|チョイス|： 敵全体に|冷気|を付与する； {Block}|ブロック|を得る。"
 DiamondBlizzardDefense:
   Name: ダイヤプリズム：護身
+  Description: ダメージを与え、|ブロック|を得る。
 FruitShake:
   Name: フルーツクラッシュアイス
   Description: "{Damage} ダメージを与える。\nこのターン中に|パートナー|を召喚している場合、追加で敵全体に {Damage} ダメージ。"
 DiamondBlizzardCold:
   Name: ダイヤプリズム：冷気
+  Description: ダメージを与え、|冷気|を付与する。
 FairyTeam:
   Name: 妖精大戦争
   Description: "手札の|パートナー|カードを任意の枚数|廃棄|し、それらの本来のマナコストと同じマナを得る。\n|廃棄|した枚数と同じ回数、ランダムな敵に{Damage}ダメージを与える。"
@@ -1405,7 +1410,8 @@ FairyTree:
   Name: 妖精の家
   Description: '|パートナー|を召喚する度、|ブロック|{Value1}を得る。'
 SummerParty:
-  Name: 冰爽なパーティー
+  Name: 冰爽なるパーティー
+  Description: "|フロストアーマー| {Value1} を得る。\n手札の全ての|パートナー|は|支援度| {Value2} を得る。"
 MoreFriends:
   Name: 交際マスター
   Description: "{PlayerName}のターン開始時、ランダムな|パートナー|カードを1枚手札に加える。\nそのカードは召喚されるまで|虚無|を持つ。"
@@ -1421,6 +1427,7 @@ Blizzard:
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を付与する。\n手札に召喚済みの|真冬の化身、レティ|が存在する場合、次のターン開始時にこの攻撃をもう一度行う。"
 FairyOnIce:
   Name: 冰上の妖精
+  Description: "カードを{Value1}枚引く。\n|冷気|が付与されている敵1体につき、{PlayerName}は|グレイズ| {Value2} を得る。 "
 ColdSnap:
   Name: 高速なる下熱
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\n手札を一枚山札の最後尾に置く。"
@@ -1465,3 +1472,26 @@ LilyChun:
   Description: "{Value1}枚のランダムなマナ総量が1のカードから1枚を選び、手札に加える。それは|廃棄|と|虚無|を得る。\n候補になるカードはキャラクターの制限を無視して選ばれる。"
   UpgradedDescription: "{Value1}枚のランダムなマナ総量が1のカードから1枚を選び、手札に加える。それは|臨時コスト|{Mana}と|廃棄|、|虚無|を得る。\n\
     候補になるカードはキャラクターと色の制限を無視して選ばれる。"
+BestFriend:
+  Name: 最高の親友
+DeepFreeze:
+  Description: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を付与する、敵が既に|冷気|を持っている場合、それを|凍結|に上書きする。"
+  Name: つららの舞
+IceBlock:
+  Name: 寒冰障壁
+  Description: "一ターンの間こちらはあらゆるダメージを受け無くなる。\n全ての|ブロック|、|バリア|、|グレイズ|を無くす。\n全ての手札を一ターン|保留|し、{PlayerName}のターンを終了する。"
+ColdChain:
+  Description: 山札から {Value1} 枚のカードを選んで手札に加え、それに|保留|を付与する。
+  Name: コールドチェーン
+ZeroK:
+  Description: "|冷気|の重ね掛けによるダメージを| {Value1} 倍分増やす。\n敵全体に|冷気|を付与する。"
+  Name: 絶対零度
+IceMatrix:
+  Description: "{PlayerName}は敵に|冷気|を付与する度、|フロストアーマー| {Value1} を得る。\n敵全体に|冷気|を付与する。"
+  Name: フリーズマトリックス
+InstantFreeze:
+  Name: スイフトクールダウン
+  Description: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|時間制限||{Mana}。"
+  ExtraDescription1: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|d:時間制限||{Mana}。"
+CirnoEcho:
+  Name: 自然な贈り物
