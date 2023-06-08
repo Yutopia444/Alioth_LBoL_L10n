@@ -650,7 +650,7 @@ HatateNews:
   Name: 花果子念報
 LoveLetter:
   Name: 恋文
-  Description: <color=#eab8bf>恋爱怨灵少女</color>にあげる、彼女は喜びます。
+  Description: <color=#eab8bf>恋爱怨灵少女</color>にあげる、彼女は喜ぶだろう。
   FlavorText: こっそり見てはいけませんよ。(*/ω＼*)
 Bribery:
   Name: 袖の下
@@ -693,20 +693,20 @@ YachieDefend:
   Name: 亀甲地獄
 JunkoNightmare:
   Name: 震え凍える悪夢
-  UpgradedDescription: "{Value 2}枚までの手札を選択して|純粋|しません。\n敵全体に{Damage}のダメージを{Value1}回与える。\n\
+  UpgradedDescription: "{Value2}枚までの手札を選択して|純粋|しない。\n敵全体に{Damage}のダメージを{Value1}回与える。\n\
     すべての手札を廃棄して，等量の|純粋|を手札に加える 。"
   Description: "敵全体に {Damage} のダメージを {Value1} 回与える 。\nすべての手札を廃棄して，等量の|純粋|を手札に加える。"
 PatchouliLibrary:
   Name: 動かない大図書館
-  Description: "{Mana}を得る。\n{Value 1}のランダムなレアカードの中から1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
-  UpgradedDescription: "{Mana}を得る。\n{Value 1}のランダムなレアカードと{Value2}の アンコモンカードの中から1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
+  Description: "{Mana}を得る。\n{Value 1}枚のランダムなレアカードから1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
+  UpgradedDescription: "{Mana}を得る。\n{Value1}枚のランダムなレアカードと{Value2}枚のアンコモンカードから1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
 Riguang:
   Name: 屈折光
   Description: '|ターン終了時|：{Value1}ダメージを受ける。'
 BailianFire:
   Name: 法界の火
   Description: '{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。'
-  UpgradedDescription: "中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。 \t{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。\n\
+  UpgradedDescription: "{PlayerName}のターン開始時に、ランダムなスキルカードを手札に加えて、臨時コストを{Mana}にして|廃棄|と|虚無|を与える。\n\
     即座に効果を発動します。"
 Chunguang:
   Name: 純粋なる輝き
@@ -1001,6 +1001,8 @@ YongyiAttack:
   Name: 鬼気怒濤
 YouxiangMoon:
   Name: 花鳥風月
+  UpgradedDescription: "{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。\n{Value1}枚の|真夏の花|を手札に加える。"
+  Description: '{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。'
 HuaBlock:
   Description: "{Block}ブロックを得る\n|臨時火力|{Value1}を得る"
   Name: 作戦姿勢
@@ -1032,7 +1034,7 @@ YinyangQueen:
   Name: 陰陽玉の女王
 SkyWater:
   Name: お天水の奇跡
-  Description: "{Shield}|バリア|を得る。\nドローフェイズで追加で{Value 1}枚のカードを引く。"
+  Description: "{Shield}|バリア|を得る。\nドローフェイズで追加で{Value1}枚のカードを引く。"
 MeilingRain:
   Name: 極彩沛雨
 LimaoSchool:
@@ -1042,8 +1044,10 @@ MorphBird:
   Description: '|グレイズ|{Value1}を得る。'
 MorphFrog:
   Name: 両生化弾幕変化
+  Description: 最大ライフ{Value1}を得る。
 MorphMan:
   Name: 霊長化弾幕変化
+  Description: <sprite="Point" name="Power">{Value1}を得る。
 MorphDog:
   Description: '|火力|{Value1}を得る。'
   Name: 肉食化弾幕変化
@@ -1242,7 +1246,7 @@ BaitianCard:
   Name: 稗田の転生
 HuashanDefense:
   Name: 務光の雷弾
-  Description: "{Block}ブロックを得る。\nこのターン、帯電{Value1}を得る。"
+  Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
 XiangziEcho:
@@ -1412,3 +1416,15 @@ MeilingBlock:
   Description: "{Block}|ブロック|を得る。\n{Shield}|バリア|を得る。\n|火力|の効果は{SelfName}に適用される。"
 RemiliaJizao:
   Description: "カードを{Value1}枚引く。\nこのターン、追加でカードを引くことができない。"
+LanCard:
+  Description: "{Value1}枚のランダムなアンコモンカードから１枚を選び、手札に加える。\nそのカードの臨時コストを{Mana}にして、|廃棄|と|虚無|を与える。"
+TiangouOrder:
+  Description: "{Damage}のダメージを与える。\n敵にダメージを与えた時、{PlayerName}は{Value1}|ブロック|を得る。"
+RemiliaBat:
+  Description: "|臨時火力|{Value1}を得る。\n|グレイズ|{Value2}を得る。"
+SeeFengshui:
+  Description: "{PlayerName}のターンが開始時、|星見|{Value1}。\n今回|星見|では防御カードを1枚選ぶごとに、{Value2}|ブロック|を得る。"
+HuiyinAttack:
+  Description: ''
+YuyukoSing:
+  Description: "{Damage}のダメージを与える。\nこのカードは複数回 |アップグレード| できる。"
