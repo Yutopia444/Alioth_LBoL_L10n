@@ -8,10 +8,10 @@ AttackIntention:
   AccurateMultiDamageDescription: '{OwnerName} pretende |Atacar|, causando {Damage}
     de dano {Times} vezes. Não pode ser |Esquivado|.'
 PositiveEffectIntention:
-  Name: Buff
+  Name: Aprimorar
   Description: '{OwnerName} pretende aplicar um |efeito positivo| aos seus aliados.'
 NegativeEffectIntention:
-  Name: Debuff
+  Name: Enfraquecer
   Description: '{OwnerName} pretende aplicar um |efeito negativo| à {PlayerName}.'
 AddCardIntention:
   Name: Status
@@ -20,7 +20,7 @@ DefendIntention:
   Name: Defesa
   Description: '{OwnerName} pretende aplicar um |efeito defensivo| aos seus aliados.'
 GrazeIntention:
-  Name: Esquiva
+  Name: Desviar
   Description: '{OwnerName} pretende aplicar |Esquiva| aos seus aliados.'
 SpawnIntention:
   Name: Invocar
@@ -46,7 +46,7 @@ CountDownIntention:
     \ one='' other='s'}."
 ChargeIntention:
   Name: Carga
-  Description: '{OwnerName} está ganhando força...'
+  Description: '{OwnerName} está acumulando forças...'
 HealIntention:
   Name: Curar
   Description: '{OwnerName} pretende |curar| seus aliados, restaurando suas vidas.'
@@ -56,14 +56,19 @@ RepairIntention:
 SpellCardIntention:
   Name: Spell Card
   Description: '{OwnerName} pretende liberar seu |Spell Card|.'
-  MultiDamageDescription: '{OwnerName} pretende liberar seu |Spell Card|, causando
-    {Damage} de dano {Times} vezes.'
-  AccurateMultiDamageDescription: "{OwnerName} pretende liberar seu |Spell Card|,\
-    \ causando {Damage} de dano {Times} vezes.\nNão pode ser |Esquivado|."
-  DamageDescription: '{OwnerName} pretende liberar seu |Spell Card|, causando {Damage}
-    de dano.'
-  AccurateDamageDescription: "{OwnerName} pretende liberar seu |Spell Card|, causando\
-    \ {Damage} de dano.\nNão pode ser |Esquivado|."
+  MultiDamageDescription: '{OwnerName} pretende liberar seu |Spell Card|.
+
+    causará {Damage} de dano {Times} vezes.'
+  AccurateMultiDamageDescription: "{OwnerName} pretende liberar seu |Spell Card|.\n\
+    causará {Damage} de dano {Times} vezes e não pode ser |Esquivado|."
+  DamageDescription: '{OwnerName} pretende liberar seu |Spell Card|.
+
+    causará {Damage} de dano.'
+  AccurateDamageDescription: "{OwnerName} pretende liberar seu |Spell Card|.\nCausará\
+    \ {Damage} de dano e não pode ser |Esquivado|."
 UnknownIntention:
   Name: Desconhecido
   Description: '{OwnerName} pretende fazer... alguma coisa.'
+DoNothingIntention:
+  Description: '{OwnerName} não fará nada neste turno.'
+  Name: Preguiça
