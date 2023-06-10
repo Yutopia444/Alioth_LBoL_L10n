@@ -107,13 +107,13 @@ Synergy:
 
 Scry:
   Name: Scry X
-  Description: 'Look at the top X cards of the draw pile. Any number of them may be
-    sent to the discard pile.'
+  Description: 'Look at the top X cards of the draw pile in order. Any number of them
+    may be sent to the discard pile.'
 
 Purify:
   Name: Purify X
   Description: 'Convert X of the most abundant mana color to <sprite="ManaSprite"
-    name="C">.'
+    name="C"> colorless mana.'
 
 Expel:
   Name: Expel
@@ -133,33 +133,37 @@ Overdrive:
 
 Grow:
   Name: Growth
-  Description: 'When this card is played, improve it by the listed quality until end
-    of combat.'
+  Description: 'When played, improve this card by its |Growth| effect until end of
+    combat.'
 
 GamerunInitial:
   Name: Game Run Initial
   Description: Mark for Game Run Initial (Debug).
 Echo:
   Name: Echo
-  Description: If this card is not a |Copy|, add a copy to your hand after playing
-    it.
+  Description: When played, if this card isn't a |Copy|, add a copy of it to your
+    hand. It has |Exile|.
 AutoExile:
   Name: Auto Exile
-  Description: "When you're about to exceed your hand size, |Exile| this card.\n(The\
-    \ leftmost card in the hand with |Auto Exile| is |Exiled| first.)"
+  Description: "When you're about to exceed your hand size, |Exile| this card.\nThe\
+    \ leftmost card in the hand with |Auto-Exile| is |Exiled| first.\nDoesn't trigger\
+    \ certain effects that may lead to infinite loops."
 Agent:
   Name: Mental State
   Description: You may only have one |Mental State| active at once.
 Overdraft:
   Name: Overdraft X
-  Description: "At the start of your next turn, lose X mana at random.\n(Lost mana\
-    \ is indicated in the mana base at the top left of the screen.)"
+  Description: "At the start of your next turn, lose X mana at random.\n(Indicated\
+    \ at the top left of the screen.)"
 CopyHint:
   Name: Copy
   Description: A |Copy| of a card that was added during combat. |Copies| can't be
     copied.
 Loyalty:
-  Name: Cooperation
+  Name: Influence
+  Description: "Used to activate |a:Active Skills| and |u:Ultimate Skills|.\nAfter\
+    \ being reduced to zero or using their |u:Ultimate Skill|, remove that |Teammate|\
+    \ card from combat."
 FriendCard:
   Name: Teammate
   Description: "After being summoned, |Teammates| can grant a variety of different\
@@ -172,4 +176,9 @@ Friend:
     x\"> |a:Active Skill| or <sprite=\"Ultimate\" name=\"x\"> |u:Ultimate Skill|.\n\
     Can't be targeted by effects that |Copy| cards."
 FriendSummoned:
-  Name: Teammate (Teamed)
+  Name: Teammate (Summoned)
+  Description: "Remains in the hand between turns.\nIts <sprite=\"Passive\" name=\"\
+    x\"> |f:Passive Skill| triggers only once each turn (usually, at the end of your\
+    \ turn).\nThis card can be played to trigger its <sprite=\"Active\" name=\"x\"\
+    > |a:Active Skill| or <sprite=\"Ultimate\" name=\"x\"> |u:Ultimate Skill|.\nCan't\
+    \ be targeted by effects that |Copy| cards."
