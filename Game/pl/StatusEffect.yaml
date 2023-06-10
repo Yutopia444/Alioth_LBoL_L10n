@@ -288,8 +288,9 @@ MadokaBowSe:
     \ many='% losowych kart'} Statusu do stosu doboru."
   Name: Łuk Strzelający Światłem
 InfinityGemsSe:
-  Description: Na początku każdej tury {OwnerName:g} |Wygnaj| połowę kart w grze,
-    niezależnie od ich położenia.
+  Description: "Na początku każdej tury {OwnerName:g} |Wygnaj| połowę kart w grze,\
+    \ niezależnie od ich położenia.\nZostał{Count:plural one=' % raz' few='y % razy'\
+    \ many='o % razy'}."
   Name: Rękawica Obsadzona Kryształami
 DragonBallSe:
   Description: 'Na początku tury {OwnerName} jej |życzenie| zostanie spełnione: {PlayerName}
@@ -762,7 +763,8 @@ PurifyModule:
 LightingModule:
   Name: Moduł Błyskowy
   Description: Gdy {OwnerName} trafia {PlayerName:a} atakami, dodaj {Level:plural
-    one='% |Blask|' few='% |Blaski|' many='% |Blasków|'} do stosu doboru.
+    one='% |Olśniewające Gwiazdy|' few='% |Olśniewające Gwiazdy|' many='% |Olśniewające
+    Gwiazdy|'} do stosu doboru.
 AccuracyModule:
   Name: Moduł Naprowadzający
   Description: Ataki {OwnerName:g} są |Celne|.
@@ -784,13 +786,16 @@ ColdPotionSe:
   Brief: '|Niestabilne Mikstury| nakładają |Chłód|.'
 SplitPotionSe:
   Name: Podwójne Chemikalia
+  Brief: '|Niestabilne Mikstury| zadają obrażenia dodatkowemu wrogowi.'
+  Description: "|Niestabilne Mikstury| zadają obrażenia {Level:plural one='% dodatkowy\
+    \ raz' few='% dodatkowe razy' many='% dodatkowych razy'}."
 ColdUp:
   Brief: Mnożnik obrażeń ponownego nałożenia |Chłodu| jest zwiększony.
   Name: Zamarznięcie do Szpiku Kości
   Description: Mnożnik obrażeń ponownego nałożenia |Chłodu| wzrasta o {Level}.
 NextTurnColdAll:
   Description: Na początku następnej tury {OwnerName:g} nałóż |Chłód| na wszystkich
-    wrogów.
+    wrogów {Level:plural one='% raz' few='% razy' many='% razy'}.
   Name: Nadciąga Zima
   Brief: Na początku następnej tury {OwnerName:g} nałóż |Chłód| na wszystkich wrogów.
 ExtraDraw:
@@ -876,3 +881,21 @@ EnemyLarva:
   Name: Skrzydła Larvy
   Description: Gdy {PlayerName} zadaje {OwnerName:i} obrażenia atakami, zyskuje {Level}
     |Trucizny|.
+KnifeTarget:
+  Name: Na Celowniku
+  Description: '|Sztylety do Rzucania| będą celowały w {OwnerName:a} gdy zostaną użyte.'
+  Brief: '|Sztylety do Rzucania| będą celowały w {OwnerName:a}.'
+FrostArmor:
+  Name: Zbroja z Lodu
+Immune:
+  Brief: '{OwnerName} nie może stracić życia.'
+  Name: Kostka Lodu
+  Description: "{OwnerName} nie może stracić życia na {Duration:plural one='% turę'\
+    \ few='% tury' many='% tur'}."
+IceMatrixSe:
+  Name: Zamrożona Matryca
+  Description: Gdy {OwnerName} otrzymuje obrażenia strać o {Level} więcej |Zbroi z
+    Lodu| aby nałożyć |Chłód| na atakującego {Level:plural one='% raz' few='% razy'
+    many='% razy'}.
+  Brief: Gdy {OwnerName} otrzymuje obrażenia od ataku, strać dodatkową |Zbroję z Lodu|
+    aby nałożyć |Chłód| na atakującego.
