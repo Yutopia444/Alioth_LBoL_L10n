@@ -702,7 +702,7 @@ JunkoNightmare:
 PatchouliLibrary:
   Name: 動かない大図書館
   Description: "{Mana}を得る。\n{Value 1}枚のランダムなレアカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
-  UpgradedDescription: "{Mana}を得る。\n{Value1}枚のランダムなレアカードと{Value2}枚のアンコモンカードから1枚を選んで手札に加えて、選んだカードは｜廃棄｜、｜虚無｜を持っている。"
+  UpgradedDescription: "{Mana}を得る。\n{Value1}枚のランダムなレアカードと{Value2}枚のアンコモンカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
 Riguang:
   Name: 屈折光
   Description: '|ターン終了時|：{Value1}ダメージを受ける。'
@@ -1269,9 +1269,9 @@ HuashanDefense:
   Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
-  Description: "捨て札から{Value1}までのカードを選び手札に戻す、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+  Description: "捨て札から{Value1}までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
     |時間制限|{Mana}。"
-  ExtraDescription1: "捨て札から{Value1}までのカードを選び手札に戻す、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+  ExtraDescription1: "捨て札から{Value1}までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
     |d:時間制限{Mana}。|"
 XiangziEcho:
   Description: 手札からカードを{Value1}枚まで選び、反復を与える。
@@ -1520,6 +1520,7 @@ InstantFreeze:
   ExtraDescription1: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|d:時間制限||{Mana}。"
 CirnoEcho:
   Name: 自然な贈り物
+  Description: 捨て札から{Value1}枚のカードを手札に加える、|反復|を与える。
 YukariBox:
   Description: "|星見|{Scry}、カードを{Value1}引く。\n捨て札を山札に加えて、山札をシャッフルする。"
 NewsTidbit:
@@ -1559,3 +1560,13 @@ PlayWithWaste:
   Name: ゴミ漁り
 ForeverCool:
   Description: "|パートナー|の|a:主動技能|か|u:フィニッシュスキル|を使用したとき、ランダムな敵に|冷気|を与える。\n敵が|冷気|を付与される度、手札のランダムな|パートナー|は|支援度|1を得る。"
+Lunatic:
+  Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
+    現在：{LunaticCount}枚。"
+  NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
+HuiyinAttack:
+  Description: "{Damage}のダメージを与える。\n手札から {Value1} 枚までのカードを捨てる、捨てた枚数のカードを引く。"
+QingeHeal:
+  Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
+LarvaDefense:
+  Description: "{Block}|ブロック|を得る。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。"
