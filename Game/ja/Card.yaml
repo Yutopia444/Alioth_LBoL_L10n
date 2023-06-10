@@ -950,7 +950,7 @@ FindCollection:
   Description: ランダムな{PlayerName}専用のものでないカードを {Value1} 枚の中から一つ選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。
 IceSaber:
   Name: ソードフリーザー
-  Description: "{Damage} ダメージを2回与える。\n手札の青色カードを好きな数だけ捨てる事が出来る。捨てたカード一枚につき攻撃回数＋1。"
+  Description: "{Damage}ダメージを{Value1}回与える。\n手札の青のカードを任意の枚数捨てる。捨てた枚数と同じ数だけ追加で攻撃する。"
 IceLaser:
   Name: 冷凍ビーム
   UpgradedDescription: "{Damage} ダメージを与え、|冷気|を付与する\nこれを他のランダムな敵にもう一度発動する"
@@ -1074,7 +1074,7 @@ LimaoAttack:
   Description: "敵全体に{Damage}のダメージを与える、{GainMana}を得る。\n|成長|：追加の {Mana} を得る。"
 JingyeGraze:
   Name: 狂いの落葉
-  Description: "|グレイズ|を {Value1} 層得る。\nこのカードで得た|グレイズ|の層数の {Value2} 倍の|臨時火力|を得る。"
+  Description: "|グレイズ|を{Value1}得る。\n{PlayerName}が持つ|グレイズ|の{Value2}倍の|臨時火力|を得る。"
 IceSpark:
   Name: 凍結レーザ
   Description: 敵全体に{Damage}のダメージを与える、|冷気|を与える。
@@ -1210,7 +1210,7 @@ SummerIce:
   Name: かき氷
   Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n次のターン開始時、{Mana}を得る。"
 Opt:
-  Name: 危ない冰を渡る
+  Name: 薄氷を踏む
   Description: "山札の先頭のカードを展示する、それを山札の最後尾に置くかどうか選択する。\nカードを一枚引く。\n{Mana}を獲得する。"
 SummerFlower:
   Description: "{Damage} ダメージを与える。\nこの戦闘中、全ての{SelfName}のダメージが {Value1} 増加する。"
@@ -1225,7 +1225,7 @@ ColdBreath:
     カードを {Value1} 枚引く。
 
     このカードは|冷気|が付与されている敵がいる場合のみ使用できる。'
-  Name: ダイヤブレス
+  Name: ダイヤモンドブレス
 OptBottom:
   Name: 沈没
   Description: '{TargetName}を山札の最後尾に置く。'
@@ -1351,11 +1351,16 @@ LarvaFriend:
   ExtraDescription2: '{FriendU}敵全体に|毒|{Value2}を与える。|毒|ダメージを誘発させる。'
 LunaFriend:
   Name: 静かなる月の光、ルナ
+  Description: '{FriendP}{Block}|ブロック|を得る。'
+  ExtraDescription1: '{FriendA}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
+  ExtraDescription2: '{FriendU}|天衣無縫|{Value2}を得る。'
 StarFriend:
   Name: 降り注ぐ星の光、スター
   Description: '{FriendP}敵全体に{Damage}のダメージを与える。'
   ExtraDescription1: '{FriendA}即時にダメージを{Value1}回与える。'
-  ExtraDescription2: '{FriendU}すべての{SelfName}がダメージを与えるたび、|ロックオン|{Light}を与える。'
+  ExtraDescription2: '{FriendU}すべての{SelfName}がダメージを与えるたび、|ロックオン|{Light}を与える。
+
+    {Value2}回ダメージを与える。'
 SunnyFriend:
   Name: 輝ける日の光、サニー
   ExtraDescription1: '{FriendA}オプティカルカモフラージュ{Light}を得る。'
@@ -1363,6 +1368,10 @@ SunnyFriend:
   Description: '{FriendP}ランダムな敵に{Damage}のダメージを{Value1}回与える。'
 ClownpieceFriend:
   Name: 狂気の妖精クラウンピース
+  ExtraDescription2: '{FriendU}{Mana}を得る。|狂気|を1枚捨て札に加える。'
+  Description: '{FriendS}{StartMana}を得る。'
+  ExtraDescription1: '{FriendA}カードを{Value1}枚引く。|狂気|を1枚捨て札に加える。'
+  UpgradedExtraDescription1: '{FriendA}カードを{Value1}枚引く。'
 YonglinCard:
   Name: 賢者の帰依
   Description: '{PlayerName}のターン終了時、|偽物の月 |を{Value1}枚山札に加える。'
@@ -1535,3 +1544,16 @@ FairyTrick:
   Name: 妖精の悪戯
   Description: "ライフを{Value1}失う。\n|e:三月精|3体を召喚し1枚を選んで手札に、残りを山札に加える。"
   UpgradedDescription: "ライフを{Value1}失う。\n|e:三月精|4体を召喚し1枚を選んで手札に、残りを山札に加える。"
+ChooseFriend:
+  Name: 待ち合わせ
+  Description: "ランダムな{Value1}枚の|パートナー|カードから最大{Value2}枚を選び、手札に加える。\nそれらのカードはマナの色に関係なく使用できる。\n\
+    候補となるカードは色やキャラの制限を無視して選ばれる。"
+WhiteWorld:
+  Name: 銀世界
+  Description: '{PlayerName}のターン開始時、敵全体に|冷気|を与える。'
+  UpgradedDescription: "{PlayerName}のターン開始時、敵全体に|冷気|を与える。\n敵全体に|冷気|を与える。"
+PlayWithWaste:
+  Description: "ランダムな{Value1}枚のレアでない|道具|カードから1枚を選び、手札に加える。\nそれは|複製|と|消耗品【1】|を持つ。"
+  Name: ゴミ漁り
+ForeverCool:
+  Description: "|パートナー|の|a:主動技能|か|u:フィニッシュスキル|を使用したとき、ランダムな敵に|冷気|を与える。\n敵が|冷気|を付与される度、手札のランダムな|パートナー|は|支援度|1を得る。"
