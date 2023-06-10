@@ -64,8 +64,8 @@ TempRetain:
     que se juegue esta carta, o al comienzo del siguiente turno.
 Echo:
   Name: Eco
-  Description: Si esta carta no es una copia, juégalo para agregar una copia con |Exilio|
-    en tu mano.
+  Description: Cuando se juega, si esta carta no es una |Copia|, añade una copia a
+    la mano. Tiene |Exilio|.
 Debut:
   Name: Debut
   Description: Se activa el efecto cuando se juega esta carta solo por primera vez
@@ -89,7 +89,7 @@ Scry:
     Cualquier número de ellos puede enviarse a la pila de descarte.
 Purify:
   Description: Convierte X del color de maná más abundante en <sprite="ManaSprite"
-    name="C">.
+    name="C"> maná incoloro.
   Name: Purificar X
 Expel:
   Description: Se activa cuando esta carta se usa para derrotar a un enemigo que no
@@ -107,8 +107,8 @@ Overdrive:
     |Carga|.
 Grow:
   Name: Crecimiento
-  Description: Cuando se juegue esta carta, mejórala según la cualidad indicada hasta
-    el final del combate.
+  Description: Cuando se juega, mejora esta carta por el efecto del |Crecimiento|
+    hasta el final del combate.
 Replenish:
   Name: Reponer
   Description: Cuando robas una carta, roba otra carta extra.
@@ -116,7 +116,7 @@ AutoExile:
   Name: Auto Exilio
   Description: "Cuando estés a punto de exceder el tamaño de tu mano, |Exilia| esta\
     \ carta.\n(Prioriza las cartas con |Auto Exilio| situadas más a la izquierda)\n\
-    Algunos efectos que podrían causar un bucle infinito no se activarán."
+    No activa ciertos efectos que pueden generar bucles infinitos."
 Purified:
   Name: Puro
   Description: El coste de mana de todos los colores es removido de la carta.
@@ -124,34 +124,33 @@ Agent:
   Description: Solo puedes tener un |Estado Mental| activo a la vez.
   Name: Estado Mental
 Overdraft:
-  Description: "Aleatoriamente bloquea X del base de mana, no se podrá obtener al\
-    \ comienzo del siguiente turno.\n(El maná perdido se indica en la base de maná\
+  Description: "Al comienzo del próximo turno, pierde X maná aleatoriamente.\n(Indicado\
     \ en la parte superior izquierda de la pantalla.)"
   Name: Sobregiro X
 CopyHint:
   Name: Copia
-  Description: Una |Copia| de una carta creada en mitad del combate. No se puede volver
-    a copiar.
+  Description: Una |Copia| de una carta creada en mitad del combate. Las |Copias|
+    no pueden ser copiadas.
 FriendCard:
-  Name: Carta Aliada
-  Description: "Una vez invocadas, las |Aliadas| pueden proporcionar una variedad\
-    \ de efectos diferentes.\nEste tipo de cartas no pueden ser copiadas."
+  Name: Compañera
+  Description: "Una vez convocadas, las |Compañeras| pueden proporcionar una variedad\
+    \ de efectos diferentes.\nNo puede ser objetivo de efectos que |Copian| cartas."
 Friend:
   Name: Aliada
-  Description: "Usa la carta para invocar a una |Aliada|.\n<sprite=\"Passive\" name=\"\
-    x\">|f:Habilidad Pasiva| se activa en cada turno (generalmente al final del turno).\n\
-    Se puede jugar otra vez la carta para usar su <sprite=\"Active\" name=\"x\">|a:Habilidad\
-    \ Activa| o <sprite=\"Ultimate\" name=\"x\">|u:Definitiva|.\nEste tipo de cartas\
-    \ no pueden ser copiadas."
+  Description: "Usa la carta para convocar a una |Compañera|.\nSu <sprite=\"Passive\"\
+    \ name=\"x\">|f:Habilidad Pasiva| se activa solo una vez por turno (generalmente\
+    \ al final del turno).\nEsta carta se puede volver a jugar para activar su <sprite=\"\
+    Active\" name=\"x\">|a:Habilidad Activa| o <sprite=\"Ultimate\" name=\"x\">|u:Habilidad\
+    \ Definitiva|.\nNo puede ser objetivo de efectos que |Copian| cartas."
 FriendSummoned:
-  Description: "Permanece en la mano cuando termina el turno.\n<sprite=\"Passive\"\
-    \ name=\"x\">|f:Habilidad Pasiva| se activa en cada turno (generalmente al final\
-    \ del turno).\nJuega otra vez la carta para usar su <sprite=\"Active\" name=\"\
-    x\">|a:Habilidad Activa| o <sprite=\"Ultimate\" name=\"x\">|u:Definitiva|.\nEste\
-    \ tipo de cartas no pueden ser copiadas."
-  Name: Aliada (Invocada)
+  Description: "Permanece en la mano entre cada turno.\nLa <sprite=\"Passive\" name=\"\
+    x\">|f:Habilidad Pasiva| se activa en cada turno (generalmente al final del turno).\n\
+    Esta carta se puede jugar para activar su <sprite=\"Active\" name=\"x\">|a:Habilidad\
+    \ Activa| o <sprite=\"Ultimate\" name=\"x\">|u:Habilidad Definitiva|.\nNo puede\
+    \ ser objetivo de efectos que |Copian| cartas."
+  Name: Compañera (Convocada)
 Loyalty:
-  Name: Lealtad
-  Description: "Requerido para usar la |a:Habilidad Activa| y |u:Definitiva| de una\
-    \ |Aliada|.\nSi llega a 0 o usa su |u:Definitiva|, la |Aliada| será eliminada\
-    \ de la batalla."
+  Name: Influencia
+  Description: "Se usa para activar las |a:Habilidades Activas| y |u:Habilidades Definitivas|.\n\
+    Después de ser reducido a cero o usar su |u:Habilidad Definitiva|, elimina a la\
+    \ carta |Compañera| del combate."
