@@ -1715,10 +1715,10 @@ IceBlock:
     \ and |Graze|.\n|Retain| the hand this turn. End {PlayerName}'s turn."
   Name: Ice Block
 WhiteWorld:
-  Description: "Whenever a card with |Overdraft| is played, {Value1:plural one='%\
-    \ random card' other='% random cards'} in the hand |temporarily costs| 1 random\
-    \ mana less."
+  Description: "At the start of {PlayerName}'s turn, apply |Cold| to each enemy."
   Name: Pure White World
+  UpgradedDescription: "At the start of {PlayerName}'s turn, apply |Cold| to each\
+    \ enemy.\nApply |Cold| to each enemy."
 ReimuFreeAttack:
   Description: "Gain {Block} |Block|.\nThe next {Value1} attack card{Value1:plural\
     \ one='' other='s'} played cost {Mana} to play."
@@ -2261,3 +2261,12 @@ ChooseFriend:
 LunaFriend:
   Description: '{FriendP} Gain {Block} |Block|.'
   Name: Luna, Silent Moonlight
+  ExtraDescription2: "{FriendU} Gain |Flawless| for {Value2} turn{Value2:plural one=''\
+    \ other='s'}."
+  ExtraDescription1: '{FriendA} Deal {Damage} attack damage to a random enemy {Value1}
+    times.'
+StarFriend:
+  ExtraDescription2: "{FriendU} Whenever each {SelfName} deals damage, apply {Light}\
+    \ |Lock-On|.\nImmediately deal damage {Value2} times."
+  Description: '{FriendP} Deal {Damage} attack damage to each enemy.'
+  ExtraDescription1: '{FriendA} Immediately deal damage {Value1} times.'
