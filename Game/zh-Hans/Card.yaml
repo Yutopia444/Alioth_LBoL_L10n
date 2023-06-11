@@ -1382,6 +1382,12 @@ BlueRose:
     造成 {Damage} 点伤害。
     如果目标处于|寒冷|，获得 {Shield} 点|护盾|。
 
+CoolBreeze:
+  Name: 凉爽清风
+  Description: |-
+    获得 {Block} 点|格挡|。
+    任意敌人处于|寒冷|时，|升级| {Value1} 张随机的手牌，技能牌优先。
+
 CirnoInForest:
   Name: 绝妙的伪装
   Description: |-
@@ -1421,12 +1427,6 @@ CirnoConsiderDefense:
 CirnoConsiderDraw:
   Name: 深思熟虑：醒悟
   Description: 抽牌。
-
-CoolBreeze:
-  Name: 凉爽清风
-  Description: |-
-    获得 {Block} 点|格挡|。
-    任意敌人处于|寒冷|时，|升级| {Value1} 张随机的手牌，技能牌优先。
 
 ColdBreath:
   Name: 钻石气息
@@ -1522,13 +1522,6 @@ Tether:
     获得 {Block} 点|格挡|。
     手中的所有|同伴|牌获得 {Value1} 点|支援度|。
 
-CallFriends:
-  Name: 呼朋唤友
-  Description: 从 {Value1} 张随机的已召唤|同伴|牌中选择一张加入手中。
-  UpgradedDescription: |-
-    从 {Value1} 张随机的已召唤|同伴|牌中选择一张加入手中。
-    额外添加一张|e:三月精|作为选项。
-
 FairyWrath:
   Name: 自然之怒
   Description: |-
@@ -1552,6 +1545,13 @@ LilyFriend:
   ExtraDescription1: '{FriendA}获得 {Value2} 点随机的法力。'
   ExtraDescription2: '{FriendU}恢复 {Heal} 点生命。'
 
+CallFriends:
+  Name: 呼朋唤友
+  Description: 从 {Value1} 张随机的|同伴|牌中选择一张加入手中，它们处于已召唤的状态。
+  UpgradedDescription: |-
+    从 {Value1} 张随机的|同伴|牌中选择一张加入手中，它们处于已召唤的状态。
+    额外添加一张|e:三月精|作为选项。
+
 FairyTeam:
   Name: 妖精大战争
   Description: |-
@@ -1560,7 +1560,7 @@ FairyTeam:
 
 FairyTree:
   Name: 妖精之家
-  Description: 召唤一名|同伴|时，获得 {Value1} 点|格挡|。
+  Description: 主动打出而召唤一名|同伴|时，获得 {Value1} 点|格挡|。
 
 MoreFriends:
   Name: 社交达人
@@ -2100,7 +2100,7 @@ HinaAttack:
 
 BailianBlack:
   Name: 拥抱黑暗
-  Description: 所有非攻击非|能力|的牌，打出后被|放逐|，它们的费用降至{Mana}。
+  Description: 所有防御、技能和状态牌，打出后被|放逐|，它们的费用降至{Mana}。
   FlavorText: 妖术通念过，佛祖心中留。世人若学我，如同进魔道。
 
 GrimoireStudy:
@@ -2219,7 +2219,7 @@ MeihongPower:
   Name: 不死的烈焰
   Description: |-
     {PlayerName}的回合开始时，获得 {Value1} 点|火力|。
-    战斗结束时，如{PlayerName}的生命值低于一半，恢复 {Value2} 点生命。
+    战斗结束时，如果{PlayerName}的生命值低于一半，恢复 {Value2} 点生命。
   FlavorText: 被诅咒的永生者，此世永为苦行。
 
 SummerFlower:
@@ -2467,7 +2467,7 @@ AliceAttack:
 YukariBox:
   Name: 打开的玉匣
   Description: |-
-    占卜 {Scry} ，抽 {Value1} 张牌。
+    |占卜| {Scry} ，抽 {Value1} 张牌。
     将弃牌堆洗入抽牌堆，然后重洗抽牌堆。
   FlavorText: 生活就像隙间里的漂流物，你永远不知道下一个掉出来的是什么。
 
