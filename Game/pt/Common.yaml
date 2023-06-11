@@ -176,21 +176,22 @@ StartGame:
   SetJadeBox: Definir Caixa de Jade
   JadeBoxLock: Modo Caixa de Jade estará disponível desbloqueando o Nível 10.
   NoClearHind: Conquistas são desativadas quando usar seeds ou Caixa de Jade.
-  PuzzleHint: "Resolva enigmas para aumentar o ganho de pontos azuis e sua experiência\
-    \ de investigação.\nDesbloqueado após atingir no Nível 4."
+  PuzzleHint: "Aceite solicitações e torne o jogo mais desafiador para aumentar o\
+    \ ganho de pontos azuis e sua experiência de investigação.\nDesbloqueado após\
+    \ atingir no Nível 4."
   JadeBoxSelectedCount: '{0}/{1} selecionado'
 Museum:
-  UpgradedFilter: Aprimorada
+  UpgradedFilter: Melhorado
   CardStyleFilter: Estilo de Carta
   UnlockAndReveal: Cartas Vistas
   Rarity: Raridade
-  ManaCost: Valor de Mana
+  ManaCost: Custo de Mana
   Character: Personagens
   ManaType: Cores
   CardType: Tipos de Cartas
   UnRevealCard: Carta desconhecida
-  UnRevealExhibit: Exibição desconhecida
-  LockExhibit: Exibição bloqueada
+  UnRevealExhibit: Exposição desconhecida
+  LockExhibit: Exposição bloqueada
   ExhibitType:
     T1: Tesouros
     T2: Brilhante
@@ -198,9 +199,19 @@ Museum:
     T4: Incomum
     T5: Comum
     T6: Loja
-    T7: Evento
+    T7: Eventos & Outros
   CardStyleTooltip: "Somente cartas que possuem múltiplos estilos são exibidas.\n\
     Escolha a ilustração que você deseja exibir no painel de detalhes da carta."
+  CardNotReady: "Esta carta ainda não está pronta.\nPor favor, aguarde atualizações\
+    \ do jogo."
+  AchievementCount: Conquistas obtidas
+  All: Todos
+  Unlock: Obtido
+  NotUnlock: Não Obtido
+  Hidden: Oculto
+  HiddenDescription: Os detalhes desta conquista não serão revelados até que ela seja
+    desbloqueada.
+  TextFilterHint: Pesquisar texto
 Setting:
   Main: Geral
   Preference: Jogabilidade
@@ -231,15 +242,16 @@ Setting:
   Show: Mostrar
   Hide: Ocultar
   AnimatingEnvironment: Fundo Animado
-  AnimatingEnvironmentDescription: Mostrar fundos dinâmicos durante a batalha.
-  SingleEnemyAutoSelect: Auto-Alvejo Único
-  SingleEnemyAutoSelectDescription: Se deseja usar uma carta sem ter que selecionar
-    o alvo se apenas houver um inimigo.
+  AnimatingEnvironmentDescription: Mostrar fundos dinâmicos durante a batalha e também
+    na sala da Yukari.
+  SingleEnemyAutoSelect: Auto-seleção de alvo único
+  SingleEnemyAutoSelectDescription: Selecione esta opção se desejar selecionar o alvo
+    automaticamente na presença de apenas um único inimigo.
   Enable: Habilitar
   Disable: Desabilitar
   XCostWarning: Aviso de Custo X
-  XCostWarningDescription: Se deseja ver um aviso quando uma carta de custo X for
-    usada sem escolher manualmente a mana.
+  XCostWarningDescription: Habilite para ver um aviso quando uma carta de custo X
+    for usada sem escolher manualmente a mana.
   Warn: Avisar
   DontWarn: Não Avisar
   HintLevel: Dicas de Jogo
@@ -257,9 +269,9 @@ Setting:
     Select10: Selecionar 10
     UseUs: Usar Spell
     EndTurn: Finalizar Turno
-    ToggleBaseDeck: Mostrar Deck
+    ToggleBaseDeck: Mostrar Baralho
     ToggleDrawZone: Mostrar Pilha de Compra
-    ToggleDiscardZone: Mostrar Pilha de Discarte
+    ToggleDiscardZone: Mostrar Pilha de Descarte
     ToggleMap: Mostrar Mapa
     SkipDialog: Avanço Rápido de Diálogo (Segure)
     ShowEnemyMoveOrder: Mostrar Ordem do Turno Inimigo (Segure)
@@ -268,38 +280,54 @@ Setting:
     Select9: Selecionar 9
     ToggleExileZone: Mostrar Exilados
     RebindMessage: Pressione a tecla para "{0}", pressione ESC para cancelar.
-  TooltipSizeDescription: Ajusta o tamanho geral das dicas para cartas, exibições,
+    PoolC: Mova <sprite="ManaSprite" name="C"> para a seleção selecionada
+    PoolR: Mova <sprite="ManaSprite" name="R"> para a seleção selecionada
+    PoolG: Mova <sprite="ManaSprite" name="G"> para a seleção selecionada
+    PoolW: Mova <sprite="ManaSprite" name="W"> para a seleção selecionada
+    PoolU: Mova <sprite="ManaSprite" name="U"> para a seleção selecionada
+    PoolB: Mova <sprite="ManaSprite" name="B"> para a seleção selecionada
+    Select11: Selecionar 11
+    Select12: Selecionar 12
+    PoolP: Mova <sprite="ManaSprite" name="P"> para a seleção selecionada
+    ToggleMinimize: Ocultar Interface Temporariamente
+  TooltipSizeDescription: Ajusta o tamanho geral das dicas para cartas, Exposições,
     etc.
   Resolution: Resolução
   RefreshRate: Taxa de Atualização
   ScreenVibration: Tremor de Tela
   TurboModeDescription: Faz com que a maioria das animações e efeitos sejam |significativamente
     mais rápidos|.
-  RandomResultDescription: "Se deseja mostrar os resultados aleatórios (cartas, exibições,\
+  RandomResultDescription: "Se deseja mostrar os resultados aleatórios (cartas, Exposições,\
     \ etc) dos eventos.\nOs resultados aleatórios são predeterminados para essa partida\
     \ e não mudarão quando você reiniciar o jogo."
   KeywordDescription: "Quando definido como |Breve|, descrições para palavras-chave\
     \ e mecânicas comuns deixam de ser exibidas nas dicas.\n|r: Somente recomendado\
-    \ para jogadores experientes.|\n|d:(Palavras-chave e mecânicas comuns inclui ||Poder||d:,|\
-    \ |Espírito||d:,| |Proteção||d:,| |Barreira||d:,| |Preciso||d:,| |Mana Cromática||d:,|\
-    \ Aprimorar| |d: e| |Habilidades||d:.)|"
+    \ para jogadores experientes.|\n|d:(Palavras-chave e mecânicas comuns inclui ||Poder\
+    \ de Fogo||d:,| |Espírito||d:,| |Bloqueio||d:,| |Barreira||d:,| |Esquiva||d:,|\
+    \ |Mana Colorida||d:,| Melhorar| |d: e| |Talentos||d:.)|"
+  ShowShortcut: Mostrar Atalho de Cartas na Mão
+  ShowShortcutDescription: Mostra o atalho acima das cartas que estão na mão
+  ShakeDescription: Selecione se deseja um efeito de tremor de tela causado por dano
+    de batalha.
+  Shake: Tremer Tela
 Chat:
-  Sunny1: Hoje mostraremos {0} quão poderosas somos!
+  Sunny1: Hoje mostraremos à {0} o quão poderosas somos!
   Aya3: Veja o que {0} tem em suas mãos! Essa é a prova de sua culpa!
-  Siji2: Que repugnante, {0}.
+  Siji2: Que repugnante, {0:cf}.
   Terminator2: "DANOS LEVES...\nREPARANDO..."
   StarSpell: Posso detectar cada movimento seu~
   Aya2: Temos um suspeito insatisfeito tentando interromper a entrevista!
-  Nitori2: Acho que suas capacidades defensivas precisam de alguma revisão.
-  Clownpiece2: Absorva essas jóias da luz!
+  Nitori2: Parece que suas capacidades defensivas carecem de uma revisão e aprimoramento.
+  Clownpiece2: Absorva essas joias da luz!
   SijiTurn1: Desculpa inválida. Sentença estendida por um ano.
   DoremyKill: Você não precisa mais acordar~
   LongEscape2: Por aqui para o Santuário Moriya~
-  FraudRabbitStart1: Tenho informações sobre o culpado, é seu por um preço.
-  FraudRabbitStart2: Eu tenho a tecnologia mais recente da lua, é sua por um preço
-  FraudRabbitOnlyOne: Por que sou a única sobrando? Idiotas inúteis.
+  FraudRabbitStart1: Tenho informações sobre o culpado, é seu, mas por um preço.
+  FraudRabbitStart2: Eu tenho a tecnologia mais recente da lua, é sua, mas por um
+    preço.
+  FraudRabbitOnlyOne: Por que sou a única que restou? Idiotas inúteis.
   FraudRabbitNoMoney: Nem mesmo um centavo? Patético.
-  FraudRabbitLongTurn: Tsc, isso está demorando muito. Tô fora.
+  FraudRabbitLongTurn: Tsc, isso está demorando muito. Tô pulando fora.
   FraudRabbitPlayer: Ei! Ela fugiu!
   SickGirl: '*Cof*... *cof*...'
   WaterGirl: Vou fazer você provar a minha dor!
@@ -309,25 +337,25 @@ Chat:
   HetongKailang1: Tudo pronto, novo em folha!
   HetongKailang2: Bem~, acho que isso servirá por enquanto.
   HetongKailang3: Vamos lá pessoal, vocês conseguem!
-  HetongYinchen1: Oh não, você quebrou {0}.
-  HetongYinchen2: '{0}!'
+  HetongYinchen1: Oh não, {0} está quebrado.
+  HetongYinchen2: '{0}!!!'
   Scout: Sonda
   Purifier: Baymax
   Terminator:  T-800 
-  Terminator0: DIAGNÓSTICOS EM ANDAMENTO...
+  Terminator0: EXECUTANDO VARREDURA...
   Terminator1: "SISTEMA FUNCIONAL...\nREMOVENDO LIMITADORES."
-  Terminator3: "DANOS CRÍTICOS...\nREPARANDO..."
+  Terminator3: "DANOS CRÍTICOS...\nREPARO DE EMERGÊNCIA..."
   Sunny2: O primeiro a pegar a exposição fica com ela!
   Luna: Certo!
   Star: Certo!
-  SunnySpell: Raios de luz! Convergem em mim!
+  SunnySpell: Raios de luz! Concentrem em mim!
   LunaSpell: Que o danmaku permaneça imóvel.
-  Aya1: A verdade por trás da perturbação desta noite em Eientei, trazida até você
+  Aya1: A verdade por trás da perturbação desta noite em Eientei, em primeira mão
     pelo Jornal Bunbunmaru.
-  Rin1: Que fofo {0} que você tem aí, mana! Eu realmente quero isso!
-  Rin2: Ai! Você é tão cruel mana~
+  Rin1: Que {0} mais adorável, hein, maninha! Eu realmente quero isso!
+  Rin2: Ai! Você é tão cruel, mana~
   Nitori1: Eu gastei muito tempo e esforço modificando isso.
-  Youmu1: En garde!
+  Youmu1: Em Guarda!
   YoumuTuanzi: Se você quiser mais Dango Congelado, volte imediatamente!
   YoumuMooncake: Devolve o meu {0}!
   Kokoro1: Sinto como se muitas das minhas máscaras tivessem desaparecido recentemente.
@@ -345,6 +373,13 @@ Chat:
   LongBribery2: Legal. Legal.
   LongEscape1: Oh não, fui derrotada.
   YuyukoMooncake: Estou realmente desejando um pouco {0}...
+  LoveGirlFallInLove: Meu desejo finalmente se tornou realidade.
+  Fox0: Oh meu Deus! Que jovem mais adorável~
+  HardworkRabbit1: Alvo terráqueo avistado!
+  HardworkRabbit2: Vamos trabalhar duro!
+  Fox1: Oh, você vai amar isso, fofuxa~
+  Fox2: Você ainda não viu nada, querida~
+  LazyRabbit: Não vou mais pegar leve...
 ErrorChat:
   MoneyNotEnough: Não tenho dinheiro suficiente.
   CardNotInHand: A carta específica não está mais em mãos.
@@ -406,11 +441,11 @@ CardDetail:
 History:
   Mana: Mana
   Money: Dinheiro {0}
-  Exhibit: 'Exibições: {0}'
+  Exhibit: 'Exposições: {0}'
   Card: 'Cartas: {0}'
   StatsSegment: '{0}: {1}'
-  PlayedTime: Tempo Jogado
-  Puzzles: '{0} Enigma'
+  PlayedTime: 'Tempo Jogado: {0}'
+  Puzzles: '{0} Solicitações'
 System:
   ReenterStation: Reiniciar Nível
   ResumeGame: Continuar Jogo
@@ -429,7 +464,7 @@ Map:
   Enemy: Inimigo
   EliteEnemy: Elite
   Supply: Apoio da Reisen
-  Gap: Fenda
+  Gap: Fronteira
   Shop: Loja da Takane
   Adventure: Evento
   Boss: Chefe
