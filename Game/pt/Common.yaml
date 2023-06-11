@@ -58,7 +58,7 @@ Explain:
     R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
     ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. Você pode encontrar\
     \ cartas Únicas da Reimu e da Marisa, visto que possui o |Grimório Negro|.\n\n\
-    \    Neste case, pode encontrar uma carta roxa que custe <sprite=\"ManaSprite\"\
+    \    Neste case, pode encontrar uma carta preta que custe <sprite=\"ManaSprite\"\
     \ name=\"B\"><sprite=\"ManaSprite\" name=\"B\"> visto que você pode pagar <sprite=\"\
     ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> para a jogar. Contudo,\
     \ você |r:não pode| encontrar uma carta azul e roxa que custe <sprite=\"ManaSprite\"\
@@ -525,20 +525,21 @@ Tooltip:
       \ a ordem das cartas a serem compradas.|"
     Name: Pilha de Compra
   EndTurn:
-    Description: "Clique para terminar o seu turno.\n\nVocê descarta a sua mão |d:(sem\
-      \ ativar os seus efeitos de descarte)|, e depois cada inimigo atua consoante\
-      \ o seu |Intuito|.\nApós todos os inimigos terem atuado, começa um turno novo."
+    Description: "Clique para terminar o turno.\n\nVocê descarta a sua mão |d:(sem\
+      \ ativar os seus efeitos de descarte)|, e depois cada inimigo atua de acordo\
+      \ com o seu respectivo |Intuito|.\nApós todos os inimigos terem atuado, um novo\
+      \ turno começa."
     Name: Terminar Turno
   BattleMana:
     Description: "Mana que não tenha sido gasta aparece aqui.\nVocê precisa de mana\
       \ para jogar cartas e para pagar para custos |X|.\n\nClique num símbolo de mana\
       \ para o \"flutuar\", para que seja o primeiro a ser gasto ou para o usar para\
-      \ pagar um custo |X|.\nClique num símbolo de mana flutoado para o retornar à\
-      \ sua reserva de mana."
+      \ pagar um custo |X|.\nClique num símbolo de mana flutuando para o retornar\
+      \ à sua reserva de mana."
     Name: Reserva de Mana
-  UsTitle: '{1}'
+  UsTitle: '{0} "{1}"'
   DetailedHint:
-    Description: "Mostra todas as dicas do jogo.\nÉ a minha primeira vez a jogar um\
+    Description: "Mostra todas as dicas do jogo.\nÉ a minha primeira vez jogando um\
       \ jogo de deck-building."
     Name: Dicas Detalhadas
   DontShowHint:
@@ -551,19 +552,19 @@ Tooltip:
     Name: 'Dificuldade: Difícil'
     Description: Inimigos possuem mais vida e causam mais dano.
   DiscardZone:
-    Name: Pilha de Descarte
-    Description: "Sempre que voçe descarta uma carta, ela vem para aqui.\nNo fim do\
-      \ seu turno, todas as cartas que sobrarem na sua mão também são descartadas\
+    Name: Descarte
+    Description: "Sempre que você descarta uma carta, ela vai para a pilha de descarte.\n\
+      No fim do seu turno, todas as cartas que sobrarem na sua mão também são descartadas\
       \ |d:(sem ativar os seus efeitos de descarte)|.\n\nClique para ver as cartas\
       \ que estão na sua pilha de descarte."
   ExileZone:
     Name: Exílio
-    Description: "Cartas |Exiladas| vêm para aqui.\n\nClique para ver as cartas que\
-      \ foram |Exiladas| neste combate."
+    Description: "Cartas |Exiladas| são enviadas para esta pilha.\n\nClique para ver\
+      \ as cartas que foram |Exiladas| neste combate."
   BaseMana:
     Name: Base de Mana
-    Description: "No inicio de cada turno, você obtem mana igual à mana presente na\
-      \ sua |base de mana|.\nA sua |base de mana| pode aumentar adquirindo |Exibições\
+    Description: "No inicio de cada turno, você obtém mana igual à mana presente na\
+      \ sua |base de mana|.\nA sua |base de mana| pode aumentar adquirindo |Exposições\
       \ Brilhantes|.\n\nA sua |base de mana| também afeta os tipos de cartas que você\
       \ pode encontrar."
   GameSeed:
@@ -571,7 +572,7 @@ Tooltip:
     Description: "Cada partida gera uma Seed aleatória. Duas partidas com a mesma\
       \ Seed serão idênticas.\n\nClique para copiar a Seed para a sua área de transferência."
   EntityTitle:
-    Neutral: Neutra
+    Neutral: Neutro
     White: Branca
     Blue: Azul
     Black: Preta
@@ -579,10 +580,11 @@ Tooltip:
     Green: Verde
     Colorless: Incolor
     MultiColor: Multicolorida
+    Character: Único
   BriefHint:
     Name: Dicas Breves
-    Description: "Apenas dicas parciais serão mostradas.\nJá joguei jogos parecidos,\
-      \ como Slay the Spire."
+    Description: "Apenas dicas relevantes para mecânicas exclusivas deste jogo serão\
+      \ exibidas.\nJá joguei jogos parecidos, como Slay the Spire."
 Gap:
   Headers:
   - O que devo fazer agora~
@@ -652,8 +654,8 @@ BattleHint:
   Detailed: Mostrar dicas detalhadas
   Brief: Mostrar dicas breves
   DontShow: Não mostrar dicas
-  Prev: Atrás
-  Next: Próx.
+  Prev: Anterior
+  Next: Seguinte
   BasicBattle: "Jogue cartas da mão para expelir o inimigo!\nCartas jogadas de sua\
     \ maõ são movidas para a pilha de descarters. No fim do turno do jogador, as cartas\
     \ que restarem na sua mão também serão movidas para a pilha de descartes.\nNo\
