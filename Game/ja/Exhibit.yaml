@@ -47,7 +47,7 @@ MarisaR:
   Description: "マナ基盤に{BaseMana}を加え、|魔理沙|専用のカードが出現するようになる。\n{Mana}を支払って攻撃カードを使用するたび、|チャージ|{Value1}を得る。"
   FlavorText: 先天八卦が描かれている。
 SakuyaU:
-  Description: "マナ基盤に{BaseMana}を加え、|咲夜|専用のカードが出現するようになる。\n各ターンの開始時、カードを{Value1}枚多く引く。"
+  Description: "マナ基盤に{BaseMana}を加え、|咲夜|専用のカードが出現するようになる。\n各戦闘の{Value2}ターン目まで、ターン開始時にカードを{Value1}枚多く引く。"
   Name: マジックポーカー
 PiaoliangPanzi:
   Description: "マナ基盤に{BaseMana}を加える。\n戦闘開始時、手札のカード{Value1}枚を戦闘終了時までアップグレードする。"
@@ -55,8 +55,7 @@ PiaoliangPanzi:
   FlavorText: 放り投げて割って使おう。
 DatiangouMaifan:
   Name: 大天狗の麦飯
-  Description: "マナ基盤に{BaseMana}を加える。\n戦闘を{Value1}回終える度、 {Value2} <sprite=\"Point\"\
-    \ name=\"Power\">を得る。"
+  Description: "マナ基盤に{BaseMana}を加える。\n各戦闘終了時、<sprite=\"Point\" name=\"Power\">{Value2}を得る。"
 ClassicWunvfu:
   Description: "マナ基盤に{BaseMana}を加える。\n各ターンの開始時、手札にある|アップグレード|されたカード1枚につき {Value1} |ブロック|を得る。"
   Name: 昔の巫女服
@@ -210,6 +209,7 @@ IdolTshirt:
 KongZhanpinhe:
   Name: 空の展示箱
   FlavorText: 幻想郷の常識を超えた精巧なカットのガラス箱。
+  Description: これ以上展示物を入手できない。
 PenzaiYoutan:
   Name: 憂曇華の盆栽
   Description: ターン終了時にマナを失わない。
@@ -247,6 +247,7 @@ He3:
   FlavorText: 月の表のお土産。
 HuanxiangxiangYuanqi:
   Name: 幻想郷縁起
+  Description: '|能力|カードを使用する度、{PlayerName}のライフを{Value1}回復する。'
 XiaorenWan:
   Name: 小人族のお椀
 TangSan:
@@ -266,29 +267,37 @@ FeixiangJian:
   Description: '{PlayerName}のターン開始時に、敵全体に{Value1}のダメージを与える。'
 Mengriji:
   Name: 夢日記
+  Description: 前のターンに防御カードを使用していなかった場合、ターン開始時に{Mana}を得る。
 Bianhua:
   Name: 彼岸花
   Description: 敵を倒すと、{Mana}を得る。
 Heilianhua:
   Name: ブラック・ロータス
-  Description: ターン開始時、{Mana}を得る。
+  Description: 戦闘開始時、{Mana}を得る。
   FlavorText: 「<sprite="ManaSprite" name="P"><sprite="ManaSprite" name="P"><sprite="ManaSprite"
     name="P">を得る。」から「<sprite="ManaSprite" name="B"><sprite="ManaSprite" name="B">を得る。」に変更。
 Xiangrikui:
   Name: 向日葵
+  FlavorText: あの日花を摘み取った無謀な男の名前を僕達はまだ知らない。
+  Description: '{Value1}ターン周期で数えて、{Value2}から{Value3}ターン目のターン開始時に{Mana}を得る。'
 PortalGun:
   Name: ポータルガン
+  Description: 店の商品が{Value1}%値引きされ、品切れしなくなる。
 Pingguo:
   Name: りんご
   Description: 取得時、{PlayerName}の最大ライフを{Value1}増加させる。
 BoreMianju:
   Name: 般若のお面
+  Description: 1ターンに攻撃カードを{Value1}枚プレイする度、|火力|{Value2}を得る。
 HuonanMianju:
-  Name: ひょっとこのお面
+  Name: ひょっとこ
+  Description: 1ターンに攻撃カードを{Value1}枚プレイする度、|ブロック|{Value2}を得る。
 HuliMianju:
   Name: 狐のお面
+  Description: 1ターンに攻撃カードを{Value1}枚プレイする度、|霊力|{Value2}を得る。
 XiwangMianju:
-  Name: 希望のお面
+  Name: 希望の面
+  Description: 1ターンに攻撃カードを{Value1}枚プレイする度、<sprite="Point" name="Power">{Value2}を得る。
 SongjingMuyu:
   Name: 木魚
 Saiqianxiang:
@@ -350,8 +359,10 @@ DragonBall:
   FlavorText: ドラゴンボール(隠し)
 ShoushiYubi:
   Name: 守矢のお守り
+  FlavorText: 博麗神社のお守りよりずっと効きますよ！
+  Description: スキマで、カードを1枚削除する|お祓い|が選択できる。
 DiyuChepiao:
-  Name: 地獄へのチケット
+  Name: 地獄行きの切符
   Description: '{PlayerName}がライフを失うたび、カードを{Value1}枚引く。'
 KoishiB:
   Name: イマジナリーフレンド
@@ -364,8 +375,11 @@ CirnoU:
 Yueshan:
   Name: 月扇
   FlavorText: 以前は攻撃に使われていたそうです。
+  Description: '{PlayerName}のターン開始時、|ブロック|は半分しか失われない。'
 LinghunBaoshi:
-  Name: 魂の宝石
+  Name: ソウルジェム
+  FlavorText: 中が濁り始めたらご用心。
+  Description: スキマに入った次の戦闘開始時、{Mana}を得る。
 JimuWanju:
   Name: 積み木おもちゃ
   Description: 通常の決闘で追加のカード報酬を得ることができるようになる。
@@ -391,7 +405,8 @@ JingzhiChaju:
 DiannaoPeijian:
   Name: コンピューターパーツ
 ShanliangDengpao:
-  Name: 電球
+  Name: 煌めく電球
+  Description: スキマで、ランダムなレアカードを入手する|閃き|が選択できる。
 ZhangchibangQiu:
   Name: 翼の生えたボール
   Description: 取得時、{PlayerName}が{Value1}<sprite="Point" name="Gold">を得る。
@@ -425,6 +440,7 @@ Dahuoji:
   Description: 各決闘で{PlayerName}が初めて攻撃ダメージを与えるとき、対象に{Value1}の脆弱を付与する。
 ShanshuoBishou:
   Name: Blink Dagger
+  Description: 戦闘開始時、手札を任意の枚数捨てて同じ枚数だけカードを引く。
 PingfanDao:
   Name: 普通の包丁
 Shaoyao:
@@ -467,6 +483,9 @@ WaijieYanshuang:
   Name: 外の世界のアイクリーム
 JingQiXi:
   Name: 鯨の息吹
+  ExtraDescription: "奇数ターン目の開始時、{PlayerName}はランダムな種類のマナ1点を失う。\n偶数ターン目の開始時、前のターンに失ったものと同じ種類のマナ2点を得る。\n\
+    次のターン開始時、{ManaGain}を得る。"
+  Description: "奇数ターン目の開始時、{PlayerName}はランダムな種類のマナ1点を失う。\n偶数ターン目の開始時、前のターンに失ったものと同じ種類のマナ2点を得る。"
 SadinYuebing:
   Name: サルデーニャの月餅
   FlavorText: プリズムリバー姉妹や紅美鈴氏などを含めた食品評論家陣はこれに対して強い嫌悪感を抱いている。
@@ -479,3 +498,13 @@ CirnoG:
   FlavorText: ピンチはチャンス。
 Shanbibu:
   Description: '{PlayerName}の2ターン目の開始時、|グレイズ|2を得る。'
+Zuoshan:
+  Name: 左団扇
+  Description: 各戦闘で最初にカードを使用した時、|臨時コスト|{Mana}と|廃棄|を持つコピーを手札に加える。
+DiyinLeigu:
+  Description: カードを使用する度、そのカードが前のターンの最後に使用したカードと同じ色を持つ場合、|臨時火力|{Value1}を得る。
+  Name: 重低音バスドラム
+  ExtraDescription: "カードを使用する度、そのカードが前のターンの最後に使用したカードと同じ色を持つ場合、|臨時火力|{Value1}を得る。\n\
+    （対象となる色：{LastColor}）"
+LoushuiShaozi:
+  Name: 底抜け柄杓
