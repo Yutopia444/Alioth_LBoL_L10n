@@ -230,6 +230,7 @@ FreeFly:
 YinyangXueyin:
   Name: 음양혈인
   Description: "체력을 {Value2} 잃습니다.\n|음양옥|을 사용하면, |일시 화력|과 |일시 영력|을 {Value1} 얻습니다."
+  FlavorText: 재료가 없어서 피를 쓸 수 밖에 없었습니다.
 EvilTuiZhi:
   Name: 악령 퇴치
   Description: 앞으로 사용할 {Value1}장의 공격 카드의 피해가 두 배가 됩니다.
@@ -333,7 +334,7 @@ CraftPotion:
     카드를 {Value2}장 뽑습니다.'
 MarisaSteal:
   Name: 빌려쓰기
-  Description: "|채홍|을 한 장 얻습니다.\n|가불| {Value2}."
+  Description: "|채홍|을 {Value1}장 얻습니다.\n|가불| {Value2}."
 WinterWarm:
   Description: "|집중|을 {Value1} 얻습니다."
   Name: 손난로
@@ -554,8 +555,8 @@ BlueRose:
   Name: 얼음 장미
   Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 |방어|를 {Block} 얻습니다."
 IceBlock:
-  Description: "모든 피해를 한 번 무시합니다.\n모든 |방어|, |보호막|, |그레이즈|를 잃습니다.\n손패를 한 번 |보존|한 뒤\
-    \ 내 턴을 끝냅니다."
+  Description: "모든 피해를 한 턴동안 무시합니다.\n모든 |방어|, |보호막|, |그레이즈|를 잃습니다.\n손패를 한 번 |보존|한\
+    \ 뒤 내 턴을 끝냅니다."
   Name: 얼음 장벽
 CallFriends:
   Description: 무작위 |동료| 카드 {Value1}장 중 한 장을 골라 소환한 상태로 가져옵니다.
@@ -692,8 +693,8 @@ CirnoEcho:
   Description: 버린 카드 더미에서 {Value1}장을 골라 손패로 되돌리고, 해당 카드에 |메아리|를 부여합니다.
 FairyTeam:
   Name: 요정대전쟁
-  Description: "손에서 |동료| 카드를 원하는 만큼 선택해 |소멸|시키고 기본 코스트를 얻습니다.\n선택된 장수만큼 무작위 적에게 피해를\
-    \ {Damage} 줍니다."
+  Description: "손에서 |동료| 카드를 원하는 만큼 선택해 |소멸|시키고, 소멸시킨 카드의 수만큼 마나를 얻습니다.\n소멸시킨 카드의\
+    \ 수만큼 무작위 적에게 피해를 {Damage} 줍니다."
 HualiIce:
   Name: 퍼펙트 서머 아이스
   Description: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n(현재 {Countdown}장 남음)\n모든\
@@ -775,7 +776,7 @@ RunAway:
     \ {Value1} 얻습니다.\n카드를 {Value2}장 뽑습니다."
   Name: 현장 도주
 PotionDefense:
-  Description: "|보호막|을 {Shield} 얻습니다.\n이번 턴에 발동한 |불안정한 물약|의 횟수만큼 |보호막|을 {Value1} 얻습니다."
+  Description: "|보호막|을 {Shield} 얻습니다.\n이번 턴동안 |불안정한 물약|이 발동하면 |보호막|을 {Value1} 얻습니다."
   Name: 야간비행
 UpgradePotion:
   UpgradedDescription: "뽑을 카드 더미에 |불안정한 물약|을 {Value2}장 섞어넣습니다.\n|불안정한 물약|의 피해가 {Value1}\
@@ -1078,7 +1079,7 @@ TimeLord:
 SakuyaDio:
   Name: 네 차례다
   Description: "|단검|을 사용할 때, 적에게 |록온|을 {Value1} 줍니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n\
-    추가 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
+    해당 추가 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
 ShengquanZaiwo:
   Name: 확실한 승산
   Description: '{Mana}를 얻습니다.'
@@ -1141,7 +1142,7 @@ PerfectServant:
 BrokenTimeline:
   FlavorText: 이 타임라인으로는 안 될 것 같은데. 다음.
   Name: 브로큰 타임라인
-  Description: 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 추가 턴에서는 마나를 얻고 시작하지 않습니다.
+  Description: 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 해당 추가 턴에서는 마나를 얻고 시작하지 않습니다.
 EvilMaid:
   Name: 악마의 메이드
   Description: "체력을 {Value1} 잃습니다.\n다음 턴 모든 공격이 가하는 피해가 두 배가 됩니다."
@@ -1174,7 +1175,7 @@ SakuyaKiller:
   Description: "내 턴 종료 시 |단검|을 {Value1}장 뽑을 카드 더미에 섞어넣습니다.\n적이 쓰러질 때도 효과가 발동합니다."
 LunaClock:
   Name: 루나 클락
-  Description: 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 추가 턴에서는 공격 피해를 가할 수 없습니다.
+  Description: 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 해당 추가 턴에서는 공격 피해를 가할 수 없습니다.
 SilverBlade:
   Description: 공격 카드를 사용할 때마다 |보호막|을 {Value1} 얻습니다.
   Name: 실버 디멘션
@@ -1616,10 +1617,10 @@ LeiguAttack:
   Name: 저음역 드럼
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|보호막|이나 |방어|가 있는 적은 두 배의 피해를 받습니다."
 GrimoireStudy:
-  Description: "체력을 {Value1} 잃습니다.\n|지불한 <sprite=\"ManaSprite\" name=\"1\">마다|: 추가로\
+  Description: "체력을 {Value1} 잃습니다.\n|지불한 <sprite=\"ManaSprite\" name=\"1\">마다| 추가로\
     \ 한 턴간 지속되는 효과: 턴 종료 시 |채홍|을 얻습니다."
   UpgradedDescription: "체력을 {Value1} 잃습니다.\n|채홍|을 한 장 얻습니다.\n|지불한 <sprite=\"ManaSprite\"\
-    \ name=\"1\">마다|: 추가로 한 턴간 지속되는 효과: 턴 종료 시 |채홍|을 얻습니다."
+    \ name=\"1\">마다| 추가로 한 턴간 지속되는 효과: 턴 종료 시 |채홍|을 얻습니다."
   Name: 마도서 연구
 HuaBlock:
   Description: "|방어|를 {Block} 얻습니다.\n|일시 화력|을 {Value1} 얻습니다."
