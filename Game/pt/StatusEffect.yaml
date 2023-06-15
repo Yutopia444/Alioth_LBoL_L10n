@@ -49,18 +49,18 @@ TempElectric:
     \ do próximo turno de {OwnerName}."
 DeathExplodeCount:
   Description: "Quando {OwnerName} é derrotado, causa {Level} de dano a {PlayerName}.\n\
-    Vai se detonar daqui a mais {Count:plural one='% turno' other='% turnos'}, causando\
-    \ o dobro do dano."
+    Vai se detonar daqui {Count:plural one='% turno' other='% turnos'}, causando o\
+    \ dobro do dano."
   Name: Bala Vingativa
 LoveGirlDamageReduce:
   Description: Os sentimentos de {OwnerName} ainda não foram correspondidos. Ela sofre
     {Rate}% menos dano.
   Name: Arrependimento Duradouro
 PhoneBillSe:
-  Description: "{OwnerName} coleta {Level} <sprite=\"Point\" name=\"Gold\"> por cada\
-    \ chamada telefónica.\nLargará {Count} <sprite=\"Point\" name=\"Gold\"> quando\
+  Description: "{OwnerName} coleta {Level} <sprite=\"Point\" name=\"Gold\"> para cada\
+    \ chamada telefónica.\nDevolverá {Count} <sprite=\"Point\" name=\"Gold\"> quando\
     \ derrotada."
-  Name: Conta Celular
+  Name: Conta do Celular
 AbsorbSpirit:
   Description: No fim do turno de {OwnerName}, ganha {Level} de |Espírito|.
   Name: Orbe Azul
@@ -80,6 +80,8 @@ PrivateSquare:
   Description: "A cada {Limit} cartas jogadas, {OwnerName} causa {Level} de dano à\
     \ {PlayerName}.\nFaltam {Count} cartas."
   Name: Prisão Prateada
+  Brief: Sempre que um certo número de cartas for jogado, <color=#B7F0FF>Sakuya Izayoi</color>
+    causará dano de ataque a {PlayerName}.
 TempFirepowerNegative:
   Description: "Até ao final do turno, reduz o |Poder de Fogo| em {Level}.\n(|Poder\
     \ de Fogo| aumenta o dano causado por ataques.)"
@@ -87,7 +89,7 @@ TempFirepowerNegative:
     \ o dano causado por ataques.)"
   Name: Redução Temporária de Poder de Fogo
 TempSpirit:
-  Description: "Até ao final do turno, ganha {Level} de |Espírito|.\n(|Espírito| aumenta\
+  Description: "Até ao final do turno, ganhe {Level} de |Espírito|.\n(|Espírito| aumenta\
     \ o |Bloqueio| e a |Barreira| obtidos)"
   Name: Espírito Temporário
   Brief: "Aumenta o |Espírito| até ao final do turno.\n(|Espírito| aumenta o |Bloqueio|\
@@ -123,12 +125,12 @@ Firepower:
   Name: Poder de Fogo
   Brief: "Aumenta o |Poder de Fogo|.\n(|Poder de Fogo| aumenta o dano causado por\
     \ ataques.)"
-  Description: "Ganha {Level} de |Poder de Fogo|.\n(|Poder de Fogo| aumenta o dano\
+  Description: "Ganhe {Level} de |Poder de Fogo|.\n(|Poder de Fogo| aumenta o dano\
     \ causado por ataques.)"
 Spirit:
   Name: Espírito
   Brief: "|Espírito| aumentado.\n(|Espírito| aumenta o |Bloqueio| e a |Barreira| obtidos)"
-  Description: "Ganha {Level} de |Espírito|.\n(|Espírito| aumenta o |Bloqueio| e a\
+  Description: "Ganhe {Level} de |Espírito|.\n(|Espírito| aumenta o |Bloqueio| e a\
     \ |Barreira| obtidos)"
 LockedOn:
   Name: Marcado
@@ -148,7 +150,7 @@ ExtraTurn:
     \ depois deste."
   Brief: Quando o turno de {OwnerName} acabar, jogue outro turno em seguida.
 LimitedDamage:
-  Name: Limite de Dano
+  Name: Liberador de Itens
   Brief: '{OwnerName} só pode sofrer um número limitado de dano a cada turno.'
   Description: '{OwnerName} só pode sofrer um máximo de {Limit} de dano a cada turno.
     Ainda pode sofrer {Count} de dano este turno.'
@@ -156,6 +158,7 @@ Invincible:
   Description: "{OwnerName} não irá perder mais do que 1 ponto de vida de cada vez\
     \ {Duration:plural one='até ao final do turno' other='durante os próximos % turnos'}."
   Brief: '{OwnerName} não irá perder mais do que 1 ponto de vida de cada vez.'
+  Name: Impecável
 TurnStartDontLoseBlock:
   Name: Reter Bloqueio
   Brief: '{OwnerName} não perde o |Bloqueio| no início do turno.'
@@ -214,6 +217,7 @@ DeathVulnerable:
 Drowning:
   Name: Afogamento
   Description: '{OwnerName} sofre {Level} de dano no fim do seu turno.'
+  Brief: '{OwnerName} recebe dano no final do turno.'
 LoveGirlDamageIncrease:
   Name: Coração Palpitante
   Description: Os sentimentos de {OwnerName} foram correspondidos. Ela sofre {Rate}%
@@ -226,7 +230,7 @@ LunaticTorch:
   Description: "A tocha de {OwnerName} brilha com uma luz peculiar. Todos os inimigos\
     \ são levados à |Loucura|.\nGanhe {Mana} no início do turno de {PlayerName}."
 WindGirl:
-  Name: Wind God Girl
+  Name: Garota Deus do Vento
   Description: O |Desvio| da {OwnerName} é reabastecido para {Level} no fim de cada
     turno dela.
 Interview:
@@ -329,6 +333,8 @@ Vampire:
   Name: Vampira
   Description: '{OwnerName} recupera vida igual ao dano não bloqueado que ela causa.
     Medonho!'
+  Brief: '{OwnerName} ganha uma quantidade de pontos de vida igual ao dano não-bloqueado
+    causado. Que medo!'
 FastAttack:
   Name: A Mais Veloz
   Description: Após jogar a primeira carta de cada turno, {OwnerName} causa {Level}
@@ -853,8 +859,9 @@ MoreFriendsSe:
 BailianFireSe:
   Name: Chamas de Hokkai
   Description: "No início do turno de {PlayerName}, adicione {Level} carta{Level:plural\
-    \ one='' other='s'} de habilidade aleatória à mão.\nCartas Adicionadas dessa maneira\
-    \ tem |Custo Temporário| de {Mana} e também tem |Exílio| e |Etéreo|."
+    \ one='' other='s'} de habilidade aleatória{Level:plural one='' other='s'} à mão.\n\
+    Cartas Adicionadas dessa maneira tem |Custo Temporário| de {Mana} e também tem\
+    \ |Exílio| e |Etéreo|."
   Brief: "No início do turno de {PlayerName}, adicione cartas de habilidade aleatórias\
     \ à mão.\nCartas Adicionadas dessa maneira tem |Custo Temporário| reduzido e também\
     \ tem |Exílio| e |Etéreo|."
@@ -908,3 +915,70 @@ BlackPoisonSe:
     a esse inimigo.
   Description: Sempre que {PlayerName} causar dano não bloqueado a um inimigo, aplique
     {level} de |Veneno| a esse inimigo.
+CatchGoblinSe:
+  Name: Teste da Fortuna
+  Brief: O dano recebido é reduzido em 33%, perde 50<sprite="Point" name="Gold"> após
+    a derrota.
+  Description: O dano recebido é reduzido em 33%, perde 50<sprite="Point" name="Gold">
+    após a derrota.
+InvincibleEternal:
+  Name: Impecável
+  Description: '{OwnerName} não pode perder mais de 1 ponto de vida de cada vez.'
+  Brief: '{OwnerName} não pode perder mais de 1 ponto de vida de cada vez.'
+NoBaseManaNextTurn:
+  Name: Linha do tempo quebrada - Próximo Turno
+  Brief: No início do próximo turno, negue qualquer mana que seria ganho da base de
+    mana.
+  Description: No início do próximo turno, negue qualquer mana que seria ganho da
+    base de mana.
+DeathPoison:
+  Name: Morte Venenosa
+  Description: Quando {OwnerName} é derrotado, {PlayerName} ganha {Level} de |Veneno|.
+MoonWorldSe:
+  Brief: No início do turno de {PlayerName}, cartas aleatórias na mão ganham |Puro|
+    nesse combate
+  Description: No início do turno de {PlayerName}, {Level} {Level:plural one='carta
+    aleatória' other='cartas aleatórias'} na mão ganha{Level:plural one='' other='m'}
+    |Puro| nesse combate.
+  Name: Mundo Puro
+Poison:
+  Brief: No início do turno de {OwnerName}, ele perde um pouco de vida e depois perde
+    um pouco de |Veneno|.
+  Name: Veneno
+  Description: No início do turno de {OwnerName}, perde {Level} pontos de vida e depois
+    perde 1 |Veneno|.
+Magic:
+  Name: (WIP) Magia
+MagicNegative:
+  Name: (WIP) Perder Magia
+TempMagicNegative:
+  Name: (WIP) Magia Perdida
+TempMagic:
+  Name: (WIP) Poder mágico temporário
+ManaFreezed:
+  Name: Mana Congelada
+  Description: A primeira carta jogada a cada turno custa {Mana} a mais para ser jogada.
+  Brief: A primeira carta jogada a cada turno custa mais mana para ser jogada.
+EnemyLarva:
+  Name: Asas de Larva
+  Description: Sempre que {PlayerName} causa dano de ataque a {OwnerName}, cause {Level}
+    de |Veneno|.
+EnemyLily:
+  Name: Anuncio de Lily White
+  Description: As ações de {OwnerName} são mais poderosas.
+EnemyMaid:
+  Name: Limpeza de Kasumi
+  Description: No final do turno de {OwnerName}, causará {Level} de dano à {PlayerName}.
+NoBaseManaThisTurn:
+  Description: No início do turno, negue qualquer mana que seria ganho da base de
+    mana.
+  Name: Linha do tempo quebrada
+  Brief: No início do turno, negue qualquer mana que seria ganho da base de mana.
+FoxCharm:
+  Name: Encanto da Raposa
+  Description: "Apenas {Limit} carta{Limit:plural one=' pode' other='s podem'} ser\
+    \ jogadas a cada turno.\n{Contagem} carta{Contagem:plural one=' restante' other='s\
+    \ restantes'}.\nDerrote a |Raposa Youkai| para remover este efeito."
+EnemyDayaojing:
+  Name: Suporte de Daiyousei
+  Description: No final do turno de {OwnerName}, ganhe {Level} de vida.
