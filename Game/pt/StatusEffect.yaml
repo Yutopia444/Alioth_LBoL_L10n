@@ -375,7 +375,7 @@ ReimuFestivalSe:
 EvilTuiZhiSe:
   Brief: As próximas cartas de ataque jogadas causam o dobro de dano.
   Name: Exterminar o Mal
-  Description: "{Nível:plural um='A próxima carta de ataque jogada causa' outro='As\
+  Description: "{Level:plural one='A próxima carta de ataque jogada causa' outro='As\
     \ próximas % cartas de ataque jogadas causam'} dano duplo."
 ReverseJiejieSe:
   Name: Fenda Reversa
@@ -413,7 +413,7 @@ DanceAroundLakeSe:
 BoliPhantomSe:
   Name: Espectro Hakurei
   Description: Sempre que uma carta que não for |Agulha de Persuasão| é |Exilada|,
-    adicione {Nível} |Agulha de Persuasão| à mão que tem |Custo Temporário| de {Mana}.
+    adicione {Level} |Agulha de Persuasão| à mão que tem |Custo Temporário| de {Mana}.
   Brief: Sempre que uma carta que não for |Agulha de Persuasão| é |Exilada|, adicione
     algumas |Agulha de Persuasão| à mão que tem |Custo Temporário| de {Mana}.
 ReimuShrineSe:
@@ -427,7 +427,7 @@ ReimuFreeAttackSe:
     \ cartas'} de ataque custa{Level:plural one='' other='m'} {Mana}"
 YinyangXueyinSe:
   Name: Runa Yin-Yang
-  Description: Depois de jogar um |Orbe Yin-Yang|, ganhe {nível} |Poder de fogo temporário|
+  Description: Depois de jogar um |Orbe Yin-Yang|, ganhe {Level} |Poder de fogo temporário|
     e |Espírito Temporário|.
   Brief: Depois de jogar um |Orbe Yin-Yang|, ganhe algum |Poder de fogo temporário|
     e |Espírito Temporário|.
@@ -454,7 +454,7 @@ HuanxiangBlockSe:
   Description: Sempre que uma carta é |Exilada|, {PlayerName} ganha {Level} de |Bloqueio|.
   Brief: Sempre que uma carta é |Exilada|, {PlayerName} ganha algum |Bloqueio|.
 SilverBladeSe:
-  Description: Sempre que uma carta de ataque for usada, ganhe {Nível} |Barreira|.
+  Description: Sempre que uma carta de ataque for usada, ganhe {Level} |Barreira|.
   Name: Dimensão de Prata
   Brief: Sempre que uma carta de ataque for usada, ganhe |Barreira|.
 BurstUpgrade:
@@ -502,7 +502,7 @@ ColdPotionSe:
   Description: '|Poção Instável| também aplica |Frio|.'
 SplitPotionSe:
   Name: Dobrar Dose
-  Description: "|Poção Instável| causa dano mais {Nível} vez{Nível:plural um='' outros='es'}."
+  Description: "|Poção Instável| causa dano mais {Level} vez{Nível:plural one='' other='es'}."
   Brief: '|Poções Instáveis| causam dano mais vezes.'
 GainKnifeSe:
   Name: Dança da Espada Estrelada
@@ -542,7 +542,7 @@ MomentPowerSe:
     converta uma quantidade em |Poder de Fogo| ou |Espírito|, respectivamente.
   Name: Fenda Dimensional Instantânea
   Description: Sempre que {OwnerName} ganha |Poder de Fogo Temporário| ou |Espírito
-    Temporário|, converta {Nível} de cada em |Poder de Fogo| ou |Espírito|, respectivamente.
+    Temporário|, converta {Level} de cada em |Poder de Fogo| ou |Espírito|, respectivamente.
 Concentration:
   Name: Concentração
   Description: "{Level:plural one='O Próximo efeito de' other='Os Próximos % efeitos\
@@ -596,11 +596,11 @@ MasterOfCollectionSe:
   Brief: Sempre que |Reter| uma carta, reduza seu custo em algum mana aleatório neste
     combate.
   Name: Mestra de Coleções
-  Description: Sempre que |Reter| uma carta, reduza seu custo em {Nível} de mana aleatório
+  Description: Sempre que |Reter| uma carta, reduza seu custo em {Level} de mana aleatório
     neste combate.
 PotionDefenseSe:
   Description: Até o final do turno, sempre que uma |Poção Instável| for usada, ganhe
-    {Nível} |Barreira|.
+    {Level} |Barreira|.
   Brief: Até o final do turno, sempre que uma |Poção Instável| for usada, ganhe |Barreira|.
   Name: Eco Meteoro
 ChargingPotionSe:
@@ -627,6 +627,11 @@ DrawPhaseAddKnife:
     Arremesso| no lugar.
 FrostArmor:
   Name: Armadura de Gelo
+  Description: No início do turno de {OwnerName}, ganhe {Level} |Bloqueio| e perca
+    1 |Armadura de Gelo|.
+  Brief: "Sempre que {PlayerName} ganhar |Armadura de Gelo|, ganhe essa quantidade\
+    \ de |Bloqueio|.\nNo início do turno de {OwnerName}, ganhe |Bloqueio| e perca\
+    \ 1 |Armadura de Gelo|."
 Burst:
   Name: Fervor
   Description: "Quando {PlayerName} entrar em |Fervor|, ganhe {Mana}. \nTodos os ataques\
@@ -649,3 +654,257 @@ StopTimeSe:
     não é perdida no fim do turno.
   Brief: Quando o turno de {PlayerName} terminar, mantenha um tanto de mana aleatória
     não gasta em vez de perdê-la.
+WhiteWorldSe:
+  Brief: No início do turno de {PlayerName}, aplique |Frio| a todos os inimigos.
+  Description: No início do turno de {PlayerName}, aplique |Frio| {Level} {Level:plural
+    one='vez' other='vezes'} a todos os inimigos.
+  Name: Mundo de Neve Pura
+SummerFlowerSe:
+  Name: Flores de Verão
+  Description: '{SourceCardName} causa {Level} de dano adicional.'
+  Brief: '{SourceCardName} causa dano adicional.'
+MaidFriendSe:
+  Name: Treino de Arremesso de Faca
+  Description: '{SourceCardName} causa {Level} de dano adicional.'
+  Brief: '{SourceCardName} causa dano adicional.'
+StarFriendSe:
+  Name: Pontilhado Estrelado
+  Description: Quando {SourceCardName} causar dano, aplique {Level} |Marca|.
+  Brief: Quando {SourceCardName} causar dano, aplique |Marca| no alvo.
+Chaowo:
+  Description: Ganhe {Mana} ao sair do estado de |Super Ego|.
+  Brief: Ganhe {Mana} ao sair do estado de |Super Ego|.
+  Name: Super Ego
+Benwo:
+  Brief: inflige e recebe o dobro de dano enquanto estiver em estado de |Ego|
+  Name: Ego
+  Description: inflige e recebe o dobro de dano enquanto estiver em estado de |Ego|
+SeeFengshuiSe:
+  Name: Manipulação do Feng Shui
+  Description: "No início do turno de {PlayerName}, |prevê| {Scry}.\nSempre que uma\
+    \ carta de defesa for enviada para a pilha de descarte quando |Prever|, ganhe\
+    \ {Bloqueio} |Bloqueio|."
+  Brief: "No início do turno de {PlayerName}, |preveja|.\nSempre que uma carta de\
+    \ defesa for enviada para a pilha de descarte quando |Prever|, ganhe |Bloqueio|."
+LoseSpiritSe:
+  Description: No início do turno de {PlayerName}, Perca {Level} de |Espírito| .
+  Brief: No início do turno de {PlayerName}, Perca uma quantidade de |Espírito| .
+  Name: Capa Perdida de Plumas
+YonglinCardSe:
+  Name: O Sábio Recluso
+  Description: No final do turno de {PlayerName}, adicione {Level} carta{Level:plural
+    one='' other='s'} de |Lua Falsa| no baralho.
+  Brief: No final do turno de {PlayerName}, adicione uma |Lua Falsa| no baralho.
+RangziFanshuSe:
+  Description: Após o combate, ganhe {Nível} de vida.
+  Name: Batata Doce
+  Brief: Após o combate, recupere um pouco de vida.
+DizangLoveSe:
+  Description: Sempre que uma carta comum é jogada, {OwnerName} ganha {Level} de |Poder
+    de Fogo Temporário|.
+  Name: Bodhi instantâneo
+  Brief: Sempre que uma carta comum é jogada, {OwnerName} ganha |Poder de Fogo Temporário|.
+ZhenmiaowanAttackSe:
+  Brief: O custo de cartas de habilidade diminuem em {Mana} neste turno.
+  Name: Descendente de Issun-Boushi
+  Description: O custo de cartas de habilidade diminuem em {Mana} neste turno.
+  ExtraDescription: As cartas custam {Mana} a menos para serem jogadas neste turno.
+RainbowMarketSe:
+  Name: Mercado Arco-Íris Lunar
+  Brief: Sempre que uma carta for |Exilada|, adicione algumas cartas aleatórias à
+    mão.
+  Description: Sempre que uma carta for |Exilada|, adicione {Level} {Level:plural
+    one='carta aleatória' other='cartas aleatórias'} à mão.
+KokoroDanceSe:
+  Name: Noh das Trevas
+  Brief: Quando o inimigo ganha efeitos negativos, {PlayerName} causa dano a ele.
+  Description: Sempre que um inimigo recebe um |Debuff|, {PlayerName} causa {Level}
+    de dano a ele.
+YachieDefendSe:
+  Brief: "prevê as próximas vezes que {OwnerName} perderia vida.\nSe a fonte do dano\
+    \ for um inimigo, esse inimigo perde essa quantidade de vida."
+  Description: "prevê {Level:plural one='a próxima vez' other='as próximas % vezes'}\
+    \ que {OwnerName} perderia vida.\nSe a fonte do dano for um inimigo, esse inimigo\
+    \ perde essa quantidade de vida."
+  Name: Carapaça Infernal
+SkyWaterSe:
+  Name: Milagre da Água Celestial
+  Brief: Compre mais cartas durante cada etapa de compra.
+  Description: Compre mais {Level} {Level:plural one='carta' other='cartas'} durante
+    cada etapa de compra.
+MeilingAbilitySe:
+  Name: Linda Flor Doce
+  Description: '{PlayerName} ganha o dobro de |Poder de Fogo| e |Poder de Fogo Temporário|.'
+  Brief: '{PlayerName} ganha o dobro de |Poder de Fogo| e |Poder de Fogo Temporário|.'
+YonglinUpgradeSe:
+  Name: Incenso de Coelho Lunar
+  Description: No início do turno de {PlayerName}, |Melhore| {Value1} {Value1:plural
+    one='carta aleatória' other='cartas aleatórias'} na mão.
+  Brief: No início do turno de {PlayerName}, |Melhore| cartas aleatórias na mão.
+YinyangQueenSe:
+  Name: Misumaru, a artesã
+  Description: O efeito de todos os |Orbes Yin Yang| é aumentado {Level} vezes.
+  Brief: O efeito de todos os |Orbes Yin Yang| é aumentado várias vezes.
+ExtraDraw:
+  Name: Astúcia de Fada
+  Description: No início do turno de {PlayerName}, compre {Level}{Level:plural one='carta'
+    other='cartas'}.
+  Brief: No início do turno de {PlayerName}, compre uma cartas.
+FairyTreeSe:
+  Description: Sempre que um |Colega| é invocado jogando uma carta de |Colega|, ganhe
+    {Level} |Bloqueio|.
+  Name: Morada das Fadas
+  Brief: Sempre que um |Colega| é invocado jogando uma carta de |Colega|, ganhe |Bloqueio|.
+TodayYesterdaySe:
+  Name: Gensokyo, Passado e Presente
+  Description: Sempre que {OwnerName} |Desviar| um ataque, ganhe {Level} |Poder de
+    Fogo|.
+  Brief: Sempre que {OwnerName} |Desviar| um ataque, ganhe |Poder de Fogo|.
+Immune:
+  Description: "{OwnerName} não pode perder vida por {Duration} turno{Duration:plural\
+    \ one='' other='s'}."
+  Name: Bloco de Gelo
+  Brief: '{OwnerName} não pode perder vida.'
+RinDrawSe:
+  Name: Atribuição de Espírito
+  Brief: Sempre que uma carta de Status for comprada, compre mais cartas.
+  Description: Sempre que uma carta de Status for comprada, compre {Level:plural one='%
+    carta' other='% cartas'}.
+UseCardToLoseGame:
+  Brief: Perde o jogo depois de jogar algumas cartas.
+  Name: Expectativa de vida curta
+  Description: Perca o jogo depois de jogar mais {Count} {Count:plural one='carta'
+    other='cartas'}.
+NextTurnLoseGame:
+  Name: Perde no Próximo Turno
+  Description: Perde o jogo no próximo turno.
+  Brief: Perde o jogo no próximo turno.
+HekaHellRainSe:
+  Name: Chuva do Inferno
+  Description: 'No final do turno de {OwnerName}, cause {Level} de dano a cada inimigo
+    para cada carta jogada naquele turno. (Número de cartas jogadas: {Count}.)'
+  Brief: No final do turno de {OwnerName}, cause dano a cada inimigo para cada carta
+    jogada naquele turno.
+ModuoluoFireSe:
+  Name: Fogo de Ena
+  Description: Sempre que <sprite="ManaSprite" name="P"> for gasto, cause {Level}
+    de dano a cada inimigo.
+  Brief: Sempre que <sprite="ManaSprite" name="P"> for gasto, cause dano a cada inimigo.
+TiangouOrderSe:
+  Name: Decreto do Grande Tengu
+  Description: Quando {OwnerName} sofre dano de ataque, {PlayerName} ganha {Level}
+    de |Bloqueio|.
+  Brief: Quando {OwnerName} sofre dano de ataque, {PlayerName} ganha |Bloqueio|.
+IceVulnerable:
+  Brief: "{OwnerName} perde o dobro de pontos de vida.\nNo final do turno de {OwnerName},\
+    \ ele perde |Frio intenso|."
+  Name: Frio intenso
+  Description: "{OwnerName} perde o dobro de pontos de vida.\nNo final do turno de\
+    \ {OwnerName}, ele perde |Frio intenso|."
+ForeverCoolSe:
+  Description: "Sempre que uma carta de |Fada de Apoio| é |Exilada|, aplique |Frio|\
+    \ para um inimigo aleatório {Level} vez{Level:plural one='' other='es'}.\nSempre\
+    \ que uma carta de |Fada de Apoio| é jogada, adicione {Level} {Level:plural one='carta\
+    \ de |Fada de Apoio| aleatória' other='cartas de |Fada de Apoio| aleatórias'}\
+    \ na pilha de descarte."
+  Name: A Eterna Temporada da Fantasia
+  Brief: "Sempre que uma carta de |Fada de Apoio| é |Exilada|, aplique |Frio| para\
+    \ um inimigo aleatório.\nSempre que uma carta de |Fada de Apoio| é jogada, adicione\
+    \ uma carta de |Fada de Apoio| à pilha de descarte."
+FrozenThroneSe:
+  Brief: No início do turno de {PlayerName}, se não houver nenhum |Gelinho| na mão,
+    adicione um |Gelinho| para a mão.
+  Description: No início do turno de {PlayerName}, se não houver nenhum |Gelinho|
+    na mão, adicione um |Gelinho| para a mão.
+  Name: Trono de Gelo
+MeihongFireSe:
+  Brief: "No final do turno de {PlayerName}, cause dano a cada inimigo.\nIsso também\
+    \ acontece quando um |Infortúnio| ou carta de status é comprada."
+  Name: ignição indiscriminada
+  Description: "No final do turno de {PlayerName}, cause {Level} de dano a cada inimigo.\n\
+    Isso também acontece quando um |Infortúnio| ou carta de status é comprada."
+HuiyeManaSe:
+  Name: Conto do Cortador de Bambu
+  Description: "No início do turno de {PlayerName}, ganhe {Count} de mana aleatória.\
+    \ \nAumente o valor em {Level} a cada turno."
+  Brief: "No início do turno de {PlayerName}, ganhe mana aleatória. \nAumente o valor\
+    \ a cada turno."
+YouxiangMoonSe:
+  Description: No início do turno de {PlayerName}, adicione {Level} |Flor do Verão|
+    com |Etéreo| na mão.
+  Brief: No início do turno de {PlayerName}, adicione |Flor do Verão| com |Etéreo|
+    na mão.
+  Name: Belezas da Natureza
+PrismriverSe:
+  Brief: Sempre que {PlayerName} ganharia uma quantidade de mana, ganhe <sprite="ManaSprite"
+    name="P"> em vez disso.
+  Name: Concerto Prismriver
+  Description: Sempre que {PlayerName} ganharia uma quantidade de mana, ganhe <sprite="ManaSprite"
+    name="P"> em vez disso.
+MoreFriendsSe:
+  Description: "No final do turno de {PlayerName}, adicione {Level} {Level:plural\
+    \ one='carta de |Fada de Apoio| aleatória' other='cartas de |Fada de Apoio| aleatórias'}\
+    \ para a mão.\n|Fadas de Apoio| adicionadas dessa maneira tem |Etéreo| até que\
+    \ sejam invocadas."
+  Name: Borboleta Social
+  Brief: "No final do turno de {PlayerName}, adicione cartas de |Fada de Apoio| aleatórias\
+    \ para a mão.\n|Fadas de Apoio| adicionadas dessa maneira tem |Etéreo| até que\
+    \ sejam invocadas."
+BailianFireSe:
+  Name: Chamas de Hokkai
+  Description: "No início do turno de {PlayerName}, adicione {Level} carta{Level:plural\
+    \ one='' other='s'} de habilidade aleatória à mão.\nCartas Adicionadas dessa maneira\
+    \ tem |Custo Temporário| de {Mana} e também tem |Exílio| e |Etéreo|."
+  Brief: "No início do turno de {PlayerName}, adicione cartas de habilidade aleatórias\
+    \ à mão.\nCartas Adicionadas dessa maneira tem |Custo Temporário| reduzido e também\
+    \ tem |Exílio| e |Etéreo|."
+KaguyaTreeSeeSe:
+  Name: Oceano de Arvores de Hourai
+  Description: Todas as cartas perdem |Exílio|.
+  Brief: Todas as cartas perdem |Exílio|.
+MinengZhuruSe:
+  Name: Infusão de Energia
+  Brief: Os efeitos passivos de cartas de |Colega| Invocados na mão ativam mais vezes.
+  Description: Os efeitos passivos de cartas de |Colega| Invocados na mão ativam {Level}
+    {Level:plural one='vez adicional' other='vezes adicionais'}.
+IceMatrixSe:
+  Description: Sempre que {PlayerName} aplicar |Frio| em um inimigo, ganhe {Level}
+    |Armadura de Gelo|.
+  Name: Matriz Gélida
+  Brief: Sempre que {PlayerName} aplicar |Frio| em um inimigo, ganhe |Armadura de
+    Gelo|.
+ShannvAbilitySe:
+  Brief: No final do turno de {PlayerName}, aplique |Veneno| a cada inimigo.
+  Name: Febre Desconhecida
+  Description: No final do turno de {PlayerName}, aplique {Level} de |Veneno| a cada
+    inimigo.
+MeihongPowerSe:
+  Name: Chama Imortal
+  Description: "No início do turno de {PlayerName}, ganhe {Level} |Poder de Fogo|.\
+    \ \nNo final do combate, se a vida de {PlayerName} for menor que a metade, ganhe\
+    \ {Heal} de vida."
+  Brief: "No início do turno de {PlayerName}, ganhe |Poder de Fogo|. \nNo final do\
+    \ combate, se a vida de {PlayerName} for menor que a metade, recupere uma quantidade\
+    \ de vida."
+GrimoireStudySe:
+  Brief: No final do turno de {OwnerName}, adicione um |Arco-Íris| na mão.
+  Name: Grimório Negro
+  Description: No final do turno de {OwnerName}, adicione um |Arco-Íris| na mão.
+ExtraBlizzard:
+  Brief: No início do próximo turno de {OwnerName}, ela causa dano |Preciso| e aplica
+    |Frio| a cada inimigo.
+  Description: No início do próximo turno de {OwnerName}, ela causa {Damage} de dano
+    |Preciso| e aplica |Frio| a cada inimigo.
+  Name: Advento da Nevasca
+BailianBlackSe:
+  Brief: Todas as cartas que |não| sejam de Ataque nem Talento custam {Mana} e ganham
+    |Exílio|.
+  Name: Abrace a Escuridão
+  Description: Todas as cartas que |não| sejam de Ataque nem Talento custam {Mana}
+    e ganham |Exílio|.
+BlackPoisonSe:
+  Name: Dança na Escuridão
+  Brief: Sempre que {PlayerName} causar dano não bloqueado a um inimigo, aplique |Veneno|
+    a esse inimigo.
+  Description: Sempre que {PlayerName} causar dano não bloqueado a um inimigo, aplique
+    {level} de |Veneno| a esse inimigo.
