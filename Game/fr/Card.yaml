@@ -1000,7 +1000,8 @@ AliceAttack:
   Name: Rayon Sinistre
 BaitianCard:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nRemettez\
-    \ une carte de la pile de défausse en haut de la pioche."
+    \ une carte de la pile de défausse en haut de la pioche, elle coûte {Value1} mana{Value1:plural\
+    \ one=' aléatoire' other='s aléatoires'} de moins."
   FlavorText: Après avoir essayé les supports de stockage d'informations électroniques,
     Mlle Hieda no Akyuu a eu plus de temps libre pour le thé de l'après-midi.
   Name: Transmigration de Hieda
@@ -1053,9 +1054,6 @@ TrueMoon:
     \ one='% carte est jouée' other='% cartes sont jouées'}, {PlayerName} perd la\
     \ partie."
   FlavorText: Sous la vraie pleine lune, tout n'est que fantasme vaniteux.
-QianGui:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Début|\
-    \ : Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|."
 YuyukoSing:
   Name: Ailes de Papillons
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nCette carte\
@@ -1652,8 +1650,6 @@ TodayYesterday:
     et il prenait souvent plaisir à piller et brûler les champs de fleurs d'innocents
     jardiniers. Heureusement, il n'a pas rencontré Yuuka Kazami.
   Name: Mémoire des Fleurs
-AttackWithEveryColor:
-  Name: Attaque Colorée
 Astrology:
   Description: "|Sonde| {Scry}.\nPiochez {Value1:plural one='% carte' other='% cartes'}."
   Name: Astrologie
@@ -2088,8 +2084,10 @@ MeilingRain:
   Name: Pluie Très Colorée
 LifeGame:
   Name: Jeu de la Vie
-  Description: "Placez la main et la pile de défausse dans la pioche.\nMélangez la\
-    \ pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  Description: "Les cartes qui étaient adjacentes à cette carte |coûtent temporairement|\
+    \ {Mana}."
+  UpgradedDescription: Les cartes qui étaient adjacentes à cette carte |coûtent temporairement|
+    {Mana} et sont |améliorées|.
 SanaeRice:
   Name: Rinçage du Riz
   Description: "Supprimez tous les Malus sur {PlayerName}.\nGagnez {Value1} point{Value1:plural\
@@ -2556,8 +2554,8 @@ FreezeToIce:
 CirnoFestival:
   Name: Mêlée au Banquet
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nJusqu'à\
-    \ {Value2} cartes |alliées| aléatoires dans votre main ont un coût réduit de 1\
-    \ mana aléatoire."
+    \ {Value2:plural one='% carte aléatoire dans votre main a' other='% cartes aléatoires\
+    \ dans votre main ont'} un coût réduit de 1 mana aléatoire."
   FlavorText: Des types étranges se sont mélangés à la fête de célébration de l'opération
     spéciale contre les Lunariens.
 DeepFreeze:
@@ -2683,9 +2681,12 @@ SummerParty:
     \ other='s'} |Soutien|."
 FrozenThrone:
   Name: Trône de Glace
-  Description: Lorsque {PlayerName} débute son tour, s'il n'y a pas de |Cristal de
-    glace| en main, ajoutez un |Cristal de glace| à la main.
+  Description: Lorsque {PlayerName} débute son tour, ajoutez un |Cristal de glace+|
+    à la main.
   FlavorText: Now, we are one !
+  UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez un |Cristal\
+    \ de glace+| à la main.\nAjoutez {Value1} |Crista{Value1:plural one='l' other='ux'}\
+    \ de glace+| à la main."
 PlayWithWaste:
   Name: Aventure dans le Tas de Déchets
   Description: "Choisissez une parmi {Value1} cartes |Outil| non rares aléatoires\
@@ -2710,8 +2711,8 @@ OtherSkill:
   Name: Imposteur
 YonglinUpgrade:
   Description: "Gagnez {Value2} point{Value2:plural one='' other='s'} de vie.\nLorsque\
-    \ {PlayerName} débute son tour, améliorez {Value1} carte{Value1:plural one=' aléatoire'\
-    \ other='s aléatoires'} en main.\n"
+    \ {PlayerName} débute son tour, |améliorez| {Value1} carte{Value1:plural one='\
+    \ aléatoire' other='s aléatoires'} en main.\n"
   Name: Encens de Lapin Lunaire
 MoonTipsBag:
   Description: "Choisissez une parmi {Value1} |Astuce{Value1:plural one='' other='s'}\
@@ -2756,8 +2757,7 @@ LilyFriend:
   ExtraDescription2: "{FriendU} restaurez {Heal} point{Heal:plural one='' other='s'}\
     \ de vie."
   Name: "Lily, Annonciatrice de Printemps"
-  ExtraDescription1: "{FriendA} gagnez {Value2:plural one='% mana aléatoire' other='%\
-    \ manas aléatoires'}."
+  ExtraDescription1: "{FriendA} gagnez {ActiveMana}."
 MaidFriend:
   Name: "Kasumi, la Bonne du Manoir"
   Description: "{FriendP} infligez {Damage} dégât{Damage:plural one='' other='s'}\
@@ -2766,6 +2766,8 @@ MaidFriend:
     \ {Value1} dégât{Value1:plural one=' supplémentaire' other='s supplémentaires'}."
   FlavorText: Kasumi est déjà la travailleuse la plus sérieuse parmi les servantes
     et les fées du Manoir du Démon Écarlate.
+  ExtraDescription1: "{FriendA} infligez ses dégâts. Ajoutez {Value2} |Couteau{Value2:plural\
+    \ one='' other='x'} de Lancer| à votre main."
 LarvaFriend:
   Name: "Larva, Déesse de la Nuit d'Été"
   ExtraDescription1: '{FriendA} |améliorez| toutes les cartes en main.'
@@ -2853,3 +2855,38 @@ YouxiangAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
     \ {Mana} supplémentaire dépensé| : dégâts augmentés de {Value1}.\nLorsque le coût\
     \ total du paiement n'est pas inférieur à {Value2}, l'attaque gagne |Précis|."
+RemiliaFate:
+  Name: Manipulation du Destin
+  UpgradedDescription: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de votre main et défaussez-{Value1:plural one='la' other='les'}.\nAutant de\
+    \ cartes vont de la pioche dans votre main, choisies aléatoirement avec un coût\
+    \ total de base de 1, 2, 3, 4 et 5."
+  Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de votre main et défaussez-{Value1:plural one='la' other='les'}.\nAutant de\
+    \ cartes vont de la pioche dans votre main, choisies aléatoirement avec un coût\
+    \ total de base de 1, 2 et 3."
+HuiyeAttack:
+  Name: Mer d'Arbres de Hourai
+  Description: "|Pour chaque mana de couleur différente dépensé| : infligez {Damage}\
+    \ dégât{Damage:plural one='' other='s'} à tous les ennemis.\nLorsque le coût total\
+    \ payé n'est pas inférieur à {Value2}, sélectionnez jusqu'à {Value1:plural one='%\
+    \ carte |exilée| et remettez-la' other='% cartes |exilées| et remettez-les'} dans\
+    \ votre main."
+HuiyeTime:
+  Name: Pour Toujours et à Jamais
+  Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ en main, |retenez|-{Value1:plural one='la' other='les'} pendant un tour.\n{PlayerName}\
+    \ termine son tour et joue un tour supplémentaire. Seule{Value1:plural one=' %\
+    \ carte peut être jouée' other='s % cartes peuvent être jouées'} lors de ce tour."
+  UpgradedDescription: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ en main, |retenez|-{Value1:plural one='la' other='les'} pendant un tour.\n{PlayerName}\
+    \ termine son tour et joue un tour supplémentaire. Seule{Value1:plural one=' %\
+    \ carte peut être jouée' other='s % cartes peuvent être jouées'} lors de ce tour."
+SanaeRestart:
+  Name: Le Jour où la Mer s'est Séparée
+  Description: "Gagnez {Mana}.\nPlacez la main et la défausse dans la pioche, qui\
+    \ est mélangée.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  UpgradedDescription: "Gagnez {Mana}.\nPlacez la main et la défausse dans la pioche,\
+    \ qui est mélangée.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\n\
+    Choisissez {Value2} carte{Value2:plural one='' other='s'} dans la pioche et ajoutez-{Value2:plural\
+    \ one='la' other='les'} à votre main."
