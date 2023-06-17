@@ -640,7 +640,7 @@ QingeHeal:
 ToolRandomTool:
   Name: Tactical Walkie-Talkie
   Description: |-
-    Choose 1 of {Value1} random |Item| cards to add to the hand. It has |Limited【1】|.
+    Choose 1 of {Value1} random |Item| cards to add to the hand. It's a |Copy| and can only be played once.
     |Limited【{DeckCounter}】|
   FlavorText: ' "This is Pequod, airdrop incoming!"'
 
@@ -1163,8 +1163,8 @@ QingeUpgrade:
   Description: "Deal {Damage} damage.\n|Expel|: Permanently |Upgrade| a card."
   Name: Trick of Wicked Hermit
 TannvCard:
-  Description: Put the top card of the draw and discard piles into the hand. Those
-    cards |temporarily cost| {Mana}.
+  Description: Put the top card of the draw and discard piles into the hand. They
+    |temporarily cost| {Mana}.
   Name: Turning the Tables
 MogongAttack:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\n|While in hand|: Whenever\
@@ -1184,7 +1184,7 @@ ZhenmiaowanAttack:
   UpgradedDescription: "Deal {Damage} damage.\nCards cost {Mana} less this turn."
 BaitianCard:
   Description: "Gain {Block} |Block|.\nReturn a card from the discard pile to the\
-    \ top of the draw pile."
+    \ top of the draw pile. It costs {Value1} random mana less."
   Name: Transmigration of Hieda
 NueExile:
   Description: "|Exile| a card from the hand.\nAdd a random card to the hand. It |temporarily\
@@ -1251,8 +1251,8 @@ ToolMana:
   Description: "Gain {Mana}.\n|Limited【{DeckCounter}】|"
   Name: Energy Drink
 ToolMicai:
-  Description: "Gain |Optical Camouflage| for {Value1} turn{Value1:plural one==''\
-    \ other='s'}.\n|Limited【{DeckCounter}】|"
+  Description: "Gain |Optical Camouflage| for {Value1} turn{Value1:plural one='' other='s'}.\n\
+    |Limited【{DeckCounter}】|"
   Name: Optical Camouflage Clothing
 ToolExile:
   Description: "|Exile| any number of cards from the hand.\n|Limited【{DeckCounter}】|"
@@ -1267,8 +1267,6 @@ XiaosanJingxia:
 ToolAmulet:
   Description: "Gain {Value1} |Amulet|.\n|Limited【{DeckCounter}】|"
   Name: Disposable Amulet
-AttackWithEveryColor:
-  Name: Colorful Attack
 Zhulianshen:
   Description: 'Gain {Block} |Block|.
 
@@ -1439,8 +1437,8 @@ Chunguang:
   FlavorText: Please don't set the saturation to the highest, and the lowest won't
     do!
 Payment:
-  Description: "Pay {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nThe Rabbit Trickster\
-    \ immediately leaves."
+  Description: "Pay {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nThe <color=#b7646b>Rabbit\
+    \ Trickster</color> immediately leaves."
   Name: Funds Transfer
 FireUpBagualu:
   Description: "Gain {Value1} |Charge|.\nGain {Value2} |Firepower|. This effect is\
@@ -1506,8 +1504,8 @@ Shadow:
   Name: Shadow
 SakuyaLock:
   Name: Time Lockdown
-  Description: "Trigger |Silver Lockdown| once.\n( {PlayerName} takes {Value1} attack\
-    \ damage. )"
+  Description: "Trigger <color=#B7F0FF>Silver Lockdown</color> once.\n({PlayerName}\
+    \ takes {Value1} attack damage.)"
   NonbattleDescription: Trigger |Silver Lockdown|.
 BefuddledLife:
   Name: Befuddlement
@@ -1525,10 +1523,9 @@ ShengquanZaiwo:
   Description: Gain {Mana}.
 Nightmare:
   Name: Nightmare
-  Description: "When there are a total of {Value1} |e:Nightmares| in the hand, draw\
-    \ pile, and/or discard pile, {PlayerName} loses the game.\nThere are currently\
-    \ {NightmareCount}."
-  NonbattleDescription: When there are a total of {Value1} |e:Nightmares| in the hand,
+  Description: "When there are a total of {Value1} {SelfName}s in the hand, draw pile,\
+    \ and/or discard pile, {PlayerName} loses the game.\nThere are currently {NightmareCount}."
+  NonbattleDescription: When there are a total of {Value1} {SelfName}s in the hand,
     draw pile, and/or discard pile, {PlayerName} loses the game.
 AyaNewsSakuyaSp:
   Name: Bunbunmaru - Sakuya Special
@@ -1651,8 +1648,6 @@ JunkoNightmare:
 MorphDog:
   Description: Gain {Value1} |Firepower|.
   Name: Form of Carnivora
-QianGui:
-  ExtraDescription1: "Deal {Damage} damage.\n|d:Debut: Gain {Value1} Graze.|"
 MorphBird:
   Description: Gain {Value1} |Graze|.
   Name: Form of Aves
@@ -1792,8 +1787,7 @@ SakuraBlade:
     Apply {Value1} |Lock-On|.\nGain {Value1} |Graze|."
 LifeGame:
   Name: Life Game
-  Description: "Return all cards in the hand and discard pile to the draw pile.\n\
-    Shuffle the draw pile.\nDraw {Value1} card{Value1:plural one='' other='s'}."
+  Description: "The cards that were adjacent to this card |temporarily cost| {Mana}."
 LimaoAttack:
   Name: Full Moon Pompokolin
   Description: "Deal {Damage} damage to each enemy. \nGain {GainMana}.\n|Growth|:\
@@ -1929,7 +1923,7 @@ FreezeBullet:
 BlueRose:
   Name: Icy Rose
   Description: "Deal {Damage} damage.\nIf the target has |Cold|, gain {Block} |Block|."
-  UpgradedDescription: "Deal {Damage} damage.\nIf the target has |Cold|, gain {Shield}\
+  UpgradedDescription: "Deal {Damage} damage.\nIf the target is |Cold|, gain {Shield}\
     \ |Barrier|."
 FrostGarden:
   Name: Frosty Garden
@@ -2028,9 +2022,8 @@ FairyOnIce:
     \ that has |Cold|, {PlayerName} gains {Value2} |Graze|. "
 CirnoFestival:
   Name: Banquet Infiltration
-  Description: "Gain {Value1} |Graze|.\n{Value2} random |Teammate| card{Value2:plural\
-    \ one='' other='s'} in the hand cost{Value2:plural one='s' other=''} 1 random\
-    \ mana less to play."
+  Description: "Gain {Value1} |Graze|.\n{Value2} random card{Value2:plural one=''\
+    \ other='s'} in the hand cost{Value2:plural one='s' other=''} 1 random mana less."
 DeepFreeze:
   Name: Deep Freeze
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
@@ -2073,19 +2066,19 @@ ColdBreath:
   FlavorText: You can use this move to win this year's The Queen of Fighters.
 HualiIce:
   Name: Stunning Summer Ice
-  Description: "Play this only if a total of {Value1} cards have been played or |Exiled|\
-    \ this turn. ({Countdown:plural one='% card' other='% cards'} left.)\nDeal {Damage}\
-    \ damage to each enemy.\nApply |Cold| to each enemy.\n"
-  UpgradedDescription: "Play this only if a total of {Value1} cards have been played\
-    \ or |Exiled| this turn. ({Countdown} left.)\nDeal {Damage} damage to each enemy.\n\
-    Apply |Cold| to each enemy {Value2} time{Value2:plural one='' other='s'}."
+  Description: "Play this only if a total of {Value1} card{Value1:plural one=' has'\
+    \ other='s have'} been played this turn. ({Countdown:plural one='% card' other='%\
+    \ cards'} left.)\nDeal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n"
+  UpgradedDescription: "Play this only if a total of {Value1} card{Value1:plural one='\
+    \ has' other='s have'} been played this turn. ({Countdown:plural one='% card'\
+    \ other='% cards'} left.)\nDeal {Damage} damage to each enemy.\nApply |Cold| to\
+    \ each enemy {Value2} time{Value2:plural one='' other='s'}."
   UpgradedNonbattleDescription: "Play this only if a total of {Value1} card{Value1:plural\
-    \ one='' other='s'} have been played or |Exiled| this turn.\nDeal {Damage} damage\
-    \ to each enemy.\nApply |Cold| to each enemy {Value2} time{Value2:plural one=''\
-    \ other='s'}."
+    \ one=' has' other='s have'} been played this turn.\nDeal {Damage} damage to each\
+    \ enemy.\nApply |Cold| to each enemy {Value2} time{Value2:plural one='' other='s'}."
   NonbattleDescription: "Play this only if a total of {Value1} card{Value1:plural\
-    \ one='' other='s'} have been played or |Exiled| this turn.\nDeal {Damage} damage\
-    \ to each enemy.\nApply |Cold| to each enemy.\n"
+    \ one=' has' other='s have'} been played this turn.\nDeal {Damage} damage to each\
+    \ enemy.\nApply |Cold| to each enemy.\n"
 FairyTrick:
   Name: Fairy Mischief
   Description: "Lose {Value1} life.\nSummon 3 |e:Fairies of Light|. Add one to the\
@@ -2105,8 +2098,7 @@ CirnoFire:
     \ costs {Mana} less to play."
 FrozenThrone:
   Name: Frozen Throne
-  Description: At the start of {PlayerName}'s turn, if there are no |Glaciers| in
-    the hand, add a |Glacier| to the hand.
+  Description: At the start of {PlayerName}'s turn, add a |Glacier+| to the hand.
   FlavorText: Now, we are one!
 DiamondBlizzard:
   Name: Diamond Pillar
@@ -2234,8 +2226,8 @@ DayaojingFriend:
   Name: Daiyousei, Lively Assistant
 MaidFriend:
   Description: '{FriendP}Deal {Damage} attack damage to the enemy with the least life.'
-  ExtraDescription2: "{FriendU}Deal damage immediately.\nEach {SelfName} deals an\
-    \ additional {Value1} damage."
+  ExtraDescription2: "{FriendU}Deal damage immediately. All {SelfName}s deal {Value1}\
+    \ additional damage."
   Name: Kasumi, Mansion Maid
 FruitShake:
   Description: "Deal {Damage} damage.\nIf a |Teammate| was summoned this turn, deal\
@@ -2254,7 +2246,7 @@ LarvaFriend:
 LilyFriend:
   Description: "{FriendS}Deal {Damage} attack damage to a random enemy {Value1} times.\n\
     {FriendP}Gain {TurnMana}."
-  ExtraDescription1: '{FriendA}Gain {Value2} random mana.'
+  ExtraDescription1: '{FriendA}Gain {ActiveMana}.'
   ExtraDescription2: '{FriendU}Gain {Heal} life.'
   Name: Lily White, Herald of Spring
 InstantFreeze:
