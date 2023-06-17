@@ -566,10 +566,10 @@ PoisonPotionSe:
   Name: Witch's Crucible
 TimeAuraSe:
   Description: "At the end of {PlayerName}'s turn, deal {Level} damage to all enemies.\n\
-    Lose a level for each damaged enemy."
+    Lose a level for each enemy damaged this way."
   Name: Time Pulse
   Brief: "At the end of {PlayerName}'s turn, deal damage to each enemy.\nLose a level\
-    \ for each enemy damaged."
+    \ for each enemy damaged this way."
 PerfectServantUSe:
   Description: At the start of {OwnerName}'s next turn, gain {Level} {Mana} and draw
     {Level:plural one='% card' other='% cards'}.
@@ -585,7 +585,7 @@ Poison:
   Description: At the start of {OwnerName}'s turn, they lose {Level} life, then lose
     1 |Poison|.
   Name: Poison
-  Brief: At the start of {OwnerName}'s turn, they lose some life, then lose some |Poison|.
+  Brief: At the start of {OwnerName}'s turn, they lose some life, then lose 1 |Poison|.
 MoonWorldSe:
   Description: At the start of {PlayerName}'s turn, {Level} random card{Level:plural
     one='' other='s'} in the hand gain |Pure| this combat.
@@ -709,8 +709,7 @@ Cold:
     \ lose |Cold|.\nWhenever |Cold| is applied to {OwnerName}, they lose {StackMultiply}\
     \ times that much life. ({StackDamage} life.)"
   Brief: "At the start of {OwnerName}'s turn, they lose {BaseDamage} life and lose\
-    \ |Cold|.\nWhenever |Cold| is applied to {OwnerName}, they lose twice that much\
-    \ life. ({StackDamage} life.)"
+    \ |Cold|.\nWhenever |Cold| is applied to {OwnerName}, they lose even more life."
 RangziFanshuSe:
   Name: Sweet Sweet Potato
   Description: After this combat, gain {Level} life.
@@ -739,7 +738,7 @@ ExtraDraw:
   Name: Extra Draw
   Description: At the start of {PlayerName}'s turn, draw {Level} card{Level:plural
     one='' other='s'}.
-  Brief: At the start of {PlayerName}'s turn, draw a card.
+  Brief: At the start of {OwnerName}'s next turn, draw several additional cards.
 FairyTreeSe:
   Name: Fairies' Abode
   Description: Whenever a |Teammate| is summoned by playing |Teammate| card, gain
@@ -749,7 +748,8 @@ NextTurnColdAll:
   Name: Winter is Coming
   Description: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy
     {Level} time.
-  Brief: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy.
+  Brief: At the start of {OwnerName}'s next turn, apply |Cold| to each enemy several
+    times.
 KaguyaTreeSeeSe:
   Description: All cards lose |Exile|.
   Brief: All cards lose |Exile|.
@@ -896,7 +896,7 @@ EnemyLily:
   Name: Lily White's Announcement
   Description: "{OwnerName}'s actions are more powerful."
 EnemyDayaojing:
-  Name: Daiyousei's Unity
+  Name: Daiyousei's Support
   Description: 'At the end of {OwnerName}''s turn, they gain {Level} life.'
 EnemyMaid:
   Name: Kasumi's Cleanup
@@ -908,9 +908,11 @@ KnifeTarget:
 FrostArmor:
   Name: Frost Armor
   Description: "At the start of {OwnerName}'s turn, gain {Level} |Block| and lose\
-    \ 1 |Frost Armor|."
+    \ 1 |Frost Armor|.\nWhenever {OwnerName} is dealt attack damage, they lose 1 |Frost\
+    \ Armor|."
   Brief: "Whenever {PlayerName} gains |Frost Armor|, gain that much |Block|.\nAt the\
-    \ start of {OwnerName}'s turn, gain |Block| and lose 1 |Frost Armor|."
+    \ start of {OwnerName}'s turn, gain |Block| and lose 1 |Frost Armor|.\nWhenever\
+    \ {OwnerName} is dealt attack damage, they lose 1 |Frost Armor|."
 ExtraBlizzard:
   Name: Blizzard's Advent
   Description: At the start of {OwnerName}'s next turn, she deals {Damage} |Accurate|
