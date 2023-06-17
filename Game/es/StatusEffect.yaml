@@ -563,7 +563,7 @@ PoisonPotionSe:
 TimeAuraSe:
   Name: Pulso Temporal
   Description: "Al final del turno de {PlayerName}, inflige {Level} de daño a todos\
-    \ los enemigos.\nDisminuye un nivel por cada enemigo dañado."
+    \ los enemigos.\nPierde un nivel por cada enemigo dañado."
   Brief: "Al final del turno de {PlayerName}, inflige daño a cada enemigo.\nDisminuye\
     \ un nivel por cada enemigo dañado."
 GainKnifeSe:
@@ -678,10 +678,10 @@ SeeFengshuiSe:
   Name: Manipulación del Feng Shui
 YonglinCardSe:
   Name: La Sabia Recluida
-  Description: Al final del turno de {PlayerName}, añade {Level} |Luna{Level:plural
+  Description: Al final del turno de {PlayerName}, agrega {Level} |Luna{Level:plural
     one=' Falsa' other='s Falsas'}| a la pila de robo.
-  Brief: Al final del turno de {PlayerName}, agrega una |Luna Falsa| a la pila de
-    robo.
+  Brief: Al final del turno de {PlayerName}, agrega varias |Lunas Falsas| a la pila
+    de robo.
 HuiyeManaSe:
   Name: Cuento del Cortador de Bambú
   Description: Al comienzo del turno de {PlayerName}, gana {Count} maná aleatorio;
@@ -707,8 +707,8 @@ RainbowMarketSe:
   Brief: Siempre que una carta es |Exiliada|, añade algunas cartas al azar a tu mano.
 Poison:
   Name: Veneno
-  Brief: Al comienzo del turno de {OwnerName}, pierde algo de vida, luego pierde algo
-    de |Veneno|.
+  Brief: Al comienzo del turno de {OwnerName}, pierde algo de vida, luego pierde 1
+    carga de |Veneno|.
   Description: Al comienzo del turno de {OwnerName}, pierde {Level} de vida y luego
     pierde 1 carga de |Veneno|.
 TiangouOrderSe:
@@ -727,13 +727,13 @@ SkyWaterSe:
   Name: Milagro del Agua Celestial
   Brief: Roba cartas adicionales durante la fase de robo.
 BlackPoisonSe:
-  Description: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, agrega
+  Description: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, aplica
     {level} de |Veneno| a ese enemigo.
   Name: Bailar en la Oscuridad
-  Brief: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, agrega
-    acumulaciones de |Veneno| a ese enemigo.
+  Brief: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, aplica
+    algo de |Veneno| a ese enemigo.
 MeilingAbilitySe:
-  Brief: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
+  Brief: 'Cada vez que {OwnerName}, ganara el doble de |Poder| y |Poder Temporal|.'
   Name: Puño de Arcoíris Vibrante
   Description: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
 Cold:
@@ -742,8 +742,7 @@ Cold:
     \ y desaparece el |Frío|.\nSiempre que |Frío| se aplica a {OwnerName}, pierde\
     \ {StackMultiply} veces esa cantidad de vida. ({StackDamage} de vida.)"
   Brief: "Al comienzo del turno de {OwnerName}, pierde {BaseDamage} de vida y desaparece\
-    \ el |Frío|.\nSiempre que el |Frío| se aplica de nuevo a {OwnerName}, perderá\
-    \ el doble de vida."
+    \ el |Frío|.\nSiempre que el |Frío| se aplica a {OwnerName}, pierden aún más vida."
 MoonWorldSe:
   Name: Mundo Purgado
   Description: Al comienzo del turno de {PlayerName}, {Level} {Level:plural one='carta
@@ -761,10 +760,10 @@ UseCardToLoseGame:
   Brief: Pierde la partida después de jugar un cierto número de cartas.
 BailianBlackSe:
   Name: Abraza la Oscuridad
-  Description: Todas las cartas de |Ataque|, |Técnica| y |Estado| tienen |Exilio|,
-    sus costes se reducen a {Mana}.
-  Brief: Todas las cartas de |Ataque|, |Técnica| y |Estado| tienen |Exilio|, sus costes
-    se reducen a {Mana}.
+  Description: Todos las cartas que no son de ataque ni de habilidad se reducen su
+    coste a {Mana}. Tienen |Exilio|.
+  Brief: Todos las cartas que no son de ataque ni de habilidad se reducen su coste
+    a {Mana}. Tienen |Exilio|.
 MeihongPowerSe:
   Description: "Al comienzo del turno de {PlayerName}, gana {Level} de |Poder|\nAl\
     \ final del combate, si la vida de {PlayerName} es menos de la mitad, se cura\
@@ -827,15 +826,16 @@ ColdPotionSe:
   Description: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
   Brief: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
 ExtraDraw:
-  Name: Sabiduría de la Hada
-  Brief: Al comienzo del turno de {OwnerName}, roba una carta.
-  Description: Al comienzo del turno de {OwnerName}, roba {Level} carta{Level:plural
-    one='' other='s'}.
+  Name: Intelecto de Hada
+  Brief: Al comienzo del próximo turno de {OwnerName}, roba varias cartas adicionales.
+  Description: Al comienzo del próximo turno de {OwnerName}, roba {Level} carta{Level:plural
+    one=' adicional' other='s adicionales'}.
 WhiteWorldSe:
   Name: Mundo de Blanco Puro
-  Description: Al comienzo del turno de {PlayerName}, aplica |Frío| a todos los enemigos.
-  Brief: Al comienzo del turno de {PlayerName}, aplica |Frío| varias veces a todos
-    los enemigos.
+  Description: Al comienzo del turno de {PlayerName}, aplica |Frío| a cada enemigo
+    {Level:plural one='% vez' other='% veces'}.
+  Brief: Al comienzo del turno de {PlayerName}, aplica |Frío| a cada enemigo varias
+    veces.
 BailianFireSe:
   Name: Fuegos de Hokkai
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
@@ -888,29 +888,29 @@ IceVulnerable:
     \ pierde |Congelación Profunda|."
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
-  Brief: "Siempre que una |Compañera| usa su habilidad |a:Activa| o |u:Definitiva|\
-    \ , aplica |Frío| a un enemigo aleatorio.\nSiempre que un enemigo gana |Frío|,\
-    \ algunas |Compañeras| aleatorias en la mano ganan 1 de |Influencia|."
-  Description: "Siempre que una |Compañera| usa su habilidad |a:Activa| o |u:Definitiva|\
-    \ , aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural one='s' other='ces'}.\n\
-    Siempre que un enemigo gana |Frío|, {Level} |Compañera{Level:plural one='' other='s'}|\
-    \ aleatoria{Level:plural one='' other='s'} en la mano gana{Level:plural one=''\
-    \ other='n'} 1 de |Influencia|."
+  Brief: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una |Compañera|\
+    \ se usa, aplica |Frío| a un enemigo aleatorio.\nCada vez que un enemigo gana\
+    \ |Frío|, una |Compañera| aleatoria en la mano gana algo de |Influencia|."
+  Description: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de\
+    \ una |Compañera| se usa, aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural\
+    \ one='z' other='ces'}.\nCada vez que un enemigo gana |Frío|, una |Compañera|\
+    \ aleatoria en la mano gana {Level} de |Influencia|."
 MoreFriendsSe:
   Name: Mariposa Social
-  Description: "Al final del turno de {PlayerName}, agrega {Level} carta{Level:plural\
-    \ one=' aleatoria' other='s aleatorias'} de |Compañera{Level:plural one='' other='s'}|\
-    \ a la mano.\nLas cartas |Compañeras| añadidas de esta manera tienen |Etéreo|\
-    \ hasta que sean convocadas."
+  Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
+    \ one='' other='s'} de |Compañera| aleatoria{Level:plural one='' other='s'} a\
+    \ la mano.\n{Level:plural one='Tiene' other='Tienen'} |Etéreo| y pierde{Level:plural\
+    \ one='' other='n'} el |Etéreo| cuando {Level:plural one='es convocada' other='son\
+    \ convocadas'}."
   Brief: "Al final del turno de {PlayerName}, agrega cartas aleatorias de |Compañeras|\
     \ a la mano.\nLas cartas |Compañeras| añadidas de esta manera tienen |Etéreo|\
     \ hasta que sean convocadas."
 YouxiangMoonSe:
   Name: Belleza de la Naturaleza
-  Description: Al comienzo del turno de {PlayerName}, añade {Level} |Flores de Verano|
-    con |Etéreo| a la mano.
-  Brief: Al comienzo del turno de {PlayerName}, añade varias |Flores de Verano| con
-    |Etéreo| a la mano.
+  Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Flores de Verano|
+    a la mano {Level:plural one='Tiene' other='Tienen'} |Etéreo|.
+  Brief: Al comienzo del turno de {PlayerName}, agrega varias |Flores de verano| a
+    la mano Tienen |Etéreo|.
 MinengZhuruSe:
   Name: Inyección de Energía Mental
   Description: "Las habilidades pasivas de las cartas |Compañera| convocadas se activan\
@@ -951,17 +951,16 @@ ExtraBlizzard:
     |Frío| a cada enemigo.
 FrozenThroneSe:
   Name: Trono de Hielo
-  Description: Al comienzo del turno de {PlayerName}, si no hay un |Glaciar| en la
-    mano, añade un |Glaciar| a la mano hasta que tengas {Level}.
-  Brief: Al comienzo del turno de {PlayerName}, si no hay un |Glaciar| en la mano,
-    añade un |Glaciar| a la mano.
+  Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Glaciar{Level:plural
+    one='' other='es'}+| a la mano.
+  Brief: Al comienzo del turno de {PlayerName}, agrega varios |Glaciares+| a la mano.
 Immune:
   Name: Bloque de Hielo
   Description: "{OwnerName} no puede perder vida durante {Duration} turno{Duration:plural\
     \ one='' other='s'}."
   Brief: '{OwnerName} no puede perder vida.'
 EnemyDayaojing:
-  Name: Unidad de Daiyousei
+  Name: Soporte de Daiyousei
   Description: Al final del turno de {OwnerName}, se cura {Level} de vida.
 EnemyLarva:
   Name: Alas de Larva
@@ -999,4 +998,7 @@ CatchGoblinSe:
 YinyangQueenSe:
   Brief: El efecto de todos los |Orbes Yin Yang| se incrementa varias veces.
   Description: El efecto de todos los |Orbes Yin Yang| se incrementa {Level} veces.
-  Name: Misumaru la Artesana
+  Name: Misumaru, Artesana Habilidosa
+HuiyeTimeSe:
+  Description: Solo pueden jugar hasta {Limit} carta{Limit:plural one='' other='s'}
+    en este turno. Quedan {Count} carta{Limit:plural one='' other='s'}.

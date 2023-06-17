@@ -409,7 +409,7 @@ ToolDroneBlock:
 ToolRandomTool:
   Name: Walkie-Talkie Táctico
   Description: "Elige 1 de {Value1} aleatorias |Herramientas| para añade una |copia|\
-    \ a la mano. Tiene |Limitado【1】|.\n|Limitado【{DeckCounter}】|"
+    \ a la mano. Es una |Copia| y solo se puede usarse una vez.\n|Limitado【{DeckCounter}】|"
   FlavorText: ' "¡Este es el USS Palanquin, lanzamiento aéreo esta listo!"'
 ArtificialJewellery:
   Name: Joya Artificial
@@ -1504,7 +1504,7 @@ YukariAttack:
 TannvCard:
   Name: Cambiando las Tornas
   Description: Coloca la carta superior de la pila de robo y la de descarte a la mano.
-    Esas cartas |cuestan temporalmente| {Mana}.
+    |Cuestan temporalmente| {Mana}.
 ChengDefense:
   Name: Estruendo de Tianxian
   Description: "Obtén {Block} de |Bloqueo|.\nAl comienzo del próximo turno de {PlayerName},\
@@ -1600,8 +1600,6 @@ SuikaBigball:
   NonbattleDescription: "Inflige {Damage} de daño. Luego, inflige la mitad de ese\
     \ daño a los demás enemigos.\nPierde {Value1} de |Poder|."
   Name: Bomba de Espíritu Oni
-QianGui:
-  ExtraDescription1: "Inflige {Damage} de daño.\n|d:Debut: Obtén {Value1} de Evasión.|"
 RangziFanshu:
   Description: Al final del combate, se cura {Value1} de vida.
   Name: Dulce Dulce Patata
@@ -1631,7 +1629,7 @@ HuiyinRetain:
 BaitianCard:
   Name: Transmigración de Hieda
   Description: "Obtén {Block} de |Bloqueo|.\nDevuelve una carta de la pila de descarte\
-    \ a la parte superior de la pila de robo."
+    \ a la parte superior de la pila de robo. Cuesta {Value1} maná aleatorio menos."
 PoorAttack:
   Name: Caer en la Pobreza
   Description: "Pierde {Value1} <sprite=\"Point\" name=\"Gold\">.\nInflige {Damage}\
@@ -1787,7 +1785,7 @@ FengleiCard:
     other='veces'}.
 YinyangQueen:
   Description: '{FriendP}Obtén {Value2} de |Bloqueo| y |Barrera|'
-  Name: Misumaru la Artesana
+  Name: Misumaru, Artesana Habilidosa
   ExtraDescription1: "{FriendA}Añade {Value1} |Orbe{Value1:plural one='' other='s'}\
     \ Yin-Yang del Arcoíris| aleatorio{Value1:plural one='' other='s'} a la mano."
   ExtraDescription2: '{FriendU}Durante el resto del combate, los efectos de los |Orbes
@@ -1816,9 +1814,8 @@ SkyWater:
     \ other='s'} más durante la fase de robo."
 LifeGame:
   Name: Juego de la Vida
-  Description: "Devuelve todas las cartas de la mano y la pila de descarte a la pila\
-    \ de robo.\nBaraja la pila de robo.\nRoba {Value1} carta{Value1:plural one=''\
-    \ other='s'}."
+  Description: "Las cartas que estaban adyacentes a esta carta |cuestan temporalmente|\
+    \ {Mana}."
 GatherFairy:
   Name: Asamblea de Hadas
   Description: "El tamaño máximo de cartas en la mano se convierte en {MaxHand}.\n\
@@ -1930,8 +1927,6 @@ WhiteWorld:
   Name: Mundo de Blanco Puro
   UpgradedDescription: "Al comienzo del turno de {PlayerName}, aplica |Frío| a todos\
     \ los enemigos.\nAplica |Frío| a todos los enemigos."
-AttackWithEveryColor:
-  Name: Ataque Colorido
 ZiwoCard:
   Name: Amor Desinteresado
   Description: "Inflige {Damage} de daño.\nSale de cualquier |Estado Mental|.\n|Instinto|:\
@@ -2028,8 +2023,8 @@ FairyOnIce:
     \ que tiene |Frío|, {PlayerName} gana {Value2} de |Evasión|. "
 CirnoFestival:
   Name: Infiltración en el Banquete
-  Description: "Obtén {Value1} de |Evasión|.\n{Value2} cartas |Compañeras| aleatorias\
-    \ en la mano cuestan 1 maná aleatorio menos para jugar."
+  Description: "Obtén {Value1} de |Evasión|.\n{Value2} carta{Value2:plural one=' aleatoria'\
+    \ other='s aleatorias'} en la mano cuestan 1 maná aleatorio menos."
 DeepFreeze:
   Name: Congelación Profunda
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\
@@ -2090,8 +2085,7 @@ CirnoFire:
 FrozenThrone:
   Name: Trono de Hielo
   FlavorText: Now, we are one!
-  Description: Al comienzo del turno de {PlayerName}, si no hay un |Glaciar| en la
-    mano, añade un |Glaciar| a la mano.
+  Description: Al comienzo del turno de {PlayerName}, agrega un |Glaciar+| a la mano.
 FairyWrath:
   Name: Cólera de la Naturaleza
   Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay una |Daiyousei, Asistente\
@@ -2191,7 +2185,7 @@ DoubleMana:
   Description: "Duplica el maná existente.\n|Sobregiro| {Value1} ."
 YonglinUpgrade:
   Name: Incienso del Conejo Lunar
-  Description: "Cura {Value2} de vida.\nAl comienzo del turno de {PlayerName}, mejora\
+  Description: "Cura {Value2} de vida.\nAl comienzo del turno de {PlayerName}, |Mejora|\
     \ {Value1} carta{Value1:plural one=' aleatoria' other='s aleatorias'} en la mano.\n"
 MoonTipsBag:
   Name: Bolsa de Trucos de Yukari
@@ -2242,11 +2236,11 @@ LilyFriend:
   Description: "{FriendS}Inflige {Damage} de daño a un enemigo aleatorio {Value1}\
     \ veces.\n{FriendP}Gana {TurnMana}."
   ExtraDescription2: '{FriendU}Cura {Heal} de vida.'
-  ExtraDescription1: '{FriendA}Gana {Value2} de maná aleatorio.'
+  ExtraDescription1: '{FriendA}Gana {ActiveMana}.'
   Name: Lily White, Heraldo de la Primavera
 MaidFriend:
   Description: '{FriendP}Inflige {Damage} de daño al enemigo con menos vida.'
-  ExtraDescription2: "{FriendU}Inflige daño inmediatamente.\nCada {SelfName} inflige\
+  ExtraDescription2: "{FriendU}Inflige daño inmediatamente. Todos los {SelfName} infligen\
     \ {Value1} de daño adicional."
   Name: Kasumi, Sirvienta de la Mansión
 LarvaFriend:
@@ -2295,6 +2289,7 @@ LarvaDefense:
 FakeCard:
   Description: "|Koishi Komeiji| Todavía esta durmiendo en su casa.\nEsten atento\
     \ a las futuras actualizaciones."
+  Name: Sueño Ancestral (Falso)
 HistoryCard:
   Description: "Esta carta ha sido eliminada en la versión actual del juego.\nCarta\
     \ ID: {CardId}"
@@ -2340,3 +2335,7 @@ DeployAttackDoll:
 DeployDefenseDoll:
   Name: (WIP) Muñeca de Defensa
   Description: (WIP) Configurar Muñeca de Defensa
+HuiyeAttack:
+  Name: Océano de Arboles Hourai
+SanaeRestart:
+  Name: El Día en que se Partió el Mar
