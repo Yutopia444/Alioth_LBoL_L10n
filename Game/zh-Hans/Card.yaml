@@ -1413,7 +1413,7 @@ CirnoFestival:
   Name: 混入宴会
   Description: |-
     获得 {Value1} 层|闪避|。
-    手中随机的 {Value2} 张|同伴|牌，降低一点随机费用，直到战斗结束。
+    手中随机的 {Value2} 张牌，降低一点随机费用。
   FlavorText: 在对月球人的特别作战庆功宴上混入了奇怪的家伙。
 
 CirnoConsider:
@@ -1507,6 +1507,9 @@ Blizzard:
 FrozenThrone:
   Name: 冰封王座
   Description: '{PlayerName}的回合开始时，将一张|冰晶+|加入手中。'
+  UpgradedDescription: |-
+    {PlayerName}的回合开始时，将一张|冰晶+|加入手中。
+    立刻获得 {Value1} 张。
   FlavorText: Now, we are one!
 
 DoubleMana:
@@ -1880,6 +1883,15 @@ PrismriverWhite:
     将 {Light} 张|折射日光|洗入弃牌堆。
     |d:初见：获得 {Value2} 点<sprite="Point" name="Power">。|
 
+SanaeMiracle:
+  Name: 白昼的客星
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
+    只有在抽牌堆为空时可以打出。
+  ExtraDescription1: |-
+    |d:对所有敌人造成 {Damage} 点伤害。|
+    只有在抽牌堆为空时可以打出。
+
 ShenziUpgradeAll:
   Name: 得道升仙
   Description: '|升级|所有牌，直至本场战斗结束。'
@@ -2097,6 +2109,15 @@ HinaAttack:
     卡组里每有一张|厄运|，多造成一次伤害。
   FlavorText: 别担心，坏运气之后还会是坏运气。
 
+RemiliaFate:
+  Name: 操纵命运
+  Description: |-
+    选择至多 {Value1} 张手牌丢弃。
+    将抽牌堆中随机的数张牌移入手中，它们的基础费用总数分别为一二三。
+  UpgradedDescription: |-
+    选择至多 {Value1} 张手牌丢弃。
+    将抽牌堆中随机的数张牌移入手中，它们的基础费用总数分别为一二三四五。
+
 BailianBlack:
   Name: 拥抱黑暗
   Description: 所有防御、技能和状态牌，打出后被|放逐|，它们的费用降至{Mana}。
@@ -2233,15 +2254,6 @@ RangziSeed:
   Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
   UpgradedDescription: 将一张|幻虹|置于抽牌堆顶，它具有|填充|。
 
-QianGui:
-  Name: 前鬼后鬼的守护
-  Description: |-
-    造成 {Damage} 点伤害。
-    |初见|：获得{Value1}层|闪避|。
-  ExtraDescription1: |-
-    造成 {Damage} 点伤害。
-    |d:初见：获得{Value1}层闪避。|
-
 RangziFanshu:
   Name: 香甜的番薯
   Description: 战斗结束后恢复 {Value1} 点生命。
@@ -2297,6 +2309,12 @@ MorphFrog:
 MorphMan:
   Name: 灵长变化
   Description: 获得 {Value1} 点<sprite="Point" name="Power">。
+
+HuiyeAttack:
+  Name: 蓬莱的树海
+  Description: |-
+    |每支付一点不同颜色的费用|：对所有敌人造成 {Damage} 点伤害。
+    总计支付费用不低于 {Value2} 点时，从|放逐|区选择至多 {Value1} 张牌移回手中。
 
 HuiyeMana:
   Name: 竹取的物语
@@ -2388,15 +2406,24 @@ YukariAttack:
     如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时{SelfName}从弃牌堆回到手中且|暂塑|为{Mana}。
   FlavorText: 「生与死之间有一条纤薄的境界线。你会在那里找到我。」
 
+KokoroDance:
+  Name: 假面丧心舞
+  Description: 每当敌人受到负面状态时，{PlayerName}对他造成 {Value1} 点伤害。
+
+HuiyeTime:
+  Name: 永远与须臾
+  Description: |-
+    选择至多 {Value1} 张手牌，|保留|它一回合。
+    结束{PlayerName}的回合，进行一个额外的回合，这一回合内只能打出 {Value1} 张牌。
+  UpgradedDescription: |-
+    选择至多 {Value1} 张手牌，|保留|它们一回合。
+    结束{PlayerName}的回合，进行一个额外的回合，这一回合内只能打出 {Value1} 张牌。
+
 QingeUpgrade:
   Name: 邪仙秘法
   Description: |-
     造成 {Damage} 点伤害。
     |退治|时，永久|升级|一张牌。
-
-KokoroDance:
-  Name: 假面丧心舞
-  Description: 每当敌人受到负面状态时，{PlayerName}对他造成 {Value1} 点伤害。
 
 TannvCard:
   Name: 形势逆转
@@ -2640,15 +2667,6 @@ KaguyaTreeSee:
     将所有放逐区内附带|放逐|的卡牌移入抽牌堆。
     所有卡牌失去|放逐|。
 
-SanaeMiracle:
-  Name: 白昼的客星
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
-    只有在抽牌堆为空时可以打出。
-  ExtraDescription1: |-
-    |d:对所有敌人造成 {Damage} 点伤害。|
-    只有在抽牌堆为空时可以打出。
-
 MistLake:
   Name: 来个蓝绿
   Description: |-
@@ -2691,10 +2709,8 @@ KanakoWalk:
 
 LifeGame:
   Name: 生命游戏
-  Description: |-
-    将手牌和弃牌堆洗入抽牌堆。
-    重洗抽牌堆。
-    抽 {Value1} 张牌。
+  Description: 相邻的卡牌|暂塑|为{Mana}。
+  UpgradedDescription: 相邻的卡牌|暂塑|为{Mana}，|升级|它们。
 
 LigeluCard:
   Name: 荧光之夜
@@ -2771,6 +2787,27 @@ TodayYesterday:
     获得 {Value2} 层|闪避|。
   FlavorText: 传说有位游手好闲的强大剑士，常以收割、焚烧无辜园丁的花田为乐。幸好他没遇到幽香。
 
+PatchouliLibrary:
+  Name: 不动的大图书馆
+  Description: |-
+    获得{Mana}。
+    从 {Value1} 张随机的稀有牌中选择一张加入手中，它具有|放逐|、|虚无|。
+  UpgradedDescription: |-
+    获得{Mana}。
+    从 {Value1} 张随机的稀有牌和 {Value2} 张随机的罕见牌中选择一张加入手中，它具有|放逐|、|虚无|。
+
+SanaeRestart:
+  Name: 海水分开之日
+  Description: |-
+    获得{Mana}。    
+    将手牌和弃牌堆洗入抽牌堆，重洗抽牌堆。
+    抽 {Value1} 张牌。
+  UpgradedDescription: |-
+    获得{Mana}。    
+    将手牌和弃牌堆洗入抽牌堆，重洗抽牌堆。
+    抽 {Value1} 张牌。
+    从抽牌堆中选择 {Value2} 张加入手中。
+
 PrismriverAll:
   Name: 合葬「棱镜协奏曲」
   Description: |-
@@ -2799,15 +2836,6 @@ BailianFire:
   UpgradedDescription: |-
     {PlayerName}的回合开始时，将一张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
     立刻生效一次。
-
-PatchouliLibrary:
-  Name: 不动的大图书馆
-  Description: |-
-    获得{Mana}。
-    从 {Value1} 张随机的稀有牌中选择一张加入手中，它具有|放逐|、|虚无|。
-  UpgradedDescription: |-
-    获得{Mana}。
-    从 {Value1} 张随机的稀有牌和 {Value2} 张随机的罕见牌中选择一张加入手中，它具有|放逐|、|虚无|。
 
 Shoot:
   Name: 射击
@@ -3299,10 +3327,6 @@ FlanBlack:
     这张牌还没有准备好。
     请期待游戏更新。
   FlavorText: 背负U·N·欧文之名，舍弃所有人去战斗的少女~
-
-AttackWithEveryColor:
-  Name: 多彩攻击
-  Description: '|每支付一点不同颜色的费用|：造成 {Damage} 点伤害。'
 
 DeployAttackDoll:
   Name: (WIP) Attack Doll
