@@ -1816,6 +1816,8 @@ LifeGame:
   Name: Juego de la Vida
   Description: "Las cartas que estaban adyacentes a esta carta |cuestan temporalmente|\
     \ {Mana}."
+  UpgradedDescription: Las cartas que estaban adyacentes a esta carta |cuestan temporalmente|
+    {Mana} y son |Mejoradas|
 GatherFairy:
   Name: Asamblea de Hadas
   Description: "El tamaño máximo de cartas en la mano se convierte en {MaxHand}.\n\
@@ -2180,6 +2182,7 @@ Thought:
   UpgradedDescription: "|Cuando {SelfName} entra en la mano|: Se |exilia|.\nAgrega\
     \ una carta aleatoria |Mejorada| con un coste total de {Value1} en la mano. |Cuesta\
     \ temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
+  Name: Idea
 DoubleMana:
   Name: Despertar de las Hadas
   Description: "Duplica el maná existente.\n|Sobregiro| {Value1} ."
@@ -2337,5 +2340,22 @@ DeployDefenseDoll:
   Description: (WIP) Configurar Muñeca de Defensa
 HuiyeAttack:
   Name: Océano de Arboles Hourai
+  Description: "Por cada maná de diferentes colores gastado|: Inflige {Damage} de\
+    \ daño a cada enemigo.\nSi se gastó al menos {Value2} de maná, regresa hasta {Value1}\
+    \ carta{Value1:plural one='' other='s'} |Exiliada{Value1:plural one='' other='s'}|\
+    \ a la mano."
 SanaeRestart:
   Name: El Día en que se Partió el Mar
+  Description: "Gana {Mana}.\nDevuelve todas las cartas de la mano y la pila de descarte\
+    \ a la pila de robo.\nBaraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'}."
+RemiliaFate:
+  Description: "Descarta hasta {Value1} cartas.\nColoca cartas aleatorias con costes\
+    \ totales de 1, 2 y 3 de la pila de robo hacia la mano."
+  Name: Manipulación del Destino
+HuiyeTime:
+  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.\
+    \ {Value1:plural one='Tiene' other='Tienen'} |Retener| en este turno.\nTermina\
+    \ el turno de {PlayerName}. Luego, toma un turno extra. Solo se pueden jugar hasta\
+    \ {Value1} carta{Value1:plural one='' other='s'} durante ese turno."
+  Name: Eternidad y lo Instantáneo
