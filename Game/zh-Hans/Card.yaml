@@ -1413,7 +1413,7 @@ CirnoFestival:
   Name: 混入宴会
   Description: |-
     获得 {Value1} 层|闪避|。
-    手中随机的 {Value2} 张|同伴|牌，减少一点随机费用。
+    手中随机的 {Value2} 张|同伴|牌，降低一点随机费用，直到战斗结束。
   FlavorText: 在对月球人的特别作战庆功宴上混入了奇怪的家伙。
 
 CirnoConsider:
@@ -1457,9 +1457,8 @@ CirnoDraw:
 MaidFriend:
   Name: 洋馆的女仆小霞
   Description: '{FriendP}对生命值最低的敌人造成 {Damage} 点攻击伤害。'
-  ExtraDescription2: |-
-    {FriendU}立刻造成伤害。
-    所有的{SelfName}额外造成 {Value1} 点伤害。
+  ExtraDescription1: '{FriendA}立刻造成伤害。将 {Value2} 张|飞刀|加入手中。'
+  ExtraDescription2: '{FriendU}立刻造成伤害。所有的{SelfName}额外造成 {Value1} 点伤害。'
   FlavorText: 小霞已经是红魔馆的女仆妖精里，最认真干活的了。
 
 CirnoFire:
@@ -1507,7 +1506,7 @@ Blizzard:
 
 FrozenThrone:
   Name: 冰封王座
-  Description: '{PlayerName}的回合开始时，如果手中没有|冰晶|，将一张|冰晶|加入手中。'
+  Description: '{PlayerName}的回合开始时，将一张|冰晶+|加入手中。'
   FlavorText: Now, we are one!
 
 DoubleMana:
@@ -1542,7 +1541,7 @@ LilyFriend:
   Description: |-
     {FriendS}随机对敌人造成 {Damage} 点攻击伤害 {Value1} 次。
     {FriendP}获得{TurnMana}。
-  ExtraDescription1: '{FriendA}获得 {Value2} 点随机的法力。'
+  ExtraDescription1: '{FriendA}获得{ActiveMana}。'
   ExtraDescription2: '{FriendU}恢复 {Heal} 点生命。'
 
 CallFriends:
@@ -2474,8 +2473,8 @@ YukariBox:
 BaitianCard:
   Name: 稗田的转生
   Description: |-
-    获得 {Block} 点格挡。
-    从弃牌堆中选择一张牌，将它置于抽牌堆顶。
+    获得 {Block} 点|格挡|。
+    从弃牌堆中选择一张牌，将它置于抽牌堆顶，随机降低 {Value1} 点它的费用。
   FlavorText: 在尝试了电子的信息存储媒介后，稗田阿求小姐有了更多喝下午茶的闲暇时间。
 
 NueExile:
@@ -2613,7 +2612,7 @@ YonglinUpgrade:
   Name: 仙香玉兔
   Description: |
     恢复 {Value2} 点生命。
-    {PlayerName}的回合开始时，升级 {Value1} 张随机的手牌。
+    {PlayerName}的回合开始时，|升级| {Value1} 张随机的手牌。
 
 YinyangQueen:
   Name: 能工巧匠魅须丸
