@@ -649,7 +649,7 @@ CirnoFestival:
   Name: 연회 난입
   Description: '|그레이즈|를 {Value1} 얻습니다.
 
-    손에 |동료| 카드가 {Value2}장 있을 때마다 무작위 코스트가 하나 감소합니다.'
+    손에 있는 무작위 카드 {Value2}장의 무작위 코스트를 하나 감소시킵니다.'
 DanmuJade:
   Name: 탄막의 쌍고치
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|채홍|을 한 장 얻습니다.\n|{Mana}를 지불할 시|: |화력|과\
@@ -1407,8 +1407,9 @@ CirnoFire:
   Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 코스트가 {Mana} 감소합니다."
 FrozenThrone:
   Name: 얼어붙은 왕좌
-  Description: 내 턴 시작 시 손에 |얼음 조각|이 없다면 |얼음 조각|을 한 장 얻습니다.
+  Description: 내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.
   FlavorText: Now, we are one!
+  UpgradedDescription: "내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.\n|얼음 조각+|을 {Value1}장 얻습니다."
 PlayWithWaste:
   Name: 폐품 탐험
   Description: "무작위 일반 |도구 카드| {Value1}장 중 한 장을 선택해 얻습니다.\n해당 카드는 |복사본|으로 표시되며, 단\
@@ -1427,9 +1428,9 @@ RangziSeed:
   Name: 가을의 수확
   Description: 뽑을 카드 더미의 맨 위에 |보충|이 붙은 |활력|을 한 장 추가합니다.
 LifeGame:
-  Description: "손과 버린 카드 더미에 있는 카드를 전부 뽑을 카드 더미에 돌려넣습니다.\n뽑을 카드 더미를 한 번 섞습니다.\n카드를 {Value1}장\
-    \ 뽑습니다."
+  Description: "이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 됩니다."
   Name: 생명유희
+  UpgradedDescription: 이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 되고, 해당 카드는 |강화|됩니다.
 RangziFanshu:
   Name: 달콤한 고구마
   Description: 전투 종료 시 체력을 {Value1} 회복합니다.
@@ -1445,8 +1446,6 @@ FlanBlack:
 LarvaCure:
   Description: "|중독|을 제거합니다.\n|사용 제한 [{DeckCounter}]|"
   Name: 해독제
-AttackWithEveryColor:
-  Name: 다채로운 공격
 DeployManaDoll:
   Name: 마나 인형
   Description: '|마나 인형|을 배치합니다.'
@@ -1667,8 +1666,6 @@ MorphFrog:
 MorphMan:
   Name: 영장화탄막변화
   Description: <sprite="Point" name="Power">를 {Value1} 얻습니다.
-QianGui:
-  Name: 젠키고키의 수호
 HinaAttack:
   Name: 액운의 수레바퀴
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n덱에 있는 |액운| 카드 한 장마다 피해를 추가로 줍니다."
@@ -1817,7 +1814,8 @@ RuowujiCard:
   Name: 역린의 거친 파도
   Description: 모든 적에게 피해를 {Damage} 주고 |침수|를 {Value1} 줍니다.
 BaitianCard:
-  Description: "|방어|를 {Block} 얻습니다.\n버린 카드 더미에서 카드를 한 장 골라 뽑을 카드 더미의 맨 위로 보냅니다."
+  Description: "|방어|를 {Block} 얻습니다.\n버린 카드 더미에서 카드를 한 장 골라 뽑을 카드 더미의 맨 위로 보내고, 해당\
+    \ 카드의 무작위 코스트를 {Value1} 감소시킵니다."
   Name: 히에다의 전생
 ShuihuoCard:
   Name: 화수옥
@@ -1880,7 +1878,7 @@ OtherSkill:
     \ 뽑을 때마다 {SelfName}은 추가로 <sprite=\"ManaSprite\" name=\"C\">를 제공합니다."
 YonglinUpgrade:
   Name: 선향옥토
-  Description: "체력을 {Value2} 회복합니다.\n내 턴 시작 시 손의 무작위 카드 {Value1}장을 강화합니다.\n"
+  Description: "체력을 {Value2} 회복합니다.\n내 턴 시작 시 손의 무작위 카드 {Value1}장을 |강화|합니다.\n"
 MoonTipsDefense:
   Name: 결계 강화
   Description: '|보호막|을 {Value1} 얻습니다.'
@@ -1899,8 +1897,9 @@ FruitShake:
   Name: 아이스 후르츠
 MaidFriend:
   Name: 양관의 메이드, 카스미
-  ExtraDescription2: "{FriendU}곧바로 피해를 가합니다.\n모든 {SelfName}가 추가로 피해를 {Value1} 가합니다."
+  ExtraDescription2: "{FriendU}곧바로 피해를 가합니다. 모든 {SelfName}가 추가로 피해를 {Value1} 가합니다."
   Description: '{FriendP}체력이 가장 적은 적에게 공격 피해를 {Damage} 줍니다.'
+  ExtraDescription1: '{FriendA}곧바로 피해를 가합니다. |단검|을 {Value2}장 얻습니다.'
 LarvaFriend:
   ExtraDescription2: '{FriendU}모든 적에게 |중독|을 {Value2} 주고, |중독| 피해를 한 번 발동시킵니다.'
   Description: '{FriendP}무작위 적에게 |중독|을 {Value1} 줍니다.'
@@ -1946,7 +1945,7 @@ LilyFriend:
   Name: 봄의 강림, 릴리 화이트
   Description: "{FriendS}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{FriendP}{TurnMana}를\
     \ 얻습니다."
-  ExtraDescription1: '{FriendA}무작위 마나를 {Value2}개 얻습니다.'
+  ExtraDescription1: '{FriendA}{ActiveMana}를 얻습니다.'
   ExtraDescription2: '{FriendU}체력을 {Heal} 회복합니다.'
 InstantFreeze:
   Name: 급속냉동
@@ -1967,3 +1966,25 @@ YouxiangAttack:
   Name: 환상향의 개화
   Description: "피해를 {Damage} 줍니다.\n|{Mana}를 지불할 시|: 피해량이 {Value1} 늘어납니다.\n총 코스트가 {Value2}\
     \ 이상일 때 |명중|이 붙습니다."
+RemiliaFate:
+  Name: 운명 조작
+  Description: "손에서 카드를 최대 {Value1}장 골라 버립니다.\n버린 갯수만큼 뽑을 카드 더미에서 무작위 패를 뽑습니다. 해당\
+    \ 카드들의 총 코스트는 각각 1, 2, 3으로 정해집니다."
+  UpgradedDescription: "손에서 카드를 최대 {Value1}장 골라 버립니다.\n버린 갯수만큼 뽑을 카드 더미에서 무작위 패를 뽑습니다.\
+    \ 해당 카드들의 총 코스트는 각각 1, 2, 3, 4, 5로 정해집니다."
+HuiyeAttack:
+  Name: 봉래의 수해
+  Description: "|서로 다른 색상의 마나를 지불할 시|: 모든 적에게 피해를 {Damage} 줍니다.\n지불한 총 코스트가 {Value2}\
+    \ 이상인 경우 |소멸| 구역에 있는 카드를 최대 {Value1}장 골라서 다시 손으로 가져옵니다."
+HuiyeTime:
+  Name: 영원과 수유
+  Description: "손에 있는 카드를 최대 {Value1}장까지 고르고 한 턴간 |보존|합니다.\n내 턴을 끝내고, 추가 턴을 진행합니다.\
+    \ 해당 턴에서는 카드를 {Value1}장까지만 사용할 수 있습니다."
+  UpgradedDescription: "손에 있는 카드를 최대 {Value1}장까지 고르고 한 턴간 |보존|합니다.\n내 턴을 끝내고, 추가 턴을\
+    \ 진행합니다. 해당 턴에서는 카드를 {Value1}장까지만 사용할 수 있습니다."
+SanaeRestart:
+  Name: 바다가 갈라지는 날
+  Description: "{Mana}를 얻습니다.\n손패와 버린 카드 더미의 카드를 뽑을 카드 더미에 넣고, 뽑을 카드 더미를 뒤섞습니다.\n\
+    새로 카드를 {Value1}장 뽑습니다."
+  UpgradedDescription: "{Mana}를 얻습니다.\n손패와 버린 카드 더미의 카드를 뽑을 카드 더미에 넣고, 뽑을 카드 더미를 뒤섞습니다.\n\
+    새로 카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에서 카드를 최대 {Value2}장 선택해 손으로 가져옵니다."
