@@ -17,7 +17,7 @@ Shenyuzha:
   FlavorText: '"神域につき，立入厳禁"'
 YinyangCard:
   Name: 陰陽玉
-  Description: "{Damage}のダメージを与える。\n{Block}|バリア|を得る。"
+  Description: "{Damage}のダメージを与える。\n{Shield}|バリア|を得る。"
   FlavorText: アフターサービスは「玉造魅須丸」が承ります。
 ShengtianKick:
   Name: 昇天脚
@@ -109,7 +109,7 @@ ReverseJiejie:
   Description: '{PlayerName}がバフを失うたび、{Value1}|バリア|を得る。'
 Changzhizhen:
   Name: 常置陣
-  Description: "|保留効果|：ランダムな敵に{Damage}のダメージを与える。\n|手札効果|：{PlayerName}がバフを失うたび、ダメージを{Value2}増加。"
+  Description: "|保留効果|：ランダムな敵に{Value1}のダメージを与える。\n|手札効果|：{PlayerName}がバフを失うたび、ダメージを{Value2}増加。"
 ReimuLucky:
   Name: 開運御札
   Description: "|加護|{Value1}を得る。\n{Value2}<sprite=\"Point\" name=\"Gold\">を得る。"
@@ -173,7 +173,7 @@ HuanxiangTouying:
   UpgradedDescription: "{Mana}を得る。\nコスト1・2・3・4・5のカードを一枚づつランダムに抽選する、その中で1枚を選んで手札に加える。"
   FlavorText: 「────トレース，オン。」
 OutInGap:
-  Description: カード入手制限を無視し、ランダムな{Value1}枚のカードから1枚を選んで、{臨時コスト}を{Mana}にして|廃棄|と|虚無|を与える。
+  Description: カード入手制限を無視し、ランダムな{Value1}枚のカードから1枚を選んで、|臨時コスト|を{Mana}にして|廃棄|と|虚無|を与える。
   Name: 境界遊行
   FlavorText: 八雲紫は境界の出入りを境界の出入りで見張る事を無しとした。
 BoliDajiejie:
@@ -186,7 +186,7 @@ Jiangshen:
   FlavorText: 「神に祈るわ、次は『境界遊行』が引けますようにと——」
 HuijuQiankun:
   Name: 乾坤の権化
-  Description: "|陰陽玉|1枚手札に加える。\nこのカード以外の手札をすべて|廃棄|し、廃棄されたカード1枚につき|陰陽玉|のダメージを{Value}増加。"
+  Description: "|陰陽玉|1枚手札に加える。\nこのカード以外の手札をすべて|廃棄|し、廃棄されたカード1枚につき|陰陽玉|のダメージを{Value1}増加。"
 ReimuInstant:
   Name: 「夢想封印　瞬」
   Description: "{Damage}のダメージを与える。\nこのターンを終了し、次の自分のターンを開始する。\n|時間制限|{Mana}。"
@@ -223,7 +223,7 @@ GapLady:
   Description: "ライフを{Value1}失う。\n{Mana}を得る。\nカードを{Value2}枚引く。"
 ChunseXiaojing:
   Name: 春色小径
-  Description: "{Mana}を得る。\nカード{Value1}枚を引く。"
+  Description: "{Mana}を得る。\nカード{Value1}枚を引く。\n|オーバードラフト| {Value2} 。"
 ReimuSakura:
   Name: 夢想桜花封印
   Description: "敵全体に{Damage}のダメージを与える。\nライフを{Value1}回復する。\n|成長|：コストを{Mana}減らす。"
@@ -250,7 +250,7 @@ CraftPotion:
   Name: ポーション錬成
   Description: '|不安定なポーション|を{Value1}枚山札に加える。
 
-     {Value2} を得る'
+    カードを{Value2}枚引く。'
 RedLaser:
   Name: バーニングレーザー
   Description: "{Damage}のダメージを与える。\n|オーバードライブ{Value2}|：ダメージを2回与える。"
@@ -302,7 +302,7 @@ NightSeeStar:
   Description: "|星見|{Scry}\nカードを{Value1}枚引く。"
 MarisaSteal:
   Name: 借りてくぜ
-  Description: "|幻虹|を1枚手札に加える。\n次の自分のターン開始時、ランダムなマナを{1}失う。"
+  Description: "|幻虹|を1枚手札に加える。\n|オーバードラフト| {Value2} 。"
 RainbowStar:
   Name: レインボースターインパクト
   Description: "{Damage}のダメージを与える\n|<sprite=\"ManaSprite\" name=\"1\">|につき、ダメージが{Value1}増加\n\
@@ -396,7 +396,7 @@ RunAway:
   Name: やり逃げ
   Description: "手札をすべて捨て、捨てたカードのコストを|臨時に|{Mana}減らす。\n|グレイズ|{Value1}を得る。"
 PotionDefense:
-  Description: "{Block}|ブロック|を得る。\nこのターン、|不安定なポーション|の効果が発動するたびに、{Value1}|バリア|を得る。"
+  Description: "{Shield}|バリア|を得る。\nこのターン、|不安定なポーション|の効果が発動するたびに、{Value1}|バリア|を得る。"
   Name: 伴星飛行
 MixAndShake:
   Name: 花火のポーション
@@ -557,7 +557,7 @@ ToolDroneBlock:
   Name: メカニカルコア
 ToolUpgrade:
   Name: フロッピーディスク
-  Description: "手札のカードを全てこの戦闘中|アップグレード|する。\n消耗品【{DeckCounter}】|"
+  Description: "手札のカードを全てこの戦闘中|アップグレード|する。\n消耗品【{DeckCounter}】"
 ToolInvincible:
   Name: 天女の羽衣
   Description: "|天衣無縫|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
@@ -677,7 +677,7 @@ MarisaForget:
   Description: '|ターン終了時|：|脆弱化|{Value1}を受ける。'
 SweetPoison:
   Name: スイートポイズン
-  Description: '|ターン終了時|：{毒|{Value1}を受ける。'
+  Description: '|ターン終了時|：|毒|{Value1}を受ける。'
 BuyPeace:
   Description: '|ターン終了時|：<sprite="Point" name="Gold">{Value1}を失い、ライフを{Value2}回復する。'
   Name: 財禍
@@ -701,7 +701,7 @@ JunkoNightmare:
   Description: "敵全体に {Damage} のダメージを {Value1} 回与える 。\nすべての手札を廃棄して，等量の|純粋|を手札に加える。"
 PatchouliLibrary:
   Name: 動かない大図書館
-  Description: "{Mana}を得る。\n{Value 1}枚のランダムなレアカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
+  Description: "{Mana}を得る。\n{Value1}枚のランダムなレアカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
   UpgradedDescription: "{Mana}を得る。\n{Value1}枚のランダムなレアカードと{Value2}枚のアンコモンカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
 Riguang:
   Name: 屈折光
@@ -831,7 +831,7 @@ SakuyaKiller:
 SakuyaTea:
   Name: 紅茶タイム
   ExtraDescription1: "カードを {Value1} 枚引く。\n|初見}：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
-  Description: "カードを{Value1}枚引く。\n|初見}：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
+  Description: "カードを{Value1}枚引く。\n|初見|：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
 SakuyaShop:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。"
   Name: 物資の購入
@@ -913,7 +913,7 @@ ClockCorpse:
 BackOfKnife:
   Name: マイナイフリカージョン
   NonbattleDescription: "|閃刀エクスプレス|一枚を手札に加え、|廃棄済み|にある|投げナイフ|全てをこの戦闘から消滅させる。\n加えた|閃刀エクスプレス|は消滅させた|投げナイフ|一枚ごとに、| {Value1} ダメージを追加で与えるようになる。"
-  Description: "|閃刀エクスプレス|一枚を手札に加え、|廃棄済み|にある|投げナイフ|全てをこの戦闘から消滅させる。\n加えた|閃刀エクスプレス|は消滅させた|投げナイフ|一枚ごとに、| {Value1} ダメージを追加で与えるようになる。\n\
+  Description: "|閃刀エクスプレス|一枚を手札に加え、|廃棄済み|にある|投げナイフ|全てをこの戦闘から消滅させる。\n加えた|閃刀エクスプレス|は消滅させた|投げナイフ|一枚ごとに、 {Value1} ダメージを追加で与えるようになる。\n\
     （ {IncreasedDamage} 点の追加ダメージ）"
 FakeTimeline:
   Name: イマジナリバーチカルタイム
@@ -940,7 +940,7 @@ PrepareParty:
   Description: "手札のカードを1枚山札の上に置いてもよい。\n{Block}|ブロック|を得る。"
 DangerousMagician:
   Name: 危険な手品師
-  Description: "|投げナイフ|を使用する度、タイムパルス|{Value1}を得る。\n|投げナイフ|{Value2}枚を山札に加える。"
+  Description: "|投げナイフ|を使用する度、タイムパルス{Value1}を得る。\n|投げナイフ|{Value2}枚を山札に加える。"
 KnifeAim:
   Name: デフレーションワールド
   Description: "{Damage}ダメージを与える。\n手札にある全ての|投げナイフ|を山札に捨て、効果を発動させる。"
@@ -1052,7 +1052,7 @@ YinyangQueen:
   Name: 本物の勾玉職人、魅須丸
   Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
   ExtraDescription1: '{FriendA}ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
-  ExtraDescription2: '{FriendU}この戦闘中、全ての|陰陽玉|の効果は倍になる。ランダムな|虹龍陰陽玉|を1枚手札に加える。'
+  ExtraDescription2: '{FriendU}この戦闘中、全ての|陰陽玉|の効果は倍になる。ランダムな|虹龍陰陽玉|を2枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
   Description: "{Shield}|バリア|を得る。\nドローフェイズで追加で{Value1}枚のカードを引く。"
@@ -1134,7 +1134,7 @@ DizangLove:
   Description: "コモンカードをプレイするたび、{PlayerName}が|臨時火力|{Value1}を得る。\n"
 LoyalMaid:
   Name: 忠実なる召使い
-  Description: "{Value1} の|バリア|を得る。\n|追加ターン|を得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}となる。"
+  Description: "{Shield} の|バリア|を得る。\n|追加ターン|を得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}となる。"
 EvilMaid:
   Name: 悪魔のメイド
   Description: "ライフを {Value1} 失う。\n{PlayerName}は次のターン、カードによる全てのダメージが倍となる。"
@@ -1521,14 +1521,14 @@ ColdChain:
   Description: 山札から {Value1} 枚のカードを選んで手札に加え、それに|保留|を付与する。
   Name: コールドチェーン
 ZeroK:
-  Description: "|冷気|の重ね掛けによるダメージを| {Value1} 倍分増やす。\n敵全体に|冷気|を付与する。"
+  Description: "|冷気|の重ね掛けによるダメージを {Value1} 倍分増やす。\n敵全体に|冷気|を付与する。"
   Name: 絶対零度
 IceMatrix:
   Description: "{PlayerName}は敵に|冷気|を付与する度、|フロストアーマー| {Value1} を得る。\n敵全体に|冷気|を付与する。"
   Name: フリーズマトリックス
 InstantFreeze:
   Name: スイフトクールダウン
-  Description: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|時間制限||{Mana}。"
+  Description: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|時間制限|{Mana}。"
   ExtraDescription1: "敵全体に|冷気|を付与する。\n{PlayerName}はターンを終了し、|追加ターン|を得る。\n|d:時間制限||{Mana}。"
 CirnoEcho:
   Name: 自然な贈り物
@@ -1544,7 +1544,7 @@ BrainOverclock:
   Description: "{Mana}を得る。\nカードを{Value2}枚引く。\n|オーバードラフト|{Value1}。"
   Name: 脳の過負荷
 MinengZhuru:
-  Description: '|パートナー|の{f:受動技能|は追加で効果を発動する。'
+  Description: '|パートナー|の|f:受動技能|は追加で効果を発動する。'
   Name: 後戸の開放
 HualiIce:
   Name: パーフェクトサマーアイス
@@ -1632,11 +1632,11 @@ LongArm:
   Name: 延長手術
 KongMana:
   Name: 炉心融解
-  Description: "手札からカードを{Value1}枚まで選び|廃棄|して、そのコストのマナを得る。\n|幻虹|を1枚手札に加える。"
+  Description: "手札からカードを1枚まで選び|廃棄|して、そのコストのマナを得る。\n|幻虹|を1枚手札に加える。"
 KaguyaTreeSee:
   Name: 蓬莱の樹海
 SanaeMiracle:
-  Name: 白昼の彗星
+  Name: 白昼の客星
 FangxiangHeal:
   Description: ランダムな {Value1} 枚の捨て札を|廃棄|する。|廃棄|したカード一枚ごとに {Value2} のライフを回復する。
   Name: スコアデザイアイーター
