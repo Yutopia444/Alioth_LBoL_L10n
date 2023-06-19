@@ -295,7 +295,7 @@ ScryAttack:
   Description: "{Damage}のダメージを与える。\n|星見|をするたび、捨て札からこのカードを手札に加える。"
 Potion:
   Name: 不安定なポーション
-  Description: '|手札に加わった時|：{Mana}を得る、ランダムな敵に{Damage}のダメージを与え、このカードを|廃棄|する。'
+  Description: '|手札に加わった時|：{Mana}を得る。ランダムな敵に{Damage}ダメージを与え、このカードを|廃棄|する。'
   FlavorText: 警告！このポーションはいつ爆発してもおかしくのない代物です！
 NightSeeStar:
   Name: スターゲイジング
@@ -442,7 +442,9 @@ StarlightTaifeng:
 PrismriverAll:
   Name: 合葬「プリズムコンチェルト」
   Description: "{Mana}を得る。\nこの戦闘中、{PlayerName}が得るマナは全て<sprite=\"ManaSprite\" name=\"\
-    P\">になる。"
+    P\">になる。\n捨て札に|日の照射|、|月の静寂|、|星の煌めき|を加える。"
+  UpgradedDescription: "{Mana}を得る。カードを{Value1}枚引く。\nこの戦闘中、{PlayerName}が得るマナは全て<sprite=\"\
+    ManaSprite\" name=\"P\">になる。\n捨て札に|日の照射|、|月の静寂|、|星の煌めき|を加える。"
 RabbitFoot:
   Name: 幸運うさぎの足
   Description: 戦闘終了時、このカードが|廃棄|されていない場合<sprite="Point" name="Gold">{Value1}を得る。
@@ -562,13 +564,13 @@ ToolInvincible:
   Name: 天女の羽衣
   Description: "|天衣無縫|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
 VampireShoot1:
-  Description: "{Damage}のダメージを与える。\nライフを{Value1}回復する。"
+  Description: "{Damage}ダメージを与える。\nライフを{Value1}回復する。"
   Name: 吸血ショット
 VampireShoot2:
-  Description: "{Damage}のダメージを与える。\nライフを{Value1}回復する。"
+  Description: "{Damage}ダメージを与える。\nライフを{Value1}回復する。"
   Name: 吸血レイン
 ToolRandomTool:
-  Description: "ランダムな道具カード{Value1}枚から1枚選び、手札に加える。それは|消耗品【1】|。\n|消耗品【{DeckCounter}】|"
+  Description: "{Value1}枚のランダムな道具カードから1枚選び、手札に加える。\nそれは|複製|を持ち、1回しか使用できない。\n|消耗品【{DeckCounter}】|"
 BailianJingang:
   Name: 金剛身
   Description: "{Block}|ブロック|を得る。\n{Value1}|反射|を得る。"
@@ -601,11 +603,11 @@ HuashanQingjing:
   UpgradedDescription: "{Block}|ブロック|を得る。\n{PlayerName}の|弱体|を解除する。"
 PrismriverWhite:
   Name: メルラン・ソロライブ
-  UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|屈折光|を1枚捨て札に加える。\n|初見|：<sprite=\"\
+  UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|日の照射|を{Light}枚捨て札に加える。\n|初見|：<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。"
-  ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|屈折光|を1枚捨て札に加える。\n|d:初見：<sprite=\"\
+  ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|日の照射|を{Light}枚捨て札に加える。\n|d:初見：<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。|"
-  Description: "{Mana}を得る。\nカードを{Value1}枚引く。\n|屈折光|を1枚捨て札に加える。"
+  Description: "{Mana}を得る。\nカードを{Value1}枚引く。\n|日の照射|を{Light}枚捨て札に加える。"
 WanderingSoul:
   Name: 彷徨う魂
 GainTreasure:
@@ -704,7 +706,7 @@ PatchouliLibrary:
   Description: "{Mana}を得る。\n{Value1}枚のランダムなレアカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
   UpgradedDescription: "{Mana}を得る。\n{Value1}枚のランダムなレアカードと{Value2}枚のアンコモンカードから1枚を選んで手札に加える。そのカードは|廃棄|と|虚無|を得る。"
 Riguang:
-  Name: 屈折光
+  Name: 日の照射
   Description: '|ターン終了時|：{Value1}ダメージを受ける。'
 BailianFire:
   Name: 法界の火
@@ -716,11 +718,12 @@ Chunguang:
   Description: このカードを引いた時、|純化|{Value1}。
 Yueguang:
   Description: このカードを引いた時、ランダムなマナ{Value1}点を失う。
+  Name: 月の静寂
 Wushuai:
   Description: このカードを引いた時、|ロックオン|{Value1}を受ける。その後、{SelfName}を|廃棄|する。
   Name: 剣閃
 Payment:
-  Description: <sprite="Point" name="Gold">{MoneyCost}を払う。
+  Description: "<sprite=\"Point\" name=\"Gold\">{MoneyCost}を払う。\n<color=#b7646b>いたずらウサギ</color>が戦闘から離脱する。"
   Name: 送金
 BlackResidue:
   Name: 残留思念
@@ -1173,7 +1176,7 @@ MarisaHoldCard:
   Name: 勿体無い
   Description: "手札を {Value1} 枚選び、1ターン|保留|する。\n{Block}|ブロック|を得る"
 Xingguang:
-  Name: まばゆい星の光
+  Name: 星の煌めき
 WhiteLaser:
   Name: ラジエーションレーザー
   Description: "{Damage}のダメージを与える。\n {Shield} の|バリア|を得る、これは|バースト|の効果対象となる。"
@@ -1269,7 +1272,7 @@ AliceAttack:
   Name: デヴィリーライトレイ
   Description: "{Damage}のダメージを与える。\n{Mana}を得る。"
 BaitianCard:
-  Description: "{Block} ブロックを得る。\n捨て札から1枚のカードを選んで、山札の一番前へ加え。"
+  Description: "{Block} ブロックを得る。\n捨て札からカードを1枚選び、山札の一番上に置く。\nそのカードのマナコストは{Value1}少なくなる。"
   Name: 稗田の転生
 HuashanDefense:
   Name: 務光の雷弾
@@ -1658,3 +1661,16 @@ HuiyeAttack:
   Name: 蓬莱の樹海
 HuiyeTime:
   Name: 永遠と須臾
+PrismriverRed:
+  Description: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。"
+  UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。\n|初見|:<sprite=\"\
+    Point\" name=\"Power\">{Value2}を得る。"
+  ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。\n|d:初見:<sprite=\"\
+    Point\" name=\"Power\">{Value2}を得る。|"
+PrismriverBlack:
+  ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|月の静寂|を{Light}枚捨て札に加える。\n|d:初見:<sprite=\"\
+    Point\" name=\"Power\">{Value2}を得る。|"
+  Name: ルナサ・ソロライブ
+  Description: "{Mana}を得る。\nカードを{Value1}枚引く。\n|月の静寂|を{Light}枚捨て札に加える。"
+  UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|月の静寂|を{Light}枚捨て札に加える。\n|初見|:<sprite=\"\
+    Point\" name=\"Power\">{Value2}を得る。"
