@@ -993,7 +993,7 @@ GatherFairy:
   UpgradedDescription: "手札の上限が{MaxHand}枚になる。\nカードを{Value1}枚引く。\n手札の|パートナー|は|支援度|{Value2}を得る。"
 BailianPower:
   Name: 肉体強化
-  Description: 火力{Value1}を得る
+  Description: '|火力|{Value1}を得る'
 TrueMoon:
   Name: 真実の満月
   Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2} カードをプレイした後、{PlayerName}に即死ダメージを与える。"
@@ -1137,7 +1137,7 @@ ZoufangWater:
     （追加ダメージ:{AdditionalDamage}）"
 SanaeRice:
   Name: 五穀豊穣ライスシャワー
-  Description: "{PlayerName}にかかっているすべての状態異常を取り除く。\nライフを{Value1}回復する。"
+  Description: "{PlayerName}のデバフをすべて削除する。\nライフを{Value1}回復する。"
 DoubleMana:
   Name: 妖精の起床
   Description: "手持ちのマナを倍にする。\n|オーバードラフト|{Value1}。"
@@ -1147,7 +1147,7 @@ DiscardToCharging:
 DoremyDuplicate:
   Name: 夢我夢中
   FlavorText: ドレミーは喉が渇く際、寝る直前に大量の水を飲む人の見る夢へと好き好んで入る傾向がある。
-  Description: "手札を1枚選び、そのカードのコピーを3枚手札に加える。\n|複製|を持ているカードは目標にならない。"
+  Description: "手札を1枚選び、そのカードのコピーを{Value1}枚手札に加える。\n|複製|を持ているカードは目標にならない。"
 ReisenAttack:
   Name: 狂乱の夢
   Description: '|{Mana}につき|：敵全体に{Damage}ダメージを与える。'
@@ -1300,14 +1300,14 @@ HuashanDefense:
   Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
-  Description: "捨て札から{Value1}までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+  Description: "捨て札から{Value1}枚までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
     |時間制限|{Mana}。"
-  ExtraDescription1: "捨て札から{Value1}までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+  ExtraDescription1: "捨て札から{Value1}枚までのカードを選び手札に加える、１ターンを|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
     |d:時間制限{Mana}。|"
 XiangziEcho:
   Description: 手札からカードを{Value1}枚まで選び、|反復|を与える。
 RinDraw:
-  Description: 状態異常を引くたび、カードを{Value1}引く。
+  Description: 状態異常を引くたび、カードを{Value1}枚引く。
   Name: 怨霊支配
 XiaosanReflect:
   Name: 反撃の弾幕
@@ -1319,7 +1319,7 @@ HehuanAttack:
   Description: "{Damage}のダメージを{Value1}回与える。\nカードを{Value1}枚引く。"
   Name: 浮世の関を超える山姥
 Shengyan:
-  Description: "{Damage}のダメージを与える。\n|退治|：{Value1}の最大ライフを得る。"
+  Description: "{Damage}のダメージを与える。\n|退治|：最大ライフ{Value1}を得る。"
   Name: 祝宴
 LigeluCard:
   Name: 蛍光の夜
@@ -1559,7 +1559,7 @@ CirnoEcho:
   Name: 自然な贈り物
   Description: 捨て札から{Value1}枚のカードを手札に加える、|反復|を与える。
 YukariBox:
-  Description: "|星見|{Scry}、カードを{Value1}引く。\n捨て札を山札に加え、山札をシャッフルする。"
+  Description: "|星見|{Scry}、カードを{Value1}枚引く。\n捨て札を山札に加え、山札をシャッフルする。"
 NewsTidbit:
   Description: "|ロックオン|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
 NueExile:
@@ -1672,7 +1672,7 @@ YouxiangAttack:
 SanaeRestart:
   Name: 海が割れる日
   UpgradedDescription: "……\n……\nカードを{Value1}枚引く。\n……"
-  Description: "……\n……\nカードを{Value1}枚引く。"
+  Description: "{Mana}を得る。\n手札と捨て札にある全てのカードを山札に加える、山札をシャッフルする。\nカードを{Value1}枚引く。"
 DanmuJade:
   Name: 弾幕の玉繭
   Description: "敵全体に{Damage}ダメージを与える。\n|幻虹|を{Value1}枚手札に加える。\nこのカードのコストとして5色全てのマナが使用されていた場合|火力|と|霊力|{Value2}を得る。\n\
@@ -1681,7 +1681,7 @@ Panzi:
   Name: 水皿
   Description: "{Damage}ダメージを与える。\n|手札に加わった時|：{SelfName}のコピーを１枚手札に加える。"
 GuijiZaoxingHu:
-  Name: アークスクリーチャー
+  Name: 線形造形術
 SuikaBigball:
   Name: 元鬼玉
 ReisenMana:
