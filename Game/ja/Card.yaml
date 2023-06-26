@@ -1518,9 +1518,10 @@ RemiliaJizao:
   Description: "カードを{Value1}枚引く。\nこのターン、追加でカードを引くことができない。"
 LanCard:
   Description: "{Value1}枚のランダムなアンコモンカードから１枚を選び、手札に加える。\nそのカードの|臨時コスト|を{Mana}にして、|廃棄|と|虚無|を与える。"
-  Name: 式神护法
+  Name: 式神の護り
 TiangouOrder:
   Description: "{Damage}のダメージを与える。\n敵にダメージを与えた時、{PlayerName}は{Value1}|ブロック|を得る。"
+  Name: 大天狗の号令
 RemiliaBat:
   Description: "|臨時火力|{Value1}を得る。\n|グレイズ|{Value2}を得る。"
 SeeFengshui:
@@ -1671,8 +1672,8 @@ YouxiangAttack:
   Name: 幻想郷の開花
 SanaeRestart:
   Name: 海が割れる日
-  UpgradedDescription: "{Mana}を得る。\n手札と捨て札を山札に戻し、シャッフルする。\nカードを{Value1}枚引き、山札から{Value2}枚のカードを選んで手札に加える。"
-  Description: "{Mana}を得る。\n手札と捨て札にある全てのカードを山札に加える、山札をシャッフルする。\nカードを{Value1}枚引く。"
+  UpgradedDescription: "{Mana}を得る。\n手札と捨て札を山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引き、山札から{Value2}枚のカードを選んで手札に加える。"
+  Description: "{Mana}を得る。\n手札と捨て札のカードを全て山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引く。"
 DanmuJade:
   Name: 弾幕の玉繭
   Description: "敵全体に{Damage}ダメージを与える。\n|幻虹|を{Value1}枚手札に加える。\nこのカードのコストとして5色全てのマナが使用されていた場合|火力|と|霊力|{Value2}を得る。\n\
@@ -1729,10 +1730,11 @@ GainMagic:
 SatoriAttack:
   Description: "……\n……{Block}|ブロック|を得る。"
 ReadBook:
-  Description: "{Block}|ブロック|を得る。\n……"
-  ExtraDescription1: "{Block}|ブロック|を得る。\n……"
+  Description: "{Block}|ブロック|を得る。\n|初見|：{Value1}枚のランダムな青か白、またはその2色であるカードから1枚を選び、手札に加える。"
+  ExtraDescription1: "{Block}|ブロック|を得る。\n|d:初見：{Value1}枚のランダムな青か白、またはその2色であるカードから1枚を選び、手札に加える。|"
+  Name: 本読み
 MistLake:
-  Description: "……\n……，カードを{Value2}枚引く。"
+  Description: "|グレイズ|{Value1}を得る。\n未使用のマナが合計で3点以上ある場合、カードを{Value2}枚引く。"
   Name: (WIP)
 DeployChargeDoll:
   Description: (WIP)
@@ -1747,10 +1749,11 @@ GainDollSlot:
   Description: (WIP)
   Name: (WIP)
 OtherBlock:
-  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く，……"
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。（{PlayerName}専用でないカードを優先的に引く。）"
 ShuimuBlock:
-  Description: "{Block}|ブロック|を得る。\n……"
+  Description: "{Block}|ブロック|を得る。\n{SelfName}のブロック値を永久に{Value1}増加させる。"
 KanakoWalk:
-  Description: "カードを{Value1}枚引く，……\n……"
+  Description: "カードを{Value1}枚引き、引いた|状態異常|と|厄災|を全て|廃棄|する。\n手札と未使用のマナを全て|保留|しターンを終了する。"
 OtherSkill:
-  Description: "カードを{Value1}枚引く。\n…………"
+  Description: "カードを{Value1}枚引く。\n{GainMana}を得る。\n{PlayerName}以外のキャラクター専用カードを使用する度、{SelfName}によって得るマナを<sprite=\"\
+    ManaSprite\" name=\"C\">増やす。"
