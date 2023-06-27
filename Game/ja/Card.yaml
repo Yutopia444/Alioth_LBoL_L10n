@@ -1071,6 +1071,7 @@ RuowujiCard:
 LifeGame:
   Name: 生命遊戯-ライフゲーム-
   Description: "隣接するカードの|臨時コスト|を{Mana}にする。"
+  UpgradedDescription: 隣接するカードを|アップグレード|し、|臨時コスト|を{Mana}にする。
 YinyangQueen:
   Name: 本物の勾玉職人、魅須丸
   Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
@@ -1348,8 +1349,10 @@ PaluxiCurse:
   Description: "{Damage}のダメージを与える。\n|脱力|{Value1}を与える。\n|脆弱化|{Value1}を与える。\nランダムな|厄災|を捨て札に入れる（その戦闘中のみ）。"
 ModuoluoFire:
   Name: 穢那の火
+  Description: <sprite="ManaSprite" name="P">を支払う度、敵全体に{Value1}ダメージを与える。
 YonglinUpgrade:
   Name: 仙香玉兎
+  Description: "ライフを{Value2}回復する。\nターン開始時に、ランダムな手札のカードを{Value1}枚|アップグレード|する。\n"
 ShuihuoCard:
   Name: 水火玉
   Description: "{Damage}のダメージを与える。\n{Block}|ブロック|を得る。"
@@ -1664,11 +1667,13 @@ LeiguAttack:
   Description: "敵全体に{Damage}のダメージを与える。\n|バリア|か|ブロック|がある敵に2回のダメージを与える。"
 LongArm:
   Name: 延長手術
+  Description: "{Damage}ダメージを与える。\n手札が{Value1}枚以上ある場合、{Mana}を得る。"
 KongMana:
   Name: 炉心融解
   Description: "手札からカードを1枚まで選び|廃棄|して、そのコストのマナを得る。\n|幻虹|を1枚手札に加える。"
 KaguyaTreeSee:
   Name: 蓬莱の樹海
+  Description: "ダメージを受ける度、このカードのコストが{Mana}下がる。\n|廃棄|を持つ全ての|廃棄|されたカードを山札に戻す。\n全てのカードは|廃棄|を失う。"
 SanaeMiracle:
   Name: 白昼の客星
   ExtraDescription1: "|d:敵全体に{Damage}ダメージを{Value1}回与える。|\nこのカードは山札が0枚の時のみプレイできる。"
@@ -1695,20 +1700,25 @@ GuijiZaoxingHu:
   Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
 SuikaBigball:
   Name: 元鬼玉
+  NonbattleDescription: "{Damage}ダメージを与える。他の敵にその半分のダメージを与える。\n|火力| {Value1}を失う。"
+  Description: "{Damage}ダメージを与える。他の敵にその半分（{HalfDamage}ダメージ）を与える。\n|火力| {Value1}を失う。"
 ReisenMana:
   Name: 幻視調律
-  Description: '|水花|と| 火焔 |から１枚選び、選んだカードを2枚手札に加える。'
+  Description: '|水沫|と| 火焔 |から１枚選び、選んだカードを2枚手札に加える。'
 HuiyeAttack:
   Name: 蓬莱の樹海
   Description: "|支払ったマナの色1種類につき|：敵全体に{Damage}ダメージを与える。\n{Value2}点以上のマナを支払って使用した場合、|廃棄|したカードを最大{Value1}枚手札に戻す。"
 HuiyeTime:
   Name: 永遠と須臾
+  Description: "手札を最大{Value1}枚まで選び、このターンの間|保留|する。\n{PlayerName}のターンを終了し、追加ターンを得る。\n\
+    そのターン、{PlayerName}はカードを{Value1}枚しか使用できない。"
 PrismriverRed:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。"
   UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。\n|初見|:<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。"
   ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|星の煌めき|を{Light}枚捨て札に加える。\n|d:初見:<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。|"
+  Name: リリカ・ソロライブ
 PrismriverBlack:
   ExtraDescription1: "{Mana}を得る。\nカードを{Value1}枚引く。\n|月の静寂|を{Light}枚捨て札に加える。\n|d:初見:<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。|"
@@ -1773,3 +1783,10 @@ OtherSkill:
 RemiliaFate:
   Description: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から３のカードを1枚ずつ手札に加える。"
   UpgradedDescription: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から５のカードを1枚ずつ手札に加える。"
+Thought:
+  Description: "|手札に加わった時|：{SelfName}を|廃棄|する。\nランダムなマナ総量が{Value1}のカードを1枚手札に加える。そのカードは|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。"
+  UpgradedDescription: "|手札に加わった時|：{SelfName}を|廃棄|する。\nランダムなマナ総量が{Value1}のカードを1枚手札に加える。そのカードは|アップグレード|済みかつ|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。"
+  Name: 念想
+RangziSeed:
+  UpgradedDescription: '|幻虹|を1枚山札の一番上に置く。それは|補充|を持つ。'
+  Description: '|活力|を1枚山札の一番上に置く。それは|補充|を持つ。'
