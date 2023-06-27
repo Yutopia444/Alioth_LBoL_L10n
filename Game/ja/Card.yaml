@@ -757,7 +757,7 @@ RainbowMarket:
   Description: カードを|廃棄|する度、ランダムなカードを手札に加える。
 NiuqiDefense:
   Name: ストーンベイビー
-  Description: "{Block}|ブロック|を得る。\n捨て札のカード1枚につき{Value 1}|ブロック|を追加で得る。"
+  Description: "{Block}|ブロック|を得る。\n捨て札のカード1枚につき得る|ブロック|が{Value1}増える。"
 YukariAttack:
   Name: 生と死の境界
   Description: "{Damage}のダメージを与える。\n|ターン終了時|：{PlayerName}のライフがこのターン中に増減していた場合、捨て札から{SelfName}を|臨時コスト|を{Mana}にして手札に戻す。"
@@ -780,6 +780,7 @@ MogongAttack:
   Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}が与えるダメージやブロックの値は、{SelfName}が手札にある間に使用した他のカードのダメージやブロックの値で最大の数値に等しい。"
 HappyNewYear:
   Name: 初詣
+  Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ場合|火力|{Value1}を得る。\n防御カードを選んだ場合|霊力|{Value1}を得る。"
 Ice:
   Name: 氷晶
   Description: '|冷気|を付与する。'
@@ -793,8 +794,8 @@ FrozenThrone:
   UpgradedDescription: "{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。\n|氷晶+|を{Value1}枚手札に加える。"
 FakeMoon:
   Name: 偽物の月
-  Description: "手札を一枚選び、{Value1}枚の|臨時コスト|を{Mana}にしたのコピーを手札に加える、そのコピーは|廃棄|と|虚無|を持ている。選んだカードは|能力|カードまたは|廃棄|を持ている場合、|複製|を与える。\n\
-    |複製|を持ているカードを選ぶことができない。"
+  Description: "手札を1枚選び、そのカードの|臨時コスト|{Mana}かつ|廃棄|と|虚無|を持つコピーを{Value1}枚手札に加える。\n選んだカードが|能力|カードまたは|廃棄|を持つ場合、選んだカードにも|複製|を与える。\n\
+    |複製|を持つカードは選ぶことができない。"
 ShenziWake:
   Name: 屍解からの目覚め
   Description: "{Value1}枚のランダムなコストが(X+1)のカードから1枚選び、手札に加える。\nそのカードに|廃棄|と|虚無|を付与し、|臨時コスト|を{Mana}にする。"
@@ -942,9 +943,10 @@ SakuyaInvestigate:
   Description: "|ロックオン|{Value1}を与える。\n追加ターンの開始時、|廃棄|された{SelfName}を|臨時コスト|{Mana}にして手札に戻す。"
 WaterPrincess:
   Name: プリンセスウンディネ
-  Description: "{Shield}|バリア|を得る。\n……\n……"
-  NonbattleDescription: "{Shield}|バリア|を得る。\n……\n……"
-  ExtraDescription1: "{Shield}|バリア|を得る。\n……\n……"
+  Description: "{Shield}|バリア|を得る。\n手札1枚につき得られる|バリア|が{Value1}増える。（合計：{Special}）\n|初見|：|水沫|を手札に加える。"
+  NonbattleDescription: "{Shield}|バリア|を得る。\n手札1枚につき得られる|バリア|が{Value1}増える。\n|初見|：|水沫|を手札に加える。"
+  ExtraDescription1: "{Shield}|バリア|を得る。\n手札1枚につき得られる|バリア|が{Value1}増える。（合計：{Special}）\n\
+    |d:初見：水沫を手札に加える。|"
 SakuyaAttackX:
   Description: '|シナジー{Mana}|：{Damage}ダメージを与える。'
   Name: シルバープッシュ
@@ -1043,6 +1045,7 @@ HuaBlock:
   Name: 作戦姿勢
 HuiyeMana:
   Name: 竹取の物語
+  Description: '{PlayerName}のターン開始時にランダムなマナ{Value1}点を得る。ターン毎に得るマナが{Value1}点増える。'
 MeihongPower:
   Name: 不死の炎
   Description: "{PlayerName}のターンが開始時、|火力|{Value1}を得る。\n決闘終了時、{PlayerName} のライフが半分以下の場合、ライフを{Value2}回復する。"
@@ -1081,6 +1084,7 @@ MeilingRain:
   Description: "敵全体に{Damage}ダメージを{AttackTimes}回与える。\n|{Mana}につき|：追加で1回ダメージを与える。"
 LimaoSchool:
   Name: 狸の化け学校
+  Description: ランダムな{Value1}枚の|弾幕変化|から{Value2}枚を選び、その効果を得る。
 MorphBird:
   Name: 延羽化弾幕変化
   Description: '|グレイズ|{Value1}を得る。'
@@ -1418,10 +1422,12 @@ HatateDiscard:
   Description: "カードを{Value1}枚捨てる。\n{Mana}を得る。"
 GuijiZaoxingYuan:
   Name: 真円造形術
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
 Shadow:
   Name: 暗闇
 GuijiZaoxingFang:
   Name: 方形造形術
+  Description: "{Damage}ダメージを{Value1}回与える。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
 ShannvAttack:
   Description: "{Damage}のダメージを与える。\n|毒|{Value1}を与える。"
   Name: フィルドミアズマ
@@ -1506,6 +1512,7 @@ YinglangHowl:
   Name: 満月の咆哮
 HinaAttack:
   Name: ミスフォーチュンズホイール
+  Description: "{Damage}ダメージを{Value1}回与える。\nデッキの|厄災|の枚数だけ追加で攻撃する。"
 MeihongFire:
   Name: 無差別発火の符
 MeihongAttack:
@@ -1526,6 +1533,7 @@ RemiliaBat:
   Description: "|臨時火力|{Value1}を得る。\n|グレイズ|{Value2}を得る。"
 SeeFengshui:
   Description: "{PlayerName}のターン開始時、|星見|{Value1}。\nこの|星見|で捨てた防御カード1枚につき{Value2}|ブロック|を得る。"
+  Name: 風水的洞察
 YuyukoSing:
   Description: "{Damage}のダメージを与える。\nこのカードは複数回 |アップグレード| できる。"
   Name: 蝶の羽風
@@ -1670,6 +1678,7 @@ FangxiangHeal:
   Name: スコアデザイアイーター
 YouxiangAttack:
   Name: 幻想郷の開花
+  Description: "{Damage}ダメージを与える。\n|{Mana}ごとに|：与えるダメージを{Value1}増やす。\n{Value2}点以上のマナを支払って使用している場合、|精密|を持つ。"
 SanaeRestart:
   Name: 海が割れる日
   UpgradedDescription: "{Mana}を得る。\n手札と捨て札を山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引き、山札から{Value2}枚のカードを選んで手札に加える。"
@@ -1683,12 +1692,14 @@ Panzi:
   Description: "{Damage}ダメージを与える。\n|手札に加わった時|：{SelfName}のコピーを１枚手札に加える。"
 GuijiZaoxingHu:
   Name: 線形造形術
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
 SuikaBigball:
   Name: 元鬼玉
 ReisenMana:
   Name: 幻視調律
 HuiyeAttack:
   Name: 蓬莱の樹海
+  Description: "|支払ったマナの色1種類につき|：敵全体に{Damage}ダメージを与える。\n{Value2}点以上のマナを支払って使用した場合、|廃棄|したカードを最大{Value1}枚手札に戻す。"
 HuiyeTime:
   Name: 永遠と須臾
 PrismriverRed:
@@ -1752,8 +1763,12 @@ OtherBlock:
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。（{PlayerName}専用でないカードを優先的に引く。）"
 ShuimuBlock:
   Description: "{Block}|ブロック|を得る。\n{SelfName}のブロック値を永久に{Value1}増加させる。"
+  Name: 石積み
 KanakoWalk:
   Description: "カードを{Value1}枚引き、引いた|状態異常|と|厄災|を全て|廃棄|する。\n手札と未使用のマナを全て|保留|しターンを終了する。"
 OtherSkill:
   Description: "カードを{Value1}枚引く。\n{GainMana}を得る。\n{PlayerName}以外のキャラクター専用カードを使用する度、{SelfName}によって得るマナを<sprite=\"\
     ManaSprite\" name=\"C\">増やす。"
+RemiliaFate:
+  Description: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から３のカードを1枚ずつ手札に加える。"
+  UpgradedDescription: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から５のカードを1枚ずつ手札に加える。"
