@@ -1811,6 +1811,76 @@ ZiwoCard:
     恢复自我，离开其它|精神状态|。
     |直觉|：改为进入|本我|。
 
+KoishiMove:
+  Name: 无意识的行动
+  Description: |-
+    (WIP TODO)选择一项执行，每个选项附带一种随机的|心境|：
+    - 对随机敌人造成10点伤害。
+    - 获得10点格挡。
+
+KoishiMoveAttack:
+  Name: 看看这个
+  Description: (WIP)对随机敌人造成10点伤害，
+
+KoishiMoveDefense:
+  Name: 看看那个
+  Description: (WIP)获得10点格挡，
+
+LoveFire:
+  Name: 恋之埋火
+  Description: |-
+    造成 {Damage} 点伤害。
+    |每额外支付|{Mana}：伤害提高 {Value1} 点。
+    记录打出时支付的法力，下一次打出时返还记录的法力。
+  ExtraDescription1: |-
+    造成 {Damage} 点伤害，获得{SavedMana}。
+    |每额外支付|{Mana}：伤害提高 {Value1} 点。
+    记录打出时支付的法力，下一次打出时返还记录的法力。
+
+BabyDream:
+  Name: 胎儿之梦
+  Description: (WIP)所有|基本|卡的费用暂塑为{Mana}，并附带|回响|。
+
+AliceAttackW:
+  Name: 未来文乐
+  Description: 造成 {Damage} 点伤害。
+
+AliceAttackB:
+  Name: 回归虚无
+  Description: 造成 {Damage} 点伤害。
+
+AliceBlockU:
+  Name: 弹幕结界
+  Description: 获得 {Block} 点|格挡|。
+
+DeployShanghai:
+  Name: 部署上海人偶
+  Description: '|部署|一个|e:上海人偶|，发动其|操纵效果|。'
+
+UpgradeDoll:
+  Name: 少女文乐
+  Description: 升级一个|e:上海人偶|。
+
+DeployPenglai:
+  Name: 部署蓬莱人偶
+  Description: '|部署|一个|e:蓬莱人偶|，发动其|操纵效果|。'
+
+SacrificeDoll:
+  Name: 自杀协议
+  Description: 选择一个人偶|撤离|，对所有敌人造成 {Damage} 点伤害。
+
+DoubleActiveTrigger:
+  Name: 双重触发
+  Description: (WIP) 触发最前面的 Doll 主动效果两次
+
+TriggerAllPassive:
+  Name: 触发全部被动
+  Description: (WIP) 触发所有 Doll 被动效果
+
+GainDollSlot:
+  Name: Gain Doll Slot
+  Description: (WIP) 获得 {Value1} Doll Slot
+
 BailianJingang:
   Name: 金刚体
   Description: |-
@@ -2664,17 +2734,17 @@ KaguyaTreeSee:
     将所有放逐区内附带|放逐|的卡牌移入抽牌堆。
     所有卡牌失去|放逐|。
 
-MistLake:
-  Name: 来个蓝绿
-  Description: |-
-    获得 {Value1} 层闪避。
-    如果你的剩余法力大于 3，抽 {Value2} 张牌。
-
 LongArm:
-  Name: 延长的手臂
+  Name: 延长手臂
   Description: |-
     造成 {Damage} 点伤害。
-    如果你的手牌数量大于 {Value1} 张，获得{Mana}。
+    如果打出{SelfName}前手牌数量不少于 {Value1} 张，获得{Mana}。
+
+HatateShot:
+  Name: 全景拍摄
+  Description: |-
+    获得 {Block} 点|格挡|。
+    每一点剩余的法力，提高 {Value1} 点|格挡|。（总计 {Special} 点）
 
 ZoufangWater:
   Name: 诹访清流
@@ -2761,8 +2831,8 @@ FangxiangAttack:
 TigerNeijin:
   Name: 沉寂的怒气
   Description: |-
-    获得 {Value1} 点|火力|，这张牌提供的火力提高 {Value2} 点。
-    当你收到未被格挡的攻击伤害时，将弃牌区内的这张牌移入手牌。
+    获得 {Value1} 点|火力|。
+    当你收到未被格挡的攻击伤害时，将放逐区内的这张牌移入手牌，并使{SelfName}提供的火力提高 {Value2} 点。
 
 MeilingAbility:
   Name: 烈虹真拳
@@ -3324,41 +3394,5 @@ FlanBlack:
     这张牌还没有准备好。
     请期待游戏更新。
   FlavorText: 背负U·N·欧文之名，舍弃所有人去战斗的少女~
-
-DeployAttackDoll:
-  Name: (WIP) Attack Doll
-  Description: (WIP) 配置 AttackDoll
-
-DeployDefenseDoll:
-  Name: (WIP) Defense Doll
-  Description: (WIP) 配置 DefenseDoll
-
-DeployChargeDoll:
-  Name: (WIP) Charge Doll
-  Description: (WIP) 配置 ChargeDoll
-
-DeployManaDoll:
-  Name: (WIP) Mana Doll
-  Description: (WIP) 配置 ManaDoll
-
-GainMagic:
-  Name: (WIP) Gain Magic
-  Description: (WIP) 获得 {Value1} Magic
-
-AttackAndLoseMagic:
-  Name: (WIP) Attack & Lose Magic
-  Description: (WIP) 造成 {Damage} 伤害，失去 {Value1} Magic
-
-DoubleActiveTrigger:
-  Name: (WIP) 双重触发
-  Description: (WIP) 触发最前面的 Doll 主动效果两次
-
-TriggerAllPassive:
-  Name: (WIP) 触发全部被动
-  Description: (WIP) 触发所有 Doll 被动效果
-
-GainDollSlot:
-  Name: (WIP) Gain Doll Slot
-  Description: (WIP) 获得 {Value1} Doll Slot
 
 
