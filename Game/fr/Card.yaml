@@ -2068,10 +2068,9 @@ FangxiangAttack:
   Name: Effacement Toxique
 TigerNeijin:
   Name: Colère Silencieuse
-  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|, et cette\
-    \ valeur augmente de {Value2} jusqu'à la fin du combat.\nLorsque vous subissez\
-    \ des dégâts non bloqués d'une attaque, placez cette carte depuis votre défausse\
-    \ dans votre main."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLorsque\
+    \ vous subissez des dégâts non bloqués d'une attaque, placez cette carte depuis\
+    \ l'exil dans votre main et augmentez la puissance fournie par {SelfName} de {Value2}."
 MeilingAbility:
   Name: Poing Arc-en-ciel Intense
   Description: "{PlayerName} a des gains de |Puissance| et |Puissance Temporaire|\
@@ -2092,14 +2091,11 @@ SanaeRice:
   Name: Rinçage du Riz
   Description: "Supprimez tous les Malus sur {PlayerName}.\nGagnez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie."
-MistLake:
-  Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nS'il vous\
-    \ reste plus de 3 mana, piochez {Value2} carte{Value2:plural one='' other='s'}."
 LongArm:
-  Name: Bras Étendu
+  Name: Étendre le Bras
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi vous\
-    \ avez plus de {Value1} carte{Value1:plural one='' other='s'} dans votre main,\
-    \ obtenez {Mana}."
+    \ avez au moins {Value1} carte{Value1:plural one='' other='s'} dans votre main\
+    \ avant de jouer {SelfName}, obtenez {Mana}."
 IceBlock:
   Name: Barrière de Glace
   Description: "{PlayerName} ne peut pas perdre de vie jusqu'au prochain tour.\nPerdez\
@@ -2146,26 +2142,18 @@ SakuraBlade:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     Appliquez {Value1} |Verrouillé{Value1:plural one='' other='s'}|.\nGagnez {Value1}\
     \ |Esquive{Value1:plural one='' other='s'}|."
-AttackAndLoseMagic:
-  Name: (WIP) Attaquer et Perdre de la Magie
 DoubleActiveTrigger:
-  Name: (WIP) Double Détente
+  Name: Double Détente
   Description: (WIP) Déclencher deux fois l'effet actif de la Poupée la plus en avant
 TriggerAllPassive:
-  Name: (WIP) Déclencher tous les passifs
+  Name: Déclencher Tous les Passifs
   Description: (WIP) Déclenche tous les effets passifs des Poupées
-DeployAttackDoll:
-  Description: (WIP) Configurer Poupée d'Attaque
 GainDollSlot:
   Description: (WIP) Obtenir {Value1} Emplacement{Value1:plural one='' other='s'}
     de Poupée
-  Name: (WIP) Gagner un emplacement de Poupée
-DeployChargeDoll:
-  Name: (WIP) Poupée de Charge
+  Name: Gagner un Emplacement de Poupée
 DeployManaDoll:
   Description: (WIP) Configurer Poupée de Mana
-GainMagic:
-  Description: (WIP) Obtenez {Value1} Magie
 DeployDefenseDoll:
   Description: (WIP) Configurer Poupée de Défense
 SuikaOut:
@@ -2876,3 +2864,52 @@ SanaeRestart:
     \ qui est mélangée.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\n\
     Choisissez {Value2} carte{Value2:plural one='' other='s'} dans la pioche et ajoutez-{Value2:plural\
     \ one='la' other='les'} à votre main."
+KoishiMove:
+  Name: Action Inconsciente
+  Description: "(WIP TODO) Choisissez une implémentation, chaque option vient avec\
+    \ une |Humeur| aléatoire :\n- Inflige 10 dégâts à des ennemis aléatoires.\n- Gagnez\
+    \ 10 points pour bloquer."
+KoishiMoveAttack:
+  Description: (WIP) Inflige 10 dégâts à un ennemi aléatoire,
+KoishiMoveDefense:
+  Description: (WIP) Gagnez 10 boucliers,
+LoveFire:
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, obtenez\
+    \ {SavedMana}.\n|Pour chaque {Mana} supplémentaire dépensé| : dégâts augmentés\
+    \ de {Value1}.\nLe mana payé lorsqu'il est joué est enregistré et le mana enregistré\
+    \ est rendu la prochaine fois qu'il est joué."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
+    \ {Mana} supplémentaire dépensé| : dégâts augmentés de {Value1}.\nLe mana payé\
+    \ lorsqu'il est joué est enregistré et le mana enregistré est rendu la prochaine\
+    \ fois qu'il est joué."
+  Name: Braises de l'Amour
+BabyDream:
+  Name: Rêve Fœtal
+  Description: (WIP) Tous les coûts des cartes |basiques| sont temporairement transformés
+    en {Mana} avec |Echo|.
+AliceAttackW:
+  Name: Bunraku du Futur
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+AliceAttackB:
+  Name: Retour au Néant
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+AliceBlockU:
+  Name: Enchantement de Barrage
+  Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+DeployShanghai:
+  Name: Déployer la Poupée Shanghai
+  Description: '|Déployez| une |e:Poupée Shanghai|, qui active son |effet de manipulation|.'
+UpgradeDoll:
+  Name: Fille Bunraku
+  Description: Améliorez une |e:Poupée Shanghai|.
+DeployPenglai:
+  Name: Déployer la Poupée Hourai
+  Description: '|Déployez| une |e:Poupée Hourai|, qui active son |effet de manipulation|.'
+SacrificeDoll:
+  Name: Pacte de Suicide
+  Description: Choisissez une marionnette à |Évacuer|, infligez {Damage} dégât{Damage:plural
+    one='' other='s'} à tous les ennemis.
+HatateShot:
+  Name: Panorama
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nChaque\
+    \ point de mana restant augmente cet effet de {Value1}. (total {Special} points)"
