@@ -233,6 +233,10 @@ ReimuShrine:
   Description: '{PlayerName}的回合开始时获得 {Value1} 点|暂得灵力|。'
   FlavorText: 《博丽庙会》是一款以第三人称射击为主要玩法的模拟经营恋爱养成文字游戏。
 
+DoubleDajiejie:
+  Name: 二重大结界
+  Description: 获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
+
 HuanxiangBlock:
   Name: 幻想边境
   Description: 每当一张牌被|放逐|时，{PlayerName}获得 {Value1} 点|格挡|。
@@ -1393,6 +1397,7 @@ CirnoInForest:
   Description: |-
     获得 {Block} 点|格挡|。
     |透支| {Value1} 。
+  UpgradedDescription: 获得 {Block} 点|格挡|。
   FlavorText: 森之妖精。
 
 FruitShake:
@@ -1431,9 +1436,9 @@ CirnoConsiderDraw:
 ColdBreath:
   Name: 钻石气息
   Description: |-
-    随机对一个处于|寒冷|的敌人造成 {Damage} 点伤害。
+    随机对一个敌人造成 {Damage} 点伤害。
+    优先攻击处于|寒冷|的敌人，并获得{Mana}。
     抽 {Value1} 张牌。
-    没有敌人处于|寒冷|时无法打出。
   FlavorText: 格斗游戏中的强力招式。
 
 FrostGarden:
@@ -1470,7 +1475,7 @@ CirnoFire:
 IceSaber:
   Name: 塑冰成剑
   Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
+    造成 {Damage} 点伤害 {Value1} 次，施加|寒冷|。
     打出时可以弃掉任意张数的蓝色手牌，每一张多攻击一次。
   FlavorText: 曾今有把名剑叫霜之哀伤。
 
@@ -1656,7 +1661,7 @@ CirnoEcho:
 LarvaDefense:
   Name: 振翅飞行
   Description: |-
-    获得 {Block} 点|格挡|。
+    获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
     如果手中有已召唤的|夏夜之神拉尔瓦|，对所有敌人施加 {Value1} 回合|虚弱|和|易伤|。
 
 FairyAllOut:
@@ -1667,24 +1672,9 @@ FairyAllOut:
 
 MinengZhuru:
   Name: 秘能注入
-  Description: '|同伴|牌的|f:被动技能|生效时，额外生效一次。'
-
-HualiIce:
-  Name: 华丽夏日冰
-  Description: |
-    本回合累计打出 {Value1} 张卡牌后才能打出。
-    （剩余 {Countdown} 张）
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  UpgradedDescription: |-
-    本回合累计打出 {Value1} 张卡牌后才能打出。
-    （剩余 {Countdown} 张）
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
-  NonbattleDescription: |
-    本回合累计打出 {Value1} 张卡牌后才能打出。
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
-  UpgradedNonbattleDescription: |-
-    本回合累计打出 {Value1} 张卡牌后才能打出。
-    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
+  Description: |-
+    |同伴|牌的|f:被动技能|生效时，额外生效一次。
+    (支援度变化不会额外生效)
 
 GatherFairy:
   Name: 妖精集结
@@ -1702,6 +1692,23 @@ ForeverCool:
   Description: |-
     使用|同伴|的|a:主动技能|或|u:终结技|后，对随机敌人施加|寒冷|。
     任意敌人受到|寒冷|时，手中随机的|同伴|牌获得一点|支援度|。
+
+HualiIce:
+  Name: 华丽夏日冰
+  Description: |
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+    本回合累计打出 {Value1} 张卡牌后费用为{Mana}。
+    （剩余 {Countdown} 张）
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
+    本回合累计打出 {Value1} 张卡牌后费用为{Mana}。
+    （剩余 {Countdown} 张）
+  NonbattleDescription: |
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+    本回合累计打出 {Value1} 张卡牌后费用为{Mana}。
+  UpgradedNonbattleDescription: |-
+    对所有敌人造成 {Damage} 点伤害，施加|寒冷| {Value2} 次。
+    本回合累计打出 {Value1} 张卡牌后费用为{Mana}。
 
 ChooseFriend:
   Name: 相约雾之湖
@@ -1952,15 +1959,6 @@ PrismriverWhite:
     抽 {Value1} 张牌。
     将 {Light} 张|折射日光|洗入弃牌堆。
     |d:初见：获得 {Value2} 点<sprite="Point" name="Power">。|
-
-SanaeMiracle:
-  Name: 白昼的客星
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
-    只有在抽牌堆为空时可以打出。
-  ExtraDescription1: |-
-    |d:对所有敌人造成 {Damage} 点伤害。|
-    只有在抽牌堆为空时可以打出。
 
 ShenziUpgradeAll:
   Name: 得道升仙
@@ -2495,6 +2493,12 @@ QingeUpgrade:
 TannvCard:
   Name: 形势逆转
   Description: 将抽牌堆顶和弃牌堆顶的各一张牌移回手中，它们|暂塑|为{Mana}。
+
+SanaeMiracle:
+  Name: 白昼的客星
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
+    抽牌堆为空时费用为{Mana}。
 
 ChengDefense:
   Name: 天仙鸣动
@@ -3278,7 +3282,7 @@ LoveLetter:
 Lunatic:
   Name: 疯狂
   Description: |-
-    {PlayerName}的回合结束时，如果手牌、抽牌堆和弃牌堆中的{SelfName}超过 {Value1} 张，|放逐|它们，{PlayerName} 失去{Value2} 点生命。
+    {PlayerName}的回合结束时，如果手牌、抽牌堆和弃牌堆中的{SelfName}达到 {Value1} 张，|放逐|它们，{PlayerName} 失去{Value2} 点生命。
     现有 {LunaticCount} 张。
   NonbattleDescription: '{PlayerName}的回合结束时，如果手牌、抽牌堆和弃牌堆中的{SelfName}超过 {Value1} 张，|放逐|它们，{PlayerName} 失去{Value2} 点生命。'
 
