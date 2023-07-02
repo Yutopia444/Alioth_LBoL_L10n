@@ -543,11 +543,11 @@ SummerFlower:
   Name: 한여름의 꽃
 ColdBreath:
   Name: 차가운 숨결
-  Description: '|빙결|이 있는 무작위 적에게 {Damage}의 피해를 가합니다.
+  Description: '무작위 적에게 {Damage}의 피해를 가합니다.
 
-    카드를 {Value1}장 뽑습니다.
+    |빙결|이 있는 적을 우선적으로 공격하고, {Mana}를 얻습니다.
 
-    적에게 |빙결|이 없을 시 공격하지 않습니다.'
+    카드를 {Value1}장 뽑습니다.'
 IceLance:
   Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 {Value1}배의 피해를 가합니다."
   Name: 얼음 창
@@ -568,6 +568,7 @@ CirnoInForest:
   Description: "|방어|를 {Block} 얻습니다.\n|가불| {Value1}."
   Name: 감쪽같은 위장
   FlavorText: 숲의 요정.
+  UpgradedDescription: '|방어|를 {Block} 얻습니다.'
 FreezeToIce:
   Description: 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의 |얼음 조각|을 얻습니다.
   Name: 냉동 표본
@@ -610,8 +611,8 @@ FrostGarden:
   Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가\
     \ 됩니다."
 IceSaber:
-  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n사용 시 손에 있는 파란색 카드를 원하는 만큼 버립니다.\n버린\
-    \ 카드의 수만큼 공격을 한 번씩 더 가합니다."
+  Description: "피해를 {Damage}씩 {Value1}번 주고 |빙결|을 가합니다.\n사용 시 손에 있는 파란색 카드를 원하는 만큼\
+    \ 버립니다.\n버린 카드의 수만큼 공격을 한 번씩 더 가합니다."
   Name: 얼음 검
   FlavorText: 이 검의 이름은... 서리의 한?
 CirnoDraw:
@@ -688,7 +689,7 @@ IceMatrix:
   Description: "적에게 |빙결|을 가할 시 |얼음 갑옷|을 {Value1} 얻습니다.\n모든 적에게 |빙결|을 가합니다."
 MinengZhuru:
   Name: 비능의 주입
-  Description: "|동료| 카드의 |f:패시브 능력|이 발동할 시 한 번 더 발동합니다."
+  Description: "|동료| 카드의 |f:패시브 능력|이 발동할 시 한 번 더 발동합니다.\n추가로 지원력이 변동하지는 않습니다."
 CirnoEcho:
   Name: 자연의 선물
   Description: 버린 카드 더미에서 {Value1}장을 골라 손패로 되돌리고, 해당 카드에 |메아리|를 부여합니다.
@@ -698,14 +699,14 @@ FairyTeam:
     \ 총합만큼 무작위 적에게 피해를 {Damage} 줍니다."
 HualiIce:
   Name: 퍼펙트 서머 아이스
-  Description: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n(현재 {Countdown}장 남음)\n모든\
-    \ 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n"
-  UpgradedDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n(현재 {Countdown}장\
-    \ 남음)\n모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2} 가합니다."
-  NonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n모든 적에게 피해를 {Damage}\
-    \ 주고 |빙결|을 가합니다.\n"
-  UpgradedNonbattleDescription: "이 턴에서 카드가 {Value1}장 이상 사용되어야 사용할 수 있습니다.\n모든 적에게\
-    \ 피해를 {Damage} 주고 |빙결|을 {Value2} 가합니다."
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이 턴에서 카드가 {Value1}장 이상 사용되면 코스트가\
+    \ {Mana}로 바뀝니다.\n(현재 {Countdown}장 남음)\n"
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2}번 가합니다.\n이 턴에서 카드가 {Value1}장\
+    \ 이상 사용되면 코스트가 {Mana}로 바뀝니다.\n(현재 {Countdown}장 남음)"
+  NonbattleDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이 턴에서 카드가 {Value1}장 이상\
+    \ 사용되면 코스트가 {Mana}로 바뀝니다.\n"
+  UpgradedNonbattleDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2}번 가합니다.\n이 턴에서\
+    \ 카드가 {Value1}장 이상 사용되면 코스트가 {Mana}로 바뀝니다."
 FairyTrick:
   Name: 요정의 장난
   Description: "체력을 {Value1} 잃습니다.\n|e:삼월정|을 세 장 소환하고, 무작위 한 장을 손으로 가져오고 나머지는 뽑을 카드\
@@ -1448,8 +1449,6 @@ FlanBlack:
 LarvaCure:
   Description: "|중독|을 제거합니다.\n|사용 제한 [{DeckCounter}]|"
   Name: 해독제
-DeployChargeDoll:
-  Name: 축전 인형
 GainMagic:
   Name: 마력 모으기
 TriggerAllPassive:
@@ -1463,7 +1462,7 @@ Wushuai:
   Name: 능렬검광
   Description: '|카드를 뽑을 시|: |록온|을 {Value1} 받습니다. 이후 {SelfName}은 |소멸|됩니다.'
 DoubleActiveTrigger:
-  Name: 이중촉발
+  Name: 이중발동
   Description: 가장 앞에 배치된 인형의 액티브 효과를 두 번 발동시킵니다.
 GainDollSlot:
   Name: 인형 슬롯 획득
@@ -1937,8 +1936,8 @@ InstantFreeze:
     \ {Mana}.|"
 LarvaDefense:
   Name: 날갯짓 비행
-  Description: "|방어|를 {Block} 얻습니다.\n|한여름 밤의 신, 라바|를 소환했다면 모든 적에게 |허약|과 |취약|을 {Value1}\
-    \ 줍니다."
+  Description: "|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.\n|한여름 밤의 신, 라바|를 소환했다면 모든 적에게\
+    \ |허약|과 |취약|을 {Value1} 줍니다."
 FakeCard:
   Name: 꿈자리에 조상님 총기립(임시)
   Description: "|코메이지 코이시|는 아직 집에서 자는 중입니다.\n차후의 업데이트를 기다려 주세요."
@@ -1969,3 +1968,32 @@ SanaeRestart:
     새로 카드를 {Value1}장 뽑습니다."
   UpgradedDescription: "{Mana}를 얻습니다.\n손패와 버린 카드 더미의 카드를 뽑을 카드 더미에 넣고, 뽑을 카드 더미를 뒤섞습니다.\n\
     새로 카드를 {Value1}장 뽑습니다.\n뽑을 카드 더미에서 카드를 최대 {Value2}장 선택해 손으로 가져옵니다."
+DoubleDajiejie:
+  Name: 이중대결계
+  Description: '|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.'
+DeployPenglai:
+  Name: 봉래인형 배치
+HatateShot:
+  Name: 풀 파노라마 샷
+KoishiMove:
+  Name: 무의식 행동
+KoishiMoveAttack:
+  Name: 이것 보기
+KoishiMoveDefense:
+  Name: 저것 보기
+LoveFire:
+  Name: 사랑의 매화
+BabyDream:
+  Name: 태아의 꿈
+AliceAttackW:
+  Name: 미래 분라쿠
+AliceAttackB:
+  Name: 리턴 인애니메이트니스
+AliceBlockU:
+  Name: 탄막결계
+DeployShanghai:
+  Name: 상해인형 배치
+UpgradeDoll:
+  Name: 오토메분라쿠
+SacrificeDoll:
+  Name: 수어사이드 팩트
