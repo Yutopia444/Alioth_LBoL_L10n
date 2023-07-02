@@ -1449,8 +1449,6 @@ FlanBlack:
 LarvaCure:
   Description: "|중독|을 제거합니다.\n|사용 제한 [{DeckCounter}]|"
   Name: 해독제
-GainMagic:
-  Name: 마력 모으기
 TriggerAllPassive:
   Name: 패시브 전부 발동
   Description: 모든 인형의 패시브 효과를 전부 발동시킵니다.
@@ -1504,8 +1502,8 @@ LimaoAttack:
   Description: "모든 적에게 피해를 {Damage} 주고 {Mana}를 얻습니다.\n|성장|: {Mana}를 추가로 얻습니다."
 TigerNeijin:
   Name: 적막한 분노
-  Description: "|화력|을 {Value1} 얻습니다. 이 카드로 얻는 화력이 {Value1} 상승합니다.\n막히지 않은 공격 피해를 받을\
-    \ 시 버린 카드 더미에서 이 카드를 손으로 가져옵니다."
+  Description: "|화력|을 {Value1} 얻습니다.\n막히지 않은 공격 피해를 받을 시 소멸된 카드 더미에서 이 카드를 손으로 가져오고,\
+    \ {SelfName}로 얻는 화력이 {Value2} 상승합니다."
 FangxiangAttack:
   Description: "목표가 |중독|된 상태라면 피해를 {Damage}만큼 {Value2}번 줍니다.\n|중독|되지 않았다면 |중독|을 {Value1}\
     \ 줍니다."
@@ -1791,10 +1789,12 @@ FengleiCard:
   Name: 풍뢰옥
 SanaeMiracle:
   Name: 대낮의 객성
-  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n뽑을 카드 더미가 비어있을 경우에만 사용 가능합니다."
+  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n뽑을 카드 더미가 비어있다면 코스트가 {Mana}가\
+    \ 됩니다."
 LongArm:
   Name: 늘어나는 팔
-  Description: "피해를 {Damage} 줍니다.\n손에 카드가 {Value1}장 이상 있을 시 {Mana}를 얻습니다."
+  Description: "피해를 {Damage} 줍니다.\n{SelfName}을 사용하기 전 손에 있는 카드의 개수가 {Value1}장 이상일\
+    \ 시 {Mana}를 얻습니다."
 RuowujiCard:
   Name: 역린의 거친 파도
   Description: 모든 적에게 피해를 {Damage} 주고 |침수|를 {Value1} 줍니다.
@@ -1917,8 +1917,8 @@ Lunatic:
   NonbattleDescription: 내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장 이상의 {SelfName}가
     있을 시 |소멸|시키고 체력을 {Value2} 잃습니다.
   Name: 광기
-  Description: "내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장 이상의 {SelfName}가 있을 시\
-    \ |소멸|시키고 체력을 {Value2} 잃습니다.\n현재 {LunaticCount}장의 {SelfName}가 있습니다."
+  Description: "내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}가 있을 시 |소멸|시키고\
+    \ 체력을 {Value2} 잃습니다.\n현재 {LunaticCount}장의 {SelfName}가 있습니다."
 LeidiFriend:
   Name: 겨울의 화신, 레티
   Description: '{FriendP}무작위 적 하나에게 |빙결|을 가합니다.'
@@ -1973,27 +1973,44 @@ DoubleDajiejie:
   Description: '|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.'
 DeployPenglai:
   Name: 봉래인형 배치
+  Description: '|e:봉래인형|을 하나 |배치|하고, |조종 효과|를 발동합니다.'
 HatateShot:
   Name: 풀 파노라마 샷
+  Description: "|방어|를 {Block} 얻습니다.\n남은 마나 하나마다 얻는 |방어|가 {Value1}씩 늘어납니다. (총 {Special}점)"
 KoishiMove:
   Name: 무의식 행동
+  Description: "(WIP)다음 중 하나를 선택합니다. 각 선택지엔 무작위 |심리|가 붙어있습니다.\n- 무작위 적에게 피해를 10 줍니다.\n\
+    - 방어를 10 얻습니다."
 KoishiMoveAttack:
   Name: 이것 보기
+  Description: (WIP)무작위 적에게 피해를 10 줍니다,
 KoishiMoveDefense:
   Name: 저것 보기
+  Description: (WIP)방어를 10 얻습니다,
 LoveFire:
   Name: 사랑의 매화
+  Description: "피해를 {Damage} 줍니다.\n{Mana}|를 추가로 지불할 시|: 이 카드의 피해가 {Value1} 상승합니다.\n\
+    현재 소모한 마나를 기록했다가, 다음 번 카드를 사용할 때 되돌려줍니다."
+  ExtraDescription1: "피해를 {Damage} 줍니다. {SavedMana}를 얻습니다.\n{Mana}|를 추가로 지불할 시|: 이\
+    \ 카드의 피해가 {Value1} 상승합니다.\n현재 소모한 마나를 기록했다가, 다음 번 카드를 사용할 때 되돌려줍니다."
 BabyDream:
   Name: 태아의 꿈
+  Description: '{WIP}모든 |기본| 카드의 코스트가 일시적으로 {Mana}가 되고 |메아리|가 붙습니다.'
 AliceAttackW:
   Name: 미래 분라쿠
+  Description: 피해를 {Damage} 줍니다.
 AliceAttackB:
   Name: 리턴 인애니메이트니스
+  Description: 피해를 {Damage} 줍니다.
 AliceBlockU:
   Name: 탄막결계
+  Description: '|방어|를 {Block} 얻습니다.'
 DeployShanghai:
   Name: 상해인형 배치
+  Description: '|e:상해인형|을 하나 |배치|하고, |조종 효과|를 발동합니다.'
 UpgradeDoll:
   Name: 오토메분라쿠
+  Description: '|e:상해인형| 하나를 강화합니다.'
 SacrificeDoll:
   Name: 수어사이드 팩트
+  Description: 선택한 인형을 |회수|합니다. 모든 적에게 피해를 {Damage} 줍니다.
