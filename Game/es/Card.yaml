@@ -245,7 +245,7 @@ ReimuFreeAttack:
 MinengZhuru:
   Name: Inyección de Energía Mental
   Description: "Cuando la |f:Habilidad Pasiva| de una |Compañera| se activa, se activa\
-    \ una vez más."
+    \ una vez más.\n(Esto no afecta a la Influencia ganada o perdida)."
 SummerFlower:
   Description: "Inflige {Damage} de daño.\nDurante el resto del combate, cada {SelfName}\
     \ inflige {Value1} más de daño."
@@ -1952,7 +1952,7 @@ ZiwoCard:
     \ Entra en el estado |Id| en su lugar."
 SanaeMiracle:
   Description: "Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'\
-    \ other='veces'}.\nSolo se puede usarse si la pila de robo está vacía."
+    \ other='veces'}.\n{SelfName} cuesta {Mana} si la pila de robo está vacía."
   Name: Aparición de Estrellas al Mediodía
 KaguyaTreeSee:
   Description: "{SelfName} cuesta {Mana} menos cada vez que {PlayerName} ha recibido\
@@ -1969,13 +1969,13 @@ FlanBlack:
   Description: "|d:Esta carta está actualmente en desarrollo.\nVuelva a mirar en una\
     \ futura actualización.|"
 TigerNeijin:
-  Description: "Obtén {Value1} de |Poder|. Aumenta el |Poder| de esta carta. por {Value2}\
-    \ en este combate.\nSiempre que {PlayerName} reciba daño por un ataque no bloqueado,\
-    \ devuelve {SelfName} de la pila de descarte a la mano."
+  Description: "Obtén {Value1} de |Poder|.\nCuando recibes daño no bloqueado por un\
+    \ ataque, pon esta carta del exilio hacia la mano y aumenta el poder proporcionado\
+    \ de {SelfName} en {Value2}."
   Name: Cólera Silenciosa
 LongArm:
   Description: "Inflige {Damage} de daño.\nSi hay más de {Value1} carta{Value1:plural\
-    \ one='' other='s'} en la mano, gana {Mana}."
+    \ one='' other='s'} en la mano antes de jugar {SelfName}, gana {Mana}."
   Name: Brazo Extensible
 CallFriends:
   Name: Llamar a los Amigos
@@ -1986,20 +1986,19 @@ CallFriends:
     \ una opción adicional."
 HualiIce:
   Name: Imponente Hielo de Verano
-  UpgradedDescription: "Juega esto solo si un total de {Value1} cartas que han sido\
-    \ jugadas en este turno. ({Countdown:plural one='% carta restante' other='% cartas\
-    \ restantes'}.)\nInflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada\
-    \ enemigo {Value2} ve{Value2:plural one='z' other='ces'}."
-  Description: "Juega esto solo si un total de {Value1} cartas que han sido jugadas\
-    \ en este turno. ({Countdown:plural one='% carta restante' other='% cartas restantes'}.)\n\
-    Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\n"
-  UpgradedNonbattleDescription: "Juega esto solo si hay un total de {Value1} carta{Value1:plural\
-    \ one='' other='s'} que han sido jugadas en este turno.\nInflige {Damage} de daño\
-    \ a cada enemigo.\nAplica |Frío| a cada enemigo {Value2} ve{Value2:plural one='z'\
-    \ other='ces'}."
-  NonbattleDescription: "Juega esto solo si hay un total de {Value1} carta{Value1:plural\
-    \ one='' other='s'} que han sido jugadas en este turno.\nInflige {Damage} de daño\
-    \ a cada enemigo.\nAplica |Frío| a cada enemigo.\n"
+  UpgradedDescription: "Inflige {Damage} de daño {Value2} ve{Value2:plural one='z'\
+    \ other='ces'} y aplica |Frío| a cada enemigo.\nSi se jugaron {Value1} carta{Value1:plural\
+    \ one='' other='s'} en este turno, {SelfName} cuesta {Mana}.\n({Countdown:plural\
+    \ one='% carta restante' other='% cartas restantes'}.)"
+  Description: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\nSi se jugaron\
+    \ {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName} cuesta\
+    \ {Mana}.\n({Countdown:plural one='% carta restante' other='% cartas restantes'}.)\n"
+  UpgradedNonbattleDescription: "Inflige {Damage} de daño {Value2} ve{Value2:plural\
+    \ one='z' other='ces'} y aplica |Frío| a cada enemigo.\nSi se jugaron {Value1}\
+    \ carta{Value1:plural one='' other='s'} en este turno, {SelfName} cuesta {Mana}."
+  NonbattleDescription: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\n\
+    Si se jugaron {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName}\
+    \ cuesta {Mana}.\n"
 ForeverCool:
   Name: Eterna Fría Época de Fantasía
   Description: "Siempre que una |Compañera| usa la |a:Habilidad Activa| o |u:Habilidad\
@@ -2071,6 +2070,7 @@ IceGun:
 CirnoInForest:
   Name: A Plena Vista
   Description: "Obtén {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
+  UpgradedDescription: Obtén {Block} de |Bloqueo|.
 MoreFriends:
   Name: Mariposa Social
   Description: "Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Value1:plural\
@@ -2372,3 +2372,6 @@ HatateShot:
   Description: "Obtén {Block} de |Bloqueo|.\nPor cada maná no gastado, aumenta el\
     \ |Bloqueo| de {SelfName} por {Value1}. (|Bloqueo| Total {Special})"
   Name: Disparo Panorámico
+DoubleDajiejie:
+  Description: Obtén {Block} de Bloqueo y {Shield} de Barrera
+  Name: Gran Barrera Duplex
