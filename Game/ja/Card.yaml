@@ -733,6 +733,7 @@ Yueguang:
 Wushuai:
   Description: このカードを引いた時、|ロックオン|{Value1}を受ける。その後、{SelfName}を|廃棄|する。
   Name: 剣閃
+  FlavorText: 「天を見よ！見えるはずだ、あの死兆星が！！」
 Payment:
   Description: "<sprite=\"Point\" name=\"Gold\">{MoneyCost}を払う。\n<color=#b7646b>いたずらウサギ</color>が戦闘から離脱する。"
   Name: 送金
@@ -1105,7 +1106,9 @@ MorphDog:
   Description: '|火力|{Value1}を得る。'
   Name: 肉食化弾幕変化
 SakuyaLock:
-  Name: タイムロックダウン
+  Name: タイムロック
+  Description: "<color=#B7F0FF>十六夜咲夜</color>の|シルバーロックダウン|を1回発動させる。\n（{Value1}攻撃ダメージを受ける。）"
+  NonbattleDescription: '|シルバーロックダウン|の効果を1回発動させる。'
 LimaoAttack:
   Name: 満月のポンポコリン
   Description: "敵全体に{Damage}ダメージを与える、{GainMana}を得る。\n|成長|：追加の {Mana} を得る。"
@@ -1669,13 +1672,15 @@ Zhulianshen:
   Description: "{Block}|ブロック|を得る。\n|庇護|{Value1}を得る。"
 MoonTipsDefense:
   Description: '{Value1}|バリア|を得る。'
+  Name: 強化結界
 MoonTipsHeal:
   Description: ライフを{Value1}回復する。
+  Name: 傷癒やし
 LeiguAttack:
   Description: "敵全体に{Damage}ダメージを与える。\n|バリア|か|ブロック|がある敵に2回のダメージを与える。"
 LongArm:
   Name: のびーるアーム
-  Description: "{Damage}ダメージを与える。\n手札が{Value1}枚以上ある場合、{Mana}を得る。"
+  Description: "{Damage}ダメージを与える。\n{SelfName}をプレイする前に手札の枚数が{Value1}枚か{Value1}枚以上の場合、{Mana}を得る。"
 KongMana:
   Name: 炉心融解
   Description: "手札からカードを1枚まで選び|廃棄|して、そのコストのマナを得る。\n|幻虹|を1枚手札に加える。"
@@ -1781,12 +1786,17 @@ BailianBlack:
   Description: 全ての|防御|、|スキル|カードはコストが{Mana}になり、|廃棄|を持つ。
 MoonTipsBag:
   Name: 錦嚢の計・月
+  Description: "{Value1}つの|c:月対策の計|から1つを選ぶ。\n|消耗品【{DeckCounter}】|"
 HatateShot:
-  Description: "{Block}|ブロック|を得る。\n残ったマナ1つにつき{Value}|ブロック|追加する。（合計{Special}|ブロック|）"
+  Description: "{Block}|ブロック|を得る。\n残ったマナ1つにつき{Value1}|ブロック|追加する。（合計{Special}|ブロック|）"
   Name: フルパノラマショット
 FakeCard:
-  Name: 夢枕にご先祖総立ち
+  Name: 夢枕にご先祖総立ち（仮）
+  Description: "|古明地こいし|はまだ家で寝てます。\n今後のアップデートをお楽しみに。"
 LoveFire:
   Name: 恋の埋火
 BabyDream:
   Name: 胎児の夢
+MoonTipsAttack:
+  Name: 弾幕補充
+  Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
