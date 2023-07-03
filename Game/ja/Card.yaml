@@ -553,7 +553,7 @@ ToolMana:
   FlavorText: 翼を授ける必要の無い幻想郷では独占市場を築く人気商品。
 ToolMicai:
   Name: 光学迷彩スーツ
-  Description: "|オプティカルカモフラージュ|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
+  Description: "|光学迷彩|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
 ToolFirstAid:
   Description: "{PlayerName}のデバフを全て解除する。\nライフを{Value1}回復する。\n|消耗品【{DeckCounter}】|"
   Name: 救急箱
@@ -981,7 +981,7 @@ FindCollection:
   Description: '{Value1}枚のランダムな{PlayerName}専用でないカードから1枚選び、手札に加える。それは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。'
 IceSaber:
   Name: ソードフリーザー
-  Description: "{Damage}ダメージを{Value1}回与える。\n手札の青のカードを任意の枚数捨てる。捨てた枚数と同じ数だけ追加で攻撃する。"
+  Description: "{Damage}ダメージを{Value1}回与える。\n|冷気|を与える。\n手札の青のカードを任意の枚数捨てる。捨てた枚数と同じ数だけ追加で攻撃する。"
 IceLaser:
   Name: 冷凍ビーム
   UpgradedDescription: "{Damage} ダメージを与え、|冷気|を付与する。\nこれを他のランダムな敵にもう一度発動する。"
@@ -1016,7 +1016,7 @@ SakuyaFuneral:
   Description: "ライフを{Value1}失う。\n|廃棄済|のカードを1枚選び、|臨時コスト|{Mana}にして手札に加える。"
   FlavorText: 「私まだ死んでないんですけど、お嬢様。」
 NitoriUnderWater:
-  Description: '|オプティカルカモフラージュ|{Value1}を得る。'
+  Description: '|光学迷彩|{Value1}を得る。'
   Name: ウォーターカーペット
 YuetuInvincible:
   Description: "|天衣無縫|{Value1}を得る。\n山札に|月の羽衣|{Value2}枚を加える。"
@@ -1266,11 +1266,11 @@ BlueRose:
   Description: "{Damage} ダメージを与える。\n目標に|冷気|が付与されている場合、 {Block} |ブロック|を得る。"
   UpgradedDescription: "{Damage} ダメージを与える。\n目標に|冷気|が付与されている場合、 {Shield} |バリア|を得る。"
 ColdBreath:
-  Description: '|寒冷|が付与されているランダムな敵に {Damage} ダメージ。
+  Description: 'ランダムな敵に{Damage}ダメージを与える。
 
-    カードを {Value1} 枚引く。
+    |冷気|を受けている敵がいる場合{Mana}を得て、その敵を優先的に攻撃する。
 
-    このカードは|冷気|が付与されている敵がいる場合のみ使用できる。'
+    カードを{Value1}枚引く。'
   Name: ダイヤモンドブレス
 OptBottom:
   Name: 沈没
@@ -1417,7 +1417,7 @@ StarFriend:
     {Value2}回ダメージを与える。'
 SunnyFriend:
   Name: 輝ける日の光、サニー
-  ExtraDescription1: '{FriendA}オプティカルカモフラージュ{Light}を得る。'
+  ExtraDescription1: '{FriendA}|光学迷彩|{Light}を得る。'
   ExtraDescription2: "{FriendU}即時にダメージを{Value1}回与える。\n|火力|{Value2}を得る。"
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
 ClownpieceFriend:
@@ -1594,15 +1594,18 @@ BrainOverclock:
   Description: "{Mana}を得る。\nカードを{Value2}枚引く。\n|オーバードラフト|{Value1}。"
   Name: 脳の過負荷
 MinengZhuru:
-  Description: '|パートナー|の|f:自動能力|は追加で効果を発動する。'
+  Description: '|パートナー|の|f:自動能力|は追加で効果を発動する。
+
+    （支援度の増減はそのまま）'
   Name: 後戸の開放
 HualiIce:
   Name: パーフェクトサマーアイス
-  Description: "このターンにカードを{Value1}枚以上使用している場合のみ使用できる。\n（残り{Countdown}枚）\n敵全体に{Damage}ダメージを与え、|冷気|を与える。\n"
-  UpgradedNonbattleDescription: "このターンにカードを{Value1}枚以上使用している場合のみ使用できる。\n敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。"
-  UpgradedDescription: "このターンにカードを{Value1}枚以上使用している場合のみ使用できる。\n（残り{Countdown}枚）\n\
-    敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。"
-  NonbattleDescription: "このターンにカードを{Value1}枚以上使用している場合のみ使用できる。\n敵全体に{Damage}ダメージを与え、|冷気|を与える。\n"
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
+    （残り{Countdown}枚）\n"
+  UpgradedNonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。"
+  UpgradedDescription: "敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
+    （残り{Countdown}枚）"
+  NonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n"
 FairyAllOut:
   Name: 総攻撃
   Description: "敵全体に{Damage}ダメージを与える。\n手札にある召喚済みの|パートナー|の|f:自動能力|を発動する。"
@@ -1624,7 +1627,7 @@ PlayWithWaste:
 ForeverCool:
   Description: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
 Lunatic:
-  Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
+  Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚ある場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
     現在：{LunaticCount}枚。"
   NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
   Name: 狂気
@@ -1634,7 +1637,7 @@ HuiyinAttack:
 QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
 LarvaDefense:
-  Description: "{Block}|ブロック|を得る。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。"
+  Description: "{Block}|ブロック|と{Shield}|バリア|を得る。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。"
   Name: 羽ばたく翼
 CirnoFreeze:
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\nカードをプレイした時、手札の{SelfName}を全て|廃棄|する。"
@@ -1691,7 +1694,7 @@ KaguyaTreeSee:
   Description: "ダメージを受ける度、このカードのコストが{Mana}下がる。\n|廃棄|を持つ全ての|廃棄|されたカードを山札に戻す。\n全てのカードは|廃棄|を失う。"
 SanaeMiracle:
   Name: 白昼の客星
-  Description: "敵全体に{Damage}ダメージを{Value1}回与える。\nこのカードは山札が0枚の時のみプレイできる。"
+  Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n山札が0枚の場合、このカードのコストは{Mana}。"
 FangxiangHeal:
   Description: ランダムな {Value1} 枚の捨て札を|廃棄|する。|廃棄|したカード一枚ごとに {Value2} のライフを回復する。
   Name: スコアデザイアイーター
@@ -1776,6 +1779,7 @@ OtherSkill:
 RemiliaFate:
   Description: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から３のカードを1枚ずつ手札に加える。"
   UpgradedDescription: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から５のカードを1枚ずつ手札に加える。"
+  Name: 運命を操る程度の能力
 Thought:
   Description: "|手札に加わった時|：{SelfName}を|廃棄|する。\nランダムなマナ総量が{Value1}のカードを1枚手札に加える。そのカードは|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。"
   UpgradedDescription: "|手札に加わった時|：{SelfName}を|廃棄|する。\nランダムなマナ総量が{Value1}のカードを1枚手札に加える。そのカードは|アップグレード|済みかつ|臨時コスト|{Mana}で、|廃棄|と|虚無|を持つ。"
@@ -1801,3 +1805,6 @@ BabyDream:
 MoonTipsAttack:
   Name: 弾幕補充
   Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
+DoubleDajiejie:
+  Name: 二重結界
+  Description: "{Block}|ブロック|を得る。\n{Shield}|バリア|を得る。"
