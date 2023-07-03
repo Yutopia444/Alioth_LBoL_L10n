@@ -2010,6 +2010,7 @@ ForeverCool:
 CirnoInForest:
   Name: In Plain Sight
   Description: "Gain {Block} |Block|.\n|Overdraft| {Value1}."
+  UpgradedDescription: Gain {Block} |Block|.
 ZeroK:
   Name: Absolute Zero
   Description: "Increase the damage dealt when stacking |Cold| by {Value1} times.\n\
@@ -2056,9 +2057,9 @@ FairyTeam:
     \ to a random enemy."
 IceSaber:
   Name: Ice Forged Blade
-  Description: "Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.\n\
-    Discard any number of blue cards. Deal that damage an additional time for each\
-    \ card discarded this way."
+  Description: "Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'},\
+    \ apply |Cold|.\nDiscard any number of blue cards. Deal that damage an additional\
+    \ time for each card discarded this way."
 IceBarrier:
   Name: Ice Barrier
   Description: Gain {Value1} |Frost Armor|.
@@ -2073,24 +2074,24 @@ SplitPotion:
 ColdBreath:
   Name: Diamond Breath
   Description: "Deal {Damage} damage to a random enemy with |Cold|.\nDraw {Value1}\
-    \ card {Value1:plural one='' other='s'}.\nCan't be played if there are no enemies\
-    \ with |Cold|."
+    \ card {Value1:plural one='' other='s'}.\nPrioritize attack in |Cold| target and\
+    \ gain {Mana}."
   FlavorText: You can use this move to win this year's The Queen of Fighters.
 HualiIce:
   Name: Stunning Summer Ice
-  Description: "Play this only if a total of {Value1} card{Value1:plural one=' has'\
-    \ other='s have'} been played this turn. ({Countdown:plural one='% card' other='%\
-    \ cards'} left.)\nDeal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n"
-  UpgradedDescription: "Play this only if a total of {Value1} card{Value1:plural one='\
+  Description: "Cost {Mana} if a total of {Value1} card{Value1:plural one=' has' other='s\
+    \ have'} been played this turn. ({Countdown:plural one='% card' other='% cards'}\
+    \ left.)\nDeal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n"
+  UpgradedDescription: "Cost {Mana} if a total of {Value1} card{Value1:plural one='\
     \ has' other='s have'} been played this turn. ({Countdown:plural one='% card'\
     \ other='% cards'} left.)\nDeal {Damage} damage to each enemy.\nApply |Cold| to\
     \ each enemy {Value2} time{Value2:plural one='' other='s'}."
-  UpgradedNonbattleDescription: "Play this only if a total of {Value1} card{Value1:plural\
+  UpgradedNonbattleDescription: "Cost {Mana} if a total of {Value1} card{Value1:plural\
     \ one=' has' other='s have'} been played this turn.\nDeal {Damage} damage to each\
     \ enemy.\nApply |Cold| to each enemy {Value2} time{Value2:plural one='' other='s'}."
-  NonbattleDescription: "Play this only if a total of {Value1} card{Value1:plural\
-    \ one=' has' other='s have'} been played this turn.\nDeal {Damage} damage to each\
-    \ enemy.\nApply |Cold| to each enemy.\n"
+  NonbattleDescription: "Cost {Mana} if a total of {Value1} card{Value1:plural one='\
+    \ has' other='s have'} been played this turn.\nDeal {Damage} damage to each enemy.\n\
+    Apply |Cold| to each enemy.\n"
 FairyTrick:
   Name: Fairy Mischief
   Description: "Lose {Value1} life.\nSummon 3 |e:Fairies of Light|. Add one to the\
@@ -2272,8 +2273,9 @@ InstantFreeze:
     \ take an extra turn.\n|d:Time Limit {Mana}. |"
   Name: Instant Freeze
 LarvaDefense:
-  Description: "Gain {Block} |Block|.\nIf there's a summoned |Larva, God of Evernight|\
-    \ in the hand, apply {Value1} |Weak| & |Vunerable| to each enemy."
+  Description: "Gain {Block} |Block| and {Shield} |Barrier|.\nIf there's a summoned\
+    \ |Larva, God of Evernight| in the hand, apply {Value1} |Weak| & |Vunerable| to\
+    \ each enemy."
   Name: Wingbeats Flight
 ChooseFriend:
   Description: "Choose {Value2} of {Value1} random |Teammate| cards to add to the\
@@ -2346,3 +2348,6 @@ SanaeRestart:
     \ and reshuffle the draw pile.\nDraw {Value1} cards."
 HatateShot:
   Name: Panoramic Shot
+DoubleDajiejie:
+  Description: "Gain {Block} |Block|.\nGain {Shield} |Barrier|."
+  Name: Great Duplex Barrier
