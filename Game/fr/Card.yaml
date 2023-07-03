@@ -2217,7 +2217,7 @@ ShanyuCard:
 SanaeMiracle:
   Name: Guest Star du Jour
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois\
-    \ à tous les ennemis.\nNe peut être joué que lorsque la pioche est vide."
+    \ à tous les ennemis.\nLe coût est de {Mana} lorsque la pioche est vide."
 BlackPoison:
   Name: Danse Sombre
   Description: Appliquez {Value1} |Poison{Value1:plural one='' other='s'}| chaque
@@ -2280,7 +2280,8 @@ SakuyaDetective:
 MinengZhuru:
   Name: Infusion Arcanique
   Description: "Lorsque la |f:compétence passive| d'une carte |alliée| prend effet,\
-    \ elle prend effet une fois de plus."
+    \ elle prend effet une fois de plus.\n(Cela ne fait pas varier les points de soutien\
+    \ de la carte)"
 PrismriverWhite:
   Name: Solo de Trompette
   Description: "Gagnez {Mana}.\nPiochez {Value1:plural one='% carte' other='% cartes'}.\n\
@@ -2393,9 +2394,10 @@ CirnoDraw:
     Au début du tour suivant, piochez {Value2} carte{Value2:plural one='' other='s'}."
 IceSaber:
   Name: Glace en Épée
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
-    Lorsque vous la jouez, vous pouvez défausser n'importe quel nombre de cartes bleues\
-    \ de la main pour que cette carte attaque autant de fois de plus."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois,\
+    \ appliquez |Froid|.\nLorsque vous la jouez, vous pouvez défausser n'importe quel\
+    \ nombre de cartes bleues de la main pour que cette carte attaque autant de fois\
+    \ de plus."
   FlavorText: Il y avait autrefois une célèbre épée appelée Frostmourne.
 IceBarrier:
   Name: Bouclier de Glace
@@ -2483,6 +2485,7 @@ CirnoInForest:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Découvert|\
     \ {Value1}."
   FlavorText: Fée de la forêt.
+  UpgradedDescription: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 MoreFriends:
   Description: "Lorsque {PlayerName} débute son tour, ajoutez {Value1:plural one='%\
     \ carte |alliée| aléatoire' other='% cartes |alliées| aléatoires'} à la main.\n\
@@ -2500,27 +2503,28 @@ CirnoEcho:
     one='lui' other='leur'} conférant |Echo|.
   Name: Don de la Nature
 HualiIce:
-  Description: "Cette carte ne peut être joué qu'après qu'un total de {Value1} cartes\
-    \ aient été jouées ce tour.\n({Countdown} cartes restantes)\nInfligez {Damage}\
-    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez leur\
-    \ le |Froid|.\n"
-  UpgradedDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
-    \ cartes aient été jouées ce tour.\n({Countdown} cartes restantes)\nInflige {Damage}\
-    \ dégât{Damage:plural one='' other='s'} à tous les ennemis, et appliquez leur\
-    \ le |Froid| {Value2} fois."
-  NonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total de {Value1}\
-    \ cartes aient été jouées ce tour.\nInfligez {Damage} dégât{Damage:plural one=''\
-    \ other='s'} à tous les ennemis, et appliquez leur le |Froid|.\n"
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
+    \ ennemis, et appliquez leur le |Froid|.\nSi {Value1} carte{Value1:plural one='\
+    \ a déjà été jouée' other='s ont déjà été jouées'} ce tour-ci, {SelfName} coûte\
+    \ {Mana}.\n({Countdown:plural one='% carte restante' other='% cartes restantes'})\n"
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
+    \ tous les ennemis, et appliquez leur le |Froid| {Value2} fois.\nSi {Value1} carte{Value1:plural\
+    \ one=' a déjà été jouée' other='s ont déjà été jouées'} ce tour-ci, {SelfName}\
+    \ coûte {Mana}.\n({Countdown:plural one='% carte restante' other='% cartes restantes'})"
+  NonbattleDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
+    \ tous les ennemis, et appliquez leur le |Froid|.\nSi {Value1} carte{Value1:plural\
+    \ one=' a déjà été jouée' other='s ont déjà été jouées'} ce tour-ci, {SelfName}\
+    \ coûte {Mana}.\n"
   Name: Magnifique Glace d'Été
-  UpgradedNonbattleDescription: "Cette carte ne peut être joué qu'après qu'un total\
-    \ de {Value1} cartes aient été jouées ce tour.\nInfligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'} à tous les ennemis, et appliquez leur le |Froid| {Value2}\
-    \ fois."
+  UpgradedNonbattleDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à tous les ennemis, et appliquez leur le |Froid| {Value2} fois.\nSi {Value1}\
+    \ carte{Value1:plural one=' a déjà été jouée' other='s ont déjà été jouées'} ce\
+    \ tour-ci, {SelfName} coûte {Mana}."
 ColdBreath:
   Name: Souffle de Diamant
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
-    \ aléatoire qui a |Froid|.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\n\
-    Ne peut pas être joué tant qu'aucun ennemi n'a |froid|."
+    \ aléatoire, en priorisant ceux qui ont |froid|.\nGagnez {Mana}.\nPiochez {Value1}\
+    \ carte{Value1:plural one='' other='s'}."
   FlavorText: Un coup puissant dans les jeux de combat.
 FreezeToIce:
   Name: Spécimen Congelé
@@ -2798,7 +2802,7 @@ ClownpieceFriend:
     \ other='s'}."
 Lunatic:
   Name: Folie
-  Description: "Lorsque {PlayerName} finit son tour, s'il y a plus de {Value1} {SelfName}{Value1:plural\
+  Description: "Lorsque {PlayerName} finit son tour, s'il y a au moins {Value1} {SelfName}{Value1:plural\
     \ one='' other='s'} dans la main, pioche et défausse réunies, |exilez|-les, et\
     \ {PlayerName} perd {Value2} point{Value2:plural one='' other='s'} de vie.\n{LunaticCount}\
     \ actuellement."
@@ -2815,10 +2819,11 @@ LeidiFriend:
   Description: '{FriendP} appliquez |froid| à un ennemi aléatoire.'
 LarvaDefense:
   Name: Battement d'Ailes
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi vous\
-    \ avez invoqué |Larva, Déesse de la Nuit d'Été| dans votre main, appliquez {Value1}\
-    \ |Faiblesse{Value1:plural one='' other='s'}| et {Value1} |Vulnérabilité{Value1:plural\
-    \ one='' other='s'}| à tous les ennemis."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et {Shield}\
+    \ |Barrière{Shield:plural one='' other='s'}|.\nSi vous avez invoqué |Larva, Déesse\
+    \ de la Nuit d'Été| dans votre main, appliquez {Value1} |Faiblesse{Value1:plural\
+    \ one='' other='s'}| et {Value1} |Vulnérabilité{Value1:plural one='' other='s'}|\
+    \ à tous les ennemis."
 FakeCard:
   Description: "|Komeiji Koishi| Dort encore chez elle. \nRestez à l'écoute des futures\
     \ mises à jour."
@@ -2873,12 +2878,11 @@ KoishiMoveDefense:
 LoveFire:
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, obtenez\
     \ {SavedMana}.\n|Pour chaque {Mana} supplémentaire dépensé| : dégâts augmentés\
-    \ de {Value1}.\nLe mana payé lorsqu'il est joué est enregistré et le mana enregistré\
-    \ est rendu la prochaine fois qu'il est joué."
+    \ de {Value1}.\nLe mana payé est enregistré et sera rendu la prochaine fois que\
+    \ la carte est jouée."
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
     \ {Mana} supplémentaire dépensé| : dégâts augmentés de {Value1}.\nLe mana payé\
-    \ lorsqu'il est joué est enregistré et le mana enregistré est rendu la prochaine\
-    \ fois qu'il est joué."
+    \ est enregistré et sera rendu la prochaine fois que la carte est jouée."
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
@@ -2891,7 +2895,7 @@ AliceAttackB:
   Name: Retour au Néant
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 AliceBlockU:
-  Name: Enchantement de Barrage
+  Name: Barrière de Tirs
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 DeployShanghai:
   Name: Déployer la Poupée Shanghai
@@ -2910,3 +2914,7 @@ HatateShot:
   Name: Panorama
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nChaque\
     \ point de mana restant augmente cet effet de {Value1}. (total {Special} points)"
+DoubleDajiejie:
+  Name: Grande Barrière Double
+  Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et {Shield}
+    |Barrière{Shield:plural one='' other='s'}|.
