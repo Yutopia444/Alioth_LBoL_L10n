@@ -1265,8 +1265,8 @@ WaterPrincess:
   Description: "Obtén {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta la\
     \ |Barrera| de {SelfName} por {Value1}. (|Barrera| total {Special})\n|Debut|:\
     \ Añade un |Roció| a la mano."
-  NonbattleDescription: "{SelfName} da {Value1} más de |Barrera| por cada carta en\
-    \ la mano.\n|Debut|: Añade un |Roció| a la mano."
+  NonbattleDescription: "Por cada carta en la mano, obtén {Value1} de |Barrera|.\n\
+    |Debut|: Añade un |Roció| a la mano."
 Shadow:
   Name: Sombra
 PrismriverRed:
@@ -1902,9 +1902,9 @@ YouxiangMoon:
     \ mano. {Value1:plural one='Tiene' other='Tienen'} |Etéreo|."
 IceSaber:
   Name: Espada Forjada en Hielo
-  Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}\
-    \ y aplica |Frío|.\nDescarta cualquier cantidad de cartas azules. Inflige ese\
-    \ daño una vez más por cada carta descartada de esta manera."
+  Description: "Inflige {Damage} de daño {Value1} {Value1:plural one='vez' other='veces'}.\n\
+    Aplica |Frío|.\nDescarta cualquier cantidad de cartas azules. Inflige ese daño\
+    \ una vez más por cada carta descartada de esta manera."
   FlavorText: Había una vez una espada famosa llamada "Frostmourne".
 XiangziEcho:
   Name: Eco de la Montaña
@@ -1956,7 +1956,8 @@ ZiwoCard:
     \ Entra en el estado |Id| en su lugar."
 SanaeMiracle:
   Description: "Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'\
-    \ other='veces'}.\nCuesta {Mana} si la pila de robo está vacía."
+    \ other='veces'}.\nSi la pila de robo está vacía, {SelfName} cuesta {Mana} para\
+    \ jugar."
   Name: Aparición de Estrellas al Mediodía
 KaguyaTreeSee:
   Description: "{SelfName} cuesta {Mana} menos cada vez que {PlayerName} ha recibido\
@@ -1990,19 +1991,20 @@ CallFriends:
     \ una opción adicional."
 HualiIce:
   Name: Impresionante Hielo de Verano
-  UpgradedDescription: "Inflige {Damage} de daño {Value2} ve{Value2:plural one='z'\
-    \ other='ces'} y aplica |Frío| a cada enemigo.\nSi se jugaron {Value1} carta{Value1:plural\
-    \ one='' other='s'} en este turno, {SelfName} cuesta {Mana}.\n({Countdown:plural\
-    \ one='% carta restante' other='% cartas restantes'}.)"
-  Description: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\nSi se jugaron\
+  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
+    \ cada enemigo {Value2} ve{Value2:plural one='z' other='ces'}.\nSi se jugaron\
     \ {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName} cuesta\
-    \ {Mana}.\n({Countdown:plural one='% carta restante' other='% cartas restantes'}.)\n"
-  UpgradedNonbattleDescription: "Inflige {Damage} de daño {Value2} ve{Value2:plural\
-    \ one='z' other='ces'} y aplica |Frío| a cada enemigo.\nSi se jugaron {Value1}\
-    \ carta{Value1:plural one='' other='s'} en este turno, {SelfName} cuesta {Mana}."
-  NonbattleDescription: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\n\
+    \ {Mana}.\n({Countdown:plural one='% carta restante' other='% cartas restantes'}.)"
+  Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\n\
     Si se jugaron {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName}\
-    \ cuesta {Mana}.\n"
+    \ cuesta {Mana}.\n({Countdown:plural one='% carta restante' other='% cartas restantes'}.)\n"
+  UpgradedNonbattleDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica\
+    \ |Frío| a cada enemigo {Value2} ve{Value2:plural one='z' other='ces'}.\nSi se\
+    \ jugaron {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName}\
+    \ cuesta {Mana}."
+  NonbattleDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
+    \ cada enemigo.\nSi se jugaron {Value1} carta{Value1:plural one='' other='s'}\
+    \ en este turno, {SelfName} cuesta {Mana}.\n"
 ForeverCool:
   Name: Eterna Fría Época de Fantasía
   Description: "Siempre que una |Compañera| usa la |a:Habilidad Activa| o |u:Habilidad\
@@ -2062,8 +2064,8 @@ CirnoEcho:
     \ one='Obtiene' other='Obtienen'} |Eco|."
 ColdBreath:
   Name: Aliento de Diamante
-  Description: "Inflige {Damage} de daño a un enemigo aleatorio.\nPrioriza a los enemigos\
-    \ con |Frío| y gana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio, prioriza a los enemigos\
+    \ con |Frío|.\nGana {Mana}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
   FlavorText: Puedes usar este movimiento para ganar el "The Queen of Fighters" de
     este año.
 IceGun:
@@ -2314,9 +2316,9 @@ ClownpieceFriend:
   ExtraDescription2: '{FriendU}Gana {Mana} y agrega una |Locura| a la pila de descarte.'
   Name: Clownpiece, Hada Lunática
 LarvaDefense:
-  Description: "Obtén {Block} de |Bloqueo| y {Shield} de |Barrera|.\nSi hay un |Larva,\
-    \ Diosa de la Noche Eterna| convocada en la mano, aplica {Value1} |Débil| y |Vulnerable|\
-    \ a cada enemigo."
+  Description: "Obtén {Block} de |Bloqueo|.\nObtén {Shield} de |Barrera|.\nSi hay\
+    \ un |Larva, Diosa de la Noche Eterna| convocada en la mano, aplica {Value1} de\
+    \ |Débil| y |Vulnerable| a cada enemigo."
   Name: Aleteos de Vuelo
 FakeCard:
   Description: "|Koishi Komeiji| Todavía esta durmiendo en su casa.\nEsten atento\
@@ -2333,8 +2335,8 @@ OtherBlock:
 OtherSkill:
   Name: Impostor
   Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nGana {GainMana}.\n\
-    Cada vez que juegas una carta de un personaje que no sea de {PlayerName}, {SelfName}\
-    \ proporciona <sprite=\"ManaSprite\" name=\"C\"> adicional."
+    Cada vez que se juega una carta exclusiva de un personaje que no sea de {PlayerName},\
+    \ {SelfName} otorga <sprite=\"ManaSprite\" name=\"C\"> adicional."
 YouxiangAttack:
   Description: "Inflige {Damage} de daño.\n|Por cada {Mana} gastado|: Inflige {Value1}\
     \ más de daño.\nSi se gastó al menos {Value2} de maná, este daño de se vuelve\
@@ -2351,24 +2353,27 @@ TriggerAllPassive:
   Description: (WIP) Desencadena todos los efectos pasivos de las Muñecas
 HuiyeAttack:
   Name: Océano de Arboles Hourai
-  Description: "|Por cada color diferente gastado|: Inflige {Damage} de daño a cada\
-    \ enemigo.\nSi la cantidad de maná pagada no es inferior a {Value2}, elige y mueve\
-    \ hasta {Value1} carta{Value1:plural one='' other='s'} de la pila del |Exilio|\
-    \ a la mano."
+  Description: "|Por cada maná gastado de un color diferente|: Inflige {Damage} de\
+    \ daño a cada enemigo.\nSi se gastó al menos {Value2} de maná, devuelve hasta\
+    \ {Value1} carta{Value1:plural one='' other='s'} de la pila del |Exilio| a la\
+    \ mano."
 SanaeRestart:
   Name: El Día en que el Mar se Dividió
-  Description: "Gana {Mana}.\nBaraja todas las cartas de la mano y la pila de descarte\
-    \ hacia la pila de robo.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
-  UpgradedDescription: "Gana {Mana}.\nBaraja todas las cartas de la mano y la pila\
-    \ de descarte hacia la pila de robo.\nRoba {Value1} carta{Value1:plural one=''\
-    \ other='s'}.\nElige {Value2} carta de la pila de robo a la mano."
+  Description: "Gana {Mana}.\nDevuelve todas las cartas de la mano y la pila de descarte\
+    \ hacia la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'}."
+  UpgradedDescription: "Gana {Mana}.\nDevuelve todas las cartas de la mano y la pila\
+    \ de descarte hacia la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'}.\nElige {Value2} carta de la pila de robo y colócalo hacia\
+    \ la mano."
 RemiliaFate:
-  Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nMueva\
-    \ las cartas de la pila de robo a la mano, y su coste total es de 1, 2 y 3 respectivamente."
+  Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nSe\
+    \ colocara cartas al azar con costes totales de 1, 2 y 3 desde la pila de robo\
+    \ hacia la mano."
   Name: Manipulación del Destino
   UpgradedDescription: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\n\
-    Mueva las cartas de la pila de robo a la mano, y su coste total es de 1, 2, 3,\
-    \ 4 y 5 respectivamente."
+    Se colocara cartas al azar con costes totales de 1, 2, 3, 4 y 5 desde la pila\
+    \ de robo hacia la mano."
 HuiyeTime:
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.\
     \ {Value1:plural one='Tiene' other='Tienen'} |Retener| en este turno.\nTermina\
