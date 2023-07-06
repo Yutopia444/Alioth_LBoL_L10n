@@ -835,7 +835,7 @@ VampireHunter:
   Description: "{Damage}ダメージを与える。\n対象が|吸血鬼|を持っている場合、与えるダメージを{Value1}倍する。"
 LunaDial:
   Name: プライベートスクウェア
-  Description: "ターンを終了し、|追加ターン|を得る。\nこのカードを引いた時、戦闘終了までコストを{Mana}下げる。"
+  Description: "ターンを終了し、|追加ターン|を得る。\nこのカードを引いた時、戦闘終了までコストを{Mana}減らす。"
 ShengquanZaiwo:
   Description: '{Mana}を得る。'
   Name: イカサマ
@@ -857,8 +857,8 @@ SakuyaKiller:
   Description: "{PlayerName}はターン終了時、 {Value1} 枚の|投げナイフ|を山札に加える。\nまた、敵を一体撃破した場合にもこれと同じ効果を発動する。"
 SakuyaTea:
   Name: 紅茶タイム
-  ExtraDescription1: "カードを {Value1} 枚引く。\n|d:初見：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}下げる。|"
-  Description: "カードを{Value1}枚引く。\n|初見|：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}下げる。"
+  ExtraDescription1: "カードを {Value1} 枚引く。\n|d:初見：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}減らす。|"
+  Description: "カードを{Value1}枚引く。\n|初見|：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}減らす。"
 SakuyaShop:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。"
   Name: 物資の購入
@@ -876,7 +876,7 @@ SakuyaWeak:
   FlavorText: 時を止めれば休憩時間は無限大。
 DefenseDraw:
   Name: 月相
-  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}下げる。"
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}減らす。"
 AttackMagic:
   Name: 弾幕手品
   Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\n|投げナイフ|を{Value2}枚手札に加える。"
@@ -962,7 +962,7 @@ WaterPrincess:
   ExtraDescription1: "{Shield}|バリア|を得る。\n手札1枚につき得られる|バリア|が{Value1}増える。（合計：{Special}）\n\
     |d:初見：水沫を手札に加える。|"
 SakuyaAttackX:
-  Description: '|シナジー{Mana}|：{Damage}ダメージを与える。'
+  Description: '|{Mana}につき|：{Damage}ダメージを与える。'
   Name: シルバープッシュ
 SakuyaDraw:
   Description: このカードを捨てた時、カードを{Value1}枚引く。
@@ -1203,9 +1203,9 @@ StopTime:
   Description: '{PlayerName}はターン終了時に余剰のマナがある場合、ランダムなマナ {Value1} つを次のターンへ持ち越せるようになる。'
 PerfectServant:
   Name: 完全で瀟洒な従者
-  Description: "|シナジー|<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
-    W\">：次のターンのドローフェイズ終了時、手札の全てのカードのマナコストをランダムに1つ減らす。\n|シナジー|<sprite=\"ManaSprite\"\
-    \ name=\"U\">：次のターン開始時に{Mana}を得て、カードを追加で1枚引く。"
+  Description: "|<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
+    W\">につき|：次のターンのドローフェイズ終了時、手札の全てのカードのマナコストをランダムに1つ減らす。\n|<sprite=\"ManaSprite\"\
+    \ name=\"U\">につき|：次のターン開始時に{Mana}を得て、カードを追加で1枚引く。"
 SakuyaSpeedup:
   FlavorText: 今、あなたの後ろに居るの。
   Name: タイムアクセル
@@ -1230,10 +1230,10 @@ ChargingPotion:
   Description: "|不安定なポーション|を使用する度、|チャージ|{Value1}を得る。\n|不安定なポーション|を{Value2}枚手札に加える。"
 StarlightTaifengSummoner:
   Name: アンリミテッドスターライト
-  Description: "|スターライトタイフーン|を一枚山札に加える。\n|シナジー|{Mana}：それのダメージを与える回数を+1する。\n|シナジー|<sprite=\"\
-    ManaSprite\" name=\"R\">：それのダメージを{Value1}増やす。"
-  UpgradedDescription: "|スターライトタイフーン＋|を一枚山札に加える。\n|シナジー|{Mana}：それのダメージを与える回数を+1する。\n\
-    |シナジー|<sprite=\"ManaSprite\" name=\"R\">：それのダメージを{Value1}増やす。"
+  Description: "|スターライトタイフーン|を一枚山札に加える。\n|{Mana}につき|：それのダメージを与える回数を+1する。\n|<sprite=\"\
+    ManaSprite\" name=\"R\">につき|：それのダメージを{Value1}増やす。"
+  UpgradedDescription: "|スターライトタイフーン＋|を一枚山札に加える。\n|{Mana}につき|：それのダメージを与える回数を+1する。\n\
+    |<sprite=\"ManaSprite\" name=\"R\">につき|：それのダメージを{Value1}増やす。"
 SplitPotion:
   Name: 膨張剤
   Description: "|不安定なポーション|は追加で一人多くの敵にダメージを与えるようになる。\n|不安定なポーション|を {Value1} 枚山札に加える。"
@@ -1667,7 +1667,7 @@ KoishiAttackG:
   Name: 薔薇の開花
   Description: '{Damage}ダメージを与える'
 Xiguadao:
-  Description: "|シナジー|{Mana}： {Damage}ダメージを与える\n攻撃回数が残っている状態で目標が撃破された場合、その回数が切れるまで他のランダムな敵へ攻撃を行い続ける。"
+  Description: "|{Mana}につき|： {Damage}ダメージを与える\n攻撃回数が残っている状態で目標が撃破された場合、その回数が切れるまで他のランダムな敵へ攻撃を行い続ける。"
   Name: スイカソード
   FlavorText: 超⑨武神覇斬!
 KoishiBlockG:
