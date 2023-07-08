@@ -58,7 +58,7 @@ ReimuWeiyan:
   FlavorText: 贋作は家で紅茶を飲んでいる。
 ZhujiThreeGod:
   Name: 住吉三神
-  Description: "カードを{Value1}枚引く。\n攻撃カード1枚につき|臨時火力|{Value2}を得る。\n防御カード1枚につき|臨時霊力|{Value2}を得る。"
+  Description: "カードを{Value1}枚引く。\n引いた攻撃カード1枚につき|臨時火力|{Value2}を得る。\n引いた防御カード1枚につき|臨時霊力|{Value2}を得る。"
 OverJingjie:
   Name: 境界上空
   Description: "{Value1}枚のランダムな攻撃カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
@@ -755,9 +755,10 @@ Drunk:
 YuyukoMisfortune:
   Description: '|手札にある間|：{PlayerName}はカードを使用する度、ライフを{Value1}失う。'
   FlavorText: 思うんだけど、「死亡する」という能力を失った人って、まだ人間という枠組みに入るのかしら？
+  Name: 忍び寄る飢餓
 RangziFanshu:
   Description: 戦闘終了後にライフを{Value1}回復する。
-  Name: スイートポテトルーム
+  Name: スイートポテト
 XiaodingKill:
   Name: 脱魂の儀
   Description: ライフが{Value1}以下の対象を即死させる。
@@ -1058,7 +1059,7 @@ HuaBlock:
   Description: "{Block}|ブロック|を得る\n|臨時火力|{Value1}を得る"
   Name: 作戦姿勢
 HuiyeMana:
-  Name: 竹取の物語
+  Name: 竹取物語
   Description: '{PlayerName}のターン開始時にランダムなマナ{Value1}点を得る。ターン毎に得るマナが{Value1}点増える。'
 MeihongPower:
   Name: 不死の炎
@@ -1515,7 +1516,7 @@ Blizzard:
   Name: 猛吹雪
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を付与する。\n手札に召喚済みの|真冬の化身、レティ|が存在する場合、次のターン開始時にこの攻撃をもう一度行う。"
 FairyOnIce:
-  Name: 冰上の妖精
+  Name: 氷上の妖精
   Description: "カードを{Value1}枚引く。\n|冷気|が付与されている敵1体につき、{PlayerName}は|グレイズ| {Value2} を得る。 "
 ColdSnap:
   Name: 高速なる下熱
@@ -1577,7 +1578,7 @@ DeepFreeze:
   Description: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を付与する、敵が既に|冷気|を持っている場合、それを|凍結|に上書きする。"
   Name: つららの舞
 IceBlock:
-  Name: 寒冰障壁
+  Name: アイスバリア
   Description: "一ターンの間こちらはあらゆるダメージを受け無くなる。\n全ての|ブロック|、|バリア|、|グレイズ|を無くす。\n全ての手札を一ターン|保留|し、{PlayerName}のターンを終了する。"
 ColdChain:
   Description: 山札から {Value1} 枚のカードを選んで手札に加え、それに|保留|を付与する。
@@ -1646,7 +1647,7 @@ Lunatic:
   NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
   Name: 狂気
 HuiyinAttack:
-  Description: "{Damage}ダメージを与える。\n手札から {Value1} 枚までのカードを捨てる、捨てた枚数のカードを引く。"
+  Description: "{Damage}ダメージを与える。\n手札から {Value1} 枚までカードを捨ててもよい。その後、捨てた枚数のカードを引く。"
   Name: 水戸の光圀
 QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
@@ -1724,8 +1725,7 @@ SanaeRestart:
   Description: "{Mana}を得る。\n手札と捨て札のカードを全て山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引く。"
 DanmuJade:
   Name: 弾幕の玉繭
-  Description: "敵全体に{Damage}ダメージを与える。\n|幻虹|を{Value1}枚手札に加える。\nこのカードのコストとして5色全てのマナが使用されていた場合|火力|と|霊力|{Value2}を得る。\n\
-    （<sprite=\"ManaSprite\" name=\"P\">はいずれか1色のマナとして数える。）"
+  Description: "敵全体に{Damage}ダメージを与える。\n|幻虹|を{Value1}枚手札に加える。\n|{Mana}につき|：|火力|{Value2}と|霊力|{Value2}を得る。"
 Panzi:
   Name: 水皿
   Description: "{Damage}ダメージを与える。\n|手札に加わった時|：{SelfName}のコピーを１枚手札に加える。"
