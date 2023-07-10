@@ -157,7 +157,7 @@ YinyangXueyin:
   FlavorText: 材料が賄えないなら、血を使うしかない。
 EvilTuiZhi:
   Name: 悪霊退散
-  Description: このターン、次の{Value1}つの攻撃カードのダメージを2倍にする。
+  Description: 次の{Value1}つの攻撃カードのダメージを2倍にする。
 TaijiLiangyi:
   Description: '{PlayerName}のターン開始時、手札中に|陰陽玉|を持っていない場合、|陰陽玉|を1枚手札に加える。'
   Name: 太極から両儀に
@@ -480,9 +480,9 @@ CirnoAttackU:
   Description: '{Damage}ダメージを与える。'
   Name: アイスショット
 SpecialClock:
-  Description: '{PlayerName}のターン開始時、手札を1枚捨ててもよい。
+  Description: '{PlayerName}のターン開始時、手札を最大1枚まで捨てる。
 
-    そうした場合、カードを1枚引く。'
+    捨てた枚数分だけカードを引く。'
   Name: メイドの秘技
   FlavorText: ホールの掃除に要する時間：0.4秒
 Boundary:
@@ -791,7 +791,7 @@ KokoroDance:
   Name: 暗黒能楽
 MogongAttack:
   Name: 埴輪の造形
-  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}が与えるダメージやブロックの値は、{SelfName}が手札にある間に使用した他のカードのダメージやブロックの値で最大の数値に等しい。"
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}が与えるダメージやブロックの値は、{SelfName}が手札にある間に使用した他のカードのダメージやブロックの最大値にする。"
 HappyNewYear:
   Name: 初詣
   Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ場合|火力|{Value1}を得る。\n防御カードを選んだ場合|霊力|{Value1}を得る。"
@@ -892,7 +892,7 @@ BladePower:
   Name: シルバーダッシュ
 Dejavu:
   Name: デジャヴ
-  Description: "手札から最大{Value1}枚のカードを選び山札の一番上に置いてもよい。\nカードを{Value1}枚引く。\n{Mana}を得る。"
+  Description: "手札のカードを最大{Value1}枚までを選び山札の一番上に置く。\nカードを{Value1}枚引く。\n{Mana}を得る。"
   FlavorText: なんだ猫か…
 CleanRoom:
   Name: 部屋掃除
@@ -973,7 +973,7 @@ SakuyaGraze:
   Description: "{Shield}|バリア|を得る。\n|グレイズ|{Value1}を得る。\n山札をシャッフルした時、このカードを手札に戻す。"
 PrepareParty:
   Name: パーティーの支度
-  Description: "手札のカードを1枚山札の上に置いてもよい。\n{Block}|ブロック|を得る。"
+  Description: "手札のカードを最大1枚まで山札の上に置く。\n{Block}|ブロック|を得る。"
 DangerousMagician:
   Name: 危険な手品師
   Description: "|投げナイフ|を使用する度、タイムパルス{Value1}を得る。\n|投げナイフ|{Value2}枚を山札に加える。"
@@ -1010,7 +1010,7 @@ GatherFairy:
   UpgradedDescription: "手札の上限が{MaxHand}枚になる。\nカードを{Value1}枚引く。\n手札の|パートナー|は|支援度|{Value2}を得る。"
 BailianPower:
   Name: 肉体強化
-  Description: '|火力|{Value1}を得る'
+  Description: '|火力|{Value1}を得る。'
 TrueMoon:
   Name: 真実の満月
   Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2}枚のカードをプレイした後、{PlayerName}に即死ダメージを与える。"
@@ -1032,7 +1032,7 @@ YuetuInvincible:
 PlayWithWater:
   Description: "カードを{Value1}枚引く。\n手札を1枚捨てる。"
   Name: 水遊び
-  UpgradedDescription: "カードを{Value1}枚引く。\n手札を1枚捨ててもよい。"
+  UpgradedDescription: "カードを{Value1}枚引く。\n手札のカードを最大1枚まで捨てる。"
 QinglanAttack:
   Name: 兎は舞い降りた
   Description: "{Damage}ダメージを与える。\n|星見|{Scry}。\nカードを{Value2}枚引く。"
@@ -1647,7 +1647,7 @@ Lunatic:
   NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
   Name: 狂気
 HuiyinAttack:
-  Description: "{Damage}ダメージを与える。\n手札から {Value1} 枚までカードを捨ててもよい。その後、捨てた枚数のカードを引く。"
+  Description: "{Damage}ダメージを与える。\n手札のカードを最大 {Value1} 枚まで捨てる。捨てた枚数分だけカードを引く。"
   Name: 水戸の光圀
 QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
