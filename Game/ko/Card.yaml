@@ -223,7 +223,9 @@ ShensheRichang:
   FlavorText: 오늘도 좋은 날씨!
 TwoBalls:
   Name: 균형의 구슬
-  Description: '|음양옥|을 {Value1}장 얻습니다.'
+  Description: '|음양옥|을 {Value1}장 얻습니다.
+
+    |보호막|이 있다면 |음양옥|의 코스트가 {Mana} 감소합니다.'
   FlavorText: 무극에서 태극이 나오고, 태극에서 음양이 나온다.
 HuanxiangBlock:
   Name: 환상의 테두리
@@ -235,14 +237,14 @@ FreeFly:
   FlavorText: 하늘을 나는 능력은 바깥 세계에선 찾아보기 힘들지만 환상향에서는 평범합니다.
 YinyangXueyin:
   Name: 음양혈인
-  Description: "체력을 {Value2} 잃습니다.\n|음양옥|을 사용하면, |일시 화력|과 |일시 영력|을 {Value1} 얻습니다."
+  Description: "체력을 {Value2} 잃습니다.\n|음양옥|을 한 장 얻습니다.\n|음양옥|을 사용하면, |일시 화력|과 |일시 영력|을 {Value1} 얻습니다."
   FlavorText: 재료가 없어서 피를 쓸 수 밖에 없었습니다.
 EvilTuiZhi:
   Name: 악령 퇴치
   Description: 앞으로 사용할 {Value1}장의 공격 카드의 피해가 두 배가 됩니다.
 TaijiLiangyi:
   Name: 음양의 탄생
-  Description: 내 턴 시작 시 손에 |음양옥|이 없으면 |음양옥|을 한 장 얻습니다.
+  Description: "|음양옥|을 한 장 얻습니다.\n내 턴 시작 시 손에 |음양옥|이 없으면 |음양옥|을 한 장 얻습니다."
   FlavorText: 레이무가 "콜라가 무한히 있으면 어떻게 할까"라는 책을 읽고선 개발한 기술입니다.
 Wunvyu:
   Name: 가장 흉악한 무녀구슬
@@ -605,8 +607,7 @@ DeepFreeze:
     \ 대신 |딥 프리즈|를 가합니다."
   Name: 얼음날의 춤
 CoolBreeze:
-  Description: "|방어|를 {Block} 얻습니다.\n적에게 |빙결|이 있다면 손패의 무작위 카드 {Value1}장을 |강화|시킵니다.\n\
-    강화되는 카드는 스킬 카드가 우선권을 갖습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n적에게 |빙결|이 있다면 손패의 무작위 카드 {Value1}장을 |강화|시킵니다."
   Name: 쿨 브리즈
 CirnoBlockG:
   Name: 나뭇잎 방어
@@ -723,8 +724,8 @@ CirnoEcho:
   Description: 버린 카드 더미에서 {Value1}장을 골라 손패로 되돌리고, 해당 카드에 |메아리|를 부여합니다.
 FairyTeam:
   Name: 요정대전쟁
-  Description: "손에서 |동료| 카드를 원하는 만큼 선택해 |소멸|시키고, 소멸시킨 카드의 수만큼 마나를 얻습니다.\n소멸시킨 카드의\
-    \ 총합만큼 무작위 적에게 피해를 {Damage} 줍니다."
+  Description: "손에서 |동료| 카드를 원하는 만큼 선택해 |소멸|시키고, 소멸시킨 카드의 수만큼 마나를 얻습니다.\n무작위 적에게 피해를\
+    \ {Damage} 줍니다.\n소멸시킨 |동료| 카드의 개수만큼 피해를 추가로 줍니다."
 HualiIce:
   Name: 퍼펙트 서머 아이스
   Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이 턴에서 카드가 {Value1}장 이상 사용되면 코스트가\
@@ -1239,11 +1240,12 @@ DoremyDuplicate:
   Description: "손에서 카드를 한 장 골라 그 카드의 복사본을 {Value1}장 얻습니다.\n|복사본|을 대상으로 할 수 없습니다."
   Name: 몽아몽중
 GuijiZaoxingYuan:
-  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n이 카드는 사용 후 다른 |e:조형술| 카드로\
+    \ 바뀝니다."
   Name: 진원 조형술
 GuijiZaoxingFang:
   Name: 사각형 조형술
-  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n이 카드는 사용 후 다른 |e:조형술| 카드로 바뀝니다."
 MogongAttack:
   Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n|손에 있을 경우|: 직전에 사용한 카드의 피해와\
     \ |방어|를 물려받습니다."
@@ -1253,7 +1255,8 @@ YunyouShengdi:
   Name: 성지순례
   Description: "|방어|를 {Block} 얻습니다.\n손에서 카드 한 장을 골라 이번 전투동안 |강화|합니다."
 GuijiZaoxingHu:
-  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n이 카드는 사용 후 다른 |조형술| 카드로 바뀝니다."
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n이 카드는 사용 후 다른 |e:조형술| 카드로\
+    \ 바뀝니다."
   Name: 호형 조형술
 YongyiAttack:
   Name: 귀기광란
@@ -1442,7 +1445,7 @@ FrozenThrone:
   Name: 얼어붙은 왕좌
   Description: 내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.
   FlavorText: Now, we are one!
-  UpgradedDescription: "내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.\n|얼음 조각+|을 {Value1}장 얻습니다."
+  UpgradedDescription: "내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.\n카드를 사용하는 즉시 효과가 한 번 발동됩니다."
 PlayWithWaste:
   Name: 폐품 탐험
   Description: "무작위 일반 |도구 카드| {Value1}장 중 한 장을 선택해 얻습니다.\n해당 카드는 |복사본|으로 표시되며, 단\
@@ -1690,8 +1693,8 @@ MeilingBlock:
 YouxiangMoon:
   Name: 화조풍월
   Description: 내 턴 시작 시 |휘발성|이 있는 |한여름의 꽃|을 한 장 얻습니다.
-  UpgradedDescription: "내 턴 시작 시 |휘발성|이 있는 |한여름의 꽃|을 한 장 얻습니다.\n즉시 |한여름의 꽃|을 {Value1}장\
-    \ 얻습니다."
+  UpgradedDescription: "내 턴 시작 시 |휘발성|이 있는 |한여름의 꽃|을 한 장 얻습니다.\n카드를 사용하는 즉시 효과가 한\
+    \ 번 발동됩니다."
 MorphBird:
   Description: '|그레이즈|를 {Value1} 얻습니다.'
   Name: 연우화탄막변화
@@ -1830,7 +1833,8 @@ BaitianCard:
   Name: 히에다의 전생
 ShuihuoCard:
   Name: 화수옥
-  Description: "피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다."
+  Description: "피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다.\n|보존될 시|: 이 카드의 피해와 |방어|가 이번\
+    \ 전투동안 {Value1}씩 올라갑니다."
 ShanyuCard:
   Name: 산우옥
   Description: "|방어|를 {Block} 얻습니다.\n|보호막|을 {Shield} 얻습니다."
@@ -1846,8 +1850,7 @@ ModuoluoFire:
   Description: <sprite="ManaSprite" name="P">가 사용될 때마다 모든 적에게 피해를 {Value1} 줍니다.
   Name: 예나의 불
 KanakoWalk:
-  Description: "카드를 {Value1}장 뽑습니다. 이때 뽑은 모든 |액운| 및 |상태| 카드를 |소멸|시킵니다.\n턴을 종료시키고,\
-    \ 손패와 사용되지 않은 마나를 |보존|시킵니다."
+  Description: "(WIP)"
   Name: 신이 걸어간 오미와타리
 PoorAttack:
   Name: 어서오세요 극빈의 세계로
@@ -1901,7 +1904,8 @@ DayaojingFriend:
   ExtraDescription2: '{FriendU}|한여름의 꽃|을 {Value1}장 얻습니다.'
   UpgradedExtraDescription2: '{FriendU}|한여름의 꽃+|을 {Value1}장 얻습니다.'
 FruitShake:
-  Description: "피해를 {Damage} 줍니다.\n이번 턴에서 |동료|를 소환했을 시 추가로 모든 적에게 피해를 {Damage} 줍니다."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n이번 턴에서 |동료|를 소환했을 시 {SelfName}의 코스트가 {Mana}이\
+    \ 됩니다."
   Name: 아이스 후르츠
 MaidFriend:
   Name: 양관의 메이드, 카스미
@@ -1962,8 +1966,8 @@ InstantFreeze:
     \ {Mana}.|"
 LarvaDefense:
   Name: 날갯짓 비행
-  Description: "|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.\n|한여름 밤의 신, 라바|를 소환했다면 모든 적에게\
-    \ |허약|과 |취약|을 {Value1} 줍니다."
+  Description: "|방어|를 {Block} 얻습니다.\n모든 적에게 |허약|과 |취약|을 {Value1} 줍니다.\n|한여름 밤의 신,\
+    \ 라바|를 소환했다면 추가로 |중독|을 {Value2} 줍니다."
 FakeCard:
   Name: 꿈자리에 조상님 총기립(임시)
   Description: "|코메이지 코이시|는 아직 집에서 자는 중입니다.\n차후의 업데이트를 기다려 주세요."
@@ -2084,8 +2088,12 @@ Danxiangsi:
   Description: "|화력|을 {Value1} 얻습니다.\n|보존될 시|: 얻는 |화력|이 {Value2} 증가합니다."
 Hademan:
   Name: 하르트만의 요괴소녀
+  Description: "총 코스트가 0인 카드를 사용하면 손에 있는 무작위 카드의 무작위 코스트가 하나 제거됩니다.\n손에 있는 무작위 카드의\
+    \ 무작위 코스트를 하나 제거합니다. {Value1}번 반복합니다."
 MrBulb:
   Name: 전구 선생님
+  Description: "이번 턴동안 세 가지 심리 상태를 모두 겪을 시 코스트가 <sprite=\"ManaSprite\" name=\"0\"\
+    >이 됩니다.\n무작위 적에게 피해를 {Damage} 주고, 카드를 {Value1}장 뽑고, {Mana}를 얻습니다."
 PerfectCrime:
   Name: 완전범죄
   Description: "대상의 |영력|, |그레이즈|, |부적|, |광학미채|, |천의무봉|을 빼앗습니다.\n피해를 {Damage} 줍니다."
@@ -2096,9 +2104,16 @@ DanmakuMBTI:
   ExtraDescription1: 카드 색상 선택
 PoisonTeaParty:
   Name: 수상한 다과회
+  Description: "|중독|을 {Value1} 줍니다.\n대상이 가진 |중독|만큼 |방어|를 얻습니다."
 KisumeAttack:
   Name: 두레박 떨이의 괴
+  Description: 뽑을 카드 더미에 있는 카드의 개수만큼 피해를 줍니다. ({Damage})
+  NonbattleDescription: 뽑을 카드 더미에 있는 카드의 개수만큼 피해를 줍니다.
 ShirenKunchong:
   Name: 카니발리스틱 인섹트
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n적이 |부정적 효과|를 받는다면 {PlayerName}가 |방어|를 {Value1}\
+    \ 얻습니다."
 DoubleJK:
   Name: 세기의 더블 에스퍼
+  Description: "앞으로 매 턴 최대 {Limit}장까지만 사용할 수 있게 됩니다.\n{PlayerName}의 턴 종료 시 해당 턴이 추가\
+    \ 턴이 아닌 경우 가진 방어를 보존하고 추가 턴을 진행합니다."
