@@ -421,7 +421,7 @@ TaijiLiangyiSe:
   Brief: '{PlayerName}のターン開始時、手札の|陰陽玉|が一定数に満たない場合、|陰陽玉|を手札に加える。'
   Name: 太極は両儀を生ず
 ReimuFestivalSe:
-  Name: 終わらぬ宴会
+  Name: 神櫻の舞
   Description: '{PlayerName}のターン開始時、 {Level} 点の|臨時火力|を得る。'
   Brief: '{PlayerName}のターン開始時、|臨時火力|を得る。'
 ReimuShrineSe:
@@ -508,19 +508,19 @@ FrostArmor:
   Brief: "|フロストアーマー|を獲得するたび、同量の|ブロック|を得る。\n{OwnerName}のターン終了時、|ブロック|を得て、数値を 1下げる。\n\
     敵に攻撃される度、数値を1下げる。"
   Name: フロストアーマー
-  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値を 1 下げる。"
+  Description: "{OwnerName}のターン開始時、 {Level} 点の|ブロック|を得て、数値を1下げる。\n攻撃ダメージを受けた時、数値を1下げる。"
 ExtraBlizzard:
   Brief: '{OwnerName}の次ターン開始時、敵全体に|精密|ダメージを与え、|冷気|を付与する。'
   Name: 吹雪到来
   Description: '{OwnerName}の次ターン開始時、敵全体に {Damage} 点の|精密|ダメージを与え、|冷気|を付与する。'
 WhiteWorldSe:
   Name: 純白の世界
-  Description: '|オーバードラフト|カードを使用した後、手札の {Level} 枚のランダムなカードのランダムなマナコストが| 1 点減る。'
-  Brief: '|オーバードラフト|カードを使用した後、一時的に手札のランダムなカードのランダムなマナコストが| 1 点減る。'
+  Description: '{PlayerName}のターン開始時、敵全体に|冷気|を{Level}回与える。'
+  Brief: '{PlayerName}のターン開始時、敵全体に|冷気|を数回与える。'
 MinengZhuruSe:
   Name: 秘能注入
-  Description: "|支援妖精|のパッシブ効果が {Level} 倍になる。\n（手札にあるとき、ターン開始時）"
-  Brief: "|支援妖精|のパッシブ効果が数倍になる。\n（手札にあるとき、ターン開始時）"
+  Description: "召喚済の|パートナー|カードの自動効果は{Level}回追加発動する。"
+  Brief: "召喚済の|パートナー|カードの自動効果は数回追加発動する。"
 PotionJungleSe:
   Description: '{PlayerName}のターン開始時、 {Level} 枚の|不安定なポーション|を捨て札に加える。'
   Name: 蛍光の森
@@ -571,8 +571,8 @@ ExtraDraw:
   Name: 妖精の智慧
 FairyTreeSe:
   Name: 妖精の家
-  Description: "スキルカードが手札に加わるとき、{Mana}を獲得し、カードを {Level} 枚引く。\n各ターンに一回発動可能。"
-  Brief: "スキルカードが手札に加わるとき、{Mana}を獲得し、カードを引く。\n各ターンに一回発動可能。"
+  Description: "プレイによって|パートナー|が召喚されるたび、{Level}ブロックを得る。"
+  Brief: "|パートナー|が召喚されるたび、ブロックを得る。"
 BailianBlackSe:
   Description: '|防御|または|スキル|カードのコストが{Mana}になり、使用時に|廃棄|される。'
   Name: 闇の抱擁
@@ -619,9 +619,9 @@ Cold:
   Brief: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、より多くのライフを失う。"
   Description: "{OwnerName}はターン開始時、 {BaseDamage} 点のライフを失い、|冷気|を取り除く。\n再び|冷気|が付与されたとき、 {StackMultiply} 倍のライフを失う。（{StackDamage}点）。"
 NextTurnColdAll:
-  Name: 寒波到来
-  Description: '{OwnerName}の次ターン開始時、敵全体に|冷気|を付与する。'
-  Brief: '{OwnerName}の次ターン開始時、敵全体に|冷気|を付与する。'
+  Name: 留まる冷気
+  Description: '{OwnerName}の次ターン開始時、敵全体に|冷気|を{Level}回付与する。'
+  Brief: '{OwnerName}の次ターン開始時、敵全体に数回|冷気|を付与する。'
 QiannianShenqiSe:
   Name: ピラミッド型のパズル
   Description: '{PlayerName}は各ターン {Limit} 枚しかドローできない。残り {Count} 枚。'
@@ -665,8 +665,12 @@ ForeverCoolSe:
   Description: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、ランダムな敵に|冷気|を{Level}回与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Level}を得る。"
   Brief: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
 MoreFriendsSe:
-  Description: '{PlayerName}のターン終了時、 {Level} 枚のランダムな|支援妖精|カードを手札に加える。'
-  Brief: '{PlayerName}のターン終了時、ランダムな|支援妖精|カードを手札に加える。'
+  Description: '{PlayerName}のターン開始時、 {Level} 枚のランダムな|パートナー|カードにに|虚無|を与え、手札に加える。
+
+    この効果で得られた|パートナー|カードは召喚された後|虚無|が取り除かれる。'
+  Brief: '{PlayerName}のターン開始時、ランダムな|パートナー|カードにに|虚無|を与え、手札に加える。
+
+    この効果で得られた|パートナー|カードは召喚された後|虚無|が取り除かれる。'
   Name: 社交的な妖精
 SeeFengshuiSe:
   Name: 風水を操る程度の能力
@@ -748,3 +752,19 @@ YonglinUpgradeSe:
   Description: '{PlayerName}のターン開始時、 {Level} 枚のランダムな手札をアップグレードする。'
   Brief: '{PlayerName}のターン開始時、ランダムな手札をアップグレードする。'
   Name: 仙香玉兎
+Starfall:
+  Name: 星落とし
+  Description: '|星見|した後、{Level}ダメージを受ける。'
+  Brief: '|星見|した後、ダメージを受ける。'
+StarFriendSe:
+  Name: 星の数ほど
+  Description: '{SourceCardName}がダメージを与えた時、|ロックオン| {Level} を与える。'
+  Brief: '{SourceCardName}がダメージを与えた時、|ロックオン|を与える。'
+MaidFriendSe:
+  Brief: '{SourceCardName}のダメージを増加。'
+  Description: '{SourceCardName}のダメージを {Level} 増加。'
+  Name: 投げナイフコーチ
+SummerFlowerSe:
+  Description: '{SourceCardName}のダメージを {Level} 増加。'
+  Brief: '{SourceCardName}のダメージを増加。'
+  Name: 盛夏に花を咲かせる

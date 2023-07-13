@@ -59,9 +59,11 @@ ReimuWeiyan:
 ZhujiThreeGod:
   Name: 住吉三神
   Description: "カードを{Value1}枚引く。\n引いた攻撃カード1枚につき|臨時火力|{Value2}を得る。\n引いた防御カード1枚につき|臨時霊力|{Value2}を得る。"
+  FlavorText: 技能と能力を司る神は降ろせないらしい。
 OverJingjie:
   Name: 境界上空
   Description: "{Value1}枚のランダムな攻撃カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
+  FlavorText: 境界上の空に亜空点穴とナビゲーションスターがないよう祈ろう。
 SmallPanding:
   Name: 当たり判定・小
   UpgradedDescription: '|グレイズ|{Value1}を得る。'
@@ -121,11 +123,14 @@ ShensheRichang:
   FlavorText: 今日は休日よぉ。
 TwoBalls:
   Name: 均衡の玉
-  Description: '|陰陽玉|を{Value1}枚手札に加える。'
+  Description: '|陰陽玉|を{Value1}枚手札に加える。
+
+    {PlayerName}に|バリア|がある時、加えた|陰陽玉|のコストを{Mana}減少。'
   FlavorText: 陰と陽は万物の根源である太極から生じた二極である。
 MingzhuAntou:
   Name: 明珠暗投
-  Description: "{Value1}枚のランダムな防御カードから1枚選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
+  Description: "敵全体に{Damage}のダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
+  FlavorText: 玉を投げるたびに確率で「フロアやり直し」を発動させることはある。
 HuanxiangBlock:
   Name: 幻想辺境
   Description: カードを|廃棄|するたび、{Value1}ブロックを得る。
@@ -153,13 +158,15 @@ FreeFly:
   FlavorText: 外界では稀有極まりない飛行能力も、幻想郷では極ありふれた物でしかない。
 YinyangXueyin:
   Name: 陰陽血印
-  Description: "ライフを{Value2}失う。\n|陰陽玉|をプレイするたび、|臨時火力|{Value1}と|臨時霊力|{Value1}を得る。"
+  Description: "ライフを{Value2}失う。\n|陰陽玉|を1枚手札に加える。\n|陰陽玉|をプレイするたび、|臨時火力|{Value1}と|臨時霊力|{Value1}を得る。"
   FlavorText: 材料が賄えないなら、血を使うしかない。
 EvilTuiZhi:
   Name: 悪霊退散
   Description: 次の{Value1}つの攻撃カードのダメージを2倍にする。
 TaijiLiangyi:
-  Description: '{PlayerName}のターン開始時、手札中に|陰陽玉|を持っていない場合、|陰陽玉|を1枚手札に加える。'
+  Description: '|陰陽玉|を1枚手札に加える。
+
+    {PlayerName}のターン開始時、手札中に|陰陽玉|を持っていない場合、|陰陽玉|を1枚手札に加える。'
   Name: 太極から両儀に
   FlavorText: この技は霊夢が"無限のコーラがあれば何ができる"という本から着想を得て練り出した物である。
 Wunvyu:
@@ -324,6 +331,7 @@ ReimuFreeAttack:
 SuikaOut:
   Name: 厄祓い
   Description: "手札を1枚|廃棄|する。\n|庇護|{Value1}を得る。"
+  FlavorText: 999火力の敵にあまり通用しないらしい。
 ReimuDrink:
   Name: 御神酒
   Description: "ライフを{Value1}回復する。\n|ちょい飲み|を{Value2}枚手札に加える。"
@@ -805,7 +813,7 @@ CirnoDraw:
 FrozenThrone:
   Name: 凍てつく玉座
   Description: '{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。'
-  UpgradedDescription: "{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。\n|氷晶+|を{Value1}枚手札に加える。"
+  UpgradedDescription: "{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。\nこのカードがプレイされる時、このカードのターン開始効果を1回発動する。"
 FakeMoon:
   Name: 偽物の月
   Description: "手札を1枚選び、そのカードの|臨時コスト|{Mana}かつ|廃棄|と|虚無|を持つコピーを{Value1}枚手札に加える。\n選んだカードが|能力|カードまたは|廃棄|を持つ場合、選んだカードにも|複製|を与える。\n\
@@ -1053,7 +1061,7 @@ YongyiAttack:
   Description: "全ての敵に{Damage}ダメージを{Value1}回与える。\n{PlayerName}が|臨時火力|を得ている場合、追加で1回ダメージを与える。"
 YouxiangMoon:
   Name: 花鳥風月
-  UpgradedDescription: "{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。\n|真夏の花|を{Value1}枚手札に加える。"
+  UpgradedDescription: "{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。\nこのカードがプレイされる時、このカードのターン開始効果を1回発動する。"
   Description: '{PlayerName}のターン開始時に、|虚無|を与えた|真夏の花|を手札に加える。'
 HuaBlock:
   Description: "{Block}|ブロック|を得る\n|臨時火力|{Value1}を得る"
@@ -1293,7 +1301,7 @@ CirnoConsider:
   Description: '|チョイス|：{Block}|ブロック|を得る、もしくはカードを {Value1} 枚引く。'
 CoolBreeze:
   Name: 夏の爽風
-  Description: "{Block} |ブロック|を得る。\nいずれかの敵に|冷気|が付与されている場合、手札のカードを{Value1}枚|アップグレード|する。スキルカード優先。"
+  Description: "{Block} |ブロック|を得る。\nいずれかの敵に|冷気|が付与されている場合、手札のカードを{Value1}枚|アップグレード|する。"
 CirnoConsiderDefense:
   Name: 審念熟慮：静寂
   Description: '|ブロック|を得る。'
@@ -1374,7 +1382,7 @@ YonglinUpgrade:
   Description: "ライフを{Value2}回復する。\nターン開始時に、ランダムな手札のカードを{Value1}枚|アップグレード|する。\n"
 ShuihuoCard:
   Name: 水火玉
-  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。"
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\nこのカードが|保留|されるたびに、戦闘終了までダメージと|ブロック|を{Value1}増加。"
 MeilingAbility:
   Name: 烈虹真拳
   Description: "{PlayerName}は|火力|や|臨時火力|を本来の倍得る。\n|火力|{Value1}を得る。"
@@ -1446,12 +1454,12 @@ HatateDiscard:
   Name: 捏造報道
 GuijiZaoxingYuan:
   Name: 真円造形術
-  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\nこの戦闘の間、{SelfName}を他のランダムな|e:造形術|に変化させる。"
 Shadow:
   Name: 暗闇
 GuijiZaoxingFang:
   Name: 方形造形術
-  Description: "{Damage}ダメージを{Value1}回与える。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
+  Description: "{Damage}ダメージを{Value1}回与える。\nこの戦闘の間、{SelfName}を他のランダムな|e:造形術|に変化させる。"
 ShannvAttack:
   Description: "{Damage}ダメージを与える。\n|毒|{Value1}を与える。"
   Name: フィルドミアズマ
@@ -1489,13 +1497,14 @@ DiamondBlizzardDefense:
   Description: ダメージを与え、|ブロック|を得る。
 FruitShake:
   Name: フルーツクラッシュアイス
-  Description: "{Damage} ダメージを与える。\nこのターン中に|パートナー|を召喚している場合、追加で敵全体に {Damage} ダメージ。"
+  Description: "{Damage} ダメージを与える。\nこのターン中に|パートナー|を召喚している場合、{SelfName}のコストを{Mana}にする。"
 DiamondBlizzardCold:
   Name: ダイヤプリズム：冷気
   Description: ダメージを与え、|冷気|を付与する。
 FairyTeam:
   Name: 妖精大戦争
-  Description: "手札の|パートナー|カードを任意の枚数|廃棄|し、それらのマナコストに等しいマナを得る。\n|廃棄|した枚数と同じ回数、ランダムな敵に{Damage}ダメージを与える。"
+  Description: "手札の|パートナー|カードを任意の枚数|廃棄|し、それらのマナコストに等しいマナを得る。\nランダムな敵に{Damage}ダメージを与える。\n\
+    |廃棄|した枚数分だけダメージの回数を追加する。"
 FairyTree:
   Name: 妖精の家
   Description: '|パートナー|を召喚する度、|ブロック|{Value1}を得る。'
@@ -1653,7 +1662,7 @@ QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
   Name: 死霊術
 LarvaDefense:
-  Description: "{Block}|ブロック|と{Shield}|バリア|を得る。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。"
+  Description: "{Block}|ブロック|を得る。\n敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|毒|{Value2}を与える。"
   Name: 羽ばたく翼
 CirnoFreeze:
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\nカードをプレイした時、手札の{SelfName}を1枚|廃棄|する。"
@@ -1707,8 +1716,6 @@ LongArm:
 KongMana:
   Name: 炉心融解
   Description: "手札を1枚|廃棄|して、そのコストのマナを得る。\n|幻虹|を1枚手札に加える。"
-KaguyaTreeSee:
-  Description: "ダメージを受ける度、このカードのコストが{Mana}下がる。\n|廃棄|を持つ全ての|廃棄|されたカードを山札に戻す。\n全てのカードは|廃棄|を失う。"
 SanaeMiracle:
   Name: 白昼の客星
   Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n山札が0枚の場合、このカードのコストは{Mana}。"
@@ -1730,7 +1737,7 @@ Panzi:
   Description: "{Damage}ダメージを与える。\n|手札に加わった時|：{SelfName}のコピーを１枚手札に加える。"
 GuijiZaoxingHu:
   Name: 線形造形術
-  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこの戦闘の間、{SelfName}を他のランダムな|造形術|に変化させる。"
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこの戦闘の間、{SelfName}を他のランダムな|e:造形術|に変化させる。"
 SuikaBigball:
   Name: 元鬼玉
   NonbattleDescription: "{Damage}ダメージを与える。他の敵にその半分のダメージを与える。\n|火力| {Value1}を失う。"
@@ -1769,7 +1776,7 @@ FlanBlack:
 HistoryCard:
   Description: (WIP)
 DoubleActiveTrigger:
-  Name: (WIP)
+  Name: ダブル起動
   Description: (WIP)
 SatoriAttack:
   Description: "敵全体に{Damage}ダメージを与える。\n|直感|：敵の行動予定は攻撃の場合、{Block}|ブロック|を得る。"
@@ -1779,18 +1786,18 @@ ReadBook:
   ExtraDescription1: "{Block}|ブロック|を得る。\n|d:初見：{Value1}枚のランダムな青か白、またはその2色であるカードから1枚を選び、手札に加える。|"
   Name: 本読み
 TriggerAllPassive:
-  Name: (WIP)
+  Name: 全体自動発動
   Description: (WIP)
 GainDollSlot:
   Description: (WIP)
-  Name: (WIP)
+  Name: 人形維持上限を増加
 OtherBlock:
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。（{PlayerName}専用でないカードを優先的に引く。）"
 ShuimuBlock:
   Description: "{Block}|ブロック|を得る。\n{SelfName}のブロック値を永久に{Value1}増加させる。"
   Name: 石積み
 KanakoWalk:
-  Description: "カードを{Value1}枚引き、引いた|状態異常|と|厄災|を全て|廃棄|する。\n手札と未使用のマナを全て|保留|しターンを終了する。"
+  Description: "(WIP)"
 OtherSkill:
   Description: "カードを{Value1}枚引く。\n{GainMana}を得る。\n{PlayerName}以外のキャラクター専用カードを使用する度、{SelfName}によって得るマナを<sprite=\"\
     ManaSprite\" name=\"C\">増やす。"
@@ -1828,3 +1835,6 @@ MoonTipsAttack:
 DoubleDajiejie:
   Name: 二重結界
   Description: "{Block}|ブロック|を得る。\n{Shield}|バリア|を得る。"
+MojingShanjie:
+  Name: 魔浄閃結
+  Description: "{Value1}枚のランダムな防御カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
