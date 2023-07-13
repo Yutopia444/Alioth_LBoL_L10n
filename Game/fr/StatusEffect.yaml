@@ -160,7 +160,8 @@ NoAttackDamageThisTurn:
   Description: Ne peut pas infliger de dégâts d'attaque ce tour-ci.
   Brief: Ne peut pas infliger de dégâts d'attaque ce tour-ci.
 DeathVulnerable:
-  Description: Lorsque {OwnerName} est vaincu, {PlayerName} gagne {Level} |Vulnérable|.
+  Description: Lorsque {OwnerName} est vaincu, {PlayerName} gagne {Level} |Vulnérable{Level:plural
+    one='' other='s'}|.
   Name: Maladie
 LoveGirlDamageIncrease:
   Description: Les sentiments de {OwnerName} sont récompensés. Elle subit {Rate} %
@@ -859,14 +860,18 @@ NoBaseManaThisTurn:
   Brief: Ne gagne pas de mana de base au début du tour.
 Benwo:
   Name: Ego
-  Description: Infligez et recevez des dégâts d'attaque doublés lorsque vous êtes
-    dans l'état d'|Ego|.
-  Brief: Infligez et recevez des dégâts d'attaque doublés lorsque vous êtes dans l'état
-    d'|Ego|.
+  Description: "|Ego| est un |état d'esprit|, et un seul |état d'esprit| peut exister\
+    \ à la fois.\nInfligez et recevez des dégâts d'attaque doublés lorsque vous êtes\
+    \ dans l'état d'|Ego|."
+  Brief: "|Ego| est un |état d'esprit|, et un seul |état d'esprit| peut exister à\
+    \ la fois.\nInfligez et recevez des dégâts d'attaque doublés lorsque vous êtes\
+    \ dans l'état d'|Ego|."
 Chaowo:
   Name: Super-ego
-  Description: Gagnez {Mana} en quittant l'état de |Super-ego|.
-  Brief: Gagnez {Mana} en quittant l'état de |Super-ego|.
+  Description: "Le |Super-ego| est un |état d'esprit|, et un seul |état d'esprit|\
+    \ peut exister à la fois.\nGagnez {Mana} en quittant l'état de |Super-ego|."
+  Brief: "Le |Super-ego| est un |état d'esprit|, et un seul |état d'esprit| peut exister\
+    \ à la fois.\nGagnez {Mana} en quittant l'état de |Super-ego|."
 FoxCharm:
   Name: Charme de Renarde
   Description: "Seules {Limit} cartes peuvent être jouées en un tour, il reste {Count}\
@@ -1077,3 +1082,36 @@ ControlNegative:
     \ améliore l'effet de certaines marionnettes."
   Brief: "Perdez des points de contrôle.\nLa manipulation améliore l'effet de certaines\
     \ marionnettes."
+Dunwu:
+  Name: Épiphanie
+  Description: "|Épiphanie| est une sorte d'|état d'esprit|, et un seul type d'|état\
+    \ d'esprit| peut exister à la fois.\nNe perd pas le mana et les cartes de sa main\
+    \ à la fin du tour.\nQuittez |Épiphanie| après avoir joué une carte dont le coût\
+    \ total est supérieur à 0."
+  Brief: "|Épiphanie| est une sorte d'|état d'esprit|, et un seul type d'|état d'esprit|\
+    \ peut exister à la fois.\nNe perd pas le mana et les cartes de sa main à la fin\
+    \ du tour.\nQuittez |Épiphanie| après avoir joué une carte dont le coût total\
+    \ est supérieur à 0."
+Starfall:
+  Description: Après une |Sonde|, subissez {Level} dégât{Level:plural one='' other='s'].
+  Brief: Après une |Sonde|, subissez des dégâts.
+  Name: Chute d'Étoile
+DanmakuMBTIse:
+  Name: Barrage MBTI
+  Description: '|Idée| ne contiendra que des cartes aléatoires de couleurs {Mana1}
+    et {Mana2}.'
+  Brief: '|Idée| ne contiendra que des cartes aléatoires de couleurs spécifiées.'
+ShirenKunchongSe:
+  Name: Insecte Cannibale
+  Brief: '{PlayerName} gagne des |Boucliers| lorsque {OwnerName} reçoit un |Malus|.'
+  Description: "{PlayerName} gagne {Level} |Bouclier{Level:plural one='' other='s'}|\
+    \ lorsque {OwnerName} reçoit un |Malus|."
+DoubleJKSe:
+  Description: "{PlayerName} ne peut jouer que {Limit} carte{Limit:plural one='' other='s'}\
+    \ par tour. ({Count} carte{Count:plural one=' restante' other='s restantes'})\n\
+    Lorsque {PlayerName} termine son tour, si ce tour n'est pas un tour supplémentaire,\
+    \ gardez le blocage et effectuez un tour supplémentaire."
+  Name: Double Esper du Siècle
+  Brief: "{PlayerName} ne peut jouer qu'un certain nombre de cartes.\nLorsque {PlayerName}\
+    \ termine son tour, si ce tour n'est pas un tour supplémentaire, gardez le blocage\
+    \ et effectuez un tour supplémentaire."
