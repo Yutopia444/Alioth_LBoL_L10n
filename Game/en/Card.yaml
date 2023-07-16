@@ -103,8 +103,9 @@ YinyangBaoyu:
 
   Name: Orb of Duality
 TwoBalls:
-  Description: Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang Orbs|'}
-    to the hand.
+  Description: "Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang Orbs|'}\
+    \ to the hand.\nIf {PlayerName} has |Barrier|, the added {Value1:plural one='card\
+    \ costs' other='cards cost'} {Mana} less."
   Name: Balanced Orbs
 ShensheRichang:
   Description: |-
@@ -118,8 +119,9 @@ Changzhizhen:
 
   Name: Permanent Border
 MingzhuAntou:
-  Description: Choose 1 of {Value1} random defense cards to add to the hand. It |temporarily
-    costs| {Mana}.
+  Description: "Deal {Damage} damage to each enemy.\nChoose 1 of {Value1} |Rainbow\
+    \ Jade Yin-Yang Orbs| to add to the hand.\nFor each |Yin-Yang Orb| on the |battlefield|,\
+    \ {SelfName} costs {Mana} less to play."
 
   Name: Secret Border
 HuanxiangBlock:
@@ -197,6 +199,7 @@ QinggeManwu:
 YinyangXueyin:
   Description: |-
     Lose {Value2} life.
+    Add a |Yin-Yang Orb| to the hand.
     Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
 
   Name: Yin-Yang Rune
@@ -242,8 +245,10 @@ MomentPower:
 
   Name: Instant Dimensional Rift
 TaijiLiangyi:
-  Description: 'At the start of {PlayerName}''s turn, if there are no |Yin-Yang Orbs|
-    in hand, add a |Yin-Yang Orb| to the hand.'
+  Description: 'Add a |Yin-Yang Orb| to the hand.
+
+    At the start of {PlayerName}''s turn, if there are no |Yin-Yang Orbs| in hand,
+    add a |Yin-Yang Orb| to the hand.'
 
   Name: The Birth of Yin-Yang
 Wunvyu:
@@ -1699,7 +1704,7 @@ SkyWater:
   Name: Heavenly Water Miracle
 CoolBreeze:
   Description: "Gain {Block} |Block|.\nIf any enemy has |Cold|, |Upgrade| {Value1}\
-    \ random card{Value1:plural one='' other='s'} in the hand. Prioritizes skill cards."
+    \ random card{Value1:plural one='' other='s'} in the hand."
   Name: Refreshing Breeze
 ReimuFestival:
   Name: Dance of Sacred Sakura
@@ -1775,7 +1780,7 @@ FangxiangAttack:
   Description: "If the target is |Poisoned|, deal {Damage} damage {Value2} time{Value2:plural\
     \ one='' other='s'}.\nOtherwise, apply {Value1} |Poison|."
 YinyangQueen:
-  Name: Queen of Yin-Yang Orb
+  Name: Misumaru, Skilled Crafter
   Description: '{FriendP}Gain {Value2} |Block| and |Barrier|.'
   ExtraDescription1: "{FriendA}Add {Value1} random |Rainbow Jade Yin-Yang Orb{Value1:plural\
     \ one='' other='s'}| to the hand."
@@ -1783,7 +1788,8 @@ YinyangQueen:
     are doubled. Immediately add a |Rainbow Jade Yin-Yang Orb|.'
 ShuihuoCard:
   Name: Orb of Water and Fire
-  Description: "Deal {Damage} damage.\nGain {Block} |Block|."
+  Description: "Deal {Damage} damage.\nGain {Block} |Block|.\n|When Retained|: Increase\
+    \ {SelfName}'s damage and |Block| by {Value1} until the end of combat."
 FengleiCard:
   Name: Orb of Wind and Thunder
   Description: Deal {Damage} damage to each enemy {Value1} time{Value1:plural one=''
@@ -2050,8 +2056,8 @@ CirnoEcho:
 FairyTeam:
   Name: Great Fairy War
   Description: "Choose any number of |Teammates| in the hand and |Exile| them. Gain\
-    \ mana equal to their cost.\nFor each card |Exiled| this way, deal {Damage} damage\
-    \ to a random enemy."
+    \ mana equal to their cost.\nDeal {Damage} damage to a random enemy.\nFor each\
+    \ card |Exiled| this way, deal that damage an additional time."
 IceSaber:
   Name: Ice Forged Blade
   Description: "Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.\n\
@@ -2070,25 +2076,27 @@ SplitPotion:
     \ |Unstable Potion{Value1:plural one='' other='s'}| to the draw pile."
 ColdBreath:
   Name: Diamond Breath
-  Description: "Deal {Damage} damage to a random enemy. Prioritizes enemies with |Cold|.\n\
-    Gain {Mana}.\nDraw {Value1} card{Value1:plural one='' other='s'}."
+  Description: "Deal {Damage} damage to a random enemy. \nPrioritizes enemies with\
+    \ |Cold|, in which case, gain {Mana}.\nDraw {Value1} card{Value1:plural one=''\
+    \ other='s'}."
   FlavorText: You can use this move to win this year's The Queen of Fighters.
 HualiIce:
   Name: Stunning Summer Ice
-  Description: "Deal {Damage} damage.\nApply |Cold| to each enemy.\nIf {Value1} card{Value1:plural\
+  Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n\
+    If {Value1} card{Value1:plural one=' has' other='s have'} been played this turn,\
+    \ {SelfName} costs {Mana} to play.\n({Countdown:plural one='% card' other='% cards'}\
+    \ left.)\n"
+  UpgradedDescription: "Deal {Damage} damage to each enemy.\nApply |Cold| to each\
+    \ enemy {Value2} time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural\
     \ one=' has' other='s have'} been played this turn, {SelfName} costs {Mana} to\
-    \ play.\n({Countdown:plural one='% card' other='% cards'} left.)\n"
-  UpgradedDescription: "Deal {Damage} damage.\nApply |Cold| to each enemy {Value2}\
-    \ time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural one='\
-    \ has' other='s have'} been played this turn, {SelfName} costs {Mana} to play.\n\
-    ({Countdown:plural one='% card' other='% cards'} left.)"
-  UpgradedNonbattleDescription: ".Deal {Damage} damage.\nApply |Cold| to each enemy\
-    \ {Value2} time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural\
+    \ play.\n({Countdown:plural one='% card' other='% cards'} left.)"
+  UpgradedNonbattleDescription: "Deal {Damage} damage to each enemy.\nApply |Cold|\
+    \ to each enemy {Value2} time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural\
     \ one=' has' other='s have'} been played this turn, {SelfName} costs {Mana} to\
     \ play."
-  NonbattleDescription: "Deal {Damage} damage,\nApply |Cold| to each enemy.\nIf {Value1}\
-    \ card{Value1:plural one=' has' other='s have'} been played this turn, {SelfName}\
-    \ costs {Mana} to play.\n"
+  NonbattleDescription: "Deal {Damage} damage to each enemy.\nApply |Cold| to each\
+    \ enemy.\nIf {Value1} card{Value1:plural one=' has' other='s have'} been played\
+    \ this turn, {SelfName} costs {Mana} to play.\n"
 FairyTrick:
   Name: Fairy Mischief
   Description: "Lose {Value1} life.\nSummon 3 |e:Fairies of Light|. Add one to the\
@@ -2100,8 +2108,8 @@ YouxiangMoon:
   Description: At the start of{PlayerName}'s turn, add a |Midsummer Flowers| to the
     hand. It has |Ethereal|.
   UpgradedDescription: "At the start of{PlayerName}'s turn, add a |Midsummer Flowers|\
-    \ to the hand with |Ethereal|.\nAdd {Value1} |Midsummer Flower{Value1:plural one=''\
-    \ other='s'}| to the hand. {Value1:plural one='It has' other='They have'} |Ethereal|."
+    \ to the hand. It has |Ethereal|.\nAdd a |Midsummer Flowers| to the hand. It has\
+    \ |Ethereal|."
 CirnoFire:
   Name: Flammable Ice
   Description: "Gain {Value1} |Firepower|.\nFor each enemy with |Cold|, {SelfName}\
@@ -2111,7 +2119,7 @@ FrozenThrone:
   Description: At the start of {PlayerName}'s turn, add a |Glacier+| to the hand.
   FlavorText: Now, we are one!
   UpgradedDescription: "At the start of {PlayerName}'s turn, add a |Glacier+| to the\
-    \ hand.\nImmediately add {Value1} |Glacier+| to the hand."
+    \ hand.\nImmediately add a |Glacier+| to the hand."
 DiamondBlizzard:
   Name: Diamond Pillar
   Description: "Deal {Damage} damage to each enemy.\n|Choose|: Apply |Cold| to each\
@@ -2244,8 +2252,8 @@ MaidFriend:
   ExtraDescription1: "{FriendA}Deal damage immediately. Add {Value2} |Throwing Kni{Value2:plural\
     \ one='fe' other='ves'}| to the hand."
 FruitShake:
-  Description: "Deal {Damage} damage.\nIf a |Teammate| was summoned this turn, deal\
-    \ {Damage} damage to all enemies."
+  Description: "Deal {Damage} damage to each enemy.\nIf a |Teammate| was summoned\
+    \ this turn, {SelfName} costs {Mana} to play."
   Name: Yummy Fruit Freezies
 LeidiFriend:
   ExtraDescription2: '{FriendU}Deal {Damage} damage and apply |Cold| to each enemy.'
@@ -2270,9 +2278,9 @@ InstantFreeze:
     \ take an extra turn.\n|d:Time Limit {Mana}. |"
   Name: Instant Freeze
 LarvaDefense:
-  Description: "Gain {Block} |Block|.\nGain {Shield} |Barrier|.\nIf there's a summoned\
-    \ |Larva, God of Evernight| in the hand, apply {Value1} |Weak| and |Vunerable|\
-    \ to each enemy."
+  Description: "Gain {Block} |Block|.\nApply {Value1} |Weak| and |Vunerable| to each\
+    \ enemy.\nIf there's a summoned |Larva, God of Evernight| in the hand, apply {Value2}\
+    \ |Poison| to each enemy."
   Name: Wingbeats Flight
 ChooseFriend:
   Description: "Choose {Value2} of {Value1} random |Teammate| cards to add to the\
@@ -2358,3 +2366,7 @@ OtherSkill:
   Description: "Draw {Value1} card {Value1:plural one='' other='s'}. \nGain {GainMana}\n\
     Whenever a card unique to a character other than {PlayerName} is played, {SelfName}\
     \ gives an additional <sprite=\"ManaSprite\" name=\"C\">."
+MojingShanjie:
+  Description: Choose 1 of {Value1} random defense cards to add to the hand. It |temporarily
+    costs| {Mana}.
+  Name: Exorcising Border
