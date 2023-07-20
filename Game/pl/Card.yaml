@@ -129,12 +129,15 @@ ShensheRichang:
   FlavorText: Dzisiaj sobie odpocznę.
 TwoBalls:
   Name: Kule Balansu
-  Description: Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'
-    many='% |Kul Yin-Yang|'} do ręki.
+  Description: "Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'\
+    \ many='% |Kul Yin-Yang|'} do ręki.\nJeżeli {PlayerName} ma |Barierę|, dodan{Value1:plural\
+    \ one='a karta kosztuje' other='e karty kosztują'} o {Mana} mniej."
 MingzhuAntou:
   Name: Sekretna Granica
-  Description: Wybierz jedną z {Value1} losowych kart obrony aby dodać do ręki. Ona
-    |tymczasowo kosztuje| {Mana}.
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nWybierz 1 z {Value1} |Kul Yin-Yang Tęczowego Jadeitu| aby\
+    \ dodać do ręki.\nZa każdą |Kulę Yin-Yang| na |Polu Bitwy|, {SelfName} kosztuje\
+    \ o {Mana} mniej."
 HuanxiangBlock:
   Name: Na Skraju Fantazji
   Description: Gdy karta zostanie |Wygnana|, zyskaj {Value1} |Bloku|.
@@ -168,8 +171,8 @@ FreeFly:
 YinyangXueyin:
   Name: Runa Yin-Yang
   Description: "Strać {Value2:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\nGdy {PlayerName} zagra |Kulą Yin-Yang|, zyskaj {Value1} |Tymczasowej\
-    \ Mocy| i |Tymczasowego Uduchowienia|."
+    \ życia.\nDodaj |Kulę Yin-Yang| do ręki.\nGdy {PlayerName} zagra |Kulę Yin-Yang|,\
+    \ zyskaj {Value1} |Tymczasowej Mocy| i |Tymczasowego Uduchowienia|."
 EvilTuiZhi:
   Name: Eksterminacja Zła
   Description: "{Value1:plural one='Następna karta' few='Następne % karty' many='Następne\
@@ -177,8 +180,8 @@ EvilTuiZhi:
     \ w tej turze."
 TaijiLiangyi:
   Name: Narodziny Kuli Yin-Yang
-  Description: Na początku tury {PlayerName:g}, jeżeli nie ma w dłoni |Kul Yin-Yang|,
-    dodaj |Kulę Yin-Yang| do ręki.
+  Description: "Dodaj |Kulę Yin-Yang| do ręki.\nNa początku tury {PlayerName:g}, jeżeli\
+    \ nie ma w dłoni |Kul Yin-Yang|, dodaj |Kulę Yin-Yang| do ręki."
 Wunvyu:
   Name: Najgroźniejsza Kula Hakurei
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -201,8 +204,9 @@ HuanxiangTouying:
     \ i 5."
 OutInGap:
   Name: Łamanie Granic
-  Description: Wybierz jedną z {Value1} losowych kart |p:dowolnego koloru| aby dodać
-    do ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
+  Description: "Wybierz jedną z {Value1} |p:całkowicie losowych| kart aby dodać do\
+    \ ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.\n\
+    Te |e:karty| ignorują ograniczenia całkowitej many, koloru many oraz postaci."
 BoliDajiejie:
   Name: Wielka Bariera Hakurei
   Description: Gdy {PlayerName} ma |Blok|, zamień go na |Barierę|.
@@ -796,6 +800,9 @@ BackOfKnife:
   Description: "Usuń wszystkie |Wygnane Sztylety do Rzucania| z walki.\nWtem, dodaj\
     \ |Ekspres Ostrych Sztyletów| do ręki. Zadaje o {Value1} obrażeń więcej za każdą\
     \ usuniętą w ten sposób kartę.\n(Zada o {IncreasedDamage} więcej obrażeń.)"
+  NonbattleDescription: "Dodaj |Ekspres Ostrych Noży| do ręki.\nWtem, usuń wszystkie\
+    \ |Wygnane Sztylety do Rzucania| z walki. Zwiększ obrażenia o {Value1} za każdą\
+    \ usuniętą w ten sposób kartę."
 GroupOfKnife:
   Name: Ekspres Ostrych Sztyletów
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -898,7 +905,7 @@ CirnoAttackG:
   Name: Mroźny Liść Brzytwy
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 CirnoBlockU:
-  Name: Lodowa Tarcza
+  Name: Kryształowa Tarcza
   Description: Zyskaj {Block} |Bloku|.
 IceLaser:
   Name: Zamrażający Strzał
@@ -1675,7 +1682,7 @@ LilyChun:
 CoolBreeze:
   Description: "Zyskaj {Block} |Bloku|.\nJeżeli jakikolwiek wróg ma |Chłód|, |Ulepsz|\
     \ {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych kart'}\
-    \ w dłoni. Priorytetuje karty umiejętności."
+    \ w dłoni."
   Name: Orzeźwiający Wiaterek
 SkyWater:
   Name: Niebiański Cud Wodny
@@ -1691,7 +1698,7 @@ JingyeGraze:
     Zyskaj {Value2} |Tymczasowej Mocy| za każdy punkt |Uniku| posiadanych przez {PlayerName:g}."
   Name: Spadające Liście Szaleństwa
 ReimuFestival:
-  Name: Niekończące się Bankiety
+  Name: Taniec Świętej Sakury
   Description: Na początku tury {PlayerName:g} zyskaj {Value1} |Tymczasowej Mocy|.
 ReimuDrink:
   UpgradedDescription: "Ulecz {Value1:plural one='% punkt' few='% punkty' many='%\
@@ -1759,6 +1766,7 @@ ColdPotion:
 MarisaHoldCard:
   Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ w dłoni. |Przetrzymaj| je na tę turę.\nZyskaj {Block} |Bloku|."
+  Name: Problemy z Rozstaniem
 SplitPotion:
   Name: Podwójne Chemikalia
   Description: "|Niestabilne Mikstury| zadają obrażenia dodatkowy raz.\nDodaj {Value1:plural\
@@ -1833,12 +1841,11 @@ IceLance:
     Jeżeli cel ma |Chłód|, zadaj podwójne obrażenia."
 FrostGarden:
   Name: Mroźny Ogród
-  Description: "Wszyscy wrogowie leczą {Value1:plural one='% punkt' few='% punkty'\
-    \ many='% punktów'} życia.\nNałóż |Chłód| na wszystkich wrogów."
-  UpgradedDescription: "Wszyscy wrogowie leczą {Value1:plural one='% punkt' few='%\
-    \ punkty' many='% punktów'} życia.\nNałóż |Chłód| na wszystkich wrogów.\nDodaj\
-    \ {Value2:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do\
-    \ ręki."
+  Description: "Nałóż |Chłód| na wszystkich wrogów.\nJeżeli w dłoni jest Przywołany\
+    \ |Wspólnik|, {SelfName} kosztuje {Mana}."
+  UpgradedDescription: "Nałóż |Chłód| na wszystkich wrogów.\nPowtórz ten efekt na\
+    \ początku następnej tury {PlayerName:g}.\nDodaj {Value2:plural one='% |Lodowiec|'\
+    \ few='% |Lodowce|' many='% |Lodowców|'} do ręki."
 CallFriends:
   Name: Wezwać Przyjaciół
   Description: Dodaj {Value1:plural one='% losową pospolitą kartę' few='% losowe pospolite
@@ -1855,8 +1862,9 @@ ZeroK:
     \ o {Value1}.\nNałóż |Chłód| na wszystkich wrogów."
 ColdBreath:
   Name: Diamentowy Oddech
-  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
-    losowemu wrogowi z |Chłodem|.
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ losowemu wrogowi.\nPriorytetyzuje wrogów z |Chłodem|, w którym wypadku zyskaj\
+    \ {Mana}."
   FlavorText: Możesz tego użycz aby wygrać tegoroczny The Queen of Fighters.
 IceBarrier:
   Name: Bariera Lodu
@@ -1872,8 +1880,8 @@ Tether:
     \ zyskaj o {Value1} więcej |Bloku|. (Łącznie {Special} |Bloku|)"
 CirnoInForest:
   Name: Na Widoku
-  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {GainMana}.\n|Przyrost|: Zyskaj dodatkową\
-    \ {Mana}."
+  Description: "Zyskaj {Block} |Bloku|.\n|Naddobór| {Value1}."
+  UpgradedDescription: Zyskaj {Block} |Bloku|.
 IceMatrix:
   Name: Zamrożona Macierz
   Description: "Gdy {PlayerName} nakłada |Chłód| na wroga, zyaskaj {Value1} |Lodowego\
@@ -1893,10 +1901,9 @@ FairyOnIce:
     \ few='% |Uniki|' many='% |Uników|'}. "
 CirnoFestival:
   Name: Infiltracja Bankietu
-  Description: "|Wybierz|: Dodaj {Value1:plural one='% |Plusk| few='% |Pluski| many='%\
-    \ |Plusków|'} do ręki lub dodaj {Value2:plural one='% losową pospolitą kartę'\
-    \ few='% losowe pospolite karty' many='% losowych pospolitych kart'} |Wsparcia\
-    \ Wróżek| do ręki."
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
+    {Value1:plural one='% losowa karta' few='% losowe karty' many='% losowych kart'}\
+    \ w dłoni kosztuje o 1 losową manę mniej."
 DeepFreeze:
   Name: Zamrożenie
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -2032,10 +2039,15 @@ ShanyuCard:
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Shield} |Bariery|."
   Name: Kula Gór i Deszczu
 YinyangQueen:
-  Name: Królowa Kul Yin-Yang
-  Description: Dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego Smoka|'
-    few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul Yin-Yang
-    Tęczowego Smoka|'} do ręki.
+  Name: Misumaru, Utalentowana Rzemieślniczka
+  Description: '{FriendP}Zyskaj {Value2} |Bloku| oraz |Bariery|.'
+  ExtraDescription2: "{FriendU}Do końca walki efekty |Kul Yin-Yang| są podwojone.\
+    \ Natychmiastowo dodaj {Value1:plural one='% |Kulę Yin-Yang Tęczowego Smoka|'\
+    \ few='% |Kule Yin-Yang Tęczowego Smoka|' many='% |Kul Yin-Yang Tęczowego Smoka|'}\
+    \ do ręki."
+  ExtraDescription1: "{FriendA}Dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego\
+    \ Smoka|' few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul\
+    \ Yin-Yang Tęczowego Smoka|'} do ręki."
 SanaeRice:
   Name: Deszcz Ryżu Rekordowego Zbioru
   Description: "Usuń wszystkie debuffy z {PlayerName:g}.\nUlecz {0:plural one='% punkt'\
@@ -2059,7 +2071,8 @@ SanaeMiracle:
 ShuihuoCard:
   Name: Kula Ognia i Wody
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Zyskaj {Block} |Bloku|."
+    Zyskaj {Block} |Bloku|.\n|Gdy Przetrzymana|: Zwiększ obrażenia oraz |Blok| {SelfName:g}\
+    \ o {Value1} na czas walki."
 MeilingRain:
   Name: Bujna Kolorowa Ulewa
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -2130,7 +2143,8 @@ ColdSnap:
 SummerIce:
   Name: Letni Lód
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\n|Naddobór| {Value2}."
+    \ losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\nZyskaj {Mana}\
+    \ na początku następnej tury."
 CirnoConsider:
   Name: Ostrożna Rozwaga
   Description: "|Wybierz|: Zyskaj {Block} |Bloku| lub dobierz {Value1:plural one='%\
@@ -2183,3 +2197,25 @@ FairyAllOut:
     \ wszystkim wrogom.\n|Wygnaj| wszystkie karty |Wsparcia Wróżek| w dłoni."
 SummerParty:
   Name: Lodowa Impreza
+DayaojingFriend:
+  Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} ataku losowemu wrogowi."
+  ExtraDescription1: '{FriendA}Zyskaj {Block} |Bloku|.'
+  Name: Daiyousei, Żwawa Asystentka
+  UpgradedExtraDescription1: '{FriendA}Zyskaj {Block} |Bloku| oraz {Shield} |Bariery|.'
+  ExtraDescription2: '{FriendU}Dodaj {Value1} |Letnie Kwiaty| do ręki.'
+  UpgradedExtraDescription2: '{FriendU}Dodaj {Value1} |Letnie Kwiaty+| do ręki.'
+MaidFriend:
+  Name: Kasumi, Pokojówka Willi
+MojingShanjie:
+  Name: Granica Egzorcyzmu
+  Description: Wybierz 1 z {Value1} losowych kart obrony aby dodać do ręki. Ona |Tymczasowo
+    Kosztuje| {Mana}.
+FruitShake:
+  Name: Pyszne Owocowe Lodziki
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nJeżeli |Wspólnik| został przywołany w tej turze, {SelfName}\
+    \ kosztuje {Mana}."
+DoubleDajiejie:
+  Name: Podwójna Superbariera
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Shield} |Bariery|."
