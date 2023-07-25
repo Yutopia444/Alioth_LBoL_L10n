@@ -211,7 +211,7 @@ KuosanJiejie:
   FlavorText: 유색 마나가 필요해... 더... 많이...!
 ReimuFestival:
   Name: 카미자쿠라 무도
-  Description: 내 턴 시작 시 |일시 화력|을 {Value1} 얻습니다.
+  Description: "|일시 화력|을 {Value1} 얻습니다.\n내 턴 시작 시 |일시 화력|을 {Value1} 얻습니다."
   FlavorText: 하쿠레이 신사의 새로운 주 수입원(인기 만점).
 ReimuLucky:
   Name: 길첨개운
@@ -223,10 +223,9 @@ ShensheRichang:
   FlavorText: 오늘도 좋은 날씨!
 TwoBalls:
   Name: 균형의 구슬
-  Description: '|음양옥|을 {Value1}장 얻습니다.
-
-    |보호막|이 있다면 |음양옥|의 코스트가 {Mana} 감소합니다.'
+  Description: '|음양옥|을 {Value1}장 얻습니다.'
   FlavorText: 무극에서 태극이 나오고, 태극에서 음양이 나온다.
+  UpgradedDescription: 코스트가 {Mana} 감소한 |음양옥|을 {Value1}장 얻습니다.
 HuanxiangBlock:
   Name: 환상의 테두리
   Description: 카드가 |소멸|될 때마다 |방어|를 {Value1} 얻습니다.
@@ -333,7 +332,7 @@ DanceAroundLake:
   FlavorText: 가장 일찍 일어난 나는, 그 냉혹하고 과격한 무용에 오랫동안 매료되어 있었다. 이윽고 비가 내리기 시작해 정신이 들었을 때
     그 무녀의 모습은 어디에도 없었다.
 Qingshan:
-  Description: "|방어|를 {Block} 얻습니다. \n이 카드가 |소멸|되면 {Mana}를 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다. \n손에 있는 무작위 |액운|이나 상태 카드를 {Value1}장 |소멸|시킵니다."
   Name: 가는 곳마다 청산
 MarisaAttackB:
   Name: 일루전 레이저
@@ -478,7 +477,8 @@ ThrowBigStar:
     \ 두 번 줍니다."
 ShootMoon:
   Name: 슛 더 문
-  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 추가로 |그레이즈|를 {Value1} 얻습니다."
+  Description: "피해를 {Damage}씩 {AttackTimes}번 줍니다.\n|과충전 {Value2}|: 추가로 |그레이즈|를 {Value1}\
+    \ 얻습니다."
 Psychedelic:
   Name: 환혹
   Description: '|턴 종료 시|: 체력을 {Value1} 잃고, <sprite="Point" name="Power">를 {Value2}
@@ -501,7 +501,7 @@ Xiaozhuo:
 ReimuShrine:
   FlavorText: '"하쿠레이 잿날 축제"는 3인칭 슈팅 경영 연애 시뮬레이션 게임이다... (더보기)'
   Name: 하쿠레이 잿날 축제
-  Description: 내 턴 시작 시 |일시 영력|을 {Value1} 얻습니다.
+  Description: "|일시 영력|을 {Value1} 얻습니다.\n내 턴 시작 시 |일시 영력|을 {Value1} 얻습니다."
 ReimuDrink:
   UpgradedDescription: "체력을 {Value1} 회복합니다.\n|일시 화력|을 {Value1} 얻습니다.\n|가벼운 한 잔|을 {Value2}장 얻습니다."
   Name: 어신주
@@ -796,6 +796,7 @@ AttackMagic:
 SakuyaSleep:
   Name: 잠깐의 휴식
   Description: "|채홍|을 한 장 얻습니다.\n턴을 종료합니다."
+  UpgradedDescription: '|채홍|을 한 장 얻습니다.'
 Lijian:
   Name: 흐릿한 칼날
   Description: "피해를 {Damage} 줍니다.\n|카드를 뽑을 시|: 이번 전투에서 코스트가 {Mana} 감소합니다."
@@ -836,8 +837,8 @@ SakuyaGoOut:
   Name: 출진 준비
   Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드 {Value1}장을 골라 버립니다.\n{Mana}를 얻습니다."
 BladePower:
-  Description: "|화력|을 {Value1} 얻습니다.\n|카드를 뽑을 시|: 손에 {SelfName}만이 있다면 |일시적으로| 코스트가\
-    \ {Mana}가 됩니다."
+  Description: "|화력|을 {Value1} 얻습니다.\n|카드를 뽑을 시|: 손에 {SelfName}만이 있다면 효과가 두 배가 됩니다.\
+    \ 단 손에서 떠날 시 효과를 잃습니다."
   Name: 은빛 질주
 ReimuHeavyAttack:
   Name: 하쿠레이 일격
@@ -897,7 +898,7 @@ GainKnife:
   Description: 내 턴 시작 시 |단검|을 {Value1}장 얻습니다.
 BulletStudy:
   Name: 탄막 연구
-  Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 추가로 |보호막|을 {Shield} 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n|과충전 {Value2}|: 추가로 |보호막|을 {Shield} 얻습니다."
   FlavorText: 상대의 탄막을 자신의 지식으로 바꿔 연구하는 마리사는 어리지만서도 벌써 여러 권의 책을 낸 경험이 있습니다.
 EventHorizon:
   Name: 이벤트 호라이즌
@@ -909,7 +910,8 @@ HuoliQuankai:
   Description: "|버스트| 시 세 배의 피해를 가합니다.\n|충전|을 {Value1} 얻습니다."
 MasterOfCollection:
   Name: 수집 전문가
-  Description: 카드가 |보존|될 시 해당 카드의 코스트를 이번 전투동안 무작위 마나 {Value1}개 낮춥니다.
+  Description: "손에서 카드를 최대 {Value2}장까지 골라 |보존|합니다.\n카드가 |보존|될 시 해당 카드의 코스트를 이번 전투동안\
+    \ 무작위 마나 {Value1}개 낮춥니다."
 ChargingPotion:
   Name: 방사성 원소
   Description: "|불안정한 물약|이 발동될 때마다 |충전|을 {Value1} 얻습니다.\n|불안정한 물약|을 {Value2}장 얻습니다."
@@ -988,7 +990,7 @@ ChargingToMana:
   Description: 모든 |충전|을 잃습니다. 이렇게 잃은 |충전|만큼 {Mana}를 얻고 카드를 한 장 뽑습니다.
 JungleMaster:
   Name: 숲의 주민
-  Description: "|방어|를 {Block} 얻습니다.\n|전투 시작 시|: |보호막|을 {Value1} 얻습니다."
+  Description: "|전투 시작 시|: {SelfName}을 |소멸|시키고 |보호막|을 {Value1} 얻습니다."
 MarisaHoldCard:
   Name: 버리기 아까운 것
   Description: "손의 카드를 최대 {Value1}장 골라 한 턴 간 |보존|합니다.\n|방어|를 {Block} 얻습니다."
@@ -1007,8 +1009,7 @@ IceSpark:
   Description: 모든 적에게 피해를 {Damage} 주고, |빙결|을 가합니다.
 SakuyaInvestigate:
   Name: 일시정지 탐정
-  Description: "|록온|을 {Value1} 줍니다.\n추가 턴을 진행할 시 |소멸|된 카드 더미에서 이 카드를 |일시적으로| {Mana}\
-    \ 코스트로 만들고 가져옵니다."
+  Description: "|록온|을 {Value1} 줍니다.\n추가 턴을 진행할 시 |소멸|된 카드 더미에서 이 카드를 가져옵니다."
 AyaNewsReimuSp:
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
   Name: 붕붕마루 레이무 특간호
@@ -1143,7 +1144,8 @@ SakuyaSpeedup:
 SakuyaDetective:
   Name: 지명수배
   FlavorText: 잊고 계셨겠지만, 범인을 쫓는게 주 스토리라구요.
-  Description: "이변의 진범을 상대할 시, 전투 시작 시 피해를 {Value1} 줍니다.\n(누계 {BossDamage})"
+  Description: "카드를 {Value2}장 뽑습니다.\n이변의 진범을 상대할 시, 전투 시작 시 피해를 {Value1} 줍니다.\n(누계\
+    \ {BossDamage})"
 AutoKnife:
   Description: "이번 전투동안 |단검|이 전부 |자동 소멸|합니다.\n|단검|을 {Value1}장 얻습니다."
   FlavorText: 우리 애는 잘 물어요.
@@ -1442,7 +1444,7 @@ ArtificialJewellery:
   Name: 인공 보석
 CirnoFire:
   Name: 불타는 얼음
-  Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 코스트가 {Mana} 감소합니다."
+  Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 효과가 {Value2} 상승합니다."
 FrozenThrone:
   Name: 얼어붙은 왕좌
   Description: 내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.
@@ -2116,3 +2118,7 @@ DoubleJK:
   Name: 세기의 더블 에스퍼
   Description: "앞으로 매 턴 최대 {Limit}장까지만 사용할 수 있게 됩니다.\n{PlayerName}의 턴 종료 시 해당 턴이 추가\
     \ 턴이 아닌 경우 가진 방어를 보존하고 추가 턴을 진행합니다."
+AnimalSpirit:
+  Name: 축생계 폭동
+YukariFriend:
+  Name: 환상의 경계, 야쿠모 유카리
