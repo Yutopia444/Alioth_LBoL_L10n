@@ -155,7 +155,9 @@ Zhuizongfu:
 
 ReimuFestival:
   Name: 神樱之舞
-  Description: '{PlayerName}的回合开始时获得 {Value1} 点|暂得火力|。'
+  Description: |-
+    获得 {Value1} 点|暂得火力|。
+    {PlayerName}的回合开始时获得 {Value1} 点|暂得火力|。
   FlavorText: 博丽神社最新推出的收费景点，人气十足。
 
 FengyinYaomo:
@@ -230,7 +232,9 @@ JiejieAttack:
 
 ReimuShrine:
   Name: 博丽庙会
-  Description: '{PlayerName}的回合开始时获得 {Value1} 点|暂得灵力|。'
+  Description: |-
+    获得 {Value1} 点|暂得灵力|。
+    {PlayerName}的回合开始时获得 {Value1} 点|暂得灵力|。
   FlavorText: 《博丽庙会》是一款以第三人称射击为主要玩法的模拟经营恋爱养成文字游戏。
 
 DoubleDajiejie:
@@ -1052,6 +1056,12 @@ AttackMagic:
     抽 {Value1} 张牌。
     将 {Value2} 张|飞刀|加入手中。
 
+SakuyaInvestigate:
+  Name: 时停侦探
+  Description: |-
+    施加 {Value1} 层|锁定|。
+    在额外回合开始时，从|放逐|区回到手中。
+
 CleanRoom:
   Name: 打扫房间
   Description: |-
@@ -1080,24 +1090,18 @@ SilverJump:
     施加 {Value1} 回合|易伤|。
     向抽牌堆和弃牌堆各洗入 {Value2} 张|飞刀|。
 
-GainKnife:
-  Name: 星剑飞舞
-  Description: '{PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。'
-  UpgradedDescription: |-
-    {PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。
-    将 {Value2} 张|飞刀|加入手中。
-
 BladePower:
   Name: 快闪之银
   Description: |-
     获得 {Value1} 点|火力|。
     |进入手中时|：如果{SelfName}是唯一的手牌，效果翻倍。（离开手牌时失效）
 
-SakuyaInvestigate:
-  Name: 时停侦探
-  Description: |-
-    施加 {Value1} 层|锁定|。
-    在额外回合开始时，从|放逐|区回到手中，|暂塑|为{Mana}。
+GainKnife:
+  Name: 星剑飞舞
+  Description: '{PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。'
+  UpgradedDescription: |-
+    {PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。
+    将 {Value2} 张|飞刀|加入手中。
 
 SakuyaDefenseRetain:
   Name: 时刻警戒
@@ -1191,15 +1195,15 @@ SakuyaShop:
     抽 {Value1} 张牌。
   FlavorText: 请不要误会，幻想乡的超市不贩卖吸血鬼。
 
-SilverBlade:
-  Name: 银色异次元
-  Description: 每一张攻击牌生效后，获得 {Value1} 点|护盾|。
-
 KnifeAim:
   Name: 收缩的世界
   Description: |-
     造成 {Damage} 点伤害。
     弃掉手中所有的|飞刀|，对目标造成伤害。
+
+SilverBlade:
+  Name: 银色异次元
+  Description: 每一张攻击牌生效后，获得 {Value1} 点|护盾|。
 
 KnifeHell:
   Name: 银之优雅
@@ -1318,6 +1322,7 @@ AutoKnife:
 SakuyaDetective:
   Name: 追查真凶
   Description: |-
+    抽 {Value2} 张牌。
     对阵真正的犯人时，战斗开始就对她造成 {Value1} 点伤害。
     （已累计 {BossDamage} 点）
   FlavorText: 虽然大家可能已经忘记了，其实本作品是一款查案游戏。
@@ -1476,6 +1481,13 @@ ColdBreath:
     抽 {Value1} 张牌。
   FlavorText: 格斗游戏中的强力招式。
 
+CirnoDraw:
+  Name: 妖精智慧
+  Description: 抽 {Value1} 张牌。
+  UpgradedDescription: |-
+    抽 {Value1} 张牌。
+    下回合开始时，抽 {Value2} 张牌。
+
 FrostGarden:
   Name: 冷雾花园
   Description: |-
@@ -1486,13 +1498,6 @@ FrostGarden:
     下回合开始时再次生效。
     如果你手中有已召唤的|同伴|牌，{SelfName}费用为{Mana}。
   FlavorText: 免费的空调。
-
-CirnoDraw:
-  Name: 妖精智慧
-  Description: 抽 {Value1} 张牌。
-  UpgradedDescription: |-
-    抽 {Value1} 张牌。
-    下回合开始时，抽 {Value2} 张牌。
 
 MaidFriend:
   Name: 洋馆的女仆小霞
@@ -1505,7 +1510,7 @@ CirnoFire:
   Name: 可燃冰
   Description: |-
     获得 {Value1} 点|火力|。
-    每有一个敌人处于|寒冷|，费用降低{Mana}。
+    每有一个敌人处于|寒冷|，效果提高 {Value2} 点。
 
 IceSaber:
   Name: 塑冰成剑
@@ -1756,7 +1761,7 @@ ChooseFriend:
 
 LunaFriend:
   Name: 静谧的月光露娜
-  Description: '{FriendP}获得 {Block} 点|格挡|'
+  Description: '{FriendP}获得 {Block} 点|格挡|。'
   ExtraDescription1: '{FriendA}随机对敌人造成 {Damage} 点攻击伤害 {Value1} 次。'
   ExtraDescription2: '{FriendU}获得 {Value2} 回合|天衣无缝|。'
 
@@ -1815,7 +1820,9 @@ Xiguadao:
 
 ClownpieceFriend:
   Name: 疯狂的克劳恩皮丝
-  Description: '{FriendS}获得{StartMana}。'
+  Description: |-
+    {FriendS}获得{StartMana}。
+    {FriendP}获得 {Value2} 点|暂得火力|。
   ExtraDescription1: '{FriendA}抽 {Value1} 张牌，将一张|疯狂|洗入弃牌堆。'
   UpgradedExtraDescription1: '{FriendA}抽 {Value1} 张牌。'
   ExtraDescription2: '{FriendU}获得{Mana}，将一张|疯狂|洗入弃牌堆。'
