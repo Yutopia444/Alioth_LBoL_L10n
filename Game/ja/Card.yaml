@@ -123,9 +123,7 @@ ShensheRichang:
   FlavorText: 今日は休日よぉ。
 TwoBalls:
   Name: 均衡の玉
-  Description: '|陰陽玉|を{Value1}枚手札に加える。
-
-    {PlayerName}に|バリア|がある時、加えた|陰陽玉|のコストを{Mana}減少。'
+  Description: '|陰陽玉|を{Value1}枚手札に加える。'
   FlavorText: 陰と陽は万物の根源である太極から生じた二極である。
 MingzhuAntou:
   Name: 明珠暗投
@@ -225,7 +223,7 @@ DanceAroundLake:
   Description: カードを|廃棄|するたび、カードを{Value1}枚引く。
 Qingshan:
   Name: 人間到る処青山あり
-  Description: "{Block}ブロックを得る。\nこのカードを廃棄する時、{Mana}を得る。"
+  Description: "{Block}ブロックを得る。\n手札にある|厄災|または状態異常カードを廃棄する。"
 DoubleLianhuadie:
   Name: 二色蓮花蝶
   Description: '{PlayerName}が|ブロック|か|バリア|を得るたび、ランダムな敵に{Value1}のダメージを与える。'
@@ -399,7 +397,7 @@ ThrowBigStar:
   Name: レッドドワーフ・エクスプロージョン
 ShootMoon:
   Name: シュート・ザ・ムーン
-  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：|グレイズ|{Value1}を得る。"
+  Description: "{Damage}ダメージを{AttackTimes}回与える。\n|オーバードライブ{Value2}|：|グレイズ|{Value1}を得る。"
 EventHorizon:
   Description: "|バースト|状態になる。\n次の{PlayerName}のターン、{PlayerName}に即死ダメージを与える。"
   UpgradedDescription: "|バースト|状態になる。\n|臨時火力|{Value1}を得る。\n次の{PlayerName}のターン、{PlayerName}に即死ダメージを与える。"
@@ -896,7 +894,7 @@ CoolMaid:
   Name: 瀟洒なメイド
   Description: "|投げナイフ|を{Value1}枚手札に加える。\n{Mana}を得る。"
 BladePower:
-  Description: "|火力|{Value1}を得る。\nこのカードを引いた時、手札に他のカードが無い場合このカードの|臨時コスト|を{Mana}にする。"
+  Description: "|火力|{Value1}を得る。\n|手札に入る時|：手札に他のカードが無い場合このカードの|臨時コスト|を{Mana}にする。"
   Name: シルバーダッシュ
 Dejavu:
   Name: デジャヴ
@@ -1142,7 +1140,7 @@ ColdPotion:
   Name: 冷却剤
 BulletStudy:
   Name: ダンマクノート
-  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：{Shield}|バリア|を得る。"
+  Description: "{Block}|ブロック|を得る。\n|オーバードライブ{Value2}|：{Shield}|バリア|を得る。"
 MoguMaster:
   Name: キノコの専門家
   Description: '{Value1} 枚のランダムな|キノコ|から {Value2} 枚を選び、手札に加える。'
@@ -1233,7 +1231,9 @@ WhiteLaser:
   Description: "{Damage}ダメージを与える。\n {Shield} の|バリア|を得る、これは|バースト|の効果対象となる。"
 MasterOfCollection:
   Name: アイテムコレクター
-  Description: 'カードを|保留|する度、そのカードのマナコストを戦闘終了時までランダムに{Value1}つ減らす。'
+  Description: '手札にあるカードを{Value2}枚まで選び、|保留|を与える。
+
+    カードを|保留|する度、そのカードのマナコストを戦闘終了時までランダムに{Value1}つ減らす。'
 ChargingPotion:
   Name: 元素放射
   Description: "|不安定なポーション|を使用する度、|チャージ|{Value1}を得る。\n|不安定なポーション|を{Value2}枚手札に加える。"
@@ -1251,7 +1251,7 @@ RedMogu:
   Description: '{Value1} 層の|毒|を与える。'
 JungleMaster:
   Name: 森の住民
-  Description: "{Block}|ブロック|を得る。\n|戦闘開始時|： {Value1} バリアを得る。"
+  Description: "|戦闘開始時|：{SelfName}を廃棄し、{Value1}バリアを得る。"
 BlueMogu:
   Name: スカイブルーマッシュルーム
   Description: カードを {Value1} 枚引く。
