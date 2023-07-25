@@ -104,9 +104,11 @@ YinyangBaoyu:
   Name: Orb of Duality
 TwoBalls:
   Description: "Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang Orbs|'}\
-    \ to the hand.\nIf {PlayerName} has |Barrier|, the added {Value1:plural one='card\
-    \ costs' other='cards cost'} {Mana} less."
+    \ to the hand."
   Name: Balanced Orbs
+  UpgradedDescription: Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang
+    Orbs|'} to the hand. {Value1:plural one='It costs' other='They cost'} {Mana} less
+    to play.
 ShensheRichang:
   Description: |-
     Gain {Value1} life.
@@ -305,7 +307,7 @@ DanceAroundLake:
 Qingshan:
   Description: |-
     Gain {Block} |Block|.
-    |When Exiled|: Gain {Mana}.
+    |Exile| {Value1} random |Misfortune| and/or Status card{Value1:plural one='' other='s'} from the hand.
 
   Name: One's Last Home
 AutoQumobang:
@@ -2372,3 +2374,34 @@ MojingShanjie:
   Name: Exorcising Border
 DoubleJK:
   Name: Double ESPer of the Century
+  Description: "{PlayerName} can only play up to {Value1} card{Value1:plural one=''\
+    \ other='s'} each turn.\nAt the end of {PlayerName}'s turn, if it wasn't an extra\
+    \ turn, take an extra turn, retaining all |Block| gained."
+ShirenKunchong:
+  Name: Cannibalistic Insect
+  Description: "Deal {Damage} damage to each enemy.\nWhenever an enemy gains a |Debuff|,\
+    \ {PlayerName} gains {Value1} |Block|."
+AnimalSpirit:
+  Description: "All other cards in the hand are possesed by animal spirits, granting\
+    \ them one of the following effects:\nWolf: Gains |Echo|.\nOtter: Gains |Replenish|.\n\
+    Eagle: Temporarily costs {Mana}."
+  Name: Beast Realm Uprising
+  UpgradedDescription: "All other cards in the hand and {Value1} card{Value1:plural\
+    \ one='' other='s'} in the draw pile are possesed by animal spirits, granting\
+    \ them one of the following effects:\nWolf: Gains |Echo|.\nOtter: Gains |Replenish|.\n\
+    Eagle: Temporarily costs {Mana}."
+YukariFriend:
+  ExtraDescription1: '{FriendA}Choose an |Exiled| card. Add a |Copy| of it to the
+    hand that |temporarily costs| {Mana}.'
+  Name: Yukari, Boundary of Fantasy
+  Description: '{FriendP}Gain |Firepower| equal to the amount of defense cards played
+    this turn.'
+  ExtraDescription2: "{FriendU}At the start of {PlayerName}'s turn, add a random three-colored\
+    \ neutral card to the hand."
+PoisonTeaParty:
+  Name: Dubious Tea Party
+  Description: "Apply {Value1} |Poison|.\nGain |Block| equal to the target's |Poison|."
+KisumeAttack:
+  Name: Bucket Apparition
+  Description: Deal damage equal to the number of cards in the draw pile. ({Damage})
+  NonbattleDescription: Deal damage equal to the number of cards in the draw pile.
