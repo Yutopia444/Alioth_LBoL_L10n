@@ -193,8 +193,8 @@ Astrology:
   Name: Astrología
   Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
 ReimuFestival:
-  Description: Al comienzo de cada turno de {PlayerName}, gana {Value1} de |Poder
-    Temporal|.
+  Description: "Gana {Value1} de |Poder Temporal|.\nAl comienzo de cada turno de {PlayerName},\
+    \ gana {Value1} de |Poder Temporal|."
   Name: Danza de la Sagrada Sakura
 SuikaOut:
   Name: Exorcismo de Limpieza
@@ -448,8 +448,8 @@ WolfFur:
   Description: '|Limitado【{DeckCounter}】|'
 ReimuShrine:
   Name: Feria del Templo Hakurei
-  Description: Al comienzo de cada turno de {PlayerName}, gana {Value1} de |Espíritu
-    Temporal|.
+  Description: "Gana {Value1} de |Espíritu Temporal|.\nAl comienzo de cada turno de\
+    \ {PlayerName}, gana {Value1} de |Espíritu Temporal|."
   FlavorText: '"Feria del Templo Hakurei" es un juego de simulador de citas románticas
     basado en un shooter en tercera persona.'
 MarisaBlockB:
@@ -1079,8 +1079,9 @@ EvilMaid:
   Name: Sirvienta del Demonio
 SakuyaDetective:
   Name: Rastreando al Culpable
-  Description: "Cuando luches contra el verdadero culpable, inflige {Value1} de daño\
-    \ al comienzo de la batalla.\n(Se han acumulado {BossDamage} de daño)"
+  Description: "Roba {Value2} carta{Value2:plural one='' other='s'}.\nCuando luches\
+    \ contra el verdadero culpable, inflige {Value1} de daño al comienzo de la batalla.\n\
+    (Se han acumulado {BossDamage} de daño)"
   FlavorText: Aunque es posible que lo hayas olvidado, este juego es en realidad un
     juego de investigación criminal.
 TimeAuraAttack:
@@ -1158,7 +1159,7 @@ ExileMagic:
 SakuyaInvestigate:
   Name: Detective del Tiempo Detenido
   Description: "Aplica {Value1} |Marcado|.\nAl comienzo de cada turno extra, devuelve\
-    \ {SelfName} del |Exilio| a la mano. |Cuesta temporalmente| {Mana}."
+    \ {SelfName} del |Exilio| a la mano."
 SakuyaAttackX:
   Name: Propulsión Plateada
   Description: '|Por cada {Mana} gastado|: Inflige {Damage} de daño.'
@@ -1211,9 +1212,9 @@ SilverJump:
     \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a las pilas de robo y descarte."
 BladePower:
   Name: Carrera Deslumbrante
-  Description: "Obtén {Value1} de |Poder|.\n|Cuando se roba|: Si {SelfName} es la\
-    \ única carta en la mano, sus efectos se duplican. (Esto se aplica hasta que sale\
-    \ de la mano)"
+  Description: "Gana {Value1} de |Poder|.\n|Cuando se roba|: Si {SelfName} es la única\
+    \ carta en la mano, sus efectos se duplican. (Esto se aplica hasta que sale de\
+    \ la mano)"
 SakuyaUsage2:
   Name: Escaleras Circulares
   Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
@@ -2106,8 +2107,8 @@ Xiguadao:
     \ a un enemigo aleatorio como nuevo objetivo."
 CirnoFire:
   Name: Hielo Inflamable
-  Description: "Gana {Value1} de |Poder|.\nPor cada enemigo con |Frío|, {SelfName}\
-    \ cuesta {Mana} menos para jugar."
+  Description: "Gana {Value1} de |Poder|.\nPor cada enemigo con |Frío|, aumentar el\
+    \ |Poder| de {SelfName} por {Value2}."
 FrozenThrone:
   Name: Trono de Hielo
   FlavorText: Now, we are one!
@@ -2312,7 +2313,9 @@ StarFriend:
     \ veces."
   Name: Star, Lluvia de Luz Estelar
 ClownpieceFriend:
-  Description: '{FriendS}Gana {StartMana}.'
+  Description: '{FriendS}Gana {StartMana}.
+
+    {FriendP}Gana {Value2} de |Poder Temporal|.'
   ExtraDescription1: "{FriendA}Roba {Value1} carta{Value1:plural one='' other='s'}\
     \ y agrega una |Locura| a la pila de descarte."
   UpgradedExtraDescription1: "{FriendA}Roba {Value1:plural one='% carta' other='%\
