@@ -1466,7 +1466,8 @@ FireUpBagualu:
     \ affected by |Burst|."
   Name: Light the Furnace
 ShootMoon:
-  Description: "Deal {Damage} damage.\n|Overdrive {Value2}|: Gain {Value1} |Graze|."
+  Description: "Deal {Damage} damage {AttackTimes} times.\n|Overdrive {Value2}|: Gain\
+    \ {Value1} |Graze|."
   Name: Shoot the Moon
 RunAway:
   Description: "Discard each card in the hand. Cards discarded this way |temporarily\
@@ -1712,7 +1713,8 @@ CoolBreeze:
   Name: Refreshing Breeze
 ReimuFestival:
   Name: Dance of Sacred Sakura
-  Description: At the start of {PlayerName}'s turn, gain {Value1} |Temporary Firepower|.
+  Description: "Gain {Value1} |Temporary Firepower|.\nAt the start of {PlayerName}'s\
+    \ turn, gain {Value1} |Temporary Firepower|."
 Psychedelic:
   Name: Psychedelic
   Description: "|At the end of the turn|: Lose {Value1} life and gain {Value2} <sprite=\"\
@@ -1722,7 +1724,9 @@ SuikaOut:
   Name: Cleansing Exorcism
   FlavorText: Appears to be ineffective against enemies with 999 firepower.
 ReimuShrine:
-  Description: 'At the start of {PlayerName}''s turn, gain {Value1} |Temporary Spirit|.'
+  Description: 'Gain {Value1} |Temporary Spirit|.
+
+    At the start of {PlayerName}''s turn, gain {Value1} |Temporary Spirit|.'
   Name: Hakurei Temple Fair
 ReimuDrink:
   Description: "Gain {Value1} life.\nAdd {Value2} |Tipsy{Value2:plural one='' other='s'}|\
@@ -1842,7 +1846,7 @@ SakuyaGoOut:
 SakuyaInvestigate:
   Name: Time Stop Detective
   Description: "Apply {Value1} |Lock On|.\nAt the start of each extra turn, return\
-    \ {SelfName} from |Exile| to the hand. It |temporarily costs| {Mana}."
+    \ {SelfName} from |Exile| to the hand."
 VampireHunter:
   Name: Vampire Huntress
   Description: "Deal {Damage} damage.\nIf the target has |Vampire|, deal {Value1}\
@@ -1859,8 +1863,9 @@ BrokenTimeline:
     at the beginning of this turn.
 SakuyaDetective:
   Name: All-Points Bulletin
-  Description: "When playing against a real culprit, deal {Value1} damage to her at\
-    \ the beginning of the battle.\n({BossDamage} damage have been accumulated)"
+  Description: "Draw {Value2} card{Value2:plural one='' other='s'}.\nWhen playing\
+    \ against a real culprit, deal {Value1} damage to her at the beginning of the\
+    \ battle.\n({BossDamage} damage have been accumulated)"
   FlavorText: Although you may have forgotten, this game is actually a crime investigation
     game.
 SakuyaUsage:
@@ -2113,8 +2118,8 @@ YouxiangMoon:
     \ |Ethereal|."
 CirnoFire:
   Name: Flammable Ice
-  Description: "Gain {Value1} |Firepower|.\nFor each enemy with |Cold|, {SelfName}\
-    \ costs {Mana} less to play."
+  Description: "Gain {Value1} |Firepower|.\nFor each enemy with |Cold|, increase {SelfName}'s\
+    \ |Firepower| by {Value2}."
 FrozenThrone:
   Name: Frozen Throne
   Description: At the start of {PlayerName}'s turn, add a |Glacier+| to the hand.
@@ -2310,7 +2315,9 @@ SunnyFriend:
     \ |Firepower|."
   Name: Sunny, Refracted Sunlight.
 ClownpieceFriend:
-  Description: '{FriendS}Gain {StartMana}.'
+  Description: '{FriendS}Gain {StartMana}.
+
+    {FriendP}Gain {Value2} |Temporary Firepower|.'
   ExtraDescription1: "{FriendA}Draw {Value1} card{Value1:plural one='' other='s'}\
     \ and add a |Lunacy| to the discard pile."
   UpgradedExtraDescription1: "{FriendA}Draw {Value1:plural one='% card' other='% cards'}."
