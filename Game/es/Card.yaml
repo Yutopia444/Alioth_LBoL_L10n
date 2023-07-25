@@ -135,8 +135,10 @@ ShensheRichang:
 TwoBalls:
   Name: Orbes Balanceados
   Description: "Añade {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}\
-    \ a tu mano.\nSi {PlayerName} tiene |Barrera|, los |Orbes Yin-Yang| añadidos cuestan\
-    \ {Mana} menos."
+    \ a la mano."
+  UpgradedDescription: Añade {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes
+    Yin-Yang|'} a la mano. {Value1:plural one='Cuesta' other='Cuestan'} {Mana} menos
+    para jugar.
 Misfortune:
   Name: Desafortunada
   Description: '|Al final del turno|: Pierde {Value1} de vida por cada 100 <sprite="Point"
@@ -658,7 +660,8 @@ ReimuSakura:
     |Crecimiento|: Cuesta {Mana} menos."
 Qingshan:
   Name: El Último Hogar de Uno
-  Description: "Obtén {Block} de |Bloqueo|.\n|Cuando se exilia|: Gana {Mana}."
+  Description: "Obtén {Block} de |Bloqueo|.\n|Exilia| {Value1} carta{Value1:plural\
+    \ one=' aleatoria' other='s aleatorias'} de |Desgracia| y/o de Estado de la mano."
 CraftPotion:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
     \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
@@ -834,7 +837,8 @@ MixAndShake:
   Description: "Inflige {Damage} de daño a cada enemigo.\n{SelfName} inflige {Value1}\
     \ más de daño por cada |Poción Inestable| en las pilas de robo y de descarte."
 ShootMoon:
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Gana {Value1} |Evasión|."
+  Description: "Inflige {Damage} de daño {AttackTimes} veces.\n|Sobrecarga {Value2}|:\
+    \ Gana {Value1} de |Evasión|."
   Name: Disparar a la Luna
 PotionDefense:
   Description: "Obtén {Shield} de |Barrera|.\nHasta el final del turno, siempre que\
@@ -884,8 +888,8 @@ GreenMogu:
     Inestables|'} a la pila de robo.
 JungleMaster:
   Name: Habitante del Bosque
-  Description: "Obtén {Block} de |Bloqueo|.\n|Al comienzo del combate|: Obtén {Value1}\
-    \ de |Barrera|."
+  Description: "|Al comienzo del combate|: |Exiliar| {SelfName}, obtén {Value1} de\
+    \ |Barrera|."
 ChargingPotion:
   Description: "Siempre que una |Poción Inestable| se usa, gana {Value1} |Carga{Value1:plural\
     \ one='' other='s'}|.\nAgrega {Value2:plural one='% |Poción Inestable|' other='%\
@@ -924,8 +928,9 @@ BlueMogu:
   Description: Roba {Value1:plural one='% carta' other='% cartas'}.
 MasterOfCollection:
   Name: Maestra Coleccionista
-  Description: Cada vez que una carta es |Retenida|, cuesta {Value1} de maná aleatorio
-    menos en este combate.
+  Description: "Elige hasta {Value2} carta{Value2:plural one='' other='s'} en la mano.\
+    \ {Value2:plural one='Tiene' other='Tienen'} |Retener|.\nCada vez que una carta\
+    \ es |Retenida|, cuesta {Value1} de maná aleatorio menos en este combate."
 PurpleMogu:
   Description: Cura {Value1} de vida.
   Name: Amethystus Laccaria
@@ -1207,7 +1212,8 @@ SilverJump:
 BladePower:
   Name: Carrera Deslumbrante
   Description: "Obtén {Value1} de |Poder|.\n|Cuando se roba|: Si {SelfName} es la\
-    \ única carta en la mano, |cuesta temporalmente| {Mana}."
+    \ única carta en la mano, sus efectos se duplican. (Esto se aplica hasta que sale\
+    \ de la mano)"
 SakuyaUsage2:
   Name: Escaleras Circulares
   Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
@@ -1924,7 +1930,7 @@ ReimuHeavyAttack:
     \ {Value1} {Value1:plural one='vez' other='veces'}."
   FlavorText: '"¡Tu ya estás muerto!"'
 BulletStudy:
-  Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}| : Obtén {Shield}\
+  Description: "Obtén {Block} de |Bloqueo|.\n|Sobrecarga {Value2}| : Obtén {Shield}\
     \ de |Barrera|."
   Name: Estudio del Danmaku
 SplitPotion:
@@ -1974,8 +1980,6 @@ FlanBlack:
   Name: Demonización
   Description: "|d:Esta carta está actualmente en desarrollo.\nVuelva a mirar en una\
     \ futura actualización.|"
-TigerNeijin:
-  Name: Cólera Silenciosa
 LongArm:
   Description: "Inflige {Damage} de daño.\nSi hay {Value1} o más carta{Value1:plural\
     \ one='' other='s'} en la mano antes de jugar {SelfName}, gana {Mana}."
@@ -2439,14 +2443,37 @@ PoisonTeaParty:
   Description: "Aplica {Value1} de |Veneno|.\nGana |Bloqueo| igual al |Veneno| del\
     \ objetivo"
 KisumeAttack:
-  Name: Colectora de Baldes
+  Name: Aparición en un Balde
   Description: Inflige daño igual al número de cartas en la pila de robo. (Total {Damage}
     )
+  NonbattleDescription: Inflige daño igual al número de cartas en la pila de robo.
 ShirenKunchong:
   Name: Insecto Caníbal
+  Description: "Inflige {Damage} de daño a cada enemigo.\nCada vez que un enemigo\
+    \ gana un |Efecto Negativo|, {PlayerName} gana {Value1} de |Bloqueo|."
 DoubleJK:
-  Name: Doppelgänger del Siglo
+  Name: Doble Esper del Siglo
+  Description: "{PlayerName} solo puede jugar hasta {Value1} carta{Value1:plural one=''\
+    \ other='s'} en cada turno.\nAl final del turno de {PlayerName}, si no fue un\
+    \ turno extra, toma un turno extra, reteniendo todo el |Bloqueo| ganado."
 KoishiMoveAttack:
   Name: Mirar Eso
 KoishiMoveDefense:
   Name: Mirar Aquello
+AnimalSpirit:
+  Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
+    \ de los animales, otorgándoles uno de los siguientes efectos:\nLobo: Ganan |Eco|.\n\
+    Nutria: Ganan |Reponer|.\nÁguila: Cuestan temporalmente {Mana}."
+  Name: Alzamiento del Reino de las Bestias
+  UpgradedDescription: "Todas las demás cartas en la mano y {Value1} carta{Value1:plural\
+    \ one='' other='s'} en la pila de robo estarán poseídas por los espíritus de los\
+    \ animales, otorgándoles uno de los siguientes efectos:\nLobo: Ganan |Eco|.\n\
+    Nutria: Ganan |Reponer|.\nÁguila: Cuestan temporalmente {Mana}."
+YukariFriend:
+  Name: Yukari, Frontera de la Fantasía
+  ExtraDescription2: '{FriendU}Al comienzo de cada turno de {PlayerName}, agrega una
+    carta neutral aleatoria de tres colores a la mano.'
+  Description: '{FriendP}Obtén |Poder| igual a la cantidad de cartas de defensa jugadas
+    en este turno.'
+  ExtraDescription1: '{FriendA}Elige una carta |Exiliada|. Añade una |Copia| de ello
+    a la mano que |costara temporalmente| {Mana}.'
