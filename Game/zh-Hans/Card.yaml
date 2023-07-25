@@ -210,9 +210,8 @@ ShensheRichang:
 
 TwoBalls:
   Name: 平衡之玉
-  Description: |-
-    将 {Value1} 张|阴阳玉|加入手中。
-    如果{PlayerName}拥有|护盾|，它们的费用降低{Mana}。
+  Description: 将 {Value1} 张|阴阳玉|加入手中。
+  UpgradedDescription: 将 {Value1} 张|阴阳玉|加入手中，它们的费用降低{Mana}。
   FlavorText: 无极生太极，太极生两仪。
 
 MojingShanjie:
@@ -410,18 +409,18 @@ DanceAroundLake:
   Description: 每|放逐|一张牌，就抽 {Value1} 张牌。
   FlavorText: 起得最早的我，长时间沉醉在那冷酷无情而又过激的舞姿中。不久后下起了雨，当我回过神来时，巫女的身影已经无处寻觅了。
 
-Qingshan:
-  Name: 人至之处的青山
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |被放逐时|：获得{Mana}。
-
 AutoQumobang:
   Name: 暴走驱魔棒
   Description: |-
     |手牌中|：回合开始时多抽 {Value1} 张牌。
     生效 {Value2} 次后|放逐|自身。
   FlavorText: 「自主的驱魔棒正在抢夺巫女们的工作岗位。」——《文文新闻·经济版》
+
+Qingshan:
+  Name: 人至之处的青山
+  Description: |-
+    获得 {Block} 点|格挡|。
+    随机|放逐| {Value1} 张手中的|厄运|或状态牌。
 
 GapLady:
   Name: 隙间女子
@@ -557,7 +556,7 @@ ReadyForBurst:
 BulletStudy:
   Name: 弹幕笔记
   Description: |-
-    造成 {Damage} 点伤害。
+    获得 {Block} 点|格挡|。
     |超载 {Value2} |：获得 {Shield} 点|护盾|。
   FlavorText: 研究对方的弹幕化为自己的知识，魔理沙年纪轻轻，却已出版了多部书籍。
 
@@ -726,7 +725,7 @@ FireUpBagualu:
 ShootMoon:
   Name: 射月
   Description: |-
-    造成 {Damage} 点伤害。
+    造成 {Damage} 点伤害 {AttackTimes} 次。
     |超载 {Value2} |：获得 {Value1} 层|闪避|。
 
 RunAway:
@@ -828,7 +827,9 @@ HuoliQuankai:
 
 MasterOfCollection:
   Name: 收集专家
-  Description: 每一张牌被|保留|时，降低 {Value1} 点它的随机费用，直到战斗结束。
+  Description: |-
+    选择至多 {Value2} 张手牌赋予|保留|。
+    每一张牌被|保留|时，降低 {Value1} 点它的随机费用，直到战斗结束。
   FlavorText: 「垃圾？这些怎么会是垃圾呢？」
 
 ChargingPotion:
@@ -926,9 +927,7 @@ PurpleMogu:
 
 JungleMaster:
   Name: 森林居民
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |战斗开始时|：获得 {Value1} 点|护盾|。
+  Description: '|战斗开始时|：|放逐|{SelfName}，获得 {Value1} 点|护盾|。'
 
 ManaJungle:
   Name: 森林探险
@@ -1069,6 +1068,7 @@ SakuyaSleep:
   Description: |-
     将一张|幻虹|加入手中。
     结束{PlayerName}的回合。
+  UpgradedDescription: 将一张|幻虹|加入手中。
 
 SilverBullet:
   Name: 银线编织
@@ -1091,7 +1091,7 @@ BladePower:
   Name: 快闪之银
   Description: |-
     获得 {Value1} 点|火力|。
-    |进入手中时|：如果{SelfName}是唯一的手牌，|暂塑|为{Mana}。
+    |进入手中时|：如果{SelfName}是唯一的手牌，效果翻倍。（离开手牌时失效）
 
 SakuyaInvestigate:
   Name: 时停侦探
@@ -2809,7 +2809,7 @@ LilyChun:
 
 XiangziEcho:
   Name: 山谷回声
-  Description: 选择至多 {Value1} 张手牌，赋予|回响|。
+  Description: 选择至多 {Value1} 张手牌赋予|回响|。
   FlavorText: 「呀————呼————」
 
 YonglinUpgrade:
@@ -2912,7 +2912,7 @@ BlackPoison:
 ShirenKunchong:
   Name: 食人昆虫
   Description: |-
-    (WIP)对所有敌人造成 {Damage} 点伤害。
+    对所有敌人造成 {Damage} 点伤害。
     当敌人受到|负面状态|时，{PlayerName}获得 {Value1} 点|格挡|。
 
 ZoufangSnake:
@@ -2939,12 +2939,6 @@ FangxiangAttack:
   Description: |-
     如果目标已经|中毒|，对目标造成 {Damage} 点伤害 {Value2} 次。
     否则施加 {Value1} 层|中毒|。
-
-TigerNeijin:
-  Name: 沉寂的怒气
-  Description: |-
-    获得 {Value1} 点|火力|。
-    当你收到未被格挡的攻击伤害时，将放逐区内的这张牌移入手牌，并使{SelfName}提供的火力提高 {Value2} 点。
 
 MeilingAbility:
   Name: 烈虹真拳
@@ -2990,8 +2984,21 @@ SanaeRestart:
 DoubleJK:
   Name: 世纪的二重身超人
   Description: |-
-    (WIP){PlayerName}的每个回合只能打出 {Value1} 张卡牌。
+    {PlayerName}的每个回合只能打出 {Value1} 张卡牌。
     当{PlayerName}的回合结束时，若本回合不是一个额外的回合，保留格挡并进行一个额外的回合。
+
+AnimalSpirit:
+  Name: 畜生界大暴动
+  Description: |-
+    使其他手牌被动物灵附身，获得一种随机效果：
+    狼：获得|回响|。
+    濑：获得|填充|。
+    鹰：暂塑为{Mana}。
+  UpgradedDescription: |-
+    使其他手牌和 {Value1} 张抽牌堆内的随机卡牌被动物灵附身，获得一种随机效果：
+    狼：获得|回响|。
+    濑：获得|填充|。
+    鹰：暂塑为{Mana}。
 
 PrismriverAll:
   Name: 合葬「棱镜协奏曲」
@@ -3014,6 +3021,12 @@ JunkoNightmare:
     选择至多 {Value2} 张手牌免于|纯粹|化。
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
     |放逐|所有的手牌，将等量的|纯粹|加入手中。
+
+YukariFriend:
+  Name: 幻想的境界八云紫
+  Description: '{FriendP}获得等量于本回合打出过的防御牌数量的火力。'
+  ExtraDescription1: '{FriendA}选择一张放逐区内的牌，将它|暂塑|为{Mana}的复制加入手中。'
+  ExtraDescription2: '{FriendU}{PlayerName}的回合开始时，将一张随机的中立三色稀有牌加入手牌，'
 
 BailianFire:
   Name: 法界之火
