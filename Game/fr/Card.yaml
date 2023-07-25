@@ -174,10 +174,12 @@ ShensheRichang:
 TwoBalls:
   Name: Orbes Équilibrés
   Description: "Ajoutez {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}\
-    \ à la main.\nSi {PlayerName} a de la |Barrière|, les orbes coûtent {Mana} de\
-    \ moins."
+    \ à la main."
   FlavorText: L'Éternité donne naissance à l'Absolu, et l'Absolu donne naissance à
     deux rituels.
+  UpgradedDescription: Ajoutez {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes
+    Yin-Yang|'} à la main. Elle{Value1:plural one=' coûte' other='s coûtent'} {Mana}
+    de moins à jouer.
 MingzhuAntou:
   Name: Frontière Secrète
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'] à tous les\
@@ -435,8 +437,8 @@ PurpleMogu:
   Description: Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.
 JungleMaster:
   Name: Habitante de la Forêt
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Au début\
-    \ du combat| : Gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|."
+  Description: "|Au début du combat| : |Exilez| {SelfName}, gagnez {Value1} |Barrière{Value1:plural\
+    \ one='' other='s'}|."
 ManaJungle:
   Name: Aventure en Forêt
   Description: "|Lorsque piochée| : Ajoutez |{Value1:plural one='% Arc-en-ciel' other='%\
@@ -471,8 +473,9 @@ DanceAroundLake:
     et quand j'ai repris mes esprits, la prêtresse était introuvable.
 Qingshan:
   Name: Dernière Demeure
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Quand\
-    \ exilée| : Gagnez {Mana}."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Exilez|\
+    \ aléatoirement {Value1} carte{Value1:plural one='' other='s'} |Malheur| et/ou\
+    \ Statut de la main."
 AutoQumobang:
   Name: Bâton Purificateur Déchaîné
   FlavorText: "\"Les bâtons d'exorcisme autonomes volent le travail des sorcières.\"\
@@ -703,8 +706,9 @@ FireUpBagualu:
     \ |Puissance{Value2:plural one='' other='s'}|. Cet effet est affecté par la |Saturation|."
 ShootMoon:
   Name: Tir sur la Lune
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
-    \ {Value2}| : Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {AttackTimes}\
+    \ fois.\n|Surcharge {Value2}| : Gagnez {Value1} |Esquive{Value1:plural one=''\
+    \ other='s'}|."
 RunAway:
   Name: Fuite
   Description: "Défaussez-vous de chaque carte de la main. Les cartes ainsi défaussées\
@@ -743,8 +747,10 @@ PotionDefense:
     \ |Barrière{Value1:plural one='' other='s'}|."
 MasterOfCollection:
   Name: Maître Collectionneur
-  Description: À chaque fois qu'une carte est |Retenue|, elle coûte {Value1} mana
-    aléatoire en moins ce combat.
+  Description: "Choisissez jusqu'à {Value2} carte{Value2:plural one='' other='s'}\
+    \ dans la main. {Value2:plural one='Elle gagne' other='Elles gagnent'} |Retenue|.\n\
+    À chaque fois qu'une carte est |Retenue|, elle coûte {Value1} mana aléatoire en\
+    \ moins ce combat."
   FlavorText: '"Des ordures ? Comment cela peut-il être des ordures ?"'
 SakuyaBlockW:
   Name: Défense Clé Noire
@@ -825,6 +831,7 @@ SilverJump:
 SakuyaSleep:
   Name: Courte Pause
   Description: "Ajoutez un |Arc-en-ciel| à la main.\n{PlayerName} termine son tour."
+  UpgradedDescription: Ajoutez un |Arc-en-ciel| à la main.
 Knife:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quitte\
     \ la main sans être joué| : Infligez {DropDamage} dégâts à l'ennemi avec le moins\
@@ -1073,9 +1080,8 @@ GainKnife:
     one='' other='x'} de Lancer| dans la main.
 BladePower:
   Name: Ruée Éblouissante
-  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Arrivée\
-    \ en main| : Si {SelfName} est la seule carte en main, elle |coûte temporairement|\
-    \ {Mana}."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|En\
+    \ main| : Si {SelfName} est la seule carte en main, ses effets sont doublés."
 SakuyaAttackX:
   Name: Propulsion d'Argent
   Description: "|Pour chaque {Mana} dépensé| : Infligez {Damage} dégât{Damage:plural\
@@ -2120,8 +2126,9 @@ BrainOverclock:
   Description: "Obtenez {Mana}.\nPiochez {Value2} carte{Value2:plural one='' other='s'}.\n\
     |Découvert| {Value1}."
 ReimuFestival:
-  Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
-    \ de |Puissance Temporaire| au début de son tour."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one=' temporaire' other='s\
+    \ temporaires'}|.\nLorsque {PlayerName} débute son tour, gagnez {Value1} |Puissance{Value1:plural\
+    \ one=' temporaire' other='s temporaires'}|."
   Name: Danse du Sakura Divin
   FlavorText: La dernière attraction payante du sanctuaire Hakurei est très populaire.
 Psychedelic:
@@ -2156,8 +2163,9 @@ SuikaOut:
     de 999.
 ReimuShrine:
   Name: Grande Foire du Temple
-  Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} point{Value1:plural
-    one='' other='s'} d'|Esprit Temporaire|.
+  Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} d'|Esprit temporaire|.\n\
+    Lorsque {PlayerName} débute son tour, gagnez {Value1} point{Value1:plural one=''\
+    \ other='s'} d'|Esprit temporaire|."
   FlavorText: "\"Grande Foire du Temple\" est une manière de décrire un évènement\
     \ qui utilise le tir à la troisième personne comme gameplay principal pour simuler\
     \ les affaires et développer l'amour."
@@ -2190,11 +2198,11 @@ LimaoSchool:
     qui {Value2:plural one='prend' other='prennent'} effet.
 YinyangQueen:
   Name: "Misumaru, Artisane Habile"
-  Description: "{FriendP} gagnez {Value2:plural one='% |Bouclier|' other='% |Boucliers|'}\
+  Description: "{FriendP}Gagnez {Value2:plural one='% |Bouclier|' other='% |Boucliers|'}\
     \ et {Value2:plural one='% |Barrière|' other='% |Barrières|'}."
-  ExtraDescription2: '{FriendU} Dans cette bataille, les effets de toutes les |Orbes
+  ExtraDescription2: '{FriendU}Dans cette bataille, les effets de toutes les |Orbes
     Yin Yang| sont doublés. Obtenez immédiatement une |Orbe Yin-Yang Arc-en-ciel|.'
-  ExtraDescription1: "{FriendA} ajoutez {Value1} |Orbe{Value1:plural one='' other='s'}\
+  ExtraDescription1: "{FriendA}Ajoutez {Value1} |Orbe{Value1:plural one='' other='s'}\
     \ Yin-Yang Arc-en-ciel| aléatoire{Value1:plural one='' other='s'} à la main."
 ShuihuoCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Block}\
@@ -2253,8 +2261,7 @@ SakuyaGoOut:
 SakuyaInvestigate:
   Name: Détective de l'Arrêt du Temps
   Description: "Appliquez {Value1} |Verrouillé{Value1:plural one='' other='s'}|.\n\
-    Au début d'un tour supplémentaire, cette carte reviens en main depuis l'|exil|\
-    \ et |coûte temporairement| {Mana}."
+    Lorsqu'un tour supplémentaire débute, {SelfName} revient en main depuis l'|exil|."
 VampireHunter:
   Name: Chasseur de Vampire
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
@@ -2267,9 +2274,9 @@ SakuyaFuneral:
   FlavorText: '"Je ne suis pas encore morte, ma dame."'
 SakuyaDetective:
   Name: Traque du Coupable
-  Description: "Lorsque vous jouez contre un vrai coupable, infligez-lui {Value1}\
-    \ dégât{Value1:plural one='' other='s'} au début du combat.\n({BossDamage} dégâts\
-    \ ont été accumulés)"
+  Description: "Piochez {Value2} carte{Value2:plural one='' other='s'}.\nLorsque vous\
+    \ jouez contre un vrai coupable, infligez-lui {Value1} dégât{Value1:plural one=''\
+    \ other='s'} au début du combat.\n({BossDamage} dégâts ont été accumulés)"
   FlavorText: Bien que vous ayez peut-être oublié, ce jeu est en fait un jeu d'enquête
     criminelle.
 MinengZhuru:
@@ -2428,7 +2435,7 @@ KnifeAim:
     \ tous les |Couteaux de lancer| en main, ils ciblent cet ennemi."
 BulletStudy:
   Name: Notes de Danmaku
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Surcharge\
     \ {Value2}| : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
   FlavorText: Étudiant les tirs de barrage ennemis afin de s'en approprier les connaissances,
     Marisa a publié de nombreux livres à un jeune âge.
@@ -2451,8 +2458,8 @@ UnlimitedTime:
   FlavorText: Désolé, mon temps est illimité.
 XiangziEcho:
   Name: Écho de la Vallée
-  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} dans
-    votre main, {Value1:plural one='elle obtient' other='elles obtiennent'} |Echo|.
+  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} de
+    votre main qui {Value1:plural one='obtient' other='obtiennent'} |Écho|.
   FlavorText: '"Ya—hoo—"'
 PatchouliLibrary:
   Name: Grande Bibliothèque Immobile
@@ -2494,7 +2501,7 @@ FairyOnIce:
 CirnoEcho:
   Description: Choisissez {Value1} carte{Value1:plural one='' other='s'} dans la pile
     de défausse et ajoutez-{Value1:plural one='la' other='les'} à votre main, en {Value1:plural
-    one='lui' other='leur'} conférant |Echo|.
+    one='lui' other='leur'} conférant |Écho|.
   Name: Don de la Nature
 HualiIce:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -2674,7 +2681,8 @@ Xiguadao:
 CirnoFire:
   Name: Glace Combustible
   Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLe coût\
-    \ est réduit de {Mana} pour chaque ennemi ayant |Froid|."
+    \ est réduit de {Mana} pour chaque ennemi ayant |Froid|.\nPour chaque ennemi qui\
+    \ a |Froid|, l'effet augmente de {Value2}."
 DoubleMana:
   Name: Réveil de la Fée
   Description: "Doublez votre mana actuel.\n|Découvert| {Value1}."
@@ -2709,15 +2717,15 @@ OtherBlock:
     \ {Value1} carte{Value1:plural one='' other='s'} en donnant la priorité aux cartes\
     \ d'autres personnages que {PlayerName}."
 DayaojingFriend:
-  Description: "{FriendP} infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ d'attaque à un ennemi aléatoire."
+  Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} d'attaque\
+    \ à un ennemi aléatoire."
   Name: "Daiyousei, Assistante d'Enquête"
-  ExtraDescription1: "{FriendA} gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
-  UpgradedExtraDescription1: "{FriendA} gagnez {Block} |Bouclier{Block:plural one=''\
+  ExtraDescription1: "{FriendA}Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  UpgradedExtraDescription1: "{FriendA}Gagnez {Block} |Bouclier{Block:plural one=''\
     \ other='s'}| et {Shield} |Barrière{Shield:plural one='' other='s'}|."
-  ExtraDescription2: "{FriendU} ajoutez {Value1} |Fleur{Value1:plural one='' other='s'}\
+  ExtraDescription2: "{FriendU}Ajoutez {Value1} |Fleur{Value1:plural one='' other='s'}\
     \ d'Été| à la main."
-  UpgradedExtraDescription2: "{FriendU} ajoutez {Value1} |Fleur{Value1:plural one=''\
+  UpgradedExtraDescription2: "{FriendU}Ajoutez {Value1} |Fleur{Value1:plural one=''\
     \ other='s'} d'Été+| à la main."
 FruitShake:
   Name: Glace Pilée aux Fruits
@@ -2725,28 +2733,28 @@ FruitShake:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis.\nSi une |alliée| a été invoquée ce tour-ci, {SelfName} coûte {Mana}."
 LilyFriend:
-  Description: "{FriendS} infligez {Damage} dégât{Damag:plural one='' other='s'} d'attaque\
-    \ à un ennemi aléatoire {Value1} fois.\n{FriendP} gagnez {TurnMana}."
-  ExtraDescription2: "{FriendU} restaurez {Heal} point{Heal:plural one='' other='s'}\
-    \ de vie."
+  Description: "{FriendS}Infligez {Damage} dégât{Damag:plural one='' other='s'} d'attaque\
+    \ à un ennemi aléatoire {Value1} fois.\n{FriendP}Gagnez {TurnMana}."
+  ExtraDescription2: "{FriendU}Gagnez {Heal} point{Heal:plural one='' other='s'} de\
+    \ vie."
   Name: "Lily, Annonciatrice de Printemps"
-  ExtraDescription1: "{FriendA} gagnez {ActiveMana}."
+  ExtraDescription1: "{FriendA}Gagnez {ActiveMana}."
 MaidFriend:
   Name: "Kasumi, la Bonne du Manoir"
-  Description: "{FriendP} infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ d'attaque à l'ennemi dont la vie est la moins élevée."
-  ExtraDescription2: "{FriendU} infligez ses dégâts. Toutes les {SelfName} infligent\
+  Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} d'attaque\
+    \ à l'ennemi dont la vie est la moins élevée."
+  ExtraDescription2: "{FriendU}Infligez ses dégâts. Toutes les {SelfName} infligent\
     \ {Value1} dégât{Value1:plural one=' supplémentaire' other='s supplémentaires'}."
   FlavorText: Kasumi est déjà la travailleuse la plus sérieuse parmi les servantes
     et les fées du Manoir du Démon Écarlate.
-  ExtraDescription1: "{FriendA} infligez ses dégâts. Ajoutez {Value2} |Couteau{Value2:plural\
+  ExtraDescription1: "{FriendA}Infligez ses dégâts. Ajoutez {Value2} |Couteau{Value2:plural\
     \ one='' other='x'} de Lancer| à votre main."
 LarvaFriend:
   Name: "Larva, Déesse de la Nuit d'Été"
-  ExtraDescription1: '{FriendA} |améliorez| toutes les cartes en main.'
-  ExtraDescription2: "{FriendU} appliquez {Value2} |Poison{Value2:plural one='' other='s'}|\
+  ExtraDescription1: '{FriendA}|Améliorez| toutes les cartes en main.'
+  ExtraDescription2: "{FriendU}Appliquez {Value2} |Poison{Value2:plural one='' other='s'}|\
     \ à tous les ennemis, et déclenchez les dégâts de |poison| une fois."
-  Description: "{FriendP} appliquez {Value1} |Poison{Value1:plural one='' other='s'}|\
+  Description: "{FriendP}Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|\
     \ à un ennemi aléatoire."
 InstantFreeze:
   Name: Refroidissement Rapide
@@ -2764,34 +2772,37 @@ ChooseFriend:
     \ et de propriétaire."
 LunaFriend:
   Name: "Luna, Clair de Lune Silencieux"
-  Description: "{FriendP} gagnez {Block} |Bouclier{Block:plural one='' other='s'}|"
-  ExtraDescription2: "{FriendU} gagnez |Perfection| pendant {Value2} tour{Value2:plural\
+  Description: "{FriendP}Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  ExtraDescription2: "{FriendU}Gagnez |Perfection| pendant {Value2} tour{Value2:plural\
     \ one='' other='s'}."
-  ExtraDescription1: "{FriendA} infligez {Damage} dégât{Damage:plural one='' other='s'}\
+  ExtraDescription1: "{FriendA}Infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ d'attaque à un ennemi aléatoire {Value1} fois."
 StarFriend:
   Name: "Star, Pluie d'Étoiles Filantes"
-  Description: "{FriendP} infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ d'attaque à tous les ennemis."
-  ExtraDescription1: '{FriendA} infligez ses dégâts {Value1} fois.'
-  ExtraDescription2: "{FriendU} Infligez ses dégâts {Value2} fois en appliquant à\
-    \ chaque fois {Light} |Verrouillé{Light:plural one='' other='s'}|."
+  Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} d'attaque\
+    \ à tous les ennemis."
+  ExtraDescription1: '{FriendA}Infligez ses dégâts {Value1} fois.'
+  ExtraDescription2: "{FriendU}Infligez ses dégâts {Value2} fois en appliquant à chaque\
+    \ fois {Light} |Verrouillé{Light:plural one='' other='s'}|."
 SunnyFriend:
   Name: "Sunny, Lumière Solaire Scintillante"
-  ExtraDescription2: "{FriendU} infligez {Value1} dégât{Value1:plural one='' other='s'}.\n\
+  ExtraDescription2: "{FriendU}Infligez {Value1} dégât{Value1:plural one='' other='s'}.\n\
     Gagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
-  Description: "{FriendP} infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ d'attaque à un ennemi aléatoire {Value1} fois."
-  ExtraDescription1: "{FriendA} gagnez |camouflage optique| pendant {Light} tour{Light:plural\
+  Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} d'attaque\
+    \ à un ennemi aléatoire {Value1} fois."
+  ExtraDescription1: "{FriendA}Gagnez |camouflage optique| pendant {Light} tour{Light:plural\
     \ one='' other='s'}."
 ClownpieceFriend:
   Name: "Clownpiece, Fée des Enfers"
-  Description: '{FriendS} gagnez {StartMana}.'
-  ExtraDescription1: "{FriendA} piochez {Value1} carte{Value1:plural one='' other='s'}\
+  Description: '{FriendS}Gagnez {StartMana}.
+
+    {FriendP}Gagnez {Value2} |Puissance{Value2:plural one='' temporaire'' other=''s
+    temporaires''}|.'
+  ExtraDescription1: "{FriendA}Piochez {Value1} carte{Value1:plural one='' other='s'}\
     \ et mélangez une |Folie| dans la pile de défausse."
-  ExtraDescription2: '{FriendU} gagnez {Mana}, et mélangez une |Folie| dans la pile
+  ExtraDescription2: '{FriendU}Gagnez {Mana}, et mélangez une |Folie| dans la pile
     de défausse.'
-  UpgradedExtraDescription1: "{FriendA} piochez {Value1} carte{Value1:plural one=''\
+  UpgradedExtraDescription1: "{FriendA}Piochez {Value1} carte{Value1:plural one=''\
     \ other='s'}."
 Lunatic:
   Name: Folie
@@ -2804,12 +2815,12 @@ Lunatic:
     réunies, |exilez|-les, et {PlayerName} perd {Value2} point{Value2:plural one=''
     other='s'} de vie.
 LeidiFriend:
-  ExtraDescription2: "{FriendU} infligez {Damage} dégât{Damage:plural one='' other='s'}\
+  ExtraDescription2: "{FriendU}Infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ et |froid| à tous les ennemis."
   FlavorText: L'hiver arrive. L'hiver est arrivé. Combattez à nouveau l'hiver. Hiver
     suivant.
   Name: Letty, Incarnation de l'Hiver
-  Description: '{FriendP} appliquez |froid| à un ennemi aléatoire.'
+  Description: '{FriendP}Appliquez |froid| à un ennemi aléatoire.'
 LarvaDefense:
   Name: Battement d'Ailes
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAppliquez\
@@ -2882,7 +2893,7 @@ LoveFire:
 BabyDream:
   Name: Rêve Fœtal
   Description: (WIP) Tous les coûts des cartes |basiques| sont temporairement transformés
-    en {Mana} avec |Echo|.
+    en {Mana} avec |Écho|.
 AliceAttackW:
   Name: Bunraku du Futur
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -3006,11 +3017,29 @@ KisumeAttack:
   NonbattleDescription: Inflige des dégâts égaux au nombre de cartes dans la pioche.
 ShirenKunchong:
   Name: Insecte Cannibale
-  Description: "(WIP) Inflige {Damage} dégât{Damage:plural one='' other='s'} à tous\
-    \ les ennemis.\n{PlayerName} gagne {Value1} |Bouclier{Value1:plural one='' other='s'}|\
-    \ lorsque l'ennemi subit un |Malus|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    Lorsque l'ennemi gagne un |Malus|, {PlayerName} gagne {Value1} |Bouclier{Value1:plural\
+    \ one='' other='s'}|."
 DoubleJK:
   Name: Double Esper du Siècle
-  Description: "(WIP) {PlayerName} ne peut jouer que {Value1} carte{Value1:plural\
-    \ one='' other='s'} par tour.\nLorsque {PlayerName} termine son tour, si ce tour\
-    \ n'est pas un tour supplémentaire, gardez le blocage et effectuez un tour supplémentaire."
+  Description: "{PlayerName} ne peut jouer que {Value1} carte{Value1:plural one=''\
+    \ other='s'} par tour.\nLorsque {PlayerName} termine son tour, si ce tour n'est\
+    \ pas un tour supplémentaire, gardez les |Boucliers| gagnés et effectuez un tour\
+    \ supplémentaire."
+AnimalSpirit:
+  UpgradedDescription: "Toutes les autres cartes en main et {Value1} carte{Value1:plural\
+    \ one='' other='s'} de la pioche sont possédées par des esprits animaux, ce qui\
+    \ leur confère l'un des effets suivants :\nLoup : Gagne |Écho|.\nLoutre : Gagne\
+    \ |Renfloue|.\nAigle : Coûte temporairement {Mana}."
+  Name: Soulèvement du Royaume des Bêtes
+  Description: "Toutes les autres cartes en main sont possédées par des esprits animaux,\
+    \ ce qui leur confère l'un des effets suivants :\nLoup : Gagne |Écho|.\nLoutre\
+    \ : Gagne |Renfloue|.\nAigle : Coûte temporairement {Mana}."
+YukariFriend:
+  Name: Yukari, Frontière de la Fantaisie
+  Description: '{FriendP}Gagnez autant de |Puissance| que le nombre de cartes de défense
+    jouées ce tour.'
+  ExtraDescription1: '{FriendA}Choisissez une carte |exilée|. Ajoutez-en une |copie|
+    à la main qui |coûte temporairement| {Mana}.'
+  ExtraDescription2: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
+    neutre tricolore aléatoire à la main.'
