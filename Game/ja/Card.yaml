@@ -78,7 +78,9 @@ ReimuBlockR:
   FlavorText: 手を一振りしただけで迫る弾幕を止めたというのなら、その者は救世主と称されることだろう。
 YaoguaiBuster:
   Name: 妖怪バスター
-  Description: '{Damage}ダメージを{Value1}回与える。'
+  Description: '{Damage}ダメージを{Value1}回与える。
+
+    |脱力|{Value2}を与える。'
   FlavorText: 「ぎゃふん」と言わせるだけじゃ足りないわ！進化して「ぎゃふん！！ぎゃふん！！」と言わせるのよ！
 Fengmozhen:
   Name: 封魔針
@@ -124,6 +126,7 @@ TwoBalls:
   Name: 均衡の玉
   Description: '|陰陽玉|を{Value1}枚手札に加える。'
   FlavorText: 陰と陽は万物の根源である太極から生じた二極である。
+  UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\nそれらのコストを{Mana}減らす。"
 MingzhuAntou:
   Name: 明珠暗投
   Description: "敵全体に{Damage}のダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
@@ -264,8 +267,10 @@ CraftPotion:
     カードを{Value2}枚引く。'
 RedLaser:
   Name: バーニングレーザー
-  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：ダメージを2回与える。"
-  UpgradedDescription: '{Damage}ダメージを{Value1}回与える。'
+  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：代わりに{Value1}ダメージと|弱体|{Vulnerable}を与える。"
+  UpgradedDescription: '{Damage}ダメージを与える。
+
+    |弱体|{Vulnerable}を与える。'
 SatelliteIllusion:
   Name: サテライトイリュージョン
   Description: "{Damage}ダメージを与える。\n|星占い|を{Value1}枚手札に加える。"
@@ -851,9 +856,10 @@ PrivateVision:
 KnifeBounce:
   Description: "{Damage}ダメージを与える。\n|投げナイフ|を{Value1}枚手札に加える。"
   Name: 跳弾するナイフ
+  UpgradedDescription: "{Damage}ダメージを与える。\n|投げナイフ|{Value1}枚を手札に加える。\n|ロックオン|{Value2}を与える。"
 Lijian:
   Name: 離剣乱舞
-  Description: "{Damage}ダメージを与える。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}少なくする。"
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}少なくする。"
 SakuyaDetective:
   Name: 指名手配
   Description: "カードを{Value2}枚引く。\n黒幕との戦闘で、戦闘開始時に{Value1}ダメージを与える。\n（累計{BossDamage}ダメージ）"
@@ -892,7 +898,7 @@ CoolMaid:
   Name: 瀟洒なメイド
   Description: "|投げナイフ|を{Value1}枚手札に加える。\n{Mana}を得る。"
 BladePower:
-  Description: "|火力|{Value1}を得る。\n|手札に入る時|：手札に他のカードが無い場合このカードの|臨時コスト|を{Mana}にする。"
+  Description: "|火力|{Value1}を得る。\n|手札に加わった時|：手札に他のカードが無い場合、このカードの効果は倍になる。（手札にある間のみ）"
   Name: シルバーダッシュ
 Dejavu:
   Name: デジャヴ
@@ -905,6 +911,7 @@ CleanRoom:
 SakuyaSleep:
   Name: 一休み
   Description: "|幻虹|を手札に加える。\n{PlayerName}のターンを終了する。"
+  UpgradedDescription: '|幻虹|を手札に加える。'
 TimeAuraAttack:
   Name: タイムマジック
   Description: "{Damage}ダメージを与える。\n|タイムパルス| {Value1} を得る。"
@@ -970,7 +977,7 @@ SakuyaAttackX:
   Description: '|{Mana}につき|：{Damage}ダメージを与える。'
   Name: シルバープッシュ
 SakuyaDraw:
-  Description: このカードを捨てた時、カードを{Value1}枚引く。
+  Description: このカードを捨てるか|廃棄|した時、カードを{Value1}枚引く。
   Name: 完全無欠
 SakuyaGraze:
   Name: 偶然の回避
@@ -1047,7 +1054,7 @@ YuetuYuyi:
   Description: '|天衣無縫|{Value1}を得る。'
   Name: 月の羽衣
 ShuimiUnderWater:
-  Description: このカードを捨てた時、{Mana}を得る。
+  Description: このカードを捨てるか|廃棄|した時、{Mana}を得る。
   Name: 船底の念縛霊
 DropToKnife:
   Description: "手札を{Value1}枚捨てる。\n捨てた枚数と同じ数の|投げナイフ|を手札に加える。"
@@ -1064,7 +1071,7 @@ HuaBlock:
   Name: 作戦姿勢
 HuiyeMana:
   Name: 竹取物語
-  Description: '{PlayerName}のターン開始時にランダムなマナ{Value1}点を得る。ターン毎に得るマナが{Value1}点増える。'
+  Description: '{PlayerName}のターン開始時に{Mana}を{Value1}点得る。ターン毎に得るマナが{Value1}点増える。'
 MeihongPower:
   Name: 不死の炎
   Description: "{PlayerName}のターンが開始時、|火力|{Value1}を得る。\n戦闘終了時、{PlayerName} のライフが半分以下の場合、ライフを{Value2}回復する。"
@@ -1086,7 +1093,7 @@ SakuraBlade:
   Description: "{Damage}ダメージを{Value1}回与える。\n|ロックオン|{Value1}を与える。\n|グレイズ|{Value1}を得る。"
 RuowujiCard:
   Name: 逆鱗の荒波
-  Description: 敵全体に{Damage}ダメージを与える、|溺水|{Value1}を与える。
+  Description: "敵全体に{Damage}ダメージを与える、|溺水|{Value1}を与える。\n|溺水|は重複しない。"
 LifeGame:
   Name: 生命遊戯-ライフゲーム-
   Description: "隣接するカードの|臨時コスト|を{Mana}にする。"
@@ -1194,7 +1201,7 @@ BrokenTimeline:
   Name: 壊れた時間軸
   Description: '{PlayerName}はターンを終了し、追加ターンを得る。
 
-    そのターンは開始時に得られるマナが0となる'
+    そのターンはターン開始時にマナ基盤のマナを得ることができない。'
 UnlimitedTime:
   Name: 完全なる時停め
   FlavorText: すまないわね、ここから先は私の時間よ。
@@ -1297,17 +1304,15 @@ IceLance:
 CirnoConsider:
   Name: 審念熟慮
   Description: '|チョイス|：{Block}|ブロック|を得る、もしくはカードを{Value1}枚引く。'
+  ExtraDescription1: '{Block}|ブロック|を得る。'
+  ExtraDescription2: カードを{Value1}枚引く。
 CoolBreeze:
   Name: 夏の爽風
   Description: "{Block}|ブロック|を得る。\nいずれかの敵に|冷気|が付与されている場合、手札のカードを{Value1}枚|アップグレード|する。"
-CirnoConsiderDefense:
-  Description: '|ブロック|を得る。'
 FrostGarden:
   Name: 冷霧の花園
   UpgradedDescription: "敵全体に|冷気|を与える。\n次のターン開始時これを再度行う。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
   Description: "敵全体に|冷気|を与える。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
-CirnoConsiderDraw:
-  Description: カードを引く。
 ZhenmiaowanAttack:
   Name: 一寸法師の末裔
   Description: "{Damage}ダメージを与える。\nこのターン、スキルカードのコストを{Mana}減らす。"
@@ -1460,6 +1465,7 @@ GuijiZaoxingFang:
 ShannvAttack:
   Description: "{Damage}ダメージを与える。\n|毒|{Value1}を与える。"
   Name: フィルドミアズマ
+  UpgradedDescription: "{Damage}ダメージを与える。\n敵全体に|毒|{Value1}を与える。"
 ShannvAbility:
   Name: 原因不明の熱病
   Description: '{PlayerName}のターン終了時、敵全体に|毒|{Value1}を与える。'
@@ -1489,20 +1495,18 @@ CirnoFestival:
 DiamondBlizzard:
   Name: ダイヤプリズム
   Description: "敵全体に{Damage}ダメージを与える。\n|チョイス|： 敵全体に|冷気|を与える； {Block}|ブロック|を得る。"
-DiamondBlizzardDefense:
-  Description: ダメージを与え、|ブロック|を得る。
+  ExtraDescription1: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える。"
+  ExtraDescription2: "敵全体に{Damage}ダメージを与える。\n{Block}|ブロック|を得る。"
 FruitShake:
   Name: フルーツクラッシュアイス
   Description: "敵全体に{Damage}ダメージを与える。\nこのターン中に|パートナー|を召喚している場合、{SelfName}のコストを{Mana}にする。"
-DiamondBlizzardCold:
-  Description: ダメージを与え、|冷気|を与える。
 FairyTeam:
   Name: 妖精大戦争
   Description: "手札の|パートナー|カードを任意の枚数|廃棄|し、それらのマナコストに等しいマナを得る。\nランダムな敵に{Damage}ダメージを与える。\n\
     |廃棄|した枚数分だけダメージの回数を追加する。"
 FairyTree:
   Name: 妖精の家
-  Description: '|パートナー|を召喚する度、|ブロック|{Value1}を得る。'
+  Description: 'パートナーカードを使用して|パートナー|を召喚する度、|ブロック|{Value1}を得る。'
 SummerParty:
   Name: 冰爽なるパーティー
   Description: "|フロストアーマー|{Value1}を得る。\n手札の全ての|パートナー|は|支援度|{Value2}を得る。"
@@ -1559,7 +1563,7 @@ LanCard:
   Description: "{Value1}枚のランダムなアンコモンカードから１枚を選び、手札に加える。\nそのカードの|臨時コスト|を{Mana}にして、|廃棄|と|虚無|を与える。"
   Name: 式神の護り
 TiangouOrder:
-  Description: "{Damage}ダメージを与える。\n敵にダメージを与えた時、{PlayerName}は{Value1}|ブロック|を得る。"
+  Description: "{Damage}ダメージを与える。\nその敵に攻撃によるダメージを与える度、{PlayerName}は{Value1}|ブロック|を得る。"
   Name: 大天狗の号令
 RemiliaBat:
   Description: "|臨時火力|{Value1}を得る。\n|グレイズ|{Value2}を得る。"
@@ -1834,3 +1838,25 @@ DoubleDajiejie:
 MojingShanjie:
   Name: 魔浄閃結
   Description: "{Value1}枚のランダムな防御カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
+PoisonTeaParty:
+  Description: "|毒|{Value1}を与える。\nその敵の|毒|の数値に等しい|ブロック|を得る。"
+  Name: 疑惑のティーパーティー
+ShirenKunchong:
+  Name: 人喰い虫
+  Description: "敵全体に{Damage}ダメージを与える。\nそれらの敵がデバフを受ける度、{PlayerName}は{Value1}|ブロック|を得る。"
+KisumeAttack:
+  Description: 現在の山札の枚数と同じダメージを与える。（{Damage}ダメージ）
+  NonbattleDescription: 現在の山札の枚数と同じダメージを与える。
+  Name: 釣瓶落としの怪
+DoubleJK:
+  Description: "{PlayerName}は各ターンにカードを{Value1}枚しか使用できない。\n{PlayerName}が|追加ターン|でないターンを終了する度、ブロックを|保留|した状態で|追加ターン|を開始する。"
+AnimalSpirit:
+  Name: 畜生界の大反乱
+  Description: "手札の他のカードが動物霊に憑依され、以下の効果を得る。\nオオカミ霊：|反復|を得る。\nカワウソ霊：|補充|を得る。\nオオワシ霊：臨時コスト{Mana}になる。"
+  UpgradedDescription: "手札の他のカードと山札のランダムな{Value1}枚のカードが動物霊に憑依され、以下の効果を得る。\nオオカミ霊：|反復|を得る。\n\
+    カワウソ霊：|補充|を得る。\nオオワシ霊：臨時コスト{Mana}になる。"
+YukariFriend:
+  Name: 幻想の境界、八雲紫
+  Description: '{FriendP}このターンに使用した防御カードの枚数に等しい|火力|を得る。'
+  ExtraDescription2: '{FriendU}{PlayerName}のターン開始時、ランダムな三色の共通レアカードを1枚手札に加える。'
+  ExtraDescription1: '{FriendA}|廃棄済み|のカードを1枚選ぶ。そのカードの臨時コスト{Mana}のコピーを手札に加える。'
