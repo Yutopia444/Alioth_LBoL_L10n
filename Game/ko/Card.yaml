@@ -13,7 +13,7 @@ ReimuBlockR:
 YaoguaiBuster:
   FlavorText: 요괴가 "아악"이라고 울 뿐만 아니라, 업그레이드 하고 나면 "아아악"하고 운다니까요!
   Name: 요괴 버스터
-  Description: 피해를 {Damage}씩 {Value1}번 줍니다.
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|허약|을 {Value2} 줍니다."
 DoubleJiejie:
   Name: 이중결계
   Description: "피해를 {Damage} 줍니다.\n만약 {PlayerName}가 |보호막|을 갖고 있다면,\n피해를 {Damage}씩\
@@ -374,7 +374,7 @@ ShinningPotion:
 RedLaser:
   Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 대신 피해를 {Damage}씩 {Value1}번 줍니다."
   Name: 가연 레이저
-  UpgradedDescription: 피해를 {Damage}씩 {Value1}번 줍니다.
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|허약|을 {Vulnerable} 줍니다."
   FlavorText: 겨울철 동파 사고 예방 조치.
 Potion:
   Name: 불안정한 물약
@@ -798,7 +798,8 @@ SakuyaSleep:
   UpgradedDescription: '|채홍|을 한 장 얻습니다.'
 Lijian:
   Name: 흐릿한 칼날
-  Description: "피해를 {Damage} 줍니다.\n|카드를 뽑을 시|: 이번 전투에서 코스트가 {Mana} 감소합니다."
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|카드를 뽑을 시|: 이번 전투에서 코스트가 {Mana}\
+    \ 감소합니다."
 SakuyaBlockU:
   Name: 위험 감지
   Description: '|방어|를 {Block} 얻습니다.'
@@ -984,6 +985,7 @@ ManaJungle:
 KnifeBounce:
   Name: 나이프 도탄
   Description: "피해를 {Damage} 줍니다.\n|단검|을 {Value1}장 얻습니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|단검|을 {Value1}장 얻습니다.\n|록온|을 {Value2} 줍니다."
 ChargingToMana:
   Name: 차지 컨버터
   Description: 모든 |충전|을 잃습니다. 이렇게 잃은 |충전|만큼 {Mana}를 얻고 카드를 한 장 뽑습니다.
@@ -1076,7 +1078,7 @@ AyaNewsCirnoSp:
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
   FlavorText: 월도만상전 특집! {PlayerName}와 관련된 유언비어들을 한데 모았다!
 SakuyaDraw:
-  Description: '|버릴 시|: 카드를 {Value1}장 뽑습니다.'
+  Description: '|버리거나 소멸될 시|: 카드를 {Value1}장 뽑습니다.'
   Name: 흠 없는 완벽함
 PrepareParty:
   Description: "손의 카드 한 장을 뽑을 카드 더미의 맨 위에 올려놓습니다.\n|방어|를 {Block} 얻습니다."
@@ -1112,7 +1114,7 @@ TimeLord:
   Description: '|시간 펄스|를 {Value1} 얻습니다.'
   Name: 시공의 지배자
 SakuyaDio:
-  Name: 네 차례다
+  Name: 다음은 너다!
   Description: "|단검|을 사용할 때, 적에게 |록온|을 {Value1} 줍니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n\
     해당 추가 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
 ShengquanZaiwo:
@@ -1318,7 +1320,7 @@ NitoriUnderWater:
   Description: '|광학미채|를 {Value1} 얻습니다.'
 ShuimiUnderWater:
   Name: 가라앉은 뱃유령
-  Description: '|버릴 시|: {Mana}를 얻습니다.'
+  Description: '|버리거나 소멸될 시|: {Mana}를 얻습니다.'
 SakuyaLock:
   Name: 타임 락다운
   Description: "<color=#B7F0FF>사쿠야</color>의 |실버 락다운|을 발동시킵니다.\n(피해를 {Value1} 받습니다.)"
@@ -1354,8 +1356,8 @@ ColdSnap:
 DiamondBlizzard:
   Name: 다이아몬드 블리자드
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|선택|: 모든 적에게 |빙결|을 가합니다; 혹은 |방어|를 {Block} 얻습니다."
-DiamondBlizzardCold:
-  Name: '다이아몬드 블리자드: 한랭'
+  ExtraDescription1: "모든 적에게 피해를 {Damage} 줍니다.\n모든 적에게 |빙결|을 가합니다."
+  ExtraDescription2: "모든 적에게 피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다."
 ColdChain:
   Description: 뽑을 카드 더미에서 최대 {Value1}장을 골라 손으로 가져옵니다. 해당 카드는 |보존|이 붙습니다.
   Name: 콜드 체인
@@ -1397,8 +1399,8 @@ HuiyinRetain:
 CirnoConsider:
   Name: 심사숙고
   Description: '|선택|: |방어|를 {Block} 얻습니다; 혹은 카드를 {Value1}장 뽑습니다.'
-CirnoConsiderDefense:
-  Description: '|방어|를 얻습니다.'
+  ExtraDescription1: '|방어|를 {Block} 얻습니다.'
+  ExtraDescription2: 카드를 {Value1}장 뽑습니다.
 CirnoConsiderDraw:
   Description: 카드를 뽑습니다.
 FairyWrath:
@@ -1407,8 +1409,6 @@ FairyWrath:
     \ 얻습니다."
   UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n손에 소환된 |탐험 조수, 대요정|이 있을 경우 |한여름의\
     \ 꽃+|을 {Value1}장 얻습니다."
-DiamondBlizzardDefense:
-  Description: 피해를 가하면서 |방어|를 얻습니다.
 FairyAllOut:
   Name: 전원 출동
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n손에 있는 모든 소환된 |동료| 카드의 |f:패시브 능력|을 발동시킵니다."
@@ -1456,7 +1456,7 @@ Xiguadao:
   FlavorText: 초⑨무신패참!
 HuiyeMana:
   Name: 타케토리모노가타리
-  Description: 내 턴 시작 시 무작위 마나를 {Value1}개 얻습니다. 매 턴마다 {Value1}씩 증가합니다.
+  Description: 내 턴 시작 시 {Mana}를 {Value1}개 얻습니다. 매 턴마다 {Value1}씩 증가합니다.
   FlavorText: 반짝이는 죄인의 전설을 들려주는 자장가.
 RangziSeed:
   UpgradedDescription: 뽑을 카드 더미의 맨 위에 |보충|이 붙은 |채홍|을 한 장 추가합니다.
@@ -1575,6 +1575,7 @@ VampireShoot1:
 ShannvAttack:
   Description: "피해를 {Damage} 줍니다.\n|중독|을 {Value1} 줍니다."
   Name: 필드 미아즈마
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n모든 적에게 |중독|을 {Value1} 줍니다."
 YuyukoDebuff:
   Name: 무수의 꿈
   Description: '|허약|과 |취약|을 {Value1} 줍니다.'
@@ -1822,7 +1823,7 @@ LongArm:
     \ 시 {Mana}를 얻습니다."
 RuowujiCard:
   Name: 역린의 거친 파도
-  Description: 모든 적에게 피해를 {Damage} 주고 |침수|를 {Value1} 줍니다.
+  Description: "모든 적에게 피해를 {Damage} 주고 |침수|를 {Value1} 줍니다.\n|침수| 스택은 누적되지 않습니다."
 BaitianCard:
   Description: "|방어|를 {Block} 얻습니다.\n버린 카드 더미에서 카드를 한 장 골라 뽑을 카드 더미의 맨 위로 보내고, 해당\
     \ 카드의 무작위 코스트를 {Value1} 감소시킵니다."
