@@ -22,7 +22,8 @@ DoubleJiejie:
   FlavorText: Se puede ver un mundo que se refleja infinitamente con solo dos espejos.
 YaoguaiBuster:
   Name: Cazadora de Youkais
-  Description: Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}.
+  Description: "Inflige {Damage} de daño {Value1} {Damage:plural one='vez' other='veces'}.\n\
+    Aplica {Value2} de |Débil|."
   FlavorText: ¡Los Youkais no solo gritan "AUCH", sino también "AARGH" después de
     que se mejore la carta!
 Fengmozhen:
@@ -439,7 +440,7 @@ IceLaser:
   UpgradedDescription: "Inflige {Damage} de daño.\nAplica |Frío|.\nSe repite el efecto\
     \ en otro enemigo aleatorio."
 NewsTidbit:
-  Description: "Gana {Value1} |Marcados|.\n|Limitado【{DeckCounter}】|"
+  Description: "Ganas {Value1} de |Marcado|.\n|Limitado【{DeckCounter}】|"
   Name: Chismes
 WolfFur:
   Name: Pelaje de Lobo
@@ -475,7 +476,7 @@ ToolUpgrade:
 Zhukeling:
   Name: Orden de Desalojo
 Wushuai:
-  Description: '|Cuando se roba|: Gana {Value1} |Marcado| y se |Exilia| {SelfName}.'
+  Description: '|Cuando se roba|: Gana {Value1} de |Marcado| y se |Exilia| {SelfName}.'
   Name: Espada Brillante
 XiaosanJingxia:
   Description: '|Al final del turno|: Gana {Value1} |Débil|.'
@@ -628,9 +629,9 @@ SenluoJiejie:
     \ pierde toda la |Barrera| e infligiendo el mismo daño a cada enemigo."
 RedLaser:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Inflige {Value1}\
-    \ veces seguidas en su lugar."
+    \ de daño y aplica {Vulnerable} de |Vulnerable|."
   Name: Láser Inflamable
-  UpgradedDescription: Inflige {Damage} de daño {Value1} veces.
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Vulnerable} de |Vulnerable|."
   FlavorText: Uno de las habilidades para afrontar la época de invierno.
 Potion:
   Name: Poción Inestable
@@ -975,9 +976,12 @@ KnifeBounce:
     \ other='% Cuchillos Arrojadizos'}| a la mano."
   FlavorText: Los cuchillos arrojadizos lanzados por Sakuya parecen ser bastantes,
     pero todos fueron recogidos del suelo después de que detuvo el tiempo.
+  UpgradedDescription: "Inflige {Damage} de daño.\nAñade |{Value1:plural one='% Cuchillo\
+    \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano.\nAplica {Value2} de\
+    \ |Marcado|."
 Lijian:
-  Description: "Inflige {Damage} de daño.\n|Cuando se roba|: {SelfName} cuesta {Mana}\
-    \ menos en este combate."
+  Description: "Inflige {Damage} de daño.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'}.\n|Cuando se roba|: {SelfName} cuesta {Mana} menos en este combate."
   Name: Vista de Hoja Distante
 CoolMaid:
   Description: "Añade |{Value1:plural one='% Cuchillo Arrojadizo' other='% Cuchillos\
@@ -1131,7 +1135,8 @@ AutoKnife:
     \ Arrojadizos'} a la mano."
 SakuyaDraw:
   Name: Conseguir la Perfección
-  Description: "|Cuando se descarta|: Roba {Value1:plural one='% carta' other='% cartas'}."
+  Description: "|Cuando se descarta o Exilia|: Roba {Value1:plural one='% carta' other='%\
+    \ cartas'}."
 ShengquanZaiwo:
   Name: Apuesta Segura
   Description: Gana {Mana}.
@@ -1157,7 +1162,7 @@ ExileMagic:
     \ mano. Añade esa cantidad de |Cuchillos Arrojadizos| a la mano."
 SakuyaInvestigate:
   Name: Detective del Tiempo Detenido
-  Description: "Aplica {Value1} |Marcado|.\nAl comienzo de cada turno extra, devuelve\
+  Description: "Aplica {Value1} de |Marcado|.\nAl comienzo de cada turno extra, devuelve\
     \ {SelfName} del |Exilio| a la mano."
 SakuyaAttackX:
   Name: Propulsión Plateada
@@ -1185,9 +1190,9 @@ SpecialClock:
     Después roba esa misma cantidad de cartas.
   FlavorText: 'Tiempo de limpieza de la sala de descanso: 0,4 segundos'
 SakuyaDio:
-  Name: Tu eres el Siguiente
+  Name: Tu eres el Siguiente!
   Description: "Cuando un |Cuchillo Arrojadizo| es usado, ahora también aplica {Value1}\
-    \ |Marcado|.\nFinaliza el turno. Luego, {PlayerName} toma un turno extra. Durante\
+    \ de |Marcado|.\nFinaliza el turno. Luego, {PlayerName} toma un turno extra. Durante\
     \ ese turno, añade |{Value2:plural one='% Cuchillo Arrojadizo' other='% Cuchillos\
     \ Arrojadizos'}| a la mano en lugar de robar cartas durante el fase de robo."
 TunnelEffect:
@@ -1371,7 +1376,7 @@ KokoroAttack:
   FlavorText: Estoy seriamente preocupada por la cuestión de qué llevar para mi próxima
     comida.
 ShuimiUnderWater:
-  Description: '|Cuando se descarta|: Gana {Mana}.'
+  Description: '|Cuando se descarta o Exilia|: Gana {Mana}.'
   Name: Fantasma del Barco
 DoremyDuplicate:
   Name: Perdido en el Paraíso
@@ -1405,6 +1410,8 @@ XiaoemoBook:
 ShannvAttack:
   Name: Miasma Filtrado
   Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Veneno|."
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Veneno| a cada\
+    \ enemigo."
 YuyukoDebuff:
   Name: Sueño Eterno
   Description: Aplica {Value1} de |Débil| y |Vulnerable|.
@@ -1579,7 +1586,7 @@ DizangLove:
   Name: Bodhi Instantáneo
 HuiyeMana:
   FlavorText: Esta canción de cuna cuenta una historia de privilegiados pecadores.
-  Description: Al comienzo del turno de {PlayerName}, gana {Value1} de maná aleatorio;
+  Description: Al comienzo del turno de {PlayerName}, gana {Value1} de maná {Mana},
     aumenta en {Value1} cada turno.
   Name: Cuento del Cortador de Bambú
 TianziMana:
@@ -1789,7 +1796,8 @@ LimaoAttack:
     \ Gana {Mana} más."
 RuowujiCard:
   Name: Olas de Escala Invertida
-  Description: "Inflige {Damage} de daño y aplica {Value1} de |Ahogar| a cada enemigo."
+  Description: "Inflige {Damage} de daño y aplica {Value1} de |Ahogar| a cada enemigo.\n\
+    El efecto |Ahogar| no se acumula."
 PrismriverAll:
   Name: Concierto Prísmico
   Description: "Gana {Mana}.\nConvierte todo el maná que {PlayerName} ganaría en este\
@@ -2126,6 +2134,9 @@ DiamondBlizzard:
   Name: Pilar de Diamante
   Description: "Inflige {Damage} de daño a todos los enemigos.\n|Elegir|: Aplica |Frío|\
     \ a todos los enemigos; o obtén {Block} de |Bloqueo|."
+  ExtraDescription1: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada\
+    \ enemigo."
+  ExtraDescription2: "Inflige {Damage} de daño a cada enemigo.\nObtén {Block} de |Bloqueo|."
 FreezeRiver:
   Name: Hielo Flotante
   Description: Agrega a la mano la carta que esta en la parte inferior de la pila
@@ -2160,6 +2171,8 @@ CirnoConsider:
   Name: Cuidadosa Deliberación
   Description: "|Elegir|: Obtén {Block} de |Bloqueo|, o roba {Value1} carta{Value1:plural\
     \ one='' other='s'}."
+  ExtraDescription1: Obtén {Block} de |Bloqueo|.
+  ExtraDescription2: Roba {Value1} carta{Value1:plural one='' other='s'}.
 ColdSnap:
   Name: Frescor Rápido
   Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
@@ -2173,8 +2186,6 @@ FairyAllOut:
   Name: Chicas, Manos a la Obra
   Description: "Inflige {Damage} de daño a todos los enemigos.\nTodas las |Compañeras|\
     \ convocadas en la mano activan su |f:Habilidad Pasiva|."
-DiamondBlizzardCold:
-  Description: Inflige daño y después aplica |Frío|.
 DiamondBlizzardDefense:
   Description: Inflige daño y después obtén |Bloqueo|.
 FakeMoon:
@@ -2188,8 +2199,6 @@ FakeMoon:
 OptBottom:
   Name: Hundirse
   Description: Coloca {TargetName} en la parte inferior de la pila de robo.
-CirnoConsiderDefense:
-  Description: Obtén |Bloqueo|.
 CirnoConsiderDraw:
   Description: Roba Cartas
 LarvaCure:
@@ -2304,7 +2313,7 @@ StarFriend:
   Description: '{FriendP}Inflige {Damage} de daño a cada enemigo.'
   ExtraDescription1: '{FriendA}Inflige {Damage} de daño a cada enemigo {Value1} veces.'
   ExtraDescription2: "{FriendU}Siempre que {SelfName} inflija daño, aplica {Light}\
-    \ |Marcado|.\nInmediatamente inflige {Damage} de daño a cada enemigo {Value2}\
+    \ de |Marcado|.\nInmediatamente inflige {Damage} de daño a cada enemigo {Value2}\
     \ veces."
   Name: Star, Lluvia de Luz Estelar
 ClownpieceFriend:
@@ -2388,7 +2397,7 @@ HatateShot:
   Name: Foto Panorámico
 DoubleDajiejie:
   Description: "Obtén {Block} de |Bloqueo|.\nObtén {Shield} de |Barrera|."
-  Name: Gran Barrera Duplex
+  Name: Gran Barrera Dúplex
 AliceBlockU:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Barrera de Danmaku
@@ -2471,7 +2480,7 @@ YukariFriend:
   Name: Yukari, Frontera de la Fantasía
   ExtraDescription2: '{FriendU}Al comienzo de cada turno de {PlayerName}, agrega una
     carta neutral aleatoria de tres colores a la mano.'
-  Description: '{FriendP}Obtén |Poder| igual a la cantidad de cartas de defensa jugadas
+  Description: '{FriendP}Gana |Poder| igual a la cantidad de cartas de defensa jugadas
     en este turno.'
   ExtraDescription1: '{FriendA}Elige una carta |Exiliada|. Añade una |Copia| de ello
     a la mano que |costara temporalmente| {Mana}.'
