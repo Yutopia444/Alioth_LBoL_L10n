@@ -15,7 +15,8 @@ ReimuBlockR:
   Name: Bullet Extermination
   FlavorText: The savior can stop the bullet with a wave of hand.
 YaoguaiBuster:
-  Description: Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.
+  Description: "Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.\n\
+    Apply {Value2} |Weak|."
   Name: Youkai Buster
   FlavorText: Not only can you make youkai cry twice with this card, you can make
     them cry a third time after upgrading!
@@ -353,9 +354,9 @@ CraftPotion:
 RedLaser:
   Description: |-
     Deal {Damage} damage.
-    |Overdrive {Value2}|: Deal that much damage {Value1} time{Value1:plural one='' other='s'} instead.
+    |Overdrive {Value2}|: Deal {Value1} damage and apply {Vulnerable} |Vulnerable| instead.
   Name: Flammable Laser
-  UpgradedDescription: Deal {Damage} damage {Value1} times.
+  UpgradedDescription: "Deal {Damage} damage.\nApply {Vulnerable} |Vulnerable|."
 MarisaDraw:
   Description: |-
     Draw {Value1:plural one='% card' other='% cards'}.
@@ -411,9 +412,11 @@ KnifeBounce:
   Description: "Deal {Damage} damage.\nAdd |{Value1:plural one='% Throwing Knife'\
     \ other='% Throwing Knives'}| to the hand."
   Name: Bouncing Knives
+  UpgradedDescription: "Deal {Damage} damage.\nAdd |{Value1:plural one='% Throwing\
+    \ Knife' other='% Throwing Knives'}| to the hand.\nApply {Value2} |Lock On|."
 Lijian:
-  Description: "Deal {Damage} damage.\n|When drawn|: {SelfName} costs {Mana} less\
-    \ this combat."
+  Description: "Deal {Damage} damage.\nDraw {Value1} card{Value1:pural one='' other='s'}.\n\
+    |When drawn|: {SelfName} costs {Mana} less this combat."
 
   Name: Sight of Distant Blade
 Dejavu:
@@ -607,7 +610,7 @@ NitoriUnderWater:
     other=''s''}.'
   Name: Water Blanket
 ShuimiUnderWater:
-  Description: '|When discarded|: Gain {Mana}.'
+  Description: '|When discarded or Exiled|: Gain {Mana}.'
 
   Name: Ship's Phantom
 HatateDiscard:
@@ -779,7 +782,8 @@ SakuyaSleep:
   Name: Short Break
   UpgradedDescription: Add a |Rainbow| to the hand.
 SakuyaDraw:
-  Description: '|When discarded|: Draw {Value1:plural one=''% card'' other=''% cards''}.'
+  Description: '|When discarded or Exiled|: Draw {Value1:plural one=''% card'' other=''%
+    cards''}.'
   Name: Peak Perfection
 TimeLord:
   Description: Gain {Value1} |Time Pulse|.
@@ -907,7 +911,7 @@ MoonWorld:
   Name: Filthless World
 HuiyeMana:
   Name: Tale of the Bamboo Cutter
-  Description: At the start of {PlayerName}'s turn, gain {Value1} random mana; increase
+  Description: At the start of {PlayerName}'s turn, gain {Value1} {Mana}; increase
     by {Value1} every turn.
   FlavorText: This nursery rhyme tell tales of shining sinners.
 JinjiBlock:
@@ -1047,6 +1051,7 @@ DoremyDuplicate:
 ShannvAttack:
   Description: "Deal {Damage} damage.\nApply {Value1} |Poison|."
   Name: Seeping Miasma
+  UpgradedDescription: "Deal {Damage} damage.\nApply {Value1} |Poison| to each enemy."
 SatoriAttack:
   Description: "Deal {Damage} damage to each enemy.\n|Instinct|: If an enemy intends\
     \ to attack, gain {Block} |Block|."
@@ -1658,7 +1663,8 @@ ZoufangWater:
   Name: Suwa Clear Water
 RuowujiCard:
   Name: Waves of Reversed Scale
-  Description: "Deal {Damage} damage and apply {Value1} |Drowning| to each enemy."
+  Description: "Deal {Damage} damage and apply {Value1} |Drowning| to each enemy.\n\
+    This |Drowning| does not stack."
 JunkoNightmare:
   Name: Shivering Nightmare
   Description: "Deal {Damage} damage to each enemy {Value1} time{Value1:plural one=''\
@@ -2129,6 +2135,8 @@ DiamondBlizzard:
   Name: Diamond Pillar
   Description: "Deal {Damage} damage to each enemy.\n|Choose|: Apply |Cold| to each\
     \ enemy, or gain {Block} |Block|."
+  ExtraDescription1: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy."
+  ExtraDescription2: "Deal {Damage} damage to each enemy.\nGain {Block} |Block|."
 FairyAllOut:
   Name: All Hands on Deck
   Description: "Deal {Damage} damage to each enemy.\nActivate the |f:Passive Skill|\
@@ -2154,6 +2162,8 @@ CirnoConsider:
   Name: Careful Deliberation
   Description: "|Choose|: Gain {Block} |Block|, or draw {Value1} card{Value1:plural\
     \ one='' other='s'}."
+  ExtraDescription2: Draw {Value1} card{Value1:plural one='' other='s'}.
+  ExtraDescription1: Gain {Block} |Block|.
 ColdSnap:
   Name: Swift Cool
   Description: "Gain {Block} |Block|.\nDraw {Value1} card{Value1:plural one='' other='s'}.\n\
@@ -2184,8 +2194,6 @@ SummerParty:
   Name: Cool Party
   Description: "Gain {Value1} |Frost Armor|.\nEach |Teammate| in the hand gains {Value2}\
     \ |Unity|."
-DiamondBlizzardCold:
-  Description: "Deal damage, then apply |Cold|."
 DiamondBlizzardDefense:
   Description: "Deal damage, then gain |Block|."
 FakeMoon:
@@ -2202,8 +2210,6 @@ LarvaCure:
 OptBottom:
   Name: Sink
   Description: Place {TargetName} on the bottom of the draw pile.
-CirnoConsiderDefense:
-  Description: Gain |Block|.
 CirnoConsiderDraw:
   Description: Draw cards.
 Thought:
