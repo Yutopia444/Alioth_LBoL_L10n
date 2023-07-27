@@ -22,7 +22,9 @@ ReimuBlockR:
 
 YaoguaiBuster:
   Name: 妖怪破坏者
-  Description: 造成 {Damage} 点伤害 {Value1} 次。
+  Description: |-
+    造成 {Damage} 点伤害 {Value1} 次。
+    施加 {Value2} 回合|虚弱|。
   FlavorText: 不仅能打得妖怪「嗷嗷」叫，还能在升级后打得妖怪「嗷嗷嗷」叫！
 
 DoubleJiejie:
@@ -30,8 +32,6 @@ DoubleJiejie:
   Description: |-
     造成 {Damage} 点伤害。
     如果{PlayerName}拥有|护盾|，造成 {Value1} 次伤害。
-  UpgradedDescription: |
-    造成 {Damage} 点伤害 {Value1} 次。
   FlavorText: 只需要两面镜子就可以看到无限循环的世界。
 
 Fengmozhen:
@@ -508,7 +508,9 @@ RedLaser:
   Description: |-
     造成 {Damage} 点伤害。
     |超载 {Value2} |：造成 {Value1} 次伤害。
-  UpgradedDescription: 造成 {Damage} 点伤害 {Value1} 次。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    施加 {Vulnerable} 回合|易伤|。
   FlavorText: 对策冬日异变的招式之一。
 
 Potion:
@@ -961,12 +963,17 @@ KnifeBounce:
   Description: |-
     造成 {Damage} 点伤害。
     将 {Value1} 张|飞刀|加入手中。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    将 {Value1} 张|飞刀|加入手中。
+    施加 {Value2} 层|锁定|。
   FlavorText: 咲夜所投掷的飞刀看似很多，其实都是她停止时间后从地上回收的。
 
 Lijian:
   Name: 离剑之见
   Description: |-
     造成 {Damage} 点伤害。
+    抽 {Value1} 张牌。
     |抽取时|：费用降低{Mana}，直到战斗结束。
 
 PrivateVision:
@@ -1115,7 +1122,7 @@ SakuyaAttackX:
 
 SakuyaDraw:
   Name: 毫无破绽
-  Description: 当此牌被主动弃掉时，抽 {Value1} 张牌 。
+  Description: 当此牌被主动弃掉或|放逐|时，抽 {Value1} 张牌 。
 
 VampireHunter:
   Name: 吸血鬼猎手
@@ -1263,11 +1270,12 @@ SpecialClock:
   FlavorText: 客厅扫除的用时：0.4秒
 
 SakuyaDio:
-  Name: 轮到你了
+  Name: 下一个就轮到你了！
   Description: |-
     主动使用的|飞刀|施加 {Value1} 层|锁定|。
     结束{PlayerName}的回合，进行一个额外的回合。
     跳过这个额外回合的抽牌阶段，改为将 {Value2} 张|飞刀|加入手中。
+  FlavorText: 次は貴様だ！
 
 PerfectServant:
   Name: 完美从者
@@ -1464,14 +1472,8 @@ FruitShake:
 CirnoConsider:
   Name: 深思熟虑
   Description: '|抉择|：获得 {Block} 点|格挡|；或抽 {Value1} 张牌。'
-
-CirnoConsiderDefense:
-  Name: 深思熟虑：沉寂
-  Description: 获得|格挡|。
-
-CirnoConsiderDraw:
-  Name: 深思熟虑：醒悟
-  Description: 抽牌。
+  ExtraDescription1: 获得 {Block} 点|格挡|。
+  ExtraDescription2: 抽 {Value1} 张牌。
 
 ColdBreath:
   Name: 钻石气息
@@ -1637,14 +1639,12 @@ DiamondBlizzard:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     |抉择|：对所有敌人施加|寒冷|；或获得 {Block} 点|格挡|。
-
-DiamondBlizzardCold:
-  Name: 钻石方柱：寒冷
-  Description: 造成伤害，施加|寒冷|。
-
-DiamondBlizzardDefense:
-  Name: 钻石方柱：护体
-  Description: 造成伤害，获得|格挡|。
+  ExtraDescription1: |-
+    对所有敌人造成 {Damage} 点伤害。
+    对所有敌人施加|寒冷|。
+  ExtraDescription2: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得 {Block} 点|格挡|。
 
 ColdChain:
   Name: 冷链物流
@@ -2145,7 +2145,7 @@ NitoriUnderWater:
 
 ShuimiUnderWater:
   Name: 船底幽灵
-  Description: 当此牌被主动弃掉时，获得{Mana}。
+  Description: 当此牌被主动弃掉或|放逐|时，获得{Mana}。
 
 HatateDiscard:
   Name: 新闻捏造
@@ -2234,6 +2234,9 @@ ShannvAttack:
   Description: |-
     造成 {Damage} 点伤害。
     施加 {Value1} 层|中毒|。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    对所有敌人施加 {Value1} 层|中毒|。
   FlavorText: 狭小的空间中，任何从尾部排除的气体都可能致命。
 
 SatoriAttack:
@@ -2515,7 +2518,7 @@ HuiyeAttack:
 
 HuiyeMana:
   Name: 竹取的物语
-  Description: '{PlayerName}的回合开始时，获得 {Value1} 点随机的法力；每回合提高 {Value1} 点。'
+  Description: '{PlayerName}的回合开始时，获得 {Value1} 点{Mana}；每回合提高 {Value1} 点。'
   FlavorText: 孩童的歌谣传唱着光辉的罪人的传说。
 
 OtherBlock:
@@ -2864,7 +2867,9 @@ MeilingRain:
 
 RuowujiCard:
   Name: 逆鳞的惊涛
-  Description: 对所有敌人造成 {Damage} 点伤害，施加 {Value1} 层|溺水|。
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害，施加 {Value1} 层|溺水|。
+    |溺水|无法叠加。
 
 SkyWater:
   Name: 天水的奇迹
