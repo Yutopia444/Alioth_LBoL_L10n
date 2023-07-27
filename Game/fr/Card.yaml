@@ -16,7 +16,8 @@ ReimuBlockR:
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 YaoguaiBuster:
   Name: Destructeur de Yōkai
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
+    Appliquez {Value2} |Faible{Value2:plural one='' other='s'}|."
   FlavorText: Le yōkai ne crie pas seulement "Aargl", mais aussi "Gargl" après la
     mise à niveau !
 DoubleJiejie:
@@ -528,8 +529,8 @@ RedLaser:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
     \ {Value2}| : Infligez les dégâts {Value1} fois à la place."
   FlavorText: Un des gestes pour faire face à la période hivernale.
-  UpgradedDescription: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1}
-    fois.
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    Appliquez {Vulnerable} |Vulnérable{Vulnerable:plural one='' other='s'}|."
 Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
@@ -762,10 +763,14 @@ KnifeBounce:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAjoutez\
     \ |{Value1:plural one='% Couteau de Lancer' other='% Couteaux de Lancer'}| à la\
     \ main."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    Ajoutez |{Value1:plural one='% Couteau de lancer' other='% Couteaux de lancer'}|\
+    \ à la main.\nAppliquez {Value2} |Verrouillé{Value2:plural one='' other='s'}|."
 Lijian:
   Name: Lames Imprégnées d'Aura
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Lorsque\
-    \ piochée| : Cette carte coûte {Mana} de moins pour ce combat."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
+    \ {Value1} carte{Value1:plural one='' other='s'}.\n|Lorsque piochée| : Cette carte\
+    \ coûte {Mana} de moins pour ce combat."
 PrivateVision:
   Name: Image Rémanente
   Description: "Défaussez une carte.\nGagnez {Value1} |Esquive{Value1:plural one=''\
@@ -902,8 +907,8 @@ MorphBird:
   Description: Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.
   Name: Changé en Volatile
 HuiyeMana:
-  Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} mana aléatoire
-    ; augmentez de {Value1} à chaque tour.
+  Description: Lorsque {PlayerName} débute son tour, gagnez {Value1} {Mana} ; augmentez
+    de {Value1} à chaque tour.
   Name: Conte du Coupeur de Bambou
   FlavorText: Cette comptine raconte des histoires de païens brillants.
 HuiyinAttack:
@@ -1086,8 +1091,8 @@ SakuyaAttackX:
     \ one='' other='s'}."
 SakuyaDraw:
   Name: Apogée de la Perfection
-  Description: "|Lorsque défaussée| : Piochez {Value1:plural one='% carte' other='%\
-    \ cartes'}."
+  Description: "|Lorsque défaussée ou exilée| : Piochez {Value1:plural one='% carte'\
+    \ other='% cartes'}."
 PrepareParty:
   Name: Préparation du Banquet
   Description: "Mettez jusqu'à une carte de votre main au-dessus de la pioche.\nGagnez\
@@ -1279,7 +1284,7 @@ NitoriUnderWater:
     affaiblie.
 ShuimiUnderWater:
   Name: Fantôme du Navire
-  Description: Lorsque cette carte est défaussée, gagnez {Mana}.
+  Description: '|Lorsque défaussée ou exilée| : gagnez {Mana}.'
 SeeFengshui:
   Name: Manipulation Feng Shui
   Description: "Lorsque {PlayerName} débute son tour, |Sonde| {Value1}.\nChaque fois\
@@ -1334,6 +1339,8 @@ ShannvAttack:
     \ {Value1} |Poison{Value1:plural one='' other='s'}|."
   FlavorText: Dans les espaces restreints, tout gaz expulsé par l'arrière-train peut
     être mortel.
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    Appliquez {Value1} |Poison{Value1:plural one='' other='s'}| à chaque ennemi."
 SatoriAttack:
   Name: Floraison de cœurs
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -1542,6 +1549,7 @@ SakuyaDio:
     \ Pendant ce tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='%\
     \ Couteaux de Lancer'}| à la main au lieu de piocher des cartes pendant l'étape\
     \ de pioche."
+  FlavorText: Cette fois, ça va te coûter cher !
 TunnelEffect:
   Name: Effet Tunnel
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
@@ -1628,7 +1636,8 @@ ZoufangWater:
   Name: Eau Claire de Suwa
 RuowujiCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi,\
-    \ appliquez {Value1} |Noyade{Value1:plural one='' other='s'}|."
+    \ appliquez {Value1} |Noyade{Value1:plural one='' other='s'}|.\nCette |Noyade|\
+    \ ne s'empile pas."
   Name: Ondes à Échelle Inversée
 KanakoWalk:
   Description: "(WIP)"
@@ -2579,8 +2588,8 @@ CirnoConsider:
   Name: Réflexion Approfondie
   Description: "|Choix| : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|\
     \ ; ou piochez {Value1} carte{Value1:plural one='' other='s'}."
-CirnoConsiderDefense:
-  Name: 'Réflexion : Silence'
+  ExtraDescription1: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+  ExtraDescription2: Piochez {Value1:plural one='% carte' other='% cartes'}.
 CirnoConsiderDraw:
   Description: Piochez des cartes.
 ColdSnap:
@@ -2593,8 +2602,10 @@ DiamondBlizzard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis.\n|Choix| : appliquez le |Froid| à tous les ennemis ; ou gagnez {Block}\
     \ |Bouclier{Block:plural one='' other='s'}|."
-DiamondBlizzardCold:
-  Description: Inflige des dégâts, applique le |Froid|.
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
+    \ ennemi.\nAppliquez |Froid| à chaque ennemi."
+  ExtraDescription2: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
+    \ ennemi.\nGagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 DiamondBlizzardDefense:
   Description: Inflige des dégâts, gagne du |Bouclier|.
 ColdChain:
