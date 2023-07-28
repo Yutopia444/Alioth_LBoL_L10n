@@ -527,10 +527,11 @@ CraftPotion:
 RedLaser:
   Name: Laser Inflammable
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
-    \ {Value2}| : Infligez les dégâts {Value1} fois à la place."
+    \ {Value2}| : Infligez {UpgradeDamage} dégât{UpgradeDamage:plural one='' other='s'}\
+    \ et appliquez {Value1} |Vulnérable{Value1:plural one='' other='s'}| à la place."
   FlavorText: Un des gestes pour faire face à la période hivernale.
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
-    Appliquez {Vulnerable} |Vulnérable{Vulnerable:plural one='' other='s'}|."
+    Appliquez {Value1} |Vulnérable{Vulnerable:plural one='' other='s'}|."
 Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
@@ -1543,7 +1544,7 @@ LunaClock:
   Description: Terminez le tour. Ensuite, jouez un tour supplémentaire. Les attaques
     jouées par {PlayerName} n'infligent aucun dégât pendant ce tour supplémentaire.
 SakuyaDio:
-  Name: Tu es le Prochain
+  Name: Tu es le Prochain !
   Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé{Value1:plural\
     \ one='' other='s'}|.\nTerminez le tour, et {PlayerName} joue un tour supplémentaire.\
     \ Pendant ce tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='%\
@@ -2989,8 +2990,9 @@ Danxiangsi:
 Hademan:
   Name: Fille Yōkai de Hartmann
   Description: "(WIP) Après avoir joué une carte avec un coût total de 0, retirez\
-    \ le coût aléatoire d'une carte de main aléatoire.\nSupprimez le coût aléatoire\
-    \ d'une carte aléatoire dans votre main, répétez {Value1} fois."
+    \ un mana aléatoire du coût d'une carte aléatoire dans la main.\nSupprimez un\
+    \ mana aléatoire du coût d'une carte aléatoire dans votre main, répétez {Value1}\
+    \ fois."
 MrBulb:
   Name: M. Shining Light Bulb
   Description: "(WIP) Après être entré dans trois états d'esprit différents durant\
@@ -3044,3 +3046,23 @@ YukariFriend:
     à la main qui |coûte temporairement| {Mana}.'
   ExtraDescription2: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
     neutre tricolore aléatoire à la main.'
+NightMana1:
+  Name: 'Longue Nuit : 23 h 00'
+  Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
+    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
+    \ {SelfName} dans la main."
+NightMana2:
+  Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
+    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
+    \ {SelfName} dans la main."
+  Name: 'Longue Nuit : 01 h 00'
+NightMana3:
+  Name: 'Longue Nuit : 03 h 00'
+  Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
+    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
+    \ {SelfName} dans la main."
+NightMana4:
+  Name: 'Longue Nuit : 05 h 00'
+  Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
+    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
+    \ {SelfName} dans la main."
