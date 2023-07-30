@@ -73,6 +73,10 @@ Explain:
     2.替换时保留卡牌的升级性。
   ShinmyoumaruForge: '攻击牌替换为攻击牌，防御牌替换为防御牌。'
   SaveWhenSelect: '选择此项后会立刻保存进度。'
+  Power: 能量<sprite="Point" name="Power">
+  PowerDescription: |-
+    用于释放符卡。
+    （画面左上角）
 
 UI:
   Yes: 是
@@ -502,9 +506,22 @@ Debut:
 Shop:
   Skip: 跳过商人
   Close: 关闭商店
+  CardService: 卡牌服务
+  SoldOut: 卖光了
+  Upgrade: 升级卡牌
+  UpgradeService: 升级：
+  ShopUpgradePrice: |-
+    {0} 点<sprite="Gold" name="gold">
+  UpgradeTooltip: |-
+    升级牌组中的一张牌。
+    价格固定为 {0} 点金钱。
   Remove: 移除卡牌
-  RemoveSoldOut: 卖光了
-  RemoveTooltip: 从你的牌库中移除一张牌，在本局游戏中每次使用都会涨价| {0} 金钱|
+  RemoveService: 移除：
+  ShopRemovePrice: |-
+    {0} 点<sprite="Gold" name="gold">
+  RemoveTooltip: |-
+    从牌库中移除一张牌。
+    在本局游戏中每次使用都会涨价 {0} 点金钱（最大不超过 {1} ）。
   BoughtQuotes:
     - 谢谢惠顾
   CantAffordQuotes:
@@ -524,8 +541,8 @@ Cards:
   TransformTips: 请选择一张牌变化
   UpgradeDialog: 确定升级卡牌？
   UpgradePrice: |-
-    花费 {0} <sprite="Gold" name="gold">
-    现有 {1} <sprite="Gold" name="gold">
+    花费 {0} 点<sprite="Gold" name="gold">
+    现有 {1} 点<sprite="Gold" name="gold">
   RemoveDialog: 确定移除卡牌？
   TransformDialog: 确定变化卡牌？
   Size: ' {0} 张牌'
