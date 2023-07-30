@@ -393,7 +393,7 @@ FindCollection:
   Name: Assistance à Distance
   Description: Choisissez une parmi {Value1} cartes aléatoires que {PlayerName} ne
     possède pas à ajouter à la main. Elle coûte |temporairement| {Mana} et a |Exil|
-    et |Ethéré|.
+    et |Éthéré|.
 WhiteLaser:
   Name: Laser Éclair
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Shield}\
@@ -1438,10 +1438,10 @@ XiaodingKill:
   Description: Si la cible a {Value1} points de vie ou moins, elle est vaincue.
 YukariAttack:
   Name: Frontière de la Vie et de la Mort
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nLorsque\
-    \ {PlayerName} finit son tour, si son total de points de vie a changé ce tour-ci,\
-    \ renvoyez {SelfName} de la pile de défausse dans la main. Elle |coûte temporairement|\
-    \ {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
+    Lorsque {PlayerName} finit son tour, si son total de points de vie a changé ce\
+    \ tour-ci, renvoyez {SelfName} de la pile de défausse dans la main. Elle |coûte\
+    \ temporairement| {Mana}."
   FlavorText: "\"Il y a une mince frontière entre la vie et la mort. Vous m'y trouverez\""
 TannvCard:
   Name: Changement de Paradigme
@@ -1494,7 +1494,7 @@ FourFlan:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     |Au début du combat| : Mélangez {Value2} |copie{Value2:plural one='' other='s'}|\
     \ de cette carte à la pioche. Les copies n'ont pas cet effet, coûtent {Mana} et\
-    \ ont |Exil| et |Ethéré|."
+    \ ont |Exil| et |Éthéré|."
 HekaHellRain:
   Name: Pluie de l'Enfer
   Description: Lorsque {PlayerName} finit son tour, infligez {Value1} dégât{Value1:plural
@@ -1509,7 +1509,7 @@ FlanPlayAlone:
     \ Temporaires'}|.\nDéfaussez toutes les cartes non-attaque de la main."
 ShenziWake:
   Description: Choisissez une carte aléatoire parmi {Value1} avec un coût total de
-    X+1 à ajouter à la main. Elle |coûte temporairement|{Mana} et a |Exil| et |Ethéré|.
+    X+1 à ajouter à la main. Elle |coûte temporairement|{Mana} et a |Exil| et |Éthéré|.
   Name: Renaissance du Saint
   FlavorText: A ressuscité plusieurs fois les mauvaises personnes avant de ressusciter
     les bons saints.
@@ -1621,13 +1621,13 @@ LilyChun:
   UpgradedDescription: "Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s\
     \ aléatoires'} qui {Value1:plural one='a' other='ont'} un coût total de 1 à la\
     \ main. {Value1:plural one ='Elle |coûte temporairement|' other='Elles |coûtent\
-    \ temporairement|'} {Mana} et {Value1:plural one='a' other='ont'} |Exil| et |Ethéré|.\n\
+    \ temporairement|'} {Mana} et {Value1:plural one='a' other='ont'} |Exil| et |Éthéré|.\n\
     {Value1:plural one='Cette |e:carte alternative| ignore' other='Ces |e:cartes alternatives|\
     \ ignorent'} Ignore les restrictions de mana, de couleur et de propriétaire."
   Name: C'est le printemps !
   Description: "Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s aléatoires'}\
     \ qui {Value1:plural one='a' other='ont'} un coût total de 1 à la main. {Value1:plural\
-    \ one ='Elle a' other='Elles ont'} |Exil| et |Ethéré|.\n{Value1:plural one='Cette\
+    \ one ='Elle a' other='Elles ont'} |Exil| et |Éthéré|.\n{Value1:plural one='Cette\
     \ |e:carte alternative| ignore' other='Ces |e:cartes alternatives| ignorent'}\
     \ les restrictions de propriétaire."
 ZoufangWater:
@@ -3041,28 +3041,29 @@ AnimalSpirit:
 YukariFriend:
   Name: Yukari, Frontière de la Fantaisie
   Description: '{FriendP}Gagnez autant de |Puissance| que le nombre de cartes de défense
-    jouées ce tour.'
-  ExtraDescription1: '{FriendA}Choisissez une carte |exilée|. Ajoutez-en une |copie|
-    à la main qui |coûte temporairement| {Mana}.'
+    jouées ce tour. ({Fire} carte{Fire:plural one='''' other=''s''})'
+  ExtraDescription1: '{FriendA}Choisissez une carte |exilée| et remettez-la dans la
+    main.'
   ExtraDescription2: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
-    neutre tricolore aléatoire à la main.'
+    neutre tricolore aléatoire à la main. Elle |coûte temporairement| {Mana} et a
+    |Éthéré|.'
 NightMana1:
   Name: 'Longue Nuit : 23 h 00'
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
-    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
-    \ {SelfName} dans la main."
+    \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
+    \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} dans la main."
 NightMana2:
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
-    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
-    \ {SelfName} dans la main."
+    \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
+    \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} dans la main."
   Name: 'Longue Nuit : 01 h 00'
 NightMana3:
   Name: 'Longue Nuit : 03 h 00'
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
-    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
-    \ {SelfName} dans la main."
+    \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
+    \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} dans la main."
 NightMana4:
   Name: 'Longue Nuit : 05 h 00'
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
-    \ de plus pour être jouées.\nÀ chaque fois qu'une carte est jouée, |exilez| une\
-    \ {SelfName} dans la main."
+    \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
+    \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} dans la main."
