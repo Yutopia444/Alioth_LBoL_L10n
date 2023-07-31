@@ -76,6 +76,9 @@ Explain:
   ShinmyoumaruForge: Las cartas de ataque se reemplazan con cartas de ataque y las
     cartas de defensa se reemplazan con cartas de defensa.
   SaveWhenSelect: Al seleccionar esto, se guardará el progreso inmediatamente.
+  PowerDescription: "El uso de una Carta Mágica consume una barra completa de energía.\n\
+    (se muestra debajo del retrato del personaje)"
+  Power: Energía<sprite="Point" name="Power">
 Chat:
   DoremySleepLast: Ya no puedo comer~
   FraudRabbitNoMoney: ¿No te queda ni un céntimo? Patético.
@@ -614,7 +617,7 @@ Shop:
   - No te lo puedes permitir.
   - No tienes suficiente dinero.
   RemoveTooltip: Elimina una carta de tu biblioteca y aumenta el precio cada vez en
-    |{0}|<sprite="Point" name="Gold">
+    |{0}|<sprite="Point" name="Gold">, (Un máximo de {1} de dinero)
   BoughtQuotes:
   - Gracias por su compra.
   WelcomeQuotes:
@@ -623,6 +626,14 @@ Shop:
   Chats:
   - Por aquí, querida cliente~
   - ¡Precios justos por todas partes! ¿Estás seguro de que no necesitas nada?
+  CardService: Servicio de Cartas.
+  ShopUpgradePrice: '{0}<sprite="Gold" name="gold">'
+  SoldOut: Agotado
+  Upgrade: Mejorar Carta
+  UpgradeService: 'Mejorar:'
+  UpgradeTooltip: "Mejora una carta de la biblioteca.\nCuesta {0} de oro."
+  RemoveService: 'Remover:'
+  ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
 Gap:
   Headers:
   - Que debo hacer ahora~
@@ -653,7 +664,7 @@ ErrorChat:
   MoneyNotEnough: No tengo suficiente dinero.
   LowMana: No tengo suficiente maná.
   CardNotUsable: No puedo usar esta carta.
-  LowPower: No tengo suficiente poder.
+  LowPower: No tengo suficiente energía.
   CardNotInHand: La carta especificada aún no está en la mano.
   CardCostChanged: El costo de la carta especificada ha cambiado.
   CardFengyin: Estoy sellado.
@@ -715,7 +726,7 @@ BattleHint:
     \ ha infligido.\n|Bloqueo| desaparecerá al comienzo del siguiente turno del personaje\
     \ principal, pero la |s:Barrera| no lo hará."
   UltimateSkill: "¡Lanza la Carta Mágica para cambiar el rumbo de la batalla!\nEl\
-    \ uso de una Carta Mágica consume una barra completa de potencia. Los enemigos\
+    \ uso de una Carta Mágica consume una barra completa de energía. Los enemigos\
     \ derrotados sueltan <sprite=\"Point\" name=\"Power\">, que repone el poder necesario\
     \ para la Carta Mágica.\nLas Cartas Mágicas solo se pueden usar una vez por turno."
 Credits:
