@@ -55,6 +55,8 @@ Explain:
     ManaSprite\" name=\"P\">でコストを支払えても取得できません。\nこれは彩色マナがカードプールを混乱させて、「賢者の石」をピックしたくないという事態を防ぐためです。\n\
     \nボス報酬「空白のカード」はルール3を直接無効にします。\nコストの合計が5以上のカードで、数字部分<sprite=\"ManaSprite\" name=\"\
     X\">を含めると現在のマナ基盤で支払うことのできないカードはルール１の対象外です。数字部分を軽減する方法は多くあります。"
+  PowerDescription: "スペルカードを使用するために用いる。\n（画面左上）"
+  Power: パワー<sprite="Point" name="Power">
 UI:
   Yes: はい
   No: いいえ
@@ -410,11 +412,16 @@ Shop:
   Chats:
   - お姉さん、どうぞ見てって～
   - 安心価格だよ！本当に何も要らないの？
-  RemoveTooltip: デッキからカード1枚を取り除く。利用するたびに費用が| {0} 金|ずつ上がる
+  RemoveTooltip: "デッキからカード1枚を取り除く。\n利用するたびに費用が<sprite=\"Gold\" name=\"gold\">{0}ずつ上がる。（最大でsprite=\"\
+    Gold\" name=\"gold\">{1}）"
   CardService: カードサービス
   SoldOut: 売り切る
   Upgrade: アップグレード
   UpgradeService: 'アップグレード:'
+  ShopUpgradePrice: '{0}<sprite="Gold" name="gold">'
+  UpgradeTooltip: "デッキのカードを1枚アップグレードする。\n費用は{0}<sprite=\"Gold\" name=\"gold\">。"
+  RemoveService: カード削除：
+  ShopRemovePrice: '{0}<sprite="Gold" name="gold">'
 Map:
   Shop: ショップ
   Adventure: イベント
@@ -530,8 +537,8 @@ Cards:
   TransformDialog: 本当にこれらのカードを変化させますか？
   RemoveDialog: 本当にこれらのカードを捨てますか？
   Size:  {0} 枚のカード
-  UpgradePrice: "必要な資金力：<sprite=\"Gold\" name=\"gold\">{0}\n現在の資金力：<sprite=\"Gold\"\
-    \ name=\"gold\">{1}"
+  UpgradePrice: "必要な<sprite=\"Gold\" name=\"gold\">：{0}\n現在の<sprite=\"Gold\" name=\"\
+    gold\">：{1}"
 TopInfo:
   Original: 原曲：
   Artist: アーティスト：
