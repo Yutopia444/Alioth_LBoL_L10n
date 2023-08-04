@@ -132,8 +132,8 @@ TempElectric:
   Description: "攻撃してきた相手に{Level}点のダメージを与える。\n{OwnerName}のターン開始時にこの効果は取り除かれる。"
 NextAttackUp:
   Name: 攻撃ダメージ増加
-  Description: 次に使用する|攻撃カード|のダメージが{Level}点増加する。
-  Brief: 次に使用する|攻撃カード|のダメージが増加する。
+  Description: 次にプレイする|攻撃カード|のダメージが{Level}点増加する。
+  Brief: 次にプレイする|攻撃カード|のダメージが増加する。
 NextTurnLoseHp:
   Name: 次ターンライフ喪失
   Description: '{OwnerName}の次のターン開始時、{Level}点のライフを失う。'
@@ -223,10 +223,10 @@ FirepowerIsJustice:
   Name: 弾幕は火力だぜ！
   Description: '{OwnerName}の|火力|は{PlayerName}の|火力|を下回らない。'
 PrivateSquare:
-  Description: "カードを{Limit}枚使用するごとに、{OwnerName}は{PlayerName}に{Level}点のダメージを与える。\n\
+  Description: "カードを{Limit}枚プレイするごとに、{OwnerName}は{PlayerName}に{Level}点のダメージを与える。\n\
     残り{Count}枚。"
   Name: シルバーロックダウン
-  Brief: カードを何枚か使用するたび、<color=#B7F0FF>十六夜咲夜</color>は{PlayerName}にダメージを与える。
+  Brief: カードを何枚かプレイするたび、<color=#B7F0FF>十六夜咲夜</color>は{PlayerName}にダメージを与える。
 RockHardAura:
   Description: '{OwnerName}は要石の庇護の下にある。受けるブロックされなかったダメージが{Level}点減少する。'
   Name: 要石の庇護
@@ -262,12 +262,12 @@ EnemyEnergy:
   Description: '{OwnerName}がダメージを受けたとき、同量の<sprite="Point" name="Power">を獲得し、スペルカードの使用に充てる。'
   Name: エナジー
 ManaFreezed:
-  Description: 各ターン最初に使用するカードのコストが{Mana}増える。
-  Brief: 各ターン最初に使用するカードのコストが増える。
+  Description: 各ターン最初にプレイするカードのコストが{Mana}増える。
+  Brief: 各ターン最初にプレイするカードのコストが増える。
   Name: マナ凍結
 PowerByDefense:
   Name: 無堅不摧
-  Description: 防御カードを使用するたび、{OwnerName}は{Level}点の|火力|を得る。
+  Description: 防御カードをプレイするたび、{OwnerName}は{Level}点の|火力|を得る。
 SijiZui:
   Name: 是非曲直
   ExtraDescription2: '{PlayerName}の罪：重度。'
@@ -334,7 +334,7 @@ SolarSystemSe:
   Brief: '{PlayerName}のターン開始時、|チャージ|を得る。'
 ScryBlockSe:
   Description: '{PlayerName}は|占術|するたび、{Level}点の|ブロック|を得る。'
-  Name: 権謀術数
+  Name: 計画通り
   Brief: '{PlayerName}は|占術|するたび、|ブロック|を得る。'
 PotionDefenseSe:
   Name: 流星共鳴
@@ -381,7 +381,7 @@ Poison:
   Description: '{OwnerName}のターン開始時、{Level}点のライフを失い、|毒|の値を 1 減らす。'
   Brief: '{OwnerName}のターン開始時、ライフを失い、|毒|の値を 1 減らす。'
 JunkoPurify:
-  Description: '{PlayerName}がカードを使用するたび、|純化|{Level}。'
+  Description: '{PlayerName}がカードをプレイするたび、|純化|{Level}。'
   Name: 純化の光
 InfinityGemsSe:
   Name: 宝石が埋め込まれたガントレット
@@ -493,8 +493,8 @@ StopTimeSe:
   Name: 時間凝固
   Description: '{PlayerName}のターン終了時、ランダムな未使用のマナ{Level}点が持ち越される。'
 SilverBladeSe:
-  Brief: 攻撃カードを使用するたび、|バリア|を得る。
-  Description: 攻撃カードを使用するたび、{Level}|バリア|を得る。
+  Brief: 攻撃カードが発動するするたび、|バリア|を得る。
+  Description: 攻撃カードが発動するたび、{Level}|バリア|を得る。
   Name: 銀色のアナザーディメンジョン
 KnifeWithLockedOn:
   Description: '|投げナイフ|を使用時、対象に|ロックオン|{Level}を与える。'
@@ -608,7 +608,7 @@ BlackPoisonSe:
   Name: 暗闇演舞
 ScarletDestiny:
   Name: 紅色の運命
-  Description: "一ターンのうちに{Limit}枚のカードを使用すると、{OwnerName}は{PlayerName}のターンを終了する。\n残り{Count}枚。"
+  Description: "一ターンのうちに{Limit}枚のカードをプレイすると、{OwnerName}は{PlayerName}のターンを終了する。\n残り{Count}枚。"
 AutoKnifeSe:
   Description: この戦闘中、|投げナイフ|は|自動廃棄|を得る。
   Name: 妖器「シルバーブレード」
@@ -640,7 +640,7 @@ Benwo:
   Brief: '|イド|状態時、与えるダメージと受けるダメージが 2 倍になる。'
 SingleJiandaoSe:
   Name: 半分の巨大な鋏
-  Description: '{PlayerName}はカードを使用するたびに、{Level}ダメージを受ける。'
+  Description: '{PlayerName}はカードをプレイするたびに、{Level}ダメージを受ける。'
 ShendengSe:
   Name: 注ぎ口の長いティーポット
   Description: '{OwnerName}のターン終了時、{PlayerName}は|脱力|、|脆弱化|、|弱体|のうちランダムな一つを{Level}得る。'
@@ -661,8 +661,8 @@ IceVulnerable:
   Brief: "{OwnerName}が受けるあらゆるダメージが 2 倍になる。\n{OwnerName}のターン終了時|凍結深度|は取り除かれる。"
 ForeverCoolSe:
   Name: エバークールシーズンファンタジア
-  Description: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、ランダムな敵に|冷気|を{Level}回与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Level}を得る。"
-  Brief: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
+  Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を{Level}回与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Level}を得る。"
+  Brief: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
 MoreFriendsSe:
   Description: '{PlayerName}のターン開始時、{Level}枚のランダムな|パートナー|カードにに|虚無|を与え、手札に加える。
 
@@ -693,8 +693,8 @@ ShannvAbilitySe:
   Brief: '{PlayerName}のターン終了時、敵全体に|毒|を付与する。'
 DizangLoveSe:
   Name: インスタントボーディ
-  Description: コモンカードを使用するたび、{OwnerName}は{Level}点の|臨時火力|を得る。
-  Brief: コモンカードを使用するたび、{OwnerName}は|臨時火力|を得る。
+  Description: コモンカードをプレイするたび、{OwnerName}は{Level}点の|臨時火力|を得る。
+  Brief: コモンカードをプレイするたび、{OwnerName}は|臨時火力|を得る。
 ModuoluoFireSe:
   Name: 穢那の火
   Description: <sprite="ManaSprite" name="P">が消費されるたび、敵全体に{Level}点のダメージを与える。
@@ -705,8 +705,8 @@ RinDrawSe:
   Brief: 状態異常カードを引くたび、 カードを引く。
 HekaHellRainSe:
   Name: 地獄に降る雨
-  Description: "カードを使用するたび、ターン終了時にすべての敵に{Level}のダメージを与える。\nこのターン中 {Count} 枚のカードを使用した。"
-  Brief: カードを使用するたび、ターン終了時にすべての敵にダメージを与える。
+  Description: "カードをプレイするたび、ターン終了時にすべての敵に{Level}のダメージを与える。\nこのターン中 {Count} 枚のカードを使用した。"
+  Brief: カードをプレイするたび、ターン終了時にすべての敵にダメージを与える。
 TiangouOrderSe:
   Name: 大天狗の号令
   Description: '{OwnerName}がダメージを受けるたび、{PlayerName}は{Level}点の|ブロック|を得る。'
