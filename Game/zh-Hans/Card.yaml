@@ -365,6 +365,9 @@ HuijuQiankun:
   Description: |-
     将一张|阴阳玉|加入手中。
     |放逐|所有其它手牌，每|放逐|一张牌，|阴阳玉|伤害提高 {Value1} 点。
+  UpgradedDescription: |-
+    将一张|阴阳玉|加入手中。
+    |放逐|所有其它手牌，每|放逐|一张牌，|阴阳玉|伤害提高 {Value1} 点，|护盾|提高 {Value2} 点。
   FlavorText: 选择所有，右键删除，清空回收站。
 
 ReimuInstant:
@@ -501,15 +504,23 @@ CraftPotion:
   Description: |-
     将 {Value1} 张|不稳定魔药|洗入抽牌堆。
     抽 {Value2} 张牌。
+  UpgradedDescription: |-
+    将 {Value1} 张|不稳定魔药|洗入抽牌堆。
+    抽 {Value2} 张牌。
+    |初见|：额外抽一张牌。
+  ExtraDescription1: |-
+    将 {Value1} 张|不稳定魔药|洗入抽牌堆。
+    抽 {Value2} 张牌。
+    |d:初见：额外抽一张牌。|
   FlavorText: 紫伞伞，白杆杆，酿完妖怪躺板板~
 
 RedLaser:
   Name: 火热射线
   Description: |-
     造成 {Damage} 点伤害。
-    |超载 {Value2} |：改为造成 {UpgradeDamage} 点伤害，施加 {Value1} 回合|易伤|。
+    |超载 {Value2} |：改为造成 {UpgradeDamage} 点伤害 {AttackTimes} 次，施加 {Value1} 回合|易伤|。
   UpgradedDescription: |-
-    造成 {Damage} 点伤害。
+    造成 {Damage} 点伤害 {AttackTimes} 次。
     施加 {Value1} 回合|易伤|。
   FlavorText: 对策冬日异变的招式之一。
 
@@ -2886,17 +2897,17 @@ LifeGame:
   Description: 相邻的卡牌|暂塑|为{Mana}。
   UpgradedDescription: 相邻的卡牌|暂塑|为{Mana}，|升级|它们。
 
+PoisonTeaParty:
+  Name: 可疑的茶会
+  Description: |-
+    {PlayerName}恢复 {Value1} 点生命，受到 {Value1} |中毒|。
+    施加 {Value2} 层|中毒|。
+
 LigeluCard:
   Name: 荧光之夜
   Description: |-
     获得 {Block} 点|格挡|。
     获得 {Value1} 点<sprite="Point" name="Power">。
-
-PoisonTeaParty:
-  Name: 可疑的茶会
-  Description: |-
-    施加 {Value1} 层|中毒|。
-    获得等量于目标|中毒|层数的|格挡|。
 
 PaluxiCurse:
   Name: 丑时参拜
@@ -2908,8 +2919,10 @@ PaluxiCurse:
 
 KisumeAttack:
   Name: 钓瓶落之怪
-  Description: 造成相当于抽牌堆数量的伤害。（{Damage} 点）
-  NonbattleDescription: 造成相当于抽牌堆数量的伤害。
+  Description: |-
+    获得 {Block} 点|格挡|。
+    造成 {Damage} 点伤害。
+    如果{SelfName}是本回合打出的第一张牌，施加 {Value1} 层|锁定|。
 
 MedicineGarden:
   Name: 铃兰花园
