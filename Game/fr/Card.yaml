@@ -301,6 +301,9 @@ HuijuQiankun:
     \ à la main. Elle inflige {Value1} dégâts supplémentaires pour chaque carte |Exilée|\
     \ ainsi."
   FlavorText: Sélectionnez tout, faites un clic droit pour supprimer et videz la corbeille.
+  UpgradedDescription: "|Exilez| chaque carte de la main.\nAjoutez ensuite une |Orbe\
+    \ Yin-Yang| à la main. Augmentez ses dégâts de {Value1} et sa |Barrière| de {Value2}\
+    \ pour chaque carte |exilée| de cette façon."
 ReimuInstant:
   Name: '"Sceau de Rêve -Instantané-"'
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nTerminez\
@@ -524,14 +527,21 @@ CraftPotion:
     \ Instables|'} à la pioche.\nPiochez {Value2} carte{Value2:plural one='' other='s'}."
   FlavorText: Parapluies rouges, perches blanches, après avoir mangé, allongez-vous
     sur la planche...
+  UpgradedDescription: "Ajoutez {Value1} |Potion{Value1:plural one=' instable' other='s\
+    \ instables'}| à la pioche.\nPiochez {Value2} carte{Value2:plural one='' other='s'}.\n\
+    |Début| : Piochez une carte de plus."
+  ExtraDescription1: "Ajoutez {Value1} |Potion{Value1:plural one=' instable' other='s\
+    \ instables'}| à la pioche.\nPiochez {Value2} carte{Value2:plural one='' other='s'}.\n\
+    |d:Début : Piochez une carte de plus.|"
 RedLaser:
   Name: Laser Inflammable
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
     \ {Value2}| : Infligez {UpgradeDamage} dégât{UpgradeDamage:plural one='' other='s'}\
-    \ et appliquez {Value1} |Vulnérable{Value1:plural one='' other='s'}| à la place."
+    \ {AttackTimes} fois et appliquez {Value1} |Vulnérable{Value1:plural one='' other='s'}|\
+    \ à la place."
   FlavorText: Un des gestes pour faire face à la période hivernale.
-  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
-    Appliquez {Value1} |Vulnérable{Vulnerable:plural one='' other='s'}|."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {AttackTimes}\
+    \ fois.\nAppliquez {Value1} |Vulnérable{Vulnerable:plural one='' other='s'}|."
 Potion:
   Name: Potion Instable
   FlavorText: Attention ! Cette potion peut exploser à tout moment !
@@ -3012,12 +3022,14 @@ DanmakuMBTI:
   ExtraDescription1: Choisissez Deux Couleurs
 PoisonTeaParty:
   Name: Thé Suspect
-  Description: "Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|.\nGagnez\
-    \ un |Bouclier| égal au |Poison| sur la cible."
+  Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
+    \ de vie et {Value1} |Poison{Value1:plural one='' other='s'}|.\nAppliquez {Valeur2}\
+    \ |Poison{Value2:plural one='' other='s'}|."
 KisumeAttack:
   Name: Attrape-bouteille
-  Description: Inflige des dégâts égaux au nombre de cartes dans la pioche. ({Damage}
-    dégât{Damage:plural one='' other='s'})
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'}.\nSi {SelfName} est la première\
+    \ carte jouée ce tour, appliquez {Value1} |Verrouillé{Value1:plural one='' other='s'}|."
 ShirenKunchong:
   Name: Insecte Cannibale
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
