@@ -586,6 +586,9 @@ HuijuQiankun:
   Name: Confluencia del Yin-Yang
   Description: "|Exilia| cada carta de la mano.\nLuego, agrega un |Orbe Yin-Yang|\
     \ a la mano. Aumenta su daño en {Value1} por cada carta |Exiliada| de esta manera."
+  UpgradedDescription: "|Exilia| cada carta de la mano.\nLuego, agrega un |Orbe Yin-Yang|\
+    \ a la mano. Aumenta su daño en {Value1} y su |Barrera| por {Value2} por cada\
+    \ carta |Exiliada| de esta manera."
 QiqingYishi:
   Name: Oración a la Luz del Sol
   Description: Añade un |Arcoíris| a la mano.
@@ -629,9 +632,11 @@ SenluoJiejie:
     \ pierde toda la |Barrera| e infligiendo el mismo daño a cada enemigo."
 RedLaser:
   Description: "Inflige {Damage} de daño.\n|Sobrecarga {Value2}|: Inflige {UpgradeDamage}\
-    \ de daño y aplica {Value1} de |Vulnerable|."
+    \ de daño {AttackTimes:plural one='% vez' other='% veces'} y aplica {Value1} de\
+    \ |Vulnerable|."
   Name: Láser Inflamable
-  UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Vulnerable|."
+  UpgradedDescription: "Inflige {Damage} de daño {AttackTimes:plural one='% vez' other='%\
+    \ veces'}.\nAplica {Value1} de |Vulnerable|."
   FlavorText: Uno de las habilidades para afrontar la época de invierno.
 Potion:
   Name: Poción Inestable
@@ -665,6 +670,12 @@ CraftPotion:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
     \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
   Name: Poción Artesanal
+  UpgradedDescription: "Agrega {Value1:plural one='% |Poción Inestable|' other='%\
+    \ |Pociones Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural\
+    \ one='' other='s'}.\n|Debut|: Roba una carta más."
+  ExtraDescription1: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
+    \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}.\n\
+    |d:Debut: Roba una carta más.|"
 DoubleLianhuadie:
   Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Value1}
     de daño a un enemigo aleatorio.
@@ -2202,8 +2213,8 @@ LarvaCure:
   Description: "Elimina el |Veneno| de {PlayerName}.\n|Limitado【{DeckCounter}】|"
 CirnoFreeze:
   Description: "Si hay algún {SelfName} en la mano, todas las cartas cuestan {Mana}\
-    \ maná más para jugar.\nCada vez que se juega una carta, se |Exilia| un {SelfName}\
-    \ de la mano."
+    \ maná más para jugar.\nCada vez que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ one='' other='s'}, se |Exilia| un {SelfName} en la mano."
   Name: Maná Congelado
 Thought:
   Description: "|Cuando {SelfName} entra en la mano|: Se |exilia|.\nAgrega una carta\
@@ -2443,12 +2454,12 @@ DanmakuMBTI:
   Name: Danmaku de MBTI
 PoisonTeaParty:
   Name: Fiesta de Té Sospechosa
-  Description: "Aplica {Value1} de |Veneno|.\nGana |Bloqueo| igual al |Veneno| del\
-    \ objetivo"
+  Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
+    \ {Value2} de |Veneno|."
 KisumeAttack:
   Name: Aparición en un Balde
-  Description: Inflige daño igual al número de cartas en la pila de robo. (Total {Damage}
-    )
+  Description: "Obtén {Block} de |Bloqueo|.\nInflige {Damage} de daño.\nSi {SelfName}\
+    \ fue la primera carta jugada en este turno, aplica {Value1} |Marcado|."
 ShirenKunchong:
   Name: Insecto Caníbal
   Description: "Inflige {Damage} de daño a cada enemigo.\nCada vez que un enemigo\
