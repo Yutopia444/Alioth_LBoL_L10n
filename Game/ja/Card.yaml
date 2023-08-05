@@ -200,7 +200,8 @@ Jiangshen:
   FlavorText: 「神に祈るわ、次は『境界遊行』が引けますようにと——」
 HuijuQiankun:
   Name: 乾坤の権化
-  Description: "|陰陽玉|1枚手札に加える。\nこのカード以外の手札をすべて|廃棄|し、廃棄されたカード1枚につき|陰陽玉|のダメージを{Value1}増加。"
+  Description: "|陰陽玉|1枚手札に加える。\nこのカード以外の手札をすべて|廃棄|し、廃棄されたカード1枚につきその|陰陽玉|のダメージを{Value1}増加。"
+  UpgradedDescription: "|陰陽玉|1枚手札に加える。\nこのカード以外の手札をすべて|廃棄|し、廃棄されたカード1枚につきその|陰陽玉|のダメージを{Value1}、|バリア|を{Value2}増加。"
 ReimuInstant:
   Name: 「夢想封印　瞬」
   Description: "{Damage}ダメージを与える。\nこのターンを終了し、次の自分のターンを開始する。\n|時間制限|{Mana}。"
@@ -265,10 +266,12 @@ CraftPotion:
   Description: '|ポーション|を{Value1}枚山札に加える。
 
     カードを{Value2}枚引く。'
+  UpgradedDescription: "|ポーション|を{Value1}枚山札に加える。\nカードを{Value2}枚引く。\n|初見|：追加でカードを1枚引く。"
+  ExtraDescription1: "|ポーション|を{Value1}枚山札に加える。\nカードを{Value2}枚引く。\n|d:初見：追加でカードを1枚引く。|"
 RedLaser:
   Name: バーニングレーザー
-  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：代わりに{UpgradeDamage}ダメージと|弱体|{Vulnerable}を与える。"
-  UpgradedDescription: '{Damage}ダメージを与える。
+  Description: "{Damage}ダメージを与える。\n|オーバードライブ{Value2}|：代わりに{UpgradeDamage}ダメージを{AttackTimes}回与え、|弱体|{Vulnerable}を与える。"
+  UpgradedDescription: '{Damage}ダメージを{AttackTimes}回与える。
 
     |弱体|{Value1}を与える。'
 SatelliteIllusion:
@@ -1608,7 +1611,7 @@ YukariBox:
   Description: "|占術|{Scry}、カードを{Value1}枚引く。\n捨て札を山札に加え、山札をシャッフルする。"
   Name: 開いた玉匣
 NewsTidbit:
-  Description: "|ロックオン|{Value1}を得る。\n|消耗品【{DeckCounter}】|"
+  Description: "|ロックオン|{Value1}を受ける。\n|消耗品【{DeckCounter}】|"
   Name: ゴシップニュース
 NueExile:
   Description: "手札を一枚|廃棄|する。\nランダムなカードを得る、|臨時コスト|を{Mana}にする。"
@@ -1665,7 +1668,7 @@ LarvaDefense:
   Description: "{Block}|ブロック|を得る。\n敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|毒|{Value2}を与える。"
   Name: 羽ばたく翼
 CirnoFreeze:
-  Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\nカードをプレイした時、手札の{SelfName}を1枚|廃棄|する。"
+  Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\nコストが増加したカードを{FreezeTimes}枚使用した時、{SelfName}を|廃棄|する。"
   Name: マナ凍結
 KoishiAttackB:
   Name: DNAの欠陥
@@ -1839,13 +1842,13 @@ MojingShanjie:
   Name: 魔浄閃結
   Description: "{Value1}枚のランダムな防御カードから1枚を選び、手札に加える。\n選んだカードの|臨時コスト|を{Mana}にする。"
 PoisonTeaParty:
-  Description: "|毒|{Value1}を与える。\nその敵の|毒|の数値に等しい|ブロック|を得る。"
+  Description: "{PlayerName}はライフを{Value1}回復し、|毒|{Value1}を受ける。\n|毒|{Value2}を与える。"
   Name: 疑惑のティーパーティー
 ShirenKunchong:
   Name: 人喰い虫
   Description: "敵全体に{Damage}ダメージを与える。\nそれらの敵がデバフを受ける度、{PlayerName}は{Value1}|ブロック|を得る。"
 KisumeAttack:
-  Description: 現在の山札の枚数と同じダメージを与える。（{Damage}ダメージ）
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}がターンの最初に使用されたカードである場合、|ロックオン|{Value1}を与える。"
   Name: 釣瓶落としの怪
 DoubleJK:
   Description: "{PlayerName}は各ターンにカードを{Value1}枚しか使用できない。\n{PlayerName}が|追加ターン|でないターンを終了する度、ブロックを|保留|した状態で|追加ターン|を開始する。"
