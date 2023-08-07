@@ -39,6 +39,7 @@ Game:
     .\n\nDomyślnie nie można obejrzeć stosu doboru w tej kolejności."
   ManaAmountOrder: Koszt
   Achievement: Osiągnięcia
+  Passive:  Zdolność Bierna
 MainMenu:
   ExitGame: Wyjdź z Gry
   SelectProfile: Wybierz Profil
@@ -98,6 +99,9 @@ Explain:
   ShinmyoumaruForge: Karty ataku są zastąpione kartami ataku a karty obrony kartami
     obrony.
   SaveWhenSelect: Wybór tego natychmiast zapisze grę.
+  Power: Moc <sprite="Point" name="Power">
+  PowerDescription: "Użycie Karty Zaklęć zużywa cały pasek mocy.\n(Wyświetlany pod\
+    \ portretem postaci)"
 UI:
   Yes: Tak
   No: Nie
@@ -135,6 +139,7 @@ UI:
   SpellTitled: '  {0} "{1}"'
   SpellUntitled: '"{0}"'
   Skip: Pomiń
+  SkipHint: Wciśnij {0}, aby pominąć
 StartGame:
   DifficultyTitle: Proszę wybrać poziom trudności
   Rate: Złożoność
@@ -175,6 +180,19 @@ StartGame:
     10.
   NoClearHind: Gry z ustawionym Nasieniem lub Cudowną Szkatułką nie są zaliczane jako
     przejścia i nie odblokowywują osiągnięć.
+  JadeBoxSelectedCount: Wybrano {0}/{1}
+  ShowRandomResultDescription: "Czy wyjawiać losowe wyniki w wydarzeniach, jak wyniki\
+    \ kart, eksponatów itd.\nLosowe wyniki są decydowane na początku tego przejścia\
+    \ i nie zmienią się po ponownym uruchomieniu gry.\n\n<color=#dd7473>Ohohoho! Posmakuj\
+    \ mojej mocy!"
+  ShowRandomResult: Ujawnij Przeznaczenie
+  NotShowRandomResult: Tajemnicze Przeznaczenie
+  ShowRandomResultTitle: Ujawnij Przeznaczenie
+  NotShowRandomResultTitle: Tajemnicze Przeznaczenie
+  NotShowRandomResultDescription: "Czy wyjawiać losowe wyniki w wydarzeniach, jak\
+    \ wyniki kart, eksponatów itd.\nLosowe wyniki są decydowane na początku tego przejścia\
+    \ i nie zmienią się po ponownym uruchomieniu gry.\n\n<color=#dd7473>Nie potrzebujesz\
+    \ mojej pomocy? Hym!"
 Museum:
   UpgradedFilter: Ulepszenie
   CardStyleFilter: Styl Karty
@@ -198,6 +216,14 @@ Museum:
     T5: Pospolity
   LockExhibit: Zablokowany eksponat
   CardNotReady: "Ta karta jeszcze nie jest gotowa.\nProszę poczekać do następnej aktualizacji."
+  TextFilterHint: Szukaj tekstu
+  Unlock: Zdobyte
+  NotUnlock: Niezdobyte
+  AchievementCount: Zdobyto Osiągnięcie
+  Hidden: Ukryte
+  All: Wszystkie
+  HiddenDescription: Szczegóły tego osiągniecia nie zostaną wyjawione aż zostanie
+    odblokowane.
 Setting:
   Main: Ogólne
   Preference: Rozgrywka
@@ -286,6 +312,11 @@ Setting:
   EnableKeyboard: Włącz Klawiaturę
   ShowShortcut: Skrót do Pokazania Kart w Dłoni
   ShowShortcutDescription: Pokaż skróty nad kartami w dłoni
+  Shake: Trzęsienie Ekranu
+  ShowReloadDescription: Czy pokazać na mapie ile razy aktualne przejście zostało
+    zrestartowane oraz czy losowe wyniki były ujawnione.
+  ShakeDescription: Włącza trzęsienie ekranem spowodowane obrażeniami.
+  ShowReload: Pokaż Ilość Powtórzeń
 History:
   Puzzles: "{0:plural one:'% Prośba' two:'% Prośby' many:'% Próśb'}"
   Mana: Mana
@@ -293,6 +324,9 @@ History:
   Card: 'Karty: {0}'
   StatsSegment: '{0}: {1}'
   PlayedTime: 'Czas Gry: {0}'
+  AutoSeed: Losowe Nasienie
+  NotAutoSeed: Podane Nasienie
+  ReloadTimes: 'Ilość Powtórzeń: {0}'
 System:
   ReenterStation: Ponów Poziom
   ResumeGame: Kontynuuj Grę
@@ -386,6 +420,7 @@ Chat:
   LoveGirlFallInLove: Moje życzenie w końcu się spełniło.
   HardworkRabbit2: Będę musiała to ustawić!
   HardworkRabbit1: Znaleziono Ziemiański cel!
+  LazyRabbit: Tama jest naprawdę bezużyteczna... Teraz muszę się wziąć w garść.
 ErrorChat:
   MoneyNotEnough: Nie starczy mi pieniędzy.
   LowMana: Nie starczy mi many.
@@ -403,6 +438,8 @@ ErrorChat:
   CardFengyin: Zostałam zapieczętowana.
   HandFull: Moja dłoń jest już pełna.
   CardCharm: Czuję się zdezorientowana.
+  LowLoyalty: Nie starczy mi Wspólności z tym wspólnikiem.
+  CardHuiye: Koniec czasu.
 Debut:
   EirinChats:
   - Nie marnuj czasu, {0:cv}
@@ -412,7 +449,7 @@ Debut:
   - Zostawię dom pod twoją opieką, Eirin.
   - Pamiętaj aby wrócić przed świtem~
 Shop:
-  Skip: Pomiń
+  Skip: Pomiń Sklep
   Close: Zamknij
   Remove: Usuń Kartę
   BoughtQuotes:
@@ -427,7 +464,16 @@ Shop:
   Chats:
   - Proszę tutaj, drogi kliencie~
   - Mam dobre ceny! Czy aby na pewno niczego nie chcesz?
-  RemoveTooltip: Usuń kartę że swojej biblioteki i podnieś cenę o| {0} złota|
+  RemoveTooltip: "Usuń kartę że swojej biblioteki.\nZ każdym zakupem w tym przejściu\
+    \ cena wzrasta o {0} Złota (Do maksimum {1})."
+  CardService: Usługa Kart
+  SoldOut: Wyprzedane
+  Upgrade: Ulepsz Kartę
+  UpgradeService: 'Ulepsz:'
+  UpgradeTooltip: "Ulepsz kartę w bibliotece.\nKosztuje {0} Złota."
+  RemoveService: 'Usuń:'
+  ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
+  ShopUpgradePrice: '{0} <sprite="Gold" name="gold">'
 Cards:
   UpgradeTips: Wybierz kartę do Ulepszenia
   UpgradeDialog: Zatwierdź Ulepszenie
@@ -437,6 +483,11 @@ Cards:
   RemoveTips: Wybierz kartę do Usunięcia
   Remove: Usuń {0:plural one='% karta' few='% karty' many='% kart'} z biblioteki.
   UnUpgradable: Nieulepszalna
+  TransformTips: Wybierz kartę do przetransformowania.
+  RemoveDialog: Zatwierdzić Usunięcie?
+  TransformDialog: Zatwierdzić Transformację?
+  UpgradePrice: "Koszt {0} <sprite=\"Gold\" name=\"gold\">\nGold {1} <sprite=\"Gold\"\
+    \ name=\"gold\">"
 Reward:
   Headers:
   - Wyśmienicie!
@@ -497,6 +548,7 @@ CardType:
   Tool: Narzędzie
   Status: Status
   Misfortune: Niesz.
+  Friend: Wspólnik
 StatusEffectType:
   Positive: Buff
   Negative: Debuff
@@ -655,3 +707,50 @@ MessageDialog:
     \nJeśli napotkasz jakiekolwiek bugi podczas gry, możesz się z nami skontaktować\
     \ w naszej społeczności Steam lub na naszym serwerze Discord."
   XCostEmptyUsageWarning: Użyć {0:g} bez ustawiania many?
+Lifetime:
+  Title: Całkowite Dane
+  HighestBp: Najwyższy Wynik <sprite="Point" name="Point">
+  TotalBp: Łączna Ilość Niebieskich Punktów <sprite="Point" name="Point">
+  Time: Czas Gry
+  Game: Ilość Przejść
+  Win: Rozwiązań incydentu
+  Perfect: Perfekcyjnych Rozwiązań incydentu
+  Puzzle: Prośby
+Credits:
+  Jiong: Usługa Wsparcia
+  Liya: VFX
+  Wuqiqi: Obrazy 2D
+  Aeolian: VFX / Udźwiękowienie
+  NoiseClub: Udźwiękowienie
+  English: Angielskie Tłumaczenie
+  Russian: Rosyjskie Tłumaczenie
+  Polish: Polskie Tłumaczenie
+  French: Francuskie Tłumaczenie
+  Korean: Koreańskie Tłumaczenie
+  Spanish: Hiszpańskie Tłumaczenie
+  Japanese: Japońskie Tłumaczenie
+  Portuguese: Portugalskie Tłumaczenie
+  Vietnamese: Wietnamskie Tłumaczenie
+  Italian: Włoskie Tłumaczenie
+  UnuseArt: Nieużyte Obrazy
+  MW: Animacje
+  Turkish: Tureckie Tłumaczenie
+  Alioth: Alioth Studio
+  Yutopia: Dyrektor Artystyczny / VFX
+  Salyu: Programowanie
+  MainPartners: Partnerzy
+  DD: UI / Obrazy
+  Alice: Projektowanie / Programowanie
+  LuvChan: Projektowanie
+  FK5: Programowanie / Ruch
+  Jiejiezi: Ilustracje i Obrazy Postaci
+  NeetRudong: Obrazy Wydarzeń
+  SignalE: Muzyka
+  Zackary: Udźwiękowienie
+  Sana: Ilustracje Postaci
+  Kyu: Ilustracje Postaci i Scen
+  Zaochuan: Ilustracje Scen
+  Anima: Animacje
+  Illustrator: Ilustracje Kart
+  Thanks: Specjalne Podziękowania
+  DG: Dyskusja o Prototypie
