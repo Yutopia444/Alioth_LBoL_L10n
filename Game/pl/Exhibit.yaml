@@ -133,8 +133,8 @@ Xunlongchi:
   FlavorText: Ich poprzedni właściciel postanowił się wybrać na prawdziwą przygodę
     i je pozostawił.
 TiangouDunpai:
-  Description: Gdyby {PlayerName} miałaby dostać {Value1} lub mniej niezablokowanych
-    obrażeń, otrzymuje tylko {Value2}.
+  Description: Gdy {PlayerName} zagrywa kartą obrony po raz pierwszy w turze, zyskaj
+    {Value1} |Tymczasowej Mocy|.
   Name: Tarcza Wilczej Tengu
   FlavorText: Niczym Opowieść Klonowa.
 Zijing:
@@ -210,8 +210,9 @@ SakuyaW:
 SakuyaU:
   Name: Magiczny Poker
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Sakuyi| są dodane\
-    \ do puli kart.\nDobieraj o {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'} więcej podczas fazy doboru."
+    \ do puli kart.\nPrzez pierwsz{Value2:plural one='ą turę' few='e % tury' many='e\
+    \ % tur'} dobieraj o {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ więcej podczas fazy doboru."
   FlavorText: Pracowite pokojówki, licencjonowanie online.
 CirnoU:
   Name: Lodowe Skrzydła
@@ -219,13 +220,13 @@ CirnoU:
     \ do puli kart.\nNa początku pierwszej tury {PlayerName:g} w każdej walce dodaj\
     \ {Value1:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do\
     \ ręki."
-  FlavorText: (W trakcie rozwoju...)
+  FlavorText: Nie wiadomo, jak one lewitują same z siebie.
 CirnoG:
   Name: Bujne Zielone Gałęzie
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Cirno| są dodane\
-    \ do puli kart.\nJeżeli jest jakakolwiek |Naddobrana| mana, zwiększ numeryczne\
-    \ efekty kart ataku i obrony o {Value1}."
-  FlavorText: (W trakcie rozwoju...)
+    \ do puli kart.\nNa początku pierwszej tury {PlayerName:g} każdej walki dodaj\
+    \ do ręki {Value1} |Letnie Kwiaty|."
+  FlavorText: Pięknie rosną nawet w obliczu nieszczęścia.
 KoishiG:
   Name: Koląca Róża
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
@@ -244,9 +245,8 @@ PiaoliangPanzi:
   FlavorText: Używane poprzez rzucanie i niszczenie go.
 DatiangouMaifan:
   Name: Ryż Jęczmienny Wielkiej Tengu
-  Description: "Dodaje {BaseMana} do bazy many.\nCo {Value1:plural one='walkę' few='%\
-    \ walki' many='% walk'} {PlayerName} zyskuje {Value2} <sprite=\"Point\" name=\"\
-    Power\">."
+  Description: "Dodaje {BaseMana} do bazy many.\nNa końcu każdej walki {PlayerName}\
+    \ zyskuje {Value1} <sprite=\"Point\" name=\"Power\">."
   FlavorText: Ma przeciętny smak.
 ClassicWunvfu:
   Name: Staromodny Strój Kapłanki
@@ -433,6 +433,7 @@ BoreMianju:
   Description: Gdy {Value1:plural one='% karta' few='% karty' many='% kart'} ataku
     {Value1:plural one='zostanie' other='zostaną'} zagrane w jednej turze, {PlayerName}
     zyskuje {Value2} |Mocy|.
+  FlavorText: Wymawiane "Bojar".
 HuliMianju:
   Name: Maska Lisa
   Description: Gdy {Value1:plural one='% karta' few='% karty' many='% kart'} ataku
@@ -637,6 +638,7 @@ JingwanMudan:
   Name: Kamień Piwonii
   Description: Za każde wydane {Value1} {Mana} zadaj {Value2:plural one='% obrażenie'
     few='% obrażenia' many='% obrażeń'} wszystkim wrogom. Resetowane na końcu walki.
+  FlavorText: Rodzaj rudy hematytowej, której pełna nazwa to "Kyomaru Mudan Sparrowstone".
 Shuye:
   Name: Liść
   Description: Za każde wydane {Value1} {Mana} zyskaj {Value2:plural one='% |Unik|'
@@ -688,8 +690,9 @@ DiannaoPeijian:
     Można je też dodać do herbaty aby pomóc Onee-samie się zrelaksować."
 Bumengwang:
   Name: Łapacz Snów
-  Description: Usługa usuwania kart w sklepie Takane zawsze kosztuje {Value1} <sprite="Point"
-    name="Gold">.
+  Description: Gdy zdobyty, usuń {Value1:plural one='% kartę' few='% karty' many='%
+    kart'} z biblioteki, ulecz {Value2:plural one='% punkt' few='% punkty' many='%
+    punktów'} życia i zyskaj {Value3} <sprite="Point" name="Power">.
   FlavorText: Nazywane też 'hooverem'. Głównie używany do łapania duchów.
 JudaShaozi:
   Name: Wielka Łycha
@@ -829,3 +832,16 @@ IdolTshirt:
   Description: Na początku walki {PlayerName} zyskuje {Value1} maksymalnego życia
     i nakłada na sibie {Value2:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.
   FlavorText: Nosząc to, będziesz otrzymywała spojrzenia z ukosa.
+YichuiPiao:
+  Name: Tykwa Ibuki
+  Description: Podczas tury {PlayerName:g} dobierz kartę jeżeli nie ma kart w dłoni.
+  FlavorText: Zawiera nieskończoną ilość sake.
+MaorongWanju:
+  Name: Pluszak
+  Description: Każda karta |Wspólnika| zaczyna z o {Value1} więcej |Wspólności|.
+  FlavorText: '"Nikt nie oprze się chęci dotknięcia go."'
+JuanzengZhengming:
+  Name: Dowód Datku
+  Description: "Maksymalna ilość przechowywanych przez {PlayerName:d} Kart Zaklęć\
+    \ jest zwiększona o {Value1}.\nJest aktywne do końca przejścia."
+  FlavorText: '"Przywrócić Zasady Kart Zaklęć!"'
