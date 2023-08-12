@@ -316,7 +316,7 @@ Setting:
     para cartas, exhibiciones, etc.
   DontShow: Apagado
   AnimatingEnvironment: Entorno Animado
-  AnimatingEnvironmentDescription: Muestra fondos dinámicos en el cuarto de Yukari
+  AnimatingEnvironmentDescription: Muestra fondos dinámicos en la brecha de Yukari
     y peleas.
   SingleEnemyAutoSelect: <size=87%>Selección Automática Individual
   Hide: Ocultar
@@ -353,7 +353,7 @@ Setting:
   Show: Mostrar
   DontWarn: No Advertir
   HintLevel: Consejos del juego
-  ShowShortcutDescription: Muestra los Atajos que están encima de las cartas de la
+  ShowShortcutDescription: Muestra los atajos que están encima de las cartas de la
     mano
   ShowShortcut: <size=73%>Mostrar Atajos de las Cartas de la Mano
   Shake: Vibración de Pantalla
@@ -420,7 +420,7 @@ Museum:
     T3: Raro
     T5: Común
     T6: Tienda
-    T7: Eventos y otros
+    T7: Eventos y Otros
     T4: Poco Común
   AchievementCount: Logros Obtenidos
   All: Todo
@@ -449,8 +449,8 @@ GameResult:
   ReturnHint: Clic en cualquier lugar para volver al menú principal
   TrueEnd: Incidente Resuelto Perfectamente
   BadEnd: Retrocedamos en el tiempo y volvamos a intentarlo...
-  TrueEndFail: Se encontró a la verdadera culpable, pero no se recuperó la Rama Enjoyada
-    de Hourai.
+  TrueEndFail: "Se encontró a la verdadera culpable, pero no se recuperó la Rama Enjoyada\
+    \ de Hourai.\n(Registrado como un incidente resuelto de manera normal)"
   ClickToOpen: Clic para Abrir
   UnlockHint: Las exhibiciones y cartas recién desbloqueadas aparecerán en futuras
     partidas.
@@ -507,7 +507,7 @@ Tooltip:
     Description: Dificultad estándar.
   ExileZone:
     Name: Exilio
-    Description: "|Exiliado| Las tarjetas se envían aquí.\n\nPulsa para ver las cartas\
+    Description: "|Exiliado| Las cartas se envían aquí.\n\nPulsa para ver las cartas\
       \ |Exiliadas| en este combate."
   EndTurn:
     Name: Finalizar Turno
@@ -547,8 +547,7 @@ Tooltip:
     Name: Sugerencia detallada
   DontShowHint:
     Name: Sin Sugerencias
-    Description: "No muestres ninguna sugerencia.\nHe jugado Touhou: Lost Branch of\
-      \ Legend antes."
+    Description: "No muestres ninguna sugerencia.\nHe jugado este juego antes."
   BriefHint:
     Name: Sugerencia corta
     Description: "Solo se mostrarán sugerencias relevantes para la mecánica única\
@@ -567,18 +566,18 @@ MessageDialog:
   QuitGame: ¿Salir del juego?
   XCostEmptyUsageWarning: ¿Usar {0} sin especificar su maná?
   XCostEmptyUsageTips: Puede configurar el maná en el panel de maná inferior izquierdo
-    para la tarjeta de costo X.
+    para las cartas de coste X.
   DontShowHintWarning: ¿Deshabilitar todas las sugerencias del juego?
   InvalidProfileName: Nombre de Perfil no Válido
   CorruptedSaveData: Los datos de guardados están corruptos
   AlreadyInGameRun: Ya en una partida jugando
   SkipDialog: ¿Omitir Diálogos?
-  ResetKeyBindingsWarning: ¿Confirma el reinicio de los atajos del teclado?
+  ResetKeyBindingsWarning: ¿Desea configurar las combinaciones de las teclas por defecto?
   GameRunSaveDiscarded: A medida que se actualiza el juego, se descarta la última
     partida.
   GameRunSaveDiscardedSubText: Tu perfil de jugador no se ve afectado por esto.
-  ResetHintWarning: ¿Confirma el reinicio de sugerencias?
-  CloseBattleHint: ¿Confirmar cerrar sugerencias de batalla?
+  ResetHintWarning: ¿Desea restablecer las sugerencias?
+  CloseBattleHint: ¿Cerrar sugerencias?
   CannotStartGameRunWithoutProfile: 'No se puede iniciar el juego: partida sin perfil
     de jugador'
   CannotRestoreEndedGameRun: Imposible de restaurar la progresión de una partida completada
@@ -616,8 +615,8 @@ Shop:
   - No soy una organización benéfica.
   - No te lo puedes permitir.
   - No tienes suficiente dinero.
-  RemoveTooltip: Elimina una carta de tu biblioteca y aumenta el precio cada vez en
-    |{0}|<sprite="Point" name="Gold">, (Un máximo de {1} de dinero)
+  RemoveTooltip: Elimina una carta de la biblioteca y aumente el precio en |{0} monedas|
+    por cada uso. Un precio máximo de {1} monedas.
   BoughtQuotes:
   - Gracias por su compra.
   WelcomeQuotes:
@@ -645,13 +644,13 @@ Cards:
   UnUpgradable: No-Mejorable
   UpgradeTips: Elija una carta para Mejorar
   RemoveTips: Elija una carta para remover
-  UpgradeDialog: Confirmar Mejora
+  UpgradeDialog: ¿Mejorar esta carta?
   Size:  {0:plural one='% carta' other='% cartas'}
   Show: Pase el cursor o haga clic con el botón derecho en las cartas para ver los
     detalles
   TransformTips: Elige una carta para Transformar
-  RemoveDialog: Confirmar Eliminación
-  TransformDialog: Confirmar Transformación
+  RemoveDialog: ¿Remover esta carta?
+  TransformDialog: ¿Transformar esta carta?
   UpgradePrice: "Coste {0} <sprite=\"Gold\" name=\"gold\">\nOro {1} <sprite=\"Gold\"\
     \ name=\"gold\">"
 CardDetail:
@@ -669,14 +668,14 @@ ErrorChat:
   CardCostChanged: El coste de la carta especificada ha cambiado.
   CardFengyin: Estoy sellada.
   CardDrunk: ¡No estoy borracha!
-  UsUsedThisTurn: Ya he usado el Hechizo en este turno.
-  UsUsedThisBattle: Ya he usado el Hechizo en esta batalla.
+  UsUsedThisTurn: Ya he usado la Carta Mágica en este turno.
+  UsUsedThisBattle: Ya he usado la Carta Mágica en esta batalla.
   NoTarget: Objetivo no Valido
   CardCharm: Me siento confundida.
   TargetAlreadyDead: Objetivo ya ha muerto
   HandFull: Mi mano ya está llena.
   EmptyDraw: La pila de robo esta vacía.
-  NoCardByMama: No existe tal carta con el costo objetivo.
+  NoCardByMama: No existe tal carta con el coste mostrado.
   LowLoyalty: No tengo suficiente Influencia con esta compañera.
   CardHuiye: No se puede reiniciar
 TopInfo:
@@ -695,7 +694,7 @@ BattleHint:
   Detailed: Mostrar sugerencia detallada
   Brief: Mostrar sugerencia corta
   Intro: "¡Bienvenidos a la Exposición de la Capital Lunar! ¡Haz tu mejor esfuerzo\
-    \ para encontrar la legendaria rama perdida!\nSi ya has jugado a otros juegos\
+    \ para encontrar la Legendaria Rama Perdida!\nSi ya has jugado a otros juegos\
     \ de construcción de mazos, puedes elegir |Sugerencias cortas| para mostrar solo\
     \ sugerencias sobre la mecánica única de este juego.\nLas sugerencias de partidas\
     \ posteriores también seguirán esta preferencia. Puedes ajustar la configuración\
@@ -707,12 +706,12 @@ BattleHint:
   Intention: "La intención del enemigo se muestra encima de ellos.\nLos enemigos pueden\
     \ tener intenciones como atacar, defender, mejorar a sus aliados, aplicar desventajas\
     \ o lanzar una Carta Mágica."
-  Mana: "Haga clic derecho en una tarjeta para ver sus detalles. (Esto también funciona\
+  Mana: "Haga clic derecho en una carta para ver sus detalles. (Esto también funciona\
     \ para la mayoría de los otros lugares donde ves cartas en el juego).\nUsar cartas\
     \ cuesta maná. El coste de maná de la carta se muestra en la esquina superior\
     \ derecha.\nHay 7 tipos de maná base: maná de color <sprite=\"ManaSprite\" name=\"\
     W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
-    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, maná incoloro <sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, Maná iIncoloro <sprite=\"\
     ManaSprite\" name=\"C\"> y <sprite=\"ManaSprite\" name=\"P\"> que pueden rellenar\
     \ cualquier requisito de coste de maná.\nLos costes genéricos como <sprite=\"\
     ManaSprite\" name=\"2\"> se usan cualquier par de maná."

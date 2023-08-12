@@ -1,8 +1,7 @@
 Firepower:
   Name: Poder
   Description: "Obtén {Level} de |Poder|.\nEl |Poder| aumenta el daño hecho con ataques."
-  Brief: "Obtiene un mayor |Poder|.\nEl |Poder| aumenta el daño infligido con los\
-    \ ataques."
+  Brief: "|Poder| incrementado.\nEl |Poder| aumenta el daño infligido con los ataques."
 TempFirepowerNegative:
   Description: "Hasta el final del turno, pierde {Level} de |Poder|.\nEl |Poder| aumenta\
     \ el daño hecho con ataques."
@@ -81,7 +80,7 @@ Invincible:
   Name: Perfección
   Description: "{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño {Duration:plural\
     \ one='hasta el final de su turno' other='durante los próximos % turnos'}."
-  Brief: '{OwnerName} no perderá mas de 1 de vida a la vez.'
+  Brief: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
 TurnStartDontLoseBlock:
   Name: Bloqueo Conservado
   Brief: '{OwnerName} no pierde |Bloqueo| al inicio de cada turno.'
@@ -91,28 +90,28 @@ Amulet:
   Name: Amuleto
   Description: Niega {Level:plural one='el siguiente efecto negativo' other='los siguientes
     % efectos negativos'}.
-  Brief: Niega el siguiente efecto negativo.
+  Brief: Niega algunos efectos negativos.
 AmuletForCard:
-  Brief: Resiste las próximas cartas de estado que recibas (Las vas a |Exiliar|).
+  Brief: Niega una cierta cantidad de cartas de estado que recibas (Serán |Exiliadas|).
   Name: Resguardo
   Description: Niega la {Level} siguiente{Level:plural one=' carta de Estado' other='s
     cartas de Estados'} que se {Level:plural one='agregaría' other='agregarían'} (En
     su lugar {Level:plural one='será |Exiliado|' other='serán |Exiliados|'}).
 Electric:
   Name: Descarga Estática
-  Brief: Al ser dañada, inflige daño al atacante.
-  Description: Al ser dañada, inflige {Level} de daño al atacante.
+  Brief: Cuando sea atacada, inflige algo de daño al atacante.
+  Description: Cuando sea atacada, inflige {Level} de daño al atacante.
 TempElectric:
   Name: Descarga Estática
   Description: "Al ser dañada, inflige {level} de daño al atacante.\nEste efecto es\
     \ removido al inicio del próximo turno de {OwnerName}."
-  Brief: "Al ser dañada, inflige daño al atacante.\nEste efecto es removido al inicio\
-    \ del próximo turno de {OwnerName}."
+  Brief: "Al ser dañada, inflige algo de daño al atacante.\nEste efecto es removido\
+    \ al inicio del próximo turno de {OwnerName}."
 Reflect:
   Name: Reflexión
   Description: Cuando recibe daño, inflige {Level} de daño al atacante, y este efecto
     se remueve.
-  Brief: Al ser dañada, inflige daño al atacante, y este efecto se remueve.
+  Brief: Al ser dañada, inflige algo de daño al atacante, y este efecto se remueve.
 NextAttackUp:
   Name: Ataque Potenciado
   Description: La próxima carta de |Ataque| inflige {Level} mas de daño.
@@ -122,12 +121,12 @@ NextTurnLoseHp:
   Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} de vida.
   Brief: Al inicio del próximo turno de {OwnerName}, pierde de vida.
 NextTurnGainBlock:
-  Brief: Al inicio del próximo turno de {OwnerName}, obtén |Bloqueo|.
+  Brief: Al inicio del próximo turno de {OwnerName}, obtén algo de |Bloqueo|.
   Name: Bloqueo en el Próximo Turno
   Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} de |Bloqueo|.
 NextTurnGainShield:
   Name: Barrera en el Próximo Turno
-  Brief: Al inicio del próximo turno de {OwnerName}, obtén |Barrera|.
+  Brief: Al inicio del próximo turno de {OwnerName}, obtén algo de |Barrera|.
   Description: Al inicio del próximo turno de {OwnerName}, obtén {Level} de |Barrera|.
 CantDrawThisTurn:
   Name: Negación de Robo
@@ -158,14 +157,14 @@ TimeIsLimited:
   Brief: Hasta el próximo turno del enemigo, las cartas necesitan más maná para ser
     jugadas.
 GuangxueMicai:
-  Brief: '{OwnerName} recibe la mitad de daño de ataques.'
+  Brief: '{OwnerName} recibe la mitad de daño de ataques durante algunos turnos.'
   Name: Camuflaje Óptico
   Description: "{OwnerName} recibe la mitad de daño de ataques {Duration:plural one='hasta\
     \ el final del turno' other='por los próximos % turnos'}."
 DroneBlock:
   Name: Matriz de Defensa
   Description: Al final del turno de {OwnerName}, obtén {Level} de |Bloqueo|.
-  Brief: Al final del turno de {OwnerName}, obtienes |Bloqueo|.
+  Brief: Al final del turno de {OwnerName}, gana algo de |Bloqueo|.
 MaoyuBlock:
   Name: Mullida
   Description: '{OwnerName} obtiene {Level} de |Bloqueo| al ser atacada.'
@@ -188,7 +187,7 @@ DeathVulnerable:
 Drowning:
   Name: Ahogar
   Description: '{OwnerName} recibe {Level} de daño al final de cada turno.'
-  Brief: '{OwnerName} recibe daño al final de su turno.'
+  Brief: '{OwnerName} recibe algo de daño al final de su turno.'
 LoveGirlDamageReduce:
   Name: Remordimientos Persistentes
   Description: Los sentimientos de la {OwnerName} siguen sin ser no correspondidos.
@@ -387,23 +386,24 @@ BoliDajiejieSe:
   Name: Gran Barrera Hakurei
   Description: En este combate, todos el |Bloqueo| de {OwnerName} se convierte en
     |Barrera|.
-  Brief: '|Bloqueo| de {OwnerName} se convierte en |Barrera|.'
+  Brief: '|Bloqueo| de {OwnerName} se convierte en |Barrera| durante este combate.'
 DoubleLianhuadieSe:
   Name: Mariposa de Loto Dicromática
   Description: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige {Level}
     de daño a un enemigo aleatorio.
-  Brief: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige algo daño a
-    un enemigo aleatorio.
+  Brief: Siempre que {PlayerName} gana |Bloqueo| o |Barrera|, inflige algo de daño
+    a un enemigo aleatorio.
 DanceAroundLakeSe:
   Name: Danza Junto al Lago
-  Brief: Siempre que una carta esté |Exiliada|, roba algunas cartas.
+  Brief: Siempre que una carta esté |Exiliada|, roba un cierto número de cartas.
   Description: Siempre que una carta esté |Exiliada|, roba {Level:plural one='% carta.'
     other='% cartas.'}
 EvilTuiZhiSe:
   Name: Exterminación Malvada
   Description: "{Level:plural one='La siguiente carta' other='% Las siguientes cartas'}\
     \ de ataque jugado {Level:plural one='inflige' other='infligen'} el doble de daño."
-  Brief: Las siguientes cartas de ataque jugadas infligen el doble de daño.
+  Brief: Las cartas de ataque jugadas infligirán el doble de daño durante algunas
+    de veces.
 HolyGrailSe:
   Description: Al comienzo del turno de {OwnerName}, {PlayerName} pierde todo lo que
     no sea |Exhibiciones| |Brillantes| y |Mítico Raro|.
@@ -434,14 +434,15 @@ TaijiLiangyiSe:
     |Orbe Yin-Yang|' other='varios |Orbes Yin-Yang|'} a la mano{Level:plural one='.'
     other=' hasta que haya %.'}
   Name: El Nacimiento del Yin-Yang
-  Brief: Al comienzo del turno de {PlayerName}, si hay menos |Orbes Yin-Yang| en la
-    mano, agrégalos a la mano hasta que haya tantos.
+  Brief: Al comienzo del turno de {PlayerName}, si hay menos de una cierta cantidad
+    de |Orbes Yin-Yang| en la mano, agrega |Orbes Yin-Yang| a la mano hasta que haya
+    tantos.
 ReimuShrineSe:
   Description: Al comienzo del turno de {PlayerName}, gana {Level} de |Espíritu Temporal|.
   Name: Feria del Templo Hakurei
-  Brief: Al comienzo del turno de {PlayerName}, gana |Espíritu Temporal|.
+  Brief: Al comienzo del turno de {PlayerName}, gana algo de |Espíritu Temporal|.
 ReimuFreeAttackSe:
-  Brief: Las siguientes cartas de ataque jugadas cuesta {Mana} para jugar.
+  Brief: Las siguientes cartas de ataque jugadas cuestan {Mana} para jugar.
   Name: Fantasía Fugaz
   Description: "{Value1:plural one='La siguiente carta' other='Las siguientes % cartas'}\
     \ de ataque jugada cuesta {Mana} para usarse."
@@ -450,10 +451,10 @@ MomentPowerSe:
     convierte {Level} de ellos en |Poder| o |Espíritu|, respectivamente.
   Name: Grieta Dimensional Instantánea
   Brief: Siempre que {OwnerName} gana |Poder Temporal| o |Espíritu Temporal|, convierte
-    parte de él en |Poder| o |Espíritu|, respectivamente.
+    algo de ellos en |Poder| o |Espíritu|, respectivamente.
 ReimuFestivalSe:
   Name: Danza de la Sagrada Sakura
-  Brief: Al comienzo del turno de {PlayerName}, gana |Poder Temporal|.
+  Brief: Al comienzo del turno de {PlayerName}, gana algo de |Poder Temporal|.
   Description: Al comienzo del turno de {PlayerName}, gana {Level} de |Poder Temporal|.
 ReverseJiejieSe:
   Description: Cada vez que {PlayerName} pierde un |Buff|, gana {Level} de |Barrera|.
@@ -475,7 +476,7 @@ BoliPhantomSe:
     agregue {Level} |{Level:plural one='Aguja Persuasiva' other='Agujas Persuasivas'}|
     a la mano con |costó temporal| {Mana}.
   Brief: Siempre que una carta que no sea |Aguja Persuasiva| está |Exiliado|, añade
-    1 o más Agujas Persuasivas a la mano que |cuesta temporalmente| {Mana}.
+    algunas |Agujas Persuasivas| a la mano que |cuesta temporalmente| {Mana}.
 HuanxiangBlockSe:
   Description: Cada vez que una carta es |Exiliada|, {PlayerName} gana {Level} de
     |Bloqueo|.
@@ -484,11 +485,11 @@ HuanxiangBlockSe:
 BurstDrawSe:
   Name: Duelo de Velocidad
   Description: Al entrar en |Burst|, roba {Level:plural one='% carta' other='% cartas'}.
-  Brief: Robas cartas al entrar en |Burst|.
+  Brief: Robas algunas cartas al entrar en |Burst|.
 Concentration:
   Description: "{Level:plural one='El siguiente efecto' other='Los siguientes % efectos'}\
     \ de |Sobrecarga| no cuesta |Cargas| para activarlo."
-  Brief: Los próximos efectos de |Sobrecargas| no cuestan Cargas para activarlo.
+  Brief: El efecto de |Sobrecargas| ya no cuestan Cargas para activarse.
   Name: Concentración
 Charging:
   Name: Carga
@@ -503,8 +504,9 @@ LearnAstrologySe:
   Description: Al comienzo del turno de {PlayerName}, si no hay {Level:plural one='ninguna'
     other='menos de %'} |Astrología| en la mano, agrega {Level:plural one='% |Astrología|'
     other='% |Astrologías|'} a la mano.
-  Brief: Al comienzo del turno de {PlayerName}, si hay menos |Astrología| en la mano,
-    añádelos a la mano hasta que haya esa cantidad.
+  Brief: Al comienzo del turno de {PlayerName}, si hay menos de una cierta cantidad
+    de |Astrologías| en la mano, añade |Astrologías| a la mano hasta que haya esa
+    cantidad.
 UpgradePotionSe:
   Brief: Al final del turno de {PlayerName}, el daño de la |Poción Inestable| en la
     pila de robar y la pila de descarte se aumenta.
@@ -513,7 +515,7 @@ UpgradePotionSe:
   Name: Poción Refinada
 PotionDefenseSe:
   Brief: Hasta el final del turno, siempre que una |Poción inestable| se use, gana
-    |Barrera|.
+    algo de |Barrera|.
   Name: Eco Resonante
   Description: Hasta el final del turno, siempre que una |Poción Inestable| se use,
     gana {Level} de |Barrera|.
@@ -527,12 +529,12 @@ Burst:
 PotionBaseDamageSe:
   Description: '|Pociones Inestables| infligen {Level} más de daño.'
   Name: Componentes Explosivos
-  Brief: Las |Pociones Inestables| hacen mas daño.
+  Brief: Daño de las |Pociones Inestables| se incrementan.
 MasterOfCollectionSe:
   Description: Siempre que una carta sea |Retenida|, reduce su coste de maná aleatorio
     en {Level} en este combate.
   Name: Maestra Coleccionista
-  Brief: Cada vez que una carta es |Retenida|, reduce su coste un poco el maná aleatorio
+  Brief: Cada vez que una carta es |Retenida|, reduce su coste por algo de maná aleatorio
     en este combate.
 BurstUpgrade:
   Name: Máxima Potencia
@@ -542,18 +544,18 @@ SolarSystemSe:
   Name: Planetario Solar
   Description: Al comienzo del turno de {PlayerName}, gana {Level} |Carga{Level:plural
     one='' other='s'}|.
-  Brief: Al comienzo del turno de {PlayerName}, ganas |Carga|.
+  Brief: Al comienzo del turno de {PlayerName}, gana algunas |Cargas|.
 PotionJungleSe:
   Name: Bosque Fluorescente
   Description: Al final del turno de {PlayerName}, agrega {Level:plural one='|% Poción
     Inestable|' other='|% Pociones Inestables|'} a la pila de descarte.
-  Brief: Al final del turno de {PlayerName}, añade varias |Pociones Inestables| en
+  Brief: Al final del turno de {PlayerName}, añade algunas |Pociones Inestables| en
     la pila de descarte.
 ChargingPotionSe:
   Name: Elementos Radiactivos
   Description: Siempre que una |Poción Inestable| se usa, gana {Level} |Carga{Level:plural
     one='' other='s'}|.
-  Brief: Siempre que una |Poción Inestable| se utiliza, ganas |Carga|.
+  Brief: Siempre que una |Poción Inestable| se utiliza, gana algunas |Cargas|.
 PoisonPotionSe:
   Brief: Siempre que una |Poción Inestable| se usa, también aplica algo de |Veneno|
     a su objetivo.
@@ -564,11 +566,11 @@ TimeAuraSe:
   Name: Pulso Temporal
   Description: "Al final del turno de {PlayerName}, inflige {Level} de daño a todos\
     \ los enemigos.\nPierde un nivel por cada enemigo dañado."
-  Brief: "Al final del turno de {PlayerName}, inflige daño a cada enemigo.\nDisminuye\
-    \ un nivel por cada enemigo dañado."
+  Brief: "Al final del turno de {PlayerName}, inflige algo de daño a cada enemigo.\n\
+    Disminuye un nivel por cada enemigo dañado."
 GainKnifeSe:
-  Brief: Al comienzo del turno de {PlayerName}, agrega |Cuchillos Arrojadizos| a la
-    mano.
+  Brief: Al comienzo del turno de {PlayerName}, agrega algunos |Cuchillos Arrojadizos|
+    a la mano.
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} {Level:plural
     one='|Cuchillo Arrojadizo|' other='|Cuchillos Arrojadizos|'} a la mano.
   Name: Espada Estrella Danzante
@@ -582,11 +584,12 @@ SpecialClockSe:
   Description: Al comienzo del turno de {PlayerName}, Elige {Level:plural one='una
     carta' other='hasta % cartas'} y descártalas, roba la misma cantidad de cartas
     que has descartado.
-  Brief: Al comienzo del turno de {PlayerName}, selecciona alguna carta, descártala
-    y roba todas la misma cantidad de cartas que has descartado.
+  Brief: Al comienzo del turno de {PlayerName}, selecciona algunas cartas, descártala
+    y roba la misma cantidad de cartas que has descartado.
   Name: Cronometro Especial
 PerfectServantUSe:
-  Brief: Al comienzo del próximo turno de {OwnerName}, gana {Mana} y roba cartas adicionales.
+  Brief: Al comienzo del próximo turno de {OwnerName}, gana {Mana} y roba algo de
+    cartas adicionales.
   Name: Soluciones Adicionales
   Description: Al comienzo del próximo turno de {OwnerName}, gana {Level} {Mana} y
     roba {Level:plural one='% carta' other='% cartas'}.
@@ -594,12 +597,12 @@ EvilMaidSe:
   Name: Sirvienta del Demonio
   Description: Los ataques de {OwnerName} infligen el doble de daño {Level:plural
     one='hasta el final del turno' other='hasta los siguientes % turnos'}.
-  Brief: Los siguientes turnos infligen el doble de daño.
+  Brief: Los ataques infligen el doble de daño en los siguientes turnos.
 EvilMaidDoubleAttack:
   Description: "Duplica el daño de ataque de {PlayerName} (Permanece: {Duration:plural\
     \ one='% turno' other='% turnos'})."
   Name: Sirvienta del Demonio
-  Brief: El daño de ataque de {PlayerName} se duplica.
+  Brief: El daño de ataque de {PlayerName} se duplica durante varios de turnos.
 StopTimeSe:
   Description: Cuando termine el turno de {PlayerName}, conserva {Level:plural one='%
     maná aleatorio sin gastar en lugar de perderlo' other='% manas aleatorios sin
@@ -611,24 +614,24 @@ MihuanJackSe:
   Name: Jack the Ludo Bile
   Description: Al comienzo del turno de {PlayerName}, gana {Level} {Level:plural one='|Pulso
     Temporal|' other='|Pulsos Temporales|'} .
-  Brief: Al comienzo del turno de {PlayerName}, gana |Pulso Temporal|.
+  Brief: Al comienzo del turno de {PlayerName}, gana algo de |Pulso Temporal|.
 SilverBladeSe:
   Name: Dimensión Plateada
   Description: Cada vez que se usa una carta de ataque, Obtén {Level} de |Barrera|.
-  Brief: Cada vez que se usa una carta de ataque, obtén |Barrera|.
+  Brief: Cada vez que se usa una carta de ataque, obtén algo de |Barrera|.
 SakuyaKillerSe:
   Description: Al final del turno de {PlayerName} y siempre que un enemigo sea derrotado,
     agrega |{Level:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|
     a la pila de robo.
   Brief: Al final del turno de {PlayerName} y cada vez que un enemigo sea derrotado,
-    agrega |Cuchillos Arrojadizos| a la pila de robo.
+    agrega algunos |Cuchillos Arrojadizos| a la pila de robo.
   Name: Destripadora en la Niebla
 DrawPhaseAddKnife:
   Name: Al inicio del turno obtienes |Cuchillos| En lugar de robar cartas
   Description: Omite la fase de robo de cartas del inicio del turno, agrega {Limit}
     |Cuchillos| a la mano en su lugar.
-  Brief: Omite la fase de robo de cartas del inicio del turno, agrega |Cuchillos|
-    a la mano en su lugar.
+  Brief: Omite la fase de robo de cartas del inicio del turno, agrega algunos |Cuchillos
+    Arrojadizos| a la mano en su lugar.
 DangerousMagicianSe:
   Description: Siempre que un |Cuchillo Arrojadizo| se usa, {PlayerName} gana {Level}
     |Pulso Temporal|.
@@ -642,7 +645,7 @@ AutoKnifeSe:
 KnifeWithLockedOn:
   Name: ¡Tu eres el Siguiente!
   Description: '|Cuchillos Arrojadizos| aplica {level} |Marcado| cuando se juega.'
-  Brief: '|Cuchillos Arrojadizos| aplica |Marcado| cuando se juega'
+  Brief: '|Cuchillos Arrojadizos| aplican algunos |Marcados| cuando se juega.'
 NextTurnLoseGame:
   Name: Perder en el Próximo Turno
   Description: Pierde la partida en el siguiente turno.
@@ -655,39 +658,40 @@ ShannvAbilitySe:
   Name: Fiebre Desconocida
   Description: Al final del turno de {PlayerName}, aplica {Level} de |Veneno| a cada
     enemigo.
-  Brief: Al final del turno de {PlayerName}, aplica |Veneno| a cada enemigo.
+  Brief: Al final del turno de {PlayerName}, aplica algo de |Veneno| a cada enemigo.
 MeihongFireSe:
   Name: Ignición Indiscriminada
   Description: "Al final del turno de {PlayerName}, inflige {Level} de daño a cada\
     \ enemigo.\nEsto también sucede cuando se roba una |Desgracia| o una carta de\
     \ estado."
-  Brief: "Al final del turno de {PlayerName}, inflige daño a cada enemigo.\nEsto también\
-    \ sucede cuando se roba una |Desgracia| o una carta de Estado."
+  Brief: "Al final del turno de {PlayerName}, inflige algo de daño a cada enemigo.\n\
+    Esto también sucede cuando se roba una |Desgracia| o una carta de Estado."
 PrismriverSe:
   Name: Concierto Prísmico
   Description: Cada vez que {PlayerName} gana una cantidad de maná, gana esa cantidad
     <sprite="ManaSprite" name="P"> en su lugar.
-  Brief: Cada vez que {PlayerName} gana una cantidad de maná, gana esa cantidad <sprite="ManaSprite"
-    name="P"> en su lugar.
+  Brief: Convierte todo el maná ganado en <sprite="ManaSprite" name="P"> durante este
+    combate.
 SeeFengshuiSe:
   Description: "Al comienzo del turno de {PlayerName}, |Explora| {Scry}.\nCada vez\
     \ que se envía una carta de defensa a la pila de descartes mientras estas |Explorando|,\
     \ gana {Block} |Bloqueo|."
   Brief: "Al comienzo del turno de {PlayerName}, |Explora|.\nCada vez que se envía\
-    \ una carta de defensa a la pila de descartes mientras |Explora|, gana |Bloqueo|."
+    \ una carta de defensa a la pila de descartes mientras |Explora|, gana algo de\
+    \ |Bloqueo|."
   Name: Manipulación del Feng Shui
 YonglinCardSe:
   Name: La Sabia Recluida
   Description: Al final del turno de {PlayerName}, agrega {Level} |Luna{Level:plural
     one=' Falsa' other='s Falsas'}| a la pila de robo.
-  Brief: Al final del turno de {PlayerName}, agrega varias |Lunas Falsas| a la pila
+  Brief: Al final del turno de {PlayerName}, agrega algunas |Lunas Falsas| a la pila
     de robo.
 HuiyeManaSe:
   Name: Cuento del Cortador de Bambú
   Description: Al comienzo del turno de {PlayerName}, gana {Count} de maná <sprite="ManaSprite"
     name="P">, aumenta en {Level} cada turno.
-  Brief: Al comienzo del turno de {PlayerName}, gana maná <sprite="ManaSprite" name="P">,
-    aumenta en cada turno.
+  Brief: Al comienzo del turno de {PlayerName}, gana algo de maná <sprite="ManaSprite"
+    name="P">, aumenta en cada turno.
 ZhenmiaowanAttackSe:
   Brief: El costo de las cartas técnicas disminuye en {Mana} en este turno.
   Name: Descendiente de Issun-Boushi
@@ -698,8 +702,8 @@ HekaHellRainSe:
   Description: "Al final del turno de {OwnerName}, inflige {Level} de daño a cada\
     \ enemigo por cada carta jugada en este turno.\n(Se jugaron {Count} cartas en\
     \ este turno)."
-  Brief: Al final del turno de {OwnerName}, inflige daño a cada enemigo por cada carta
-    jugada en ese turno.
+  Brief: Al final del turno de {OwnerName}, inflige algo daño a cada enemigo por cada
+    carta jugada en ese turno.
 RainbowMarketSe:
   Name: Mercado del Arcoíris Lunar
   Description: Siempre que una carta es |Exiliado|, añade {Level} {Level:plural one='carta
@@ -715,17 +719,18 @@ TiangouOrderSe:
   Name: Decreto del Gran Tengu
   Description: Cuando {OwnerName} recibe daño de ataque, {PlayerName} obtiene {Level}
     de |Bloqueo|.
-  Brief: Cuando {OwnerName} recibe daño de ataque, {PlayerName} obtiene |Bloqueo|.
+  Brief: Cuando {OwnerName} recibe daño de ataque, {PlayerName} obtienes algo de |Bloqueo|.
 KokoroDanceSe:
   Description: Cada vez que un enemigo recibe un |Efecto Negativo|, {PlayerName} le
     inflige {Level} de daño.
-  Brief: Cuando el enemigo obtiene efectos negativos, {PlayerName} le inflige daño.
+  Brief: Cuando el enemigo obtiene efectos negativos, {PlayerName} le inflige algo
+    de daño.
   Name: Noh de la Oscuridad
 SkyWaterSe:
   Description: Roba {Level} carta{Level:plural one='' other='s'} más durante la fase
     de robo.
   Name: Milagro del Agua Celestial
-  Brief: Roba cartas adicionales durante la fase de robo.
+  Brief: Roba más cartas adicionales durante la fase de robo.
 BlackPoisonSe:
   Description: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, aplica
     {level} de |Veneno| a ese enemigo.
@@ -733,7 +738,7 @@ BlackPoisonSe:
   Brief: Cada vez que {PlayerName} inflige daño no bloqueado a un enemigo, aplica
     algo de |Veneno| a ese enemigo.
 MeilingAbilitySe:
-  Brief: 'El |Poder| y |Poder Temporal| que gane {PlayerName} se duplica.'
+  Brief: '{OwnerName} gana el doble de |Poder| y |Poder Temporal|.'
   Name: Puño de Arcoíris Vibrante
   Description: '{PlayerName} gana el doble de |Poder| y |Poder Temporal|.'
 Cold:
@@ -758,7 +763,7 @@ UseCardToLoseGame:
   Name: Corta Esperanza de Vida
   Description: Pierde la partida después de jugar {Count:plural one='% carta mas'
     other='% cartas mas'}.
-  Brief: Pierde la partida después de jugar un cierto número de cartas.
+  Brief: Pierde la partida después de jugar algunas cartas.
 BailianBlackSe:
   Name: Abraza la Oscuridad
   Description: Todos las cartas que no son de ataque ni de habilidad se reducen su
@@ -770,8 +775,8 @@ MeihongPowerSe:
     \ final del combate, si la vida de {PlayerName} es menos de la mitad, se cura\
     \ {Heal} de vida."
   Name: La Llama Inmortal
-  Brief: "Al comienzo del turno de {PlayerName}, gana |Poder|\nAl final del combate,\
-    \ si la vida de {PlayerName} es menos de la mitad, gana vida."
+  Brief: "Al comienzo del turno de {PlayerName}, gana algo de |Poder|\nAl final del\
+    \ combate, si la vida de {PlayerName} es menos de la mitad, gana vida."
 RangziFanshuSe:
   Description: Después de este combate, te curas {Level} de vida.
   Brief: Gana algo de vida al final del combate.
@@ -780,25 +785,25 @@ DizangLoveSe:
   Name: Bodhi Instantáneo
   Description: Cada vez que se juega una carta común, {OwnerName} gana {Level} de
     |Poder Temporal|.
-  Brief: Después de jugar una carta común, {OwnerName} obtiene |Poder Temporal|.
+  Brief: Después de jugar una carta común, {OwnerName} gana algo de |Poder Temporal|.
 ModuoluoFireSe:
   Name: Fuego de Ena
   Description: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige {Level}
     de daño a cada enemigo.
-  Brief: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige daño a cada
-    enemigo.
+  Brief: Cada vez que se gasta <sprite="ManaSprite" name="P">, inflige algo de daño
+    a cada enemigo.
 RinDrawSe:
   Name: Asignación de Espíritus
   Description: Cada vez que se robe una carta de Estado, roba {Level:plural one='%
     carta' other='% cartas'}.
-  Brief: Cada vez que se roba una carta de Estado, roba cartas.
+  Brief: Cada vez que se roba una carta de Estado, roba algunas cartas.
 YachieDefendSe:
   Name: Caparazón de Tortuga Infernal
   Description: "Evita que la {Level:plural one='próxima % vez' other='próximas % veces'}\
     \ {OwnerName} pierda vida.\nSi la fuente es de un enemigo, ese enemigo pierde\
     \ esa misma cantidad de vida en su lugar."
-  Brief: "Evita que la próxima vez {OwnerName} pierda vida.\nSi la fuente es un enemigo,\
-    \ ese enemigo pierde esa cantidad de vida en su lugar."
+  Brief: "{OwnerName} no perderá vida por un cierto número de veces.\nSi el daño se\
+    \ origina en un enemigo, ese enemigo pierde esa cantidad de vida en su lugar."
 TodayYesterdaySe:
   Name: Gensokyo, Pasado y Presente
   Description: Siempre que {OwnerName} |Evada| un ataque, gana {Level} de |Poder|.
@@ -824,7 +829,7 @@ ColdPotionSe:
   Brief: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
 ExtraDraw:
   Name: Intelecto de Hada
-  Brief: Al comienzo del próximo turno de {OwnerName}, roba varias cartas adicionales.
+  Brief: Al comienzo del próximo turno de {OwnerName}, roba algunas cartas adicionales.
   Description: Al comienzo del próximo turno de {OwnerName}, roba {Level} carta{Level:plural
     one=' adicional' other='s adicionales'}.
 WhiteWorldSe:
@@ -838,8 +843,8 @@ BailianFireSe:
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
     \ one='' other='s'} de habilidad aleatoria a la mano.\n|Cuesta{Level:plural one=''\
     \ other='n'} temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
-  Brief: "Al comienzo del turno de {PlayerName}, agrega cartas de habilidad aleatorias\
-    \ a la mano.\n|Cuestan temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
+  Brief: "Al comienzo del turno de {PlayerName}, agrega algunas cartas de habilidad\
+    \ aleatorias a la mano.\n|Cuestan temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
 FairyTreeSe:
   Name: Hogar de las Hadas
   Brief: Siempre que una |Compañera| es convocada jugando cartas |Compañeras|, obtén
@@ -857,16 +862,17 @@ FrostArmor:
     \ daño por un ataque, pierde 1 |Armadura de Escarcha|."
 InvincibleEternal:
   Name: Perfección
-  Description: '{OwnerName} no perderá mas de 1 de vida a la vez.'
-  Brief: '{OwnerName} no perderá mas de 1 de vida a la vez.'
+  Description: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
+  Brief: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
 SplitPotionSe:
   Name: Químico Doble
   Description: Las |Pociones Inestables| inflige daño a {Level} objetivo{Level:plural
     one=' adicional' other='s adicionales'}.
-  Brief: Las |Pociones Inestables| infligen daño a un objetivo adicional.
+  Brief: Las |Pociones Inestables| infligen daño a varios objetivos adicionales.
 IceMatrixSe:
   Name: Matriz Congelada
-  Brief: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana |Armadura de Escarcha|.'
+  Brief: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana algo de |Armadura
+    de Escarcha|.'
   Description: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana {Level}
     |Armadura de Escarcha|.'
 Benwo:
@@ -891,12 +897,13 @@ IceVulnerable:
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
   Brief: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una |Compañera|\
-    \ se usa, aplica |Frío| a un enemigo aleatorio.\nCada vez que un enemigo gana\
-    \ |Frío|, una |Compañera| aleatoria en la mano gana algo de |Influencia|."
+    \ se usa, aplica |Frío| a algunos enemigos.\nCada vez que un enemigo gana |Frío|,\
+    \ algunas |Compañeras| aleatorias en la mano ganan |Influencia|."
   Description: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de\
     \ una |Compañera| se usa, aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural\
-    \ one='z' other='ces'}.\nCada vez que un enemigo gana |Frío|, una |Compañera|\
-    \ aleatoria en la mano gana {Level} de |Influencia|."
+    \ one='z' other='ces'}.\nCada vez que un enemigo gana |Frío|, {Level} |Compañera{Level:plural\
+    \ one='' other='s'}| aleatoria{Level:plural one='' other='s'} en la mano gana\
+    \ {Level} de |Influencia|."
 MoreFriendsSe:
   Name: Mariposa Social
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
@@ -904,15 +911,15 @@ MoreFriendsSe:
     \ la mano.\n{Level:plural one='Tiene' other='Tienen'} |Etéreo| y pierde{Level:plural\
     \ one='' other='n'} el |Etéreo| cuando {Level:plural one='es convocada' other='son\
     \ convocadas'}."
-  Brief: "Al final del turno de {PlayerName}, agrega cartas aleatorias de |Compañeras|\
-    \ a la mano.\nLas cartas |Compañeras| añadidas de esta manera tienen |Etéreo|\
-    \ hasta que sean convocadas."
+  Brief: "Al final del turno de {PlayerName}, agrega algunas cartas aleatorias de\
+    \ |Compañeras| a la mano.\nLas cartas |Compañeras| añadidas de esta manera tienen\
+    \ |Etéreo| hasta que sean convocadas."
 YouxiangMoonSe:
   Name: Belleza de la Naturaleza
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Flores de Verano|
     a la mano {Level:plural one='Tiene' other='Tienen'} |Etéreo|.
-  Brief: Al comienzo del turno de {PlayerName}, agrega varias |Flores de verano| a
-    la mano Tienen |Etéreo|.
+  Brief: Al comienzo del turno de {PlayerName}, agrega algunas |Flores de verano|
+    a la mano Tienen |Etéreo|.
 MinengZhuruSe:
   Name: Inyección de Energía Mental
   Description: "Las habilidades pasivas de las cartas |Compañera| convocadas se activan\
@@ -941,13 +948,13 @@ ExtraBlizzard:
   Name: Llegada de la Ventisca
   Description: Al comienzo del próximo turno de {OwnerName}, inflige {Damage} de daño
     |Certero| y aplica |Frío| a cada enemigo.
-  Brief: Al comienzo del próximo turno de {OwnerName}, inflige daño |Certero| y aplica
-    |Frío| a cada enemigo.
+  Brief: Al comienzo del próximo turno de {OwnerName}, inflige algo de daño |Certero|
+    y aplica |Frío| a cada enemigo.
 FrozenThroneSe:
   Name: Trono de Hielo
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Glaciar{Level:plural
     one='' other='es'}+| a la mano.
-  Brief: Al comienzo del turno de {PlayerName}, agrega varios |Glaciares+| a la mano.
+  Brief: Al comienzo del turno de {PlayerName}, agrega algunos |Glaciares+| a la mano.
 Immune:
   Name: Bloque de Hielo
   Description: "{OwnerName} no puede perder vida durante {Duration} turno{Duration:plural\
@@ -972,18 +979,19 @@ YonglinUpgradeSe:
   Name: Incienso del Conejo Lunar
   Description: Al comienzo del turno de {PlayerName}, |mejora| {Value1} carta{Value1:plural
     one=' aleatoria' other='s aleatorias'} en la mano.
-  Brief: Al comienzo del turno de {PlayerName}, |mejora| cartas aleatorias en la mano.
+  Brief: Al comienzo del turno de {PlayerName}, |mejora| algunas cartas aleatorias
+    en la mano.
 SummerFlowerSe:
   Description: '{SourceCardName} infligen {Level} de daño adicional.'
-  Brief: '{SourceCardName} infligen daño adicional.'
+  Brief: '{SourceCardName} inflige algo de daño adicional.'
   Name: Floración de Verano
 MaidFriendSe:
-  Brief: '{SourceCardName} inflige daño adicional.'
+  Brief: '{SourceCardName} inflige algo de daño adicional.'
   Description: '{SourceCardName} inflige {Level} de daño adicional.'
   Name: Entrenador de Cuchillos Arrojadizos
 StarFriendSe:
   Description: Cuando {SourceCardName} inflige daño, aplica {Level} de |Marcado|.
-  Brief: Cuando {SourceCardName} inflige daño, aplica |Marcado|.
+  Brief: Cuando {SourceCardName} inflige daño, aplica algunos |Marcados|.
   Name: Como Estrellas en el Cielo
 CatchGoblinSe:
   Description: Daño recibido reducido en un 33%, Otorga 50<sprite="Point" name="Gold">
@@ -1013,9 +1021,9 @@ DoubleJKSe:
     \ other='s'} en cada turno. ({Count} Carta{Value1:plural one=' restante' other='s\
     \ restantes'})\nAl final del turno de {PlayerName}, si no fue un turno extra,\
     \ toma un turno extra, reteniendo todo el |Bloqueo| ganado."
-  Brief: "{PlayerName} solo puede jugar hasta una cantidad determinada de cartas en\
-    \ cada turno.\nAl final del turno de {PlayerName}, si no fue un turno extra, toma\
-    \ un turno extra, reteniendo todo el |Bloqueo| ganado."
+  Brief: "{PlayerName} solo puede jugar una cantidad de cartas en cada turno.\nAl\
+    \ final del turno de {PlayerName}, si no fue un turno extra, toma un turno extra,\
+    \ conserva todo el |Bloqueo| ganado."
 ShirenKunchongSe:
   Name: Insecto Caníbal
   Brief: Cada vez que {OwnerName} gana una |Efecto Negativo|, {PlayerName} gana algo
