@@ -1854,8 +1854,8 @@ IceSaber:
     \ niebieskich kart. Zadaj obrażenia dodatkowy raz za każdą zrzuconą kartę."
   Name: Ostrze Wykute z Lodu
 FairyTree:
-  Description: Gdy karta umiejętności wejdzie do ręki po raz pierwszy w turze zyskaj
-    {Mana} i dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
+  Description: Gdy |Wspólnik| jest przywoływany poprzez zagrywanie karty |Wspólnika|,
+    zyskaj {Value1} |Bloku|.
   Name: Siedziba Wróżek
 SakuyaUsage2:
   Name: Kołowe Kroki
@@ -1882,8 +1882,9 @@ CallFriends:
   Name: Wezwać Przyjaciół
   Description: Wybierz 1 z {Value1} |Wspólników| aby dodać do ręki. Wchodzi do ręki
     już przywołana.
-  UpgradedDescription: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'
-    many='% losowych kart'} |Wsparcia Wróżek| do ręki.
+  UpgradedDescription: "Wybierz 1 z {Value1} |Wspólników| aby dodać do ręki. Wchodzi\
+    \ do ręki już przywołana.\n|e:Wróżka Światła| jest zawsze zawarta jako dodatkowy\
+    \ wybór."
 Blizzard:
   Name: Śnieżyca
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1922,8 +1923,9 @@ IceMatrix:
     \ Pancerza|.\nNałóż |Chłód| na wszystkich wrogów."
 MoreFriends:
   Name: Dusza Towarzyska
-  Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% losową kartę'
-    few='% losowe karty' many='% losowych kart'} |Wsparcia Wróżek| do ręki.
+  Description: "Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% losową kartę'\
+    \ few='% losowe karty' many='% losowych kart'} |Wspólnika| do ręki.\n{Value1:plural\
+    \ one='Ta karta ma' other='Te karty mają'} |Eteryczność|, którą tracą po przywołaniu."
 FreezeToIce:
   Name: Zamrożony Okaz
   Description: "|Wygnaj| do {Value1:plural one='% kart' other='% kart} z dłoni. Dodaj\
@@ -2184,12 +2186,16 @@ DoubleMana:
 BestFriend:
   Name: Najlepsza Przyjaciółka
   Description: Wybierz do {Value1:plural one='% karty' other='% kart'} |Wsparcia Wróżek|
-    w dłoni. Użyj ich efektu aktywowania raz (Bez ich |Wygnania|).
+    w dłoni. Wymaksuj {Value1:plural one='jej' other='ich'} |Wspólność|.
 DiamondBlizzard:
   Name: Diamentowy Filar
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\n|Wybierz|: Nałóż |Chłód| wszystkim wrogom lub zyskaj {Block}\
     \ |Bloku|."
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom.\nNałóż |Chłód| wszystkim wrogom."
+  ExtraDescription2: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom.\nZyskaj {Block} |Bloku|."
 ColdChain:
   Description: Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}
     ze stosu doboru i umieść {Value1:plural one='ją' other='je'} w dłoni. {Value1:plural
@@ -2223,6 +2229,8 @@ FairyAllOut:
     \ wszystkim wrogom.\n|Wygnaj| wszystkie karty |Wsparcia Wróżek| w dłoni."
 SummerParty:
   Name: Lodowa Impreza
+  Description: "Zyskaj {Value1} |Lodowego Pancerza|.\nWszyscy |Wspólnicy| w dłoni\
+    \ zyskują {Value2} |Wspólności|."
 DayaojingFriend:
   Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} ataku losowemu wrogowi."
@@ -2271,3 +2279,11 @@ LilyFriend:
   ExtraDescription1: '{FriendA}Zyskaj {ActiveMana}.'
   ExtraDescription2: "{FriendU}Ulecz {Heal:plural one='% punkt' few='% punkty' many='%\
     \ punktów'} życia."
+InstantFreeze:
+  ExtraDescription1: "Nałóż |Chłód| na wszystkich wrogów.\nZakończ turę {PlayerName:g}.\
+    \ Wtem, zacznij dodatkową turę.\n|d:Ograniczenie Czasowe {Mana}.|"
+  Description: "Nałóż |Chłód| na wszystkich wrogów.\nZakończ turę {PlayerName:g}.\
+    \ Wtem, zacznij dodatkową turę.\n|Ograniczenie Czasowe| {Mana}."
+  Name: Natychmiastowe Zamrożenie
+LarvaDefense:
+  Name: Trzepot Szkrzydeł
