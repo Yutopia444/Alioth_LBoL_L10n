@@ -20,8 +20,10 @@ ReimuBlockR:
   FlavorText: Zbawiciel może zatrzymać pocisk machnięciem ręki.
 YaoguaiBuster:
   Name: Pogromczyni Youkai
-  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
-    {Value1:plural one='% raz' other='% razy'}.
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż {Value2} |Osłabienia|."
+  FlavorText: Nie dość, że możesz sprowadzić youkaia do płaczu dwa razy tą kartą,
+    to po ulepszeniu możesz to zrobić trzeci raz!
 DoubleJiejie:
   Name: Podwójna Bariera
   FlavorText: Weź dwa lustra a zobaczysz nieskończoną pętlę.
@@ -35,6 +37,7 @@ Fengmozhen:
 Shenyuzha:
   Name: Talizman Boskiej Aury
   Description: Zyskaj {Block} |Bloku|.
+  FlavorText: '"Domena bogów, nie wchodzić"'
 YinyangCard:
   Name: Kula Yin-Yang
   FlavorText: Serwisem zajmie się Misumaru Tamatsukuri.
@@ -49,6 +52,7 @@ TuimofuLuanwu:
   Name: Dziki Taniec Egzorcyzmu
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
     losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.
+  FlavorText: '"Więc zostałaś tylko ty."'
 MengzhiYuzha:
   Name: Talizman Snów
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -60,6 +64,8 @@ Fengmozhen4:
     wszystkim wrogom.
   UpgradedDescription: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%
     obrażeń'} wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.
+  FlavorText: Ta technika nie służy do załatwiania złoczyńców, ale do załatwiania
+    tych po prawej stronie ekranu.
 WunvKongwu:
   Name: Powietrzny Taniec Kapłanki
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
@@ -75,6 +81,8 @@ Jinfuzhen:
   Name: Związująca Granica
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli {PlayerName} ma |Barierę|, nałóż {Value1} |Wrażliwości|."
+  FlavorText: Póki nie będziesz próbowała się wyrwać, ta technika nie jest taka silna,
+    jak się wydaje.
 JingshenYishi:
   Name: Oczyszczający Rytuał
   Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| kartę z ręki."
@@ -128,8 +136,10 @@ ShensheRichang:
 TwoBalls:
   Name: Kule Balansu
   Description: "Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'\
-    \ many='% |Kul Yin-Yang|'} do ręki.\nJeżeli {PlayerName} ma |Barierę|, dodan{Value1:plural\
-    \ one='a karta kosztuje' other='e karty kosztują'} o {Mana} mniej."
+    \ many='% |Kul Yin-Yang|'} do ręki."
+  UpgradedDescription: Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'
+    many='% |Kul Yin-Yang|'} do ręki. {Value1:plural one='Ona' other='One'} kosztują
+    o {Mana} mniej.
 MingzhuAntou:
   Name: Sekretna Granica
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -217,6 +227,9 @@ HuijuQiankun:
   Name: Zgromadzenie Yin-Yanga
   Description: "|Wygnaj| wszystkie karty w dłoni.\nNastępnie dodaj |Kulę Yin-Yang|\
     \ do ręki. Zadaje ona o {Value1} więcej obrażeń za każdą kartę wygnaną tym sposobem."
+  UpgradedDescription: "|Wygnaj| wszystkie karty w dłoni.\nWtem, dodaj |Kulę Yin-Yang|\
+    \ do ręki. Zwiększ jej obrażenia o {Value1} i |Barierę| o {Value2} za każdą wygnaną\
+    \ w ten sposób kartę."
 ReimuInstant:
   Name: '"Pieczęć Snów -Mignięcie-"'
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -252,7 +265,9 @@ DanceAroundLake:
     few='% karty' many='% kart'}.
 Qingshan:
   Name: Czyiś Ostatni Dom
-  Description: "Zyskaj {Block} |Bloku|.\n|Gdy Wygnana|: Zyskaj {Mana}."
+  Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| {Value1:plural one='% losową kartę'\
+    \ few='% losowe karty' many='% losowych kart'} |Nieszczęścia| oraz/lub Statusu\
+    \ do ręki."
 AutoQumobang:
   Name: Rozwścieczony Gohei
   Description: "|Gdy w dłoni:| Dobierz o {Value1:plural one='% kartę' few='% karty'\
@@ -293,12 +308,22 @@ CraftPotion:
   Description: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne\
     \ Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\nDobierz {Value2:plural\
     \ one='% kartę' few='% karty' many='% kart'}."
+  UpgradedDescription: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|%\
+    \ Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\n\
+    Dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}.\n|Debiut|:\
+    \ Dobierz o jedną kartę więcej."
+  ExtraDescription1: "Dodaj {Value1:plural one='|% Niestabilną Miksturę|' few='|%\
+    \ Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do stosu doboru.\n\
+    Dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}.\n|d:Debiut:\
+    \ Dobierz o jedną kartę więcej.|"
 RedLaser:
   Name: Ognisty Laser
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj {Value2}:| Zadaj tyle obrażeń {Value1:plural one='% raz' other='% razy'}."
-  UpgradedDescription: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%
-    obrażeń'} {Value1:plural one='% raz' other='% razy'}.
+    |Załaduj {Value2}:| Zamiast tego zadaj {UpgradeDamage:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} {AttackTimes:plural one='% raz' other='%\
+    \ razy'} i nałóż {Value1} |Wrażliwości|."
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} {AttackTimes:plural one='% raz' other='% razy'}.\nNałóż {Value1} |Wrażliwości|."
 Potion:
   Name: Niestabilna Mikstura
   FlavorText: UWAGA! Mikstury mogą być wybuchowe!
@@ -416,9 +441,9 @@ StarShower:
     \ {Value2} |Ładunku|. W innym wypadku zyskaj {Value1} |Ładunku|."
   Name: Kąpiel w Gwiezdnym Pyle
 ShootMoon:
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj {Value2}|: Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='%\
-    \ |Uników|'}."
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {AttackTimes:plural one='% raz' other='% razy'}.\n|Załaduj {Value2}|: Zyskaj\
+    \ {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}."
   Name: Strzał w Księżyc
 RunAway:
   UpgradedDescription: "Zrzuć wszystkie karty w dłoni. Karty zrzucone w ten sposób\
@@ -539,9 +564,10 @@ HuoliQuankai:
     \ obrażenia zamiast podwójnych.\nWejdź w stan |Zrywu|."
 MasterOfCollection:
   Name: Mistrzyni Zbieractwa
-  Description: Gdy karta zostanie |Przetrzymana|, obniż jej koszt o {Value1:plural
-    one='% losowy punkt' few='% losowe punkty' many='% losowych punktów'} many na
-    czas walki.
+  Description: "Wybierz do {Value2:plural one='% karty' other='% kart'} w dłoni. {Value2:plural\
+    \ one='Ona zyskuje' other='One zyskują'} |Przetrzymanie|.\nGdy karta zostanie\
+    \ |Przetrzymana|, obniż jej koszt o {Value1:plural one='% losowy punkt' few='%\
+    \ losowe punkty' many='% losowych punktów'} many na czas walki."
 ChargingPotion:
   Name: Radioaktywne Składniki
   Description: "Gdy zostanie użyta |Niestabilna Mikstura|, zyskaj {Value1} |Ładunku|.\n\
@@ -589,8 +615,7 @@ PurpleMogu:
     życia.
 JungleMaster:
   Name: Mieszkanka Lasu
-  Description: "Zyskaj {Block} |Bloku|.\n|Na początku walki:| Zyskaj {Value1:plural\
-    \ one='% punkt' few='% punkty' many='% punktów'} |Bariery|."
+  Description: "|Na początku walki|: Wygnaj {SelfName:a}, zyskaj {Value1} |Bariery|."
 ManaJungle:
   Name: Leśna Przygoda
   Description: "|Gdy Dobrana|: Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|'\
@@ -644,10 +669,15 @@ KnifeBounce:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|'\
     \ many='% |Sztyletów do Rzucania|} do ręki."
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nDodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety\
+    \ do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki.\nNałóż {Value2:plural\
+    \ one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}."
 Lijian:
   Name: Widok Oddalonego Ostrza
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Przy doborze:| Ta karta kosztuje o {Mana} mniej na czas walki."
+    Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n|Przy doborze|:\
+    \ {SelfName} kosztuje o {Mana} mniej na czas walki."
 Knife:
   Name: Sztylet do Rzucania
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -704,6 +734,7 @@ SilverBullet:
 SakuyaSleep:
   Name: Krótka Przerwa
   Description: "Dodaj |Tęczę| do ręki.\nZakończ turę {PlayerName:g}."
+  UpgradedDescription: Dodaj |Tęczę| do ręki.
 SakuyaDefenseRetain:
   Name: Garda w Górę
   Description: "Zyskaj {Block} |Bloku|.\n|Blok| nie jest tracony na początku następnej\
@@ -711,11 +742,11 @@ SakuyaDefenseRetain:
 BladePower:
   Name: Olśniewający Pęd
   Description: "Zyskaj {Value1} |Mocy|.\n|Przy Doborze|: Jeżeli {SelfName} jest jedyną\
-    \ kartą w dłoni, ta karta |Tymczasowo Kosztuje| {Mana}."
+    \ kartą w dłoni, jej efekt jest podwojony. (Aktualne aż nie opuści dłoni)"
 SakuyaDraw:
   Name: Szczytowa Perfekcja
-  Description: "|Gdy zrzucona:| Dobierz {Value1:plural one='% kartę' few='% karty'\
-    \ many='% kart'}."
+  Description: "|Gdy Zrzucona lub Wygnana|: Dobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}."
 PrepareParty:
   Name: Przygotowanie Przyjęcia
   Description: "Połóż kartę z ręki na szczyt stosu doboru.\nZyskaj {Block} |Bloku|."
@@ -744,7 +775,8 @@ SakuyaDio:
     \ dodatkową turę. Podczas tej tury, zamiast dobierania kart dodaj {Value2:plural\
     \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
     \ do Rzucania|'} do ręki."
-  Name: Teraz Kolej na Ciebie
+  Name: Teraz Kolej na Ciebie!
+  FlavorText: 次は貴様だ！
 PerfectServant:
   Name: Sługa Idealny
   Description: "|Za Każde Wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
@@ -1697,7 +1729,8 @@ JingyeGraze:
   Name: Spadające Liście Szaleństwa
 ReimuFestival:
   Name: Taniec Świętej Sakury
-  Description: Na początku tury {PlayerName:g} zyskaj {Value1} |Tymczasowej Mocy|.
+  Description: "Zyskaj {Value1} |Tymczasowej Mocy|.\nNa początku tury {PlayerName:g}\
+    \ zyskaj {Value1} |Tymczasowej Mocy|."
 ReimuDrink:
   UpgradedDescription: "Ulecz {Value1:plural one='% punkt' few='% punkty' many='%\
     \ punktów'} życia.\nZyskaj {Value1} |Tymczasowej Mocy|.\nDodaj {Value2:plural\
@@ -1707,12 +1740,14 @@ ReimuDrink:
     \ do ręki."
   Name: Omiki
 ReimuShrine:
-  Description: '{PlayerName} zyskuje {Value1} |Tymczasowego Uduchowienia| na początku
-    tury.'
+  Description: 'Zyskaj {Value1} |Tymczasowego Uduchowienia|.
+
+    {PlayerName} zyskuje {Value1} |Tymczasowego Uduchowienia| na początku tury.'
   Name: Jarmark Świątyni Hakurei
 SuikaOut:
   Description: "Wybierz kartę w dłoni, aby |Wygnać|.\nZyskaj {Value1} |Odparcia|."
   Name: Oczyszczający Egzorcyzm
+  FlavorText: Wydaje się nieefektywne przeciw wrogom z 999 Mocy.
 ReimuFreeAttack:
   Description: "Zyskaj {Block} |Bloku|.\n{Value1:plural one='Następna karta' few='Następne\
     \ % karty' many='Następne % kart'} ataku kosztuj{Value1:plural one='e' few='ą'\
@@ -1725,13 +1760,13 @@ SakuyaGoOut:
 SakuyaInvestigate:
   Name: Detektyw Zatrzymanego Czasu
   Description: "Nałóż {Value1:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\n\
-    Na początku każdej dodatkowej tury zwróć tę kartę z |Wygnania| do ręki. |Tymczasowo\
-    \ Kosztuje| {Mana}."
+    Na początku każdej dodatkowej tury zwróć tę kartę z |Wygnania| do ręki."
 SakuyaDetective:
   Name: List Gończy
   FlavorText: Nie wiem, czy pamiętasz, ale w tej grze dokonujesz śledztwa.
-  Description: "Walcząc przeciw prawdziwej sprawczyni zadaj jej {Value1:plural one='%\
-    \ obrażenie' few='% obrażenia' many='% obrażeń'} na początku walki.\n({BossDamage:plural\
+  Description: "Dobierz {Value2:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Walcząc przeciw prawdziwej sprawczyni zadaj jej {Value1:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} na początku walki.\n({BossDamage:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} zostało {BossDamage:plural\
     \ one='skumulowane' few='skumulowane' many='skumulowanych'}.)"
 ReimuHeavyAttack:
@@ -1745,8 +1780,7 @@ BrokenTimeline:
   FlavorText: '"Cała misterna linia czasowa w pizdu."'
 BulletStudy:
   Name: Badanie Danmaku
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Załaduj| {Value2}: Zyskaj {Shield} |Bariery|."
+  Description: "Zyskaj {Block} |Bloku|.\n|Załaduj| {Value2}: Zyskaj {Shield} |Bariery|."
 DiscardToCharging:
   Name: Odnowa Paliwa
   Description: "Zrzuć dowolną ilość kart z ręki.\nZa każdą zrzuconą kartę zyskaj {Value1}\
@@ -1816,8 +1850,8 @@ CirnoDraw:
   Description: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
 IceSaber:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\nZrzuć dowolną ilość niebieskich\
-    \ kart. Zadaj obrażenia dodatkowy raz za każdą zrzuconą kartę."
+    \ {Value1:plural one='% raz' other='% razy'} i nałóż |Chłód|.\nZrzuć dowolną ilość\
+    \ niebieskich kart. Zadaj obrażenia dodatkowy raz za każdą zrzuconą kartę."
   Name: Ostrze Wykute z Lodu
 FairyTree:
   Description: Gdy karta umiejętności wejdzie do ręki po raz pierwszy w turze zyskaj
@@ -1846,14 +1880,16 @@ FrostGarden:
     \ few='% |Lodowce|' many='% |Lodowców|'} do ręki."
 CallFriends:
   Name: Wezwać Przyjaciół
-  Description: Dodaj {Value1:plural one='% losową pospolitą kartę' few='% losowe pospolite
-    karty' many='% losowych pospolitych kart'} |Wsparcia Wróżek| do ręki.
+  Description: Wybierz 1 z {Value1} |Wspólników| aby dodać do ręki. Wchodzi do ręki
+    już przywołana.
   UpgradedDescription: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'
     many='% losowych kart'} |Wsparcia Wróżek| do ręki.
 Blizzard:
   Name: Śnieżyca
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\nNałóż |Chłód| na wszystkich wrogów."
+    \ wszystkim wrogom.\nNałóż |Chłód| na wszystkich wrogów.\nJeżeli w dłoni jest\
+    \ przywołana |Letty, Wcielenie Zimy|, powtórz ten efekt na początku następnej\
+    \ tury {PlayerName:}."
 ZeroK:
   Name: Zero Absolutne
   Description: "Zwiększ mnożnik zadawanych obrażeń wielokrotnie nakładając |Chłód|\
@@ -1874,8 +1910,8 @@ IceGun:
     \ otrzymują {Value2:plural one='% raz' other='% razy'} więcej obrażeń."
 Tether:
   Name: Więzi
-  Description: "Zyskaj {Block} |Bloku|.\nZa każdą kartę |Wsparcia Wróżek| w dłoni\
-    \ zyskaj o {Value1} więcej |Bloku|. (Łącznie {Special} |Bloku|)"
+  Description: "Zyskaj {Block} |Bloku|.\nWszyscy |Wspólnicy| w dłoni zyskują {Value1}\
+    \ |Wspólności|."
 CirnoInForest:
   Name: Na Widoku
   Description: "Zyskaj {Block} |Bloku|.\n|Naddobór| {Value1}."
@@ -1930,9 +1966,10 @@ WhiteWorld:
     |Zamrożenie Many| {Mana}."
 FairyTeam:
   Name: Wielka Wojna Wróżek
-  Description: "Zwróć po jednej z każdej |Wygnanej| karty |Wsparcia Wróżek| o różnych\
-    \ imieniach do ręki. ({TeamCount:plural few='Są %' other='Jest %'}.)\n|Naddobór|\
-    \ {Value1}."
+  Description: "Wybierz dowolną ilość |Wspólników| w dłoni i je |Wygnaj|. Zyskaj manę\
+    \ równą ich kosztu.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} losowemu wrogowi.\nZa każdą |Wygnaną| w ten sposób kartę zadaj\
+    \ obrażenia dodatkowy raz."
 MinengZhuru:
   Name: Zastrzyk Energii Myślowej
   Description: "Bierne efekty kart |Wsparcia Wróżek| aktywują się {Value1:plural one='%\
@@ -2019,8 +2056,11 @@ MorphMan:
 FrozenThrone:
   FlavorText: Now, we are one!
   Name: Zamrożony Tron
-  Description: Na początku tury {PlayerName:g}, jeżeli nie ma |Lodowca| w dłoni, dodaj
-    {Value1:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do ręki.
+  Description: Na początku tury {PlayerName:g} dodaj {Value1:plural one='% |Lodowiec+|'
+    few='% |Lodowce+|' many='% |Lodowców+|'} do ręki.
+  UpgradedDescription: "Na początku tury {PlayerName:g} dodaj {Value1:plural one='%\
+    \ |Lodowiec+|' few='% |Lodowce+|' many='% |Lodowców+|'} do ręki.\nNatychmiast\
+    \ dodaj |Lodowca+| do ręki."
 LongArm:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli w dłoni jest więcej niż {Value1:plural one='% inna karta' few='% inne karty'\
@@ -2040,9 +2080,8 @@ YinyangQueen:
   Name: Misumaru, Utalentowana Rzemieślniczka
   Description: '{FriendP}Zyskaj {Value2} |Bloku| oraz |Bariery|.'
   ExtraDescription2: "{FriendU}Do końca walki efekty |Kul Yin-Yang| są podwojone.\
-    \ Natychmiastowo dodaj {Value1:plural one='% |Kulę Yin-Yang Tęczowego Smoka|'\
-    \ few='% |Kule Yin-Yang Tęczowego Smoka|' many='% |Kul Yin-Yang Tęczowego Smoka|'}\
-    \ do ręki."
+    \ Natychmiastowo zyskaj {Value1:plural one='% |Kulę Yin-Yang Tęczowego Smoka|'\
+    \ few='% |Kule Yin-Yang Tęczowego Smoka|' many='% |Kul Yin-Yang Tęczowego Smoka|'}."
   ExtraDescription1: "{FriendA}Dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego\
     \ Smoka|' few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul\
     \ Yin-Yang Tęczowego Smoka|'} do ręki."
@@ -2137,6 +2176,8 @@ CirnoConsider:
   Name: Ostrożna Rozwaga
   Description: "|Wybierz|: Zyskaj {Block} |Bloku| lub dobierz {Value1:plural one='%\
     \ kartę' few='% karty' many='% kart'}."
+  ExtraDescription1: Zyskaj {Block} |Bloku|.
+  ExtraDescription2: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
 DoubleMana:
   Description: "Podwój istniejącą manę.\n|Naddobór| {Valuie1|."
   Name: Obudzenie Wróżki
@@ -2160,13 +2201,16 @@ Opt:
     \ stosu doboru.\nDobierz kartę.\nZyskaj {Mana}."
 CirnoFire:
   Name: Łatwopalny Lód
-  Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| {SelfName} kosztuje\
-    \ o {Mana} mniej."
+  Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| zwiększ obrażenia\
+    \ {SelfName:g} o {Value2}."
 FairyWrath:
   Name: Gniew Natury
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ dwóm losowym wrogom.\nZa każdą |Wygnaną| kartę |Wsparcia Wróżek| {SelfName}\
-    \ zadaje o (Value1} więcej obrażeń.\n|Naddobór| {Value2}."
+    \ wszystkim wrogom.\nJeżeli w dłoni jest przywołana |Daiyousei, Żwawa Asystentka|,\
+    \ dodaj {Value1} |Letnie Kwiaty| do ręki."
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom.\nJeżeli w dłoni jest przywołana |Daiyousei, Żwawa\
+    \ Asystentka|, dodaj {Value1} |Letnie Kwiaty+| do ręki."
 FreezeRiver:
   Name: Kra
   Description: Umieść kartę ze spodu stosu doboru do ręki. Ona |Tymczasowo Kosztuje|
@@ -2189,6 +2233,13 @@ DayaojingFriend:
   UpgradedExtraDescription2: '{FriendU}Dodaj {Value1} |Letnie Kwiaty+| do ręki.'
 MaidFriend:
   Name: Kasumi, Pokojówka Willi
+  ExtraDescription1: "{FirndA}Zadaj obrażenia natychmiast. Dodaj {Value2:plural one='%\
+    \ |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów do\
+    \ Rzucania|} do ręki."
+  ExtraDescription2: '{FriendU}Zadaj obrażenia natychmiast. Wszystkie {SelfName:v}
+    zadają o {Value1} więcej obrażeń.'
+  Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wrogowi z najmniej życiem."
 MojingShanjie:
   Name: Granica Egzorcyzmu
   Description: Wybierz 1 z {Value1} losowych kart obrony aby dodać do ręki. Ona |Tymczasowo
@@ -2201,3 +2252,22 @@ FruitShake:
 DoubleDajiejie:
   Name: Podwójna Superbariera
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Shield} |Bariery|."
+LarvaFriend:
+  Description: '{FriendP}Nałóż {Value1} |Trucizny| losowemu wrogowi.'
+  ExtraDescription1: '{FriendA}|Ulepsz| wszystkie karty w dłoni.'
+  Name: Larva, Bogini Wiecznej Nocy
+  ExtraDescription2: '{FriendU}Nałóż {Value2} |Trucizny| wszystkim wrogom. Aktywuj
+    efekt utraty życia |Trucizny| raz.'
+LeidiFriend:
+  Name: Letty, Wcielenie Zimy
+  Description: '{FriendP}Nałóż |Chłód| na losowego wroga.'
+  ExtraDescription2: "{FriendU}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} i nałóż |Chłód| na każdego wroga."
+LilyFriend:
+  Name: Lily White, Herold Wiosny
+  Description: "{FriendS}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\n\
+    {FriendP}Zyskaj {TurnMana}."
+  ExtraDescription1: '{FriendA}Zyskaj {ActiveMana}.'
+  ExtraDescription2: "{FriendU}Ulecz {Heal:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia."

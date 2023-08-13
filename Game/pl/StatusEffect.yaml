@@ -334,6 +334,8 @@ PrivateSquare:
     \ many='każde % zagranych kart'} zadaj {PlayerName:d} {Level:plural one='% obrażenie'\
     \ few='% obrażenia' many='% obrażeń'}.\n{Count:plural one='Została 1 karta' few='Zostały\
     \ % karty' many='Zostało % kart'}."
+  Brief: Gdy odpowiednia ilość użytych kart zostanie osiągnięta, <color=#B7F0FF>Sakuya
+    Izayoi</color> zada trochę obrażeń {PlayerName:d}.
 Emi:
   Name: Intenferencja Elektromagnetyczna
   Description: "{OwnerName} nie może wykonać ruchu {Duration:plural one='w tej turze'\
@@ -598,12 +600,10 @@ SeeFengshuiSe:
   Brief: "Na początku tury {PlayerName:g} |Przewidź| {Scry}.\nZa każdą kartę |Obrony|\
     \ wysłaną do stosu zrzutek podczas tego |Przewidywania| zyskaj |Blok|."
 YonglinCardSe:
-  Description: Każda pierwsza karta użyta w turze przez {PlayerName:a} zostaje skopiowana
-    {Level:plural one='raz' other='% razy'} |tymczasowo kosztując| {Mana} i mając
-    |Wygnanie| oraz |Eteryczność|.
+  Description: Na końcu tury {PlayerName:g} dodaj {Level:plural one='% |Fałszywy Księżyc|'
+    few='% |Fałszywe Księżyce|' many='% |Fałszywych Księżyców|'} do stosu doboru.
   Name: Pustelniczy Mędrzec
-  Brief: Każda pierwsza karta użyta w turze przez {PlayerName:a} zostaje skopiowana.
-    Kopie |tymczasowo kosztują| {Mana} i mają |Wygnanie| oraz |Eteryczność|.
+  Brief: Na końcu tury {PlayerName:g} dodaj ileś |Fałszywych Księżyców| do stosu doboru.
 GrimoireStudySe:
   Description: Na końcu tury {OwnerName:g} dodaj |Tęczę| do ręki.
   Name: Mroczna Księga Czarów
@@ -621,17 +621,17 @@ MeihongFireSe:
     dobrana zadaj obrażenia wszystkim wrogom.
 MeihongPowerSe:
   Description: "Na początku tury {PlayerName:g} zyskaj {Level} |Mocy|.\nNa końcu walki,\
-    \ jeżeli {PlayerName} ma mniej niż pół zdrowia, ulecz {Heal:plural one='% punkt'\
+    \ jeżeli {PlayerName} ma mniej niż pół życia, ulecz {Heal:plural one='% punkt'\
     \ few='% punkty' many='% punktów'} życia."
   Name: Nieśmiertelny Płomień
   Brief: "Na początku tury {PlayerName:g} zyskaj |Moc|.\nNa końcu walki, jeżeli {PlayerName}\
     \ ma mniej niż pół zdrowia, ulecz się."
 HuiyeManaSe:
-  Brief: "Na początku tury {PlayerName:g} zyskaj losowe many.\nZwiększ efekt co turę."
+  Brief: "Na początku tury {PlayerName:g} zyskaj ileś <sprite=\"ManaSprite\" name=\"\
+    P\">.\nZwiększ efekt co turę."
   Name: Opowieść o Zbieraczu Bambusu
-  Description: "Na początku tury {PlayerName:g} zyskaj {Count:plural one='% losową\
-    \ manę' few='% losowe many' many='% losowych man'}.\nZwiększ ten efekt o {Level}\
-    \ co turę."
+  Description: "Na początku tury {PlayerName:g} zyskaj {Count} <sprite=\"ManaSprite\"\
+    \ name=\"P\">.\nZwiększ ten efekt o {Level} co turę."
 ModuoluoFireSe:
   Description: Gdy zostanie wydana <sprite="ManaSprite" name="P">, zadaj {Level:plural
     one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom.
@@ -710,8 +710,10 @@ NextTurnLoseGame:
   Brief: Przegraj grę w następnej turze.
 BailianBlackSe:
   Name: Przyjmij Ciemność
-  Description: Wszystkie karty obrony oraz umiejętności kosztują {Mana} i mają |Wygnanie|.
-  Brief: Wszystkie karty obrony oraz umiejętności kosztują {Mana} i mają |Wygnanie|.
+  Description: Wszystkie karty poza kartami ataku i zdolności mają koszt zredukowany
+    do {Mana}. Mają one |Wygnanie|.
+  Brief: Wszystkie karty poza kartami ataku i zdolności mają koszt zredukowany do
+    {Mana}. Mają one |Wygnanie|.
 RinDrawSe:
   Name: Przypisanie Duszy
   Description: Gdy dobrana zostanie karta Statusu, dobierz {Level:plural one='% kartę'
@@ -728,10 +730,8 @@ TodayYesterdaySe:
   Brief: Gdy {OwnerName} |Unika| ataki, zwiększa trochę |Moc|.
 SkyWaterSe:
   Name: Niebiański Cud Wodny
-  Brief: Na końcu tury {PlayerName:g} zyskaj |Blok| za każdą zrzuconą kartę w fazie
-    zrzucania.
-  Description: Na końcu tury {PlayerName:g} zyskaj {Value2} |Bloku| za każdą zrzuconą
-    kartę w fazie zrzucania.
+  Brief: Dobieraj więcej kart podczas fazy doboru.
+  Description: Dobierz o {Level} więcej kart podczas fazy doboru.
 RangziFanshuSe:
   Name: Słodki Batat
   Description: Na końcu walki ulecz {Level:plural one='% punkt' few='% punkty' many='%
@@ -826,6 +826,8 @@ DizangLoveSe:
   Description: Gdy pospolita karta zostanie zagrana {OwnerName} zyskuje {Level} |Tymczasowej
     Mocy|.
   Name: Natychmiastowa Bodhi
+  Brief: Gdy zagrana zostanie pospolita karta, {OwnerName} zyskuje ileś |Tymczasowej
+    Mocy|.
 NoBaseManaThisTurn:
   Name: Zniszczona Linia Czasowa
   Description: Na początku tury zaneguj jakąkolwiek manę która byłaby zyskana z bazy
@@ -839,6 +841,13 @@ NoBaseManaNextTurn:
     z bazy many.
 ForeverCoolSe:
   Name: Fantazja Wiecznie Mroźnej Pory Roku
+  Description: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wsólnika| zostanie użyta,\
+    \ nałóż |Chłód| losowemu wrogowi {Level:plural one='% raz' other='% razy'}.\n\
+    Gdy wróg zyskuje |Chłód|, {Level:plural one='% losowy |Wspólnik|' few='% losowi\
+    \ |Wspólnicy|' many='% losowych |Wspólników|'} w dłoni zyskuje 1 |Wspólności|."
+  Brief: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wsólnika| zostanie użyta, nałóż\
+    \ |Chłód| niektórym wrogom.\nGdy wróg zyskuje |Chłód|, niektórzy |Wspólnicy| w\
+    \ dłoni zyskuje 1 |Wspólności|."
 Benwo:
   Name: Id
   Description: Zadawaj i dostawaj podwójne obrażenia w stanie |Id|.
@@ -847,6 +856,10 @@ Chaowo:
   Name: Super-ego
 YouxiangMoonSe:
   Name: Piękności Natury
+  Brief: Na początku tury {PlayerName:g} dodaj ileś |Letnie Kwiaty| do ręki. Mają
+    one |Eteryczność|.
+  Description: Na początku tury {PlayerName:g} dodaj {Level} |Letnie Kwiaty| do ręki.
+    Mają one |Eteryczność|.
 FoxCharm:
   Name: Lisi Urok
   Description: "Można zagrać co najwyżej {Limit:plural one='% kartę' few='% karty'\
@@ -857,6 +870,9 @@ DeathPoison:
   Description: Po pokonaniu {OwnerName:g} {PlayerName} zyskuje {Level} |Trucizny|.
 WhiteWorldSe:
   Name: Czysto Biały Świat
+  Brief: Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich wrogów ileś razy.
+  Description: Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich wrogów
+    {Level:plural one='% raz' other='% razy'}.
 FairyTreeSe:
   Name: Wielkie Drzewo Wróżek
   Brief: Gdy przywoływany jest |Wspólnik| poprzez zagranie kartą |Wspólnika|, zyskaj
@@ -924,3 +940,80 @@ ExtraBlizzard:
   Brief: Na początku następnej tury {OwnerName:g} zadaje ona |Celne| obrażenia wszystkim
     wrogom i nakłada im |Chłód|.
   Name: Nadciąganie Śnieżycy
+FrozenThroneSe:
+  Description: Na początku tury {PlayerName:g} dodaj {Level:plural one='% |Lodowiec+|'
+    few='% |Lodowce+|' many='% |Lodowców+|'} do ręki.
+  Name: Mroźny Tron
+  Brief: Na początku tury {PlayerName:g} dodaj ileś |Lodowców+| do ręki.
+MoreFriendsSe:
+  Brief: "Na początku tury {PlayerName:g} dodaj losowe karty |Wspólnika| do ręki.\n\
+    Mają one |Eteryczność|, którą tracą po przywołaniu."
+  Name: Dusza Towarzystwa
+  Description: "Na początku tury {PlayerName:g} dodaj {Level:plural one='% losową\
+    \ kartę' few='% losowe karty' many='% losowych kart'} |Wspólnika| do ręki.\n{Level:plural\
+    \ one='Ma ona' other='Mają one'} |Eteryczność|, którą trac{Level:plural one='i'\
+    \ other='ą'} po przywołaniu."
+MaidFriendSe:
+  Name: Trenerka Sztyletów do Rzucania
+  Brief: '{SourceCardName} zadaje więcej obrażeń.'
+  Description: '{SourceCardName} zadaje o {Level} więcej obrażeń.'
+ShirenKunchongSe:
+  Name: Kanibalistyczny Owad
+  Description: Gdy {OwnerName} zyskuje |Debuffa|, {PlayerName} zyskuje {Level} |Bloku|.
+  Brief: Gdy {OwnerName} zyskuje |Debuffa|, {PlayerName} zyskuje ileś |Bloku|.
+DoubleJKSe:
+  Name: Podwójna ESPerka Wieku
+  Description: "{PlayerName} może zagrać co najwyżej {Limit:plural one='% kartę' few='%\
+    \ karty' many='% kart'} w każdej turze. (Został{Count:plural one='a % karta' few='y\
+    \ % karty' many='o % kart'})\nNa końcu tury {PlayerName:g}, jeżeli to nie była\
+    \ dodatkowa tura, zacznij dodatkową turę zachowując cały |Blok|."
+  Brief: "{PlayerName} może zagrać jedynie ileś kart w każdej turze.\nNa końcu tury\
+    \ {PlayerName:g}, jeżeli to nie była dodatkowa tura, zacznij dodatkową turę zachowując\
+    \ cały |Blok|."
+CatchGoblinSe:
+  Name: Próba Fortuny
+  Brief: '{OwnerName} otrzymuje 33% mniej obrażeń i upuszcza 50<sprite="Point" name="Gold">
+    po pokonaniu.'
+  Description: '{OwnerName} otrzymuje 33% mniej obrażeń i upuszcza 50<sprite="Point"
+    name="Gold"> po pokonaniu.'
+YukariFriendSe:
+  Brief: Na początku tury {PlayerName:g} dodaj do ręki ileś losowych neutralnych trójkolorowych
+    kart. One |Tymczasowo Kosztują| {Mana} i mają |Eteryczność|.
+  Name: Granica Fantazji
+  Description: Na początku tury {PlayerName:g} dodaj do ręki {Level:plural one='%
+    losową neutralną trójkolorową kartę' few='% losowe neutralne trójkolorowe karty'
+    many='% losowych neutralnych trójkolorowych kart'}. {Level:plural one='Ona' other='One'}
+    |Tymczasowo Kosztuj{Level:plural one='e' other='ą'}| {Mana} i ma{Level:plural
+    one='' other='ją'} |Eteryczność|.
+SummerFlowerSe:
+  Name: Letni Zakwit
+  Description: '{SourceCardName} zadawają o {Level} więcej obrażeń.'
+  Brief: '{SourceCardName} zadawają więcej obrażeń.'
+StarFriendSe:
+  Name: Jak Gwiazdy na Niebie
+  Description: Gdy {SourceCardName} zadaje obrażenia, nałóż {Level:plural one='% |Namiar|'
+    few='% |Namiary|' many='% |Namiarów|}.
+  Brief: Gdy {SourceCardName} zadaje obrażenia, nałóż ileś |Namiarów|.
+YinyangQueenSe:
+  Brief: Wszystkie |Kule Yin-Yang| mają swoje efekty zwiększone kilkakrotnie.
+  Name: Misumaru, Utalentowana Rzemieślniczka
+  Description: Efekty wszystkich |Kul Yin-Yang| są zwiększone o {Level:plural one='dodatkowy
+    % raz' few='dodatkowe % razy' many='dodatkowych % razy'}.
+BailianFireSe:
+  Brief: "Na początku tury {PlayerName:g} dodaj ileś losowych kart Umiejętności do\
+    \ ręki.\nOne |Tymczasowo Kosztują| {Mana} i mają |Wygnanie| oraz |Eteryczność|."
+  Name: Płomienie Hokkai
+  Description: "Na początku tury {PlayerName:g} dodaj {Level:plural one='% losową\
+    \ kartę' few='% losowe karty' many='% losowych kart'} Umiejętności do ręki.\n\
+    {Level:plural one='Ona' other='One'} |Tymczasowo Kosztuj{Level:plural one='e'\
+    \ other='ą'}| {Mana} i ma{Level:plural one='' other='ją'} |Wygnanie| oraz |Eteryczność|."
+YonglinUpgradeSe:
+  Brief: Na początku tury {PlayerName:g} |Ulepsz| ileś losowych kart w dłoni.
+  Name: Kadzidło Księżycowego Królika
+  Description: Na początku tury {PlayerName:g} |Ulepsz| {Value1:plural one='% losową
+    kartę' few='% losowe karty' many='% losowych kart'} w dłoni.
+HuiyeTimeSe:
+  Name: Między Natychmiastowym
+  Description: Jedynie {Limit:plural one='% karta może zostać zagrana' few='% karty
+    mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze. (Zostało
+    {Count})
