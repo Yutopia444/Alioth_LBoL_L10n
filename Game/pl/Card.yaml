@@ -946,7 +946,7 @@ IceLaser:
 SummerFlower:
   Name: Letnie Kwiaty
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Przyrost:| Zwiększ obrażenia o {Value1}."
+    Do końca walki wszystkie |Letnie Kwiaty| zadają o {Value1} obrażeń."
 KoishiAttackG:
   Name: Rozkwit Róży
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -971,23 +971,30 @@ ShenziUpgradeAll:
   Description: '|Ulepsz| wszystkie karty na czas walki.'
 GuijiZaoxingFang:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\nTa karta zamienia się w inną |Rzeźbę|\
+    \ {Value1:plural one='% raz' other='% razy'}.\nTa karta zamienia się w inną |e:Rzeźbę|\
     \ na czas walki."
   Name: Rzeźba - Kwadrat
 GuijiZaoxingHu:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nTa karta zamienia\
-    \ się w inną |Rzeźbę| na czas walki."
+    \ się w inną |e:Rzeźbę| na czas walki."
   Name: Rzeźba - Łuk
 YonglinCard:
   Name: Pustelniczy Mędrzec
-  Description: Każda pierwsza karta użyta w turze przez {PlayerName:a} zostaje skopiowana.
-    Kopie |tymczasowo kosztują| {Mana} i mają |Wygnanie| oraz |Eteryczność|.
+  Description: Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% |Fałszywy
+    Księżyc|' few='% |Fałszywe Księżyce|' many='% |Fałszywych Księżyców|'} do stosu
+    doboru.
   FlavorText: Mędrzec rozsądku się ukryła, a więc czy chowanie się jest czynem rozsądku?
+  UpgradedDescription: "Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% |Fałszywy\
+    \ Księżyc|' few='% |Fałszywe Księżyce|' many='% |Fałszywych Księżyców|'} do stosu\
+    \ doboru.\nDodaj {Value2:plural one='% |Fałszywy Księżyc|' few='% |Fałszywe Księżyce|'\
+    \ many='% |Fałszywych Księżyców|'} do stosu doboru."
 ShannvAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Nałóż {Value1} |Trucizny|."
   Name: Morowe Powietrze
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nNałóż {Value1} |Trucizny| wszystkim wrogom."
 SatoriAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\n|Instynkt:| Jeżeli jakiś wróg zamierza zaatakować, zyskaj\
@@ -1041,10 +1048,15 @@ MeihongAttack:
   Name: Latający Feniks
 WaterPrincess:
   Name: Księżniczka Ondyna
-  Description: "Zyskaj {Value1} |Bariery| za każdą kartę w dłoni.\n|Debiut|: Dodaj\
-    \ |Plusk| do ręki."
-  ExtraDescription1: "Zyskaj {Value1} |Bariery| za każdą kartę w dłoni.\n|d:Debiut:\
-    \ Dodaj Plusk do ręki.|"
+  Description: "Zyskaj {Shield} |Bariery|.\nZa każdą kartę w dłoni {SelfName} zwiększa\
+    \ ilość zdobywanej |Bariery| o {Value1}. (Całkowicie {Special} |Bariery|)\n|Debiut|:\
+    \ Dodaj |Plusk| do ręki."
+  ExtraDescription1: "Zyskaj {Shield} |Bariery|.\nZa każdą kartę w dłoni {SelfName}\
+    \ zwiększa ilość zdobywanej |Bariery| o {Value1}. (Całkowicie {Special} |Bariery|)\n\
+    |d:Debiut: Dodaj Plusk do ręki.|"
+  NonbattleDescription: "Zyskaj {Shield} |Bariery|.\nZa każdą kartę w dłoni {SelfName}\
+    \ zwiększa ilość zdobywanej |Bariery| o {Value1}.\n|Debiut|: Dodaj |Plusk| do\
+    \ ręki."
 BailianPower:
   Name: Wzmocnij Ciało
   Description: Zyskaj {Value1} |Mocy|.
@@ -1076,10 +1088,11 @@ KokoroAttack:
     \ wszystkim wrogom.\nZrzuć losową kartę."
 NitoriUnderWater:
   Name: Nakrycie Wodne
-  Description: Zyskaj {Value1} |Kamuflażu Optycznego|.
+  Description: Zyskaj |Kamuflaż Optyczny| na {Value1:plural one='% turę' few='% tury'
+    many='% tur'}.
 ShuimiUnderWater:
   Name: Duch Okrętu
-  Description: '|Gdy Zrzucona|: Zyskaj {Mana}.'
+  Description: '|Gdy Zrzucona lub Wygnana|: Zyskaj {Mana}.'
 HatateDiscard:
   Name: Fabrykacja Wiadomości
   Description: "Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
@@ -1092,8 +1105,8 @@ DoremyDuplicate:
 GuijiZaoxingYuan:
   Name: Rzeźba - Koło
   Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
-    \ obrażenia' many='% obrażeń'}.\nTa karta przemienia się w inną |Rzeźbę| na czas\
-    \ walki."
+    \ obrażenia' many='% obrażeń'}.\nTa karta przemienia się w inną |e:Rzeźbę| na\
+    \ czas walki."
 Shadow:
   Name: Cień
 YuyukoDebuff:
@@ -1115,8 +1128,8 @@ BlackHorseZui:
     \ wszystkim wrogom {Value2:plural one='% raz' other='% razy'}."
 BailianBlack:
   Name: Otworzyć się na Mrok
-  Description: "Wszystkie karty poza kartami ataku bądź zdolności zyskują |Wygnanie|.\
-    \ One kosztują {Mana} na czas walki."
+  Description: "Wszystkie karty |Obrony|, |Umiejętności| oraz |Statusu| mają |Wygnanie|.\
+    \ Ich koszt jest zredukowany do {Mana}."
 YinglangHowl:
   Name: Ryk Pełni Księżyca
   Description: 'Nałóż {Value1} |Tymczasowej Utraty Mocy| oraz nałóż {Value2} |Wrażliwości|
@@ -1149,9 +1162,8 @@ MorphDog:
   Description: Zyskaj {Value1} |Mocy|.
   Name: Forma Drapieżników
 HuiyeMana:
-  Description: "Na początku tury {PlayerName:g} zyskaj {Value1:plural one='% losową\
-    \ manę' few='% losowe many' many='% losowych man'}.\nZwiększ ten efekt o {Value1}\
-    \ co turę."
+  Description: "Na początku tury {PlayerName:g} zyskaj {Value1:} {Mana}; Zwiększ ten\
+    \ efekt o {Value1} co turę."
   Name: Bajka Zbieracza Bambusu
   FlavorText: Ta rymowanka opowiada bajki o lśniących grzesznikach.
 ReadBook:
@@ -1238,17 +1250,18 @@ XiaodingKill:
     many='% punktów'} życia, pokonaj go.
 YukariAttack:
   Name: Granica Życia i Śmierci
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Na końcu tury, jeżeli życie {PlayerName:g} zmieniło swoją wartość, zwróć {SelfName:a}\
-    \ ze stosu zrzutek do ręki |Tymczasowo Kosztując| {Mana}."
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nNa końcu tury, jeżeli życie {PlayerName:g}\
+    \ zmieniło swoją wartość, zwróć {SelfName:a} ze stosu zrzutek do ręki |Tymczasowo\
+    \ Kosztując| {Mana}."
 QingeUpgrade:
   Name: Nikczemna Pustelniczka
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Finiszer:| Permanentnie |Ulepsz| kartę."
 TannvCard:
   Name: Odwrócenie Sytuacji
-  Description: Włóż szczytowe karty stosów doboru oraz zrzutek do ręki. Te karty |tymczasowo
-    kosztują| {Mana}.
+  Description: Włóż szczytowe karty stosów doboru oraz zrzutek do ręki. Te karty |Tymczasowo
+    Kosztują| {Mana}.
 ChengDefense:
   Name: Grzmienie Tianxiana
   Description: "Zyskaj {Block} |Bloku|.\nNa początku następnej tury {PlayerName:g}\
@@ -1271,11 +1284,12 @@ XingMoney:
   Name: Cudowna Włócznia Skarbów
 BaitianCard:
   Description: "Zyskaj {Block} |Bloku|.\nZwróć kartę ze stosu zrzutek na szczyt stosu\
-    \ doboru."
+    \ doboru. Ona kosztuje o {Value1:plural one='% losową manę' few='% losowe many'\
+    \ many='% losowych man'} mniej."
   Name: Reinkarnacja Hiedy
 YukariBox:
   Description: "|Przewidź| {Scry}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
-    \ many='% kart'}.\nWtasuj karty że stosu zrzutek do stosu doboru."
+    \ many='% kart'}.\nWtasuj stos zrzutek w stos doboru."
   Name: Podarowane "Prezenty"
 YijiuAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1426,7 +1440,8 @@ ZoufangSnake:
   Name: Wiara w Rodzimą Boginię
   Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
     \ życia.\nWybierz jedną z {Value2} losowych rzadkich neutralnych kart |Zdolności|\
-    \ aby dodać do ręki. |Tymczasowo kosztuje| ona {Mana}."
+    \ aby dodać do ręki. |Tymczasowo kosztuje| ona {Mana}.\nTe |e:alternatywne kart|\
+    \ ignorują ograniczenia całkowitej many oraz koloru many."
 YachieDefend:
   Name: Szylkretowe Piekło
   Description: "Zapobiedz następn{Value1:plural one='y raz' other='e % razy'}, gdyby\
@@ -1446,7 +1461,8 @@ MedicineGarden:
 RuowujiCard:
   Name: Fale Odwróconych Łusek
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\nNałóż {Value1} |Tonięcia|."
+    \ wszystkim wrogom i nałóż {Value1} |Tonięcia|.\nTo |Tonięcie| się na siebie nie\
+    \ nakłada."
 Shoot:
   Name: Strzał
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -1484,7 +1500,8 @@ ToolAttack:
     |Ograniczony【{DeckCounter}】|"
   Name: Pistolet na Wodę
 ToolMicai:
-  Description: "Zyskaj {Value1} |Kamuflażu Optycznego|.\n|Ograniczony【{DeckCounter}】|"
+  Description: "Zyskaj |Kamuflaż Optyczny| na {Value1:plural one='% turę' few='% tury'\
+    \ many='% tur'}.\n|Ograniczony【{DeckCounter}】|"
   Name: Kamuflaż Optyczny
 ToolFirstAid:
   Description: "Usuń wszystkie debuffy z {PlayerName:g}.\nUlecz {Value1:plural one='%\
@@ -1494,8 +1511,8 @@ ToolDroneBlock:
   Description: "Zyskaj {Value1} |Macierzy Obronnej|.\n|Ograniczony【{DeckCounter}】|"
   Name: Mechaniczny Rdzeń
 ToolRandomTool:
-  Description: "Wybierz jedną z {Value1} losowych kart |narzędzi| aby dodać do ręki.\
-    \ Ma ona |Ograniczenie 【1】|.\n|Ograniczony【{DeckCounter}】|"
+  Description: "Wybierz jedną z {Value1} losowych kart |Narzędzi| aby dodać do ręki.\n\
+    Jest ona |Kopią| i może zostać zagrana tylko raz.\n|Ograniczony【{DeckCounter}】|"
   Name: Taktyczna Krótkofalówka
   FlavorText: ' "Mówi Pequod, nadciąga zrzut!"'
 WanderingSoul:
@@ -1702,13 +1719,15 @@ RangziFanshu:
     punktów'} życia.
 LilyChun:
   Name: Jest Wiosna!
-  UpgradedDescription: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'
-    many='% losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural
-    one='Ona |tymczasowo kosztuje|' other='One |tymczasowo kosztują|'} {Mana} i {Value1:plural
-    one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.
-  Description: Dodaj {Value1:plural one='% losową kartę' few='% losowe karty' many='%
-    losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural one='Ona'
-    other='One'} {Value1:plural one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.
+  UpgradedDescription: "Dodaj {Value1:plural one='% losową kartę' few='% losowe karty'\
+    \ many='% losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural\
+    \ one='Ona |tymczasowo kosztuje|' other='One |tymczasowo kosztują|'} {Mana} i\
+    \ {Value1:plural one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.\nTe |e:alternatywne\
+    \ karty| ignorują ograniczenia postaci."
+  Description: "Dodaj {Value1:plural one='% losową kartę' few='% losowe karty' many='%\
+    \ losowych kart'} z całkowitym kosztem równym 1 do ręki. {Value1:plural one='Ona'\
+    \ other='One'} {Value1:plural one='ma' other='mają'} |Wygnanie| oraz |Eteryczność|.\n\
+    Te |e:alternatywne karty| ignorują ograniczenia postaci."
 CoolBreeze:
   Description: "Zyskaj {Block} |Bloku|.\nJeżeli jakikolwiek wróg ma |Chłód|, |Ulepsz|\
     \ {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych kart'}\
@@ -1716,8 +1735,8 @@ CoolBreeze:
   Name: Orzeźwiający Wiaterek
 SkyWater:
   Name: Niebiański Cud Wodny
-  Description: "Zyskaj {Shield} |Bariery|.\nNa końcu tury {PlayerName:g} zyskaj {Value2}\
-    \ |Bloku| za każdą zrzuconą kartę w fazie zrzucania."
+  Description: "Zyskaj {Shield} |Bariery|.\nDobierz o {Value1:plural one='% kartę'\
+    \ few='% karty' many='% kart'} więcej podczas fazy doboru."
 DanmuJade:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nDodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|' many='%\
@@ -1846,7 +1865,7 @@ CirnoDraw:
   UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
     \ kart'}.\nNa początku następnej tury dobierz {Value2:plural one='% kartę' few='%\
     \ karty' many='% kart'}."
-  Name: Intelekt Wróżki
+  Name: Wróżkowy Intelekt
   Description: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
 IceSaber:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1863,7 +1882,7 @@ SakuyaUsage2:
 IceBlock:
   Description: "{PlayerName} nie może stracić życia na jedną rundę.\nStrać cały |Blok|,\
     \ |Barierę| i |Uniki|.\n|Przetrzymaj| dłoń w tej turze. Zakończ turę {PlayerName:g}."
-  Name: Blok Lodu
+  Name: Lodowy Blok
 Ice:
   Name: Lodowiec
   Description: Nałóż |Chłód|.
@@ -1902,7 +1921,7 @@ ColdBreath:
     \ {Mana}."
   FlavorText: Możesz tego użycz aby wygrać tegoroczny The Queen of Fighters.
 IceBarrier:
-  Name: Bariera Lodu
+  Name: Lodowa Bariera
   Description: Zyskaj {Value1} |Lodowego Pancerza|.
 IceGun:
   Name: Soplowy Karabin Maszynowy
@@ -1928,7 +1947,7 @@ MoreFriends:
     \ one='Ta karta ma' other='Te karty mają'} |Eteryczność|, którą tracą po przywołaniu."
 FreezeToIce:
   Name: Zamrożony Okaz
-  Description: "|Wygnaj| do {Value1:plural one='% kart' other='% kart} z dłoni. Dodaj\
+  Description: "|Wygnaj| do {Value1:plural one='% kart' other='% kart'} z dłoni. Dodaj\
     \ tyle same |Lodowców| do ręki."
 FairyOnIce:
   Name: Wróżka na Lodzie
@@ -1952,20 +1971,20 @@ CirnoEcho:
     other='Zyskują'} |Echo|.
 ForeverCool:
   Name: Wiecznie Zimna Sezonowa Fantazja
-  Description: "Gdy karta |Wsparcia Wróżek| zostaje |Wygnana|, nałóż |Chłód| na losowego\
-    \ wroga.\nGdy karta |Wsparcia Wróżek| zostaje zagrana, dodaj losową kartę |Wsparcia\
-    \ Wróżek| do stosu zrzutek."
+  Description: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika| zostanie użyta,\
+    \ nałóż |Chłód| losowemu wrogowi.\nGdy wróg zyskuje |Chłód|, losowy |Wspólnik|\
+    \ w dłoni zyskuje 1 |Wspólności|."
 GatherFairy:
   Description: Wielkość dłoni wzrasta do {MaxHand} kart.
   Name: Zebranie Wróżek
-  UpgradedDescription: "Wielkość ręki wzrasta do {MaxHand}.\nDodaj {Value2:plural\
-    \ one='% pospolitą kartę' few='% pospolite karty' many='% pospolitych kart'} |Wsparcia\
-    \ Wróżek| do ręki.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}."
+  UpgradedDescription: "Wielkość ręki wzrasta do {MaxHand}.\nDobierz {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'}.\nWszyscy |Wspólnicy| w dłoni zyskują\
+    \ {Value2} |Wspólności|."
 WhiteWorld:
   Name: Czysto Biały Świat
-  Description: "Na końcu tury {PlayerName:g} zyskaj {Value1} |Mocy| i |Uduchowienia|.\n\
-    |Zamrożenie Many| {Mana}."
+  Description: "Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich wrogów."
+  UpgradedDescription: "Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich\
+    \ wrogów.\nNałóż |Chłód| na wszystkich wrogów."
 FairyTeam:
   Name: Wielka Wojna Wróżek
   Description: "Wybierz dowolną ilość |Wspólników| w dłoni i je |Wygnaj|. Zyskaj manę\
@@ -1974,29 +1993,27 @@ FairyTeam:
     \ obrażenia dodatkowy raz."
 MinengZhuru:
   Name: Zastrzyk Energii Myślowej
-  Description: "Bierne efekty kart |Wsparcia Wróżek| aktywują się {Value1:plural one='%\
-    \ dodatkowy raz' few='% dodatkowe razy' many='% dodatkowych razy'}.\n(Są to \"\
-    Gdy w Dłoni:\" w \"Na Początku Tury:\".)"
+  Description: "|f:Zdolności Bierne| kart |Wspólników| aktywują się 1 dodatkowy raz.\n\
+    (Nie ma to wpływu na ilość zdobywanej/traconej |Wspólności|.)"
 HualiIce:
   Name: Zachwycający Letni Lód
-  Description: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural one='%\
-    \ kartę' few='% karty' many='% kart'} w tej turze.\n({Countdown:plural one='Została\
-    \ % karta' few='Zostały % karty' many='Zostało % kart}.)\nZadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
-    \ |Chłód|.\n"
-  UpgradedDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
-    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\n({Countdown:plural\
-    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}.)\nZadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
-    \ |Chłód| {Value2:plural one='% raz' other='% razy'}."
-  NonbattleDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
-    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\nZadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
-    \ |Chłód|.\n"
-  UpgradedNonbattleDescription: "Zagraj tę kartę tylko jeśli zagrano lub wygnano {Value1:plural\
-    \ one='% kartę' few='% karty' many='% kart'} w tej turze.\nZadaj {Damage:plural\
-    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom nakładając\
-    \ |Chłód| {Value2:plural one='% raz' other='% razy'}."
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom, nakładając |Chłód|.\nJeżeli w tej turze zagrano {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'}, {SelfName} kosztuje {Mana}.\n({Countdown:plural\
+    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}.)\n"
+  UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'} wszystkim wrogom, nakładając |Chłód| {Value2:plural one='% raz' other='%\
+    \ razy'}..\nJeżeli w tej turze zagrano {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}, {SelfName} kosztuje {Mana}.\n({Countdown:plural one='Została\
+    \ % karta' few='Zostały % karty' many='Zostało % kart}.)"
+  NonbattleDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wszystkim wrogom, nakładając |Chłód|.\nJeżeli w tej turze\
+    \ zagrano {Value1:plural one='% kartę' few='% karty' many='% kart'}, {SelfName}\
+    \ kosztuje {Mana}.\n"
+  UpgradedNonbattleDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wszystkim wrogom, nakładając |Chłód| {Value2:plural one='%\
+    \ raz' other='% razy'}..\nJeżeli w tej turze zagrano {Value1:plural one='% kartę'\
+    \ few='% karty' many='% kart'}, {SelfName} kosztuje {Mana}."
 PrismriverWhite:
   Description: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
     \ many='% kart'}.\nDodaj {Light:plural one='% |Załamane Światło|' few='% |Załamane\
@@ -2016,9 +2033,16 @@ YuetuYuyi:
     tury' many='% tur'}.
 FairyTrick:
   Name: Psota Wróżek
+  Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia.\nPrzywołaj 3 |e:Wróżki Światła|. Dodaj jedną do ręki a resztę wtasuj\
+    \ do stosu doboru."
+  UpgradedDescription: "Strać {Value1:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia.\nPrzywołaj 4 |e:Wróżki Światła|. Dodaj jedną do ręki a resztę\
+    \ wtasuj do stosu doboru."
 BrainOverclock:
   Name: Burza Mózgu
-  Description: "Zyskaj {Mana}.\n|Naddobór| {Value1}."
+  Description: "Zyskaj {Mana}.\nDobierz {Value2:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\n|Naddobór| {Value1}."
 PrismriverBlack:
   Name: Solówka Skrzypiec
   ExtraDescription1: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
@@ -2044,6 +2068,10 @@ PrismriverRed:
     |d:Debiut: Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">.|"
 YouxiangMoon:
   Name: Piękności Natury
+  Description: Na początku tury {PlayerName:g} dodaj |Letnie Kwiaty| do ręki. Mają
+    one |Eteryczność|.
+  UpgradedDescription: "Na początku tury {PlayerName:g} dodaj |Letnie Kwiaty| do ręki.\
+    \ Mają one |Eteryczność|.\nDodaj |Letnie Kwiaty| do ręki. Mają one |Eteryczność|."
 DizangLove:
   Description: "Gdy {PlayerName} zagra pospolitą kartą, zyskaj {Value1} |Tymczasowej\
     \ Mocy|.\n"
@@ -2057,7 +2085,7 @@ MorphMan:
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
 FrozenThrone:
   FlavorText: Now, we are one!
-  Name: Zamrożony Tron
+  Name: Mroźny Tron
   Description: Na początku tury {PlayerName:g} dodaj {Value1:plural one='% |Lodowiec+|'
     few='% |Lodowce+|' many='% |Lodowców+|'} do ręki.
   UpgradedDescription: "Na początku tury {PlayerName:g} dodaj {Value1:plural one='%\
@@ -2067,6 +2095,7 @@ LongArm:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli w dłoni jest więcej niż {Value1:plural one='% inna karta' few='% inne karty'\
     \ many='% innych kart'} zyskaj {Mana}."
+  Name: Przedłużoooone Ramięęę
 FengleiCard:
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
     wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.
@@ -2095,18 +2124,18 @@ SakuraBlade:
   Name: Rozbłysk Kwitnącej Wiśni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ {Value1:plural one='% raz' other='% razy'}.\nNałóż {Value1:plural one='% |Namiar|'\
-    \ few='% |Namiary|' many='% |Namiarów|}.\nZyskaj {Value2:plural one='% |Unik|'\
+    \ few='% |Namiary|' many='% |Namiarów|}.\nZyskaj {Value1:plural one='% |Unik|'\
     \ few='% |Uniki|' many='% |Uników|'}."
 LifeGame:
   Name: Gra Życia
-  Description: "Zwróć wszystkie karty w dłoni i w stosie zrzutek do stosu doboru.\n\
-    Przetasuj stos doboru.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}."
+  Description: "Karty obok {SelfName:g} |Tymczasowo Kosztują| {Mana}."
+  UpgradedDescription: Karty obok {SelfName:g} |Tymczasowo Kosztują| {Mana}. |Ulepsz|
+    je.
 SanaeMiracle:
   Name: Gościnne Gwiazdy Dzienne
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\nMoże zostać zagrana\
-    \ jedynie gdy stos doboru jest pusty."
+    \ wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\nJeżeli stos doboru\
+    \ jest pusty, {SelfName} kosztuje {Mana}."
 ShuihuoCard:
   Name: Kula Ognia i Wody
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -2118,9 +2147,8 @@ MeilingRain:
     \ wszystkim wrogom {AttackTimes:plural one='% raz' other='% razy'}.\n|Za Każde\
     \ Wydane {Mana}|: Zadaj tyle obrażeń dodatkowy raz."
 KanakoWalk:
-  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\
-    \ |Wygnaj| wszystkie dobrane karty statusu i |Nieszczęścia| dobrane w ten sposób.\n\
-    Zakończ turę. |Zachowaj| całą dłoń i całą niewydaną manę."
+  Description: "(WIP)"
+  Name: Przejście Bogini
 PrismriverAll:
   Description: "Zyskaj {Mana}.\nZamień całą manę, którą {PlayerName} zdobyłaby w tej\
     \ walce na <sprite=\"ManaSprite\" name=\"P\">.\nDodaj |Załamane Światło|, |Cicha\
@@ -2158,6 +2186,8 @@ PatchouliLibrary:
   Name: Wielka Nieruchoma Biblioteka
   Description: "Zyskaj {Mana}.\nWybierz 1 z {Value1} rzadkich kart aby dodać do ręki.\
     \ Ma |Wygnanie| oraz |Eteryczność|."
+  UpgradedDescription: "Zyskaj {Mana}.\nWybierz 1 z {Value1} rzadkich kart lub 1 z\
+    \ {Value2} niepospolitych kart aby dodać do ręki. Ma |Wygnanie| oraz |Eteryczność|."
 Psychedelic:
   Name: Halucynogen
   Description: "|Na Końcu Tury|: Strać {Value1:plural one='% punkt' few='% punkty'\
@@ -2181,7 +2211,7 @@ CirnoConsider:
   ExtraDescription1: Zyskaj {Block} |Bloku|.
   ExtraDescription2: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
 DoubleMana:
-  Description: "Podwój istniejącą manę.\n|Naddobór| {Valuie1|."
+  Description: "Podwój istniejącą manę.\n|Naddobór| {Valuie1}."
   Name: Obudzenie Wróżki
 BestFriend:
   Name: Najlepsza Przyjaciółka
@@ -2226,7 +2256,8 @@ FreezeRiver:
 FairyAllOut:
   Name: Wszyscy na Pokład
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\n|Wygnaj| wszystkie karty |Wsparcia Wróżek| w dłoni."
+    \ wszystkim wrogom.\nZaktywuj |f:Bierną Zdolność| wszystkich przywołanych |Wspólników|\
+    \ w dłoni."
 SummerParty:
   Name: Lodowa Impreza
   Description: "Zyskaj {Value1} |Lodowego Pancerza|.\nWszyscy |Wspólnicy| w dłoni\
@@ -2287,3 +2318,208 @@ InstantFreeze:
   Name: Natychmiastowe Zamrożenie
 LarvaDefense:
   Name: Trzepot Szkrzydeł
+  Description: "Zyskaj {Block} |Bloku|.\nNałóż {Value1} |Osłabienia| i |Wrażliwości|\
+    \ na wszystkich wrogów.\nJeżeli w dłoni jest przywołana |Larva, Bogini Wiecznej\
+    \ Nocy|, Nałóż {Value2} |Trucizny| na wszystkich wrogów."
+PoisonTeaParty:
+  Name: Podejrzana Impreza Herbaciana
+  Description: "{PlayerName} leczy {Value1:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia i zyskuje {Value1} |Trucizny|.\nNałóż {Value2} |Trucizny|."
+LunaFriend:
+  ExtraDescription1: "{FriendA}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} losowemu wrogowi {Value1:plural one='% raz' other='% razy'}."
+  Description: '{FriendP}Zyskaj {Block} |Bloku|.'
+  Name: Luna, Ciche Światło Księżyca
+  ExtraDescription2: "{FriendU}Zyskaj |Nieskazitelny Jedwab| na {Value2:plural one='%\
+    \ turę' few='% tury' many='% tur'}."
+PlayWithWaste:
+  Description: "Wybierz 1 z {Value1} nierzadkich kart |Narzędzi| aby dodać do ręki.\n\
+    Jest traktowana jako |Kopia| oraz ma |Ograniczony【1】|."
+  Name: Nurkowanie w Śmietniku
+StarFriend:
+  Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wszystkim wrogom."
+  Name: Star, Spływające Światło Gwiazd
+  ExtraDescription1: '{FriendA}Natychmiast zadaj obrażenia {Value1} razy.'
+  ExtraDescription2: "{FriendU}Gdy którakolwiek {SelfName} zada obrażenia, nałóż {Light:plural\
+    \ one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\nNatychmiast zadaj obrażenia\
+    \ {Value2} razy."
+SunnyFriend:
+  Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} losowemu wrogowi {Value1:plural one='% raz' other='% razy'}."
+  ExtraDescription2: "{FriendU}Natychmiast zadaj obrażenia {Value1:plural one='% raz'\
+    \ other='% razy'}.\nZyskaj {Value2} |Mocy|."
+  Name: Sunny, Załamane Światło Słoneczne
+  ExtraDescription1: "{FriendA}Zyskaj |Kamuflaż Optyczny| na {Light:plural one='%\
+    \ turę' few='% tury' many='% tur'}."
+Xiguadao:
+  Description: "|Za Każde Wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nJeżeli cel {SelfName:g} zostanie pokonany, jeżeli\
+    \ wciąż ma w zanadrzu ataki, kontynuuje ataki obierając losowego wroga jako nowy\
+    \ cel."
+  Name: Arbuzowy Nóż
+ClownpieceFriend:
+  ExtraDescription1: "{FriendA}Dobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'} i dodaj |Szaleństwo| do stosu zrzutek."
+  Description: "{FriendS}Zyskaj {StartMana}.\n{FriendP}Zyskaj {Value2} |Tymczasowej\
+    \ Mocy|."
+  ExtraDescription2: '{FriendU}Zyskaj {Mana} i dodaj |Szaleństwo| do stosu zrzutek.'
+  Name: Clownpiece, Obłąkana Wróżka
+  UpgradedExtraDescription1: "{FriendA}Dobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}."
+FakeMoon:
+  Description: "Wybierz kartę w dłoni. Dodaj {Value1:plural one='% |Kopię|' few='%\
+    \ |Kopie|' many='% |Kopii|'} tej karty do ręki. {Value1:plural one='|Tymczasowo\
+    \ Kosztuje| ona' other='|Tymczasowo Kosztują| one'} {Mana} i {Value1:plural one='ma\
+    \ ona' other='mają one'} |Wygnanie| oraz |Eteryczność|.\nJeżeli cel jest kartą\
+    \ |Zdolności| lub ma |Wygnanie|, to cel staje się |Kopią|.\nNie możesz wybierać\
+    \ |Kopii| dla tego efektu."
+  FlavorText: Bardziej Piękny od prawdziwego Księżyca.
+  Name: Fałszywy Księżyc
+RemiliaFate:
+  Description: "Zrzuć do {Value1:plural one='% karty' few='% kart' many='% kart'}\n\
+    Umieść losowe karty z całkowitymi kosztami 1, 2 i 3 ze stosu doboru do ręki."
+  UpgradedDescription: "Zrzuć do {Value1:plural one='% karty' few='% kart' many='%\
+    \ kart'}\nUmieść losowe karty z całkowitymi kosztami 1, 2, 3, 4 i 5 ze stosu doboru\
+    \ do ręki."
+  Name: Manipulacja Przeznaczenia
+YouxiangAttack:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Za Każde Wydane {Mana}|: Zadaj o {Value1} więcej obrażeń.\nJeżeli wydane zostało\
+    \ co najmniej {Value2} many, te obrażenie stają się |Celne|."
+  Name: Zakwitanie Gensoukyou
+HuiyeAttack:
+  Description: "|Za Każdą Wydaną Manę Różnego Koloru|: Zadaj {Damage:plural one='%\
+    \ obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom.\nJeżeli wydane\
+    \ zostało co najmniej {Value2} many, zwróć do {Value1:plural one='% karty' few='%\
+    \ kart' many='% kart'} ze stosu wygnania do ręki."
+  Name: Ocean Drzew Hourai
+YonglinUpgrade:
+  Name: Kadzidło Księżycowego Królika
+  Description: "Ulecz {Value2:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia.\nNa początku tury {PlayerName:g} |Ulepsz| {Value2:plural one='% losową\
+    \ kartę' few='% losowe karty' many='% losowych kart'} w dłoni.\n"
+KisumeAttack:
+  Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nJeżeli {SelfName} było pierwszą kartą zagraną\
+    \ w tej turze, nałóż {Value1:plural one='% |Namiar|' few='% |Namiary|' many='%\
+    \ |Namiarów|}."
+  Name: Duch Wiadra
+ShirenKunchong:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nGdy jakiś wróg zyska |Debuffa|, {PlayerName} zyskuje {Value1}\
+    \ |Bloku|."
+  Name: Kanibalistyczny Owad
+SanaeRestart:
+  UpgradedDescription: "Zyskaj {Mana}.\nZwróć wszystkie karty z dłoni i stosu zrzutek\
+    \ do stosu doboru. Przetasuj stosu doboru.\nDobierz {Value1:plural one='% kartę'\
+    \ few='% karty' many='% kart'}.\nWybierz do {Value1:plural one='% karty' few='%\
+    \ kart' many='% kart'} w stosie doboru. Umieść {Value2:plural one='ją' other='je'}\
+    \ w dłoń."
+  Name: Dzień, w Którym Morze Zostało Podzielone
+  Description: "Zyskaj {Mana}.\nZwróć wszystkie karty z dłoni i stosu zrzutek do stosu\
+    \ doboru. Przetasuj stosu doboru.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}."
+DoubleJK:
+  Description: "{PlayerName} może zagrać co najwyżej {Value1:plural one='% kartę'\
+    \ few='% karty' many='% kart'} w każdej turze.\nNa końcu tury {PlayerName:g},\
+    \ jeżeli to nie była dodatkowa tura, zacznij dodatkową turę zachowując cały |Blok|."
+  Name: Podwójna ESPerka Wieku
+AnimalSpirit:
+  Name: Powstanie w Świecie Zwierząt
+  Description: "Wszystkie inne karty w dłoni zostają opętane przez dusze zwierząt,\
+    \ nadając im poniższe efekty:\nWilk: Zyskuje |Echo|.\nWydra: Zyskuje |Dopełnienie|.\n\
+    Orzeł: Tymczasowo kosztuje {Mana}."
+  UpgradedDescription: "Wszystkie inne karty w dłoni oraz {Value1} w stosie doboru\
+    \ zostają opętane przez dusze zwierząt, nadając im poniższe efekty:\nWilk: Zyskuje\
+    \ |Echo|.\nWydra: Zyskuje |Dopełnienie|.\nOrzeł: Tymczasowo kosztuje {Mana}."
+YukariFriend:
+  ExtraDescription2: '{FriendU}Na początku tury {PlayerName:g} dodaj losową neutralną
+    trójkolorową kartę do ręki. Ona |Tymczasowo Kosztuje| {Mana} i ma |Eteryczność|.'
+  Name: Yukari, Granica Fantazji
+  Description: '{FriendP}Zyskaj |Moc| równą ilości kart obrony zagranych w tej turze.
+    ({Fire})'
+  ExtraDescription1: '{FriendA}Wybierz |Wygnaną| kartę i zwróć ją do ręki.'
+Thought:
+  UpgradedDescription: "|Gdy {SelfName} Wchodzi w Ręki|: |Wygnaj| ją.\nDodaj losową\
+    \ |Ulepszoną| kartę o całkowitym koszcie równym {Value1} do ręki. Ona |Tymczasowo\
+    \ Kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|."
+  Description: "|Gdy {SelfName} Wchodzi w Ręki|: |Wygnaj| ją.\nDodaj losową kartę\
+    \ o całkowitym koszcie równym {Value1} do ręki. Ona |Tymczasowo Kosztuje| {Mana}\
+    \ i ma |Wygnanie| oraz |Eteryczność|."
+LarvaCure:
+  Description: "Usuń |Truciznę| {PlayerName:g}\n|Ograniczenie【{DeckCounter}】|"
+  Name: Antidotum
+Lunatic:
+  Name: Szaleństwo
+  Description: "Na końcu tury {PlayerName:g}, jeżeli jest razem {Value1} {SelfName:v}\
+    \ w obiegu, wygnaj je i strać {Value2:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia.\nAktualnie jest {LunaticCount}."
+  NonbattleDescription: Na końcu tury {PlayerName:g}, jeżeli jest razem {Value1} {SelfName:v}
+    w obiegu, wygnaj je i strać {Value2:plural one='% punkt' few='% punkty' many='%
+    punktów'} życia.
+CirnoFreeze:
+  Description: "Jeżeli w dłoni jest {SelfName}, wszystkie karty kosztują o {Mana}\
+    \ więcej.\nGdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną\
+    \ % karty' many='e zostanie % kart'}, {SelfName} zostanie |Wygnane| z dłoni."
+  Name: Zamrożenie Many
+NightMana3:
+  Description: "Jeżeli w dłoni jest {SelfName}, wszystkie karty kosztują o {Mana}\
+    \ więcej.\nGdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną\
+    \ % karty' many='e zostanie % kart'}, {SelfName} zostanie |Wygnana| z dłoni."
+  Name: 'Długa Noc: 3:00'
+NightMana4:
+  Name: 'Długa Noc: 5:00'
+  Description: "Jeżeli w dłoni jest {SelfName}, wszystkie karty kosztują o {Mana}\
+    \ więcej.\nGdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną\
+    \ % karty' many='e zostanie % kart'}, {SelfName} zostanie |Wygnana| z dłoni."
+MoonTipsHeal:
+  Description: Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'}
+    życia.
+  Name: Wskazówka Zdrowia
+MoonTipsBag:
+  FlavorText: 'Yukari: "Wygląda na to, że {PlayerName} jest w tarapatach."'
+  Name: Woreczek Podpowiedzi Yukari
+  Description: "Wybierz 1 z {Value1} |Podpowiedzi Przeciw Księżycowi|. Zyskaj ich\
+    \ efekt.\n|Ograniczenie【{DeckCounter}】|"
+MoonTipsAttack:
+  Name: Dodatkowe Danmaku
+  Description: Dodaj {Value1:plural one='% kartę' few='% karty' many='% kart'} |Strzału|
+    do stosu doboru. {Value1:plural one='Ma ona' other='Mają one'} |Dopełnienie|.
+MoonTipsDefense:
+  Name: Więcej Obrony
+  Description: Zyskaj {Value1} |Bariery|.
+ChooseFriend:
+  Name: Spotkanie nad Mglistym Jeziorem
+  Description: "Wybierz do {Value2} z {Value1} losowych kart |Wspólników| aby dodać\
+    \ do ręki. Mana dowolnego koloru może zostać użyta, aby za nie zapłacić.\nTe |e:alternatywne\
+    \ karty| ignorują ograniczenia całkowitego kosztu, koloru man oraz postaci."
+OtherBlock:
+  Name: Prowokacja
+  Description: "Zyskaj {Block} |Bloku|.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}. Priorytetyzuje karty unikalne dla postaci innych od {PlayerName:g}."
+HuiyeTime:
+  Name: Wieczność i Natychmiastowość
+  Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
+    \ w dłóni. |Przetrzyma| {Value1:plural one='ją' other='je'} na tę turę.\nZakończ\
+    \ turę {PlayerName:g}. Wtem, zacznij dodatkową turę. Co najwyżej do {Value1:plural\
+    \ one='% karty' few='% kart' many='% kart'} może zostać zagranych w tej turze."
+NightMana1:
+  Name: 'Długa Noc: 23:00'
+  Description: "Jeżeli w dłoni jest {SelfName}, wszystkie karty kosztują o {Mana}\
+    \ więcej.\nGdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną\
+    \ % karty' many='e zostanie % kart'}, {SelfName} zostanie |Wygnana| z dłoni."
+NightMana2:
+  Name: 'Długa Noc: 1:00'
+  Description: "Jeżeli w dłoni jest {SelfName}, wszystkie karty kosztują o {Mana}\
+    \ więcej.\nGdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną\
+    \ % karty' many='e zostanie % kart'}, {SelfName} zostanie |Wygnana| z dłoni."
+OtherSkill:
+  Name: Naśladowanie
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Zyskaj {GainMana}.\nGdy karta unikalna dla postaci innej od {PlayerName:g} jest\
+    \ zagrana, {SelfName} przyznaje dodatkowe <sprite=\"ManaSprite\" name=\"C\">."
+HatateShot:
+  Name: Panoramiczne Zdjęcie
+  Description: "Zyskaj {Block} |Bloku|.\nZa każdą niewydaną manę {SelfName} przyznaje\
+    \ o {Value1} więcej |Bloku|. (Całkowicie {Special} |Bloku|)"
