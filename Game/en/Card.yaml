@@ -229,7 +229,7 @@ OutInGap:
 
   Name: Breaking Boundaries
   DetailText: "These |e:alternate cards| ignore total mana, mana color and character\
-    \ restrictions.\n{SelfName} cannot be found by this effect."
+    \ restrictions.\n{SelfName} cannot be produced by this effect."
 Jiangshen:
   Description: |-
     Whenever {PlayerName} adds a card during this combat, |Upgrade| it.
@@ -1182,6 +1182,7 @@ LanCard:
   Description: Choose 1 of {Value1} random uncommon cards to add to the hand. It |temporarily
     costs| {Mana} and has |Exile| and |Ethereal|.
   Name: Shikigami Protection
+  DetailText: These |e:alternate cards| have a total cost of 6 or less.
 RainbowMarket:
   Description: Whenever a card is |Exiled|, add a random card to the hand.
   Name: Lunar Rainbow Market
@@ -1673,9 +1674,9 @@ HatateNews:
   Name: Kakashi Spirit News
 ZoufangSnake:
   Description: "Lose {Value1} life.\nChoose 1 of {Value2} random neutral rare |Ability|\
-    \ cards to add to the hand. It |temporarily costs| {Mana}.\nThese |e:alternate\
-    \ cards| ignore total mana and mana color restrictions."
+    \ cards to add to the hand. It |temporarily costs| {Mana}."
   Name: Faith of Native God
+  DetailText: These |e:alternate cards| ignore total mana and mana color restrictions.
 ZoufangWater:
   Description: "Deal {Damage} damage {Value1} times.\nIncrease {SelfName}'s damage\
     \ by {Value2} for each |Ability| card played this combat. ({AdditionalDamage})"
@@ -1719,14 +1720,15 @@ RangziFanshu:
 LilyChun:
   Description: "Add {Value1} random card{Value1:plural one='' other='s'} that {Value1:plural\
     \ one='has' other='have'} a total cost of 1 to the hand. {Value1:plural one='It\
-    \ has' other='They have'} |Exile| and |Ethereal|.\nThese |e:alternate cards| ignore\
-    \ character restrictions."
+    \ has' other='They have'} |Exile| and |Ethereal|.\n"
   UpgradedDescription: "Add {Value1} random card{Value1:plural one='' other='s'} that\
     \ {Value1:plural one='has' other='have'} a total cost of 1 to the hand. {Value1:plural\
     \ one='It |temporarily costs|' other='They |temporarily cost|'} {Mana} and {Value1:plural\
-    \ one='has' other='have'} |Exile| and |Ethereal|.\nThese |e:alternate cards| ignore\
-    \ total mana, mana color and character restrictions."
+    \ one='has' other='have'} |Exile| and |Ethereal|."
   Name: Spring is Here!
+  DetailText: "These |e:alternate cards| ignore character restrictions.\nOn |Upgrade|,\
+    \ they also ignore total mana and mana color restrictions.\n{SelfName} cannot\
+    \ be produced by this effect."
 SkyWater:
   Description: "Gain {Shield} |Barrier|.\nDraw {Value1} more card{Value1:plural one=''\
     \ other='s'} during the draw step."
@@ -2004,6 +2006,7 @@ CallFriends:
   UpgradedDescription: "Choose 1 of {Value1} |Teammates| to add to the hand. It enters\
     \ the hand summoned.\nA |e:Fairy of Light| is always included as an additional\
     \ choice."
+  DetailText: These |e:alternate cards| have a total cost of 5 or less.
 MarisaHoldCard:
   Description: "Choose up to {Value1} card{Value1:plural one='' other='s'} in the\
     \ hand. |Retain| them this turn.\nGain {Block} |Block|."
@@ -2061,6 +2064,7 @@ MoreFriends:
   Description: "At the start of {PlayerName}'s turn, add {Value1} random |Teammate|\
     \ card{Value1:plural one='' other='s'} to the hand.\nThese cards have |Ethereal|\
     \ and lose |Ethereal| when summoned."
+  DetailText: These |e:alternate cards| have a total cost of 5 or less.
 FreezeToIce:
   Name: Frozen Specimen
   Description: "|Exile| up to {Value1} card{Value1:plural one='' other='s'} in the\
@@ -2221,9 +2225,10 @@ FakeMoon:
   Description: "Choose a card in the hand. Add {Value1} |cop{Value1:plural one='y'\
     \ other='ies}| of it to the hand. {Value1:plural one='It' other='They'} |temporarily\
     \ cost{Value1:plural one='s' other=''}| {Mana} and {Value1:plural one='has' other='have'}\
-    \ |Exile| and |Ethereal|.\nIf target is an |Ability| card or has |Exile|, target\
-    \ become |Copy|.\nYou can't choose |Copies| for this effect."
+    \ |Exile| and |Ethereal|.\nIf the target card is an |Ability| card or has |Exile|,\
+    \ it becomes a |Copy|."
   FlavorText: More gorgeous than the real Moon.
+  DetailText: You can't choose |Copies| for this effect.
 LarvaCure:
   Name: Antidote
   Description: "Remove {PlayerName}'s |Poison|.\n|Limited【{DeckCounter}】|"
@@ -2311,9 +2316,10 @@ LarvaDefense:
   Name: Wingbeats Flight
 ChooseFriend:
   Description: "Choose up to {Value2} of {Value1} random |Teammate| cards to add to\
-    \ the hand. Mana of any color can be spent to pay their mana costs.\nThese |e:alternate\
-    \ cards| ignore total mana, mana color and character restrictions."
+    \ the hand. Mana of any color can be spent to pay their mana costs."
   Name: Misty Lake Rendezvous
+  DetailText: These |e:alternate cards| ignore total mana, mana color and character
+    restrictions, and have a total cost of 5 or less.
 LunaFriend:
   Description: '{FriendP}Gain {Block} |Block|.'
   Name: Luna, Silent Moonlight
@@ -2426,6 +2432,7 @@ YukariFriend:
     this turn. ({Fire})'
   ExtraDescription2: "{FriendU}At the start of {PlayerName}'s turn, add a random three-colored\
     \ neutral card to the hand. It |temporarily costs| {Mana} and has |Ethereal|."
+  DetailText: "{SelfName} cannot be produced by the |u:Ultimate Skill|'s effect."
 PoisonTeaParty:
   Name: Dubious Tea Party
   Description: "{PlayerName} gains {Value1} life and {Value1} |Poison|.\nApply {Value2}\
