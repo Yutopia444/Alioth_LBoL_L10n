@@ -343,9 +343,10 @@ HuanxiangTouying:
 
 OutInGap:
   Name: 出入境界
-  Description: |-
-    从 {Value1} 张|p:完全随机|的卡牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  Description: 从 {Value1} 张|p:完全随机|的卡牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  DetailText: |-
     |e:备选牌|无视法力、颜色和所有者限制。
+    不能找到{SelfName}。
   FlavorText: 八云紫规定不能用出入境界发现出入境界。
 
 BoliDajiejie:
@@ -808,7 +809,7 @@ OpenUniverse:
   Description: |-
     选择抽牌堆中的一张牌，将它移出本场战斗。
     将两张它|暂塑|为{Mana}的复制加入手中，这些复制具有|放逐|。
-    不能以|复制品|为目标。
+  DetailText: 不能以|复制品|为目标。
   FlavorText: 宇宙的本质是复读（？）
 
 RedGiantStar:
@@ -1618,6 +1619,7 @@ CallFriends:
   UpgradedDescription: |-
     从 {Value1} 张随机的|同伴|牌中选择一张加入手中，它们处于已召唤的状态。
     额外添加一张|e:三月精|作为选项。
+  DetailText: '|e:备选牌|的总费用数量小于五。'
 
 FairyTree:
   Name: 妖精之家
@@ -1628,6 +1630,7 @@ MoreFriends:
   Description: |-
     {PlayerName}的回合开始时，将 {Value1} 张随机的|同伴|牌加入手中。
     如此获得的|同伴|牌具有|虚无|，被召唤后会移除|虚无|。
+  DetailText: '|e:备选牌|的总费用数量小于五。'
 
 FreezeToIce:
   Name: 冰冻标本
@@ -1765,9 +1768,8 @@ HualiIce:
 
 ChooseFriend:
   Name: 相约雾之湖
-  Description: |-
-    从 {Value1} 张随机的|同伴|牌中选择至多 {Value2} 张加入手中，它们的费用可以用任意颜色支付。
-    |e:备选牌|无视法力、颜色和所有者限制。
+  Description: 从 {Value1} 张随机的|同伴|牌中选择至多 {Value2} 张加入手中，它们的费用可以用任意颜色支付。
+  DetailText: '|e:备选牌|无视法力、颜色和所有者限制，总费用数量小于五。'
   FlavorText: 有情就牵手。
 
 LunaFriend:
@@ -2170,9 +2172,8 @@ HatateDiscard:
 
 DoremyDuplicate:
   Name: 梦我梦中
-  Description: |-
-    选择一张手牌，将 {Value1} 张的它的复制加入手中。
-    不能以|复制品|为目标。
+  Description: 选择一张手牌，将 {Value1} 张的它的复制加入手中。
+  DetailText: 不能以|复制品|为目标。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
 
 GuijiZaoxingYuan:
@@ -2220,9 +2221,8 @@ YonglinCard:
 
 FakeMoon:
   Name: 虚假之月
-  Description: |-
-    选择一张手牌，将 {Value1} 张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。如果目标是|能力|牌或具有|放逐|，它成为|复制品|。
-    不能以|复制品|为目标。
+  Description: 选择一张手牌，将 {Value1} 张它|暂塑|为{Mana}的复制加入手中，这张复制具有|放逐|和|虚无|。如果目标是|能力|牌或具有|放逐|，它成为|复制品|。
+  DetailText: 不能以|复制品|为目标。
   FlavorText: 比真正的月亮还要豪华。
 
 Shadow:
@@ -2583,6 +2583,7 @@ ShuimuBlock:
 LanCard:
   Name: 式神护法
   Description: 从 {Value1} 张随机的罕见牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  DetailText: '|e:备选牌|的总费用数量小于六。'
 
 SeeFengshui:
   Name: 考察风水
@@ -2821,12 +2822,13 @@ Zhulianshen:
 
 LilyChun:
   Name: 春天到了！
-  Description: |-
+  Description: |
     将 {Value1} 张随机一费卡牌加入手中，它们具有|放逐|、|虚无|。
+  UpgradedDescription: 将 {Value1} 张随机一费卡牌加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  DetailText: |-
     |e:备选牌|无视所有者限制。
-  UpgradedDescription: |-
-    将 {Value1} 张随机一费卡牌加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
-    |e:备选牌|无视法力、颜色和所有者限制。
+    |升级|后还会无视法力和颜色限制。
+    不能找到{SelfName}。
 
 XiangziEcho:
   Name: 山谷回声
@@ -2900,7 +2902,7 @@ LifeGame:
 PoisonTeaParty:
   Name: 可疑的茶会
   Description: |-
-    {PlayerName}恢复 {Value1} 点生命，受到 {Value1} |中毒|。
+    {PlayerName}恢复 {Value1} 点生命，受到 {Value1} 层|中毒|。
     施加 {Value2} 层|中毒|。
 
 LigeluCard:
@@ -2945,7 +2947,7 @@ ZoufangSnake:
   Description: |-
     失去 {Value1} 点生命。
     从 {Value2} 随机的中立稀有|能力|牌中选择一张加入手中，它|暂塑|为{Mana}。
-    |e:备选牌|无视法力和颜色限制。
+  DetailText: '|e:备选牌|无视法力和颜色限制。'
 
 YachieDefend:
   Name: 龟甲地狱
@@ -3052,6 +3054,7 @@ YukariFriend:
   Description: '{FriendP}获得等量于本回合打出过防御牌数量（{Fire}张）的|火力|。'
   ExtraDescription1: '{FriendA}从|放逐|区选择一张牌移回手中。'
   ExtraDescription2: '{FriendU}{PlayerName}的回合开始时，将一张随机的其它中立三色牌加入手中，|暂塑|为{Mana}，具有|虚无|。'
+  DetailText: '|u:终结技|效果不能找到{SelfName}。'
 
 BailianFire:
   Name: 法界之火
