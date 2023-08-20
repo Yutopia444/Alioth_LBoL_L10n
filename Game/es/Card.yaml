@@ -598,10 +598,11 @@ ChuanyueJiejie:
   Name: Cruzando la Frontera
 OutInGap:
   Description: "Elige 1 de {Value1} cartas |p:completamente aleatorias| para agregarla\
-    \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.\nLas\
-    \ |e:Cartas altenativas| ignoran el maná total, el color del maná y las restricciones\
-    \ de los personajes."
+    \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
   Name: Rompiendo las Fronteras
+  DetailText: "Las |e:cartas altenativas| ignoran el maná total, el color del maná\
+    \ y las restricciones de los personajes.\n{SelfName} no puede ser producido por\
+    \ este efecto."
 Jiangshen:
   Name: Meditación Fiel
   Description: "Siempre que {PlayerName} agregue una carta durante este combate, se\
@@ -821,9 +822,9 @@ ExilePotion:
     other='s'}| y agrega ese número de |Pociones Inestables| a la pila de descarte.
 OpenUniverse:
   Description: "Retira una carta de la pila de robo del combate.\nAgrega 2 |copias|\
-    \ de ello a la mano que |costara temporalmente| {Mana} y tendrá |Exilio|.\nNo\
-    \ puede elegir |Copias| para este efecto."
+    \ de ello a la mano que |costara temporalmente| {Mana} y tendrá |Exilio|."
   Name: Abriendo el Universo
+  DetailText: No puede elegir |Copias| para este efecto.
 StarShower:
   Description: "Obtén {Block} de |Bloqueo|.\nSi {PlayerName} no tiene |Cargas|, gana\
     \ {Value2} |Cargas|. De lo contrario, gana {Value1} |Cargas|."
@@ -1391,8 +1392,9 @@ ShuimiUnderWater:
   Name: Fantasma del Barco
 DoremyDuplicate:
   Name: Perdido en el Paraíso
-  Description: "Elige una carta en la mano. Agrega {Value1} {Value1:plural one='|copia|'\
-    \ other='|copias|'} a la mano.\nNo puede elegir |Copias| para este efecto."
+  Description: "Elige una carta en la mano. Agrega {Value1} {Value1:plural one='|Copia|'\
+    \ other='|Copias|'} a la mano."
+  DetailText: No puede elegir |Copias| para este efecto.
 MystiaSing:
   Name: Canción del Gorrión Nocturno
   Description: "Aplica {Value1} |Reducción de Poder Temporal| a cada enemigo.\nGana\
@@ -1520,6 +1522,7 @@ LanCard:
   Description: Elige 1 de {Value1} cartas poco comunes al azar para agregarla a la
     mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
   Name: Protección de Shikigami
+  DetailText: Estas |e:cartas alternativas| tienen un coste total de 5 o menos.
 SeeFengshui:
   Name: Manipulación del Feng Shui
   Description: "Al comienzo de cada turno de {PlayerName}, |Explora| {Value1}.\nSiempre\
@@ -1770,13 +1773,14 @@ LilyChun:
   Name: ¡Llego la Primavera!
   Description: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
     \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un costo total de\
-    \ 1 en la mano. Teniendo |Exilio| y |Etéreo|.\nLas |e:Cartas alternativas| ignoran\
-    \ las restricciones de los personajes."
+    \ 1 en la mano. Teniendo |Exilio| y |Etéreo|.\n"
   UpgradedDescription: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
     \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un costo total de\
     \ 1 en la mano. |{Value1:plural one='cuesta' other='cuestan'} temporalmente| {Mana}.\
-    \ teniendo |Exilio| y |Etéreo|.\nLas |e:Cartas alternativas| ignoran el maná total,\
-    \ el color del maná y las restricciones de los personajes."
+    \ teniendo |Exilio| y |Etéreo|."
+  DetailText: "Estas |e:cartas alternativas| ignoran las restricciones de los personajes.\n\
+    En la |Mejora|, también ignoran las restricciones de maná total y del color de\
+    \ maná.\n{SelfName} no puede ser producido por este efecto."
 PaluxiCurse:
   Name: Regreso del Rencor
   Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil| y |Vulnerable|.\n\
@@ -1795,7 +1799,8 @@ ZoufangSnake:
   Name: Fe de la Diosa Nativa
   Description: "Pierde {Value1} de vida.\nElige 1 de {Value2} cartas aleatorias de\
     \ |Habilidad| raras neutrales para agregarla a la mano. |Cuesta temporalmente|\
-    \ {Mana}.\nLas |e:Cartas alternativas| ignoran las restricciones del maná y color."
+    \ {Mana}."
+  DetailText: Las |e:cartas alternativas| ignoran las restricciones del maná y color.
 YachieDefend:
   Name: Caparazón de Tortuga Infernal
   Description: "Evita que {Value1:plural one='la siguiente % vez' other='las siguientes\
@@ -2010,6 +2015,7 @@ CallFriends:
   UpgradedDescription: "Elige 1 de {Value1} |Compañeras| para agregarla a la mano.\
     \ Entra en la mano convocada.\nUna |e:Hada de la Luz| siempre se incluye como\
     \ una opción adicional."
+  DetailText: Estas |e:cartas alternativas| tienen un coste total de 4 o menos.
 HualiIce:
   Name: Impresionante Hielo de Verano
   UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
@@ -2105,6 +2111,7 @@ MoreFriends:
     \ one='' other='s'} |Compañera{Value1:plural one='' other='s'}| aleatoria{Value1:plural\
     \ one='' other='s'} a la mano.\nEstas cartas tienen |Etéreo| y pierden el |Etéreo|\
     \ cuando son convocadas."
+  DetailText: Estas |e:cartas alternativas| tienen un coste total de 4 o menos.
 FairyTrick:
   Name: Travesura de Hadas
   Description: "Pierde {Value1} de vida.\nInvoca 3 |e:Hadas de la Luz|. Agrega uno\
@@ -2202,9 +2209,10 @@ FakeMoon:
   Description: "Elige una carta en la mano. Agrega {Value1} |copia{Value1:plural one=''\
     \ other='s'}| de ella en la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
     \ {Mana} y {Value1:plural one='tiene' other='tienen'} |Exilio| y |Etéreo|.\nSi\
-    \ el objetivo es una carta de |Habilidad| o tiene |Exilio|, el objetivo se convierte\
-    \ en una |Copia|.\nNo se puede elegir |Copias| para este efecto."
+    \ el objetivo es una carta de |Habilidad| o tiene |Exilio|, se convierte en una\
+    \ |Copia|."
   FlavorText: Más hermosa que la luna real.
+  DetailText: No puede elegir |Copias| para este efecto.
 OptBottom:
   Name: Hundirse
   Description: Coloca {TargetName} en la parte inferior de la pila de robo.
@@ -2270,8 +2278,9 @@ ChooseFriend:
   Name: Encuentro en el Lago Brumoso
   Description: "Elige hasta {Value2} de {Value1} cartas |Compañeras| aleatorias para\
     \ agregarla a la mano. Se puede gastar maná de cualquier color para pagar sus\
-    \ costes de maná.\nLas |e:Cartas alternativas| ignoran el maná total, el color\
-    \ del maná y las restricciones de los personajes."
+    \ costes de maná."
+  DetailText: Las |e:cartas alternativas| ignoran el maná total, el color del maná
+    y las restricciones de los personajes, tienen un coste total de 4 o menos.
 InstantFreeze:
   Description: "Aplica |Frío| a todos los enemigos.\nTermina el turno de {PlayerName}.\
     \ Luego, toma un turno extra.\n|Límite de Tiempo| {Mana}."
@@ -2490,6 +2499,8 @@ YukariFriend:
   Description: '{FriendP}Gana |Poder| igual a la cantidad de cartas de defensa jugadas
     en este turno. (Poder conseguido {Fire})'
   ExtraDescription1: '{FriendA}Elige una carta |Exiliada| y devuélvelo a la mano.'
+  DetailText: '{SelfName} no puede ser producido por el efecto de la |u:Habilidad
+    Definitiva|.'
 NightMana1:
   Description: "Si hay una {SelfName} en la mano, todas las cartas cuestan {Mana}\
     \ maná más para jugar.\nCada vez que se juega {FreezeTimes} carta, se |Exilia|\
