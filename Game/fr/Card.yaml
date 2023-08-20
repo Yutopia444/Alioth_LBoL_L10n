@@ -219,13 +219,14 @@ HuanxiangTouying:
     \ un coût total de 1, 2, 3, 4 et 5."
   FlavorText: '"...Moteur, action !"'
 OutInGap:
-  Description: "Choisissez une parmi {Value1} cartes aléatoires de |p:n'importe quelle\
-    \ couleur| à ajouter à la main. Elle |coûte temporairement| {Mana} et a |Exil|\
-    \ et |Éthéré|.\nCette |e:carte alternative| ignore les restrictions de mana, de\
-    \ couleur et de propriétaire."
+  Description: "Choisissez une parmi {Value1} cartes |p:complètement aléatoires| à\
+    \ ajouter à la main. Elle |coûte temporairement| {Mana} et a |Exil| et |Éthéré|."
   Name: Briser les Frontières
   FlavorText: Yakumo Yukari stipule que la limite d’entrée et de sortie ne se trouve
     pas près de la limite d’entrée et de sortie.
+  DetailText: "Ces |e:cartes alternatives| ignorent le mana total, la couleur de mana\
+    \ et les restrictions de personnage.\n{SelfName} ne peut pas être produit par\
+    \ cet effet."
 Jiangshen:
   Description: "Chaque fois que {PlayerName} ajoute une carte pendant ce combat, |Améliorez|-la.\n\
     Ajoutez {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'} à la\
@@ -342,9 +343,9 @@ UpgradePotion:
 OpenUniverse:
   Name: Univers Ouvert
   Description: "Retirez une carte de la pioche du combat.\nAjoutez-en 2 |copies| à\
-    \ la main qui |coûtent temporairement| {Mana} et qui ont |Exil|.\nVous ne pouvez\
-    \ cibler une |copie| pour cet effet."
+    \ la main qui |coûtent temporairement| {Mana} et qui ont |Exil|."
   FlavorText: L'essence de l'univers est la répétition (?)
+  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
 RedGiantStar:
   Name: Impact Géant Rouge
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
@@ -953,6 +954,7 @@ LanCard:
   Description: Choisissez une parmi {Value1} cartes inhabituelles aléatoires à ajouter
     à la main. Elle |coûte temporairement| {Mana} et a |Exil| et |Éthéré|.
   Name: Protection Shikigami
+  DetailText: Ces |e:cartes alternatives| ont un coût total de 5 ou moins.
 NiuqiDefense:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
     \ {Value1} |Bouclier{Value1:plural one='' other='s'}| pour chaque carte de la\
@@ -1042,10 +1044,10 @@ HuiyinRetain:
 DoremyDuplicate:
   Name: Rêve dans le Rêve
   Description: "Choisissez une carte dans la main et ajoutez {Value1:plural one='%\
-    \ |copie|' other='% |copies|'} à la main.\nVous ne pouvez cibler une |copie| pour\
-    \ cet effet."
+    \ |copie|' other='% |copies|'} à la main."
   FlavorText: Lorsque Doremy aura soif, elle se concentrera sur les rêves de ceux
     qui aiment boire beaucoup d'eau avant d'aller se coucher.
+  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
 GuijiZaoxingYuan:
   Name: Sculpture - Cercle
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
@@ -1631,15 +1633,14 @@ LilyChun:
   UpgradedDescription: "Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s\
     \ aléatoires'} qui {Value1:plural one='a' other='ont'} un coût total de 1 à la\
     \ main. {Value1:plural one ='Elle |coûte temporairement|' other='Elles |coûtent\
-    \ temporairement|'} {Mana} et {Value1:plural one='a' other='ont'} |Exil| et |Éthéré|.\n\
-    {Value1:plural one='Cette |e:carte alternative| ignore' other='Ces |e:cartes alternatives|\
-    \ ignorent'} Ignore les restrictions de mana, de couleur et de propriétaire."
+    \ temporairement|'} {Mana} et {Value1:plural one='a' other='ont'} |Exil| et |Éthéré|."
   Name: C'est le printemps !
   Description: "Ajoutez {Value1} carte{Value1:plural one=' aléatoire' other='s aléatoires'}\
     \ qui {Value1:plural one='a' other='ont'} un coût total de 1 à la main. {Value1:plural\
-    \ one ='Elle a' other='Elles ont'} |Exil| et |Éthéré|.\n{Value1:plural one='Cette\
-    \ |e:carte alternative| ignore' other='Ces |e:cartes alternatives| ignorent'}\
-    \ les restrictions de propriétaire."
+    \ one ='Elle a' other='Elles ont'} |Exil| et |Éthéré|.\n"
+  DetailText: "Ces |e:cartes alternatives| ignorent les restrictions de personnage.\n\
+    Lorsque |Améliorées|, elles ignorent également les restrictions de mana total\
+    \ et de couleur de mana.\n{SelfName} ne peut pas être produit par cet effet."
 ZoufangWater:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     Ces dégâts sont augmentés de {Value2} pour chaque carte de |pouvoir| jouée pendant\
@@ -1669,9 +1670,10 @@ PaluxiCurse:
 ZoufangSnake:
   Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nChoisissez\
     \ une parmi {Value2} cartes de |pouvoir| neutres rares aléatoires à ajouter à\
-    \ la main. Elle coûte |temporairement| {Mana}.\nCette |e:carte alternative| ignore\
-    \ les restrictions de mana et de couleur."
+    \ la main. Elle coûte |temporairement| {Mana}."
   Name: Foi du Dieu Natif
+  DetailText: Ces |e:cartes alternatives| ignorent les restrictions de mana total
+    et de couleur de mana.
 TodayYesterday:
   Description: "Chaque fois que {PlayerName} |Esquive| une attaque, gagnez {Value1}\
     \ |Puissance{Value1:plural one='' other='s'}|.\nGagnez {Value2} |Esquive{Value2:plural\
@@ -2388,6 +2390,7 @@ CallFriends:
   UpgradedDescription: "Choisissez une parmi {Value1} cartes |alliées| aléatoires.\
     \ Ajoutez-la à votre main et elle est invoquée.\nAjoutez une des trois |e:Fées\
     \ de Lumière| en option supplémentaire."
+  DetailText: Ces |e:cartes alternatives| ont un coût total de 4 ou moins.
 Blizzard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez\
     \ le |Froid| à tous les ennemis.\nSi vous avez invoqué |Letty, Incarnation de\
@@ -2512,6 +2515,7 @@ MoreFriends:
     La carte |alliée| ainsi obtenue a |Éthéré|, et elle perd |Éthéré| lorsqu'elle\
     \ est invoquée."
   Name: Experte en Relations
+  DetailText: Ces |e:cartes alternatives| ont un coût total de 4 ou moins.
 FairyOnIce:
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n{PlayerName}\
     \ gagne {Value2} |Esquive{Value2:plural one='' other='s'}| pour chaque ennemi\
@@ -2637,8 +2641,8 @@ FakeMoon:
   Description: "Choisissez une carte dans votre main, ajoutez {Value1} copie{Value1:plural\
     \ one='' other='s'} de celle-ci |coûtant temporairement| {Mana}, {Value1:plural\
     \ one='cette copie a' other='ces copies ont'} |Exil| et |Éthéré|. Si la carte\
-    \ choisie est une carte |Pouvoir| ou a |Exil|, elle devient une |copie|.\nVous\
-    \ ne pouvez cibler une |copie| pour cet effet."
+    \ choisie est une carte |Pouvoir| ou a |Exil|, elle devient une |copie|."
+  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
 Thought:
   Name: Idée
   Description: "|En main| : |Exilez| {SelfName}.\nAjoutez une carte aléatoire dont\
@@ -2780,9 +2784,9 @@ ChooseFriend:
   FlavorText: Si vous êtes amoureux, tenez-vous la main.
   Description: "Choisissez jusqu'à {Value2} parmi {Value1} cartes |alliées| aléatoires\
     \ et ajoutez-les à votre main, leurs coûts peuvent être payés dans n'importe quelle\
-    \ couleur.\n{Value2:plural one='Cette |e:carte alternative| ignore' other='Ces\
-    \ |e:cartes alternatives| ignorent'} les restrictions de mana, de couleur et de\
-    \ propriétaire."
+    \ couleur."
+  DetailText: Ces |e:cartes alternatives| ignorent les restrictions de mana total,
+    de couleur de mana et de personnage, et ont un coût total de 4 ou moins.
 LunaFriend:
   Name: "Luna, Clair de Lune Silencieux"
   Description: "{FriendP}Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
@@ -3059,6 +3063,7 @@ YukariFriend:
   ExtraDescription2: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
     neutre tricolore aléatoire à la main. Elle |coûte temporairement| {Mana} et a
     |Éthéré|.'
+  DetailText: "{SelfName} ne peut pas être produit par l'effet de l'|u:ultime|."
 NightMana1:
   Name: 'Longue Nuit : 23h00'
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
