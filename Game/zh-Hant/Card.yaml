@@ -345,9 +345,9 @@ OutInGap:
   Name: 出入境界
   Description: |-
     從 {Value1} 張|p:完全隨機|的卡牌中選擇一張加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。
-    |e:備選牌|無視法力、顔色及所有者限制。
   FlavorText: 八雲紫規定不能用出入境界發現出入境界。
 
+  DetailText: "|e:備選牌|無視法力、顏色和所有者限制。\n不能找到{SelfName}。"
 BoliDajiejie:
   Name: 博麗大結界
   Description: 本場戰鬥中，{PlayerName}的|格擋|均會轉化為等量的|護盾|。
@@ -808,9 +808,9 @@ OpenUniverse:
   Description: |-
     選擇抽牌堆中的一張牌，將它移出本場戰鬥。
     將兩張它|暫塑|為{Mana}的複製加入手中，這些複製具有|放逐|。
-    不能以|複製品|為目標。
   FlavorText: 宇宙的本質是複讀（？）
 
+  DetailText: 不能以|複製品|為目標。
 RedGiantStar:
   Name: 紅巨星隕落
   Description: |-
@@ -1619,6 +1619,7 @@ CallFriends:
     從 {Value1} 張隨機的|同伴|牌中選擇一張加入手中，它們處於已召喚的狀態。
     額外添加一張|e:三月精|作為選項。
 
+  DetailText: '|e:備選牌|的總費用數量小於五。'
 FairyTree:
   Name: 妖精之家
   Description: 主動打出而召喚一名|同伴|時，獲得 {Value1} 點|格擋|。
@@ -1629,6 +1630,7 @@ MoreFriends:
     {PlayerName}的回合開始時，將 {Value1} 張隨機的|同伴|牌加入手中。
     如此獲得的|同伴|牌具有|虛無|，被召喚後會移除|虛無|。
 
+  DetailText: '|e:備選牌|的總費用數量小於五。'
 FreezeToIce:
   Name: 冰凍標本
   Description: 選擇最多 {Value1} 張手牌，|放逐|它們，將等量的|冰晶|加入手中。
@@ -1767,9 +1769,9 @@ ChooseFriend:
   Name: 相約霧之湖
   Description: |-
     從 {Value1} 張隨機的|同伴|牌中選擇最多 {Value2} 張加入手中，它們的費用可以用任意顔色支付。
-    |e:備選牌|無視法力、顔色及所有者限制。
   FlavorText: 有情就牽手。
 
+  DetailText: '|e:備選牌|無視法力、顏色和所有者限制，總費用數量小於五。'
 LunaFriend:
   Name: 靜謐的月光露娜
   Description: '{FriendP}獲得 {Block} 點|格擋|。'
@@ -2172,9 +2174,9 @@ DoremyDuplicate:
   Name: 夢我夢中
   Description: |-
     選擇一張手牌，將 {Value1} 張的它的複製加入手中。
-    不能以|複製品|為目標。
   FlavorText: 當哆來咪口渴時，她會重點挑選那些喜歡睡前喝很多水的人的夢境。
 
+  DetailText: 不能以|複製品|為目標。
 GuijiZaoxingYuan:
   Name: 圓形造形術
   Description: |-
@@ -2222,9 +2224,9 @@ FakeMoon:
   Name: 虛假之月
   Description: |-
     選擇一張手牌，將 {Value1} 張它|暫塑|為{Mana}的複製加入手中，這張複製具有|放逐|及|虛無|。如果目標是|能力|牌或具有|放逐|，它成為|複製品|。
-    不能以|複製品|為目標。
   FlavorText: 比真正的月亮還要豪華。
 
+  DetailText: 不能以|複製品|為目標。
 Shadow:
   Name: 暗影
   FlavorText: 「我本可以忍受光明，如果我不曾見過露米婭。」
@@ -2584,6 +2586,7 @@ LanCard:
   Name: 式神護法
   Description: 從 {Value1} 張隨機的罕見牌中選擇一張加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。
 
+  DetailText: '|e:備選牌|的總費用數量小於六。'
 SeeFengshui:
   Name: 考察風水
   Description: |-
@@ -2821,13 +2824,12 @@ Zhulianshen:
 
 LilyChun:
   Name: 春天到了！
-  Description: |-
+  Description: |
     將 {Value1} 張隨機一費卡牌加入手中，它們具有|放逐|、|虛無|。
-    |e:備選牌|無視所有者限制。
   UpgradedDescription: |-
     將 {Value1} 張隨機一費卡牌加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。
-    |e:備選牌|無視法力、顔色及所有者限制。
 
+  DetailText: "|e:備選牌|無視所有者限制。\n|升級|後還會無視法力和顏色限制。\n不能找到{SelfName}。"
 XiangziEcho:
   Name: 山谷回聲
   Description: 選擇最多 {Value1} 張手牌賦予|回響|。
@@ -2900,7 +2902,7 @@ LifeGame:
 PoisonTeaParty:
   Name: 可疑的茶會
   Description: |-
-    {PlayerName}恢復 {Value1} 點生命，受到 {Value1} |中毒|。
+    {PlayerName}恢復 {Value1} 點生命，受到 {Value1} 層|中毒|。
     施加 {Value2} 層|中毒|。
 
 LigeluCard:
@@ -2945,8 +2947,8 @@ ZoufangSnake:
   Description: |-
     失去 {Value1} 點生命。
     從 {Value2} 隨機的中立稀有|能力|牌中選擇一張加入手中，它|暫塑|為{Mana}。
-    |e:備選牌|無視法力及顔色限制。
 
+  DetailText: '|e:備選牌|無視法力及顔色限制。'
 YachieDefend:
   Name: 龜甲地獄
   Description: |-
@@ -3053,6 +3055,7 @@ YukariFriend:
   ExtraDescription1: '{FriendA}從|放逐|區選擇一張牌移回手中。'
   ExtraDescription2: '{FriendU}{PlayerName}的回合開始時，將一張隨機的其它中立三色牌加入手中，|暫塑|為{Mana}，具有|虛無|。'
 
+  DetailText: '|u:終結技|效果不能找到{SelfName}。'
 BailianFire:
   Name: 法界之火
   Description: '{PlayerName}的回合開始時，將一張隨機的技能牌加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。'
