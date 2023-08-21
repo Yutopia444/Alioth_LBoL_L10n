@@ -716,7 +716,7 @@ StopTime:
     будет потеряно.
   Name: Остановка времени
 LunaDial:
-  Description: "Закончите текущий ход и сделайте |Доп. ход|.\n|Когда берётся в руку:|\
+  Description: "Закончите текущий ход и сделайте |Доп. ход|.\n|Когда берётся в руку|:\
     \ Стоимость этой карты уменьшается на {Mana}."
   Name: Личное время
 SpecialClock:
@@ -797,14 +797,14 @@ PManaCard:
   Description: Добавляет {Mana}.
   Name: Радуга
 Yuebiao:
-  Description: '|Когда берётся в руку:| |Очищает| {Value1}.'
+  Description: '|Когда берётся в руку|: |Очищает| {Value1}.'
   Name: Лунный пейзаж
 BuyPeace:
-  Description: В конце хода {PlayerName:g} отнимает {Value1} <sprite="Point" name="Gold">
-    и восполняет ей {Value2} здоровья.
+  Description: '|В конце хода|: отнимает {Value1} <sprite="Point" name="Gold"> и восполняет
+    {Value2} здоровья.'
   Name: Купить Безопасность
 Pressure:
-  Description: В начале хода {PlayerName:g} отнимает {Value1} <sprite="Point" name="Power">.
+  Description: '|At the end of the turn|: отнимает {Value1} <sprite="Point" name="Power">.'
   Name: Незримое давление
 Drunk:
   Description: "|Пока находиться в руке:| За ход можно сыграть лишь {Value1} карты.\n\
@@ -818,8 +818,8 @@ FanzhuanChongdong:
   FlavorText: Цена которую нужно заплатить, чтобы стать приспешником вампира.
   Name: Обратный голод
 Misfortune:
-  Description: '|Пока находиться в руке:| В конце хода {PlayerName} теряет {Value1}
-    здоровья за каждые 100 <sprite="Point" name="Gold"> в кармане.'
+  Description: '|В конце хода:| отнимает {Value1} здоровья за каждые 100 <sprite="Point"
+    name="Gold"> в кармане.'
   Name: Плохие приметы
 YuyukoMisfortune:
   Description: '|Пока находиться в руке:| Отнимает {Value1} здоровья, когда {PlayerName}
@@ -836,12 +836,10 @@ AyaNewsReimuSp:
     |Духовности|.'
   Name: Газета Бумбуммару - эксклюзив с Рейму
 XiaosanJingxia:
-  Description: '|Пока находится в руке:| В конце хода накладывает на {PlayerName:a}
-    {Value1} |Слабости|.'
+  Description: '|В конце хода|: получите {Value1} |Слабости|.'
   Name: Испуг
 MarisaForget:
-  Description: '|Пока находится в руке:| В конце хода накладывает на {PlayerName:a}
-    {Value1} |Уязвимости|.'
+  Description: '|В конце хода|: получите {Value1} |Уязвимости|.'
   Name: Забывчивость
 AyaNewsMarisaSp:
   Description: '|Пока находиться в руке:| В конце хода {PlayerName:g} отнимает {Value1}
@@ -863,7 +861,7 @@ Riguang:
     урона.'
   Name: Преломлённый солнечный свет
 Yueguang:
-  Description: '|Когда берётся в руку:| Отнимает {Value1} случайной маны.'
+  Description: '|Когда берётся в руку|: Отнимает {Value1} случайной маны.'
   Name: Тихий лунный свет
 BlackResidue:
   Description: '|Пока находиться в руке:| В конце хода {PlayerName:g} потеряйте {Value1}
@@ -1226,7 +1224,7 @@ ToolWeak:
   Description: "Накладывает {Value1} |Слабости|.\n|Кол-во использовании [{DeckCounter}]|"
   Name: Фонарик
 Chunguang:
-  Description: '|Когда берётся в руку:| |Очищает| {Value1}.'
+  Description: '|Когда берётся в руку|: |Очищает| {Value1}.'
   Name: Чистое сияние
 FangxiangHeal:
   Description: "|Изгоните| {Value1:plural one='% карту' other='% карты'} из стопки\
@@ -1325,7 +1323,7 @@ ShuimuBlock:
     \ {Value1}."
   Name: Строительство башни из камней
 Panzi:
-  Description: "Наносит {Damage} урона.\n|Когда берётся в руку:| Добавляет |копию|\
+  Description: "Наносит {Damage} урона.\n|Когда берётся в руку|: Добавляет |копию|\
     \ этой карты в руку."
   Name: Водяная тарелка
 TiangouOrder:
@@ -1478,8 +1476,7 @@ Regret:
   Name: Сожаление
 SweetPoison:
   Name: Ядовитая сладость
-  Description: '|Пока находится в руке:| в конце хода накладывает на {PlayerName}
-    {Value1} |Яда|.'
+  Description: '|В конце хода|: получите {Value1} |Яда|.'
   FlavorText: Эйрин, Эйрин, помоги мне Эйрин!
 Zhukeling:
   Name: Приказ о выселении
@@ -1527,6 +1524,7 @@ SeeFengshui:
   Name: Фен-Шуй манипуляции
 FlanBlack:
   Description: "|d:Эта карта находится в разработке.\nПожалуйста, следите за обновлениями!|"
+  Name: Демонетизация
 Zhulianshen:
   Description: "Даёт {Block} |Защиты|.\nПредотвращает добавление в колоду следующих\
     \ {Value1} карт |Статуса|. (Они сразу |Изгоняются|.)"
@@ -1951,3 +1949,15 @@ SakuyaDetective:
   Description: "Возьмите {Value2:plural one='% карту' other='% карты'}.\nПри разыгрывании\
     \ против настоящего виновника наносит ей {Value1} урона в начале боя.\n(Накопленный\
     \ урон - {BossDamage})"
+NightMana1:
+  Description: "Если в руке есть {SelfName}, все карты стоят на {Mana} больше.\nПри\
+    \ разыгрывании {FreezeTimes} карт изгоните {SelfName}."
+NightMana2:
+  Description: "Если в руке есть {SelfName}, все карты стоят на {Mana} больше.\nПри\
+    \ разыгрывании {FreezeTimes} карт изгоните {SelfName}."
+NightMana3:
+  Description: "Если в руке есть {SelfName}, все карты стоят на {Mana} больше.\nПри\
+    \ разыгрывании {FreezeTimes} карт изгоните {SelfName}."
+NightMana4:
+  Description: "Если в руке есть {SelfName}, все карты стоят на {Mana} больше.\nПри\
+    \ разыгрывании {FreezeTimes} карт изгоните {SelfName}."
