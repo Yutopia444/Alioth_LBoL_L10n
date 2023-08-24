@@ -75,6 +75,7 @@ ReimuW:
   Description: |-
     提供基础法力{BaseMana}，|灵梦|的专属卡牌会加入牌池。
     回合结束有剩余法力时，获得 {Value1} 点|护盾|。
+    战斗开始时，获得 {Value2} 点|护盾|。
   FlavorText: 十分万能的道具，被用于发射弹幕、创造结界、净化诅咒等。
 
 MarisaB:
@@ -116,7 +117,7 @@ CirnoG:
   Name: 茂盛的绿枝
   Description: |-
     提供基础法力{BaseMana}，|琪露诺|的专属卡牌会加入牌池。
-    {PlayerName}的第一回合开始时，将 {Value1} 张|盛夏之花|加入手中。
+    主动打出而召唤一名|同伴|时，将 {Value1} 张|盛夏之花|加入手中。
   FlavorText: 即使面对困境也会茁壮的生长。
 
 KoishiG:
@@ -151,7 +152,7 @@ PiaoliangPanzi:
   Name: 漂亮的盘子
   Description: |-
     提供基础法力{BaseMana}。
-    {PlayerName}的第一回合开始时，随机升级 {Value1} 张手牌。
+    {PlayerName}的第一回合开始时，随机|升级| {Value1} 张手牌。
   FlavorText: 使用方法是扔出去摔碎。
 
 DatiangouMaifan:
@@ -231,7 +232,7 @@ AizheHongshi:
   Name: 艾哲红石
   Description: |-
     提供基础法力{BaseMana}。
-    {PlayerName}回合开始时，提高 {Value1} 点|火力|，将 {Value2} 张|折射日光|加入弃牌堆。
+    {PlayerName}的第一回合开始时，获得 {Value1} 点|火力|，将 {Value2} 张|折射日光|洗入弃牌堆。
   FlavorText: 可以用来融化冰之鳞。
 
 HouhuMen:
@@ -241,18 +242,21 @@ HouhuMen:
     获取时，选择牌库中的 {Value1} 张牌移除。
   FlavorText: 通向一个随机位置的后门，可以方便地扔垃圾。
 
-BaochunRenou:
-  Name: 报春的人偶
+HuashanBaiyaosheng:
+  Name: 华扇的百药枡
   Description: |-
     提供基础法力{BaseMana}。
-    使用符卡后，{PlayerName}恢复 {Value1} 点生命。
-  FlavorText: 春天到了！
+    {PlayerName}的第一回合开始时，获得{Mana}；
+    第二回合开始时，恢复 {Value1} 点生命；
+    第三回合开始时，获得 {Value2} 点|暂得火力|。
+  FlavorText: 经常在其它RPG游戏中客串。
 
 FengshouGuolan:
   Name: 丰收果篮
   Description: |-
     提供基础法力{BaseMana}。
-    每当一张卡牌进入卡组，{PlayerName}获得 {Value1} 点<sprite="Point" name="Power">。
+    {PlayerName}的最大生命值提高 {Value1} 点。
+    每当一张卡牌进入牌库，{PlayerName}最大生命值提高 {Value2} 点。
   FlavorText: 秋天到了！
 
 Wanbaochui:
@@ -287,8 +291,10 @@ TaiguGouyu:
   Name: 太古的勾玉
   Description: |-
     提供基础法力{BaseMana}。
-    获取时，{PlayerName}的最大生命值提高 {Value1} 点。
-  FlavorText: 拥有的勾玉越多，最大生命值越高。
+    打出一张卡牌后，如果实际支付的法力总数不少于 {Value1} ，下回合开始时获得{Mana}。
+  FlavorText: |-
+    拥有的勾玉越多，最大生命值越高。
+    抱歉，开错游戏了。
 
 KongbaiKapai:
   Name: 空白卡牌
@@ -604,7 +610,7 @@ Tnt:
 
 Modaoshu:
   Name: 魔导书
-  Description: 获取时，从 {Value1} 张中立稀有卡牌里，选择至多一张加入牌组。
+  Description: 获取时，从 {Value1} 张中立稀有卡牌里，选择至多一张加入牌库。
   FlavorText: 里面蕴含着十分深奥的魔法知识。
 
 Shaoyao:
@@ -721,7 +727,7 @@ DiannaoPeijian:
 
 HuangyouJiqiren:
   Name: 黄油机器人
-  Description: 在隙间小屋时，|饮茶|时可以选择一张卡牌加入牌组。
+  Description: 在隙间小屋时，|饮茶|时可以选择一张卡牌加入牌库。
   FlavorText: |-
     一台对于自己存在意义感到困惑的机器人。
     "What is my purpose?"
