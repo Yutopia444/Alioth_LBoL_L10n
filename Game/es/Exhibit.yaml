@@ -31,7 +31,7 @@ ReimuW:
     barreras, purificar maldiciones, etc.
   Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Reimu| se agregan\
     \ al grupo de cartas.\nSi queda maná sin gastar al final del turno de {PlayerName},\
-    \ gana {Value1} de |Barrera|."
+    \ gana {Value1} de |Barrera|.\nAl comienzo del combate, obtén {Value2} de |Barrera|."
 MarisaB:
   Name: Grimorio Oscuro
   FlavorText: Contiene una gran cantidad de conocimiento Oscuro♂.
@@ -108,8 +108,8 @@ CirnoG:
   Name: Rama Verde de Hada
   FlavorText: Prosperará incluso ante la adversidad.
   Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Cirno| se agregan\
-    \ al grupo de cartas.\nAl comienzo del primer turno de {PlayerName}, agrega {Value1}\
-    \ |Flores de Verano| a la mano."
+    \ al grupo de cartas.\nSiempre que una |Compañera| es convocada al ser jugada,\
+    \ agrega una {Value1} |Flores de Verano| a la mano."
 He3:
   Description: Siempre que se gaste {Value1} o más maná por jugar una carta, gana
     {Mana}.
@@ -118,7 +118,7 @@ He3:
 PiaoliangPanzi:
   Name: Platos Hermosos
   Description: "Agrega {BaseMana} al maná base.\nAl comienzo del primer turno de cada\
-    \ combate de {PlayerName}, mejora {Value1} cartas aleatorias en la mano hasta\
+    \ combate de {PlayerName}, |Mejora| {Value1} cartas aleatorias en la mano hasta\
     \ el final del combate."
   FlavorText: El método de uso es tirarlos y romperlos.
 DatiangouMaifan:
@@ -181,8 +181,8 @@ GuizuJiubei:
   FlavorText: Se parece más a un cuenco grande.
 AizheHongshi:
   Name: Piedra Roja de Aja
-  Description: "Agrega {BaseMana} al maná base.\nAl comienzo de cada turno de {PlayerName},\
-    \ gana {Value1} de |Poder| y agrega {Value2} |Luz Solar Refractada{Value2:plural\
+  Description: "Agrega {BaseMana} al maná base.\nAl comienzo del primer turno de {PlayerName}\
+    \ de cada combate, gana {Value1} de |Poder| y agrega {Value2} |Luz Solar Refractada{Value2:plural\
     \ one='' other='s'}| a la pila de descarte."
   FlavorText: Se puede usar para derretir la Escama de Hielo.
 HouhuMen:
@@ -191,13 +191,11 @@ HouhuMen:
   Name: Puerta Trasera
   FlavorText: Una puerta que conduce a una ubicación aleatoria para tirar fácilmente
     la basura.
-BaochunRenou:
-  Description: "Agrega {BaseMana} al maná base.\nCada vez que {PlayerName} activa\
-    \ su Carta Mágica, cura {Value1} de vida."
 FengshouGuolan:
   Name: Cesta de frutas de la cosecha
-  Description: "Agrega {BaseMana} al maná base.\nCada vez que se agrega una carta\
-    \ a la biblioteca, gana {Value1} <sprite=\"Point\" name=\"Power\">."
+  Description: "Agrega {BaseMana} al maná base.\nCuando se adquiere, {PlayerName}\
+    \ gana {Value1} de vida máxima.\nCada vez que se agrega una carta a la biblioteca,\
+    \ {PlayerName} gana {Value2} de vida máxima."
   FlavorText: ¡Es Otoño!
 Wanbaochui:
   Name: Mazo Milagroso
@@ -223,9 +221,9 @@ XianzheShi:
     Patchouli las dispara como Balas.
 TaiguGouyu:
   Name: Magatama Antiguo
-  FlavorText: Cuantas más gemas tengas, mayor será tu salud máxima.
-  Description: "Agrega {BaseMana} al maná base.\nCuando se obtiene, {PlayerName} gana\
-    \ {Value1} de vida máxima."
+  FlavorText: "Cuantas más gemas tengas, mayor será tu salud máxima.\nUps, juego equivocado."
+  Description: "Agrega {BaseMana} al maná base.\nSiempre que se gaste {Value1} o más\
+    \ maná para jugar una carta, gana {Mana} al comienzo del siguiente turno de {PlayerName}."
 KongbaiKapai:
   Name: Carta Blanca
   FlavorText: Una exhibición peligrosa que te hace preguntarte "qué tipo de existencia
@@ -862,3 +860,9 @@ JuanzengZhengming:
     \ en {Value1}.\nEsto dura hasta el final de la partida."
   FlavorText: '"¡Restablece las reglas de las Cartas Mágicas!"'
   Name: Certificado de Donación
+HuashanBaiyaosheng:
+  Name: Las 100 Medicinas de Kasen
+  Description: "Agrega {BaseMana} al maná base.\nAl comienzo del primer turno de {PlayerName}\
+    \ en cada combate, gana {Mana}.\nAl comienzo del segundo turno, cura {Value1}\
+    \ de vida.\nAl comienzo del tercer turno, gana {Value2} |Poder Temporal|."
+  FlavorText: A menudo hace cameos en otros juegos de RPG.
