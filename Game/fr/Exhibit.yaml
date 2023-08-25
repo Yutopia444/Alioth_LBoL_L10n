@@ -28,7 +28,9 @@ ReimuR:
 ReimuW:
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Reimu|\
     \ sont ajoutées aux cartes disponibles.\nLorsque {PlayerName} finit son tour,\
-    \ s'il reste du mana non dépensé, gagnez {Value1} |Barrière|."
+    \ s'il reste du mana non dépensé, gagnez {Value1} |Barrière{Value1:plural one=''\
+    \ other='s'}|.\nAu début du combat, gagnez {Value2} |Barrière{Value2:plural one=''\
+    \ other='s'}|."
   Name: Bâton de Purification Hakurei
   FlavorText: Accessoire très polyvalent, utilisé pour lancer des barrages, créer
     des enchantements, purifier des malédictions, etc.
@@ -54,7 +56,7 @@ CirnoU:
   FlavorText: La manière dont ça permet de voler est inconnue.
 PiaoliangPanzi:
   Description: "Ajoute {BaseMana} à la base de mana.\nAu début du premier tour à chaque\
-    \ combat, {PlayerName} améliore {Value1} cartes aléatoires dans la main jusqu'à\
+    \ combat, {PlayerName} |améliore| {Value1} cartes aléatoires dans la main jusqu'à\
     \ la fin du combat."
   Name: Pile d'Assiettes
   FlavorText: La méthode d'utilisation consiste à les jeter et à les casser.
@@ -129,9 +131,9 @@ SakuyaW:
 CirnoG:
   Name: Branche Verte Luxuriante
   Description: "Ajoute {BaseMana} à la base de mana. Les cartes uniques à |Cirno|\
-    \ sont ajoutées aux cartes disponibles.\nLorsque {PlayerName} commence son premier\
-    \ tour, ajoutez {Value1} |Fleur{Value1:plural one='' other='s'} d'Été| à votre\
-    \ main."
+    \ sont ajoutées aux cartes disponibles.\nChaque fois qu'une |Alliée| est invoquée\
+    \ en étant jouée, ajoutez {Value1} |Fleur{Value1:plural one='' other='s'} d'Été|\
+    \ à votre main."
   FlavorText: Prospérera même face à l'adversité.
 KoishiG:
   Name: Rose Épineuse
@@ -201,10 +203,10 @@ GuizuJiubei:
   FlavorText: Il ressemble plus à un grand bol.
 AizheHongshi:
   Name: Pierre d'Aja
-  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
-    \ son tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|, et ajoutez\
-    \ {Value2} |Lumière{Value2:plural one=' Solaire Réfractée' other='s Solaires Réfractées'}|\
-    \ à la pile de défausse."
+  Description: "Ajoute {BaseMana} à la base de mana.\nAu début du premier tour à chaque\
+    \ combat, {PlayerName} gagne {Value1} |Puissance{Value1:plural one='' other='s'}|,\
+    \ et ajoute {Value2} |Lumière{Value2:plural one=' Solaire Réfractée' other='s\
+    \ Solaires Réfractées'}| à la pile de défausse."
   FlavorText: Peut être utilisé pour faire fondre les écailles de glace.
 HouhuMen:
   Name: Porte Dérobée
@@ -212,15 +214,12 @@ HouhuMen:
     \ {Value1} cartes de la bibliothèque."
   FlavorText: Porte dérobée qui mène à un emplacement aléatoire ce qui en fait une
     poubelle pratique.
-BaochunRenou:
-  Description: "Ajoute {BaseMana} à la base de mana.\nÀ chaque fois que {PlayerName}\
-    \ active sa |Carte Sort|, gagnez {Value1} point{Value1:plural one='' other='s'}\
-    \ de vie."
 FengshouGuolan:
   Name: Corbeille de Fruits de la Récolte
-  Description: "Ajoute {BaseMana} à la base de mana.\nChaque fois qu'une carte est\
-    \ ajoutée à la bibliothèque, gagnez {Value1} <sprite=\"Point\" name=\"Power\"\
-    >."
+  Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquise, {PlayerName}\
+    \ gagne {Value1} point{Value1:plural one='' other='s'} de vie maximum.\nChaque\
+    \ fois qu'une carte est ajoutée à la bibliothèque, {PlayerName} gagne {Value2}\
+    \ point{Value2:plural one='' other='s'} de vie maximum."
   FlavorText: L'automne est là !
 Wanbaochui:
   Name: Maillet du Miracle
@@ -230,9 +229,11 @@ Wanbaochui:
   FlavorText: Les choses ordinaires acquièrent un pouvoir extraordinaire.
 TaiguGouyu:
   Name: Magatama Antique
-  Description: "Ajoute {BaseMana} à la base de mana.\nUne fois acquis, {PlayerName}\
-    \ gagne {Value1} point{Value1:plural one='' other='s'} de vie maximum."
-  FlavorText: Plus vous avez de gemmes, plus votre santé maximale est élevée.
+  Description: "Ajoute {BaseMana} à la base de mana.\nChaque fois que {Value1} ou\
+    \ plus de mana est dépensé pour jouer une carte, gagnez {Mana} lorsque {PlayerName}\
+    \ débute son prochain tour."
+  FlavorText: "Plus vous avez de gemmes, plus votre santé maximale est élevée.\nOups,\
+    \ trompé de jeu."
 KongbaiKapai:
   Name: Carte Vierge
   Description: "Ajoute {BaseMana} à la base de mana.\nLes récompenses de carte ont\
@@ -927,3 +928,11 @@ JuanzengZhengming:
     \ augmenté de {Value1}.\nCela dure jusqu'à la fin de la partie."
   Name: Preuve de Don
   FlavorText: '"Rétablissez les règles de la Carte Sort !"'
+HuashanBaiyaosheng:
+  Description: "Ajoute {BaseMana} à la base de mana.\nLorsque {PlayerName} débute\
+    \ son premier tour à chaque combat, gagnez {Mana}.\nAu début de son deuxième tour,\
+    \ gagnez {Value1} point{Value1:plural one='' other='s'} de vie.\nAu début de son\
+    \ troisième tour, gagnez {Value2} |Puissance{Value2:plural one=' temporaire' other='s\
+    \ temporaires'}|."
+  Name: Les 100 Médicaments de Kasen
+  FlavorText: Fait souvent des apparitions dans d'autres RPG.
