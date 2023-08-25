@@ -30,6 +30,7 @@ ReimuW:
   Description: |-
     Adds {BaseMana} to the mana base. Cards unique to |Reimu| are added to the card pool.
     If there is any unspent mana at the end of {PlayerName}'s turn, gain {Value1} |Barrier|.
+    At the start of combat, gain {Value2} |Barrier|.
   Name: Hakurei Purification Rod
   FlavorText: A very versatile prop that is used to launch projectiles, create boundaries,
     purify curses, etc.
@@ -66,8 +67,8 @@ CirnoU:
   FlavorText: It's not clear why they hover on their own.
 CirnoG:
   Description: "Adds {BaseMana} to the mana base. Cards unique to |Cirno| are added\
-    \ to the card pool.\nAt the start of {PlayerName}'s first turn each combat, add\
-    \ {Value1} |Midsummer Flowers| to the hand."
+    \ to the card pool.\nWhenever a |Teammate| is summoned by being played, add {Value1}\
+    \ |Midsummer Flowers| to the hand."
   Name: Fairy's Green Branch
   FlavorText: Thriving even in the face of adversity.
 KoishiG:
@@ -85,7 +86,7 @@ KoishiB:
 PiaoliangPanzi:
   Description: |-
     Adds {BaseMana} to the mana base.
-    At the start of {PlayerName}'s first turn each combat, upgrade {Value1} random cards in the hand until end of combat.
+    At the start of {PlayerName}'s first turn each combat, |Upgrade| {Value1} random cards in the hand until end of combat.
   Name: Beautiful Plate
   FlavorText: Use by throwing it out and breaking it.
 DatiangouMaifan:
@@ -131,7 +132,7 @@ Ganggenier:
 AizheHongshi:
   Description: |-
     Adds {BaseMana} to the mana base.
-    At the start of {PlayerName}'s turn, gain {Value1} |Firepower| and add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the discard pile.
+    At the start of {PlayerName}'s first turn each combat, gain {Value1} |Firepower| and add {Value2} |Refracted Sunlight{Value2:plural one='' other='s'}| to the discard pile.
   Name: Stone of Aja
   FlavorText: It can be used to melt the Ice Scale.
 HouhuMen:
@@ -140,8 +141,6 @@ HouhuMen:
     When acquired, remove {Value1} cards from the library.
   Name: Back Door
   FlavorText: A door leading to a random location for easy rubbish disposal.
-BaochunRenou:
-  Name: Doll of Announcing Spring
 Wanbaochui:
   Description: |-
     Adds {BaseMana} to the mana base.
@@ -781,8 +780,9 @@ LinghunBaoshi:
   Description: "After visiting a Gap, at the start of the next combat, gain {Mana}."
   FlavorText: When it becomes cloudy, be careful.
 FengshouGuolan:
-  Description: "Adds {BaseMana} to the mana base.\nWhenever a card is added to the\
-    \ library, gain {Value1} <sprite=\"Point\" name=\"Power\">."
+  Description: "Adds {BaseMana} to the mana base.\nWhen acquired, {PlayerName} gains\
+    \ {Value1} maximum life.\nWhenever a card is added to the library, {PlayerName}\
+    \ gains {Value2} maximum life."
   Name: Harvest Fruit Basket
   FlavorText: It's Autumn!
 ClassicWunvfu:
@@ -814,10 +814,11 @@ PingzhuangLinghun:
   Name: Bottled Soul
   FlavorText: "\"I hope you won't come to a devastating end.\""
 TaiguGouyu:
-  Description: "Adds {BaseMana} to the mana base.\nWhen acquired, {PlayerName} gains\
-    \ {Value1} maximum life."
+  Description: "Adds {BaseMana} to the mana base.\nWhenever {Value1} or more mana\
+    \ is spent to play a card, gain {Mana} at the start of {PlayerName}'s next turn."
   Name: Ancient Magatama
-  FlavorText: The more hooks you have, the higher the maximum life value .
+  FlavorText: "The more hooks you have, the higher the maximum life value .\nOops,\
+    \ wrong game."
 PingfanDao:
   Description: "Increases the damage of basic attack cards.\nIf a basic attack card\
     \ has a base cost of {Mana}, it deals {Value1} more damage. Otherwise, it deals\
@@ -851,3 +852,9 @@ JuanzengZhengming:
     \ {Value1}.\nThis lasts until the end of the run."
   Name: Proof of Donation
   FlavorText: '"Reestablish the Spell Card Rules!"'
+HuashanBaiyaosheng:
+  Name: Kasen's 100 Medicines
+  FlavorText: Often makes cameo appearances in other RPGs.
+  Description: "Adds {BaseMana} to the mana base.\nAt the start of {PlayerName}'s\
+    \ first turn each combat, gain {Mana}.\nAt the start of her second turn, gain\
+    \ {Value1} life.\nAt the start of her third turn, gain {Value2} |Temporary Firepower|."
