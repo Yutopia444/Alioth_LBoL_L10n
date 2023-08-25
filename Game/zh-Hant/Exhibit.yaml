@@ -75,6 +75,7 @@ ReimuW:
   Description: |-
     提供基礎法力{BaseMana}，|靈夢|的專屬卡牌會加入牌池。
     回合結束有剩餘法力時，獲得 {Value1} 點|護盾|。
+    戰鬥開始時，獲得 {Value2} 點|護盾|。
   FlavorText: 十分萬能的道具，被用於發射彈幕、創造結界、淨化詛咒等。
 
 MarisaB:
@@ -116,7 +117,7 @@ CirnoG:
   Name: 茂盛的綠枝
   Description: |-
     提供基礎法力{BaseMana}，|琪露諾|的專屬卡牌會加入牌池。
-    {PlayerName}的第一回合開始時，將 {Value1} 張|盛夏之花|加入手中。
+    主動打出而召喚一名|同伴|時，將 {Value1} 張|盛夏之花|加入手中。
   FlavorText: 即使面對困境也會茁壯的生長。
 
 KoishiG:
@@ -151,7 +152,7 @@ PiaoliangPanzi:
   Name: 漂亮的盤子
   Description: |-
     提供基礎法力{BaseMana}。
-    {PlayerName}的第一回合開始時，隨機升級 {Value1} 張手牌。
+    {PlayerName}的第一回合開始時，隨機|升級| {Value1} 張手牌。
   FlavorText: 使用方法是扔出去摔碎。
 
 DatiangouMaifan:
@@ -231,7 +232,7 @@ AizheHongshi:
   Name: 艾哲紅石
   Description: |-
     提供基礎法力{BaseMana}。
-    {PlayerName}回合開始時，提高 {Value1} 點|火力|，將 {Value2} 張|折射日光|加入棄牌堆。
+    {PlayerName}的第一回合開始時，獲得 {Value1} 點|火力|，將 {Value2} 張|折射日光|洗入棄牌堆。
   FlavorText: 可以用來融化冰之鱗。
 
 HouhuMen:
@@ -241,15 +242,12 @@ HouhuMen:
     獲取時，選擇牌庫中的 {Value1} 張牌移除。
   FlavorText: 通向一個隨機位置的後門，可以方便地丟垃圾。
 
-BaochunRenou:
-  Description: |-
-    提供基礎法力{BaseMana}。
-    使用符卡後，{PlayerName}恢復 {Value1} 點生命。
 FengshouGuolan:
   Name: 豐收果籃
   Description: |-
     提供基礎法力{BaseMana}。
-    每當一張卡牌進入牌庫，{PlayerName}獲得 {Value1} 點<sprite="Point" name="Power">。
+    {PlayerName}的最大生命值提高 {Value1} 點。
+    每當一張卡牌進入牌庫，{PlayerName}最大生命值提高 {Value2} 點。
   FlavorText: 秋天到了！
 
 Wanbaochui:
@@ -284,8 +282,8 @@ TaiguGouyu:
   Name: 太古的勾玉
   Description: |-
     提供基礎法力{BaseMana}。
-    獲取時，{PlayerName}的最大生命值提高 {Value1} 點。
-  FlavorText: 擁有的勾玉越多，最大生命值越高。
+    打出一張卡牌後，如果實際支付的法力總數不少於 {Value1} ，下回合開始時獲得{Mana}。
+  FlavorText: "擁有的勾玉越多，最大生命值越高。\n抱歉，開錯遊戲了。"
 
 KongbaiKapai:
   Name: 空白卡牌
@@ -601,7 +599,7 @@ Tnt:
 
 Modaoshu:
   Name: 魔導書
-  Description: 獲取時，從 {Value1} 張中立稀有卡牌裏，選擇最多一張加入牌組。
+  Description: 獲取時，從 {Value1} 張中立稀有卡牌裏，選擇最多一張加入牌庫。
   FlavorText: 裏面蘊含著十分深奧的魔法知識。
 
 Shaoyao:
@@ -718,7 +716,7 @@ DiannaoPeijian:
 
 HuangyouJiqiren:
   Name: 黃油機器人
-  Description: 在隙間小屋時，|飲茶|時可以選擇一張卡牌加入牌組。
+  Description: 在隙間小屋時，|飲茶|時可以選擇一張卡牌加入牌庫。
   FlavorText: |-
     一台對於自己存在意義感到困惑的機器人。
     "What is my purpose?"
@@ -942,3 +940,8 @@ KongZhanpinhe:
   FlavorText: 切割工藝精致的玻璃盒子，超出了幻想鄉的常識水平。
 
 
+HuashanBaiyaosheng:
+  Name: 華扇的百藥枡
+  Description: "提供基礎法力{BaseMana}。\n{PlayerName}的第一回合開始時，獲得{Mana}；\n第二回合開始時，恢復 {Value1} 點生命；\n\
+    第三回合開始時，獲得 {Value2} 點|暫得火力|。"
+  FlavorText: 經常在其它RPG遊戲裏客串。
