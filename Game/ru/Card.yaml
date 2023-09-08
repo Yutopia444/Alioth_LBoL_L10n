@@ -118,8 +118,8 @@ Zhuizongfu:
   FlavorText: Главное помнить, что огневая мощь и временная огневая мощь - разные
     вещи.
 YakongDianxue:
-  Description: "Наносит {Damage} урона.\nЭта карта возвращается из Сброса в руку,\
-    \ когда один из бафов {PlayerName} заканчивается."
+  Description: "Наносит {Damage} урона.\nЭта карта возвращается из стопки сброса в\
+    \ руку, когда один из позитивных эффектов {PlayerName:g} заканчивается."
   FlavorText: Это удар в спину!
   Name: Пространственный точечный разлом
 QinggeManwu:
@@ -774,7 +774,7 @@ KoishiAttackG:
   Name: Цветение роз
 KoishiBlockB:
   Description: Даёт {Block} |Защиты|.
-  Name: Забвение любви
+  Name: Заснуть
 KoishiAttackB:
   Description: Наносит {Damage} урона.
   Name: Изъян в ДНК
@@ -1219,7 +1219,7 @@ ToolDraw:
 MoonWorld:
   Description: В начале хода {PlayerName:g}, |Очищает| {Value1:plural one='% случайную
     карту' other='% случайные карты'} в руке.
-  Name: Мир без грязи
+  Name: Мир без скверны
 ToolAmulet:
   Description: "Даёт {Value1} |Талисман|.\n|Кол-во использовании [{DeckCounter}]|"
   Name: Одноразовый талисман
@@ -1810,8 +1810,8 @@ IceGun:
   Name: Сосулечный пулемёт
   FlavorText: Хоть и пулемёт, но всё равно считается холодным оружием.
 MaidFriend:
-  Name: Касуми, Служанка Особняка
-  Description: '{FriendP}Наносит {Damage} урона от атаки врагу с наименьшем количеством
+  Name: Касуми, служанка особняка
+  Description: '{FriendP}Наносит {Damage} урона от атак врагу с наименьшем количеством
     жизни.'
   ExtraDescription2: '{FriendA}Немедленно атакует. Все соратники с таким же именем
     наносят {Value1} дополнительного урона.'
@@ -1859,10 +1859,10 @@ IceBarrier:
   Name: Ледяной барьер
   Description: Даёт {Value1} |Ледяной брони|.
 FrozenThrone:
-  Description: В начале хода {PlayerName:g}, добавляет |Ледник+| в руку.
+  Description: В начале хода {PlayerName:g}, добавляет |«Ледник+»| в руку.
   FlavorText: Теперь мы едины!
-  UpgradedDescription: "В начале хода {PlayerName:g}, добавляет |Ледник+| в руку.\n\
-    Сразу же добавляет|Ледник+| в руку."
+  UpgradedDescription: "В начале хода {PlayerName:g}, добавляет |«Ледник+»| в руку.\n\
+    Сразу же добавляет|«Ледник+»| в руку."
   Name: Ледяной трон
 Tether:
   Name: Узы дружбы
@@ -1871,8 +1871,8 @@ Tether:
 LeidiFriend:
   Name: Летти, воплощение зимы
   Description: '{FriendP}Накладывает |Холод| на случайного врага.'
-  ExtraDescription2: '{FriendU}Нанести {Damage} урона и наложить |Холод| на каждого
-    врага.'
+  ExtraDescription2: '{FriendU}Наносит {Damage} урона и накладывает |Холод| на всех
+    врагов.'
   FlavorText: Пришла зима. Пришла зима. Снова боремся с зимою. Снова зиму прогоняем.
 ShuihuoCard:
   Name: Сфера воды и пламени
@@ -2106,3 +2106,90 @@ FruitShake:
   FlavorText: Аромат тропических фруктов, такой холодный и вкусный!
   Description: "Наносит {Damage} урона всем врагам.\nЕсли на этом ходу был вызван\
     \ |Соратник|, эта карта стоит {Mana}."
+FairyTeam:
+  Description: "Выберите любое число |Соратников| в вашей руке. Они |Изгоняются|.\
+    \ Даёт ману равную их стоимости.\nНаносит {Damage} урона случайному врагу.\nЗа\
+    \ каждую |Изгнанную| таким образом карту, наносит урон дополнительный раз."
+  Name: Великая война фей
+LarvaFriend:
+  Description: '{FriendP}Накладывает {Value1} |Яда| на случайного противника.'
+  ExtraDescription1: '{FriendA}|Улучшает| все карты в руке.'
+  ExtraDescription2: '{FriendU}Накладывает {Value2} |Яда| на каждого врага. Активирует
+    эффект утраты здоровья от |Яда|.'
+  Name: Ларва, бог летних ночей
+LunaFriend:
+  ExtraDescription2: "{FriendU}Даёт |Бесшовность| на {Value2} {Value2:plural one='ход'\
+    \ other='хода'}."
+  Name: Луна, бесшумный лунный свет
+  Description: '{FriendP}Даёт {Block} |Защиты|.'
+  ExtraDescription1: '{FriendA}Наносит {Damage} урона от атак случайному врагу {Value1}
+    раза.'
+ChooseFriend:
+  Description: Выберите {Value2} из {Value1} случайных карт |Соратников| и добавьте
+    {Value1:plural one='её' other='их'}. в руку. Мана любого цвета может быть потрачена
+    на оплату их мана стоимости.
+  Name: Рандеву на Туманном озере
+  FlavorText: Если наши чувства взаимны, возьмёмся за руки.
+  DetailText: Эти |e:случайные карты| игнорируют ограничения по стоимости, цвету маны
+    и персонажу, и имеют общую стоимость 4 или меньше.
+FairyTrick:
+  Description: "Отнимает {Value1} жизни.\nВызывает 3 |e:Феи света|. Добавляет одну\
+    \ в руку и замешивает остальных в стопку добора."
+  Name: Проделки фей
+  UpgradedDescription: "Отнимает {Value1} жизни.\nВызывает 4 |e:Феи света|. Добавляет\
+    \ одну в руку и замешивает остальных в стопку добора."
+  FlavorText: Конечно, в группе из трех всегда должно быть четверо!
+ClownpieceFriend:
+  ExtraDescription1: "{FriendA}Возьмите {Value1} {Value1:plural one='карту' other='карт'},\
+    \ добавляет |«Безумие»| в стопку сброса"
+  Name: Клаунпис, фея безумия
+  Description: "{FriendS}Даёт {StartMana}.\n{FriendP}Даёт {Value2} |Временной огневой\
+    \ мощи|."
+  ExtraDescription2: '{FriendU}Даёт {Mana} и добавляет |«Безумие»| в стопку сброса.'
+  UpgradedExtraDescription1: "{FriendA}Возьмите {Value1:plural one='% карту' other='%\
+    \ карты'}."
+StarFriend:
+  Description: '{FriendP} Наносит {Damage} урона от атак всем врагам.'
+  Name: Стар, изливающийся звёздный свет
+  ExtraDescription2: "{FriendU}Когда любая {SelfName} наносит урон, накладывает {Light}\
+    \ |Захват|.\nСразу наносит {Value2} {Value2:plural one='раз' other='раза'}."
+  ExtraDescription1: "{FriendA}сразу наносит урон {Value1} {Value1:plural one='раз'\
+    \ other='раза'}."
+PlayWithWaste:
+  Description: Выберите одну из {Value1} случайных карт |Предметов| и добавьте её
+    в руку. Это |Копия| и её можно использовать лишь раз.
+  Name: Порыться в мусорке
+Xiguadao:
+  Description: "|За каждую затраченную {Mana}|: Наносит {Damage} урона.\nКогда цель\
+    \ этой карты умирает, если она имеет излишние атаки, она продолжит атаковать случайного\
+    \ врага как новую цель."
+  Name: Арбузный клинок
+  FlavorText: ⑨мнислэш!
+WhiteWorld:
+  Name: Чистый белый мир
+  UpgradedDescription: "В начале хода {PlayerName:g}, накладывает |Холод| на каждого\
+    \ врага.\nНакладывает |Холод| на каждого врага."
+  Description: В начале хода {PlayerName:g}, накладывает |Холод| на каждого врага.
+ChaowoCard:
+  Name: Сверх-эго
+  Description: "Даёт {Block} |Защиты|.\nВойдите в |Сверх-эго|."
+SunnyFriend:
+  Name: Санни, сверкающий солнечный свет
+  Description: '{FriendP}Наносит {Damage} урона от атак случайному врагу {Value1}
+    раз.'
+  ExtraDescription1: "{FriendA}Даёт |Оптический камуфляж| на {Light} {Light:plural\
+    \ one='ход' other='хода'}."
+  ExtraDescription2: "{FriendU}Сразу наносит урон {Value1} {Value1:plural one='% раз'\
+    \ other='% раза'}.\nДаёт {Value2} |Огневой Мощи|."
+BenwoCard:
+  Description: "Наносит {Damage} урона.\nВойдите в |Оно| состояние."
+  Name: Эго
+BrainOverclock:
+  Name: Напрячь мозг
+  Description: "Добавляет {Mana}.\nВозьмите {Value2:plural one='% карту' other='%\
+    \ карты'}.\n|Перерасход| {Value1}."
+LilyFriend:
+  Name: Лили Уайт, предвестница весны
+HualiIce:
+  UpgradedNonbattleDescription: "{FriendS}Наносит {Damage} урона от атак случайному\
+    \ врагу {Value1} раза.\n{FriendP}Даёт {TurnMana}."
