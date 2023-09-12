@@ -829,8 +829,8 @@ Drunk:
     карты.'
   Name: Опьянение
 FanzhuanChongdong:
-  Description: В конце хода {PlayerName:g} отнимает {Value1} здоровья, если в этом
-    ходу здоровье не восполнялось.
+  Description: '|В конце хода|: отнимает {Value1} здоровья, если в этом ходу здоровье
+    не восполнялось.'
   FlavorText: Цена которую нужно заплатить, чтобы стать приспешником вампира.
   Name: Обратный голод
 Misfortune:
@@ -1401,8 +1401,10 @@ RemiliaJizao:
   Description: "Возьмите {Value1} карт.\nВ этом ходу больше нельзя брать карты."
   Name: Нетерпение
 MeihongAttack:
-  Description: "Отнимает {Value1} здоровья.\nНаносит {Damage} урона."
+  Description: "Отнимает {Value1} здоровья.\nНаносит {Damage} урона {Value2} {Value2:plural\
+    \ one='раз' other='раза'}."
   Name: Крылья Феникса
+  FlavorText: Превратите Аю Шамеймару в якитори.
 TrueMoon:
   Description: "Даёт {Shield} |Барьера|.\nДаёт {Value1} |Огневой Мощи|.\n{PlayerName}\
     \ проиграет, если сыграет ещё {Value2} карт в этой битве."
@@ -1410,11 +1412,11 @@ TrueMoon:
   Name: Истинное полнолуние
 GrimoireStudy:
   Description: "Отнимает {Value1} здоровья.\nВ конце хода {PlayerName:g} добавляет\
-    \ |«Радугу»| в руку.\n|За каждую затраченную этой картой <sprite=\"ManaSprite\"\
-    \ name=\"1\">:| Продлевает эффект этой карты на один дополнительный ход."
+    \ |«Радугу»| в руку.\n|За каждую затраченную этой картой| <sprite=\"ManaSprite\"\
+    \ name=\"1\">: Продлевает эффект этой карты на один дополнительный ход."
   Name: Изучить гримуар
   UpgradedDescription: "Отнимает {Value1} здоровья.\nДобавляет |«Радугу»| в руку.\n\
-    |За каждую затраченную этой картой <sprite=\"ManaSprite\" name=\"1\">:| Продлевает\
+    |За каждую затраченную этой картой| <sprite=\"ManaSprite\" name=\"1\">: Продлевает\
     \ эффект этой карты на один дополнительный ход."
   FlavorText: '"Позвольте мне сначала проверить слабые места этого монстра..."'
 ShannvAbility:
@@ -1453,6 +1455,7 @@ YinglangHowl:
   Description: Накладывает {Value1} |Временного Понижения Огневой Мощи| и {Value2}
     |Уязвимости| на всех врагов.
   Name: Вой в полную луну
+  FlavorText: На этот раз без волчьей шерсти.
 HuaBlock:
   Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Временной Огневой Мощи|."
   Name: Боевая стойка
@@ -1489,7 +1492,7 @@ Regret:
 SweetPoison:
   Name: Ядовитая сладость
   Description: '|В конце хода|: получите {Value1} |Яда|.'
-  FlavorText: Эйрин, Эйрин, помоги мне Эйрин!
+  FlavorText: Эйрин, Эйрин, вылечи меня Эйрин!
 Zhukeling:
   Name: Приказ о выселении
 DoremyDuplicate:
@@ -1715,8 +1718,8 @@ ReimuFestival:
   FlavorText: Последняя достопримечательность храма Хакурей, что пользуется большой
     популярностью.
 Psychedelic:
-  Description: В конце своего хода {PlayerName} теряет {Value1} здоровья и получает
-    {Value2} <sprite="Point" name="Power">.
+  Description: '|В конце своего хода| {PlayerName} теряет {Value1} здоровья и получает
+    {Value2} <sprite="Point" name="Power">.'
   Name: Психоделик
 FangxiangAttack:
   Description: Если цель находится под действием |Яда|, нанести {Damage} урона. Иначе,
@@ -2190,6 +2193,217 @@ BrainOverclock:
     \ карты'}.\n|Перерасход| {Value1}."
 LilyFriend:
   Name: Лили Уайт, предвестница весны
+  ExtraDescription2: "{FriendU}Даёт {Heal:plural one='% жизнь' few='% жизни' many='%\
+    \ жизней'}."
+  Description: "{FriendS}Наносит {Damage} урона от атак случайному врагу {Value1:plural\
+    \ one='% раз' other='% раза'}.\n{FriendP}Даёт {TurnMana}."
+  ExtraDescription1: '{FriendA}Даёт {ActiveMana}.'
 HualiIce:
   UpgradedNonbattleDescription: "{FriendS}Наносит {Damage} урона от атак случайному\
     \ врагу {Value1} раза.\n{FriendP}Даёт {TurnMana}."
+  Description: "Наносит {Damage} урона всем врагам.\nНакладывает |Холод| на всех врагов.\n\
+    Если {Value1} {Value1:plural one='карта была разыграна' other='карт были разыграны'}\
+    \ в течении этого хода, эта карта стоит {Mana}.\n({Countdown:plural one='% карта'\
+    \ other='% карт'} осталось.)\n"
+  UpgradedDescription: "Наносит {Damage} урона всем врагам.\nНакладывает |Холод| на\
+    \ всех врагов {Value2} {Value2:plural one='раз' other='раза'}.\nЕсли {Value1}\
+    \ {Value1:plural one='карта была разыграна' other='карт были разыграны'} в течении\
+    \ этого хода, эта карта стоит {Mana}.\n({Countdown:plural one='% карта' other='%\
+    \ карт'} осталось.)"
+  NonbattleDescription: "Наносит {Damage} урона всем врагам.\nНакладывает |Холод|\
+    \ на всех врагов.\nЕсли {Value1} {Value1:plural one='карта была разыграна' other='карт\
+    \ были разыграны'} в течении этого хода, эта карта стоит {Mana}.\n"
+  Name: Великолепный летний лед
+MoreFriends:
+  Description: "В начале хода {PlayerName:g}, добавьте {Value1} {Value1:plural one='случайную\
+    \ карту |Соратника|' other='случайные карты |Соратников|'} в руку.\nЭти карты\
+    \ |Эфирные| и теряют |Эфирность|, когда вызваны."
+  Name: Социальная бабочка
+  DetailText: Эти |e:случайные карты| имеют общую стоимость 4 или меньше.
+SummerParty:
+  Description: "Даёт {Value1} |Ледяной брони|.\nКаждый |Соратник| в руке получает\
+    \ {Value2:plural one='% |Единство|' other='% |Единства|'}."
+  Name: Холодная вечеринка
+InstantFreeze:
+  ExtraDescription1: "Накладывает |Холод| на всех врагов.\nЗакончите текущий ход и\
+    \ сделайте |Доп. ход|.\n|d:Ограничение времени {Mana}.|"
+  Description: "Накладывает |Холод| на всех врагов.\nЗакончите текущий ход и сделайте\
+    \ |Доп. ход|.\n|Ограничение времени| {Mana}."
+  Name: Мгновенная заморозка
+BestFriend:
+  Description: Выберите до {Value1} {Value1:plural one='карты |Соратника|' other='карт
+    |Соратников|'}. Повысьте {Value1:plural one='её' other='их'} |Единство| до максимального
+    значения.
+  Name: Лучший друг
+CirnoEcho:
+  Description: Выберите {Value1} {Value1:plural one='карту' other='карты'} из стопки
+    сброса и верните {Value1:plural one='её' other='их'} в руку. {Value1:plural one='Она
+    получает' other='Они получают'} |Эхо|.
+  Name: Подарок природы
+DoubleActiveTrigger:
+  Description: (WIP)
+  Name: (WIP)
+FreezeToIce:
+  Name: Замороженный образец
+  Description: "|Изгоняет| до {Value1} {Value1:plural one='карты' other='карт'} из\
+    \ руки. Добавляет в руку столько же |Ледников|."
+GainDollSlot:
+  Name: (WIP)
+  Description: (WIP)
+CallFriends:
+  UpgradedDescription: "Выберите 1 из {Value1} карт |Соратников|. Она добавляется\
+    \ в руку вызванной.\n|e:Фея света| всегда добавлена в качества дополнительного\
+    \ выбора."
+  Description: Выберите 1 из {Value1} карт |Соратников|. Она добавляется в руку вызванной.
+  DetailText: Эти |e:случайные карты| имеют общую стоимость 4 или меньше.
+  Name: Позвать друзей
+FairyTree:
+  Name: Обитель фей
+  Description: Когда |Соратник| вызван с помощью разыгрывания карты |Соратника|, даёт
+    {Value1} |Защиты|.
+GatherFairy:
+  Description: "Максимальный размер руки становится {MaxHand}.\nВозьмите {Value1:plural\
+    \ one='% карту' other='% карты'}."
+  Name: Сбор фей
+  UpgradedDescription: "Максимальный размер руки становится {MaxHand}.\nВозьмите {Value1:plural\
+    \ one='% карту' other='% карты'}.\nВсе |Соратники| в руке получают {Value2} |Единства|."
+  FlavorText: Вы все мои крылья.
+KoishiMoveAttack:
+  Name: (WIP)
+  Description: (WIP)
+BabyDream:
+  Description: (WIP)
+  Name: (WIP)
+AliceAttackW:
+  Name: (WIP)
+  Description: Наносит {Damage} урона.
+SacrificeDoll:
+  Name: (WIP)
+  Description: (WIP)
+DiamondBlizzard:
+  Name: Алмазный столб
+  Description: "Наносит {Damage} урона всем врагам.\n|Выберите|: Накладывает |Холод|\
+    \ на всех врагов или даёт {Block} |Защиты|."
+  ExtraDescription1: "Наносит {Damage} урона всем врагам.\nНакладывает |Холод| на\
+    \ всех врагов."
+  ExtraDescription2: "Наносит {Damage} урона всем врагам.\nДаёт {Block} |Защиты|."
+IceBlock:
+  Description: "{PlayerName} не может терять жизни в течение одного хода.\n{PlayerName}\
+    \ теряет всю |Защиту|, |Барьер| и |Уворот|.\nВся рука |Оставляется| на этом ходу.\
+    \ Заканчивает ход {PlayerName:g}."
+  Name: Ледяной блок
+MinengZhuru:
+  Name: Инъекция энергии
+  Description: "Когда |f:Пассивный навык| |Соратника| срабатывает, он также срабатывает\
+    \ ёще один раз.\n(Этот эффект никак не влияет на увеличение/уменьшение Единства\
+    \ от срабатывания навыка.)"
+FreezeRiver:
+  Name: Плавающий лёд
+  UpgradedDescription: Положите карту со дна стопки добора в руку. Она |меняет стоимость|
+    на {Mana} до конца боя.
+  Description: Положите карту со дна стопки добора в руку. Она |временно стоит| {Mana}.
+LarvaDefense:
+  Description: "Даёт {Block} |Защиты|.\nНакладывает {Value1} |Слабости| and |Уязвимости|\
+    \ на всех врагов.\nЕсли в руке есть вызванная |«Ларва, бог летних ночей»|, накладывает\
+    \ {Value2} |Яда| на всех врагов."
+  Name: Взмах крыльев
+FairyAllOut:
+  Name: Все за дело
+  Description: "Наносит {Damage} урона всем врагам.\nАктивирует |f:Пассивный навык|\
+    \ каждого вызванного |Соратника| в руке."
+FlowerGone:
+  Name: (WIP)
+  Description: (WIP)
+  ExtraDescription1: (WIP)
+PickFlower:
+  ExtraDescription1: (WIP)
+  Name: (WIP)
+  Description: (WIP)
+  ExtraDescription2: (WIP)
+CloseMemory:
+  ExtraDescription1: (WIP)
+  Name: (WIP)
+  Description: (WIP)
+  ExtraDescription2: (WIP)
+Danxiangsi:
+  Name: (WIP)
+  Description: (WIP)
+IceMatrix:
+  Description: "Когда {PlayerName} накладывает |Холод| на врага, даёт {Value1} |Ледяной\
+    \ брони|.\nНакладывает |Холод| на всех врагов."
+  Name: Замороженная матрица
+QinchunPanni:
+  Description: (WIP)
+  ExtraDescription1: (WIP)
+  ExtraDescription2: (WIP)
+  Name: (WIP)
+AliceBlockU:
+  Description: Даёт {Block} |Защиты|.
+  Name: (WIP)
+DeployShanghai:
+  Name: (WIP)
+  Description: (WIP)
+DeepFreeze:
+  Name: Танец сосулек
+  Description: "Наносит {Damage} урона всем врагам.\nНакладывает |Холод| на всех врагов.\
+    \ Если враг уже под статусом |Холода|, вместо этого накладывает |Глубокую заморозку|."
+FairyOnIce:
+  Name: Феи на льду
+  Description: "Возьмите {Value1:plural one='% карту' other='% карты'}.\nЗа каждого\
+    \ врага со статусом |Холода|, {PlayerName} получает {Value2:plural one='% |Уворот|'\
+    \ other='% |Уворота|'}. "
+ColdChain:
+  Name: Холодная логистика
+  Description: Выберите до {Value1} {Value1:plural one='карту' other='карт'} из стопки
+    добора и положите {Value1:plural one='её' other='их'} в руку. {Value1:plural one='Эта
+    карта |Оставляется|' other='Эти карты |Оставляются|'}.
+Hademan:
+  Name: (WIP)
+  Description: (WIP)
+ZiwoCard:
+  Name: Бескорыстная любовь
+  Description: (WIP)
+MrBulb:
+  Name: (WIP)
+  Description: (WIP)
+LoveFire:
+  Name: (WIP)
+  Description: (WIP)
+  ExtraDescription1: (WIP)
+PerfectCrime:
+  Name: (WIP)
+  Description: (WIP)
+DanmakuMBTI:
+  Name: (WIP)
+  Description: (WIP)
+  ExtraDescription1: (WIP)
+AliceAttackB:
+  Name: (WIP)
+  Description: Наносит {Damage} урона.
+ZeroK:
+  Name: Абсолютный ноль
+  Description: "Увеличивает урон от накладывания |Холода| в {Value1:plural one='%\
+    \ раз' other='% раза'}.\nНакладывает |Холод| на всех врагов."
+ForeverCool:
+  Name: Вечно холодная сезонная фантазия
+  Description: "Когда |a:Активный навык| or |u:Ультимативный навык| |Соратника| использован,\
+    \ Накладывает |Холод| на случайного врага.\nКогда на врага накладывается |Холод|,\
+    \ случайный |Соратник| в руке получает 1 |Единство|."
+XinzuoTest:
+  Name: (WIP)
+  Description: (WIP)
+KoishiMove:
+  Name: (WIP)
+  Description: (WIP)
+KoishiMoveDefense:
+  Name: (WIP)
+  Description: (WIP)
+UpgradeDoll:
+  Name: (WIP)
+  Description: (WIP)
+DeployPenglai:
+  Name: (WIP)
+  Description: (WIP)
+TriggerAllPassive:
+  Name: (WIP)
+  Description: (WIP)
