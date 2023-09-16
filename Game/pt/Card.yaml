@@ -32,6 +32,7 @@ ReimuWeiyan:
 FengyinYaomo:
   Description: "Cause {Damage} de dano.\nAplique {Value1} de |Fraqueza| e |Vulnerável|."
   Name: Círculo Matador de Dragões
+  FlavorText: 'Alvos: Yachie Kicchou, Iizunamaru Megumu, Komeiji…'
 ReimuAttackR:
   Description: Cause {Damage} de dano.
   Name: Amuleto Hakurei
@@ -55,8 +56,10 @@ Zhuizongfu:
     \ one='' other='es'}.\nSe {PlayerName} tiver |Poder de Fogo Temporário|, ganhe\
     \ {Mana}."
   Name: Amuleto Teleguiado
+  FlavorText: “Parece que Poder de Fogo Temporário e Poder de Fogo não são a mesma
+    coisa.” Um jogador iniciante pode ter pensado nisso.
 ReverseJiejie:
-  Description: Sempre que {PlayerName} perder um buff. ganhe {Value1} de |Barreira|.
+  Description: Sempre que {PlayerName} perder um buff, ganhe {Value1} de |Barreira|.
   Name: Limite Reverso
 ReimuBlockW:
   Name: Proteção Danmaku
@@ -81,8 +84,8 @@ ShengtianKick:
   FlavorText: Uma técnica que faz as pessoas sorrirem se executada com maestria.
 WunvKongwu:
   Name: Dança Aérea da Donzela
-  Description: "Ganhe {Value1} de |Esquiva|.\nCompre {Value2:plural one='% carta'\
-    \ other='% cartas'}."
+  Description: "Ganhe {Value1} de |Desvio|.\nCompre {Value2:plural one='% carta' other='%\
+    \ cartas'}."
   FlavorText: Não tente fazer isso em casa (a menos que você seja um espírito).
 LingfuHuti:
   Name: Proteção do Talismã
@@ -109,10 +112,13 @@ OverJingjie:
   Name: Acima do Reino
   Description: Escolha uma de {Value1} cartas de ataque aleatórias e adicione à sua
     mão. Seu |Custo Temporário| é de {Mana}.
+  FlavorText: Esperamos que não hajam fendas dimensionais nem estrelas cadentes acima
+    do reino.
 SmallPanding:
   Name: Hitbox Pequena
-  Description: "Ganha {Value1} de |Esquiva|.\nGanha {Value2} |Vulnerável|."
+  Description: "Ganhe {Value1} de |Desvio|.\nGanhe {Value2} de |Vulnerável|."
   UpgradedDescription: Ganhe {Value1} de |Desvio|.
+  FlavorText: “Está tudo bem desde que minha hitbox não seja atingida!”
 DanmuDuijue:
   Name: Duelo de SpellCard
   Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} de |Reflexo|.\nEsta carta\
@@ -123,24 +129,28 @@ ReimuLucky:
   Name: Golpe de Sorte
   Description: "Ganhe {Value1} |Amuleto|.\nGanhe {Value2} <sprite=\"Point\" name=\"\
     Gold\">."
+  FlavorText: Sempre há alguém tentando tirar a sorte grande infinitamente.
 ShensheRichang:
   Name: Vida Cotidiana
-  FlavorText: Hoje é o dia da folga.
+  FlavorText: Hoje é o dia de folga.
   Description: "Ganha {Value1} de vida.\nConverte todo |Bloqueio| de {PlayerName}\
     \ em |Barreira|."
 TwoBalls:
-  Name: Orbes Balanceados
-  Description: Adicione {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}
-    em sua mão.
+  Name: Orbes em equilíbrio
+  Description: Adicione {Value1} |Orbe Yin-Yang| em sua mão.
+  UpgradedDescription: Adicione {Value1} |Orbe Yin-Yang| em sua mão. {Value1:plural
+    one='Ela custa' other='Elas custam'} {Mana} a menos.
 HuanxiangBlock:
   Name: Borda da Fantasia
   Description: Sempre que uma carta é |Exilada|, ganhe {Value1} de |Bloqueio|.
+  FlavorText: Reimu ficou muito ocupada desde que os romances Isekai se tornaram populares
+    no mundo exterior.
 JiejieAttack:
   Name: Golpe com Barreira
   Description: "Cause {damage} de dano.\nCause dano adicional igual a |Barreira| de\
     \ {PlayerName}. ({ShieldDamage})"
-  NonbattleDescription: "Cause {damage} de dano.\nCause dano adicional igual a {PlayerName}\
-    \ |Barreira|."
+  NonbattleDescription: "Cause {damage} de dano.\nCause dano adicional igual a |Barreira|\
+    \ de {PlayerName}."
 YakongDianxue:
   Name: Fenda do Ponto Dimensional
   Description: "Cause {Damage} de dano.\nSempre que {PlayerName} perder um buff, retorne\
@@ -148,9 +158,9 @@ YakongDianxue:
   FlavorText: É uma apunhalada!
 QinggeManwu:
   Name: Valsa da Donzela
-  Description: Compre {Value1} carta{Value1:plural one='e |Melhore-a|' other='s e
+  Description: Compre {Value1} carta{Value1:plural one=' e |Melhore-a|' other='s e
     |Melhore-as|'} até o fim do combate.
-  UpgradedDescription: "Compre {Value1} carta{Value1:plural one='e |Melhore-a|' other='s\
+  UpgradedDescription: "Compre {Value1} carta{Value1:plural one=' e |Melhore-a|' other='s\
     \ e |Melhore-as|'} até o fim do combate.\nPara cada carta já |Melhorada| comprada,\
     \ ganha {Value2} de |Barreira|."
 FreeFly:
@@ -160,21 +170,28 @@ FreeFly:
     em Gensokyo.
 YinyangXueyin:
   Name: Runa Yin-Yang
-  Description: "Perca {Value2} de vida.\nSempre que {PlayerName} jogar |Orbe Yin-Yang|,\
-    \ ganhe {Value1} de |Poder de Fogo Temporário| e {Value1} de |Espírito Temporário|."
+  Description: "Perca {Value2} de vida.\nAdicione um |Orbe Yin-Yang| para a mão.\n\
+    Sempre que {PlayerName} jogar |Orbe Yin-Yang|, ganhe {Value1} de |Poder de Fogo\
+    \ Temporário| e {Value1} de |Espírito Temporário|."
+  FlavorText: Se você não pode pagar por ingredientes de feitiçaria, terá que pagar
+    com seu sangue.
 EvilTuiZhi:
   Name: Exterminador do Mal
   Description: "{Value1:plural one='A próxima % carta de ataque jogada causa' other='As\
     \ próximas % cartas de ataque jogadas causam'} dano duplo."
 TaijiLiangyi:
   Name: O Nascimento do Yin-Yang
-  Description: No começo do turno de {PlayerName}, se não possuir nenhum |Orbe Yin-Yang|
-    na mão, adicione um |Orbe Yin-Yang|.
+  Description: "Adicione um |Orbe Yin-Yang| para a mão.\nNo começo do turno de {PlayerName},\
+    \ se não possuir nenhum |Orbe Yin-Yang| na mão, adicione um |Orbe Yin-Yang| à\
+    \ mão."
 Wunvyu:
   Name: Orbe Maligno de Hakurei
-  Description: "Cause {Damage} de dano {Value1} vezes.\n|Enquanto na mão|: Sempre\
-    \ que uma carta for comprada, exceto a compra inicial do turno, aumenta o dano\
+  Description: "Cause {Damage} de dano {Value1} vezes.\n|Enquanto na mão|: com exceção\
+    \ da compra inicial do turno, sempre que uma carta for comprada, aumente o dano\
     \ desta carta em {Value2} nesse combate."
+  FlavorText: 'Como disse certa vez um antigo filósofo: "Dê-me uma alavanca longa
+    o suficiente e um ponto de apoio para colocá-la, e poderei mover até os Orbes
+    Mais Malignos de Hakurei, com 999.999 cartas compradas."'
 Changzhizhen:
   Name: Borda Permanente
   Description: "|No final do turno|: Cause {Value1} de dano a um inimigo aleatório.\n\
@@ -182,8 +199,9 @@ Changzhizhen:
     \ em {Value2} neste combate."
 MingzhuAntou:
   Name: Borda Secreta
-  Description: Escolha uma de {Value1} cartas de defesa aleatórias e adicione à sua
-    mão. Seu |Custo Temporário| é de {Mana}.
+  Description: "Cause {Damage} de dano a cada inimigo.\nEscolha 1 de {Value1} |Orbes\
+    \ Yin-Yang de Jade Arco-Íris| para adicionar à mão.\nPara cada |Orbe Yin-Yang|\
+    \ no |campo de batalha|, {SelfName} custa {Mana} a menos."
 Misfortune:
   Name: Infortúnio
   Description: '|No final do turno|: Perca {Value1} pontos de vida para cada 100 <sprite="Point"
@@ -194,18 +212,23 @@ Lunatic:
   Name: Loucura
 MomentPower:
   Name: Fenda Dimensional Instantânea
-  Description: Sempre que {PlayerName} ganha |Poder de fogo temporário| ou |Espírito
+  Description: Sempre que {PlayerName} ganhar |Poder de fogo temporário| ou |Espírito
     Temporário|, converta {Value1} dele em |Poder de Fogo| ou |Espírito|, respectivamente.
+  FlavorText: À medida que a velocidade do “Poder de Fogo Temporário” se aproxima
+    da velocidade da luz, sua massa aumentará, transformando-o em “Poder de Fogo”.
 ReimuFestival:
   Name: Dança da Sakura Sagrada
-  Description: No início do turno de {PlayerName}, ganhe {Value1} |Poder de Fogo Temporário|.
+  Description: "Ganhe {Value1} de |Poder de fogo temporário|.\nNo início do turno\
+    \ de {PlayerName}, ganhe {Value1} |Poder de Fogo Temporário|."
+  FlavorText: A atração paga do Santuário Hakurei é muito popular.
 ReimuFreeAttack:
   Name: Fantasia Passageira
   Description: "Ganhe {Block} de |Bloqueio|.\n{Value1:plural one='A próxima % carta\
     \ de ataque jogada custa' other='As próximas % cartas de ataque jogadas custam'}\
     \ de {Mana}."
 ReimuShrine:
-  Description: No início do turno de {PlayerName}, ganhe {Value1} de |Espírito Temporário|.
+  Description: "Ganhe {Value1} de |Espírito Temporário|.\nNo início do turno de {PlayerName},\
+    \ ganhe {Value1} de |Espírito Temporário|."
   Name: Feira do Templo Hakurei
 Xiaozhuo:
   Name: Bêbado
@@ -216,16 +239,20 @@ SuikaOut:
 ReimuHeavyAttack:
   Name: Punho Hakurei
   Description: "Cause {Damage} de dano.\n|Poder de fogo| aumenta o dano de {SelfName}\
-    \ em {Value1} vez{Value1:plural um='' outros='es'}."
+    \ em {Value1} vez{Value1:plural one='' other='es'}."
+  FlavorText: '"Omae wa mou shindeiru!"'
 ReimuDrink:
   Name: Oferenda de Saquê
-  Description: "Ganhe {Value1} pontos de vida.\nAdicione {Value2} |Bêbado| à sua mão."
-  UpgradedDescription: "Ganhe {Value1} pontos de vida.\nGanhe {Value1} |Poder de fogo\
-    \ temporário|.\nAdicionar {Valor2} |Bêbado| à sua mão."
+  Description: "Ganhe {Value1} de vida.\nAdicione {Value2} |Bêbado| à sua mão."
+  UpgradedDescription: "Ganhe {Value1} de vida.\nGanhe {Value1} de |Poder de fogo\
+    \ temporário|.\nAdicione {Valor2} |Bêbado| à sua mão."
 HuijuQiankun:
   Description: "|Exile| cada carta da mão.\nadicione um |Orbe Yin-Yang| para a mão\
     \ e aumente seu dano em {Value1} para cada carta |Exilada| dessa forma."
   Name: Confluência Yin-Yang
+  UpgradedDescription: "|Exile| cada carta da mão.\nadicione um |Orbe Yin-Yang| para\
+    \ a mão e aumente seu dano e sua |Barreira| em {Value1} para cada carta |Exilada|\
+    \ dessa forma."
 QiqingYishi:
   UpgradedDescription: Adicione um |Arco-íris| e um |Radiante| para a mão.
   Name: Oração do Sol
@@ -234,11 +261,16 @@ DanceAroundLake:
   Description: Sempre que uma carta for |Exilada|, compre {Value1:plural one='% carta'
     other='% cartas'}.
   Name: Dança à Beira do Lago
+  FlavorText: Como um madrugador, mantive-me imerso na fria, implacável, mas apaixonada
+    dança. A chuva veio logo em seguida e antes que eu pudesse perceber, a figura
+    da sacerdotisa do santuário não estava em lugar algum.
 AutoQumobang:
   Description: "|Enquanto na mão|: Compre {Value1:plural one='% carta' other='% cartas'}\
     \ a mais durante cada etapa de compra.\nQuando {SelfName} ser |Retida| {Value2}\
     \ vezes, |Exile-a|."
   Name: Vara de Purificação Furiosa
+  FlavorText: '"As Varas de Purificação Autônomas estão substituindo o trabalho das
+    sacerdotisas." —— <Jornal Bunbunmaru· Edição de Economia>'
 SenluoJiejie:
   Description: "Ganhe {Shield} de |Barreira|.\nNo início do próximo turno de {PlayerName},\
     \ perca toda a |Barreira| e cause o mesmo valor em dano a cada inimigo."
@@ -247,39 +279,49 @@ Jiangshen:
   Name: Meditação Fiel
   Description: "Sempre que {PlayerName} adicionar uma carta durante este combate,\
     \ |Melhore-a|.\nAdicione {Value1} |Orbe Yin-Yang| para a mão."
+  FlavorText: '"Eu rezo aos deuses para que a primeira carta do deck seja Quebrando
+    Fronteiras"'
 ReimuInstant:
   Description: "Cause {Damage} de dano.\nTermine o turno. {PlayerName} faz um turno\
     \ extra.\n|Limite de Tempo| {Mana}."
   Name: '"Selo do Sonho -Centelha-"'
   ExtraDescription1: "Cause {Damage} de dano.\nTermine o turno. {PlayerName} faz um\
     \ turno extra.\n|d:Limite de Tempo| {Mana}."
+  FlavorText: 'Avaliação do cliente: "A carta mais escolhida pelo efeito de Acima
+    do Reino."'
 GapLady:
-  Description: "Perca {Value1} pontos de vida.\nGanhe {Mana}.\nCompre {Value2} cartas."
+  Description: "Perca {Value1} de vida.\nGanhe {Mana}.\nCompre {Value2} cartas."
   Name: Dama da Fenda
 ChunseXiaojing:
   Name: Caminho Colorido da Primavera
   Description: "Ganhe {Mana}.\nCompre {Value1} carta{Value1:plural one='' other='s'}.\n\
-    |Débito| {Value2}"
+    |Débito| {Value2}."
 ChuanyueJiejie:
   Name: Cruzando a Fronteira
   Description: "Ganhe {Shield} de |Barreira|.\nRetorne uma carta |Exilada| para a\
     \ mão."
+  FlavorText: “Ainda não usei ‘Golpe de Sorte’? Vou guardar isso para mais tarde então.”
 MarisaAttackB:
   Name: Laser Ilusório
+  Description: Cause {Damage} de dano.
+  FlavorText: “Se você se esquivar, o cara que está atrás será acertado!” (sqn)
 OutInGap:
   Description: "Escolha 1 de {Valor1} cartas |p:completamente aleatórias| para adicionar\
-    \ à mão. Ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.\nEstas\
-    \ |e:cartas alternativas| ignoram a mana total, cor de mana e restrições de personagem."
+    \ à mão. Ela |custará temporariamente| {Mana} e tem |Exilar| e |Etéreo|."
   Name: Quebrando Fronteiras
+  DetailText: Estas |e:cartas alternativas| ignoram o custo total, cor de mana e restrições
+    de personagem. {SelfName} não pode ser produzido por este efeito.
+  FlavorText: Yukari Yakumo proíbe usar Quebrando Fronteiras para criar mais Quebrando
+    Fronteiras.
 BoliDajiejie:
   Name: A Grande Barreira Hakurei
-  Description: Para o resto do combate, o |Bloqueio| de {PlayerName} é convertido
-    em |Barreira|.
+  Description: Por todo o combate, o |Bloqueio| de {PlayerName} é convertido em |Barreira|.
 KuosanJiejie:
   Description: "|Para cada <sprite=\"ManaSprite\" name=\"W\"> gasto|: Ganhe {Block}\
     \ de |Bloqueio|.\n|Para cada <sprite=\"ManaSprite\" name=\"R\"> gasto|: Cause\
     \ {Damage} de dano a cada inimigo."
   Name: Expandir Fronteira
+  FlavorText: Eu preciso de muitas Manas Filosofais, e preciso disso AGORA!
 HuanxiangTouying:
   Name: Projeção da Fantasia
   Description: "Ganhe {Mana}.\nEscolha 1 de {Value1} cartas aleatórias para adicionar\
@@ -302,10 +344,12 @@ KuosanLingfu:
     \ de dano não bloqueado causado desta forma."
 Qingshan:
   Name: A Última Moradia
-  Description: "Ganhe {Block} de |Bloqueio|.\n|Quando exilado|: Ganhe {Mana}."
+  Description: "Ganhe {Block} de |Bloqueio|.\n|Exile| {Value1} {Value1:plural one='|Infortúnio|\
+    \ aleatório e/ou carta de status' other='|Infortúnios| aleatórios e/ou cartas\
+    \ de status'} da mão."
 ReimuSakura:
   Name: Selo da Fantasia Florescente
-  Description: "Cause {Damage} de dano a cada inimigo.\nGanhe {Value1} pontos de vida.\n\
+  Description: "Cause {Damage} de dano a cada inimigo.\nGanhe {Value1} de vida.\n\
     |Crescimento|: Custa {Mana} a menos."
 IceBarrier:
   Name: Barreira de Gelo
@@ -316,3 +360,84 @@ Boundary:
 Shoot:
   Name: Disparo
   Description: Cause {Damage} de Dano.
+ShuihuoCard:
+  Description: "Cause {Damage} de dano.\nGanhe {Block} de |Bloqueio|.\n|Quando Retido|:\
+    \ Aumenta o dano e |Bloqueio| de {SelfName} em {Value1} até o final do combate."
+  Name: Orbe de Água e Fogo
+MarisaBlockB:
+  Name: Defesa de Poeira Estelar
+  Description: Ganhe {Block} de |Bloqueio|.
+  FlavorText: Se um meteorito cair em Gensokyo, já sabemos a quem recorrer.
+CraftPotion:
+  Name: Poção Artesanal
+  UpgradedDescription: "Adicione {Value1} |Poção Instável| para a pilha de compras.\n\
+    Compre {Value2} carta{Value2:plural one='' other='s'}.\n|Estreia|: Compre mais\
+    \ uma carta."
+  ExtraDescription1: "Adicione {Value1} |Poção Instável| para a pilha de compras.\n\
+    Compre {Value2} carta{Value2:plural one='' other='s'}.\n|d:Estreia|: Compre mais\
+    \ uma carta."
+  Description: "Adicione {Value1} |Poção Instável| para a pilha de compras.\nCompre\
+    \ {Value2} carta{Value2:plural one='' other='s'}."
+RedLaser:
+  Description: "Cause {Damage} de dano.\n|Sobrecarga {Value2}|: Cause {UpgradeDamage}\
+    \ de dano {AttackTimes} vezes e aplica {Value1} de |Vulnerável| em vez disso."
+  UpgradedDescription: "Cause {Damage} de dano {AttackTimes} vezes.\nAplique {Valor1}\
+    \ de |Vulnerável|."
+  FlavorText: Uma das contramedidas para incidentes de inverno.
+  Name: Laser Inflamável
+SatelliteIllusion:
+  Description: "Cause {Damage} de dano.\nAdicione |{Value1:plural one='% Astrologia'\
+    \ other='% Astrologias'}| para a mão."
+  Name: Satélite ilusório
+DropBook:
+  Description: "Ganhe {Block} de |Bloqueio|.\nAdicione |{Value1:plural one='% Astrologia'\
+    \ other='% Astrologias'}| para a mão."
+  Name: Rebelião Ortodoxa
+  FlavorText: “Não tenho interesse em magia tradicional, por favor, não volte!”
+DarkSatellite:
+  Name: Satélite Negro
+  FlavorText: Combater balas com balas!
+  Description: "Ganhe {Block} de |Bloqueio|.\nSe a última carta jogada é da cor preta,\
+    \ compre {Value1:plural one='% carta' other='% cartas'}."
+ShanyuCard:
+  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Shield} de |Barreira|."
+  Name: Orbe da Montanha e Chuva
+YinyangQueen:
+  Description: '{FriendP}Ganhe {Value2} de |Bloqueio| e |Barreira|.'
+  ExtraDescription1: "{FriendA}Adicione {Value1} |{Value1:plural one='Orbe Yin-Yang\
+    \ de Jade Arco-Íris' other='Orbes Yin-Yang de Jade Arco-Íris'}| para a mão."
+  ExtraDescription2: "{FriendU}Durante o resto deste combate, os efeitos de qualquer\
+    \ |Orbe Yin-Yang| são dobrados. Adicione imediatamente {Value1} |{Value1:plural\
+    \ one='Orbe Yin-Yang de Jade Arco-Íris' other='Orbes Yin-Yang de Jade Arco-Íris'}|\
+    \ para a mão."
+  Name: Misumaru, artesã habilidosa
+MarisaBlockR:
+  Description: Ganhe {Block} de |Bloqueio|.
+  Name: Defesa de vassoura
+  FlavorText: 'Funcionalidades da vassoura: 1-Voo 2-Defesa 3-Equipada com uma bazuca
+    4-Qualquer coisa, menos varrer o chão.'
+Potion:
+  FlavorText: AVISO! Poções podem explodir a qualquer momento!
+  Name: Poção Instável
+  Description: '|Quando {SelfName} entra na mão|: Ganhe {Mana}, cause {Damage} de
+    dano a um inimigo aleatório e |Exile| {SelfName}.'
+MarisaAttackR:
+  Description: Cause {Damage} de dano.
+  Name: Impacto de Estrela Quente
+  FlavorText: Posso confirmar que não é um cometa.
+MarisaDraw:
+  Name: Improvisação
+  Description: "Compre {Value1:plural one='% carta' other='% cartas'}.\nSe {PlayerName}\
+    \ estiver em |Fervor|, ganhe {Mana}."
+  FlavorText: '"Confie em mim, eu tenho um plano."'
+MojingShanjie:
+  Name: Borda de Exorcismo
+  Description: Escolha uma de {Value1} cartas de defesa aleatórias para adicionar
+    à mão. seu custo |temporariamente| é {Mana}.
+FengleiCard:
+  Description: Cause {Damage} de dano a cada inimigo {Value1} vez{Value1:plural one=''
+    other='es'}.
+  Name: Orbe de Vento e Trovão
+DoubleDajiejie:
+  Name: Grande Barreira Dupla
+  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {shield} de |Barreira|."
