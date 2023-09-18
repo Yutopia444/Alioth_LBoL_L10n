@@ -195,6 +195,7 @@ Changzhizhen:
   Description: |-
     |回合结束时|：对随机敌人造成 {Value1} 点伤害。
     |手牌中|：当{PlayerName}失去一个正面效果时，伤害提高 {Value2} 点。
+  DetailText: 主动打出{SelfName}没有任何效果，只是|放逐|掉这张牌以空出一个手牌位置。
 
 ReimuLucky:
   Name: 吉签开运
@@ -1197,7 +1198,7 @@ SakuyaFuneral:
   Name: 过早的埋葬
   Description: |-
     失去 {Value1} 点生命。
-    从|放逐|区选择一张牌移回手中，它暂塑为{Mana}。
+    从|放逐|区选择一张牌移回手中，它|暂塑|为{Mana}。
   FlavorText: 「我还没死呢，大小姐。」
 
 FakeTimeline:
@@ -1853,7 +1854,7 @@ KoishiAttackB:
   Description: 造成 {Damage} 点伤害。
 
 KoishiBlockG:
-  Name: 蔷薇花谢
+  Name: 花团锦簇
   Description: 获得 {Block} 点|格挡|。
 
 BenwoCard:
@@ -1875,6 +1876,18 @@ ZiwoCard:
     恢复自我，离开其它|精神状态|。
     |直觉|：改为进入|本我|。
 
+BecomeBenwo:
+  Name: 进入本我
+  Description: 进入|本我|。
+
+BecomeChaowo:
+  Name: 进入超我
+  Description: 进入|超我|。
+
+BecomeDunwu:
+  Name: 进入顿悟
+  Description: 进入|顿悟|。
+
 XinzuoTest:
   Name: 星座测试
   Description: |-
@@ -1882,9 +1895,9 @@ XinzuoTest:
     |直觉|：对所有敌人施加 {Value1} |星落|。
 
 FlowerGone:
-  Name: 花没了
+  Name: 空想花园
   Description: |-
-    (WIP)获得 {Block} 点|格挡|。
+    获得 {Block} 点|格挡|。
     |超我中|：获得 {Value1} 点灵力，放逐{SelfName}。
   ExtraDescription1: |-
     获得 {Block} 点|格挡|。
@@ -1921,7 +1934,7 @@ QinchunPanni:
   Name: 青春期叛逆
   Description: |-
     (WIP)|不在本我中|：对生命值最低的敌人造成 {Damage} 点伤害。
-    |本我中|：获得 {Block} 点|格挡|。
+    |本我中|：获得 {Block} 点|格挡|，抽 {Value1} 张牌。
   ExtraDescription1: |-
     |d:不在本我中：对生命值最低的敌人造成 {Damage} 点精准的伤害。|
     |本我中|：获得 {Block} 点|格挡|。
@@ -1947,20 +1960,12 @@ KoishiMoveDefense:
 Danxiangsi:
   Name: 单相思
   Description: |-
-    (WIP)获得 {Value1} 点|火力|。
+    获得 {Value1} 点|火力|。
     |保留时|：获得的|火力|提高 {Value2} 点。
 
-Hademan:
-  Name: 哈德曼的妖怪少女
-  Description: |-
-    (WIP)打出一张总费用为0的卡牌后，移除一张随机手牌的随机费用。
-    移除一张随机手牌的随机费用，重复 {Value1} 次。
-
-MrBulb:
-  Name: 闪耀的灯泡先生
-  Description: |-
-    (WIP)本回合累计进入过三种不同的心境后费用为<sprite="ManaSprite" name="0">。
-    对随机敌人造成 {Damage} 点伤害，抽 {Value1} 张牌，获得{Mana}。
+DanmakuMBTI:
+  Name: 弹幕MBTI
+  Description: (WIP)
 
 LoveFire:
   Name: 恋之埋火
@@ -1973,22 +1978,47 @@ LoveFire:
     |每额外支付|{Mana}：伤害提高 {Value1} 点。
     记录打出时支付的法力，下一次打出时返还记录的法力。
 
+BenwoAbility:
+  Name: 本我的解放
+  Description: 打出卡牌后不离开|本我|，改为在回合结束时离开|本我|。
+  UpgradedDescription: |-
+    下回合开始时进入|本我|。
+    打出卡牌后不离开|本我|，改为在回合结束时离开|本我|。
+
 BabyDream:
   Name: 胎儿之梦
-  Description: (WIP)所有|基本|卡的费用暂塑为{Mana}，并附带|回响|。
+  Description: 所有|基本|卡的费用暂塑为{Mana}，并附带|回响|。
 
 PerfectCrime:
   Name: 完美作案
   Description: |-
-    (WIP)窃取目标的|灵力|、|擦弹|、|护身符|、|光学迷彩|、|天衣无缝|。
+    窃取目标的|灵力|、|擦弹|、|护身符|、|光学迷彩|、|天衣无缝|。
     造成 {Damage} 点伤害。
 
-DanmakuMBTI:
-  Name: 弹幕MBTI
+ChaowoAbility:
+  Name: 超我的抑制
+  Description: 离开|超我|时随机将一张|进入本我|或|进入顿悟|加入手牌。
+  UpgradedDescription: |-
+    下回合开始时进入|超我|。
+    离开|超我|时随机将一张|进入超我|或|进入顿悟|加入手牌。
+
+WuyishiDNA:
+  Name: 无意识的基因
   Description: |-
-    (WIP)选择两个法力颜色，本场战斗内所有的|念想|只会随机出指定的颜色。
-    将 {Value1} 张|念想|加入抽牌堆。
-  ExtraDescription1: 选择两种颜色
+    进入|顿悟|，结束{PlayerName}的回合，进行一个额外的回合。
+    {PlayerName}的回合结束时，如果不处于|顿悟|，死亡。
+
+MrBulb:
+  Name: 闪耀的灯泡先生
+  Description: |-
+    (WIP)本回合累计进入过三种不同的心境后费用为<sprite="ManaSprite" name="0">。
+    对随机敌人造成 {Damage} 点伤害，抽 {Value1} 张牌，获得{Mana}。
+
+Hademan:
+  Name: 哈德曼的妖怪少女
+  Description: |-
+    (WIP)打出一张总费用为0的卡牌后，移除一张随机手牌的随机费用。
+    移除一张随机手牌的随机费用，重复 {Value1} 次。
 
 AliceAttackW:
   Name: 未来文乐
@@ -2718,7 +2748,7 @@ BaitianCard:
 
 NueExile:
   Name: 平安时代的黑云
-  Description: 选择一张手牌|放逐|，获得一张随机的牌，它暂塑为{Mana}。
+  Description: 选择一张手牌|放逐|，获得一张随机的牌，它|暂塑|为{Mana}。
 
 HuiyinRetain:
   Name: 一条归桥
@@ -3109,15 +3139,6 @@ PManaCard:
   Name: 幻虹
   Description: 获得{Mana}。
 
-Thought:
-  Name: 念想
-  Description: |-
-    |进入手中时|：|放逐|{SelfName}。
-    将一张法力费用合为 {Value1} 的随机的卡牌加入手牌，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
-  UpgradedDescription: |-
-    |进入手中时|：|放逐|{SelfName}。
-    将一张法力费用合为 {Value1} 的随机|已升级|卡牌加入手牌，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
-
 MoonPurify:
   Name: 除秽
   Description: |-
@@ -3284,7 +3305,7 @@ NewsPositive:
   Description: |-
     获得 {Value1}<sprite="Point" name="Power">。
     |消耗品【{DeckCounter}】|
-  FlavorText: 【快讯！#灵梦解决光耀异变#】本报驻永远亭记者报道，当地时间晚9点，第11届月度万象展展出的秘宝蓬莱玉枝离奇失窃。据悉，博丽神社巫女博丽灵梦……
+  FlavorText: 【快讯！#灵梦解决光耀异变#】本报驻永远亭记者报道，当地时间晚9点，第11届月都万象展展出的秘宝蓬莱玉枝离奇失窃。据悉，博丽神社巫女博丽灵梦……
 
 NewsNegative:
   Name: 负面报道
