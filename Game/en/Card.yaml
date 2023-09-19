@@ -106,8 +106,8 @@ TwoBalls:
     \ to the hand."
   Name: Balanced Orbs
   UpgradedDescription: Add {Value1:plural one='% |Yin-Yang Orb|' other='% |Yin-Yang
-    Orbs|'} to the hand. {Value1:plural one='It costs' other='They cost'} {Mana} less
-    to play.
+    Orbs|'} to the hand. {Value1:plural one='It |temporarily costs|' other='They |temporarily
+    cost|'} {Mana} less to play.
 ShensheRichang:
   Description: |-
     Gain {Value1} life.
@@ -120,6 +120,7 @@ Changzhizhen:
     |While in hand|: Whenever {PlayerName} loses a buff, increase {SelfName}'s damage by {Value2} this combat.
 
   Name: Permanent Border
+  DetailText: Playing {SelfName} has no effect other than |Exiling| it from the hand.
 MingzhuAntou:
   Description: "Deal {Damage} damage to each enemy.\nChoose 1 of {Value1} |Rainbow\
     \ Jade Yin-Yang Orbs| to add to the hand.\nFor each |Yin-Yang Orb| on the |battlefield|,\
@@ -359,7 +360,7 @@ ReimuSakura:
   Description: |-
     Deal {Damage} damage to each enemy.
     Gain {Value1} life.
-    |Growth|: Costs {Mana} less.
+    |Growth|: Costs {Mana} less until end of combat.
 
   Name: Blossoming Fantasy Seal
 MarisaAttackB:
@@ -571,7 +572,7 @@ KoishiAttackG:
 KoishiBlockB:
   Description: 'Gain {Block} |Block|.'
 
-  Name: Selfless Love
+  Name: Dreaming
 KoishiAttackB:
   Description: 'Deal {Damage} damage.'
 
@@ -579,7 +580,7 @@ KoishiAttackB:
 KoishiBlockG:
   Description: 'Gain {Block} |Block|.'
 
-  Name: Roses' Withering
+  Name: Vivd Flower Wreath
 BailianJingang:
   Name: Entrench Body
   Description: |-
@@ -1299,7 +1300,7 @@ ZhenmiaowanAttack:
   UpgradedDescription: "Deal {Damage} damage.\nCards cost {Mana} less this turn."
 BaitianCard:
   Description: "Gain {Block} |Block|.\nReturn a card from the discard pile to the\
-    \ top of the draw pile. It costs {Value1} random mana less."
+    \ top of the draw pile. It |temporarily costs| {Value1} random mana less."
   Name: Transmigration of Hieda
 NueExile:
   Description: "|Exile| a card from the hand.\nAdd a random card to the hand. It |temporarily\
@@ -2184,7 +2185,8 @@ FairyOnIce:
 CirnoFestival:
   Name: Banquet Infiltration
   Description: "Gain {Value1} |Graze|.\n{Value2} random card{Value2:plural one=''\
-    \ other='s'} in the hand cost{Value2:plural one='s' other=''} 1 random mana less."
+    \ other='s'} in the hand |temporarily cost{Value2:plural one='s' other=''}| 1\
+    \ random mana less."
 DeepFreeze:
   Name: Icicle Dance
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
@@ -2568,23 +2570,32 @@ KoishiMoveAttack:
   Name: Look at This
 Hademan:
   Description: (WIP)
+  Name: Hartmann's Youkai Girl
 MrBulb:
   Description: (WIP)
+  Name: Mr. Lightbulb
 DoubleActiveTrigger:
   Description: (WIP)
+  Name: Double Activation
 TriggerAllPassive:
   Description: (WIP)
+  Name: Activate Passives
 KoishiMove:
   Description: (WIP)
   Name: Act of Unconscious
 XinzuoTest:
   Description: (WIP)
+  Name: Zodiac Test
 FlowerGone:
   Description: (WIP)
+  Name: Imaginary Garden
+  ExtraDescription1: (WIP)
 PickFlower:
   Description: (WIP)
+  Name: No Picking Road Flowers
 CloseMemory:
   Description: (WIP)
+  Name: Suppressed Memories
 QinchunPanni:
   Description: (WIP)
   Name: Adolescent Rebellion
@@ -2599,10 +2610,12 @@ BabyDream:
   Name: Embryo's Dream
 PerfectCrime:
   Description: (WIP)
+  Name: Perfect Crime
 DanmakuMBTI:
   Description: (WIP)
 GainDollSlot:
   Description: (WIP)
+  Name: Gain Doll Slot
 HistoryCard:
   Description: "This card has been removed in the current version.\nCard Id: {CardId}"
   Name: Archived Card
@@ -2615,6 +2628,8 @@ BenwoCard:
   Name: Id
 ZiwoCard:
   Name: Selfless Love
+  Description: "Deal {Damage} damage.\nReturn to Ego and exit the current |Mental\
+    \ State|.\n|Instinct|: Immediately enter |Id|."
 BenwoAbility:
   Name: Release of Id
 ChaowoAbility:
@@ -2637,3 +2652,33 @@ LoveFire:
   Description: "Deal {Damage} damage.\n|For each extra {Mana} spent|: Increase {SelfName}'s\
     \ damage by {Value1}.\nRecords mana spent for playing {SelfName}, and returns\
     \ mana recorded for the next time {SelfName}'s played."
+AliceAttackW:
+  Name: Futuristic Bunraku
+  Description: Deal {Damage} damage.
+DeployPenglai:
+  Name: Deploy Hourai Doll
+  Description: "|Deploy| a |e:Hourai Doll|.\nActivate its |Control Skill|."
+AliceBlockU:
+  Name: Danmaku Barrier
+  Description: Gain {Block} |Block|.
+BecomeBenwo:
+  Name: Id Entry
+  Description: Enter |Id|.
+BecomeChaowo:
+  Name: Super-Ego Entry
+  Description: Enter |Super-Ego|.
+BecomeDunwu:
+  Name: Epiphany Entry
+  Description: Enter |Epiphany|.
+AliceAttackB:
+  Name: Return Inanimateness
+  Description: Deal {Damage} damage.
+DeployShanghai:
+  Name: Deploy Shanghai Doll
+  Description: "|Deploy| a |e:Shanghai Doll|.\nActivate its |Control Skill|."
+UpgradeDoll:
+  Name: Maiden's Bunraku
+  Description: Upgrade a |e:Shanghai Doll|.
+SacrificeDoll:
+  Name: Suicide Pact
+  Description: "Choose a Doll to |Exit|.\nDeal {Damage} damage to each enemy."
