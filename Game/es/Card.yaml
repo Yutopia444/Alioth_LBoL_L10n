@@ -122,6 +122,8 @@ Changzhizhen:
   Description: "|Al final del turno|: Inflige {Value1} daño a un enemigo aleatorio.\n\
     |Al estar en la mano|: Cuando {PlayerName} pierde un beneficio, el daño de {SelfName}\
     \ aumenta en {Value2} en este combate."
+  DetailText: Jugar {SelfName} no tiene otro efecto que solo ser |Exiliado| de la
+    mano.
 ReimuLucky:
   Name: Golpe de Suerte
   Description: "Gana {Value1} |Amuleto|.\nGana {Value2} <sprite=\"Point\" name=\"\
@@ -140,8 +142,8 @@ TwoBalls:
   Description: "Agrega {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes Yin-Yang|'}\
     \ a la mano."
   UpgradedDescription: Agrega {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes
-    Yin-Yang|'} a la mano. {Value1:plural one='Cuesta' other='Cuestan'} {Mana} menos
-    para jugar.
+    Yin-Yang|'} a la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|
+    {Mana} menos para jugar.
 Misfortune:
   Name: Desafortunada
   Description: '|Al final del turno|: Pierde {Value1} de vida por cada 100 <sprite="Point"
@@ -278,7 +280,7 @@ ToolBlock:
   Name: Escudo Balístico
   Description: "Obtén {Block} de |Bloqueo|.\n|Limitado【{DeckCounter}】|"
 KoishiBlockB:
-  Name: Dormirse
+  Name: Soñando
   Description: Obtén {Block} de |Bloqueo|.
 EmpCard:
   Description: "Inflige {Damage} de daño.\nSi el objetivo es un |dron|, no puede actuar\
@@ -501,7 +503,7 @@ AyaNews:
   FlavorText: Un periódico tengu que muestra todo tipo de chismes y escándalos.
 KoishiBlockG:
   Description: Obtén {Block} de |Bloqueo|.
-  Name: Marchitamiento de Rosas
+  Name: Corona de Flores Vívidas
 ToolUpgrade:
   Name: Disquete
   Description: "|Mejora| cada carta de la mano hasta el final del combate.\n|Limitado【{DeckCounter}】|"
@@ -619,6 +621,8 @@ TaijiLiangyi:
   Description: "Agrega un |Orbe Yin-Yang| a la mano.\nAl comienzo de cada turno de\
     \ {PlayerName}, si no hay |Orbes Yin-Yang| en la mano, agrega un |Orbe Yin-Yang|\
     \ a la mano."
+  FlavorText: El movimiento que Reimu creó después de leer "¿Qué puedes hacer si tienes
+    una botella de gaseosa infinita?"
 HuanxiangTouying:
   Name: Proyección de Fantasía
   Description: "Gana {Mana}.\nElige 1 de {Value1} cartas al azar para agregar a la\
@@ -635,6 +639,8 @@ HuijuQiankun:
   UpgradedDescription: "|Exilia| cada carta de la mano.\nLuego, agrega un |Orbe Yin-Yang|\
     \ a la mano. Aumenta su daño en {Value1} y su |Barrera| por {Value2} por cada\
     \ carta |Exiliada| de esta manera."
+  FlavorText: Seleccionar todo, hacer clic derecho para eliminar y vaciar la papelera
+    de reciclaje.
 QiqingYishi:
   Name: Oración a la Luz del Sol
   Description: Agrega un |Arcoíris| a la mano.
@@ -721,7 +727,7 @@ GapLady:
 ReimuSakura:
   Name: Sello de Fantasía Floreciente
   Description: "Inflige {Damage} de daño a cada enemigo.\nCura {Value1} de vida.\n\
-    |Crecimiento|: Cuesta {Mana} menos."
+    |Crecimiento|: Cuesta {Mana} menos hasta el final del combate."
 Qingshan:
   Name: El Último Hogar de Uno
   Description: "Obtén {Block} de |Bloqueo|.\n|Exilia| {Value1} carta{Value1:plural\
@@ -1776,7 +1782,8 @@ HuiyinRetain:
 BaitianCard:
   Name: Transmigración de Hieda
   Description: "Obtén {Block} de |Bloqueo|.\nDevuelve una carta de la pila de descarte\
-    \ a la parte superior de la pila de robo. Cuesta {Value1} maná aleatorio menos."
+    \ a la parte superior de la pila de robo. |Cuesta temporalmente| {Value1} maná\
+    \ aleatorio menos."
 PoorAttack:
   Name: Caer en la Pobreza
   Description: "Pierde {Value1} <sprite=\"Point\" name=\"Gold\">.\nInflige {Damage}\
@@ -2178,7 +2185,8 @@ FairyOnIce:
 CirnoFestival:
   Name: Infiltración en el Banquete
   Description: "Gana {Value1} de |Evasión|.\n{Value2} carta{Value2:plural one=' aleatoria'\
-    \ other='s aleatorias'} en la mano cuestan 1 maná aleatorio menos."
+    \ other='s aleatorias'} en la mano |cuesta{Value2:plural one='' other='n'} temporalmente|\
+    \ 1 maná aleatorio menos."
 DeepFreeze:
   Name: Danza de Carámbanos
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\
@@ -2223,8 +2231,8 @@ FairyTrick:
   UpgradedDescription: "Pierde {Value1} de vida.\nInvoca 4 |e:Hadas de la Luz|. Agrega\
     \ uno a la mano y baraja los demás a la pila de robo."
 ChaowoCard:
-  Description: "Obtén {Block} de |Bloqueo|.\nEntra en el estado |Super-ego|."
-  Name: Super-ego
+  Description: "Obtén {Block} de |Bloqueo|.\nEntra en el estado |Super-Ego|."
+  Name: Super-Ego
 BenwoCard:
   Name: Id
   Description: "Inflige {Damage} de daño.\nEntra en el estado |Id|."
@@ -2467,13 +2475,13 @@ YouxiangAttack:
     \ |Preciso|."
   Name: Florecimiento de Gensokyo
 GainDollSlot:
-  Name: Gana Ranuras de Muñeca
+  Name: Gana una Ranura de Muñeca
   Description: (WIP)
 DoubleActiveTrigger:
   Name: Doble Activación
   Description: (WIP)
 TriggerAllPassive:
-  Name: Activar todas las pasivas
+  Name: Activar las Pasivas
   Description: (WIP)
 HuiyeAttack:
   Name: Mar de Árboles de Hourai
@@ -2520,65 +2528,72 @@ AliceAttackB:
   Description: Inflige {Damage} de daño.
   Name: Regreso a la Inanimación (WIP)
 KoishiMove:
-  Name: Comportamiento Inconsciente (WIP)
+  Name: Acto Inconsciente (WIP)
   Description: (WIP)
 LoveFire:
   Name: Ascuas del Amor (WIP)
   ExtraDescription1: (WIP)
-  Description: (WIP)
+  Description: "Inflige {Damage} de daño.\n|Por cada {Mana} extra gastado|: Aumenta\
+    \ el daño de {SelfName} en {Value1}.\nGuarda el maná gastado al jugar {SelfName}\
+    \ y devuelve el maná guardado para la próxima vez que se juegue {SelfName}."
 BabyDream:
   Name: Sueño del Embrión (WIP)
-  Description: (WIP)
+  Description: Todas las cartas |básicas| cuestan temporalmente {Mana} y ganan |Eco|.
 UpgradeDoll:
   Name: Bunraku de la Doncella (WIP)
-  Description: (WIP)
+  Description: Mejora una |e:Muñeca Shanghai|.
 SacrificeDoll:
   Name: Pacto Suicida (WIP)
-  Description: (WIP)
+  Description: "Elige una muñeca para que |salga|.\nInflige {Damage} de daño a cada\
+    \ enemigo."
 DeployPenglai:
   Name: Desplegar Muñeca Hourai (WIP)
-  Description: (WIP)
+  Description: "|Despliega| una |e:Muñeca Hourai|.\nActiva su |Habilidad de Control|."
 DeployShanghai:
   Name: Desplegar Muñeca Shanghai (WIP)
-  Description: (WIP)
+  Description: "|Despliega| una |e:Muñeca de Shanghai|.\nActiva su |Habilidad de Control|."
 MojingShanjie:
   Name: Frontera de Exorcismo
   Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
     mano. |Cuesta temporalmente| {Mana}.
 Danxiangsi:
   Name: Amor no Correspondido (WIP)
-  Description: (WIP)
+  Description: "Gana {Value1} de |Poder|.\n|Cuando se retiene|: Aumenta el |Poder|\
+    \ ganado en {Value2}."
 Hademan:
   Name: La Chica Youkai de Hartmann (WIP)
   Description: (WIP)
 XinzuoTest:
-  Name: Prueba de Constelaciones (WIP)
+  Name: Prueba del Zodíaco (WIP)
   Description: (WIP)
 FlowerGone:
-  Name: Flor Desaparecida (WIP)
-  Description: (WIP)
-  ExtraDescription1: (WIP)
+  Name: Jardín Imaginario (WIP)
+  Description: "Obtén {Block} de |Bloqueo|.\n|En Super-Ego|: Gana {Value1} de |Espíritu|\
+    \ y se |Exilia| {SelfName}."
+  ExtraDescription1: "Obtén {Block} de |Bloqueo|.\n|d:En Super-Ego: Gana {Value1}\
+    \ de Espíritu y se Exilia {SelfName}.|"
 PickFlower:
-  Name: Flor en la Carretera (WIP)
+  Name: No Recoger Flores en el Camino (WIP)
   Description: (WIP)
   ExtraDescription1: (WIP)
   ExtraDescription2: (WIP)
 CloseMemory:
-  Name: Recuerdo Olvidado (WIP)
+  Name: Recuerdo Reprimidos (WIP)
   ExtraDescription1: (WIP)
   Description: (WIP)
   ExtraDescription2: (WIP)
 QinchunPanni:
-  Name: Crisis de Adolescencia (WIP)
+  Name: Rebeldía de Adolescencia (WIP)
   Description: (WIP)
   ExtraDescription1: (WIP)
   ExtraDescription2: (WIP)
 MrBulb:
-  Name: Señorita Bombilla Brillante (WIP)
+  Name: Señorita Bombilla (WIP)
   Description: (WIP)
 PerfectCrime:
   Name: Crimen Perfecto (WIP)
-  Description: (WIP)
+  Description: "Roba el |Espíritu|, |Evasión|, |Amuleto|, |Camuflaje Óptico| y |Perfección|\
+    \ del objetivo.\nInflige {Damage} de daño."
 DanmakuMBTI:
   Name: Danmaku de MBTI (WIP)
   Description: (WIP)
@@ -2600,10 +2615,10 @@ DoubleJK:
     \ other='s'} en cada turno.\nAl final del turno de {PlayerName}, si no fue un\
     \ turno extra, toma un turno extra, reteniendo todo el |Bloqueo| ganado."
 KoishiMoveAttack:
-  Name: Mirar Eso (WIP)
+  Name: Mirar Esto (WIP)
   Description: (WIP)
 KoishiMoveDefense:
-  Name: Mirar Aquello (WIP)
+  Name: Mirar Eso (WIP)
   Description: (WIP)
 AnimalSpirit:
   Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
@@ -2644,3 +2659,23 @@ NightMana4:
   Description: "Si hay una {SelfName} en la mano, todas las cartas cuestan {Mana}\
     \ maná más para jugar.\nCada vez que se juega {FreezeTimes} carta, se |Exilia|\
     \ una {SelfName}."
+BecomeBenwo:
+  Name: Entrando al Id
+  Description: Entra en |Id|.
+BecomeChaowo:
+  Name: Entrando al Super-Ego
+  Description: Entra en |Super-Ego|.
+BecomeDunwu:
+  Name: Entrando a la Epifanía
+  Description: Entra en |Epifanía|.
+BenwoAbility:
+  Name: Liberación de Id
+ChaowoAbility:
+  Name: Supresión del Super-Ego
+  Description: Agrega una carta de |Entrando al Id| o |Entrando a la Epifanía| seleccionada
+    aleatoriamente a la mano al salir del |Super-Ego|.
+WuyishiDNA:
+  Description: "Entra en |Epifanía|. Termina el turno. Luego, toma un turno extra.\n\
+    Al final del turno de {PlayerName}, si {PlayerName} no está en |Epifanía|, pierde\
+    \ la partida."
+  Name: Genéticas del Subconsciente
