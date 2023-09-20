@@ -415,7 +415,7 @@ SakuyaAttackW:
 SakuyaBlockW:
   Description: Obtén {Block} de |Bloqueo|.
   Name: Defensa de Llave Negra
-  FlavorText: Al cortar el danmaku que se aproximaba, Sakuya sintió una pisca de alegría.
+  FlavorText: Al cortar el danmaku que se aproximaba, Sakuya sintió una pisca de placer.
 SakuyaUsage:
   FlavorText: Solo detén el tiempo y luego tira lo demás por las escaleras.
   Name: Uso Incorrecto de Sakuya
@@ -881,6 +881,8 @@ BurstDraw:
   Name: Duelo de Velocidad
   Description: Siempre que {PlayerName} entre en |Burst|, roba {Value1:plural one='%
     carta' other='% cartas'}.
+  FlavorText: ¿Discusión? ¿Negociación? ¿Evasión? ¿Por qué no arreglamos esto directamente
+    con danmaku?
 StarFantasy:
   Description: "Inflige {Damage} de daño.\n|Cuando se retiene|: Aumenta el daño de\
     \ {SelfName} en {Value1} en este combate."
@@ -904,6 +906,7 @@ OpenUniverse:
     \ de ello a la mano que |costara temporalmente| {Mana} y tendrá |Exilio|."
   Name: Abriendo el Universo
   DetailText: No puede elegir |Copias| para este efecto.
+  FlavorText: La esencia del universo es recursiva (?)
 StarShower:
   Description: "Obtén {Block} de |Bloqueo|.\nSi {PlayerName} no tiene |Cargas|, gana\
     \ {Value2} |Cargas|. De lo contrario, gana {Value1} |Cargas|."
@@ -1160,9 +1163,10 @@ TimeLord:
 TimeWalk:
   ExtraDescription1: "|d: Finaliza el turno. Luego, {PlayerName} toma un turno extra.|\n\
     El |Paseo en el Tiempo| solo puede activarse una vez por combate."
-  Description: "Finaliza el turno. Luego, {PlayerName} toma un turno extra.\nEl |Paseo\
+  Description: "Finaliza el turno. Luego, {PlayerName} toma un turno extra.\n|Paseo\
     \ en el Tiempo| solo puede activarse una vez por combate."
   Name: Paseo en el Tiempo
+  FlavorText: Incluso cuando nerfearon el coste, sigue siendo demasiado fuerte.
 LunaClock:
   Description: Finaliza el turno. Luego, toma un turno extra. Los ataques de {PlayerName}
     no infligen daño durante ese turno adicional.
@@ -1355,6 +1359,7 @@ BailianNingshen:
 YuetuYuyi:
   Name: Vestidura Perdida
   Description: Gana |Perfección| por {Value1} turno{Value1:plural one='' other='s'}.
+  FlavorText: Un remanente de los recuerdos de la luna.
 QinglanAttack:
   Name: Aterrizaje del Conejo
   Description: "Inflige {Damage} de daño.\n|Explora| {Scry}.\nRoba {Value2:plural\
@@ -1374,6 +1379,7 @@ RumiaBlock:
   Name: Oscuridad
   Description: "Obtén {Block} de |Bloqueo|.\nAgrega {Value1} |Sombra{Value1:plural\
     \ one='' other='s'}| a la mano."
+  FlavorText: Si no lo veo, entonces es 0 de daño.
 GuijiZaoxingHu:
   Name: Escultura - Arco
   Description: "Inflige {Damage} de daño.\nRoba {Value1:plural one='% carta' other='%\
@@ -1459,6 +1465,8 @@ GuijiZaoxingFang:
 ShenziUpgradeAll:
   Name: Apoteosis
   Description: '|Mejora| todas las cartas hasta el final del combate.'
+  FlavorText: La ermitaña se encontró con Yukari Yakumo en la brecha solo pudo beber
+    té.
 RingoJinghua:
   UpgradedDescription: "|Exilia| hasta {Value1} cartas de la mano, pila de robo y/o\
     \ pila de descarte.\nGana {Value2} <sprite=\"Point\" name=\"Power\">."
@@ -2213,6 +2221,8 @@ IceGun:
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} {Value1:plural\
     \ one='vez' other='veces'}.\nEnemigos con |Frío| reciben {Value2} veces ese mismo\
     \ daño."
+  FlavorText: Algunas personas piensan que son mas listas que yo... quizás... quizás...
+    ,pero yo todavía no he conocido a nadie que pueda ser mas lista que mis carámbanos.
 CirnoInForest:
   Name: A Plena Vista
   Description: "Obtén {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
@@ -2230,6 +2240,7 @@ FairyTrick:
     \ a la mano y baraja los demás a la pila de robo."
   UpgradedDescription: "Pierde {Value1} de vida.\nInvoca 4 |e:Hadas de la Luz|. Agrega\
     \ uno a la mano y baraja los demás a la pila de robo."
+  FlavorText: ¡Por supuesto que hay cuatro en Las Tres Hadas de la Luz!
 ChaowoCard:
   Description: "Obtén {Block} de |Bloqueo|.\nEntra en el estado |Super-Ego|."
   Name: Super-Ego
@@ -2459,7 +2470,7 @@ FakeCard:
 HistoryCard:
   Description: "Esta carta ha sido eliminada en la versión actual del juego.\nCarta\
     \ ID: {CardId}"
-  Name: Carta Archivada
+  Name: Carta Removida
 OtherBlock:
   Name: Provocadora
   Description: "Obtén {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
@@ -2578,7 +2589,7 @@ PickFlower:
   ExtraDescription1: (WIP)
   ExtraDescription2: (WIP)
 CloseMemory:
-  Name: Recuerdo Reprimidos (WIP)
+  Name: Recuerdos Reprimidos (WIP)
   ExtraDescription1: (WIP)
   Description: (WIP)
   ExtraDescription2: (WIP)
@@ -2669,11 +2680,16 @@ BecomeDunwu:
   Name: Entrando a la Epifanía
   Description: Entra en |Epifanía|.
 BenwoAbility:
-  Name: Liberación de Id
+  Name: Liberación del Id
+  Description: (WIP)
+  UpgradedDescription: (WIP)
 ChaowoAbility:
   Name: Supresión del Super-Ego
   Description: Agrega una carta de |Entrando al Id| o |Entrando a la Epifanía| seleccionada
     aleatoriamente a la mano al salir del |Super-Ego|.
+  UpgradedDescription: "Entra en el estado |Super-Ego| al comienzo del siguiente turno\
+    \ de {PlayerName}.\nAgrega una carta de |Entrando al Id| o |Entrando a la Epifanía|\
+    \ seleccionada aleatoriamente a la mano al salir del |Super-Ego|."
 WuyishiDNA:
   Description: "Entra en |Epifanía|. Termina el turno. Luego, toma un turno extra.\n\
     Al final del turno de {PlayerName}, si {PlayerName} no está en |Epifanía|, pierde\
