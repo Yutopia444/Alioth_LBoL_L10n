@@ -196,6 +196,7 @@ Changzhizhen:
     |回合結束時|：對隨機敵人造成 {Value1} 點傷害。
     |手牌中|：當{PlayerName}失去一個正面效果時，傷害提高 {Value2} 點。
 
+  DetailText: 主動打出{SelfName}沒有任何效果，只會|放逐|掉這張牌以空出一個手牌位置。
 ReimuLucky:
   Name: 吉簽開運
   Description: |-
@@ -213,7 +214,7 @@ ShensheRichang:
 TwoBalls:
   Name: 平衡之玉
   Description: 將 {Value1} 張|陰陽玉|加入手中。
-  UpgradedDescription: 將 {Value1} 張|陰陽玉|加入手中，它們的費用降低{Mana}。
+  UpgradedDescription: 將 {Value1} 張|陰陽玉|加入手中，它們的費用|暫時降低|{Mana}。
   FlavorText: 無極生太極，太極生兩儀。
 
 MojingShanjie:
@@ -448,7 +449,7 @@ ReimuSakura:
   Description: |-
     對所有敵人造成 {Damage} 點傷害。
     恢復 {Value1} 點生命。
-    |成長|：費用降低{Mana}。
+    |成長|：費用降低{Mana}，直到戰鬥結束。
 
 SenluoJiejie:
   Name: 森羅結界
@@ -1196,7 +1197,7 @@ SakuyaFuneral:
   Name: 過早的埋葬
   Description: |-
     失去 {Value1} 點生命。
-    從|放逐|區選擇一張牌移回手中，它暫塑為{Mana}。
+    從|放逐|區選擇一張牌移回手中，它|暫塑|為{Mana}。
   FlavorText: 「我還沒死呢，大小姐。」
 
 FakeTimeline:
@@ -1470,7 +1471,7 @@ CirnoFestival:
   Name: 混入宴會
   Description: |-
     獲得 {Value1} 層|閃避|。
-    手中隨機的 {Value2} 張牌，降低一點隨機費用。
+    手中隨機的 {Value2} 張牌，|暫時降低|一點隨機費用。
   FlavorText: 在對月球人的特別作戰慶功宴上混入了奇怪的家夥。
 
 FruitShake:
@@ -1853,7 +1854,7 @@ KoishiAttackB:
   Description: 造成 {Damage} 點傷害。
 
 KoishiBlockG:
-  Name: 薔薇花謝
+  Name: 花團錦簇
   Description: 獲得 {Block} 點|格擋|。
 
 BenwoCard:
@@ -1882,9 +1883,9 @@ XinzuoTest:
     |直覺|：對所有敵人施加 {Value1} |星落|。
 
 FlowerGone:
-  Name: 花沒了
+  Name: 空想花園
   Description: |-
-    (WIP)獲得 {Block} 點|格擋|。
+    獲得 {Block} 點|格擋|。
     |超我中|：獲得 {Value1} 點靈力，放逐{SelfName}。
   ExtraDescription1: |-
     獲得 {Block} 點|格擋|。
@@ -1921,7 +1922,7 @@ QinchunPanni:
   Name: 青春期叛逆
   Description: |-
     (WIP)|不在本我中|：對生命值最低的敵人造成 {Damage} 點傷害。
-    |本我中|：獲得 {Block} 點|格擋|。
+    |本我中|：獲得 {Block} 點|格擋|，抽 {Value1} 張牌。
   ExtraDescription1: |-
     |d:不在本我中：對生命值最低的敵人造成 {Damage} 點精準的傷害。|
     |本我中|：獲得 {Block} 點|格擋|。
@@ -1947,7 +1948,7 @@ KoishiMoveDefense:
 Danxiangsi:
   Name: 單相思
   Description: |-
-    (WIP)獲得 {Value1} 點|火力|。
+    獲得 {Value1} 點|火力|。
     |保留時|：獲得的|火力|提高 {Value2} 點。
 
 Hademan:
@@ -1975,19 +1976,18 @@ LoveFire:
 
 BabyDream:
   Name: 胎兒之夢
-  Description: (WIP)所有|基本|卡的費用暫塑為{Mana}，並附帶|回響|。
+  Description: 所有|基本|卡的費用暫塑為{Mana}，並附帶|回響|。
 
 PerfectCrime:
   Name: 完美作案
   Description: |-
-    (WIP)竊取目標的|靈力|、|擦彈|、|護身符|、|光學迷彩|、|天衣無縫|。
+    竊取目標的|靈力|、|擦彈|、|護身符|、|光學迷彩|、|天衣無縫|。
     造成 {Damage} 點傷害。
 
 DanmakuMBTI:
   Name: 彈幕MBTI
   Description: |-
-    (WIP)選擇兩個法力顔色，本場戰鬥內所有的|念想|只會隨機出指定的顔色。
-    將 {Value1} 張|念想|加入抽牌堆。
+    (WIP)
 AliceAttackW:
   Name: 未來文樂
   Description: 造成 {Damage} 點傷害。
@@ -2712,12 +2712,12 @@ BaitianCard:
   Name: 稗田的轉生
   Description: |-
     獲得 {Block} 點|格擋|。
-    從棄牌堆中選擇一張牌，將它置於抽牌堆頂，隨機降低 {Value1} 點它的費用。
+    從棄牌堆中選擇一張牌，將它置於抽牌堆頂，|暫時降低|它的隨機 {Value1} 點費用。
   FlavorText: 在嘗試了電子的資訊儲存媒介後，稗田阿求小姐有了更多喝下午茶的閒暇時間。
 
 NueExile:
   Name: 平安時代的黑雲
-  Description: 選擇一張手牌|放逐|，獲得一張隨機的牌，它暫塑為{Mana}。
+  Description: 選擇一張手牌|放逐|，獲得一張隨機的牌，它|暫塑|為{Mana}。
 
 HuiyinRetain:
   Name: 一條歸橋
@@ -3564,3 +3564,23 @@ FlanBlack:
   FlavorText: 背負U·N·歐文之名，捨棄所有人去戰鬥的少女~
 
 
+BecomeBenwo:
+  Description: 進入|本我|。
+  Name: 進入本我
+BecomeChaowo:
+  Description: 進入|超我|。
+  Name: 進入超我
+BecomeDunwu:
+  Name: 進入頓悟
+  Description: 進入|頓悟|。
+BenwoAbility:
+  Name: 本我的解放
+  Description: 打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。
+  UpgradedDescription: "下回合開始時進入|本我|。\n打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。"
+ChaowoAbility:
+  Name: 超我的抑制
+  Description: 離開|超我|時隨機將一張|進入本我|或|進入頓悟|加入手牌。
+  UpgradedDescription: "下回合開始時進入|超我|。\n離開|超我|時隨機將一張|進入超我|或|進入頓悟|加入手牌。"
+WuyishiDNA:
+  Name: 無意識的基因
+  Description: "進入|頓悟|，結束{PlayerName}的回合，進行額外的回合。\n{PlayerName}的回合結束時，如果不處於|頓悟|則死亡。"
