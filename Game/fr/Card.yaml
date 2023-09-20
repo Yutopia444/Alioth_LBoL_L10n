@@ -159,6 +159,7 @@ Changzhizhen:
   Description: "|Fin du tour| : Infligez {Value1} dégât{Value1:plural one='' other='s'}\
     \ à un ennemi aléatoire.\n|En main| : À chaque fois que {PlayerName} perd un bonus,\
     \ augmentez les dégâts de cette carte de {Value2} pendant ce combat."
+  DetailText: Jouer {SelfName} n'a aucun effet autre que l'|exiler| de la main.
 ReimuLucky:
   Description: "Gagnez {Value1} |Amulette{Value1:plural one='' other='s'}|.\nGagnez\
     \ {Value2} <sprite=\"Point\" name=\"Gold\">."
@@ -177,8 +178,8 @@ TwoBalls:
   FlavorText: L'Éternité donne naissance à l'Absolu, et l'Absolu donne naissance à
     deux rituels.
   UpgradedDescription: Ajoutez {Value1:plural one='% |Orbe Yin-Yang|' other='% |Orbes
-    Yin-Yang|'} à la main. Elle{Value1:plural one=' coûte' other='s coûtent'} {Mana}
-    de moins à jouer.
+    Yin-Yang|'} à la main. Elle{Value1:plural one=' |coûte temporairement|' other='s
+    |coûtent temporairement|'} {Mana} de moins à jouer.
 MingzhuAntou:
   Name: Frontière Secrète
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -498,7 +499,7 @@ ReimuSakura:
   Name: Sceau Fantaisiste en Fleurs
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.\n|Croissance| :\
-    \ coûte {Mana} de moins."
+    \ coûte {Mana} de moins jusqu'à la fin du combat."
 SenluoJiejie:
   Name: Agrégat de Bordure
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nLorsque\
@@ -1028,8 +1029,8 @@ AliceAttack:
   Name: Rayon Sinistre
 BaitianCard:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nRemettez\
-    \ une carte de la pile de défausse en haut de la pioche, elle coûte {Value1} mana{Value1:plural\
-    \ one=' aléatoire' other='s aléatoires'} de moins."
+    \ une carte de la pile de défausse en haut de la pioche, elle |coûte temporairement|\
+    \ {Value1} mana{Value1:plural one=' aléatoire' other='s aléatoires'} de moins."
   FlavorText: Après avoir essayé les supports de stockage d'informations électroniques,
     Mlle Hieda no Akyuu a eu plus de temps libre pour le thé de l'après-midi.
   Name: Transmigration de Hieda
@@ -1168,8 +1169,9 @@ GroupOfKnife:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 ClockCorpse:
   Name: Débris d'Horloge
-  Description: Terminez le tour. Ensuite, jouez un tour supplémentaire. Les cartes
-    ne peuvent pas être piochées en dehors de l'étape de pioche pendant ce tour.
+  Description: Terminez le tour, et {PlayerName} joue un tour supplémentaire. Les
+    cartes ne peuvent pas être piochées en dehors de l'étape de pioche pendant ce
+    tour.
 StopTime:
   Name: Temps Gelé
   Description: Lorsque {PlayerName} finit son tour, gardez {Value1} mana aléatoire
@@ -1209,8 +1211,9 @@ EvilMaid:
     \ double de dégâts."
 ExtraTurnEveryone:
   Name: Expansion d'Espace
-  Description: "Terminez le tour, puis effectuez un tour supplémentaire.\nLes ennemis\
-    \ jouent également un tour supplémentaire la prochaine fois que c'est leur tour."
+  Description: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\nLes\
+    \ ennemis jouent également un tour supplémentaire la prochaine fois que c'est\
+    \ leur tour."
 SakuyaKiller:
   Name: Éventreur dans la Brume
   Description: Lorsque {PlayerName} finit son tour et chaque fois qu'un ennemi est
@@ -1253,7 +1256,7 @@ CoolBreeze:
     \ ennemi a |Froid|, |améliorez| {Value1} carte{Value1:plural one=' aléatoire'\
     \ other='s aléatoires'} en main."
 KoishiBlockG:
-  Name: Flétrissement des Roses
+  Name: Couronne de Fleurs Vives
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 RingoJinghua:
   Name: Purification de Terre
@@ -1545,7 +1548,7 @@ FakeTimeline:
     \ |Impulsion{Value1:plural one=' temporelle' other='s temporelles'}|."
 LunaDial:
   Name: Temps Personnel
-  Description: "Terminez le tour. Ensuite, jouez un tour supplémentaire.\n|Lorsque\
+  Description: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\n|Lorsque\
     \ piochée| : Cette carte coûte {Mana} de moins ce combat."
 DropToKnife:
   Name: Forteresse d'Argent
@@ -1553,8 +1556,8 @@ DropToKnife:
     \ autant de |Couteaux de lancer| à la main."
 LunaClock:
   Name: Horloge Lunaire
-  Description: Terminez le tour. Ensuite, jouez un tour supplémentaire. Les attaques
-    jouées par {PlayerName} n'infligent aucun dégât pendant ce tour supplémentaire.
+  Description: Terminez le tour, et {PlayerName} joue un tour supplémentaire. Les
+    attaques n'infligent aucun dégât pendant ce tour supplémentaire.
 SakuyaDio:
   Name: Tu es le Prochain !
   Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé{Value1:plural\
@@ -2557,7 +2560,7 @@ CirnoFestival:
   Name: Mêlée au Banquet
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nJusqu'à\
     \ {Value2:plural one='% carte aléatoire dans votre main a' other='% cartes aléatoires\
-    \ dans votre main ont'} un coût réduit de 1 mana aléatoire."
+    \ dans votre main ont'} un |coût temporaire| réduit de 1 mana aléatoire."
   FlavorText: Des types étranges se sont mélangés à la fête de célébration de l'opération
     spéciale contre les Lunariens.
 DeepFreeze:
@@ -2899,7 +2902,7 @@ LoveFire:
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
-  Description: (WIP) Tous les coûts des cartes |basiques| sont temporairement transformés
+  Description: Tous les coûts des cartes |basiques| sont temporairement transformés
     en {Mana} avec |Écho|.
 AliceAttackW:
   Name: Bunraku du Futur
@@ -2941,10 +2944,9 @@ XinzuoTest:
     \ à la main.\n|Instinct| : appliquez {Value1} |Chute{Value1:plural one='' other='s'}\
     \ d'Étoile| à tous les ennemis."
 FlowerGone:
-  Name: Fleur Disparue
-  Description: "(WIP) Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
-    |Super-ego| : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez\
-    \ {SelfName}."
+  Name: Jardin Secret
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Super-ego|\
+    \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez {SelfName}."
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
     |d:Super-ego : Gagnez {Value1} Esprit{Value1:plural one='' other='s'}, exilez\
     \ {SelfName}. |"
@@ -2986,11 +2988,11 @@ QinchunPanni:
     \ : Gagnez {Block} Bouclier{Block:plural one='' other='s'}. |"
   Description: "(WIP)|Pas en Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ à l'ennemi dont les points de vie sont les moins élevés.\n|Ego| : Gagnez {Block}\
-    \ |Bouclier{Block:plural one='' other='s'}|."
+    \ |Bouclier{Block:plural one='' other='s'}|, piochez {Value1} carte{Value1:plural\
+    \ one='' other='s'}."
 Danxiangsi:
-  Description: "(WIP) Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n\
-    |Retenue| : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one=''\
-    \ other='s'}."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Retenue|\
+    \ : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one='' other='s'}."
   Name: Amour Non Réciproque
 Hademan:
   Name: Fille Yōkai de Hartmann
@@ -3006,13 +3008,11 @@ MrBulb:
     \ carte{Value1:plural one='' other='s'} et gagnez {Mana}."
 PerfectCrime:
   Name: Crime Parfait
-  Description: "(WIP) Vole le |Esprit|, |grab bullet|, |Amulette|, |Camouflage Optique|,\
+  Description: "Vole le |Esprit|, |grab bullet|, |Amulette|, |Camouflage Optique|,\
     \ |Perfection|.\nInfligez {Damage} dégât{Damage:plural one='' other='s'}."
 DanmakuMBTI:
   Name: Barrage MBTI
-  Description: "(WIP) Choisissez deux couleurs de mana, toutes les |Idées| de cette\
-    \ bataille ne produiront au hasard que les couleurs spécifiées.\nAjoutez {Value1}\
-    \ |Idée{Value1:plural one='' other='s'}| à la pioche."
+  Description: "(WIP)"
 PoisonTeaParty:
   Name: Thé Suspect
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
@@ -3073,3 +3073,31 @@ NightMana4:
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
     \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
     \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} de la main."
+ChaowoAbility:
+  Description: Ajoutez dans la main un |For Intérieur| ou une |Illumination| au hasard
+    en quittant l'état de |Super-Ego|.
+  Name: Inhibition du Surmoi
+  UpgradedDescription: "Entrez en état de |Super-Ego| lorsque {PlayerName} débute\
+    \ son prochain tour.\nAjoutez dans la main un |For Intérieur| ou une |Illumination|\
+    \ au hasard en quittant l'état de |Super-Ego|."
+WuyishiDNA:
+  Description: "Entrez en état d'|Épiphanie|. Terminez le tour, et {PlayerName} joue\
+    \ un tour supplémentaire.\nLorsque {PlayerName} finit son tour, si {PlayerName}\
+    \ n'est pas en état d'|Épiphanie|, elle perd la partie."
+  Name: Génétique de l'Inconscient
+BecomeBenwo:
+  Name: For Intérieur
+  Description: Entrez en état d'|Ego|.
+BecomeChaowo:
+  Name: Entrée en Super-Ego
+  Description: Entrez dans l'état de |Super-ego|.
+BecomeDunwu:
+  Description: Entrez en état d'|Épiphanie|.
+  Name: Illumination
+BenwoAbility:
+  Name: Libération de Soi
+  Description: Au lieu de quitter l'état d'|Ego| après avoir joué une carte, vous
+    quitterez l'état d'|Ego| à la fin du tour.
+  UpgradedDescription: "Entrez en état d'|Ego| au début du prochain tour.\nAu lieu\
+    \ de quitter l'état d'|Ego| après avoir joué une carte, vous quitterez l'état\
+    \ d'|Ego| à la fin du tour."
