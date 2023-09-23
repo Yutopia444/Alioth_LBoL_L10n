@@ -640,11 +640,13 @@ ShenziUpgradeAll:
   Name: Apotheosis
   Description: '|Upgrade| all cards until the end of combat.'
 
+  FlavorText: Hermits who meet Yukari Yakumo at a Gap can only Drink Tea.
 ShenziWake:
   Name: Revive the Saint
   Description: |-
     Choose 1 of {Value1} random cards with a total cost of X+1 to add into the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
 
+  FlavorText: Before reviving the saint, a lot of other people were mistakenly revived.
 YuetuInvincible:
   Name: The Falling Moon-Rabbit
   Description: |-
@@ -704,6 +706,7 @@ WaterPrincess:
   Name: Princess Undine
   NonbattleDescription: "For each card in the hand, gain {Value1} |Barrier|.\n|Debut|:\
     \ Add a |Splash| to the hand."
+  FlavorText: This hardcover magic guide book is water resistant for up to 100m.
 YonglinCard:
   Description: 'At the end of {PlayerName}''s turn, add {Value1} |False Moon{Value1:plural
     one='''' other=''s''}| to the draw pile.'
@@ -1131,6 +1134,8 @@ ShannvAttack:
   Description: "Deal {Damage} damage.\nApply {Value1} |Poison|."
   Name: Seeping Miasma
   UpgradedDescription: "Deal {Damage} damage.\nApply {Value1} |Poison| to each enemy."
+  FlavorText: In confined spaces, any gases expelled from the rear end is potentially
+    lethal.
 SatoriAttack:
   Description: "Deal {Damage} damage to each enemy.\n|Instinct|: If an enemy intends\
     \ to attack, gain {Block} |Block|."
@@ -1191,6 +1196,8 @@ YukariAttack:
 HuaBlock:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Temporary Firepower|."
   Name: Battle Stance
+  FlavorText: Momiji Inubashiri is reliable at holding aggro, which is why many youkai
+    from the Youkai Mountain are vying for her to join their parties.
 YinglangHowl:
   Description: Apply {Value1} |Temporary Firepower Down| and {Value2} |Vulnerable|
     to each enemy.
@@ -1206,6 +1213,7 @@ SuikaBigball:
   Description: "Deal {Damage} damage. Then, deal {HalfDamage} damage to each other\
     \ enemy.\nLose {Value1} |Firepower|."
   Name: Oni Spirit Bomb
+  FlavorText: The power of oni is too difficult for the other races to handle.
 MeilingBlock:
   Description: "Gain {Block} |Block| and {Shield} |Barrier|.\n{SelfName} is also affected\
     \ by |Firepower|."
@@ -1302,6 +1310,8 @@ BaitianCard:
   Description: "Gain {Block} |Block|.\nReturn a card from the discard pile to the\
     \ top of the draw pile. It |temporarily costs| {Value1} random mana less."
   Name: Transmigration of Hieda
+  FlavorText: After trying electronic storage media, Miss Hieda no Akyuu now has even
+    more free time for afternoon tea breaks.
 NueExile:
   Description: "|Exile| a card from the hand.\nAdd a random card to the hand. It |temporarily\
     \ costs| {Mana}."
@@ -1330,18 +1340,32 @@ KongMana:
 ToolUpgrade:
   Description: "|Upgrade| each card in the hand until the end of combat.\n|Limited【{DeckCounter}】|"
   Name: Floppy Disk
+  FlavorText: You just need to insert this into the brain to read in powerful abilities.
+    The question is, how would you insert it?
 ToolDroneBlock:
   Description: "Gain {Value1} |Defense Matrix|.\n|Limited【{DeckCounter}】|"
   Name: Mechanical Core
 NewsPositive:
   Description: "Gain {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limited【{DeckCounter}】|"
   Name: Positive News
+  FlavorText: '[Breaking News! #Reimu resolves the incident#] Our resident Eientei
+    journalist reports that at 9pm local time, the treasured Jeweled Branch of Hourai,
+    which was on display at the 11th Lunar Capital Exhibition, has been mysteriously
+    stolen. It is reported that the Hakurei Shrine Maiden, Reimu Hakurei...…'
 NewsNegative:
   Description: "Lose {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limited【{DeckCounter}】|"
   Name: Negative News
+  FlavorText: '......has set out to find the true culprit who stole the Jeweled Branch.
+    This time, before Reimu was invited as a guest to the exhibition, it was revealed
+    that the Hakurei Shrine had been in a deep financial crisis, and was struggling
+    to keep up with its operating costs. In the mean time, the exhibition organiser...…'
 NewsTidbit:
   Description: "Gain {Value1} |Lock On|.\n|Limited【{DeckCounter}】|"
   Name: Gossip
+  FlavorText: '......revealed that other than for financial considerations, Reimu
+    made this trip for reasons related to her intimate relationship with Kaguya. It
+    is reported that Reimu often goes in and out of Eientei, and photos of her intimate
+    acts with Kaguya are constantly being leaked. (Kakashi Spirit News Client)'
 EmpCard:
   Description: "Deal {Damage} attack damage.\nIf the target is a |drone|, it cannot\
     \ act for {Value1} turns.\n|Limited【{DeckCounter}】|"
@@ -1374,6 +1398,8 @@ ToolMicai:
   Description: "Gain |Optical Camouflage| for {Value1} turn{Value1:plural one='' other='s'}.\n\
     |Limited【{DeckCounter}】|"
   Name: Optical Camouflage Clothing
+  FlavorText: '"When wearing this product, please refrain from participating in dangerous
+    activities such as bungee jumping."'
 ToolExile:
   Description: "|Exile| any number of cards from the hand.\n|Limited【{DeckCounter}】|"
   Name: Intelligent Sweeping Robot
@@ -1544,6 +1570,10 @@ ToolVulnerable:
 NewsEntertainment:
   Description: "Draw cards until the hand is full.\n|Limited【{DeckCounter}】|"
   Name: Entertainment
+  FlavorText: '......Kaguya Houraisan expressed to the reporter, that any organisation
+    or resident of Gensokyo who provides an effective clue will be rewarded with a
+    limited edition moon rabbit doll. A magician in the loop, who wished to remain
+    anonymous, told our reporter...…'
 WolfFur:
   Description: '|Limited【{DeckCounter}】|'
   Name: Wolf Fur
@@ -1622,6 +1652,7 @@ Xuanguang:
   FlavorText: '{PlayerName} was dazzled by the bright light emitted by danmaku.'
 Zhukeling:
   Name: Eviction Order
+  FlavorText: "\"You're an unwelcome guest, please reflect on yourself.\""
 Bribery:
   Description: "Pay {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#4f6e97>Megumu</color>\
     \ will go easier on you this combat."
@@ -1631,6 +1662,7 @@ Bribery:
 MarisaForget:
   Name: Forgetfulness
   Description: "|At the end of the turn|: Gain {Value1} |Frail|."
+  FlavorText: '"Did I forget to turn the gas stove off before heading out?"'
 Shadow:
   Name: Shadow
 SakuyaLock:
@@ -1642,6 +1674,8 @@ BefuddledLife:
   Name: Befuddlement
 Regret:
   Name: Regret
+  FlavorText: Could it be that the desire for the perfect romance was moulded by love
+    stories?
 LoveLetter:
   Name: Loveletter
   Description: Give this to <color=#eab8bf>Lovesick Girl</color>. She'll be happy.
@@ -1702,10 +1736,15 @@ PaluxiCurse:
   Description: "Deal {Damage} damage.\nApply {Value1} |Weak| and |Vulnerable|.\nAdd\
     \ a random |Misfortune| to the discard pile. |d:(It won't remain in the library\
     \ after this combat.)|"
+  FlavorText: At 2.30am today, a certain bridge princess, Miss Mizu*****, was caught
+    red-handed by the shrine maiden on duty for illicitly visiting the shrine.
 TodayYesterday:
   Name: Gensokyo, Past and Present
   Description: "Whenever {PlayerName} |Grazes| an attack, gain {Value1} |Firepower|.\n\
     Gain {Value2} |Graze|."
+  FlavorText: Legend has it that there's a strong swordsman who happens to be a loafer.
+    He often harvests and burns down the flower fields of innocent gardeners for fun.
+    Fortunately for him, he hasn't encountered Yuuka yet.
 LigeluCard:
   Name: Luminescent Night
   Description: "Gain {Block} |Block|.\nGain {Value1} <sprite=\"Point\" name=\"Power\"\
@@ -1887,6 +1926,7 @@ GatherFairy:
   Name: Fairy Assembly
   UpgradedDescription: "The maximum hand size becomes {MaxHand}.\nDraw {Value1} card{Value1:plural\
     \ one='' other='s'}.\nAll |Teammates| in the hand gain {Value2} |Unity|."
+  FlavorText: You are both my wings.
 BrainOverclock:
   Description: "Gain {Mana}.\nDraw {Value2} card{Value2:plural one='' other='s'}.\n\
     |Overdraft| {Value1}."
@@ -2187,6 +2227,8 @@ CirnoFestival:
   Description: "Gain {Value1} |Graze|.\n{Value2} random card{Value2:plural one=''\
     \ other='s'} in the hand |temporarily cost{Value2:plural one='s' other=''}| 1\
     \ random mana less."
+  FlavorText: A strange fellow managed to sneak into the celebratory banquet for the
+    special operation against the lunarians.
 DeepFreeze:
   Name: Icicle Dance
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
@@ -2386,10 +2428,13 @@ MaidFriend:
   Name: Kasumi, Mansion Maid
   ExtraDescription1: "{FriendA}Deal damage immediately. Add {Value2} |Throwing Kni{Value2:plural\
     \ one='fe' other='ves'}| to the hand."
+  FlavorText: Out of all the fairy maids in the Scarlet Devil Mansion, Kasumi is already
+    the most serious in her work.
 FruitShake:
   Description: "Deal {Damage} damage to each enemy.\nIf a |Teammate| was summoned\
     \ this turn, {SelfName} costs {Mana} to play."
   Name: Yummy Fruit Freezies
+  FlavorText: Tropical fruits are cool and tasty!
 LeidiFriend:
   ExtraDescription2: '{FriendU}Deal {Damage} damage and apply |Cold| to each enemy.'
   Description: '{FriendP}Apply |Cold| to a random enemy.'
