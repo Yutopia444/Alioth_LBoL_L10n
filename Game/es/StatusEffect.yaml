@@ -243,8 +243,8 @@ PrivateSquare:
   Name: Encierro Plateado
   Description: "Por cada {Limit} cartas jugadas, {OwnerName} inflige {Level} de daño\
     \ a {PlayerName}.\n{Count:plural one='% carta restante' other='% cartas restantes'}."
-  Brief: Siempre que se juegue una cierta cantidad de cartas, <color=#B7F0FF>Sakuya
-    Izayoi</color> infligirá daño a {PlayerName}.
+  Brief: Siempre que se hayan jugado suficientes cartas, <color=#B7F0FF>Sakuya Izayoi</color>
+    infligirá daño a {PlayerName}.
 TurnStartPurify:
   Name: Purificación Inminente
   Description: "Al inicio del próximo turno de {PlayerName}, se |Purifica|{Level}.\n\
@@ -510,10 +510,10 @@ UpgradePotionSe:
     |Pociones Inestables| en la pila de robo y descarte por {Level}.
   Name: Poción Refinada
 PotionDefenseSe:
-  Brief: Hasta el final del turno, siempre que una |Poción inestable| se use, gana
+  Brief: Hasta el final del turno, siempre que una |Poción inestable| se activa, gana
     |Barrera|.
   Name: Eco Resonante
-  Description: Hasta el final del turno, siempre que una |Poción Inestable| se use,
+  Description: Hasta el final del turno, siempre que una |Poción Inestable| se activa,
     gana {Level} de |Barrera|.
 Burst:
   Brief: "Cuando {PlayerName} entra en |Burst|, gana {Mana}.\nTodos los ataques infligen\
@@ -549,14 +549,15 @@ PotionJungleSe:
     de descarte.
 ChargingPotionSe:
   Name: Elementos Radiactivos
-  Description: Siempre que una |Poción Inestable| se usa, gana {Level} |Carga{Level:plural
+  Description: Siempre que una |Poción Inestable| se activa, gana {Level} |Carga{Level:plural
     one='' other='s'}|.
-  Brief: Siempre que una |Poción Inestable| se utiliza, gana |Cargas|.
+  Brief: Siempre que una |Poción Inestable| se activa, gana |Cargas|.
 PoisonPotionSe:
-  Brief: Siempre que una |Poción Inestable| se usa, también aplica |Veneno| a su objetivo.
+  Brief: Siempre que una |Poción Inestable| se activa, también aplica |Veneno| a su
+    objetivo.
   Name: Caldero de la Bruja
-  Description: Siempre que una |Poción Inestable| se usa, también aplica {Level} de
-    |Veneno| a su objetivo.
+  Description: Siempre que una |Poción Inestable| se activa, también aplica {Level}
+    de |Veneno| a su objetivo.
 TimeAuraSe:
   Name: Pulso Temporal
   Description: "Al final del turno de {PlayerName}, inflige {Level} de daño a todos\
@@ -611,8 +612,8 @@ MihuanJackSe:
   Brief: Al comienzo del turno de {PlayerName}, gana |Pulso Temporal|.
 SilverBladeSe:
   Name: Dimensión Plateada
-  Description: Cada vez que se usa una carta de ataque, gana {Level} de |Barrera|.
-  Brief: Cada vez que se usa una carta de ataque, gana algo de |Barrera|.
+  Description: Cada vez que se activa una carta de ataque, gana {Level} de |Barrera|.
+  Brief: Cada vez que se activa una carta de ataque, gana algo de |Barrera|.
 SakuyaKillerSe:
   Description: Al final del turno de {PlayerName} y siempre que un enemigo sea derrotado,
     agrega |{Level:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|
@@ -627,10 +628,10 @@ DrawPhaseAddKnife:
   Brief: Omite la fase de robo de cartas del inicio del turno, agrega algunos |Cuchillos
     Arrojadizos| a la mano en su lugar.
 DangerousMagicianSe:
-  Description: Siempre que un |Cuchillo Arrojadizo| se usa, {PlayerName} gana {Level}
+  Description: Siempre que un |Cuchillo Arrojadizo| se activa, {PlayerName} gana {Level}
     |Pulso Temporal|.
-  Brief: Siempre que un |Cuchillo Arrojadizo| se usa, {PlayerName} gana algo de |Pulso
-    Temporal|.
+  Brief: Siempre que un |Cuchillo Arrojadizo| se activa, {PlayerName} gana algo de
+    |Pulso Temporal|.
   Name: Ilusionista Peligrosa
 AutoKnifeSe:
   Name: Cuchillo de Plata Embrujado
@@ -816,8 +817,8 @@ ManaFreezed:
   Brief: La primera carta jugada de cada turno cuesta más maná para jugar.
 ColdPotionSe:
   Name: Liquido Refrigerante
-  Description: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
-  Brief: Las |Pociones Inestables| también aplican |Frío| cuando se usa.
+  Description: Las |Pociones Inestables| también aplican |Frío| cuando se activa.
+  Brief: Las |Pociones Inestables| también aplican |Frío| cuando se activa.
 ExtraDraw:
   Name: Intelecto de Hada
   Brief: Al comienzo del próximo turno de {OwnerName}, roba cartas adicionales.
@@ -885,10 +886,10 @@ IceVulnerable:
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
   Brief: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una |Compañera|\
-    \ se usa, aplica |Frío| a enemigos aleatorios.\nCada vez que un enemigo gana |Frío|,\
-    \ las |Compañeras| aleatorias en la mano ganan |Influencia|."
+    \ se activa, aplica |Frío| a enemigos aleatorios.\nCada vez que un enemigo gana\
+    \ |Frío|, las |Compañeras| aleatorias en la mano ganan |Influencia|."
   Description: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de\
-    \ una |Compañera| se usa, aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural\
+    \ una |Compañera| se activa, aplica |Frío| a un enemigo aleatorio {Level} ve{Level:plural\
     \ one='z' other='ces'}.\nCada vez que un enemigo gana |Frío|, {Level} |Compañera{Level:plural\
     \ one='' other='s'}| aleatoria{Level:plural one='' other='s'} en la mano gana\
     \ {Level} de |Influencia|."
@@ -960,7 +961,7 @@ KnifeTarget:
   Name: Objetivo Marcado
   Brief: Los |Cuchillos Arrojadizos| tendrán como objetivo a {OwnerName}.
   Description: Los |Cuchillos Arrojadizos| tendrán como objetivo a {OwnerName} cuando
-    se utilice.
+    se active.
 YonglinUpgradeSe:
   Name: Incienso del Conejo Lunar
   Description: Al comienzo del turno de {PlayerName}, |mejora| {Value1} carta{Value1:plural
