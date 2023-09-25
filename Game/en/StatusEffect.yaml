@@ -249,13 +249,13 @@ PotionJungleSe:
     pile.
 PotionDefenseSe:
   Name: Shooting Echo
-  Brief: Until end of turn, whenever an |Unstable Potion| is used, gain |Barrier|.
-  Description: Until end of turn, whenever an |Unstable Potion| is used, gain {Level}
-    |Barrier|.
+  Brief: Until end of turn, whenever an |Unstable Potion| is activated, gain |Barrier|.
+  Description: Until end of turn, whenever an |Unstable Potion| is activated, gain
+    {Level} |Barrier|.
 ChargingPotionSe:
   Name: Radioactive Elements
-  Description: Whenever an |Unstable Potion| is used, gain {Level} |Charge|.
-  Brief: Whenever an |Unstable Potion| is used, gain |Charge|.
+  Description: Whenever an |Unstable Potion| is activated, gain {Level} |Charge|.
+  Brief: Whenever an |Unstable Potion| is activated, gain |Charge|.
 SakuyaKillerSe:
   Name: Ripper in the Fog
   Brief: At the end of {PlayerName}'s turn and whenever an enemy is defeated, add
@@ -277,14 +277,14 @@ DanceAroundLakeSe:
   Brief: Whenever a card is |Exiled|, draw cards.
   Name: Lakeside Dance
 EvilTuiZhiSe:
-  Description: The next {Level:plural one='attack card' other='% attack cards'} played
+  Description: The next {Level:plural one='attack card' other='% attack cards'} activated
     deal{Level:plural one='s' other=''} double damage.
   Brief: Attack cards played will deal double damage.
   Name: Evil Exterminate
 SilverBladeSe:
   Name: Silver Dimension
-  Brief: Whenever an attack card is used, gain some |Barrier|.
-  Description: Whenever an attack card is used, gain {Level} |Barrier|.
+  Brief: Whenever an attack card is activated, gain some |Barrier|.
+  Description: Whenever an attack card is activated, gain {Level} |Barrier|.
 SpecialClockSe:
   Name: Special Stopwatch
   Description: At the start of {PlayerName}'s turn, select {Level:plural one='a card'
@@ -297,9 +297,9 @@ BurstDrawSe:
   Brief: Draw cards when entering |Burst|.
 DangerousMagicianSe:
   Name: Dangerous Illusionist
-  Brief: Whenever a |Throwing Knife| is used, {PlayerName} gains some |Time Pulse|.
-  Description: Whenever a |Throwing Knife| is used, {PlayerName} gains {Level} |Time
-    Pulse|.
+  Brief: Whenever a |Throwing Knife| is activated, {PlayerName} gains some |Time Pulse|.
+  Description: Whenever a |Throwing Knife| is activated, {PlayerName} gains {Level}
+    |Time Pulse|.
 SeeFengshuiSe:
   Name: Feng Shui Manipulation
   Description: "At the start of {PlayerName}'s turn, |Scry| {Scry}.\nWhenever a defense\
@@ -450,8 +450,8 @@ PrivateSquare:
   Description: "For every {Limit} cards played, {OwnerName} deals {Level} damage to\
     \ {PlayerName}.\n{Count} card{Count:plural one='' other='s'} left."
   Name: Silver Lockdown
-  Brief: Whenever enough card uses have been accumulated, <color=#B7F0FF>Sakuya Izayoi</color>
-    will deal damage to {PlayerName}.
+  Brief: Whenever enough cards have been played, <color=#B7F0FF>Sakuya Izayoi</color>
+    will deal attack damage to {PlayerName}.
 Emi:
   Name: Electromagnetic Interference
   Description: "{OwnerName} can't act {Duration:plural one='until end of turn' other='for\
@@ -564,9 +564,10 @@ ScryBlockSe:
   Name: Premeditation
   Brief: Whenever {PlayerName} |scries|, she gains |Block|.
 PoisonPotionSe:
-  Description: Whenever an |Unstable Potion| is used, it also applies {Level} |Poison|
-    to its target.
-  Brief: Whenever an |Unstable Potion| is used, it also applies |Poison| to its target.
+  Description: Whenever an |Unstable Potion| is activated, it also applies {Level}
+    |Poison| to its target.
+  Brief: Whenever an |Unstable Potion| is activated, it also applies |Poison| to its
+    target.
   Name: Witch's Crucible
 TimeAuraSe:
   Description: "At the end of {PlayerName}'s turn, deal {Level} damage to all enemies.\n\
@@ -818,8 +819,8 @@ ManaFreezed:
   Brief: The first card played each turn costs more mana to play.
 ColdPotionSe:
   Name: Cooling Agent
-  Description: '|Unstable Potions| also apply |Cold| when used.'
-  Brief: '|Unstable Potions| also apply |Cold| when used.'
+  Description: '|Unstable Potions| also apply |Cold| when activated.'
+  Brief: '|Unstable Potions| also apply |Cold| when activated.'
 ColdUp:
   Name: Bone-chilling Cold
   Description: The damage multiplier when re-applying |Cold| is increased by {Level}.
@@ -832,10 +833,10 @@ YouxiangMoonSe:
 ForeverCoolSe:
   Name: The Ever Cool Season Fantasia
   Description: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is\
-    \ used, apply |Cold| to a random enemy {Level} time{Level:plural one='' other='s'}.\n\
+    \ activated, apply |Cold| to a random enemy {Level} time{Level:plural one='' other='s'}.\n\
     Whenever an enemy gains |Cold|, {Level} random |Teammate| in the hand gains {Level}\
     \ |Unity|."
-  Brief: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is used,\
+  Brief: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is activated,\
     \ apply |Cold| to random enemies.\nWhenever an enemy gains |Cold|, random |Teammates|\
     \ in the hand gains 1 |Unity|."
 PurifyModule:
@@ -904,7 +905,7 @@ EnemyMaid:
   Description: At the end of {OwnerName}'s turn, she deals {Level} damage to {PlayerName}.
 KnifeTarget:
   Name: Lock On Target
-  Description: '|Throwing Knives| will target {OwnerName} when used.'
+  Description: '|Throwing Knives| will target {OwnerName} when activated.'
   Brief: '|Throwing Knives| will target {OwnerName}.'
 FrostArmor:
   Name: Frost Armor
