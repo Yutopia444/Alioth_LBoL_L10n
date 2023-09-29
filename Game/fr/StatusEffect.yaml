@@ -647,10 +647,10 @@ MeihongFireSe:
     Statut est piochée, infligez des dégâts à chaque ennemi.
 HuiyeManaSe:
   Name: Conte du Coupeur de Bambou
-  Brief: Au début du tour de {PlayerName}, gagnez <sprite="ManaSprite" name="P"> ;
-    augmente à chaque tour.
-  Description: Au début du tour de {PlayerName}, gagnez {Count} <sprite="ManaSprite"
-    name="P"> ; augmente de {Level} à chaque tour.
+  Brief: Lorsque {PlayerName} débute son tour, gagnez du mana aléatoire ; augmente
+    à chaque tour.
+  Description: Lorsque {PlayerName} débute son tour, gagnez {Count:plural one='% mana
+    aléatoire' other='% manas aléatoires'} ; augmente de {Level} à chaque tour.
 RangziFanshuSe:
   Name: Patate Douce Douce
   Brief: Récupérez un peu de vie après la bataille.
@@ -857,11 +857,13 @@ NoBaseManaThisTurn:
 Benwo:
   Name: Ego
   Description: "|Ego| est un |état d'esprit|, et un seul |état d'esprit| peut exister\
-    \ à la fois.\nInfligez et recevez des dégâts d'attaque doublés lorsque vous êtes\
-    \ dans l'état d'|Ego|."
+    \ à la fois.\nAprès avoir joué une carte, quittez l'état d'|Ego|.\nLes dégâts\
+    \ d'attaque infligés sont doublés. Si une carte non-|Attaque| est jouée, |Exilez|-la\
+    \ et gagnez 5 |Boucliers|."
   Brief: "|Ego| est un |état d'esprit|, et un seul |état d'esprit| peut exister à\
-    \ la fois.\nInfligez et recevez des dégâts d'attaque doublés lorsque vous êtes\
-    \ dans l'état d'|Ego|."
+    \ la fois.\nAprès avoir joué une carte, quittez l'état d'|Ego|.\nLes dégâts d'attaque\
+    \ infligés sont doublés. Si une carte non-|Attaque| est jouée, |Exilez|-la et\
+    \ gagnez 5 |Boucliers|."
 Chaowo:
   Name: Super-ego
   Description: "Le |Super-ego| est un |état d'esprit|, et un seul |état d'esprit|\
@@ -1092,9 +1094,6 @@ Starfall:
   Description: Après une |Sonde|, subissez {Level} dégât{Level:plural one='' other='s'].
   Brief: Après une |Sonde|, subissez des dégâts.
   Name: Chute d'Étoile
-DanmakuMBTIse:
-  Description: '|Idée| ne contiendra que des cartes aléatoires de couleurs {Mana1}
-    et {Mana2}.'
 ShirenKunchongSe:
   Name: Insecte Cannibale
   Brief: '{PlayerName} gagne des |Boucliers| lorsque {OwnerName} reçoit un |Malus|.'
@@ -1125,3 +1124,29 @@ BestFlower:
   Description: (WIP)
   Brief: (WIP)
   Name: Komeiji Koishi (WIP)
+NextTurnChaowo:
+  Description: Lorsque {PlayerName} débute son tour, entrez en état de |Super-ego|.
+  Brief: Lorsque {PlayerName} débute son tour, entrez en état de |Super-ego|.
+  Name: Psychanalyse
+BenwoAbilitySe:
+  Name: Libération de Soi
+  Description: Au lieu de quitter l'état d'|Ego| après avoir joué une carte, vous
+    quitterez l'état d'|Ego| à la fin du tour.
+  Brief: Au lieu de quitter l'état d'|Ego| après avoir joué une carte, vous quitterez
+    l'état d'|Ego| à la fin du tour.
+NextTurnBenwo:
+  Description: Lorsque {PlayerName} finit son tour, entrez en état d'|Ego|.
+  Name: Introspection
+  Brief: Lorsque {PlayerName} finit son tour, entrez en état d'|Ego|.
+ChaowoAbilitySe:
+  Name: Inhibition du Super-ego
+  Description: Lorsque vous quittez l'état de |Super-ego|, ajoutez au hasard {Level}
+    cartes |Entrée en Super-Ego| ou |Illumination| à votre main.
+  Brief: Lorsque vous quittez l'état de |Super-ego|, ajoutez au hasard des cartes
+    |Entrée en Super-Ego| ou |Illumination| à votre main.
+WuyishiDNASe:
+  Description: Lorsque {PlayerName} finit son tour, s'il n'est pas en |Épiphanie|,
+    vous perdez la partie.
+  Name: Génétique de l'Inconscient
+  Brief: Lorsque {PlayerName} finit son tour, s'il n'est pas en |Épiphanie|, vous
+    perdez la partie.
