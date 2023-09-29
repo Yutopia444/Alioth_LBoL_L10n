@@ -943,10 +943,12 @@ Benwo:
   Name: 本我
   Description: |-
     |本我|是一種|心境|，同時只能存在一種|心境|。
-    在|本我|狀態時，造成和受到雙倍的攻擊傷害。
+    打出下一張牌後離開|本我|。
+    翻倍造成的攻擊傷害。 如果打出的不是|攻擊牌|，放逐打出的卡牌並獲得 5 點|格擋|。
   Brief: |-
     |本我|是一種|心境|，同時只能存在一種|心境|。
-    在|本我|狀態時，造成和受到雙倍的攻擊傷害。
+    打出下一張牌後離開|本我|。
+    翻倍造成的攻擊傷害。 如果打出的不是|攻擊牌|，放逐打出的卡牌並獲得 5 點|格擋|。
 
 Chaowo:
   Name: 超我
@@ -973,8 +975,6 @@ Starfall:
   Description: '|占卜|後，受到 {Level} 點傷害。'
   Brief: '|占卜|後，受到傷害。'
 
-DanmakuMBTIse:
-  Description: '|念想|只會隨機包含{Mana1}及{Mana2}顔色的卡牌。'
 HademanSe:
   Name: 哈德曼的妖怪少女
   Description: (WIP)
@@ -1050,10 +1050,10 @@ MeihongPowerSe:
 HuiyeManaSe:
   Name: 竹取物語
   Description: |-
-    {PlayerName}的回合開始時，獲得 {Count} 點<sprite="ManaSprite" name="P">。
+    {PlayerName}的回合開始時，獲得 {Count} 點隨機的法力。
     每次生效前提高 {Level} 點。
   Brief: |-
-    {PlayerName}的回合開始時，獲得若干點<sprite="ManaSprite" name="P">。
+    {PlayerName}的回合開始時，獲得若干點隨機的法力。
     每次生效前提高若干點。
 
 YouxiangMoonSe:
@@ -1191,3 +1191,23 @@ CatchGoblinSe:
   Description: 受到的傷害減少 33%，擊敗後掉落 50<sprite="Point" name="Gold">。
   Brief: 受到的傷害減少33%，擊敗後掉落 50<sprite="Point" name="Gold">。
 
+BenwoAbilitySe:
+  Description: 打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。
+  Brief: 打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。
+  Name: 本我的解放
+NextTurnBenwo:
+  Description: '{PlayerName}的回合結束開始時，進入|本我|。'
+  Name: 下回合進入本我
+  Brief: '{PlayerName}的回合結束開始時，進入|本我|。'
+ChaowoAbilitySe:
+  Brief: 離開|超我|時隨機將若干張|進入超我|或|進入頓悟|加入手牌。
+  Name: 超我的抑制
+  Description: 離開|超我|時隨機將 {Level} 張|進入超我|或|進入頓悟|加入手牌。
+WuyishiDNASe:
+  Description: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
+  Name: 無意識的基因
+  Brief: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
+NextTurnChaowo:
+  Name: 下回合進入超我
+  Description: '{PlayerName}的回合結束開始時，進入|超我|。'
+  Brief: '{PlayerName}的回合結束開始時，進入|超我|。'
