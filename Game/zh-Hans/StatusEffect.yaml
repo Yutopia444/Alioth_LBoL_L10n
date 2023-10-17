@@ -975,30 +975,10 @@ Starfall:
   Description: '|占卜|后，受到 {Level} 点伤害。'
   Brief: '|占卜|后，受到伤害。'
 
-HademanSe:
-  Name: 哈德曼的妖怪少女
-  Description: (WIP)
-  Brief: (WIP)
-
-BestFlower:
-  Name: 古明地恋WIP
-  Description: (WIP)
-  Brief: (WIP)
-
-BenwoAbilitySe:
-  Name: 本我的解放
-  Description: 打出卡牌后不离开|本我|，改为在回合结束时离开|本我|。
-  Brief: 打出卡牌后不离开|本我|，改为在回合结束时离开|本我|。
-
 NextTurnBenwo:
   Name: 下回合进入本我
   Description: '{PlayerName}的回合结束开始时，进入|本我|。'
   Brief: '{PlayerName}的回合结束开始时，进入|本我|。'
-
-ChaowoAbilitySe:
-  Name: 超我的抑制
-  Description: 离开|超我|时随机将 {Level} 张|进入超我|或|进入顿悟|加入手牌。
-  Brief: 离开|超我|时随机将若干张|进入超我|或|进入顿悟|加入手牌。
 
 NextTurnChaowo:
   Name: 下回合进入超我
@@ -1009,6 +989,51 @@ WuyishiDNASe:
   Name: 无意识的基因
   Description: '{PlayerName}的回合结束时，如果不处于|顿悟|，死亡。'
   Brief: '{PlayerName}的回合结束时，如果不处于|顿悟|，死亡。'
+
+BenwoTouyingSe:
+  Name: 自我投影
+  Description: 每次进入|本我|时，将 {Level} 张完全随机的攻击牌加入手牌，|暂塑|为{Mana}且附带|放逐|。
+  Brief: 每次进入|本我|时，将一张完全随机的攻击牌加入手牌，暂塑为0且附带|放逐|。
+
+ChaofanyinSe:
+  Name: 超反应知觉
+  Description: 每当你打出一张|直觉|牌时，如果没有触发|直觉|，将 {Level} 张费用为{Mana}且附带|放逐|的复制加入抽牌堆顶。
+  Brief: 每当你打出一张|直觉|牌时，如果没有触发|直觉|，将费用为1且附带|放逐|的复制加入抽牌堆顶。
+
+ChaoyueZiwoSe:
+  Name: 超越自我
+  Description: '{PlayerName}的回合结束时，如果处于|超我|，获得 {Level} 点|火力|和|灵力|。'
+  Brief: '{PlayerName}的回合结束时，如果处于|超我|，获得|火力|和|灵力|。'
+
+HuiguiLizhiSe:
+  Name: 回归理智
+  Description: 回合结束时进入|超我|。
+  Brief: 回合结束时进入|超我|。
+
+KongxiangshangSe:
+  Name: 空想上的人格保持者
+  Description: 打出|基本防御|牌后进入|超我|。
+  Brief: 打出|基本防御|牌后进入|超我|。
+
+ShortLove:
+  Name: 闪电恋
+  Description: 下一张|基本|卡的数值提高 {Level}。
+  Brief: 下一张|基本|卡的数值提高。
+
+LongLove:
+  Name: 长相思
+  Description: 所有|基本|卡的数值提高 {Level}。
+  Brief: 所有|基本|卡的数值提高。
+
+SelfControlSe:
+  Name: 掌控自我
+  Description: 每次在|本我|状态中造成攻击伤害，获得 {Level} 点|护盾|。
+  Brief: 每次在|本我|状态中造成攻击伤害，获得|护盾|。
+
+ZhuozhuangChengzhangSe:
+  Name: 茁壮成长
+  Description: '{PlayerName}的回合结束时，将 {Level} 张|生机|加入手牌。'
+  Brief: '{PlayerName}的回合结束时，将|生机|加入手牌。'
 
 LoseSpiritSe:
   Name: 丢失的羽衣
@@ -1195,11 +1220,11 @@ BailianFireSe:
 DoubleJKSe:
   Name: 世纪的二重身超人
   Description: |-
-    {PlayerName}的每个回合只能打出 {Limit} 张卡牌。（剩余 {Count} 张）
     当{PlayerName}的回合结束时，若本回合不是一个额外的回合，保留格挡并进行一个额外的回合。
+    这个额外回合的只能打出 {Level} 张卡牌。
   Brief: |-
-    {PlayerName}的每个回合只能打出若干张卡牌。
     当{PlayerName}的回合结束时，若本回合不是一个额外的回合，保留格挡并进行一个额外的回合。
+    这个额外回合的只能打出有限张卡牌。
 
 YukariFriendSe:
   Name: 幻想的境界
