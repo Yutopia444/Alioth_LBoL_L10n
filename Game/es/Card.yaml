@@ -286,7 +286,7 @@ ToolBlock:
   Name: Escudo Balístico
   Description: "Obtén {Block} de |Bloqueo|.\n|Limitado【{DeckCounter}】|"
 KoishiBlockB:
-  Name: Soñando
+  Name: Autoaislamiento
   Description: Obtén {Block} de |Bloqueo|.
 EmpCard:
   Description: "Inflige {Damage} de daño.\nSi el objetivo es un |dron|, no puede actuar\
@@ -520,7 +520,7 @@ MarisaBlockB:
   FlavorText: Si un meteorito alguna vez cae sobre Gensokyo, sabemos a quién acudir.
 KoishiAttackB:
   Description: Inflige {Damage} de daño.
-  Name: Defecto de ADN
+  Name: Amor Desbordante
 ToolVulnerable:
   Name: Tambor Cargado
   Description: "Aplica {Value1} de |Vulnerable|.\n|Limitado【{DeckCounter}】|"
@@ -2603,16 +2603,20 @@ AliceAttackB:
   Description: Inflige {Damage} de daño.
   Name: Regreso a la Inanimación (WIP)
 KoishiMove:
-  Name: Acto Inconsciente (WIP)
-  Description: (WIP)
+  Name: Acto Inconsciente
+  Description: "Elige uno, mientras entras en un |Estado Mental| aleatorio:\n- Inflige\
+    \ {Damage} de daño a cada enemigo.\n- Obtén {Block} de |Bloqueo|."
 LoveFire:
-  Name: Ascuas del Amor (WIP)
-  ExtraDescription1: (WIP)
-  Description: "Inflige {Damage} de daño.\n|Por cada {Mana} extra gastado|: Aumenta\
-    \ el daño de {SelfName} en {Value1}.\nGuarda el maná gastado al jugar {SelfName}\
-    \ y devuelve el maná guardado para la próxima vez que se juegue {SelfName}."
+  Name: Ascuas del Amor
+  ExtraDescription1: "Inflige {Damage} de daño.\nGana {SavedMana}.\n|Por cada {Mana}\
+    \ gastado|: Aumenta el daño de {SelfName} en {Value1}.\nGuarda el maná gastado\
+    \ al jugar {SelfName} y devuelve el maná guardado para la próxima vez que se juegue\
+    \ {SelfName}."
+  Description: "Inflige {Damage} de daño.\n|Por cada {Mana} gastado|: Aumenta el daño\
+    \ de {SelfName} en {Value1}.\nGuarda el maná gastado al jugar {SelfName} y devuelve\
+    \ el maná guardado para la próxima vez que se juegue {SelfName}."
 BabyDream:
-  Name: Sueño del Embrión (WIP)
+  Name: Sueño del Embrión
   Description: Todas las cartas |básicas| cuestan temporalmente {Mana} y ganan |Eco|.
 UpgradeDoll:
   Name: Bunraku de la Doncella (WIP)
@@ -2632,33 +2636,42 @@ MojingShanjie:
   Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
     mano. |Cuesta temporalmente| {Mana}.
 Danxiangsi:
-  Name: Amor no Correspondido (WIP)
+  Name: Amor no Correspondido
   Description: "Gana {Value1} de |Poder|.\n|Cuando se retiene|: Aumenta el |Poder|\
     \ ganado en {Value2}."
 XinzuoTest:
-  Name: Prueba del Zodíaco (WIP)
-  Description: (WIP)
+  Name: Prueba del Zodíaco
+  Description: "Agrega {Value1} |Astrología{Value1:plural one='' other='s'}| a la\
+    \ mano.\n|Instinto|: Aplica {Value2} |Lluvia de Estrellas| a cada enemigo."
 FlowerGone:
-  Name: Jardín Imaginario (WIP)
+  Name: Recuerdos Marchitos
   Description: "Obtén {Block} de |Bloqueo|.\n|En Super-Ego|: Gana {Value1} de |Espíritu|\
     \ y se |Exilia| {SelfName}."
   ExtraDescription1: "Obtén {Block} de |Bloqueo|.\n|d:En Super-Ego: Gana {Value1}\
     \ de Espíritu y se Exilia {SelfName}.|"
-PickFlower:
-  ExtraDescription2: (WIP)
 CloseMemory:
-  Name: Recuerdos Reprimidos (WIP)
-  Description: (WIP)
+  Name: Recuerdos Olvidados
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}\nPor cada carta\
+    \ en la mano, gana <sprite=\"ManaSprite\" name=\"B\">.\nCada carta en la mano\
+    \ cuesta temporalmente <sprite=\"ManaSprite\" name=\"1\"> más."
 QinchunPanni:
-  Name: Rebeldía de Adolescencia (WIP)
-  Description: (WIP)
-  ExtraDescription1: (WIP)
-  ExtraDescription2: (WIP)
+  Name: Rebeldía de Adolescencia
+  Description: "|No estando en Id|: Inflige {Damage} de daño al enemigo con menos\
+    \ vida.\n|Estando en Id|: Obtén {Block} de |Bloqueo| y roba {Value1:plural one='%\
+    \ carta' other='% cartas'}."
+  ExtraDescription1: "|d:No estando en Id: Inflige {Damage} de daño al enemigo con\
+    \ menos vida.|\n|Estando en Id|: Obtén {Block} de |Bloqueo| y roba {Value1:plural\
+    \ one='% carta' other='% cartas'}."
+  ExtraDescription2: "|No estando en Id|: Inflige {Damage} de daño al enemigo con\
+    \ menos vida.\n|d:Estando en Id: Obtén {Block} de Bloqueo y roba {Value1:plural\
+    \ one='% carta' other='% cartas'}.|"
 MrBulb:
-  Name: Señorita Bombilla (WIP)
-  Description: (WIP)
+  Name: Señor Bombilla
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\nSi los tres\
+    \ |Estados Mentales| diferentes fueron activados en este turno, {SelfName} cuesta\
+    \ <sprite=\"ManaSprite\" name=\"0\"> para jugar."
 PerfectCrime:
-  Name: Crimen Perfecto (WIP)
+  Name: Crimen Perfecto
   Description: "Roba el |Espíritu|, |Evasión|, |Amuleto|, |Camuflaje Óptico| y |Perfección|\
     \ del objetivo.\nInflige {Damage} de daño."
 PoisonTeaParty:
@@ -2679,11 +2692,21 @@ DoubleJK:
     \ un turno extra, reteniendo todo el |Bloqueo| ganado.\nSolo se pueden jugar hasta\
     \ {Value1} carta{Value1:plural one='' other='s'} en ese turno."
 KoishiMoveAttack:
-  Name: Mirar Esto (WIP)
-  Description: (WIP)
+  Name: Mirar Esto
+  Description: "Inflige {Damage} de daño a cada enemigo y entra en |Id|.\n(El daño\
+    \ infligido y recibido se duplica)."
+  ExtraDescription1: "Inflige {Damage} de daño a cada enemigo y entra en |Super-Ego|.\n\
+    (Gana maná al salir del estado)."
+  ExtraDescription2: "Inflige {Damage} de daño a cada enemigo y entra en |Epifanía|.\n\
+    (No se descarta cartas ni maná)."
 KoishiMoveDefense:
-  Name: Mirar Eso (WIP)
-  Description: (WIP)
+  Name: Mirar Eso
+  Description: "Obtén {Block} de |Bloqueo| y entra en |Id|.\n(El daño infligido y\
+    \ recibido se duplica)."
+  ExtraDescription1: "Obtén {Block} de |Bloqueo| y entra en |Super-Ego|.\n(Gana maná\
+    \ al salir del estado)."
+  ExtraDescription2: "Obtén {Block} de |Bloqueo| y entra en |Epifanía|.\n(No se descarta\
+    \ cartas ni maná)."
 AnimalSpirit:
   Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
     \ de los animales, otorgándoles uno de los siguientes efectos:\nLobo: Ganan |Eco|.\n\
@@ -2723,14 +2746,8 @@ NightMana4:
   Description: "Si hay una {SelfName} en la mano, todas las cartas cuestan {Mana}\
     \ maná más para jugar.\nCada vez que se juega {FreezeTimes} carta, se |Exilia|\
     \ una {SelfName}."
-BecomeChaowo:
-  Description: Entra en |Super-Ego|.
 BenwoAbility:
   Description: (WIP)
-ChaowoAbility:
-  UpgradedDescription: "Entra en el estado |Super-Ego| al comienzo del siguiente turno\
-    \ de {PlayerName}.\nAgrega una carta de |Entrando al Id| o |Entrando a la Epifanía|\
-    \ seleccionada aleatoriamente a la mano al salir del |Super-Ego|."
 WuyishiDNA:
   Description: "Entra en |Epifanía|. Termina el turno. Luego, toma un turno extra.\n\
     Al final del turno de {PlayerName}, si {PlayerName} no está en |Epifanía|, pierde\
@@ -2741,3 +2758,127 @@ AyaNewsAliceSp:
   Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   FlavorText: ¡Una edición especial sobre la Exposición de la Capital Lunar! Detalla
     los chismes que rodean a {PlayerName}.
+RelianJingji:
+  Name: Espinas Apasionadas
+  Description: "Inflige {Damage} de daño.\n|Cuando se juega una carta adyacente|:\
+    \ Aumenta el daño de {SelfName} en {Value1} la próxima vez que se juega."
+PiankeNingjing:
+  Name: Momento de Silencio
+  UpgradedDescription: "Obtén de {Block} de |Bloqueo|.\nSi estás en un |Estado mental|,\
+    \ sales del estado y roba {Value1} carta{Value1:plural one='' other='s'}."
+  Description: "Obtén de {Block} de |Bloqueo|.\nSi estás en |Super-Ego|, sales del\
+    \ estado y roba {Value1} carta{Value1:plural one='' other='s'}."
+Yehuchan:
+  Name: Delirios de Iluminación
+  Description: "Ganar {Value1} de |Evasión| y {Value2} de |Bloqueo|.\n|Instinto|:\
+    \ Entra en |Epifanía|."
+HuiguiLizhi:
+  Description: Al final del turno de {PlayerName}, entra en |Super-Ego|.
+  Name: Regreso a la Cordura
+YaoguaiNaodianbo:
+  Name: Polígrafo Youkai
+  Description: "Inflige {Damage} de daño.\n|Instinto|: Gana {Mana}."
+YoubiKongjuzheng:
+  Name: Claustrofobia
+  Description: "Obtén {Block} de |Bloqueo|.\n|Instinto|: Obtén {Shield} de |Barrera|."
+BuruDiankuang:
+  Name: Descender en la Locura
+  Description: Gana {Mana} y entra en |Id|.
+  UpgradedDescription: "Gana {Mana} y entra en |Id|.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'} de ataque."
+XinliZhenliao:
+  Name: Diagnosis Mental
+  Description: "Elige una |Prescripción| para agregarla a la mano.\n- Entra en |Id|.\n\
+    - Entra en |Super-Ego|.\n- Entra en |Epifanía|."
+XinliBenwo:
+  Name: Prescripción -Id-
+  Description: Entra en el estado |Id|.
+XinliChaowo:
+  Name: Prescripción -Super-Ego-
+  Description: Entra en el estado |Super-Ego|.
+XinliDunwu:
+  Name: Prescripción -Epifanía-
+  Description: Entra en el estado |Epifanía|.
+DNARain:
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|Al entrar en Super-Ego\
+    \ o Epifanía|: Aumenta el daño de {SelfName} en {Value1}."
+  Name: Defecto del ADN
+MeihaoHuiyi:
+  Name: Buenos Recuerdos
+  Description: '|Cuando se juega una carta adyacente|: Obtén {Block} de |Bloqueo|
+    y |Mejora| una carta aleatoria.'
+ZhuozhuangChengzhang:
+  Name: Crecimiento Saludable
+  Description: Al final del turno de {PlayerName}, agrega {Value1} |Vitalidad{Value1:plural
+    one='' other='es'}| a la mano.
+  UpgradedDescription: "Gana {Value2} de |Evasión|.\nAl final del turno de {PlayerName},\
+    \ agrega {Value1} |Vitalidad{Value1:plural one='' other='es'}| a la mano."
+LianaiChongdong:
+  Name: Impulsos de Amor
+  ExtraDescription1: "|d:No estando en Id: Aumenta la siguiente carta Básica su valor\
+    \ numérico por {Value1}.|\n|Estando en Id|: Aumenta cada carta |Básica| su valor\
+    \ numérico por {Value2}."
+  Description: "|No estando en Id|: Aumenta la siguiente carta |Básica| su valor numérico\
+    \ por {Value1}.\n|Estando en Id|: Aumenta cada carta |Básica| su valor numérico\
+    \ por {Value2}."
+  ExtraDescription2: "|No estando en Id|: Aumenta la siguiente carta |Básica| su valor\
+    \ numérico por {Value1}.\n|d:Estando en Id: Aumenta cada carta Básica su valor\
+    \ numérico por {Value2}.|"
+TaoqiQiangwei:
+  Name: Rebelión de Rosas
+  Description: "Obtén {Block} de |Bloqueo| y roba {Value1} carta{Value1:plural one=''\
+    \ other='s'}.\n|Cuando se juega una carta adyacente|: Reduce el coste de {SelfName}\
+    \ en {Mana} hasta el final del combate."
+LoveSeed:
+  Name: Semilleros de Amor
+  Description: "Cura {Value1} de vida y {TotalMana}.\n|Cuando se juega una carta adyacente|:\
+    \ Aumenta el maná de {SelfName} en {Mana}."
+JianruiSixiang:
+  Name: Rorschach en Danmaku
+  Description: "Gana {Value1} de |Reflejo|.\n|Al entrar en un Estado Mental|: Devuelve\
+    \ {SelfName} de la pila de descarte a la mano."
+BenwoTouying:
+  Name: Proyección del Ego
+  Description: "Siempre que {PlayerName} entra en |Id|, agrega una carta de |Ataque|\
+    \ |p:completamente aleatorio| a la mano. |Cuesta temporalmente| {Mana} y tiene\
+    \ |Exilio|.\nEntra en |Id|."
+FangkongSixu:
+  Name: Mente Vacía
+  Description: "Descarta cualquier cantidad de cartas. Por cada carta descartada de\
+    \ esta manera, obtén {Value1} de |Bloqueo|.\nSales del |Estado Mental| actual."
+JiyiShitihua:
+  Name: Manifestación de la Memoria
+  Description: "Elige una carta de ataque en la mano. Agrega una |Copia| de esa carta\
+    \ a la mano que |costara temporalmente| {Mana} y tiene |Exilio|.\nInflige {Damage}\
+    \ de daño."
+SelfControl:
+  Name: Autocontrol
+  Description: Siempre que {PlayerName} inflija daño por un ataque mientras está en
+    |Id|, obtén {Value1} de |Barrera|.
+  UpgradedDescription: "Siempre que {PlayerName} inflija daño por un ataque mientras\
+    \ está en |Id|, obtén {Value1} de |Barrera|.\nEntra en |Id|."
+Chaofanyin:
+  Name: Hiperactiva
+  Description: Cuando una carta con |Instinto| se juega y no activa su efecto |Instinto|,
+    agrega {Value1} |Copia{Value1:plural one='' other='s'}| de él en la parte superior
+    de la pila de robo que |Cuesta{Value1:plural one='' other='n'} temporalmente|
+    {Mana} y tiene{Value1:plural one='' other='n'} |Exilio|.
+Kongxiangshang:
+  Name: Autorretención Ideal
+  Description: Cuando una carta de |Defensa Básica| se juega, entra en |Super-Ego|.
+ZuxianTuomeng:
+  Name: Sueño Ancestral
+  Description: "|Cuando se roba|: |Exilia| la carta más a la izquierda en la mano.\
+    \ Agrega {Value1} |Copia{Value1:plural one='' other='s'}| de ello que |cuesta{Value1:plural\
+    \ one='n' other=''} temporalmente}| {Mana} y tiene{Value1:plural one='' other='n'}\
+    \ |Exilio|."
+ChaoyueZiwo:
+  Name: Trascendencia
+  Description: Al final del turno de {PlayerName}, si está en |Super-Ego|, gana {Value1}
+    de |Poder| y |Espíritu|.
+  UpgradedDescription: "Al final del turno de {PlayerName}, si está en |Super-Ego|,\
+    \ gana {Value1} de |Poder| y |Espíritu|.\nEntra en |Super-Ego|."
+Beiyanwu:
+  Name: Filosofía del Despreciado
+  Description: "|Exilia| las cartas adyacentes de {SelfName}. Para cada carta |Exiliada|\
+    \ de esta manera, gana {Mana} y roba {Value1} carta{Value1:plural one='' other='s'}."
