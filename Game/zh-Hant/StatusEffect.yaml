@@ -975,12 +975,8 @@ Starfall:
   Description: '|占卜|後，受到 {Level} 點傷害。'
   Brief: '|占卜|後，受到傷害。'
 
-HademanSe:
-  Description: (WIP)
 BestFlower:
   Name: 古明地戀WIP
-  Brief: (WIP)
-
 LoseSpiritSe:
   Name: 丟失的羽衣
   Description: '{PlayerName}回合開始時，失去 {Level} 點|靈力|。'
@@ -1166,11 +1162,11 @@ BailianFireSe:
 DoubleJKSe:
   Name: 世紀的二重身超人
   Description: |-
-    {PlayerName}的每個回合只能打出 {Limit} 張卡牌。（剩餘{Count} 張）
-    當{PlayerName}的回合結束時，若本回合不是一個額外的回合，保留格擋並進行一個額外的回合。
+    當{PlayerName}的回合結束時，若本回合不是額外的回合，保留格擋並進行額外的回合。
+    這個額外回合的只能打出 {Level} 張卡牌。
   Brief: |-
-    {PlayerName}的每個回合只能打出若干張卡牌。
     當{PlayerName}的回合結束時，若本回合不是一個額外的回合，保留格擋並進行一個額外的回合。
+    這個額外回合的只能打出有限張卡牌。
 
 YukariFriendSe:
   Name: 幻想的境界
@@ -1187,14 +1183,10 @@ CatchGoblinSe:
   Description: 受到的傷害減少 33%，擊敗後掉落 50<sprite="Point" name="Gold">。
   Brief: 受到的傷害減少33%，擊敗後掉落 50<sprite="Point" name="Gold">。
 
-BenwoAbilitySe:
-  Brief: 打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。
 NextTurnBenwo:
   Description: '{PlayerName}的回合結束開始時，進入|本我|。'
   Name: 下回合進入本我
   Brief: '{PlayerName}的回合結束開始時，進入|本我|。'
-ChaowoAbilitySe:
-  Name: 超我的抑制
 WuyishiDNASe:
   Description: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
   Name: 無意識的基因
@@ -1203,3 +1195,39 @@ NextTurnChaowo:
   Name: 下回合進入超我
   Description: '{PlayerName}的回合結束開始時，進入|超我|。'
   Brief: '{PlayerName}的回合結束開始時，進入|超我|。'
+BenwoTouyingSe:
+  Name: 自我投影
+  Description: 每次進入|本我|時，將 {Level} 張完全隨機的攻擊牌加入手牌，|暫塑|為{Mana}且附帶|放逐|。
+  Brief: 每次進入|本我|時，將一張完全隨機的攻擊牌加入手牌，暫塑為0且附帶|放逐|。
+ChaofanyinSe:
+  Name: 超反應知覺
+  Description: 每當你打出一張|直覺|牌時，如果沒有觸發|直覺|，將 {Level} 張費用為{Mana}且附帶|放逐|的複製加入抽牌堆頂。
+  Brief: 每當你打出一張|直覺|牌時，如果沒有觸發|直覺|，將費用為1且附帶|放逐|的複製加入抽牌堆頂。
+ChaoyueZiwoSe:
+  Name: 超越自我
+  Description: '{PlayerName}的回合結束時，如果處於|超我|，獲得 {Level} 點|火力|和|靈力|。'
+  Brief: '{PlayerName}的回合結束時，如果處於|超我|，獲得|火力|和|靈力|。'
+HuiguiLizhiSe:
+  Description: 回合結束時進入|超我|。
+  Brief: 回合結束時進入|超我|。
+  Name: 回歸理智
+KongxiangshangSe:
+  Name: 空想上的人格保持者
+  Brief: 打出|基本防禦|牌後進入|超我|。
+  Description: 打出|基本防禦|牌後進入|超我|。
+ShortLove:
+  Name: 閃電戀
+  Description: 下一張|基本|卡的數值提高 {Level}。
+  Brief: 下一張|基本|卡的數值提高。
+LongLove:
+  Name: 長相思
+  Description: 所有|基本|卡的數值提高 {Level}。
+  Brief: 所有|基本|卡的數值提高。
+SelfControlSe:
+  Name: 掌控自我
+  Brief: 每次在|本我|狀態中造成攻擊傷害，獲得|護盾|。
+  Description: 每次在|本我|狀態中造成攻擊傷害，獲得 {Level} 點|護盾|。
+ZhuozhuangChengzhangSe:
+  Name: 茁壯成長
+  Description: '{PlayerName}的回合結束時，將 {Level} 張|生機|加入手牌。'
+  Brief: '{PlayerName}的回合結束時，將|生機|加入手牌。'
