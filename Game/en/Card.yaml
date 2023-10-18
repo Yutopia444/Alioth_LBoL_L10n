@@ -576,7 +576,7 @@ KoishiAttackG:
 KoishiBlockB:
   Description: 'Gain {Block} |Block|.'
 
-  Name: Withdraw
+  Name: Self-Isolation
 KoishiAttackB:
   Description: 'Deal {Damage} damage.'
 
@@ -2627,10 +2627,17 @@ NightMana4:
     \ played, |Exile| {SelfName}."
   Name: 'Long Night: 5AM'
 KoishiMoveAttack:
-  Description: (WIP)
+  Description: "Deal {Damage} damage to each enemy and enter |Id|.\n(Damage dealt\
+    \ and taken is doubled.)"
   Name: Look at This
+  ExtraDescription1: "Deal {Damage} damage to each enemy and enter |Super-Ego|.\n\
+    (Gain mana on exit.)"
+  ExtraDescription2: "Deal {Damage} damage to each enemy and enter |Epiphany|.\n(Don't\
+    \ discard cards or mana.)"
 MrBulb:
-  Description: (WIP)
+  Description: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nIf three different\
+    \ |Mental States| were entered this turn, {SelfName} costs <sprite=\"ManaSprite\"\
+    \ name=\"0\"> to play."
   Name: Mr. Lightbulb
 DoubleActiveTrigger:
   Description: (WIP)
@@ -2639,26 +2646,40 @@ TriggerAllPassive:
   Description: (WIP)
   Name: Activate Passives
 KoishiMove:
-  Description: (WIP)
+  Description: "Choose one, while entering a random |Mental State|:\n- Deal {Damage}\
+    \ damage to each enemy.\n- Gain {Block} |Block|."
   Name: Act of Unconscious
 XinzuoTest:
-  Description: (WIP)
+  Description: "Add {Value1} |Astrolog{Value1:plural one='y' other='ies'}| to the\
+    \ hand.\n|Instinct|: Apply {Value2} |Starfall| to each enemy."
   Name: Zodiac Test
 FlowerGone:
   Description: "Gain {Block} |Block|.\n|In Super-Ego|: Gain {Value1} |Spirit| and\
     \ |Exile| {SelfName}."
-  Name: Imaginary Garden
+  Name: Withering Memories
   ExtraDescription1: "Gain {Block} |Block|.\n|d:In Super-Ego: Gain {Value1} |Spirit|\
     \ and |Exile| {SelfName}.|"
 CloseMemory:
-  Description: (WIP)
-  Name: Suppressed Memories
+  Description: "Draw {Value1} card{Value1:plural one='' other='s'}\nFor each card\
+    \ in the hand, gain <sprite=\"ManaSprite\" name=\"B\">.\nEach card in the hand\
+    \ temporarily costs <sprite=\"ManaSprite\" name=\"1\"> more."
+  Name: Neglected Memories
 QinchunPanni:
-  Description: (WIP)
+  Description: "|Not in Id|: Deal {Damage} damage to the enemy with the least life.\n\
+    |In Id|: Gain {Block} |Block| and draw {Value1:plural one='% card' other='% cards'}."
   Name: Adolescent Rebellion
+  ExtraDescription1: "|d:Not in Id: Deal {Damage} damage to the enemy with the least\
+    \ life.|\n|In Id|: Gain {Block} |Block| and draw {Value1:plural one='% card' other='%\
+    \ cards'}."
+  ExtraDescription2: "|Not in Id|: Deal {Damage} damage to the enemy with the least\
+    \ life.\n|d:In Id: Gain {Block} Block and draw {Value1:plural one='% card' other='%\
+    \ cards'}.|"
 KoishiMoveDefense:
-  Description: (WIP)
+  Description: "Gain {Block} |Block| and enter |Id|.\n(Damage dealt and taken is doubled.)"
   Name: Look at That
+  ExtraDescription1: "Gain {Block} |Block| and enter |Super-Ego|.\n(Gain mana on exit.)"
+  ExtraDescription2: "Gain {Block} |Block| and enter |Epiphany|.\n(Don't discard cards\
+    \ or mana.)"
 Danxiangsi:
   Description: "Gain {Value1} |Firepower|.\n|When Retained|: Increase |Firepower|\
     \ gain by {Value2}."
@@ -2687,10 +2708,6 @@ ZiwoCard:
   Name: Selfless Love
   Description: "Deal {Damage} damage.\nReturn to Ego and exit the current |Mental\
     \ State|.\n|Instinct|: Immediately enter |Id|."
-ChaowoAbility:
-  UpgradedDescription: "Enter |Super-Ego| at the start of {PlayerName}'s next turn.\n\
-    Add a randomly selected |Id Entry| or |Epiphany Entry| into the hand on exiting\
-    \ |Super-Ego|."
 WuyishiDNA:
   Name: Genetics of the Unconscious
   Description: "Enter |Epiphany|. End the turn. Then, take an extra turn.\nAt the\
@@ -2701,9 +2718,12 @@ ChaowoCard:
   Name: Super-Ego
 LoveFire:
   Name: Embers of Love
-  Description: "Deal {Damage} damage.\n|For each extra {Mana} spent|: Increase {SelfName}'s\
+  Description: "Deal {Damage} damage.\n|For each {Mana} spent|: Increase {SelfName}'s\
     \ damage by {Value1}.\nRecords mana spent for playing {SelfName}, and returns\
-    \ mana recorded for the next time {SelfName}'s played."
+    \ mana recorded for the next time {SelfName} is played."
+  ExtraDescription1: "Deal {Damage} damage.\nGain {SavedMana}.\n|For each {Mana} spent|:\
+    \ Increase {SelfName}'s damage by {Value1}.\nRecords mana spent for playing {SelfName},\
+    \ and returns mana recorded for the next time {SelfName} is played."
 AliceAttackW:
   Name: Futuristic Bunraku
   Description: Deal {Damage} damage.
@@ -2713,8 +2733,6 @@ DeployPenglai:
 AliceBlockU:
   Name: Danmaku Barrier
   Description: Gain {Block} |Block|.
-BecomeChaowo:
-  Description: Enter |Super-Ego|.
 AliceAttackB:
   Name: Return Inanimateness
   Description: Deal {Damage} damage.
@@ -2732,3 +2750,120 @@ AyaNewsAliceSp:
   Description: '|At the end of the turn|: Lose {Value1} |Spirit|.'
   FlavorText: A special edition on the Lunar Capital Exhibition! It details the gossip
     surrounding {PlayerName}.
+RelianJingji:
+  Name: Passionate Thorns
+  Description: "Deal {Damage} damage.\n|When an adjacent card is played|: Increase\
+    \ {SelfName}'s damage by {Value1} the next time it's played."
+PiankeNingjing:
+  Name: Moment of Silence
+  Description: "Gain {Block} |Block|.\nIf in |Super-Ego|, exit it and draw {Value1}\
+    \ card{Value1:plural one='' other='s'}."
+  UpgradedDescription: "Gain {Block} |Block|.\nIf in a |Mental State|, exit it and\
+    \ draw {Value1} card{Value1:plural one='' other='s'}."
+Yehuchan:
+  Name: Delusions of Enlightenment
+  Description: "Gain {Value1} |Graze| and {Value2} |Lock On|.\n|Instinct|: Enter |Epiphany|."
+HuiguiLizhi:
+  Name: Return to Sanity
+  Description: At the end of {PlayerName}'s turn, enter |Super Ego|.
+YaoguaiNaodianbo:
+  Description: "Deal {Damage} damage.\n|Instinct|: Gain {Mana}."
+  Name: Youkai Polygraph
+YoubiKongjuzheng:
+  Name: Claustrophobia
+  Description: "Gain {Block} |Block|.\n|Instinct|: Gain {Shield} |Barrier|."
+BuruDiankuang:
+  Name: Fall into Madness
+  Description: Gain {Mana} and enter |Id|.
+  UpgradedDescription: "Gain {Mana} and enter |Id|.\nDraw {Value1} attack card{Value1:plural\
+    \ one='' other='s'}."
+XinliZhenliao:
+  Name: Mental Diagnosis
+  Description: "Choose a |Prescription| to add to the hand.\n- Enter |Id|.\n- Enter\
+    \ |Super-Ego|.\n- Enter |Epiphany|."
+XinliBenwo:
+  Name: Prescription -Id-
+  Description: Enter |Id|.
+XinliChaowo:
+  Name: Prescription -Super-Ego-
+  Description: Enter |Super-Ego|.
+XinliDunwu:
+  Name: Prescription -Epiphany-
+  Description: Enter |Epiphany|.
+DNARain:
+  Name: DNA Rain
+  Description: "Deal {Damage} damage to each enemy.\n|When entering Super-Ego or Epiphany|:\
+    \ Increase {SelfName}'s damage by {Value1}."
+MeihaoHuiyi:
+  Name: Fond Memories
+  Description: '|When an adjacent card is played|: Gain {Block} |Block| and |Upgrade|
+    a random card.'
+ZhuozhuangChengzhang:
+  Name: Healthy Growth
+  Description: At the end of {PlayerName}'s turn, add {Value1} |Vitalit{Value1:plural
+    one='y' other='ies'}| to the hand.
+  UpgradedDescription: "Gain {Value2} |Graze|.\nAt the end of {PlayerName}'s turn,\
+    \ add {Value1} |Vitalit{Value1:plural one='y' other='ies'}| to the hand."
+LianaiChongdong:
+  Name: Love Impulse
+  Description: "|Not in Id|: Increase the next |Basic| card's numerical value by {Value1}.\n\
+    |In Id|: Increase each |Basic| card's numerical value by {Value2}."
+  ExtraDescription2: "|Not in Id|: Increase the next |Basic| card's numerical value\
+    \ by {Value1}.\n|d:In Id: Increase each Basic card's numerical value by {Value2}.|"
+  ExtraDescription1: "|d:Not in Id: Increase the next Basic card's numerical value\
+    \ by {Value1}.|\n|In Id|: Increase each |Basic| card's numerical value by {Value2}."
+TaoqiQiangwei:
+  Name: Rose Rebellion
+  Description: "Gain {Block} |Block| and draw {Value1} card{Value1:plural one='' other='s'}.\n\
+    |When an adjacent card is played|: Reduce {SelfName}'s cost by {Mana} until the\
+    \ end of combat."
+LoveSeed:
+  Name: Seedlings of Love
+  Description: "Gain {Value1} life and {TotalMana}.\n|When an adjacent card is played|:\
+    \ Increase {SelfName}'s mana by {Mana}."
+JianruiSixiang:
+  Name: Rorschach in Danmaku
+  Description: "Gain {Value1} |Reflection|.\n|When entering a Mental State|: Return\
+    \ {SelfName} from the discard pile to the hand."
+BenwoTouying:
+  Name: Ego Projection
+  Description: "Whenever {PlayerName} enters |Id|, add a |p:completely random| |Attack|\
+    \ card to the hand. It |temporarily costs| {Mana} and has |Exile|.\nEnter |Id|."
+FangkongSixu:
+  Name: Empty Mind
+  Description: "Discard any amount of cards. For each card discarded this way, gain\
+    \ {Value1} |Block|.\nExit the current |Mental State|."
+Chaofanyin:
+  Name: Hyperreactivity
+  Description: When a card with |Instinct| is played and doesn't trigger its |Instinct|
+    effect, add {Value1} |Cop{Value1:plural one='y' other='ies'}| of it to the top
+    of the draw pile that |temporarily cost{Value1:plural one='s' other=''}| {Mana}
+    and ha{Value1:plural one='s' other='ve'} |Exile|.
+JiyiShitihua:
+  Name: Memory Manifestation
+  Description: "Choose an attack card in the hand. Add a |Copy| of it to the hand\
+    \ that |temporarily costs| {Mana} and has |Exile|.\nDeal {Damage} damage."
+SelfControl:
+  Name: Self-Control
+  Description: Whenever {PlayerName} deals attack damage while in |Id|, gain {Value1}
+    |Barrier|.
+  UpgradedDescription: "Whenever {PlayerName} deals attack damage while in |Id|, gain\
+    \ {Value1} |Barrier|.\nEnter |Id|."
+Kongxiangshang:
+  Name: Ideal Self Retention
+  Description: When a |Basic Defense| card is played, enter |Super-Ego|.
+ZuxianTuomeng:
+  Name: Ancestral Dreams
+  Description: "|When drawn|: |Exile| the leftmost card in the hand. Add {Value1}\
+    \ |Copi{Value1:plural one='y' other='ies'}| of it that |temporarily cost{Value1:plural\
+    \ one='s' other=''}| {Mana} and ha{Value1:plural one='s' other='ve'} |Exile|."
+ChaoyueZiwo:
+  Name: Exceed Oneself
+  UpgradedDescription: "At the end of {PlayerName}'s turn, if in |Super-Ego|, gain\
+    \ {Value1} |Firepower| and |Spirit|.\nEnter |Super-Ego|."
+  Description: At the end of {PlayerName}'s turn, if in |Super-Ego|, gain {Value1}
+    |Firepower| and |Spirit|.
+Beiyanwu:
+  Name: Philosophy of the Despised
+  Description: "|Exile| the cards adjacent to {SelfName}. For each card |Exiled| this\
+    \ way, gain {Mana} and draw {Value1} card{Value1:plural one='' other='s'}."
