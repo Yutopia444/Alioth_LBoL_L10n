@@ -641,7 +641,7 @@ ShinningPotion:
   Description: |-
     獲得 {Block} 點|格擋|。
     將一張|不穩定魔藥|洗入抽牌堆。
-    |超載 {Value2} |：改為兩張。
+    |超載 {Value2} |：改為 {Value1} 張。
 
 Yinhe:
   Name: 銀河
@@ -1086,7 +1086,7 @@ CleanRoom:
   Description: |-
     選擇一張手牌丟棄。
     抽 {Value1} 張牌。
-    隨機|升級| {Value2} 張手牌，如果丟棄的是|飛刀|，改為升級所有手牌。
+    隨機|升級| {Value2} 張手牌；如果丟棄的是|飛刀|，改為升級所有手牌。
 
 ExileMagic:
   Name: 置換魔法
@@ -1895,8 +1895,7 @@ CloseMemory:
   Name: 塵封的回憶
   Description: |-
     抽 {Value1} 張牌。
-    取得等量於手牌數量的<sprite="ManaSprite" name="B">。
-    所有手牌費用暫時增加<sprite="ManaSprite" name="1">。
+    抽取的卡牌獲得|迴響|。
 QinchunPanni:
   Name: 青春期叛逆
   Description: |-
@@ -3537,8 +3536,6 @@ FlanBlack:
   FlavorText: 背負U·N·歐文之名，捨棄所有人去戰鬥的少女~
 
 
-BenwoAbility:
-  Description: 打出卡牌後不離開|本我|，改為在回合結束時離開|本我|。
 WuyishiDNA:
   Name: 無意識的基因
   Description: "進入|頓悟|，結束{PlayerName}的回合，進行額外的回合。\n{PlayerName}的回合結束時，如果不處於|頓悟|則死亡。"
@@ -3572,7 +3569,7 @@ BuruDiankuang:
   UpgradedDescription: "得到{Mana}，進入|本我|。\n抽取 {Value1} 張攻擊牌。"
 XinliZhenliao:
   Name: 心理診療
-  Description: "選擇一張處方加入手牌：\n- 進入|本我|。\n- 進入|超我|。\n- 進入|頓悟|。"
+  Description: "選擇一張處方加入手中：\n- 進入|本我|的處方。\n- 進入|超我|的處方。\n- 進入|頓悟|的處方。"
 XinliBenwo:
   Name: 處方 -本我-
   Description: 進入|本我|。
@@ -3616,7 +3613,7 @@ FangkongSixu:
   Description: "丟棄任一手牌，每丟棄一張手牌可獲得 {Value1} 格擋。\n離開當下心境。"
 Chaofanyin:
   Name: 超反應知覺
-  Description: 每當你打出一張|直覺|牌時，如果沒有觸發|直覺|，將 {Value1} 張費用為{Mana}且附帶|放逐|的複製加入抽牌堆頂。
+  Description: 每當你打出一張不是|複製|的直覺牌時，如果沒有觸發|直覺|，將 {Value1} 張費用為{Mana}且附帶|放逐|的複製加入手中。
 JiyiShitihua:
   Name: 記憶實體化
   Description: "複製手中的一張的攻擊牌，複製費用為{Mana}且附帶|放逐|。\n造成{Damage}點傷害。"
