@@ -1729,12 +1729,12 @@ KoishiBlockG:
   Description: '{Block}|ブロック|を得る'
 BenwoCard:
   Name: イド
-  Description: "{Damage}ダメージを与える。\n|イド|領域へ入る。"
+  Description: "{Damage}ダメージを与える。\n|イド|状態になる。"
 ChaowoCard:
   Name: 超自我
-  Description: "{Block}|ブロック|を得る\n|超自我|領域へ入る。"
+  Description: "{Block}|ブロック|を得る\n|超自我|状態になる。"
 ZiwoCard:
-  Description: "{Damage}ダメージを与える。\n自我を取り戻し、全ての|精神状態|を忘れる。\n|直感|：|イド|領域へ入る。"
+  Description: "{Damage}ダメージを与える。\n自我を取り戻し、全ての|精神状態|を忘れる。\n|直感|：|イド|状態になる。"
   Name: 没我の愛
 LarvaCure:
   Name: 解毒薬
@@ -1873,6 +1873,7 @@ LoveFire:
   Name: 恋の埋火
 BabyDream:
   Name: 胎児の夢
+  Description: すべての|基本|カードに反復を与える、臨時コストを{Mana}にする。
 MoonTipsAttack:
   Name: 弾幕補充
   Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
@@ -1919,8 +1920,11 @@ NightMana1:
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\n{FreezeTimes}枚のカードをプレイした後、{SelfName}を|廃棄|する。"
 FlowerGone:
   Name: 色褪せた記憶
+  Description: "{Block}|ブロック|を得る。\n|超自我時|：|霊力|{Value1}を得る、{SelfName}を廃棄する。"
+  ExtraDescription1: "{Block}|ブロック|を得る。\n|d:超自我時：|霊力|{Value1}を得る、{SelfName}を廃棄する。|"
 CloseMemory:
   Name: 抑圧された記憶
+  Description: "カードを{Value1}枚引く。\n引いたカードに|反復|を与える。"
 PiankeNingjing:
   Name: 平穏なひととき
 RelianJingji:
@@ -1929,14 +1933,20 @@ Yehuchan:
   Name: 覚らぬ禅
 HuiguiLizhi:
   Name: 我に返る
+  Description: ターン終了時|超自我|領域に入る。
 YoubiKongjuzheng:
   Name: 閉所恐怖症
+  Description: "{Block}|ブロック|を得る。\n|直感|：{Shield}|バリア|を得る。"
 YaoguaiNaodianbo:
   Name: 妖怪ポリグラフ
+  Description: "{Damage}のダメージを与える。\n|直感|：{Mana}を得る。"
 BuruDiankuang:
   Name: 狂気
+  Description: '{Mana}を得る、|イド|領域に入る。'
+  UpgradedDescription: "{Mana}を得る、|イド|領域に入る。\n攻撃カードを{Value1}枚引く。"
 XinliZhenliao:
   Name: 心理カウンセリング
+  Description: "処方を1枚手札に加える。\n- 処方|イド|\n- 処方|超自我|\n- 処方|覚|"
 XinliBenwo:
   Name: 処方「イド」
 XinliChaowo:
@@ -1951,8 +1961,10 @@ LoveSeed:
   Name: 愛の種
 JianruiSixiang:
   Name: 弾幕のロールシャッハ
+  Description: "反射{Value1}を得る。\n|状態が変った時|：捨て札の{SelfName}を手札に加える。"
 TaoqiQiangwei:
   Name: 奔放なる薔薇
+  Description: "{Block}|ブロック|を得る、カードを{Value1}枚引く。\n|隣接するカードをプレイした時|：コストを{Mana}減らす、戦闘終了まで。"
 FangkongSixu:
   Name: 虚ろな心
 Chaofanyin:
@@ -1961,8 +1973,11 @@ JiyiShitihua:
   Name: 実体化する記憶
 SelfControl:
   Name: 自我の掌握
+  Description: '|イド|状態で攻撃ダメージを与えるたび、{Value1}|バリア|を得る。'
+  UpgradedDescription: "|イド|状態で攻撃ダメージを与えるたび、{Value1}|バリア|を得る。\n|イド|状態になる。"
 Kongxiangshang:
   Name: 空想上の人格保持者
+  Description: 基本の防御カードをプレイした後、|超自我|状態になる。
 ChaoyueZiwo:
   Name: スーパーエゴ
 ZuxianTuomeng:
@@ -1975,6 +1990,8 @@ XinliDunwu:
   Name: 処方「覚」
 ZhuozhuangChengzhang:
   Name: 健やかな成長
+  Description: '{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。'
+  UpgradedDescription: "|グレイズ|{Value2}を得る。\n{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。"
 BenwoTouying:
   Name: 自己投影
 KoishiMove:
@@ -1987,6 +2004,7 @@ Danxiangsi:
   Name: 片思い
 PerfectCrime:
   Name: 完全犯罪
+  Description: "目標の|霊力|、|グレイズ|、|加護|、|光学迷彩|、|天衣無縫|を盗む。\n{Damage}のダメージを与える。"
 WuyishiDNA:
   Name: 無意識の遺伝子
 MrBulb:
