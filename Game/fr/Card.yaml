@@ -346,7 +346,7 @@ OpenUniverse:
   Description: "Retirez une carte de la pioche du combat.\nAjoutez-en 2 |copies| à\
     \ la main qui |coûtent temporairement| {Mana} et qui ont |Exil|."
   FlavorText: L'essence de l'univers est la répétition (?)
-  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
+  DetailText: Vous ne pouvez pas choisir de |copies| pour cet effet.
 RedGiantStar:
   Name: Impact Géant Rouge
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Surcharge\
@@ -1048,7 +1048,7 @@ DoremyDuplicate:
     \ |copie|' other='% |copies|'} à la main."
   FlavorText: Lorsque Doremy aura soif, elle se concentrera sur les rêves de ceux
     qui aiment boire beaucoup d'eau avant d'aller se coucher.
-  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
+  DetailText: Vous ne pouvez pas choisir de |copies| pour cet effet.
 GuijiZaoxingYuan:
   Name: Sculpture - Cercle
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
@@ -1535,7 +1535,7 @@ YuetuInvincible:
   Name: Chute du Lapin Lunaire
   FlavorText: Évadez-vous du monde purifié, vers le paradis de la crasse.
 KoishiAttackB:
-  Name: Défaut d'ADN
+  Name: Amour Débordant
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 ShenziUpgradeAll:
   Name: Apothéose
@@ -1577,7 +1577,7 @@ CirnoBlockG:
   FlavorText: Les fées hawaïennes sont très doués pour utiliser ce mouvement en dansant.
 KoishiBlockB:
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
-  Name: S'Endormir
+  Name: Auto-isolement
 KoishiAttackG:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
   Name: Roses en Fleur
@@ -1673,7 +1673,7 @@ PaluxiCurse:
 ZoufangSnake:
   Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nChoisissez\
     \ une parmi {Value2} cartes de |pouvoir| neutres rares aléatoires à ajouter à\
-    \ la main. Elle coûte |temporairement| {Mana}."
+    \ la main. Elle |coûte temporairement| {Mana}."
   Name: Foi du Dieu Natif
   DetailText: Ces |e:cartes alternatives| ignorent les restrictions de mana total
     et de couleur de mana.
@@ -2643,7 +2643,7 @@ FakeMoon:
     \ one='' other='s'} de celle-ci |coûtant temporairement| {Mana}, {Value1:plural\
     \ one='cette copie a' other='ces copies ont'} |Exil| et |Éthéré|. Si la carte\
     \ choisie est une carte |Pouvoir| ou a |Exil|, elle devient une |copie|."
-  DetailText: Vous ne pouvez pas choisir de |Copies| pour cet effet.
+  DetailText: Vous ne pouvez pas choisir de |copies| pour cet effet.
 LarvaCure:
   Name: Antidote
   Description: "Supprimez le |Poison| sur {PlayerName}.\n|Limité【{DeckCounter}】|"
@@ -2882,23 +2882,33 @@ SanaeRestart:
     \ one='la' other='les'} à votre main."
 KoishiMove:
   Name: Action Inconsciente
-  Description: "(WIP TODO) Choisissez une implémentation, chaque option vient avec\
-    \ une |Humeur| aléatoire :\n- Infligez 10 dégâts à des ennemis aléatoires.\n-\
-    \ Gagnez 10 points pour bloquer."
+  Description: "Choisissez un des effets, et entrez dans un |État mental| aléatoire\
+    \ :\n- Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    - Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 KoishiMoveAttack:
-  Description: (WIP) Infligez 10 dégâts à un ennemi aléatoire,
-  Name: Vérifiez-le
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi\
+    \ et entrez en état d'|Ego|.\n(Les dégâts infligés et subis sont doublés.)"
+  Name: Regarde ça
+  ExtraDescription2: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
+    \ ennemi et entrez en état d'|Épiphanie|.\n(Cartes et mana sont conservés)."
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
+    \ ennemi et entrez en état de |Super-ego|.\n(Gagnez du mana en quittant l'état.)"
 KoishiMoveDefense:
-  Description: (WIP) Gagnez 10 boucliers,
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et entrez\
+    \ en état d'|Ego|.\n(Les dégâts infligés et subis sont doublés.)"
   Name: Regardez ça
+  ExtraDescription2: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et\
+    \ entrez en état d'|Épiphanie|.\n(Cartes et mana sont conservés)."
+  ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et\
+    \ entrez en état de |Super-ego|.\n(Gagnez du mana en quittant l'état.)"
 LoveFire:
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, obtenez\
     \ {SavedMana}.\n|Pour chaque {Mana} supplémentaire dépensé| : dégâts augmentés\
     \ de {Value1}.\nLe mana payé est enregistré et sera rendu la prochaine fois que\
     \ la carte est jouée."
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
-    \ {Mana} supplémentaire dépensé| : dégâts augmentés de {Value1}.\nLe mana payé\
-    \ est enregistré et sera rendu la prochaine fois que la carte est jouée."
+    \ {Mana} dépensé| : dégâts augmentés de {Value1}.\nLe mana payé est enregistré\
+    \ et sera rendu la prochaine fois que la carte est jouée."
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
@@ -2940,45 +2950,42 @@ MojingShanjie:
     à votre main. Elle |coûte temporairement| {Mana}.
 XinzuoTest:
   Name: Essai de Constellation
-  Description: "(WIP) Ajoutez {Value1} |Astrologie{Value1:plural one='' other='s'}|\
-    \ à la main.\n|Instinct| : appliquez {Value1} |Chute{Value1:plural one='' other='s'}\
+  Description: "Ajoutez {Value1} |Astrologie{Value1:plural one='' other='s'}| à la\
+    \ main.\n|Instinct| : Appliquez {Value2} |Chute{Value2:plural one='' other='s'}\
     \ d'Étoile| à tous les ennemis."
 FlowerGone:
-  Name: Jardin Secret
+  Name: Souvenirs Flétris
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Super-ego|\
     \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez {SelfName}."
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
     |d:Super-ego : Gagnez {Value1} Esprit{Value1:plural one='' other='s'}, exilez\
     \ {SelfName}. |"
 CloseMemory:
-  Name: Mémoire Fermée
-  Description: "(WIP) Piochez {Value1} carte{Value1:plural one='' other='s'}, {SelfName}\
-    \ gagne |Exil|.\n|Pas en Épiphanie| : Gagnez <sprite=\"ManaSprite\" name=\"B\"\
-    > égal au nombre de cartes en main et augmentez le coût de toutes les cartes en\
-    \ main de <sprite=\"ManaSprite\" name=\"1\"> .\n|Épiphanie| : {SelfName} coûte\
-    \ <sprite=\"ManaSprite\" name=\"0\">."
+  Name: Souvenirs Négligés
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nLes cartes\
+    \ piochées de cette façon gagnent |Écho|."
 QinchunPanni:
   Name: Crise d'Adolescence
-  ExtraDescription1: "|d:Pas en Ego : infligez {Damage} dégât{Damage:plural one=''\
-    \ other='s'} à l'ennemi dont les points de vie sont les moins élevés. |\n|Ego|\
-    \ : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
-  ExtraDescription2: "|Pas en Ego| : infligez {Damage} dégât{Damage:plural one=''\
-    \ other='s'} à l'ennemi dont les points de vie sont les moins élevés.\n|d:Ego\
-    \ : Gagnez {Block} Bouclier{Block:plural one='' other='s'}. |"
-  Description: "(WIP)|Pas en Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
+  ExtraDescription1: "|d:Hors Ego : infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi dont les points de vie sont les moins élevés. |\n|Ego| : Gagnez {Block}\
+    \ |Bouclier{Block:plural one='' other='s'}|."
+  ExtraDescription2: "|Hors Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi dont les points de vie sont les moins élevés.\n|d:Ego : Gagnez {Block}\
+    \ Bouclier{Block:plural one='' other='s'}. |"
+  Description: "|Hors Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ à l'ennemi dont les points de vie sont les moins élevés.\n|Ego| : Gagnez {Block}\
     \ |Bouclier{Block:plural one='' other='s'}|, piochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
 Danxiangsi:
-  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Retenue|\
-    \ : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one='' other='s'}."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Lorsque\
+    \ retenue| : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one=''\
+    \ other='s'}."
   Name: Amour Non Réciproque
 MrBulb:
   Name: Mr. Ampoule Brillante
-  Description: "(WIP) Après être entré dans trois états d'esprit différents durant\
-    \ ce tour, le coût est de <sprite=\"ManaSprite\" name=\"0\">.\nInfligez {Damage}\
-    \ dégât{Damage:plural one='' other='s'} à un ennemi aléatoire, piochez {Value1}\
-    \ carte{Value1:plural one='' other='s'} et gagnez {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    Gagnez {Mana}.\nSi vous êtes entré dans trois états d'esprit différents ce tour-ci,\
+    \ {SelfName} coûte <sprite=\"ManaSprite\" name=\"0\"> à jouer."
 PerfectCrime:
   Name: Crime Parfait
   Description: "Vole le |Esprit|, |grab bullet|, |Amulette|, |Camouflage Optique|,\
@@ -3000,10 +3007,10 @@ ShirenKunchong:
     \ one='' other='s'}|."
 DoubleJK:
   Name: Double Esper du Siècle
-  Description: "{PlayerName} ne peut jouer que {Value1} carte{Value1:plural one=''\
-    \ other='s'} par tour.\nLorsque {PlayerName} termine son tour, si ce tour n'est\
-    \ pas un tour supplémentaire, gardez les |Boucliers| gagnés et effectuez un tour\
-    \ supplémentaire."
+  Description: "Lorsque {PlayerName} termine son tour, si ce tour n'est pas un tour\
+    \ supplémentaire, gardez tout |bouclier| gagné et effectuez un tour supplémentaire.\n\
+    Seule{Value1:plural one='' other='s'} {Value1} carte{Value1:plural one=' peut\
+    \ être jouée' other='s peuvent être jouées'} ce tour-là."
 AnimalSpirit:
   UpgradedDescription: "Toutes les autres cartes en main et {Value1} carte{Value1:plural\
     \ one='' other='s'} de la pioche sont possédées par des esprits animaux, ce qui\
@@ -3016,7 +3023,7 @@ AnimalSpirit:
 YukariFriend:
   Name: Yukari, Frontière de la Fantaisie
   Description: '{FriendP}Gagnez autant de |Puissance| que le nombre de cartes de défense
-    jouées ce tour. ({Fire} carte{Fire:plural one='''' other=''s''})'
+    jouées ce tour. ({Fire})'
   ExtraDescription1: '{FriendA}Choisissez une carte |exilée| et remettez-la dans la
     main.'
   ExtraDescription2: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
@@ -3048,11 +3055,148 @@ WuyishiDNA:
     \ un tour supplémentaire.\nLorsque {PlayerName} finit son tour, si {PlayerName}\
     \ n'est pas en état d'|Épiphanie|, elle perd la partie."
   Name: Génétique de l'Inconscient
-BenwoAbility:
-  Description: Au lieu de quitter l'état d'|Ego| après avoir joué une carte, vous
-    quitterez l'état d'|Ego| à la fin du tour.
 AyaNewsAliceSp:
   Name: Bunbunmaru - Spécial Alice
   Description: "|Fin du tour| : Perdez {Value1} |Esprit{Value1:plural one='' other='s'}|."
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
+RelianJingji:
+  Name: Épines Passionnées
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other=''}.\n|Lorsqu'une\
+    \ carte adjacente est jouée| : Augmentez les dégâts de {SelfName} de {Value1}\
+    \ la prochaine fois qu'elle est jouée."
+PiankeNingjing:
+  Name: Moment de Silence
+  UpgradedDescription: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
+    Si vous êtes dans un |État mental|, quittez-le et piochez {Value1} carte{Value1:plural\
+    \ one='' other='s'}."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi vous\
+    \ êtes en état de |Super-ego|, quittez-le et piochez {Value1} carte{Value1:plural\
+    \ one='' other='s'}."
+Yehuchan:
+  Name: Zen Dissident
+  FlavorText: Nous pouvons nous transformer en pierre sans trop de problèmes ni de
+    fatigue.
+  Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}| et {Value2}\
+    \ |Verrouillé{Value2:plural one='' other='s'}|.\n|Instinct| : Entrez en état d'|Épiphanie|."
+HuiguiLizhi:
+  Name: Retour à la Raison
+  Description: Lorsque {PlayerName} finit son tour, entrez en état de |Super-ego|.
+YaoguaiNaodianbo:
+  Name: Polygraphe Yōkai
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Instinct|\
+    \ : gagnez {Mana}."
+YoubiKongjuzheng:
+  Name: Claustrophobie
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Instinct|\
+    \ : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
+BuruDiankuang:
+  Name: Sombrer dans la Folie
+  Description: Gagnez {Mana} et entrez en état d'|Ego|.
+  UpgradedDescription: "Gagnez {Mana} et entrez en état d'|Ego|.\nPiochez {Value1}\
+    \ carte{Value1:plural one='' other='s'} d'attaque."
+XinliZhenliao:
+  Name: Diagnostic Mental
+  Description: "Choisissez une |Ordonnance| à ajouter à la main.\n- Entrez en état\
+    \ d'|Ego|.\n- Entrez en état de |Super-ego|.\n- Entrez en état d'|Épiphanie|."
+XinliBenwo:
+  Name: Ordonnance -Ego-
+  Description: Entrez en état d'|Ego|.
+XinliChaowo:
+  Name: Ordonnance -Super-ego-
+  Description: Entrez en état de |Super-ego|.
+XinliDunwu:
+  Name: Ordonnance -Épiphanie-
+  Description: Entrez en état d'|Épiphanie|.
+DNARain:
+  Name: Pluie d'ADN
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    |Lorsque vous entrez en Super-ego ou Épiphanie| : Augmentez les dégâts de {SelfName}\
+    \ de {Value1}."
+MeihaoHuiyi:
+  Name: Souvenirs Heureux
+  Description: "|Lorsqu'une carte adjacente est jouée| : Gagnez {Block} |Bouclier{Block:plural\
+    \ one='' other='s'}| et |Améliorez| une carte aléatoire."
+ZhuozhuangChengzhang:
+  Name: Croissance Saine
+  UpgradedDescription: "Gagnez {Value2} |Esquive{Value2:plural one='' other='s'}|.\n\
+    Lorsque {PlayerName} finit son tour, ajoutez {Value1} |Vitalité{Value1:plural\
+    \ one='' other='s'}| à la main."
+  Description: Lorsque {PlayerName} finit son tour, ajoutez {Value1} |Vitalité{Value1:plural
+    one='' other='s'}| à la main.
+LianaiChongdong:
+  Name: Impulsion Amoureuse
+  ExtraDescription2: "|Hors Super-Ego| : Augmentez la valeur numérique de la prochaine\
+    \ carte |basique| de {Value1}.\n|d:Super-ego : Augmentez la valeur numérique de\
+    \ chaque carte |basique| de {Value2}.|"
+  Description: "|Hors Super-Ego| : Augmentez la valeur numérique de la prochaine carte\
+    \ |basique| de {Value1}.\n|Super-ego| : Augmentez la valeur numérique de chaque\
+    \ carte |basique| de {Value2}."
+  ExtraDescription1: "|d:Hors Super-Ego : Augmentez la valeur numérique de la prochaine\
+    \ carte |basique| de {Value1}.|\n|Super-ego| : Augmentez la valeur numérique de\
+    \ chaque carte |basique| de {Value2}."
+TaoqiQiangwei:
+  Name: Rébellion des Roses
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et piochez\
+    \ {Value1} carte{Value1:plural one='' other='s'}.\n|Lorsqu'une carte adjacente\
+    \ est jouée| : Réduisez le coût de {SelfName} de {Mana} jusqu'à la fin du combat."
+LoveSeed:
+  Name: Graines d'Amour
+  Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie et {TotalMana}.\n\
+    |Lorsqu'une carte adjacente est jouée| : Augmentez le mana de {SelfName} de {Mana}."
+JianruiSixiang:
+  Name: Rorschach en Danmaku
+  Description: "Gagnez {Value1} |Réflexion{Value1:plural one='' other='s'}|.\n|Lorsque\
+    \ vous entrez dans un état mental| : renvoyez {SelfName} de la pile de défausse\
+    \ à la main."
+BenwoTouying:
+  Name: Projection de l'Ego
+  Description: "Chaque fois que {PlayerName} entre en état d'|Ego|, ajoutez une carte\
+    \ |p:complètement aléatoire| d'|Attaque| à la main. Elle |coûte temporairement|\
+    \ {Mana} et a |Exil|.\nEntrez en état d'|Ego|."
+  FlavorText: Nous avons tous rêvé un jour d'être quelqu'un d'autre.
+FangkongSixu:
+  Name: Esprit Vide
+  Description: "Défaussez n'importe quel nombre de cartes. Pour chaque carte défaussée\
+    \ de cette façon, gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|.\n\
+    Quittez l'|État mental| actuel."
+Chaofanyin:
+  Name: Hyperréactivité
+  Description: Lorsqu'une carte non-|copie| avec |Instinct| est jouée et ne déclenche
+    pas son effet |Instinct|, ajoutez-en {Value1} |copie{Value1:plural one='' other='s'}|
+    à la main qui |coûte{Value1:plural one='' other='nt'} temporairement| {Mana} et
+    {Value1:plural one='a' other='ont'} |Exil|.
+JiyiShitihua:
+  Name: Matérialisation de la Mémoire
+  Description: "Choisissez une carte d'attaque dans la main. Ajoutez-en une |copie|\
+    \ à la main qui |coûte temporairement| {Mana} et a |Exil|.\nInfligez {Damage}\
+    \ dégât{Damage:plural one='' other='s'}."
+SelfControl:
+  Name: Maîtrise de Soi
+  Description: Chaque fois que {PlayerName} inflige des dégâts d'attaque en état d'|Ego|,
+    gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
+  UpgradedDescription: "Chaque fois que {PlayerName} inflige des dégâts d'attaque\
+    \ en état d'|Ego|, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.\n\
+    Entrez en état d'|Ego|."
+ZuxianTuomeng:
+  Name: Rêves Ancestraux
+  Description: "|Lorsque piochée| : |Exilez| la carte la plus à gauche de la main.\
+    \ Ajoutez {Value1} |copie{Value1:plural one='' other='s'}| à la main qui |coûte{Value1:plural\
+    \ one='' other='nt'} temporairement| {Mana} et {Value1:plural one='a' other='ont'}\
+    \ |Exil|."
+ChaoyueZiwo:
+  Name: Dépassement de Soi
+  UpgradedDescription: "Lorsque {PlayerName} finit son tour, si vous êtes en état\
+    \ de |Super-Ego|, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|\
+    \ et |Esprit{Value1:plural one='' other='s'}|.\nEntrez en état de |Super-ego|."
+  Description: Lorsque {PlayerName} finit son tour, si vous êtes en état de |Super-Ego|,
+    gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural
+    one='' other='s'}|.
+Beiyanwu:
+  Name: Philosophie du Méprisé
+  Description: "|Exilez| les cartes adjacentes à {SelfName}. Pour chaque carte |Exilée|\
+    \ de cette façon, gagnez {Mana} et piochez {Value1} carte{Value1:plural one=''\
+    \ other='s'}."
+Kongxiangshang:
+  Name: Gardien de la Personnalité Utopique
+  Description: Lorsqu'une |défense de base| est jouée, entrez en état de |Super-ego|.
