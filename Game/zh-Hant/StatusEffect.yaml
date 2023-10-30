@@ -939,17 +939,8 @@ StarFriendSe:
   Description: '{SourceCardName}造成傷害時，施加 {Level} 層|鎖定|。'
   Brief: '{SourceCardName}造成傷害時，施加若干層|鎖定|。'
 
-Benwo:
-  Description: |-
-    |本我|是一種|心境|，同時只能存在一種|心境|。
-    打出下一張牌後離開|本我|。
-    翻倍造成的攻擊傷害。 如果打出的不是|攻擊牌|，放逐打出的卡牌並獲得 5 點|格擋|。
 Chaowo:
   Name: 超我
-  Brief: |-
-    |超我|是一種|心境|，同時只能存在一種|心境|。
-    離開|超我|狀態時，獲得{Mana}。
-
 Dunwu:
   Description: |-
     |頓悟|是一種|心境|，同時只能存在一種|心境|。
@@ -1167,37 +1158,37 @@ CatchGoblinSe:
   Brief: 受到的傷害減少33%，擊敗後掉落 50<sprite="Point" name="Gold">。
 
 NextTurnBenwo:
-  Description: '{PlayerName}的回合結束開始時，進入|本我|。'
-  Name: 下回合進入本我
-  Brief: '{PlayerName}的回合結束開始時，進入|本我|。'
+  Description: '{PlayerName}的回合結束開始時，進入|熱戀|。'
+  Name: 下回合進入熱戀
+  Brief: '{PlayerName}的回合結束開始時，進入|熱戀|。'
 WuyishiDNASe:
   Description: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
   Name: 無意識的基因
   Brief: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
 NextTurnChaowo:
-  Name: 下回合進入超我
-  Description: '{PlayerName}的回合結束開始時，進入|超我|。'
-  Brief: '{PlayerName}的回合結束開始時，進入|超我|。'
+  Name: 下回合進入平靜
+  Description: '{PlayerName}的回合結束開始時，進入|平靜|。'
+  Brief: '{PlayerName}的回合結束開始時，進入|平靜|。'
 BenwoTouyingSe:
   Name: 自我投影
-  Description: 每次進入|本我|時，將 {Level} 張完全隨機的攻擊牌加入手牌，|暫塑|為{Mana}且附帶|放逐|。
-  Brief: 每次進入|本我|時，將一張完全隨機的攻擊牌加入手牌，暫塑為0且附帶|放逐|。
+  Description: 每次進入|熱戀|時，將 {Level} 張完全隨機的攻擊牌加入手牌，|暫塑|為{Mana}且附帶|放逐|。
+  Brief: 每次進入|熱戀|時，將一張完全隨機的攻擊牌加入手牌，暫塑為0且附帶|放逐|。
 ChaofanyinSe:
   Name: 超反應知覺
   Description: 每當你打出一張不是|複製|的直覺牌時，如果沒有觸發|直覺|，將 {Level} 張費用為{Mana}且附帶|放逐|的複製加入手中。
   Brief: 每當你打出一張不是|複製|的直覺牌時，如果沒有觸發|直覺|，將數張費用為{Mana}且附帶|放逐|的複製加入手中。
 ChaoyueZiwoSe:
   Name: 超越自我
-  Description: '{PlayerName}的回合結束時，如果處於|超我|，獲得 {Level} 點|火力|和|靈力|。'
-  Brief: '{PlayerName}的回合結束時，如果處於|超我|，獲得|火力|和|靈力|。'
+  Description: '{PlayerName}的回合結束時，如果處於|平靜|，獲得 {Level} 點|火力|和|靈力|。'
+  Brief: '{PlayerName}的回合結束時，如果處於|平靜|，獲得|火力|和|靈力|。'
 HuiguiLizhiSe:
-  Description: 回合結束時進入|超我|。
-  Brief: 回合結束時進入|超我|。
+  Description: 回合結束時進入|平靜|。
+  Brief: 回合結束時進入|平靜|。
   Name: 回歸理智
 KongxiangshangSe:
   Name: 空想上的人格保持者
-  Brief: 打出|基本防禦|牌後進入|超我|。
-  Description: 打出|基本防禦|牌後進入|超我|。
+  Brief: 打出|基本防禦|牌後進入|平靜|。
+  Description: 打出|基本防禦|牌後進入|平靜|。
 ShortLove:
   Name: 閃電戀
   Description: 下一張|基本|卡的數值提高 {Level}。
@@ -1208,9 +1199,25 @@ LongLove:
   Brief: 所有|基本|卡的數值提高。
 SelfControlSe:
   Name: 掌控自我
-  Brief: 每次在|本我|狀態中造成攻擊傷害，獲得|護盾|。
-  Description: 每次在|本我|狀態中造成攻擊傷害，獲得 {Level} 點|護盾|。
+  Brief: 每次在|熱戀|狀態中造成攻擊傷害，獲得|護盾|。
+  Description: 每次在|熱戀|狀態中造成攻擊傷害，獲得 {Level} 點|護盾|。
 ZhuozhuangChengzhangSe:
   Name: 茁壯成長
   Description: '{PlayerName}的回合結束時，將 {Level} 張|生機|加入手牌。'
   Brief: '{PlayerName}的回合結束時，將|生機|加入手牌。'
+Love:
+  Description: "{PlayerName}的回合開始時，移除兩個|戀心|，抽 {Draw} 張牌並進入|熱戀|。\n"
+  Name: 戀心
+  Brief: '{PlayerName}的回合開始時，移除兩個|戀心|，抽 3 張牌並進入|熱戀|。'
+MindPassion:
+  Description: "|熱戀|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n所有攻擊附帶|精準|。\n打出攻擊牌時消耗一個|戀心|，翻倍造成的傷害。"
+  Name: 熱戀
+  Brief: "|熱戀|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n所有攻擊附帶|精準|。\n打出攻擊牌時消耗一個|戀心|，翻倍造成的傷害。"
+MindEnlight:
+  Brief: "|頓悟|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n回合結束時不會失去法力並保留手牌。"
+  Name: 頓悟
+  Description: "|頓悟|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n回合結束時不會失去法力並保留手牌。"
+MindPeace:
+  Name: 平靜
+  Description: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"
+  Brief: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"

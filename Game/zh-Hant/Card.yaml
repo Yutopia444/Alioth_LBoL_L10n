@@ -613,7 +613,7 @@ ScryAttack:
 NightSeeStar:
   Name: 夜觀星象
   Description: |-
-    占卜 {Scry} 。
+    |占卜| {Scry} 。
     抽 {Value1} 張牌。
   FlavorText: 觀今夜天相，知明天中午應該食什麼。
 
@@ -1857,21 +1857,10 @@ KoishiBlockG:
   Name: 花團錦簇
   Description: 獲得 {Block} 點|格擋|。
 
-BenwoCard:
-  Description: |-
-    造成 {Damage} 點傷害。
-    進入|本我|。
-
 ChaowoCard:
   Description: |-
     獲得 {Block} 點|格擋|。
     進入|超我|。
-
-ZiwoCard:
-  Description: |-
-    造成 {Damage} 點傷害。
-    恢復自我，離開其它|精神狀態|。
-    |直覺|：改為進入|本我|。
 
 XinzuoTest:
   Name: 星座測試
@@ -1883,10 +1872,10 @@ FlowerGone:
   Name: 舊夢凋零
   Description: |-
     獲得 {Block} 點|格擋|。
-    |超我中|：獲得 {Value1} 點|靈力|，放逐{SelfName}。
+    |平靜中|：獲得 {Value1} 點|靈力|，放逐{SelfName}。
   ExtraDescription1: |-
     獲得 {Block} 點|格擋|。
-    |d:超我中：獲得 {Value1} 點靈力，放逐{SelfName}。|
+    |d:平靜中：獲得 {Value1} 點靈力，放逐{SelfName}。|
 
 CloseMemory:
   Name: 塵封的回憶
@@ -1896,14 +1885,14 @@ CloseMemory:
 QinchunPanni:
   Name: 青春期叛逆
   Description: |-
-    |不在本我中|：對生命值最低的敵人造成 {Damage} 點傷害。
-    |本我中|：獲得 {Block} 點|格擋|，抽 {Value1} 張牌。
+    |不在熱戀中|：對生命值最低的敵人造成 {Damage} 點傷害。
+    |熱戀中|：獲得 {Block} 點|格擋|，抽 {Value1} 張牌。
   ExtraDescription1: |-
-    |d:不在本我中：對生命值最低的敵人造成 {Damage} 點精準的傷害。|
-    |本我中|：獲得 {Block} 點|格擋|。
+    |d:不在熱戀中：對生命值最低的敵人造成 {Damage} 點精準的傷害。|
+    |熱戀中|：獲得 {Block} 點|格擋|。
   ExtraDescription2: |-
-    |不在本我中|：對生命值最低的敵人造成 {Damage} 點|精準|的傷害。
-    |d:本我中：獲得 {Block} 點格擋。|
+    |不在熱戀中|：對生命值最低的敵人造成 {Damage} 點|精準|的傷害。
+    |d:熱戀中：獲得 {Block} 點格擋。|
 
 KoishiMove:
   Name: 無意識的行動
@@ -1914,15 +1903,15 @@ KoishiMove:
 
 KoishiMoveAttack:
   Name: 看看這個
-  Description: "對隨機敵人造成 {Damage} 點傷害，進入|本我|。\n（造成和受到的攻擊傷害翻倍。）"
+  Description: "對隨機敵人造成 {Damage} 點傷害，進入|熱戀|。\n（攻擊附帶精準，且可以消耗|戀心|翻倍傷害。）"
 
   ExtraDescription2: "對隨機敵人造成 {Damage} 點傷害，進入|頓悟|。\n（保留手牌和法力。）"
-  ExtraDescription1: "對隨機敵人造成 {Damage} 點傷害，進入|超我|。\n（離開時獲得法力。）"
+  ExtraDescription1: "對隨機敵人造成 {Damage} 點傷害，進入|平靜|。\n（離開時獲得法力。）"
 KoishiMoveDefense:
   Name: 看看那個
-  Description: "得到 {Block} 點格擋，進入|本我|。\n（造成和受到的攻擊傷害翻倍。）"
+  Description: "獲得 {Block} 點格擋，進入|熱戀|。\n（攻擊附帶精準，且可以消耗|戀心|翻倍傷害。）"
 
-  ExtraDescription1: "獲得 {Block} 點格擋，進入|超我|。\n（離開時獲得法力。）"
+  ExtraDescription1: "獲得 {Block} 點格擋，進入|平靜|。\n（離開時獲得法力。）"
   ExtraDescription2: "獲得 {Block} 點格擋，進入|頓悟|。\n（保留手牌和法力。）"
 Danxiangsi:
   Name: 單相思
@@ -3039,7 +3028,7 @@ Boundary:
 Astrology:
   Name: 占星
   Description: |-
-    占卜 {Scry} 。
+    |占卜| {Scry} 。
     抽 {Value1} 張牌。
 
 Xiaozhuo:
@@ -3544,41 +3533,41 @@ RelianJingji:
   Name: 熱戀荊棘
   Description: "造成 {Damage} 點傷害。\n|打出鄰近手牌時|：傷害提高 {Value1} 直到下一次打出。"
 PiankeNingjing:
-  Name: 片刻寧靜
-  UpgradedDescription: "獲得 {Block} 點|格擋|。\n離開|心境|，並抽取 {Value1} 張卡牌。"
-  Description: "獲得 {Block} 點|格擋|。\n離開|超我|，並抽取 {Value1} 張卡牌。"
+  Name: 回神
+  UpgradedDescription: "獲得 {Block} 點|格擋|。\n如可能，離開|心境|，並抽取 {Value1} 張卡牌。"
+  Description: "獲得 {Block} 點|格擋|。\n如可能，離開|平靜|，並抽取 {Value1} 張卡牌。"
 Yehuchan:
   FlavorText: 我們不用很麻煩很累就可以成石。
   Name: 野狐禪
   Description: "得到 {Value1} 層|閃避|和 {Value2} |鎖定|。\n|直覺|：進入|頓悟|。"
 HuiguiLizhi:
   Name: 回歸理智
-  Description: 回合結束時進入|超我|。
+  Description: 回合結束時進入|平靜|。
 YaoguaiNaodianbo:
   Name: 妖怪腦波
-  Description: "造成 {Damage} 點傷害。\n|直覺|：獲得{Mana}。"
+  Description: "造成 {Damage} 點傷害，獲得 {Value1} 層|戀心|。\n|直覺|：獲得{Mana}。"
 YoubiKongjuzheng:
   Name: 幽閉恐懼症
   Description: "獲得 {Block} 點|格擋|。\n|直覺|：獲得 {Shield} 點|護盾|。"
 BuruDiankuang:
   Name: 步入癲狂
-  Description: 得到{Mana}，進入|本我|。
-  UpgradedDescription: "得到{Mana}，進入|本我|。\n抽取 {Value1} 張攻擊牌。"
+  Description: 得到{Mana}，進入|熱戀|。
+  UpgradedDescription: "得到{Mana}，進入|熱戀|。\n抽取 {Value1} 張攻擊牌。"
 XinliZhenliao:
   Name: 心理診療
-  Description: "選擇一張處方加入手中：\n- 進入|本我|的處方。\n- 進入|超我|的處方。\n- 進入|頓悟|的處方。"
+  Description: "選擇一張處方加入手中：\n- 進入|熱戀|的處方。\n- 進入|平靜|的處方。\n- 進入|頓悟|的處方。"
 XinliBenwo:
-  Name: 處方 -本我-
-  Description: 進入|本我|。
+  Name: 處方 -熱戀-
+  Description: 進入|熱戀|。
 XinliChaowo:
-  Name: 處方 -超我-
-  Description: 進入|超我|。
+  Name: 處方 -平靜-
+  Description: 進入|平靜|。
 XinliDunwu:
   Name: 處方 -頓悟-
   Description: 進入|頓悟|。
 DNARain:
   Name: DNA霰彈槍
-  Description: "對所有敵人造成 {Damage} 點傷害。\n|進入超我和頓悟時|：傷害提高 {Value1} 點。"
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|進入心境時|：傷害提高 {Value1} 點。"
 MeihaoHuiyi:
   Name: 美好的回憶
   Description: '|打出相鄰手牌時|：獲得 {Block} 點格擋，升級一張隨機卡牌直到本場戰鬥結束。'
@@ -3588,10 +3577,10 @@ ZhuozhuangChengzhang:
   UpgradedDescription: "得到 {Value2} 層|閃避|。\n{PlayerName}的回合結束時，將 {Value1} 張|生機|加入手牌。"
 LianaiChongdong:
   Name: 戀愛衝動
-  ExtraDescription2: "|不在超我中|：下一張|基本|牌的數值提高 {Value1}。\n|d:超我中：所有基本牌的數值提高 {Value2}。\
+  ExtraDescription2: "|不在平靜中|：下一張|基本|牌的數值提高 {Value1}。\n|d:平靜中：所有基本牌的數值提高 {Value2}。\
     \ |"
-  Description: "|不在超我中|：下一張|基本|牌的數值提高 {Value1}。\n|超我中|：所有|基本|牌的數值提高 {Value2}。"
-  ExtraDescription1: "|d:不在超我中：下一張基本牌的數值提高 {Value1}。 |\n|超我中|：所有|基本|牌的數值提高 {Value2}。"
+  Description: "|不在平靜中|：下一張|基本|牌的數值提高 {Value1}。\n|平靜中|：所有|基本|牌的數值提高 {Value2}。"
+  ExtraDescription1: "|d:不在平靜中：下一張基本牌的數值提高 {Value1}。 |\n|平靜中|：所有|基本|牌的數值提高 {Value2}。"
 TaoqiQiangwei:
   Name: 淘氣薔薇
   Description: "得 {Block} 點|格擋|，抽 {Value1} 張牌。\n|打出鄰近手牌時|：費用減少{Mana}，直到戰鬥結束。"
@@ -3603,12 +3592,13 @@ JianruiSixiang:
   Name: 彈幕的墨跡測驗
   Description: "得到 {Value1} 點|反射|。\n|進入心境時|：將棄牌區中的{SelfName}移回手牌。"
 BenwoTouying:
-  Name: 自我投影
-  Description: "每次進入|本我|時，將一張|p:完全隨機|的|攻擊|牌加入手中，暫塑為{Mana}且附帶|放逐|。\n進入|本我|。"
+  Name: 盲目的愛
+  Description: "每次進入|熱戀|時，將一張|p:完全隨機|的|攻擊|牌加入手中，暫塑為{Mana}且附帶|放逐|。\n進入|熱戀|。"
   FlavorText: 我們都曾幻想成為另一個自己。
 FangkongSixu:
   Name: 放空思緒
-  Description: "丟棄任一手牌，每丟棄一張手牌可獲得 {Value1} 格擋。\n離開當下心境。"
+  Description: "丟棄任一手牌，每丟棄一張手牌可獲得 {Value1} 格擋。"
+  UpgradedDescription: 丟棄任意張手牌，每丟棄一張手牌獲得 {Value1} 格擋。
 Chaofanyin:
   Name: 超反應知覺
   Description: 每當你打出一張不是|複製|的直覺牌時，如果沒有觸發|直覺|，將 {Value1} 張費用為{Mana}且附帶|放逐|的複製加入手中。
@@ -3617,18 +3607,43 @@ JiyiShitihua:
   Description: "複製手中的一張的攻擊牌，複製費用為{Mana}且附帶|放逐|。\n造成{Damage}點傷害。"
 SelfControl:
   Name: 掌控自我
-  UpgradedDescription: "每次在|本我|狀態中造成攻擊傷害，獲得 {Value2} 點|護盾|。\n進入|本我|。"
-  Description: 每次在|本我|狀態中造成攻擊傷害，獲得 {Value1} 點|護盾|。
+  UpgradedDescription: "每次在|熱戀|狀態中造成攻擊傷害，獲得 {Value2} 點|護盾|。\n進入|熱戀|。"
+  Description: 每次在|熱戀|狀態中造成攻擊傷害，獲得 {Value1} 點|護盾|。
 Kongxiangshang:
   Name: 空想上的人格保持者
-  Description: 打出|基本防禦|牌後進入|超我|。
+  Description: 打出|基本防禦|牌後進入|平靜|。
 ZuxianTuomeng:
   Name: 祖先托夢
   Description: '|抽取時|：|放逐|最左邊的手牌，將 {Value1} 張被放逐卡牌的複製加入手牌，這些牌|暫塑|為{Mana}，附帶|放逐|。'
 ChaoyueZiwo:
   Name: 超越自我
-  UpgradedDescription: "{PlayerName}的回合結束時，若處於|超我|，得到 {Value1} 點|火力|。\n進入|超我|。"
-  Description: '{PlayerName}的回合結束時，如果處於|超我|，得到 {Value1} 點|火力|和|靈力|。'
+  UpgradedDescription: "{PlayerName}的回合結束時，若處於|平靜|，得到 {Value1} 點|火力|。\n進入|平靜|。"
+  Description: '{PlayerName}的回合結束時，如果處於|平靜|，得到 {Value1} 點|火力|和|靈力|。'
 Beiyanwu:
   Name: 被厭惡者的哲學
   Description: '|放逐|相鄰的手牌，每以此法放逐一張卡牌，獲得{Mana}並抽 {Value1} 張牌。'
+PatchouliFriend:
+  Description: '{FriendP}將 {PassiveColor} 點隨機的法力轉化爲|彩色|。'
+  Name: 鍊金術士帕秋莉
+  ExtraDescription1: '{FriendA}獲得 {Value1} 點|火力|和|靈力|，獲得 {Power} 點<sprite="Point"
+    name="Power">。'
+  ExtraDescription2: '{FriendU}將 {Value2} 張|不穩定藥劑|加入手中。'
+MeilingFriend:
+  Description: '{FriendP}當{PlayerName}受到一整輪攻擊時觸發一次：將一張|飛刀|加入手中。'
+  Name: 玩忽職守紅美鈴
+  ExtraDescription2: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
+Naodiantu:
+  Name: 腦電圖
+  Description: '|抉擇|：對生命值最高的敵人造成 {Damage} 點傷害；或獲得 {Block} 點|格擋|，使{SelfName}下次攻擊傷害提高 {Value1}。'
+  ExtraDescription1: 對生命值最高的敵人造成 {Damage} 點傷害。
+  ExtraDescription2: 獲得 {Block} 點|格擋|，使{SelfName}下次攻擊傷害提高 {Value1}。
+HeartDance:
+  Description: "造成 {Damage} 點傷害。\n進入|平靜|。"
+  Name: 心的舞步
+GududeXin:
+  Name: 孤獨的心
+  Description: 獲得 {Value1} 個|戀心|。
+  UpgradedDescription: "獲得 {Value1} 個|戀心|。\n|初見|：獲得 {Value1} 個|戀心|。"
+QiangweiDiyu:
+  Name: 薔薇地獄
+  Description: 獲得 {Value1} 層|戀心|。
