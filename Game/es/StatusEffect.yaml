@@ -865,8 +865,6 @@ IceMatrixSe:
   Brief: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana |Armadura de Escarcha|.'
   Description: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana {Level}
     |Armadura de Escarcha|.'
-Chaowo:
-  Name: Super-Ego
 IceVulnerable:
   Name: Congelación Profunda
   Brief: "{OwnerName} pierde el doble de vida.\nAl final del turno de {OwnerName},\
@@ -1033,15 +1031,15 @@ ControlNegative:
     \ de las |Muñecas|."
   Brief: "|Control| disminuido.\n|Controlar| aumenta ciertos efectos de las |Muñecas|."
 NextTurnBenwo:
-  Name: Introspección
+  Name: Pasión en el Siguiente Turno
   Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
     |Pasión|.
   Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Pasión|.
 NextTurnChaowo:
-  Name: Psicoanálisis
+  Name: Serenidad en el Siguiente Turno
   Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
-    |Super-Ego|.
-  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Super-Ego|.
+    |Serenidad|.
+  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Serenidad|.
 WuyishiDNASe:
   Brief: Al final del turno de {PlayerName}, si no está en el estado |Epifanía|, pierde
     la partida.
@@ -1050,11 +1048,11 @@ WuyishiDNASe:
   Name: Genética de la Inconsciente
 BenwoTouyingSe:
   Name: Proyección del Ego
-  Brief: Al entrar |Id|, agrega {Level} cartas de ataque completamente aleatorias
-    a la mano que |cuestan temporalmente| 0 y tienen |Exilio|.
-  Description: Al entrar en |Id|, agrega {Level} carta de ataque{Level:plural one=''
-    other='s'} completamente aleatoria{Level:plural one='' other='s'} a la mano que
-    |cuesta{Level:plural one='' other='n'} temporalmente| {Mana} y tiene{Level:plural
+  Brief: Al entrar en el estado |Pasión|, agrega {Level} cartas de ataque completamente
+    aleatorias a la mano que |cuestan temporalmente| 0 y tienen |Exilio|.
+  Description: Al entrar en el estado |Pasión|, agrega {Level} carta de ataque{Level:plural
+    one='' other='s'} completamente aleatoria{Level:plural one='' other='s'} a la
+    mano que |cuesta{Level:plural one='' other='n'} temporalmente| {Mana} y tiene{Level:plural
     one='' other='n'} |Exilio|.
 ChaofanyinSe:
   Name: Hiperactiva
@@ -1067,18 +1065,18 @@ ChaofanyinSe:
     other='n'} temporalmente| {Mana} y tiene{Level:plural one='' other='n'} |Exilio|.
 ChaoyueZiwoSe:
   Name: Trascendencia
-  Description: Al final del turno de {PlayerName}, si está en |Super-Ego|, gana {Level}
-    de |Poder| y |Espíritu|.
-  Brief: Al final del turno de {PlayerName}, si está en |Super-Ego|, gana |Poder|
-    y |Espíritu|.
+  Description: Al final del turno de {PlayerName}, si está en el estado |Serenidad|,
+    gana {Level} de |Poder| y |Espíritu|.
+  Brief: Al final del turno de {PlayerName}, si está en el estado |Serenidad|, gana
+    |Poder| y |Espíritu|.
 HuiguiLizhiSe:
   Name: Regreso a la Cordura
-  Description: Al final del turno de {PlayerName}, entra en |Super-Ego|.
-  Brief: Al final del turno de {PlayerName}, entra en |Super-Ego|.
+  Description: Al final del turno de {PlayerName}, entra en el estado |Serenidad|.
+  Brief: Al final del turno de {PlayerName}, entra en el estado |Serenidad|.
 KongxiangshangSe:
   Name: Autorretención Ideal
-  Description: Cuando una carta de |Defensa Básica| se juega, entra en |Super-Ego|.
-  Brief: Cuando una carta de |Defensa Básica| se juega, entra en |Super-Ego|.
+  Description: Cuando una carta de |Defensa Básica| se juega, entra en el estado |Serenidad|.
+  Brief: Cuando una carta de |Defensa Básica| se juega, entra en el estado |Serenidad|.
 ShortLove:
   Name: Chispa de Amor
   Description: El siguiente carta |Básica| jugada aumenta su valor numérico en {Level}.
@@ -1089,23 +1087,23 @@ LongLove:
   Brief: Todas las cartas |Básicas| aumentan su valor numérico.
 SelfControlSe:
   Name: Autocontrol
-  Brief: Siempre que {PlayerName} inflija daño por un ataque mientras está en |Id|,
-    obtén |Barrera|.
+  Brief: Siempre que {PlayerName} inflija daño por un ataque mientras está en el estado
+    |Pasión|, obtén |Barrera|.
   Description: Siempre que {PlayerName} inflija daño por un ataque mientras está en
-    |Id|, obtén {Level} de |Barrera|.
+    el estado |Pasión|, obtén {Level} de |Barrera|.
 ZhuozhuangChengzhangSe:
   Name: Crecimiento Saludable
   Description: Al final del turno de {PlayerName}, agrega {Level1} |Vitalidad{Level1:plural
     one='' other='es'}| a la mano.
   Brief: Al final del turno de {PlayerName}, agrega |Vitalidades| a la mano.
 MindPeace:
-  Brief: "|Tranquila| es un |Estado Mental|, del cual sólo uno puede estar activo\
+  Brief: "|Serenidad| es un |Estado Mental|, del cual sólo uno puede estar activo\
     \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
-    \ mental| actual.\nAl salir del estado |Tranquila|, gana {Mana}."
-  Name: Tranquila
-  Description: "|Tranquila| es un |Estado Mental|, del cual sólo uno puede estar activo\
+    \ mental| actual.\nAl salir del estado |Serenidad|, gana {Mana}."
+  Name: Serenidad
+  Description: "|Serenidad| es un |Estado Mental|, del cual sólo uno puede estar activo\
     \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
-    \ mental| actual.\nAl salir del estado |Tranquila|, gana {Mana}."
+    \ mental| actual.\nAl salir del estado |Serenidad|, gana {Mana}."
 MindEnlight:
   Brief: "|Epifanía| es un |Estado Mental|, del cual sólo uno puede estar activo a\
     \ la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
