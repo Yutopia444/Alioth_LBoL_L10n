@@ -614,7 +614,7 @@ ScryAttack:
 NightSeeStar:
   Name: 夜观星象
   Description: |-
-    占卜 {Scry} 。
+    |占卜| {Scry} 。
     抽 {Value1} 张牌。
   FlavorText: 观今夜天相，知明天中午应该吃什么。
 
@@ -905,6 +905,12 @@ SplitPotion:
 IceSpark:
   Name: 冰冻射线
   Description: 对所有敌人造成 {Damage} 点伤害，施加|寒冷|。
+
+PatchouliFriend:
+  Name: 炼金术士帕秋莉
+  Description: '{FriendP}将 {PassiveColor} 点随机的法力转化为|彩色|。'
+  ExtraDescription1: '{FriendA}获得 {Value1} 点|火力|和|灵力|，获得 {Power} 点<sprite="Point" name="Power">。'
+  ExtraDescription2: '{FriendU}将 {Value2} 张|不稳定药剂|加入手中。'
 
 ColdPotion:
   Name: 冷却剂
@@ -1352,6 +1358,11 @@ SakuyaSpeedup:
   Name: 加速时空
   Description: 将|时域冲击|的层数翻倍。
   FlavorText: 我在你背后。
+
+MeilingFriend:
+  Name: 玩忽职守红美铃
+  Description: '{FriendP}当{PlayerName}受到一整轮攻击时触发一次：将一张|飞刀|加入手中。'
+  ExtraDescription2: '{FriendU}恢复 {Value1} 点生命，获得 {Value2} 点|火力|。'
 
 SakuyaUsage:
   Name: 咲夜的错误用法
@@ -1857,24 +1868,24 @@ KoishiBlockG:
   Name: 花团锦簇
   Description: 获得 {Block} 点|格挡|。
 
-BenwoCard:
-  Name: 本我
+Naodiantu:
+  Name: 脑电图
+  Description: '|抉择|：对生命值最高的敌人造成 {Damage} 点伤害；或获得 {Block} 点|格挡|，使{SelfName}下次攻击伤害提高 {Value1}。'
+  ExtraDescription1: 对生命值最高的敌人造成 {Damage} 点伤害。
+  ExtraDescription2: 获得 {Block} 点|格挡|，使{SelfName}下次攻击伤害提高 {Value1}。
+
+GududeXin:
+  Name: 孤独的心
+  Description: 获得 {Value1} 个|恋心|。
+  UpgradedDescription: |-
+    获得 {Value1} 个|恋心|。
+    |初见|：获得 {Value1} 个|恋心|。
+
+HeartDance:
+  Name: 心的舞步
   Description: |-
     造成 {Damage} 点伤害。
-    进入|本我|。
-
-ChaowoCard:
-  Name: 超我
-  Description: |-
-    获得 {Block} 点|格挡|。
-    进入|超我|。
-
-ZiwoCard:
-  Name: 忘我之爱
-  Description: |-
-    造成 {Damage} 点伤害。
-    恢复自我，离开其它|精神状态|。
-    |直觉|：改为进入|本我|。
+    进入|平静|。
 
 RelianJingji:
   Name: 热恋荆棘
@@ -1883,13 +1894,13 @@ RelianJingji:
     |打出相邻手牌时|：伤害提高 {Value1} 直到下一次打出。
 
 PiankeNingjing:
-  Name: 片刻宁静
+  Name: 回神
   Description: |-
     获得 {Block} 点|格挡|。
-    离开|超我|，并抽取 {Value1} 张卡牌。
+    如可能，离开|平静|，并抽取 {Value1} 张卡牌。
   UpgradedDescription: |-
     获得 {Block} 点|格挡|。
-    离开|心境|，并抽取 {Value1} 张卡牌。
+    如可能，离开|心境|，并抽取 {Value1} 张卡牌。
 
 Yehuchan:
   Name: 野狐禅
@@ -1900,12 +1911,12 @@ Yehuchan:
 
 HuiguiLizhi:
   Name: 回归理智
-  Description: 回合结束时进入|超我|。
+  Description: 回合结束时进入|平静|。
 
 YaoguaiNaodianbo:
   Name: 妖怪脑电波
   Description: |-
-    造成 {Damage} 点伤害。
+    造成 {Damage} 点伤害，获得 {Value1} 层|恋心|。
     |直觉|：获得{Mana}。
 
 YoubiKongjuzheng:
@@ -1917,37 +1928,37 @@ YoubiKongjuzheng:
 QinchunPanni:
   Name: 青春期叛逆
   Description: |-
-    |不在本我中|：对生命值最低的敌人造成 {Damage} 点伤害。
-    |本我中|：获得 {Block} 点|格挡|，抽 {Value1} 张牌。
+    |不在热恋中|：对生命值最低的敌人造成 {Damage} 点伤害。
+    |热恋中|：获得 {Block} 点|格挡|，抽 {Value1} 张牌。
   ExtraDescription1: |-
-    |d:不在本我中：对生命值最低的敌人造成 {Damage} 点精准的伤害。|
-    |本我中|：获得 {Block} 点|格挡|。
+    |d:不在热恋中：对生命值最低的敌人造成 {Damage} 点精准的伤害。|
+    |热恋中|：获得 {Block} 点|格挡|。
   ExtraDescription2: |-
-    |不在本我中|：对生命值最低的敌人造成 {Damage} 点|精准|的伤害。
-    |d:本我中：获得 {Block} 点格挡。|
+    |不在热恋中|：对生命值最低的敌人造成 {Damage} 点|精准|的伤害。
+    |d:热恋中：获得 {Block} 点格挡。|
 
 BuruDiankuang:
   Name: 步入癫狂
-  Description: 获得{Mana}，进入|本我|。
+  Description: 获得{Mana}，进入|热恋|。
   UpgradedDescription: |-
-    获得{Mana}，进入|本我|。
+    获得{Mana}，进入|热恋|。
     抽取 {Value1} 张攻击牌。
 
 XinliZhenliao:
   Name: 心理诊疗
   Description: |-
     选择一张处方加入手中：
-    - 进入|本我|的处方。
-    - 进入|超我|的处方。
+    - 进入|热恋|的处方。
+    - 进入|平静|的处方。
     - 进入|顿悟|的处方。
 
 XinliBenwo:
-  Name: 处方 -本我-
-  Description: 进入|本我|。
+  Name: 处方 -热恋-
+  Description: 进入|热恋|。
 
 XinliChaowo:
-  Name: 处方 -超我-
-  Description: 进入|超我|。
+  Name: 处方 -平静-
+  Description: 进入|平静|。
 
 XinliDunwu:
   Name: 处方 -顿悟-
@@ -1957,7 +1968,7 @@ DNARain:
   Name: DNA霰弹枪
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    |进入超我和顿悟时|：伤害提高 {Value1} 点。
+    |进入心境时|：伤害提高 {Value1} 点。
 
 MeihaoHuiyi:
   Name: 美好的回忆
@@ -1967,10 +1978,10 @@ FlowerGone:
   Name: 旧梦凋零
   Description: |-
     获得 {Block} 点|格挡|。
-    |超我中|：获得 {Value1} 点|灵力|，放逐{SelfName}。
+    |平静中|：获得 {Value1} 点|灵力|，放逐{SelfName}。
   ExtraDescription1: |-
     获得 {Block} 点|格挡|。
-    |d:超我中：获得 {Value1} 点灵力，放逐{SelfName}。|
+    |d:平静中：获得 {Value1} 点灵力，放逐{SelfName}。|
 
 ZhuozhuangChengzhang:
   Name: 茁壮成长
@@ -1982,14 +1993,14 @@ ZhuozhuangChengzhang:
 LianaiChongdong:
   Name: 恋爱冲动
   Description: |-
-    |不在超我中|：下一张|基本|牌的数值提高 {Value1}。
-    |超我中|：所有|基本|牌的数值提高 {Value2}。
+    |不在平静中|：下一张|基本|牌的数值提高 {Value1}。
+    |平静中|：所有|基本|牌的数值提高 {Value2}。
   ExtraDescription1: |-
-    |d:不在超我中：下一张基本牌的数值提高 {Value1}。|
-    |超我中|：所有|基本|牌的数值提高 {Value2}。
+    |d:不在平静中：下一张基本牌的数值提高 {Value1}。|
+    |平静中|：所有|基本|牌的数值提高 {Value2}。
   ExtraDescription2: |-
-    |不在超我中|：下一张|基本|牌的数值提高 {Value1}。
-    |d:超我中：所有基本牌的数值提高 {Value2}。|
+    |不在平静中|：下一张|基本|牌的数值提高 {Value1}。
+    |d:平静中：所有基本牌的数值提高 {Value2}。|
 
 TaoqiQiangwei:
   Name: 淘气蔷薇
@@ -2011,10 +2022,10 @@ JianruiSixiang:
     |进入心境时|：将弃牌区中的{SelfName}移回手牌。
 
 BenwoTouying:
-  Name: 自我投影
+  Name: 盲目的爱
   Description: |-
-    每次进入|本我|时，将一张|p:完全随机|的|攻击|牌加入手中，暂塑为{Mana}且附带|放逐|。
-    进入|本我|。
+    每次进入|热恋|时，将一张|p:完全随机|的|攻击|牌加入手中，暂塑为{Mana}且附带|放逐|。
+    进入|热恋|。
   FlavorText: 我们都曾幻想成为另一个自己。
 
 KoishiMove:
@@ -2027,10 +2038,10 @@ KoishiMove:
 KoishiMoveAttack:
   Name: 看看这个
   Description: |-
-    对随机敌人造成 {Damage} 点伤害，进入|本我|。
-    （造成和受到的攻击伤害翻倍。）
+    对随机敌人造成 {Damage} 点伤害，进入|热恋|。
+    （攻击附带精准，且可以消耗|恋心|翻倍伤害。）
   ExtraDescription1: |-
-    对随机敌人造成 {Damage} 点伤害，进入|超我|。
+    对随机敌人造成 {Damage} 点伤害，进入|平静|。
     （离开时获得法力。）
   ExtraDescription2: |-
     对随机敌人造成 {Damage} 点伤害，进入|顿悟|。
@@ -2039,10 +2050,10 @@ KoishiMoveAttack:
 KoishiMoveDefense:
   Name: 看看那个
   Description: |-
-    获得 {Block} 点格挡，进入|本我|。
-    （造成和受到的攻击伤害翻倍。）
+    获得 {Block} 点格挡，进入|热恋|。
+    （攻击附带精准，且可以消耗|恋心|翻倍伤害。）
   ExtraDescription1: |-
-    获得 {Block} 点格挡，进入|超我|。
+    获得 {Block} 点格挡，进入|平静|。
     （离开时获得法力。）
   ExtraDescription2: |-
     获得 {Block} 点格挡，进入|顿悟|。
@@ -2050,9 +2061,8 @@ KoishiMoveDefense:
 
 FangkongSixu:
   Name: 放空思绪
-  Description: |-
-    丢弃任意张手牌，每丢弃一张手牌获得 {Value1} 格挡。
-    离开当前心境。
+  Description: 丢弃任意张手牌，每丢弃一张手牌获得 {Value1} 格挡。
+  UpgradedDescription: 丢弃任意张手牌，每丢弃一张手牌获得 {Value1} 格挡。
 
 XinzuoTest:
   Name: 星座测试
@@ -2084,10 +2094,10 @@ JiyiShitihua:
 
 SelfControl:
   Name: 掌控自我
-  Description: 每次在|本我|状态中造成攻击伤害，获得 {Value1} 点|护盾|。
+  Description: 每次在|热恋|状态中造成攻击伤害，获得 {Value1} 点|护盾|。
   UpgradedDescription: |-
-    每次在|本我|状态中造成攻击伤害，获得 {Value2} 点|护盾|。
-    进入|本我|。
+    每次在|热恋|状态中造成攻击伤害，获得 {Value2} 点|护盾|。
+    进入|热恋|。
 
 BabyDream:
   Name: 胎儿之梦
@@ -2101,7 +2111,7 @@ PerfectCrime:
 
 Kongxiangshang:
   Name: 空想上的人格保持者
-  Description: 打出|基本防御|牌后进入|超我|。
+  Description: 打出|基本防御|牌后进入|平静|。
 
 ZuxianTuomeng:
   Name: 祖先托梦
@@ -2109,10 +2119,10 @@ ZuxianTuomeng:
 
 ChaoyueZiwo:
   Name: 超越自我
-  Description: '{PlayerName}的回合结束时，如果处于|超我|，获得 {Value1} 点|火力|和|灵力|。'
+  Description: '{PlayerName}的回合结束时，如果处于|平静|，获得 {Value1} 点|火力|和|灵力|。'
   UpgradedDescription: |-
-    {PlayerName}的回合结束时，如果处于|超我|，获得 {Value1} 点|火力|。
-    进入|超我|。
+    {PlayerName}的回合结束时，如果处于|平静|，获得 {Value1} 点|火力|。
+    进入|平静|。
 
 LoveFire:
   Name: 恋之埋火
@@ -2128,6 +2138,10 @@ LoveFire:
 Beiyanwu:
   Name: 被厌恶者的哲学
   Description: '|放逐|相邻的手牌，每以此法放逐一张卡牌，获得{Mana}并抽 {Value1} 张牌。'
+
+QiangweiDiyu:
+  Name: 蔷薇地狱
+  Description: 获得 {Value1} 层|恋心|。
 
 WuyishiDNA:
   Name: 无意识的基因
@@ -3224,7 +3238,7 @@ Boundary:
 Astrology:
   Name: 占星
   Description: |-
-    占卜 {Scry} 。
+    |占卜| {Scry} 。
     抽 {Value1} 张牌。
 
 Xiaozhuo:

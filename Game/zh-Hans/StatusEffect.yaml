@@ -939,36 +939,40 @@ StarFriendSe:
   Description: '{SourceCardName}造成伤害时，施加 {Level} 层|锁定|。'
   Brief: '{SourceCardName}造成伤害时，施加若干层|锁定|。'
 
-Benwo:
-  Name: 本我
-  Description: |-
-    |本我|是一种|心境|，同时只能存在一种|心境|。
-    打出下一张卡牌后离开|本我|。
-    翻倍造成的攻击伤害。如果打出的不是|攻击牌|，放逐打出的卡牌并获得 5 点|格挡|。
-  Brief: |-
-    |本我|是一种|心境|，同时只能存在一种|心境|。
-    打出下一张卡牌后离开|本我|。
-    翻倍造成的攻击伤害。如果打出的不是|攻击牌|，放逐打出的卡牌并获得 5 点|格挡|。
+Love:
+  Name: 恋心
+  Description: |
+    {PlayerName}的回合开始时，移除两个|恋心|，抽 {Draw} 张牌并进入|热恋|。
+  Brief: '{PlayerName}的回合开始时，移除两个|恋心|，抽 3 张牌并进入|热恋|。'
 
-Chaowo:
-  Name: 超我
+MindPassion:
+  Name: 热恋
   Description: |-
-    |超我|是一种|心境|，同时只能存在一种|心境|。
-    离开|超我|状态时，获得{Mana}。
+    |热恋|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    所有攻击附带|精准|。
+    打出攻击牌时消耗一个|恋心|，翻倍造成的伤害。
   Brief: |-
-    |超我|是一种|心境|，同时只能存在一种|心境|。
-    离开|超我|状态时，获得{Mana}。
+    |热恋|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    所有攻击附带|精准|。
+    打出攻击牌时消耗一个|恋心|，翻倍造成的伤害。
 
-Dunwu:
+MindPeace:
+  Name: 平静
+  Description: |-
+    |平静|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    离开|平静|状态时，获得{Mana}。
+  Brief: |-
+    |平静|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    离开|平静|状态时，获得{Mana}。
+
+MindEnlight:
   Name: 顿悟
   Description: |-
-    |顿悟|是一种|心境|，同时只能存在一种|心境|。
-    回合结束时不会失去法力与手牌。
-    打出总费用大于0的卡牌后离开|顿悟|。
+    |顿悟|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    回合结束时不会失去法力并保留手牌。
   Brief: |-
-    |顿悟|是一种|心境|，同时只能存在一种|心境|。
-    回合结束时不会失去法力与手牌。
-    打出总费用大于0的卡牌后离开|顿悟|。
+    |顿悟|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
+    回合结束时不会失去法力并保留手牌。
 
 Starfall:
   Name: 星落
@@ -976,14 +980,14 @@ Starfall:
   Brief: '|占卜|后，受到伤害。'
 
 NextTurnBenwo:
-  Name: 下回合进入本我
-  Description: '{PlayerName}的回合结束开始时，进入|本我|。'
-  Brief: '{PlayerName}的回合结束开始时，进入|本我|。'
+  Name: 下回合进入热恋
+  Description: '{PlayerName}的回合结束开始时，进入|热恋|。'
+  Brief: '{PlayerName}的回合结束开始时，进入|热恋|。'
 
 NextTurnChaowo:
-  Name: 下回合进入超我
-  Description: '{PlayerName}的回合结束开始时，进入|超我|。'
-  Brief: '{PlayerName}的回合结束开始时，进入|超我|。'
+  Name: 下回合进入平静
+  Description: '{PlayerName}的回合结束开始时，进入|平静|。'
+  Brief: '{PlayerName}的回合结束开始时，进入|平静|。'
 
 WuyishiDNASe:
   Name: 无意识的基因
@@ -992,8 +996,8 @@ WuyishiDNASe:
 
 BenwoTouyingSe:
   Name: 自我投影
-  Description: 每次进入|本我|时，将 {Level} 张完全随机的攻击牌加入手牌，|暂塑|为{Mana}且附带|放逐|。
-  Brief: 每次进入|本我|时，将一张完全随机的攻击牌加入手牌，暂塑为0且附带|放逐|。
+  Description: 每次进入|热恋|时，将 {Level} 张完全随机的攻击牌加入手牌，|暂塑|为{Mana}且附带|放逐|。
+  Brief: 每次进入|热恋|时，将一张完全随机的攻击牌加入手牌，暂塑为0且附带|放逐|。
 
 ChaofanyinSe:
   Name: 超反应知觉
@@ -1002,18 +1006,18 @@ ChaofanyinSe:
 
 ChaoyueZiwoSe:
   Name: 超越自我
-  Description: '{PlayerName}的回合结束时，如果处于|超我|，获得 {Level} 点|火力|和|灵力|。'
-  Brief: '{PlayerName}的回合结束时，如果处于|超我|，获得|火力|和|灵力|。'
+  Description: '{PlayerName}的回合结束时，如果处于|平静|，获得 {Level} 点|火力|和|灵力|。'
+  Brief: '{PlayerName}的回合结束时，如果处于|平静|，获得|火力|和|灵力|。'
 
 HuiguiLizhiSe:
   Name: 回归理智
-  Description: 回合结束时进入|超我|。
-  Brief: 回合结束时进入|超我|。
+  Description: 回合结束时进入|平静|。
+  Brief: 回合结束时进入|平静|。
 
 KongxiangshangSe:
   Name: 空想上的人格保持者
-  Description: 打出|基本防御|牌后进入|超我|。
-  Brief: 打出|基本防御|牌后进入|超我|。
+  Description: 打出|基本防御|牌后进入|平静|。
+  Brief: 打出|基本防御|牌后进入|平静|。
 
 ShortLove:
   Name: 闪电恋
@@ -1027,8 +1031,8 @@ LongLove:
 
 SelfControlSe:
   Name: 掌控自我
-  Description: 每次在|本我|状态中造成攻击伤害，获得 {Level} 点|护盾|。
-  Brief: 每次在|本我|状态中造成攻击伤害，获得|护盾|。
+  Description: 每次在|热恋|状态中造成攻击伤害，获得 {Level} 点|护盾|。
+  Brief: 每次在|热恋|状态中造成攻击伤害，获得|护盾|。
 
 ZhuozhuangChengzhangSe:
   Name: 茁壮成长
