@@ -2260,8 +2260,6 @@ SakuyaUsage:
     \ elle est jouée pour la {Value2:ordinal one='%ère' other='%ème'} fois| : Retirez\
     \ cette carte du combat. Terminez le tour. Ajoutez une carte |Usage Correct de\
     \ Sakuya| au sommet de la pioche.\n(A été joué {PlayCount} fois.)"
-ZiwoCard:
-  Name: Amour Désintéressé
 BrokenTimeline:
   Name: Chronologie Brisée
   Description: '{PlayerName} termine son tour, et joue un tour supplémentaire qui
@@ -2877,20 +2875,22 @@ KoishiMove:
     - Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
 KoishiMoveAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi\
-    \ et entrez en état d'|Ego|.\n(Les dégâts infligés et subis sont doublés.)"
+    \ et entrez dans l'état |Passion|.\n(L'attaque est précise et peut consommer de\
+    \ l'|Amour| pour doubler les dégâts.)"
   Name: Regarde ça
   ExtraDescription2: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
     \ ennemi et entrez en état d'|Épiphanie|.\n(Cartes et mana sont conservés)."
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
-    \ ennemi et entrez en état de |Super-ego|.\n(Gagnez du mana en quittant l'état.)"
+    \ ennemi et entrez dans l'état |Calme|.\n(Gagnez du mana en quittant l'état.)"
 KoishiMoveDefense:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et entrez\
-    \ en état d'|Ego|.\n(Les dégâts infligés et subis sont doublés.)"
+    \ dans l'état |Passion|.\n(L'attaque est précise et peut consommer de l'|Amour|\
+    \ pour doubler les dégâts.)"
   Name: Regardez ça
   ExtraDescription2: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et\
     \ entrez en état d'|Épiphanie|.\n(Cartes et mana sont conservés)."
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et\
-    \ entrez en état de |Super-ego|.\n(Gagnez du mana en quittant l'état.)"
+    \ entrez dans l'état |Calme|.\n(Gagnez du mana en quittant l'état.)"
 LoveFire:
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, obtenez\
     \ {SavedMana}.\n|Pour chaque {Mana} supplémentaire dépensé| : dégâts augmentés\
@@ -2945,26 +2945,26 @@ XinzuoTest:
     \ d'Étoile| à tous les ennemis."
 FlowerGone:
   Name: Souvenirs Flétris
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Super-ego|\
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Calme|\
     \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez {SelfName}."
   ExtraDescription1: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
-    |d:Super-ego : Gagnez {Value1} Esprit{Value1:plural one='' other='s'}, exilez\
-    \ {SelfName}. |"
+    |d:Calme : Gagnez {Value1} Esprit{Value1:plural one='' other='s'}, exilez {SelfName}.\
+    \ |"
 CloseMemory:
   Name: Souvenirs Négligés
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nLes cartes\
     \ piochées de cette façon gagnent |Écho|."
 QinchunPanni:
   Name: Crise d'Adolescence
-  ExtraDescription1: "|d:Hors Ego : infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ à l'ennemi dont les points de vie sont les moins élevés. |\n|Ego| : Gagnez {Block}\
-    \ |Bouclier{Block:plural one='' other='s'}|."
-  ExtraDescription2: "|Hors Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ à l'ennemi dont les points de vie sont les moins élevés.\n|d:Ego : Gagnez {Block}\
-    \ Bouclier{Block:plural one='' other='s'}. |"
-  Description: "|Hors Ego| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ à l'ennemi dont les points de vie sont les moins élevés.\n|Ego| : Gagnez {Block}\
-    \ |Bouclier{Block:plural one='' other='s'}|, piochez {Value1} carte{Value1:plural\
+  ExtraDescription1: "|d:Hors Passion : infligez {Damage} dégât{Damage:plural one=''\
+    \ other='s'} à l'ennemi dont les points de vie sont les moins élevés. |\n|Passion|\
+    \ : Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  ExtraDescription2: "|Hors Passion| : infligez {Damage} dégât{Damage:plural one=''\
+    \ other='s'} à l'ennemi dont les points de vie sont les moins élevés.\n|d:Passion\
+    \ : Gagnez {Block} Bouclier{Block:plural one='' other='s'}. |"
+  Description: "|Hors Passion| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi dont les points de vie sont les moins élevés.\n|Passion| : Gagnez\
+    \ {Block} |Bouclier{Block:plural one='' other='s'}|, piochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
 Danxiangsi:
   Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Lorsque\
@@ -3057,12 +3057,12 @@ RelianJingji:
     \ carte adjacente est jouée| : Augmentez les dégâts de {SelfName} de {Value1}\
     \ la prochaine fois qu'elle est jouée."
 PiankeNingjing:
-  Name: Moment de Silence
+  Name: Reprendre ses Esprits
   UpgradedDescription: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
     Si vous êtes dans un |État mental|, quittez-le et piochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi vous\
-    \ êtes en état de |Super-ego|, quittez-le et piochez {Value1} carte{Value1:plural\
+    \ êtes dans l'état |Calme|, quittez-le et piochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
 Yehuchan:
   Name: Zen Dissident
@@ -3072,37 +3072,37 @@ Yehuchan:
     \ |Verrouillé{Value2:plural one='' other='s'}|.\n|Instinct| : Entrez en état d'|Épiphanie|."
 HuiguiLizhi:
   Name: Retour à la Raison
-  Description: Lorsque {PlayerName} finit son tour, entrez en état de |Super-ego|.
+  Description: Lorsque {PlayerName} finit son tour, entrez dans l'état |Calme|.
 YaoguaiNaodianbo:
   Name: Polygraphe Yōkai
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Instinct|\
-    \ : gagnez {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, gagnez {Value1}\
+    \ |Amour{Value1:plural one='' other='s'}|.\n|Instinct| : gagnez {Mana}."
 YoubiKongjuzheng:
   Name: Claustrophobie
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Instinct|\
     \ : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
 BuruDiankuang:
   Name: Sombrer dans la Folie
-  Description: Gagnez {Mana} et entrez en état d'|Ego|.
-  UpgradedDescription: "Gagnez {Mana} et entrez en état d'|Ego|.\nPiochez {Value1}\
+  Description: Gagnez {Mana} et entrez dans l'état |Passion|.
+  UpgradedDescription: "Gagnez {Mana} et entrez dans l'état |Passion|.\nPiochez {Value1}\
     \ carte{Value1:plural one='' other='s'} d'attaque."
 XinliZhenliao:
   Name: Diagnostic Mental
-  Description: "Choisissez une |Ordonnance| à ajouter à la main.\n- Entrez en état\
-    \ d'|Ego|.\n- Entrez en état de |Super-ego|.\n- Entrez en état d'|Épiphanie|."
+  Description: "Choisissez une |Ordonnance| à ajouter à la main.\n- Entrez dans l'état\
+    \ |Passion|.\n- Entrez dans l'état |Calme|.\n- Entrez en état d'|Épiphanie|."
 XinliBenwo:
-  Name: Ordonnance -Ego-
-  Description: Entrez en état d'|Ego|.
+  Name: Ordonnance -Passion-
+  Description: Entrez dans l'état |Passion|.
 XinliChaowo:
-  Name: Ordonnance -Super-ego-
-  Description: Entrez en état de |Super-ego|.
+  Name: Ordonnance -Calme-
+  Description: Entrez dans l'état |Calme|.
 XinliDunwu:
   Name: Ordonnance -Épiphanie-
   Description: Entrez en état d'|Épiphanie|.
 DNARain:
   Name: Fusil à Pompe à ADN
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    |Lorsque vous entrez en Super-ego ou Épiphanie| : Augmentez les dégâts de {SelfName}\
+    |Lorsque vous entrez dans un état d'esprit| : Augmentez les dégâts de {SelfName}\
     \ de {Value1}."
 MeihaoHuiyi:
   Name: Souvenirs Heureux
@@ -3117,15 +3117,15 @@ ZhuozhuangChengzhang:
     one='' other='s'}| à la main.
 LianaiChongdong:
   Name: Impulsion Amoureuse
-  ExtraDescription2: "|Hors Super-Ego| : Augmentez la valeur numérique de la prochaine\
-    \ carte |basique| de {Value1}.\n|d:Super-ego : Augmentez la valeur numérique de\
-    \ chaque carte |basique| de {Value2}.|"
-  Description: "|Hors Super-Ego| : Augmentez la valeur numérique de la prochaine carte\
-    \ |basique| de {Value1}.\n|Super-ego| : Augmentez la valeur numérique de chaque\
-    \ carte |basique| de {Value2}."
-  ExtraDescription1: "|d:Hors Super-Ego : Augmentez la valeur numérique de la prochaine\
-    \ carte |basique| de {Value1}.|\n|Super-ego| : Augmentez la valeur numérique de\
-    \ chaque carte |basique| de {Value2}."
+  ExtraDescription2: "|Hors Calme| : Augmentez la valeur numérique de la prochaine\
+    \ carte |basique| de {Value1}.\n|d:Calme : Augmentez la valeur numérique de chaque\
+    \ carte |basique| de {Value2}.|"
+  Description: "|Hors Calme| : Augmentez la valeur numérique de la prochaine carte\
+    \ |basique| de {Value1}.\n|Calme| : Augmentez la valeur numérique de chaque carte\
+    \ |basique| de {Value2}."
+  ExtraDescription1: "|d:Calme : Augmentez la valeur numérique de la prochaine carte\
+    \ |basique| de {Value1}.|\n|Calme| : Augmentez la valeur numérique de chaque carte\
+    \ |basique| de {Value2}."
 TaoqiQiangwei:
   Name: Rébellion des Roses
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}| et piochez\
@@ -3142,16 +3142,17 @@ JianruiSixiang:
     \ vous entrez dans un état mental| : renvoyez {SelfName} de la pile de défausse\
     \ à la main."
 BenwoTouying:
-  Name: Projection de l'Ego
-  Description: "Chaque fois que {PlayerName} entre en état d'|Ego|, ajoutez une carte\
-    \ |p:complètement aléatoire| d'|Attaque| à la main. Elle |coûte temporairement|\
-    \ {Mana} et a |Exil|.\nEntrez en état d'|Ego|."
+  Name: Amour Aveugle
+  Description: "Chaque fois que {PlayerName} entre dans l'état |Passion|, ajoutez\
+    \ une carte |p:complètement aléatoire| d'|Attaque| à la main. Elle |coûte temporairement|\
+    \ {Mana} et a |Exil|.\nEntrez dans l'état |Passion|."
   FlavorText: Nous avons tous rêvé un jour d'être quelqu'un d'autre.
 FangkongSixu:
   Name: Esprit Vide
   Description: "Défaussez n'importe quel nombre de cartes. Pour chaque carte défaussée\
-    \ de cette façon, gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|.\n\
-    Quittez l'|État mental| actuel."
+    \ de cette façon, gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|."
+  UpgradedDescription: Défaussez n'importe quel nombre de cartes. Pour chaque carte
+    défaussée de cette façon, gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|.
 Chaofanyin:
   Name: Hyperréactivité
   Description: Lorsqu'une carte non-|copie| avec |Instinct| est jouée et ne déclenche
@@ -3165,11 +3166,11 @@ JiyiShitihua:
     \ dégât{Damage:plural one='' other='s'}."
 SelfControl:
   Name: Maîtrise de Soi
-  Description: Chaque fois que {PlayerName} inflige des dégâts d'attaque en état d'|Ego|,
-    gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
+  Description: Chaque fois que {PlayerName} inflige des dégâts d'attaque dans l'état
+    |Passion|, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
   UpgradedDescription: "Chaque fois que {PlayerName} inflige des dégâts d'attaque\
-    \ en état d'|Ego|, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.\n\
-    Entrez en état d'|Ego|."
+    \ dans l'état |Passion|, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.\n\
+    Entrez dans l'état |Passion|."
 ZuxianTuomeng:
   Name: Rêves Ancestraux
   Description: "|Lorsque piochée| : |Exilez| la carte la plus à gauche de la main.\
@@ -3178,10 +3179,10 @@ ZuxianTuomeng:
     \ |Exil|."
 ChaoyueZiwo:
   Name: Dépassement de Soi
-  UpgradedDescription: "Lorsque {PlayerName} finit son tour, si vous êtes en état\
-    \ de |Super-Ego|, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|\
-    \ et |Esprit{Value1:plural one='' other='s'}|.\nEntrez en état de |Super-ego|."
-  Description: Lorsque {PlayerName} finit son tour, si vous êtes en état de |Super-Ego|,
+  UpgradedDescription: "Lorsque {PlayerName} finit son tour, si vous êtes dans l'état\
+    \ |Calme|, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural\
+    \ one='' other='s'}|.\nEntrez dans l'état |Calme|."
+  Description: Lorsque {PlayerName} finit son tour, si vous êtes dans l'état |Calme|,
     gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural
     one='' other='s'}|.
 Beiyanwu:
@@ -3191,7 +3192,7 @@ Beiyanwu:
     \ other='s'}."
 Kongxiangshang:
   Name: Gardien de la Personnalité Utopique
-  Description: Lorsqu'une |défense de base| est jouée, entrez en état de |Super-ego|.
+  Description: Lorsqu'une |défense de base| est jouée, entrez dans l'état |Calme|.
 PatchouliFriend:
   Description: "{FriendP}Convertit {PassiveColor} point{PassiveColor:plural one=''\
     \ other='s'} de mana aléatoire en |couleur|."
@@ -3201,3 +3202,31 @@ PatchouliFriend:
     \ name=\"Power\">."
   ExtraDescription2: "{FriendU}Ajoutez {Value2} |Potion{Value2:plural one=' instable'\
     \ other='s instables'}| à la main."
+MeilingFriend:
+  Name: Meiling, Négligente du Devoir
+  Description: '{FriendP}Une fois par tour lorsque {PlayerName} est attaqué : ajoute
+    un |Couteau de lancer| à la main.'
+  ExtraDescription2: "{FriendU}Gagnez {Value1} point{Value1:plural one='' other='s'}\
+    \ de vie et gagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
+Naodiantu:
+  Name: Électroencéphalogramme
+  Description: "|Choix| : Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi dont la santé est la plus élevée ; ou gagnez {Block} |Bouclier{Block:plural\
+    \ one='' other='s'}|, ce qui augmentera les dégâts de la prochaine attaque de\
+    \ {SelfName} de {Value1}."
+  ExtraDescription1: Infligez {Damage} dégât{Damage:plural one='' other='s'} à l'ennemi
+    dont la santé est la plus élevée.
+  ExtraDescription2: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|, ce
+    qui augmentera les dégâts de la prochaine attaque de {SelfName} de {Value1}.
+GududeXin:
+  Description: Gagnez {Value1} |Amour{Value1:plural one='' other='s'}|.
+  Name: Cœurs Solitaires
+  UpgradedDescription: "Gagnez {Value1} |Amour{Value1:plural one='' other='s'}|.\n\
+    |Début| : Gagnez {Value1} |Amour{Value1:plural one='' other='s'}|."
+HeartDance:
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEntrez dans\
+    \ l'état |Calme|."
+  Name: Danse du Coeur
+QiangweiDiyu:
+  Name: Rose de l'Enfer
+  Description: Gagnez {Value1} |Amour{Value1:plural one='' other='s'}|.
