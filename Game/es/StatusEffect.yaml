@@ -865,15 +865,8 @@ IceMatrixSe:
   Brief: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana |Armadura de Escarcha|.'
   Description: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana {Level}
     |Armadura de Escarcha|.'
-Benwo:
-  Description: "|Id| es un |Estado Mental|, del cual sólo uno puede estar activo a\
-    \ la vez.\nDespués de jugar una carta, se sale del estado |Id|.\nEl daño de los\
-    \ ataques infligidos se duplica. Si una carta que |no es de ataque| se juega,\
-    \ se |Exilia| y gana 5 |Bloqueo|."
 Chaowo:
   Name: Super-Ego
-  Description: "|Super-Ego| es un |Estado Mental|, del cual sólo uno puede estar activo\
-    \ a la vez.\nAl salir del |Super-Ego|, gana {Mana}."
 IceVulnerable:
   Name: Congelación Profunda
   Brief: "{OwnerName} pierde el doble de vida.\nAl final del turno de {OwnerName},\
@@ -992,10 +985,6 @@ HuiyeTimeSe:
     cada turno. ( {Count} Carta{Count:plural one=' restante' other='s restantes'}.
     )
   Name: Momento Fugaz
-Dunwu:
-  Brief: "|Epifanía| es un |Estado Mental|, del cual sólo uno puede estar activo a\
-    \ la vez.\nLas cartas y el maná no se descartan al final del turno de {PlayerName}.\n\
-    Cuando se juega una carta cuyo coste no es 0, sale de la |Epifanía|."
 Starfall:
   Name: Lluvia de Estrellas
   Description: Después de |Explorar|, {OwnerName} recibe {Level} de daño.
@@ -1046,8 +1035,8 @@ ControlNegative:
 NextTurnBenwo:
   Name: Introspección
   Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
-    |Id|.
-  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Id|.
+    |Pasión|.
+  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Pasión|.
 NextTurnChaowo:
   Name: Psicoanálisis
   Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
@@ -1109,3 +1098,35 @@ ZhuozhuangChengzhangSe:
   Description: Al final del turno de {PlayerName}, agrega {Level1} |Vitalidad{Level1:plural
     one='' other='es'}| a la mano.
   Brief: Al final del turno de {PlayerName}, agrega |Vitalidades| a la mano.
+MindPeace:
+  Brief: "|Tranquila| es un |Estado Mental|, del cual sólo uno puede estar activo\
+    \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
+    \ mental| actual.\nAl salir del estado |Tranquila|, gana {Mana}."
+  Name: Tranquila
+  Description: "|Tranquila| es un |Estado Mental|, del cual sólo uno puede estar activo\
+    \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
+    \ mental| actual.\nAl salir del estado |Tranquila|, gana {Mana}."
+MindEnlight:
+  Brief: "|Epifanía| es un |Estado Mental|, del cual sólo uno puede estar activo a\
+    \ la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
+    \ mental| actual.\nLas cartas y el maná no se descartan al final del turno."
+  Name: Epifanía
+  Description: "|Epifanía| es un |Estado Mental|, del cual sólo uno puede estar activo\
+    \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
+    \ mental| actual.\nLas cartas y el maná no se descartan al final del turno."
+Love:
+  Name: Amor
+  Description: "Al comienzo del turno de {PlayerName}, pierde 2 de |Amor|, roba {Draw}\
+    \ cartas y entra en el estado |Pasión|.\n"
+  Brief: Al comienzo del turno de {PlayerName}, pierde 2 de |Amor|, roba 3 cartas
+    y entra en el estado |Pasión|.
+MindPassion:
+  Name: Pasión
+  Description: "|Pasión| es un |Estado Mental|, del cual sólo uno puede estar activo\
+    \ a la vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado\
+    \ mental| actual.\nTodos los ataques se vuelven |Certeros|.\nCuando se juega una\
+    \ carta de ataque, se pierde 1 de |Amor| y se duplica su daño."
+  Brief: "|Pasión| es un |Estado Mental|, del cual sólo uno puede estar activo a la\
+    \ vez. Al comienzo del siguiente turno de {PlayerName}, se sale del |Estado mental|\
+    \ actual.\nTodos los ataques se vuelven |Certeros|.\nCuando se juega una carta\
+    \ de ataque, se pierde 1 de |Amor| y se duplica su daño."
