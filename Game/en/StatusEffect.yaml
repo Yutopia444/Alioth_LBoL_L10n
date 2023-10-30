@@ -886,10 +886,6 @@ Immune:
   Description: "{OwnerName} can't lose life for {Duration} turn{Duration:plural one=''\
     \ other='s'}."
   Brief: '{OwnerName} can''t lose life.'
-Benwo:
-  Brief: "|Id| is a |Mental State|, of which only one can be active at once.\nAfter\
-    \ a card is played, exit |Id|.\nAttack damage dealt is doubled. If a non-|Attack\
-    \ Card| is played, |Exile| it and gain 5 |Block|."
 EnemyLarva:
   Name: Larva's Wings
   Description: Whenever {PlayerName} deals attack damage to {OwnerName}, she gains
@@ -921,9 +917,6 @@ ExtraBlizzard:
     damage and applies |Cold| to each enemy.
   Brief: At the start of {OwnerName}'s next turn, she deals |Accurate| damage and
     applies |Cold| to each enemy.
-Chaowo:
-  Description: "|Super-Ego| is a |Mental State|, of which only one can be active at\
-    \ once.\nUpon exiting |Super-Ego|, gain {Mana}."
 MinengZhuruSe:
   Name: Mental Energy Injection
   Description: "The passive effects of summoned |Teammate| cards in the hand trigger\
@@ -995,10 +988,6 @@ YinyangQueenSe:
     one='' other='s'}
   Brief: All |Yin-Yang Orbs| have their effects multiplied.
   Name: Misumaru, Skilled Crafter
-Dunwu:
-  Description: "|Epiphany| is a |Mental State|, of which only one can be active at\
-    \ once.\nCards and mana aren't discarded at the end of {PlayerName}'s turn.\n\
-    When a card that has a non-0 cost is played, exit |Epiphany|."
 Starfall:
   Name: Starfall
   Description: After |Scrying|, {OwnerName} takes {Level} damage.
@@ -1024,13 +1013,13 @@ ControlNegative:
   Description: "Lose {Level} |Control|.\n|Control| increases certain |Doll| effects."
   Brief: "|Control| decreased.\n|Control| increases certain |Doll| effects."
 NextTurnBenwo:
-  Name: Next Turn Id
-  Description: At the start of {PlayerName}'s next turn, enter |Id|.
-  Brief: At the start of {PlayerName}'s next turn, enter |Id|.
+  Name: Next Turn Passion
+  Description: At the start of {PlayerName}'s next turn, enter |Passion|.
+  Brief: At the start of {PlayerName}'s next turn, enter |Passion|.
 NextTurnChaowo:
-  Description: At the start of {PlayerName}'s next turn, enter |Super-Ego|.
-  Brief: At the start of {PlayerName}'s next turn, enter |Super-Ego|.
-  Name: Next Turn Super-Ego
+  Description: At the start of {PlayerName}'s next turn, enter |Peaceful|.
+  Brief: At the start of {PlayerName}'s next turn, enter |Peaceful|.
+  Name: Next Turn Peaceful
 WuyishiDNASe:
   Description: At the end of {PlayerName}'s turn, if she's not in |Epiphany|, she
     loses the game.
@@ -1038,10 +1027,10 @@ WuyishiDNASe:
     the game.
   Name: Genetics of the Unconscious
 BenwoTouyingSe:
-  Brief: When entering |Id|, add {Level} completely random attack cards to the hand
-    that |temporarily costs| 0 and have |Exile|.
+  Brief: When entering |Passion|, add {Level} completely random attack cards to the
+    hand that |temporarily costs| 0 and have |Exile|.
   Name: Ego Projection
-  Description: When entering |Id|, add {Level} completely random attack card{Level:plural
+  Description: When entering |Passion|, add {Level} completely random attack card{Level:plural
     one='' other='s'} to the hand that |temporarily cost{Level:plural one='s' other=''}|
     {Mana} and ha{Level:plural one='s' other='ve'} |Exile|.
 ChaofanyinSe:
@@ -1055,18 +1044,18 @@ ChaofanyinSe:
     ha{Level:plural one='s' other='ve'} |Exile|.
 ChaoyueZiwoSe:
   Name: Exceed Oneself
-  Description: At the end of {PlayerName}'s turn, if in |Super-Ego|, gain {Level}
-    |Firepower| and |Spirit|.
-  Brief: At the end of {PlayerName}'s turn, if in |Super-Ego|, gain |Firepower| and
+  Description: At the end of {PlayerName}'s turn, if in |Peaceful|, gain {Level} |Firepower|
+    and |Spirit|.
+  Brief: At the end of {PlayerName}'s turn, if in |Peaceful|, gain |Firepower| and
     |Spirit|.
 HuiguiLizhiSe:
   Name: Return to Sanity
-  Description: At the end of {PlayerName}'s turn, enter |Super Ego|.
-  Brief: At the end of {PlayerName}'s turn, enter |Super Ego|.
+  Description: At the end of {PlayerName}'s turn, enter |Peaceful|.
+  Brief: At the end of {PlayerName}'s turn, enter |Peaceful|.
 KongxiangshangSe:
   Name: Ideal Self Retention
-  Description: When a |Basic Defense| card is played, enter |Super-Ego|.
-  Brief: When a |Basic Defense| card is played, enter |Super-Ego|.
+  Description: When a |Basic Defense| card is played, enter |Peaceful|.
+  Brief: When a |Basic Defense| card is played, enter |Peaceful|.
 ShortLove:
   Name: Spark of Love
   Description: The next |Basic| card played has its numerical value increased by {Level}.
@@ -1077,11 +1066,43 @@ LongLove:
   Brief: All |Basic| cards have their numerical value increased.
 SelfControlSe:
   Name: Self-Control
-  Brief: Whenever {PlayerName} deals attack damage while in |Id|, gain |Barrier|.
-  Description: Whenever {PlayerName} deals attack damage while in |Id|, gain {Level}
-    |Barrier|.
+  Brief: Whenever {PlayerName} deals attack damage while in |Passion|, gain |Barrier|.
+  Description: Whenever {PlayerName} deals attack damage while in |Passion|, gain
+    {Level} |Barrier|.
 ZhuozhuangChengzhangSe:
   Name: Healthy Growth
   Brief: At the end of {PlayerName}'s turn, add |Vitalities| to the hand.
   Description: At the end of {PlayerName}'s turn, add {Level} |Vitalit{Level:plural
     one='y' other='ies'}| to the hand.
+Love:
+  Description: "At the start of {PlayerName}'s turn, lose 2 |Love|, draw {Draw} cards\
+    \ and enter |Passion|.\n"
+  Name: Love
+  Brief: At the start of {PlayerName}'s turn, lose 2 |Love|, draw 3 cards and enter
+    |Passion|.
+MindPassion:
+  Description: "|Passion| is a |Mental State|, of which only one can be active at\
+    \ once. At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    All attacks become |Accurate|.\nWhen an attack card is played, lose 1 |Love| and\
+    \ double its damage."
+  Name: Passion
+  Brief: "|Passion| is a |Mental State|, of which only one can be active at once.\
+    \ At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    All attacks become |Accurate|.\nWhen an attack card is played, lose 1 |Love| and\
+    \ double its damage."
+MindPeace:
+  Brief: "|Peaceful| is a |Mental State|, of which only one can be active at once.\
+    \ At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    When exiting |Peaceful|, gain {Mana}."
+  Name: Peaceful
+  Description: "|Peaceful| is a |Mental State|, of which only one can be active at\
+    \ once. At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    When exiting |Peaceful|, gain {Mana}."
+MindEnlight:
+  Description: "|Epiphany| is a |Mental State|, of which only one can be active at\
+    \ once. At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    Cards and Mana are not discarded at the end of turn."
+  Brief: "|Epiphany| is a |Mental State|, of which only one can be active at once.\
+    \ At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
+    Cards and Mana are not discarded at the end of turn."
+  Name: Epiphany
