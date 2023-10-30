@@ -165,7 +165,7 @@ FanzhuanChongdong:
   FlavorText: 흡혈귀의 권속이 되는 대가.
 Jiangshen:
   Name: 정신 수행
-  Description: "이번 전투에서 카드가 추가될 때마다 해당 카드를 |강화|합니다.\n |음양옥|을 {Value1}장 얻습니다."
+  Description: "이번 전투에서 카드를 획득하면 그 카드를 |강화|합니다.\n |음양옥|을 {Value1}장 얻습니다."
   FlavorText: 「신께 소원을 빌었더니, 바로 『경계 출입』을 뽑았지 뭐에요—」
 MingzhuAntou:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n무작위 |홍룡음양옥| {Value1}장 중 한 장을 선택해 얻습니다.\n\
@@ -225,7 +225,7 @@ TwoBalls:
   Name: 균형의 구슬
   Description: '|음양옥|을 {Value1}장 얻습니다.'
   FlavorText: 무극에서 태극이 나오고, 태극에서 음양이 나온다.
-  UpgradedDescription: 코스트가 {Mana} 감소한 |음양옥|을 {Value1}장 얻습니다.
+  UpgradedDescription: 코스트가 임시로 {Mana} 감소한 |음양옥|을 {Value1}장 얻습니다.
 HuanxiangBlock:
   Name: 환상의 테두리
   Description: 카드가 |소멸|될 때마다 |방어|를 {Value1} 얻습니다.
@@ -326,6 +326,7 @@ Changzhizhen:
   Name: 상치진
   Description: "|턴 종료 시|: 무작위 적에게 피해를 {Value1} 줍니다.\n|손에 있을 경우|: 버프를 잃을 때마다 이번 전투에서\
     \ 이 카드의 피해량이 {Value2} 증가합니다."
+  DetailText: '{SelfName}을 사용하면 |소멸|될 뿐입니다.'
 DanceAroundLake:
   Description: 카드가 소멸될 때마다, 카드를 {Value1}장 뽑습니다.
   Name: 연못 위의 춤
@@ -376,7 +377,7 @@ RainbowStar:
   Name: 레인보우 스타 임팩트
 ShinningPotion:
   Description: "|방어|를 {Block} 얻습니다.\n|불안정한 물약|을 뽑을 카드 더미에 한 장 섞어 넣습니다.\n|과충전 {Value2}|:\
-    \ 대신 두 장을 섞어 넣습니다."
+    \ 대신 {Value1}장을 섞어 넣습니다."
   Name: 야광 버섯
 RedLaser:
   Description: "피해를 {Damage} 줍니다.\n|과충전 {Value2}|: 대신 피해를 {UpgradeDamage}씩 {AttackTimes}번\
@@ -457,7 +458,8 @@ AccuracyLaser:
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|보존될 시|: 이번 전투에서 이 카드의 비용이 {Mana} 감소합니다."
   FlavorText: '"논 디렉셔널 레이저인줄 알았어? 유감! 디렉셔널 레이저였습니다!"'
 ReimuSakura:
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n체력을 {Value1} 회복합니다.\n|성장|: {Mana}를 덜 소모합니다."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n체력을 {Value1} 회복합니다.\n|성장|: 이 카드의 코스트가 이번\
+    \ 전투동안 {Mana} 감소합니다."
   Name: 몽상앵화봉인
 CollectionDefense:
   UpgradedDescription: 뽑을 카드 더미에 있는 카드의 수만큼 |보호막|을 얻습니다. ({Shield})
