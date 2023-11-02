@@ -627,11 +627,11 @@ MeihongPowerSe:
   Brief: "Na początku tury {PlayerName:g} zyskaj |Moc|.\nNa końcu walki, jeżeli {PlayerName}\
     \ ma mniej niż pół zdrowia, ulecz się."
 HuiyeManaSe:
-  Brief: "Na początku tury {PlayerName:g} zyskaj ileś <sprite=\"ManaSprite\" name=\"\
-    P\">.\nZwiększ efekt co turę."
+  Brief: "Na początku tury {PlayerName:g} zyskaj losową manę.\nZwiększ efekt co turę."
   Name: Opowieść o Zbieraczu Bambusu
-  Description: "Na początku tury {PlayerName:g} zyskaj {Count} <sprite=\"ManaSprite\"\
-    \ name=\"P\">.\nZwiększ ten efekt o {Level} co turę."
+  Description: "Na początku tury {PlayerName:g} zyskaj {Count:plural one='% losową\
+    \ manę' few='% losowe many' many='% losowych man'} .\nZwiększ ten efekt o {Level}\
+    \ co turę."
 ModuoluoFireSe:
   Description: Gdy zostanie wydana <sprite="ManaSprite" name="P">, zadaj {Level:plural
     one='% obrażenie' few='% obrażenia' many='% obrażeń'} wszystkim wrogom.
@@ -849,16 +849,13 @@ ForeverCoolSe:
   Brief: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika| zostanie użyta, nałóż\
     \ |Chłód| niektórym wrogom.\nGdy wróg zyskuje |Chłód|, niektórzy |Wspólnicy| w\
     \ dłoni zyskuje 1 |Wspólności|."
-Benwo:
-  Description: Zadawaj i dostawaj podwójne obrażenia w stanie |Id|.
 Chaowo:
   Name: Super-ego
 YouxiangMoonSe:
   Name: Piękności Natury
-  Brief: Na początku tury {PlayerName:g} dodaj ileś |Letnie Kwiaty| do ręki. Mają
-    one |Eteryczność|.
-  Description: Na początku tury {PlayerName:g} dodaj {Level} |Letnie Kwiaty| do ręki.
-    Mają one |Eteryczność|.
+  Brief: Na początku tury {PlayerName:g} dodaj |Letnie Kwiaty| do ręki.
+  Description: Na początku tury {PlayerName:g} dodaj {Level} |Letnich Kwiatów| do
+    ręki.
 FoxCharm:
   Name: Lisi Urok
   Description: "Można zagrać co najwyżej {Limit:plural one='% kartę' few='% karty'\
@@ -962,13 +959,12 @@ ShirenKunchongSe:
   Brief: Gdy {OwnerName} zyskuje |Debuffa|, {PlayerName} zyskuje ileś |Bloku|.
 DoubleJKSe:
   Name: Podwójna ESPerka Wieku
-  Description: "{PlayerName} może zagrać co najwyżej {Limit:plural one='% kartę' few='%\
-    \ karty' many='% kart'} w każdej turze. (Został{Count:plural one='a % karta' few='y\
-    \ % karty' many='o % kart'})\nNa końcu tury {PlayerName:g}, jeżeli to nie była\
-    \ dodatkowa tura, zacznij dodatkową turę zachowując cały |Blok|."
-  Brief: "{PlayerName} może zagrać jedynie ileś kart w każdej turze.\nNa końcu tury\
-    \ {PlayerName:g}, jeżeli to nie była dodatkowa tura, zacznij dodatkową turę zachowując\
-    \ cały |Blok|."
+  Description: "Na końcu tury {PlayerName:g}, jeżeli to nie była dodatkowa tura, zacznij\
+    \ dodatkową turę zachowując cały zyskany |Blok|.\nCo najwyżej {Level:plural one='%\
+    \ kartę' few='% karty' many='% kart'} może zostać zagranych w tamtej turze."
+  Brief: "Na końcu tury {PlayerName:g}, jeżeli to nie była dodatkowa tura, zacznij\
+    \ dodatkową turę zachowując cały zyskany |Blok|.\nOgraniczona ilość kart może\
+    \ zostać zagrana w tej dodatkowej turze."
 CatchGoblinSe:
   Name: Próba Fortuny
   Brief: '{OwnerName} otrzymuje 33% mniej obrażeń i upuszcza 50<sprite="Point" name="Gold">
@@ -1016,3 +1012,128 @@ HuiyeTimeSe:
   Description: Jedynie {Limit:plural one='% karta może zostać zagrana' few='% karty
     mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze. (Zostało
     {Count})
+MindPassion:
+  Name: Pasja
+  Brief: "|Pasja| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
+    \ naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu Umysłowego|.\n\
+    Wszystkie ataki stają się |Celne|.\nGdy zagrana jest karta ataku, strać 1 |Miłości|\
+    \ i zadaj podwójne obrażenia."
+  Description: "|Pasja| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
+    \ naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu Umysłowego|.\n\
+    Wszystkie ataki stają się |Celne|.\nGdy zagrana jest karta ataku, strać 1 |Miłości|\
+    \ i zadaj podwójne obrażenia."
+TempControlNegative:
+  Brief: "|Kontrola| jest zmniejszona do końca tury.\n|Kontrola| zwiększa efekty konkretnych\
+    \ |Kukiełek|."
+  Name: Tymczasowa Strata Kontroli
+  Description: "Do końca tury, strać {Level} |Kontroli|.\n|Kontrola| zwiększa efekty\
+    \ konkretnych |Kukiełek|."
+ControlNegative:
+  Name: Strata Kontroli
+  Description: "Strać {Level} |Kontroli|.\n|Kontrola| zwiększa efekty konkretnych\
+    \ |Kukiełek|."
+  Brief: "|Kontrola| jest zmniejszona.\n|Kontrola| zwiększa efekty konkretnych |Kukiełek|."
+MindPeace:
+  Brief: "|Spokój| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
+    \ naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu Umysłowego|.\n\
+    Wychodząc ze stanu |Spokoju|, zyskaj {Mana}."
+  Name: Spokój
+  Description: "|Spokój| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
+    \ naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu Umysłowego|.\n\
+    Wychodząc ze stanu |Spokoju|, zyskaj {Mana}."
+MindEnlight:
+  Name: Objawienie
+  Description: "|Objawienie| jest |Stanem Umysłowym|, z których tylko jeden może być\
+    \ aktywny naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu\
+    \ Umysłowego|.\nKarty i Mana nie są zrzucane na końcu tury."
+  Brief: "|Objawienie| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
+    \ naraz. Na początku następnej tury {PlayerName:g} wyjdź z aktywnego |Stanu Umysłowego|.\n\
+    Karty i Mana nie są zrzucane na końcu tury."
+Love:
+  Brief: Na początku tury {PlayerName:g}, strać 2 |Miłości|, dobierz 3 karty i wejdź
+    w stan |Pasji|.
+  Name: Miłość
+  Description: "Na początku tury {PlayerName:g}, strać 2 |Miłości|, dobierz {Draw:plural\
+    \ one='% kartę' few='% karty' many='% kart'} i wejdź w stan |Pasji|.\n"
+ChaofanyinSe:
+  Description: Jeżeli |Nieskopiowana| karta z efektem |Instynktu| zostanie zagrana
+    bez aktywowania jej efektu |Instynktu|, dodaj {Level} |Kopi{Level:plural one='ę'
+    few='e' many='i'}| tej karty do ręki któr{Level:plural one='a' other='e'} |Tymczasowo
+    Kosztuj{Level:plural one='e' other='ą'}| {Mana} oraz ma{Level:plural one='' other='ją'}
+    |Wygnanie|.
+  Name: Hiperreaktywność
+  Brief: Jeżeli |Nieskopiowana| karta z efektem |Instynktu| zostanie zagrana bez aktywowania
+    jej efektu |Instynktu|, dodaj |Kopie| tej karty do ręki które |Tymczasowo Kosztują|
+    {Mana} oraz mają |Wygnanie|.
+Starfall:
+  Name: Spadająca Gwiazda
+  Description: Po |Przewidzeniu|, {OwnerName} otrzymuje {Level:plural one='% obrażenie'
+    few='% obrażenia' many='% obrażeń'}.
+  Brief: Po |Przewidzeniu|, {OwnerName} otrzymuje obrażenia.
+TempControl:
+  Name: Tymczasowa Kontrola
+  Description: "Do końca tury, zyskaj {Level} |Kontroli|.\n|Kontrola| zwiększa efekty\
+    \ konkretnych |Kukiełek|."
+  Brief: "|Kontrola| jest zwiększona do końca tury.\n|Kontrola| zwiększa efekty konkretnych\
+    \ |Kukiełek|."
+Control:
+  Name: Kontrola
+  Description: "Zyskaj {Level} |Kontroli|.\n|Kontrola| zwiększa efekty konkretnych\
+    \ |Kukiełek|."
+  Brief: "|Kontrola| jest zwiększona.\n|Kontrola| zwiększa efekty konkretnych |Kukiełek|."
+WuyishiDNASe:
+  Description: No końcu tury {PlayerName:g}, jeżeli nie jest ona w stanie |Objawienia|,
+    przegrywa grę.
+  Brief: No końcu tury {PlayerName:g}, jeżeli nie jest ona w stanie |Objawienia|,
+    przegrywa grę.
+  Name: Genetyka Podświadomości
+BenwoTouyingSe:
+  Name: Projekcja Ego
+  Brief: Wchodząc w stan |Pasji|, dodaj kompletnie losowe karty ataku do ręki które
+    |Tymczasowo Kosztują| {Mana} oraz mają |Wygnanie|.
+  Description: Wchodząc w stan |Pasji|, dodaj {Level:plural one='% kompletnie losową
+    kartę' few='% kompletnie losowe karty' many='% kompletnie losowych kart'} do ręki
+    któr{Level:plural one='a' other='e'} |Tymczasowo Kosztuj{Level:plural one='e'
+    other='ą'}| {Mana} oraz ma{Level:plural one='' other='ją'} |Wygnanie|.
+ChaoyueZiwoSe:
+  Name: Przebić Siebie
+  Brief: Na końcu tury {PlayerName:g}, jeżeli jest w stanie |Spokoju|, zyskaj |Mocy|
+    oraz |Uduchowienia|.
+  Description: Na końcu tury {PlayerName:g}, jeżeli jest w stanie |Spokoju|, zyskaj
+    {Level} |Mocy| oraz |Uduchowienia|.
+HuiguiLizhiSe:
+  Name: Powrót do Rozumu
+  Description: Na końcu tury {PlayerName:g} wejdź w stan |Spokoju|.
+  Brief: Na końcu tury {PlayerName:g} wejdź w stan |Spokoju|.
+KongxiangshangSe:
+  Description: Gdy Podstawowa karta Obrony zostanie zagrana, wejdź w stan |Spokoju|.
+  Brief: Gdy Podstawowa karta Obrony zostanie zagrana, wejdź w stan |Spokoju|.
+  Name: Idealne Zachowanie Siebie
+ShortLove:
+  Name: Iskra Miłości
+  Description: Następna zagrana Podstawowa Karta ma swoją numeryczną wartość zwiększoną
+    o {Level}.
+  Brief: Następna zagrana Podstawowa Karta ma swoją numeryczną wartość zwiększoną.
+LongLove:
+  Name: Choroba Miłości
+  Description: Wszystkie |Podstawowe| karty mają swoje numeryczne wartości zwiększone
+    o {Level}.
+  Brief: Wszystkie |Podstawowe| karty mają swoje numeryczne wartości zwiększone.
+SelfControlSe:
+  Description: Gdy {PlayerName} zada obrażenia od ataku w stanie |Pasji|, zyskuje
+    {Level} |Bariery|.
+  Name: Samokontrola
+  Brief: Gdy {PlayerName} zada obrażenia od ataku w stanie |Pasji|, zyskuje |Barierę|.
+NextTurnBenwo:
+  Name: Pasja w Następnej Turze
+  Description: Na początku następnej tury {PlayerName:g} wejdź w stan |Pasji|.
+  Brief: Na początku następnej tury {PlayerName:g} wejdź w stan |Pasji|.
+NextTurnChaowo:
+  Name: Spokój w Następnej Turze
+  Description: Na początku następnej tury {PlayerName:g} wejdź w stan |Spokoju|.
+  Brief: Na początku następnej tury {PlayerName:g} wejdź w stan |Spokoju|.
+ZhuozhuangChengzhangSe:
+  Name: Zdrowy Rozwój
+  Description: Na końcu tury {PlayerName} dodaj {Level} |Witalnoś{Level:plural one='ć'
+    other='ci'}| do ręki.
+  Brief: Na końcu tury {PlayerName} dodaj |Witalności| do ręki.
