@@ -141,8 +141,8 @@ TwoBalls:
   Description: "Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'\
     \ many='% |Kul Yin-Yang|'} do ręki."
   UpgradedDescription: Dodaj {Value1:plural one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|'
-    many='% |Kul Yin-Yang|'} do ręki. {Value1:plural one='Ona' other='One'} kosztują
-    o {Mana} mniej.
+    many='% |Kul Yin-Yang|'} do ręki. {Value1:plural one='Ona' other='One'} |Tymczasowo
+    Kosztuj{Value1:plural one='e' other='ą'}| {Mana}.
 MingzhuAntou:
   Name: Sekretna Granica
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -215,15 +215,16 @@ HuanxiangTouying:
     \ i 5."
 OutInGap:
   Name: Łamanie Granic
-  Description: "Wybierz jedną z {Value1} |p:całkowicie losowych| kart aby dodać do\
-    \ ręki. Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.\n\
-    Te |e:karty| ignorują ograniczenia całkowitej many, koloru many oraz postaci."
+  Description: "Wybierz 1 z {Value1} |p:całkowicie losowych| kart aby dodać do ręki.\
+    \ Ona |tymczasowo kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|."
+  DetailText: "Te |e:karty| ignorują ograniczenia całkowitej many, koloru many oraz\
+    \ postaci.\n{SelfName} nie może zostać wyprodukowane przez ten efekt."
 BoliDajiejie:
   Name: Wielka Bariera Hakurei
   Description: Gdy {PlayerName} ma |Blok|, zamień go na |Barierę|.
 Jiangshen:
   Name: Wierna Medytacja
-  Description: "Gdy karta zostanie dodana podczas walki, |Ulepsz| ją.\nDodaj {Value1:plural\
+  Description: "Gdy {PlayerName} doda kartę podczas walki, |Ulepsz| ją.\nDodaj {Value1:plural\
     \ one='% |Kulę Yin-Yang|' few='% |Kule Yin-Yang|' many='% |Kul Yin-Yang|'} do\
     \ ręki."
 HuijuQiankun:
@@ -289,7 +290,7 @@ ReimuSakura:
   Name: Pieczęć Kwitnącej Wiśni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nUlecz {Value1:plural one='% punkt' few='% punkty' many='%\
-    \ punktów'} życia.\n|Przyrost|: Kosztuje o {Mana} mniej."
+    \ punktów'} życia.\n|Przyrost|: Kosztuje o {Mana} mniej na czas walki."
 SenluoJiejie:
   Name: Zagreguj Granicę
   Description: "Zyskaj {Shield} |Bariery|.\nNa początku następnej tury {PlayerName:g}\
@@ -405,7 +406,7 @@ ShibaiChanwu:
 ShinningPotion:
   Name: Świetlny Grzyb
   Description: "Zyskaj {Block} |Bloku|.\nDodaj |Niestabilną Miksturę| do stosu doboru.\n\
-    |Załaduj 2|: Dodaj jeszcze jedną."
+    |Załaduj 2|: Dodaj zamiast tego {Value1}."
 Yinhe:
   Name: Droga Mleczna
   Description: "Zyskaj {Block} |Bloku|.\n|Gdy Przetrzymana|: Zwiększ |Blok| tej karty\
@@ -426,6 +427,7 @@ Changzhizhen:
   Description: "|Na końcu tury:| Zadaj {Value1:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} losowemu wrogowi.\n|Gdy w dłoni:| Gdy {PlayerName} straci\
     \ buffa, zwiększ obrażenia tej karty o {Value2} na czas walki."
+  DetailText: Zagranie {SelfName:g} nie ma innych efektów niż jej |Wygnanie|.
 PoisonPotion:
   Description: "|Niestabilne Mikstury| nakładają {Value1} |Trucizny| na cel.\nDodaj\
     \ {Value2:plural one='|% Niestabilną Miksturę|' few='|% Niestabilne Mikstury|'\
@@ -546,9 +548,9 @@ EventHorizon:
     Na początku następnej tury {PlayerName} przegrywa grę."
 OpenUniverse:
   Name: Otwarty Wszechświat
-  Description: "Usuń kartę w stosie doboru z gry na czas walki.\nDodaj dwie |kopie|\
-    \ tej karty do ręki |tymczasowo kosztujące| {Mana} i mające |Wygnanie|.\nNie możesz\
-    \ wybrać |Kopii| dla tego efektu."
+  Description: "Usuń kartę w stosie doboru z gry na czas walki.\nDodaj dwie |Kopie|\
+    \ tej karty do ręki |Tymczasowo Kosztujące| {Mana} i mające |Wygnanie|."
+  DetailText: Nie możesz wybrać |Kopii| dla tego efektu.
 SolarSystem:
   Name: Słoneczne Tellurium
   Description: Na początku tury {PlayerName:g} zyskaj {Value1} |Ładunku|.
@@ -723,9 +725,9 @@ AttackMagic:
 CleanRoom:
   Name: Porządki
   Description: "Zrzuć kartę.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}.\n|Ulepsz| {Value2:plural one='% kartę' few='% karty' many='% kart'}\
-    \ w dłoni na czas walki. Jeżeli zrzucono |Sztylet do Rzucania|, |Ulepsz| wszystkie\
-    \ karty w dłoni na czas walki."
+    \ kart'}.\n|Ulepsz| {Value2:plural one='% losową kartę' few='% losowe karty' many='%\
+    \ losowych kart'} w dłoni na czas walki. Jeżeli zrzucono |Sztylet do Rzucania|,\
+    \ |Ulepsz| wszystkie karty w dłoni na czas walki."
 ExileMagic:
   Name: Podmiana
   Description: "|Wygnaj| do {Value1:plural one='% karty' few='% kart' many='% kart'}\
@@ -951,16 +953,16 @@ SummerFlower:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Do końca walki wszystkie |Letnie Kwiaty| zadają o {Value1} obrażeń."
 KoishiAttackG:
-  Name: Rozkwit Róży
+  Name: Podwójna Heliksa
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 KoishiBlockB:
-  Name: Altruistyczna Miłość
+  Name: Samoizolacja
   Description: Zyskaj {Block} |Bloku|.
 KoishiAttackB:
-  Name: Błąd w DNA
+  Name: Przelewająca się Miłość
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 KoishiBlockG:
-  Name: Więdnięcie Róży
+  Name: Bujny Wianek Kwiatów
   Description: Zyskaj {Block} |Bloku|.
 RingoJinghua:
   Name: Oczyścić Ziemie
@@ -1835,9 +1837,9 @@ VampireHunter:
     \ więcej obrażeń."
 SakuyaFuneral:
   Name: Przedwczesny Pogrzeb
-  Description: "Strać {0:plural one='% punkt' few='% punkty' many='% punktów'} życia.\n\
-    Wybierz |Wygnaną| kartę, aby ją zwrócić do ręki. Będzie ona |Tymczasowo Kosztować|\
-    \ {Mana}."
+  Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia.\nWybierz |Wygnaną| kartę, aby ją zwrócić do ręki. Będzie ona |Tymczasowo\
+    \ Kosztować| {Mana}."
   FlavorText: '"Jeszcze nie jestem martwa, Ojousama."'
 KnifeAim:
   Name: Świat Deflacji
@@ -1909,6 +1911,7 @@ CallFriends:
   UpgradedDescription: "Wybierz 1 z {Value1} |Wspólników| aby dodać do ręki. Wchodzi\
     \ do ręki już przywołana.\n|e:Wróżka Światła| jest zawsze zawarta jako dodatkowy\
     \ wybór."
+  DetailText: Te |e:alternatywne karty| mają łączny koszt 4 lub mniej.
 Blizzard:
   Name: Śnieżyca
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -1950,6 +1953,7 @@ MoreFriends:
   Description: "Na końcu tury {PlayerName:g} dodaj {Value1:plural one='% losową kartę'\
     \ few='% losowe karty' many='% losowych kart'} |Wspólnika| do ręki.\n{Value1:plural\
     \ one='Ta karta ma' other='Te karty mają'} |Eteryczność|, którą tracą po przywołaniu."
+  DetailText: Te |e:alternatywne karty| mają łączny koszt 4 lub mniej.
 FreezeToIce:
   Name: Zamrożony Okaz
   Description: "|Wygnaj| do {Value1:plural one='% kart' other='% kart'} z dłoni. Dodaj\
@@ -1962,8 +1966,8 @@ FairyOnIce:
 CirnoFestival:
   Name: Infiltracja Bankietu
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
-    {Value1:plural one='% losowa karta' few='% losowe karty' many='% losowych kart'}\
-    \ w dłoni kosztuje o 1 losową manę mniej."
+    {Value2:plural one='% losowa karta' few='% losowe karty' many='% losowych kart'}\
+    \ w dłoni |Tymczasowo Kosztuje| o 1 losową manę mniej."
 DeepFreeze:
   Name: Zamrożenie
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -2520,3 +2524,67 @@ HatateShot:
   Name: Panoramiczne Zdjęcie
   Description: "Zyskaj {Block} |Bloku|.\nZa każdą niewydaną manę {SelfName} przyznaje\
     \ o {Value1} więcej |Bloku|. (Całkowicie {Special} |Bloku|)"
+MeilingFriend:
+  Description: '{FriendP}Gdy {PlayerName} otrzyma obrażenia od ataku po raz pierwszy
+    w każdej turze, dodaj |Sztylet do Rzucania| do ręki.'
+  Name: Meiling, Niedbała Strażniczka
+  ExtraDescription2: "{FriendU}Ulecz {Value1:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia i zyskaj {Value2} |Mocy|."
+Naodiantu:
+  Description: "|Wybierz|: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wrogowi z największą ilością zdrowia, lub zyskaj {Block} |Bloku|\
+    \ i zwiększ obrażenia następnego ataku {SelfName:g} o {Value1}."
+  Name: Elektroencefalograf
+  ExtraDescription1: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%
+    obrażeń'} wrogowi z największą ilością zdrowia.
+  ExtraDescription2: Zyskaj {Block} |Bloku| i zwiększ obrażenia następnego ataku {SelfName:g}
+    o {Value1}.
+GududeXin:
+  UpgradedDescription: "Zyskaj {Value1} |Miłości|.\n|Debiut|: Zyskaj dodatkowe {Value1}\
+    \ |Miłości|."
+  Name: Samotne Serce
+  Description: Zyskaj {Value1} |Miłości|.
+RelianJingji:
+  Name: Namiętne Ciernie
+  Description: "{Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Gdy karta obok zostanie zagrana|: Zwiększ obrażenia {SelfName:g} przy następnym\
+    \ zagraniu o {Value1}."
+PiankeNingjing:
+  Name: Otrzęsienie Się
+  Description: "Zyskaj {Block} |Bloku|.\nJeśli możliwe, wyjdź ze stanu |Spokoju| i\
+    \ dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}."
+  UpgradedDescription: "Zyskaj {Block} |Bloku|.\nJeśli możliwe, wyjdź z aktualnego\
+    \ |Stanu Umysłowego| i dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}."
+Yehuchan:
+  Name: Złudzenie Oświecenia
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}\
+    \ oraz {Value2:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\n\
+    |Instynkt|: Wejdź w stan |Objawienia|."
+HuiguiLizhi:
+  Name: Powrót do Rozumu
+  Description: Na końcu tury {PlayerName:g}, wejdź w stan |Spokoju|.
+YaoguaiNaodianbo:
+  Name: Wariograf Youkai
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ i zyskaj {Value1} |Miłości|.\n|Instynkt|: Zyskaj {Mana}."
+YoubiKongjuzheng:
+  Name: Klaustrofobia
+  Description: "Zyskaj {Block} |Bloku|.\n|Instynkt|: Zyskaj {Shield} |Bariery|."
+QinchunPanni:
+  Name: Bunt Młodociany
+  Description: "|Nie w Pasji|: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
+    \ many='% obrażeń'} wrogowi z najniższym życiem.\n|W Pasji|: Zyskaj {Block} |Bloku|\
+    \ i dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}."
+PatchouliFriend:
+  Name: Patchouli, Alchemistka Żywiołów
+  Description: "{FriendP}Zamień {PassiveColor:plural one='% losową manę' few='% losowe\
+    \ many' many='% losowych man'} w |Manę Filozoficzną|."
+  ExtraDescription1: '{FriendA}Zyskaj {Value1} |Mocy| i |Uduchowienia|. Zyskaj {Power}
+    <sprite="Point" name="Power">.'
+  ExtraDescription2: "{FriendU}Dodaj {Value2:plural one='|% Niestabilną Miksturę|'\
+    \ few='|% Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do ręki."
+HeartDance:
+  Name: Taniec Serca
+  Description: "{Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Wejdź w stan |Spokoju|."

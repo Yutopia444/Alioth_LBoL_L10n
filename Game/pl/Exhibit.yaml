@@ -90,10 +90,11 @@ XianzheShi:
   FlavorText: Podczas gdy Kamienie Folozoficzne są ostatecznym osiągnięciem w alchemii,
     Patchouli używa ich jako pocisków.
 TaiguGouyu:
-  Description: "Dodaje {BaseMana} do bazy many.\nGdy nabyte, {PlayerName} zyskuje\
-    \ {Value1} maksymalnego życia."
+  Description: "Dodaje {BaseMana} do bazy many.\nGdy {Value1} lub więcej many jest\
+    \ wydane na zagranie karty, zyskaj {Mana} na początku następnej tury {PlayerName:g}."
   Name: Starożytna Magatama
-  FlavorText: Im więcej masz haków, tym więcej masz maksymalnego życia.
+  FlavorText: "Im więcej masz haków, tym więcej masz maksymalnego życia.\nUps, nie\
+    \ ta gra."
 HuiyeBaoxiang:
   Description: "Na początku tury {PlayerName} zyskaj jedną losową manę.\nGdy nabyte,\
     \ zyskaj {Value1:plural one='% losowy |Eksponat|' few='% losowe |Eksponaty|' many='%\
@@ -230,12 +231,13 @@ KoishiG:
 KoishiB:
   Name: Wymyślony Przyjaciel
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
-    \ do puli kart.\nGdy {PlayerName} wchodzi w stan |Id|, zyskaj {Value1} |Bariery|."
+    \ do puli kart.\nGdy {PlayerName} wchodzi w stan |Pasji| po raz pierwszy w walce,\
+    \ zyskaj {Value1} |Miłości|."
   FlavorText: (W trakcie rozwoju...)
 PiaoliangPanzi:
   Name: Piękny Talerz
   Description: "Dodaje {BaseMana} do bazy many.\nNa początku pierwszej tury {PlayerName:g}\
-    \ ulepsz {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych\
+    \ |Ulepsz| {Value1:plural one='% losową kartę' few='% losowe karty' many='% losowych\
     \ kart'} w dłoni na czas walki."
   FlavorText: Używane poprzez rzucanie i niszczenie go.
 DatiangouMaifan:
@@ -250,7 +252,7 @@ ClassicWunvfu:
   FlavorText: Klasyk.
 Bingzhilin:
   Name: Lodowa Łuska
-  Description: "Dodaje {BaseMana} do bazy many.\nGdy zagraną jest karta zdolności,\
+  Description: "Dodaje {BaseMana} do bazy many.\nGdy zagrana jest karta zdolności,\
     \ {Value1:plural one='% losowa karta' few='% losowe karty' many='% losowych kart'}\
     \ w dłoni |tymczasowo {Value1:plural one='kosztuje' other='kosztują'}| o {Mana}\
     \ mniej."
@@ -278,9 +280,9 @@ Ganggenier:
   FlavorText: Zawsze trafia, a jednak czasami ludzie zawsze go unikają.
 AizheHongshi:
   Name: Kamień Aji
-  Description: "Dodaje {BaseMana} do bazy many.\nNa końcu tury {PlayerName:g} zyskaj\
-    \ {Value1} |Mocy|.\nNa początku walki dodaj {Value2:plural one='% |Załamane Światło|'\
-    \ few='% |Załamane Światła|' many='% |Załamanych Świateł|'} do stosu zrzutek."
+  Description: "Dodaje {BaseMana} do bazy many.\nNa początku pierwszej tury {PlayerName:g}\
+    \ zyskaj {Value1} |Mocy| i dodaj {Value2:plural one='% |Załamane Światło|' few='%\
+    \ |Załamane Światła|' many='% |Załamanych Świateł|'} do stosu zrzutek."
   FlavorText: Można z tego użyć aby roztopić Lodową Łuskę.
 HouhuMen:
   Name: Tylne Drzwi
@@ -289,8 +291,9 @@ HouhuMen:
   FlavorText: Drzwi prowadzące do losowej lokacji dla łatwego wyrzucania śmieci.
 FengshouGuolan:
   Name: Koszyk Zebranych Owoców
-  Description: "Dodaje {BaseMana} do bazy many.\nGdy do biblioteki jest dodawana karta,\
-    \ zyskaj {Value1} <sprite=\"Point\" name=\"Power\">."
+  Description: "Dodaje {BaseMana} do bazy many.\nGdy nabyty, {PlayerName} zyskuje\
+    \ {Value1} maksymalnego życia.\nGdy do biblioteki zostanie dodana karta, {PlayerName}\
+    \ zyskuje {Value2} maksymalnego."
   FlavorText: Nadeszła Jesień!
 Gongjuxiang:
   Name: Skrzynka na Narzędzia
@@ -556,7 +559,7 @@ HuangyouJiqiren:
   FlavorText: "Robocik zastanawiający się nad sensem jego istnienia.\n\"What is my\
     \ purpose?\""
   Name: Robocik od Masła
-  Description: '|Picie herbaty| w Szparach przyznaje nagrodę kart.'
+  Description: '|Picie herbaty| w Szparach przyznaje też nagrodę kart.'
 JiangyouPing:
   Description: Gdy {PlayerName} odwiedza Takanę, ulecz {Value1:plural one='% punkt'
     few='% punkty' many='% punktów'} życia i zyskaj {Value2} <sprite="Point" name="Power">.
@@ -614,7 +617,7 @@ Moping:
     nich w odpowiednim momencie."'
 Modaoshu:
   Name: Magiczny Przewodnik
-  Description: Gdy nabyta, dodaj jedną z {Value1} losowych rzadkich neutralnych kart
+  Description: Gdy nabyta, dodaj jedną z {Value1} losowych Rzadkich neutralnych kart
     aby dodać do biblioteki.
   FlavorText: Zawiera dogłębną wiedzę o magii.
 Shaoyao:
@@ -838,6 +841,39 @@ MaorongWanju:
 JuanzengZhengming:
   Name: Dowód Datku
   Description: "Maksymalna ilość przechowywanych przez {PlayerName:d} Kart Zaklęć\
-    \ jest zwiększona o {Value1}.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\"\
-    >.\nJest aktywne do końca przejścia."
+    \ jest zwiększona o {Value1}. Jej Karta Zaklęć może teraz zostać użyta wiele razy\
+    \ w pojedynczej turze.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\">.\nJest\
+    \ aktywne do końca przejścia."
   FlavorText: '"Przywrócić Zasady Kart Zaklęć!"'
+HuashanBaiyaosheng:
+  FlavorText: Często się pojawia w innych RPGach.
+  Name: 100 Lekarstw Kasen
+  Description: "Dodaje {BaseMana} do bazy many.\nNa początku pierwszej tury {PlayerName:g}\
+    \ zyskaj {Mana}.\nNa początku jej drugiej tury ulecz {Value1:plural one='% punkt'\
+    \ few='% punkty' many='% punktów'} życia.\nNa początku jej trzeciej tury zyskaj\
+    \ {Value2} |Tymczasowej Mocy|."
+PulpFiction:
+  Description: Na początku {Value2} pierwszych tur w każdej walce, wyjmij {Value1:plural
+    one='% kartę' few='% karty' many='% kart'} ze spodu stosu doboru do ręki.
+  Name: '"Pulp Fiction"'
+FixBook:
+  Description: "Gdy zagrana zostanie karta |Narzędzi|, zyskaj {Mana}.\nGdy nabyta,\
+    \ wybierz 1 z {Value1} kart |Narzędzi|, aby dodać do biblioteki."
+  Name: '"Uniwersalna Instrukcja Naprawy"'
+TimeBook:
+  Description: Stos doboru może teraz być wyświetlony w faktycznej kolejności.
+  Name: '"Historia Czasu w Skrócie"'
+FirstAidBook:
+  Name: '"Pomocnik Pierwszej Pomocy"'
+  Description: "Karty |Nieszczęścia| oraz Statusu tracą |Niegrywalność| i zyskują\
+    \ |Wygnanie|.\nZyskują koszt many na podstawie ich rzadkości."
+AliceW:
+  Name: Kukiełka Shanghai
+  FlavorText: (W trakcie rozwoju...)
+  Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Alice| są dodane\
+    \ do puli kart.\nNa początku walki |Umieść| |e:Kukiełkę Shanghai|."
+AliceB:
+  Name: Detonator
+  FlavorText: (W trakcie rozwoju...)
+  Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Alice| są dodane\
+    \ do puli kart.\n|Odchodzące| |e:Kukiełki Hourai| zadają podwójne obrażenia."
