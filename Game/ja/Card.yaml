@@ -130,7 +130,7 @@ TwoBalls:
 MingzhuAntou:
   Name: 明珠暗投
   Description: "敵全体に{Damage}のダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
-  FlavorText: 玉を投げるたびに確率で「フロアやり直し」を発動させることはある。
+  FlavorText: 玉を投げるたびに確率で「フロアやり直し」を発動させることがある。
 HuanxiangBlock:
   Name: 幻想辺境
   Description: カードを|廃棄|するたび、{Value1}|ブロック|を得る。
@@ -460,8 +460,8 @@ OpenUniverse:
   DetailText: '|複製|を持つカードを選ぶことはできない。'
   FlavorText: 宇宙の本質とはコピペである(？)
 TimeWalk:
-  Description: "{PlayerName}はこのターンを終了し、追加ターンを得る。\n|「時渡り」|の効果は各戦闘で1回しか発動しない。"
-  ExtraDescription1: "|d:{PlayerName}はこのターンを終了し、追加ターンを得る。|\n|「時渡り」|の効果は各戦闘で1回しか発動しない。"
+  Description: "{PlayerName}はこのターンを終了し、追加ターンを得る。\n{SelfName}の効果は各戦闘で1回しか発動しない。"
+  ExtraDescription1: "|d:{PlayerName}はこのターンを終了し、追加ターンを得る。|\n{SelfName}の効果は各戦闘で1回しか発動しない。"
   Name: 時渡り
   FlavorText: この能力で熟成されたワインはまさに「ヴィンテージ級」の一品。
 SolarSystem:
@@ -807,7 +807,7 @@ YuyukoMisfortune:
   FlavorText: 思うんだけど、「死亡する」という能力を失った人って、まだ人間という枠組みに入るのかしら？
   Name: 忍び寄る飢餓
 RangziFanshu:
-  Description: 戦闘終了後にライフを{Value1}回復する。
+  Description: 戦闘終了時、ライフを{Value1}回復する。
   Name: スイートポテトルーム
 XiaodingKill:
   Name: 脱魂の儀
@@ -1710,9 +1710,9 @@ ForeverCool:
   Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
   Name: 永遠に清涼なる幻想四季
 Lunatic:
-  Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚ある場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
+  Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚以上ある場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
     現在：{LunaticCount}枚。"
-  NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚超えた場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
+  NonbattleDescription: '{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚以上ある場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。'
   Name: 狂気
 HuiyinAttack:
   Description: "{Damage}ダメージを与える。\n手札のカードを最大 {Value1} 枚まで捨てる。捨てた枚数分だけカードを引く。"
@@ -1846,14 +1846,17 @@ GainDollSlot:
   Name: 人形維持上限を増加
 OtherBlock:
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。（{PlayerName}専用でないカードを優先的に引く。）"
+  Name: 火種
 ShuimuBlock:
   Description: "{Block}|ブロック|を得る。\n{SelfName}のブロック値を永久に{Value1}増加させる。"
   Name: 石積み
 KanakoWalk:
   Description: "(WIP)"
+  Name: 神が歩かれた御神渡り
 OtherSkill:
   Description: "カードを{Value1}枚引く。\n{GainMana}を得る。\n{PlayerName}以外のキャラクター専用カードをプレイする度、{SelfName}によって得るマナを<sprite=\"\
     ManaSprite\" name=\"C\">増やす。"
+  Name: なりすまし
 RemiliaFate:
   Description: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から３のカードを1枚ずつ手札に加える。"
   UpgradedDescription: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から５のカードを1枚ずつ手札に加える。"
@@ -1898,8 +1901,6 @@ ShirenKunchong:
 KisumeAttack:
   Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}がターンの最初に使用されたカードである場合、|ロックオン|{Value1}を与える。"
   Name: 釣瓶落としの怪
-DoubleJK:
-  Name: 世紀のダブルエスパー
 AnimalSpirit:
   Name: 畜生界の大暴動
   Description: "手札の他のカードが動物霊に憑依され、以下の効果を得る。\nオオカミ霊：|反復|を得る。\nカワウソ霊：|補充|を得る。\nオオワシ霊：臨時コスト{Mana}になる。"
@@ -1931,7 +1932,7 @@ CloseMemory:
   Name: 抑圧された記憶
   Description: "カードを{Value1}枚引く。\n引いたカードに|反復|を与える。"
 PiankeNingjing:
-  Name: 平穏なひととき
+  Name: 正気に戻る
   Description: "{Block}|ブロック|を得る。\n|平静|状態から離れる、カードを{Value1}枚引く。"
   UpgradedDescription: "{Block}|ブロック|を得る。\nすべての精神状態から離れる、カードを{Value1}枚引く。"
 RelianJingji:
@@ -1959,7 +1960,7 @@ XinliBenwo:
 XinliChaowo:
   Name: 処方「平静」
 DNARain:
-  Name: DNAの雨
+  Name: DNA散弾
 MeihaoHuiyi:
   Name: 美しき思い出
 LianaiChongdong:
@@ -2002,7 +2003,7 @@ ZhuozhuangChengzhang:
   Description: '{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。'
   UpgradedDescription: "|グレイズ|{Value2}を得る。\n{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。"
 BenwoTouying:
-  Name: 自己投影
+  Name: 恋は盲目
 KoishiMove:
   Name: 無意識的行動
 KoishiMoveAttack:
@@ -2026,11 +2027,70 @@ GududeXin:
   UpgradedDescription: "|恋心|{Value1}を得る。\n|初見|：|恋心|{Value1}を得る。"
 PatchouliFriend:
   Description: '{FriendP}ランダムな{PassiveColor}個のマナを|彩色|マナに変換する。'
-  ExtraDescription1: '{FriendA}|火力|{Value1}と|霊力|{Value1}を得る。{Power}<sprite="Point"
-    name="Power">を得る。'
+  ExtraDescription1: '{FriendA}|火力|{Value1}と|霊力|{Value1}を得る。<sprite="Point" name="Power">{Power}を得る。'
   ExtraDescription2: '{FriendU}|ポーション|{Value2}枚を手札に加える。'
   Name: 七曜の錬金術師、パチュリー
 MeilingFriend:
   ExtraDescription2: '{FriendU}ライフを{Value1}回復する。|火力|{Value2}を得る。'
   Description: '{FriendP}{PlayerName}が次の自分のターンまでに初めて攻撃を受けた時、|投げナイフ|を1枚手札に加える。'
   Name: サボリ門番、美鈴
+YijiEarthSpike:
+  Description: 敵全体に{Damage}ダメージを与え、|脱力|{Value1}を付与する。
+  Name: 祗園様の力
+AyaWindGirl:
+  DetailText: '|風神少女|を持つキャラクターは、ターン終了時に|風神少女|の値になるまで|グレイズ|を得る。'
+  Name: 風神少女
+  Description: '|風神少女|{Value1}を得る。（ターン終了時に|グレイズ|を補充する）'
+ReimuHuashan:
+  ExtraDescription1: "|d:手札の能力カードを1枚廃棄する。\n最大ライフを{Value1}増やし、<sprite=\"Point\" name=\"\
+    Power\">{Value2}を得る。|\n{SelfName}の効果は各戦闘で1回しか発動しない。"
+  Description: "手札の|能力|カードを1枚|廃棄|する。\n最大ライフを{Value1}増やし、<sprite=\"Point\" name=\"\
+    Power\">{Value2}を得る。\n{SelfName}の効果は各戦闘で1回しか発動しない。"
+AyaNewsAliceSp:
+  Name: 文々。新聞　『アリス・マーガトロイド』特集
+  Description: '|ターン終了時|：霊力{Value1}を失う。'
+QiangweiDiyu:
+  Name: 薔薇地獄
+MoonSea:
+  Name: 静かの海（裏）
+  Description: "{Block}|ブロック|を得る。\n|純粋|を1枚手札に加える。"
+  UpgradedDescription: "{Block}|ブロック|を得る。\n|純粋|と|水沫|のどちらか1枚を選んで手札に加える。"
+FengjiAttack:
+  Name: 分解の風
+  Description: "敵全体に{Damage}ダメージを与える。\n<sprite=\"ManaSprite\" name=\"C\">|ごとに|：ダメージを{Value1}増やす。"
+  FlavorText: 正式には「森を一瞬で素粒子レベルで浄化する風を起こす扇子」と呼ぶ。
+  UpgradedDescription: "敵全体に{Damage}ダメージを与える。\n<sprite=\"ManaSprite\" name=\"C\">または<sprite=\"\
+    ManaSprite\" name=\"U\">|ごとに|：ダメージを{Value1}増やす。"
+YijiSkill:
+  Name: 神降ろし
+  Description: ランダムな{Value1}つの|e:神力|から1つを選び、その効果を得る。
+  UpgradedDescription: "ランダムな{Value1}つの|e:神力|から1つを選び、その効果を得る。\nレアな効果が出現する。"
+YijiPurify:
+  Name: 伊豆能売の禊
+  Description: 手札のカード全てに|浄化|を付与し、コストから有色のマナシンボルを取り除く。
+YijiGraze:
+  Name: 天宇受賣命の舞
+  Description: "|グレイズ|{Value1}を得る。\nカードを{Value2}枚引く。"
+YijiFirepower:
+  Name: 愛宕様の火
+  Description: "|火力|{Value1}と|暂得火力|{Value1}を得る。\n{Value2}枚のランダムなコモンの攻撃カードを手札に加える。\n\
+    それらは|廃棄|、|虚無|、|浄化|を持つ。"
+TianziRock:
+  Description: "{PlayerName}のライフが攻撃ダメージによって減少するとき、その値を{Value1}減らす。\nこの効果は重複しない。"
+  Name: 有頂天の絶壁
+MeilingWater:
+  Name: 背水の陣
+  Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{PlayerName}のターン開始時、ライフを{Value2}失う。"
+YouxiangWake:
+  Description: 2ターン後のターン開始時、|火力|{Value1}を得て、山札からランダムな{Value2}枚の攻撃カードを手札に加える。
+  Name: 定時起床
+  UpgradedDescription: 次のターン開始時、|火力|{Value1}を得て、山札からランダムな{Value2}枚の攻撃カードを手札に加える。
+AyaExtraTurn:
+  Name: 幻想風靡
+  Description: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n|時間制限|{Mana}。"
+  ExtraDescription1: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n\
+    |d:時間制限{Mana}。|"
+JinziSuperExtraTurn:
+  Name: 世紀のダブルエスパー
+  Description: "{PlayerName}が|通常ターン|を終了する度、|追加ターン|を開始する。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。"
+  DetailText: "{SelfName}の効果による追加ターンは他の効果で得た追加ターンより優先して発生する。\n{SelfName}をプレイした後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"

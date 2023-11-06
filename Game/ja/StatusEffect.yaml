@@ -150,11 +150,8 @@ CantDrawThisTurn:
   Name: ドロー無効
   Description: ターン終了までドローできない。
   Brief: ターン終了までドローできない。
-NoAttackDamageThisTurn:
-  Brief: このターン中、攻撃ダメージを与えられない。
 CantDrawNextTurn:
   Name: 次ターンドロー無効
-  Brief: 次のターンのドローフェイズ終了後、ターン終了までドローできない。
 NoAttackDamageNextTurn:
   Description: 次のターン中、攻撃ダメージを与えられない。
 MaoyuBlock:
@@ -178,8 +175,6 @@ PhoneBillSe:
 Lunatic:
   Description: "不思議な光が辺りの全員に影響を与えている。{OwnerName}は狂い、行動が強化される。\n{PlayerName}はターン開始時に{Mana}を得る。"
   Name: 狂気
-NoBaseManaNextTurn:
-  Name: 次ターン壊れた時間軸
 DroneBlock:
   Brief: '{OwnerName}のターン終了時、|ブロック|を得る。'
   Name: ディフェンスマトリックス
@@ -190,8 +185,6 @@ LoveGirlDamageReduce:
 LoveGirlDamageIncrease:
   Description: '{OwnerName}の願いは叶った。彼女が受けるダメージが {Rate}% 増加する。'
   Name: 揺らぐ心
-NoBaseManaThisTurn:
-  Description: ターン開始時、マナ基盤からマナを得られない。
 DeathVulnerable:
   Name: 病気
   Description: '{OwnerName}が倒されたとき、{PlayerName}は{Level}ターン分の|弱体|を得る。'
@@ -765,11 +758,15 @@ ShirenKunchongSe:
   Brief: '{OwnerName}がデバフを受ける度、{PlayerName}は|ブロック|を得る。'
   Name: 人喰い虫
   Description: '{OwnerName}がデバフを受ける度、{PlayerName}は{Level}|ブロック|を得る。'
-DoubleJKSe:
-  Brief: "{PlayerName}が追加ターンでないターンを終了する度、ブロックを保留した状態で追加ターンを開始する。\nそのターン中、{PlayerName}はカードをある枚数しか使用できない。"
 Love:
   Name: 恋心
 MindEnlight:
   Name: 悟り
 MindPeace:
   Name: 平静
+SuperExtraTurn:
+  Brief: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。"
+  Description: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。\n\
+    現在のターン：{StatusString}"
+  ExtraDescription: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。\n\
+    現在のターン：{SelfName}の効果による追加ターン。（カードを残り{Count}枚使用できる。）\n"
