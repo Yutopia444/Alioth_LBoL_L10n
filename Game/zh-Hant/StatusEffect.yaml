@@ -225,24 +225,17 @@ CantDrawThisTurn:
   Description: 這回合內無法再抽牌。
   Brief: 這回合內無法再抽牌。
 
-CantDrawNextTurn:
-  Description: 下回合抽牌階段結束後無法再抽牌。
 NoAttackDamageThisTurn:
   Name: 時空破損
-  Brief: 這回合內無法造成攻擊傷害。
-
 NoAttackDamageNextTurn:
   Description: 下回合無法造成攻擊傷害。
 NoBaseManaThisTurn:
-  Name: 破碎的時間線
   Brief: 這回合開始時不會從基礎法力中獲得法力。
 
-NoBaseManaNextTurn:
-  Description: 下回合開始時不會從基礎法力中獲得法力。
 TimeIsLimited:
   Name: 時間有限
-  Description: 卡牌費用增加{Mana}，直到敵人行動完畢。
-  Brief: 卡牌費用增加若干，直到敵人行動完畢。
+  Description: 卡牌費用增加{Mana}，直到敵人開始行動。
+  Brief: 卡牌費用增加若干，直到敵人開始行動。
 
 GuangxueMicai:
   Name: 光學迷彩
@@ -343,6 +336,7 @@ WindGirl:
   Name: 風神少女
   Description: '{OwnerName}的回合結束時，將|閃避|補充至 {Level} 層。'
 
+  Brief: "獲得|風神少女|時，立刻獲得等量的|閃避|。\n{OwnerName}的回合結束時，將|閃避|補充至若干層。"
 Interview:
   Name: 取材中
   Description: '{OwnerName}在異變發生的第一線採訪。'
@@ -406,11 +400,12 @@ TurnStartPurify:
 
 RockHard:
   Name: 硬！
-  Description: '{OwnerName}受到的未被阻擋攻擊傷害降低 {Level} 點。'
+  Description: '{OwnerName}受到的未被阻擋的攻擊傷害，降低 {Level} 點。'
 
+  Brief: '{OwnerName}受到的未被阻擋的攻擊傷害，降低若干點。'
 RockHardAura:
   Name: 要石庇護
-  Description: '{OwnerName}處於要石的庇護之下，受到的未被阻擋攻擊傷害降低 {Level} 點。'
+  Description: '{OwnerName}處於要石的庇護之下，受到的未被阻擋攻擊的傷害降低 {Level} 點。'
 
 LouguanJianSe:
   Name: 樓觀劍
@@ -802,6 +797,7 @@ DrawPhaseAddKnife:
   Description: 跳過抽牌階段，改為將 {Limit} 張|飛刀|加入手中。
   Brief: 跳過抽牌階段，改為將若干張|飛刀|加入手中。
 
+  ExtraDescription: "跳過抽牌階段，改為將 {Limit} 張|飛刀|加入手中。\n還未生效；只有在生效後才會移除{SelfName}。"
 DangerousMagicianSe:
   Name: 危險的魔術師
   Description: 每當一張|飛刀|生效時，{PlayerName}獲得 {Level} 層|時域衝擊|。
@@ -928,11 +924,6 @@ StarFriendSe:
   Description: '{SourceCardName}造成傷害時，施加 {Level} 層|鎖定|。'
   Brief: '{SourceCardName}造成傷害時，施加若干層|鎖定|。'
 
-Dunwu:
-  Description: |-
-    |頓悟|是一種|心境|，同時只能存在一種|心境|。
-    回合結束時不會失去法力與手牌。
-    打出總費用大於0的卡牌後離開|頓悟|。
 Starfall:
   Name: 星落
   Description: '|占卜|後，受到 {Level} 點傷害。'
@@ -1105,6 +1096,7 @@ HuiyeTimeSe:
   Name: 須臾之間
   Description: 本回合只能打出 {Limit} 張牌，剩餘{Count} 張。
 
+  ExtraDescription: "本回合只能打出 {Limit} 張牌，剩餘 {Count} 張。\n還未生效；只有在生效的回合結束時才會移除{SelfName}。"
 ShirenKunchongSe:
   Name: 食人昆蟲
   Description: 當{OwnerName}受到|負面狀態|時，{PlayerName}獲得 {Level} 點|格擋|。
@@ -1120,10 +1112,6 @@ BailianFireSe:
   Description: '{PlayerName}的回合開始時，將 {Level} 張隨機的技能牌加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。'
   Brief: '{PlayerName}的回合開始時，將若干張隨機的技能牌加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。'
 
-DoubleJKSe:
-  Description: |-
-    當{PlayerName}的回合結束時，若本回合不是額外的回合，保留格擋並進行額外的回合。
-    這個額外回合的只能打出 {Level} 張卡牌。
 YukariFriendSe:
   Name: 幻想的境界
   Description: '{PlayerName}的回合開始時，將 {Level} 張隨機的其它中立三色牌加入手中，|暫塑|為{Mana}，具有|虛無|。'
@@ -1203,3 +1191,37 @@ MindPeace:
   Name: 平靜
   Description: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"
   Brief: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"
+ClockCorpseSe:
+  Description: 抽牌階段結束後無法再抽牌。
+  Brief: 抽牌階段結束後無法再抽牌。
+  Name: 鐘錶的殘骸
+  ExtraDescription: "抽牌階段結束後無法再抽牌。\n還未生效；只有在生效的回合結束時才會移除{SelfName}。"
+LunaClockSe:
+  Name: 時空破損
+  Description: 無法造成攻擊傷害。
+  Brief: 無法造成攻擊傷害。
+  ExtraDescription: "無法造成攻擊傷害。\n還未生效；只有在生效的回合結束時纔會移除{SelfName}。"
+BrokenTimelineSe:
+  Name: 下回合破碎時間線
+  Description: 回合開始時不會從基礎法力中獲得法力。
+  Brief: 回合開始時不會從基礎法力中獲得法力。
+  ExtraDescription: "回合開始時不會從基礎法力中獲得法力。\n還未生效；只有在生效的回合結束時才會移除{SelfName}。"
+MeilingWaterSe:
+  Name: 無處可退
+  Description: '{OwnerName}的回合開始時，失去 {Level} 點生命。'
+  Brief: '{OwnerName}的回合開始時，失去若干點生命。'
+YouxiangWakeSe:
+  Name: 按時起床
+  Description: '{Count} 回合後的回合開始時：取得 {Level} 點|火力|，將抽牌堆中隨機的 {Limit} 張攻擊牌移入手中。'
+  Brief: 若干回合後的回合開始時：取得若干點|火力|，將抽牌堆中隨機的若干張攻擊牌移入手中。
+SuperExtraTurn:
+  Name: 世紀的二重身超人
+  Description: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。\n\
+    目前回合狀態：{StatusString}。"
+  Brief: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。"
+  ExtraDescription: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。\n\
+    目前回合狀態：{SelfName}所帶來的額外回合，還可以打出 {Count} 張牌。\n"
+NextTurnGainGraze:
+  Name: 下回合獲得閃避
+  Brief: '{OwnerName}的下個回合開始時，獲得若干層|閃避|。'
+  Description: '{OwnerName}的下個回合開始時，獲得 {Level} 層|閃避|。'

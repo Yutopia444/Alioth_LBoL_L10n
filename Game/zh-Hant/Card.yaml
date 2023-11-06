@@ -253,7 +253,7 @@ MingzhuAntou:
     對所有敵人造成 {Damage} 點傷害。
     從 {Value1} 張|虹龍陰陽玉|中選擇一張加入手中。
     |戰場|中每存在一張|陰陽玉|，{SelfName}費用降低{Mana}。
-  FlavorText: 每次投出珠子都有概率觸發"重開當前關卡"。
+  FlavorText: 每次投出珠子都有概率觸發「重開當前關卡」。
 
 YakongDianxue:
   Name: 亞空點穴
@@ -357,7 +357,7 @@ BoliDajiejie:
 Jiangshen:
   Name: 降神修行
   Description: |-
-    本場戰鬥中，所有臨時獲取的卡牌都會|升級|。
+    本場戰鬥中，所有臨時獲得的卡牌都會|升級|。
     將 {Value1} 張|陰陽玉|加入手中。
   FlavorText: 「我向神明許願，下一抽抽到『出入境界』——」
 
@@ -1266,10 +1266,10 @@ TimeWalk:
   Name: 時間行走
   Description: |-
     結束{PlayerName}的回合，進行一個額外的回合。
-    每場戰鬥中，只有第一張|時間行走|生效。
+    每場戰鬥中，只有第一張{SelfName}生效。
   ExtraDescription1: |-
     |d:結束{PlayerName}的回合，進行一個額外的回合。|
-    每場戰鬥中，只有第一張|時間行走|生效。
+    每場戰鬥中，只有第一張{SelfName}生效。
   FlavorText: 雖然削弱了費用，但它還是太強了。
 
 LunaClock:
@@ -2357,7 +2357,7 @@ SuikaBigball:
   Name: 元鬼玉
   Description: |-
     造成 {Damage} 點傷害，對其他敵人造成一半 ({HalfDamage}) 的傷害。
-    失去 {Value1} |火力|。
+    失去 {Value1}點 |火力|。
   NonbattleDescription: |-
     造成 {Damage} 點傷害，對其他敵人造成一半的傷害。
     失去 {Value1} |火力|。
@@ -2420,7 +2420,7 @@ RangziSeed:
 
 RangziFanshu:
   Name: 香甜的番薯
-  Description: 戰鬥結束後恢復 {Value1} 點生命。
+  Description: 戰鬥結束時，恢復 {Value1} 點生命。
 
 DizangLove:
   Name: 即席菩提
@@ -2955,11 +2955,6 @@ SanaeRestart:
     抽 {Value1} 張牌。
     從抽牌堆中選擇 {Value2} 張加入手中。
 
-DoubleJK:
-  Description: |-
-    當{PlayerName}的回合結束時，若本回合不是一個額外的回合，保留格擋並進行一個額外的回合。
-    這個額外回合的只能打出 {Value1} 張牌。
-
 AnimalSpirit:
   Name: 畜生界大暴動
   Description: |-
@@ -3067,7 +3062,7 @@ MoonPurify:
 
 MoonWorld:
   Name: 無穢的世界
-  Description: '{PlayerName}的回合開始後，|淨化| {Value1} 張隨機的手牌，在本場戰鬥中移除其費用的有色部分。'
+  Description: '{PlayerName}的回合開始時，|淨化| {Value1} 張隨機的手牌，在本場戰鬥中移除其費用的有色部分。'
 
 ToolDraw:
   Name: 補給包
@@ -3617,7 +3612,7 @@ Beiyanwu:
   Name: 被厭惡者的哲學
   Description: '|放逐|相鄰的手牌，每以此法放逐一張卡牌，獲得{Mana}並抽 {Value1} 張牌。'
 PatchouliFriend:
-  Description: '{FriendP}將 {PassiveColor} 點隨機的法力轉化爲|彩色|。'
+  Description: '{FriendP}將 {PassiveColor} 點隨機的法力轉化為|彩色|。'
   Name: 鍊金術士帕秋莉
   ExtraDescription1: '{FriendA}獲得 {Value1} 點|火力|和|靈力|，獲得 {Power} 點<sprite="Point"
     name="Power">。'
@@ -3641,3 +3636,29 @@ GududeXin:
 QiangweiDiyu:
   Name: 薔薇地獄
   Description: 獲得 {Value1} 層|戀心|。
+MoonSea:
+  Name: 裡之月海
+  Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
+  UpgradedDescription: "獲得 {Block} 點|格擋|。\n從|純粹|和|水花|中選擇一張加入手中。"
+  FlavorText: 豐饒之海。
+FengjiAttack:
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|每支付|<sprite=\"ManaSprite\" name=\"C\">：傷害提高 {Value1} 點。"
+  Name: 分解之風
+  UpgradedDescription: "對所有敵人造成 {Damage} 點傷害。\n|每支付|<sprite=\"ManaSprite\" name=\"\
+    C\">或<sprite=\"ManaSprite\" name=\"U\">：傷害提高 {Value1} 點。"
+  FlavorText: 全名是「瞬間將森林淨化爲基本粒子之風的扇子」。
+YijiSkill:
+  UpgradedDescription: "從 {Value1} 個隨機的|e:神明技能|中選擇一個生效。\n稀有技能可能會出現。"
+  Name: 眾神附體
+  Description: 從 {Value1} 個隨機的|e:神明技能|中選擇一個生效。
+ReimuHuashan:
+  Name: 接受指教
+  Description: "選擇手中的一張能力牌|放逐|。\n獲得 {Value1} 點最大生命值和 {Value2} 點<sprite=\"Point\" name=\"\
+    Power\">。\n每場戰鬥中，只有第一張{SelfName}生效。"
+  ExtraDescription1: "|d:選擇手中的一張能力牌放逐。\n獲得 {Value1} 點最大生命值和 {Value2} 點<sprite=\"Point\"\
+    \ name=\"Power\">。 |\n每場戰鬥中，只有第一張{SelfName}生效。"
+YijiEarthSpike:
+  Name: 裂地尖刺/祇園之力
+  Description: 對所有敵人造成 {Damage} 點傷害，施加 {Value1} 回合|虛弱|。
+YijiPurify:
+  Name: 伊豆能賣
