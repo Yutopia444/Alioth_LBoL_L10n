@@ -256,14 +256,14 @@ FengshouGuolan:
   Description: |-
     提供基础法力{BaseMana}。
     {PlayerName}的最大生命值提高 {Value1} 点。
-    每当一张卡牌进入牌库，{PlayerName}最大生命值提高 {Value2} 点。
+    每当一张卡牌进入牌库，{PlayerName}的最大生命值提高 {Value2} 点。
   FlavorText: 秋天到了！
 
 Wanbaochui:
   Name: 万宝槌
   Description: |-
     提供基础法力{BaseMana}。
-    每支付一点{Mana}打出基础牌时，该牌的基础效果增加一倍。（支付<sprite="ManaSprite" name="P">无效）
+    每支付一点{Mana}打出基础牌时，该牌的基础效果提高一倍。（支付<sprite="ManaSprite" name="P">无效）
   FlavorText: 平凡之物获得非凡的力量。
 
 Gongjuxiang:
@@ -417,7 +417,7 @@ Zijing:
 
 HuanxiangxiangYuanqi:
   Name: 幻想乡缘起
-  Description: '{PlayerName}每打出一张能力牌，恢复 {Value1} 生命。'
+  Description: '{PlayerName}每打出一张能力牌，恢复 {Value1} 点生命。'
   FlavorText: 保存完好的抄本。
 
 DiyuChepiao:
@@ -580,7 +580,7 @@ Shouyinji:
 
 SongjingMuyu:
   Name: 诵经的木鱼
-  Description: 对战Boss时，{PlayerName}恢复等同于牌库数量的生命。
+  Description: 对战首领敌人时，{PlayerName}恢复等同于牌库数量的生命。
   FlavorText: 用这个对着敌人念经，造成魔法伤害。
 
 ShoushiYubi:
@@ -705,7 +705,7 @@ Jiaobu:
 
 ChaojiMogu:
   Name: 超级蘑菇
-  Description: 获取时，{PlayerName}获得获得 {Value1} 点<sprite="Point" name="Power">。
+  Description: 获取时，{PlayerName}获得 {Value1} 点<sprite="Point" name="Power">。
   FlavorText: 你觉得世界变小了一点。
 
 Tuanzi:
@@ -758,7 +758,7 @@ YinzhiHuaibiao:
   Name: 银质怀表
   Description: 每打出 {Value1} 张牌，获得{Mana}，战斗结束时重置计数。
   FlavorText: |-
-    「这是即使在时停时都会走动的特质怀表」
+    「这是即使在时停时都会走动的特制怀表」
     「换句话说，它其实不准呗」
 
 ShiyanQicai:
@@ -773,7 +773,7 @@ HeijiaoChangpian:
 
 Duandai:
   Name: 缎带
-  Description: 对战精英和Boss时，每回合开始时获得{Mana}。
+  Description: 对战精英和首领敌人时，每回合开始时获得{Mana}。
   FlavorText: 「听说解开它就能释放被封印的恶魔之力。根本是无稽之谈，我这不是活得好好的？」
 
 Zhuzi:
@@ -833,7 +833,7 @@ Guangjian:
 
 LuoboMoxing:
   Name: 萝卜模型
-  Description: 对战精英和Boss时，{PlayerName}在战斗开始时获得 {Value1} 点|火力|。
+  Description: 对战精英和首领敌人时，{PlayerName}在战斗开始时获得 {Value1} 点|火力|。
   FlavorText: 「我觉得山上神社的巫女应该非常喜欢这个。」
 
 Moping:
@@ -846,7 +846,7 @@ Moping:
 JingboliJing:
   Name: 净玻璃之镜
   Description: '|占卜|时，额外选择 {Value1} 张牌。'
-  FlavorText: 能从里面看到明天天气怎么样。
+  FlavorText: 「能从里面看到明天天气怎么样。」
 
 Headphone:
   Name: 高保真耳机
@@ -892,7 +892,7 @@ JingjieGanzhiyi:
 Dahuoji:
   Name: 打火机
   Description: 每场战斗中{PlayerName}第一次造成攻击伤害时，施加 {Value1} 回合|易伤|。
-  FlavorText: 「我拿着也没什么用。」
+  FlavorText: 反复开关盖子发出专属音效，让别人知道自己是不好惹的小混混！
 
 JingesiYushou:
   Name: 金阁寺的御守
@@ -905,7 +905,7 @@ JingQiXi:
   ExtraDescription: |-
     {PlayerName}的奇数回合开始时，失去随机一点法力；偶数回合开始时，获得两点该颜色的法力。
     下回合获得{ManaGain}。
-  FlavorText: 「鲸吞亭」只对访客开放。
+  FlavorText: 「鲵吞亭」只对访客开放。
 
 SadinYuebing:
   Name: 撒丁岛月饼
@@ -948,22 +948,28 @@ JuanzengZhengming:
 PulpFiction:
   Name: 《低俗小说》
   Description: 每场战斗的前 {Value2} 回合开始时，额外将 {Value1} 张牌从抽牌堆底加入手中。
+  FlavorText: |-
+    内容十分香艳的小说。
+    阅读时别把自己的道具落在门外面！
 
 FixBook:
   Name: 《万能修理手册》
   Description: |-
     每打出一张道具牌，获得{Mana}。
     获取时，从 {Value1} 张随机的道具牌中，选择至多一张加入牌库。
+  FlavorText: 帮助用户有效地修理外界道具，尤其是各种消费类电子产品。
 
 TimeBook:
   Name: 《时间简史》
   Description: 可以以实际顺序查看抽牌堆。
+  FlavorText: 相当流行的儿童教育读物。
 
 FirstAidBook:
   Name: 《急救手册》
   Description: |-
     移除战斗中所有|厄运|和状态牌的|禁止|，改为|放逐|。
     这些卡牌的费用与其稀有度相关。
+  FlavorText: 置放在患处很快就会溶解，高烧症状将会缓和。
 
 KongZhanpinhe:
   Name: 空的展品盒

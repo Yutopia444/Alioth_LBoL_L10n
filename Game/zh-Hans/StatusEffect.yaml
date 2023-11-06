@@ -166,6 +166,13 @@ TurnStartDontLoseBlock:
   Description: '{OwnerName}的回合开始时，不会失去|格挡|，剩余 {Level} 次。'
   Brief: '{OwnerName}的回合开始时，不会失去|格挡|，剩余若干次。'
 
+WindGirl:
+  Name: 风神少女
+  Description: '{OwnerName}的回合结束时，将|闪避|补充至 {Level} 层。'
+  Brief: |-
+    获得|风神少女|时，立刻获得等量的|闪避|。
+    {OwnerName}的回合结束时，将|闪避|补充至若干层。
+
 Amulet:
   Name: 护身符
   Description: 抵挡 {Level} 次负面效果。
@@ -220,40 +227,20 @@ NextTurnGainShield:
   Description: '{OwnerName}的下个回合开始时，获得 {Level} 点|护盾|。'
   Brief: '{OwnerName}的下个回合开始时，获得若干点|护盾|。'
 
+NextTurnGainGraze:
+  Name: 下回合获得闪避
+  Description: '{OwnerName}的下个回合开始时，获得 {Level} 层|闪避|。'
+  Brief: '{OwnerName}的下个回合开始时，获得若干层|闪避|。'
+
 CantDrawThisTurn:
   Name: 无法抽牌
   Description: 这回合内无法再抽牌。
   Brief: 这回合内无法再抽牌。
 
-CantDrawNextTurn:
-  Name: 下回合无法抽牌
-  Description: 下回合抽牌阶段结束后无法再抽牌。
-  Brief: 下回合抽牌阶段结束后无法再抽牌。
-
-NoAttackDamageThisTurn:
-  Name: 时空破损
-  Description: 这回合内无法造成攻击伤害。
-  Brief: 这回合内无法造成攻击伤害。
-
-NoAttackDamageNextTurn:
-  Name: 下回合时空破损
-  Description: 下回合无法造成攻击伤害。
-  Brief: 下回合无法造成攻击伤害。
-
-NoBaseManaThisTurn:
-  Name: 破碎的时间线
-  Description: 这回合开始时不会从基础法力中获得法力。
-  Brief: 这回合开始时不会从基础法力中获得法力。
-
-NoBaseManaNextTurn:
-  Name: 下回合破碎时间线
-  Description: 下回合开始时不会从基础法力中获得法力。
-  Brief: 下回合开始时不会从基础法力中获得法力。
-
 TimeIsLimited:
   Name: 时间有限
-  Description: 卡牌费用增加{Mana}，直到敌人行动完毕。
-  Brief: 卡牌费用增加若干，直到敌人行动完毕。
+  Description: 卡牌费用增加{Mana}，直到敌人开始行动。
+  Brief: 卡牌费用增加若干，直到敌人开始行动。
 
 GuangxueMicai:
   Name: 光学迷彩
@@ -279,6 +266,11 @@ Poison:
   Name: 中毒
   Description: '{OwnerName}的回合开始时，失去 {Level} 点生命并降低一层|中毒|。'
   Brief: '{OwnerName}的回合开始时，失去若干点生命并降低一层|中毒|。'
+
+RockHard:
+  Name: 硬！
+  Description: '{OwnerName}受到的未被阻挡的攻击伤害，降低 {Level} 点。'
+  Brief: '{OwnerName}受到的未被阻挡的攻击伤害，降低若干点。'
 
 MaoyuBlock:
   Name: 毛茸茸
@@ -350,10 +342,6 @@ LunaticTorch:
     {OwnerName}的火炬闪烁着异常的光芒，敌人直接进入|疯狂|状态。
     {PlayerName}回合开始后获得{Mana}。
 
-WindGirl:
-  Name: 风神少女
-  Description: '{OwnerName}的回合结束时，将|闪避|补充至 {Level} 层。'
-
 Interview:
   Name: 取材中
   Description: '{OwnerName}在事件发生的第一线采访。'
@@ -415,13 +403,9 @@ TurnStartPurify:
     {PlayerName}的回合开始时，|纯化| {Level} 。
     回合结束时移除本效果。
 
-RockHard:
-  Name: 硬！
-  Description: '{OwnerName}受到的未被阻挡攻击伤害降低 {Level} 点。'
-
 RockHardAura:
   Name: 要石庇护
-  Description: '{OwnerName}处于要石的庇护之下，受到的未被阻挡攻击伤害降低 {Level} 点。'
+  Description: '{OwnerName}处于要石的庇护之下，受到的未被阻挡攻击的伤害降低 {Level} 点。'
 
 LouguanJianSe:
   Name: 楼观剑
@@ -808,10 +792,37 @@ KnifeWithLockedOn:
   Description: 主动使用的|飞刀|施加 {Level} 层|锁定|。
   Brief: 主动使用的|飞刀|施加若干层|锁定|。
 
+ClockCorpseSe:
+  Name: 钟表的残骸
+  Description: 抽牌阶段结束后无法再抽牌。
+  Brief: 抽牌阶段结束后无法再抽牌。
+  ExtraDescription: |-
+    抽牌阶段结束后无法再抽牌。
+    还未生效；只有在生效的回合结束时才会移除{SelfName}。
+
+LunaClockSe:
+  Name: 时空破损
+  Description: 无法造成攻击伤害。
+  Brief: 无法造成攻击伤害。
+  ExtraDescription: |-
+    无法造成攻击伤害。
+    还未生效；只有在生效的回合结束时才会移除{SelfName}。
+
 DrawPhaseAddKnife:
   Name: 抽牌阶段获得飞刀
   Description: 跳过抽牌阶段，改为将 {Limit} 张|飞刀|加入手中。
   Brief: 跳过抽牌阶段，改为将若干张|飞刀|加入手中。
+  ExtraDescription: |-
+    跳过抽牌阶段，改为将 {Limit} 张|飞刀|加入手中。
+    还未生效；只有在生效后才会移除{SelfName}。
+
+BrokenTimelineSe:
+  Name: 下回合破碎时间线
+  Description: 回合开始时不会从基础法力中获得法力。
+  Brief: 回合开始时不会从基础法力中获得法力。
+  ExtraDescription: |-
+    回合开始时不会从基础法力中获得法力。
+    还未生效；只有在生效的回合结束时才会移除{SelfName}。
 
 DangerousMagicianSe:
   Name: 危险的魔术师
@@ -1205,11 +1216,24 @@ YinyangQueenSe:
 HuiyeTimeSe:
   Name: 须臾之间
   Description: 本回合只能打出 {Limit} 张牌，剩余 {Count} 张。
+  ExtraDescription: |-
+    本回合只能打出 {Limit} 张牌，剩余 {Count} 张。
+    还未生效；只有在生效的回合结束时才会移除{SelfName}。
 
 ShirenKunchongSe:
   Name: 食人昆虫
   Description: 当{OwnerName}受到|负面状态|时，{PlayerName}获得 {Level} 点|格挡|。
   Brief: 当{OwnerName}受到|负面状态|时，{PlayerName}获得若干点|格挡|。
+
+MeilingWaterSe:
+  Name: 无处可退
+  Description: '{OwnerName}的回合开始时，失去 {Level} 点生命。'
+  Brief: '{OwnerName}的回合开始时，失去若干点生命。'
+
+YouxiangWakeSe:
+  Name: 按时起床
+  Description: '{Count} 回合后的回合开始时：获得 {Level} 点|火力|，将抽牌堆中随机的 {Limit} 张攻击牌移入手中。'
+  Brief: 若干回合后的回合开始时：获得若干点|火力|，将抽牌堆中随机的若干张攻击牌移入手中。
 
 PrismriverSe:
   Name: 棱镜协奏曲
@@ -1221,14 +1245,19 @@ BailianFireSe:
   Description: '{PlayerName}的回合开始时，将 {Level} 张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。'
   Brief: '{PlayerName}的回合开始时，将若干张随机的技能牌加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。'
 
-DoubleJKSe:
+SuperExtraTurn:
   Name: 世纪的二重身超人
   Description: |-
-    当{PlayerName}的回合结束时，若本回合不是一个额外的回合，保留格挡并进行一个额外的回合。
-    这个额外回合的只能打出 {Level} 张卡牌。
+    {PlayerName}的|自然回合|结束时，进行一个额外的回合。
+    这一回合开始时不会失去|格挡|和|闪避|，只能打出 {Level} 张牌。
+    当前回合状态：{StatusString}。
   Brief: |-
-    当{PlayerName}的回合结束时，若本回合不是一个额外的回合，保留格挡并进行一个额外的回合。
-    这个额外回合的只能打出有限张卡牌。
+    {PlayerName}的|自然回合|结束时，进行一个额外的回合。
+    这一回合开始时不会失去|格挡|和|闪避|，只能打出 {Level} 张牌。
+  ExtraDescription: |
+    {PlayerName}的|自然回合|结束时，进行一个额外的回合。
+    这一回合开始时不会失去|格挡|和|闪避|，只能打出 {Level} 张牌。
+    当前回合状态：{SelfName}所带来的额外回合，还可以打出 {Count} 张牌。
 
 YukariFriendSe:
   Name: 幻想的境界
