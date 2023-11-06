@@ -898,11 +898,11 @@ SakuyaDio:
     \ instead of drawing cards during the draw step."
   Name: You Are Next!
 TimeWalk:
-  Description: "End the turn. Then, {PlayerName} takes an extra turn.\n|Time Walks|\
+  Description: "End the turn. Then, {PlayerName} takes an extra turn.\n{SelfName}s\
     \ lose all effects for the rest of combat."
   Name: Time Walk
   ExtraDescription1: "|d: End the turn. Then, {PlayerName} takes an extra turn.|\n\
-    |Time Walks| lose all effects for the rest of combat."
+    {SelfName}s lose all effects for the rest of combat."
 BackToFuture:
   Description: "Swap the draw and discard piles.\nDraw {Value1:plural one='% card'\
     \ other='% cards'}."
@@ -2572,10 +2572,6 @@ MojingShanjie:
   Description: Choose 1 of {Value1} random defense cards to add to the hand. It |temporarily
     costs| {Mana}.
   Name: Exorcising Border
-DoubleJK:
-  Description: "At the end of {PlayerName}'s turn, if it wasn't an extra turn, take\
-    \ an extra turn, retaining all |Block| gained.\nOnly up to {Value1} card{Value1:plural\
-    \ one='' other='s'} can be played that turn."
 ShirenKunchong:
   Name: Cannibalistic Insect
   Description: "Deal {Damage} damage to each enemy.\nWhenever an enemy gains a |Debuff|,\
@@ -2893,3 +2889,18 @@ HeartDance:
 QiangweiDiyu:
   Name: Rose Hell
   Description: Gain {Value1} |Love|.
+ReimuHuashan:
+  Description: "|Exile| an |Ability| card in the hand.\nGain {Value1} maximum life\
+    \ and {Value2} <sprite=\"Point\" name=\"Power\">.\n{SelfName}s lose all effects\
+    \ for the rest of combat."
+  ExtraDescription1: "|d:Exile an Ability card in the hand.\nGain {Value1} maximum\
+    \ life and {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName}s lose all\
+    \ effects for the rest of combat."
+JinziSuperExtraTurn:
+  Name: Double ESPer of The Century
+  Description: "At the of {PlayerName}'s |Natural Turn|, take an extra turn.\n|Block|\
+    \ and |Graze| are not lost at the start of that extra turn, and only {Value1}\
+    \ card{Value1:plural one='' other='s'} may be played."
+  DetailText: "{SelfName}'s extra turn happens before any other extra turn.\nAfter\
+    \ playing {SelfName}, you can hover over {PlayerName}'s status icons to check\
+    \ the details of the current turn."
