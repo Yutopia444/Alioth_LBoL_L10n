@@ -648,6 +648,8 @@ MarisaForget:
 Yueguang:
   Name: Luz Lunar Serena
   Description: '|Cuando se roba|: Pierde {Value1} maná aleatorio.'
+  FlavorText: '"Como la luz de la luna brillaba sobre mi rostro, pensé que definitivamente
+    podría terminar el juego esta vez~"'
 Jealousy:
   Name: Celosa
 TaijiLiangyi:
@@ -713,7 +715,7 @@ DanceAroundLake:
   Description: Cada vez que una carta esté |Exiliada|, roba {Value1:plural one='%
     carta' other='% cartas'}.
   Name: Danza en el Lago
-  FlavorText: Como una madrugadora, me mantuve inmersa en la agua fría, en una despiadada
+  FlavorText: Como una madrugadora, se mantuvo inmersa en la agua fría, en una despiadada
     pero apasionada danza. La lluvia llegó poco después y antes de que se pudieran
     darse cuenta, la figura de la sacerdotisa del santuario ya no estaba por ningún
     lado.
@@ -2910,8 +2912,76 @@ ReimuHuashan:
   ExtraDescription1: "|d:Exilia una carta de Habilidad en la mano.\nGana {Value1}\
     \ de vida máxima y {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} solo\
     \ puede activarse una vez por combate."
+  Name: Recibir Orientación
 JinziSuperExtraTurn:
   Name: Doble Esper del Siglo
   Description: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
     \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
     \ {Value1} carta{Value1:plural one='' other='s'}."
+  DetailText: "El turno extra de {SelfName} ocurre antes de cualquier otro turno extra.\n\
+    Después de jugar {SelfName}, puedes pasar el cursor sobre los íconos de estado\
+    \ de {PlayerName} para verificar los detalles del turno actual."
+MoonSea:
+  Description: "Obtén {Block} de |Bloqueo|.\nAgrega un |Puro| a la mano."
+  Name: La Marea Lunar Interior
+  UpgradedDescription: "Obtén {Block} de |Bloqueo|.\nAgrega un |Puro| o un |Rocío|\
+    \ a la mano."
+FengjiAttack:
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|Por cada <sprite=\"ManaSprite\"\
+    \ name=\"C\"> gastado|: Inflige {Value1} más de daño."
+  Name: Vientos Desintegradores
+  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\n|Por cada <sprite=\"\
+    ManaSprite\" name=\"C\"> o sprite=\"ManaSprite\" name=\"U\"> gastado|: Inflige\
+    \ {Value1} más de daño."
+YijiSkill:
+  Description: Elige 1 de {Value1} |e:Técnicas Divinas|. Gana su efecto.
+  Name: Canalizando a los Dioses
+  UpgradedDescription: "Elige 1 de {Value1} |e:Técnicas Divinas|. Gana su efecto.\n\
+    También pueden aparecer Técnicas Raras."
+YijiEarthSpike:
+  Description: Inflige {Damage} de daño y aplica {Value1} de |Débil| a cada enemigo.
+  Name: Fuerza de Gion
+YijiPurify:
+  Description: Cada carta en la mano gana el efecto |Puro|, eliminando su componente
+    de coste de maná coloreado.
+  Name: Izunome
+YijiGraze:
+  Name: Ame-No-Uzume
+  Description: "Gana {Value1} de |Evasión|.\nRoba {Value2} carta{Value2:plural one=''\
+    \ other='s'}."
+YijiFirepower:
+  Name: Fuego de Atago
+  Description: "Gana {Value1} de |Poder| y |Poder Temporal|.\nAgrega {Value2} carta{Value2:\
+    \ plural one='' other='s'} de ataque común a la mano.\nTiene{Value2: plural one=''\
+    \ other='n'} |Exilio|, |Etéreo| y |Puro|."
+TianziRock:
+  Description: "Siempre que {PlayerName} reciba daño de un ataque no bloqueado, es\
+    \ reducido en {Value1}.\nEste efecto no se acumula."
+  Name: Muro de Bhaavaagra
+MeilingWater:
+  Description: "Obtén {Shield} de |Barrera|.\nGana {Value1} de |Poder|.\nAl comienzo\
+    \ del turno de {PlayerName}, pierde {Value2} de vida."
+  Name: Formación de la Última Resistencia
+YouxiangWake:
+  Name: Madrugadora
+  Description: Al comienzo del segundo turno de {PlayerName} después de jugar {SelfName},
+    gana {Value1} de |Poder| y coloca {Value2} carta{Value2:plural one='' other='s'}
+    de ataque aleatorio de la pila de robo hacia la mano.
+  UpgradedDescription: Al comienzo del siguiente turno de {PlayerName}, gana {Value1}
+    de |Poder| y coloca {Value2} carta{Value2:plural one='' other='s'} de ataque aleatorio
+    de la pila de robo hacia la mano.
+AyaExtraTurn:
+  Name: Dominio Ilusorio
+  ExtraDescription1: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\n\
+    Al comienzo del siguiente turno de {PlayerName}, gana {Value1} de |Evasión|.\n\
+    |d:Límite de Tiempo| {Mana}."
+  Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\nAl\
+    \ comienzo del siguiente turno de {PlayerName}, gana {Value1} de |Evasión|.\n\
+    |Límite de Tiempo| {Mana}."
+AyaWindGirl:
+  Name: Chica de la Diosa del Viento
+  Description: Gana {Value1} |Chica Diosa del Viento|, se repone la |Evasión| al final
+    del turno de {PlayerName}.
+  DetailText: Tener |Chica de la Diosa del Viento| no dejará que la |Evasión| este
+    por debajo de la cantidad de cargas de |Chica de la Diosa del Viento| al final
+    del turno.

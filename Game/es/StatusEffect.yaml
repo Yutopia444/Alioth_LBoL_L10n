@@ -125,7 +125,7 @@ NextTurnGainBlock:
   Name: Bloqueo en el Próximo Turno
   Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Bloqueo|.
 NextTurnGainShield:
-  Name: Barrera en el Próximo Turno
+  Name: Barrera en el Siguiente Turno
   Brief: Al inicio del próximo turno de {OwnerName}, gana |Barrera|.
   Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Barrera|.
 CantDrawThisTurn:
@@ -138,8 +138,6 @@ TempFirepower:
     \ el daño infligido con los ataques."
   Brief: "|Poder| aumentado hasta el final del turno.\nEl |Poder| aumenta el daño\
     \ hecho con ataques."
-NoAttackDamageThisTurn:
-  Name: Ruptura del Tiempo
 TimeIsLimited:
   Name: Limite de Tiempo
   Description: Hasta el próximo turno del enemigo, las cartas necesitan {Mana} más
@@ -211,6 +209,9 @@ WindGirl:
   Name: Chica de la Diosa del Viento
   Description: La |Evasión| de {OwnerName} es reabastecido hasta {Level} al final
     de su turno.
+  Brief: "Cada vez que {OwnerName} gana el efecto |Chica de la Diosa del Viento|,\
+    \ ella gana una misma cantidad de |Evasión|.\nLa |Evasión| de {OwnerName} es reabastecido\
+    \ hasta una cierta cantidad al final de su turno."
 Interview:
   Name: Entrevista en Curso
   Description: '{OwnerName} lleva a cabo entrevistas en el sitio con respecto al incidente.'
@@ -247,9 +248,6 @@ Emi:
   Name: Interferencia Electromagnética
   Description: "{OwnerName} no puede actuar {Duration:plural one='hasta el final del\
     \ turno' other='durante los próximos % turnos'}."
-NoBaseManaNextTurn:
-  Brief: Al comienzo del próximo turno, niega cualquier maná que se obtenga de la
-    base de maná.
 Vampire:
   Brief: '{OwnerName} gana vida igual al daño infligido sin bloquear. ¡Que miedo!'
   Name: Vampiro
@@ -270,6 +268,7 @@ LouguanJianSe:
 RockHard:
   Name: ¡Roca Dura!
   Description: '{OwnerName} recibe {Level} menos de daño de los ataques no bloqueados.'
+  Brief: '{OwnerName} recibe menos de daño de los ataques no bloqueados.'
 RockHardAura:
   Description: '{OwnerName} está protegido por una piedra angular, por lo que recibe
     {Level} menos daño de los ataques no bloqueados.'
@@ -611,6 +610,9 @@ DrawPhaseAddKnife:
     |Cuchillos| a la mano en su lugar.
   Brief: Omite la fase de robo de cartas del inicio del turno, agrega algunos |Cuchillos
     Arrojadizos| a la mano en su lugar.
+  ExtraDescription: "Omite la fase de robo de cartas del inicio del turno, agrega\
+    \ {Limit} |Cuchillos| a la mano en su lugar.\n{SelfName} está inactivo y solo\
+    \ se removerá después del turno en que se resuelva."
 DangerousMagicianSe:
   Description: Siempre que un |Cuchillo Arrojadizo| se activa, {PlayerName} gana {Level}
     |Pulso Temporal|.
@@ -967,6 +969,9 @@ HuiyeTimeSe:
     cada turno. ( {Count} Carta{Count:plural one=' restante' other='s restantes'}.
     )
   Name: Momento Fugaz
+  ExtraDescription: "Solo {Limit} carta{Limit:plural one='' other='s'} se pueden jugar\
+    \ en cada turno. ( {Count} Carta{Count:plural one=' restante' other='s restantes'}.\
+    \ )\n{SelfName} está inactivo y solo se removerá después del turno en que se resuelva."
 Starfall:
   Name: Lluvia de Estrellas
   Description: Después de |Explorar|, {OwnerName} recibe {Level} de daño.
@@ -1106,3 +1111,50 @@ MindPassion:
     \ de ataque, se pierde 1 de |Amor| y se duplica su daño."
 SuperExtraTurn:
   Name: Doble Esper del Siglo
+  Description: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
+    \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
+    \ {Level} carta{Level:plural one='' other='s'}.\nEstado del turno: {StatusString}."
+  Brief: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
+    \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
+    \ {Level} carta{Level:plural one='' other='s'}."
+  ExtraDescription: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\n\
+    El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
+    \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
+    \ {Count} carta{Count:plural one='' other='s'} restante del turno de {SelfName}.\n"
+NextTurnGainGraze:
+  Name: Evasión en el Próximo Turno
+  Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Evasión|.
+  Brief: Al inicio del próximo turno de {OwnerName}, gana |Evasión|.
+ClockCorpseSe:
+  Name: Cadáver del Reloj
+  Description: No se pueden robar cartas fuera de la fase de robo de este turno.
+  Brief: No se pueden robar cartas fuera de la fase de robo de este turno.
+  ExtraDescription: "No se pueden robar cartas fuera de la fase de robo de este turno.\n\
+    {SelfName} está inactivo y solo se removerá después del turno en que se resuelva."
+LunaClockSe:
+  Name: Reloj Lunar
+  Description: Los ataques de {PlayerName} no inflingen daño en este turno.
+  Brief: Los ataques de {PlayerName} no inflingen daño en este turno.
+  ExtraDescription: "Los ataques de {PlayerName} no inflingen daño en este turno.\n\
+    {SelfName} está inactivo y solo se removerá después del turno en que se resuelva."
+BrokenTimelineSe:
+  Name: Línea Temporal Rota
+  Description: Al comienzo del siguiente turno de {PlayerName}, no se obtiene maná
+    de la base de maná.
+  Brief: Al comienzo del siguiente turno de {PlayerName}, no se obtiene maná de la
+    base de maná.
+  ExtraDescription: "Al comienzo del siguiente turno de {PlayerName}, no se obtiene\
+    \ maná de la base de maná.\n{SelfName} está inactivo y solo se removerá después\
+    \ del turno en que se resuelva."
+MeilingWaterSe:
+  Name: Acorralada
+  Description: Al comienzo del turno de {OwnerName}, pierde {Level} de vida.
+  Brief: Al comienzo del turno de {OwnerName}, pierde vida.
+YouxiangWakeSe:
+  Name: Madrugadora
+  Brief: Después de una cierta cantidad de turnos, ganas |Poder| y coloca cartas de
+    ataque aleatorias de la pila de robo hacia la mano.
+  Description: Al comienzo del {Count:ordinal one='siguiente' two='%º' pocos='%º'
+    other='%º'} turno de {PlayerName}, {Count:plural one='' other='a partir de ahora'},
+    gana {Level} de |Poder| y coloca {Limit} carta{Limit:plural one='' other='s'}
+    de ataque aleatorio de la pila de robo hacia la mano.
