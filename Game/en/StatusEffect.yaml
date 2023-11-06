@@ -373,11 +373,8 @@ CantDrawThisTurn:
   Name: Draw Negation
   Brief: Can't draw cards until end of turn.
   Description: Can't draw cards until end of turn.
-NoAttackDamageNextTurn:
-  Brief: Can't deal attack damage next turn.
 NoAttackDamageThisTurn:
   Description: Can't deal attack damage this turn.
-  Name: Time Break
 TimeIsLimited:
   Name: Time Limit
   Description: Until the enemy's next turn, cards cost {Mana} more to play.
@@ -395,8 +392,6 @@ NextAttackUp:
   Name: Attack Boost
   Description: The next attack card played deals {Level} more damage.
   Brief: The next attack card played deals increased damage.
-CantDrawNextTurn:
-  Description: Can't draw cards next turn, after the draw phase.
 DroneBlock:
   Name: Defense Matrix
   Description: At the end of {OwnerName}'s turn, gain {Level} |Block|.
@@ -440,6 +435,8 @@ WindGirl:
   Name: Wind God Girl
   Description: "{OwnerName}'s |Graze| is replenished to {Level} at the end of her\
     \ turn."
+  Brief: "Whenever {OwnerName} gains |Wind God Girl|, she gains that much |Graze|.\n\
+    {OwnerName}'s |Graze| is replenished to a fixed amount at the end of her turn."
 FirepowerIsJustice:
   Description: "{OwnerName}'s |Firepower| will never be lower than {PlayerName}'s."
   Name: Might Makes Right!
@@ -456,6 +453,7 @@ Emi:
 RockHard:
   Description: '{OwnerName} takes {Level} less damage from unblocked attacks.'
   Name: Rock Hard!
+  Brief: '{OwnerName} takes less damage from unblocked attacks.'
 AbsorbPower:
   Description: At the end of {OwnerName}'s turn, gain {Level} |Firepower|.
   Name: Red Orb
@@ -676,6 +674,8 @@ DrawPhaseAddKnife:
   Description: Skip the card drawing phase of turn starting, add {Limit} |Knives|
     to hand instead.
   Brief: Skip the card drawing phase of turn starting, add some |Knives| to hand instead.
+  ExtraDescription: "Skip the card drawing phase of turn starting, add {Limit} |Knives|\
+    \ to hand instead.\n{SelfName} is inactive and will only be removed after it resolves."
 HekaHellRainSe:
   Name: Rain of Hell
   Brief: At the end of {OwnerName}'s turn, deal damage to each enemy for each card
@@ -781,13 +781,9 @@ SihunYuSe:
   Name: Pendants That Emit Evil Spirits
   Description: At the end of {OwnerName}'s turn, she attracts more enemies into this
     combat.
-NoBaseManaNextTurn:
-  Description: At the start of the next turn, negate any mana that would be gained
-    from the mana base.
 NoBaseManaThisTurn:
   Description: At the start of the turn, negate any mana that would be gained from
     the mana base.
-  Name: Broken Timeline
 FoxCharm:
   Name: Fox Charm
   Description: "Only up to {Limit} card{Limit:plural one='' other='s'} can be played\
@@ -953,10 +949,8 @@ StarFriendSe:
 HuiyeTimeSe:
   Name: Between Instantaneous
   Description: Only {Limit} cards may be played each turn. ( {Count} left )
-DoubleJKSe:
-  Brief: "At the end of {PlayerName}'s turn, if it wasn't an extra turn, retain all\
-    \ |Block| and gain an extra turn.\nA limited amount of cards can be played during\
-    \ that extra turn."
+  ExtraDescription: "Only {Limit} cards may be played each turn. ( {Count} left )\n\
+    {SelfName} is inactive and will only be removed after the turn it resolves."
 YukariFriendSe:
   Description: At the start of {PlayerName}'s turn, add {Level} random three-colored
     neutral card{Level:plural one='' other='s'} to the hand. {Level:plural one='It
@@ -1092,3 +1086,51 @@ MindEnlight:
     \ At the start of {PlayerName}'s next turn, exit the current |Mental State|.\n\
     Cards and Mana are not discarded at the end of turn."
   Name: Epiphany
+LunaClockSe:
+  ExtraDescription: "{PlayerName}'s attacks deal no damage this turn.\n{SelfName}\
+    \ is inactive and will only be removed after the turn it resolves."
+  Name: Luna Clock
+  Description: "{PlayerName}'s attacks deal no damage this turn."
+  Brief: "{PlayerName}'s attacks deal no damage this turn."
+NextTurnGainGraze:
+  Name: Next Turn Graze
+  Description: At the start of {OwnerName}'s next turn, gain {Level} |Graze|.
+  Brief: At the start of {OwnerName}'s next turn, gain |Graze|.
+ClockCorpseSe:
+  Name: Clock Corpse
+  Description: Cards cannot be drawn outside the draw step this turn.
+  Brief: Cards cannot be drawn outside the draw step this turn.
+  ExtraDescription: "Cards cannot be drawn outside the draw step this turn.\n{SelfName}\
+    \ is inactive and will only be removed after the turn it resolves."
+BrokenTimelineSe:
+  Name: Next Turn Broken Timeline
+  Description: At the start of {PlayerName}'s next turn, gain no mana from the mana
+    base.
+  Brief: At the start of {PlayerName}'s next turn, gain no mana from the mana base.
+  ExtraDescription: "At the start of {PlayerName}'s next turn, gain no mana from the\
+    \ mana base.\n{SelfName} is inactive and will only be removed after the turn it\
+    \ resolves."
+MeilingWaterSe:
+  Name: Cornered
+  Description: At the start of {OwnerName}'s turn, lose {Level} life.
+  Brief: At the start of {OwnerName}'s turn, lose life.
+YouxiangWakeSe:
+  Name: Early Bird
+  Brief: After a certain amount of turns, gain |Firepower| and put random attack cards
+    from the draw pile to the hand.
+  Description: At the start of {PlayerName}'s {Count:ordinal one='next' two='%nd'
+    few='%rd' other='%th'} turn {Count:plural one='' other='from now'}, gain {Level}
+    |Firepower| and put {Limit} random attack card{Limit:plural one='' other='s'}
+    from the draw pile to the hand.
+SuperExtraTurn:
+  Name: Double ESPer of The Century
+  Description: "At the of {PlayerName}'s |Natural Turn|, take an extra turn.\n|Block|\
+    \ and |Graze| aren't lost at the start of that extra turn, and only {Level} card{Level:plural\
+    \ one='' other='s'} can be played.\nTurn status: {StatusString}."
+  Brief: "At the of {PlayerName}'s |Natural Turn|, take an extra turn.\n|Block| and\
+    \ |Graze| aren't lost at the start of that extra turn, and only {Level} card{Level:plural\
+    \ one='' other='s'} can be played."
+  ExtraDescription: "At the of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
+    |Block| and |Graze| aren't lost at the start of that extra turn, and only {Level}\
+    \ card{Level:plural one='' other='s'} can be played.\nTurn Status: {Count} card{Count:plural\
+    \ one='' other='s'} left from {SelfName}'s turn.\n"
