@@ -147,8 +147,6 @@ CantDrawThisTurn:
   Name: Annulation de Pioche
   Description: Impossible de piocher des cartes jusqu'à la fin du tour.
   Brief: Impossible de piocher des cartes jusqu'à la fin du tour.
-NoAttackDamageNextTurn:
-  Description: Ne peut pas infliger de dégâts d'attaque au tour suivant.
 NoAttackDamageThisTurn:
   Description: Ne peut pas infliger de dégâts d'attaque ce tour-ci.
 DeathVulnerable:
@@ -171,6 +169,9 @@ WindGirl:
   Description: l'|Esquive| de {OwnerName} est réapprovisionné à {Level} à la fin de
     son tour.
   Name: Fille du Dieu du Vent
+  Brief: "Chaque fois que {OwnerName} gagne |Fille du Dieu du Vent|, elle gagne autant\
+    \ d'|Esquive|.\nL'|Esquive| de {OwnerName} est reconstituée jusqu'à un montant\
+    \ fixe à la fin de son tour."
 RinSummon:
   Description: "{OwnerName} peut raviver {Level} esprit{Level:plural one=' vengeur'\
     \ other='s vengeurs'}.\nUn est ajouté tous les {Limit} tour{Limit:plural one=''\
@@ -451,6 +452,7 @@ TurnStartPurify:
 RockHard:
   Name: Tête Dure !
   Description: '{OwnerName} subit {Level} dégâts en moins des attaques non bloquées.'
+  Brief: '{OwnerName} subit moins de dégâts des attaques non bloquées.'
 LouguanJianSe:
   Name: Roukanken
   Description: Après que {OwnerName} ait infligé des dégâts d'attaque, {Level} |Verrouillé|
@@ -762,6 +764,9 @@ DrawPhaseAddKnife:
     de lancer| dans la main à la place.
   Brief: Ignorez la phase de pioche au début du tour, ajoutez des |Couteaux de lancer|
     dans la main à la place.
+  ExtraDescription: "Sautez la phase de pioche de carte du début du tour, ajoutez\
+    \ {Limit} |Couteau{Limit:plural one='' other='x'} de lancer| dans la main à la\
+    \ place.\n{SelfName} est inactif et ne sera supprimé qu'une fois résolu."
 DangerousMagicianSe:
   Name: Illusionniste Dangereuse
   Brief: Chaque fois qu'un |Couteau de lancer| est utilisé, {PlayerName} gagne des
@@ -838,8 +843,6 @@ SihunYuSe:
   Description: Lorsque {OwnerName} finit son tour, elle attire des ennemis aléatoires
     dans le combat.
   Name: Pendentif du Mal
-NoBaseManaThisTurn:
-  Name: Chronologie Brisée
 FoxCharm:
   Name: Charme de Renarde
   Description: "Seules {Limit} cartes peuvent être jouées en un tour, il reste {Count}\
@@ -1026,6 +1029,10 @@ HuiyeTimeSe:
   Description: Seule{Limit:plural one='' other='s'} {Limit} carte{Limit:plural one='
     peut être jouée' other='s peuvent être jouées'} ce tour. Il reste {Count} carte{Count:plural
     one='' other='s'}.
+  ExtraDescription: "Seule{Limit:plural one='' other='s'} {Limit} carte{Limit:plural\
+    \ one=' peut être jouée' other='s peuvent être jouées'} à chaque tour. ( {Count}\
+    \ restant )\n{SelfName} est inactif et ne sera supprimé qu'après le tour où il\
+    \ sera résolu."
 TempControl:
   Name: Contrôle Temporaire
   Brief: "Pendant un tour, gagnez des points de contrôle.\nLa manipulation améliore\
@@ -1168,3 +1175,62 @@ MindEnlight:
   Brief: "|Epiphanie| est un |État mental|, un seul peut être actif à la fois. Lorsque\
     \ {PlayerName} débute son prochain tour, quittez |l'état mental| actuel.\nLes\
     \ cartes et le mana ne sont pas défaussés à la fin du tour."
+NextTurnGainGraze:
+  Name: Esquive au Prochain Tour
+  Brief: Lorsque {OwnerName} débute son prochain tour, gagnez de l'|Esquive|.
+  Description: Lorsque {OwnerName} débute son prochain tour, gagnez {Level} |Esquive{Level:plural
+    one='' other='s'}|.
+LunaClockSe:
+  Name: Espace-temps endommagé
+  Description: Les attaques de {PlayerName} n'infligent aucun dégât ce tour-ci.
+  Brief: Les attaques de {PlayerName} n'infligent aucun dégât ce tour-ci.
+  ExtraDescription: "Les attaques de {PlayerName} n'infligent aucun dégât ce tour-ci.\n\
+    {SelfName} est inactif et ne sera supprimé qu'après le tour où il sera résolu."
+BrokenTimelineSe:
+  Name: Chronologie Brisée
+  Description: Lorsque {PlayerName} débute son prochain tour, ne gagnez aucun mana
+    de la base de mana.
+  Brief: Lorsque {PlayerName} débute son prochain tour, ne gagnez aucun mana de la
+    base de mana.
+  ExtraDescription: "Lorsque {PlayerName} débute son prochain tour, ne gagnez aucun\
+    \ mana de la base de mana.\n{SelfName} est inactif et ne sera supprimé qu'après\
+    \ le tour où il sera résolu."
+MeilingWaterSe:
+  Name: Acculée
+  Description: Lorsque {OwnerName} débute son tour, perdez {Level} point{Level:plural
+    one='' other='s'} de vie.
+  Brief: Lorsque {OwnerName} débute son tour, perdez de la vie.
+YouxiangWakeSe:
+  Name: Lève-tôt
+  Brief: Après un certain nombre de tours, gagnez de la |Puissance| et placez des
+    cartes d'attaque aléatoires de la pioche dans la main.
+  Description: Lorsque {PlayerName} débute son {Count:ordinal one='prochain' two='%nd'
+    other='%ème'} tour {Count:plural one='' other='à partir de maintenant'}, gagnez
+    {Level} |Puissance{Level:plural one='' other='s'}| et mettez {Limit} {Limit:plural
+    one='carte d'attaque aléatoire' other='cartes d'attaque aléatoires'} de la pioche
+    dans la main.
+SuperExtraTurn:
+  Name: Double ESPer du Siècle
+  Description: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
+    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
+    \ et seule{Level:plural one=' %' other='s %'} carte{Level:plural one=' peut être\
+    \ jouée' other='s peuvent être jouées'} .\nStatut du tour : {StatusString}."
+  Brief: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
+    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
+    \ et seule{Level:plural one=' %' other='s %'} carte{Level:plural one=' peut être\
+    \ jouée' other='s peuvent être jouées'} ."
+  ExtraDescription: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour\
+    \ supplémentaire.\n|Boucliers| et |Esquives| ne sont pas perdus au début de ce\
+    \ tour supplémentaire, et seule{Level:plural one=' %' other='s %'} carte{Level:plural\
+    \ one=' peut être jouée' other='s peuvent être jouées'} .\nStatut du tour : {Count}\
+    \ carte{Count:plural one=' restante' other='s restantes'} dans le tour supplémentaire\
+    \ de {SelfName}.\n"
+ClockCorpseSe:
+  Name: Cadavre d'Horloge
+  Description: Les cartes ne peuvent pas être piochées en dehors de l’étape de pioche
+    ce tour-ci.
+  Brief: Les cartes ne peuvent pas être piochées en dehors de l’étape de pioche ce
+    tour-ci.
+  ExtraDescription: "Les cartes ne peuvent pas être piochées en dehors de l’étape\
+    \ de pioche ce tour-ci.\n{SelfName} est inactif et ne sera supprimé qu'après le\
+    \ tour où il sera résolu."
