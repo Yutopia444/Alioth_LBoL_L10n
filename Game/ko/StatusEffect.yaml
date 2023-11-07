@@ -93,8 +93,8 @@ Charging:
   Description: '|충전|이 {TriggerLevel} 이상일 시 |버스트| 상태가 됩니다.'
 TimeIsLimited:
   Name: 시간 제한
-  Description: 다음 적 턴이 될 때까지 카드의 코스트가 {Mana} 증가합니다.
-  Brief: 다음 적 턴이 될 때까지 카드의 코스트가 약간 증가합니다.
+  Description: 다음 적 턴이 시작할 때까지 카드의 코스트가 {Mana} 증가합니다.
+  Brief: 다음 적 턴이 시작할 때까지 카드의 코스트가 약간 증가합니다.
 Vampire:
   Brief: 막히지 않은 피해만큼 체력을 회복합니다. 무서워라!
   Name: 흡혈귀
@@ -126,6 +126,8 @@ CantDrawThisTurn:
 WindGirl:
   Description: '{OwnerName}의 턴 종료 시 |그레이즈|를 {Level}까지 보충합니다.'
   Name: 풍신소녀
+  Brief: "{OwnerName}가 |풍신소녀|를 얻을 시 그 만큼의 |그레이즈|를 얻습니다.\n{OwnerName}의 턴 종료 시 |그레이즈|를\
+    \ 보충합니다."
 PrivateSquare:
   Description: "{Limit}장의 카드를 사용할 때마다 피해를 {Level} 받습니다.\n{Count}장 남았습니다."
   Name: 실버 락다운
@@ -248,7 +250,7 @@ Servant:
   Name: 사역마
   Description: "주인이 쓰러질 시 사역마는 자동으로 사라집니다.\n이 때 사망 효과는 발동되지 않습니다."
 RockHardAura:
-  Description: 요석에 의해 보호받습니다. 방어하지 않은 피해를 {Level} 덜 받습니다.
+  Description: 요석에 의해 보호받습니다. 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 요석의 비호
 LongLight:
   Description: '{OwnerName}는 눈부시게 빛납니다. 가하는 피해가 증가하고, 덱에 집어넣는 상태 카드를 강화시킵니다.'
@@ -268,8 +270,9 @@ AbsorbSpirit:
   Name: 푸른 음양옥
   Description: 턴 종료 시 |영력|을 {Level} 얻습니다.
 RockHard:
-  Description: 방어하지 않은 피해를 {Level} 덜 받습니다.
+  Description: 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 단단하게!
+  Brief: 방어되지 않은 피해를 덜 받습니다.
 LongEscape:
   Description: '{OwnerName}의 체력이 {Level} 이하일 시 전투에서 이탈합니다.'
   Name: 봐주기
@@ -744,7 +747,7 @@ StarFriendSe:
   Brief: '{SourceCardName}가 피해를 줄 시 대상에게 |록온|을 줍니다.'
 YinyangQueenSe:
   Name: 장인 미스마루
-  Description: 모든 |음양옥|의 효과가 {Level}배가 됩니다.
+  Description: 모든 |음양옥|의 효과 배율이 {Level} 증가합니다.
   Brief: 모든 |음양옥|의 효과가 증가합니다.
 CatchGoblinSe:
   Name: 빛나는 행운의 별
@@ -857,3 +860,7 @@ ZhuozhuangChengzhangSe:
   Name: 건강한 성장
   Description: 내 턴 종료 시 |활력|을 {Level}장 얻습니다.
   Brief: 내 턴 종료 시 |활력|을 얻습니다.
+NextTurnGainGraze:
+  Name: 다음 턴 그레이즈
+  Description: 다음 턴 시작 시 |그레이즈|를 {Level} 얻습니다.
+  Brief: 다음 턴 시작 시 |그레이즈|를 약간 얻습니다.
