@@ -69,7 +69,7 @@ ExtraTurn:
   Name: Turno Extra
   Brief: Al terminar su turno, {OwnerName} obtiene otro turno.
   Description: "{OwnerName} obtendrá {Level:plural one='% turno extra' other='% turnos\
-    \ extras'} al terminar su turno actual."
+    \ extras'} después de este turno."
 LimitedDamage:
   Name: Liberador de artículos
   Description: '{OwnerName} solo puede recibir {Limit} de daño cada turno. Todavía
@@ -807,8 +807,8 @@ ColdPotionSe:
   Brief: Las |Pociones Inestables| también aplican |Frío| cuando se activa.
 ExtraDraw:
   Name: Intelecto de Hada
-  Brief: Al comienzo del próximo turno de {OwnerName}, roba cartas adicionales.
-  Description: Al comienzo del próximo turno de {OwnerName}, roba {Level} carta{Level:plural
+  Brief: Al comienzo del siguiente turno de {OwnerName}, roba cartas adicionales.
+  Description: Al comienzo del turno de {OwnerName}, roba {Level} carta{Level:plural
     one=' adicional' other='s adicionales'}.
 WhiteWorldSe:
   Name: Mundo de Blanco Puro
@@ -843,8 +843,8 @@ InvincibleEternal:
   Brief: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
 SplitPotionSe:
   Name: Químico Doble
-  Description: Las |Pociones Inestables| inflige daño a {Level} objetivo{Level:plural
-    one=' adicional' other='s adicionales'}.
+  Description: Las |Pociones Inestables| infligen daño {Level} ve{Level:Plural one='z
+    adicional' other='ces adicionales'}.
   Brief: Las |Pociones Inestables| infligen daño a varios objetivos adicionales.
 IceMatrixSe:
   Name: Matriz Congelada
@@ -1111,13 +1111,14 @@ MindPassion:
     \ de ataque, se pierde 1 de |Amor| y se duplica su daño."
 SuperExtraTurn:
   Name: Doble Esper del Siglo
-  Description: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
-    \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
-    \ {Level} carta{Level:plural one='' other='s'}.\nEstado del turno: {StatusString}."
-  Brief: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
+  Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
+    El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
+    \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
+    \ {StatusString}."
+  Brief: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
     \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
     \ {Level} carta{Level:plural one='' other='s'}."
-  ExtraDescription: "En el |Turno Natural| de {PlayerName}, toma un turno extra.\n\
+  ExtraDescription: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
     El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
     \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
     \ {Count} carta{Count:plural one='' other='s'} restante del turno de {SelfName}.\n"
