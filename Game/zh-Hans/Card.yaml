@@ -859,7 +859,7 @@ MasterOfCollection:
   Name: 收集专家
   Description: |-
     选择至多 {Value2} 张手牌赋予|保留|。
-    每一张牌被|保留|时，降低 {Value1} 点它的随机费用，直到战斗结束。
+    每当一张牌被|保留|时，降低 {Value1} 点它的随机费用，直到战斗结束。
   FlavorText: 「垃圾？这些怎么会是垃圾呢？」
 
 ChargingPotion:
@@ -1685,7 +1685,7 @@ DiamondBlizzard:
 
 ColdChain:
   Name: 冷链物流
-  Description: 从抽牌堆中选择至多 {Value1} 张加入手中，赋予|保留|。
+  Description: 从抽牌堆中选择至多 {Value1} 张牌移入手中，赋予|保留|。
 
 DeepFreeze:
   Name: 冰尖之舞
@@ -1695,8 +1695,8 @@ DeepFreeze:
 
 FreezeRiver:
   Name: 浮冰
-  Description: 将抽牌堆底的牌加入手中，|暂塑|为{Mana}。
-  UpgradedDescription: 将抽牌堆底的牌加入手中，|重塑|为{Mana}。
+  Description: 将抽牌堆底的牌移入手中，|暂塑|为{Mana}。
+  UpgradedDescription: 将抽牌堆底的牌移入手中，|重塑|为{Mana}。
 
 IceBlock:
   Name: 寒冰屏障
@@ -1734,7 +1734,7 @@ BestFriend:
 
 CirnoEcho:
   Name: 自然的馈赠
-  Description: 从弃牌堆中选择 {Value1} 张牌加入手中，赋予|回响|。
+  Description: 从弃牌堆中选择 {Value1} 张牌移回手中，赋予|回响|。
 
 LarvaDefense:
   Name: 振翅飞行
@@ -2873,7 +2873,7 @@ SeeFengshui:
 
 RainbowMarket:
   Name: 月虹市场
-  Description: 每当一张牌被|放逐|时，增加一张随机的卡牌进入手中。
+  Description: 每当一张牌被|放逐|时，将一张随机的卡牌加入手中。
 
 NiuqiDefense:
   Name: 石之婴儿
@@ -3008,7 +3008,9 @@ MeilingWater:
 
 NueExile:
   Name: 平安时代的黑云
-  Description: 选择一张手牌|放逐|，获得一张随机的牌，它|暂塑|为{Mana}。
+  Description: |-
+    选择一张手牌|放逐|；
+    将一张随机的卡牌加入手中，它|暂塑|为{Mana}。
 
 HuiyinRetain:
   Name: 一条归桥
@@ -3314,7 +3316,7 @@ SanaeRestart:
     获得{Mana}。    
     将手牌和弃牌堆洗入抽牌堆，重洗抽牌堆。
     抽 {Value1} 张牌。
-    从抽牌堆中选择 {Value2} 张加入手中。
+    从抽牌堆中选择 {Value2} 张牌移入手中。
 
 JinziSuperExtraTurn:
   Name: 世纪的二重身超人
