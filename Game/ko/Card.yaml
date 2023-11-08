@@ -155,7 +155,7 @@ MarisaForget:
   FlavorText: '"가스불 잠갔던가?"'
 Misfortune:
   Name: 불행
-  Description: '|턴 종료 시|: <sprite="Point" name="Gold"> 100마다 체력을 {Value1} 잃습니다.'
+  Description: '|턴 종료 시|: 100<sprite="Point" name="Gold">마다 체력을 {Value1} 잃습니다.'
   FlavorText: '"불행의 근원은 이것으로부터 나오는 것이랍니다."'
 Zhukeling:
   Name: 퇴거령
@@ -166,13 +166,13 @@ FanzhuanChongdong:
   FlavorText: 흡혈귀의 권속이 되는 대가.
 Jiangshen:
   Name: 정신 수행
-  Description: "이번 전투에서 카드를 획득하면 그 카드를 |강화|합니다.\n |음양옥|을 {Value1}장 얻습니다."
+  Description: "이번 전투에서 카드를 획득하면 그 카드를 |강화|합니다.\n|음양옥|을 {Value1}장 얻습니다."
   FlavorText: 「신께 소원을 빌었더니, 바로 『경계 출입』을 뽑았지 뭐에요—」
 MingzhuAntou:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n무작위 |홍룡음양옥| {Value1}장 중 한 장을 선택해 얻습니다.\n\
     |전장|에 존재하는 |음양옥|의 개수마다 {SelfName}의 코스트가 {Mana}씩 감소합니다."
   Name: 명주암투
-  FlavorText: 구슬을 던질 때마다 일정 확률로 "이번 스테이지를 재시작"할 수 있습니다.
+  FlavorText: 구슬을 던질 때마다 일정 확률로 「이번 스테이지를 재시작」할 수 있습니다.
 JiejieAttack:
   NonbattleDescription: "피해를 {Damage} 줍니다.\n내가 가진 |보호막|만큼 피해를 추가로 줍니다."
   Name: 결계 타격
@@ -1138,9 +1138,9 @@ LoyalMaid:
     \ 카드는 |일시적으로| {Mana}의 코스트를 갖습니다."
 TimeWalk:
   Name: 시간 거닐기
-  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|시간 거닐기|의 효과는 각 전투 당 한 번만 발동합니다."
-  ExtraDescription1: "|d:지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.|\n|시간 거닐기|의 효과는 각 전투 당 한 번만\
-    \ 발동합니다."
+  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n{SelfName}의 효과는 각 전투 당 한 번만 발동합니다."
+  ExtraDescription1: "|d:지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.|\n{SelfName}의 효과는 각 전투 당 한\
+    \ 번만 발동합니다."
   FlavorText: 너프했는데도 너무 쎈걸요.
 TimeLord:
   Description: '|시간 펄스|를 {Value1} 얻습니다.'
@@ -1881,7 +1881,8 @@ PoorAttack:
     \ 줍니다."
 NueExile:
   Name: 헤이안의 다크 클라우드
-  Description: "손에서 카드를 한 장 |소멸|시킵니다.\n무작위 카드를 얻습니다. 해당 카드는 |일시적으로| {Mana}의 코스트를 갖습니다."
+  Description: "손에서 카드를 한 장 |소멸|시킵니다.\n무작위 카드를 한 장 얻습니다. 해당 카드는 |일시적으로| {Mana}의 코스트를\
+    \ 갖습니다."
 FangxiangHeal:
   Name: 탐식의 욕망
   Description: 버린 카드 더미에서 무작위 카드 {Value1}장을 골라 |소멸|시킵니다. |소멸된| 카드마다 체력을 {Value2} 회복합니다.
@@ -2285,3 +2286,63 @@ WuyishiDNA:
   Name: 무의식의 유전자
   Description: "|각성| 상태에 들어섭니다. 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n내 턴 종료 시 |각성| 상태가\
     \ 아니라면 사망합니다."
+ReimuHuashan:
+  Name: 수업
+  Description: "손에서 |능력| 카드를 한 장 |소멸|시킵니다.\n최대 체력을 {Value1} 얻고, <sprite=\"Point\"\
+    \ name=\"Power\">를 {Value2} 얻습니다.\n{SelfName}은 한 전투 당 한 번만 발동할 수 있습니다."
+  ExtraDescription1: "|d:손에서 능력 카드를 한 장 소멸시킵니다.\n최대 체력을 {Value1} 얻고, <sprite=\"Point\"\
+    \ name=\"Power\">를 {Value2} 얻습니다.|\n{SelfName}은 한 전투 당 한 번만 발동할 수 있습니다."
+MoonSea:
+  Name: 고요의 바다 뒷면
+  Description: "|방어|를 {Block} 얻습니다.\n|순수|를 한 장 얻습니다."
+  UpgradedDescription: "|방어|를 {Block} 얻습니다.\n|순수|와 |물결| 중 한 장을 선택해 얻습니다."
+FengjiAttack:
+  Name: 흩날리는 바람
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n<sprite=\"ManaSprite\" name=\"C\">를 지불할\
+    \ 시: 주는 피해가 {Value1} 증가합니다."
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n<sprite=\"ManaSprite\" name=\"C\"\
+    >나 <sprite=\"ManaSprite\" name=\"U\">를 지불할 시: 주는 피해가 {Value1} 증가합니다."
+YijiEarthSpike:
+  Name: 기온의 분쇄
+  Description: 모든 적에게 피해를 {Damage} 주고 |허약|을 {Value1} 줍니다.
+YijiSkill:
+  Name: 신내림
+  Description: 무작위 |e:신기| {Value1}개 중 하나를 선택해 효과를 발동시킵니다.
+  UpgradedDescription: "무작위 |e:신기| {Value1}개 중 하나를 선택해 효과를 발동시킵니다.\n희귀한 신기를 발견할 수도\
+    \ 있습니다."
+YijiPurify:
+  Name: 이즈노메의 재계
+  Description: 손에 있는 카드들이 전부 |정화|됩니다.
+YijiGraze:
+  Name: 아메노우즈메의 춤
+  Description: "|그레이즈|를 {Value1} 얻습니다.\n카드를 {Value2}장 뽑습니다."
+YijiFirepower:
+  Name: 아타고의 불꽃
+  Description: "|화력|과 |일시 화력|을 {Value1} 얻습니다.\n|소멸|과 |휘발성|, |정화|가 붙은 무작위 일반 등급의 공격\
+    \ 카드 {Value2}장을 얻습니다."
+TianziRock:
+  Name: 유정천의 절벽
+  Description: "방어되지 않은 피해를 받을 시 그 피해를 {Value1}만큼 줄입니다.\n이 효과는 중첩되지 않습니다."
+MeilingWater:
+  Name: 배수진
+  Description: "|보호막|을 {Shield} 얻습니다.\n|화력|을 {Value1} 얻습니다.\n내 턴 시작 시 체력을 {Value2}\
+    \ 잃습니다."
+YouxiangWake:
+  Name: 이른 기상
+  Description: 이 카드를 사용하고 2 턴 뒤 턴 시작 시 |화력|을 {Value1} 얻고, 뽑을 카드 더미에서 무작위 공격 카드 {Value2}장을
+    손으로 가져옵니다.
+  UpgradedDescription: 이 카드를 사용한 다음 턴, 턴 시작 시 |화력|을 {Value1} 얻고, 뽑을 카드 더미에서 무작위 공격
+    카드 {Value2}장을 손으로 가져옵니다.
+AyaExtraTurn:
+  Name: 환상풍미
+  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n다음 턴 시작 시 |그레이즈|를 {Value1} 얻습니다.\n\
+    |시간 제한| {Mana}."
+  ExtraDescription1: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n다음 턴 시작 시 |그레이즈|를 {Value1} 얻습니다.\n\
+    |d:시간 제한 {Mana}.|"
+AyaWindGirl:
+  Name: 풍신소녀
+  Description: '|풍신소녀| 효과를 {Value1} 얻습니다. 턴 종료 시 |그레이즈|를 보충합니다.'
+JinziSuperExtraTurn:
+  Name: 세기의 더블 에스퍼
+  Description: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며, 카드는\
+    \ {Value1}장만 사용할 수 있게 됩니다."
