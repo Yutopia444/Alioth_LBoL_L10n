@@ -1533,6 +1533,7 @@ MorphDog:
   Description: Ganhe {Value1} de |Poder de Fogo|.
 KokoroDance:
   Name: Noh da Escuridão
+  Description: Sempre que um inimigo receber um debuff, cause {Value1} de dano a ele.
 YuyukoDebuff:
   Name: Sonho Atemporal
   Description: Aplique {Value1} de |Fraqueza| e |Vulnerabilidade|.
@@ -1542,16 +1543,27 @@ BailianBlack:
   Name: Abrace a Escuridão
 Panzi:
   Name: Prato de Água
+  Description: "Cause {Damage} de dano.\n|Quando {SelfName} entrar na mão|: Adicione\
+    \ uma |Cópia| dela mesma à mão."
 SeeFengshui:
   Name: Manipulação do Feng Shui
+  Description: "No começo do turno de {PlayerName}, |Preveja| {Value1}.\nSempre que\
+    \ uma carta de defesa é enviada para a pilha de descarte desta forma, ganhe {Value2}\
+    \ de |Bloqueio|."
 SanaeMiracle:
   Name: Convidados Diurnos
+  Description: "Cause {Damage} de dano em cada inimigo {Value1:plural one='% vez'\
+    \ other='% vezes'}.\nSe a pilha de compra estiver vazia, {SelfName} custa {Mana}\
+    \ para ser jogada."
 HuiyeMana:
   Name: Conto do Cortador de Bambu
   Description: No começo do turno de {PlayerName}, ganhe {Value1} mana aleatória;
     aumente em {Value1} cada turno.
 SijiCard:
   Name: Julgamento dos Pecados
+  Description: Escolha uma carta da mão. Se for uma carta de |Infortúnio| ou Status,
+    |Exile-a|. Caso contrario, ela custa menos {Mana} neste combate e pode ser |Retida|
+    uma vez.
 Danxiangsi:
   Name: Amor não Recíproco
 AliceAttackW:
@@ -1643,6 +1655,7 @@ BManaCard:
   Name: Oculto
 TianziMana:
   Name: Vôo Celestial
+  Description: Ganhe {Mana}.
 ShenziWake:
   Name: Reviva o Santo
   Description: Escolha 1 de {Value1} cartas aleatórias com o custo total de X+1 e
@@ -1653,14 +1666,20 @@ YuetuInvincible:
     Adicione {Value2} |Véus Perdidos| para a pilha de compra."
 HuiyinAttack:
   Name: Mito no Mitsukuni
+  Description: "Cause {Damage} de dano.\nDescarte até {Value1:plural one='% carta'\
+    \ other='% cartas'}, então compre o mesmo tanto."
 LanCard:
   Name: Proteção Shikigami
+  DetailText: Estas |e:cartas alternativas| tem um custo total de 5 ou menos.
+  Description: Escolha 1 de {Value1} cartas incomuns aleatórias para adicionar à mão.
+    Ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.
 GuijiZaoxingYuan:
   Description: "Ganhe {Block} de |Bloqueio|.\nCause {Damage} de dano.\n{SelfName}\
     \ se transforma em outra |e:Escultura| até o fim do combate."
   Name: Escultura - Círculo
 QingeUpgrade:
   Name: Truque do Eremita Perverso
+  Description: "Cause {Damage} de dano.\n|Expurgar|: |Melhore| uma carta |Permanentemente|."
 YonglinCard:
   UpgradedDescription: "No final do turno de {PlayerName}, adicione {Value1} |Lua\
     \ Falsa| na pilha de compra.\nAdicione {Value1} |Lua Falsa| na pilha de compra."
@@ -1797,6 +1816,10 @@ GuijiZaoxingHu:
   Name: Escultura - Arco
 ReadBook:
   Name: Estudo Youkai
+  Description: "Ganhe {Block} de |Bloqueio|.\n|Estreia|: Escolha 1 de {Value1} cartas\
+    \ azuis ou brancas para adicionar à mão."
+  ExtraDescription1: "Ganhe {Block} de |Bloqueio|.\n|d:Estreia: Escolha 1 de {Value1}\
+    \ cartas azuis ou brancas para adicionar à mão.|"
 Astrology:
   Name: Astrologia
   Description: "|Prever| {Scry}.\nCompre {Value1:plural one='% carta' other='% cartas'}."
@@ -1846,10 +1869,15 @@ Yueguang:
   Name: Luar Silencioso
 ShuimuBlock:
   Name: Empilhando Pedras
+  Description: "Ganhe {Block} de |Bloqueio|.\n|Permanentemente| aumente o |Bloqueio|\
+    \ de {SelfName} em {Value1}."
 TiangouOrder:
   Name: Decreto do Grande Tengu
+  Description: "Cause {Damage} de dano.\nSempre que esse inimigo receber um dano de\
+    \ ataque, {PlayerName} ganha {Value1} de |Bloqueio|."
 XiaodingKill:
   Name: Ritual de Exorcismo
+  Description: Se o alvo tem {Value1} ou menos de vida, derrote-o.
 HinaAttack:
   Name: Roda do Infortúnio
   Description: "Cause {Damage} de dano {Value1:plural one='% vez' other='% vezes'}.\n\
@@ -1937,6 +1965,9 @@ YuetuYuyi:
   Description: Ganhe |Impecável| por {Value1:plural one='% turno' other='% turnos'}.
 MogongAttack:
   Name: Frente Haniwa
+  Description: "Ganhe {Block} de |Bloqueio|.\nCause {Damage} de dano.\n|Enquanto na\
+    \ mão|: Sempre que outra carta for jogada, aumente o dano e |Bloqueio| de {SelfName}\
+    \ para que corresponda ao dano e |Bloqueio| daquela carta."
 FangkongSixu:
   Name: Mente Vazia
 Beiyanwu:
@@ -2010,22 +2041,70 @@ YijiPurify:
     mana colorida.
 OtherSkill:
   Name: Representatividade
+  Description: "Compre {Value1:plural one='% carta' other='% cartas'}.\nGanhe {GainMana}.\n\
+    {Value1:plural one='' other=''}.\nSempre que uma carta única que não seja de {PlayerName}\
+    \ é jogada, {SelfName} da adicionalmente mais <sprite=\"ManaSprite\" name=\"C\"\
+    >."
 TianziRock:
   Name: Muralha de Bhaavaagra
+  Description: "Sempre que {PlayerName} receber dano de ataque não-bloqueado, reduza-o\
+    \ em {Value1}.\nEste efeito não acumula."
 RainbowMarket:
   Name: Mercado Arco-Íris Lunar
+  Description: Sempre que uma carta é |Exilada|, adicione uma carta aleatória à mão.
 NiuqiDefense:
   Name: Bebê da Pedra
+  Description: "Ganhe {BLock} de |Bloqueio|.\nGanhe {Value1} de |Bloqueio| para cada\
+    \ carta na pilha de descarte."
 YukariAttack:
   Name: Limite da Vida e da Morte
+  Description: "Cause {Damage} de dano {Value1} vezes.\nNo final do turno de {PlayerName},\
+    \ se o seu total de vida mudou neste turno, retorne {SelfName} da pilha de descarte\
+    \ para a mão. Ela |custa temporariamente| {Mana}."
 HuiyeTime:
   Name: Eterno e Instantâneo
+  Description: "Escolha até {Value1:plural one='% carta' other='% cartas'} da mão.\
+    \ |Retenha-a{Value1:plural one='' other='s'}| neste turno.\nTermine o turno de\
+    \ {PlayerName}. Então, jogue um turno extra. Apenas {Value1:plural one='% carta\
+    \ pode ser jogada' other='% cartas podem ser jogadas'} neste turno."
 TannvCard:
   Name: Inverter Situação
+  Description: Coloque as cartas do topo da pilha de compra e de descarte na mão.
+    Elas |custam temporariamente| {Mana}.
 ChengDefense:
   Name: Estrondo de Tianxian
+  Description: "Ganhe {Block} de |Bloqueio|.\nNo começo do próximo turno de {PlayerName},\
+    \ ganhe {Block} de |Bloqueio|."
 HappyNewYear:
   Name: Visita de Ano Novo
+  Description: "Escolha 1 de 3 cartas de ataque ou defesa aleatórias para adicionar\
+    \ à mão.\nGanhe {Value1} de |Poder de Fogo| se uma carta de ataque for escolhida,\
+    \ ou {Value1} de |Espírito| se uma carta de defesa for escolhida."
 PManaCard:
   Name: Arco-Íris
   Description: Ganhe {Mana}.
+XingMoney:
+  Description: "Cause {Damage} de dano.\n|Expurgar|: Ganhe {Value1} <sprite=\"Point\"\
+    \ name=\"Gold\">."
+  Name: Lança Gloriosa
+SnowGirlCard:
+  Name: Visita da Yuki-Onna
+  Description: Aplique |Frio| em um inimigo aleatório {Value1:plural one='% vez' other='%
+    vezes'}.
+ZhenmiaowanAttack:
+  UpgradedDescription: "Cause {Damage} de dano.\nCartas custam {Mana} a menos neste\
+    \ turno."
+  Name: Descendente dos Kobitos
+  Description: "Cause {Damage} de dano.\nCartas de Habilidade custam {Mana} a menos\
+    \ neste turno."
+HuashanDefense:
+  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} de |Carga Estática| até\
+    \ o fim do turno de {PlayerName}."
+  Name: Servo Relâmpago
+AliceAttack:
+  Name: Raio de Luz Diabólico
+  Description: "Cause {Damage} de dano.\nGanhe {Mana}"
+PoorAttack:
+  Description: "Perca {Value1} <sprite=\"Point\" name=\"Gold\">.\nCause {Damage} de\
+    \ dano {Value2:plural one='% vez' other='% vezes'}."
+  Name: Cair na Pobreza
