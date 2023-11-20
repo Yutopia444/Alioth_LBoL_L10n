@@ -97,28 +97,30 @@ FriendCard:
     \ Ultimate Skills can be, which goes against the spirit of such skills."
   Name: Teammate Cards
 BattleFlow:
-  Description: "The flow of combat starts by spawning the enemies and cards present\
-    \ in the combat, then the start of combat phase.\nThis \"Combat Start\" phase\
-    \ happens first, with enemies gaining their initial statuses and certain exhibits,\
-    \ such as Tengu's Clog, resolving then.\nThe start of combat phase occurs before\
-    \ the \"start of the Player's first turn\". Notably, Eiki Shiki and the final\
-    \ boss both perform unique actions at that point.\nAfterward, combat takes place\
-    \ over multiple rounds until one side wins.\nThese rounds are split into turns,\
-    \ each corresponding to a particular side. (e.g. \"Reimu's Turn\", \"Rin Kaenbyou's\
-    \ Turn\")\n\nDuring each round, the Player has her turn first, then the Enemies\
-    \ take their turn.\nGenerally, each side only has one turn unless they have the\
-    \ \"Extra Turn\" Status Effect.\nWhen the side with the Extra Turn ends their\
-    \ turn, their turn doesn't pass to the other side, and they start a new turn.\n\
-    Once both sides have done all their turns, the round ends and a new round begins.\n\
-    \nCurrently, all Extra Turn effects apply exclusively to player characters, with\
-    \ the exception of Inflation Square, which also grants an Extra Turn to the enemies.\n\
+  Description: "Entering each combat, necessary enemies and cards will be initialised,\
+    \ combat sequence will then be entered.\nAt the \"Start of Combat\" phase, most\
+    \ enemies will apply their initial status, many other effects also resolve in\
+    \ this phase, such as exhibit Tengu's Clog.\nThis phase is much earlier than \"\
+    Start of Player's First Turn\", this is shown by Eiki Shiki and the final boss\
+    \ performing multiple actions in this phase.\nAfterward, combat takes place over\
+    \ multiple rounds until one side wins.\nEach Round consist of several Turns, with\
+    \ each Turn corresponding to a particular Character. (e.g. \"Reimu's Turn\", \"\
+    Rin Kaenbyou's Turn\")\n\nIn each Round, the Player has their turn in the Player\
+    \ Phase first, then the enemy Characters have their turn one by one in the Enemy\
+    \ Phase.\nGenerally, each Character only has one turn unless they have the \"\
+    Extra Turn\" Status Effect.\nCharacters with Extra Turn will not pass their turn\
+    \ when the that turn has ended, instead they take another turn.\nThis repeats\
+    \ until the level of Extra Turn is depleted.\nOnce all Characters have finished\
+    \ their actions, the round ends and a new round begins.\n\nAs of now, only the\
+    \ Player can gain Extra Turns, with Inflation Square being the only exception.\n\
     In this case, each enemy will perform two actions consequitively (Their intent\
     \ will only show their first action).\nEach side has their own turn count, corresponding\
-    \ to how many turns they have taken.\nGenerally, enemies have the their turn count\
+    \ to how many turns they have taken.\nGenerally, enemies have their turn count\
     \ match with the round count, while Players can have more than that due to their\
-    \ access to Extra Turns.\n\nSome cards refer to turns where the more accurate\
-    \ term would be round. For newcomers, the distinction between a turn and a round\
-    \ is hard to make.\nFor example, the status effects Vunlerable, Weak and Frail\
-    \ only decrement at the end of a round, and they also decrement when an extra\
-    \ turn starts (This the only way to communicate the disctinction given its complexity.)\n"
-  Name: Combat Flow & Turns
+    \ access to Extra Turns.\n\nSome effect text refer to turns when the more accurate\
+    \ term would be rounds, it's hard for newcomers to tell the difference between\
+    \ a turn and a round.\nFor example, the status effects Vunlerable, Weak and Frail\
+    \ only decrement at the end of a round, yet they also decrement when an extra\
+    \ turn starts. (It is only with such complex presentations that the player experience\
+    \ can be exactly how it should be)\n"
+  Name: Combat Sequence & Turns
