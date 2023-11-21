@@ -79,7 +79,7 @@ YinyangCard:
   FlavorText: Tamatsukuri Misumaru fornecerá serviços de pós-venda.
 ShengtianKick:
   Name: Chute Ascendente
-  Description: "Compre {Value1:plural one'% carta' other='% cartas'}.\nGanhe {Value2}\
+  Description: "Compre {Value1:plural one='% carta' other='% cartas'}.\nGanhe {Value2}\
     \ de |Poder de Fogo Temporário|."
   FlavorText: Uma técnica que faz as pessoas sorrirem se executada com maestria.
 WunvKongwu:
@@ -89,7 +89,7 @@ WunvKongwu:
   FlavorText: Não tente fazer isso em casa (a menos que você seja um espírito).
 LingfuHuti:
   Name: Proteção do Talismã
-  Description: "Ganhe {Block} de |Bloqueio|.\nAdicione |Talismã Sagrado| à sua mão."
+  Description: "Ganhe {Block} de |Bloqueio|.\nAdicione 1 |Talismã Sagrado| à sua mão."
   UpgradedDescription: "Ganhe {Shield} de |Barreira|.\nAdicione 1 |Talismã Sagrado|\
     \ à sua mão."
   FlavorText: Aumentar defesas! Terminar Turno.
@@ -99,7 +99,7 @@ JingshenYishi:
   FlavorText: Uma sacerdotisa isolada do resto do mundo não parece precisar disso.
 YinyangBaoyu:
   Name: Orbe da Dualidade
-  Description: "Cause {Damage} de dano.\nAdicione |Orbe Yin-Yang| à sua mão."
+  Description: "Cause {Damage} de dano.\nAdicione 1 |Orbe Yin-Yang| à sua mão."
   FlavorText: Poke-monstros serão pegos daze!
 ZhujiThreeGod:
   Name: Três Deuses de Sumiyoshi
@@ -110,7 +110,7 @@ ZhujiThreeGod:
     ser convocado.
 OverJingjie:
   Name: Acima do Reino
-  Description: Escolha uma de {Value1} cartas de ataque aleatórias e adicione à sua
+  Description: Escolha 1 de {Value1} cartas de ataque aleatórias e adicione à sua
     mão. Seu |Custo Temporário| é de {Mana}.
   FlavorText: Esperamos que não hajam fendas dimensionais nem estrelas cadentes acima
     do reino.
@@ -139,7 +139,8 @@ TwoBalls:
   Name: Orbes em equilíbrio
   Description: Adicione {Value1} |Orbe Yin-Yang| em sua mão.
   UpgradedDescription: Adicione {Value1} |Orbe Yin-Yang| em sua mão. {Value1:plural
-    one='Ela custa' other='Elas custam'} {Mana} a menos.
+    one='Ela |custa temporariamente|' other='Elas |custam temporariamente|'} {Mana}
+    a menos.
 HuanxiangBlock:
   Name: Borda da Fantasia
   Description: Sempre que uma carta é |Exilada|, ganhe {Value1} de |Bloqueio|.
@@ -182,8 +183,7 @@ EvilTuiZhi:
 TaijiLiangyi:
   Name: O Nascimento do Yin-Yang
   Description: "Adicione 1 |Orbe Yin-Yang| para a mão.\nNo começo do turno de {PlayerName},\
-    \ se não possuir nenhum |Orbe Yin-Yang| na mão, adicione um |Orbe Yin-Yang| à\
-    \ mão."
+    \ se não possuir nenhum |Orbe Yin-Yang| na mão, adicione 1 |Orbe Yin-Yang| à mão."
 Wunvyu:
   Name: Orbe Maligno de Hakurei
   Description: "Cause {Damage} de dano {Value1} vezes.\n|Enquanto na mão|: com exceção\
@@ -203,13 +203,19 @@ MingzhuAntou:
     \ Yin-Yang de Jade Arco-Íris| para adicionar à mão.\nPara cada |Orbe Yin-Yang|\
     \ no |campo de batalha|, {SelfName} custa {Mana} a menos."
 Misfortune:
-  Name: Infortúnio
-  Description: '|No final do turno|: Perca {Value1} pontos de vida para cada 100 <sprite="Point"
-    name="Gold"> retidos.'
+  Name: Infortunado
+  Description: '|No fim do turno|: Perca {Value1:plural one=''% ponto'' other=''%
+    pontos''} de vida para cada 100 <sprite="Point" name="Gold"> retidos.'
 Xingguang:
   Name: Reluzente Luz Estelar
 Lunatic:
-  Name: Loucura
+  Name: Lunático
+  Description: "No fim do turno de {PlayerName}, se houver um total de {Value1} {SelfName}\
+    \ na mão, pilha de compra e de descarte, |Exile-os| e perca {Value2} de vida.\n\
+    Há um total de {LunaticCount}."
+  NonbattleDescription: No fim do turno de {PlayerName}, se houver um total de {Value1}
+    {SelfName} na mão, pilha de compra e de descarte, |Exile-os| e perca {Value2}
+    de vida.
 MomentPower:
   Name: Fenda Dimensional Instantânea
   Description: Sempre que {PlayerName} ganhar |Poder de fogo temporário| ou |Espírito
@@ -257,9 +263,9 @@ HuijuQiankun:
     \ a mão e aumente seu dano e sua |Barreira| em {Value1} para cada carta |Exilada|\
     \ dessa forma."
 QiqingYishi:
-  UpgradedDescription: Adicione 1 |Arco-íris| e 1 |Radiante| para a mão.
+  UpgradedDescription: Adicione 1 |Arco-íris| e 1 |Radiante| à mão.
   Name: Oração do Sol
-  Description: Adicione 1 |Arco-íris| para a mão.
+  Description: Adicione 1 |Arco-íris| à mão.
 DanceAroundLake:
   Description: Sempre que uma carta for |Exilada|, compre {Value1:plural one='% carta'
     other='% cartas'}.
@@ -280,8 +286,8 @@ SenluoJiejie:
   Name: Agregar Bordas
 Jiangshen:
   Name: Meditação Fiel
-  Description: "Sempre que {PlayerName} adicionar uma carta durante este combate,\
-    \ |Melhore-a|.\nAdicione {Value1} |Orbe Yin-Yang| para a mão."
+  Description: "Sempre que {PlayerName} adicionar uma carta à mão durante o combate,\
+    \ |Melhore-a|.\nAdicione {Value1} |Orbe Yin-Yang| à mão."
   FlavorText: '"Eu rezo aos deuses para que a primeira carta do deck seja Quebrando
     Fronteiras"'
 ReimuInstant:
@@ -381,7 +387,7 @@ CraftPotion:
   ExtraDescription1: "Adicione {Value1} |Poção Instável| para a pilha de compras.\n\
     Compre {Value2} carta{Value2:plural one='' other='s'}.\n|d:Estreia|: Compre mais\
     \ uma carta."
-  Description: "Adicione {Value1} |Poção Instável| para a pilha de compras.\nCompre\
+  Description: "Adicione {Value1} |Poção Instável| para a pilha de compra.\nCompre\
     \ {Value2} carta{Value2:plural one='' other='s'}."
 RedLaser:
   Description: "Cause {Damage} de dano.\n|Sobrecarga {Value2}|: Cause {UpgradeDamage}\
@@ -392,11 +398,11 @@ RedLaser:
   Name: Laser Inflamável
 SatelliteIllusion:
   Description: "Cause {Damage} de dano.\nAdicione |{Value1:plural one='% Astrologia'\
-    \ other='% Astrologias'}| para a mão."
+    \ other='% Astrologias'}| à mão."
   Name: Satélite ilusório
 DropBook:
   Description: "Ganhe {Block} de |Bloqueio|.\nAdicione |{Value1:plural one='% Astrologia'\
-    \ other='% Astrologias'}| para a mão."
+    \ other='% Astrologias'}| à mão."
   Name: Rebelião Ortodoxa
   FlavorText: “Não tenho interesse em magia tradicional, por favor, não volte!”
 DarkSatellite:
@@ -410,11 +416,11 @@ ShanyuCard:
 YinyangQueen:
   Description: '{FriendP}Ganhe {Value2} de |Bloqueio| e |Barreira|.'
   ExtraDescription1: "{FriendA}Adicione {Value1} |{Value1:plural one='Orbe Yin-Yang\
-    \ de Jade Arco-Íris' other='Orbes Yin-Yang de Jade Arco-Íris'}| para a mão."
+    \ de Jade Arco-Íris' other='Orbes Yin-Yang de Jade Arco-Íris'}| à mão."
   ExtraDescription2: "{FriendU}Durante o resto deste combate, os efeitos de qualquer\
     \ |Orbe Yin-Yang| são dobrados. Adicione imediatamente {Value1} |{Value1:plural\
     \ one='Orbe Yin-Yang de Jade Arco-Íris' other='Orbes Yin-Yang de Jade Arco-Íris'}|\
-    \ para a mão."
+    \ à mão."
   Name: Misumaru, artesã habilidosa
 MarisaBlockR:
   Description: Ganhe {Block} de |Bloqueio|.
@@ -481,7 +487,7 @@ ScryAttack:
   Description: "Cause {Damage} de dano.\nSempre que {PlayerName} |Prever|, devolva\
     \ {SelfName} da pilha de descarte para a mão."
 ShinningPotion:
-  Description: "Ganhe {Block} de |Bloqueio|.\nAdicione 1 |Poção Instável| para a pilha\
+  Description: "Ganhe {Block} de |Bloqueio|.\nAdicione 1 |Poção Instável| à pilha\
     \ de compra.\n|Sobrecarga {Value2}|: Adicione {Value1} em vez disso."
   Name: Cogumelo Luminoso
 PoisonPotion:
@@ -523,17 +529,17 @@ ScryBlock:
   Description: Sempre que {PlayerName} |Prever|, ganhe {Value1} de |Bloqueio|.
 MarisaSteal:
   Name: '"Emprestar" Materiais'
-  Description: Adicione {Value1} |Arco-Íris| para a mão.
+  Description: Adicione {Value1} |Arco-Íris| à mão.
 ShibaiChanwu:
   FlavorText: Até fazer sobremesas tem um risco de fracasso.
   Description: "Adicione {Value1} |Poção Instável| para a pilha de compra.\nAdicione\
-    \ {Value2} |Sombra| para a mão."
+    \ {Value2} |Sombra| à mão."
   Name: Produto de uma Falha
 LearnAstrology:
   FlavorText: '"Por que ela só quer olhar para as estrelas em vez de olhar para mim?"'
   Name: Estudo de Astrologia
   Description: No início do turno de {PlayerName}, se não houver nenhuma |Astrologia|
-    na mão, adicione 1 |Astrologia| para a mão.
+    na mão, adicione 1 |Astrologia| à mão.
 CollectionDefense:
   FlavorText: Se você deve muitas coisas aos outros, eles não poderão fazer nada a
     você. - <Como ser um vagabundo 101>
@@ -1136,8 +1142,8 @@ FrostGarden:
     \ mão, {SelfName} custa {Mana} para ser jogado."
 MaidFriend:
   Description: '{FriendP}Cause {Damage} de dano de ataque ao inimigo com menos vida.'
-  ExtraDescription1: "{FriendA}Cause dano imediatamente. Adicione {Value2:plural:one='%\
-    \ |Faca de Arremesso|' other='% |Facas de Arremesso|'} para a mão."
+  ExtraDescription1: "{FriendA}Cause dano imediatamente. Adicione {Value2:plural one='%\
+    \ |Faca de Arremesso|' other='% |Facas de Arremesso|'} à mão."
   Name: Kasumi, Empregada da Mansão
   ExtraDescription2: '{FriendU}Cause dano imediatamente. Todas as {SelfName} causam
     {Value1} de dano adicional.'
@@ -1157,7 +1163,7 @@ IceGun:
     \ vez' other='% vezes'}.\nInimigos com |Frio| recebem {Value2} vezes esse dano."
   FlavorText: Quando a lança de gelo não é mais uma arma branca.
 IceSaber:
-  Description: "Cause {Damage} de dano {Value1:plural one ='% vez' other ='% vezes'}.\n\
+  Description: "Cause {Damage} de dano {Value1:plural one='% vez' other='% vezes'}.\n\
     Aplique |Frio|.\nDescarte qualquer número de cartas azuis. Cause esse dano uma\
     \ vez a mais para cada carta descartada dessa maneira."
   FlavorText: Era uma vez uma espada famosa chamada Frostmourne.
@@ -1557,8 +1563,8 @@ SanaeMiracle:
     \ para ser jogada."
 HuiyeMana:
   Name: Conto do Cortador de Bambu
-  Description: No começo do turno de {PlayerName}, ganhe {Value1} mana aleatória;
-    aumente em {Value1} cada turno.
+  Description: No começo do turno de {PlayerName}, ganhe {Value1} mana aleatórias.
+    Aumente a quantidade em {Value1} cada turno.
 SijiCard:
   Name: Julgamento dos Pecados
   Description: Escolha uma carta da mão. Se for uma carta de |Infortúnio| ou Status,
@@ -1867,6 +1873,7 @@ RemiliaBat:
   Name: Encarnação de Morcego
 Yueguang:
   Name: Luar Silencioso
+  Description: '|Quando comprado|: Perca {Value1} mana aleatória.'
 ShuimuBlock:
   Name: Empilhando Pedras
   Description: "Ganhe {Block} de |Bloqueio|.\n|Permanentemente| aumente o |Bloqueio|\
@@ -2250,12 +2257,17 @@ LifeGame:
   Name: Jogo da Vida
 YachieDefend:
   Name: Carapaça-de-Tartaruga Infernal
+  Description: "Previne {Value1:plural one='a próxima % vez' other='as próximas %\
+    \ vezes'} que {PlayerName} fosse perder vida.\nSe a origem do dano ser de um ataque\
+    \ inimigo, redirecione o dano a esse inimigo."
 SkyWater:
   Name: Milagre da Água Celestial
 MedicineGarden:
   Name: Jardim Melancólico
 LimaoAttack:
   Name: Pompokolin da Lua Cheia
+  Description: "Cause {Damage} de dano em cada inimigo.\nGanhe {GainMana}.\n|Crescimento|:\
+    \ Dê {Mana} a mais."
 JingyeGraze:
   Name: Frenesi das Folhas Caídas
   Description: "Ganhe {Value1} de |Desvio|.\nGanhe {Value2} de |Poder de Fogo Temporário|\
@@ -2270,6 +2282,8 @@ ZoufangSnake:
   Name: Fé do Deus Nativo
 TodayYesterday:
   Name: Gensokyo, Passado e Presente
+  Description: "Sempre que {PlayerName} |Desviar| um ataque, ganhe {Value1} de |Poder\
+    \ de Fogo|.\nGanhe {Value2} de |Desvio|."
 HatateShot:
   Name: Foto Panorâmica
   Description: "Ganhe {Block} de |Bloqueio|.\nPara cada mana não gasta, aumente o\
@@ -2293,7 +2307,336 @@ PoisonTeaParty:
   Name: Festa do Chá Duvidosa
 AyaExtraTurn:
   Name: Tempestade Fantástica
+  Description: "Termine o turno de {PlayerName}. Jogue um turno extra.\nNo começo\
+    \ do próximo turno de {PlayerName}, ganhe {Value1} de |Desvio|.\n|Limite de Tempo|\
+    \ {Mana}."
+  ExtraDescription1: "Termine o turno de {PlayerName}. Jogue um turno extra.\nNo começo\
+    \ do próximo turno de {PlayerName}, ganhe {Value1} de |Desvio|.\n|d:Limite de\
+    \ Tempo {Mana}.|"
 AyaWindGirl:
   Name: Garota Deusa do Vento
   Description: Ganhe {Value1} de |Garota Deusa do Vento|, repondo seu |Desvio| no
     final do turno de {PlayerName}.
+  DetailText: Ter |Garota Deusa do Vento| não permite que o |Desvio| seja menor do
+    que o valor de |Garota Deusa do Vento| no final do turno.
+ArtificialJewellery:
+  Name: Bijuteria Artificial
+  Description: Ganhe 1 mana aleatória.
+  UpgradedDescription: Ganhe {Mana}.
+MoonTipsDefense:
+  Description: Ganhe {Value1} de |Barreira|.
+  Name: Mais Defesa
+Regret:
+  Name: Arrependimento
+MoonTipsBag:
+  Name: Mochila de Dicas da Yukari
+  Description: "Escolha 1 de {Value1} |Dicas Contra a Lua|. Ganhe seus efeitos.\n\
+    |Limitado【{DeckCounter}】|"
+  FlavorText: 'Yukari: "Parece que {PlayerName} está com problemas."'
+YuyukoMisfortune:
+  Description: '|Enquanto na mão|: Sempre que {PlayerName} jogar uma carta, perca
+    {Value1} de vida.'
+  Name: Fome Aterradora
+Drunk:
+  Name: Embriagado
+  Description: "|Enquanto na mão|: Apenas {Value1} cartas podem ser jogadas em cada\
+    \ turno.\n({Count:plural one='% carta jogada' other='% cartas jogadas'} neste\
+    \ turno.)"
+  NonbattleDescription: '|Enquanto na mão|: Apenas {Value1} cartas podem ser jogadas
+    em cada turno.'
+FlanBlack:
+  FlavorText: Deixando todos para trás, a garota parte para a batalha, carregando
+    o peso do nome U.N. Owen.
+  Name: Demonizar
+  Description: (WIP)
+ToolWeak:
+  Name: Lanterna
+  Description: "Aplique {Value1} de |Fraqueza|.\n|Limitado【{DeckCounter}】|"
+ToolExile:
+  Name: Aspirador inteligente
+  Description: "|Exile| um número qualquer de cartas da mão.\n|Limitado【{DeckCounter}】|"
+AyaNewsSakuyaSp:
+  Name: Bunbunmaru - Especial da Sakuya
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+MoonPurify:
+  UpgradedDescription: Escolha uma carta da mão. Ela ganha |Puro| neste combate, removendo
+    seu componente colorido de mana.
+  Name: Remover Impurezas
+  Description: "Uma carta aleatória da mão ganha |Puro| neste combate, removendo seu\
+    \ componente colorido de mana.\nPrioriza cartas com custo de mana colorida."
+RabbitFoot:
+  Description: '|No fim do combate|: se {SelfName} não foi |Exilado|, ganhe {Value1}
+    <sprite="Point" name="Gold">.'
+  Name: Pé de Coelho da Sorte
+AyaNewsMarisaSp:
+  Name: Bunbunmaru - Especial da Marisa
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+Bribery:
+  Description: "Pague {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#4f6e97>Megumu</color>\
+    \ vai pegar leve neste combate."
+  Name: Suborno
+NewsTidbit:
+  Description: "Ganhe {Value1} de |Marca|.\n|Limitado【{DeckCounter}】|"
+  Name: Fofoca
+Chunguang:
+  Name: Brilho Puro
+  Description: '|Quando comprado|: |Purifique| {Value1}.'
+PrismriverAll:
+  Description: "Ganhe {Mana}.\nConverta toda mana que {PlayerName} ganhar neste combate\
+    \ em <sprite=\"ManaSprite\" name=\"P\">.\nAdicione 1 |Luz Solar Refratada|, |Luar\
+    \ Silencioso| e |Reluzente Luz Estelar| para a pilha de descarte."
+  Name: Concerto Prismático
+  UpgradedDescription: "Ganhe {Mana}.\nCompre {Value1:plural one='% carta' other='%\
+    \ cartas'}.\nConverta toda mana que {PlayerName} ganhar neste combate em <sprite=\"\
+    ManaSprite\" name=\"P\">.\nAdicione 1 |Luz Solar Refratada|, |Luar Silencioso|\
+    \ e |Reluzente Luz Estelar| para a pilha de descarte."
+AyaNewsReimuSp:
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+  Name: Bunbunmaru - Especial da Reimu
+CirnoFreeze:
+  Description: "Se houver alguma {SelfName} na mão, todas as cartas custam {Mana}\
+    \ a mais.\nSempre que {FreezeTimes:plural one='% carta for jogada' other='% cartas\
+    \ forem jogadas'}, |Exile| um {SelfName} da mão."
+  Name: Mana Congelada
+SakuyaLock:
+  Description: "Acione  <color=#B7F0FF>Prisão Prateada</color> uma vez.\n({PlayerName}\
+    \ toma {Value1} de dano de ataque.)"
+  Name: Prisão Temporal
+  NonbattleDescription: Acione |Prisão Prateada|.
+Wushuai:
+  Name: Espada Brilhante
+  Description: '|Quando comprado|: Ganhe {Value1} de |Marca| e |Exile| {SelfName}.'
+LoveLetter:
+  Description: Entregue isso à <color=#eab8bf>Garota Apaixonada</color>. Ela vai ficar
+    muito feliz.
+  Name: Carta de Amor
+BuyPeace:
+  Description: '|No fim do turno|: Perca {Value1} <sprite="Point" name="Gold"> e ganhe
+    {Value2} de vida.'
+  Name: Comprar Seguro
+GainTreasure:
+  Name: Chuva de Dinheiro
+  Description: Ganhe {Value1} <sprite="Point" name="Gold">.
+ToolDraw:
+  Description: "Compre {Value1:plural one='% carta' other='% cartas'}.\n|Limitado【{DeckCounter}】|"
+  Name: Mochila de Suprimentos
+ToolVulnerable:
+  Description: "Aplique {Value1} de |Vulnerabilidade|.\n|Limitado【{DeckCounter}】|"
+  Name: Pandeiro Carregado
+ToolUpgrade:
+  Description: "|Melhore| cada carta da mão até o fim do combate.\n|Limitado【{DeckCounter}】|"
+  Name: Disquete
+ToolRandomTool:
+  Name: Walkie-Talkie Tático
+  Description: "Escolha 1 de {Value1} cartas de |Ferramenta| aleatórias para adicionar\
+    \ à mão. Ela é uma |Cópia| e só pode ser jogada uma única vez.\n|Limitado【{DeckCounter}】|"
+WanderingSoul:
+  Name: Alma Ambulante
+  Description: "Ganhe |Impecável| por {Value1:plural one='% turno' other='% turnos'}.\n\
+    (WIP)"
+AyaNews:
+  Description: Cause {Damage} de dano em um inimigo aleatório.
+  Name: Jornal Bunbunmaru
+NewsPositive:
+  Name: Notícias Positivas
+  Description: "Ganhe {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limitado【{DeckCounter}】|"
+AyaNewsCirnoSp:
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+  Name: Bunbunmaru - Especial da Cirno
+Zhukeling:
+  Name: Ordem de Despejo
+ToolMana:
+  Name: Bebida Energética
+  Description: "Ganhe {Mana}.\n|Limitado【{DeckCounter}】|"
+PatchouliLibrary:
+  Name: Grande Biblioteca imóvel
+  UpgradedDescription: "Ganhe {Mana}.\nEscolha 1 de {Value1} cartas raras ou 1 de\
+    \ {Value2} cartas incomuns para adicionar à mão. Ela tem |Exilar| e |Etéreo|."
+  Description: "Ganhe {Mana}.\nEscolha 1 de {Value1} cartas raras para adicionar à\
+    \ mão. Ela tem |Exilar| e |Etéreo|."
+SanaeRestart:
+  Description: "Ganhe {Mana}.\nRetorne todas as cartas da mão e pilha de descarte\
+    \ para a pilha de compra. embaralhe a pilha de compra.\nCompre {Value1:plural\
+    \ one='% carta' other='% cartas'}."
+  UpgradedDescription: "Ganhe {Mana}.\nRetorne todas as cartas da mão e pilha de descarte\
+    \ para a pilha de compra. embaralhe a pilha de compra.\nCompre {Value1:plural\
+    \ one='% carta' other='% cartas'}.\nEscolha até {Value1:plural one='% carta' other='%\
+    \ cartas'} na pilha de compra. Coloque-a{Value1:plural one='' other='s'} na mão."
+  Name: O Dia em que o Mar se Dividiu
+ToolAmulet:
+  Name: Amuleto Descartável
+  Description: "Ganhe {Value1} |Amuleto|.\n|Limitado【{DeckCounter}】|"
+ToolFirstAid:
+  Name: Kit de Primeiros Socorros
+  Description: "Remova todos os debuffs de {PlayerName}.\nGanhe {Value1} de vida.\n\
+    |Limitado【{DeckCounter}】|"
+ToolDroneBlock:
+  Description: "Ganhe {Value1} de |Matriz de Defesa|.\n|Limitado【{DeckCounter}】|"
+  Name: Núcleo Mecânico
+EmpCard:
+  Name: Dispositivo PEM
+  Description: "Cause {Damage} de dano.\nSe o alvo é um |Drone|, ele não pode atuar\
+    \ por {Value1} turnos.\n|Limitado【{DeckCounter}】|"
+Nightmare:
+  Description: "Quando houver um total de {Value1} {SelfName} na mão, pilha de compra\
+    \ e de descarte, {PlayerName} perde o jogo.\nHá um total de {NightmareCount}."
+  NonbattleDescription: Quando houver um total de {Value1} {SelfName} na mão, pilha
+    de compra e de descarte, {PlayerName} perde o jogo.
+  Name: Pesadelo
+MarisaForget:
+  Description: '|No fim do turno|: Ganhe {Value1} de |Frágil|.'
+  Name: Esquecimento
+NewsEntertainment:
+  Name: Entretenimento
+  Description: "Compre cartas até o limite da mão.\n|Limitado【{DeckCounter}】|"
+WolfFur:
+  Name: Pelugem de Lobo
+  Description: '|Limitado【{DeckCounter}】|'
+LarvaCure:
+  Name: Antidoto
+  Description: "Remova o |Veneno| de {PlayerName}.\n|Limited【{DeckCounter}】|"
+MoonTipsHeal:
+  Description: Ganhe {Value1} de vida.
+  Name: Curar a Dor
+BefuddledLife:
+  Name: Confusão
+XiaosanJingxia:
+  Name: Susto
+  Description: '|No fim do turno|: Ganhe {Value1} de |Fraqueza|.'
+Yuebiao:
+  Name: A Paisagem Lunar
+  Description: '|Quando comprado|: Purifique {Value1}'
+SweetPoison:
+  Name: Doce Veneno
+  Description: '|No fim do turno|: Ganhe {Value1} de |Veneno|.'
+Pressure:
+  Name: Pressão invisível
+  Description: '|No fim do turno|: Perca {Value1} <sprite="Point" name="Power">.'
+Psychedelic:
+  Description: '|No fim do turno|: Perca {Value1} de vida e ganhe {Value2} <sprite="Point"
+    name="Power">.'
+  Name: Psicodélico
+FanzhuanChongdong:
+  Name: Fome Reversa
+  Description: '|No fim do turno|: Perca {Value1} de vida se nenhum ponto de vida
+    foi ganho neste turno.'
+HistoryCard:
+  Name: Carta Removida
+  Description: "Esta carta foi removida na versão atual do jogo.\nIdentificador: {CardId}"
+ToolBlock:
+  Description: "Ganhe {Block} de |Bloqueio|.\n|Limitado【{DeckCounter}】|"
+  Name: Escudo Balístico
+ToolMicai:
+  Name: Vestimenta de Camuflagem Óptica
+  Description: "Ganhe |Camuflagem Óptica| por {Value1:plural one='% turno' other='%\
+    \ turnos'}.\n|Limitado【{DeckCounter}】|"
+AnimalSpirit:
+  UpgradedDescription: "Todas as outras cartas da mão e {Value1:plural one='% carta'\
+    \ other='% cartas'} da pilha de compra serão possuídas por espíritos animais,\
+    \ concedendo-lhes um dos seguintes efeitos:\nLobo: Ganha |Eco|.\nLontra: Ganha\
+    \ |Repor|.\nÁguia: Custa Temporariamente {Mana}."
+  Name: Revolta do Reino Bestial
+  Description: "Todas as outras cartas da mão serão possuídas por espíritos animais,\
+    \ concedendo-lhes um dos seguintes efeitos:\nLobo: Ganha |Eco|.\nLontra: Ganha\
+    \ |Repor|.\nÁguia: Custa Temporariamente {Mana}."
+ToolInvincible:
+  Description: "Ganhe |Impecável| por {Value1:plural one='% turno' other='% turnos'}.\n\
+    |Limitado【{DeckCounter}】|"
+  Name: Vestes de anjo
+BailianFire:
+  UpgradedDescription: "No começo do turno de {PlayerName}, adicione uma carta de\
+    \ habilidade aleatória à mão. Ela |custa temporariamente| {Mana} e tem |Exilar|\
+    \ e |Etéreo|.\nAcione {SelfName} uma vez imediatamente."
+  Description: No começo do turno de {PlayerName}, adicione uma carta de habilidade
+    aleatória à mão. Ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.
+  Name: Fogos de Hokkai
+LilyoftheValley:
+  Name: Lírio do Vale
+  Description: "Ganhe {Mana}.\n|Limitado【{DeckCounter}】|"
+Jealousy:
+  Name: Inveja
+YukariFriend:
+  Name: Yukari, Limite da Fantasia
+  Description: '{FriendP}Ganhe |Poder de Fogo| igual ao número de cartas de defesa
+    jogadas neste turno. ({Fire})'
+  ExtraDescription1: '{FriendA}Escolha uma carta |Exilada| e retorne-a para a mão.'
+  ExtraDescription2: '{FriendU}No começo do turno de {PlayerName}, adicione uma carta
+    neutra de três cores aleatória à mão. Ela |custa temporariamente| {Mana} e tem
+    |Etéreo|.'
+  DetailText: '{SelfName} não pode ser produzida pelo efeito da |u:Habilidade Final|.'
+AyaNewsKoishiSp:
+  Name: Bunbunmaru - Especial da Koishi
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+VampireShoot1:
+  Description: "Cause {Damage} de dano.\nGanhe {Value1} de vida."
+  Name: Tiro Demoníaco
+HatateNews:
+  Name: Noticiário do Corvo
+NightMana1:
+  Name: 'Noite Longa: 23:00'
+  Description: "Se {SelfName} está na mão, todas as cartas custam {Mana} a mais para\
+    \ jogar.\nQuando {FreezeTimes:plural one='% carta for jogada' other='% cartas\
+    \ forem jogadas'}, |Exile| {SelfName}."
+NightMana2:
+  Name: 'Noite Longa: 01:00'
+  Description: "Se {SelfName} está na mão, todas as cartas custam {Mana} a mais para\
+    \ jogar.\nQuando {FreezeTimes:plural one='% carta for jogada' other='% cartas\
+    \ forem jogadas'}, |Exile| {SelfName}."
+NightMana3:
+  Name: 'Noite Longa: 03:00'
+  Description: "Se {SelfName} está na mão, todas as cartas custam {Mana} a mais para\
+    \ jogar.\nQuando {FreezeTimes:plural one='% carta for jogada' other='% cartas\
+    \ forem jogadas'}, |Exile| {SelfName}."
+NightMana4:
+  Name: 'Noite Longa: 05:00'
+  Description: "Se {SelfName} está na mão, todas as cartas custam {Mana} a mais para\
+    \ jogar.\nQuando {FreezeTimes:plural one='% carta for jogada' other='% cartas\
+    \ forem jogadas'}, |Exile| {SelfName}."
+AyaNewsAliceSp:
+  Name: Bunbunmaru - Especial da Alice
+  Description: '|No fim do turno|: Perca {Value1} de |Espírito|.'
+NewsNegative:
+  Description: "Perca {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limitado【{DeckCounter}】|"
+  Name: Notícias Negativas
+JinziSuperExtraTurn:
+  Name: Doppleganger Secular
+  Description: "No fim do |Turno Natural| de {PlayerName}, jogue um turno extra.\n\
+    |Bloqueio| e |Desvio| não são perdidos no começo deste turno extra, e apenas {Value1:plural\
+    \ one='% carta pode ser jogada' other='% cartas podem ser jogadas'}."
+  DetailText: O turno extra de {SelfName}
+JunkoNightmare:
+  Name: Pesadelo Arrepiante
+  Description: "Cause {Damage} de dano em cada inimigo {Value1:plural one='% vez'\
+    \ other='% vezes'}.\n|Exile| sua mão. Adicione 1 |Puro| à mão para cada carta\
+    \ exilada assim."
+  UpgradedDescription: "Escolha até {Value2:plural one='% carta' other='% cartas'}\
+    \ da mão.\nCause {Damage} de dano em cada inimigo {Value1:plural one='% vez' other='%\
+    \ vezes'}.\n|Exile| sua mão exceto as cartas escolhidas. Adicione 1 |Puro| à mão\
+    \ para cada carta exilada assim."
+ToolHeal:
+  Name: Comida Enlatada
+  Description: "Ganhe {Value1} de vida.\n|Limitado【{DeckCounter}】|"
+ToolAttack:
+  Name: Arma de Água
+  Description: "Cause {Damage} de dano de ataque.\n|Limitado【{DeckCounter}】|"
+VampireShoot2:
+  Name: Chuva Demoníaca
+  Description: "Cause {Damage} de dano.\nGanhe {Value1} de vida."
+MoonTipsAttack:
+  Name: Danmaku Extra
+  Description: Adicione {Value1} cartas de |Tiro| à pilha de compra. Elas tem |Repor|.
+Riguang:
+  Name: Luz Solar Refratada
+  Description: '|No fim do turno|: Tome {Value1} de dano.'
+Xuanguang:
+  Name: Clarão
+BlackResidue:
+  Name: Resíduo Negro
+  Description: '|No fim do turno|: Perca {Value1} de vida.'
+Payment:
+  Name: Transferir Fundos
+FakeCard:
+  Name: Sonhos Ancestrais
+ToolMaxHp:
+  Name: Pepino Crocante
+  Description: "Ganhe {Value1} de vida máxima.\n|Limitado【{DeckCounter}】|"
