@@ -841,10 +841,10 @@ KokoroDance:
   Name: 暗黒能楽
 MogongAttack:
   Name: 埴輪の造形
-  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}が与えるダメージや|ブロック|の値は、{SelfName}が手札にある間に使用した他のカードのダメージや|ブロック|の最大値にする。"
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。\n{SelfName}が与えるダメージや|ブロック|の値は、{SelfName}が手札にある間に使用した他のカードのダメージや|ブロック|の最大値になる。"
 HappyNewYear:
   Name: 初詣
-  Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ場合|火力|{Value1}を得る。\n防御カードを選んだ場合|霊力|{Value1}を得る。"
+  Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ時|火力|{Value1}を得る。\n防御カードを選んだ時|霊力|{Value1}を得る。"
 Ice:
   Name: 氷晶
   Description: '|冷気|を与える。'
@@ -1123,7 +1123,7 @@ MeihongPower:
   Description: "{PlayerName}のターン開始時、|火力|{Value1}を得る。\n戦闘終了時、{PlayerName} のライフが半分以下の場合、ライフを{Value2}回復する。"
 HekaHellRain:
   Name: 地獄の雨
-  Description: カードを１枚プレイするたび、ターン終了時敵全体に{Value1}のダメージを与える。
+  Description: ターン終了時、敵全体にそのターンにプレイしたカードの枚数の{Value1}倍のダメージを与える。
 FourFlan:
   Name: フォーオブアカインド
   ExtraDescription1: '{Damage}ダメージを{Value1}回与える、'
@@ -1384,7 +1384,7 @@ HuashanDefense:
   Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
 HuiyinRetain:
   Name: 一条戻り橋
-  Description: "捨て札から{Value1}枚までのカードを選び手札に加える。それらを1ターンの間|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
+  Description: "捨て札から{Value1}枚までのカードを選び手札に加える。それらを1ターンの間|保留|する。\nこのターンを終了し、追加ターンを開始する。\n\
     |時間制限|{Mana}。"
   ExtraDescription1: "捨て札から{Value1}枚までのカードを選び手札に加える。それらを1ターンの間|保留|する。\nこのターンを終了し、次の自分のターンを開始する。\n\
     |d:時間制限{Mana}。|"
@@ -1423,7 +1423,7 @@ FlanPlayAlone:
   Description: "|臨時火力|{Value1}を得る。\n攻撃カード以外のカードをすべて捨てる。"
   Name: ひとり遊び
 YijiuAttack:
-  Description: "{Damage}ダメージを与える。\n{SelfName}で敵を撃破した場合、{SelfName}を|廃棄|した後{Value1}|天衣無縫|を得る。"
+  Description: "{Damage}ダメージを与える。\n{SelfName}で敵を撃破した場合、{SelfName}を|廃棄|した後|天衣無縫|{Value1}を得る。"
   Name: 龍神の稲光り
 PaluxiCurse:
   Name: 丑の刻参り
@@ -1758,7 +1758,7 @@ MoonTipsHeal:
   Description: ライフを{Value1}回復する。
   Name: 傷癒やし
 LeiguAttack:
-  Description: "敵全体に{Damage}のダメージを与える。\n|バリア|または|ブロック|を持つ敵は2回のダメージを受ける。"
+  Description: "敵全体に{Damage}ダメージを与える。\n|バリア|または|ブロック|を持つ敵はダメージを2回受ける。"
   Name: 重低音バスドラム
 LongArm:
   Name: のびーるアーム
