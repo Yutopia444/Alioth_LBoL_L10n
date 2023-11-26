@@ -219,6 +219,9 @@ WindGirl:
   Name: Garota Deus do Vento
   Description: O |Desvio| da {OwnerName} é reabastecido para {Level} no fim de cada
     turno dela.
+  Brief: "Sempre que {OwnderName} ganhar |Garota Deusa do Vento|, ela ganha o mesmo\
+    \ tanto de |Desvio|.\no |Desvio| de {OwnerName} é reposto para um valor específico\
+    \ no fim do turno."
 Interview:
   Name: Entrevista Em Progresso
   Description: '{OwnerName} está realizando entrevistas no local do incidente.'
@@ -287,6 +290,7 @@ TurnStartPurify:
 RockHard:
   Name: Duro como Pedra!
   Description: '{OwnerName} sofre menos {Level} de dano de ataques não bloqueados.'
+  Brief: '{OwnerName} sofre menos dano de ataques não bloqueados.'
 RockHardAura:
   Name: Proteção da Pedra Angular
   Description: '{OwnerName} está protegido por uma Pedra Angular, sofrendo menos {Level}
@@ -585,11 +589,11 @@ SenluoJiejieSe:
   Description: No início do próximo turno de {OwnerName}, ela detona toda a sua |Barreira|.
   Brief: No início do próximo turno de {OwnerName}, ela detona toda a sua |Barreira|.
 MasterOfCollectionSe:
-  Brief: Sempre que |Reter| uma carta, reduza seu custo em algum mana aleatório neste
-    combate.
-  Name: Mestra de Coleções
-  Description: Sempre que |Reter| uma carta, reduza seu custo em {Level} de mana aleatório
+  Brief: Sempre que uma carta é |Retida|, reduza seu custo em alguma mana aleatória
     neste combate.
+  Name: Mestra de Coleções
+  Description: Sempre que uma carta é |Retida|, reduza seu custo em {Level} de mana
+    aleatória neste combate.
 PotionDefenseSe:
   Description: Até o final do turno, sempre que uma |Poção Instável| for usada, ganhe
     {Level} |Barreira|.
@@ -617,6 +621,9 @@ DrawPhaseAddKnife:
     |Facas de Arremesso| no lugar.
   Brief: Ignore a fase de compra de cartas no início do turno, adicione |Facas de
     Arremesso| no lugar.
+  ExtraDescription: "Pule a fase de compras de cartas no turno que está começando,\
+    \ adicione {Limit} |Facas de Arremesso| à mão no lugar.\n{SelfName} está inativo\
+    \ e só vai ser removido na resolução deste turno."
 FrostArmor:
   Name: Armadura de Gelo
   Description: No início do turno de {OwnerName}, ganhe {Level} |Bloqueio| e perca
@@ -938,3 +945,111 @@ EnemyDayaojing:
 HuiyeTimeSe:
   Name: Em Instantes
   Description: 'Apenas {Limit} cartas podem ser jogadas a cada turno. (Restam: {Count})'
+Starfall:
+  Name: Chuva Estelar
+  Description: Após |Prever|, {OwnerName} toma {Level} de dano.
+  Brief: Após |Prever|, {OwnerName} toma dano.
+NextTurnGainGraze:
+  Name: Desvio no Próximo turno
+  Description: No começo do próximo turno de {OwnerName}, ganhe {Level} de |Desvio|.
+  Brief: No começo do próximo turno de {OwnerName}, ganhe |Desvio|.
+ClockCorpseSe:
+  Name: Restos do Relógio
+  Description: Cartas não podem ser compradas fora da compra inicial neste turno.
+  Brief: Cartas não podem ser compradas fora da compra inicial neste turno.
+  ExtraDescription: "Cartas não podem ser compradas fora da compra inicial neste turno.\n\
+    {SelfName} está inativo e só vai ser removido na resolução deste turno."
+LunaClockSe:
+  Name: Lágrima do Espaço-Tempo
+  Description: Os ataques de {PlayerName} não causam dano neste turno.
+  Brief: Os ataques de {PlayerName} não causam dano neste turno.
+  ExtraDescription: "Os ataques de {PlayerName} não causam dano neste turno.\n{SelfName}\
+    \ está inativo e só vai ser removido na resolução deste turno."
+BrokenTimelineSe:
+  Name: Linha do Tempo Quebrada
+  Description: No começo do próximo turno de {PlayerName}, nenhuma mana será ganha
+    da base de mana.
+  Brief: No começo do próximo turno de {PlayerName}, nenhuma mana será ganha da base
+    de mana.
+  ExtraDescription: "No começo do próximo turno de {PlayerName}, nenhuma mana será\
+    \ ganha da base de mana.\n{SelfName} está inativo e só vai ser removido na resolução\
+    \ deste turno."
+MindEnlight:
+  Name: Epifania
+  Description: "|Epifania| é um |Estado Mental|, na qual só um pode estar ativo ao\
+    \ mesmo tempo. No começo do próximo turno de {PlayerName}, saia do |Estado Mental|\
+    \ atual.\nCartas e mana não são descartadas no fim do turno."
+  Brief: "|Epifania| é um |Estado Mental|, na qual só um pode estar ativo ao mesmo\
+    \ tempo. No começo do próximo turno de {PlayerName}, saia do |Estado Mental| atual.\n\
+    Cartas e mana não são descartadas no fim do turno."
+ChaofanyinSe:
+  Name: Hiperreatividade
+TempControl:
+  Name: Controle Temporário
+  Description: "Até o fim do turno, ganhe {Level} de |Controle|.\n|Controle| aumenta\
+    \ o efeito de algumas |Bonecas|."
+  Brief: "|Controle| aumentado até o fim do turno.\n|Controle| aumenta o efeito de\
+    \ algumas |Bonecas|."
+Control:
+  Name: Controle
+  Description: "Ganhe {Level} de |Controle|.\n|Controle| aumenta o efeito de algumas\
+    \ |Bonecas|."
+  Brief: "|Controle| aumentado.\n|Controle| aumenta o efeito de algumas |Bonecas|."
+TempControlNegative:
+  Name: Controle Diminuído Temporariamente
+  Description: "Até o fim do turno, perca {Level} de |Controle|.\n|Controle| aumenta\
+    \ o efeito de algumas |Bonecas|."
+  Brief: "|Controle| diminuído até o fim do turno.\n|Controle| aumenta o efeito de\
+    \ algumas |Bonecas|."
+ControlNegative:
+  Name: Controle Diminuído
+  Description: "Perca {Level} de |Controle|.\n|Controle| aumenta o efeito de algumas\
+    \ |Bonecas|."
+  Brief: "|Controle| Diminuído.\n|Controle| aumenta o efeito de algumas |Bonecas|."
+BenwoTouyingSe:
+  Name: Projeção do Ego
+  Description: Quando entrar no estado de |Paixão|, adicione {Level:plural one='%
+    carta de ataque completamente aleatória' other='% cartas de ataque completamente
+    aleatórias'} à mão que {Level:plural one='|custa temporariamente|' other='custam
+    temporariamente'} {Mana} e tem |Exilar|.
+  Brief: Quando entrar no estado de |Paixão|, adicione {Level:plural one='% carta
+    de ataque completamente aleatória' other='% cartas de ataque completamente aleatórias'}
+    à mão que {Level:plural one='|custa temporariamente|' other='custam temporariamente'}
+    {Mana} e tem |Exilar|.
+WuyishiDNASe:
+  Description: No fim do turno de {PlayerName}, se ela não esta em |Epifania|, perca
+    o jogo.
+  Brief: No fim do turno de {PlayerName}, se ela não esta em |Epifania|, perca o jogo.
+  Name: Genética do Inconsciente
+NextTurnBenwo:
+  Name: Paixão no Próximo Turno
+  Description: No começo do próximo turno de {PlayerName}, entre no estado de |Paixão|.
+  Brief: No começo do próximo turno de {PlayerName}, entre no estado de |Paixão|.
+NextTurnChaowo:
+  Name: Serenidade no Próximo Turno
+  Description: No começo do próximo turno de {PlayerName}, entre no estado de |Serenidade|.
+  Brief: No começo do próximo turno de {PlayerName}, entre no estado de |Serenidade|.
+Love:
+  Name: Amor
+  Description: "No começo do turno de {PlayerName}, perca 2 de |Amor|, compre {Draw}\
+    \ cartas e entre no estado de |Paixão|.\n"
+  Brief: No começo do turno de {PlayerName}, perca 2 de |Amor|, compre 3 cartas e
+    entre no estado de |Paixão|.
+MindPassion:
+  Name: Paixão
+  Description: "|Paixão| é um |Estado Mental|, na qual só um pode estar ativo ao mesmo\
+    \ tempo. No começo do próximo turno de {PlayerName}, saia do |Estado Mental| atual.\n\
+    Todos os ataques se tornam |Precisos|.\nQuando uma carta de ataque é jogada, perca\
+    \ 1 de |Amor| e dobre seu dano."
+  Brief: "|Paixão| é um |Estado Mental|, na qual só um pode estar ativo ao mesmo tempo.\
+    \ No começo do próximo turno de {PlayerName}, saia do |Estado Mental| atual.\n\
+    Todos os ataques se tornam |Precisos|.\nQuando uma carta de ataque é jogada, perca\
+    \ 1 de |Amor| e dobre seu dano."
+MindPeace:
+  Name: Serenidade
+  Description: "|Serenidade| é um |Estado Mental|, na qual só um pode estar ativo\
+    \ ao mesmo tempo. No começo do próximo turno de {PlayerName}, saia do |Estado\
+    \ Mental| atual.\nQuando sair do estado de |Serenidade|, ganhe {Mana}."
+  Brief: "|Serenidade| é um |Estado Mental|, na qual só um pode estar ativo ao mesmo\
+    \ tempo. No começo do próximo turno de {PlayerName}, saia do |Estado Mental| atual.\n\
+    Quando sair do estado de |Serenidade|, ganhe {Mana}."
