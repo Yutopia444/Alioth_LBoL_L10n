@@ -13,7 +13,7 @@ Game:
   ExileZone: Exílio
   EndTurn: Fim do Turno
   BattleStart: Início do Combate
-  EnemyTurn: Inimigo
+  EnemyTurn: Turno do Inimigo
   ExtraTurn: Extra
   TurnCounter: Turno {0}
   Next: Adiante
@@ -22,7 +22,7 @@ Game:
   UnlockLevel: Nível Desbloqueado
   Title: 'Touhou: Lost Branch of Legend'
   DrawZone: Pilha de Compra
-  PlayerTurn: Jogador
+  PlayerTurn: Turno do Jogador
   ActualOrderExplain: "Exibe as cartas na ordem em que entraram na pilha.\n\nbaralho:\
     \ A ordem em que as cartas são adquiridas neste jogo.\npilha de compra: O primeiro\
     \ é \"topo da pilha\".\nPilha de Descarte: A última é \"topo da pilha\".\n\nPor\
@@ -38,8 +38,15 @@ Game:
   RarityOrderExplain: "Cartas da mesma raridade são exibidas na ordem delas na coleção.\n\
     Cartas com o mesmo nome são exibidas na ordem real entre eles."
   ManaAmountOrder: Custo
-  Passive:  passiva
+  Passive:  Passiva 
   Achievement: Conquista
+  NaturalTurn: Natural
+  InTurn: No turno
+  OutTurn: Fora do Turno
+  NotInThatTurn: 'Inativo: Não está no turno alvo.'
+  RoundCounter: Rodada {0}
+  PlayerNameTurn: Fase de {0}
+  PlayerNameTurnCounter: Turno de {0} ({1})
 Explain:
   Title: Nota
   LoseShinning: Você sempre pode encontrar cartas exclusivas para o personagem que
@@ -76,6 +83,9 @@ Explain:
   ShinmyoumaruForge: Cartas de ataque são substituídas por cartas de ataque e as cartas
     de defesa são substituídas por cartas de defesa.
   SaveWhenSelect: Selecionar isso salvará o progresso imediatamente.
+  Power: Poder<sprite="Point" name="Power">
+  PowerDescription: "Usar um SpellCard consome uma carga total de poder.\n(exibido\
+    \ abaixo do retrato do personagem)"
 UI:
   Yes: Sim
   No: Não
@@ -156,7 +166,7 @@ StartGame:
     \ futuras."
   IsLockHint: "Essa personagem estará disponível\ndesbloqueando o Nível {0}"
   CheckDeck: Baralho Inicial
-  SkillSpellCard: Spell Card
+  SkillSpellCard: SpellCard {0} <sprite="Point" name="Power">
   SkillExhibit: Exposição Inicial
   StartMoney: Dinheiro Inicial
   StartHp: Vida Inicial
@@ -324,7 +334,7 @@ Setting:
 Chat:
   Sunny1: Hoje mostraremos à {0} o quão poderosas somos!
   Aya3: Veja o que {0} tem em suas mãos! Essa é a prova de sua culpa!
-  Siji2: Que repugnante, {0:cf}.
+  Siji2: Que repugnante, {0:cf}!.
   Terminator2: "DANOS LEVES...\nREPARANDO..."
   StarSpell: Posso detectar cada movimento seu~
   Aya2: Temos um suspeito insatisfeito tentando interromper a entrevista!
@@ -371,7 +381,7 @@ Chat:
   YoumuMooncake: Devolve o meu {0}!
   Kokoro1: Sinto como se muitas das minhas máscaras tivessem desaparecido recentemente.
   Clownpiece1: Fadas! Mais danmaku! Mais!
-  Siji1: Roubar exposições sob o pretexto de investigação de incidentes.
+  Siji1: Roubando Exibições sob o pretexto de investigação de incidentes.
   SijiMystia: Comer e sair sem pagar. Sentença estendida por um ano.
   SijiTurn2: Desrespeito ao tribunal. Sentença estendida por um ano.
   SijiTurn3: Dizer que sou baixinha. Sentença estendida por dois anos.
@@ -410,6 +420,8 @@ ErrorChat:
   LowLoyalty: Não tenho Influência suficiente com este companheiro.
   CardCharm: Estou confusa
   CardHuiye: Não é possível reiniciar
+  CardJinzi: O doppelganger já fez o suficiente.
+  NoAbilityCardInHand: Não há cartas de talento na mão.
 Debut:
   EirinChats:
   - Pare de perder tempo, {0}
@@ -419,7 +431,8 @@ Debut:
   - Vou deixar a casa aos seus cuidados, Eirin
   - Lembre-se de estar de volta ao nascer do sol~
 Shop:
-  RemoveTooltip: Remova uma carta do baralho e aumente o preço cada vez | {0} dinheiro|
+  RemoveTooltip: Remova uma carta do baralho e aumente o preço em | {0} de Dinheiro|
+    para cada uso. O preço máximo é de {1}.
   Chats:
   - Aqui, querida cliente~
   - Tudo pela metade do dobro! Tem certeza de que não precisa de nada?
@@ -435,6 +448,14 @@ Shop:
   WelcomeQuotes:
   - Bem-vinda!
   - Dê uma olhada em volta.
+  CardService: Serviço de Carta
+  SoldOut: Esgotado
+  Upgrade: Melhorar Carta
+  UpgradeTooltip: "Melhore uma carta no baralho.\nCusta {0} de dinheiro."
+  RemoveService: 'Remova:'
+  ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
+  ShopUpgradePrice: '{0} <sprite="Gold" name="gold">'
+  UpgradeService: 'Melhorar:'
 Cards:
   Show: Passe o mouse sobre as cartas ou clique com o botão direito do mouse para
     ver os detalhes.
@@ -448,6 +469,8 @@ Cards:
   TransformTips: Escolha uma carta para Transformar
   RemoveDialog: Confirmar Remoção
   TransformDialog: Confirmar Transformação
+  UpgradePrice: "Custo: {0} <sprite=\"Gold\" name=\"gold\">\nDinheiro: {1} <sprite=\"\
+    Gold\" name=\"gold\">"
 CardDetail:
   UpgradeYes: Melhorada
   UpgradeNo: Base
@@ -712,3 +735,62 @@ MessageDialog:
   CorruptedGameRunSaveData: Partida corrompida
   CannotReenterStation: Impossível entrar no nível
   AlreadyInGameRun: Já está em uma partida
+Lifetime:
+  Title: Dados de Carreira
+  HighestBp: Pontuação Mais Alta<sprite="Point" name="Point">
+  Win: Incidentes Resolvidos
+  TotalBp: Total de Pontuação <sprite="Point" name="Point">
+  Game: Total de Partidas
+  OldData: Dados de Versões Antigas <sprite="TextIcon" name="Info">
+  NoData: Dados não Registrados
+  NoDataHint: Antes da atualização v1.3.15, esses dados não eram rastreados.
+  Perfect: Incidentes Resolvidos Perfeitamente
+  OldDataHint: Antes da atualização v1.3.15, apenas os dados de todos os caracteres
+    combinados eram rastreados, e não separadamente.
+  Time: Tempo de Jogo
+  Puzzle: Exigências
+Credits:
+  Illustrator: Ilustrador de Cartas
+  Thanks: Agradecimentos
+  Kyu: Personagens & Ilustração de cenas
+  SignalE: Música
+  Wuqiqi: Arte 2D
+  Aeolian: Efeitos Visuais / Áudio
+  Sana: Ilustrações de Personagens
+  TChinese: Localização em Chinês Tradicional
+  Turkish: Localização em Turco
+  Jiong: Suporte de Serviços
+  Vietnamese: Localização em Vietnamita
+  Liya: Efeitos Visuais
+  UnuseArt: Arte não Apresentada
+  Zackary: Áudio
+  Polish: Localização em Polonês
+  French: Localização em Frances
+  Korean: Localização em Coreano
+  English: Localização em Inglês
+  Russian: Localização em Russo
+  Japanese: Localização em Japonês
+  Portuguese: Localização em Português
+  LuvChan: Design
+  FK5: Programação / Animação
+  Jiejiezi: Arte de Personagens e Ilustrações
+  NeetRudong: Arte de Eventos
+  Zaochuan: Ilustração de cenas
+  DG: Discussão de Protótipo
+  Alioth: Studio Alioth
+  MW: Animação
+  Alice: Design / Programação
+  Yutopia: Direção de Arte / Efeitos Visuais
+  Salyu: Programação
+  MainPartners: Parceiros
+  DD: Interface / Arte
+  Anima: Animação
+  NoiseClub: Áudio
+  Spanish: Localização em Espanhol
+  Italian: Localização em Italiano
+Ultimate:
+  ConsumePower: 'Custo de Poder <sprite="Point" name="Power">: {0}'
+  MaxPower: 'Cargas Máximas: {0}'
+  FreeToUse: Pode ser usado várias vezes em um único turno
+  OncePerTurn: Só pode ser usado uma vez por turno
+  OncePerBattle: Só pode ser usado uma vez por combate
