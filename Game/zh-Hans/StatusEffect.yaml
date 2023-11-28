@@ -151,10 +151,15 @@ LimitedDamage:
   Description: '{OwnerName}每回合只能受到 {Limit} 点伤害，剩余 {Count} 点。'
   Brief: '{OwnerName}每回合只能受到一定数量的伤害。'
 
+BossAct:
+  Name: 转阶段
+  Description: '{OwnerName}受到 {Count} 点伤害后立刻进行一次行动，不会结束{PlayerName}的回合。'
+  Brief: '{OwnerName}受到若干点伤害后立刻行动，不会结束{PlayerName}的回合。'
+
 Invincible:
   Name: 天衣无缝
   Description: '{OwnerName}受到的伤害不会超过 1 ，剩余 {Duration} 回合。'
-  Brief: '{OwnerName}受到的伤害不会超过 1 。'
+  Brief: '{OwnerName}受到的伤害不会超过 1 ，持续一定的回合数。'
 
 InvincibleEternal:
   Name: 天衣无缝
@@ -164,7 +169,7 @@ InvincibleEternal:
 TurnStartDontLoseBlock:
   Name: 保留格挡
   Description: '{OwnerName}的回合开始时，不会失去|格挡|，剩余 {Level} 次。'
-  Brief: '{OwnerName}的回合开始时，不会失去|格挡|，剩余若干次。'
+  Brief: '{OwnerName}的回合开始时，不会失去|格挡|，持续一定的次数。'
 
 WindGirl:
   Name: 风神少女
@@ -245,7 +250,7 @@ TimeIsLimited:
 GuangxueMicai:
   Name: 光学迷彩
   Description: '{OwnerName}受到的攻击伤害降低一半，剩余 {Duration} 回合。'
-  Brief: '{OwnerName}受到的攻击伤害降低一半，剩余若干回合。'
+  Brief: '{OwnerName}受到的攻击伤害降低一半，持续一定的回合数。'
 
 DroneBlock:
   Name: 防御矩阵
@@ -477,9 +482,9 @@ EnemyTuanzi:
 
 SijiZui:
   Name: 是非曲直
-  Description: '{PlayerName}的罪孽：轻度。'
-  ExtraDescription: '{PlayerName}的罪孽：一般。'
-  ExtraDescription2: '{PlayerName}的罪孽：深重。'
+  Description: '{PlayerName}的罪孽程度：轻度。'
+  ExtraDescription: '{PlayerName}的罪孽程度：一般。'
+  ExtraDescription2: '{PlayerName}的罪孽程度：深重。'
 
 MirrorImage:
   Name: 镜像
@@ -516,6 +521,20 @@ ScarletDestiny:
 JunkoPurify:
   Name: 纯化光耀
   Description: 每当{PlayerName}打出一张牌，|纯化| {Level} 。
+
+JunkoLily:
+  Name: 杀意的百合
+  Description: 每当{PlayerName}打出一张牌，受到 {Level} 点伤害。
+
+JunkoColor:
+  Name: 溢出的瑕秽
+  Description: '{PlayerName}的污秽程度：轻度。'
+  ExtraDescription: |-
+    {PlayerName}的污秽程度：严重。
+    提高{JunkoName}的火力、「地上秽的纯化」行动强度。
+  ExtraDescription2: |-
+    {PlayerName}的污秽程度：无法忍受。
+    提高{JunkoName}的火力、「地上秽的纯化」行动强度。
 
 SingleJiandaoSe:
   Name: 巨大的单片剪刀
@@ -728,10 +747,10 @@ TimeAuraSe:
   Name: 时域冲击
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Level} 点伤害。
-    每伤害一个敌人就降低一层。
+    每对一个敌人造成伤害就降低一层。
   Brief: |-
     {PlayerName}的回合结束时，对所有敌人造成若干点伤害。
-    每伤害一个敌人就降低一层。
+    每对一个敌人造成伤害就降低一层。
 
 GainKnifeSe:
   Name: 星剑飞舞
@@ -756,7 +775,7 @@ EvilMaidSe:
 EvilMaidDoubleAttack:
   Name: 恶魔之力
   Description: '{PlayerName}的攻击伤害翻倍，剩余 {Duration} 回合。'
-  Brief: '{PlayerName}的攻击伤害翻倍，剩余若干回合。'
+  Brief: '{PlayerName}的攻击伤害翻倍，持续一定的回合数。'
 
 MihuanJackSe:
   Name: 迷幻杰克
