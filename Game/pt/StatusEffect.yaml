@@ -659,7 +659,7 @@ WhiteWorldSe:
     one='vez' other='vezes'} a todos os inimigos.
   Name: Mundo de Neve Pura
 SummerFlowerSe:
-  Name: Flores de Verão
+  Name: Pétalas de Verão
   Description: '{SourceCardName} causa {Level} de dano adicional.'
   Brief: '{SourceCardName} causa dano adicional.'
 MaidFriendSe:
@@ -819,10 +819,9 @@ HuiyeManaSe:
   Brief: "No início do turno de {PlayerName}, ganhe mana aleatória. \nAumente o valor\
     \ a cada turno."
 YouxiangMoonSe:
-  Description: No início do turno de {PlayerName}, adicione {Level} |Flor do Verão|
-    com |Etéreo| na mão.
-  Brief: No início do turno de {PlayerName}, adicione |Flor do Verão| com |Etéreo|
-    na mão.
+  Description: No início do turno de {PlayerName}, adicione {Level} |Flor do Solstício|
+    à mão.
+  Brief: No início do turno de {PlayerName}, adicione |Flores do Solstício| à mão.
   Name: Belezas da Natureza
 PrismriverSe:
   Brief: Quando {PlayerName} ganhar uma quantidade de mana, converta essa mana em<sprite="ManaSprite"
@@ -945,6 +944,8 @@ EnemyDayaojing:
 HuiyeTimeSe:
   Name: Em Instantes
   Description: 'Apenas {Limit} cartas podem ser jogadas a cada turno. (Restam: {Count})'
+  ExtraDescription: "Apenas {Limit} cartas podem ser jogadas em cada turno. (Restam\
+    \ {Count})\n{SelfName} está inativo e só vai ser removido na resolução deste turno."
 Starfall:
   Name: Chuva Estelar
   Description: Após |Prever|, {OwnerName} toma {Level} de dano.
@@ -984,6 +985,13 @@ MindEnlight:
     Cartas e mana não são descartadas no fim do turno."
 ChaofanyinSe:
   Name: Hiperreatividade
+  Description: Quando uma carta não-|Cópia| com |Instinto| é jogada e não ativa seu
+    efeito de |Instinto|, adicione {Level:plural one='|% Cópia|' other='% |Cópias|'}
+    dela à mão e que |custa{Level:plural one='' other='m'} temporariamente| {Mana}
+    e tem |Exilar|.
+  Brief: Quando uma carta não-|Cópia| com |Instinto| é jogada e não ativa seu efeito
+    de |Instinto|, adicione |Cópias| dela à mão e que |custa{Level:plural one='' other='m'}
+    temporariamente| {Mana} e tem |Exilar|.
 TempControl:
   Name: Controle Temporário
   Description: "Até o fim do turno, ganhe {Level} de |Controle|.\n|Controle| aumenta\
@@ -1053,3 +1061,75 @@ MindPeace:
   Brief: "|Serenidade| é um |Estado Mental|, na qual só um pode estar ativo ao mesmo\
     \ tempo. No começo do próximo turno de {PlayerName}, saia do |Estado Mental| atual.\n\
     Quando sair do estado de |Serenidade|, ganhe {Mana}."
+ZhuozhuangChengzhangSe:
+  Name: Crescimento Saudável
+  Description: No fim do turno de {PlayerName}, adicione {Level} |Vitalidade| à mão.
+  Brief: No fim do turno de {PlayerName}, adicione |Vitalidade| à mão.
+SelfControlSe:
+  Brief: Sempre que {PlayerName} causar dano de ataque enquanto estiver no estado
+    de |Paixão|, ganhe |Barreira|.
+  Name: Auto Controle
+  Description: Sempre que {PlayerName} causar dano de ataque enquanto estiver no estado
+    de |Paixão|, ganhe {Level} de |Barreira|.
+SuperExtraTurn:
+  Description: "No fim do |Turno Natural| de {PlayerName}, jogue um turno extra.\n\
+    |Bloqueio| e |Desvio| não são perdidos no começo do turno extra, e apenas {Level:plural\
+    \ one='% carta pode ser jogada' other='% cartas podem ser jogadas'}.\nStatus de\
+    \ turno: {StatusString}."
+  Brief: "No fim do |Turno Natural| de {PlayerName}, jogue um turno extra.\n|Bloqueio|\
+    \ e |Desvio| não são perdidos no começo do turno extra, e apenas {Level:plural\
+    \ one='% carta pode ser jogada' other='% cartas podem ser jogadas'}."
+  ExtraDescription: "No fim do |Turno Natural| de {PlayerName}, jogue um turno extra.\n\
+    |Bloqueio| e |Desvio| não são perdidos no começo do turno extra, e apenas {Level:plural\
+    \ one='% carta pode ser jogada' other='% cartas podem ser jogadas'}.\nStatus de\
+    \ turno: {Count:plural one='resta % carta' other='restam % cartas'} no turno de\
+    \ {SelfName}.\n"
+  Name: Doppleganger Secular
+ChaoyueZiwoSe:
+  Description: No fim do turno de {PlayerName}, se estiver |Sereno|, ganhe {Level}
+    de |Poder de Fogo| e |Espírito|.
+  Brief: No fim do turno de {PlayerName}, se estiver |Sereno|, ganhe |Poder de Fogo|
+    e |Espírito|.
+  Name: Transcender
+HuiguiLizhiSe:
+  Description: No fim do turno de {PlayerName}, entre no estado de |Serenidade|.
+  Brief: No fim do turno de {PlayerName}, entre no estado de |Serenidade|.
+  Name: Retornar à Sanidade
+KongxiangshangSe:
+  Name: Auto Retenção Ideal
+  Description: Quando uma carta |Básica de Defesa| é jogada, entre no estado de |Serenidade|.
+  Brief: Quando uma carta |Básica de Defesa| é jogada, entre no estado de |Serenidade|.
+ShortLove:
+  Description: A próxima carta |Básica| jogada tem seus valores numéricos aumentados
+    em {Level}.
+  Brief: A próxima carta |Básica| jogada tem seus valores numéricos aumentados.
+  Name: Fagulha de Amor
+LongLove:
+  Name: Apaixonado
+  Description: Todas as cartas |Básicas| tem seus valores numéricos aumentados em
+    {Level}.
+  Brief: Todas as cartas |Básicas| tem seus valores numéricos aumentados.
+MeilingWaterSe:
+  Name: Encurralado
+  Description: No começo do turno de {OwnerName}, perca {Level} de vida.
+  Brief: No começo do turno de {OwnerName}, perca vida.
+YouxiangWakeSe:
+  Name: Madrugador
+  Description: No começo do próximo{Count:plural one='' other=' %º'} turno de {PlayerName},
+    ganhe {Level} de |Poder de Fogo| e coloque {Limit:plural one='% carta' other='%
+    cartas'} de ataque da pilha de compra para a mão.
+  Brief: Após um certo número de turnos, ganhe |Poder de Fogo| e coloque cartas de
+    ataque aleatórias da pilha de compra para a mão.
+YukariFriendSe:
+  Description: No começo do turno de {PlayerName}, adicione {Level:plural one='% carta
+    de 3-cores neutra aleatória' other='% cartas de 3-cores neutras aleatórias'} à
+    mão.{Level:plural one='Ela |custa temporariamente|' other='Elas |custam temporariamente|'}
+    {Mana} e tem |Etéreo|.
+  Brief: No começo do turno de {PlayerName}, adicione cartas de 3-cores neutras aleatórias
+    à mão.{Level:plural one='Elas |custam temporariamente| {Mana} e tem |Etéreo|.
+  Name: Limite da Fantasia
+ShirenKunchongSe:
+  Name: Inseto Canibal
+  Description: Sempre que {OwnerName} ganhar um |Debuff|, {PlayerName} ganha {Level}
+    de |Block|.
+  Brief: Sempre que {OwnerName} ganhar um |Debuff|, {PlayerName} ganha |Block|.
