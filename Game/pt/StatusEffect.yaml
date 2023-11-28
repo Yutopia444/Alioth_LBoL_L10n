@@ -112,9 +112,9 @@ Weak:
   Brief: Os ataques de {OwnerName} causam {Value}% menos dano.
 Vulnerable:
   Name: Vulnerável
-  Description: "{OwnerName} sofre {Value}% mais dano de ataques {Duration:plural one='até\
-    \ ao final do turno' other='durante os próximos % turnos'}."
-  Brief: '{OwnerName} sofre {Value}% mais dano de ataques.'
+  Description: "{OwnerName} sofre {Value}% a mais de dano de ataques {Duration:plural\
+    \ one='até ao final do turno' other='durante os próximos % turnos'}."
+  Brief: '{OwnerName} sofre {Value}% a mais de dano de ataques.'
 Firepower:
   Name: Poder de Fogo
   Brief: "Aumenta o |Poder de Fogo|.\n(|Poder de Fogo| aumenta o dano causado por\
@@ -128,16 +128,17 @@ Spirit:
     \ |Barreira| obtidos)"
 LockedOn:
   Name: Marcado
-  Brief: "{OwnerName} sofre mais dano de ataques.\nPerde 1 |Marca| quando começa o\
+  Brief: "{OwnerName} sofre mais dano de ataques.\nPerde 1 |Marca| no início de cada\
     \ turno."
   Description: "{OwnerName} sofre mais {Level} de dano de ataques.\nPerde 1 |Marca|\
-    \ quando começa o turno."
+    \ no início de cada turno."
 Graze:
   Name: Desvio
-  Brief: "{OwnerName} não sofre dano de ataques.\nPerde 1 |Desvio| quando atacado\
-    \ ou quando começa o turno."
+  Brief: "{OwnerName} não sofre dano de ataques.\nPerde 1 de |Desvio| quando atacado\
+    \ ou no início de cada turno."
   Description: "{OwnerName} não sofre dano {Level:plural one='do próximo ataque' other='dos\
-    \ próximos % ataques'}.\nPerde 1 |Desvio| quando atacado ou quando começa o turno."
+    \ próximos % ataques'}.\nPerde 1 de |Desvio| quando atacado ou no início de cada\
+    \ turno."
 ExtraTurn:
   Name: Turno Extra
   Description: "{OwnerName} tem {Level:plural one='% turno' other='% turnos'} extra\
@@ -672,11 +673,11 @@ StarFriendSe:
   Brief: Quando {SourceCardName} causar dano, aplique |Marca| no alvo.
 SeeFengshuiSe:
   Name: Manipulação do Feng Shui
-  Description: "No início do turno de {PlayerName}, |prevê| {Scry}.\nSempre que uma\
-    \ carta de defesa for enviada para a pilha de descarte quando |Prever|, ganhe\
-    \ {Bloqueio} |Bloqueio|."
+  Description: "No início do turno de {PlayerName}, |preveja| {Scry}.\nSempre que\
+    \ uma carta de defesa for enviada para a pilha de descarte enquanto |Prevê|, ganhe\
+    \ {Block} de |Bloqueio|."
   Brief: "No início do turno de {PlayerName}, |preveja|.\nSempre que uma carta de\
-    \ defesa for enviada para a pilha de descarte quando |Prever|, ganhe |Bloqueio|."
+    \ defesa for enviada para a pilha de descarte enquanto |Prevê|, ganhe |Bloqueio|."
 LoseSpiritSe:
   Description: No início do turno de {PlayerName}, Perca {Level} de |Espírito| .
   Brief: No início do turno de {PlayerName}, Perca uma quantidade de |Espírito| .
@@ -742,10 +743,11 @@ ExtraDraw:
     other='cartas'}.
   Brief: No início do turno de {PlayerName}, compre uma cartas.
 FairyTreeSe:
-  Description: Sempre que um |Colega| é invocado jogando uma carta de |Colega|, ganhe
-    {Level} |Bloqueio|.
+  Description: Sempre que um |Companheiro| é invocado jogando uma carta de |Companheiro|,
+    ganhe {Level} de |Bloqueio|.
   Name: Morada das Fadas
-  Brief: Sempre que um |Colega| é invocado jogando uma carta de |Colega|, ganhe |Bloqueio|.
+  Brief: Sempre que um |Companheiro| é invocado jogando uma carta de |Companheiro|,
+    ganhe |Bloqueio|.
 TodayYesterdaySe:
   Name: Gensokyo, Passado e Presente
   Description: Sempre que {OwnerName} |Desviar| um ataque, ganhe {Level} |Poder de
@@ -849,9 +851,10 @@ BailianFireSe:
     \ tem |Exílio| e |Etéreo|."
 MinengZhuruSe:
   Name: Infusão de Energia
-  Brief: Os efeitos passivos de cartas de |Colega| Invocados na mão ativam mais vezes.
-  Description: Os efeitos passivos de cartas de |Colega| Invocados na mão ativam {Level}
-    {Level:plural one='vez adicional' other='vezes adicionais'}.
+  Brief: Os efeitos passivos de cartas de |Companheiro| Invocados na mão ativam mais
+    vezes.
+  Description: Os efeitos passivos de cartas de |Companheiro| Invocados na mão ativam
+    {Level} {Level:plural one='vez adicional' other='vezes adicionais'}.
 IceMatrixSe:
   Description: Sempre que {PlayerName} aplicar |Frio| em um inimigo, ganhe {Level}
     |Armadura de Gelo|.
