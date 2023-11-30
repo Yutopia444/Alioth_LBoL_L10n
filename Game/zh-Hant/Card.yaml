@@ -1256,7 +1256,7 @@ LoyalMaid:
   Name: 忠實的僕從
   Description: |-
     獲得 {Shield} 點|護盾|。
-    在額外回合開始時，從棄牌堆回到手中，暫塑為{Mana}。
+    在額外回合開始時，從棄牌堆回到手中，|暫塑|為{Mana}。
 
 TimeLord:
   Name: 主宰時空
@@ -1286,14 +1286,14 @@ SakuyaDio:
   Description: |-
     主動使用的|飛刀|施加 {Value1} 層|鎖定|。
     結束{PlayerName}的回合，進行一個額外的回合。
-    跳過這個額外回合的抽牌階段，改為將 {Value2} 張|飛刀|加入手中。
+    跳過這一回合的抽牌階段，改為將 {Value2} 張|飛刀|加入手中。
   FlavorText: 次は貴様だ！
 
 PerfectServant:
   Name: 完美從者
   Description: |-
-    |每支付|<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">：下回合抽牌階段結束時，所有手牌|暫時降低|一點隨機的費用。
-    |每支付|<sprite="ManaSprite" name="U">：下回開始時獲得{Mana}，並多抽一張牌。
+    |每支付|<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="W">：下回合抽牌階段結束時，所有手牌|暫時降低| {Value1} 點隨機的費用。
+    |每支付|<sprite="ManaSprite" name="U">：下回開始時獲得{Mana}，並多抽 {Value2} 張牌。
 
 BackToFuture:
   Name: 回到未來
@@ -1506,11 +1506,11 @@ FrostGarden:
   Name: 冷霧花園
   Description: |-
     對所有敵人施加|寒冷|。
-    如果你手中有已召喚的|同伴|牌，{SelfName}費用為{Mana}。
+    如果手中有已召喚的|同伴|牌，{SelfName}費用為{Mana}。
   UpgradedDescription: |-
     對所有敵人施加|寒冷|。
     下回合開始時再次生效。
-    如果你手中有已召喚的|同伴|牌，{SelfName}費用為{Mana}。
+    如果手中有已召喚的|同伴|牌，{SelfName}費用為{Mana}。
   FlavorText: 免費的冷氣。
 
 MaidFriend:
@@ -1672,8 +1672,8 @@ DeepFreeze:
 
 FreezeRiver:
   Name: 浮冰
-  Description: 將抽牌堆底的牌移入手中，|暫塑|為{Mana}。
-  UpgradedDescription: 將抽牌堆底的牌移入手中，|重塑|為{Mana}。
+  Description: 將抽牌堆底的牌移入手中，它|暫塑|為{Mana}。
+  UpgradedDescription: 將抽牌堆底的牌移入手中，它|重塑|為{Mana}。
 
 IceBlock:
   Name: 寒冰屏障
@@ -1747,7 +1747,7 @@ ForeverCool:
   Name: 永遠涼爽的幻想四季
   Description: |-
     使用|同伴|的|a:主動技能|或|u:終結技|後，對隨機敵人施加|寒冷|。
-    任意敵人受到|寒冷|時，手中隨機的|同伴|牌獲得一點|支援度|。
+    任意敵人受到|寒冷|時，手中隨機的|同伴|牌獲得 {Value1} 點|支援度|。
 
 HualiIce:
   Name: 華麗夏日冰
@@ -2315,7 +2315,7 @@ RemiliaJizao:
   Name: 急躁
   Description: |-
     抽 {Value1} 張牌。
-    這個回合內無法再抽牌。
+    這回合內無法再抽牌。
   FlavorText: |-
     「如果下一抽還是"人造珠寶"我就要鬧了！」
     ——周五歡樂夜
@@ -2360,7 +2360,7 @@ SuikaBigball:
     失去 {Value1}點 |火力|。
   NonbattleDescription: |-
     造成 {Damage} 點傷害，對其他敵人造成一半的傷害。
-    失去 {Value1} |火力|。
+    失去 {Value1} 點|火力|。
   FlavorText: 對其他種族而言，鬼的力量還是太難掌控了。
 
 MeihongFire:
@@ -2480,11 +2480,6 @@ HuiyeMana:
   Name: 竹取的物語
   Description: '{PlayerName}的回合開始時，獲得 {Value1} 點隨機的法力；每回合提高 {Value1} 點。'
   FlavorText: 孩童的歌謠傳唱著光輝的罪人的傳說。
-
-OtherBlock:
-  Description: |-
-    獲得 {Block} 點|格擋|。
-    抽 {Value1} 張牌，優先抽取不屬於{PlayerName}的角色卡。
 
 OtherSkill:
   Description: |-
@@ -2663,7 +2658,7 @@ BaitianCard:
   Name: 稗田的轉生
   Description: |-
     獲得 {Block} 點|格擋|。
-    從棄牌堆中選擇一張牌，將它置於抽牌堆頂，|暫時降低|它的隨機 {Value1} 點費用。
+    從棄牌堆中選擇一張牌，將它置於抽牌堆頂，|暫時降低|它的 {Value1} 點隨機費用。
   FlavorText: 在嘗試了電子的資訊儲存媒介後，稗田阿求小姐有了更多喝下午茶的閒暇時間。
 
 NueExile:
@@ -3386,9 +3381,9 @@ Bribery:
 Nightmare:
   Name: 噩夢
   Description: |-
-    手牌、抽牌堆及棄牌堆中總計有 {Value1} 張{SelfName}時，{PlayerName}立刻失敗，無法避免。
+    手牌、抽牌堆及棄牌堆中總計有 {Value1} 張{SelfName}時，|放逐|它們，{PlayerName}立刻失敗，無法避免。
     現有 {NightmareCount} 張。
-  NonbattleDescription: 手牌、抽牌堆及棄牌堆中總計有 {Value1} 張{SelfName}時，{PlayerName}立刻失敗，無法避免。
+  NonbattleDescription: 手牌、抽牌堆及棄牌堆中總計有 {Value1} 張{SelfName}時，|放逐|它們，{PlayerName}立刻失敗，無法避免。
   FlavorText: 醒來就不記得細節了。
 
 NightMana1:
@@ -3690,3 +3685,18 @@ JinziSuperExtraTurn:
   Description: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Value1} 張牌。"
   DetailText: "{SelfName}所帶來的額外回合，總是先於其它額外回合發生。\n打出{SelfName}後，可以懸停{PlayerName}身上的狀態來查看當前回合的詳細信息。"
   Name: 世紀的二重身超人
+DebugAddRandomCards:
+  Description: 測試卡牌：添加隨機卡牌到抽牌棄牌堆，各 {Value1} 張。
+  Name: 添加隨機卡牌
+DebugExileDrawDiscard:
+  Name: 放逐抽牌棄牌堆
+  Description: 測試卡牌：放逐全部抽牌棄牌堆。
+DebugAddRandomCardsSlow:
+  Name: 添加隨機卡牌（慢）
+  Description: 測試卡牌：慢慢地添加隨機卡牌到抽牌棄牌堆，各 {Value1} 張。
+DebugAddDeckCards:
+  Name: 向牌庫添加卡牌
+  Description: 測試卡牌：添加 {Value1} 張隨機的卡牌到牌庫。
+DebugAddHandCards:
+  Name: 放逐所有手牌然後添加卡牌
+  Description: 測試卡牌：放逐所有手牌，然後添加 {Value1} 張隨機的卡牌到手中。

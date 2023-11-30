@@ -154,7 +154,7 @@ LimitedDamage:
 Invincible:
   Name: 天衣無縫
   Description: '{OwnerName}受到的傷害不會超過 1 ，剩餘{Duration} 回合。'
-  Brief: '{OwnerName}受到的傷害不會超過 1 。'
+  Brief: '{OwnerName}受到的傷害不會超過 1 ，持續一定的回合數。'
 
 InvincibleEternal:
   Name: 天衣無縫
@@ -164,7 +164,7 @@ InvincibleEternal:
 TurnStartDontLoseBlock:
   Name: 保留格擋
   Description: '{OwnerName}的回合開始時，不會失去|格擋|，剩餘{Level} 次。'
-  Brief: '{OwnerName}的回合開始時，不會失去|格擋|，剩餘若干次。'
+  Brief: '{OwnerName}的回合開始時，不會失去|格擋|，持續一定的次數。'
 
 Amulet:
   Name: 護身符
@@ -233,7 +233,7 @@ TimeIsLimited:
 GuangxueMicai:
   Name: 光學迷彩
   Description: '{OwnerName}受到的攻擊傷害減半，剩餘{Duration} 回合。'
-  Brief: '{OwnerName}受到的攻擊傷害減半，剩餘若干回合。'
+  Brief: '{OwnerName}受到的攻擊傷害減半，持續一定的回合數。'
 
 DroneBlock:
   Name: 防禦矩陣
@@ -470,9 +470,9 @@ EnemyTuanzi:
 
 SijiZui:
   Name: 是非曲直
-  Description: '{PlayerName}的罪孽：輕度。'
-  ExtraDescription: '{PlayerName}的罪孽：一般。'
-  ExtraDescription2: '{PlayerName}的罪孽：深重。'
+  Description: '{PlayerName}的罪孽程度：輕度。'
+  ExtraDescription: '{PlayerName}的罪孽程度：一般。'
+  ExtraDescription2: '{PlayerName}的罪孽程度：深重。'
 
 MirrorImage:
   Name: 鏡像
@@ -721,10 +721,10 @@ TimeAuraSe:
   Name: 時域衝擊
   Description: |-
     {PlayerName}的回合結束時，對所有敵人造成 {Level} 點傷害。
-    每傷害一個敵人就降低一層。
+    每對一個敵人造成傷害就降低一層。
   Brief: |-
     {PlayerName}的回合結束時，對所有敵人造成若干點傷害。
-    每傷害一個敵人就降低一層。
+    每對一個敵人造成傷害就降低一層。
 
 GainKnifeSe:
   Name: 星劍飛舞
@@ -749,7 +749,7 @@ EvilMaidSe:
 EvilMaidDoubleAttack:
   Name: 惡魔之力
   Description: '{PlayerName}的攻擊傷害翻倍，剩餘{Duration} 回合。'
-  Brief: '{PlayerName}的攻擊傷害翻倍，剩餘若干回合。'
+  Brief: '{PlayerName}的攻擊傷害翻倍，持續一定的回合數。'
 
 MihuanJackSe:
   Name: 迷幻傑克
@@ -1218,3 +1218,15 @@ NextTurnGainGraze:
   Name: 下回合獲得閃避
   Brief: '{OwnerName}的下個回合開始時，獲得若干層|閃避|。'
   Description: '{OwnerName}的下個回合開始時，獲得 {Level} 層|閃避|。'
+BossAct:
+  Brief: '{OwnerName}受到若干點傷害後立刻行動，不會結束{PlayerName}的回合。'
+  Name: 轉階段
+  Description: '{OwnerName}受到 {Count} 點傷害後立刻進行一次行動，不會結束{PlayerName}的回合。'
+JunkoLily:
+  Name: 殺意的百合
+  Description: 每當{PlayerName}打出一張牌，受到 {Level} 點傷害。
+JunkoColor:
+  Name: 溢出的瑕穢
+  Description: '{PlayerName}的污穢程度：輕度。'
+  ExtraDescription: "{PlayerName}的污穢程度：嚴重。\n提高{JunkoName}的火力、「地上穢的純化」行動強度。"
+  ExtraDescription2: "{PlayerName}的污穢程度：無法忍受。\n提高{JunkoName}的火力、「地上穢的純化」行動強度。"
