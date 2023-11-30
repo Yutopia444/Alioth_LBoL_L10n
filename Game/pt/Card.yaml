@@ -14,7 +14,7 @@ Fengmozhen:
   FlavorText: Uma obra-prima forjada por Kogasa Tatara.
 MengzhiYuzha:
   Name: Talismã dos Sonhos
-  Description: "Cause {Damage} de dano.\nAdicione 1 |Agulha Persuasiva| à sua mão."
+  Description: "Cause {Damage} de dano.\nAdicione 1 |Agulha Persuasiva| à mão."
   FlavorText: Uma agulha escondida na manga.
 TuimofuLuanwu:
   Description: Cause {Damage} de dano a um inimigo aleatório {Value1} vezes.
@@ -632,7 +632,7 @@ RedGiantStar:
     \ para a mão."
   Name: Impacto da Gigante Vermelha
 EventHorizon:
-  UpgradedDescription: "Entre em |Fervor|.\nGanhe {Value1} |Poder de Fogo Temporário|.\n\
+  UpgradedDescription: "Entre em |Fervor|.\nGanhe {Value1} de |Poder de Fogo Temporário|.\n\
     No início do próximo turno de {PlayerName}, perca o jogo."
   Name: Horizonte de eventos
   Description: "Entre em |Fervor|.\nNo início do próximo turno de {PlayerName}, perca\
@@ -1079,8 +1079,8 @@ Ice:
   Description: Aplique |Frio|.
 UnlimitedTime:
   Name: Parada do Tempo Perfeita
-  Description: Escolha 1 entre {Value1} cartas que contém |Limite de Tempo| e adicione-a
-    na mão. Ela |Temporariamente custa| {Mana}, tem |Exilar| e |Etéreo|, e perde o
+  Description: Escolha 1 de {Value1} cartas que contém |Limite de Tempo| e adicione-a
+    na mão. Ela |custa temporariamente| {Mana}, tem |Exilar| e |Etéreo|, e perde o
     |Limite de Tempo|.
   FlavorText: Com licença, eu tenho tempo ilimitado.
 Opt:
@@ -1196,9 +1196,9 @@ LilyFriend:
 CallFriends:
   Name: Chamar os Amigos
   DetailText: Estas |e:cartas alternativas| tem um custo total de 4 ou menos.
-  Description: Escolha 1 entre {Value1} |Companheiros| para adicionar à mão. Ela entra
+  Description: Escolha 1 de {Value1} |Companheiros| para adicionar à mão. Ela entra
     na mão invocada.
-  UpgradedDescription: "Escolha 1 entre {Value1} |Companheiros| para adicionar à mão.\
+  UpgradedDescription: "Escolha 1 de {Value1} |Companheiros| para adicionar à mão.\
     \ Ela entra na mão invocada.\nUma |e:Fada da Luz| é sempre incluída como uma opção\
     \ adicional."
 FreezeToIce:
@@ -1571,7 +1571,7 @@ SanaeMiracle:
 HuiyeMana:
   Name: Conto do Cortador de Bambu
   Description: No começo do turno de {PlayerName}, ganhe {Value1} mana aleatórias.
-    Aumente a quantidade em {Value1} cada turno.
+    Aumente a quantidade em {Value1} por turno.
 SijiCard:
   Name: Julgamento dos Pecados
   Description: Escolha uma carta da mão. Se for uma carta de |Infortúnio| ou Status,
@@ -1743,7 +1743,7 @@ PlayWithWater:
   UpgradedDescription: "Compre {Value1:plural one='% carta' other='% cartas'}\nDescarte\
     \ até 1 carta."
 WManaCard:
-  Name: Resplendor
+  Name: Radiante
   Description: Ganhe {Mana}.
 PrismriverRed:
   ExtraDescription1: "Ganhe {Mana}.\nCompre {Value1:plural one='% carta' other='%\
@@ -1853,10 +1853,10 @@ BailianNingshen:
   Name: Meditação
   UpgradedDescription: "Escolha 1 de {Value1} cartas aleatórias e adicione à sua mão.\
     \ Ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.\n|Estreia|: Adicione\
-    \ 1 |Resplendor| para a mão."
+    \ 1 |Radiante| para a mão."
   ExtraDescription1: "Escolha 1 de {Value1} cartas aleatórias e adicione à sua mão.\
     \ Ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.\n|d:Estreia|:\
-    \ Adicione 1 |Resplendor| para a mão."
+    \ Adicione 1 |Radiante| para a mão."
   Description: Escolha 1 de {Value1} cartas aleatórias e adicione à sua mão. Ela |custa
     temporariamente| {Mana} e tem |Exilar| e |Etéreo|.
 UManaCard:
@@ -2240,20 +2240,30 @@ YouxiangWake:
     cartas de ataque aleatórias'} da pilha de compra na mão.
 PaluxiCurse:
   Name: Rancor Retornado
+  Description: "Cause {Damage} de dano.\nAplique {Value1} de |Fraqueza| e |Vulnerável|.\n\
+    Adicione um |Infortúnio| aleatório para a pilha de descarte. |d:(Não permanecerá\
+    \ no baralho após o combate.)|"
 BlackPoison:
   Name: Dançarina Sombria
+  Description: Sempre que {PlayerName} causar dano de ataque não-bloqueado, aplique
+    também {Value1} de |Veneno|.
 RuowujiCard:
   Description: "Cause {Damage} de dano e aplique {Value1} de |Afogamento| em cada\
     \ inimigo.\nEste |Afogamento| não acumula."
   Name: Ondas de Escala Reversa
 ShirenKunchong:
   Name: Inseto Canibal
+  Description: "Cause {Damage} de dano em cada inimigo.\nSempre que um inimigo ganhar\
+    \ uma |Debuff|, {PlayerName} ganha {Value1} de |Bloqueio|."
 ZoufangWater:
   Name: Fluxo de Águas Limpas de Suwa
   Description: "Cause {Damage} de dano {Value1} vezes.\naumente o dano de {SelfName}\
     \ em {Value2} para cada carta de |Talento| usada neste combate. ({AdditionalDamage})"
 LifeGame:
   Name: Jogo da Vida
+  Description: As cartas adjacentes a {SelfName} |custam temporariamente| {Mana}.
+  UpgradedDescription: As cartas adjacentes a {SelfName} |custam temporariamente|
+    {Mana}. Também |Melhore-as|.
 YachieDefend:
   Name: Carapaça-de-Tartaruga Infernal
   Description: "Previne {Value1:plural one='a próxima % vez' other='as próximas %\
@@ -2261,8 +2271,12 @@ YachieDefend:
     \ inimigo, redirecione o dano a esse inimigo."
 SkyWater:
   Name: Milagre da Água Celestial
+  Description: "Ganhe {Shield} de |Barreira|.\nCompre {Value1:plural one='% carta'\
+    \ other='% cartas'} a mais durante a etapa de compra."
 MedicineGarden:
   Name: Jardim Melancólico
+  Description: "Cada inimigo ganha {Value1} de vida.\nAplique {Value1} de |Veneno|\
+    \ em cada inimigo."
 LimaoAttack:
   Name: Pompokolin da Lua Cheia
   Description: "Cause {Damage} de dano em cada inimigo.\nGanhe {GainMana}.\n|Crescimento|:\
@@ -2273,12 +2287,18 @@ JingyeGraze:
     \ para cada |Desvio| que {PlayerName} tem."
 LigeluCard:
   Name: Noite Luminescente
+  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} <sprite=\"Point\" name=\"\
+    Power\">."
 KisumeAttack:
   Name: Aparição do Balde
+  Description: "Ganhe {Block} de |Bloqueio|.\nCause {Damage} de dano.\nSe {SelfName}\
+    \ foi a primeira carta jogada neste turno, aplique {Value1} de |Marca|."
 ZoufangSnake:
   DetailText: Estas |e:cartas alternativas| ignoram o total de mana e restrição de
     cor.
   Name: Fé do Deus Nativo
+  Description: "Perca {Value1} de vida.\nEscolha 1 de {Value2} cartas de talentos\
+    \ neutros raros aleatórios para adicionar à mão. Ela |custa temporariamente| {Mana}."
 TodayYesterday:
   Name: Gensokyo, Passado e Presente
   Description: "Sempre que {PlayerName} |Desviar| um ataque, ganhe {Value1} de |Poder\
@@ -2286,7 +2306,7 @@ TodayYesterday:
 HatateShot:
   Name: Foto Panorâmica
   Description: "Ganhe {Block} de |Bloqueio|.\nPara cada mana não gasta, aumente o\
-    \ |Bloqueio| de {SelfName} em {Value1}. ({Especial} de |Bloqueio| total)."
+    \ |Bloqueio| de {SelfName} em {Value1}. ({Special} de |Bloqueio| total)."
 MeilingRain:
   Name: Chuva de Cores Vívidas
   Description: "Cause {Damage} de dano em cada inimigo {AttackTimes:plural one='%\
@@ -2302,8 +2322,11 @@ MeilingAbility:
     Ganhe {Value1} de |Poder de Fogo|."
 KanakoWalk:
   Name: A Travessia de Deus
+  Description: (WIP)
 PoisonTeaParty:
   Name: Festa do Chá Duvidosa
+  Description: "{PlayerName} ganha {Value1} de vida e {Value1} de |Veneno|.\nAplique\
+    \ {Value2} de |Veneno|."
 AyaExtraTurn:
   Name: Tempestade Fantástica
   Description: "Termine o turno de {PlayerName}. Jogue um turno extra.\nNo começo\
