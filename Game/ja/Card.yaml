@@ -713,8 +713,9 @@ Bribery:
   Description: "<sprite=\"Point\" name=\"Gold\">{MoneyCost}を払う。\n<color=#4f6e97>龍</color>が手を抜いてくれる。"
   FlavorText: "「飯綱丸様、こちら山吹色のお菓子にござります。」\n「ふふ...お前もワルだなぁ...?」"
 Nightmare:
-  NonbattleDescription: '{SelfName}が手札、山札、捨て札に合計で{Value1}枚存在する場合、{PlayerName}は敗北する。'
-  Description: "{SelfName}が手札、山札、捨て札に合計で{Value1}枚存在する場合、{PlayerName}は敗北する。\n現在：{NightmareCount}枚"
+  NonbattleDescription: '{SelfName}が手札、山札、捨て札に合計で{Value1}枚存在する場合、それらを全て|廃棄|する。その後、{PlayerName}は敗北する。'
+  Description: "{SelfName}が手札、山札、捨て札に合計で{Value1}枚存在する場合、それらを全て|廃棄|する。その後、{PlayerName}は敗北する。\n\
+    現在：{NightmareCount}枚"
   Name: 悪夢
   FlavorText: '...嫌な夢を見た気がする。'
 Regret:
@@ -1237,13 +1238,13 @@ DizangLove:
   Description: "コモンカードをプレイするたび、{PlayerName}が|臨時火力|{Value1}を得る。\n"
 LoyalMaid:
   Name: 忠実なる召使い
-  Description: "{Shield} の|バリア|を得る。\n追加ターンを得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}となる。"
+  Description: "{Shield}|バリア|を得る。\n追加ターンを得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}になる。"
 EvilMaid:
   Name: 悪魔のメイド
   Description: "ライフを{Value1}失う。\n{PlayerName}は次のターン、カードによる全てのダメージが倍となる。"
 SakuyaDio:
   Name: 次は貴様だ！
-  Description: "直接使用された|投げナイフ|は {Value1}層の|ロックオン|を与えるようになる。\n{PlayerName}はターンを終了し，追加ターンを得る。\n\
+  Description: "直接使用された|投げナイフ|は対象に|ロックオン|{Value1}を与える。\n{PlayerName}はターンを終了し，追加ターンを得る。\n\
     その追加ターンはドローフェイズが無くなる代わり、{Value2}枚の|投げナイフ|が手札に加えられる。"
   FlavorText: 次は貴様だ！
 BrokenTimeline:
@@ -1265,8 +1266,8 @@ StopTime:
 PerfectServant:
   Name: 完全で瀟洒な従者
   Description: "|<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
-    W\">につき|：次のターンのドローフェイズ終了時、手札の全てのカードのマナコストをランダムに1つ減らす。\n|<sprite=\"ManaSprite\"\
-    \ name=\"U\">につき|：次のターン開始時に{Mana}を得て、カードを追加で1枚引く。"
+    W\">につき|：次のターンのドローフェイズ終了時、手札の全てのカードのマナコストをランダムに{Value1}つ減らす。\n|<sprite=\"ManaSprite\"\
+    \ name=\"U\">につき|：次のターン開始時に{Mana}を得て、カードを追加で{Value2}枚引く。"
 SakuyaSpeedup:
   FlavorText: 今、あなたの後ろに居るの。
   Name: タイムアクセル
@@ -1364,7 +1365,7 @@ CoolBreeze:
   Description: "{Block}|ブロック|を得る。\nいずれかの敵に|冷気|が付与されている場合、手札のカードを{Value1}枚|アップグレード|する。"
 FrostGarden:
   Name: 冷霧の花園
-  UpgradedDescription: "敵全体に|冷気|を与える。\n次のターン開始時これを再度行う。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
+  UpgradedDescription: "敵全体に|冷気|を与える。\n次のターン開始時、この効果を再度適用する。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
   Description: "敵全体に|冷気|を与える。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
 ZhenmiaowanAttack:
   Name: 一寸法師の末裔
@@ -1615,7 +1616,7 @@ MeilingBlock:
   Name: 紅内勁
   Description: "{Block}|ブロック|を得る。\n{Shield}|バリア|を得る。\n|火力|の効果は{SelfName}に適用される。"
 RemiliaJizao:
-  Description: "カードを{Value1}枚引く。\nこのターン、追加でカードを引くことができない。"
+  Description: "カードを{Value1}枚引く。\nこのターンの間、追加でカードを引くことができない。"
   Name: 焦燥
 LanCard:
   Description: "{Value1}枚のランダムなアンコモンカードから１枚を選び、手札に加える。\nそのカードの|臨時コスト|を{Mana}にして、|廃棄|と|虚無|を与える。"
@@ -1707,7 +1708,7 @@ PlayWithWaste:
   Description: "ランダムな{Value1}枚のレアでない|道具|カードから1枚を選び、手札に加える。\nそれは|複製|と|消耗品【1】|を持つ。"
   Name: ゴミ漁り
 ForeverCool:
-  Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|1を得る。"
+  Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Value1}を得る。"
   Name: 永遠に清涼なる幻想四季
 Lunatic:
   Description: "{PlayerName}のターン終了時、 {SelfName}が手札、山札、捨て札に合計で{Value1}枚以上ある場合、すべての{SelfName}を|廃棄|して、ライフを{Value2}失う。\n\
@@ -1844,16 +1845,12 @@ TriggerAllPassive:
 GainDollSlot:
   Description: (WIP)
   Name: 人形維持上限を増加
-OtherBlock:
-  Name: 火種
 ShuimuBlock:
   Description: "{Block}|ブロック|を得る。\n{SelfName}のブロック値を永久に{Value1}増加させる。"
   Name: 石積み
 KanakoWalk:
   Description: "(WIP)"
   Name: 神が歩かれた御神渡り
-OtherSkill:
-  Name: なりすまし
 RemiliaFate:
   Description: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から３のカードを1枚ずつ手札に加える。"
   UpgradedDescription: "手札を最大{Value1}枚まで捨てる。\n山札からランダムに選ばれたマナ総量が１から５のカードを1枚ずつ手札に加える。"
@@ -2092,3 +2089,5 @@ JinziSuperExtraTurn:
   Name: 世紀のダブルエスパー
   Description: "{PlayerName}が|通常ターン|を終了する度、|追加ターン|を開始する。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。"
   DetailText: "{SelfName}の効果による追加ターンは他の効果で得た追加ターンより優先して発生する。\n{SelfName}をプレイした後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
+Naodiantu:
+  Name: 脳波
