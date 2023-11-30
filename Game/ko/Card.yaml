@@ -773,9 +773,10 @@ LoveLetter:
   Name: 러브레터
 Nightmare:
   Name: 악몽
-  Description: "손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 패배합니다.\n현재\
-    \ {NightmareCount}장의 {SelfName}이 있습니다."
-  NonbattleDescription: 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 패배합니다.
+  Description: "손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 |소멸|시킨 뒤 게임에서\
+    \ 패배합니다.\n현재 {NightmareCount}장의 {SelfName}이 있습니다."
+  NonbattleDescription: 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장의 {SelfName}이 있을 시 |소멸|시킨
+    뒤 게임에서 패배합니다.
 Bribery:
   Description: "{MoneyCost}<sprite=\"Point\" name=\"Gold\">를 지불합니다.\n<color=#4f6e97>이즈나마루\
     \ 메구무</color>가 약간 봐줍니다."
@@ -1148,7 +1149,7 @@ TimeLord:
 SakuyaDio:
   Name: 다음은 너다!
   Description: "|단검|을 사용할 때, 적에게 |록온|을 {Value1} 줍니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n\
-    해당 추가 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
+    해당 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
 ShengquanZaiwo:
   Name: 확실한 승산
   Description: '{Mana}를 얻습니다.'
@@ -1904,9 +1905,6 @@ MoonTipsBag:
 MoonTipsAttack:
   Description: 뽑을 카드 더미에 |사격|을 {Value1}장 섞어넣습니다. 해당 카드는 |보충|을 갖습니다.
   Name: 추가 탄막
-OtherBlock:
-  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다. {PlayerName}의 주 색상이 아닌 카드를\
-    \ 우선시합니다."
 OtherSkill:
   Description: "카드를 {Value1}장 뽑습니다.\n{GainMana}를 얻습니다.\n{PlayerName}의 주 색상이 아닌 카드를\
     \ 뽑을 때마다 {SelfName}은 추가로 <sprite=\"ManaSprite\" name=\"C\">를 제공합니다."
@@ -2345,3 +2343,18 @@ JinziSuperExtraTurn:
   Name: 세기의 더블 에스퍼
   Description: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며, 카드는\
     \ {Value1}장만 사용할 수 있게 됩니다."
+DebugAddRandomCards:
+  Name: 무작위 카드 추가
+  Description: '테스트 카드: 무작위 카드를 뽑을/버린 카드 더미에 {Value1}장씩 넣습니다.'
+DebugExileDrawDiscard:
+  Name: 카드 더미 소멸
+  Description: '테스트 카드: 뽑을/버린 카드 더미를 전부 소멸시킵니다.'
+DebugAddRandomCardsSlow:
+  Name: 무작위 카드 추가 (천천히)
+  Description: '테스트 카드: 무작위 카드를 뽑을/버린 카드 더미에 {Value1}장씩 천천히 넣습니다.'
+DebugAddDeckCards:
+  Name: 덱에 카드 추가
+  Description: '테스트 카드: 무작위 카드를 덱에 {Value1}장 넣습니다.'
+DebugAddHandCards:
+  Name: 손 전부 버리고 카드 추가
+  Description: '테스트 카드: 손의 모든 카드를 소멸시킵니다. 그 후 무작위 {Value1}장을 가져옵니다.'

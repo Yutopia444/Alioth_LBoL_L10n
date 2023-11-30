@@ -82,7 +82,7 @@ Burst:
 TurnStartDontLoseBlock:
   Name: 방어 보존
   Description: 다음 턴이 시작해도 |방어|를 잃지 않습니다. {Level}턴 지속됩니다.
-  Brief: 다음 턴이 시작해도 |방어|를 잃지 않습니다. 어느정도 지속됩니다.
+  Brief: 다음 턴이 시작해도 |방어|를 잃지 않습니다. 몇 턴 간 지속됩니다.
 Concentration:
   Description: 다음 {Level}번의 |과충전| 효과 발동 시에는 |충전|을 소모하지 않습니다.
   Brief: 다음 몇 번의 |과충전| 효과 발동 시에는 |충전|을 소모하지 않습니다.
@@ -162,7 +162,7 @@ NextTurnGainShield:
 GuangxueMicai:
   Name: 광학미채
   Description: 받는 피해가 반감됩니다. {Duration}턴 지속됩니다.
-  Brief: 받는 피해가 반감됩니다. 약간 지속됩니다.
+  Brief: 받는 피해가 반감됩니다. 몇 턴 간 지속됩니다.
 DroneBlock:
   Name: 방어 매트릭스
   Description: 턴 종료 시 |방어|를 {Level} 얻습니다.
@@ -220,7 +220,7 @@ LimitedDamage:
 Invincible:
   Name: 천의무봉
   Description: 받는 피해가 무조건 1이 됩니다. {Duration}턴 지속됩니다.
-  Brief: 받는 피해가 무조건 1이 됩니다.
+  Brief: 받는 피해가 무조건 1이 됩니다. 몇 턴 간 지속됩니다.
 EnemyDayaojing:
   Name: 대요정의 지원
   Description: '{OwnerName}의 턴 종료 시 체력이 {Level} 회복됩니다.'
@@ -508,7 +508,7 @@ EvilMaidSe:
   Description: 다음 {Level}턴 간 공격 피해가 두 배가 됩니다.
 EvilMaidDoubleAttack:
   Description: '{PlayerName}의 공격이 두 배의 피해를 가합니다. {Duration}턴 지속됩니다.'
-  Brief: '{PlayerName}의 공격이 두 배의 피해를 가합니다. 잠시 지속됩니다.'
+  Brief: '{PlayerName}의 공격이 두 배의 피해를 가합니다. 몇 턴 간 지속됩니다.'
   Name: 악마의 힘
 PerfectServantUSe:
   Description: 다음 턴 시작 시 {Mana}를 {Level}개 얻고 카드를 {Level}장 더 뽑습니다.
@@ -539,8 +539,8 @@ DangerousMagicianSe:
   Name: 위험한 마술사
   Description: '|단검|이 사용될 때마다 |시간 펄스|를 {Level} 얻습니다.'
 NextTurnColdAll:
-  Brief: 다음 턴 시작 시 모든 적에게 |빙결|을 가합니다. 어느정도 지속됩니다.
-  Description: 다음 턴 시작 시 모든 적에게 |빙결|을 가합니다. {Level}턴 지속됩니다.
+  Brief: 다음 턴 시작 시 모든 적에게 |빙결|을 가합니다.
+  Description: 다음 턴 시작 시 모든 적에게 |빙결|을 {Level}번 가합니다.
   Name: 링거링 콜드
 DrawPhaseAddKnife:
   Description: 내 턴 시작 시 카드를 뽑지 않고 |단검|을 {Limit}장 얻습니다.
@@ -902,3 +902,17 @@ SuperExtraTurn:
     \ 사용할 수 있게 됩니다."
   ExtraDescription: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며,\
     \ 카드는 {Level}장만 사용할 수 있게 됩니다.\n앞으로 {Count}장 남았습니다.\n"
+BossAct:
+  Name: 태세 전환
+  Description: '{OwnerName}가 피해를 {Count} 입을 시 즉시 행동을 합니다. {PlayerName}의 턴은 종료되지 않습니다.'
+  Brief: '{OwnerName}가 피해를 일정량 입을 시 즉시 행동을 합니다. {PlayerName}의 턴은 종료되지 않습니다.'
+JunkoLily:
+  Name: 살의의 백합
+  Description: '{PlayerName}가 카드를 낼 시 피해를 {Level} 입습니다.'
+JunkoColor:
+  Name: 넘쳐나는 허물과 더러움
+  Description: '{PlayerName}의 오염도: 옅음.'
+  ExtraDescription: "{PlayerName}의 오염도: 짙음.\n{JunkoName}가 화력을 얻고, 「지상의 더러움의 순화」가 더욱\
+    \ 강력해집니다."
+  ExtraDescription2: "{PlayerName}의 오염도: 참을 수 없음.\n{JunkoName}가 화력을 얻고, 「지상의 더러움의\
+    \ 순화」가 더욱 강력해집니다."
