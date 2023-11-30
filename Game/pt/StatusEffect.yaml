@@ -17,7 +17,7 @@ GuangxueMicai:
   Name: Camuflagem Ótica
   Description: "{OwnerName} sofre metade do dano de ataques {Duration:plural one='até\
     \ ao final do turno' other='durante os próximos % turnos'}."
-  Brief: '{OwnerName} sofre metade do dano de ataques.'
+  Brief: '{OwnerName} sofre metade do dano por um certo número de turnos.'
 NextTurnGainBlock:
   Brief: No início do próximo turno de {OwnerName}, ganhe algum |Bloqueio|.
   Name: Bloqueio Iminente
@@ -152,11 +152,12 @@ LimitedDamage:
 Invincible:
   Description: "{OwnerName} não irá perder mais do que 1 ponto de vida de cada vez\
     \ {Duration:plural one='até ao final do turno' other='durante os próximos % turnos'}."
-  Brief: '{OwnerName} não irá perder mais do que 1 ponto de vida de cada vez.'
+  Brief: '{OwnerName} não irá perder mais do que 1 ponto de vida de cada vez por uma
+    quantidade de turnos.'
   Name: Impecável
 TurnStartDontLoseBlock:
   Name: Reter Bloqueio
-  Brief: '{OwnerName} não perde o |Bloqueio| no início do turno.'
+  Brief: '{OwnerName} não perde o |Bloqueio| por um certo número de turnos.'
   Description: "{OwnerName} não perde o |Bloqueio| no início {Level:plural one='do\
     \ próximo turno' other='dos próximos % turnos'}."
 Amulet:
@@ -644,8 +645,8 @@ PotionBaseDamageSe:
   Brief: '|Poções Instáveis| causam mais dano.'
 TimeAuraSe:
   Name: Pulso Temporal
-  Brief: No final do turno de {PlayerName}, cause dano a cada inimigo. Perde cargas
-    para cada inimigo acertado.
+  Brief: "No final do turno de {PlayerName}, cause dano a cada inimigo.\nPerde cargas\
+    \ para cada inimigo acertado."
   Description: "No final do turno de {PlayerName}, cause {Level} de dano a todos os\
     \ inimigos.\nPerde cargas para cada inimigo acertado."
 StopTimeSe:
@@ -1136,3 +1137,18 @@ ShirenKunchongSe:
   Description: Sempre que {OwnerName} ganhar um |Debuff|, {PlayerName} ganha {Level}
     de |Block|.
   Brief: Sempre que {OwnerName} ganhar um |Debuff|, {PlayerName} ganha |Block|.
+BossAct:
+  Description: Após {OwnerName} tomar {Count} de dano, imediatamente aja uma vez,
+    sem terminar o turno de {PlayerName}.
+  Brief: Após {OwnerName} tomar uma quantidade de dano, imediatamente aja uma vez,
+    sem terminar o turno de {PlayerName}.
+JunkoLily:
+  Name: Lírios de intenções assassinas
+  Description: Sempre que {PlayerName} jogar uma carta, tome {Level} de dano.
+JunkoColor:
+  Name: Manchas Transbordantes
+  Description: 'Impurezas de {PlayerName}: Menor'
+  ExtraDescription: "Impurezas de {PlayerName}: Severo\n{JunkoName} ganha Poder de\
+    \ Fogo, e a ação \"Limpeza de Impureza Terrestre\" se torna mais forte."
+  ExtraDescription2: "Impurezas de {PlayerName}: Intolerável\n{JunkoName} ganha Poder\
+    \ de Fogo, e a ação \"Limpeza de Impureza Terrestre\" se torna mais forte."
