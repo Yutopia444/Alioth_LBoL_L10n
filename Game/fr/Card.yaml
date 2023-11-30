@@ -1809,12 +1809,12 @@ Bribery:
     \ ? L'observation des humains est fascinante~\""
 Nightmare:
   Description: "Lorsqu'il y a un total de {Value1} {SelfName}{Value1:plural one=''\
-    \ other='|e:s|'} dans la main, la pioche et la pile de défausse réunies, {PlayerName}\
-    \ perd la partie.\nIl y a actuellement un total de {NightmareCount}."
+    \ other='|e:s|'} dans la main, la pioche et la pile de défausse réunies, |exilez|-les.\
+    \ Puis, {PlayerName} perd la partie.\nIl y a actuellement un total de {NightmareCount}."
   Name: Cauchemar
   NonbattleDescription: Lorsqu'il y a un total de {Value1} {SelfName}{Value1:plural
     one='' other='|e:s|'} dans la main, la pioche et la pile de défausse réunies,
-    {PlayerName} perd la partie.
+    |exilez|-les. Puis, {PlayerName} perd la partie.
   FlavorText: Je me suis réveillé et je ne me souvenais plus des détails.
 BefuddledLife:
   Name: Embrouille
@@ -2616,9 +2616,9 @@ ColdChain:
     one='Elle gagne' other='Elles gagnent'} |Retenue|.
 FreezeRiver:
   Name: Glace Flottante
-  Description: Ajoutez la carte du bas de la pioche à votre main et elle |coûte temporairement|
-    {Mana}.
-  UpgradedDescription: Ajoutez la carte du bas de la pioche à votre main et |changez
+  Description: Placez la carte du bas de la pioche dans votre main et elle |coûte
+    temporairement| {Mana}.
+  UpgradedDescription: Placez la carte du bas de la pioche dans votre main et |changez
     son coût| en {Mana}.
 FairyAllOut:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
@@ -2685,8 +2685,6 @@ CirnoFire:
 DoubleMana:
   Name: Réveil de la Fée
   Description: "Doublez votre mana actuel.\n|Découvert| {Value1}."
-OtherSkill:
-  Name: Imposteur
 YonglinUpgrade:
   Description: "Gagnez {Value2} point{Value2:plural one='' other='s'} de vie.\nLorsque\
     \ {PlayerName} débute son tour, |améliorez| {Value1} carte{Value1:plural one='\
@@ -2707,10 +2705,6 @@ MoonTipsDefense:
 MoonTipsHeal:
   Name: Astuces Santé
   Description: Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.
-OtherBlock:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
-    \ {Value1} carte{Value1:plural one='' other='s'} en donnant la priorité aux cartes\
-    \ d'autres personnages que {PlayerName}."
 DayaojingFriend:
   Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} d'attaque\
     \ à un ennemi aléatoire."
@@ -3311,3 +3305,22 @@ JinziSuperExtraTurn:
   DetailText: "Le tour supplémentaire de {SelfName} a lieu avant tout autre tour supplémentaire.\n\
     Après avoir joué {SelfName}, vous pouvez survoler les icônes d'état que {PlayerName}\
     \ possède pour vérifier les détails du tour en cours."
+DebugExileDrawDiscard:
+  Name: Efface la Pile de Cartes
+  Description: 'Carte de test : Détruit toutes les piles de cartes tirées/rejetées.'
+DebugAddRandomCardsSlow:
+  Name: Ajouter des cartes aléatoires (lentement)
+  Description: "Carte de test : ajoutez lentement {Value1} carte{Value1:plural one='\
+    \ aléatoire' other='s aléatoires'} à la pile de pioche/défausse."
+DebugAddDeckCards:
+  Name: Ajouter des cartes au deck
+  Description: "Carte de test : ajoutez {Value1} carte{Value1:plural one=' aléatoire'\
+    \ other='s aléatoires'} à votre deck."
+DebugAddHandCards:
+  Name: Défaussez toute votre main et ajoutez des cartes
+  Description: "Carte de test : détruisez toutes les cartes de votre main. Prenez\
+    \ ensuite une {Value1} carte{Value1:plural one='' other='s'} au hasard."
+DebugAddRandomCards:
+  Name: Ajouter des Cartes Aléatoires
+  Description: "Carte de test : ajoutez {Value1} carte{Value1:plural one=' aléatoire'\
+    \ other='s aléatoires'} à la pile de pioche/défausse."

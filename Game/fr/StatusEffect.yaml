@@ -81,7 +81,8 @@ Invincible:
   Description: "{OwnerName} ne perdra pas plus de 1 point de vie à la fois {Duration:plural\
     \ one=\"jusqu'à la fin du tour\" other=\"pendant % tours\"}."
   Name: Perfection
-  Brief: '{OwnerName} ne perdra pas plus de 1 point de vie à la fois.'
+  Brief: '{OwnerName} ne perdra pas plus de 1 point de vie par dégâts subis pendant
+    un certain nombre de tours.'
 AmuletForCard:
   Description: Annulez {Level:plural one='la prochaine carte Statut qui est ajoutée'
     other='les % prochaines cartes Statut qui sont ajoutées'} (|Exilez|-{Level:plural
@@ -121,7 +122,8 @@ LimitedDamage:
     subir {Count} dégâts ce tour-ci.'
 TurnStartDontLoseBlock:
   Name: Conserver Bouclier
-  Brief: '{OwnerName} ne perd pas de |Bouclier| au début de chaque tour.'
+  Brief: '{OwnerName} ne perd pas de |Bouclier| au début du tour un certain nombre
+    de fois.'
   Description: "{OwnerName} ne perd pas de |Bouclier| au début {Level:plural one='du\
     \ prochain tour' other='des % prochains tours'}."
 Amulet:
@@ -281,7 +283,8 @@ GuangxueMicai:
   Description: "{OwnerName} subit la moitié des dégâts des attaques {Duration:plural\
     \ one=\"jusqu'à la fin du tour\" other=\"pendant % tours\"}."
   Name: Camouflage Optique
-  Brief: '{OwnerName} subit moitié moins de dégâts des attaques.'
+  Brief: '{OwnerName} subit moitié moins de dégâts des attaques pendant un certain
+    nombre de tours.'
 Fengyin:
   Description: "{PlayerName} ne peut pas jouer de cartes d'attaque {Duration:plural\
     \ one=\"jusqu'à la fin du tour\" other=\"pendant % tours\"}."
@@ -486,9 +489,9 @@ PowerByDefense:
     |Puissance{Level:plural one='' other='s'}|.
 SijiZui:
   Name: Jugement du Bien et du Mal
-  Description: 'Péchés de {PlayerName} : mineurs.'
-  ExtraDescription: 'Péchés de {PlayerName} : moyens.'
-  ExtraDescription2: 'Péchés de {PlayerName} : majeurs.'
+  Description: 'Gravité des péchés de {PlayerName} : mineurs.'
+  ExtraDescription: 'Gravité des péchés de {PlayerName} : moyens.'
+  ExtraDescription2: 'Gravité des péchés de {PlayerName} : majeurs.'
 MirrorImage:
   Name: Image Miroir
   Description: Un reflet de {OwnerName}.
@@ -582,7 +585,8 @@ EvilMaidDoubleAttack:
   Name: Servante du Diable
   Description: "Double les dégâts d'attaque de {PlayerName} (reste : {Duration} tour{Duration:plural\
     \ one='' other='s'})."
-  Brief: Doublez les dégâts d'attaque de {PlayerName}.
+  Brief: Doublez les dégâts d'attaque de {PlayerName} pendant un certain nombre de
+    tours.
 MihuanJackSe:
   Name: Jack the Ludo Bile
   Description: Au début du tour de {PlayerName}, gagnez {Level} {Level:plural one='|Impulsion
@@ -1232,3 +1236,22 @@ ClockCorpseSe:
   ExtraDescription: "Les cartes ne peuvent pas être piochées en dehors de l’étape\
     \ de pioche ce tour-ci.\n{SelfName} est inactif et ne sera supprimé qu'après le\
     \ tour où il sera résolu."
+BossAct:
+  Description: Après que {OwnerName} ait subi {Count} dégâts, agit immédiatement une
+    fois, sans mettre fin au tour de {PlayerName}.
+  Name: Étape de Transition
+  Brief: Après que {OwnerName} ait subi un certain nombre de dégâts, agit immédiatement
+    une fois, sans mettre fin au tour de {PlayerName}.
+JunkoLily:
+  Name: Lys d'Intention Meurtrière
+  Description: Chaque fois que {PlayerName} joue une carte, subissez {Level} dégât{Level:plural
+    one='' other='s'}.
+JunkoColor:
+  Name: Imperfections Débordantes
+  Description: "Niveau d'impureté de {PlayerName} : Mineur."
+  ExtraDescription: "Niveau d'impureté de {PlayerName} : Sévère.\n{JunkoName} gagne\
+    \ en puissance et l'action \"Raffinement des Impuretés Terrestres\" devient plus\
+    \ puissante."
+  ExtraDescription2: "Niveau d'impureté de {PlayerName} : Intolérable.\n{JunkoName}\
+    \ gagne en puissance et l'action \"Raffinement des Impuretés Terrestres\" devient\
+    \ plus puissante."
