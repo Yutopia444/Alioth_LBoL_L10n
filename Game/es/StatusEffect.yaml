@@ -80,7 +80,8 @@ Invincible:
   Name: Perfección
   Description: "{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño {Duration:plural\
     \ one='hasta el final de su turno' other='durante los próximos % turnos'}."
-  Brief: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
+  Brief: '{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño durante
+    una cierta cantidad de turnos.'
 TurnStartDontLoseBlock:
   Name: Bloqueo Conservado
   Brief: '{OwnerName} no pierde |Bloqueo| al inicio de cada turno.'
@@ -315,9 +316,9 @@ PowerByDefense:
     de |Poder|.
 SijiZui:
   Name: Juicio de lo Correcto y lo Incorrecto
-  ExtraDescription: 'Pecados de {PlayerName}: Promedio.'
-  Description: 'Pecados de {PlayerName}: Menor.'
-  ExtraDescription2: 'Pecados de {PlayerName}: Mayor.'
+  ExtraDescription: 'Gravedad de los pecados de {PlayerName}: Promedio.'
+  Description: 'Gravedad de los pecados de {PlayerName}: Menor.'
+  ExtraDescription2: 'Gravedad de los pecados de {PlayerName}: Mayor.'
 MirrorImage:
   Name: Imagen del Espejo
   Description: Un reflejo de {OwnerName}.
@@ -1158,3 +1159,20 @@ YouxiangWakeSe:
     other='%º'} turno de {PlayerName}, {Count:plural one='' other='a partir de ahora'},
     gana {Level} de |Poder| y coloca {Limit} carta{Limit:plural one='' other='s'}
     de ataque aleatorio de la pila de robo hacia la mano.
+BossAct:
+  Description: Después de que {OwnerName} reciba {Count} de daño, realiza una acción
+    inmediata, sin finalizar el turno de {PlayerName}.
+  Brief: Después de que {OwnerName} reciba una cantidad de daño, realiza una acción
+    inmediata, sin finalizar el turno de {PlayerName}.
+JunkoLily:
+  Description: Siempre que {PlayerName} juegue una carta, recibe {Level} de daño .
+  Name: Lirios de Intenciones Asesinas
+JunkoColor:
+  Description: 'Nivel de impureza de {PlayerName}: Menor.'
+  Name: Manchas Desbordantes
+  ExtraDescription: "Nivel de impureza de {PlayerName}: Severo.\n{JunkoName} gana\
+    \ Poder y se vuelve más poderosa la acción \"Refinamiento de Impurezas Terrestres\"\
+    ."
+  ExtraDescription2: "Nivel de impureza de {PlayerName}: Intolerable.\n{JunkoName}\
+    \ gana Poder y se vuelve más poderosa la acción \"Refinamiento de Impurezas Terrestres\"\
+    ."
