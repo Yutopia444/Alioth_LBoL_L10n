@@ -301,14 +301,15 @@ LouguanJianSe:
   Name: Roukanken
 KokoroXi:
   Name: Felicidade
-  Description: No final do turno de {OwnerName}, invoque um |Menreiki|.
+  Description: Quando {OwnerName} agir, invoque um |Menreiki|. (Já ocorreu)
 KokoroNu:
   Name: Ira
-  Description: No final do turno de {OwnerName}, todos os inimigos ganham {Level}
-    de |Poder de Fogo|.
+  Description: Quando {OwnerName} agir, todos os inimigos ganham {Level} de |Poder
+    de Fogo|. (Já ocorreu)
 KokoroYou:
   Name: Tristeza
-  Description: No final do turno de {OwnerName}, {PlayerName} ganha {Level} de |Fraqueza|.
+  Description: Quando {OwnerName} agir, {PlayerName} ganha {Level} de |Fraqueza|.
+    (Já ocorreu)
 LongLight:
   Name: Tripé Resplandecente
   Description: '{OwnerName} brilha como uma estrela! Ela causa mais dano e suas cartas
@@ -560,7 +561,7 @@ EvilMaidSe:
 EvilMaidDoubleAttack:
   Description: "Dobre o dano de ataque de {PlayerName} (restam: {Duration:plural one='%\
     \ turno' other='% turnos'})."
-  Brief: Dobre o dano de ataque de {PlayerName}.
+  Brief: O dano de ataque de {PlayerName} é dobrado por um certo número de turnos.
   Name: Empregada do Diabo
 AutoKnifeSe:
   Brief: Todas as |Facas de arremesso| tem |Auto Exílio|.
@@ -647,7 +648,7 @@ TimeAuraSe:
   Brief: "No final do turno de {PlayerName}, cause dano a cada inimigo.\nPerde cargas\
     \ para cada inimigo acertado."
   Description: "No final do turno de {PlayerName}, cause {Level} de dano a todos os\
-    \ inimigos.\nPerde cargas para cada inimigo acertado."
+    \ inimigos.\nPerde um nível para cada inimigo acertado desta forma."
 StopTimeSe:
   Name: Tempo Congelado
   Description: Quando o turno de {PlayerName} terminar, {Level} de mana aleatória
@@ -708,7 +709,7 @@ RainbowMarketSe:
   Description: Sempre que uma carta for |Exilada|, adicione {Level} {Level:plural
     one='carta aleatória' other='cartas aleatórias'} à mão.
 KokoroDanceSe:
-  Name: Noh das Trevas
+  Name: Dança das Máscaras Vazias
   Brief: Quando o inimigo ganha efeitos negativos, {PlayerName} causa dano a ele.
   Description: Sempre que um inimigo recebe um |Debuff|, {PlayerName} causa {Level}
     de dano a ele.
@@ -1141,9 +1142,11 @@ BossAct:
     sem terminar o turno de {PlayerName}.
   Brief: Após {OwnerName} tomar uma quantidade de dano, imediatamente aja uma vez,
     sem terminar o turno de {PlayerName}.
+  Name: Transição de Fase
 JunkoLily:
   Name: Lírios de intenções assassinas
-  Description: Sempre que {PlayerName} jogar uma carta, tome {Level} de dano.
+  Description: Sempre que |Luz Purificante| ser acionada, {PlayerName} perde {Level}
+    de vida.
 JunkoColor:
   Name: Manchas Transbordantes
   Description: 'Impurezas de {PlayerName}: Menor'
@@ -1151,3 +1154,18 @@ JunkoColor:
     \ Fogo, e a ação \"Limpeza de Impureza Terrestre\" se torna mais forte."
   ExtraDescription2: "Impurezas de {PlayerName}: Intolerável\n{JunkoName} ganha Poder\
     \ de Fogo, e a ação \"Limpeza de Impureza Terrestre\" se torna mais forte."
+KokoroRenzhen:
+  Name: Sério
+  Description: Quando {OwnerName} agir, ela perde todas as |Emoções Obscuras| e causa
+    {Level} a mais dano em {PlayerName} para cada 1 |Emoção Obscura| perdida desta
+    forma. (Já ocorreu)
+KokoroDarkPower:
+  Name: Coletar Emoções Obscuras
+  Description: "{OwnerName} vai causar dano adicional em {PlayerName} com seu próximo\
+    \ |SpellCard|.\nIsso aumenta quando {PlayerName} ganha um debuff."
+TianziRockSe:
+  Name: Impenetrável!
+  Description: Sempre que {OwnerName} receber um dano de ataque, reduza-o em {Level}.
+  Brief: Sempre que {OwnerName} receber um dano de ataque, reduza-o.
+  ExtraDescription: "Sempre que {OwnerName} receber um dano de ataque, reduza-o em\
+    \ {Level}.\n{OwnerName} não pode ser aplicado com |Marca|."
