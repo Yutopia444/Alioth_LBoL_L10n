@@ -67,7 +67,7 @@ Graze:
     \ o al ser atacada."
 ExtraTurn:
   Name: Turno Extra
-  Brief: Al terminar su turno, {OwnerName} obtiene otro turno.
+  Brief: Después de que se termine el turno de {OwnerName}, toma otro turno.
   Description: "{OwnerName} obtendrá {Level:plural one='% turno extra' other='% turnos\
     \ extras'} después de este turno."
 LimitedDamage:
@@ -157,11 +157,11 @@ DroneBlock:
   Brief: Al final del turno de {OwnerName}, gana |Bloqueo|.
 MaoyuBlock:
   Name: Mullida
-  Description: '{OwnerName} obtiene {Level} de |Bloqueo| al ser atacada.'
+  Description: '{OwnerName} obtiene {Level} de |Bloqueo| después de ser atacada.'
 Servant:
   Name: Invocación
-  Description: "Cuando el invocador es vencido, todas sus invocaciones son vencidas\
-    \ también.\nNo desencadena efectos de muerte."
+  Description: "Después de que la invocadora es derrotada, todas sus invocaciones\
+    \ también son derrotadas.\nNo desencadena efectos de muerte."
 DeathExplodeNotCount:
   Name: Balas Vengativas
   Description: "Inflige {Level} de daño a {PlayerName} cuando {OwnerName} es vencida.\n\
@@ -265,8 +265,8 @@ DeathPoison:
   Description: "Cuando {OwnerName} es derrotado, {PlayerName} recibe {Level} de |Veneno|."
 LouguanJianSe:
   Name: Roukanken
-  Description: Después de que {OwnerName} inflija daño de ataque, aplica {Level} |Marcado|
-    al objetivo
+  Description: Después de que {OwnerName} inflige daño por un ataque, aplica {Level}
+    de |Marcado{Level:plural one='' other='s'}| al objetivo
 RockHard:
   Name: ¡Roca Dura!
   Description: '{OwnerName} recibe {Level} menos de daño de los ataques no bloqueados.'
@@ -276,11 +276,11 @@ RockHardAura:
   Name: Protección de Piedra Angular
 KokoroXi:
   Name: Alegría
-  Description: Cuando {OwnerName} actúe, invoca un |Menreiki|. (Ya ha ocurrido)
+  Description: Después de que {OwnerName} actúe, invoca un |Menreiki|. (Ya ha ocurrido)
 KokoroNu:
   Name: Ira
-  Description: Cuando {OwnerName} actúa, todos los enemigos obtienen {Level} de |Poder|.
-    (Ya ha ocurrido)
+  Description: Después de que {OwnerName} actúa, todos los enemigos ganan {Level}
+    de |Poder|. (Ya ha ocurrido)
 LongLight:
   Name: Trípode Brillante
   Description: ¡{OwnerName} brilla como una estrella! Hace más daño y sus cartas de
@@ -290,8 +290,8 @@ YuyukoDeath:
   Description: "Al final del turno de {OwnerName}, pierde {Level} vida.\n{OwnerName}\
     \ no puede recuperar vida."
 KokoroYou:
-  Description: Cuando {OwnerName} actúa, {PlayerName} gana {Level} de |Débil|. (Ya
-    ha ocurrido)
+  Description: Después de que {OwnerName} actúa, {PlayerName} gana {Level} de |Débil|.
+    (Ya ha ocurrido)
   Name: Tristeza
 LongEscape:
   Name: Facilitar
@@ -598,8 +598,8 @@ MihuanJackSe:
   Brief: Al comienzo del turno de {PlayerName}, gana |Pulso Temporal|.
 SilverBladeSe:
   Name: Dimensión Plateada
-  Description: Cada vez que se activa una carta de ataque, gana {Level} de |Barrera|.
-  Brief: Cada vez que se activa una carta de ataque, gana algo de |Barrera|.
+  Description: Después de activar una carta de ataque, gana {Level} de |Barrera|.
+  Brief: Después de activar una carta de ataque, gana algo de |Barrera|.
 SakuyaKillerSe:
   Description: Al final del turno de {PlayerName} y siempre que un enemigo sea derrotado,
     agrega |{Level:plural one='% Cuchillo Arrojadizo' other='% Cuchillos Arrojadizos'}|
@@ -628,7 +628,8 @@ AutoKnifeSe:
   Brief: Todos los |Cuchillos Arrojadizos| tienen |Auto-Exilio|.
 KnifeWithLockedOn:
   Name: ¡Tu eres el Siguiente!
-  Description: '|Cuchillos Arrojadizos| aplica {level} |Marcado| cuando se juega.'
+  Description: '|Cuchillos Arrojadizos| aplica {Level} de |Marcado{Level:plural one=''''
+    other=''s''}| cuando se juega.'
   Brief: '|Cuchillos Arrojadizos| aplican algunos |Marcados| cuando se juega.'
 NextTurnLoseGame:
   Name: Perder en el Próximo Turno
@@ -764,8 +765,8 @@ RangziFanshuSe:
   Name: Dulce Dulce Patata
 DizangLoveSe:
   Name: Bodhi Instantáneo
-  Description: Cada vez que se juega una carta común, {OwnerName} gana {Level} de
-    |Poder Temporal|.
+  Description: Después de jugar una carta común, {OwnerName} gana {Level} de |Poder
+    Temporal|.
   Brief: Después de jugar una carta común, {OwnerName} gana |Poder Temporal|.
 ModuoluoFireSe:
   Name: Fuego de Ena
@@ -861,11 +862,11 @@ IceVulnerable:
     \ pierde la |Congelación Profunda|."
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
-  Brief: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una |Compañera|\
-    \ se activa, aplica |Frío| a enemigos aleatorios.\nCada vez que un enemigo gana\
-    \ |Frío|, las |Compañeras| aleatorias en la mano ganan |Influencia|."
-  Description: "Siempre que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de\
-    \ una |Compañera| se activa, aplica |Frío| a {Level} enemigo{Level:plural one='\
+  Brief: "Después de que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una\
+    \ |Compañera| se activa, aplica |Frío| a enemigos aleatorios.\nCada vez que un\
+    \ enemigo gana |Frío|, las |Compañeras| aleatorias en la mano ganan |Influencia|."
+  Description: "Después de que la |a:Habilidad Activa| o |u:Habilidad Definitiva|\
+    \ de una |Compañera| se activa, aplica |Frío| a {Level} enemigo{Level:plural one='\
     \ aleatorio' other='s aleatorios'}.\nCada vez que un enemigo gana |Frío|, {Level}\
     \ |Compañera{Level:plural one='' other='s'}| aleatoria{Level:plural one='' other='s'}\
     \ en la mano gana {Level} de |Influencia|."
@@ -874,10 +875,9 @@ MoreFriendsSe:
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
     \ one='' other='s'} de |Compañera| aleatoria{Level:plural one='' other='s'} a\
     \ la mano.\n{Level:plural one='Tiene' other='Tienen'} |Etéreo| y pierde{Level:plural\
-    \ one='' other='n'} el |Etéreo| cuando {Level:plural one='es convocada' other='son\
-    \ convocadas'}."
+    \ one='' other='n'} el |Etéreo| después de ser convocad{Level:plural one='' other='s'}."
   Brief: "Al final del turno de {PlayerName}, agrega cartas aleatorias de |Compañeras|\
-    \ a la mano.\nTienen |Etéreo| y perderán el |Etéreo| cuando son convocadas."
+    \ a la mano.\nTienen |Etéreo| y perderán el |Etéreo| después de ser convocadas."
 YouxiangMoonSe:
   Name: Belleza de la Naturaleza
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Flores de Verano|
@@ -952,7 +952,8 @@ MaidFriendSe:
   Description: '{SourceCardName} inflige {Level} de daño adicional.'
   Name: Entrenador de Cuchillos Arrojadizos
 StarFriendSe:
-  Description: Cuando {SourceCardName} inflige daño, aplica {Level} de |Marcado|.
+  Description: Cuando {SourceCardName} inflige daño, aplica {Level} de |Marcado{Level:plural
+    one='' other='s'}|.
   Brief: Cuando {SourceCardName} inflige daño, aplica |Marcado|.
   Name: Como Estrellas en el Cielo
 CatchGoblinSe:
@@ -1058,8 +1059,9 @@ HuiguiLizhiSe:
   Brief: Al final del turno de {PlayerName}, entra en el estado |Serenidad|.
 KongxiangshangSe:
   Name: Autorretención Ideal
-  Description: Cuando una carta de |Defensa Básica| se juega, entra en el estado |Serenidad|.
-  Brief: Cuando una carta de |Defensa Básica| se juega, entra en el estado |Serenidad|.
+  Description: Después de jugar una carta de |Defensa Básica|, entra en el estado
+    |Serenidad|.
+  Brief: Después de jugar una carta de |Defensa Básica|, entra en el estado |Serenidad|.
 ShortLove:
   Name: Chispa de Amor
   Description: El siguiente carta |Básica| jugada aumenta su valor numérico en {Level}.
@@ -1189,9 +1191,9 @@ TianziRockSe:
   Name: ¡Impenetrable!
 KokoroRenzhen:
   Name: Seria
-  Description: Cuando {OwnerName} actúa, pierde todas las |Emociones Oscuras| e inflige
-    {Level} más daño a {PlayerName} por cada 1 |Emoción Oscura| perdida de esta manera.
-    (Ya ha ocurrido)
+  Description: Después de que {OwnerName} actúa, pierde todas las |Emociones Oscuras|
+    e inflige {Level} más daño a {PlayerName} por cada 1 |Emoción Oscura| perdida
+    de esta manera. (Ya ha ocurrido)
 KokoroDarkPower:
   Name: Recolección de Emociones Oscuras
   Description: "{OwnerName} causará daño adicional a {PlayerName} con su próxima |Carta\

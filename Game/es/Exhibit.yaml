@@ -42,7 +42,7 @@ MarisaR:
   Name: Mini-Hakkero
   FlavorText: En él están impresos el Bagua Primordial.
   Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Marisa| se agregan\
-    \ al grupo de cartas.\nCada vez que se gasta {Mana} para usar un ataque, {PlayerName}\
+    \ al grupo de cartas.\nDespués de gastar {Mana} para usar un ataque, {PlayerName}\
     \ gana {Value1} |Carga|."
 SakuyaW:
   Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Sakuya| se agregan\
@@ -111,8 +111,7 @@ CirnoG:
     \ al grupo de cartas.\nSiempre que una |Compañera| es convocada al ser jugada,\
     \ agrega una {Value1} |Flores de Verano| a la mano."
 He3:
-  Description: Siempre que se gaste {Value1} o más maná por jugar una carta, gana
-    {Mana}.
+  Description: Después de gastar {Value1} o más maná por jugar una carta, gana {Mana}.
   Name: Helio-3
   FlavorText: La especialidad local del Paisaje Lunar.
 PiaoliangPanzi:
@@ -133,8 +132,8 @@ ClassicWunvfu:
     \ gana {Value1} |Bloqueo| por cada carta |Mejorada| en la mano."
 Bingzhilin:
   Name: Escama de Hielo
-  Description: "Agrega {BaseMana} al maná base.\nCada vez que se juega una carta de\
-    \ habilidad, {Value1:plural one='% carta aleatoria' other='% cartas aleatorias'}\
+  Description: "Agrega {BaseMana} al maná base.\nDespués de que se juega una carta\
+    \ de habilidad, {Value1:plural one='% carta aleatoria' other='% cartas aleatorias'}\
     \ en la mano |cuesta{Value1:plural one='' other='n'} temporalmente| {Mana} menos\
     \ de mana."
   FlavorText: No se derrite ni siquiera cuando lo dejas sobre el fuego.
@@ -153,7 +152,7 @@ TianwenWangyuanjing:
   FlavorText: La Luna y la Osa Mayor se pueden observar de cerca.
 QinaKapian:
   Name: Cartas Zener
-  Description: "Agrega {BaseMana} al maná base.\nCada vez que {PlayerName} activa\
+  Description: "Agrega {BaseMana} al maná base.\nDespués de que {PlayerName} activa\
     \ su |Carta Mágica|, pierde {Value1} vida y roba {Value2} cartas."
   FlavorText: "\"Adivinar los patrones de estas cartas puede ayudar a desarrollar\
     \ poderes psíquicos.\"\nAsí se rumorea en el mundo exterior."
@@ -222,7 +221,7 @@ XianzheShi:
 TaiguGouyu:
   Name: Magatama Antiguo
   FlavorText: "Cuantas más gemas tengas, mayor será tu salud máxima.\nUps, juego equivocado."
-  Description: "Agrega {BaseMana} al maná base.\nSiempre que se gaste {Value1} o más\
+  Description: "Agrega {BaseMana} al maná base.\nDespués de gastar {Value1} o más\
     \ maná para jugar una carta, gana {Mana} al comienzo del siguiente turno de {PlayerName}."
 KongbaiKapai:
   Name: Carta Blanca
@@ -236,7 +235,8 @@ HuiyeBaoxiang:
   Description: "Al comienzo de cada turno de {PlayerName}, gana 1 maná aleatorio.\n\
     Cuando se adquiere, gana {Value1} |Exhibiciones| aleatorias.\nLuego, se agregara\
     \ un |Orden de desalojo| a la biblioteca."
-  FlavorText: Cuando abres el cofre del tesoro, hay tres brocados adentro.
+  FlavorText: Después de abrir este cofre del tesoro, en su interior te esperan tres
+    brocados.
 QipaiYouhua:
   Name: Pintura al Óleo Imponente
   FlavorText: "Resuelve el acertijo de la pintura y heredarás todo las propiedades\
@@ -253,8 +253,9 @@ YizangnuoWuzhi:
     Los combates élite recompensan con una |Exhibición| adicional."
 LouguanJian:
   Name: Roukanken
-  Description: Después de que {PlayerName} inflija daño por un ataque, aplica {Value1}
-    |Marcado| al objetivo o objetivos.
+  Description: "Al comienzo del primer turno de {PlayerName} de cada combate, gana\
+    \ {Mana}.\nDespués de que {PlayerName} inflige daño por un ataque, aplica {Value1}\
+    \ de |Marcado| al objetivo u objetivos."
   FlavorText: '"¡Cortado!"'
 Baota:
   Name: Pagoda Enjoyada del Bishamonten
@@ -316,7 +317,7 @@ JimuWanju:
   FlavorText: Los juguetes que usan en sus tiempos libre los niños parecen tan familiares.
 Zuoshan:
   Name: Abanico Izquierdo
-  Description: Cuando se juega la primera carta de cada combate, agrega una |copia|
+  Description: Después de jugar la primera carta de cada combate, agrega una |copia|
     de esa carta a la mano. |Cuesta temporalmente| {Mana} y tiene |Exilio|.
   FlavorText: ¿A quién se lo robaste? ¿Yukari o a Yuyuko?
 HuanxiangxiangYuanqi:
@@ -335,8 +336,8 @@ ShoushiYubi:
   FlavorText: ¡Mucho más poderosa que la Vara de Purificación Hakurei!
 ShanliangDengpao:
   Name: Bombilla Brillante
-  Description: Desbloquea la habilidad de |Pensar| en las Brechas para agregar una
-    carta Rara aleatoria la biblioteca.
+  Description: Desbloquea la habilidad de |Pensar| en las Brechas para elegir 1 de
+    {Value1} cartas raras aleatorias para agregarlo a la biblioteca.
   FlavorText: ¡Eureka!
 ZhanshuDaoliqi:
   Name: Conductor Táctico
@@ -502,9 +503,10 @@ SongjingMuyu:
   FlavorText: Usa esto para recitar encantamientos al enemigo, infligiendo daño mágico.
 Saiqianxiang:
   Name: Caja de Donación
-  Description: Desbloquea la capacidad de |Recaudar Fondos| en las Brechas, otorgando
-    {Value1} <sprite="Point" name="Gold">.
-  FlavorText: Está vacío por dentro.
+  Description: "Cuando se adquiere, gana {Value2} <sprite=\"Point\" name=\"Gold\"\
+    >.\nDesbloquea la capacidad de |Recaudar Fondos| en las Brechas, otorgando {Value1}\
+    \ <sprite=\"Point\" name=\"Gold\">."
+  FlavorText: Están todas las pertenencias de Reimu adentro.
 Modaoshu:
   Description: Cuando se adquiere, elige 1 de {Value1} cartas raras neutrales aleatorias
     para agregarla a la biblioteca.
@@ -767,7 +769,8 @@ DiannaoPeijian:
     También se puede agregar al té para ayudar a Onee-sama a relajarse."
 HuangyouJiqiren:
   Name: Robot Asistente
-  Description: '|Beber té| en la Brecha también otorga una carta de recompensa.'
+  Description: 'Después de |Beber té| en un Brecha, elige 1 de {Value1} cartas para
+    agregar a la biblioteca.'
   FlavorText: "Un robot cuestionando el motivo de su creación.\n\"¿Cuál es mi propósito?\""
 Qingshu:
   FlavorText: '"Sé que nuestro tiempo es limitado, pero aún quiero pasar cada segundo
@@ -801,7 +804,7 @@ ShiyanQicai:
   FlavorText: '"Eirin dice que pueden llevar el poder más allá del propio Gensokyo"'
 FaliJingdian:
   Name: Sutra de Poder Dhármático
-  Description: Siempre que se active una |Carta Mágica|, gana {Mana}.
+  Description: Después que se active la |Carta Mágica|, gana {Mana}.
   FlavorText: '"Las escrituras consagradas por Byakuren Hijiri son muy raras."'
 Huiyuanka:
   Name: Tarjeta de Membresía
@@ -846,7 +849,9 @@ MaorongWanju:
 YichuiPiao:
   Name: Calabaza Ibuki
   FlavorText: Puede servirse el sake infinitamente.
-  Description: Durante el turno de {PlayerName}, si la mano está vacía, roba una carta.
+  Description: "Durante el turno de {PlayerName}, si la mano está vacía, roba una\
+    \ carta.\nAl comienzo del primer turno de {PlayerName} de cada combate, agrega\
+    \ {Value1} |Ebria{Value1:plural one='' other='s'}| a la mano."
 AliceW:
   FlavorText: (Trabajo en progreso)
   Name: Muñeca Shanghai
