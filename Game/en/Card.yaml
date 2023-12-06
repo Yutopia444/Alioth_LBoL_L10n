@@ -1,7 +1,7 @@
 ReimuAttackR:
   Name: 'Hakurei Amulet'
   Description: Deal {Damage} damage.
-  FlavorText: 'No need to track the enemy, when the bullets can home in on them instead.'
+  FlavorText: 'Why track the enemy when the bullets can home in on them instead?'
 ReimuBlockW:
   Description: Gain {Block} |Block|.
   Name: Danmaku Protection
@@ -222,7 +222,7 @@ YinyangXueyin:
   Description: |-
     Lose {Value2} life.
     Add a |Yin-Yang Orb| to the hand.
-    Whenever {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
+    After {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
 
   Name: Yin-Yang Rune
   FlavorText: If you can't afford spell ingredients, you'll have to use your blood.
@@ -360,7 +360,7 @@ Qingshan:
 AutoQumobang:
   Description: |-
     |While in hand|: Draw {Value1} more {Value1:plural one='card' other='cards'} during each draw step.
-    When {SelfName} is |Retained| {Value2} times, |Exile| it.
+    After {SelfName} is |Retained| {Value2} times, |Exile| it.
   Name: Furious Purification Rod
   FlavorText: '"Autonomous Purification Rods are replacing the jobs of shrine maidens."
     —— <Bunbunmaru News · Economics Edition>'
@@ -839,7 +839,7 @@ SakuyaShop:
   Name: Purchase Materials
   FlavorText: Please don't misunderstand, Gensokyo's supermarket does not sell vampires.
 SilverBlade:
-  Description: Whenever an attack card is activated, gain {Value1} |Barrier|.
+  Description: After an attack card is activated, gain {Value1} |Barrier|.
   Name: Silver Dimension
 KnifeHell:
   Description: "Add |{Value1:plural one='% Throwing Knife' other='% Throwing Knives'}|\
@@ -997,7 +997,7 @@ HuojianSaoba:
   Name: Rocket Broom
 TrueMoon:
   Name: True Full Moon
-  Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nWhen {Value2:plural\
+  Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nAfter {Value2:plural\
     \ one='% card' other='% cards'} are played, {PlayerName} loses the game."
   FlavorText: Under the true full moon, everything is a conceited fantasy.
 AsteroidBelt:
@@ -1995,8 +1995,7 @@ YuetuYuyi:
   FlavorText: A remnant of the moon's memories.
 DizangLove:
   Name: Instant Bodhi
-  Description: "Whenever {PlayerName} plays a Common card, gain {Value1} |Temporary\
-    \ Firepower|.\n"
+  Description: "After {PlayerName} plays a Common card, gain {Value1} |Temporary Firepower|.\n"
 LimaoSchool:
   Name: Shapeshift Academy
   Description: Choose {Value2} of {Value1} random |Animal Transformations|. Gain their
@@ -2100,13 +2099,14 @@ SakuyaDetective:
 SakuyaUsage:
   FlavorText: Just stop time, then move everyone else downstairs.
   Name: Wrong Sakuya Usage
-  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|When played for\
-    \ the {Value2:ordinal one='%st' two='%nd' few='%rd' other='%th'} time|: Remove\
-    \ {SelfName} from combat. Add a |Correct Sakuya Usage| on top of the draw pile."
-  ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|When played\
+  Description: "Draw {Value1:plural one='% card' other='% cards'}.\n|After being played\
     \ for the {Value2:ordinal one='%st' two='%nd' few='%rd' other='%th'} time|: Remove\
-    \ {SelfName} from combat. End the turn. Add a |Circular Steps| to the top of the\
-    \ draw pile.\n(Has been played {PlayCount:plural one='% time' other='% times'}.)"
+    \ {SelfName} from combat. Add a |Correct Sakuya Usage| on top of the draw pile."
+  ExtraDescription1: "Draw {Value1:plural one='% card' other='% cards'}.\n|After being\
+    \ played for the {Value2:ordinal one='%st' two='%nd' few='%rd' other='%th'} time|:\
+    \ Remove {SelfName} from combat. End the turn. Add a |Circular Steps| to the top\
+    \ of the draw pile.\n(Has been played {PlayCount:plural one='% time' other='%\
+    \ times'}.)"
 MinengZhuru:
   Name: Mental Energy Injection
   Description: "When a |Teammate|'s |f:Passive Skill| would trigger, it triggers one\
@@ -2251,9 +2251,9 @@ UnlimitedTime:
   FlavorText: Excuse me, I have unlimited time.
 ForeverCool:
   Name: Ever Cool Seasonal Fantasia
-  Description: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is\
-    \ activated, apply |Cold| to a random enemy.\nWhenever an enemy gains |Cold|,\
-    \ a random |Teammate| in the hand gains {Value1} |Unity|."
+  Description: "After a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is activated,\
+    \ apply |Cold| to a random enemy.\nWhenever an enemy gains |Cold|, a random |Teammate|\
+    \ in the hand gains {Value1} |Unity|."
 CirnoInForest:
   Name: In Plain Sight
   Description: "Gain {Block} |Block|.\n|Overdraft| {Value1}."
@@ -2271,7 +2271,7 @@ MoreFriends:
   Name: Social Butterfly
   Description: "At the start of {PlayerName}'s turn, add {Value1} random |Teammate|\
     \ card{Value1:plural one='' other='s'} to the hand.\nThese cards have |Ethereal|\
-    \ and lose |Ethereal| when summoned."
+    \ and lose |Ethereal| after being summoned."
   DetailText: These |e:alternate cards| have a total cost of 4 or less.
 FreezeToIce:
   Name: Frozen Specimen
@@ -2449,7 +2449,7 @@ OptBottom:
   Description: Place {TargetName} on the bottom of the draw pile.
 CirnoFreeze:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
-    \ play.\nWhenever {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
+    \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
     \ played, |Exile| a {SelfName} in the hand."
   Name: Mana Freeze
 DoubleMana:
@@ -2638,22 +2638,22 @@ KisumeAttack:
     \ first card played this turn, apply {Value1} |Lock On|."
 NightMana3:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
-    \ play.\nWhenever {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
+    \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
     \ played, |Exile| {SelfName}."
   Name: 'Long Night: 3AM'
 NightMana1:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
-    \ play.\nWhenever {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
+    \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
     \ played, |Exile| {SelfName}."
   Name: 'Long Night: 11PM'
 NightMana2:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
-    \ play.\nWhenever {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
+    \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
     \ played, |Exile| {SelfName}."
   Name: 'Long Night: 1AM'
 NightMana4:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
-    \ play.\nWhenever {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
+    \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
     \ played, |Exile| {SelfName}."
   Name: 'Long Night: 5AM'
 KoishiMoveAttack:
@@ -2878,7 +2878,7 @@ SelfControl:
     \ gain {Value1} |Barrier|.\nEnter |Passion|."
 Kongxiangshang:
   Name: Ideal Self Retention
-  Description: When a |Basic Defense| card is played, enter |Serenity|.
+  Description: After a |Basic Defense| card is played, enter |Serenity|.
 ZuxianTuomeng:
   Name: Ancestral Dreams
   Description: "|When drawn|: |Exile| the leftmost card in the hand. Add {Value1}\
