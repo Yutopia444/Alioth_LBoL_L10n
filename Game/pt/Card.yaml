@@ -754,9 +754,9 @@ KnifeBounce:
   UpgradedDescription: "Cause {Damage} de dano.\nAdicione {Value1} |Faca de Arremesso|\
     \ para a mão.\nAplique {Value2} |Marcas|."
 MasterOfCollection:
-  Description: Escolha até {Value2} carta{Value2:plural one='' other='s'} na mão.
-    {Value2:plural one='ela ganha' other='Elas ganham'} |Reter|. Sempre que uma carta
-    é |Retida|, ela custa {Value1} mana aleatória a menos neste combate.
+  Description: "Escolha até {Value2} carta{Value2:plural one='' other='s'} na mão.\
+    \ {Value2:plural one='ela ganha' other='Elas ganham'} |Reter|.\nSempre que uma\
+    \ carta é |Retida|, ela custa {Value1} mana aleatória a menos neste combate."
   FlavorText: '"Lixo? Como isso pode ser lixo?"'
   Name: Mestre da Coleção
 JungleMaster:
@@ -874,14 +874,14 @@ GroupOfKnife:
   Description: Cause {Damage} de dano.
 LoyalMaid:
   Description: "Ganhe {Shield} de |Barreira|.\nNo começo de cada turno extra, retorne\
-    \ {SelfName} da pilha de descarte para a mão."
+    \ {SelfName} da pilha de descarte para a mão. Ela |custa temporariamente| {Mana}."
   Name: Servente Leal
 TimeWalk:
-  ExtraDescription1: "|d: Termine seu turno. Então, jogue um turno extra.|\n|Caminhadas\
-    \ Temporais| Perdem o efeito até o final do combate."
+  ExtraDescription1: "|d: Termine seu turno. Então, jogue um turno extra.|\n{SelfName}\
+    \ Perde o efeito até o final do combate."
   Name: Caminhada Temporal
-  Description: "Termine seu turno. Então, jogue um turno extra.\n|Caminhadas Temporais|\
-    \ Perdem o efeito até o final do combate."
+  Description: "Termine seu turno. Então, jogue um turno extra.\n{SelfName} Perde\
+    \ o efeito até o final do combate."
 SpecialClock:
   Description: No começo do turno de {PlayerName}, Descarte até 1 carta. Compre o
     mesmo tanto de cartas.
@@ -1319,9 +1319,9 @@ CirnoEcho:
   Name: Presente da Natureza
 FreezeRiver:
   Name: Gelo Flutuante
-  Description: Coloque a carta do fundo da pilha de compra na mão. Ela |Custa Temporariamente|
+  Description: Coloque a carta do fundo da pilha de compra na mão. Ela |custa temporariamente|
     {Mana}.
-  UpgradedDescription: Coloque a carta do fundo da pilha de compra na mão. Ela |Custa|
+  UpgradedDescription: Coloque a carta do fundo da pilha de compra na mão. Ela |custa|
     {Mana}.
 FairyAllOut:
   Description: "Cause {Damage} de dano a cada inimigo.\nAtive os |f:Efeitos Passivos|\
@@ -1579,6 +1579,8 @@ SijiCard:
     uma vez.
 Danxiangsi:
   Name: Amor não Recíproco
+  Description: "Ganhe {Value1} de |Poder de Fogo|.\n|Quando retido|: Aumente o |Poder\
+    \ de Fogo| recebido em {Value2}."
 AliceAttackW:
   Name: Bunraku Futurista
 DeployShanghai:
@@ -1648,7 +1650,7 @@ GrimoireStudy:
 LeiguAttack:
   Name: Contrabaixo de Taiko
   Description: "Cause {Damage} de dano em cada inimigo.\nInimigos com |Barreira| ou\
-    \ |Bloqueio| tomam esse dano em dobro."
+    \ |Bloqueio| tomam esse dano duas vezes."
 MeihongFire:
   Name: Ignição Indiscriminada
   Description: "No final do turno de {PlayerName}, Cause {Value1} de dano em cada\
@@ -1697,6 +1699,8 @@ YonglinCard:
     pilha de compra.
 XinzuoTest:
   Name: Teste do Zodíaco
+  Description: "Adicione {Value1} |Astrologia| à mão.\n|Instinto|: Aplique {Value2}\
+    \ |Chuva Estelar| em cada inimigo."
 SatoriAttack:
   Description: "Cause {Damage} de dano em cada inimigo.\n|Instinto|: Se um inimigo\
     \ pretende atacar, ganhe {Block} de |Bloqueio|."
@@ -1804,10 +1808,16 @@ LoveSeed:
   Name: Mudas de Amor
 CloseMemory:
   Name: Memórias Negligenciadas
+  Description: "Compre {Value1:plural one='% carta' other='% cartas'}.\nCartas compradas\
+    \ desta forma ganham |Eco|."
 JiyiShitihua:
   Name: Manifestação de Memória
+  Description: "Escolha uma carta de ataque na mão. Adicione uma |Cópia| dela à mão\
+    \ que |custa temporariamente| {Mana} e tem |Exilar.|\nCause {Damage} de dano."
 SelfControl:
   Name: Auto-Controle
+  Description: Sempre que {PlayerName} causar dano de ataque enquanto estiver no estado
+    de |Paixão|, ganhe {Value1} de |Barreira|.
 Kongxiangshang:
   Name: Autoretenção Ideal
 ChaoyueZiwo:
@@ -1913,6 +1923,10 @@ KoishiMoveAttack:
     (Não descarta cartas ou mana.)"
 Chaofanyin:
   Name: Hiperreatividade
+  Description: Quando uma carta não-|Cópia| com |Instinto| é jogada e não ativa seu
+    efeito de |Instinto|, adicione {Level:plural one='|% Cópia|' other='% |Cópias|'}
+    dela à mão e que |custa{Level:plural one='' other='m'} temporariamente| {Mana}
+    e tem |Exilar|.
 ZuxianTuomeng:
   Name: Sonhos Ancestrais
 SacrificeDoll:
@@ -1960,12 +1974,18 @@ MorphMan:
   Name: Forma de homosapiens
 QinglanAttack:
   Name: Aterrissagem do Coelho
-  Description: "Cause {Damage} de dano.\n|Preveja| {Scry}.\nCompre {Value2:plural\
-    \ one='% carta' other='% cartas'}."
+  Description: "Cause {Damage} de dano.\n|Prever| {Scry}.\nCompre {Value2:plural one='%\
+    \ carta' other='% cartas'}."
 WuyishiDNA:
   Name: Genética do Inconsciente
 KoishiMoveDefense:
   Name: Olhe Aquilo
+  Description: "Ganhe {Block} de |Bloqueio| e entre no estado de |Paixão|.\n(Ataques\
+    \ se tornam |Precisos| e |Amor| pode ser gasto para dobrar seu dano.)"
+  ExtraDescription2: "Ganhe {Block} de |Bloqueio| e entre no estado de |Epifania|.\n\
+    (Não descarte cartas nem mana.)"
+  ExtraDescription1: "Ganhe {Block} de |Bloqueio| e entre no estado de |Serenidade|.\n\
+    (Ganhe mana quando deixar-lo.)"
 PerfectCrime:
   Name: Crime Perfeito
 LoveFire:
@@ -1980,6 +2000,10 @@ MogongAttack:
     \ para que corresponda ao dano e |Bloqueio| daquela carta."
 FangkongSixu:
   Name: Mente Vazia
+  Description: Descarta qualquer número de cartas. Para cada carta descartada desta
+    forma, ganhe {Value1} de |Bloqueio|.
+  UpgradedDescription: Descarta qualquer número de cartas. Para cada carta descartada
+    desta forma, ganhe {Value1} de |Bloqueio|.
 Beiyanwu:
   Name: Filosofia do Desprezado
 QiangweiDiyu:
@@ -2218,7 +2242,7 @@ LongArm:
   Description: "Cause {Damage} de dano.\nse houver mais do que {Value1:plural one='%\
     \ carta' other='% cartas'} na mão, ganhe {Mana}."
 YukariBox:
-  Description: "|Preveja| {Scry}.\nCompre {Value1:plural one='% carta' other='% cartas'}."
+  Description: "|Prever| {Scry}.\nCompre {Value1:plural one='% carta' other='% cartas'}."
   Name: '"Presentes" Dados'
 MeilingWater:
   Name: Ultima Formação de Defesa
@@ -2657,8 +2681,24 @@ BlackResidue:
   Description: '|No fim do turno|: Perca {Value1} de vida.'
 Payment:
   Name: Transferir Fundos
+  Description: "Pague {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nA <color=#b7646b>Rabbit\
+    \ Trickster</color> imediatamente sai do combate."
 FakeCard:
   Name: Sonhos Ancestrais
 ToolMaxHp:
   Name: Pepino Crocante
   Description: "Ganhe {Value1} de vida máxima.\n|Limitado【{DeckCounter}】|"
+PatchouliFriend:
+  Description: "{FriendP}Converta {PassiveColor:plural one='% mana aleatória' other='%\
+    \ manas aleatórias'} em |Mana Filosofal|."
+  ExtraDescription1: '{FriendA}Ganhe {Value1} de |Poder de Fogo| e |Espirito|. Ganhe
+    {Power} <sprite="Point" name="Power">.'
+  ExtraDescription2: '{FriendU}Adicione {Value2} |Poção Instável| à mão.'
+  Name: Patchouli, Alquimista Elemental
+ReimuHuashan:
+  Description: "|Exile| uma carta de |Talento| da mão.\nGanhe {Value1} de vida máxima\
+    \ e {Value2} <sprite=\"Point\" name=\"Power\">.\n{SelfName} perde seu efeito até\
+    \ o fim do combate."
+  ExtraDescription1: "|d:Exile uma carta de Talento da mão.\nGanhe {Value1} de vida\
+    \ máxima e {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} perde seu\
+    \ efeito até o fim do combate."

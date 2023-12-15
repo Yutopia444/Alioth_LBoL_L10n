@@ -217,8 +217,8 @@ KongbaiKapai:
 HuiyeBaoxiang:
   Name: Caixa de Tesouros da Kaguya
   Description: "No início do turno de {PlayerName}, ganhe 1 mana aleatória.\nQuando\
-    \ adquirido, ganhe {Value1} |Exibição| aleatória.\nEm seguida, adicione 1 |Ordem\
-    \ de Despejo| ao baralho."
+    \ adquirido, ganhe {Value1:plural one='|Exibição| aleatória' other='|Exibições|\
+    \ aleatórias'}.\nEm seguida, adicione 1 |Ordem de Despejo| ao baralho."
   FlavorText: Quando você abre este baú do tesouro, há três tecidos brocados dentro.
 QipaiYouhua:
   Name: Grandiosa Pintura a Óleo
@@ -230,14 +230,15 @@ QipaiYouhua:
     Só depois da morte dela, claro."
 YizangnuoWuzhi:
   Name: Objeto Izanagi
-  Description: "No início do turno de {PlayerName}, receba 1 mana aleatória.\nCombates\
+  Description: "No início do turno de {PlayerName}, ganhe 1 mana aleatória.\nCombates\
     \ de Elite possuem 1 |Exibição| adicional como recompensa."
   FlavorText: Uma matéria-prima misteriosa que pode ser usada para criar várias armas
     divinas, cuja origem está na Caverna do Dragão Arco-Íris.
 LouguanJian:
   Name: Roukanken
-  Description: Depois que {PlayerName} causa dano de ataque, aplica {Value1} de |Marca|
-    ao(s) alvo(s).
+  Description: "No começo do primeiro turno de {PlayerName} em cada combate, ganhe\
+    \ {Mana}.\nDepois que {PlayerName} causa dano de ataque, aplique {Value1} de |Marca|\
+    \ ao(s) alvo(s)."
   FlavorText: '"Picadinho"'
 He3:
   Name: Hélio-3
@@ -273,15 +274,16 @@ Fengrenji:
   FlavorText: O pedal fornece a força motriz.
   Description: Sempre que uma carta de defesa é adicionada ao baralho, |Melhore-a|.
 SongjingMuyu:
-  Description: No início de cada combate de chefe, {PlayerName} recebe vida igual
-    ao número de cartas no baralho.
+  Description: No início de cada combate de chefe, {PlayerName} ganha vida igual ao
+    número de cartas no baralho.
   Name: Peixe de Madeira
   FlavorText: Use isso para recitar um encanto no inimigo, causando dano mágico.
 Saiqianxiang:
   Name: Caixa de Doação
-  Description: Desbloqueia a capacidade de |Angariar Fundos| em Fronteiras, concedendo
-    {Value1} <sprite="Point" name="Gold">.
-  FlavorText: O interior está vazio.
+  Description: "Quando obtido, ganhe {Value2} <sprite=\"Point\" name=\"Gold\">.\n\
+    Desbloqueia a capacidade de |Angariar Fundos| em Fronteiras, concedendo {Value1}\
+    \ <sprite=\"Point\" name=\"Gold\">."
+  FlavorText: Dentro há todas as economias de Reimu.
 Modaoshu:
   Description: Quando adquirido, escolha 1 entre {Value1} cartas raras neutras aleatórias
     para adicionar ao baralho.
@@ -294,12 +296,12 @@ Baota:
   FlavorText: Foi perdido mais uma vez.
 XijianSan:
   Name: Guarda-sol das Fronteiras
-  Description: No início do terceiro turno de {PlayerName} em cada combate, receba
-    {Value1} de |Bloqueio| e receba {Mana}.
+  Description: No início do terceiro turno de {PlayerName} em cada combate, ganhe
+    {Value1} de |Bloqueio| e também {Mana}.
   FlavorText: Neste jogo, não é possível cruzar a borda da tela.
 Taozi:
   Name: Pêssego
-  Description: Quando adquirido, {PlayerName} recebe {Value1} de vida máxima.
+  Description: Quando adquirido, {PlayerName} ganha {Value1} de vida máxima.
   FlavorText: Muitas pessoas pensam que isso vem do chapéu de Tenshi, mas na verdade
     vem da Capital Lunar.
 PenzaiYoutan:
@@ -315,7 +317,7 @@ GanzhuYao:
   Name: Elixir de Orbe Ultramarino
   Description: "Na próxima vez que {PlayerName} for derrotado, cure até o máximo de\
     \ vida. Este efeito só funciona uma vez.\nApós o efeito da |Exibição|, a vida\
-    \ máxima de {PlayerName} é reduzida em {Value1}% e no início do combate, receba\
+    \ máxima de {PlayerName} é reduzida em {Value1}% e no início do combate, ganhe\
     \ {Value2} de |Poder de fogo|."
   FlavorText: Tudo o que não me mata torna-me mais forte.
 Xunlongchi:
@@ -325,7 +327,7 @@ Xunlongchi:
     aí.
 BaochuanMoxing:
   Name: Modelo de Navio do Tesouro
-  Description: Sempre que {PlayerName} avançar um nível, receba {Value1} <sprite="Point"
+  Description: Sempre que {PlayerName} avançar um nível, ganhe {Value1} <sprite="Point"
     name="Gold">.
   FlavorText: Um modelo 1:100 do Navio Palanquin, encomendado por Kaguya e feito por
     Keiki Haniyasushin.
@@ -347,11 +349,11 @@ Zijing:
   FlavorText: Sua carta é muito boa, mas no segundo seguinte ...... agora são duas.
 SunhuaiHufu:
   Name: Amuleto Quebrado
-  Description: No início do combate, receba {Value1} de |Poder de fogo| e {Value1}
+  Description: No início do combate, ganhe {Value1} de |Poder de fogo| e {Value1}
     de |Espírito| para cada carta de |Infortúnio| no baralho.
-  ExtraDescription: "No início do combate, receba {Value1} de |Poder de fogo| e {Value1}\
+  ExtraDescription: "No início do combate, ganhe {Value1} de |Poder de fogo| e {Value1}\
     \ de |Espírito| para cada carta de |Infortúnio| no baralho.\nNº de |Infortúnios|:\
-    \ {Contador}."
+    \ {Counter}."
   FlavorText: “Desculpe, você não é S-Tier.”
 JimuWanju:
   Name: Blocos de Brinquedos
@@ -380,8 +382,8 @@ ShoushiYubi:
 ShanliangDengpao:
   Name: Lâmpada Brilhante
   FlavorText: Eureca!
-  Description: Desbloqueia a habilidade de |Pensar| em Fronteiras para adicionar uma
-    carta Rara aleatória ao baralho.
+  Description: Desbloqueia a habilidade de |Pensar| em Fronteiras para escolher 1
+    de {Value1} cartas raras para adicionar ao baralho.
 ZhanshuDaoliqi:
   Name: Condutor Tático
   FlavorText: Há apenas uma longa corrente nele, o que torna-o perfeito para lançar
@@ -404,10 +406,10 @@ Yueshan:
 ZhangchibangQiu:
   Name: Esfera com Asas
   FlavorText: Ele voa rápido e tem um bom valor.
-  Description: Quando adquirido, receba {Value1} <sprite="Point" name="Gold">.
+  Description: Quando adquirido, ganhe {Value1} <sprite="Point" name="Gold">.
 YueYuyi:
   Name: Véu Lunar
-  Description: No início do combate, receba |Impecável| por {Value1} turno{Value1:plural
+  Description: No início do combate, ganhe |Impecável| por {Value1} turno{Value1:plural
     one='' other='s'}.
   FlavorText: Não é muito útil ao lutar contra chefes.
 FeixiangJian:
@@ -451,8 +453,8 @@ LinghunBaoshi:
   FlavorText: Tenha cuidado quando isso ficar turvo.
 ZheyangSan:
   Name: Sombrinha
-  Description: No início do segundo turno de {PlayerName} em cada combate, receba
-    {Value1} de |Bloqueio| e {Value2} de |Poder de Fogo Temporário|.
+  Description: No início do segundo turno de {PlayerName} em cada combate, ganhe {Value1}
+    de |Bloqueio| e {Value2} de |Poder de Fogo Temporário|.
   FlavorText: Hoje à noite, seu dono não precisa mais disso.
 Pingguo:
   Name: Maçã
@@ -522,7 +524,7 @@ Shanbibu:
   FlavorText: Parece que um pedaço foi arrancado da saia de Hatate.
 XiaorenWan:
   Name: Tigela de Kobito
-  Description: receba {Value1} de vida máxima ao pular uma recompensa de carta.
+  Description: ganhe {Value1} de vida máxima ao pular uma recompensa de carta.
   FlavorText: 'Alias: Embarcação da Shinmyoumaru Sukuna.'
 Shaoyao:
   Name: Peônia
@@ -627,7 +629,8 @@ HuangyouJiqiren:
   FlavorText: "Um robô que questiona a razão por trás de sua criação.\n\"Qual é o\
     \ meu propósito?\""
   Name: Robô da Manteiga
-  Description: '|Beber chá| em Fronteiras também concede uma recompensa de carta.'
+  Description: 'Depois de |Beber chá| em Fronteiras, escolha 1 de {Value1} cartas
+    para adicionar ao baralho.'
 JudaShaozi:
   Description: Sempre que um |Infortúnio| é adicionado ao baralho, {PlayerName} ganha
     {Value1} de vida máxima.
@@ -667,7 +670,7 @@ Putao:
   FlavorText: Cortesia de Monoriko Aki, Deus da Colheita.
 TiangouMuji:
   Name: Tamanco de Tengu
-  Description: No início do combate, {PlayerName} recebe {Value1} de |Poder de Fogo|.
+  Description: No início do combate, {PlayerName} ganha {Value1} de |Poder de Fogo|.
   FlavorText: Mesmo se um humano as usar, eles poderão pular mais uma vez no ar, também
     conhecidas como "Botas de Pulo Duplo".
 JingzhiChaju:
@@ -766,7 +769,7 @@ MaorongWanju:
   FlavorText: '"Ninguém resiste à tentação de tocá-las."'
 WaijieYanjing:
   Name: Óculos Hi-Tech do Mundo Exterior
-  Description: Recompensas de <sprite="Point" name="Gold"> de combate dão {Value1}%
+  Description: Recompensas de <sprite="Point" name="Gold"> de combates darão {Value1}%
     a mais de <sprite="Point" name="Gold">.
   FlavorText: Óculos que permitem ao usuário ver os objetos fantasiosos, eles entraram
     em Gensokyo devido à baixa popularidade.
@@ -788,7 +791,7 @@ Dahuoji:
 JingesiYushou:
   Name: Amuleto Kinkaku-Ji
   Description: Sempre que {PlayerName} receber um debuff pela primeira vez em cada
-    combate, receba {Value1} de |Barreira|.
+    combate, ganhe {Value1} de |Barreira|.
   FlavorText: Esta era o proteção antes de Kinkaku-ji ser aberto aos visitantes e
     mais tarde ser substituído pelo mesmo estilo de amuleto.
 JingQiXi:
@@ -845,8 +848,9 @@ ZhinengYinxiang:
   FlavorText: '"Alexia, compre esta carta para mim."'
 YichuiPiao:
   Name: Cabaça Ibuki
-  Description: Durante o turno de {PlayerName}, se a mão estiver vazia, compre uma
-    carta.
+  Description: "Durante o turno de {PlayerName}, se a mão estiver vazia, compre uma\
+    \ carta.\nNo começo do primeiro turno de {PlayerName} em cada combate, adicione\
+    \ {Value1} |Bêbado| à mão."
   FlavorText: Pode beber à vontade.
 AliceB:
   Description: "Adiciona {BaseMana} à base de mana. Cartas únicas de |Alice| são adicionadas\
