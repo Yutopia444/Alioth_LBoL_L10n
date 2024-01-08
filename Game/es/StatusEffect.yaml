@@ -41,7 +41,7 @@ Fragil:
   Description: "{PlayerName} gana {Value}% menos de |Bloqueo| y |Barrera| de las carta\
     \ {Duration:plural one='hasta el final del turno' other='hasta los siguientes\
     \ % turnos'}."
-  Brief: '{PlayerName} obtiene {Value}% menos de |Bloqueo| y |Barrera| por cartas.'
+  Brief: '{PlayerName} gana {Value}% menos de |Bloqueo| y |Barrera| por cartas.'
 Weak:
   Name: Débil
   Brief: Los ataques de {OwnerName} infligen {Value}% menos de daño.
@@ -157,7 +157,7 @@ DroneBlock:
   Brief: Al final del turno de {OwnerName}, gana |Bloqueo|.
 MaoyuBlock:
   Name: Mullida
-  Description: '{OwnerName} obtiene {Level} de |Bloqueo| después de ser atacada.'
+  Description: '{OwnerName} gana {Level} de |Bloqueo| después de ser atacada.'
 Servant:
   Name: Invocación
   Description: "Después de que la invocadora es derrotada, todas sus invocaciones\
@@ -173,7 +173,7 @@ DeathExplodeCount:
     \ el doble de daño."
 DeathVulnerable:
   Name: Palidez Mortal
-  Description: Cuando {OwnerName} es vencida, {PlayerName} obtiene {Level} de |Vulnerable|.
+  Description: Cuando {OwnerName} es vencida, {PlayerName} gana {Level} de |Vulnerable|.
 Drowning:
   Name: Ahogar
   Description: '{OwnerName} recibe {Level} de daño al final de cada turno.'
@@ -193,10 +193,10 @@ PhoneBillSe:
     > al ser vencida."
 AbsorbPower:
   Name: Orbe Rojo
-  Description: Al final del turno del {OwnerName}, obtiene {Level} de |Poder|.
+  Description: Al final del turno del {OwnerName}, gana {Level} de |Poder|.
 AbsorbSpirit:
   Name: Orbe Azul
-  Description: Al final del turno de {OwnerName}, obtiene {Level} de |Espíritu|.
+  Description: Al final del turno de {OwnerName}, gana {Level} de |Espíritu|.
 Lunatic:
   Name: Locura
   Description: "Una luz mágica brilla sobre todos. Llevando a la locura y amplificando\
@@ -403,7 +403,7 @@ InfinityGemsSe:
     \ restantes."
 SakuraWandSe:
   Name: Llave Alada
-  Description: '{OwnerName} ataca el doble de veces seguidas.'
+  Description: '{OwnerName} ataca dos veces seguidas.'
 DragonBallSe:
   Description: 'Al comienzo del turno de {OwnerName}, su |deseo| se concede: {PlayerName}
     pierde la partida.'
@@ -699,7 +699,7 @@ Poison:
     pierde 1 carga de |Veneno|.
 TiangouOrderSe:
   Name: Decreto del Gran Tengu
-  Description: Cuando {OwnerName} recibe daño de ataque, {PlayerName} obtiene {Level}
+  Description: Cuando {OwnerName} recibe daño de ataque, {PlayerName} gana {Level}
     de |Bloqueo|.
   Brief: Cuando {OwnerName} recibe daño de ataque, {PlayerName} gana |Bloqueo|.
 KokoroDanceSe:
@@ -1073,9 +1073,9 @@ LongLove:
 SelfControlSe:
   Name: Autocontrol
   Brief: Siempre que {PlayerName} inflige daño por un ataque mientras está en el estado
-    |Pasión|, obtén |Barrera|.
+    |Pasión|, gana |Barrera|.
   Description: Siempre que {PlayerName} inflige daño por un ataque mientras está en
-    el estado |Pasión|, obtén {Level} de |Barrera|.
+    el estado |Pasión|, gana {Level} de |Barrera|.
 ZhuozhuangChengzhangSe:
   Name: Crecimiento Saludable
   Description: Al final del turno de {PlayerName}, agrega {Level1} |Vitalidad{Level1:plural
@@ -1158,11 +1158,16 @@ MeilingWaterSe:
 YouxiangWakeSe:
   Name: Madrugadora
   Brief: Después de una cierta cantidad de turnos, ganas |Poder| y coloca cartas de
-    ataque aleatorias de la pila de robo hacia la mano.
+    ataque aleatorias que cuestan temporalmente {Mana} desde la pila de robo hacia
+    la mano.
   Description: Al comienzo del {Count:ordinal one='siguiente' two='%º' pocos='%º'
     other='%º'} turno de {PlayerName}, {Count:plural one='' other='a partir de ahora'},
-    gana {Level} de |Poder| y coloca {Limit} carta{Limit:plural one='' other='s'}
-    de ataque aleatorio de la pila de robo hacia la mano.
+    gana {Level} de |Poder| y coloca {Limit} carta{Limit:plural one=' de ataque aleatorio'
+    other='s de ataque aleatorios'} que |cuesta{Limit:plural one=' temporalmente'
+    other='n temporalmente'}| {Mana} desde la pila de robo hacia la mano.
+  ExtraDescription: Al comienzo del siguiente turno, ganas |Poder| y coloca cartas
+    de ataque aleatorias que cuestan temporalmente {Mana} desde la pila de robo hacia
+    la mano.
 BossAct:
   Description: Después de que {OwnerName} reciba {Count} de daño, realiza una acción
     inmediata, sin finalizar el turno de {PlayerName}.
