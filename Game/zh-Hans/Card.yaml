@@ -428,6 +428,7 @@ ReimuHuashan:
     |d:选择手中的一张能力牌放逐。
     获得 {Value1} 点最大生命值和 {Value2} 点<sprite="Point" name="Power">。|
     每场战斗中，只有第一张{SelfName}生效。
+  FlavorText: 「对对对，你说的对。」
 
 AutoQumobang:
   Name: 暴走驱魔棒
@@ -797,6 +798,7 @@ EventHorizon:
     进入|爆发|。
     获得 {Value1} 点|暂得火力|。
     下回合开始时死亡。
+  DetailText: 'v1.4.1: 负面状态类型从「特殊」改为「负面」。'
   FlavorText: 天衣无缝的人无畏黑洞的重力。
 
 PotionDefense:
@@ -1387,7 +1389,9 @@ SakuyaUsage2:
 
 MeilingFriend:
   Name: 玩忽职守红美铃
-  Description: '{FriendP}当{PlayerName}受到一整轮攻击时触发一次：将一张|飞刀|加入手中。'
+  Description: |-
+    {FriendS}获得 {Graze} 层|闪避|。
+    {FriendP}当{PlayerName}受到一整轮攻击时触发一次：将一张|飞刀|加入手中。
   ExtraDescription2: '{FriendU}恢复 {Value1} 点生命，获得 {Value2} 点|火力|。'
 
 UnlimitedTime:
@@ -2530,6 +2534,7 @@ TrueMoon:
     获得 {Shield} 点|护盾|。
     获得 {Value1} 点|火力|。
     打出 {Value2} 张牌后死亡。
+  DetailText: 'v1.4.1: 负面状态类型从「特殊」改为「负面」。'
   FlavorText: 真实的满月下，一切皆为狂妄的幻想。
 
 YinglangHowl:
@@ -2758,14 +2763,18 @@ PManaCard:
   Description: 获得{Mana}。
 
 MoonSea:
-  Name: 里之月海
+  Name: 静寂之海
   Description: |-
     获得 {Block} 点|格挡|。
     将一张|纯粹|加入手中。
   UpgradedDescription: |-
     获得 {Block} 点|格挡|。
     从|纯粹|和|水花|中选择一张加入手中。
-  FlavorText: 丰饶之海。
+  FlavorText: |-
+    丰饶之海。
+    位于月球背面的月都结界以内，一般来说应该无法在天空中看到地球。
+
+    巧合的是，这张卡图完成时，我们正在开发新游戏中月球背面太空基地的部分。
 
 FengjiAttack:
   Name: 分解之风
@@ -2773,8 +2782,8 @@ FengjiAttack:
     对所有敌人造成 {Damage} 点伤害。
     |每支付|<sprite="ManaSprite" name="C">：伤害提高 {Value1} 点。
   UpgradedDescription: |-
-    对所有敌人造成 {Damage} 点伤害。
-    |每支付|<sprite="ManaSprite" name="C">或<sprite="ManaSprite" name="U">：伤害提高 {Value1} 点。
+    对所有敌人造成 {Damage} 点伤害 {Value2} 次。
+    |每支付|<sprite="ManaSprite" name="C">：伤害提高 {Value1} 点。
   FlavorText: 全名是「瞬间将森林净化为基本粒子之风的扇子」。
 
 YijiSkill:
@@ -2997,9 +3006,10 @@ BaitianCard:
 MeilingWater:
   Name: 背水阵
   Description: |-
-    获得 {Shield} 点|护盾|。
     获得 {Value1} 点|火力|。
-    {PlayerName}的回合开始时，失去 {Value2} 点生命。
+    将抽牌堆中随机的 {Value2} 张攻击牌移入手中，暂塑为{Mana}。
+    {PlayerName}的回合开始时，失去 {Value1} 点生命。
+  FlavorText: 「快开门，我是送水的。」
 
 NueExile:
   Name: 平安时代的黑云
@@ -3140,8 +3150,13 @@ SakuraBlade:
 
 YouxiangWake:
   Name: 按时起床
-  Description: 两回合后的回合开始时：获得 {Value1} 点|火力|，将抽牌堆中随机的 {Value2} 张攻击牌移入手中。
-  UpgradedDescription: 下回合开始时：获得 {Value1} 点|火力|，将抽牌堆中随机的 {Value2} 张攻击牌移入手中。
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    两回合后的回合开始时：获得 {Value1} 点|火力|，将抽牌堆中随机的 {Value2} 张攻击牌移入手中，暂塑为{Mana}。
+  UpgradedDescription: |-
+    获得 {Shield} 点|护盾|。
+    下回合开始时：获得 {Value1} 点|火力|，将抽牌堆中随机的 {Value2} 张攻击牌移入手中，暂塑为{Mana}。
+  FlavorText: 「谁啊，在这种时间<sprite="TextIcon" name="Anger"> 」
 
 LongArm:
   Name: 延展手臂
@@ -3181,8 +3196,12 @@ SkyWater:
 
 LifeGame:
   Name: 生命游戏
-  Description: 相邻的卡牌|暂塑|为{Mana}。
-  UpgradedDescription: 相邻的卡牌|暂塑|为{Mana}，|升级|它们。
+  Description: |-
+    相邻的卡牌|暂塑|为{Mana}。
+    如果目标是|厄运|或状态牌，改为将其|放逐|。
+  UpgradedDescription: |-
+    相邻的卡牌|暂塑|为{Mana}，|升级|它们。
+    如果目标是|厄运|或状态牌，改为将其|放逐|。
 
 PoisonTeaParty:
   Name: 可疑的茶会
@@ -3342,6 +3361,10 @@ PrismriverAll:
     抽 {Value1} 张牌。
     本场战斗中，{PlayerName}获得的所有法力都转化为|彩色|。
     将|折射日光|、|寂静月光|和|璀璨星光|洗入弃牌堆。
+
+ZhenmiaowanAbility:
+  Name: 小锤的魔力
+  Description: 本场战斗内所有牌的费用降低{Mana}。
 
 JunkoNightmare:
   Name: 震颤的冰封噩梦
