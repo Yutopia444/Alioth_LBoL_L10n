@@ -2044,9 +2044,11 @@ SakuraBlade:
     Apply {Value1} |Lock On|.\nGain {Value1} |Graze|."
 LifeGame:
   Name: Life Game
-  Description: "The cards that were adjacent to {SelfName} |temporarily cost| {Mana}."
-  UpgradedDescription: The cards that were adjacent to {SelfName} |temporarily cost|
-    {Mana}. |Upgrade| them.
+  Description: "The cards that were adjacent to {SelfName} |temporarily cost| {Mana}.\n\
+    If a targeted card is a |Misfortune| or a Status card, it is |Exiled| instead."
+  UpgradedDescription: "The cards that were adjacent to {SelfName} |temporarily cost|\
+    \ {Mana}. |Upgrade| them.\nIf a targeted card is a |Misfortune| or a Status card,\
+    \ it is |Exiled| instead."
 LimaoAttack:
   Name: Full Moon Pompokolin
   Description: "Deal {Damage} damage to each enemy. \nGain {GainMana}.\n|Growth|:\
@@ -2940,14 +2942,13 @@ JinziSuperExtraTurn:
 MoonSea:
   Description: "Gain {Block} |Block|.\nAdd a |Pure| to the hand."
   UpgradedDescription: "Gain {Block} |Block|.\nAdd a |Pure| or a |Splash| to the hand."
-  Name: The Lunar Mare Within
+  Name: Sea of Silence
   FlavorText: The Ocean of Fertility.
 FengjiAttack:
   Description: "Deal {Damage} damage to each enemy.\n|For each <sprite=\"ManaSprite\"\
     \ name=\"C\"> spent|: Deal {Value1} more damage."
   UpgradedDescription: "Deal {Damage} damage to each enemy.\n|For each <sprite=\"\
-    ManaSprite\" name=\"C\"> or <sprite=\"ManaSprite\" name=\"U\"> spent|: Deal {Value1}\
-    \ more damage."
+    ManaSprite\" name=\"C\"> spent|: Deal {Value1} more damage."
   Name: Disintegrating Winds
   FlavorText: Its full name is "Instantaneously-purifies-a-forest-into-elementary-particles-wind
     blowing fan."
@@ -2979,9 +2980,12 @@ TianziRock:
     \ {Value1}.\nThis effect does not stack.\n{PlayerName} can't be applied with |Lock\
     \ On|."
 MeilingWater:
-  Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nAt the start\
-    \ of {PlayerName}'s turn, lose {Value2} life."
+  Description: "Gain {Value1} |Firepower|.\nMove {Value2} random attack card{Value2:plural\
+    \ one='' other='s'} from the draw pile to the hand. {Value2:plural one='It |temporarily\
+    \ costs|' other='They |temporarily cost|'} {Mana}.\nAt the start of {PlayerName}'s\
+    \ turn, lose {Value1} life."
   Name: Last Stand Formation
+  FlavorText: "\"Hurry up and open the door. I'm here to deliver water.\""
 AyaExtraTurn:
   Description: "End {PlayerName}'s turn. Then, take an extra turn.\nAt the start of\
     \ {PlayerName}'s next turn, gain {Value1} |Graze|.\n|Time Limit|{Mana}."
@@ -2990,12 +2994,15 @@ AyaExtraTurn:
   Name: Fantastical Storm
 YouxiangWake:
   Name: Early Bird
-  Description: At the start of {PlayerName}'s second turn after {SelfName} was played,
-    gain {Value1} |Firepower| and put {Value2} random attack card{Value2:plural one=''
-    other='s'} from the draw pile to the hand.
-  UpgradedDescription: At the start of {PlayerName}'s next turn, gain {Value1} |Firepower|
-    and put {Value2} random attack card{Value2:plural one='' other='s'} from the draw
-    pile to the hand.
+  Description: "Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s second turn\
+    \ after {SelfName} was played, gain {Value1} |Firepower| and move {Value2} random\
+    \ attack card{Value2:plural one='' other='s'} from the draw pile to the hand.\
+    \ {Value2:plural one='It |temporarily costs|' other='They |temporarily cost|'}\
+    \ {Mana}."
+  UpgradedDescription: "Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s next\
+    \ turn, gain {Value1} |Firepower| and move {Value2} random attack card{Value2:plural\
+    \ one='' other='s'} from the draw pile to the hand. {Value2:plural one='It |temporarily\
+    \ costs|' other='They |temporarily cost|'} {Mana}."
 AyaWindGirl:
   Name: Wind God Girl
   Description: Gain {Value1} |Wind God Girl|, replenishing |Graze| at the end of {PlayerName}'s
