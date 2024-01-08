@@ -1000,7 +1000,8 @@ TrueMoon:
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nAfter {Value2:plural\
     \ one='% card' other='% cards'} are played, {PlayerName} loses the game."
   FlavorText: Under the true full moon, everything is a conceited fantasy.
-  DetailText: "v1.4.1: Changed the effect's category from \"Special\" to \"Debuff\""
+  DetailText: "v1.4.1: Changed the status effect's type from \"Special\" to \"Debuff\"\
+    ."
 AsteroidBelt:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
     If the last card played this combat was red, gain {Value2} |Charge|."
@@ -1675,6 +1676,8 @@ EventHorizon:
   Name: Event Horizon
   UpgradedDescription: "Enter |Burst|.\nGain {Value1} |Temporary Firepower|.\nAt the\
     \ start of {PlayerName}'s next turn, she loses the game."
+  DetailText: "v1.4.1: Changed the status effect's type from \"Special\" to \"Debuff\"\
+    ."
 HuoliQuankai:
   Description: "While in |Burst|, {PlayerName}'s attacks deal triple damage instead.\n\
     Gain {Value1} |Charge|."
@@ -2934,6 +2937,7 @@ ReimuHuashan:
     \ life and {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName}s lose all\
     \ effects for the rest of combat."
   Name: Receive Guidance
+  FlavorText: '"Yeah, sure, whatever."'
 JinziSuperExtraTurn:
   Name: Century's Doppelgangers
   Description: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
@@ -2950,8 +2954,9 @@ MoonSea:
 FengjiAttack:
   Description: "Deal {Damage} damage to each enemy.\n|For each <sprite=\"ManaSprite\"\
     \ name=\"C\"> spent|: Deal {Value1} more damage."
-  UpgradedDescription: "Deal {Damage} damage to each enemy {Value2} times.\n|For each\
-    \ <sprite=\"ManaSprite\" name=\"C\"> spent|: Deal {Value1} more damage."
+  UpgradedDescription: "Deal {Damage} damage to each enemy {Value2} time{Value2:plural\
+    \ one='' other='s'}.\n|For each <sprite=\"ManaSprite\" name=\"C\"> spent|: Deal\
+    \ {Value1} more damage."
   Name: Disintegrating Winds
   FlavorText: Its full name is "Instantaneously-purifies-a-forest-into-elementary-particles-wind
     blowing fan."
@@ -2983,7 +2988,7 @@ TianziRock:
     \ {Value1}.\nThis effect does not stack.\n{PlayerName} can't be applied with |Lock\
     \ On|."
 MeilingWater:
-  Description: "Gain {Value1} |Firepower|.\nMove {Value2} random attack card{Value2:plural\
+  Description: "Gain {Value1} |Firepower|.\nPut {Value2} random attack card{Value2:plural\
     \ one='' other='s'} from the draw pile to the hand. {Value2:plural one='It |temporarily\
     \ costs|' other='They |temporarily cost|'} {Mana}.\nAt the start of {PlayerName}'s\
     \ turn, lose {Value1} life."
@@ -2998,12 +3003,12 @@ AyaExtraTurn:
 YouxiangWake:
   Name: Early Bird
   Description: "Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s second turn\
-    \ after {SelfName} was played, gain {Value1} |Firepower| and move {Value2} random\
+    \ after {SelfName} was played, gain {Value1} |Firepower| and put {Value2} random\
     \ attack card{Value2:plural one='' other='s'} from the draw pile to the hand.\
     \ {Value2:plural one='It |temporarily costs|' other='They |temporarily cost|'}\
     \ {Mana}."
   UpgradedDescription: "Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s next\
-    \ turn, gain {Value1} |Firepower| and move {Value2} random attack card{Value2:plural\
+    \ turn, gain {Value1} |Firepower| and put {Value2} random attack card{Value2:plural\
     \ one='' other='s'} from the draw pile to the hand. {Value2:plural one='It |temporarily\
     \ costs|' other='They |temporarily cost|'} {Mana}."
 AyaWindGirl:
@@ -3016,4 +3021,4 @@ ZhenmiaowanAbility:
   Description: In this combat, all cards cost {Mana} less.
   Name: Magic of the Mallet
 DollFactory:
-  Name: Doll Factory
+  Name: Doll Workshop
