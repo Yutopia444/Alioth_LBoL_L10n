@@ -329,6 +329,8 @@ EventHorizon:
     \ one=' Temporaire' other='s Temporaires'}|.\nLorsque {PlayerName} débute son\
     \ prochain tour, vous perdez la partie."
   FlavorText: L'homme parfait craint la gravité d'un trou noir.
+  DetailText: "v1.4.1 : Modification du type d'effet de statut de \"Spécial\" à \"\
+    Malus\"."
 UpgradePotion:
   Name: Potion Raffinée
   Description: "Ajoutez {Value2:plural one='% |Potion instable|' other='% |Potions\
@@ -1084,6 +1086,8 @@ TrueMoon:
     \ one='% carte est jouée' other='% cartes sont jouées'}, {PlayerName} perd la\
     \ partie."
   FlavorText: Sous la vraie pleine lune, tout n'est que fantasme vaniteux.
+  DetailText: "v1.4.1 : Modification du type d'effet de statut de \"Spécial\" à \"\
+    Malus\"."
 YuyukoSing:
   Name: Ailes de Papillons
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nCette carte\
@@ -2105,10 +2109,12 @@ MeilingRain:
   Name: Pluie Très Colorée
 LifeGame:
   Name: Jeu de la Vie
-  Description: "Les cartes qui étaient adjacentes à cette carte |coûtent temporairement|\
-    \ {Mana}."
-  UpgradedDescription: Les cartes qui étaient adjacentes à cette carte |coûtent temporairement|
-    {Mana} et sont |améliorées|.
+  Description: "Les cartes qui sont adjacentes à cette carte |coûtent temporairement|\
+    \ {Mana}.\nSi une carte ciblée est un |Malheur| ou une carte Statut, elle est\
+    \ |Exilée| à la place."
+  UpgradedDescription: "Les cartes qui sont adjacentes à cette carte |coûtent temporairement|\
+    \ {Mana} et sont |améliorées|.\nSi une carte ciblée est un |Malheur| ou une carte\
+    \ Statut, elle est |Exilée| à la place."
 SanaeRice:
   Name: Rinçage du Riz
   Description: "Supprimez tous les Malus sur {PlayerName}.\nGagnez {Value1} point{Value1:plural\
@@ -3185,8 +3191,10 @@ PatchouliFriend:
     \ other='s instables'}| à la main."
 MeilingFriend:
   Name: Meiling, Négligente du Devoir
-  Description: '{FriendP}Une fois par tour lorsque {PlayerName} est attaqué : ajoute
-    un |Couteau de lancer| à la main.'
+  Description: '{FriendS}Gagnez {Graze} |Esquive{Graze:plural one='''' other=''s''}|.
+
+    {FriendP}Une fois par tour lorsque {PlayerName} est attaqué : ajoute un |Couteau
+    de lancer| à la main.'
   ExtraDescription2: "{FriendU}Gagnez {Value1} point{Value1:plural one='' other='s'}\
     \ de vie et gagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
 Naodiantu:
@@ -3226,22 +3234,26 @@ ReimuHuashan:
   Description: "|Exilez| une carte |Pouvoir| en main.\nGagnez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie maximum et {Value2} <sprite=\"Point\" name=\"Power\"\
     >.\n{SelfName} perd tous ses effets pour le reste du combat."
+  FlavorText: '"Ouais, bien sûr, peu importe."'
 MoonSea:
-  Name: Mer Lunaire
+  Name: Mer de la Tranquillité
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
     \ une |Pureté| à la main."
   UpgradedDescription: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
     Ajoutez une |Pureté| ou un |Geyser| à la main."
-  FlavorText: La mer de la fécondité.
+  FlavorText: "Mer d'abondance.\nD’une manière générale, la Terre ne devrait pas être\
+    \ visible dans le ciel à l’intérieur des limites de la capitale lunaire située\
+    \ sur la face cachée de la Lune.\n\nPar coïncidence, lorsque le graphisme de cette\
+    \ carte a été terminé, nous étions également en train de créer l'arrière de la\
+    \ lune dans notre nouveau jeu."
 FengjiAttack:
   Name: Vents Désintégrants
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     |Pour chaque <sprite=\"ManaSprite\" name=\"C\"> dépensé| : infligez {Value1} dégât{Value1:plural\
     \ one=' supplémentaire' other='s supplémentaires'}."
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
-    \ chaque ennemi.\n|Pour chaque <sprite=\"ManaSprite\" name=\"C\"> ou <sprite=\"\
-    ManaSprite\" name=\"U\"> dépensé| : infligez {Value1} dégât{Value1:plural one='\
-    \ supplémentaire' other='s supplémentaires'}."
+    \ chaque ennemi.\n|Pour chaque <sprite=\"ManaSprite\" name=\"C\"> dépensé| : infligez\
+    \ {Value1} dégât{Value1:plural one=' supplémentaire' other='s supplémentaires'}."
   FlavorText: Son nom complet est "Ventilateur qui-purifie-instantanément-une-forêt-en-particules-élémentaires".
 YijiSkill:
   Name: Canaliser les Dieux
@@ -3268,19 +3280,26 @@ YijiFirepower:
     {Value2:plural one='Elle a' autre='Elles ont'} |Exil|, |Éthéré| et |Pur|."
 MeilingWater:
   Name: Formation du Dernier Combat
-  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
-    \ {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLorsque {PlayerName}\
-    \ débute son tour, perdez {Value2} points de vie."
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nMettez\
+    \ {Value2:plural one=\"% carte d'attaque aléatoire\" other=\"% cartes d'attaque\
+    \ aléatoires\"} de la pioche dans la main. {Value2:plural one='Elle |coûte temporairement|'\
+    \ other='Elles |coûtent temporairement|'} {Mana}.\nLorsque {PlayerName} débute\
+    \ son tour, perdez {Value1} point{Value1:plural one='' other='s'} de vie."
+  FlavorText: "\"Dépêchez-vous d'ouvrir la porte. Je suis là pour livrer de l'eau.\""
 YouxiangWake:
   Name: Lève-tôt
-  UpgradedDescription: Lorsque {PlayerName} débute son prochain tour, gagnez {Value1}
-    |Puissance{Value1:plural one='' other='s'}| et mettez {Value2} {Value2:plural
-    one='carte d'attaque aléatoire' other='cartes d'attaque aléatoires'} de la pioche
-    dans la main.
-  Description: Lorsque {PlayerName} débute son second tour après que {SelfName} ait
-    été joué, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et mettez
-    {Value2} {Value2:plural one='carte d'attaque aléatoire' other='cartes d'attaque
-    aléatoires'} de la pioche dans la main.
+  UpgradedDescription: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n\
+    Lorsque {PlayerName} débute son prochain tour, gagnez {Value1} |Puissance{Value1:plural\
+    \ one='' other='s'}| et mettez {Value2:plural one=\"% carte d'attaque aléatoire\"\
+    \ other=\"% cartes d'attaque aléatoires\"} de la pioche dans la main. {Value2:plural\
+    \ one='Elle |coûte temporairement|' other='Elles |coûtent temporairement|'} {Mana}."
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nLorsque\
+    \ {PlayerName} débute son second tour après que {SelfName} ait été joué, gagnez\
+    \ {Value1} |Puissance{Value1:plural one='' other='s'}| et mettez {Value2} {Value2:plural\
+    \ one=\"carte d'attaque aléatoire\" other=\"cartes d'attaque aléatoires\"} de\
+    \ la pioche dans la main. {Value2:plural one='Elle |coûte temporairement|' other='Elles\
+    \ |coûtent temporairement|'} {Mana}."
+  FlavorText: «Qui diable est-ce <sprite="TextIcon" name="Anger"> ?»
 AyaExtraTurn:
   Name: Tempête Fantastique
   Description: "{PlayerName} termine son tour, et joue un tour supplémentaire.\nLorsque\
@@ -3325,3 +3344,6 @@ DebugAddRandomCards:
     \ other='s aléatoires'} à la pile de pioche/défausse."
 DollFactory:
   Name: Atelier de Figurines
+ZhenmiaowanAbility:
+  Name: Magie du Maillet
+  Description: Dans ce combat, toutes les cartes coûtent {Mana} de moins.
