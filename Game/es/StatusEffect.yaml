@@ -68,18 +68,19 @@ Graze:
 ExtraTurn:
   Name: Turno Extra
   Brief: Después de que se termine el turno de {OwnerName}, toma otro turno.
-  Description: "{OwnerName} obtendrá {Level:plural one='% turno extra' other='% turnos\
+  Description: "{OwnerName} tomará {Level:plural one='% turno extra' other='% turnos\
     \ extras'} después de este turno."
 LimitedDamage:
   Name: Liberador de artículos
-  Description: '{OwnerName} solo puede recibir {Limit} de daño cada turno. Todavía
+  Description: '{OwnerName} solo puede recibir hasta {Limit} de daño cada turno. Todavía
     se le puede infligir {Count} de daño en este turno.'
   Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de daño en cada
     turno.'
 Invincible:
   Name: Perfección
-  Description: "{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño {Duration:plural\
-    \ one='hasta el final de su turno' other='durante los próximos % turnos'}."
+  Description: "{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido\
+    \ {Duration:plural one='hasta el final de su turno' other='durante los próximos\
+    \ % turnos'}."
   Brief: '{OwnerName} no perderá mas de 1 de vida cada vez que reciba daño durante
     una cierta cantidad de turnos.'
 TurnStartDontLoseBlock:
@@ -110,9 +111,9 @@ TempElectric:
     \ del próximo turno de {OwnerName}."
 Reflect:
   Name: Reflejo
-  Description: Cuando recibe daño, inflige {Level} de daño al atacante, y este efecto
-    se remueve.
-  Brief: Al ser dañada, inflige daño al atacante, y este efecto se remueve.
+  Description: Cuando se recibe daño, inflige {Level} de daño al atacante, y este
+    efecto se remueve.
+  Brief: Cuando se recibe daño, inflige daño al atacante y este efecto se remueve.
 NextAttackUp:
   Name: Ataque Potenciado
   Description: La próxima carta de |Ataque| inflige {Level} mas de daño.
@@ -608,7 +609,7 @@ SakuyaKillerSe:
     agrega |Cuchillos Arrojadizos| a la pila de robo.
   Name: Destripadora en la Niebla
 DrawPhaseAddKnife:
-  Name: Al inicio del turno obtienes |Cuchillos| En lugar de robar cartas
+  Name: Al inicio del turno obtienes |Cuchillos Arrojadizos| en lugar de robar cartas
   Description: Omite la fase de robo de cartas del inicio del turno, agrega {Limit}
     |Cuchillos| a la mano en su lugar.
   Brief: Omite la fase de robo de cartas del inicio del turno, agrega algunos |Cuchillos
@@ -705,8 +706,7 @@ TiangouOrderSe:
 KokoroDanceSe:
   Description: Cada vez que un enemigo recibe un |Efecto Negativo|, {PlayerName} le
     inflige {Level} de daño.
-  Brief: Cada vez que un enemigo obtiene efectos negativos, {PlayerName} le inflige
-    daño.
+  Brief: Cada vez que un enemigo gana efectos negativos, {PlayerName} le inflige daño.
   Name: Danza de las Máscaras Vacías
 SkyWaterSe:
   Description: Roba {Level} carta{Level:plural one='' other='s'} más durante la fase
@@ -1157,17 +1157,17 @@ MeilingWaterSe:
   Brief: Al comienzo del turno de {OwnerName}, pierde vida.
 YouxiangWakeSe:
   Name: Madrugadora
-  Brief: Después de una cierta cantidad de turnos, ganas |Poder| y coloca cartas de
-    ataque aleatorias que cuestan temporalmente {Mana} desde la pila de robo hacia
-    la mano.
+  Brief: Después de algunos turnos, ganas |Poder| y coloca cartas de ataque aleatorias
+    desde la pila de robo hacia la mano. Cuestan temporalmente {Mana}.
   Description: Al comienzo del {Count:ordinal one='siguiente' two='%º' pocos='%º'
     other='%º'} turno de {PlayerName}, {Count:plural one='' other='a partir de ahora'},
     gana {Level} de |Poder| y coloca {Limit} carta{Limit:plural one=' de ataque aleatorio'
-    other='s de ataque aleatorios'} que |cuesta{Limit:plural one=' temporalmente'
-    other='n temporalmente'}| {Mana} desde la pila de robo hacia la mano.
-  ExtraDescription: Al comienzo del siguiente turno, ganas |Poder| y coloca cartas
-    de ataque aleatorias que cuestan temporalmente {Mana} desde la pila de robo hacia
-    la mano.
+    other='s de ataque aleatorios'} desde la pila de robo hacia la mano. |Cuesta{Limit:plural
+    one=' temporalmente' other='n temporalmente'}| {Mana} .
+  ExtraDescription: Al comienzo del siguiente turno, gana {Level} de |Poder| y coloca
+    {Limit} cartas de ataque aleatorias desde la pila de robo hacia la mano. Esa{Limit:plural
+    one=' carta |cuesta temporalmente|' other='s cartas |cuestan temporalmente|'}
+    {Mana}.
 BossAct:
   Description: Después de que {OwnerName} reciba {Count} de daño, realiza una acción
     inmediata, sin finalizar el turno de {PlayerName}.

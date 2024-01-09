@@ -120,7 +120,7 @@ DanmuDuijue:
   FlavorText: Las Reglas de las Cartas de Mágicas nunca han tenido derechos de autor.
     ¿Es esta la prueba del "Espíritu del Internet"?
 ReverseJiejie:
-  Description: Cuando {PlayerName} pierde un buff, obtiene {Value1} de |Barrera|.
+  Description: Cuando {PlayerName} pierde un buff, gana {Value1} de |Barrera|.
   Name: Limite Inverso
 Changzhizhen:
   Name: Borde Permanente
@@ -728,7 +728,7 @@ BoliPhantom:
   Name: Ilusión Hakurei
 KuosanJiejie:
   Name: Expansión de Fronteras
-  Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: Obtiene {Block}\
+  Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: Gana {Block}\
     \ de |Bloqueo|.\n|Por cada <sprite=\"ManaSprite\" name=\"R\"> gastado|: Inflige\
     \ {Damage} de daño a cada enemigo."
   FlavorText: ¡Necesito toneladas de maná filosofal, y los necesito ahora!
@@ -777,8 +777,8 @@ BoliDajiejie:
   FlavorText: Todas las fantasías efímeras durarán aquí por toda la eternidad.
 KuosanLingfu:
   Name: Amuleto de Propagación
-  Description: "Inflige {Damage} de daño a cada enemigo.\nObtienes |Barrera| igual\
-    \ a la cantidad de daño infligido no bloqueado de esa manera."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana |Barrera| igual a la\
+    \ cantidad de daño infligido no bloqueado de esa manera."
 GapLady:
   Description: "Pierde {Value1} de vida.\nGana {Mana}.\nRoba {Value2} cartas."
   Name: Dama de las Brechas
@@ -858,7 +858,7 @@ AsteroidBelt:
     Si la última carta jugada en este combate fue roja, gana {Value2} |Cargas|."
 ScryBlock:
   Name: Premeditación
-  Description: Siempre que {PlayerName} |explora|, obtiene {Value1} de |Bloqueo|.
+  Description: Siempre que {PlayerName} |explora|, gana {Value1} de |Bloqueo|.
   FlavorText: '"Siempre salgo a caminar después de cenar, para ver si la casa de alguien
     está abierta para robarl—quise decir, para visitarles sin cita previa."'
 MarisaSteal:
@@ -1024,6 +1024,8 @@ EventHorizon:
     Al comienzo del próximo turno de {PlayerName}, pierde la partida."
   FlavorText: Teniendo Perfección, no hay necesidad de temer la atracción de un agujero
     negro.
+  DetailText: 'v1.4.1: Se cambió el tipo de efecto de estado de "Especial" a "Efecto
+    Negativo".'
 ReadyForBurst:
   Name: Lista para el Burst
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} |Cargas|."
@@ -1091,8 +1093,8 @@ BlueMogu:
 MasterOfCollection:
   Name: Maestra Coleccionista
   Description: "Elige hasta {Value2} carta{Value2:plural one='' other='s'} en la mano.\
-    \ {Value2:plural one='Obtendrá' other='Obtendrán'} |Retener|.\nCada vez que una\
-    \ carta es |Retenida|, cuesta {Value1} de maná aleatorio menos en este combate."
+    \ {Value2:plural one='Ganará' other='Ganarán'} |Retener|.\nCada vez que una carta\
+    \ es |Retenida|, cuesta {Value1} de maná aleatorio menos en este combate."
   FlavorText: '"¿Basura? ¿Cómo puede ser eso basura?"'
 PurpleMogu:
   Description: Cura {Value1} de vida.
@@ -1454,12 +1456,12 @@ WaterPrincess:
   Name: Princesa Undine
   ExtraDescription1: "Gana {Shield} de |Barrera|.\nPor cada carta en la mano, {SelfName}\
     \ da {Value1} más de |Barrera|. (|Barrera| total {Special})\n|d:Debut: Agrega\
-    \ un |Salpicadura| a la mano.|"
+    \ una |Salpicadura| a la mano.|"
   Description: "Gana {Shield} de |Barrera|.\nPor cada carta en la mano, aumenta la\
     \ |Barrera| de {SelfName} por {Value1}. (|Barrera| total {Special})\n|Debut|:\
-    \ Agrega un |Salpicadura| a la mano."
+    \ Agrega una |Salpicadura| a la mano."
   NonbattleDescription: "Por cada carta en la mano, gana {Value1} de |Barrera|.\n\
-    |Debut|: Agrega un |Salpicadura| a la mano."
+    |Debut|: Agrega una |Salpicadura| a la mano."
   FlavorText: Este libro mágico de tapa dura es resistente hasta 100 metros bajo el
     agua.
 Shadow:
@@ -1726,7 +1728,7 @@ QingeUpgrade:
   Name: Truco de la Ermitaña Malvada
 KokoroDance:
   Name: Danza de las Máscaras Vacías
-  Description: Cada vez que un enemigo obtiene un efecto negativo, le inflige {Value1}
+  Description: Cada vez que un enemigo gana un efecto negativo, le inflige {Value1}
     de daño.
 YukariAttack:
   Name: Límite de la Vida y la Muerte
@@ -1833,7 +1835,8 @@ TrueMoon:
   Description: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Poder|.\nDespués de\
     \ jugar {Value2:plural one='% carta' other='% cartas'}, {PlayerName} pierde la\
     \ partida."
-  DetailText: 'v1.4.1: Se cambió la categoría del efecto de "Especial" a "Efecto Negativo".'
+  DetailText: 'v1.4.1: Se cambió el tipo de efecto de estado de "Especial" a "Efecto
+    Negativo".'
 SuikaBigball:
   Description: "Inflige {Damage} de daño. Luego, inflige {HalfDamage} de daño a los\
     \ demás enemigos.\nPierde {Value1} de |Poder|."
@@ -1857,10 +1860,10 @@ YijiuAttack:
   Name: Trueno del Dios Dragón
 ReisenMana:
   Name: Afinación Visionaria
-  Description: Agrega 2 |Llamas| o 2 |Salpicadura| a la mano.
+  Description: Agrega 2 |Llamas| o 2 |Salpicaduras| a la mano.
 TiangouOrder:
   Description: "Inflige {Damage} de daño.\nCada vez que ese enemigo recibe daño por\
-    \ un ataque, {PlayerName} obtiene {Value1} de |Bloqueo|."
+    \ un ataque, {PlayerName} gana {Value1} de |Bloqueo|."
   Name: Decreto del Gran Tengu
   FlavorText: Megumu Iizunamaru intuyó el punto débil del desarrollo de la danza moderna
     a partir de la lógica subyacente de los signos zodiacales, e iteró la danza popular
@@ -2158,7 +2161,7 @@ IceSaber:
 XiangziEcho:
   Name: Eco de la Montaña
   Description: Elige {Value1} carta{Value1:plural one='' other='s'} en la mano. {Value1:plural
-    one='Obtiene' other='Obtienen'} |Eco|.
+    one='Ganará' other='Ganarán'} |Eco|.
   FlavorText: '"Ya————hoo————"'
 ReimuHeavyAttack:
   Name: Puño de los Hakurei
@@ -2301,8 +2304,8 @@ FairyTeam:
 CirnoEcho:
   Name: Regalo de la Naturaleza
   Description: "Elige {Value1} carta{Value1:plural one='' other='s'} de la pila de\
-    \ descarte y devuélvelo{Value1:plural one='' other='s'} a la mano. {Value1:plural\
-    \ one='Tiene' other='Tienen'} |Eco|."
+    \ descarte y devuélvelo{Value1:plural one='' other='s'} a la mano. Ganará{Value1:plural\
+    \ one='' other='n'} |Eco|."
 ColdBreath:
   Name: Aliento de Diamante
   Description: "Inflige {Damage} de daño a un enemigo aleatorio.\nDa prioridad a los\
@@ -2374,7 +2377,7 @@ FreezeRiver:
 ColdChain:
   Name: Cadena de Logística Fría
   Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
-    de robo y colócalo{Value1:plural one='' other='s'} a la mano, tiene{Value1:plural
+    de robo y colócalo{Value1:plural one='' other='s'} a la mano. Ganará{Value1:plural
     one='' other='n'} |Retener|.
 BestFriend:
   Name: Mejores Amigas
@@ -2937,6 +2940,7 @@ ReimuHuashan:
     \ de vida máxima y {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} solo\
     \ puede activarse una vez por combate."
   Name: Recibir Orientación
+  FlavorText: '"Sí, claro, lo que sea".'
 JinziSuperExtraTurn:
   Name: Doppelgangers del Siglo
   Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
@@ -2948,16 +2952,16 @@ JinziSuperExtraTurn:
 MoonSea:
   Description: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| a la mano."
   Name: Mar de la Tranquilidad
-  UpgradedDescription: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| o un |Salpicadura|\
+  UpgradedDescription: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| o una |Salpicadura|\
     \ a la mano."
   FlavorText: El océano de la fertilidad.
 FengjiAttack:
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Por cada <sprite=\"ManaSprite\"\
     \ name=\"C\"> gastado|: Inflige {Value1} más de daño."
   Name: Vientos Desintegradores
-  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo {Value2} veces.\n\
-    |Por cada <sprite=\"ManaSprite\" name=\"C\"> gastado|: Inflige {Value1} más de\
-    \ daño."
+  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo {Value2} ve{Value2:plural\
+    \ one='z' other='ces'}.\n|Por cada <sprite=\"ManaSprite\" name=\"C\"> gastado|:\
+    \ Inflige {Value1} más de daño."
   FlavorText: Su nombre completo es "Insta-Purifica-un-bosque-en-partículas-elementales-de-abanico
     de viento".
 YijiSkill:
@@ -2979,7 +2983,7 @@ YijiGraze:
 YijiFirepower:
   Name: Fuego de Atago
   Description: "Gana {Value1} de |Poder| y |Poder Temporal|.\nAgrega {Value2} carta{Value2:\
-    \ plural one='' other='s'} de ataque común a la mano.\nTiene{Value2: plural one=''\
+    \ plural one='' other='s'} de ataque común a la mano.\nGanará{Value2: plural one=''\
     \ other='n'} |Exilio|, |Etéreo| y |Puro|."
 TianziRock:
   Description: "Siempre que {PlayerName} recibe daño por un ataque, se reduce {Value1}\
@@ -2993,7 +2997,7 @@ MeilingWater:
     \ de ataque aleatorio' other='s de ataques aleatorios'} desde la pila de robo\
     \ hacia la mano. |Cuesta{Value2:plural one=' temporalmente' other='n temporalmente'}|\
     \ {Mana}.\nAl comienzo del turno de {PlayerName}, pierde {Value1} de vida."
-  Name: Formación de Última Carga
+  Name: Formación de Última Resistencia
   FlavorText: '"Date prisa y abre la puerta. Vengo a repartir el agua."'
 YouxiangWake:
   Name: Madrugadora
@@ -3023,7 +3027,7 @@ AyaWindGirl:
     este por debajo de la cantidad de cargas de la |Chica de la Diosa del Viento|
     al final del turno.
 DollFactory:
-  Name: Fábrica de Muñecas
+  Name: Taller de Muñecas
 ZhenmiaowanAbility:
   Description: En este combate, todas las cartas cuestan {Mana} de maná menos.
   Name: Magia del Mazo
