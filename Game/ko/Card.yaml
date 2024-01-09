@@ -950,6 +950,7 @@ EventHorizon:
   Description: "|버스트| 상태가 됩니다.\n다음 턴 시작 시 사망합니다."
   UpgradedDescription: "|버스트| 상태가 됩니다.\n|일시 화력|을 {Value1} 얻습니다.\n다음 턴 시작 시 사망합니다."
   FlavorText: 빙하는 죽은 듯이 깊은 밤에 녹아내리고, 큰 별들은 초질량 블랙홀에 빨려들어가네...
+  DetailText: 'v1.4.1: 상태 유형이 「특수」에서 「디버프」로 변경되었습니다.'
 HuoliQuankai:
   UpgradedDescription: "|버스트| 시 세 배의 피해를 가합니다.\n|버스트| 상태가 됩니다."
   Name: 화력 전개
@@ -1560,9 +1561,10 @@ RangziSeed:
   Name: 가을의 수확
   Description: 뽑을 카드 더미의 맨 위에 |보충|이 붙은 |활력|을 한 장 추가합니다.
 LifeGame:
-  Description: "이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 됩니다."
+  Description: "이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 됩니다.\n대상이 |액운| 혹은 상태 카드일 시 |소멸|시킵니다."
   Name: 생명유희
-  UpgradedDescription: 이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 되고, 해당 카드는 |강화|됩니다.
+  UpgradedDescription: "이 카드에 맞닿아있는 카드의 코스트가 |일시적으로| {Mana}가 되고, 해당 카드는 |강화|됩니다.\n\
+    대상이 |액운| 혹은 상태 카드일 시 |소멸|시킵니다."
 RangziFanshu:
   Name: 달콤한 고구마
   Description: 전투 종료 시 체력을 {Value1} 회복합니다.
@@ -1776,6 +1778,7 @@ TrueMoon:
     \ 사망합니다."
   FlavorText: 진정한 보름달 밑에서 모든 것은 별 볼 일 없는 환상일 뿐.
   Name: 진정한 보름달
+  DetailText: 'v1.4.1: 상태 유형이 「특수」에서 「디버프」로 변경되었습니다.'
 YinglangHowl:
   Description: 모든 적에게 |일시 화력 저하|를 {Value1}, |취약|을 {Value2} 줍니다.
   Name: 만월의 포효
@@ -2370,7 +2373,9 @@ FangkongSixu:
   UpgradedDescription: 손에서 카드를 원하는만큼 버립니다. 버린 갯수만큼 방어를 {Value1} 얻습니다.
 MeilingFriend:
   Name: 근무태만자, 홍 메이링
-  Description: '{FriendP}{PlayerName}가 공격을 받을 시 한 번 발동됩니다: |단검|을 한 장 얻습니다.'
+  Description: '{FriendS}|그레이즈|를 {Graze} 얻습니다.
+
+    {FriendP}{PlayerName}가 공격을 받을 시 한 번 발동됩니다: |단검|을 한 장 얻습니다.'
   ExtraDescription2: '{FriendU}체력을 {Value1} 회복합니다. |화력|을 {Value2} 얻습니다.'
 QiangweiDiyu:
   Name: 로즈 지옥
@@ -2385,17 +2390,19 @@ ReimuHuashan:
     \ name=\"Power\">를 {Value2} 얻습니다.\n{SelfName}은 한 전투 당 한 번만 발동할 수 있습니다."
   ExtraDescription1: "|d:손에서 능력 카드를 한 장 소멸시킵니다.\n최대 체력을 {Value1} 얻고, <sprite=\"Point\"\
     \ name=\"Power\">를 {Value2} 얻습니다.|\n{SelfName}은 한 전투 당 한 번만 발동할 수 있습니다."
+  FlavorText: '"당근 빳따죠..."'
 MoonSea:
-  Name: 고요의 바다 뒷면
+  Name: 고요의 바다
   Description: "|방어|를 {Block} 얻습니다.\n|순수|를 한 장 얻습니다."
   UpgradedDescription: "|방어|를 {Block} 얻습니다.\n|순수|와 |물결| 중 한 장을 선택해 얻습니다."
-  FlavorText: 풍요의 바다.
+  FlavorText: "풍요의 바다.\n달의 뒷면에 있는 달의 도시 결계 내부에 있으므로, 일반적으론 지구를 바라볼 수 없다.\n\n우연히도,\
+    \ 이 카드의 그림이 완성되었을 때, 우리의 신작 게임에서도 달의 뒷면을 만들고 있었다."
 FengjiAttack:
   Name: 흩날리는 바람
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n<sprite=\"ManaSprite\" name=\"C\">를 지불할\
     \ 시: 주는 피해가 {Value1} 증가합니다."
   UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n<sprite=\"ManaSprite\" name=\"C\"\
-    >나 <sprite=\"ManaSprite\" name=\"U\">를 지불할 시: 주는 피해가 {Value1} 증가합니다."
+    >를 지불할 시: 주는 피해가 {Value1} 증가합니다."
   FlavorText: 풀 네임 - 「숲을 순식간에 소립자 수준까지 정화시킬 수 있는 정도의 바람을 일으키는 부채」
 YijiEarthSpike:
   Name: 기온의 분쇄
@@ -2423,14 +2430,16 @@ TianziRock:
     \ |록온|에 걸리지 않습니다."
 MeilingWater:
   Name: 배수진
-  Description: "|보호막|을 {Shield} 얻습니다.\n|화력|을 {Value1} 얻습니다.\n내 턴 시작 시 체력을 {Value2}\
-    \ 잃습니다."
+  Description: "|화력|을 {Value1} 얻습니다.\n뽑을 카드 더미에서 무작위 카드 {Value2}장을 손으로 가져옵니다. 해당 카드들은\
+    \ 일시적으로 {Mana}의 코스트를 갖습니다.\n내 턴 시작 시 체력을 {Value1} 잃습니다."
+  FlavorText: '"물 배달 왔습니다. 문 여세요."'
 YouxiangWake:
   Name: 이른 기상
-  Description: 이 카드를 사용하고 2 턴 뒤 턴 시작 시 |화력|을 {Value1} 얻고, 뽑을 카드 더미에서 무작위 공격 카드 {Value2}장을
-    손으로 가져옵니다.
-  UpgradedDescription: 이 카드를 사용한 다음 턴, 턴 시작 시 |화력|을 {Value1} 얻고, 뽑을 카드 더미에서 무작위 공격
-    카드 {Value2}장을 손으로 가져옵니다.
+  Description: "|보호막|을 {Shield} 얻습니다.\n이 카드를 사용하고 2 턴 뒤 턴 시작 시 |화력|을 {Value1} 얻고,\
+    \ 뽑을 카드 더미에서 무작위 공격 카드 {Value2}장을 손으로 가져옵니다. 해당 카드들은 일시적으로 {Mana}의 코스트를 갖습니다."
+  UpgradedDescription: "|보호막|을 {Shield} 얻습니다.\n이 카드를 사용한 다음 턴, 턴 시작 시 |화력|을 {Value1}\
+    \ 얻고, 뽑을 카드 더미에서 무작위 공격 카드 {Value2}장을 손으로 가져옵니다. 해당 카드들은 일시적으로 {Mana}의 코스트를 갖습니다."
+  FlavorText: '"대체 이 시간에 누군데<sprite="TextIcon" name="Anger">"'
 AyaExtraTurn:
   Name: 환상풍미
   Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n다음 턴 시작 시 |그레이즈|를 {Value1} 얻습니다.\n\
@@ -2464,3 +2473,6 @@ DebugAddHandCards:
   Description: '테스트 카드: 손의 모든 카드를 소멸시킵니다. 그 후 무작위 {Value1}장을 가져옵니다.'
 DollFactory:
   Name: 인형 공방
+ZhenmiaowanAbility:
+  Name: 요술 망치의 마력
+  Description: 이번 전투에서 모든 카드의 코스트가 {Mana} 감소합니다.
