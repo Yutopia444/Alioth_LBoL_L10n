@@ -787,6 +787,7 @@ EventHorizon:
     下回合開始時死亡。
   FlavorText: 天衣無縫的人無畏黑洞的重力。
 
+  DetailText: 'v1.4.1: 負面狀態類型從「特殊」改為「負面」。'
 PotionDefense:
   Name: 伴星飛行
   Description: |-
@@ -2306,6 +2307,7 @@ TrueMoon:
     打出 {Value2} 張牌後死亡。
   FlavorText: 真實的滿月下，一切皆為狂妄的幻想。
 
+  DetailText: 'v1.4.1: 負面狀態類型從「特殊」改為「負面」。'
 YinglangHowl:
   Name: 滿月咆哮
   Description: 對所有敵人施加 {Value1} 點|暫失火力|及 {Value2} 回合|易傷|。
@@ -2826,8 +2828,8 @@ SkyWater:
 
 LifeGame:
   Name: 生命遊戲
-  Description: 相鄰的卡牌|暫塑|為{Mana}。
-  UpgradedDescription: 相鄰的卡牌|暫塑|為{Mana}，|升級|它們。
+  Description: "相鄰的卡牌|暫塑|為{Mana}。\n如果目標是|厄運|或狀態牌，改為將其|放逐|。"
+  UpgradedDescription: "相鄰的卡牌|暫塑|為{Mana}，|升級|它們。\n如果目標是|厄運|或狀態牌，改為將其|放逐|。"
 
 PoisonTeaParty:
   Name: 可疑的茶會
@@ -3601,7 +3603,9 @@ PatchouliFriend:
     name="Power">。'
   ExtraDescription2: '{FriendU}將 {Value2} 張|不穩定藥劑|加入手中。'
 MeilingFriend:
-  Description: '{FriendP}當{PlayerName}受到一整輪攻擊時觸發一次：將一張|飛刀|加入手中。'
+  Description: '{FriendS}獲得 {Graze} 層|閃避|。
+
+    {FriendP}當{PlayerName}受到一整輪攻擊時觸發一次：將一張|飛刀|加入手中。'
   Name: 玩忽職守紅美鈴
   ExtraDescription2: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
 Naodiantu:
@@ -3620,15 +3624,15 @@ QiangweiDiyu:
   Name: 薔薇地獄
   Description: 獲得 {Value1} 層|戀心|。
 MoonSea:
-  Name: 裏之月海
+  Name: 靜寂之海
   Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
   UpgradedDescription: "獲得 {Block} 點|格擋|。\n從|純粹|和|水花|中選擇一張加入手中。"
-  FlavorText: 豐饒之海。
+  FlavorText: "豐饒之海。\n位於月球背面的月都結界以內，一般來說應該無法在天空中看到地球。\n\n巧合的是，這張卡圖完成時，我們正在開發新遊戲中月球背面太空基地的部分。"
 FengjiAttack:
   Description: "對所有敵人造成 {Damage} 點傷害。\n|每支付|<sprite=\"ManaSprite\" name=\"C\">：傷害提高 {Value1} 點。"
   Name: 分解之風
   UpgradedDescription: "對所有敵人造成 {Damage} 點傷害。\n|每支付|<sprite=\"ManaSprite\" name=\"\
-    C\">或<sprite=\"ManaSprite\" name=\"U\">：傷害提高 {Value1} 點。"
+    C\">：傷害提高 {Value1} 點。"
   FlavorText: 全名是「瞬間將森林淨化爲基本粒子之風的扇子」。
 YijiSkill:
   UpgradedDescription: "從 {Value1} 個隨機的|e:神明技能|中選擇一個生效。\n稀有技能可能會出現。"
@@ -3640,6 +3644,7 @@ ReimuHuashan:
     Power\">。\n每場戰鬥中，只有第一張{SelfName}生效。"
   ExtraDescription1: "|d:選擇手中的一張能力牌放逐。\n獲得 {Value1} 點最大生命值和 {Value2} 點<sprite=\"Point\"\
     \ name=\"Power\">。 |\n每場戰鬥中，只有第一張{SelfName}生效。"
+  FlavorText: 「對對對，你說的對。」
 YijiEarthSpike:
   Name: 裂地尖刺/祇園之力
   Description: 對所有敵人造成 {Damage} 點傷害，施加 {Value1} 回合|虛弱|。
@@ -3648,7 +3653,8 @@ YijiPurify:
   Description: '|淨化|所有手牌，移除費用的有色部分，直到戰鬥結束。'
 MeilingWater:
   Name: 背水陣
-  Description: "獲得 {Shield} 點|護盾|。\n獲得 {Value1} 點|火力|。\n{PlayerName}的回合開始時，失去 {Value2} 點生命。"
+  Description: "得到 {Value1} 點|火力|。\n將抽牌堆中隨機的 {Value2} 張攻擊牌移入手中，暫塑為{Mana}。\n{PlayerName}的回合開始時，失去 {Value1} 點生命。"
+  FlavorText: 「快開門，我是送水的。」
 YijiGraze:
   Name: 天宇受賣命
   Description: "獲得 {Value1} 層|閃避|。\n抽 {Value2} 張牌。"
@@ -3662,8 +3668,9 @@ TianziRock:
   UpgradedDescription: "{PlayerName}受到的攻擊傷害降低 {Value1} 點。\n這一效果無法疊加。\n{PlayerName}免疫於|鎖定|。"
 YouxiangWake:
   Name: 按時起床
-  Description: 兩回合後的回合開始時：獲得 {Value1} 點|火力|，將抽牌堆中隨機的 {Value2} 張攻擊牌移入手中。
-  UpgradedDescription: 下回合開始時：獲得 {Value1} 點|火力|，將抽牌堆中隨機的 {Value2} 張攻擊牌移入手中。
+  Description: "獲得 {Shield} 點|護盾|。\n兩回合後的回合開始時：獲得 {Value1} 點|火力|，將抽牌堆中隨機的 {Value2} 張攻擊牌移入手中，暫塑為{Mana}。"
+  UpgradedDescription: "獲得 {Shield} 點|護盾|。\n下回合開始時：獲得 {Value1} 點|火力|，將抽牌堆中隨機的 {Value2} 張攻擊牌移入手中，暫塑為{Mana}。"
+  FlavorText: 「誰啊，在這種時間<sprite="TextIcon" name="Anger"> 」
 AyaExtraTurn:
   Name: 「幻想風靡」
   Description: "結束{PlayerName}的回合，進行一個額外的回合。\n下一回合開始時，獲得 {Value1} 層|閃避|。\n|時間有限|{Mana}。"
@@ -3693,3 +3700,6 @@ DebugAddHandCards:
   Description: 測試卡牌：放逐所有手牌，然後添加 {Value1} 張隨機的卡牌到手中。
 DollFactory:
   Name: 人形工房
+ZhenmiaowanAbility:
+  Name: 小槌的魔力
+  Description: 本場戰鬥內所有牌的費用降低{Mana}。
