@@ -1065,6 +1065,7 @@ EventHorizon:
   UpgradedDescription: "Войдите в |Раж|.\nДаёт {Value1} |Временной огневой мощи|.\n\
     {PlayerName} проиграет в начале следующего хода"
   FlavorText: Сильнейший человек не должен бояться силы притяжения черной дыры.
+  DetailText: 'v1.4.1: Тип эффекта статуса изменен с «Особый» на «Дебафф».'
 HuoliQuankai:
   Description: "В эффекте |Ража| |Атаки| {PlayerName:g} наносят тройной урон вместо\
     \ двойного.\nДаёт {Value1} |Заряда|."
@@ -1301,7 +1302,7 @@ ChengDefense:
     \ хода."
   Name: Гул Тяньсяна
 KokoroDance:
-  Description: Когда враг получает дебаф, ему наносится {Value1} урона.
+  Description: Когда враг получает |Дебаф|, ему наносится {Value1} урона.
   Name: Маскарадный танец
 SijiCard:
   Description: Выберите карту из руки. Если это карта |Проклятия| или |Статуса|, |Изгоните|
@@ -2384,3 +2385,48 @@ DeployPenglai:
 TriggerAllPassive:
   Name: (WIP)
   Description: (WIP)
+PatchouliFriend:
+  ExtraDescription1: '{FriendA}Даёт {Value1} |Огневой Мощи| и |Духовности|. Даёт {Power}
+    <sprite="Point" name="Power">.'
+  Description: '{FriendP}Превращает {PassiveColor} случайную ману в |Мерцающую ману|.'
+  Name: Пачули, элементальный алхимик
+  ExtraDescription2: "{FriendU}Добавляет {Value2:plural one='% |«Нестабильное зелье»|'\
+    \ other='% |Нестабильных зелий|'} в руку."
+MeilingFriend:
+  Name: Мэйлин, небрежная привратница
+  Description: "{FriendS}Даёт {Graze} |Уворот|.\n{FriendP}Каждый раз когда {PlayerName}\
+    \ получает урон от атаки противника, добавляет |«Метательный нож»| в руку."
+  ExtraDescription2: '{FriendU}Даёт {Value1} здоровья и {Value2} |Огневой Мощи|.'
+PiankeNingjing:
+  Name: Приход в себя
+  Description: "Даёт {Block} |Защиты|.\nЕсли возможно, покиньте состояние |Умиротворения|\
+    \ и возьмите {Value1:plural one='% карту' other='% карт'}."
+Naodiantu:
+  Name: Электроэнцефалограф
+  Description: '|Выбрать|: Нанести {Damage} урона противнику с наибольшим количеством
+    здоровья, или получить {Block} |Защиты| и увеличить урон от следующей атаки {SelfName}
+    на {Value1}.'
+  ExtraDescription1: Наносит {Damage} урона противнику с наибольшим количеством здоровья.
+  ExtraDescription2: Получить {Block} |Защиты| и увеличить урон от следующей атаки
+    {SelfName} на {Value1}.
+GududeXin:
+  UpgradedDescription: "Получить {Value1} |Любви|.\n|Дебют|: Получить дополнительно\
+    \ {Value1} |Любви|."
+  Name: Одинокое сердце
+  Description: Получить {Value1} |Любви|.
+HeartDance:
+  Name: Танец сердца
+  Description: "Наносит {Damage} урона.\nВойдите в состояние |Умиротворенности|."
+RelianJingji:
+  Name: Шипы страсти
+  Description: "Наносит {Damage} урона.\n|Когда разыгрывается соседняя карта|: Увеличивает\
+    \ урон карты {SelfName} на {Value1} до следующего раза пока она будет сыграна."
+ReimuHuashan:
+  Name: Получить совет
+  Description: "|Изгоняет| карту |Навыка| из руки.\nПолучить {Value1} максимального\
+    \ здоровья и {Value2} <sprite=\"Point\" name=\"Power\">.\n{SelfName} теряет все\
+    \ эффекты до конца боя."
+  ExtraDescription1: "|d:Изгоняет карту навыка из руки.\nПолучить {Value1} максимального\
+    \ здоровья и {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} теряет все\
+    \ эффекты до конца боя."
+  FlavorText: '"Ага, конечно, как угодно."'
