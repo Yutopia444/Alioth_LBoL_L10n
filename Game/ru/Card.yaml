@@ -382,8 +382,9 @@ AttackMagic:
     \ ножа»|'} в руку."
   Name: Коварные пули
 BladePower:
-  Description: "Даёт |{Value1}| |Огневой мощи|.\n|Когда берется в руку|: Если это\
-    \ единственная карта в вашей руке, она |временно стоит| {Mana}."
+  Description: "Даёт {Value1} |Огневой мощи|.\n|Когда берется в руку|: Если это единственная\
+    \ карта в вашей руке, эффект удваивается (работает до момента пока карта покинет\
+    \ руку)."
   Name: Ослепительный рывок
 SilverJump:
   Description: "Накладывает {Value1} |Уязвимости|.\nДобавляет {Value2:plural one='%\
@@ -540,6 +541,10 @@ WaterPrincess:
   Name: Принцесса-ундина
   ExtraDescription1: "Даёт {Value1} |Барьера| за каждую карту в руке.\n|d:Дебют:|\
     \ Добавляет |Всплеск| в руку."
+  FlavorText: Этот волшебный путеводитель в твердом переплете водонепроницаем на глубине
+    до 100 метров.
+  NonbattleDescription: "Даёт {Value1} |Барьера| за каждую карту в руке.\n|Дебют|:\
+    \ Добавляет |Всплеск| в руку."
 RingoJinghua:
   Name: Очищение земли
   Description: "|Изгоните| до {Value1} карт из руки.\nДаёт {Value2} <sprite=\"Point\"\
@@ -577,11 +582,12 @@ GuijiZaoxingHu:
     \ карты'}.\nЭта карта превратится в другую |Скульптуру| до конца битвы."
   Name: Навык скульптора -кривая линия
 YonglinCard:
-  Description: В каждом ходу когда {PlayerName} разыгрывает свою первую карту, в руку
-    добавляется её копия. Она |временно стоит| {Mana} и получает эффекты |Изгнания|
-    и |Эфирности|.
+  Description: В конце хода {PlayerName} добавляет {Value1} |Фальшивую луну| в колоду
+    добора.
   Name: Повязка мудреца
   FlavorText: Великий мудрец решил прятаться, неужели прятаться это акт мудрости?
+  UpgradedDescription: "В конце хода {PlayerName} добавляет {Value1} |Фальшивую луну|\
+    \ в колоду добора.\nДобавляет {Value2} |Фальшивую луну| в колоду добора."
 Boundary:
   Description: Даёт {Block} |Защиты|.
   Name: Заслон
@@ -615,7 +621,7 @@ TimeWalk:
 PerfectServant:
   Description: "|За каждую затраченную этой картой| <sprite=\"ManaSprite\" name=\"\
     W\"><sprite=\"ManaSprite\" name=\"W\">: В начале следующего хода {PlayerName:g}\
-    \ стоимость всех карт в руке |временно понизится| на 1 случайную ману>.\n|За каждую\
+    \ стоимость всех карт в руке |временно понизится| на 1 случайную ману.\n|За каждую\
     \ затраченную этой картой| <sprite=\"ManaSprite\" name=\"U\">: В начале следующего\
     \ хода {PlayerName} возьмёт дополнительную карту и получит {Mana}."
   Name: Идеальная служанка
@@ -2389,7 +2395,7 @@ PatchouliFriend:
   ExtraDescription1: '{FriendA}Даёт {Value1} |Огневой Мощи| и |Духовности|. Даёт {Power}
     <sprite="Point" name="Power">.'
   Description: '{FriendP}Превращает {PassiveColor} случайную ману в |Мерцающую ману|.'
-  Name: Пачули, элементальный алхимик
+  Name: Пачули, стихийный алхимик
   ExtraDescription2: "{FriendU}Добавляет {Value2:plural one='% |«Нестабильное зелье»|'\
     \ other='% |Нестабильных зелий|'} в руку."
 MeilingFriend:
@@ -2401,19 +2407,21 @@ PiankeNingjing:
   Name: Приход в себя
   Description: "Даёт {Block} |Защиты|.\nЕсли возможно, покиньте состояние |Умиротворения|\
     \ и возьмите {Value1:plural one='% карту' other='% карт'}."
+  UpgradedDescription: "Даёт {Block} |Защиты|.\nЕсли это возможно, покиньте текущее\
+    \ |Состояние| и возьмите {Value1:plural one='% карту' other='% карт'}."
 Naodiantu:
   Name: Электроэнцефалограф
-  Description: '|Выбрать|: Нанести {Damage} урона противнику с наибольшим количеством
-    здоровья, или получить {Block} |Защиты| и увеличить урон от следующей атаки {SelfName}
+  Description: '|Выбрать|: Наносит {Damage} урона противнику с наибольшим количеством
+    здоровья, или даёт {Block} |Защиты| и увеличивает урон от следующей атаки {SelfName}
     на {Value1}.'
   ExtraDescription1: Наносит {Damage} урона противнику с наибольшим количеством здоровья.
-  ExtraDescription2: Получить {Block} |Защиты| и увеличить урон от следующей атаки
-    {SelfName} на {Value1}.
+  ExtraDescription2: Даёт {Block} |Защиты| и увеличивает урон от следующей атаки {SelfName}
+    на {Value1}.
 GududeXin:
-  UpgradedDescription: "Получить {Value1} |Любви|.\n|Дебют|: Получить дополнительно\
-    \ {Value1} |Любви|."
+  UpgradedDescription: "Даёт {Value1:plural one='% |Любовь|' other='% |Любви|'}.\n\
+    |Дебют|: Даёт дополнительно {Value1:plural one='% |Любовь|' other='% |Любви|'}."
   Name: Одинокое сердце
-  Description: Получить {Value1} |Любви|.
+  Description: Даёт {Value1:plural one='% |Любовь|' other='% |Любви|'}.
 HeartDance:
   Name: Танец сердца
   Description: "Наносит {Damage} урона.\nВойдите в состояние |Умиротворенности|."
@@ -2430,3 +2438,18 @@ ReimuHuashan:
     \ здоровья и {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} теряет все\
     \ эффекты до конца боя."
   FlavorText: '"Ага, конечно, как угодно."'
+Yehuchan:
+  Name: Иллюзия просвещения
+  FlavorText: ''
+  Description: "Даёт {Value1:plural one='% |Уворот|' other='% |Уворота|'} и {Value2:plural\
+    \ one='% |Захват|' other='% |Захвата|'}.\n|Интуиция|: Войдите в состояние |Богоявления|."
+YoubiKongjuzheng:
+  Description: "Даёт {Block} |Защиты|.\n|Интуиция|: Даёт {Shield} |Барьера|."
+  Name: Клаустрофобия
+FakeMoon:
+  Name: Фальшивая Луна
+YaoguaiNaodianbo:
+  Description: "Наносит {Damage} урона и даёт {Value1:plural one='% |Любовь|' other='%\
+    \ |Любви|'}.\n|Интуиция|: Даёт {Mana}."
+HuiguiLizhi:
+  Description: В конце хода {PlayerName} войдите в состояние |Умиротворенности|.
