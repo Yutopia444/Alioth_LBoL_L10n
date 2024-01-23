@@ -282,9 +282,10 @@ SummerFlower:
   Description: "Inflige {Damage} de daño.\nDurante el resto del combate, cada {SelfName}\
     \ inflige {Value1} más de daño."
   Name: Flores de Verano
+  FlavorText: Esta roca puede darle a tu cerebro una forma realmente hermosa.
 MarisaAttackB:
   Description: Inflige {Damage} de daño.
-  Name: Laser Ilusorio
+  Name: Láser Ilusorio
   FlavorText: '"¡Si esquivas, el tipo de detrás será golpeado!" (Nah, no lo hace.)'
 KoishiAttackG:
   Description: Inflige {Damage} de daño.
@@ -317,15 +318,23 @@ ToolDraw:
 ToolWeak:
   Name: Linterna
   Description: "Aplica {Value1} de |Débil|.\n|Limitado【{DeckCounter}】|"
+  FlavorText: '"Kappa Specials SL. promete solemnemente que este modelo de linternas
+    retro de mano que definitivamente no tiene ningún efecto secundario, como dejar
+    a uno sin aliento o provocar un envejecimiento acelerado."'
 ToolHeal:
   Name: Comida Enlatada
   Description: "Cura {Value1} de vida.\n|Limitado【{DeckCounter}】|"
+  FlavorText: Durante el incidente no es conveniente salir al aire libre. Los kappas
+    aprovecharán esta oportunidad para inundar el supermercado y comprar descaradamente
+    todas las provisiones de latas de shirikodama.
 ToolAmulet:
   Name: Amuleto Desechable
   Description: "Gana {Value1} |Amuleto|.\n|Limitado【{DeckCounter}】|"
 ToolMana:
   Name: Bebida Energética
   Description: "Gana {Mana}.\n|Limitado【{DeckCounter}】|"
+  FlavorText: Insista en probar los pepinos recién exprimidos del Barranco Genbu.
+    "He estado bebiendo esto desde que era una niña." - Byakuren Hijiri
 ToolMicai:
   Description: "Gana |Camuflaje Óptico| por {Value1} turno{Value1:plural one='' other='s'}.\n\
     |Limitado【{DeckCounter}】|"
@@ -363,6 +372,9 @@ RabbitFoot:
 GainTreasure:
   Name: Lluvia de Dinero
   Description: Gana {Value1} <sprite="Point" name="Gold">.
+  FlavorText: ¿Crees que usar el dinero como una recompensa ha arruinado la autenticidad
+    de los duelos de las cartas mágicas? No te preocupes, la tecnología X blockchain
+    utilizará métodos más civilizados para resolver sus problemas de financiación.
 LilyoftheValley:
   Name: Lirio del Valle
   Description: "Gana {Mana}.\n|Limitado【{DeckCounter}】|"
@@ -408,8 +420,8 @@ AyaNewsKoishiSp:
 CirnoBlockG:
   Description: Gana {Block} de |Bloqueo|.
   Name: Protección de Hojas
-  FlavorText: Las hadas de Hawái son muy buenas para usar este movimiento mientras
-    bailan.
+  FlavorText: Las hadas de Hawái tienen una habilidad especial para utilizar este
+    movimiento de baile.
 CirnoAttackG:
   Name: Hoja Afilada de Escarcha
   Description: Inflige {Damage} de daño.
@@ -463,8 +475,8 @@ CoolBreeze:
 CirnoBlockU:
   Description: Gana {Block} de |Bloqueo|.
   Name: Escudo de Cristal
-  FlavorText: La carne inglesa congelada durante muchos años también es un arma de
-    defensa personal.
+  FlavorText: La carne de vacuno inglesa, criogenizada durante muchos años también
+    puede utilizarse como una arma de defensa personal.
 MingzhuAntou:
   Description: "Inflige {Damage} de daño a cada enemigo.\nElige 1 de {Value1} |Orbes\
     \ Yin-Yang del Arcoíris| para agregarla a la mano.\nPor cada |Orbe Yin-Yang| en\
@@ -504,8 +516,8 @@ JinjiBlock:
 IceLaser:
   Description: "Inflige {Damage} de daño.\nAplica |Frío|."
   Name: Rayo Congelador
-  FlavorText: Gracias a esto, Cirno ganó el Premio Nobel de Física en 1997 como una
-    colaboradora especial.
+  FlavorText: Por esto, Cirno ganó el Premio Nobel de Física en 1997, como una colaborador
+    especial.
   UpgradedDescription: "Inflige {Damage} de daño.\nAplica |Frío|.\nSe repite el efecto\
     \ en otro enemigo aleatorio."
 NewsTidbit:
@@ -558,6 +570,8 @@ Zhukeling:
 Wushuai:
   Description: '|Cuando se roba|: Gana {Value1} de |Marcado| y se |Exilia| {SelfName}.'
   Name: Espada Brillante
+  FlavorText: '"¡Mira al cielo! ¡Deberías poder ver tu estrella con el presagio de
+    tu muerte!'
 XiaosanJingxia:
   Description: '|Al final del turno|: Gana {Value1} |Débil|.'
   Name: Asustada
@@ -723,9 +737,10 @@ Jiangshen:
     \ a la mano."
   FlavorText: "\"Rezo a los dioses para que la primera carta sea 'Rompiendo las Fronteras'...\""
 BoliPhantom:
-  Description: Siempre que {PlayerName} |Exilia| una carta que no sea |Aguja de persuasión|,
-    agrega una |Aguja de persuasión| a la mano que |cuesta temporalmente| {Mana}.
+  Description: Siempre que una carta que no sea una |Aguja Persuasiva| es |Exiliada|,
+    agrega una |Aguja Persuasiva| a la mano que |cuesta temporalmente| {Mana}.
   Name: Ilusión Hakurei
+  FlavorText: '"Jutsu de Transformación: Erizo"'
 KuosanJiejie:
   Name: Expansión de Fronteras
   Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: Gana {Block}\
@@ -856,6 +871,7 @@ AsteroidBelt:
   Name: Cinturón de Asteroides
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
     Si la última carta jugada en este combate fue roja, gana {Value2} |Cargas|."
+  FlavorText: Mini-Hakkero en uso. No mires fijamente al haz de luz.
 ScryBlock:
   Name: Premeditación
   Description: Siempre que {PlayerName} |explora|, gana {Value1} de |Bloqueo|.
@@ -879,11 +895,17 @@ PotionJungle:
   Name: Bosque Fluorescente
   Description: Al final de cada turno de {PlayerName}, agrega {Value1:plural one='%
     |Poción Inestable|' other='% |Pociones Inestables|'} a la pila de descarte.
+  FlavorText: El uso de pociones explosivas nutre las materias primas necesarias para
+    elaborarlas, completando así el ciclo de la energía mágica.
 MarisaEat:
   ExtraDescription1: "Ganas {Value1} de |Concentración|.\n|d:Debut|: Cura {Value2}\
     \ de vida."
   Name: Festín de Hongos
   Description: "Gana {Value1} de |Concentración|.\n|Debut|: Cura {Value2} de vida."
+  FlavorText: El "Plato de hongos" comprado en la "Fiesta de la Olla Caliente del
+    Santuario Hakurei" fue cultivado y seleccionado personalmente por Marisa. Para
+    garantizar que no haya absolutamente ningún problema con la seguridad alimentaria,
+    se ha sometido a numerosos procesos industriales secretos.
 ScryAttack:
   FlavorText: La habilidad de encontrar a la Osa Mayor bajo el cielo nocturno se ha
     perdido en el exterior.
@@ -893,10 +915,13 @@ ScryAttack:
 NightSeeStar:
   Name: Observación Estelar
   Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
+  FlavorText: Usando la astrología, observa el cielo nocturno para adivinar el almuerzo
+    de mañana.
 HuojianSaoba:
   Name: Escoba Cohete
   Description: "Gana {Value1} de |Evasión|.\nGana {Value2} |Carga{Value2:plural one=''\
     \ other='s'}|."
+  FlavorText: Un propulsor reutilizable que es muy buscado en el mundo exterior.
 ShinningPotion:
   Description: "Gana {Block} de |Bloqueo|.\nAgrega una |Poción Inestable| a la pila\
     \ de robo.\n|Sobrecarga {Value2}|: Agrega {Value1} en su lugar."
@@ -956,6 +981,9 @@ RunAway:
   Name: Escapar
   Description: "Descarta cada carta de la mano. Las cartas descartadas de esta manera\
     \ |cuestan temporalmente| {Mana} menos.\nGana {Value1} de |Evasión|."
+  FlavorText: '"Si Marisa pudiera salir de aquí a plena luz del día, no le importaría
+    tanto. Las pérdidas sufridas por romper las paredes son mucho mayores que lo que
+    valen unos cuantos libros."'
 ExilePotion:
   UpgradedDescription: Elige hasta {Value1} cartas de la mano, pila de robo y pila
     de descarte. |Exílialo{Value1:plural one='' other='s'}| y agrega ese número de
@@ -963,6 +991,8 @@ ExilePotion:
   Name: Utilización de Residuos
   Description: Elige hasta {Value1} cartas de la mano. |Exílialo{Value1:plural one=''
     other='s'}| y agrega ese número de |Pociones Inestables| a la pila de descarte.
+  FlavorText: '"Los monjes tienen que abandonar todas las posesiones mundanas. Bueno,
+    eso simplifica las cosas. De todos modos, estas cosas no son mías."'
 OpenUniverse:
   Description: "Retira una carta de la pila de robo del combate.\nAgrega 2 |Copias|\
     \ de ello a la mano que |costara temporalmente| {Mana} y tendrá |Exilio|."
@@ -1016,6 +1046,9 @@ ThrowBigStar:
   Name: Explosión de Estrella Roja
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Sobrecarga {Value2}|: Inflige\
     \ daño a cada enemigo dos veces en su lugar."
+  FlavorText: "\"Gracias por sintonizar la 'Estación de Tren Abandonada'. Este mes,\
+    \ la canción 'ThrowingSta' de Marisa Kirisame ha vuelto a encabezar las listas\
+    \ de música pop en Gensokyo...\""
 EventHorizon:
   Name: Evento del Horizonte
   Description: "Entra en modo |Burst|.\nAl comienzo del próximo turno de {PlayerName},\
@@ -1044,7 +1077,7 @@ WhiteLaser:
   Name: Láser Relámpago
 IceSpark:
   Description: "Inflige {Damage} de daño a cada enemigo y aplica |Frío| a cada enemigo."
-  Name: Laser de Hielo
+  Name: Láser Congelador
 GreenMogu:
   Name: Panellus Stipticus
   Description: Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones
@@ -1064,6 +1097,7 @@ HuoliQuankai:
     \ de daño en su lugar.\nGana {Value1} |Cargas|."
   UpgradedDescription: "Mientras está en |Burst|, los ataques de {PlayerName} inflige\
     \ el triple de daño en su lugar.\nEntra en modo |Burst|."
+  FlavorText: ¡Activando las reservas de energía ocultas!
 StarlightTaifeng:
   Name: Tifón de Luz Estelar
   Description: Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.
@@ -1084,6 +1118,7 @@ ChargingToMana:
   Name: Conversión de Cargas
   Description: Pierde todas las |Cargas|. Por cada |Carga| perdida de esta manera,
     gana {Mana} y roba una carta.
+  FlavorText: ¿No sería mejor pelear en la forma azul desde el principio?
 RedMogu:
   Name: Amanita Muscaria
   Description: Aplica {Value1} de |Veneno|.
@@ -1141,8 +1176,8 @@ KnifeBounce:
   Name: Cuchillos Rebotadores
   Description: "Inflige {Damage} de daño.\nAgrega |{Value1:plural one='% Cuchillo\
     \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano."
-  FlavorText: Los cuchillos arrojadizos lanzados por Sakuya parecen ser bastantes,
-    pero todos fueron recogidos del suelo después de que detuvo el tiempo.
+  FlavorText: Sakuya parece lanzar muchos cuchillos arrojadizos, pero en realidad
+    los recoge después de detener el tiempo.
   UpgradedDescription: "Inflige {Damage} de daño.\nAgrega |{Value1:plural one='% Cuchillo\
     \ Arrojadizo' other='% Cuchillos Arrojadizos'}| a la mano.\nAplica {Value2} de\
     \ |Marcado|."
@@ -1232,7 +1267,7 @@ TimeWalk:
   Description: "Finaliza el turno. Luego, {PlayerName} toma un turno extra.\n{SelfName}\
     \ solo puede activarse una vez por combate."
   Name: Paseo en el Tiempo
-  FlavorText: Incluso cuando nerfearon el coste, sigue siendo demasiado fuerte.
+  FlavorText: Incluso cuando su coste se redujo, sigue siendo demasiado fuerte.
 LunaClock:
   Description: Finaliza el turno. Luego, toma un turno extra. Los ataques de {PlayerName}
     no infligen daño durante ese turno extra.
@@ -1325,6 +1360,7 @@ BrokenTimeline:
 SakuyaSpeedup:
   Name: Acelerar el Tiempo
   Description: Duplica el |Pulso Temporal| actual.
+  FlavorText: Justo detrás de ti.
 DefenseDraw:
   Name: Ciclo Lunar
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1:plural one='% carta' other='%\
@@ -1377,6 +1413,8 @@ TunnelEffect:
 SakuyaWeak:
   Name: Supresión del Tiempo
   Description: "Aplica {Value1} |Débil|.\nGana {Mana}."
+  FlavorText: Ralentizar el tiempo se puede utilizar para defenderse del danmaku y
+    también para mantener los ingredientes frescos.
 SakuyaTwiceAttack:
   Description: "Inflige {Damage} de daño a cada enemigo {Value1:plural one='% vez'\
     \ other='% veces'}.\nAgrega |{Value2:plural one='% Cuchillo Arrojadizo' other='%\
@@ -1431,6 +1469,7 @@ QinglanAttack:
   Name: Aterrizaje del Conejo
   Description: "Inflige {Damage} de daño.\n|Explora| {Scry}.\nRoba {Value2:plural\
     \ one='% carta' other='% cartas'}."
+  FlavorText: Parece que hicieron el TP a su ubicación original…
 PlayWithWater:
   FlavorText: Las cosas mas sencillas son las mas divertidas.
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nDescarta una\
@@ -1466,6 +1505,7 @@ WaterPrincess:
     agua.
 Shadow:
   Name: Sombra
+  FlavorText: '"Si no hubiera conocido a Rumia, aún soportaría las luces brillantes."'
 PrismriverRed:
   Description: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
     Agrega {Light} |{Light:plural one='Luz Estelar Glamurosa' other='Luces Estelares\
@@ -1576,10 +1616,14 @@ MystiaSing:
   Description: "Aplica {Value1} |Reducción de Poder Temporal| a cada enemigo.\nGana\
     \ {Value1} <sprite=\"Point\" name=\"Power\">.\nAgrega {Value2} |Sombra{Value2:plural\
     \ one='' other='s'}| a la mano."
+  FlavorText: ¿Puede el canto del gorrión nocturno tener el mismo timbre que una trompeta
+    y una estufa de gas?
 SatoriAttack:
   Name: Florecimiento del Corazón
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Instinto|: Si un enemigo\
     \ intenta atacar, gana {Block} de |Bloqueo|."
+  FlavorText: Aunque pueden diferir en su ejecución, este movimiento puede tener el
+    mismo efecto que el "corazón con las manos", que es tendencia en el mundo exterior.
 SatoriMemory:
   Name: Recuerdos Profundos
   Description: "Elige 1 de {Value1} cartas al azar de la pila de descarte para regresarla\
@@ -1596,6 +1640,8 @@ XiaoemoBook:
     \ other='% cartas'}.\n|Debut|: Agrega un |Ocultismo| a la mano."
   ExtraDescription1: "|Exilia| una carta de la mano.\nRoba {Value1:plural one='% carta'\
     \ other='% cartas'}.\n|d:Debut: Agrega un Ocultismo a la mano.|"
+  FlavorText: El libro contiene varias curiosidades, como "Arrojar el Mentos en la
+    gaseosa".
 ShannvAttack:
   Name: Miasma Filtrado
   Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Veneno|."
@@ -1610,6 +1656,8 @@ HinaAttack:
   Name: Rueda de la Desgracia
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
     Por cada |Desgracia| en la biblioteca, {SelfName} inflige daño una vez más."
+  FlavorText: No te preocupes. Después de tener mala suerte ahora, seguirás teniendo
+    mala suerte.
 BlackHorseZui:
   Name: Pecado del Caballo Negro
   Description: "Pierde {Value1} de vida.\nInflige {Damage} de daño a cada enemigo\
@@ -1680,11 +1728,12 @@ RemiliaJizao:
   Name: Impaciencia
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nNo se pueden\
     \ robar más cartas en este turno."
-  FlavorText: "\"Si la próxima vez robo la \"Joya Artificial\", ¡Me volveré loca!\"\
+  FlavorText: "\"Si la próxima vez robo la \"Joya Artificial\", ¡Voy a armar un escandalo!\"\
     \n- Magic de un viernes por la tarde"
 RemiliaBat:
   Name: Encarnación del Murciélago
   Description: "Gana {Value1} de |Poder Temporal|.\nGana {Value2} de |Evasión|."
+  FlavorText: El surgimiento de la Reina de la Noche.
 YuyukoSing:
   Name: Aleteos de Mariposa
   Description: "Inflige {Damage} de daño.\n{SelfName} se puede |Mejorar| una cantidad\
@@ -2172,6 +2221,8 @@ BulletStudy:
   Description: "Gana {Block} de |Bloqueo|.\n|Sobrecarga {Value2}| : Gana {Shield}\
     \ de |Barrera|."
   Name: Notas del Danmaku
+  FlavorText: A pesar de su corta edad, Marisa ha publicado muchos de sus propios
+    libros, todos ellos estudiando el danmaku de sus enemigos.
 SplitPotion:
   Description: "Las |Pociones Inestables| infligen daño una vez más.\nAgrega {Value1}\
     \ {Value1:plural one='|Poción Inestable|' other='|Pociones Inestables|'} a la\
@@ -2323,6 +2374,7 @@ CirnoInForest:
   Name: A Plena Vista
   Description: "Gana {Block} de |Bloqueo|.\n|Sobregiro| {Value1}."
   UpgradedDescription: Gana {Block} de |Bloqueo|.
+  FlavorText: Hada del Bosque.
 MoreFriends:
   Name: Mariposa Social
   Description: "Al comienzo de cada turno de {PlayerName}, agrega {Value1} carta{Value1:plural\
@@ -2392,8 +2444,7 @@ SummerIce:
   Name: Granizado de Verano
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
     \ one='z' other='ces'}.\nGana {Mana} al comienzo del siguiente turno."
-  FlavorText: ¡Comer un granizado demasiado rápido da dolores de cabeza, tómatelo
-    con calma!
+  FlavorText: ¡Intenta que tu cerebro se congele por comer demasiado hielo raspado!
 Opt:
   Name: En Hielo Frágil
   Description: "Revela la carta superior de la pila de robo, elige si será enviado\
@@ -2525,6 +2576,8 @@ LeidiFriend:
   Name: Letty, Encarnación del Invierno
   ExtraDescription2: '{FriendU}Inflige {Damage} de daño y aplica |Frío| a cada enemigo.'
   Description: '{FriendP}Aplica |Frío| a un enemigo aleatorio.'
+  FlavorText: El invierno se acerca. El invierno ha llegado. Una vez más, lucha contra
+    el invierno. Vuelve el invierno.
 SunnyFriend:
   Description: '{FriendP}Inflige {Damage} de daño a un enemigo aleatorio {Value1}
     veces.'
@@ -2846,6 +2899,7 @@ LoveSeed:
   Name: Semilleros de Amor
   Description: "Cura {Value1} de vida y gana {TotalMana}.\n|Cuando se juega una carta\
     \ adyacente|: Aumenta el maná ganado de {SelfName} en {Mana}."
+  FlavorText: Sólo déjame tomar otro bocado y luego podrás ver las semillas.
 JianruiSixiang:
   Name: Rorschach en Danmaku
   Description: "Gana {Value1} de |Reflejo|.\n|Al entrar en un Estado Mental|: Devuelve\
@@ -2855,6 +2909,7 @@ BenwoTouying:
   Description: "Siempre que {PlayerName} entra en el estado |Pasión|, agrega una carta\
     \ de |Ataque| |p:completamente aleatoria| a la mano. |Cuesta temporalmente| {Mana}\
     \ y tiene |Exilio|.\nEntra en el estado |Pasión|."
+  FlavorText: Todos hemos soñado con ser otra versión de nosotros mismos.
 FangkongSixu:
   Name: Mente Vacía
   Description: "Descarta cualquier cantidad de cartas. Por cada carta descartada de\
@@ -3011,6 +3066,8 @@ YouxiangWake:
     \ one=' de ataque aleatorio' other='s de ataques aleatorios'} desde la pila de\
     \ robo hacia la mano. |Cuesta{Value2:plural one=' temporalmente' other='n temporalmente'}|\
     \ {Mana}."
+  FlavorText: '"¿A esta hora del día? Quién podría ser <sprite="TextIcon" name="Anger">
+    "'
 AyaExtraTurn:
   Name: Tormenta Fantástica
   ExtraDescription1: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\n\
@@ -3031,3 +3088,13 @@ DollFactory:
 ZhenmiaowanAbility:
   Description: En este combate, todas las cartas cuestan {Mana} de maná menos.
   Name: Magia del Mazo
+DebugAddRandomCards:
+  Name: Agrega Cartas Aleatorias
+DebugExileDrawDiscard:
+  Name: Exilia la Pila de Robo y de Descarte
+DebugAddRandomCardsSlow:
+  Name: Agrega Cartas Aleatorias (Lento)
+DebugAddDeckCards:
+  Name: Agrega Cartas a la Biblioteca
+DebugAddHandCards:
+  Name: Exilia la Mano y luego Agrega Cartas a la Mano
