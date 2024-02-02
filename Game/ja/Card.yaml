@@ -425,6 +425,7 @@ EventHorizon:
   UpgradedDescription: "|バースト|状態になる。\n|臨時火力|{Value1}を得る。\n次の{PlayerName}のターン、{PlayerName}に即死ダメージを与える。"
   Name: イベント・ホライゾン
   FlavorText: ブラックホールの重力など「天衣無縫」の前ではないに等しい。
+  DetailText: 即死ダメージを受ける効果はデバフとして扱われます。
 RunAway:
   UpgradedDescription: "手札をすべて捨て、捨てたカードの|臨時コスト|を{Mana}減らす。\n|グレイズ|{Value1}を得る。\nカードを{Value2}枚引く。"
   Name: やり逃げ
@@ -855,7 +856,7 @@ CirnoDraw:
 FrozenThrone:
   Name: 凍てつく玉座
   Description: '{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。'
-  UpgradedDescription: "{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。\nこのカードがプレイされる時、このカードのターン開始効果を1回発動する。"
+  UpgradedDescription: "{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。\nこのカードがプレイされた時、このカードのターン開始効果を1回発動する。"
 FakeMoon:
   Name: 偽物の月
   Description: "手札を1枚選び、そのカードの|臨時コスト|{Mana}かつ|廃棄|と|虚無|を持つコピーを{Value1}枚手札に加える。\n選んだカードが|能力|カードまたは|廃棄|を持つ場合、選んだカードにも|複製|を与える。"
@@ -1072,6 +1073,7 @@ BailianPower:
 TrueMoon:
   Name: 真実の満月
   Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2}枚のカードをプレイした後、{PlayerName}に即死ダメージを与える。"
+  DetailText: 即死ダメージを受ける効果はデバフとして扱われます。
 FreezeRiver:
   Name: 流氷
   Description: 山札最後尾のカードを手札に加え、それを|臨時コスト|{Mana}にする。
@@ -1549,7 +1551,7 @@ CirnoFestival:
   Description: "|グレイズ|を{Value1}得る。\n手札のランダムな{Value2}枚のカードの|臨時コスト|をランダムに1マナ減らす。"
 DiamondBlizzard:
   Name: ダイヤプリズム
-  Description: "敵全体に{Damage}ダメージを与える。\n|チョイス|： 敵全体に|冷気|を与える； {Block}|ブロック|を得る。"
+  Description: "敵全体に{Damage}ダメージを与える。\n|チョイス|： 敵全体に|冷気|を与える、または{Block}|ブロック|を得る。"
   ExtraDescription1: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える。"
   ExtraDescription2: "敵全体に{Damage}ダメージを与える。\n{Block}|ブロック|を得る。"
 FruitShake:
@@ -1642,11 +1644,11 @@ BestFriend:
   Name: 最高の親友
   Description: 手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。
 DeepFreeze:
-  Description: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える、敵が既に|冷気|を持っている場合、|冷気|の代わりに|凍結深度|を与える。"
+  Description: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える。敵が既に|冷気|を持っている場合、|冷気|の代わりに|凍結深度|を与える。"
   Name: つららの舞
 IceBlock:
   Name: アイスブロック
-  Description: "一ターンの間{PlayerName}はあらゆるダメージを受けない。\n全ての|ブロック|、|バリア|、|グレイズ|を失う。\n全ての手札を一ターン|保留|し、{PlayerName}のターンを終了する。"
+  Description: "1ターンの間{PlayerName}はあらゆるダメージを受けない。\n全ての|ブロック|、|バリア|、|グレイズ|を失う。\n全ての手札を1ターン|保留|し、{PlayerName}のターンを終了する。"
 ColdChain:
   Description: 山札から{Value1}枚のカードを選んで手札に加え、それに|保留|を与える。
   Name: コールドチェーン
@@ -1721,7 +1723,7 @@ QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
   Name: 死霊術
 LarvaDefense:
-  Description: "{Block}|ブロック|を得る。\n敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。\n手札に召喚した|真夏の妖精の夢、ラルバ|がある場合、敵全体に|毒|{Value2}を与える。"
+  Description: "{Block}|ブロック|を得る。\n敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。\n手札に召喚済みの|真夏の妖精の夢、ラルバ|が存在する場合、敵全体に|毒|{Value2}を与える。"
   Name: 羽ばたく翼
 CirnoFreeze:
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\nカードを{FreezeTimes}枚使用した時、{SelfName}を|廃棄|する。"
@@ -2091,7 +2093,8 @@ FengjiAttack:
   Name: 分解の風
   Description: "敵全体に{Damage}ダメージを与える。\n<sprite=\"ManaSprite\" name=\"C\">|ごとに|：ダメージを{Value1}増やす。"
   FlavorText: 正式には「森を一瞬で素粒子レベルで浄化する風を起こす扇子」と呼ぶ。
-  UpgradedDescription: "敵全体に{Damage}ダメージを与える。\n<sprite=\"ManaSprite\" name=\"C\">|ごとに|：ダメージを{Value1}増やす。"
+  UpgradedDescription: "敵全体に{Damage}ダメージを{Value2}回与える。\n<sprite=\"ManaSprite\" name=\"\
+    C\">|ごとに|：ダメージを{Value1}増やす。"
 YijiSkill:
   Name: 神降ろし
   Description: ランダムな{Value1}つの|e:神力|から1つを選び、その効果を得る。
@@ -2137,3 +2140,6 @@ Naodiantu:
 HeartDance:
   Name: ハートのダンス
   Description: "{Damage}ダメージを与える。\n|平静|状態に入る。"
+ZhenmiaowanAbility:
+  Name: 小槌の魔力
+  Description: 全てのカードのコストが{Mana}減少する。
