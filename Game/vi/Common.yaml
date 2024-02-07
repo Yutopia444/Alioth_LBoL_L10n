@@ -3,7 +3,7 @@ Game:
   Hp: HP
   PowerPoint: P
   Money: Vàng
-  Card: Thẻ
+  Card: Lá bài
   Exhibit: Chứng vật
   Level: Cấp
   Difficulty: Độ Khó
@@ -22,23 +22,34 @@ Game:
   RarityOrder: Theo Độ Hiếm
   RarityOrderExplain: "Các thẻ cùng một độ hiếm sẽ được sắp xếp theo thứ tự của các\
     \ thẻ giữa chúng.\nCác thẻ trùng tên sẽ được sắp xếp theo thứ tự thật của chúng."
-  ManaAmountOrder: Chi Phí
+  ManaAmountOrder: Tiêu Hao
   DrawZone: Chồng Bài Bốc
-  DrawZoneInOrder: Chồng Bài Bốc (đã sắp xếp)
-  DrawZoneOutOfOrder: Chồng Bài Bốc (chưa sắp xếp)
+  DrawZoneInOrder: Chồng Bài Bốc (theo thứ tự)
+  DrawZoneOutOfOrder: Chồng Bài Bốc (không theo thứ tự)
   DiscardZone: Chồng Bài Bỏ
   ExileZone: Khu Trục Xuất
   EndTurn: Kết Thúc Lượt
-  BattleStart: Bắt Đầu Giao Tranh
-  PlayerTurn: Người Chơi
-  EnemyTurn: Địch
-  ExtraTurn: Thêm
-  TurnCounter: Lượt {0}
+  BattleStart: Bắt Đầu Trận Đấu
+  PlayerTurn: Vòng Của Người Chơi
+  EnemyTurn: Vòng Của Kẻ Địch
+  ExtraTurn: Lượt Phụ
+  TurnCounter: Lượt thứ {0}
   Next: Tiếp
-  NextSkip: Bỏ Qua
+  NextSkip: Bỏ Qua Thưởng
   NextStage: Sang Chương
   Achievement: Thành tựu
   UnlockLevel: Cấp Độ
+  NotInThatTurn: 'Không kích hoạt: Không trong lượt chỉ định.'
+  OutTurn: Hết Lượt
+  NaturalTurn: Lượt Thường
+  InTurn: Trong Lượt
+  TopSuffix: Trên cùng
+  BottomSuffix: Dưới cùng
+  TopBottomSuffix: (Trên/Dưới cùng)
+  PlayerNameTurnCounter: Lượt của {0} ({1})
+  PlayerNameTurn: Vòng của {0}
+  RoundCounter: Vòng {0}
+  Passive:  Nội Tại 
 Explain:
   RollCard: "|Tìm thẻ thông qua Thẻ Thưởng|\n\nBạn chỉ có thể tìm được 1 thẻ nào đó\
     \ khi đáp ứng đủ các tiêu chí sau:\n1: |Kho mana| phải đáp ứng được toàn bộ chi\
@@ -71,13 +82,16 @@ Explain:
   ShinmyoumaruForge: Thẻ tấn công được thay bởi thẻ tấn công và thẻ phòng thủ được
     thay bởi thẻ phòng thủ.
   SaveWhenSelect: Việc chọn này sẽ lưu tiến trình của bạn ngay lập tức.
+  Power: Năng Lượng<sprite="Point" name="Power">
+  PowerDescription: "Sử dụng Bài Phép tiêu hao một lần sạc đầy.\n(hiển thị bên dưới\
+    \ chân dung của nhân vật)"
 StartGame:
   NoClearHind: Thành tựu sẽ bị tắt khi đặt seed hoặc sử dụng Hộp Ngọc
   DifficultyTitle: Hãy Chọn Độ Khó
   CharacterUnset: Hãy Chọn Nhân Vật
   Rate: Độ Phức Tạp
   Seed: Seed
-  SetSeed: Đặt Seed
+  SetSeed: Đổi Seed
   InvalidSeed: Seed không hợp lệ
   SetJadeBox: Đặt Hộp Ngọc
   JadeBoxLock: Chế độ Hộp Ngọc chỉ có sẵn ở Cấp Độ 10.
@@ -94,7 +108,7 @@ StartGame:
     \ theo."
   IsLockHint: "Nhân vật này sẽ được mở\nở Cấp Độ {0}"
   CheckDeck: Bộ Bài Khởi Đầu
-  SkillSpellCard: Spell Card
+  SkillSpellCard: Bài Phép {0} <sprite="Point" name="Power">
   SkillExhibit: Chứng Vật Khởi Đầu
   StartMoney: Vàng Khởi Đầu
   StartHp: HP Khởi Đầu
@@ -109,6 +123,19 @@ StartGame:
     \ khi lên Cấp Độ 4."
   Puzzles: '{0} Yêu Cầu'
   LockPuzzle: Lên Cấp Độ {0} để mở.
+  JadeBoxSelectedCount: Chọn {0}/{1}
+  ShowRandomResult: Tiết Lộ Vận Mệnh
+  NotShowRandomResult: Che Giấu Vận Mệnh
+  ShowRandomResultTitle: Tiết Lộ Vận Mệnh
+  NotShowRandomResultTitle: Che Giấu Vận Mệnh
+  NotShowRandomResultDescription: "Hiện hoặc giấu các kết quả ngẫu nhiên tự các lựa\
+    \ chọn trong sự kiện, như là kết quả của các lá bài, Chứng Vật, vân vân.\nCác\
+    \ kết quả ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi tái khởi động.\n\
+    \n<color=#dd7473>Không cần tôi giúp sao? Hừm!"
+  ShowRandomResultDescription: "Hiện hoặc giấu các kết quả ngẫu nhiên tự các lựa chọn\
+    \ trong sự kiện, như là kết quả của các lá bài, Chứng Vật, vân vân.\nCác kết quả\
+    \ ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi tái khởi động.\n\n<color=#dd7473>Ohohoho!\
+    \ Thấy sức mạnh của tôi thế nào!"
 UI:
   Yes: Có
   No: Không
@@ -146,6 +173,7 @@ UI:
   SeAmulet: Đã kháng {0}
   SpellTitled: '  {0} "{1}"'
   SpellUntitled: '"{0}"'
+  SkipHint: '{0} để bỏ qua'
 MainMenu:
   NewGame: Game Mới
   RestoreGame: Tiếp Tục
@@ -195,6 +223,14 @@ Museum:
     T6: Cửa Hàng
     T7: Sự Kiện và Khác
     T4: Ít Gặp
+  AchievementCount: Thành Tựu Đã Nhận
+  Unlock: Đã Nhận
+  All: Tất Cả
+  NotUnlock: Chưa Nhận
+  HiddenDescription: Chi tiết về thành tựu này sẽ không được tiết lộ cho đến khi mở
+    khóa.
+  Hidden: Bị Ẩn
+  TextFilterHint: Nhập Để Tìm Kiếm
 Setting:
   Main: Chung
   ResetDefault: Mặc Định
@@ -213,8 +249,9 @@ Setting:
   RecommendVolume: Đặt Lại
   LostFocusMute: Tắt tiếng khi Không Tập Trung
   TurboMode: Chế Độ Tăng Tốc
-  TurboModeDescription: Làm hầu hết tất cả hoạt ảnh và hiệu ứng diễn ra |nhanh hơn
-    nhiều|.
+  TurboModeDescription: "Làm hầu hết tất cả hoạt ảnh và hiệu ứng diễn ra nhan hơn\
+    \ {0} lần.\nHiệu quả với tốc độ hoạt ảnh của nhân vật và màn đạn. Không ảnh hưởng\
+    \ tới tốc độ của các thành phần thuộc về giao diện."
   Keyword: Từ Khoá
   Detailed: Chi tiết
   Brief: Ngắn
@@ -285,6 +322,19 @@ Setting:
     RebindMessage: Vui lòng nhấn phím tắt cho "{0}", nhấn ESC để huỷ.
   Key: Điều Khiển
   Preference: Gameplay
+  ShowCardOrderDescription: "Hiện hoặc ẩn số thứ tự của các thẻ trong chồng.\n\nChỉ\
+    \ có chồng bị ảnh hưởng có thể được xem theo thứ tự thật sự (mặc định: thư viện,\
+    \ Chồng Bài Bỏ và Trục Xuất).\nTrong trường hợp của Chồng Bài Bốc và Chồng Bài\
+    \ Bỏ, lá trên và dưới cùng của chồng đó sẽ được làm nổi bật.\n\nCó thể bật lên\
+    \ bằng cách nhấn phím \"Hiện Thứ Tự Kẻ Địch\"."
+  ShowReloadDescription: Hiện hoặc ẩn việc hiển thị số lần tái khởi động, cũng như
+    liệu các kết quả ngẫu nhiên đã được xem trước hay chưa, trong khi đang ở giao
+    diện bản đồ.
+  ShakeDescription: Điều chỉnh hiệu ứng rung bởi sát thương trong chiến đấu
+  ShowReload: Đếm Số Lần Tái Khởi Động
+  Shake: Hiệu ứng rung
+  ShowCardOrder: Hiện Thứ Tự Thẻ
+  TurboPlaying: Tốc độ chuyển động {0}x
 History:
   Puzzles: '{0} Yêu Cầu'
   Mana: Mana
@@ -292,6 +342,9 @@ History:
   Card: 'Thẻ: {0}'
   StatsSegment: '{0}: {1}'
   PlayedTime: 'Thời gian: {0}'
+  AutoSeed: Seed Ngẫu Nhiên
+  ReloadTimes: 'Số Lần Khởi Động: {0}'
+  NotAutoSeed: Seed Cụ Thể
 System:
   ReenterStation: Bắt Đầu Lại Màn
   ResumeGame: Tiếp Tục
@@ -353,13 +406,13 @@ Chat:
   Sunny2: Đứa nào lượm được chứng vật thì là của đứa đó!
   Luna: Được!
   Star: Được!
-  SunnySpell: Hỡi các tia sáng, hãy tập trung về ta!
-  LunaSpell: Mong danmaku còn đứng yên.
-  StarSpell: Dù nhích nhẹ thì tôi vẫn thấy đấy~
+  SunnySpell: Hỡi các tia sáng, hội tụ về phía ta!
+  LunaSpell: Khiến màn đạn đứng yên.
+  StarSpell: Tôi có thể bắt từng cử động nhỏ của bạn đấy~
   Aya1: Sự thật về dị biến ở Vĩnh Viễn Đình tối nay, được phát thanh truyền hình và
     xuất bản trực tiếp trên Báo Bunbunmaru.
   Aya2: Chúng ta có một nghi phạm dám phá đám buổi phổng vấn!
-  Aya3: Nhìn vào món đồ {0:cs} đang cầm kìa! Đó là bằng chứng buộc tội cô ta là thủ
+  Aya3: Nhìn vào món đồ {0:cs} đang cầm kìa! Đó là bằng chứng tố cáo cô ta là thủ
     phạm!
   Rin1: '{0} đẹp thế chị! Em muốn có nó!'
   Rin2: Ui da! Chị tàn nhẫn quá~
@@ -367,9 +420,9 @@ Chat:
   Nitori2: Tớ nghĩ cần phải nâng cấp hệ thống phòng ngự của nó vậy.
   Youmu1: Sẵn sàng!
   YoumuTuanzi: Nếu cậu muốn thêm Dango đá 3 màu thì vui lòng quay lại ngay lập tức!
-  YoumuMooncake: Trả tao {0}!
+  YoumuMooncake: Trả tớ {0} đây!
   Kokoro1: Tôi cảm giác có nhiều cái mặt nạ của tôi đã mất tích gần đây.
-  Clownpiece1: Tiên nữ! Thêm danmake! Thêm nữa!
+  Clownpiece1: Tiên nữ! Thêm nhiều đạn! Thêm nữa!
   Clownpiece2: Hấp thụ kết tinh của ánh sáng đi!
   Clownpiece3: Đến giờ điên loạn rồi!
   Siji1: Trộm chứng vật dưới vỏ bọc điều tra vụ việc.
@@ -388,6 +441,9 @@ Chat:
   LongEscape1: Ôi không, ta đã bị đánh bại.
   LongEscape2: Đường này lên Thủ Thỉ Thần Xã~
   YuyukoMooncake: Ta muốn ăn cái {0} đó~
+  LazyRabbit: Tama thật vô dụng... Giờ mình lại không thể lười biếng được tiếp nữa
+    rồi.
+  HardworkRabbit1: Nhìn thấy kẻ địch người Trái Đất!
 Reward:
   Skip: Bỏ Qua
   Headers:
@@ -436,6 +492,10 @@ ErrorChat:
   HandFull: Đầy tay rồi.
   EmptyDraw: Hết bài bốc rồi.
   NoCardByMama: Không có thẻ nào có chi phí như thế.
+  LowLoyalty: Mình không có đủ Trợ Sức từ đồng đội này.
+  CardHuiye: Không đủ thời gian.
+  CardJinzi: Cái song trùng này đã cố hết sức rồi.
+  NoAbilityCardInHand: Trên tay đang không có lá Năng Lực nào.
 Debut:
   EirinChats:
   - Đừng có đứng chơi như thế, {0}
@@ -448,28 +508,42 @@ Shop:
   Skip: Bỏ qua
   Close: Đóng
   Remove: Xoá Thẻ
-  RemoveTooltip: Xoá 1 thẻ ra khỏi thư viện và tăng giá lên thêm| {0} vàng|
+  RemoveTooltip: Xóa 1 thẻ ra khỏi thư viện và tăng giá lên thêm| {0} vàng| sau mỗi
+    lần sửu dụng. Giá tối đa là {1} vàng.
   BoughtQuotes:
-  - Cám ơn.
+  - Cám ơn vì đã mua hàng.
   CantAffordQuotes:
-  - Tôi không phải là nhà từ thiện, bạn biết không.
-  - Bạn không đủ tiền trả.
+  - Tôi không phải là nhà từ thiện nhé.
+  - Bạn không mua nổi cái này.
   - Bạn không đủ tiền.
   WelcomeQuotes:
-  - Mại dzô!
-  - Xem qua đi.
+  - Hoan nghênh quý khách
+  - Cứ xem thoải mái.
   Chats:
   - Bên này, quý khách~
   - Giá cả phải chăng! Bạn có chắc là không cần mua gì ư?
+  Upgrade: Nâng Cấp Thẻ
+  RemoveService: 'Xóa thẻ:'
+  ShopRemovePrice: '{0} vàng<sprite="Gold" name="gold">'
+  CardService: Dịch Vụ Thẻ
+  UpgradeTooltip: "Nâng cấp một thẻ trong thư viện.\nTốn {0} vàng."
+  SoldOut: Hết Hàng
+  UpgradeService: 'Nâng Cấp:'
+  ShopUpgradePrice: '{0} vàng<sprite="Gold" name="gold">'
 Cards:
   UpgradeTips: Chọn một thẻ để Nâng Cấp
-  RemoveTips: Chọn một thẻ để Loại Bỏ
+  RemoveTips: Chọn một thẻ để Xóa Bỏ
   UpgradeDialog: Xác nhận Nâng Cấp?
   Size:  {0} Thẻ
   Show: Di chuột/nhấp chuột phải vào thẻ để xem thêm chi tiết.
   Remove: Loại bỏ {0} thẻ ra khỏi thư viện.
   IsUpgraded: Đã Nâng Cấp
   UnUpgradable: Không Nâng Cấp Được
+  RemoveDialog: Xác nhận xóa thẻ?
+  TransformTips: Chọn một thẻ để Biến Đổi
+  UpgradePrice: "Tốn: {0} <sprite=\"Gold\" name=\"gold\">\nVàng: {1} <sprite=\"Gold\"\
+    \ name=\"gold\">"
+  TransformDialog: Xác nhận biến đổi?
 ManaSelect:
   Title: Chọn 1 loại mana
 CardDetail:
@@ -500,6 +574,7 @@ CardType:
   Tool: Công Cụ
   Status: Trạng Thái
   Misfortune: Vận Rủi
+  Friend: Đồng Đội
 StatusEffectType:
   Positive: Lợi
   Negative: Buff Gây Hại
@@ -661,3 +736,62 @@ MessageDialog:
   CorruptedSaveData: Dữ liệu lưu bị lỗi
   CorruptedGameRunSaveData: Dữ liệu ván chơi bị lỗi
   CannotReenterStation: Không thể truy cập màn chơi
+Lifetime:
+  TotalBp: Tổng Số Điểm Xanh
+  OldData: Dữ Liệu Phiên Bản Cũ <sprite="TextIcon" name="Info">
+  Game: Số Cuộc Chơi
+  Win: Dị Biến Đã Giải Quyết
+  Perfect: Dị Biến Đã Hoàn Mỹ Giải Quyết
+  Puzzle: Nan Đề
+  OldDataHint: Trước phiên bản v1.3.15, chỉ có dữ liệu của tất cả nhân vật được ghi
+    lại, không có tách biệt.
+  Time: Thời Gian Chơi
+  NoData: Dữ Liệu Chưa Ghi Chép
+  NoDataHint: Trước phiên bản v1.3.15, loại dữ liệu này chưa được ghi chép.
+  Title: Dữ Liệu Toàn Thời Gian
+  HighestBp: Điểm Cao Nhất
+Credits:
+  Yutopia: Chỉ đạo nghệ thuật / hiệu ứng
+  FK5: Lập trình / Chuyển động
+  Jiejiezi: Đồ họa nhân vật & Minh họa
+  NeetRudong: Đồ họa sự kiện
+  Sana: Minh họa nhân vật
+  Anima: Hoạt họa
+  DG: Thảo luận nguyên mẫu
+  Portuguese: Địa phương hóa tiếng Bồ Đào Nha
+  Turkish: Địa phương hóa tiếng Thổ Nhĩ Kỳ
+  Italian: Địa phương hóa tiếng Ý
+  NoiseClub: Âm thanh
+  English: Địa phương hóa tiếng Anh
+  Polish: Địa phương hóa tiếng Ba Lan
+  French: Địa phương hóa tiếng Pháp
+  Japanese: Địa phương hóa tiếng Nhật
+  TChinese: Địa phương hóa tiếng Trung Phồn thể
+  Vietnamese: Địa phương hóa tiếng Việt
+  Salyu: Lập trình
+  MainPartners: Đối tác
+  DD: Giao diện / Nghệ thuật
+  LuvChan: Thiết kế
+  MW: Hoạt họa
+  SignalE: Âm nhạc
+  Zackary: Âm thanh
+  Kyu: Minh họa nhân vật & cảnh vật
+  UnuseArt: Đồ họa chưa sử dụng
+  Russian: Địa phương hóa tiếng Nga
+  Spanish: Địa phương hóa tiếng Tây Ban Nha
+  Korean: Địa phương hóa tiếng Hàn
+  Alioth: Alioth Studio
+  Alice: Thiết kế / Lập Trình
+  Zaochuan: Minh họa cảnh vật
+  Liya: Hiệu ứng âm thanh
+  Wuqiqi: Đồ họa 2D
+  Aeolian: Hiệu ứng / Âm thanh
+  Illustrator: Minh họa thẻ
+  Thanks: Lời cảm ơn
+  Jiong: Hỗ trợ dịch vụ
+Ultimate:
+  ConsumePower: 'Tiêu Hao<sprite="Point" name="Power">: {0}'
+  MaxPower: 'Tích Trữ Tối Đa: {0}'
+  FreeToUse: Có thể sử dụng nhiều lần trong cùng một lượt
+  OncePerTurn: Chỉ sử có thể dụng một lần mỗi lượt
+  OncePerBattle: Chỉ có thể sử dụng một lần mỗi trận đấu
