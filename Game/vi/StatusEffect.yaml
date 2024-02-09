@@ -74,7 +74,7 @@ Graze:
   Brief: "{OwnerName} sẽ không nhận sát thương từ các đòn tấn công của địch.\nGiảm\
     \ 1 |Né Tránh| mỗi khi bị tấn công hoặc khi lượt tiếp theo bắt đầu."
 ExtraTurn:
-  Name: Thêm Lượt
+  Name: Lượt Phụ
   Description: '{OwnerName} nhận thêm {Level} lượt nữa sau lượt này.'
   Brief: Khi lượt của {OwnerName} kết thúc, nhận thêm một lượt nữa.
 LimitedDamage:
@@ -111,8 +111,8 @@ DeathExplodeCount:
     Sẽ kích nổ sau {Count} lượt, gây gấp đôi lượng sát thương."
   Name: Đạn Báo Oán
 FoxCharm:
-  Description: "Chỉ có thể chơi nhiều nhất {Limit} lá bài mỗi lượt.\nCòn có thể chơi\
-    \ {Count} lá.\nHạ gục |Hồ Yêu| để loại bỏ hiệu ứng này."
+  Description: "Chỉ có thể chơi nhiều nhất {Limit} lá bài mỗi lượt.\nCòn {Count} lá\
+    \ nữa.\nHạ gục |Hồ Yêu| để loại bỏ hiệu ứng này."
   Name: Yêu Hồ Mị Thuật
 AbsorbSpirit:
   Description: '{OwnerName} nhận {Level} |Linh Lực| khi kết thúc lượt của bản thân.'
@@ -132,7 +132,7 @@ Fengyin:
 PrivateSquare:
   Name: Phong Tỏa Ánh Bạc
   Description: "{OwnerName} gây {Level} sát thương lên {PlayerName} sau mỗi {Level}\
-    \ lá bài được chơi.\nKích hoạt sau {Count} lá nữa."
+    \ lá bài được chơi.\nCòn {Count} lá nữa."
   Brief: Mỗi khi chơi đủ một số lượng lá bài, <color=#B7F0FF>Sakuya Izayoi</color>
     sẽ gây sát thương lên {PlayerName}.
 EnemyMaid:
@@ -209,7 +209,7 @@ LightingModule:
     Chói Lóa| vào Chồng Bài Bốc.
   Name: Mô-đun Đèn Chớp
 SijiZui:
-  Name: Phân Định Đúng Sai
+  Name: Phân Rõ Thị Phi
   Description: 'Mức độ nghiêm trọng {PlayerName} phạm tội: Nhẹ'
   ExtraDescription: 'Mức độ nghiêm trọng {PlayerName} phạm tội: Vừa'
   ExtraDescription2: 'Mức độ nghiêm trọng {PlayerName} phạm tội: Nặng'
@@ -227,14 +227,14 @@ AmuletForCard:
   Brief: Giải trừ lá Trạng Thái tiếp theo được thêm vào (nó sẽ bị |Trục Xuất|).
   Description: Giải trừ {Level} lá Trạng Thái tiếp theo được thêm vào ({Level:plural
     one='nó' other='chúng'} sẽ bị |Trục Xuất|).
-  Name: Phòng Hộ
+  Name: Ngăn Ngừa
 Electric:
   Name: Tích Điện
   Description: Mỗi khi nhận sát thương, gây {Level} sát thương ngược lại cho kẻ tấn
     công.
   Brief: Mỗi khi nhận sát thương, gây sát thương ngược lại cho kẻ tấn công.
 Reflect:
-  Name: Phản Xạ
+  Name: Phản Kích
   Description: Khi nhận sát thương, gây {Level} sát thương ngược lại cho kẻ tấn công
     và xóa bỏ hiệu ứng này.
   Brief: Khi nhận sát thương, gây sát thương ngược lại cho kẻ tấn công và xóa bỏ hiệu
@@ -326,6 +326,8 @@ DreamMaster:
   Description: '{OwnerName} là kẻ cai trị những giấc mơ.'
 ScarletDestiny:
   Name: Vận Mệnh Đỏ Thẫm
+  Description: "Sau khi {Limit} lá được chơi, {OwnerName} dừng lượt của {PlayerName}.\n\
+    Còn {Count} lá nữa."
 LoveGirlDamageIncrease:
   Description: Tình cảm của {OwnerName} đã được đáp lại. Cô ấy nhận thêm {Rate}% sát
     thương.
@@ -397,3 +399,108 @@ Drowning:
   Name: Đuối Nước
   Description: '{OwnerName} nhận {Level} sát thương khi kết thúc lượt của bản thân.'
   Brief: '{OwnerName} nhận sát thương khi kết thúc lượt của bản thân.'
+SingleJiandaoSe:
+  Name: Một Nửa Lưỡi Kéo Khổng Lồ
+  Description: Mỗi khi {PlayerName} chơi một lá, cô phải nhận {Level} sát thương.
+ReverseJiejieSe:
+  Description: Mỗi khi {PlayerName} mất một Hiệu Ứng Cường Hóa, nhận {Level} |Hộ Giáp|.
+  Brief: Mỗi khi {PlayerName} mất một Hiệu Ứng Cường Hóa, cô nhận |Hộ Giáp|.
+  Name: Nghịch Chuyển Kết Giới
+JunkoPurify:
+  Description: Mỗi khi {PlayerName} chơi một lá bài, |Thanh Lọc| {Level} mana.
+  Name: Thanh Lọc Thần Quang
+QiannianShenqiSe:
+  Name: Khối Đồ Chơi Kim Tự Tháp
+  Description: "{PlayerName} chỉ có thể bốc nhiều nhất {Limit} lá mỗi lượt.\nCòn {Count}\
+    \ lá nữa."
+SakuraWandSe:
+  Name: Chiếc Chìa Khóa Có Cánh
+  Description: '{OwnerName} tấn công nhiều gấp đôi số lần.'
+JunkoColor:
+  Description: 'Mức độ ô uế của {PlayerName}: Ít'
+  ExtraDescription: "Mức độ ô uế của {PlayerName}: Nghiêm trọng.\n{JunkoName} nhận\
+    \ thêm Hỏa Lực, và \"Thuần Khiết Hóa Mặt Đất Ô Uế\" trở nên mạnh hơn."
+  ExtraDescription2: "Mức độ ô uế của {PlayerName}: Không thể chấp nhận\n{JunkoName}\
+    \ nhận thêm Hỏa Lực, và \"Thuần Khiết Hóa Mặt Đất Ô Uế\" trở nên mạnh hơn."
+  Name: Nhơ Vết Đầy Tràn
+YinyangXueyinSe:
+  Name: Âm Dương Huyết Ấn
+  Brief: Mỗi khi lá thuộc nhóm |Âm Dương Ngọc| được chơi, nhận |Hỏa Lực Tạm Thời|
+    và |Linh Lực Tạm Thời|.
+  Description: Mỗi khi lá thuộc nhóm |Âm Dương Ngọc| được chơi, nhận {Level} |Hỏa
+    Lực Tạm Thời| và |Linh Lực Tạm Thời|.
+ReimuShrineSe:
+  Description: Vào đầu lượt của {PlayerName}, nhận {Level} |Linh Lực Tạm Thời|.
+  Brief: Vào đầu lượt của {PlayerName}, nhận |Linh Lực Tạm Thời|.
+  Name: Bác Lệ Thần Xã Hội
+TaijiLiangyiSe:
+  Name: Thái Cực Sinh Lưỡng Nghi
+  Description: Vào đầu lượt của {PlayerName}, nếu trên tay {Level:plural one='không
+    có lá |Âm Dương Ngọc| nào' other='ít hơn % lá |Âm Dương Ngọc|'}, thêm {Level:plural
+    one='1 lá |Âm Dương Ngọc| lên tay.' other='|Âm Dương Ngọc| lên tay cho đến khi
+    đủ % lá.'}
+  Brief: Vào đầu lượt của {PlayerName}, nếu trên tay có ít lá |Âm Dương Ngọc| hơn
+    một số lượng nhất định thì thêm lá |Âm Dương Ngọc| lên tay cho đến khi đạt số
+    lượng đó.
+HolyGrailSe:
+  Description: Vào đầu lượt của {OwnerName}, {PlayerName} mất tất cả các |Chứng Vật|
+    không phải cấp |Hoàn Mỹ| và |Cực Hiếm|.
+  Name: Cốc Vàng Được Trang Trí Quá Lố
+ReimuFestivalSe:
+  Name: Điệu Múa Anh Đào Thần
+  Description: Vào đầu lượt của {PlayerName}, nhận {Level} |Hỏa Lực Tạm Thời|.
+  Brief: Vào đầu lượt của {PlayerName}, nhận |Hỏa Lực Tạm Thời|.
+MadokaBowSe:
+  Description: Khi {OwnerName} kết thúc lượt, thêm {Level} lá Trạng Thái ngẫu nhiên
+    vào Chồng Bài Bốc.
+  Name: Cây Cung Bắn Ra Quang Mang
+FreeFlySe:
+  Brief: Vào đầu lượt của {PlayerName}, nhận {Level} {Mana}.
+  Name: Tự Do Bay Lượn
+  Description: Vào đầu lượt của {PlayerName}, nhận {Level} {Mana}.
+EvilTuiZhiSe:
+  Brief: Một số lá Tấn Công tiếp theo sẽ gây gấp đôi lượng sát thương.
+  Name: Diệt Trừ Yêu Ma
+  Description: '{Level} lá Tấn Công tiếp theo sẽ gây gấp đôi lượng sát thương.'
+MomentPowerSe:
+  Description: Mỗi khi {PlayerName} nhận |Hỏa Lực Tạm Thời| hoặc |Linh Lực Tạm Thời|,
+    chuyển hóa chúng thành {Level} |Hỏa Lực| hoặc |Linh Lực| tương ứng.
+  Brief: Mỗi khi {PlayerName} nhận |Hỏa Lực Tạm Thời| hoặc |Linh Lực Tạm Thời|, chuyển
+    hóa chúng thành một vài |Hỏa Lực| hoặc |Linh Lực| tương ứng.
+  Name: Sát Na Á Không Huyệt
+JiangshenSe:
+  Description: Cho đến hết trận đấu, mỗi khi một lá bài được thêm vào trận đấu, |Nâng
+    Cấp| nó.
+  Brief: Cho đến hết trận đấu, mỗi khi một lá bài được thêm vào trận đấu, |Nâng Cấp|
+    nó.
+  Name: Tu Luyện Giáng Thần.
+DragonBallSe:
+  Description: 'Vào đầu lượt của {OwnerName}, ước nguyện của cô ấy thành hiện thực:
+    {PlayerName} thua trận đấu, không thể chống lại.'
+  Name: Quả Cầu Với Những Ngôi Sao
+SihunYuSe:
+  Name: Mặt Dây Chuyền Phóng Thích Tà Khí
+  Description: Khi {OwnerName} kết thúc lượt, cô ấy thu hút thêm kẻ địch ngẫu nhiên
+    vào trận đấu.
+BoliDajiejieSe:
+  Name: Bác Lệ Đại Kết Giới
+  Description: Cho đến hết trận đấu, |Khiên| của {PlayerName} được chuyển hóa thành
+    lượng |Hộ Giáp| tương đương.
+  Brief: Cho đến hết trận đấu, |Khiên| của {PlayerName} được chuyển hóa thành lượng
+    |Hộ Giáp| tương đương.
+HuanxiangBlockSe:
+  Name: Phòng Hộ Ảo Tưởng
+  Brief: Mỗi khi một lá bài bị |Trục Xuất|, {PlayerName} nhận |Khiên|.
+  Description: Mỗi khi một lá bài bị |Trục Xuất|, {PlayerName} nhận {Level} |Khiên|.
+ShendengSe:
+  Description: Khi {OwnerName} kết thúc lượt, {PlayerName} ngẫu nhiên phải nhận {Level}
+    |Suy Nhược|, |Vụn Vỡ| hoặc |Dễ Tổn Hại|.
+  Name: Ấm Trà Có Cái Vòi Dài
+InfinityGemsSe:
+  Name: Găng Tay Trên Khảm Đá Quý
+  Description: "Vào đầu lượt của {OwnerName}, ngẫu nhiên |Trục Xuất| một nửa số thẻ\
+    \ bài trong trận đấu, bất kể chúng đang ở đâu.\nCòn {Count} lần."
+JunkoLily:
+  Name: Sát Ý Bách Hợp
+  Description: Mỗi khi {|Thần Quang Thanh Lọc| kích hoạt, {PlayerName} mất {Level}
+    HP.
