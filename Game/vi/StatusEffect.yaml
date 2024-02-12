@@ -167,8 +167,8 @@ WindGirl:
     của cô ấy.'
 Amulet:
   Name: Bùa Hộ Mệnh
-  Brief: Giải trừ Hiệu Ứng Suy Yếu nhận phải.
-  Description: Giải trừ {Level} Hiệu Ứng Suy Yếu tiếp theo.
+  Brief: Giải trừ một số hiệu ứng bất lợi tiếp theo phải nhận.
+  Description: Giải trừ {Level} hiệu ứng bất lợi tiếp theo phải nhận.
 TempElectric:
   Description: "Mỗi khi nhận sát thương, gây {Level} sát thương ngược lại cho kẻ tấn\
     \ công.\nHiệu ứng bị xóa bỏ ở đầu lượt tiếp theo của {OwnerName}."
@@ -357,7 +357,7 @@ YuyukoDeath:
     \ không thể hồi phục HP."
 EnemyDayaojing:
   Description: '{OwnerName} được hồi phục {Level} HP khi kết thúc lượt của bản thân.'
-  Name: Trợ Giúp Từ Đại Tiên Nữ
+  Name: Trợ Giúp Từ Daiyousei
 NextTurnGainBlock:
   Name: Khiên Lượt Kế
   Brief: '{OwnerName} nhận |Khiên| ở đầu lượt tiếp theo của bản thân.'
@@ -403,8 +403,8 @@ SingleJiandaoSe:
   Name: Một Nửa Lưỡi Kéo Khổng Lồ
   Description: Mỗi khi {PlayerName} chơi một lá, cô phải nhận {Level} sát thương.
 ReverseJiejieSe:
-  Description: Mỗi khi {PlayerName} mất một Hiệu Ứng Cường Hóa, nhận {Level} |Hộ Giáp|.
-  Brief: Mỗi khi {PlayerName} mất một Hiệu Ứng Cường Hóa, cô nhận |Hộ Giáp|.
+  Description: Mỗi khi {PlayerName} mất một hiệu ứng có lợi, nhận {Level} |Hộ Giáp|.
+  Brief: Mỗi khi {PlayerName} mất một hiệu ứng có lợi, cô nhận |Hộ Giáp|.
   Name: Nghịch Chuyển Kết Giới
 JunkoPurify:
   Description: Mỗi khi {PlayerName} chơi một lá bài, |Thanh Lọc| {Level} mana.
@@ -592,12 +592,12 @@ MihuanJackSe:
   Brief: Vào đầu lượt, tạo một vài |Xung Thời Gian|.
 Cold:
   Brief: "Vào đầu lượt của {OwnerName}, mất {BaseDamage} HP và xóa bỏ hiệu ứng |Lạnh\
-    \ Giá|.\nMỗi khi |Lạnh Giá| yểm lên {OwnerName}, {OwnerName} mất thêm nhiều HP\
-    \ hơn nữa."
+    \ Giá|.\nMỗi khi bị yểm đè thêm |Lạnh Giá|, {OwnerName} mất thêm nhiều HP hơn\
+    \ nữa."
   Name: Lạnh Giá
   Description: "Vào đầu lượt của {OwnerName}, mất {BaseDamage} HP và xóa bỏ hiệu ứng\
-    \ |Lạnh Giá|.\nMỗi khi |Lạnh Giá| yểm lên {OwnerName}, {OwnerName} mất một lượng\
-    \ HP gấp {StackMultiply} lần số lượng phía trên. ({StackDamage}HP)"
+    \ |Lạnh Giá|.\nMỗi khi bị yểm đè thêm |Lạnh Giá|, {OwnerName} mất một lượng HP\
+    \ gấp {StackMultiply} lần số lượng phía trên. ({StackDamage}HP)"
 Concentration:
   Name: Chú Tâm
   Description: Hiệu ứng |Quá Tải| sẽ tiêu hao |Chú Tâm| thay vì |Trữ Năng|, còn {Level}
@@ -727,3 +727,39 @@ BrokenTimelineSe:
     \ cơ sở.\n{SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt mà\
     \ nó có tác dụng kết thúc."
   Description: Không được nhận bất cứ mana nào từ mana cơ sở.
+DrawPhaseAddKnife:
+  Brief: Bỏ qua bước bốc bài đầu lượt, thay vào đó thêm một số lá |Phóng Dao| lên
+    tay.
+  ExtraDescription: "Bỏ qua bước bốc bài đầu lượt, thay vào đó thêm {Limit} lá |Phóng\
+    \ Dao| lên tay.\n{SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi\
+    \ lượt mà nó có tác dụng kết thúc."
+  Name: Nhận |Phóng Dao| thay vì bốc bài đầu lượt.
+  Description: Bỏ qua bước bốc bài đầu lượt, thay vào đó thêm {Limit} lá |Phóng Dao|
+    lên tay.
+ExtraBlizzard:
+  Brief: Vào đầu lượt sau của {OwnerName}, cô |Chuẩn Xác| gây sát thương đồng thời
+    yểm |Lạnh Giá| lên mỗi kẻ địch.
+  Name: Bão Tuyết Đang Tới
+  Description: Vào đầu lượt sau của {OwnerName}, cô |Chuẩn Xác| gây {Damage} sát thương
+    đồng thời yểm |Lạnh Giá| lên mỗi kẻ địch.
+FrozenThroneSe:
+  Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá |Tinh Thể Băng+| lên tay.
+  Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá |Tinh Thể Băng+| lên
+    tay.
+  Name: Vương Tọa Băng Giá
+KnifeTarget:
+  Brief: '|Phóng Dao| sẽ nhắm vào {OwnerName}.'
+  Name: Mục Tiêu Chỉ Định
+  Description: '|Phóng Dao| sẽ nhắm vào {OwnerName} khi được kích hoạt.'
+ExtraDraw:
+  Name: Trí Tuệ Tiên Nữ
+  Brief: Vào đầu lượt sau của {OwnerName}, bốc thêm vài lá.
+  Description: Vào đầu lượt sau của {OwnerName}, bốc thêm {Level} lá.
+FrostArmor:
+  Brief: "Mỗi khi nhận |Giáp Băng|, nhận một lượng tương đương |Khiên|.\nVào đầu lượt\
+    \ của {OwnerName}, nhận |Khiên| và xóa 1 cộng dồn |Giáp Băng|.\nMỗi khi {OwnerName}\
+    \ nhận sát thương tấn công, cô mất 1 cộng dồn |Giáp Băng|."
+  Description: "Vào đầu lượt của {OwnerName}, nhận |Khiên| và xóa 1 cộng dồn |Giáp\
+    \ Băng|.\nMỗi khi {OwnerName} nhận sát thương tấn công, cô mất 1 cộng dồn |Giáp\
+    \ Băng|."
+  Name: Giáp Băng
