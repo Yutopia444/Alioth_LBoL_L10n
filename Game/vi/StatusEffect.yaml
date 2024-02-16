@@ -145,7 +145,7 @@ Emi:
     \ thúc lượt' other='trong % lượt tiếp'}."
 RockHardAura:
   Name: Yếu Thạch Bảo Hộ
-  Description: '{OwnerName} được một yếu thạch bạo vệ, giảm {Level} sát thương phải
+  Description: '{OwnerName} được một yếu thạch bảo vệ, giảm {Level} sát thương phải
     chịu từ tấn công trực diện.'
 BossAct:
   Description: Sau khi {OwnerName} nhận (Count) sát thương, ngay lập tức hành động
@@ -352,7 +352,7 @@ KokoroYou:
   Description: Sau khi {OwnerName} hành động, {PlayerName} nhận {Level} |Suy Nhược|.
     (Đã xảy ra)
 YuyukoDeath:
-  Name: Người Sống Ắt Diệt
+  Name: Sinh Giả Tất Diệt
   Description: "{OwnerName} mất {Level} HP khi kết thúc lượt của bản thân.\n{OwnerName}\
     \ không thể hồi phục HP."
 EnemyDayaojing:
@@ -510,9 +510,8 @@ DanceAroundLakeSe:
   Brief: Mỗi khi |Trục Xuất| một lá bài, bốc một số lá bài.
 SenluoJiejieSe:
   Name: Kết Giới Siêu Nhiên
-  Description: Vào đầu lượt tiếp theo, toàn bộ |Hộ Giáp| sẽ được chuyển hóa thành
-    sát thương.
-  Brief: Vào đầu lượt tiếp theo, toàn bộ |Hộ Giáp| sẽ được chuyển hóa thành sát thương.
+  Description: Vào đầu lượt sau, toàn bộ |Hộ Giáp| sẽ được chuyển hóa thành sát thương.
+  Brief: Vào đầu lượt sau, toàn bộ |Hộ Giáp| sẽ được chuyển hóa thành sát thương.
 SolarSystemSe:
   Name: Mô Hình Hệ Mặt Trời
   Description: Vào đầu lượt của {PlayerName}, nhận {Level} |Trữ Năng|.
@@ -614,8 +613,8 @@ TimeAuraSe:
   Brief: "Khi {PlayerName} kết thúc lượt, gây sát thương lên từng kẻ địch.\nXóa một\
     \ cộng dồn với mỗi kẻ địch bị gây sát thương bằng cách này."
 ScryBlockSe:
-  Description: Mỗi khi |Tiên Tri|, {PlayerName} nhận {Level} |Khiên|.
-  Brief: Mỗi khi |Tiên Tri|, {PlayerName} nhận |Khiên|.
+  Description: Mỗi khi |Tiên Đoán|, {PlayerName} nhận {Level} |Khiên|.
+  Brief: Mỗi khi |Tiên Đoán|, {PlayerName} nhận |Khiên|.
   Name: Đã Sớm Tính Đến
 LearnAstrologySe:
   Brief: Vào đầu lượt của {PlayerName}, nếu trên tay có ít lá |Chiêm Tinh| hơn một
@@ -663,9 +662,9 @@ PerfectServantUSe:
 StopTimeSe:
   Name: Ngưng Kết Thời Gian
   Brief: Khi {PlayerName} kết thúc lượt, ngẫu nhiên giữ lại một vài mana chưa sử dụng
-    cho lượt sau.
+    cho lượt tiếp theo.
   Description: Khi {PlayerName} kết thúc lượt, ngẫu nhiên giữ lại {Level} mana chưa
-    sử dụng cho lượt sau.
+    sử dụng cho lượt tiếp theo.
 SakuyaKillerSe:
   Name: Sát Nhân Trong Sương Đêm
   Brief: Vào cuối lượt của {PlayerName} hoặc khi có kẻ địch bị hạ gục, thêm một vài
@@ -704,8 +703,8 @@ EvilMaidDoubleAttack:
   Name: Hầu Gái Của Ác Ma
 AutoKnifeSe:
   Name: Yêu Khí "Phi Dao Bạc"
-  Brief: Mọi lá |Phóng Dao| đều |Tự Động Trục Xuất| cho đến cuối trận đấu.
-  Description: Mọi lá |Phóng Dao| nhận thuộc tính |Tự Động Trục Xuất| cho đến cuối
+  Brief: Mọi lá |Phóng Dao| đều |Tự Động Trục Xuất| cho đến hết trận đấu.
+  Description: Mọi lá |Phóng Dao| nhận thuộc tính |Tự Động Trục Xuất| cho đến hết
     trận đấu.
 SpecialClockSe:
   Name: Đồng Hồ Bấm Giờ Đặc Biệt
@@ -722,11 +721,11 @@ LunaClockSe:
     \ thúc."
 BrokenTimelineSe:
   Name: Dòng Thời Gian Vụn Vỡ
-  Brief: Không được nhận bất cứ mana nào từ mana cơ sở.
-  ExtraDescription: "Vào đầu lượt tiếp theo, không được nhận bất cứ mana nào từ mana\
-    \ cơ sở.\n{SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt mà\
-    \ nó có tác dụng kết thúc."
-  Description: Không được nhận bất cứ mana nào từ mana cơ sở.
+  Brief: Không được nhận bất cứ mana nào từ kho mana.
+  ExtraDescription: "Vào đầu lượt sau, không được nhận bất cứ mana nào từ kho mana.\n\
+    {SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt mà nó có tác\
+    \ dụng kết thúc."
+  Description: Không được nhận bất cứ mana nào từ kho mana.
 DrawPhaseAddKnife:
   Brief: Bỏ qua bước bốc bài đầu lượt, thay vào đó thêm một số lá |Phóng Dao| lên
     tay.
@@ -737,11 +736,11 @@ DrawPhaseAddKnife:
   Description: Bỏ qua bước bốc bài đầu lượt, thay vào đó thêm {Limit} lá |Phóng Dao|
     lên tay.
 ExtraBlizzard:
-  Brief: Vào đầu lượt sau của {OwnerName}, cô |Chuẩn Xác| gây sát thương đồng thời
-    yểm |Lạnh Giá| lên mỗi kẻ địch.
+  Brief: Vào đầu lượt tiếp theo của {OwnerName}, cô |Chuẩn Xác| gây sát thương đồng
+    thời yểm |Lạnh Giá| lên mỗi kẻ địch.
   Name: Bão Tuyết Đang Tới
-  Description: Vào đầu lượt sau của {OwnerName}, cô |Chuẩn Xác| gây {Damage} sát thương
-    đồng thời yểm |Lạnh Giá| lên mỗi kẻ địch.
+  Description: Vào đầu lượt tiếp theo của {OwnerName}, cô |Chuẩn Xác| gây {Damage}
+    sát thương đồng thời yểm |Lạnh Giá| lên mỗi kẻ địch.
 FrozenThroneSe:
   Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá |Tinh Thể Băng+| lên tay.
   Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá |Tinh Thể Băng+| lên
@@ -753,8 +752,8 @@ KnifeTarget:
   Description: '|Phóng Dao| sẽ nhắm vào {OwnerName} khi được kích hoạt.'
 ExtraDraw:
   Name: Trí Tuệ Tiên Nữ
-  Brief: Vào đầu lượt sau của {OwnerName}, bốc thêm vài lá.
-  Description: Vào đầu lượt sau của {OwnerName}, bốc thêm {Level} lá.
+  Brief: Vào đầu lượt tiếp theo của {OwnerName}, bốc thêm vài lá.
+  Description: Vào đầu lượt tiếp theo của {OwnerName}, bốc thêm {Level} lá.
 FrostArmor:
   Brief: "Mỗi khi nhận |Giáp Băng|, nhận một lượng tương đương |Khiên|.\nVào đầu lượt\
     \ của {OwnerName}, nhận |Khiên| và xóa 1 cộng dồn |Giáp Băng|.\nMỗi khi {OwnerName}\
@@ -797,8 +796,8 @@ StarFriendSe:
   Description: Khi {SourceCardName} gây sát thương, yểm {Level} |Bị Nhắm Tới|.
 NextTurnChaowo:
   Name: Bình Thản Lượt Kế
-  Description: Vào đầu lượt sau của {PlayerName}, tiến vào |Bình Thản|.
-  Brief: Vào đầu lượt sau của {PlayerName}, tiến vào |Bình Thản|.
+  Description: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Bình Thản|.
+  Brief: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Bình Thản|.
 Starfall:
   Name: Sao Rơi
   Description: Sau khi |Tiên Đoán|, chịu {Level} sát thương.
@@ -890,8 +889,8 @@ MindEnlight:
   Name: Đốn Ngộ
 NextTurnBenwo:
   Name: Say Mê Lượt Kế
-  Brief: Vào đầu lượt sau của {PlayerName}, tiến vào |Say Mê|.
-  Description: Vào đầu lượt sau của {PlayerName}, tiến vào |Say Mê|.
+  Brief: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Say Mê|.
+  Description: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Say Mê|.
 HuiguiLizhiSe:
   Description: Sau khi kết thúc lượt, tiến vào |Bình Thản|.
   Brief: Sau khi kết thúc lượt, tiến vào |Bình Thản|.
@@ -939,8 +938,9 @@ ChaoyueZiwoSe:
   Brief: Khi {PlayerName} kết thúc lượt, nếu đang trong trạng thái |Bình Thản|, nhận
     |Hỏa Lực| và |Linh Lực|.
 NextTurnLoseGame:
-  Description: Khi bắt đầu lượt tiếp theo, thua trận đấu.
-  Brief: Khi bắt đầu lượt tiếp theo, thua trận đấu.
+  Description: Khi bắt đầu lượt sau, thua trận đấu.
+  Brief: Khi bắt đầu lượt sau thua trận đấu.
+  Name: Sắp Vào Quan Tài
 ShannvAbilitySe:
   Description: Khi {PlayerName} kết thúc lượt, yểm {Level} |Nhiễm Độc| lên mỗi kẻ
     địch.
@@ -964,6 +964,9 @@ GrimoireStudySe:
   Brief: Khi {OwnerName} kết thúc lượt, thêm 1 lá |Cầu Vồng| lên tay.
 DizangLoveSe:
   Name: Bồ Đề Tức Thời
+  Brief: Sau khi một lá Thường được chơi, {PlayerName} nhận |Hỏa Lực Tạm Thời|.
+  Description: Sau khi một lá Thường được chơi, {PlayerName} nhận {Level} |Hỏa Lực
+    Tạm Thời|.
 RangziFanshuSe:
   Description: Khi trận đấu kết thúc, hồi {Value1} HP.
   Name: Khoai Lang Thơm Ngọt
@@ -974,3 +977,156 @@ MeihongPowerSe:
     \ kết thúc, nếu HP của {PlayerName} còn ít hơn một nửa, hồi {Value2} HP."
   Brief: "Vào đầu lượt của {PlayerName}, nhận |Hỏa Lực|.\nKhi trận đấu kết thúc, nếu\
     \ HP của {PlayerName} còn ít hơn một nửa, hồi một ít HP."
+YukariFriendSe:
+  Name: Ranh Giới Ảo Tưởng
+  Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá ba màu trung lập lên
+    tay, {Level:plural one='nó' other='chúng'} |tạm thời tốn| {Mana} và sở hữu thuộc
+    tính |Hư Vô|.
+  Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá ba màu trung lập lên tay,
+    chúng |tạm thời tốn| {Mana} và sở hữu thuộc tính |Hư Vô|.
+TodayYesterdaySe:
+  Name: Ảo Tưởng Hương Xưa Và Nay
+  Description: Mỗi khi {OwnerName} |Né Tránh| một đòn tấn công, nhận {Level} |Hỏa
+    Lực|.
+  Brief: Mỗi khi {OwnerName} |Né Tránh| một đòn tấn công, nhận {Level} |Hỏa Lực|.
+SeeFengshuiSe:
+  Name: Khảo Sát Phong Thủy
+  Description: "Vào đầu lượt của {PlayerName}, |Tiên Đoán| {Scry}.\nVới mỗi lá Phòng\
+    \ Thủ bị chuyển vào Chồng Bài Bỏ bằng cách |Tiên Đoán|, nhận {Block} |Khiên|."
+  Brief: "Vào đầu lượt của {PlayerName}, |Tiên Đoán| {Scry}.\nVới mỗi lá Phòng Thủ\
+    \ bị chuyển vào Chồng Bài Bỏ bằng cách |Tiên Đoán|, nhận |Khiên|."
+TiangouOrderSe:
+  Brief: Khi {OwnerName} đó bị tấn công gây sát thương, {PlayerName} nhận |Khiên|.
+  Description: Khi {OwnerName} đó bị tấn công gây sát thương, {PlayerName} nhận {Value1}
+    |Khiên|.
+  Name: Hiệu Lệnh Từ Đại Thiên Cẩu
+KokoroDanceSe:
+  Brief: Mỗi khi một kẻ địch phải nhận một hiệu ứng bất lợi, {PlayerName} gây sát
+    thương lên kẻ địch đó.
+  Name: Điệu Nhảy Của Mặt Nạ Vô Tâm
+  Description: Mỗi khi một kẻ địch phải nhận một hiệu ứng bất lợi, {PlayerName} gây
+    {Level} sát thương lên kẻ địch đó.
+SkyWaterSe:
+  Name: Phép Màu Của Thiên Thủy
+  Description: Bốc thêm {Level} lá mỗi khi bốc bài đầu lượt.
+  Brief: Bốc thêm một vài lá mỗi khi bốc bài đầu lượt.
+BlackPoisonSe:
+  Name: Điệu Múa Tăm Tối
+  Description: Mỗi khi {PlayerName} tấn công gây sát thương trực diện, yểm thêm {Level}
+    |Nhiễm Độc|.
+  Brief: Mỗi khi {PlayerName} tấn công gây sát thương trực diện, yểm thêm |Nhiễm Độc|.
+MoonWorldSe:
+  Name: Thế Giới Vô Uế
+  Description: Vào đầu lượt của {PlayerName}, {Level} lá ngẫu nhiên trên tay trở nên
+    |Thuần Khiết|, xóa bỏ phần tiêu hao cần mana màu của {Level:plural one='nó' other='chúng'}
+    cho đến hết trận đấu.
+  Brief: Vào đầu lượt của {PlayerName}, một vài lá ngẫu nhiên trên tay trở nên |Thuần
+    Khiết|, xóa bỏ phần tiêu hao cần mana màu của chúng cho đến hết trận đấu.
+BailianFireSe:
+  Name: Lửa Pháp Giới
+  Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá Kỹ Năng ngẫu nhiên lên
+    tay, {Level:plural one='nó' other='chúng'} |tạm thời tốn| {Mana} và sở hữu thuộc
+    tính |Trục Xuất| cùng |Hư Vô|.
+  Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá Kỹ Năng ngẫu nhiên lên tay,
+    chúng |tạm thời tốn| {Mana} và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.
+RinDrawSe:
+  Description: Mỗi khi 1 lá Trạng Thái được bốc, bốc {Level} lá.
+  Brief: Mỗi khi 1 lá Trạng Thái được bốc, bốc một vài lá.
+  Name: Điều Khiển Oán Linh
+YachieDefendSe:
+  Name: Địa Ngục Mai Rùa
+  Description: "Ngăn ngừa {Level} lần tiếp theo {OwnerName} mất HP.\nNếu lần mất HP\
+    \ đó do một kẻ địch gây nên, phản lại lượng mất HP trên sang kẻ đó."
+  Brief: "Ngăn ngừa một vài lần tiếp theo {OwnerName} mất HP.\nNếu lần mất HP đó do\
+    \ một kẻ địch gây nên, phản lại lượng mất HP trên sang kẻ đó."
+ShirenKunchongSe:
+  Name: Côn Trùng Ăn Người
+  Brief: Mỗi khi một kẻ địch phải chịu |hiệu ứng bất lợi|, {PlayerName} nhận |Khiên|.
+  Description: Mỗi khi một kẻ địch phải chịu |hiệu ứng bất lợi|, {PlayerName} nhận
+    {Level} |Khiên|.
+YouxiangWakeSe:
+  Name: Thức Dậy Đúng Giờ
+  Brief: Sau một số lượt, khi bắt đầu lượt, nhận |Hỏa Lực| và chuyển một vài lá Tấn
+    Công ngẫu nhiên từ Chồng Bài Bốc lên tay, chúng |tạm thời tốn| {Mana}.
+  Description: Vào đầu lượt {Count:plural one='của lượt sau' other='sau % lượt tiếp
+    theo'}, nhận {Level} |Hỏa Lực| và chuyển {Limit} lá Tấn Công ngẫu nhiên từ Chồng
+    Bài Bốc lên tay, {Value2:plural one='nó' other='chúng'} |tạm thời tốn| {Mana}.
+  ExtraDescription: Vào đầu lượt sau, nhận {Level} |Hỏa Lực| và chuyển {Limit} lá
+    Tấn Công ngẫu nhiên từ Chồng Bài Bốc lên tay, {Limit:plural one='nó' other='chúng'}
+    |tạm thời tốn| {Mana}.
+TianziRockSe:
+  Name: Tuyệt Đối Chắc Chắn!
+  Description: '{OwnerName} nhận ít đi {Level} sát thương tấn công.'
+  Brief: '{OwnerName} giảm sát thương tấn công phải nhận.'
+  ExtraDescription: "{OwnerName} nhận ít đi {Level} sát thương tấn công.\n{OwnerName}\
+    \ miễn nhiễm với |Bị Nhắm Tới|."
+PrismriverSe:
+  Description: Mọi mana {PlayerName} nhận được trong trận đấu này đều trở thành |Mana
+    Đa Sắc| <sprite="ManaSprite" name="P">.
+  Name: Bản Concerto Lăng Kính
+  Brief: Mọi mana {PlayerName} nhận được trong trận đấu này đều trở thành |Mana Đa
+    Sắc| <sprite="ManaSprite" name="P">.
+SuperExtraTurn:
+  Name: Cặp Đôi Ngoại Cảm Thế Kỷ
+  Brief: "Khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n|Khiên|\
+    \ và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Level} lá."
+  ExtraDescription: "Khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
+    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Level}\
+    \ lá.\nLượt này là: Lượt Phụ nhận bởi {SelfName}, còn có thể chơi {Count} lá.\n"
+  Description: "Khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
+    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Level}\
+    \ lá.\nLượt này là: {StatusString}."
+LoseSpiritSe:
+  Description: Vào đầu lượt của {PlayerName}, giảm {Level} |Linh Lực|.
+  Name: Vũ Y Biến Mất
+  Brief: Vào đầu lượt của {PlayerName}, bị giảm |Linh Lực|.
+HuiyeManaSe:
+  Name: Cổ Tích Về Ông Lão Đốn Tre
+  Brief: Vào đầu lượt của {PlayerName}, nhận một lượng mana ngẫu nhiên, gia tăng thêm
+    sau mỗi lượt.
+  Description: Vào đầu lượt của {PlayerName}, nhận {Level} mana ngẫu nhiên, tăng thêm
+    {Level} sau mỗi lượt.
+YouxiangMoonSe:
+  Name: Phong Hoa Điểu Nguyệt
+  Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá |Hoa Giữa Hạ| lên tay.
+  Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá |Hoa Giữa Hạ| lên tay.
+ZhenmiaowanAttackSe:
+  Brief: Các lá Kỹ Năng tốn ít đi {Mana} lượt này.
+  Name: Hậu Duệ Của Issun Boushi
+  Description: Các lá Kỹ Năng tốn ít đi {Mana} lượt này.
+  ExtraDescription: Các lá bài tốn ít đi {Mana} lượt này.
+HekaHellRainSe:
+  Description: "Khi kết thúc lượt, gây sát thương lên mỗi kẻ địch dựa trên số lá đã\
+    \ chơi trong lượt, mỗi lá tăng {Level} sát thương.\n(Tổng cộng {Count} sát thương)"
+  Name: Cơn Mưa Địa Ngục
+  Brief: Khi kết thúc lượt, gây sát thương lên mỗi kẻ địch dựa trên số lá đã chơi
+    trong lượt.
+HuiyeTimeSe:
+  Description: Chỉ có thể chơi {Limit} lá trong lượt, còn lại {Count} lá.
+  Name: Trong Một Khoảnh Khắc
+  ExtraDescription: "Chỉ có thể chơi {Limit} lá trong lượt, còn lại {Count} lá.\n\
+    {SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt mà nó có tác\
+    \ dụng kết thúc."
+RainbowMarketSe:
+  Name: Khu Chợ Cầu Vồng Trăng
+  Brief: Mỗi khi một lá bị |Trục Xuất|, thêm một vài lá ngẫu nhiên lên tay.
+  Description: Mỗi khi một lá bị |Trục Xuất|, thêm {Level} lá ngẫu nhiên lên tay.
+YonglinUpgradeSe:
+  Name: Tiên Hương Thỏ Ngọc
+  Description: Vào đầu lượt của {PlayerName}, |Nâng Cấp| {Level} lá ngẫu nhiên trên
+    tay.
+  Brief: Vào đầu lượt của {PlayerName}, |Nâng Cấp| một vài lá ngẫu nhiên trên tay.
+ModuoluoFireSe:
+  Name: Ngọn Lửa Của Kẻ Ô Uế
+  Description: Mỗi khi một <sprite="ManaSprite" name="P"> bị tiêu hao, gây {Level}
+    sát thương cho mỗi kẻ địch, nếu sử dụng nhiều <sprite="ManaSprite" name="P"> cùng
+    lúc sẽ gộp sát thương.
+  Brief: Mỗi khi một <sprite="ManaSprite" name="P"> bị tiêu hao, gây sát thương cho
+    mỗi kẻ địch, nếu sử dụng nhiều <sprite="ManaSprite" name="P"> cùng lúc sẽ gộp
+    sát thương.
+MeilingAbilitySe:
+  Description: '{PlayerName} nhận được nhiều gấp đôi |Hỏa Lực| và |Hỏa Lực Tạm Thời|
+    từ mọi nguồn.'
+  Brief: '{PlayerName} nhận được nhiều gấp đôi |Hỏa Lực| và |Hỏa Lực Tạm Thời| từ
+    mọi nguồn.'
+  Name: Liệt Hồng Quyền
