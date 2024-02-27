@@ -8,3 +8,94 @@ DamageType:
     \ mất HP thì không.\nCó quá nhiều loại sát thương trực tiếp khác nhau để liệt\
     \ kê nhưng về cơ bản, mọi sát thương gây ra không có nguồn gốc từ việc tấn công,\
     \ các hiệu ứng bất lợi gây mất máu đều là \"Sát thương Trực Tiếp\"."
+  Name: Loại Sát Thương
+General:
+  Name: Lời Nói Đầu
+  Description: "Nếu bạn là người chơi mới, không cần quá cố gắng nghiên cứu hướng\
+    \ dẫn này.\n\nSau khi chơi một vài trò chơi, nếu bạn thích \"Lost Branch of Legend\"\
+    \ và có thắc mắc về một số chi tiết về luật chơi, bạn có thể kiểm tra các từ khóa\
+    \ tương ứng tại đây."
+ManaColor:
+  Name: Màu Sắc Của Mana
+  Description: "Một trong những ý tưởng ban đầu khi thiết kế trò chơi này là sử dụng\
+    \ hệ thống màu sắc tương tự như trong \"Magic: The Gathering\" để diễn giải các\
+    \ nhân vật trong \"Touhou Project\".\nCó tổng cộng 8 màu mana khác nhau trong\
+    \ trò chơi, bao gồm:\n5 màu đơn thông thường \"trắng, lam, đen, đỏ , lục\", màu\
+    \ đơn đặc biệt \"vô sắc\", \"màu trống\" có thể thanh toán bằng mana của bất kỳ\
+    \ màu nào và được diễn tả bởi con số và cuối cùng là \"đa sắc\" có thể thanh toán\
+    \ cho bất kỳ màu nào, đa sắc không phải là một màu chi phí.\nVô Sắc nhìn chung\
+    \ thường được để trả cho \"màu trống\" với một số ít thẻ đòi hỏi mana vô sắc.\n\
+    Mana Đa Sắc rất mạnh và được coi là mana có mọi màu sắc, nó sẽ kích hoạt tất cả\
+    \ các hiệu ứng tiêu hao mana cùng một lúc trừ phi hiệu ứng đó nói rõ rằng nó sẽ\
+    \ không tính Mana Đa Sắc."
+CardPool:
+  Name: Nguồn Thẻ
+  Description: "Bạn chỉ có thể tìm thấy một lá khi nó đáp ứng đủ các điều kiện sau:\n\
+    1. Kho mana của bạn đủ để chi trả cho nó.\n2. Nếu nó là lá độc quyền của một nhân\
+    \ vật, bạn phải đang chơi nhân vật đó hoặc đang giữ Chứng Vật Hoàn Mỹ của họ,\
+    \ hoặc sở hữu Chứng Vật có hiệu ứng thêm bài độc quyền của nhân vật đó vào nguồn\
+    \ thẻ.\n3. Mỗi màu của lá đó phải tương ứng với một mana trong kho mana của bạn,\
+    \ Mana Đa sắc không được tính.\n\nVới các lá tiêu hao 5 hoặc hơn có bộ phận mana\
+    \ trống (<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\"\
+    >, vv., chỉ phần mana không trống của nó mới tính vào điều kiện thứ nhất, tiêu\
+    \ hao của những lá này có thể được giảm nhờ các hiệu ứng."
+BossLoot:
+  Name: Phần Thưởng Từ Trùm
+  Description: "Khi đánh bại một Trùm, bạn sẽ được chọn một trong ba Chứng Vật làm\
+    \ phần thưởng, những |Chứng Vật| đó tuân theo quy luật:\n|Chứng Vật| nằm bên phải\
+    \ phụ thuộc vào Trùm. Trong Chương 1, nó sẽ là |Chứng Vật Hoàn Mỹ| của Trùm đó,\
+    \ trong các Chương tiếp theo sẽ là một |Chứng Vật Hoàn Mỹ| trung lập dưa theo\
+    \ màu của Trùm (Ví dụ, Remilia sẽ tạo ra một |Chứng Vật| mana đỏ).\n|Chứng Vật|\
+    \ nằm bên trái dựa theo kho mana của bạn. Nó sẽ là một |Chứng Vật Hoàn Mỹ| có\
+    \ màu giống với một trong những mana trong kho mana của bạn và khác màu với |Chứng\
+    \ Vật| nằm bên phải.\n|Chứng Vật| nằm giữa sẽ luôn là một |Chứng Vật Hoàn Mỹ|\
+    \ trung lập có màu khác với hai |Chứng Vật| kia, nó có thể là một |Chứng Vật|\
+    \ sẽ không thêm mana nào vào kho mana của bạn (ví dụ như là \"Tranh Sơn Dầu khí\
+    \ phái\").\n\nNếu nguồn |Chứng Vật Hoàn Mỹ| ngẫu nhiên đã cạn kiệt, vị trí đó\
+    \ sẽ được thay thế bằng một |Chứng Vật| từ |Thường| đến |Hiếm| (Thường xảy ra\
+    \ ở Trùm Chương 3 vị trí |Chứng Vật| bên phải)"
+BattleFlow:
+  Name: Luồng Trận Đấu & Các Loại Lượt
+  Description: "Khi tham gia trận đấu, kẻ thù và các lá bài ban đầu cần thiết sẽ được\
+    \ khởi tạo, sau đó luồng trận đấu sẽ bắt đầu.\nĐầu tiên, giai đoạn \"bắt đầu trận\
+    \ đấu\" diễn ra, hầu hết các trạng thái ban đầu của kẻ thù đều được thêm vào tại\
+    \ thời điểm này và cũng có nhiều hiệu ứng kích hoạt vào thời điểm này ví dụ như\
+    \ |Đôi Guốc của Thiên Cẩu|, giai đoạn này sớm hơn giai đoạn \"bắt đầu lượt đầu\
+    \ tiên của Người Chơi\", một ví dụ dễ thấy là Seiki và một số Trùm cũng thực hiện\
+    \ nhiều hành động vào giai đoạn này.\nSau đó, trận đấu diễn ra theo từng vòng\
+    \ cho đến khi một bên bị đánh bại hoàn toàn.\nMỗi \"Vòng\" bao gồm nhiều \"Lượt\"\
+    , mỗi lượt tương ứng với một nhân vật cụ thể. (v.d \"Lượt Của Reimu\", \"Lượt\
+    \ Của Rin Kaenbyou\")\nTrong mỗi vòng, đầu tiên sẽ là giai đoạn của người chơi,\
+    \ giai đoạn này gồm có 1 lượt thường cho người chơi, sau lượt thường là một số\
+    \ các lượt phụ tùy vào số cộng dồn |Lượt Phụ| mà người chơi có, nếu kết thúc lượt\
+    \ mà không có cộng dồng |Lượt Phụ| nào, giai đoạn người chơi cũng sẽ kết thúc.\n\
+    Sau đó sẽ là giai đoạn kẻ địch khi mà kẻ địch sẽ hành động theo lượt của mình,\
+    \ sau khi mọi kẻ địch đều đã hành động, giai đoạn kẻ địch kết thúc, vòng hiện\
+    \ tại cũng kết thúc ngay sau đó.\nCho đến hiện tại thỉ chỉ người chơi có thể nhận\
+    \ Lượt Phụ, ngoại lệ duy nhất giúp kẻ địch có lượt phụ là lá |Ma Phương Dẹp Lại\"\
+    . Nếu kẻ địch có lượt phụ, chúng sẽ hành động thêm một số lần bằng với số |Lượt\
+    \ Phụ| chúng có. Lưu ý rằng trò chơi chỉ hiển thị ý định của lượt đầu của kẻ địch.\n\
+    Mỗi phe có bộ đếm lượt để theo dõi số lượt mà mỗi bên đã nhận được.\nThông thường\
+    \ số lượt của kẻ địch sẽ bằng với số vòng đã trôi qua. Người chơi có thể có nhiều\
+    \ lượt hơn số vòng nhờ vào |Lượt Phụ|.\nMột số hiệu ứng sẽ chính xác hơn nếu dùng\
+    \ thuật ngữ \"vòng\" thay vì \"lượt\", ví dụ như Dễ Tổn Hại, Suy Nhược, Vụn Vỡ\
+    \ sẽ mất 1 cộng dồn sau mỗi vòng, nhưng thực tế chúng cũng giảm đi khi bắt đầu\
+    \ một Lượt Phụ.\n"
+FriendCard:
+  Description: "Dưới đây là một số quy tắc bổ sung về lá Đồng Đội để giúp trải nghiệm\
+    \ chơi trò chơi trở nên mượt mà hơn:\n1. Trục Xuất được thay bằng Hư Vô:\nMỗi\
+    \ khi một hiệu ứng khiến một lá Đồng Đội nhận Trục Xuất, nó sẽ nhận Hư Vô thay\
+    \ vào đó, điều tương tự khi xóa bỏ Trục Xuất. Do lá Đồng Đội được thiết kể để\
+    \ được chơi nhiều lần, việc sở hữu Trục Xuất sẽ là vô nghĩa.\n2. Khi một lá Đồng\
+    \ Đội có Hư Vô được triệu hồi, nó sẽ được xóa đi Hư Vô.\nDo nếu giữ nguyên Hư\
+    \ Vô, nội tại của lá Đồng Đội sẽ chỉ có thể kích hoạt một lần ngay sau khi triệu\
+    \ hồi, điều này trái với mong muống khi thiết kế. Điều này được áp dụng với mọi\
+    \ lá đồng đội có Hư Vô bất kể nguồn gốc.\n3. Nếu hiệu ứng Bản Sao được dùng lên\
+    \ một lá Đồng Đội vào giữa trận, chỉ các thuộc tính của nó được giữ lại, trạng\
+    \ thái của nó trở thành chưa triệu hồi và số Trợ Sức của nó trở về mức cơ sở.\
+    \ Điều này là do Đồng Đội đã triệu hồi có phần giống với các lá khác sau khi được\
+    \ chơi và chỉ việc có thể Sao Chép chúng đã là một lợi thế lớn. Nếu một người\
+    \ sao chép một lá Đồng Đội sắp kích hoạt Tuyệt Kỹ của nó và kích hoạt nó hai lần,\
+    \ khiến chúng ta sẽ phải giảm sức mạnh của các Tuyệt Kỹ vì vấn đề cân bằng, đi\
+    \ ngược lại tinh thần của một \"Tuyệt Kỹ\"."
+  Name: Chi Tiết Về Lá Đồng Đội
