@@ -20,14 +20,18 @@ ManaColor:
   Description: "Một trong những ý tưởng ban đầu khi thiết kế trò chơi này là sử dụng\
     \ hệ thống màu sắc tương tự như trong \"Magic: The Gathering\" để diễn giải các\
     \ nhân vật trong \"Touhou Project\".\nCó tổng cộng 8 màu mana khác nhau trong\
-    \ trò chơi, bao gồm:\n5 màu đơn thông thường \"trắng, lam, đen, đỏ , lục\", màu\
-    \ đơn đặc biệt \"vô sắc\", \"màu trống\" có thể thanh toán bằng mana của bất kỳ\
-    \ màu nào và được diễn tả bởi con số và cuối cùng là \"đa sắc\" có thể thanh toán\
-    \ cho bất kỳ màu nào, đa sắc không phải là một màu chi phí.\nVô Sắc nhìn chung\
-    \ thường được để trả cho \"màu trống\" với một số ít thẻ đòi hỏi mana vô sắc.\n\
-    Mana Đa Sắc rất mạnh và được coi là mana có mọi màu sắc, nó sẽ kích hoạt tất cả\
-    \ các hiệu ứng tiêu hao mana cùng một lúc trừ phi hiệu ứng đó nói rõ rằng nó sẽ\
-    \ không tính Mana Đa Sắc."
+    \ trò chơi, bao gồm:\n5 màu đơn thông thường \"Trắng, Lam, Đen, Đỏ , Lục\", màu\
+    \ đơn đặc biệt \"Vô Sắc\", \"màu trống\" có thể thanh toán bằng mana của bất kỳ\
+    \ màu nào và được diễn tả bởi con số và cuối cùng là \"Đa Sắc\" có thể thanh toán\
+    \ cho bất kỳ màu nào, Đa Sắc không phải là một màu chi phí.\nVô Sắc nhìn chung\
+    \ thường được để trả cho \"màu trống\" với một số ít thẻ đòi hỏi mana vô sắc ví\
+    \ dụ như lá |Thế Giới Vô Uế|.\nMana Đa Sắc rất mạnh và được coi là mana có mọi\
+    \ màu sắc, nó sẽ kích hoạt tất cả các hiệu ứng tiêu hao mana cùng một lúc trừ\
+    \ phi hiệu ứng đó nói rõ rằng nó sẽ không tính Mana Đa Sắc. Ví dụ, nếu người chơi\
+    \ sở hữu |Kinh hoàn Mẫu đơn| kích hoạt bằng cách sử dụng Mana Đỏ, đồng thời cũng\
+    \ sở hữu |Cục băng| kích hoạt bằng cách sử dụng Mana Lam, việc sử dụng một Mana\
+    \ Đa Sắc sẽ được tính như bạn đã sử dụng mana của đúng loại màu cần cho cả hai\
+    \ Chứng Vật đó."
 CardPool:
   Name: Nguồn Thẻ
   Description: "Bạn chỉ có thể tìm thấy một lá khi nó đáp ứng đủ các điều kiện sau:\n\
@@ -35,10 +39,25 @@ CardPool:
     \ vật, bạn phải đang chơi nhân vật đó hoặc đang giữ Chứng Vật Hoàn Mỹ của họ,\
     \ hoặc sở hữu Chứng Vật có hiệu ứng thêm bài độc quyền của nhân vật đó vào nguồn\
     \ thẻ.\n3. Mỗi màu của lá đó phải tương ứng với một mana trong kho mana của bạn,\
-    \ Mana Đa sắc không được tính.\n\nVới các lá tiêu hao 5 hoặc hơn có bộ phận mana\
-    \ trống (<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\"\
-    >, vv., chỉ phần mana không trống của nó mới tính vào điều kiện thứ nhất, tiêu\
-    \ hao của những lá này có thể được giảm nhờ các hiệu ứng."
+    \ Mana Đa sắc không được tính.\n\nVí dụ, giả sử bạn chơi bằng Reimu và sở hữu\
+    \ |Quỷ Thư Hắc Ám|, |Hòn đá Triết Gia| cùng |Vồ Thần Kỳ|. |d:(Bạn đổi Chứng Vật\
+    \ Hoàn Mỹ của bạn cho Eirin...)| \n|Kho mana| có <sprite=\"ManaSprite\" name=\"\
+    W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. Bạn có thể tìm thẻ Độc Quyền\
+    \ của Reimu và Marisa, vì bạn đang có |Quỷ Thư Hắc Ám|.\n\nTrong trường hợp này,\
+    \ bạn có thể tìm được 1 thẻ đen có chi phí <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"B\"> vì bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\"> để chơi nó. Tuy nhiên, bạn |r:không thể| tìm một thẻ\
+    \ xanh dương và đen tốn <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
+    \ name=\"B\">, bởi vì bạn không có <sprite=\"ManaSprite\" name=\"U\"> trong |kho\
+    \ mana|, ngay cả khi bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\"> để chơi nó.\n\nLưu ý:\n|Thẻ bài Trắng|, một |Chứng Vật\
+    \ Hoàn Mỹ|, cho phép bạn tìm thẻ có |p:bất cứ màu nào|.\n\nVới các lá có chi phí\
+    \ là 5 hoặc nhiều hơn có bộ phận mana trống (<sprite=\"ManaSprite\" name=\"1\"\
+    >, <sprite=\"ManaSprite\" name=\"2\">, vv., chỉ phần mana không trống của nó mới\
+    \ tính vào điều kiện thứ nhất, tiêu hao của những lá này có thể được giảm nhờ\
+    \ các hiệu ứng."
 BossLoot:
   Name: Phần Thưởng Từ Trùm
   Description: "Khi đánh bại một Trùm, bạn sẽ được chọn một trong ba Chứng Vật làm\
@@ -89,13 +108,14 @@ FriendCard:
     \ được chơi nhiều lần, việc sở hữu Trục Xuất sẽ là vô nghĩa.\n2. Khi một lá Đồng\
     \ Đội có Hư Vô được triệu hồi, nó sẽ được xóa đi Hư Vô.\nDo nếu giữ nguyên Hư\
     \ Vô, nội tại của lá Đồng Đội sẽ chỉ có thể kích hoạt một lần ngay sau khi triệu\
-    \ hồi, điều này trái với mong muống khi thiết kế. Điều này được áp dụng với mọi\
-    \ lá đồng đội có Hư Vô bất kể nguồn gốc.\n3. Nếu hiệu ứng Bản Sao được dùng lên\
-    \ một lá Đồng Đội vào giữa trận, chỉ các thuộc tính của nó được giữ lại, trạng\
-    \ thái của nó trở thành chưa triệu hồi và số Trợ Sức của nó trở về mức cơ sở.\
-    \ Điều này là do Đồng Đội đã triệu hồi có phần giống với các lá khác sau khi được\
-    \ chơi và chỉ việc có thể Sao Chép chúng đã là một lợi thế lớn. Nếu một người\
-    \ sao chép một lá Đồng Đội sắp kích hoạt Tuyệt Kỹ của nó và kích hoạt nó hai lần,\
-    \ khiến chúng ta sẽ phải giảm sức mạnh của các Tuyệt Kỹ vì vấn đề cân bằng, đi\
-    \ ngược lại tinh thần của một \"Tuyệt Kỹ\"."
+    \ hồi, điều này trái với mong muốn khi thiết kế. Lá |Người Xã Giao Rộng| có đặc\
+    \ biệt đề cập đến việc này và nó được áp dụng với mọi lá đồng đội có Hư Vô khác\
+    \ bất kể nguồn gốc.\n3. Nếu hiệu ứng Bản Sao được dùng lên một lá Đồng Đội vào\
+    \ giữa trận, chỉ các thuộc tính của nó được giữ lại, trạng thái của nó trở thành\
+    \ chưa triệu hồi và số Trợ Sức của nó trở về mức cơ sở. Điều này là do Đồng Đội\
+    \ đã triệu hồi có phần giống với các lá khác sau khi được chơi và chỉ việc có\
+    \ thể Sao Chép chúng đã là một lợi thế lớn. Nếu một người sao chép một lá Đồng\
+    \ Đội sắp kích hoạt Tuyệt Kỹ của nó và kích hoạt nó hai lần, khiến chúng ta sẽ\
+    \ phải giảm sức mạnh của các Tuyệt Kỹ xuống vì vấn đề cân bằng, đi ngược lại tinh\
+    \ thần của một \"Tuyệt Kỹ\"."
   Name: Chi Tiết Về Lá Đồng Đội

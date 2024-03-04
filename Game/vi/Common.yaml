@@ -22,7 +22,7 @@ Game:
   RarityOrder: Theo Độ Hiếm
   RarityOrderExplain: "Các thẻ cùng một độ hiếm sẽ được sắp xếp theo thứ tự của các\
     \ thẻ giữa chúng.\nCác thẻ trùng tên sẽ được sắp xếp theo thứ tự thật của chúng."
-  ManaAmountOrder: Theo Tiêu Hao
+  ManaAmountOrder: Theo Chi Phí
   DrawZone: Chồng Bài Bốc
   DrawZoneInOrder: Chồng Bài Bốc (theo thứ tự)
   DrawZoneOutOfOrder: Chồng Bài Bốc (không theo thứ tự)
@@ -51,29 +51,30 @@ Game:
   RoundCounter: Vòng {0}
   Passive:  Nội Tại 
 Explain:
-  RollCard: "|Tìm thẻ thông qua Thẻ Thưởng|\n\nBạn chỉ có thể tìm được 1 thẻ nào đó\
-    \ khi đáp ứng đủ các tiêu chí sau:\n1: |Kho mana| phải đáp ứng được toàn bộ chi\
-    \ phí của thẻ.\n2: Nếu đó là một thẻ Độc Quyền, Nó chỉ có thể được tìm thấy khi\
-    \ bạn đang chơi bằng nhân vật đó, hoặc bạn đang câm |Chứng Vật Hoàn Mỹ| của nhân\
-    \ vật đó.\n3: Toàn bộ màu của thẻ đều nằm trong |kho mana| của bạn. Mana Ngũ Sắc\
-    \ không được tính vào tiêu chí này.\n\nVí dụ, bạn chơi bằng Reimu và bạn có |Ma\
-    \ Thư Hắc Ám|, |Đá Hiền Triết| và |Vồ Thần Kỳ|. |d:(Bạn đổi Chứng Vật Hoàn Mỹ\
-    \ của bạn cho Eirin...)| \n|Kho mana| có <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
-    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
-    \ name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
-    P\"><sprite=\"ManaSprite\" name=\"C\">. Bạn có thể tìm thẻ Độc Quyền của Reimu\
-    \ và Marisa, vì bạn đang có |Ma Thư Hắc Ám|.\n\nTrong trường hợp này, bạn có thể\
-    \ tìm được 1 thẻ đen có chi phí <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
-    \ name=\"B\"> vì bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
-    \ name=\"P\"> để chơi nó. Tuy nhiên, bạn |r:không thể| tìm một thẻ xanh dương\
-    \ và đen tốn <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
-    B\">, bởi vì bạn không có <sprite=\"ManaSprite\" name=\"U\"> trong | mana|, ngay\
-    \ cả khi bạn có thể chi <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
-    \ name=\"P\"> để chơi nó.\n\nLưu ý:\n|Thẻ bài Trắng|, một |Chứng Vật Hoàn Mỹ|,\
-    \ cho phép bạn tìm thẻ có |p:bất cứ màu nào|.\nThẻ tốn 5 mana hoặc cao hơn và\
-    \ có phí mana chung |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
-    \ name=\"2\">, etc.)| vẫn có thể được tìm thấy ngay cả khi không đủ mana trong\
-    \ |kho mana| để chơi vì có nhiều cách để giảm chi phí của các thẻ này."
+  RollCard: "|Tìm thẻ thông qua Thẻ Thưởng|\n\nBạn chỉ có thể tìm thấy một lá khi\
+    \ nó đáp ứng đủ các điều kiện sau:\n1. Kho mana của bạn đủ để chi trả cho nó.\n\
+    2. Nếu nó là lá độc quyền của một nhân vật, bạn phải đang chơi nhân vật đó hoặc\
+    \ đang giữ Chứng Vật Hoàn Mỹ của họ, hoặc sở hữu Chứng Vật có hiệu ứng thêm bài\
+    \ độc quyền của nhân vật đó vào nguồn thẻ.\n3. Mỗi màu của lá đó phải tương ứng\
+    \ với một mana trong kho mana của bạn, Mana Đa sắc không được tính.\n\nVí dụ,\
+    \ giả sử bạn chơi bằng Reimu và sở hữu |Quỷ Thư Hắc Ám|, |Hòn đá Triết Gia| cùng\
+    \ |Vồ Thần Kỳ|. |d:(Bạn đổi Chứng Vật Hoàn Mỹ của bạn cho Eirin...)| \n|Kho mana|\
+    \ có <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
+    C\">. Bạn có thể tìm thẻ Độc Quyền của Reimu và Marisa, vì bạn đang có |Quỷ Thư\
+    \ Hắc Ám|.\n\nTrong trường hợp này, bạn có thể tìm được 1 thẻ đen có chi phí <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"B\"> vì bạn có thể chi <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> để chơi nó. Tuy nhiên,\
+    \ bạn |r:không thể| tìm một thẻ xanh dương và đen tốn <sprite=\"ManaSprite\" name=\"\
+    U\"><sprite=\"ManaSprite\" name=\"B\">, bởi vì bạn không có <sprite=\"ManaSprite\"\
+    \ name=\"U\"> trong |kho mana|, ngay cả khi bạn có thể chi <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> để chơi nó.\n\nLưu ý:\n|Thẻ bài\
+    \ Trắng|, một |Chứng Vật Hoàn Mỹ|, cho phép bạn tìm thẻ có |p:bất cứ màu nào|.\n\
+    Thẻ tốn 5 mana hoặc cao hơn và có phí mana chung |d:(<sprite=\"ManaSprite\" name=\"\
+    1\">, <sprite=\"ManaSprite\" name=\"2\">, etc.)| vẫn có thể được tìm thấy ngay\
+    \ cả khi không đủ mana trong |kho mana| để chơi vì có nhiều cách để giảm chi phí\
+    \ của các thẻ này."
   Title: Chú Ý
   LoseShinning: Bạn luôn có thể tìm thẻ của nhân vật bạn đang chơi, ngay cả khi bạn
     làm mất |Chứng Vật Hoàn Mỹ| của nhân vật đó.
@@ -118,11 +119,11 @@ StartGame:
   ClearNormal: Hoàn Thành
   ClearTrue: Hoàn Hảo
   NeedClear: Thắng độ khó trước để mở.
-  Puzzle: Yêu Cầu
+  Puzzle: Nan Đề
   SelectAll: Chọn Hết
-  PuzzleHint: "Nhận thêm Yêu Cầu để nhận thêm điểm và kinh nghiệm.\nSẽ được mở sau\
-    \ khi lên Cấp Độ 4."
-  Puzzles: '{0} Yêu Cầu'
+  PuzzleHint: "Chọn thử thách từ Nan Đề để nhận thêm điểm xanh cùng kinh nghiệm.\n\
+    Mở khóa sau khi đạt Cấp Độ 4."
+  Puzzles: '{0} Nan Đề'
   LockPuzzle: Lên Cấp Độ {0} để mở.
   JadeBoxSelectedCount: Chọn {0}/{1}
   ShowRandomResult: Tiết Lộ Vận Mệnh
@@ -131,11 +132,11 @@ StartGame:
   NotShowRandomResultTitle: Che Giấu Vận Mệnh
   NotShowRandomResultDescription: "Hiện hoặc giấu các kết quả ngẫu nhiên tự các lựa\
     \ chọn trong sự kiện, như là kết quả của các lá bài, Chứng Vật, vân vân.\nCác\
-    \ kết quả ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi tái khởi động.\n\
+    \ kết quả ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi bắt đầu lại.\n\
     \n<color=#dd7473>Không cần tôi giúp sao? Hừm!"
   ShowRandomResultDescription: "Hiện hoặc giấu các kết quả ngẫu nhiên tự các lựa chọn\
     \ trong sự kiện, như là kết quả của các lá bài, Chứng Vật, vân vân.\nCác kết quả\
-    \ ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi tái khởi động.\n\n<color=#dd7473>Ohohoho!\
+    \ ngẫu nhiên được bảo toàn và sẽ không thay đổi sau khi bắt đầu lại.\n\n<color=#dd7473>Ohohoho!\
     \ Thấy sức mạnh của tôi thế nào!"
 UI:
   Yes: Có
@@ -153,7 +154,7 @@ UI:
   Skip: Bỏ Qua
   Setting: Cài Đặt
   Exit: Thoát
-  ExitGame: Thoát Game
+  ExitGame: Thoát Trò Chơi
   CopyHint: Seed đã được sao chép vào bản nhớ tạm.
   SaveHint: Đã Lưu.
   Numbers:
@@ -189,15 +190,15 @@ MainMenu:
   MusicRoom: Phòng Nghe Nhạc
   Changelog: Nhật Ký Sửa Đổi
   Credits: Nhà Làm Game
-  Licenses: Giấy Phép
-  ExitGame: Thoát Game
+  Licenses: Giấy Phép Nguồn Mở
+  ExitGame: Thoát Trò Chơi
   SelectProfile: Chọn File
   InputName: Nhập Tên
   DeleteProfile: Xoá File?
   EmptyProfile: File Trống
   DeleteYes: Xoá
   DeleteNo: Huỷ
-  EarlyAccess: Thông Báo Truy Cập Sớm (Early Access)
+  EarlyAccess: Thông Báo EA
   StartDate: Ngày Bắt Đầu
   PlayedTime: Thời Gian Chơi
   LastPlayed: Lần Chơi Cuối
@@ -329,23 +330,23 @@ Setting:
     \ viện, Chồng Bài Bỏ và Trục Xuất).\nTrong trường hợp của Chồng Bài Bốc và Chồng\
     \ Bài Bỏ, lá trên và dưới cùng của chồng đó sẽ được làm nổi bật.\n\nCó thể bật\
     \ lên bằng cách nhấn phím \"Hiện Thứ Tự Kẻ Địch\"."
-  ShowReloadDescription: Hiện hoặc ẩn việc hiển thị số lần tái khởi động, cũng như
-    liệu các kết quả ngẫu nhiên đã được xem trước hay chưa, trong khi đang ở giao
-    diện bản đồ.
+  ShowReloadDescription: Hiện hoặc ẩn việc hiển thị số lần bắt đầu lại, cũng như liệu
+    các kết quả ngẫu nhiên đã được xem trước hay chưa, trong khi đang ở giao diện
+    bản đồ.
   ShakeDescription: Điều chỉnh hiệu ứng rung bởi sát thương trong chiến đấu
-  ShowReload: Đếm Số Lần Tái Khởi Động
+  ShowReload: Đếm Số Lần Bắt Đầu Lại
   Shake: Hiệu ứng rung
   ShowCardOrder: Hiện Thứ Tự Thẻ
   TurboPlaying: Tốc độ chuyển động {0}x
 History:
-  Puzzles: '{0} Yêu Cầu'
+  Puzzles: '{0} Nan Đề'
   Mana: Mana
   Exhibit: 'Chứng vật: {0}'
   Card: 'Thẻ: {0}'
   StatsSegment: '{0}: {1}'
   PlayedTime: 'Thời gian: {0}'
   AutoSeed: Seed Ngẫu Nhiên
-  ReloadTimes: 'Số Lần Khởi Động: {0}'
+  ReloadTimes: 'Số Lần Bắt Đầu Lại: {0}'
   NotAutoSeed: Seed Cụ Thể
 System:
   ReenterStation: Bắt Đầu Lại Màn
@@ -374,17 +375,18 @@ Map:
   Trade: Trao Đổi
   BattleAdvTest: Thử nghiệm
 Chat:
-  FraudRabbitStart1: Tôi có thông tin về kẻ chủ mưu, và tôi sẽ bán nó cho bạn nếu
-    bạn muốn.
-  FraudRabbitStart2: Tôi có công nghệ mới nhất từ Mặt Trăng, và tôi sẽ bán nó cho
-    bạn nếu bạn muốn.
+  FraudRabbitStart1: Tôi có thông tin về kẻ chủ mưu, tôi sẽ cho bạn biết nếu bạn trả
+    tôi tiền.
+  FraudRabbitStart2: Tôi có công nghệ mới nhất từ Mặt Trăng, chỉ cần trả tiền tôi
+    sẽ cung cấp nó cho bạn.
   FraudRabbitOnlyOne: Tại sao còn mỗi mình mình vậy? Đúng là một lũ vô dụng.
-  FraudRabbitNoMoney: Không còn một xu dính túi, đúng là nghèo nát mồng tơi.
-  FraudRabbitLongTurn: Tốn thời gian quá! Tao chuồn đây.
+  FraudRabbitNoMoney: Không còn một xu dính túi, đúng là một kẻ nghèo rớt mồng tơi.
+  FraudRabbitLongTurn: Không cắn câu rồi, không lãng phí thời gian cho cô ta nữa,
+    mau chuồn thôi.
   FraudRabbitPlayer: Này! Cô ta đang bỏ trốn!
   Fox0: Ôi! Một thiếu nữ đáng yêu~
   HetongYinchen1: Ôi không, cô làm hư {0} của tôi mất rồi.
-  Fox1: Ôi, cô sẽ thích lắm cho mà xem, cục cưng~
+  Fox1: Cục cưng à, tôi nhất định sẽ làm em không nỡ rời đi~
   Fox2: Chưa hết đâu cưng~
   SickGirl: '*Khụ*...*Khụ*...'
   WaterGirl: Ta sẽ cho ngươi biết nỗi thống khổ của ta!
@@ -404,8 +406,8 @@ Chat:
   Terminator2: "PHÁT HIỆN HƯ HẠI NHẸ...\nTIẾN HÀNH SỬA CHỮA..."
   Terminator3: "PHÁT HIỆN HƯ HẠI NẶNG...\nTIẾN HÀNH SỬA CHỮA..."
   HardworkRabbit2: Mình còn phải làm việc chăm chỉ hơn nữa!
-  Sunny1: Hôm nay chúng ta sẽ chứng minh với {0:cs} thực lực thực sự của chúng ta!
-  Sunny2: Đứa nào lượm được chứng vật thì là của đứa đó!
+  Sunny1: Hôm nay chúng ta sẽ khiến cho {0:cs} thấy sức mạnh của chúng ta!
+  Sunny2: Ai lấy được chứng vật trước thì là của người đó!
   Luna: Được!
   Star: Được!
   SunnySpell: Hỡi các tia sáng, hội tụ về phía ta!
@@ -417,21 +419,21 @@ Chat:
   Aya3: Nhìn xem {0:cs} đang cầm thứ gì kìa, là bằng chứng! Cô ấy là thủ phạm!
   Rin1: 'Chị gái à, "{0}" trong tay chị trông thật đáng yêu! Em muốn có nó!'
   Rin2: Ui da! Chị tàn nhẫn quá~
-  Nitori1: Tớ đã bỏ rất nhiều thời gian và công sức chỉnh sửa con robot này.
-  Nitori2: Tớ nghĩ cần phải nâng cấp hệ thống phòng ngự của nó vậy.
-  Youmu1: Sẵn sàng!
-  YoumuTuanzi: Nếu cậu muốn thêm Dango đá 3 màu thì vui lòng quay lại ngay lập tức!
-  YoumuMooncake: Trả tớ {0} đây!
-  Kokoro1: Tôi cảm giác nhiều mặt nạ của tôi đã mất tích dạo gần đây.
+  Nitori1: Tôi đã bỏ rất nhiều thời gian và công sức chỉnh sửa con robot này đấy.
+  Nitori2: Có vẻ như khả năng phòng ngự của nó vẫn chưa được tốt lắm.
+  Youmu1: Trảm!
+  YoumuTuanzi: Nếu cậu còn muốn ăn Dango Đá Ba Màu thì hãy quay lại ngay lập tức!
+  YoumuMooncake: Trả lại tớ món {0} đó mau!
+  Kokoro1: Mình có cảm giác dạo này nhiều mặt nạ của mình đã biến mất.
   Clownpiece1: Các tiên nữ! Thêm nhiều đạn! Thêm nữa!
-  Clownpiece2: Hấp thụ kết tinh của ánh sáng đi!
+  Clownpiece2: Hấp thụ những viên ngọc ánh sáng này đi!
   Clownpiece3: Đến giờ điên loạn rồi!
-  Siji1: Mượn danh nghĩa điều tra dị biến, thực tế chỉ để ăn trộm chứng vật.
-  Siji2: Thật quá xấu xa, {0:cf}.
+  Siji1: Mượn danh nghĩa điều tra dị biến, thực tế chỉ để đi ăn trộm chứng vật.
+  Siji2: Thật quá bỉ ổi, {0:cf}.
   SijiMystia: Ăn quỵt. Thêm một năm vào bản án.
   SijiTurn1: Biện minh vô căn cứ. Thêm một năm vào bản án.
   SijiTurn2: Coi thường tòa án. Phạt thêm một năm.
-  SijiTurn3: Dám nói ta lùn, thêm 2 năm.
+  SijiTurn3: Dám nói tôi lùn à, thêm 2 năm.
   DoremySleep: Zzzzz~
   DoremySleepLast: Tôi không ăn thêm được nữa đâu~
   DoremyKill: Bạn không cần phải thức dậy nữa~
@@ -484,13 +486,13 @@ ErrorChat:
   CardNotUsable: Lá này không chơi được.
   CardCostChanged: Thẻ này đổi phí sử dụng rồi.
   CardFengyin: Mình bị phong ấn rồi.
-  CardDrunk: Tuôi chưa sayyyyyyy!
+  CardDrunk: Tuôi chưa sayyy!
   CardCharm: Không gượng nổi nữa
-  UsUsedThisBattle: Mình đã xài Spell Card trận này rồi.
-  UsUsedThisTurn: Mình đã xài Spell Card lượt này rồi.
+  UsUsedThisBattle: Mình đã dùng Bài Phép trận này rồi.
+  UsUsedThisTurn: Mình đã dùng Bài Phép trận này rồi.
   TargetAlreadyDead: Mục tiêu tới đã bị hạ trước đó rồi.
   NoTarget: Không có mục tiêu hợp lệ
-  HandFull: Đầy tay rồi.
+  HandFull: Tay đầy mất rồi.
   EmptyDraw: Chồng bài bốc trống rỗng rồi.
   NoCardByMama: Không có thẻ nào có chi phí như thế.
   LowLoyalty: Mình không có đủ Trợ Sức từ đồng đội này.
@@ -716,7 +718,7 @@ MessageDialog:
   GameAbandonWarning: Bạn có chắc là bạn muốn từ bỏ tiến trình của lượt chạy này hay
     không?
   ReturnToMainMenu: Quay lại màn hình chính?
-  QuitGame: Thoát game?
+  QuitGame: Thoát khỏi trò chơi?
   UnsavedWarning: Mọi tiến trình chưa được lưu sẽ bị mất.
   XCostEmptyUsageWarning: Dùng {0} mà không đặt trước mana?
   XCostEmptyUsageTips: Bạn có thể treo mana ở bảng góc dưới bên trái màn hình có thẻ
