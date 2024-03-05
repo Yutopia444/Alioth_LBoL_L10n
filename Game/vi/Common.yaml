@@ -177,19 +177,19 @@ UI:
   SpellUntitled: '"{0}"'
   SkipHint: '{0} để bỏ qua'
 MainMenu:
-  NewGame: Game Mới
+  NewGame: Lượt Chạy Mới
   RestoreGame: Tiếp Tục
-  AbandonGame: Bỏ Trận
+  AbandonGame: Bỏ Lượt Chạy
   Setting: Cài Đặt
   Collection: Bộ Sưu Tập
   Database: Thêm
-  ComplexRules: Lượt Nâng Cao
+  ComplexRules: Các Quy Tắc Nâng Cao
   Characters: Nhân Vật
   LifeData: Thông Số
   History: Lịch Sử
   MusicRoom: Phòng Nghe Nhạc
   Changelog: Nhật Ký Sửa Đổi
-  Credits: Nhà Làm Game
+  Credits: Danh Đề
   Licenses: Giấy Phép Nguồn Mở
   ExitGame: Thoát Trò Chơi
   SelectProfile: Chọn File
@@ -266,7 +266,7 @@ Setting:
   KeywordDescription: "Khi đặt thành |Short|,phần giải thích các từ khóa và cơ chế\
     \ phổ biến sẽ không còn được hiển thị.\n|r:Chỉ nên dùng cho người chơi có kinh\
     \ nghiệm.|\n|d:(Các từ khóa và cơ chế phổ biến bao gồm ||Hỏa lực||d:,| |Tinh Thần||d:,|\
-    \ |Giáp Chặn||d:,| |Giáp Bảo Vệ||d:,| |Né||d:,| |Chính xác||d:,| |Mana Cầu vồng||d:,|\
+    \ |Khiên||d:,| |Hộ Giáp||d:,| |Né||d:,| |Chính xác||d:,| |Mana Cầu vồng||d:,|\
     \ |Nâng cấp| |d:và| |Năng Lực||d:.)|"
   Large: Lớn
   Small: Nhỏ
@@ -312,7 +312,7 @@ Setting:
     PoolG: Di chuyển <sprite="ManaSprite" name="G"> vào hàng chờ
     PoolC: Di chuyển <sprite="ManaSprite" name="C"> vào hàng chờ
     PoolP: Di chuyển <sprite="ManaSprite" name="P"> vào hàng chờ
-    UseUs: Dùng Spell Card
+    UseUs: Dùng Bài Phép
     EndTurn: Kết Thúc Lượt
     ToggleBaseDeck: Bật/Tắt Bộ Bài
     ToggleDrawZone: Bật/Tắt Chồng Bài Bốc
@@ -610,23 +610,26 @@ Tooltip:
     Description: Độ khó tiêu chuẩn của trò chơi.
   DifficultyHard:
     Name: 'Độ khó: Khó'
-    Description: Địch có thêm HP và đánh đau hơn.
+    Description: Tăng sức tấn công và HP của kẻ địch.
   DifficultyLunatic:
     Name: 'Độ khó: Điên Loạn'
-    Description: Địch có thêm nhiều HP hơn, đánh đau hơn và nhiều đòn nguy hiểm hơn.
+    Description: "Tăng sức tấn công và HP của kẻ địch.\nMột số hành động của địch\
+      \ trở nên nguy hiểm hơn."
   DrawZone:
-    Description: "Ở đầu lượt, rút {0} thẻ từ đây.\nNếu cọc bài rút trống, cọc bài\
-      \ bỏ sẽ được trộn lại và trở thành cọc bài rút mới.\n\nNhấn vào đây để xem chúng,\
-      \ mặc dù bạn không thể biết thứ tự thật của chúng."
-    Name: Cọc Bài Rút
+    Description: "Ở đầu lượt, bốc {0} lá từ đây.\nNếu chồng bài bốc trống, các lá\
+      \ nằm trong chồng bài bỏ sẽ được trộn ngẫu nhiên thành một chồng bài bốc mới.\n\
+      \nNhấn vào đây để xem các lá hiện có trong chồng bài bốc, tuy nhiên đây không\
+      \ phải là thứ tự thực sự của chồng bài bốc."
+    Name: Chồng Bài Bốc
   DiscardZone:
-    Name: Cọc Bài Bỏ
-    Description: "Mỗi khi bạn bỏ 1 thẻ, nó sẽ ở đây.\nỞ cuối lượt, tất cả thẻ trong\
-      \ tay sẽ bị bỏ |d:(mà không kích hoạt hiệu ứng bài bỏ)|.\n\nNhấn vào đây để\
-      \ xem chúng."
+    Name: Chồng Bài Bỏ
+    Description: "Mỗi khi bạn bỏ 1 lá, nó sẽ được đưa vào đây.\nKhi mỗi lượt kết thúc,\
+      \ tất cả các lá trên tay sẽ bị bỏ |d:(mà không kích hoạt hiệu ứng bỏ bài của\
+      \ chúng)|.\n\nNhấn vào đây để xem các lá hiện có trong chồng bài bỏ."
   ExileZone:
     Name: Khu Trục Xuất
-    Description: "Thẻ bị Trục Xuất sẽ ở đây.\n\nNhấn vào đây để xem chúng."
+    Description: "Lá bị |Trục Xuất| sẽ được đưa vào đây.\n\nNhấn vào đây để xem các\
+      \ lá đã bị trục xuất trong trận đấu này."
   EndTurn:
     Name: Kết Thúc Lượt
     Description: "Nhấn để kết thúc lượt của bạn.\n\nBài còn lại trong tay sẽ bị bỏ\
@@ -639,25 +642,25 @@ Tooltip:
       \ Vật Hoàn Mỹ|.\n\n|Kho mana| còn có thể ảnh hưởng loại thẻ bạn có thể tìm được."
     Name: Kho Mana
   BattleMana:
-    Description: "Mana chưa được sử dụng sẽ được hiện ở đây.\nBạn cần mana để chơi\
-      \ các thẻ và để chi cho thẻ có phí sử dụng |X|.\n\nNhấn vào biểu tượng của 1\
-      \ mana nào đó để \"treo\" nó, để sử dụng nó trước các mana khác hoặc để chi\
-      \ cho thẻ có phí sử dụng |X|.\nNhấn vào mana đang được treo để trả nó về thanh\
-      \ mana."
+    Description: "Mana chưa được sử dụng sẽ được hiển thị ở đây.\nBạn cần mana để\
+      \ chơi các thẻ và để chi cho thẻ có phí sử dụng |X|.\n\nNhấn vào biểu tượng\
+      \ của 1 mana bất kỳ để chỉ định nó, các mana đã chỉ định sẽ được ưu tiên sử\
+      \ dụng hoặc thiết lập để tiêu hao cho lá có chi phí |X|.\nNhấn vào mana đang\
+      \ được chỉ định để trả nó về thanh mana."
     Name: Thanh Mana
   GameSeed:
     Name: Seed
     Description: "Mỗi lượt chạy sẽ có 1 Seed ngẫu nhiên. Hai lượt chạy có Seed giống\
-      \ nhau sẽ giống như nhau.\n\nNhấn để sao chép Seed vào bộ nhớ tạm."
+      \ nhau sẽ giống y hệt nhau.\n\nNhấn để sao chép Seed vào bộ nhớ tạm."
   EntityTitle:
     Character: ' Độc Quyền Thẻ'
     Neutral: Trung Lập
     White: Trắng
-    Blue: Xanh Dương
+    Blue: Lam
     Black: Đen
     Red: Đỏ
-    Green: Xanh Lá
-    Colorless: Không Màu
+    Green: Lục
+    Colorless: Vô Sắc
     MultiColor: Đa Sắc
   DetailedHint:
     Name: Gợi Ý Chi Tiết
@@ -675,39 +678,41 @@ BattleHint:
   Intro: "Chào mừng đã đến với Buổi Triển lãm của Nguyệt Đô! Hãy cố hết sức để giành\
     \ lại Cành Ngọc của Bồng Lai!\nNếu bạn đã chơi qua các game thẻ bài khác rồi,\
     \ thì bạn có thể chọn |Gợi Ý Ngắn Gọn| để chỉ hiện các gợi ý về các cơ chế đặc\
-    \ trưng của game.\nCác gợi ý sau này cũng sẽ dựa trên lựa chọn này. Bạn có thể\
-    \ điều chỉnh cài đặt về gợi ý ở bảng cài đặt bất cứ lúc nào bạn muốn."
+    \ trưng của trò chơi.\nCác gợi ý sau này cũng sẽ dựa trên lựa chọn này. Bạn có\
+    \ thể điều chỉnh cài đặt về gợi ý ở bảng cài đặt bất cứ lúc nào bạn muốn."
   Mana: "Nhấn chuột phải vào 1 thẻ để xem chi tiết của nó. (Hoạt động ở hầu hết các\
-    \ nơi mà bạn xem được thẻ trong game.)\nMuốn chơi thẻ phải có mana. Chi phí của\
-    \ nó được hiển thị ở góc trên bên phải của thẻ.\nCó 7 loại mana: Mana màu <sprite=\"\
-    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
-    \ name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
-    G\">, mana vô sắc <sprite=\"ManaSprite\" name=\"C\"> và <sprite=\"ManaSprite\"\
-    \ name=\"P\"> , nó có thể dùng để chi cho bất kì yêu cầu gì.\nChi phí chung như\
-    \ <sprite=\"ManaSprite\" name=\"2\"> có thể được trả bằng 2 mana bất kì."
+    \ nơi mà bạn xem được thẻ trong game.)\nViệc chơi một lá bài sẽ tiêu hao mana.\
+    \ Chi phí của một lá bài được hiển thị ở góc trên bên phải của lá đó.\nCó 7 loại\
+    \ mana: Mana Đơn Sắc <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"G\">, Mana Vô Sắc <sprite=\"ManaSprite\" name=\"\
+    C\"> và cuối cùng là Mana Đa Sắc <sprite=\"ManaSprite\" name=\"P\"> có thể được\
+    \ dùng để chi trả cho bất kì màu mana nào.\nChi phí chung ví dụ như <sprite=\"\
+    ManaSprite\" name=\"2\"> có thể được chi trả bằng 2 mana bất kì."
   Detailed: Hiện Gợi Ý Chi Tiết
   Brief: Hiện Gợi Ý Ngắn Gọn
   DontShow: Không Hiện Gợi Ý
   Prev: Quay Lại
   Next: Tiếp Theo
-  BasicBattle: "Chơi thẻ để tiêu diệt kẻ địch!\nThẻ được chơi sẽ được đưa về cọc bài\
-    \ bỏ. Ở cuối lượt của người chơi, các thẻ còn lại trên tay cũng sẽ được đưa về\
-    \ đấy.\nCác thẻ mới sẽ được rút ra ở đầu lượt của người chơi"
-  ManaPanel: "Thanh mana hiện số mana bạn có.\nNhấn chuột trái vào 1 biểu tượng mana\
-    \ để \"treo\" nó. Mana được treo sẽ được dùng trước các mana còn lại.\nNhấn chuột\
-    \ phải vào 1 biểu tượng mana để treo hết tất cả mana có màu đó.\nMana sẽ được\
-    \ phục hồi ở đầu lượt của người chơi."
-  BlockShield: "Trước khi nhận sát thương, hãy chơi 1 thẻ Phòng Thủ để nhận |Giáp\
-    \ Chặn| và |s:Giáp Bảo Vệ|.\n|Giáp Chặn| và |s:Giáp Bảo Vệ| sẽ giảm hoặc chặn\
-    \ toàn bộ sát thương bạn nhận vào.\n|Giáp Chặn| sẽ tiêu biến ở đầu lượt của người\
-    \ chơi, còn |s:Giáp Bảo Vệ| thì không."
+  BasicBattle: "Chơi các lá bài trên tay để tiêu diệt kẻ địch!\nLá sau khi chơi sẽ\
+    \ được chuyển tới chồng bài bỏ. Khi người chơi kết thúc lượt của mình, tất cả\
+    \ các lá còn lại trên tay cũng sẽ được đưa vào trong đó.\nCác thẻ mới sẽ được\
+    \ bốc vào đầu lượt của người chơi."
+  ManaPanel: "Thanh mana hiển thị các mana bạn đang có.\nNhấn chuột trái vào 1 biểu\
+    \ tượng mana để chỉ định nó. Mana đã chỉ định sẽ được ưu tiên sử dụng.\nNhấn chuột\
+    \ phải vào 1 biểu tượng mana để chỉ định tất cả các mana có màu đó.\nMana sẽ được\
+    \ phục hồi vào đầu lượt của người chơi."
+  BlockShield: "Trước khi nhận sát thương, hãy chơi 1 lá Phòng Thủ để nhận |Khiên|\
+    \ và |s:Hộ Giáp|.\n|Khiên| và |s:Hộ Giáp| sẽ giảm lượng sát thương mà bạn phải\
+    \ chịu.\n|Khiên| sẽ biến mất vào đầu lượt tiếp theo của người chơi, còn |s:Hộ\
+    \ Giáp| thì không."
   Intention: "Ý định của kẻ địch sẽ được hiện ở trên đầu chúng.\nĐịch có thể có nhiều\
     \ ý định khác nhau như tấn công, phòng thủ, hỗ trợ đồng minh, gây buff hại, hoặc\
-    \ sử dụng Spell Card."
-  UltimateSkill: "Dùng Spell Card để thay đổi tình thế trận đấu!\nDùng Spell Card\
-    \ sẽ tiêu hết cả thanh năng lượng. Kẻ địch khi bị đánh bại sẽ rơi ra <sprite=\"\
-    Point\" name=\"Power\"> dùng để hồi lại sức mạnh cho Spell Card.\nMỗi lượt chỉ\
-    \ được xài Spell Card một lần."
+    \ sử dụng Bài Phép."
+  UltimateSkill: "Kích hoạt Bài Phép để lật ngược tình thế trận đấu!\nDùng Bài Phép\
+    \ sẽ tiêu hết một thanh năng lượng. Kẻ địch khi bị đánh bại sẽ rơi ra <sprite=\"\
+    Point\" name=\"Power\"> dùng để sạc lại Bài Phép.\nBài Phép chỉ có thể được kích\
+    \ hoạt một lần mỗi lượt."
 MessageDialog:
   EarlyAccess: "|Touhou: Lost Branch of Legend| hiện đang trong giai đoạn |d:Truy\
     \ Cập Sớm (Early Access)|.\nMọi thứ đều có thể sẽ thay đổi.\nHiện tại chúng tôi\
@@ -720,25 +725,25 @@ MessageDialog:
   ReturnToMainMenu: Quay lại màn hình chính?
   QuitGame: Thoát khỏi trò chơi?
   UnsavedWarning: Mọi tiến trình chưa được lưu sẽ bị mất.
-  XCostEmptyUsageWarning: Dùng {0} mà không đặt trước mana?
-  XCostEmptyUsageTips: Bạn có thể treo mana ở bảng góc dưới bên trái màn hình có thẻ
-    có phí sử dụng X.
+  XCostEmptyUsageWarning: Chơi {0} mà không thiết lập mana cho nó?
+  XCostEmptyUsageTips: Bạn có thể thiết lập mana ở thanh góc dưới bên trái màn hình
+    cho thẻ có chi phí sử dụng X.
   DontShowHintWarning: Tắt hết gợi ý?
-  ResetHintWarning: Xác Nhận Phục Hồi Gợi Ý?
-  CloseBattleHint: Xác Nhận Đóng Gợi Ý?
+  ResetHintWarning: Thiết lại các Gợi Ý?
+  CloseBattleHint: Kết thúc các Gợi Ý?
   SkipDialog: Bỏ Qua?
-  ResetKeyBindingsWarning: Xác Nhận Đặt Lại Phím Tắt?
-  GameRunSaveDiscarded: "Do game đã được cập nhât\nnên tiến trình lượt chạy trước\
-    \ đã bị bỏ."
-  GameRunSaveDiscardedSubText: Hồ sơ của bạn sẽ không bị ảnh hưởng.
+  ResetKeyBindingsWarning: Đặt lại Phím Tắt về mặc định?
+  GameRunSaveDiscarded: "Do trò chơi đã được cập nhật.\nTiến trình của lượt chạy trước\
+    \ đã bị loại bỏ."
+  GameRunSaveDiscardedSubText: Hồ sơ của bạn sẽ không bị ảnh hưởng bởi điều này.
   InvalidProfileName: 'Tên Hồ Sơ Không Hợp Lệ'
-  AlreadyInGameRun: Đã Ở Trong Một Ván Chơi
+  AlreadyInGameRun: Đã Ở Trong Một Lượt Chạy
   CannotStartGameRunWithoutProfile: 'Không Thể Bắt Đầu Trò Chơi: Thiếu Hồ Sơ Người
     Chơi'
-  CannotRestoreEndedGameRun: Không Thể Khôi Phục Ván Chơi Đã Kết Thúc
+  CannotRestoreEndedGameRun: Không Thể Khôi Phục Lượt Chạy Đã Kết Thúc
   CorruptedSaveData: Dữ liệu lưu bị lỗi
-  CorruptedGameRunSaveData: Dữ liệu ván chơi bị lỗi
-  CannotReenterStation: Không thể truy cập màn chơi
+  CorruptedGameRunSaveData: Dữ liệu lượt chạy bị hư hỏng
+  CannotReenterStation: Không thể truy cập lại bước này
 Lifetime:
   TotalBp: Tổng Số Điểm Xanh<sprite="Point" name="Point">
   OldData: Dữ Liệu Phiên Bản Cũ <sprite="TextIcon" name="Info">
