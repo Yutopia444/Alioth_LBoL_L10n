@@ -309,6 +309,7 @@ Changzhizhen:
     \ của lá {SelfName} này trong trận đấu tăng thêm {Value2}."
   DetailText: '{SelfName} không có tác dụng gì khi chơi ngoài việc bị |Trục Xuất|
     khỏi tay.'
+  FlavorText: Sát thương của nó bằng với khoản nợ của Reimu, kèm theo lãi suất.
 FreeFly:
   Name: Tự Do Bay Lượn
   Description: Vào đầu lượt của {PlayerName}, nhận {Mana}.
@@ -636,12 +637,14 @@ StarShower:
 ReimuHuashan:
   FlavorText: '"Ờ ờ ờ, cậu nói đúng."'
   Name: Tiếp Thu Chỉ Bảo
-  Description: "|Trục Xuất| một lá Năng Lực trên tay.\nTăng {Value1} HP tối đa và\
-    \ nhận {Value2} <sprite=\"Point\" name=\"Power\">.\nTrong một trận đấu, chỉ lá\
-    \ {SelfName} đầu tiên được chơi có hiệu lực."
-  ExtraDescription1: "|d:Trục Xuất một lá Năng Lực trên tay.\nTăng {Value1} HP tối\
-    \ đa và nhận {Value2} <sprite=\"Point\" name=\"Power\">.|\nTrong một trận đấu,\
-    \ chỉ lá {SelfName} đầu tiên được chơi có hiệu lực."
+  Description: "|Trục Xuất| một lá Năng Lực trên tay, nhận {Value2} <sprite=\"Point\"\
+    \ name=\"Power\">.\nNếu |Trục Xuất| một lá Năng Lực bằng cách này, tăng {Value1}\
+    \ HP tối đa.\nTrong một trận đấu, chỉ có thể tăng HP tối đa bằng lá {SelfName}\
+    \ một lần."
+  ExtraDescription1: "|Trục Xuất| một lá Năng Lực trên tay, nhận {Value2} <sprite=\"\
+    Point\" name=\"Power\">.\n|d:Nếu Trục Xuất một lá Năng Lực bằng cách này, tăng\
+    \ {Value1} HP tối đa.|\nTrong một trận đấu, chỉ có thể tăng HP tối đa bằng lá\
+    \ {SelfName} một lần."
 ThrowBigStar:
   Name: Xích Tinh Bạo Tạc
   FlavorText: "\"Cảm ơn đã lắng nghe Đài Phát Thanh Trạm Xe Lửa Bỏ Hoang. Tháng này,\
@@ -2039,6 +2042,8 @@ HekaHellRain:
   Name: Cơn Mưa Địa Ngục
   Description: Khi kết thúc lượt, gây sát thương lên mỗi kẻ địch dựa trên số lá đã
     chơi trong lượt, mỗi lá tăng {Value1} sát thương.
+  FlavorText: Bạn có kể kết hợp "Sóng Trào" và "Hỏa Diễm" tạo ra phản ứng gây mưa
+    gây 4 sát thương.
 QingeHeal:
   Description: "Nhận {Value1} |Hỏa Lực Tạm Thời|.\nHồi {Value2} HP, mất {Value2} HP\
     \ vào đầu lượt sau."
@@ -2610,6 +2615,7 @@ XingMoney:
   Name: Bảo Thương Vinh Quang
   Description: "Gây {Damage} sát thương.\n|Đắc Thắng|: Nhận {Value1} <sprite=\"Point\"\
     \ name=\"Gold\">."
+  FlavorText: Một kỹ năng mà Reimu Hakurei không thể né tránh.
 AliceAttack:
   Name: Tia Sáng Hung Ác
   Description: "Gây {Damage} sát thương.\nNhận {Mana}."
@@ -2686,7 +2692,7 @@ HuiyeTime:
     \ other='chúng'} 1 lượt.\n{PlayerName} kết thúc lượt và nhận một lượt phụ, chỉ\
     \ có thể chơi tối đa {Value1} lá trong lượt phụ đó."
   Name: Vĩnh Hằng Và Tức Thời
-  FlavorText: Thức dậy đi làm như vĩnh hằng, ngắm mắt đi ngủ tựa tức thời.
+  FlavorText: Thức dậy đi làm là vĩnh hằng, ngắm mắt đi ngủ là tức thời.
 SanaeMiracle:
   Name: Khách Tinh Buổi Sáng
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch {Value1} lần.\nNếu Chồng Bài\
@@ -2709,9 +2715,11 @@ ReisenAttack:
   Name: Giấc Mơ Điên Cuồng
   Description: '|Với mỗi {Mana} tiêu hao|: Gây {Damage} sát thương cho mỗi kẻ địch
     1 lần.'
+  FlavorText: Ối! Mình có "Khu Chợ Cầu Vồng Trăng" cùng với "Ôm Lấy Hắc Ám"!
 FlanPlayAlone:
   Name: Tự Chơi Một Mình
   Description: "Nhận {Value1} |Hỏa Lực Tạm Thời|.\nBỏ mọi lá không phải lá Tấn Công."
+  FlavorText: Do you girls not have internet?
 HatateNews:
   FlavorText: Một tờ báo của thiên cẩu với hình ảnh trang nhất rất bắt mắt.
   Name: Báo Tâm Linh Kakashi
@@ -2897,17 +2905,25 @@ NightMana1:
     \ để chơi.\nSau khi chơi {FreezeTimes} lá, |Trục Xuất| 1 lá {SelfName} trên tay."
 DeployShanghai:
   Name: Triển Khai Búp Bê Thượng Hải
+  Description: '|Triển Khai| 1 |e:Búp Bê Thượng Hải|, kích hoạt |Kỹ Năng Kiểm Soát|
+    của nó.'
 AliceAttackB:
   Name: Về Với Vô Tri
   Description: Gây {Damage} sát thương.
 SacrificeDoll:
   Name: Giao Ước Tự Hủy
+  Description: Chọn 1 Con Rối để |Rút Lui| nó, gây {Damage} sát thương cho mỗi kẻ
+    địch.
 DeployPenglai:
   Name: Triển Khai Búp Bê Bồng Lai
+  Description: '|Triển Khai| 1 |Búp Bê Bồng Lai|, kích hoạt |Kỹ Năng Kiểm Soát| của
+    nó.'
 AliceBlockU:
   Description: Nhận {Block} |Khiên|.
+  Name: Kết Giới Đạn Mạc
 UpgradeDoll:
   Name: Văn Nhạc Thiếu Nữ
+  Description: Nâng Cấp 1 |e:Búp Bê Thượng Hải|.
 DeployIce:
   Name: Triển Khai Tinh Thể Băng
   Description: '|Triển Khai| 1 |Tinh Thể Băng|.'
