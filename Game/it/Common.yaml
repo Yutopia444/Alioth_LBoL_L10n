@@ -21,8 +21,8 @@ Game:
   DiscardZone: Pila di Scarto
   EndTurn: Fine del Turno
   BattleStart: Inizio del Combattimento
-  PlayerTurn: Giocatore
-  EnemyTurn: Nemico
+  PlayerTurn: Turno del Giocatore
+  EnemyTurn: Turno degli avversari
   ExtraTurn: Extra
   TurnCounter: Turno {0}
   Next: Avanti
@@ -42,6 +42,17 @@ Game:
     \ Effettivo."
   ExileZone: Esilio
   NextSkip: Salta le Ricompense
+  NaturalTurn: Turno Naturale
+  OutTurn: Fuori dal Turno
+  InTurn: Nel Turno
+  NotInThatTurn: 'Inattivo: Non in questo turno.'
+  TopSuffix: (Cima)
+  BottomSuffix: (Fondo)
+  TopBottomSuffix: (Cima/Fondo)
+  Passive:  Passiva 
+  RoundCounter: Round {0}
+  PlayerNameTurn: Turno di {0}
+  PlayerNameTurnCounter: Turno di {0} ({1})
 Explain:
   Title: Note
   LoseShinning: Puoi sempre trovare carte esclusive al personaggio con cui stai giocando,
@@ -74,9 +85,13 @@ Explain:
     ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, eccetera)| possono\
     \ essere trovate anche se non c'è mana sufficiente nel |mana base| per giocarle.\
     \ Ci sono diversi metodi per ridurre il prezzo di queste carte."
-  ShinmyoumaruForge: Le carte Attacco sono rimpiazzate con carte Attacco e le carte
-    Difesa sono rimpiazzate con carte Difesa.
+  ShinmyoumaruForge: "1.Le carte Attacco sono rimpiazzate con carte Attacco e le carte\
+    \ Difesa sono rimpiazzate con carte Difesa.\n2.Lo stato di miglioramento viene\
+    \ ereditato dalle carte rimpiazzanti."
   SaveWhenSelect: Una volta selezionata l'opzione il progresso verrà salvato.
+  Power: Potere <sprite="Point" name="Power">
+  PowerDescription: "Usare una Carta Incantesimo consuma una intera carica di Potere.\n\
+    (Visualizzata sotto L'immagine del personaggio)"
 UI:
   Yes: Si
   No: No
@@ -114,6 +129,7 @@ UI:
   Confirm: Conferma
   CopyHint: Il Seme è stato copiato negli appunti.
   Exit: Esci
+  SkipHint: '{0} per saltare'
 MainMenu:
   RestoreGame: Continua la Partita
   AbandonGame: Abbandona la Partita
@@ -157,7 +173,7 @@ StartGame:
   NoStoryMode: "Modalità storia non è ancora pronta.\nSi prega di attendere i futuri\
     \ aggiornamenti."
   CheckDeck: Mazzo Iniziale
-  SkillSpellCard: Carta Incantesimo
+  SkillSpellCard: Carta Incantesimo {0} <sprite="Point" name="Power">
   SkillExhibit: Esposizione Iniziale
   StartMoney: Soldi Iniziali
   ClearNormal: Completata
@@ -180,6 +196,19 @@ StartGame:
     a difficoltà Facile.
   PuzzleHint: "Accetta le Richieste ed aumenta i punti blu ed esperienza ricevuti.\n\
     Sblocca raggiungendo il Livello di Sblocco 4."
+  ShowRandomResultDescription: "Mostra i risultati casuali nelle selezioni degli eventi,\
+    \ come i risultati delle carte, esposizioni, eccetera.\nI risultati casuali sono\
+    \ predeterminati nella partita e non cambieranno ricominciandola.\n\n<color=#dd7473>Ohohoho!\
+    \ Questo è un assaggio del mio potere!"
+  NotShowRandomResult: Fato Sconosciuto
+  ShowRandomResultTitle: Rivela il Fato
+  ShowRandomResult: Rivela il Fato
+  NotShowRandomResultTitle: Fato Sconosciuto
+  NotShowRandomResultDescription: "Mostra i risultati casuali nelle selezioni degli\
+    \ eventi, come i risultati delle carte, esposizioni, eccetera.\nI risultati casuali\
+    \ sono predeterminati nella partita e non cambieranno ricominciandola.\n\n<color=#dd7473>Non\
+    \ vuoi il mio aiuto? Bah!"
+  JadeBoxSelectedCount: Selezionato {0}/{1}
 Museum:
   CardStyleFilter: Stili
   UnlockAndReveal: Carte Viste
@@ -205,6 +234,13 @@ Museum:
   CardStyleTooltip: "Solo carte con più illustrazioni vengono visualizzate.\nScegli\
     \ la illustrazione che preferisci nel pannello di visualizzazione della carta."
   AchievementCount: Obbiettivi Raggiunti
+  All: Tutto
+  HiddenDescription: I dettagli di questo Obiettivo non saranno rivelati finché non
+    verrà sbloccato.
+  Unlock: Ottenuti
+  TextFilterHint: Cerca Testo
+  NotUnlock: Non ottenuti
+  Hidden: Nascosti
 Setting:
   Preference: Gioco
   Key: Controlli
@@ -283,8 +319,8 @@ Setting:
   Resolution: Risoluzione
   AudioMaster: Volume Principale
   RecommendVolume: Ripristina
-  TurboModeDescription: '|Aumenta molto la velocità| della gran parte delle animazioni
-    e degli effetti.'
+  TurboModeDescription: 'Aumenta di {0} volte la velocità della gran parte delle animazioni
+    e degli effetti visivi. Non modifica la velocità dell''interfaccia.'
   KeywordDescription: "Se impostato su |Brevi|, le descrizioni per Parole Chiave comuni\
     \ e meccaniche non vengono più visualizzate.\n|r:Consigliato solo a giocatori\
     \ esperti.|\n|d:(Parole Chiave comuni e meccaniche includono ||Potenza||d:,| |Spirito||d:,|\
@@ -298,6 +334,8 @@ Setting:
     con costo X senza scegliere manualmente il mana.
   Shake: Vibrazione Schemo
   ShakeDescription: Imposta se i danni causano una vibrazione dello schermo.
+  ShowCardOrder: Mostra Ordine Carte
+  TurboPlaying: Velocità Animazioni x{0}
 History:
   Puzzles: "{0:plural one='% Richiesta' other='% Richieste'}"
   Exhibit: 'Esposizione: {0}'
@@ -675,3 +713,23 @@ MessageDialog:
   CorruptedSaveData: Il salvataggio è danneggiato
   CorruptedGameRunSaveData: Il file di salvataggio della partita in corso è danneggiato
   CannotReenterStation: Impossibile entrare nel livello
+Lifetime:
+  OldDataHint: Prima della versione v1.3.15, i dati dei personaggi venivano combinati
+    invece di essere considerati separatamente.
+  NoData: Dati non registrati
+  OldData: Dati Vecchia Versione <sprite="TextIcon" name="Info">
+  NoDataHint: Prima della versione v.1.3.15, questi dati non vennero raccolti.
+  Perfect: Incidenti Risolti Completamente
+  Puzzle: Richieste
+  Time: Tempo di Gioco
+  Title: Statistiche Totali
+  TotalBp: Punti Blu Totali<sprite="Point" name="Point">
+  Game: Partite
+  HighestBp: Punteggio massimo <sprite="Point" name="Point">
+  Win: Incidenti Risolti
+Ultimate:
+  ConsumePower: 'Costo Potere <sprite="Point" name="Power">: {0}'
+  MaxPower: 'Cariche massime: {0}'
+  FreeToUse: Può essere usato più volte in un singolo turno
+  OncePerTurn: Può essere usato solo una volta per turno
+  OncePerBattle: Può essere usato una sola volta per combattimento
