@@ -15,14 +15,14 @@ Game:
   ExileZone: Wygnane Karty
   EndTurn: Zakończ Turę
   BattleStart: Początek Walki
-  PlayerTurn: Graczka
+  PlayerTurn: Faza Graczki
   ExtraTurn: Ekstra
   TurnCounter: Tura {0}
   Next: Naprzód
   NextSkip: Pomiń Nagrody
   NextStage: Następny Akt
   UnlockLevel: Poziom Odblokowania
-  EnemyTurn: Wróg
+  EnemyTurn: Faza Wrogów
   RarityOrder: Rzadkość
   ActualOrder: Kolejność
   IndexOrder: Indeks
@@ -40,6 +40,16 @@ Game:
   ManaAmountOrder: Koszt
   Achievement: Osiągnięcia
   Passive:  Zdolność Bierna 
+  NaturalTurn: Naturalna
+  TopSuffix: (Szczyt)
+  BottomSuffix: (Spód)
+  TopBottomSuffix: (Szczyt/Spód)
+  RoundCounter: Runda {0}
+  PlayerNameTurn: Faza {0:g}
+  PlayerNameTurnCounter: Faza {0:g} ({1})
+  InTurn: W Turze
+  OutTurn: Poza Turą
+  NotInThatTurn: 'Nieaktywne: Nie w odpowiedniej turze.'
 MainMenu:
   ExitGame: Wyjdź z Gry
   SelectProfile: Wybierz Profil
@@ -96,8 +106,8 @@ Explain:
     \ many w |bazie many| aby ją zagrać, gdyż istnieją sposoby, aby obniżyć ich cenę."
   RemiliaMeet: "1. Zastąp karty o tym samym koszcie.\n2. Zachowaj status ulepszenia\
     \ przy zamianie."
-  ShinmyoumaruForge: Karty ataku są zastąpione kartami ataku a karty obrony kartami
-    obrony.
+  ShinmyoumaruForge: "1. Karty ataku są zastąpione kartami ataku a karty obrony kartami\
+    \ obrony.\n2. Stan ulepszenie jest przetrzymywany w zastępnikach."
   SaveWhenSelect: Wybór tego natychmiast zapisze grę.
   Power: Energia <sprite="Point" name="Power">
   PowerDescription: "Użycie Karty Zaklęć zużywa cały pasek energii.\n(Wyświetlany\
@@ -245,7 +255,9 @@ Setting:
   Keyword: Słowa Kluczowe
   VideoQuality: Jakość
   AudioUi: Głośność UI
-  TurboModeDescription: Sprawia, że większość animacji gra |znacznie szybciej|.
+  TurboModeDescription: "Sprawia, że większość animacji gra {0} razy szybciej.\nWpływa\
+    \ na prędkość animacji postaci oraz danmaku. Nie wpływa na prędkość elementów\
+    \ UI."
   KeywordDescription: "W ustawieniu |Krótkie|, chmurki nie będą już wyjaśniały pospolitych\
     \ mechanik.\n|r:Zalecane tylko doświadczonym graczkom.|\n|d:(Pospolite mechaniki\
     \ zawierają ||Moc||d:,| |Uduchowienie||d:,| |Blok||d:,| |Barierę||d:,| |Unik||d:,|\
@@ -317,6 +329,13 @@ Setting:
     zrestartowane oraz czy losowe wyniki były ujawnione.
   ShakeDescription: Włącza trzęsienie ekranem spowodowane obrażeniami.
   ShowReload: Pokaż Ilość Powtórzeń
+  TurboPlaying: Prędkość Animacji {0}x
+  ShowCardOrder: Pokaż Kolejność Kart
+  ShowCardOrderDescription: "Czy pokazać numeryczną kolejność kart w danych stosach.\n\
+    \nMa wpływ na tylko na stosy, które można wyświetlić w właściwej kolejności (domyślnie:\
+    \ biblioteka, stos zrzutek i stos Wygnań).\nW przypadku stosów doboru i zrzutek,\
+    \ szczytowe oraz spodnie karty w stosie są zaznaczone.\n\nMoże być włączone poprzez\
+    \ wciśnięcie klawisza \"Pokaż Kolejność Wrogów\"."
 History:
   Puzzles: "{0:plural one:'% Prośba' two:'% Prośby' many:'% Próśb'}"
   Mana: Mana
@@ -440,6 +459,8 @@ ErrorChat:
   CardCharm: Czuję się zdezorientowana.
   LowLoyalty: Nie starczy mi Wspólności z tym wspólnikiem.
   CardHuiye: Koniec czasu.
+  CardJinzi: Sobowtór zrobił wystarczająco dużo.
+  NoAbilityCardInHand: W dłoni nie ma kart Zdolności.
 Debut:
   EirinChats:
   - Nie marnuj czasu, {0:cv}
@@ -702,10 +723,10 @@ MessageDialog:
   CorruptedGameRunSaveData: Przejście zostało uszkodzone
   CannotReenterStation: Nie można przejść do tego poziomu
   EarlyAccess: "|Touhou: Lost Branch of Legends| jest w |d:Wczesnym Dostępie|.\nWszystko\
-    \ może być poddane zmianom.\nAktualnie pracujemy nad |b:Cirno| i zielonymi neutralnymi\
-    \ kartami.\nNastępnie zaczniemy pracę nad |g:Koishi| oraz trybem fabularnym.\n\
-    \nJeśli napotkasz jakiekolwiek bugi podczas gry, możesz się z nami skontaktować\
-    \ w naszej społeczności Steam lub na naszym serwerze Discord."
+    \ może być poddane zmianom.\nAktualnie pracujemy nad |b:Koishi| i |y:Alice|.\n\
+    Dla więcej informacji, prosimy sprawdzić aktualności na Steam.\n\nJeśli napotkasz\
+    \ jakiekolwiek bugi podczas gry, możesz się z nami skontaktować w naszej społeczności\
+    \ Steam lub na naszym serwerze Discord."
   XCostEmptyUsageWarning: Użyć {0:g} bez ustawiania many?
 Lifetime:
   Title: Całkowite Dane
