@@ -1189,11 +1189,13 @@ SatoriMemory:
   Name: Deep Memories
   FlavorText: "\"What's the password for this website?\""
 GrimoireStudy:
-  Description: "Lose {Value1} life.\n|For each <sprite=\"ManaSprite\" name=\"1\">\
-    \ spent|: Gain the following effect for an additional turn: At the end of {PlayerName}'s\
-    \ turn, add a |Rainbow| to the hand."
+  Description: "Lose {Value2} life.\nAdd {Value1} random card{Value1:plural one=''\
+    \ other='s'} to the hand. {Value1:plural one='It' other='They'} |temporarily cost{Value1:plural\
+    \ one='s' other=''}| {Mana} and {Value1:plural one='has' other='have'} |Exile|\
+    \ and |Ethereal|."
   Name: Grimoire Study
   FlavorText: "\"Let me check the monster's weakness...\""
+  DetailText: Cannot find {SelfName}.
 DoremyDuplicate:
   Description: "Choose a card in the hand. Add {Value1} |Cop{Value1:plural one='y'\
     \ other='ies'}| of it to the hand."
@@ -2997,8 +2999,10 @@ MeilingFriend:
   Name: Meiling, Neglectful Gatekeeper
   Description: '{FriendS}Gain {Graze} |Graze|.
 
-    {FriendP}Whenever {PlayerName} receives damage from an enemy''s whole attack,
-    add a |Throwing Knife| to the hand.'
+    {FriendP}Add a |Throwing Knife| to the hand.
+
+    Whenever {PlayerName} receives damage from an enemy''s whole attack, it triggers
+    for an additional time.'
   ExtraDescription2: '{FriendU}Gain {Value1} life and {Value2} |Firepower|.'
 PatchouliFriend:
   Name: Patchouli, Elemental Alchemist
@@ -3126,3 +3130,10 @@ DeployIce:
 FlanFirepower:
   Description: "Each card in hand gains |Ethereal|. Gain |Firepower| equal to the\
     \ number of cards in hand.\nThere are currently {Count} other cards in hand."
+  NonbattleDescription: Each card in the hand gains |ethereal|. Gain |firepower| equal
+    to the number of cards in hand.
+HuiyeMarblePhantasm:
+  Name: Marble Phantasm
+  Description: Choose 1 of {Value1} random cards with a total cost of X+1 to add into
+    the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
+  FlavorText: "\"Princess...please don't use your ability on this kind of matter...\""
