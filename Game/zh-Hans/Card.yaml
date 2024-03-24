@@ -426,12 +426,10 @@ ReimuHuashan:
   Name: 接受指教
   Description: |-
     选择手中的一张牌|放逐|，获得 {Value2} 点<sprite="Point" name="Power">。
-    |放逐|了|能力|牌时额外获得 {Value1} 点最大生命值。
-    每场战斗中，{SelfName}只能获得一次最大生命值。
+    选择|能力|牌时额外获得 {Value1} 点最大生命值。（每场战斗中只能生效一次）
   ExtraDescription1: |-
     选择手中的一张牌|放逐|，获得 {Value2} 点<sprite="Point" name="Power">。
-    |d:放逐了能力牌时额外获得 {Value1} 点最大生命值。|
-    每场战斗中，{SelfName}只能获得一次最大生命值。
+    |d:选择能力牌时额外获得 {Value1} 点最大生命值。（每场战斗中只能生效一次）|
   FlavorText: 「对对对，你说得对。」
 
 AutoQumobang:
@@ -1411,7 +1409,8 @@ MeilingFriend:
   Name: 玩忽职守红美铃
   Description: |-
     {FriendS}获得 {Graze} 层|闪避|。
-    {FriendP}当{PlayerName}受到一整轮攻击时触发一次：将一张|飞刀|加入手中。
+    {FriendP}将一张|飞刀|加入手中。
+    当{PlayerName}受到一整轮攻击时额外触发一次。
   ExtraDescription2: '{FriendU}恢复 {Value1} 点生命，获得 {Value2} 点|火力|。'
 
 UnlimitedTime:
@@ -2241,6 +2240,24 @@ GainDollSlot:
 DollFactory:
   Name: 人形工坊
 
+AutoHousework:
+  Name: 家政自动化
+
+DollRepair:
+  Name: 人形修缮
+
+DollSacrifice:
+  Name: 回归虚无
+
+Qianqiang:
+  Name: 萌萌大千枪
+
+DollFangzhen:
+  Name: 人形方阵
+
+DollZuzhou:
+  Name: 上吊的蓬莱人形
+
 BailianJingang:
   Name: 金刚体
   Description: |-
@@ -2318,12 +2335,22 @@ ShenziUpgradeAll:
   Description: '|升级|所有牌，直到本场战斗结束。'
   FlavorText: 仙人见到了八云紫只能喝茶。
 
-ShenziWake:
-  Name: 圣人复苏
+HuiyeMarblePhantasm:
+  Name: 空想具现化
   Description: |-
     从 {Value1} 张随机的卡牌中选择一张加入手中，这些卡牌的原始费用总数为 X+1 。
     它|暂塑|为{Mana}，具有|放逐|、|虚无|。
-  FlavorText: 在复活正确的圣人前复活很多次错误的人。
+  DetailText: 目标费用的可选卡牌不足时，会补充更低费用的备选卡牌。
+  FlavorText: 「公主...请不要把能力用在这种事情上...」
+
+HuiyinRemove:
+  Name: 吞噬历史
+  Description: |-
+    从牌库中移除一张牌。
+    {SelfName}打出后移出战斗和牌库。
+  DetailText: |-
+    {SelfName}不会在战斗中被随机获得，不能成为复制效果的对象。
+    牌库中被移除的牌，在本次战斗中的副本不会被同步移除。
 
 YuetuInvincible:
   Name: 天降的月兔
@@ -2549,12 +2576,9 @@ BailianBlack:
 GrimoireStudy:
   Name: 研读魔导书
   Description: |-
-    失去 {Value1} 点生命。
-    |每支付|<sprite="ManaSprite" name="1">就多持续一回合：回合结束时将一张|幻虹|加入手中。
-  UpgradedDescription: |-
-    失去 {Value1} 点生命。
-    将一张|幻虹|加入手中。
-    |每支付|<sprite="ManaSprite" name="1">就多持续一回合：回合结束时将一张|幻虹|加入手中。
+    失去 {Value2} 点生命。
+    将 {Value1} 张随机牌加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  DetailText: 不能找到{SelfName}。
   FlavorText: 「先等我查查这个妖怪的弱点……」
 
 TrueMoon:
@@ -2658,6 +2682,13 @@ RemiliaBat:
     获得 {Value1} 点|暂得火力|。
     获得 {Value2} 层|闪避|。
   FlavorText: 夜的女王降临。
+
+FlanFirepower:
+  Name: 之后就一个人都没有了吗？
+  Description: |-
+    赋予所有手牌|虚无|，并获得同等数量的|火力|。
+    现有 {Count} 张其它手牌。
+  NonbattleDescription: 赋予所有手牌|虚无|，并获得同等数量的|火力|。
 
 MeihongPower:
   Name: 不死的烈焰
@@ -2803,8 +2834,6 @@ MoonSea:
   FlavorText: |-
     丰饶之海。
     位于月球背面的月都结界以内，一般来说应该无法在天空中看到地球。
-
-    巧合的是，这张卡图完成时，我们正在开发新游戏中月球背面太空基地的部分。
 
 FengjiAttack:
   Name: 分解之风
@@ -3356,14 +3385,9 @@ PatchouliLibrary:
 SanaeRestart:
   Name: 海水分开之日
   Description: |-
-    获得{Mana}。    
-    将手牌和弃牌堆洗入抽牌堆，重洗抽牌堆。
+    选择任意张手牌，与弃牌堆一起洗入抽牌堆，重洗抽牌堆。
     抽 {Value1} 张牌。
-  UpgradedDescription: |-
-    获得{Mana}。    
-    将手牌和弃牌堆洗入抽牌堆，重洗抽牌堆。
-    抽 {Value1} 张牌。
-    从抽牌堆中选择 {Value2} 张牌移入手中。
+    获得{Mana}。
 
 JinziSuperExtraTurn:
   Name: 世纪的二重身超人
@@ -3884,6 +3908,12 @@ FlanBlack:
     这张牌还没有准备好。
     请期待游戏更新。
   FlavorText: 背负U·N·欧文之名，舍弃所有人去战斗的少女~
+
+ShenziWake:
+  Name: 圣人复苏
+  Description: |-
+    从 {Value1} 张随机的卡牌中选择一张加入手中，这些卡牌的原始费用总数为 X+1 。
+    它|暂塑|为{Mana}，具有|放逐|、|虚无|。
 
 DebugAddRandomCards:
   Name: 添加随机卡牌
