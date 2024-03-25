@@ -704,10 +704,10 @@ TaijiLiangyi:
 HuanxiangTouying:
   Name: Proyección de Fantasía
   Description: "Gana {Mana}.\nElige 1 de {Value1} cartas al azar para agregar a la\
-    \ mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un costo total de 1, 2\
+    \ mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un coste total de 1, 2\
     \ y 3 respectivamente."
   UpgradedDescription: "Gana {Mana}.\nElige 1 de {Value1} cartas al azar para agregar\
-    \ a la mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un costo total de\
+    \ a la mano. Tiene |Exilio| y |Etéreo|.\nEsas cartas tienen un coste total de\
     \ 1, 2, 3, 4 y 5 respectivamente."
   FlavorText: '"...Trace, On!"'
 HuijuQiankun:
@@ -767,7 +767,7 @@ DanceAroundLake:
 AutoQumobang:
   Description: "|Mientras está en la mano|: Roba {Value1} {Value1:plural one='carta'\
     \ other='cartas'} más durante cada fase de robo.\nDespués de que {SelfName} es\
-    \ |Retenida| {Value2} ve{Value1:plural one='z' other='ces'}, se |Exilia|."
+    \ |Retenida| {Value2} ve{Value2:plural one='z' other='ces'}, se |Exilia|."
   Name: Vara de Purificación Furiosa
   FlavorText: '"Las Varas de Purificación Autónomas están reemplazando los trabajos
     de las sacerdotisas de los santuarios." — Periódico Bunbunmaru · Sección de Economía'
@@ -1607,7 +1607,7 @@ RingoJinghua:
     Point\" name=\"Power\">."
 ShenziWake:
   Name: Revivir a la Santa
-  Description: Elige 1 de {Value1} cartas aleatorias con un costo total de X+1 para
+  Description: Elige 1 de {Value1} cartas aleatorias con un coste total de X+1 para
     agregarla a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
 YuetuInvincible:
   Description: "Gana |Perfección| por {Value1} turno{Value1:plural one='' other='s'}.\n\
@@ -1737,10 +1737,12 @@ BailianBlack:
   Name: Abraza la Oscuridad
 GrimoireStudy:
   Name: Estudio del Grimorio
-  Description: "Pierde {Value1} de vida.\n|Por cada <sprite=\"ManaSprite\" name=\"\
-    1\"> gastado|: Gana el siguiente efecto por un turno adicional: Al final del turno\
-    \ de {PlayerName}, agrega un |Arcoíris| a la mano."
+  Description: "Pierde {Value2} de vida.\nAgrega {Value1} carta{Value1:plural one='\
+    \ aleatoria' other='s aleatorias'} a la mano. |{Value1:plural one='Cuesta' other='Cuestan'}\
+    \ temporalmente| {Mana} y {Value1:plural one='tiene' other='tienen'} |Exilio|\
+    \ y |Etéreo|."
   FlavorText: '"Déjame comprobar la debilidad del monstruo..."'
+  DetailText: '{SelfName} no puede ser producido por este efecto.'
 RemiliaJizao:
   Name: Impaciencia
   Description: "Roba {Value1:plural one='% carta' other='% cartas'}.\nNo se pueden\
@@ -1942,7 +1944,7 @@ HuiyinRetain:
     \ de {PlayerName}. Luego, toma un turno extra.\n|Límite de Tiempo| {Mana}."
   ExtraDescription1: "Devuelve hasta {Value1:plural one='% carta' other='% cartas'}\
     \ de la pila de descarte a la mano. |Retiene| ellos en este turno.\nFinaliza el\
-    \ turno. Luego, {PlayerName} toma un turno adicional.\n|d:Límite de Tiempo {Mana}|"
+    \ turno. Luego, {PlayerName} toma un turno extra.\n|d:Límite de Tiempo {Mana}|"
 BaitianCard:
   Name: Transmigración de Hieda
   Description: "Gana {Block} de |Bloqueo|.\nDevuelve una carta de la pila de descarte\
@@ -2009,7 +2011,7 @@ RinDraw:
   FlavorText: Los gatos son buenos para hablar con cosas raras.
 KongMana:
   Name: Fusión
-  Description: "|Exilia| una carta de la mano. Gana maná igual al costo de esa carta.\n\
+  Description: "|Exilia| una carta de la mano. Gana maná igual al coste de esa carta.\n\
     Agrega un |Arcoíris| a la mano."
 FangxiangAttack:
   Description: "Si el objetivo tiene |Veneno|, inflige {Damage} de daño {Value2} {Value2:plural\
@@ -2052,10 +2054,10 @@ TodayYesterday:
 LilyChun:
   Name: ¡Llego la Primavera!
   Description: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un costo total de\
+    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste total de\
     \ 1 en la mano. Teniendo |Exilio| y |Etéreo|.\n"
   UpgradedDescription: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un costo total de\
+    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste total de\
     \ 1 en la mano. |{Value1:plural one='cuesta' other='cuestan'} temporalmente| {Mana}.\
     \ teniendo |Exilio| y |Etéreo|."
   DetailText: "Estas |e:cartas alternativas| ignoran las restricciones de los personajes.\n\
@@ -2375,7 +2377,7 @@ DeepFreeze:
 FairyTeam:
   Name: Gran Guerra de Hadas
   Description: "Elige cualquier número de |Compañeras| en la mano y |Exílialos|. Gana\
-    \ maná igual a su costo.\nInflige {Damage} de daño a un enemigo aleatorio.\nPor\
+    \ maná igual a su coste.\nInflige {Damage} de daño a un enemigo aleatorio.\nPor\
     \ cada carta |Exiliada| de esta manera, inflige el mismo daño una vez más."
 CirnoEcho:
   Name: Regalo de la Naturaleza
@@ -2668,9 +2670,9 @@ HuiyeAttack:
     \ {Value1} carta{Value1:plural one='' other='s'} del |Exilio| a la mano."
 SanaeRestart:
   Name: El Día en que el Mar se Dividió
-  Description: "Gana {Mana}.\nDevuelve todas las cartas de la mano y la pila de descarte\
+  Description: "Devuelve cualquier cantidad de cartas en la mano y de la pila de descarte\
     \ hacia la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
-    \ one='' other='s'}."
+    \ one='' other='s'}.\nGana {Mana}."
 RemiliaFate:
   Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nColoca\
     \ cartas aleatorias con costes totales de 1, 2 y 3 desde la pila de robo hacia\
@@ -2685,6 +2687,8 @@ HuiyeTime:
     \ el turno de {PlayerName}. Luego, toma un turno extra. Solo se pueden jugar hasta\
     \ {Value1} carta{Value1:plural one='' other='s'} durante ese turno."
   Name: Eterno e Instantáneo
+  FlavorText: Tener que levantarse para ir a trabajar es eterno, mientras que dormir
+    bien por la noche es instantáneo.
 HatateShot:
   Description: "Gana {Block} de |Bloqueo|.\nPor cada maná no gastado, aumenta el |Bloqueo|\
     \ de {SelfName} por {Value1}. (|Bloqueo| Total {Special})"
@@ -2991,8 +2995,10 @@ MeilingFriend:
   Name: Meiling, Guardiana Negligente
   Description: '{FriendS}Gana {Graze} de |Evasión|.
 
-    {FriendP}Siempre que {PlayerName} reciba daño de todo el ataque de un enemigo,
-    agrega un |Cuchillo Arrojadizo| a la mano.'
+    {FriendP}Agrega un |Cuchillo Arrojadizo| a la mano.
+
+    Cada vez que {PlayerName} recibe daño de todo el ataque de un enemigo, se activa
+    una vez más.'
   ExtraDescription2: '{FriendU}Cura {Value1} de vida y gana {Value2} de |Poder|.'
 PatchouliFriend:
   Description: "{FriendP}Convierte {PassiveColor} man{PassiveColor:plural one='á aleatorio'\
@@ -3014,12 +3020,10 @@ HeartDance:
 ReimuHuashan:
   Description: "|Exilia| una carta en la mano. Gana {Value2} <sprite=\"Point\" name=\"\
     Power\">.\nSi la carta |Exiliada| de esta manera es una carta de |Habilidad|,\
-    \ gana {Value1} de vida máxima.\n{SelfName} solo puede aumentar la vida máxima\
-    \ una vez por combate."
+    \ gana {Value1} de vida máxima.\nEste efecto sólo puede ocurrir una vez por combate."
   ExtraDescription1: "|Exilia| una carta en la mano. Gana {Value2} <sprite=\"Punto\"\
     \ name=\"Poder\">.\n|d: Si la carta Exiliada de esta manera es una carta de |Habilidad|,\
-    \ gana {Value1} de vida máxima.|\n{SelfName} solo puede aumentar la vida máxima\
-    \ una vez por combate."
+    \ gana {Value1} de vida máxima.|\nEste efecto sólo puede ocurrir una vez por combate."
   Name: Recibir Orientación
   FlavorText: '"Sí, claro, lo que sea".'
 JinziSuperExtraTurn:
@@ -3035,7 +3039,9 @@ MoonSea:
   Name: Mar de la Tranquilidad
   UpgradedDescription: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| o una |Salpicadura|\
     \ a la mano."
-  FlavorText: El océano de la fertilidad.
+  FlavorText: "El océano de la fertilidad.\nDentro de los límites de la Capital Lunar,\
+    \ que se encuentra en la cara oculta de la Luna, normalmente debería ser imposible\
+    \ ver la Tierra en el cielo."
 FengjiAttack:
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Por cada <sprite=\"ManaSprite\"\
     \ name=\"C\"> gastado|: Inflige {Value1} más de daño."
@@ -3133,3 +3139,28 @@ DeployIce:
   Name: Desplegar Glaciar
   Description: '|Despliega| un |Glaciar|.'
   UpgradedDescription: '|Despliega| 2 |Glaciares|.'
+Qianqiang:
+  Name: Linda Falange
+DollZuzhou:
+  Name: Muñecas Hourais Ahorcadas
+HuiyeMarblePhantasm:
+  Name: Manifestación de la Fantasía
+  FlavorText: '"Princesa... por favor no uses tu habilidad en este tipo de asuntos..."'
+  Description: Elige 1 de {Value1} cartas aleatorias con un coste total de X+1 para
+    agregarla a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
+HuiyinRemove:
+  DetailText: "{SelfName} no se puede generar aleatoriamente en combate y no se puede\
+    \ copiar.\nCuando la carta seleccionada sea removida de la biblioteca, no será\
+    \ eliminada de este combate."
+  Description: "Remueve una carta de la biblioteca.\nDespués de jugar {SelfName},\
+    \ se remueve del combate y de la biblioteca."
+  Name: Devorar la Historia
+FlanFirepower:
+  NonbattleDescription: Cada carta en la mano gana |Etéreo|. Gana |Poder| igual al
+    número de cartas en la mano.
+  Description: "Cada carta en la mano gana |Etéreo|. Gana |Poder| igual al número\
+    \ de cartas en la mano.\nActualmente hay {Count:plural one=' % carta' other='otras\
+    \ % cartas'} en la mano."
+  Name: ¿Y Entonces No Quedará Ninguno?
+DollSacrifice:
+  Name: Regreso a la Inanimación
