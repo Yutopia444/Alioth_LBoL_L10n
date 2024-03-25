@@ -2313,9 +2313,10 @@ GrimoireStudy:
   Name: 研讀魔導書
   Description: |-
     失去 {Value1} 點生命。
-    |每支付|<sprite="ManaSprite" name="1">就多持續一回合：回合結束時將一張|幻虹|加入手中。
+    將 {Value1} 張隨機牌加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。
   FlavorText: 「先等我查查這個妖怪的弱點……」
 
+  DetailText: 不能找到{SelfName}。
 TrueMoon:
   Name: 真實的滿月
   Description: |-
@@ -2955,9 +2956,9 @@ PatchouliLibrary:
 SanaeRestart:
   Name: 海水分開之日
   Description: |-
-    獲得{Mana}。    
-    將手牌及棄牌堆洗入抽牌堆，重洗抽牌堆。
+    選擇任意張手牌，與棄牌堆一起洗入抽牌堆，重洗抽牌堆。
     抽 {Value1} 張牌。
+    獲得{Mana}。
 AnimalSpirit:
   Name: 畜生界大暴動
   Description: |-
@@ -3624,7 +3625,9 @@ PatchouliFriend:
 MeilingFriend:
   Description: '{FriendS}獲得 {Graze} 層|閃避|。
 
-    {FriendP}當{PlayerName}受到一整輪攻擊時觸發一次：將一張|飛刀|加入手中。'
+    {FriendP}將一張|飛刀|加入手中。
+
+    當{PlayerName}受到一整輪攻擊時額外觸發一次。'
   Name: 玩忽職守紅美鈴
   ExtraDescription2: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
 Naodiantu:
@@ -3646,7 +3649,7 @@ MoonSea:
   Name: 靜寂之海
   Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
   UpgradedDescription: "獲得 {Block} 點|格擋|。\n從|純粹|和|水花|中選擇一張加入手中。"
-  FlavorText: "豐饒之海。\n位於月球背面的月都結界以內，一般來說應該無法在天空中看到地球。\n\n巧合的是，這張卡圖完成時，我們正在開發新遊戲中月球背面太空基地的部分。"
+  FlavorText: "豐饒之海。\n位於月球背面的月都結界以內，一般來說應該無法在天空中看到地球。"
 FengjiAttack:
   Description: "對所有敵人造成 {Damage} 點傷害。\n|每支付|<sprite=\"ManaSprite\" name=\"C\">：傷害提高 {Value1} 點。"
   Name: 分解之風
@@ -3659,10 +3662,9 @@ YijiSkill:
   Description: 從 {Value1} 個隨機的|e:神明技能|中選擇一個生效。
 ReimuHuashan:
   Name: 接受指教
-  Description: "選擇手中的一張牌|放逐|，獲得 {Value2} 點<sprite=\"Point\" name=\"Power\">。\n|放逐|了|能力|牌時額外獲得 {Value1} 點最大生命值。\n\
-    每場戰鬥中，{SelfName}只能獲得一次最大生命值。"
+  Description: "選擇手中的一張牌|放逐|，獲得 {Value2} 點<sprite=\"Point\" name=\"Power\">。\n選擇|能力|牌時額外獲得 {Value1} 點最大生命值。（每場戰鬥中只能生效一次）"
   ExtraDescription1: "選擇手中的一張牌|放逐|，獲得 {Value2} 點<sprite=\"Point\" name=\"Power\">。\n\
-    |d:放逐了能力|牌時額外獲得 {Value1} 點最大生命值。|\n每場戰鬥中，{SelfName}只能獲得一次最大生命值。"
+    |d:選擇|能力|牌時額外獲得 {Value1} 點最大生命值。（每場戰鬥中只能生效一次）|"
   FlavorText: 「對對對，你說得對。」
 YijiEarthSpike:
   Name: 裂地尖刺/祇園之力
@@ -3727,3 +3729,28 @@ DeployIce:
   Name: 部署冰晶
   Description: '|部署|一個|冰晶|。'
   UpgradedDescription: '|部署|兩個|冰晶|。'
+AutoHousework:
+  Name: 家政自動化
+DollRepair:
+  Name: 人形修繕
+DollSacrifice:
+  Name: 回歸虛無
+Qianqiang:
+  Name: 萌萌大千槍
+DollFangzhen:
+  Name: 人形方陣
+DollZuzhou:
+  Name: 上吊的蓬萊人形
+HuiyeMarblePhantasm:
+  DetailText: 目標費用的可選卡牌不足時，會補充更低費用的備選卡牌。
+  Name: 空想具現化
+  Description: "從 {Value1} 張隨機的卡牌中選擇一張加入手中，這些卡牌的原始費用總數為 X+1 。\n它|暫塑|為{Mana}，具有|放逐|、|虛無|。"
+  FlavorText: 「公主...請不要把能力用在這種事情上...」
+HuiyinRemove:
+  Name: 吞噬歷史
+  DetailText: "{SelfName}不會在戰鬥中被隨機獲得，不能成為複製效果的對象。\n牌庫中被移除的牌，在本次戰鬥中的副本不會被同步移除。"
+  Description: "從牌庫中移除一張牌。\n{SelfName}打出後移出戰鬥和牌庫。"
+FlanFirepower:
+  Name: 之後就一個人都沒有了嗎？
+  NonbattleDescription: 賦予所有手牌|虛無|，並獲得同等數量的|火力|。
+  Description: "賦予所有手牌|虛無|，並獲得同等數量的|火力|。\n現有 {Count} 張其它手牌。"
