@@ -1087,10 +1087,11 @@ XiaoemoBook:
 GrimoireStudy:
   FlavorText: '"Laissez-moi vérifier la faiblesse du monstre..."'
   Name: Étude de Grimoire
-  Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\n|Pour\
-    \ chaque <sprite=\"ManaSprite\" name=\"1\"> dépensé| : Cet effet dure un tour\
-    \ supplémentaire.\nLorsque {PlayerName} finit son tour, ajoutez un |Arc-en-ciel|\
-    \ à la main."
+  Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nAjoutez\
+    \ {Value1} carte{Value1:plural one=' aléatoire' other='s aléatoires'} à la main.\
+    \ {Value1:plural one='Elle |coûte temporairement|' other='Elles |coûtent temporairement|'}\
+    \ {Mana} et {Value1:plural one='a' other='ont'} |Exil| et |Éthéré|."
+  DetailText: '{SelfName} ne peut pas être produite par cet effet.'
 TrueMoon:
   Name: Vraie Pleine Lune
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
@@ -2899,8 +2900,9 @@ HuiyeTime:
     se coucher n'est qu'un instant.
 SanaeRestart:
   Name: Le Jour où la Mer s'est Séparée
-  Description: "Gagnez {Mana}.\nPlacez la main et la défausse dans la pioche, qui\
-    \ est mélangée.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  Description: "La défausse et les cartes choisies de votre main sont remélangées\
+    \ dans la pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez\
+    \ {Mana}."
 KoishiMove:
   Name: Action Inconsciente
   Description: "Choisissez un des effets, et entrez dans un |État mental| aléatoire\
@@ -3230,8 +3232,9 @@ MeilingFriend:
   Name: Meiling, Gardienne Négligente
   Description: '{FriendS}Gagnez {Graze} |Esquive{Graze:plural one='''' other=''s''}|.
 
-    {FriendP}Une fois par ennemi lorsque {PlayerName} est attaquée, ajoutez un |Couteau
-    de lancer| à la main.'
+    {FriendP}Ajoutez un |Couteau de lancer| à la main.
+
+    Se déclenche une fois supplémentaire par ennemi qui attaque {PlayerName}.'
   ExtraDescription2: "{FriendU}Gagnez {Value1} point{Value1:plural one='' other='s'}\
     \ de vie et gagnez \n{Value2} |Puissance{Value2:plural one='' other='s'}|."
 Naodiantu:
@@ -3268,12 +3271,12 @@ ReimuHuashan:
   Name: Recevoir des Conseils
   ExtraDescription1: "|Exilez| une carte en main. Gagnez {Value2} <sprite=\"Point\"\
     \ name=\"Power\">.\n|d:Si la carte exilée de cette façon est une carte Pouvoir,\
-    \ gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum.|\n{SelfName}\
-    \ ne peut augmenter la vie maximum qu'une fois par combat."
+    \ gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum (une seule\
+    \ fois par combat).|"
   Description: "|Exilez| une carte en main. Gagnez {Value2} <sprite=\"Point\" name=\"\
     Power\">.\nSi la carte |exilée| de cette façon est une carte |Pouvoir|, gagnez\
-    \ {Value1} point{Value1:plural one='' other='s'} de vie maximum.\n{SelfName} ne\
-    \ peut augmenter la vie maximum qu'une fois par combat."
+    \ {Value1} point{Value1:plural one='' other='s'} de vie maximum (une seule fois\
+    \ par combat)."
   FlavorText: '"Oui, bien sûr, peu importe."'
 MoonSea:
   Name: Mer de la Tranquillité
@@ -3283,9 +3286,7 @@ MoonSea:
     Ajoutez une |Pureté| ou un |Geyser| à la main."
   FlavorText: "Mer d'abondance.\nD’une manière générale, la Terre ne devrait pas être\
     \ visible dans le ciel à l’intérieur des limites de la capitale lunaire située\
-    \ sur la face cachée de la Lune.\n\nPar coïncidence, lorsque le graphisme de cette\
-    \ carte a été terminé, nous étions également en train de créer l'arrière de la\
-    \ lune dans notre nouveau jeu."
+    \ sur la face cachée de la Lune."
 FengjiAttack:
   Name: Vents Désintégrants
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -3391,3 +3392,37 @@ DeployIce:
   UpgradedDescription: '|Déployez| deux |Glaciers|.'
   Description: '|Déployez| un |Glacier|.'
   Name: Déploiement de Glacier
+DollRepair:
+  Name: Réparation de Poupée
+Qianqiang:
+  Name: Alice Margatroid
+DollFangzhen:
+  Name: Phalange de Poupées
+DollZuzhou:
+  Name: Poupée Suspendue
+HuiyeMarblePhantasm:
+  Name: Incarnation du Fantasme
+  DetailText: S'il n'y a pas suffisamment de cartes avec le coût choisi, des cartes
+    de coût inférieur seront proposées.
+  FlavorText: "\"Princesse... s'il vous plaît, n'utilisez pas vos capacités pour ce\
+    \ genre de choses...\""
+  Description: Choisissez une parmi {Value1} cartes aléatoires d'un coût total de
+    X+1 à ajouter à la main. Elle |coûte temporairement| {Mana} et a |Exil| et |Éthéré|.
+HuiyinRemove:
+  Name: Dévorer l'Histoire
+  Description: "Supprimez une carte de la bibliothèque.\nUne fois {SelfName} jouée,\
+    \ elle est retirée du combat et de la bibliothèque."
+  DetailText: "{SelfName} ne peut pas être générée aléatoirement pendant le combat\
+    \ et ne peut pas être copiée.\nLorsqu'une carte est retirée de la bibliothèque,\
+    \ elle n'est pas retirée du combat en cours."
+FlanFirepower:
+  NonbattleDescription: Chaque carte en main gagne |Éthéré|. Gagnez une |Puissance|
+    égale au nombre de cartes en main.
+  Name: Reste Plus Personne Après Ça ?
+  Description: "Chaque carte en main gagne |Éthéré|. Gagnez une |Puissance| égale\
+    \ au nombre de cartes en main.\nIl y a actuellement {Count} autre{Count:value\
+    \ one=' carte' other='s cartes'} en main."
+AutoHousework:
+  Name: Automatisation du Ménage
+DollSacrifice:
+  Name: Retourner au Néant
