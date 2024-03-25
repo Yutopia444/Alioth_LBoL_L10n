@@ -1165,11 +1165,14 @@ HinaAttack:
   FlavorText: Nie martw się. Po tym, jak miałaś pecha teraz, wciąż będziesz miała
     pecha.
 GrimoireStudy:
-  Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\n|Za Każde Wydane <sprite=\"ManaSprite\" name=\"1\">|: Zyskaj następujący\
-    \ efekt na dodatkową turę: Na końcu tury {PlayerName:g} dodaj |Tęczę| do ręki."
+  Description: "Strać {Value2:plural one='% punkt' few='% punkty' many='% punktów'}\
+    \ życia.\nDodaj {Value1:plural one='% losową kartę' few='% losowe karty' many='%\
+    \ losowych kart'} do ręki. {Value1:plural one='Ona |Tymczasowo Kosztuje|' other='One\
+    \ |Tymczasowo Kosztują|'} {Mana} i {Value1:plural one='ma' other='mają'} |Wygnanie|\
+    \ oraz |Eteryczność|."
   Name: Badanie Księgi Zaklęć
   FlavorText: '"Daj mi spojrzeć na słabość tego stwora..."'
+  DetailText: '{SelfName} nie może zostać wyprodukowana przez ten efekt.'
 TrueMoon:
   Description: "Zyskaj {Shield} |Bariery|.\nZyskaj {Value1} |Mocy|.\nJak zostanie\
     \ zagranych {Value2} kart, {PlayerName} przygrywa grę."
@@ -2725,9 +2728,9 @@ ShirenKunchong:
   Name: Kanibalistyczny Owad
 SanaeRestart:
   Name: Dzień, w Którym Morze Zostało Podzielone
-  Description: "Zyskaj {Mana}.\nZwróć wszystkie karty z dłoni i stosu zrzutek do stosu\
-    \ doboru. Przetasuj stos doboru.\nDobierz {Value1:plural one='% kartę' few='%\
-    \ karty' many='% kart'}."
+  Description: "Zwróć dowolną ilość kart z dłoni i stosu zrzutek do stosu doboru.\
+    \ Przetasuj stos doboru.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}.\nZyskaj {Mana}."
 AnimalSpirit:
   Name: Powstanie w Świecie Zwierząt
   Description: "Wszystkie inne karty w dłoni zostają opętane przez dusze zwierząt,\
@@ -2817,8 +2820,10 @@ MeilingFriend:
   Description: '{FriendS}Zyskaj {Graze:plural one=''% |Unik|'' few=''% |Uniki|'' many=''%
     |Uników|''}
 
-    {FriendP}Gdy {PlayerName} otrzyma obrażenia od ataku po raz pierwszy w każdej
-    turze, dodaj |Sztylet do Rzucania| do ręki.'
+    {FriendP}Dodaj |Sztylet do Rzucania| do ręki.
+
+    Gdy {PlayerName} otrzyma całe obrażenia od ataku wroga, jest to aktywowane dodatkowy
+    raz.'
   Name: Meiling, Niedbała Strażniczka
   ExtraDescription2: "{FriendU}Ulecz {Value1:plural one='% punkt' few='% punkty' many='%\
     \ punktów'} życia i zyskaj {Value2} |Mocy|."
@@ -2951,13 +2956,11 @@ TriggerAllPassive:
 ReimuHuashan:
   ExtraDescription1: "|Wygnaj| kartę w dłoni. Zyskaj {Value2} <sprite=\"Point\" name=\"\
     Power\">.\n|d:Jeśli Wygnana w ten sposób karta była kartą Zdolności, zyskaj {Value1}\
-    \ maksymalnego życia.|\n{SelfName} może zwiększyć maksymalne życie tylko raz w\
-    \ walce."
+    \ maksymalnego życia. (Aktywowane tylko raz na walkę)|"
   Name: Otrzymanie Wskazówki
   Description: "|Wygnaj| kartę w dłoni. Zyskaj {Value2} <sprite=\"Point\" name=\"\
     Power\">.\nJeśli |Wygnana| w ten sposób karta była kartą |Zdolności|, zyskaj {Value1}\
-    \ maksymalnego życia.\n{SelfName} może zwiększyć maksymalne życie tylko raz w\
-    \ walce."
+    \ maksymalnego życia. (Aktywowane tylko raz na walkę)"
 BenwoTouying:
   Description: "Gdy {PlayerName} wchodzi w |Stan Pasji|, dodaj |p:kompletnie losową|\
     \ kartę |Ataku| do ręki. Ona |Tymczasowo Kosztuje| {Mana} i ma |Wygnanie|.\nWejdź\
@@ -3219,3 +3222,22 @@ DebugAddRandomCardsSlow:
   Name: Dodaj Losowe Karty (Powolne)
 DebugAddHandCards:
   Name: Wygnaj Dłoń i Dodaj Karty do Ręki
+HuiyinRemove:
+  Name: Pożeranie Historii
+  Description: "Usuń kartę z biblioteki.\nGdy {SelfName} zostanie zagrana, jest ona\
+    \ usunięta z walki i biblioteki."
+  DetailText: "{SelfName} nie może zostać losowo wygenerowana w walce ani zostać skopiowana.\n\
+    Gdy wybrana karta zostanie usunięta z biblioteki, nie zostanie ona usunięta z\
+    \ walki."
+FlanFirepower:
+  Name: I Nie Będzie Już Nikogo?
+  Description: "Wszystkie karty zyskują |Eteryczność|. Zyskaj |Moc| równą ilości kart\
+    \ w dłoni.\nW dłoni znajduje się {Count:plural one='% inna karta' few='% inne\
+    \ karty' many='% innych kart'}."
+  NonbattleDescription: Wszystkie karty zyskują |Eteryczność|. Zyskaj |Moc| równą
+    ilości kart w dłoni.
+HuiyeMarblePhantasm:
+  Name: Marmurowy Fantazm
+  Description: Wybierz 1 z {Value1} losowych kart z całkowitym kosztem X+1 aby dodać
+    do ręki. Ona |Tymczasowo Kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
+  FlavorText: '"Księżniczko... Proszę nie używaj swojej mocy na takie sprawy..."'

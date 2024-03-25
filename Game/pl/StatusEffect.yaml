@@ -72,7 +72,8 @@ TurnStartDontLoseBlock:
   Description: "{OwnerName} nie utraci |Bloku| na początku {Level:plural one='następnej\
     \ tury' other='następnych % tur'}."
   Name: Przetrzymaj Blok
-  Brief: '{OwnerName} nie utraci |Bloku| na początku kolejnych tur.'
+  Brief: '{OwnerName} nie utraci |Bloku| na początku kolejnych tur przez jakąś ilość
+    tur.'
 AmuletForCard:
   Description: Oprzyj się {Level:plural one='kolejnej karcie statusu, którą' other='kolejnym
     % kartom statusu, które'} otrzymasz (zostają |Wygnane|).
@@ -93,7 +94,8 @@ Invincible:
   Name: Nieskazitelny Jedwab
   Description: "{OwnerName} nie będzie tracić więcej niż 1 punkt życia {Duration:plural\
     \ one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
-  Brief: '{OwnerName} nie będzie tracić więcej niż 1 punkt życia na raz.'
+  Brief: '{OwnerName} nie będzie tracić więcej niż 1 punkt życia na raz przez jakiekolwiek
+    obrażenia przez jakąś ilość tur.'
 Amulet:
   Name: Amulet
   Description: Niweluje {Level:plural one='następny debuff' few='następne % debuffy'
@@ -137,7 +139,7 @@ GuangxueMicai:
   Description: "{OwnerName} dostaje o połowę mniej obrażeń od ataków {Duration:plural\
     \ one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
   Name: Kamuflaż Optyczny
-  Brief: '{OwnerName} dostaje o połowę mniej obrażeń od ataków.'
+  Brief: '{OwnerName} dostaje o połowę mniej obrażeń od ataków przez jakąś ilość tur.'
 DroneBlock:
   Brief: Na końcu tury {OwnerName:g} zyskaj trochę |Bloku|.
   Name: Macierz Obronna
@@ -218,6 +220,8 @@ LunaticTorch:
 WindGirl:
   Name: Bogini Wiatru
   Description: '|Unik| {OwnerName:g} jest uzupełniany do {Level} na końcu jej tury.'
+  Brief: "Gdy {OwnerName} zyskuje |Boginię Wiatru|, zyskuje ona tyle |Uników|.\n|Uniki|\
+    \ {OwnerName:g} zostaną uzupełnione do danego poziomu na końcu jej tury."
 Interview:
   Name: Trwający Wywiad
   Description: '{OwnerName} prowadzi wywiady o incydencie na miejscu.'
@@ -231,10 +235,11 @@ Fengyin:
   Description: "{PlayerName} nie może zagrać kart ataku {Duration:plural one='do końca\
     \ tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
 KokoroXi:
-  Description: Na końcu tury {OwnerName:g} przywołaj Menreikiego.
+  Description: Na końcu tury {OwnerName:g} przywołaj |Menreikiego|. (Już wykonane)
   Name: Radość
 KokoroNu:
   Description: Na końcu tury {OwnerName:g} wszyscy wrogowie zyskują {Level} |Mocy|.
+    (Już wykonane)
   Name: Gniew
 LongEscape:
   Description: '{OwnerName} opuści walkę, gdy jej życie spadnie poniżej {Level}.'
@@ -348,6 +353,7 @@ LouguanJianSe:
 KokoroYou:
   Name: Smutek
   Description: Na końcu tury {OwnerName:g} nałóż {Level} |Osłabienia| na {PlayerName:a}.
+    (Już wykonane)
 LongLight:
   Name: Lśniący Statyw
   Description: "{OwnerName} lśni jak gwiazda!\nJej karty statusu są potężniejsze."
@@ -370,9 +376,9 @@ FastAttack:
     {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 SijiZui:
   Name: Osąd Dobra i Zła
-  Description: 'Grzechy {PlayerName:g}: Drobne'
-  ExtraDescription: 'Grzechy {PlayerName:g}: Średnie'
-  ExtraDescription2: 'Grzechy {PlayerName:g}: Poważne'
+  Description: 'Grzechy {PlayerName:g}: Drobne.'
+  ExtraDescription: 'Grzechy {PlayerName:g}: Średnie.'
+  ExtraDescription2: 'Grzechy {PlayerName:g}: Poważne.'
 MirrorImage:
   Name: Odbicie Lustrzane
   Description: Odbicie {OwnerName:g}.
@@ -570,6 +576,10 @@ DrawPhaseAddKnife:
     one='% |Sztylet|' few='% |Sztylety|' many='% |Sztyletów|'} zamiast tego.
   Name: Na Początku Tury Zyskaj |Sztylety| Zamiast Dobierać Karty
   Brief: Pomiń fazę doboru w następnej turze, dodawając do ręki |Noże| zamiast tego.
+  ExtraDescription: "Pomiń fazę doboru na początku tury, zamiast tego dodaj {Limit:plural\
+    \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
+    \ do Rzucania|} do ręki.\n{SelfName} jest nieaktywne i zostanie usunięte po turze\
+    \ w której zostanie zaktywowane."
 DangerousMagicianSe:
   Brief: Gdy |Sztylet do Rzucania| zostanie użyty, {PlayerName} zyskuje trochę |Pulsu
     Czasu|.
@@ -667,8 +677,7 @@ EvilMaidDoubleAttack:
   Name: Pokojówka Diabła
   Description: "{PlayerName} zadaje podwójne obrażenia. (Pozostał{Duration:plural\
     \ one='a % tura' few='y % tury' many='o % tur}."
-  Brief: "{PlayerName} zadaje podwójne obrażenia. (Pozostał{Duration:plural one='a\
-    \ % tura' few='y % tury' many='o % tur}."
+  Brief: "{PlayerName} zadaje podwójne obrażenia przez jakąś ilość tur."
 MihuanJackSe:
   Name: Złodziejka Czasu
   Description: Na początku tury {PlayerName:g} zyskaj {Level} |Pulsu Czasu|.
@@ -979,6 +988,10 @@ HuiyeTimeSe:
   Description: Jedynie {Limit:plural one='% karta może zostać zagrana' few='% karty
     mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze. (Zostało
     {Count})
+  ExtraDescription: "Jedynie {Limit:plural one='% karta może zostać zagrana' few='%\
+    \ karty mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze.\
+    \ (Zostało {Count})\n{SelfName} jest nieaktywne i zostanie usunięte po turze w\
+    \ której zostanie zaktywowane."
 MindPassion:
   Name: Pasja
   Brief: "|Pasja| jest |Stanem Umysłowym|, z których tylko jeden może być aktywny\
@@ -1099,3 +1112,93 @@ ZhuozhuangChengzhangSe:
   Description: Na końcu tury {PlayerName} dodaj {Level} |Witalnoś{Level:plural one='ć'
     other='ci'}| do ręki.
   Brief: Na końcu tury {PlayerName} dodaj |Witalności| do ręki.
+KokoroRenzhen:
+  Name: Poważna
+  Description: Na końcu tury (OwnerName:g) straci ona wszystkie |Mroczne Emocje| i
+    zadaje {PlayerName:d} o {Level} więcej obrażeń z każdą 1 |Mroczną Emocję| utraconą
+    w ten sposób. (Już wykonane)
+KokoroDarkPower:
+  Name: Zebranie Mrocznych Emocji
+  Description: "{OwnerName} zada dodatkowe obrażenia {PlayerName:d} jej następną |Kartą\
+    \ Zaklęć|.\nZwiększa się, gdy {PlayerName} otrzyma debuff."
+JunkoColor:
+  Name: Wylewająca się Nieczystość
+  Description: 'Poziom nieczystości {PlayrName:g}: Lekkie.'
+  ExtraDescription: "Poziom nieczystości {PlayerName:g}: Poważne.\n{JunkoName} zyskuje\
+    \ |Moc| i akcja \"Oczyszczenie Ziemskich Nieczystości\" stanie się potężniejsza."
+  ExtraDescription2: "Poziom nieczystości {PlayerName:g}: Nie do zniesienia.\n{JunkoName}\
+    \ zyskuje |Moc| i akcja \"Oczyszczenie Ziemskich Nieczystości\" stanie się potężniejsza."
+ClockCorpseSe:
+  Name: Zwłoki Zegara
+  Description: Karty nie mogą zostać dobrane poza fazą doboru w tej turze.
+  Brief: Karty nie mogą zostać dobrane poza fazą doboru w tej turze.
+  ExtraDescription: "Karty nie mogą zostać dobrane poza fazą doboru w tej turze.\n\
+    {SelfName} są nieaktywne i zostanie usunięte po turze w której zostanie zaktywowane."
+BrokenTimelineSe:
+  Description: Na początku następnej tury {PlayerName:g} nie zyskana będzie mana z
+    bazy many.
+  Brief: Na początku następnej tury {PlayerName:g} nie zyskana będzie mana z bazy
+    many.
+  ExtraDescription: "Na początku następnej tury {PlayerName:g} nie zyskana będzie\
+    \ mana z bazy many.\n{SelfName} jest nieaktywne i zostanie usunięte po turze w\
+    \ której zostanie zaktywowane."
+  Name: Zniszczona Linia Czasowa
+MeilingWaterSe:
+  Description: Na początku tury {OwnerName:g} strać {Level:plural one='% punkt' few='%
+    punkty' many='% punktów'} życia.
+  Name: W Kozim Rogu
+  Brief: Na początku tury {OwnerName:g} strać punkty życia.
+TianziRockSe:
+  Description: Gdy {OwnerName} otrzyma obrażenia od ataku, zredukuj je o {Level}.
+  Name: Nie do Przebicia!
+  Brief: Gdy {OwnerName} otrzyma obrażenia od ataku, zredukuj je.
+  ExtraDescription: "Gdy {OwnerName} otrzyma obrażenia od ataku, zredukuj je o {Level}.\n\
+    Na {OwnerName:a} nie można nałożyć |Namiarów|."
+SuperExtraTurn:
+  Brief: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową turę.\n|Blok|\
+    \ i |Uniki| nie są utracone na początku tej dodatkowej tury, ale można zagrać\
+    \ jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}."
+  Name: Sobowtóry Wieku
+  Description: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową turę.\n\
+    |Blok| i |Uniki| nie są utracone na początku tej dodatkowej tury, ale można zagrać\
+    \ jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}.\nStatus tury:\
+    \ {StatusString}."
+  ExtraDescription: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową\
+    \ turę.\n|Blok| i |Uniki| nie są utracone na początku tej dodatkowej tury, ale\
+    \ można zagrać jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Status tury: {Count:plural one='Została % karta' few='Zostały % karty' many='Zostało\
+    \ % kart} w turze {SelfName:g}.\n"
+NextTurnGainGraze:
+  Name: Unik w Następnej Turze
+  Description: Na początku następnej tury {OwnerName:g} zyskaj {Level:plural one='%
+    |Unik|' few='% |Uniki|' many='% |Uników|'}.
+  Brief: Na początku następnej tury {OwnerName:g} zyskaj |Uniki|.
+LunaClockSe:
+  ExtraDescription: "Ataki {PlayerName:g} nie zadają obrażeń w tej turze.\n{SelfName}\
+    \ jest nieaktywne i zostanie usunięte po turze w której zostanie zaktywowane."
+  Brief: Ataki {PlayerName:g} nie zadają obrażeń w tej turze.
+  Description: Ataki {PlayerName:g} nie zadają obrażeń w tej turze.
+  Name: Rozerwanie Czasoprzestrzeni
+YouxiangWakeSe:
+  Name: Poranny Ptaszek
+  Description: Na początku {Count:ordinal one='następnej' other='%-ej od teraz'} tury
+    {PlayerName:g} zyskaj {Level} |Mocy| i włóż {Limit:plural one='% losową kartę'
+    few='% losowe karty' many='% losowych kart'} |Ataku| ze stosu doboru do ręki.
+    {Limit:plural one='Ona |Tymczasowo Kosztuje|' other='One |Tymczasowo Kosztują|'}
+    {Mana}.
+  Brief: Po iluś turach zyskaj |Moc| i dodaj losowe karty |Ataku| ze stosu doboru
+    do ręki. One |Tymczasowo Kosztują| {Mana}.
+  ExtraDescription: Na początku następnej tury zyskaj {Level} |Mocy| i włóż {Limit:plural
+    one='% losową kartę' few='% losowe karty' many='% losowych kart'} |Ataku| ze stosu
+    doboru do ręki. {Limit:plural one='Ona |Tymczasowo Kosztuje|' other='One |Tymczasowo
+    Kosztują|'} {Mana}.
+BossAct:
+  Name: Przejście Etapu
+  Description: Gdy {OwnerName} otrzyma {Count:plural one='% obrażenie' few='% obrażenia'
+    many='% obrażeń'}, natychmiastowo wykona ruch raz, nie kończąc tury {PlayerName:g}.
+  Brief: Gdy {OwnerName} otrzyma jakąś ilość obrażeń, natychmiastowo wykona ruch raz,
+    nie kończąc tury {PlayerName:g}.
+JunkoLily:
+  Name: Lilie Morderczej Intencji
+  Description: Gdy |Oczyszczające Światło| zostanie zaktywowane, {PlayerName} straci
+    {Level:plural one='% punkt' few='% punkty' many='% punktów'} życia.
