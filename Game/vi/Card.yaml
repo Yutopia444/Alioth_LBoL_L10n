@@ -638,13 +638,11 @@ ReimuHuashan:
   FlavorText: '"Ờ ờ ờ, cậu nói đúng."'
   Name: Tiếp Thu Chỉ Bảo
   Description: "|Trục Xuất| một lá Năng Lực trên tay, nhận {Value2} <sprite=\"Point\"\
-    \ name=\"Power\">.\nNếu |Trục Xuất| một lá Năng Lực bằng cách này, tăng {Value1}\
-    \ HP tối đa.\nTrong một trận đấu, chỉ có thể tăng HP tối đa bằng lá {SelfName}\
-    \ một lần."
+    \ name=\"Power\">.\nNếu một lá Năng Lực được chọn, tăng {Value1} HP tối đa. (Chỉ\
+    \ có hiệu quả một lần mỗi trận đấu)"
   ExtraDescription1: "|Trục Xuất| một lá Năng Lực trên tay, nhận {Value2} <sprite=\"\
-    Point\" name=\"Power\">.\n|d:Nếu Trục Xuất một lá Năng Lực bằng cách này, tăng\
-    \ {Value1} HP tối đa.|\nTrong một trận đấu, chỉ có thể tăng HP tối đa bằng lá\
-    \ {SelfName} một lần."
+    Point\" name=\"Power\">.\n|d:Nếu một lá Năng Lực được chọn, tăng {Value1} HP tối\
+    \ đa. (Chỉ có hiệu quả một lần mỗi trận đấu)|"
 ThrowBigStar:
   Name: Xích Tinh Bạo Tạc
   FlavorText: "\"Cảm ơn đã lắng nghe Đài Phát Thanh Trạm Xe Lửa Bỏ Hoang. Tháng này,\
@@ -1074,8 +1072,9 @@ AutoKnife:
 MeilingFriend:
   Name: Meiling, Người Bỏ Bê Gác Cổng
   ExtraDescription2: '{FriendU}Hồi {Value1} HP và nhận {Value2} |Hỏa Lực|.'
-  Description: "{FriendS}Nhận {Graze} |Né Tránh|.\n{FriendP}Mỗi khi {PlayerName} nhận\
-    \ sát thương từ toàn bộ đòn tấn công của kẻ địch, thêm 1 lá |Phóng Dao| lên tay."
+  Description: "{FriendS}Nhận {Graze} |Né Tránh|.\n{FriendP}Thêm 1 lá |Phóng Dao|\
+    \ lên tay.\nMỗi khi {PlayerName} nhận sát thương từ toàn bộ đòn tấn công của kẻ\
+    \ địch, kích hoạt hiệu ứng trên thêm một lần nữa."
 UnlimitedTime:
   FlavorText: Thứ lỗi, thời gian của tôi không có hạn.
   Name: Hoàn Hảo Dừng Thời Gian
@@ -1943,11 +1942,13 @@ ShenziUpgradeAll:
   Name: Đắc Đạo Thành Tiên
   FlavorText: Tiên nhân chỉ có thể uống trà khi gặp Yukari Yakumo.
 GrimoireStudy:
-  Description: "Mất {Value1} HP.\n|Với mỗi <sprite=\"ManaSprite\" name=\"1\"> tiêu\
-    \ hao|: Kéo dài hiệu ứng sau thêm 1 lượt: Khi kết thúc lượt, thêm 1 lá |Cầu Vồng|\
-    \ lên tay."
+  Description: "Mất {Value2} HP.\nThêm {Value1} lá ngẫu nhiên lên tay, {Value1:plural\
+    \ one='nó' other='chúng'} tạm thời tốn {Mana} và sở hữu thuộc tính |Trục Xuất|\
+    \ cùng |Hư Vô|."
   FlavorText: '"Để mình kiểm tra điểm yếu của yêu quái này trước đã..."'
   Name: Nghiên Cứu Ma Thư
+  DetailText: Một lá {SelfName} khác không thể được sinh ra bởi hiệu ứng của lá bài
+    này.
 SuikaBigball:
   Name: Nguyên Quỷ Ngọc
   Description: "Gây {Damage} sát thương, sau đó gây {HalfDamage} lên các kẻ địch còn\
@@ -2120,8 +2121,9 @@ JinziSuperExtraTurn:
     \ của {PlayerName} để kiểm tra chi tiết về lượt hiện tại."
   Name: Cặp Đôi Ngoại Cảm Thế Kỷ
 SanaeRestart:
-  Description: "Nhận {Mana}.\nChuyển mọi lá trên tay và trong Chồng Bài Bỏ vào trong\
-    \ Chồng Bài Bốc, xáo trộn ngẫu nhiên Chồng Bài Bốc.\nBốc {Value1} lá."
+  Description: "Chọn một số lượng tùy ý lá trên tay, chuyển chúng cùng với Chồng Bài\
+    \ Bỏ vào trong Chồng Bài Bốc, xáo trộn ngẫu nhiên Chồng Bài Bốc.\nBốc {Value1}\
+    \ lá.\nNhận {Mana}."
   Name: Ngày Biển Cả Phân Đôi
 PrismriverAll:
   Name: Hợp Táng "Bản Concerto Lăng Kính"
@@ -2263,8 +2265,8 @@ MoonSea:
   Description: "Nhận {Block} |Khiên|.\nThêm 1 lá |Thuần Túy| lên tay."
   UpgradedDescription: "Nhận {Block} |Khiên|.\nThêm 1 lá |Thuần Túy| hoặc 1 lá |Sóng\
     \ Trào| lên tay."
-  FlavorText: Biển rất rộng. Nằm trong khu vực Nguyệt Đô ở phía khuất của mặt trăng,
-    nói chung, từ bầu trời Trái Đất sẽ không thể nhìn thấy được.
+  FlavorText: "Biển rất rộng.\nNó nằm trong khu vực Nguyệt Đô ở phía khuất của mặt\
+    \ trăng, nói chung, từ bầu trời Trái Đất sẽ không thể nhìn thấy được."
 FengjiAttack:
   Name: Cơn Gió Phân Tách
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\n|Với mỗi <sprite=\"ManaSprite\"\
@@ -2921,3 +2923,66 @@ DeployIce:
   Name: Triển Khai Tinh Thể Băng
   Description: '|Triển Khai| 1 |Tinh Thể Băng|.'
   UpgradedDescription: '|Triển Khai| 2 |Tinh Thể Băng|.'
+FlanBlack:
+  Description: "Thẻ này chưa có sẵn.\nVui lòng đợi cập nhật."
+  FlavorText: Cô gái mang theo cái tên U.N.Owen, vứt bỏ mọi thứ phía sau và chiến
+    đấu~
+  Name: Hóa Quỷ
+DebugAddRandomCards:
+  Description: 'Thẻ gỡ lỗi: thêm các lá bài ngẫu nhiên vào trong Chồng Bài Bỏ và Chống
+    Bài Bốc, mỗi lần {Value1} lá.'
+  Name: Thêm Lá Bài Ngẫu Nhiên
+DebugExileDrawDiscard:
+  Name: Trục Xuất Cả Chồng Bốc Và Bỏ
+  Description: 'Thẻ gỡ lỗi: trục xuất toàn bộ cả Chồng Bài Bốc cùng Chồng Bài Bỏ.'
+DebugAddDeckCards:
+  Name: Thêm Lá Bài Vào Trong Thư Viện
+  Description: 'Thẻ gỡ lỗi: thêm {Value1} lá ngẫu nhiên vào trong thư viện.'
+DebugAddRandomCardsSlow:
+  Description: 'Thẻ gỡ lỗi: từ từ thêm các lá bài ngẫu nhiên vào trong Chồng Bài Bỏ
+    và Chống Bài Bốc, mỗi lần {Value1} lá.'
+  Name: Thêm Lá Bài Ngẫu Nhiên (Chậm)
+FakeCard:
+  Description: "|Koishi Komeiji| vẫn đang ngủ.\nVui lòng đợi cập nhật."
+  Name: Mộng Tổ Tiên Đứng Bên Giường (Giả)
+WanderingSoul:
+  Name: Linh Hồn Lưu Lạc
+  Description: "Nhận {Value1} Không Tì Vết.\nThẻ này chưa có sẵn.\nVui lòng đợi cập\
+    \ nhật."
+AutoHousework:
+  Name: Tự Động Hóa Việc Nhà
+DollRepair:
+  Name: Sửa Chữa Búp Bê
+DollSacrifice:
+  Name: Về Với Vô Tri
+Qianqiang:
+  Name: Thương Trận Đáng Yêu
+DollZuzhou:
+  Name: Búp Bê Bồng Lai Bị Treo Cổ
+HuiyeMarblePhantasm:
+  FlavorText: '"Công chúa, xin đừng sử dụng năng lực của mình vào mấy chuyện như thế
+    này..."'
+  Name: Không Tưởng Hiện Thực Hóa
+  Description: Chọn 1 từ {Value1} lá ngẫu nhiên có tổng chi phí X+1 để thêm lên tay,
+    nó |tạm thời tốn| {Mana} và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.
+  DetailText: Khi không tìm được thêm lá nào có chi phí phù hợp điều kiện, các lá
+    có chi phí nhỏ hơn sẽ được thêm vào lựa chọn.
+HuiyinRemove:
+  Name: Thôn Phệ Lịch Sử
+  Description: "Xóa 1 lá bài ra khỏi thư viện.\nSau khi lá {SelfName} này được chơi,\
+    \ xóa bỏ nó ra khỏi trận đấu và khỏi thư viện."
+  DetailText: "{SelfName} không thể được ngẫu nhiên sinh ra trong một trận đấu và\
+    \ không thể được chọn để sao chép.\nLá bài được chọn sẽ bị xóa bỏ khỏi thư viện,\
+    \ nó không bị xóa bỏ khỏi trận đấu hiện tại."
+FlanFirepower:
+  NonbattleDescription: Mọi lá bài trên tay nhận thuộc tính |Hư Vô|, nhận một lượng
+    tương đương |Hỏa Lực|.
+  Name: Và Rồi Chẳng Còn Ai?
+  Description: "Mọi lá bài trên tay nhận thuộc tính |Hư Vô|, nhận một lượng tương\
+    \ đương |Hỏa Lực|.\nHiện trên tay đang có {Count} lá bài khác."
+DebugAddHandCards:
+  Name: Trục Xuất Tay Và Thêm Lá Khác
+  Description: 'Thẻ gỡ lỗi: trục xuất tất cả các lá bài trên tay, sau đó thêm {Value1}
+    lá ngẫu nhiên lên tay.'
+DollFangzhen:
+  Name: Phương Trận Búp Bê
