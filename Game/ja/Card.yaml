@@ -1823,7 +1823,7 @@ YouxiangAttack:
   Description: "{Damage}ダメージを与える。\n|{Mana}ごとに|：与えるダメージを{Value1}増やす。\n{Value2}点以上のマナを支払って使用している場合、|精密|を持つ。"
 SanaeRestart:
   Name: 海が割れる日
-  Description: "{Mana}を得る。\n手札と捨て札のカードを全て山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引く。"
+  Description: "任意の枚数の手札と全ての捨て札を山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引く。\n{Mana}を得る。"
 DanmuJade:
   Name: 弾幕の玉繭
   Description: "敵全体に{Damage}ダメージを与える。\n|幻虹|を{Value1}枚手札に加える。\n|{Mana}につき|：|火力|{Value2}と|霊力|{Value2}を得る。"
@@ -1863,8 +1863,9 @@ PrismriverBlack:
   UpgradedDescription: "{Mana}を得る。\nカードを{Value1}枚引く。\n|月の静寂|を{Light}枚捨て札に加える。\n|初見|:<sprite=\"\
     Point\" name=\"Power\">{Value2}を得る。"
 GrimoireStudy:
-  Description: "ライフを{Value1}失う。\n|<sprite=\"ManaSprite\" name=\"1\">につき|1ターンの間、ターン終了時に|幻虹|を1枚手札に加える。"
+  Description: "ライフを{Value2}失う。\nランダムなカードを{Value1}枚手札に加える。\nそれは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
   Name: 魔導書読解
+  DetailText: '{SelfName}は選ばれない。'
 FlanBlack:
   Description: "|d:このカードは未実装です。\nアップデートをお楽しみに。"
   Name: 悪魔化
@@ -2105,7 +2106,9 @@ MeilingFriend:
   ExtraDescription2: '{FriendU}ライフを{Value1}回復する。|火力|{Value2}を得る。'
   Description: '{FriendS}|グレイズ|{Graze}を得る。
 
-    {FriendP}次のターンまでに{PlayerName}が攻撃を受ける度、|投げナイフ|を1枚手札に加える。（1回の攻撃行動につき1回のみ発動）'
+    {FriendP}|投げナイフ|を1枚手札に加える。
+
+    {PlayerName}が攻撃を受ける度、1回の攻撃予定につき1回追加で発動する。'
   Name: サボリ門番、美鈴
 YijiEarthSpike:
   Description: 敵全体に{Damage}ダメージを与え、|脱力|{Value1}を付与する。
@@ -2116,9 +2119,8 @@ AyaWindGirl:
   Description: '|風神少女|{Value1}を得る。（ターン終了時に|グレイズ|を補充する）'
 ReimuHuashan:
   ExtraDescription1: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\n\
-    |d:それが|能力|カードなら、更に最大ライフを{Value1}得る。|\n{SelfName}の効果で最大ライフを得られるのは各戦闘で1回のみ。"
-  Description: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\nそれが|能力|カードなら、更に最大ライフを{Value1}得る。\n\
-    {SelfName}の効果で最大ライフを得られるのは各戦闘で1回のみ。"
+    |d:それが|能力|カードなら、更に最大ライフを{Value1}得る。|（1戦闘中に1回のみ有効）"
+  Description: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\nそれが|能力|カードなら、更に最大ライフを{Value1}得る。（1戦闘中に1回のみ有効）"
   Name: 指導を受ける
 AyaNewsAliceSp:
   Name: 文々。新聞　『アリス・マーガトロイド』特集
@@ -2185,3 +2187,19 @@ HeartDance:
 ZhenmiaowanAbility:
   Name: 小槌の魔力
   Description: 全てのカードのコストが{Mana}減少する。
+DeployIce:
+  Description: '|氷晶|を1つ|配置|する。'
+  UpgradedDescription: '|氷晶|を2つ|配置|する。'
+  Name: 氷晶配置
+HuiyeMarblePhantasm:
+  Name: 空想具現化
+  DetailText: 該当するコストの選択肢が不足している場合、不足分として低コストのカードが提示される。
+  Description: "{Value1}枚のランダムなコストが(X+1)のカードから1枚選び、手札に加える。\nそれは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+HuiyinRemove:
+  Name: 歴史喰い
+  Description: "デッキからカードを1枚削除する。\n{SelfName}は使用後に戦闘から取り除かれ、デッキから削除される。"
+  DetailText: "{SelfName}は戦闘中に作成されることはなく、コピーすることもできない。\nデッキから削除したカードはこの戦闘からは取り除かれない。"
+FlanFirepower:
+  Name: そして誰もいなくなるか？
+  Description: 手札のカード全てに|虚無|を付与し、その枚数に等しい|火力|({Count})を得る。
+  NonbattleDescription: 手札のカード全てに|虚無|を付与し、その枚数に等しい|火力|を得る。
