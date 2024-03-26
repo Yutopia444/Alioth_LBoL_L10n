@@ -21,26 +21,26 @@ ManaColor:
   Name: Couleurs de Mana
 CardPool:
   Description: "Vous ne pouvez trouver des cartes dans les Récompenses de Cartes que\
-    \ si elles répondent aux critères suivants :\n1 : Le coût de mana de la carte\
-    \ peut être entièrement payé en utilisant le mana de la base de mana.\n2 : S'il\
+    \ si elles répondent aux critères suivants :\n|1| : Le coût de mana de la carte\
+    \ peut être entièrement payé en utilisant le mana de la base de mana.\n|2| : S'il\
     \ s'agit d'une carte Unique, elle ne peut être trouvée que si vous incarnez ce\
-    \ personnage ou si vous détenez l'une de ses Merveilles Brillantes.\n3 : Chacune\
-    \ des couleurs de cette carte est présente dans votre base de mana. Le mana chromatique\
-    \ ne compte pas dans cette règle.\n\nPar exemple, disons que vous jouez en tant\
-    \ que Reimu et que vous détenez |Grimoire Sombre|, |Pierre Philosophale| et |Maillet\
-    \ Miracle|. (Vous avez échangé votre Merveille Brillante chez Eirin...)\nLa base\
-    \ de mana contient <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
-    W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\"\
-    \ name=\"C\">. Vous pouvez trouver des cartes Uniques à Reimu et Marisa, puisque\
-    \ vous détenez |Grimoire Sombre|.\n\nDans ce cas, vous pouvez trouver une carte\
-    \ noire qui coûte <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
-    B\"> puisque vous pouvez payer <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
-    \ name=\"P\"> pour la jouer. Cependant, vous ne pouvez pas trouver une carte bleue\
-    \ et noire qui coûte <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
-    \ name=\"B\">, puisqu'il n'y a pas de <sprite=\"ManaSprite\" name=\"U\"> dans\
-    \ la base de mana, même si vous pouvez payer <sprite=\"ManaSprite\" name=\"B\"\
-    ><sprite=\"ManaSprite\" name=\"P\"> pour le jouer.\n\nPS\n|Carte Vierge|, une\
+    \ personnage ou si vous détenez l'une de ses Merveilles Brillantes.\n|3| : Chacune\
+    \ des couleurs de cette carte est présente dans votre base de mana. Le mana du\
+    \ philosophe ne compte pas dans cette règle.\n\nPar exemple, disons que vous jouez\
+    \ en tant que Reimu et que vous détenez |Grimoire Sombre|, |Pierre Philosophale|\
+    \ et |Maillet Miracle|. (Vous avez échangé votre Merveille Brillante chez Eirin...)\n\
+    La base de mana contient <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
+    ManaSprite\" name=\"C\">. Vous pouvez trouver des cartes Uniques à Reimu et Marisa,\
+    \ puisque vous détenez |Grimoire Sombre|.\n\nDans ce cas, vous pouvez trouver\
+    \ une carte noire qui coûte <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"> puisque vous pouvez payer <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\"> pour la jouer. Cependant, vous ne pouvez pas trouver\
+    \ une carte bleue et noire qui coûte <sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"B\">, puisqu'il n'y a pas de <sprite=\"ManaSprite\" name=\"\
+    U\"> dans la base de mana, même si vous pouvez payer <sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"P\"> pour la jouer.\n\nPS\n|Carte Vierge|, une\
     \ merveille brillante, vous permet de trouver des cartes de n'importe quelle couleur.\n\
     Pour les cartes avec une valeur de mana de 5 ou plus qui ont un composant de coût\
     \ de mana générique (<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
@@ -74,23 +74,23 @@ DamageType:
     \ et Barrière. L'animation visuelle est souvent un projectile ou un laser.\n|Dégâts\
     \ directs| et |Perte de vie| sont des effets qui n'interagissent pas avec la plupart\
     \ des mots-clés ; Les |dégâts directs| sont également réduits par le bouclier\
-    \ et la barrière, mais pas la perte de vie.\nIl serait fastidieux d'énumérer un\
-    \ à un les deux premiers types de dommages, de sorte que le texte ne fera pas\
+    \ et la barrière, mais pas la |perte de vie|.\nIl serait fastidieux d'énumérer\
+    \ un à un les deux premiers types de dommages, de sorte que le texte ne fera pas\
     \ de distinction ; fondamentalement, tout dommage qui n'est pas causé par des\
     \ attaques est un |dégât direct|."
 FriendCard:
   Name: Cartes Alliées
   Description: "Voici quelques règles complexes pour les cartes alliées, conçues pour\
-    \ rendre l'expérience de jeu aussi raisonnable que possible.\n1. L'Exil est remplacé\
-    \ par Éthéré :\nTout effet qui donne Exil à une carte alliée lui donne Éthéré\
-    \ à la place ; il en va de même pour les effets qui retirent l'Exil.\nLes cartes\
-    \ alliées étant destinées à rester dans la main pour prendre effet plusieurs fois,\
-    \ l'Exil les rendrait inutiles.\n2. Lorsqu'une carte alliée non invoquée est jouée,\
-    \ si elle a Éthéré, celui-ci sera supprimé à ce moment.\nSi cette carte alliée\
-    \ continuait d'avoir Éthéré, elle ne prendrait effet qu'une seule fois pour jouer\
-    \ son effet passif, ce qui n'est pas souhaitable.\n|e:Experte en Relations| le\
-    \ mentionne spécifiquement, mais toutes les cartes alliées avec Éthéré suivent\
-    \ cette règle.\n3. Lorsque l'effet de copie est appliqué en combat sur une carte\
+    \ rendre l'expérience de jeu aussi raisonnable que possible.\n|1.| L'Exil est\
+    \ remplacé par Éthéré :\nTout effet qui donne Exil à une carte alliée lui donne\
+    \ Éthéré à la place ; il en va de même pour les effets qui retirent l'Exil.\n\
+    Les cartes alliées étant destinées à rester dans la main pour prendre effet plusieurs\
+    \ fois, l'Exil les rendrait inutiles.\n|2.| Lorsqu'une carte alliée non invoquée\
+    \ est jouée, si elle a Éthéré, celui-ci sera supprimé à ce moment.\nSi cette carte\
+    \ alliée continuait d'avoir Éthéré, elle ne prendrait effet qu'une seule fois\
+    \ pour jouer son effet passif, ce qui n'est pas souhaitable.\n|e:Experte en Relations|\
+    \ le mentionne spécifiquement, mais toutes les cartes alliées avec Éthéré suivent\
+    \ cette règle.\n|3.| Lorsque l'effet de copie est appliqué en combat sur une carte\
     \ alliée, le statut d'invocation et la valeur de soutien de la carte cible ne\
     \ peuvent pas être copiés ; tout le reste est copié.\nLa copie d'une carte alliée\
     \ arrivera donc toujours dans un état non invoqué et sa valeur de soutien sera\
