@@ -143,7 +143,8 @@ Zuoshan:
   Name: Lewy Wachlarz
   FlavorText: Od kogo go ukradłeś, Yukari czy Yuyuko?
 ShanliangDengpao:
-  Description: Odblokowywuje opcję dodawania losowej rzadkiej karty w Szparach.
+  Description: Odblokowuje opcję |Zastanowienia| w Szparach, pozwalającą dodać 1 z
+    {Value1} losowych rzadkich kart do biblioteki.
   Name: Lśniąca Żarówka
   FlavorText: Eureka!
 ShanshuoBishou:
@@ -293,7 +294,7 @@ FengshouGuolan:
   Name: Koszyk Zebranych Owoców
   Description: "Dodaje {BaseMana} do bazy many.\nGdy nabyty, {PlayerName} zyskuje\
     \ {Value1} maksymalnego życia.\nGdy do biblioteki zostanie dodana karta, {PlayerName}\
-    \ zyskuje {Value2} maksymalnego."
+    \ zyskuje {Value2} maksymalnego życia."
   FlavorText: Nadeszła Jesień!
 Gongjuxiang:
   Name: Skrzynka na Narzędzia
@@ -318,8 +319,9 @@ YizangnuoWuzhi:
     można wytworzyć różne boskie bronie.
 LouguanJian:
   Name: Roukanken
-  Description: Gdy {PlayerName} zadaje obrażenia atakami, nałóż {Value1:plural one='%
-    |Namiar|' few='% |Namiary|' many='% |Namiarów|} na cel(e).
+  Description: "Na początku pierwszej tury {PlayerName:g} w każdej walce zyskaj {Mana}.\n\
+    Gdy {PlayerName} zadaje obrażenia atakami, nałóż {Value1:plural one='% |Namiar|'\
+    \ few='% |Namiary|' many='% |Namiarów|} na cel(e)."
   FlavorText: '"Posiekany!"'
 He3:
   Name: Hel-3
@@ -392,7 +394,8 @@ YueYuyi:
   Name: Księżycowy Welon
   Description: Na początku walki zyskaj |Nieskazitelny Jedwab| na {Value1:plural one='%
     turę' few='% tury' many='% tur'}.
-  FlavorText: Nie jest zbyt użyteczny w walce z bossami.
+  FlavorText: Dublują za sprzęt bojowy odkąd wszyscy zaczęli używać działek teleportacyjnych
+    do podróży między Ziemią a Księżycem.
 Yaoshi:
   Name: Filar
   Description: Gdy {PlayerName} otrzyma obrażenia po raz pierwszy w walce, zyskaj
@@ -477,14 +480,15 @@ Shoubiao:
   FlavorText: Przekrętło należy dokręcić, aby zapewnić punktualność.
 SongjingMuyu:
   Name: Drewniana Ryba
-  Description: Na początku walki z bossem, {PlayerName} leczy swoje życie równe ilości
-    kart w bibliotece.
+  Description: Na początku walki z bossem, {PlayerName:g} odzyskuje życie w ilości
+    równej ilości kart w bibliotece.
   FlavorText: Użyj tego do recytowania, zadając magiczne obrażenia wrogom.
 Saiqianxiang:
   Name: Pudełko Ofiarne
-  Description: Odblokowuje opcję |Zbierania Datków| w Szparach, przyznający {Value1}
-    <sprite="Point" name="Gold">.
-  FlavorText: Wewnątrz jest puste.
+  Description: "Gdy nabyte, zyskaj {Value2} <sprite=\"Point\" name=\"Gold\">.\nOdblokowuje\
+    \ opcję |Zbierania Datków| w Szparach, przyznającą {Value1} <sprite=\"Point\"\
+    \ name=\"Gold\">."
+  FlavorText: Wewnątrz znajduje się cały majątek Reimu.
 ReimuW:
   Name: Gohei Hakurei
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Reimu| są dodane\
@@ -519,6 +523,8 @@ TangSan:
 JingesiYushou:
   Description: Gdy {PlayerName} zyska pierwszy debuff w walce, zyskuje {Value1} |Bariery|.
   Name: Amulet Kinkaku-Ji
+  FlavorText: Amulet z Kinkaku-ji, sprzed otwarcia Złotego Pawilonu dla zwiedzających
+    i zastąpienia amuletów biletami w ich stylu.
 TiangouShanzi:
   Description: Na początku walki {PlayerName} zyskuje {Value1:plural one='% |Unik|'
     few='% |Uniki|' many='% |Uników|'}.
@@ -559,7 +565,7 @@ HuangyouJiqiren:
   FlavorText: "Robocik zastanawiający się nad sensem jego istnienia.\n\"What is my\
     \ purpose?\""
   Name: Robocik od Masła
-  Description: '|Picie herbaty| w Szparach przyznaje też nagrodę kart.'
+  Description: '|Picie herbaty| w Szparach pozwala dodać 1 z {Value1} kart do biblioteki.'
 JiangyouPing:
   Description: Gdy {PlayerName} odwiedza Takanę, ulecz {Value1:plural one='% punkt'
     few='% punkty' many='% punktów'} życia i zyskaj {Value2} <sprite="Point" name="Power">.
@@ -574,7 +580,7 @@ Shiyou:
     sumę.
 Duandai:
   Description: Na początku tury {PlayerName:g} podczas walki z Elitarnymi Wrogami
-    bądź Bossami zyskaj {Mana}.
+    bądź Bossami, zyskaj {Mana}.
   Name: Wstążka
   FlavorText: '"Ponoć jej rozwiązanie uwolniłoby zapieczętowaną demoniczną moc. Nonsens
     powiadam. Żyję i mam się dobrze."'
@@ -701,8 +707,8 @@ YinzhiHuaibiao:
   Name: Srebrny Kieszonkowy Zegarek
   Description: Za {Value1:plural one='każdą zagraną kartę' few='każde % zagrane karty'
     many='każde % zagranych kart'} zyskaj {Mana}. Resetowane na końcu walki.
-  FlavorText: "\"To specjalny zegarek kieszonkowy który porusza się nawet gdy czas\
-    \ jest zatrzymany.\"\n\"Innymi słowy, on nie jest poprawny.\""
+  FlavorText: "\"To specjalny zegarek kieszonkowy, który porusza się nawet, gdy czas\
+    \ jest zatrzymany.\"\n\"Innymi słowy, nie jest zbyt dokładny.\""
 ShiyanQicai:
   Name: Przyrządy Laboratoryjne
   Description: Gdy stos doboru zostaje przetasowany, zyskaj {Mana}.
@@ -748,11 +754,12 @@ JingboliJing:
   Name: Oczyszczone Kryształowe Zwierciadło
   Description: Podczas |Przewidzeń|, |Przewidź| o {Value1:plural one='% kartę' few='%
     karty' many='% kart'} więcej.
-  FlavorText: Zobaczysz wewnątrz jaka będzie jutro pogoda.
+  FlavorText: '"Możesz zobaczyć wewnątrz, jaka będzie jutro pogoda."'
 Headphone:
   Name: Słuchawki Wysokiej Jakości
   Description: Gdy karta z efektem |Synergii| jest zagrana, wykonaj każdy efekt |Synergii|
     dodatkowy raz. |d:(Wraz z normalnymi efektami synergii.)|
+  FlavorText: '"Głęboki bas, wyraziste wysokie tony"'
 WaijieYanjing:
   Name: Okulary Hi-Tech ze Świata Zewnętrznego
   Description: Nagrody <sprite="Point" name="Gold"> przyznawają o {Value1}% więcej
@@ -778,7 +785,8 @@ Dahuoji:
   Name: Zapalniczka
   Description: Gdy {PlayerName} zada obrażenia atakami po raz pierwszy w walce, nałóż
     na cel(e) {Value1} |Wrażliwości|.
-  FlavorText: '"Nie potrzebuję jej."'
+  FlavorText: 'Przy ciągłym otwieraniu i zamykaniu wydaje charakterystyczny dźwięk,
+    dzięki któremu wszyscy dookoła będą wiedzieć, jaki z ciebie zimny drań!'
 JingQiXi:
   Name: Wyziew Wieloryba
   Description: Na początku nieparzystej tury, strać jedną losową manę. Na początku
@@ -786,7 +794,7 @@ JingQiXi:
   ExtraDescription: "Na początku nieparzystej tury, strać jedną losową manę. Na początku\
     \ parzystej tury zyskaj dwie many tamtego typu.\nNa początku następnej tury zyskaj\
     \ {ManaGain}."
-  FlavorText: Geidontei jest otwarte jedynie dla gości.
+  FlavorText: Sanshoku Geidontei jest otwarte jedynie dla gości.
 Dianshiji:
   Name: Telewizor
   Description: '{PlayerName} jest odporna na |Osłabienie|.'
@@ -827,12 +835,16 @@ PingfanDao:
   FlavorText: Po prostu kolejny nóż znaleziony w Gensoukyou, nic nadzwyczajnego.
 IdolTshirt:
   Name: T-Shirt Idolki
-  Description: Na początku walki {PlayerName} zyskuje {Value1} maksymalnego życia
-    i nakłada na sibie {Value2:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.
-  FlavorText: Nosząc to, będziesz otrzymywała spojrzenia z ukosa.
+  Description: Na początku walki {PlayerName} zyskuje {Counter} maksymalnego życia
+    i nakłada na siebie {Counter:plural one='% |Namiar|' few='% |Namiary|' many='%
+    |Namiarów|}.
+  FlavorText: Nosząc to, będziesz otrzymywała krzywe spojrzenia.
+  ExtraDescription: T-Shirt Idolki (L)
 YichuiPiao:
   Name: Tykwa Ibuki
-  Description: Podczas tury {PlayerName:g} dobierz kartę jeżeli nie ma kart w dłoni.
+  Description: "Podczas tury {PlayerName:g} dobierz kartę jeżeli nie ma kart w dłoni.\n\
+    Na początku pierwszej tury {PlayerName:g} w każdej walce dodaj {Value1:plural\
+    \ one='|Nietrzeźwość|' other='% |Nietrzeźwości|'} do ręki."
   FlavorText: Zawiera nieskończoną ilość sake.
 MaorongWanju:
   Name: Pluszak
@@ -856,17 +868,24 @@ PulpFiction:
   Description: Na początku {Value2} pierwszych tur w każdej walce, wyjmij {Value1:plural
     one='% kartę' few='% karty' many='% kart'} ze spodu stosu doboru do ręki.
   Name: '"Pulp Fiction"'
+  FlavorText: "Powieść o sprośnej treści.\nNie zostawiaj sprzętu za drzwiami na czas\
+    \ czytania!"
 FixBook:
   Description: "Gdy zagrana zostanie karta |Narzędzi|, zyskaj {Mana}.\nGdy nabyta,\
     \ wybierz 1 z {Value1} kart |Narzędzi|, aby dodać do biblioteki."
   Name: '"Uniwersalna Instrukcja Naprawy"'
+  FlavorText: Pomaga czytelnikom naprawiać sprzęty ze Świata Zewnętrznego, zwłaszcza
+    elektronikę użytkową.
 TimeBook:
   Description: Stos doboru może teraz być wyświetlony w faktycznej kolejności.
   Name: '"Historia Czasu w Skrócie"'
+  FlavorText: Całkiem popularna książka edukacyjna dla dzieci.
 FirstAidBook:
-  Name: '"Pomocnik Pierwszej Pomocy"'
+  Name: '"Poradnik Pierwszej Pomocy"'
   Description: "Karty |Nieszczęścia| oraz Statusu tracą |Niegrywalność| i zyskują\
     \ |Wygnanie|.\nZyskują koszt many na podstawie ich rzadkości."
+  FlavorText: Po położeniu na obszarze dotkniętym gorączką szybko się rozpuszcza,
+    przynosząc ulgę od objawów.
 AliceW:
   Name: Kukiełka Shanghai
   FlavorText: (W trakcie rozwoju...)
@@ -877,3 +896,8 @@ AliceB:
   FlavorText: (W trakcie rozwoju...)
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Alice| są dodane\
     \ do puli kart.\n|Odchodzące| |e:Kukiełki Hourai| zadają podwójne obrażenia."
+YueGujiu:
+  Name: Stara Księżycowa Sake
+  FlavorText: Sentymentalny dla Eirin alkohol z rodzinnych stron.
+  Description: "Dodaje {BaseMana} do bazy many.\nGdy karta z |Wygnaniem|, za którą\
+    \ zapłacono maną, jest zagrywana, zyskaj {Mana}."
