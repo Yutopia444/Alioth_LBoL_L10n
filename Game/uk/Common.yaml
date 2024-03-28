@@ -37,8 +37,8 @@ Game:
   BottomSuffix: (Низ колоди)
   RoundCounter: Раунд {0}
   TurnCounter: Хід {0}
-  PlayerNameTurn: '{0} Стадія'
-  PlayerNameTurnCounter: '{0} Хід ({1})'
+  PlayerNameTurn: 'Хід {0:g}'
+  PlayerNameTurnCounter: 'Хід {0:g} ({1})'
   NaturalTurn: Основний Хід
   InTurn: Під час ходу
   OutTurn: Поза ходом
@@ -181,7 +181,7 @@ StartGame:
   ClearNormal: Пройдено
   ClearTrue: Ідеальне Проходження
   SelectAll: Вибрати Усі
-  Puzzles: "{0:plural one='% |квестія|' other='% |квестії|'}"
+  Puzzles: "{0:plural one='% |квестія|' few='% |квестії|' many='% |квестій|'}"
   LockPuzzle: Досягніть Рівня Розслідування {0} для розблокування.
   ShowRandomResult: Показувати Долю
   NotShowRandomResult: Незвідана Доля
@@ -236,10 +236,10 @@ Setting:
     а також чи були відомі випадкові результати на мапі заздалегідь.
   Shake: Тремтіння Екрана
   ShakeDescription: Вмикає тремтіння екрана, спричинене отриманою шкодою в бою.
-  Enable: Вмк.
+  Enable: Увімк.
   Disable: Вимк.
   XCostWarning: Застереження Х ціни
-  Warn: Вмк.
+  Warn: Увімк.
   DontWarn: Вимк.
   HintLevel: Ігрові Поради
   ResetHint: Скинути Поради
@@ -311,7 +311,7 @@ Setting:
   XCostWarningDescription: Виберіть чи відображати попередження, коли ви використовуєте
     карту з ціною X без вибору мани вручну.
 History:
-  Puzzles: "{0:plural one='% Квестія' other='% Квестії'}"
+  Puzzles: "{0:plural one='% Квестія' few='% Квестії' many='% Квестій'}"
   Mana: Мана
   Exhibit: 'Експонати: {0}'
   Card: 'Карти: {0}'
@@ -328,7 +328,7 @@ System:
     Description: Нічого особливого.
     Title: Без Ефекту Нефритової Скриньки
   EA: Ранній доступ – Не відображає кінцевої якості гри.
-  ReenterStation: Перезапустити Рівень
+  ReenterStation: <size=80%>Перезапустити Рівень
   SystemMenu: Пауза та Налаштування
 Map:
   Map: Мапа
@@ -345,7 +345,7 @@ Map:
   Select: Вибір Боса
   Trade: Обмін
   BattleAdvTest: Тест
-  Hint: Натисніть поза межами мапи, щоб закрити її
+  Hint: Натисніть поза межами мапи, аби закрити її
 Chat:
   FraudRabbitStart1: Я знаю хто злочинець, поділюсь за певну ціну.
   FraudRabbitStart2: У мене є найновіші технології з Місяця, вони ваші за певну ціну.
@@ -479,10 +479,10 @@ Cards:
     Gold\" name=\"gold\">"
   RemoveDialog: Видалити цю Карту?
   TransformDialog: Перетворити цю Карту?
-  Size:  {0:plural one='% карта' other='% карти'}
+  Size:  {0:plural one='% карта' few='% карти' many='% карт'}
   Show: Щоб переглянути деталі карти, наведіть курсор або клацніть правою кнопкою
     миші
-  Remove: Видаліть {0:plural one='% Карту' other='% Карти'} з Бібліотеки.
+  Remove: Видаліть {0:plural one='% Карту' few='% Карти' many='% Карт'} з Бібліотеки.
   IsUpgraded: Покращена
   UnUpgradable: Не покращується
 Reward:
@@ -492,7 +492,7 @@ Reward:
   - Зібрати Винагороди
   Card: Додайте Карту до Бібліотеки
   Money: '{0} Валюти'
-  Abandon: Не Добирати
+  Abandon: <size=70%>Не Добирати
   Skip: Згаяти Нагороди
   AbandonMaxHp: Отримаєш {0} до Максимального Здоров'я
   CardHeader: Виберіть Карту
@@ -500,8 +500,8 @@ Reward:
 ManaSelect:
   Title: Виберіть Тип Мани
 CardDetail:
-  UpgradeYes: Покращена
-  UpgradeNo: Звичайна
+  UpgradeYes: <size=90%>Покращена
+  UpgradeNo: <size=90%>Звичайна
   Illustrator: 'Художник:'
   Sketch: Незавершена
   SwitchCardStyle: Змінити Стиль Карти
@@ -628,8 +628,8 @@ Tooltip:
     Description: "Кожне проходження генерує свій випадковий Сід. Два проходження з\
       \ однаковим Сідом будуть ідентичними.\n\nНатисніть аби скопіювати Сід."
   EntityTitle:
-    Character: Унікальний
-    Neutral: Нейтральний
+    Character: ' Унікальна'
+    Neutral: Нейтральна
     White: Біла
     Blue: Синя
     Black: Чорна
