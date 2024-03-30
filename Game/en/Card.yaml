@@ -1819,7 +1819,7 @@ Nightmare:
   Name: Nightmare
   Description: "When there are a total of {Value1} {SelfName}s in the hand, draw pile,\
     \ and/or discard pile, |Exile| them. Then, {PlayerName} loses the game.\nThere\
-    \ are currently {NightmareCount}."
+    \ {NightmareCount:plural one='is' other='are'} currently {NightmareCount}."
   NonbattleDescription: When there are a total of {Value1} {SelfName}s in the hand,
     draw pile, and/or discard pile, |Exile| them. Then, {PlayerName} loses the game.
   FlavorText: I can't recall any details after waking up.
@@ -2660,8 +2660,8 @@ YouxiangAttack:
   Name: Gensokyo's Blossoming
 Lunatic:
   Description: "At the end of {PlayerName}'s turn, if there are a total of {Value1}\
-    \ {SelfName}s in the hand, draw pile and discard pile, |Exile| them and lose {Value2}\
-    \ life.\nThere are currently {LunaticCount}."
+    \ {SelfName}s in the hand, draw pile and/or discard pile, |Exile| them and lose\
+    \ {Value2} life.\nThere {LunaticCount:plural one='is' other='are'} currently {LunaticCount}."
   Name: Lunacy
   NonbattleDescription: At the end of {PlayerName}'s turn, if there are a total of
     {Value1} {SelfName}s in the hand, draw pile and discard pile, |Exile| them and
@@ -3130,8 +3130,9 @@ DeployIce:
   Description: '|Deploy| a |Glacier|.'
   UpgradedDescription: '|Deploy| 2 |Glaciers|.'
 FlanFirepower:
-  Description: "Each card in hand gains |Ethereal|. Gain |Firepower| equal to the\
-    \ number of cards in hand.\nThere are currently {Count} other cards in hand."
+  Description: "Each card in the hand gains |Ethereal|. Gain |Firepower| equal to\
+    \ the number of cards in the hand.\nThere {Count:plural one='is' other='are'}\
+    \ currently {Count} other card{Count:plural one='' other='s'} in the hand."
   NonbattleDescription: Each card in hand gains |Ethereal|. Gain |Firepower| equal
     to the number of cards in hand.
   Name: And Then Will There Be None?
