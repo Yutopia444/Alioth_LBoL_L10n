@@ -201,6 +201,8 @@ Drowning:
   Name: Утоплення
   Description: '{OwnerName} отримає {Level} шкоди наприкінці свого ходу.'
   Brief: '{OwnerName} отримає шкоду наприкінці свого ходу.'
+  ExtraDescription: "{OwnerName} отримує {Level} шкоди наприкінці свого ходу.\nПереможіть\
+    \ Втонулу Небіжку аби позбутись цього ефекту."
 Vampire:
   Name: Вампір
   Description: "{OwnerName} відновлюватиме здоров'я відповідно до завданої незаблокованої\
@@ -403,6 +405,9 @@ FastAttack:
   Name: Визначна Швидкість
   Description: Кожного ходу, після того, як {PlayerName} відіграє першу свою карту,
     {OwnerName} завдасть їй {Level} |Шкоди|.
+  ExtraDescription: "Кожного ходу, після того, як {PlayerName} відіграє першу свою\
+    \ карту, {OwnerName} завдасть їй {Level} |Шкоди|.\nЦе дія вже відбулась та оновиться\
+    \ після наступного ходу {OwnerName:g}."
 PowerByDefense:
   Name: Непорушний Щит
   Description: За кожну відіграну карту Захисту {OwnerName} отримує {Level} |Сили|.
@@ -1095,8 +1100,93 @@ MeilingWaterSe:
   Name: Нікуди Відступати
 YouxiangWakeSe:
   Name: Ранній Підйом
+  Brief: Опісля певної кількості ходів, отримуєш |Силу| та дістаєш випадкові карти
+    атаки зі стосу добору в руку. Вони тимчасово коштуватимуть {Mana}.
+  Description: На початку {Count:ordinal one='наступного ходу' other='%го віднині
+    ходу'}, {PlayerName} отримує {Level} |Сили| та дістає {Limit:plural one='% випадкову
+    карту' few='% випадкові карти' many='% випадкових карт'} атаки зі стосу добору.
+    {Limit:plural one='Вона |Тимчасово Коштуватиме|' other='Вони |Тимчасово Коштуватимуть|'}
+    {Mana}.
+  ExtraDescription: На початку наступного ходу отримуєш {Level} |Сили| та дістаєш
+    {Limit:plural one='% випадкову карту' few='% випадкові карти' many='% випадкових
+    карт'} атаки зі стосу добору. {Limit:plural one='Вона |Тимчасово Коштуватиме|'
+    other='Вони |Тимчасово Коштуватимуть|'} {Mana}.
 ShirenKunchongSe:
   Description: Щоразу як {OwnerName} отримує |Дебаф|, {PlayerName} отримує {Level}
     |Блоку|.
   Name: Комаха-Людожер
   Brief: Щоразу як {OwnerName} отримує |Дебаф|, {PlayerName} отримує |Блок|.
+ShenlingGold:
+  Name: Дарунок Багатства
+  Description: '{OwnerName}, після смерті, дарує {PlayerName:d} {Level} <sprite="Point"
+    name="Gold">.'
+SuperExtraTurn:
+  Name: Двійники Століття
+  Brief: "Наприкінці |Натурального Ходу| {PlayerName:g}, дає додатковий хід.\n|Блок|\
+    \ та |Маневр| не втрачаються на початку цього додаткового ходу, проте можна зіграти\
+    \ лише {Level:plural one='% карту' few='% карти' many='% карт'}."
+  ExtraDescription: "Наприкінці |Натурального Ходу| {PlayerName:g}, дає додатковий\
+    \ хід.\n|Блок| та |Маневр| не втрачаються на початку цього додаткового ходу, проте\
+    \ можна зіграти лише {Level:plural one='% карту' few='% карти' many='% карт'}.\n\
+    Статус ходу: {Count:plural one='Залишилась % карта' few='Залишилось % карти' many='Залишилось\
+    \ % карт} в ході від {SelfName}.\n"
+  Description: "Наприкінці |Натурального Ходу| {PlayerName:g}, дає додатковий хід.\n\
+    |Блок| та |Маневр| не втрачаються на початку цього додаткового ходу, проте можна\
+    \ зіграти лише {Level:plural one='% карту' few='% карти' many='% карт'}.\nСтатус\
+    \ ходу: {StatusString}."
+YukariFriendSe:
+  Brief: На початку ходу {PlayerName:g}, додає випадкову триколірну нейтральну карту
+    в руку. Вона |тимчасово коштуватиме| {Mana} й матиме |Ефемерність|.
+  Name: Рубіж Фантазії
+  Description: На початку ходу {PlayerName:g}, додає {Level:plural one='% випадкову
+    триколірну нейтральну карту' few='% випадкові триколірні нейтральні карти' many='%
+    випадкових триколірних нейтральних карт'} в руку. {Level:plural one='Вона' other='Вони'}
+    |тимчасово кошту{Level:plural one='є' other='ють'}| {Mana} та {Level:plural one='має'
+    other='мають'} |Ефемерність|.
+LimaoDisguiser:
+  Description: Цей персонаж перевтілився.
+  Name: Витівка Перевтілення
+SuwakoHex:
+  Name: Наврочення
+  Description: На початку ходу {PlayerName:g}, випадкова карта в руці стає |Навроченою|,
+    себто марною.
+ShenlingHp:
+  Description: "{OwnerName}, після смерті, дарує {PlayerName:d} {Level} максимального\
+    \ здоров'я."
+  Name: Дарунок Витонченості
+PrismriverSe:
+  Name: Призматичний Концерт
+  Description: Щоразу як {PlayerName} отримуватиме ману, перетворює її у <sprite="ManaSprite"
+    name="P"> натомість.
+  Brief: Уся отримана мана перетворюється у <sprite="ManaSprite" name="P"> під час
+    цієї битви.
+BailianFireSe:
+  Name: Вогні Дхарми
+  Description: На початку ходу {PlayerName:g} додає {Level:plural one='% випадкову
+    карту' few='% випадкові карти' many='% випадкових карт'} умінь в руку. {Level:plural
+    one='Вона' other='Вони'} |тимчасово коштуватим{Level:plural one='e' other='уть'}|
+    {Mana} й матим{Level:plural one='е' other='уть'} |Знищується| та |Ефемерність|.
+  Brief: "На початку ходу {PlayerName:g} додає випадкову карту умінь в руку.\nВона\
+    \ |тимчасово коштуватиме| {Mana} й матиме |Знищується| та |Ефемерність|."
+TianziRockSe:
+  Name: Непробивний!
+  Description: Щоразу як {OwnerName} отримує шкоду від атак, зменшує її на {Level}.
+  Brief: Щоразу як {OwnerName} отримує шкоду від атак, зменшує її.
+  ExtraDescription: "Щоразу як {OwnerName} отримує шкоду від атак, зменшує її на {Level}.\n\
+    {OwnerName} невразлива до |Цілі|."
+MoonWorldSe:
+  Name: Чистий Світ
+  Description: На початку ходу {PlayerName:g}, {Level:plural one='% випадкова карта'
+    few='% випадкові карти' many='% випадкових карт'} в руці {Level:plural one='отримує'
+    other='отримують'} |Очищення| до кінця битви.
+  Brief: На початку ходу {PlayerName:g}, випадкова карта в руці отримує |Очищення|
+    до кінця битви, що знімає її кольорову ціну.
+CatchGoblinSe:
+  Name: Випробування Фортуни
+  Description: '{OwnerName} отримує на 33% менше шкоди й дає 50<sprite="Point" name="Gold">
+    після смерті.'
+  Brief: '{OwnerName} отримує на 33% менше шкоди й дає 50<sprite="Point" name="Gold">
+    після смерті.'
+Appliance:
+  Name: Побутова Техніка
+  Description: '{OwnerName} має імунітет до |Слабкості| та |Вразливості|.'
