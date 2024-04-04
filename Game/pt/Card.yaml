@@ -61,6 +61,7 @@ Zhuizongfu:
 ReverseJiejie:
   Description: Sempre que {PlayerName} perder um buff, ganhe {Value1} de |Barreira|.
   Name: Limite Reverso
+  FlavorText: Em tudo que é bom, há maldade, e em tudo que é mau, há bondade.
 ReimuBlockW:
   Name: Proteção Danmaku
   Description: Ganhe {Block} de |Bloqueio|.
@@ -190,6 +191,8 @@ TaijiLiangyi:
   Name: O Nascimento do Yin-Yang
   Description: "Adicione 1 |Orbe Yin-Yang| para a mão.\nNo começo do turno de {PlayerName},\
     \ se não possuir nenhum |Orbe Yin-Yang| na mão, adicione 1 |Orbe Yin-Yang| à mão."
+  FlavorText: O movimento que Reimu criou após ler "Coisas que você pode fazer com
+    um pote infinito de cola."
 Wunvyu:
   Name: Orbe Maligno de Hakurei
   Description: "Cause {Damage} de dano {Value1} vezes.\n|Enquanto na mão|: com exceção\
@@ -204,11 +207,13 @@ Changzhizhen:
     |Enquanto na mão|: Sempre que {PlayerName} perder um buff, aumente o dano de {SelfName}\
     \ em {Value2} neste combate."
   DetailText: Jogar {SelfName} não tem nenhum efeito além de |Exilá-la| da mão.
+  FlavorText: Sua força é igual as dívidas de Reimu.
 MingzhuAntou:
   Name: Borda Secreta
   Description: "Cause {Damage} de dano a cada inimigo.\nEscolha 1 de {Value1} |Orbes\
     \ Yin-Yang de Jade Arco-Íris| para adicionar à mão.\nPara cada |Orbe Yin-Yang|\
     \ no |campo de batalha|, {SelfName} custa {Mana} a menos."
+  FlavorText: Sempre que você jogar uma Orb, há uma chance de "reiniciar o nível".
 Misfortune:
   Name: Infortunado
   Description: '|No fim do turno|: Perca {Value1:plural one=''% ponto'' other=''%
@@ -243,6 +248,8 @@ ReimuShrine:
   Description: "Ganhe {Value1} de |Espírito Temporário|.\nNo início do turno de {PlayerName},\
     \ ganhe {Value1} de |Espírito Temporário|."
   Name: Feira do Templo Hakurei
+  FlavorText: '"Feira do Templo Hakurei" é um jogo de romance visual novel com elementos
+    de gerenciamento e jogabilidade em terceira pessoa.'
 Xiaozhuo:
   Name: Bêbado
   FlavorText: Quando estiver bêbado, seus inimigos abaixarão a guarda durante seus
@@ -262,6 +269,8 @@ ReimuDrink:
   Description: "Ganhe {Value1} de vida.\nAdicione {Value2} |Bêbado| à sua mão."
   UpgradedDescription: "Ganhe {Value1} de vida.\nGanhe {Value1} de |Poder de fogo\
     \ temporário|.\nAdicione {Value2} |Bêbado| à sua mão."
+  FlavorText: Os guerreiros da Era dos Três Reinos, após beber, usavam lâminas incandescentes
+    para cortar soldados com armaduras de vinhas amarradas por correntes.
 HuijuQiankun:
   Description: "|Exile| cada carta da mão.\nadicione 1 |Orbe Yin-Yang| para a mão\
     \ e aumente seu dano em {Value1} para cada carta |Exilada| dessa forma."
@@ -269,10 +278,12 @@ HuijuQiankun:
   UpgradedDescription: "|Exile| cada carta da mão.\nadicione 1 |Orbe Yin-Yang| para\
     \ a mão e aumente seu dano e sua |Barreira| em {Value1} para cada carta |Exilada|\
     \ dessa forma."
+  FlavorText: Selecionar tudo, Clique Direito e Deletar, Limpar Lixeira.
 QiqingYishi:
   UpgradedDescription: Adicione 1 |Arco-íris| e 1 |Radiante| à mão.
   Name: Oração do Sol
   Description: Adicione 1 |Arco-íris| à mão.
+  FlavorText: O único movimento letal que você precisa contra um Karakasa Obake"
 DanceAroundLake:
   Description: Sempre que uma carta for |Exilada|, compre {Value1:plural one='% carta'
     other='% cartas'}.
@@ -332,6 +343,7 @@ OutInGap:
 BoliDajiejie:
   Name: A Grande Barreira Hakurei
   Description: Por todo o combate, o |Bloqueio| de {PlayerName} é convertido em |Barreira|.
+  FlavorText: Todas as fantasias efêmeras durarão pela eternidade aqui.
 KuosanJiejie:
   Description: "|Para cada <sprite=\"ManaSprite\" name=\"W\"> gasto|: Ganhe {Block}\
     \ de |Bloqueio|.\n|Para cada <sprite=\"ManaSprite\" name=\"R\"> gasto|: Cause\
@@ -354,6 +366,7 @@ BoliPhantom:
   Name: Ilusão Hakurei
   Description: Sempre que {PlayerName} |Exilar| uma carta que não seja |Agulha Persuasiva|,
     adicione 1 |Agulha Persuasiva| à mão que |custa temporariamente| {Mana}.
+  FlavorText: '"Jutsu de Transformação: Ouriço"'
 KuosanLingfu:
   Name: Amuleto de Difusão
   Description: "Cause {Damage} de dano a cada inimigo.\nGanhe |Barreira| igual à quantidade\
@@ -452,6 +465,7 @@ MojingShanjie:
   Name: Borda de Exorcismo
   Description: Escolha 1 de {Value1} cartas de defesa aleatórias para adicionar à
     mão. seu |custo temporariamente| é {Mana}.
+  FlavorText: Há fé no acaso.
 FengleiCard:
   Description: Cause {Damage} de dano a cada inimigo {Value1} vez{Value1:plural one=''
     other='es'}.
@@ -2686,9 +2700,15 @@ PatchouliFriend:
   ExtraDescription2: '{FriendU}Adicione {Value2} |Poção Instável| à mão.'
   Name: Patchouli, Alquimista Elemental
 ReimuHuashan:
-  Description: "|Exile| uma carta de |Talento| da mão.\nGanhe {Value1} de vida máxima\
-    \ e {Value2} <sprite=\"Point\" name=\"Power\">.\n{SelfName} perde seu efeito até\
-    \ o fim do combate."
-  ExtraDescription1: "|d:Exile uma carta de Talento da mão.\nGanhe {Value1} de vida\
-    \ máxima e {Value2} <sprite=\"Point\" name=\"Power\">.|\n{SelfName} perde seu\
-    \ efeito até o fim do combate."
+  Description: "|Exile| uma carta da mão. Ganhe {Value2} <sprite=\"Point\" name=\"\
+    Power\">.\nSe a carta |Exilada| desta forma é um |Talento|, ganhe {Value1} de\
+    \ vida máxima.\nEste efeito só pode acontecer uma única vez por combate."
+  ExtraDescription1: "|Exile| uma carta da mão. Ganhe {Value2} <sprite=\"Point\" name=\"\
+    Power\">.\n|d:Se a carta |Exilada| desta forma é um |Talento|, ganhe {Value1}\
+    \ de vida máxima.|\nEste efeito só pode acontecer uma única vez por combate."
+  Name: Receber Orientação
+  FlavorText: '"Ok, você venceu."'
+HuiyeMarblePhantasm:
+  Description: Escolha 1 de {Value1} cartas aleatórias com o custo total de X+1 e
+    adicione à mão. ela |custa temporariamente| {Mana} e tem |Exilar| e |Etéreo|.
+  Name: Manifestar Fantasma
