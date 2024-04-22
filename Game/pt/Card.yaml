@@ -186,7 +186,7 @@ YinyangXueyin:
 EvilTuiZhi:
   Name: Exterminador do Mal
   Description: "{Value1:plural one='A próxima % carta de ataque jogada causa' other='As\
-    \ próximas % cartas de ataque jogadas causam'} dano duplo."
+    \ próximas % cartas de ataque jogadas causam'} o dobro de dano."
 TaijiLiangyi:
   Name: O Nascimento do Yin-Yang
   Description: "Adicione 1 |Orbe Yin-Yang| para a mão.\nNo começo do turno de {PlayerName},\
@@ -1656,9 +1656,10 @@ BlackHorseZui:
     \ one='% vez' other='% vezes'}."
 GrimoireStudy:
   Name: Estudo do Grimório
-  Description: "Perca {Value} de vida.\n|Para cada <sprite=\"ManaSprite\" name=\"\
-    1\"> gasto|: Ganhe o seguinte efeito por um turno adicional: No final do turno\
-    \ de {PlayerName}, Adicione 1 |Arco-Íris| à mão."
+  Description: "Perca {Value2} de vida.\nAdicione {Value1:plural one='% carta aleatória'\
+    \ other='% cartas aleatórias'} à mão. {Value1:plural one='Ela |custa temporariamente|'\
+    \ other='Elas |custam temporariamente|'} {Mana} e tem |Exilar| e |Etéreo|."
+  DetailText: '{SelfName} não pode produzir ela mesma por este efeito.'
 LeiguAttack:
   Name: Contrabaixo de Taiko
   Description: "Cause {Damage} de dano em cada inimigo.\nInimigos com |Barreira| ou\
@@ -2066,9 +2067,9 @@ FengjiAttack:
   Name: Ventos Desintegrantes
   Description: "Cause {Damage} de dano em cada inimigo.\n|Para cada <sprite=\"ManaSprite\"\
     \ name=\"C\"> gasto|: Cause {Value1} a mais de dano."
-  UpgradedDescription: "Cause {Damage} de dano em cada inimigo.\n|Para cada <sprite=\"\
-    ManaSprite\" name=\"C\"> ou <sprite=\"ManaSprite\" name=\"U\"> gasto|: Cause {Value1}\
-    \ a mais de dano."
+  UpgradedDescription: "Cause {Damage} de dano em cada inimigo {Value2:plural one='%\
+    \ vez' other='% vezes'}.\n|Para cada <sprite=\"ManaSprite\" name=\"C\"> gasto|:\
+    \ Cause {Value1} a mais de dano."
 YijiSkill:
   Name: Canalizando os Deuses
   Description: Escolha 1 de {Value1} |e:Habilidades Divinas|. Ganhe seus efeitos.
@@ -2083,8 +2084,10 @@ YijiPurify:
     mana colorida.
 TianziRock:
   Name: Muralha de Bhaavaagra
-  Description: "Sempre que {PlayerName} receber dano de ataque não-bloqueado, reduza-o\
-    \ em {Value1}.\nEste efeito não acumula."
+  Description: "Sempre que {PlayerName} receber dano de ataque, reduza-o em {Value1}.\n\
+    Este efeito não acumula.\nRemova a |Marca| de {PlayerName}."
+  UpgradedDescription: "Sempre que {PlayerName} receber dano de ataque, reduza-o em\
+    \ {Value1}.\nEste efeito não acumula.\n|Marca| não pode ser aplicada em {PlayerName}."
 RainbowMarket:
   Name: Mercado Arco-Íris Lunar
   Description: Sempre que uma carta é |Exilada|, adicione uma carta aleatória à mão.
