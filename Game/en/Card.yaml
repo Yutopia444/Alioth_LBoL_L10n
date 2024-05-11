@@ -452,8 +452,8 @@ WinterWarm:
     \ one='' other='s'}."
   FlavorText: Stay away from flammable materials.
 ManaJungle:
-  Description: '|When drawn|: Add |{Value1} Rainbow{Value1:plural one='''' other=''s''}|
-    to the hand and |Exile| {SelfName}.'
+  Description: '|When {SelfName} enters the hand|: Add |{Value1} Rainbow{Value1:plural
+    one='''' other=''s''}| to the hand and |Exile| {SelfName}.'
   Name: Forest Adventure
   FlavorText: "\"Eureka! I've got it!\""
 SakuyaAttackW:
@@ -490,7 +490,7 @@ KnifeBounce:
     picks them up after stopping time.
 Lijian:
   Description: "Deal {Damage} damage.\nDraw {Value1} card{Value1:plural one='' other='s'}.\n\
-    |When drawn|: {SelfName} costs {Mana} less this combat."
+    |When {SelfName} enters the hand|: {SelfName} costs {Mana} less this combat."
 
   Name: Sight of Distant Blade
 Dejavu:
@@ -524,7 +524,7 @@ SakuyaWeak:
     keep ingredients fresh.
 DefenseDraw:
   Description: "Gain {Block} |Block|.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    |When drawn|: {SelfName} costs {Mana} less this combat."
+    |When {SelfName} enters the hand|: {SelfName} costs {Mana} less this combat."
 
   Name: Lunar Cycle
 SakuyaTea:
@@ -828,7 +828,10 @@ SakuyaDefenseRetain:
     \ next turn."
   Name: Guard Up
 SakuyaAttackX:
-  Description: '|For each {Mana} spent|: Deal {Damage} damage.'
+  Description: '|For each {Mana} spent|: Deal {Damage} damage.
+
+    Leftover attacks will target another random enemy and continue to deal damage
+    if selected target is defeated.'
   Name: Propelling Silver
 PrepareParty:
   Description: "Place up to one card from the hand on top of the draw pile.\nGain\
@@ -889,9 +892,9 @@ ExileMagic:
     \ hand. Add that many |Throwing Knives| to the hand."
   Name: Changeling Magic
 SakuyaSleep:
-  Description: "Add a |Rainbow| to the hand.\nEnd {PlayerName}'s turn."
+  Description: "Add a |Radiance| to the hand.\nEnd {PlayerName}'s turn."
   Name: Short Break
-  UpgradedDescription: Add a |Rainbow| to the hand.
+  UpgradedDescription: Add a |Radiance| to the hand.
   FlavorText: The best use of stopping time.
 SakuyaDraw:
   Description: '|When discarded or Exiled|: Draw {Value1:plural one=''% card'' other=''%
@@ -1548,8 +1551,6 @@ PoorAttack:
     \ {Value2} time{Value2:plural one='' other='s'}."
   Name: Fall into Poverty
   FlavorText: Don't bully the poor girl.
-SnowGirlCard:
-  Name: Yuki-Onna Visitation
 AliceAttack:
   Description: "Deal {Damage} damage.\nGain {Mana}."
   Name: Devilry Light Ray
@@ -2245,10 +2246,14 @@ IceLance:
     this spell card.
 FreezeBullet:
   Name: Freeze Shot
-  Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
+  Description: "Gain {Block} |Block|.\nOn {PlayerName}'s next turn, apply |Cold| to\
+    \ the first enemy that attacks {PlayerName}."
+  FlavorText: Cirno is the Lord and Savior!
+  UpgradedDescription: "Gain {Block} |Block|.\nOn {PlayerName}'s next turn, apply\
+    \ |Cold| to the first 2 enemies that attacks {PlayerName}."
 BlueRose:
   Name: Icy Rose
-  Description: "Deal {Damage} damage.\nIf the target has |Cold|, gain {Block} |Block|."
+  Description: "Gain {Block} |Block|.\nDeal {Damage} damage."
 FrostGarden:
   Name: Frosty Garden
   Description: "Apply |Cold| to each enemy.\nIf there's a summoned |Teammate| in the\
@@ -2329,7 +2334,7 @@ ForeverCool:
     \ in the hand gains {Value1} |Unity|."
 CirnoInForest:
   Name: In Plain Sight
-  Description: "Gain {Block} |Block|.\n|Overdraft| {Value1}."
+  Description: "Gain {Block} |Block|.\nGain {Value1} |Graze|."
   FlavorText: Fairies of the Forest.
 ZeroK:
   Name: Absolute Zero
@@ -2349,16 +2354,12 @@ MoreFriends:
 FreezeToIce:
   Name: Frozen Specimen
   Description: "|Exile| up to {Value1} card{Value1:plural one='' other='s'} in the\
-    \ hand. Add that many |Glaciers| to the hand."
+    \ hand. Add that many |Glaciers| to the draw pile."
   FlavorText: Use in the Moriya Shrine is banned.
 FairyOnIce:
   Name: Fairy On Ice
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nFor each enemy\
     \ that has |Cold|, {PlayerName} gains {Value2} |Graze|. "
-CirnoFestival:
-  Description: "Gain {Value1} |Graze|.\n{Value2} random card{Value2:plural one=''\
-    \ other='s'} in the hand |temporarily cost{Value2:plural one='s' other=''}| 1\
-    \ random mana less."
 DeepFreeze:
   Name: Icicle Dance
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
@@ -2387,9 +2388,6 @@ IceSaber:
 IceBarrier:
   Name: Ice Barrier
   Description: Gain {Value1} |Frost Armor|.
-IceGun:
-  Description: "Deal {Damage} damage to a random enemy {Value1} time{Value1:plural\
-    \ one='' other='s'}.\nEnemies with |Cold| take {Value2} times that damage."
 SplitPotion:
   Name: Twofold Chemical
   Description: "|Unstable Potions| deal damage to an additional target.\nAdd {Value1}\
@@ -2397,9 +2395,7 @@ SplitPotion:
   FlavorText: A quick and easy way to save on crafting potions.
 ColdBreath:
   Name: Diamond Breath
-  Description: "Deal {Damage} damage to a random enemy. \nPrioritizes enemies with\
-    \ |Cold|, in which case, gain {Mana}.\nDraw {Value1} card{Value1:plural one=''\
-    \ other='s'}."
+  Description: "Deal {Damage} damage. \nIf the target has |Cold|, gain {Mana}."
   FlavorText: You can use this move to win this year's The Queen of Fighters.
 HualiIce:
   Name: Stunning Summer Ice
@@ -2438,7 +2434,6 @@ FrozenThrone:
   Description: At the start of {PlayerName}'s turn, add a |Glacier+| to the hand.
   FlavorText: Now, we are one!
 DiamondBlizzard:
-  Name: Diamond Pillar
   ExtraDescription1: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy."
 FairyAllOut:
   Name: All Hands on Deck
@@ -2555,8 +2550,8 @@ MaidFriend:
   FlavorText: Out of all the fairy maids in the Scarlet Devil Mansion, Kasumi is already
     the most serious in her work.
 FruitShake:
-  Description: "Deal {Damage} damage to each enemy.\nIf a |Teammate| was summoned\
-    \ this turn, {SelfName} costs {Mana} to play."
+  Description: "Deal {Damage} damage to each enemy. Apply |Cold| to each enemy.\n\
+    If a |Teammate| was summoned this turn, {SelfName} costs {Mana} to play."
   Name: Yummy Fruit Freezies
   FlavorText: Tropical fruits are cool and tasty!
 LeidiFriend:
@@ -2585,9 +2580,9 @@ InstantFreeze:
     \ take an extra turn.\n|d:Time Limit {Mana}. |"
   Name: Instant Freeze
 LarvaDefense:
-  Description: "Gain {Block} |Block|.\nApply {Value1} |Weak| and |Vulnerable| to each\
-    \ enemy.\nIf there's a summoned |Larva, God of Evernight| in the hand, apply {Value2}\
-    \ |Poison| to each enemy."
+  Description: "Gain {Block} |Block|.\nApply {Value1} |Weak| to each enemy.\nIf there's\
+    \ a summoned |Larva, God of Evernight| in the hand, apply {Value2} |Poison| to\
+    \ each enemy."
   Name: Wingbeats Flight
   FlavorText: You need courage to fly while following behind Larva.
 ChooseFriend:
@@ -2845,8 +2840,6 @@ PiankeNingjing:
 Yehuchan:
   Name: Delusions of Enlightenment
   Description: "Gain {Value1} |Graze| and {Value2} |Lock On|.\n|Instinct|: Enter |Epiphany|."
-HuiguiLizhi:
-  Description: At the end of {PlayerName}'s turn, enter |Serenity|.
 YaoguaiNaodianbo:
   Description: "Deal {Damage} damage and gain {Value1} |Love|.\n|Instinct|: Gain {Mana}."
   Name: Youkai EEG
@@ -2875,9 +2868,6 @@ DNARain:
   Name: DNA Shotgun
   Description: "Deal {Damage} damage to each enemy.\n|When entering a Mental State|:\
     \ Increase {SelfName}'s damage by {Value1}."
-MeihaoHuiyi:
-  Description: '|When an adjacent card is played|: Gain {Block} |Block| and |Upgrade|
-    a random card.'
 ZhuozhuangChengzhang:
   Name: Healthy Growth
   Description: At the end of {PlayerName}'s turn, add {Value1} |Vitalit{Value1:plural
@@ -3095,8 +3085,6 @@ DebugAddRandomCardsSlow:
   Name: Add Random Cards (Slow)
 DebugAddDeckCards:
   Name: Add Cards to Library
-DeployIce:
-  Description: '|Deploy| a |Glacier|.'
 FlanFirepower:
   Description: "Each card in the hand gains |Ethereal|. Gain |Firepower| equal to\
     \ the number of cards in the hand.\nThere {Count:plural one='is' other='are'}\
@@ -3132,3 +3120,5 @@ DollFangzhen:
   Name: Doll Phalanx
 DollZuzhou:
   Name: Hanged Hourai Dolls
+ShiverArmor:
+  Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
