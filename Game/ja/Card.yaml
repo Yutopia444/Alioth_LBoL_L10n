@@ -153,7 +153,7 @@ YakongDianxue:
   FlavorText: 後ろからの攻撃。
 QinggeManwu:
   Name: 長袖善舞
-  Description: "カードを{Value1}枚引く。\n引いたカードを戦闘終了までアップグレードする。"
+  Description: "カードを{Value1}枚引き、引いたカードをこの戦闘が終了するまでの間|アップグレード|する。\n対象のカードが既に|アップグレード|済みである場合、代わりに {Value2} |バリア|を得る。"
   FlavorText: 水面にて、巫女歩む処、水の迸るは空舞ふ塵の如し。
 FreeFly:
   Name: 自由自在
@@ -344,6 +344,7 @@ MarisaSteal:
   Name: 借りてくぜ
   Description: "|幻虹|を{Value1}枚手札に加える。\n|オーバードラフト|{Value2}。"
   FlavorText: 「お前の家に役に立ちそうな魔法の素材はあるかな？」
+  UpgradedDescription: '|幻虹|を{Value1}枚手札に加える。'
 RainbowStar:
   Name: レインボースターインパクト
   Description: "{Damage}ダメージを与える。\n|<sprite=\"ManaSprite\" name=\"1\">につき|：ダメージが{Value1}増加。\n\
@@ -655,7 +656,7 @@ YunyouShengdi:
   Name: 聖地巡礼
   Description: "{Block}|ブロック|を得る。\n手札のカード1枚をこの戦闘中|アップグレード|する。"
   UpgradedDescription: "{Block}|ブロック|を得る。\n手札のカード全てをこの戦闘中|アップグレード|する。"
-  FlavorText: 暇人が集まる総本山。
+  FlavorText: 暇人共の総本山。
 NazrinBaota:
   Description: "敵全体に{Damage}ダメージを与える。\n手札のランダムな{Value1}枚のカードをこの戦闘中|アップグレード|する。（攻撃カードが優先的に選ばれる。）"
   Name: 宝塔の威光
@@ -903,14 +904,19 @@ HappyNewYear:
   Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ時|火力|{Value1}を得る。\n防御カードを選んだ時|霊力|{Value1}を得る。"
 Ice:
   Name: 氷晶
-  Description: '|冷気|を与える。'
+  Description: '{Mana}を得る。
+
+    山札のランダムな青カード二枚を表示する。その内一枚を手札に加え、残りを山札の最後尾へ置く。'
+  FlavorText: 氷の羽の六つの内一つ。
 CirnoDraw:
   Name: 知性なる妖精
   UpgradedDescription: "カードを{Value1}枚引く。\n次のターン開始時にカードを{Value2}枚引く。"
   Description: カードを{Value1}枚引く。
 FrozenThrone:
   Name: 凍てつく玉座
-  Description: '{PlayerName}のターン開始時、|氷晶+|を1枚手札に加える。'
+  Description: '|氷弾|を1枚手札に加える。
+
+    {PlayerName}のターン開始時、手札に|氷弾|が無い場合、|氷弾|を1枚手札に加える。'
   FlavorText: Now, we are one!
 FakeMoon:
   Name: 偽物の月
@@ -949,7 +955,7 @@ VampireHunter:
   FlavorText: 紅魔館に転職した後、このカードの名は「取り立ての達人」に変えた。
 LunaDial:
   Name: プライベートスクウェア
-  Description: "ターンを終了し、追加ターンを得る。\nこのカードを引いた時、戦闘終了までコストを{Mana}減らす。"
+  Description: "{PlayerName}はターンを終了し、追加ターンを得る。\nこのカードが手札に加えられる度、戦闘終了までコストを{Mana}減らす。"
 ShengquanZaiwo:
   Description: '{Mana}を得る。'
   Name: イカサマ
@@ -965,7 +971,7 @@ KnifeBounce:
   FlavorText: 咲夜の投げるナイフはたくさんあるように見えるが、実のところ時間を止めた後に全部拾って回収してる。
 Lijian:
   Name: 離剣乱舞
-  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}少なくする。"
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\nこのカードが手札に加えられる度、戦闘終了までこのカードのコストを{Mana}少なくする。"
   FlavorText: このナイフに再び会う時は貴様の最期だ。
 SakuyaDetective:
   Name: 指名手配
@@ -997,7 +1003,7 @@ SakuyaWeak:
   FlavorText: 時を止めれば休憩時間は無限大。
 DefenseDraw:
   Name: 月相
-  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードを引くたび、戦闘終了までこのカードのコストを{Mana}減らす。"
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードが手札に加えられる度、戦闘終了までこのカードのコストを{Mana}減らす。"
 AttackMagic:
   Name: 弾幕手品
   Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\n|投げナイフ|を{Value2}枚手札に加える。"
@@ -1020,8 +1026,8 @@ CleanRoom:
     このカードの効果で|投げナイフ|を捨てていたなら代わりに手札のカードを全てアップグレードする。"
 SakuyaSleep:
   Name: 一休み
-  Description: "|幻虹|を手札に加える。\n{PlayerName}のターンを終了する。"
-  UpgradedDescription: '|幻虹|を手札に加える。'
+  Description: "|光明|を手札に加える。\n{PlayerName}のターンを終了する。"
+  UpgradedDescription: '|光明|を手札に加える。'
   FlavorText: 時間停止の最高の使い方。
 TimeAuraAttack:
   Name: タイムマジック
@@ -1090,7 +1096,9 @@ WaterPrincess:
     |d:初見：水沫を手札に加える。|"
   FlavorText: この精工された魔導書は、100m防水機能を持つ。
 SakuyaAttackX:
-  Description: '|{Mana}につき|：{Damage}ダメージを与える。'
+  Description: '|{Mana}につき|：{Damage}ダメージを与える。
+
+    攻撃回数が残っている状態で目標を撃破した場合、その回数が上限になるまで他のランダムな敵へこの攻撃を継続し続ける。'
   Name: シルバープッシュ
 SakuyaDraw:
   Description: このカードを捨てるか|廃棄|した時、カードを{Value1}枚引く。
@@ -1117,14 +1125,14 @@ FindCollection:
   FlavorText: 地底探検必要品。
 IceSaber:
   Name: ソードフリーザー
-  Description: "{Damage}ダメージを{Value1}回与える。\n|冷気|を与える。\n手札の青のカードを任意の枚数捨てる。捨てた枚数と同じ数だけ追加で攻撃する。"
+  Description: "{Value1} 枚の青カードを捨て、捨てた分と同じ枚数の|氷槍術|を手札に加える。それらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
   FlavorText: かつてフロストモーンと呼ばれた剣があった。
 IceLaser:
   Name: 冷凍ビーム
-  Description: '{Damage}ダメージを与え、|冷気|を与える。'
+  Description: '{Damage}ダメージを与え、|冷気|を与える。
+
+    山札最後尾のカードを表示し、それが青カードであった場合、別のランダムな目標へ再度この効果を発動させる。'
   FlavorText: これによりチルノは特殊な貢献者として1997年ノーベル物理学賞を受賞した。
-IceGun:
-  Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n|冷気|が付与されている敵には{Value2}倍のダメージ。"
 TunnelEffect:
   Description: "ランダムな敵に{Damage}ダメージを与える。\n{Mana}を得る。\n山札をシャッフルした時、このカードを手札に戻す。"
   Name: トンネルエフェクト
@@ -1406,7 +1414,7 @@ BlueMogu:
   Name: スカイブルーマッシュルーム
   Description: カードを{Value1}枚引く。
 ManaJungle:
-  Description: このカードを引いた時、{Value1}枚の|幻虹|を手札に加え、{SelfName}を|廃棄|する。
+  Description: このカードが手札に加えられた時、{Value1}枚の|幻虹|を手札に加え、{SelfName}を|廃棄|する。
   Name: 森林探検
   FlavorText: 「まさかの収穫だぜ！」
 GreenMogu:
@@ -1421,36 +1429,36 @@ AutoKnife:
   FlavorText: ペットの攻撃手段を主動攻撃へと設置。
 SummerIce:
   Name: かき氷
-  Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n次のターン開始時、{Mana}を得る。"
+  Description: "次の{PlayerName}のターン開始時、{Mana}を得る。"
   FlavorText: かき氷を食べすぎると頭がキーンってなるあれ、お前にも味わわせてやる！
 Opt:
   Name: 薄氷を踏む
-  Description: "山札の先頭のカードを展示する、それを山札の最後尾に置くかどうか選択する。\nカードを一枚引く。\n{Mana}を獲得する。"
+  Description: "山札の先頭のカードを表示する、それを山札の最後尾に置くかどうか選択する。\nカードを一枚引く。\n{Mana}を獲得する。"
 SummerFlower:
   Description: "{Damage}ダメージを与える。\nこの戦闘中、全ての{SelfName}のダメージが{Value1}増加する。"
   Name: 真夏の花
   FlavorText: この石をあんたの頭に打ち付けて見て。とってもキラキラしたお星様を見れるよ。
 BlueRose:
   Name: 氷の薔薇
-  Description: "{Damage}ダメージを与える。\n目標に|冷気|が付与されている場合、{Block}|ブロック|を得る。"
+  Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。"
 ColdBreath:
-  Description: 'ランダムな敵に{Damage}ダメージを与える。
+  Description: '{Damage}ダメージを与える。
 
-    |冷気|を受けている敵がいる場合{Mana}を得て、その敵を優先的に攻撃する。
-
-    カードを{Value1}枚引く。'
+    目標に|冷気|が付与されている場合、{Mana}を得る。'
   Name: ダイヤモンドブレス
   FlavorText: 格ゲーの出し得技。
 OptBottom:
   Name: 沈没
   Description: '{TargetName}を山札の最後尾に置く。'
 FreezeBullet:
-  Description: "{Block}|ブロック|を得る。\n|フロストアーマー|を{Value1}得る。"
+  Description: "{Block}|ブロック|を得る。\n次の敵ターン開始時、最初に{PlayerName}を攻撃した一体に対し|冷気|を与える。"
   Name: 凍結弾幕
+  UpgradedDescription: "{Block}|ブロック|を得る。\n次の敵ターン開始時、最初に{PlayerName}を攻撃した二体に対し|冷気|を与える。"
+  FlavorText: チルノ様こそが救世主なのだ！
 IceLance:
   Name: 氷槍術
   Description: "{Damage}ダメージを与える。\n目標に|冷気|が付与されている場合、ダメージ{Value1}倍。"
-  FlavorText: このカードを使う時のチルノはいつもジャンプの繰り返しをするらしい。
+  FlavorText: このカードを使う時のチルノはとにかく飛び跳ねまくってるらしい。
 CirnoConsider:
   Name: 審念熟慮
   Description: '|チョイス|：{Block}|ブロック|を得る、もしくはカードを{Value1}枚引く。'
@@ -1462,14 +1470,12 @@ CoolBreeze:
   FlavorText: チルノは涼しいと感じるかもしれないが、並大抵の相手は全く共感できないことだと知れ。
 FrostGarden:
   Name: 冷霧の花園
-  Description: "敵全体に|冷気|を与える。\n手札に召喚済みの|パートナー|が居る場合、{SelfName}のコストは{Mana}となる。"
+  Description: "敵全体に|冷気|を与える。\n手札に召喚済みの|パートナー|が居る場合、この効果は次の{PlayerName}のターン開始時に再度発動する。"
   FlavorText: 無償クーラー。
 ZhenmiaowanAttack:
   Name: 一寸法師の末裔
   Description: "{Damage}ダメージを与える。\nこのターン、スキルカードのコストを{Mana}減らす。"
   UpgradedDescription: "{Damage}ダメージを与える。\nこのターン、全てのカードのコストを{Mana}減らす。"
-SnowGirlCard:
-  Description: ランダムな敵に|冷気|を{Value1}回与える。
 AliceAttack:
   Name: デヴィリーライトレイ
   Description: "{Damage}ダメージを与える。\n{Mana}を得る。"
@@ -1551,7 +1557,7 @@ FengleiCard:
   Description: 敵全体に{Damage}ダメージを{Value1}回与える。
 CirnoInForest:
   Name: 完璧な偽装
-  Description: "{Block}|ブロック|を得る。\n|オーバードラフト|{Value1}。"
+  Description: "{Block}| ブロック|を得る。\n|グレイズ| {Value1} を得る。"
   FlavorText: 森の妖精。
 DayaojingFriend:
   Name: 異変調査助手、大妖精
@@ -1656,16 +1662,14 @@ FairyWrath:
   Description: "敵全体に{Damage}ダメージを与える。\n手札に召喚済みの|異変調査助手、大妖精|が存在する場合、|真夏の花|{Value1}枚を手札に加える。"
 FreezeToIce:
   Name: 氷漬けの標本
-  Description: 手札を最大{Value1}枚|廃棄|する。同じ数の|氷晶|を手札に加える。
+  Description: 手札を上限{Value1}枚まで|廃棄|する。同じ数の|氷晶|を山札に加える。
   FlavorText: 守矢神社近くでの使用は禁止です。
-CirnoFestival:
-  Description: "|グレイズ|を{Value1}得る。\n手札のランダムな{Value2}枚のカードの|臨時コスト|をランダムに1マナ減らす。"
+  UpgradedDescription: 手札と山札と捨て札の全てから {Value1} 枚のカードを選び、|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
 DiamondBlizzard:
   Name: ダイヤプリズム
-  ExtraDescription1: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える。"
 FruitShake:
   Name: フルーツクラッシュアイス
-  Description: "敵全体に{Damage}ダメージを与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
   FlavorText: トロピカルでフルーティな味わい！ひんやり爽やか超おいしい！
 FairyTeam:
   Name: 妖精大戦争
@@ -1691,13 +1695,13 @@ CirnoFire:
   Description: "|火力|{Value1}を得る。\n|冷気|が付与されている敵1体につき、追加で火力{Value2}を得る。"
 Blizzard:
   Name: 猛吹雪
-  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n手札に召喚済みの|真冬の化身、レティ|が存在する場合、次のターン開始時にこの攻撃をもう一度行う。"
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n山札最後尾のカードを表示し、それが青カードであった場合、次の{PlayerName}のターン開始時この効果が再び発動する。"
 FairyOnIce:
   Name: 氷上の妖精
-  Description: "カードを{Value1}枚引く。\n|冷気|が付与されている敵1体につき、{PlayerName}は|グレイズ|{Value2}を得る。 "
+  Description: "|氷晶|を {Value1} 枚手札に加える。\n|グレイズ|{Value2}を得る。 "
 ColdSnap:
   Name: 高速なる解熱
-  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\n手札を一枚山札の最後尾に置く。"
+  Description: "山札の先頭 {Value1} 枚の青カードを手札に加える。加えたカード一枚につき {Value2}| バリア|を得る。"
 IceBarrier:
   Description: '|フロストアーマー|を{Value1}得る。'
   Name: アイスシールド
@@ -1705,7 +1709,7 @@ LeidiFriend:
   Description: '{FriendP}ランダムな敵一体に|冷気|を与える。'
   Name: 真冬の化身、レティ
   ExtraDescription2: '{FriendU}敵全体に{Damage}ダメージを与え、|冷気|を与える。'
-  FlavorText: 冬は至れり。冬は来たり。あの日へ還ろう。戦の冬へ。
+  FlavorText: 冬は至れり、冬来たり。再び還らん。戦の冬へ。
 XiaoemoBook:
   Name: 悪魔の典籍
   ExtraDescription1: "手札を1枚|廃棄|する。\nカードを{Value1}枚引く。\n|d:初見：怪奇を1枚手札に加える。|"
@@ -1761,7 +1765,7 @@ BestFriend:
   Name: 最高の親友
   Description: 手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。
 DeepFreeze:
-  Description: "敵全体に{Damage}ダメージを与える。\n敵全体に|冷気|を与える。敵が既に|冷気|を持っている場合、|冷気|の代わりに|凍結深度|を与える。"
+  Description: "青カードを使う度、{PlayerName}は|臨時火力| {Value1} を得る。"
   Name: つららの舞
 IceBlock:
   Name: アイスブロック
@@ -1773,7 +1777,7 @@ ZeroK:
   Description: "|冷気|の重ね掛けによるダメージを{Value1}倍分増やす。\n敵全体に|冷気|を与える。"
   Name: 絶対零度
 IceMatrix:
-  Description: "{PlayerName}は敵に|冷気|を与える度、|フロストアーマー|{Value1}を得る。\n敵全体に|冷気|を与える。"
+  Description: "{PlayerName}は敵に|冷気|を与える度、|フロストアーマー|{Value1}を得る。\nフロストアーマー {Value2} を得る。"
   Name: フリーズマトリックス
 InstantFreeze:
   Name: スイフトクールダウン
@@ -1825,7 +1829,9 @@ ChooseFriend:
   FlavorText: 親しいなら手を繋ごう。
 WhiteWorld:
   Name: 銀世界
-  Description: '{PlayerName}のターン開始時、敵全体に|冷気|を与える。'
+  Description: '敵全体に|冷気|を与える。
+
+    {PlayerName}のターン開始時、敵全体に|冷気|を与える。'
 PlayWithWaste:
   Description: "ランダムな{Value1}枚のレアでない|道具|カードから1枚を選び、手札に加える。\nそれは|複製|と|消耗品【1】|を持つ。"
   Name: ゴミ漁り
@@ -1845,7 +1851,7 @@ QingeHeal:
   Name: 死霊術
   FlavorText: 「強くなったわ。さぁお行き！」
 LarvaDefense:
-  Description: "{Block}|ブロック|を得る。\n敵全体に|脱力|{Value1}と|弱体|{Value1}を与える。\n手札に召喚済みの|真夏の妖精の夢、ラルバ|が存在する場合、敵全体に|毒|{Value2}を与える。"
+  Description: "{Block}|ブロック|を得る。\n敵全体に {Value1} ターンの間|脱力|を与える。\n手札に召喚済みの|真夏の妖精の夢、ラルバ|が存在する場合、敵全体に|毒|{Value2}を与える。"
   Name: 羽ばたく翼
   FlavorText: ラルバの後について飛行するにはそれなりの勇気が必要。
 CirnoFreeze:
@@ -1861,7 +1867,7 @@ KoishiAttackG:
   Name: 二重らせん
   Description: '{Damage}ダメージを与える'
 Xiguadao:
-  Description: "|{Mana}につき|： {Damage}ダメージを与える\n攻撃回数が残っている状態で目標が撃破された場合、その回数が切れるまで他のランダムな敵へ攻撃を行い続ける。"
+  Description: "ランダムな目標へ {Damage} ダメージを与える。この効果は {Value1} 回発動する。\n火力 {Value2} を得る。"
   Name: スイカソード
   FlavorText: 超⑨武神覇斬!
 KoishiBlockG:
@@ -2066,8 +2072,6 @@ RelianJingji:
 Yehuchan:
   Name: 覚らぬ禅
   Description: "|グレイズ|{Value1}を得る。|ロックオン|{Value2}を受ける。\n|直感|：|覚|状態に入る。"
-HuiguiLizhi:
-  Description: ターン終了時|平静|状態に入る。
 YoubiKongjuzheng:
   Name: 閉所恐怖症
   Description: "{Block}|ブロック|を得る。\n|直感|：{Shield}|バリア|を得る。"
@@ -2090,8 +2094,6 @@ XinliChaowo:
 DNARain:
   Name: DNA散弾
   Description: "敵全体に{Damage}ダメージを与える。\n|精神状態|に入る度、ダメージが{Value1}増加する。"
-MeihaoHuiyi:
-  Description: '|隣接するカードを使用した時|：{Block}ブロックを得て、手札のランダムなカード1枚をこの戦闘の間|アップグレード|する。'
 LianaiChongdong:
   Name: 恋の衝動
   Description: "|平静|状態でない場合、次に使用する基本カードの効果を{Value1}増やす。\n|平静時|：基本カードの効果を{Value2}増やす。"
@@ -2268,7 +2270,9 @@ JinziSuperExtraTurn:
   DetailText: "{SelfName}の効果による追加ターンは他の効果で得た追加ターンより優先して発生する。\n{SelfName}をプレイした後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
 Naodiantu:
   Name: 脳波
-  Description: '|チョイス|：ライフが最も多い敵に{Damage}ダメージを与える、もしくは{Block}|ブロック|を得て{SelfName}の次の攻撃ダメージを{Value1}増やす。'
+  Description: '|怪奇|と|活力|を合計 {Value1} 枚になるようランダムで手札に加える。
+
+    手札に|活力|がある場合、一枚につきランダムな目標へ5ダメージ与える。'
   ExtraDescription1: ライフが最も多い敵に{Damage}ダメージを与える。
   ExtraDescription2: "{Block}|ブロック|を得る。\n{SelfName}の次の攻撃ダメージを{Value1}増やす。"
 HeartDance:
@@ -2277,8 +2281,6 @@ HeartDance:
 ZhenmiaowanAbility:
   Name: 小槌の魔力
   Description: 全てのカードのコストが{Mana}減少する。
-DeployIce:
-  UpgradedDescription: '|氷晶|を2つ|配置|する。'
 HuiyeMarblePhantasm:
   Name: 空想具現化
   DetailText: 該当するコストの選択肢が不足している場合、不足分として低コストのカードが提示される。
@@ -2296,3 +2298,20 @@ Frog:
   Name: カエル
   Description: "このカードは呪われた。\n元のカード：{CardName}"
   NonbattleDescription: このカードは呪われた。
+IceBolt:
+  Description: '{Damage}ダメージを与え、|冷気|を与える。'
+  FlavorText: このスペルを使う時のチルノはいつもとびはねるらしい。
+  Name: 氷弾
+ShiverArmor:
+  Name: 氷霜屈折
+  Description: "{Block}|ブロック|を得る。\n|フロストアーマー|を{Value1}得る。"
+GlacialSpike:
+  FlavorText: このスペルを使う時のチルノはいつも飛び跳ねまくってるらしい。
+  Description: "{Damage}を与え、|冷気|を与える。\n|氷弾|を一枚手札に加える。"
+  Name: アイシクルピラー
+FrozenOrb:
+  Name: 氷封球
+  Description: "敵全体に {Damage} を与え、|冷気|を与える。\n|氷弾|を {Value1} 枚手札に加える。"
+ColdHearted:
+  Name: 銀氷の血筋
+  Description: "このターン中、全ての|氷槍術|は|冷気|を付与されている敵に対し三倍のダメージを与えるようになる。\n|氷槍術|を {Value1} 枚手札に加える、これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
