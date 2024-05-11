@@ -216,6 +216,7 @@ ReimuLucky:
 QinggeManwu:
   Description: |-
     Draw {Value1} cards and |Upgrade| them until the end of combat.
+    If an |Upgraded| card is drawn, gain {Value2} |Barrier| instead.
   Name: Maiden's Waltz
 YinyangXueyin:
   Description: |-
@@ -930,8 +931,8 @@ BackOfKnife:
     \ |Exiled Throwing Knives| from combat. Increase its damage by {Value1} for each\
     \ card removed this way."
 LunaDial:
-  Description: "End the turn. Then, take an extra turn.\n|When drawn|: {SelfName}\
-    \ costs {Mana} less this combat."
+  Description: "End the turn. Then, take an extra turn.\n|When {SelfName} enters the\
+    \ hand|: {SelfName} costs {Mana} less this combat."
   Name: Private Square
 SakuyaDio:
   Description: "When a |Throwing Knife| is played, apply {Value1} |Lock On|.\nEnd\
@@ -1070,6 +1071,8 @@ MarisaSteal:
     |Overdraft| {Value2}."
   Name: '"Borrow" Materials'
   FlavorText: '"Does your home have any useful magical materials?"'
+  UpgradedDescription: Add {Value1} |Rainbow{Value1:plural one='' other='s'}| to the
+    hand.
 RainbowStar:
   Name: Rainbow Star Blast
   Description: "Deal {Damage} damage.\n|For each <sprite=\"ManaSprite\" name=\"1\"\
@@ -1534,7 +1537,8 @@ SijiCard:
   Name: Judgement of Sins
   FlavorText: An important basis for judgement is whether you've dined and dashed.
 KokoroDance:
-  Description: Whenever an enemy gains a debuff, deal {Value1} damage to them.
+  Description: "Whenever an enemy gains a debuff, deal {Value1} damage to them. \n\
+    Apply {Value2} |Temporary Firepower Down| to each enemy."
   Name: Dance of Empty Masks
 ChengDefense:
   Description: "Gain {Block} |Block|.\nAt the start of {PlayerName}'s next turn, gain\
@@ -2046,7 +2050,8 @@ IceBlock:
     \ and |Graze|.\n|Retain| the hand this turn. End {PlayerName}'s turn."
   Name: Ice Block
 WhiteWorld:
-  Description: "At the start of {PlayerName}'s turn, apply |Cold| to each enemy."
+  Description: "At the start of {PlayerName}'s turn, apply |Cold| to each enemy.\n\
+    Apply |Cold| to each enemy."
   Name: Pure White World
 ReimuFreeAttack:
   Description: "Gain {Block} |Block|.\nThe next {Value1} attack card{Value1:plural\
@@ -2363,8 +2368,8 @@ FreezeToIce:
   FlavorText: Use in the Moriya Shrine is banned.
 FairyOnIce:
   Name: Fairy On Ice
-  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nFor each enemy\
-    \ that has |Cold|, {PlayerName} gains {Value2} |Graze|. "
+  Description: "Add {Value1} |Glacier{Value1:plural one='' other='s'}| to the hand.\
+    \ \nGain {Value2} |Graze|. "
 DeepFreeze:
   Name: Icicle Dance
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
@@ -2372,7 +2377,7 @@ DeepFreeze:
 IceMatrix:
   Name: Frozen Matrix
   Description: "Whenever {PlayerName} applies |Cold| to an enemy, gain {Value1} |Frost\
-    \ Armor|.\nApply |Cold| to each enemy."
+    \ Armor|.\nGain {Value2} |Frost Armor|."
 CirnoEcho:
   Name: Gift of Nature
   Description: "Choose {Value1} card{Value1:plural one='' other='s'} from the discard\
@@ -2407,7 +2412,7 @@ HualiIce:
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n\
     If {Value1} card{Value1:plural one=' has' other='s have'} been played this turn,\
     \ {SelfName} costs {Mana} to play.\n({Countdown:plural one='% card' other='% cards'}\
-    \ left.)\n"
+    \ left.)"
   UpgradedDescription: "Deal {Damage} damage to each enemy.\nApply |Cold| to each\
     \ enemy {Value2} time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural\
     \ one=' has' other='s have'} been played this turn, {SelfName} costs {Mana} to\
@@ -2448,14 +2453,12 @@ PlayWithWaste:
     \ treated as a |Copy| and has |Limited【1】|."
 Xiguadao:
   Name: Watermelon Knife
-  Description: "|For each {Mana} spent|: Deal {Damage} damage.\nWhen {SelfName}'s\
-    \ target is defeated, if it still has excess attacks, it continues attacking using\
-    \ a random enemy as the new target."
+  Description: "Deal {Damage} damage to a random enemy {Value1} time{Value1:plural\
+    \ one='' other='s'}.\nGain {Value2} |Firepower|."
   FlavorText: ⑨mnislash!
 SummerIce:
   Name: Summer Ice
-  Description: "Deal {Damage} damage to a random enemy {Value1} time{Value1:plural\
-    \ one='' other='s'}.\nGain {Mana} at the start of the next turn."
+  Description: "Gain {Mana} at the start of the next turn."
   FlavorText: Try getting brain freeze from eating too much shaved ice!
 Opt:
   Name: On Thin Ice
@@ -3126,3 +3129,5 @@ DollZuzhou:
   Name: Hanged Hourai Dolls
 ShiverArmor:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
+IceBolt:
+  Description: "Deal {Damage} damage.\nApply |Cold|."
