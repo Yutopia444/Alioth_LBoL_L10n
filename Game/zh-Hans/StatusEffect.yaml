@@ -282,7 +282,7 @@ MaoyuBlock:
 Servant:
   Name: 使魔
   Description: |-
-    主人被击败后，使魔会被一同击败。
+    场上只剩使魔敌人时，它们会被立刻消灭。
     不会触发其死亡效果。
 
 DeathExplodeNotCount:
@@ -485,7 +485,7 @@ FastAttack:
   Description: 每回合使用第一张牌后，{OwnerName}就会对{PlayerName}造成 {Level} 点|攻击|伤害。
   ExtraDescription: |-
     每回合使用第一张牌后，{OwnerName}就会对{PlayerName}造成 {Level} 点|攻击|伤害。
-    已生效过，在{OwnerName}行动后恢复。
+    （已生效过，在{OwnerName}行动后恢复）
 
 PowerByDefense:
   Name: 无坚不摧
@@ -514,6 +514,9 @@ LimaoDisguiser:
 SuwakoHex:
   Name: 作祟
   Description: '{PlayerName}的回合开始时，一张随机的手牌被作祟，变为无用之物。'
+  ExtraDescription: |-
+    {PlayerName}的回合开始时，一张随机的手牌被作祟，变为无用之物。
+    （已生效过，在{OwnerName}行动后恢复）
 
 SijiZui:
   Name: 是非曲直
@@ -912,6 +915,12 @@ NextTurnColdAll:
   Description: '{OwnerName}的下回合开始时，对所有敌人施加|寒冷|，生效 {Level} 次。'
   Brief: '{OwnerName}的下回合开始时，对所有敌人施加|寒冷|，生效若干次。'
 
+FreezeBulletSe:
+  Name: 冻结弹幕
+  Description: |-
+    对接下来攻击{OwnerName}的敌人施加|寒冷|，可以生效 {Level} 次。
+    {OwnerName}的下回合开始时移除本效果。
+
 FrostArmor:
   Name: 寒冰甲
   Description: |-
@@ -926,6 +935,11 @@ IceMatrixSe:
   Name: 冰冻矩阵
   Description: '{PlayerName}对敌人施加|寒冷|时，获得 {Level} 层|寒冰甲|。'
   Brief: '{PlayerName}对敌人施加|寒冷|时，获得若干层|寒冰甲|。'
+
+DeepFreezeSe:
+  Name: 冰尖之舞
+  Description: 打出蓝色牌对敌人造成攻击伤害时，施加 {Level} 层|冻伤|。
+  Brief: 打出蓝色牌对敌人造成攻击伤害时，施加若干层|冻伤|。
 
 Immune:
   Name: 寒冰屏障
@@ -952,14 +966,14 @@ MinengZhuruSe:
   Description: 已召唤的|同伴|牌，被动效果额外触发 {Level} 次。
   Brief: 已召唤的|同伴|牌，被动效果额外触发若干次。
 
-IceVulnerable:
-  Name: 深度冻结
+ColdHeartedSe:
+  Name: 冰冷血脉
   Description: |-
-    {OwnerName}受到的所有伤害翻倍。
-    {OwnerName}的回合结束时移除|深度冻结|。
+    |冰枪术|对|寒冷|的目标造成三倍伤害。
+    {OwnerName}的回合结束时移除|冰冷血脉|。
   Brief: |-
-    {OwnerName}受到的所有伤害翻倍。
-    {OwnerName}的回合结束时移除|深度冻结|。
+    |冰枪术|对|寒冷|的目标造成三倍伤害。
+    {OwnerName}的回合结束时移除|冰冷血脉|。
 
 ForeverCoolSe:
   Name: 永远凉爽的幻想四季
@@ -981,8 +995,8 @@ MoreFriendsSe:
 
 FrozenThroneSe:
   Name: 冰封王座
-  Description: '{PlayerName}的回合开始时，将 {Level} 张|冰晶+|加入手中。'
-  Brief: '{PlayerName}的回合开始时，将若干张|冰晶+|加入手中。'
+  Description: '{PlayerName}的回合开始时，如果手中|冰弹|不足 {Level} 张，将|冰弹|加入手中直到 {Level} 张。'
+  Brief: '{PlayerName}的回合开始时，如果手中|冰弹|不足若干张，将|冰弹|加入手中直到若干张。'
 
 WhiteWorldSe:
   Name: 纯白的世界
@@ -1011,33 +1025,37 @@ Love:
   Brief: '{PlayerName}的回合开始时，移除两个|恋心|，抽 3 张牌并进入|热恋|。'
 
 MindPassion:
-  Name: 热恋
+  Name: 热情
   Description: |-
-    |热恋|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    所有攻击附带|精准|。
-    打出攻击牌时消耗一个|恋心|，翻倍造成的伤害。
+    |热情|是一种|意识|，只能同时处于一种|意识|。
+    打出攻击牌时，获得 {Fire} 点在离开|热情|时移除的|火力|。
+    打出防御牌时，离开|热情|。
   Brief: |-
-    |热恋|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    所有攻击附带|精准|。
-    打出攻击牌时消耗一个|恋心|，翻倍造成的伤害。
+    |热情|是一种|意识|，只能同时处于一种|意识|。
+    打出攻击牌时，获得 {Fire} 点在离开|热情|时移除的|火力|。
+    打出防御牌时，离开|热情|。
 
 MindPeace:
   Name: 平静
   Description: |-
-    |平静|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    离开|平静|状态时，获得{Mana}。
+    |平静|是一种|意识|，只能同时处于一种|意识|。
+    支付法力打出防御牌时，下回合获得<sprite="ManaSprite" name="G">。
+    打出攻击或能力牌时，离开|平静|。
   Brief: |-
-    |平静|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    离开|平静|状态时，获得{Mana}。
+    |平静|是一种|意识|，只能同时处于一种|意识|。
+    支付法力打出防御牌后，下回合获得<sprite="ManaSprite" name="G">。
+    打出攻击或能力牌后，离开|平静|。
 
 MindEnlight:
-  Name: 顿悟
+  Name: 神游
   Description: |-
-    |顿悟|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    回合结束时不会失去法力并保留手牌。
+    |神游|是一种|意识|，只能同时处于一种|意识|。
+    离开|神游|时，抽一张牌，这张牌费用暂塑为<sprite="ManaSprite" name="0">并附带|放逐|。
+    {PlayerName}失去生命时，离开|神游|。
   Brief: |-
-    |顿悟|是一种|心境|，同时只能存在一种|心境|，敌方回合开始时离开|心境|。
-    回合结束时不会失去法力并保留手牌。
+    |神游|是一种|意识|，只能同时处于一种|意识|。
+    离开|神游|时，抽一张牌，这张牌费用暂塑为<sprite="ManaSprite" name="0">并附带|放逐|。
+    {PlayerName}失去生命时，离开|神游|。
 
 NextTurnBenwo:
   Name: 下回合进入热恋
@@ -1048,6 +1066,11 @@ NextTurnChaowo:
   Name: 下回合进入平静
   Description: '{PlayerName}的回合结束开始时，进入|平静|。'
   Brief: '{PlayerName}的回合结束开始时，进入|平静|。'
+
+Constrain:
+  Name: 抑制
+  Description: 抵消获得的|格挡|和|护盾|。
+  Brief: 抵消获得的|格挡|和|护盾|。
 
 WuyishiDNASe:
   Name: 无意识的基因
@@ -1068,11 +1091,6 @@ ChaoyueZiwoSe:
   Name: 超越自我
   Description: '{PlayerName}的回合结束时，如果处于|平静|，获得 {Level} 点|火力|和|灵力|。'
   Brief: '{PlayerName}的回合结束时，如果处于|平静|，获得|火力|和|灵力|。'
-
-HuiguiLizhiSe:
-  Name: 回归理智
-  Description: 回合结束时进入|平静|。
-  Brief: 回合结束时进入|平静|。
 
 KongxiangshangSe:
   Name: 空想上的人格保持者
@@ -1098,6 +1116,20 @@ ZhuozhuangChengzhangSe:
   Name: 茁壮成长
   Description: '{PlayerName}的回合结束时，将 {Level} 张|生机|加入手牌。'
   Brief: '{PlayerName}的回合结束时，将|生机|加入手牌。'
+
+QingxingMengSe:
+  Name: 白日清醒梦
+  Description: |-
+    {PlayerName}的回合开始时，将 {Level} 张|完全随机|的|稀有|牌加入手中，它暂塑为<sprite="ManaSprite" name="1">，具有|放逐|、|虚无|。
+    {PlayerName}的每个回合只能打出 {Limit} 层张|稀有|牌，剩余 {Count} 张。
+  Brief: |-
+    {PlayerName}的回合开始时，将若干张|完全随机|的|稀有|牌加入手中，它暂塑为<sprite="ManaSprite" name="1">，具有|放逐|、|虚无|。
+    {PlayerName}的每个回合只能打出 {Limit} 层张|稀有|牌。
+
+QiangweiDiyuSe:
+  Name: 蔷薇地狱
+  Description: ' 每当一张基本牌进入手牌时，对随机敌人造成 {Count} 点伤害，然后将伤害提高 {Level} 点。'
+  Brief: 每当一张基本牌进入手牌时，对随机敌人造成伤害，然后将伤害提高。
 
 LoseSpiritSe:
   Name: 丢失的羽衣
