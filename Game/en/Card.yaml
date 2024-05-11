@@ -584,7 +584,8 @@ CirnoBlockU:
   FlavorText: English beef that has been cryo-frozen for many years can also be used
     as a weapon for self-defense.
 IceLaser:
-  Description: "Deal {Damage} damage.\nApply |Cold|."
+  Description: "Deal {Damage} damage.\nApply |Cold|.\nLook at the card on the bottom\
+    \ of the draw pile. If it's blue, repeat this effect on another random enemy."
 
   Name: Freeze Beam
   FlavorText: For this, Cirno won the Nobel Prize in Physics 1997, as a special contributor.
@@ -2247,7 +2248,9 @@ SakuyaUsage2:
   FlavorText: To do housework while stopping time.
 Ice:
   Name: Glacier
-  Description: Apply |Cold|.
+  Description: "Gain {Mana}.\nLook at 2 random blue card cards from the draw pile.\
+    \ Choose one to put into the hand and put the other on the bottom of the draw\
+    \ pile."
 IceLance:
   Name: Ice Lance
   Description: "Deal {Damage} damage.\nIf the target has |Cold|, deal {Value1} times\
@@ -2267,7 +2270,7 @@ BlueRose:
 FrostGarden:
   Name: Frosty Garden
   Description: "Apply |Cold| to each enemy.\nIf there's a summoned |Teammate| in the\
-    \ hand, {SelfName} costs {Mana} to play."
+    \ hand, repeat this effect at the start of {PlayerName}'s next turn."
   FlavorText: Free air conditioning.
 CirnoDraw:
   Name: Fairy Intellect
@@ -2353,7 +2356,7 @@ ZeroK:
 Blizzard:
   Name: Blizzard
   Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy.\n\
-    If there's a summoned |Letty, Winter Embodied| in the hand, repeat these effects\
+    Look at the card on the bottom of the draw pile. If it's blue, repeat these effects\
     \ at the start of {PlayerName}'s next turn."
 MoreFriends:
   Name: Social Butterfly
@@ -2366,14 +2369,17 @@ FreezeToIce:
   Description: "|Exile| up to {Value1} card{Value1:plural one='' other='s'} in the\
     \ hand. Add that many |Glaciers| to the draw pile."
   FlavorText: Use in the Moriya Shrine is banned.
+  UpgradedDescription: "|Exile| up to {Value1} card{Value1:plural one='' other='s'}\
+    \ in the hand, draw pile and discard pile. Add that many |Glaciers| to the draw\
+    \ pile."
 FairyOnIce:
   Name: Fairy On Ice
   Description: "Add {Value1} |Glacier{Value1:plural one='' other='s'}| to the hand.\
     \ \nGain {Value2} |Graze|. "
 DeepFreeze:
   Name: Icicle Dance
-  Description: "Deal {Damage} damage to each enemy.\nApply |Cold| to each enemy. If\
-    \ an enemy already has |Cold|, apply |Deep Freeze| to them instead."
+  Description: "Whenever a blue card is played, {PlayerName} gains {Value1} |Temporary\
+    \ Firepower|."
 IceMatrix:
   Name: Frozen Matrix
   Description: "Whenever {PlayerName} applies |Cold| to an enemy, gain {Value1} |Frost\
@@ -2472,8 +2478,8 @@ CirnoConsider:
   ExtraDescription1: Gain {Block} |Block|.
 ColdSnap:
   Name: Swift Cool
-  Description: "Gain {Block} |Block|.\nDraw {Value1} card{Value1:plural one='' other='s'}.\n\
-    Place a card in the hand on the bottom of the draw pile."
+  Description: "Put the {Value1} topmost blue cards from the draw pile into the hand.\n\
+    Gain {Value2} |Barrier| for each card put into the hand this way."
 FairyWrath:
   Name: Wrath of Nature
   Description: "Deal {Damage} damage to each enemy.\nIf there's a summoned |Daiyousei,\
@@ -3131,3 +3137,8 @@ ShiverArmor:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
 IceBolt:
   Description: "Deal {Damage} damage.\nApply |Cold|."
+ColdHearted:
+  Description: "This turn, |Ice Lance| deals triple damage to enemies with |Cold|.\n\
+    Add {Value1} |Ice Lance{Value1:plural one='' other='s'}| to the hand. {Value1:plural\
+    \ one='It' other='They'} |temporarily cost{Value1:plural one='s' other=''}| {Mana}\
+    \ and {Value1:plural one='has' other='have'} |Exile| and |Ethereal|."
