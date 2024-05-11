@@ -894,7 +894,7 @@ TianziMana:
   Description: '{Mana}を得る。'
   Name: 天人飛翔
 KokoroDance:
-  Description: 敵がデバフを受ける度、それに{Value1}ダメージを与える。
+  Description: "敵がデバフを受ける度、その敵に{Value1}ダメージを与える。\n敵全体に|臨時火力ダウン|{Value2}を与える。"
   Name: 暗黒能楽
 MogongAttack:
   Name: 埴輪の造形
@@ -1642,7 +1642,7 @@ ShannvAbility:
   FlavorText: 医者からは湯を多めに飲むようにと。
 SatoriMemory:
   Name: 深層記憶
-  Description: "捨て札で{Value1}枚のランダムなカードからを1枚選んで手札に戻す。\n|直感|：そのカードの|臨時コスト|を{Mana}にする。"
+  Description: "捨て札のランダムなカード{Value1}枚から1枚選んで手札に戻す。\n|直感|：そのカードの|臨時コスト|を{Mana}にする。"
   FlavorText: 「このサイトのパスワードなんだっけ？」
 MystiaSing:
   Description: "敵全体に|臨時火力ダウン|{Value1}を与える。\n<sprite=\"Point\" name=\"Power\">{Value1}を得る。\n\
@@ -1665,8 +1665,6 @@ FreezeToIce:
   Description: 手札を上限{Value1}枚まで|廃棄|する。同じ数の|氷晶|を山札に加える。
   FlavorText: 守矢神社近くでの使用は禁止です。
   UpgradedDescription: 手札と山札と捨て札の全てから {Value1} 枚のカードを選び、|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
-DiamondBlizzard:
-  Name: ダイヤプリズム
 FruitShake:
   Name: フルーツクラッシュアイス
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
@@ -1809,7 +1807,7 @@ MinengZhuru:
 HualiIce:
   Name: パーフェクトサマーアイス
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
-    （残り{Countdown}枚）\n"
+    （残り{Countdown}枚）"
   UpgradedNonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。"
   UpgradedDescription: "敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
     （残り{Countdown}枚）"
@@ -2315,3 +2313,9 @@ FrozenOrb:
 ColdHearted:
   Name: 銀氷の血筋
   Description: "このターン中、全ての|氷槍術|は|冷気|を付与されている敵に対し三倍のダメージを与えるようになる。\n|氷槍術|を {Value1} 枚手札に加える、これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+YoumuHybrid:
+  Description: "<sprite=\"ManaSprite\" name=\"W\">|につき|：手札のカードを最大{Value1}枚|廃棄|する。\n\
+    <sprite=\"ManaSprite\" name=\"G\">|につき|：|グレイズ|{Value2}を得る。"
+  UpgradedDescription: "<sprite=\"ManaSprite\" name=\"W\">|につき|：手札、山札、捨て札からカードを最大{Value1}枚|廃棄|する。\n\
+    <sprite=\"ManaSprite\" name=\"G\">|につき|：|グレイズ|{Value2}を得る。"
+  Name: 半人半霊
