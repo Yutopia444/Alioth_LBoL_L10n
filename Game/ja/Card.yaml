@@ -1125,13 +1125,13 @@ FindCollection:
   FlavorText: 地底探検必要品。
 IceSaber:
   Name: ソードフリーザー
-  Description: "{Value1} 枚の青カードを捨て、捨てた分と同じ枚数の|氷槍術|を手札に加える。それらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+  Description: "最大{Value1}枚の青のカードを捨て、捨てた分と同じ枚数の|氷槍術|を手札に加える。それらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
   FlavorText: かつてフロストモーンと呼ばれた剣があった。
 IceLaser:
   Name: 冷凍ビーム
   Description: '{Damage}ダメージを与え、|冷気|を与える。
 
-    山札最後尾のカードを表示し、それが青カードであった場合、別のランダムな敵へ再度この効果を発動させる。'
+    山札最後尾のカードを表示し、それが青のカードだった場合別のランダムな敵へ再度この効果を発動させる。'
   FlavorText: これによりチルノは特殊な貢献者として1997年ノーベル物理学賞を受賞した。
 TunnelEffect:
   Description: "ランダムな敵に{Damage}ダメージを与える。\n{Mana}を得る。\n山札をシャッフルした時、このカードを手札に戻す。"
@@ -1662,7 +1662,7 @@ FairyWrath:
   Description: "敵全体に{Damage}ダメージを与える。\n手札に召喚済みの|異変調査助手、大妖精|が存在する場合、|真夏の花|{Value1}枚を手札に加える。"
 FreezeToIce:
   Name: 氷漬けの標本
-  Description: 手札を上限{Value1}枚まで|廃棄|する。同じ数の|氷晶|を山札に加える。
+  Description: 手札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
   FlavorText: 守矢神社近くでの使用は禁止です。
   UpgradedDescription: 手札、山札、捨て札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
 FruitShake:
@@ -1693,13 +1693,13 @@ CirnoFire:
   Description: "|火力|{Value1}を得る。\n|冷気|が付与されている敵1体につき、追加で火力{Value2}を得る。"
 Blizzard:
   Name: 猛吹雪
-  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n山札最後尾のカードを表示し、それが青カードであった場合、次の{PlayerName}のターン開始時この効果が再び発動する。"
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n山札最後尾のカードを表示し、それが青のカードなら次の{PlayerName}のターン開始時にこの効果を再び発動する。"
 FairyOnIce:
   Name: 氷上の妖精
-  Description: "|氷晶|を {Value1} 枚手札に加える。\n|グレイズ|{Value2}を得る。 "
+  Description: "|氷晶|を{Value1}枚手札に加える。\n|グレイズ|{Value2}を得る。 "
 ColdSnap:
   Name: 高速なる解熱
-  Description: "山札の先頭 {Value1} 枚の青カードを手札に加える。加えたカード一枚につき {Value2}| バリア|を得る。"
+  Description: "山札の上から{Value1}枚の青のカードを手札に加える。加えたカード1枚につき{Value2}|バリア|を得る。"
 IceBarrier:
   Description: '|フロストアーマー|を{Value1}得る。'
   Name: アイスシールド
@@ -1763,7 +1763,7 @@ BestFriend:
   Name: 最高の親友
   Description: 手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。
 DeepFreeze:
-  Description: "青カードを使う度、{PlayerName}は|臨時火力| {Value1} を得る。"
+  Description: "青のカードを使う度、{PlayerName}は|臨時火力|{Value1}を得る。"
   Name: つららの舞
 IceBlock:
   Name: アイスブロック
@@ -1784,7 +1784,7 @@ InstantFreeze:
 CirnoEcho:
   Name: 自然な贈り物
   Description: 捨て札から{Value1}枚のカードを手札に加え、|反復|を与える。
-  FlavorText: 技能実習指導員　秋穣子
+  FlavorText: 技術指導：秋穣子
 YukariBox:
   Description: "|占術|{Scry}、カードを{Value1}枚引く。\n捨て札を山札に加え、山札をシャッフルする。"
   Name: 開いた玉匣
@@ -2309,10 +2309,10 @@ GlacialSpike:
   Name: アイシクルピラー
 FrozenOrb:
   Name: 氷封球
-  Description: "敵全体に {Damage} を与え、|冷気|を与える。\n|氷弾|を {Value1} 枚手札に加える。"
+  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n|氷弾|を{Value1}枚手札に加える。"
 ColdHearted:
   Name: 銀氷の血筋
-  Description: "このターン中、全ての|氷槍術|は|冷気|が付与されている敵に対し三倍のダメージを与えるようになる。\n|氷槍術|を {Value1} 枚手札に加える、これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+  Description: "このターンの間、全ての|氷槍術|は|冷気|が付与されている敵に対し三倍のダメージを与える。\n|氷槍術|を {Value1} 枚手札に加える。これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
 YoumuHybrid:
   Description: "<sprite=\"ManaSprite\" name=\"W\">|につき|：手札のカードを最大{Value1}枚|廃棄|する。\n\
     <sprite=\"ManaSprite\" name=\"G\">|につき|：|グレイズ|{Value2}を得る。"
