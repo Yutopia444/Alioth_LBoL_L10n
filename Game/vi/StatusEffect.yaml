@@ -183,8 +183,8 @@ TimeIsLimited:
   Description: Cho tới lượt tiếp theo của kẻ địch, mỗi lá bài tốn thêm {Mana} mana
     nữa để chơi.
 LouguanJianSe:
-  Description: Sau khi {OwnerName} gây sát thương tấn công, gán thêm {Level} |Bị Nhắm
-    Tới| lên kẻ địch.
+  Description: Mỗi khi {OwnerName} gây sát thương tấn công, yểm {Level} |Bị Nhắm Tới|
+    lên kẻ địch.
   Name: Lâu Quan Kiếm
 KokoroXi:
   Description: Sau khi {OwnerName} hành động, triệu hồi một |Diện Linh Khí|. (Đã xảy
@@ -203,8 +203,8 @@ FastAttack:
   Description: Sau khi {PlayerName} chơi lá bài đầu tiên của mình, {OwnerName} sẽ
     tấn công gây {Level} sát thương.
   ExtraDescription: "Sau khi {PlayerName} chơi lá bài đầu tiên của mình, {OwnerName}\
-    \ sẽ tấn công gây {Level} sát thương.\nHiệu ứng này đã kích hoạt, được làm mới\
-    \ vào lần hành động tới của {OwnerName} ."
+    \ sẽ tấn công gây {Level} sát thương.\n(Hiệu ứng này đã kích hoạt, được làm mới\
+    \ vào lần hành động tới của {OwnerName}.)"
 LightingModule:
   Description: Mỗi khi {OwnerName} đánh trúng {PlayerName}, thêm {Level} lá |Ánh Sao
     Chói Lóa| vào Chồng Bài Bốc.
@@ -811,9 +811,6 @@ IceMatrixSe:
   Description: Mỗi khi {PlayerName} yểm |Lạnh Giá| lên một kẻ địch, tạo {Level} |Giáp
     Băng|.
   Name: Ma Trận Đóng Băng
-IceVulnerable:
-  Description: "{OwnerName} phải chịu gấp đôi sát thương từ mọi nguồn.\nVào cuối lượt\
-    \ của {OwnerName}, xóa bỏ |Kết Đông Sâu|."
 ChaofanyinSe:
   Brief: Mỗi khi chơi một lá có |Trực Giác| không phải |Bản Sao| mà không kích hoạt
     hiệu ứng |Trực Giác| của nó, thêm một vài |Bản Sao| của nó lên tay, những lá mới
@@ -886,8 +883,6 @@ NextTurnBenwo:
   Name: Say Mê Lượt Kế
   Brief: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Say Mê|.
   Description: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Say Mê|.
-HuiguiLizhiSe:
-  Brief: Sau khi kết thúc lượt, tiến vào |Bình Thản|.
 KongxiangshangSe:
   Description: Sau khi chơi một lá |Phòng Thủ Cơ Bản|, tiến vào |Bình Thản|.
   Brief: Sau khi chơi một lá |Phòng Thủ Cơ Bản|, tiến vào |Bình Thản|.
@@ -1148,5 +1143,38 @@ LimaoDisguiser:
   Description: Nhân vật này đã cải trang.
 SuwakoHex:
   Name: Quấy Nhiễu
-  Description: Vào đầu lượt của {PlayerName}, 1 lá ngẫu nhiên trên tay sẽ bị |quấy
-    nhiễu| và trở nên vô dụng.
+  Description: Vào đầu lượt của {PlayerName}, 1 lá ngẫu nhiên trên tay sẽ bị |Quấy
+    Nhiễu| và trở nên vô dụng.
+  ExtraDescription: "Vào đầu lượt của {PlayerName}, 1 lá ngẫu nhiên trên tay sẽ bị\
+    \ |Quấy Nhiễu| và trở nên vô dụng.\n(Hiệu ứng này đã kích hoạt, được làm mới vào\
+    \ lần hành động tới của {OwnerName}.)"
+FreezeBulletSe:
+  Description: "Yểm |Lạnh Giá| lên {Level} kẻ địch tiếp theo tấn công {OwnerName}.\n\
+    Hiệu ứng bị xóa bỏ ở đầu lượt tiếp theo của {OwnerName}."
+  Name: Đóng Băng Màn Đạn
+DeepFreezeSe:
+  Name: Băng Nhọn Nhảy Múa
+  Brief: Mỗi khi tấn công gây sát thương lên kẻ địch bằng một lá bài màu Lam, yểm
+    một vài cộng dồn |Bỏng Lạnh|.
+  Description: Mỗi khi tấn công gây sát thương lên kẻ địch bằng một lá bài màu Lam,
+    yểm {Level} |Bỏng Lạnh|.
+ColdHeartedSe:
+  Name: Dòng Máu Băng Lãnh
+  Brief: "|Băng Thương Thuật| gây gấp ba lần sát thương lên kẻ địch đã |Lạnh Giá|.\n\
+    |Dòng Máu Băng Lãnh| bị xóa bỏ khi {OwnerName} kết thúc lượt."
+  Description: "|Băng Thương Thuật| gây gấp ba lần sát thương lên kẻ địch đã |Lạnh\
+    \ Giá|.\n|Dòng Máu Băng Lãnh| bị xóa bỏ khi {OwnerName} kết thúc lượt."
+Constrain:
+  Name: Ức Chế
+  Description: ''
+  Brief: ''
+QingxingMengSe:
+  Name: Giấc Mơ Sáng Suốt
+  Description: "Vào đầu lượt của {PlayerName}, thêm {Level} lá bài |hoàn toàn ngẫu\
+    \ nhiên| lên tay, {Level:plural one='nó' other='chúng'} |tạm thời tốn| <sprite=\"\
+    ManaSprite\" name=\"1\"> và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.\n{PlayerName}\
+    \ chỉ có thể chơi tối đa {Limit} lá Hiếm mỗi lượt, còn {Count} lá."
+  Brief: "Vào đầu lượt của {PlayerName}, thêm một vài lá bài |hoàn toàn ngẫu nhiên|\
+    \ lên tay, {Level:plural one='nó' other='chúng'} |tạm thời tốn| <sprite=\"ManaSprite\"\
+    \ name=\"1\"> và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.\n{PlayerName} chỉ\
+    \ có thể chơi tối đa {Limit} lá Hiếm mỗi lượt."

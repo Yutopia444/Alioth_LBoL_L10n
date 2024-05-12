@@ -202,7 +202,7 @@ TaijiLiangyi:
     cola vô tận".
 OutInGap:
   Description: Chọn 1 từ {Value1} lá bài |p:Hoàn Toàn Ngẫu Nhiên| để thêm lên tay.
-    Chúng |tạm thời tốn| {Mana} và sở hữu |Trục Xuất| cùng |Hư Vô|.
+    Nó |tạm thời tốn| {Mana} và sở hữu |Trục Xuất| cùng |Hư Vô|.
   Name: Xuất Nhập Ranh Giới
   DetailText: "|e:Các lá thay thế| được sinh ra bỏ qua mọi giới hạn về mana và nhân\
     \ vật sở hữu.\nMột lá {SelfName} khác không thể được sinh ra bởi hiệu ứng của\
@@ -463,7 +463,7 @@ SplitPotion:
     \ {Value1} |Lọ Thuốc Bất Ổn| vào Chồng Bài Bốc."
   FlavorText: Quan trọng là điều chế nhanh và hiệu quả.
 ChargingToMana:
-  Description: Tiêu thụ hết |Trữ Năng|, với mỗi |Trữ Năng| tiêu hao theo cách này,
+  Description: Tiêu thụ hết |Trữ Năng|, với mỗi |Trữ Năng| tiêu hao bằng cách này,
     nhận {Mana} và bốc 1 lá.
   FlavorText: Chắng phải sẽ tốt hơn nếu chiến đấu ở dạng lam từ đầu luôn sao.
   Name: Chuyển Hóa Trữ Năng
@@ -826,7 +826,8 @@ KnifeBounce:
 MarisaSteal:
   FlavorText: '"Trong nhà cậu có nguyện liệu ma thuật nào hữu ích không?"'
   Name: '"Mượn" Tạm Để Dùng'
-  Description: "Thêm {Value1} |Cầu Vồng| lên tay.\n|Thâm Hụt| {Value2}."
+  Description: "Thêm {Value1} lá |Cầu Vồng| lên tay.\n|Thâm Hụt| {Value2}."
+  UpgradedDescription: Thêm {Value1} lá |Cầu Vồng| lên tay.
 SakuyaAttackX:
   Name: Đẩy Màn Bạc
   Description: '|Với mỗi {Mana} tiêu hao|: Gây {Damage} sát thương 1 lần.'
@@ -841,12 +842,12 @@ StarFantasy:
   Description: "Gây {Damage} sát thương.\n|Mỗi khi Bảo Lưu|: Tăng sát thương của lá\
     \ bài này thêm {Value1} trong trận đấu hiện tại."
 RunAway:
-  UpgradedDescription: "Bỏ đi từng lá trên tay, các lá bỏ đi theo cách này |tạm thời\
+  UpgradedDescription: "Bỏ đi từng lá trên tay, các lá bỏ đi bằng cách này |tạm thời\
     \ tốn| ít đi {Mana}.\nNhận {Value1} |Né Tránh|.\nBốc {Value2} lá."
   FlavorText: '"Nếu Marisa chỉ đơn giản là chạy trốn, tôi sẽ không để ý nhiều như
     vậy. Việc cô ấy cứ phá tường mà ra gây thiệt hại nhiều hơn là vài cuốn sách."'
   Name: Trốn Khỏi Hiện Trường
-  Description: "Bỏ đi từng lá trên tay, các lá bỏ đi theo cách này |tạm thời tốn|\
+  Description: "Bỏ đi từng lá trên tay, các lá bỏ đi bằng cách này |tạm thời tốn|\
     \ ít đi {Mana}.\nNhận {Value1} |Né Tránh|."
 UpgradePotion:
   Description: "Thêm {Value2} lá |Lọ Thuốc Bất Ổn| vào Chồng Bài Bốc.\nGia tăng sát\
@@ -1079,7 +1080,7 @@ UnlimitedTime:
     \ |tạm thời tốn| {Mana}, sở hữu thuộc tính |Trục Xuất|, |Hư Vô|.\nVô hiệu hóa\
     \ |Giới Hạn Thời Gian| của lá đó."
 CirnoAttackU:
-  Name: Bắn Đạn Băng
+  Name: Bắn Cột Băng
   Description: Gây {Damage} sát thương.
   FlavorText: Mãi đến khi kết thúc, Cirno mới nhớ ra rằng cô ấy đang chơi ném bóng
     tuyết với bạn bè.
@@ -1133,8 +1134,9 @@ MaidFriend:
     lên tay.'
 IceSaber:
   Name: Kết Băng Thành Kiếm
-  Description: "Gây {Damage} sát thương {Value1} lần.\nYểm |Lạnh Giá|.\nBỏ một số\
-    \ lượng tùy ý bài lam, với mỗi lá bỏ đi bằng cách này, gây sát thương thêm 1 lần."
+  Description: "Bỏ tối đa {Value1} lá bài Lam, thêm một số lượng tương đương lá |Băng\
+    \ Thương Thuật| lên tay. {Value1:plural one='Nó' other='Chúng'} |tạm thời tốn|\
+    \ {Mana} và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|."
   FlavorText: Xưa từng có một kiếm sĩ nổi tiếng mang tên Frostmourne.
 LeidiFriend:
   ExtraDescription2: '{FriendU}Gây {Damage} sát thương đồng thời yểm |Lạnh Giá| lên
@@ -1143,8 +1145,6 @@ LeidiFriend:
   Description: '{FriendP}Yểm |Lạnh Giá| lên một kẻ địch ngẫu nhiên.'
   FlavorText: Ngày đông đang tới. Ngày đông đã tới. Tái chiến ngày đông. Trở lại ngày
     đông.
-IceGun:
-  FlavorText: Đây mới là "thương" kỹ thực sự.
 Tether:
   Name: Kết Nối
   Description: "Nhận {Block} |Khiên|.\nMỗi lá |Đồng Đội| trên tay nhận {Value1} |Trợ\
@@ -1166,18 +1166,17 @@ CoolBreeze:
     nghĩ như vậy.
 CirnoInForest:
   Name: Tuyệt Đỉnh Ngụy Trang
-  Description: "Nhận {Block} |Khiên|.\n|Thâm Hụt| {Value1}."
+  Description: "Nhận {Block} |Khiên|.\nNhận {Value1} |Né Tránh|."
   FlavorText: Tiên nữ của rừng.
 SummerIce:
-  Description: "Gây {Damage} sát thương ngẫu nhiên {Value1} lần lên kẻ địch.\nNhận\
-    \ {Mana} vào đầu lượt sau."
+  Description: "Nhận {Mana} vào đầu lượt sau."
   FlavorText: Hãy thử ăn thật nhiều đá bào để bị buốt óc!
   Name: Đá Bào Ngày Hè
 FruitShake:
   Name: Đá Xay Hoa Quả
   FlavorText: Hương vị trái cây nhiệt đới thật mát lạnh và thơm ngon!
-  Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nNếu có một |Đồng Đội| được\
-    \ triệu hồi trong lượt này, {SelfName} chỉ tốn {Mana} để chơi."
+  Description: "Gây {Damage} sát thương và yểm |Lạnh Giá| lên mỗi kẻ địch.\nNếu có\
+    \ một |Đồng Đội| được triệu hồi trong lượt này, {SelfName} chỉ tốn {Mana} để chơi."
 CirnoConsider:
   Description: '|Chọn|: Nhận {Block} |Khiên| hoặc bốc {Value1} lá.'
   Name: Suy Tính Cẩn Thận
@@ -1186,8 +1185,7 @@ CirnoConsider:
 ColdBreath:
   Name: Khí Tức Kim Cương
   FlavorText: Một đòn mạnh mẽ từ một trò chơi đối kháng nào đó.
-  Description: "Gây {Damage} sát thương lên một kẻ địch ngẫu nhiên.\nƯu tiên những\
-    \ kẻ địch đã |Lạnh Giá| và nếu có, nhận {Mana}.\nBốc {Value1} lá."
+  Description: "Gây {Damage} sát thương.\nNếu mục tiêu đã |Lạnh Giá|, nhận {Mana}."
 CirnoFire:
   Name: Băng Dễ Cháy
   Description: "Nhận {Value1} |Hỏa Lực|.\nVới mỗi kẻ địch bị |Lạnh Giá|, tăng lượng\
@@ -1198,7 +1196,8 @@ IceBarrier:
 FrozenThrone:
   Name: Vương Tọa Băng Giá
   FlavorText: Now, we are one!
-  Description: Vào đầu lượt của {PlayerName}, thêm 1 lá |Tinh Thể Băng+| lên tay.
+  Description: "Thêm một lá |Đạn Băng| lên tay.\nVào đầu lượt của {PlayerName}, nếu\
+    \ trên tay không có lá |Đạn Băng| nào, thêm một lá |Đạn Băng| lên tay."
 FairyWrath:
   Name: Thiên Nhiên Nổi Giận
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nNếu có một lá |Daiyousei,\
@@ -1209,20 +1208,29 @@ CirnoBlockU:
   FlavorText: Thịt bò Anh đã đông lạnh nhiều năm cũng là vũ khí tự vệ.
 IceLaser:
   Name: Tia Đóng Băng
-  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá|."
+  Description: "Gây {Damage} sát thương, yểm |Lạnh Giá|.\nTiết lộ lá bài ở Dưới Cùng\
+    \ Chồng Bài Bốc, nếu nó là một lá bài Lam, kích hoạt hiệu ứng trên thêm lần nữa\
+    \ lên một kẻ địch ngẫu nhiên khác."
   FlavorText: Cirno đã được trao giải Nobel năm 1997 vì những đóng góp đặc biệt của
     mình cho vật lý học.
 Ice:
-  Description: Yểm |Lạnh Giá|.
+  Description: "Nhận {Mana}.\nTừ 2 lá bài Lam ngẫu nhiên ở trong Chồng Bài Bốc, chọn\
+    \ 1 lá để thêm lên tay và đặt lá còn lại vào Dưới Cùng Chồng Bài Bốc."
   Name: Tinh Thể Băng
+  FlavorText: Một phần sáu của đôi cánh tinh thể băng.
 FreezeBullet:
   Name: Đóng Băng Màn Đạn
-  Description: "Nhận {Block} |Khiên|.\nNhận {Value1} |Giáp Băng|."
+  Description: "Nhận {Block} |Khiên|.\nYểm |Lạnh Giá| lên kẻ địch đầu tiên tấn công\
+    \ {PlayerName} vào lượt tiếp theo của kẻ địch."
+  UpgradedDescription: "Nhận {Block} |Khiên|.\nYểm |Lạnh Giá| lên 2 kẻ địch đầu tiên\
+    \ tấn công {PlayerName} vào lượt tiếp theo của kẻ địch."
+  FlavorText: Cirno là đấng cứu tinh!
 Blizzard:
   Name: Bão Tuyết
   Description: "Gây {Damage} sát thương đồng thời yểm |Lạnh Giá| lên mỗi kẻ địch.\n\
-    Nếu có một lá |Letty, Hiện Thân Mùa Đông| đã triệu hồi trên tay, tái kích hoạt\
-    \ hiệu ứng trên vào đầu lượt sau."
+    Tiết lộ lá bài ở Dưới Cùng Chồng Bài Bốc, nếu nó là một lá bài Lam, kích hoạt\
+    \ hiệu ứng trên thêm lần nữa lên một kẻ địch ngẫu nhiên khác vào đầu lượt sau\
+    \ của {PlayerName}."
 Opt:
   Name: Dẫm Trên Băng Mỏng
   Description: "Tiết lộ lá bài ở Trên Cùng Chồng Bài Bốc, có thể chuyển nó xuống Dưới\
@@ -1237,17 +1245,13 @@ IceLance:
   FlavorText: Người ta kể rằng Cirno luôn nhảy lên khi thi triển bài phép này.
 ColdSnap:
   Name: Làm Mát Nhanh Chóng
-  Description: "Nhận {Block} |Khiên|.\nBốc {Value1} lá.\nChuyển một lá bài trên tay\
-    \ xuống Dưới Cùng Chồng Bài Bốc."
-CirnoFestival:
-  Description: "Nhận {Value1} |Né Tránh|.\n{Value2} lá ngẫu nhiên trên tay |tạm thời\
-    \ tốn| ít đi 1 mana ngẫu nhiên."
+  Description: "Thêm {Value1} lá bài Lam gần phía Trên Cùng Chồng Bài Bốc nhất.\n\
+    Nhận {Value2} |Hộ Giáp| cho mỗi lá được thêm lên tay bằng cách này."
 BlueRose:
   UpgradedDescription: "Gây {Damage} sát thương.\nNếu mục tiêu đã |Lạnh Giá|, nhận\
     \ {Shield} |Hộ Giáp|."
   Name: Bông Hồng Băng Giá
-  Description: "Gây {Damage} sát thương.\nNếu mục tiêu đã |Lạnh Giá|, nhận {Block}\
-    \ |Khiên|."
+  Description: "Nhận {Block} |Khiên|.\nGây {Damage} sát thương."
 FrostGarden:
   Name: Vườn Hoa Sương Giá
   FlavorText: Điều hòa miễn phí.
@@ -1285,8 +1289,8 @@ ColdChain:
     \ được thuộc tính |Bảo Lưu|."
 DeepFreeze:
   Name: Băng Nhọn Nhảy Múa
-  Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nYểm |Lạnh Giá| lên mỗi kẻ\
-    \ địch. Nếu một kẻ địch đã |Lạnh Giá|, thay vào đó yểm |Kết Đông Sâu| lên chúng."
+  Description: "Mỗi khi một lá bài Lam được chơi, {PlayerName} nhận {Value1} |Hỏa\
+    \ Lực Tạm Thời|."
 LilyFriend:
   ExtraDescription1: '{FriendA}Nhận {ActiveMana}.'
   ExtraDescription2: '{FriendU}Hồi {Heal} HP.'
@@ -1303,10 +1307,12 @@ CallFriends:
 FreezeToIce:
   Name: Đóng Băng Tiêu Bản
   Description: '|Trục Xuất| tối đa {Value1} lá trên tay, thêm vào một số lượng tương
-    đương lá |Tinh Thể Băng+| lên tay.'
+    đương lá |Tinh Thể Băng| vào trong Chồng Bài Bốc.'
   FlavorText: Bị cấm sử dụng tại Thủ Thỉ Thần Xã.
+  UpgradedDescription: '|Trục Xuất| tối đa {Value1} lá bao gồm từ trên tay, trong
+    Chồng Bài Bốc và Chồng Bài Bỏ, thêm vào một số lượng tương đương lá |Tinh Thể
+    Băng| vào trong Chồng Bài Bốc.'
 DiamondBlizzard:
-  ExtraDescription2: "Gây {Damage} sát thương cho mỗi kẻ địch.\nNhận {Block} |Khiên|."
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\n|Chọn|: Yểm |Lạnh Giá| lên\
     \ mỗi kẻ địch hoặc nhận {Block} |Khiên|."
 LunaFriend:
@@ -1354,8 +1360,6 @@ GududeXin:
 HeartDance:
   Description: "Gây {Damage} sát thương.\nTiến vào |Bình Thản|."
   Name: Vũ Điệu Trái Tim
-HuiguiLizhi:
-  Description: Sau khi kết thúc lượt, tiến vào |Bình Thản|.
 YaoguaiNaodianbo:
   Name: Sóng Điện Não Yêu Quái
   Description: "Gây {Damage} sát thương và nhận {Value1} |Ái Tâm|.\n|Trực Giác|: Nhận\
@@ -1405,7 +1409,7 @@ ZeroK:
 IceMatrix:
   Name: Ma Trận Đóng Băng
   Description: "Mỗi khi {PlayerName} yểm |Lạnh Giá| lên một kẻ địch, tạo {Value1}\
-    \ |Giáp Băng|.\nYểm lạnh giá lên mỗi kẻ địch."
+    \ |Giáp Băng|.\nNhận {Value2} |Giáp Băng|."
 WhiteWorld:
   Name: Thế Gian Một Màu Trắng Xóa
   Description: Vào đầu lượt của {PlayerName}, yểm |Lạnh Giá| lên mỗi kẻ địch.
@@ -1469,8 +1473,7 @@ MoreFriends:
   DetailText: Tổng chi phí mana của |e:các lá thay thế| ít hơn 5.
 FairyOnIce:
   Name: Tiên Nữ Trên Băng
-  Description: "Bốc {Value1} lá.\nVới mỗi kẻ địch đã |Lạnh Giá|, {PlayerName} nhận\
-    \ {Value2} |Né Tránh|. "
+  Description: "Thêm {Value1} lá |Tinh Thể Băng| lên tay.\nNhận {Value2} |Né Tránh|. "
 FairyTeam:
   Name: Tiên Nữ Đại Chiến Tranh
   Description: "Chọn một số lượng lá |Đồng Đội| trên tay tùy ý và |Trục Xuất| chúng,\
@@ -1504,8 +1507,6 @@ DNARain:
   Name: Súng Đạn Ghém DNA
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\n|Khi tiến vào một Tâm Trạng|:\
     \ Tăng sát thương lá bài này thêm {Value1}."
-MeihaoHuiyi:
-  Name: Hồi Ức Đẹp Đẽ
 JianruiSixiang:
   Description: "Nhận {Value1} |Phản Kích|.\n|Khi tiến vào một Tâm Trạng|: Hoàn trả\
     \ lá này lên tay từ Chồng Bài Bỏ."
@@ -1565,9 +1566,9 @@ BestFriend:
   Description: Chọn tối đa {Value1} lá |Đồng Đội|, nâng số |Trợ Sức| của {Value1:plural
     one='nó' other='chúng'} lên mức cao nhất.
 LarvaDefense:
-  Description: "Nhận {Block} |Khiên|.\nYểm {Value1} |Suy Nhược| và |Dễ Tổn Hại| lên\
-    \ mỗi kẻ địch.\nNếu có một lá |Larve, Thần Nữ Đêm Hè| đã triệu hồi trên tay, yểm\
-    \ {Value2} |Nhiễm Độc| lên mỗi kẻ địch."
+  Description: "Nhận {Block} |Khiên|.\nYểm {Value1} |Suy Nhược| lên mỗi kẻ địch.\n\
+    Nếu có một lá |Larva, Thần Nữ Đêm Hè| đã triệu hồi trên tay, yểm {Value2} |Nhiễm\
+    \ Độc| lên mỗi kẻ địch."
   Name: Vỗ Cánh Bay Lên
   FlavorText: Cần có can đảm để có thể bay đằng sau Larva.
 MinengZhuru:
@@ -1697,7 +1698,7 @@ ChaoyueZiwo:
     \ |Bình Thản|, nhận {Value1} |Hỏa Lực| và |Linh Lực|.\nTiến vào |Bình Thản|."
 Beiyanwu:
   Name: Triết Lý Của Kẻ Bị Ghét Bỏ
-  Description: '|Trục Xuất| các lá nằm bên cạnh, với mỗi lá |Trục Xuất| theo cách
+  Description: '|Trục Xuất| các lá nằm bên cạnh, với mỗi lá |Trục Xuất| bằng cách
     này, nhận {Mana} và bốc {Value1} lá.'
 QiangweiDiyu:
   Name: Địa Ngục Hoa Hồng
@@ -2362,8 +2363,6 @@ PoorAttack:
   Name: Sa Vào Nghèo Khó
   Description: "Mất {Value1} <sprite=\"Point\" name=\"Gold\">.\nGây {Damage} sát thương\
     \ {Value2} lần."
-SnowGirlCard:
-  Description: Yểm |Lạnh Giá| {Value1} lần ngẫu nhiên lên kẻ địch.
 KongMana:
   Name: Tâm Lò Nóng Chảy
   Description: "|Trục Xuất| 1 lá trên tay, nhận mana bằng với chi phí của nó.\nThêm\
@@ -2770,7 +2769,7 @@ FanzhuanChongdong:
     lượt đó.'
   FlavorText: Cái giá của việc trở thành hấp huyết quỷ.
 Regret:
-  FlavorText: Lẽ nào khát vọng về một tình yêu hoàn hảo được định hình bởi những câu
+  FlavorText: Lẽ nào khát vọng về một tình yêu hoàn hảo được hun đúc bởi những câu
     chuyện tình?
   Name: Luyến Tiếc
 LoveLetter:
@@ -2887,8 +2886,6 @@ AliceBlockU:
 UpgradeDoll:
   Name: Văn Nhạc Thiếu Nữ
   Description: Nâng Cấp 1 |e:Búp Bê Thượng Hải|.
-DeployIce:
-  Description: '|Triển Khai| 1 |Tinh Thể Băng|.'
 FlanBlack:
   Description: "Thẻ này chưa có sẵn.\nVui lòng đợi cập nhật."
   FlavorText: Cô gái mang theo cái tên U.N.Owen, vứt bỏ mọi thứ phía sau và chiến
@@ -2956,3 +2953,27 @@ Frog:
   Name: Con Ếch
   Description: "Lá bài này đã bị nguyền rủa.\nLúc trước nó là: {CardName}"
   NonbattleDescription: Lá bài này đã bị nguyền rủa.
+IceBolt:
+  FlavorText: Người ta kể rằng Cirno luôn nhảy lên khi thi triển bài phép này.
+  Name: Đạn Băng
+  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá|."
+ShiverArmor:
+  FlavorText: Trong khi Cirno cảm thấy nó rất mát, đối thủ của cô ấy có lẽ sẽ không
+    nghĩ như vậy.
+  Name: Băng Giá Khúc Xạ
+  Description: "Nhận {Block} |Khiên|.\nNhận {Value1} |Giáp Băng|."
+GlacialSpike:
+  FlavorText: Người ta kể rằng Cirno luôn nhảy lên khi thi triển bài phép này.
+  Name: Gai Băng Giá
+  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá|.\nThêm 1 lá |Đạn Băng| lên\
+    \ tay."
+FrozenOrb:
+  Name: Cầu Đá
+  Description: "Gây {Damage} sát thương và yểm |Lạnh Giá| lên mỗi kẻ địch.\nThêm {Value1}\
+    \ lá |Đạn Băng| lên tay."
+ColdHearted:
+  Name: Dòng Máu Băng Lãnh
+  Description: "|Băng Thương Thuật| gây gấp ba lần sát thương lên kẻ địch đã |Lạnh\
+    \ Giá| trong lượt này.\nThêm {Value1} lá |Băng Thương Thuật| lên tay. {Value1:plural\
+    \ one='Nó' other='Chúng'} |tạm thời tốn| {Mana} và sở hữu thuộc tính |Trục Xuất|\
+    \ cùng |Hư Vô|."
