@@ -878,7 +878,7 @@ NiuqiDefense:
   FlavorText: 透明な奴じゃなくて良かったな。
 YukariAttack:
   Name: 生と死の境界
-  Description: "{Damage}ダメージを{Value1}回与える。\n|ターン終了時|：{PlayerName}のライフがこのターン中に増減していた場合、捨て札から{SelfName}を|臨時コスト|を{Mana}にして手札に戻す。"
+  Description: "{Damage}ダメージを{Value1}回与える。\n|成長|：ダメージを{Value2}増やす。\n|ターン終了時|：{PlayerName}のライフがこのターン中に増減していた場合、捨て札から{SelfName}を|臨時コスト|を{Mana}にして手札に戻す。"
   FlavorText: 「生と死の狭間にある、薄く今にも消えてしまいそうな一本の境界線。貴方はそこで私を見つけることでしょう。」
 SijiCard:
   Description: 手札のカードを1枚選ぶ。それが|厄災|か|状態異常|ならばそれを|廃棄|する。それ以外の場合、それはこのターンの間|保留|を得て、この戦闘中コストが{Mana}少なくなる。
@@ -1162,7 +1162,9 @@ SakuyaFuneral:
   Description: "ライフを{Value1}失う。\n|廃棄場|のカードを1枚選び、|臨時コスト|{Mana}にして手札に加える。"
   FlavorText: 「私まだ死んでないんですけど、お嬢様。」
 NitoriUnderWater:
-  Description: '|光学迷彩|{Value1}を得る。'
+  Description: '|光学迷彩|{Value1}を得る。
+
+    カードを{Value2}枚引く。'
   Name: ウォーターカーペット
   FlavorText: 水中では、弾幕の持つ殺傷能力は大幅に減衰される。
 YuetuInvincible:
@@ -1181,6 +1183,7 @@ KokoroAttack:
   Name: 杞人地を憂う
   Description: "敵全体に{Damage}ダメージを与える。\n手札をランダムに1枚捨てる。"
   FlavorText: 夕食は何を食べようか.....
+  UpgradedDescription: "敵全体に{Damage}ダメージを与える。\n手札を1枚捨てる。"
 YuetuYuyi:
   Description: '|天衣無縫|{Value1}を得る。'
   Name: 月の羽衣
@@ -1243,7 +1246,7 @@ YinyangQueen:
   ExtraDescription2: '{FriendU}この戦闘中、全ての|陰陽玉|の効果の基本値は倍になる。ランダムな|虹龍陰陽玉|を2枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
-  Description: "{Shield}|バリア|を得る。\nドローフェイズで追加で{Value1}枚のカードを引く。"
+  Description: "{Shield}|バリア|を得る。\n手札上限に達するまでカードを引く。"
 MeilingRain:
   Name: 極彩沛雨
   Description: "敵全体に{Damage}ダメージを{AttackTimes}回与える。\n|{Mana}につき|：追加で1回ダメージを与える。"
@@ -1480,9 +1483,10 @@ AliceAttack:
   Name: デヴィリーライトレイ
   Description: "{Damage}ダメージを与える。\n{Mana}を得る。"
 BaitianCard:
-  Description: "{Block}|ブロック|を得る。\n捨て札からカードを1枚選び、山札の一番上に置く。\nそのカードの|臨時コスト|をランダムに1マナ減らす。"
+  Description: "手札を全て捨て、同じ枚数のカードを引く。"
   Name: 稗田の転生
   FlavorText: 電子機器にデータを保存する方式を取り入れて以降、稗田阿求氏の午後お茶をゆっくり飲む時間が増えたそうな。
+  UpgradedDescription: 手札を全て捨て、同じ枚数のカードを引く。
 HuashanDefense:
   Name: 務光の雷弾
   Description: "{Block}|ブロック|を得る。\nこのターン、|帯電|{Value1}を得る。"
@@ -1808,8 +1812,6 @@ HualiIce:
   Name: パーフェクトサマーアイス
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
     （残り{Countdown}枚）"
-  UpgradedDescription: "敵全体に{Damage}ダメージを与え、|冷気|を{Value2}回与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
-    （残り{Countdown}枚）"
   NonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n"
 FairyAllOut:
   Name: 総攻撃
@@ -2065,7 +2067,7 @@ PiankeNingjing:
   UpgradedDescription: "{Block}|ブロック|を得る。\nいずれかの精神状態である場合それを解除し、カードを{Value1}枚引く。"
 RelianJingji:
   Name: 茨の愛
-  Description: "{Damage}のダメージを与える。\n|隣接するカードをプレイした時|：次に{SelfName}が与えるダメージを{Value1}増やす。"
+  Description: "{Damage}ダメージを与える。\n|隣接するカードをプレイした時|：次に{SelfName}が与えるダメージを{Value1}増やす。"
 Yehuchan:
   Name: 覚らぬ禅
   Description: "|グレイズ|{Value1}を得る。|ロックオン|{Value2}を受ける。\n|直感|：|覚|状態に入る。"
@@ -2305,7 +2307,7 @@ ShiverArmor:
   FlavorText: チルノが涼しくて気持ちいいと感じる時、相手はそう感じることもなく反発する。
 GlacialSpike:
   FlavorText: このスペルを使う時のチルノはいつも飛び跳ねまくってるらしい。
-  Description: "{Damage}を与え、|冷気|を与える。\n|アイスボルト|を一枚手札に加える。"
+  Description: "{Damage}ダメージを与え、|冷気|を与える。\n|アイスボルト|を1枚手札に加える。"
   Name: グレイシャルスパイク
 FrozenOrb:
   Name: フローズンオーブ
@@ -2334,3 +2336,27 @@ DebugAddRandomCards:
 DebugAddHandCards:
   Name: 手札廃棄・カード追加
   Description: テスト用：手札を全て廃棄し、ランダムなカード{Value1}枚を手札に加える。
+YijiuDraw:
+  Name: 竜宮の遣い
+  Description: "占術{Scry}。\nカードを{Value1}枚引く。"
+SuikaDraw:
+  Name: 酒鬼召集
+  Description: 手札が{Value1}枚になるまでカードを引く。
+SuperNova:
+  Name: スーパーノヴァ
+  Description: "{Mana}を得る。\n山札からランダムな{Value1}枚の攻撃カードを手札に加える。"
+HuiyinDraw:
+  Name: 骨董品
+  Description: カードを{Value1}枚引く。
+ShopAttack:
+  Name: 真実掌握
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。"
+ShopDefense:
+  Name: クリーンエネルギー
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。"
+ShopSearch:
+  Name: 個人用レーダー
+  Description: 攻撃カードか防御カードを選び、選んだ種類のランダムなカードを山札から手札に加える。
+FutoLight:
+  Description: 手札のマナ総量が1以上のカードを全て|臨時コスト|{Mana}にする。
+  Name: 大物忌正餐
