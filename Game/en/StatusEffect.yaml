@@ -382,8 +382,8 @@ TimeIsLimited:
   Brief: Until the enemy's next turn, cards cost more mana to play.
 Servant:
   Name: Summon
-  Description: "After the summoner is defeated, all summons are defeated too.\nDoes\
-    \ not trigger death effects."
+  Description: "If only enemies with |Summon| remain, they are immediately defeated.\n\
+    Does not trigger death effects."
 Reflect:
   Name: Reflection
   Description: When damaged, deal {Level} damage back to the attacker and remove this
@@ -864,9 +864,11 @@ InvincibleEternal:
   Brief: '{OwnerName} will not lose more than 1 life from any damage taken.'
 FrozenThroneSe:
   Name: Frozen Throne
-  Brief: At the start of {PlayerName}'s turn, add |Glacier+s| to the hand.
-  Description: At the start of {PlayerName}'s turn, add {Level} |Glacier+{Level:plural
-    one='' other='s'}| to the hand.
+  Brief: At the start of {PlayerName}'s turn, if there's less than a number of |Ice
+    Bullets| in the hand, add |Ice Bullets| to the hand until there are that many.
+  Description: At the start of {PlayerName}'s turn, if there are {Level:plural one='no'
+    other='less than %'} |Ice Bullets| in the hand, add {Level} |Ice Bullet{Level:plural
+    one='' other='s'}| to the hand{Level:plural one='.' other=' until there are %.'}
 IceMatrixSe:
   Name: Frozen Matrix
   Description: Whenever {PlayerName} applies |Cold| to an enemy, gain {Level} |Frost
@@ -914,9 +916,6 @@ MinengZhuruSe:
     \ {Level} additional time{Level:plural one='' other='s'}."
   Brief: "The passive effects of summoned |Teammate| cards in the hand trigger additional\
     \ times."
-IceVulnerable:
-  Description: "{OwnerName} loses twice as much life.\nAt the end of {OwnerName}'s\
-    \ turn, they lose |Deep Freeze|."
 BailianFireSe:
   Name: Fires of Hokkai
   Description: "At the start of {PlayerName}'s turn, add {Level} random skill card{Level:plural\
@@ -1026,8 +1025,6 @@ ChaoyueZiwoSe:
     and |Spirit|.
   Brief: At the end of {PlayerName}'s turn, if in |Serenity|, gain |Firepower| and
     |Spirit|.
-HuiguiLizhiSe:
-  Description: At the end of {PlayerName}'s turn, enter |Serenity|.
 KongxiangshangSe:
   Name: Ideal Self Retention
   Description: After a |Basic Defense| card is played, enter |Serenity|.
@@ -1182,3 +1179,16 @@ SuwakoHex:
   Name: Jinx
   Description: At the start of {PlayerName}'s turn, a random card in the hand is |Jinxed|
     and made useless.
+FreezeBulletSe:
+  Name: Freeze Shot
+  Description: "Apply |Cold| to the next {Level:plural one='enemy' other='% enemies}\
+    \ to attack {OwnerName}.\nRemove this effect at the start of {OwnerName}'s next\
+    \ turn."
+DeepFreezeSe:
+  Name: Icicle Dance
+ColdHeartedSe:
+  Name: Ice-Blooded
+  Description: "|Ice Lance| deals triple damage to enemies with |Cold|.\nRemove |Ice-Blooded|\
+    \ at the end of {OwnerName}'s turn."
+  Brief: "|Ice Lance| deals triple damage to enemies with |Cold|.\nRemove |Ice-Blooded|\
+    \ at the end of {OwnerName}'s turn."

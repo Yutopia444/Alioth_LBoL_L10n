@@ -216,7 +216,7 @@ ReimuLucky:
 QinggeManwu:
   Description: |-
     Draw {Value1} cards and |Upgrade| them until the end of combat.
-    If an |Upgraded| card is drawn, gain {Value2} |Barrier| instead.
+    Gain {Value2} |Barrier| for each already |Upgraded| card drawn this way.
   Name: Maiden's Waltz
 YinyangXueyin:
   Description: |-
@@ -2259,11 +2259,11 @@ IceLance:
     this spell card.
 FreezeBullet:
   Name: Freeze Shot
-  Description: "Gain {Block} |Block|.\nOn {PlayerName}'s next turn, apply |Cold| to\
+  Description: "Gain {Block} |Block|.\nOn the enemies' next turn, apply |Cold| to\
     \ the first enemy that attacks {PlayerName}."
   FlavorText: Cirno is the Lord and Savior!
-  UpgradedDescription: "Gain {Block} |Block|.\nOn {PlayerName}'s next turn, apply\
-    \ |Cold| to the first 2 enemies that attacks {PlayerName}."
+  UpgradedDescription: "Gain {Block} |Block|.\nOn the enemies' next turn, apply |Cold|\
+    \ to the first 2 enemies that attacks {PlayerName}."
 BlueRose:
   Name: Icy Rose
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage."
@@ -2397,9 +2397,9 @@ FairyTeam:
     \ card |Exiled| this way, deal that damage an additional time."
 IceSaber:
   Name: Ice Forged Blade
-  Description: "Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.\n\
-    Apply |Cold|.\nDiscard any number of blue cards. Deal that damage an additional\
-    \ time for each card discarded this way."
+  Description: "Discard up to {Value1} blue card{Value1:plural one='' other='s'}.\
+    \ Add that many |Ice Lances| to the hand. They |temporarily cost| {Mana} and have\
+    \ |Exile| and |Ethereal|."
   FlavorText: There was once a famous sword named Frostmourne.
 IceBarrier:
   Name: Ice Barrier
@@ -2447,7 +2447,8 @@ CirnoFire:
     \ |Firepower| by {Value2}."
 FrozenThrone:
   Name: Frozen Throne
-  Description: At the start of {PlayerName}'s turn, add a |Glacier+| to the hand.
+  Description: "Add an |Ice Bullet| to the hand.\nAt the start of {PlayerName}'s turn,\
+    \ if there are no |Ice Bullets| in the hand, add an |Ice Bullet| to the hand."
   FlavorText: Now, we are one!
 FairyAllOut:
   Name: All Hands on Deck
@@ -3110,6 +3111,8 @@ HuiyeMarblePhantasm:
   Description: Choose 1 of {Value1} random cards with a total cost of X+1 to add into
     the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.
   FlavorText: "\"Princess...please don't use your ability on this kind of matter...\""
+  DetailText: If there aren't enough unique cards for the specified cost, lower cost
+    cards will be produced instead.
 HuiyinRemove:
   Description: "Remove a card from the library.\nAfter {SelfName} is played, it is\
     \ removed from combat and the library."
@@ -3135,10 +3138,20 @@ DollZuzhou:
   Name: Hanged Hourai Dolls
 ShiverArmor:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
+  Name: Frost Refraction
 IceBolt:
   Description: "Deal {Damage} damage.\nApply |Cold|."
+  Name: Ice Bullet
 ColdHearted:
   Description: "This turn, |Ice Lance| deals triple damage to enemies with |Cold|.\n\
     Add {Value1} |Ice Lance{Value1:plural one='' other='s'}| to the hand. {Value1:plural\
     \ one='It' other='They'} |temporarily cost{Value1:plural one='s' other=''}| {Mana}\
     \ and {Value1:plural one='has' other='have'} |Exile| and |Ethereal|."
+  Name: Ice-Blooded
+GlacialSpike:
+  Name: Glacial Spike
+  Description: "Deal {Damage} damage.\nApply |Cold|.\nAdd an |Ice Bullet| to the hand."
+FrozenOrb:
+  Name: Frozen Orb
+  Description: "Deal {Damage} damage and apply |Cold| to each enemy.\nAdd {Value1}\
+    \ |Ice Bullet{Value1:plural one='' other='s'}| to the hand."
