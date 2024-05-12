@@ -1129,9 +1129,11 @@ IceSaber:
   FlavorText: かつてフロストモーンと呼ばれた剣があった。
 IceLaser:
   Name: 冷凍ビーム
-  Description: '{Damage}ダメージを与え、|冷気|を与える。
+  Description: '{Damage}ダメージを与える。
 
-    山札最後尾のカードを表示し、それが青のカードだった場合別のランダムな敵へ再度この効果を発動させる。'
+    ダメージを与えた場合、更に|冷気|を与える。
+
+    山札最後尾のカードを表示し、それが青のカードだった場合それ以外のランダムな敵へ再度この効果を発動させる。'
   FlavorText: これによりチルノは特殊な貢献者として1997年ノーベル物理学賞を受賞した。
 TunnelEffect:
   Description: "ランダムな敵に{Damage}ダメージを与える。\n{Mana}を得る。\n山札をシャッフルした時、このカードを手札に戻す。"
@@ -1436,7 +1438,7 @@ SummerIce:
   FlavorText: かき氷を食べすぎると頭がキーンってなるあれ、お前にも味わわせてやる！
 Opt:
   Name: 薄氷を踏む
-  Description: "山札の先頭のカードを表示する、それを山札の最後尾に置くかどうか選択する。\nカードを1枚引く。\n{Mana}を得る。"
+  Description: "山札の先頭のカードを表示して、それを山札の最後尾に置くかどうか選択する。\nカードを1枚引く。\n{Mana}を得る。"
 SummerFlower:
   Description: "{Damage}ダメージを与える。\nこの戦闘中、全ての{SelfName}のダメージが{Value1}増加する。"
   Name: 真夏の花
@@ -1671,7 +1673,7 @@ FreezeToIce:
   UpgradedDescription: 手札、山札、捨て札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
 FruitShake:
   Name: フルーツクラッシュアイス
-  Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
+  Description: "敵全体に{Damage}ダメージを与える。\nダメージを与えた場合、更に|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
   FlavorText: トロピカルでフルーティな味わい！ひんやり爽やか超おいしい！
 FairyTeam:
   Name: 妖精大戦争
@@ -2298,7 +2300,9 @@ Frog:
   Description: "このカードは呪われた。\n元のカード：{CardName}"
   NonbattleDescription: このカードは呪われた。
 IceBolt:
-  Description: '{Damage}ダメージを与え、|冷気|を与える。'
+  Description: '{Damage}ダメージを与える。
+
+    ダメージを与えた場合、更に|冷気|を与える。'
   FlavorText: このスペルを使う時のチルノはいつもとびはねるらしい。
   Name: アイスボルト
 ShiverArmor:
@@ -2307,14 +2311,14 @@ ShiverArmor:
   FlavorText: チルノが涼しくて気持ちいいと感じる時、相手はそう感じることもなく反発する。
 GlacialSpike:
   FlavorText: このスペルを使う時のチルノはいつも飛び跳ねまくってるらしい。
-  Description: "{Damage}ダメージを与え、|冷気|を与える。\n|アイスボルト|を1枚手札に加える。"
+  Description: "{Damage}ダメージを与える。\nダメージを与えた場合、更に|冷気|を与える。\n|アイスボルト|を1枚手札に加える。"
   Name: グレイシャルスパイク
 FrozenOrb:
   Name: フローズンオーブ
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n|アイスボルト|を{Value1}枚手札に加える。"
 ColdHearted:
   Name: 銀氷の血筋
-  Description: "このターンの間、全ての|氷槍術|は|冷気|が付与されている敵に対し3倍のダメージを与える。\n|氷槍術|を{Value1}枚手札に加える。これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+  Description: "このターンの間、全ての|氷槍術|は|冷気|を持つ敵に2倍ではなく3倍のダメージを与える。\n|氷槍術|を{Value1}枚手札に加える。これらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
 YoumuHybrid:
   Description: "<sprite=\"ManaSprite\" name=\"W\">|につき|：手札のカードを最大{Value1}枚|廃棄|する。\n\
     <sprite=\"ManaSprite\" name=\"G\">|につき|：|グレイズ|{Value2}を得る。"
