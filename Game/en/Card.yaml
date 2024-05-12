@@ -701,9 +701,12 @@ KokoroAttack:
   Name: Melancholy Eruption
   FlavorText: She's seriously troubled by the question of what to have for her next
     meal.
+  UpgradedDescription: "Deal {Damage} damage to each enemy.\nDiscard a card."
 NitoriUnderWater:
   Description: 'Gain |Optical Camouflage| for {Value1} turn{Value1:plural one=''''
-    other=''s''}.'
+    other=''s''}.
+
+    Draw {Value2} card{Value2:plural one='''' other=''s''}'
   Name: Water Blanket
   FlavorText: When underwater, the lethality of danmaku is greatly reduced.
 ShuimiUnderWater:
@@ -1279,9 +1282,10 @@ SeeFengshui:
     \ defense card is sent to the discard pile this way, gain {Value2} |Block|."
   Name: Feng Shui Manipulation
 YukariAttack:
-  Description: "Deal {Damage} damage {Value1} times.\nAt the end of {PlayerName}'s\
-    \ turn, if her life total changed that turn, return {SelfName} from the discard\
-    \ pile to the hand. It |temporarily costs| {Mana}."
+  Description: "Deal {Damage} damage {Value1} times.\n|Growth|: Increase damage per\
+    \ hit by {Value2}.\nAt the end of {PlayerName}'s turn, if her life total changed\
+    \ that turn, return {SelfName} from the discard pile to the hand. It |temporarily\
+    \ costs| {Mana}."
   Name: Boundary of Life and Death
   FlavorText: '"There exists a thin borderline between life and death. You will find
     me there."'
@@ -1409,11 +1413,11 @@ ZhenmiaowanAttack:
   Name: Descendant of the Inchlings
   UpgradedDescription: "Deal {Damage} damage.\nCards cost {Mana} less this turn."
 BaitianCard:
-  Description: "Gain {Block} |Block|.\nReturn a card from the discard pile to the\
-    \ top of the draw pile. It |temporarily costs| {Value1} random mana less."
+  Description: "Discard all cards in the hand and draw that many cards."
   Name: Transmigration of Hieda
   FlavorText: After trying electronic storage media, Miss Hieda no Akyuu now has even
     more free time for afternoon tea breaks.
+  UpgradedDescription: Discard all cards in the hand and draw that many cards.
 NueExile:
   Description: "|Exile| a card from the hand.\nAdd a random card to the hand. It |temporarily\
     \ costs| {Mana}."
@@ -3186,3 +3190,25 @@ YoumuHybrid:
     \ up to {Value1} card{Value1: plural one='' other='s'} from the hand, draw pile,\
     \ and discard pile.\n|For each <sprite=\"ManaSprite\" name=\"G\"> spent|: Gain\
     \ {Value2} |Graze|."
+ShopDefense:
+  Description: "Gain {Block} |Block|.\nDraw {Value1} card{Value1:plural one='' other='s'}."
+FutoLight:
+  Description: All cards in the hand with a total cost of 1 or more |temporarily cost|
+    {Mana}.
+  Name: Oomonoimi's Banquet
+SuikaDraw:
+  Description: Draw cards until there are {Value1} cards in the hand.
+  Name: Drunk Oni Gathering
+SuperNova:
+  Description: "Gain {Mana}.\nPut {Value1} random attack card{Value1:plural one=''\
+    \ other='s'} from the draw pile into the hand."
+YijiuDraw:
+  Description: "|Scry| {Scry}.\nDraw {Value1} card{Value1:plural one='' other='s'}."
+  Name: Dragon Palace Message
+HuiyinDraw:
+  Description: Draw {Value1} card{Value1:plural one='' other='s'}.
+ShopAttack:
+  Description: "Deal {Damage} damage.\nDraw {Value1} card{Value1:plural one='' other='s'}."
+ShopSearch:
+  Description: Choose an Attack or Defense card from the draw pile to put into the
+    hand.
