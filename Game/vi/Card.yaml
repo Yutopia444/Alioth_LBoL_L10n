@@ -163,8 +163,9 @@ YakongDianxue:
   Name: Á Không Điểm Huyệt
   FlavorText: Đòn tấn công từ phía sau.
 QinggeManwu:
-  Description: Bốc {Value1} lá và |Nâng Cấp| {Value1:plural one='nó' other='chúng'}
-    cho đến hết trận đấu.
+  Description: "Bốc {Value1} lá và |Nâng Cấp| {Value1:plural one='nó' other='chúng'}\
+    \ cho đến hết trận đấu.\nNhận {Value2} |Hộ Giáp| cho mỗi lá bài đã |Nâng Cấp|\
+    \ được bốc bằng cách này."
   Name: Thanh Dịu Ca Múa
   FlavorText: Reimu vi bộ, La miệt sinh trần. (- Lạc thần phú|洛神賦 -)
 YinyangXueyin:
@@ -1254,7 +1255,8 @@ FrostGarden:
   Name: Vườn Hoa Sương Giá
   FlavorText: Điều hòa miễn phí.
   Description: "Yểm |Lạnh Giá| lên từng kẻ địch.\nNếu trên tay có một |Đồng Đội| đã\
-    \ được triệu hồi, {SelfName} tốn {Mana} để chơi."
+    \ được triệu hồi, kích hoạt hiệu ứng trên thêm một lần nữa vào đầu lượt sau của\
+    \ {PlayerName}."
 DoubleMana:
   Name: Tiên Nữ Rời Giường
   Description: "Nhân đôi số mana đang sở hữu.\n|Thâm Hụt| {Value1}."
@@ -1425,11 +1427,11 @@ BrainOverclock:
   Name: Ép Xung Đại Não
   Description: "Nhận {Mana}.\nBốc {Value2} lá.\n|Thâm Hụt| 2."
 XinliZhenliao:
-  Name: Chẩn Đoán Tâm Lý
-  Description: "Chọn một |Đơn Thuốc| để thêm lên tay:\n- Đơn thuốc tiến vào |Say Mê|.\n\
-    - Đơn thuốc tiến vào |Bình Thản|.\n- Đơn thuốc tiến vào |Đốn Ngộ|."
+  Name: Mảnh Ký Ức
+  Description: "Chọn một từ hai ký ức ngẫu nhiên để thêm lên tay."
+  UpgradedDescription: Chọn một ký ức để thêm lên tay.
 XinliBenwo:
-  Name: Đơn Thuốc -Say Mê-
+  Name: Ký Ức Say Mê
   Description: Tiến vào |Say Mê|.
 TaoqiQiangwei:
   Name: Hoa Hồng Tinh Nghịch
@@ -1487,7 +1489,7 @@ YoubiKongjuzheng:
   Name: Chứng Sợ Không Gian Hẹp
   Description: "Nhận {Block} |Khiên|.\n|Trực Giác|: Nhận {Shield} |Hộ Giáp|."
 XinliChaowo:
-  Name: Đơn Thuốc -Bình Thản-
+  Name: Ký Ức Bình Thản
   Description: Tiến vào Bình Thản.
 XinliDunwu:
   Name: Đơn Thuốc -Đốn Ngộ-
@@ -2478,8 +2480,8 @@ BaitianCard:
   FlavorText: Sau khi thử sử dụng phương tiện lưu trữ thông tin điện tử, tiểu thư
     Hidden no Aku đã có thêm thời gian rảnh để uống trà chiều.
   Name: Sự Chuyển Sinh Của Hieda
-  Description: "Nhận {Block} |Khiên|.\nChọn 1 lá nằm trong Chồng Bài Bỏ để chuyển\
-    \ lên Trên Cùng Chồng Bài Bốc, nó |tạm thời tốn| ít đi {Value1} mana ngẫu nhiên."
+  Description: "Bỏ mọi lá trên tay và bốc một số lượng lá tương đương."
+  UpgradedDescription: Bỏ mọi lá trên tay và bốc một số lượng lá tương đương.
 DanmuJade:
   Name: Kén Ngọc Đạn Mạc
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nThêm {Value1} lá |Cầu Vồng|\
@@ -2945,7 +2947,7 @@ Frog:
 IceBolt:
   FlavorText: Người ta kể rằng Cirno luôn nhảy lên khi thi triển bài phép này.
   Name: Đạn Băng
-  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá|."
+  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá| nếu đánh trúng."
 ShiverArmor:
   FlavorText: Trong khi Cirno cảm thấy nó rất mát, đối thủ của cô ấy có lẽ sẽ không
     nghĩ như vậy.
@@ -2954,8 +2956,8 @@ ShiverArmor:
 GlacialSpike:
   FlavorText: Người ta kể rằng Cirno luôn nhảy lên khi thi triển bài phép này.
   Name: Gai Băng Giá
-  Description: "Gây {Damage} sát thương.\nYểm |Lạnh Giá|.\nThêm 1 lá |Đạn Băng| lên\
-    \ tay."
+  Description: "Gây {Damage} sát thương và yểm |Lạnh Giá| nếu đánh trúng.\nThêm 1\
+    \ lá |Đạn Băng| lên tay."
 FrozenOrb:
   Name: Cầu Đá
   Description: "Gây {Damage} sát thương và yểm |Lạnh Giá| lên mỗi kẻ địch.\nThêm {Value1}\
@@ -2966,3 +2968,11 @@ ColdHearted:
     \ Giá| trong lượt này.\nThêm {Value1} lá |Băng Thương Thuật| lên tay. {Value1:plural\
     \ one='Nó' other='Chúng'} |tạm thời tốn| {Mana} và sở hữu thuộc tính |Trục Xuất|\
     \ cùng |Hư Vô|."
+SuperNova:
+  Name: Siêu Tân Tinh
+  Description: "Nhận {Mana}.\nChuyển {Value2} lá Tấn Công ngẫu nhiên từ Chồng Bài\
+    \ Bốc lên tay."
+BeihaiWangxiang:
+  Name: Hoang Tưởng Bị Hại
+SiwangLaiDian:
+  Name: Cuộc Gọi Đáng Yêu Kinh Dị
