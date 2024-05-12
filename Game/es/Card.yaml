@@ -1207,6 +1207,8 @@ Lijian:
     \ other='s'}.\n|Cuando {SelfName} entra en la mano|: {SelfName} cuesta {Mana}\
     \ menos en este combate."
   Name: Vista de Hoja Distante
+  FlavorText: La próxima vez que veas este cuchillo arrojadizo, será cuando te encuentres
+    con tu final.
 CoolMaid:
   Description: "Agrega |{Value1:plural one='% Cuchillo Arrojadizo' other='% Cuchillos\
     \ Arrojadizos'}| a la mano.\nGana {Mana}."
@@ -1255,6 +1257,7 @@ PrepareParty:
   Description: "Coloca hasta una carta de la mano en la parte superior de la pila\
     \ de robo.\nGana {Block} de |Bloqueo|."
   Name: Preparando el Banquete
+  FlavorText: Se garantiza que no se servirán platos precocinados.
 SakuyaClock:
   Description: "Inflige {Damage} de daño.\nCuando un enemigo es derrotado usando {SelfName},\
     \ se |Exilia| y finaliza el turno de {PlayerName}. Luego, toma un turno extra."
@@ -2747,10 +2750,6 @@ QinchunPanni:
   ExtraDescription2: "|Sin Pasión|: Inflige {Damage} de daño al enemigo con menos\
     \ vida.\n|d:Con Pasión: Gana {Block} de Bloqueo y roba {Value1:plural one='% carta'\
     \ other='% cartas'}.|"
-MrBulb:
-  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\nSi los tres\
-    \ |Estados Mentales| diferentes fueron activados en este turno, {SelfName} cuesta\
-    \ <sprite=\"ManaSprite\" name=\"0\"> para jugar."
 PerfectCrime:
   Name: Crimen Perfecto
   Description: "Roba el |Espíritu|, |Evasión|, |Amuleto|, |Camuflaje Óptico| y |Perfección|\
@@ -2841,9 +2840,6 @@ PiankeNingjing:
   Name: Recuperar la Conciencia
   Description: "Gana de {Block} de |Bloqueo|.\nSi es posible, se sale del estado |Serenidad|\
     \ y roba {Value1} carta{Value1:plural one='' other='s'}."
-Yehuchan:
-  Description: "Ganar {Value1} de |Evasión| y {Value2} de |Bloqueo|.\n|Instinto|:\
-    \ Entra en el estado |Epifanía|."
 YaoguaiNaodianbo:
   Name: EGG Youkai
   Description: "Inflige {Damage} de daño y gana {Value1} de |Amor|.\n|Instinto|: Gana\
@@ -2851,16 +2847,10 @@ YaoguaiNaodianbo:
 YoubiKongjuzheng:
   Name: Claustrofobia
   Description: "Gana {Block} de |Bloqueo|.\n|Instinto|: Gana {Shield} de |Barrera|."
-BuruDiankuang:
-  Description: Gana {Mana} y entra en el estado |Pasión|.
 XinliZhenliao:
   Name: Diagnosis Mental
-XinliBenwo:
-  Name: Prescripción -Pasión-
 XinliChaowo:
   Name: Prescripción -Serenidad-
-XinliDunwu:
-  Name: Prescripción -Epifanía-
 DNARain:
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Al entrar en un Estado\
     \ Mental|: Aumenta el daño de {SelfName} en {Value1}."
@@ -2892,18 +2882,12 @@ LoveSeed:
   Description: "Cura {Value1} de vida y gana {TotalMana}.\n|Cuando se juega una carta\
     \ adyacente|: Aumenta el maná ganado de {SelfName} en {Mana}."
   FlavorText: Sólo déjame tomar otro mordisco y luego podrás ver las semillas.
-JianruiSixiang:
-  Description: "Gana {Value1} de |Reflejo|.\n|Al entrar en un Estado Mental|: Devuelve\
-    \ {SelfName} de la pila de descarte a la mano."
 BenwoTouying:
   Name: Amor Ciego
   Description: "Siempre que {PlayerName} entra en el estado |Pasión|, agrega una carta\
     \ de |Ataque| |p:completamente aleatoria| a la mano. |Cuesta temporalmente| {Mana}\
     \ y tiene |Exilio|.\nEntra en el estado |Pasión|."
   FlavorText: Todos hemos soñado con ser otra versión de nosotros mismos.
-FangkongSixu:
-  Description: "Descarta cualquier cantidad de cartas. Por cada carta descartada de\
-    \ esta manera, gana {Value1} de |Bloqueo|."
 JiyiShitihua:
   Name: Manifestación de la Memoria
   Description: "Elige una carta de ataque en la mano. Agrega una |Copia| de esa carta\
@@ -2916,11 +2900,6 @@ SelfControl:
   UpgradedDescription: "Siempre que {PlayerName} inflige daño por un ataque mientras\
     \ está en el estado |Pasión|, gana {Value1} de |Barrera|.\nEntra en el estado\
     \ |Pasión|."
-Chaofanyin:
-  Description: Cuando una carta que no es |Copia| con |Instinto| se juega y no activa
-    su efecto de |Instinto|, agrega {Value1} |Copia{Value1:plural one='' other='s'}|
-    de ello{Value1:plural one='' other='s'} en la mano que |Cuesta{Value1:plural one=''
-    other='n'} temporalmente| {Mana} y tiene{Value1:plural one='' other='n'} |Exilio|.
 Kongxiangshang:
   Name: Autorretención Ideal
   Description: Después de jugar una carta de |Defensa Básica|, entra en el estado
@@ -2943,7 +2922,6 @@ QiangweiDiyu:
   Name: Rosas del Infierno
   Description: Gana {Value1} de |Amor|.
 Naodiantu:
-  Name: Electroencefalógrafo
   ExtraDescription2: Gana {Block} de |Bloqueo| y aumenta el daño del próximo ataque
     de {SelfName} en {Value1}.
 MeilingFriend:
@@ -2964,8 +2942,6 @@ PatchouliFriend:
   ExtraDescription1: '{FriendA}Gana {Value1} de |Poder| y |Espíritu|. Gana {Power}
     <sprite="Point" name="Power">.'
   FlavorText: '"Agitar, Agitar, Sacudir, Agitar."'
-GududeXin:
-  Description: Gana {Value1} de |Amor|.
 HeartDance:
   Name: Danza del Corazón
 ReimuHuashan:
@@ -3186,3 +3162,30 @@ SuperNova:
     \ aleatorio' other='s de ataques aleatorios'} desde la pila de robo hacia la mano."
 BeihaiWangxiang:
   Description: Gana {Shield} de |Barrera|.
+SakuyaZeroDefense:
+  Description: Gana {Block} de |Bloqueo|.
+  Name: Deflexión de Danmaku
+YoumuAttack:
+  Description: "Inflige {Damage} de daño.\n|Exilia| una carta de la mano."
+YukariFlyObject:
+  Name: Objeto a Supervelocidad
+  Description: Al comienzo del siguiente turno de {PlayerName}, inflige {Value1} daño
+    al enemigo con más vida.
+SanaeSpirit:
+  Name: Reunir Fe
+  Description: Gana {Value1} de |Espíritu|.
+YukariSwarm:
+  Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay al menos {Value1}\
+    \ carta{Value1:plural one='' other='s'} en el |Exilio|, inflige esa misma cantidad\
+    \ de daño dos veces."
+  UpgradedDescription: "|Exilia| hasta {Value2} carta{Value2:plural one='' other='s'}\
+    \ en la mano.\nInflige {Damage} de daño a cada enemigo.\nSi hay al menos {Value1}\
+    \ carta{Value1:plural one='' other='s'} en el |Exilio|, inflige esa misma cantidad\
+    \ de daño dos veces."
+  Name: Nido del Ruiseñor
+SanaeSummonGod:
+  Description: Al comienzo del segundo turno de {PlayerName} después de jugar {SelfName},
+    gana {Value1} de |Firepower| y de |Espíritu|.
+  UpgradedDescription: Al comienzo del siguiente turno de {PlayerName}, gana {Value1}
+    de |Firepower| y de |Espíritu|.
+  Name: Invocar a Take-Minakata
