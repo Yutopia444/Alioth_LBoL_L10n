@@ -642,8 +642,7 @@ FreezeToIce:
   UpgradedDescription: 손, 뽑을 카드 더미, 버릴 카드 더미 모두에서 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의
     |얼음 조각|을 뽑을 카드 더미에 넣습니다.
 DeepFreeze:
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n모든 적에게 |빙결|을 가하고, 대상한테 이미 |빙결|이 있을 경우 |빙결|\
-    \ 대신 |딥 프리즈|를 가합니다."
+  Description: "청색 카드를 사용할 시 |일시 화력|을 {Value1} 얻습니다."
   Name: 얼음날의 춤
 CoolBreeze:
   Description: "|방어|를 {Block} 얻습니다.\n적에게 |빙결|이 있다면 손패의 무작위 카드 {Value1}장을 |강화|시킵니다."
@@ -687,8 +686,8 @@ FrostGarden:
   Name: 얼어붙은 화원
   Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 다음 턴 효과를 한 번 더 발동시킵니다."
 IceSaber:
-  Description: "피해를 {Damage}씩 {Value1}번 주고 |빙결|을 가합니다.\n사용 시 손에 있는 파란색 카드를 원하는 만큼\
-    \ 버립니다.\n버린 카드의 수만큼 공격을 한 번씩 더 가합니다."
+  Description: "손에서 청색 카드를 최대 {Value1}장까지 버립니다. 그만큼의 |얼음 창|을 손으로 가져옵니다. 그 카드들은 |일시적으로|\
+    \ {Mana}의 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다."
   Name: 얼음 검
   FlavorText: 이 검의 이름은... 서리의 한?
 CirnoDraw:
@@ -710,8 +709,8 @@ FairyTree:
   Description: "|동료| 카드로 |동료|를 소환시킬때마다 |방어|를 {Value1} 얻습니다."
 Blizzard:
   Name: 아이스 블리자드
-  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n손에 |겨울의 화신, 레티|를 소환했을 경우 다음 턴\
-    \ 시작 시 효과를 한 번 더 발동시킵니다."
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n뽑을 카드 더미의 바닥을 확인합니다. 해당 카드가 청색\
+    \ 카드라면 다음 턴 시작 시 효과를 한 번 더 발동시킵니다."
 MoreFriends:
   Name: 사교의 달인
   Description: "내 턴 시작 시 무작위 |동료| 카드를 {Value1}장 얻습니다.\n획득한 |동료| 카드는 |휘발성|을 지니며, 소환할\
@@ -719,7 +718,7 @@ MoreFriends:
   DetailText: '|e:대상 카드군|은 총 코스트가 5 미만이어야 합니다.'
 FairyOnIce:
   Name: 빙상의 요정
-  Description: "카드를 {Value1}장 뽑습니다.\n|빙결|이 있는 적 하나 당 |그레이즈|를 {Value2} 얻습니다. "
+  Description: "|얼음 조각|을 {Value1}장 얻습니다.\n|그레이즈|를 {Value2} 얻습니다. "
 DanmuJade:
   Name: 탄막의 쌍고치
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|채홍|을 한 장 얻습니다.\n|{Mana}를 지불할 시|: |화력|과\
@@ -741,7 +740,7 @@ BlackResidue:
   Name: 어둠의 잔재
   Description: '|턴 종료 시|: 체력을 {Value1} 잃습니다.'
 WhiteWorld:
-  Description: "내 턴 시작 시 모든 적에게 |빙결|을 가합니다."
+  Description: "내 턴 시작 시 모든 적에게 |빙결|을 가합니다.\n모든 적에게 |빙결|을 가합니다."
   Name: 순백의 세계
 GatherFairy:
   Description: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n카드를 {Value1}장 뽑습니다."
@@ -754,7 +753,7 @@ BrainOverclock:
   Description: "{Mana}를 얻습니다.\n카드를 {Value2}장 뽑습니다.\n|가불| {Value1}."
 IceMatrix:
   Name: 냉동 매트릭스
-  Description: "적에게 |빙결|을 가할 시 |얼음 갑옷|을 {Value1} 얻습니다.\n모든 적에게 |빙결|을 가합니다."
+  Description: "적에게 |빙결|을 가할 시 |얼음 갑옷|을 {Value1} 얻습니다.\n|얼음 갑옷|을 {Value2} 얻습니다."
 MinengZhuru:
   Name: 비능의 주입
   Description: "|동료| 카드의 |f:패시브 능력|이 발동할 시 한 번 더 발동합니다.\n추가로 지원력이 변동하지는 않습니다."
@@ -769,7 +768,7 @@ FairyTeam:
 HualiIce:
   Name: 퍼펙트 서머 아이스
   Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이 턴에서 카드가 {Value1}장 이상 사용되면 코스트가\
-    \ {Mana}로 바뀝니다.\n(현재 {Countdown}장 남음)\n"
+    \ {Mana}로 바뀝니다.\n(현재 {Countdown}장 남음)"
   UpgradedDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 {Value2}번 가합니다.\n이 턴에서 카드가 {Value1}장\
     \ 이상 사용되면 코스트가 {Mana}로 바뀝니다.\n(현재 {Countdown}장 남음)"
   NonbattleDescription: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이 턴에서 카드가 {Value1}장 이상\
@@ -1331,6 +1330,7 @@ KokoroAttack:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n무작위 카드 한 장을 버립니다."
   Name: 기나라 사람 땅을 걱정하다
   FlavorText: '"저녁 뭐 먹지…"'
+  UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n카드 한 장을 골라 버립니다."
 YuetuYuyi:
   Name: 잃어버린 깃옷
   FlavorText: 남아있는 달의 추억.
@@ -1421,7 +1421,9 @@ BailianJingang:
   FlavorText: 부처님 말씀하시길 힘의 작용엔 반드시 반작용이 있는지라.
 NitoriUnderWater:
   Name: 물빛 양탄자
-  Description: '|광학미채|를 {Value1} 얻습니다.'
+  Description: '|광학미채|를 {Value1} 얻습니다.
+
+    카드를 {Value2}장 뽑습니다.'
   FlavorText: 물 속에서는 탄막의 저지력이 크게 약화됩니다.
 ShuimiUnderWater:
   Name: 가라앉은 뱃유령
@@ -1544,7 +1546,7 @@ CirnoFire:
   Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 효과가 {Value2} 상승합니다."
 FrozenThrone:
   Name: 얼어붙은 왕좌
-  Description: 내 턴 시작 시 |얼음 조각+|을 한 장 얻습니다.
+  Description: "|빙결탄|을 한 장 얻습니다.\n내 턴 시작 시 손에 |빙결탄|이 없다면 |빙결탄|을 한 장 얻습니다."
   FlavorText: Now, we are one!
 PlayWithWaste:
   Name: 폐품 탐험
@@ -1552,8 +1554,7 @@ PlayWithWaste:
     \ 한 번 사용할 수 있습니다."
 Xiguadao:
   Name: 수박 검
-  Description: "|{Mana}를 지불할 시|: 피해를 {Damage} 줍니다.\n공격 횟수가 남은 상태에서 대상이 사라질 경우 무작위\
-    \ 적에게 공격을 이어나갑니다."
+  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|화력|을 {Value2} 얻습니다."
   FlavorText: 초⑨무신패참!
 HuiyeMana:
   Name: 타케토리모노가타리
@@ -1852,8 +1853,8 @@ XiaodingKill:
   Name: 탈혼의 의식
   FlavorText: 달토끼들이 가장 정화하고 싶어하는 카드.
 YukariAttack:
-  Description: "피해를 {Damage} 줍니다.\n이번 턴동안 체력에 변동이 있었을 시 내 턴 종료 시 {SelfName}를 버린 카드\
-    \ 더미에서 가져옵니다.\n이 때 이 카드의 코스트는 |일시적으로| {Mana}가 됩니다."
+  Description: "피해를 {Damage} 줍니다.\n|성장|: 피해가 {Value2} 증가합니다.\n이번 턴동안 체력에 변동이 있었을 시\
+    \ 내 턴 종료 시 {SelfName}를 버린 카드 더미에서 가져옵니다.\n이 때 이 카드의 코스트는 |일시적으로| {Mana}가 됩니다."
   Name: 삶과 죽음의 경계
   FlavorText: 「삶과 죽음의 아주 가느다란 경계 속에서 기다릴게.」
 QingeUpgrade:
@@ -1864,7 +1865,7 @@ SeeFengshui:
   Description: "내 턴 시작 시: |예지| {Value1}.\n|방어| 카드를 |예지|로 선택해 버릴 시 |방어|를 {Value2} 얻습니다."
 KokoroDance:
   Name: 암흑노가쿠
-  Description: 적이 부정적 효과를 받을 시 피해를 {Value1} 줍니다.
+  Description: "적이 부정적 효과를 받을 시 피해를 {Value1} 줍니다.\n모든 적에게 |일시 화력 저하|를 {Value2} 줍니다."
 CloseEyeShoot:
   Description: 무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.
   Name: 클로즈 아이 샷
@@ -1921,7 +1922,7 @@ SanaeRice:
   Description: "지니고 있는 모든 부정적 효과를 제거합니다.\n체력을 {Value1} 회복합니다."
 SkyWater:
   Name: 천수의 기적
-  Description: "|보호막|을 {Shield} 얻습니다.\n각 턴의 시작에 카드를 뽑을 때 {Value1}장 더 뽑습니다."
+  Description: "|보호막|을 {Shield} 얻습니다.\n손의 상한까지 카드를 뽑습니다."
 MeilingRain:
   Description: "모든 적에게 피해를 {Damage}씩 {AttackTimes}번 줍니다.\n|{Mana}를 지불할 시|: 추가로 한 번\
     \ 더 공격합니다."
@@ -1953,10 +1954,10 @@ RuowujiCard:
   Name: 역린의 거친 파도
   Description: "모든 적에게 피해를 {Damage} 주고 |침수|를 {Value1} 줍니다.\n|침수| 스택은 누적되지 않습니다."
 BaitianCard:
-  Description: "|방어|를 {Block} 얻습니다.\n버린 카드 더미에서 카드를 한 장 골라 뽑을 카드 더미의 맨 위로 보내고, 해당\
-    \ 카드의 무작위 코스트를 |일시적으로| {Value1} 감소시킵니다."
+  Description: "손에 있는 모든 카드를 버리고 그만큼 카드를 뽑습니다."
   Name: 히에다의 전생
   FlavorText: 전자 정보 저장 매체를 시험해본 아큐는 이제 오후에 더 여유가 생겼습니다.
+  UpgradedDescription: 손에 있는 모든 카드를 버리고 그만큼 카드를 뽑습니다.
 ShuihuoCard:
   Name: 화수옥
   Description: "피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다.\n|보존될 시|: 이 카드의 피해와 |방어|가 이번\
@@ -2023,8 +2024,8 @@ DayaojingFriend:
   UpgradedExtraDescription2: '{FriendU}|한여름의 꽃+|을 {Value1}장 얻습니다.'
   FlavorText: 모든 탐정은 그에 맞는 조수가 필요하다. 이건 치르노도 아는 기본상식이지.
 FruitShake:
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n이번 턴에서 |동료|를 소환했을 시 {SelfName}의 코스트가 {Mana}이\
-    \ 됩니다."
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n이번 턴에서 |동료|를 소환했을 시 {SelfName}의\
+    \ 코스트가 {Mana}이 됩니다."
   Name: 아이스 후르츠
   FlavorText: 음~ 상쾌한 열대 과일의 맛!
 MaidFriend:
@@ -2094,8 +2095,8 @@ InstantFreeze:
     \ {Mana}.|"
 LarvaDefense:
   Name: 날갯짓 비행
-  Description: "|방어|를 {Block} 얻습니다.\n모든 적에게 |허약|과 |취약|을 {Value1} 줍니다.\n|한여름 밤의 신,\
-    \ 라바|를 소환했다면 추가로 |중독|을 {Value2} 줍니다."
+  Description: "|방어|를 {Block} 얻습니다.\n모든 적에게 |허약|을 {Value1} 줍니다.\n|한여름 밤의 신, 라바|를 소환했다면\
+    \ 추가로 |중독|을 {Value2} 줍니다."
   FlavorText: 라바 뒤에 붙어서 비행하려면 꽤나 용기가 필요할건데...
 FakeCard:
   Name: 꿈자리에 조상님 총기립(임시)
@@ -2205,7 +2206,7 @@ Danxiangsi:
 MrBulb:
   Name: 전구 선생님
   Description: "이번 턴동안 세 가지 서로 다른 마음가짐을 모두 겪을 시 코스트가 <sprite=\"ManaSprite\" name=\"\
-    0\">이 됩니다.\n무작위 적에게 피해를 {Damage} 주고, {Mana}를 얻습니다."
+    0\">이 됩니다.\n무작위 적에게 피해를 F 주고, {Mana}를 얻습니다."
 PerfectCrime:
   Name: 완전범죄
   Description: "대상의 |영력|, |그레이즈|, |부적|, |광학미채|, |천의무봉|을 빼앗습니다.\n피해를 {Damage} 줍니다."
@@ -2269,24 +2270,24 @@ YaoguaiNaodianbo:
   Name: 요괴 폴리그래프
   Description: "피해를 {Damage} 주고, |사랑|을 {Value1} 얻습니다.\n|직감|: {Mana}를 얻습니다."
 Yehuchan:
-  Description: "|그레이즈|를 {Value1}, |록온|을 {Value2} 얻습니다.\n|직감|: |각성| 상태에 들어섭니다."
-  Name: 우매함의 봉우리
+  Description: "그레이즈를 1 얻습니다.\n다음 턴 시작 시 무작위 |마음가짐|에 들어섭니다."
+  Name: 본능적인 행동
 YoubiKongjuzheng:
   Name: 폐소공포증
   Description: "|방어|를 {Block} 얻습니다.\n|직감|: |보호막|을 {Shield} 얻습니다."
 XinliZhenliao:
-  Name: 심리 진단
-  Description: "다음 처방 중 하나를 선택합니다:\n- |열애| 상태에 들어섭니다.\n- |평온| 상태에 들어섭니다.\n- |각성| 상태에\
-    \ 들어섭니다."
+  Name: 기억의 절편
+  Description: "무작위 기억 두 개 중 하나를 선택해 얻습니다."
+  UpgradedDescription: 기억을 하나 선택하세요.
 XinliBenwo:
-  Name: 처방전 -열애-
+  Name: 열정의 기억
   Description: '|열애| 상태에 들어섭니다.'
 XinliChaowo:
-  Name: 처방전 -평온-
+  Name: 평온의 기억
   Description: '|평온| 상태에 들어섭니다.'
 XinliDunwu:
-  Name: 처방전 -각성-
-  Description: '|각성| 상태에 들어섭니다.'
+  Name: 신놀음의 기억
+  Description: '|신놀음| 상태에 들어섭니다.'
 DNARain:
   Name: DNA 산탄총
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|마음가짐에 들어설 시|: 피해가 {Value1} 증가합니다."
@@ -2348,8 +2349,9 @@ Beiyanwu:
   Description: 이 카드에 인접한 카드를 |소멸|시킵니다. |소멸|된 카드의 갯수만큼 {Mana}를 얻고 카드를 {Value1}장씩 뽑습니다.
 Naodiantu:
   Name: 뇌전도
-  Description: '|선택|: 체력이 가장 높은 적에게 피해를 {Damage} 줍니다; 혹은 |방어|를 {Block} 얻고 다음 번 {SelfName}의
-    공격력을 {Value1} 올립니다.'
+  Description: '|괴이| 혹은 |활력|을 총 {Value1}장 얻습니다.
+
+    이 방식으로 |활력|을 얻을 때마다 무작위 적에게 피해를 5 줍니다.'
   ExtraDescription1: 체력이 가장 높은 적에게 피해를 {Damage} 줍니다.
   ExtraDescription2: '|방어|를 {Block} 얻고 다음 번 {SelfName}의 공격력을 {Value1} 올립니다.'
 GududeXin:
@@ -2382,7 +2384,7 @@ MeilingFriend:
   ExtraDescription2: '{FriendU}체력을 {Value1} 회복합니다. |화력|을 {Value2} 얻습니다.'
 QiangweiDiyu:
   Name: 로즈 지옥
-  Description: '|사랑|을 {Value1} 얻습니다.'
+  Description: '기본 카드가 손으로 들어올 때마다 무작위 적에게 피해를 {value1} 줍니다. 그 후 피해가 {Value2} 증가합니다.'
 WuyishiDNA:
   Name: 무의식의 유전자
   Description: "|각성| 상태에 들어섭니다. 지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n내 턴 종료 시 |각성| 상태가\
@@ -2523,3 +2525,62 @@ GlacialSpike:
   Name: 뾰족한 고드름
   Description: "피해를 {Damage} 주고 |빙결|을 가합니다.\n|빙결탄|을 한 장 얻습니다."
   FlavorText: 이 스펠을 사용할 때면 항상 점프를 반복한다더라.
+SuperNova:
+  Name: 초신성
+  Description: "{Mana}를 얻습니다.\n뽑을 카드 더미에서 무작위 공격 카드 {Value1}장을 뽑아 손으로 가져옵니다."
+YijiuDraw:
+  Name: 용궁의 서신
+  Description: "|예지| {Scry}.\n카드를 {Value1}장 뽑습니다."
+BeihaiWangxiang:
+  Description: "|보호막|을 {Shield} 얻습니다.\n보호막의 절반만큼 |억압|을 얻습니다."
+  Name: 피해망상
+SuikaDraw:
+  Description: 손의 총 카드 수가 {Value1}장이 될 때까지 카드를 뽑습니다.
+  Name: 주귀운집
+YoumuHybrid:
+  Description: "<sprite=\"ManaSprite\" name=\"W\">|를 지불할 시|: 손에서 카드를 최대 {Value1}장까지\
+    \ |소멸|시킵니다.\n<sprite=\"ManaSprite\" name=\"G\">|를 지불할 시|: |그레이즈|를 {Value2} 얻습니다."
+  UpgradedDescription: "<sprite=\"ManaSprite\" name=\"W\">|를 지불할 시|: 손, 뽑을 카드 더미,\
+    \ 버린 카드 더미에서 카드를 최대 {Value1}장까지 |소멸|시킵니다.\n<sprite=\"ManaSprite\" name=\"G\">|를\
+    \ 지불할 시|: |그레이즈|를 {Value2} 얻습니다."
+  Name: 반인반령
+FutoLight:
+  Name: 오오모노이미 정찬
+  Description: 손에 있는 카드들 중 총 코스트가 1 이상인 모든 카드의 코스트가 |일시적으로| {Mana}이 됩니다.
+ColdHearted:
+  Name: 차디찬 핏줄
+  Description: "이번 턴동안 |얼음 창|이 |빙결|이 걸린 대상에게 가하는 피해 배수가 세 배가 됩니다.\n|얼음 창|을 {Value1}장\
+    \ 얻습니다. 그 카드는 |일시적으로| {Mana}의 코스트를 갖고, |소멸|과 |휘발성|을 지닙니다."
+ShopAttack:
+  Name: 진상 포착
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다."
+ShopDefense:
+  Name: 청정 에너지
+  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다."
+ShopSearch:
+  Name: 민간 레이더
+  Description: 뽑을 카드 더미에서 공격 혹은 방어 카드 중 하나를 골라 손으로 가져옵니다.
+FrozenOrb:
+  Name: 얼음구
+  Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n|빙결탄|을 {Value1}장 얻습니다."
+SiwangLaiDian:
+  Description: "손에서 |공격 카드| 한 장을 고르고 |소멸|시킵니다. 해당 카드의 복사본 {Value1}장을 뽑을 카드 더미의 꼭대기에\
+    \ 올려놓습니다.\n|기본 카드|를 선택한 경우 복사본에 |보충|이 붙습니다."
+  UpgradedDescription: "손에서 카드 한 장을 고르고 |소멸|시킵니다. 해당 카드의 복사본 {Value1}장을 뽑을 카드 더미의\
+    \ 꼭대기에 올려놓습니다.\n|기본 카드|를 선택한 경우 복사본에 |보충|이 붙습니다."
+  Name: 두렵고 사랑스런 전화
+WuyunJiekong:
+  Name: 오온개공
+  Description: "뽑을 카드 더미, 손, 버린 카드 더미의 모든 |상태| 및 |저주| 카드를 소멸시킵니다.\n모든 부정적인 상태 이상을\
+    \ 제거합니다."
+MirrorTest:
+  Name: 거울 검사
+  Description: "|보호막|을 {Block} 얻습니다.\n|손에 있을 경우|: 인접한 카드를 사용한 뒤 |공격 카드|를 사용하면 {SelfName}가\
+    \ 사용된 카드의 복사본으로 변하면서 |보호막|을 {Block} 줍니다."
+QingxingMeng:
+  Name: 의식에 잠기다
+  Description: "내 턴 시작 시 |완전 무작위 희귀| 카드 {Value1}장을 얻습니다. 그 카드는 |일시적으로| {Mana}의 코스트와\
+    \ |소멸|, |휘발성|을 가집니다.\n매 턴마다 |희귀| 카드를 최대 {Limit}장까지밖에 쓸 수 없게 됩니다."
+HuiyinDraw:
+  Name: 진품명품
+  Description: 카드를 {Value1}장 뽑습니다.

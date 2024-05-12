@@ -245,7 +245,7 @@ MaoyuBlock:
   Description: 공격을 받을 시 |방어|를 {Level} 얻습니다.
 Servant:
   Name: 사역마
-  Description: "주인이 쓰러질 시 사역마는 자동으로 사라집니다.\n이 때 사망 효과는 발동되지 않습니다."
+  Description: "필드에 사역마만 남아있을 경우 자동으로 사라집니다.\n이 때 사망 효과는 발동되지 않습니다."
 RockHardAura:
   Description: 요석에 의해 보호받습니다. 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 요석의 비호
@@ -301,7 +301,7 @@ FastAttack:
   Name: 최속
   Description: 카드를 처음 사용할 시 {OwnerName}가 {PlayerName}에게 |공격| 피해를 {Level} 줍니다.
   ExtraDescription: "카드를 처음 사용할 시 {OwnerName}가 {PlayerName}에게 |공격| 피해를 {Level} 줍니다.\n\
-    이미 발생한 효과로, {OwnerName}의 다음 행동 시 회복됩니다."
+    (이미 발생한 효과로, {OwnerName}의 다음 행동 시 회복됩니다.)"
 AccuracyModule:
   Name: 유도 모듈
   Description: '{OwnerName}의 공격이 |명중|합니다.'
@@ -600,8 +600,8 @@ KokoroDanceSe:
   Description: 적이 부정적 효과를 받을시 피해를 {Level} 줍니다.
 FrozenThroneSe:
   Name: 얼어붙은 왕좌
-  Description: 내 턴 시작 시 |얼음 조각+|을 {Level}장 얻습니다.
-  Brief: 내 턴 시작 시 |얼음 조각+|을 얻습니다.
+  Description: 내 턴 시작 시 손에 |빙결탄|이 {Level}장 이하라면 |빙결탄|을 {Level}장 얻습니다.
+  Brief: 내 턴 시작 시 손에 |빙결탄|이 없다면 |빙결탄|을 얻습니다.
 YonglinCardSe:
   Name: 은퇴한 현자
   Description: 내 턴 종료 시 뽑을 카드 더미에 |거짓된 달|을 {Level}장 섞어넣습니다.
@@ -801,11 +801,11 @@ Love:
   Description: "내 턴 시작 시 |사랑|을 2 잃습니다. 카드를 {Draw}장 뽑은 뒤 |열애| 상태에 들어섭니다.\n"
   Brief: 내 턴 시작 시 |사랑|을 2 잃습니다. 카드를 3장 뽑은 뒤 |열애| 상태에 들어섭니다.
 MindPassion:
-  Description: "|열애|는 |마음가짐|의 일종으로, 각 |마음가짐|은 한 번에 한 종류만 가질 수 있습니다. 적 턴이 될 시 |마음가짐|을\
-    \ 잃습니다.\n모든 공격이 |명중|합니다. 공격 카드를 사용할 시 |사랑|을 1 잃고 공격 피해를 두 배로 늘립니다."
-  Name: 열애
-  Brief: "|열애|는 |마음가짐|의 일종으로, 각 |마음가짐|은 한 번에 한 종류만 가질 수 있습니다. 적 턴이 될 시 |마음가짐|을 잃습니다.\n\
-    모든 공격이 |명중|합니다. 공격 카드를 사용할 시 |사랑|을 1 잃고 공격 피해를 두 배로 늘립니다."
+  Description: "|열정|은 |의식|의 일종으로, 각 |의식|은 한 번에 한 종류만 가질 수 있습니다.\n공격 카드 사용 시 |열정|에서\
+    \ 벗어날 때 얻는 |화력|이 {Fire} 증가합니다.\n방어 카드 사용 시 |열정|에서 벗어납니다."
+  Name: 열정
+  Brief: "|열정|은 |의식|의 일종으로, 각 |의식|은 한 번에 한 종류만 가질 수 있습니다.\n공격 카드 사용 시 |열정|에서 벗어날 때\
+    \ 얻는 |화력|이 {Fire} 증가합니다.\n방어 카드 사용 시 |열정|에서 벗어납니다."
 MindPeace:
   Description: "|평온|은 |마음가짐|의 일종으로, 각 |마음가짐|은 한 번에 한 종류만 가질 수 있습니다. 적 턴이 될 시 |마음가짐|을\
     \ 잃습니다.\n|평온| 상태에서 벗어날 시 {Mana}를 얻습니다."
@@ -938,3 +938,17 @@ LimaoDisguiser:
 SuwakoHex:
   Name: 방해
   Description: 내 턴 시작 시 무작위 카드 여러 장을 무용지물로 만듭니다.
+  ExtraDescription: "내 턴 시작 시 무작위 카드 여러 장을 무용지물로 만듭니다.\n(이미 발생한 효과로, {OwnerName}의\
+    \ 다음 행동 시 회복됩니다.)"
+FreezeBulletSe:
+  Name: 동결탄막
+  Description: "{OwnerName}를 공격하는 적에게 |빙결|을 가합니다. {Level}회 남았습니다.\n{OwnerName}의 다음\
+    \ 턴 시작 시 효과가 제거됩니다."
+DeepFreezeSe:
+  Name: 얼음날의 춤
+  Description: 청색 카드를 사용할 시 |일시 화력|을 {Level} 얻습니다.
+  Brief: 청색 카드를 사용할 시 |일시 화력|을 얻습니다.
+ColdHeartedSe:
+  Name: 차디찬 핏줄
+  Description: "|얼음 창|이 |빙결|이 걸린 대상에게 가하는 피해 배수가 세 배가 됩니다.\n턴 종료 시 |차디찬 핏줄|은 사라집니다."
+  Brief: "|얼음 창|이 |빙결|이 걸린 대상에게 가하는 피해 배수가 세 배가 됩니다.\n턴 종료 시 |차디찬 핏줄|은 사라집니다."
