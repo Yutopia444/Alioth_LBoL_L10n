@@ -2074,9 +2074,10 @@ KokoroAttack:
     隨機棄一張牌。
   FlavorText: 被下一餐食什麼這個問題嚴重困擾。
 
+  UpgradedDescription: "對所有敵人造成 {Damage} 點傷害。\n選擇一張牌手牌丟棄。"
 NitoriUnderWater:
   Name: 水色絨毯
-  Description: 獲得 {Value1} 回合|光學迷彩|。
+  Description: "獲得 {Value1} 回合|光學迷彩|。\n抽 {Value2} 張牌。"
   FlavorText: 入水後，彈幕的殺傷力將會大大減弱。
 
 ShuimiUnderWater:
@@ -2524,6 +2525,7 @@ YukariAttack:
   Name: 生與死的境界
   Description: |-
     造成 {Damage} 點傷害 {Value1} 次。
+    |成長|：傷害提高 {Value2} 點。
     如果{PlayerName}在自己回合內恢復或失去過生命，回合結束時{SelfName}從棄牌堆回到手中且|暫塑|為{Mana}。
   FlavorText: 「生與死之間有一條纖薄的境界線。你會在那裏找到我。」
 
@@ -2622,10 +2624,10 @@ YukariBox:
 BaitianCard:
   Name: 稗田的轉生
   Description: |-
-    獲得 {Block} 點|格擋|。
-    從棄牌堆中選擇一張牌，將它置於抽牌堆頂，|暫時降低|它的 {Value1} 點隨機費用。
+    棄掉所有的手牌，抽等量的牌。
   FlavorText: 在嘗試了電子的資訊儲存媒介後，稗田阿求小姐有了更多喝下午茶的閒暇時間。
 
+  UpgradedDescription: 棄掉所有的手牌，抽等量的牌。
 NueExile:
   Name: 平安時代的黑雲
   Description: "選擇一張手牌|放逐|。\n將一張隨機的卡牌加入手中，它|暫塑|為{Mana}。"
@@ -2796,7 +2798,7 @@ SkyWater:
   Name: 天水的奇蹟
   Description: |-
     獲得 {Shield} 點|護盾|。
-    抽牌階段多抽 {Value1} 張牌。
+    將手牌抽至上限。
 
 LifeGame:
   Name: 生命遊戲
@@ -3738,3 +3740,27 @@ QingxingMeng:
   Name: 意識下潛
   Description: "{PlayerName}的回合開始時，將 {Value1} 張|完全隨機|的|稀有|牌加入手中，它暫塑為{Mana}，具有|放逐|、|虛無|。\n\
     {PlayerName}的每個回合只能打出 {Limit} 層張|稀有|牌。"
+SuperNova:
+  Description: "獲得{Mana}。\n將抽牌堆中的隨機 {Value1} 張攻擊牌移入手中。"
+  Name: 超新星
+ShopAttack:
+  Name: 捕捉真相
+  Description: "造成 {Damage} 點傷害。\n抽 {Value1} 張牌。"
+YijiuDraw:
+  Description: "|占卜| {Scry} 。\n抽 {Value1} 張牌。"
+  Name: 龍宮來訊
+FutoLight:
+  Name: 大物忌正餐
+  Description: 將所有費用總數大於一的手牌|暫塑|爲{Mana}。
+HuiyinDraw:
+  Name: 文物鑑寶
+  Description: 抽 {Value1} 張牌。
+ShopDefense:
+  Name: 清潔能源
+  Description: "獲得 {Block} 點|格擋|。\n抽 {Value1} 張牌。"
+ShopSearch:
+  Name: 私家雷達
+  Description: 從抽牌堆中選擇一張攻擊牌或防禦牌移入手中。
+SuikaDraw:
+  Name: 酒鬼雲集
+  Description: 抽牌直到手牌達到 {Value1} 張。
