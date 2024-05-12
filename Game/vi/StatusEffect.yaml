@@ -102,8 +102,8 @@ Poison:
   Name: Nhiễm Độc
 Servant:
   Name: Triệu Hồi
-  Description: "Sau khi kẻ triệu hồi bị hạ gục, các quái được triệu hồi cũng bị tiêu\
-    \ diệt.\nChúng sẽ không kích hoạt các hiệu ứng bị hạ gục."
+  Description: "Khi chỉ còn lại những kẻ địch được triệu hồi, tất cả bị hạ gục ngay\
+    \ lập tức.\nChúng sẽ không kích hoạt các hiệu ứng bị hạ gục."
 DeathExplodeCount:
   Description: "Gây {Level} sát thương cho {PlayerName} khi {OwnerName} bị hạ gục.\n\
     Sẽ kích nổ sau {Count} lượt, gây gấp đôi lượng sát thương."
@@ -642,7 +642,7 @@ ChargingPotionSe:
 PotionBaseDamageSe:
   Brief: '|Lọ Thuốc Bất Ổn| gây thêm sát thương.'
   Name: Thành Phần Dễ Nổ
-  Description: '|Lọ Thuốc Bất Ổn| gây thêm |Level| sát thương.'
+  Description: '|Lọ Thuốc Bất Ổn| gây thêm {Level} sát thương.'
 ReimuFreeAttackSe:
   Brief: Một vài lá Tấn Công tiếp theo |tạm thời tốn| {Mana} để chơi.
   Name: Ảo Tưởng Nhất Trùng
@@ -741,10 +741,10 @@ DrawPhaseAddKnife:
     lên tay.
 ExtraBlizzard:
   Brief: Vào đầu lượt tiếp theo của {OwnerName}, cô |Chuẩn Xác| gây sát thương đồng
-    thời yểm |Lạnh Giá| lên mỗi kẻ địch.
+    thời yểm |Lạnh Giá| lên từng kẻ địch.
   Name: Bão Tuyết Đang Tới
   Description: Vào đầu lượt tiếp theo của {OwnerName}, cô |Chuẩn Xác| gây {Damage}
-    sát thương đồng thời yểm |Lạnh Giá| lên mỗi kẻ địch.
+    sát thương đồng thời yểm |Lạnh Giá| lên từng kẻ địch.
 FrozenThroneSe:
   Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá |Tinh Thể Băng+| lên tay.
   Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá |Tinh Thể Băng+| lên
@@ -790,10 +790,10 @@ MinengZhuruSe:
   Brief: Khi |kỹ năng bị động| của một lá |Đồng Đội| được kích hoạt, nó kích hoạt
     thêm một vài lần nữa.
 WhiteWorldSe:
-  Description: Vào đầu lượt của {OwnerName}, yểm |Lạnh Giá| lên mỗi kẻ địch {Level}
+  Description: Vào đầu lượt của {OwnerName}, yểm |Lạnh Giá| lên từng kẻ địch {Level}
     lần.
   Name: Thế Gian Một Màu Trắng Xóa
-  Brief: Vào cuối lượt của {OwnerName}, yểm |Lạnh Giá| lên mỗi kẻ địch một số lần.
+  Brief: Vào cuối lượt của {OwnerName}, yểm |Lạnh Giá| lên từng kẻ địch một số lần.
 StarFriendSe:
   Brief: Khi {SourceCardName} gây sát thương, yểm |Bị Nhắm Tới|.
   Name: Sao Trời Giăng Lưới
@@ -830,11 +830,11 @@ ZhuozhuangChengzhangSe:
   Name: Sinh Trưởng Khỏe Mạnh
   Brief: Khi {PlayerName} kết thúc lượt, thêm {Level} lá |Sức Sống| lên tay.
 NextTurnColdAll:
-  Brief: Vào đầu lượt tiếp theo của {OwnerName}, yểm |Lạnh Giá| lên mỗi kẻ địch một
+  Brief: Vào đầu lượt tiếp theo của {OwnerName}, yểm |Lạnh Giá| lên từng kẻ địch một
     số lần.
   Name: Lưu Giữ Giá Lạnh
-  Description: Vào đầu lượt tiếp theo của {OwnerName}, yểm |Lạnh Giá| lên mỗi kẻ địch
-    {Level} lần.
+  Description: Vào đầu lượt tiếp theo của {OwnerName}, yểm |Lạnh Giá| lên từng kẻ
+    địch {Level} lần.
 FairyTreeSe:
   Description: Mỗi khi triệu hồi bằng cách chơi một lá |Đồng Đội|, nhận {Level} |Khiên|.
   Name: Nhà Của Tiên Nữ
@@ -930,15 +930,15 @@ NextTurnLoseGame:
   Brief: Khi bắt đầu lượt sau thua trận đấu.
   Name: Sắp Vào Quan Tài
 ShannvAbilitySe:
-  Description: Khi {PlayerName} kết thúc lượt, yểm {Level} |Nhiễm Độc| lên mỗi kẻ
+  Description: Khi {PlayerName} kết thúc lượt, yểm {Level} |Nhiễm Độc| lên từng kẻ
     địch.
   Name: Bệnh Sốt Không Rõ Từ Đâu
-  Brief: Khi {PlayerName} kết thúc lượt, yểm |Nhiễm Độc| lên mỗi kẻ địch.
+  Brief: Khi {PlayerName} kết thúc lượt, yểm |Nhiễm Độc| lên từng kẻ địch.
 MeihongFireSe:
   Name: Bùa Lửa Không Phân Biệt
-  Brief: "Khi {PlayerName} kết thúc lượt, gây sát thương lên mỗi kẻ địch.\nCũng gây\
+  Brief: "Khi {PlayerName} kết thúc lượt, gây sát thương lên từng kẻ địch.\nCũng gây\
     \ sát thương khi một lá |Vận Rủi| hoặc Trạng Thái được bốc."
-  Description: "Khi {PlayerName} kết thúc lượt, gây {Level} sát thương lên mỗi kẻ\
+  Description: "Khi {PlayerName} kết thúc lượt, gây {Level} sát thương lên từng kẻ\
     \ địch.\nCũng gây sát thương khi một lá |Vận Rủi| hoặc Trạng Thái được bốc."
 BailianBlackSe:
   Description: Mọi lá Phòng Thủ, Kỹ Năng, Trạng Thái nhận thuộc tính |Trục Xuất|,
@@ -1084,10 +1084,11 @@ ZhenmiaowanAttackSe:
   Description: Các lá Kỹ Năng tốn ít đi {Mana} lượt này.
   ExtraDescription: Các lá bài tốn ít đi {Mana} lượt này.
 HekaHellRainSe:
-  Description: "Khi kết thúc lượt, gây sát thương lên mỗi kẻ địch dựa trên số lá đã\
-    \ chơi trong lượt, mỗi lá tăng {Level} sát thương.\n(Tổng cộng {Count} sát thương)"
+  Description: "Khi kết thúc lượt, gây sát thương lên từng kẻ địch dựa trên số lá\
+    \ đã chơi trong lượt, mỗi lá tăng {Level} sát thương.\n(Tổng cộng {Count} sát\
+    \ thương)"
   Name: Cơn Mưa Địa Ngục
-  Brief: Khi kết thúc lượt, gây sát thương lên mỗi kẻ địch dựa trên số lá đã chơi
+  Brief: Khi kết thúc lượt, gây sát thương lên từng kẻ địch dựa trên số lá đã chơi
     trong lượt.
 HuiyeTimeSe:
   Description: Chỉ có thể chơi {Limit} lá trong lượt, còn lại {Count} lá.
@@ -1175,3 +1176,9 @@ QingxingMengSe:
     \ lên tay, {Level:plural one='nó' other='chúng'} |tạm thời tốn| <sprite=\"ManaSprite\"\
     \ name=\"1\"> và sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.\n{PlayerName} chỉ\
     \ có thể chơi tối đa {Limit} lá Hiếm mỗi lượt."
+YukariFlyObjectSe:
+  Brief: Vào đầu lượt tiếp theo của {PlayerName}, gây một lượng sát thương lên kẻ
+    địch có nhiều HP nhất.
+  Name: Vật Thể Bay Siêu Tốc
+  Description: Vào đầu lượt tiếp theo của {PlayerName}, gây {Level} sát thương lên
+    kẻ địch có nhiều HP nhất.
