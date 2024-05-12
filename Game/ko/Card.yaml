@@ -185,7 +185,8 @@ YakongDianxue:
   FlavorText: 뒤통수 치기!
 QinggeManwu:
   Name: 청아한 너울춤
-  Description: 카드를 {Value1}장 뽑고, 이번 전투 동안 해당 카드를 |강화|합니다.
+  Description: "카드를 {Value1}장 뽑고, 이번 전투 동안 해당 카드를 |강화|합니다.\n|강화|된 카드를 뽑을 시 |보호막|을\
+    \ {Value2} 얻습니다."
   FlavorText: 레이무의 가벼운 몸동작과 함께, 먼지가 내려앉는다.
 OutInGap:
   Description: '|p:완전 무작위| 카드 {Value1}장 중 하나를 얻습니다. 해당 카드는 {Mana}의 |일시 코스트|를 가지며,
@@ -365,6 +366,7 @@ MarisaSteal:
   Name: 빌려쓰기
   Description: "|채홍|을 {Value1}장 얻습니다.\n|가불| {Value2}."
   FlavorText: '"이거 좀 좋아보이는데, 내가 쓴다?"'
+  UpgradedDescription: '|채홍|을 {Value1}장 얻습니다.'
 WinterWarm:
   Description: "|집중|을 {Value1} 얻습니다."
   Name: 손난로
@@ -608,11 +610,9 @@ SummerFlower:
   FlavorText: 이 돌만 있으면 머리를 엄청 예쁜 모양으로 만들어 줄 수 있어요.
 ColdBreath:
   Name: 다이아몬드 브레스
-  Description: '무작위 적에게 {Damage}의 피해를 가합니다.
+  Description: '피해를 {Damage} 줍니다.
 
-    |빙결|이 있는 적을 우선적으로 공격하고, |빙결|이 있는 적을 공격하면 {Mana}를 얻습니다.
-
-    카드를 {Value1}장 뽑습니다.'
+    대상이 |빙결|이 있다면 {Mana}를 얻습니다.'
   FlavorText: 격투 게임 필살기.
 IceLance:
   Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 {Value1}배의 피해를 가합니다."
@@ -620,7 +620,7 @@ IceLance:
   FlavorText: 이 스펠을 사용할 때면 항상 점프를 반복한다더라.
 BlueRose:
   Name: 얼음 장미
-  Description: "피해를 {Damage} 줍니다.\n대상에게 |빙결|이 있다면 |방어|를 {Block} 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다."
 IceBlock:
   Description: "모든 피해를 한 턴동안 무시합니다.\n모든 |방어|, |보호막|, |그레이즈|를 잃습니다.\n손패를 한 번 |보존|한\
     \ 뒤 내 턴을 끝냅니다."
@@ -632,13 +632,15 @@ CallFriends:
     \ 한 명이 무조건 추가 선택지에 나타납니다."
   DetailText: '|e:대상 카드군|은 총 코스트가 5 미만이어야 합니다.'
 CirnoInForest:
-  Description: "|방어|를 {Block} 얻습니다.\n|가불| {Value1}."
+  Description: "|방어|를 {Block} 얻습니다.\n|그레이즈|를 {Value1} 얻습니다."
   Name: 감쪽같은 위장
   FlavorText: 숲의 요정.
 FreezeToIce:
-  Description: 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의 |얼음 조각|을 얻습니다.
+  Description: 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의 |얼음 조각|을 뽑을 카드 더미에 넣습니다.
   Name: 냉동 표본
   FlavorText: 모리야 신사에서 사용 금지.
+  UpgradedDescription: 손, 뽑을 카드 더미, 버릴 카드 더미 모두에서 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의
+    |얼음 조각|을 뽑을 카드 더미에 넣습니다.
 DeepFreeze:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n모든 적에게 |빙결|을 가하고, 대상한테 이미 |빙결|이 있을 경우 |빙결|\
     \ 대신 |딥 프리즈|를 가합니다."
@@ -665,19 +667,25 @@ CirnoBlockU:
   FlavorText: 만 년동안 냉장고에 쳐박혀 있던 소고기는 아주 좋은 방패지.
 IceLaser:
   Name: 냉동광선
-  Description: "피해를 {Damage} 주고 |빙결|을 가합니다."
+  Description: "피해를 {Damage} 주고 |빙결|을 가합니다.\n뽑을 카드 더미의 바닥을 확인합니다. 그 카드가 청색이라면 또다른\
+    \ 무작위 적에게도 효과가 발동합니다."
   FlavorText: 치르노는 이 공로로 1997년 노벨 물리학상 특별상을 수상했습니다.
 Ice:
-  Description: '|빙결|을 가합니다.'
+  Description: '{Mana}를 얻습니다.
+
+    뽑을 카드 더미에서 무작위 청색 카드 두 장을 꺼냅니다. 그 중 한 장을 손으로 가져오고, 나머지 한 장은 카드 더미의 바닥으로 보냅니다.'
   Name: 얼음 조각
+  FlavorText: 얼음 날개 중 한 조각.
 FreezeBullet:
   Name: 동결탄막
-  Description: "|방어|를 {Block} 얻습니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n다음 턴 가장 먼저 {PlayerName}를 공격하는 적에게 |빙결|을 가합니다."
+  UpgradedDescription: "|방어|를 {Block} 얻습니다.\n다음 턴 가장 먼저 {PlayerName}를 공격하는 두 명의 적에게\
+    \ |빙결|을 가합니다."
+  FlavorText: 우리의 구세주 치르노!
 FrostGarden:
   FlavorText: 에어컨은 필요 없어.
   Name: 얼어붙은 화원
-  Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 {SelfName}의 코스트가 {Mana}가\
-    \ 됩니다."
+  Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 다음 턴 효과를 한 번 더 발동시킵니다."
 IceSaber:
   Description: "피해를 {Damage}씩 {Value1}번 주고 |빙결|을 가합니다.\n사용 시 손에 있는 파란색 카드를 원하는 만큼\
     \ 버립니다.\n버린 카드의 수만큼 공격을 한 번씩 더 가합니다."
@@ -687,9 +695,6 @@ CirnoDraw:
   Name: 요정의 지혜
   Description: 카드를 {Value1}장 뽑습니다.
   UpgradedDescription: "카드를 {Value1}장 뽑습니다.\n다음 턴 시작 시 카드를 {Value2}장 뽑습니다."
-IceGun:
-  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n|빙결|이 있는 적에겐 {Value2}배의 피해를\
-    \ 줍니다."
 Tether:
   Name: 에워싸기
   Description: "|방어|를 {Block} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value1} 얻습니다."
@@ -715,10 +720,6 @@ MoreFriends:
 FairyOnIce:
   Name: 빙상의 요정
   Description: "카드를 {Value1}장 뽑습니다.\n|빙결|이 있는 적 하나 당 |그레이즈|를 {Value2} 얻습니다. "
-CirnoFestival:
-  Description: '|그레이즈|를 {Value1} 얻습니다.
-
-    손에 있는 무작위 카드 {Value2}장의 무작위 코스트를 |일시적으로| 하나 감소시킵니다.'
 DanmuJade:
   Name: 탄막의 쌍고치
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|채홍|을 한 장 얻습니다.\n|{Mana}를 지불할 시|: |화력|과\
@@ -828,12 +829,12 @@ AttackMagic:
   Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|단검|을 {Value2}장 얻습니다."
 SakuyaSleep:
   Name: 잠깐의 휴식
-  Description: "|채홍|을 한 장 얻습니다.\n턴을 종료합니다."
-  UpgradedDescription: '|채홍|을 한 장 얻습니다.'
+  Description: "|광휘|를 한 장 얻습니다.\n턴을 종료합니다."
+  UpgradedDescription: '|광휘|를 한 장 얻습니다.'
   FlavorText: 시간 정지의 최선의 활용법.
 Lijian:
   Name: 흐릿한 칼날
-  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|카드를 뽑을 시|: 이번 전투에서 코스트가 {Mana}\
+  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|손에 들어올 시|: 이번 전투에서 코스트가 {Mana}\
     \ 감소합니다."
   FlavorText: 이 칼날을 봤다면 희망을 버려라!
 SakuyaBlockU:
@@ -999,7 +1000,7 @@ TimeAuraAttack:
   Description: "피해를 {Damage} 줍니다.\n|시간 펄스|를 {Value1} 얻습니다."
 DefenseDraw:
   Name: 루나 사이클
-  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n|카드를 뽑을 시|: 이 카드의 코스트가 이번\
+  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n|손에 들어올 시|: 이 카드의 코스트가 이번\
     \ 전투동안 {Mana} 감소합니다."
 ExileMagic:
   Description: 손의 카드를 최대 {Value1}장 골라 |소멸|시키고, |소멸|된 카드의 갯수만큼 |단검|을 얻습니다.
@@ -1039,7 +1040,7 @@ PurpleMogu:
   Name: 자색졸각버섯
   Description: 체력을 {Value1} 회복합니다.
 ManaJungle:
-  Description: '|카드를 뽑을 시|: |채홍|을 {Value1}장 얻고, {SelfName}은 |소멸|됩니다.'
+  Description: '|손에 들어올 시|: |채홍|을 {Value1}장 얻고, {SelfName}은 |소멸|됩니다.'
   Name: 삼림 탐험
   FlavorText: '"이거거든!"'
 KnifeBounce:
@@ -1169,7 +1170,9 @@ VampireHunter:
   Description: "피해를 {Damage} 줍니다.\n목표에게 |흡혈귀|가 있다면 피해를 {Value1}배 줍니다."
   FlavorText: 사쿠야가 홍마관에 들어선 이후, 이 칭호는 「월급 사냥꾼」으로 바뀌었습니다.
 SakuyaAttackX:
-  Description: '|{Mana}를 지불할 시|: 피해를 {Damage} 줍니다.'
+  Description: '|사용된 {Mana}마다|: 피해를 {Damage} 줍니다.
+
+    공격 도중 목표가 쓰러질 시, 자동으로 다른 대상을 목표로 해 남은 공격을 계속해서 가합니다.'
   Name: 프로펠링 실버
 SakuyaClock:
   Description: "피해를 {Damage} 줍니다.\n이 카드로 적을 쓰러트릴시 카드를 |소멸|시킨 뒤 지금 턴을 종료하고, 내 턴을 한\
@@ -1252,7 +1255,7 @@ KnifeHell:
   Description: "|단검|을 {Value1}장 얻습니다.\n갖고 있는 모든 |단검|을 |강화|합니다."
   Name: 실버 엘레강스
 LunaDial:
-  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|카드를 뽑을 시|: 이 카드의 코스트가 이번 전투동안 {Mana}\
+  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|손에 들어올 시|: 이 카드의 코스트가 이번 전투동안 {Mana}\
     \ 감소합니다."
   Name: 프라이빗 스퀘어
 SakuyaUsage2:
@@ -1444,7 +1447,7 @@ HappyNewYear:
     \ 카드를 고를 시 |영력|을 {Value1} 얻습니다."
   Name: 새해 참배
 SummerIce:
-  Description: "무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n다음 턴 시작 시 {Mana}를 얻습니다."
+  Description: "다음 턴 시작 시 {Mana}를 얻습니다."
   Name: 여름날의 빙수
   FlavorText: 한 입 가득 먹으면 머리 속까지 짜릿해지는 경험!
 Opt:
@@ -1455,11 +1458,9 @@ OptBottom:
   Description: '{TargetName}을 뽑을 카드 더미의 맨 밑으로 보냅니다. 카드를 한 장 뽑습니다.'
   Name: 침몰
 ColdSnap:
-  Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n손의 카드 한 장을 골라 뽑을 카드 더미의\
-    \ 마지막으로 보냅니다."
+  Description: "뽑을 카드 더미에서 청색 카드를 {Value1}장 손으로 가져옵니다. 가져온만큼 |보호막|을 {Value2} 얻습니다."
   Name: 급속냉각
 DiamondBlizzard:
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|선택|: 모든 적에게 |빙결|을 가합니다; 혹은 |방어|를 {Block} 얻습니다."
   ExtraDescription2: "모든 적에게 피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다."
 ColdChain:
   Description: 뽑을 카드 더미에서 최대 {Value1}장을 골라 손으로 가져옵니다. 해당 카드는 |보존|이 붙습니다.
@@ -1894,8 +1895,6 @@ ZhenmiaowanAttack:
   Name: 잇슨보시의 후예
   Description: "피해를 {Damage} 줍니다.\n이번 턴동안 능력 카드의 코스트가 {Mana} 감소합니다."
   UpgradedDescription: "피해를 {Damage} 줍니다.\n이번 턴동안 모든 카드의 코스트가 {Mana} 감소합니다."
-SnowGirlCard:
-  Name: 유키온나의 방문
 AliceAttack:
   Name: 데블리 라이트 레이
   Description: "피해를 {Damage} 줍니다.\n{Mana}를 얻습니다."
@@ -2274,8 +2273,6 @@ YaoguaiNaodianbo:
 Yehuchan:
   Description: "|그레이즈|를 {Value1}, |록온|을 {Value2} 얻습니다.\n|직감|: |각성| 상태에 들어섭니다."
   Name: 우매함의 봉우리
-HuiguiLizhi:
-  Name: 이성 회복
 YoubiKongjuzheng:
   Name: 폐소공포증
   Description: "|방어|를 {Block} 얻습니다.\n|직감|: |보호막|을 {Shield} 얻습니다."
@@ -2295,8 +2292,6 @@ XinliDunwu:
 DNARain:
   Name: DNA 산탄총
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|마음가짐에 들어설 시|: 피해가 {Value1} 증가합니다."
-MeihaoHuiyi:
-  Description: '|맞닿아있는 카드가 사용될 시|: |방어|를 {Block} 얻고, 무작위 카드를 한 장 |강화|합니다.'
 ZhuozhuangChengzhang:
   Name: 건강한 성장
   Description: 내 턴 종료 시 |활력|을 {Value1}장 얻습니다.
@@ -2487,8 +2482,6 @@ DollFactory:
 ZhenmiaowanAbility:
   Name: 요술 망치의 마력
   Description: 이번 전투에서 모든 카드의 코스트가 {Mana} 감소합니다.
-DeployIce:
-  Description: '|얼음 조각|을 |배치|합니다.'
 AutoHousework:
   Name: 가사 자동화
 DollRepair:
@@ -2520,3 +2513,15 @@ Frog:
   Name: 개구리
   Description: "이 카드엔 주술이 걸려 있습니다.\n기존 카드: {CardName}"
   NonbattleDescription: 이 카드엔 주술이 걸려 있습니다.
+IceBolt:
+  Name: 빙결탄
+  Description: 피해를 {Damage} 주고 |빙결|을 가합니다.
+  FlavorText: 이 스펠을 사용할 때면 항상 점프를 반복한다더라.
+ShiverArmor:
+  Name: 얼음서리 투사
+  Description: "|방어|를 {Block} 얻습니다.\n|얼음 갑옷|을 {Value1} 얻습니다."
+  FlavorText: 치르노가 시원하다고 느낄 때 쯤이면, 상대는 전혀 공감하지 못할 것이다.
+GlacialSpike:
+  Name: 뾰족한 고드름
+  Description: "피해를 {Damage} 주고 |빙결|을 가합니다.\n|빙결탄|을 한 장 얻습니다."
+  FlavorText: 이 스펠을 사용할 때면 항상 점프를 반복한다더라.
