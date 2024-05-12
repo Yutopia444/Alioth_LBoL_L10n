@@ -521,9 +521,9 @@ JinjiBlock:
   Name: Defensa de Emergencia
   FlavorText: '"Uf~, eso estuvo cerca. ¡Muy bien, ahora es mi turno!"'
 IceLaser:
-  Description: "Inflige {Damage} de daño.\nAplica |Frío|.\nMire la carta en la parte\
-    \ inferior de la pila de robo. Si es azul, repite este efecto en otro enemigo\
-    \ aleatorio."
+  Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear.\nMire la carta\
+    \ en la parte inferior de la pila de robo. Si es azul, repite este efecto en otro\
+    \ enemigo aleatorio."
   Name: Rayo Congelador
   FlavorText: Por esto, Cirno ganó el Premio Nobel de Física en 1997, como una colaboradora
     especial.
@@ -615,6 +615,7 @@ SakuyaLock:
   Description: "Activa <color=#B7F0FF>Encierro Plateado</color> una vez.\n({PlayerName}\
     \ recibe {Value1} de daño)."
   NonbattleDescription: Activa |Encierro Plateado|.
+  FlavorText: '"¿Bajo de HP? Eso es un problema para mí futuro yo."'
 Chunguang:
   Description: '|Cuando se roba|: |Purifica| {Value1}.'
   Name: Resplandor Puro
@@ -623,6 +624,9 @@ Payment:
   Name: Transferencia de Fondos
   Description: "Paga {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nLa <color=#b7646b>Coneja\
     \ Estafadora</color> se va inmediatamente."
+  FlavorText: 'Un amable recordatorio de parte de los organizadores de la Exposición
+    de la Capital Lunar: no se dejen engañar por las solicitudes de pagos o transferencias
+    de nadie a cambio de pistas sobre el incidente.'
 Bribery:
   Name: Soborno
   Description: "Paga {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#4f6e97>Megumu</color>\
@@ -1512,7 +1516,8 @@ PlayWithWater:
   UpgradedDescription: "Roba {Value1:plural one='% carta' other='% cartas'}.\nDescarta\
     \ hasta una carta."
 NitoriUnderWater:
-  Description: Gana |Camuflaje Óptico| por {Value1} turno{Value1:plural one='' other='s'}.
+  Description: "Gana |Camuflaje Óptico| por {Value1} turno{Value1:plural one='' other='s'}.\n\
+    Roba {Value2} carta{Value2:plural one='' other='s'}"
   Name: Manta Acuática
   FlavorText: Cuando estas bajo el agua, la letalidad del danmaku se reduce considerablemente.
 RumiaBlock:
@@ -1632,6 +1637,7 @@ KokoroAttack:
   Description: "Inflige {Damage} de daño a cada enemigo.\nDescarta una carta aleatoria."
   FlavorText: Está seriamente preocupada por la cuestión de qué comer en su próxima
     comida.
+  UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nDescarta una carta."
 ShuimiUnderWater:
   Description: '|Cuando se descarta o Exilia|: Gana {Mana}.'
   Name: Fantasma del Barco
@@ -1685,6 +1691,8 @@ ShannvAttack:
 YuyukoDebuff:
   Name: Sueño Eterno
   Description: Aplica {Value1} de |Débil| y |Vulnerable|.
+  FlavorText: La gente del mundo exterior probablemente tendría más miedo de un "sueño
+    sin perder peso".
 HinaAttack:
   Name: Rueda de la Desgracia
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
@@ -1802,6 +1810,7 @@ NiuqiDefense:
 XiaodingKill:
   Name: Ritual de Exorcismo
   Description: Si el objetivo tiene {Value1} o menos vida, es derrotado.
+  FlavorText: Esta es la carta que los conejos lunares desean purificar especialmente.
 QingeUpgrade:
   Description: "Inflige {Damage} de daño.\n|Exterminar|: |Mejora| Permanentemente\
     \ una carta."
@@ -1813,8 +1822,9 @@ KokoroDance:
 YukariAttack:
   Name: Límite de la Vida y la Muerte
   Description: "Inflige {Damage} de daño {Value1} ve{Value1:plural one='z' other='ces'}.\n\
-    Al final del turno de {PlayerName}, si su total de vida cambió en ese turno, devuelve\
-    \ {SelfName} de la pila de descarte a la mano. |Cuesta temporalmente| {Mana}."
+    |Crecimiento|: Aumenta el daño en {Value2}.\nAl final del turno de {PlayerName},\
+    \ si su total de vida cambió en ese turno, devuelve {SelfName} de la pila de descarte\
+    \ a la mano. |Cuesta temporalmente| {Mana}."
   FlavorText: '"Existe una delgada línea entre la vida y la muerte. Ahí me encontrarás."'
 TannvCard:
   Name: Cambiando las Tornas
@@ -1955,11 +1965,12 @@ HuiyinRetain:
     \ Luego, {PlayerName} toma un turno extra.\n|d:Límite de Tiempo {Mana}|"
 BaitianCard:
   Name: Transmigración de Hieda
-  Description: "Gana {Block} de |Bloqueo|.\nDevuelve una carta de la pila de descarte\
-    \ a la parte superior de la pila de robo. |Cuesta temporalmente| {Value1} maná\
-    \ aleatorio menos."
+  Description: "Descarta todas las cartas de la mano y roba esa misma cantidad de\
+    \ cartas."
   FlavorText: Después de probar los medios de almacenamiento electrónico, la señorita
     Hieda no Akyuu ahora tiene aún más tiempo libre para tomar el té por la tarde.
+  UpgradedDescription: Descarta todas las cartas de la mano y roba esa misma cantidad
+    de cartas.
 PoorAttack:
   Name: Caer en la Pobreza
   Description: "Pierde {Value1} <sprite=\"Point\" name=\"Gold\">.\nInflige {Damage}\
@@ -2160,8 +2171,7 @@ ShanyuCard:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Shield} de |Barrera|."
 SkyWater:
   Name: Milagro del Agua Celestial
-  Description: "Gana {Shield} de |Barrera|.\nRoba {Value1} carta{Value1:plural one=''\
-    \ other='s'} más durante la fase de robo."
+  Description: "Gana {Shield} de |Barrera|.\nRoba cartas hasta que la mano esté llena."
 LifeGame:
   Name: Juego de la Vida
   Description: "Las cartas que estaban adyacentes a {SelfName} |cuestan temporalmente|\
@@ -2230,6 +2240,7 @@ Tether:
   Name: Lazos
   Description: "Gana {Block} de |Bloqueo|.\nCada |Compañera| en la mano gana {Value1}\
     \ de |Influencia|."
+  FlavorText: Confía en tus amigas cuando salgas afuera.
 YouxiangMoon:
   Name: Belleza de la Naturaleza
   Description: Al comienzo de cada turno de {PlayerName}, agrega una |Flores de Verano|
@@ -2519,9 +2530,9 @@ Lunatic:
     {Value2} de vida.
 FruitShake:
   Name: Deliciosos Helados de Frutas
-  Description: "Inflige {Damage} de daño a cada enemigo. Aplica |Frío| a cada enemigo\n\
-    Si una |Compañera| fue convocada en este turno, {SelfName} cuesta {Mana} para\
-    \ jugar."
+  Description: "Inflige {Damage} de daño a cada enemigo. Aplica |Frío| a cada enemigo\
+    \ al golpear.\nSi una |Compañera| fue convocada en este turno, {SelfName} cuesta\
+    \ {Mana} para jugar."
   FlavorText: ¡Sabor a frutas tropicales, fresco y delicioso!
 DayaojingFriend:
   Description: '{FriendP}Inflige {Damage} de daño a un enemigo aleatorio.'
@@ -2575,6 +2586,7 @@ LunaFriend:
   ExtraDescription2: "{FriendU}Gana |Perfección| por {Value2} turno{Value2:plural\
     \ one='' other='s'}."
   Name: Luna, Silenciosa Luz Lunar
+  FlavorText: Investiga sigilosamente, sin hacer un solo sonido.
 LeidiFriend:
   Name: Letty, Encarnación del Invierno
   ExtraDescription2: '{FriendU}Inflige {Damage} de daño y aplica |Frío| a cada enemigo.'
@@ -3044,6 +3056,8 @@ TianziRock:
   UpgradedDescription: "Siempre que {PlayerName} recibe daño por un ataque, se reduce\
     \ {Value1} menos de daño.\nEste efecto no se acumula.\nA {PlayerName} no se le\
     \ puede aplicar con |Marcado|."
+  FlavorText: Les da un pequeño shock a estos mamíferos voladores, cortesía de los
+    Celestiales.
 MeilingWater:
   Description: "Gana {Value1} de |Poder|.\nColoca {Value2} carta{Value2:plural one='\
     \ de ataque aleatorio' other='s de ataques aleatorios'} desde la pila de robo\
@@ -3087,19 +3101,20 @@ ZhenmiaowanAbility:
   Name: Magia del Mazo
 DebugAddRandomCards:
   Name: Agrega Cartas Aleatorias
-  Description: WIP
+  Description: 'Carta de prueba: Agrega {Value1} cartas a la pila de robo/descarte.'
 DebugExileDrawDiscard:
   Name: Exilia la Pila de Robo y de Descarte
-  Description: WIP
+  Description: 'Carta de prueba: |Exilia| la pila de robo/descarte.'
 DebugAddRandomCardsSlow:
   Name: Agrega Cartas Aleatorias (Lento)
-  Description: WIP
+  Description: 'Carta de prueba: Agrega lentamente {Value1} cartas a la pila de robo/descarte.'
 DebugAddDeckCards:
   Name: Agrega Cartas a la Biblioteca
-  Description: WIP
+  Description: 'Carta de prueba: Agrega {Value1} cartas aleatorias a la biblioteca.'
 DebugAddHandCards:
   Name: Exilia la Mano y luego Agrega Cartas a la Mano
-  Description: WIP
+  Description: 'Carta de prueba: |Exilia| la mano, luego agrega {Value1} cartas a
+    la mano.'
 Qianqiang:
   Name: Linda Falange
 DollZuzhou:
@@ -3138,15 +3153,15 @@ DollRepair:
 DollFangzhen:
   Name: Falange de Muñecas
 IceBolt:
-  Description: "Inflige {Damage} de daño.\nAplica |Frío|."
+  Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear."
   Name: Bala de Hielo
 ShiverArmor:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Armadura de Escarcha|."
   Name: Refracción de Escarcha
 GlacialSpike:
   Name: Púa de Hielo
-  Description: "Inflige {Damage} de daño.\nAplica |Frío|.\nAgrega una |Bala de Hielo|\
-    \ a la mano."
+  Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear.\nAgrega una |Bala\
+    \ de Hielo| a la mano."
 FrozenOrb:
   Name: Orbe Congelado
   Description: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\nAgrega {Value1}\
@@ -3157,3 +3172,37 @@ ColdHearted:
     \ de Hielo| a la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
     \ {Mana} y tiene{Value1:plural one='s' other='n'} |Exilio| y |Etéreo|."
   Name: Sangre de Hielo
+HuiyinDraw:
+  Name: Tasación de Antigüedades
+  Description: Roba {Value1} carta{Value1:plural one='' other='s'}
+ShopAttack:
+  Description: "Inflige {Damage} de daño.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'}."
+  Name: Capturando la Verdad
+ShopSearch:
+  Description: Elige una carta de Ataque o de Defensa de la pila de robo para colocarla
+    en la mano.
+  Name: Radar Privado
+YijiuDraw:
+  Description: "|Explora| {Scry}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
+  Name: Mensaje del Palacio del Dragón
+FutoLight:
+  Description: Todas las cartas en la mano con un coste total de 1 o más |cuestan
+    temporalmente| {Mana}.
+  Name: Banquete de Oomonoimi
+SuikaDraw:
+  Name: Reunión de la Oni borracha
+  Description: Roba cartas hasta que queden {Value1} cartas en la mano.
+ShopDefense:
+  Name: Energia Limpia
+  Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
+    \ other='s'}."
+YoumuHybrid:
+  Name: Mitad Humana, Mitad Fantasma
+  Description: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: |Exilia| hasta\
+    \ {Value1} carta{Value1: plural one='' other='s'} de la mano.\n|Por cada <sprite=\"\
+    ManaSprite\" name=\"G\"> gastado|: Gana {Value2} de |Evasión|."
+SuperNova:
+  Name: Supernova
+  Description: "Gana {Mana}.\nColoca {Value1} carta{Value1:plural one=' de ataque\
+    \ aleatorio' other='s de ataques aleatorios'} desde la pila de robo hacia la mano."
