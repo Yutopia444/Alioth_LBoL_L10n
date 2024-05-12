@@ -830,6 +830,12 @@ OpenUniverse:
   DetailText: 不能以|复制品|为目标。
   FlavorText: 宇宙的本质是复读（？）
 
+SuperNova:
+  Name: 超新星
+  Description: |-
+    获得{Mana}。
+    将抽牌堆中的随机 {Value1} 张攻击牌移入手中。
+
 RedGiantStar:
   Name: 红巨星陨落
   Description: |-
@@ -2395,12 +2401,10 @@ KokoroAttack:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     随机弃一张牌。
+  UpgradedDescription: |-
+    对所有敌人造成 {Damage} 点伤害。
+    选择一张牌手牌丢弃。
   FlavorText: 被下一餐吃什么这个问题严重困扰。
-
-NitoriUnderWater:
-  Name: 水色绒毯
-  Description: 获得 {Value1} 回合|光学迷彩|。
-  FlavorText: 入水后，弹幕的杀伤力将会大大减弱。
 
 ShuimiUnderWater:
   Name: 船底幽灵
@@ -2421,6 +2425,17 @@ DoremyDuplicate:
   Description: 选择一张手牌，将 {Value1} 张的它的复制加入手中。
   DetailText: 不能以|复制品|为目标。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
+
+NitoriUnderWater:
+  Name: 水色绒毯
+  Description: |-
+    获得 {Value1} 回合|光学迷彩|。
+    抽 {Value2} 张牌。
+  FlavorText: 入水后，弹幕的杀伤力将会大大减弱。
+
+HuiyinDraw:
+  Name: 文物鉴宝
+  Description: 抽 {Value1} 张牌。
 
 GuijiZaoxingYuan:
   Name: 圆形造形术
@@ -2782,27 +2797,6 @@ HuiyeMana:
   Description: '{PlayerName}的回合开始时，获得 {Value1} 点随机的法力；每回合提高 {Value1} 点。'
   FlavorText: 孩童的歌谣传唱着光辉的罪人的传说。
 
-Shoot:
-  Name: 射击
-  Description: 造成 {Damage} 点伤害。
-  FlavorText: 幻想乡随处可见的弹幕。
-
-Boundary:
-  Name: 结界
-  Description: 获得 {Block} 点|格挡|。
-  FlavorText: 有着和大结界相同的本质。
-
-Astrology:
-  Name: 占星
-  Description: |-
-    |占卜| {Scry} 。
-    抽 {Value1} 张牌。
-
-Xiaozhuo:
-  Name: 小酌怡情
-  Description: 获得 {Value1} 点|暂得火力|。
-  FlavorText: 你醉了，敌人的机会来了。
-
 WManaCard:
   Name: 光芒
   Description: 获得{Mana}。
@@ -2830,6 +2824,43 @@ CManaCard:
 PManaCard:
   Name: 幻虹
   Description: 获得{Mana}。
+
+Astrology:
+  Name: 占星
+  Description: |-
+    |占卜| {Scry} 。
+    抽 {Value1} 张牌。
+
+Xiaozhuo:
+  Name: 小酌怡情
+  Description: 获得 {Value1} 点|暂得火力|。
+  FlavorText: 你醉了，敌人的机会来了。
+
+Shoot:
+  Name: 射击
+  Description: 造成 {Damage} 点伤害。
+  FlavorText: 幻想乡随处可见的弹幕。
+
+Boundary:
+  Name: 结界
+  Description: 获得 {Block} 点|格挡|。
+  FlavorText: 有着和大结界相同的本质。
+
+ShopAttack:
+  Name: 捕捉真相
+  Description: |-
+    造成 {Damage} 点伤害。
+    抽 {Value1} 张牌。
+
+ShopDefense:
+  Name: 清洁能源
+  Description: |-
+    获得 {Block} 点|格挡|。
+    抽 {Value1} 张牌。
+
+ShopSearch:
+  Name: 私家雷达
+  Description: 从抽牌堆中选择一张攻击牌或防御牌移入手中。
 
 MoonSea:
   Name: 静寂之海
@@ -2932,16 +2963,22 @@ TianziRock:
     {PlayerName}免疫于|锁定|。
   FlavorText: 给会飞行的哺乳类动物一点小小的有顶天震撼。
 
-LanCard:
-  Name: 式神护法
-  Description: 从 {Value1} 张随机的罕见牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
-  DetailText: '|e:备选牌|的总费用数量小于六。'
+YijiuDraw:
+  Name: 龙宫来讯
+  Description: |-
+    |占卜| {Scry} 。
+    抽 {Value1} 张牌。
 
 SeeFengshui:
   Name: 考察风水
   Description: |-
     {PlayerName}的回合开始时，|占卜| {Value1} 。
     这次|占卜|中每选择一张防御牌，获得 {Value2} 点|格挡|。
+
+LanCard:
+  Name: 式神护法
+  Description: 从 {Value1} 张随机的罕见牌中选择一张加入手中，它|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  DetailText: '|e:备选牌|的总费用数量小于六。'
 
 RainbowMarket:
   Name: 月虹市场
@@ -2968,6 +3005,7 @@ YukariAttack:
   Name: 生与死的境界
   Description: |-
     造成 {Damage} 点伤害 {Value1} 次。
+    |成长|：伤害提高 {Value2} 点。
     如果{PlayerName}在自己回合内恢复或失去过生命，回合结束时{SelfName}从弃牌堆回到手中且|暂塑|为{Mana}。
   FlavorText: 「生与死之间有一条纤薄的境界线。你会在那里找到我。」
 
@@ -2976,6 +3014,10 @@ KokoroDance:
   Description: |-
     每当敌人受到负面状态时，{PlayerName}对他造成 {Value1} 点伤害。
     对所有敌人施加 {Value2} 点|暂失火力|。
+
+FutoLight:
+  Name: 大物忌正餐
+  Description: 将所有费用总数大于一的手牌|暂塑|为{Mana}。
 
 HuiyeTime:
   Name: 永远与须臾
@@ -3058,19 +3100,18 @@ AliceAttack:
     造成 {Damage} 点伤害。
     获得{Mana}。
 
+BaitianCard:
+  Name: 稗田的转生
+  Description: 弃掉所有的手牌，抽等量的牌。
+  UpgradedDescription: 弃掉所有的手牌，抽等量的牌。
+  FlavorText: 在尝试了电子的信息存储媒介后，稗田阿求小姐有了更多喝下午茶的闲暇时间。
+
 YukariBox:
   Name: 打开的玉匣
   Description: |-
     |占卜| {Scry} ，抽 {Value1} 张牌。
     将弃牌堆洗入抽牌堆，然后重洗抽牌堆。
   FlavorText: 生活就像隙间里的漂流物，你永远不知道下一个掉出来的是什么。
-
-BaitianCard:
-  Name: 稗田的转生
-  Description: |-
-    获得 {Block} 点|格挡|。
-    从弃牌堆中选择一张牌，将它置于抽牌堆顶，|暂时降低|它的 {Value1} 点随机费用。
-  FlavorText: 在尝试了电子的信息存储媒介后，稗田阿求小姐有了更多喝下午茶的闲暇时间。
 
 MeilingWater:
   Name: 背水阵
@@ -3108,6 +3149,10 @@ YijiuAttack:
   Description: |-
     造成 {Damage} 点伤害。
     以{SelfName}击败一名敌人时，|放逐|{SelfName}，获得 {Value1} 回合|天衣无缝|。
+
+SuikaDraw:
+  Name: 酒鬼云集
+  Description: 抽牌直到手牌达到 {Value1} 张。
 
 ReisenMana:
   Name: 幻视调律
@@ -3273,7 +3318,7 @@ SkyWater:
   Name: 天水的奇迹
   Description: |-
     获得 {Shield} 点|护盾|。
-    抽牌阶段多抽 {Value1} 张牌。
+    将手牌抽至上限。
 
 LifeGame:
   Name: 生命游戏
