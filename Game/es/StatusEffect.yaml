@@ -164,8 +164,8 @@ MaoyuBlock:
   Description: '{OwnerName} gana {Level} de |Bloqueo| después de ser atacado.'
 Servant:
   Name: Invocación
-  Description: "Después de que la convocadora es derrotada, todas sus invocaciones\
-    \ también son derrotadas.\nNo desencadena efectos de muerte."
+  Description: "Si solo quedan enemigos con |Convocación|, serán derrotados inmediatamente.\n\
+    No desencadena efectos de muerte."
 DeathExplodeNotCount:
   Name: Balas Vengativas
   Description: "Inflige {Level} de daño a {PlayerName} cuando {OwnerName} es derrotado.\n\
@@ -318,8 +318,8 @@ FastAttack:
     un |Ataque| de {Level} de daño a {PlayerName}.
   Name: Velocista Extrema
   ExtraDescription: "Después de jugar la primera carta de un turno, {OwnerName} inflige\
-    \ un |Ataque| de {Level} de daño a {PlayerName}.\nEsto ya ha ocurrido y se actualizará\
-    \ la próxima vez que el {Owner Name} actúe."
+    \ un |Ataque| de {Level} de daño a {PlayerName}.\n(Esto ya ha ocurrido y se actualizará\
+    \ la próxima vez que el {Owner Name} actúe.)"
 PowerByDefense:
   Name: Escudo Inquebrantable
   Description: Cada vez que se juega una carta de defensa, {OwnerName} gana {Level}
@@ -862,9 +862,6 @@ IceMatrixSe:
   Brief: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana |Armadura de Escarcha|.'
   Description: 'Siempre que {PlayerName} aplica |Frío| a un enemigo, gana {Level}
     |Armadura de Escarcha|.'
-IceVulnerable:
-  Brief: "{OwnerName} pierde el doble de vida.\nAl final del turno de {OwnerName},\
-    \ pierde la |Congelación Profunda|."
 ForeverCoolSe:
   Name: Eterna Fría Época de Fantasía
   Brief: "Después de que la |a:Habilidad Activa| o |u:Habilidad Definitiva| de una\
@@ -920,9 +917,12 @@ ExtraBlizzard:
     |Frío| a cada enemigo.
 FrozenThroneSe:
   Name: Trono de Hielo
-  Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Glaciar{Level:plural
-    one='' other='es'}+| a la mano.
-  Brief: Al comienzo del turno de {PlayerName}, agrega |Glaciares+| a la mano.
+  Description: Al comienzo del turno de {PlayerName}, si {Level:plural one='no hay'
+    other='hay menos de %'} |Balas de Hielo| en la mano, agrega {Level} |{Level:plural
+    one='Bala' other='Balas'} de Hielo| a la mano{Level:plural one='.' other=' hasta
+    que haya %.'}
+  Brief: Al comienzo del turno de {PlayerName}, si hay menos de un número de |Balas
+    de Hielo| en la mano, agrega |Balas de Hielo| a la mano hasta que haya esa cantidad.
 Immune:
   Name: Bloque de Hielo
   Description: "{OwnerName} no puede perder vida durante {Duration} turno{Duration:plural\
@@ -1054,8 +1054,6 @@ ChaoyueZiwoSe:
     gana {Level} de |Poder| y |Espíritu|.
   Brief: Al final del turno de {PlayerName}, si está en el estado |Serenidad|, gana
     |Poder| y |Espíritu|.
-HuiguiLizhiSe:
-  Description: Al final del turno de {PlayerName}, entra en el estado |Serenidad|.
 KongxiangshangSe:
   Name: Autorretención Ideal
   Description: Después de jugar una carta de |Defensa Básica|, entra en el estado
@@ -1220,3 +1218,21 @@ SuwakoHex:
   Name: Maldecir
   Description: Al comienzo del turno de {PlayerName}, una carta aleatoria en la mano
     será |Maldecido| y se volverá inútil.
+  ExtraDescription: "Al comienzo del turno de {PlayerName}, una carta aleatoria en\
+    \ la mano será |Maldecida| y se volverá inútil.\n(Esto ya ha ocurrido y se actualizará\
+    \ la próxima vez que el {Owner Name} actúe.)"
+FreezeBulletSe:
+  Description: "Aplica |Frío| a{Level:plural one='l siguiente enemigo que ataque'\
+    \ other=' los siguientes % enemigos que ataquen} a {OwnerName}.\nSe elimina este\
+    \ efecto al comienzo del próximo turno de {OwnerName}."
+  Name: Disparo Congelado
+DeepFreezeSe:
+  Name: Danza de Carámbanos
+ColdHeartedSe:
+  Name: Sangre de Hielo
+  Description: "La |Lanza de Hielo| Inflige el triple de daño a los enemigos con |Frío|.\n\
+    Se remueve |Sangre de Hielo| al final del turno de {OwnerName}."
+  Brief: "La |Lanza de Hielo| Inflige el triple de daño a los enemigos con |Frío|.\n\
+    Se remueve |Sangre de Hielo| al final del turno de {OwnerName}."
+QiangweiDiyuSe:
+  Name: Rosas del Infierno
