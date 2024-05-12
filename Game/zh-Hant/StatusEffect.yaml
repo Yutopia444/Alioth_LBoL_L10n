@@ -263,7 +263,7 @@ MaoyuBlock:
 Servant:
   Name: 使魔
   Description: |-
-    主人被擊敗後，使魔會被一同擊敗。
+    場上只剩使魔敵人時，它們會被立刻消滅。
     不會觸發其死亡效果。
 
 DeathExplodeNotCount:
@@ -448,7 +448,7 @@ FastAttack:
   Name: 唯快不破
   Description: 每回合使用第一張牌後，{OwnerName}就會對{PlayerName}造成 {Level} 點|攻擊|傷害。
 
-  ExtraDescription: "每回合使用第一張牌後，{OwnerName}就會對{PlayerName}造成 {Level} 點|攻擊|傷害。\n已生效過，在{OwnerName}行動後恢復。"
+  ExtraDescription: "每回合使用第一張牌後，{OwnerName}就會對{PlayerName}造成 {Level} 點|攻擊|傷害。\n（已生效過，在{OwnerName}行動後恢復）"
 PowerByDefense:
   Name: 無堅不摧
   Description: 每打出一張防禦牌，{OwnerName}獲得 {Level} 點|火力|。
@@ -866,10 +866,6 @@ MinengZhuruSe:
   Description: 已召喚的|同伴|牌，被動效果額外觸發 {Level} 次。
   Brief: 已召喚的|同伴|牌，被動效果額外觸發若干次。
 
-IceVulnerable:
-  Description: |-
-    {OwnerName}受到的所有傷害翻倍。
-    {OwnerName}的回合結束時移除|深度凍結|。
 ForeverCoolSe:
   Name: 永遠涼爽的幻想四季
   Description: |-
@@ -890,8 +886,8 @@ MoreFriendsSe:
 
 FrozenThroneSe:
   Name: 冰封王座
-  Description: '{PlayerName}的回合開始時，將 {Level} 張|冰晶+|加入手中。'
-  Brief: '{PlayerName}的回合開始時，將若干張|冰晶+|加入手中。'
+  Description: '{PlayerName}的回合開始時，如果手中|冰彈|不足 {Level} 張，將|冰彈|加入手中直到 {Level} 張。'
+  Brief: '{PlayerName}的回合開始時，如果手中|冰彈|不足若干張，將|冰彈|加入手中直到若干張。'
 
 WhiteWorldSe:
   Name: 純白的世界
@@ -1135,8 +1131,6 @@ ChaoyueZiwoSe:
   Name: 超越自我
   Description: '{PlayerName}的回合結束時，如果處於|平靜|，獲得 {Level} 點|火力|和|靈力|。'
   Brief: '{PlayerName}的回合結束時，如果處於|平靜|，獲得|火力|和|靈力|。'
-HuiguiLizhiSe:
-  Brief: 回合結束時進入|平靜|。
 KongxiangshangSe:
   Name: 空想上的人格保持者
   Brief: 打出|基本防禦|牌後進入|平靜|。
@@ -1162,17 +1156,21 @@ Love:
   Name: 戀心
   Brief: '{PlayerName}的回合開始時，移除兩個|戀心|，抽 3 張牌並進入|熱戀|。'
 MindPassion:
-  Description: "|熱戀|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n所有攻擊附帶|精準|。\n打出攻擊牌時消耗一個|戀心|，翻倍造成的傷害。"
-  Name: 熱戀
-  Brief: "|熱戀|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n所有攻擊附帶|精準|。\n打出攻擊牌時消耗一個|戀心|，翻倍造成的傷害。"
+  Description: "|熱情|是一種|意識|，只能同時處於一種|意識|。\n打出攻擊牌時，獲得 {Fire} 點在離開|熱情|時移除的|火力|。\n打出防禦牌時，離開|熱情|。"
+  Name: 熱情
+  Brief: "|熱情|是一種|意識|，只能同時處於一種|意識|。\n打出攻擊牌時，獲得 {Fire} 點在離開|熱情|時移除的|火力|。\n打出防禦牌時，離開|熱情|。"
 MindEnlight:
-  Brief: "|頓悟|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n回合結束時不會失去法力並保留手牌。"
-  Name: 頓悟
-  Description: "|頓悟|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n回合結束時不會失去法力並保留手牌。"
+  Brief: "|神遊|是一種|意識|，只能同時處於一種|意識|。\n離開|神遊|時，抽一張牌，這張牌費用暫塑為<sprite=\"ManaSprite\" name=\"\
+    0\">並附帶|放逐|。\n{PlayerName}失去生命時，離開|神遊|。"
+  Name: 神游
+  Description: "|神遊|是一種|意識|，只能同時處於一種|意識|。\n離開|神遊|時，抽一張牌，這張牌費用暫塑為<sprite=\"ManaSprite\"\
+    \ name=\"0\">並附帶|放逐|。\n{PlayerName}失去生命時，離開|神遊|。"
 MindPeace:
   Name: 平靜
-  Description: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"
-  Brief: "|平靜|是一種|心境|，同時只能存在一種|心境|，敵方回合開始時離開|心境|。\n離開|平靜|狀態時，獲得{Mana}。"
+  Description: "|平靜|是一種|意識|，只能同時處於一種|意識|。\n支付法力打出防禦牌時，下回合獲得<sprite=\"ManaSprite\"\
+    \ name=\"G\">。\n打出攻擊或能力牌時，離開|平靜|。"
+  Brief: "|平靜|是一種|意識|，只能同時處於一種|意識|。\n支付法力打出防禦牌後，下回合獲得<sprite=\"ManaSprite\" name=\"\
+    G\">。\n打出攻擊或能力牌後，離開|平靜|。"
 ClockCorpseSe:
   Description: 抽牌階段結束後無法再抽牌。
   Brief: 抽牌階段結束後無法再抽牌。
@@ -1246,3 +1244,29 @@ LimaoDisguiser:
 SuwakoHex:
   Name: 作祟
   Description: '{PlayerName}的回合開始時，一張隨機的手牌被作祟，變成無用之物。'
+  ExtraDescription: "{PlayerName}的回合開始時，一張隨機的手牌被作祟，變為無用之物。\n（已生效過，在{OwnerName}行動後恢復）"
+DeepFreezeSe:
+  Name: 冰尖之舞
+  Description: 打出藍色牌對敵人造成攻擊傷害時，施加 {Level} 層|凍傷|。
+  Brief: 打出藍色牌對敵人造成攻擊傷害時，施加若干層|凍傷|。
+ColdHeartedSe:
+  Name: 冰冷血脈
+  Brief: "|冰槍術|對|寒冷|的目標造成三倍傷害。\n{OwnerName}的回合結束時移除|冰冷血脈|。"
+  Description: "|冰槍術|對|寒冷|的目標造成三倍傷害。\n{OwnerName}的回合結束時移除|冰冷血脈|。"
+Constrain:
+  Name: 抑制
+  Description: 抵消獲得的|格擋|和|護盾|。
+  Brief: 抵消獲得的|格擋|和|護盾|。
+QingxingMengSe:
+  Name: 白日清醒夢
+  Brief: "{PlayerName}的回合開始時，將若干張|完全隨機|的|稀有|牌加入手中，它暫塑為<sprite=\"ManaSprite\" name=\"\
+    1\">，具有|放逐|、|虛無|。\n{PlayerName}的每回合只能打出 {Limit} 層張|稀有|牌。"
+  Description: "{PlayerName}的回合開始時，將 {Level} 張|完全隨機|的|稀有|牌加入手中，它暫塑為<sprite=\"ManaSprite\"\
+    \ name=\"1\">，具有|放逐|、|虛無| 。\n{PlayerName}的每個回合只能打出 {Limit} 層張|稀有|牌，剩餘 {Count} 張。"
+QiangweiDiyuSe:
+  Name: 薔薇地獄
+  Brief: 每當一張基本牌進入手牌時，對隨機敵人造成傷害，然後將傷害提高。
+  Description: ' 每當一張基本牌進入手牌時，對隨機敵人造成 {Count} 點傷害，然後將傷害提高 {Level} 點。'
+FreezeBulletSe:
+  Name: 凍結彈幕
+  Description: "對接下來攻擊{OwnerName}的敵人施加|寒冷|，可以生效 {Level} 次。\n{OwnerName}的下回合開始時移除此效果。"

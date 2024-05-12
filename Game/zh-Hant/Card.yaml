@@ -267,7 +267,7 @@ YakongDianxue:
 
 QinggeManwu:
   Name: 清歌曼舞
-  Description: 抽 {Value1} 張牌，|升級|它們直到本場戰鬥結束。
+  Description: "抽 {Value1} 張牌，|升級|它們直到本場戰鬥結束。\n如果抽到的牌已|升級|，改為獲得 {Value2} 點|護盾|。"
   FlavorText: 靈夢微步，羅襪生塵。
 
 FreeFly:
@@ -625,6 +625,7 @@ MarisaSteal:
     |透支| {Value2} 。
   FlavorText: 「你家裏有什麼好用的魔法素材？」
 
+  UpgradedDescription: 將 {Value1} 張|幻虹|加入手中。
 ScryBlock:
   Name: 早有預謀
   Description: 每次|占卜|時，{PlayerName}獲得 {Value1} 點|格擋|。
@@ -954,7 +955,7 @@ JungleMaster:
 
 ManaJungle:
   Name: 森林探險
-  Description: '|抽取時|：將 {Value1} 張|幻虹|加入手中，然後|放逐|{SelfName}。'
+  Description: '|進入手中時|：將 {Value1} 張|幻虹|加入手中，然後|放逐|{SelfName}。'
   FlavorText: 「天呀還有意外收獲！」
 
 SakuyaAttackW:
@@ -992,7 +993,7 @@ Lijian:
   Description: |-
     造成 {Damage} 點傷害。
     抽 {Value1} 張牌。
-    |抽取時|：費用降低{Mana}，直到戰鬥結束。
+    |進入手中時|：費用降低{Mana}，直到戰鬥結束。
 
   FlavorText: 下次見到這把飛刀就是你的死期。
 PrivateVision:
@@ -1075,7 +1076,7 @@ DefenseDraw:
   Description: |-
     獲得 {Block} 點|格擋|。
     抽 {Value1} 張牌。
-    |抽取時|：費用降低{Mana}，直到戰鬥結束。
+    |進入手中時|：費用降低{Mana}，直到戰鬥結束。
 
 AttackMagic:
   Name: 彈幕戲法
@@ -1104,9 +1105,9 @@ ExileMagic:
 SakuyaSleep:
   Name: 稍作休息
   Description: |-
-    將一張|幻虹|加入手中。
+    將一張|光芒|加入手中。
     結束{PlayerName}的回合。
-  UpgradedDescription: 將一張|幻虹|加入手中。
+  UpgradedDescription: 將一張|光芒|加入手中。
 
   FlavorText: 時停最佳用法。
 SilverBullet:
@@ -1141,7 +1142,9 @@ SakuyaDefenseRetain:
 
 SakuyaAttackX:
   Name: 推進之銀
-  Description: '|每支付|{Mana}：造成 {Damage} 點傷害。'
+  Description: '|每支付|{Mana}：造成 {Damage} 點傷害。
+
+    目標被擊敗而攻擊次數仍有剩餘時，以另一個隨機敵人為目標繼續攻擊。'
 
 SakuyaDraw:
   Name: 毫無破綻
@@ -1194,7 +1197,7 @@ LunaDial:
   Name: 個人空間
   Description: |-
     結束{PlayerName}的回合，進行一個額外的回合。
-    |抽取時|：費用降低{Mana}，直到戰鬥結束。
+    |進入手中時|：費用降低{Mana}，直到戰鬥結束。
 
 LightSpeed:
   Name: 光速躍遷
@@ -1413,7 +1416,7 @@ CirnoBlockU:
 
 IceLaser:
   Name: 冰凍光線
-  Description: 造成 {Damage} 點傷害，施加|寒冷|。
+  Description: "造成 {Damage} 點傷害，施加|寒冷|。\n展示抽牌堆底的牌，如果它是藍色牌，對另一個隨機敵人再次生效。"
   FlavorText: 琪露諾因此榮獲1997年諾貝爾物理學獎特殊貢獻者。
 
 DayaojingFriend:
@@ -1427,8 +1430,9 @@ DayaojingFriend:
   FlavorText: 偵探需要助手是常識，就連琪露諾也知道。
 Ice:
   Name: 冰晶
-  Description: 施加|寒冷|。
+  Description: "獲得{Mana}。\n展示抽牌堆中的隨機兩張藍色牌，選擇一張移入手中，將另一張置於牌堆底。"
 
+  FlavorText: 冰晶翅膀的六分之一。
 IceLance:
   Name: 冰槍術
   Description: |-
@@ -1451,13 +1455,15 @@ FreezeBullet:
   Name: 凍結彈幕
   Description: |-
     獲得 {Block} 點|格擋|。
-    獲得 {Value1} 層|寒冰甲|。
+    對下回合第一個攻擊{PlayerName}的敵人施加|冰冷|。
 
+  UpgradedDescription: "獲得 {Block} 點|格擋|。\n對下回合前兩個攻擊{PlayerName}的敵人施加|冰冷|。"
+  FlavorText: 琪露諾就是救世主！
 BlueRose:
   Name: 冰薔薇
   Description: |-
+    獲得 {Block} 點|格擋|。
     造成 {Damage} 點傷害。
-    如果目標處於|寒冷|，獲得 {Block} 點|格擋|。
 CoolBreeze:
   Name: 涼爽清風
   Description: |-
@@ -1469,24 +1475,19 @@ CirnoInForest:
   Name: 絕妙的僞裝
   Description: |-
     獲得 {Block} 點|格擋|。
-    |透支| {Value1} 。
+    獲得 {Value1} 層|閃避|。
   FlavorText: 森之妖精。
 
 SummerIce:
   Name: 夏日冰沙
   Description: |-
-    隨機對敵人造成 {Damage} 點傷害 {Value1} 次。
     下回合開始時獲得{Mana}。
   FlavorText: 食太多冰沙導致腦袋酸痛的感覺，讓你也感受一下！
 
-CirnoFestival:
-  Description: |-
-    獲得 {Value1} 層|閃避|。
-    手中隨機的 {Value2} 張牌，|暫時降低|一點隨機費用。
 FruitShake:
   Name: 水果冰條
   Description: |-
-    對所有敵人造成 {Damage} 點傷害。
+    對所有敵人造成 {Damage} 點傷害，施加|寒冷|。
     如果本回合召喚過一名|同伴|，{SelfName}費用為{Mana}。
   FlavorText: 熱帶水果口味，冰爽好滋味！
 
@@ -1499,9 +1500,8 @@ CirnoConsider:
 ColdBreath:
   Name: 鑽石氣息
   Description: |-
-    隨機對一個敵人造成 {Damage} 點傷害。
-    優先攻擊處於|寒冷|的敵人，並獲得{Mana}。
-    抽 {Value1} 張牌。
+    造成 {Damage} 點傷害。
+    目標敵人處於|寒冷|時，獲得{Mana}。
   FlavorText: 格鬥遊戲中的強力招式。
 
 CirnoDraw:
@@ -1515,7 +1515,7 @@ FrostGarden:
   Name: 冷霧花園
   Description: |-
     對所有敵人施加|寒冷|。
-    如果手中有已召喚的|同伴|牌，{SelfName}費用為{Mana}。
+    如果手中有已召喚的|同伴|牌，下回合再次生效。
   FlavorText: 免費的冷氣。
 
 MaidFriend:
@@ -1534,16 +1534,13 @@ CirnoFire:
 IceSaber:
   Name: 塑冰成劍
   Description: |-
-    造成 {Damage} 點傷害 {Value1} 次，施加|寒冷|。
-    打出時可以棄掉任意張數的藍色手牌，每一張多攻擊一次。
+    棄掉至多 {Value1} 張藍色手牌，將等量的|冰槍術|加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。
   FlavorText: 曾經有把名劍叫霜之哀傷。
 
 ColdSnap:
   Name: 快速降溫
   Description: |-
-    獲得 {Block} 點|格擋|。
-    抽 {Value1} 張牌。
-    將一張手牌置於抽牌堆底。
+    將抽牌堆中的前 {Value1} 張藍色牌移入手中，每張獲得 {Value2} 點|護盾|。
 
 LeidiFriend:
   Name: 凜冬的化身蕾蒂
@@ -1555,19 +1552,17 @@ IceBarrier:
   Name: 寒冰護體
   Description: 獲得 {Value1} 層|寒冰甲|。
 
-IceGun:
-  Description: |-
-    隨機對敵人造成 {Damage} 點傷害 {Value1} 次。
-    對|寒冷|的目標造成 {Value2} 倍傷害。
 Blizzard:
   Name: 暴風雪
   Description: |-
     對所有敵人造成 {Damage} 點傷害，施加|寒冷|。
-    如果手中有已召喚的|凜冬的化身蕾蒂|，下回合開始時再次生效。
+    展示抽牌堆底的牌，如果它是藍色牌，下回合開始時再次生效。
 
 FrozenThrone:
   Name: 冰封王座
-  Description: '{PlayerName}的回合開始時，將一張|冰晶+|加入手中。'
+  Description: '將一張|冰彈|加入手中。
+
+    {PlayerName}的回合開始時，如果手中沒有|冰彈|，將一張|冰彈|加入手中。'
   FlavorText: Now, we are one!
 
 DoubleMana:
@@ -1631,14 +1626,15 @@ MoreFriends:
   DetailText: '|e:備選牌|的總費用數量小於五。'
 FreezeToIce:
   Name: 冰凍標本
-  Description: 選擇最多 {Value1} 張手牌，|放逐|它們，將等量的|冰晶|加入手中。
+  Description: 選擇最多 {Value1} 張手牌|放逐|，將等量的|冰晶|洗入抽牌堆。
 
   FlavorText: 禁止在守矢神社使用。
+  UpgradedDescription: 從手牌、抽牌堆和棄牌堆中選擇至多 {Value1} 張牌|放逐|，將等量的|冰晶|洗入抽牌堆。
 FairyOnIce:
   Name: 冰上的妖精
   Description: |-
-    抽 {Value1} 張牌。
-    每有一個處於|寒冷|的敵人，{PlayerName}獲得 {Value2} 層|閃避|。 
+    將 {Value1} 張|冰晶|加入手中。
+    獲得 {Value2} 層|閃避|。 
 
 SummerParty:
   Name: 冰爽派對
@@ -1647,9 +1643,6 @@ SummerParty:
     手中的所有|同伴|牌獲得 {Value2} 點|支援度|。
 
 DiamondBlizzard:
-  Description: |-
-    對所有敵人造成 {Damage} 點傷害。
-    |抉擇|：對所有敵人施加|寒冷|；或獲得 {Block} 點|格擋|。
   ExtraDescription2: |-
     對所有敵人造成 {Damage} 點傷害。
     獲得 {Block} 點|格擋|。
@@ -1661,8 +1654,7 @@ ColdChain:
 DeepFreeze:
   Name: 冰尖之舞
   Description: |-
-    對所有敵人造成 {Damage} 點傷害。
-    對所有敵人施加|寒冷|，如果目標已經處於|寒冷|，改為施加|深度凍結|。
+    打出藍色卡牌後，{PlayerName}取得 {Value1} 點|暫得火力|。
 
 FreezeRiver:
   Name: 浮冰
@@ -1684,7 +1676,7 @@ IceMatrix:
   Name: 冰凍矩陣
   Description: |-
     {PlayerName}對敵人施加|寒冷|時，獲得 {Value1} 層|寒冰甲|。
-    對所有敵人施加|寒冷|。
+    獲得 {Value2} 層|寒冰甲|。
 
 InstantFreeze:
   Name: 急凍
@@ -1710,7 +1702,7 @@ LarvaDefense:
   Name: 振翅飛行
   Description: |-
     獲得 {Block} 點|格擋|。
-    對所有敵人施加 {Value1} 回合|虛弱|及|易傷|。
+    對所有敵人施加 {Value1} 回合|虛弱|。
     如果手中有已召喚的|夏夜之神拉爾瓦|，額外施加 {Value2} 層|中毒|。
 
   FlavorText: 跟在拉爾瓦身後飛行需要勇氣。
@@ -1745,7 +1737,7 @@ ForeverCool:
 
 HualiIce:
   Name: 華麗夏日冰
-  Description: |
+  Description: |-
     對所有敵人造成 {Damage} 點傷害，施加|寒冷|。
     本回合累計打出 {Value1} 張卡牌後費用為{Mana}。
     （剩餘 {Countdown} 張）
@@ -1776,7 +1768,9 @@ LunaFriend:
   FlavorText: 悄悄地調查，出聲的不要。
 WhiteWorld:
   Name: 純白的世界
-  Description: '{PlayerName}的回合開始時，對所有敵人施加|寒冷|。'
+  Description: '{PlayerName}的回合開始時，對所有敵人施加|寒冷|。
+
+    對所有敵人施加|寒冷|。'
 PlayWithWaste:
   Name: 垃圾堆探險
   Description: |-
@@ -1819,8 +1813,8 @@ SunnyFriend:
 Xiguadao:
   Name: 西瓜刀
   Description: |-
-    |每支付|{Mana}：造成 {Damage} 點傷害。
-    目標被擊敗而攻擊次數仍有剩餘時，以另一個隨機敵人為目標繼續攻擊。
+    隨機對敵人造成 {Damage} 點傷害 {Value1} 次。
+    獲得 {Value2} 點|火力|。
   FlavorText: 超⑨武神霸斬！
 
 ClownpieceFriend:
@@ -1903,7 +1897,7 @@ MrBulb:
   Name: 閃耀的燈泡先生
   Description: |-
     本回合累計進入過三種不同的心境後費用為<sprite="ManaSprite" name="0">。
-    對隨機敵人造成 {Damage} 點傷害，獲得{Mana}。
+    對隨機敵人造成F點傷害，獲得{Mana}。
 
 LoveFire:
   Name: 戀之埋火
@@ -2205,7 +2199,7 @@ MystiaSing:
 SatoriMemory:
   Name: 深沉回憶
   Description: |-
-    從棄牌堆的隨機 {Value1} 張牌中選擇一張移回手中。
+    展示棄牌堆中的隨機 {Value1} 張牌，選擇一張移回手中。
     |直覺|：它|暫塑|為{Mana}。
   FlavorText: 「這個網站的密碼是什麼呢？」
 
@@ -2540,7 +2534,7 @@ YukariAttack:
 
 KokoroDance:
   Name: 假面喪心舞
-  Description: 每當敵人受到負面狀態時，{PlayerName}對他造成 {Value1} 點傷害。
+  Description: "每當敵人受到負面狀態時，{PlayerName}對他造成 {Value1} 點傷害。\n對所有敵人施加 {Value2} 點|暫失火力|。"
 
 HuiyeTime:
   Name: 永遠與須臾
@@ -2616,9 +2610,6 @@ PoorAttack:
     失去 {Value1} 點<sprite="Point" name="Gold">。
     對目標造成 {Damage} 點傷害 {Value2} 次。
   FlavorText: 莫欺少女窮。
-
-SnowGirlCard:
-  Description: 隨機對敵人施加|寒冷| {Value1} 次。
 
 AliceAttack:
   Name: 慘虐之光
@@ -3485,16 +3476,14 @@ AyaNewsAliceSp:
   FlavorText: 月都萬象展特集！ 詳細刊載了有關{PlayerName}的流言蜚語。
 RelianJingji:
   Name: 熱戀荊棘
-  Description: "造成 {Damage} 點傷害。\n|打出鄰近手牌時|：傷害提高 {Value1} 直到下一次打出。"
+  Description: "造成 {Damage} 點傷害。\n|打出相鄰手牌時|：傷害提高 {Value1} 直到打出後。"
 PiankeNingjing:
   Name: 回神
   UpgradedDescription: "獲得 {Block} 點|格擋|。\n如可能，離開|心境|，並抽取 {Value1} 張卡牌。"
   Description: "獲得 {Block} 點|格擋|。\n如可能，離開|平靜|，並抽取 {Value1} 張卡牌。"
 Yehuchan:
-  Name: 野狐禪
-  Description: "得到 {Value1} 層|閃避|和 {Value2} |鎖定|。\n|直覺|：進入|頓悟|。"
-HuiguiLizhi:
-  Description: 回合結束時進入|平靜|。
+  Name: 本能行動
+  Description: "獲得一層閃避。\n下個回合開始時隨機進入一種|心境|。"
 YaoguaiNaodianbo:
   Name: 妖怪腦波
   Description: "造成 {Damage} 點傷害，獲得 {Value1} 層|戀心|。\n|直覺|：獲得{Mana}。"
@@ -3506,22 +3495,21 @@ BuruDiankuang:
   Description: 得到{Mana}，進入|熱戀|。
   UpgradedDescription: "得到{Mana}，進入|熱戀|。\n抽取 {Value1} 張攻擊牌。"
 XinliZhenliao:
-  Name: 心理診療
-  Description: "選擇一張處方加入手中：\n- 進入|熱戀|的處方。\n- 進入|平靜|的處方。\n- 進入|頓悟|的處方。"
+  Name: 記憶的切片
+  Description: "從兩張隨機記憶中選出一張加入手中。"
+  UpgradedDescription: 選擇一張記憶加入手中。
 XinliBenwo:
-  Name: 處方 -熱戀-
+  Name: 熱情的記憶
   Description: 進入|熱戀|。
 XinliChaowo:
-  Name: 處方 -平靜-
+  Name: 平靜的記憶
   Description: 進入|平靜|。
 XinliDunwu:
-  Name: 處方 -頓悟-
-  Description: 進入|頓悟|。
+  Name: 神遊的記憶
+  Description: 進入|神遊|。
 DNARain:
   Name: DNA霰彈槍
   Description: "對所有敵人造成 {Damage} 點傷害。\n|進入心境時|：傷害提高 {Value1} 點。"
-MeihaoHuiyi:
-  Description: '|打出相鄰手牌時|：獲得 {Block} 點格擋，升級一張隨機卡牌直到本場戰鬥結束。'
 ZhuozhuangChengzhang:
   Name: 茁壯成長
   Description: '{PlayerName}的回合結束時，將 {Value1} 張|生機|加入手牌。'
@@ -3534,7 +3522,7 @@ LianaiChongdong:
   ExtraDescription1: "|d:不在平靜中：下一張基本牌的數值提高 {Value1}。 |\n|平靜中|：所有|基本|牌的數值提高 {Value2}。"
 TaoqiQiangwei:
   Name: 淘氣薔薇
-  Description: "得 {Block} 點|格擋|，抽 {Value1} 張牌。\n|打出鄰近手牌時|：費用減少{Mana}，直到戰鬥結束。"
+  Description: "得 {Block} 點|格擋|，抽 {Value1} 張牌。\n|打出相鄰手牌時|：費用減少{Mana}，直到戰鬥結束。"
 LoveSeed:
   Name: 戀愛的種子
   Description: "恢復 {Value1} 點生命，得到{TotalMana}。\n|打出相鄰手牌時|：獲得的法力提升{Mana}。"
@@ -3590,7 +3578,9 @@ MeilingFriend:
   ExtraDescription2: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
 Naodiantu:
   Name: 腦電圖
-  Description: '|抉擇|：對生命值最高的敵人造成 {Damage} 點傷害；或獲得 {Block} 點|格擋|，使{SelfName}下次攻擊傷害提高 {Value1}。'
+  Description: '隨機將 {Value1} 張|靈異|或|生機|加入手牌。
+
+    手牌每有一張|生機|，對隨機敵人造成5點傷害。'
   ExtraDescription1: 對生命值最高的敵人造成 {Damage} 點傷害。
   ExtraDescription2: 獲得 {Block} 點|格擋|，使{SelfName}下次攻擊傷害提高 {Value1}。
 HeartDance:
@@ -3602,7 +3592,7 @@ GududeXin:
   UpgradedDescription: "獲得 {Value1} 個|戀心|。\n|初見|：獲得 {Value1} 個|戀心|。"
 QiangweiDiyu:
   Name: 薔薇地獄
-  Description: 獲得 {Value1} 層|戀心|。
+  Description: 每當一張基本牌進入手牌時，對隨機敵人造成 {Value1} 點傷害，然後將傷害提高 {Value2} 點。
 MoonSea:
   Name: 靜寂之海
   Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
@@ -3683,8 +3673,6 @@ DollFactory:
 ZhenmiaowanAbility:
   Name: 小槌的魔力
   Description: 本場戰鬥內所有牌的費用降低{Mana}。
-DeployIce:
-  Description: '|部署|一個|冰晶|。'
 AutoHousework:
   Name: 家政自動化
 DollRepair:
@@ -3714,3 +3702,44 @@ Frog:
   Name: 青蛙
   Description: "這張牌被詛咒了。\n它曾經是：{CardName}"
   NonbattleDescription: 這張牌被詛咒了。
+BeihaiWangxiang:
+  Description: "獲得 {Shield} 點|護盾|。\n得到半數護盾的|抑制|。"
+  Name: 被害妄想症
+SiwangLaiDian:
+  Description: "選擇並|放逐|手牌中的一張|攻擊牌|，將 {Value1} 張複製置入抽牌堆頂部。\n如果選擇了|基本牌|，則使複製附帶|填充|。"
+  Name: 恐怖的可愛來電
+  UpgradedDescription: "選擇並|放逐|一張手牌，將 {Value1} 張複製置入抽牌堆頂部。\n如果選擇了|基本牌|，則使複製附帶|填充|。"
+MirrorTest:
+  Description: "獲得 {Block} 點|護盾|。\n|在手中|：打出相鄰的手牌後，如果打出的是一張|攻擊牌|，將{SelfName}轉變為打出牌的複製，並獲得 {Block} 點|護盾|。"
+  Name: 鏡像測試
+YoumuHybrid:
+  Name: 半人半靈
+  Description: "|每支付|<sprite=\"ManaSprite\" name=\"W\">：選擇至多 {Value1} 張手牌|放逐|。\n|每支付|<sprite=\"\
+    ManaSprite\" name=\"G\">：獲得 {Value2} 層|閃避|。"
+  UpgradedDescription: "|每支付|<sprite=\"ManaSprite\" name=\"W\">：從手牌、抽牌堆和棄牌堆中選擇至多 {Value1} 張牌|放逐|。\n\
+    |每支付|<sprite=\"ManaSprite\" name=\"G\">：獲得 {Value2} 層|閃避|。"
+IceBolt:
+  Name: 冰彈
+  Description: 造成 {Damage} 點傷害，施加|寒冷|。
+  FlavorText: 據說使用這張符卡時琪露諾總是蹦蹦跳跳的。
+ShiverArmor:
+  Name: 冰霜折射
+  Description: "獲得 {Block} 點|格擋|。\n獲得 {Value1} 層|寒冰甲|。"
+  FlavorText: 當琪露諾覺得涼快的時候，對手可不這麼認為。
+GlacialSpike:
+  Name: 冰尖柱
+  Description: "造成 {Damage} 點傷害，施加|寒冷|。\n將一張|冰彈|加入手中。"
+  FlavorText: 據說使用這張符卡時琪露諾總是蹦蹦跳跳的。
+FrozenOrb:
+  Name: 冰封球
+  Description: "對所有敵人造成 {Damage} 點傷害，施加|寒冷|。\n將 {Value1} 張|冰彈|加入手中。"
+ColdHearted:
+  Name: 冰冷血脈
+  Description: "本回合內|冰槍術|對|寒冷|的目標造成三倍傷害。\n將 {Value1} 張|冰槍術|加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。"
+WuyunJiekong:
+  Name: 五蘊皆空
+  Description: "放逐抽牌堆，手牌，棄牌堆內的所有|狀態|或|詛咒|牌。\n移除所有負面效果。"
+QingxingMeng:
+  Name: 意識下潛
+  Description: "{PlayerName}的回合開始時，將 {Value1} 張|完全隨機|的|稀有|牌加入手中，它暫塑為{Mana}，具有|放逐|、|虛無|。\n\
+    {PlayerName}的每個回合只能打出 {Limit} 層張|稀有|牌。"
