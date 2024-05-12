@@ -584,8 +584,9 @@ CirnoBlockU:
   FlavorText: English beef that has been cryo-frozen for many years can also be used
     as a weapon for self-defense.
 IceLaser:
-  Description: "Deal {Damage} damage.\nApply |Cold|.\nLook at the card on the bottom\
-    \ of the draw pile. If it's blue, repeat this effect on another random enemy."
+  Description: "Deal {Damage} damage.\nApply |Cold| on hit.\nLook at the card on the\
+    \ bottom of the draw pile. If it's blue, repeat this effect on another random\
+    \ enemy."
 
   Name: Freeze Beam
   FlavorText: For this, Cirno won the Nobel Prize in Physics 1997, as a special contributor.
@@ -2022,8 +2023,7 @@ LilyChun:
     \ they also ignore total mana and mana color restrictions.\n{SelfName} cannot\
     \ be produced by this effect."
 SkyWater:
-  Description: "Gain {Shield} |Barrier|.\nDraw {Value1} more card{Value1:plural one=''\
-    \ other='s'} during the draw step."
+  Description: "Gain {Shield} |Barrier|.\nDraw cards until the hand is full."
   Name: Heavenly Water Miracle
 CoolBreeze:
   Description: "Gain {Block} |Block|.\nIf any enemy has |Cold|, |Upgrade| {Value1}\
@@ -2434,10 +2434,6 @@ HualiIce:
     If {Value1} card{Value1:plural one=' has' other='s have'} been played this turn,\
     \ {SelfName} costs {Mana} to play.\n({Countdown:plural one='% card' other='% cards'}\
     \ left.)"
-  UpgradedNonbattleDescription: "Deal {Damage} damage to each enemy.\nApply |Cold|\
-    \ to each enemy {Value2} time{Value2:plural one='' other='s'}.\nIf {Value1} card{Value1:plural\
-    \ one=' has' other='s have'} been played this turn, {SelfName} costs {Mana} to\
-    \ play."
   NonbattleDescription: "Deal {Damage} damage to each enemy.\nApply |Cold| to each\
     \ enemy.\nIf {Value1} card{Value1:plural one=' has' other='s have'} been played\
     \ this turn, {SelfName} costs {Mana} to play.\n"
@@ -2574,7 +2570,7 @@ MaidFriend:
   FlavorText: Out of all the fairy maids in the Scarlet Devil Mansion, Kasumi is already
     the most serious in her work.
 FruitShake:
-  Description: "Deal {Damage} damage to each enemy. Apply |Cold| to each enemy.\n\
+  Description: "Deal {Damage} damage to each enemy. Apply |Cold| on each enemy hit.\n\
     If a |Teammate| was summoned this turn, {SelfName} costs {Mana} to play."
   Name: Yummy Fruit Freezies
   FlavorText: Tropical fruits are cool and tasty!
@@ -3162,7 +3158,7 @@ ShiverArmor:
   Description: "Gain {Block} |Block|.\nGain {Value1} |Frost Armor|."
   Name: Frost Refraction
 IceBolt:
-  Description: "Deal {Damage} damage.\nApply |Cold|."
+  Description: "Deal {Damage} damage.\nApply |Cold| on hit."
   Name: Ice Bullet
 ColdHearted:
   Description: "This turn, |Ice Lance| deals triple damage to enemies with |Cold|.\n\
@@ -3172,7 +3168,8 @@ ColdHearted:
   Name: Ice-Blooded
 GlacialSpike:
   Name: Glacial Spike
-  Description: "Deal {Damage} damage.\nApply |Cold|.\nAdd an |Ice Bullet| to the hand."
+  Description: "Deal {Damage} damage.\nApply |Cold| on hit.\nAdd an |Ice Bullet| to\
+    \ the hand."
 FrozenOrb:
   Name: Frozen Orb
   Description: "Deal {Damage} damage and apply |Cold| to each enemy.\nAdd {Value1}\
@@ -3195,19 +3192,20 @@ FutoLight:
   Name: Oomonoimi's Banquet
 SuikaDraw:
   Description: Draw cards until there are {Value1} cards in the hand.
-  Name: Drunk Oni Gathering
+  Name: Gathering of Drunk Oni
 SuperNova:
   Description: "Gain {Mana}.\nPut {Value1} random attack card{Value1:plural one=''\
     \ other='s'} from the draw pile into the hand."
   Name: Supernova
 YijiuDraw:
   Description: "|Scry| {Scry}.\nDraw {Value1} card{Value1:plural one='' other='s'}."
-  Name: Dragon Palace Message
+  Name: Dragon Palace's Message
 HuiyinDraw:
   Description: Draw {Value1} card{Value1:plural one='' other='s'}.
+  Name: Antique Appraisal
 ShopAttack:
   Description: "Deal {Damage} damage.\nDraw {Value1} card{Value1:plural one='' other='s'}."
-  Name: Capture the Truth
+  Name: Capturing the Truth
 ShopSearch:
   Description: Choose an Attack or Defense card from the draw pile to put into the
     hand.
