@@ -632,8 +632,6 @@ RangziFanshuSe:
   Description: 戦闘終了時、{Level}点のライフを回復する。
   Name: スイートポテトルーム
   Brief: 戦闘終了時、ライフを回復する。
-IceVulnerable:
-  Description: "{OwnerName}が受けるあらゆるダメージが 2 倍になる。\n{OwnerName}のターン終了時|凍結深度|は取り除かれる。"
 ForeverCoolSe:
   Name: エバークールシーズンファンタジア
   Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を{Level}回与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Level}を得る。"
@@ -704,8 +702,8 @@ PrismriverSe:
   Brief: この戦闘中、{PlayerName}が得るマナはすべて|彩色|に変換される。
 FrozenThroneSe:
   Name: 凍てつく玉座
-  Description: '{PlayerName}のターン開始時、|氷晶+|を{Level}枚手札に加える。'
-  Brief: '{PlayerName}のターン開始時、|氷晶+|を手札に加える。'
+  Description: '{PlayerName}のターン開始時、手札の|氷弾|が{Level}枚以下なら不足分を手札に加える。'
+  Brief: '{PlayerName}のターン開始時、手札の|氷弾|が指定の枚数以下なら不足分を手札に加える。'
 EnemyDayaojing:
   Name: 大妖精のサポート
   Description: '{OwnerName}のターン終了時、{Level}点のライフを回復する。'
@@ -845,6 +843,7 @@ LimaoDisguiser:
 SuwakoHex:
   Name: 祟り
   Description: '{PlayerName}のターン開始時、手札のランダムなカード1枚を祟って不要なカードに変化させる。'
+  ExtraDescription: "{PlayerName}のターン開始時、手札のランダムなカード1枚を祟って不要なカードに変化させる。\n発動済み。{OwnerName}の行動後に再度発動するようになる。"
 BenwoTouyingSe:
   Description: '|情熱|状態に入る度、完全にランダムな攻撃カード{Level}枚を手札に加える。それらは臨時コスト{Mana}で|廃棄|を持つ。'
   Name: 自我投影
@@ -867,3 +866,14 @@ ChaofanyinSe:
   Name: 超反応センス
   Brief: '|直感|を持ち、|複製|でないカードの|直感|の効果が発動しなかった時、コスト{Mana}かつ|廃棄|を持つコピーを手札に加える。'
   Description: '|直感|を持ち、|複製|でないカードの|直感|の効果が発動しなかった時、コスト{Mana}かつ|廃棄|を持つコピーを{Value1}枚手札に加える。'
+ColdHeartedSe:
+  Brief: "|氷槍術|は|冷気|が付与されている敵に対し三倍のダメージを与える。\n{OwnerName}のターン終了時、この効果は失われる。"
+  Name: 銀氷の血筋
+  Description: "|氷槍術|は|冷気|が付与されている敵に対し三倍のダメージを与える。\n{OwnerName}のターン終了時、この効果は失われる。"
+FreezeBulletSe:
+  Name: 凍結弾幕
+  Description: "次に{PlayerName}を攻撃した敵に|冷気|を与える。残り{Level}回。\n{OwnerName}の次のターン開始時にこの効果は失われる。"
+DeepFreezeSe:
+  Description: 青のカードを使う度、{PlayerName}は|臨時火力|{Value1}を得る。
+  Brief: 青のカードを使う度、{PlayerName}は|臨時火力|を得る。
+  Name: つららの舞
