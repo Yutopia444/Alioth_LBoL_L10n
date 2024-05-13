@@ -1363,8 +1363,6 @@ BenwoTouying:
     \ nhiên| lên tay, nó |tạm thời tốn| {Mana} và sở hữu thuộc tính |Trục Xuất|.\n\
     Tiến vào |Say Mê|."
 KoishiMoveDefense:
-  ExtraDescription1: "Nhận {Block} |Khiên|, tiến vào |Bình Thản|.\n(Nhận mana khi\
-    \ rời khỏi tâm trạng.)"
   Description: "Nhận {Block} |Khiên|, tiến vào |Say Mê|.\n(Tấn công trở nên |Chuẩn\
     \ Xác| và có thể tiêu hao |Ái Tâm| để nhân đôi sát thương.)"
 Danxiangsi:
@@ -1433,16 +1431,14 @@ MoreFriends:
   DetailText: Tổng chi phí mana của |e:các lá thay thế| ít hơn 5.
 FairyOnIce:
   Name: Tiên Nữ Trên Băng
-  Description: "Thêm {Value1} lá |Tinh Thể Băng| lên tay.\nNhận {Value2} |Né Tránh|. "
+  Description: "Thêm {Value1} lá |Tinh Thể Băng| vào trong Chồng Bài Bốc.\nNhận {Value2}\
+    \ |Né Tránh|. "
 FairyTeam:
   Name: Tiên Nữ Đại Chiến Tranh
   Description: "Chọn một số lượng lá |Đồng Đội| trên tay tùy ý và |Trục Xuất| chúng,\
     \ nhận mana tương đương với chi phí mana của chúng.\nGây {Damage} sát thương lên\
     \ một kẻ địch ngẫu nhiên.\nVới mỗi lá bị |Trục Xuất| bằng cách này, gây sát thương\
     \ thêm 1 lần."
-RelianJingji:
-  Description: "Gây {Damage} sát thương.\n|Khi lá bên cạnh được chơi|: Tăng sát thương\
-    \ lá này thêm {Value1} lần tiếp theo nó được chơi."
 PiankeNingjing:
   Name: Hoàn Hồn Lại
   Description: "Nhận {Block} |Khiên|.\nNếu được, rời khỏi |Bình Thản| để bốc {Value1}\
@@ -1455,8 +1451,6 @@ DNARain:
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\n|Khi tiến vào một Tâm Trạng|:\
     \ Tăng sát thương lá bài này thêm {Value1}."
 KoishiMoveAttack:
-  ExtraDescription2: "Gây {Damage} sát thương lên kẻ địch ngẫu nhiên, tiến vào |Đốn\
-    \ Ngộ|.\n(Giữ lại bài và mana khi lượt kết thúc.)"
   Name: Ngó Bên Này
 JiyiShitihua:
   Name: Thực Thể Hóa Ký Ức
@@ -1545,10 +1539,6 @@ LarvaFriend:
   ExtraDescription2: '{FriendU}Yểm {Value2} |Nhiễm Độc| lên từng kẻ địch, kích hoạt
     hiệu ứng mất HP của |Nhiễm Độc|.'
   FlavorText: Nhớ rửa tay sau khi bắt tay với cô ấy.
-KoishiMove:
-  Description: "Lựa chọn:\n- Gây {Damage} sát thương lên kẻ địch ngẫu nhiên, tiến\
-    \ vào |Tâm Trạng| chỉ định ngẫu nhiên.\n- Nhận {Block} |Khiên|, tiến vào |Tâm\
-    \ Trạng| chỉ định ngẫu nhiên khác."
 FlowerGone:
   Name: Mộng Xưa Úa Tàn
   Description: "Nhận {Block} |Khiên|.\n|Trong Bình Thản|: Nhận {Value1} |Linh Lực|\
@@ -2138,7 +2128,8 @@ YouxiangAttack:
     \ nên |Chuẩn Xác|."
 YouxiangMoon:
   Name: Phong Hoa Điểu Nguyệt
-  Description: Vào đầu lượt của {PlayerName}, thêm 1 lá |Hoa Giữa Hạ| lên tay.
+  Description: "Vào đầu lượt của {PlayerName}, nhận {Mana}.\nThêm 1 lá |Hoa Giữa Hạ|\
+    \ lên tay."
 MorphFrog:
   Name: Biến Thành Lưỡng Cư
   Description: Tăng {Value1} HP tối đa.
@@ -2915,7 +2906,7 @@ WuyunJiekong:
   Name: Năm Uẩn Đều Không
 HuiyinDraw:
   Description: Bốc {Value1} lá.
-  Name: Giám Định Văn Vật
+  Name: Ký Ức Của Thời Đại Của Thần
 ShopAttack:
   Name: Nắm Bắt Sự Thật
   Description: "Gây {Damage} sát thương.\nBốc {Value1} lá."
@@ -2976,3 +2967,26 @@ YoumuHybrid:
   Description: "|Với mỗi <sprite=\"ManaSprite\" name=\"W\"> tiêu hao|: |Trục Xuất|\
     \ tối đa {Value1} lá bài trên tay.\n|For each <sprite=\"ManaSprite\" name=\"G\"\
     > tiêu hao|: Nhận {Value2} |Né Tránh|."
+BlueZeroAttack:
+  Description: Gây {Damage} sát thương.
+  UpgradedDescription: "Gây {Damage} sát thương.\nYểm {Value1} |Suy Nhược|."
+  Name: Súng Nước Cao Áp
+InspirationBlack:
+  Name: Linh Cảm Sắc Đen
+TakaneDefense:
+  Name: Rừng Sâu Thăm Thẳm
+  Description: "Nhận {Block} |Khiên|.\n|Với mỗi {mana} tiêu hao|: Tăng lượng khiên\
+    \ nhận được từ lá này thêm {Value1}."
+DefaultPassion:
+  Name: Hành Vi Vô Thức
+DefaultPeace:
+  Name: Dây Gai Mê Say
+FindInspiration:
+  Name: Kiếm Tìm Linh Cảm
+InspirationCard:
+  Name: Linh Cảm
+InspirationGreen:
+  Name: Linh Cảm Sắc Lục
+GreenLotus:
+  Name: Ánh Trăng Trên Đầm Sen
+  Description: Nhận {Mana}.
