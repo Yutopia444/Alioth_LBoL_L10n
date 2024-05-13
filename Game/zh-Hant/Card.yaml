@@ -1633,7 +1633,7 @@ FreezeToIce:
 FairyOnIce:
   Name: 冰上的妖精
   Description: |-
-    將 {Value1} 張|冰晶|加入手中。
+    將 {Value1} 張|冰晶|洗入抽牌堆。
     獲得 {Value2} 層|閃避|。 
 
 SummerParty:
@@ -1855,20 +1855,12 @@ QinchunPanni:
     |不在熱戀中|：對生命值最低的敵人造成 {Damage} 點|精準|的傷害。
     |d:熱戀中：獲得 {Block} 點格擋。|
 
-KoishiMove:
-  Description: |-
-    選擇一項，每個選項附帶一種隨機的|心境|：
-    - 對隨機敵人造成 {Damage} 點傷害。
-    - 獲得 {Block} 點格擋。
-
 KoishiMoveAttack:
   Description: "對隨機敵人造成 {Damage} 點傷害，進入|熱情|。"
 
-  ExtraDescription1: "對隨機敵人造成 {Damage} 點傷害，進入|平靜|。"
 KoishiMoveDefense:
   Description: "獲得 {Block} 點格擋，進入|熱情|。"
 
-  ExtraDescription2: "獲得 {Block} 點格擋，進入|頓悟|。"
 Danxiangsi:
   Name: 單相思
   Description: |-
@@ -2052,7 +2044,7 @@ KokoroAttack:
   Name: 杞人憂地
   Description: |-
     對所有敵人造成 {Damage} 點傷害。
-    隨機棄一張牌。
+    抽 {Value1} 張牌。
   FlavorText: 被下一餐食什麼這個問題嚴重困擾。
 
 NitoriUnderWater:
@@ -2402,7 +2394,9 @@ YouxiangAttack:
 
 YouxiangMoon:
   Name: 花鳥風月
-  Description: '{PlayerName}的回合開始時，將一張|盛夏之花|加入手中。'
+  Description: '{PlayerName}的回合開始時，獲得{Mana}。
+
+    將 {Value1} 張|盛夏之花|加入手中。'
 LimaoSchool:
   Name: 狸貓的變身學校
   Description: 從 {Value1} 張隨機的|狸貓變化|中選擇 {Value2} 張生效。
@@ -2889,17 +2883,14 @@ SanaeRestart:
     抽 {Value1} 張牌。
     獲得{Mana}。
 AnimalSpirit:
-  Name: 畜生界大暴動
+  Name: 地獄的畜生道
   Description: |-
-    使其他手牌被動物靈附身，獲得一種隨機效果：
-    狼：獲得|回響|。
-    獺：獲得|填充|。
-    鷹：暫塑為{Mana}。
+    使其它手牌被動物靈附身，獲得一種隨機效果：
+    |r:狼|：賦予|迴響|；|g:獺|：賦予|填充|；|p:鷹|：|暫塑|爲{Mana}。
   UpgradedDescription: |-
-    使其他手牌及 {Value1} 張抽牌堆內的隨機卡牌被動物靈附身，獲得一種隨機效果：
-    狼：獲得|回響|。
-    獺：獲得|填充|。
-    鷹：暫塑為{Mana}。
+    抽 {Value1} 張牌。
+    使其它手牌被動物靈附身，獲得一種隨機效果：
+    |r:狼|：賦予|迴響|；|g:獺|：賦予|填充|；|b:鷹|：|暫塑|爲{Mana}。
 
 PrismriverAll:
   Name: 合葬「棱鏡協奏曲」
@@ -3451,8 +3442,6 @@ AyaNewsAliceSp:
   Name: 《文文新聞》愛麗絲特刊
   Description: '|回合結束時|：失去 {Value1} 點|靈力|。'
   FlavorText: 月都萬象展特集！ 詳細刊載了有關{PlayerName}的流言蜚語。
-RelianJingji:
-  Description: "造成 {Damage} 點傷害。\n|打出相鄰手牌時|：傷害提高 {Value1} 直到打出後。"
 PiankeNingjing:
   Name: 回神
   Description: "獲得 {Block} 點|格擋|。\n如可能，離開|心境|，並抽取 {Value1} 張卡牌。"
@@ -3577,7 +3566,7 @@ AyaExtraTurn:
   ExtraDescription1: "結束{PlayerName}的回合，進行一個額外的回合。\n下一回合開始時，獲得 {Value1} 層|閃避|。\n|d:時間有限{Mana}。|"
 AyaWindGirl:
   Name: 風神少女
-  Description: 獲得 {Value1} 層|風神少女|，回合結束時補充|閃避|。
+  Description: 獲得 {Value1} 層|風神少女|。
   DetailText: 擁有|風神少女|的角色，不會在回合開始時失去|閃避|到|風神少女|層數以下。
 JinziSuperExtraTurn:
   Description: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Value1} 張牌。"
@@ -3602,7 +3591,7 @@ DollFactory:
   Name: 人形工房
 ZhenmiaowanAbility:
   Name: 小槌的魔力
-  Description: 本場戰鬥內所有牌的費用降低{Mana}。
+  Description: 所有卡牌的費用降低{Mana}，直到戰鬥結束。
 AutoHousework:
   Name: 家政自動化
 DollRepair:
@@ -3686,7 +3675,7 @@ FutoLight:
   Name: 大物忌正餐
   Description: 將所有費用總數大於一的手牌|暫塑|爲{Mana}。
 HuiyinDraw:
-  Name: 文物鑑寶
+  Name: 神代的記憶
   Description: 抽 {Value1} 張牌。
 ShopDefense:
   Name: 清潔能源
@@ -3718,3 +3707,54 @@ SanaeSummonGod:
   Description: 兩回合後的回合開始時：獲得 {Value1} 點|火力|和|靈力|。
   UpgradedDescription: 下回合開始時：獲得 {Value1} 點|火力|和|靈力|。
   FlavorText: 博麗靈夢無法閃避的技能。
+DefaultPassion:
+  Description: "造成 {Damage} 點傷害。\n進入|熱情|。"
+  Name: 無意識的行動
+InspirationCard:
+  Description: '|進入手中時|：轉變為一張隨機顏色的|e:靈感牌|，生效然後|放逐|自身。'
+  Name: 靈感
+InspirationWhite:
+  Description: "|升級| {Value1} 張隨機的手牌。\n沒有合適目標時，每張|升級|的機會轉化為 {Value2} 點|格擋|。"
+  Name: 白色靈感
+BlueZeroAttack:
+  Name: 高壓水槍
+  Description: 造成 {Damage} 點傷害。
+  UpgradedDescription: "造成 {Damage} 點傷害。\n施加 {Value1} 回合|虛弱|。"
+QingeDraw:
+  Description: "獲得 {Block} 點|格擋|。\n抽 {Value1} 張牌，丟棄它們中費用總數大於一的牌。"
+  Name: 道胎動
+  FlavorText: 好像原地傳送了……
+NitoriMoreDraw:
+  Description: 抽牌階段多抽 {Value1} 張牌。
+  FlavorText: 當哆來咪口渴時，她會重點挑選那些喜歡睡前喝很多水的人的夢境。
+  Name: 傳道授業
+PatchouliGreenAttack:
+  Name: 春色閃光
+  Description: "造成 {Damage} 點傷害。\n當前法力總點數不少於 {Value1} 時才能打出。"
+DefaultPeace:
+  Name: 熱戀荊棘
+  Description: "獲得 {Block} 點|格擋|。\n進入|平靜|。"
+FindInspiration:
+  Name: 尋找靈感
+  Description: "造成 {Damage} 點傷害。\n獲得 {Value1} 層|靈感迸發|。"
+InspirationBlack:
+  Name: 黑色靈感
+  Description: "獲得 {Block} 點|格擋|。\n對一個隨機敵人造成 {Damage} 點傷害。"
+InspirationGreen:
+  Name: 綠色靈感
+  Description: 獲得{Mana}。
+InspirationRed:
+  Name: 紅色靈感
+  Description: 對所有敵人造成 {Damage} 點傷害 {Value1} 次。
+SunflowerDefense:
+  Name: 太陽花田
+  Description: "獲得 {Block} 點|格擋|。\n將 {Value1} 張|盛夏之花|加入手中。"
+TakaneDefense:
+  Name: 最深的森域
+  Description: "獲得 {Block} 點|格擋|。\n|每額外支付|{Mana}：|格擋|提高 {Value1} 點。"
+GreenLotus:
+  Name: 荷塘月色
+  Description: 獲得{Mana}。
+ModuoluoSeasons:
+  Name: 暴走的季節
+  Description: 將隨機的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
