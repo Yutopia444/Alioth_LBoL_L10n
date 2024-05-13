@@ -2063,7 +2063,7 @@ KokoroAttack:
   UpgradedDescription: "對所有敵人造成 {Damage} 點傷害。\n選擇一張牌手牌丟棄。"
 NitoriUnderWater:
   Name: 水色絨毯
-  Description: "獲得 {Value1} 回合|光學迷彩|。\n抽 {Value2} 張牌。"
+  Description: "獲得 {Block} 點|格擋|。\n抽 {Value1} 張牌。"
   FlavorText: 入水後，彈幕的殺傷力將會大大減弱。
 
 ShuimiUnderWater:
@@ -3469,12 +3469,8 @@ YaoguaiNaodianbo:
 YoubiKongjuzheng:
   Name: 幽閉恐懼症
   Description: "獲得 {Block} 點|格擋|。\n|直覺|：獲得 {Shield} 點|護盾|。"
-XinliZhenliao:
-  Name: 記憶的切片
 XinliBenwo:
   Description: 進入|熱戀|。
-XinliDunwu:
-  Description: 進入|神遊|。
 DNARain:
   Name: DNA霰彈槍
   Description: "對所有敵人造成 {Damage} 點傷害。\n|進入心境時|：傷害提高 {Value1} 點。"
@@ -3499,8 +3495,6 @@ BenwoTouying:
   Name: 盲目的愛
   Description: "每次進入|熱情|時，將一張|p:完全隨機|的|攻擊|牌加入手中，暫塑為{Mana}且附帶|放逐|。\n進入|熱情|。"
   FlavorText: 我們都曾幻想成為另一個自己。
-Chaofanyin:
-  Name: 超反應知覺
 JiyiShitihua:
   Name: 記憶實體化
   Description: "複製手中的一張的攻擊牌，複製費用為{Mana}且附帶|放逐|。\n造成{Damage}點傷害。"
@@ -3535,13 +3529,11 @@ MeilingFriend:
     當{PlayerName}受到一整輪攻擊時額外觸發一次。'
   Name: 玩忽職守紅美鈴
   ExtraDescription2: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
-Naodiantu:
-  ExtraDescription2: 獲得 {Block} 點|格擋|，使{SelfName}下次攻擊傷害提高 {Value1}。
 GududeXin:
   Description: 獲得 {Value1} 個|戀心|。
 QiangweiDiyu:
   Name: 薔薇地獄
-  Description: 每當一張基本牌進入手牌時，對隨機敵人造成 {Value1} 點傷害，然後將傷害提高 {Value2} 點。
+  Description: "得到{Value1}層|薔薇地獄|。\n每當打出一張|基本|牌時，可獲得{Value2}層|薔薇地獄|，抽1張牌。\n（薔薇地獄：每當一張基本牌進入手中時，對隨機敵人造成當前層數的傷害。）"
 MoonSea:
   Name: 靜寂之海
   Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
@@ -3659,7 +3651,7 @@ SiwangLaiDian:
   Name: 恐怖的可愛來電
   UpgradedDescription: "選擇並|放逐|一張手牌，將 {Value1} 張複製置入抽牌堆頂部。\n如果選擇了|基本牌|，則使複製附帶|填充|。"
 MirrorTest:
-  Description: "獲得 {Block} 點|護盾|。\n|在手中|：打出相鄰的手牌後，如果打出的是一張|攻擊牌|，將{SelfName}轉變為打出牌的複製，並獲得 {Block} 點|護盾|。"
+  Description: "獲得 {Shield} 點|護盾|。\n|在手中|：打出相鄰的手牌後，如果打出的是一張|攻擊牌|，將{SelfName}轉變為打出牌的複製，並獲得 {Shield} 點|護盾|。"
   Name: 鏡像測試
 YoumuHybrid:
   Name: 半人半靈
@@ -3691,7 +3683,7 @@ WuyunJiekong:
 QingxingMeng:
   Name: 意識下潛
   Description: "{PlayerName}的回合開始時，將 {Value1} 張|完全隨機|的|稀有|牌加入手中，它暫塑為{Mana}，具有|放逐|、|虛無|。\n\
-    {PlayerName}的每個回合只能打出 {Limit} 層張|稀有|牌。"
+    {PlayerName}的每個回合只能打出 {Limit} 張|稀有|牌。"
 SuperNova:
   Description: "獲得{Mana}。\n將抽牌堆中的隨機 {Value1} 張攻擊牌移入手中。"
   Name: 超新星
@@ -3719,3 +3711,21 @@ SuikaDraw:
 SakuyaZeroDefense:
   Name: 偏轉彈幕
   Description: 獲得 {Block} 點|格擋|。
+YoumuAttack:
+  Name: 心抄斬
+  Description: "造成 {Damage} 點傷害。\n選擇一張手牌|放逐|。"
+YukariFlyObject:
+  Name: 超高速飛行物體
+  Description: 下回合開始時，對生命值最高的敵人造成 {Value1} 點傷害。
+SanaeSpirit:
+  Name: 收集信仰
+  Description: 獲得 {Value1} 點|靈力|。
+YukariSwarm:
+  Name: 飛光蟲之巢
+  Description: "對所有敵人造成 {Damage} 點傷害。\n若|放逐|區有不少於 {Value1} 張牌，造成兩次傷害。"
+  UpgradedDescription: "選擇至多 {Value2} 張手牌|放逐|。\n對所有敵人造成 {Damage} 點傷害。\n如果|放逐|區有不少於 {Value1} 張牌，造成兩次傷害。"
+SanaeSummonGod:
+  Name: 召請建御名方神
+  Description: 兩回合後的回合開始時：獲得 {Value1} 點|火力|和|靈力|。
+  UpgradedDescription: 下回合開始時：獲得 {Value1} 點|火力|和|靈力|。
+  FlavorText: 博麗靈夢無法閃避的技能。
