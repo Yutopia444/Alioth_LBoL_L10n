@@ -1018,44 +1018,39 @@ StarFriendSe:
   Description: '{SourceCardName}造成伤害时，施加 {Level} 层|锁定|。'
   Brief: '{SourceCardName}造成伤害时，施加若干层|锁定|。'
 
-Love:
-  Name: 恋心
-  Description: |
-    {PlayerName}的回合开始时，移除两个|恋心|，抽 {Draw} 张牌并进入|热恋|。
-  Brief: '{PlayerName}的回合开始时，移除两个|恋心|，抽 3 张牌并进入|热恋|。'
-
-MindPassion:
+MoodPassion:
   Name: 热情
   Description: |-
-    |热情|是一种|意识|，只能同时处于一种|意识|。
-    打出攻击牌时，获得 {Fire} 点在离开|热情|时移除的|火力|。
-    打出防御牌时，离开|热情|。
+    处于|热情|时，{PlayerName}造成和受到的攻击伤害提高 {Percentage}%。
+    |热情|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
   Brief: |-
-    |热情|是一种|意识|，只能同时处于一种|意识|。
-    打出攻击牌时，获得 {Fire} 点在离开|热情|时移除的|火力|。
-    打出防御牌时，离开|热情|。
+    处于|热情|时，{PlayerName}造成和受到的攻击伤害提高 {Percentage}%。
+    |热情|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
 
-MindPeace:
+MoodPeace:
   Name: 平静
   Description: |-
-    |平静|是一种|意识|，只能同时处于一种|意识|。
-    支付法力打出防御牌时，下回合获得<sprite="ManaSprite" name="G">。
-    打出攻击或能力牌时，离开|平静|。
+    离开|平静|时获得{Mana}。
+    |平静|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
   Brief: |-
-    |平静|是一种|意识|，只能同时处于一种|意识|。
-    支付法力打出防御牌后，下回合获得<sprite="ManaSprite" name="G">。
-    打出攻击或能力牌后，离开|平静|。
+    离开|平静|时获得{Mana}。
+    |平静|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
 
-MindEnlight:
+MoodEnlight:
   Name: 神游
   Description: |-
-    |神游|是一种|意识|，只能同时处于一种|意识|。
-    离开|神游|时，抽一张牌，这张牌费用暂塑为<sprite="ManaSprite" name="0">并附带|放逐|。
-    {PlayerName}失去生命时，离开|神游|。
+    进入|神游|时获得{Mana}。
+    处于|神游|时，每打出一张牌抽一张牌。
+    |神游|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
   Brief: |-
-    |神游|是一种|意识|，只能同时处于一种|意识|。
-    离开|神游|时，抽一张牌，这张牌费用暂塑为<sprite="ManaSprite" name="0">并附带|放逐|。
-    {PlayerName}失去生命时，离开|神游|。
+    进入|神游|时获得{Mana}。
+    处于|神游|时，每打出一张牌抽一张牌。
+    |神游|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+
+InspirationSe:
+  Name: 灵感迸发
+  Description: '{PlayerName}累计 {TriggerLevel} 层|灵感迸发|时，将等量的|灵感|洗入抽牌堆，进入|神游|。'
+  Brief: '{PlayerName}累计 {TriggerLevel} 层|灵感迸发|时，将等量的|灵感|洗入抽牌堆，进入|神游|。'
 
 NextTurnBenwo:
   Name: 下回合进入热恋
@@ -1141,14 +1136,10 @@ LoseSpiritSe:
   Description: '{PlayerName}回合开始时，失去 {Level} 点|灵力|。'
   Brief: '{PlayerName}回合开始时，失去若干点|灵力|。'
 
-SeeFengshuiSe:
-  Name: 考察风水
-  Description: |-
-    {PlayerName}的回合开始时，|占卜| {Scry} 。
-    这次|占卜|中每丢弃一张防御牌，获得 {Block} 点|格挡|。
-  Brief: |-
-    {PlayerName}的回开始束时，|占卜|。
-    这次|占卜|中每丢弃一张防御牌，获得若干|格挡|。
+MoreDraw:
+  Name: 发明创造
+  Description: 抽牌阶段多抽 {Level} 张牌。
+  Brief: 抽牌阶段多抽若干张牌。
 
 YonglinCardSe:
   Name: 贤者的归隐
@@ -1250,6 +1241,15 @@ TiangouOrderSe:
   Description: 当{OwnerName}受到攻击时，{PlayerName}获得 {Level} 点|格挡|。
   Brief: 当{OwnerName}受到攻击时，{PlayerName}获得若干点|格挡|。
 
+SeeFengshuiSe:
+  Name: 考察风水
+  Description: |-
+    {PlayerName}的回合开始时，|占卜| {Scry} 。
+    这次|占卜|中每丢弃一张防御牌，获得 {Block} 点|格挡|。
+  Brief: |-
+    {PlayerName}的回开始束时，|占卜|。
+    这次|占卜|中每丢弃一张防御牌，获得若干|格挡|。
+
 RainbowMarketSe:
   Name: 月虹市场
   Description: 每当一张牌被|放逐|时，增加 {Level} 张随机的卡牌进入手中。
@@ -1273,11 +1273,6 @@ TodayYesterdaySe:
   Name: 今昔幻想乡
   Description: '{OwnerName}|闪避|伤害时，获得 {Level} 点|火力|。'
   Brief: '{OwnerName}|闪避|伤害时，获得若干点|火力|。'
-
-SkyWaterSe:
-  Name: 天水的奇迹
-  Description: 抽牌阶段多抽 {Level} 张牌。
-  Brief: 抽牌阶段多抽若干张牌。
 
 BlackPoisonSe:
   Name: 黑暗演舞
@@ -1359,6 +1354,11 @@ SuperExtraTurn:
     {PlayerName}的|自然回合|结束时，进行一个额外的回合。
     这一回合开始时不会失去|格挡|和|闪避|，只能打出 {Level} 张牌。
     当前回合状态：{SelfName}所带来的额外回合，还可以打出 {Count} 张牌。
+
+ZhenmiaowanAbilitySe:
+  Name: 小锤的魔力
+  Description: 卡牌的费用降低{Mana}。
+  Brief: 卡牌的费用降低{Mana}。
 
 YukariFriendSe:
   Name: 幻想的境界

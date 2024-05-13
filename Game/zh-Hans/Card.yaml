@@ -1603,18 +1603,18 @@ LeidiFriend:
   ExtraDescription2: '{FriendU}对所有敌人造成 {Damage} 点伤害，施加|寒冷|。'
   FlavorText: 冬日将至。冬日已来。再战冬日。重返冬日。
 
-ColdSnap:
-  Name: 快速降温
-  Description: 将抽牌堆中的前 {Value1} 张蓝色牌移入手中，每张获得 {Value2} 点|护盾|。
+IceBarrier:
+  Name: 寒冰护体
+  Description: 获得 {Value1} 层|寒冰甲|。
 
 IceSaber:
   Name: 塑冰成剑
   Description: 弃掉至多 {Value1} 张蓝色手牌，将等量的|冰枪术|加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
   FlavorText: 曾今有把名剑叫霜之哀伤。
 
-IceBarrier:
-  Name: 寒冰护体
-  Description: 获得 {Value1} 层|寒冰甲|。
+ColdSnap:
+  Name: 快速降温
+  Description: 将抽牌堆中的前 {Value1} 张蓝色牌移入手中，每张获得 {Value2} 点|护盾|。
 
 ZeroK:
   Name: 绝对零度
@@ -1698,7 +1698,7 @@ MoreFriends:
 FairyOnIce:
   Name: 冰上的妖精
   Description: |-
-    将 {Value1} 张|冰晶|加入手中。
+    将 {Value1} 张|冰晶|洗入抽牌堆。
     获得 {Value2} 层|闪避|。 
 
 FruitShake:
@@ -1904,30 +1904,47 @@ KoishiBlockG:
   Name: 花团锦簇
   Description: 获得 {Block} 点|格挡|。
 
-KoishiMove:
+DefaultPassion:
   Name: 无意识的行动
   Description: |-
-    选择一项，每个选项附带一种随机的|心境|：
-    - 对随机敌人造成 {Damage} 点伤害。
-    - 获得 {Block} 点格挡。
+    造成 {Damage} 点伤害。
+    进入|热情|。
 
-KoishiMoveAttack:
-  Name: 看看这个
-  Description: 对随机敌人造成 {Damage} 点伤害，进入|热情|。
-  ExtraDescription1: 对随机敌人造成 {Damage} 点伤害，进入|平静|。
-  ExtraDescription2: 对随机敌人造成 {Damage} 点伤害，进入|顿悟|。
-
-KoishiMoveDefense:
-  Name: 看看那个
-  Description: 获得 {Block} 点格挡，进入|热情|。
-  ExtraDescription1: 获得 {Block} 点格挡，进入|平静|。
-  ExtraDescription2: 获得 {Block} 点格挡，进入|顿悟|。
-
-RelianJingji:
+DefaultPeace:
   Name: 热恋荆棘
   Description: |-
+    获得 {Block} 点|格挡|。
+    进入|平静|。
+
+FindInspiration:
+  Name: 寻找灵感
+  Description: |-
     造成 {Damage} 点伤害。
-    |打出相邻手牌时|：伤害提高 {Value1} 直到打出后。
+    获得 {Value1} 层|灵感迸发|。
+
+InspirationCard:
+  Name: 灵感
+  Description: '|进入手中时|：转变为一张随机颜色的|e:灵感牌|，生效然后|放逐|自身。'
+
+InspirationBlack:
+  Name: 黑色灵感
+  Description: |-
+    获得 {Block} 点|格挡|。
+    对一个随机敌人造成 {Damage} 点伤害。
+
+InspirationGreen:
+  Name: 绿色灵感
+  Description: 获得{Mana}。
+
+InspirationWhite:
+  Name: 白色灵感
+  Description: |-
+    |升级| {Value1} 张随机的手牌。
+    没有合适目标时，每张|升级|的机会转化为 {Value2} 点|格挡|。
+
+InspirationRed:
+  Name: 红色灵感
+  Description: 对所有敌人造成 {Damage} 点伤害 {Value1} 次。
 
 YaoguaiNaodianbo:
   Name: 妖怪脑电波
@@ -2312,6 +2329,23 @@ YuetuYuyi:
   Description: 获得 {Value1} 回合|天衣无缝|。
   FlavorText: 残留的月的回忆。
 
+BlueZeroAttack:
+  Name: 高压水枪
+  Description: 造成 {Damage} 点伤害。
+  UpgradedDescription: |-
+    造成 {Damage} 点伤害。
+    施加 {Value1} 回合|虚弱|。
+
+PlayWithWater:
+  Name: 戏水
+  Description: |-
+    抽 {Value1} 张牌。
+    选择一张手牌丢弃。
+  UpgradedDescription: |-
+    抽 {Value1} 张牌。
+    选择至多一张手牌丢弃。
+  FlavorText: Play with water.
+
 QinglanAttack:
   Name: 兔已着陆
   Description: |-
@@ -2324,10 +2358,7 @@ KokoroAttack:
   Name: 杞人忧地
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    随机弃一张牌。
-  UpgradedDescription: |-
-    对所有敌人造成 {Damage} 点伤害。
-    选择一张牌手牌丢弃。
+    抽 {Value1} 张牌。
   FlavorText: 被下一餐吃什么这个问题严重困扰。
 
 NitoriUnderWater:
@@ -2341,16 +2372,6 @@ ShuimiUnderWater:
   Name: 船底幽灵
   Description: 当此牌被主动弃掉或|放逐|时，获得{Mana}。
 
-PlayWithWater:
-  Name: 戏水
-  Description: |-
-    抽 {Value1} 张牌。
-    选择一张手牌丢弃。
-  UpgradedDescription: |-
-    抽 {Value1} 张牌。
-    选择至多一张手牌丢弃。
-  FlavorText: Play with water.
-
 HatateDiscard:
   Name: 新闻捏造
   Description: |-
@@ -2361,15 +2382,42 @@ HatateDiscard:
     获得{Mana}。
   FlavorText: 「犯人不是魔理沙。」
 
+QingeDraw:
+  Name: 道胎动
+  Description: |-
+    获得 {Block} 点|格挡|。
+    抽 {Value1} 张牌，丢弃它们中费用总数大于一的牌。
+  FlavorText: 好像原地传送了……
+
+NitoriMoreDraw:
+  Name: 传道授业
+  Description: 抽牌阶段多抽 {Value1} 张牌。
+  FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
+
+WaterPrincess:
+  Name: 水精公主
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
+    |初见|：将一张|水花|加入手中。
+  NonbattleDescription: |-
+    每有一张手牌，就获得 {Value1} 点|护盾|。
+    |初见|：将一张|水花|加入手中。
+  ExtraDescription1: |-
+    获得 {Shield} 点|护盾|。
+    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
+    |d:初见：将一张水花加入手中。|
+  FlavorText: 精装魔导书有100米防水功能。
+
+HuiyinDraw:
+  Name: 神代的记忆
+  Description: 抽 {Value1} 张牌。
+
 DoremyDuplicate:
   Name: 梦我梦中
   Description: 选择一张手牌，将 {Value1} 张的它的复制加入手中。
   DetailText: 不能以|复制品|为目标。
   FlavorText: 当哆来咪口渴时，她会重点挑选那些喜欢睡前喝很多水的人的梦境。
-
-HuiyinDraw:
-  Name: 文物鉴宝
-  Description: 抽 {Value1} 张牌。
 
 GuijiZaoxingYuan:
   Name: 圆形造形术
@@ -2390,21 +2438,6 @@ GuijiZaoxingHu:
     造成 {Damage} 点伤害。
     抽 {Value1} 张牌。
     打出后变化为另一张随机的|e:造形术|。
-
-WaterPrincess:
-  Name: 水精公主
-  Description: |-
-    获得 {Shield} 点|护盾|。
-    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
-    |初见|：将一张|水花|加入手中。
-  NonbattleDescription: |-
-    每有一张手牌，就获得 {Value1} 点|护盾|。
-    |初见|：将一张|水花|加入手中。
-  ExtraDescription1: |-
-    获得 {Shield} 点|护盾|。
-    每有一张手牌，就提高 {Value1} 点。（总计 {Special} 点）
-    |d:初见：将一张水花加入手中。|
-  FlavorText: 精装魔导书有100米防水功能。
 
 YonglinCard:
   Name: 贤者的归隐
@@ -2661,6 +2694,12 @@ SummerFlower:
     本场战斗中，所有的{SelfName}伤害提高 {Value1} 点。
   FlavorText: 这个石头能在你脑袋上打出一个很漂亮的形状。
 
+PatchouliGreenAttack:
+  Name: 春色闪光
+  Description: |-
+    造成 {Damage} 点伤害。
+    当前法力总点数不少于 {Value1} 时才能打出。
+
 RangziSeed:
   Name: 春种秋收
   Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
@@ -2669,6 +2708,12 @@ RangziSeed:
 RangziFanshu:
   Name: 香甜的番薯
   Description: 战斗结束时，恢复 {Value1} 点生命。
+
+SunflowerDefense:
+  Name: 太阳花田
+  Description: |-
+    获得 {Block} 点|格挡|。
+    将 {Value1} 张|盛夏之花|加入手中。
 
 DizangLove:
   Name: 即席菩提
@@ -2696,9 +2741,21 @@ YouxiangAttack:
     |每额外支付|{Mana}：伤害提高 {Value1} 点。
     总计支付费用不低于 {Value2} 点时，攻击具有|精准|。
 
+TakaneDefense:
+  Name: 最深的森域
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |每额外支付|{Mana}：|格挡|提高 {Value1} 点。
+
+GreenLotus:
+  Name: 荷塘月色
+  Description: 获得{Mana}。
+
 YouxiangMoon:
   Name: 花鸟风月
-  Description: '{PlayerName}的回合开始时，将一张|盛夏之花|加入手中。'
+  Description: |-
+    {PlayerName}的回合开始时，获得{Mana}。
+    将 {Value1} 张|盛夏之花|加入手中。
 
 LimaoSchool:
   Name: 狸猫的变身学校
@@ -3370,7 +3427,7 @@ AyaExtraTurn:
 
 AyaWindGirl:
   Name: 风神少女
-  Description: 获得 {Value1} 层|风神少女|，回合结束时补充|闪避|。
+  Description: 获得 {Value1} 层|风神少女|。
   DetailText: 拥有|风神少女|的角色，不会在回合开始时失去|闪避|到|风神少女|层数以下。
 
 PatchouliLibrary:
@@ -3399,17 +3456,14 @@ JinziSuperExtraTurn:
     打出{SelfName}后，可以悬停{PlayerName}身上的状态来查看当前回合的详细信息。
 
 AnimalSpirit:
-  Name: 畜生界大暴动
+  Name: 地狱的畜生道
   Description: |-
-    使其他手牌被动物灵附身，获得一种随机效果：
-    狼：获得|回响|。
-    獭：获得|填充|。
-    鹰：暂塑为{Mana}。
+    使其它手牌被动物灵附身，获得一种随机效果：
+    |r:狼|：赋予|回响|；|g:獭|：赋予|填充|；|p:鹰|：|暂塑|为{Mana}。
   UpgradedDescription: |-
-    使其他手牌和 {Value1} 张抽牌堆内的随机卡牌被动物灵附身，获得一种随机效果：
-    狼：获得|回响|。
-    獭：获得|填充|。
-    鹰：暂塑为{Mana}。
+    抽 {Value1} 张牌。
+    使其它手牌被动物灵附身，获得一种随机效果：
+    |r:狼|：赋予|回响|；|g:獭|：赋予|填充|；|b:鹰|：|暂塑|为{Mana}。
 
 PrismriverAll:
   Name: 合葬「棱镜协奏曲」
@@ -3425,7 +3479,7 @@ PrismriverAll:
 
 ZhenmiaowanAbility:
   Name: 小锤的魔力
-  Description: 本场战斗内所有牌的费用降低{Mana}。
+  Description: 所有卡牌的费用降低{Mana}，直到战斗结束。
 
 JunkoNightmare:
   Name: 震颤的冰封噩梦
@@ -3436,6 +3490,10 @@ JunkoNightmare:
     选择至多 {Value2} 张手牌免于|纯粹|化。
     对所有敌人造成 {Damage} 点伤害 {Value1} 次。
     |放逐|所有的手牌，将等量的|纯粹|加入手中。
+
+ModuoluoSeasons:
+  Name: 暴走的季节
+  Description: 将随机的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
 
 YukariFriend:
   Name: 幻想的境界八云紫
