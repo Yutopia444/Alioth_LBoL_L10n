@@ -285,7 +285,7 @@ MinengZhuru:
 SummerFlower:
   Description: "Inflige {Damage} de daño.\nDurante el resto del combate, cada {SelfName}\
     \ inflige {Value1} más de daño."
-  Name: Flores de Verano
+  Name: Flor de Verano
   FlavorText: Esta roca puede darle a tu cerebro una forma realmente hermosa.
 MarisaAttackB:
   Description: Inflige {Damage} de daño.
@@ -1637,7 +1637,8 @@ YuetuInvincible:
   FlavorText: Escapar del mundo purificado, al paraíso de la inmundicia.
 KokoroAttack:
   Name: Erupción Melancólica
-  Description: "Inflige {Damage} de daño a cada enemigo.\nDescarta una carta aleatoria."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'}."
   FlavorText: Está seriamente preocupada por la cuestión de qué comer en su próxima
     comida.
 ShuimiUnderWater:
@@ -2245,8 +2246,8 @@ Tether:
   FlavorText: Confía en tus amigas cuando salgas afuera.
 YouxiangMoon:
   Name: Belleza de la Naturaleza
-  Description: Al comienzo de cada turno de {PlayerName}, agrega una |Flores de Verano|
-    a la mano.
+  Description: "Al comienzo de cada turno de {PlayerName}, gana {Mana}.\nAgrega {Value1}\
+    \ |Flor{Value1:plural one='' other='es'} de Verano| a la mano."
 IceSaber:
   Name: Espada Forjada en Hielo
   Description: "Descarta hasta {Value1} carta{Value1:plural one=' azul' other='s azules'}.\
@@ -2375,8 +2376,8 @@ FreezeToIce:
     \ {Value1:plural one='Glaciar' other='Glaciares'} en la pila de robo."
 FairyOnIce:
   Name: Hada sobre Hielo
-  Description: "Agrega {Value1} |Glaciar{Value1:plural one='' other='es'}| a la mano.\n\
-    Gana {Value2} de |Evasión|. "
+  Description: "Agrega {Value1} |Glaciar{Value1:plural one='' other='es'}| a la pila\
+    \ de robo.\nGana {Value2} de |Evasión|. "
 DeepFreeze:
   Name: Danza de Carámbanos
   Description: "Cada vez que se juega una carta azul, {PlayerName} gana {Value1} de\
@@ -2433,8 +2434,8 @@ FrozenThrone:
 FairyWrath:
   Name: Cólera de la Naturaleza
   Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay una |Daiyousei, la\
-    \ Alegre Asistente| convocada en la mano, agrega {Value1} |Flores de verano| a\
-    \ la mano."
+    \ Alegre Asistente| convocada en la mano, agrega {Value1} |Flor de verano| a la\
+    \ mano."
 FreezeRiver:
   Name: Hielo Flotante
   Description: Coloca a la mano la carta que esta en la parte inferior de la pila
@@ -2690,9 +2691,6 @@ AliceAttackW:
 AliceAttackB:
   Description: Inflige {Damage} de daño.
   Name: Regreso a la Inanimación
-KoishiMove:
-  Description: "Elige uno, mientras entras en un |Estado Mental| aleatorio:\n- Inflige\
-    \ {Damage} de daño a un enemigo aleatorio.\n- Gana {Block} de |Bloqueo|."
 LoveFire:
   Name: Ascuas del Amor
   ExtraDescription1: "Inflige {Damage} de daño.\nGana {SavedMana}.\n|Por cada {Mana}\
@@ -2765,14 +2763,9 @@ ShirenKunchong:
   Description: "Inflige {Damage} de daño a cada enemigo.\nCada vez que un enemigo\
     \ gana un |Efecto Negativo|, {PlayerName} gana {Value1} de |Bloqueo|."
 KoishiMoveAttack:
-  Description: "Inflige {Damage} de daño a un enemigo aleatorio y entra en el estado\
-    \ |Pasión|.\n(Los ataques se vuelven |Certeros| y se puede gastar el |Amor| para\
-    \ duplicar el daño)."
   ExtraDescription2: "Inflige {Damage} de daño a un enemigo aleatorio y entra en el\
     \ estado |Epifanía|.\n(No se descarta cartas ni maná)."
 KoishiMoveDefense:
-  Description: "Gana {Block} de |Bloqueo| y entra en el estado |Pasión|.\n(Los ataques\
-    \ se vuelven |Certeros| y se puede gastar el |Amor| para duplicar el daño)."
   ExtraDescription2: "Gana {Block} de |Bloqueo| y entra en el estado |Epifanía|.\n\
     (No se descarta cartas ni maná)."
 AnimalSpirit:
@@ -2824,9 +2817,6 @@ AyaNewsAliceSp:
   Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   FlavorText: ¡Una edición especial sobre la Exposición de la Capital Lunar! Detalla
     los chismes que rodean a {PlayerName}.
-RelianJingji:
-  Description: "Inflige {Damage} de daño.\n|Cuando se juega una carta adyacente|:\
-    \ Aumenta el daño de {SelfName} en {Value1} la próxima vez que se juega."
 PiankeNingjing:
   Name: Recuperar la Conciencia
   Description: "Gana de {Block} de |Bloqueo|.\nSi es posible, se sale del estado |Serenidad|\
@@ -3021,8 +3011,7 @@ AyaExtraTurn:
     |Límite de Tiempo| {Mana}."
 AyaWindGirl:
   Name: Joven Diosa del Viento
-  Description: Gana {Value1} |Joven Diosa del Viento|, se repone la |Evasión| al final
-    del turno de {PlayerName}.
+  Description: Gana {Value1} |Joven Diosa del Viento|.
   DetailText: Tener el efecto de |Joven Diosa del Viento| no dejará que la |Evasión|
     este por debajo de la cantidad de cargas de la |Chica de la Diosa del Viento|
     al final del turno.
@@ -3179,3 +3168,13 @@ MirrorTest:
   Name: Prueba del Espejo
 QingxingMeng:
   Name: Sumergirse en la Conciencia
+SunflowerDefense:
+  Name: Jardín del Sol
+  Description: "Gana {Block} de |Bloqueo|.\nAgrega {Value1} |Flor{Value1:plural one=''\
+    \ other='es'} de verano| a la mano."
+BlueZeroAttack:
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|."
+  Description: Inflige {Damage} de daño.
+InspirationRed:
+  Description: Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'
+    other='veces'}.
