@@ -1185,7 +1185,7 @@ QinglanAttack:
   FlavorText: 元の場所に戻ったみたい.…
 KokoroAttack:
   Name: 杞人地を憂う
-  Description: "敵全体に{Damage}ダメージを与える。\n手札をランダムに1枚捨てる。"
+  Description: "敵全体に{Damage}ダメージを与える。\nカードを{Value1}枚引く。"
   FlavorText: 夕食は何を食べようか.....
 YuetuYuyi:
   Description: '|天衣無縫|{Value1}を得る。'
@@ -1203,7 +1203,9 @@ YongyiAttack:
   Description: "全ての敵に{Damage}ダメージを{Value1}回与える。\n{PlayerName}が|臨時火力|を得ている場合、追加で1回ダメージを与える。"
 YouxiangMoon:
   Name: 花鳥風月
-  Description: '{PlayerName}のターン開始時に、|真夏の花|を手札に加える。'
+  Description: '{PlayerName}のターン開始時に、{Mana}を得る。。
+
+    |真夏の花|を{Value1}枚手札に加える。'
 HuaBlock:
   Description: "{Block}|ブロック|を得る。\n|臨時火力|{Value1}を得る。"
   Name: 作戦姿勢
@@ -1703,7 +1705,7 @@ Blizzard:
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n山札の底にあるカードを表示し、それが青のカードなら次の{PlayerName}のターン開始時にこの効果を再び発動する。"
 FairyOnIce:
   Name: 氷上の妖精
-  Description: "|氷晶|を{Value1}枚手札に加える。\n|グレイズ|{Value2}を得る。 "
+  Description: "|氷晶|を{Value1}枚山札に加える。\n|グレイズ|{Value2}を得る。 "
 ColdSnap:
   Name: 高速なる解熱
   Description: "山札の上から{Value1}枚の青のカードを手札に加える。加えたカード1枚につき{Value2}|バリア|を得る。"
@@ -1909,7 +1911,7 @@ FangxiangHeal:
   FlavorText: 「あの娘手ぇ凝らないの？」
 YouxiangAttack:
   Name: 幻想郷の開花
-  Description: "{Damage}ダメージを与える。\n|{Mana}ごとに|：与えるダメージを{Value1}増やす。\n{Value2}点以上のマナを支払って使用している場合、|精密|を持つ。"
+  Description: "{Damage}ダメージを与える。\n|{Mana}につき|：与えるダメージを{Value1}増やす。\n{Value2}点以上のマナを支払って使用している場合、|精密|を持つ。"
 SanaeRestart:
   Name: 海が割れる日
   Description: "任意の枚数の手札と全ての捨て札を山札に戻し、山札をシャッフルする。\nカードを{Value1}枚引く。\n{Mana}を得る。"
@@ -2035,9 +2037,10 @@ KisumeAttack:
   Description: "{Damage}|ダメージ|を与える。\n{Block}|ブロック|を得る。\n{SelfName}がターンの最初に使用されたカードである場合、|ロックオン|{Value1}を与える。"
   Name: 釣瓶落としの怪
 AnimalSpirit:
-  Name: 畜生界の大暴動
-  Description: "手札の他のカードが動物霊に憑依され、以下の効果を得る。\nオオカミ霊：|反復|を得る。\nカワウソ霊：|補充|を得る。\nオオワシ霊：臨時コスト{Mana}になる。"
-  UpgradedDescription: "手札の他のカードと山札のランダムな{Value1}枚のカードが動物霊に憑依され、以下の効果を得る。\nオオカミ霊：|反復|を得る。\n\
+  Name: 地獄の畜生道
+  Description: "手札の他のカードが動物霊に憑依され、以下の効果の内の一つをランダムで得る。\nオオカミ霊：|反復|を得る。\nカワウソ霊：|補充|を得る。\n\
+    オオワシ霊：臨時コスト{Mana}になる。"
+  UpgradedDescription: "カードを{Value1}枚引く。\n手札のカードが動物霊に憑依され、以下の効果の内の一つをランダムで得る。\nオオカミ霊：|反復|を得る。\n\
     カワウソ霊：|補充|を得る。\nオオワシ霊：臨時コスト{Mana}になる。"
 YukariFriend:
   Name: 幻想の境界、八雲紫
@@ -2119,8 +2122,6 @@ BenwoTouying:
   Name: 恋は盲目
   Description: "|熱情|状態に入る度、|p:完全にランダム|な攻撃カードを1枚手札に加える。それは|臨時コスト|{Mana}と|廃棄|を持つ。\n\
     |熱情|状態に入る。"
-KoishiMoveDefense:
-  ExtraDescription1: "・{Block}|ブロック|を得る。|平静|状態に入る。"
 Danxiangsi:
   Name: 片思い
   Description: "|火力|{Value1}を得る。\n|保留時|：得られる|火力|を{Value2}増加させる。"
@@ -2150,7 +2151,7 @@ YijiEarthSpike:
 AyaWindGirl:
   DetailText: '|風神少女|を持つキャラクターは、ターン終了時に|風神少女|の値になるまで|グレイズ|を得る。'
   Name: 風神少女
-  Description: '|風神少女|{Value1}を得る。（ターン終了時に|グレイズ|を補充する）'
+  Description: '|風神少女|{Value1}を得る。'
 ReimuHuashan:
   ExtraDescription1: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\n\
     |d:この戦闘で初めて能力カードをこの効果で廃棄した場合、更に最大ライフを{Value1}増やす。|"
@@ -2217,7 +2218,7 @@ JinziSuperExtraTurn:
   DetailText: "{SelfName}の効果による追加ターンは他の効果で得た追加ターンより優先して発生する。\n{SelfName}をプレイした後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
 ZhenmiaowanAbility:
   Name: 小槌の魔力
-  Description: 全てのカードのコストが{Mana}減少する。
+  Description: 戦闘終了まで、全てのカードのコストが{Mana}減少する。
 HuiyeMarblePhantasm:
   Name: 空想具現化
   DetailText: 該当するコストの選択肢が不足している場合、不足分として低コストのカードが提示される。
@@ -2325,3 +2326,25 @@ YonglinDraw:
 QingeDraw:
   Name: タオ胎動
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。引いたカードの中で、マナコストの合計が1より大きいカードを捨てる。"
+HuiyinMoreDraw:
+  Name: 伝道教示
+  Description: ドローフェイズの時、カードを{Value1}枚多く引く。
+BlueZeroAttack:
+  Name: 高圧水銃
+  Description: '{Damage}ダメージを与える。'
+  UpgradedDescription: "{Damage}ダメージを与える。\n脱力{Value1}を与える。"
+TakaneDefense:
+  Description: "{Block}|ブロック|を得る。\n|{Mana}につき|：効果で得られる|ブロック|が{Value1}増加する。"
+  Name: 森域の最深部
+PatchouliGreenAttack:
+  Name: 春色の閃光
+  Description: "{Damage}ダメージを与える。\nこのカードは保有しているマナの総数が{Value1}以上の時のみに使用可能。"
+SunflowerDefense:
+  Name: 太陽の畑
+  Description: "{Block}|ブロック|を得る。\n|真夏の花|を{Value1}枚手札に加える。"
+GreenLotus:
+  Name: 荷塘月色
+  Description: '{Mana}を得る。'
+ModuoluoSeasons:
+  Name: 暴走の季節
+  Description: '|水花|、|火焰|、|盛夏之花|をランダムで手札が上限になるまで加える。'
