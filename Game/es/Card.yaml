@@ -1145,7 +1145,7 @@ RedMogu:
   Description: Aplica {Value1} de |Veneno|.
 BlueMogu:
   Name: Cobalt Pleurotus
-  Description: Roba {Value1:plural one='% carta' other='% cartas'}.
+  Description: Roba {Value1} carta{Value1:plural one='' other='s'}.
 MasterOfCollection:
   Name: Maestra Coleccionista
   Description: "Elige hasta {Value2} carta{Value2:plural one='' other='s'} en la mano.\
@@ -2766,7 +2766,7 @@ AnimalSpirit:
   Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
     \ de los animales, otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan\
     \ |Eco|.\n|g:Nutria|: Ganan |Reponer|.\n|b:Águila|: |Cuestan temporalmente| {Mana}."
-  Name: Alzamiento del Reino de las Bestias
+  Name: Ruta de las Bestias del Infierno
   UpgradedDescription: "Todas las demás cartas en la mano y {Value1} carta{Value1:plural\
     \ one='' other='s'} en la pila de robo estarán poseídas por los espíritus de los\
     \ animales, otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan |Eco|.\n\
@@ -2802,9 +2802,9 @@ NightMana4:
     \ maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, se |Exilia| una {SelfName} en la mano."
 WuyishiDNA:
-  Description: "Entra en el estado |Epifanía|. Termina el turno. Luego, toma un turno\
+  Description: "Entra en el estado |Fuga|. Termina el turno. Luego, toma un turno\
     \ extra.\nAl final del turno de {PlayerName}, si {PlayerName} no está en el estado\
-    \ |Epifanía|, pierde la partida."
+    \ |Fuga|, pierde la partida."
   Name: Proyección Astral
 AyaNewsAliceSp:
   Name: Bunbunmaru - Especial de Alice
@@ -2817,8 +2817,8 @@ PiankeNingjing:
     \ y roba {Value1} carta{Value1:plural one='' other='s'}."
 YaoguaiNaodianbo:
   Name: EGG Youkai
-  Description: "Inflige {Damage} de daño y gana {Value1} de |Amor|.\n|Instinto|: Gana\
-    \ {Mana}."
+  Description: "Inflige {Damage} de daño y entra en el estado |Pasión|.\n|Instinto|:\
+    \ Gana {Mana}."
 YoubiKongjuzheng:
   Name: Claustrofobia
   Description: "Gana {Block} de |Bloqueo|.\n|Instinto|: Gana {Shield} de |Barrera|."
@@ -3155,10 +3155,27 @@ SanaeSummonGod:
   Name: Invocar a Take-Minakata
 SiwangLaiDian:
   Name: Llamada Lindamente Aterradora
+  Description: "|Exilia| una carta de |Ataque| en la mano. Agrega {Value1} |Copia{Value1:plural\
+    \ one='' other='s'}| de él a la parte superior de la pila de robo.\nSi la carta\
+    \ elegida es |Básica|, la {Value1:plural one='|Copia| tiene' other='|Copias| tienen'}\
+    \ |Reponer|."
+  UpgradedDescription: "|Exilia| una carta en la mano. Agrega {Value1} |Copia{Value1:plural\
+    \ one='' other='s'}| de él a la parte superior de la pila de robo.\nSi la carta\
+    \ elegida es |Básica|, la {Value1:plural one='|Copia| tiene' other='|Copias| tienen'}\
+    \ |Reponer|."
 MirrorTest:
   Name: Prueba del Espejo
+  Description: "Gana {Shield} de |Barrera|.\n|Mientras está en la mano|: Si se juega\
+    \ una carta de ataque adyacente, transforma {SelfName} en una |Copia| de esa carta\
+    \ y gana {Shield} de |Barrera|."
 QingxingMeng:
   Name: Sumergirse en la Conciencia
+  Description: "Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Value1:plural\
+    \ one=' Rara' other='s Raras'} |p:completamente aleatoria{Value1:plural one=''\
+    \ other='s'}| a la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
+    \ {Mana} y tiene{Value1:plural one='' other='n'} |Exilio| y |Etéreo|.\n{PlayerName}\
+    \ solo puede jugar {Limit} carta{Limit:plural one=' Rara' other='s Raras'} en\
+    \ cada turno."
 SunflowerDefense:
   Name: Jardín del Sol
   Description: "Gana {Block} de |Bloqueo|.\nAgrega {Value1} |Flor{Value1:plural one=''\
@@ -3166,6 +3183,7 @@ SunflowerDefense:
 BlueZeroAttack:
   UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|."
   Description: Inflige {Damage} de daño.
+  Name: Chorro de Alta Presión
 InspirationRed:
   Description: Inflige {Damage} de daño a cada enemigo {Value1} {Value1:plural one='vez'
     other='veces'}.
@@ -3173,16 +3191,46 @@ QingeDraw:
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
     \ other='s'}.\nDescarta cualquier carta robada de esta manera con un coste total\
     \ superior a 1."
+  Name: Movimiento Fetal Tao
+  FlavorText: Parece haberse teletransportado al mismo lugar…
 TakaneDefense:
   Description: "Gana {Block} de |Bloqueo|.\n|Por cada {Mana} gastado|: Gana {Value1}\
     \ más de |Bloqueo|."
+  Name: Profundidades del Bosque
 YonglinDraw:
   Description: Roba {Value1} carta{Value1:plural one='' other='s'}.
+  Name: Memorias de la Era Divina
 PatchouliGreenAttack:
   Description: "Inflige {Damage} de daño\nSolo se puede jugarse si queda al menos\
     \ {Value1} maná."
+  Name: Destello de Primavera
 GreenLotus:
   Description: Gana {Mana}.
+  Name: Loto Iluminado por la Luna
 ModuoluoSeasons:
   Description: Agrega aleatoriamente |Salpicaduras|, |Llamas| y |Flores de verano|
     a la mano hasta que este llena.
+  Name: Temporada Fuera de Control
+DefaultPassion:
+  Description: "Inflige {Damage} de daño.\nEntra en el estado |Pasión|."
+  Name: Acto Inconsciente
+HuiyinMoreDraw:
+  Name: Dedicación de la Profesora
+  Description: Roba {Value1} carta{Value1:plural one='' other='s'} más durante la
+    fase de robo.
+WuyunJiekong:
+  Description: "|Exilia| todas las cartas de Estado y |Desgracia| en la mano, pila\
+    \ de robo y pila de descarte.\nElimina todo los efectos negativos de {PlayerName}."
+DefaultPeace:
+  Description: "Gana {Block} de |Bloqueo|.\nEntra en el estado |Serenidad|."
+  Name: Espinas Apasionadas
+InspirationBlack:
+  Description: "Gana {Block} de |Bloqueo|.\nInflige {Value1} de daño a un enemigo\
+    \ aleatorio."
+InspirationGreen:
+  Description: Gana {Mana}.
+FindInspiration:
+  Description: "Inflige {Damage} de daño.\nGana {Value1} de |Destello de Inspiración|."
+  Name: Buscar Inspiración
+InspirationCard:
+  Name: Inspiración
