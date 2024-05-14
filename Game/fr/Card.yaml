@@ -448,8 +448,8 @@ JungleMaster:
     \ one='' other='s'}|."
 ManaJungle:
   Name: Aventure en Forêt
-  Description: "|Lorsque piochée| : Ajoutez |{Value1:plural one='% Arc-en-ciel' other='%\
-    \ Arc-en-ciels'}| à la main et |Exilez| {SelfName}."
+  Description: "|Lorsque {SelfName} arrive en main| : Ajoutez |{Value1:plural one='%\
+    \ Arc-en-ciel' other='% Arc-en-ciels'}| à la main et |Exilez| {SelfName}."
   FlavorText: '"Trop bien ! Des récompenses inattendues !"'
 SakuyaAttackW:
   Name: Lancer de Diversion
@@ -621,6 +621,8 @@ MarisaSteal:
   FlavorText: '"Quels matériaux magiques utiles avez-vous à la maison ?"'
   Description: "Ajoutez {Value1} |Arc{Value1:plural one='' other='s'}-en-ciel| à la\
     \ main.\n|Découvert| {Value2}."
+  UpgradedDescription: Ajoutez {Value1} |Arc{Value1:plural one='' other='s'}-en-ciel|
+    à la main.
 RainbowStar:
   Name: Explosion d'Étoiles Arc-en-ciel
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
@@ -791,8 +793,8 @@ KnifeBounce:
 Lijian:
   Name: Lames Imprégnées d'Aura
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
-    \ {Value1} carte{Value1:plural one='' other='s'}.\n|Lorsque piochée| : Cette carte\
-    \ coûte {Mana} de moins pour ce combat."
+    \ {Value1} carte{Value1:plural one='' other='s'}.\n|Lorsque {SelfName} arrive\
+    \ en main| : Cette carte coûte {Mana} de moins pour ce combat."
   FlavorText: La prochaine fois que vous verrez ces couteaux volants, vous mourrez.
 PrivateVision:
   Name: Image Rémanente
@@ -830,8 +832,8 @@ SakuyaTea:
 DefenseDraw:
   Name: Cycle Lunaire
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
-    \ {Value1:plural one='% carte' other='% cartes'}.\n|Lorsque piochée| : Cette carte\
-    \ coûte {Mana} de moins pour ce combat."
+    \ {Value1:plural one='% carte' other='% cartes'}.\n|Lorsque {SelfName} arrive\
+    \ en main| : {SelfName} coûte {Mana} de moins pour ce combat."
 AttackMagic:
   Name: Balles Astucieuses
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
@@ -860,8 +862,8 @@ SilverJump:
     \ à la pioche et à la défausse."
 SakuyaSleep:
   Name: Courte Pause
-  Description: "Ajoutez un |Arc-en-ciel| à la main.\n{PlayerName} termine son tour."
-  UpgradedDescription: Ajoutez un |Arc-en-ciel| à la main.
+  Description: "Ajoutez un |Éclat| à la main.\n{PlayerName} termine son tour."
+  UpgradedDescription: Ajoutez un |Éclat| à la main.
   FlavorText: La meilleure façon d'utiliser l'arrêt du temps.
 Knife:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quitte\
@@ -1113,7 +1115,8 @@ BladePower:
 SakuyaAttackX:
   Name: Propulsion d'Argent
   Description: "|Pour chaque {Mana} dépensé| : Infligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'}."
+    \ one='' other='s'}.\nLes attaques restantes cibleront un autre ennemi aléatoire\
+    \ et continueront à infliger des dégâts si la cible sélectionnée est vaincue."
 SakuyaDraw:
   Name: Apogée de la Perfection
   Description: "|Lorsque défaussée ou exilée| : Piochez {Value1:plural one='% carte'\
@@ -1254,8 +1257,9 @@ CirnoBlockU:
     aussi une arme d'autodéfense.
 IceLaser:
   Name: Rayon Glacial
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, appliquez\
-    \ |Froid|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, et |Froid|.\n\
+    Regardez la carte en bas de la pioche. Si elle est bleu, répétez cet effet sur\
+    \ un autre ennemi aléatoire."
   FlavorText: Grâce à ça, Cirno a remporté le prix Nobel de physique en 1997 en tant
     que contributrice spéciale.
 SummerFlower:
@@ -1570,7 +1574,7 @@ FakeTimeline:
 LunaDial:
   Name: Temps Personnel
   Description: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\n|Lorsque\
-    \ piochée| : Cette carte coûte {Mana} de moins ce combat."
+    \ {SelfName} arrive en main| : {SelfName} coûte {Mana} de moins ce combat."
 DropToKnife:
   Name: Forteresse d'Argent
   Description: "Défaussez {Value1} carte{Value1:plural one='' other='s'}.\nAjoutez\
@@ -2163,8 +2167,8 @@ GatherFairy:
   FlavorText: Vous êtes toutes mes ailes.
 WhiteWorld:
   Name: Monde Blanc Pur
-  Description: "Lorsque {PlayerName} débute son tour, appliquez |Froid| à tous les\
-    \ ennemis."
+  Description: "Lorsque {PlayerName} débute son tour, appliquez |Froid| à chaque ennemi.\n\
+    Appliquez |Froid| à chaque ennemi."
 BrainOverclock:
   Name: Surcadence de Cerveau
   Description: "Obtenez {Mana}.\nPiochez {Value2} carte{Value2:plural one='' other='s'}.\n\
@@ -2381,12 +2385,12 @@ SakuyaUsage2:
   FlavorText: Arrêtez le temps et arrêtez de faire le ménage.
 BlueRose:
   Name: Rose de Glace
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
-    \ a |Froid|, gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'}."
 FrostGarden:
   Name: Jardin de Brume
   Description: "Appliquez |Froid| à tous les ennemis.\nSi vous avez une carte |alliée|\
-    \ invoquée dans votre main, {SelfName} coûte {Mana}."
+    \ invoquée dans votre main, répétez cet effet au début de votre prochain tour."
   FlavorText: Climatisation gratuite.
 CallFriends:
   Description: Choisissez une parmi {Value1} cartes |alliées| aléatoires. Ajoutez-la
@@ -2397,17 +2401,19 @@ CallFriends:
     \ de Lumière| en option supplémentaire."
   DetailText: Ces |e:cartes alternatives| ont un coût total de 4 ou moins.
 Blizzard:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez\
-    \ le |Froid| à tous les ennemis.\nSi vous avez invoqué |Letty, Incarnation de\
-    \ l'Hiver|, cet effet se reproduit au début du tour suivant."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
+    \ à chaque ennemi.\nRegardez la carte en bas de la pioche. Si elle est bleue,\
+    \ répétez ces effets au début de votre prochain tour."
   Name: Tempête de Neige
 ColdPotion:
   Name: Liquide de Refroidissement
   Description: "La |Potion instable| applique également le |Froid|.\nMélangez {Value1}\
     \ |Potion{Value1:plural one=' instable' other='s instables'}| dans la pioche."
 Ice:
-  Description: Appliquez |Froid|.
+  Description: "Gagnez {Mana}.\nRegardez 2 cartes bleues aléatoires de la pioche.\
+    \ Choisissez-en une à mettre en main et placez l'autre en bas de la pioche."
   Name: Cristal de Glace
+  FlavorText: Une des six ailes de glace.
 IceLance:
   Name: Lance de Glace
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
@@ -2416,8 +2422,12 @@ IceLance:
     lorsqu'elle utilise cette carte de sort.
 FreezeBullet:
   Name: Gel de Tir
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nObtenez\
-    \ {Value1} |Armure{Value1:plural one='' other='s'} de Glace|."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nJusqu'à\
+    \ votre prochain tour, appliquez |Froid| au premier ennemi qui attaque {PlayerName}."
+  UpgradedDescription: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n\
+    Jusqu'à votre prochain tour, appliquez |Froid| aux 2 premiers ennemis qui attaquent\
+    \ {PlayerName}."
+  FlavorText: Cirno, la Salvatrice !
 CirnoDraw:
   Name: Sagesse Féerique
   Description: Piochez {Value1} carte{Value1:plural one='' other='s'}.
@@ -2425,10 +2435,9 @@ CirnoDraw:
     Au début du tour suivant, piochez {Value2} carte{Value2:plural one='' other='s'}."
 IceSaber:
   Name: Glace en Épée
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois,\
-    \ appliquez |Froid|.\nLorsque vous la jouez, vous pouvez défausser n'importe quel\
-    \ nombre de cartes bleues de la main pour que cette carte attaque autant de fois\
-    \ de plus."
+  Description: "Défaussez jusqu'à {Value1} carte{Value1:plural one=' bleue' other='s\
+    \ bleues'}. Ajoutez autant de |Lances de Glace| à la main. Elles |coûtent temporairement|\
+    \ {Mana} et ont |Exil| et |Éthéré|."
   FlavorText: Il y avait autrefois une célèbre épée appelée Frostmourne.
 IceBarrier:
   Name: Bouclier de Glace
@@ -2445,9 +2454,9 @@ ZeroK:
     Appliquez |Froid| à tous les ennemis."
 IceMatrix:
   Name: Matrice Congelée
-  Description: "{PlayerName} gagne {Value1} |Armure{Value1:plural one='' other='s'}\
-    \ de Glace| lorsque le |Froid| est appliqué à un ennemi.\nAppliquez |Froid| à\
-    \ tous les ennemis."
+  Description: "Lorsque {PlayerName} applique |Froid| à un ennemi, gagnez {Value1}\
+    \ |Armure{Value1:plural one='' other='s'} de Glace|.\nGagnez {Value2} |Armure{Value2:plural\
+    \ one='' other='s'} de Glace|."
 YouxiangMoon:
   Name: Fleurs et Oiseaux
   Description: 'Lorsque {PlayerName} débute son tour, ajoutez une |Fleur d''Été| à
@@ -2511,8 +2520,8 @@ MarisaHoldCard:
   FlavorText: '"Ne le jetez pas, ça pourrait être utile plus tard"'
 CirnoInForest:
   Name: Camouflage Brillant
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Découvert|\
-    \ {Value1}."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
+    \ {Value1} |Esquive{Value1:plural one='' other='s'}|."
   FlavorText: Fée de la forêt.
 MoreFriends:
   Description: "Lorsque {PlayerName} débute son tour, ajoutez {Value1:plural one='%\
@@ -2522,9 +2531,8 @@ MoreFriends:
   Name: Experte en Relations
   DetailText: Ces |e:cartes alternatives| ont un coût total de 4 ou moins.
 FairyOnIce:
-  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n{PlayerName}\
-    \ gagne {Value2} |Esquive{Value2:plural one='' other='s'}| pour chaque ennemi\
-    \ qui a |Froid|. "
+  Description: "Ajoutez {Value1} |Glacier{Value1:plural one='' other='s'}| à la pioche.\n\
+    Gagnez {Value2} |Esquive{Value2:plural one='' other='s'}|. "
   Name: Fée sur Glace
 CirnoEcho:
   Description: Choisissez {Value1} carte{Value1:plural one='' other='s'} de la pile
@@ -2536,7 +2544,7 @@ HualiIce:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
     \ ennemis, et appliquez leur le |Froid|.\nSi {Value1} carte{Value1:plural one='\
     \ a déjà été jouée' other='s ont déjà été jouées'} ce tour-ci, {SelfName} coûte\
-    \ {Mana}.\n({Countdown:plural one='% carte restante' other='% cartes restantes'})\n"
+    \ {Mana}.\n({Countdown:plural one='% carte restante' other='% cartes restantes'})"
   NonbattleDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
     \ tous les ennemis, et appliquez leur le |Froid|.\nSi {Value1} carte{Value1:plural\
     \ one=' a déjà été jouée' other='s ont déjà été jouées'} ce tour-ci, {SelfName}\
@@ -2544,21 +2552,20 @@ HualiIce:
   Name: Magnifique Glace d'Été
 ColdBreath:
   Name: Souffle de Diamant
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
-    \ aléatoire, en priorisant ceux qui ont |froid|.\nGagnez {Mana} si celui-ci a\
-    \ |froid|.\nPiochez {Value1} carte{Value1:plural one='' other='s'}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nsi la cible\
+    \ a |froid|, Gagnez {Mana}."
   FlavorText: Un coup puissant dans les jeux de combat.
 FreezeToIce:
   Name: Spécimen Congelé
-  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} dans
-    votre main et |exilez-{Value1:plural one='la' other='les'}|, en ajoutant une quantité
-    égale de |Cristaux de glace| à votre main.
+  Description: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'} de\
+    \ votre main. Ajoutez autant de |Glaciers| à la pioche."
   FlavorText: Son utilisation au sanctuaire Moriya est interdite.
+  UpgradedDescription: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de votre main, pioche et défausse. Ajoutez autant de |Glaciers| à la pioche."
 DeepFreeze:
   Name: Danse sur Glace
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
-    \ ennemis.\nAppliquez |Froid| à tous les ennemis ; si la cible a déjà |Froid|,\
-    \ appliquez |Surgelé| à la place."
+  Description: "Chaque fois qu'une carte bleue est jouée, {PlayerName} gagne {Value1}\
+    \ |Puissance{Value1:plural one=' Temporaire' other='s Temporaires'}|."
 FairyTeam:
   Name: Guerre des Fées
   Description: "Choisissez n'importe quelles cartes |alliées| dans votre main, |exilez|-les\
@@ -2581,8 +2588,7 @@ FairyTrick:
   FlavorText: Bien sûr, il y en a quatre dans le groupe de trois !
 SummerIce:
   Name: Smoothie d'Été
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
-    \ aléatoire {Value1} fois.\nGagnez {Mana} au début du tour suivant."
+  Description: "Gagnez {Mana} au début du tour suivant."
   FlavorText: Manger un smoothie trop vite donne mal à la tête, allez-y doucement
     !
 Opt:
@@ -2600,9 +2606,9 @@ CirnoConsider:
   ExtraDescription2: Piochez {Value1:plural one='% carte' other='% cartes'}.
 ColdSnap:
   Name: Refroidissement Rapide
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
-    \ {Value1} carte{Value1:plural one='' other='s'}.\nPlacez une carte de votre main\
-    \ au-dessous de votre pioche."
+  Description: "Mettez les {Value1} premières cartes bleues de la pioche dans la main.\n\
+    Gagnez {Value2} |Barrière{Value2:plural one='' other='s'}| pour chaque carte mise\
+    \ en main de cette façon."
 ColdChain:
   Name: Chaîne du Froid
   Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} de
@@ -2651,8 +2657,9 @@ SummerParty:
     \ other='s'} de |Soutien|."
 FrozenThrone:
   Name: Trône de Glace
-  Description: Lorsque {PlayerName} débute son tour, ajoutez un |Cristal de glace+|
-    à la main.
+  Description: "Ajoutez une |Balle de Glace| à la main.\nLorsque {PlayerName} débute\
+    \ son tour, s'il n'y a pas de |Balle de Glace| dans la main, ajoutez une |Balle\
+    \ de Glace| à la main."
   FlavorText: Now, we are one !
 PlayWithWaste:
   Name: Aventure dans le Tas de Déchets
@@ -2660,9 +2667,8 @@ PlayWithWaste:
     \ et ajoutez-en une |copie| à votre main.\nElle a |Limité【1】|."
 Xiguadao:
   Name: Couteau Pastèque
-  Description: "|Pour chaque {Mana} dépensé| : Infligez {Damage} dégât{Damage:plural\
-    \ one='' other='s'}.\nLorsque la cible est vaincue et qu'il reste des attaques,\
-    \ continuez à attaquer avec un autre ennemi aléatoire comme cible."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
+    \ aléatoire {Value1} fois.\nGagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
   FlavorText: Super ⑨ Martial God Overlord Slash !
 CirnoFire:
   Name: Glace Combustible
@@ -2706,8 +2712,9 @@ DayaojingFriend:
 FruitShake:
   Name: Glace Pilée aux Fruits
   FlavorText: Saveur de fruits tropicaux, frais et délicieux !
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à tous les\
-    \ ennemis.\nSi une |alliée| a été invoquée ce tour-ci, {SelfName} coûte {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
+    \ à chaque ennemi.\nSi une |alliée| a été invoquée ce tour-ci, {SelfName} coûte\
+    \ {Mana}."
 LilyFriend:
   Description: "{FriendS}Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
     \ un ennemi aléatoire {Value1} fois.\n{FriendP}Gagnez {TurnMana}."
@@ -2803,10 +2810,9 @@ LeidiFriend:
 LarvaDefense:
   Name: Battement d'Ailes
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAppliquez\
-    \ {Value1} |Faible{Value1:plural one='' other='s'}| et {Value1} |Vulnérable{Value1:plural\
-    \ one='' other='s'}| à tous les ennemis.\nSi vous avez |Larva, Déesse de la Nuit\
-    \ d'Été| invoqué dans votre main, appliquez aussi {Value2} |Poison{Value2:plural\
-    \ one='' other='s'}|."
+    \ {Value1} |Faible{Value1:plural one='' other='s'}| à chaque ennemi.\nSi vous\
+    \ avez |Larva, Déesse de la Nuit d'Été| invoqué dans votre main, appliquez aussi\
+    \ {Value2} |Poison{Value2:plural one='' other='s'}|."
   FlavorText: Il faut du courage pour voler derrière Larva.
 FakeCard:
   Description: "|Komeiji Koishi| Dort encore chez elle. \nRestez à l'écoute des futures\
@@ -2916,10 +2922,9 @@ QinchunPanni:
   ExtraDescription2: "|Hors Passion| : infligez {Damage} dégât{Damage:plural one=''\
     \ other='s'} à l'ennemi dont les points de vie sont les moins élevés.\n|d:Passion\
     \ : Gagnez {Block} Bouclier{Block:plural one='' other='s'}. |"
-  Description: "|Hors Passion| : infligez {Damage} dégât{Damage:plural one='' other='s'}\
-    \ à l'ennemi dont les points de vie sont les moins élevés.\n|Passion| : Gagnez\
-    \ {Block} |Bouclier{Block:plural one='' other='s'}|, piochez {Value1} carte{Value1:plural\
-    \ one='' other='s'}."
+  Description: "|Hors Passion| : Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à l'ennemi ayant le moins de points de vie.\n|Passion| : Gagnez {Block} |Bouclier{Block:plural\
+    \ one='' other='s'}|, piochez {Value1} carte{Value1:plural one='' other='s'}."
 Danxiangsi:
   Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Lorsque\
     \ retenue| : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one=''\
@@ -2985,10 +2990,10 @@ NightMana4:
     \ de plus pour être jouées.\nÀ chaque fois que {FreezeTimes} carte{FreezeTimes:plural\
     \ one=' est jouée' other='s sont jouées'}, |exilez| une {SelfName} de la main."
 WuyishiDNA:
-  Description: "Entrez en état d'|Épiphanie|. Terminez le tour, et {PlayerName} joue\
-    \ un tour supplémentaire.\nLorsque {PlayerName} finit son tour, si {PlayerName}\
-    \ n'est pas en état d'|Épiphanie|, elle perd la partie."
-  Name: Génétique de l'Inconscient
+  Description: "Entrez en état |Fugue|. Terminez le tour, et {PlayerName} joue un\
+    \ tour supplémentaire.\nLorsque {PlayerName} finit son tour, si {PlayerName} n'est\
+    \ pas en état |Fugue|, vous perdez la partie."
+  Name: Projection Astrale
 AyaNewsAliceSp:
   Name: Bunbunmaru - Spécial Alice
   Description: "|Fin du tour| : Perdez {Value1} |Esprit{Value1:plural one='' other='s'}|."
@@ -2996,13 +3001,13 @@ AyaNewsAliceSp:
     potins sur {PlayerName}.
 PiankeNingjing:
   Name: Reprendre ses Esprits
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi vous\
-    \ êtes dans l'état |Calme|, quittez-le et piochez {Value1} carte{Value1:plural\
-    \ one='' other='s'}."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi possible,\
+    \ quittez votre |État Mental| pour piocher {Value1} carte{Value1:plural one=''\
+    \ other='s'}."
 YaoguaiNaodianbo:
   Name: Polygraphe Yōkai
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, gagnez {Value1}\
-    \ |Amour{Value1:plural one='' other='s'}|.\n|Instinct| : gagnez {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et entrez\
+    \ en état |Passion|.\n|Instinct| : Gagnez {Mana}."
 YoubiKongjuzheng:
   Name: Claustrophobie
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Instinct|\
@@ -3066,7 +3071,7 @@ ZuxianTuomeng:
     \ |Exil|."
 ChaoyueZiwo:
   Name: Dépassement de Soi
-  Description: Lorsque {PlayerName} finit son tour, si vous êtes dans l'état |Calme|,
+  Description: Lorsque {PlayerName} débute son tour, si vous êtes dans un |État Mental|,
     gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural
     one='' other='s'}|.
 Beiyanwu:
@@ -3098,7 +3103,11 @@ MeilingFriend:
     \ de vie et gagnez \n{Value2} |Puissance{Value2:plural one='' other='s'}|."
 QiangweiDiyu:
   Name: Rose de l'Enfer
-  Description: Gagnez {Value1} |Amour{Value1:plural one='' other='s'}|.
+  Description: "Obtenez le {Value1} niveau{Value1:plural one='' other='x'} de |Rose\
+    \ de l'Enfer|.\nChaque fois qu'une carte |de base| est jouée, gagnez {Value2}\
+    \ niveau{Value2:plural one='' other='x'} de |Rose de l'Enfer| et piochez 1 carte.\n\
+    (Rose de l'Enfer : chaque fois qu'une carte de base entre dans la main, elle inflige\
+    \ le niveau de dégâts actuel à un ennemi aléatoire.)"
 TianziRock:
   Description: "Chaque fois que {PlayerName} reçoit des dégâts d'attaque, réduisez-les\
     \ de {Value1}.\nCet effet ne se cumule pas.\nSupprimez les |Verrouillés| sur {PlayerName}."
@@ -3266,3 +3275,107 @@ Frog:
   Name: Grenouille
   Description: "Cette carte a été maudite.\nC'était à l'origine : {CardName}"
   NonbattleDescription: Cette carte a été maudite.
+YukariFlyObject:
+  Name: Objet Volant Ultra-Rapide
+  Description: Lorsque {PlayerName} débute son prochain tour, infligez {Value1} dégât{Value1:plural
+    one='' other='s'} à l'ennemi avec le plus de points de vie.
+SuperNova:
+  Name: Supernova
+  Description: "Gagnez {Mana}.\nMettez {Value1} carte{Value1:plural one='' other='s'}\
+    \ d'attaque aléatoire{Value1:plural one='' other='s'} de la pioche dans la main."
+IceBolt:
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}, et |Froid|.
+  FlavorText: On dit que Cirno saute toujours de haut en bas lorsqu'elle utilise cette
+    carte de sort.
+  Name: Balle de Glace
+ShiverArmor:
+  FlavorText: Même si Cirno trouvait ça cool, son adversaire n'était pas du même avis.
+  Name: Réfraction du Givre
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
+    \ {Value1} |Armure{Value1:plural one='' other='s'} de Glace|."
+GlacialSpike:
+  Name: Pic de Glace
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}, et |Froid|.\n\
+    Ajoutez une |Balle de Glace| à la main."
+  FlavorText: On dit que Cirno saute toujours de haut en bas lorsqu'elle utilise cette
+    carte de sort.
+FrozenOrb:
+  Name: Orbe Gelée
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
+    \ à chaque ennemi.\nAjoutez {Value1} |Balle{Value1:plural one='' other='s'} de\
+    \ Glace| à la main."
+BeihaiWangxiang:
+  Name: Paranoïa
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
+    \ autant d'|Inhibition| que la moitié de votre barrière."
+SiwangLaiDian:
+  Description: "|Exilez| une carte |Attaque| en main. Ajoutez {Value1} |copie{Value1:plural\
+    \ one='' other='s'}| de celle-ci sur le dessus de la pioche.\nSi la carte choisie\
+    \ est de |base|, {Value1:plural one='la |copie| ajoutée a' other='les |copies|\
+    \ ajoutées ont'} |Renfloue|."
+  UpgradedDescription: "|Exilez| une carte en main. Ajoutez {Value1} |copie{Value1:plural\
+    \ one='' other='s'}| de celle-ci sur le dessus de la pioche.\nSi la carte choisie\
+    \ est de |base|, {Value1:plural one='la |copie| ajoutée a' other='les |copies|\
+    \ ajoutées ont'} |Renfloue|."
+  Name: Appel Mignon et Effrayant
+WuyunJiekong:
+  Name: Les Cinq Agrégats Sont Vides
+  Description: "|Exilez| toutes les cartes Statut et |Malheur| dans la main, pioche\
+    \ et défausse.\n{PlayerName} perd tous ses Malus."
+MirrorTest:
+  Name: Test Miroir
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n|En main|\
+    \ : Si une carte d'attaque adjacente est jouée, transformez {SelfName} en |copie|\
+    \ de cette carte et gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
+SakuyaZeroDefense:
+  Name: Déviation de Tir
+  Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+ColdHearted:
+  Name: Sang-Froid
+  Description: "Ce tour-ci, |Lance de Glace| inflige des dégâts triples aux ennemis\
+    \ qui ont |Froid|.\nAjoutez {Value1} |Lance{Value1:plural one='' other='s'} de\
+    \ Glace| à la main. {Value1:plural one='Elle a' other='Elles ont'} un |coût temporaire|\
+    \ de {Mana}, |Exil| et |Éthéré|."
+QingxingMeng:
+  Name: Plongeon dans la Conscience
+  Description: "Lorsque {PlayerName} débute son tour, ajoutez {Level:plural one='%\
+    \ carte |rare| complètement aléatoire' other='% cartes |rares| complètement aléatoires'}\
+    \ à votre main. Elle{Level:plural one=' a' other='s ont'} un |coût temporaire|\
+    \ de {Mana}, avec |Exil| et | Éthéré|.\n{PlayerName} ne peut jouer que {Limit}\
+    \ carte{Limit:plural one=' |rare|' other='s |rares|'} à chaque tour."
+YoumuAttack:
+  Name: Crise Cardiaque
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Exilez|\
+    \ une carte de la main."
+DefaultPassion:
+  Name: Acte Inconscient
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEntrez en\
+    \ état |Passion|."
+DefaultPeace:
+  Name: Épines d'Amour
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nEntrez\
+    \ en état |Calme|."
+FindInspiration:
+  Name: Quête d'Inspiration
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
+    \ |Éclair d'Inspiration|."
+InspirationCard:
+  Name: Inspiration
+  Description: '|Lorsque {SelfName} arrive en main| : Transformez-la en une |e:carte
+    Inspiration| de couleur aléatoire, activez son effet et |Exilez-la|.'
+InspirationBlack:
+  Name: Inspiration Noire
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Value1} dégât{Value1:plural one='' other='s'} à un ennemi aléatoire."
+InspirationGreen:
+  Name: Inspiration Verte
+  Description: Gagnez {Mana}.
+InspirationWhite:
+  Name: Inspiration Blanche
+  Description: "|Améliorez| {Value1} carte{Value1:plural one=' aléatoire' other='s\
+    \ aléatoires'} dans la main.\nS'il ne reste aucune carte valide, gagnez {Value2}\
+    \ |Bouclier{Value2:plural one='' other='s'}| pour chaque |amélioration| impossible."
+InspirationRed:
+  Name: Inspiration Rouge
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi
+    {Value1} fois.

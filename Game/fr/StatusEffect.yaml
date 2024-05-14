@@ -215,7 +215,7 @@ FastAttack:
   Name: Vitesse Pure
   ExtraDescription: "Après avoir joué la première carte à chaque tour, {OwnerName}\
     \ inflige {Level} dégât{Level:plural one='' other='s'} d'|attaque| à {PlayerName}.\n\
-    Cela s'est déjà produit et sera actualisé la prochaine fois que {OwnerName} agira."
+    (Cela s'est déjà produit et sera actualisé la prochaine fois que {OwnerName} agira.)"
 DoremyLevel:
   Description: Plus on s'enfonce dans le rêve, plus les attaques de {OwnerName} sont
     fortes.
@@ -985,10 +985,12 @@ EnemyMaid:
   Name: Petit Nettoyage de Kasumi
 FrozenThroneSe:
   Name: Trône de Glace
-  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} |Crista{Level:plural
-    one='l' other='ux'} de Glace+| à votre main.
-  Brief: Lorsque {PlayerName} débute son tour, ajoutez des |Cristaux de Glace+| à
-    la main.
+  Description: Lorsque {PlayerName} débute son tour, s'il {Level:plural one='n'y a
+    pas de' other='y a moins de %'} |Balle{Level:plural one='' other='s'} de Glace|
+    dans la main, ajoutez-en {Level:plural one="une" other="jusqu'à ce qu'il y en
+    ait %"} en main.
+  Brief: Lorsque {PlayerName} débute son tour, s'il y a moins d'un certain nombre
+    de |Balles de Glace| dans la main, ajoutez-en à la main jusqu'à atteindre ce nombre.
 YonglinUpgradeSe:
   Name: Encens de Lapin Lunaire
   Description: Lorsque {PlayerName} débute son tour, améliorez {Level} carte{Level:plural
@@ -1247,3 +1249,99 @@ SuwakoHex:
   Description: Lorsque {PlayerName} commence son tour, une carte aléatoire dans la
     main est |maudite|, ce qui la rend inutile.
   Name: Malédiction
+  ExtraDescription: "Lorsque {PlayerName} débute son tour, une carte aléatoire dans\
+    \ la main est |maudite|, ce qui la rend inutile.\n(Cela s'est déjà produit et\
+    \ sera actualisé la prochaine fois que {OwnerName} agira.)"
+MoodPeace:
+  Description: "En quittant l'état |Calme|, gagnez {Mana}.\n|Calme| est un |État Mental|,\
+    \ {PlayerName} ne peut en avoir qu'un à la fois."
+  Brief: "En quittant l'état |Calme|, gagnez {Mana}.\n|Calme| est un |État Mental|,\
+    \ {PlayerName} ne peut en avoir qu'un à la fois."
+  Name: Calme
+MoodPassion:
+  Name: Passion
+  Description: "En état |Passion|, {PlayerName} inflige et subit {Percentage}% de\
+    \ dégâts supplémentaires.\n|Passion| est un |État Mental|, {PlayerName} ne peut\
+    \ en avoir qu'un à la fois."
+  Brief: "En état |Passion|, {PlayerName} inflige et subit {Percentage}% de dégâts\
+    \ supplémentaires.\n|Passion| est un |État Mental|, {PlayerName} ne peut en avoir\
+    \ qu'un à la fois."
+MoodEnlight:
+  Name: Fugue
+  Brief: "En entrant dans l'état |Fugue|, gagnez {Mana}.\nEn état |Fugue|, chaque\
+    \ fois qu'une carte est jouée, piochez une carte.\n|Fugue| est un |État Mental|,\
+    \ {PlayerName} ne peut en avoir qu'un à la fois."
+  Description: "En entrant dans l'état |Fugue|, gagnez {Mana}.\nEn état |Fugue|, chaque\
+    \ fois qu'une carte est jouée, piochez une carte.\n|Fugue| est un |État Mental|,\
+    \ {PlayerName} ne peut en avoir qu'un à la fois."
+InspirationSe:
+  Name: Éclair d'Inspiration
+  Description: Lorsque {PlayerName} a {TriggerLevel} |Éclair{TriggerLevel:plural one=''
+    other='s'} d'Inspiration|, ajoutez autant d'|Inspirations| à la pioche et entrez
+    en état |Fugue|.
+  Brief: Lorsque {PlayerName} a {TriggerLevel} |Éclair{TriggerLevel:plural one=''
+    other='s'} d'Inspiration|, ajoutez autant d'|Inspirations| à la pioche et entrez
+    en état |Fugue|.
+MoreDraw:
+  Description: Piochez {Level} carte{Level:plural one='' other='s'} de plus pendant
+    la phase de pioche.
+  Brief: Piochez plus de cartes pendant l’étape de tirage.
+  Name: Dévouement du Professeur
+ZhenmiaowanAbilitySe:
+  Name: Magie du Maillet
+  Description: Les cartes coûtent {Mana} de moins.
+  Brief: Les cartes coûtent {Mana} de moins.
+YukariFlyObjectSe:
+  Name: Objet Volant Ultra-Rapide
+  Description: Lorsque {PlayerName} débute son prochain tour, infligez {Level} dégât{Level:plural
+    one='' other='s'} à l'ennemi avec le plus de points de vie.
+  Brief: Lorsque {PlayerName} débute son prochain tour, infligez des dégâts à l'ennemi
+    avec le plus de points de vie.
+SanaeSummonGodSe:
+  Name: Invocation de Take-Minakata
+  Description: "{Count:ordinal one='Au début du prochain tour' other='Dans % tours'},\
+    \ gagnez {Level} |Puissance{Level:plural one='' other='s'}| et |Esprit{Level:plural\
+    \ one='' other='s'}|."
+  Brief: Après quelques tours, gagnez de la |Puissance| et de l'|Esprit|.
+  ExtraDescription: Au début du prochain tour, gagnez {Level} |Puissance{Level:plural
+    one='' other='s'}| et |Esprit{Level:plural one='' other='s'}|.
+FreezeBulletSe:
+  Name: Barrage de Gel
+  Description: "Appliquez |Froid| {Level:plural one='au prochain ennemi qui attaque'\
+    \ other='aux % prochains ennemis qui attaquent'} {OwnerName}.\nSupprimez cet effet\
+    \ au début du prochain tour de {OwnerName}."
+DeepFreezeSe:
+  Name: Danse des Glaçons
+  Description: Chaque fois qu'une carte bleue est jouée, {PlayerName} gagne {Level}
+    |Puissance{Level:plural one=' Temporaire' other='s Temporaires'}|.
+  Brief: Chaque fois qu'une carte bleue est jouée, {PlayerName} gagne de la |Puissance
+    Temporaire|.
+ColdHeartedSe:
+  Name: Sang-Froid
+  Description: "|Lance de Glace| inflige des dégâts triples aux ennemis qui ont |Froid|.\n\
+    Retirez |Sang-Froid| à la fin du tour de {OwnerName}."
+  Brief: "|Lance de Glace| inflige des dégâts triples aux ennemis qui ont |Froid|.\n\
+    Retirez |Sang-Froid| à la fin du tour de {OwnerName}."
+Constrain:
+  Name: Inhibition
+  Description: Annule les |Boucliers| et |Barrières|.
+  Brief: Annule les |Boucliers| et |Barrières|.
+QingxingMengSe:
+  Name: Rêve Lucide
+  Brief: "Lorsque {PlayerName} débute son tour, ajoutez des cartes |rares| complètement\
+    \ aléatoire à votre main. Elles ont un |coût temporaire| de <sprite=\"ManaSprite\"\
+    \ name=\"1\">, avec |Exil|, | Éthéré| .\n{PlayerName} ne peut jouer que {Limit}|carte{Limit:plural\
+    \ one=' |rare|' other='s |rares|'} à chaque tour"
+  Description: "Lorsque {PlayerName} débute son tour, ajoutez {Level:plural one='%\
+    \ carte |rare| complètement aléatoire' other='% cartes |rares| complètement aléatoires'}\
+    \ à votre main. Elle{Level:plural one=' a' other='s ont'} un |coût temporaire|\
+    \ de <sprite=\"ManaSprite\" name=\"1\">, avec |Exil| et | Éthéré|.\n{PlayerName}\
+    \ ne peut jouer que {Limit} carte{Limit:plural one=' |rare|' other='s |rares|'}\
+    \ à chaque tour ; {Count} carte{Count:plural one=' restante' other='s restantes'}."
+QiangweiDiyuSe:
+  Name: Rose de l'Enfer
+  Description: " Chaque fois qu'une carte de base entre dans la main, infligez {Count}\
+    \ dégât{Count:plural one='' other='s'} à un ennemi aléatoire, puis augmentez les\
+    \ dégâts de {Level} point{Level:plural one='' other='s'}."
+  Brief: Chaque fois qu'une carte de base entre dans votre main, infligez des dégâts
+    à un ennemi aléatoire, puis augmentez les dégâts.
