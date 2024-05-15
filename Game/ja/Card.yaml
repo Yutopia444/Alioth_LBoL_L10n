@@ -905,11 +905,11 @@ HappyNewYear:
   Name: 初詣
   Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ時|火力|{Value1}を得る。\n防御カードを選んだ時|霊力|{Value1}を得る。"
 Ice:
-  Name: 氷晶
+  Name: アイスウィング
   Description: '{Mana}を得る。
 
     山札のランダムな青のカード2枚を表示する。その内1枚を手札に加え、残りを山札の底へ置く。'
-  FlavorText: 氷の羽の六つの内一つ。
+  FlavorText: 飛行準備完了！
 CirnoDraw:
   Name: 知性なる妖精
   UpgradedDescription: "カードを{Value1}枚引く。\n次のターン開始時にカードを{Value2}枚引く。"
@@ -1438,16 +1438,17 @@ AutoKnife:
 SummerIce:
   Name: かき氷
   Description: "次の{PlayerName}のターン開始時、{Mana}を得る。"
-  FlavorText: かき氷を食べすぎると頭がキーンってなるあれ、お前にも味わわせてやる！
+  FlavorText: お届け物は1ターン後に到着します。
 Opt:
   Name: 薄氷を踏む
   Description: "山札の先頭のカードを表示して、それを山札の底に置くかどうか選択する。\nカードを1枚引く。\n{Mana}を得る。"
+  FlavorText: もしチルノが玉枝を手に入れたら.…
 SummerFlower:
   Description: "{Damage}ダメージを与える。\nこの戦闘中、全ての{SelfName}のダメージが{Value1}増加する。"
   Name: 真夏の花
-  FlavorText: この石をあんたの頭に打ち付けて見て。とってもキラキラしたお星様を見れるよ。
+  FlavorText: 目を逸らし、振り返ると。既に花の海の中へ沈んでいた。
 BlueRose:
-  Name: 氷の薔薇
+  Name: 清涼なる薔薇
   Description: "{Damage}ダメージを与える。\n{Block}|ブロック|を得る。"
 ColdBreath:
   Description: '{Damage}ダメージを与える。
@@ -1458,6 +1459,7 @@ ColdBreath:
 OptBottom:
   Name: 沈没
   Description: '{TargetName}を山札の底に置く。'
+  FlavorText: この想定外は想定内だ。
 FreezeBullet:
   Description: "{Block}|ブロック|を得る。\n次の敵のターンで最初に{PlayerName}を攻撃した敵に|冷気|を与える。"
   Name: 凍結弾幕
@@ -1671,9 +1673,9 @@ FairyWrath:
   Description: "敵全体に{Damage}ダメージを与える。\n手札に召喚済みの|異変調査助手、大妖精|が存在する場合、|真夏の花|{Value1}枚を手札に加える。"
 FreezeToIce:
   Name: 氷漬けの標本
-  Description: 手札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
+  Description: 手札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|アイスウィング|を山札に加える。
   FlavorText: 守矢神社近くでの使用は禁止です。
-  UpgradedDescription: 手札、山札、捨て札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷晶|を山札に加える。
+  UpgradedDescription: 手札、山札、捨て札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|アイスウィング|を山札に加える。
 FruitShake:
   Name: フルーツクラッシュアイス
   Description: "敵全体に{Damage}ダメージを与える。\nダメージを与えた場合、更に|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
@@ -1705,7 +1707,7 @@ Blizzard:
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n山札の底にあるカードを表示し、それが青のカードなら次の{PlayerName}のターン開始時にこの効果を再び発動する。"
 FairyOnIce:
   Name: 氷上の妖精
-  Description: "|氷晶|を{Value1}枚山札に加える。\n|グレイズ|{Value2}を得る。 "
+  Description: "|アイスウィング|を{Value1}枚山札の先頭に加える。\n|グレイズ|{Value2}を得る。 "
 ColdSnap:
   Name: 高速なる解熱
   Description: "山札の上から{Value1}枚の青のカードを手札に加える。加えたカード1枚につき{Value2}|バリア|を得る。"
@@ -1778,7 +1780,7 @@ IceBlock:
   Name: アイスブロック
   Description: "1ターンの間{PlayerName}はあらゆるダメージを受けない。\n全ての|ブロック|、|バリア|、|グレイズ|を失う。\n全ての手札を1ターン|保留|し、{PlayerName}のターンを終了する。"
 ColdChain:
-  Description: 山札から{Value1}枚のカードを選んで手札に加え、それに|保留|を与える。
+  Description: 山札から{Value1}枚のカードを選んで手札に加える。
   Name: コールドチェーン
 ZeroK:
   Description: "|冷気|の重ね掛けによるダメージを{Value1}倍分増やす。\n敵全体に|冷気|を与える。"
@@ -1817,7 +1819,7 @@ HualiIce:
   Name: パーフェクトサマーアイス
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n\
     （残り{Countdown}枚）"
-  NonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。\n"
+  NonbattleDescription: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\nこのターンにカードを{Value1}枚以上使用している場合、このカードのコストは{Mana}。"
 FairyAllOut:
   Name: 総攻撃
   Description: "敵全体に{Damage}ダメージを与える。\n手札にある召喚済みの|パートナー|の|f:自動能力|を発動する。"
@@ -2240,15 +2242,15 @@ IceBolt:
   Description: '{Damage}ダメージを与える。
 
     ダメージを与えた場合、更に|冷気|を与える。'
-  FlavorText: このスペルを使う時のチルノはいつもとびはねるらしい。
+  FlavorText: 飲用にも使える。
   Name: アイスボルト
 ShiverArmor:
-  Name: 氷霜屈折
+  Name: 氷鏡反射
   Description: "{Block}|ブロック|を得る。\n|フロストアーマー|を{Value1}得る。"
 GlacialSpike:
-  FlavorText: このスペルを使う時のチルノはいつも飛び跳ねまくってるらしい。
+  FlavorText: 元の大きさの1/10000。
   Description: "{Damage}ダメージを与える。\nダメージを与えた場合、更に|冷気|を与える。\n|アイスボルト|を1枚手札に加える。"
-  Name: グレイシャルスパイク
+  Name: ティニーグレイシャー
 FrozenOrb:
   Name: フローズンオーブ
   Description: "敵全体に{Damage}ダメージを与え、|冷気|を与える。\n|アイスボルト|を{Value1}枚手札に加える。"
@@ -2286,8 +2288,9 @@ SuperNova:
   Name: スーパーノヴァ
   Description: "{Mana}を得る。\n山札からランダムな{Value1}枚の攻撃カードを手札に加える。"
 ShopAttack:
-  Name: 真実掌握
+  Name: きゅうりミサイル
   Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。"
+  FlavorText: 盗み食い禁止！
 ShopDefense:
   Name: クリーンエネルギー
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。"
@@ -2347,3 +2350,5 @@ GreenLotus:
 ModuoluoSeasons:
   Name: 暴走の季節
   Description: '|水沫|、|火焰|、|真夏の花|を手札上限に達するまでランダムに手札に加える。'
+QiannianShenqiCard:
+  Name: オレのターン
