@@ -149,8 +149,8 @@ NextTurnGainShield:
   Brief: '{OwnerName}の次のターン開始時、|バリア|を得る。'
 CantDrawThisTurn:
   Name: ドロー無効
-  Description: ターン終了までドローできない。
-  Brief: ターン終了までドローできない。
+  Description: ターン終了までカードを引くことができない。
+  Brief: ターン終了までカードを引くことができない。
 MaoyuBlock:
   Name: ふかふか
   Description: '{OwnerName}が攻撃されたとき{Level}点の|ブロック|を得る。'
@@ -515,9 +515,9 @@ PerfectServantWSe:
   Name: 準備万端
 DrawPhaseAddKnife:
   Name: ドローフェイズで投げナイフを取得
-  Description: ターン開始時にドローを行わず、 {Limit} 枚の|投げナイフ|を手札に加える。
-  Brief: ターン開始時にドローを行わず、|投げナイフ|を手札に加える。
-  ExtraDescription: "ターン開始時にドローを行わず、|投げナイフ|を手札に加える。\nまだ発動していない。発動した時に{SelfName}が削除される。"
+  Description: ターン開始時、カードを引く代わりに|投げナイフ|を{Limit}枚手札に加える。
+  Brief: ターン開始時、カードを引く代わりに|投げナイフ|を手札に加える。
+  ExtraDescription: "ターン開始時、カードを引く代わりに|投げナイフ|を{Limit}枚手札に加える。\nまだ発動していない。発動した時に{SelfName}が削除される。"
 ColdUp:
   Description: '|冷気|を繰り返し付与したときのダメージ倍率を{Level}増加させる。'
   Name: ひどいかぜ
@@ -604,7 +604,8 @@ NextTurnColdAll:
   Brief: '{OwnerName}の次ターン開始時、敵全体に数回|冷気|を付与する。'
 QiannianShenqiSe:
   Name: ピラミッド型のパズル
-  Description: '{PlayerName}は各ターン{Limit}枚しかドローできない。残り{Count}枚。'
+  Description: '{PlayerName}は各ターン{Limit}枚しかカードを引くことができない。残り{Count}枚。'
+  ExtraDescription: '{PlayerName}が各ターン{Limit}枚カードを引いた後、カードを引くたびにライフを{Level}失う。残り{Count}枚。'
 SihunYuSe:
   Name: 邪気を放つペンダント
   Description: '{OwnerName}のターン終了時、ランダムな敵を戦闘に呼ぶ。'
