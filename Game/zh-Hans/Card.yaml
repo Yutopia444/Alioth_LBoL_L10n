@@ -1478,11 +1478,15 @@ DayaojingFriend:
   UpgradedExtraDescription2: '{FriendU}将 {Value1} 张|盛夏之花+|加入手中。'
   FlavorText: 侦探需要助手是常识，就连琪露诺也知道。
 
-Ice:
+IceWing:
   Name: 冰之翼
   Description: |-
     获得{Mana}。
     展示抽牌堆中的随机两张蓝色牌，选择一张移入手中，将另一张置于牌堆底。
+  ExtraDescription1: |-
+    获得{Mana}。
+    展示抽牌堆中的随机两张蓝色牌，选择一张移入手中，将另一张置于牌堆底。
+    （当前抽牌堆内只有 {BlueCount} 张蓝色牌）
   FlavorText: 准备起飞！
 
 IceBolt:
@@ -1572,7 +1576,7 @@ FreezeToIce:
   Name: 冰冻标本
   Description: 选择至多 {Value1} 张手牌|放逐|，将等量的|冰之翼|洗入抽牌堆。
   UpgradedDescription: 从手牌、抽牌堆和弃牌堆中选择至多 {Value1} 张牌|放逐|，将等量的|冰之翼|洗入抽牌堆。
-  FlavorText: 禁止在守矢神社使用。
+  FlavorText: 你们都是我的翅膀（物理）！
 
 IceLaser:
   Name: 冰冻光线
@@ -1616,6 +1620,9 @@ IceSaber:
 ColdSnap:
   Name: 快速降温
   Description: 将抽牌堆中的前 {Value1} 张蓝色牌移入手中，每张获得 {Value2} 点|护盾|。
+  ExtraDescription1: |-
+    将抽牌堆中的前 {Value1} 张蓝色牌移入手中，每张获得 {Value2} 点|护盾|。
+    （当前抽牌堆内只有 {BlueCount} 张蓝色牌）
 
 ZeroK:
   Name: 绝对零度
@@ -1906,7 +1913,7 @@ KoishiBlockG:
   Description: 获得 {Block} 点|格挡|。
 
 DefaultPassion:
-  Name: 无意识的行动
+  Name: 默认进入热恋攻击
   Description: |-
     造成 {Damage} 点伤害。
     进入|热情|。
@@ -1947,6 +1954,12 @@ InspirationRed:
   Name: 红色灵感
   Description: 对所有敌人造成 {Damage} 点伤害 {Value1} 次。
 
+KoishiZeroDefense:
+  Name: 忘我之爱
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |热情|：额外获得 {Value1} 点|格挡|。
+
 EnterPassion:
   Name: 热情的回忆
   Description: 进入|热情|。
@@ -1956,6 +1969,12 @@ LeaveMoodAttack:
   Description: |-
     造成 {Damage} 点伤害。
     离开当前的|心境|。
+
+KoishiZeroAttack:
+  Name: 盲目之爱
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |神游|：造成两次伤害。
 
 EnterPeace:
   Name: 平静的回忆
@@ -2701,9 +2720,9 @@ RemiliaBat:
 FlanFirepower:
   Name: 之后就一个人都没有了吗？
   Description: |-
-    赋予所有手牌|虚无|，并获得同等数量的|火力|。
+    赋予所有手牌|虚无|，并获得等同手牌数量的|火力|。
     现有 {Count} 张其它手牌。
-  NonbattleDescription: 赋予所有手牌|虚无|，并获得同等数量的|火力|。
+  NonbattleDescription: 赋予所有手牌|虚无|，并获得等同手牌数量的|火力|。
 
 MeihongPower:
   Name: 不死的烈焰
