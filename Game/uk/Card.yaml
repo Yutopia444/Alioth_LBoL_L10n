@@ -141,8 +141,8 @@ PoisonPotion:
     \ Мікстури|' many='|% Нестабільних Мікстур|'} до стосу добору."
 Astrology:
   Name: Астрологія
-  Description: "|Прогнозує| {Scry}.\nДобираєш {Value1:plural one='% карту' few='%\
-    \ карти' many='% карт'}."
+  Description: "|Прогноз| {Scry}.\nДобираєш {Value1:plural one='% карту' few='% карти'\
+    \ many='% карт'}."
 Potion:
   Description: '|Коли {SelfName} потрапляє у руку|: Отримуєш {Mana} й завдаєш {Damage}
     шкоди випадковому ворогу, після чого {SelfName} |Знищується|.'
@@ -276,11 +276,11 @@ LeidiFriend:
 IceMatrix:
   Name: Морозна Матриця
   Description: "Щоразу коли {PlayerName} завдає ворогу |Холод|, вона отримує {Value1}\
-    \ |Крижаної Броні|.\nЗавдає |Холод| усім ворогам."
+    \ |Крижаної Броні|.\nОтримуєш {Value2} |Крижаної Броні|."
 CirnoDraw:
   Name: Мудра Фея
-  Description: Добери {Value1:plural one='% карту' few='% карти' many='% карт'}.
-  UpgradedDescription: "Добери {Value1:plural one='% карту' few='% карти' many='%\
+  Description: Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.
+  UpgradedDescription: "Добираєш {Value1:plural one='% карту' few='% карти' many='%\
     \ карт'}.\nНа початку свого наступного ходу, {PlayerName} добере {Value2:plural\
     \ one='% карту' few='% карти' many='% карт'}."
 Blizzard:
@@ -299,15 +299,14 @@ MoreFriends:
   Name: Товариська Фея
   DetailText: Ці |e:випадкові карти| матимуть вартість 4 або менше.
 WhiteWorld:
-  Description: На початку свого ходу, {PlayerName} завдає |Холод| усім ворогам.
+  Description: "На початку свого ходу, {PlayerName} завдає |Холод| усім ворогам.\n\
+    Завдає |Холод| усім ворогам."
   Name: Білосніжно Чистий Світ
 SummerFlower:
   Name: Літні Квіти
   Description: "Завдає {Damage} шкоди.\nДо кінця битви, усі {SelfName} завдають на\
     \ {Value1} більше шкоди."
-  FlavorText: Цей камінь може вкамінити твою довбешку у дуже гарну форму.
-Ice:
-  Name: Крижані Крила
+  FlavorText: Надійшла весна прекрасна, многоцвітна, тепла, ясна.
 FrozenThrone:
   Name: Крижаний Трон
   Description: "Додає |Крижану Кулю| в руку.\nНа початку ходу {PlayerName:g}, якщо\
@@ -381,7 +380,8 @@ RangziFanshu:
   Name: Солодка Бульба
 YouxiangMoon:
   Name: Чарівність Природи
-  Description: На початку ходу {PlayerName:g}, додає |Літні Квіти| в руку.
+  Description: "На початку ходу {PlayerName:g}, дає {Mana}.\nДодає {Value1} |Літні\
+    \ Квіти| в руку."
 HuiyeMana:
   Name: Такеторі Моноґатарі
   FlavorText: Дитячі пісні несуть легенди про славних грішників.
@@ -660,7 +660,7 @@ Shenyuzha:
 ShengtianKick:
   Name: Копняк Піднесення
   FlavorText: Техніка що при успішному виконанні легко змушує людей посміхатись.
-  Description: "Добирає {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
+  Description: "Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
     Отримуєш {Value2} |Тимчасової Сили|."
 MengzhiYuzha:
   Name: Талісман Мрій
@@ -1529,6 +1529,11 @@ ColdSnap:
     \ карти' many='% верхніх синіх карт'} зі стосу добору в руку.\nОтримуєш {Value2}\
     \ |Бар'єру| за кожну добрану таким чином карту."
   Name: Швидке Охолодження
+  ExtraDescription1: "Добери {Value1:plural one='% верхню синю карту' few='% верхні\
+    \ сині карти' many='% верхніх синіх карт'} зі стосу добору в руку.\nОтримуєш {Value2}\
+    \ |Бар'єру| за кожну добрану таким чином карту.\n({BlueCount:plural one='% синя\
+    \ карта залишилась' few='% сині карти залишились' many='% синіх карт залишилось'}\
+    \ у стосі добору)"
 FairyWrath:
   Name: Гнів Природи
   Description: "Завдає {Damage} шкоди усім ворогам.\nЯкщо присутня призвана |Даійоусей,\
@@ -1634,10 +1639,10 @@ HualiIce:
   Description: "Завдає {Damage} шкоди усім ворогам.\nЗавдає |Холод| усім ворогам.\n\
     Якщо цього ходу було зіграно {Value1:plural one='% карту' few='% карти' many='%\
     \ карт'}, {SelfName} коштуватиме {Mana}.\n({Countdown:plural one='Залишилась %\
-    \ карта' few='Залишилось % карти' many='Залишилось % карт}.)\n"
+    \ карта' few='Залишилось % карти' many='Залишилось % карт}.)"
   NonbattleDescription: "Завдає {Damage} шкоди усім ворогам.\nЗавдає |Холод| усім\
     \ ворогам.\nЯкщо цього ходу було зіграно {Value1:plural one='% карту' few='% карти'\
-    \ many='% карт'}, {SelfName} коштуватиме {Mana}.\n"
+    \ many='% карт'}, {SelfName} коштуватиме {Mana}."
 ChooseFriend:
   Name: Зустріч Над Туманним Озером
   Description: Вибери до {Value2} з {Value1} випадкових карт |Напарників| аби додати
@@ -1692,9 +1697,9 @@ InstantFreeze:
   ExtraDescription1: "Завдає |Холод| усім ворогам.\nЗакінчує хід {PlayerName:g}. Після\
     \ чого, дає додатковий хід.\n|d:Часовий Ліміт {Mana}.|"
 LarvaDefense:
-  Description: "Отримуєш {Block} |Блоку|.\nЗавдаєш {Value1} |Слабкості| та |Вразливості|\
-    \ усім ворогам.\nЯкщо у руці присутня призвана |Ларва, Богиня Літніх Ночей|, завдаєш\
-    \ {Value2} |Отрути| усім ворогам."
+  Description: "Отримуєш {Block} |Блоку|.\nЗавдаєш {Value1} |Слабкості| усім ворогам.\n\
+    Якщо у руці присутня призвана |Ларва, Богиня Літніх Ночей|, завдаєш {Value2} |Отрути|\
+    \ усім ворогам."
   Name: Трепетний Політ
   FlavorText: Потрібно багато відваги аби летіти вслід Ларві.
 PlayWithWaste:
@@ -1706,9 +1711,8 @@ BrainOverclock:
     \ many='% карт'}.\n|Овердрафт| {Value1}."
   Name: Перевантаження Мозку
 Xiguadao:
-  Description: "|За кожну витрачену {Mana}|: Завдає {Damage} шкоди.\nЯкщо {SelfName}\
-    \ здолав ціль й має в залишку додаткові атаки, він продовжуватиме атакувати вже\
-    \ нову випадкову ціль."
+  Description: "Завдає {Damage} шкоди випадковому ворогу {Value1:plural one='% раз'\
+    \ few='% рази' many='% разів'}.\nОтримуєш {Value2} |Сили|."
   FlavorText: ⑨мніслеш!
   Name: Кавуновий Ніж
 CirnoEcho:
@@ -1943,12 +1947,13 @@ YuetuYuyi:
   FlavorText: Залишки спогадів про Місяць.
 KokoroAttack:
   Name: Вибух Тривоги
-  Description: "Завдає {Damage} шкоди усім ворогам.\nСкидає випадкову карту."
+  Description: "Завдає {Damage} шкоди усім ворогам.\nДобираєш {Value1:plural one='%\
+    \ карту' few='% карти' many='% карт'}."
   FlavorText: Вона не на жарт стурбована питанням, що ж то їй наступним з'їсти.
 NitoriUnderWater:
   Name: Водяне Простирадло
-  Description: Дає |Оптичний Камуфляж| на {Value1:plural one='% хід' few='% ходи'
-    many='% ходів'}.
+  Description: "Отримуєш {Block} |Блоку|.\nДобираєш {Value1:plural one='% карту' few='%\
+    \ карти' many='% карт'}."
   FlavorText: Під водою убивча сила данмаку сильно зменшується.
 ShuimiUnderWater:
   Name: Привид Корабля
@@ -2151,7 +2156,7 @@ HinaAttack:
 ArtificialJewellery:
   Name: Біжутерія
   Description: Дає 1 випадкової мани.
-  UpgradedDescription: Дає {Mana}.
+  UpgradedDescription: Отримуєш {Mana}.
   FlavorText: Дарма що справжня цінність цієї прикраси набагато нижче ціни, головне,
     що її здібність підіймати дух та настрій дорожче усіляких грошей.
 PrismriverRed:
@@ -2353,3 +2358,100 @@ FrozenOrb:
   Name: Мерзла Сфера
   Description: "Завдає {Damage} шкоди та |Холод| усім ворогам.\nДодає {Value1:plural\
     \ one='% |Крижану Кулю|' few='% |Крижані Кулі|' many='% |Крижаних Куль|'} в руку."
+YonglinDraw:
+  Description: Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.
+  Name: Спогади Божественності
+SanaeSpirit:
+  Name: Збір Віри
+  Description: Отримуєш {Value1} |Духу|.
+PatchouliGreenAttack:
+  Description: "Завдає {Damage} шкоди.\nМоже бути зіграною лише якщо залишилось хоча\
+    \ б {Value1} мани."
+  Name: Мить Весни
+SunflowerDefense:
+  Name: Соняшникове Поле
+  Description: "Отримуєш {Block} |Блоку|.\nДодає {Value1} |Літні Квіти| в руку."
+TakaneDefense:
+  Description: "Отримуєш {Block} |Блоку|.\n|За кожну витрачену {Mana}|: Отримуєш на\
+    \ {Value1} більше |Блоку|."
+  Name: Глиб Лісу
+GreenLotus:
+  Name: Місячний Лотос
+  Description: Отримуєш {Mana}.
+ShopAttack:
+  FlavorText: Не їж потай!
+  Name: Ракета-Огірок
+  Description: "Завдає {Damage} шкоди.\nДобираєш {Value1:plural one='% карту' few='%\
+    \ карти' many='% карт'}."
+ShopDefense:
+  Description: "Отримуєш {Block} |Блоку|.\nДобираєш {Value1:plural one='% карту' few='%\
+    \ карти' many='% карт'}."
+  Name: Чиста Енергія
+QingeUpgrade:
+  Name: Хитрощі Лихого Відлюдника
+  Description: "Завдає {Damage} шкоди.\n|Страта|: Назавжди |Покращує| карту."
+HuiyinMoreDraw:
+  Name: Проповідь Навченням
+  Description: Добираєш на {Value1:plural one='% карту' few='% карти' many='% карт'}
+    більше протягом стадії добору.
+ShopSearch:
+  Name: Приватний Радар
+  Description: Вибери карту Атаки чи Захисту зі стосу добору, аби додати в руку.
+YijiuDraw:
+  Description: "|Прогноз| {Scry}.\nДобираєш {Value1:plural one='% карту' few='% карти'\
+    \ many='% карт'}."
+  Name: Послання Палацу Дракона
+FutoLight:
+  Name: Банкет Аскета
+  Description: Усі карти в руці вартістю 1 та більше |тимчасово коштуватимуть| {Mana}.
+HuiyeTime:
+  Name: Вічність та Миттєвість
+  FlavorText: Підійматись на роботу займає вічність, коли як прекрасний нічний сон
+    триває лиш мить.
+  Description: "Вибери до {Value1:plural one='% карти' other='% карт'} в руці. Вибране\
+    \ |Залишається| цього ходу.\nЗакінчує хід {PlayerName:g}. Після чого дає додатковий\
+    \ хід. Лише до {Value1:plural one='% карти' other='% карт'} можна зіграти у тім\
+    \ ході."
+TannvCard:
+  Name: Зміна Ролями
+  Description: Поклади верхню карту стосів добору та скиду в руку. Вони |тимчасово
+    коштуватимуть| {Mana}.
+BlueZeroAttack:
+  Description: Завдає {Damage} шкоди.
+  UpgradedDescription: "Завдає {Damage} шкоди.\nЗавдає {Value1} |Слабкості|."
+  Name: Водяний Пістолет
+QingeDraw:
+  Name: Зачаток Руху Дао
+  Description: "Отримуєш {Block} |Блоку|.\nДобираєш {Value1:plural one='% карту' few='%\
+    \ карти' many='% карт'}.\nСкинь будь-яку кількість карт ціною вище 1, добраних\
+    \ таким чином."
+IceWing:
+  Name: Крижані Крила
+  Description: "Отримуєш {Mana}.\nПоглянь на 2 випадкові сині карти зі стосу добору.\
+    \ Вибери одну, аби покласти в руку, а другу на низ стосу добору."
+  ExtraDescription1: "Отримуєш {Mana}.\nПоглянь на 2 випадкові сині карти зі стосу\
+    \ добору. Вибери одну, аби покласти в руку, а другу на низ стосу добору.\n({BlueCount:plural\
+    \ one='% синя карта залишилась' few='% сині карти залишились' many='% синіх карт\
+    \ залишилось'} у стосі добору)"
+  FlavorText: До зльоту готова!
+ColdHearted:
+  Name: Холоднокровна
+  Description: "Цього ходу |Крижані Списи| завдаватимуть потрійної шкоди ворогам під\
+    \ дією |Холоду|.\nДодає в руку {Value1:plural one='% |Крижаний Спис|' few='% |Крижані\
+    \ Списи|' many='% |Крижаних Списів|'}. {Value1:plural one='Він |тимчасово коштуватиме|'\
+    \ other='Вони |тимчасово коштуватимуть|'} {Mana} та {Value1:plural one='матиме'\
+    \ other='матимуть'} |Знищується| та |Ефемерність|."
+YoumuAttack:
+  Name: Обезголовлення
+  Description: "Завдає {Damage} шкоди.\n|Знищує| карту в руці."
+YukariFlyObject:
+  Name: Надшвидкісний Об'єкт
+  Description: На початку наступного ходу {PlayerName:g}, завдає {Value1} шкоди ворогу
+    з найбільшою кількістю здоров'я.
+YukariSwarm:
+  Name: Солов'їне Гніздо
+  Description: "Завдає {Damage} шкоди усім ворогам.\nЯкщо у |Знищених| картах не менше\
+    \ {Value1:plural one='% карти' other='% карт'}, завдає тієї ж шкоди двічі."
+  UpgradedDescription: "|Знищує| до {Value2:plural one='% карти' other='% карт'} в\
+    \ руці.\nЗавдає {Damage} шкоди усім ворогам.\nЯкщо у |Знищених| картах не менше\
+    \ {Value1:plural one='% карти' other='% карт'}, завдає тієї ж шкоди двічі."
