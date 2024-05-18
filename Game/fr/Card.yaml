@@ -2409,8 +2409,6 @@ ColdPotion:
   Name: Liquide de Refroidissement
   Description: "La |Potion instable| applique également le |Froid|.\nMélangez {Value1}\
     \ |Potion{Value1:plural one=' instable' other='s instables'}| dans la pioche."
-Ice:
-  Name: Aile de Glace
 IceLance:
   Name: Lance de Glace
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nSi la cible\
@@ -2556,7 +2554,7 @@ FreezeToIce:
   Name: Spécimen Congelé
   Description: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'} de\
     \ votre main. Ajoutez autant d'|Ailes de Glace| à la pioche."
-  FlavorText: Son utilisation au sanctuaire Moriya est interdite.
+  FlavorText: Vous êtes toutes mes ailes !
   UpgradedDescription: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
     \ de votre main, pioche et défausse. Ajoutez autant d'|Ailes de Glace| à la pioche."
 DeepFreeze:
@@ -2607,6 +2605,11 @@ ColdSnap:
   Description: "Mettez les {Value1} premières cartes bleues de la pioche dans la main.\n\
     Gagnez {Value2} |Barrière{Value2:plural one='' other='s'}| pour chaque carte mise\
     \ en main de cette façon."
+  ExtraDescription1: "Mettez {Value1:plural one='la carte bleue' other='les % cartes\
+    \ bleues'} du dessus de la pioche dans la main.\nGagnez {Value2} |Barrière{Value2:plural\
+    \ one='' other='s'}| pour chaque carte mise dans la main de cette façon.\n({BlueCount}\
+    \ carte{BlueCount:plural one=' bleue restante' other='s bleues restantes'} dans\
+    \ la pioche)"
 ColdChain:
   Name: Chaîne du Froid
   Description: Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'} de
@@ -3341,7 +3344,7 @@ YoumuAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Exilez|\
     \ une carte de la main."
 DefaultPassion:
-  Name: Acte Inconscient
+  Name: Entrez l'Attaque d'Amour par Défaut
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEntrez en\
     \ état |Passion|."
 DefaultPeace:
@@ -3485,3 +3488,20 @@ ModuoluoSeasons:
 YonglinDraw:
   Name: Souvenirs de l'Âge Divin
   Description: Piochez {Value1:plural one='% carte' other='% cartes'}.
+IceWing:
+  Name: Aile de Glace
+  FlavorText: Prêt à Décoller !
+  Description: "Gagnez {Mana}.\nRegardez 2 cartes bleues aléatoires de la pioche.\
+    \ Choisissez-en une à mettre dans la main et placez l’autre sous la pioche."
+  ExtraDescription1: "Gagnez {Mana}.\nRegardez 2 cartes bleues aléatoires de la pioche.\
+    \ Choisissez-en une à mettre dans la main et placez l’autre sous la pioche.\n\
+    ({BlueCount} carte{BlueCount:plural one=' bleue restante' other's bleues restantes'}\
+    \ dans la pioche)"
+KoishiZeroDefense:
+  Name: Amour Désintéressé
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Passion|\
+    \ : Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|."
+KoishiZeroAttack:
+  Name: Amour Aveugle
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    |Fugue| : Infligez le double des dégâts à la place."
