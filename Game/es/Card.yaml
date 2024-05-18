@@ -1745,7 +1745,7 @@ HappyNewYear:
     \ a la mano.\nGana {Value1} de |Poder| si se elige una carta de ataque, o {Value1}\
     \ de |Espíritu| si se elige una carta de defensa."
 HuashanDefense:
-  Name: Sirviente de Golpe Relámpago
+  Name: Relámpago de Mukou
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Carga Estática| hasta\
     \ el próximo turno de {PlayerName}."
 AliceAttack:
@@ -2209,9 +2209,6 @@ ColdPotion:
   Description: "Las |Pociones Inestables| también aplican |Frío| cuando se activan.\n\
     Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones Inestables|'}\
     \ a la pila de robo."
-Ice:
-  Description: "Gana {Mana}.\nMira 2 cartas azules al azar en la pila de robo. Elige\
-    \ uno para colocarlo en la mano y deja el otro en el fondo de la pila de robo."
 FrostGarden:
   Name: Jardín Escarchado
   Description: "Aplica |Frío| a cada enemigo.\nSi tienes una |Compañera| convocada\
@@ -2433,8 +2430,8 @@ FrozenThrone:
 FairyWrath:
   Name: Cólera de la Naturaleza
   Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay una |Daiyousei, la\
-    \ Alegre Asistente| convocada en la mano, agrega {Value1} |Flor de verano| a la\
-    \ mano."
+    \ Alegre Asistente| convocada en la mano, agrega {Value1} |Flor{Value1:plural\
+    \ one='' other='es'} de Verano| a la mano."
 FreezeRiver:
   Name: Hielo Flotante
   Description: Coloca a la mano la carta que esta en la parte inferior de la pila
@@ -2471,6 +2468,11 @@ ColdSnap:
   Description: "Coloca las {Value1} cartas azules que están el parte superior de la\
     \ pila de robo hacia la mano.\nGana {Value2} de |Barrera| por cada carta colocada\
     \ en la mano de esta manera."
+  ExtraDescription1: "Coloca las {Value1} cartas azules que están el parte superior\
+    \ de la pila de robo hacia la mano.\nGana {Value2} de |Barrera| por cada carta\
+    \ colocada en la mano de esta manera.\n(Queda{BlueCount:plural one='' other'n'}\
+    \ {BlueCount} carta{BlueCount:plural one=' azul' other's azules'} en la pila de\
+    \ robo)"
 SummerParty:
   Name: Fiesta de Escarcha
   Description: "Gana {Value1} de |Armadura de Escarcha|.\nCada |Compañera| en la mano\
@@ -2753,7 +2755,7 @@ PoisonTeaParty:
   Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
     \ {Value2} de |Veneno|."
 KisumeAttack:
-  Name: Aparición en un Balde
+  Name: Aparición del Tsurube-Otoshi
   Description: "Gana {Block} de |Bloqueo|.\nInflige {Damage} de daño.\nSi {SelfName}\
     \ fue la primera carta jugada en este turno, aplica {Value1} de |Marcado|."
 ShirenKunchong:
@@ -3090,7 +3092,7 @@ ShopAttack:
     \ other='s'}."
   Name: Misil Pepino
 ShopSearch:
-  Description: Elige una carta de Ataque o de Defensa de la pila de robo para colocarla
+  Description: Elige una carta de ataque o de defensa de la pila de robo y colócalo
     en la mano.
   Name: Radar Privado
 YijiuDraw:
@@ -3246,6 +3248,15 @@ QiannianShenqiCard:
   Description: "Las cartas se pueden robar más allá del límite del efecto del |e:Rompecabezas\
     \ Piramidal| a un coste de {Value1} de vida por robo adicional.\nEsto dura hasta\
     \ el final del combate."
-  Name: Es Mi Turno
+  Name: Mi Turno
 LeaveMoodAttack:
   Name: Acto Inconsciente
+IceWing:
+  Name: Ala de Hielo
+  ExtraDescription1: "Gana {Mana}.\nMira 2 cartas azules aleatorias de la pila de\
+    \ robo. Elige uno para colocarlo en la mano y el otro se deja en el fondo de la\
+    \ pila de robo.\n(Queda{BlueCount:plural one='' other'n'} {BlueCount} carta{BlueCount:plural\
+    \ one=' azul' other's azules'} en la pila de robo)"
+  Description: "Gana {Mana}.\nMira 2 cartas azules aleatorias de la pila de robo.\
+    \ Elige uno para colocarlo en la mano y el otro se deja en el fondo de la pila\
+    \ de robo."
