@@ -904,10 +904,6 @@ MogongAttack:
 HappyNewYear:
   Name: 初詣
   Description: "3枚のランダムな攻撃または防御カードから1枚選び手札に加える。\n攻撃カードを選んだ時|火力|{Value1}を得る。\n防御カードを選んだ時|霊力|{Value1}を得る。"
-Ice:
-  Description: '{Mana}を得る。
-
-    山札のランダムな青のカード2枚を表示する。その内1枚を手札に加え、残りを山札の底へ置く。'
 CirnoDraw:
   Name: 知性なる妖精
   UpgradedDescription: "カードを{Value1}枚引く。\n次のターン開始時にカードを{Value2}枚引く。"
@@ -1709,6 +1705,8 @@ FairyOnIce:
 ColdSnap:
   Name: 高速なる解熱
   Description: "山札の上から{Value1}枚の青のカードを手札に加える。加えたカード1枚につき{Value2}|バリア|を得る。"
+  ExtraDescription1: "山札の上から{Value1}枚の青のカードを手札に加える。加えたカード1枚につき{Value2}|バリア|を得る。\n\
+    （山札の青のカード：{BlueCount}枚）"
 IceBarrier:
   Description: '|フロストアーマー|を{Value1}得る。'
   Name: アイスシールド
@@ -2306,8 +2304,8 @@ SanaeSpirit:
   Description: '|霊力|{Value1}を得る。'
 YukariSwarm:
   Name: 飛光虫ネスト
-  UpgradedDescription: "手札を最大{Value2}枚|廃棄|する。\n敵全体に{Damage}ダメージを与える。\n|廃棄場|にあるカードが{Value1}枚以上の時、ダメージを2回与える。"
-  Description: "敵全体に{Damage}ダメージを与える。\n|廃棄場|にあるカードが{Value1}枚以上の時、ダメージを2回与える。"
+  UpgradedDescription: "手札を最大{Value2}枚|廃棄|する。\n敵全体に{Damage}ダメージを与える。\n|廃棄場|に{Value1}枚以上のカードがある場合、ダメージを2回与える。"
+  Description: "敵全体に{Damage}ダメージを与える。\n|廃棄場|に{Value1}枚以上のカードがある場合、ダメージを2回与える。"
 SanaeSummonGod:
   UpgradedDescription: 次の{PlayerName}のターン開始時：|火力|と|霊力|を{Value1}得る。
   Name: サモンタケミナカタ
@@ -2352,3 +2350,8 @@ QiannianShenqiCard:
   Name: オレのターン
   Description: "|e:ピラミッド型のパズル|の上限枚数に達してもカードを引くことができる。\n制限枚数を超えてカードを1枚引くごとにライフを{Value1}失う。\n\
     この効果はこの戦闘中持続する。"
+IceWing:
+  Name: 氷の翼
+  Description: "{Mana}を得る。\n山札のランダムな青のカード2枚を表示する。その内1枚を選んで手札に加え、もう1枚を山札の底に置く。"
+  ExtraDescription1: "{Mana}を得る。\n山札のランダムな青のカード2枚を表示する。その内1枚を選んで手札に加え、もう1枚を山札の底に置く。\n\
+    （山札の青のカード：{BlueCount}枚）"
