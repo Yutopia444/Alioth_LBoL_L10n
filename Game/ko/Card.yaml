@@ -638,7 +638,7 @@ CirnoInForest:
 FreezeToIce:
   Description: 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의 |얼음 날개|를 뽑을 카드 더미에 넣습니다.
   Name: 냉동 표본
-  FlavorText: 모리야 신사에서 사용 금지.
+  FlavorText: 너희 전부 다 내 날개(물리)야!
   UpgradedDescription: 손, 뽑을 카드 더미, 버릴 카드 더미 모두에서 카드를 최대 {Value1}장 선택해 |소멸|시킨 뒤 그만큼의
     |얼음 날개|를 뽑을 카드 더미에 넣습니다.
 DeepFreeze:
@@ -1453,6 +1453,8 @@ OptBottom:
 ColdSnap:
   Description: "뽑을 카드 더미에서 청색 카드를 {Value1}장 손으로 가져옵니다. 가져온만큼 |보호막|을 {Value2} 얻습니다."
   Name: 급속냉각
+  ExtraDescription1: "뽑을 카드 더미에서 청색 카드를 {Value1}장 손으로 가져옵니다. 가져온만큼 |보호막|을 {Value2}\
+    \ 얻습니다.\n(뽑을 카드 더미에 있는 청색 카드의 수: {BlueCount}장)"
 ColdChain:
   Description: 뽑을 카드 더미에서 최대 {Value1}장을 골라 손으로 가져옵니다.
   Name: 콜드 체인
@@ -2429,8 +2431,9 @@ HuiyinRemove:
     \ 않습니다."
 FlanFirepower:
   Name: 그리고 아무도 없게 되는가?
-  Description: "손에 있는 모든 카드에 |휘발성|을 추가하고, 그 만큼의 |화력|을 얻습니다.\n현재 손에는 카드가 {Count}장 있습니다."
-  NonbattleDescription: 손에 있는 모든 카드에 |휘발성|을 추가하고, 그 만큼의 |화력|을 얻습니다.
+  Description: "손에 있는 모든 카드에 |휘발성|을 추가하고, 손에 있는 카드의 갯수만큼 |화력|을 얻습니다.\n현재 손에는 카드가 {Count}장\
+    \ 있습니다."
+  NonbattleDescription: 손에 있는 모든 카드에 |휘발성|을 추가하고, 손에 있는 카드의 갯수만큼 |화력|을 얻습니다.
 Frog:
   Name: 개구리
   Description: "이 카드엔 주술이 걸려 있습니다.\n기존 카드: {CardName}"
@@ -2544,7 +2547,7 @@ SanaeSpirit:
   Name: 신앙 수집
   Description: '|영력|을 {Value1} 얻습니다.'
 BlueZeroAttack:
-  Name: 고압 물총
+  Name: 격류
   Description: 피해를 {Damage} 줍니다.
   UpgradedDescription: "피해를 {Damage} 줍니다.\n|허약|을 {Value1} 줍니다."
 QingeDraw:
@@ -2584,7 +2587,7 @@ SakuyaZeroDefense:
   Name: 탄막 디플렉션
   Description: '|방어|를 {Block} 얻습니다.'
 DefaultPassion:
-  Name: 무의식적 행동
+  Name: 기본 열애 공격 진입
   Description: "피해를 {Damage} 줍니다.\n|열정|에 들어섭니다."
 DefaultPeace:
   Name: 열애의 가시덤불
@@ -2598,3 +2601,19 @@ HuiyinMoreDraw:
 YonglinDraw:
   Name: 신대의 기억
   Description: 카드를 {Value1}장 뽑습니다.
+IceWing:
+  Name: 얼음 날개
+  Description: "{Mana}를 얻습니다.\n뽑을 카드 더미에서 무작위 청색 카드 2장을 확인합니다. 한 장을 손으로 가져오고, 나머지\
+    \ 한 장은 카드 더미의 바닥에 놓습니다."
+  ExtraDescription1: "{Mana}를 얻습니다.\n뽑을 카드 더미에서 무작위 청색 카드 2장을 확인합니다. 한 장을 손으로 가져오고,\
+    \ 나머지 한 장은 카드 더미의 바닥에 놓습니다.\n(뽑을 카드 더미에 있는 청색 카드의 수: {BlueCount}장)"
+  FlavorText: 비행 준비 완료!
+KoishiZeroDefense:
+  Name: 본능적인 사랑
+  Description: "|방어|를 {Block} 얻습니다.\n|열정|: 추가로 |방어|를 {Value1} 얻습니다."
+KoishiZeroAttack:
+  Name: 맹목적인 사랑
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|둔주|: 피해를 두 번 줍니다."
+PassionAttackToDraw:
+  Name: 망아적인 사랑
+  Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|열정|에 들어섭니다.\n이 카드를 뽑을 카드 더미에 섞어넣습니다."
