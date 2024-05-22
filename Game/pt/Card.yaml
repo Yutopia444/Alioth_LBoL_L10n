@@ -166,8 +166,9 @@ YakongDianxue:
   FlavorText: É uma apunhalada!
 QinggeManwu:
   Name: Valsa da Donzela
-  Description: Compre {Value1} carta{Value1:plural one=' e |Melhore-a|' other='s e
-    |Melhore-as|'} até o fim do combate.
+  Description: "Compre {Value1} carta{Value1:plural one=' e |Melhore-a|' other='s\
+    \ e |Melhore-as|'} até o fim do combate.\nGanhe {Value2} de |Barreira| para cada\
+    \ carta |Melhorada| comprada desta forma."
 FreeFly:
   Name: Voo Livre
   Description: No início do turno de {PlayerName}, ganhe {Mana}.
@@ -473,7 +474,9 @@ DoubleDajiejie:
 WinterWarm:
   Name: Luva Aquecida
   FlavorText: Não aproxime-a de materiais inflamáveis.
-  Description: Ganhe {Value1} de |Concentração|.
+  Description: "|Exile| até {Value1:plural one='% carta' other='% cartas'} da mão.\n\
+    Ganhe |Concentração| igual a quantidade de cartas |exiladas| desta forma.\nCompre\
+    \ {Value2:plural one='% carta' other='% cartas'}."
 ReadyForBurst:
   Name: Preparar Fervor
   Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} de |Carga|."
@@ -616,7 +619,7 @@ ThrowBigStar:
   Description: "Cause {Damage} de dano a cada inimigo.\n|Sobrecarga {Value2}|: Em\
     \ vez disso, cause esse dano duas vezes."
 MarisaEat:
-  Description: "Ganhe {Value1} de |Concentração|.\n|Estreia|: Ganhe {Value2} de vida."
+  Description: "Ganhe {Value1} de |Concentração|.\nGanhe {Value2} de vida."
   Name: Festa do Cogumelo
 UpgradePotion:
   Description: "Adicione {Value2} |Poção Instável| para a pilha de compra.\nAumente\
@@ -733,9 +736,9 @@ BlueMogu:
   Name: Pleurotus Cobalto
 StarlightTaifengSummoner:
   Name: Convergência da Luz Estelar
-  UpgradedDescription: "Adicione 1 |Ciclone Estelar+| no topo da pilha de compra.\n\
-    |Para cada {Mana} gasto|: A carta adicionada causa dano uma vez adicional.\n|Para\
-    \ cada <sprite=\"ManaSprite\" name=\"R\"> gasto|: Aumente o dano da carta adicionada\
+  UpgradedDescription: "Adicione 1 |Ciclone Estelar| no topo da pilha de compra.\n\
+    |Para cada {Mana} gasta|: A carta adicionada causa dano uma vez adicional.\n|Para\
+    \ cada <sprite=\"ManaSprite\" name=\"R\"> gasta|: Aumente o dano da carta adicionada\
     \ em {Value1}."
   FlavorText: Acumule mana por mil dias e libere tudo em um instante.
   Description: "Adicione um |Ciclone Estelar| para a pilha de compra.\n|Para cada\
@@ -773,8 +776,8 @@ JungleMaster:
 ManaJungle:
   Name: Aventura na Floresta
   FlavorText: '"Eureka! Eu Consegui!"'
-  Description: '|Quando Comprado|: Adicione {Value1} |Arco-Íris| para a mão e |Exile|
-    {SelfName}.'
+  Description: '|Quando {SelfName} entrar na mão|: Adicione {Value1} |Arco-Íris| à
+    mão e |Exile| {SelfName}.'
 GreenMogu:
   Description: Adicione {Value1} |Poção Instável| para a pilha de compra.
   Name: Panellus Stipticus
@@ -802,11 +805,12 @@ SakuyaAttackW:
 Lijian:
   Name: Visão da Lâmina Distante
   Description: "Cause {Damage} de dano.\nCompre {Value1} carta{Value1:plural one=''\
-    \ other='s'}.\n|Quando comprado|: {SelfName} custa {Mana} a menos neste combate."
+    \ other='s'}.\n|Quando {SelfName} entrar na mão|: {SelfName} custa {Mana} a menos\
+    \ neste combate."
 DefenseDraw:
   Description: "Ganhe {Block} de |Bloqueio|.\nCompre {Value1} carta{Value1:plural\
-    \ one='' other='s'}.\n|Quando comprado|: {SelfName} custa {Mana} a menos nesse\
-    \ combate."
+    \ one='' other='s'}.\n|Quando {SelfName} entrar na mão|: {SelfName} custa {Mana}\
+    \ a menos nesse combate."
   Name: Ciclo Lunar
 SakuyaInvestigate:
   Description: "Aplique {Value1} |Marcas|.\nNo começo de cada turno extra, retorne\
@@ -820,8 +824,8 @@ SakuyaTea:
     \ Ganhe {Value2} de vida. {SelfName} custa {Mana} a menos nesse combate."
 SakuyaSleep:
   Name: Pequeno Intervalo
-  UpgradedDescription: Adicione 1 |Arco-Íris| para a mão.
-  Description: "Adicione 1 |Arco-Íris| para a mão.\nTermine o turno de {PlayerName}."
+  UpgradedDescription: Adicione 1 |Radiante| à mão.
+  Description: "Adicione 1 |Radiante| à mão.\nTermine o turno de {PlayerName}."
 ExileMagic:
   Name: Magia Permutante
   Description: "|Exile| até {Value1:plural one='% carta' other='% cartas'} da mão.\
@@ -913,7 +917,10 @@ LightSpeed:
   Description: "Cause {Damage} de dano.\nSe uma carta foi descartada neste turno,\
     \ ganhe {Mana}"
 SakuyaAttackX:
-  Description: '|Para cada {Mana} Gasta|: Cause {Damage} de dano.'
+  Description: '|Para cada {Mana} Gasta|: Cause {Damage} de dano.
+
+    O dano Excedente vai atingir outro inimigo aleatório e continuará até o alvo ser
+    derrotado.'
   Name: Propulsão Prateada
 SakuyaDraw:
   Name: À Perfeição
@@ -962,8 +969,8 @@ SakuyaFuneral:
   Name: Enterro Prematuro
 LunaDial:
   Name: Espaço Pessoal
-  Description: "Termine o turno. Então, jogue um turno extra.\n|Quando comprado|:\
-    \ {SelfName} custa {Mana} a menos nesse combate."
+  Description: "Termine o turno. Então, jogue um turno extra.\n|Quando {SelfName}\
+    \ entrar na mão|: {SelfName} custa {Mana} a menos nesse combate."
 DropToKnife:
   Name: Fortaleza de Prata
   Description: "Descarte {Value1} carta{Value1:plural one='' other='s'}.\nAdicione\
@@ -1036,8 +1043,10 @@ MeilingFriend:
   Name: Meiling, Porteira Negligente
   Description: '{FriendS}Ganhe {Graze} de |Desvio|.
 
-    {FriendP}Sempre que {PlayerName} receber um ataque inteiro do inimigo, adicione
-    1 |Faca de Arremesso| para a mão.'
+    {FriendP}Adicione uma |Faca de Arremesso| à mão.
+
+    Sempre que {PlayerName} tomar dano de um ataque inteiro, adicione 1 |Faca de Arremesso|
+    à mão.'
   ExtraDescription2: '{FriendU}Ganhe {Value1} de vida e {Value2} de |Poder de Fogo|.'
 SakuyaUsage:
   Description: "Compre {Value1} carta{Value1:plural one='' other='s'}.\n|Quando jogado\
@@ -1054,7 +1063,9 @@ SakuyaUsage2:
   Name: Uso Correto de Sakuya
   Description: Termine o turno. Então, {PlayerName} joga um turno extra.
 IceLaser:
-  Description: "Cause {Damage} de dano.\nAplique |Frio|."
+  Description: "Cause {Damage} de dano.\nAplique |Frio| ao atingir.\nOlhe a carta\
+    \ do fundo da pilha de compras. Se for azul, repita este efeito em outro inimigo\
+    \ aleatório."
   Name: Raio Congelante
 CirnoBlockG:
   Name: Proteção Floral
@@ -1099,8 +1110,7 @@ CirnoConsider:
   ExtraDescription2: Compre {Value1:plural one='% carta' other='% cartas'}.
   Name: Deliberação Cuidadosa
 SummerIce:
-  Description: "Cause {Damage} de dano em um inimigo aleatório {Value1} vez{Value1:plural\
-    \ one='' other='es'}.\nGanhe {Mana} no começo do próximo turno."
+  Description: "Ganhe {Mana} no começo do próximo turno."
   Name: Gelinho de Verão
 CirnoDraw:
   Name: Intelecto de Fada
@@ -1109,25 +1119,24 @@ CirnoDraw:
     \ começo do próximo turno de {PlayerName}, compre {Value2:plural one='% carta'\
     \ other='% cartas'}."
 FreezeBullet:
-  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} de |Armadura de Gelo|."
+  Description: "Ganhe {Block} de |Bloqueio|.\nAté o próximo turno de {PlayerName},\
+    \ aplique |Frio| ao primeiro inimigo que atacar {PlayerName}."
   Name: Congelar Disparo
 CoolBreeze:
   Name: Brisa Refrescante
   Description: "Ganhe {Block} de |Bloqueio|.\nSe algum inimigo tem |Frio|, Melhore\
     \ {Value1:plural one='% carta' other='% cartas'} na mão."
 ColdBreath:
-  Description: "Cause {Damage} de dano a um inimigo aleatório.\nPrioriza inimigos\
-    \ com |Frio|, nesse caso, ganhe {Mana}.\nCompre {Value1:plural one='% carta' other='%\
-    \ cartas'}."
+  Description: "Cause {Damage} de dano.\nSe o alvo tem |Frio|, ganhe {Mana}."
   Name: Sopro de Diamante
 OptBottom:
   Name: Afundar
   Description: Coloque {TargetName} no fundo da pilha de compra.
 CirnoInForest:
   Name: À Plena Vista
-  Description: "Ganhe {Block} de |Bloqueio|.\n|Débito| {Value1}."
+  Description: "Ganhe {Block} de |Bloqueio|.\nGanhe {Value1} de |Desvio|."
 BlueRose:
-  Description: "Cause {Damage} de dano.\nSe o alvo tem |Frio|, ganhe {Block} de |Bloqueio|."
+  Description: "Ganhe {Block} de |Bloqueio|.\nCause {Damage} de dano."
   Name: Rosa de Gelo
 FruitShake:
   Name: Deliciosos Gelados de Fruta
@@ -1138,7 +1147,7 @@ FrostGarden:
   FlavorText: Ar condicionado gratuito.
   Name: Jardim Gélido
   Description: "Aplique |Frio| em cada inimigo.\nSe houver algum |Companheiro| invocado\
-    \ na mão, {SelfName} custa {Mana} para ser jogado."
+    \ na mão, repita o efeito no começo do próximo turno de {PlayerName}."
 MaidFriend:
   Description: '{FriendP}Cause {Damage} de dano de ataque ao inimigo com menos vida.'
   ExtraDescription1: "{FriendA}Cause dano imediatamente. Adicione {Value2:plural one='%\
@@ -1157,15 +1166,16 @@ LeidiFriend:
   Description: '{FriendP}Aplique |Frio| em um inimigo aleatório.'
   ExtraDescription2: '{FriendU}Cause {Damage} de dano e aplique |Frio| a cada inimigo.'
 IceSaber:
-  Description: "Cause {Damage} de dano {Value1:plural one='% vez' other='% vezes'}.\n\
-    Aplique |Frio|.\nDescarte qualquer número de cartas azuis. Cause esse dano uma\
-    \ vez a mais para cada carta descartada dessa maneira."
+  Description: "Descarte até {Value1:plural one='% carta azul' other='% cartas azuis'}.\n\
+    Adicione o mesmo tanto de |Lanças de Gelo| à mão. Elas |custam temporariamente|\
+    \ {Mana} e tem |Exilar| e |Etéreo|."
   FlavorText: Era uma vez uma espada famosa chamada Frostmourne.
   Name: Lâmina Forjada em Gelo
 ColdSnap:
   Name: Refrescância Rápida
-  Description: "Ganhe {Block} de |Bloqueio|.\nCompre {Value1} carta{Value1:plural\
-    \ one='' other='s'}.\nColoque uma carta da mão no fundo da pilha de compra."
+  Description: "Coloque {Value1:plural one='a primeira carta azul da pilha de compras\
+    \ na mão' other='as primeiras % cartas azuis da pilha de compras na mão'}.\nGanhe\
+    \ {Value2} de |Barreira| para cada carta colocada na mão desta forma."
 DoubleMana:
   Name: Despertar da Fada
   Description: "Dobre sua mana.\n|Débito| {Value1}."
@@ -1190,7 +1200,7 @@ CallFriends:
     \ adicional."
 FreezeToIce:
   Description: "|Exile| até {Value1:plural one='% carta' other='% cartas'} da mão.\
-    \ Adicione o mesmo tanto de |Glacial| para a mão."
+    \ Adicione o mesmo tanto de |Asas de Gelo| à pilha de compras."
   Name: Espécime Congelado
 FrozenThrone:
   Name: Trono Gélido
@@ -1228,7 +1238,7 @@ FairyTree:
 Blizzard:
   Name: Nevasca
   Description: "Cause {Damage} de dano a cada inimigo.\nAplique |Frio| a cada inimigo.\n\
-    Se houver alguma |Letty, Inverno Incorporado| invocada na mão, repita este efeito\
+    Olhe a carta do fundo da pilha de compras. Se ela for azul, repita este efeito\
     \ no começo do próximo turno de {PlayerName}."
 FairyOnIce:
   Name: Fada Sobre Gelo
@@ -2586,3 +2596,14 @@ HuiyinRemove:
   DetailText: "{SelfName} não pode ser gerada aleatoriamente em combate e não pode\
     \ ser copiada.\nQuando a carta selecionada for removida do baralho, ela não será\
     \ removida deste combate."
+IceBolt:
+  Description: "Cause {Damage} de dano.\nAplique |Frio| ao atingir."
+  Name: Bala de Gelo
+IceWing:
+  Description: "Ganhe {Mana}.\nOlhe 2 cartas azuis aleatórias da pilha de compra.\
+    \ Escolha uma para colocar à mão e coloque a outra no fundo da pilha de compra."
+  ExtraDescription1: "Ganhe {Mana}.\nOlhe 2 cartas azuis aleatórias da pilha de compra.\
+    \ Escolha uma para colocar à mão e coloque a outra no fundo da pilha de compra.\n\
+    ({BlueCount:plural one='% carta azul restante' other='% cartas azuis restantes'}\
+    \ na pilha de compra)"
+  Name: Asas de Gelo
