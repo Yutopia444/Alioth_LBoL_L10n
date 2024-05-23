@@ -385,8 +385,8 @@ YouxiangMoon:
 HuiyeMana:
   Name: Такеторі Моноґатарі
   FlavorText: Дитячі пісні несуть легенди про славних грішників.
-  Description: На початку ходу {PlayerName:g}, дає {Value1} випадкової мани; кожного
-    ходу ця кількість збільшується на {Value1}.
+  Description: На початку ходу {PlayerName:g}, отримуєш {Value1} випадкової мани;
+    кожного ходу ця кількість збільшується на {Value1}.
 DizangLove:
   Name: Миттєва Бодгі
   Description: "Щоразу як {PlayerName} гратиме Звичайну карту, отримує {Value1} |Тимчасової\
@@ -440,8 +440,7 @@ YouxiangWake:
     \ |Тимчасово Коштуватимуть|'} {Mana}."
 SkyWater:
   Name: Водяне Чудо Небес
-  Description: "Отримуєш {Shield} |Бар'єру|.\nДобираєш на {Value1:plural one='% карту'\
-    \ few='% карти' many='% карт'} більше під час стадії добору."
+  Description: "Отримуєш {Shield} |Бар'єру|.\nДобираєш карти до повної руки."
 YinyangQueen:
   Name: Місумару, Уміла Майстриня
   Description: "{FriendP}Отримуєш {Value2} |Блоку| та |Бар'єру|."
@@ -472,7 +471,7 @@ YachieDefend:
 ShirenKunchong:
   Name: Комаха-Людожер
   Description: "Завдає {Damage} шкоди усім ворогам.\nЩоразу як ворог отримуватиме\
-    \ |Дебаф|, {PlayerName} отримує {Value1} |Блоку|."
+    \ |Негативний Ефект|, {PlayerName} отримує {Value1} |Блоку|."
 TodayYesterday:
   Name: Ґенсокьо, Минуле й Сьогодення
   Description: "Щоразу як {PlayerName} |Маневрує| атаку, отримує {Value1} |Сили|.\n\
@@ -594,8 +593,8 @@ QinggeManwu:
     \ карту добрану."
   FlavorText: Крок за кроком, чобітки пороком.
 ReimuDrink:
-  UpgradedDescription: "Відновлює {Value1} здоров'я.\nДає {Value1} |Тимчасової Сили|.\n\
-    Додає {Value2} |Будьмо| в руку."
+  UpgradedDescription: "Відновлює {Value1} здоров'я.\nОтримуєш {Value1} |Тимчасової\
+    \ Сили|.\nДодає {Value2} |Будьмо| в руку."
   FlavorText: Воїни з епохи Трьох Королівств, випивши, підпалювали свої леза, аби
     страчувати зв'язаних кайданами ворожих солдатів.
   Name: Файно Наливай-но
@@ -624,7 +623,7 @@ JingshenYishi:
   FlavorText: Жриця, не заплямована брудом грошей, не має потреби у такому ритуалі.
 Xiaozhuo:
   Name: Будьмо
-  Description: Дає {Value1} |Тимчасової Сили|.
+  Description: Отримуєш {Value1} |Тимчасової Сили|.
   FlavorText: П'яним тебе вороги самі знайдуть.
 ReimuAttackR:
   Name: Амулет Хакурей
@@ -1108,7 +1107,7 @@ MarisaHoldCard:
   FlavorText: '"Гей, ану не викидай це! Воно ще може знагодитись пізніше!"'
 FireUpBagualu:
   Name: Вогненний Запал
-  Description: "Дає {Value1} |Заряду|.\nОтримуєш {Value2} |Сили|. Цей ефект збільшується\
+  Description: "Отримуєш {Value1} |Заряду|.\nОтримуєш {Value2} |Сили|. Цей ефект збільшується\
     \ від |Детонації|."
 MixAndShake:
   Name: Зілля Феєрверків
@@ -1590,7 +1589,7 @@ LilyFriend:
   Name: Лілі Уайт, Провісниця Весни
   Description: "{FriendS}Завдає {Damage} шкоди випадковому ворогу {Value1:plural one='%\
     \ раз' few='% рази' many='% разів'}.\n{FriendP}Дає {TurnMana}."
-  ExtraDescription1: '{FriendA}Дає {ActiveMana}.'
+  ExtraDescription1: '{FriendA}Отримуєш {ActiveMana}.'
   ExtraDescription2: "{FriendU}Відновлює {Heal} здоров'я."
 SummerParty:
   Name: Кльова Вечірка
@@ -1675,8 +1674,8 @@ SunnyFriend:
   Name: Санні, Блискуче Сонячне Сяйво
   Description: "{FriendP}Завдає {Damage} шкоди випадковому ворогу {Value1:plural one='%\
     \ раз' few='% рази' many='% разів'}."
-  ExtraDescription1: "{FriendA}Дає |Оптичний Камуфляж| на {Light:plural one='% хід'\
-    \ few='% ходи' many='% ходів'}."
+  ExtraDescription1: "{FriendA}Отримуєш |Оптичний Камуфляж| на {Light:plural one='%\
+    \ хід' few='% ходи' many='% ходів'}."
   ExtraDescription2: "{FriendU}Миттєво завдає шкоди {Value1:plural one='% раз' few='%\
     \ рази' many='% разів'}.\nОтримуєш {Value2} |Сили|."
 ClownpieceFriend:
@@ -1936,11 +1935,11 @@ ShenziUpgradeAll:
 YuetuInvincible:
   Name: Падіння Місячного Кролика
   FlavorText: Утікай з очищеного світу до забрудненого раю.
-  Description: "Дає |Бездоганність| на {Value1:plural one='% хід' few='% ходи' many='%\
-    \ ходів'}.\nДодає {Value2} |Втраченого Вбрання| до стосу добору."
+  Description: "Отримуєш |Бездоганність| на {Value1:plural one='% хід' few='% ходи'\
+    \ many='% ходів'}.\nДодає {Value2} |Втраченого Вбрання| до стосу добору."
 YuetuYuyi:
-  Description: Дає |Бездоганність| на {Value1:plural one='% хід' few='% ходи' many='%
-    ходів'}.
+  Description: Отримуєш |Бездоганність| на {Value1:plural one='% хід' few='% ходи'
+    many='% ходів'}.
   Name: Втрачене Вбрання
   FlavorText: Залишки спогадів про Місяць.
 KokoroAttack:
@@ -2153,7 +2152,7 @@ HinaAttack:
     смузі невдач.
 ArtificialJewellery:
   Name: Біжутерія
-  Description: Дає 1 випадкової мани.
+  Description: Отримуєш 1 випадкової мани.
   UpgradedDescription: Отримуєш {Mana}.
   FlavorText: Дарма що справжня цінність цієї прикраси набагато нижче ціни, головне,
     що її здібність підіймати дух та настрій дорожче усіляких грошей.
@@ -2199,20 +2198,20 @@ LimaoSchool:
     їхній ефект.
 MorphDog:
   Name: Форма Хижака
-  Description: Дає {Value1} |Сили|.
+  Description: Отримуєш {Value1} |Сили|.
 MorphBird:
-  Description: Дає {Value1} |Маневру|.
+  Description: Отримуєш {Value1} |Маневру|.
   Name: Форма Птаха
 MorphFrog:
   Name: Форма Амфібії
-  Description: Дає {Value1} до максимального здоров'я.
+  Description: Отримуєш {Value1} до максимального здоров'я.
 HuiyeAttack:
   Name: Море Дерев Хоурай
   Description: "|За кожну витрачену ману різного кольору|: Завдає {Damage} шкоди усім\
     \ ворогам.\nЯкщо було витрачено хоча б {Value2} мани, повертає до {Value1:plural\
     \ one='% карти' other='% карт'} зі |Знищених| в руку."
 MorphMan:
-  Description: Дає {Value1} <sprite="Point" name="Power">.
+  Description: Отримуєш {Value1} <sprite="Point" name="Power">.
   Name: Форма Людини
 Shoot:
   Name: Постріл
@@ -2243,8 +2242,8 @@ YijiPurify:
     залежність від кольору.
 YijiGraze:
   Name: Аме-но-Удзуме
-  Description: "Дає {Value1} |Маневру|.\nДобираєш {Value2:plural one='% карту' few='%\
-    \ карти' many='% карт'}."
+  Description: "Отримуєш {Value1} |Маневру|.\nДобираєш {Value2:plural one='% карту'\
+    \ few='% карти' many='% карт'}."
 YijiFirepower:
   Name: Вогні Атаґо
   Description: "Отримуєш {Value1} |Сили| та |Тимчасової Сили|.\nДодає {Value2:plural\
@@ -2639,3 +2638,199 @@ HatateShot:
   Description: "Отримуєш {Block} |Блоку|.\nЗа кожну невитрачену ману присутню, {SelfName}\
     \ збільшує свій |Блок| на {Value1}. (Загально {Special} |Блоку|)"
   Name: Панорамний Знімок
+RuowujiCard:
+  Description: "Завдає {Damage} шкоди та {Value1} |Утоплення| усім ворогам.\nЕфект\
+    \ |Утоплення| не складається."
+  Name: Зворотні Бурхливі Хвилі
+PatchouliLibrary:
+  Description: "Отримуєш {Mana}.\nВибери 1 з {Value1} Рідкісних карт аби додати в\
+    \ руку. Вона матиме |Знищується| та |Ефемерність|."
+  Name: Нерухома Велична Бібліотека
+  UpgradedDescription: "Отримуєш {Mana}.\nВибери 1 з {Value1} Рідкісних або 1 з {Value2}\
+    \ Незвичайних карт аби додати в руку. Вона матиме |Знищується| та |Ефемерність|."
+AyaExtraTurn:
+  Description: "Закінчує хід {PlayerName:g}. Після чого дає додатковий хід.\nНа початку\
+    \ свого наступного ходу, {PlayerName} отримує {Value1} |Маневру|.\n|Часовий Ліміт|\
+    \ {Mana}."
+  ExtraDescription1: "Закінчує хід {PlayerName:g}. Після чого дає додатковий хід.\n\
+    На початку свого наступного ходу, {PlayerName} отримує {Value1} |Маневру|.\n|d:Часовий\
+    \ Ліміт {Mana}.|"
+  Name: Фантастичний Буревій
+ToolWeak:
+  FlavorText: '"Гідро-Агрохолдинг Каппа Лімітед урочисто обіцяє, що ця модель портативних
+    ретро-ліхтариків не має жодних побічних ефектів, особливо пришвидшеного старіння
+    та зупинки серця."'
+  Description: "Завдає {Value1} |Слабкості|.\n|Обмеження【{DeckCounter}】|"
+  Name: Ліхтарик
+RabbitFoot:
+  FlavorText: Хтось може думати собі, що Щаслива Кроляча Лапка зробить його удачливим.
+    Але насправді, лише вже удачливі люди можуть отримати собі Кролячу Лапку.
+  Name: Щаслива Кроляча Лапка
+  Description: '|Наприкінці битви|: Якщо {SelfName} не |Знищена|, отримуєш {Value1}
+    <sprite="Point" name="Gold">.'
+VampireShoot1:
+  Description: "Завдає {Damage} шкоди.\nВідновлює {Value1} здоров'я."
+  Name: Диявольський Постріл
+  FlavorText: '"Я дістанусь твоєї крові навіть попри блок!"'
+GainTreasure:
+  Description: Отримуєш {Value1} <sprite="Point" name="Gold">.
+  Name: Дощ з Грошей
+LigeluCard:
+  Description: "Отримуєш {Block} |Блоку|.\nОтримуєш {Value1} <sprite=\"Point\" name=\"\
+    Power\">."
+  Name: Люмінесцентна Ніч
+PoisonTeaParty:
+  Description: "{PlayerName} відновлює {Value1} здоров'я та отримує {Value1} |Отрути|.\n\
+    Завдає {Value2} |Отрути|."
+  Name: Підозріле Чаювання
+PaluxiCurse:
+  FlavorText: Сьогодні уночі, о 02:30, неназвану берегиню мосту, Пані Мізу****, було
+    спіймано на гарячому місцевою жрицею, за невідповідну поведінку в храмі.
+  Description: "Завдає {Damage} шкоди.\nЗавдає {Value1} |Слабкості| та |Вразливості|.\n\
+    Додає випадкове |Лихо| до стосу скиду. |d:(Воно зникне після кінця битви.)|"
+  Name: Повернення Озлоби
+KisumeAttack:
+  Name: Дух Цеберця
+  Description: "Отримуєш {Block} |Блоку|.\nЗавдає {Damage} шкоди.\nЯкщо {SelfName}\
+    \ було зіграно першою картою цього ходу, вона завдає {Value1} |Цілі|."
+FangxiangAttack:
+  Name: Руйнівна Токсичність
+  Description: "Якщо ціль під дією |Отрути|, завдає {Damage} шкоди {Value2:plural\
+    \ one='% раз' few='% рази' many='% разів'}.\nВ іншому ж випадку, завдає {Value1}\
+    \ |Отрути|."
+LimaoAttack:
+  Name: Півмісячний Помпоколін
+  Description: "Завдає {Damage} шкоди усім ворогам.\nОтримуєш {GainMana}.\n|Зростання|:\
+    \ Отримуєш ще {Mana}."
+AyaWindGirl:
+  DetailText: Ефект |Дівка Вітру Божого| не дозволятиме |Маневру| опуститись нижче
+    відповідного рівня |Дівки Вітру Божого| на початку ходу.
+  Name: Дівка Вітру Божого
+  Description: Отримуєш {Value1} |Дівка Вітру Божого|.
+SanaeRestart:
+  Description: "Повертає стос скиду та обрані карти в руці до стосу добору. Перемішує\
+    \ стос добору.\nДобираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
+    Отримуєш {Mana}."
+  Name: День, Коли Море Розділилось
+ZhenmiaowanAbility:
+  Description: Усі карти коштуватимуть {Mana} менше до кінця битви.
+  Name: Магія Молотка
+ToolHeal:
+  FlavorText: Під час інцидентів якось незручно виходити на вулицю, тому каппи користуються
+    нагодою, аби завалитись у супермаркет та безсовісно викупити усі консервовані
+    огірки.
+  Description: "Відновлює {Value1} здоров'я.\n|Обмеження【{DeckCounter}】|"
+  Name: Консерва
+AnimalSpirit:
+  Name: Дорога Звіриного Пекла
+  UpgradedDescription: "Добираєш {Value1:plural one='% карту' few='% карти' many='%\
+    \ карт'}.\nУсі карти в руці стають одержимими тваринним духом, отримуючи один\
+    \ з ефектів на вибір:\n|r:Вовк|: Отримують |Відлуння|.\n|g:Видра|: Отримують |Поповнення|.\n\
+    |p:Орел|: |Тимчасова вартість| {Mana}."
+  Description: "Усі карти в руці стають одержимими тваринним духом, отримуючи один\
+    \ з ефектів на вибір:\n|r:Вовк|: Отримують |Відлуння|.\n|g:Видра|: Отримують |Поповнення|.\n\
+    |p:Орел|: |Тимчасова вартість| {Mana}."
+JunkoNightmare:
+  UpgradedDescription: "Вибери до {Value2:plural one='% карти' other='% карт'}.\n\
+    Завдає {Damage} шкоди усім ворогам {Value1:plural one='% раз' few='% рази' many='%\
+    \ разів'}.\n|Знищує| усі карти в руці, окрім вибраних. Додає відповідну кількість\
+    \ |Чистоти| в руку."
+  Name: Пронизливий Кошмар
+  Description: "Завдає {Damage} шкоди усім ворогам {Value1:plural one='% раз' few='%\
+    \ рази' many='% разів'}.\n|Знищує| усі карти в руці. Додає відповідну кількість\
+    \ |Чистоти| в руку."
+ToolMicai:
+  Name: Оптичний Камуфляж
+  Description: "Отримуєш |Оптичний Камуфляж| на {Value1:plural one='% хід' few='%\
+    \ ходи' many='% ходів'}.\n|Обмеження【{DeckCounter}】|"
+  FlavorText: '"Користуючись цим товаром, будь ласка, утримуйтесь від участі в небезпечних
+    заходах, таких як банджі-джампінг."'
+WanderingSoul:
+  Name: Мандрівна Душа
+  Description: "Отримуєш |Бездоганність| на {Value1:plural one='% хід' few='% ходи'\
+    \ many='% ходів'}.\nЦя карта все ще в розробці.\nБудь ласка, стежте за майбутніми\
+    \ оновленнями."
+VampireShoot2:
+  Description: "Завдає {Damage} шкоди.\nВідновлює {Value1} здоров'я."
+  FlavorText: "\"Я дістанусь твоєї крові навіть попри бар'єр!\" —— Ціна становлення\
+    \ вампіром це запалення ясен."
+  Name: Диявольський Дощ
+MedicineGarden:
+  Name: Сад Меланхолії
+  Description: "Усі вороги відновлюють {Value1} здоров'я.\nЗавдає {Value1} |Отрути|\
+    \ усім ворогам."
+ToolAttack:
+  Description: "Завдає {Damage} шкоди.\n|Обмеження【{DeckCounter}】|"
+  Name: Водяний Пістолет
+ToolBlock:
+  Name: Балістичний Щит
+  Description: "Отримуєш {Block} |Блоку|.\n|Обмеження【{DeckCounter}】|"
+ToolMana:
+  FlavorText: Виготовляється використовуючи свіжовичавлені огірки з Яру Ґенбу. "Смак
+    дитинства." — Б'якурен Хіджірі
+  Name: Енергетичний Напій
+  Description: "Отримуєш {Mana}.\n|Обмеження【{DeckCounter}】|"
+ToolFirstAid:
+  Name: Аптечка
+  Description: "Усуває всі негативні ефекти з {PlayerName:g}.\nВідновлює {Value1}\
+    \ здоров'я.\n|Обмеження【{DeckCounter}】|"
+LifeGame:
+  Description: "Карти пообіч {SelfName} |тимчасово коштуватимуть| {Mana}.\nЯкщо цільова\
+    \ карта це |Лихо| чи карта Статусу, вона |Знищується| натомість."
+  Name: Гра Життя
+  UpgradedDescription: "Карти пообіч {SelfName} |тимчасово коштуватимуть| {Mana}.\
+    \ Також вони |Покращаться|.\nЯкщо цільова карта це |Лихо| чи карта Статусу, вона\
+    \ |Знищується| натомість."
+ZoufangSnake:
+  Name: Віра Уродженому Богу
+  Description: "Втрачаєш {Value1} здоров'я.\nВибери 1 з {Value2} випадкових нейтральних\
+    \ Рідкісних карт |Таланту| аби додати в руку. Вона |тимчасово коштуватиме| {Mana}."
+  DetailText: Ці |e:випадкові карти| ігноруватимуть обмеження загальної мани та її
+    кольору.
+JingyeGraze:
+  Name: Хаотичний Листопад
+  Description: "Отримуєш {Value1} |Маневру|.\n{PlayerName} отримує {Value2} |Тимчасової\
+    \ Сили| відповідно кількості свого |Маневру|."
+ToolDraw:
+  Name: Рюкзак Постачань
+  Description: "Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
+    |Обмеження【{DeckCounter}】|"
+  FlavorText: '"Шановний користувач, відкриваючи цю сумку, будь ласка, ретельно обдумай,
+    що хочеш звідти дістати."'
+ToolVulnerable:
+  Name: Заряджений Бубон
+  Description: "Завдає {Value1} |Вразливості|.\n|Обмеження【{DeckCounter}】|"
+ToolUpgrade:
+  FlavorText: Всього лиш треба вставити це у мозок аби отримати надзвичайні сили.
+    Єдине питання — як?
+  Name: Дискета
+  Description: "|Покращує| усі карти в руці до кінця битви.\n|Обмеження【{DeckCounter}】|"
+MoonPurify:
+  Name: ''
+ToolAmulet:
+  Name: Одноразовий Амулет
+  Description: "Отримуєш {Value1} |Амулет|.\n|Обмеження【{DeckCounter}】|"
+ToolExile:
+  Name: Розумний Робот-Пилосос
+  Description: "|Знищ| бажану кількість карт в руці.\n|Обмеження【{DeckCounter}】|"
+  FlavorText: Розумний робот-пилосос, що прибирає пилюку по хаті викрикуючи "ЗНИЩИТИ!
+    ЗНИЩИТИ!"
+ToolMaxHp:
+  Name: Хрумкий Огірок
+  Description: "Отримуєш {Value1} до максимального здоров'я.\n|Обмеження【{DeckCounter}】|"
+ToolInvincible:
+  Name: Ангельське Вбрання
+  Description: "Отримуєш |Бездоганність| на {Value1:plural one='% хід' few='% ходи'\
+    \ many='% ходів'}.\n|Обмеження【{DeckCounter}】|"
+ToolDroneBlock:
+  Name: Механічне Ядро
+  Description: "Отримуєш {Value1} |Оборонної Матриці|.\n|Обмеження【{DeckCounter}】|"
+ModuoluoSeasons:
+  Description: Випадково додає |Сплески|, |Полум'я| та |Літні Квіти| допоки не заповниться
+    рука.
+  Name: Збіглі Пори Року
+ToolRandomTool:
+  FlavorText: ' "Говорить Пеквод, потрібне підкріплення!"'
+  Name: Тактична Рація
+  Description: "Вибери 1 з {Value1} випадкових карт |Знарядь| аби додати в руку. Отримана\
+    \ карта буде |Копією| та може бути використана лише один раз.\n|Обмеження【{DeckCounter}】|"
