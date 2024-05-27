@@ -1604,10 +1604,6 @@ LeidiFriend:
   ExtraDescription2: '{FriendU}对所有敌人造成 {Damage} 点伤害，施加|寒冷|。'
   FlavorText: 冬日将至。冬日已来。再战冬日。重返冬日。
 
-IceBarrier:
-  Name: 寒冰护体
-  Description: 获得 {Value1} 层|寒冰甲|。
-
 ColdSnap:
   Name: 快速降温
   Description: 将抽牌堆中的前 {Value1} 张蓝色牌移入手中，每张获得 {Value2} 点|护盾|。
@@ -1617,8 +1613,14 @@ ColdSnap:
 
 IceSaber:
   Name: 塑冰成剑
-  Description: 弃掉至多 {Value1} 张蓝色手牌，将等量的|冰枪术|加入手中，它们|暂塑|为{Mana}，具有|放逐|、|虚无|。
+  Description: |-
+    造成 {Damage} 点伤害 {Value1} 次，施加|寒冷|。
+    打出时可以弃掉任意张数的蓝色手牌，每一张多攻击一次。
   FlavorText: 曾今有把名剑叫霜之哀伤。
+
+IceBarrier:
+  Name: 寒冰护体
+  Description: 获得 {Value1} 层|寒冰甲|。
 
 ZeroK:
   Name: 绝对零度
@@ -1671,6 +1673,10 @@ LarvaFriend:
   ExtraDescription1: '{FriendA}|升级|所有的手牌。'
   ExtraDescription2: '{FriendU}对所有敌人施加 {Value2} 层|中毒|，触发一次|中毒|伤害。'
   FlavorText: 和她握手后记得洗手。
+
+FriendDraw:
+  Name: 短暂的离别
+  Description: 使用|同伴|的|a:主动技能|或|u:终结技|时，抽 {Value1} 张牌。
 
 LilyFriend:
   Name: 春日降临莉莉白
@@ -1805,7 +1811,7 @@ GatherFairy:
 ForeverCool:
   Name: 永远凉爽的幻想四季
   Description: |-
-    使用|同伴|的|a:主动技能|或|u:终结技|后，对随机敌人施加|寒冷|。
+    使用|同伴|的|a:主动技能|或|u:终结技|时，对随机敌人施加|寒冷|。
     任意敌人受到|寒冷|时，手中随机的|同伴|牌获得 {Value1} 点|支援度|。
 
 HualiIce:
@@ -2436,6 +2442,7 @@ QingeDraw:
   Description: |-
     获得 {Block} 点|格挡|。
     抽 {Value1} 张牌，丢弃它们中费用总数大于一的牌。
+  FlavorText: 这招又被称为「找小鬼」。
 
 HuiyinMoreDraw:
   Name: 传道授业
@@ -3130,7 +3137,7 @@ SanaeSummonGod:
   Name: 召请建御名方神
   Description: 两回合后的回合开始时：获得 {Value1} 点|火力|和|灵力|。
   UpgradedDescription: 下回合开始时：获得 {Value1} 点|火力|和|灵力|。
-  FlavorText: 博丽灵梦无法闪避的技能。
+  FlavorText: 召请负责白吃白喝的神灵。
 
 PoorAttack:
   Name: 陷入贫困
@@ -3511,7 +3518,7 @@ AnimalSpirit:
   UpgradedDescription: |-
     抽 {Value1} 张牌。
     使其它手牌被动物灵附身，获得一种随机效果：
-    |r:狼|：赋予|回响|；|g:獭|：赋予|填充|；|b:鹰|：|暂塑|为{Mana}。
+    |r:狼|：赋予|回响|；|g:獭|：赋予|填充|；|p:鹰|：|暂塑|为{Mana}。
 
 PrismriverAll:
   Name: 合葬「棱镜协奏曲」
