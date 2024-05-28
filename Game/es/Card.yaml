@@ -851,10 +851,10 @@ ChunseXiaojing:
     |Sobregiro| {Value2}."
 ReimuInstant:
   Name: '"Sello de Fantasía -Traslación-"'
-  Description: "Inflige {Damage} de daño.\nFinaliza el turno. Luego {PlayerName} toma\
-    \ un turno extra.\n|Límite de Tiempo| {Mana}."
-  ExtraDescription1: "Inflige {Damage} de daño.\nFinaliza el turno. Después {PlayerName}\
-    \ toma un turno extra.\n|d:Límite de tiempo {Mana}.|"
+  Description: "Inflige {Damage} de daño.\nFinaliza el turno de {PlayerName}. Luego\
+    \ toma un turno extra.\n|Límite de Tiempo| {Mana}."
+  ExtraDescription1: "Inflige {Damage} de daño.\nFinaliza el turno. Luego, toma un\
+    \ turno extra.\n|d:Límite de tiempo {Mana}.|"
   FlavorText: 'Opinión del cliente: "La carta más buscada para que aparezca en la
     habilidad ''Sobre el Reino''."'
 WinterWarm:
@@ -1128,11 +1128,11 @@ FindCollection:
 BlazingStar:
   Name: Estrella Llameante
   Description: "Gana {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo del\
-    \ próximo turno de {PlayerName}.\nFinaliza el turno, luego toma un turno extra.\n\
-    |Límite de Tiempo| {Mana}."
+    \ próximo turno de {PlayerName}.\nFinaliza el turno de {PlayerName}, luego toma\
+    \ un turno extra.\n|Límite de Tiempo| {Mana}."
   ExtraDescription1: "Gana {Block} de |Bloqueo|. El |Bloqueo| no se pierde al comienzo\
-    \ del próximo turno de {PlayerName}.\nFinaliza el turno. Luego, toma un turno\
-    \ extra.\n|d:Límite de Tiempo {Mana}.|"
+    \ del próximo turno de {PlayerName}.\nFinaliza el turno de {PlayerName}. Luego,\
+    \ toma un turno extra.\n|d:Límite de Tiempo {Mana}.|"
 ChargingToMana:
   Name: Conversión de Cargas
   Description: Pierde todas las |Cargas|. Por cada |Carga| perdida de esta manera,
@@ -1264,8 +1264,8 @@ SakuyaClock:
     esta función.
 LunaDial:
   Name: Crono-Espacio Privado
-  Description: "Finaliza el turno. Luego, toma un turno extra.\n|Cuando {SelfName}\
-    \ entra en la mano|: {SelfName} cuesta {Mana} menos en este combate."
+  Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\n|Cuando\
+    \ {SelfName} entra en la mano|: {SelfName} cuesta {Mana} menos en este combate."
 SakuyaShop:
   Name: Compra de Materiales
   Description: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
@@ -1292,15 +1292,15 @@ TimeLord:
   Description: Gana {Value1} de |Pulso Temporal|.
   Name: Dominación del Tiempo
 TimeWalk:
-  ExtraDescription1: "|d:Finaliza el turno. Luego, {PlayerName} toma un turno extra.|\n\
+  ExtraDescription1: "|d:Finaliza el turno de {PlayerName}. Luego, toma un turno extra.|\n\
     Sólo el primer {SelfName} tendrá el efecto en cada combate."
-  Description: "Finaliza el turno. Luego, {PlayerName} toma un turno extra.\nSólo\
+  Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\nSólo\
     \ el primer {SelfName} tendrá el efecto en cada combate."
   Name: Paseo en el Tiempo
   FlavorText: Incluso cuando su coste se nerfeo, sigue siendo demasiado fuerte.
 LunaClock:
-  Description: Finaliza el turno. Luego, toma un turno extra. Los ataques de {PlayerName}
-    no infligen daño durante ese turno extra.
+  Description: Finaliza el turno de {PlayerName}. Luego, toma un turno extra. Los
+    ataques de {PlayerName} no infligen daño durante ese turno extra.
   Name: Reloj Lunar
 PerfectServant:
   Name: Sirvienta Perfecta
@@ -1338,12 +1338,12 @@ SilverBlade:
   FlavorText: Señorita Sakuya, por favor lléveme a la Dimensión Dorada.
 ClockCorpse:
   Name: Cadáver del Reloj
-  Description: Finaliza el turno. Luego, toma un turno extra. No se pueden robar cartas
-    fuera de la fase de robo durante ese turno extra.
+  Description: Finaliza el turno de {PlayerName}. Luego, toma un turno extra. No se
+    pueden robar cartas fuera de la fase de robo durante ese turno extra.
 ExtraTurnEveryone:
   Name: Expansión del Crono-Espacio
-  Description: "Finaliza el turno. Luego, toma un turno extra.\nLos enemigos también\
-    \ toman un turno extra la próxima vez que sean su turno."
+  Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\nLos\
+    \ enemigos también toman un turno extra la próxima vez que sean su turno."
 SakuyaTea:
   ExtraDescription1: "Roba {Value1:plural one='% carta' other='% cartas'}.\n|d:Debut:\
     \ Cura {Value2} de vida. {SelfName} cuesta {Mana} menos en este combate.|"
@@ -1390,8 +1390,8 @@ DropToKnife:
 BrokenTimeline:
   Name: Línea Temporal Rota
   FlavorText: No puedo aguantar en esta línea temporal, siguiente partida.
-  Description: Finaliza el turno. Luego, toma un turno extra. No se ganara maná de
-    la base de maná al comienzo de este turno extra.
+  Description: Finaliza el turno de {PlayerName}. Luego, toma un turno extra. No se
+    ganara maná de la base de maná al comienzo de este turno extra.
 SakuyaSpeedup:
   Name: Acelerar el Tiempo
   Description: Duplica el |Pulso Temporal| actual.
@@ -1440,10 +1440,10 @@ SpecialClock:
 SakuyaDio:
   Name: ¡Tu eres el Siguiente!
   Description: "Cuando un |Cuchillo Arrojadizo| es usado, ahora también aplicara {Value1}\
-    \ de |Marcado|.\nFinaliza el turno. Luego, {PlayerName} toma un turno extra. Durante\
-    \ ese turno extra, agrega |{Value2:plural one='% Cuchillo Arrojadizo' other='%\
-    \ Cuchillos Arrojadizos'}| a la mano en lugar de robar cartas durante la fase\
-    \ de robo."
+    \ de |Marcado|.\nFinaliza el turno de {PlayerName}. Luego, toma un turno extra.\
+    \ Durante ese turno extra, agrega |{Value2:plural one='% Cuchillo Arrojadizo'\
+    \ other='% Cuchillos Arrojadizos'}| a la mano en lugar de robar cartas durante\
+    \ la fase de robo."
   FlavorText: ¡Tsugi wa kisamada!
 TunnelEffect:
   Name: Túnel Cuántico
@@ -1473,7 +1473,7 @@ BladePower:
     \ la mano)"
 SakuyaUsage2:
   Name: Uso Correcto de Sakuya
-  Description: Finaliza el turno. Luego, {PlayerName} toma un turno extra.
+  Description: Finaliza el turno de {PlayerName}. Luego, toma un turno extra.
   FlavorText: Hacer las tareas del hogar deteniendo el tiempo.
 NazrinBaota:
   FlavorText: "\"¡No uses grandes láseres en el túnel!\"\n- Kurodani Yamame"
@@ -1962,8 +1962,8 @@ HuiyinRetain:
     \ pila de descarte a la mano. |Retenlas| en este turno.\nFinaliza el turno de\
     \ {PlayerName}. Luego, toma un turno extra.\n|Límite de Tiempo| {Mana}."
   ExtraDescription1: "Devuelve hasta {Value1:plural one='% carta' other='% cartas'}\
-    \ de la pila de descarte a la mano. |Retenlas| en este turno.\nFinaliza el turno.\
-    \ Luego, {PlayerName} toma un turno extra.\n|d:Límite de Tiempo {Mana}|"
+    \ de la pila de descarte a la mano. |Retenlas| en este turno.\nFinaliza el turno\
+    \ de {PlayerName}. Luego, toma un turno extra.\n|d:Límite de Tiempo {Mana}|"
 BaitianCard:
   Name: Transmigración de Hieda
   Description: "Descarta todas las cartas de la mano y roba esa misma cantidad de\
@@ -2244,9 +2244,9 @@ YouxiangMoon:
     \ |Flor{Value1:plural one='' other='es'} de Verano| a la mano."
 IceSaber:
   Name: Hoja Forjada en Hielo
-  Description: "Descarta hasta {Value1} carta{Value1:plural one=' azul' other='s azules'}.\
-    \ Agrega esa misma cantidad de |Lanzas de Hielo| a la mano. |Cuestan temporalmente|\
-    \ {Mana} y tienen |Exilio| y |Etéreo|."
+  Description: "Inflige {Damage} de daño {Value1} ve{Value1:plural one='z' other='ces'}.\n\
+    Aplica |Frío|.\nDescarta cualquier numero de carta azules. Inflige ese daño una\
+    \ vez adicional por cada carta descartada de esta forma."
   FlavorText: Había una vez una espada famosa llamada "Frostmourne".
 XiangziEcho:
   Name: Eco de la Montaña
@@ -2329,9 +2329,9 @@ HualiIce:
     \ en este turno, {SelfName} cuesta {Mana}."
 ForeverCool:
   Name: Eterna Fría Época de Fantasía
-  Description: "Después de que una |Compañera| use la |a:Habilidad Activa| o |u:Habilidad\
-    \ Definitiva|, aplica |Frío| a un enemigo aleatorio.\nSiempre que un enemigo gana\
-    \ |Frío|, una |Compañera| aleatoria en la mano gana {Value1} de |Influencia|."
+  Description: "Cuando la |Compañera| use la |a:Habilidad Activa| o |u:Habilidad Definitiva|,\
+    \ aplica |Frío| a un enemigo aleatorio.\nSiempre que un enemigo gana |Frío|, una\
+    \ |Compañera| aleatoria en la mano gana {Value1} de |Influencia|."
 IceBarrier:
   Name: Barrera de Hielo
   Description: Gana {Value1} de |Armadura de Escarcha|.
@@ -2763,12 +2763,12 @@ ShirenKunchong:
 AnimalSpirit:
   Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
     \ de los animales, otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan\
-    \ |Eco|.\n|g:Nutria|: Ganan |Reponer|.\n|b:Águila|: |Cuestan temporalmente| {Mana}."
+    \ |Eco|.\n|g:Nutria|: Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente| {Mana}."
   Name: Ruta del Reino Animal del Infierno
   UpgradedDescription: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nTodas\
     \ las demás cartas en la mano estarán poseídas por los espíritus de los animales,\
     \ otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan |Eco|.\n|g:Nutria|:\
-    \ Ganan |Reponer|.\n|b:Águila|: |Cuestan temporalmente| {Mana}."
+    \ Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente| {Mana}."
 YukariFriend:
   Name: Yukari, Frontera de la Fantasía
   ExtraDescription2: '{FriendU}Al comienzo de cada turno de {PlayerName}, agrega una
@@ -3273,3 +3273,7 @@ LeaveMoodDraw:
   Name: Errante Inconsciente
 PassionAttackToDraw:
   Name: Amor Desinteresado
+FriendDraw:
+  Description: Siempre que se active la |a:Habilidad Activa| o |u:Habilidad Definitiva|
+    de una |Compañera|, roba {Value1} carta{Value1:plural one='' other='s'}.
+  Name: Breve Despedida
