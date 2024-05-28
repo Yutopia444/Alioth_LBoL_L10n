@@ -2428,9 +2428,10 @@ CirnoDraw:
     Au début du tour suivant, piochez {Value2} carte{Value2:plural one='' other='s'}."
 IceSaber:
   Name: Glace en Épée
-  Description: "Défaussez jusqu'à {Value1} carte{Value1:plural one=' bleue' other='s\
-    \ bleues'}. Ajoutez autant de |Lances de Glace| à la main. Elles |coûtent temporairement|\
-    \ {Mana} et ont |Exil| et |Éthéré|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1:plural\
+    \ one='' other='s'} fois.\nAppliquez |Froid|.\nDéfaussez n'importe quel nombre\
+    \ de cartes bleues. Infligez ces dégâts une fois supplémentaire pour chaque carte\
+    \ défaussée de cette façon."
   FlavorText: Il y avait autrefois une célèbre épée appelée Frostmourne.
 IceBarrier:
   Name: Bouclier de Glace
@@ -2952,7 +2953,7 @@ AnimalSpirit:
   UpgradedDescription: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n\
     Toutes les autres cartes en main sont possédées par des esprits animaux, ce qui\
     \ leur confère l'un des effets suivants :\n|r:Loup| : Gagne |Écho|.\n|g:Loutre|\
-    \ : Gagne |Renfloue|.\n|b:Aigle| : |Coûte temporairement| {Mana}."
+    \ : Gagne |Renfloue|.\n|p:Aigle| : |Coûte temporairement| {Mana}."
   Name: Chemin Bestial de l'Enfer
   Description: "Toutes les autres cartes en main sont possédées par des esprits animaux,\
     \ ce qui leur confère l'un des effets suivants :\n|r:Loup| : Gagne |Écho|.\n|g:Loutre|\
@@ -3441,6 +3442,7 @@ QingeDraw:
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nPiochez\
     \ {Value1} carte{Value1:plural one='' other='s'}.\nDéfaussez toutes les cartes\
     \ piochées de cette manière dont le coût total est supérieur à 1."
+  FlavorText: Cette astuce est aussi appelée « trouver le diablotin ».
 PatchouliGreenAttack:
   Name: Éclair de Printemps
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nNe peut\
@@ -3508,3 +3510,7 @@ PassionAttackToDraw:
   Name: Amour Désintéressé
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     Entrez dans l'état |Passion|.\nMélangez cette carte dans la pioche."
+FriendDraw:
+  Name: Brève Séparation
+  Description: Chaque fois que la |a:compétence active| ou |u:ultime| d'une |alliée|
+    est activé, piochez {Value1} carte{Value1:plural one='' other='s'}.
