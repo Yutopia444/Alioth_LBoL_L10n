@@ -320,12 +320,12 @@ FreeFly:
 ReimuInstant:
   Description: |-
     Deal {Damage} damage.
-    End the turn. Then, {PlayerName} takes an extra turn.
+    End {PlayerName}'s turn. Then, take an extra turn.
     |Time Limit| {Mana}.
 
   Name: '"Fantasy Seal -Blink-"'
-  ExtraDescription1: "Deal {Damage} damage.\nEnd the turn. Then, {PlayerName} takes\
-    \ an extra turn.\n|d:Time Limit {Mana}.|"
+  ExtraDescription1: "Deal {Damage} damage.\nEnd {PlayerName}'s turn. Then, take an\
+    \ extra turn.\n|d:Time Limit {Mana}.|"
   FlavorText: 'Customer Review: "The most sought after card from Above the Realm."'
 DoubleLianhuadie:
   Description: Whenever {PlayerName} gains |Block| or |Barrier|, deal {Value1} damage
@@ -877,16 +877,16 @@ GroupOfKnife:
   Description: Deal {Damage} damage.
   Name: Sharp Knife Express
 ClockCorpse:
-  Description: End the turn. Then, take an extra turn. Cards can't be drawn outside
-    of the draw step during that extra turn.
+  Description: End {PlayerName}'s turn. Then, take an extra turn. Cards can't be drawn
+    outside of the draw step during that extra turn.
   Name: Clock Corpse
 StopTime:
   Description: When {PlayerName}'s turn ends, keep {Value1} random unspent mana instead
     of losing it.
   Name: Frozen Time
 LunaClock:
-  Description: End the turn. Then, take an extra turn. {PlayerName}'s attacks deal
-    no damage during that extra turn.
+  Description: End {PlayerName}'s turn. Then, take an extra turn. {PlayerName}'s attacks
+    deal no damage during that extra turn.
   Name: Luna Clock
 SpecialClock:
   Description: At the start of {PlayerName}'s turn, discard up to 1 card. Draw that
@@ -941,21 +941,21 @@ BackOfKnife:
     \ |Exiled Throwing Knives| from combat. Increase its damage by {Value1} for each\
     \ card removed this way."
 LunaDial:
-  Description: "End the turn. Then, take an extra turn.\n|When {SelfName} enters the\
-    \ hand|: {SelfName} costs {Mana} less this combat."
+  Description: "End {PlayerName}'s turn. Then, take an extra turn.\n|When {SelfName}\
+    \ enters the hand|: {SelfName} costs {Mana} less this combat."
   Name: Private Square
 SakuyaDio:
   Description: "When a |Throwing Knife| is played, apply {Value1} |Lock On|.\nEnd\
-    \ the turn. Then, {PlayerName} takes an extra turn. During that extra turn, add\
-    \ |{Value2:plural one='% Throwing Knife' other='% Throwing Knives'}| to the hand\
-    \ instead of drawing cards during the draw step."
+    \ {PlayerName}'s turn. Then, take an extra turn. During that extra turn, add |{Value2:plural\
+    \ one='% Throwing Knife' other='% Throwing Knives'}| to the hand instead of drawing\
+    \ cards during the draw step."
   Name: You Are Next!
 TimeWalk:
-  Description: "End the turn. Then, {PlayerName} takes an extra turn.\nOnly the first\
+  Description: "End {PlayerName}'s turn. Then, take an extra turn.\nOnly the first\
     \ {SelfName} will take effect each combat."
   Name: Time Walk
-  ExtraDescription1: "|d:End the turn. Then, {PlayerName} takes an extra turn.|\n\
-    Only the first {SelfName} will take effect each combat."
+  ExtraDescription1: "|d:End {PlayerName}'s turn. Then, take an extra turn.|\nOnly\
+    \ the first {SelfName} will take effect each combat."
   FlavorText: Even when its cost was nerfed, it was still too strong.
 BackToFuture:
   Description: "Swap the draw and discard piles.\nDraw {Value1:plural one='% card'\
@@ -987,8 +987,8 @@ PerfectServant:
     \ draw an extra card."
   Name: Perfect Servant
 ExtraTurnEveryone:
-  Description: "End the turn. Then, take an extra turn.\nEnemies also take an extra\
-    \ turn the next time it's their turn."
+  Description: "End {PlayerName}'s turn. Then, take an extra turn.\nEnemies also take\
+    \ an extra turn the next time it's their turn."
   Name: Inflation Square
 Shoot:
   Description: Deal {Damage} damage.
@@ -1778,10 +1778,11 @@ WhiteLaser:
   Name: Lightning Laser
 BlazingStar:
   Description: "Gain {Block} |Block|. |Block| is not lost at the start of {PlayerName}'s\
-    \ next turn.\nEnd the turn. Then, take an extra turn.\n|Time Limit| {Mana}."
+    \ next turn.\nEnd {PlayerName}'s turn. Then, take an extra turn.\n|Time Limit|\
+    \ {Mana}."
   Name: Blazing Star
-  ExtraDescription1: "Gain {Block} |Block|. |Retain Block|.\nEnd the turn. Then, {PlayerName}\
-    \ takes an extra turn.\n|d:Time Limit {Mana}.|"
+  ExtraDescription1: "Gain {Block} |Block|. |Retain Block|.\nEnd {PlayerName}'s turn.\
+    \ Then, take an extra turn.\n|d:Time Limit {Mana}.|"
 ChargingToMana:
   Description: Lose all |Charge|. For each |Charge| lost this way, gain {Mana} and
     draw a card.
@@ -2188,8 +2189,8 @@ SakuyaFuneral:
 BrokenTimeline:
   FlavorText: Can't deal with this timeline, next game.
   Name: Broken Timeline
-  Description: End the turn. Then, take an extra turn. No mana is gained from the
-    mana base at the start of this extra turn.
+  Description: End {PlayerName}'s turn. Then, take an extra turn. No mana is gained
+    from the mana base at the start of this extra turn.
 SakuyaDetective:
   Name: All-Points Bulletin
   Description: "Draw {Value2} card{Value2:plural one='' other='s'}.\nWhen playing\
@@ -2259,7 +2260,7 @@ AutoKnife:
     Add {Value1} |Throwing Kni{Value1:plural one='fe' other='ves'}| to the hand."
 SakuyaUsage2:
   Name: Correct Sakuya Usage
-  Description: End the turn. Then, {PlayerName} takes an extra turn.
+  Description: End {PlayerName}'s turn. Then, take an extra turn.
   FlavorText: To do housework while stopping time.
 IceLance:
   Name: Ice Lance
@@ -2353,7 +2354,7 @@ UnlimitedTime:
   FlavorText: Excuse me, I have unlimited time.
 ForeverCool:
   Name: Ever Cool Seasonal Fantasia
-  Description: "After a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is activated,\
+  Description: "When a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is activated,\
     \ apply |Cold| to a random enemy.\nWhenever an enemy gains |Cold|, a random |Teammate|\
     \ in the hand gains {Value1} |Unity|."
 CirnoInForest:
