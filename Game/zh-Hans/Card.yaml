@@ -948,7 +948,7 @@ PatchouliFriend:
   Name: 炼金术士帕秋莉
   Description: '{FriendP}将 {PassiveColor} 点随机的法力转化为|彩色|。'
   ExtraDescription1: '{FriendA}获得 {Value1} 点|火力|和|灵力|，获得 {Power} 点<sprite="Point" name="Power">。'
-  ExtraDescription2: '{FriendU}将 {Value2} 张|不稳定药剂|加入手中。'
+  ExtraDescription2: '{FriendU}将 {Value2} 张|不稳定魔药|加入手中。'
   FlavorText: 「摇，摇，晃，摇。」
 
 MoguMaster:
@@ -1516,6 +1516,17 @@ ShiverArmor:
     获得 {Block} 点|格挡|。
     获得 {Value1} 层|寒冰甲|。
 
+FrostGarden:
+  Name: 冷雾花园
+  Description: |-
+    对所有敌人施加|寒冷|。
+    如果手中有已召唤的|同伴牌|，{SelfName}费用为{Mana}。
+  UpgradedDescription: |-
+    对所有敌人施加|寒冷|。
+    下回合开始时再次生效。
+    如果手中有已召唤的|同伴牌|，{SelfName}费用为{Mana}。
+  FlavorText: 免费的空调。
+
 GlacialSpike:
   Name: 小小冰川
   Description: |-
@@ -1535,13 +1546,6 @@ BlueRose:
   Description: |-
     获得 {Block} 点|格挡|。
     造成 {Damage} 点伤害。
-
-FrostGarden:
-  Name: 冷雾花园
-  Description: |-
-    对所有敌人施加|寒冷|。
-    如果手中有已召唤的|同伴|牌，下回合再次生效。
-  FlavorText: 免费的空调。
 
 SummerIce:
   Name: 夏日冰沙
@@ -1795,7 +1799,7 @@ MinengZhuru:
   Name: 秘能注入
   Description: |-
     |同伴|牌的|f:被动技能|生效时，额外生效一次。
-    (支援度变化不会额外生效)
+    支援度变化不会额外生效。
 
 GatherFairy:
   Name: 妖精集结
@@ -1934,7 +1938,9 @@ FindInspiration:
 
 InspirationCard:
   Name: 灵感
-  Description: '|进入手中时|：转变为一张随机颜色的|e:灵感牌|，生效然后|放逐|自身。'
+  Description: |-
+    |进入手中时|：转变为一张随机颜色的|e:灵感牌|，生效然后|放逐|自身。
+    在抽牌阶段具有|填充|。
 
 InspirationBlack:
   Name: 黑色灵感
@@ -1956,7 +1962,7 @@ InspirationRed:
   Name: 红色灵感
   Description: 对所有敌人造成 {Damage} 点伤害 {Value1} 次。
 
-KoishiZeroDefense:
+PassionDefense:
   Name: 本能之爱
   Description: |-
     获得 {Block} 点|格挡|。
@@ -1988,6 +1994,22 @@ LeaveMoodGraze:
     获得 {Value1} 层|闪避|。
     离开当前的|心境|。
 
+MoodAttack:
+  Name: 心境连击
+  Description: |-
+    造成 {Damage} 点伤害。
+    当{PlayerName}转化|心境|时，从弃牌堆回到手中。
+
+PassionVulnerable:
+  Name: 本我的解放
+  Description: |-
+    |热情|：对所有敌人施加 {Value1} 回合|易伤|。
+    否则，进入|热情|。
+
+NextTurnPassion:
+  Name: 被厌恶者的哲学
+  Description: '{PlayerName}的下回合开始时，进入|热情|，抽 {Value1} 张牌。'
+
 PassionAttackToDraw:
   Name: 忘我之爱
   Description: |-
@@ -1995,11 +2017,57 @@ PassionAttackToDraw:
     进入|热情|。
     将这张牌洗入抽牌堆。
 
+PassionDraw:
+  Name: 热情抽牌
+  Description: 每当{PlayerName}进入|热情|时，抽 {Value1} 张牌。
+
+PeaceEndTurn:
+  Name: 回神
+  Description: |-
+    进入|平静|。
+    结束{PlayerName}的回合。
+  UpgradedDescription: |-
+    从弃牌堆中选择至多 {Value1} 张牌移回手中，|保留|它一回合。
+    进入|平静|。
+    结束{PlayerName}的回合。
+  FlavorText: 「我这是在哪儿？」
+
+BabyDream:
+  Name: 胎儿之梦
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    进入|平静|。
+
+PeaceDraw:
+  Name: 掌控自我
+  Description: |-
+    |平静|：抽 {Value1} 张牌。
+    否则，进入|平静|。
+
+PeaceBlock:
+  Name: 平静格挡
+  Description: '{PlayerName}的回合结束时如果处于|平静|，获得 {Value1} 点|格挡|。'
+
 LeaveMoodDraw:
   Name: 无意识的云游
   Description: |-
     抽 {Value1} 张牌。
     离开当前的|心境|。
+
+MoodChangeBlock:
+  Name: 心灵壁垒
+  Description: 每当{PlayerName}转化|心境|时，获得 {Value1} 点|格挡|。
+
+PsycheLock:
+  Name: 心灵枷锁
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
+    获得{Mana}。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。（剩余 {Count} 种未进入）
+  NonbattleDescription: |-
+    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
+    获得{Mana}。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
 
 YaoguaiNaodianbo:
   Name: 妖怪脑电波
@@ -2024,12 +2092,6 @@ QinchunPanni:
   ExtraDescription2: |-
     |不在热恋中|：对生命值最低的敌人造成 {Damage} 点|精准|的伤害。
     |d:热恋中：获得 {Block} 点格挡。|
-
-PiankeNingjing:
-  Name: 回神
-  Description: |-
-    获得 {Block} 点|格挡|。
-    如可能，离开|心境|，并抽取 {Value1} 张卡牌。
 
 DNARain:
   Name: DNA霰弹枪
@@ -2109,17 +2171,6 @@ JiyiShitihua:
     复制手中的一张的攻击牌，复制品费用为{Mana}且附带|放逐|。
     造成{Damage}点伤害。
 
-SelfControl:
-  Name: 掌控自我
-  Description: 每次在|热恋|状态中造成攻击伤害，获得 {Value1} 点|护盾|。
-  UpgradedDescription: |-
-    每次在|热恋|状态中造成攻击伤害，获得 {Value2} 点|护盾|。
-    进入|热恋|。
-
-BabyDream:
-  Name: 胎儿之梦
-  Description: 所有|基本|卡的费用暂塑为{Mana}，并附带|回响|。
-
 PerfectCrime:
   Name: 完美作案
   Description: |-
@@ -2166,15 +2217,6 @@ QiangweiDiyu:
     每当打出一张|基本|牌时，获得{Value2}层|蔷薇地狱|，抽1张牌。
     （蔷薇地狱：每当一张基本牌进入手中时，对随机敌人造成当前层数的伤害。）
 
-SiwangLaiDian:
-  Name: 恐怖的可爱来电
-  Description: |-
-    选择并|放逐|手牌中的一张|攻击牌|，将 {Value1} 张复制置入抽牌堆顶部。
-    如果选择了|基本牌|，则使复制附带|填充|。
-  UpgradedDescription: |-
-    选择并|放逐|一张手牌，将 {Value1} 张复制置入抽牌堆顶部。
-    如果选择了|基本牌|，则使复制附带|填充|。
-
 WuyunJiekong:
   Name: 五蕴皆空
   Description: |-
@@ -2187,11 +2229,30 @@ MirrorTest:
     获得 {Shield} 点|护盾|。
     |在手中|：打出相邻的手牌后，如果打出的是一张|攻击牌|，将{SelfName}转变为打出牌的复制，并获得 {Shield} 点|护盾|。
 
+EnterEnlight:
+  Name: 进入神游
+  Description: 进入|神游|。
+
 QingxingMeng:
   Name: 意识下潜
   Description: |-
     {PlayerName}的回合开始时，将 {Value1} 张|完全随机|的|稀有|牌加入手中，它暂塑为{Mana}，具有|放逐|、|虚无|。
     {PlayerName}的每个回合只能打出 {Limit} 张|稀有|牌。
+
+LunaticPassion:
+  Name: 疯狂之爱
+  Description: |-
+    |热情|状态下的额外伤害比例改为 {Percentage}%。
+    进入|热情|。
+
+SiwangLaiDian:
+  Name: 恐怖的可爱来电
+  Description: |-
+    选择并|放逐|手牌中的一张|攻击牌|，将 {Value1} 张复制置入抽牌堆顶部。
+    如果选择了|基本牌|，则使复制附带|填充|。
+  UpgradedDescription: |-
+    选择并|放逐|一张手牌，将 {Value1} 张复制置入抽牌堆顶部。
+    如果选择了|基本牌|，则使复制附带|填充|。
 
 AliceAttackW:
   Name: 未来文乐
@@ -2769,6 +2830,12 @@ SunflowerDefense:
     获得 {Block} 点|格挡|。
     将 {Value1} 张|盛夏之花|加入手中。
 
+YouxiangMoon:
+  Name: 花鸟风月
+  Description: |-
+    {PlayerName}的回合开始时，获得{Mana}。
+    将 {Value1} 张|盛夏之花|加入手中。
+
 DizangLove:
   Name: 即席菩提
   Description: |
@@ -2804,12 +2871,6 @@ TakaneDefense:
 GreenLotus:
   Name: 荷塘月色
   Description: 获得{Mana}。
-
-YouxiangMoon:
-  Name: 花鸟风月
-  Description: |-
-    {PlayerName}的回合开始时，获得{Mana}。
-    将 {Value1} 张|盛夏之花|加入手中。
 
 LimaoSchool:
   Name: 狸猫的变身学校
@@ -3549,6 +3610,9 @@ JunkoNightmare:
 ModuoluoSeasons:
   Name: 暴走的季节
   Description: 将随机的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
+  UpgradedDescription: |-
+    获得 {Value1} 点|火力|。
+    将随机的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
 
 YukariFriend:
   Name: 幻想的境界八云紫

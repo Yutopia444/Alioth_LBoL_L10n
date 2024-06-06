@@ -1030,45 +1030,60 @@ MoodPassion:
   Name: 热情
   Description: |-
     处于|热情|时，{PlayerName}造成和受到的攻击伤害提高 {Percentage}%。
-    |热情|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |热情|是一种|心境|，{PlayerName}只能处于一种|心境|中。
   Brief: |-
     处于|热情|时，{PlayerName}造成和受到的攻击伤害提高 {Percentage}%。
-    |热情|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |热情|是一种|心境|，{PlayerName}只能处于一种|心境|中。
 
 MoodPeace:
   Name: 平静
   Description: |-
     离开|平静|时获得{Mana}。
-    |平静|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |平静|是一种|心境|，{PlayerName}只能处于一种|心境|中。
   Brief: |-
     离开|平静|时获得{Mana}。
-    |平静|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |平静|是一种|心境|，{PlayerName}只能处于一种|心境|中。
 
 MoodEnlight:
   Name: 神游
   Description: |-
     进入|神游|时获得{Mana}。
     处于|神游|时，每打出一张牌抽一张牌。
-    |神游|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |神游|是一种|心境|，{PlayerName}只能处于一种|心境|中。
   Brief: |-
     进入|神游|时获得{Mana}。
     处于|神游|时，每打出一张牌抽一张牌。
-    |神游|是一种|心境|，{PlayerName}只能同时处于一种|心境|。
+    |神游|是一种|心境|，{PlayerName}只能处于一种|心境|中。
 
 InspirationSe:
   Name: 灵感迸发
   Description: '{PlayerName}累计 {TriggerLevel} 层|灵感迸发|时，将等量的|灵感|洗入抽牌堆，进入|神游|。'
   Brief: '{PlayerName}累计 {TriggerLevel} 层|灵感迸发|时，将等量的|灵感|洗入抽牌堆，进入|神游|。'
 
-NextTurnBenwo:
-  Name: 下回合进入热恋
-  Description: '{PlayerName}的回合结束开始时，进入|热恋|。'
-  Brief: '{PlayerName}的回合结束开始时，进入|热恋|。'
+NextTurnPassionSe:
+  Name: 被厌恶者的哲学
+  Description: '{PlayerName}的下回合开始时，进入|热情|，抽 {Level} 张牌。'
+  Brief: '{PlayerName}的下回合开始时，进入|热情|，抽若干张牌。'
 
-NextTurnChaowo:
-  Name: 下回合进入平静
-  Description: '{PlayerName}的回合结束开始时，进入|平静|。'
-  Brief: '{PlayerName}的回合结束开始时，进入|平静|。'
+PassionDrawSe:
+  Name: 热恋抽牌
+  Description: 每当{PlayerName}进入|热情|时，抽 {Level} 张牌。
+  Brief: 每当{PlayerName}进入|热情|时，抽若干张牌。
+
+PeaceBlockSe:
+  Name: 平静格挡
+  Description: '{PlayerName}的回合结束时如果处于|平静|，获得 {Level} 点|格挡|。'
+  Brief: '{PlayerName}的回合结束时如果处于|平静|，获得若干点|格挡|。'
+
+MoodChangeBlockSe:
+  Name: 心灵壁垒
+  Description: 每当{PlayerName}转化|心境|时，获得 {Level} 点|格挡|。
+  Brief: 每当{PlayerName}转化|心境|时，获得若干点|格挡|。
+
+LunaticPassionSe:
+  Name: 疯狂之爱
+  Description: '|热情|的伤害提高改为 {Percentage}%。'
+  Brief: '|热情|的伤害提高改为 {Percentage}%。'
 
 Constrain:
   Name: 抑制
@@ -1109,11 +1124,6 @@ LongLove:
   Name: 长相思
   Description: 所有|基本|卡的数值提高 {Level}。
   Brief: 所有|基本|卡的数值提高。
-
-SelfControlSe:
-  Name: 掌控自我
-  Description: 每次在|热恋|状态中造成攻击伤害，获得 {Level} 点|护盾|。
-  Brief: 每次在|热恋|状态中造成攻击伤害，获得|护盾|。
 
 ZhuozhuangChengzhangSe:
   Name: 茁壮成长
