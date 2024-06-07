@@ -802,8 +802,6 @@ StarFriendSe:
   Brief: Khi {SourceCardName} gây sát thương, yểm |Bị Nhắm Tới|.
   Name: Sao Trời Giăng Lưới
   Description: Khi {SourceCardName} gây sát thương, yểm {Level} |Bị Nhắm Tới|.
-NextTurnChaowo:
-  Description: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Bình Thản|.
 Immune:
   Name: Rào Cản Băng Giá
   Brief: '{OwnerName} miễn nhiễm sát thương.'
@@ -822,8 +820,6 @@ ChaofanyinSe:
     one='lá' other='những lá'} mới này |tạm thời tốn| {Mana} và sở hữu thuộc tính
     |Trục Xuất|.
   Name: Tri Giác Siêu Nhạy
-SelfControlSe:
-  Name: Kiểm Soát Bản Thân
 ZhuozhuangChengzhangSe:
   Description: Khi {PlayerName} kết thúc lượt, thêm {Level} lá |Sức Sống| lên tay.
   Name: Sinh Trưởng Khỏe Mạnh
@@ -846,8 +842,6 @@ ForeverCoolSe:
     \ hoạt, yểm |Lạnh Giá| lên một vài kẻ địch ngẫu nhiên.\nMỗi khi một kẻ địch bị\
     \ yểm |Lạnh Giá|, một vài lá |Đồng Đội| ngẫu nhiên trên tay nhận 1 |Trợ Sức|."
   Name: Bốn Mùa Huyễn Ảo Mãi Mát Mẻ
-NextTurnBenwo:
-  Brief: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Say Mê|.
 KongxiangshangSe:
   Description: Sau khi chơi một lá |Phòng Thủ Cơ Bản|, tiến vào |Bình Thản|.
   Brief: Sau khi chơi một lá |Phòng Thủ Cơ Bản|, tiến vào |Bình Thản|.
@@ -1127,6 +1121,8 @@ ColdHeartedSe:
     \ Giá|.\n|Dòng Máu Băng Lãnh| bị xóa bỏ khi {OwnerName} kết thúc lượt."
 Constrain:
   Name: Ức Chế
+  Description: Triệt tiêu |Khiên| hoặc |Hộ Giáp|.
+  Brief: Triệt tiêu |Khiên| hoặc |Hộ Giáp|.
 QingxingMengSe:
   Name: Giấc Mơ Sáng Suốt
   Description: "Vào đầu lượt của {PlayerName}, thêm {Level} lá bài |hoàn toàn ngẫu\
@@ -1155,7 +1151,11 @@ MoreDraw:
   Brief: Vào bước bốc bài đầu lượt, bốc thêm một vài lá.
   Name: Truyền Đạo Thụ Nghiệp
 InspirationSe:
-  Name: Linh Cảm Chợt Đến
+  Name: Linh Cảm Chợt Lóe
+  Brief: Khi {PlayerName} nhận đủ {TriggerLevel} cộng dồn |Linh Cảm Chợt Lóe|, thêm
+    một số lượng tương đương các lá |Linh Cảm| lên tay và tiến vào |Mê Tẩu|.
+  Description: Khi {PlayerName} nhận đủ {TriggerLevel} cộng dồn |Linh Cảm Chợt Lóe|,
+    thêm một số lượng tương đương các lá |Linh Cảm| lên tay và tiến vào |Mê Tẩu|.
 ZhenmiaowanAbilitySe:
   Name: Ma Thuật Của Vồ Nhỏ
   Description: Các lá bài tốn ít đi {Mana}.
@@ -1166,3 +1166,55 @@ FriendDrawSe:
     |Đồng Đội|, bốc {Level} lá.
   Brief: Mỗi khi kích hoạt |a:Kỹ Năng Chủ Động| hoặc |u:Tuyệt Kỹ| của một lá |Đồng
     Đội|, bốc một vài lá.
+MoodPassion:
+  Name: Nhiệt Tình
+  Brief: "Trong |Nhiệt Tình|, {PlayerName} gây và nhận thêm {Percentage}% sát thương.\n\
+    |Nhiệt Tình| là một |Tâm Trạng|, {PlayerName} chỉ có thể ở trong duy nhất một\
+    \ |Tâm Trạng| cùng một lúc."
+  Description: "Trong |Nhiệt Tình|, {PlayerName} gây và nhận thêm {Percentage}% sát\
+    \ thương.\n|Nhiệt Tình| là một |Tâm Trạng|, {PlayerName} chỉ có thể ở trong duy\
+    \ nhất một |Tâm Trạng| cùng một lúc."
+MoodPeace:
+  Description: "Khi rời khỏi |Bình Thản|, nhận {Mana}.\n|Bình Thản| là một |Tâm Trạng|,\
+    \ {PlayerName} chỉ có thể ở trong duy nhất một |Tâm Trạng| cùng một lúc."
+  Brief: "Khi rời khỏi |Bình Thản|, nhận {Mana}.\n|Bình Thản| là một |Tâm Trạng|,\
+    \ {PlayerName} chỉ có thể ở trong duy nhất một |Tâm Trạng| cùng một lúc."
+  Name: Bình Thản
+MoodEnlight:
+  Name: Mê Tẩu
+  Description: "Khi tiến vào |Mê Tẩu|, nhận {Mana}.\nTrong |Mê Tẩu|, mỗi khi chơi\
+    \ 1 lá, bốc 1 lá.\n|Mê Tẩu| là một |Tâm Trạng|, {PlayerName} chỉ có thể ở trong\
+    \ duy nhất một |Tâm Trạng| cùng một lúc."
+  Brief: "Khi tiến vào |Mê Tẩu|, nhận {Mana}.\nTrong |Mê Tẩu|, mỗi khi chơi 1 lá,\
+    \ bốc 1 lá.\n|Mê Tẩu| là một |Tâm Trạng|, {PlayerName} chỉ có thể ở trong duy\
+    \ nhất một |Tâm Trạng| cùng một lúc."
+QiangweiDiyuSe:
+  Name: Địa Ngục Hoa Hồng
+  Description: ' Mỗi khi một lá Cơ Bản vào tay, gây {Count} sát thương lên một kẻ
+    địch ngẫu nhiên, tăng lượng sát thương gây ra lên thêm {Level}.'
+  Brief: Mỗi khi một lá Cơ Bản vào tay, gây một lượng sát thương lên một kẻ địch ngẫu
+    nhiên, tăng thêm lượng sát thương gây ra.
+NextTurnPassionSe:
+  Name: Triết Lý Của Kẻ Bị Ghét Bỏ
+  Description: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Nhiệt Tình|, bốc
+    {Level} lá.
+  Brief: Vào đầu lượt tiếp theo của {PlayerName}, tiến vào |Nhiệt Tình|, bốc {Level}
+    lá.
+PassionDrawSe:
+  Name: Bốc Bài Say Mê
+  Description: Mỗi khi {PlayerName} tiến vào |Nhiệt Tình|, bốc {Level} lá.
+  Brief: Mỗi khi {PlayerName} tiến vào |Nhiệt Tình|, bốc một số lá.
+PeaceBlockSe:
+  Name: Khiên Bình Thản
+  Description: Khi kết thúc lượt của {PlayerName}, nếu đang trong |Bình Thản|, nhận
+    {Level} |Khiên|.
+  Brief: Khi kết thúc lượt của {PlayerName}, nếu đang trong |Bình Thản|, nhận một
+    lượng |Khiên|.
+MoodChangeBlockSe:
+  Name: Rào Cản Tâm Linh
+  Description: Mỗi khi |Tâm Trạng| của {PlayerName} thay đổi, nhận {Level} |Khiên|.
+  Brief: Mỗi khi |Tâm Trạng| của {PlayerName} thay đổi, nhận một lượng |Khiên|.
+LunaticPassionSe:
+  Name: Tình Yêu Mê Cuồng
+  Brief: Mức tăng sát thương của |Nhiệt Tình| trở thành {Percentage}%.
+  Description: Mức tăng sát thương của |Nhiệt Tình| trở thành {Percentage}%.
