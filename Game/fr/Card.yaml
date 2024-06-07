@@ -2321,8 +2321,8 @@ SakuyaDetective:
 MinengZhuru:
   Name: Infusion Arcanique
   Description: "Lorsque la |f:compétence passive| d'une carte |alliée| prend effet,\
-    \ elle prend effet une fois de plus.\n(Cela ne fait pas varier les points de soutien\
-    \ de la carte)"
+    \ elle prend effet une fois de plus.\nCela ne fait pas varier les points de soutien\
+    \ de la carte."
 PrismriverWhite:
   Name: Solo de Trompette
   Description: "Gagnez {Mana}.\nPiochez {Value1:plural one='% carte' other='% cartes'}.\n\
@@ -2387,9 +2387,12 @@ BlueRose:
     \ {Damage} dégât{Damage:plural one='' other='s'}."
 FrostGarden:
   Name: Jardin de Brume
-  Description: "Appliquez |Froid| à tous les ennemis.\nSi vous avez une carte |alliée|\
-    \ invoquée dans votre main, répétez cet effet au début de votre prochain tour."
+  Description: "Appliquez |Froid| à chaque ennemi.\nSi vous avez une carte |alliée|\
+    \ invoquée dans votre main, {SelfName} coûte {Mana} à jouer."
   FlavorText: Climatisation gratuite.
+  UpgradedDescription: "Appliquez |Froid| à chaque ennemi.\nRépétez cet effet lorsque\
+    \ {PlayerName} débute son prochain tour.\nSi vous avez une carte |alliée| invoquée\
+    \ dans votre main, {SelfName} coûte {Mana} à jouer."
 CallFriends:
   Description: Choisissez une parmi {Value1} cartes |alliées| aléatoires. Ajoutez-la
     à votre main dans l'état invoqué.
@@ -2864,8 +2867,8 @@ LoveFire:
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
-  Description: Tous les coûts des cartes |basiques| sont temporairement transformés
-    en {Mana} avec |Écho|.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    Entrez dans l'état |Calme|."
 AliceAttackW:
   Name: Bunraku du Futur
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2997,10 +3000,6 @@ AyaNewsAliceSp:
   Description: "|Fin du tour| : Perdez {Value1} |Esprit{Value1:plural one='' other='s'}|."
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
-PiankeNingjing:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nSi possible,\
-    \ quittez votre |État Mental| pour piocher {Value1} carte{Value1:plural one=''\
-    \ other='s'}."
 YaoguaiNaodianbo:
   Name: Polygraphe Yōkai
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et entrez\
@@ -3053,9 +3052,6 @@ JiyiShitihua:
   Description: "Choisissez une carte d'attaque dans la main. Ajoutez-en une |copie|\
     \ à la main qui |coûte temporairement| {Mana} et a |Exil|.\nInfligez {Damage}\
     \ dégât{Damage:plural one='' other='s'}."
-SelfControl:
-  Description: Chaque fois que {PlayerName} inflige des dégâts d'attaque dans l'état
-    |Passion|, gagnez {Value1} |Barrière{Value1:plural one='' other='s'}|.
 ZuxianTuomeng:
   Name: Rêves Ancestraux
   Description: "|Lorsque piochée| : |Exilez| la carte la plus à gauche de la main.\
@@ -3351,7 +3347,9 @@ FindInspiration:
 InspirationCard:
   Name: Inspiration
   Description: '|Lorsque {SelfName} arrive en main| : Transformez-la en une |e:carte
-    Inspiration| de couleur aléatoire, activez son effet et |Exilez-la|.'
+    Inspiration| de couleur aléatoire, activez son effet et |Exilez-la|.
+
+    Pendant l''étape de pioche, {SelfName} a |Renfloue|.'
 InspirationBlack:
   Name: Inspiration Noire
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
@@ -3423,7 +3421,7 @@ SanaeSpirit:
   Name: Rassembler la foi
   Description: Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|.
 YukariSwarm:
-  Name: Nid de Noctilucae
+  Name: Mailles de Lumière et Obscurité
   UpgradedDescription: "|Exilez| jusqu'à {Value2} carte{Value2:plural one='' other='s'}\
     \ en main.\nInfligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     S'il y a au moins {Value1} carte{Value1:plural one='' other='s'} en |Exil|, infligez\
@@ -3479,6 +3477,9 @@ ModuoluoSeasons:
   Name: Saison du Chaos
   Description: Ajoutez au hasard des |Geysers|, |Flammes| et |Fleurs d'Été| à la main
     jusqu'à ce qu'elle soit pleine.
+  UpgradedDescription: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n\
+    Ajoutez au hasard des |Geysers|, |Flammes| et |Fleurs d'Été| à la main jusqu'à\
+    \ ce qu'elle soit pleine."
 YonglinDraw:
   Name: Souvenirs de l'Âge Divin
   Description: Piochez {Value1:plural one='% carte' other='% cartes'}. Les cartes
@@ -3492,9 +3493,6 @@ IceWing:
     \ Choisissez-en une à mettre dans la main et placez l’autre sous la pioche.\n\
     ({BlueCount} carte{BlueCount:plural one=' bleue restante' other's bleues restantes'}\
     \ dans la pioche)"
-KoishiZeroDefense:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Passion|\
-    \ : Gagnez {Value1} |Bouclier{Value1:plural one='' other='s'}|."
 KoishiZeroAttack:
   Name: Amour Aveugle
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -3507,3 +3505,60 @@ FriendDraw:
   Name: Brève Séparation
   Description: Chaque fois que la |a:compétence active| ou |u:ultime| d'une |alliée|
     est activé, piochez {Value1} carte{Value1:plural one='' other='s'}.
+PassionDefense:
+  Name: Amour Instinctif
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Passion|\
+    \ : gagnez {Value1} |Bouclier{Value1:plural one=' supplémentaire' other='s supplémentaires'}|."
+MoodAttack:
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nLorsque\
+    \ {PlayerName} change d'|État mental|, {SelfName} est renvoyé de la pile de défausse\
+    \ dans la main."
+  Name: Combinaison d'Humeurs
+PassionVulnerable:
+  Name: Libération de l'Ego
+  Description: "|Passion| : Infligez {Value1} |Vulnérable{Value1:plural one='' other='s'}|\
+    \ à chaque ennemi.\nSinon, entrez dans l'état |Passion|."
+NextTurnPassion:
+  Name: Philosophie du Détesté
+  Description: Lorsque {PlayerName} débute son prochain tour, entrez dans l'état |Passion|
+    et piochez {Value1} carte{Value1:plural one='' other='s'}.
+PassionDraw:
+  Name: Tirage de Cartes Passionné
+  Description: Chaque fois que {PlayerName} entre dans l'état |Passion|, piochez {Value1}
+    carte{Value1:plural one='' other='s'}.
+PeaceEndTurn:
+  Name: Reprendre Conscience
+  FlavorText: '"Où suis-je?"'
+  Description: "Entrez dans l'état |calme|.\nTerminez le tour."
+  UpgradedDescription: "Sélectionnez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ dans la pile de défausse et remettez-l{Value1:plural one='a' other='es'} dans\
+    \ votre main, avec |Retenue|.\nEntrez dans l'état |calme|.\nTerminez le tour."
+PeaceDraw:
+  Name: Maîtrise de Soi
+  Description: "|Calme| : piochez {Value1} carte{Value1:plural one='' other='s'}.\n\
+    Sinon, entrez dans l'état |Calme|."
+PeaceBlock:
+  Name: Blocage Tranquille
+  Description: Si {PlayerName} est dans l'état |Calme| à la fin de son tour, gagnez
+    {Value1} |Bouclier{Value1:plural one='' other='s'}|.
+MoodChangeBlock:
+  Name: Barrière Spirituelle
+  Description: Chaque fois que {PlayerName} change d'|État mental|, gagnez {Value1}
+    |Bouclier{Value1:plural one='' other='s'}|.
+PsycheLock:
+  Name: Verrou Mental
+  Description: "Infligez {Damage} dégât{}Damage:plural one='' other='s' à chaque ennemi\
+    \ {Value1} fois.\nObtenez {Mana}.\nLorsque {SelfName} est en main, {PlayerName}\
+    \ doit entrer dans trois |États Mentaux| différents avant de pouvoir être joué.\
+    \ ({Count} états restants)"
+  NonbattleDescription: "Infligez {Damage} dégât{}Damage:plural one='' other='s' à\
+    \ chaque ennemi {Value1} fois.\nObtenez {Mana}.\nLorsque {SelfName} est en main,\
+    \ {PlayerName} doit entrer dans trois |États Mentaux| différents avant de pouvoir\
+    \ être joué."
+EnterEnlight:
+  Description: Entrez dans l'état |Fugue|.
+  Name: Entrer en Fugue
+LunaticPassion:
+  Name: Amour Fou
+  Description: "L'augmentation des dégâts de |Passion| est modifiée à {Pourcentage}\
+    \ %.\nEntrez dans l'état |Passion|."
