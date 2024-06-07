@@ -281,7 +281,7 @@ ReimuFreeAttack:
 MinengZhuru:
   Name: Inyección de Energía Mental
   Description: "Cuando la |f:Habilidad Pasiva| de una |Compañera| se activa, se activa\
-    \ una vez más.\n(Esto no afecta a la Influencia ganada o perdida)."
+    \ una vez más.\nEsto no afecta a la Influencia ganada o perdida."
 SummerFlower:
   Description: "Inflige {Damage} de daño.\nDurante el resto del combate, cada {SelfName}\
     \ inflige {Value1} más de daño."
@@ -514,8 +514,8 @@ ArtificialJewellery:
   Name: Joya Artificial
   Description: Gana 1 maná aleatorio.
   UpgradedDescription: Gana {Mana}.
-  FlavorText: Aunque su valor real es mucho menor que la de su precio, la joyería
-    todavía tiene un efecto espiritual que no se puede medir con el dinero.
+  FlavorText: Aunque su valor real es muy inferior a su precio, la capacidad de una
+    joya para levantar el ánimo no puede medirse con el dinero.
 JinjiBlock:
   Description: Gana {Block} de |Bloqueo|.
   Name: Defensa de Emergencia
@@ -2210,8 +2210,11 @@ ColdPotion:
 FrostGarden:
   Name: Jardín Escarchado
   Description: "Aplica |Frío| a cada enemigo.\nSi tienes una |Compañera| convocada\
-    \ en la mano, repite este efecto al comienzo del siguiente turno de {PlayerName}."
+    \ en la mano, {SelfName} cuesta {Mana}."
   FlavorText: Aire acondicionado gratuito.
+  UpgradedDescription: "Aplicar |Frío| a cada enemigo.\nSe repite el efecto al comienzo\
+    \ del siguiente turno de {PlayerName}.\nSi hay una |Compañera| convocada en la\
+    \ mano, {SelfName} cuesta {Mana}."
 IceLance:
   Name: Lanza de Hielo
   Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, inflige {Value1}\
@@ -2810,9 +2813,6 @@ AyaNewsAliceSp:
   Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   FlavorText: ¡Una edición especial sobre la Exposición de la Capital Lunar! Detalla
     los chismes que rodean a {PlayerName}.
-PiankeNingjing:
-  Description: "Gana de {Block} de |Bloqueo|.\nSi es posible, se sale del |Estado\
-    \ Mental| y roba {Value1} carta{Value1:plural one='' other='s'}."
 YaoguaiNaodianbo:
   Name: EGG Youkai
   Description: "Inflige {Damage} de daño y entra en el estado |Pasión|.\n|Instinto|:\
@@ -2862,9 +2862,6 @@ JiyiShitihua:
   Description: "Elige una carta de ataque en la mano. Agrega una |Copia| de esa carta\
     \ a la mano que |costara temporalmente| {Mana} y tiene |Exilio|.\nInflige {Damage}\
     \ de daño."
-SelfControl:
-  Description: Siempre que {PlayerName} inflige daño por un ataque mientras está en
-    el estado |Pasión|, gana {Value1} de |Barrera|.
 Kongxiangshang:
   Name: Autorretención Ideal
   Description: Después de jugar una carta de |Defensa Básica|, entra en el estado
@@ -3205,6 +3202,8 @@ ModuoluoSeasons:
   Description: Agrega aleatoriamente |Salpicaduras|, |Llamas| y |Flores de verano|
     a la mano hasta que este llena.
   Name: Temporada Fuera de Control
+  UpgradedDescription: "Gana {Value1} de |Poder|.\nAgrega aleatoriamente |Salpicaduras|,\
+    \ |Llamas| y |Flores de Verano| a la mano hasta que este llena."
 DefaultPassion:
   Description: "Inflige {Damage} de daño.\nEntra en el estado |Pasión|."
   Name: Corazón Solitario
@@ -3233,7 +3232,9 @@ FindInspiration:
 InspirationCard:
   Name: Inspiración
   Description: '|Cuando {SelfName} entre en la mano|: Se transforma en una |e:Carta
-    de Inspiración| de color aleatoria, activa su efecto y se |Exilia|.'
+    de Inspiración| de color aleatoria, activa su efecto y se |Exilia|.
+
+    Durante la fase de robo, {SelfName} tiene |Reponer|.'
 InspirationWhite:
   Name: Inspiración Blanca
   Description: "|Mejora| {Value1} carta{Value1:plural one=' aleatoria' other='s aleatorias'}\
@@ -3271,3 +3272,24 @@ FriendDraw:
   Description: Siempre que se active la |a:Habilidad Activa| o |u:Habilidad Definitiva|
     de una |Compañera|, roba {Value1} carta{Value1:plural one='' other='s'}.
   Name: Breve Despedida
+PassionDefense:
+  Name: Amor Instintivo
+PassionVulnerable:
+  Name: Liberación del Id
+NextTurnPassion:
+  Name: Filosofía del Despreciado
+PeaceEndTurn:
+  FlavorText: '"¿Dónde estoy?"'
+  Name: Recobrar los Conciencia
+PeaceDraw:
+  Name: Autocontrol
+PassionDraw:
+  Name: Prisa
+PeaceBlock:
+  Name: Como una Dormilona
+MoodChangeBlock:
+  Name: Fortaleza Mental
+PsycheLock:
+  Name: Psicocandado
+LunaticPassion:
+  Name: Amor Lunático
