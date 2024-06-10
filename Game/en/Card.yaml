@@ -2775,7 +2775,7 @@ Danxiangsi:
     \ gain by {Value2}."
   Name: Unrequited Love
 BabyDream:
-  Description: All |basic| cards temporary cost {Mana} and gain |Echo|.
+  Description: "Deal {Damage} damage to each enemy.\nEnter |Serenity|."
   Name: Embryo's Dream
 PerfectCrime:
   Description: "Steal target's |Spirit|, |Graze|, |Amulet|, |Optical Camouflage|,\
@@ -2911,7 +2911,9 @@ PatchouliFriend:
   FlavorText: '"Shake, shake, sway, shake."'
 QiangweiDiyu:
   Name: Rose Hell
-  Description: Gain {Value1} |Love|.
+  Description: "Gain {Value1} |Rose Hell|.\nWhenever a |Basic| card enters the hand,\
+    \ gain {Value2} |Rose Hell| and draw a card.\n(|Rose Hell|: Whenever a |Basic|\
+    \ card enters the hand, deal that much damage to a random enemy.)"
 ReimuHuashan:
   Description: "|Exile| a card in the hand. Gain {Value2} <sprite=\"Point\" name=\"\
     Power\">.\nIf the card |Exiled| this way is an |Ability| card, gain {Value1} maximum\
@@ -3191,6 +3193,7 @@ MirrorTest:
   Description: "Gain {Shield} |Barrier|.\n|While in hand|: If an adjacent attack card\
     \ is played, transform {SelfName} into a |Copy| of that card and gain {Shield}\
     \ |Barrier|."
+  Name: Mirror Test
 QingxingMeng:
   Description: "At the start of {PlayerName}'s turn, add {Value1} |p:completely random|\
     \ Rare card{Value1:plural one='' other='s'} to hand. {Value1:plural one='It' other='They'}\
@@ -3200,6 +3203,7 @@ QingxingMeng:
 WuyunJiekong:
   Description: "|Exile| all Status and |Misfortune| cards in the hand, draw pile and\
     \ discard pile.\nRemove all debuffs from {PlayerName}."
+  Name: Five Skandhas
 SiwangLaiDian:
   Description: "|Exile| an |Attack| card in the hand. Add {Value1} |Cop{Value1:plural\
     \ one='y' other='ies'}| of it to the top of the draw pile.\nIf the chosen card\
@@ -3209,6 +3213,7 @@ SiwangLaiDian:
     \ one='y' other='ies'}| of it to the top of the draw pile.\nIf the chosen card\
     \ is |Basic|, the added {Value1:plural one='|Copy| has' other='|Copies| have'}\
     \ |Replenish|."
+  Name: Terrifying Cute Caller
 InspirationBlack:
   Description: "Gain {Block} |Block|.\nDeal {Value1} damage to a random enemy."
   Name: Black Inspiration
@@ -3235,6 +3240,7 @@ QiannianShenqiCard:
   Name: My Turn
 LeaveMoodAttack:
   Name: Unconscious Act
+  Description: "Deal {Damage} damage.\nExit the current |Mental State||."
 IceWing:
   Name: Ice Wing
   Description: "Gain {Mana}.\nLook at 2 random blue cards from the draw pile. Choose\
@@ -3249,5 +3255,69 @@ FriendDraw:
   Name: Brief Parting
 PeaceEndTurn:
   FlavorText: '"Where am I?"'
+  UpgradedDescription: "Chooe up to {Value1} card{Value1:plural one='' other='s'}\
+    \ from the discard pile and return them to the hand. |Retain| {Value1:plural one='it'\
+    \ other='them'} this turn.\nEnter |Serenity|.\nEnd {PlayerName}'s turn."
+  Name: Snap Out
+  Description: "Enter |Serenity|.\nEnd {PlayerName}'s turn."
 PassionVulnerable:
   Name: Release of the Id
+  Description: "|In Passion|: Apply {Value1} |Vulnerable| to each enemy.\n|Not in\
+    \ Passion|: Enter |Passion|."
+EnterPassion:
+  Name: Passionate Memories
+  Description: Enter |Passion|.
+KoishiZeroAttack:
+  Name: Blind Love
+  Description: "Deal {Damage} damage to each enemy.\n|In Fugue|: Deal damage twice."
+LeaveMoodDraw:
+  Name: Unconscious Wandering
+  Description: "Draw {Value1} card{Value1:plural one='' other='s'}\nExit the current\
+    \ |Mental State|."
+LeaveMoodGraze:
+  Description: "Gain {Value1} |Graze|.\nExit the current |Mental State|."
+PassionDefense:
+  Description: "Gain {Block} |Block|.\n|In Passion|: Gain {Value1} more |Block|."
+EnterPeace:
+  Name: Serene Memories
+  Description: Enter |Serenity|.
+MoodAttack:
+  Description: "Deal {Damage} damage.\nWhenever {PlayerName} changes |Mental States|.\
+    \ return {SelfName} from the discard pile to the hand."
+NextTurnPassion:
+  Name: Philosophy of the Despised
+  Description: At the start of {PlayerName}'s next turn, enter |Passion| and draw
+    {Value1} card{Value1:plural one='' other='s'}.
+PassionDraw:
+  Description: Whenever {PlayerName} enters |Passion|, draw {Value1} card{Value1:plural
+    one='' other='s'}.
+PeaceDraw:
+  Name: Self-Control
+  Description: "|In Serenity|: Draw {Value1} card{Value1:plural one='' other='s'}.\n\
+    |Not in Serenity|: Enter |Serenity|."
+MoodChangeBlock:
+  Description: Whenever {PlayerName} changes |Mental States|, gain {Value1} |Block|.
+  Name: Mental Fortress
+PsycheLock:
+  Name: Psyche-Lock
+  NonbattleDescription: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nCan only\
+    \ be played if {PlayerName} has entered 3 diffrent |Mental States| while {SelfName}\
+    \ is in the hand."
+  Description: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nCan only be played\
+    \ if {PlayerName} has entered 3 diffrent |Mental States| while {SelfName} is in\
+    \ the hand. ({Count} left)"
+EnterEnlight:
+  Description: Enter |Fugue|.
+LunaticPassion:
+  Name: Lunatic Love
+  Description: "|Passion|'s damage modifier becomes {Percentage}%.\nEnter |Passion|."
+PeaceBlock:
+  Description: At the end of {PlayerName}'s turn, if she's in |Serenity|, gain {Value1}
+    |Block|.
+PassionAttackToDraw:
+  Name: Selfless Love
+  Description: "Deal {Damage} damage {Value1} times.\nEnter |Passion|.\nShuffle {SelfName}\
+    \ into the draw pile."
+BeihaiWangxiang:
+  Description: "Gain {Shield} |Barrier|.\nGain |Suppresion| equal to half the current\
+    \ |Barrier|."
