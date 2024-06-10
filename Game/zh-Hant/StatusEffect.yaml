@@ -1103,14 +1103,10 @@ CatchGoblinSe:
   Description: 受到的傷害減少 33%，擊敗後掉落 50<sprite="Point" name="Gold">。
   Brief: 受到的傷害減少33%，擊敗後掉落 50<sprite="Point" name="Gold">。
 
-NextTurnBenwo:
-  Name: 下回合進入熱戀
 WuyishiDNASe:
   Description: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
   Name: 無意識的基因
   Brief: '{PlayerName}的回合結束時，如果不處於|頓悟|，死亡。'
-NextTurnChaowo:
-  Description: '{PlayerName}的回合結束開始時，進入|平靜|。'
 BenwoTouyingSe:
   Name: 自我投影
   Description: 每次進入|熱戀|時，將 {Level} 張完全隨機的攻擊牌加入手牌，|暫塑|為{Mana}且附帶|放逐|。
@@ -1135,8 +1131,6 @@ LongLove:
   Name: 長相思
   Description: 所有|基本|卡的數值提高 {Level}。
   Brief: 所有|基本|卡的數值提高。
-SelfControlSe:
-  Brief: 每次在|熱戀|狀態中造成攻擊傷害，獲得|護盾|。
 ZhuozhuangChengzhangSe:
   Name: 茁壯成長
   Description: '{PlayerName}的回合結束時，將 {Level} 張|生機|加入手牌。'
@@ -1251,16 +1245,16 @@ SanaeSummonGodSe:
   ExtraDescription: 下回合的回合開始時：獲得 {Level} 點|火力|和|靈力|。
 MoodPassion:
   Name: 熱情
-  Brief: "處於|熱情|時，{PlayerName}造成和受到的攻擊傷害提高 {Percentage}%。\n|熱情|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
-  Description: "處於|熱情|時，{PlayerName}造成和受到的攻擊傷害提高 {Percentage}%。\n|熱情|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
+  Brief: "處於|熱情|時，{PlayerName}造成和受到的攻擊傷害提高 {Percentage}%。\n|熱情|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
+  Description: "處於|熱情|時，{PlayerName}造成和受到的攻擊傷害提高 {Percentage}%。\n|熱情|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
 MoodPeace:
   Name: 平靜
-  Brief: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
-  Description: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
+  Brief: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
+  Description: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
 MoodEnlight:
   Name: 神遊
-  Description: "進入|神遊|時獲得{Mana}。\n處於|神遊|時，每打出一張牌抽一張牌。\n|神遊|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
-  Brief: "進入|神遊|時獲得{Mana}。\n處於|神遊|時，每打出一張牌抽一張牌。\n|神遊|是一種|心境|，{PlayerName}只能同時處於一種|心境|。"
+  Description: "進入|神遊|時獲得{Mana}。\n處於|神遊|時，每打出一張牌抽一張牌。\n|神遊|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
+  Brief: "進入|神遊|時獲得{Mana}。\n處於|神遊|時，每打出一張牌抽一張牌。\n|神遊|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
 InspirationSe:
   Name: 靈感迸發
   Description: '{PlayerName}累計 {TriggerLevel} 層|靈感迸發|時，將等量的|靈感|洗入抽牌堆，進入|神遊|。'
@@ -1277,3 +1271,23 @@ FriendDrawSe:
   Name: 短暫的離別
   Description: 使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Level} 張牌。
   Brief: 使用|同伴|的|a:主動技能|或|u:終結技|時，抽若干張牌。
+NextTurnPassionSe:
+  Name: 被厭惡者的哲學
+  Description: '{PlayerName}的下回合開始時，進入|熱情|，抽 {Level} 張牌。'
+  Brief: '{PlayerName}的下回合開始時，進入|熱情|，抽若干張牌。'
+PassionDrawSe:
+  Name: 熱戀抽牌
+  Description: 每當{PlayerName}進入|熱情|時，抽 {Level} 張牌。
+  Brief: 每當{PlayerName}進入|熱情|時，抽若干張牌。
+PeaceBlockSe:
+  Name: 平靜格擋
+  Description: '{PlayerName}的回合結束時如果處於|平靜|，獲得 {Level} 點|格擋|。'
+  Brief: '{PlayerName}的回合結束時如果處於|平靜|，獲得若干點|格擋|。'
+MoodChangeBlockSe:
+  Name: 心靈壁壘
+  Description: 每當{PlayerName}轉化|心境|時，獲得 {Level} 點|格擋|。
+  Brief: 每當{PlayerName}轉化|心境|時，獲得若干點|格擋|。
+LunaticPassionSe:
+  Name: 瘋狂之愛
+  Description: '|熱情|的傷害提高改為 {Percentage}%。'
+  Brief: '|熱情|的傷害提高改為 {Percentage}%。'

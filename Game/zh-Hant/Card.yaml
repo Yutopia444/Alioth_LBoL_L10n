@@ -1506,9 +1506,10 @@ FrostGarden:
   Name: 冷霧花園
   Description: |-
     對所有敵人施加|寒冷|。
-    如果手中有已召喚的|同伴|牌，下回合再次生效。
+    如果手中有已召喚的|同伴牌|，{SelfName}費用為{Mana}。
   FlavorText: 免費的冷氣。
 
+  UpgradedDescription: "對所有敵人施加|寒冷|。\n下回合開始時再次生效。\n如果手中有已召喚的|同伴牌|，{SelfName}費用為{Mana}。"
 MaidFriend:
   Name: 洋館的女僕小霞
   Description: '{FriendP}對生命值最低的敵人造成 {Damage} 點攻擊傷害。'
@@ -1704,7 +1705,7 @@ MinengZhuru:
   Name: 秘能注入
   Description: |-
     |同伴|牌的|f:被動技能|生效時，額外生效一次。
-    (支援度變化不會額外生效)
+    支援度變化不會額外生效。
 
 GatherFairy:
   Name: 妖精集結
@@ -1867,7 +1868,7 @@ LoveFire:
 
 BabyDream:
   Name: 胎兒之夢
-  Description: 所有|基本|卡的費用暫塑為{Mana}，並附帶|回響|。
+  Description: "對所有敵人造成 {Damage} 點傷害。\n進入|平靜|。"
 
 PerfectCrime:
   Name: 完美作案
@@ -3429,8 +3430,6 @@ AyaNewsAliceSp:
   Name: 《文文新聞》愛麗絲特刊
   Description: '|回合結束時|：失去 {Value1} 點|靈力|。'
   FlavorText: 月都萬象展特集！ 詳細刊載了有關{PlayerName}的流言蜚語。
-PiankeNingjing:
-  Description: "獲得 {Block} 點|格擋|。\n如可能，離開|心境|，並抽取 {Value1} 張卡牌。"
 YaoguaiNaodianbo:
   Name: 妖怪腦波
   Description: "造成 {Damage} 點傷害，進入|熱情|。"
@@ -3464,8 +3463,6 @@ BenwoTouying:
 JiyiShitihua:
   Name: 記憶實體化
   Description: "複製手中的一張的攻擊牌，複製費用為{Mana}且附帶|放逐|。\n造成{Damage}點傷害。"
-SelfControl:
-  UpgradedDescription: "每次在|熱戀|狀態中造成攻擊傷害，獲得 {Value2} 點|護盾|。\n進入|熱戀|。"
 Kongxiangshang:
   Name: 空想上的人格保持者
   Description: 打出|基本防禦|牌後進入|平靜|。
@@ -3483,7 +3480,7 @@ PatchouliFriend:
   Name: 鍊金術士帕秋莉
   ExtraDescription1: '{FriendA}獲得 {Value1} 點|火力|和|靈力|，獲得 {Power} 點<sprite="Point"
     name="Power">。'
-  ExtraDescription2: '{FriendU}將 {Value2} 張|不穩定藥劑|加入手中。'
+  ExtraDescription2: '{FriendU}將 {Value2} 張|不穩定魔藥|加入手中。'
   FlavorText: 「搖，搖，晃，搖。」
 MeilingFriend:
   Description: '{FriendS}獲得 {Graze} 層|閃避|。
@@ -3692,7 +3689,9 @@ DefaultPassion:
   Description: "造成 {Damage} 點傷害。\n進入|熱情|。"
   Name: 孤獨之心
 InspirationCard:
-  Description: '|進入手中時|：轉變為一張隨機顏色的|e:靈感牌|，生效然後|放逐|自身。'
+  Description: '|進入手中時|：轉變為一張隨機顏色的|e:靈感牌|，生效然後|放逐|自身。
+
+    在抽牌階段具有|填充|。'
   Name: 靈感
 InspirationWhite:
   Description: "|升級| {Value1} 張隨機的手牌。\n沒有合適目標時，每張|升級|的機會轉化為 {Value2} 點|格擋|。"
@@ -3735,6 +3734,7 @@ GreenLotus:
 ModuoluoSeasons:
   Name: 暴走的季節
   Description: 將隨機的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
+  UpgradedDescription: "獲得 {Value1} 點|火力|。\n將隨機的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。"
 EnterPassion:
   Name: 熱情的回憶
   Description: 進入|熱情|。
@@ -3764,8 +3764,6 @@ IceWing:
   Name: 冰之翼
   Description: "獲得{Mana}。\n展示抽牌堆中的隨機兩張藍色牌，選擇一張移入手中，將另一張置於牌堆底。"
   ExtraDescription1: "獲得{Mana}。\n展示抽牌堆中的隨機兩張藍色牌，選擇一張移入手中，將另一張置於牌堆底。\n（當前抽牌堆內只有 {BlueCount} 張藍色牌）"
-KoishiZeroDefense:
-  Description: "獲得 {Block} 點|格擋|。\n|熱情|：額外獲得 {Value1} 點|格擋|。"
 KoishiZeroAttack:
   Name: 盲目之愛
   Description: "對所有敵人造成 {Damage} 點傷害。\n|神遊|：造成兩次傷害。"
@@ -3775,3 +3773,43 @@ PassionAttackToDraw:
 FriendDraw:
   Name: 短暫的離別
   Description: 使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Value1} 張牌。
+MoodAttack:
+  Name: 心境連擊
+  Description: "造成 {Damage} 點傷害。\n當{PlayerName}轉化|心境|時，從棄牌堆回到手中。"
+PassionDefense:
+  Name: 本能之愛
+  Description: "獲得 {Block} 點|格擋|。\n|熱情|：額外獲得 {Value1} 點|格擋|。"
+PassionVulnerable:
+  Name: 本我的解放
+  Description: "|熱情|：對所有敵人施加 {Value1} 回合|易傷|。\n否則，進入|熱情|。"
+NextTurnPassion:
+  Name: 被厭惡者的哲學
+  Description: '{PlayerName}的下回合開始時，進入|熱情|，抽 {Value1} 張牌。'
+PassionDraw:
+  Name: 熱情抽牌
+  Description: 每當{PlayerName}進入|熱情|時，抽 {Value1} 張牌。
+PeaceEndTurn:
+  Name: 回神
+  Description: "進入|平靜|。\n結束{PlayerName}的回合。"
+  UpgradedDescription: "從棄牌堆中選擇至多 {Value1} 張牌移回手中，|保留|它一回合。\n進入|平靜|。\n結束{PlayerName}的回合。"
+  FlavorText: 「我這是在哪裡？」
+PeaceDraw:
+  Name: 掌控自我
+  Description: "|平靜|：抽 {Value1} 張牌。\n否則，進入|平靜|。"
+PeaceBlock:
+  Name: 平靜格擋
+  Description: '{PlayerName}的回合結束時如果處於|平靜|，獲得 {Value1} 點|格擋|。'
+MoodChangeBlock:
+  Name: 心靈壁壘
+  Description: 每當{PlayerName}轉化|心境|時，獲得 {Value1} 點|格擋|。
+PsycheLock:
+  Name: 心靈枷鎖
+  Description: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。\
+    \ （剩餘 {Count} 種未進入）"
+  NonbattleDescription: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。"
+EnterEnlight:
+  Name: 進入神遊
+  Description: 進入|神遊|。
+LunaticPassion:
+  Name: 瘋狂之愛
+  Description: "|熱情|狀態下的額外傷害比例改為 {Percentage}%。\n進入|熱情|。"
