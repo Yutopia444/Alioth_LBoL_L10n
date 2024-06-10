@@ -1012,8 +1012,6 @@ ControlNegative:
   Description: "Pierde {Level} de |Control|.\n|Controlar| aumenta ciertos efectos\
     \ de las |Muñecas|."
   Brief: "|Control| disminuido.\n|Controlar| aumenta ciertos efectos de las |Muñecas|."
-NextTurnChaowo:
-  Name: Serenidad en el Siguiente Turno
 WuyishiDNASe:
   Brief: Al final del turno de {PlayerName}, si no está en el estado |Epifanía|, pierde
     la partida.
@@ -1189,7 +1187,11 @@ ColdHeartedSe:
   Brief: "La |Lanza de Hielo| Inflige el triple de daño a los enemigos con |Frío|.\n\
     Se remueve |Sangre de Hielo| al final del turno de {OwnerName}."
 QiangweiDiyuSe:
-  Name: Rosas del Infierno
+  Name: Rosa del Infierno
+  Description: ' Siempre que una carta básica entre en la mano, inflige {Count} de
+    daño a cada enemigo y aumenta ese valor en {Level}.'
+  Brief: Siempre que una carta básica entre en la mano, inflige daño a cada enemigo
+    y aumenta su valor.
 YukariFlyObjectSe:
   Description: Al comienzo del siguiente turno de {PlayerName}, inflige {Level} de
     daño al enemigo con más vida.
@@ -1244,6 +1246,16 @@ ZhenmiaowanAbilitySe:
   Name: Magia del Mazo
 QingxingMengSe:
   Name: Sueño Lúcido
+  Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Value1:plural\
+    \ one=' Rara' other='s Raras'} |p:completamente aleatoria{Value1:plural one=''\
+    \ other='s'}| a la mano. |cuesta{Value1:plural one='' other='n'} temporalmente|\
+    \ <sprite=\"ManaSprite\" name=\"1\"> y tiene{Level:plural one='' other='n'} |Exilio|\
+    \ y |Etéreo|.\n{PlayerName} solo puede jugar {Limit} carta{Limit:plural one='\
+    \ Rara' other='s Raras'} en cada turno. (Queda {Count})"
+  Brief: "Al comienzo del turno de {PlayerName}, agrega cartas Raras |p:completamente\
+    \ aleatorias| a la mano. |cuestan temporalmente| <sprite=\"ManaSprite\" name=\"\
+    1\"> y tienen |Exilio| y |Etéreo|.\n{PlayerName} solo puede jugar {Limit} carta{Limit:plural\
+    \ one=' Rara' other='s Raras'} en cada turno."
 FriendDrawSe:
   Description: Siempre que se active la |a:Habilidad Activa| o |u:Habilidad Definitiva|
     de una |Compañera|, roba {level} carta{level:plural one='' other='s'}.
@@ -1252,3 +1264,29 @@ FriendDrawSe:
   Name: Breve Despedida
 NextTurnPassionSe:
   Name: Filosofía del Despreciado
+  Description: Al comienzo del siguiente turno de [PlayerName}, entra en el estado
+    |Pasión| y roba {Level} carta{Level:plural one='' other='s'}.
+  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Pasión|
+    y robar cartas.
+Constrain:
+  Description: Resta el |Bloqueo| y |Barrera| ganado.
+  Name: Supresión
+  Brief: Resta el |Bloqueo| y |Barrera| ganado.
+PassionDrawSe:
+  Description: Siempre que {PlayerName} entre en el estado |Pasión|, roba {Level}
+    carta{Level:plural one='' other='s'}.
+  Brief: Siempre que {PlayerName} entre en el estado |Pasión|, roba cartas.
+PeaceBlockSe:
+  Description: Al final del turno de {PlayerName}, si está en el estado |Serenidad|,
+    gana {Level} de |Bloqueo|.
+  Brief: Al final del turno de {PlayerName}, si está en el estado |Serenidad|, gana
+    |Bloqueo|.
+MoodChangeBlockSe:
+  Name: Fortaleza Mental
+  Description: Siempre que {PlayerName} cambie de |Estados mentales|, gana {Level}
+    de |Bloqueo|.
+  Brief: Siempre que {PlayerName} cambie de |Estados mentales|, gana |Bloqueo|.
+LunaticPassionSe:
+  Name: Amor Lunático
+  Description: El modificador de daño del estado |Pasión| ha cambiado al {Percentage}%.
+  Brief: El modificador de daño del estado |Pasión| ha cambiado al {Percentage}%.

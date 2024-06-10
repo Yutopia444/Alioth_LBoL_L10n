@@ -2704,7 +2704,7 @@ LoveFire:
     \ el maná guardado para la próxima vez que se juegue {SelfName}."
 BabyDream:
   Name: Sueño del Embrión
-  Description: Todas las cartas |básicas| cuestan temporalmente {Mana} y ganan |Eco|.
+  Description: "Inflige {Damage} de daño a cada enemigo.\nEntra en el estado |Serenidad|."
 UpgradeDoll:
   Name: Bunraku de la Doncella
   Description: Mejora una |e:Muñeca Shanghai|.
@@ -2881,8 +2881,11 @@ Beiyanwu:
   Description: "|Exilia| las cartas adyacentes de {SelfName}. Por cada carta |Exiliada|\
     \ de esta manera, gana {Mana} y roba {Value1} carta{Value1:plural one='' other='s'}."
 QiangweiDiyu:
-  Name: Rosas del Infierno
-  Description: Gana {Value1} de |Amor|.
+  Name: Rosa del Infierno
+  Description: "Gana {Value1} |Rosa del Infierno|.\nSiempre que una carta |Básica|\
+    \ entra en la mano, gana {Value2} |Rosa del Infierno| y roba una carta.\n(|Rosa\
+    \ del Infierno|: Siempre que una carta |Básica| entre en la mano, inflige esa\
+    \ misma cantidad de daño a un enemigo aleatorio.)"
 MeilingFriend:
   Name: Meiling, Guardiana Negligente
   Description: '{FriendS}Gana {Graze} de |Evasión|.
@@ -3114,7 +3117,8 @@ SuperNova:
   Description: "Gana {Mana}.\nColoca {Value1} carta{Value1:plural one=' de ataque\
     \ aleatorio' other='s de ataques aleatorios'} desde la pila de robo hacia la mano."
 BeihaiWangxiang:
-  Description: Gana {Shield} de |Barrera|.
+  Description: "Gana {Shield} de |Barrera|.\nGana |Supresión| igual a la mitad de\
+    \ la |Barrera| actual."
   Name: Delirios de Persecución
 SakuyaZeroDefense:
   Description: Gana {Block} de |Bloqueo|.
@@ -3159,7 +3163,7 @@ MirrorTest:
     \ una carta de ataque adyacente, transforma {SelfName} en una |Copia| de esa carta\
     \ y gana {Shield} de |Barrera|."
 QingxingMeng:
-  Name: Sumergirse en la Conciencia
+  Name: Sumergirse en la Inconciencia
   Description: "Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Value1:plural\
     \ one=' Rara' other='s Raras'} |p:completamente aleatoria{Value1:plural one=''\
     \ other='s'}| a la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
@@ -3247,6 +3251,7 @@ QiannianShenqiCard:
   Name: Mi Turno
 LeaveMoodAttack:
   Name: Acto Inconsciente
+  Description: "Inflige {Damage} de daño.\nSale del |Estado mental| actual."
 IceWing:
   Name: Ala de Hielo
   ExtraDescription1: "Gana {Mana}.\nMira 2 cartas azules aleatorias de la pila de\
@@ -3258,38 +3263,78 @@ IceWing:
     \ de robo."
 EnterPassion:
   Name: Recuerdos Apasionados
+  Description: Entra en el estado |Pasión|.
 KoishiZeroAttack:
   Name: Amor Ciego
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|En fuga|: Inflige daño\
+    \ dos veces."
 EnterPeace:
   Name: Recuerdos Serenos
+  Description: Entra en el estado |Serenidad|.
 LeaveMoodGraze:
   Name: Evasión Inconsciente
+  Description: "Gana {Value1} de |Evasión|.\nSale del |Estado mental| actual."
 LeaveMoodDraw:
   Name: Errante Inconsciente
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nSale del |Estado\
+    \ mental| actual."
 PassionAttackToDraw:
   Name: Amor Desinteresado
+  Description: "Inflige {Damage} de daño {Value1} veces.\nEntra en el estado |Pasión|.\n\
+    Baraja {SelfName} en la pila de robo."
 FriendDraw:
   Description: Siempre que se active la |a:Habilidad Activa| o |u:Habilidad Definitiva|
     de una |Compañera|, roba {Value1} carta{Value1:plural one='' other='s'}.
   Name: Breve Despedida
 PassionDefense:
   Name: Amor Instintivo
+  Description: "Gana {Block} de |Bloqueo|.\n|En Pasión|: Gana {Value1} más de |Bloqueo|."
 PassionVulnerable:
   Name: Liberación del Id
+  Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\n|No\
+    \ en Pasión|: Entra en el estado |Pasión|."
 NextTurnPassion:
   Name: Filosofía del Despreciado
+  Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
+    |Pasión| y roba {Value1} carta{Value1:plural one='' other='s'}.
 PeaceEndTurn:
   FlavorText: '"¿Dónde estoy?"'
   Name: Recobrar la Conciencia
+  Description: "Entra en el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
+  UpgradedDescription: "Elige hasta {Value1} carta{Value1:plural one='' other='s'}\
+    \ de la pila de descarte y devuélvelas a la mano. Tiene{Value1:plural one='' other='n'}\
+    \ |Retener| en este turno.\nEntra en el estado |Serenidad|.\nFinaliza el turno\
+    \ de {PlayerName}."
 PeaceDraw:
   Name: Autocontrol
+  Description: "|En Serenidad|: Roba {Value1} carta{Value1:plural one='' other='s'}.\n\
+    |No en Serenidad|: Entra en el estado |Serenidad|."
 PassionDraw:
   Name: Prisa
+  Description: Siempre que {PlayerName} entre en el estado |Pasión|, roba {Value1}
+    carta{Value1:plural one='' other='s'}.
 PeaceBlock:
   Name: Como una Dormilona
+  Description: Al final del turno de {PlayerName}, si está en el estado |Serenidad|,
+    gana {Value1} de |Bloqueo|.
 MoodChangeBlock:
   Name: Fortaleza Mental
+  Description: Siempre que {PlayerName} cambie de |Estados mentales|, gana {Value1}
+    de |Bloqueo|.
 PsycheLock:
   Name: Psicocandado
+  NonbattleDescription: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\n\
+    Solo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
+    \ mientras {SelfName} está en la mano."
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\nSolo se puede\
+    \ jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes mientras\
+    \ {SelfName} está en la mano. (Queda {Count})"
 LunaticPassion:
   Name: Amor Lunático
+  Description: "El modificador del daño del estado |Pasión| pasa a ser del {Percentage}%.\n\
+    Entra en el estado |Pasión|."
+MoodAttack:
+  Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de |Estados\
+    \ mentales|. devuelve {SelfName} de la pila de descarte a la mano."
+EnterEnlight:
+  Description: Entra en el estado |Fuga|.
