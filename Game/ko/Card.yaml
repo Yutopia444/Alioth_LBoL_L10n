@@ -676,7 +676,8 @@ FreezeBullet:
 FrostGarden:
   FlavorText: 에어컨은 필요 없어.
   Name: 얼어붙은 화원
-  Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료| 카드가 있을 경우 다음 턴 효과를 한 번 더 발동시킵니다."
+  Description: "모든 적에게 |빙결|을 가합니다.\n손에 소환한 |동료 카드|가 있을 경우 {SelfName}의 코스트가 {Mana}이\
+    \ 됩니다."
   UpgradedDescription: "모든 적에게 |빙결|을 가합니다.\n다음 턴 효과를 한 번 더 발동시킵니다.\n손에 소환한 |동료| 카드가\
     \ 있을 경우 {SelfName}의 코스트가 {Mana}가 됩니다."
 IceSaber:
@@ -2137,7 +2138,9 @@ LoveFire:
     \ 카드의 피해가 {Value1} 상승합니다.\n현재 소모한 마나를 기록했다가, 다음 번 카드를 사용할 때 되돌려줍니다."
 BabyDream:
   Name: 태아의 꿈
-  Description: '모든 |기본| 카드의 코스트가 일시적으로 {Mana}가 되고 |메아리|가 붙습니다.'
+  Description: '모든 적에게 피해를 {Damage} 줍니다.
+
+    |평온|에 들어섭니다.'
 AliceAttackW:
   Name: 미래 분라쿠
   Description: 피해를 {Damage} 줍니다.
@@ -2500,7 +2503,9 @@ QingxingMeng:
   Description: "내 턴 시작 시 |완전 무작위 희귀| 카드 {Value1}장을 얻습니다. 그 카드는 |일시적으로| {Mana}의 코스트와\
     \ |소멸|, |휘발성|을 가집니다.\n매 턴마다 |희귀| 카드를 최대 {Limit}장까지밖에 쓸 수 없게 됩니다."
 InspirationCard:
-  Description: '|손에 들어올 시|: 무작위 |e:영감 카드|로 바꾼 뒤 효과를 발동시키고 |소멸|시킵니다.'
+  Description: '|손에 들어올 시|: 무작위 |e:영감 카드|로 바꾼 뒤 효과를 발동시키고 |소멸|시킵니다.
+
+    내 턴이 시작할 때 카드를 뽑는 도중엔 |보충|이 붙습니다.'
   Name: 영감
 InspirationBlack:
   Name: 검은 영감
@@ -2546,6 +2551,7 @@ BlueZeroAttack:
 QingeDraw:
   Name: 도의 태동
   Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑고, 그 중 코스트가 1보다 큰 모든 카드를 버립니다."
+  FlavorText: 이른바 양샤오구이 모으기랄까나.
 PatchouliGreenAttack:
   Description: "피해를 {Damage} 줍니다.\n마나가 {Value1}개 이상인 경우에만 사용할 수 있습니다."
   Name: 봄빛 섬광
@@ -2562,10 +2568,12 @@ SanaeSummonGod:
   Description: 2턴 뒤 내 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다.
   Name: 서먼 타케미나카타
   UpgradedDescription: 다음 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다.
-  FlavorText: 레이무조차 피할 수 없는 탄막.
+  FlavorText: 맘껏 먹고 맘껏 마시면 신을 부르게 될지니.
 ModuoluoSeasons:
   Name: 폭주의 계절
   Description: '|물결|, |화염|, |한여름의 꽃|을 손이 꽉 찰 때까지 무작위로 얻습니다.'
+  UpgradedDescription: "|화력|을 {Value1} 얻습니다.\n|물결|, |화염|, |한여름의 꽃|을 손이 꽉 찰 때까지 무작위로\
+    \ 얻습니다."
 QiannianShenqiCard:
   Name: 내 차례
   Description: "|e:피라미드 모양의 퍼즐|로 인한 카드 상한에 도달해도, {Value1}의 체력을 대가로 카드를 더 뽑을 수 있습니다.\n\
@@ -2603,10 +2611,52 @@ IceWing:
   FlavorText: 비행 준비 완료!
 KoishiZeroAttack:
   Name: 맹목적인 사랑
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|둔주|: 피해를 두 번 줍니다."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|둔주일 때|: 피해를 두 번 줍니다."
 PassionAttackToDraw:
   Name: 망아적인 사랑
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|열정|에 들어섭니다.\n이 카드를 뽑을 카드 더미에 섞어넣습니다."
 FriendDraw:
   Name: 잠깐의 이별
   Description: '|동료|의 |a:액티브 능력| 혹은 |u:궁극기| 사용 시 카드를 {Value1}장 뽑습니다.'
+PassionDefense:
+  Name: 본능적인 사랑
+  Description: "|방어|를 {Block} 얻습니다.\n|열정일 때|: |방어|를 추가로 {Value1} 얻습니다."
+MoodAttack:
+  Name: 기분파 연격
+  Description: "피해를 {Damage} 줍니다.\n|마음가짐|이 변할 시 {SelfName}을 버린 카드 더미에서 다시 손으로 가져옵니다."
+PassionVulnerable:
+  Name: 이드의 해방
+  Description: "|열정일 때|: 모든 적에게 |취약|을 {Value1} 줍니다.\n열정이 아니라면 |열정|에 들어섭니다."
+NextTurnPassion:
+  Name: 미움받는 자의 필로소피
+  Description: 내 다음 턴 시작 시 |열정|에 들어서며 카드를 {Value1}장 뽑습니다.
+PassionDraw:
+  Name: 열정적인 뽑기
+  Description: '|열정|에 들어설 시 카드를 {Value1}장 뽑습니다.'
+PeaceEndTurn:
+  Name: 정신차리기
+  Description: "|평온|에 들어섭니다.\n내 턴을 종료합니다."
+  FlavorText: '"여긴 어디?"'
+  UpgradedDescription: "버린 카드 더미에서 최대 {Value1}장 골라 손으로 다시 가져옵니다. 해당 카드들은 한 턴간 |보존|이\
+    \ 붙습니다.\n|평온|에 들어섭니다.\n내 턴을 종료합니다."
+PeaceDraw:
+  Name: 자기억압
+  Description: "|평온일 때|: 카드를 {Value1}장 뽑습니다.\n평온이 아니라면 |평온|에 들어섭니다."
+PeaceBlock:
+  Name: 평온한 방어
+  Description: 내 턴 종료 시 |평온|이라면 |방어|를 {Value1} 얻습니다.
+MoodChangeBlock:
+  Name: 정신적 요새
+  Description: '|마음가짐|이 바뀔 때마다 |방어|를 {Value1} 얻습니다.'
+PsycheLock:
+  Name: 마음속 자물쇠
+  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{Mana}를 얻습니다.\n손에 {SelfName}가\
+    \ 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다. ({Count}회 남음)"
+  NonbattleDescription: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{Mana}를 얻습니다.\n손에 {SelfName}가\
+    \ 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다."
+EnterEnlight:
+  Name: 방황
+  Description: '|둔주|에 들어섭니다.'
+LunaticPassion:
+  Name: 광적인 사랑
+  Description: "|열정| 상태일 때 주고받는 피해 배율이 {Percentage}%가 됩니다.\n|열정|에 들어섭니다."
