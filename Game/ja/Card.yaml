@@ -480,9 +480,13 @@ SolarSystem:
   Description: ターン開始時に、{PlayerName}が|チャージ|{Value1}を得る。
 FinalSpark:
   Name: ファイナルスパーク
-  UpgradedDescription: "敵全体に{Damage}ダメージを与える。\n{PlayerName}が|バースト|状態になる時、このカードを捨て札から手札に加える。"
-  Description: 敵全体に{Damage}ダメージを与える。
+  UpgradedDescription: "敵全体に{Damage}ダメージを与える。\n{PlayerName}が|バースト|状態になる時、このカードを捨て札から手札に加える。\n\
+    |充填|：{Mana}を得る。"
+  Description: "敵全体に{Damage}ダメージを与える。\n|充填|：{Mana}を得る。"
   FlavorText: 「弾幕はパワーだぜ！」
+  ExtraDescription1: "敵全体に{Damage}ダメージを与える。\n|d:充填：{Mana}を得る。|"
+  UpgradedExtraDescription1: "敵全体に{Damage}ダメージを与える。\n{PlayerName}が|バースト|状態になる時、このカードを捨て札から手札に加える。\n\
+    |d:充填：{Mana}を得る。|"
 HuoliQuankai:
   Name: 火力全開
   Description: "|バースト|のダメージボーナスが3倍になる。\n|チャージ|{Value1}を得る。"
@@ -1146,8 +1150,11 @@ BailianPower:
   FlavorText: 聖書にはBMIと筋トレの内容について書かれている。
 TrueMoon:
   Name: 真実の満月
-  Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2}枚のカードをプレイした後、{PlayerName}に即死ダメージを与える。"
+  Description: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2}枚のカードをプレイした後、{PlayerName}に即死ダメージを与える。\n\
+    |充填|：{Mana}を得る。"
   FlavorText: 真実を謳う満月の下、全てはとち狂った幻想となる。
+  ExtraDescription1: "{Shield}|バリア|を得る。\n|火力|{Value1}を得る。\n{Value2}枚のカードをプレイした後、{PlayerName}に即死ダメージを与える。\n\
+    |d:充填：{Mana}を得る。|"
 FreezeRiver:
   Name: 流氷
   Description: 山札底にあるカードを手札に加え、それを|臨時コスト|{Mana}にする。
@@ -1330,8 +1337,9 @@ ReisenAttack:
   FlavorText: おお！「月虹市場」と「闇の抱擁」はついに我が手に！
 DizangLove:
   Name: 即席菩薩
-  Description: "コモンカードをプレイするたび、{PlayerName}が|臨時火力|{Value1}を得る。\n"
+  Description: "コモンカードをプレイするたび、{PlayerName}は|臨時火力|{Value1}を得る。\n"
   FlavorText: 我々は長く厳しい修行をしなくても成仏できる。
+  UpgradedDescription: "コモンカードをプレイするたび、{PlayerName}は|臨時火力|{Value1}を得る。\n|活力|を1枚手札に加える。"
 LoyalMaid:
   Name: 忠実なる召使い
   Description: "{Shield}|バリア|を得る。\n追加ターンを得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}になる。"
@@ -1368,7 +1376,10 @@ PerfectServant:
 SakuyaSpeedup:
   FlavorText: 今、あなたの後ろに居るの。
   Name: タイムアクセル
-  Description: '|タイムパルス|の値を2倍にする。'
+  Description: '|タイムパルス|の値を2倍にする。
+
+    |充填|：{Mana}を得る。'
+  ExtraDescription1: "|タイムパルス|の値を2倍にする。\n|d:充填：{Mana}を得る。|"
 TodayYesterday:
   Name: 今昔幻想郷
   Description: "{PlayerName}が敵の攻撃を|グレイズ|したとき|火力|{Value1}を得る。\n|グレイズ|{Value2}を得る。"
@@ -1765,7 +1776,8 @@ LilyChun:
   DetailText: "候補になるカードはキャラの制限を無視して選ばれる。\n|アップグレード|後は更に色の制限を無視する。\n{SelfName}は候補にならない。"
 BestFriend:
   Name: 最高の親友
-  Description: 手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。
+  Description: "手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。\n|充填|：{Mana}を得る。"
+  ExtraDescription1: "手札から{Value1}枚まで|パートナー|カードを選び、選んだカードの|支援度|を最大値にする。\n|d:充填：{Mana}を得る。|"
 DeepFreeze:
   Description: "青のカードを使う度、{PlayerName}は|臨時火力|{Value1}を得る。"
   Name: つららの舞
@@ -2327,7 +2339,8 @@ TakaneDefense:
   Name: 最奥の森域
 PatchouliGreenAttack:
   Name: 春色の閃光
-  Description: "{Damage}ダメージを与える。\nこのカードは保有しているマナの総数が{Value1}以上の時のみ使用可能。"
+  Description: "{Damage}ダメージを与える。\nこのカードは現在のマナの総数({BattleAmount})がマナ基盤のマナの総数({BaseAmount})より多い時のみ使用できる。"
+  NonbattleDescription: "{Damage}ダメージを与える。\nこのカードは現在のマナの総数がマナ基盤のマナの総数より多い時のみ使用できる。"
 SunflowerDefense:
   Name: 太陽の畑
   Description: "{Block}|ブロック|を得る。\n|真夏の花|を{Value1}枚手札に加える。"
@@ -2355,3 +2368,21 @@ FriendDraw:
     |u:奥義|を使用する度、更にランダムなマナを{Value1}点得る。'
 DefaultPassion:
   Name: 孤独な心
+  Description: "{Damage}ダメージを与える。\n|熱情|状態に入る。"
+DefaultPeace:
+  Description: "{Block}|ブロック|を得る。\n|平静|状態に入る。"
+  Name: 愛の茨
+EnterPassion:
+  Name: 熱情の想起
+  Description: '|熱情|状態に入る。'
+LeaveMoodAttack:
+  Description: "{Damage}ダメージを与える。\n現在の|精神状態|を解除する。"
+  Name: 無意識の行動
+KoishiZeroAttack:
+  Name: 恋は盲目
+PassionDefense:
+  Name: 本能の愛
+  Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
+GreenManaCard:
+  Name: 緑の探検
+  Description: このカードが手札に加えられた時、|活力|を{Value1}枚手札に加え、{SelfName}を|廃棄|する。
