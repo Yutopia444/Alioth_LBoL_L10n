@@ -359,12 +359,18 @@ SolarSystem:
     one='' other='s'}|.
 FinalSpark:
   Name: Final Spark
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    |Débordement| : Gagnez {Mana}."
   UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
     \ chaque ennemi.\nLorsque {PlayerName} entre en |Saturation|, renvoyez cette carte\
-    \ de la pile de défausse à la main."
+    \ de la pile de défausse à la main.\n|Débordement| : Gagnez {Mana}."
   FlavorText: "\"La chose la plus importante dans un combat c'est la puissance de\
     \ feu !\""
+  UpgradedExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ à chaque ennemi.\nLorsque {PlayerName} entre en |Saturation|, renvoyez {SelfName}\
+    \ de la pile de défausse dans la main.\n|Débordement| : Gagnez {Mana}."
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque\
+    \ ennemi.\n|Débordement| : Gagnez {Mana}."
 HuoliQuankai:
   Name: Pleine Puissance
   UpgradedDescription: "En mode |Saturation|, les |Attaques| jouées par {PlayerName}\
@@ -1090,8 +1096,12 @@ TrueMoon:
   Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
     \ {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLorsque {Value2:plural\
     \ one='% carte est jouée' other='% cartes sont jouées'}, {PlayerName} perd la\
-    \ partie."
+    \ partie.\n|Débordement| : Gagnez {Mana}."
   FlavorText: Sous la vraie pleine lune, tout n'est que fantasme vaniteux.
+  ExtraDescription1: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\n\
+    Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nLorsque {Value2:plural\
+    \ one='% carte est jouée' other='% cartes sont jouées'}, {PlayerName} perd la\
+    \ partie.\n|d:Débordement : Gagnez {Mana}.|"
 YuyukoSing:
   Name: Ailes de Papillons
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nCette carte\
@@ -1234,8 +1244,11 @@ SakuyaKiller:
     à la pioche.
 SakuyaSpeedup:
   Name: Temps Accéléré
-  Description: Doublez le nombre d'|Impulsions temporelles| actuel.
+  Description: "Doublez le nombre d'|Impulsions temporelles| actuel.\n|Débordement|\
+    \ : Gagnez {Mana}."
   FlavorText: Je suis derrière toi.
+  ExtraDescription1: "Doublez le nombre d'|Impulsions temporelles| actuel.\n|d:Débordement\
+    \ : Gagnez {Mana}.|"
 CirnoAttackU:
   Name: Tir de Glace
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2183,6 +2196,9 @@ DizangLove:
   Description: "Chaque fois que vous jouez une carte commune, {PlayerName} obtient\
     \ {Value1} |Puissance{Value1:plural one=' temporaire' other='s temporaires'}|.\n"
   FlavorText: Nous pouvons tous devenir des bouddhas sans aucune pratique ni difficulté.
+  UpgradedDescription: "Chaque fois que vous jouez une carte commune, {PlayerName}\
+    \ obtient {Value1} |Puissance{Value1:plural one=' temporaire' other='s temporaires'}|.\n\
+    Ajoutez une |Vitalité| à la main."
 SakuraBlade:
   Name: Étincelle de Sakura
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -2644,9 +2660,12 @@ FairyWrath:
     \ main."
 BestFriend:
   Name: Meilleure Amie
-  Description: Choisissez jusqu'à {Value1} carte{Value1:plural one=' |alliée|' other='s
-    |alliées|'} dans votre main, {Value1:plural one='elle reçoit' other='elles reçoivent'}
-    le maximum de points |Soutien|.
+  Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one=' |alliée|' other='s\
+    \ |alliées|'} dans votre main, {Value1:plural one='elle reçoit' other='elles reçoivent'}\
+    \ le maximum de points |Soutien|.\n|Débordement| : Gagnez {Mana}."
+  ExtraDescription1: "Choisissez jusqu'à {Value1} carte{Value1:plural one=' |alliée|'\
+    \ other='s |alliées|'} dans votre main, {Value1:plural one='elle reçoit' other='elles\
+    \ reçoivent'} le maximum de points |Soutien|.\n|d:Débordement : Gagnez {Mana}.|"
 SummerParty:
   Name: Fête de la Glace
   Description: "Obtenez {Value1} |Armure{Value1:plural one='' other='s'} de glace|.\n\
@@ -3434,7 +3453,11 @@ QingeDraw:
 PatchouliGreenAttack:
   Name: Éclair de Printemps
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nNe peut\
-    \ être joué que s'il reste au moins {Value1} mana."
+    \ être joué que si le total de mana actuel ({BattleAmount}) est supérieur au total\
+    \ de mana de base ({BaseAmount})."
+  NonbattleDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    Ne peut être joué que si le total de mana actuel est supérieur au total de mana\
+    \ de base."
 SunflowerDefense:
   Name: Jardin du Soleil
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
@@ -3560,3 +3583,7 @@ LunaticPassion:
   Name: Amour Fou
   Description: "L'augmentation des dégâts de |Passion| est modifiée à {Pourcentage}\
     \ %.\nEntrez dans l'état |Passion|."
+GreenManaCard:
+  Name: Aventure Verte
+  Description: "|Quand {SelfName} arrive en main| : Ajoutez |{Value1} Vitalité{Value1:plural\
+    \ one='' other='s'}| à la main et |Exilez| {SelfName}."
