@@ -798,7 +798,6 @@ EventHorizon:
     进入|爆发|。
     获得 {Value1} 点|暂得火力|。
     下回合开始时死亡。
-  DetailText: 'v1.4.1: 负面状态类型从「特殊」改为「负面」。'
   FlavorText: 天衣无缝的人无畏黑洞的重力。
 
 PotionDefense:
@@ -847,10 +846,20 @@ SolarSystem:
 
 FinalSpark:
   Name: 究极火花
-  Description: 对所有敌人造成 {Damage} 点伤害。
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |充盈|：获得{Mana}。
   UpgradedDescription: |-
     对所有敌人造成 {Damage} 点伤害。
     {PlayerName}进入|爆发|时，从弃牌堆回到手中。
+    |充盈|：获得{Mana}。
+  ExtraDescription1: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |d:充盈：获得{Mana}。|
+  UpgradedExtraDescription1: |-
+    对所有敌人造成 {Damage} 点伤害。
+    {PlayerName}进入|爆发|时，从弃牌堆回到手中。
+    |d:充盈：获得{Mana}。|
   FlavorText: 「弹幕最重要的就是火力！」
 
 HuoliQuankai:
@@ -1395,7 +1404,12 @@ SakuyaDetective:
 
 SakuyaSpeedup:
   Name: 加速时空
-  Description: 将|时域冲击|的层数翻倍。
+  Description: |-
+    将|时域冲击|的层数翻倍。
+    |充盈|：获得{Mana}。
+  ExtraDescription1: |-
+    将|时域冲击|的层数翻倍。
+    |d:充盈：获得{Mana}。|
   FlavorText: 我在你背后。
 
 SakuyaUsage:
@@ -1776,7 +1790,12 @@ ColdHearted:
 
 BestFriend:
   Name: 最好的朋友
-  Description: 选择手中至多 {Value1} 张|同伴|牌，其|支援度|达到最高。
+  Description: |-
+    选择手中至多 {Value1} 张|同伴|牌，其|支援度|达到最高。
+    |充盈|：获得{Mana}。
+  ExtraDescription1: |-
+    选择手中至多 {Value1} 张|同伴|牌，其|支援度|达到最高。
+    |d:充盈：获得{Mana}。|
 
 CirnoEcho:
   Name: 自然的馈赠
@@ -2694,7 +2713,12 @@ TrueMoon:
     获得 {Shield} 点|护盾|。
     获得 {Value1} 点|火力|。
     打出 {Value2} 张牌后死亡。
-  DetailText: 'v1.4.1: 负面状态类型从「特殊」改为「负面」。'
+    |充盈|：获得{Mana}。
+  ExtraDescription1: |-
+    获得 {Shield} 点|护盾|。
+    获得 {Value1} 点|火力|。
+    打出 {Value2} 张牌后死亡。
+    |d:充盈：获得{Mana}。|
   FlavorText: 真实的满月下，一切皆为狂妄的幻想。
 
 YinglangHowl:
@@ -2815,12 +2839,19 @@ PatchouliGreenAttack:
   Name: 春色闪光
   Description: |-
     造成 {Damage} 点伤害。
-    当前法力总点数不少于 {Value1} 时才能打出。
+    当前法力总点数（{BattleAmount}）高于基础法力总点数（{BaseAmount}）时才能打出。
+  NonbattleDescription: |-
+    造成 {Damage} 点伤害。
+    当前法力总点数高于基础法力总点数时才能打出。
 
 RangziSeed:
   Name: 春种秋收
   Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
   UpgradedDescription: 将一张|幻虹|置于抽牌堆顶，它具有|填充|。
+
+GreenManaCard:
+  Name: 绿色探险
+  Description: '|进入手中时|：将 {Value1} 张|生机|加入手中，然后|放逐|{SelfName}。'
 
 RangziFanshu:
   Name: 香甜的番薯
@@ -2842,6 +2873,9 @@ DizangLove:
   Name: 即席菩提
   Description: |
     打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
+  UpgradedDescription: |-
+    打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
+    将一张|生机|加入手中。
   FlavorText: 我们不用很久很刻苦就可以成佛。
 
 YuyukoSing:
