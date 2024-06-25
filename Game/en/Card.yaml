@@ -976,9 +976,10 @@ SakuyaKiller:
     \ is defeated."
   Name: Ripper in the Fog
 SakuyaSpeedup:
-  Description: Double the current |Time Pulse|.
+  Description: "Double the current |Time Pulse|.\n|Overflow|: Gain {Mana}."
   Name: Quicken Time
   FlavorText: Right Behind You.
+  ExtraDescription1: "Double the current |Time Pulse|.\n|d:Overflow: Gain {Mana}.|"
 PerfectServant:
   Description: "|For each <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"> spent|: At the start of {PlayerName}'s next turn, each card in the\
@@ -1035,8 +1036,12 @@ HuojianSaoba:
 TrueMoon:
   Name: True Full Moon
   Description: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nAfter {Value2:plural\
-    \ one='% card' other='% cards'} are played, {PlayerName} loses the game."
+    \ one='% card' other='% cards'} are played, {PlayerName} loses the game.\n|Overflow|:\
+    \ Gain {Mana}."
   FlavorText: Under the true full moon, everything is a conceited fantasy.
+  ExtraDescription1: "Gain {Shield} |Barrier|.\nGain {Value1} |Firepower|.\nAfter\
+    \ {Value2:plural one='% card' other='% cards'} are played, {PlayerName} loses\
+    \ the game.\n|d:Overflow: Gain {Mana}.|"
 AsteroidBelt:
   Description: "Deal {Damage} damage {Value1:plural one='% time' other='% times'}.\n\
     If the last card played this combat was red, gain {Value2} |Charge|."
@@ -1161,10 +1166,16 @@ StarlightTaifengSummoner:
   FlavorText: Accumulate mana for a thousand days, and unleash it all in an instant.
 FinalSpark:
   Name: Final Spark
-  Description: Deal {Damage} damage to each enemy.
+  Description: "Deal {Damage} damage to each enemy.\n|Overflow|: Gain {Mana}."
   UpgradedDescription: "Deal {Damage} damage to each enemy.\nWhen {PlayerName} enters\
-    \ |Burst|, return {SelfName} from the discard pile to the hand."
+    \ |Burst|, return {SelfName} from the discard pile to the hand.\n|Overflow|: Gain\
+    \ {Mana}."
   FlavorText: "\"Danmaku's all about firepower!\""
+  ExtraDescription1: "Deal {Damage} damage to each enemy.\n|d:Overflow: Gain {Mana}.\
+    \ |"
+  UpgradedExtraDescription1: "Deal {Damage} damage to each enemy.\nWhen {PlayerName}\
+    \ enters |Burst|, return {SelfName} from the discard pile to the hand.\n|d:Overflow:\
+    \ Gain {Mana}.|"
 RedGiantStar:
   Name: Red Giant Impact
   Description: "Deal {Damage} damage.\n|Overdrive {Value2}|: Add a |Flame| to the\
@@ -2505,7 +2516,10 @@ ColdChain:
 BestFriend:
   Name: Best Friend
   Description: "Choose up to {Value1} |Teammate| card{Value1:plural one='' other='s'}.\
-    \ Max out {Value1:plural one='its' other='their'} |Unity|."
+    \ Max out {Value1:plural one='its' other='their'} |Unity|.\n|Overflow|: Gain {Mana}."
+  ExtraDescription1: "Choose up to {Value1} |Teammate| card{Value1:plural one='' other='s'}.\
+    \ Max out {Value1:plural one='its' other='their'} |Unity|.\n|d:Overflow: Gain\
+    \ {Mana}.|"
 SummerParty:
   Name: Cool Party
   Description: "Gain {Value1} |Frost Armor|.\nEach |Teammate| in the hand gains {Value2}\
@@ -3146,11 +3160,11 @@ SunflowerDefense:
   Description: "Gain {Block} |Block|.\nAdd {Value1} |Midsummer Flowers| to the hand."
   Name: Garden of the Sun
 PatchouliGreenAttack:
-  Description: "Deal {Damage} damage.\nCan only be played if current mana total ({BattleAmount})\
-    \ is higher than mana base total ({BaseAmount})."
+  Description: "Deal {Damage} damage.\nCan only be played if the current mana total\
+    \ ({BattleAmount}) is higher than the mana base total ({BaseAmount})."
   Name: Flash of Spring
-  NonbattleDescription: "Deal {Damage} damage.\nCan only be played if current mana\
-    \ total is higher than mana base total."
+  NonbattleDescription: "Deal {Damage} damage.\nCan only be played if the current\
+    \ mana total is higher than the mana base total."
 TakaneDefense:
   Description: "Gain {Block} |Block|.\n|For each {Mana} spent|: Gain {Value1} more\
     \ |Block|."
@@ -3329,3 +3343,4 @@ BeihaiWangxiang:
 GreenManaCard:
   Description: "|When {SelfName} enters the hand|: Add |{Value1} Vitalit{Value1:plural\
     \ one='y' other='ies'}| to the hand and |Exile| {SelfName}."
+  Name: Green Adventure
