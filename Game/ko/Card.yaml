@@ -909,10 +909,13 @@ SolarSystem:
   Name: 오러리스 선
 FinalSpark:
   UpgradedDescription: "모든 적에게 피해를 {Damage} 줍니다.\n|버스트| 상태일 시 이 카드를 버린 카드 더미에서 다시\
-    \ 손으로 가져옵니다."
+    \ 손으로 가져옵니다.\n|충원|: {Mana}를 얻습니다."
   FlavorText: '"탄막에서 가장 중요한 건 화력이라구!"'
   Name: 파이널 스파크
-  Description: 모든 적에게 피해를 {Damage} 줍니다.
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|충원|: {Mana}를 얻습니다."
+  ExtraDescription1: "모든 적에게 피해를 {Damage} 줍니다.\n|d:충원: {Mana}를 얻습니다.|"
+  UpgradedExtraDescription1: "모든 적에게 피해를 {Damage} 줍니다.\n|버스트| 상태일 시 이 카드를 버린 카드 더미에서\
+    \ 다시 손으로 가져옵니다.\n|d:충원: {Mana}를 얻습니다.|"
 RedMogu:
   Description: '|중독|을 {Value1} 줍니다.'
   Name: 광대버섯
@@ -1219,7 +1222,8 @@ BackToFuture:
 SakuyaSpeedup:
   FlavorText: 당신의 뒤에 있어요.
   Name: 시간 가속
-  Description: 갖고 있는 |시간 펄스|를 두 배로 늘립니다.
+  Description: "갖고 있는 |시간 펄스|를 두 배로 늘립니다.\n|충원|: {Mana}를 얻습니다."
+  ExtraDescription1: "갖고 있는 |시간 펄스|를 두 배로 늘립니다.\n|d:충원: {Mana}를 얻습니다.|"
 SakuyaDetective:
   Name: 지명수배
   FlavorText: 잊고 계셨겠지만, 범인을 쫓는게 주 스토리라구요.
@@ -1462,8 +1466,11 @@ FreezeRiver:
   Name: 유빙
   Description: 뽑을 카드 더미의 바닥에서 카드를 가져옵니다. 해당 카드는 |일시적으로| {Mana}의 코스트를 갖습니다.
 BestFriend:
-  Description: 손에서 |동료| 카드를 최대 {Value1}장 골라 해당 카드들의 |지원력|을 최대로 채웁니다.
+  Description: "손에서 |동료| 카드를 최대 {Value1}장 골라 해당 카드들의 |지원력|을 최대로 채웁니다.\n|충원|: {Mana}를\
+    \ 얻습니다."
   Name: 최고의 친구
+  ExtraDescription1: "손에서 |동료| 카드를 최대 {Value1}장 골라 해당 카드들의 |지원력|을 최대로 채웁니다.\n|d:충원:\
+    \ {Mana}를 얻습니다.|"
 SummerParty:
   Name: 아이스 파티
   Description: "|얼음 갑옷|을 {Value1} 얻습니다.\n손에 있는 모든 |동료| 카드가 |지원력|을 {Value2} 얻습니다."
@@ -1773,9 +1780,11 @@ BlackHorseZui:
   FlavorText: 「이 탄막은…속도 위반 딱지?!」
 TrueMoon:
   Description: "|보호막|을 {Shield} 얻습니다.\n|화력|을 {Value1} 얻습니다.\n앞으로 카드를 {Value2}장 더 사용하면\
-    \ 사망합니다."
+    \ 사망합니다.\n|충원|: {Mana}를 얻습니다."
   FlavorText: 진정한 보름달 밑에서 모든 것은 별 볼 일 없는 환상일 뿐.
   Name: 진정한 보름달
+  ExtraDescription1: "|보호막|을 {Shield} 얻습니다.\n|화력|을 {Value1} 얻습니다.\n앞으로 카드를 {Value2}장\
+    \ 더 사용하면 사망합니다.\n|d:충원: {Mana}를 얻습니다.|"
 YinglangHowl:
   Description: 모든 적에게 |일시 화력 저하|를 {Value1}, |취약|을 {Value2} 줍니다.
   Name: 만월의 포효
@@ -1792,6 +1801,7 @@ DizangLove:
   Name: 인스턴트 보디
   Description: "일반 카드를 사용할 시 |일시 화력|을 {Value1} 얻습니다.\n"
   FlavorText: 오래 고생할 것 없이 즉시 성불하는 방법.
+  UpgradedDescription: "일반 카드를 사용할 시 |일시 화력|을 {Value1} 얻습니다.\n|활력|을 한 장 얻습니다."
 YuyukoSing:
   Name: 나비 날개바람
   Description: "피해를 {Damage} 줍니다.\n{SelfName}은 여러번 |강화|될 수 있습니다."
@@ -2551,8 +2561,10 @@ QingeDraw:
   Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑고, 그 중 코스트가 1보다 큰 모든 카드를 버립니다."
   FlavorText: 이른바 양샤오구이 모으기랄까나.
 PatchouliGreenAttack:
-  Description: "피해를 {Damage} 줍니다.\n마나가 {Value1}개 이상인 경우에만 사용할 수 있습니다."
+  Description: "피해를 {Damage} 줍니다.\n현재 마나 총량({BattleAmount})이 기본 마나 총량({BaseAmount})보다\
+    \ 많을 경우에만 사용할 수 있습니다."
   Name: 봄빛 섬광
+  NonbattleDescription: "피해를 {Damage} 줍니다.\n현재 마나 총량이 기본 마나 총량보다 많을 경우에만 사용할 수 있습니다."
 SunflowerDefense:
   Name: 태양의 밭
   Description: "|방어|를 {Block} 얻습니다.\n|한여름의 꽃|을 {Value1}장 얻습니다."
@@ -2660,3 +2672,6 @@ EnterEnlight:
 LunaticPassion:
   Name: 광적인 사랑
   Description: "|열정| 상태일 때 주고받는 피해 배율이 {Percentage}%가 됩니다.\n|열정|에 들어섭니다."
+GreenManaCard:
+  Name: 푸른 모험
+  Description: '|손에 들어올 시|: |활력|을 {Value1}장 얻고 {SelfName}은 |소멸|합니다.'
