@@ -1081,9 +1081,15 @@ ReadyForBurst:
 FinalSpark:
   Name: Final Spark
   UpgradedDescription: "Inflige {Damage} de daño a cada enemigo.\nCuando {PlayerName}\
-    \ entra en |Burst|, devuelve {SelfName} de la pila de descarte a la mano."
-  Description: Inflige {Damage} de daño a cada enemigo.
+    \ entra en |Burst|, devuelve {SelfName} de la pila de descarte a la mano.\n|Desbordamiento|:\
+    \ Gana {Mana}."
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|Desbordamiento|: Gana {Mana}."
   FlavorText: '"¡Danmaku es Poder!"'
+  ExtraDescription1: "Inflige {Damage} de daño a cada enemigo.\n|d:Desbordamiento:\
+    \ Gana {Mana}.|"
+  UpgradedExtraDescription1: "Inflige {Damage} de daño a cada enemigo.\nCuando {PlayerName}\
+    \ entra en |Burst|, devuelve {SelfName} de la pila de descarte a la mano.\n|d:Desbordamiento:\
+    \ Gana {Mana}.|"
 SolarSystem:
   Description: Al comienzo de cada turno de {PlayerName}, gana {Value1} |Cargas|.
   Name: Planetario Solar
@@ -1392,8 +1398,10 @@ BrokenTimeline:
     ganara maná de la base de maná al comienzo de este turno extra.
 SakuyaSpeedup:
   Name: Acelerar el Tiempo
-  Description: Duplica el |Pulso Temporal| actual.
+  Description: "Duplica el |Pulso Temporal| actual.\n|Desbordamiento|: Gana {Mana}."
   FlavorText: Justo detrás de ti.
+  ExtraDescription1: "Duplica el |Pulso Temporal| actual.\n|d:Desbordamiento: Gana\
+    \ {Mana}.|"
 DefenseDraw:
   Name: Ciclo Lunar
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1:plural one='% carta' other='%\
@@ -1875,6 +1883,8 @@ DizangLove:
   Description: "Después de que {PlayerName} juega una carta común, gana {Value1} de\
     \ |Poder Temporal|.\n"
   Name: Bodhi Instantáneo
+  UpgradedDescription: "Después de que {PlayerName} juega una carta común, gana {Value1}\
+    \ de |Poder Temporal|.\nAgrega una |Vitalidad| a la mano."
 HuiyeMana:
   FlavorText: Esta canción de cuna cuenta una historia de privilegiados pecadores.
   Description: Al comienzo del turno de {PlayerName}, gana {Value1} de maná aleatorio,
@@ -1920,7 +1930,10 @@ TrueMoon:
   FlavorText: Bajo la verdadera luna llena, todo es una fantasía vanidosa.
   Description: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Poder|.\nDespués de\
     \ jugar {Value2:plural one='% carta' other='% cartas'}, {PlayerName} pierde la\
-    \ partida."
+    \ partida.\n|Desbordamiento|: Gana {Mana}."
+  ExtraDescription1: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Poder|.\nDespués\
+    \ de jugar {Value2:plural one='% carta' other='% cartas'}, {PlayerName} pierde\
+    \ la partida.\n|d:Desbordamiento: Gana {Mana}.|"
 SuikaBigball:
   Description: "Inflige {Damage} de daño. Luego, inflige {HalfDamage} de daño a los\
     \ demás enemigos.\nPierde {Value1} de |Poder|."
@@ -2442,7 +2455,10 @@ BestFriend:
   Name: Mejores Amigas
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Compañera{Value1:plural\
     \ one='' other='s'}|. Establece{Value1:plural one='' other='n'} su |Influencia|\
-    \ al máximo."
+    \ al máximo.\n|Desbordamiento|: Gana {Mana}."
+  ExtraDescription1: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Compañera{Value1:plural\
+    \ one='' other='s'}|. Establece{Value1:plural one='' other='n'} su |Influencia|\
+    \ al máximo.\n|d:Desbordamiento: Gana {Mana}.|"
 PlayWithWaste:
   Name: Rebuscar en la Basura
   Description: "Elige 1 de {Value1} cartas |Herramientas| no raras para agregarla\
@@ -3192,9 +3208,11 @@ YonglinDraw:
     de esta forma |cuestan temporalmente| {Mana} maná menos.
   Name: Memorias de la Era Divina
 PatchouliGreenAttack:
-  Description: "Inflige {Damage} de daño\nSolo se puede jugarse si quedan al menos\
-    \ {Value1} manas."
+  Description: "Inflige {Damage} de daño\nSolo se puede jugar si el maná total actual\
+    \ ({BattleAmount}) es mayor que el maná total base ({BaseAmount})."
   Name: Destello de Primavera
+  NonbattleDescription: "Inflige {Damage} de daño.\nSolo se puede jugar si el maná\
+    \ total actual es mayor que el maná total base."
 GreenLotus:
   Description: Gana {Mana}.
   Name: Loto Iluminado por la Luna
@@ -3335,3 +3353,7 @@ MoodAttack:
     \ mentales|. devuelve {SelfName} de la pila de descarte a la mano."
 EnterEnlight:
   Description: Entra en el estado |Fuga|.
+GreenManaCard:
+  Name: Aventura Verde
+  Description: "|Cuando {SelfName} entra en la mano|: Agrega |{Value1} Vitalidad{Value1:plural\
+    \ one='' other='es'}| a la mano y se |Exilia| {SelfName}."
