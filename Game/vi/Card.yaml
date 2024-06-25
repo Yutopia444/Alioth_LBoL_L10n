@@ -381,7 +381,7 @@ RedLaser:
   UpgradedDescription: "Gây {Damage} sát thương {AttackTimes} lần.\nYểm {Value1} |Dễ\
     \ Tổn Hại|."
 Potion:
-  Description: '|Khi Vào Tay|: Nhận {Mana}, gây {Damage} lên một kẻ địch ngẫu nhiên
+  Description: '|Khi vào tay|: Nhận {Mana}, gây {Damage} lên một kẻ địch ngẫu nhiên
     và |Trục Xuất| lá này.'
   FlavorText: Cảnh báo! Lọ thuốc có thể phát nổ bất cứ lúc nào!
   Name: Lọ Thuốc Bất Ổn
@@ -654,11 +654,18 @@ PotionDefense:
     \ |Lọ Thuốc Bất Ổn| được kích hoạt, nhận {Value1} |Hộ Giáp|."
   Name: Bay Cùng Trời Sao
 FinalSpark:
-  Description: Gây {Damage} sát thương cho mỗi kẻ địch.
+  Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\n|Dồi Dào|: Nhận {Mana}."
   Name: Chớp Lửa Cuối Cùng
   UpgradedDescription: "Gây {Damage} sát thương cho mỗi kẻ địch.\nKhi {PlayerName}\
-    \ tiến vào trạng thái |Bùng Nổ|, hoàn trả lá này lên tay từ Chồng Bài Bỏ."
+    \ tiến vào trạng thái |Bùng Nổ|, hoàn trả lá này lên tay từ Chồng Bài Bỏ.\n|Dồi\
+    \ Dào|: Nhận {Mana}."
   FlavorText: '"Màn đạn quan trọng nhất là hỏa lực!"'
+  ExtraDescription1: "Gây {Damage} sát thương cho mỗi kẻ địch.\nKhi {PlayerName} tiến\
+    \ vào trạng thái |Bùng Nổ|, hoàn trả lá này lên tay từ Chồng Bài Bỏ.\n|d:Dồi Dào:\
+    \ Nhận {Mana}.|"
+  UpgradedExtraDescription1: "Gây {Damage} sát thương cho mỗi kẻ địch.\nKhi {PlayerName}\
+    \ tiến vào trạng thái |Bùng Nổ|, hoàn trả lá này lên tay từ Chồng Bài Bỏ.\n|d:Dồi\
+    \ Dào: Nhận {Mana}.|"
 CoolMaid:
   Description: "Thêm {Value1} lá |Phóng Dao| lên tay.\nNhận {Mana}."
   Name: Hầu Gái Thanh Lịch
@@ -758,7 +765,7 @@ CleanRoom:
     \ tay cho đến hết trận đấu, nếu bỏ đi một lá |Phóng Dao| bằng cách này, thay vào\
     \ đó |Nâng Cấp| tất cả các lá bài trên tay cho đến hết trận đấu."
 BladePower:
-  Description: "Nhận {Value1} |Hỏa Lực|.\n|Khi Vào Tay|: Nếu lá bài này là lá duy\
+  Description: "Nhận {Value1} |Hỏa Lực|.\n|Khi vào tay|: Nếu lá bài này là lá duy\
     \ nhất trên tay trong khoảnh khắc đó, hiệu ứng của nó được nhân đôi. (Hiệu quả\
     \ cho đến khi rời tay)"
   Name: Ánh Bạc Chớp Lóe
@@ -1098,8 +1105,9 @@ SakuyaDetective:
   FlavorText: Có lẽ bạn đã quên, nhưng trò chơi này là một trò chơi trinh thám.
 SakuyaSpeedup:
   Name: Tua Nhanh Thời Gian
-  Description: Nhân đôi lượng |Xung Thời Gian| hiện có.
+  Description: "Nhân đôi lượng |Xung Thời Gian| hiện có.\n|Dồi Dào|: Nhận {Mana}."
   FlavorText: Ở ngay đằng sau bạn.
+  ExtraDescription1: "Nhân đôi lượng |Xung Thời Gian| hiện có.\n|d:Dồi Dào: Nhận {Mana}.|"
 SakuyaUsage2:
   Name: Sử Dụng Sakuya Đúng Cách
   Description: '{PlayerName} kết thúc lượt và nhận một lượt phụ.'
@@ -1473,8 +1481,10 @@ KoishiBlockG:
   Name: Muôn Hoa Khoe Sắc
 BestFriend:
   Name: Người Bạn Tốt Nhất
-  Description: Chọn tối đa {Value1} lá |Đồng Đội|, nâng số |Trợ Sức| của {Value1:plural
-    one='nó' other='chúng'} lên mức cao nhất.
+  Description: "Chọn tối đa {Value1} lá |Đồng Đội|, nâng số |Trợ Sức| của {Value1:plural\
+    \ one='nó' other='chúng'} lên mức cao nhất.\n|Dồi Dào|: Nhận {Mana}."
+  ExtraDescription1: "Chọn tối đa {Value1} lá |Đồng Đội|, nâng số |Trợ Sức| của {Value1:plural\
+    \ one='nó' other='chúng'} lên mức cao nhất.\n|d:Dồi Dào: Nhận {Mana}.|"
 LarvaDefense:
   Description: "Nhận {Block} |Khiên|.\nYểm {Value1} |Suy Nhược| lên từng kẻ địch.\n\
     Nếu có một lá |Larva, Thần Nữ Đêm Hè| đã triệu hồi trên tay, yểm {Value2} |Nhiễm\
@@ -1670,10 +1680,12 @@ RemiliaFate:
     \ 1, 2 và 3 từ Chồng Bài Bốc lên tay."
 TrueMoon:
   Description: "Nhận {Shield} |Hộ Giáp|.\nNhận {Value1} |Hỏa Lực|.\nSau khi chơi {Value2}\
-    \ lá, thua trận đấu."
+    \ lá, thua trận đấu.\n|Dồi Dào|: Nhận {Mana}."
   Name: Trăng Thật Đã Tròn
   FlavorText: Dưới mặt trăng tròn thực sự, mọi thứ khác chỉ là những ảo tưởng ngông
     cuồng.
+  ExtraDescription1: "Nhận {Shield} |Hộ Giáp|.\nNhận {Value1} |Hỏa Lực|.\nSau khi\
+    \ chơi {Value2} lá, thua trận đấu.\n|d:Dồi Dào: Nhận {Mana}.|"
 RemiliaJizao:
   Name: Nóng Vội
   FlavorText: "\"Nếu tôi lá tiếp theo bốc được mà là 'Bảo Châu Nhân Tạo', tôi sẽ ngất\
@@ -1877,6 +1889,8 @@ DizangLove:
     \ Tạm Thời|.\n"
   Name: Bồ Đề Tức Thời
   FlavorText: Chúng ta đều có thể thành Phật mà không cần khổ tu hay vất vả.
+  UpgradedDescription: "Sau khi một lá Thường được chơi, {PlayerName} nhận {Value1}\
+    \ |Hỏa Lực Tạm Thời|.\nThêm 1 lá |Sức Sống| lên tay."
 Yueguang:
   Name: Ánh Trăng Im Lặng
   Description: '|Khi được bốc|: Mất {Value1} mana ngẫu nhiên.'
@@ -2258,7 +2272,7 @@ Shoot:
   FlavorText: Màn đạn thông dụng có thể thấy được khắp Ảo Tưởng Hương.
 Panzi:
   Name: Đĩa Nước
-  Description: "Gây {Damage} sát thương.\n|Khi Vào Tay|: Thêm một |Bản Sao| của {SelfName}\
+  Description: "Gây {Damage} sát thương.\n|Khi vào tay|: Thêm một |Bản Sao| của {SelfName}\
     \ lên tay."
 PoorAttack:
   FlavorText: Chớ khinh thiếu nữ nghèo.
@@ -3017,9 +3031,11 @@ YonglinDraw:
     đi {Mana}.
   Name: Ký Ức Của Thời Đại Của Thần
 PatchouliGreenAttack:
-  Description: "Gây {Damage} sát thương.\nLá bài này chỉ có thể được chơi khi đang\
-    \ có ít nhất {Value1} mana."
+  Description: "Gây {Damage} sát thương.\nLá bài này chỉ có thể được chơi khi lượng\
+    \ mana hiện có ({BattleAmount}) nhiều hơn tổng số mana của kho mana ({BaseAmount})."
   Name: Sắc Xuân Bừng Sáng
+  NonbattleDescription: "Gây {Damage} sát thương.\nLá bài này chỉ có thể được chơi\
+    \ khi lượng mana hiện có nhiều hơn tổng số mana của kho mana."
 SunflowerDefense:
   Name: Vườn Hoa Mặt Trời
   Description: "Nhận {Block} |Khiên|.\nThêm {Value1} lá |Hoa Giữa Hạ| lên tay."
@@ -3119,3 +3135,7 @@ PassionAttackToDraw:
   Name: Tình Yêu Vị Tha
   Description: "Gây {Damage} sát thương {Value1} lần.\nTiến vào |Nhiệt Tình|.\nChuyển\
     \ lá bài này vào trong Chồng Bài Bốc."
+GreenManaCard:
+  Name: Hành Trình Tươi Xanh
+  Description: '|Khi vào tay|: Thêm {Value1} lá |Sức Sống| lên tay và |Trục Xuất|
+    lá này.'
