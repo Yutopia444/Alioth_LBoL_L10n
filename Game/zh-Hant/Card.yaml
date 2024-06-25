@@ -720,7 +720,7 @@ StarShower:
 MarisaHoldCard:
   Name: 難以割捨
   Description: |-
-    選擇最多 {Value1} 張手牌，|保留|一回合。
+    選擇至多 {Value1} 張手牌，|保留|一回合。
     獲得 {Block} 點|格擋|。
   FlavorText: 「別扔啊，這東西將來可能有用呢。」
 
@@ -770,8 +770,8 @@ WizardStudy:
   FlavorText: 別以為只有帕秋莉在研究怎麼轉化光玉。
 ExilePotion:
   Name: 廢物利用
-  Description: 選擇最多 {Value1} 張手牌|放逐|，將等量的|不穩定魔藥|洗入棄牌堆。
-  UpgradedDescription: 從手牌、抽牌堆及棄牌堆中選擇最多 {Value1} 張牌|放逐|，將等量的|不穩定魔藥|洗入棄牌堆。
+  Description: 選擇至多 {Value1} 張手牌|放逐|，將等量的|不穩定魔藥|洗入棄牌堆。
+  UpgradedDescription: 從手牌、抽牌堆及棄牌堆中選擇至多 {Value1} 張牌|放逐|，將等量的|不穩定魔藥|洗入棄牌堆。
   FlavorText: 「出家人要斷捨離，那簡單，反正也不是我的。」
 
 EventHorizon:
@@ -825,12 +825,16 @@ SolarSystem:
 
 FinalSpark:
   Name: 究極火花
-  Description: 對所有敵人造成 {Damage} 點傷害。
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|充盈|：獲得{Mana}。"
   UpgradedDescription: |-
     對所有敵人造成 {Damage} 點傷害。
     {PlayerName}進入|爆發|時，從棄牌堆回到手中。
+    |充盈|：獲得{Mana}。
   FlavorText: 「彈幕最重要的就是火力！」
 
+  ExtraDescription1: "對所有敵人造成 {Damage} 點傷害。\n|d:充盈：獲得{Mana}。|"
+  UpgradedExtraDescription1: "對所有敵人造成 {Damage} 點傷害。\n{PlayerName}進入|爆發|時，從棄牌堆回到手中。\n\
+    |d:充盈：獲得{Mana}。|"
 HuoliQuankai:
   Name: 火力全開
   Description: |-
@@ -844,7 +848,7 @@ HuoliQuankai:
 MasterOfCollection:
   Name: 收集專家
   Description: |-
-    選擇最多 {Value2} 張手牌賦予|保留|。
+    選擇至多 {Value2} 張手牌賦予|保留|。
     每當一張牌被|保留|時，降低 {Value1} 點它的隨機費用，直到戰鬥結束。
   FlavorText: 「垃圾？這些怎麼會是垃圾呢？」
 
@@ -1009,7 +1013,7 @@ Knife:
 Dejavu:
   Name: 既視感
   Description: |-
-    選擇最多 {Value1} 張手牌置於抽牌堆頂。
+    選擇至多 {Value1} 張手牌置於抽牌堆頂。
     抽 {Value1} 張牌。
     獲得{Mana}。
   FlavorText: 又是同一隻黑貓。
@@ -1093,7 +1097,7 @@ CleanRoom:
 
 ExileMagic:
   Name: 調換魔法
-  Description: 選擇最多 {Value1} 張手牌，|放逐|它們，將等量的|飛刀|加入手中。
+  Description: 選擇至多 {Value1} 張手牌，|放逐|它們，將等量的|飛刀|加入手中。
 
 SakuyaSleep:
   Name: 稍作休息
@@ -1153,7 +1157,7 @@ VampireHunter:
 PrepareParty:
   Name: 準備宴會
   Description: |-
-    將最多一張手牌置於抽牌堆頂。
+    將至多一張手牌置於抽牌堆頂。
     獲得 {Block} 點|格擋|。
 
   FlavorText: 保證沒有預製菜。
@@ -1291,7 +1295,7 @@ LunaClock:
 
 SpecialClock:
   Name: 女僕秘技
-  Description: 在{PlayerName}的回合開始時，選擇最多一張手牌丟棄，抽等量的牌。
+  Description: 在{PlayerName}的回合開始時，選擇至多一張手牌丟棄，抽等量的牌。
   FlavorText: 客廳掃除的用時：0.4秒
 
 SakuyaDio:
@@ -1362,9 +1366,10 @@ SakuyaDetective:
 
 SakuyaSpeedup:
   Name: 加速時空
-  Description: 將|時域衝擊|的層數翻倍。
+  Description: "將|時域衝擊|的層數翻倍。\n|充盈|：獲得{Mana}。"
   FlavorText: 我在你背後。
 
+  ExtraDescription1: "將|時域衝擊|的層數翻倍。\n|d:充盈：獲得{Mana}。|"
 SakuyaUsage:
   Name: 咲夜的錯誤用法
   Description: |-
@@ -1619,7 +1624,7 @@ MoreFriends:
   DetailText: '|e:備選牌|的總費用數量小於五。'
 FreezeToIce:
   Name: 冰凍標本
-  Description: 選擇最多 {Value1} 張手牌|放逐|，將等量的|冰之翼|洗入抽牌堆。
+  Description: 選擇至多 {Value1} 張手牌|放逐|，將等量的|冰之翼|洗入抽牌堆。
 
   FlavorText: 你們都是我的翅膀（物理）！
   UpgradedDescription: 從手牌、抽牌堆和棄牌堆中選擇至多 {Value1} 張牌|放逐|，將等量的|冰之翼|洗入抽牌堆。
@@ -1637,7 +1642,7 @@ SummerParty:
 
 ColdChain:
   Name: 冷鏈物流
-  Description: 從抽牌堆中選擇最多 {Value1} 張牌移入手中。
+  Description: 從抽牌堆中選擇至多 {Value1} 張牌移入手中。
 
 DeepFreeze:
   Name: 冰尖之舞
@@ -1679,8 +1684,9 @@ InstantFreeze:
 
 BestFriend:
   Name: 最好的朋友
-  Description: 選擇手中最多 {Value1} 張|同伴|牌，其|支援度|達到最高。
+  Description: "選擇手中至多 {Value1} 張|同伴|牌，其|支援度|達到最高。\n|充盈|：獲得{Mana}。"
 
+  ExtraDescription1: "選擇手中至多 {Value1} 張|同伴|牌，其|支援度|達到最高。\n|d:充盈：獲得{Mana}。|"
 CirnoEcho:
   Name: 自然的饋贈
   Description: 從棄牌堆中選擇 {Value1} 張牌移回手中，賦予|回響|。
@@ -1735,7 +1741,7 @@ HualiIce:
 ChooseFriend:
   Name: 相約霧之湖
   Description: |-
-    從 {Value1} 張隨機的|同伴|牌中選擇最多 {Value2} 張加入手中，它們的費用可以用任意顔色支付。
+    從 {Value1} 張隨機的|同伴|牌中選擇至多 {Value2} 張加入手中，它們的費用可以用任意顔色支付。
   FlavorText: 有情就牽手。
 
   DetailText: '|e:備選牌|無視法力、顏色和所有者限制，總費用數量小於五。'
@@ -1944,10 +1950,10 @@ NazrinBaota:
 RingoJinghua:
   Name: 淨化大地
   Description: |-
-    選擇最多 {Value1} 張手牌|放逐|。
+    選擇至多 {Value1} 張手牌|放逐|。
     獲得 {Value2} 點<sprite="Point" name="Power">。
   UpgradedDescription: |-
-    從手牌、抽牌堆及棄牌堆中選擇最多 {Value1} 張牌|放逐|。
+    從手牌、抽牌堆及棄牌堆中選擇至多 {Value1} 張牌|放逐|。
     獲得 {Value2} 點<sprite="Point" name="Power">。
   FlavorText: 此次作戰被命名為「地上補完計劃」。
 
@@ -2016,7 +2022,7 @@ PlayWithWater:
     選擇一張手牌丟棄。
   UpgradedDescription: |-
     抽 {Value1} 張牌。
-    選擇最多一張手牌丟棄。
+    選擇至多一張手牌丟棄。
   FlavorText: Play with water.
 
 QinglanAttack:
@@ -2209,10 +2215,10 @@ HinaAttack:
 RemiliaFate:
   Name: 操縱命運
   Description: |-
-    選擇最多 {Value1} 張手牌丟棄。
+    選擇至多 {Value1} 張手牌丟棄。
     將抽牌堆中隨機的數張牌移入手中，它們的基礎費用總數分別為一二三。
   UpgradedDescription: |-
-    選擇最多 {Value1} 張手牌丟棄。
+    選擇至多 {Value1} 張手牌丟棄。
     將抽牌堆中隨機的數張牌移入手中，它們的基礎費用總數分別為一二三四五。
 
 BailianBlack:
@@ -2234,8 +2240,11 @@ TrueMoon:
     獲得 {Shield} 點|護盾|。
     獲得 {Value1} 點|火力|。
     打出 {Value2} 張牌後死亡。
+    |充盈|：獲得{Mana}。
   FlavorText: 真實的滿月下，一切皆為狂妄的幻想。
 
+  ExtraDescription1: "獲得 {Shield} 點|護盾|。\n獲得 {Value1} 點|火力|。\n打出 {Value2} 張牌後死亡。\n\
+    |d:充盈：獲得{Mana}。|"
 YinglangHowl:
   Name: 滿月咆哮
   Description: 對所有敵人施加 {Value1} 點|暫失火力|及 {Value2} 回合|易傷|。
@@ -2358,6 +2367,7 @@ DizangLove:
     打出普通卡牌後，{PlayerName}獲得 {Value1} 點|暫得火力|。
 
   FlavorText: 我們不用很久很刻苦就可以成佛。
+  UpgradedDescription: "打出普通卡牌後，{PlayerName}獲得 {Value1} 點|暫得火力|。\n將一張|生機|加入手中。"
 YuyukoSing:
   Name: 蝶之羽風
   Description: |-
@@ -2407,7 +2417,7 @@ HuiyeAttack:
   Name: 蓬萊的樹海
   Description: |-
     |每支付一點不同顔色的費用|：對所有敵人造成 {Damage} 點傷害。
-    總計支付費用不低於 {Value2} 點時，從|放逐|區選擇最多 {Value1} 張牌移回手中。
+    總計支付費用不低於 {Value2} 點時，從|放逐|區選擇至多 {Value1} 張牌移回手中。
 
 HuiyeMana:
   Name: 竹取的物語
@@ -2418,7 +2428,7 @@ HuiyinAttack:
   Name: 水戶光國
   Description: |-
     造成 {Damage} 點傷害。
-    選擇最多 {Value1} 張手牌丟棄，抽等量的牌。
+    選擇至多 {Value1} 張手牌丟棄，抽等量的牌。
 
 ReadBook:
   Name: 讀書看報
@@ -2496,7 +2506,7 @@ KokoroDance:
 HuiyeTime:
   Name: 永遠與須臾
   Description: |-
-    選擇最多 {Value1} 張手牌，|保留|它們一回合。
+    選擇至多 {Value1} 張手牌，|保留|它們一回合。
     結束{PlayerName}的回合，進行一個額外的回合，這一回合內只能打出 {Value1} 張牌。
 
   FlavorText: 起床上班是永恆，閉眼睡覺是須臾。
@@ -2595,11 +2605,11 @@ NueExile:
 HuiyinRetain:
   Name: 一條歸橋
   Description: |-
-    從棄牌堆中選擇最多 {Value1} 張牌移回手中，|保留|它們一回合。
+    從棄牌堆中選擇至多 {Value1} 張牌移回手中，|保留|它們一回合。
     結束{PlayerName}的回合，進行一個額外的回合。
     |時間有限|{Mana}。
   ExtraDescription1: |-
-    從棄牌堆中選擇最多 {Value1} 張牌加入手中，|保留|它們一回合。
+    從棄牌堆中選擇至多 {Value1} 張牌加入手中，|保留|它們一回合。
     結束{PlayerName}的回合，進行一個額外的回合。
     |d:時間有限{Mana}。|
 
@@ -2702,7 +2712,7 @@ LilyChun:
   DetailText: "|e:備選牌|無視所有者限制。\n|升級|後還會無視法力和顏色限制。\n不能找到{SelfName}。"
 XiangziEcho:
   Name: 山谷回聲
-  Description: 選擇最多 {Value1} 張手牌賦予|回響|。
+  Description: 選擇至多 {Value1} 張手牌賦予|回響|。
   FlavorText: 「呀————呼————」
 
 YonglinUpgrade:
@@ -2896,7 +2906,7 @@ JunkoNightmare:
     對所有敵人造成 {Damage} 點傷害 {Value1} 次。
     |放逐|所有的手牌，將等量的|純粹|加入手中。
   UpgradedDescription: |-
-    選擇最多 {Value2} 張手牌免於|純粹|化。
+    選擇至多 {Value2} 張手牌免於|純粹|化。
     對所有敵人造成 {Damage} 點傷害 {Value1} 次。
     |放逐|所有的手牌，將等量的|純粹|加入手中。
 
@@ -3704,7 +3714,8 @@ QingeDraw:
   FlavorText: 這招又被稱爲「找小鬼」。
 PatchouliGreenAttack:
   Name: 春色閃光
-  Description: "造成 {Damage} 點傷害。\n當前法力總點數不少於 {Value1} 時才能打出。"
+  Description: "造成 {Damage} 點傷害。\n當前法力總點數（{BattleAmount}）高於基礎法力總點數（{BaseAmount}）時才能打出。"
+  NonbattleDescription: "造成 {Damage} 點傷害。\n當前法力總點數高於基礎法力總點數時才能打出。"
 DefaultPeace:
   Name: 熱戀荊棘
   Description: "獲得 {Block} 點|格擋|。\n進入|平靜|。"
@@ -3770,7 +3781,7 @@ PassionAttackToDraw:
   Description: "造成 {Damage} 點傷害 {Value1} 次。\n進入|熱情|。\n將這張牌洗入抽牌堆。"
 FriendDraw:
   Name: 花園集會
-  Description: 使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Value1} 張牌。
+  Description: "使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Value1} 張牌。\n使用|u:終結技|時額外獲得 {Value1} 點隨機的法力。"
 MoodAttack:
   Name: 心境連擊
   Description: "造成 {Damage} 點傷害。\n當{PlayerName}轉化|心境|時，從棄牌堆回到手中。"
@@ -3811,3 +3822,6 @@ EnterEnlight:
 LunaticPassion:
   Name: 瘋狂之愛
   Description: "|熱情|狀態下的額外傷害比例改為 {Percentage}%。\n進入|熱情|。"
+GreenManaCard:
+  Name: 綠色探險
+  Description: '|進入手中時|：將 {Value1} 張|生機|加入手中，然後|放逐|{SelfName}。'

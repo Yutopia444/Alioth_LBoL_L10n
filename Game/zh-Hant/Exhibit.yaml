@@ -180,7 +180,7 @@ ShijieSuipian:
   Name: 世界的碎片
   Description: |-
     提供基礎法力{BaseMana}。
-    獲取時，選擇牌庫中的最多 {Value1} 張牌，隨機變化為一張稀有牌及一張罕見牌。
+    獲取時，選擇牌庫中的至多 {Value1} 張牌，隨機變化為一張稀有牌及一張罕見牌。
   FlavorText: 透過這些碎片，能觀察到其他玩家的遊戲情況。
 
 TianwenWangyuanjing:
@@ -275,7 +275,7 @@ XianzheShi:
   Name: 賢者之石
   Description: |-
     提供基礎法力{BaseMana}。
-    放棄卡牌獎勵提高 {Value1} 點<sprite="Point" name="Gold">。
+    回合結束時不會失去|彩色法力|{Mana}。
   FlavorText: 雖說賢者之石是煉金術的終極追求，帕秋莉卻將它們當彈幕發射。
 
 TaiguGouyu:
@@ -283,7 +283,7 @@ TaiguGouyu:
   Description: |-
     提供基礎法力{BaseMana}。
     打出一張卡牌後，如果實際支付的法力總數不少於 {Value1} ，下回合開始時獲得{Mana}。
-  FlavorText: "擁有的勾玉越多，最大生命值越高。\n抱歉，開錯遊戲了。"
+  FlavorText: "擁有的勾玉越多，最大生命值越高。"
 
 KongbaiKapai:
   Name: 空白卡牌
@@ -318,9 +318,7 @@ YizangnuoWuzhi:
 
 LouguanJian:
   Name: 樓觀劍
-  Description: '{PlayerName}的第一回合開始時，獲得{Mana}。
-
-    {PlayerName}造成攻擊傷害後，施加 {Value1} 層|鎖定|。'
+  Description: '{PlayerName}造成攻擊傷害後，施加 {Value1} 層|鎖定|。'
   FlavorText: 「砍了！」
 
 He3:
@@ -581,7 +579,7 @@ ShoushiYubi:
 
 Saiqianxiang:
   Name: 賽錢箱
-  Description: "取得時，取得 {Value2} 點<sprite=\"Point\" name=\"Gold\">。\n可以在隙間小屋|募捐|，獲得 {Value1} 點<sprite=\"\
+  Description: "可以在隙間小屋|募捐|，獲得 {Value1} 點<sprite=\"Point\" name=\"Gold\">。\n放棄卡牌獎勵提高 {Value2} 點<sprite=\"\
     Point\" name=\"Gold\">。"
   FlavorText: 裏面是靈夢的全部財產。
 
@@ -970,3 +968,7 @@ YueGujiu:
   Name: 月之古酒
   Description: "提供基礎法力{BaseMana}。\n打出一張有|放逐|的卡牌後，如果支付了任意法力，獲得{Mana}。"
   FlavorText: 讓永琳動容的故鄉陳釀。
+QicaiLianhua:
+  Name: 七色蓮華
+  Description: "{PlayerName}的回合開始時，獲得兩點隨機法力。\n厄運：|迷幻|。"
+  FlavorText: 中國功夫真的能做到這種事嗎。
