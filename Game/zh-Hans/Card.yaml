@@ -1217,6 +1217,12 @@ SakuyaClock:
     以{SelfName}击败一名敌人时，|放逐|{SelfName}，结束{PlayerName}的回合，进行一个额外的回合。
   FlavorText: 我在电子表上装什么APP才能获得这个功能。
 
+LightSpeed:
+  Name: 光速跃迁
+  Description: |-
+    造成 {Damage} 点伤害。
+    如果这回合内弃过牌，获得{Mana}。
+
 DangerousMagician:
   Name: 危险的魔术师
   Description: |-
@@ -1233,12 +1239,6 @@ LunaDial:
   Description: |-
     结束{PlayerName}的回合，进行一个额外的回合。
     |进入手中时|：费用降低{Mana}，直到战斗结束。
-
-LightSpeed:
-  Name: 光速跃迁
-  Description: |-
-    造成 {Damage} 点伤害。
-    如果这回合内弃过牌，获得{Mana}。
 
 DropToKnife:
   Name: 银之壁垒
@@ -1748,10 +1748,6 @@ ColdChain:
   Name: 冷链物流
   Description: 从抽牌堆中选择至多 {Value1} 张牌移入手中。
 
-DeepFreeze:
-  Name: 冰尖之舞
-  Description: 打出蓝色卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
-
 FrozenOrb:
   Name: 冰封球
   Description: |-
@@ -1764,6 +1760,10 @@ IceBlock:
     免疫所有的伤害一回合。
     移除所有的|格挡|、|护盾|和|闪避|。
     |保留|当前的手牌一回合，结束{PlayerName}的回合。
+
+DeepFreeze:
+  Name: 冰尖之舞
+  Description: 打出蓝色卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
 
 IceMatrix:
   Name: 冰冻矩阵
@@ -2735,19 +2735,19 @@ RemiliaJizao:
     「如果下一抽还是"人造珠宝"我就要闹了！」
     ——周五欢乐夜
 
-LeiguAttack:
-  Name: 低音的雷鼓
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害。
-    拥有|护盾|或|格挡|的敌人会受到两次伤害。
-  FlavorText: 希望你的邻居不喜欢玩这个。
-
 MeihongAttack:
   Name: 凤翼天翔
   Description: |-
     失去 {Value1} 点生命。
     对目标造成 {Damage} 点伤害 {Value2} 次。
   FlavorText: 把射命丸文烧成烤鸟。
+
+LeiguAttack:
+  Name: 低音的雷鼓
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    拥有|护盾|或|格挡|的敌人会受到两次伤害。
+  FlavorText: 希望你的邻居不喜欢玩这个。
 
 HuaBlock:
   Name: 作战姿态
@@ -2849,9 +2849,10 @@ RangziSeed:
   Description: 将一张|生机|置于抽牌堆顶，它具有|填充|。
   UpgradedDescription: 将一张|幻虹|置于抽牌堆顶，它具有|填充|。
 
-GreenManaCard:
-  Name: 绿色探险
+AhongMana:
+  Name: 樱色之海
   Description: '|进入手中时|：将 {Value1} 张|生机|加入手中，然后|放逐|{SelfName}。'
+  UpgradedDescription: '|进入手中时|：将 {Value1} 张|生机|加入手中，|升级| {Value2} 张随机的手牌，然后|放逐|{SelfName}。'
 
 RangziFanshu:
   Name: 香甜的番薯
@@ -3310,9 +3311,12 @@ ReisenMana:
 FourFlan:
   Name: 四重存在
   Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
+    造成 {Damage} 点伤害。
+    获得 {Value1} 点|火力|。
     |战斗开始时|：将 {Value2} 张复制洗入抽牌堆中，这些复制|暂塑|为{Mana}，具有|放逐|、|虚无|。
-  ExtraDescription1: 造成 {Damage} 点伤害 {Value1} 次。
+  ExtraDescription1: |-
+    造成 {Damage} 点伤害。
+    获得 {Value1} 点|火力|。
 
 HekaHellRain:
   Name: 地狱之雨
@@ -3891,6 +3895,12 @@ QiannianShenqiCard:
   Description: |-
     在抽牌达到|e:金字塔形状的积木|的上限后，还能以失去 {Value1} 点生命为代价继续抽牌。
     打出后效果持续到本场战斗结束。
+
+MeilingLianhua:
+  Name: 极彩「彩光乱舞」
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得 {Value1} 点|火力|。
 
 AyaNews:
   Name: 《文文新闻》
