@@ -1221,8 +1221,11 @@ HekaHellRain:
   FlavorText: 「水沫」と「火焔」を組み合わせて蒸発反応を起こし雨を召喚することで4のダメージを与えることができる。
 FourFlan:
   Name: フォーオブアカインド
-  ExtraDescription1: '{Damage}ダメージを{Value1}回与える。'
-  Description: "{Damage}ダメージを{Value1}回与える。\n|戦闘開始時|：このカードのコピーを{Value2}枚山札に加える。\nそれらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
+  ExtraDescription1: '{Damage}ダメージを与える。
+
+    |火力|{Value1}を得る。'
+  Description: "{Damage}ダメージを与える。\n|火力|{Value1}を得る。\n|戦闘開始時|：このカードのコピーを{Value2}枚山札に加える。\n\
+    それらは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。"
 XingMoney:
   Name: レイディアントトレジャーガン
   Description: "{Damage}ダメージを与える。\n|退治|：{Value1}<sprite=\"Point\" name=\"Gold\">を得る。"
@@ -2023,7 +2026,7 @@ LoveFire:
     支払ったマナを記憶し、次にこのカードを使用した際に同量のマナを得る。"
 BabyDream:
   Name: 胎児の夢
-  Description: すべての|基本|カードの臨時コストを{Mana}にし、|反復|を与える。
+  Description: "敵全体に{Damage}ダメージを与える。\n|平静|状態に入る。"
 MoonTipsAttack:
   Name: 弾幕補充
   Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
@@ -2163,8 +2166,10 @@ AyaNewsAliceSp:
   Description: '|ターン終了時|：霊力{Value1}を失う。'
   FlavorText: 月都万象展特集！{PlayerName}に関するゴシップを多数ピックアップ！！
 QiangweiDiyu:
-  Name: 薔薇地獄
-  Description: '|恋心|{Value1} を得る。'
+  Name: ローズ地獄
+  Description: '|ローズ地獄|{Value1}を得る。
+
+    |基本|カードを使用する度、|ローズ地獄|{Value2}を得てカードを1枚引く。'
 MoonSea:
   Name: 静かの海（裏）
   Description: "{Block}|ブロック|を得る。\n|純粋|を1枚手札に加える。"
@@ -2321,6 +2326,7 @@ YukariFlyObject:
   Description: 次のターン開始時、最もライフが多い敵に{Value1}ダメージを与える。
 BeihaiWangxiang:
   Name: 被害妄想
+  Description: "{Shield}|バリア|を得る。\n|バリア|の値の半分の|抑制|を得る。"
 YonglinDraw:
   Name: 神代の記憶
   Description: カードを{Value1}枚引く。それらの|臨時コスト|を{Mana}下げる。
@@ -2383,5 +2389,89 @@ KoishiZeroAttack:
 PassionDefense:
   Name: 本能の愛
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
-GreenManaCard:
-  Description: このカードが手札に加えられた時、|活力|を{Value1}枚手札に加え、{SelfName}を|廃棄|する。
+InspirationGreen:
+  Description: '{Mana}を得る。'
+InspirationRed:
+  Description: 敵全体に{Damage}ダメージを{Value1}回与える。
+EnterPeace:
+  Description: '|平静|状態に入る。'
+  Name: 平静の想起
+LeaveMoodDraw:
+  Name: 無意識の放浪
+  Description: "カードを{Value1}枚引く。\n現在の|精神状態|を解除する。"
+AliceBlockU:
+  Description: '{Block}|ブロック|を得る。'
+  Name: 弾幕結界
+DeployPenglai:
+  Name: 蓬莱人形設置
+AhongMana:
+  Name: 桜色の海
+  Description: このカードが手札に加えられた時、{Value1}枚の|活力|を手札に加え、{SelfName}を|廃棄|する。
+  UpgradedDescription: このカードが手札に加えられた時、{Value1}枚の|活力|を手札に加えた後手札のランダムなカード{Value2}枚を|アップグレード|し、{SelfName}を|廃棄|する。
+MeilingLianhua:
+  Name: 彩光乱舞
+  Description: "敵全体に{Damage}ダメージを与える。\n|火力|{Value1}を得る。"
+UpgradeDoll:
+  Description: '|上海人形|1体を強化する。'
+  Name: 乙女文楽
+AliceAttackW:
+  Description: '{Damage}ダメージを与える。'
+  Name: 未来文楽
+AliceAttackB:
+  Name: リターンイナニメトネス
+  Description: '{Damage}ダメージを与える。'
+InspirationBlack:
+  Description: "{Block}|ブロック|を得る。\nランダムな敵に{Damage}ダメージを与える。"
+InspirationWhite:
+  Description: "ランダムな手札のカード{Value1}枚を|アップグレード|する。\nアップグレードできるカードが無い場合、1枚毎に代わりに{Value2}|ブロック|を得る。"
+QingxingMeng:
+  Description: "{PlayerName}のターン開始時、|完全ランダム|なレアカード{Value1}枚を手札に加える。それは|臨時コスト|{Mana}で|廃棄|と|虚無|を持つ。\n\
+    {PlayerName}は各ターンにレアカードを{Limit}枚のみ使用することができる。"
+  Name: 意識潜行
+DeployShanghai:
+  Name: 上海人形設置
+LeaveMoodGraze:
+  Name: 無意識の回避
+  Description: "|グレイズ|{Value1}を得る。\n現在の|精神状態|を解除する。"
+SiwangLaiDian:
+  Description: "手札の攻撃カードを1枚|廃棄|し、そのコピー{Value1}枚を山札の上に置く。\nそれが|基本|カードならそれらは|補充|を得る。"
+  UpgradedDescription: "手札の攻撃カードのコピー{Value1}枚を山札の上に置く。\nそれが|基本|カードならそれらは|補充|を得る。"
+MirrorTest:
+  Name: ミラーテスト
+  Description: "{Shield}|バリア|を得る。\n{SelfName}が手札にある間、{SelfName}に隣接したカードが使用された後に攻撃カードを使用した場合、{Shield}|バリア|を得て{SelfName}はそのカードのコピーになる。"
+WuyunJiekong:
+  Description: "手札、山札、捨て札の全ての|状態異常|と|厄災|を|廃棄|する。\n全てのデバフを解除する。"
+  Name: 五蘊皆空
+MoodAttack:
+  Description: "{Damage}ダメージを与える。\n{PlayerName}の|精神状態|が変化する度、捨て札の{SelfName}を手札に加える。"
+PassionVulnerable:
+  Name: イドの開放
+  Description: "|熱情|状態なら敵全体に|弱体|{Value1}を与える。\nそうでない場合、|熱情|状態に入る。"
+NextTurnPassion:
+  Name: 嫌われ者のフィロソフィ
+  Description: '{PlayerName}の次のターン開始時に|熱情|状態に入り、カードを{Value1}枚引く。'
+PeaceEndTurn:
+  UpgradedDescription: "捨て札のカードを{Value1}枚選んで手札に加え、それらをそのターン|保留|する。\n|平静|状態に入る。\n{PlayerName}のターンを終了する。"
+  Name: 我に返る
+  Description: "|平静|状態に入る。\n{PlayerName}のターンを終了する。"
+PeaceDraw:
+  Name: 自己管理
+  Description: "|平静|状態ならカードを{Value1}枚引く。\nそうでない場合、|平静|状態に入る。"
+PeaceBlock:
+  Description: '{PlayerName}がターン終了時に|平静|状態なら{Value1}|ブロック|を得る。'
+MoodChangeBlock:
+  Name: 心理障壁
+  Description: '{PlayerName}が|精神状態|を変化させる度、{Value1}|ブロック|を得る。'
+PsycheLock:
+  Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3つの異なる|精神状態|に入っている場合のみ使用できる。(残り{Count}種類)"
+  NonbattleDescription: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3つの異なる|精神状態|に入っている場合のみ使用できる。"
+  Name: マインドロック
+LunaticPassion:
+  Name: 狂気的な愛
+  Description: "|熱情|状態によるダメージ補正が{Percentage}%になる。\n|熱情|状態に入る。"
+PassionAttackToDraw:
+  Name: 没我の愛
+  Description: "{Damage}ダメージを{Value1}回与える。\n|熱情|状態に入る。\n{SelfName}を山札に戻す。"
+PassionDraw:
+  Name: 情熱的なドロー
+  Description: '{PlayerName}が|熱情|状態に入る度、カードを{Value1}枚引く。'
