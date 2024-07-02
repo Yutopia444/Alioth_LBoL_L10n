@@ -978,6 +978,7 @@ KnifeBounce:
   Name: 飛刀彈射
   Description: |-
     造成 {Damage} 點傷害。
+    施加 {Value2} 層|鎖定|。
     將 {Value1} 張|飛刀|加入手中。
   FlavorText: 咲夜所投擲的飛刀看似很多，其實都是她停止時間後從地上回收的。
 
@@ -1081,8 +1082,8 @@ AttackMagic:
 SakuyaInvestigate:
   Name: 時停偵探
   Description: |-
-    施加 {Value1} 層|鎖定|。
-    在額外回合開始時，從|放逐|區回到手中。
+    對所有敵人施加 {Value1} 層|鎖定|。
+    進入額外的回合時再次生效。
 
 CleanRoom:
   Name: 打掃房間
@@ -1105,9 +1106,10 @@ SakuyaSleep:
   FlavorText: 時停最佳用法。
 SilverBullet:
   Name: 銀線編織
-  Description: 對所有敵人造成 {Damage} 點傷害。
+  Description: "對所有敵人造成 {Damage} 點傷害。\n獲得 {Block} 點|格擋|，手牌、抽牌堆和棄牌堆每一張|飛刀|提高 {Value1} 點。({KnifeCount}張)"
 
   FlavorText: 能在對手的衣服上編織出漂亮的圖案，不只是衣服。
+  NonbattleDescription: "對所有敵人造成 {Damage} 點傷害。\n獲得 {Block} 點|格擋|，手牌、抽牌堆和棄牌堆每一張|飛刀|提高 {Value1} 點。"
 SilverJump:
   Name: 達摩克之刃
   Description: |-
@@ -1117,8 +1119,7 @@ SilverJump:
 BladePower:
   Name: 快閃之銀
   Description: |-
-    獲得 {Value1} 點|火力|。
-    |進入手中時|：如果{SelfName}是唯一的手牌，效果翻倍。（離開手牌時失效）
+    每回合生效 {Value1} 次：打出卡牌後，隨機移除一點費用並返還。
 
 GainKnife:
   Name: 星劍飛舞
@@ -1230,6 +1231,7 @@ KnifeAim:
   Name: 收縮的世界
   Description: |-
     造成 {Damage} 點傷害。
+    施加 {Value1} 層|鎖定|。
     棄掉手中所有的|飛刀|，對目標造成傷害。
 
 SilverBlade:
@@ -3826,3 +3828,6 @@ AhongMana:
 MeilingLianhua:
   Name: 極彩「彩光亂舞」
   Description: "對所有敵人造成 {Damage} 點傷害。\n獲得 {Value1} 點|火力|。"
+ReimuSilence:
+  Name: 「夢想封印 寂」
+  Description: "抽牌階段外每抽 {Value1} 張牌，對所有敵人造成 {Damage} 點攻擊傷害。\n抽 {Value1} 張牌。"
