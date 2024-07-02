@@ -324,9 +324,9 @@ Xiaozhuo:
   Description: Nhận {Value1} |Hỏa Lực Tạm Thời|.
 ExilePotion:
   Name: Tận Dụng Phế Liệu
-  UpgradedDescription: Chọn tối đa {Value1} lá trên tay, trong Chồng Bài Bốc và Chồng
-    Bài Bỏ. |Trục Xuất| {Value1:plural one='nó' other='chúng'} và thêm một số lượng
-    tương đương lá |Lọ Thuốc Bất Ổn| vào Chồng Bài Bỏ.
+  UpgradedDescription: Chọn tối đa {Value1} lá từ trên tay, trong Chồng Bài Bốc cùng
+    Chồng Bài Bỏ. |Trục Xuất| {Value1:plural one='nó' other='chúng'} và thêm một số
+    lượng tương đương lá |Lọ Thuốc Bất Ổn| vào Chồng Bài Bỏ.
   FlavorText: '"Là một ẩn sĩ, cậu phải buông bỏ tất cả vật ngoài thân của mình, cũng
     khá đơn giản, dù sao chúng cũng chẳng phải là của tớ."'
   Description: Chọn tối đa {Value1} lá trên tay. |Trục Xuất| {Value1:plural one='nó'
@@ -732,9 +732,14 @@ SakuyaWeak:
     bảo quản độ tươi của thực phẩm.
 SilverBullet:
   Name: Dệt Những Sợi Bạc
-  Description: Gây {Damage} sát thương cho mỗi kẻ địch.
-  FlavorText: Có thể dệt những hoa văn tuyệt đẹp lên trang phục của đối thủ, không
-    chỉ riêng quần áo.
+  Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nNhận {Block} |Khiên|, nhận\
+    \ thêm {Value1} |Khiên| với mỗi lá |Phóng Dao| hiện có từ bao gồm trên tay, trong\
+    \ Chồng Bài Bốc cùng Chồng Bài Bỏ. (Hiện có {KnifeCount} lá |Phóng Dao|)"
+  FlavorText: Có thể dệt những hoa văn tuyệt đẹp lên trang phục của đối thủ, và cả
+    lên các chỗ không phải là quần áo.
+  NonbattleDescription: "Gây {Damage} sát thương cho mỗi kẻ địch.\nNhận {Block} |Khiên|,\
+    \ nhận thêm {Value1} |Khiên| với mỗi lá |Phóng Dao| hiện có từ bao gồm trên tay,\
+    \ trong Chồng Bài Bốc cùng Chồng Bài Bỏ."
 SakuyaGraze:
   Name: Vô Tình Tránh Né
   Description: "Nhận {Shield} |Hộ Giáp|.\nNhận {Value1} |Né Tránh|.\nHoàn trả lá này\
@@ -756,8 +761,8 @@ AttackMagic:
     \ Dao| lên tay."
   Name: Ảo Thuật Đạn Kỹ
 SakuyaInvestigate:
-  Description: "Yểm {Value1} |Bị Nhắm Tới|.\nMỗi khi bắt đầu một Lượt Phụ, hoàn trả\
-    \ lá này lên tay từ khu |Trục Xuất|."
+  Description: "Yểm {Value1} |Bị Nhắm Tới| lên mỗi kẻ địch.\nKích hoạt hiệu ứng trên\
+    \ khi bắt đầu một Lượt Phụ."
   Name: Dừng Thì Trinh Thám
 CleanRoom:
   Name: Quét Dọn Phòng Ốc
@@ -765,9 +770,8 @@ CleanRoom:
     \ tay cho đến hết trận đấu, nếu bỏ đi một lá |Phóng Dao| bằng cách này, thay vào\
     \ đó |Nâng Cấp| tất cả các lá bài trên tay cho đến hết trận đấu."
 BladePower:
-  Description: "Nhận {Value1} |Hỏa Lực|.\n|Khi vào tay|: Nếu lá bài này là lá duy\
-    \ nhất trên tay trong khoảnh khắc đó, hiệu ứng của nó được nhân đôi. (Hiệu quả\
-    \ cho đến khi rời tay)"
+  Description: "Vào mỗi lượt, hoàn trả {Value1} lá đầu tiên được chơi trở lại tay,\
+    \ {Value1:plural one='nó' other='chúng'} tốn ít đi 1 mana ngẫu nhiên."
   Name: Ánh Bạc Chớp Lóe
 GainKnife:
   Name: Tinh Vũ Phi Kiếm
@@ -824,7 +828,8 @@ DarkSatellite:
   FlavorText: Dùng đạn trị đạn!
 KnifeBounce:
   Name: Phóng Dao Bật Nảy
-  Description: "Gây {Damage} sát thương.\nThêm {Value1} lá |Phóng Dao| lên tay."
+  Description: "Gây {Damage} sát thương.\nYểm {Value2} |Bị Nhắm Tới|.\nThêm {Value1}\
+    \ lá |Phóng Dao| lên tay."
   FlavorText: Sakuya trông giống như có rất nhiều phi dao, thật ra cô ấy đã nhặt chúng
     lên trong khi dừng thời gian.
 MarisaSteal:
@@ -977,8 +982,8 @@ SakuyaDefenseRetain:
   Description: "Nhận {Block} |Khiên|.\n|Bảo Lưu Khiên|."
 KnifeAim:
   Name: Thế Gian Dẹp Lại
-  Description: "Gây {Damage} sát thương.\nBỏ tất cả các lá |Phóng Dao| có trên tay,\
-    \ chúng nhắm vào kẻ địch vừa bị lá bài này tấn công."
+  Description: "Gây {Damage} sát thương.\nYểm {Value1} |Bị Nhắm Tới|.\nBỏ tất cả các\
+    \ lá |Phóng Dao| có trên tay, chúng nhắm vào kẻ địch vừa bị lá bài này tấn công."
 EvilMaid:
   Name: Hầu Gái Của Ác Ma
   Description: "Mất {Value1} máu.\nVào lượt tiếp theo của {PlayerName}, mọi đòn tấn\
@@ -1313,7 +1318,7 @@ FreezeToIce:
     đương lá |Cánh Băng| vào trong Chồng Bài Bốc.'
   FlavorText: Mọi người đều là đôi cánh của tôi (vật chất)!
   UpgradedDescription: '|Trục Xuất| tối đa {Value1} lá bao gồm từ trên tay, trong
-    Chồng Bài Bốc và Chồng Bài Bỏ, thêm vào một số lượng tương đương lá |Cánh Băng|
+    Chồng Bài Bốc cùng Chồng Bài Bỏ, thêm vào một số lượng tương đương lá |Cánh Băng|
     vào trong Chồng Bài Bốc.'
 LunaFriend:
   ExtraDescription2: '{FriendU}Nhận {Value2} |Không Tì Vết|.'
@@ -1785,7 +1790,7 @@ RingoJinghua:
   Description: "|Trục Xuất| tối đa {Value1} lá trên tay.\nNhận {Value2} <sprite=\"\
     Point\" name=\"Power\">."
   UpgradedDescription: "|Trục Xuất| tối đa {Value1} lá bao gồm từ trên tay, trong\
-    \ Chồng Bài Bốc và Chồng Bài Bỏ.\nNhận {Value2} <sprite=\"Point\" name=\"Power\"\
+    \ Chồng Bài Bốc cùng Chồng Bài Bỏ.\nNhận {Value2} <sprite=\"Point\" name=\"Power\"\
     >."
 YuetuInvincible:
   Description: "Nhận {Value1} |Không Tì Vết|.\nThêm {Value2} lá |Vũ Y Thất Lạc| vào\
@@ -3142,3 +3147,7 @@ AhongMana:
 MeilingLianhua:
   Name: Thái Phù "Thái Quang Loạn Vũ"
   Description: "Gây {Damage} sát thương cho từng kẻ địch.\nNhận {Value1} |Hỏa Lực|."
+ReimuSilence:
+  Description: "Với mỗi {Value1} lá được bốc ngoại trừ ở lúc bốc bài đầu lượt, tấn\
+    \ công gây {Damage} sát thương lên mỗi kẻ địch.\nBốc {Value1} lá."
+  Name: '"Mộng Tưởng Phong Ấn -Tĩnh-"'
