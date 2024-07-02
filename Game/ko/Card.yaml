@@ -870,8 +870,7 @@ SakuyaGoOut:
   Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드 {Value1}장을 골라 버립니다.\n{Mana}를 얻습니다."
   FlavorText: 사람은 옷이 날개고, 메이드는 메이드복이 날개다.
 BladePower:
-  Description: "|화력|을 {Value1} 얻습니다.\n|카드를 뽑을 시|: 손에 {SelfName}만이 있다면 효과가 두 배가 됩니다.\
-    \ 단 손에서 떠날 시 효과를 잃습니다."
+  Description: "매 턴 {Value1}번씩 발동:\n카드를 사용하면 무작위 코스트를 1 감소시키고 돌려받습니다."
   Name: 은빛 질주
 ReimuHeavyAttack:
   Name: 하쿠레이 일격
@@ -999,8 +998,11 @@ ExileMagic:
   Name: 전환 마법
 SilverBullet:
   Name: 은탄
-  Description: 모든 적에게 피해를 {Damage} 줍니다.
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다. 손, 뽑을 카드 더미, 버린 카드 더미에\
+    \ 있는 |단검|의 개수만큼 피해가 {Value1} 증가합니다. ({KnifeCount}장)"
   FlavorText: 옷에 아름다운 무늬를 새겨주마.
+  NonbattleDescription: "모든 적에게 피해를 {Damage} 줍니다.\n|방어|를 {Block} 얻습니다. 손, 뽑을 카드 더미,\
+    \ 버린 카드 더미에 있는 |단검|의 개수만큼 피해가 {Value1} 증가합니다."
 SilverJump:
   Name: 다모클레스의 칼날
   Description: "|취약|을 {Value1} 줍니다.\n뽑을 카드 더미와 버린 카드 더미에 |단검|을 {Value2}장 섞어넣습니다."
@@ -1037,7 +1039,7 @@ ManaJungle:
   FlavorText: '"이거거든!"'
 KnifeBounce:
   Name: 나이프 도탄
-  Description: "피해를 {Damage} 줍니다.\n|단검|을 {Value1}장 얻습니다."
+  Description: "피해를 {Damage} 줍니다.\n|록온|을 {Value2} 줍니다.\n|단검|을 {Value1}장 얻습니다."
   FlavorText: 사쿠야가 던지는 칼은 언뜻 보기에는 엄청 많아 보이지만, 사실은 시간을 멈춘 뒤 전부 다시 주워 쓰는 것입니다.
 ChargingToMana:
   Name: 차지 컨버터
@@ -1066,7 +1068,7 @@ IceSpark:
   Description: 모든 적에게 피해를 {Damage} 주고, |빙결|을 가합니다.
 SakuyaInvestigate:
   Name: 일시정지 탐정
-  Description: "|록온|을 {Value1} 줍니다.\n추가 턴을 진행할 시 |소멸|된 카드 더미에서 이 카드를 가져옵니다."
+  Description: "모든 적에게 |록온|을 {Value1} 줍니다.\n추가 턴에서 효과가 한 번 더 발동합니다."
 AyaNewsReimuSp:
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
   Name: 붕붕마루 레이무 특간호
@@ -1306,7 +1308,8 @@ LightSpeed:
   Name: C. 리코셰
 KnifeAim:
   Name: 디플레이션 월드
-  Description: "피해를 {Damage} 줍니다.\n손에 있는 모든 |단검|을 버리고, 목표에게 피해를 가합니다."
+  Description: "피해를 {Damage} 줍니다.\n|록온|을 {Value1} 줍니다.\n손에 있는 모든 |단검|을 버리고, 목표에게 피해를\
+    \ 가합니다."
 StopTime:
   Name: 프로즌 타임
   Description: 내 턴 종료 시 사용되지 않은 무작위 마나 {Value1}개를 잃지 않고 남깁니다.
@@ -2679,3 +2682,7 @@ AhongMana:
 MeilingLianhua:
   Name: 극채 「채광난무」
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|화력|을 {Value1} 얻습니다."
+ReimuSilence:
+  Name: 「몽상봉인 적」
+  Description: "드로우 페이즈가 아닐 때 카드를 {Value1}장 뽑을 때마다 모든 적에게 피해를 {Damage}씩 줍니다.\n카드를 {Value1}장\
+    \ 뽑습니다."
