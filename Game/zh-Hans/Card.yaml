@@ -326,6 +326,12 @@ TaijiLiangyi:
     {PlayerName}的回合开始时，如果手中没有|阴阳玉|，将一张|阴阳玉|加入手中。
   FlavorText: 灵梦在阅读"当你有一瓶无限的可乐时可以做什么"后创造的招式。
 
+ReimuSilence:
+  Name: 「梦想封印 寂」
+  Description: |-
+    抽牌阶段外每抽 {Value1} 张牌，对所有敌人造成 {Damage} 点攻击伤害。
+    抽 {Value1} 张牌。
+
 ChuanyueJiejie:
   Name: 穿越结界
   Description: |-
@@ -353,17 +359,17 @@ OutInGap:
     不能找到{SelfName}。
   FlavorText: 八云紫规定不能用出入境界发现出入境界。
 
-BoliDajiejie:
-  Name: 博丽大结界
-  Description: 本场战斗中，{PlayerName}的|格挡|均会转化为等量的|护盾|。
-  FlavorText: 所有转瞬即逝的幻想，在这里成为永恒。
-
 Jiangshen:
   Name: 降神修行
   Description: |-
     本场战斗中，所有临时获得的卡牌都会|升级|。
     将 {Value1} 张|阴阳玉|加入手中。
   FlavorText: 「我向神明许愿，下一抽抽到『出入境界』——」
+
+BoliDajiejie:
+  Name: 博丽大结界
+  Description: 本场战斗中，{PlayerName}的|格挡|均会转化为等量的|护盾|。
+  FlavorText: 所有转瞬即逝的幻想，在这里成为永恒。
 
 HuijuQiankun:
   Name: 汇聚乾坤
@@ -1012,11 +1018,8 @@ KnifeBounce:
   Name: 飞刀弹射
   Description: |-
     造成 {Damage} 点伤害。
-    将 {Value1} 张|飞刀|加入手中。
-  UpgradedDescription: |-
-    造成 {Damage} 点伤害。
-    将 {Value1} 张|飞刀|加入手中。
     施加 {Value2} 层|锁定|。
+    将 {Value1} 张|飞刀|加入手中。
   FlavorText: 咲夜所投掷的飞刀看似很多，其实都是她停止时间后从地上回收的。
 
 Lijian:
@@ -1120,12 +1123,6 @@ AttackMagic:
     抽 {Value1} 张牌。
     将 {Value2} 张|飞刀|加入手中。
 
-SakuyaInvestigate:
-  Name: 时停侦探
-  Description: |-
-    施加 {Value1} 层|锁定|。
-    在额外回合开始时，从|放逐|区回到手中。
-
 SakuyaSleep:
   Name: 稍作休息
   Description: |-
@@ -1145,22 +1142,17 @@ ExileMagic:
   Name: 调换魔法
   Description: 选择至多 {Value1} 张手牌，|放逐|它们，将等量的|飞刀|加入手中。
 
-SilverBullet:
-  Name: 银线编织
-  Description: 对所有敌人造成 {Damage} 点伤害。
-  FlavorText: 能在对手的衣服上编织出漂亮的图案，不只是衣服。
-
 SilverJump:
   Name: 达摩克之刃
   Description: |-
     施加 {Value1} 回合|易伤|。
     向抽牌堆和弃牌堆各洗入 {Value2} 张|飞刀|。
 
-BladePower:
-  Name: 快闪之银
+SakuyaInvestigate:
+  Name: 时停侦探
   Description: |-
-    获得 {Value1} 点|火力|。
-    |进入手中时|：如果{SelfName}是唯一的手牌，效果翻倍。（离开手牌时失效）
+    对所有敌人施加 {Value1} 层|锁定|。
+    进入额外的回合时再次生效。
 
 GainKnife:
   Name: 星剑飞舞
@@ -1168,6 +1160,16 @@ GainKnife:
   UpgradedDescription: |-
     {PlayerName}的回合开始时，将 {Value1} 张|飞刀|加入手中。
     将 {Value2} 张|飞刀|加入手中。
+
+SilverBullet:
+  Name: 银线编织
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得 {Block} 点|格挡|，手牌、抽牌堆和弃牌堆每一张|飞刀|提高 {Value1} 点。({KnifeCount}张)
+  NonbattleDescription: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得 {Block} 点|格挡|，手牌、抽牌堆和弃牌堆每一张|飞刀|提高 {Value1} 点。
+  FlavorText: 能在对手的衣服上编织出漂亮的图案，不只是衣服。
 
 SakuyaDefenseRetain:
   Name: 时刻警戒
@@ -1199,16 +1201,16 @@ PrepareParty:
     获得 {Block} 点|格挡|。
   FlavorText: 保证没有预制菜。
 
-MihuanJack:
-  Name: 迷幻杰克
-  Description: 回合开始时，获得 {Value1} 层|时域冲击|。
-
 SakuyaGraze:
   Name: 意外躲避
   Description: |-
     获得 {Shield} 点|护盾|。
     获得 {Value1} 层|闪避|。
     洗牌时回到手中。
+
+MihuanJack:
+  Name: 迷幻杰克
+  Description: 回合开始时，获得 {Value1} 层|时域冲击|。
 
 SakuyaClock:
   Name: 咲夜特制怀表
@@ -1222,6 +1224,10 @@ LightSpeed:
   Description: |-
     造成 {Damage} 点伤害。
     如果这回合内弃过牌，获得{Mana}。
+
+TimeLord:
+  Name: 主宰时空
+  Description: 获得 {Value1} 层|时域冲击|。
 
 DangerousMagician:
   Name: 危险的魔术师
@@ -1268,16 +1274,17 @@ SakuyaShop:
     抽 {Value1} 张牌。
   FlavorText: 请不要误会，幻想乡的超市不贩卖吸血鬼。
 
-KnifeAim:
-  Name: 收缩的世界
-  Description: |-
-    造成 {Damage} 点伤害。
-    弃掉手中所有的|飞刀|，对目标造成伤害。
-
 SilverBlade:
   Name: 银色异次元
   Description: 每一张攻击牌生效后，获得 {Value1} 点|护盾|。
   FlavorText: 咲夜小姐，请带我进入金色异次元。
+
+KnifeAim:
+  Name: 收缩的世界
+  Description: |-
+    造成 {Damage} 点伤害。
+    施加 {Value1} 层|锁定|。
+    弃掉手中所有的|飞刀|，对目标造成伤害。
 
 KnifeHell:
   Name: 银之优雅
@@ -1299,6 +1306,10 @@ GroupOfKnife:
   Name: 尖刀快车
   Description: 造成 {Damage} 点伤害。
 
+BladePower:
+  Name: 快闪之银
+  Description: 每回合生效 {Value1} 次：打出卡牌后，随机移除一点费用并返还。
+
 ClockCorpse:
   Name: 钟表的残骸
   Description: 结束{PlayerName}的回合，进行一个额外的回合，这一回合的抽牌阶段结束后无法再抽牌。
@@ -1312,10 +1323,6 @@ LoyalMaid:
   Description: |-
     获得 {Shield} 点|护盾|。
     在额外回合开始时，从弃牌堆回到手中，|暂塑|为{Mana}。
-
-TimeLord:
-  Name: 主宰时空
-  Description: 获得 {Value1} 层|时域冲击|。
 
 TimeWalk:
   Name: 时间行走
