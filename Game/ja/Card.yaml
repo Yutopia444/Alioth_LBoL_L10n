@@ -939,9 +939,10 @@ SakuyaAttackU:
   Name: トランプ射撃
   FlavorText: ポーカーの殺傷力はそれに載せたベットにある。
 SilverBullet:
-  Description: 敵全体に{Damage}ダメージを与える。
+  Description: "敵全体に{Damage}ダメージを与える。\n{Block}|ブロック|を得る。手札や山札、捨て札にある|投げナイフ|1枚につき得るブロックが{Value1}増加する。({KnifeCount}枚)"
   Name: 銀糸織り
   FlavorText: キレイな模様を相手の服に織り込めることになるが、キレイになるのは服だけではないようだ。
+  NonbattleDescription: "敵全体に{Damage}ダメージを与える。\n{Block}|ブロック|を得る。手札や山札、捨て札にある|投げナイフ|1枚につき得るブロックが{Value1}増加する。"
 SakuyaBlockW:
   Description: '{Block}|ブロック|を得る。'
   Name: 黒鍵パリィ
@@ -962,7 +963,7 @@ PrivateVision:
   Description: "手札を1枚捨てる。\n|グレイズ|{Value1}を得る。"
   UpgradedDescription: "手札を1枚捨てる。\n|グレイズ|{Value1}を得る。\n|反射|{Value2}を得る。"
 KnifeBounce:
-  Description: "{Damage}ダメージを与える。\n|投げナイフ|を{Value1}枚手札に加える。"
+  Description: "{Damage}ダメージを与える。\n|ロックオン|{Value2}を与える。\n|投げナイフ|を{Value1}枚手札に加える。"
   Name: 跳弾するナイフ
   FlavorText: 咲夜の投げるナイフはたくさんあるように見えるが、実のところ時間を止めた後に全部拾って回収してる。
 Lijian:
@@ -1010,7 +1011,7 @@ CoolMaid:
   Name: 瀟洒なメイド
   Description: "|投げナイフ|を{Value1}枚手札に加える。\n{Mana}を得る。"
 BladePower:
-  Description: "|火力|{Value1}を得る。\n|手札に加わった時|：手札に他のカードが無い場合、このカードの効果は倍になる。（手札にある間のみ）"
+  Description: "各ターンの最初に使用したカード{Value1}枚はランダムにコストを1減らした状態で手札に戻る。"
   Name: シルバーダッシュ
 Dejavu:
   Name: デジャヴ
@@ -1083,7 +1084,7 @@ SakuyaDefenseRetain:
   Description: "{Block}|ブロック|を得る。\n|ブロック保留|。"
 SakuyaInvestigate:
   Name: 時停探偵咲夜
-  Description: "|ロックオン|{Value1}を与える。\n追加ターンの開始時、このカードを|廃棄|場から手札に戻す。"
+  Description: "敵全体に|ロックオン|{Value1}を与える。\n追加ターンを開始する度にこの効果を発動する。"
 WaterPrincess:
   Name: プリンセスウンディネ
   Description: "{Shield}|バリア|を得る。\n手札1枚につき得られる|バリア|が{Value1}増える。（合計：{Special}）\n|初見|：|水沫|を手札に加える。"
@@ -1111,7 +1112,7 @@ DangerousMagician:
   Description: "|投げナイフ|の効果が発動する度、タイムパルス{Value1}を得る。\n|投げナイフ|{Value2}枚を山札に加える。"
 KnifeAim:
   Name: デフレーションワールド
-  Description: "{Damage}ダメージを与える。\n手札の|投げナイフ|を全て捨て、その敵を対象に効果を発動する。"
+  Description: "{Damage}ダメージを与える。\n|ロックオン|{Value1}を与える。\n手札の|投げナイフ|を全て捨て、その敵を対象に効果を発動する。"
 KnifeHell:
   Name: シルバーエレガント
   Description: "|投げナイフ|を{Value1}枚手札に加える。\n全ての|投げナイフ|を|アップグレード|させる。"
@@ -2474,3 +2475,6 @@ PassionAttackToDraw:
 PassionDraw:
   Name: 情熱的なドロー
   Description: '{PlayerName}が|熱情|状態に入る度、カードを{Value1}枚引く。'
+ReimuSilence:
+  Name: 夢想封印　寂
+  Description: "ドローフェイズ以外でカードを{Value1}枚引く度、敵全体に{Damage}攻撃ダメージを与える。\nカードを{Value1}枚引く。"
