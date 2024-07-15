@@ -1,15 +1,15 @@
 Graze:
   Name: グレイズ
-  Brief: "{OwnerName}が受けるダメージを0にする。\n攻撃されるかターン開始時に1減少する。"
-  Description: "{OwnerName}が受けるダメージを0にする。残り{Level}回有効。\n攻撃されるかターン開始時に1減少する。"
+  Brief: "{OwnerName}が受ける攻撃ダメージを0にする。\n攻撃されるかターン開始時に1減少する。"
+  Description: "{OwnerName}が受ける攻撃ダメージを0にする。残り{Level}回有効。\n攻撃されるかターン開始時に1減少する。"
 Reflect:
   Name: 反射
   Description: 攻撃してきた相手に{Level}点のダメージを与え、この効果を取り除く。
   Brief: 攻撃してきた相手にダメージを与え、この効果を取り除く。
 GuangxueMicai:
   Name: 光学迷彩
-  Description: '{OwnerName}が受けるダメージが半減する。残り {Duration} ターン持続。'
-  Brief: '{OwnerName}が受けるダメージが半減する。'
+  Description: '{OwnerName}が受ける攻撃ダメージが半減する。残り {Duration} ターン持続。'
+  Brief: '{OwnerName}が受ける攻撃ダメージが半減する。'
 Vampire:
   Name: 吸血鬼
   Description: '{OwnerName}がブロックされていないダメージを与えたとき、同量のライフを回復する。こわい！'
@@ -76,8 +76,8 @@ Fragil:
   Brief: '{PlayerName}がカードをプレイするによって得られる|ブロック|と|バリア|が{Value}%減少し、数ターン持続する。'
 Vulnerable:
   Name: 弱体
-  Description: '{OwnerName}が受けるダメージが{Value}%増加する。残り{Duration}ターン持続。'
-  Brief: '{OwnerName}が受けるダメージが{Value}%増加する。'
+  Description: '{OwnerName}が受ける攻撃ダメージが{Value}%増加する。残り{Duration}ターン持続。'
+  Brief: '{OwnerName}が受ける攻撃ダメージが{Value}%増加する。'
 Invincible:
   Name: 天衣無縫
   Brief: '{OwnerName}は1回のダメージにつきライフが1しか減少しない。'
@@ -105,8 +105,8 @@ InterviewDone:
   Description: "{OwnerName}は事件の真相をまとめあげた！\n彼女は《文文。新聞》号外を発行する。"
 LockedOn:
   Name: ロックオン
-  Description: "{OwnerName}が受けるダメージが{Level}点増加する。\n各ターン開始時に1減少する。"
-  Brief: "{OwnerName}が受けるダメージが数値分増加する。\n各ターン開始時に1減少する。"
+  Description: "{OwnerName}が受ける攻撃ダメージが{Level}点増加する。\n各ターン開始時に1減少する。"
+  Brief: "{OwnerName}が受ける攻撃ダメージが数値分増加する。\n各ターン開始時に1減少する。"
 ExtraTurn:
   Name: 追加ターン
   Description: '{OwnerName}のターン終了時、追加のターンを得る。残り{Level}回有効。'
@@ -156,14 +156,14 @@ MaoyuBlock:
   Description: '{OwnerName}が攻撃されたとき{Level}点の|ブロック|を得る。'
 DeathExplodeNotCount:
   Name: 撃ち返し弾
-  Description: "{OwnerName}が倒されたとき、{PlayerName}に{Level}点のダメージを与える。\n起爆されたとき、 2 倍のダメージを与える。"
+  Description: "{OwnerName}が倒されたとき、{PlayerName}に{Level}点の攻撃ダメージを与える。\n起爆されたとき、 2 倍のダメージを与える。"
 Drowning:
   Name: 溺水
   Description: '{OwnerName}のターン終了時、{Level}点のダメージを受ける。'
   Brief: '{OwnerName}のターン終了時、ダメージを受ける。'
   ExtraDescription: "{OwnerName}のターン終了時、{Level}ダメージを受ける。\n溺れる少女を倒した時この効果は失われる。"
 DeathExplodeCount:
-  Description: "{OwnerName}が倒されたとき、{PlayerName}に{Level}点のダメージを与える。\n{Count} ターン後に起爆され、\
+  Description: "{OwnerName}が倒されたとき、{PlayerName}に{Level}点の攻撃ダメージを与える。\n{Count} ターン後に起爆され、\
     \ 2 倍のダメージを与える。"
   Name: 撃ち返し弾
 PhoneBillSe:
@@ -220,7 +220,7 @@ TurnStartPurify:
   Name: 消毒済み
 RockHard:
   Name: 硬い！
-  Description: '{OwnerName}の受けるブロックされなかったダメージは{Level}点減少する。'
+  Description: '{OwnerName}の受けるブロックされなかった攻撃ダメージは{Level}点減少する。'
 KokoroNu:
   Name: 怒
   Description: '{OwnerName}の行動時、全ての敵が|火力|{Level}を得る。（発生済み）'
@@ -706,7 +706,7 @@ EnemyDayaojing:
   Description: '{OwnerName}のターン終了時、{Level}点のライフを回復する。'
 EnemyLarva:
   Name: ラルバの羽
-  Description: '{PlayerName}が{OwnerName}にダメージを与えるたび、対象は|毒|{Level}を得る。'
+  Description: '{PlayerName}が{OwnerName}に攻撃ダメージを与えるたび、対象は|毒|{Level}を得る。'
 EnemyMaid:
   Description: '{OwnerName}のターン終了時、{PlayerName}に{Level}点のダメージを与える。'
   Name: カスミの掃除
@@ -871,9 +871,9 @@ FriendDrawSe:
   Brief: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、カードを引く。\n|u:奥義|を使用する度、更にランダムなマナを得る。"
   Description: "|パートナー|の|a:起動能力|か|u:奥義|を使用する度、カードを{Level}枚引く。\n|u:奥義|を使用する度、更にランダムなマナを{Level}点得る。"
 MoodPassion:
-  Brief: "{PlayerName}が与えるダメージ及び受けるダメージが{Percentage}%増加する。\n|熱情|は|精神状態|の一つであり、{PlayerName}は同時に複数の精神状態に入ることはできない。"
+  Brief: "{PlayerName}が与える攻撃ダメージ及び受ける攻撃ダメージが{Percentage}%増加する。\n|熱情|は|精神状態|の一つであり、{PlayerName}は同時に複数の精神状態に入ることはできない。"
   Name: 熱情
-  Description: "{PlayerName}が与えるダメージ及び受けるダメージが{Percentage}%増加する。\n|熱情|は|精神状態|の一つであり、{PlayerName}は同時に複数の精神状態に入ることはできない。"
+  Description: "{PlayerName}が与える攻撃ダメージ及び受ける攻撃ダメージが{Percentage}%増加する。\n|熱情|は|精神状態|の一つであり、{PlayerName}は同時に複数の精神状態に入ることはできない。"
 MoodPeace:
   Name: 平静
   Description: "|平静|状態を解除した時、{Mana}を得る。\n|平静|は|精神状態|の一つであり、{PlayerName}は同時に複数の精神状態に入ることはできない。"
