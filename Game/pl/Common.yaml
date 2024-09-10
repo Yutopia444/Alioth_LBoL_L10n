@@ -101,7 +101,7 @@ Explain:
     \ twojej |bazie many| nie ma <sprite=\"ManaSprite\" name=\"U\">, nawet jeśli mógłbyś\
     \ załacić za nią za pomocą <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
     \ name=\"P\">.\n\nP.S.\n|Pusta Karta|, jeden ze |Lśniących Eksponatów|, pozwoli\
-    \ ci znaleźć karty z |p:każdego koloru|.\nKarty o koszcie 5 lub więcej posiadające\
+    \ ci znaleźć karty z |p:każdego koloru|.\nKarty o koszcie wyższym niż 5 posiadające\
     \ ogólny komponent kosztu |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
     \ name=\"2\"> itd.)| nadal mogą być znalezione, nawet jeśli nie ma wystarczająco\
     \ many w |bazie many| aby ją zagrać, gdyż istnieją sposoby, aby obniżyć ich cenę."
@@ -235,6 +235,10 @@ Museum:
   All: Wszystkie
   HiddenDescription: Szczegóły tego osiągniecia nie zostaną wyjawione aż zostanie
     odblokowane.
+  ManaFilterHint: "Aby ograniczyć karty o specyficznej kombinacji kolorów, kliknij\
+    \ na te kolory, które chcesz, oraz na <sprite=\"ManaSprite\" name=\"P\">.\nNP:\
+    \ Dla kart biało-niebieskich kliknij na <sprite=\"ManaSprite\" name=\"W\">, <sprite=\"\
+    ManaSprite\" name=\"U\">, <sprite=\"ManaSprite\" name=\"P\">."
 Setting:
   Main: Ogólne
   Preference: Rozgrywka
@@ -262,14 +266,17 @@ Setting:
   KeywordDescription: "W ustawieniu |Krótkie|, chmurki nie będą już wyjaśniały pospolitych\
     \ mechanik.\n|r:Zalecane tylko doświadczonym graczkom.|\n|d:(Pospolite mechaniki\
     \ zawierają ||Moc||d:,| |Uduchowienie||d:,| |Blok||d:,| |Barierę||d:,| |Unik||d:,|\
-    \ |Celną||d:,| |Manę Chromatyczną||d:,| |Ulepszenie| |d:oraz| |Zdolności||d:)|"
+    \ |Celną||d:,| |Manę Chromatyczną||d:,| |Ulepszenie| |d:o,| |Zdolności| |d:oraz|\
+    \ |Hybrydowy Koszt||d:)|"
   Detailed: Dokładne
   Brief: Krótkie
   DontShow: Wyłączone
   Illustrator: Przypisy Ilustracji
   IllustratorDescription: Czy pokazać nazwę autora ilustracja na karcie.
   TooltipSize: Wielkość Chmurek
-  TooltipSizeDescription: Dostosuj ogólną wielkość chmurek dla kart, eksponatów itd.
+  TooltipSizeDescription: "Dostosuj ogólną wielkość chmurek dla kart, eksponatów,\
+    \ obrażeń zamiarowanych ataków, itd.\nDomyślna wielkość to \"Małe\", ale grając\
+    \ przy niskiej rozdzielczości zalecane jest zmianę na \"Wielkie\"."
   Large: Wielkie
   Small: Małe
   Show: Pokaż
@@ -442,6 +449,7 @@ Chat:
   HardworkRabbit1: Znaleziono Ziemiański cel!
   LazyRabbit: Tama jest naprawdę bezużyteczna... Teraz muszę się wziąć w garść.
   Limao1: Słyszałam, że żarcie w świątyni na szczycie jest świetne!
+  Limao2: Zobaczmy, czy dobrze z tego używam...
 ErrorChat:
   MoneyNotEnough: Nie starczy mi pieniędzy.
   LowMana: Nie starczy mi many.
@@ -511,6 +519,7 @@ Cards:
   TransformDialog: Zatwierdzić Transformację?
   UpgradePrice: "Koszt {0} <sprite=\"Gold\" name=\"gold\">\nGold {1} <sprite=\"Gold\"\
     \ name=\"gold\">"
+  NotInPool: To nie jest karta w puli nagród
 Reward:
   Headers:
   - Wyśmienicie!

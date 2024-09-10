@@ -84,8 +84,8 @@ Wanbaochui:
   Name: Pobijak Cudów
   FlavorText: Zwykłe rzeczy otrzymują niezwykłą moc.
 XianzheShi:
-  Description: "Dodaje {BaseMana} do bazy many.\nZyskaj o {Value1} więcej <sprite=\"\
-    Point\" name=\"Gold\"> pomijając karty nagród."
+  Description: "Dodaje {BaseMana} do bazy many.\nNiewydana |Mana Filozoficzna| {Mana}\
+    \ nie jest tracona na końcu tury."
   Name: Kamień Filozoficzny
   FlavorText: Podczas gdy Kamienie Folozoficzne są ostatecznym osiągnięciem w alchemii,
     Patchouli używa ich jako pocisków.
@@ -93,8 +93,7 @@ TaiguGouyu:
   Description: "Dodaje {BaseMana} do bazy many.\nGdy {Value1} lub więcej many jest\
     \ wydane na zagranie karty, zyskaj {Mana} na początku następnej tury {PlayerName:g}."
   Name: Starożytna Magatama
-  FlavorText: "Im więcej masz haków, tym więcej masz maksymalnego życia.\nUps, nie\
-    \ ta gra."
+  FlavorText: "Im więcej masz haków, tym więcej masz maksymalnego życia."
 HuiyeBaoxiang:
   Description: "Na początku tury {PlayerName} zyskaj jedną losową manę.\nGdy nabyte,\
     \ zyskaj {Value1:plural one='% losowy |Eksponat|' few='% losowe |Eksponaty|' many='%\
@@ -200,8 +199,9 @@ MarisaR:
 SakuyaW:
   Name: Zapasowe Sztylety do Rzucania
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Sakuyi| są dodane\
-    \ do puli kart.\nNa początku walki dodaj {Value1:plural one='% |Sztylet do Rzucania+|'\
-    \ few='% |Sztylety do Rzucania+|' many='% |Sztyletów do Rzucania+|} do ręki."
+    \ do puli kart.\nNa początku walki oraz gdy stos doboru zostanie przetasowany\
+    \ dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|'\
+    \ many='% |Sztyletów do Rzucania|} do stosu doboru."
   FlavorText: Póki masz wystarczająco w zapasie, nie trzeba będzie podnosić tych rzuconych.
 SakuyaU:
   Name: Magiczny Poker
@@ -214,8 +214,8 @@ CirnoU:
   Name: Lodowe Skrzydła
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Cirno| są dodane\
     \ do puli kart.\nNa początku pierwszej tury {PlayerName:g} w każdej walce dodaj\
-    \ {Value1:plural one='% |Lodowiec|' few='% |Lodowce|' many='% |Lodowców|'} do\
-    \ ręki."
+    \ {Value1:plural one='% |Lodowe Skrzydła|' few='% |Lodowe Skrzydła|' many='% |Lodowych\
+    \ Skrzydeł|'} do ręki."
   FlavorText: Nie wiadomo, jak one lewitują same z siebie.
 CirnoG:
   Name: Bujne Zielone Gałęzie
@@ -226,14 +226,14 @@ CirnoG:
 KoishiG:
   Name: Koląca Róża
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
-    \ do puli kart.\nGdy {PlayerName} wejdzie w stan |Super-Ego|, zyskaj {Value1}\
-    \ |Bloku|."
+    \ do puli kart.\nNa początku pierwszej tury {PlayerName:g} zyskaj {Value1} |Olśnienia|\
+    \ oraz dodaj {Value2:plural one='% |Inspirację| few='% |Inspiracje|' many='% |Inspiracji|'}\
+    \ do stosu doboru."
   FlavorText: (W trakcie rozwoju...)
 KoishiB:
   Name: Wymyślony Przyjaciel
   Description: "Dodaje {BaseMana} do bazy many. Karty unikalne dla |Koishi| są dodane\
-    \ do puli kart.\nGdy {PlayerName} wchodzi w stan |Pasji| po raz pierwszy w walce,\
-    \ zyskaj {Value1} |Miłości|."
+    \ do puli kart.\nGdy {PlayerName} wchodzi w stan |Pasji|, zyskaj {Value1} |Bloku|."
   FlavorText: (W trakcie rozwoju...)
 PiaoliangPanzi:
   Name: Piękny Talerz
@@ -319,9 +319,8 @@ YizangnuoWuzhi:
     można wytworzyć różne boskie bronie.
 LouguanJian:
   Name: Roukanken
-  Description: "Na początku pierwszej tury {PlayerName:g} w każdej walce zyskaj {Mana}.\n\
-    Gdy {PlayerName} zadaje obrażenia atakami, nałóż {Value1:plural one='% |Namiar|'\
-    \ few='% |Namiary|' many='% |Namiarów|} na cel(e)."
+  Description: "Gdy {PlayerName} zadaje obrażenia atakami, nałóż {Value1:plural one='%\
+    \ |Namiar|' few='% |Namiary|' many='% |Namiarów|} na cel(e)."
   FlavorText: '"Posiekany!"'
 He3:
   Name: Hel-3
@@ -485,9 +484,9 @@ SongjingMuyu:
   FlavorText: Użyj tego do recytowania, zadając magiczne obrażenia wrogom.
 Saiqianxiang:
   Name: Pudełko Ofiarne
-  Description: "Gdy nabyte, zyskaj {Value2} <sprite=\"Point\" name=\"Gold\">.\nOdblokowuje\
-    \ opcję |Zbierania Datków| w Szparach, przyznającą {Value1} <sprite=\"Point\"\
-    \ name=\"Gold\">."
+  Description: "Odblokowuje opcję |Zbierania Datków| w Szparach, przyznającą {Value1}\
+    \ <sprite=\"Point\" name=\"Gold\">.\nZyskaj o {Value2} więcej <sprite=\"Point\"\
+    \ name=\"Gold\"> pomijając karty nagród."
   FlavorText: Wewnątrz znajduje się cały majątek Reimu.
 ReimuW:
   Name: Gohei Hakurei
@@ -901,3 +900,12 @@ YueGujiu:
   FlavorText: Sentymentalny dla Eirin alkohol z rodzinnych stron.
   Description: "Dodaje {BaseMana} do bazy many.\nGdy karta z |Wygnaniem|, za którą\
     \ zapłacono maną, jest zagrywana, zyskaj {Mana}."
+QicaiLianhua:
+  Description: "Na początku tury {PlayerName:g} zyskaj 1 losową manę.\nRaz podczas\
+    \ walki, jeżeli uzyskano 7 man o różnych kolorach, zyskaj |e:Bujny Chaotyczny\
+    \ Taniec| do ręki."
+  ExtraDescription: "Na początku tury {PlayerName:g} zyskaj 1 losową manę.\nRaz podczas\
+    \ walki, jeżeli uzyskano 7 man o różnych kolorach, zyskaj |e:Bujny Chaotyczny\
+    \ Taniec| do ręki.\nKolory zyskanych man: {ColorRecord}"
+  Name: Tęczowy Lotus
+  FlavorText: Z Chińskim Kung-Fu wszystko jest możliwe.

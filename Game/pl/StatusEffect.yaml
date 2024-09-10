@@ -145,8 +145,8 @@ DroneBlock:
   Name: Macierz Obronna
   Description: Na końcu tury {OwnerName:g} zyskaj {Level} |Bloku|.
 Servant:
-  Description: "Gdy przywołujący zostanie pokonany, wszystkie przywołańce też zostaną\
-    \ pokonane.\nNie aktywuje efektów wywołanych śmiercią."
+  Description: "Jeżeli pozostaną jedynie |Przyzwani| wrogowie, zostaną oni natychmiastowo\
+    \ pokonani.\nNie aktywuje efektów wywołanych śmiercią."
   Name: Przyzwany
 DeathExplodeCount:
   Description: "Zadaj {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -378,8 +378,8 @@ FastAttack:
   Description: Po zagraniu pierwszej karty w turze, {OwnerName} zadaje {PlayerName:d}
     {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
   ExtraDescription: "Po zagraniu pierwszej karty w turze, {OwnerName} zadaje {PlayerName:d}\
-    \ {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\nTo się\
-    \ już stało i zostanie odświeżone następnym razem, gdy {OwnerName} wykona ruch."
+    \ {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n(To się\
+    \ już stało i zostanie odświeżone następnym razem, gdy {OwnerName} zacznie turę.)"
 SijiZui:
   Name: Osąd Dobra i Zła
   Description: 'Grzechy {PlayerName:g}: Drobne.'
@@ -407,6 +407,10 @@ QiannianShenqiSe:
   Description: "{PlayerName} może dobrać conajwyżej {Limit} kart w każdej turze.\n\
     |d:({Count:plural one='Została % karta' few='Zostały % karty' many='Zostało %\
     \ kart})|"
+  ExtraDescription: "W każdej turze, jak {PlayerName} dobierze {Limit:plural one='%\
+    \ kartę' few='% karty' many='% kart'}, to straci {Level:plural one='% punkt' few='%\
+    \ punkty' many='% punktów'} życia za każdą kolejną dobraną kartę.\n|d:({Count:plural\
+    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}.)|"
 SakuraWandSe:
   Name: Uszkrzydlony Klucz
   Description: '{OwnerName} atakuje dwukrotnie.'
@@ -830,12 +834,12 @@ DizangLoveSe:
 ForeverCoolSe:
   Name: Fantazja Wiecznie Mroźnej Pory Roku
   Description: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika| zostanie użyta,\
-    \ nałóż |Chłód| losowemu wrogowi {Level:plural one='% raz' other='% razy'}.\n\
+    \ nałóż |Chłód| na {Level:plural one='losowego wroga' other='% losowych wrogów'}.\n\
     Gdy wróg zyskuje |Chłód|, {Level:plural one='% losowy |Wspólnik|' few='% losowi\
     \ |Wspólnicy|' many='% losowych |Wspólników|'} w dłoni zyskuje 1 |Wspólności|."
   Brief: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika| zostanie użyta, nałóż\
-    \ |Chłód| niektórym wrogom.\nGdy wróg zyskuje |Chłód|, niektórzy |Wspólnicy| w\
-    \ dłoni zyskuje 1 |Wspólności|."
+    \ |Chłód| losowym wrogom.\nGdy wróg zyskuje |Chłód|, niektórzy |Wspólnicy| w dłoni\
+    \ zyskuje 1 |Wspólności|."
 YouxiangMoonSe:
   Name: Piękności Natury
   Brief: Na początku tury {PlayerName:g} zyskaj {Level} {Mana}.
@@ -915,10 +919,13 @@ ExtraBlizzard:
     wrogom i nakłada im |Chłód|.
   Name: Nadciąganie Śnieżycy
 FrozenThroneSe:
-  Description: Na początku tury {PlayerName:g} dodaj {Level:plural one='% |Lodowiec+|'
-    few='% |Lodowce+|' many='% |Lodowców+|'} do ręki.
+  Description: Na początku tury {PlayerName:g}, jeżeli w dłoni nie ma {Level:plural
+    one='|Lodowych Pocisków|' other='co najmniej % |Lodowych Pocisków|'}, dodaj {Level:plural
+    one='|Lodowy Pocisk|' other='|Lodowe Pociski|'} do ręki{Level:plural one='.' other='
+    puki ich nie będzie %.'}
   Name: Mroźny Tron
-  Brief: Na początku tury {PlayerName:g} dodaj ileś |Lodowców+| do ręki.
+  Brief: Na początku tury {PlayerName:g}, jeżeli w dłoni jest mniej niż dana liczba
+    |Lodowych Pocisków|, dodawaj |Lodowe Pociski| do ręki puki jest ich tyle.
 MoreFriendsSe:
   Brief: "Na początku tury {PlayerName:g} dodaj losowe karty |Wspólnika| do ręki.\n\
     Mają one |Eteryczność|, którą tracą po przywołaniu."
@@ -1154,6 +1161,9 @@ SuwakoHex:
   Name: Zapeszenie
   Description: Na początku tury {PlayerName:g} losowa karta w dłoni zostaje |Zapeszona|
     i sprawiona jest bezużyteczna.
+  ExtraDescription: "Na początku tury {PlayerName:g} losowa karta w dłoni zostanie\
+    \ |Przeklęta|, stając się bezużyteczna.\n(To się już stało i zostanie odświeżone\
+    \ następnym razem, gdy {OwnerName} zacznie turę.)"
 ShenlingGold:
   Description: '{OwnerName} udropi {Level} <sprite="Point" name="Gold"> po pokonaniu.'
   Name: Prezent Bogactwa
@@ -1164,3 +1174,146 @@ ShenlingHp:
 Appliance:
   Name: Sprzęt AGD
   Description: '{OwnerName} jest odporny na |Osłabienie| i |Wrażliwość|.'
+MoodPassion:
+  Name: Pasja
+  Brief: "Gdy w stanie |Pasji|, PlayerName} zadaje i otrzymuje o {Percentage}% więcej\
+    \ obrażeń.\n|Pasja| jest |Stanem Umysłu|, którego {PlayerName} może mieć jedynie\
+    \ jeden na raz."
+  Description: "Gdy w stanie |Pasji|, PlayerName} zadaje i otrzymuje o {Percentage}%\
+    \ więcej obrażeń.\n|Pasja| jest |Stanem Umysłu|, którego {PlayerName} może mieć\
+    \ jedynie jeden na raz."
+MoodEnlight:
+  Name: Fuga
+  Description: "Wchodząc w stan |Fugi| zyskaj {Mana}.\nGdy w stanie |Fugi|, dobierz\
+    \ kartę za każdym razem, gdy zostanie zagrana karta.\n|Fuga| jest |Stanem Umysłu|,\
+    \ którego {PlayerName} może mieć jedynie jeden na raz."
+  Brief: "Wchodząc w stan |Fugi| zyskaj {Mana}.\nGdy w stanie |Fugi|, dobierz kartę\
+    \ za każdym razem, gdy zostanie zagrana karta.\n|Fuga| jest |Stanem Umysłu|, którego\
+    \ {PlayerName} może mieć jedynie jeden na raz."
+MoodPeace:
+  Brief: "Wychodząc ze stanu |Uspokojenia|, zyskaj {Mana}.\n|Uspokojenie| jest |Stanem\
+    \ Umysłu|, którego {PlayerName} może mieć jedynie jeden na raz."
+  Name: Uspokojenie
+  Description: "Wychodząc ze stanu |Uspokojenia|, zyskaj {Mana}.\n|Uspokojenie| jest\
+    \ |Stanem Umysłu|, którego {PlayerName} może mieć jedynie jeden na raz."
+InspirationSe:
+  Name: Olśnienie
+  Brief: Gdy, {PlayerName} ma {TriggerLevel} |Olśnienia|, dodaj tyle |Inspiracji|
+    do stosu doboru i wejdź w stan |Fugi|.
+  Description: Gdy, {PlayerName} ma {TriggerLevel} |Olśnienia|, dodaj tyle |Inspiracji|
+    do stosu doboru i wejdź w stan |Fugi|.
+MoreDraw:
+  Name: Oddanie Nauczyciela
+  Description: Dobierz o {Level:plural one='kartę' few='% karty' many='% kart'} więcej
+    podczas kroku doboru.
+  Brief: Dobierz więcej kart podczas kroku doboru.
+ZhenmiaowanAbilitySe:
+  Description: Karty kosztują o {Mana} mniej.
+  Brief: Karty kosztują o {Mana} mniej.
+  Name: Magia Pobijaka
+DeepFreezeSe:
+  Name: Taniec Sopli
+  Description: Za każdym razem gdy zostanie zagrana niebieska karta {PlayerName} zyskuje
+    {Level} |Tymczasowej Mocy|.
+  Brief: Za każdym razem gdy zostanie zagrana niebieska karta {PlayerName} zyskuje
+    |Tymczasową Moc|.
+FreezeBulletSe:
+  Name: Mrożący Strzał
+  Description: "Nałóż |Chłód| na {Level:plural one='następnego wroga, który zaatakuje'\
+    \ other='następnych % wrogów, którzy zaatakują'} {WonerName:d}.\nUsuń efekt na\
+    \ początku następnej tury {OwnerName:g}."
+ColdHeartedSe:
+  Name: Lodokrwistość
+  Brief: "|Lodowa Lanca| zadaje potrójne obrażenia wrogom z |Chłodem|.\nUsuń |Lodokrwistoć|\
+    \ na końcu tury {OwnerName:g}."
+  Description: "|Lodowa Lanca| zadaje potrójne obrażenia wrogom z |Chłodem|.\nUsuń\
+    \ |Lodokrwistoć| na końcu tury {OwnerName:g}."
+NextTurnPassionSe:
+  Brief: Na początku następnej tury {PlayerName:g} wejdź w stan |Pasji| i dobierz
+    karty.
+  Name: Filozofia Znienawidzonej Osoby
+  Description: Na początku następnej tury {PlayerName:g} wejdź w stan |Pasji| i dobierz
+    {Level:plural one='% kartę' few='% karty' many='% kart'}.
+PassionDrawSe:
+  Brief: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz karty.
+  Description: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz {Level:plural
+    one='% kartę' few='% karty' many='% kart'}.
+PeaceBlockSe:
+  Brief: Na końcu tury {PlayerName:g}, jeżeli jest ona w stanie |Uspokojenia|, zyskaj
+    |Blok|.
+  Description: Na końcu tury {PlayerName:g}, jeżeli jest ona w stanie |Uspokojenia|,
+    zyskaj {Level} |Bloku|.
+MoodChangeBlockSe:
+  Name: Forteca Umysłu
+  Description: Za każdym razem, gdy {PlayerName} zmienia |Stan Umysłu|, zyskaj {Level}
+    |Bloku|.
+  Brief: Za każdym razem, gdy {PlayerName} zmienia |Stan Umysłu|, zyskaj |Blok|.
+LunaticPassionSe:
+  Brief: Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.
+  Name: Szalona Miłość
+  Description: Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.
+ReimuSilenceSe:
+  Name: '"Pieczęć Fantazji -Cisza-"'
+  Description: Za {Limit:plural one='każdą dobraną kartę' few='każde dobrane % karty'
+    many='każde dobrane % kart'} poza krokiem doboru zadaj {Damage:plural one='% obrażenie'
+    few='% obrażenia' many='% obrażeń'} ataku wszystkim wrogom.
+  Brief: Za każdym razem gdy wystarczająca ilość kart zostanie dobrana poza krokiem
+    doboru zadaj obrażenia wszystkim wrogom.
+SakuyaInvestigateSe:
+  Name: Detektyw Zamrożonego Czasu
+  Brief: Na początku tury {PLayerName:g} nałóż |Namiar| na wszystkich wrogów.
+  Description: Na początku tury {PlayerName:g} nałóż {Level:plural one='% |Namiar|'
+    few='% |Namiary|' many='% |Namiarów|'} na wszystkich wrogów.
+YukariFlyObjectSe:
+  Brief: Na początku następnej tury {PlayerName:g} zadaj obrażenia wrogowi z najwyższą
+    ilością życia.
+  Name: Superszybki Latający Obiekt
+  Description: Na początku następnej tury {PlayerName:g} zadaj {Level:plural one='%
+    obrażenie' few='% obrażenia' many='% obrażeń'} wrogowi z najwyższą ilością życia.
+SanaeSummonGodSe:
+  Brief: Po iluś turach, zyskaj |Moc| i |Uduchowienie|.
+  Name: Przywołanie Take-Minakati
+  Description: Na początku {Count:ordinal one='następnej' two='%-giej' three='%-ciej'
+    other='%-tej'} tury {PlayerName:g} zyskaj {Level} |Mocy| i |Uduchowienia|.
+  ExtraDescription: Na początku następnej tury {PlayerName:g} zyskaj {Level} |Mocy|
+    i |Uduchowienia|.
+Constrain:
+  Name: Represja
+  Description: Usuwa zyskiwany |Blok| i |Barierę|.
+  Brief: Usuwa zyskiwany |Blok| i |Barierę|.
+QingxingMengSe:
+  Name: Jawne Marzenia
+  Brief: "Na początku tury {PlayerName:g} dodaj |p:całkowicie losowe| Rzadkie karty\
+    \ do ręki. One |Tymczasowo Kosztują| <sprite=\"ManaSprite\" name=\"1\"> oraz mają\
+    \ |Wygnanie| i |Eteryczność|.\n{PlayerName} może zagrać jedynie {Limit:plural\
+    \ one='% Rzadką kartę' few='% Rzadkie karty' many='% Rzadkich kart'} w jednej\
+    \ turze."
+  Description: "Na początku tury {PlayerName:g} dodaj {Level:plural one='|p:całkowicie\
+    \ losową| Rzadką kartę' few='% |p:całkowicie losowe| Rzadkie karty' many='% |p:całkowicie\
+    \ losowych| Rzadkich kart'} do ręki. {Level:plural one='Ona |Tymczasowo Kosztuje|'\
+    \ other='One |Tymczasowo Kosztują|'} <sprite=\"ManaSprite\" name=\"1\"> oraz mają\
+    \ |Wygnanie| i |Eteryczność|.\n{PlayerName} może zagrać jedynie {Limit:plural\
+    \ one='% Rzadką kartę' few='% Rzadkie karty' many='% Rzadkich kart'} w jednej\
+    \ turze. (Zostało {Count})"
+QiangweiDiyuSe:
+  Name: Różane Piekło
+  Description: " Gdy do ręki trafi karta Podstawowa, zadaj {Count:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} wszystkim wrogom i zwiększ tą ilość o {Level}."
+  Brief: Gdy do ręki trafi karta Podstawowa, zadaj obrażenia wszystkim wrogom i zwiększ
+    tą ilość.
+BladePowerSe:
+  Name: Olśniewający Bieg
+  Brief: Za każdym razem gdy zostanie zagrany |Sztylet do Rzucana| dodaj losowe karty
+    ataku do ręki. One |Tymczasowo Kosztują| {Mana} oraz mają |Wygnanie| i |Eteryczność|.
+  Description: Za każdym razem gdy zagrany zostanie |Sztylet do Rzucania| dodaj {Level:plural
+    one='losową kartę' few='% losowe karty' many='% losowych kart'} ataku do ręki.
+    {Level:plural one='Ona |Tymczasowo Kosztuje|' other='One |Tymczasowo kosztują|'
+    {Mana} oraz {Level:plural one='ma' other='mają'} |Wygnanie| i |Eteryczność|.
+FriendDrawSe:
+  Name: Zebranie w Ogródku
+  Description: "Gdy zostanie aktywowana |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika|,\
+    \ dobierz {Level:plural one='% kartę' few='% karty' many='% kart'}.\nGdy zostanie\
+    \ aktywowany |u:Ultimate|, zyskaj {Level:plural one='% losową manę' few='% losowe\
+    \ many' many='% losowych man'}."
+  Brief: "Gdy zostanie aktywowana |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika|,\
+    \ dobierz karty.\nGdy zostanie aktywowany |u:Ultimate|, zyskaj losową manę."
