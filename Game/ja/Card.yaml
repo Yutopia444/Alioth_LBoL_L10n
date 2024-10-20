@@ -170,7 +170,7 @@ EvilTuiZhi:
 TaijiLiangyi:
   Description: '|陰陽玉|を1枚手札に加える。
 
-    {PlayerName}のターン開始時、手札中に|陰陽玉|を持っていない場合、|陰陽玉|を1枚手札に加える。カードを加える効果は重複する。'
+    {PlayerName}のターン開始時、手札の|陰陽玉|が|e:1|枚より少ない場合不足分の|陰陽玉|を手札に加える。'
   Name: 太極から両儀に
   FlavorText: この技は霊夢が"無限のコーラがあれば何ができる"という本から着想を得て練り出した物である。
 Wunvyu:
@@ -396,7 +396,7 @@ PoisonPotion:
   Name: 魔女の大釜
   FlavorText: 毒キノコ一つまみに、古びた靴のかかとを少々。
 LearnAstrology:
-  Description: '{PlayerName}のターン開始時に手札の|星占い|が|e:1|枚より少ない場合、不足している枚数分|星占い|を手札に加える。'
+  Description: '{PlayerName}のターン開始時、手札の|星占い|が|e:1|枚より少ない場合不足分の|星占い|を手札に加える。'
   Name: 天文研修
   FlavorText: 「魔理沙ってば星空ばっかり眺めて.....。偶にはこっちも——」
 StarFantasy:
@@ -912,7 +912,7 @@ FrozenThrone:
   Name: 凍てつく玉座
   Description: '|アイスボルト|を1枚手札に加える。
 
-    {PlayerName}のターン開始時、手札に|アイスボルト|が無い場合、|アイスボルト|を1枚手札に加える。カードを加える効果は重複する。'
+    {PlayerName}のターン開始時、手札の|アイスボルト|が|e:1|枚より少ない場合不足分の|アイスボルト|を手札に加える。'
   FlavorText: Now, we are one!
 FakeMoon:
   Name: 偽物の月
@@ -2007,7 +2007,7 @@ RangziSeed:
   Description: '|活力|を1枚山札の一番上に置く。それは|補充|を持つ。'
   Name: 春植えざれば秋実らず
 BailianBlack:
-  Description: 全ての|防御|、|スキル|カードはコストが{Mana}になり、|廃棄|を持つ。
+  Description: 全ての|防御|、|スキル|、|状態異常|カードはコストが{Mana}になり、|廃棄|を持つ。
   Name: 闇の抱擁
   FlavorText: 心に仏ゐる限り、妖術学ぶも我辞さん。世の人我を学ぶなら、その者地獄の道参ろう。
 MoonTipsBag:
@@ -2213,7 +2213,7 @@ YouxiangWake:
   Name: 定時起床
   UpgradedDescription: "{Shield}|バリア|を得る。\n次のターン開始時、|火力|{Value1}を得て、山札からランダムな{Value2}枚の攻撃カードを手札に加える。\n\
     それらの|臨時コスト|は{Mana}。"
-  FlavorText: 「誰だよ！こんな時間に<sprite="TextIcon" name="Anger"> 」
+  FlavorText: 「誰だ！こんな時間に<sprite="TextIcon" name="Anger"> 」
 AyaExtraTurn:
   Name: 幻想風靡
   Description: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n|時間制限|{Mana}。"
@@ -2334,7 +2334,7 @@ YonglinDraw:
   Description: カードを{Value1}枚引く。それらの|臨時コスト|を{Mana}下げる。
 QingeDraw:
   Name: タオ胎動
-  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。引いたカードの中で、マナコストの合計が1より大きいカードを捨てる。"
+  Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。引いたカードのうちマナコストの合計が1より大きい、または|禁止|を持つカードを捨てる。"
 HuiyinMoreDraw:
   Name: 伝道教示
   Description: ドローフェイズの時、カードを{Value1}枚多く引く。
