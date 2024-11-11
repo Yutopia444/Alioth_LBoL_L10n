@@ -211,7 +211,7 @@ JunkoPurify:
   Name: Purifying Light
 MadokaBowSe:
   Description: "At the end of {OwnerName}'s turn, add {Level} random Status cards,\
-    \ split between the draw pile and discard pile."
+    \ shuffle half of them to the draw pile and the other half to the discard pile."
   Name: Bow Which Shoots Light
 ShendengSe:
   Description: At the end of {OwnerName}'s turn, {PlayerName} randomly gains {Level}
@@ -254,9 +254,9 @@ PotionJungleSe:
     pile.
 PotionDefenseSe:
   Name: Shooting Echo
-  Brief: Until end of turn, whenever an |Unstable Potion| is activated, gain |Barrier|.
-  Description: Until end of turn, whenever an |Unstable Potion| is activated, gain
-    {Level} |Barrier|.
+  Brief: In this turn, whenever an |Unstable Potion| is activated, gain |Barrier|.
+  Description: In this turn, whenever an |Unstable Potion| is activated, gain {Level}
+    |Barrier|.
 ChargingPotionSe:
   Name: Radioactive Elements
   Description: Whenever an |Unstable Potion| is activated, gain {Level} |Charge|.
@@ -284,7 +284,7 @@ DanceAroundLakeSe:
 EvilTuiZhiSe:
   Description: The next {Level:plural one='attack card' other='% attack cards'} activated
     will be played twice this turn.
-  Brief: Attack cards activated will be played twice.
+  Brief: In this turn, the next few attack cards activated will be played twice.
   Name: Evil Exterminate
 SilverBladeSe:
   Name: Silver Dimension
@@ -697,8 +697,8 @@ KnifeWithLockedOn:
   Brief: '|Throwing Knives| apply some |Lock On| when played.'
   Name: You Are Next!
 ZhenmiaowanAttackSe:
-  Description: Cost of skill card decrease by {Mana} in this turn.
-  Brief: Cost of skill card decreased by {Mana} in this turn.
+  Description: In this turn, cost of skill cards are decreased by {Mana} in this turn.
+  Brief: In this turn, cost of skill cards are decreased by {Mana} in this turn.
   ExtraDescription: Cards cost {Mana} less to play this turn.
   Name: Descendant of Issun-Boushi
 StopTimeSe:
@@ -900,8 +900,8 @@ FrostArmor:
     \ 1 |Frost Armor|.\nWhenever {OwnerName} is dealt attack damage, they lose 1 |Frost\
     \ Armor|."
   Brief: "Whenever {PlayerName} gains |Frost Armor|, gain that much |Block|.\nAt the\
-    \ start of {OwnerName}'s turn, gain |Block| and lose 1 |Frost Armor|.\nWhenever\
-    \ {OwnerName} is dealt attack damage, they lose 1 |Frost Armor|."
+    \ start of {OwnerName}'s turn, gain |Block| equal to the level and lose 1 |Frost\
+    \ Armor|.\nWhenever {OwnerName} is dealt attack damage, they lose 1 |Frost Armor|."
 ExtraBlizzard:
   Name: Blizzard's Advent
   Description: At the start of {OwnerName}'s next turn, she deals {Damage} |Accurate|
@@ -987,15 +987,8 @@ ControlNegative:
   Name: Control Down
   Description: "Lose {Level} |Control|.\n|Control| increases certain |Doll| effects."
   Brief: "|Control| decreased.\n|Control| increases certain |Doll| effects."
-ChaofanyinSe:
-  Brief: When a non-|Copy| card with |Instinct| is played and doesn't trigger its
-    |Instinct| effect, add |Copies| of it to the hand that |temporarily cost| {Mana}
-    and have |Exile|.
 ShortLove:
   Name: Spark of Love
-ZhuozhuangChengzhangSe:
-  Description: At the end of {PlayerName}'s turn, add {Level} |Vitalit{Level:plural
-    one='y' other='ies'}| to the hand.
 LunaClockSe:
   ExtraDescription: "{PlayerName}'s attacks deal no damage this turn.\n{SelfName}\
     \ is inactive and will only be removed after the turn it resolves."
@@ -1196,7 +1189,7 @@ BladePowerSe:
     |Ethereal|.
 KoishiUnknown:
   Name: Unpredictable
-  Description: "A portion of {OwnerName}'s intent is unknown.\nAdditional stacks will\
+  Description: "{OwnerName}'s intent is partially unknown.\nAdditional levels will\
     \ further hide her intent."
 KnifeDamageUpSe:
   Name: Propelling Silver
