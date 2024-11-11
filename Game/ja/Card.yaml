@@ -1094,9 +1094,6 @@ WaterPrincess:
     |d:初見：水沫を手札に加える。|"
   FlavorText: この精工された魔導書は、100m防水機能を持つ。
 SakuyaAttackX:
-  Description: '|{Mana}につき|：{Damage}ダメージを与える。
-
-    攻撃回数が残っている状態で目標を撃破した場合、その回数が上限になるまで他のランダムな敵へこの攻撃を継続し続ける。'
   Name: シルバープッシュ
 SakuyaDraw:
   Description: このカードを捨てるか|廃棄|した時、カードを{Value1}枚引く。
@@ -1249,7 +1246,6 @@ YinyangQueen:
   Name: 本物の勾玉職人、魅須丸
   Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
   ExtraDescription1: '{FriendA}ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
-  ExtraDescription2: '{FriendU}この戦闘中、全ての|陰陽玉|の効果の基本値を1倍分増やす。ランダムな|虹龍陰陽玉|を2枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
   Description: "{Shield}|バリア|を得る。\n手札上限に達するまでカードを引く。"
@@ -1580,46 +1576,34 @@ DayaojingFriend:
   Name: 異変調査助手、大妖精
   ExtraDescription1: '{FriendA}{Block}|ブロック|を得る。'
   UpgradedExtraDescription1: '{FriendA}{Block}|ブロック|と{Shield}|バリア|を得る。'
-  UpgradedExtraDescription2: '{FriendU}|真夏の花+|を{Value1}枚手札に加える。'
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを与える。'
-  ExtraDescription2: '{FriendU}|真夏の花|を{Value1}枚手札に加える。'
   FlavorText: 探偵に助手が必要なのはチルノですら知る常識です。
 MaidFriend:
   Name: メイド妖精、カスミ
   Description: '{FriendP}最もライフの少ない敵に{Damage}ダメージを与える。'
-  ExtraDescription2: "{FriendU}上記のダメージを即時に与える。全ての{SelfName}が与えるダメージが{Value1}増加する。"
   ExtraDescription1: "{FriendA}上記のダメージを即時に与える。\n|投げナイフ|を{Value2}枚手札に加える。"
   FlavorText: カスミは紅魔館の中で一番真面目に働く妖精メイドになっていた。
 LilyFriend:
   Name: 春告精、リリーホワイト
   ExtraDescription1: '{FriendA}{ActiveMana}を得る。'
-  ExtraDescription2: '{FriendU}ライフを{Heal}回復する。'
   Description: "{FriendS}ランダムな敵に{Damage}ダメージを{Value1}回与える。\n{FriendP}{TurnMana}を得る。"
 LarvaFriend:
   Name: 真夏の妖精の夢、ラルバ
   ExtraDescription1: '{FriendA}手札のカードを全て|アップグレード|する。'
   Description: '{FriendP}ランダムな敵に|毒|{Value1}を与える。'
-  ExtraDescription2: '{FriendU}敵全体に|毒|{Value2}を与える。
-
-    |毒|ダメージを誘発させる。'
   FlavorText: こいつと握手した後は手を洗おうね。
 LunaFriend:
   Name: 静かなる月の光、ルナ
   Description: '{FriendP}{Block}|ブロック|を得る。'
   ExtraDescription1: '{FriendA}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
-  ExtraDescription2: '{FriendU}|天衣無縫|{Value2}を得る。'
   FlavorText: 静かに調査しよう。声が出るやつはいらない。
 StarFriend:
   Name: 降り注ぐ星の光、スター
   Description: '{FriendP}敵全体に{Damage}ダメージを与える。'
   ExtraDescription1: '{FriendA}即時にダメージを{Value1}回与える。'
-  ExtraDescription2: '{FriendU}全ての{SelfName}がダメージを与えるたび、|ロックオン|{Light}を与える。
-
-    {Value2}回ダメージを与える。'
 SunnyFriend:
   Name: 輝ける日の光、サニー
   ExtraDescription1: '{FriendA}|光学迷彩|{Light}を得る。'
-  ExtraDescription2: "{FriendU}即時にダメージを{Value1}回与える。\n|火力|{Value2}を得る。"
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
 ClownpieceFriend:
   Name: 狂気なる妖精、クラウンピース
@@ -1725,7 +1709,6 @@ IceBarrier:
 LeidiFriend:
   Description: '{FriendP}ランダムな敵一体に|冷気|を与える。'
   Name: 真冬の化身、レティ
-  ExtraDescription2: '{FriendU}敵全体に{Damage}ダメージを与え、|冷気|を与える。'
   FlavorText: 冬は至れり、冬来たり。再び還らん。戦の冬へ。
 XiaoemoBook:
   Name: 悪魔の典籍
@@ -1859,7 +1842,6 @@ Lunatic:
   NonbattleDescription: '{PlayerName}のターン終了時に {SelfName}が手札、山札、捨て札に合計で{Value1}枚以上ある場合、すべての{SelfName}を|廃棄|し、ライフを{Value2}失う。'
   Name: 狂気
 HuiyinAttack:
-  Description: "{Damage}ダメージを与える。\n手札のカードを最大 {Value1} 枚まで捨てる。捨てた枚数分だけカードを引く。"
   Name: 水戸の光圀
 QingeHeal:
   Description: "|臨時火力|{Value1}を得る。\nライフを{Value2}回復して、次の{PlayerName}のターン、ライフを{Value2}失う。"
@@ -2023,8 +2005,6 @@ FakeCard:
 LoveFire:
   Name: 恋の埋火
   Description: "{Damage}ダメージを与える。\n|{Mana}につき|：ダメージを{Value1}増やす。\n支払ったマナを記憶し、次にこのカードを使用した際に同量のマナを得る。"
-  ExtraDescription1: "{Damage}ダメージを与える。{SavedMana}を得る。\n|{Mana}につき|：ダメージを{Value1}増やす。\n\
-    支払ったマナを記憶し、次にこのカードを使用した際に同量のマナを得る。"
 BabyDream:
   Name: 胎児の夢
   Description: "敵全体に{Damage}ダメージを与える。\n|平静|に入る。"
@@ -2056,7 +2036,6 @@ AnimalSpirit:
 YukariFriend:
   Name: 幻想の境界、八雲紫
   Description: '{FriendP}このターンに使用した防御カードの枚数分（{Fire}）の|火力|を得る。'
-  ExtraDescription2: '{FriendU}{PlayerName}のターン開始時、このカード以外のランダムな三色の共通カードを１枚手札に加える。それは臨時コスト{Mana}と|虚無|を持つ。'
   ExtraDescription1: '{FriendA}|廃棄場|のカードを1枚選んで手札に戻す。'
   DetailText: '{SelfName}は|u:奥義|の効果の候補に含まれない。'
 NightMana2:
@@ -2074,65 +2053,45 @@ NightMana1:
 FlowerGone:
   Name: 色褪せた記憶
   Description: "{Block}|ブロック|を得る。\n|平静|状態なら|霊力|{Value1}を得て、{SelfName}を廃棄する。"
-  ExtraDescription1: "{Block}|ブロック|を得る。\n|d:平静状態なら|霊力|{Value1}を得て、{SelfName}を廃棄する。|"
 CloseMemory:
   Name: 抑圧された記憶
-  Description: "カードを{Value1}枚引く。\n引いたカードに|反復|を与える。"
 YoubiKongjuzheng:
   Name: 閉所恐怖症
-  Description: "{Block}|ブロック|を得る。\n|直感|：{Shield}|バリア|を得る。"
 YaoguaiNaodianbo:
   Name: 妖怪ポリグラフ
-  Description: "{Damage}ダメージを与える。|熱情|に入る。\n|直感|：{Mana}を得る。"
 DNARain:
   Name: DNA散弾
-  Description: "敵全体に{Damage}ダメージを与える。\n|心境|に入る度、ダメージが{Value1}増加する。"
 LianaiChongdong:
   Name: 恋の衝動
-  Description: "|平静|状態でない場合、次に使用する基本カードの効果を{Value1}増やす。\n|平静|状態なら基本カードの効果を{Value2}増やす。"
   ExtraDescription2: "|平静|状態でない場合、次に使用する基本カードの効果を{Value1}増やす。\n|d:平静状態なら基本カードの効果を{Value2}増やす。|"
-  ExtraDescription1: "|d:平静状態でない場合、次に使用する基本カードの効果を{Value1}増やす。|\n|平静|状態なら基本カードの効果を{Value2}増やす。"
 LoveSeed:
   Name: 愛の種
-  Description: "ライフを{Value1}回復し、{TotalMana}を得る。\n|隣接するカードを使用した時|：得られるマナを{Mana}増やす。"
 TaoqiQiangwei:
   Name: 奔放なる薔薇
-  Description: "{Block}|ブロック|を得て、カードを{Value1}枚引く。\n|隣接するカードを使用した時|：戦闘終了まで{SelfName}のコストを{Mana}減らす。"
 JiyiShitihua:
   Name: 実体化する記憶
-  Description: "手札の攻撃カードを1枚複製する。それはコスト{Mana}かつ|廃棄|を持つ。\n{Damage}ダメージを与える。"
 Kongxiangshang:
   Name: 空想上の人格保持者
-  Description: '|基本|の防御カードを使用する度、|平静|に入る。'
 ChaoyueZiwo:
   Name: スーパーエゴ
-  Description: '{PlayerName}のターン開始時にいずれかの|心境|に入っている場合、|火力|{Value1}と|霊力|{Value1}を得る。'
 ZuxianTuomeng:
   Name: 先祖の夢
-  Description: "このカードを引いた時、一番左の手札を廃棄する。\n廃棄されたカードのコピーを{Value1}枚手札に加える。それらは臨時コスト{Mana}で|廃棄|を持つ。"
 Beiyanwu:
   Name: 嫌われ者のフィロソフィ
-  Description: 隣接するカードを|廃棄|する。|廃棄|したカード1枚につき、{Mana}を得てカードを{Value1}枚引く。
 QinchunPanni:
   Name: 反抗期
-  Description: "|熱情|状態でない場合、ライフが最も少ない敵に{Damage}ダメージを与える。\n|熱情|状態なら、{Block}ブロックを得てカードを{Value1}枚引く。"
   ExtraDescription2: "|熱情|状態でない場合、ライフが最も少ない敵に{Damage}ダメージを与える。\n|d:熱情状態なら、{Block}ブロックを得てカードを{Value1}枚引く。|"
-  ExtraDescription1: "|d:熱情状態でない場合、ライフが最も少ない敵に{Damage}ダメージを与える。|\n|熱情|状態なら、{Block}ブロックを得てカードを{Value1}枚引く。"
 ZhuozhuangChengzhang:
   Name: 健やかな成長
-  Description: '{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。'
   UpgradedDescription: "|グレイズ|{Value2}を得る。\n{PlayerName}のターン終了時、|活力|を{Value1}枚手札に加える。"
 BenwoTouying:
-  Name: 恋は盲目
   Description: "|熱情|に入る度、|p:完全にランダム|な攻撃カードを1枚手札に加える。それは|臨時コスト|{Mana}と|廃棄|を持つ。\n|熱情|に入る。"
 Danxiangsi:
-  Name: 片思い
   Description: "|火力|{Value1}を得る。\n|保留時|：得る|火力|を{Value2}増加させる。"
 PerfectCrime:
   Name: 完全犯罪
   Description: "対象の|霊力|、|グレイズ|、|加護|、|光学迷彩|、|天衣無縫|を盗む。\n{Damage}ダメージを与える。"
 WuyishiDNA:
-  Name: 夢遊病
   Description: "|遁走|に入る。{PlayerName}のターンを終了し、追加ターンを得る。\n{PlayerName}のターン終了時、|遁走|状態でない場合ゲームに敗北する。"
 PatchouliFriend:
   Description: '{FriendP}ランダムな{PassiveColor}個のマナを|彩色|マナに変換する。'
@@ -2141,7 +2100,6 @@ PatchouliFriend:
   Name: 七曜の錬金術師、パチュリー
   FlavorText: 混ぜて混ぜてかき混ぜる。
 MeilingFriend:
-  ExtraDescription2: '{FriendU}ライフを{Value1}回復する。|火力|{Value2}を得る。'
   Description: '{FriendS}|グレイズ|{Graze}を得る。
 
     {FriendP}|投げナイフ|を1枚手札に加える。
@@ -2166,7 +2124,6 @@ AyaNewsAliceSp:
   Description: '|ターン終了時|：霊力{Value1}を失う。'
   FlavorText: 月都万象展特集！{PlayerName}に関するゴシップを多数ピックアップ！！
 QiangweiDiyu:
-  Name: ローズ地獄
   Description: '|ローズ地獄|{Value1}を得る。
 
     |基本|カードを使用する度、|ローズ地獄|{Value2}を得てカードを1枚引く。
@@ -2220,9 +2177,7 @@ AyaExtraTurn:
   ExtraDescription1: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n\
     |d:時間制限{Mana}。|"
 JinziSuperExtraTurn:
-  Name: 世紀のダブルエスパー
   Description: "{PlayerName}が|通常ターン|を終了する度、|追加ターン|を開始する。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。"
-  DetailText: "{SelfName}の効果による追加ターンは他の効果で得た追加ターンより優先して発生する。\n{SelfName}をプレイした後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
 ZhenmiaowanAbility:
   Name: 小槌の魔力
   Description: 戦闘終了まで、全てのカードのコストが{Mana}減少する。
@@ -2327,7 +2282,6 @@ YukariFlyObject:
   Name: 超高速飛行体
   Description: 次のターン開始時、最もライフが多い敵に{Value1}ダメージを与える。
 BeihaiWangxiang:
-  Name: 被害妄想
   Description: "{Shield}|バリア|を得る。\n|バリア|の値の半分の|抑制|を受ける。"
 YonglinDraw:
   Name: 神代の記憶
@@ -2381,7 +2335,6 @@ DefaultPeace:
   Description: "{Block}|ブロック|を得る。\n|平静|に入る。"
   Name: 愛の茨
 EnterPassion:
-  Name: 熱情の想起
   Description: '|熱情|に入る。'
 LeaveMoodAttack:
   Description: "{Damage}ダメージを与える。\n現在の|心境|を解除する。"
@@ -2393,13 +2346,10 @@ PassionDefense:
   Name: 本能の愛
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
 InspirationGreen:
-  Description: '{Mana}を得る。'
   Name: 緑の閃き
 InspirationRed:
-  Description: 敵全体に{Damage}ダメージを{Value1}回与える。
   Name: 赤の閃き
 EnterPeace:
-  Description: '|平静|に入る。'
   Name: 平静の想起
 LeaveMoodDraw:
   Name: 無意識の放浪
@@ -2426,14 +2376,10 @@ AliceAttackB:
   Name: リターンイナニメトネス
   Description: '{Damage}ダメージを与える。'
 InspirationBlack:
-  Description: "{Block}|ブロック|を得る。\nランダムな敵に{Damage}ダメージを与える。"
   Name: 黒の閃き
 InspirationWhite:
-  Description: "ランダムな手札のカード{Value1}枚を|アップグレード|する。\nアップグレードできるカードが無い場合、1枚毎に代わりに{Value2}|ブロック|を得る。"
   Name: 白の閃き
 QingxingMeng:
-  Description: "{PlayerName}のターン開始時、|完全ランダム|なレアカード{Value1}枚を手札に加える。それは|臨時コスト|{Mana}で|廃棄|と|虚無|を持つ。\n\
-    {PlayerName}は各ターンにレアカードを{Limit}枚のみ使用することができる。"
   Name: 意識潜行
 DeployShanghai:
   Name: 上海人形設置
@@ -2441,15 +2387,11 @@ LeaveMoodGraze:
   Name: 無意識の回避
   Description: "|グレイズ|{Value1}を得る。\n現在の|心境|を解除する。"
 SiwangLaiDian:
-  Description: "手札の攻撃カードを1枚|廃棄|し、そのコピー{Value1}枚を山札の上に置く。\nそれが|基本|カードならそれらは|補充|を得る。"
   UpgradedDescription: "手札の攻撃カードのコピー{Value1}枚を山札の上に置く。\nそれが|基本|カードならそれらは|補充|を得る。"
-  Name: 恐怖の可愛い電話
 MirrorTest:
   Name: ミラーテスト
-  Description: "{Shield}|バリア|を得る。\n{SelfName}が手札にある間、{SelfName}に隣接したカードが使用された後に攻撃カードを使用した場合、{Shield}|バリア|を得て{SelfName}はそのカードのコピーになる。"
 WuyunJiekong:
   Description: "手札、山札、捨て札の全ての|状態異常|と|厄災|を|廃棄|する。\n全てのデバフを解除する。"
-  Name: 五蘊皆空
 MoodAttack:
   Description: "{Damage}ダメージを与える。\n{PlayerName}の|心境|が変化する度、捨て札の{SelfName}を手札に加える。"
   Name: 精神コンビネーション
@@ -2457,16 +2399,13 @@ PassionVulnerable:
   Name: イドの開放
   Description: "|熱情|状態なら敵全体に|弱体|{Value1}を与える。\nそうでない場合、|熱情|に入る。"
 NextTurnPassion:
-  Name: 嫌われ者のフィロソフィ
   Description: '{PlayerName}の次のターン開始時に|熱情|状態に入り、カードを{Value1}枚引く。'
 PeaceEndTurn:
   UpgradedDescription: "捨て札のカードを{Value1}枚選んで手札に加え、それらをそのターン|保留|する。\n|平静|に入る。\n{PlayerName}のターンを終了する。"
   Name: 我に返る
   Description: "|平静|に入る。\n{PlayerName}のターンを終了する。"
-  FlavorText: 「ここはどこ？」
 PeaceDraw:
   Name: 自己管理
-  Description: "|平静|状態ならカードを{Value1}枚引く。\nそうでない場合、|平静|に入る。"
 PeaceBlock:
   Description: '{PlayerName}がターン終了時に|平静|状態なら{Value1}|ブロック|を得る。'
   Name: 静かなる守り
@@ -2496,5 +2435,4 @@ FindInspiration:
   Name: アイデア探し
   Description: "{Damage}ダメージを与える。\n|迸る閃き|{Value1}を得る。"
 EnterEnlight:
-  Name: 遁走
   Description: '|遁走|に入る。'
