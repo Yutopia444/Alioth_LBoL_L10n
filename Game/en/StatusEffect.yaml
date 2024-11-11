@@ -210,8 +210,8 @@ JunkoPurify:
   Description: Whenever {PlayerName} plays a card, |Purify| {Level}.
   Name: Purifying Light
 MadokaBowSe:
-  Description: "At the end of {OwnerName}'s turn, add {Level} random Status cards\
-    \ to the draw pile."
+  Description: "At the end of {OwnerName}'s turn, add {Level} random Status cards,\
+    \ split between the draw pile and discard pile."
   Name: Bow Which Shoots Light
 ShendengSe:
   Description: At the end of {OwnerName}'s turn, {PlayerName} randomly gains {Level}
@@ -283,8 +283,8 @@ DanceAroundLakeSe:
   Name: Lakeside Dance
 EvilTuiZhiSe:
   Description: The next {Level:plural one='attack card' other='% attack cards'} activated
-    deal{Level:plural one='s' other=''} double damage.
-  Brief: Attack cards played will deal double damage.
+    will be played twice this turn.
+  Brief: Attack cards activated will be played twice.
   Name: Evil Exterminate
 SilverBladeSe:
   Name: Silver Dimension
@@ -987,20 +987,12 @@ ControlNegative:
   Name: Control Down
   Description: "Lose {Level} |Control|.\n|Control| increases certain |Doll| effects."
   Brief: "|Control| decreased.\n|Control| increases certain |Doll| effects."
-BenwoTouyingSe:
-  Brief: When entering |Passion|, add {Level} completely random attack cards to the
-    hand that |temporarily costs| 0 and have |Exile|.
 ChaofanyinSe:
   Brief: When a non-|Copy| card with |Instinct| is played and doesn't trigger its
     |Instinct| effect, add |Copies| of it to the hand that |temporarily cost| {Mana}
     and have |Exile|.
-ChaoyueZiwoSe:
-  Brief: At the end of {PlayerName}'s turn, if in |Serenity|, gain |Firepower| and
-    |Spirit|.
 ShortLove:
   Name: Spark of Love
-LongLove:
-  Description: All |Basic| cards have their numerical value increased by {Level}.
 ZhuozhuangChengzhangSe:
   Description: At the end of {PlayerName}'s turn, add {Level} |Vitalit{Level:plural
     one='y' other='ies'}| to the hand.
@@ -1159,8 +1151,6 @@ MoodPassion:
     \ one at a time."
   Brief: "While in |Passion|, {PlayerName} deals and takes {Percentage}% more damage.\n\
     |Passion| is a |Mental State|, of which {PlayerName} can only have one at a time."
-QingxingMengSe:
-  Name: Lucid Daydream
 FriendDrawSe:
   Description: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is\
     \ activated, draw {Level} card{Level:plural one='' other='s'}.\nWhenever an |u:Ultimate\
@@ -1168,8 +1158,6 @@ FriendDrawSe:
   Brief: "Whenever a |Teammate|'s |a:Active Skill| or |u:Ultimate Skill| is activated,\
     \ draw cards.\nWhenever an |u:Ultimate Skill| is activated, gain random mana."
   Name: Garden Gathering
-NextTurnPassionSe:
-  Name: Philosophy of the Despised
 PassionDrawSe:
   Description: Whenever {PlayerName} enters |Passion|, draw {Level} card{Level:plural
     one='' other='s'}.
@@ -1208,3 +1196,80 @@ BladePowerSe:
     |Ethereal|.
 KoishiUnknown:
   Name: Unpredictable
+  Description: "A portion of {OwnerName}'s intent is unknown.\nAdditional stacks will\
+    \ further hide her intent."
+KnifeDamageUpSe:
+  Name: Propelling Silver
+  Description: '|Throwing Knives| deal {Level} more damage.'
+  Brief: '|Throwing Knives| deal more damage.'
+MoodEpiphany:
+  Name: Fugue
+  Brief: "While in |Fugue|, gain {Mana} and draw a card for each card played.\nAt\
+    \ the end of {PlayerName}'s turn, or when some cards are played, exit |Fugue|.\n\
+    |Fugue| is a |Mental State|, of which {PlayerName} can only have one at a time."
+  Description: "While in |Fugue|, gain {Mana} and draw a card for each card played.\n\
+    At the end of {PlayerName}'s turn, or when {Count:plural one='% card is' other='%\
+    \ cards are'} played, exit |Fugue|.\n|Fugue| is a |Mental State|, of which {PlayerName}\
+    \ can only have one at a time."
+NextTurnPassion:
+  Brief: At the start of {PlayerName}'s next turn, enter |Passion} and draw cards.
+  Name: Next Turn Passion
+  Description: At the start of {PlayerName}'s next turn, enter |Passion} and draw
+    {Level:plural one='% card' other='% cards'}.
+UpgradePeace:
+  Description: Increases the mana gained from exiting |Serenity|.
+  Brief: Increases the mana gained from exiting |Serenity|.
+Tired:
+  Description: "Only {Limit} cards may be played this turn.\n{Count:plural one='%\
+    \ card' other='% cards'} played."
+  Name: Fatigue
+  ExtraDescription: "Only {Limit} cards may be played this turn.\n{Count:plural one='%\
+    \ card' other='% cards'} played.\n{SelfName} is inactive and will only be removed\
+    \ after the turn it resolves."
+GainInspirationSe:
+  Description: "At the end of {PlayerName}'s turn, add {Level} |找到灵感了！| to the draw\
+    \ pile.\n"
+  Brief: "At the end of {PlayerName}'s turn, add |找到灵感了！| to the draw pile.\n"
+CloseEyeSe:
+  Description: "Enemy's intentions are unknown.\nRemaining Turns: {Level}"
+  Brief: Enemy's intentions are unknown for a while.
+LoveFireSe:
+  Brief: At the end of {PlayerName}'s turn, if a |Follow-Up Attack| was performed,
+    gain |Firepower|.
+  Name: Embers of Love
+  Description: "At the end of {PlayerName}'s turn, if a |Follow-Up Attack| was performed,\
+    \ gain {Level} |Firepower|.\nA |Follow-Up Attack| was performed this turn."
+  ExtraDescription: "At the end of {PlayerName}'s turn, if a |Follow-Up Attack| was\
+    \ performed, gain {Level} |Firepower|.\nNo |Follow-Up Attacks| performed this\
+    \ turn."
+KoishiDnaSe:
+  Description: At the start of {PlayerName}'s turn, immediately play the top {Level}
+    cards in the draw pile.
+  Brief: At the start of {PlayerName}'s turn, immediately play cards at the top of
+    the draw pile.
+KoishiPhoneSe:
+  Brief: "For each attack card played, perform |Follow-Up Attacks|.\nIf there are\
+    \ no |Follow-Up Attacks| in the draw pile, instead play |电话响了|."
+  Description: "For each attack card played, perform {Level} |Follow-Up Attack{Level:plural\
+    \ one='' other='s}|.\nIf there are no |Follow-Up Attacks| in the draw pile, instead\
+    \ play |电话响了|."
+DreamExpressSe:
+  Name: Fantasy Express
+  Description: At the end of {PlayerName}'s turn,
+BailianMagicSe:
+  Description: The next {Level:plural one='|Ability| card' other='% |Ability| cards'}
+    activated will be played twice this turn.
+  Brief: The next |Ability| cards activated will be played twice this turn.
+JinziDoppelgangerSe:
+  Name: Century's Doppelgangers
+  Description: "The first {Level:plural one='card' other='% cards} played during {PlayerName}'s\
+    \ turn is played twice.\n{Count:plural one='% card left' other='% cards left}."
+  Brief: The first cards played during {PlayerName}'s turn are played twice.
+ButterflyDreamSe:
+  Description: At the start of {PlayerName}'s turn, add {Level} |p:completely random|
+    Rare card{Level:plural one='' other='s'} to the hand. {Level:plural one='This
+    card has' other='These cards have'} |Exile|, |Ethereal| and mana of any color
+    can be spent to pay the mana cost.
+  Brief: At the start of {PlayerName}'s turn, add |p:completely random| Rare cards
+    to the hand. They have |Exile|, |Ethereal| and mana of any color can be spent
+    to pay the mana cost.
