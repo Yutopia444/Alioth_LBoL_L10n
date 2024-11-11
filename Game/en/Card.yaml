@@ -268,8 +268,8 @@ BoliDajiejie:
   Name: The Great Hakurei Barrier
   FlavorText: All ephemeral fantasies will last here for eternity.
 EvilTuiZhi:
-  Description: The next {Value1} attack {Value1:plural one='card' other='cards'} activated
-    deal{Value1:plural one='s' other=''} double damage.
+  Description: This turn, the next {Value1} attack {Value1:plural one='card is' other='cards
+    are'} played twice.
 
   Name: Evil Exterminate
   FlavorText: One of the fun things you can do in Gensokyo.
@@ -547,8 +547,8 @@ TimeAuraAttack:
 
   Name: Time Magic
 AttackMagic:
-  Description: "Deal {Damage} damage.\nDraw {Value1:plural one='% card' other='% cards'}.\n\
-    Add {Value2} |Throwing Kni{Value2:plural one='fe' other='ves'}| to the hand."
+  Description: "Deal {Damage} damage.\nDiscard up to {Value1:plural one='% card' other='%\
+    \ cards'}, then draw that many cards."
 
   Name: Trick Bullets
 SakuyaTwiceAttack:
@@ -849,8 +849,6 @@ SakuyaDefenseRetain:
   Description: "Gain {Block} |Block|.\n|Block| is not lost at the start of {PlayerName}'s\
     \ next turn."
   Name: Guard Up
-SakuyaAttackX:
-  Name: Propelling Silver
 PrepareParty:
   Description: "Place up to one card from the hand on top of the draw pile.\nGain\
     \ {Block} |Block|."
@@ -1355,8 +1353,6 @@ RemiliaBat:
   Description: "Gain {Value1} |Temporary Firepower|.\nGain {Value2} |Graze|."
   Name: Bat Incarnation
   FlavorText: The advent of the Queen of the Night.
-HuiyinAttack:
-  Name: Mito no Mitsukuni
 ReadBook:
   Description: "Gain {Block} |Block|.\n|Debut|: Choose 1 of {Value1} blue and/or white\
     \ cards to add to the hand."
@@ -2141,6 +2137,9 @@ YinyangQueen:
   Description: '{FriendP}Gain {Value2} |Block| and |Barrier|.'
   ExtraDescription1: "{FriendA}Add {Value1} random |Rainbow Jade Yin-Yang Orb{Value1:plural\
     \ one='' other='s'}| to the hand."
+  ExtraDescription3: "{FriendU}For the rest of combat, the effects of all |Yin-Yang\
+    \ Orbs| are doubled. Immediately add {Value1} |Rainbow Jade Yin-Yang Orb{Value1:plural\
+    \ one='' other='s'}|."
 ShuihuoCard:
   Name: Orb of Water and Fire
   Description: "Deal {Damage} damage.\nGain {Block} |Block|.\n|When Retained|: Increase\
@@ -2581,10 +2580,11 @@ DayaojingFriend:
   Description: '{FriendP}Deal {Damage} attack damage to a random enemy.'
   ExtraDescription1: '{FriendA}Gain {Block} |Block|.'
   UpgradedExtraDescription1: '{FriendA}Gain {Block} |Block| and {Shield} |Barrier|.'
-  UpgradedExtraDescription2: '{FriendU}Add {Value1} |Midsummer Flowers+| to the hand.'
   Name: Daiyousei, Lively Assistant
   FlavorText: A detective needs an assistant; even Cirno knows that this is common
     knowledge.
+  ExtraDescription3: '{FriendU}Add {Value1} |Midsummer Flowers| to the hand.'
+  UpgradedExtraDescription3: '{FriendU}Add {Value1} |Midsummer Flowers+| to the hand.'
 MaidFriend:
   Description: '{FriendP}Deal {Damage} attack damage to the enemy with the least life.'
   Name: Kasumi, Mansion Maid
@@ -2592,6 +2592,8 @@ MaidFriend:
     \ one='fe' other='ves'}| to the hand."
   FlavorText: Out of all the fairy maids in the Scarlet Devil Mansion, Kasumi is already
     the most serious in her work.
+  ExtraDescription3: '{FriendU}Deal damage immediately. All {SelfName}s deal {Value1}
+    additional damage.'
 FruitShake:
   Description: "Deal {Damage} damage to each enemy. Apply |Cold| on each enemy hit.\n\
     If a |Teammate| was summoned this turn, {SelfName} costs {Mana} to play."
@@ -2602,16 +2604,20 @@ LeidiFriend:
   Name: Letty, Winter Embodied
   FlavorText: Winter is coming. Winter has come. Once again, battle against the winter.
     Winter returns.
+  ExtraDescription3: '{FriendU}Deal {Damage} damage and apply |Cold| to each enemy.'
 LarvaFriend:
   Description: '{FriendP}Apply {Value1} |Poison| to a random enemy.'
   ExtraDescription1: '{FriendA}|Upgrade| each card in the hand.'
   Name: Larva, God of Evernight
   FlavorText: Remember to wash hands after shaking hands with her.
+  ExtraDescription3: "{FriendU}Apply {Value2} |Poison| to each enemy. Trigger |Poison|'s\
+    \ life loss effect once"
 LilyFriend:
   Description: "{FriendS}Deal {Damage} attack damage to a random enemy {Value1} times.\n\
     {FriendP}Gain {TurnMana}."
   ExtraDescription1: '{FriendA}Gain {ActiveMana}.'
   Name: Lily White, Herald of Spring
+  ExtraDescription3: '{FriendU}Gain {Heal} life.'
 InstantFreeze:
   Description: "Apply |Cold| to each enemy.\nEnd {PlayerName}'s turn. Then, take an\
     \ extra turn.\n|Time Limit| {Mana}."
@@ -2637,15 +2643,21 @@ LunaFriend:
   ExtraDescription1: '{FriendA}Deal {Damage} attack damage to a random enemy {Value1}
     times.'
   FlavorText: Investigate stealthily, without making a single sound.
+  ExtraDescription3: "{FriendU}Gain |Flawless| for {Value2} turn{Value2:plural one=''\
+    \ other='s'}."
 StarFriend:
   Description: '{FriendP}Deal {Damage} attack damage to each enemy.'
   ExtraDescription1: '{FriendA}Immediately deal damage {Value1} times.'
   Name: Star, Showering Starlight
+  ExtraDescription3: "{FriendU}Whenever any {SelfName} deals damage, apply {Light}\
+    \ |Lock On|. \nImmediately deal damage {Value2} time{Value2:plural one='' other='s'}."
 SunnyFriend:
   Description: '{FriendP}Deal {Damage} attack damage to a random enemy {Value1} times.'
   ExtraDescription1: "{FriendA}Gain |Optical Camouflage| for {Light} turn{Light:plural\
     \ one='' other='s'}."
   Name: Sunny, Dazzling Sunlight
+  ExtraDescription3: "{FriendU}Immediately deal damage {Value1} time{Value1:plural\
+    \ one='' other='s'}. \nGain {Value2} |Firepower|."
 ClownpieceFriend:
   Description: '{FriendS}Gain {StartMana}.
 
@@ -2653,7 +2665,7 @@ ClownpieceFriend:
   ExtraDescription1: "{FriendA}Draw {Value1} card{Value1:plural one='' other='s'}\
     \ and add a |Lunacy| to the discard pile."
   UpgradedExtraDescription1: "{FriendA}Draw {Value1:plural one='% card' other='% cards'}."
-  ExtraDescription2: '{FriendU}Gain {Mana} and add a |Lunacy| to the discard pile.'
+  ExtraDescription2: '{FriendA2}Gain {Mana} and add a |Lunacy| to the discard pile.'
   Name: Clownpiece, Lunatic Fairy
 YouxiangAttack:
   Description: "Deal {Damage} damage.\n|For each {Mana} spent|: Deal {Value1} more\
@@ -2723,6 +2735,8 @@ YukariFriend:
   Description: '{FriendP}Gain |Firepower| equal to the number of defense cards played
     this turn. ({Fire})'
   DetailText: "{SelfName} cannot be produced by the |u:Ultimate Skill|'s effect."
+  ExtraDescription3: "{FriendU}At the start of {PlayerName}'s turn, add a random three-colored\
+    \ neutral card to the hand. It |temporarily costs| {Mana} and has |Ethereal|."
 PoisonTeaParty:
   Name: Dubious Tea Party
   Description: "{PlayerName} gains {Value1} life and {Value1} |Poison|.\nApply {Value2}\
@@ -2758,19 +2772,12 @@ TriggerAllPassive:
   Description: (WIP)
   Name: Activate Passives
 FlowerGone:
-  Description: "Gain {Block} |Block|.\n|In Serenity|: Gain {Value1} |Spirit| and |Exile|\
-    \ {SelfName}."
+  Description: "Gain {Block} |Block|.\n|In Serenity|: Gain {Shield} |Barrier| instead."
   Name: Withering Dreams
-CloseMemory:
-  Description: "Draw {Value1} card{Value1:plural one='' other='s'}\nCards drawn this\
-    \ way gain |Echo|."
 QinchunPanni:
   Description: "|Not in Passion|: Deal {Damage} damage to the enemy with the least\
     \ life.\n|In Passion|: Gain {Block} |Block| and draw {Value1:plural one='% card'\
     \ other='% cards'}."
-  ExtraDescription1: "|d:Not in Passion: Deal {Damage} damage to the enemy with the\
-    \ least life.|\n|In Passion|: Gain {Block} |Block| and draw {Value1:plural one='%\
-    \ card' other='% cards'}."
 Danxiangsi:
   Description: "Gain {Value1} |Firepower|.\n|When Retained|: Increase |Firepower|\
     \ gain by {Value2}."
@@ -2778,8 +2785,8 @@ BabyDream:
   Description: "Deal {Damage} damage to each enemy.\nEnter |Serenity|."
   Name: Embryo's Dream
 PerfectCrime:
-  Description: "Steal target's |Spirit|, |Graze|, |Amulet|, |Optical Camouflage|,\
-    \ |Flawless|.\nDeal {Damage} damage."
+  Description: "Steal target's |Graze|, |Optical Camouflage|, |Flawless|, and up to\
+    \ {Value1} |Firepower| and |Spirit|."
   Name: Perfect Crime
 GainDollSlot:
   Description: (WIP)
@@ -2791,14 +2798,10 @@ FakeCard:
   Name: Ancestral Dreams (Forged)
   Description: "|d:|Koishi Komeiji| is still asleep.\nPlease check back in a future\
     \ update!|"
-WuyishiDNA:
-  Description: "Enter |Fugue|. End the turn. Then, take an extra turn.\nAt the end\
-    \ of {PlayerName}'s turn, if {PlayerName} is not in |Fugue|, she loses the game."
 LoveFire:
   Name: Embers of Love
-  Description: "Deal {Damage} damage.\n|For each {Mana} spent|: Increase {SelfName}'s\
-    \ damage by {Value1}.\nRecords mana spent for playing {SelfName}, and returns\
-    \ mana recorded for the next time {SelfName} is played."
+  Description: "Perform a |Follow-Up Attack|.\nAt the end of {PlayerName}'s turn,\
+    \ if a |Follow-Up Attack| was performed, gain {Value1} |Firepower|."
 AliceAttackW:
   Name: Futuristic Bunraku
   Description: Deal {Damage} damage.
@@ -2825,40 +2828,25 @@ AyaNewsAliceSp:
   Description: '|At the end of the turn|: Lose {Value1} |Spirit|.'
   FlavorText: A special edition on the Lunar Capital Exhibition! It details the gossip
     surrounding {PlayerName}.
-YaoguaiNaodianbo:
-  Name: Youkai EEG
 YoubiKongjuzheng:
   Description: "Gain {Block} |Block|.\n|Instinct|: Gain {Shield} |Barrier|."
-DNARain:
-  Description: "Deal {Damage} damage to each enemy.\n|When entering a Mental State|:\
-    \ Increase {SelfName}'s damage by {Value1}."
 ZhuozhuangChengzhang:
   Description: At the end of {PlayerName}'s turn, add {Value1} |Vitalit{Value1:plural
     one='y' other='ies'}| to the hand.
 LianaiChongdong:
-  Name: Love Impulse
   ExtraDescription2: "|Not in Serenity|: Increase the next |Basic| card's numerical\
     \ value by {Value1}.\n|d:In Serenity: Increase each Basic card's numerical value\
     \ by {Value2}.|"
-TaoqiQiangwei:
-  Name: Willful Rose
 LoveSeed:
   Name: Seedlings of Love
-  FlavorText: Just let me have another mouthful, then you'll be able to see the seedlings.
 BenwoTouying:
   Description: "Whenever {PlayerName} enters |Passion|, add a |p:completely random|\
     \ |Attack| card to the hand. It |temporarily costs| {Mana} and has |Exile|.\n\
     Enter |Passion|."
-JiyiShitihua:
-  Name: Memory Manifestation
 Kongxiangshang:
   Name: Ideal Self Retention
-ZuxianTuomeng:
-  Name: Ancestral Dreams
 ChaoyueZiwo:
   Name: Exceed Oneself
-Beiyanwu:
-  Name: Philosophy of the Despised
 MeilingFriend:
   Name: Meiling, Neglectful Gatekeeper
   Description: '{FriendS}Gain {Graze} |Graze|.
@@ -2867,18 +2855,15 @@ MeilingFriend:
 
     Whenever {PlayerName} receives damage from an enemy''s whole attack, it triggers
     for an additional time.'
+  ExtraDescription3: '{FriendU}Gain {Value1} life and {Value2} |Firepower|.'
 PatchouliFriend:
   Name: Patchouli, Elemental Alchemist
   Description: "{FriendP}Convert {PassiveColor} random mana into |Philosopher's Mana|."
   ExtraDescription1: '{FriendA}Gain {Value1} |Firepower| and |Spirit|. Gain {Power}
     <sprite="Point" name="Power">.'
-  ExtraDescription2: "{FriendU}Add {Value2} |Unstable Potion{Value2:plural one=''\
+  ExtraDescription2: "{FriendA2}Add {Value2} |Unstable Potion{Value2:plural one=''\
     \ other='s'}| to the hand."
   FlavorText: '"Shake, shake, sway, shake."'
-QiangweiDiyu:
-  Description: "Gain {Value1} |Rose Hell|.\nWhenever a |Basic| card enters the hand,\
-    \ gain {Value2} |Rose Hell| and draw a card.\n(|Rose Hell|: Whenever a |Basic|\
-    \ card enters the hand, deal that much damage to a random enemy.)"
 ReimuHuashan:
   Description: "|Exile| a card in the hand. Gain {Value2} <sprite=\"Point\" name=\"\
     Power\">.\nIf the card |Exiled| this way is an |Ability| card, gain {Value1} maximum\
@@ -2888,10 +2873,6 @@ ReimuHuashan:
     \ maximum life.|\nThis effect can only happen once per combat."
   Name: Receive Guidance
   FlavorText: '"Okay, fine, you win."'
-JinziSuperExtraTurn:
-  Description: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
-    |Block| and |Graze| are not lost at the start of that extra turn, and only {Value1}\
-    \ card{Value1:plural one='' other='s'} may be played."
 MoonSea:
   Description: "Gain {Block} |Block|.\nAdd a |Pure| to the hand."
   UpgradedDescription: "Gain {Block} |Block|.\nAdd a |Pure| or a |Splash| to the hand."
@@ -3151,29 +3132,19 @@ HuiyinMoreDraw:
 DefaultPassion:
   Description: "Deal {Damage} damage.\nEnter |Passion|."
   Name: Lonely Heart
-InspirationGreen:
-  Name: Green Inspiration
 DefaultPeace:
   Description: "Gain {Block} |Block|.\nEnter |Serenity|."
   Name: Lovestruck Thorns
-MirrorTest:
-  Name: Mirror Test
 QingxingMeng:
   Name: Sinking Consciousness
-WuyunJiekong:
-  Name: Five Skandhas
 SiwangLaiDian:
   UpgradedDescription: "|Exile| a card in the hand. Add {Value1} |Cop{Value1:plural\
     \ one='y' other='ies'}| of it to the top of the draw pile.\nIf the chosen card\
     \ is |Basic|, the added {Value1:plural one='|Copy| has' other='|Copies| have'}\
     \ |Replenish|."
-InspirationBlack:
-  Description: "Gain {Block} |Block|.\nDeal {Damage} damage to a random enemy."
 FindInspiration:
   Description: "Deal {Damage} damage.\nGain {Value1} |Flash of Inspiration|."
   Name: Seek Inspiration
-InspirationWhite:
-  Name: White Inspiration
 InspirationRed:
   Name: Red Inspiration
 InspirationCard:
@@ -3213,11 +3184,9 @@ PassionVulnerable:
   Name: Release of the Id
   Description: "|In Passion|: Apply {Value1} |Vulnerable| to each enemy.\n|Not in\
     \ Passion|: Enter |Passion|."
-EnterPassion:
-  Description: Enter |Passion|.
 KoishiZeroAttack:
   Name: Blind Love
-  Description: "Deal {Damage} damage to each enemy.\n|In Fugue|: Deal damage twice."
+  Description: "Deal {Damage} damage."
 LeaveMoodDraw:
   Name: Unconscious Wandering
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nExit the current\
@@ -3228,20 +3197,12 @@ LeaveMoodGraze:
 PassionDefense:
   Description: "Gain {Block} |Block|.\n|In Passion|: Gain {Value1} more |Block|."
   Name: Instinctual Love
-EnterPeace:
-  Description: Enter |Serenity|.
 MoodAttack:
   Description: "Deal {Damage} damage.\nWhenever {PlayerName} changes |Mental States|.\
     \ return {SelfName} from the discard pile to the hand."
-NextTurnPassion:
-  Description: At the start of {PlayerName}'s next turn, enter |Passion| and draw
-    {Value1} card{Value1:plural one='' other='s'}.
 PassionDraw:
   Description: Whenever {PlayerName} enters |Passion|, draw {Value1} card{Value1:plural
     one='' other='s'}.
-PeaceDraw:
-  Description: "|In Serenity|: Draw {Value1} card{Value1:plural one='' other='s'}.\n\
-    |Not in Serenity|: Enter |Serenity|."
 MoodChangeBlock:
   Description: Whenever {PlayerName} changes |Mental States|, gain {Value1} |Block|.
   Name: Mental Fortress
@@ -3263,8 +3224,6 @@ PassionAttackToDraw:
   Name: Selfless Love
   Description: "Deal {Damage} damage {Value1} times.\nEnter |Passion|.\nShuffle {SelfName}\
     \ into the draw pile."
-BeihaiWangxiang:
-  Name: Persecutory Delusions
 AhongMana:
   Description: "|When {SelfName} enters the hand|: Add {Value1} |Vitalit{Value1:plural\
     \ one='y' other='ies'}| to the hand and |Exile| {SelfName}."
@@ -3280,3 +3239,111 @@ ReimuSilence:
   Description: "For every {Value1} card{Value1:plural one='' other='s'} drawn outside\
     \ of the draw step, deal {Damage} attack damage to each enemy.\nDraw {Value1}\
     \ card{Value1:plural one='' other='s'}."
+JinziDoppelganger:
+  Name: Century's Doppelgangers
+  Description: The first card played during {PlayerName}'s turn is played twice.
+HuiyeSuperExtraTurn:
+  Description: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
+    |Block| and |Graze| are not lost at the start of that extra turn, and only {Value1}\
+    \ card{Value1:plural one='' other='s'} may be played."
+  DetailText: "{SelfName}'s extra turn happens before any other extra turn.\nAfter\
+    \ playing {SelfName}, you can hover over {PlayerName}'s status icons to check\
+    \ the details of the current turn."
+Claustrophobia:
+  Description: "Gain {Block} |Block|.\n|Instinct|: Gain {Shield} |Barrier|."
+KoishiKiss:
+  UpgradedDescription: "Deal {Damage} damage.\nApply {Value1} |Weak|.\nPerform a |Follow-Up\
+    \ Attack|."
+  Description: "Deal {Damage} damage.\nPerform a |Follow-Up Attack|."
+TheChariot:
+  Description: "|Scry| {Scry}.\nAt the start of {PlayerName}'s next turn, enter |Passion|\
+    \ and draw {Value1} card{Value1:plural one='' other='s'}"
+KnifeDamageUp:
+  Description: "Increase the damage dealt by |Throwing Knives| by {Value1}.\nAdd {Value2}\
+    \ |Throwing Kni{Value2:plural one='fe' other='ves'| to the hand."
+  Name: Propelling Silver
+BaseFollower:
+  Description: Deal {Damage} damage.
+PassionMemory:
+  Description: Enter |Passion|.
+MultiFollower:
+  Description: Deal {Damage} damage {Value1} time{Value1:plural one='' other='s'}.
+ToAllFollower:
+  Description: "Deal {Damage} damage to each enemy.\n|In Fugue|: Deal damage an additional\
+    \ time."
+DefenseFollowAttack:
+  Description: "Gain {Block} |Block|.\nPerform a |Follow-Up Attack|."
+KoishiDrawTop:
+  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nPlace {Value2}\
+    \ card{Value2:plural one='' other='s'} from the hand on top of the draw pile."
+GrazeFollowAttack:
+  Description: "Gain {Value1} |Graze|.\nPerform a |Follow-Up Attack|."
+PlayDrawTop:
+  Description: Play the top card on the draw pile.
+CloseEye:
+  Description: "Gain {Shield} |Barrier|.\nEnemy intents cannot be seen during {PlayerName}'s\
+    \ next turn."
+YaoguaiLaser:
+  Description: "Deal {Damage} damage.\nPerform a |Follow-Up Attack|\n|Instinct|: Perform\
+    \ an additional |Follow-Up Attack|"
+DuplicateFollower:
+  Description: "Deal {Damage} damage.\nGain {Mana}.\n|At the start of combat|: Add\
+    \ {Value1} |Cop{Value1:plural one='y' other='ies'}| of {SelfName} to the draw\
+    \ pile."
+  ExtraDescription1: "Deal {Damage} damage.\nGain {Mana}."
+KoishiWake:
+  Description: "Exit the current |Mental State|. Gain {Value1} life.\n|In Fugue|:\
+    \ Gain {Shield} |Barrier|."
+KoishiGainColorless:
+  Description: Gain {Mana}.
+  UpgradedDescription: Gain {Mana}.
+PeaceMemory:
+  Description: Enter |Serenity|.
+KoishiSpringOut:
+  Description: "|In Serenity|: Draw {Value1} card{Value1:plural one='' other='s'}.\n\
+    Otherwise, enter |Serenity|."
+KoishiFire:
+  Description: "Gain {Value1} |Firepower|.\n|In Passion|: Gain {Value2} more |Firepower|.\n\
+    |In Serenity|: Gain {Value1} |Spirit| instead."
+KoishiFlower:
+  Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nAdd {Value1} |Midsummer\
+    \ Flowers| to the hand.\n|In Fugue|: Add {Value2} instead."
+TheHermit:
+  Description: "|Scry| {Scry}.\nGain {Mana}.\n|In Fugue|: {SelfName} costs <sprite=\"\
+    ManaSprite\" name=\"0\"> to play."
+KoishiGrowAttack:
+  Description: "Deal {Damage} damage.\n|Growth|: Increase damage by {Value1}.\n|In\
+    \ Serenity|: {SelfName} costs {Mana} to play."
+BlackEpiphany:
+  Description: "Enter |Fugue|.\nOnly {Value1} card{Value1:plural one='' other='s'}\
+    \ can be played during {PlayerName}'s next turn."
+FakeBullet:
+  Description: "Perform {Value1} |Follow-Up Attack{Value1:plural one='' other='s'}.\n\
+    If there are not enough |Follow-Up| cards in the draw pile, random |Follow-Up|\
+    \ cards will be generated for that purpose."
+KoishiMana:
+  Description: "Deal {Damage} damage to each enemy.\nGain {Mana}."
+KoishiSpark:
+  Description: Deal {Damage} damage to each enemy.
+TheFool:
+  Description: "|Scry| {Scry}.\nPlay the top card of the draw pile."
+KoishiDna:
+  Description: At the star of {PlayerName}'s turn, play the top card of the draw pile.
+KoishiAttackX:
+  Description: '|For each <sprite="ManaSprite" name="2"> spent|: Deal {Damage} damage
+    to each enemy and gain {Mana}.'
+Anatta:
+  Description: "When exiting |Serenity|, gain an additional {Mana}.\nEnter |Serenity|."
+ButterflyDream:
+  Description: "At the star of {PlayerName}'s turn, add {Value1} |p:completely random|\
+    \ Rare card{Value1:plural: one='' other='s'} to the hand. {Value1:plural one='It\
+    \ has' other='They have'} |Exile| and |Ethereal|, and mana of any color can be\
+    \ spent to pay {Value1:plural one='its cost.' other='their costs'}."
+  DetailText: "These |e:alternate cards| ignore total mana, mana color and character\
+    \ restrictions.\n{SelfName} cannot be produced by this effect.\nCards with X Costs\
+    \ cannot be produced by this effect."
+EnterEpiphany:
+  Description: Enter |Fugue|.
+BailianMagic:
+  Description: This turn, the next {Value1} |Ability| {Value1:plural one='card is'
+    other='cards are'} played twice.
