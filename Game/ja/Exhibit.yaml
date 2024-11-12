@@ -1,5 +1,5 @@
 PenglaiYuzhi:
-  Description: "{PlayerName}が得るマナは全て|彩色|になる。\nターン終了時に残ったマナが失われない。"
+  Description: "マナ基盤に{BaseMana}を加える。\n{PlayerName}が得るマナは全て|彩色|になる。\nターン終了時に残ったマナが失われない。"
   Name: 蓬莱の玉の枝
   FlavorText: 「夢色の郷」
 SakuyaW:
@@ -20,19 +20,21 @@ QinaKapian:
   FlavorText: "「カードの模様を推測することで超能力が養われる」\n…と外の世界では噂されているらしい。"
 LongjingYu:
   Name: 龍の頸の玉
-  Description: 戦闘開始時、{Mana}を得る。
+  Description: "マナ基盤に{BaseMana}を加える。\n戦闘開始時、{Mana}を得る。"
   FlavorText: 「ブリリアントドラゴンバレッタ」
 FoyushiBo:
   Name: 仏の御石の鉢
-  Description: 防御カードをプレイするたび、ランダムな色のマナを{Value1}つ得る。
+  Description: "マナ基盤に{BaseMana}を加える。\n防御カードは2回使用される。"
   FlavorText: 「ブディストダイアモンド」
 HuoshuPiyi:
   Name: 火鼠の皮衣
-  Description: 戦闘開始時、{Value1}|バリア|と|火力|{Value2}を得る。
+  Description: "マナ基盤に{BaseMana}を加える。\n戦闘開始時、{Value1}|バリア|と|火力|{Value2}を得る。"
   FlavorText: 「サラマンダーシールド」
 YanZianbei:
   Name: 燕の子安貝
-  Description: '{PlayerName}のターンの開始時、ライフを{Value1}回復する。'
+  Description: 'マナ基盤に{BaseMana}を加える。
+
+    {PlayerName}のターンの開始時、ライフを{Value1}回復する。'
   FlavorText: 「ライフスプリングインフィニティ」
 ReimuR:
   Name: 血に飢えた陰陽玉
@@ -373,31 +375,31 @@ BaochuanMoxing:
   FlavorText: 輝夜様の依頼によって生み出された埴安神袿姫氏謹製の星蓮船模型1/100モデル。
 Shendeng:
   Name: 注ぎ口の長いティーポット
-  FlavorText: アラジンの魔法のランプ
+  FlavorText: "3つの願いを叶えられる、大抵のものより強力な宝物。\nしかし、あらゆる持ち主はこの好機を無駄にしてしまう。"
 SihunYu:
   Name: 邪気を放つペンダント
-  FlavorText: 四魂の玉(犬夜叉？)
+  FlavorText: 完全な状態であることは滅多に無い。
 SingleJiandao:
   Name: 半分の巨大な鋏
-  FlavorText: キルラキルの片太刀バサミ(隠し)
+  FlavorText: ラスボスの正体を現す道具。
 HolyGrail:
   Name: 装飾が施された金の杯
-  FlavorText: Fateの聖杯(隠し)
+  FlavorText: 色々な作品に登場する宝物。特定は難しい。
 MadokaBow:
   Name: 光輝く長弓
-  FlavorText: まどかの弓(隠し)
+  FlavorText: 12.　わたしの、最高のともだち
 QiannianShenqi:
   Name: ピラミッド型のパズル
-  FlavorText: 千年パズル(隠し)
+  FlavorText: 失った記憶を取り戻すのに使える。
 SakuraWand:
   Name: 翼のついた鍵
-  FlavorText: カードキャプターさくらの杖(隠し)
+  FlavorText: 実は杖である。
 InfinityGems:
   Name: 宝石が埋め込まれたガントレット
-  FlavorText: インフィニティガントレット(隠し)
+  FlavorText: 使い方…指を鳴らす。　以上。
 DragonBall:
   Name: 星が描かれたボール
-  FlavorText: ドラゴンボール(隠し)
+  FlavorText: あと6つだ。
 ShoushiYubi:
   Name: 守矢のお守り
   FlavorText: 博麗神社のお守りよりずっと効きますよ！
@@ -407,8 +409,9 @@ DiyuChepiao:
   Description: '{PlayerName}がライフを失うたび、カードを{Value1}枚引く。'
   FlavorText: 能力を発動する度、地獄への道が縮まる。
 KoishiB:
-  Name: イマジナリーフレンド
-  Description: "マナ基盤に{BaseMana}を加え、|こいし|専用のカードが出現するようになる。\n{PlayerName}が|情熱|に入る度、{Value1}ブロックを得る。"
+  Name: 特注のサングラス
+  Description: "マナ基盤に{BaseMana}を加え、|こいし|専用のカードが出現するようになる。\nエリートやボスとの戦闘開始時に{PlayerName}は{Value1}|バリア|を得る。\n\
+    {PlayerName}は|日の照射|によるダメージを受けない。"
   FlavorText: 良い友人は多い方がいい。
 CirnoU:
   FlavorText: 飛行原理は不明である。
@@ -438,9 +441,9 @@ JingjieGanzhiyi:
   Description: '|p:世界のありのままの姿を認識できるようにする。|'
   FlavorText: 「明らかに役に立たないのに、これのどこが秘宝なんでしょうか？」
 KoishiG:
-  Name: 棘のあるバラ
-  Description: "マナ基盤に{BaseMana}を加え、|こいし|専用のカードが出現するようになる。\n戦闘開始時、|迸る閃き|{Value1}を得て|閃き|を{Value2}枚山札に加える。"
-  FlavorText: （※デザインは開発中のものです。予告なく変更になる可能性がございます。）
+  Name: 満開の薔薇
+  Description: "マナ基盤に{BaseMana}を加え、|こいし|専用のカードが出現するようになる。\n戦闘開始時、|活力|を{Value1}枚手札に加える。"
+  FlavorText: 地底では珍しい植物。
 ZhanshuDaoliqi:
   Name: 戦術オーブメント
   Description: 戦闘中、{PlayerName}のスキルカードのコストを{Mana}減らす。

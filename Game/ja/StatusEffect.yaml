@@ -393,8 +393,8 @@ DanceAroundLakeSe:
   Description: カードを|廃棄|するたび、カードを{Level}枚引く。
   Brief: カードを|廃棄|するたび、カードを引く。
 EvilTuiZhiSe:
-  Description: 次の{Level}枚の攻撃カードは2倍のダメージを与える。
-  Brief: 次の攻撃カードは2倍のダメージを与える。
+  Description: このターンの間、次の{Level}枚の攻撃カードは2回使用される。
+  Brief: このターンの間、次の攻撃カードは2回使用される。
   Name: 妖怪退治
 BoliPhantomSe:
   Brief: '|封魔針|以外のカードが|廃棄|されるたび、|封魔針|を手札に加える。その|臨時コスト|は{Mana}となる。'
@@ -610,7 +610,7 @@ SihunYuSe:
   Name: 邪気を放つペンダント
   Description: '{OwnerName}のターン終了時、ランダムな敵を戦闘に呼ぶ。'
 MadokaBowSe:
-  Description: '{OwnerName}のターン開始時、{Level}枚のランダムな状態異常カードを山札に加える。'
+  Description: '{OwnerName}のターン開始時、{Level}枚のランダムな状態異常カードを山札と捨て札に半分ずつ加える。'
   Name: 光輝く長弓
 SingleJiandaoSe:
   Name: 半分の巨大な鋏
@@ -755,7 +755,7 @@ SuperExtraTurn:
     現在のターン：{StatusString}"
   ExtraDescription: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Level}枚しか使用できない。\n\
     現在のターン：{SelfName}の効果による追加ターン。（カードを残り{Count}枚使用できる。）\n"
-  Name: 世紀のダブルエスパー
+  Name: 永夜返し
 NextTurnGainGraze:
   Name: 次ターングレイズ
   Description: '{OwnerName}の次のターン開始時、|グレイズ|{Level}を得る。'
@@ -824,12 +824,8 @@ SuwakoHex:
   Name: 祟り
   Description: '{PlayerName}のターン開始時、手札のランダムなカード1枚を祟って不要なカードに変化させる。'
   ExtraDescription: "{PlayerName}のターン開始時、手札のランダムなカード1枚を祟って不要なカードに変化させる。\n発動済み。{OwnerName}の行動後に再度発動するようになる。"
-WuyishiDNASe:
-  Brief: '{PlayerName}のターン終了時、|遁走|状態でない場合死亡する。'
 ChaoyueZiwoSe:
   Description: '{PlayerName}のターン開始時にいずれかの|心境|に入っている場合、|火力|{Level}と|霊力|{Level}を得る。'
-ChaofanyinSe:
-  Description: '|直感|を持ち、|複製|でないカードの|直感|の効果が発動しなかった時、コスト{Mana}かつ|廃棄|を持つコピーを{Level}枚手札に加える。'
 ColdHeartedSe:
   Brief: "|氷槍術|は|冷気|が付与されている敵に対し3倍のダメージを与える。\n{OwnerName}のターン終了時、この効果は失われる。"
   Name: 銀氷の血筋
@@ -882,33 +878,44 @@ BladePowerSe:
   Description: "|投げナイフ|を使用する度、ランダムな攻撃カードを{Level}枚手札に加える。\nそれは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。"
   Brief: "|投げナイフ|を使用する度、ランダムな攻撃カードを手札に加える。\nそれは|臨時コスト|{Mana}となり、|廃棄|、|虚無|を持つ。"
   Name: シルバーダッシュ
-InspirationSe:
-  Name: 迸る閃き
 ShortLove:
   Description: 次に使用する基本カードの効果を{Level}増やす。
-NextTurnPassionSe:
-  Brief: '{PlayerName}の次のターン開始時、|熱情|に入りカードを引く。'
 PeaceBlockSe:
   Brief: '{PlayerName}がターン終了時に|平静|である場合、|ブロック|を得る。'
   Description: '{PlayerName}がターン終了時に|平静|である場合、{Level}|ブロック|を得る。'
-  Name: 静かなる守り
+  Name: セルフコントロール
 MoodChangeBlockSe:
   Description: '{PlayerName}の|心境|が変化する度、{Level}|ブロック|を得る。'
   Brief: '{PlayerName}の|心境|が変化する度、|ブロック|を得る。'
   Name: 精神障壁
 PassionDrawSe:
-  Name: 情熱的なドロー
+  Name: 恋煩い
   Description: '{PlayerName}が|熱情|に入る度、カードを{Level}枚引く。'
   Brief: '{PlayerName}が|熱情|に入る度、カードを引く。'
 LunaticPassionSe:
   Name: 狂気の愛
   Brief: '|情熱|のダメージ補正が{Percentage}%になる。'
   Description: '|情熱|のダメージ補正が{Percentage}%になる。'
-KongxiangshangSe:
-  Brief: '|基本|の防御カードを使用する度、|平静|に入る。'
 LongLove:
   Brief: 基本カードの効果を増やす。
-Constrain:
-  Brief: '|ブロック|や|バリア|を相殺する。'
 QiangweiDiyuSe:
   Name: ローズ地獄
+KoishiUnknown:
+  Name: 不可思議
+  Description: "{OwnerName}の行動予定の一部が隠されている。\n数値が増加すると隠蔽がより強力になる。"
+KnifeDamageUpSe:
+  Name: シルバープッシュ
+  Description: '|投げナイフ|のダメージが{Level}増加する。'
+  Brief: '|投げナイフ|のダメージが増加する。'
+MoodEpiphany:
+  Name: 遁走
+  Description: "|遁走|状態でカードを使用する度、{Mana}を得てカードを1枚引く。\nターン終了時、またはカードを{Count}枚使用した時|遁走|を解除する。\n\
+    |遁走|は|心境|の一つで、{PlayerName}は同時に複数の|心境|に入ることはできない。"
+  Brief: "|遁走|状態でカードを使用する度、{Mana}を得てカードを1枚引く。\nターン終了時、またはカードを{PlayCount}枚使用した時|遁走|を解除する。\n\
+    |遁走|は|心境|の一つで、{PlayerName}は同時に複数の|心境|に入ることはできない。"
+NextTurnPassion:
+  Name: 次ターン熱情
+  Description: '{PlayerName}の次のターン開始時、カードを{Level}枚引いて|熱情|に入る。'
+  Brief: '{PlayerName}の次のターン開始時、カードを引いて|熱情|に入る。'
+UpgradePeace:
+  Name: 無我の境

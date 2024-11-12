@@ -829,7 +829,7 @@ BailianFire:
 
     それは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。'
   UpgradedDescription: "{PlayerName}のターン開始時、ランダムなスキルカードを手札に加える。\nそれは|臨時コスト|{Mana}となり、|廃棄|と|虚無|を持つ。\n\
-    このカードがプレイされた時、このカードのターン開始効果を1回発動する。"
+    使用時に{SelfName}のターン開始時の効果を1回発動する。"
 Chunguang:
   Name: 純粋なる輝き
   Description: このカードを引いた時、|純化|{Value1}。
@@ -1003,7 +1003,7 @@ DefenseDraw:
   Description: "{Block}|ブロック|を得る。\nカードを{Value1}枚引く。\nこのカードが手札に加えられる度、戦闘終了までこのカードのコストを{Mana}減らす。"
 AttackMagic:
   Name: 弾幕手品
-  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚引く。\n|投げナイフ|を{Value2}枚手札に加える。"
+  Description: "{Damage}ダメージを与える。\nカードを{Value1}枚まで捨て、同じ数のカードを引く。"
 SilverJump:
   Description: "|弱体|{Value1}を与える。\n山札と捨て札に|投げナイフ|を{Value2}枚ずつ加える。"
   Name: ダモクレスの刃
@@ -1244,6 +1244,7 @@ YinyangQueen:
   Name: 本物の勾玉職人、魅須丸
   Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
   ExtraDescription1: '{FriendA}ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
+  ExtraDescription3: '{FriendU}全ての|陰陽玉|の効果の基本値を|e:1|倍分増加させる。|虹龍陰陽玉|を1枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
   Description: "{Shield}|バリア|を得る。\n手札上限に達するまでカードを引く。"
@@ -1576,36 +1577,44 @@ DayaojingFriend:
   UpgradedExtraDescription1: '{FriendA}{Block}|ブロック|と{Shield}|バリア|を得る。'
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを与える。'
   FlavorText: 探偵に助手が必要なのはチルノですら知る常識です。
+  ExtraDescription3: '{FriendU}|真夏の花|を{Value1}枚手札に加える。'
+  UpgradedExtraDescription3: '{FriendU}|真夏の花+|を{Value1}枚手札に加える。'
 MaidFriend:
   Name: メイド妖精、カスミ
   Description: '{FriendP}最もライフの少ない敵に{Damage}ダメージを与える。'
   ExtraDescription1: "{FriendA}上記のダメージを即時に与える。\n|投げナイフ|を{Value2}枚手札に加える。"
   FlavorText: カスミは紅魔館の中で一番真面目に働く妖精メイドになっていた。
+  ExtraDescription3: '{FriendU}上記のダメージを即座に与える。全ての{SelfName}が与えるダメージが{Value1}増加する。'
 LilyFriend:
   Name: 春告精、リリーホワイト
   ExtraDescription1: '{FriendA}{ActiveMana}を得る。'
   Description: "{FriendS}ランダムな敵に{Damage}ダメージを{Value1}回与える。\n{FriendP}{TurnMana}を得る。"
+  ExtraDescription3: '{FriendU}ライフを{Heal}回復する。'
 LarvaFriend:
   Name: 真夏の妖精の夢、ラルバ
   ExtraDescription1: '{FriendA}手札のカードを全て|アップグレード|する。'
   Description: '{FriendP}ランダムな敵に|毒|{Value1}を与える。'
   FlavorText: こいつと握手した後は手を洗おうね。
+  ExtraDescription3: '{FriendU}敵全体に|毒|{Value2}を与える。|毒|ダメージを誘発させる。'
 LunaFriend:
   Name: 静かなる月の光、ルナ
   Description: '{FriendP}{Block}|ブロック|を得る。'
   ExtraDescription1: '{FriendA}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
   FlavorText: 静かに調査しよう。声が出るやつはいらない。
+  ExtraDescription3: '{FriendU}|天衣無縫|{Value2}を得る。'
 StarFriend:
   Name: 降り注ぐ星の光、スター
   Description: '{FriendP}敵全体に{Damage}ダメージを与える。'
   ExtraDescription1: '{FriendA}即時にダメージを{Value1}回与える。'
+  ExtraDescription3: "{FriendU}全ての{SelfName}がダメージを与える度、|ロックオン|{Light}を与える。\n即座にダメージを{Value2}回与える。"
 SunnyFriend:
   Name: 輝ける日の光、サニー
   ExtraDescription1: '{FriendA}|光学迷彩|{Light}を得る。'
   Description: '{FriendP}ランダムな敵に{Damage}ダメージを{Value1}回与える。'
+  ExtraDescription3: "{FriendU}即座にダメージを{Value1}回与える。\n|火力|{Value2}を得る。"
 ClownpieceFriend:
   Name: 狂気なる妖精、クラウンピース
-  ExtraDescription2: '{FriendU}{Mana}を得る。|狂気|を1枚捨て札に加える。'
+  ExtraDescription2: '{FriendA2}{Mana}を得る。|狂気|を1枚捨て札に加える。'
   Description: '{FriendS}{StartMana}を得る。
 
     {FriendP}|臨時火力|{Value2}を得る。'
@@ -1708,6 +1717,7 @@ LeidiFriend:
   Description: '{FriendP}ランダムな敵一体に|冷気|を与える。'
   Name: 真冬の化身、レティ
   FlavorText: 冬は至れり、冬来たり。再び還らん。戦の冬へ。
+  ExtraDescription3: '{FriendU}敵全体に{Damage}ダメージを与え、|冷気|を与える。'
 XiaoemoBook:
   Name: 悪魔の典籍
   ExtraDescription1: "手札を1枚|廃棄|する。\nカードを{Value1}枚引く。\n|d:初見：怪奇を1枚手札に加える。|"
@@ -1820,7 +1830,7 @@ FairyTrick:
   FlavorText: 三月精に妖精4人がいるのは至極当然である。
 ChooseFriend:
   Name: 待ち合わせ
-  Description: "ランダムな{Value1}枚の|パートナー|カードから最大{Value2}枚を選び、手札に加える。\nそれらのカードはマナの色に関係なく使用できる。"
+  Description: "ランダムな{Value1}枚の|パートナー|カードから最大{Value2}枚を選び、手札に加える。\nそれらのカードはどの色のマナでもコストを支払うことができる。"
   DetailText: "候補となるカードは色やキャラの制限を無視して選ばれる。\nマナ総量が5以上のカードは候補にならない。"
   FlavorText: 親しいなら手を繋ごう。
 WhiteWorld:
@@ -1830,7 +1840,7 @@ WhiteWorld:
     {PlayerName}のターン開始時、敵全体に|冷気|を与える。'
 PlayWithWaste:
   Description: "ランダムな{Value1}枚のレアでない|道具|カードから1枚を選び、手札に加える。\nそれは|複製|と|消耗品【1】|を持つ。"
-  Name: ゴミ漁り
+  Name: ドッキリ専門家
 ForeverCool:
   Description: "|パートナー|の|a:起動能力|か|u:奥義|をプレイする度、ランダムな敵に|冷気|を与える。\n|冷気|を与える度、手札のランダムな|パートナー|は|支援度|{Value1}を得る。"
   Name: 永遠に清涼なる幻想四季
@@ -1996,14 +2006,14 @@ HatateShot:
   Description: "{Block}|ブロック|を得る。\n残ったマナ1つにつき{Value1}|ブロック|追加する。（合計{Special}|ブロック|）"
   Name: フルパノラマショット
 FakeCard:
-  Name: 夢枕にご先祖総立ち（仮）
-  Description: "|古明地こいし|はまだ家で寝てます。\n今後のアップデートをお楽しみに。"
+  Name: 竹取物语（偽）
+  Description: "このカードはまだ開発中です。\n今後のアップデートをお楽しみに。"
 LoveFire:
   Name: 恋の埋火
-  Description: "{Damage}ダメージを与える。\n|{Mana}につき|：ダメージを{Value1}増やす。\n支払ったマナを記憶し、次にこのカードを使用した際に同量のマナを得る。"
+  Description: "|追加攻撃|を行う。\n{PlayerName}のターン終了時、そのターンに|追加攻撃|が行われていたなら|火力|{Value1}を得る。"
 BabyDream:
   Name: 胎児の夢
-  Description: "敵全体に{Damage}ダメージを与える。\n|平静|に入る。"
+  Description: "{Block}|ブロック|を得る。\n|夢想|{Value1}。"
 MoonTipsAttack:
   Name: 弾幕補充
   Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
@@ -2034,6 +2044,7 @@ YukariFriend:
   Description: '{FriendP}このターンに使用した防御カードの枚数分（{Fire}）の|火力|を得る。'
   ExtraDescription1: '{FriendA}|廃棄場|のカードを1枚選んで手札に戻す。'
   DetailText: '{SelfName}は|u:奥義|の効果の候補に含まれない。'
+  ExtraDescription3: '{FriendU}{PlayerName}のターン開始時、ランダムな共通の三色のカードを手札に加える。それは|臨時コスト|{Mana}で|虚無|を持つ。'
 NightMana2:
   Name: 永き夜：丑の刻
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\n{FreezeTimes}枚のカードをプレイした後、{SelfName}を|廃棄|する。"
@@ -2048,18 +2059,16 @@ NightMana1:
   Description: "{SelfName}が手札にある間、全てのカードのマナコストが{Mana}増える。\n{FreezeTimes}枚のカードをプレイした後、{SelfName}を|廃棄|する。"
 FlowerGone:
   Name: 色褪せた記憶
-  Description: "{Block}|ブロック|を得る。\n|平静|状態なら|霊力|{Value1}を得て、{SelfName}を廃棄する。"
-TaoqiQiangwei:
-  Name: 奔放なる薔薇
+  Description: "{Block}|ブロック|を得る。\n|平静|状態なら代わりに{Shield}|バリア|を得る。"
 ZhuozhuangChengzhang:
   Name: 健やかな成長
 PerfectCrime:
   Name: 完全犯罪
-  Description: "対象の|霊力|、|グレイズ|、|加護|、|光学迷彩|、|天衣無縫|を盗む。\n{Damage}ダメージを与える。"
+  Description: "対象の|グレイズ|、|加護|、|光学迷彩|、|天衣無縫|を奪う。\n対象の|火力|と|霊力|を最大で{Value1}奪う。"
 PatchouliFriend:
   Description: '{FriendP}ランダムな{PassiveColor}個のマナを|彩色|マナに変換する。'
   ExtraDescription1: '{FriendA}|火力|{Value1}と|霊力|{Value1}を得る。<sprite="Point" name="Power">{Power}を得る。'
-  ExtraDescription2: '{FriendU}|ポーション|{Value2}枚を手札に加える。'
+  ExtraDescription2: '{FriendA2}|ポーション|{Value2}枚を手札に加える。'
   Name: 七曜の錬金術師、パチュリー
   FlavorText: 混ぜて混ぜてかき混ぜる。
 MeilingFriend:
@@ -2069,6 +2078,7 @@ MeilingFriend:
 
     {PlayerName}が攻撃を受ける度、一度の攻撃行動につき1回この能力を再度発動する。'
   Name: サボリ門番、美鈴
+  ExtraDescription3: '{FriendU}ライフを{Value1}回復し、|火力|{Value2}を得る。'
 YijiEarthSpike:
   Description: 敵全体に{Damage}ダメージを与え、|脱力|{Value1}を付与する。
   Name: 祗園様の力
@@ -2282,22 +2292,22 @@ FriendDraw:
 
     |u:奥義|を使用する度、更にランダムなマナを{Value1}点得る。'
 DefaultPassion:
-  Name: 孤独な心
+  Name: ロマンティック・ローズ
   Description: "{Damage}ダメージを与える。\n|熱情|に入る。"
 DefaultPeace:
   Description: "{Block}|ブロック|を得る。\n|平静|に入る。"
-  Name: 愛の茨
+  Name: 無我
 LeaveMoodAttack:
   Description: "{Damage}ダメージを与える。\n現在の|心境|を解除する。"
-  Name: 無意識の行動
+  Name: 渦巻く意識
 KoishiZeroAttack:
-  Name: 恋は盲目
-  Description: "敵全体に{Damage}ダメージを与える。\n|遁走|状態ならもう1回ダメージを与える。"
+  Name: DNA転写
+  Description: "{Damage}ダメージを与える。"
 PassionDefense:
-  Name: 本能の愛
+  Name: 熱情防御
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
 LeaveMoodDraw:
-  Name: 無意識の放浪
+  Name: 好奇心
   Description: "カードを{Value1}枚引く。\n現在の|心境|を解除する。"
 AliceBlockU:
   Description: '{Block}|ブロック|を得る。'
@@ -2323,45 +2333,197 @@ AliceAttackB:
 DeployShanghai:
   Name: 上海人形設置
 LeaveMoodGraze:
-  Name: 無意識の回避
+  Name: 気配遮断
   Description: "|グレイズ|{Value1}を得る。\n現在の|心境|を解除する。"
 MoodAttack:
   Description: "{Damage}ダメージを与える。\n{PlayerName}の|心境|が変化する度、捨て札の{SelfName}を手札に加える。"
-  Name: 精神コンビネーション
+  Name: 転移の刃
 PassionVulnerable:
-  Name: イドの開放
+  Name: 眠れぬ夜
   Description: "|熱情|状態なら敵全体に|弱体|{Value1}を与える。\nそうでない場合、|熱情|に入る。"
 PeaceEndTurn:
   UpgradedDescription: "捨て札のカードを{Value1}枚選んで手札に加え、それらをそのターン|保留|する。\n|平静|に入る。\n{PlayerName}のターンを終了する。"
-  Name: 我に返る
+  Name: 一時の平穏
   Description: "|平静|に入る。\n{PlayerName}のターンを終了する。"
 PeaceBlock:
-  Description: '{PlayerName}がターン終了時に|平静|状態なら{Value1}|ブロック|を得る。'
-  Name: 静かなる守り
+  Description: '{PlayerName}がターン終了時に|平静|状態なら、{Value1}|ブロック|を得る。'
+  Name: セルフコントロール
 MoodChangeBlock:
-  Name: 心理障壁
+  Name: A.T.フィールド
   Description: '{PlayerName}が|心境|を変化させる度、{Value1}|ブロック|を得る。'
 PsycheLock:
   Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3種類全ての|心境|に入っている場合のみ使用できる。(残り{Count}種類)"
   NonbattleDescription: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3種類全ての|心境|に入っている場合のみ使用できる。"
   Name: サイコ・ロック
 LunaticPassion:
-  Name: 狂気の愛
+  Name: 狂える愛
   Description: "|熱情|によるダメージ補正が{Percentage}%になる。\n|熱情|に入る。"
 PassionAttackToDraw:
-  Name: 没我の愛
+  Name: 弾幕パラノイア
   Description: "{Damage}ダメージを{Value1}回与える。\n|熱情|に入る。\n{SelfName}を山札に戻す。"
 PassionDraw:
-  Name: 情熱的なドロー
+  Name: 恋煩い
   Description: '{PlayerName}が|熱情|に入る度、カードを{Value1}枚引く。'
 ReimuSilence:
   Name: 夢想封印　寂
   Description: "ドローフェイズ以外でカードを{Value1}枚引く度、敵全体に{Damage}攻撃ダメージを与える。\nカードを{Value1}枚引く。"
 InspirationCard:
-  Name: 閃き
-  Description: "{SelfName}が手札に加わった時、他のランダムな色の|e:閃き|に変化して効果を発動した後|廃棄|される。\nドローフェイズの間、{SelfName}は|補充|を持つ。"
+  Name: 閃いた！
+  Description: "{SelfName}が手札に加わった時、{Mana}と|閃き|{Value1}を得て{SelfName}を|廃棄|する。"
 FindInspiration:
-  Name: アイデア探し
-  Description: "{Damage}ダメージを与える。\n|迸る閃き|{Value1}を得る。"
+  Name: 天啓
+  Description: "|閃いた！|を{Value1}枚山札に加える。"
 KnifeDamageUp:
   Name: シルバープッシュ
+  Description: "|投げナイフ|のダメージが{Value1}増加する。\n|投げナイフ|を{Value2}枚手札に加える。"
+DuplicateFollower:
+  Description: "{Damage}ダメージを与える。{Mana}を得る。\n|戦闘開始時|：このカードのコピーを{Value1}枚山札に加える。"
+  Name: 孤独な心
+  ExtraDescription1: '{Damage}ダメージを与える。{Mana}を得る。'
+KoishiWake:
+  Description: "現在の|心境|を解除し、ライフを{Value1}回復する。\n|遁走|状態なら追加で{Shield}|バリア|を得る。"
+  Name: 我に返る
+KoishiDrawTop:
+  Description: "カードを{Value1}枚引く。\n手札を{Value2}枚山札の一番上に置く。"
+  Name: 出まかせ
+TheChariot:
+  Description: "|占術|{Scry}。\n{PlayerName}の次のターン開始時、カードを{Value1}枚引いて|熱情|に入る。"
+  Name: 戦車のタロット
+KoishiMana:
+  Description: "敵全体に{Damage}ダメージを与える。\n{Mana}を得る。"
+  Name: 解き放たれた潜在能力
+KoishiFlower:
+  Description: "{Block}|ブロック|を得る。\n{Damage}ダメージを与える。\n|真夏の花|を{Value1}枚手札に加える。\n|遁走|状態なら代わりに{Value2}枚加える。"
+  Name: 奔放な薔薇
+GainZeroAttack:
+  UpgradedDescription: "{PlayerName}のターン開始時、|DNA転写|を{Value1}枚手札に加える。それは|廃棄|と|虚無|を持つ。\n\
+    使用時に{SelfName}のターン開始時の効果を1回発動する。"
+  Name: DNAの瑕
+  Description: '{PlayerName}のターン開始時、|DNA転写|を{Value1}枚手札に加える。それは|廃棄|と|虚無|を持つ。'
+KoishiDna:
+  Description: '{PlayerName}のターン開始時、山札の一番上のカードを使用する。'
+  Name: ハルトマンの妖怪少女
+Anatta:
+  Description: "|平静|を解除する際に得るマナを{Mana}にする。\n|平静|に入る。"
+  Name: 無我の境
+ButterflyDream:
+  Description: '{PlayerName}のターン開始時、|p:完全ランダム|なレアカードを{Value1}枚手札に加える。それは|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。'
+  Name: 胡蝶の夢
+  DetailText: "候補となるカードは合計コストや色、キャラクターの制限を受けない。\n{SelfName}やXコストのカードは候補にならない。"
+KoishiPhone:
+  Description: "攻撃カードを使用する度、|追加攻撃|を行う。\n山札に|追撃|カードが無い場合、|電話ですよー！|を|追撃|として扱う。"
+  Name: 恐怖！可愛い電話の声
+BailianMagic:
+  Description: このターン中に次に使用する|能力|カード{Value1}枚は2回使用される。
+  Name: 魔神復誦
+HuiyeSuperExtraTurn:
+  Description: '{PlayerName}が|通常ターン|を終了する度、追加ターンを開始する。この効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。'
+  Name: 永夜返し
+  DetailText: "{SelfName}の追加ターンは他の追加ターンより先に発生する。\n{SelfName}を使用した後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
+AttackX:
+  Description: "{Mana}|ごとに|：{Damage}ダメージを与える。\n対象を撃破した後攻撃回数が残っている場合、他のランダムな敵を新たな対象として攻撃を続ける。"
+  Name: 対象撃破後攻撃継続
+KoishiKiss:
+  Name: 投げキッス
+  Description: "{Damage}ダメージを与える。\n|追加攻撃|を行う。"
+  UpgradedDescription: "{Damage}ダメージを与える。\n|脱力|{Value1}を与える。\n|追加攻撃|を行う。"
+BaseFollower:
+  Name: 本能の愛
+  Description: '{Damage}ダメージを与える。'
+PassionMemory:
+  Name: 熱情の追憶
+  Description: '|熱情|に入る。'
+Claustrophobia:
+  Name: 閉所恐怖症
+  Description: "{Block}|ブロック|を得る。\n|直感|：追加で{Shield}バリアを得る。"
+MultiFollower:
+  Name: ハートのダンス
+  Description: '{Damage}ダメージを{Value1}回与える。'
+ToAllFollower:
+  Name: 高鳴る鼓動
+  Description: "敵全体に{Damage}ダメージを与える。\n|遁走|状態ならダメージを追加で1回与える。"
+DefenseFollowAttack:
+  Name: 被害妄想
+  Description: "{Block}|ブロック|を得る。\n|追加攻撃|を行う。"
+GrazeFollowAttack:
+  Name: 衝動
+  Description: "|グレイズ|{Value1}を得る。\n|追加攻撃|を行う。"
+PlayDrawTop:
+  Name: 無意識的行動
+  Description: 山札の一番上のカードを使用する。
+CloseEye:
+  Name: 閉じた心
+  Description: "{Shield}|バリア|を得る。\n次のターンの間、敵の行動予定を見ることができなくなる。"
+  FlavorText: こいしは心を読む第三の目を閉じた。
+AncestorDream:
+  Name: 先祖の夢
+  Description: "敵全体に{Damage}ダメージを与える。\n|夢想|{Value1}。"
+YaoguaiLaser:
+  Description: "{Damage}ダメージを与える。\n|追加攻撃|を行う。\n|直感|:もう1回|追加攻撃|を行う。"
+  Name: 妖怪EEG
+KoishiGainColorless:
+  Name: 無の心
+  Description: '{Mana}を得る。'
+  UpgradedDescription: '{Mana}を得る。'
+PeaceMemory:
+  Name: 平静の追憶
+  Description: '|平静|に入る。'
+KoishiSpringOut:
+  Name: 春のおでかけ
+  Description: "|平静|状態ならカードを{Value1}枚引く。\nそうでないなら、|平静|に入る。"
+InspirationDefense:
+  Name: 閃きの瞬間
+  Description: "{Block}|ブロック|を得る。\n|閃き|{Value1}を得る。"
+BlackEpiphany:
+  Description: "|遁走|に入る。\n{PlayerName}は次のターン、カードを{Value1}枚しか使用できない。"
+  Name: 陶酔
+KoishiFire:
+  Name: 気まぐれ
+  Description: "|火力|{Value1}を得る。\n|熱情|状態なら追加で|火力|{Value2}を得る。\n|平静|状態なら代わりに|霊力|{Value1}を得る。"
+TheHermit:
+  Name: 隠者のタロット
+  Description: "|占術|{Scry}。\n|遁走|状態なら{SelfName}のコストは<sprite=\"ManaSprite\" name=\"\
+    0\">。"
+KoishiGrowAttack:
+  Name: 舞うは茨
+  Description: "{Damage}ダメージを与える。\n|成長|：ダメージが{Value1}増加する。\n|平静|状態なら{SelfName}のコストは{Mana}。"
+FakeBullet:
+  Name: 仮想弾幕
+  Description: "|追加攻撃|を{Value1}回行う。\n山札の|追撃|カードが不足している場合、足りない枚数分ランダムな|追撃|カードの効果を発動する。"
+KoishiSpark:
+  Name: 妖怪ポリグラフ
+  Description: 敵全体に{Damage}ダメージを与える。
+GainInspiration:
+  Description: "{PlayerName}のターン終了時、|閃いた！｜を1枚山札に加える。\n"
+  Name: 考えさせて
+TheFool:
+  Name: 愚者のタロット
+  Description: "|占術|{Scry}。\n山札の一番上のカードを使用する。"
+KoishiAttackX:
+  Name: ローズ地獄
+  Description: <sprite="ManaSprite" name="2">|ごとに|：敵全体に{Damage}ダメージを与え、{Mana}を得る。
+KokoroFriend:
+  Name: ペルソナ覚醒、こころ
+  Description: '{FriendP}||夢想|{Value1}。'
+  ExtraDescription1: '{FriendA}|熱情|に入る。'
+  ExtraDescription2: '{FriendA2}|平静|に入る。'
+  ExtraDescription3: '{FriendU}|遁走|に入る。'
+EnterEpiphany:
+  Name: 悟り
+  Description: '|遁走|に入る。'
+KoishiDive:
+  Name: 意識潜行
+  Description: "|平静|に入る。\n|夢想|{Value1}。\n捨て札の|夢境|を持つカードを{Value2}枚まで選び手札に戻す。"
+FollowAttackFiller:
+  Name: 電話ですよー！
+  Description: '{Damage}ダメージを与える。'
+DreamExpress:
+  Name: ドリームエクスプレス
+  Description: '{PlayerName}のターン終了時、|夢想|{Value1}。その後、敵全体にそれらのカードの元々のマナ総量の合計の2倍のダメージを与える。'
+JinziDoppelganger:
+  Name: 世紀のダブルエスパー
+  Description: '{PlayerName}が各ターンの最初に使用するカードは2回使用される。'
+KoishiDiscard:
+  Name: 健忘
+  Description: このカードを引いた時、ランダムに手札を1枚捨てる。
+  ExtraDescription1: "このカードを引いた時、ランダムに手札を1枚捨てる。\n捨てたカード：{CardName}"
