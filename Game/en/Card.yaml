@@ -3160,7 +3160,7 @@ LeaveMoodGraze:
   Name: Presence Concealment
 PassionDefense:
   Description: "Gain {Block} |Block|.\n|In Passion|: Gain {Value1} more |Block|."
-  Name: <Passionate Defense>
+  Name: Hunker Down
 MoodAttack:
   Description: "Deal {Damage} damage.\nWhenever {PlayerName} changes |Mental States|.\
     \ return {SelfName} from the discard pile to the hand."
@@ -3174,12 +3174,20 @@ MoodChangeBlock:
   Name: A.T. Field
 PsycheLock:
   Name: Psyche-Lock
-  NonbattleDescription: "Deal {Damage} damage to each enemy{Value1:plural one='' other='\
-    \ % times'}.\nGain {Mana}.\nCan only be played if {PlayerName} has entered 3 different\
-    \ |Mental States| while {SelfName} is in the hand."
-  Description: "Deal {Damage} damage to each enemy{Value1:plural one='' other=' %\
-    \ times'}.\nGain {Mana}.\nCan only be played if {PlayerName} has entered 3 different\
-    \ |Mental States| while {SelfName} is in the hand. ({Count} left)"
+  NonbattleDescription: "End {PlayerName}'s turn. Then, take an extra turn.\nCan only\
+    \ be played if {PlayerName} has entered 3 different |Mental States| while {SelfName}\
+    \ is in the hand."
+  Description: "End {PlayerName}'s turn. Then, take an extra turn.\nCan only be played\
+    \ if {PlayerName} has entered 3 different |Mental States| while {SelfName} is\
+    \ in the hand. ({Count} left)"
+  UpgradedDescription: "End {PlayerName}'s turn. Then, take an extra turn.\nAt the\
+    \ start of {PlayerName}'s next turn, |Upgrade| each card in the hand.\nCan only\
+    \ be played if {PlayerName} has entered 3 different |Mental States| while {SelfName}\
+    \ is in the hand. ({Count} left)"
+  UpgradedNonbattleDescription: "End {PlayerName}'s turn. Then, take an extra turn.\n\
+    At the start of {PlayerName}'s next turn, |Upgrade| each card in the hand.\nCan\
+    \ only be played if {PlayerName} has entered 3 different |Mental States| while\
+    \ {SelfName} is in the hand."
 LunaticPassion:
   Name: Lunatic Love
   Description: "|Passion|'s damage modifier becomes {Percentage}%.\nEnter |Passion|."
@@ -3253,6 +3261,9 @@ KoishiDrawTop:
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nPlace {Value2}\
     \ card{Value2:plural one='' other='s'} from the hand on top of the draw pile."
   Name: Talk Through the Hat
+  UpgradedDescription: "Draw {Value1} card{Value1:plural one='' other='s'}.\n|Upgrade|\
+    \ {Value2} card{Value2:plural one='' other='s'} in the hand and place {Value2:plural\
+    \ one='it' other='them'} on top of the draw pile."
 GrazeFollowAttack:
   Description: "Gain {Value1} |Graze|.\nPerform a |Follow-Up Attack|."
   Name: Instinctive Action
@@ -3302,6 +3313,9 @@ TheHermit:
   Description: "|Scry| {Scry}.\nGain {Mana}.\n|In Fugue|: {SelfName} costs <sprite=\"\
     ManaSprite\" name=\"0\"> to play."
   Name: 'Tarot: The Hermit'
+  UpgradedDescription: "|Scry| {Scry}.\n|Upgrade| the top card of the draw pile.\n\
+    Gain {Mana}.\n|In Fugue|: {SelfName} costs <sprite=\"ManaSprite\" name=\"0\">\
+    \ to play."
 KoishiGrowAttack:
   Description: "Deal {Damage} damage.\n|Growth|: Increase damage by {Value1}.\n|In\
     \ Serenity|: {SelfName} costs {Mana} to play."
