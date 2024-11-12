@@ -3375,8 +3375,6 @@ AyaNewsAliceSp:
   Name: 《文文新聞》愛麗絲特刊
   Description: '|回合結束時|：失去 {Value1} 點|靈力|。'
   FlavorText: 月都萬象展特集！ 詳細刊載了有關{PlayerName}的流言蜚語。
-LoveSeed:
-  Name: 戀愛的種子
 PatchouliFriend:
   Description: '{FriendP}將 {PassiveColor} 點隨機的法力轉化為|彩色|。'
   Name: 鍊金術士帕秋莉
@@ -3636,7 +3634,7 @@ MoodAttack:
   Name: 移情斬
   Description: "造成 {Damage} 點傷害。\n當{PlayerName}轉化|心境|時，從棄牌堆回到手中。"
 PassionDefense:
-  Name: <熱情防禦>
+  Name: 低調
   Description: "獲得 {Block} 點|格擋|。\n|熱情|：額外獲得 {Value1} 點|格擋|。"
 PassionVulnerable:
   Name: 無眠之夜
@@ -3656,9 +3654,11 @@ MoodChangeBlock:
   Description: 每當{PlayerName}轉化|心境|時，獲得 {Value1} 點|格擋|。
 PsycheLock:
   Name: 心靈枷鎖
-  Description: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。\
-    \ （剩餘 {Count} 種未進入）"
-  NonbattleDescription: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。"
+  Description: "結束{PlayerName}的回合，進行一個額外的回合。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。（剩餘 {Count} 種未進入）"
+  NonbattleDescription: "結束{PlayerName}的回合，進行一個額外的回合。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。"
+  UpgradedDescription: "結束{PlayerName}的回合，進行一個額外的回合。這一回合開始時，|升級|所有的手牌。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。（剩餘 {Count} 種未進入）"
+  UpgradedNonbattleDescription: "結束{PlayerName}的回合，進行一個額外的回合。這一回合開始時，|升級|所有的手牌。\n\
+    {SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。"
 LunaticPassion:
   Name: 瘋狂之愛
   Description: "|熱情|狀態下的額外傷害比例改為 {Percentage}%。\n進入|熱情|。"
@@ -3700,6 +3700,7 @@ DefenseFollowAttack:
 KoishiDrawTop:
   Name: 順口開河
   Description: "抽 {Value1} 張牌。\n將 {Value2} 張手牌置於抽牌堆頂。"
+  UpgradedDescription: "抽 {Value1} 張牌。\n選擇 {Value2} 張手牌，|升級|它並置於抽牌堆頂。"
 GrazeFollowAttack:
   Name: 本能行動
   Description: "獲得 {Value1} 層|閃避|。\n進行一次|追加攻擊|。"
@@ -3750,6 +3751,8 @@ TheHermit:
   Name: 塔羅牌：隱士
   Description: "|占卜| {Scry} 。\n獲得{Mana}。\n|神遊|：{SelfName}費用為<sprite=\"ManaSprite\"\
     \ name=\"0\">。"
+  UpgradedDescription: "|占卜| {Scry} ，|升級|牌堆頂的牌。\n獲得{Mana}。\n|神遊|：{SelfName}費用為<sprite=\"\
+    ManaSprite\" name=\"0\">。"
 KoishiGrowAttack:
   Name: 熱舞荊棘
   Description: "造成 {Damage} 點傷害。\n|成長|：傷害提高 {Value1} 點。\n|平靜|：{SelfName}費用為{Mana}。"
@@ -3837,3 +3840,12 @@ DebugRemoveHand:
 DebugRemoveAllHandWhenDraw:
   Name: 抽取時移除所有手牌
   Description: 測試卡牌：抽取時，將所有手牌移出戰鬥（包括自身）。
+DebugAddRandomCardsToExile:
+  Description: 測試卡牌：添加隨機 {Value1} 張卡牌放逐區。
+  Name: 添加隨機卡牌到放逐
+DebugAddRandomCardsToExileSlow:
+  Name: 添加隨機卡牌到放逐（慢）
+  Description: 測試卡牌：慢慢地添加隨機 {Value1} 張卡牌到放逐區。
+DebugUpgradeAllZone:
+  Name: 升級各堆卡牌
+  Description: 測試卡牌：升級各堆卡牌中的前 {Value1} 張可升級卡牌。
