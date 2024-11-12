@@ -597,8 +597,8 @@ Poison:
   Name: Poison
   Brief: At the start of {OwnerName}'s turn, they lose life, then lose 1 |Poison|.
 MoonWorldSe:
-  Description: At the start of {PlayerName}'s turn, {Level} random card{ Level:plural
-    one='' other='s'} in the hand gain |Pure|.
+  Description: At the start of {PlayerName}'s turn, {Level} random card{Level:plural
+    one='' other='s'} in the hand gain{Level:plural one='s' other=''} |Pure|.
   Brief: At the start of {PlayerName}'s turn, random cards in the hand gain |Pure|
     this combat, removing their colored cost.
   Name: Pure World
@@ -947,7 +947,7 @@ StarFriendSe:
   Name: Like Stars in the Sky
 HuiyeTimeSe:
   Name: Between Instantaneous
-  Description: Only {Limit} cards may be played each turn. ( {Count} left )
+  Description: Only {Limit} cards may be played each turn. ({Count} left)
   ExtraDescription: "Only {Limit} cards may be played this turn. ({Count} left)\n\
     {SelfName} is inactive and will only be removed after the turn it resolves."
 YukariFriendSe:
@@ -1205,9 +1205,9 @@ MoodEpiphany:
     \ cards are'} played, exit |Fugue|.\n|Fugue| is a |Mental State|, of which {PlayerName}\
     \ can only have one at a time."
 NextTurnPassion:
-  Brief: At the start of {PlayerName}'s next turn, enter |Passion} and draw cards.
+  Brief: At the start of {PlayerName}'s next turn, enter |Passion| and draw cards.
   Name: Next Turn Passion
-  Description: At the start of {PlayerName}'s next turn, enter |Passion} and draw
+  Description: At the start of {PlayerName}'s next turn, enter |Passion| and draw
     {Level:plural one='% card' other='% cards'}.
 UpgradePeace:
   Description: Increases the mana gained from exiting |Serenity|.
@@ -1220,9 +1220,9 @@ Tired:
   ExtraDescription: "Only {Limit} cards may be played this turn. ({Count} left)\n\
     {SelfName} is inactive and will only be removed after the turn it's been activated."
 GainInspirationSe:
-  Description: "At the end of {PlayerName}'s turn, add {Level} |找到灵感了！| to the draw\
+  Description: "At the end of {PlayerName}'s turn, add {Level} |Eureka!| to the draw\
     \ pile.\n"
-  Brief: "At the end of {PlayerName}'s turn, add |找到灵感了！| to the draw pile.\n"
+  Brief: "At the end of {PlayerName}'s turn, add |Eureka!| to the draw pile.\n"
   Name: Unceasing Inspiration
 CloseEyeSe:
   Description: "Enemy's intentions are unknown.\nRemaining Turns: {Level}"
@@ -1238,8 +1238,8 @@ LoveFireSe:
     \ performed, gain {Level} |Firepower|.\nNo |Follow-Up Attacks| performed this\
     \ turn."
 KoishiDnaSe:
-  Description: At the start of {PlayerName}'s turn, immediately play the top {Level}
-    cards in the draw pile.
+  Description: At the start of {PlayerName}'s turn, immediately play the top {Level:plural
+    one='card' other='% cards'} in the draw pile.
   Brief: At the start of {PlayerName}'s turn, immediately play cards at the top of
     the draw pile.
   Name: Hartmann's Youkai Girl
@@ -1260,8 +1260,9 @@ BailianMagicSe:
   Name: Devil's Recitation
 JinziDoppelgangerSe:
   Name: Century's Doppelgangers
-  Description: "The first {Level:plural one='card' other='% cards} played during {PlayerName}'s\
-    \ turn is played twice.\n{Count:plural one='% card left' other='% cards left}."
+  Description: "The first {Level:plural one='card' other='% cards'} played during\
+    \ {PlayerName}'s turn {Level:plural one='is' other='are'} played twice. ({Count}\
+    \ left)"
   Brief: The first cards played during {PlayerName}'s turn are played twice.
 ButterflyDreamSe:
   Description: At the start of {PlayerName}'s turn, add {Level} |p:completely random|
@@ -1280,6 +1281,6 @@ GainZeroAttackSe:
   Name: DNA's Flaw
   Brief: At the start of {PlayerName}'s turn, add |DNA Transcripts| to the hand with
     |Exile| and |Ethereal|.
-  Description: At the start of {PlayerName}'s turn, add {Level] |DNA Transcript{Level:plural
-    one='' other='s'}| to the hand, {Level:plural one='it has' other='they have'}
+  Description: At the start of {PlayerName}'s turn, add {Level} |DNA Transcript{Level:plural
+    one='' other='s'}| to the hand. {Level:plural one='It has' other='They have'}
     |Exile| and |Ethereal|.
