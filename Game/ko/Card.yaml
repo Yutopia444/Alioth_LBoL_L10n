@@ -84,7 +84,7 @@ MengzhiYuzha:
   Description: "피해를 {Damage} 줍니다.\n|봉마침|을 한 장 얻습니다."
   FlavorText: 소매 속의 바늘
 JingshenYishi:
-  Name: 정신의 의식
+  Name: 정화의 의식
   Description: "|방어|를 {Block} 얻습니다.\n손에서 카드 한 장을 |소멸|시킵니다."
   FlavorText: 돈과 관련이 없는 무녀가 이럴 필요까지야 있을까요?
 RManaCard:
@@ -166,7 +166,7 @@ FanzhuanChongdong:
   Description: '|턴 종료 시|: 이번 턴 체력을 회복하지 않았을 경우 체력을 {Value1} 잃습니다.'
   FlavorText: 흡혈귀의 권속이 되는 대가.
 Jiangshen:
-  Name: 정신 수행
+  Name: 신내림 수행
   Description: "이번 전투에서 카드를 획득하면 그 카드를 |강화|합니다.\n|음양옥|을 {Value1}장 얻습니다."
   FlavorText: 「신께 소원을 빌었더니, 바로 『경계 출입』을 뽑았지 뭐에요—」
 MingzhuAntou:
@@ -241,7 +241,7 @@ YinyangXueyin:
   FlavorText: 재료가 없어서 피를 쓸 수 밖에 없었습니다.
 EvilTuiZhi:
   Name: 악령 퇴치
-  Description: 앞으로 사용할 {Value1}장의 공격 카드의 피해가 두 배가 됩니다.
+  Description: 이번 턴동안 다음 {Value1}장의 공격 카드가 두 번 발동합니다.
   FlavorText: 환상향의 여갓거리 중 하나.
 TaijiLiangyi:
   Name: 음양의 탄생
@@ -816,7 +816,7 @@ CoolMaid:
   Description: "|단검|을 {Value1}장 얻습니다.\n{Mana}를 얻습니다."
 AttackMagic:
   Name: 탄막의 마술
-  Description: "피해를 {Damage} 줍니다.\n카드를 {Value1}장 뽑습니다.\n|단검|을 {Value2}장 얻습니다."
+  Description: "피해를 {Damage} 줍니다.\n카드를 최대 {Value1}장까지 골라 버리고, 그 만큼의 카드를 새로 뽑습니다."
 SakuyaSleep:
   Name: 잠깐의 휴식
   Description: "|광휘|를 한 장 얻습니다.\n턴을 종료합니다."
@@ -1545,7 +1545,7 @@ FrozenThrone:
   Description: "|빙결탄|을 한 장 얻습니다.\n내 턴 시작 시 손에 |빙결탄|이 없다면 |빙결탄|을 한 장 얻습니다."
   FlavorText: Now, we are one!
 PlayWithWaste:
-  Name: 폐품 탐험
+  Name: 장난 전문가
   Description: "무작위 일반 |도구 카드| {Value1}장 중 한 장을 선택해 얻습니다.\n해당 카드는 |복사본|으로 표시되며, 단\
     \ 한 번 사용할 수 있습니다."
 Xiguadao:
@@ -1914,6 +1914,7 @@ YinyangQueen:
   Name: 장인 미스마루
   Description: '{FriendP}|방어|와 |보호막|을 {Value2} 얻습니다.'
   ExtraDescription1: '{FriendA}무작위 |홍룡음양옥| {Value1}장을 얻습니다.'
+  ExtraDescription3: '{FriendU}전투 중 모든 |음양옥|의 효과가 두 배가 됩니다. 즉시 |홍룡음양옥|을 한 개 획득합니다.'
 SanaeRice:
   Name: 오곡풍양 라이스 샤워
   Description: "지니고 있는 모든 부정적 효과를 제거합니다.\n체력을 {Value1} 회복합니다."
@@ -2018,6 +2019,8 @@ DayaojingFriend:
   Name: 탐험 조수, 대요정
   UpgradedExtraDescription1: '{FriendA}|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.'
   FlavorText: 모든 탐정은 그에 맞는 조수가 필요하다. 이건 치르노도 아는 기본상식이지.
+  ExtraDescription3: '{FriendU}|한여름의 꽃|을 {Value1}장 얻습니다.'
+  UpgradedExtraDescription3: '{FriendU}|한여름의 꽃+|을 {Value1}장 얻습니다.'
 FruitShake:
   Description: "모든 적에게 피해를 {Damage} 주고 명중 시 |빙결|을 가합니다.\n이번 턴에서 |동료|를 소환했을 시 {SelfName}의\
     \ 코스트가 {Mana}이 됩니다."
@@ -2028,11 +2031,13 @@ MaidFriend:
   Description: '{FriendP}체력이 가장 적은 적에게 공격 피해를 {Damage} 줍니다.'
   ExtraDescription1: '{FriendA}곧바로 피해를 가합니다. |단검|을 {Value2}장 얻습니다.'
   FlavorText: 카스미는 홍마관의 요정 메이드들 중에서 가장 열심히 일하는 요정 중 한 명입니다.
+  ExtraDescription3: '{FriendU}곧바로 피해를 가합니다. 모든 {SelfName}의 가하는 피해가 {Value1} 증가합니다.'
 LarvaFriend:
   Description: '{FriendP}무작위 적에게 |중독|을 {Value1} 줍니다.'
   ExtraDescription1: '{FriendA}손의 모든 카드를 |강화|시킵니다.'
   Name: 한여름 밤의 신, 라바
   FlavorText: 악수한 뒤 꼭 손을 씻는 것을 잊지 마세요.
+  ExtraDescription3: '{FriendU}모든 적에게 |중독|을 {Value2} 줍니다. 그 후 |중독| 피해를 유발합니다.'
 ChooseFriend:
   Name: 약속의 호수
   Description: "무작위 |동료| 카드 {Value1}장 중 최대 {Value2}장까지를 골라 얻습니다. 해당 카드의 코스트는 임의의 마나로\
@@ -2044,21 +2049,25 @@ LunaFriend:
   Description: '{FriendP}|방어|를 {Block} 얻습니다.'
   ExtraDescription1: '{FriendA}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.'
   FlavorText: 쉿, 소리 내면 안 돼...
+  ExtraDescription3: '{FriendU}|천의무봉|을 {Value2} 얻습니다.'
 StarFriend:
   Name: 쏟아지는 별빛, 스타
   Description: '{FriendP}모든 적에게 공격 피해를 {Damage} 줍니다.'
   ExtraDescription1: '{FriendA}즉시 피해를 {Value1}번 줍니다.'
+  ExtraDescription3: "{FriendU}모든 {Self}가 피해를 줄 시 추가로 |록온|을 {Light} 줍니다.\n곧바로 피해를\
+    \ {Value2}번 줍니다."
 SunnyFriend:
   Name: 내리쬐는 햇빛, 서니
   ExtraDescription1: '{FriendA}|광학미채|를 {Light} 얻습니다.'
   Description: '{FriendP}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.'
+  ExtraDescription3: "{FriendU}곧바로 피해를 {Value1} 줍니다.\n|화력|을 {Value2} 얻습니다."
 ClownpieceFriend:
   Name: 광기의 요정, 클라운피스
   Description: '{FriendS}{StartMana}를 얻습니다.
 
     {FriendP}|일시 화력|을 {Value2} 얻습니다.'
   UpgradedExtraDescription1: '{FriendA}카드를 {Value1}장 뽑습니다.'
-  ExtraDescription2: '{FriendU}{Mana}를 얻습니다. 버린 카드 더미에 |광기|를 한 장 섞어넣습니다.'
+  ExtraDescription2: '{FriendA2}{Mana}를 얻습니다. 버린 카드 더미에 |광기|를 한 장 섞어넣습니다.'
   ExtraDescription1: '{FriendA}카드를 {Value1}장 뽑습니다. 버린 카드 더미에 |광기|를 한 장 섞어넣습니다.'
 Lunatic:
   NonbattleDescription: 내 턴 종료 시 손패, 뽑을 카드 더미, 버린 카드 더미에 도합 {Value1}장 이상의 {SelfName}가
@@ -2070,11 +2079,13 @@ LeidiFriend:
   Name: 겨울의 화신, 레티
   Description: '{FriendP}무작위 적 하나에게 |빙결|을 가합니다.'
   FlavorText: 겨울이 오고 있다. 겨울이 왔다. 다시 겨울로 돌아가리라. 죽음의 겨울로.
+  ExtraDescription3: '{FriendU}모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.'
 LilyFriend:
   Name: 봄의 강림, 릴리 화이트
   Description: "{FriendS}무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{FriendP}{TurnMana}를\
     \ 얻습니다."
   ExtraDescription1: '{FriendA}{ActiveMana}를 얻습니다.'
+  ExtraDescription3: '{FriendU}체력을 {Heal} 회복합니다.'
 InstantFreeze:
   Name: 급속냉동
   Description: "모든 적에게 |빙결|을 가합니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|시간 제한| {Mana}."
@@ -2086,8 +2097,8 @@ LarvaDefense:
     \ 추가로 |중독|을 {Value2} 줍니다."
   FlavorText: 라바 뒤에 붙어서 비행하려면 꽤나 용기가 필요할건데...
 FakeCard:
-  Name: 꿈자리에 조상님 총기립(임시)
-  Description: "|코메이지 코이시|는 아직 집에서 자는 중입니다.\n차후의 업데이트를 기다려 주세요."
+  Name: 타케토리모노가타리 (위작)
+  Description: "이 카드는 아직 얼리 액세스에 머물러 있습니다.\n차후의 업데이트를 기다려 주세요."
 HistoryCard:
   Description: "이 카드는 현재 버전에서 삭제되었습니다.\n카드 ID: {CardId}"
   Name: 이전의 카드
@@ -2125,21 +2136,20 @@ HatateShot:
   Description: "|방어|를 {Block} 얻습니다.\n남은 마나 하나마다 얻는 |방어|가 {Value1}씩 늘어납니다. (총 {Special}점)"
 LoveFire:
   Name: 사랑의 매화
-  Description: "피해를 {Damage} 줍니다.\n{Mana}|를 지불할 시|: 이 카드의 피해가 {Value1} 상승합니다.\n현재\
-    \ 소모한 마나를 기록했다가, 다음 번 카드를 사용할 때 되돌려줍니다."
+  Description: "|추가 공격|을 진행합니다.\n내 턴 종료 시 만약 |추가 공격|을 진행했다면 |화력|을 {Value1} 얻습니다."
 BabyDream:
   Name: 태아의 꿈
-  Description: '모든 적에게 피해를 {Damage} 줍니다.
+  Description: '|방어|를 {Block} 얻습니다.
 
-    |평온|에 들어섭니다.'
+    |꿈결| {Value1}.'
 AliceAttackW:
-  Name: 미래 분라쿠
+  Name: 인형 창술
   Description: 피해를 {Damage} 줍니다.
 AliceAttackB:
-  Name: 리턴 인애니메이트니스
+  Name: 측면의 섬광
   Description: 피해를 {Damage} 줍니다.
 AliceBlockU:
-  Name: 탄막결계
+  Name: 방어마법
   Description: '|방어|를 {Block} 얻습니다.'
 DeployShanghai:
   Name: 상해인형 배치
@@ -2156,15 +2166,13 @@ MojingShanjie:
   FlavorText: 다이스 갓을 찬양하라...
 FlowerGone:
   Name: 시들어가는 추억
-  Description: "|방어|를 {Block} 얻습니다.\n|평온 상태일 때|: |영력|을 {Value1} 얻습니다. {SelfName}은\
-    \ 소멸됩니다."
-QinchunPanni:
-  Name: 청춘반란
+  Description: "|방어|를 {Block} 얻습니다.\n|평온|: 대신 |보호막|을 {Shield} 얻습니다."
 Danxiangsi:
   Name: 짝사랑
 PerfectCrime:
   Name: 완전범죄
-  Description: "대상의 |영력|, |그레이즈|, |부적|, |광학미채|, |천의무봉|을 빼앗습니다.\n피해를 {Damage} 줍니다."
+  Description: "대상의 |그레이즈|, |광학미채|, |천의무봉|을 빼앗습니다.\n대상의 |화력|과 |영력|을 최대 {Value1}만큼\
+    \ 빼앗습니다."
 PoisonTeaParty:
   Name: 수상한 다과회
   Description: "체력을 {Value1} 회복하고, |중독|을 {Value1} 받습니다.\n적에게 |중독|을 {Value2} 가합니다."
@@ -2188,6 +2196,8 @@ YukariFriend:
   Description: '{FriendP}이번 턴 사용한 방어 카드의 수만큼({Fire}장) |화력|을 얻습니다.'
   ExtraDescription1: '{FriendA}|소멸|된 카드를 한 장 골라 다시 손으로 가져옵니다.'
   DetailText: 자신의 |u:궁극기| 효과로 {SelfName}를 가져올 수 없습니다.
+  ExtraDescription3: '{FriendU}내 턴 시작 시 무작위 중립 삼색 카드를 얻습니다. 해당 카드는 |일시적으로| {Mana}
+    코스트이며, |휘발성|을 갖습니다.'
 NightMana2:
   Description: "손에 {SelfName}가 있을 경우, 손에 있는 다른 모든 카드의 코스트가 {Mana}씩 증가합니다.\n다른 카드를\
     \ {FreezeTimes}번 낸 후 {SelfName}를 |소멸|시킵니다."
@@ -2209,23 +2219,14 @@ PatchouliFriend:
   Name: 연금술사, 파츄리 널릿지
   ExtraDescription1: '{FriendA}|화력|과 |영력|을 {Value1} 얻고, <sprite="Point" name="Power">를
     {Power} 얻습니다.'
-  ExtraDescription2: '{FriendU}|불안정한 물약|을 {Value2}장 얻습니다.'
+  ExtraDescription2: '{FriendA2}|불안정한 물약|을 {Value2}장 얻습니다.'
   FlavorText: '"슉..슈슉.슉..슉..슉.."'
-YoubiKongjuzheng:
-  Description: "|방어|를 {Block} 얻습니다.\n|직감|: |보호막|을 {Shield} 얻습니다."
 ZhuozhuangChengzhang:
   Description: 내 턴 종료 시 |활력|을 {Value1}장 얻습니다.
-LianaiChongdong:
-  Name: 사랑의 충동
 LoveSeed:
   Name: 사랑의 씨앗
-BenwoTouying:
-  Description: "|열정| 상태에 들어설 때마다 |p:완전 무작위|의 |공격| 카드를 한 장 얻습니다. 해당 카드는 일시적으로 {Mana}의\
-    \ 코스트를 가지며, |소멸|이 붙습니다.\n|열정| 상태에 들어섭니다."
 Kongxiangshang:
   Description: '|기본 방어 카드|를 사용하면 |평온| 상태에 들어섭니다.'
-ChaoyueZiwo:
-  Name: 자아 초월
 AyaNewsAliceSp:
   Name: 붕붕마루 앨리스 특간호
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
@@ -2237,8 +2238,7 @@ MeilingFriend:
     {FriendP}|단검|을 한 장 얻습니다.
 
     {PlayerName}가 공격을 받을 시 효과가 한 번 더 발동됩니다.'
-WuyishiDNA:
-  Name: 정신 이탈
+  ExtraDescription3: '{FriendU}체력을 {Value1} 회복하고 |화력|을 {Value2} 얻습니다.'
 ReimuHuashan:
   Name: 수업
   Description: "손에서 카드를 한 장 |소멸|시키고 <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다.\n\
@@ -2405,27 +2405,21 @@ ShopSearch:
 FrozenOrb:
   Name: 얼음구
   Description: "모든 적에게 피해를 {Damage} 주고 |빙결|을 가합니다.\n|빙결탄|을 {Value1}장 얻습니다."
-WuyunJiekong:
-  Name: 오온개공
 QingxingMeng:
   Name: 의식에 잠기다
 InspirationCard:
-  Description: '|손에 들어올 시|: 무작위 |e:영감 카드|로 바꾼 뒤 효과를 발동시키고 |소멸|시킵니다.
-
-    내 턴이 시작할 때 카드를 뽑는 도중엔 |보충|이 붙습니다.'
-  Name: 영감
-InspirationGreen:
-  Description: '{Mana}를 얻습니다.'
+  Description: '|손에 들어올 시|: {Mana}를 얻고, |영감|을 {Value1} 얻습니다. 그 후 {SelfName}는 |소멸|합니다.'
+  Name: 유레카!
 InspirationRed:
   Description: 모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.
 LeaveMoodAttack:
-  Name: 무의식적 행동
+  Name: 의식의 소용돌이
   Description: "피해를 {Damage} 줍니다.\n현재 |마음가짐|에서 벗어납니다."
 LeaveMoodGraze:
-  Name: 무의식적 회피
+  Name: 기백 지우기
   Description: "|그레이즈|를 {Value1} 얻습니다.\n현재 |마음가짐|에서 벗어납니다."
 LeaveMoodDraw:
-  Name: 무의식적 방황
+  Name: 호기심
   Description: "카드를 {Value1}장 뽑습니다.\n현재 |마음가짐|에서 벗어납니다."
 YoumuAttack:
   Name: 심초참
@@ -2482,14 +2476,14 @@ SakuyaZeroDefense:
   Name: 탄막 디플렉션
   Description: '|방어|를 {Block} 얻습니다.'
 DefaultPassion:
-  Name: 고독한 마음
+  Name: 로맨틱 로즈
   Description: "피해를 {Damage} 줍니다.\n|열정|에 들어섭니다."
 DefaultPeace:
-  Name: 열애의 가시덤불
+  Name: 무아
   Description: "|방어|를 {Block} 얻습니다.\n|평온|에 들어섭니다."
 FindInspiration:
-  Name: 영감을 찾아서
-  Description: "피해를 {Damage} 줍니다.\n|번뜩이는 영감|을 {Value1} 얻습니다."
+  Name: 일섬의 영감
+  Description: "|유레카!|를 {Value1}장 뽑을 카드 더미에 섞어넣습니다."
 HuiyinMoreDraw:
   Name: 전문 수업
   Description: 내 턴 시작 시 처음 카드를 뽑을 때 카드를 {Value1}장 더 뽑습니다.
@@ -2504,10 +2498,10 @@ IceWing:
     \ 나머지 한 장은 카드 더미의 바닥에 놓습니다.\n(뽑을 카드 더미에 있는 청색 카드의 수: {BlueCount}장)"
   FlavorText: 비행 준비 완료!
 KoishiZeroAttack:
-  Name: 맹목적인 사랑
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|둔주일 때|: 피해를 두 번 줍니다."
+  Name: DNA 전도
+  Description: "피해를 {Damage} 줍니다."
 PassionAttackToDraw:
-  Name: 망아적인 사랑
+  Name: 탄막 파라노이아
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|열정|에 들어섭니다.\n이 카드를 뽑을 카드 더미에 섞어넣습니다."
 FriendDraw:
   Name: 꽃밭 집회
@@ -2515,27 +2509,27 @@ FriendDraw:
 
     |u:궁극기| 사용 시 추가로 무작위 마나를 {Value1}개 얻습니다.'
 PassionDefense:
-  Name: 본능적인 사랑
+  Name: <열정적인 방어>
   Description: "|방어|를 {Block} 얻습니다.\n|열정일 때|: |방어|를 추가로 {Value1} 얻습니다."
 MoodAttack:
-  Name: 기분파 연격
+  Name: 이정참
   Description: "피해를 {Damage} 줍니다.\n|마음가짐|이 변할 시 {SelfName}을 버린 카드 더미에서 다시 손으로 가져옵니다."
 PassionVulnerable:
-  Name: 이드의 해방
+  Name: 잠 들지 못하는 밤
   Description: "|열정일 때|: 모든 적에게 |취약|을 {Value1} 줍니다.\n열정이 아니라면 |열정|에 들어섭니다."
 PassionDraw:
-  Name: 열정적인 뽑기
+  Name: 상사병
   Description: '|열정|에 들어설 시 카드를 {Value1}장 뽑습니다.'
 PeaceEndTurn:
-  Name: 정신차리기
+  Name: 한 때의 안정
   Description: "|평온|에 들어섭니다.\n내 턴을 종료합니다."
   UpgradedDescription: "버린 카드 더미에서 최대 {Value1}장 골라 손으로 다시 가져옵니다. 해당 카드들은 한 턴간 |보존|이\
     \ 붙습니다.\n|평온|에 들어섭니다.\n내 턴을 종료합니다."
 PeaceBlock:
-  Name: 평온한 방어
+  Name: 자기조절
   Description: 내 턴 종료 시 |평온|이라면 |방어|를 {Value1} 얻습니다.
 MoodChangeBlock:
-  Name: 정신적 요새
+  Name: A.T.필드
   Description: '|마음가짐|이 바뀔 때마다 |방어|를 {Value1} 얻습니다.'
 PsycheLock:
   Name: 마음속 자물쇠
@@ -2558,3 +2552,180 @@ ReimuSilence:
   Name: 「몽상봉인 적」
   Description: "드로우 페이즈가 아닐 때 카드를 {Value1}장 뽑을 때마다 모든 적에게 피해를 {Damage}씩 줍니다.\n카드를 {Value1}장\
     \ 뽑습니다."
+ButterflyDream:
+  Description: 내 턴 시작 시 |p:완전 무작위| 희귀 카드 {Value1}장을 얻습니다. 해당 카드에는 |소멸|과 |휘발성|이 붙으며,
+    어떠한 마나라도 사용할 수 있게 됩니다.
+  Name: 호접지몽
+  DetailText: "|e:대상 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다.\n자기 자신을 대상으로 할 수 없습니다.\n|코스트\
+    \ X| 카드를 대상으로 할 수 없습니다."
+KoishiDive:
+  Description: "|평온|에 들어섭니다.\n|꿈결| {Value1}.\n버린 카드 더미에서 |꿈결 카드| 중 최대 {Value2}개를 다시\
+    \ 손으로 가져옵니다."
+  Name: 의식에 잠기다
+AttackX:
+  Description: "{Mana}|를 지불할 시|: 피해를 {Damage} 줍니다.\n대상으로 지정한 적이 제거되었을 때 공격 횟수가 남아있다면\
+    \ 무작위 적을 계속해서 공격합니다."
+  Name: 대상이 제거된 이후에도 계속해서 공격
+DebugRemoveAllHandWhenDraw:
+  Description: '테스트 카드: 이 카드를 뽑을 시 손에 있는 모든 카드를 이번 전투동안 제거합니다 (이 카드 포함)'
+  Name: 뽑을 시 손패 제거
+KnifeDamageUp:
+  Name: 프로펠링 실버
+  Description: "|단검|의 피해가 {Value1} 증가합니다.\n|단검|을 {Value2}장 얻습니다."
+KoishiKiss:
+  Name: 입맞춤
+  Description: "피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|허약|을 {Value1} 줍니다.\n|추가 공격|이 뒤따릅니다."
+BaseFollower:
+  Name: 본능적인 사랑
+  Description: 피해를 {Damage} 줍니다.
+PassionMemory:
+  Name: 열정적인 기억
+  Description: '|열정| 상태에 들어섭니다.'
+Claustrophobia:
+  Name: 폐소공포증
+  Description: "|방어|를 {Block} 얻습니다.\n|직감|: 추가로 |보호막|을 {Shield} 얻습니다."
+MultiFollower:
+  Name: 하트의 무도
+  Description: 피해를 {Damage}씩 {Value1}번 줍니다.
+ToAllFollower:
+  Name: 요동치는 감정
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|둔주|: 피해를 한 번 더 줍니다."
+DefenseFollowAttack:
+  Name: 피해망상
+  Description: "|방어|를 {Block} 얻습니다.\n|추가 공격|이 뒤따릅니다."
+KoishiDrawTop:
+  Name: 거침없는 말
+  Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드를 {Value2}장 골라 뽑을 카드 더미의 위로 돌려보냅니다."
+GrazeFollowAttack:
+  Name: 본능적인 행동
+  Description: "|그레이즈|를 {Value1} 얻습니다.\n|추가 공격|이 뒤따릅니다."
+PlayDrawTop:
+  Name: 무의식적인 행동
+  Description: 뽑을 카드 더미의 맨 위에 놓인 카드를 발동시킵니다.
+TheChariot:
+  Name: 07. 전차
+  Description: "|예지| {Scry}.\n{PlayerName}의 다음 턴 시작 시 |열정|에 들어서며 카드를 {Value1}장 뽑습니다."
+CloseEye:
+  Name: 닫힌 마음
+  Description: "|보호막|을 {Shield} 얻습니다.\n다음 턴동안 적의 의도를 파악할 수 없습니다."
+  FlavorText: 코이시는 마음을 읽는 서드 아이를 닫았습니다.
+DuplicateFollower:
+  Name: 고독한 마음
+  Description: "피해를 {Damage} 주고 {Mana}를 얻습니다.\n|전투 시작 시|: {SelfName}의 복사본을 {Value1}장\
+    \ 뽑을 카드 더미에 섞어넣습니다."
+  ExtraDescription1: 피해를 {Damage} 주고 {Mana}를 얻습니다.
+AncestorDream:
+  Name: 선조의 꿈
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|꿈결| {Value1}."
+YaoguaiLaser:
+  Name: 요괴 심전도
+  Description: "피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다.\n|직감|: |추가 공격|이 한 번 더 뒤따릅니다."
+KoishiWake:
+  Name: 정신차리기
+  Description: "현재 |마음가짐|에서 벗어나고 체력을 {Value1} 회복합니다.\n|둔주|: 추가로 |보호막|을 {Shield} 얻습니다."
+  FlavorText: '"여긴 어디?"'
+KoishiGainColorless:
+  Name: 사고의 방황
+  Description: '{Mana}를 얻습니다.'
+  UpgradedDescription: '{Mana}를 얻습니다.'
+PeaceMemory:
+  Name: 평온의 기억
+  Description: '|평온|에 들어섭니다.'
+KoishiSpringOut:
+  Name: 봄나들이
+  Description: "|평온|: 카드를 {Value1}장 뽑습니다.\n아니라면, |평온|에 들어섭니다."
+InspirationDefense:
+  Name: 깨달음의 순간
+  Description: "|방어|를 {Block} 얻습니다.\n|영감|을 {Value1} 얻습니다."
+KoishiFire:
+  Name: 변덕
+  Description: "|화력|을 {Value1} 얻습니다.\n|열정|: 추가로 |화력|을 {Value2} 얻습니다.\n|평온|: 대신 |영감|을\
+    \ {Value1} 얻습니다."
+KoishiFlower:
+  Name: 장난스런 장미
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n|한여름의 꽃|을 {Value1}장 얻습니다.\n\
+    |둔주|: 대신 {Value2}장 얻습니다."
+TheHermit:
+  Name: 09. 은둔자
+  Description: "|예지| {Scry}.\n{Mana}를 얻습니다.\n|둔주|: {SelfName}의 코스트가 <sprite=\"ManaSprite\"\
+    \ name=\"0\">이 됩니다."
+KoishiGrowAttack:
+  Name: 가시돋힌 춤길
+  Description: "피해를 {Damage} 줍니다.\n|성장|: 피해가 {Value1} 증가합니다.\n|평온|: {SelfName}의 코스트가\
+    \ {Mana}로 변경됩니다."
+GainZeroAttack:
+  Name: DNA의 흠
+  UpgradedDescription: "내 턴 시작 시 |DNA 전도|를 {Value1}장 얻습니다. 해당 카드에는 |소멸|과 |휘발성|이 붙습니다.\n\
+    즉시 효과가 한 번 발동됩니다."
+  Description: 내 턴 시작 시 |DNA 전도|를 {Value1}장 얻습니다. 해당 카드에는 |소멸|과 |휘발성|이 붙습니다.
+BlackEpiphany:
+  Name: 의식 박리
+  Description: "|둔주|에 들어섭니다.\n다음 턴동안 카드를 최대 {Value1}장까지만 사용할 수 있습니다."
+FakeBullet:
+  Name: 상상 속의 탄막
+  Description: "|추가 공격|을 {Value1}회 진행합니다.\n뽑을 카드 더미에 충분한 |연계 카드|가 없는 경우 무작위 |연계 카드|를\
+    \ 생성해 추가 공격을 진행합니다."
+KoishiMana:
+  Name: 잠재력 해방
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n{Mana}를 얻습니다."
+KoishiSpark:
+  Name: 요괴 폴리그래프
+  Description: 모든 적에게 피해를 {Damage} 줍니다.
+GainInspiration:
+  Name: 생각할 시간
+  Description: "내 턴 종료 시 |유레카!|를 한 장 뽑을 카드 더미에 섞어넣습니다.\n"
+TheFool:
+  Name: 00. 바보
+  Description: "|예지| {Scry}.\n뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다."
+KoishiDna:
+  Name: 하르트만의 요괴소녀
+  Description: 내 턴 시작 시 뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다.
+KoishiAttackX:
+  Name: 로즈 지옥
+  Description: '<sprite="ManaSprite" name="2">|를 지불할 시|: 모든 적에게 피해를 {Damage} 주고 {Mana}를
+    얻습니다.'
+Anatta:
+  Name: 무아지경
+  Description: "|평온|에서 벗어날 때 추가로 {Mana}를 얻습니다.\n|평온|에 들어섭니다."
+KokoroFriend:
+  Name: 감정의 가면, 코코로
+  Description: '{FriendP}|꿈결| {Value1}.'
+  ExtraDescription1: '{FriendA}|열정|에 들어섭니다.'
+  ExtraDescription2: '{FriendA2}|평온|에 들어섭니다.'
+  ExtraDescription3: '{FriendU}|둔주|에 들어섭니다.'
+EnterEpiphany:
+  Name: 돈오
+  Description: '|둔주|에 들어섭니다.'
+KoishiPhone:
+  Name: 두렵고 귀여운 전화
+  Description: "공격 카드가 사용될 시 |추가 공격|이 뒤따릅니다.\n|연계 카드|가 없을 시 |착신전화|가 |연계|됩니다."
+FollowAttackFiller:
+  Name: 착신전화
+  Description: 피해를 {Damage} 줍니다.
+DollBlock:
+  Name: 인형 방어
+Zhendijianzao:
+  Name: 영역 전개
+DreamExpress:
+  Name: 드림 익스프레스
+  Description: "내 턴 종료 시 |꿈결| {Value1}.\n모든 적에게 |꿈결| 카드의 기본 코스트의 두 배만큼 피해를 줍니다."
+BailianMagic:
+  Name: 마신복송
+  Description: 이번 턴동안 다음 {Value1}장의 |능력| 카드가 두 번 발동됩니다.
+JinziDoppelganger:
+  Name: 세기의 더블 에스퍼
+  Description: 내 턴동안 처음 사용하는 카드가 두 번 발동됩니다.
+HuiyeSuperExtraTurn:
+  Name: 「영야 되돌리기」
+  Description: "내 |일반 턴| 종료 시 추가 턴을 진행합니다.\n해당 추가 턴에서는 |방어|와 |그레이즈|가 사라지지 않으며, 카드를\
+    \ {Value1}장만 사용할 수 있습니다."
+  DetailText: "{SelfName}로 유발되는 추가 턴은 다른 추가 턴보다 먼저 발동됩니다.\n{SelfName}가 사용되고 나면, 상태\
+    \ 아이콘에서 현재 턴에 대한 세부를 확인할 수 있습니다."
+KoishiDiscard:
+  Name: 무의식 속 망각
+  Description: '|카드를 뽑을 시|: 무작위 카드를 버립니다.'
+  ExtraDescription1: "|카드를 뽑을 시|: 무작위 카드를 버립니다.\n버린 카드: {CardName}"
+DebugRemoveHand:
+  Name: 손패 제거
+  Description: '테스트 카드: 손에서 임의의 카드를 골라 이번 전투동안 제거합니다.'
