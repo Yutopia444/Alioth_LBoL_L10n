@@ -2955,7 +2955,7 @@ FlanFirepower:
   Description: "Cada carta en la mano gana |Etéreo|. Gana |Poder| igual al número\
     \ de cartas en la mano.\nActualmente hay {Count:plural one='% carta' other='%\
     \ cartas'} en la mano."
-  Name: ¿Y Entonces No Quedará Ninguno?
+  Name: Y No Quedó Ninguno
 DollSacrifice:
   Name: Regreso a la Inanimación
 Frog:
@@ -3174,12 +3174,20 @@ MoodChangeBlock:
     de |Bloqueo|.
 PsycheLock:
   Name: Psicocandado
-  NonbattleDescription: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\n\
+  NonbattleDescription: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\n\
     Solo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
-    \ mientras {SelfName} está en la mano."
-  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}.\nSolo se puede\
-    \ jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes mientras\
-    \ {SelfName} está en la mano. (Queda {Count})"
+    \ mientras que {SelfName} está en la mano."
+  Description: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\nSolo\
+    \ se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
+    \ mientras que {SelfName} está en la mano. (Queda {Count})"
+  UpgradedDescription: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\n\
+    Al comienzo del próximo turno de {PlayerName}, |Mejora| cada carta en la mano.\n\
+    Solo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
+    \ mientras que {SelfName} está en la mano. (Queda {Count})"
+  UpgradedNonbattleDescription: "Termina el turno de {PlayerName}. Luego, juega un\
+    \ turno extra.\nAl comienzo del próximo turno de {PlayerName}, |Mejora| cada carta\
+    \ en la mano.\nSolo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales|\
+    \ diferentes mientras que {SelfName} está en la mano."
 LunaticPassion:
   Name: Loca de Amor
   Description: "El modificador del daño del estado |Pasión| pasa a ser del {Percentage}%.\n\
@@ -3339,7 +3347,7 @@ EnterEpiphany:
 DreamExpress:
   Name: Sueño Express
   Description: Al final del turno de {PlayerName}, gana {Value1} |Sueño|, luego inflige
-    daño a cada enemigo igual al doble d{Value1:plural one='elcoste total' other='e
+    daño a cada enemigo igual al doble d{Value1:plural one='el coste total' other='e
     la suma de los costes totales'} de la carta{Value1:plural one='' other='s'} |Soñada{Value1:plural
     one='' other='s'}.|
 JinziDoppelganger:
