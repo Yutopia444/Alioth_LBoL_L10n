@@ -173,7 +173,7 @@ Amulet:
 
 AmuletForCard:
   Name: 庇護
-  Description: '|放逐|接下來受到的 {Level} 張狀態牌。'
+  Description: '抵擋接下來受到的 {Level} 張狀態牌（將{Level:plural one=''它'' other=''它們''}|放逐|）。'
   Brief: '|放逐|接下來受到的若干張狀態牌。'
 
 Electric:
@@ -529,7 +529,7 @@ SihunYuSe:
 
 MadokaBowSe:
   Name: 迸發光芒的長弓
-  Description: '{OwnerName}回合結束時，將 {Level} 張隨機的狀態牌洗入抽牌堆。'
+  Description: '{OwnerName}回合結束時，將 {Level} 張隨機的狀態牌，一半洗入抽牌堆，一半洗入棄牌堆。'
 
 QiannianShenqiSe:
   Name: 金字塔形狀的積木
@@ -575,8 +575,8 @@ DanceAroundLakeSe:
 
 EvilTuiZhiSe:
   Name: 妖邪退治
-  Description: 下 {Level} 張攻擊牌造成雙倍傷害。
-  Brief: 下若干張攻擊牌造成雙倍傷害。
+  Description: 本回合內，下 {Level} 張攻擊牌會打出兩次。
+  Brief: 本回合內，下若干張攻擊牌會打出兩次。
 
 YinyangXueyinSe:
   Name: 陰陽血印
@@ -585,7 +585,7 @@ YinyangXueyinSe:
 
 BoliPhantomSe:
   Name: 博麗幻影
-  Description: 每|放逐|一張不是|封魔針|的牌，將 {Level} 張|封魔針|加入手中，它們|暫塑|為{Mana}。
+  Description: 每|放逐|一張不是|封魔針|的牌，將 {Level} 張|封魔針|加入手中，{Level:plural one='它' other='它們'}|暫塑|為{Mana}。
   Brief: 每|放逐|一張不是|封魔針|的牌，將若干張|封魔針|加入手中，它們|暫塑|為{Mana}。
 
 TaijiLiangyiSe:
@@ -1103,25 +1103,17 @@ CatchGoblinSe:
   Description: 受到的傷害減少 33%，擊敗後掉落 50<sprite="Point" name="Gold">。
   Brief: 受到的傷害減少33%，擊敗後掉落 50<sprite="Point" name="Gold">。
 
-WuyishiDNASe:
-  Name: 無意識的基因
 BenwoTouyingSe:
   Name: 自我投影
-  Brief: 每次進入|熱戀|時，將一張完全隨機的攻擊牌加入手牌，暫塑為0且附帶|放逐|。
 ChaofanyinSe:
   Description: 每當你打出一張不是|複製|的直覺牌時，如果沒有觸發|直覺|，將 {Level} 張費用為{Mana}且附帶|放逐|的複製加入手中。
 ChaoyueZiwoSe:
-  Name: 超越自我
   Brief: '{PlayerName}的回合結束時，如果處於|平靜|，獲得|火力|和|靈力|。'
-KongxiangshangSe:
-  Brief: 打出|基本防禦|牌後進入|平靜|。
 ShortLove:
   Name: 閃電戀
-  Brief: 下一張|基本|卡的數值提高。
 LongLove:
   Description: 所有|基本|卡的數值提高 {Level}。
 ZhuozhuangChengzhangSe:
-  Name: 茁壯成長
   Brief: '{PlayerName}的回合結束時，將|生機|加入手牌。'
 ClockCorpseSe:
   Description: 抽牌階段結束後無法再抽牌。
@@ -1148,7 +1140,7 @@ YouxiangWakeSe:
   Brief: 若干回合後的回合開始時：取得若干點|火力|，將抽牌堆中隨機的若干張攻擊牌移入手中，|暫塑|為{Mana}。
   ExtraDescription: 下回合的回合開始時：獲得 {Level} 點|火力|，將抽牌堆中隨機的 {Limit} 張攻擊牌移入手中，|暫塑|為{Mana}。
 SuperExtraTurn:
-  Name: 世紀的二重身超人
+  Name: 「永夜返」
   Description: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。\n\
     目前回合狀態：{StatusString}。"
   Brief: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。"
@@ -1205,12 +1197,8 @@ ColdHeartedSe:
   Name: 冰冷血脈
   Brief: "|冰槍術|對|寒冷|的目標造成三倍傷害。\n{OwnerName}的回合結束時移除|冰冷血脈|。"
   Description: "|冰槍術|對|寒冷|的目標造成三倍傷害。\n{OwnerName}的回合結束時移除|冰冷血脈|。"
-Constrain:
-  Description: 抵消獲得的|格擋|和|護盾|。
 QingxingMengSe:
   Name: 白日清醒夢
-  Description: "{PlayerName}的回合開始時，將 {Level} 張|完全隨機|的|稀有|牌加入手中，它暫塑為<sprite=\"ManaSprite\"\
-    \ name=\"1\">，具有|放逐|、|虛無| 。\n{PlayerName}的每個回合只能打出 {Limit} 層張|稀有|牌，剩餘 {Count} 張。"
 QiangweiDiyuSe:
   Brief: 每當一張基本牌進入手牌時，對隨機敵人造成傷害，然後將傷害提高。
 FreezeBulletSe:
@@ -1233,11 +1221,8 @@ MoodPeace:
   Name: 平靜
   Brief: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
   Description: "離開|平靜|時獲得{Mana}。\n|平靜|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
-MoodEnlight:
-  Description: "進入|神遊|時獲得{Mana}。\n處於|神遊|時，每打出一張牌抽一張牌。\n|神遊|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
 InspirationSe:
   Name: 靈感迸發
-  Brief: '{PlayerName}累計 {TriggerLevel} 層|靈感迸發|時，將等量的|靈感|洗入抽牌堆，進入|神遊|。'
 MoreDraw:
   Description: 抽牌階段多抽 {Level} 張牌。
   Name: 傳道授業
@@ -1250,10 +1235,8 @@ FriendDrawSe:
   Name: 花園集會
   Description: "使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Level} 張牌。\n使用|u:終結技|時額外獲得 {Level} 點隨機的法力。"
   Brief: "使用|同伴|的|a:主動技能|或|u:終結技|時，抽若干張牌。\n使用|u:終結技|時額外獲得若干點隨機的法力。"
-NextTurnPassionSe:
-  Description: '{PlayerName}的下回合開始時，進入|熱情|，抽 {Level} 張牌。'
 PassionDrawSe:
-  Name: 熱戀抽牌
+  Name: 相思之情
   Description: 每當{PlayerName}進入|熱情|時，抽 {Level} 張牌。
   Brief: 每當{PlayerName}進入|熱情|時，抽若干張牌。
 PeaceBlockSe:
@@ -1278,5 +1261,73 @@ SakuyaInvestigateSe:
   Brief: '{PlayerName}的額外回合開始時，對所有敵人施加若干層|鎖定|。'
 BladePowerSe:
   Name: 快閃之銀
-  Description: 主動使用|飛刀|後將 {Level} 張隨機的攻擊牌加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。
+  Description: 主動使用|飛刀|後將 {Level} 張隨機的攻擊牌加入手中，{Level:plural one='它' other='它們'}|暫塑|為{Mana}，具有|放逐|、|虛無|。
   Brief: 主動使用|飛刀|後將若干張隨機的攻擊牌加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。
+KoishiUnknown:
+  Name: 難以捉摸
+  Description: "{OwnerName}的部分行動意圖隱藏。\n額外的層數將提高隱藏行動的強度。"
+KnifeDamageUpSe:
+  Name: 推進之銀
+  Description: '|飛刀|造成的傷害提高 {Level} 點。'
+  Brief: '|飛刀|造成的傷害提高若干點。'
+MoodEpiphany:
+  Name: 神遊
+  Description: "處於|神遊|時，每打出一張牌就獲得{Mana}並抽一張牌。\n回合結束或打出 {Count} 張牌後離開|神遊|。\n|神遊|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
+  Brief: "處於|神遊|時，每打出一張牌就獲得{Mana}並抽一張牌。\n回合結束或打出 {PlayCount} 張牌後離開|神遊|。\n|神遊|是一種|心境|，{PlayerName}只能處於一種|心境|中。"
+NextTurnPassion:
+  Name: 下回合進入熱情
+  Description: '{PlayerName}的下回合開始時，進入|熱情|，抽 {Level} 張牌。'
+  Brief: '{PlayerName}的下回合開始時，進入|熱情|，抽若干張牌。'
+UpgradePeace:
+  Name: 无我之境
+  Brief: 提高離開|平靜|時獲得的法力。
+  Description: 提高離開|平靜|時獲得的法力。
+Inspiration:
+  Name: 靈感
+  Description: '{PlayerName}累計 {TriggerLevel} 層|靈感|時，進入|神遊|。'
+  Brief: '{PlayerName}累計 {TriggerLevel} 層|靈感|時，進入|神遊|。'
+Tired:
+  Name: 疲累
+  Description: 本回合只能打出 {Limit} 張牌，剩餘 {Count} 張。
+  ExtraDescription: "本回合只能打出 {Limit} 張牌，剩餘 {Count} 張。\n還未生效；只有在生效的回合結束時才會移除{SelfName}。"
+GainInspirationSe:
+  Name: 持續獲得靈感
+  Description: "{PlayerName}的回合結束時，將 {Level} 張|找到靈感了！|洗入抽牌堆。\n"
+  Brief: "{PlayerName}的回合結束時，將若干張|找到靈感了！|洗入抽牌堆。\n"
+CloseEyeSe:
+  Name: A.T. 力場
+  Description: 無法看到敵人的意圖，剩餘 {Level} 次。
+  Brief: 無法看到敵人的意圖，剩餘若干次。
+GainZeroAttackSe:
+  Name: DNA 的瑕疵
+  Description: "{PlayerName}的回合開始時，將 {Level} 張| DNA 轉錄|加入手中，{Level:plural one='它'\
+    \ other='它們'}具有|放逐|、|虛無|。"
+  Brief: '{PlayerName}的回合開始時，將若干張| DNA 轉錄|加入手中，它們具有|放逐|、|虛無|。'
+LoveFireSe:
+  Name: 戀之埋火
+  Description: "{PlayerName}的回合結束時，如果本回合進行過|追加攻擊|，獲得 {Level} 點|火力|。\n已進行過|追加攻擊|。"
+  Brief: '{PlayerName}的回合結束時，如果本回合進行過|追加攻擊|，獲得若干點|火力|。'
+  ExtraDescription: "{PlayerName}的回合結束時，如果本回合進行過|追加攻擊|，獲得 {Level} 點|火力|。\n還未進行過|追加攻擊|。"
+KoishiDnaSe:
+  Name: 無意識的 DNA
+  Description: '{PlayerName}的回合開始時，打出抽牌堆頂的 {Level} 張牌。'
+  Brief: '{PlayerName}的回合開始時，打出抽牌堆頂的若干張牌。'
+ButterflyDreamSe:
+  Name: 莊周夢蝶
+  Description: '{PlayerName}的回合開始時，將 {Level} 張|p:完全隨機|的稀有牌加入手中，它具有|放逐|、|虛無|，費用可以用任意顏色支付。'
+  Brief: '{PlayerName}的回合開始時，將若干張|p:完全隨機|的稀有牌加入手中，它具有|放逐|、|虛無|，費用可以用任意顏色支付。'
+KoishiPhoneSe:
+  Name: 恐怖的可愛來電
+  Description: "每打出一張攻擊牌，進行 {Level} 次|追加攻擊|。\n當抽牌堆沒有|追擊|牌時，將以|電話響了|進行追擊。"
+  Brief: "每打出一張攻擊牌，進行若干次|追加攻擊|。\n當抽牌堆沒有|追擊|牌時，將以|電話響了|進行追擊。"
+DreamExpressSe:
+  Name: 夢幻快車
+  Description: "{PlayerName}的回合結束時，|入夢| {Level} ，對所有敵人造成兩倍於{Level:plural one='它' other='它們'}基礎費用之和的傷害。"
+BailianMagicSe:
+  Name: 魔神復誦
+  Description: 本回合內，下 {Level} 張|能力|牌會打出兩次。
+  Brief: 本回合內，下若干張|能力|牌會打出兩次。
+JinziDoppelgangerSe:
+  Name: 世紀的二重身超人
+  Description: '{PlayerName}每回合打出的前 {Level} 張牌會打出兩次，剩餘 {Count} 張。'
+  Brief: '{PlayerName}每回合打出的前數張牌會打出兩次。'

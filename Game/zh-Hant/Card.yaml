@@ -302,7 +302,7 @@ ReimuDrink:
 
 EvilTuiZhi:
   Name: 妖邪退治
-  Description: 下 {Value1} 張攻擊牌造成雙倍傷害。
+  Description: 本回合內，下 {Value1} 張攻擊牌會打出兩次。
 
   FlavorText: 幻想鄉的娛樂項目之一。
 MomentPower:
@@ -462,6 +462,7 @@ YinyangQueen:
   Name: 能工巧匠魅須丸
   Description: '{FriendP}獲得 {Value2} 點|格擋|及|護盾|。'
   ExtraDescription1: '{FriendA}將 {Value1} 張隨機的|虹龍陰陽玉|加入手中。'
+  ExtraDescription3: '{FriendU}本場戰鬥中，所有|陰陽玉|的基礎效果提高一倍。立刻獲得一次|虹龍陰陽玉|。'
 ShuihuoCard:
   Name: 水火玉
   Description: |-
@@ -1074,8 +1075,7 @@ AttackMagic:
   Name: 彈幕戲法
   Description: |-
     造成 {Damage} 點傷害。
-    抽 {Value1} 張牌。
-    將 {Value2} 張|飛刀|加入手中。
+    選擇至多 {Value1} 張手牌丟棄，抽等量的牌。
 
 SakuyaInvestigate:
   Name: 時停偵探
@@ -1132,11 +1132,6 @@ SakuyaDefenseRetain:
   Description: |-
     獲得 {Block} 點|格擋|。
     |保留格擋|。
-
-SakuyaAttackX:
-  Description: '|每支付|{Mana}：造成 {Damage} 點傷害。
-
-    目標被擊敗而攻擊次數仍有剩餘時，以另一個隨機敵人為目標繼續攻擊。'
 
 SakuyaDraw:
   Name: 毫無破綻
@@ -1418,9 +1413,9 @@ DayaojingFriend:
   Description: '{FriendP}對隨機敵人造成 {Damage} 點攻擊傷害。'
   ExtraDescription1: '{FriendA}獲得 {Block} 點|格擋|。'
   UpgradedExtraDescription1: '{FriendA}獲得 {Block} 點|格擋|及 {Shield} 點|護盾|。'
-  UpgradedExtraDescription2: '{FriendU}將 {Value1} 張|盛夏之花+|加入手中。'
-
   FlavorText: 偵探需要助手是常識，就連琪露諾也知道。
+  ExtraDescription3: '{FriendU}將 {Value1} 張|盛夏之花|加入手中。'
+  UpgradedExtraDescription3: '{FriendU}將 {Value1} 張|盛夏之花+|加入手中。'
 IceLance:
   Name: 冰槍術
   Description: |-
@@ -1515,6 +1510,7 @@ MaidFriend:
   ExtraDescription1: '{FriendA}立刻造成傷害。將 {Value2} 張|飛刀|加入手中。'
   FlavorText: 小霞已經是紅魔館的女僕妖精裏，最認真幹活的了。
 
+  ExtraDescription3: '{FriendU}立刻造成傷害。所有的{SelfName}額外造成 {Value1} 點傷害。'
 CirnoFire:
   Name: 可燃冰
   Description: |-
@@ -1539,6 +1535,7 @@ LeidiFriend:
   Description: '{FriendP}對隨機一名敵人施加|寒冷|。'
   FlavorText: 冬日將至。冬日已來。再戰冬日。重返冬日。
 
+  ExtraDescription3: '{FriendU}對所有敵人造成 {Damage} 點傷害，施加|寒冷|。'
 IceBarrier:
   Name: 寒冰護體
   Description: 獲得 {Value1} 層|寒冰甲|。
@@ -1586,12 +1583,14 @@ LarvaFriend:
   Description: '{FriendP}對隨機敵人施加 {Value1} 層|中毒|。'
   ExtraDescription1: '{FriendA}|升級|所有的手牌。'
   FlavorText: 跟她握手後記得洗手。
+  ExtraDescription3: '{FriendU}對所有敵人施加 {Value2} 層|中毒|，觸發一次|中毒|傷害。'
 LilyFriend:
   Name: 春日降臨莉莉白
   Description: |-
     {FriendS}隨機對敵人造成 {Damage} 點攻擊傷害 {Value1} 次。
     {FriendP}獲得{TurnMana}。
   ExtraDescription1: '{FriendA}獲得{ActiveMana}。'
+  ExtraDescription3: '{FriendU}恢復 {Heal} 點生命。'
 CallFriends:
   Name: 呼朋喚友
   Description: 從 {Value1} 張隨機的|同伴|牌中選擇一張加入手中，它們處於已召喚的狀態。
@@ -1739,13 +1738,14 @@ LunaFriend:
   Description: '{FriendP}獲得 {Block} 點|格擋|。'
   ExtraDescription1: '{FriendA}隨機對敵人造成 {Damage} 點攻擊傷害 {Value1} 次。'
   FlavorText: 悄悄地調查，出聲的不要。
+  ExtraDescription3: '{FriendU}獲得 {Value2} 回合|天衣無縫|。'
 WhiteWorld:
   Name: 純白的世界
   Description: '{PlayerName}的回合開始時，對所有敵人施加|寒冷|。
 
     對所有敵人施加|寒冷|。'
 PlayWithWaste:
-  Name: 垃圾堆探險
+  Name: 整人專家
   Description: |-
     從 {Value1} 張隨機的非稀有|道具牌|中選擇一張加入手中。
     它被標記為|複製品|，使用次數為一。
@@ -1754,6 +1754,7 @@ StarFriend:
   Name: 傾瀉的星光斯塔
   Description: '{FriendP}對所有敵人造成 {Damage} 點攻擊傷害。'
   ExtraDescription1: '{FriendA}立刻造成 {Value1} 次傷害。'
+  ExtraDescription3: "{FriendU}所有的{SelfName}造成傷害時，施加 {Light} 層|鎖定|。\n立刻造成 {Value2} 次傷害。"
 FairyTrick:
   Name: 妖精惡作劇
   Description: |-
@@ -1775,6 +1776,7 @@ SunnyFriend:
   Name: 閃耀的日光桑尼
   Description: '{FriendP}隨機對敵人造成 {Damage} 點攻擊傷害 {Value1} 次。'
   ExtraDescription1: '{FriendA}獲得 {Light} 回合|光學迷彩|。'
+  ExtraDescription3: "{FriendU}立刻造成 {Value1} 次傷害。\n獲得 {Value2} 點|火力|。"
 Xiguadao:
   Name: 西瓜刀
   Description: |-
@@ -1789,7 +1791,7 @@ ClownpieceFriend:
     {FriendP}獲得 {Value2} 點|暫得火力|。
   ExtraDescription1: '{FriendA}抽 {Value1} 張牌，將一張|瘋狂|洗入棄牌堆。'
   UpgradedExtraDescription1: '{FriendA}抽 {Value1} 張牌。'
-  ExtraDescription2: '{FriendU}獲得{Mana}，將一張|瘋狂|洗入棄牌堆。'
+  ExtraDescription2: '{FriendA2}獲得{Mana}，將一張|瘋狂|洗入棄牌堆。'
 
 KoishiAttackG:
   Name: 雙生的螺旋
@@ -1811,42 +1813,35 @@ FlowerGone:
   Name: 舊夢凋零
   Description: |-
     獲得 {Block} 點|格擋|。
-    |平靜中|：獲得 {Value1} 點|靈力|，放逐{SelfName}。
-CloseMemory:
-  Name: 塵封的回憶
+    |平靜|：改為獲得 {Shield} 點|護盾|。
 QinchunPanni:
   Name: 青春期叛逆
-  ExtraDescription1: |-
-    |d:不在熱戀中：對生命值最低的敵人造成 {Damage} 點精準的傷害。|
-    |熱戀中|：獲得 {Block} 點|格擋|。
 Danxiangsi:
   Name: 單相思
 LoveFire:
   Name: 戀之埋火
   Description: |-
-    造成 {Damage} 點傷害。
-    |每支付|{Mana}：傷害提高 {Value1} 點。
-    記錄打出時支付的法力，下一次打出時返還記錄的法力。
+    進行一次|追加攻擊|。
+    {PlayerName}的回合結束時，如果本回合進行過|追加攻擊|，獲得 {Value1} 點|火力|。
 BabyDream:
   Name: 胎兒之夢
-  Description: "對所有敵人造成 {Damage} 點傷害。\n進入|平靜|。"
+  Description: "獲得 {Block} 點|格擋|。\n|入夢| {Value1} 。"
 
 PerfectCrime:
   Name: 完美作案
   Description: |-
-    竊取目標的|靈力|、|閃避|、|護身符|、|光學迷彩|、|天衣無縫|。
-    造成 {Damage} 點傷害。
+    竊取目標的|閃避|、|光學迷彩|、|天衣無縫|；竊取目標的|火力|、|靈力|，至多 {Value1} 點。
 
 AliceAttackW:
-  Name: 未來文樂
+  Name: 人形槍擊
   Description: 造成 {Damage} 點傷害。
 
 AliceAttackB:
-  Name: 回歸虛無
+  Name: 側翼閃光
   Description: 造成 {Damage} 點傷害。
 
 AliceBlockU:
-  Name: 彈幕結界
+  Name: 防禦魔法
   Description: 獲得 {Block} 點|格擋|。
 
 DeployShanghai:
@@ -2380,11 +2375,6 @@ HuiyeMana:
   Description: '{PlayerName}的回合開始時，獲得 {Value1} 點隨機的法力；每回合提高 {Value1} 點。'
   FlavorText: 孩童的歌謠傳唱著光輝的罪人的傳說。
 
-HuiyinAttack:
-  Description: |-
-    造成 {Damage} 點傷害。
-    選擇至多 {Value1} 張手牌丟棄，抽等量的牌。
-
 ReadBook:
   Name: 讀書看報
   Description: |-
@@ -2871,6 +2861,7 @@ YukariFriend:
   Description: '{FriendP}獲得等同於本回合打出過防禦牌數量的|火力|。 （{Fire}張）'
   ExtraDescription1: '{FriendA}從|放逐|區選擇一張牌移回手中。'
   DetailText: '|u:終結技|效果不能找到{SelfName}。'
+  ExtraDescription3: '{FriendU}{PlayerName}的回合開始時，將一張隨機的中立三色牌加入手中，|暫塑|為{Mana}，具有|虛無|。'
 BailianFire:
   Name: 法界之火
   Description: '{PlayerName}的回合開始時，將一張隨機的技能牌加入手中，它|暫塑|為{Mana}，具有|放逐|、|虛無|。'
@@ -3066,7 +3057,7 @@ WanderingSoul:
     請期待遊戲更新。
 
 RabbitFoot:
-  Name: 幸運兔腿
+  Name: 幸運兔腳
   Description: 戰鬥結束時，如果{SelfName}沒有被|放逐|，獲得 {Value1} 點<sprite="Point" name="Gold">。
   FlavorText: 拿到兔腳會變得幸運，其實是幸運的人才能獲得兔腳。
 
@@ -3366,10 +3357,9 @@ FanzhuanChongdong:
   FlavorText: 成為吸血鬼眷屬的代價。
 
 FakeCard:
-  Name: 祖先托夢（僞）
+  Name: 竹取物語（偽）
   Description: |-
-    |古明地戀|還在家裏睡覺。
-    敬請期待遊戲更新。
+    這張卡牌是在EA版本中，代表將來會完成的卡牌。
 
 HistoryCard:
   Name: 曆史卡牌
@@ -3385,46 +3375,30 @@ FlanBlack:
   FlavorText: 背負U·N·歐文之名，捨棄所有人去戰鬥的少女~
 
 
-WuyishiDNA:
-  Description: "進入|神遊|，結束{PlayerName}的回合，進行額外的回合。\n{PlayerName}的回合結束時，如果不處於|神遊|則死亡。"
 AyaNewsAliceSp:
   Name: 《文文新聞》愛麗絲特刊
   Description: '|回合結束時|：失去 {Value1} 點|靈力|。'
   FlavorText: 月都萬象展特集！ 詳細刊載了有關{PlayerName}的流言蜚語。
-YaoguaiNaodianbo:
-  Description: "造成 {Damage} 點傷害，進入|熱情|。"
 YoubiKongjuzheng:
   Description: "獲得 {Block} 點|格擋|。\n|直覺|：獲得 {Shield} 點|護盾|。"
-DNARain:
-  Description: "對所有敵人造成 {Damage} 點傷害。\n|進入心境時|：傷害提高 {Value1} 點。"
 ZhuozhuangChengzhang:
   Description: '{PlayerName}的回合結束時，將 {Value1} 張|生機|加入手牌。'
 LianaiChongdong:
-  Name: 戀愛衝動
   Description: "|不在平靜中|：下一張|基本|牌的數值提高 {Value1}。\n|平靜中|：所有|基本|牌的數值提高 {Value2}。"
-TaoqiQiangwei:
-  Name: 淘氣薔薇
 LoveSeed:
   Name: 戀愛的種子
-  FlavorText: 我再食一口就能見到種子了。
 BenwoTouying:
   Description: "每次進入|熱情|時，將一張|p:完全隨機|的|攻擊|牌加入手中，暫塑為{Mana}且附帶|放逐|。\n進入|熱情|。"
-JiyiShitihua:
-  Name: 記憶實體化
 Kongxiangshang:
   Name: 空想上的人格保持者
-ZuxianTuomeng:
-  Name: 祖先托夢
 ChaoyueZiwo:
   Name: 超越自我
-Beiyanwu:
-  Name: 被厭惡者的哲學
 PatchouliFriend:
   Description: '{FriendP}將 {PassiveColor} 點隨機的法力轉化為|彩色|。'
   Name: 鍊金術士帕秋莉
   ExtraDescription1: '{FriendA}獲得 {Value1} 點|火力|和|靈力|，獲得 {Power} 點<sprite="Point"
     name="Power">。'
-  ExtraDescription2: '{FriendU}將 {Value2} 張|不穩定魔藥|加入手中。'
+  ExtraDescription2: '{FriendA2}將 {Value2} 張|不穩定魔藥|加入手中。'
   FlavorText: 「搖，搖，晃，搖。」
 MeilingFriend:
   Description: '{FriendS}獲得 {Graze} 層|閃避|。
@@ -3433,8 +3407,7 @@ MeilingFriend:
 
     當{PlayerName}受到一整輪攻擊時額外觸發一次。'
   Name: 玩忽職守紅美鈴
-QiangweiDiyu:
-  Name: 薔薇地獄
+  ExtraDescription3: '{FriendU}恢復 {Value1} 點生命，獲得 {Value2} 點|火力|。'
 MoonSea:
   Name: 靜寂之海
   Description: "獲得 {Block} 點|格擋|。\n將一張|純粹|加入手中。"
@@ -3491,8 +3464,6 @@ AyaWindGirl:
   Name: 風神少女
   Description: 獲得 {Value1} 層|風神少女|。
   DetailText: 擁有|風神少女|的角色，不會在回合開始時失去|閃避|到|風神少女|層數以下。
-JinziSuperExtraTurn:
-  DetailText: "{SelfName}所帶來的額外回合，總是先於其它額外回合發生。\n打出{SelfName}後，可以懸停{PlayerName}身上的狀態來查看當前回合的詳細信息。"
 DebugAddRandomCards:
   Description: 測試卡牌：添加隨機卡牌到抽牌棄牌堆，各 {Value1} 張。
   Name: 添加隨機卡牌
@@ -3542,12 +3513,8 @@ Frog:
   Name: 青蛙
   Description: "這張牌被詛咒了。\n它曾經是：{CardName}"
   NonbattleDescription: 這張牌被詛咒了。
-BeihaiWangxiang:
-  Name: 被害妄想症
 SiwangLaiDian:
   Name: 恐怖的可愛來電
-MirrorTest:
-  Description: "獲得 {Shield} 點|護盾|。\n|在手中|：打出相鄰的手牌後，如果打出的是一張|攻擊牌|，將{SelfName}轉變為打出牌的複製，並獲得 {Shield} 點|護盾|。"
 YoumuHybrid:
   Name: 半人半靈
   Description: "|每支付|<sprite=\"ManaSprite\" name=\"W\">：選擇至多 {Value1} 張手牌|放逐|。\n|每支付|<sprite=\"\
@@ -3571,8 +3538,6 @@ FrozenOrb:
 ColdHearted:
   Name: 冰冷血脈
   Description: "本回合內|冰槍術|對|寒冷|的目標造成三倍傷害。\n將 {Value1} 張|冰槍術|加入手中，它們|暫塑|為{Mana}，具有|放逐|、|虛無|。"
-WuyunJiekong:
-  Description: "放逐抽牌堆，手牌，棄牌堆內的所有|狀態|或|詛咒|牌。\n移除所有負面效果。"
 QingxingMeng:
   Description: "{PlayerName}的回合開始時，將 {Value1} 張|完全隨機|的|稀有|牌加入手中，它暫塑為{Mana}，具有|放逐|、|虛無|。\n\
     {PlayerName}的每個回合只能打出 {Limit} 張|稀有|牌。"
@@ -3621,14 +3586,10 @@ SanaeSummonGod:
   FlavorText: 召請負責白吃白喝的神靈。
 DefaultPassion:
   Description: "造成 {Damage} 點傷害。\n進入|熱情|。"
-  Name: 孤獨之心
+  Name: 浪漫薔薇
 InspirationCard:
-  Description: '|進入手中時|：轉變為一張隨機顏色的|e:靈感牌|，生效然後|放逐|自身。
-
-    在抽牌階段具有|填充|。'
-  Name: 靈感
-InspirationWhite:
-  Name: 白色靈感
+  Description: '|進入手中時|：獲得{Mana}，獲得 {Value1} 層|靈感|，|放逐|{SelfName}。'
+  Name: 找到靈感了！
 BlueZeroAttack:
   Name: 激流
   Description: 造成 {Damage} 點傷害。
@@ -3642,17 +3603,13 @@ PatchouliGreenAttack:
   Description: "造成 {Damage} 點傷害。\n當前法力總點數（{BattleAmount}）高於基礎法力總點數（{BaseAmount}）時才能打出。"
   NonbattleDescription: "造成 {Damage} 點傷害。\n當前法力總點數高於基礎法力總點數時才能打出。"
 DefaultPeace:
-  Name: 熱戀荊棘
+  Name: 無我
   Description: "獲得 {Block} 點|格擋|。\n進入|平靜|。"
 FindInspiration:
-  Name: 尋找靈感
-  Description: "造成 {Damage} 點傷害。\n獲得 {Value1} 層|靈感迸發|。"
-InspirationBlack:
-  Description: "獲得 {Block} 點|格擋|。\n對一個隨機敵人造成 {Damage} 點傷害。"
+  Name: 靈光一閃
+  Description: "將 {Value1} 張|找到靈感了！|洗入抽牌堆。"
 InspirationGreen:
   Description: 獲得{Mana}。
-InspirationRed:
-  Description: 對所有敵人造成 {Damage} 點傷害 {Value1} 次。
 SunflowerDefense:
   Name: 太陽花田
   Description: "獲得 {Block} 點|格擋|。\n將 {Value1} 張|盛夏之花|加入手中。"
@@ -3666,18 +3623,14 @@ ModuoluoSeasons:
   Name: 暴走的季節
   Description: 將隨機的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。
   UpgradedDescription: "獲得 {Value1} 點|火力|。\n將隨機的|水花|、|火焰|和|盛夏之花|加入手中，直到手牌上限。"
-EnterPassion:
-  Description: 進入|熱情|。
 LeaveMoodAttack:
-  Name: 無意識的行動
+  Name: 意識漩渦
   Description: "造成 {Damage} 點傷害。\n離開當前的|心境|。"
-EnterPeace:
-  Description: 進入|平靜|。
 LeaveMoodGraze:
-  Name: 無意識的迴避
+  Name: 氣息遮蔽
   Description: "獲得 {Value1} 層|閃避|。\n離開當前的|心境|。"
 LeaveMoodDraw:
-  Name: 無意識的雲遊
+  Name: 好奇心
   Description: "抽 {Value1} 張牌。\n離開當前的|心境|。"
 QiannianShenqiCard:
   Name: 我的回合
@@ -3694,47 +3647,41 @@ IceWing:
   Description: "獲得{Mana}。\n展示抽牌堆中的隨機兩張藍色牌，選擇一張移入手中，將另一張置於牌堆底。"
   ExtraDescription1: "獲得{Mana}。\n展示抽牌堆中的隨機兩張藍色牌，選擇一張移入手中，將另一張置於牌堆底。\n（當前抽牌堆內只有 {BlueCount} 張藍色牌）"
 KoishiZeroAttack:
-  Name: 盲目之愛
-  Description: "對所有敵人造成 {Damage} 點傷害。\n|神遊|：造成兩次傷害。"
+  Name: DNA 轉錄
+  Description: "造成 {Damage} 點傷害。"
 PassionAttackToDraw:
-  Name: 忘我之愛
+  Name: 彈幕偏執症
   Description: "造成 {Damage} 點傷害 {Value1} 次。\n進入|熱情|。\n將這張牌洗入抽牌堆。"
 FriendDraw:
   Name: 花園集會
   Description: "使用|同伴|的|a:主動技能|或|u:終結技|時，抽 {Value1} 張牌。\n使用|u:終結技|時額外獲得 {Value1} 點隨機的法力。"
 MoodAttack:
-  Name: 心境連擊
+  Name: 移情斬
   Description: "造成 {Damage} 點傷害。\n當{PlayerName}轉化|心境|時，從棄牌堆回到手中。"
 PassionDefense:
-  Name: 本能之愛
+  Name: <熱情防禦>
   Description: "獲得 {Block} 點|格擋|。\n|熱情|：額外獲得 {Value1} 點|格擋|。"
 PassionVulnerable:
-  Name: 本我的解放
+  Name: 無眠之夜
   Description: "|熱情|：對所有敵人施加 {Value1} 回合|易傷|。\n否則，進入|熱情|。"
-NextTurnPassion:
-  Description: '{PlayerName}的下回合開始時，進入|熱情|，抽 {Value1} 張牌。'
 PassionDraw:
-  Name: 熱情抽牌
+  Name: 相思之情
   Description: 每當{PlayerName}進入|熱情|時，抽 {Value1} 張牌。
 PeaceEndTurn:
-  Name: 回神
+  Name: 片刻安寧
   Description: "進入|平靜|。\n結束{PlayerName}的回合。"
   UpgradedDescription: "從棄牌堆中選擇至多 {Value1} 張牌移回手中，|保留|它一回合。\n進入|平靜|。\n結束{PlayerName}的回合。"
-PeaceDraw:
-  Name: 掌控自我
 PeaceBlock:
-  Name: 平靜格擋
+  Name: 掌控自我
   Description: '{PlayerName}的回合結束時如果處於|平靜|，獲得 {Value1} 點|格擋|。'
 MoodChangeBlock:
-  Name: 心靈壁壘
+  Name: A.T. 力場
   Description: 每當{PlayerName}轉化|心境|時，獲得 {Value1} 點|格擋|。
 PsycheLock:
   Name: 心靈枷鎖
   Description: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。\
     \ （剩餘 {Count} 種未進入）"
   NonbattleDescription: "對所有敵人造成 {Damage} 點傷害 {Value1} 次。\n獲得{Mana}。\n{SelfName}在手中時，{PlayerName}進入過三種不同的|心境|後才可以打出。"
-EnterEnlight:
-  Description: 進入|神遊|。
 LunaticPassion:
   Name: 瘋狂之愛
   Description: "|熱情|狀態下的額外傷害比例改為 {Percentage}%。\n進入|熱情|。"
@@ -3748,3 +3695,168 @@ MeilingLianhua:
 ReimuSilence:
   Name: 「夢想封印 寂」
   Description: "抽牌階段外每抽 {Value1} 張牌，對所有敵人造成 {Damage} 點攻擊傷害。\n抽 {Value1} 張牌。"
+KnifeDamageUp:
+  Name: 推進之銀
+  Description: "|飛刀|造成的傷害提高 {Value1} 點。\n將 {Value2} 張|飛刀|加入手中。"
+KoishiKiss:
+  Name: 飛吻
+  Description: "造成 {Damage} 點傷害。\n進行一次|追加攻擊|。"
+  UpgradedDescription: "造成 {Damage} 點傷害。\n施加 {Value1} 回合|虛弱|。\n進行一次|追加攻擊|。"
+BaseFollower:
+  Name: 本能之愛
+  Description: 造成 {Damage} 點傷害。
+PassionMemory:
+  Name: 熱情的回憶
+  Description: 進入|熱情|。
+Claustrophobia:
+  Name: 幽閉恐懼症
+  Description: "獲得 {Block} 點|格擋|。\n|直覺|：額外獲得 {Shield} 點|護盾|。"
+MultiFollower:
+  Name: 心的舞步
+  Description: 造成 {Damage} 點傷害 {Value1} 次。
+ToAllFollower:
+  Name: 心潮澎湃
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|神遊|：造成兩次傷害。"
+DefenseFollowAttack:
+  Name: 被害妄想症
+  Description: "獲得 {Block} 點|格擋|。\n進行一次|追加攻擊|。"
+KoishiDrawTop:
+  Name: 順口開河
+  Description: "抽 {Value1} 張牌。\n將 {Value2} 張手牌置於抽牌堆頂。"
+GrazeFollowAttack:
+  Name: 本能行動
+  Description: "獲得 {Value1} 層|閃避|。\n進行一次|追加攻擊|。"
+PlayDrawTop:
+  Name: 無意識的行動
+  Description: 打出抽牌堆顶的牌。
+TheChariot:
+  Name: 塔羅牌：戰車
+  Description: "|占卜| {Scry} 。\n{PlayerName}的下回合開始時，進入|熱情|，抽 {Value1} 張牌。"
+CloseEye:
+  Name: 封閉心靈
+  Description: "獲得 {Shield} 點|護盾|。\n下一回合內無法看到敵人的意圖。"
+  FlavorText: 戀閉上了能夠讀心的第三隻眼。
+DuplicateFollower:
+  Name: 孤獨的心
+  Description: "造成 {Damage} 點傷害，獲得{Mana}。\n|戰鬥開始時|：將 {Value1} 張複製洗入抽牌堆中。"
+  ExtraDescription1: 造成 {Damage} 點傷害，獲得{Mana}。
+AncestorDream:
+  Name: 祖先託夢
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|入夢| {Value1} 。"
+YaoguaiLaser:
+  Name: 妖怪腦電波
+  Description: "造成 {Damage} 點傷害。\n進行一次|追加攻擊|。\n|直覺|：額外進行一次|追加攻擊|。"
+KoishiWake:
+  Name: 回神
+  Description: "離開當前的|心境|，恢復 {Value1} 點生命。\n|神遊|：額外獲得 {Shield} 點|護盾|。"
+  FlavorText: 「我這是在哪裏？」
+KoishiGainColorless:
+  Name: 放空思緒
+  Description: 獲得{Mana}。
+  UpgradedDescription: 獲得{Mana}。
+PeaceMemory:
+  Name: 平靜的回憶
+  Description: 進入|平靜|。
+KoishiSpringOut:
+  Name: 踏春
+  Description: "|平靜|：抽 {Value1} 張牌。\n否則，進入|平靜|。"
+InspirationDefense:
+  Name: 靈感時刻
+  Description: "獲得 {Block} 點|格擋|。\n獲得 {Value1} 層|靈感|。"
+KoishiFire:
+  Name: 善變
+  Description: "獲得 {Value1} 點|火力|。\n|熱情|：額外獲得 {Value2} 點|火力|。\n|平靜|：改為獲得 {Value1} 點|靈力|。"
+KoishiFlower:
+  Name: 淘氣薔薇
+  Description: "獲得 {Block} 點|格擋|。\n造成 {Damage} 點傷害。\n將 {Value1} 張|盛夏之花|加入手中。\n|神遊|：改為 {Value2} 張。"
+TheHermit:
+  Name: 塔羅牌：隱士
+  Description: "|占卜| {Scry} 。\n獲得{Mana}。\n|神遊|：{SelfName}費用為<sprite=\"ManaSprite\"\
+    \ name=\"0\">。"
+KoishiGrowAttack:
+  Name: 熱舞荊棘
+  Description: "造成 {Damage} 點傷害。\n|成長|：傷害提高 {Value1} 點。\n|平靜|：{SelfName}費用為{Mana}。"
+GainZeroAttack:
+  Name: DNA 的瑕疵
+  Description: '{PlayerName}的回合開始時，將 {Value1} 張| DNA 轉錄|加入手中，它具有|放逐|、|虛無|。'
+  UpgradedDescription: "{PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|\n\
+    立刻生效一次。"
+BlackEpiphany:
+  Description: "進入|神遊|。\n下回合只能打出 {Value1} 張牌。"
+  Name: 意識剝離
+FakeBullet:
+  Name: 假想的彈幕
+  Description: "進行 {Value1} 次|追加攻擊|。\n當抽牌堆沒有|追擊|牌時，將以隨機產生的|追擊|牌進行追擊。"
+KoishiMana:
+  Name: 潛能釋放
+  Description: "對所有敵人造成 {Damage} 點傷害。\n獲得{Mana}。"
+KoishiSpark:
+  Name: 妖怪測謊儀
+  Description: 對所有敵人造成 {Damage} 點傷害。
+GainInspiration:
+  Name: 讓我好好想想
+  Description: "{PlayerName}的回合結束時，將一張|找到靈感了！|洗入抽牌堆。\n"
+TheFool:
+  Name: 塔羅牌：愚者
+  Description: "|占卜| {Scry} 。\n打出抽牌堆頂的牌。"
+KoishiDna:
+  Name: 哈德曼的妖怪少女
+  Description: '{PlayerName}的回合開始時，打出抽牌堆頂的牌。'
+KoishiAttackX:
+  Name: 薔薇地獄
+  Description: '|每支付|<sprite="ManaSprite" name="2">：對所有敵人造成 {Damage} 點傷害，獲得{Mana}。'
+Anatta:
+  Name: 無我之境
+  Description: "離開|平靜|的法力獲取提高至{Mana}。\n進入|平靜|。"
+ButterflyDream:
+  Name: 莊周夢蝶
+  Description: '{PlayerName}的回合開始時，將 {Value1} 張|p:完全隨機|的稀有牌加入手中，它具有|放逐|、|虛無|，費用可以用任意顏色支付。'
+  DetailText: "|e:備選牌|無視法力、顏色和所有者限制。\n不能找到{SelfName}。\n不會找到|費用 X |卡牌。"
+KokoroFriend:
+  Name: 人格面具覺醒秦心
+  Description: '{FriendP}|入夢| {Value1} 。'
+  ExtraDescription1: '{FriendA}進入|熱情|。'
+  ExtraDescription2: '{FriendA2}進入|平靜|。'
+  ExtraDescription3: '{FriendU}進入|神遊|。'
+EnterEpiphany:
+  Name: 頓悟
+  Description: 進入|神遊|。
+KoishiDive:
+  Name: 意識下潛
+  Description: "進入|平靜|。\n|入夢| {Value1}。\n從棄牌堆的|夢境牌|中選擇至多 {Value2} 張移回手中。"
+KoishiPhone:
+  Name: 恐怖的可愛來電
+  Description: "每打出一張攻擊牌，進行一次|追加攻擊|。\n當抽牌堆沒有|追擊|牌時，將以|電話響了|進行追擊。"
+FollowAttackFiller:
+  Name: 電話響了
+  Description: 造成 {Damage} 點傷害。
+DollBlock:
+  Name: 人形當身
+Zhendijianzao:
+  Name: 陣地建造
+DreamExpress:
+  Name: 夢幻快車
+  Description: '{PlayerName}的回合結束時，|入夢| {Value1} ，對所有敵人造成兩倍於它們基礎費用之和的傷害。'
+BailianMagic:
+  Name: 魔神復誦
+  Description: 本回合內，下 {Value1} 張|能力|牌會打出兩次。
+JinziDoppelganger:
+  Name: 世紀的二重身超人
+  Description: '{PlayerName}每回合打出的第一張牌會打出兩次。'
+HuiyeSuperExtraTurn:
+  Name: 「永夜返」
+  Description: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Value1} 張牌。"
+  DetailText: "{SelfName}所帶來的額外回合，總是先於其它額外回合發生。\n打出{SelfName}後，可以懸停{PlayerName}身上的狀態來查看當前回合的詳細信息。"
+KoishiDiscard:
+  Name: 無意識的遺忘
+  Description: '|抽取時|：棄掉一張隨機手牌。'
+  ExtraDescription1: "|抽取時|：棄掉一張隨機手牌。\n棄掉的牌是：{CardName}"
+AttackX:
+  Name: 目標死亡後繼續攻擊
+  Description: "|每支付|{Mana}：造成 {Damage} 點傷害。\n目標被擊敗而攻擊次數仍有剩餘時，以另一個隨機敵人為目標繼續攻擊。"
+DebugRemoveHand:
+  Name: 移除手牌
+  Description: 測試卡牌：選擇任意張手牌，將它們移出戰鬥。
+DebugRemoveAllHandWhenDraw:
+  Name: 抽取時移除所有手牌
+  Description: 測試卡牌：抽取時，將所有手牌移出戰鬥（包括自身）。
