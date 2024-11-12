@@ -124,3 +124,49 @@ BattleFlow:
     \ turn starts. (It is only with such complex presentations that the player experience\
     \ can be exactly how it should be)\n"
   Name: Combat Sequence & Turns
+PlayCard:
+  Name: Follow-Up Card Usage
+  Description: "The Koishi character update introduced Follow-Up card playing. It\
+    \ works as described below, though the specifics are subject to change as Koishi\
+    \ gets updated.\n\n1. Playing a card normally and playing a Follow-Up card are\
+    \ two different actions, similar to natural turns and extra turns, typically,\
+    \ a Follow-Up card play will follow a normal card play.\n2. A Follow-Up card play\
+    \ does not trigger effects that react to a normal card play, like enemy Remilia's\
+    \ card count, counts of cards like \"End of Imperishable Night\", \"Drunk\", \"\
+    Stunning Summer Ice\" and counts of exhibits like \"Silver Pocket Watch\".\n3.\
+    \ Follow-Up cards played will priorities in following the targets of the normal\
+    \ card play it follows, if the target is invalid, then a random target will be\
+    \ selected. This mainly affects attack cards.\n4. Follow-Up cards do not consume\
+    \ mana, but there are other effects that prevents the card from being played normally,\
+    \ it will not activate, and will instead enter the discard pile. (Effects like\
+    \ Unplayable, insufficient gold while the card has a gold cost, etc.)\n5. If the\
+    \ Follow-Up card played has an effect cost, like \"News Fabrication\", these effect\
+    \ costs would have been cancellable when the card is played normally, but if the\
+    \ card is played as a Follow-Up card, it cannot be cancelled.\n6. Follow-Up card\
+    \ playing will be cut off by the end of the battle, even if the card that would\
+    \ be played has effects that would gain life or other similar effects.\n7. Interaction\
+    \ with X cost cards: The Follow-Up card played will be treated as being played\
+    \ with 0 cost."
+PlayTwice:
+  Name: Playing Cards Twice
+  Description: "A special example of Follow-Up card playing is \"play twice\" from\
+    \ card effects. It goes by the following rules.\n\n1.This is an effect that applies\
+    \ to a normal card play, meaning if the card is played as a Follow-Up, it will\
+    \ not be played twice.\n2.How it works in details: If a normal card play occurs,\
+    \ if it would be played twice, a snapshot of the card will be created before the\
+    \ card is played, after the card has resolved, the snapshot will be played, and\
+    \ the snapshot will be removed from combat after use.\n3.The snapshot is different\
+    \ from normal Copy cards, Copy rulings do not apply to the snapshot.\nPros for\
+    \ the player: The player can use the Ultimate Skill of a teammate twice, use a\
+    \ tool twice by just using one one Limited count, and can use \"Devour History\"\
+    \ twice.\nCons for the player: A copy of the teammate cannot be obtained when\
+    \ summoning a teammate, Growth on cards cannot be triggered twice.\nThe reason\
+    \ why the handling here is different from Slay the Spire is because of the teammates'\
+    \ presence, you for sure don't want to summon \"Daiyousei, Lively Assistant\"\
+    \ only to immediately use her Active Skill.\n4.The player cannot obtain the snapshot,\
+    \ or a copy of the snapshot.For example. when an Echo card is played twice, the\
+    \ snapshot will not produce a copy.\n5.Interactions with Extra Turns: Snapshots\
+    \ of \"Time Walk\" will not take effect, most other Extra Turn cards will gain\
+    \ two extra turns, and only end the current turn. (Yet to determine if this is\
+    \ too powerful)\n6.Interactions with X cost cards: Snapshots inherit the mana\
+    \ paid to play for the original card, and there will be two full triggers."
