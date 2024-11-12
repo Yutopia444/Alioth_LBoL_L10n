@@ -741,7 +741,8 @@ Cold:
 MoonWorldSe:
   Name: Mundo Impuro
   Description: Al comienzo del turno de {PlayerName}, {Level} {Level:plural one='carta
-    aleatoria' other='cartas aleatorias'} en la mano gana |Puro|.
+    aleatoria' other='cartas aleatorias'} en la mano gana{Level:plural one='n' other=''}
+    |Puro|.
   Brief: Al comienzo del turno de {PlayerName}, las cartas aleatorias en la mano ganan
     |Puro| en este combate, eliminando su coste que tiene color.
 LoseSpiritSe:
@@ -972,12 +973,11 @@ YinyangQueenSe:
   Name: Misumaru, Artesana Habilidosa
 HuiyeTimeSe:
   Description: Solo {Limit} carta{Limit:plural one='' other='s'} se pueden jugar en
-    cada turno. ( {Count} Carta{Count:plural one=' restante' other='s restantes'}.
-    )
+    cada turno. (Queda{Count:plural one='' other='n'} {Count}.)
   Name: Momento Fugaz
   ExtraDescription: "Solo {Limit} carta{Limit:plural one='' other='s'} se pueden jugar\
-    \ en este turno. (Quedan {Count}.)\n{SelfName} está inactivo y solo se removerá\
-    \ después del turno en que se resuelva."
+    \ en este turno. (Queda{Count:plural one='' other='n'}. {Count}.)\n{SelfName}\
+    \ está inactivo y solo se removerá después del turno en que se resuelva."
 ShirenKunchongSe:
   Name: Insecto Caníbal
   Brief: Cada vez que {OwnerName} gana una |Efecto Negativo|, {PlayerName} gana |Bloqueo|.
@@ -1254,9 +1254,9 @@ Tired:
   Name: Fatiga
   Description: "Solo se pueden jugar {Limit} cartas en este turno.\n{Count:plural\
     \ one='% carta jugada' other='% cartas jugadas'}."
-  ExtraDescription: "Solo se pueden jugar {Limit} cartas en este turno.(Quedan {Count})\n\
-    {SelfName} está inactivo y solo se puede eliminar después del turno en que se\
-    \ ha activado."
+  ExtraDescription: "Solo se pueden jugar {Limit} cartas en este turno.(Queda{Count:plural\
+    \ one='' other='n'}. {Count})\n{SelfName} está inactivo y solo se puede eliminar\
+    \ después del turno en que se ha activado."
 CloseEyeSe:
   Description: "Se desconocen las intenciones de los enemigos.\nTurnos restantes:\
     \ {Level}"
@@ -1294,8 +1294,8 @@ DreamExpressSe:
 JinziDoppelgangerSe:
   Name: Doppelgangers del Siglo
   Description: "Las primera{Level:plural one='carta jugada' other='s % cartas jugadas'}\
-    \ durante el turno de {PlayerName} se juegan dos veces.\n{Count:plural one='Queda\
-    \ % carta' other='Quedan % cartas'}."
+    \ durante el turno de {PlayerName} se juegan dos veces. (Queda{Count:plural one=''\
+    \ other='n'} {Count})."
   Brief: Las primeras cartas jugadas durante el turno de {PlayerName} se juegan dos
     veces.
 BailianMagicSe:
