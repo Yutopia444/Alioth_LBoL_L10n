@@ -2948,7 +2948,7 @@ FlanFirepower:
     \ currently {Count} other card{Count:plural one='' other='s'} in the hand."
   NonbattleDescription: Each card in the hand gains |Ethereal|. Gain |Firepower| equal
     to the number of cards in hand.
-  Name: And Then Will There Be None?
+  Name: None Were Left?
 HuiyeMarblePhantasm:
   Name: Marble Phantasm
   Description: Choose 1 of {Value1} random cards with a total cost of X+1 to add into
@@ -3174,12 +3174,12 @@ MoodChangeBlock:
   Name: A.T. Field
 PsycheLock:
   Name: Psyche-Lock
-  NonbattleDescription: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nCan only\
-    \ be played if {PlayerName} has entered 3 different |Mental States| while {SelfName}\
-    \ is in the hand."
-  Description: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nCan only be played\
-    \ if {PlayerName} has entered 3 different |Mental States| while {SelfName} is\
-    \ in the hand. ({Count} left)"
+  NonbattleDescription: "Deal {Damage} damage to each enemy{Value1:plural one='' other='\
+    \ % times'}.\nGain {Mana}.\nCan only be played if {PlayerName} has entered 3 different\
+    \ |Mental States| while {SelfName} is in the hand."
+  Description: "Deal {Damage} damage to each enemy{Value1:plural one='' other=' %\
+    \ times'}.\nGain {Mana}.\nCan only be played if {PlayerName} has entered 3 different\
+    \ |Mental States| while {SelfName} is in the hand. ({Count} left)"
 LunaticPassion:
   Name: Lunatic Love
   Description: "|Passion|'s damage modifier becomes {Percentage}%.\nEnter |Passion|."
@@ -3313,7 +3313,8 @@ BlackEpiphany:
 FakeBullet:
   Description: "Perform {Value1} |Follow-Up Attack{Value1:plural one='' other='s'}|.\n\
     If there are not enough |Follow-Up| cards in the draw pile, random |Follow-Up|\
-    \ cards will be generated for that purpose."
+    \ cards will be generated to perform the |Follow-Up Attack{Value1:plural one=''\
+    \ other='s'}|."
   Name: Imaginary Danmaku
 KoishiMana:
   Description: "Deal {Damage} damage to each enemy.\nGain {Mana}."
