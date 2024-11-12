@@ -1418,8 +1418,8 @@ SakuyaInvestigate:
   Description: "Aplica {Value1} de |Marcado|.\nSe repite este efecto al entrar en\
     \ un turno extra."
 SakuyaGraze:
-  Description: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Evasión|.\nCuando se\
-    \ baraja la pila de robo, se devuelve {SelfName} de la pila de descarte a la mano."
+  Description: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Evasión|.\nAl barajar,\
+    \ se devuelve {SelfName} de la pila de descarte a la mano."
   Name: Evasión Accidental
 SakuyaFuneral:
   Name: Entierro Prematuro
@@ -1449,8 +1449,8 @@ SakuyaDio:
   FlavorText: ¡Tsugi wa kisamada!
 TunnelEffect:
   Name: Túnel Cuántico
-  Description: "Inflige {Damage} de daño a un enemigo aleatorio.\nGana {Mana}.\nCuando\
-    \ se baraja la pila de robo, devuelve {SelfName} de la pila de descarte a la mano."
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio.\nGana {Mana}.\nAl\
+    \ barajar, se devuelve {SelfName} de la pila de descarte a la mano."
 SakuyaWeak:
   Name: Supresión del Tiempo
   Description: "Aplica {Value1} |Débil|.\nGana {Mana}."
@@ -3176,9 +3176,10 @@ PsycheLock:
   NonbattleDescription: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\n\
     Solo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
     \ mientras que {SelfName} está en la mano."
-  Description: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\nSolo\
+  Description: "Termina el turno de {PlayerName}. Luego, toma un turno extra.\nSolo\
     \ se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
-    \ mientras que {SelfName} está en la mano. (Queda {Count})"
+    \ mientras que {SelfName} está en la mano. (Queda{Count:plural one='' other='n'}\
+    \ {Count})"
   UpgradedDescription: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\n\
     Al comienzo del próximo turno de {PlayerName}, |Mejora| cada carta en la mano.\n\
     Solo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales| diferentes\
@@ -3244,6 +3245,9 @@ KoishiDrawTop:
     \ carta{Value2:plural one='' other='s'} de la mano en la parte superior de la\
     \ pila de robo."
   Name: Hablar con el Sombrero
+  UpgradedDescription: "Roba {Value1} carta{Value1:plural one='' other='s'}.\n|Mejora|\
+    \ {Value2} carta{Value2:plural one='' other='s'} de la mano y coloca{Value2:plural\
+    \ one='' other='s'} en la parte superior de la pila de robo."
 GrazeFollowAttack:
   Description: "Gana {Value1} |Evasión|.\nRealiza un |Ataque Continuo|."
   Name: Acción Instintiva
@@ -3297,6 +3301,9 @@ TheHermit:
   Description: "|Explora| {Scry}.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"\
     ManaSprite\" name=\"0\"> para jugar."
   Name: 'Tarot: El Ermitaño'
+  UpgradedDescription: "|Explora| {Scry}.\n|Mejora| la carta superior de la pila de\
+    \ robo.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"ManaSprite\" name=\"\
+    0\"> para jugarlo."
 KoishiGrowAttack:
   Description: "Inflige {Damage} de daño.\n|Crecimiento|: Aumenta el daño en {Value1}.\n\
     |En Serenidad|: {SelfName} cuesta {Mana} para jugar."
@@ -3325,7 +3332,7 @@ Anatta:
     \ |Serenidad|."
   Name: Anatta
 ButterflyDream:
-  Description: Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Level:plural
+  Description: Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Value1:plural
     one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
     a la mano. {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|, y se
     puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'
@@ -3338,7 +3345,7 @@ KokoroFriend:
   ExtraDescription1: '{FriendA}Entra en el estado |Pasión|.'
   ExtraDescription2: '{FriendA2}Entra en el estado |Serenidad|.'
   ExtraDescription3: '{FriendU}Entra en el estado |Fuga|.'
-  Name: Kokoro, Mascara de la Emoción
+  Name: Kokoro, Persona Despertada
   Description: '{FriendP}Gana {Value1} |Sueño| .'
 EnterEpiphany:
   Description: Entra en el estado |Fuga|.
@@ -3370,7 +3377,7 @@ AttackX:
   Description: "|Por cada {Mana} gastado|: inflige {Damage} de daño.\nCuando el objetivo\
     \ de {SelfName} es derrotado, si aún le sobran ataques, continúa atacando utilizando\
     \ un enemigo aleatorio como nuevo objetivo."
-  Name: Trastorno de pánico
+  Name: Continuar atacando después de derrotar al objetivo.
 DebugRemoveHand:
   Description: 'Carta de prueba: elige cualquier cantidad de cartas en tu mano para
     retirarlas del combate.'
@@ -3427,3 +3434,13 @@ DollBlock:
   Name: Escudo de Muñeca
 Zhendijianzao:
   Name: Territorio de Creación
+DebugAddRandomCardsToExile:
+  Name: Agrega Cartas Aleatorias al Exilio
+  Description: 'Carta de Prueba: Agrega {Value1} cartas al Exilio.'
+DebugAddRandomCardsToExileSlow:
+  Name: 'Carta de Prueba: Agrega {Value1} cartas al Exilio. (Lentamente)'
+  Description: 'Carta de Prueba: Agrega Lentamente {Value1} cartas al Exilio.'
+DebugUpgradeAllZone:
+  Description: 'Carta de prueba: Mejora las primeras cartas {Value1} en la pila de
+    robo y descarte.'
+  Name: Mejora Cartas en Cada Pila
