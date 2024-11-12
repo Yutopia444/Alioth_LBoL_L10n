@@ -397,17 +397,18 @@ DanceAroundLakeSe:
     other='% cartas.'}
 EvilTuiZhiSe:
   Name: Exterminación Malvada
-  Description: "{Level:plural one='La siguiente carta' other='% Las siguientes cartas'}\
-    \ de ataque jugado {Level:plural one='inflige' other='infligen'} el doble de daño."
-  Brief: Las cartas de ataque jugadas infligirán el doble de daño.
+  Description: "La{Level:plural one=' siguiente carta activada se jugará ' other='s\
+    \ siguientes % cartas activadas se jugaran '} dos veces en este turno."
+  Brief: En este turno, las cartas de ataque activadas se jugarán dos veces.
 HolyGrailSe:
   Description: Al comienzo del turno de {OwnerName}, {PlayerName} pierde todo lo que
     no sea |Exhibiciones| |Brillantes| y |Mítico Raro|.
   Name: Copa de Oro Sobredecorada
 MadokaBowSe:
   Name: Arco que Dispara Luz
-  Description: Al final del turno de {OwnerName}, agrega {Level} cartas de estado
-    aleatorias a la pila de robo.
+  Description: Al final del turno de {OwnerName}, agrega {Level} cartas de Estado
+    aleatorias, baraja la mitad de ellas en la pila de robo y la otra mitad en la
+    pila de descarte.
 InfinityGemsSe:
   Name: Guante con Gemas Incrustadas
   Description: "Al comienzo del turno de {OwnerName}, |Exilia| la mitad de todas las\
@@ -508,11 +509,10 @@ UpgradePotionSe:
     |Pociones Inestables| en la pila de robo y descarte por {Level}.
   Name: Poción Refinada
 PotionDefenseSe:
-  Brief: Hasta el final del turno, siempre que una |Poción inestable| se activa, gana
-    |Barrera|.
+  Brief: En este turno, siempre que una |Poción inestable| se activa, gana |Barrera|.
   Name: Eco Resonante
-  Description: Hasta el final del turno, siempre que una |Poción Inestable| se activa,
-    gana {Level} de |Barrera|.
+  Description: En este turno, siempre que una |Poción Inestable| se activa, gana {Level}
+    de |Barrera|.
 Burst:
   Brief: "Cuando {PlayerName} entra en |Burst|, gana {Mana}.\nTodos los ataques infligen\
     \ {DamageRate} veces más de daño.\nAl final del turno, pierde el estado |Burst|."
@@ -689,10 +689,10 @@ HuiyeManaSe:
   Brief: Al comienzo del turno de {PlayerName}, gana algo de maná aleatorio, aumenta
     en cada turno.
 ZhenmiaowanAttackSe:
-  Brief: El coste de las cartas técnicas disminuye en {Mana} en este turno.
+  Brief: En este turno, el coste de las cartas técnicas se reduce en {Mana}.
   Name: Descendiente de Issun-Boushi
-  Description: El coste de las cartas técnicas disminuye en {Mana} en este turno.
-  ExtraDescription: Las cartas cuestan {Mana} menos para jugar en este turno.
+  Description: En este turno, el coste de las cartas técnicas se reduce en {Mana}.
+  ExtraDescription: En este turno, el coste de las cartas se reduce en {Mana}.
 HekaHellRainSe:
   Name: Lluvia del Infierno
   Description: "Al final del turno de {OwnerName}, inflige {Level} de daño a cada\
@@ -845,8 +845,8 @@ FrostArmor:
     \ un ataque, pierde 1 |Armadura de Escarcha|."
   Brief: "Cada vez que {PlayerName} gana |Armadura de Escarcha|, ganará esa misma\
     \ cantidad de |Bloqueo|.\nAl comienzo de cada turno de {OwnerName}, gana |Bloqueo|\
-    \ y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName} recibe daño por\
-    \ un ataque, pierde 1 |Armadura de Escarcha|."
+    \ igual a la armadura y pierde 1 |Armadura de Escarcha|.\nCada vez que {OwnerName}\
+    \ recibe daño por un ataque, pierde 1 |Armadura de Escarcha|."
 InvincibleEternal:
   Name: Perfección
   Description: '{OwnerName} no perderá mas de 1 de vida por cualquier daño recibido.'
@@ -1013,36 +1013,23 @@ ControlNegative:
   Description: "Pierde {Level} de |Control|.\n|Controlar| aumenta ciertos efectos\
     \ de las |Muñecas|."
   Brief: "|Control| disminuido.\n|Controlar| aumenta ciertos efectos de las |Muñecas|."
-WuyishiDNASe:
-  Description: Al final del turno de {PlayerName}, si no está en el estado |Epifanía|,
-    pierde la partida.
 BenwoTouyingSe:
   Name: Proyección del Ego
-  Description: Al entrar en el estado |Pasión|, agrega {Level} carta de ataque{Level:plural
-    one='' other='s'} completamente aleatoria{Level:plural one='' other='s'} a la
-    mano que |cuesta{Level:plural one='' other='n'} temporalmente| {Mana} y tiene{Level:plural
-    one='' other='n'} |Exilio|.
 ChaofanyinSe:
   Brief: Cuando una carta que no es |Copia| con |Instinto| se juega y no activa su
     efecto de |Instinto|, agrega |Copias| de ellos en la mano que |cuestan temporalmente|
     {Mana} y tienen |Exilio|.
 ChaoyueZiwoSe:
-  Name: Trascendencia
   Brief: Al final del turno de {PlayerName}, si está en el estado |Serenidad|, gana
     |Poder| y |Espíritu|.
-KongxiangshangSe:
-  Description: Después de jugar una carta de |Defensa Básica|, entra en el estado
-    |Serenidad|.
 ShortLove:
   Name: Chispa de Amor
-  Brief: El siguiente carta |Básica| jugada aumenta su valor numérico.
 LongLove:
   Description: Todas las cartas |Básicas| aumentan su valor numérico en {Level}.
 ZhuozhuangChengzhangSe:
-  Name: Crecimiento Saludable
   Brief: Al final del turno de {PlayerName}, agrega |Vitalidades| a la mano.
 SuperExtraTurn:
-  Name: Doppelgangers del Siglo
+  Name: '"Fin de la Noche Imperecedera"'
   Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
     El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
     \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
@@ -1168,9 +1155,6 @@ ColdHeartedSe:
     Se remueve |Sangre de Hielo| al final del turno de {OwnerName}."
   Brief: "La |Lanza de Hielo| Inflige el triple de daño a los enemigos con |Frío|.\n\
     Se remueve |Sangre de Hielo| al final del turno de {OwnerName}."
-QiangweiDiyuSe:
-  Description: ' Siempre que una carta básica entre en la mano, inflige {Count} de
-    daño a cada enemigo y aumenta ese valor en {Level}.'
 YukariFlyObjectSe:
   Description: Al comienzo del siguiente turno de {PlayerName}, inflige {Level} de
     daño al enemigo con más vida.
@@ -1204,26 +1188,12 @@ MoodPassion:
   Brief: "Mientras está en el estado |Pasión|, {PlayerName} inflige y recibe un {Percentage}%\
     \ más de daño.\n|Pasión| es un |Estado Mental|, del cual {PlayerName} solo puede\
     \ tener uno a la vez."
-MoodEnlight:
-  Description: "Al entrar en el estado |Fuga|, gana {Mana}.\nMientras estés en el\
-    \ estado |Fuga|, cada vez que se juegue una carta, roba una carta.\n|Fuga| es\
-    \ un |Estado Mental|, del cual {PlayerName} solo puede tener uno a la vez."
 InspirationSe:
   Name: Destello de Inspiración
-  Description: Cuando {PlayerName} tenga {TriggerLevel} |Destello de Inspiración|,
-    agrega esa cantidad de |Inspiraciones| a la pila de robo y entra en el estado
-    |Fuga|.
 ZhenmiaowanAbilitySe:
   Description: Las cartas cuestan {Mana} menos.
   Brief: Las cartas cuestan {Mana} menos.
   Name: Magia del Mazo
-QingxingMengSe:
-  Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Value1:plural\
-    \ one=' Rara' other='s Raras'} |p:completamente aleatoria{Value1:plural one=''\
-    \ other='s'}| a la mano. |cuesta{Value1:plural one='' other='n'} temporalmente|\
-    \ <sprite=\"ManaSprite\" name=\"1\"> y tiene{Level:plural one='' other='n'} |Exilio|\
-    \ y |Etéreo|.\n{PlayerName} solo puede jugar {Limit} carta{Limit:plural one='\
-    \ Rara' other='s Raras'} en cada turno. (Queda {Count})"
 FriendDrawSe:
   Description: "Siempre que se active la |a:Habilidad Activa| o |u:Habilidad Definitiva|\
     \ de una |Compañera|, roba {level} carta{level:plural one='' other='s'}.\nSiempre\
@@ -1233,12 +1203,8 @@ FriendDrawSe:
     \ de una |Compañera|, roba cartas\nSiempre que se active una |u:Habilidad Definitiva|,\
     \ gana maná aleatorio."
   Name: Reunión en el Jardín
-NextTurnPassionSe:
-  Description: Al comienzo del siguiente turno de [PlayerName}, entra en el estado
-    |Pasión| y roba {Level} carta{Level:plural one='' other='s'}.
 Constrain:
   Description: Resta el |Bloqueo| y |Barrera| ganado.
-  Brief: Resta el |Bloqueo| y |Barrera| ganado.
 PassionDrawSe:
   Description: Siempre que {PlayerName} entre en el estado |Pasión|, roba {Level}
     carta{Level:plural one='' other='s'}.
@@ -1279,3 +1245,73 @@ BladePowerSe:
     one=' de ataque aleatoria' other='s de ataques aleatorias'} a la mano. |Cuesta{Level:plural
     one='' other='n'} temporalmente| {Mana}, tiene{Level:plural one='' other='n'}
     |Exilio| y |Etéreo|.
+KnifeDamageUpSe:
+  Name: Propulsión Plateada
+  Description: '|Cuchillos Arrojadizos| inflige {Level} más de daño.'
+  Brief: '|Cuchillos Arrojadizos| infligen más daño.'
+NextTurnPassion:
+  Name: Siguiente Turno Pasión
+  Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
+    |Pasión| y roba {Level:plural one='% carta' other='% cartas'}.
+  Brief: Al comienzo del siguiente turno de {PlayerName}, entra en el estado |Pasión|
+    y roba cartas.
+MoodEpiphany:
+  Name: Fuga
+  Description: "Mientras está en el estado |Fuga|, gana {Mana} y roba una carta por\
+    \ cada carta jugada.\nAl final del turno de {PlayerName}, o cuando se juegue{Count:plural\
+    \ one=' % carta' other='n % cartas'}, se sale del estado |Fuga|.\n|Fuga| es un\
+    \ |Estado mental|, del cual {PlayerName} solo puede tener uno a la vez."
+  Brief: "Mientras está en el estado |Fuga|, gana {Mana} y roba una carta por cada\
+    \ carta jugada.\nAl final del turno de {PlayerName}, o cuando se jueguen algunas\
+    \ cartas, se sale del estado |Fuga|.\n|Fuga| es un |Estado mental|, del cual {PlayerName}\
+    \ solo puede tener uno a la vez."
+UpgradePeace:
+  Description: Aumenta el maná ganado al salir del estado |Serenidad|.
+  Brief: Aumenta el maná ganado al salir del estado |Serenidad|.
+Tired:
+  Name: Fatiga
+  Description: "Solo se pueden jugar {Limit} cartas en este turno.\n{Count:plural\
+    \ one='% carta jugada' other='% cartas jugadas'}."
+  ExtraDescription: "Solo se pueden jugar {Limit} cartas en este turno.\n{Count:plural\
+    \ one='% carta jugada' other='% cartas jugadas'}.\n{SelfName} está inactivo y\
+    \ solo se eliminará después del turno en que se resuelva."
+CloseEyeSe:
+  Description: "Se desconocen las intenciones de los enemigos.\nTurnos restantes:\
+    \ {Level}"
+  Brief: Las intenciones de los enemigos se desconocen por un tiempo.
+LoveFireSe:
+  Name: Ascuas del Amor
+  Description: "Al final del turno de {PlayerName}, si se realizó un |Ataque Continuo|,\
+    \ Gana {Level} de |Poder|.\nSe realizó un |Ataque Continuo| en este turno."
+KoishiDnaSe:
+  Description: Al comienzo del turno de {PlayerName}, juega inmediatamente las {Level}
+    cartas superiores de la pila de robo.
+  Brief: Al comienzo del turno de {PlayerName}, juega inmediatamente las cartas superiores
+    de la pila de robo.
+ButterflyDreamSe:
+  Description: Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural
+    one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
+    a la mano. Esta{Level:plural one=' carta tiene' other='s cartas tienen'} |Exilio|,
+    |Etéreo| y se puede gastar maná de cualquier color para pagar el coste de maná.
+  Brief: Al comienzo del turno de {PlayerName}, agrega |p:cartas raras completamente
+    aleatorias| a la mano. Tienen |Exilio|, |Etéreo| y se puede gastar maná de cualquier
+    color para pagar el coste de maná.
+DreamExpressSe:
+  Name: Fantasía Express
+JinziDoppelgangerSe:
+  Name: Doppelgangers del Siglo
+  Description: "Las primera{Level:plural one='carta jugada' other='s % cartas jugadas'}\
+    \ durante el turno de {PlayerName} se juegan dos veces.\n{Count:plural one='Queda\
+    \ % carta' other='Quedan % cartas'}."
+  Brief: Las primeras cartas jugadas durante el turno de {PlayerName} se juegan dos
+    veces.
+BailianMagicSe:
+  Description: En este turno, la próxima {Level:plural one='carta de |Habilidad| card'
+    other='% cartas de |Habilidad|'} activada{Level:plural one=' se jugará' other='
+    se jugaran'} dos veces.
+  Brief: En este turno, las próximas cartas de |Habilidad| activadas se jugarán dos
+    veces en este turno.
+KoishiUnknown:
+  Name: Impredecible
+  Description: "La intención de {OwnerName} es parcialmente desconocida.\nLas acumulaciones\
+    \ adicionales ocultarán aún más su intención."

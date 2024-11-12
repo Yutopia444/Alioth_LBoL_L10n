@@ -445,8 +445,8 @@ HuashanQingjing:
     la sala de descanso con compañeros de cuarto.
 EvilTuiZhi:
   Name: Exterminación Malvada
-  Description: "{Value1:plural one='La siguiente carta jugada infligirá' other='Las\
-    \ siguientes % cartas jugadas infligirán'} el doble de daño."
+  Description: "En este turno, la{Value1:plural one=' siguiente carta' other='s siguientes\
+    \ % cartas'} de ataque se jugar{Value1:plural one='á' other='an'} dos veces."
   FlavorText: Una de las cosas divertidas que puedes hacer en Gensokyo.
 MarisaAttackR:
   Description: Inflige {Damage} de daño.
@@ -1049,8 +1049,8 @@ ShootMoon:
     \ Gana {Value1} de |Evasión|."
   Name: Disparar a la Luna
 PotionDefense:
-  Description: "Gana {Shield} de |Barrera|.\nHasta el final del turno, siempre que\
-    \ una |Poción Inestable| se activa, gana {Value1} de |Barrera|."
+  Description: "Gana {Shield} de |Barrera|.\nEn este turno, siempre que una |Poción\
+    \ Inestable| se activa, gana {Value1} de |Barrera|."
   Name: Vuelo Estelar
 FireUpBagualu:
   Name: Encendiendo el Horno
@@ -1359,9 +1359,8 @@ SakuyaTea:
   FlavorText: Aunque la primera infusión de té es amarga, sí tiene beneficios para
     la salud.
 AttackMagic:
-  Description: "Inflige {Damage} de daño.\nRoba {Value1:plural one='% carta' other='%\
-    \ cartas'}.\nAgrega {Value2} |{Value2:plural one='Cuchillo Arrojadizo' other='Cuchillos\
-    \ Arrojadizos'}| a la mano."
+  Description: "Inflige {Damage} de daño.\nDescarta hasta {Value1:plural one='% carta'\
+    \ other='% cartas'}, luego roba esa misma cantidad de cartas."
   Name: Proyectiles Trucados
 CleanRoom:
   Description: "Descarta una carta.\nRoba {Value1:plural one='% carta' other='% cartas'}.\n\
@@ -1419,11 +1418,6 @@ SakuyaInvestigate:
   Name: Detective del Tiempo Detenido
   Description: "Aplica {Value1} de |Marcado|.\nSe repite este efecto al entrar en\
     \ un turno extra."
-SakuyaAttackX:
-  Description: '|Por cada {Mana} gastado|: Inflige {Damage} de daño.
-
-    Los ataques sobrantes se dirigirán a otro enemigo aleatorio y continuarán infligiendo
-    daño si el objetivo seleccionado es derrotado.'
 SakuyaGraze:
   Description: "Gana {Shield} de |Barrera|.\nGana {Value1} de |Evasión|.\nCuando se\
     \ baraja la pila de robo, se devuelve {SelfName} de la pila de descarte a la mano."
@@ -1743,9 +1737,6 @@ DanmuJade:
 MorphBird:
   Name: Forma Aviar
   Description: Gana {Value1} de |Evasión|.
-HuiyinAttack:
-  Description: "Inflige {Damage} de daño.\nDescarta hasta {Value1:plural one='% carta'\
-    \ other='% cartas'}, luego roba esa misma cantidad de cartas."
 SijiCard:
   Name: Juicio de los Pecadores
   Description: Elige una carta en la mano. Si es una |Desgracia| o carta de Estado,
@@ -1918,10 +1909,10 @@ XingMoney:
   FlavorText: Una técnica que Reimu Hakurei no puede evadir.
 ZhenmiaowanAttack:
   Name: Descendiente de los Kobitos
-  Description: "Inflige {Damage} de daño.\nLas cartas de Tecnicas cuestan {Mana} menos\
-    \ en este turno."
-  UpgradedDescription: "Inflige {Damage} de daño.\nLas cartas cuestan {Mana} menos\
-    \ en este turno."
+  Description: "Inflige {Damage} de daño.\nEn este turno, las cartas de Tecnicas cuestan\
+    \ {Mana} menos."
+  UpgradedDescription: "Inflige {Damage} de daño.\nEn este turno, las cartas cuestan\
+    \ {Mana} menos."
 NueExile:
   Name: Nubes Oscuras de Heian
   Description: "|Exilia| una carta de la mano.\nAgrega una carta aleatoria a la mano.\
@@ -2168,6 +2159,9 @@ YinyangQueen:
   Name: Misumaru, Artesana Habilidosa
   ExtraDescription1: "{FriendA}Agrega {Value1} |Orbe{Value1:plural one='' other='s'}\
     \ Yin-Yang del Arcoíris| aleatorio{Value1:plural one='' other='s'} a la mano."
+  ExtraDescription3: "{FriendU}Durante el resto del combate, los efectos de todos\
+    \ los |Orbes Yin-Yang| se duplican. Agrega inmediatamente {Value1} |Orbe{Value1:plural\
+    \ one='' other='s'} Yin-Yang del Arcoíris|"
 ShuihuoCard:
   Name: Orbe de Agua y Fuego
   Description: "Inflige {Damage} de daño.\nGana {Block} de |Bloqueo|.\n|Cuando se\
@@ -2566,10 +2560,13 @@ DayaojingFriend:
   Description: '{FriendP}Inflige {Damage} de daño a un enemigo aleatorio.'
   ExtraDescription1: '{FriendA}Gana {Block} de |Bloqueo|.'
   UpgradedExtraDescription1: '{FriendA}Gana {Block} de |Bloqueo| y {Shield} de |Barrera|.'
-  UpgradedExtraDescription2: '{FriendU}Agrega {Value1} |Flores de Verano+| a la mano.'
   Name: Daiyousei, la Alegre Asistente
   FlavorText: Un detective necesita un asistente; Incluso Cirno sabe que esto es de
     conocimiento común.
+  ExtraDescription3: "{FriendU}Agrega {Value1} |Flor{Value1:plural one='' other='es'}\
+    \ de Verano| a la mano."
+  UpgradedExtraDescription3: "{FriendU}Agrega {Value1} |Flor{Value1:plural one=''\
+    \ other='es'} de Verano+| a la mano."
 ChooseFriend:
   Name: Encuentro en el Lago Brumoso
   Description: "Elige hasta {Value2} de {Value1} cartas |Compañeras| aleatorias para\
@@ -2589,6 +2586,7 @@ LilyFriend:
     \ veces.\n{FriendP}Gana {TurnMana}."
   ExtraDescription1: '{FriendA}Gana {ActiveMana}.'
   Name: Lily White, Heraldo de la Primavera
+  ExtraDescription3: '{FriendU}Cura {Heal} de vida.'
 MaidFriend:
   Description: '{FriendP}Inflige {Damage} de daño al enemigo con menos vida.'
   Name: Kasumi, Sirvienta de la Mansión
@@ -2596,33 +2594,45 @@ MaidFriend:
     \ one=' Arrojadizo' other='s Arrojadizos'}| a la mano."
   FlavorText: De todas las hadas sirvientas de la Mansión Scarlet Devil, Kasumi es
     la más dedicada en su trabajo.
+  ExtraDescription3: '{FriendU}Inflige daño inmediatamente. Todas las {SelfName} infligen
+    {Value1} de daño adicional.'
 LarvaFriend:
   Description: '{FriendP}Aplica {Value1} de |Veneno| a un enemigo aleatorio.'
   ExtraDescription1: '{FriendA}|Mejora| todas las cartas en la mano.'
   Name: Larva, Diosa de la Noche Eterna
   FlavorText: Recuerda lavarte las manos después de darle la mano.
+  ExtraDescription3: '{FriendU}Aplica {Value2} de |Veneno| a cada enemigo. Activa
+    el efecto de pérdida de vida del |Veneno| una vez más.'
 LunaFriend:
   Description: '{FriendP}Gana {Block} de |Bloqueo|.'
   ExtraDescription1: '{FriendA}Inflige {Damage} de daño a un enemigo aleatorio {Value1}
     veces.'
   Name: Luna, Silenciosa Luz Lunar
   FlavorText: Investiga sigilosamente, sin hacer un solo sonido.
+  ExtraDescription3: "{FriendU}Gana |Perfección| durante {Value2} turno{Value2:plural\
+    \ one='' other='s'}."
 LeidiFriend:
   Name: Letty, Encarnación del Invierno
   Description: '{FriendP}Aplica |Frío| a un enemigo aleatorio.'
   FlavorText: El invierno se acerca. El invierno ha llegado. Una vez más, lucha contra
     el invierno. Vuelve el invierno.
+  ExtraDescription3: '{FriendU}Inflige {Damage} de daño y aplica |Frío| a cada enemigo.'
 SunnyFriend:
   Description: '{FriendP}Inflige {Damage} de daño a un enemigo aleatorio {Value1}
     veces.'
   ExtraDescription1: "{FriendA}Gana |Camuflaje Óptico| por {Light} turno{Light:plural\
     \ one=''other='s'}."
   Name: Sunny, Deslumbrante Luz Solar
+  ExtraDescription3: "{FriendU}Inflige daño inmediatamente {Value1} ve{Value1:plural\
+    \ one='z' other='ces'}.\nGana {Value2} de |Poder|."
 StarFriend:
   Description: '{FriendP}Inflige {Damage} de daño a cada enemigo.'
   ExtraDescription1: '{FriendA}Inflige daño inmediatamente a cada enemigo {Value1}
     veces.'
   Name: Star, Lluvia de Luz Estelar
+  ExtraDescription3: "{FriendU}Siempre que cualquier {SelfName} inflige daño, aplica\
+    \ {Light} de |Marcado|.\nInflige daño inmediatamente {Value2} ve{Value2:plural\
+    \ one='z' other='ces'}."
 ClownpieceFriend:
   Description: '{FriendS}Gana {StartMana}.
 
@@ -2631,7 +2641,7 @@ ClownpieceFriend:
     \ y agrega una |Locura| a la pila de descarte."
   UpgradedExtraDescription1: "{FriendA}Roba {Value1:plural one='% carta' other='%\
     \ cartas'}."
-  ExtraDescription2: '{FriendU}Gana {Mana} y agrega una |Locura| a la pila de descarte.'
+  ExtraDescription2: '{FriendA2}Gana {Mana} y agrega una |Locura| a la pila de descarte.'
   Name: Clownpiece, Hada Lunática
 LarvaDefense:
   Description: "Gana {Block} de |Bloqueo|.\nAplica {Value1} de |Débil| a cada enemigo.\n\
@@ -2640,9 +2650,9 @@ LarvaDefense:
   Name: Aleteos del Vuelo
   FlavorText: Necesitas valor para volar mientras sigues a Larva.
 FakeCard:
-  Description: "|Koishi Komeiji| Todavía esta durmiendo en su casa.\nEsten atento\
-    \ a las futuras actualizaciones."
-  Name: Sueño Ancestral (Temporal)
+  Description: "Esta carta todavía está en acceso anticipado.\nEsten atento a las\
+    \ futuras actualizaciones."
+  Name: Cuento del Cortador de Bambú (Temporal)
 HistoryCard:
   Description: "Esta carta ha sido eliminada en la versión actual del juego.\nCarta\
     \ ID: {CardId}"
@@ -2705,9 +2715,8 @@ AliceAttackB:
   Name: Regreso a la Inanimación
 LoveFire:
   Name: Ascuas del Amor
-  Description: "Inflige {Damage} de daño.\n|Por cada {Mana} gastado|: Aumenta el daño\
-    \ de {SelfName} en {Value1}.\nGuarda el maná gastado al jugar {SelfName} y devuelve\
-    \ el maná guardado para la próxima vez que se juegue {SelfName}."
+  Description: "Realiza un |Ataque Continuo|.\nAl final del turno de {PlayerName},\
+    \ si se realizó un |Ataque Continuo|, gana {Value1} de |Poder|."
 BabyDream:
   Name: Sueño del Embrión
   Description: "Inflige {Damage} de daño a cada enemigo.\nEntra en el estado |Serenidad|."
@@ -2729,24 +2738,16 @@ MojingShanjie:
   Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
     mano. |Cuesta temporalmente| {Mana}.
   FlavorText: La aleatoriedad es un elemento de las prácticas religiosas.
-Danxiangsi:
-  Description: "Gana {Value1} de |Poder|.\n|Cuando se retiene|: Aumenta el |Poder|\
-    \ ganado en {Value2}."
 FlowerGone:
   Name: Sueños Marchitos
-  Description: "Gana {Block} de |Bloqueo|.\n|Con Serenidad|: Gana {Value1} de |Espíritu|\
-    \ y se |Exilia| {SelfName}."
-CloseMemory:
-  Name: Recuerdos Olvidados
+  Description: "Gana {Block} de |Bloqueo|.\n|En Serenidad|: Gana {Shield} de |Barrera|\
+    \ en su lugar."
 QinchunPanni:
   Name: Rebeldía Adolescente
-  ExtraDescription1: "|d:Sin Pasión: Inflige {Damage} de daño al enemigo con menos\
-    \ vida.|\n|Con Pasión|: Gana {Block} de |Bloqueo| y roba {Value1:plural one='%\
-    \ carta' other='% cartas'}."
 PerfectCrime:
   Name: Crimen Perfecto
-  Description: "Roba el |Espíritu|, |Evasión|, |Amuleto|, |Camuflaje Óptico| y |Perfección|\
-    \ del objetivo.\nInflige {Damage} de daño."
+  Description: "Roba la |Evasión|, |Camuflaje Óptico|, |Perfección| y hasta {Value1}\
+    \ de |Poder| y |Espíritu| del objetivo."
 PoisonTeaParty:
   Name: Fiesta de Té Sospechosa
   Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
@@ -2775,6 +2776,8 @@ YukariFriend:
   ExtraDescription1: '{FriendA}Elige una carta del |Exilio| y devuélvelo a la mano.'
   DetailText: '{SelfName} no puede ser producido por el efecto de la |u:Habilidad
     Definitiva|.'
+  ExtraDescription3: '{FriendU}Al comienzo del turno de {PlayerName}, agrega una carta
+    neutral aleatoria tri-color a la mano. Cuesta temporalmente {Mana} y tiene |Etéreo|.'
 NightMana1:
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas cuestan {Mana}\
     \ maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
@@ -2795,47 +2798,30 @@ NightMana4:
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas cuestan {Mana}\
     \ maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, se |Exilia| una {SelfName} en la mano."
-WuyishiDNA:
-  Name: Proyección Astral
 AyaNewsAliceSp:
   Name: Bunbunmaru - Especial de Alice
   Description: '|Al final del turno|: Pierde {Value1} de |Espíritu|.'
   FlavorText: ¡Una edición especial sobre la Exposición de la Capital Lunar! Detalla
     los chismes que rodean a {PlayerName}.
-YaoguaiNaodianbo:
-  Description: "Inflige {Damage} de daño y entra en el estado |Pasión|.\n|Instinto|:\
-    \ Gana {Mana}."
 YoubiKongjuzheng:
   Description: "Gana {Block} de |Bloqueo|.\n|Instinto|: Gana {Shield} de |Barrera|."
-DNARain:
-  Name: Escopeta de ADN
 ZhuozhuangChengzhang:
   Description: Al final del turno de {PlayerName}, agrega {Value1} |Vitalidad{Value1:plural
     one='' other='es'}| a la mano.
 LianaiChongdong:
-  Name: Impulsos de Amor
   Description: "|Sin Serenidad|: Aumenta la siguiente carta |Básica| su valor numérico\
     \ por {Value1}.\n|Con Serenidad|: Aumenta cada carta |Básica| su valor numérico\
     \ por {Value2}."
-TaoqiQiangwei:
-  Name: Rosa Pícara
 LoveSeed:
   Name: Semillitas de Amor
-  FlavorText: Sólo déjame tomar otro mordisco y luego podrás ver las semillas.
 BenwoTouying:
   Description: "Siempre que {PlayerName} entra en el estado |Pasión|, agrega una carta\
     \ de |Ataque| |p:completamente aleatoria| a la mano. |Cuesta temporalmente| {Mana}\
     \ y tiene |Exilio|.\nEntra en el estado |Pasión|."
-JiyiShitihua:
-  Name: Encarnación de los Recuerdos
 Kongxiangshang:
   Name: Retención del Yo Ideal
-ZuxianTuomeng:
-  Name: Sueño Ancestral
 ChaoyueZiwo:
   Name: Trascendencia
-Beiyanwu:
-  Name: Filosofía del Detestado
 QiangweiDiyu:
   Name: Rosa Infernal
 MeilingFriend:
@@ -2846,10 +2832,11 @@ MeilingFriend:
 
     Cada vez que {PlayerName} recibe daño de todo el ataque de un enemigo, se activa
     una vez más.'
+  ExtraDescription3: '{FriendU}Cura {Value1} de vida y gana {Value2} de |Poder|.'
 PatchouliFriend:
   Description: "{FriendP}Convierte {PassiveColor} man{PassiveColor:plural one='á aleatorio'\
     \ other='as aleatorios'} en |Maná Filosofal|."
-  ExtraDescription2: "{FriendU}Agrega {Value2} |Po{Value2:plural one='ción inestable'\
+  ExtraDescription2: "{FriendA2}Agrega {Value2} |Po{Value2:plural one='ción inestable'\
     \ other='ciones inestables'}| a la mano."
   Name: Patchouli, Alquimista Elemental
   ExtraDescription1: '{FriendA}Gana {Value1} de |Poder| y |Espíritu|. Gana {Power}
@@ -2864,10 +2851,6 @@ ReimuHuashan:
     \ gana {Value1} de vida máxima.|\nEste efecto sólo puede ocurrir una vez por combate."
   Name: Recibir Orientación
   FlavorText: '"Ok, está bien, tú ganas".'
-JinziSuperExtraTurn:
-  Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
-    El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
-    \ se puede jugar {Value1} carta{Value1:plural one='' other='s'}."
 MoonSea:
   Description: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| a la mano."
   Name: Mar de la Tranquilidad
@@ -3066,8 +3049,6 @@ SuperNova:
   Name: Supernova
   Description: "Gana {Mana}.\nColoca {Value1} carta{Value1:plural one=' de ataque\
     \ aleatorio' other='s de ataques aleatorios'} desde la pila de robo hacia la mano."
-BeihaiWangxiang:
-  Name: Delirios de Persecución
 SakuyaZeroDefense:
   Description: Gana {Block} de |Bloqueo|.
   Name: Desviación de Danmaku
@@ -3096,15 +3077,8 @@ SanaeSummonGod:
     de |Poder| y de |Espíritu|.
   Name: Invocación de Take-Minakata
   FlavorText: Invocando a un espíritu divino sólo por comida y bebidas gratis.
-SiwangLaiDian:
-  Description: "|Exilia| una carta de |Ataque| en la mano. Agrega {Value1} |Copia{Value1:plural\
-    \ one='' other='s'}| de él a la parte superior de la pila de robo.\nSi la carta\
-    \ elegida es |Básica|, la{Value1:plural one='|Copia| tiene' other='s |Copias|\
-    \ tienen'} |Reponer|."
 MirrorTest:
   Name: Prueba del Espejo
-QingxingMeng:
-  Name: Sumergirse en el Subconsciente
 SunflowerDefense:
   Name: Jardín del Sol
   Description: "Gana {Block} de |Bloqueo|.\nAgrega {Value1} |Flor{Value1:plural one=''\
@@ -3113,8 +3087,6 @@ BlueZeroAttack:
   UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|."
   Description: Inflige {Damage} de daño.
   Name: Marea Viva
-InspirationRed:
-  Name: Inspiración Roja
 QingeDraw:
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
     \ other='s'}.\nDescarta cualquier carta robada de esta manera con un coste total\
@@ -3151,13 +3123,9 @@ HuiyinMoreDraw:
   Name: Dedicación de la Profesora
   Description: Roba {Value1} carta{Value1:plural one='' other='s'} más durante la
     fase de robo.
-WuyunJiekong:
-  Name: Cinco Skandhas Vacíos
 DefaultPeace:
   Description: "Gana {Block} de |Bloqueo|.\nEntra en el estado |Serenidad|."
   Name: Espinas de Pasión
-InspirationBlack:
-  Name: Inspiración Negra
 InspirationGreen:
   Name: Inspiración Verde
 FindInspiration:
@@ -3170,10 +3138,6 @@ InspirationCard:
     de Inspiración| de color aleatoria, activa su efecto y se |Exilia|.
 
     Durante la fase de robo, {SelfName} tiene |Reponer|.'
-InspirationWhite:
-  Description: "|Mejora| {Value1} carta{Value1:plural one=' aleatoria' other='s aleatorias'}\
-    \ en la mano.\nSi no quedan cartas válidas, gana {Value2} de |Bloqueo| para cada\
-    \ carta que se |Mejoraría| en su lugar."
 QiannianShenqiCard:
   Description: "Las cartas se pueden robar más allá del límite del efecto del |e:Rompecabezas\
     \ Piramidal| a un coste de {Value1} de vida por robo adicional.\nEsto dura hasta\
@@ -3192,14 +3156,10 @@ IceWing:
     \ Elige uno para colocarlo en la mano y el otro se deja en el fondo de la pila\
     \ de robo."
   FlavorText: ¡Lista para despegar!
-EnterPassion:
-  Description: Entra en el estado |Pasión|.
 KoishiZeroAttack:
   Name: Amor Ciego
   Description: "Inflige {Damage} de daño a cada enemigo.\n|En fuga|: Inflige daño\
     \ dos veces."
-EnterPeace:
-  Description: Entra en el estado |Serenidad|.
 LeaveMoodGraze:
   Name: Evasión Inconsciente
   Description: "Gana {Value1} de |Evasión|.\nSale del |Estado mental| actual."
@@ -3223,9 +3183,6 @@ PassionVulnerable:
   Name: Liberación del Id
   Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\n|No\
     \ en Pasión|: Entra en el estado |Pasión|."
-NextTurnPassion:
-  Description: Al comienzo del siguiente turno de {PlayerName}, entra en el estado
-    |Pasión| y roba {Value1} carta{Value1:plural one='' other='s'}.
 PeaceEndTurn:
   Name: Recobrar la Razón
   Description: "Entra en el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
@@ -3233,9 +3190,6 @@ PeaceEndTurn:
     \ de la pila de descarte y devuélvelas a la mano. Tiene{Value1:plural one='' other='n'}\
     \ |Retener| en este turno.\nEntra en el estado |Serenidad|.\nFinaliza el turno\
     \ de {PlayerName}."
-PeaceDraw:
-  Description: "|En Serenidad|: Roba {Value1} carta{Value1:plural one='' other='s'}.\n\
-    |No en Serenidad|: Entra en el estado |Serenidad|."
 PassionDraw:
   Name: Prisa
   Description: Siempre que {PlayerName} entre en el estado |Pasión|, roba {Value1}
@@ -3264,8 +3218,6 @@ MoodAttack:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de |Estados\
     \ mentales|. devuelve {SelfName} de la pila de descarte a la mano."
   Name: golpes emocionales repetidos
-EnterEnlight:
-  Name: Trance Divino
 AhongMana:
   Description: "|Cuando {SelfName} entra en la mano|: Agrega {Value1} |Vitalidad{Value1:plural\
     \ one='' other='es'}| a la mano y se |Exilia| {SelfName}."
@@ -3281,3 +3233,135 @@ ReimuSilence:
   Description: "Por cada {Value1} carta{Value1:plural one=' robada' other='s robadas'}\
     \ fuera de la fase de robo, inflige {Damage} de daño a cada enemigo.\nRoba {Value1}\
     \ carta{Value1:plural one='' other='s'}."
+KnifeDamageUp:
+  Name: Propulsión Plateada
+  Description: "Aumenta el daño infligido de los |Cuchillos Arrojadizos| en {Value1}.\n\
+    Agrega {Value2} |Cuchillo{Value2:plural one=' Arrojadizo' other='s Arrojadizos'|\
+    \ a la mano."
+KoishiKiss:
+  Description: "Inflige {Damage} de daño.\nRealiza un |Ataque Continuo|."
+  UpgradedDescription: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|.\nRealiza\
+    \ un |Ataque Ataque Continuo|."
+BaseFollower:
+  Description: Inflige {Damage} de daño.
+PassionMemory:
+  Description: Entra en el estado|Pasión|.
+Claustrophobia:
+  Description: "Gana {Block} de |Bloqueo|.\n|Instinto|: Gana {Shield} de |Barrera|."
+MultiFollower:
+  Description: Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.
+ToAllFollower:
+  Description: "Inflige {Damage} de daño a cada enemigo.\n|En Fuga|: Inflige daño\
+    \ una vez más."
+DefenseFollowAttack:
+  Description: "Gana {Block} de |Bloqueo|.\nRealiza un |Ataque Continuo|."
+KoishiDrawTop:
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nColoca {Value2}\
+    \ carta{Value2:plural one='' other='s'} de la mano en la parte superior de la\
+    \ pila de robo."
+GrazeFollowAttack:
+  Description: "Gana {Value1} |Evasión|.\nRealiza un |Ataque Continuo|."
+PlayDrawTop:
+  Description: Juega la carta superior de la pila de robo.
+TheChariot:
+  Description: "|Explora| {Scry}.\nAl comienzo del siguiente turno de {PlayerName},\
+    \ entra en el estado |Pasión| y roba {Value1} carta{Value1:plural one='' other='s'}"
+CloseEye:
+  Description: "Gana {Shield} de |Barrera|.\nLas intenciones de los enemigos no se\
+    \ pueden ver durante el próximo turno de {PlayerName}."
+DuplicateFollower:
+  Description: "Inflige {Damage} de daño.\nGana {Mana}.\n|Al comienzo del combate|:\
+    \ agrega {Value1} |Copia{Value1:plural one='' other='s'}| de {SelfName} a la pila\
+    \ de robo."
+  ExtraDescription1: "Inflige {Damage} de daño.\nGana {Mana}."
+YaoguaiLaser:
+  Description: "Inflige {Damage} de daño.\nRealiza un |Ataque Continuo|.\n|Instinto|:\
+    \ Realiza un |Ataque Continuo| adicional."
+KoishiWake:
+  Description: "Sale del |Estado Mental| actual. Cura {Value1} de vida.\n|En Fuga|:\
+    \ Gana {Shield} de |Barrera|."
+KoishiGainColorless:
+  Description: Gana {Mana}.
+  UpgradedDescription: Gana {Mana}.
+PeaceMemory:
+  Description: Entra en el estado |Serenidad|.
+KoishiSpringOut:
+  Description: "|En Serenidad|: Roba {Value1} carta{Value1:plural one='' other='s'}.\n\
+    De lo contrario, ingresa en el estado |Serenidad|."
+KoishiFire:
+  Description: "Gana {Value1} de |Poder|.\n|En Pasión|: Gana {Value2} más |Poder|.\n\
+    |En Serenidad|: Gana {Value1} de |Espíritu| en su lugar."
+KoishiFlower:
+  Description: "Gana {Block} de |Bloqueo|.\nInfliges {Damage} de daño.\nAgrega {Value1}\
+    \ |Flores de Verano| a la mano.\n|En fuga|: Agrega {Value2} en su lugar."
+TheHermit:
+  Description: "|Explora| {Scry}.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"\
+    ManaSprite\" name=\"0\"> para jugar."
+KoishiGrowAttack:
+  Description: "Inflige {Damage} de daño.\n|Crecimiento|: Aumenta el daño en {Value1}.\n\
+    |En Serenidad|: {SelfName} cuesta {Mana} para jugar."
+BlackEpiphany:
+  Description: "Entra en el estado |Fuga|.\nSolo se puede{Value1:plural one='' other='n'}\
+    \ jugar {Value1} carta{Value1:plural one='' other='s'} durante el próximo turno\
+    \ de {PlayerName}."
+KoishiMana:
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}."
+KoishiSpark:
+  Description: Inflige {Damage} de daño a cada enemigo.
+KoishiDna:
+  Description: Al comienzo del turno de {PlayerName}, juega la carta superior de la
+    pila de robo.
+KoishiAttackX:
+  Description: '|Por cada <sprite="ManaSprite" name="2"> gastado|: inflige {Damage}
+    de daño a cada enemigo y gana {Mana}.'
+Anatta:
+  Description: "Al salir de |Serenidad|, gana {Mana} adicional.\nEntra en el estado\
+    \ |Serenidad|."
+ButterflyDream:
+  Description: Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Level:plural
+    one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
+    a la mano. {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|, y se
+    puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'
+    other='s costes'}.
+  DetailText: "Estas |e:cartas alternativas| ignoran las restricciones del maná total,\
+    \ color de maná y personaje.\n{SelfName} no puede ser producido por este efecto.\n\
+    Las cartas con coste X no pueden ser producidas por este efecto."
+KokoroFriend:
+  ExtraDescription1: '{FriendA}Entra en el estado |Pasión|.'
+  ExtraDescription2: '{FriendA2}Entra en el estado |Serenidad|.'
+  ExtraDescription3: '{FriendU}Entra en el estado |Fuga|.'
+EnterEpiphany:
+  Description: Entra en el estado |Fuga|.
+DreamExpress:
+  Name: Fantasía Express
+JinziDoppelganger:
+  Name: Doppelgangers del Siglo
+  Description: La primera carta jugada durante el turno de {PlayerName} se juega dos
+    veces.
+HuiyeSuperExtraTurn:
+  DetailText: "El turno adicional de {SelfName} ocurre antes de cualquier otro turno\
+    \ adicional.\nDespués de jugar con {SelfName}, puedes pasar el cursor sobre el\
+    \ ícono del estado de {PlayerName} para consultar los detalles del turno actual."
+KoishiDiscard:
+  Description: '|Cuando se roba|: descarta una carta aleatoria.'
+  ExtraDescription1: "|Cuando se roba|: descarta una carta aleatoria.\nDescartado:\
+    \ {CardName}"
+AttackX:
+  Description: "|Por cada {Mana} gastado|: inflige {Damage} de daño.\nCuando el objetivo\
+    \ de {SelfName} es derrotado, si aún le sobran ataques, continúa atacando utilizando\
+    \ un enemigo aleatorio como nuevo objetivo."
+DebugRemoveHand:
+  Description: 'Carta de prueba: elige cualquier cantidad de cartas en tu mano para
+    retirarlas del combate.'
+DebugRemoveAllHandWhenDraw:
+  Description: 'Carta de prueba: Cuando robes, retira todas las cartas de tu mano
+    del combate (incluida ésta).'
+FakeBullet:
+  Description: "Realiza {Value1} |Ataque {Value1:plural one=' Continuo' other='s Continuos'}.\n\
+    Si no hay suficientes cartas |Continuas| en la pila de robo, se generarán cartas\
+    \ |Continuas| aleatorias para ese propósito."
+TheFool:
+  Description: "|Explora| {Scry}.\nJuega la carta superior de la pila de robo."
+BailianMagic:
+  Description: En este turno, la siguiente {Value1:plural one='% carta' other='% cartas'}
+    de |Habilidad| se juega{Value1:plural one='' other='n'} dos veces.
