@@ -2775,7 +2775,7 @@ FlowerGone:
   Description: "Gain {Block} |Block|.\n|In Serenity|: Gain {Shield} |Barrier| instead."
   Name: Withering Dreams
 BabyDream:
-  Description: "Deal {Damage} damage to each enemy.\nEnter |Serenity|."
+  Description: "Gain {Block} |Block|.\n|Dream| {Value1}."
   Name: Embryo's Dream
 PerfectCrime:
   Description: "Steal target's |Graze|, |Optical Camouflage|, |Flawless|, and up to\
@@ -2796,16 +2796,16 @@ LoveFire:
   Description: "Perform a |Follow-Up Attack|.\nAt the end of {PlayerName}'s turn,\
     \ if a |Follow-Up Attack| was performed, gain {Value1} |Firepower|."
 AliceAttackW:
-  Name: Futuristic Bunraku
+  Name: Doll Spears
   Description: Deal {Damage} damage.
 DeployPenglai:
   Name: Deploy Hourai Doll
   Description: "|Deploy| a |e:Hourai Doll|.\nActivate its |Control Skill|."
 AliceBlockU:
-  Name: Danmaku Barrier
+  Name: Defense Magic
   Description: Gain {Block} |Block|.
 AliceAttackB:
-  Name: Return Inanimateness
+  Name: Flanking Flash
   Description: Deal {Damage} damage.
 DeployShanghai:
   Name: Deploy Shanghai Doll
@@ -3216,6 +3216,7 @@ HuiyeSuperExtraTurn:
   DetailText: "{SelfName}'s extra turn happens before any other extra turn.\nAfter\
     \ playing {SelfName}, you can hover over {PlayerName}'s status icons to check\
     \ the details of the current turn."
+  Name: End of the Imperishable Night
 Claustrophobia:
   Description: "Gain {Block} |Block|.\n|Instinct|: Gain {Shield} |Barrier|."
   Name: Claustrophobia
@@ -3262,6 +3263,7 @@ CloseEye:
   Description: "Gain {Shield} |Barrier|.\nEnemy intents cannot be seen during {PlayerName}'s\
     \ next turn."
   Name: Closed Heart
+  FlavorText: Koishi closed her mind-reading third eye.
 YaoguaiLaser:
   Description: "Deal {Damage} damage.\nPerform a |Follow-Up Attack|\n|Instinct|: Perform\
     \ an additional |Follow-Up Attack|"
@@ -3276,6 +3278,7 @@ KoishiWake:
   Description: "Exit the current |Mental State|. Gain {Value1} life.\n|In Fugue|:\
     \ Gain {Shield} |Barrier|."
   Name: Snap Out
+  FlavorText: '"Where am I?"'
 KoishiGainColorless:
   Description: Gain {Mana}.
   UpgradedDescription: Gain {Mana}.
@@ -3311,7 +3314,7 @@ FakeBullet:
   Description: "Perform {Value1} |Follow-Up Attack{Value1:plural one='' other='s'}.\n\
     If there are not enough |Follow-Up| cards in the draw pile, random |Follow-Up|\
     \ cards will be generated for that purpose."
-  Name: Imaginary Danmmaku
+  Name: Imaginary Danmaku
 KoishiMana:
   Description: "Deal {Damage} damage to each enemy.\nGain {Mana}."
   Name: Unlock Potential
@@ -3346,9 +3349,11 @@ EnterEpiphany:
 BailianMagic:
   Description: In this turn, the next {Value1} |Ability| {Value1:plural one='card
     is' other='cards are'} played twice.
+  Name: Devil's Recitation
 KoishiDiscard:
   Description: '|When drawn|: Discard a random card.'
   ExtraDescription1: "|When drawn|: Discard a random card.\nDiscarded: {CardName}"
+  Name: Unconscious Amnesia
 AttackX:
   Description: "|For each {Mana} spent|: Deal {Damage} damage.\nWhen {SelfName}'s\
     \ target is defeated, if it still has excess attacks, it continues attacking using\
@@ -3366,10 +3371,11 @@ KokoroFriend:
   ExtraDescription1: '{FriendA}Enter |Passion|.'
   ExtraDescription2: '{FriendA2}Enter |Serenity|.'
   ExtraDescription3: '{FriendU}Enter |Fugue|.'
-  Name: Kokoro, Emotion-Stirring Mask
+  Name: Kokoro, Emotion Awaking Mask
   Description: '{FriendP}|Dream| {Value1}.'
 AncestorDream:
   Name: Ancestral Dreams
+  Description: "Deal {Damage} damage to each enemy.\n|Dream| {Value1}."
 GainZeroAttack:
   Name: DNA's Flaw
   Description: At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural
@@ -3384,3 +3390,22 @@ GainInspiration:
   Description: "At the end of {PlayerName}'s turn, add a |Eureka!| to the draw pile.\n"
 KoishiDive:
   Name: Sinking Consciousness
+  Description: "Enter |Serenity|.\n|Dream| {Value1}\nReturn up to {Value2} card{Value2:plural\
+    \ one='' other='s'} from the discard pile to the hand."
+FollowAttackFiller:
+  Name: Ring-Ring
+  Description: Deal {Damage} damage.
+KoishiPhone:
+  Description: "Whenever an attack card is activated, perform a |Follow-Up Attack|.\n\
+    If there are no |Follow-Up| cards in the draw pile, |Ring-Ring| will be used as\
+    \ a |Follow-Up|."
+  Name: Terrifyingly Cute Call
+DollBlock:
+  Name: Doll Shield
+Zhendijianzao:
+  Name: Phalanx Formation
+DreamExpress:
+  Name: Dream Express
+  Description: At the end of {PlayerName}'s turn, |Dream| {Value1}, then deal damage
+    to each enemy equal twice the {Value1:pulral one='total cost' other='sum of the
+    total costs} of the |Dreamed| card{Value1:plural one='' other='s'}.
