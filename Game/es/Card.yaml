@@ -2719,7 +2719,7 @@ LoveFire:
     \ si se realizó un |Ataque Continuo|, gana {Value1} de |Poder|."
 BabyDream:
   Name: Sueño del Embrión
-  Description: "Inflige {Damage} de daño a cada enemigo.\nEntra en el estado |Serenidad|."
+  Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} |Sueño|"
 UpgradeDoll:
   Name: Bunraku de la Doncella
   Description: Mejora una |e:Muñeca Shanghai|.
@@ -3115,7 +3115,7 @@ QiannianShenqiCard:
     \ el final del combate."
   Name: Mi Turno
 LeaveMoodAttack:
-  Name: Conciencia en Espiral
+  Name: Conciencia Espiral
   Description: "Inflige {Damage} de daño.\nSale del |Estado mental| actual."
 IceWing:
   Name: Ala de Hielo
@@ -3131,7 +3131,7 @@ KoishiZeroAttack:
   Name: Transcripción del ADN
   Description: "Inflige {Damage} de daño."
 LeaveMoodGraze:
-  Name: Ocultación de la Presencia
+  Name: Ocultamiento de Presencia
   Description: "Gana {Value1} de |Evasión|.\nSale del |Estado mental| actual."
 LeaveMoodDraw:
   Name: Curiosidad
@@ -3147,12 +3147,12 @@ FriendDraw:
     \ que se active una |u:Habilidad Definitiva|, gana {Value1} maná aleatorio."
   Name: Reunión en el Jardín
 PassionDefense:
-  Name: <Defensa Apasionada>
+  Name: Perfil Bajo
   Description: "Gana {Block} de |Bloqueo|.\n|En Pasión|: Gana {Value1} más de |Bloqueo|."
 PassionVulnerable:
   Name: Noche de Insomnio
-  Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\n|No\
-    \ en Pasión|: Entra en el estado |Pasión|."
+  Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\nDe lo\
+    \ contrario, entra en el estado |Pasión|."
 PeaceEndTurn:
   Name: Momento de Descanso
   Description: "Entra en el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
@@ -3218,7 +3218,7 @@ BaseFollower:
   Name: Amor Instintivo
 PassionMemory:
   Description: Entra en el estado|Pasión|.
-  Name: Memorias Apasionadas
+  Name: Recuerdos Apasionados
 Claustrophobia:
   Description: "Gana {Block} de |Bloqueo|.\n|Instinto|: Gana {Shield} de |Barrera|."
   Name: Claustrofobia
@@ -3242,6 +3242,7 @@ GrazeFollowAttack:
   Name: Acción Instintiva
 PlayDrawTop:
   Description: Juega la carta superior de la pila de robo.
+  Name: Acción Inconsciente
 TheChariot:
   Description: "|Explora| {Scry}.\nAl comienzo del siguiente turno de {PlayerName},\
     \ entra en el estado |Pasión| y roba {Value1} carta{Value1:plural one='' other='s'}"
@@ -3250,6 +3251,7 @@ CloseEye:
   Description: "Gana {Shield} de |Barrera|.\nLas intenciones de los enemigos no se\
     \ pueden ver durante el próximo turno de {PlayerName}."
   Name: Corazón Cerrado
+  FlavorText: Koishi cerró su tercer ojo que leía la mente.
 DuplicateFollower:
   Description: "Inflige {Damage} de daño.\nGana {Mana}.\n|Al comienzo del combate|:\
     \ agrega {Value1} |Copia{Value1:plural one='' other='s'}| de {SelfName} a la pila\
@@ -3264,6 +3266,7 @@ KoishiWake:
   Description: "Sale del |Estado Mental| actual. Cura {Value1} de vida.\n|En Fuga|:\
     \ Gana {Shield} de |Barrera|."
   Name: Recobrar la Razón
+  FlavorText: '"¿Dónde estoy?"'
 KoishiGainColorless:
   Description: Gana {Mana}.
   UpgradedDescription: Gana {Mana}.
@@ -3278,7 +3281,7 @@ KoishiSpringOut:
 KoishiFire:
   Description: "Gana {Value1} de |Poder|.\n|En Pasión|: Gana {Value2} más |Poder|.\n\
     |En Serenidad|: Gana {Value1} de |Espíritu| en su lugar."
-  Name: Caprichosa
+  Name: Caprichosita
 KoishiFlower:
   Description: "Gana {Block} de |Bloqueo|.\nInfliges {Damage} de daño.\nAgrega {Value1}\
     \ |Flores de Verano| a la mano.\n|En fuga|: Agrega {Value2} en su lugar."
@@ -3334,7 +3337,7 @@ EnterEpiphany:
   Description: Entra en el estado |Fuga|.
   Name: Epifanía
 DreamExpress:
-  Name: Fantasía Express
+  Name: Sueño Express
   Description: Al final del turno de {PlayerName}, gana {Value1} |Sueño|, luego inflige
     daño a cada enemigo igual al doble d{Value1:plural one='elcoste total' other='e
     la suma de los costes totales'} de la carta{Value1:plural one='' other='s'} |Soñada{Value1:plural
@@ -3360,45 +3363,50 @@ AttackX:
   Description: "|Por cada {Mana} gastado|: inflige {Damage} de daño.\nCuando el objetivo\
     \ de {SelfName} es derrotado, si aún le sobran ataques, continúa atacando utilizando\
     \ un enemigo aleatorio como nuevo objetivo."
+  Name: Trastorno de pánico
 DebugRemoveHand:
   Description: 'Carta de prueba: elige cualquier cantidad de cartas en tu mano para
     retirarlas del combate.'
+  Name: Remover la Mano
 DebugRemoveAllHandWhenDraw:
   Description: 'Carta de prueba: Cuando robes, retira todas las cartas de tu mano
     del combate (incluida ésta).'
+  Name: Remover la mano cuando se roba
 FakeBullet:
-  Description: "Realiza {Value1} |Ataque{Value1:plural one=' Continuo' other='s Continuos'}.\n\
+  Description: "Realiza {Value1} |Ataque{Value1:plural one=' Continuo' other='s Continuos'}|.\n\
     Si no hay suficientes cartas |Continuas| en la pila de robo, se generarán cartas\
     \ |Continuas| aleatorias para ese propósito."
   Name: Danmaku Imaginario
 TheFool:
   Description: "|Explora| {Scry}.\nJuega la carta superior de la pila de robo."
-  Name: 'Tarot: El Bufón'
+  Name: 'Tarot: El Tonto'
 BailianMagic:
   Description: En este turno, la siguiente {Value1:plural one='% carta' other='% cartas'}
     de |Habilidad| se juega{Value1:plural one='' other='n'} dos veces.
   Name: Recitación del Diablo
 AncestorDream:
   Name: Sueño Ancestral
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Value1} |Sueño|."
 InspirationDefense:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Inspiración|."
   Name: Momento de Inspiración
 GainZeroAttack:
   Name: Defecto del ADN
   UpgradedDescription: "Al comienzo del turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural\
-    \ one='ón ' other='ones'}del ADN| a la mano. Tiene{Value1:plural one='' other='n'}\
+    \ one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural one='' other='n'}\
     \ |Exilio| y |Etéreo|.\nSe activa {SelfName} una vez más."
   Description: Al comienzo del turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural
-    one='ón ' other='ones'}del ADN| a la mano. Tiene{Value1:plural one='' other='n'}
+    one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural one='' other='n'}
     |Exilio| y |Etéreo|.
 GainInspiration:
   Name: Déjame Pensarlo
   Description: "Al final del turno de {PlayerName}, agrega una |¡Eureka!| a la pila\
     \ de robo.\n"
 KoishiDive:
-  Name: Conciencia Tenue
-  Description: "Entra en el estado |Serenidad|.\n{Value1} |Sueño|.\nDevuelve hasta\
-    \ {Value2} carta{Value2:plural one='' other='s'} de la pila de descarte a la mano."
+  Name: Consciencia Tenue
+  Description: "Entra en el estado |Serenidad|.\nGana {Value1} |Sueño|.\nDevuelve\
+    \ hasta {Value2} carta{Value2:plural one='' other='s'} de la pila de descarte\
+    \ a la mano."
 KoishiPhone:
   Name: Llamada Terroríficamente Linda
   Description: "Siempre que se active una carta de ataque, realiza un |Ataque Continuo|.\n\
@@ -3407,3 +3415,7 @@ KoishiPhone:
 FollowAttackFiller:
   Name: Ring-Ring
   Description: Inflige {Damage} de daño.
+DollBlock:
+  Name: Escudo de Muñeca
+Zhendijianzao:
+  Name: Territorio de Creación
