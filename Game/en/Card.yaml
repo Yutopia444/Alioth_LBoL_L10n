@@ -3110,8 +3110,9 @@ DefaultPeace:
   Description: "Gain {Block} |Block|.\nEnter |Serenity|."
   Name: Selflessness
 FindInspiration:
-  Description: "Deal {Damage} damage.\nGain {Value1} |Flash of Inspiration|."
-  Name: Seek Inspiration
+  Description: "Add {Value1} |Eureka{Value1:plural one='' other='s'}!| to the draw\
+    \ pile."
+  Name: Flash of Inspiration
 InspirationCard:
   Description: '|When {SelfName} enters the hand|: Gain {Mana}, gain {Value1} |Inspiration|
     and |Exile| {SelfName}.'
@@ -3141,17 +3142,17 @@ PeaceEndTurn:
   UpgradedDescription: "Choose up to {Value1} card{Value1:plural one='' other='s'}\
     \ from the discard pile and return them to the hand. |Retain| {Value1:plural one='it'\
     \ other='them'} this turn.\nEnter |Serenity|.\nEnd {PlayerName}'s turn."
-  Name: Snap Out
+  Name: Moment of Respite
   Description: "Enter |Serenity|.\nEnd {PlayerName}'s turn."
 PassionVulnerable:
   Name: Sleepless Night
   Description: "|In Passion|: Apply {Value1} |Vulnerable| to each enemy.\n|Not in\
     \ Passion|: Enter |Passion|."
 KoishiZeroAttack:
-  Name: Blind Love
+  Name: DNA Transcript
   Description: "Deal {Damage} damage."
 LeaveMoodDraw:
-  Name: Unconscious Wandering
+  Name: Curiosity
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nExit the current\
     \ |Mental State|."
 LeaveMoodGraze:
@@ -3167,9 +3168,10 @@ MoodAttack:
 PassionDraw:
   Description: Whenever {PlayerName} enters |Passion|, draw {Value1} card{Value1:plural
     one='' other='s'}.
+  Name: Lovesickness
 MoodChangeBlock:
   Description: Whenever {PlayerName} changes |Mental States|, gain {Value1} |Block|.
-  Name: Mental Fortress
+  Name: A.T. Field
 PsycheLock:
   Name: Psyche-Lock
   NonbattleDescription: "Deal {Damage} damage to each enemy.\nGain {Mana}.\nCan only\
@@ -3184,6 +3186,7 @@ LunaticPassion:
 PeaceBlock:
   Description: At the end of {PlayerName}'s turn, if she's in |Serenity|, gain {Value1}
     |Block|.
+  Name: Self-Control
 PassionAttackToDraw:
   Name: Danmaku Paranoia
   Description: "Deal {Damage} damage {Value1} times.\nEnter |Passion|.\nShuffle {SelfName}\
@@ -3262,54 +3265,72 @@ CloseEye:
 YaoguaiLaser:
   Description: "Deal {Damage} damage.\nPerform a |Follow-Up Attack|\n|Instinct|: Perform\
     \ an additional |Follow-Up Attack|"
+  Name: Youkai ECG
 DuplicateFollower:
   Description: "Deal {Damage} damage.\nGain {Mana}.\n|At the start of combat|: Add\
     \ {Value1} |Cop{Value1:plural one='y' other='ies'}| of {SelfName} to the draw\
     \ pile."
   ExtraDescription1: "Deal {Damage} damage.\nGain {Mana}."
+  Name: Lonely Heart
 KoishiWake:
   Description: "Exit the current |Mental State|. Gain {Value1} life.\n|In Fugue|:\
     \ Gain {Shield} |Barrier|."
+  Name: Snap Out
 KoishiGainColorless:
   Description: Gain {Mana}.
   UpgradedDescription: Gain {Mana}.
+  Name: Empty Mind
 PeaceMemory:
   Description: Enter |Serenity|.
+  Name: Serene Memories
 KoishiSpringOut:
   Description: "|In Serenity|: Draw {Value1} card{Value1:plural one='' other='s'}.\n\
     Otherwise, enter |Serenity|."
+  Name: Spring Step
 KoishiFire:
   Description: "Gain {Value1} |Firepower|.\n|In Passion|: Gain {Value2} more |Firepower|.\n\
     |In Serenity|: Gain {Value1} |Spirit| instead."
+  Name: Carpiciousness
 KoishiFlower:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nAdd {Value1} |Midsummer\
     \ Flowers| to the hand.\n|In Fugue|: Add {Value2} instead."
+  Name: Naughty Rose
 TheHermit:
   Description: "|Scry| {Scry}.\nGain {Mana}.\n|In Fugue|: {SelfName} costs <sprite=\"\
     ManaSprite\" name=\"0\"> to play."
+  Name: 'Tarot: Hermit'
 KoishiGrowAttack:
   Description: "Deal {Damage} damage.\n|Growth|: Increase damage by {Value1}.\n|In\
     \ Serenity|: {SelfName} costs {Mana} to play."
+  Name: Passionate Thorns
 BlackEpiphany:
   Description: "Enter |Fugue|.\nOnly {Value1} card{Value1:plural one='' other='s'}\
     \ can be played during {PlayerName}'s next turn."
+  Name: Slipping Consciousness
 FakeBullet:
   Description: "Perform {Value1} |Follow-Up Attack{Value1:plural one='' other='s'}.\n\
     If there are not enough |Follow-Up| cards in the draw pile, random |Follow-Up|\
     \ cards will be generated for that purpose."
+  Name: Imaginary Danmmaku
 KoishiMana:
   Description: "Deal {Damage} damage to each enemy.\nGain {Mana}."
+  Name: Unlock Potential
 KoishiSpark:
   Description: Deal {Damage} damage to each enemy.
+  Name: Youkai Polygraph
 TheFool:
   Description: "|Scry| {Scry}.\nPlay the top card of the draw pile."
+  Name: 'Tarot: Fool'
 KoishiDna:
   Description: At the star of {PlayerName}'s turn, play the top card of the draw pile.
+  Name: Hartmann's Youkai Girl
 KoishiAttackX:
   Description: '|For each <sprite="ManaSprite" name="2"> spent|: Deal {Damage} damage
     to each enemy and gain {Mana}.'
+  Name: Rose Hell
 Anatta:
   Description: "When exiting |Serenity|, gain an additional {Mana}.\nEnter |Serenity|."
+  Name: Selfless Mirror
 ButterflyDream:
   Description: "At the star of {PlayerName}'s turn, add {Value1} |p:completely random|\
     \ Rare card{Value1:plural: one='' other='s'} to the hand. {Value1:plural one='It\
@@ -3318,8 +3339,10 @@ ButterflyDream:
   DetailText: "These |e:alternate cards| ignore total mana, mana color and character\
     \ restrictions.\n{SelfName} cannot be produced by this effect.\nCards with X Costs\
     \ cannot be produced by this effect."
+  Name: Uncertainty of Life
 EnterEpiphany:
   Description: Enter |Fugue|.
+  Name: Epiphany
 BailianMagic:
   Description: In this turn, the next {Value1} |Ability| {Value1:plural one='card
     is' other='cards are'} played twice.
@@ -3337,8 +3360,27 @@ DebugRemoveAllHandWhenDraw:
   Description: 'Test Card: When drawn, remove all cards in your hand from combat (including
     this one).'
 InspirationDefense:
-  Description: "Gain {Block} |Block|.\nGain {Value1} |灵感|."
+  Description: "Gain {Block} |Block|.\nGain {Value1} |Inspiration|."
+  Name: Time of Inspiration
 KokoroFriend:
   ExtraDescription1: '{FriendA}Enter |Passion|.'
   ExtraDescription2: '{FriendA2}Enter |Serenity|.'
   ExtraDescription3: '{FriendU}Enter |Fugue|.'
+  Name: Kokoro, Emotion-Stirring Mask
+  Description: '{FriendP}|Dream| {Value1}.'
+AncestorDream:
+  Name: Ancestral Dreams
+GainZeroAttack:
+  Name: DNA's Flaw
+  Description: At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural
+    one='' other='s'} to the hand. {Value1:plural one='It has' other='They have'}
+    |Exile| and |Ethereal|.
+  UpgradedDescription: "At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural\
+    \ one='' other='s'} to the hand. {Value1:plural one='It has' other='They have'}\
+    \ |Exile| and |Ethereal|.\nAdd {Value1} |DNA Transcript{Value1:plural one='' other='s'}\
+    \ to the hand. {Value1:plural one='It has' other='They have'} |Exile| and |Ethereal|."
+GainInspiration:
+  Name: Lemme Think
+  Description: "At the end of {PlayerName}'s turn, add a |Eureka!| to the draw pile.\n"
+KoishiDive:
+  Name: Sinking Consciousness
