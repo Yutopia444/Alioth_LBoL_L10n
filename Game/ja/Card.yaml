@@ -2302,7 +2302,7 @@ KoishiZeroAttack:
   Name: DNA転写
   Description: "{Damage}ダメージを与える。"
 PassionDefense:
-  Name: 熱情防御
+  Name: 低調
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
 LeaveMoodDraw:
   Name: 好奇心
@@ -2350,9 +2350,13 @@ MoodChangeBlock:
   Name: A.T.フィールド
   Description: '{PlayerName}が|心境|を変化させる度、{Value1}|ブロック|を得る。'
 PsycheLock:
-  Description: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3種類全ての|心境|に入っている場合のみ使用できる。(残り{Count}種類)"
-  NonbattleDescription: "敵全体に{Damage}ダメージを{Value1}回与える。\n{Mana}を得る。\n{SelfName}が手札にある間に3種類全ての|心境|に入っている場合のみ使用できる。"
+  Description: "{PlayerName}のターンを終了し、追加ターンを得る。\n{SelfName}が手札にある間に{PlayerName}が3種類全ての|心境|に入っている場合のみ使用できる。(残り{Count}種類)"
+  NonbattleDescription: "{PlayerName}のターンを終了し、追加ターンを得る。\n{SelfName}が手札にある間に{PlayerName}が3種類全ての|心境|に入っている場合のみ使用できる。"
   Name: サイコ・ロック
+  UpgradedDescription: "{PlayerName}のターンを終了し、追加ターンを得る。次のターン開始時、手札を全て|アップグレード|する。\n\
+    {SelfName}が手札にある間に{PlayerName}が3種類全ての|心境|に入っている場合のみ使用できる。(残り{Count}種類)"
+  UpgradedNonbattleDescription: "{PlayerName}のターンを終了し、追加ターンを得る。次のターン開始時、手札を全て|アップグレード|する。\n\
+    {SelfName}が手札にある間に{PlayerName}が3種類全ての|心境|に入っている場合のみ使用できる。"
 LunaticPassion:
   Name: 狂える愛
   Description: "|熱情|によるダメージ補正が{Percentage}%になる。\n|熱情|に入る。"
@@ -2384,6 +2388,7 @@ KoishiWake:
 KoishiDrawTop:
   Description: "カードを{Value1}枚引く。\n手札を{Value2}枚山札の一番上に置く。"
   Name: 出まかせ
+  UpgradedDescription: "カードを{Value1}枚引く。\n手札を{Value2}枚選び、|アップグレード|した後山札の一番上に置く。"
 TheChariot:
   Description: "|占術|{Scry}。\n{PlayerName}の次のターン開始時、カードを{Value1}枚引いて|熱情|に入る。"
   Name: 戦車のタロット
@@ -2480,8 +2485,10 @@ KoishiFire:
   Description: "|火力|{Value1}を得る。\n|熱情|状態なら追加で|火力|{Value2}を得る。\n|平静|状態なら代わりに|霊力|{Value1}を得る。"
 TheHermit:
   Name: 隠者のタロット
-  Description: "|占術|{Scry}。\n|遁走|状態なら{SelfName}のコストは<sprite=\"ManaSprite\" name=\"\
-    0\">。"
+  Description: "|占術|{Scry}。\n{Mana}を得る。\n|遁走|状態なら{SelfName}のコストは<sprite=\"ManaSprite\"\
+    \ name=\"0\">。"
+  UpgradedDescription: "|占術|{Scry}。山札の一番上のカードを|アップグレード|する。\n{Mana}を得る。\n|遁走|状態なら{SelfName}のコストは<sprite=\"\
+    ManaSprite\" name=\"0\">。"
 KoishiGrowAttack:
   Name: 舞うは茨
   Description: "{Damage}ダメージを与える。\n|成長|：ダメージが{Value1}増加する。\n|平静|状態なら{SelfName}のコストは{Mana}。"
