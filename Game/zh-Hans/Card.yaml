@@ -1981,7 +1981,7 @@ InspirationCard:
   Description: '|进入手中时|：获得{Mana}，获得 {Value1} 层|灵感|，|放逐|{SelfName}。'
 
 PassionDefense:
-  Name: <热情防御>
+  Name: 低调
   Description: |-
     获得 {Block} 点|格挡|。
     |热情|：额外获得 {Value1} 点|格挡|。
@@ -2017,6 +2017,9 @@ KoishiDrawTop:
   Description: |-
     抽 {Value1} 张牌。
     将 {Value2} 张手牌置于抽牌堆顶。
+  UpgradedDescription: |-
+    抽 {Value1} 张牌。
+    选择 {Value2} 张手牌，|升级|它并置于抽牌堆顶。
 
 LeaveMoodAttack:
   Name: 意识漩涡
@@ -2175,6 +2178,10 @@ TheHermit:
     |占卜| {Scry} 。
     获得{Mana}。
     |神游|：{SelfName}费用为<sprite="ManaSprite" name="0">。
+  UpgradedDescription: |-
+    |占卜| {Scry} ，|升级|牌堆顶的牌。
+    获得{Mana}。
+    |神游|：{SelfName}费用为<sprite="ManaSprite" name="0">。
 
 FindInspiration:
   Name: 灵光一闪
@@ -2204,22 +2211,26 @@ MoodChangeBlock:
   Name: A.T. 力场
   Description: 每当{PlayerName}转化|心境|时，获得 {Value1} 点|格挡|。
 
-PsycheLock:
-  Name: 心灵枷锁
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
-    获得{Mana}。
-    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。（剩余 {Count} 种未进入）
-  NonbattleDescription: |-
-    对所有敌人造成 {Damage} 点伤害 {Value1} 次。
-    获得{Mana}。
-    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
-
 BlackEpiphany:
   Name: 意识剥离
   Description: |-
     进入|神游|。
     下回合只能打出 {Value1} 张牌。
+
+PsycheLock:
+  Name: 心灵枷锁
+  Description: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。（剩余 {Count} 种未进入）
+  UpgradedDescription: |-
+    结束{PlayerName}的回合，进行一个额外的回合。这一回合开始时，|升级|所有的手牌。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。（剩余 {Count} 种未进入）
+  NonbattleDescription: |-
+    结束{PlayerName}的回合，进行一个额外的回合。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
+  UpgradedNonbattleDescription: |-
+    结束{PlayerName}的回合，进行一个额外的回合。这一回合开始时，|升级|所有的手牌。
+    {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
 
 FakeBullet:
   Name: 假想的弹幕
@@ -4213,17 +4224,25 @@ AttackX:
     |每支付|{Mana}：造成 {Damage} 点伤害。
     目标被击败而攻击次数仍有剩余时，以另一个随机敌人为目标继续攻击。
 
-DebugAddRandomCards:
-  Name: 添加随机卡牌
-  Description: 测试卡牌：添加随机卡牌到抽牌弃牌堆，各 {Value1} 张。
-
 DebugExileDrawDiscard:
   Name: 放逐抽牌弃牌堆
   Description: 测试卡牌：放逐全部抽牌弃牌堆。
 
+DebugAddRandomCards:
+  Name: 添加随机卡牌
+  Description: 测试卡牌：添加随机卡牌到抽牌弃牌堆，各 {Value1} 张。
+
 DebugAddRandomCardsSlow:
   Name: 添加随机卡牌（慢）
   Description: 测试卡牌：慢慢地添加随机卡牌到抽牌弃牌堆，各 {Value1} 张。
+
+DebugAddRandomCardsToExile:
+  Name: 添加随机卡牌到放逐
+  Description: 测试卡牌：添加随机 {Value1} 张卡牌放逐区。
+
+DebugAddRandomCardsToExileSlow:
+  Name: 添加随机卡牌到放逐（慢）
+  Description: 测试卡牌：慢慢地添加随机 {Value1} 张卡牌到放逐区。
 
 DebugAddDeckCards:
   Name: 向牌库添加卡牌
@@ -4240,5 +4259,9 @@ DebugRemoveHand:
 DebugRemoveAllHandWhenDraw:
   Name: 抽取时移除所有手牌
   Description: 测试卡牌：抽取时，将所有手牌移出战斗（包括自身）。
+
+DebugUpgradeAllZone:
+  Name: 升级各堆卡牌
+  Description: 测试卡牌：升级各堆卡牌中的前 {Value1} 张可升级卡牌。
 
 
