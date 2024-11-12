@@ -2219,8 +2219,6 @@ PatchouliFriend:
     {Power} 얻습니다.'
   ExtraDescription2: '{FriendA2}|불안정한 물약|을 {Value2}장 얻습니다.'
   FlavorText: '"슉..슈슉.슉..슉..슉.."'
-LoveSeed:
-  Name: 사랑의 씨앗
 AyaNewsAliceSp:
   Name: 붕붕마루 앨리스 특간호
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
@@ -2499,7 +2497,7 @@ FriendDraw:
 
     |u:궁극기| 사용 시 추가로 무작위 마나를 {Value1}개 얻습니다.'
 PassionDefense:
-  Name: <열정적인 방어>
+  Name: 저조
   Description: "|방어|를 {Block} 얻습니다.\n|열정일 때|: |방어|를 추가로 {Value1} 얻습니다."
 MoodAttack:
   Name: 이정참
@@ -2523,10 +2521,16 @@ MoodChangeBlock:
   Description: '|마음가짐|이 바뀔 때마다 |방어|를 {Value1} 얻습니다.'
 PsycheLock:
   Name: 마음속 자물쇠
-  Description: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{Mana}를 얻습니다.\n손에 {SelfName}가\
-    \ 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다. ({Count}회 남음)"
-  NonbattleDescription: "모든 적에게 피해를 {Damage}씩 {Value1}번 줍니다.\n{Mana}를 얻습니다.\n손에 {SelfName}가\
-    \ 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다."
+  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n손에 {SelfName}가 있는 동안 {PlayerName}가\
+    \ 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다. ({Count}회 남음)"
+  NonbattleDescription: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n손에 {SelfName}가 있는 동안 {PlayerName}가\
+    \ 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다."
+  UpgradedDescription: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 이 추가 턴 동안 손에 있는 모든 카드가 |강화|됩니다.\n\
+    손에 {SelfName}가 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할 수 있습니다. ({Count}회\
+    \ 남음)"
+  UpgradedNonbattleDescription: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다. 이 추가 턴 동안 손에 있는 모든\
+    \ 카드가 |강화|됩니다.\n손에 {SelfName}가 있는 동안 {PlayerName}가 각기 다른 세 번의 |마음가짐|에 들어서야만 사용할\
+    \ 수 있습니다."
 LunaticPassion:
   Name: 광적인 사랑
   Description: "|열정| 상태일 때 주고받는 피해 배율이 {Percentage}%가 됩니다.\n|열정|에 들어섭니다."
@@ -2587,6 +2591,8 @@ DefenseFollowAttack:
 KoishiDrawTop:
   Name: 거침없는 말
   Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드를 {Value2}장 골라 뽑을 카드 더미의 위로 돌려보냅니다."
+  UpgradedDescription: "카드를 {Value1}장 뽑습니다.\n손에서 카드를 {Value2}장 골라 |강화|시킨 후 뽑을 카드 더미의\
+    \ 꼭대기에 올려놓습니다."
 GrazeFollowAttack:
   Name: 본능적인 행동
   Description: "|그레이즈|를 {Value1} 얻습니다.\n|추가 공격|이 뒤따릅니다."
@@ -2640,6 +2646,8 @@ TheHermit:
   Name: 09. 은둔자
   Description: "|예지| {Scry}.\n{Mana}를 얻습니다.\n|둔주|: {SelfName}의 코스트가 <sprite=\"ManaSprite\"\
     \ name=\"0\">이 됩니다."
+  UpgradedDescription: "|예지| {Scry}.\n뽑을 카드 더미의 꼭대기에 있는 카드를 |강화|시킵니다.\n{Mana}를 얻습니다.\n\
+    |둔주|: {SelfName}의 코스트가 <sprite=\"ManaSprite\" name=\"0\">이 됩니다."
 KoishiGrowAttack:
   Name: 가시돋힌 춤길
   Description: "피해를 {Damage} 줍니다.\n|성장|: 피해가 {Value1} 증가합니다.\n|평온|: {SelfName}의 코스트가\
@@ -2719,3 +2727,12 @@ KoishiDiscard:
 DebugRemoveHand:
   Name: 손패 제거
   Description: '테스트 카드: 손에서 임의의 카드를 골라 이번 전투동안 제거합니다.'
+DebugAddRandomCardsToExile:
+  Name: 무작위 카드에 소멸 추가
+  Description: '테스트 카드: 무작위 카드 {Value1}장에 소멸을 추가합니다.'
+DebugAddRandomCardsToExileSlow:
+  Name: 무작위 카드에 소멸 추가 (천천히)
+  Description: '테스트 카드: 무작위 카드 {Value1}장에 소멸을 천천히 추가합니다.'
+DebugUpgradeAllZone:
+  Name: 각 더미 내 카드 강화
+  Description: '테스트 카드: 각 카드 더미에 있는 카드 {Value1}장을 강화시킵니다.'
