@@ -235,9 +235,9 @@ Jiangshen:
   FlavorText: "\"J'ai fait un vœu aux Dieux, et j'ai immédiatement choisi [Briser\
     \ les Frontières] ...\""
 EvilTuiZhi:
-  Description: "{Value1:plural one=\"La prochaine carte d'attaque jouée\" other=\"\
-    Les % prochaines cartes d'attaque jouées\"} inflige{Value1:plural one='' other='nt'}\
-    \ le double de dégâts."
+  Description: "Lors de ce tour, {Value1:plural one=\"La prochaine carte\" other=\"\
+    Les % prochaines cartes\"} d'attaque ser{Value1:plural one='a jouée' other='ont\
+    \ jouées'} deux fois."
   Name: Exterminer le Mal
   FlavorText: L'un des passe-temps à Gensokyo.
 DoubleLianhuadie:
@@ -838,9 +838,9 @@ DefenseDraw:
     \ en main| : {SelfName} coûte {Mana} de moins pour ce combat."
 AttackMagic:
   Name: Balles Astucieuses
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
-    \ {Value1:plural one='% carte' other='% cartes'}.\nAjoutez {Value2} |Couteau{Value2:plural\
-    \ one='' other='x'} de Lancer| à la main."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nDéfaussez\
+    \ jusqu'à {Value1:plural one='% carte' other='% cartes'}, puis piochez autant\
+    \ de cartes."
 CleanRoom:
   Name: Nettoyage de Chambre
   Description: "Défaussez une carte.\nPiochez {Value1:plural one='% carte' other='%\
@@ -2260,6 +2260,9 @@ YinyangQueen:
     \ et {Value2:plural one='% |Barrière|' other='% |Barrières|'}."
   ExtraDescription1: "{FriendA}Ajoutez {Value1} |Orbe{Value1:plural one='' other='s'}\
     \ Yin-Yang Arc-en-ciel| aléatoire{Value1:plural one='' other='s'} à la main."
+  ExtraDescription3: "{FriendU}Pour le reste du combat, les effets de toutes les |Orbes\
+    \ Yin-Yang| sont doublés. Ajoutez immédiatement {Value1} |Orbe{Value1:plural one=''\
+    \ other='s'} Yin-Yang Arc-en-ciel|."
 ShuihuoCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Block}\
     \ |Bouclier{Block:plural one='' other='s'}|.\n|Lorsque retenue| : ses dégâts et\
@@ -2898,10 +2901,6 @@ FlowerGone:
   Name: Souvenirs Flétris
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Calme|\
     \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez {SelfName}."
-Danxiangsi:
-  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Lorsque\
-    \ retenue| : la |Puissance| gagnée augmente de {Value2} point{Value2:plural one=''\
-    \ other='s'}."
 PerfectCrime:
   Name: Crime Parfait
   Description: "Volez l'|Esprit|, l'|Esquive|, les |Amulettes|, le |Camouflage Optique|,\
@@ -2963,14 +2962,8 @@ AyaNewsAliceSp:
   Description: "|Fin du tour| : Perdez {Value1} |Esprit{Value1:plural one='' other='s'}|."
   FlavorText: Édition spéciale sur l'exposition de la Capitale Lunaire ! Détails des
     potins sur {PlayerName}.
-ZhuozhuangChengzhang:
-  UpgradedDescription: "Gagnez {Value2} |Esquive{Value2:plural one='' other='s'}|.\n\
-    Lorsque {PlayerName} finit son tour, ajoutez {Value1} |Vitalité{Value1:plural\
-    \ one='' other='s'}| à la main."
 LoveSeed:
   Name: Graines d'Amour
-ZuxianTuomeng:
-  Name: Rêves Ancestraux
 PatchouliFriend:
   Description: "{FriendP}Convertit {PassiveColor} mana{PassiveColor:plural one=' aléatoire'\
     \ other='s aléatoires'} en |Mana du Philosophe|."
@@ -2978,7 +2971,7 @@ PatchouliFriend:
   ExtraDescription1: "{FriendA}Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|\
     \ et |Esprit{Value1:plural one='' other='s'}|, et gagnez {Power} <sprite=\"Point\"\
     \ name=\"Power\">."
-  ExtraDescription2: "{FriendU}Ajoutez {Value2} |Potion{Value2:plural one=' instable'\
+  ExtraDescription2: "{FriendA2}Ajoutez {Value2} |Potion{Value2:plural one=' instable'\
     \ other='s instables'}| à la main."
   FlavorText: '"Agitez, agitez, mélangez, agitez."'
 MeilingFriend:
@@ -3172,8 +3165,6 @@ FrozenOrb:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et |Froid|\
     \ à chaque ennemi.\nAjoutez {Value1} |Balle{Value1:plural one='' other='s'} de\
     \ Glace| à la main."
-MirrorTest:
-  Name: Test Miroir
 SakuyaZeroDefense:
   Name: Déviation de Tir
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
@@ -3205,9 +3196,6 @@ InspirationCard:
     Inspiration| de couleur aléatoire, activez son effet et |Exilez-la|.
 
     Pendant l''étape de pioche, {SelfName} a |Renfloue|.'
-InspirationRed:
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi
-    {Value1} fois.
 ShopAttack:
   Name: Missile Concombre
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
@@ -3409,3 +3397,7 @@ ReimuSilence:
     \ tirées'} en dehors de l'étape de pioche, infligez {Damage} dégât{Damage:plural\
     \ one='' other='s'} d'attaque à chaque ennemi.\nPiochez {Value1} carte{Value1:plural\
     \ one='' other='s'}."
+KnifeDamageUp:
+  Name: Argent Propulseur
+  Description: "Augmente les dégâts infligés par les |Couteaux de lancer| de {Valeur1}.\n\
+    Ajoutez {Value2} |Couteau{Value2:plural one='' other='x'} de lancer| à la main."
