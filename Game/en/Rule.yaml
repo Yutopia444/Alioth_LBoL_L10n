@@ -140,11 +140,11 @@ PlayCard:
     \ are other effects that prevent the card from being played normally, it will\
     \ not activate, and will instead enter the discard pile. (Effects like Unplayable,\
     \ insufficient gold while the card has a gold cost, etc.)\n5. If the Follow-Up\
-    \ card played has an effect cost, like that of \"News Fabrication\", such effect\
+    \ card played has an effect cost on cards like \"News Fabrication\", such effect\
     \ costs would have been cancellable when the card is played normally, but if the\
     \ card is played as a Follow-Up card, it cannot be cancelled.\n6. Follow-Up card\
-    \ plays will be interrupted by the end of combat, even if the card that would\
-    \ have been played has effects that would gain life, or other similar effects.\n\
+    \ plays will be interrupted by the ending of the combat, even if the card that\
+    \ would have been played has effects that would gain life, or other similar effects.\n\
     7. Interaction with X cost cards: The Follow-Up card played will be treated as\
     \ being played with 0 cost."
 PlayTwice:
@@ -153,20 +153,21 @@ PlayTwice:
     \ effects. It goes by the following rules.\n\n1. This is an effect that applies\
     \ to a normal card play, meaning if the card is played as a Follow-Up, it will\
     \ not be played twice.\n2. How it works in details: When a normal card play occurs,\
-    \ if it would be played twice, a snapshot of the card will be created before the\
-    \ card is played, and after the card has resolved, the snapshot will be played,\
+    \ if it's going to be played twice, a snapshot of the card will be created before\
+    \ the card is played, and after the card has resolved, the snapshot will be played,\
     \ and the snapshot will be removed from combat after use.\n3. The snapshot is\
-    \ different from normal Copy cards; rules that apply to Copy do not apply to the\
+    \ different from normal Copy cards, rules that apply to Copy do not apply to the\
     \ snapshot.\nPros for the player: The player can use the Ultimate Skill of a teammate\
-    \ twice, use a tool twice but only consume one Limited count, and can use \"Devour\
-    \ History\" twice.\nCons for the player: A copy of the teammate cannot be obtained\
-    \ when summoning a teammate, and Growth on cards cannot be triggered twice.\n\
-    The reason this is handled differently from Slay the Spire is because of the existence\
-    \ of teammates; you for sure don't want to summon \"Daiyousei, Lively Assistant\"\
-    \ only to immediately use her Active Skill.\n4. The player cannot obtain the snapshot,\
-    \ or a copy of the snapshot. For example, when a card with Echo is played twice,\
-    \ the snapshot will not produce a copy.\n5. Interactions with Extra Turns: Snapshots\
-    \ of \"Time Walk\" will not take effect, and most other Extra Turn cards will\
-    \ gain two extra turns, and only end the current turn. (Yet to determine if this\
-    \ is too powerful)\n6. Interactions with X cost cards: Snapshots inherit the mana\
-    \ paid to play the original card, and there will be two full triggers."
+    \ twice, use a tool twice by only consuming one Limited count, and can use \"\
+    Devour History\" twice.\nCons for the player: A copy of the teammate cannot be\
+    \ obtained when summoning a teammate, and Growth on cards cannot be triggered\
+    \ twice.\nThe reason this is handled differently from Slay the Spire is because\
+    \ of the existence of teammates, you for sure don't want to summon \"Daiyousei,\
+    \ Lively Assistant\" only to immediately use her Active Skill.\n4. The player\
+    \ cannot obtain the snapshot, or a copy of the snapshot. For example, when a card\
+    \ with Echo is played twice, the snapshot will not produce a copy.\n5. Interactions\
+    \ with Extra Turns: Snapshots of \"Time Walk\" will not take effect, and most\
+    \ other Extra Turn cards will gain two extra turns, and only end the current turn.\
+    \ (Yet to determine if this is too powerful)\n6. Interactions with X cost cards:\
+    \ Snapshots inherit the mana paid to play the original card, and there will be\
+    \ two full triggers."
