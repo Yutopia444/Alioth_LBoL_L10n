@@ -274,7 +274,7 @@ ReimuFreeAttack:
   Description: "Nhận {Block} |Khiên|.\n{Value1} lá Tấn Công tiếp theo |tạm thời tốn|\
     \ {Mana} để chơi."
 EvilTuiZhi:
-  Description: '{Value1} lá Tấn Công tiếp theo sẽ gây gấp đôi lượng sát thương.'
+  Description: '{Value1} lá Tấn Công tiếp theo sẽ được chơi hai lần trong lượt.'
   Name: Diệt Trừ Yêu Ma
   FlavorText: Một trong những trò tiêu khiển trong Ảo Tưởng Hương.
 ChuanyueJiejie:
@@ -348,6 +348,8 @@ YinyangQueen:
     lên tay.'
   Name: Misumaru, Thợ Chế Tác Khúc Ngọc
   Description: '{FriendP}Nhận {Value2} |Khiên| và |Hộ Giáp|.'
+  ExtraDescription3: '{FriendU}Cho đến hết trận đấu, hiệu ứng của tất cả |Âm Dương
+    Ngọc| được nhân đôi. Ngay lập tức thêm {Value1} |Hồng Long Âm Dương Ngọc|.'
 FengleiCard:
   Description: Gây {Damage} sát thương cho mỗi kẻ địch {Value1} lần.
   Name: Phong Lôi Ngọc
@@ -755,8 +757,8 @@ DefenseDraw:
     \ tốn ít đi {Mana} cho đến hết trận đấu."
   Name: Đổi Pha Mặt Trăng
 AttackMagic:
-  Description: "Gây {Damage} sát thương.\nBốc {Value1} lá.\nThêm {Value2} lá |Phóng\
-    \ Dao| lên tay."
+  Description: "Gây {Damage} sát thương.\nVứt bỏ tối đa {Value2} lá, sau đó rút số\
+    \ lá tương đương."
   Name: Ảo Thuật Đạn Kỹ
 SakuyaInvestigate:
   Description: "Yểm {Value1} |Bị Nhắm Tới| lên mỗi kẻ địch.\nKích hoạt hiệu ứng trên\
@@ -818,7 +820,7 @@ PatchouliFriend:
     Sắc|.'
   ExtraDescription1: '{FriendA}Nhận {Value1} |Hỏa Lực| và |Linh Lực|. Nhận {Power}
     <sprite="Point" name="Power">.'
-  ExtraDescription2: '{FriendU}Thêm {Value2} |Lọ Thuốc Bất Ổn| lên tay.'
+  ExtraDescription2: '{FriendA2}Thêm {Value2} |Lọ Thuốc Bất Ổn| lên tay.'
   FlavorText: '"Lắc, lắc, rung, lắc."'
 DarkSatellite:
   Description: "Nhận {Block} |Khiên|.\nNếu lá gần nhất được chơi trong trận đấu là\
@@ -1078,6 +1080,7 @@ MeilingFriend:
   Description: "{FriendS}Nhận {Graze} |Né Tránh|.\n{FriendP}Thêm 1 lá |Phóng Dao|\
     \ lên tay.\nMỗi khi {PlayerName} nhận sát thương từ toàn bộ đòn tấn công của kẻ\
     \ địch, kích hoạt hiệu ứng trên thêm một lần nữa."
+  ExtraDescription3: '{FriendU}Nhận {Value1} HP và {Value2} |Hỏa Lực|.'
 UnlimitedTime:
   FlavorText: Thứ lỗi, thời gian của tôi không có hạn.
   Name: Hoàn Hảo Dừng Thời Gian
@@ -1127,6 +1130,8 @@ DayaojingFriend:
   UpgradedExtraDescription1: '{FriendA}Nhận {Block} |Khiên| và {Shield} |Hộ Giáp|.'
   Description: '{FriendP}Tấn công gây {Damage} sát thương lên một kẻ địch ngẫu nhiên.'
   FlavorText: Một thám tử luôn cần có một trợ lý, ngay cả Cirno cũng biết điều đó.
+  ExtraDescription3: '{FriendU}Thêm {Value1} lá |Hoa Giữa Hạ| vào tay.'
+  UpgradedExtraDescription3: '{FriendU}Thêm {Value1} lá |Hoa Giữa Hạ+| vào tay.'
 MaidFriend:
   Name: Kasumi, Biệt Thự Hầu Gái
   Description: '{FriendP}Tấn công gây {Damage} sát thương lên kẻ địch có ít HP nhất.'
@@ -1134,6 +1139,8 @@ MaidFriend:
     tận tụy nhất.
   ExtraDescription1: '{FriendA}Tấn công ngay lập tức. Thêm {Value2} lá |Phóng Dao|
     lên tay.'
+  ExtraDescription3: '{FriendU}lập tức tạo sát thương. Toàn bộ {SelfName} gây thêm
+    {Value1} sát thương.'
 IceSaber:
   Name: Kết Băng Thành Kiếm
   Description: "Gây {Damage} sát thương {Value1} lần, yểm |Lạnh Giá|.\nBỏ một số lượng\
@@ -1144,6 +1151,8 @@ LeidiFriend:
   Description: '{FriendP}Yểm |Lạnh Giá| lên một kẻ địch ngẫu nhiên.'
   FlavorText: Ngày đông đang tới. Ngày đông đã tới. Tái chiến ngày đông. Trở lại ngày
     đông.
+  ExtraDescription3: '{FriendU}Gây {Damage} sát thương và yểm |Lạnh Giá| cho mỗi kẻ
+    địch.'
 Tether:
   Name: Kết Nối
   Description: "Nhận {Block} |Khiên|.\nMỗi lá |Đồng Đội| trên tay nhận {Value1} |Trợ\
@@ -1291,6 +1300,7 @@ LilyFriend:
   Description: "{FriendS}Tấn công gây {Damage} sát thương ngẫu nhiên {Value1} lần\
     \ lên kẻ địch.\n{FriendP}Nhận {TurnMana}."
   Name: Lily White, Sứ Giả Mùa Xuân
+  ExtraDescription3: '{FriendU}Hồi phục {Heal} HP.'
 CallFriends:
   Description: Chọn 1 từ {Value1} lá |Đồng Đội| để thêm lên tay, nó sẽ được triệu
     hồi sẵn.
@@ -1312,6 +1322,7 @@ LunaFriend:
     lần lên kẻ địch.'
   Name: Luna, Ánh Trăng Tĩnh Mịch
   FlavorText: Lặng lẽ điều tra, xin đừng nói chuyện.
+  ExtraDescription3: '{FriendU}Nhận |Không Tì Vết| cho {Value2} lượt.'
 FairyTrick:
   Name: Tiên Nữ Chơi Khăm
   Description: "Mất {Value1} HP.\nTriệu hồi 3 lá |Tiên Nữ Ánh Sáng|, ngẫu nhiên thêm\
@@ -1324,6 +1335,8 @@ SunnyFriend:
     lên kẻ địch.'
   ExtraDescription1: '{FriendA}Nhận {Light} |Ngụy Trang Quang Học|.'
   Name: Sunny, Ánh Nắng Rực Rỡ
+  ExtraDescription3: "{FriendU}Lập tức gây {Value1} lần sát thương.\nNhận {Value2}\
+    \ |Hỏa Lực|."
 ClownpieceFriend:
   Description: "{FriendS}Nhận {StartMana}.\n{FriendP}Nhận {Value2} |Hỏa Lực Tạm Thời|."
   ExtraDescription1: '{FriendA}Bốc {Value1} lá và thêm 1 lá |Điên Cuồng| vào Chồng
@@ -1437,6 +1450,8 @@ StarFriend:
   ExtraDescription1: '{FriendA}Tấn công ngay lập tức {Value1} lần.'
   Description: '{FriendP}Tấn công gây {Damage} sát thương cho mỗi kẻ địch.'
   Name: Star, Ánh Sao Trút Xuống
+  ExtraDescription3: "{FriendU}Bất cứ khi nào {SelfName} gây sát thương, yểm {Light}\
+    \ |Bị Nhắm Tới|.\nLập tức gây {Value2} lần sát thương."
 FreezeRiver:
   Name: Băng Nổi
   Description: Chuyển lá bài nằm ở Dưới Cùng Chồng Bài Bốc lên tay. Nó |tạm thời tốn|
@@ -1454,6 +1469,8 @@ LarvaFriend:
   ExtraDescription1: '{FriendA}|Nâng Cấp| các lá bài trên tay.'
   Name: Larva, Thần Nữ Đêm Hè
   FlavorText: Nhớ rửa tay sau khi bắt tay với cô ấy.
+  ExtraDescription3: '{FriendU}Yểm {Value2} |Nhiễm Độc| cho mỗi kẻ địch. Kích hoạt
+    một lần hiệu ứng mất máu của |Nhiễm Độc|'
 FlowerGone:
   Name: Mộng Xưa Úa Tàn
   Description: "Nhận {Block} |Khiên|.\n|Bình Thản|: Thay vào đó nhận {Value1} |Hộ\
@@ -2968,3 +2985,75 @@ KoishiPhone:
   Description: "Bất cứ khi nào một lá Tấn Công được kích hoạt, thực hiện |Công Kích\
     \ Thêm Vào|.\nNếu không có lá bài |Truy Kích| nào trong Chồng Bài Bốc, |Điện Thoại\
     \ Vang Lên| sẽ được sử dụng như là |Truy Kích|."
+KoishiDrawTop:
+  UpgradedDescription: "Bốc {Value1} lá.\nChọn {Value2} từ tay, |Nâng Cấp| và đặt\
+    \ {Value2:plural one='nó' other='chúng'} lên trên cùng Chồng Bài Bốc."
+  Name: Ba Hoa Chích Choè
+  Description: "Bốc {Value1} lá.\nĐặt {Value2} lá từ tay lên trên cùng Chồng Bài Bốc."
+KoishiWake:
+  Description: "Rời khỏi |Tâm Trạng| hiện tại. Hồi phục {Value1} HP.\n|Mê Tẩu|: Nhận\
+    \ {Shield} |Hộ Giáp|."
+  FlavorText: '"Mình đây là đang ở đâu?"'
+  Name: Hoàn Hồn
+KoishiGainColorless:
+  Name: Phóng Không Suy Nghĩ
+  UpgradedDescription: Nhận {Mana}.
+  Description: Nhận {Mana}.
+PeaceMemory:
+  Name: Ký Ức Bình Thản
+  Description: Tiến vào |Bình Thản|.
+KnifeDamageUp:
+  Name: Đẩy Màn Bạc
+  Description: "|Phóng Dao| tạo thành sát thương tăng {Value1}.\nThêm {Value2} lá\
+    \ |Phóng Dao| vào tay."
+KoishiKiss:
+  Name: Hôn Gió
+  Description: "Gây {Damage} sát thương.\nThực hiện một lần |Công Kích Thêm Vào|."
+  UpgradedDescription: "Gây {Damage} sát thương.\nYểm {Value1} |Suy Nhược|.\nThực\
+    \ hiện một lần |Công Kích Thêm Vào|."
+BaseFollower:
+  Name: Tình Yêu Bản Năng
+  Description: Gây {Damage} sát thương.
+PassionMemory:
+  Name: Ký Ức Nhiệt Tình
+  Description: Tiến vào |Nhiệt Tình|.
+Claustrophobia:
+  Name: Chứng Sợ Không Gian Kín
+  Description: "Nhận {Block} |Khiên|.\n|Trực Giác|: Nhận {Shield} |Hộ Giáp|."
+PlayDrawTop:
+  Name: Hành Động Vô Thức
+  Description: Chơi lá trên cùng của Chồng Bài Bốc.
+CloseEye:
+  Description: "Nhận {Shield} |Hộ Giáp|.\nKhông thể nhìn thấy ý định của kẻ địch trong\
+    \ lượt sau."
+  Name: Tâm Trí Khép Kín
+  FlavorText: Koishi đã đóng lại con mắt thứ ba đọc tâm của mình.
+TheChariot:
+  Description: "|Tiên Đoán| {Scry}.\nVào đầu lượt tiếp theo của {PlayerName}, tiến\
+    \ vào |Nhiệt Tình| và bốc {Value1} lá."
+  Name: 'Tarot: The Chariot'
+MultiFollower:
+  Name: Điệu Nhảy Của Trái Tim
+  Description: Gây {Damage} sát thương {Value1} lần.
+ToAllFollower:
+  Name: Cảm Xúc Mênh Mông
+  Description: "Gây {Damage} sát thương cho toàn bộ kẻ địch.\n|Mê Tẩu|: Gây thêm một\
+    \ lần sát thương."
+DefenseFollowAttack:
+  Name: Chứng Hoang Tưởng Bị Hại
+  Description: "Nhận {Block} |Khiên|.\nThực hiện một lần |Công Kích Thêm Vào|."
+GrazeFollowAttack:
+  Name: Hành Động Bản Năng
+  Description: "Nhận {Value1} |Né Tránh|.\nThực hiện một lần |Công Kích Thêm Vào|."
+DuplicateFollower:
+  Name: Trái Tim Cô Đơn
+  Description: "Gây {Damage} sát thương.\nNhận {Mana}.\n|Khi bắt đầu trận đấu|: Thêm\
+    \ {Value1} lá |Bản Sao| của lá này vào Chồng Bài Bốc."
+  ExtraDescription1: "Gây {Damage} sát thương.\nNhận {Mana}."
+AncestorDream:
+  Name: Tổ Tiên Báo Mộng
+  Description: "Gây {Damage} sát thương cho từng kẻ địch.\n|Nhập Mộng| {Value1}."
+YaoguaiLaser:
+  Name: Yêu Quái Điện Não Đồ
+  Description: "Gây {Damage} sát thương.\nThực hiện một lần |Công Kích Thêm Vào|.\n\
+    |Trực Giác|: Thực hiện thêm một lần |Công Kích Thêm Vào|."
