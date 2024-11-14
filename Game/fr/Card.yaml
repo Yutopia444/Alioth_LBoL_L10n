@@ -2678,7 +2678,7 @@ FrozenThrone:
     \ de Glace| à la main."
   FlavorText: Now, we are one !
 PlayWithWaste:
-  Name: Aventure dans le Tas de Déchets
+  Name: Experte en Farces
   Description: "Choisissez une parmi {Value1} cartes |Outil| non rares aléatoires\
     \ et ajoutez-en une |copie| à votre main.\nElle a |Limité【1】|."
 Xiguadao:
@@ -2734,6 +2734,8 @@ LilyFriend:
     \ un ennemi aléatoire {Value1} fois.\n{FriendP}Gagnez {TurnMana}."
   Name: "Lily, Annonciatrice de Printemps"
   ExtraDescription1: "{FriendA}Gagnez {ActiveMana}."
+  ExtraDescription3: "{FriendU}Gagnez {Heal} point{Heal:plural one='' other='s'} de\
+    \ vie."
 MaidFriend:
   Name: "Kasumi, la Bonne du Manoir"
   Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
@@ -2750,6 +2752,8 @@ LarvaFriend:
   Description: "{FriendP}Appliquez {Value1} |Poison{Value1:plural one='' other='s'}|\
     \ à un ennemi aléatoire."
   FlavorText: N'oubliez pas de vous laver les mains après lui avoir serré la main.
+  ExtraDescription3: "{FriendU}Appliquez {Value2} |Poison{Value2:plural one='' other='s'}|\
+    \ à chaque ennemi, déclenchez l'effet de perte de vie du |Poison|."
 InstantFreeze:
   Name: Congélation Rapide
   Description: "Appliquez |Froid| à tous les ennemis.\nTerminez le tour, et {PlayerName}\
@@ -2771,17 +2775,24 @@ LunaFriend:
   ExtraDescription1: "{FriendA}Infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ d'attaque à un ennemi aléatoire {Value1} fois."
   FlavorText: Enquêtez tranquillement et ne faites aucun bruit.
+  ExtraDescription3: "{FriendU}Gagnez |Perfection| pendant {Value2} tour{Value2:plural\
+    \ one='' other='s'}."
 StarFriend:
   Name: "Star, Pluie d'Étoiles Filantes"
   Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
     \ tous les ennemis."
   ExtraDescription1: '{FriendA}Infligez ses dégâts {Value1} fois.'
+  ExtraDescription3: "{FriendU}Chaque fois qu'une {SelfName} inflige des dégâts, appliquez\
+    \ {Light} |Verrou{Light:plural one='' other='s'}|. \nInflige immédiatement ses\
+    \ dégâts {Value2} fois."
 SunnyFriend:
   Name: "Sunny, Lumière Solaire Scintillante"
   Description: "{FriendP}Infligez {Damage} dégât{Damage:plural one='' other='s'} à\
     \ un ennemi aléatoire \n{Value1} fois."
   ExtraDescription1: "{FriendA}Gagnez |camouflage optique| pendant \n{Light} tour{Light:plural\
     \ one='' other='s'}."
+  ExtraDescription3: "{FriendU}Infligez immédiatement ses dégâts {Value1} fois.\n\
+    Gagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
 ClownpieceFriend:
   Name: "Clownpiece, Fée des Enfers"
   Description: '{FriendS}Gagnez {StartMana}.
@@ -2790,7 +2801,7 @@ ClownpieceFriend:
     temporaires|''}.'
   ExtraDescription1: "{FriendA}Piochez {Value1} carte{Value1:plural one='' other='s'}\
     \ et mélangez une |Folie| dans la pile de défausse."
-  ExtraDescription2: '{FriendU}Gagnez {Mana}, et mélangez une |Folie| dans la pile
+  ExtraDescription2: '{FriendA2}Gagnez {Mana}, et mélangez une |Folie| dans la pile
     de défausse.'
   UpgradedExtraDescription1: "{FriendA}Piochez {Value1} carte{Value1:plural one=''\
     \ other='s'}."
@@ -2809,6 +2820,8 @@ LeidiFriend:
     suivant.
   Name: Letty, Incarnation de l'Hiver
   Description: '{FriendP}Appliquez |froid| à un ennemi aléatoire.'
+  ExtraDescription3: "{FriendU}Infligez {Damage} dégât{Damage:plural one='' other='s'}\
+    \ et appliquez |Froid| à chaque ennemi."
 LarvaDefense:
   Name: Battement d'Ailes
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAppliquez\
@@ -2864,8 +2877,8 @@ LoveFire:
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    Entrez dans l'état |Calme|."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Rêve|\
+    \ {Value1}."
 AliceAttackW:
   Name: Bunraku du Futur
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2904,7 +2917,7 @@ MojingShanjie:
 FlowerGone:
   Name: Souvenirs Flétris
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Calme|\
-    \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}|, exilez {SelfName}."
+    \ : Gagnez {Shield} |Barrière{Value1:plural one='' other='s'}| à la place."
 PerfectCrime:
   Name: Crime Parfait
   Description: "Volez l'|Esprit|, l'|Esquive|, les |Amulettes|, le |Camouflage Optique|,\
@@ -3183,23 +3196,20 @@ YoumuAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Exilez|\
     \ une carte de la main."
 DefaultPassion:
-  Name: Cœur Solitaire
+  Name: Rose Romantique
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEntrez en\
     \ état |Passion|."
 DefaultPeace:
-  Name: Épines d'Amour
+  Name: Altruisme
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nEntrez\
     \ en état |Calme|."
 FindInspiration:
-  Name: Quête d'Inspiration
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
-    \ |Éclair de Génie|."
+  Name: Éclair de Génie
+  Description: "Ajoutez {Value1} |Eureka!| à la pioche."
 InspirationCard:
-  Name: Inspiration
-  Description: '|Lorsque {SelfName} arrive en main| : Transformez-la en une |e:carte
-    Inspiration| de couleur aléatoire, activez son effet et |Exilez-la|.
-
-    Pendant l''étape de pioche, {SelfName} a |Renfloue|.'
+  Name: Eureka!
+  Description: '|Lorsque {SelfName} arrive en main| : gagnez {Mana}, gagnez {Value1}
+    |Inspiration{Value1:plural one='''' other=''s''}| et |exilez| {SelfName}.'
 ShopAttack:
   Name: Missile Concombre
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nPiochez\
@@ -3234,15 +3244,15 @@ SuikaDraw:
   Name: Réunion d'Oni Ivres
   Description: Piochez des cartes jusqu'à ce qu'il y en ait {Value1} dans la main.
 LeaveMoodAttack:
-  Name: Acte Inconscient
+  Name: Vortex de Conscience
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nQuittez\
     \ l'|État Mental| actuel."
 LeaveMoodGraze:
-  Name: Évitement Inconscient
+  Name: Dissimulation de Présence
   Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nQuittez\
     \ l'|État Mental| actuel."
 LeaveMoodDraw:
-  Name: Errance Inconsciente
+  Name: Curiosité
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nQuittez l'|État\
     \ Mental| actuel."
 SanaeSpirit:
@@ -3326,11 +3336,10 @@ IceWing:
     ({BlueCount} carte{BlueCount:plural one=' bleue restante' other's bleues restantes'}\
     \ dans la pioche)"
 KoishiZeroAttack:
-  Name: Amour Aveugle
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    |Fugue| : Infligez le double des dégâts à la place."
+  Name: Transcription d'ADN
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}."
 PassionAttackToDraw:
-  Name: Amour Désintéressé
+  Name: Paranoïa Danmaku
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     Entrez dans l'état |Passion|.\nMélangez cette carte dans la pioche."
 FriendDraw:
@@ -3340,34 +3349,34 @@ FriendDraw:
     \ fois qu'un |u:ultime| est activé, gagnez {Value1:plural one='% mana aléatoire'\
     \ other='% manas aléatoires'}."
 PassionDefense:
-  Name: Amour Instinctif
+  Name: Profil Bas
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Passion|\
-    \ : gagnez {Value1} |Bouclier{Value1:plural one=' supplémentaire' other='s supplémentaires'}|."
+    \ : Gagnez {Value1} |Bouclier{Value1:plural one=' supplémentaire' other='s supplémentaires'}|."
 MoodAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nLorsque\
     \ {PlayerName} change d'|État mental|, {SelfName} est renvoyé de la pile de défausse\
     \ dans la main."
-  Name: Combinaison d'Humeurs
+  Name: Lame d'Empathie
 PassionVulnerable:
-  Name: Libération de l'Ego
+  Name: Nuit Blanche
   Description: "|Passion| : Infligez {Value1} |Vulnérable{Value1:plural one='' other='s'}|\
     \ à chaque ennemi.\nSinon, entrez dans l'état |Passion|."
 PassionDraw:
-  Name: Tirage de Cartes Passionné
+  Name: Mal d'Amour
   Description: Chaque fois que {PlayerName} entre dans l'état |Passion|, piochez {Value1}
     carte{Value1:plural one='' other='s'}.
 PeaceEndTurn:
-  Name: Reprendre Conscience
+  Name: Moment de Répit
   Description: "Entrez dans l'état |calme|.\nTerminez le tour."
   UpgradedDescription: "Sélectionnez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
     \ dans la pile de défausse et remettez-l{Value1:plural one='a' other='es'} dans\
     \ votre main, avec |Retenue|.\nEntrez dans l'état |calme|.\nTerminez le tour."
 PeaceBlock:
-  Name: Blocage Tranquille
+  Name: Maîtrise de Soi
   Description: Si {PlayerName} est dans l'état |Calme| à la fin de son tour, gagnez
     {Value1} |Bouclier{Value1:plural one='' other='s'}|.
 MoodChangeBlock:
-  Name: Barrière Spirituelle
+  Name: A.T. Field
   Description: Chaque fois que {PlayerName} change d'|État mental|, gagnez {Value1}
     |Bouclier{Value1:plural one='' other='s'}|.
 PsycheLock:
@@ -3403,5 +3412,122 @@ ReimuSilence:
     \ one='' other='s'}."
 KnifeDamageUp:
   Name: Argent Propulseur
-  Description: "Augmente les dégâts infligés par les |Couteaux de lancer| de {Valeur1}.\n\
+  Description: "Augmente les dégâts infligés par les |Couteaux de lancer| de {Value1}.\n\
     Ajoutez {Value2} |Couteau{Value2:plural one='' other='x'} de lancer| à la main."
+KoishiKiss:
+  Name: Baiser Aérien
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
+    \ une |Attaque de suivi|."
+  UpgradedDescription: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n\
+    Appliquez {Value1} |Faible{Value1:plural one='' other='s'}|.\nEffectuez une |Attaque\
+    \ de suivi|."
+BaseFollower:
+  Name: Amour Instinctif
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+PassionMemory:
+  Name: Souvenirs Passionnés
+  Description: Entrez dans l'état |Passion|.
+Claustrophobia:
+  Name: Claustrophobie
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Instinct|\
+    \ : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
+MultiFollower:
+  Name: Danse du Cœur
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.
+ToAllFollower:
+  Name: Montée Émotionnelle
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    |Fugue| : Infligez les dégâts une fois supplémentaire."
+DefenseFollowAttack:
+  Name: Paranoïa
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nEffectuez\
+    \ une |Attaque de suivi|."
+GrazeFollowAttack:
+  Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\nEffectuez\
+    \ une |Attaque de suivi|."
+  Name: Action Instinctive
+KoishiDrawTop:
+  Name: Parler Sans Filtre
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nPlacez {Value2}\
+    \ carte{Value2:plural one='' other='s'} de la main au-dessus de la pioche."
+  UpgradedDescription: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n\
+    |Améliorez| {Value2} carte{Value2:plural one='' other='s'} de la main et placez-l{Value2:plural\
+    \ one='a' other='es'} au-dessus de la pioche."
+TheChariot:
+  Name: 'Tarot : Le Chariot'
+  Description: "|Sonde| {Scry}.\nLorsque {PlayerName} débute son prochain tour, entrez\
+    \ dans l'état |Passion| et piochez {Value1} carte{Value1:plural one='' other='s'}."
+CloseEye:
+  Name: Cœur Fermé
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nLes intentions\
+    \ de l'ennemi ne seront pas visibles lorsque {PlayerName} effectuera son prochain\
+    \ tour."
+  FlavorText: Koishi a fermé son troisième œil qui lisait les pensées.
+PlayDrawTop:
+  Name: Action Inconsciente
+  Description: Jouez la première carte de la pioche.
+DuplicateFollower:
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez\
+    \ {Mana}."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Mana}.\n\
+    |Au début du combat| : Ajoutez {Value1} |copie{Value1:plural one='' other='s'}|\
+    \ de {SelfName} dans la pioche."
+  Name: Cœur Solitaire
+AncestorDream:
+  Name: Rêves Ancestraux
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    |Rêve| {Value1}."
+YaoguaiLaser:
+  Name: EEG Yōkai
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
+    \ une |Attaque de suivi|.\n|Instinct| : effectuez une |Attaque de suivi| supplémentaire."
+KoishiWake:
+  Name: Réinitialisation Mentale
+  Description: "Quittez l'|État mental| actuel. Gagnez {Value1} point{Value1:plural\
+    \ one='' other='s'} de vie.\n|Fugue| : Gagnez {Shield} |Barrière{Shield:plural\
+    \ one='' other='s'}|."
+  FlavorText: '"Où suis-je ?"'
+KoishiGainColorless:
+  Name: Esprit Calme
+  Description: Gagnez {Mana}.
+  UpgradedDescription: Gagnez {Mana}.
+PeaceMemory:
+  Name: Souvenirs Sereins
+  Description: Entrez dans l'état |Calme|.
+KoishiSpringOut:
+  Name: Vacances de Printemps
+  Description: "|Calme| : Piochez {Value1} carte{Value1:plural one='' other='s'}.\n\
+    Sinon, entrez dans l'état |Calme|."
+InspirationDefense:
+  Name: Moment d'Inspiration
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
+    \ {Value1} |Inspiration{Value1:plural one='' other='s'}|."
+KoishiFire:
+  Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\n|Passion|\
+    \ : Gagnez {Value2} |Puissance{Value2:plural one='' other='s'}| de plus.\n|Calme|\
+    \ : Gagnez {Value1} |Esprit{Value1:plural one='' other='s'}| à la place."
+  Name: Caprice
+KoishiFlower:
+  Name: Rose Espiègle
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'}.\nAjoutez {Value1} |Fleur{Value1:plural\
+    \ one='' other='s'} d'Été| à la main.\n|Fugue| : Ajoutez-en {Value2} à la place."
+TheHermit:
+  Name: "Tarot : L'Ermite"
+  Description: "|Sonde| {Scry}.\nGagnez {Mana}.\n|Fugue| : {SelfName} coûte <sprite=\"\
+    ManaSprite\" name=\"0\"> à jouer."
+  UpgradedDescription: "|Sonde| {Scry}.\n|Améliorez| la première carte de la pioche.\n\
+    Gagnez {Mana}.\n|Fugue| : {SelfName} coûte <sprite=\"ManaSprite\" name=\"0\">\
+    \ à jouer."
+KoishiGrowAttack:
+  Name: Épines Folles
+  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Croissance|\
+    \ : Augmente les dégâts de {Value1}.\n|Clame| : {SelfName} coûte {Mana} à jouer."
+GainZeroAttack:
+  Name: Défaut d'ADN
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural
+    one='' other='s'} d'ADN| à la main. {Value1:plural one='elle a' other='elles ont'}
+    |Exil| et |Éthéré|.
+  UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural\
+    \ one='' other='s'} d'ADN| à la main. {Value1:plural one='elle a' other='elles\
+    \ ont'} |Exil| et |Éthéré|.\nDéclenchez {SelfName} une fois."
