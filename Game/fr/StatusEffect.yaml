@@ -1253,18 +1253,18 @@ FriendDrawSe:
     \ utilisé, piochez des cartes.\nChaque fois qu'un |u:ultime| est activé, gagnez\
     \ du mana aléatoire."
 PassionDrawSe:
-  Name: Tirage de Cartes d'Amour
+  Name: Mal d'Amour
   Description: Chaque fois que {PlayerName} entre dans l'état |Passion|, piochez {Level}
     carte{Level:plural one='' other='s'}.
   Brief: Chaque fois que {PlayerName} entre dans l'état |Passion|, piochez des cartes.
 PeaceBlockSe:
-  Name: Blocage Tranquille
+  Name: Maîtrise de Soi
   Brief: Si {PlayerName} est dans l'état |Calme| à la fin de son tour, gagnez des
     |Boucliers|.
   Description: Si {PlayerName} est dans l'état |Calme| à la fin de son tour, gagnez
     {Level} |Bouclier{Level:plural one='' other='s'}|.
 MoodChangeBlockSe:
-  Name: Barrière Spirituelle
+  Name: A.T. Field
   Description: Chaque fois que {PlayerName} change d'|État mental|, gagnez {Level}
     |Bouclier{Level:plural one='' other='s'}|.
   Brief: Chaque fois que {PlayerName} change d'|État mental|, gagnez des |Boucliers|.
@@ -1304,3 +1304,113 @@ KnifeDamageUpSe:
   Description: Les |Couteaux de lancer| infligent {Level} dégât{Level:plural one=''
     other='s'} supplémentaire{Level:plural one='' other='s'}.
   Brief: Les |Couteaux de lancer| infligent des dégâts supplémentaires.
+MoodEpiphany:
+  Brief: "En état |Fugue|, gagnez {Mana} et piochez une carte pour chaque carte jouée.\n\
+    Lorsque {PlayerName} finit son tour, ou lorsque {PlayCount:plural one='% carte\
+    \ est jouée' other='% cartes sont jouées'}, quittez l'état |Fugue|.\n|Fugue| est\
+    \ un |État Mental|, {PlayerName} ne peut en avoir qu'un à la fois."
+  Name: Fugue
+  Description: "En état |Fugue|, gagnez {Mana} et piochez une carte pour chaque carte\
+    \ jouée.\nLorsque {PlayerName} finit son tour, ou lorsque {Count:plural one='%\
+    \ carte est jouée' other='% cartes sont jouées'}, quittez l'état |Fugue|.\n|Fugue|\
+    \ est un |État Mental|, {PlayerName} ne peut en avoir qu'un à la fois."
+NextTurnPassion:
+  Name: Passion au Prochain Tour
+  Description: Lorsque {PlayerName} débute son prochain tour, entrez en état |Passion|
+    et piochez {Level:plural one='% carte' other='% cartes'}.
+  Brief: Lorsque {PlayerName} débute son prochain tour, entrez en état |Passion| et
+    piochez des cartes.
+UpgradePeace:
+  Name: Anatta
+  Description: Augmente le mana gagné en quittant l'état |Calme|.
+  Brief: Augmente le mana gagné en quittant l'état |Calme|.
+Inspiration:
+  Name: Inspiration
+  Description: Lorsque {PlayerName} a {TriggerLevel} |Inspiration{TriggerLevel:plural
+    one='' other='s'}|, entrez en état |Fugue|.
+  Brief: Lorsque {PlayerName} a {TriggerLevel} |Inspiration{TriggerLevel:plural one=''
+    other='s'}|, entrez en état |Fugue|.
+Tired:
+  Name: Fatigue
+  Description: "Seule{Limit:plural one='' other='s'} {Limit} carte{Limit:plural one='\
+    \ peut être jouée' other='s peuvent être jouées'} ce tour-ci.\n({Count:plural\
+    \ one='% carte restante' other='% cartes restantes'}.)"
+  ExtraDescription: "Seule{Limit:plural one='' other='s'} {Limit} carte{Limit:plural\
+    \ one=' peut être jouée' other='s peuvent être jouées'} ce tour-ci. ({Count:plural\
+    \ one='% carte restante' other='% cartes restantes'}.)\n{SelfName} est inactive\
+    \ et ne sera supprimée qu'après le tour où elle a été activée."
+GainInspirationSe:
+  Description: "Lorsque {PlayerName} finit son tour, ajoutez {Level} |Eureka!| à la\
+    \ pioche.\n"
+  Name: Inspiration Inépuisable
+  Brief: "Lorsque {PlayerName} finit son tour, ajoutez des |Eureka!| à la pioche.\n"
+CloseEyeSe:
+  Name: Œil Fermé
+  Description: "Les intentions de l'ennemi sont inconnues.\nTours restants : {Level}"
+  Brief: Les intentions de l'ennemi sont inconnues pendant un moment.
+GainZeroAttackSe:
+  Name: Défaut d'ADN
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} |Transcription{Level:plural
+    one='' other='s'} d'ADN| à la main. {Level:plural one='Elle a' other='Elles ont'}
+    |Exil| et |Éthéré|.
+  Brief: Lorsque {PlayerName} débute son tour, ajoutez des |Transcriptions d'ADN|
+    à la main qui ont |Exil| et |Éthéré|.
+LoveFireSe:
+  Name: Braises d'Amour
+  Description: "Lorsque {PlayerName} finit son tour, si une |Attaque de suivi| a été\
+    \ effectuée, gagnez {Level} |Puissance{Level:plural one='' other='s'}|.\nUne |Attaque\
+    \ de suivi| a été effectuée ce tour-ci."
+  Brief: Lorsque {PlayerName} finit son tour, si une |Attaque de suivi| a été effectuée,
+    gagnez de la |Puissance|.
+  ExtraDescription: "Lorsque {PlayerName} finit son tour, si une |Attaque de suivi|\
+    \ a été effectuée, gagnez {Level} |Puissance{Level:plural one='' other='s'}|.\n\
+    Aucune |Attaque de suivi| n'a été effectuée ce tour-ci."
+KoishiDnaSe:
+  Name: Fille Yōkai de Hartmann
+  Description: Lorsque {PlayerName} débute son tour, jouez immédiatement {Level:plural
+    one='la première carte' other='les % premières cartes'} de la pioche.
+  Brief: Lorsque {PlayerName} débute son tour, jouez immédiatement les premières cartes
+    de la pioche.
+ButterflyDreamSe:
+  Name: Le Rêve du Papillon
+  Brief: Lorsque {PlayerName} débute son tour, ajoutez des cartes rares |p:complètement
+    aléatoires| à la main. Ces cartes ont |Exil|, |Éthéré| et le mana de n'importe
+    quelle couleur peut être dépensé pour payer leur coût en mana.
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} carte{Level:plural
+    one=' rare' other='s rares'} |p:complètement aléatoire{Level:plural one='' other='s'}|
+    à la main. {Level:plural one='Cette carte a' other='Ces cartes ont'} |Exil|, |Éthéré|
+    et le mana de n'importe quelle couleur peut être dépensé pour payer {Level:plural
+    one='son' other='leur'} coût en mana.
+KoishiPhoneSe:
+  Name: Appel Terriblement Mignon
+  Description: "Pour chaque carte d'attaque jouée, effectuez {Level} |Attaque{Level:plural\
+    \ one='' other='s'} de suivi|.\nS'il n'y a pas de cartes |Suivi| dans la pioche,\
+    \ jouez à la place |Ring-Ring|."
+  Brief: "Pour chaque carte d'attaque jouée, effectuez des |Attaques de suivi|.\n\
+    S'il n'y a pas de cartes |Suivi| dans la pioche, jouez à la place |Ring-Ring|."
+DreamExpressSe:
+  Name: Rêve Express
+  Description: Lorsque {PlayerName} finit son tour, |Rêve| {Level}, puis infligez
+    des dégâts à chaque ennemi égaux à deux fois {Level:plural one='le coût total
+    de la carte |Rêvée|' other='la somme des coûts totaux des cartes |Rêvées|'}.
+BailianMagicSe:
+  Brief: Ce tour-ci, les prochaines cartes |Pouvoir| seront jouées deux fois.
+  Name: Récitation du Diable
+  Description: Ce tour-ci, {Level:plural one='la prochaine carte |Pouvoir| sera jouée'
+    other='les % prochaines cartes |Pouvoir| seront jouées'} deux fois.
+JinziDoppelgangerSe:
+  Name: Doppelgängers du Siècle
+  Brief: À chaque tour, Les premières cartes jouées par {PlayerName} sont jouées deux
+    fois.
+  Description: À chaque tour, {Level:plural one='La première carte jouée' other='Les
+    % premières cartes jouées'} par {PlayerName} {Level:plural one='est jouée' other='sont
+    jouées'} deux fois. ({Count} restante{Count:plural one='' other='s'})
+UpgradeAllHandSe:
+  Name: Verrou Psychique
+  Description: Lorsque {PlayerName} débute son prochain tour, |Améliorez| chaque carte
+    en main.
+  Brief: Lorsque {PlayerName} débute son prochain tour, |Améliorez| chaque carte en
+    main.
+  ExtraDescription: "Lorsque {PlayerName} débute son prochain tour, |Améliorez| chaque\
+    \ carte en main.\n{SelfName} est inactif et ne sera supprimé qu'après le tour\
+    \ où il sera résolu."
