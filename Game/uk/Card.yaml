@@ -106,7 +106,8 @@ ReimuFreeAttack:
 EvilTuiZhi:
   Name: Винищення Зла
   Description: "{Value1:plural one='Наступна карта' few='Наступні % карти' many='Наступні\
-    \ % карт'} атаки {Value1:plural one='завдасть' other='завдадуть'} подвійної шкоди."
+    \ % карт'} атаки цього ходу {Value1:plural one='активується' other='активуються'}\
+    \ двічі."
   FlavorText: Один з розважальних атракціонів у Ґенсокьо.
 MomentPower:
   Name: Миттєвий Просторовий Розлом
@@ -278,6 +279,7 @@ LeidiFriend:
   Name: Летті, Втілення Зими
   Description: '{FriendP}Завдає випадковому ворогу |Холод|.'
   FlavorText: Зима наближається. Зима прийшла. Зима кусається. Зима повертається.
+  ExtraDescription3: '{FriendU}Завдає {Damage} шкоди та |Холод| усім ворогам.'
 IceMatrix:
   Name: Морозна Матриця
   Description: "Щоразу коли {PlayerName} завдає ворогу |Холод|, вона отримує {Value1}\
@@ -454,6 +456,9 @@ YinyangQueen:
   ExtraDescription1: "{FriendA}Додає {Value1:plural one='% випадкову |Різнобарвну\
     \ Сферу Їнь-Ян|' few='% випадкові |Різнобарвні Сфери Їнь-Ян|' many='% випадкових\
     \ |Різнобарвних Сфер Їнь-Ян|'} в руку."
+  ExtraDescription3: "{FriendU}До кінця битви ефекти усіх |Сфер Їнь-Янь| подвоюються.\
+    \ Одразу дає {Value1:plural one='% |Сферу Їнь-Ян|' few='% |Сфери Їнь-Ян|' many='%\
+    \ |Сфер Їнь-Ян|'}."
 RainbowMarket:
   Name: Ярмарок Місячної Веселки
   Description: Щоразу як карта |Знищується|, додає випадкову карту в руку.
@@ -1018,7 +1023,7 @@ PatchouliFriend:
   Name: Пачіюлі, Елементальний Алхімік
   Description: "{FriendP}Перетворює {PassiveColor:plural one='% випадкову ману' other='%\
     \ випадкової мани'} в |Філософську Ману|."
-  ExtraDescription2: "{FriendU}Додає {Value2:plural one='|% Нестабільну Мікстуру|'\
+  ExtraDescription2: "{FriendA2}Додає {Value2:plural one='|% Нестабільну Мікстуру|'\
     \ few='|% Нестабільні Мікстури|' many='|% Нестабільних Мікстур|'} в руку."
   ExtraDescription1: '{FriendA}Отримуєш {Value1} |Сили| та |Духу|. Дає {Power} <sprite="Point"
     name="Power">.'
@@ -1151,9 +1156,8 @@ SakuyaTea:
     \ менше цієї битви.|"
   Name: Заварювання Чаю
 AttackMagic:
-  Description: "Завдає {Damage} шкоди.\nДобираєш {Value1:plural one='% карту' few='%\
-    \ карти' many='% карт'}.\nДодає {Value2:plural one='% |Метальний Ніж|' few='%\
-    \ |Метальні Ножі|' many='% |Метальних Ножів|'} в руку."
+  Description: "Завдає {Damage} шкоди.\nСкидаєш до {Value1:plural one='% карти' other='%\
+    \ карт'}, після чого добираєш відповідну кількість карт."
   Name: Оманливі Постріли
 Dejavu:
   Name: Дежавю
@@ -1395,6 +1399,7 @@ MeilingFriend:
   Description: "{FriendS}Отримуєш {Graze} |Маневру|.\n{FriendP}Додає |Метальний Ніж|\
     \ в руку.\nАктивується додатково щоразу, як {PlayerName} отримуватиме шкоду від\
     \ цілої ворожої атаки."
+  ExtraDescription3: "{FriendU}Відновлює {Value1} здоров'я та дає {Value2} |Сили|."
 UnlimitedTime:
   Description: Вибери 1 з {Value1} карт з |Часовим Лімітом| аби додати в руку. Вона
     |тимчасово коштуватиме| {Mana}, |Знищуватиметься|, матиме |Ефемерність| й втратить
@@ -1462,6 +1467,8 @@ DayaojingFriend:
   Description: '{FriendP}Завдає {Damage} шкоди випадковому ворогу.'
   ExtraDescription1: '{FriendA}Отримуєш {Block} |Блоку|.'
   FlavorText: Кожен детектив потребує помічниці, навіть Чірно знає цей канон.
+  ExtraDescription3: '{FriendU}Додає {Value1} |Літні Квіти| в руку.'
+  UpgradedExtraDescription3: '{FriendU}Додає {Value1} |Літні Квіти+| в руку.'
 OptBottom:
   Name: Втопити
   Description: Покласти {TargetName} на низ стосу добору.
@@ -1512,6 +1519,8 @@ MaidFriend:
     Багряного Демона.
   Name: Касумі, Покоївка Палацу
   Description: "{FriendP}Завдає {Damage} шкоди ворогу з найменшою кількістю здоров'я."
+  ExtraDescription3: '{FriendU}Одразу ж завдає шкоди. Усі {SelfName} завдаватимуть
+    {Value1} додаткової шкоди.'
 IceSaber:
   Description: "Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%\
     \ разів'}.\nЗавдає |Холод|.\nСкинь бажану кількість синіх карт. Завдає шкоди додатковий\
@@ -1537,6 +1546,8 @@ LarvaFriend:
   Description: '{FriendP}Завдає {Value1} |Отрути| випадковому ворогу.'
   FlavorText: Не забувай мити руки після рукостискання з нею.
   ExtraDescription1: '{FriendA}|Покращує| кожну карту в руці.'
+  ExtraDescription3: '{FriendU}Завдає {Value2} |Отрути| усім ворогам. Одноразово активує
+    шкоду від |Отрути|.'
 FreezeToIce:
   Description: '|Знищ| до {Value1} карт в руці. До стосу добору додається відповідна
     кількість |Крижаних Крил|.'
@@ -1585,6 +1596,7 @@ LilyFriend:
   Description: "{FriendS}Завдає {Damage} шкоди випадковому ворогу {Value1:plural one='%\
     \ раз' few='% рази' many='% разів'}.\n{FriendP}Дає {TurnMana}."
   ExtraDescription1: '{FriendA}Отримуєш {ActiveMana}.'
+  ExtraDescription3: "{FriendU}Відновлює {Heal} здоров'я."
 SummerParty:
   Name: Кльова Вечірка
   Description: "Отримуєш {Value1} |Крижаної Броні|.\nКожен |Напарник| у руці отримує\
@@ -1651,11 +1663,16 @@ LunaFriend:
   ExtraDescription1: "{FriendA}Завдає {Damage} шкоди випадковому ворогу {Value1:plural\
     \ one='% раз' few='% рази' many='% разів'}."
   FlavorText: Розслідуйте собі тихо та й не шуміть.
+  ExtraDescription3: "{FriendU}Дає |Бездоганність| на {Value2:plural one='% хід' few='%\
+    \ ходи' many='% ходів'}."
 StarFriend:
   Name: Стар, Проміння Зоряного Світла
   ExtraDescription1: "{FriendA}Миттєво завдає шкоди {Value1:plural one='% раз' few='%\
     \ рази' many='% разів'}."
   Description: '{FriendP}Завдає {Damage} шкоди усім ворогам.'
+  ExtraDescription3: "{FriendU}Щоразу як будь-яка {SelfName} завдаватиме шкоди, накладає\
+    \ {Light} |Цілі|.\nОдразу ж завдає шкоди {Value2:plural one='% раз' few='% рази'\
+    \ many='% разів'}."
 FairyTrick:
   FlavorText: Це ж очевидно що їх четверо у гурті Трьох Фей Світла!
   Description: "Втрачаєш {Value1} здоров'я.\nВикликає 3 |e:Феї Світла|. Додає одну\
@@ -1669,13 +1686,15 @@ SunnyFriend:
     \ раз' few='% рази' many='% разів'}."
   ExtraDescription1: "{FriendA}Отримуєш |Оптичний Камуфляж| на {Light:plural one='%\
     \ хід' few='% ходи' many='% ходів'}."
+  ExtraDescription3: "{FriendU}Одразу ж завдає шкоди {Value1:plural one='% раз' few='%\
+    \ рази' many='% разів'}.\nДає {Value2} |Сили|."
 ClownpieceFriend:
   Name: Клаунпіс, Скажена Фея
   UpgradedExtraDescription1: "{FriendA}Добираєш {Value1:plural one='% карту' few='%\
     \ карти' many='% карт'}."
   ExtraDescription1: "{FriendA}Добираєш {Value1:plural one='% карту' few='% карти'\
     \ many='% карт'} й додаєш |Божевілля| до стосу скиду."
-  ExtraDescription2: '{FriendU}Отримуєш {Mana} й додаєш |Божевілля| до стосу скиду.'
+  ExtraDescription2: '{FriendA2}Отримуєш {Mana} й додаєш |Божевілля| до стосу скиду.'
   Description: "{FriendS}Отримуєш {StartMana}.\n{FriendP}Отримуєш {Value2} |Тимчасової\
     \ Сили|."
 InstantFreeze:
@@ -1691,7 +1710,7 @@ LarvaDefense:
   Name: Трепетний Політ
   FlavorText: Потрібно багато відваги аби летіти вслід Ларві.
 PlayWithWaste:
-  Name: Стрибок у Смітник
+  Name: Як Дістати Сусіда
   Description: "Вибери 1 з {Value1} не рідкісних карт |Знаряддя| аби додати в руку.\n\
     Вона вважається |Копією| та має |Ліміт【1】|."
 BrainOverclock:
@@ -1723,8 +1742,8 @@ KoishiBlockG:
   Description: Отримуєш {Block} |Блоку|.
 FlowerGone:
   Name: Зів'ялі Спогади
-  Description: "Отримуєш {Block} |Блоку|.\n|У Спокої|: Отримуєш {Value1} |Духу|, після\
-    \ чого {SelfName} |Знищуються|."
+  Description: "Отримуєш {Block} |Блоку|.\n|У Спокої|: Отримуєш {Shield} |Бар'єру|\
+    \ натомість."
 BabyDream:
   Name: Утробний Сон
   Description: Усі |базові| карти |тимчасово коштуватимуть| {Mana} й матимуть |Відлуння|.
@@ -2986,9 +3005,9 @@ FakeCard:
   Name: Родові Сни (Підробка)
   Description: "|d:|Койші Комейджі| все ще спить.\nПросимо очікувати майбутніх оновлень!|"
 InspirationCard:
-  Description: '|При потраплянні {SelfName} в руку|: Перетворює цю карту у випадкову
-    кольорову |e:Карту Натхнення|, активує ефекти та |Знищує| її.'
-  Name: Натхнення
+  Description: '|При потраплянні {SelfName} в руку|: Дає {Mana}, {Value1} |Натхнення|
+    й |Знищується|.'
+  Name: Еврика!
 FindInspiration:
   Name: Пошук Натхнення
   Description: "Завдає {Damage} шкоди.\nОтримуєш {Value1} |Спалах Натхнення|."
@@ -3041,3 +3060,79 @@ ReimuSilence:
   Description: "За {Value1:plural one='кожну % карту' few='кожні % карти' many='кожних\
     \ % карт'} добраних поза стадії добору, завдає {Damage} шкоди усім ворогам.\n\
     Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}."
+LeaveMoodAttack:
+  Description: "Завдає {Damage} шкоди.\nПолишаєш свій |Психічний Стан|."
+  Name: Вир Свідомості
+LeaveMoodGraze:
+  Description: "Отримуєш {Value1} |Маневру|.\nПолишаєш свій |Психічний Стан|."
+  Name: Приховування Присутності
+DefaultPeace:
+  Name: Самовіддача
+  Description: "Отримуєш {Block} |Блоку|.\nАктивує |Спокій|."
+DefaultPassion:
+  Name: Романтична Троянда
+  Description: "Завдає {Damage} шкоди.\nАктивує |Пристрасть|."
+KoishiZeroAttack:
+  Name: Транскрипт ДНК
+PassionVulnerable:
+  Description: "|У Пристрасті|: Завдає {Value1} |Вразливості| усім ворогам.\nУ іншому\
+    \ ж випадку, активує |Пристрасть|."
+  Name: Безсонна Ніч
+KoishiDrawTop:
+  UpgradedDescription: "Добираєш {Value1:plural one='% карту' few='% карти' many='%\
+    \ карт'}.\nКладеш {Value2:plural one='% карту' few='% карти' many='% карт'} з\
+    \ руки наверх стосу добору, вона |Покращується|."
+  Name: Галасливе Базікання
+  Description: "Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
+    Кладеш {Value2:plural one='% карту' few='% карти' many='% карт'} з руки наверх\
+    \ стосу добору."
+PassionDefense:
+  Name: Прикриття
+  Description: "Отримуєш {Block} |Блоку|.\n|У Спокої|: Отримуєш ще {Value1} |Блоку|."
+MoodAttack:
+  Name: Лезо Емпатії
+  Description: "Завдає {Damage} шкоди.\nЩоразу як {PlayerName} змінюватиме |Психічний\
+    \ Стан|, {SelfName} повертатиметься зі стосу скиду в руку."
+KnifeDamageUp:
+  Name: Жваве Срібло
+  Description: "Збільшує шкоду від |Метальних Ножів| на {Value1}.\nДодає {Value1:plural\
+    \ one='% |Метальний Ніж|' few='% |Метальні Ножі|' many='% |Метальних Ножів|'}\
+    \ в руку."
+KoishiKiss:
+  Name: Повітряний Цьом
+  Description: "Завдає {Damage} шкоди.\nВиконує |Додаткову Атаку|."
+  UpgradedDescription: "Завдає {Damage} шкоди.\nЗавдає {Value1} |Слабкості|.\nВиконує\
+    \ |Додаткову Атаку|."
+BaseFollower:
+  Name: Інстинктивне Кохання
+  Description: Завдає {Damage} шкоди.
+PlayDrawTop:
+  Description: Зіграє верхню карту зі стосу добору.
+  Name: Несвідома Дія
+TheChariot:
+  Name: 'Таро: Колісниця'
+  Description: "|Прогноз| {Scry}.\nНа початку наступного свого ходу, {PlayerName}\
+    \ активує |Пристрасть| та добере {Value1:plural one='% карту' few='% карти' many='%\
+    \ карт'}."
+PassionMemory:
+  Name: Теплі Спогади
+  Description: Активує |Пристрасть|.
+Claustrophobia:
+  Name: Клаустрофобія
+  Description: "Отримуєш {Block} |Блоку|.\n|Інтуїція|: Отримуєш {Shield} |Бар'єру|."
+MultiFollower:
+  Name: Танець Серця
+  Description: Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%
+    разів'}.
+ToAllFollower:
+  Name: Сплеск Емоцій
+  Description: "Завдає {Damage} шкоди усім ворогам.\n|У Фузі|: Завдає шкоди додатковий\
+    \ раз."
+DefenseFollowAttack:
+  Name: Параноїдальні Марення
+  Description: "Отримуєш {Block} |Блоку|.\nВиконує |Додаткову Атаку|."
+GrazeFollowAttack:
+  Name: Інстинктивна Дія
+  Description: "Отримуєш {Value1} |Маневру|.\nВиконує |Додаткову Атаку|."
+FollowAttackFiller:
+  Name: Дзень-Дзелень
