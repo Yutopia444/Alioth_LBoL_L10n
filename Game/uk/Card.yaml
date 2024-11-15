@@ -1746,7 +1746,7 @@ FlowerGone:
     \ натомість."
 BabyDream:
   Name: Утробний Сон
-  Description: Усі |базові| карти |тимчасово коштуватимуть| {Mana} й матимуть |Відлуння|.
+  Description: "Отримуєш {Block} |Блоку|.\n|Сон| {Value1}."
 PerfectCrime:
   Name: Ідеальний Злочин
   Description: "Краде у своєї цілі |Дух|, |Маневр|, |Амулет|, |Оптичний Камуфляж|,\
@@ -3009,8 +3009,8 @@ InspirationCard:
     й |Знищується|.'
   Name: Еврика!
 FindInspiration:
-  Name: Пошук Натхнення
-  Description: "Завдає {Damage} шкоди.\nОтримуєш {Value1} |Спалах Натхнення|."
+  Name: Спалах Натхнення
+  Description: "Додає {Value1} |Еврика!| до стосу добору."
 MeilingLianhua:
   Name: Яскравий Танець Хаосу
   Description: "Завдає {Damage} шкоди усім ворогам.\nОтримуєш {Value1} |Сили|."
@@ -3074,6 +3074,7 @@ DefaultPassion:
   Description: "Завдає {Damage} шкоди.\nАктивує |Пристрасть|."
 KoishiZeroAttack:
   Name: Транскрипт ДНК
+  Description: Завдає {Damage} шкоди.
 PassionVulnerable:
   Description: "|У Пристрасті|: Завдає {Value1} |Вразливості| усім ворогам.\nУ іншому\
     \ ж випадку, активує |Пристрасть|."
@@ -3136,3 +3137,90 @@ GrazeFollowAttack:
   Description: "Отримуєш {Value1} |Маневру|.\nВиконує |Додаткову Атаку|."
 FollowAttackFiller:
   Name: Дзень-Дзелень
+PassionDraw:
+  Name: Любовна Туга
+CloseEye:
+  FlavorText: Койші сама закрила своє третє око, яке вдивлялось у свідомість.
+  Name: Закрите Серце
+  Description: "Отримуєш {Shield} |Бар'єру|.\nВорожі наміри будуть прихованими протягом\
+    \ наступного ходу {PlayerName:g}."
+PassionAttackToDraw:
+  Name: Параноя Данмаку
+  Description: "Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%\
+    \ разів'}.\nАктивує |Пристрасть|.\nЗамішує {SelfName} до стосу добору."
+PeaceEndTurn:
+  Name: Мить Перепочинку
+  Description: "Активує |Спокій|.\nЗакінчує хід {PlayerName:g}."
+  UpgradedDescription: "Вибери до {Value1:plural one='% карти' other='% карт'} зі\
+    \ стосу скиду аби повернути її в руку. {Value1:plural one='Вона |Залишається|'\
+    \ other='Вони |Залишаються|'} цього ходу.\nАктивує |Спокій|.\nЗакінчує хід {PlayerName:g}."
+LeaveMoodDraw:
+  Name: Допитливість
+  Description: "Добираєш {Value1:plural one='% карту' few='% карти' many='% карт'}.\n\
+    Полишаєш свій |Психічний Стан|."
+GainZeroAttack:
+  UpgradedDescription: "На початку ходу {PlayerName:g}, додає {Value1:plural one='%\
+    \ |Транскрипт ДНК|' few='% |Транскрипти ДНК|' many='% |Транскриптів ДНК|'} в руку.\
+    \ {Value1:plural one='Він матиме' other='Вони матимуть'} |Знищується| та |Ефемерність|.\n\
+    Активує {SelfName} один раз."
+  Name: Хибний ДНК
+  Description: На початку ходу {PlayerName:g}, додає {Value1:plural one='% |Транскрипт
+    ДНК|' few='% |Транскрипти ДНК|' many='% |Транскриптів ДНК|'} в руку. {Value1:plural
+    one='Він матиме' other='Вони матимуть'} |Знищується| та |Ефемерність|.
+MoodChangeBlock:
+  Name: Бар'єр А.Т.
+PeaceBlock:
+  Description: Наприкінці свого ходу, якщо {PlayerName} у стані |Спокою|, отримуєш
+    {Value1} |Блоку|.
+  Name: Самоконтроль
+KoishiFire:
+  Name: Мінливість
+  Description: "Отримуєш {Value1} |Сили|.\n|У Пристрасті|: Отримуєш ще {Value2} |Сили|.\n\
+    |У Спокої|: Отримуєш {Value1} |Духу| натомість."
+TheHermit:
+  UpgradedDescription: "|Прогноз| {Scry}.\n|Покращує| верхню карту стосу добору.\n\
+    Отримуєш {Mana}.\n|У Фузі|: {SelfName} коштуватиме <sprite=\"ManaSprite\" name=\"\
+    0\">."
+  Name: 'Таро: Відлюдник'
+  Description: "|Прогноз| {Scry}.\nОтримуєш {Mana}.\n|У Фузі|: {SelfName} коштуватиме\
+    \ <sprite=\"ManaSprite\" name=\"0\">."
+DuplicateFollower:
+  Name: Самотнє Серце
+  Description: "Завдає {Damage} шкоди.\nОтримуєш {Mana}.\n|На початку битви|: Додає\
+    \ {Value1:plural one='% |Копію|' few='% |Копії|' many='|Копій|'} {SelfName} до\
+    \ стосу добору."
+  ExtraDescription1: "Завдає {Damage} шкоди.\nОтримуєш {Mana}."
+AncestorDream:
+  Name: Родові Сни
+  Description: "Завдає {Damage} шкоди усім ворогам.\n|Сон| {Value1}."
+YaoguaiLaser:
+  Name: ЕЕГ Йокая
+  Description: "Завдає {Damage} шкоди.\nВиконує |Додаткову Атаку|.\n|Інтуїція|: Виконує\
+    \ ще одну |Додаткову Атаку|."
+KoishiWake:
+  Name: Прийти до Тями
+  Description: "Полишаєш свій |Психічний Стан|. Зцілює {Value1} здоров'я.\n|У Фузі|:\
+    \ Отримуєш {Shield} |Бар'єру|."
+  FlavorText: '"Де я?"'
+PeaceMemory:
+  Description: Активує |Спокій|.
+  Name: Безтурботні Спогади
+KoishiGainColorless:
+  Name: Чистий Розум
+  Description: Отримуєш {Mana}.
+  UpgradedDescription: Отримуєш {Mana}.
+KoishiSpringOut:
+  Name: Прогулянка Навесні
+  Description: "|У Спокої|: Добираєш {Value1:plural one='% карту' few='% карти' many='%\
+    \ карт'}.\nУ іншому ж випадку, активує |Спокій|."
+InspirationDefense:
+  Name: Момент Натхнення
+  Description: "Отримуєш {Block} |Блоку|.\nОтримуєш {Value1} |Натхнення|."
+KoishiFlower:
+  Name: Норовлива Троянда
+  Description: "Отримуєш {Block} |Блоку|.\nЗавдає {Damage} шкоди.\nДодає {Value1}\
+    \ |Літні Квіти| в руку.\n|У Фузі|: Додає {Value2} натомість."
+KoishiGrowAttack:
+  Name: Шалені Терни
+  Description: "Завдає {Damage} шкоди.\n|Зростання|: Збільшує шкоду на {Value1}.\n\
+    |У Спокої|: {SelfName} коштуватимуть {Mana}."
