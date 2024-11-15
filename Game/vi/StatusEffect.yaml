@@ -1162,6 +1162,10 @@ CloseEyeSe:
   Brief: Không thể nhìn đến ý định của kẻ địch trong một khoảng thời gian
 KoishiDnaSe:
   Name: Thiếu Nữ Yêu Quái Của Hartmann
+  Description: Khi bắt đầu lượt của {PlayerName}, lập tức chơi {Level} lá trên cùng
+    Chồng Bài Bốc.
+  Brief: Khi bắt đầu lượt của {PlayerName}, lập tức chơi một số lá trên cùng Chồng
+    Bài Bốc.
 TempControl:
   Name: Tạm Thời Khống Chế Lực
   Brief: "|Khống Chế Lực| tăng lên cho đến cuối lượt.\n|Khống Chế Lực| đề thăng bộ\
@@ -1220,8 +1224,8 @@ Tired:
   Description: Chỉ có {Limit} lá bài có thể được chơi trong lượt. Còn thừa {Count}
     lá
   ExtraDescription: "Chỉ có {Limit} lá bài có thể được chơi trong lượt. Còn thừa {Count}\
-    \ lá\n{SelfName} còn chưa có hiệu lực, và sẽ chỉ bị xóa sau lượt mà nó được kích\
-    \ hoạt."
+    \ lá\n{SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt mà nó\
+    \ có tác dụng kết thúc."
 GainInspirationSe:
   Name: Linh Cảm Không Ngừng
   Description: "Vào cuối lượt của {PlayerName}, thêm {Level} |Tôi Tìm Ra Rồi!| vào\
@@ -1237,8 +1241,49 @@ GainZeroAttackSe:
 LoveFireSe:
   Name: Lửa Than Tình Yêu
   Description: "Vào cuối lượt của {PlayerName}, nếu một |Tấn Công Liên Tiếp| được\
-    \ thực hiện, sẽ nhận được {Level} |Hỏa Lực|.\nĐã thực hiện một lần |Tấn Công Liên\
-    \ Tiếp| trong lượt."
+    \ thực hiện, sẽ nhận được {Level} |Hỏa Lực|.\nĐã thực hiện |Tấn Công Liên Tiếp|\
+    \ trong lượt."
   Brief: "Vào cuối lượt của {PlayerName}, nếu một |Tấn Công Liên Tiếp| được thực hiện,\
-    \ sẽ nhận được một số |Hỏa Lực|.\nĐã thực hiện một lần |Tấn Công Liên Tiếp| trong\
-    \ lượt."
+    \ sẽ nhận được một số |Hỏa Lực|."
+  ExtraDescription: "Vào cuối lượt của {PlayerName}, nếu một |Tấn Công Liên Tiếp|\
+    \ được thực hiện, sẽ nhận được {Level} |Hỏa Lực|.\nChưa thực hiện |Tấn Công Liên\
+    \ Tiếp| trong lượt."
+ButterflyDreamSe:
+  Description: Vào đầu lượt của {PlayerName}, thêm |p:hoàn toàn ngẫu nhiên| {Level}
+    lá bài Hiếm vào tay. {Level:plural one='Nó' other='Chúng'} có |Trục Xuất|, |Hư
+    Vô| và mana của bất kỳ màu nào có thể được sử dụng để trả phí mana.
+  Name: Trang Chu Mộng Hồ Điệp
+  Brief: Vào đầu lượt của {PlayerName}, thêm |p:hoàn toàn ngẫu nhiên| một số lá bài
+    Hiếm vào tay. Chúng có |Trục Xuất|, |Hư Vô| và mana của bất kỳ màu nào có thể
+    được sử dụng để trả phí mana.
+KoishiPhoneSe:
+  Name: Cuộc Gọi Khủng Bố Đáng Yêu
+  Description: "Bất cứ khi nào một lá Tấn Công được kích hoạt, thực hiện {Level} lần\
+    \ |Tấn Công Liên Tiếp|.\nNếu không có lá |Liên Tiếp| nào trong Chồng Bài Bốc,\
+    \ thay vào đó chơi |Điện Thoại Vang Lên|."
+  Brief: "Bất cứ khi nào một lá Tấn Công được kích hoạt, thực hiện một số lần |Tấn\
+    \ Công Liên Tiếp|.\nNếu không có lá |Liên Tiếp| nào trong Chồng Bài Bốc, thay\
+    \ vào đó chơi |Điện Thoại Vang Lên|."
+BailianMagicSe:
+  Description: Trong lượt này, {Level} lá thẻ Năng Lực tiếp theo sẽ được chơi hai
+    lần.
+  Name: Niệm Chú Ma Thần
+  Brief: Trong lượt này, một số lá thẻ Năng Lực tiếp theo sẽ được chơi hai lần.
+JinziDoppelgangerSe:
+  Name: Cặp Siêu Song Trùng Thế Kỷ
+  Description: '{Level} lá đầu tiên được chơi trong lượt của {PlayerName} sẽ được
+    chơi hai lần. Còn thừa {Count} lá.'
+  Brief: Một số lá đầu tiên được chơi trong lượt của {PlayerName} sẽ được chơi hai
+    lần.
+UpgradeAllHandSe:
+  Name: Tâm Linh Khóa
+  Description: Vào đầu lượt tiếp theo của {PlayerName}, |Nâng Cấp| mỗi lá bài trên
+    tay.
+  ExtraDescription: "Vào đầu lượt tiếp theo của {PlayerName}, |Nâng Cấp| mỗi lá bài\
+    \ trên tay.\n{SelfName} chưa bắt đầu kích hoạt và sẽ chỉ bị xóa đi sau khi lượt\
+    \ mà nó có tác dụng kết thúc."
+  Brief: Vào đầu lượt tiếp theo của {PlayerName}, |Nâng Cấp| mỗi lá bài trên tay.
+DreamExpressSe:
+  Description: Vào cuối lượt của {PlayerName}, |Nhập Mộng| {Level}, sau đó gây sát
+    thương cho mỗi kẻ địch bằng gấp đôi tổng chi phí mana của chúng.
+  Name: Mộng Ảo Tàu Nhanh
