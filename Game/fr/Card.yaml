@@ -2830,9 +2830,9 @@ LarvaDefense:
     \ {Value2} |Poison{Value2:plural one='' other='s'}|."
   FlavorText: Il faut du courage pour voler derrière Larva.
 FakeCard:
-  Description: "|Komeiji Koishi| Dort encore chez elle. \nRestez à l'écoute des futures\
-    \ mises à jour."
-  Name: Rêve d'ancêtre (faux)
+  Description: "Cette carte est toujours en accès anticipé.\nVeuillez revenir pour\
+    \ une future mise à jour."
+  Name: Conte du Coupeur de Bambou (faux)
 HistoryCard:
   Description: "Cette carte a été supprimée dans la version actuelle.\nCarte ID :\
     \ {CardId}"
@@ -2871,22 +2871,22 @@ SanaeRestart:
     \ dans la pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez\
     \ {Mana}."
 LoveFire:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Pour chaque\
-    \ {Mana} dépensé| : dégâts augmentés de {Value1}.\nLe mana payé est enregistré\
-    \ et sera rendu la prochaine fois que la carte est jouée."
+  Description: "Effectuez une |Attaque de suivi|.\nLorsque {PlayerName} finit son\
+    \ tour, si une |Attaque de suivi| a été effectué, gagnez {Value1} |Puissance{Value1:plural\
+    \ one='' other='s'}|."
   Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Rêve|\
     \ {Value1}."
 AliceAttackW:
-  Name: Bunraku du Futur
+  Name: Lances de Poupée
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 AliceAttackB:
-  Name: Retour au Néant
+  Name: Flanc Foudroyé
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 AliceBlockU:
-  Name: Barrière de Tirs
+  Name: Magie Défensive
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 DeployShanghai:
   Name: Déployer la Poupée Shanghai
@@ -2920,9 +2920,9 @@ FlowerGone:
     \ : Gagnez {Shield} |Barrière{Value1:plural one='' other='s'}| à la place."
 PerfectCrime:
   Name: Crime Parfait
-  Description: "Volez l'|Esprit|, l'|Esquive|, les |Amulettes|, le |Camouflage Optique|,\
-    \ et la |Perfection| de la cible.\nInfligez {Damage} dégât{Damage:plural one=''\
-    \ other='s'}."
+  Description: "Volez à la cible l'|Esquive|, le |Camouflage Optique|, la |Perfection|\
+    \ et jusqu'à {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural\
+    \ one='' other='s'}|."
 PoisonTeaParty:
   Name: Thé Suspect
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
@@ -2954,6 +2954,9 @@ YukariFriend:
   ExtraDescription1: '{FriendA}Choisissez une carte |exilée| et remettez-la dans la
     main.'
   DetailText: "{SelfName} ne peut pas être produit par l'effet de l'|u:ultime|."
+  ExtraDescription3: '{FriendU}Lorsque {PlayerName} débute son tour, ajoutez une carte
+    neutre tricolore aléatoire à la main. Elle |coûte temporairement| {Mana} et a
+    |Éthéré|.'
 NightMana1:
   Name: 'Longue Nuit : 23h00'
   Description: "S'il y a des {SelfName} dans la main, toutes les cartes coûtent {Mana}\
@@ -3098,7 +3101,7 @@ DebugExileDrawDiscard:
   Name: Efface la Pile de Cartes
   Description: 'Carte de test : Détruit toutes les piles de cartes tirées/rejetées.'
 DebugAddRandomCardsSlow:
-  Name: Ajouter des cartes aléatoires (lentement)
+  Name: Ajouter des Cartes Aléatoires (Lentement)
   Description: "Carte de test : ajoutez lentement {Value1} carte{Value1:plural one='\
     \ aléatoire' other='s aléatoires'} à la pile de pioche/défausse."
 DebugAddDeckCards:
@@ -3381,14 +3384,22 @@ MoodChangeBlock:
     |Bouclier{Value1:plural one='' other='s'}|.
 PsycheLock:
   Name: Verrou Mental
-  Description: "Infligez {Damage} dégât{}Damage:plural one='' other='s' à chaque ennemi\
-    \ {Value1} fois.\nObtenez {Mana}.\nLorsque {SelfName} est en main, {PlayerName}\
-    \ doit entrer dans trois |États Mentaux| différents avant de pouvoir être joué.\
-    \ ({Count} états restants)"
-  NonbattleDescription: "Infligez {Damage} dégât{}Damage:plural one='' other='s' à\
-    \ chaque ennemi {Value1} fois.\nObtenez {Mana}.\nLorsque {SelfName} est en main,\
-    \ {PlayerName} doit entrer dans trois |États Mentaux| différents avant de pouvoir\
-    \ être joué."
+  Description: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\nNe\
+    \ peut être joué que si {PlayerName} est entré dans 3 |états mentaux| différents\
+    \ pendant que {SelfName} est dans la main. ({Count} restant{Count:plural one=''\
+    \ other='s'})"
+  NonbattleDescription: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\n\
+    Ne peut être joué que si {PlayerName} est entré dans 3 |états mentaux| différents\
+    \ pendant que {SelfName} est dans la main."
+  UpgradedDescription: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\n\
+    Lorsque {PlayerName} débute son prochain tour, |Améliorez| toutes les cartes en\
+    \ main.\nNe peut être joué que si {PlayerName} est entré dans 3 |états mentaux|\
+    \ différents pendant que {SelfName} est dans la main. ({Count} restant{Count:plural\
+    \ one='' other='s'})"
+  UpgradedNonbattleDescription: "Terminez le tour, et {PlayerName} joue un tour supplémentaire.\n\
+    Lorsque {PlayerName} débute son prochain tour, |Améliorez| toutes les cartes en\
+    \ main.\nNe peut être joué que si {PlayerName} est entré dans 3 |états mentaux|\
+    \ différents pendant que {SelfName} est dans la main."
 LunaticPassion:
   Name: Amour Fou
   Description: "L'augmentation des dégâts de |Passion| est modifiée à {Pourcentage}\
@@ -3531,3 +3542,128 @@ GainZeroAttack:
   UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural\
     \ one='' other='s'} d'ADN| à la main. {Value1:plural one='elle a' other='elles\
     \ ont'} |Exil| et |Éthéré|.\nDéclenchez {SelfName} une fois."
+BlackEpiphany:
+  Name: Conscience Séparée
+  Description: "Entrez dans l'état |Fugue|.\nSeule{Value1:plural one='' other='s'}\
+    \ {Value1} carte{Value1:plural one=' peut être jouée' other='s peuvent être jouées'}\
+    \ lorsque {PlayerName} joue son prochain tour."
+FakeBullet:
+  Name: Danmaku Imaginaire
+  Description: "Effectuez {Value1} |Attaque{Value1:plural one='' other='s'} de suivi|.\n\
+    S'il n'y a pas assez de cartes de |Suivi| dans la pioche, des cartes aléatoires\
+    \ de |Suivi| seront générées pour effectuer l'|Attaque de suivi{Value1:plural\
+    \ one='' other='s'}|."
+KoishiMana:
+  Name: Potentiel Libéré
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    Gagnez {Mana}."
+KoishiSpark:
+  Name: Polygraphe Yōkai
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
+GainInspiration:
+  Name: Laisse-moi Réfléchir
+  Description: "Lorsque {PlayerName} finit son tour, ajoutez un |Eureka!| à la pioche.\n"
+TheFool:
+  Name: 'Tarot : Le Fou'
+  Description: "|Sonde| {Scry}.\nJouez la première carte de la pioche."
+KoishiDna:
+  Name: Fille Yōkai de Hartmann
+  Description: Lorsque {PlayerName} débute son tour, jouez la première carte de la
+    pioche.
+KoishiAttackX:
+  Name: Rose Infernale
+  Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"2\"> dépensé| : infligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi et gagnez {Mana}."
+Anatta:
+  Name: Anatta
+  Description: "Augmente le gain de mana en quittant |Calme| à {Mana}.\nEntrez en\
+    \ état |Calme|."
+ButterflyDream:
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Value1} carte{Value1:plural
+    one=' rare' other='s rares'} |p:complètement aléatoire{Value1:plural one='' other='s'}|
+    à la main. {Value1:plural one='Cette carte a' other='Ces cartes ont'} |Exil|,
+    |Éthéré| et le mana de n'importe quelle couleur peut être dépensé pour payer {Value1:plural
+    one='son' other='leur'} coût en mana.
+  Name: Le Rêve du Papillon
+  DetailText: "Ces |e:cartes alternatives| ignorent le mana total, la couleur de mana\
+    \ et les restrictions de personnage.\n{SelfName} ne peut pas être produit par\
+    \ cet effet.\nLes cartes avec des coûts X ne peuvent pas être produites par cet\
+    \ effet."
+KokoroFriend:
+  Description: '{FriendP}|Rêve| {Value1}.'
+  ExtraDescription1: "{FriendA}Entrez dans l'état |Passion|."
+  ExtraDescription2: "{FriendA2}Entrez dans l'état |Calme|."
+  ExtraDescription3: "{FriendU}Entrez dans l'état |Fugue|."
+  Name: Kokoro, Persona Éveillée
+EnterEpiphany:
+  Name: Épiphanie
+  Description: Entrez dans l'état |Fugue|.
+KoishiPhone:
+  Name: Appel Terriblement Mignon
+  Description: "Pour chaque carte d'attaque jouée, effectuez une |Attaque de suivi|.\n\
+    S'il n'y a pas de cartes de |Suivi| dans la pioche, |Dring-Dring| sera utilisé\
+    \ comme carte de |Suivi|."
+FollowAttackFiller:
+  Name: Dring-Dring
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+KoishiDive:
+  Name: Plongée Subconsciente
+  Description: "Entrez dans l'état |Calme|.\n|Rêve| {Value1}.\nRenvoyez jusqu'à {Value2}\
+    \ carte{Value2:plural one='' other='s'} de la pile de défausse dans la main."
+DollBlock:
+  Name: Bouclier de Poupée
+Zhendijianzao:
+  Name: Création de Territoire
+DreamExpress:
+  Name: Rêve Express
+  Description: Lorsque{PlayerName} finit son tour, |Rêve| {Value1}, puis infligez
+    des dégâts à chaque ennemi égaux à deux fois {Value1:plural one='le coût total
+    de la carte |Rêvée|' other='la somme des coûts totaux des cartes |Rêvées|'}.
+BailianMagic:
+  Name: Récitation du Diable
+  Description: Ce tour-ci, {Value1:plural one='la prochaine carte |Pouvoir| sera jouée'
+    other='les % prochaines cartes |Pouvoir| seront jouées'} deux fois.
+JinziDoppelganger:
+  Name: Doppelgängers du Siècle
+  Description: À chaque tour, La première carte jouée par {PlayerName} est jouée deux
+    fois.
+DebugAddRandomCardsToExile:
+  Name: Ajouter des Cartes Aléatoires à l'Exil
+  Description: "Carte de test : ajoutez {Value1} carte{Value1:plural one='' other='s'}\
+    \ à l'Exil."
+DebugAddRandomCardsToExileSlow:
+  Name: Ajouter des Cartes Aléatoires à l'Exil (Lentement)
+  Description: "Carte de test : ajoutez lentement {Value1} carte{Value1:plural one=''\
+    \ other='s'} à l'Exil."
+DebugRemoveAllHandWhenDraw:
+  Name: Retire la Main Lorsque Piochée
+  Description: 'Carte de test : une fois piochée, retirez du combat toutes les cartes
+    de votre main (y compris celle-ci).'
+DebugUpgradeAllZone:
+  Name: Améliore les Cartes dans Chaque Pile
+  Description: 'Carte de test : améliorez les {Value1} premières cartes de la pile
+    de pioche et de défausse.'
+HuiyeSuperExtraTurn:
+  Name: '"Fin de la Nuit Éternelle"'
+  Description: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
+    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
+    \ et seule{Value1:plural one=' %' other='s %'} carte{Value1:plural one=' peut\
+    \ être jouée' other='s peuvent être jouées'} ."
+  DetailText: "Le tour supplémentaire de {SelfName} a lieu avant tout autre tour supplémentaire.\n\
+    Après avoir joué {SelfName}, vous pouvez survoler les icônes d'état que {PlayerName}\
+    \ a pour vérifier les détails du tour en cours."
+KoishiDiscard:
+  Name: Amnésie Inconsciente
+  Description: '|Lorsque piochée| : défaussez une carte au hasard.'
+  ExtraDescription1: "|Lorsque piochée| : défaussez une carte au hasard.\n(Carte défaussée\
+    \ : {CardName})"
+AttackX:
+  Name: continuer à attaquer après la défaite de la cible
+  Description: "|Pour chaque {Mana} dépensé| : infligez {Damage} dégât{Damage:plural\
+    \ one='' other='s'}.\nLorsque {SelfName} a vaincu une cible, si elle a encore\
+    \ des attaques en excès, elle continue d'attaquer en utilisant un ennemi aléatoire\
+    \ comme nouvelle cible."
+DebugRemoveHand:
+  Name: Supprimer la Main
+  Description: "Carte de test : choisissez n'importe quel nombre de cartes dans votre\
+    \ main à retirer du combat."
