@@ -2714,7 +2714,7 @@ AliceAttackB:
   Name: Flanqueo Destellante
 LoveFire:
   Name: Ascuas del Amor
-  Description: "Realiza un |Ataque Continuo|.\nAl final del turno de {PlayerName},\
+  Description: "Realiza un |Ataque Continuo|.\nAl final de cada turno de {PlayerName},\
     \ si se realizó un |Ataque Continuo|, gana {Value1} de |Poder|."
 BabyDream:
   Name: Sueño del Embrión
@@ -3167,7 +3167,7 @@ PassionDraw:
     carta{Value1:plural one='' other='s'}.
 PeaceBlock:
   Name: Autocontrol
-  Description: Al final del turno de {PlayerName}, si está en el estado |Serenidad|,
+  Description: Al final de cada turno de {PlayerName}, si está en el estado |Serenidad|,
     gana {Value1} de |Bloqueo|.
 MoodChangeBlock:
   Name: Campo A.T.
@@ -3223,8 +3223,8 @@ KoishiKiss:
     \ |Ataque Continuo|."
   Name: Beso al Aire
 BaseFollower:
-  Description: "Inflige {Damage} de daño.\nAl comienzo del combate y al barajar, esta\
-    \ carta se coloca en la parte inferior de la pila de robo."
+  Description: "Inflige {Damage} de daño.\nAl comienzo del combate y al barajar, {SelfName}\
+    \ se coloca en la parte inferior de la pila de robo."
   Name: Amor Instintivo
 PassionMemory:
   Description: Entra en el estado |Pasión|.
@@ -3234,7 +3234,7 @@ Claustrophobia:
   Name: Claustrofobia
 MultiFollower:
   Description: "Inflige {Damage} de daño {Value1:plural one='% vez' other='% veces'}.\n\
-    Al comienzo del combate y al barajar, esta carta se coloca en la parte inferior\
+    Al comienzo del combate y al barajar, {SelfName} se coloca en la parte inferior\
     \ de la pila de robo."
   Name: Danza del Corazón
 ToAllFollower:
@@ -3326,10 +3326,10 @@ KoishiMana:
   FlavorText: Cuando usas el 25% de tu cerebro.
 KoishiSpark:
   Description: Inflige {Damage} de daño a cada enemigo.
-  Name: Polígrafo Youkai
+  Name: Última Llamada de una Noche Romántica
 KoishiDna:
-  Description: Al comienzo del turno de {PlayerName}, juega la carta superior de la
-    pila de robo.
+  Description: Al comienzo de cada turno de {PlayerName}, juega la carta superior
+    de la pila de robo.
   Name: La Chica Youkai de Hartmann
 KoishiAttackX:
   Description: '|Por cada <sprite="ManaSprite" name="2"> gastados|: inflige {Damage}
@@ -3340,7 +3340,7 @@ Anatta:
     \ el estado |Serenidad|."
   Name: Anatta
 ButterflyDream:
-  Description: Al comienzo del turno de {PlayerName}, agrega {Value1} carta{Value1:plural
+  Description: Al comienzo de cada turno de {PlayerName}, agrega {Value1} carta{Value1:plural
     one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
     a la mano. {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|, y se
     puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'
@@ -3361,7 +3361,7 @@ EnterEpiphany:
   Name: Epifanía
 DreamExpress:
   Name: Sueño Express
-  Description: Al final del turno de {PlayerName}, gana {Value1} |Sueño{Value1:plural
+  Description: Al final de cada turno de {PlayerName}, gana {Value1} |Sueño{Value1:plural
     one='' other='s'}|, luego inflige daño a cada enemigo igual al doble d{Value1:plural
     one='el coste total' other='e la suma de los costes totales'} de la carta{Value1:plural
     one='' other='s'} |Soñada{Value1:plural one='' other='s'}|.
@@ -3374,9 +3374,10 @@ HuiyeSuperExtraTurn:
     \ adicional.\nDespués de jugar con {SelfName}, puedes pasar el cursor sobre el\
     \ ícono del estado de {PlayerName} para consultar los detalles del turno actual."
   Name: '"Fin de la Noche Imperecedera"'
-  Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
+  Description: "Al final de cada |Turno Natural| de {PlayerName}, toma un turno extra.\n\
     El |Bloqueo| y la |Evasión| no se pierden al comienzo de ese turno adicional,\
-    \ y solo se pueden jugar {Value1} carta{Value1:plural one='' other='s'}."
+    \ y solo se puede{Value1:plural one='' other='n'} jugar {Value1} carta{Value1:plural\
+    \ one='' other='s'}."
 KoishiDiscard:
   Description: '|Cuando se roba|: descarta una carta aleatoria.'
   ExtraDescription1: "|Cuando se roba|: descarta una carta aleatoria.\nDescartado:\
@@ -3417,21 +3418,21 @@ InspirationDefense:
   Name: Momento de Inspiración
 GainZeroAttack:
   Name: Defecto del ADN
-  UpgradedDescription: "Al comienzo del turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural\
-    \ one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural one='' other='n'}\
-    \ |Exilio| y |Etéreo|.\nSe activa {SelfName} una vez más."
-  Description: Al comienzo del turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural
+  UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega {Value1}\
+    \ |Transcripci{Value1:plural one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural\
+    \ one='' other='n'} |Exilio| y |Etéreo|.\nSe activa {SelfName} una vez más."
+  Description: Al comienzo de cada turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural
     one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural one='' other='n'}
     |Exilio| y |Etéreo|.
 GainInspiration:
   Name: Déjame Pensarlo
-  Description: "Al final del turno de {PlayerName}, agrega una |¡Eureka!| a la pila\
-    \ de robo.\n"
+  Description: "Al final de cada turno de {PlayerName}, agrega una |¡Eureka!| a la\
+    \ pila de robo.\n"
 KoishiDive:
   Name: Introspección Profunda
   Description: "Entra en el estado |Serenidad|.\nGana {Value1} |Sueño{Value1:plural\
-    \ one='' other='s'}|.\nDevuelve hasta {Value2} carta{Value2:plural one='' other='s'}\
-    \ de la pila de descarte a la mano."
+    \ one='' other='s'}|.\nDevuelve hasta {Value2} |Carta{Value2:plural one=' Soñada'\
+    \ other='s Soñadas'}| de la pila de descarte a la mano."
 KoishiPhone:
   Name: Llamada Terroríficamente Linda
   Description: "Siempre que se active una carta de ataque, realiza un |Ataque Continuo|.\n\
