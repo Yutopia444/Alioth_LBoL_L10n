@@ -3209,6 +3209,7 @@ DefaultPeace:
 FindInspiration:
   Name: Éclair de Génie
   Description: "Ajoutez {Value1} |Eureka!| à la pioche."
+  FlavorText: '"Ce pourrait-il... ? Que le coupable soit... moi ?"'
 InspirationCard:
   Name: Eureka!
   Description: '|Lorsque {SelfName} arrive en main| : gagnez {Mana}, gagnez {Value1}
@@ -3342,7 +3343,7 @@ KoishiZeroAttack:
   Name: Transcription d'ADN
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}."
 PassionAttackToDraw:
-  Name: Paranoïa Danmaku
+  Name: Cage de Roses
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
     Entrez dans l'état |Passion|.\nMélangez cette carte dans la pioche."
 FriendDraw:
@@ -3402,8 +3403,8 @@ PsycheLock:
     \ différents pendant que {SelfName} est dans la main."
 LunaticPassion:
   Name: Amour Fou
-  Description: "L'augmentation des dégâts de |Passion| est modifiée à {Percentage}\
-    \ %.\nEntrez dans l'état |Passion|."
+  Description: "Le modificateur de dégâts de |Passion| pour les attaques effectuées\
+    \ par {PlayerName} devient {Percentage} %.\nEntrez dans l'état |Passion|."
 AhongMana:
   UpgradedDescription: "|Quand {SelfName} arrive en main| : Ajoutez {Value1} |Vitalité{Value1:plural\
     \ one='' other='s'}| à la main, puis |Améliorez| {Value2} carte{Value2:plural\
@@ -3427,11 +3428,13 @@ KnifeDamageUp:
     Ajoutez {Value2} |Couteau{Value2:plural one='' other='x'} de lancer| à la main."
 KoishiKiss:
   Name: Baiser Aérien
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
-    \ une |Attaque de suivi|."
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAppliquez\
+    \ {Value1} |Faible{Value1:plural one='' other='s'}|.\nEffectuez une |Attaque de\
+    \ suivi|."
 BaseFollower:
   Name: Amour Instinctif
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAu début\
+    \ du combat et lors du mélange, {SelfName} est placé en bas de la pioche."
 PassionMemory:
   Name: Souvenir Passionné
   Description: Entrez dans l'état |Passion|.
@@ -3441,7 +3444,8 @@ Claustrophobia:
     \ : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|."
 MultiFollower:
   Name: Danse du Cœur
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
+    Au début du combat et lors du mélange, {SelfName} est placé en bas de la pioche."
 ToAllFollower:
   Name: Montée Émotionnelle
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
@@ -3474,6 +3478,7 @@ CloseEye:
 PlayDrawTop:
   Name: Action Inconsciente
   Description: Jouez la première carte de la pioche.
+  FlavorText: "\"Oh mon Dieu, j'ai joué un Transfert de Fonds !\""
 DuplicateFollower:
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez\
     \ {Mana}."
@@ -3490,7 +3495,7 @@ YaoguaiLaser:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
     \ une |Attaque de suivi|.\n|Instinct| : effectuez une |Attaque de suivi| supplémentaire."
 KoishiWake:
-  Name: Réinitialisation Mentale
+  Name: Reprise d'Esprit
   Description: "Quittez l'|État mental| actuel. Gagnez {Value1} point{Value1:plural\
     \ one='' other='s'} de vie.\n|Fugue| : Gagnez {Shield} |Barrière{Shield:plural\
     \ one='' other='s'}|."
@@ -3499,6 +3504,7 @@ KoishiGainColorless:
   Name: Esprit Calme
   Description: Gagnez {Mana}.
   UpgradedDescription: Gagnez {Mana}.
+  FlavorText: J'ai oublié quelle couleur ce mana avait.
 PeaceMemory:
   Name: Souvenir Serein
   Description: Entrez dans l'état |Calme|.
@@ -3553,8 +3559,9 @@ KoishiMana:
   Name: Potentiel Libéré
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     Gagnez {Mana}."
+  FlavorText: Quand vous utilisez 25% de votre cerveau.
 KoishiSpark:
-  Name: Polygraphe Yōkai
+  Name: Dernier Appel pour une Nuit Romantique
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
 GainInspiration:
   Name: Laisse-moi Réfléchir
@@ -3571,7 +3578,7 @@ KoishiAttackX:
   Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"2\"> dépensé| : infligez\
     \ {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi et gagnez {Mana}."
 Anatta:
-  Name: Anatta
+  Name: Anattā
   Description: "Augmente le gain de mana en quittant |Calme| à {Mana}.\nEntrez en\
     \ état |Calme|."
 ButterflyDream:
