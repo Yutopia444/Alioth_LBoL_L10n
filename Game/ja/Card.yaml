@@ -2309,7 +2309,7 @@ LeaveMoodDraw:
   Description: "カードを{Value1}枚引く。\n現在の|心境|を解除する。"
 AliceBlockU:
   Description: '{Block}|ブロック|を得る。'
-  Name: 弾幕結界
+  Name: 防御魔法
 DeployPenglai:
   Name: 蓬莱人形設置
 AhongMana:
@@ -2324,9 +2324,9 @@ UpgradeDoll:
   Name: 乙女文楽
 AliceAttackW:
   Description: '{Damage}ダメージを与える。'
-  Name: 未来文楽
+  Name: 人形槍撃
 AliceAttackB:
-  Name: リターンイナニメトネス
+  Name: サイドフラッシュ
   Description: '{Damage}ダメージを与える。'
 DeployShanghai:
   Name: 上海人形設置
@@ -2361,7 +2361,7 @@ LunaticPassion:
   Name: 狂える愛
   Description: "|熱情|によるダメージ補正が{Percentage}%になる。\n|熱情|に入る。"
 PassionAttackToDraw:
-  Name: 弾幕パラノイア
+  Name: ローズケージ
   Description: "{Damage}ダメージを{Value1}回与える。\n|熱情|に入る。\n{SelfName}を山札に戻す。"
 PassionDraw:
   Name: 両思いの恋煩い
@@ -2375,6 +2375,7 @@ InspirationCard:
 FindInspiration:
   Name: 天啓
   Description: "|閃いた！|を{Value1}枚山札に加える。"
+  FlavorText: 「まさか、犯人って私！？」
 KnifeDamageUp:
   Name: シルバープッシュ
   Description: "|投げナイフ|のダメージが{Value1}増加する。\n|投げナイフ|を{Value2}枚手札に加える。"
@@ -2396,6 +2397,7 @@ TheChariot:
 KoishiMana:
   Description: "敵全体に{Damage}ダメージを与える。\n{Mana}を得る。"
   Name: 潜在能力解放
+  FlavorText: 脳の開発度が25％に達する時。
 KoishiFlower:
   Description: "{Block}|ブロック|を得る。\n{Damage}ダメージを与える。\n|真夏の花|を{Value1}枚手札に加える。\n|無心|状態なら代わりに{Value2}枚加える。"
   Name: わんぱくな薔薇
@@ -2429,10 +2431,12 @@ AttackX:
   Name: 対象撃破後攻撃継続
 KoishiKiss:
   Name: 投げキッス
-  Description: "{Damage}ダメージを与える。\n|追加攻撃|を行う。"
+  Description: "{Damage}ダメージを与える。\n|脱力|{Value1}を与える。\n|追加攻撃|を行う。"
 BaseFollower:
   Name: 本能の愛
-  Description: '{Damage}ダメージを与える。'
+  Description: '{Damage}ダメージを与える。
+
+    戦闘開始時及びシャッフルした時、このカードを山札の底に置く。'
 PassionMemory:
   Name: 熱情の追憶
   Description: '|熱情|に入る。'
@@ -2441,7 +2445,9 @@ Claustrophobia:
   Description: "{Block}|ブロック|を得る。\n|直感|：追加で{Shield}バリアを得る。"
 MultiFollower:
   Name: ハートステップ
-  Description: '{Damage}ダメージを{Value1}回与える。'
+  Description: '{Damage}ダメージを{Value1}回与える。
+
+    戦闘開始時及びシャッフルした時、このカードを山札の底に置く。'
 ToAllFollower:
   Name: 高鳴る鼓動
   Description: "敵全体に{Damage}ダメージを与える。\n|無心|状態ならダメージを追加で1回与える。"
@@ -2454,6 +2460,7 @@ GrazeFollowAttack:
 PlayDrawTop:
   Name: 無意識の行動
   Description: 山札の一番上のカードを使用する。
+  FlavorText: 「送金ボタンをポチったなんてあり得ない！」
 CloseEye:
   Name: 閉じた心
   Description: "{Shield}|バリア|を得る。\n次のターンの間、敵の行動予定を見ることができなくなる。"
@@ -2468,6 +2475,7 @@ KoishiGainColorless:
   Name: 無の心
   Description: '{Mana}を得る。'
   UpgradedDescription: '{Mana}を得る。'
+  FlavorText: あの日見たマナの色を僕達はまだ知らない。
 PeaceMemory:
   Name: 平静の追憶
   Description: '|平静|に入る。'
@@ -2496,7 +2504,7 @@ FakeBullet:
   Name: 仮想弾幕
   Description: "|追加攻撃|を{Value1}回行う。\n山札の|追撃|カードが不足している場合、足りない枚数分ランダムな|追撃|カードの効果を発動する。"
 KoishiSpark:
-  Name: 浪漫的な夜のラストコール
+  Name: ロマンスの夜のラストコール
   Description: 敵全体に{Damage}ダメージを与える。
 GainInspiration:
   Description: "{PlayerName}のターン終了時、|閃いた！|を1枚山札に加える。\n"
