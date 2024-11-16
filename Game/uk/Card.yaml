@@ -533,6 +533,8 @@ YukariFriend:
     цього ходу. ({Fire})'
   ExtraDescription1: '{FriendA}Вибери карту зі |Знищених| й поверни її в руку.'
   DetailText: '{SelfName} не може згенеруватись з ефекту цього |u:Ультимативного Вміння|.'
+  ExtraDescription3: '{FriendU}На початку ходу {PlayerName:g}, додає випадкову трикольорову
+    нейтральну карту в руку. Вона |тимчасово коштуватиме| {Mana} та матиме {Ефемерність}.'
 BailianFire:
   Name: Вогні Дхарми
   Description: На початку ходу {PlayerName:g}, додає випадкову карту умінь в руку.
@@ -1749,21 +1751,20 @@ BabyDream:
   Description: "Отримуєш {Block} |Блоку|.\n|Сон| {Value1}."
 PerfectCrime:
   Name: Ідеальний Злочин
-  Description: "Краде у своєї цілі |Дух|, |Маневр|, |Амулет|, |Оптичний Камуфляж|,\
-    \ |Бездоганність|.\nЗавдає {Damage} шкоди."
+  Description: "Краде у своєї цілі |Маневр|, |Оптичний Камуфляж|, |Бездоганність|\
+    \ та до {Value1} |Сили| й |Духу|."
 LoveFire:
   Name: Ватра Кохання
-  Description: "Завдає {Damage} шкоди.\n|За кожну витрачену {Mana}|: {SelfName} збільшує\
-    \ свою шкоду на {Value1}.\n{SelfName} запам'ятовує витрачену на себе ману та повертає\
-    \ її наступного разу при своєму розіграші."
+  Description: "Виконує |Додаткову Атаку|.\nНаприкінці ходу {PlayerName:g}, якщо була\
+    \ виконана |Додаткова Атака|, отримуєш {Value1} |Сили|."
 AliceAttackB:
-  Name: Повернення Неоживлених
+  Name: Спалах Позаду
   Description: Завдає {Damage} шкоди.
 AliceAttackW:
   Description: Завдає {Damage} шкоди.
-  Name: Бунраку Майбутнього
+  Name: Лялькові Списи
 AliceBlockU:
-  Name: Бар'єр Данмаку
+  Name: Захисна Магія
   Description: Отримуєш {Block} |Блоку|.
 DeployShanghai:
   Name: Виставити Шанхайську Ляльку
@@ -3002,8 +3003,8 @@ NightMana2:
     Після розіграшу {FreezeTimes:plural one='% карти' other='% карт'}, {SelfName}\
     \ |Знищується|."
 FakeCard:
-  Name: Родові Сни (Підробка)
-  Description: "|d:|Койші Комейджі| все ще спить.\nПросимо очікувати майбутніх оновлень!|"
+  Name: Такеторі Моноґатарі (Підробка)
+  Description: "Ця карта все ще у Ранньому Доступі.\nПросимо очікувати майбутніх оновлень!|"
 InspirationCard:
   Description: '|При потраплянні {SelfName} в руку|: Дає {Mana}, {Value1} |Натхнення|
     й |Знищується|.'
@@ -3011,6 +3012,7 @@ InspirationCard:
 FindInspiration:
   Name: Спалах Натхнення
   Description: "Додає {Value1} |Еврика!| до стосу добору."
+  FlavorText: '"Чи може таке бути, що... Злодій це... Я?"'
 MeilingLianhua:
   Name: Яскравий Танець Хаосу
   Description: "Завдає {Damage} шкоди усім ворогам.\nОтримуєш {Value1} |Сили|."
@@ -3101,13 +3103,16 @@ KnifeDamageUp:
     \ в руку."
 KoishiKiss:
   Name: Повітряний Цьом
-  Description: "Завдає {Damage} шкоди.\nВиконує |Додаткову Атаку|."
+  Description: "Завдає {Damage} шкоди.\nЗавдає {Value1} |Слабкості|.\nВиконує |Додаткову\
+    \ Атаку|."
 BaseFollower:
   Name: Інстинктивне Кохання
-  Description: Завдає {Damage} шкоди.
+  Description: "Завдає {Damage} шкоди.\nНа початку битви та при тасуванні {SelfName}\
+    \ кладеться на низ стосу добору."
 PlayDrawTop:
   Description: Зіграє верхню карту зі стосу добору.
   Name: Несвідома Дія
+  FlavorText: '"От дідько, випадково Переказала Кошти!"'
 TheChariot:
   Name: 'Таро: Колісниця'
   Description: "|Прогноз| {Scry}.\nНа початку наступного свого ходу, {PlayerName}\
@@ -3121,8 +3126,9 @@ Claustrophobia:
   Description: "Отримуєш {Block} |Блоку|.\n|Інтуїція|: Отримуєш {Shield} |Бар'єру|."
 MultiFollower:
   Name: Танець Серця
-  Description: Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%
-    разів'}.
+  Description: "Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%\
+    \ разів'}.\nНа початку битви та при тасуванні {SelfName} кладеться на низ стосу\
+    \ добору."
 ToAllFollower:
   Name: Сплеск Емоцій
   Description: "Завдає {Damage} шкоди усім ворогам.\n|У Фузі|: Завдає шкоди додатковий\
@@ -3135,15 +3141,18 @@ GrazeFollowAttack:
   Description: "Отримуєш {Value1} |Маневру|.\nВиконує |Додаткову Атаку|."
 FollowAttackFiller:
   Name: Дзень-Дзелень
+  Description: Завдає {Damage} шкоди.
 PassionDraw:
   Name: Любовна Туга
+  Description: Щоразу як {PlayerName} входитиме у |Пристрасть|, добираєш {Value1:plural
+    one='% карту' few='% карти' many='% карт'}.
 CloseEye:
   FlavorText: Койші сама закрила своє третє око, яке вдивлялось у свідомість.
   Name: Закрите Серце
   Description: "Отримуєш {Shield} |Бар'єру|.\nВорожі наміри будуть прихованими протягом\
     \ наступного ходу {PlayerName:g}."
 PassionAttackToDraw:
-  Name: Параноя Данмаку
+  Name: Трояндові Ґрати
   Description: "Завдає {Damage} шкоди {Value1:plural one='% раз' few='% рази' many='%\
     \ разів'}.\nАктивує |Пристрасть|.\nЗамішує {SelfName} до стосу добору."
 PeaceEndTurn:
@@ -3167,6 +3176,8 @@ GainZeroAttack:
     one='Він матиме' other='Вони матимуть'} |Знищується| та |Ефемерність|.
 MoodChangeBlock:
   Name: Бар'єр А.Т.
+  Description: Щоразу як {PlayerName} змінюватиме |Ментальний Стан|, отримуєш {Value1}
+    |Блоку|.
 PeaceBlock:
   Description: Наприкінці свого ходу, якщо {PlayerName} у стані |Спокою|, отримуєш
     {Value1} |Блоку|.
@@ -3207,6 +3218,7 @@ KoishiGainColorless:
   Name: Чистий Розум
   Description: Отримуєш {Mana}.
   UpgradedDescription: Отримуєш {Mana}.
+  FlavorText: Забула, якого кольору була ця мана.
 KoishiSpringOut:
   Name: Прогулянка Навесні
   Description: "|У Спокої|: Добираєш {Value1:plural one='% карту' few='% карти' many='%\
@@ -3244,3 +3256,114 @@ BlackEpiphany:
     \ карт'} можна буде зіграти протягом наступного ходу {PlayerName:g}."
 FakeBullet:
   Name: Уявний Данмаку
+  Description: "Виконує {Value1:plural one='% |Додаткову Атаку|' few='% |Додаткові\
+    \ Атаки|' many='% |Додаткових Атак|'}.\nЯкщо у стосі добору недостатньо карт |Додаткової\
+    \ Атаки|, випадкові карти |Додаткової Атаки| з'являться для виконання |Додаткових\
+    \ Атак|."
+KoishiDiscard:
+  ExtraDescription1: "|При доборі|: Скидає випадкову карту.\nСкинуто: {CardName}"
+  Description: '|При доборі|: Скидає випадкову карту.'
+  Name: Несвідома Амнезія
+KoishiDive:
+  Name: Занурення у Підсвідомість
+  Description: "Активує |Спокій|.\n|Сон| {Value1}.\nПовертає до {Value2:plural one='%\
+    \ карти' other='% карт'} зі стосу скиду в руку."
+KokoroFriend:
+  Description: '{FriendP}|Сон| {Value1}.'
+  ExtraDescription1: '{FriendA}Активує |Пристрасть|.'
+  ExtraDescription3: '{FriendU}Активує |Фугу|.'
+  ExtraDescription2: '{FriendA2}Активує |Спокій|.'
+  Name: Кокоро, Пробуджена Персона
+EnterEpiphany:
+  Description: Активує |Фугу|.
+  Name: Богоявлення
+HuiyeSuperExtraTurn:
+  Name: '"Кінець Нетлінної Ночі"'
+  Description: "Наприкінці |Натурального Ходу| {PlayerName:g}, дає додатковий хід.\n\
+    |Блок| та |Маневр| не втрачаються на початку цього додаткового ходу, проте можна\
+    \ зіграти лише {Value1:plural one='% карту' few='% карти' many='% карт'}."
+  DetailText: "Кінець ходу від {SelfName} активуватиметься перед будь-яким іншим додатковим\
+    \ ходом.\nПісля розіграшу {SelfName}, ви можете навестись на рядок зі статусами\
+    \ {PlayerName:g} аби уточнити деталі активного ходу."
+DebugAddRandomCardsToExile:
+  Description: 'Тестова Карта: Додає {Value1} карт до Знищених.'
+  Name: Додати Випадкові Карти до Знищенних
+DebugAddRandomCardsToExileSlow:
+  Description: 'Тестова Карта: Повільно додає {Value1} карт до Знищених.'
+  Name: Додати Випадкові Карти до Знищенних (Повільно)
+LunaticPassion:
+  Description: "Множник шкоди від |Пристрасті| збільшується до {Percentage}%.\nАктивує\
+    \ |Пристрасть|."
+  Name: Божевільне Кохання
+KoishiDna:
+  Description: На початку ходу {PlayerName:g}, розігруватиметься верхня карта зі стосу
+    добору.
+  Name: Дівчина-Йокай Гартмана
+KoishiAttackX:
+  Name: Трояндове Пекло
+  Description: '|За кожні витрачені <sprite="ManaSprite" name="2"|: Завдає {Damage}
+    шкоди усім ворогам та дає {Mana}.'
+Anatta:
+  Name: Анатман
+  Description: "Збільшує отримувану ману під час виходу із |Спокою| до {Mana}.\nАктивує\
+    \ |Спокій|."
+ButterflyDream:
+  Name: Сон Метелика
+  DetailText: "Ці |e:випадкові карти| ігноруватимуть загальну ману, її колір та обмеження\
+    \ персонажем.\n{SelfName} не вдасться віднайти з цього ефекту.\nКарти з X Вартістю\
+    \ не вдасться віднайти з цього ефекту."
+  Description: На початку ходу {PlayerName:g}, додає {Value1:plural one='% |p:абсолютно
+    випадкову| Рідкісну карту' few='% |p:абсолютно випадкові| Рідкісні карти' many='%
+    |p:абсолютно випадкових| Рідкісних карт'} в руку. {Value1:plural one='Вона матиме'
+    other='Вони матимуть'} |Знищується|, |Ефемерність| й можна буде витратити ману
+    будь-якого кольору для розіграшу.
+KoishiPhone:
+  Name: Страшенно Милий Дзвінок
+  Description: "За кожну розіграну карту атаки, виконуватиметься |Додаткова Атака|.\n\
+    Якщо у стосі добору не буде |Карт Додаткової Атаки|, натомість гратиметься |Дзень-Дзелень|\
+    \ як |Додаткова Атака|."
+DollBlock:
+  Name: Ляльковий Щит
+DreamExpress:
+  Name: Експрес Снів
+  Description: Наприкінці ходу {PlayerName:g}, |Сон| {Value1}, після чого завдає усім
+    ворогам шкоди подвоєної від загальної суми вартості карт із |Сну|.
+BailianMagic:
+  Description: Цього ходу, {Value1:plural one='наступна карта' few='наступні % карти'
+    many='наступних % карт'} |Таланту| {Value1:plural one='активується' other='активуються'}
+    двічі.
+  Name: Диявольське Декламування
+DebugUpgradeAllZone:
+  Name: Покращити Карти у Всіх Стосах
+  Description: 'Тестова Карта: Покращує верхніх {Value1} карт у стосах добору та скиду.'
+DebugRemoveHand:
+  Description: 'Тестова Карта: Вибери будь-яку кількість карт у руці аби усунути їх
+    із битви.'
+  Name: Усунути Руку
+DebugRemoveAllHandWhenDraw:
+  Description: 'Тестова Карта: При доборі, усуває усі карти у руці із битви (включно
+    із цією).'
+  Name: Усуває Руку При Доборі
+KoishiMana:
+  FlavorText: Те саме коли використовуєш мозок лише на 25%.
+  Name: Вивільнений Потенціал
+  Description: "Завдає {Damage} шкоди усім ворогам.\nОтримуєш {Mana}."
+KoishiSpark:
+  Description: Завдає {Damage} шкоди усім ворогам.
+  Name: Кінцевий Дзвінок Ночі Кохання
+GainInspiration:
+  Name: Дай-но Подумати
+  Description: "Наприкінці ходу {PlayerName:g}, додає |Еврика!| до стосу добору.\n"
+TheFool:
+  Name: 'Таро: Блазень'
+  Description: "|Прогноз| {Scry}.\nРозігрує верхню карту стосу добору."
+Zhendijianzao:
+  Name: Утворення Кордонів
+JinziDoppelganger:
+  Name: Двійники Століття
+  Description: Перша зіграна карта під час ходу {PlayerName:g}, спрацьовуватиме двічі.
+AttackX:
+  Name: Продовжує атакувати після смерті цілі
+  Description: "|За кожну витрачену {Mana}|: Завдає {Damage} шкоди.\nПри смерті цілі\
+    \ {SelfName}, якщо присутні надлишкові атаки, вона продовжуватиме атакувати випадкового\
+    \ ворога як нову ціль."
