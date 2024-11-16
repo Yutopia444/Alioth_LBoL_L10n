@@ -1930,6 +1930,8 @@ YukariFriend:
     trong lượt này. ({Fire})'
   DetailText: Hiệu ứng từ |u:Tuyệt Kỹ| không thể sinh ra một lá {SelfName} khác.
   Name: Yukari, Kết Giới Ảo Tưởng
+  ExtraDescription3: '{FriendU}Vào đầu lượt của {PlayerName}, thêm một lá ba màu trung
+    lập ngẫu nhiên lên tay. Nó |tạm thời tốn| {Mana} và sở hữu thuộc tính |Hư Vô|.'
 ToolHeal:
   Name: Thức Ăn Đóng Hộp
   Description: "Hồi {Value1} HP.\n|Hạn Mức【{DeckCounter}】|"
@@ -2875,6 +2877,7 @@ QingeDraw:
   Name: Đạo Thai Động
   Description: "Nhận {Block} |Khiên|.\nBốc {Value1} lá, nếu lá được bốc bằng cách\
     \ này có tổng chi phí lớn hơn 1, bỏ nó."
+  FlavorText: Thủ thuật này còn được gọi là "Bắt tiểu quỷ".
 YonglinDraw:
   Description: Bốc {Value1} lá, những lá được bốc bằng cách này |tạm thời tốn| ít
     đi {Mana}.
@@ -3001,8 +3004,8 @@ KoishiDrawTop:
   Name: Ba Hoa Chích Choè
   Description: "Bốc {Value1} lá.\nĐặt {Value2} lá từ tay lên trên cùng Chồng Bài Bốc."
 KoishiWake:
-  Description: "Rời khỏi |Tâm Trạng| hiện tại. Hồi phục {Value1} HP.\nTrong |Mê Tẩu|:\
-    \ Nhận {Shield} |Hộ Giáp|."
+  Description: "Trong |Mê Tẩu|: Nhận {Shield} |Hộ Giáp|.\nRời khỏi |Tâm Trạng| hiện\
+    \ tại. Hồi phục {Value1} HP."
   FlavorText: '"Mình đây là đang ở đâu?"'
   Name: Hoàn Hồn
 KoishiGainColorless:
@@ -3072,6 +3075,9 @@ YaoguaiLaser:
     \ Giác|: Thực hiện thêm một lần |Đánh Liên Tiếp|."
 DreamExpress:
   Name: Giấc Mơ Tốc Hành
+  Description: Vào cuối lượt của {PlayerName}, |Nhập Mộng| {Value1}, sau đó gây cho
+    mỗi kẻ địch một lượng sát thương bằng gấp đôi chi phí mana của {Value1:plural
+    one='lá' other='các lá'} vừa được |Nhập Mộng|.
 AttackX:
   Description: "|Với mỗi {Mana} tiêu hao|: Gây {Damage} sát thương.\nKhi mục tiêu\
     \ chỉ định bị hạ gục, chọn ngẫu nhiên một mục tiêu mới để tiếp tục tấn công"
@@ -3161,3 +3167,45 @@ Anatta:
     \ {Mana}.\nTiến vào |Bình Thản|."
 HuiyeSuperExtraTurn:
   Name: '"Đêm Bất Diệt Phai Tàn"'
+  DetailText: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
+    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Value1}\
+    \ lá.\nSau khi chơi {SelfName}, bạn có thể di chuột đến biểu tượng của hiệu ứng\
+    \ này để kiểm tra chi tiết về lượt hiện tại."
+  Description: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
+    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Value1}\
+    \ lá."
+DebugRemoveAllHandWhenDraw:
+  Description: 'Thẻ gỡ lỗi: Khi được bốc, loại bỏ tất cả các lá trên tay khỏi trận
+    đấu (kể cả chính lá này).'
+  Name: Loại Bỏ Bài Khỏi Tay Khi Bốc
+KoishiDiscard:
+  Name: Vô Thức Lãng Quên
+  Description: '|Khi được bốc|: Bỏ một lá ngẫu nhiên.'
+  ExtraDescription1: "|Khi được bốc|: Bỏ một lá ngẫu nhiên.\nLá đã bỏ: {CardName}"
+DebugAddRandomCardsToExile:
+  Name: Thêm Lá Ngẫu Nhiên Vào Khu Trục Xuất
+  Description: 'Thẻ gỡ lỗi: Thêm {Value1} lá vào khu Trục Xuất.'
+DebugAddRandomCardsToExileSlow:
+  Name: Thêm Lá Ngẫu Nhiên Vào Khu Trục Xuất (Chậm)
+  Description: 'Thẻ gỡ lỗi: Lần lượt thêm {Value1} lá vào khu Trục Xuất.'
+DebugRemoveHand:
+  Name: Loại Bỏ Bài Khỏi Tay
+  Description: 'Thẻ gỡ lỗi: Chọn một số lượng tùy ý lá từ trên tay và loại bỏ chúng
+    khỏi trận đấu.'
+DebugUpgradeAllZone:
+  Name: Nâng Cấp Thẻ Trong Mỗi Chồng Bài
+  Description: 'Thẻ gỡ lỗi: Nâng cấp {Value1} lá nằm trên cùng trong Chồng Bài Bốc
+    và Chồng Bài bỏ'
+KokoroFriend:
+  Name: Kokoro, Thức Tỉnh Của Mặt Giả
+  Description: '{FriendP}|Nhập Mộng| {Value1}.'
+  ExtraDescription1: '{FriendA}Tiến vào |Nhiệt Tình|.'
+  ExtraDescription2: '{FriendA2}Tiến vào |Bình Thản|.'
+  ExtraDescription3: '{FriendU}Tiến vào |Mê Tẩu|.'
+EnterEpiphany:
+  Name: Đốn Ngộ
+  Description: Tiến vào |Mê Tẩu|.
+KoishiDive:
+  Name: Sâu Trong Tiềm Thức
+  Description: "Tiến vào |Bình Thản|.\n|Nhập Mộng| {Value1}.\nHoàn trả tối đa {Value2}\
+    \ lá đã |Nhập Mộng| từ Chồng Bài Bỏ lên tay."
