@@ -131,55 +131,56 @@ BattleFlow:
     \ méthode de mise en œuvre complexe garantira une expérience correcte au joueur).\n"
   Name: Combat et Tour de Jeu
 PlayCard:
-  Name: Utilisation de Carte de Suivi
-  Description: "La mise à jour du personnage Koishi a introduit les cartes de suivi.\
+  Name: Utilisation de Carte Consécutive
+  Description: "La mise à jour du personnage Koishi a introduit les |cartes consécutives|.\
     \ Cela fonctionne comme décrit ci-dessous, bien que les détails soient susceptibles\
-    \ de changer à mesure que Koishi est mise à jour.\n\n1. Jouer une carte normalement\
-    \ et jouer une carte de suivi sont deux actions différentes, similaires aux tours\
-    \ naturels et aux tours supplémentaires. Généralement, un carte de suivi jouée\
-    \ suivra une carte normale jouée.\n2. Une carte de suivi jouée ne déclenche pas\
-    \ d'effets qui réagissent à une carte normale jouée, comme le compte de cartes\
-    \ de l'ennemi Remilia, les comptes de cartes de \"Fin de la Nuit Éternelle\",\
-    \ \"Ivre\", \"Magnifique Glace d'Été\" et de merveilles telles que \"Montre de\
-    \ Poche en Argent\".\n3. Les cartes de suivi jouées donneront la priorité à la\
-    \ cible de la carte normale jouée. Si la cible n'est pas valide, une cible aléatoire\
-    \ sera sélectionnée. Cela affecte principalement les cartes d'attaque.\n4. Les\
-    \ cartes de suivi ne consomment pas de mana. Cependant, s'il y a d'autres effets\
-    \ qui empêchent la carte d'être jouée normalement, elle ne s'activera pas et entrera\
-    \ à la place dans la pile de défausse (effets comme Injouable, or insuffisant\
-    \ lorsque la carte a un coût en or, etc.)\n5. Si la carte de suivi jouée a un\
-    \ coût d'effet, comme celui de \"Fabrication de l'Actualité\", ces coûts d'effet\
-    \ auraient été annulables lorsque la carte est jouée normalement, mais si la carte\
-    \ est jouée comme carte de suivi, ils ne peuvent pas être annulé.\n6. Les cartes\
-    \ de suivi seront interrompues à la fin du combat, même si la carte qui aurait\
-    \ été jouée a des effets qui permettraient de gagner des points de vie, ou d'autres\
-    \ effets similaires.\n7. Interaction avec les cartes à coût X : La carte de suivi\
-    \ jouée sera considérée comme étant jouée à coût 0."
+    \ de changer à mesure que Koishi est mise à jour.\n\n1. Une carte normale jouée\
+    \ et une |carte consécutive| jouée sont deux actions différentes, similaires aux\
+    \ tours naturels et aux tours supplémentaires. Généralement, une |carte consécutive|\
+    \ sera jouée à la suite d'une carte normale.\n2. Une |carte consécutive| jouée\
+    \ ne déclenche pas d'effets qui réagissent à une carte normale jouée, comme le\
+    \ comptage de cartes de l'ennemi Remilia, les comptages de cartes de |Fin de la\
+    \ Nuit Éternelle|, |Ivre|, |Magnifique Glace d'Été| et de merveilles telles que\
+    \ |Montre de Poche en Argent|.\n3. Les |cartes consécutives| jouées donneront\
+    \ la priorité à la cible de la carte normale jouée. Si la cible n'est pas valide,\
+    \ une cible aléatoire sera sélectionnée. Cela affecte principalement les cartes\
+    \ d'attaque.\n4. Les |cartes consécutives| ne consomment pas de mana. Cependant,\
+    \ s'il y a d'autres effets qui empêchent la carte d'être jouée normalement, elle\
+    \ ne s'activera pas et entrera à la place dans la pile de défausse (effets comme\
+    \ Injouable, or insuffisant lorsque la carte a un coût en or, etc.)\n5. Si la\
+    \ |carte consécutive| jouée a un coût d'effet, comme celui de |Fabrication de\
+    \ l'Actualité|, ces coûts d'effet auraient été annulables lorsque la carte est\
+    \ jouée normalement, mais si la carte est jouée comme |carte consécutive|, ils\
+    \ ne peuvent pas être annulés.\n6. Les |cartes consécutives| seront interrompues\
+    \ à la fin du combat, même si la carte qui aurait été jouée a des effets qui permettraient\
+    \ de gagner des points de vie, ou d'autres effets similaires.\n7. Interaction\
+    \ avec les cartes à coût X : La |carte consécutive| jouée sera considérée comme\
+    \ étant jouée à coût 0."
 PlayTwice:
   Name: Jouer des Cartes Deux Fois
-  Description: "Un cas particulier des cartes de suivi jouées est celui de « jouer\
-    \ deux fois » à partir des effets de carte. Cela suit les règles suivantes.\n\n\
-    1. Il s'agit d'un effet qui s'applique à une carte normale jouée, ce qui signifie\
-    \ que si la carte jouée est une carte de suivi, elle ne sera pas jouée deux fois.\n\
-    2. Comment cela fonctionne en détail : lorsqu'une carte normale est jouée, s'il\
-    \ elle doit être joué deux fois, un instantané de la carte sera créé avant que\
-    \ la carte ne soit jouée, et une fois la carte résolue, l'instantané sera joué,\
-    \ et l'instantané sera retiré du combat après utilisation.\n3. L'instantané est\
-    \ différent des copies de cartes normales ; les règles qui s'appliquent à la copie\
-    \ ne s'appliquent pas à l'instantané.\nAvantages pour le joueur : Le joueur peut\
-    \ utiliser la compétence ultime d'un allié deux fois, utiliser un outil deux fois\
-    \ mais ne consommer qu'un seul compte limité et peut utiliser \"Dévorer l'Histoire\"\
-    \ deux fois.\nInconvénients pour le joueur : La copie d'un allié ne peut pas être\
-    \ obtenue lors de l'invocation d'un allié, et la croissance sur les cartes ne\
-    \ peut pas être déclenchée deux fois.\nLa raison pour laquelle cela est géré différemment\
-    \ de Slay the Spire est à cause de l'existence des alliés ; vous ne voulez certainement\
-    \ pas invoquer « Daiyousei, Assistante d'Enquête » uniquement pour utiliser immédiatement\
-    \ sa compétence active.\n4. Le joueur ne peut pas obtenir l'instantané, ni une\
-    \ copie de l'instantané. Par exemple, lorsqu'une carte avec Echo est jouée deux\
-    \ fois, l'instantané ne produira pas de copie.\n5. Interactions avec les tours\
-    \ supplémentaires : les instantanés de \"Marches du Temps\" ne prendront pas effet,\
-    \ et la plupart des autres cartes donnant un tour supplémentaire feront gagner\
-    \ deux tours supplémentaires et ne mettront fin qu'au tour en cours. (Encore à\
-    \ déterminer si c'est trop puissant)\n6. Interactions avec les cartes à coût X\
-    \ : les instantanés héritent du mana payé pour jouer la carte d'origine, et il\
-    \ y aura deux déclenchements complets."
+  Description: "Un cas particulier des |cartes consécutives| jouées est celui de «\
+    \ jouer deux fois » à partir des effets de carte. Cela suit les règles suivantes.\n\
+    \n1. Il s'agit d'un effet qui s'applique à une carte normale jouée, ce qui signifie\
+    \ que si la carte jouée est une |carte consécutive|, elle ne sera pas jouée deux\
+    \ fois.\n2. Comment cela fonctionne en détail : lorsqu'une carte normale est jouée,\
+    \ s'il elle doit être joué deux fois, un instantané de la carte sera créé avant\
+    \ que la carte ne soit jouée, et une fois la carte résolue, l'instantané sera\
+    \ joué, et l'instantané sera retiré du combat après utilisation.\n3. L'instantané\
+    \ est différent des copies de cartes normales ; les règles qui s'appliquent à\
+    \ la copie ne s'appliquent pas à l'instantané.\nAvantages pour le joueur : Le\
+    \ joueur peut utiliser la compétence ultime d'un allié deux fois, utiliser un\
+    \ outil deux fois en ne consommant qu'un seul de ses points limites et peut utiliser\
+    \ |Dévorer l'Histoire| deux fois.\nInconvénients pour le joueur : La copie d'un\
+    \ allié ne peut pas être obtenue lors de l'invocation d'un allié, et la croissance\
+    \ sur les cartes ne peut pas être déclenchée deux fois.\nLa raison pour laquelle\
+    \ cela est géré différemment de Slay the Spire est à cause de l'existence des\
+    \ alliés ; vous ne voulez certainement pas invoquer |Daiyousei, Assistante d'Enquête|\
+    \ uniquement pour utiliser immédiatement sa compétence active.\n4. Le joueur ne\
+    \ peut pas obtenir l'instantané, ni une copie de l'instantané. Par exemple, lorsqu'une\
+    \ carte avec |Echo| est jouée deux fois, l'instantané ne produira pas de copie.\n\
+    5. Interactions avec les tours supplémentaires : les instantanés de |Marches du\
+    \ Temps| ne prendront pas effet, et la plupart des autres cartes donnant un tour\
+    \ supplémentaire feront gagner deux tours supplémentaires et ne mettront fin qu'au\
+    \ tour en cours. (Encore à déterminer si c'est trop puissant)\n6. Interactions\
+    \ avec les cartes à coût X : les instantanés héritent du mana payé pour jouer\
+    \ la carte d'origine, et il y aura deux déclenchements complets."
