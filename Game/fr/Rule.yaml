@@ -27,13 +27,13 @@ CardPool:
     \ personnage ou si vous détenez l'une de ses Merveilles Brillantes.\n|3| : Chacune\
     \ des couleurs de cette carte est présente dans votre base de mana. Le mana du\
     \ philosophe ne compte pas dans cette règle.\n\nPar exemple, disons que vous jouez\
-    \ en tant que Reimu et que vous détenez |Grimoire Sombre|, |Pierre Philosophale|\
-    \ et |Maillet Miracle|. (Vous avez échangé votre Merveille Brillante chez Eirin...)\n\
+    \ en tant que Reimu et que vous détenez |e:Grimoire Sombre|, |e:Pierre Philosophale|\
+    \ et |e:Maillet Miracle|. (Vous avez échangé votre Merveille Brillante chez Eirin...)\n\
     La base de mana contient <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
     R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
     ManaSprite\" name=\"C\">. Vous pouvez trouver des cartes Uniques à Reimu et Marisa,\
-    \ puisque vous détenez |Grimoire Sombre|.\n\nDans ce cas, vous pouvez trouver\
+    \ puisque vous détenez |e:Grimoire Sombre|.\n\nDans ce cas, vous pouvez trouver\
     \ une carte noire qui coûte <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
     \ name=\"B\"> puisque vous pouvez payer <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
     ManaSprite\" name=\"P\"> pour la jouer. Cependant, vous ne pouvez pas trouver\
@@ -88,7 +88,7 @@ FriendCard:
     \ fois, l'Exil les rendrait inutiles.\n|2.| Lorsqu'une carte alliée non invoquée\
     \ est jouée, si elle a Éthéré, celui-ci sera supprimé à ce moment.\nSi cette carte\
     \ alliée continuait d'avoir Éthéré, elle ne prendrait effet qu'une seule fois\
-    \ pour jouer son effet passif, ce qui n'est pas souhaitable.\n|e :Experte en Relations|\
+    \ pour jouer son effet passif, ce qui n'est pas souhaitable.\n|e:Experte en Relations|\
     \ le mentionne spécifiquement, mais toutes les cartes alliées avec Éthéré suivent\
     \ cette règle.\n|3.| Lorsque l'effet de copie est appliqué en combat sur une carte\
     \ alliée, le statut d'invocation et la valeur de soutien de la carte cible ne\
@@ -131,7 +131,7 @@ BattleFlow:
     \ méthode de mise en œuvre complexe garantira une expérience correcte au joueur).\n"
   Name: Combat et Tour de Jeu
 PlayCard:
-  Name: Utilisation de Carte Consécutive
+  Name: Cartes Consécutives
   Description: "La mise à jour du personnage Koishi a introduit les |cartes consécutives|.\
     \ Cela fonctionne comme décrit ci-dessous, bien que les détails soient susceptibles\
     \ de changer à mesure que Koishi est mise à jour.\n\n1. Une carte normale jouée\
@@ -139,16 +139,16 @@ PlayCard:
     \ tours naturels et aux tours supplémentaires. Généralement, une |carte consécutive|\
     \ sera jouée à la suite d'une carte normale.\n2. Une |carte consécutive| jouée\
     \ ne déclenche pas d'effets qui réagissent à une carte normale jouée, comme le\
-    \ comptage de cartes de l'ennemi Remilia, les comptages de cartes de |Fin de la\
-    \ Nuit Éternelle|, |Ivre|, |Magnifique Glace d'Été| et de merveilles telles que\
-    \ |Montre de Poche en Argent|.\n3. Les |cartes consécutives| jouées donneront\
+    \ comptage de cartes de l'ennemi Remilia, les comptages de cartes de |e:Fin de\
+    \ la Nuit Éternelle|, |e:Ivre|, |e:Magnifique Glace d'Été| et de merveilles telles\
+    \ que |Montre de Poche en Argent|.\n3. Les |cartes consécutives| jouées donneront\
     \ la priorité à la cible de la carte normale jouée. Si la cible n'est pas valide,\
     \ une cible aléatoire sera sélectionnée. Cela affecte principalement les cartes\
     \ d'attaque.\n4. Les |cartes consécutives| ne consomment pas de mana. Cependant,\
     \ s'il y a d'autres effets qui empêchent la carte d'être jouée normalement, elle\
     \ ne s'activera pas et entrera à la place dans la pile de défausse (effets comme\
     \ Injouable, or insuffisant lorsque la carte a un coût en or, etc.)\n5. Si la\
-    \ |carte consécutive| jouée a un coût d'effet, comme celui de |Fabrication de\
+    \ |carte consécutive| jouée a un coût d'effet, comme celui de |e:Fabrication de\
     \ l'Actualité|, ces coûts d'effet auraient été annulables lorsque la carte est\
     \ jouée normalement, mais si la carte est jouée comme |carte consécutive|, ils\
     \ ne peuvent pas être annulés.\n6. Les |cartes consécutives| seront interrompues\
@@ -157,7 +157,7 @@ PlayCard:
     \ avec les cartes à coût X : La |carte consécutive| jouée sera considérée comme\
     \ étant jouée à coût 0."
 PlayTwice:
-  Name: Jouer des Cartes Deux Fois
+  Name: Jouer Deux Fois
   Description: "Un cas particulier des |cartes consécutives| jouées est celui de «\
     \ jouer deux fois » à partir des effets de carte. Cela suit les règles suivantes.\n\
     \n1. Il s'agit d'un effet qui s'applique à une carte normale jouée, ce qui signifie\
