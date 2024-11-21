@@ -744,7 +744,7 @@ SilverBullet:
 SakuyaGraze:
   Name: Vô Tình Tránh Né
   Description: "Nhận {Shield} |Hộ Giáp|.\nNhận {Value1} |Né Tránh|.\nHoàn trả lá này\
-    \ lên tay khi tráo một Chồng Bài Bốc mới."
+    \ lên tay từ Chồng Bài Bỏ khi tráo một Chồng Bài Bốc mới."
 DangerousMagician:
   Name: Ảo Thuật Gia Nguy Hiểm
   Description: "Mỗi khi một lá |Phóng Dao| được kích hoạt, tạo {Value1} |Xung Thời\
@@ -1003,7 +1003,7 @@ SpecialClock:
 TunnelEffect:
   Name: Đường Hầm Lượng Tử
   Description: "Gây {Damage} sát thương lên một kẻ địch ngẫu nhiên.\nNhận {Mana}.\n\
-    Hoàn trả lá này lên tay khi tráo một Chồng Bài Bốc mới."
+    Hoàn trả lá này lên tay từ Chồng Bài Bỏ khi tráo một Chồng Bài Bốc mới."
 SakuyaKiller:
   Name: Sát Nhân Trong Sương Đêm
   Description: "Vào cuối lượt của {PlayerName}, thêm {Value1} lá |Phóng Dao| vào Chồng\
@@ -1140,8 +1140,8 @@ MaidFriend:
     tận tụy nhất.
   ExtraDescription1: '{FriendA}Tấn công ngay lập tức. Thêm {Value2} lá |Phóng Dao|
     lên tay.'
-  ExtraDescription3: '{FriendU}lập tức tạo sát thương. Toàn bộ {SelfName} gây thêm
-    {Value1} sát thương.'
+  ExtraDescription3: '{FriendU}Gây sát thương ngay lập tức. Toàn bộ các lá {SelfName}
+    khác gây thêm {Value1} sát thương.'
 IceSaber:
   Name: Kết Băng Thành Kiếm
   Description: "Gây {Damage} sát thương {Value1} lần, yểm |Lạnh Giá|.\nBỏ một số lượng\
@@ -2323,7 +2323,7 @@ ZoufangSnake:
   DetailText: '|e:Các lá thay thế| được sinh ra bỏ qua mọi giới hạn về mana và nhân
     vật sở hữu.'
 MeilingAbility:
-  FlavorText: Mọi kẻ đột nhập đều sẽ bị đem ra công lý.
+  FlavorText: Mọi kẻ đột nhập đều sẽ bị đem ra trước công lý.
   Name: Liệt Hồng Quyền
   Description: "{PlayerName} nhận được nhiều gấp đôi |Hỏa Lực| và |Hỏa Lực Tạm Thời|\
     \ từ mọi nguồn.\nNhận {Value1} |Hỏa Lực|."
@@ -2446,7 +2446,7 @@ RainbowMarket:
 SijiCard:
   Name: Có Tội Hay Vô Tội
   Description: Chọn 1 lá trên tay, nếu nó là một lá |Vận Rủi| hoặc Trạng Thái, |Trục
-    Xuất| nó. Ngược lại, |Bảo Lưu| nó 1 lượt và giảm chi phí của nó đi {Mana} cho
+    Xuất| nó. Nếu không, |Bảo Lưu| nó 1 lượt và giảm chi phí của nó đi {Mana} cho
     đến hết trận đấu.
   FlavorText: Việc có trả tiền sau bữa ăn hay không là cơ sở để đưa ra phán quyết.
 Riguang:
@@ -2513,7 +2513,7 @@ PaluxiCurse:
     ý đồ bất chính.
 FangxiangAttack:
   Description: "Nếu mục tiêu đã |Nhiễm Độc|, gây {Damage} sát thương {Value2} lần.\n\
-    Ngược lại, yểm {Value1} |Nhiễm Độc|."
+    Nếu không, yểm {Value1} |Nhiễm Độc|."
   Name: Đòn Càn Quét Có Độc
 LongArm:
   Description: "Gây {Damage} sát thương.\nNếu số lá trên tay ngay trước khi chơi {SelfName}\
@@ -2934,7 +2934,7 @@ MoodAttack:
 PassionVulnerable:
   Name: Đêm Không Ngủ
   Description: "|Trong Nhiệt Tình|: Yểm {Value1} |Dễ Tổn Hại| lên từng kẻ địch.\n\
-    Ngược lại, tiến vào |Nhiệt Tình|."
+    Nếu không, tiến vào |Nhiệt Tình|."
 PassionDraw:
   Name: Tương Tư
   Description: Mỗi khi {PlayerName} tiến vào |Nhiệt Tình|, bốc {Value1} lá.
@@ -3027,8 +3027,9 @@ KoishiKiss:
     \ |Đánh Liên Tiếp|."
 BaseFollower:
   Name: Tình Yêu Bản Năng
-  Description: "Gây {Damage} sát thương.\nLá này được đặt xuống dưới cùng Chồng Bài\
-    \ Bốc khi bắt đầu trận đấu và mỗi khi tráo một Chồng Bài Bốc mới."
+  Description: "Gây {Damage} sát thương.\nChuyển vị trí ở trong Chồng Bài Bốc của\
+    \ lá này xuống dưới cùng khi bắt đầu trận đấu và mỗi khi tráo một Chồng Bài Bốc\
+    \ mới."
 PassionMemory:
   Name: Ký Ức Nhiệt Tình
   Description: Tiến vào |Nhiệt Tình|.
@@ -3050,8 +3051,9 @@ TheChariot:
   Name: 'Tarot: The Chariot'
 MultiFollower:
   Name: Điệu Nhảy Của Trái Tim
-  Description: "Gây {Damage} sát thương {Value1} lần.\nLá này được đặt xuống dưới\
-    \ cùng Chồng Bài Bốc khi bắt đầu trận đấu và mỗi khi tráo một Chồng Bài Bốc mới."
+  Description: "Gây {Damage} sát thương {Value1} lần.\nChuyển vị trí ở trong Chồng\
+    \ Bài Bốc của lá này xuống dưới cùng khi bắt đầu trận đấu và mỗi khi tráo một\
+    \ Chồng Bài Bốc mới."
 ToAllFollower:
   Name: Cảm Xúc Dâng Trào
   Description: "Gây {Damage} sát thương cho toàn bộ kẻ địch.\n|Mê Tẩu|: Thay vào đó,\
@@ -3163,9 +3165,9 @@ GainInspiration:
   Description: "Khi {PlayerName} kết thúc lượt, thêm 1 lá |Tôi Tìm Ra Rồi!| vào trong\
     \ Chồng Bài Bốc.\n"
 Anatta:
-  Name: Trạng Thái Vô Ngã
-  Description: "Gia tăng lượng mana nhận được mỗi khi rời khỏi trạng |Bình Thản| thành\
-    \ {Mana}.\nTiến vào |Bình Thản|."
+  Name: Tâm Cảnh Vô Ngã
+  Description: "Gia tăng lượng mana nhận được mỗi khi rời khỏi trạng thái |Bình Thản|\
+    \ thành {Mana}.\nTiến vào |Bình Thản|."
 HuiyeSuperExtraTurn:
   Name: '"Đêm Bất Diệt Phai Tàn"'
   DetailText: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
