@@ -60,8 +60,8 @@ Jinfuzhen:
     as it seems.
 JingshenYishi:
   Description: |-
-    Gain {Block} |Block|.
-    |Exile| a card from the hand.
+    Draw {Value1} card{Value:plural one='' other='s'}
+    Gain {Value2} |Grace|.
   Name: Cleansing Ritual
 ShengtianKick:
   Description: |-
@@ -162,7 +162,7 @@ OverJingjie:
 Zhuizongfu:
   Description: |-
     Deal {Damage} damage to a random enemy {Value1} time{Value1:plural one='' other='s'}.
-    At the start of {PlayerName}'s next turn, gain {Mana}.
+    Gain {Mana} at the start of {PlayerName}'s next turn
 
   Name: Homing Amulet
   FlavorText: "\"Seems like Temporary Firepower and Firepower aren't the same thing.\"\
@@ -2052,8 +2052,7 @@ ReimuShrine:
   FlavorText: '"Hakurei Temple Fair" is a dating/raising sim visual novel game with
     managerial elements, featuring third person shooter gameplay.'
 ReimuDrink:
-  Description: "Gain {Value1} life.\nAdd {Value2} |Tipsy{Value2:plural one='' other='s'}|\
-    \ to the hand."
+  Description: "Gain {Value1} |Grace|."
   Name: Sake Offering
 IceBlock:
   Description: "{PlayerName} can't lose life for one turn.\nLose all |Block|, |Barrier|\
@@ -2753,11 +2752,12 @@ FlowerGone:
   Description: "Gain {Block} |Block|.\n|In Serenity|: Gain {Shield} |Barrier| instead."
   Name: Withering Dreams
 BabyDream:
-  Description: "Gain {Block} |Block|.\n|Dream| {Value1}."
+  Description: "Gain {Block} |Block|.\n|Dream| {Value1}, then activate the first |Follow-Up|\
+    \ card |Dreamed|. "
   Name: Embryo's Dream
 PerfectCrime:
-  Description: "Steal target's |Graze|, |Optical Camouflage|, |Flawless|, and up to\
-    \ {Value1} |Firepower| and |Spirit|."
+  Description: "Steal target's |Barrier|, |Graze|, |Optical Camouflage|, |Flawless|,\
+    \ and up to {Value1} |Firepower| and |Spirit|."
   Name: Perfect Crime
 GainDollSlot:
   Description: (WIP)
@@ -3418,3 +3418,10 @@ DebugUpgradeAllZone:
 KoishiUltimateToken:
   Description: "Deal {Damage} damage and gain {TotalMana}.\n|When Retained|: Increase\
     \ {SelfName}'s damage by {Value1} and increase mana gain by {Mana}."
+  Name: Blossom of Life
+ReimuGrace:
+  Name: Grace of the Hakurei
+  Description: "Gain {Value1} |Grace|.\nAt the start of {PlayerName}'s turn, gain\
+    \ {Value1} |Grace|."
+ReimuEvilTerminator:
+  Name: Ace Exterminator
