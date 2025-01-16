@@ -71,12 +71,13 @@ Fengmozhen4:
   UpgradedDescription: 对所有敌人造成 {Damage} 点伤害 {Value1} 次。
   FlavorText: 这个招式命中的不是邪恶的人，而是站在屏幕右边的人。
 
-WunvKongwu:
-  Name: 巫女空舞
+SmallPanding:
+  Name: 小型判定
   Description: |-
     获得 {Value1} 层|闪避|。
-    抽 {Value2} 张牌。
-  FlavorText: 在家请勿模仿（幽灵除外）。
+    受到 {Value2} 回合|易伤|。
+  UpgradedDescription: 获得 {Value1} 层|闪避|。
+  FlavorText: 「只要打不中判定点就没有什么大不的！」
 
 TuimofuLuanwu:
   Name: 退魔符乱舞
@@ -90,6 +91,13 @@ SuikaOut:
     获得 {Value1} 层|庇护|。
   FlavorText: 看起来对999火力的敌人没什么作用。
 
+Jinfuzhen:
+  Name: 紧缚阵
+  Description: |-
+    造成 {Damage} 点伤害。
+    如果{PlayerName}拥有|护盾|，施加 {Value1} 回合|易伤|。
+  FlavorText: 只要不去尝试逃跑，这个招式并没有看起来这么强大。
+
 LingfuHuti:
   Name: 灵符护体
   Description: |-
@@ -100,19 +108,11 @@ LingfuHuti:
     将一张|神域札|加入手中。
   FlavorText: 叠个护盾，过。
 
-Jinfuzhen:
-  Name: 紧缚阵
-  Description: |-
-    造成 {Damage} 点伤害。
-    如果{PlayerName}拥有|护盾|，施加 {Value1} 回合|易伤|。
-  FlavorText: 只要不去尝试逃跑，这个招式并没有看起来这么强大。
-
 JingshenYishi:
   Name: 净身仪式
   Description: |-
-    获得 {Block} 点|格挡|。
-    选择一张手牌|放逐|。
-  FlavorText: 与铜臭绝缘的巫女好像没有这么做的必要。
+    抽 {Value1} 张牌。
+    获得 {Value2} 点|神恩|。
 
 YinyangBaoyu:
   Name: 阴阳宝玉
@@ -138,27 +138,19 @@ OverJingjie:
   Description: 从 {Value1} 张随机的攻击牌中选择一张加入手中，它|暂塑|为{Mana}。
   FlavorText: 希望在境界的上空没有亚空点穴和导航之星。
 
-SmallPanding:
-  Name: 小型判定
-  Description: |-
-    获得 {Value1} 层|闪避|。
-    受到 {Value2} 回合|易伤|。
-  UpgradedDescription: 获得 {Value1} 层|闪避|。
-  FlavorText: 「只要打不中判定点就没有什么大不的！」
-
-Zhuizongfu:
-  Name: 追踪符
-  Description: |-
-    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
-    如果{PlayerName}拥有|暂得火力|，获得{Mana}。
-  FlavorText: '"原来暂得火力和火力不是同一个东西。"初次游玩的玩家可能会产生这样的感想。'
-
 ReimuFestival:
   Name: 神樱之舞
   Description: |-
     获得 {Value1} 点|暂得火力|。
     {PlayerName}的回合开始时获得 {Value1} 点|暂得火力|。
   FlavorText: 博丽神社最新推出的收费景点，人气十足。
+
+Zhuizongfu:
+  Name: 追踪符
+  Description: |-
+    随机对敌人造成 {Damage} 点伤害 {Value1} 次。
+    下回合开始时获得{Mana}。
+  FlavorText: '"原来暂得火力和火力不是同一个东西。"初次游玩的玩家可能会产生这样的感想。'
 
 FengyinYaomo:
   Name: 龙杀阵
@@ -170,10 +162,6 @@ FengyinYaomo:
 DanmuDuijue:
   Name: 弹幕对决
   Description: |-
-    获得 {Block} 点|格挡|。
-    获得 {Value1} 点|反射|。
-    {SelfName}亦受|火力|加成。
-  UpgradedDescription: |-
     获得 {Shield} 点|护盾|。
     获得 {Value1} 点|反射|。
     {SelfName}亦受|火力|加成。
@@ -224,6 +212,13 @@ MojingShanjie:
   Description: 从 {Value1} 张随机的防御牌中选择一张加入手中，它|暂塑|为{Mana}。
   FlavorText: 随机性是宗教活动的一环。
 
+ReimuShrine:
+  Name: 博丽庙会
+  Description: |-
+    获得 {Value1} 点|暂得灵力|。
+    {PlayerName}的回合开始时获得 {Value1} 点|暂得灵力|。
+  FlavorText: 《博丽庙会》是一款以第三人称射击为主要玩法的模拟经营恋爱养成文字游戏。
+
 JiejieAttack:
   Name: 结界猛击
   Description: |-
@@ -233,13 +228,6 @@ JiejieAttack:
     造成 {Damage} 点伤害。
     额外造成相当于{PlayerName}|护盾|值的伤害。
   FlavorText: 最强拒绝型结界，能用来阻挡弹幕的也能用来打脸。
-
-ReimuShrine:
-  Name: 博丽庙会
-  Description: |-
-    获得 {Value1} 点|暂得灵力|。
-    {PlayerName}的回合开始时获得 {Value1} 点|暂得灵力|。
-  FlavorText: 《博丽庙会》是一款以第三人称射击为主要玩法的模拟经营恋爱养成文字游戏。
 
 DoubleDajiejie:
   Name: 二重大结界
@@ -264,6 +252,10 @@ YakongDianxue:
     造成 {Damage} 点伤害。
     当{PlayerName}失去一个正面效果时，从弃牌堆回到手中。
   FlavorText: 来自背后的攻击。
+
+ReimuDrink:
+  Name: 御神酒
+  Description: 获得 {Value1} 点|神恩|。
 
 QinggeManwu:
   Name: 清歌曼舞
@@ -291,17 +283,6 @@ ReimuFreeAttack:
     获得 {Block} 点|格挡|。
     下 {Value1} 张攻击牌费用为{Mana}。
 
-ReimuDrink:
-  Name: 御神酒
-  Description: |-
-    恢复 {Value1} 点生命。
-    将 {Value2} 张|小酌怡情|加入手中。
-  UpgradedDescription: |-
-    恢复 {Value1} 点生命。
-    获得 {Value1} 点|暂得火力|。
-    将 {Value2} 张|小酌怡情|加入手中。
-  FlavorText: 三国时期的武将会喝了酒后用点燃的刀砍被铁链绑起来的藤甲人。
-
 EvilTuiZhi:
   Name: 妖邪退治
   Description: 本回合内，下 {Value1} 张攻击牌会打出两次。
@@ -325,6 +306,18 @@ TaijiLiangyi:
     将一张|阴阳玉|加入手中。
     {PlayerName}的回合开始时，如果手中没有|阴阳玉|，将一张|阴阳玉|加入手中。
   FlavorText: 灵梦在阅读"当你有一瓶无限的可乐时可以做什么"后创造的招式。
+
+ReimuInstant:
+  Name: 「梦想封印 瞬」
+  Description: |-
+    造成 {Damage} 点伤害。
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |时间有限|{Mana}。
+  ExtraDescription1: |-
+    造成 {Damage} 点伤害。
+    结束{PlayerName}的回合，进行一个额外的回合。
+    |d:时间有限{Mana}。|
+  FlavorText: 被评价为"在境界上空中最想见到的牌"
 
 ReimuSilence:
   Name: 「梦想封印 寂」
@@ -371,6 +364,12 @@ BoliDajiejie:
   Description: 本场战斗中，{PlayerName}的|格挡|均会转化为等量的|护盾|。
   FlavorText: 所有转瞬即逝的幻想，在这里成为永恒。
 
+ReimuGrace:
+  Name: 博丽的眷顾
+  Description: |-
+    获得 {Value1} 点|神恩|。
+    {PlayerName}的回合开始时获得 {Value1} 点|神恩|。
+
 HuijuQiankun:
   Name: 汇聚乾坤
   Description: |-
@@ -380,18 +379,6 @@ HuijuQiankun:
     将一张|阴阳玉|加入手中。
     |放逐|所有其它手牌，每|放逐|一张牌，|阴阳玉|伤害提高 {Value1} 点，|护盾|提高 {Value2} 点。
   FlavorText: 选择所有，右键删除，清空回收站。
-
-ReimuInstant:
-  Name: 「梦想封印 瞬」
-  Description: |-
-    造成 {Damage} 点伤害。
-    结束{PlayerName}的回合，进行一个额外的回合。
-    |时间有限|{Mana}。
-  ExtraDescription1: |-
-    造成 {Damage} 点伤害。
-    结束{PlayerName}的回合，进行一个额外的回合。
-    |d:时间有限{Mana}。|
-  FlavorText: 被评价为"在境界上空中最想见到的牌"
 
 DoubleLianhuadie:
   Name: 二色莲花蝶
@@ -430,25 +417,24 @@ DanceAroundLake:
 ReimuHuashan:
   Name: 接受指教
   Description: |-
-    选择手中的一张牌|放逐|，获得 {Value2} 点<sprite="Point" name="Power">。
-    选择|能力|牌时额外获得 {Value1} 点最大生命值。（每场战斗中只能生效一次）
+    下一场战斗开始时，放逐{SelfName}，获得 {Value1} 点|火力|。
+    每场战斗中，只有第一张{SelfName}生效。
   ExtraDescription1: |-
-    选择手中的一张牌|放逐|，获得 {Value2} 点<sprite="Point" name="Power">。
-    |d:选择能力牌时额外获得 {Value1} 点最大生命值。（每场战斗中只能生效一次）|
+    下一场战斗开始时，放逐{SelfName}，获得 {Value1} 点|火力|。
+    每场战斗中，只有第一张{SelfName}生效。（已打出过）
+  DetailText: 只有在牌库中的{SelfName}才会被带入下一场战斗中。
   FlavorText: 「对对对，你说得对。」
 
 AutoQumobang:
   Name: 暴走驱魔棒
-  Description: |-
-    |手牌中|：回合开始时多抽 {Value1} 张牌。
-    生效 {Value2} 次后|放逐|自身。
+  Description: '|进入手中时|：|放逐|{SelfName}，后续 {Value2} 回合的抽牌阶段多抽 {Value1} 张牌。'
   FlavorText: 「自主的驱魔棒正在抢夺巫女们的工作岗位。」——《文文新闻·经济版》
 
-Qingshan:
-  Name: 人至之处的青山
+ReimuEvilTerminator:
+  Name: 除魔专家
   Description: |-
-    获得 {Block} 点|格挡|。
-    随机|放逐| {Value1} 张手中的|厄运|或状态牌。
+    每当一名敌人被击败，获得{Mana}。
+    获得 {Value1} 层|庇护|。
 
 GapLady:
   Name: 隙间女子
@@ -1979,11 +1965,18 @@ InspirationCard:
   Name: 找到灵感了！
   Description: '|进入手中时|：获得{Mana}，获得 {Value1} 层|灵感|，|放逐|{SelfName}。'
 
+KoishiUltimateToken:
+  Name: 生命绽放
+  Description: |-
+    造成 {Damage} 点伤害，获得{TotalMana}。
+    |被保留时|：伤害提高 {Value1} 点，法力获取提高{Mana}。
+
 PassionDefense:
   Name: 低调
   Description: |-
     获得 {Block} 点|格挡|。
     |热情|：额外获得 {Value1} 点|格挡|。
+  FlavorText: 当你成为人气投票第一，但是又不想被人认出来。
 
 PassionMemory:
   Name: 热情的回忆
@@ -2091,7 +2084,7 @@ BabyDream:
   Name: 胎儿之梦
   Description: |-
     获得 {Block} 点|格挡|。
-    |入梦| {Value1} 。
+    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
 
 DuplicateFollower:
   Name: 孤独的心
@@ -2104,7 +2097,7 @@ AncestorDream:
   Name: 祖先托梦
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
-    |入梦| {Value1} 。
+    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
 
 YaoguaiLaser:
   Name: 妖怪脑电波
@@ -2186,6 +2179,13 @@ TheHermit:
     获得{Mana}。
     |神游|：{SelfName}费用为<sprite="ManaSprite" name="0">。
 
+GainZeroAttack:
+  Name: DNA 的瑕疵
+  Description: '{PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|。'
+  UpgradedDescription: |-
+    {PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|
+    立刻生效一次。
+
 FindInspiration:
   Name: 灵光一闪
   Description: 将 {Value1} 张|找到灵感了！|洗入抽牌堆。
@@ -2198,13 +2198,6 @@ KoishiGrowAttack:
     |成长|：伤害提高 {Value1} 点。
     |平静|：{SelfName}费用为{Mana}。
 
-GainZeroAttack:
-  Name: DNA 的瑕疵
-  Description: '{PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|。'
-  UpgradedDescription: |-
-    {PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|
-    立刻生效一次。
-
 LeaveMoodDraw:
   Name: 好奇心
   Description: |-
@@ -2214,12 +2207,6 @@ LeaveMoodDraw:
 MoodChangeBlock:
   Name: A.T. 力场
   Description: 每当{PlayerName}转化|心境|时，获得 {Value1} 点|格挡|。
-
-BlackEpiphany:
-  Name: 意识剥离
-  Description: |-
-    进入|神游|。
-    下回合只能打出 {Value1} 张牌。
 
 PsycheLock:
   Name: 心灵枷锁
@@ -2236,11 +2223,22 @@ PsycheLock:
     结束{PlayerName}的回合，进行一个额外的回合。这一回合开始时，|升级|所有的手牌。
     {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
 
-KoishiMana:
-  Name: 潜能释放
+BlackEpiphany:
+  Name: 意识剥离
   Description: |-
-    对所有敌人造成 {Damage} 点伤害。
+    进入|神游|。
+    下回合只能打出 {Value1} 张牌。
+
+KoishiTouying:
+  Name: 恋之埋火
+  Description: |-
     获得{Mana}。
+    从 {Value1} 张卡牌中选择一张置于牌堆顶，它具有|填充|、|放逐|、|虚无|。
+    这些卡牌的费用总数不少于 {Value2}。
+
+KoishiPotential:
+  Name: 潜能释放
+  Description: 展示抽牌堆顶的 {Value1} 张牌，选择一张，将它打出两次，然后|放逐|它。
   FlavorText: 当你的大脑开发到25%时。
 
 FakeBullet:
@@ -2253,12 +2251,6 @@ KoishiSpark:
   Name: 浪漫夜的最后来电
   Description: 对所有敌人造成 {Damage} 点伤害。
 
-LoveFire:
-  Name: 恋之埋火
-  Description: |-
-    进行一次|追加攻击|。
-    {PlayerName}的回合结束时，如果本回合进行过|追加攻击|，获得 {Value1} 点|火力|。
-
 GainInspiration:
   Name: 让我好好想想
   Description: |
@@ -2266,7 +2258,7 @@ GainInspiration:
 
 PerfectCrime:
   Name: 完美作案
-  Description: 窃取目标的|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
+  Description: 窃取目标的|护盾|、|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
 
 TheFool:
   Name: 塔罗牌：愚者
@@ -2276,7 +2268,10 @@ TheFool:
 
 KoishiDna:
   Name: 哈德曼的妖怪少女
-  Description: '{PlayerName}的回合开始时，打出抽牌堆顶的牌。'
+  Description: |-
+    打出抽牌堆顶的牌。
+    {PlayerName}的回合开始时，打出抽牌堆顶的牌。
+  DetailText: 'v1.6.1: 回合开始时，自动打出卡牌在抽牌前发生。'
 
 KoishiAttackX:
   Name: 蔷薇地狱
@@ -2290,7 +2285,9 @@ Anatta:
 
 ButterflyDream:
   Name: 庄周梦蝶
-  Description: '{PlayerName}的回合开始时，将 {Value1} 张|p:完全随机|的稀有牌加入手中，它具有|放逐|、|虚无|，费用可以用任意颜色支付。'
+  Description: |-
+    将 {Value1} 张|p:完全随机|的稀有牌置于牌堆顶，它具有|填充|、|放逐|、|虚无|，费用可以用任意颜色支付。
+    {PlayerName}的每个回合开始后再次生效。
   DetailText: |-
     |e:备选牌|无视法力、颜色和所有者限制。
     不能找到{SelfName}。
@@ -2826,13 +2823,6 @@ BailianPower:
   Description: 获得 {Value1} 点|火力|。
   FlavorText: 经书上写了BMI和增肌的内容。
 
-MeilingBlock:
-  Name: 红寸劲
-  Description: |-
-    获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
-    {SelfName}亦受|火力|加成。
-  FlavorText: 威胁打人之前先做好挨打的准备。
-
 SuikaBigball:
   Name: 元鬼玉
   Description: |-
@@ -2848,6 +2838,13 @@ MeihongFire:
   Description: |-
     {PlayerName}的回合结束时，对所有敌人造成 {Value1} 点伤害。
     每抽到一张|厄运|或状态牌时亦如此。
+
+MeilingBlock:
+  Name: 红寸劲
+  Description: |-
+    获得 {Block} 点|格挡|和 {Shield} 点|护盾|。
+    {SelfName}亦受|火力|加成。
+  FlavorText: 威胁打人之前先做好挨打的准备。
 
 PrismriverRed:
   Name: 键盘独奏
@@ -2937,11 +2934,12 @@ YouxiangMoon:
 
 DizangLove:
   Name: 即席菩提
-  Description: |
-    打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
-  UpgradedDescription: |-
-    打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
-    将一张|生机|加入手中。
+  Description: |-
+    获得 {Value1} 点最大生命值。
+    每场战斗中，只有第一张{SelfName}生效。
+  ExtraDescription1: |-
+    |d:获得 {Value1} 点最大生命值。|
+    每场战斗中，只有第一张{SelfName}生效。
   FlavorText: 我们不用很久很刻苦就可以成佛。
 
 YuyukoSing:
@@ -2977,6 +2975,7 @@ GreenLotus:
 LimaoSchool:
   Name: 狸猫的变身学校
   Description: 从 {Value1} 张随机的|狸猫变化|中选择 {Value2} 张生效。
+  DetailText: '|e:两栖变化|每场战斗中只能生效一次，之后打出的{SelfName}不会以它作为选项。'
 
 MorphBird:
   Name: 羽鸟变化
@@ -3082,6 +3081,14 @@ MoonSea:
   FlavorText: |-
     丰饶之海。
     位于月球背面的月都结界以内，一般来说应该无法在天空中看到地球。
+
+CommonFire:
+  Name: 平凡之力
+  Description: |
+    打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
+  UpgradedDescription: |-
+    打出普通卡牌后，{PlayerName}获得 {Value1} 点|暂得火力|。
+    将一张|纯粹|加入手中。
 
 FengjiAttack:
   Name: 分解之风
