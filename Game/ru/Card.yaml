@@ -1337,7 +1337,7 @@ QingeHeal:
   Name: Некромантия
   FlavorText: '"Ты усилена. Вперёд!"'
 Shengyan:
-  Description: "Наносит {Damage} урона.\n|Отступление|: Повышает максимальное здоровье\
+  Description: "Наносит {Damage} урона.\n|Избавление|: Повышает максимальное здоровье\
     \ на {Value1}."
   Name: Пир
 CloseEyeShoot:
@@ -1464,7 +1464,7 @@ TannvCard:
     стоят| {Mana}.
   Name: Изменение хода игры
 QingeUpgrade:
-  Description: "Наносит {Damage} урона.\n|Отступление|: Навсегда |Улучшает| карту."
+  Description: "Наносит {Damage} урона.\n|Избавление|: Навсегда |Улучшает| карту."
   Name: Уловка злобного отшельника
 XiaodingKill:
   Description: Если здоровье врага меньше или равно {Value1}, уничтожает его.
@@ -1526,7 +1526,7 @@ PoorAttack:
   Name: Впадение в нищету
   FlavorText: Не обижайте бедную девочку.
 XingMoney:
-  Description: "Наносит {Damage} урона.\n|Отступление|: Даёт {Value1} <sprite=\"Point\"\
+  Description: "Наносит {Damage} урона.\n|Избавление|: Даёт {Value1} <sprite=\"Point\"\
     \ name=\"Gold\">."
   Name: Славное драгоценное копьё
   FlavorText: Умение, от которого Рэйму Хакурэй не может отказаться.
@@ -2979,7 +2979,7 @@ YijiuDraw:
 AhongMana:
   Name: Море цвета сакуры
   UpgradedDescription: "|Когда {SelfName} входит в руку|: Добавляет {Value1} |{Value1:plural\
-    \ one='Жизнь' other='Жизни'}| в руку, |Улучшает| {Value2} {Value2:plural one=случайную\
+    \ one='Жизнь' other='Жизни'}| в руку, |Улучшает| {Value2} {Value2:plural one='случайную\
     \ карту' other='случайные карты'} в руке и |Изгоняется|."
   Description: "|Когда {SelfName} входит в руку|: Добавляет {Value1} |{Value1:plural\
     \ one='Жизнь' other='Жизни'}| в руку и |Изгоняется|."
@@ -3015,7 +3015,7 @@ SanaeSummonGod:
   Description: В начале второго хода {PlayerName;g} после розыгрыша этой карты получите
     {Value1} |Огневой мощи| и |Духовности|.
 SanaeRice:
-  Description: "Снимает все негативные эффекты с {PlayerName;g}.\nВосстанавливает\
+  Description: "Снимает все негативные эффекты с {PlayerName:g}.\nВосстанавливает\
     \ {Value1} здоровья."
   Name: Невероятный урожай риса
 YonglinUpgrade:
@@ -3043,7 +3043,7 @@ YijiFirepower:
     \ в руку.\n{Value2: plural one='Она получает' other='Они получают'} |Изгнание|,\
     \ |Эфирность| и |Очищение|."
 LongArm:
-  Name: Длинная ру-у-у-ука
+  Name: Дли-и-и-инная рука
   Description: "Наносит {Damage} урона.\nЕсли в руке есть хотя бы {Value1} карт{Value1:plural\
     \ one='а' other=''}, даёт {Mana}."
 DollRepair:
@@ -3143,11 +3143,11 @@ YouxiangAttack:
 TianziRock:
   FlavorText: Летающие приматы немного пугаются, когда видят этот трюк небожителей.
   UpgradedDescription: "Когда {PlayerName} получает урон от атаки, уменьшает его на\
-    \ {Value1}.\nЭтот эффект не складывается.\nСнимает с {PlayerName;g} |Захват| и\
+    \ {Value1}.\nЭтот эффект не складывается.\nСнимает с {PlayerName:g} |Захват| и\
     \ даёт к нему иммунитет."
   Name: Стена Бхавьягри
   Description: "Когда {PlayerName} получает урон от атаки, уменьшает его на {Value1}.\n\
-    Этот эффект не складывается.\nСнимает с {PlayerName;g} |Захват|."
+    Этот эффект не складывается.\nСнимает с {PlayerName:g} |Захват|."
 SanaeMiracle:
   Description: "Наносит {Damage} урона всем врагам {Value1} раз{Value1:plural one=''\
     \ other='а'}.\nЕсли стопка добора пуста, {SelfName} стоит {Mana}."
@@ -3190,7 +3190,7 @@ YouxiangWake:
   FlavorText: '"В такое время? Кто же это может быть <sprite="TextIcon" name="Anger">
     "'
 YoumuHybrid:
-  Name: Получеловек, полудух
+  Name: Получеловек-полудух
   UpgradedDescription: "|За каждую потраченную <sprite=\"ManaSprite\" name=\"W\">|:\
     \ |Изгоните| до {Value1} карт{Value1:plural one='ы' other=''} из руки, стопки\
     \ добора и стопки сброса.\n|За каждую потраченную <sprite=\"ManaSprite\" name=\"\
@@ -3213,7 +3213,7 @@ BailianMagic:
   Description: В этом ходу {Value1:plural one='% следующая карта' other='следующие
     % карты'} |Навыка| разыгрывается дважды.
 SuikaDraw:
-  Name: Сборище пьяных они
+  Name: Компания пьяного они
   Description: Берите карты, пока в руке их не станет {Value1}.
 TakaneDefense:
   Name: Чаща леса
@@ -3281,10 +3281,10 @@ JinziDoppelganger:
   Name: Доппельгангер века
   Description: Первая разыгранная в ходу карта разыгрывается ещё раз.
 HuiyeSuperExtraTurn:
-  Description: "После |Обычного хода| {PlayerName:g} сделайте |Доп. ход|.\n|Защита|\
-    \ и |Уворот| сохраняются на этот ход, но только {Value1} карт{Value1:plural one='а\
-    \ может быть сыграна' other='ы могут быть сыграны'}."
-  DetailText: "Дополнительный ход {SelfName:g} происходит раньше любого другого доп.\
+  Description: "После |Обычного хода| {PlayerName:g} сделайте |Дополнительный ход|.\n\
+    |Защита| и |Уворот| сохраняются на этот ход, но только {Value1} карт{Value1:plural\
+    \ one='а может быть сыграна' other='ы могут быть сыграны'}."
+  DetailText: "Дополнительный ход {SelfName:g} происходит раньше любого другого дополнительного\
     \ хода.\nРазыграв {SelfName}, вы можете проверить эффекты {PlayerName:g}, чтобы\
     \ узнать об особенностях текущего хода."
   Name: '"Конец нетленной ночи"'

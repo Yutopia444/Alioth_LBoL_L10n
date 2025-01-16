@@ -42,19 +42,20 @@ SpiritNegative:
   Name: Бездуховность
 LockedOn:
   Name: Захват
-  Description: "{OwnerName} получает на {Level} больше урона с атак.\nУменьшается\
+  Description: "{OwnerName} получает на {Level} больше урона от атак.\nУменьшается\
     \ на 1 в начале каждого хода."
-  Brief: "{OwnerName} получает больше урона с |Атак|.\nВ начале каждого хода |Захват|\
+  Brief: "{OwnerName} получает больше урона от |Атак|.\nВ начале каждого хода |Захват|\
     \ понижается на 1."
 Amulet:
-  Description: Предотвращает получение {Level:plural one='|Дебафа|' other='% |Дебафов|'}.
+  Description: Предотвращает получение {Level:plural one='|негативного эффекта|' other='%
+    |негативных эффектов|'}.
   Name: Талисман
-  Brief: Предотвращает получение |Дебафов|.
+  Brief: Предотвращает получение |негативных эффектов|.
 Reflect:
-  Description: При получении урона от атаки наносит {Level} урона атакующему, затем
-    этот эффект исчезает.
+  Description: При получении урона наносит {Level} урона атакующему и убирает этот
+    эффект.
   Name: Отражение
-  Brief: При получении урона от атаки наносит урон атакующему и исчезает.
+  Brief: При получении урона наносит урон атакующему и убирает этот эффект.
 TempSpiritNegative:
   Description: 'Теряет {Level} |Духовность| до конца хода.
 
@@ -73,29 +74,28 @@ Fragil:
   Name: Хрупкость
   Description: '{PlayerName} получает на {Value}% меньше |Защиты| и |Барьера|. Длительность:
     {Duration:plural one=''% ход'' other=''% хода''}.'
-  Brief: '{PlayerName} получает на {Value}% меньше |Защиты| и |Барьера| с карт.'
+  Brief: '{PlayerName} получает на {Value}% меньше |Защиты| и |Барьера| от карт.'
 Weak:
   Name: Слабость
   Description: '{OwnerName} наносит на {Value}% меньше урона. Длительность: {Duration:plural
     one=''% ход'' other=''% хода''}.'
-  Brief: '{OwnerName} наносит на {Value}% меньше урона с |Атак|.'
+  Brief: '{OwnerName} наносит на {Value}% меньше урона от |Атак|.'
 Vulnerable:
   Name: Уязвимость
   Description: '{OwnerName} получает на {Value}% больше урона с атак. Длительность:
     {Duration:plural one=''% ход'' other=''% хода''}.'
-  Brief: '{OwnerName} получает на {Value}% больше урона с атак.'
+  Brief: '{OwnerName} получает на {Value}% больше урона от атак.'
 Graze:
   Name: Уворот
-  Description: "{OwnerName} получает 0 урона заместо того урона, который должен был\
-    \ по нему пройти со следующих {Level} |Атак|.\nВ конце хода |Уворот| понижается\
-    \ на 1."
-  Brief: "{OwnerName} получает 0 урона с |Атак|.\n|Уворот| понижается на 1 в конце\
+  Description: "{OwnerName} получает 0 урона вместо того урона, который должен был\
+    \ пройти от следующих {Level} |Атак|.\nВ конце хода |Уворот| понижается на 1."
+  Brief: "{OwnerName} получает 0 урона от |Атак|.\n|Уворот| понижается на 1 в конце\
     \ хода и при получении урона."
 ExtraTurn:
-  Name: Доп. Ход
-  Brief: '{OwnerName} сделает один или более доп. ходов после этого.'
-  Description: "{OwnerName} сделает {Level:plural one='% Доп. Ход' other='% Доп. Хода'}\
-    \ после этого."
+  Name: Дополнительный ход
+  Brief: '{OwnerName} сделает один или более дополнительных ходов после этого.'
+  Description: "{OwnerName} сделает {Level:plural one='% Дополнительный ход' other='%\
+    \ Дополнительных хода'} после этого."
 Concentration:
   Name: Cобранность
   Brief: Следующие 1 или более эффекта |Перегрузки| не требуют |Заряда| для активации.
@@ -103,38 +103,39 @@ Concentration:
     \ % эффекта |Перегрузки| не требуют'} |Заряда| для активации."
 GuangxueMicai:
   Name: Оптический камуфляж
-  Description: '{OwnerName} получает вполовину меньше урона от атак. Длительность:
-    {Duration:plural one=''% ход'' other=''% хода''}.'
-  Brief: '{OwnerName} получает вполовину меньше урона от атак.'
-Invincible:
-  Description: '{OwnerName} получает не более 1 урона с атаки. Длительность: {Duration:plural
+  Description: '{OwnerName} получает половину урона от атак. Длительность: {Duration:plural
     one=''% ход'' other=''% хода''}.'
-  Name: Бесшовность
-  Brief: '{OwnerName} не может получить больше 1 урона с атаки.'
+  Brief: '{OwnerName} получает половину урона от атак определённое количество ходов.'
+Invincible:
+  Description: '{OwnerName} теряет не более 1 здоровья от любого источника урона.
+    Длительность: {Duration:plural one=''% ход'' other=''% хода''}.'
+  Name: Безупречность
+  Brief: '{OwnerName} теряет не более 1 здоровья от любого источника урона определённое
+    количество ходов.'
 TurnStartDontLoseBlock:
   Name: Оставляемая защита
   Description: '{OwnerName} не теряет |Защиту| в начале своего хода. Длительность:
     {Level:plural one=''% ход'' other=''% хода''}.'
-  Brief: '{OwnerName} не теряет защиту в начале хода.'
+  Brief: '{OwnerName} не теряет защиту в начале хода определённое количество ходов.'
 LimitedDamage:
-  Name: Лимит урона
+  Name: Освободитель всех предметов
   Description: '{OwnerName} может получить только {Limit} урона за ход. В этом ходу
     можно нанести ещё {Count} урона.'
-  Brief: Ограничивает получаемый урон за ход.
+  Brief: '{OwnerName} может получить только {Limit} урона за ход.'
 Electric:
   Name: Статический разряд
-  Description: При получении урона от |Атаки| наносит {Level} урона атакующему.
-  Brief: '{OwnerName} наносит урон атакующему, когда получает урон с |Атаки|.'
+  Description: При получении урона наносит {Level} урона атакующему.
+  Brief: '{OwnerName} наносит урон атакующему, когда получает урон.'
 TempElectric:
   Name: Временный статический разряд
-  Description: "При получении урона от |Атаки| наносит {Level} урона атакующему.\n\
-    Исчезает в начале следующего хода {OwnerName:g}."
+  Description: "При получении урона наносит {Level} урона атакующему.\nИсчезает в\
+    \ начале следующего хода {OwnerName:g}."
   Brief: 'При получении урона наносит урон атакующему.
 
     Исчезает в начале следующего хода {OwnerName:g}.'
 Servant:
-  Description: "При победе над призывателем, призванные существа побеждаются вместе\
-    \ с ним.\nЭффект смерти при этом не срабатывает."
+  Description: "Если на поле боя остаются лишь враги с |Призывом|, они сразу же побеждаются.\n\
+    Эффект смерти при этом не срабатывает."
   Name: Призыв
 RinSummon:
   Name: Воскрешение духов
@@ -142,11 +143,11 @@ RinSummon:
     \ other='% Мстительных духов'}.\nВоскрешает на одного больше после каждого {Limit}\
     \ хода."
 MaoyuBlock:
-  Description: '{OwnerName} получает {Level} |Защиты| при получении урона от атак.'
+  Description: '{OwnerName} получает {Level} |Защиты| при получении урона от атаки.'
   Name: Пушистость
 ScarletDestiny:
   Name: Алая судьба
-  Description: Когда разыгрывается {Limit} карт, {OwnerName} заставляет {PlayerName:a}
+  Description: Когда разыгрывабтся {Limit} карт, {OwnerName} заставляет {PlayerName:g}
     закончить ход. |d:({Count} карт осталось.)|
 Burst:
   Description: "Когда {PlayerName} входит в состояние |Раж|, она получает {Mana}.\n\
@@ -160,6 +161,8 @@ Drowning:
   Name: Утопление
   Description: '{OwnerName} получает {Level} урона в конце своего хода.'
   Brief: '{OwnerName} получит урон в конце своего хода.'
+  ExtraDescription: "{OwnerName} получит урон в конце своего хода.\nПобедите |Утонувшую\
+    \ девушку|, чтобы снять этот эффект."
 SingleJiandaoSe:
   Name: Лезвие гигантских ножниц
   Description: '{PlayerName} получает {Level} урона, когда разыгрывает карту.'
@@ -171,9 +174,11 @@ JunkoPurify:
   Description: Когда {PlayerName} разыгрывает карту, |Очищает| {Level}.
   Name: Свет очищения
 PrivateSquare:
-  Description: "За каждую {Limit} разыгранную карту , {OwnerName} наносит {Level}\
-    \ урона {PlayerName:d}.\nКарт осталось {Count}."
+  Description: "За каждую {Limit} разыгранную карту, {OwnerName} наносит {Level} урона\
+    \ {PlayerName:d}.\nКарт осталось: {Count}."
   Name: Серебряная блокировка
+  Brief: За розыгрыш определённого числа карт, <color=#B7F0FF>Сакуя Идзаёй</color>
+    нанесёт {PlayerName:d} урон от атаки.
 NextAttackUp:
   Description: Следующая карта |Атаки| нанесёт на {Level} больше урона.
   Brief: Урон следующей карты |Атаки| увеличивается.
@@ -181,17 +186,17 @@ NextAttackUp:
 NextTurnLoseHp:
   Description: В начале следующего хода {OwnerName:g} потеряйте {Level} здоровья.
   Brief: В начале следующего хода {OwnerName:} потеряйте некоторое количество здоровья.
-  Name: Утечка жизни
+  Name: Утечка здоровья
 NextTurnGainBlock:
   Description: В начале следующего хода {OwnerName:g} получите {Level} |Защиты|.
   Brief: В начале следующего хода {OwnerName:g} получите некоторое количество |Защиты|.
-  Name: Получение защиты в следующем ходу
+  Name: Защита в следующем ходу
 Vampire:
   Name: Вампиризм
-  Description: '{OwnerName} восполняет здоровье в размерах всего незаблокированного
-    урона, который наносит. Страшно!'
-  Brief: '{OwnerName} восполняет здоровье в размерах всего незаблокированного урона,
-    который наносит. Страшно!'
+  Description: '{OwnerName} восполняет здоровье в количестве всего незаблокированного
+    урона, который нанесёт. Страшно!'
+  Brief: '{OwnerName} восполняет здоровье в количестве всего незаблокированного урона,
+    который нанесёт. Страшно!'
 Emi:
   Name: Электромагнитные помехи
   Description: '{OwnerName} не может действовать. Длительность: {Duration:plural one=''%
@@ -206,14 +211,14 @@ RockHard:
   Name: Крепкий орешек!
 YuyukoDeath:
   Description: "В конце хода {OwnerName} теряет {Level} здоровья.\n{OwnerName} не\
-    \ может восполнять здоровье."
+    \ может восстанавливать здоровье."
   Name: Закон смертности
 AbsorbSpirit:
   Description: '{OwnerName} получает {Level} |Духовности| в конце своего хода.'
   Name: Синяя сфера
 DeathExplodeCount:
   Description: "При поражении {OwnerName} наносит {PlayerName:d} {Level} урона.\n\
-    Урон удваивается при самоуничтожении.\n{Count} ходов осталось до самоуничтожения."
+    Урон удваивается при самоуничтожении.\nДо самоуничтожения осталось {Count} ходов."
   Name: Пуля отмщения
 DeathVulnerable:
   Description: При поражении {OwnerName:g} накладывает на {PlayerName:a} {Level} |Уязвимости|.
@@ -223,11 +228,11 @@ DroneBlock:
   Brief: В конце своего хода {OwnerName} получит некоторое количество |Защиты|.
   Name: Защитная матрица
 DeathExplodeNotCount:
-  Description: "При поражении {OwnerName} наносит{PlayerName:d} {Level} урона.\nУрон\
-    \ удваивается при самоуничтожении."
+  Description: "При поражении {OwnerName} наносит {PlayerName:d} {Level} урона.\n\
+    Урон удваивается при самоуничтожении."
   Name: Пуля отмщения
 LoveGirlDamageIncrease:
-  Description: Чувства {OwnerName:g} получили ответ. Она получают на {Rate}% больше
+  Description: Чувства {OwnerName:g} были отвечены. Она получает на {Rate}% больше
     урона.
   Name: Колеблющееся сердце
 AbsorbPower:
@@ -236,8 +241,11 @@ AbsorbPower:
 WindGirl:
   Description: '{OwnerName} восполняет |Уворот| до {Level} в конце своего хода.'
   Name: Богиня ветров
+  Brief: "Когда {OwnerName} получает |Богиню ветра|, то получает столько же |Уворота|.\n\
+    {OwnerName} восполняет |Уворот| до определённого уровня в конце своего хода."
 RinAura:
-  Description: Вызванные {OwnerName} духи увеличивают урон пули отмщения на {Level}.
+  Description: Вызванные {OwnerName} духи наносят на {Level} больше урона от |Пули
+    отмщения|.
   Name: Пылающий огонь
 Fengyin:
   Description: '{PlayerName} не может разыгрывать карты |Атаки|. Длительность: {Duration:plural
@@ -245,16 +253,16 @@ Fengyin:
   Name: Печать
 Poison:
   Name: Яд
-  Description: В начале своего хода {OwnerName} теряет {Level} здоровья, и |Яд| снижается
+  Description: В начале своего хода {OwnerName} теряет {Level} здоровья, а |Яд| снижается
     на 1.
-  Brief: В начале своего хода {OwnerName} теряет здоровье, и |Яд| снижается на 1.
+  Brief: В начале своего хода {OwnerName} теряет здоровье, а |Яд| снижается на 1.
 KokoroDanceSe:
   Description: Когда враг получает |Дебаф|, {PlayerName} наносит ему {Level} урона.
   Brief: Когда враг получает |Дебаф|, {PlayerName} наносит ему урон.
   Name: Танец масок с пустыми сердцами
 CantDrawThisTurn:
   Brief: Нельзя брать карты до конца хода.
-  Name: Предотвращение взятия карт
+  Name: Блок взятия карт
   Description: Нельзя брать карты до конца хода.
 Charging:
   Name: Заряд
@@ -268,43 +276,45 @@ BurstUpgrade:
   Name: Всё или ничего
 TimeIsLimited:
   Name: Ограничение времени
-  Description: До следующего хода врагов карты стоят на {Mana} больше.
+  Description: До следующего хода врагов карты стоят на {Mana} дороже.
   Brief: До следующего хода врагов карты стоят дороже.
 Sleep:
   Description: "{OwnerName} восполняет свой |Барьер| до {Level} в конце своего хода.\n\
-    Просыпается при получении урона или по истечению {Count} ходов."
+    Просыпается при получении урона или по истечении {Count} ходов."
   Name: Пожиратель снов
 DreamServant:
   Description: '{OwnerName} не может потерять здоровье.'
   Name: Обитатель снов
 ShendengSe:
-  Description: В конце хода {OwnerName:g}, {PlayerName} случайным образом получает
+  Description: В конце хода {OwnerName:g} {PlayerName} случайным образом получает
     {Level} |Слабости|, |Хрупкости| или |Уязвимости|.
   Name: Чайник с длинным носиком
 MadokaBowSe:
-  Description: "В конце хода {OwnerName:g}, положите {Level} случайных карт |Статуса|\
-    \ в стопку добора.\n|d:(Чем выше сложность тем сильнее эти карты.)|"
-  Name: Лук стреляющий светом
+  Description: "В конце хода {OwnerName:g} получите {Level} случайных карт |Статуса|\
+    \ и замешайте их пополам в стопку добора и стопку сброса."
+  Name: Лук, стреляющий светом
 QiannianShenqiSe:
   Description: "{PlayerName} может взять не более {Limit} карт за ход.\n|d:({Count}\
     \ карт осталось.)|"
-  Name: Блоки в форме пирамиды
+  Name: Головоломка в форме пирамиды
+  ExtraDescription: "Когда {PlayerName} берёт {Limit} карт за ход, последующие взятия\
+    \ карт вызывают потерю {Level} здоровья.\n|d:({Count} карт осталось.)|"
 LoveGirlDamageReduce:
-  Description: Чувства {OwnerName:g} остаются безответными. Она получают на {Rate}%
+  Description: Чувства {OwnerName:g} остаются безответными. Она получает на {Rate}%
     меньше урона.
   Name: Томительные сожаления
 PhoneBillSe:
-  Name: Счет за телефон
+  Name: Счёт за телефон
   Description: "{OwnerName} собирает {Level} <sprite=\"Point\" name=\"Gold”> за каждый\
-    \ телефонный звонок.\nПри победе над ней выронит {Count} <sprite=\"Point\" name=\"\
+    \ телефонный звонок.\nПри своём поражении выронит {Count} <sprite=\"Point\" name=\"\
     Gold”>."
 KokoroXi:
-  Description: В конце своего хода {OwnerName} |Призывает| Менрейки.
+  Description: В конце своего хода {OwnerName} Призывает |Менрейки|. (Уже произошло)
   Name: Счастье
 KokoroNu:
   Name: Гнев
   Description: В конце хода {OwnerName:g} все враги получают {Level} |Огневой мощи|.
-    (Уже произошло.)
+    (Уже произошло)
 Lunatic:
   Name: Лунатизм
   Description: "Магический свет сияет над всеми. {OwnerName} впала в безумие. Её действия\
@@ -314,35 +324,41 @@ FirepowerIsJustice:
   Name: Правый тот, кто сильнее!
 RockHardAura:
   Description: '{OwnerName} получает на {Level} меньше урона от незаблокированных
-    атак, если находиться под защитой Краеугольного Камня.'
-  Name: Защита краеугольного камня
+    атак, если находится под опекой Краеугольного камня.'
+  Name: Опека краеугольного камня
 LouguanJianSe:
   Description: Атаки {OwnerName:g} накладывают {Level} |Захвата| на цель.
-  Name: Роканкен
+  Name: Роканкэн
 KokoroYou:
   Name: Печаль
-  Description: В конце хода {OwnerName:g}, {PlayerName} получает {Level} |Слабости|.
+  Description: В конце хода {OwnerName:g} {PlayerName} получает {Level} |Слабости|.
+    (Уже произошло)
 LongEscape:
   Description: '{OwnerName} сбегает, если её здоровье опускается ниже {Level}.'
   Name: Расслабленность
 FlatPeach:
-  Description: При получении урона {OwnerName} восполняет себе {Level} здоровья.
+  Description: При получении урона {OwnerName} восстанавливает себе {Level} здоровья.
   Name: Небесный персик
 FastAttack:
   Description: Когда {PlayerName} разыгрывает свою первую карту за ход, {OwnerName}
-    наносит ей {Level} урона.
-  Name: Апекс Спидстер
+    наносит {PlayerName:g} {Level} урона от атаки.
+  Name: Пик скорости
+  ExtraDescription: "Когда {PlayerName} разыгрывает свою первую карту за ход, {OwnerName}\
+    \ наносит {PlayerName:g} {Level} урона от атаки.\n(Уже сработало в этом ходу -\
+    \ перезарядится в следующем ходу {PlayerName:d}.)"
 PowerByDefense:
   Description: '{OwnerName} получает {Level} |Огневой мощи|, когда разыгрывается карта
     |Обороны|.'
   Name: Непоколебимая защита
 LongLight:
-  Description: '{OwnerName} сияет словно звезда! Её карты |Статуса| становятся сильнее.'
+  Description: '{OwnerName} сияет, словно звезда! Её урон увеличивается, а карты |Статуса|
+    становятся опаснее.'
   Name: Сияющий трипод
 InfinityGemsSe:
-  Description: В начале хода {OwnerName:g} половина карт |Изгоняется|. Карты выбираются
-    случайным образом из руки, стопки добора и стопки сброса.
-  Name: Украшенные драгоценностями перчатки
+  Description: "В начале хода {OwnerName:g} половина карт |Изгоняется| с поля боя.\
+    \ Карты выбираются случайным образом из руки, стопки добора и стопки сброса.\n\
+    Активируется ещё {Count:plural one='% раз' other='% раза'}."
+  Name: Перчатка, украшенная камнями
 PoisonPotionSe:
   Description: '|Нестабильное зелье| также накладывает на цель {Level} |Яда|.'
   Brief: '|Нестабильное зелье| также накладывает на цель |Яд|.'
@@ -356,7 +372,7 @@ PotionJungleSe:
 DragonBallSe:
   Name: Стеклянный звёздный шар
   Description: 'В начале хода {OwnerName:g} ее |желание| исполняется: {PlayerName}
-    проигрывает игру.'
+    завершает поход.'
 DoubleLianhuadieSe:
   Description: Наносит {Level} урона случайному врагу при получении |Защиты| или |Барьера|.
   Brief: Наносит урон случайному врагу при получении |Защиты| или |Барьера|.
@@ -366,8 +382,8 @@ SolarSystemSe:
   Name: Солнце оррери
   Brief: Даёт некоторое количество |Заряда| в начале хода {PlayerName:g}.
 FreeFlySe:
-  Description: Добавляет {Mana} в начале хода {PlayerName:g}.
-  Name: Свободный полет
+  Description: Даёт {Mana} в начале хода {PlayerName:g}.
+  Name: Свободный полёт
   Brief: Даёт {Level} {Mana} в начале хода {PlayerName:g}.
 BoliDajiejieSe:
   Description: Когда {OwnerName} получает |Защиту|, вместо этого она получает столько
@@ -375,9 +391,9 @@ BoliDajiejieSe:
   Name: Великий барьер Хакурэй
   Brief: Преобразует всю получаемую |Защиту| в |Барьер|.
 HolyGrailSe:
-  Description: В начале хода {OwnerName:g}, {PlayerName} теряет все не-|Сияющие| и
+  Description: В начале хода {OwnerName:g} {PlayerName} теряет все не-|Сияющие| и
     не-|Мифические| |Экспонаты|.
-  Name: Переукрашенный Золотой кубок
+  Name: Приукрашенный золотой кубок
 PerfectServantWSe:
   Description: После следующей фазы взятия карт {OwnerName:g} стоимость всех карт
     в руке |временно понижается| на {Anys}.
@@ -386,7 +402,7 @@ PerfectServantWSe:
   Name: Идеальная слуга
 SakuraWandSe:
   Name: Крылатый ключ
-  Description: '{OwnerName} удваивает количество атак.'
+  Description: '{OwnerName} атакует в два раза больше.'
 JiangshenSe:
   Description: '|Улучшает| добавляемые во время битвы карты.'
   Name: Медитация веры
@@ -395,7 +411,7 @@ DanceAroundLakeSe:
   Brief: Возьмите одну или несколько карт, когда |Изгоняется| карта.
   Description: Возьмите {Level:plural one='% карту' other='% карты'}, когда |Изгоняется|
     карта.
-  Name: Танец возле речки
+  Name: Танец на берегу озера
 ScryBlockSe:
   Description: Даёт {Level} |Защиты|, когда {PlayerName} |Предсказывает|.
   Name: Преднамеренность
@@ -446,9 +462,9 @@ TaijiLiangyiSe:
     Инь-Ян| в руку' other='добавляет |Сферы Инь-Ян| пока их не будет %'}.
 DoremyLevel:
   Description: Чем глубже сон, тем сильнее атаки {OwnerName:g}.
-  Name: Степень сна
+  Name: Глубина сна
 DreamMaster:
-  Description: '{OwnerName} - владыка снов.'
+  Description: '{OwnerName} - повелитель снов.'
   Name: Творец снов
 EvilMaidSe:
   Name: Горничная дьяволицы
@@ -477,8 +493,8 @@ ShannvAbilitySe:
   Name: Неизвестная болезнь
 LunaticTorch:
   Name: Факел безумия
-  Description: "Факел {OwnerName:g} сияет странным светом над всеми. Все враги впали\
-    \ в |Безумие|.\nДобавляет {Mana} в начале хода {PlayerName:g}."
+  Description: "Факел {OwnerName:g} сияет странным светом. Все враги впали в |Безумие|.\n\
+    Добавляет {Mana} в начале хода {PlayerName:g}."
 InterviewDone:
   Name: Завершённое интервью
   Description: "{OwnerName} собрала все кусочки правды воедино.\nОна сделает эксклюзивный\
@@ -491,17 +507,17 @@ UseCardToLoseGame:
   Name: Жить осталось совсем недолго
   Brief: Проигрывает после того, как сыграет некоторое количество карт.
 SijiZui:
-  Name: Суждение о правильном и неправильном
+  Name: Суд Добра и Зла
   Description: 'Грехи {PlayerName:g}: Незначительные.'
-  ExtraDescription: 'Грехи {PlayerName}: Средние.'
-  ExtraDescription2: 'Грехи {PlayerName}: Серьезные.'
+  ExtraDescription: 'Грехи {PlayerName:g}: Средние.'
+  ExtraDescription2: 'Грехи {PlayerName:g}: Серьёзные.'
 MirrorImage:
   Description: Отражение {OwnerName:g}.
   Name: Зеркальное отражение
 EnemyEnergy:
   Name: Энергия
-  Description: '{OwnerName} получает <sprite="Point" name=”Power”> равной полученному
-    урону. Используется для активации Спеллкарты.'
+  Description: '{OwnerName} получает <sprite="Point" name=”Power”>, равную полученному
+    урону. Используется для активации спелл-карты.'
 EnemyEnergyNegative:
   Description: "{OwnerName} увеличила <sprite=\"Point\" name=\"Power”>.\nЭто не должно\
     \ отображаться в игровом процессе."
@@ -598,9 +614,10 @@ Cold:
   Description: Руки {OwnerName:g} дрожат от холода! Температура будет восстановлена
     в начале следующего хода.
 AmuletForCard:
-  Name: Экзорцизм
-  Description: Предотвращает получение {Level:plural one='% карты ' other='% карт'}
-    Статуса. (Они сразу же |Изгоняются|).
+  Name: Отвод
+  Description: Предотвращает получение {Level:plural one='% карты' other='% карт'}
+    Статуса. (Он{Level:plural one='а' other='и'} сразу же |Изгоня{Level:plural one='е'
+    other='ю'}тся|).
   Brief: Предотвращает получение карт Статуса (Они сразу же |Изгоняются|).
 DrawPhaseAddKnife:
   Name: Ножи вместо взятия карт в начале хода
@@ -686,7 +703,7 @@ YachieDefendSe:
     Если источником урона является враг, то он получает урон вместо {OwnerName:g}."
 NextTurnGainShield:
   Brief: В начале следующего хода {OwnerName:g} получите некоторое количество |Барьера|.
-  Name: Получение барьера в следующем ходу
+  Name: Барьер в следующем ходу
   Description: В начале следующего хода {OwnerName:g} получите {Level} |Барьера|.
 KnifeWithLockedOn:
   Name: Ты следующий!
@@ -710,9 +727,12 @@ ReimuFestivalSe:
   Brief: '{PlayerName} получит |Временную Огневую мощь| в начале своего хода.'
 DeathPoison:
   Name: Трупный яд
-  Description: Накладывает {Level} |Яда| на {PlayerName:a} после смерти {OwnerName}.
+  Description: Накладывает {Level} |Яда| на {PlayerName:g} после смерти {OwnerName:g}.
 FoxCharm:
   Name: Обояние лисицы
+  Description: "Только {Limit} карт{Limit:plural one='а может быть разыграна' other='ы\
+    \ могут быть разыграны'} в этот ход.\nОсталось {Count} карт{Count:plural one='а'\
+    \ other='в'}.\nПобедите |Лисицу-ёкая|, чтобы снять этот эффект."
 YouxiangMoonSe:
   Description: Добавляет {Mana} в начале хода {PlayerName:g}.
   Brief: Даёт {Level} {Mana} в начале хода {PlayerName:g}.
@@ -737,3 +757,110 @@ ControlNegative:
   Description: "Теряет {Level} |Контроля|.\n(|Контроль| увеличивает разные эффекты\
     \ |Кукол|.)"
   Brief: "Пониженный |Контроль|.\n(|Контроль| увеличивает разные эффекты |Кукол|.)"
+EnemyDayaojing:
+  Name: Помощь Дайёсей
+  Description: Когда {OwnerName} заканчивает ход, она восстанавливает {Level} здоровья.
+KoishiUnknown:
+  Name: Непредсказуемость
+  Description: "{OwnerName} скрывает часть своих намерений.\nЧем больше уровень эффекта,\
+    \ тем больше сведений скрываются."
+ShenlingGold:
+  Description: '{OwnerName} выронит {Level} <sprite="Point" name="Gold"> при своём
+    поражении.'
+  Name: Дар богатства
+ShenlingHp:
+  Name: Дар здоровья
+  Description: Когда {OwnerName} побеждается, {PlayerName} получает {Level} максимального
+    здоровья.
+Appliance:
+  Name: Бытовой прибор
+  Description: '{OwnerName} имеет иммунитет к |Слабости| и |Уязвимости|.'
+LimaoDisguiser:
+  Name: Трюк превращения
+  Description: Этот персонаж принял чужой облик.
+SuwakoHex:
+  Name: Сглаз
+  Description: В начале хода {PlayerName:g} случайная карта в руке превращается в
+    бесполезную |Лягушку|.
+  ExtraDescription: "В начале хода {PlayerName:g} случайная карта в руке превращается\
+    \ в бесполезную |Лягушку|.\n(Это уже произошло, перезарядка случится, когда сходит\
+    \ {OwnerName}.)"
+JunkoLily:
+  Description: Когда активируется |Свет очищения|, {PlayerName} теряет {Level} здоровья.
+  Name: Смертоносная лилия
+JunkoColor:
+  ExtraDescription: "Количество нечистот {PlayerName:g}: Огромное.\n{JunkoName} получает\
+    \ |Огневую мощь|, а эффект \"Цежения Земных нечистот\" становится сильнее."
+  Name: Растущие пятна
+  ExtraDescription2: "Количество нечистот {PlayerName:g}: Невыносимое.\n{JunkoName}\
+    \ получает |Огневую мощь|, а эффект \"Цежения Земных нечистот\" становится сильнее."
+  Description: 'Количество нечистот {PlayerName:g}: Малое.'
+KokoroRenzhen:
+  Name: Серьёзность
+  Description: "Когда {OwnerName} действует, она теряет все |Тёмные эмоции| и наносит\
+    \ на {Level} больше урона {PlayerName:g} за каждую |\nТёмную эмоцию|, потраченную\
+    \ таким образом. (Уже произошло)"
+KokoroDarkPower:
+  Name: Скопление тёмных эмоций
+  Description: "Следующая спелл-карта {OwnerName:g} нанесёт {PlayerName:d} дополнительный\
+    \ урон.\nЗначение увеличивается, когда на {PlayerName:g} накладывается негативный\
+    \ эффект."
+InvincibleEternal:
+  Description: '{OwnerName} теряет не более 1 здоровья от любого источника урона.'
+  Brief: '{OwnerName} теряет не более 1 здоровья от любого источника урона.'
+  Name: Безупречность
+EnemyLarva:
+  Description: Когда {PlayerName} наносит {OwnerName:d} урон от атаки, то получает
+    {Level} |Яда|.
+  Name: Крылья Ларвы
+ManaFreezed:
+  Name: Заморозка маны
+  Description: Первая карта, разыгрываемая каждый ход, стоит на {Mana} больше.
+  Brief: Первая карта, разыгрываемая каждый ход, требует больше маны.
+EnemyLily:
+  Name: Оповещение Лили Уайт
+  Description: Действия {OwnerName:g} становятся эффективнее.
+SihunYuSe:
+  Name: Подвеска, привлекающая зло
+  Description: Когда {OwnerName} заканчивает ход, она привлекает больше противников
+    для участия в бою.
+EnemyMaid:
+  Name: Уборка Касуми
+  Description: Когда {OwnerName} заканчивает ход, она наносит {Level} урона {PlayerName:d}.
+PurifyModule:
+  Description: Когда {OwnerName} попадает в {PlayerName:g} атакой, |Очищает| {Level}
+    маны в начале следующего хода {PlayerName:g}.
+  Name: Модуль очищения
+SuperExtraTurn:
+  Name: '"Конец нетленной ночи"'
+  Description: "После |Обычного хода| {PlayerName:g} сделайте |Дополнительный ход|.\n\
+    |Защита| и |Уворот| сохраняются на этот ход, но только {Value1} карт{Value1:plural\
+    \ one='а может быть сыграна' other='ы могут быть сыграны'}.\nСтатус хода: {StatusString}."
+  Brief: "После |Обычного хода| {PlayerName:g} сделайте |Дополнительный ход|.\n|Защита|\
+    \ и |Уворот| сохраняются на этот ход, но только {Value1} карт{Value1:plural one='а\
+    \ может быть сыграна' other='ы могут быть сыграны'}."
+  ExtraDescription: "После |Обычного хода| {PlayerName:g} сделайте |Дополнительный\
+    \ ход|.\n|Защита| и |Уворот| сохраняются на этот ход, но только {Value1} карт{Value1:plural\
+    \ one='а может быть сыграна' other='ы могут быть сыграны'}.\nСтатус хода: {Count}\
+    \ карт{Count:plural one='а' other='ы'} остались на ход {SelfName:g}.\n"
+AccuracyModule:
+  Name: Модуль наведения
+  Description: Атаки {OwnerName:g } получают |Точность|.
+EnemyTuanzi:
+  Name: Вкусное данго
+  Description: Когда {OwnerName} заканчивает ход, то восстанавливает {Level} здоровья.
+LightingModule:
+  Name: Модуль вспышки
+  Description: Когда {OwnerName} попадает в {PlayerName:g} атакой, добавляет {Level}
+    |{Level:plural one='Манящий звездный свет' other='Манящих звёздных света'}| в
+    стопку добора.
+NextTurnGainGraze:
+  Name: Уворот в следующем ходу
+  Brief: В начале следующего хода {OwnerName:g} получите некоторое количество |Уворота|.
+  Description: В начале следующего хода {OwnerName:g} получите {Level} |Уворота|.
+BossAct:
+  Name: Смена сцены
+  Description: Когда {OwnerName} получает {Count} урона, то выполняет действие, не
+    заканчивая ход {PlayerName:g}.
+  Brief: Когда {OwnerName} получает {Count} урона, то выполняет действие, не заканчивая
+    ход {PlayerName:g}.
