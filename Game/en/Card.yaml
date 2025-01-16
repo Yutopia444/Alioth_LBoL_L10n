@@ -2818,12 +2818,13 @@ PatchouliFriend:
   FlavorText: '"Shake, shake, sway, shake."'
 ReimuHuashan:
   Description: "At the start of the next combat, |Exile| {SelfName}, and gain {Value1}\
-    \ |Firepower|.\nThis effect can only happen once per combat."
+    \ |Firepower|.\nOnly the first {SelfName} will take effect each combat."
   ExtraDescription1: "At the start of the next combat, |Exile| {SelfName}, and gain\
-    \ {Value1} |Firepower|.\nThis effect can only happen once per combat. (Already\
-    \ occurred)"
+    \ {Value1} |Firepower|.\nOnly the first {SelfName} will take effect each combat.\
+    \ (Already occurred)"
   Name: Receive Guidance
   FlavorText: '"Okay, fine, you win."'
+  DetailText: Only a {SelfName} from the library can carry over to the next combat.
 MoonSea:
   Description: "Gain {Block} |Block|.\nAdd a |Pure| to the hand."
   UpgradedDescription: "Gain {Block} |Block|.\nAdd a |Pure| or a |Splash| to the hand."
@@ -3139,6 +3140,8 @@ LeaveMoodGraze:
 PassionDefense:
   Description: "Gain {Block} |Block|.\n|In Passion|: Gain {Value1} more |Block|."
   Name: Low Profile
+  FlavorText: When you want to top popularity polls but don't want to give yourself
+    away.
 MoodAttack:
   Description: "Deal {Damage} damage.\nWhenever {PlayerName} changes |Mental States|.\
     \ return {SelfName} from the discard pile to the hand."
