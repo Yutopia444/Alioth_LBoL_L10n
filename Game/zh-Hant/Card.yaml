@@ -71,10 +71,6 @@ Fengmozhen4:
   UpgradedDescription: 對所有敵人造成 {Damage} 點傷害 {Value1} 次。
   FlavorText: 這個招式命中的不是邪惡的人，而是站在螢幕右邊的人。
 
-WunvKongwu:
-  Description: |-
-    獲得 {Value1} 層|閃避|。
-    抽 {Value2} 張牌。
 TuimofuLuanwu:
   Name: 退魔符亂舞
   Description: 隨機對敵人造成 {Damage} 點傷害 {Value1} 次。
@@ -107,8 +103,8 @@ Jinfuzhen:
 JingshenYishi:
   Name: 淨身儀式
   Description: |-
-    獲得 {Block} 點|格擋|。
-    選擇一張手牌|放逐|。
+    抽 {Value1} 張牌。
+    獲得 {Value2} 點|神恩|。
 YinyangBaoyu:
   Name: 陰陽寶玉
   Description: |-
@@ -145,7 +141,7 @@ Zhuizongfu:
   Name: 追蹤符
   Description: |-
     隨機對敵人造成 {Damage} 點傷害 {Value1} 次。
-    如果{PlayerName}擁有|暫得火力|，獲得{Mana}。
+    下回合開始時獲得{Mana}。
   FlavorText: '"原來暫得火力與火力不是同一個東西。"初次遊玩的玩家可能會產生這樣的感想。'
 
 ReimuFestival:
@@ -165,7 +161,7 @@ FengyinYaomo:
 DanmuDuijue:
   Name: 彈幕對決
   Description: |-
-    獲得 {Block} 點|格擋|。
+    獲得 {Shield} 點|護盾|。
     獲得 {Value1} 點|反射|。
     {SelfName}亦受|火力|加成。
   FlavorText: 符卡規則從未收取過版權費，可能這就是「互聯網精神」吧。
@@ -283,10 +279,7 @@ ReimuFreeAttack:
 ReimuDrink:
   Name: 御神酒
   Description: |-
-    恢復 {Value1} 點生命。
-    將 {Value2} 張|小酌怡情|加入手中。
-  FlavorText: 三國時期的武將喝了酒後會用點燃的刀砍被鐵鏈綁起來的藤甲人。
-
+    獲得 {Value1} 點|神恩|。
 EvilTuiZhi:
   Name: 妖邪退治
   Description: 本回合內，下 {Value1} 張攻擊牌會打出兩次。
@@ -408,14 +401,8 @@ DanceAroundLake:
 AutoQumobang:
   Name: 暴走驅魔棒
   Description: |-
-    |手牌中|：回合開始時多抽 {Value1} 張牌。
-    生效 {Value2} 次後|放逐|自身。
+    |進入手中時|：|放逐|{SelfName}，後續 {Value2} 回合的抽牌階段多抽 {Value1} 張牌。
   FlavorText: 「自主的驅魔棒正在搶奪巫女們的工作崗位。」——《文文新聞·經濟版》
-
-Qingshan:
-  Description: |-
-    獲得 {Block} 點|格擋|。
-    隨機|放逐| {Value1} 張手中的|厄運|或狀態牌。
 
 GapLady:
   Name: 隙間女子
@@ -1800,18 +1787,14 @@ FlowerGone:
   Description: |-
     獲得 {Block} 點|格擋|。
     |平靜|：改為獲得 {Shield} 點|護盾|。
-LoveFire:
-  Description: |-
-    進行一次|追加攻擊|。
-    {PlayerName}的回合結束時，如果本回合進行過|追加攻擊|，獲得 {Value1} 點|火力|。
 BabyDream:
   Name: 胎兒之夢
-  Description: "獲得 {Block} 點|格擋|。\n|入夢| {Value1} 。"
+  Description: "獲得 {Block} 點|格擋|。\n|入夢| {Value1} ，將其中第一張|追擊|牌打出。 "
 
 PerfectCrime:
   Name: 完美作案
   Description: |-
-    竊取目標的|閃避|、|光學迷彩|、|天衣無縫|；竊取目標的|火力|、|靈力|，至多 {Value1} 點。
+    竊取目標的|護盾|、|閃避|、|光學迷彩|、|天衣無縫|；竊取目標的|火力|、|靈力|，至多 {Value1} 點。
 
 AliceAttackW:
   Name: 人形槍擊
@@ -2295,10 +2278,12 @@ RangziFanshu:
 
 DizangLove:
   Name: 即席菩提
-  Description: |
-    打出普通卡牌後，{PlayerName}獲得 {Value1} 點|暫得火力|。
+  Description: |-
+    獲得 {Value1} 點最大生命值。
+    每場戰鬥中，只有第一張{SelfName}生效。
 
   FlavorText: 我們不用很久很刻苦就可以成佛。
+  ExtraDescription1: "|d:獲得 {Value1} 點最大生命值。|\n每場戰鬥中，只有第一張{SelfName}生效。"
 YuyukoSing:
   Name: 蝶之羽風
   Description: |-
@@ -2328,6 +2313,7 @@ LimaoSchool:
   Name: 狸貓的變身學校
   Description: 從 {Value1} 張隨機的|狸貓變化|中選擇 {Value2} 張生效。
 
+  DetailText: '|e:兩棲變化|每場戰鬥中只能生效一次，之後打出的{SelfName}不會以它作為選項。'
 MorphBird:
   Name: 羽鳥變化
   Description: 獲得 {Value1} 層|閃避|。
@@ -3391,10 +3377,10 @@ YijiSkill:
   Description: 從 {Value1} 個隨機的|e:神明技能|中選擇一個生效。
 ReimuHuashan:
   Name: 接受指教
-  Description: "選擇手中的一張牌|放逐|，獲得 {Value2} 點<sprite=\"Point\" name=\"Power\">。\n選擇|能力|牌時額外獲得 {Value1} 點最大生命值。（每場戰鬥中只能生效一次）"
-  ExtraDescription1: "選擇手中的一張牌|放逐|，獲得 {Value2} 點<sprite=\"Point\" name=\"Power\">。\n\
-    |d:選擇|能力|牌時額外獲得 {Value1} 點最大生命值。（每場戰鬥中只能生效一次）|"
+  Description: "下一場戰鬥開始時，放逐{SelfName}，獲得 {Value1} 點|火力|。\n每場戰鬥中，只有第一張{SelfName}生效。"
+  ExtraDescription1: "下一場戰鬥開始時，放逐{SelfName}，獲得 {Value1} 點|火力|。\n每場戰鬥中，只有第一張{SelfName}生效。（已打出過）"
   FlavorText: 「對對對，你說得對。」
+  DetailText: 只有在牌庫中的{SelfName}才會被帶入下一場戰鬥中。
 YijiEarthSpike:
   Name: 裂地尖刺/祇園之力
   Description: 對所有敵人造成 {Damage} 點傷害，施加 {Value1} 回合|虛弱|。
@@ -3621,6 +3607,7 @@ MoodAttack:
 PassionDefense:
   Name: 低調
   Description: "獲得 {Block} 點|格擋|。\n|熱情|：額外獲得 {Value1} 點|格擋|。"
+  FlavorText: 當你成為人氣投票第一，但是又不想被人認出來。
 PassionVulnerable:
   Name: 無眠之夜
   Description: "|熱情|：對所有敵人施加 {Value1} 回合|易傷|。\n否則，進入|熱情|。"
@@ -3705,7 +3692,7 @@ DuplicateFollower:
   ExtraDescription1: 造成 {Damage} 點傷害，獲得{Mana}。
 AncestorDream:
   Name: 祖先託夢
-  Description: "對所有敵人造成 {Damage} 點傷害。\n|入夢| {Value1} 。"
+  Description: "對所有敵人造成 {Damage} 點傷害。\n|入夢| {Value1} ，將其中第一張|追擊|牌打出。 "
 YaoguaiLaser:
   Name: 妖怪腦電波
   Description: "造成 {Damage} 點傷害。\n進行一次|追加攻擊|。\n|直覺|：額外進行一次|追加攻擊|。"
@@ -3753,8 +3740,6 @@ BlackEpiphany:
 FakeBullet:
   Name: 假想的彈幕
   Description: "進行 {Value1} 次|追加攻擊|。\n當抽牌堆沒有|追擊|牌時，將以隨機產生的|追擊|牌進行追擊。"
-KoishiMana:
-  Description: "對所有敵人造成 {Damage} 點傷害。\n獲得{Mana}。"
 KoishiSpark:
   Name: 浪漫夜的最後來電
   Description: 對所有敵人造成 {Damage} 點傷害。
@@ -3766,7 +3751,10 @@ TheFool:
   Description: "|占卜| {Scry} 。\n打出抽牌堆頂的牌。"
 KoishiDna:
   Name: 哈德曼的妖怪少女
-  Description: '{PlayerName}的回合開始時，打出抽牌堆頂的牌。'
+  Description: '打出抽牌堆頂的牌。
+
+    {PlayerName}的回合開始時，打出抽牌堆頂的牌。'
+  DetailText: 'v1.6.1: 回合開始時，自動打出卡牌在抽牌前發生。'
 KoishiAttackX:
   Name: 薔薇地獄
   Description: '|每支付|<sprite="ManaSprite" name="2">：對所有敵人造成 {Damage} 點傷害，獲得{Mana}。'
@@ -3775,7 +3763,9 @@ Anatta:
   Description: "離開|平靜|的法力獲取提高至{Mana}。\n進入|平靜|。"
 ButterflyDream:
   Name: 莊周夢蝶
-  Description: '{PlayerName}的回合開始時，將 {Value1} 張|p:完全隨機|的稀有牌加入手中，它具有|放逐|、|虛無|，費用可以用任意顏色支付。'
+  Description: '將 {Value1} 張|p:完全隨機|的稀有牌置於牌堆頂，它具有|填充|、|放逐|、|虛無|，費用可以用任意顏色支付。
+
+    {PlayerName}的每個回合開始後再次生效。'
   DetailText: "|e:備選牌|無視法力、顏色和所有者限制。\n不能找到{SelfName}。\n不會找到|費用 X |卡牌。"
 KokoroFriend:
   Name: 人格面具覺醒秦心
@@ -3834,3 +3824,23 @@ DebugAddRandomCardsToExileSlow:
 DebugUpgradeAllZone:
   Name: 升級各堆卡牌
   Description: 測試卡牌：升級各堆卡牌中的前 {Value1} 張可升級卡牌。
+ReimuGrace:
+  Name: 博麗的眷顧
+  Description: "獲得 {Value1} 點|神恩|。\n{PlayerName}的回合開始時獲得 {Value1} 點|神恩|。"
+ReimuEvilTerminator:
+  Name: 除魔專家
+  Description: "每當一名敵人被擊敗，獲得{Mana}。\n獲得 {Value1} 層|庇護|。"
+KoishiTouying:
+  Name: 戀之埋火
+  Description: "獲得{Mana}。\n從 {Value1} 張卡牌中選擇一張置於牌堆頂，它具有|填充|、|放逐|、|虛無|。\n這些卡牌的費用總數不少於 {Value2}。"
+KoishiPotential:
+  Name: 潛能釋放
+  Description: 展示抽牌堆頂的 {Value1} 張牌，選擇一張，將它打出兩次，然後|放逐|它。
+  FlavorText: 當你的大腦開發到25%時。
+CommonFire:
+  Name: 平凡之力
+  Description: "打出普通卡牌後，{PlayerName}獲得 {Value1} 點|暫得火力|。\n"
+  UpgradedDescription: "打出普通卡牌後，{PlayerName}獲得 {Value1} 點|暫得火力|。\n將一張|純粹|加入手中。"
+KoishiUltimateToken:
+  Name: 生命綻放
+  Description: "造成 {Damage} 點傷害，獲得{TotalMana}。\n|被保留時|：傷害提高 {Value1} 點，法力獲取提高{Mana}。"
