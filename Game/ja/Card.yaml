@@ -30,8 +30,6 @@ TuimofuLuanwu:
   Name: 退魔符乱舞
   Description: ランダムな敵に{Damage}ダメージを{Value1}回与える。
   FlavorText: 「残るはあんた一人ってことよね。」
-WunvKongwu:
-  Description: "|グレイズ|{Value1}を得る。\nカードを{Value2}枚引く。"
 LingfuHuti:
   Name: 護身の霊符
   Description: "{Block}|ブロック|を得る。\n|神域札|を1枚手札に加える。"
@@ -43,7 +41,7 @@ Jinfuzhen:
   FlavorText: 逃げようとさえしなければ、実は見かけほど強力な効果は無い。
 JingshenYishi:
   Name: 清めの儀式
-  Description: "{Block}|ブロック|を得る。\n手札を1枚|廃棄|する。"
+  Description: "カードを{Value1}枚引く。\n|神恩|{Value2}を得る。"
 YinyangBaoyu:
   Name: 陰陽宝玉
   Description: "{Damage}ダメージを与える。\n|陰陽玉|を1枚手札に加える。"
@@ -90,7 +88,7 @@ Fengmozhen4:
   FlavorText: この技は悪者に当たるのではない。画面右に居る者に当たるのだ。
 Zhuizongfu:
   Name: ホーミングアミュレット
-  Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n{PlayerName}が|臨時火力|を持つ場合、{Mana}を得る。"
+  Description: "ランダムな敵に{Damage}ダメージを{Value1}回与える。\n次のターン開始時、{Mana}を得る。"
   FlavorText: '"『臨時火力』と『火力』って同じ物じゃないのか。"初見の方たちは恐らくそう思われたであろう。'
 ReimuFestival:
   Name: 桜の舞
@@ -102,7 +100,7 @@ FengyinYaomo:
   FlavorText: 目標：吉弔八千慧、飯綱丸龍 、古明……
 DanmuDuijue:
   Name: 弾幕対決
-  Description: "{Block}|ブロック|を得る。\n|反射|{Value1}を得る。\n{SelfName}の効果は|火力|によって増減する。"
+  Description: "{Shield}|バリア|を得る。\n|反射|{Value1}を得る。\n{SelfName}の効果は|火力|によって増減する。"
   FlavorText: スペルカードルールでライセンス使用料なんか取ったこと無いわよ。「開放主義」って奴かしら。
 ReverseJiejie:
   Name: 逆転結界
@@ -232,15 +230,13 @@ DanceAroundLake:
   Description: カードを|廃棄|するたび、カードを{Value1}枚引く。
   FlavorText: "\"昔ね、早起きしちゃって暇だったから湖を見に行ったんだよね。そしたら巫女さんが踊っててさ。神秘的で...とっても綺麗だったなぁ。\n\
     ずっと見てたら雨が降ってきたんだけど、気付いた時には巫女さんは居なくなってて...。\""
-Qingshan:
-  Description: "{Block}|ブロック|を得る。\n手札のランダムな|厄災|または|状態異常|カードを{Value1}枚廃棄する。"
 DoubleLianhuadie:
   Name: 二色蓮花蝶
   Description: '{PlayerName}が|ブロック|か|バリア|を得るたび、ランダムな敵に{Value1}のダメージを与える。'
   FlavorText: '...もうどれほど経っただろう。あの花の上に佇む二色の可憐な"蝶"に目を奪われてから。'
 AutoQumobang:
   Name: 暴れるお祓い棒
-  Description: "|手札効果|：ターン開始時、カードを{Value1}枚引く。\nこの効果を{Value2}回発動された後、このカードを|廃棄|する。"
+  Description: "|手札に加わった時|：{SelfName}を|廃棄|する。以降の{Value2}ターンの間ドローフェイズに追加でカードを{Value1}枚引く。"
   FlavorText: 「自律型お祓い棒、巫女の仕事を奪う!!」——《文々。新聞-経済版》
 GapLady:
   Name: 隙間女
@@ -356,8 +352,7 @@ SuikaOut:
   FlavorText: 999火力の敵にあまり通用しないらしい。
 ReimuDrink:
   Name: 御神酒
-  Description: "ライフを{Value1}回復する。\n|ちょい飲み|を{Value2}枚手札に加える。"
-  FlavorText: 三国時代の武将は、酒を飲んだ後に燃えた刀で鎖に縛られた藤甲兵をめった斬りにしたらしい。
+  Description: "|神恩|{Value1}を得る。"
 ShibaiChanwu:
   Name: 失敗の産物
   Description: "|ポーション|を{Value1}枚山札に加える。\n|暗闇|を{Value2}枚手札に加える。"
@@ -1248,6 +1243,7 @@ MeilingRain:
 LimaoSchool:
   Name: 狸の化け学校
   Description: ランダムな{Value1}枚の|弾幕変化|から{Value2}枚を選び、その効果を得る。
+  DetailText: '|e:両生化弾幕変化|は各戦闘で1回しか使用できず、それ以降に{SelfName}を使用した場合の選択肢からは除外される。'
 MorphBird:
   Name: 延羽化弾幕変化
   Description: '|グレイズ|{Value1}を得る。'
@@ -1330,8 +1326,9 @@ ReisenAttack:
   FlavorText: おお！「月虹市場」と「闇の抱擁」はついに我が手に！
 DizangLove:
   Name: 即席菩薩
-  Description: "コモンカードをプレイするたび、{PlayerName}は|臨時火力|{Value1}を得る。\n"
+  Description: "最大ライフを{Value1}増やす。\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。"
   FlavorText: 我々は長く厳しい修行をしなくても成仏できる。
+  ExtraDescription1: "|d:最大ライフを{Value1}増やす。|\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。"
 LoyalMaid:
   Name: 忠実なる召使い
   Description: "{Shield}|バリア|を得る。\n追加ターンを得る度、捨て札から手札へと加えられ、|臨時コスト|{Mana}になる。"
@@ -2001,11 +1998,9 @@ HatateShot:
 FakeCard:
   Name: 竹取物语（偽）
   Description: "このカードはまだ開発中です。\n今後のアップデートをお楽しみに。"
-LoveFire:
-  Description: "|追加攻撃|を行う。\n{PlayerName}のターン終了時、そのターンに|追加攻撃|が行われていたなら|火力|{Value1}を得る。"
 BabyDream:
   Name: 胎児の夢
-  Description: "{Block}|ブロック|を得る。\n|夢見|{Value1}。"
+  Description: "{Block}|ブロック|を得る。\n|夢見|{Value1}を行い、最初に捨て札に送られた|追撃|カードを使用する。 "
 MoonTipsAttack:
   Name: 弾幕補充
   Description: '|ショット|を{Value1}枚山札に加え、|補充|を与える。'
@@ -2054,7 +2049,7 @@ FlowerGone:
   Description: "{Block}|ブロック|を得る。\n|平静|状態なら代わりに{Shield}|バリア|を得る。"
 PerfectCrime:
   Name: 完全犯罪
-  Description: "対象の|グレイズ|、|光学迷彩|、|天衣無縫|を奪う。\n対象の|火力|と|霊力|を最大で{Value1}奪う。"
+  Description: "対象の|バリア|、|グレイズ|、|光学迷彩|、|天衣無縫|を奪う。\n対象の|火力|と|霊力|を最大で{Value1}奪う。"
 PatchouliFriend:
   Description: '{FriendP}ランダムな{PassiveColor}個のマナを|彩色|マナに変換する。'
   ExtraDescription1: '{FriendA}|火力|{Value1}と|霊力|{Value1}を得る。<sprite="Point" name="Power">{Power}を得る。'
@@ -2077,11 +2072,11 @@ AyaWindGirl:
   Name: 風神少女
   Description: '|風神少女|{Value1}を得る。'
 ReimuHuashan:
-  ExtraDescription1: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\n\
-    |d:この戦闘で初めて能力カードをこの効果で廃棄した場合、更に最大ライフを{Value1}増やす。|"
-  Description: "手札のカードを1枚|廃棄|し、<sprite=\"Point\" name=\"Power\">{Value2}を得る。\nこの戦闘で初めて|能力|カードをこの効果で|廃棄|した場合、更に最大ライフを{Value1}増やす。"
+  ExtraDescription1: "次の戦闘開始時に{SelfName}を廃棄し、|火力|{Value1}を得る。\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。（既に使用済み）"
+  Description: "次の戦闘開始時に{SelfName}を廃棄し、|火力|{Value1}を得る。\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。"
   Name: 指導を受ける
   FlavorText: 「はいはいはい、貴方の言う通りですよっと」
+  DetailText: デッキに存在しない{SelfName}の効果は次の戦闘には持ち越されない。
 AyaNewsAliceSp:
   Name: 文々。新聞　『アリス・マーガトロイド』特集
   Description: '|ターン終了時|：霊力{Value1}を失う。'
@@ -2296,6 +2291,7 @@ KoishiZeroAttack:
 PassionDefense:
   Name: 控え目
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
+  FlavorText: 人気投票で1位を取ったのに、知られたくないと思った時。
 LeaveMoodDraw:
   Name: 好奇心
   Description: "カードを{Value1}枚引く。\n現在の|心境|を解除する。"
@@ -2386,8 +2382,6 @@ KoishiDrawTop:
 TheChariot:
   Description: "|占術|{Scry}。\n{PlayerName}の次のターン開始時、カードを{Value1}枚引いて|熱情|に入る。"
   Name: 戦車のタロット
-KoishiMana:
-  Name: 潜在能力解放
 KoishiFlower:
   Description: "{Block}|ブロック|を得る。\n{Damage}ダメージを与える。\n|真夏の花|を{Value1}枚手札に加える。\n|無心|状態なら代わりに{Value2}枚加える。"
   Name: わんぱくな薔薇
@@ -2397,13 +2391,18 @@ GainZeroAttack:
   Name: DNAの瑕
   Description: '{PlayerName}のターン開始時、|DNA転写|を{Value1}枚手札に加える。それは|廃棄|と|虚無|を持つ。'
 KoishiDna:
-  Description: '{PlayerName}のターン開始時、山札の一番上のカードを使用する。'
+  Description: '山札の一番上のカードを使用する。
+
+    {PlayerName}のターン開始時、山札の一番上のカードを使用する。'
   Name: ハルトマンの妖怪少女
+  DetailText: この効果はドローフェイズでカードを引く前に発動する。
 Anatta:
   Description: "|平静|を解除する際に得るマナを{Mana}にする。\n|平静|に入る。"
   Name: 無我の境地
 ButterflyDream:
-  Description: '{PlayerName}のターン開始時、|p:完全ランダム|なレアカードを{Value1}枚手札に加える。それは|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。'
+  Description: '|p:完全ランダム|なレアカードを{Value1}枚山札の一番上に置く。それは|補充|、|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。
+
+    {PlayerName}のターン開始時、この効果を発動する。'
   Name: 胡蝶の夢
   DetailText: "候補となるカードは合計コストや色、キャラクターの制限を受けない。\n{SelfName}やXコストのカードは候補にならない。"
 KoishiPhone:
@@ -2457,7 +2456,7 @@ CloseEye:
   FlavorText: こいしは心を読む第三の目を閉じた。
 AncestorDream:
   Name: 夢枕にご先祖総立ち
-  Description: "敵全体に{Damage}ダメージを与える。\n|夢見|{Value1}。"
+  Description: "敵全体に{Damage}ダメージを与える。\n|夢見|{Value1}を行い、最初に捨て札に送られた|追撃|カードを使用する。 "
 YaoguaiLaser:
   Description: "{Damage}ダメージを与える。\n|追加攻撃|を行う。\n|直感|:もう1回|追加攻撃|を行う。"
   Name: 妖怪サイコショック
@@ -2530,3 +2529,23 @@ KoishiDiscard:
   Name: 無意識な物忘れ
   Description: このカードを引いた時、ランダムに手札を1枚捨てる。
   ExtraDescription1: "このカードを引いた時、ランダムに手札を1枚捨てる。\n捨てたカード：{CardName}"
+ReimuGrace:
+  Description: "|神恩|{Value1}を得る。\n{PlayerName}のターン開始時、|神恩|{Value1}を得る。"
+ReimuEvilTerminator:
+  Name: 妖怪退治の専門家
+  Description: "敵を1体倒す度、{Mana}を得る。\n|庇護|{Value1}を得る。"
+KoishiTouying:
+  Name: 恋の埋火
+  Description: "{Mana}を得る。\n{Value1}枚のランダムなカードから1枚を選び、山札の一番上に置く。それは|補充|、|廃棄|、|虚無|を得る。\n\
+    選択肢となるのはマナ総量が{Value2}以上のカードのみ。"
+KoishiPotential:
+  Name: 潜在能力解放
+  FlavorText: 脳を25%しか使ってない。
+  Description: 山札の上から{Value1}枚のカードを見て1枚選ぶ。そのカードを二回使用した後|廃棄|する。
+CommonFire:
+  Name: 弱者の力
+  Description: "コモンカードを使用する度、{PlayerName}は|臨時火力|{Value1}を得る。\n"
+  UpgradedDescription: "コモンカードを使用する度、{PlayerName}は|臨時火力|{Value1}を得る。\n|純粋|を1枚手札に加える。"
+KoishiUltimateToken:
+  Name: 生命の開花
+  Description: "{Damage}ダメージを与え、{TotalMana}を得る。\nこのカードが|保留|されるたびに、ダメージが{Value1}増加し、得るマナが{Mana}増加する。"
