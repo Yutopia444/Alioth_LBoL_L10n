@@ -57,9 +57,6 @@ TuimofuLuanwu:
   Name: Danza de Exorcismo Salvaje
   Description: Inflige {Damage} de daño a un enemigo aleatorio {Value1} veces.
   FlavorText: '"Así que tu eres la última que queda."'
-WunvKongwu:
-  Description: "Gana {Value1} de |Evasión|.\nRoba {Value2:plural one='% carta' other='%\
-    \ cartas'}."
 LingfuHuti:
   Name: Talismán Protector
   Description: "Gana {Block} de |Bloqueo|.\nAgrega un |Talismán Sagrado| a la mano."
@@ -74,7 +71,8 @@ Jinfuzhen:
     parece.
 JingshenYishi:
   Name: Ritual de Limpieza
-  Description: "Gana {Block} de |Bloqueo|.\n|Exilia| una carta de la mano."
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nGana {Value2}\
+    \ |Gracia{Value2:plural one=' Divina' other='s Divinas'}|."
 YinyangBaoyu:
   Name: Orbe de Dualidad
   Description: "Inflige {Damage} de daño.\nAgrega un |Orbe Yin-Yang| a la mano."
@@ -103,13 +101,13 @@ SmallPanding:
   UpgradedDescription: Gana {Value1} de |Evasión|.
 Zhuizongfu:
   Name: Amuleto Teledirigido
-  Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} veces.\n\
-    Si {PlayerName} tiene |Poder Temporal|, gana {Mana}."
+  Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
+    \ one='z' other='ces'}.\nGana {Mana} al comienzo del próximo turno de {PlayerName}."
   FlavorText: '"Parece que el Poder Temporal y el Poder no son lo mismo." Un jugador
     nuevo podría haber tenido estos pensamientos.'
 DanmuDuijue:
   Name: Duelo de SpellCards
-  Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Reflejo|.\n{SelfName}\
+  Description: "Gana {Barrier} de |Barrera|.\nGana {Value1} de |Reflejo|.\n{SelfName}\
     \ es también afectado por la bonificación del |Poder|."
   FlavorText: Las Reglas de las Cartas de Mágicas nunca han tenido derechos de autor.
     ¿Es esta la prueba del "Espíritu del Internet"?
@@ -257,8 +255,7 @@ SakuyaAttackU:
     la letalidad de estas cartas de póquer.
 ReimuDrink:
   Name: Ofrenda de Sake
-  Description: "Cura {Value1} de vida.\nAgrega {Value2} |Ebria{Value2:plural one=''\
-    \ other='s'}| a la mano"
+  Description: "Gana {Value1} |Gracia{Value1:plural one=' Divina' other='s Divinas'}|."
 YakongDianxue:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} pierda un efecto\
     \ positivo, se devuelve {SelfName} de la pila de descarte a la mano."
@@ -724,7 +721,7 @@ ChuanyueJiejie:
   Description: "Gana {Shield} de |Barrera|.\nDevuelve una carta del |Exilio| a la\
     \ mano."
   Name: Cruzando la Frontera
-  FlavorText: "\"¿Aún no he usado 'Golpe de Suerte'? Lo guardaré esto para más tarde.\""
+  FlavorText: "\"¿Aún no he usado 'Golpe de Suerte'? Guardaré esto para para más tarde.\""
 OutInGap:
   Description: "Elige 1 de {Value1} cartas |p:completamente aleatorias| para agregarla\
     \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
@@ -761,9 +758,9 @@ DanceAroundLake:
     darse cuenta, la figura de la sacerdotisa del santuario ya no estaba por ningún
     lado.
 AutoQumobang:
-  Description: "|Mientras está en la mano|: Roba {Value1} {Value1:plural one='carta'\
-    \ other='cartas'} al comienzo del turno de {PlayerName}.\nDespués de que {SelfName}\
-    \ es |Retenido| {Value2} ve{Value2:plural one='z' other='ces'}, se |Exilia|."
+  Description: "|Cuando {SelfName} entra en la mano|: se |Exilia| {SelfName}, luego\
+    \ se roba {Value1} carta{Value1:plural one='' other='s'} más para {Value2:plural\
+    \ one='el próximo turno' other='los próximos % turnos'}."
   Name: Vara de Purificación Furiosa
   FlavorText: '"Las Varas de Purificación Autónomas están reemplazando los trabajos
     de las sacerdotisas de los santuarios." — Periódico Bunbunmaru · Sección de Economía'
@@ -806,9 +803,6 @@ ReimuSakura:
   Name: Sello de Fantasía Floreciente
   Description: "Inflige {Damage} de daño a cada enemigo.\nCura {Value1} de vida.\n\
     |Crecimiento|: Cuesta {Mana} menos hasta el final del combate."
-Qingshan:
-  Description: "Gana {Block} de |Bloqueo|.\n|Exilia| {Value1} carta{Value1:plural\
-    \ one=' aleatoria' other='s aleatorias'} de |Desgracia| y/o de Estado de la mano."
 CraftPotion:
   Description: "Agrega {Value1:plural one='% |Poción Inestable|' other='% |Pociones\
     \ Inestables|'} a la pila de robo.\nRoba {Value2} carta{Value2:plural one='' other='s'}."
@@ -1778,6 +1772,8 @@ LimaoSchool:
   Name: Academia de Cambiaformas
   Description: Elige {Value2} de {Value1} |Transformaciones de Animales| aleatorias.
     Gana sus efectos.
+  DetailText: La |e:Forma de Anfibia| sólo tendrá efecto una vez por combate, y los
+    usos posteriores de {SelfName} no lo incluirán.
 MorphDog:
   Name: Forma Carnívora
   Description: Gana {Value1} de |Poder|.
@@ -1870,10 +1866,12 @@ MeihongPower:
   FlavorText: Es una inmortal maldita que vive su vida como una ermitaña.
   Name: La Llama Inmortal
 DizangLove:
-  Description: "Después de que {PlayerName} juega una carta común, gana {Value1} de\
-    \ |Poder Temporal|.\n"
+  Description: "Gana {Value1} de vida máxima.\nSolo el primer {SelfName} tendrá efecto\
+    \ en cada combate."
   Name: Bodhi Instantáneo
   FlavorText: Alcanzar el Nirvana no es una cuestión de un largo y duro trabajo.
+  ExtraDescription1: "|d:Gana {Value1} de vida máxima.|\nSolo el primer {SelfName}\
+    \ tendrá efecto en cada combate."
 HuiyeMana:
   FlavorText: Esta canción de cuna cuenta una historia de privilegiados pecadores.
   Description: Al comienzo del turno de {PlayerName}, gana {Value1} de maná aleatorio,
@@ -2698,13 +2696,10 @@ AliceAttackW:
 AliceAttackB:
   Description: Inflige {Damage} de daño.
   Name: Flanqueo Destellante
-LoveFire:
-  Description: "Realiza un |Ataque Continuo|.\nAl final de cada turno de {PlayerName},\
-    \ si se realizó un |Ataque Continuo|, gana {Value1} de |Poder|."
 BabyDream:
   Name: Sueño del Embrión
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} |Sueño{Value1:plural one=''\
-    \ other='s'}|"
+    \ other='s'}|, luego activa la primera carta |Continua| |Soñada|. "
 UpgradeDoll:
   Name: Bunraku de la Doncella
   Description: Mejora una |e:Muñeca Shanghai|.
@@ -2729,8 +2724,8 @@ FlowerGone:
     \ en su lugar."
 PerfectCrime:
   Name: Crimen Perfecto
-  Description: "Roba la |Evasión|, |Camuflaje Óptico|, |Perfección| y hasta {Value1}\
-    \ de |Poder| y |Espíritu| del objetivo."
+  Description: "Roba la |Barrera|, |Evasión|, |Camuflaje Óptico|, |Perfección| y hasta\
+    \ {Value1} de |Poder| y |Espíritu| del objetivo."
 PoisonTeaParty:
   Name: Fiesta de Té Sospechosa
   Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
@@ -2805,14 +2800,15 @@ PatchouliFriend:
     <sprite="Point" name="Power">.'
   FlavorText: '"Agitar, Agitar, Sacudir, Agitar."'
 ReimuHuashan:
-  Description: "|Exilia| una carta en la mano. Gana {Value2} <sprite=\"Point\" name=\"\
-    Power\">.\nSi la carta |Exiliada| de esta manera es una carta de |Habilidad|,\
-    \ gana {Value1} de vida máxima.\nEste efecto sólo puede ocurrir una vez por combate."
-  ExtraDescription1: "|Exilia| una carta en la mano. Gana {Value2} <sprite=\"Punto\"\
-    \ name=\"Poder\">.\n|d:Si la carta Exiliada de esta manera es una carta de |Habilidad|,\
-    \ gana {Value1} de vida máxima.|\nEste efecto sólo puede ocurrir una vez por combate."
+  Description: "Al comienzo del siguiente combate, |Exilia| {SelfName} y gana {Value1}\
+    \ de |Poder|.\nSólo el primer {SelfName} tendrá el efecto en cada combate."
+  ExtraDescription1: "Al comienzo del siguiente combate, |Exilia| {SelfName} y gana\
+    \ {Value1} de |Poder|.\nSólo el primer {SelfName} tendrá el efecto en cada combate.\
+    \ (Ya ha ocurrido)"
   Name: Recibir Orientación
   FlavorText: '"Ok, está bien, tú ganas".'
+  DetailText: Sólo un {SelfName} de la biblioteca puede transferirse al siguiente
+    combate.
 MoonSea:
   Description: "Gana {Block} de |Bloqueo|.\nAgrega un |Puro| a la mano."
   Name: Mar de la Tranquilidad
@@ -3135,6 +3131,8 @@ FriendDraw:
 PassionDefense:
   Name: Perfil Bajo
   Description: "Gana {Block} de |Bloqueo|.\n|En Pasión|: Gana {Value1} más de |Bloqueo|."
+  FlavorText: Cuando ocupas el Nº 1 en las encuestas de popularidad pero no quieres
+    que te reconozcan.
 PassionVulnerable:
   Name: Noche de Insomnio
   Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\nDe lo\
@@ -3305,15 +3303,15 @@ BlackEpiphany:
     \ jugar {Value1} carta{Value1:plural one='' other='s'} durante el próximo turno\
     \ de {PlayerName}."
   Name: Separación de la Conciencia
-KoishiMana:
-  Name: Potencial Desatado
 KoishiSpark:
   Description: Inflige {Damage} de daño a cada enemigo.
   Name: Última Llamada de una Noche Romántica
 KoishiDna:
-  Description: Al comienzo de cada turno de {PlayerName}, juega la carta superior
-    de la pila de robo.
+  Description: "Juega la carta superior de la pila de robo.\nAl comienzo de cada turno\
+    \ de {PlayerName}, juega la carta superior de la pila de robo."
   Name: La Chica Youkai de Hartmann
+  DetailText: 'v.1.6.1: El efecto de jugar automáticamente ahora se activa antes de
+    la fase de robo.'
 KoishiAttackX:
   Description: '|Por cada <sprite="ManaSprite" name="2"> gastados|: inflige {Damage}
     de daño a cada enemigo y gana {Mana}.'
@@ -3323,11 +3321,11 @@ Anatta:
     \ el estado |Serenidad|."
   Name: Anatta
 ButterflyDream:
-  Description: Al comienzo de cada turno de {PlayerName}, agrega {Value1} carta{Value1:plural
-    one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
-    a la mano. {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|, y se
-    puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'
-    other='s costes'}.
+  Description: "Agrega {Value1} carta{Value1:plural one=' Rara' other='s Raras'} |p:completamente\
+    \ aleatoria{Value1:plural one='' other='s'}| a la parte superior de la pila de\
+    \ robo. Tiene{Value1:plural one='' other='n'} |Reponer|, |Exilio|, |Etéreo|, y\
+    \ se puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'\
+    \ other='s costes'}.\nAl comienzo del turno de {PlayerName}, se repite este efecto."
   DetailText: "Estas |e:cartas alternativas| ignoran las restricciones del maná total,\
     \ color de maná y personaje.\n{SelfName} no puede ser producido por este efecto.\n\
     Las cartas con coste X no pueden ser producidas por este efecto."
@@ -3395,7 +3393,7 @@ BailianMagic:
 AncestorDream:
   Name: Sueño Ancestral
   Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Value1} |Sueño{Value1:plural\
-    \ one='' other='s'}|."
+    \ one='' other='s'}|, luego activa la primera carta |Continua| |Soñada|. "
 InspirationDefense:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Inspiración|."
   Name: Momento de Inspiración
@@ -3438,3 +3436,32 @@ DebugUpgradeAllZone:
   Description: 'Carta de prueba: Mejora las primeras cartas {Value1} en la pila de
     robo y descarte.'
   Name: Mejora Cartas en Cada Pila
+ReimuGrace:
+  Name: Providencia de los Hakurei
+  Description: "Gana {Value1} |Gracia{Value1:plural one=' Divina' other='s Divinas'}|.\n\
+    Al comienzo del turno de {PlayerName}, gana {Value1} |Gracia{Value1:plural one='\
+    \ Divina' other='s Divinas'}|."
+ReimuEvilTerminator:
+  Name: Exterminadora Experta
+  Description: "Cada vez que un enemigo es derrotado, gana {Mana}.\nGana {Value1}\
+    \ de |Resguardo|."
+KoishiUltimateToken:
+  Name: Flor de la Vida
+  Description: "Inflige {Damage} de daño y gana {TotalMana}.\n|Cuando se retiene|:\
+    \ Aumenta el daño de {SelfName} en {Value1} e incrementa el maná ganado en {Mana}."
+KoishiPotential:
+  Name: Potencial Desatado
+  Description: Mira las primeras cartas de {Value1} del la pila de robo. Elige una
+    para jugarla dos veces y luego se |Exilia|.
+  FlavorText: Cuando utilizas el 25% de tu cerebro.
+KoishiTouying:
+  Name: Ascuas del Amor
+  Description: "Gana {Mana}.\nElige 1 de {Value1} cartas aleatorias para agregarla\
+    \ a la parte superior de la pila de robo. Tiene |Reponer|, |Exilio| y |Etéreo|.\n\
+    Esas cartas tienen un costo total de al menos {Value2}."
+CommonFire:
+  Name: Poder de lo Ordinario
+  Description: "Después de que {PlayerName} juega una carta Común, gana {Value1} de\
+    \ |Poder Temporal|.\n"
+  UpgradedDescription: "Después de que {PlayerName} juega una carta común, gana {Value1}\
+    \ de |Poder Temporal|.\nAgrega un |Puro| a la mano."
