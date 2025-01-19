@@ -32,8 +32,6 @@ TuimofuLuanwu:
   FlavorText: '"이제 너만 남았네?"'
   Name: 퇴마부난무
   Description: 무작위 적에게 피해를 {Damage}씩 {Value1}번 줍니다.
-WunvKongwu:
-  Name: 무녀공무
 LingfuHuti:
   Description: "|방어|를 {Block} 얻습니다.\n|신역찰|을 한 장 얻습니다."
   Name: 보호의 부적
@@ -83,7 +81,7 @@ MengzhiYuzha:
   FlavorText: 소매 속의 바늘
 JingshenYishi:
   Name: 정화의 의식
-  Description: "|방어|를 {Block} 얻습니다.\n손에서 카드 한 장을 |소멸|시킵니다."
+  Description: "카드를 {Value1}장 뽑습니다.\n|은총|을 {Value2} 얻습니다."
 RManaCard:
   Name: 화염
   Description: '{Mana}를 얻습니다.'
@@ -306,7 +304,7 @@ SmallPanding:
   UpgradedDescription: '|그레이즈|를 {Value1} 얻습니다.'
 Zhuizongfu:
   Name: 호밍 애뮬릿
-  Description: "무작위 적에게 피해를 {Damage}씩  {Value1}번 줍니다.\n|일시 화력|이 있다면, {Mana}를 얻습니다."
+  Description: "무작위 적에게 피해를 {Damage}씩  {Value1}번 줍니다.\n다음 턴 시작 시 {Mana}를 얻습니다."
   FlavorText: '"그러니까 일시 화력이랑 그냥 화력이랑 같은게 아니라고?" 다들 처음에는 그러더라구요.'
 FengyinYaomo:
   Name: 용살진
@@ -314,7 +312,8 @@ FengyinYaomo:
   FlavorText: '대상: 킷초 야치에, 이즈나마루 메구무, 코메이…'
 DanmuDuijue:
   Name: 탄막 대결
-  Description: "|방어|를 {Block} 얻습니다.\n|반사|를 {Value1} 얻습니다.\n{SelfName}은 |화력|에 영향을 받습니다."
+  Description: "|보호막|을 {Shield} 얻습니다.\n|반사|를 {Value1} 얻습니다.\n{SelfName}은 |화력|에 영향을\
+    \ 받습니다."
   FlavorText: 스펠 카드 룰은 저작권료를 받은 적이 없는데, 이것이야말로 「인터넷 정신」이 아닐까?
 ReverseJiejie:
   Name: 역전결계
@@ -331,8 +330,6 @@ DanceAroundLake:
   Name: 연못 위의 춤
   FlavorText: 가장 일찍 일어난 나는, 그 냉혹하고 과격한 무용에 오랫동안 매료되어 있었다. 이윽고 비가 내리기 시작해 정신이 들었을 때
     그 무녀의 모습은 어디에도 없었다.
-Qingshan:
-  Name: 가는 곳마다 청산
 MarisaAttackB:
   Name: 일루전 레이저
   Description: 피해를 {Damage} 줍니다.
@@ -442,7 +439,8 @@ LearnAstrology:
   Description: '내 턴 시작 시 손에 |점성술|이 없다면 |점성술|을 한 장 얻습니다.'
   FlavorText: '"왜 내가 아닌 별만 바라보는 걸까…"'
 AutoQumobang:
-  Description: "|손에 있을 경우|: 턴마다 카드를 {Value1}장 더 뽑습니다.\n이 효과를 {Value2}회 발동한 후 |소멸|됩니다."
+  Description: "|손에 들어올 시|: {SelfName}을 |소멸|시키고 다음 {Value2}턴동안 카드 뽑기 단계에서 카드를 {Value1}장씩\
+    \ 더 뽑습니다."
   Name: 난폭한 불제봉
   FlavorText: '"전자동 퇴마봉의 반란... 무녀들 일자리를 잃어" —— 《붕붕마루 경제부》'
 Shadow:
@@ -523,7 +521,7 @@ ReimuShrine:
   Description: "|일시 영력|을 {Value1} 얻습니다.\n내 턴 시작 시 |일시 영력|을 {Value1} 얻습니다."
 ReimuDrink:
   Name: 어신주
-  Description: "체력을 {Value1} 회복합니다.\n|가벼운 한 잔|을 {Value2}장 얻습니다."
+  Description: "|은총|을 {Value1} 얻습니다."
 GapLady:
   Name: 틈새녀
   Description: "체력을 {Value1} 잃습니다.\n{Mana}를 얻습니다.\n카드를 {Value2}장 뽑습니다."
@@ -1753,6 +1751,7 @@ SatoriAttack:
 LimaoSchool:
   Description: 무작위 |탄막변화| 카드 {Value1}장 중 {Value2}장을 선택해 효과를 받습니다.
   Name: 요괴너구리의 변신학교
+  DetailText: '|e:양서화탄막변화|는 각 전투 당 한 번만 발동하며, 한 번 발동한 이후에는 {SelfName}를 통해 선택할 수 없습니다.'
 BailianBlack:
   Description: 방어, 스킬, 상태 카드에 |소멸|이 붙고, 해당 카드들은 코스트가 {Mana}로 감소합니다.
   Name: 어둠의 수용
@@ -1787,8 +1786,9 @@ MeihongAttack:
   Description: "체력을 {Value1} 잃습니다.\n피해를 {Damage}씩 {Value2}번 줍니다."
 DizangLove:
   Name: 인스턴트 보디
-  Description: "일반 카드를 사용할 시 |일시 화력|을 {Value1} 얻습니다.\n"
+  Description: "최대 체력이 {Value1} 증가합니다.\n{SelfName}는 각 전투당 한 번씩만 발동됩니다."
   FlavorText: 오래 고생할 것 없이 즉시 성불하는 방법.
+  ExtraDescription1: "|d:최대 체력이 {Value1} 증가합니다.|\n{SelfName}는 각 전투당 한 번씩만 발동됩니다."
 YuyukoSing:
   Name: 나비 날개바람
   Description: "피해를 {Damage} 줍니다.\n{SelfName}은 여러번 |강화|될 수 있습니다."
@@ -2126,13 +2126,11 @@ DeployPenglai:
 HatateShot:
   Name: 풀 파노라마 샷
   Description: "|방어|를 {Block} 얻습니다.\n남은 마나 하나마다 얻는 |방어|가 {Value1}씩 늘어납니다. (총 {Special}점)"
-LoveFire:
-  Description: "|추가 공격|을 진행합니다.\n내 턴 종료 시 만약 |추가 공격|을 진행했다면 |화력|을 {Value1} 얻습니다."
 BabyDream:
   Name: 태아의 꿈
   Description: '|방어|를 {Block} 얻습니다.
 
-    |꿈결| {Value1}.'
+    |꿈결| {Value1}, 그 중 첫번째 |연계 카드|를 발동시킵니다. '
 AliceAttackW:
   Name: 인형 창술
   Description: 피해를 {Damage} 줍니다.
@@ -2160,7 +2158,7 @@ FlowerGone:
   Description: "|방어|를 {Block} 얻습니다.\n|평온|: 대신 |보호막|을 {Shield} 얻습니다."
 PerfectCrime:
   Name: 완전범죄
-  Description: "대상의 |그레이즈|, |광학미채|, |천의무봉|을 빼앗습니다.\n대상의 |화력|과 |영력|을 최대 {Value1}만큼\
+  Description: "대상의 |보호막|, |그레이즈|, |광학미채|, |천의무봉|을 빼앗습니다.\n대상의 |화력|과 |영력|을 최대 {Value1}만큼\
     \ 빼앗습니다."
 PoisonTeaParty:
   Name: 수상한 다과회
@@ -2224,11 +2222,12 @@ MeilingFriend:
   ExtraDescription3: '{FriendU}체력을 {Value1} 회복하고 |화력|을 {Value2} 얻습니다.'
 ReimuHuashan:
   Name: 수업
-  Description: "손에서 카드를 한 장 |소멸|시키고 <sprite=\"Point\" name=\"Power\">를 {Value2} 얻습니다.\n\
-    |능력| 카드를 |소멸|시킨 경우 최대 체력을 {Value1} 얻습니다.\n이 효과는 전투 당 한 번만 발동합니다."
-  ExtraDescription1: "손에서 카드를 한 장 |소멸|시키고 <sprite=\"Point\" name=\"Power\">를 {Value2}\
-    \ 얻습니다.\n|d:능력 카드를 소멸시킨 경우 최대 체력을 {Value1} 얻습니다.\n이 효과는 전투 당 한 번만 발동합니다.|"
+  Description: "다음 전투 시작 시 {SelfName}은 소멸되며 |화력|을 {Value1} 얻습니다.\n각 전투 당 {SelfName}은\
+    \ 한 번만 발동됩니다."
+  ExtraDescription1: "다음 전투 시작 시 {SelfName}은 소멸되며 |화력|을 {Value1} 얻습니다.\n각 전투 당 {SelfName}은\
+    \ 한 번만 발동됩니다. (효과 발동됨)"
   FlavorText: '"당근 빳따죠..."'
+  DetailText: 덱에 실존하는 {SelfName}만 효과가 발동합니다.
 MoonSea:
   Name: 고요의 바다
   Description: "|방어|를 {Block} 얻습니다.\n|순수|를 한 장 얻습니다."
@@ -2491,6 +2490,7 @@ FriendDraw:
 PassionDefense:
   Name: 저조
   Description: "|방어|를 {Block} 얻습니다.\n|열정일 때|: |방어|를 추가로 {Value1} 얻습니다."
+  FlavorText: 인기 투표 1위는 했지만 사람들이 몰라줬으면 좋겠어.
 MoodAttack:
   Name: 변심의 칼날
   Description: "피해를 {Damage} 줍니다.\n|마음가짐|이 변할 시 {SelfName}을 버린 카드 더미에서 다시 손으로 가져옵니다."
@@ -2539,8 +2539,8 @@ ReimuSilence:
   Description: "드로우 페이즈가 아닐 때 카드를 {Value1}장 뽑을 때마다 모든 적에게 피해를 {Damage}씩 줍니다.\n카드를 {Value1}장\
     \ 뽑습니다."
 ButterflyDream:
-  Description: 내 턴 시작 시 |p:완전 무작위| 희귀 카드 {Value1}장을 얻습니다. 해당 카드에는 |소멸|과 |휘발성|이 붙으며,
-    어떠한 마나라도 사용할 수 있게 됩니다.
+  Description: "|p:완전 무작위| 희귀 카드 {Value1}장을 뽑을 카드 더미의 꼭대기에 올려놓습니다. 해당 카드에는 |보충|과 |소멸|,\
+    \ |휘발성|이 붙으며, 어떠한 마나라도 사용할 수 있게 됩니다.\n내 턴 시작 시 이 효과가 다시 한 번 발동됩니다."
   Name: 호접지몽
   DetailText: "|e:대상 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다.\n자기 자신을 대상으로 할 수 없습니다.\n|코스트\
     \ X| 카드를 대상으로 할 수 없습니다."
@@ -2607,7 +2607,7 @@ DuplicateFollower:
   ExtraDescription1: 피해를 {Damage} 주고 {Mana}를 얻습니다.
 AncestorDream:
   Name: 선조의 꿈
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|꿈결| {Value1}."
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n|꿈결| {Value1}, 그 중 첫번째 |연계 카드|를 발동시킵니다. "
 YaoguaiLaser:
   Name: 요괴 심전도
   Description: "피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다.\n|직감|: |추가 공격|이 한 번 더 뒤따릅니다."
@@ -2659,8 +2659,6 @@ FakeBullet:
   Name: 상상 속의 탄막
   Description: "|추가 공격|을 {Value1}회 진행합니다.\n뽑을 카드 더미에 충분한 |연계 카드|가 없는 경우 무작위 |연계 카드|를\
     \ 생성해 추가 공격을 진행합니다."
-KoishiMana:
-  Description: "모든 적에게 피해를 {Damage} 줍니다.\n{Mana}를 얻습니다."
 KoishiSpark:
   Name: 로맨틱 라스트 콜
   Description: 모든 적에게 피해를 {Damage} 줍니다.
@@ -2672,7 +2670,8 @@ TheFool:
   Description: "|예지| {Scry}.\n뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다."
 KoishiDna:
   Name: 하르트만의 요괴소녀
-  Description: 내 턴 시작 시 뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다.
+  Description: "뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다.\n내 턴 시작 시 뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다."
+  DetailText: 'v1.6.1: 이 효과는 턴 시작 시 카드 뽑기 단계 이전에 발동됩니다.'
 KoishiAttackX:
   Name: 로즈 지옥
   Description: '<sprite="ManaSprite" name="2">|를 지불할 시|: 모든 적에게 피해를 {Damage} 주고 {Mana}를
@@ -2730,3 +2729,26 @@ DebugAddRandomCardsToExileSlow:
 DebugUpgradeAllZone:
   Name: 각 더미 내 카드 강화
   Description: '테스트 카드: 각 카드 더미에 있는 카드 {Value1}장을 강화시킵니다.'
+ReimuGrace:
+  Name: 하쿠레이의 돌봄
+  Description: "|은총|을 {Value1} 얻습니다.\n내 턴 시작 시 |은총|을 {Value1} 얻습니다."
+ReimuEvilTerminator:
+  Name: 요괴 퇴치 전문가
+  Description: "적을 쓰러트릴 시 {Mana}를 얻습니다.\n|비호|를 {Value1} 얻습니다."
+KoishiUltimateToken:
+  Name: 꽃피는 생명
+  Description: "피해를 {Damage} 주고 {TotalMana}를 얻습니다.\n|보존될 시|: 주는 피해가 {Value1} 증가하고\
+    \ 얻는 마나에 {Mana}가 추가됩니다."
+KoishiTouying:
+  Name: 사랑의 매화
+  Description: "{Mana}를 얻습니다.\n카드 {Value1}장 중 하나를 골라 뽑을 카드 더미 위에 올려놓습니다. 해당 카드에는 |보충|,\
+    \ |소멸|, |휘발성|이 붙습니다.\n각 카드들의 코스트는 {Value2}로 구성됩니다."
+KoishiPotential:
+  Name: 잠재력 해방
+  FlavorText: 뇌 사용량 25%로 증가.
+  Description: 뽑을 카드 더미의 위에서부터 {Value1}장을 확인하고 이 중에 한 장을 선택합니다. 해당 카드는 두 번 발동되며 이후
+    |소멸|합니다.
+CommonFire:
+  Name: 평범의 힘
+  Description: "일반 카드를 사용하면 |일시 화력|을 {Value1} 얻습니다.\n"
+  UpgradedDescription: "일반 카드를 사용하면 |일시 화력|을 {Value1} 얻습니다.\n|순수|를 한 장 얻습니다."
