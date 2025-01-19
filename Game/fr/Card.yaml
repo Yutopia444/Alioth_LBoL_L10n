@@ -61,9 +61,6 @@ TuimofuLuanwu:
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi
     aléatoire {Value1} fois.
   FlavorText: "\"Tu es le seul qui reste, n'est-ce pas ?\""
-WunvKongwu:
-  Description: "Gagnez {Value1:plural one='% |Esquive|' other='% |Esquives|'}.\nPiochez\
-    \ {Value2:plural one='% carte' other='% cartes'}."
 Misfortune:
   Name: Infortune
   Description: "|Fin du tour| : Perdez {Value1} point{Value1:plural one='' other='s'}\
@@ -97,8 +94,8 @@ LingfuHuti:
   FlavorText: En mode défense, et je termine mon tour.
 JingshenYishi:
   Name: Rituel Purifiant
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Exilez|\
-    \ une carte de la main."
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez {Value1:plural\
+    \ one='% |Faveur Divine|' other='% |Faveurs Divines|'}."
 ReimuWeiyan:
   Name: Vraie Majesté
   Description: Appliquez {Value1} |Faible{Value1:plural one='' other='s'}| à chaque
@@ -125,7 +122,7 @@ SmallPanding:
   UpgradedDescription: Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.
 Zhuizongfu:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
-    \ aléatoire {Value1} fois.\nSi {PlayerName} a de la |Puissance temporaire|, gagnez\
+    \ aléatoire {Value1} fois.\nLorsque {PlayerName} débute son prochain tour, gagnez\
     \ {Mana}."
   Name: Amulette à Tête Chercheuse
   FlavorText: "\"Il s'avère que la puissance temporaire et la puissance ne sont pas\
@@ -138,7 +135,7 @@ FengyinYaomo:
   FlavorText: 'Cibles : Yachie Kicchou, Iizunamaru Megumu, Komeiji…'
 DanmuDuijue:
   Name: Duel de Cartes Sorts
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
+  Description: "Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}|.\nGagnez\
     \ {Value1} |Réflexion{Value1:plural one='' other='s'}|.\n{SelfName} est affecté\
     \ par la |Puissance|."
   FlavorText: Les règles des Cartes Sorts n'ont jamais été soumises aux droits d'auteur,
@@ -477,17 +474,13 @@ DanceAroundLake:
   FlavorText: J'ai été le premier à me lever et j'ai été enivré pendant longtemps
     par sa danse impitoyable et agressive. Peu de temps après, il a commencé à pleuvoir,
     et quand j'ai repris mes esprits, la prêtresse était introuvable.
-Qingshan:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Exilez|\
-    \ aléatoirement {Value1} carte{Value1:plural one='' other='s'} |Malheur| et/ou\
-    \ Statut de la main."
 AutoQumobang:
   Name: Bâton Purificateur Déchaîné
   FlavorText: "\"Les bâtons d'exorcisme autonomes volent le travail des sorcières.\"\
     \ - <Journal Bunbunmaru · Édition Économique>"
-  Description: "|En main| : Piochez {Value1} {Value1:plural one='carte' other='cartes'}\
-    \ de plus à chaque étape de pioche.\nLorsque cette carte est |Retenue| {Value2}\
-    \ fois, |Exilez|-la."
+  Description: "|Lorsque {SelfName} arrive en main|: |Exilez| {SelfName}, puis piochez\
+    \ {Value1} carte{Value1 :plural one=' supplémentaire' other='s supplémentaires'}\
+    \ pour {Value2 :plural one='le prochain tour' other='les % prochains tours'}."
 GapLady:
   Name: Dame de la Faille
   Description: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\nGagnez\
@@ -670,7 +663,7 @@ PotionJungle:
 AccuracyLaser:
   Name: Laser Directionnel
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
-    |Lorsque retenue| : Cette carte coûte {Mana} de moins ce combat."
+    |Lorsque retenu| : Cette carte coûte {Mana} de moins ce combat."
   FlavorText: "\"Vous pensiez que j'allais tirer avec un laser non directionnel ?\
     \ N'importe quoi !\""
 CollectionDefense:
@@ -2186,9 +2179,11 @@ Psychedelic:
   FlavorText: '"Est-ce que je rêve encore ?"'
 DizangLove:
   Name: Bodhi Instantané
-  Description: "Chaque fois que vous jouez une carte commune, {PlayerName} obtient\
-    \ {Value1} |Puissance{Value1:plural one=' temporaire' other='s temporaires'}|.\n"
+  Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum.\n\
+    Seul le premier {SelfName} prend effet à chaque combat."
   FlavorText: Nous pouvons tous devenir des bouddhas sans aucune pratique ni difficulté.
+  ExtraDescription1: "|d:Gagnez {Value1} point{Value1:plural one='' other='s'} de\
+    \ vie maximum.|\nSeul le premier {SelfName} prend effet à chaque combat."
 SakuraBlade:
   Name: Étincelle de Sakura
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -2229,11 +2224,7 @@ LimaoAttack:
     \ ennemis, gagnez {GainMana}.\n|Croissance| : Gagnez {Mana} supplémentaire."
 ReimuDrink:
   Name: Saké Royal
-  Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie.\nAjoutez\
-    \ {Value2} carte{Value2:plural one='' other='s'} |Pompette| à votre main."
-  FlavorText: Pendant la période des Trois Royaumes, on dit qu'après avoir bu de l'alcool
-    un commandant militaire aurait utilisé une épée enflammée pour exécuter des soldats
-    enchaînés.
+  Description: "Gagnez {Value1:plural one='% |Faveur Divine|' other='% |Faveurs Divines|'}."
 YuetuYuyi:
   Name: Hagoromo Perdu
   Description: Gagnez {Value1} |Perfection{Value1:plural one='' other='s'}|.
@@ -2242,6 +2233,8 @@ LimaoSchool:
   Name: École de Transformation Tanuki
   Description: Sélectionnez {Value2} parmi {Value1} |Transformations Tanuki| aléatoires
     qui {Value2:plural one='prend' other='prennent'} effet.
+  DetailText: "|e:Forme d'Amphibie| n'aura effet qu'une fois par combat, et les utilisations\
+    \ ultérieures de {SelfName} ne l'incluront pas."
 YinyangQueen:
   Name: "Misumaru, Artisane Habile"
   Description: "{FriendP}Gagnez {Value2:plural one='% |Bouclier|' other='% |Boucliers|'}\
@@ -2858,12 +2851,10 @@ SanaeRestart:
   Description: "La défausse et les cartes choisies de votre main sont remélangées\
     \ dans la pioche.\nPiochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez\
     \ {Mana}."
-LoveFire:
-  Name: Braises de l'Amour
 BabyDream:
   Name: Rêve Fœtal
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Rêve|\
-    \ {Value1}."
+    \ {Value1}, puis activez la première carte |Consécutive| |Rêvée|. "
 AliceAttackW:
   Name: Lances de Poupée
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2905,9 +2896,9 @@ FlowerGone:
     \ : Gagnez {Shield} |Barrière{Shield:plural one='' other='s'}| à la place."
 PerfectCrime:
   Name: Crime Parfait
-  Description: "Volez à la cible l'|Esquive|, le |Camouflage Optique|, la |Perfection|\
-    \ et jusqu'à {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural\
-    \ one='' other='s'}|."
+  Description: "Volez à la cible la |Barrière|, l'|Esquive|, le |Camouflage Optique|,\
+    \ la |Perfection| et jusqu'à {Value1} |Puissance{Value1:plural one='' other='s'}|\
+    \ et |Esprit{Value1:plural one='' other='s'}|."
 PoisonTeaParty:
   Name: Thé Suspect
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
@@ -2996,15 +2987,15 @@ TianziRock:
   FlavorText: Donnons à ces mammifères volants un petit choc céleste.
 ReimuHuashan:
   Name: Recevoir des Conseils
-  ExtraDescription1: "|Exilez| une carte en main. Gagnez {Value2} <sprite=\"Point\"\
-    \ name=\"Power\">.\n|d:Si la carte exilée de cette façon est une carte Pouvoir,\
-    \ gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum (une seule\
-    \ fois par combat).|"
-  Description: "|Exilez| une carte en main.\nGagnez {Value2} <sprite=\"Point\" name=\"\
-    Power\">.\nSi la carte |exilée| de cette façon est une carte |Pouvoir|, gagnez\
-    \ {Value1} point{Value1:plural one='' other='s'} de vie maximum (une seule fois\
-    \ par combat)."
+  ExtraDescription1: "Au début du prochain combat, |Exilez| {SelfName} et gagnez {Value1}\
+    \ |Puissance{Value1:plural one='' other='s'}|.\nSeul le premier {SelfName} prendra\
+    \ effet à chaque combat. (Déjà arrivé)"
+  Description: "Au début du prochain combat, |Exilez| {SelfName} et gagnez {Value1}\
+    \ |Puissance{Value1:plural one='' other='s'}|.\nSeul le premier {SelfName} prendra\
+    \ effet à chaque combat."
   FlavorText: '"Oui, bien sûr, peu importe."'
+  DetailText: Seul un {SelfName} de la bibliothèque peut être transféré au prochain
+    combat.
 MoonSea:
   Name: Mer de la Tranquillité
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nAjoutez\
@@ -3341,6 +3332,8 @@ PassionDefense:
   Name: Profil Bas
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Passion|\
     \ : Gagnez {Value1} |Bouclier{Value1:plural one=' supplémentaire' other='s supplémentaires'}|."
+  FlavorText: Lorsque vous êtes classé n°1 dans les sondages de popularité mais que
+    vous ne voulez pas être reconnue.
 MoodAttack:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nLorsque\
     \ {PlayerName} change d'|État mental|, {SelfName} est renvoyé de la pile de défausse\
@@ -3473,7 +3466,7 @@ DuplicateFollower:
 AncestorDream:
   Name: Rêves Ancestraux
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    |Rêve| {Value1}."
+    |Rêve| {Value1}, puis activez la première carte |Consécutive| |Rêvée|. "
 YaoguaiLaser:
   Name: EEG Yōkai
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
@@ -3542,9 +3535,6 @@ FakeBullet:
     \ {Value1:plural one=\"une carte aléatoire |Consécutive| sera générée pour effectuer\
     \ l'|Attaque Consécutive|\" other=\"des cartes aléatoires |Consécutives| seront\
     \ générées pour effectuer les |Attaques Consécutives|\"}."
-KoishiMana:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
-    Gagnez {Mana}."
 KoishiSpark:
   Name: Dernier Appel Romantique
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.
@@ -3556,8 +3546,10 @@ TheFool:
   Description: "|Sonde| {Scry}.\nJouez la première carte de la pioche."
 KoishiDna:
   Name: Fille Yōkai de Hartmann
-  Description: Lorsque {PlayerName} débute son tour, jouez la première carte de la
-    pioche.
+  Description: "Jouez la première carte de la pioche.\nLorsque {PlayerName} débute\
+    \ son tour, jouez la première carte de la pioche."
+  DetailText: "v.1.6.1 : L'effet de jeu automatique se déclenche désormais avant la\
+    \ phase de pioche."
 KoishiAttackX:
   Name: Rose Infernale
   Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"2\"> dépensé| : infligez\
@@ -3567,11 +3559,11 @@ Anatta:
   Description: "Augmente le gain de mana en quittant |Calme| à {Mana}.\nEntrez en\
     \ état |Calme|."
 ButterflyDream:
-  Description: Lorsque {PlayerName} débute son tour, ajoutez {Value1} carte{Value1:plural
-    one=' rare' other='s rares'} |p:complètement aléatoire{Value1:plural one='' other='s'}|
-    à la main. {Value1:plural one='Cette carte a' other='Ces cartes ont'} |Exil|,
-    |Éthéré| et le mana de n'importe quelle couleur peut être dépensé pour payer {Value1:plural
-    one='son' other='leur'} coût en mana.
+  Description: "Ajoutez {Value1} {Value1:plural one='carte rare |p:complètement aléatoire|'\
+    \ other='cartes rares |p:complètement aléatoires|'} dessus la pioche. {Value1:plural\
+    \ one='elle a' other='elles ont'} |Retenue|, |Exil| et |Éthéré|, et du mana de\
+    \ n'importe quelle couleur peut être dépensé pour {Value1:plural one='la' other='les'}\
+    \ payer.\nLorsque {PlayerName} débute son tour, répétez cet effet."
   Name: Rêve du Papillon
   DetailText: "Ces |e:cartes alternatives| ignorent le mana total, la couleur de mana\
     \ et les restrictions de personnage.\n{SelfName} ne peut pas être produit par\
@@ -3656,3 +3648,34 @@ DebugRemoveHand:
   Name: Supprimer la Main
   Description: "Carte de test : choisissez n'importe quel nombre de cartes dans votre\
     \ main à retirer du combat."
+ReimuGrace:
+  Name: Providence de Hakurei
+  Description: "Gagnez {Value1:plural one='% |Faveur Divine|' other='% |Faveurs Divines|'}.\n\
+    Lorsque {PlayerName} débute son tour, gagnez {Value1:plural one='% |Faveur Divine|'\
+    \ other='% |Faveurs Divines|'}."
+ReimuEvilTerminator:
+  Name: Exterminateur Expert
+  Description: "À chaque fois qu'un ennemi est vaincu, gagnez {Mana}.\nGagnez {Value1}\
+    \ |Totem{Value1:plural one='' other='s'}|."
+KoishiUltimateToken:
+  Name: Épanouissement de la Vie
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et gagnez\
+    \ {TotalMana}.\n|Lorsque retenu| : augmentez les dégâts de {SelfName} de {Value1}\
+    \ et augmentez le gain de mana de {Mana}."
+KoishiTouying:
+  Name: Braises d'Amour
+  Description: "Gagnez {Mana}.\nChoisissez 1 parmi {Value1} cartes aléatoires à ajouter\
+    \ dessus la pioche. Elle a |Renfloue|, |Exil| et |Éthéré|.\nCes cartes ont un\
+    \ coût total d'au moins {Value2}."
+KoishiPotential:
+  Name: Potentiel Libéré
+  FlavorText: Quand vous utilisez 25% de votre cerveau.
+  Description: Regardez {Value1:plural one='la carte' other='les % cartes'} du dessus
+    de la pioche. Choisissez-en une pour la jouer deux fois, puis |Exilez-la|.
+CommonFire:
+  Name: Pouvoir de l'Ordinaire
+  Description: "Lorsque {PlayerName} a joué une carte commune, gagnez {Value1} |Puissance{Value1:plural\
+    \ one=' Temporaire' other='s Temporaires'}|.\n"
+  UpgradedDescription: "Lorsque {PlayerName} a joué une carte commune, gagnez {Value1}\
+    \ |Puissance{Value1:plural one=' Temporaire' other='s Temporaires'}|.\nAjoutez\
+    \ une |Pureté| à la main."
