@@ -2156,10 +2156,6 @@ KoishiFire:
     |热情|：额外获得 {Value2} 点|火力|。
     |平静|：改为获得 {Value1} 点|灵力|。
 
-PeaceBlock:
-  Name: 掌控自我
-  Description: '{PlayerName}的回合结束时如果处于|平静|，获得 {Value1} 点|格挡|。'
-
 KoishiFlower:
   Name: 淘气蔷薇
   Description: |-
@@ -2251,6 +2247,16 @@ KoishiSpark:
   Name: 浪漫夜的最后来电
   Description: 对所有敌人造成 {Damage} 点伤害。
 
+KoishiDrawTopCards:
+  Name: 墨迹测验
+  Description: 展示抽牌堆顶的 {Value1} 张牌，选择一张置于原处，抽取剩余的牌。
+
+KoishiMana:
+  Name: 地底蔷薇
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得{Mana}。
+
 GainInspiration:
   Name: 让我好好想想
   Description: |
@@ -2259,6 +2265,14 @@ GainInspiration:
 PerfectCrime:
   Name: 完美作案
   Description: 窃取目标的|护盾|、|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
+
+SelfControl:
+  Name: 掌控自我
+  Description: |-
+    |抉择|：进入|热情|或|平静|。
+    {PlayerName}的回合结束时：处于|热情|则获得 {Value1} 点|火力|；处于|平静|则获得 {Value2} 点|格挡|。
+  ExtraDescription1: 进入|热情|。
+  ExtraDescription2: 进入|平静|。
 
 TheFool:
   Name: 塔罗牌：愚者
@@ -3299,8 +3313,12 @@ XingMoney:
 
 SanaeSummonGod:
   Name: 召请建御名方神
-  Description: 两回合后的回合开始时：获得 {Value1} 点|火力|和|灵力|。
-  UpgradedDescription: 下回合开始时：获得 {Value1} 点|火力|和|灵力|。
+  Description: |-
+    获得 {Value2} 点|神恩|。
+    两回合后的回合开始时：获得 {Value1} 点|火力|和|灵力|。
+  UpgradedDescription: |-
+    获得 {Value2} 点|神恩|。
+    下回合开始时：获得 {Value1} 点|火力|和|灵力|。
   FlavorText: 召请负责白吃白喝的神灵。
 
 PoorAttack:
@@ -3586,24 +3604,11 @@ BlackPoison:
   Name: 黑暗演舞
   Description: '{PlayerName}每次攻击造成未被阻挡的伤害时，施加 {Value1} 层|中毒|。'
 
-KisumeAttack:
-  Name: 钓瓶落之怪
-  Description: |-
-    获得 {Block} 点|格挡|。
-    造成 {Damage} 点伤害。
-    如果{SelfName}是本回合打出的第一张牌，施加 {Value1} 层|锁定|。
-
 MedicineGarden:
   Name: 铃兰花园
   Description: |-
     为所有敌人恢复 {Value1} 点生命。
     对所有敌人施加 {Value1} 层|中毒|。
-
-ShirenKunchong:
-  Name: 食人昆虫
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害。
-    当敌人受到|负面状态|时，{PlayerName}获得 {Value1} 点|格挡|。
 
 ZoufangSnake:
   Name: 土著神崇拜
