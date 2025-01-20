@@ -2730,9 +2730,6 @@ PoisonTeaParty:
   Name: Fiesta de Té Sospechosa
   Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
     \ {Value2} de |Veneno|."
-KisumeAttack:
-  Description: "Gana {Block} de |Bloqueo|.\nInflige {Damage} de daño.\nSi {SelfName}\
-    \ fue la primera carta jugada en este turno, aplica {Value1} de |Marcado|."
 ShirenKunchong:
   Description: "Inflige {Damage} de daño a cada enemigo.\nCada vez que un enemigo\
     \ gana un |Efecto Negativo|, {PlayerName} gana {Value1} de |Bloqueo|."
@@ -3027,10 +3024,12 @@ YukariSwarm:
     \ de daño dos veces."
   Name: Nido del Noctilucae
 SanaeSummonGod:
-  Description: Al comienzo del segundo turno de {PlayerName} después de jugar la {SelfName},
-    gana {Value1} de |Poder| y de |Espíritu|.
-  UpgradedDescription: Al comienzo del siguiente turno de {PlayerName}, gana {Value1}
-    de |Poder| y de |Espíritu|.
+  Description: "Gana {Value2} |Gracia{Value2:plural one=' Divina' other='s Divinas'}|.\n\
+    Al comienzo del segundo turno de {PlayerName} después de jugar la {SelfName},\
+    \ gana {Value1} de |Poder| y de |Espíritu|."
+  UpgradedDescription: "Gana {Value2} |Gracia{Value2:plural one=' Divina' other='s\
+    \ Divinas'}|.\nAl comienzo del siguiente turno de {PlayerName}, gana {Value1}\
+    \ de |Poder| y de |Espíritu|."
   Name: Invocación de Take-Minakata
   FlavorText: Invocando a un espíritu divino sólo por comida y bebidas gratis.
 SunflowerDefense:
@@ -3146,9 +3145,6 @@ PassionDraw:
   Name: Enfermedad del Amor
   Description: Siempre que {PlayerName} entre en el estado |Pasión|, roba {Value1}
     carta{Value1:plural one='' other='s'}.
-PeaceBlock:
-  Description: Al final de cada turno de {PlayerName}, si está en el estado |Serenidad|,
-    gana {Value1} de |Bloqueo|.
 MoodChangeBlock:
   Name: Campo A.T.
   Description: Siempre que {PlayerName} cambie de |Estados Mentales|, gana {Value1}
@@ -3462,3 +3458,17 @@ CommonFire:
     \ |Poder Temporal|.\n"
   UpgradedDescription: "Después de que {PlayerName} juega una carta común, gana {Value1}\
     \ de |Poder Temporal|.\nAgrega un |Puro| a la mano."
+KoishiDrawTopCards:
+  Description: Mira las primeras {Value1} cartas de la pila de robo. Elige una para
+    dejarla en la pila de robo y roba las demás.
+  Name: Test de Rorschach
+SelfControl:
+  ExtraDescription2: Entra en el estado |Serenidad|.
+  ExtraDescription1: Entra en el estado |Pasión|.
+  Name: Autocontrol
+  Description: "|Elegir|: Entrar en el estado |Pasión| o |Serenidad|.\nAl final de\
+    \ cada turno de {PlayerName}, gana {Value1} de |Poder| si está en el estado |Pasión|,\
+    \ o {Value2} de |Bloqueo| si está en el estado |Serenidad|."
+KoishiMana:
+  Name: Rosa Subterránea
+  Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Mana}."
