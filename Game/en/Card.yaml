@@ -2697,9 +2697,6 @@ MojingShanjie:
     costs| {Mana}.
   Name: Exorcising Border
   FlavorText: Randomness is an element of religious practices.
-ShirenKunchong:
-  Description: "Deal {Damage} damage to each enemy.\nWhenever an enemy gains a |Debuff|,\
-    \ {PlayerName} gains {Value1} |Block|."
 AnimalSpirit:
   Description: "All other cards in the hand are possessed by animal spirits, granting\
     \ them one of the following effects:\n|r:Wolf|: Gains |Echo|.\n|g:Otter|: Gains\
@@ -2721,9 +2718,6 @@ PoisonTeaParty:
   Name: Dubious Tea Party
   Description: "{PlayerName} gains {Value1} life and {Value1} |Poison|.\nApply {Value2}\
     \ |Poison|."
-KisumeAttack:
-  Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nIf {SelfName} was the\
-    \ first card played this turn, apply {Value1} |Lock On|."
 NightMana3:
   Description: "If there is a {SelfName} in the hand, all cards cost {Mana} more to\
     \ play.\nAfter {FreezeTimes} card{FreezeTimes:plural one=' is' other='s are'}\
@@ -3027,10 +3021,10 @@ YukariSwarm:
     \ twice instead."
   Name: Noctilucae's Nest
 SanaeSummonGod:
-  Description: At the start of {PlayerName}'s second turn after {SelfName} was played,
-    gain {Value1} |Firepower| and |Spirit|.
-  UpgradedDescription: At the start of {PlayerName}'s next turn, gain {Value1} |Firepower|
-    and |Spirit|.
+  Description: "Gain {Value2} |Divine Favor|.\nAt the start of {PlayerName}'s second\
+    \ turn after {SelfName} was played, gain {Value1} |Firepower| and |Spirit|."
+  UpgradedDescription: "Gain {Value2} |Divine Favor|.\nAt the start of {PlayerName}'s\
+    \ next turn, gain {Value1} |Firepower| and |Spirit|."
   Name: Summon Take-Minakata
   FlavorText: Summoning a divine spirit just for free food and drinks.
 YoumuAttack:
@@ -3170,8 +3164,6 @@ LunaticPassion:
   Name: Lunatic Love
   Description: "|Passion|'s damage modifier for {PlayerName}'s attacks becomes {Percentage}%.\n\
     Enter |Passion|."
-PeaceBlock:
-  Name: Self-Control
 PassionAttackToDraw:
   Name: Cage of Roses
   Description: "Deal {Damage} damage {Value1} times.\nEnter |Passion|.\nShuffle {SelfName}\
@@ -3445,3 +3437,17 @@ CommonFire:
   UpgradedDescription: "After {PlayerName} plays a Common card, gain {Value1} |Temporary\
     \ Firepower|.\nAdd a |Pure| to the hand."
   Name: Power of the Ordinary
+SelfControl:
+  Description: "|Choose|: Enter |Passion| or |Serenity|.\nAt the end of {PlayerName}'s\
+    \ turn, gain {Value1} |Firepower| if she's in |Passion|, or {Value2} |Block| if\
+    \ she's in |Serenity|."
+  Name: Self-Control
+  ExtraDescription1: Enter |Passion|.
+  ExtraDescription2: Enter |Serenity|.
+KoishiDrawTopCards:
+  Name: Rorschach Test
+  Description: Look at the top {Value1} cards of the draw pile. Choose one to leave
+    in the draw pile and draw the others.
+KoishiMana:
+  Name: Subterranean Rose
+  Description: "Deal {Damage} damage to each enemy.\nGain {Mana}."
