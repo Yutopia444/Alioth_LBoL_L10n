@@ -2707,12 +2707,6 @@ PaluxiCurse:
     將一張隨機的|厄運|洗入棄牌堆（不會進入牌庫）。
   FlavorText: 今日凌晨兩點半，橋姬水某某在一神社違規參拜時被執勤巫女當場抓獲。
 
-KisumeAttack:
-  Description: |-
-    獲得 {Block} 點|格擋|。
-    造成 {Damage} 點傷害。
-    如果{SelfName}是本回合打出的第一張牌，施加 {Value1} 層|鎖定|。
-
 MedicineGarden:
   Name: 鈴蘭花園
   Description: |-
@@ -2722,11 +2716,6 @@ MedicineGarden:
 BlackPoison:
   Name: 黑暗演舞
   Description: '{PlayerName}每次攻擊造成未被阻擋的傷害時，施加 {Value1} 層|中毒|。'
-
-ShirenKunchong:
-  Description: |-
-    對所有敵人造成 {Damage} 點傷害。
-    當敵人受到|負面狀態|時，{PlayerName}獲得 {Value1} 點|格擋|。
 
 ZoufangSnake:
   Name: 土著神崇拜
@@ -3526,8 +3515,8 @@ YukariSwarm:
   UpgradedDescription: "選擇至多 {Value2} 張手牌|放逐|。\n對所有敵人造成 {Damage} 點傷害。\n如果|放逐|區有不少於 {Value1} 張牌，造成兩次傷害。"
 SanaeSummonGod:
   Name: 召請建御名方神
-  Description: 兩回合後的回合開始時：獲得 {Value1} 點|火力|和|靈力|。
-  UpgradedDescription: 下回合開始時：獲得 {Value1} 點|火力|和|靈力|。
+  Description: "獲得 {Value2} 點|神恩|。\n兩回合後的回合開始時：獲得 {Value1} 點|火力|和|靈力|。"
+  UpgradedDescription: "獲得 {Value2} 點|神恩|。\n下回合開始時：獲得 {Value1} 點|火力|和|靈力|。"
   FlavorText: 召請負責白吃白喝的神靈。
 DefaultPassion:
   Description: "造成 {Damage} 點傷害。\n進入|熱情|。"
@@ -3616,8 +3605,6 @@ PeaceEndTurn:
   Name: 片刻安寧
   Description: "進入|平靜|。\n結束{PlayerName}的回合。"
   UpgradedDescription: "從棄牌堆中選擇至多 {Value1} 張牌移回手中，|保留|它一回合。\n進入|平靜|。\n結束{PlayerName}的回合。"
-PeaceBlock:
-  Description: '{PlayerName}的回合結束時如果處於|平靜|，獲得 {Value1} 點|格擋|。'
 MoodChangeBlock:
   Name: A.T. 力場
   Description: 每當{PlayerName}轉化|心境|時，獲得 {Value1} 點|格擋|。
@@ -3841,3 +3828,14 @@ CommonFire:
 KoishiUltimateToken:
   Name: 生命綻放
   Description: "造成 {Damage} 點傷害，獲得{TotalMana}。\n|被保留時|：傷害提高 {Value1} 點，法力獲取提高{Mana}。"
+KoishiDrawTopCards:
+  Name: 墨跡測驗
+  Description: 展示抽牌堆頂的 {Value1} 張牌，選擇一張置於原處，抽取剩餘的牌。
+KoishiMana:
+  Name: 地底薔薇
+  Description: "對所有敵人造成 {Damage} 點傷害。\n獲得{Mana}。"
+SelfControl:
+  Name: 掌控自我
+  ExtraDescription1: 進入|熱情|。
+  ExtraDescription2: 進入|平靜|。
+  Description: "|抉擇|：進入|熱情|或|平靜|。\n{PlayerName}的回合結束時：處於|熱情|則獲得 {Value1} 點|火力|；處於|平靜|則獲得 {Value2} 點|格擋|。"
