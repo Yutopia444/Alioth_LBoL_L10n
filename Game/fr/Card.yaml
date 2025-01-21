@@ -2904,10 +2904,6 @@ PoisonTeaParty:
   Description: "{PlayerName} gagne {Value1} point{Value1:plural one='' other='s'}\
     \ de vie et {Value1} |Poison{Value1:plural one='' other='s'}|.\nAppliquez {Value2}\
     \ |Poison{Value2:plural one='' other='s'}|."
-KisumeAttack:
-  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
-    \ {Damage} dégât{Damage:plural one='' other='s'}.\nSi {SelfName} est la première\
-    \ carte jouée ce tour, appliquez {Value1} |Verrouillé{Value1:plural one='' other='s'}|."
 ShirenKunchong:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
     Lorsque l'ennemi gagne un |Malus|, {PlayerName} gagne {Value1} |Bouclier{Value1:plural\
@@ -3277,11 +3273,13 @@ ShopDefense:
     \ {Value1} carte{Value1:plural one='' other='s'}."
 SanaeSummonGod:
   Name: Invocation de Take-Minakata
-  Description: Lorsque {PlayerName} débute son second tour après que {SelfName} ait
-    été joué, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural
-    one='' other='s'}|.
-  UpgradedDescription: Lorsque {PlayerName} débute son prochain tour, gagnez {Value1}
-    |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural one='' other='s'}|.
+  Description: "Gagnez {Value2:plural one='% |Faveur Divine|' other='% |Faveurs Divines|}.\n\
+    Lorsque {PlayerName} débute son second tour après que {SelfName} ait été joué,\
+    \ gagnez {Value1} |Puissance{Value1:plural one='' other='s'}| et |Esprit{Value1:plural\
+    \ one='' other='s'}|."
+  UpgradedDescription: "Gagnez {Value2:plural one='% |Faveur Divine|' other='% |Faveurs\
+    \ Divines|}.\nLorsque {PlayerName} débute son prochain tour, gagnez {Value1} |Puissance{Value1:plural\
+    \ one='' other='s'}| et |Esprit{Value1:plural one='' other='s'}|."
   FlavorText: Faites appel à l'esprit responsable de la liberté de manger et de boire.
 QiannianShenqiCard:
   Name: Mon Tour
@@ -3351,9 +3349,6 @@ PeaceEndTurn:
   UpgradedDescription: "Sélectionnez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
     \ dans la pile de défausse et remettez-l{Value1:plural one='a' other='es'} dans\
     \ votre main, avec |Retenue|.\nEntrez dans l'état |calme|.\nTerminez le tour."
-PeaceBlock:
-  Description: Si {PlayerName} est dans l'état |Calme| à la fin de son tour, gagnez
-    {Value1} |Bouclier{Value1:plural one='' other='s'}|.
 MoodChangeBlock:
   Name: A.T. Field
   Description: Chaque fois que {PlayerName} change d'|État mental|, gagnez {Value1}
@@ -3676,3 +3671,19 @@ CommonFire:
   UpgradedDescription: "Lorsque {PlayerName} a joué une carte commune, gagnez {Value1}\
     \ |Puissance{Value1:plural one=' Temporaire' other='s Temporaires'}|.\nAjoutez\
     \ une |Pureté| à la main."
+KoishiDrawTopCards:
+  Name: Test de Rorschach
+  Description: Regardez {Value1:plural one='la carte' other='les % cartes'} du dessus
+    de la pioche. Choisissez-en une à laisser dans la pioche et piochez les autres.
+KoishiMana:
+  Name: Rose Souterraine
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\n\
+    Gagnez {Mana}."
+SelfControl:
+  Name: Maîtrise de Soi
+  Description: "|Choisissez| : Entrez dans l'état |Passion| ou |Calme|.\nLorsque {PlayerName}\
+    \ finit son tour, gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|\
+    \ si en |Passion|, ou {Value2} |Bouclier{Value2:plural one='' other='s'}| si en\
+    \ |Calme|."
+  ExtraDescription1: Entrez dans l'état |Passion|.
+  ExtraDescription2: Entrez dans l'état |Calme|.
