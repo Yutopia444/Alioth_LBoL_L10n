@@ -2163,9 +2163,6 @@ PerfectCrime:
 PoisonTeaParty:
   Name: 수상한 다과회
   Description: "체력을 {Value1} 회복하고, |중독|을 {Value1} 받습니다.\n적에게 |중독|을 {Value2} 가합니다."
-KisumeAttack:
-  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n{SelfName}가 이번 턴에서 제일 처음 사용되었다면,\
-    \ |록온|을 {Value1} 줍니다."
 ShirenKunchong:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n적이 |부정적 효과|를 받는다면 {PlayerName}가 |방어|를 {Value1}\
     \ 얻습니다."
@@ -2429,9 +2426,9 @@ GreenLotus:
   Name: 달빛 연꽃
   Description: '{Mana}를 얻습니다.'
 SanaeSummonGod:
-  Description: 2턴 뒤 내 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다.
+  Description: "|은총|을 {Value2} 얻습니다.\n2턴 뒤 내 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다."
   Name: 서먼 타케미나카타
-  UpgradedDescription: 다음 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다.
+  UpgradedDescription: "|은총|을 {Value2} 얻습니다.\n다음 턴 시작 시 |화력|과 |영력|을 {Value1} 얻습니다."
   FlavorText: 맘껏 먹고 맘껏 마시면 신을 부르게 될지니.
 ModuoluoSeasons:
   Name: 폭주의 계절
@@ -2503,8 +2500,6 @@ PeaceEndTurn:
   Description: "|평온|에 들어섭니다.\n내 턴을 종료합니다."
   UpgradedDescription: "버린 카드 더미에서 최대 {Value1}장 골라 손으로 다시 가져옵니다. 해당 카드들은 한 턴간 |보존|이\
     \ 붙습니다.\n|평온|에 들어섭니다.\n내 턴을 종료합니다."
-PeaceBlock:
-  Description: 내 턴 종료 시 |평온|이라면 |방어|를 {Value1} 얻습니다.
 MoodChangeBlock:
   Name: A.T. 필드
   Description: '|마음가짐|이 바뀔 때마다 |방어|를 {Value1} 얻습니다.'
@@ -2749,3 +2744,15 @@ CommonFire:
   Name: 평범의 힘
   Description: "일반 카드를 사용하면 |일시 화력|을 {Value1} 얻습니다.\n"
   UpgradedDescription: "일반 카드를 사용하면 |일시 화력|을 {Value1} 얻습니다.\n|순수|를 한 장 얻습니다."
+KoishiDrawTopCards:
+  Name: 로르샤흐 검사
+  Description: 뽑을 카드 더미의 위에서부터 {Value1}장을 확인합니다. 이 중 남길 카드를 한 장 제외하고 나머지 카드를 뽑습니다.
+KoishiMana:
+  Name: 서브터레이니언 로즈
+  Description: "모든 적에게 피해를 {Damage} 줍니다.\n{Mana}를 얻습니다."
+SelfControl:
+  Name: 자아 제어
+  ExtraDescription1: '|열정| 상태에 들어섭니다.'
+  ExtraDescription2: '|평온|에 들어섭니다.'
+  Description: "|선택|: |열정| 또는 |평온| 상태에 들어섭니다.\n내 턴 종료 시 |열정| 상태라면 |화력|을 {Value1},\
+    \ |평온| 상태라면 |방어|를 {Value2} 얻습니다."
