@@ -574,11 +574,13 @@ SmallPanding:
   Description: "Отримуєш {Value1} |Маневру|.\nОтримуєш {Value2} |Вразливості|."
   UpgradedDescription: Отримуєш {Value1} |Маневру|.
 DanmuDuijue:
-  Description: "Отримуєш {Shield} |Бар'єру|.\nОтримуєш {Value1} |Відбиття|.\n{SelfName}\
+  Description: "Отримуєш {Block} |Блоку|.\nОтримуєш {Value1} |Відбиття|.\n{SelfName}\
     \ також покращується від |Сили|."
   FlavorText: Правила Карткових Дуелей ніколи не підлягали авторському праву. Невже
     це прояв "Духу Інтернету"?
   Name: Дуель Заклять
+  UpgradedDescription: "Отримуєш {Shield} |Бар'єру|.\nОтримуєш {Value1} |Відбиття|.\n\
+    {SelfName} також покращується від |Сили|."
 QinggeManwu:
   Name: Вальс Жриці
   Description: "Добирає {Value1:plural one='% карту' few='% карти' many='% карт'}\
@@ -2454,10 +2456,10 @@ KongMana:
     Додає |Веселку| в руку."
 SanaeSummonGod:
   Name: Виклик Таке-Мінаката
-  Description: На початку другого ходу {PlayerName:g} після розіграшу {SelfName},
-    отримуєш {Value1} |Сили| та |Духу|.
-  UpgradedDescription: На початку другого ходу {PlayerName:g}, отримуєш {Value1} |Сили|
-    та |Духу|.
+  Description: "Отримуєш {Value2} |Благодаті|.\nНа початку другого ходу {PlayerName:g}\
+    \ після розіграшу {SelfName}, отримуєш {Value1} |Сили| та |Духу|."
+  UpgradedDescription: "Отримуєш {Value2} |Благодаті|.\nНа початку наступного ходу\
+    \ {PlayerName:g}, отримуєш {Value1} |Сили| та |Духу|."
   FlavorText: Як зголоднієте, лише гукніть й вона з'явиться.
 AliceAttack:
   Description: "Завдає {Damage} шкоди.\nОтримуєш {Mana}."
@@ -3366,3 +3368,24 @@ CommonFire:
     \ |Тимчасової Сили|.\nДодає |Чистоту| в руку."
 KoishiDrawTopCards:
   Name: Тест Роршаха
+  Description: Поглянь на верхніх {Value1} карти зі стосу добору. Вибери одну аби
+    залишити на місці й добрати інші.
+SelfControl:
+  ExtraDescription1: Активує |Пристрасть|.
+  ExtraDescription2: Активує |Спокій|.
+  Name: Самоконтроль
+  Description: "|Вибери|: Активує |Пристрасть| або |Спокій|.\nНаприкінці свого ходу,\
+    \ {PlayerName} отримає {Value1} |Сили| у стані |Пристрасті|, або {Value2} |Блоку|\
+    \ у стані |Спокою|."
+KoishiPlayDiscard:
+  Description: "Вибери до {Value1:plural one='% карти' other='% карт'} зі стосу скиду\
+    \ аби розіграти їх як Карти Додаткової Атаки.\nУсі карти, що не є |Картами Додаткової\
+    \ Атаки| натомість |Знищуються|."
+  Name: Світогляд Зневажених
+DebugPlaySelectCard:
+  Description: "Перевірити карту: виберіть до {Value1} карт у грі й розіграйте їх\
+    \ додатково.\nУ такому порядку: із руки, стосу добору, стосу скиду, знищенних."
+  Name: Виберіть карту у грі аби її розіграти
+KoishiMana:
+  Name: Підземна Троянда
+  Description: "Завдає {Damage} шкоди усім ворогам.\nОтримуєш {Mana}."
