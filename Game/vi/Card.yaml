@@ -58,7 +58,7 @@ Jinfuzhen:
   Name: Pháp Trận Phong Ấn
 JingshenYishi:
   Name: Nghi Thức Thanh Tẩy
-  Description: "Nhận {Block} |Khiên|.\n|Trục Xuất| một lá bài trên tay."
+  Description: "Bốc {Value1} lá.\nNhận {Value2} |Phước Lành|."
 YinyangBaoyu:
   Description: "Gây {Damage} sát thương.\nThêm một lá |Âm Dương Ngọc| lên tay."
   Name: Âm Dương Bảo Ngọc
@@ -94,8 +94,8 @@ Zhuizongfu:
   FlavorText: '"Có vẻ như Hỏa Lực Tạm Thời khác với Hỏa Lực." Một người mới chơi có
     lẽ sẽ nghĩ như vậy.'
   Name: Bùa Truy Tung
-  Description: "Gây {Damage} sát thương ngẫu nhiên {Value1} lần lên kẻ địch.\nNếu\
-    \ {PlayerName} có |Hỏa Lực Tạm Thời|, nhận {Mana}."
+  Description: "Gây {Damage} sát thương ngẫu nhiên {Value1} lần lên kẻ địch.\nNhận\
+    \ {Mana} vào đầu lượt sau."
 ReimuFestival:
   Description: "Nhận {Value1} |Hỏa Lực Tạm Thời|.\nVào đầu lượt của {PlayerName},\
     \ nhận {Value1} |Hỏa Lực Tạm Thời|."
@@ -111,6 +111,8 @@ DanmuDuijue:
   Name: Màn Đạn Quyết Đấu
   Description: "Nhận {Block} |Khiên|.\nNhận {Value1} |Phản Kích|.\n{SelfName} nhận\
     \ ảnh hưởng từ |Hỏa Lực|."
+  UpgradedDescription: "Nhận {Shield} |Hộ Giáp|.\nNhận {Value1} |Phản Kích|.\n{SelfName}\
+    \ nhận ảnh hưởng từ |Hỏa Lực|."
 ReimuHeavyAttack:
   Name: Bác Lệ Thần Quyền
   Description: "Gây {Damage} sát thương.\n|Hỏa Lực| gia tăng sát thương của {SelfName}\
@@ -168,7 +170,7 @@ YinyangXueyin:
   FlavorText: Vì không có nguyên liệu đúc ngọc nên tôi đành dùng máu.
   Name: Âm Dương Huyết Ấn
 ReimuDrink:
-  Description: "Hồi {Value1} HP.\nThêm {Value2} lá |Uống Chút Giải Khuây| lên tay."
+  Description: "Nhận {Value1} |Phước Lành|."
   Name: Rượu Dâng Thần
 MomentPower:
   Description: Mỗi khi {PlayerName} nhận |Hỏa Lực Tạm Thời| hoặc |Linh Lực Tạm Thời|,
@@ -619,12 +621,12 @@ StarShower:
 ReimuHuashan:
   FlavorText: '"Ờ ờ ờ, cậu nói đúng."'
   Name: Tiếp Thu Chỉ Bảo
-  Description: "|Trục Xuất| một lá trên tay, nhận {Value2} <sprite=\"Point\" name=\"\
-    Power\">.\nNếu lá được chọn là một lá |Năng Lực|, tăng {Value1} HP tối đa. (Hiệu\
-    \ ứng này chỉ có hiệu quả một lần mỗi trận đấu)"
-  ExtraDescription1: "|Trục Xuất| một lá Năng Lực trên tay, nhận {Value2} <sprite=\"\
-    Point\" name=\"Power\">.\n|d:Nếu lá được chọn là một lá Năng Lực, tăng {Value1}\
-    \ HP tối đa. (Hiệu ứng này chỉ có hiệu quả một lần mỗi trận đấu)|"
+  Description: "Vào đầu trận đấu tiếp theo, |Trục Xuất| {SelfName} và nhận {Value1}\
+    \ |Hỏa Lực|.\nTrong mỗi trận đấu, chỉ có một lá {SelfName} đầu tiên có hiệu lực."
+  ExtraDescription1: "Vào đầu trận đấu tiếp theo, |Trục Xuất| {SelfName} và nhận {Value1}\
+    \ |Hỏa Lực|.\nTrong mỗi trận đấu, chỉ có một lá {SelfName} đầu tiên có hiệu lực.\
+    \ (Đã kích hoạt)"
+  DetailText: Chỉ lá {SelfName} có trong thư viện mới được đem tới trận đấu tiếp theo.
 ThrowBigStar:
   Name: Xích Tinh Bạo Tạc
   FlavorText: "\"Cảm ơn đã lắng nghe Đài Phát Thanh Trạm Xe Lửa Bỏ Hoang. Tháng này,\
@@ -871,9 +873,9 @@ ColdPotion:
   Name: Thuốc Phép Hạ Nhiệt
 AutoQumobang:
   Name: Gậy Trừ Tà Chạy Loạn
-  Description: "|Khi trên tay|: Bốc thêm {Value1} lá vào bước bốc bài đầu lượt.\n\
-    Sau khi kích hoạt hiệu quả {Value2} lần, |Trục Xuất| lá này."
-  FlavorText: '"Gậy Trừ Tà Tự Động đang thay thế công việc của các vu nữ." - Thời
+  Description: "|Khi vào tay|: |Trục Xuất| lá này, bốc thêm {Value1} lá vào bước bốc\
+    \ bài đầu lượt trong {Value2} lượt tiếp theo."
+  FlavorText: '"Gậy Trừ Tà Tự Động đang dần thay thế công việc của các vu nữ." - Thời
     Báo Bunbunmaru, Chuyên mục Kinh Tế.'
 ChunseXiaojing:
   Name: Xuân Về Lối Nhỏ
@@ -1386,7 +1388,8 @@ FairyTeam:
     \ thêm 1 lần."
 BabyDream:
   Name: Mộng Bào Thai
-  Description: "Nhận {Block} |Khiên|.\n|Nhập Mộng| {Value1}."
+  Description: "Nhận {Block} |Khiên|.\n|Nhập Mộng| {Value1}, kích hoạt lá |Liên Tiếp|\
+    \ đầu tiên trong số chúng. "
 CirnoEcho:
   Name: Thiên Nhiên Ban Tặng
   Description: Chọn {Value1} lá từ Chồng Bài Bỏ và hoàn trả chúng lên tay, {Value1:plural
@@ -1462,8 +1465,8 @@ FlowerGone:
   Description: "Nhận {Block} |Khiên|.\n|Bình Thản|: Thay vào đó nhận {Shield} |Hộ\
     \ Giáp|."
 PerfectCrime:
-  Description: "Đánh cắp |Né Tránh|, |Ngụy Trang Quang Học|, |Không Tì Vết|, và lên\
-    \ đến {Value1} |Hỏa Lực| và |Linh Lực| từ kẻ địch."
+  Description: "Đánh cắp |Hộ Giáp|, |Né Tránh|, |Ngụy Trang Quang Học|, |Không Tì\
+    \ Vết|, và lên đến {Value1} |Hỏa Lực| và |Linh Lực| từ kẻ địch."
   Name: Tội Ác Hoàn Hảo
 NazrinBaota:
   FlavorText: "\"Đừng bật đèn pha trong đường hầm!\"\n- Kurodani Yamame"
@@ -1771,10 +1774,12 @@ SummerFlower:
     \ gây thêm {Value1} sát thương."
   FlavorText: Ngập giữa muôn hoa trong nháy mắt.
 DizangLove:
-  Description: "Sau khi một lá Thường được chơi, {PlayerName} nhận {Value1} |Hỏa Lực\
-    \ Tạm Thời|.\n"
+  Description: "Tăng HP tối đa thêm {Value1}.\nTrong một trận đấu, chỉ lá {SelfName}\
+    \ đầu tiên được chơi có hiệu lực."
   Name: Bồ Đề Tức Thời
   FlavorText: Chúng ta đều có thể thành Phật mà không cần khổ tu hay vất vả.
+  ExtraDescription1: "|d:Tăng HP tối đa thêm {Value1}.|\nTrong một trận đấu, chỉ lá\
+    \ {SelfName} đầu tiên được chơi có hiệu lực."
 Yueguang:
   Name: Ánh Trăng Im Lặng
   Description: '|Khi được bốc|: Mất {Value1} mana ngẫu nhiên.'
@@ -2206,8 +2211,8 @@ HuashanDefense:
 ZhenmiaowanAttack:
   Name: Hậu Duệ Của Issun Boushi
   Description: "Gây {Damage} sát thương.\nCác lá Kỹ Năng tốn ít đi {Mana} lượt này."
-  UpgradedDescription: "Gây {Damage} sát thương.\nCác lá bài tốn ít đi {Mana} lượt\
-    \ này."
+  UpgradedDescription: "Gây {Damage} sát thương.\nCác lá bài tốn ít đi {Mana} trong\
+    \ lượt này."
 HehuanAttack:
   Name: Sơn Mụ Vượt Ngoài Cõi Trần
   Description: "Gây {Damage} sát thương {Value1} lần.\nBốc {Value2} lá."
@@ -2411,6 +2416,8 @@ LimaoSchool:
   Name: Trường Học Biến Hóa Của Lửng
   Description: Chọn {Value2} từ {Value1} |Biến Hóa Động Vật| ngẫu nhiên để nhận hiệu
     ứng.
+  DetailText: '|e:Biến Thành Lưỡng Cư| chỉ có hiệu lực một lần mỗi trận đấu, lựa chọn
+    này sẽ không xuất hiện trong các lần kích hoạt tiếp theo của {SelfName}.'
 RainbowMarket:
   Name: Khu Chợ Cầu Vồng Trăng
   Description: Mỗi khi một lá bị |Trục Xuất|, thêm 1 lá ngẫu nhiên lên tay.
@@ -2802,8 +2809,10 @@ YukariSwarm:
 SanaeSummonGod:
   Name: Triệu Tập Take-Minakata
   FlavorText: Triệu hồi vị thần cai quản việc ăn uống chùa.
-  Description: Sau 2 lượt nữa, nhận {Value1} |Hỏa Lực| và |Linh Lực| vào đầu lượt.
-  UpgradedDescription: Lượt sau, nhận {Value1} |Hỏa Lực| và |Linh Lực| vào đầu lượt.
+  Description: "Nhận {Value2} |Phước Lành|.\nSau 2 lượt nữa, nhận {Value1} |Hỏa Lực|\
+    \ và |Linh Lực| vào đầu lượt."
+  UpgradedDescription: "Nhận {Value2} |Phước Lành|.\nLượt sau, nhận {Value1} |Hỏa\
+    \ Lực| và |Linh Lực| vào đầu lượt."
 SuikaDraw:
   Description: Bốc bài cho đến khi trên tay có {Value1} lá.
   Name: Quỷ Rượu Tề Tựu
@@ -2898,6 +2907,8 @@ FriendDraw:
 PassionDefense:
   Name: Khiêm Tốn
   Description: "Nhận {Block} |Khiên|.\n|Trong Nhiệt Tình|: Nhận thêm {Block} |Khiên|."
+  FlavorText: Khi bạn đứng hạng nhất trong cuộc bầu chọn mức độ yêu thích nhưng lại
+    không cần được công nhận.
 MoodAttack:
   Name: Di Tình Nhậm
   Description: "Gây {Damage} sát thương.\nKhi |Tâm Trạng| của {PlayerName} thay đổi,\
@@ -3038,7 +3049,8 @@ DuplicateFollower:
   ExtraDescription1: "Gây {Damage} sát thương.\nNhận {Mana}."
 AncestorDream:
   Name: Tổ Tiên Bên Gối Mộng
-  Description: "Gây {Damage} sát thương cho từng kẻ địch.\n|Nhập Mộng| {Value1}."
+  Description: "Gây {Damage} sát thương cho từng kẻ địch.\n|Nhập Mộng| {Value1}, kích\
+    \ hoạt lá |Liên Tiếp| đầu tiên trong số chúng. "
 YaoguaiLaser:
   Name: Yêu Quái Điện Não Đồ
   Description: "Gây {Damage} sát thương.\nThực hiện một lần |Đánh Liên Tiếp|.\n|Trực\
@@ -3069,15 +3081,17 @@ FakeBullet:
     \ Liên Tiếp| để tiếp tục thực hiện hiệu ứng."
   Name: Màn Đạn Tưởng Tượng
 KoishiMana:
-  Name: Giải Phóng Tiềm Năng
+  Name: Hoa Hồng Dưới Lòng Đất
+  Description: "Gây {Damage} sát thương cho từng kẻ địch.\nNhận {Mana}."
 ButterflyDream:
   DetailText: "|e:Các lá thay thế| được sinh ra bỏ qua mọi giới hạn về nhân vật sở\
     \ hữu.\nMột lá {SelfName} khác không thể được sinh ra bởi hiệu ứng của lá bài\
     \ này.\nCác lá |Tiêu hao X| không thể được sinh ra bởi hiệu ứng của lá bài này."
-  Description: Vào đầu lượt của {PlayerName}, thêm {Value1} lá bài Hiếm |p:hoàn toàn
-    ngẫu nhiên| lên tay. {Value1:plural one='Nó' other='Chúng'} sở hữu hiệu ứng |Trục
-    Xuất| cùng |Hư Vô|, phí mana của {Value1:plural one='nó' other='chúng'} có thể
-    được trả bằng bất kỳ màu nào.
+  Description: "Đặt {Value1} lá bài Hiếm |p:hoàn toàn ngẫu nhiên| lên trên cùng Chồng\
+    \ Bài Bốc. {Value1:plural one='Nó' other='Chúng'} sở hữu hiệu ứng |Lấp Đầy|, |Trục\
+    \ Xuất| cùng |Hư Vô|, phí mana của {Value1:plural one='nó' other='chúng'} có thể\
+    \ được trả bằng bất kỳ màu nào.\nVào đầu lượt của {PlayerName}, tái kích hoạt\
+    \ hiệu ứng trên."
   Name: Giấc Mộng Hồ Điệp
 JinziDoppelganger:
   Name: Cặp Siêu Song Trùng Thế Kỷ
@@ -3097,8 +3111,9 @@ TheFool:
   Name: 'Tarot: The Fool'
 KoishiDna:
   Name: Thiếu Nữ Yêu Quái Của Hartmann
-  Description: Vào đầu lượt của {PlayerName}, chơi lá bài nằm ở trên cùng Chồng Bài
-    Bốc.
+  Description: "Chơi lá bài nằm ở trên cùng Chồng Bài Bốc.\nVào đầu lượt của {PlayerName},\
+    \ chơi lá bài nằm ở trên cùng Chồng Bài Bốc."
+  DetailText: 'v.1.6.1: Hiệu ứng tự chơi sẽ kích hoạt trước khi bốc bài đầu lượt.'
 KoishiAttackX:
   Name: Địa Ngục Hoa Hồng
   Description: '|Với mỗi <sprite="ManaSprite" name="2"> tiêu hao|: Gây {Damage} sát
@@ -3177,3 +3192,52 @@ KoishiDive:
   Name: Sâu Trong Tiềm Thức
   Description: "Tiến vào |Bình Thản|.\n|Nhập Mộng| {Value1}.\nHoàn trả tối đa {Value2}\
     \ lá đã |Nhập Mộng| từ Chồng Bài Bỏ lên tay."
+KoishiDrawTopCards:
+  Name: Trắc Nghiệm Rorschach
+  Description: Nhìn trước X lá bài ở nằm ở phía trên cùng của Chồng Bài Bốc, chọn
+    1 lá để nằm yên Chồng Bài Bốc, bốc các lá còn lại.
+SelfControl:
+  ExtraDescription1: Tiến vào |Nhiệt Tình|.
+  ExtraDescription2: Tiến vào |Bình Thản|.
+  Description: "|Chọn|: Tiến vào |Nhiệt Tình| hoặc |Bình Thản|.\nKhi {PlayerName}\
+    \ kết thúc lượt, nhận {Value1} |Hỏa Lực| nếu đang ở trong |Nhiệt Tình| hoặc {Block}\
+    \ |Khiên| nếu đang ở trong |Bình Thản|."
+  Name: Kiểm Soát Cái Tôi
+CommonFire:
+  Name: Sức Mạnh Phàm Vật
+  Description: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Level} |Hỏa Lực\
+    \ Tạm Thời|.\n"
+  UpgradedDescription: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Level}\
+    \ |Hỏa Lực Tạm Thời|.\nThêm 1 lá |Thuần Túy| lên tay."
+DebugPlaySelectCard:
+  Description: "Thẻ gỡ lỗi: Chọn tối đa {Value1} lá có trên chiến trường để chơi,\
+    \ được tính là Đánh Liên Tiếp.\nThứ tự: Tay, Chồng Bài Bốc, Chồng Bài Bỏ, Khu\
+    \ Trục Xuất."
+  Name: Chơi Bài Trên Chiến Trường
+KoishiPlayDiscard:
+  Name: Triết Lý Của Những Kẻ Bị Ghét Bỏ
+  Description: "Chọn tối đa {Value1} lá từ trong Chồng Bài Bốc và chơi chúng, được\
+    \ tính như là Đánh Liên Tiếp.\nCác lá không phải lá |Liên Tiếp| được chọn sẽ bị\
+    \ |Trục Xuất|."
+ReimuGrace:
+  Name: Bác Lệ Chúc Phúc
+  Description: "Nhận {Value1} |Phước Lành|.\nVào đầu lượt của {PlayerName}, nhận {Value1}\
+    \ |Phước Lành|."
+KoishiUltimateToken:
+  Name: Sự Sống Nở Rộ
+  Description: "Gây {Damage} sát thương và nhận {TotalMana}.\n|Mỗi khi Bảo Lưu|: Tăng\
+    \ lượng sát thương gây ra của lá này thêm {Value1} và lượng mana nhận được thêm\
+    \ {Mana}."
+KoishiTouying:
+  Name: Lửa Tình Âm Ỉ
+  Description: "Nhận {Mana}.\nChọn 1 từ {Value1} lá bài ngẫu nhiên để đặt vào phía\
+    \ trên cùng Chồng Bài Bốc, nó sở hữu thuộc tính |Lấp Đầy|, |Trục Xuất| cùng |Hư\
+    \ Vô|.\nCác lá ngẫu nhiên này có tổng phí mana tối thiểu là {Value2}."
+KoishiPotential:
+  Name: Giải Phóng Tiềm Năng
+  Description: Nhìn trước {Value1} lá bài ở nằm ở phía trên cùng của Chồng Bài Bốc.
+    Chọn 1 lá, chơi nó 2 lần và |Trục Xuất| nó.
+  FlavorText: Khi bạn sử dụng tận 25% sức mạnh của bộ não.
+ReimuEvilTerminator:
+  Description: "Mỗi khi một kẻ địch bị hạ gục, nhận {Mana}.\nNhận {Value1} |Ngăn Ngừa|."
+  Name: Chuyên Gia Trừ Tà

@@ -1102,6 +1102,9 @@ MoodPassion:
   Description: "Trong |Nhiệt Tình|, {PlayerName} gây và nhận thêm {Percentage}% sát\
     \ thương.\n|Nhiệt Tình| là một |Tâm Trạng|, {PlayerName} chỉ có thể ở trong duy\
     \ nhất một |Tâm Trạng| cùng một lúc."
+  ExtraDescription: "Trong |Nhiệt Tình|, {PlayerName} gây thêm {AttackPercentage}\
+    \ và nhận thêm {Percentage}% sát thương.\n|Nhiệt Tình| là một |Tâm Trạng|, {PlayerName}\
+    \ chỉ có thể ở trong duy nhất một |Tâm Trạng| cùng một lúc."
 MoodPeace:
   Description: "Khi rời khỏi |Bình Thản|, nhận {Mana}.\n|Bình Thản| là một |Tâm Trạng|,\
     \ {PlayerName} chỉ có thể ở trong duy nhất một |Tâm Trạng| cùng một lúc."
@@ -1200,14 +1203,14 @@ GainZeroAttackSe:
   Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá |Phiên Mã DNA| vào tay.
     {Level:plural one='Nó' other='Chúng'} sở hữu thuộc tính |Trục Xuất| cùng |Hư Vô|.
 ButterflyDreamSe:
-  Description: Vào đầu lượt của {PlayerName}, thêm {Level} lá bài Hiếm |p:hoàn toàn
-    ngẫu nhiên| lên tay. {Level:plural one='Nó' other='Chúng'} sở hữu hiệu ứng |Trục
-    Xuất| cùng |Hư Vô|, phí mana của {Level:plural one='nó' other='chúng'} có thể
-    được trả bằng bất kỳ màu nào.
+  Description: Vào đầu lượt của {PlayerName}, đặt {Level} lá bài Hiếm |p:hoàn toàn
+    ngẫu nhiên| lên trên cùng Chồng Bài Bốc. {Level:plural one='Nó' other='Chúng'}
+    sở hữu hiệu ứng |Lấp Đầy|, |Trục Xuất| cùng |Hư Vô|, phí mana của {Level:plural
+    one='nó' other='chúng'} có thể được trả bằng bất kỳ màu nào.
   Name: Giấc Mộng Hồ Điệp
-  Brief: Vào đầu lượt của {PlayerName}, thêm một vài lá bài Hiếm |p:hoàn toàn ngẫu
-    nhiên| lên tay. Chúng sở hữu hiệu ứng |Trục Xuất| cùng |Hư Vô|, phí mana của chúng
-    có thể được trả bằng bất kỳ màu nào.
+  Brief: Vào đầu lượt của {PlayerName}, đặt một vài lá bài Hiếm |p:hoàn toàn ngẫu
+    nhiên| lên tay. Chúng sở hữu hiệu ứng |Lấp Đầy|, |Trục Xuất| cùng |Hư Vô|, phí
+    mana của chúng có thể được trả bằng bất kỳ màu nào.
 KoishiPhoneSe:
   Name: Cuộc Gọi Khủng Bố Đáng Yêu
   Description: "Bất cứ khi nào một lá Tấn Công được kích hoạt, thực hiện {Level} lần\
@@ -1238,3 +1241,33 @@ DreamExpressSe:
     mỗi kẻ địch một lượng sát thương bằng gấp đôi chi phí mana của {Level:plural one='lá'
     other='các lá'} vừa được |Nhập Mộng|.
   Name: Giấc Mơ Tốc Hành
+Grace:
+  Name: Phước Lành
+  Description: '|Phước Lành| được tính như là |Hỏa Lực| và |Linh Lực|, tiêu hao toàn
+    bộ sau khi chơi một lá bài hoặc kích hoạt |Bài Phép|.'
+  Brief: '|Phước Lành| được tính như là |Hỏa Lực| và |Linh Lực|, tiêu hao toàn bộ
+    sau khi chơi một lá bài hoặc kích hoạt |Bài Phép|.'
+ReimuGraceSe:
+  Name: Bác Lệ Chúc Phúc
+  Description: Vào đầu lượt của {PlayerName}, nhận {Level} |Phước Lành|.
+  Brief: Vào đầu lượt của {PlayerName}, nhận một số cộng dồn |Phước Lành|.
+ReimuEvilTerminatorSe:
+  Name: Chuyên Gia Trừ Tà
+  Description: Mỗi khi một kẻ địch bị hạ gục, nhận {Mana}.
+  Brief: Mỗi khi một kẻ địch bị hạ gục, nhận một lượng mana.
+AutoQumobangSe:
+  Name: Gậy Trừ Tà Chạy Loạn
+  Description: Bốc thêm {Level} lá vào bước bốc bài đầu lượt trong {Count} lượt tiếp
+    theo.
+  Brief: Bốc thêm một số lá vào bước bốc bài đầu lượt trong một vài lượt tiếp theo.
+CommonFireSe:
+  Brief: Sau khi chơi một lá bài Thường, {OwnerName} nhận một lượng |Hỏa Lực Tạm Thời|.
+  Description: Sau khi chơi một lá bài Thường, {OwnerName} nhận {Level} |Hỏa Lực Tạm
+    Thời|.
+  Name: Sức Mạnh Phàm Vật
+SelfControlSe:
+  Name: Kiểm Soát Cái Tôi
+  Brief: Khi {PlayerName} kết thúc lượt, nhận một lượng |Hỏa Lực| nếu đang ở trong
+    |Nhiệt Tình| hoặc một lượng |Khiên| nếu đang ở trong |Bình Thản|.
+  Description: Khi {PlayerName} kết thúc lượt, nhận {Level} |Hỏa Lực| nếu đang ở trong
+    |Nhiệt Tình| hoặc {Count} |Khiên| nếu đang ở trong |Bình Thản|.
