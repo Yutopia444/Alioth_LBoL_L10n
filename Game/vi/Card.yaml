@@ -832,7 +832,7 @@ PotionJungle:
     vào Chồng Bài Bỏ.
   Name: Rừng Sâu Le Lói
 StarFantasy:
-  Name: Bụi Sao Huyễn Tưởng
+  Name: Tinh Trần Huyễn Tưởng
   Description: "Gây {Damage} sát thương.\n|Mỗi khi Bảo Lưu|: Tăng sát thương của lá\
     \ bài này thêm {Value1} trong trận đấu hiện tại."
 RunAway:
@@ -1932,11 +1932,13 @@ ArtificialJewellery:
   FlavorText: Dù giá trị thực tế thấp hơn rất nhiều so với giá bán của nó, trang sức
     vẫn có tác dụng cổ vũ tinh thần không thể đong đếm được bằng tiền.
   Name: Bảo Châu Nhân Tạo
+  DetailText: Không thể bị xóa bỏ bằng lựa chọn |Chuẩn Bị| sau trận đấu với Trùm.
 WolfFur:
   Description: '|Hạn Mức【{DeckCounter}】|'
   Name: Lông Sói
   FlavorText: '"Bông xù" đang dần trở thành xu thế, rất nhiều yêu quái đều tự nhận
     rằng chúng cũng có thể "bông xù".'
+  DetailText: Không thể bị xóa bỏ bằng lựa chọn |Chuẩn Bị| sau trận đấu với Trùm.
 AyaNewsSakuyaSp:
   FlavorText: Số đặc biệt về Triển lãm của Nguyệt Đô! Đưa tin chi tiết về các đồn
     đoán xung quanh {PlayerName}.
@@ -2453,6 +2455,7 @@ NewsNegative:
     đến tham dự triển lãm với tư cách khách mời lần này, Bác Lệ Thần Xã đang vướng
     vào khủng hoảng tài chính vô cùng nghiêm trọng và không thể duy trì các khoản
     chi phí vận hành thường ngày. Đồng thời, đại diện đơn vị tổ chức triển lãm…'
+  DetailText: Không thể bị xóa bỏ bằng lựa chọn |Chuẩn Bị| sau trận đấu với Trùm.
 NueExile:
   Name: Ác Mộng Kinh Thành Heian
   Description: "|Trục Xuất| 1 lá bài trên tay.\nThêm 1 lá ngẫu nhiên lên tay, nó |tạm\
@@ -2813,7 +2816,7 @@ SanaeSummonGod:
     \ Lực| và |Linh Lực| vào đầu lượt."
 SuikaDraw:
   Description: Bốc bài cho đến khi trên tay có {Value1} lá.
-  Name: Quỷ Rượu Tề Tựu
+  Name: Ma Men Tề Tựu
 YoumuHybrid:
   Name: Nửa Người Nửa U Linh
   UpgradedDescription: "|Với mỗi <sprite=\"ManaSprite\" name=\"W\"> tiêu hao|: |Trục\
@@ -2880,7 +2883,7 @@ LeaveMoodAttack:
   Description: "Gây {Damage} sát thương.\nRời khỏi |Tâm Trạng| hiện tại."
 LeaveMoodDraw:
   Name: Lòng Hiếu Kỳ
-  Description: "Bốc {Value1} lá.\nRời khỏi |Tâm Trạng| hiện tại."
+  Description: "Rời khỏi |Tâm Trạng| hiện tại.\nBốc {Value1} lá."
 LeaveMoodGraze:
   Name: Che Giấu Khí Tức
   Description: "Nhận {Value1} |Né Tránh|.\nRời khỏi |Tâm Trạng| hiện tại."
@@ -2945,7 +2948,8 @@ PsycheLock:
 LunaticPassion:
   Name: Tình Yêu Mê Cuồng
   Description: "Mức tăng sát thương trong tâm trạng |Nhiệt Tình| của {PlayerName}\
-    \ trở thành {Percentage}%.\nTiến vào |Nhiệt Tình|."
+    \ trở thành {Percentage}% và sát thương từ những lá Tấn Công sẽ trở nên |Chuẩn\
+    \ Xác|.\nTiến vào |Nhiệt Tình|."
 KoishiZeroAttack:
   Name: Phiên Mã DNA
   Description: "Gây {Damage} sát thương."
@@ -3118,7 +3122,7 @@ KoishiAttackX:
     thương cho từng kẻ địch và nhận {Mana}.'
 BailianMagic:
   Name: Niệm Chú Ma Thần
-  Description: Trong lượt này, {Level} lá Năng Lực tiếp theo sẽ được chơi hai lần.
+  Description: Trong lượt này, {Value1} lá Năng Lực tiếp theo sẽ được chơi hai lần.
 KoishiGrowAttack:
   Name: Vũ Điệu Của Gai
   Description: "Gây {Damage} sát thương.\n|Sinh Trưởng|: Gia tăng sát thương thêm\
@@ -3163,6 +3167,7 @@ KoishiDiscard:
   Name: Vô Thức Lãng Quên
   Description: '|Khi được bốc|: Bỏ một lá ngẫu nhiên.'
   ExtraDescription1: "|Khi được bốc|: Bỏ một lá ngẫu nhiên.\nLá đã bỏ: {CardName}"
+  DetailText: Nếu lá này bỏ một lá {SelfName} khác, |Trục Xuất| nó.
 DebugAddRandomCardsToExile:
   Name: Thêm Lá Ngẫu Nhiên Vào Khu Trục Xuất
   Description: 'Thẻ gỡ lỗi: Thêm {Value1} lá vào khu Trục Xuất.'
@@ -3198,14 +3203,14 @@ SelfControl:
   ExtraDescription1: Tiến vào |Nhiệt Tình|.
   ExtraDescription2: Tiến vào |Bình Thản|.
   Description: "|Chọn|: Tiến vào |Nhiệt Tình| hoặc |Bình Thản|.\nKhi {PlayerName}\
-    \ kết thúc lượt, nhận {Value1} |Hỏa Lực| nếu đang ở trong |Nhiệt Tình| hoặc {Block}\
+    \ kết thúc lượt, nhận {Value1} |Hỏa Lực| nếu đang ở trong |Nhiệt Tình| hoặc {Value2}\
     \ |Khiên| nếu đang ở trong |Bình Thản|."
   Name: Kiểm Soát Cái Tôi
 CommonFire:
   Name: Sức Mạnh Phàm Vật
-  Description: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Level} |Hỏa Lực\
+  Description: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Value1} |Hỏa Lực\
     \ Tạm Thời|.\n"
-  UpgradedDescription: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Level}\
+  UpgradedDescription: "Sau khi chơi một lá bài Thường, {PlayerName} nhận {Value1}\
     \ |Hỏa Lực Tạm Thời|.\nThêm 1 lá |Thuần Túy| lên tay."
 DebugPlaySelectCard:
   Description: "Thẻ gỡ lỗi: Chọn tối đa {Value1} lá có trên chiến trường để chơi,\
@@ -3234,7 +3239,7 @@ KoishiTouying:
 KoishiPotential:
   Name: Giải Phóng Tiềm Năng
   Description: Nhìn trước {Value1} lá bài ở nằm ở phía trên cùng của Chồng Bài Bốc.
-    Chọn 1 lá, chơi nó 2 lần và |Trục Xuất| nó.
+    Chọn 1 lá từ những lá đó, chơi hai lần rồi |Trục Xuất| lá được chọn.
   FlavorText: Khi bạn sử dụng tận 25% sức mạnh của bộ não.
 ReimuEvilTerminator:
   Description: "Mỗi khi một kẻ địch bị hạ gục, nhận {Mana}.\nNhận {Value1} |Ngăn Ngừa|."
