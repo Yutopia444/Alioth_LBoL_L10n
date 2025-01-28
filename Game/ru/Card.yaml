@@ -221,7 +221,7 @@ BoliPhantom:
   Name: Иллюзии Хакурэй
   FlavorText: '"Трансформация: ёжик."'
 AutoQumobang:
-  Description: "|Когда {SelfName} входит в руку|: {SelfName} |Изгоняется|, затем берите\
+  Description: "|Когда {SelfName} входит в руку|: {SelfName} |Изгоняется|, затем возьмите\
     \ ещё {Value1} {Value1:plural one='карту' other='карты'} следующи{Value2:plural\
     \ one='й' other='е'} {Value2} {Value2:plural one='ход' other='хода'}."
   Name: Яростный жезл очищения
@@ -1237,6 +1237,7 @@ ArtificialJewellery:
   Name: Искусственное украшение
   FlavorText: Хотя её ценность явно ниже стоимости, способность сияющего шарика повысить
     настрой существа не может быть измерена в деньгах.
+  DetailText: Не может быть выбрана опцией |Подготовка| после победы над боссом.
 LilyoftheValley:
   Description: "Даёт {Mana}.\n|Кол-во использований [{DeckCounter}]|"
   Name: Ландыш майский
@@ -1250,6 +1251,7 @@ NewsNegative:
     Однако прежде, чем Рэйму была приглашена на выставку, источники сообщили о глубокой
     задолженности храма Хакурэй, неспособного обеспечивать свой бюджет. Тем временем,
     организатор выставки..."'
+  DetailText: Не может быть выбрана опцией |Подготовка| после победы над боссом.
 NewsEntertainment:
   Description: "Берите карты до тех пор. пока не заполнится рука.\n|Кол-во использований\
     \ [{DeckCounter}]|"
@@ -1263,6 +1265,7 @@ WolfFur:
   Name: Волчья шерсть
   FlavorText: '"Пушистые" сейчас в моде, поэтому многие ёкаи начинают объявлять себя
     "пушистыми".'
+  DetailText: Не может быть выбрана опцией |Подготовка| после победы над боссом.
 ToolMaxHp:
   Description: "Повышает максимальное здоровье на {Value1}.\n|Кол-во использований\
     \ [{DeckCounter}]|"
@@ -1313,7 +1316,7 @@ KongMana:
     \ этой карты.\nДобавляет |Радугу| в руку."
   Name: Расплавление
 RinDraw:
-  Description: Когда берётся карта-|Статус|, берите ещё {Value1:plural one='% карту'
+  Description: Когда берётся карта-|Статус|, возьмите ещё {Value1:plural one='% карту'
     other='% карты'}.
   Name: Призрачное господство
   FlavorText: Кошки хороши в разговорах со странными вещами.
@@ -1862,7 +1865,7 @@ GreenMogu:
     зелья|'} в стопку добора.
 MoguMaster:
   Name: Грибной специалист
-  Description: Выберите {Value2} из {Value1} случайных |Грибов| и добавьте его в руку.
+  Description: Выберите {Value2} из {Value1} случайных |Грибов| и добавьте в руку.
 PurpleMogu:
   Name: Лаковица аметистовая
   Description: Восполните {Value1} здоровья.
@@ -2031,7 +2034,7 @@ CirnoFire:
     \ |Огневую мощь| этой карты на {Value2}."
 CirnoConsider:
   Name: Тщательное обдумывание
-  Description: "|Выберите|: Получить {Block} |Защиты| или Взять {Value1:plural one='%\
+  Description: "|Выберите|: Получить {Block} |Защиты| или взять {Value1:plural one='%\
     \ карту' other='% карты'}."
   ExtraDescription1: Даёт {Block} |Защиты|.
   ExtraDescription2: Возьмите {Value1:plural one='% карту' other='% карты'}.
@@ -2305,7 +2308,7 @@ FruitShake:
 FairyTeam:
   Description: "Выберите любое число |Товарищей| в вашей руке. Они |Изгоняются|. Даёт\
     \ ману, равную их стоимости.\nНаносит {Damage} урона случайному врагу.\nЗа каждую\
-    \ |Изгнанную| таким образом карту, наносит урон дополнительный раз."
+    \ |Изгнанную| таким образом карту наносит урон дополнительный раз."
   Name: Великая война фей
 LarvaFriend:
   Description: '{FriendP}Накладывает {Value1} |Яда| на случайного противника.'
@@ -2703,7 +2706,7 @@ KoishiDive:
 LunaticPassion:
   Name: Безумная любовь
   Description: "Коэффициент усиления атак {PlayerName:g} в |Страсти| становится равен\
-    \ {Percentage}%.\nВойти в |Страсть|."
+    \ {Percentage}%, а урон становится |Точен|.\nВойти в |Страсть|."
 DefaultPeace:
   Name: Самоотрешённость
   Description: "Даёт {Block} |Защиты|.\nВойти в |Покой|."
@@ -2717,7 +2720,7 @@ PassionVulnerable:
     \ войти в |Страсть|."
 PassionDraw:
   Name: Любовная тоска
-  Description: Когда {PlayerName} входит в |Страсть|, берите {Value1} карт{Value1:plural
+  Description: Когда {PlayerName} входит в |Страсть|, возьмите {Value1} карт{Value1:plural
     one='у' other='ы'}.
 MoodChangeBlock:
   Name: А.Т. поле
@@ -2755,8 +2758,8 @@ TheHermit:
     \ <sprite=\"ManaSprite\" name=\"0\">."
 LeaveMoodDraw:
   Name: Любопытство
-  Description: "Берите {Value1} карт{Value1:plural one='у' other='ы'}.\nВыйти из текущего\
-    \ |Состояния разума|."
+  Description: "Выйдите из текущего |Состояния разума|.\nВозьмите {Value1} карт{Value1:plural\
+    \ one='у' other='ы'}."
 FakeBullet:
   Name: Мнимое даммаку
   Description: "Разыграть {Value1} |{Value1:plural one='Атаку-продолжение' other='Атаки-продолжения'}|.\n\
@@ -3199,7 +3202,7 @@ Zhendijianzao:
   Name: Создание территории
 HuiyinMoreDraw:
   Name: Усердие учителя
-  Description: Во время фазы добора берите на {Value1} карт{Value1:plural one='у'
+  Description: Во время фазы добора возьмите на {Value1} карт{Value1:plural one='у'
     other='в'} больше.
 FakeCard:
   Description: "Эта карта всё ещё в раннем доступе.\nПожалуйста, ожидайте обновлений."
@@ -3318,6 +3321,7 @@ KoishiDiscard:
   Description: '|Когда берётся в руку|: сбросить случайную карту.'
   ExtraDescription1: "|Когда берётся в руку|: сбросить случайную карту.\nБыла сброшена\
     \ карта: {CardName}"
+  DetailText: Если таким образом сбрасывается другая карта {SelfName}, то она |Изгоняется|.
 ReimuGrace:
   Name: Милость Хакурэй
   Description: "Даёт {Value1} |Божественной милости|.\nВ начале хода {PlayerName:g}\
@@ -3362,7 +3366,7 @@ SelfControl:
 KoishiPlayDiscard:
   Description: "Выберите до {Value1} карт{Value1:plural one='ы' other=''} из стопки\
     \ сброса и разыграйте их как |Продолжения|.\nЛюбая выбранная карта, не имеющая\
-    \ |Продолжение| будет |Изгнана|."
+    \ |Продолжение|, будет |Изгнана|."
   Name: Философия презираемых
 DebugPlaySelectCard:
   Name: Разыграть карты с поля боя
