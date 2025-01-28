@@ -488,6 +488,8 @@ NewsNegative:
     que el Templo Hakurei había atravesado una profunda crisis financiera y estaba
     luchando para mantenerse al día con sus costes economicos. Mientras tanto, la
     organizadora de la exposición…'
+  DetailText: No se puede eliminar con la opción |Preparar| después de derrotar a
+    los jefes.
 ToolMaxHp:
   Name: Pepino Crujiente
   Description: "Gana {Value1} de vida máxima.\n|Limitado【{DeckCounter}】|"
@@ -505,6 +507,8 @@ ArtificialJewellery:
   UpgradedDescription: Gana {Mana}.
   FlavorText: Aunque su valor real es muy inferior a su precio, la capacidad de una
     joya para levantar el ánimo no puede medirse con el dinero.
+  DetailText: No se puede eliminar con la opción |Preparar| después de derrotar a
+    los jefes.
 JinjiBlock:
   Description: Gana {Block} de |Bloqueo|.
   Name: Defensa de Emergencia
@@ -528,6 +532,7 @@ WolfFur:
   Description: '|Limitado【{DeckCounter}】|'
   FlavorText: Ser "Esponjoso" se convirtió en la moda del momento, y varios youkais
     se proclamaron que ellos mismos también podían ser "esponjositos".
+  DetailText: No se puede eliminar con la opción |Preparar| después de los jefes.
 ReimuShrine:
   Name: Feria del Templo Hakurei
   Description: "Gana {Value1} de |Espíritu Temporal|.\nAl comienzo de cada turno de\
@@ -3112,8 +3117,8 @@ LeaveMoodGraze:
   Description: "Gana {Value1} de |Evasión|.\nSale del |Estado Mental| actual."
 LeaveMoodDraw:
   Name: Curiosidad
-  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nSale del |Estado\
-    \ Mental| actual."
+  Description: "Sale del |Estado Mental| actual.\nRoba {Value1} carta{Value1:plural\
+    \ one='' other='s'}."
 PassionAttackToDraw:
   Name: Jaula de Rosas
   Description: "Inflige {Damage} de daño {Value1} veces.\nEntra en el estado |Pasión|.\n\
@@ -3167,7 +3172,8 @@ PsycheLock:
 LunaticPassion:
   Name: Loca de Amor
   Description: "El modificador del daño del estado |Pasión| para los ataques de {PlayerName}\
-    \ pasa a ser del {Percentage}%.\nEntra en el estado |Pasión|."
+    \ pasa a ser del {Percentage}% y el daño de las cartas de ataque se convierte\
+    \ en |Certero|.\nEntra en el estado |Pasión|."
 MoodAttack:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de un |Estado\
     \ Mental|. devuelve {SelfName} de la pila de descarte a la mano."
@@ -3355,6 +3361,7 @@ KoishiDiscard:
   ExtraDescription1: "|Cuando se roba|: descarta una carta aleatoria.\nDescartado:\
     \ {CardName}"
   Name: Amnesia Inconsciente
+  DetailText: Si otro {SelfName} se descarta de esta manera, es |Exiliado|.
 AttackX:
   Description: "|Por cada {Mana} gastado|: inflige {Damage} de daño.\nCuando el objetivo\
     \ de {SelfName} es derrotado, si aún le sobran ataques, continúa atacando utilizando\
