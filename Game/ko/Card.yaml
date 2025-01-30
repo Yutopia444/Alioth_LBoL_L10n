@@ -864,7 +864,7 @@ BladePower:
     \ |휘발성|을 지닙니다.\n|단검|을 {Value1}장 얻습니다."
   Name: 은빛 질주
 ReimuHeavyAttack:
-  Name: 하쿠레이 일격
+  Name: 하쿠레이 신권
   Description: "피해를 {Damage} 줍니다.\n{SelfName}에 한해 |화력|의 효과가 {Value1}배로 적용됩니다."
   FlavorText: '"너는 이미 죽어있다."'
 ReadyForBurst:
@@ -1107,10 +1107,12 @@ NewsNegative:
   Name: 부정적 뉴스
   FlavorText: …가 옥의 가지를 훔친 진범을 찾아 나선 것으로 알려져 있다. 레이무는 이번 전시회에 초청 받기 전, 하쿠레이 신사의 생활비조차
     충당하기 힘들 정도의 심각한 재정난에 빠져 있었다고 한다. 동시에 이번 전시회의 주최자인…
+  DetailText: 보스전 후 |정비|를 통해 제거할 수 없습니다.
 WolfFur:
   Name: 늑대 털
   Description: '|사용 제한 [{DeckCounter}]|'
   FlavorText: 털보다 더 좋은 것은 더 많은 털.
+  DetailText: 보스전 후 |정비|를 통해 제거할 수 없습니다.
 AyaNews:
   Description: 무작위 적에게 피해를 {Damage} 줍니다.
   Name: 붕붕마루 신문
@@ -1527,6 +1529,7 @@ ArtificialJewellery:
   UpgradedDescription: '{Mana}를 얻습니다.'
   Name: 인공 보석
   FlavorText: 실제 가치는 명시된 가격보다 훨씬 낮지만, 사람의 마음을 들뜨게 하는 능력 자체는 값을 매길 수 없습니다.
+  DetailText: 보스전 후 |정비|를 통해 제거할 수 없습니다.
 CirnoFire:
   Name: 불타는 얼음
   Description: "|화력|을 {Value1} 얻습니다.\n|빙결|이 있는 적 한 명마다 효과가 {Value2} 상승합니다."
@@ -2390,7 +2393,7 @@ LeaveMoodGraze:
   Description: "|그레이즈|를 {Value1} 얻습니다.\n현재 |마음가짐|에서 벗어납니다."
 LeaveMoodDraw:
   Name: 호기심
-  Description: "카드를 {Value1}장 뽑습니다.\n현재 |마음가짐|에서 벗어납니다."
+  Description: "현재 |마음가짐|에서 벗어납니다.\n카드를 {Value1}장 뽑습니다."
 YoumuAttack:
   Name: 심초참
   Description: "피해를 {Damage} 줍니다.\n손에 있는 카드 한 장을 |소멸|시킵니다."
@@ -2514,7 +2517,8 @@ PsycheLock:
     \ 수 있습니다."
 LunaticPassion:
   Name: 광적인 사랑
-  Description: "{PlayerName}가 |열정| 상태일 때 주는 피해 배율이 {Percentage}%가 됩니다.\n|열정|에 들어섭니다."
+  Description: "{PlayerName}가 |열정| 상태일 때 주는 피해 배율이 {Percentage}%가 되며, 공격 카드로 가하는 피해에\
+    \ |명중|이 붙습니다.\n|열정|에 들어섭니다."
 AhongMana:
   Name: 벚꽃색 바다
   Description: '|손에 들어올 시|: |활력|을 {Value1}장 얻습니다. 그 후 {SelfName}는 |소멸|합니다.'
@@ -2706,6 +2710,7 @@ KoishiDiscard:
   Name: 무의식 속 망각
   Description: '|카드를 뽑을 시|: 무작위 카드를 버립니다.'
   ExtraDescription1: "|카드를 뽑을 시|: 무작위 카드를 버립니다.\n버린 카드: {CardName}"
+  DetailText: 이 효과로 다른 {SelfName}이 버려질 시 해당 카드를 |소멸|시킵니다.
 DebugRemoveHand:
   Name: 손패 제거
   Description: '테스트 카드: 손에서 임의의 카드를 골라 이번 전투동안 제거합니다.'
