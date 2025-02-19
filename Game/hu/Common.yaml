@@ -2,7 +2,7 @@ Game:
   ActualOrderExplain: "Megjeleníti, hogy milyen sorrendben kerültek be a kártyák.\n\
     \nPakli: A sorrend a kártyák összegyüjtésének sorrendjét jelképezi.\nHúzó halom:\
     \ Az első a \"halom teteje\".\nKidobott halom: Az utolsó a \"halom teteje\".\n\
-    \nAlapértelmezetten nem tudod megjeleníttetni a  húzó halmot ebben a sorrendben."
+    \nAlapértelmezetten nem tudod megjeleníttetni a húzó halmot ebben a sorrendben."
   TypeOrderExplain: "Az azonos típusú kártyák az egymás közötti kártyák sorrendje\
     \ szerint vannak megjelenítve.\nAz azonos nevű kártyák a valódi sorrendjük szerint\
     \ vannak megjelenítve."
@@ -37,7 +37,7 @@ Game:
   TopBottomSuffix: (Tető/Alj)
   FollowCardOnly: Rákövetkező Kártyák Megjelenítése
   DreamCardOnly: Álom Kártyák Megjelenítése
-  EndTurn: Kör Befejezése
+  EndTurn: Forduló Befejezése
   BattleStart: Kezdődik a Csata
   PlayerTurn: Játékos Szakasza
   EnemyTurn: Ellenfél Szakasza
@@ -65,3 +65,477 @@ Ultimate:
   OncePerBattle: Csatánként csak egyszer használható
 Explain:
   Title: Megjegyzés
+  LoseShinning: Mindig tudsz találni kizárólagosan a játszott karakterhez tartozó
+    kártyákat, még akkor is ha elveszted a |Csillámló Kiállítási Tárgyukat|.
+  RemiliaMeet: "1. Kicseréli a kártyákat ugyanolyan értékűvel.\n2. A kártya felminősített\
+    \ változatát megtartja mikor kicseréli."
+  PowerDescription: "Egy Varázskártya felhasználja a teljes erőmétert.\n(A karakterportré\
+    \ alatt megjelenítve)"
+  ShinmyoumaruForge: "1. Támadás kártyák Támadás kártyákra cserélődnek, míg a Védekezés\
+    \ kártyák Védekezés kártyákra.\n2. A Felminősített státusz átkerül a lecserélt\
+    \ kártyákra."
+  SaveWhenSelect: A választás azonnal elmenti az előrehaladást.
+  Power: Erő<sprite="Point" name="Power">
+  RollCard: "Felfedezhető Kártyák Kártyajutalmakon Keresztül\n\nCsak akkor tudsz kártyákat\
+    \ találni, ha megfelelnek az alábbi kritériumoknak:\n 1: A kártya manaköltsége\
+    \ kifizethető a |manatárcában| lévő manával.\n 2: Ha egy Egyedi"
+Museum:
+  HiddenDescription: Ezen teljesítmény részletei addig nem jelennek meg, amíg meg
+    nem szerzed.
+  ManaFilterHint: 'Hogy leszűkítsd a keresést egy kifejezett két szín kombinációjára,
+    kattints azokra a színekre amelyekre szereretnél, és a <sprite="ManaSprite" name="P">.
+    Pl.: kék/fehér kártyákhoz kattints a <sprite="ManaSprite" name="W">, <sprite="ManaSprite"
+    name="U"> és <sprite="ManaSprite" name="P"> manákra.'
+  CardType: Kártyatípusok
+  CardNotReady: "Ez a kártya még nem elérhető.\nKérlek várj türelemmel a jövőbeli\
+    \ frissítésekre."
+  Increase: Növekedő
+  Decrease: Csőkkenő
+  UpgradedFilter: Fejlesztett
+  CardStyleFilter: Stílusok
+  CardStyleTooltip: "Csak azok a kártyák jelennek meg, amelyeknek van több stílusa.\n\
+    Válassz, melyik kártyaillusztrációt szeretnéd megjeleníteni a részlet panelen."
+  AllCards: Minden Kártya
+  Revealed: Látott
+  UnRevealed: Nem Látott
+  RevealDescription: Ha meglátsz egy kártyát, már az elég hogy látottnak jelenjen
+    meg, attól függetlenül hogy kiválasztottad-e vagy megvetted-e.
+  Rarity: Ritkaság
+  ManaCost: Teljes Költség
+  Character: Karakterek
+  ManaType: Színek
+  UnRevealCard: Ismeretlen Kártya
+  UnRevealExhibit: Ismeretlen Kiállítási Tárgy
+  LockExhibit: Elzárt Kiállítási Tárgy
+  ExhibitType:
+    T1: Kincsek
+    T2: Csillámló
+    T3: Ritka
+    T4: Különleges
+    T5: Közönséges
+    T6: Bolti
+    T7: Esemény & Más
+    T8: Végső Szín
+  AchievementCount: Elért Teljesítmények
+  All: Minden
+  Hidden: Rejtett
+  Unlock: Megszerezve
+  NotUnlock: Nincs Megszerezve
+  TextFilterHint: Szűrő Szöveg
+Lifetime:
+  OldDataHint: A v1.3.15 frissítés előtt, az összes karakterrel játszott idő egyben
+    volt mérve, nem külön-külön.
+  Title: Élethosszú Adatok
+  HighestBp: Legmagasabb Pontszám <sprite="Point" name="Point">
+  TotalBp: Összes Kék Pont <sprite="Point" name="Point">
+  Time: Játékidő
+  Game: Összes Futam
+  Win: Megoldott Problémák
+  Perfect: Tökéletesen Megoldott Problémák
+  Puzzle: Kérések
+  OldData: Régi Verziós Adatok <sprite="TextIcon" name="Info">
+  NoData: Nincs Rögzített Adat
+  NoDataHint: A v1.3.15 frissítés előtt ez az adat nem volt követve.
+Setting:
+  AudioMaster: Fő Hangerő
+  LostFocusMute: Némítás ha Nincs Előtérben
+  TurboModeDescription: "A csataanimációk {0}x gyorsabban játszódnak le.\nCsak a karakter\
+    \ és danmaku animációk gyorsaságára hat, a kezelőfelület gyorsaságára nem."
+  KeywordDescription: "Ha |Rövidre| van állítva, akkor a gyakori kulcsszavak és mechanikák\
+    \ segítségeinek leírásai nem fognak megjelenni.\n|r:Gyakorlott játékosok számára\
+    \ ajánlott.|\n|d:(Gyakori kulcsszavak és mechanikák közé tartozik a ||Tűzerő||d:,|\
+    \ |Lélek||d:,| |Gát||d:,| |Kitérés||d:,| |Pontos||d:,| |Gondolkodó Manája||d:,|\
+    \ |Fejlesztés||d:,| |Képességek| |d:és| |Összetett Költség||d:.)|"
+  TooltipSizeDescription: "Beállítja a kártyák, Kiállítási tárgyak és támadási szándékok\
+    \ sebzés, stb. segítségeit.\nAz alapbeállítás az \"Kicsi\", de érdemes \"Nagy\"\
+    -ra állítani ha alacsony felbontáson játszol."
+  ShowCardOrderDescription: "Mutassa-e a számszerinti sorrendet az adott halom kártyái\
+    \ közt.\n\nCsak azokra a halmokra hat amelyek valódi sorrendben megnézhetőek.\
+    \ (alapértelmezetten: A könyvtár, eldobott és száműzött halmok).\nA húzó és eldobott\
+    \ halmok esetén a legfelső és legalsó kártyák is kiemelésre kerülnek.\n\nBe lehet\
+    \ kapcsolni az \"Ellenfél Sorrendjének Mutatása\" gombbal."
+  Main: Általános
+  Preference: Játékmenet
+  Key: Irányítások
+  ResetDefault: Alapértelmezett
+  Resolution: Felbontás
+  RefreshRate: Képfrissítési Sebesség
+  VideoQuality: Minőség
+  RenderScale: Felbontási Skálázás
+  FullScreen: Teljes Képernyő
+  Vsync: Vertikális Szinkron (VSync)
+  ScreenVibration: Képernyőrezgés
+  Language: Nyelv
+  AudioBgm: Háttérzene Hangereje
+  AudioUi: Kezelőfelület Hangereje
+  AudioSfx: Hanghatások Hangereje
+  RecommendVolume: Visszaállítás
+  TurboMode: Turbó Mód
+  TurboPlaying: Animációs Sebesség {0}x
+  Keyword: Kulcsszavak
+  Detailed: Részletes
+  Brief: Rövid
+  DontShow: Kikapcsolt
+  Illustrator: Illusztráció Készítője
+  IllustratorDescription: Mutassa e a kártya az illusztrációjának készítőjét.
+  TooltipSize: Segítségek Mérete
+  Large: Nagy
+  Small: Kicsi
+  Show: Mutat
+  Hide: Elrejt
+  AnimatingEnvironment: Animált Környezet
+  AnimatingEnvironmentDescription: A játék megjeleníti a mozgó háttereket csata közben
+    és Yukari Résében.
+  SingleEnemyAutoSelectDescription: Autómaikusan kiválassza-e a kártya célpontját
+    ha csak egy ellenfél van életben.
+  ShowShortcutDescription: Mutassa-e a gyorsgombokat a kézben lévő kártyákhoz.
+  ShowShortcut: Kéz Gyorsgomb Mutatása
+  SingleEnemyAutoSelect: Egyetlen Ellenfél Autómata Kiválasztás
+  ShowCardOrder: Kártyasorrend Mutatása
+  ShowReload: Újrakezdések Számának Mutatása
+  ShowReloadDescription: Mutassa-e hogy hányszor lett újrakezdve ez a futam, valamint
+    hogy a véletlenszerűségeket előre tudhatóak-e amíg a térképet mutatja.
+  Shake: Képernyőrángás
+  ShakeDescription: Kapcsoló a megsebesülés után lévő képernyő rezgésre.
+  Enable: Bekapcsol
+  Disable: Kikapcsol
+  XCostWarning: X Költség Riasztás
+StatusEffectType:
+  Positive: Erősítés
+  Negative: Gyengítés
+  Special: Speciális
+Tooltip:
+  Character:
+    Description: Ez a karakter amivel játszol.
+    Name: '{0}'
+  Money:
+    Description: Takane Boltjában el tudod költeni csecsebecsékre
+    Name: 'Pénz: {0}'
+  FinalStage:
+    Description: Már majdnem elérted a végét. Meg ne állj!
+    Name: Végső Szín
+  DrawZone:
+    Description: "A húzó lépésed közben: húzol {0} kártyát a húzó halomból. |d:(A\
+      \ Húzó lépésed minden forduló legelején, a forduló elején aktiválódó hatások\
+      \ előtt történik.)|\nHa a Húzó halmod üres, akkor az eldobott halomból keverődnek\
+      \ be kártyák a húzó halmodba.\n\nKattints hogy lásd milyen kártyák maradtak\
+      \ a húzó halmodban. |Ez nem mutatja meg a benne lévő kártyák sorrendjét|."
+    Name: Húzó halom
+  BaseMana:
+    Description: "A fordulók legelején a |manabázisban| lévő manával egyenlő manát\
+      \ kapsz.\nA |manabázis| mérete bővíthető |Csillámló Kiállítási Tárgyak| gyűjtésével.\n\
+      \nA |manabázisod| hat arra hogy milyen kártyákat tudsz találni."
+    Name: Manabázis
+  BattleMana:
+    Description: "Az elhasználatlan mana itt jelenik meg.\nManára van szükséged hogy\
+      \ eljátsz kártyákat és kifizesd az |X| árukat.\n\nKattints egy mana ikonra a\
+      \ tárcádban hogy \"kiemeld\", ezzel elsőnek ezt költve el az |X| ár kifizetéséhez.\n\
+      Kattints a kiemelt manára, hogy visszatedd a tárcába."
+    Name: Manatárca
+  Hp:
+    Name: 'Élet: {0}'
+    Description: Amikor az életed eléri a 0-t, |r:elveszted a játékot|.
+  Stage:
+    Name: '{0}. Szín'
+    Description: Győzd le a Főellenséget a térkép végén hogy befejezd a Színt.
+  Level:
+    Name: '{0}. Szint'
+    Description: Az előrehaladásod a jelenlegi Színben.
+  DifficultyEasy:
+    Name: 'Nehézség: Könnyű'
+    Description: "Minden futamot Kaguya egyik |Kincsével| kezded.\n|r:Nem tudod| elérni\
+      \ a végső Színt."
+  DifficultyNormal:
+    Name: 'Nehézség: Normál'
+    Description: A mérvadó nehézség
+  DifficultyHard:
+    Name: 'Nehézség: Kemény'
+    Description: Az ellenfeleknek több életük van és keményebben ütnek.
+  DifficultyLunatic:
+    Name: 'Nehézség: Holdkóros'
+    Description: Az ellenfelek izmosabbak, nem fogják vissza magukat és van egy pár
+      új mozdulatuk amit szeretnének megmutatni.
+  DiscardZone:
+    Name: Eldob
+    Description: "Akármikor el dobsz egy kártyát, itt köt ki.\nA forduló végén. az\
+      \ el nem használt kártyáid is itt végzik. |d:(Anélkül hogy aktiválnák az eldobó\
+      \ hatásokat)|.\n\nKattints hogy lásd milyen kártyák vannak az Eldobottak közt."
+  ExileZone:
+    Name: Száműz
+    Description: "A |Száműzött| kártyák itt lyukadnak ki.\nKattints hogy ebben a csatában\
+      \ milyen kártyák kerültek |Száműzetésre|."
+  EndTurn:
+    Name: Forduló Vége
+    Description: "Kattints hogy befejezd a fordulódat.\n\nEldobod a kezedben lévő\
+      \ lapokat |d:(Anélkül hogy aktiválódnának az eldobó hatásaik)|.\nMinden ellenfél\
+      \ úgy viselkedik ahogy ő |Szándékozik|. végül húzol {0} kártyát és kezdődik\
+      \ a következő fordulód."
+  GameSeed:
+    Name: Seed
+    Description: "Minden futam véletéeszerű Seed-et használ. Két futam ugyanazzal\
+      \ a Seed-del meg fog egyezni.\n\nKattints hogy kimásold a Seed-et a vágólapra."
+  EntityTitle:
+    Character: ' Egyedi'
+    Neutral: Semleges
+    White: Fehér
+    Blue: Kék
+    Black: Fekete
+    Red: Piros
+    Green: Zöld
+    Colorless: Színtelen
+    MultiColor: Többszínű
+  UsTitle: '{0} "{1}"'
+  DetailedHint:
+    Name: Részletes Javaslatok
+    Description: "Megjelenít minden javaslatot.\nEz az első pakliépítő játék amivel\
+      \ játszok..."
+  BriefHint:
+    Name: Rövid Javaslatok
+    Description: "Csak a játék egyedi mechanikáihoz lényeges információkat jeleníti\
+      \ meg.\nMár játszottam hasonló játékkal, mint például Slay the Spire"
+  DontShowHint:
+    Name: Javaslatok Nélkül
+    Description: "Nem jelenít meg semilyen javaslatot.\nMár játszottam ezzel a játékkal."
+BattleHint:
+  DontShow: Rejtse el a Javaslatokat
+  BasicBattle: "Játsz ki kártyákat a kezedből hogy kiűzd az ellenséget!\nA kártyák\
+    \ amiket kijátszol az eldobott halomra kerülnek. A játékos fordulójának végén\
+    \ azok a kártyák, amelyek kézben maradtak, is az eldobott halomra kerülnek.\n\
+    Új kártyák fognak húzódni a húzó halomból a játékos következő fordulója legelején."
+  Mana: "Jobb klikkelj a kártyára hogy megnézd a részleteit. (Ez nagyon sok máshol\
+    \ is működik a játékban.)\nA kártyák kijátszása manába kerül. A kártyák értéke\
+    \ a jobb felső sarkukban található.\n7 féle mana lehet a bázisban: Színes mana\
+    \ <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"G\">, Színtelen mana <sprite=\"ManaSprite\" name=\"C\"> és Többszínű\
+    \ <sprite=\"ManaSprite\" name=\"P\"> amely egyszerre bármely manát helyettesítheti.\n\
+    Általános értékeket, mint <sprite=\"ManaSprite\" name=\"2\"> bármely 2 manával\
+    \ ki lehet fizetni."
+  ManaPanel: "A mana panel mutatja mennyi mana van még hátra a tárcában.\nEgy manára\
+    \ bal klikkelve ki tudod \"emelni\". A kiemelt mana minden más mana előtt lesz\
+    \ elköltve.\nJobb klikkelj egy manára hogy az olyan színű összes manát kiemeld.\n\
+    A mana visszatöltődik a játékos fordulója legelején."
+  Intro: "Üdvözlünk a Hold-Fővárosi Expon! Tegyél bele mindent hogy megtaláld a Legendák\
+    \ Elveszett Ágát!\nHa már játszottál más pakliépítős játékkal ezelőtt, akkor nyugodtan\
+    \ kiválaszthatod a |Rövid Javaslatok| opciót, hogy csak azok az információk jelenjenek\
+    \ meg, amelyek a játék egyedi mechanikáival kapcsolatosak.\nA későbbi Játékmenetbeli\
+    \ javaslatok is fogják követni ezt a kedvezést. Bármikor megváltoztathatod a döntésed\
+    \ a beállítások közt."
+  BlockShield: "Mielőtt megsebesülnél, játssz egy védelem kártyát hogy kapj |Blokkolást|\
+    \ és |s:Gátat|.\n|Blokkolás| és |s:Gát| lecsökkenti a kiosztott sebzést.\nA |Blokkolás|\
+    \ eltűnik a játékos fordulójának kezdete előtt, de a |s:Gát| nem."
+  UltimateSkill: "Játszd el a Varázskártyád hogy megfordítsd a harc kimenetelét!\n\
+    A Varázskártyád használata feléli a teljes erőmércét. Legyőzött ellenfelek dobnak\
+    \ <sprite=\"Point\" name=\"Power\"> pontokat, melyek visszatöltik az erőt amit\
+    \ el tudsz használni Varázskártyára.\nVarázskártyákat csak egyszer tudsz használni\
+    \ fordulónként."
+  Detailed: Mutassa a Részletes Javaslatokat
+  Brief: Mutassa a Rövid Javaslatokat
+  Prev: Előző
+  Next: Következő
+  Intention: "Az ellenfél szándéka meg van jelenítve felette.\nAz ellenfeleknek lehet\
+    \ támadó, védekező, kisegítő/erősítő szándéka, vagy esetleg kijátszhatnak egy\
+    \ Varázskártyát."
+MessageDialog:
+  EarlyAccess: "|Touhou: Lost Branch of Legend| az jelenleg |d:Korai Hozzáférésben|\
+    \ elérhető.\nBármit megváltozhatunk a közeljövőben.\nJelenleg |g:Koishin| és |y:Alicen|\
+    \ dolgozunk.\nTöbb információért kérlek lesd meg a Steam hirdetményeinket.\n\n\
+    Ha bármilyen bugot, problémát észlelsz el tudsz érni bennünket a Steam Közösségünkön\
+    \ vagy a Discordon szerverünkön keresztül"
+  UnsavedWarning: Az utolsó mentési pont utáni előrehaladásod nem lesz elmentve.
+  XCostEmptyUsageWarning: Kijátszod a {0} kártyát anélkül hogy beállítanád a manáját?
+  ResetKeyBindingsWarning: Visszaállítod a billentyűzetgomb-kiosztást az eredeti beállításokra?
+  GameRunSaveDiscarded: Mivel a játék frissült, ezért a legutolsó futam el lett hagyva.
+  GameAbandonWarning: Elhagyod a jelenlegi futamod?
+  ReturnToMainMenu: Kilépsz a főmenübe?
+  QuitGame: Bezárod a játékot?
+  XCostEmptyUsageTips: Be tudod állítani hány manát szeretnél használni X költséges
+    kártyákhoz.
+  DontShowHintWarning: Kikapcsolod az összes játékbeli javaslatot?
+  ResetHintWarning: Visszaállítod a javaslatokat?
+  CloseBattleHint: Bezárod a javaslatokat?
+  SkipDialog: Átléped a párbeszédet?
+  GameRunSaveDiscardedSubText: Ez a játékos profilodra nem lesz hatással.
+  InvalidProfileName: Érvénytelen Profilnév
+  AlreadyInGameRun: Már Játékfutamban van
+  CannotStartGameRunWithoutProfile: Nem Lehet Indítani a Játékot, Futam Játékosprofil
+    Nélkül
+  CannotRestoreEndedGameRun: Nem Lehet Visszaállítani a Befejezett Játékfutamot
+  CorruptedSaveData: A Mentett adatok meghibásodtak
+  CorruptedGameRunSaveData: A Játékfutam meghibásodott
+  CannotReenterStation: Nem lehet belépni a szintre
+Credits:
+  Alioth: Alioth Studio
+  Yutopia: Művészeti Irány / VFX (Vizuális Hatások)
+  Jiejiezi: Karakter Grafika & Illusztráció
+  Alice: Dizájn / Programtervezés
+  Salyu: Programozás
+  MainPartners: Partnerek
+  DD: Kezelőfelület / Grafika
+  MW: Animáció
+  LuvChan: Dizájn
+  FK5: Programozás / Mozgás
+  NeetRudong: Esemény Grafika
+  SignalE: Zene
+  Zackary: Hang
+  Sana: Karakter Illusztáció
+  Kyu: Karakter & Jelenet Illusztráció
+  Zaochuan: Jelenet Illusztráció
+  Anima: Animáció
+  Illustrator: Kártya Illusztrátor
+  Thanks: Külön Köszönet
+  DG: Prototípus Értekezés
+  Jiong: Szervíz Segítség
+  Liya: VFX
+  Wuqiqi: 2D Grafika
+  Aeolian: VFX / Hang
+  UnuseArt: Nem Megjelenített Grafika
+  NoiseClub: Hang
+  English: Angol Lokalizáció
+  Russian: Orosz Lokalizáció
+  Polish: Lengyel Lokalizáció
+  French: Francia Lokalizáció
+  Korean: Kóreai Lokalizáció
+  Spanish: Spanyol Lokalizáció
+  Japanese: Japán Lokalizáció
+  TChinese: Hagyományos Kínai Lokalizáció
+  Portuguese: Portugál Lokalizáció
+  Turkish: Török Lokalizáció
+  Vietnamese: Vietnám Lokalizáció
+  Italian: Olasz Lokalizáció
+UI:
+  SpellTitled: '  {0} "{1}"'
+  Yes: Igen
+  No: Nem
+  On: Be
+  Off: Ki
+  Display: Mutat
+  Hide: Elrejt
+  Hiding: Rejtett
+  Confirm: Megerősít
+  Cancel: Elutasít
+  Return: Vissza
+  Close: Bezár
+  Take: Összegyűjt
+  Skip: Átlép
+  Setting: Beállítások
+  Exit: Kilép
+  ExitGame: Kilépés a Játékból
+  CopyHint: A Seed ki lett másolva a vágólapra.
+  SaveHint: Játék elmentve.
+  Numbers:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  Divide: ','
+  SideCloseHint: Kattints a bezáráshoz
+  SkipHint: '{0} a bezáráshoz'
+  SeRemove: '{0} Eltűnt'
+  SeAmulet: '{0} Ellenált'
+  SpellUntitled: '"{0}"'
+MainMenu:
+  Collection: Gyűjtemény
+  ComplexRules: Haladó Szabályok
+  Licenses: Licenszek
+  LastPlayed: Utóljára Játszott
+  NewGame: Új Futam
+  RestoreGame: Futam Folytatása
+  AbandonGame: Futam Eldobása
+  Setting: Beállítások
+  Database: Extrák
+  Characters: Karakterek
+  LifeData: Statisztika
+  History: Futamelőzmények
+  MusicRoom: Zeneszoba
+  Changelog: Változtatási Napló
+  Credits: Stáblista
+  ExitGame: Kilépés a Játékból
+  SelectProfile: Válassz egy Profilt
+  InputName: Írj be egy Nevet
+  DeleteProfile: Profil Törlése?
+  EmptyProfile: Üres Hely
+  DeleteYes: Törlés
+  DeleteNo: Mégse
+  EarlyAccess: KH Értesítés
+  StartDate: Kezdeti Dátum
+  PlayedTime: Játszott Idő
+StartGame:
+  FreeMode: Szabad Mód
+  FreeDescription: "Oldd meg a problémát a kedvenc karaktereiddel\nA legtöbb történet-beszéd\
+    \ ki van véve\nMinden \"Barátságos Találkozás\" elérhető"
+  IsLockHint: Ez a karakter Feloldási Szint {0} elérése után elérhető.
+  SelectAll: Mind Kijelölése
+  PuzzleHint: "Fogadj el Kéréseket hogy növeld a kék ponjaid és kutatási tapasztalatod.\n\
+    Feloldódik Feloldási Szint 4 után."
+  NotShowRandomResultDescription: "Megadhatod, hogy véletlenszerű eredmények jelenjenek\
+    \ meg az eseménybeállítások között, például kártyák, kiállítások stb. eredményeit.\n\
+    Ebben a játékban véletlenszerű eredmények előre elrendeltek, és a játék újraindítása\
+    \ után nem változnak.\n\n<color=#dd7473>Nem kell a segítségem? Hmf!"
+  CharacterUnset: Kérlek válassz egy karaktert
+  DifficultyTitle: Kérlek válassz egy nehézséget
+  Rate: Összetettség
+  Seed: Seed
+  SetSeed: Seed Megváltoztatása
+  InvalidSeed: Érvénytelen Seed
+  SetJadeBox: Jádedoboz Beállítása
+  JadeBoxLock: A Jádedoboz Feloldási Szint 10-től lesz elérhető.
+  JadeBoxSelectedCount: Kiválasztva {0}/{1}
+  NoClearHind: A Teljesítmények kikapcsolódnak, ha Seedet, vagy Jádedobozt használsz.
+  OpeningComic: Bevezető Megtekintése
+  StoryMode: Történet Mód
+  StoryDescription: "Oldd meg a problémát Reimu Hakureiel\nNéhány Színnek rögzített\
+    \ ellenfelei vannak\nNéhány \"Barátságos Találkozás\" tiltva van"
+  NoStoryMode: "Történet Mód még nem elérhető.\nKérlek várj türelemmel a jövőbeli\
+    \ frissítésekre."
+  NotReadyHint: "Ez a karakter még nincs kész.\nKérlek várj türelemmel a jövőbeli\
+    \ frissítésekre."
+  CheckDeck: Kezdő Pakli
+  SkillSpellCard: Varázskártya {0} <sprite="Point" name="Power">
+  SkillExhibit: Kezdő Kiállítási Tárgy
+  StartMoney: Kezdőtőke
+  StartHp: Kezdő Életerő
+  DifficultyHint: Ha még nem játszottál "Slay the Spire"-t, akkor javasolt könnyű
+    módban játszanod először.
+  ClearNormal: Teljesítve
+  ClearTrue: Tökéletesen Teljesítve
+  NeedClear: Az teljesítsd előző nehézséget hogy feloldd.
+  Puzzle: Kérések
+  Puzzles: '{0} kérés'
+  LockPuzzle: Érd el a Feloldási Szint {0}-t hogy kioldd.
+  ShowRandomResult: Fedd fel a Sorsod
+  NotShowRandomResult: Ismeretlen Sors
+  ShowRandomResultTitle: Fedd fel a Sorsod
+  NotShowRandomResultTitle: Ismeretlen Sors
+  ShowRandomResultDescription: "Megadhatod, hogy véletlenszerű eredmények jelenjenek\
+    \ meg az eseménybeállítások között, például kártyák, kiállítások stb. eredményeit.\n\
+    Ebben a játékban véletlenszerű eredmények előre elrendeltek, és a játék újraindítása\
+    \ után nem változnak.\n\n<color=#dd7473>Ohohhohó! Kóstolgasd az erőm!"
+GameResult:
+  Abandon: Otthagyva
+  ReturnHint: Kattints bárhova hogy visszatérj a főmenübe
+  Unlock: Új Tárgy Feloldva
+  UnlockHint: Újonnan feloldott Kiállítási Tárgyak és Kártyák fognak megjelenni ezentúl
+    a futamjaid során.
+Rarity:
+  Common: Közönséges
+  Uncommon: Különleges
+  Rare: Ritka
+  Shining: Csillámló
+  Mythic: Mítikusan Ritka
+CardType:
+  Attack: Támadás
+  Defense: Védekezés
+  Skill: Kézség
+  Ability: Képesség
+  Friend: Csapattárs
+  Tool: Eszköz
+  Status: Státusz
+  Misfortune: Szerencsétlenség
