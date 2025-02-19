@@ -2359,8 +2359,8 @@ PrismriverRed:
     |d:Debiut: Zyskaj {Value2} <sprite=\"Point\" name=\"Power\">.|"
 YouxiangMoon:
   Name: Piękności Natury
-  Description: "Na początku następnej tury {PlayerName:g} zyskaj {Mana}.\nDodaj |Letnie\
-    \ Kwiaty| do ręki."
+  Description: "Na początku następnej tury {PlayerName:g} zyskaj {Mana}.\nDodaj {Value1}\
+    \ |Letnie Kwiaty| do ręki."
 DizangLove:
   Description: "Gdy {PlayerName} zagra pospolitą kartą, zyskaj {Value1} |Tymczasowej\
     \ Mocy|.\n"
@@ -2399,6 +2399,10 @@ YinyangQueen:
   Name: Misumaru, Utalentowana Rzemieślniczka
   Description: '{FriendP}Zyskaj {Value2} |Bloku| oraz |Bariery|.'
   ExtraDescription1: "{FriendA}Dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego\
+    \ Smoka|' few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul\
+    \ Yin-Yang Tęczowego Smoka|'} do ręki."
+  ExtraDescription3: "{FriendU}Do końca walki, efekty wszystkich |Kul Yin-Yang| są\
+    \ podwojone. Natychmiast dodaj {Value1:plural one='% losową |Kulę Yin-Yang Tęczowego\
     \ Smoka|' few='% losowe |Kule Yin-Yang Tęczowego Smoka|' many='% losowych |Kul\
     \ Yin-Yang Tęczowego Smoka|'} do ręki."
 SanaeRice:
@@ -2552,15 +2556,20 @@ DayaojingFriend:
   Name: Daiyousei, Żwawa Asystentka
   UpgradedExtraDescription1: '{FriendA}Zyskaj {Block} |Bloku| oraz {Shield} |Bariery|.'
   FlavorText: Detektyw potrzebuje asystenta; nawet Cirno zna tą powszechną myśl.
+  ExtraDescription3: '{FriendU}Dodaj {Value1} |Letnie Kwiaty| do ręki.'
+  UpgradedExtraDescription3: '{FriendU}Dodaj {Value1} |Letnie Kwiaty+| do ręki.'
 MaidFriend:
   Name: Kasumi, Pokojówka Willi
-  ExtraDescription1: "{FirndA}Zadaj obrażenia natychmiast. Dodaj {Value2:plural one='%\
+  ExtraDescription1: "{FriendA}Zadaj obrażenia natychmiast. Dodaj {Value2:plural one='%\
     \ |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów do\
     \ Rzucania|} do ręki."
   Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'} wrogowi z najmniej życiem."
+    \ many='% obrażeń'} wrogowi, który ma najmniej życia."
   FlavorText: Ze wszystkich wróżek pokojówek w Willi Szkarłatnego Diabła, Kasumi już
     jest najbardziej poważną w jej pracy.
+  ExtraDescription3: "{FriendU}Zadaj obrażenia natychmiast. Wszystkie {SelfName} zadają\
+    \ {Value1:plural one='% dodatkowe obrażenie' few='% dodatkowe obrażenia' many='%\
+    \ dodatkowych obrażeń'}."
 MojingShanjie:
   Name: Granica Egzorcyzmu
   Description: Wybierz 1 z {Value1} losowych kart obrony aby dodać do ręki. Ona |Tymczasowo
@@ -2580,18 +2589,22 @@ LarvaFriend:
   ExtraDescription1: '{FriendA}|Ulepsz| wszystkie karty w dłoni.'
   Name: Larva, Bogini Wiecznej Nocy
   FlavorText: Pamiętaj, aby umyć ręce po uścisku dłoni z nią.
+  ExtraDescription3: '{FriendU}Nałóż {Value2} |Trucizny| na wszystkich wrogów. Aktywuj
+    efekt tracenia zdrowia od |Trucizny| jeden raz.'
 LeidiFriend:
   Name: Letty, Wcielenie Zimy
   Description: '{FriendP}Nałóż |Chłód| na losowego wroga.'
   FlavorText: Nadciąga zima. Zima przybyła. Po raz kolejny, walka z zimą. Zima powróciła.
   ExtraDescription3: "{FriendU}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń} oraz nałóż |Cold| na wszystkich wrogów."
+    \ many='% obrażeń'} oraz nałóż |Cold| na wszystkich wrogów."
 LilyFriend:
   Name: Lily White, Herold Wiosny
   Description: "{FriendS}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\n\
     {FriendP}Zyskaj {TurnMana}."
   ExtraDescription1: '{FriendA}Zyskaj {ActiveMana}.'
+  ExtraDescription3: "{FriendU}Ulecz {Heal:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia."
 InstantFreeze:
   ExtraDescription1: "Nałóż |Chłód| na wszystkich wrogów.\nZakończ turę {PlayerName:g}.\
     \ Wtem, zacznij dodatkową turę.\n|d:Ograniczenie Czasowe {Mana}.|"
@@ -2614,6 +2627,8 @@ LunaFriend:
   Description: '{FriendP}Zyskaj {Block} |Bloku|.'
   Name: Luna, Ciche Światło Księżyca
   FlavorText: Badaj w ukryciu, bez robienia dźwięków.
+  ExtraDescription3: "{FriendU}Zyskaj |Nieskazitelny Jedwab| na {Value1:plural one='%\
+    \ turę' few='% tury' many='% tur'}."
 PlayWithWaste:
   Description: "Wybierz 1 z {Value1} nierzadkich kart |Narzędzi| aby dodać do ręki.\n\
     Jest traktowana jako |Kopia| oraz ma |Ograniczony【1】|."
@@ -2623,12 +2638,17 @@ StarFriend:
     \ many='% obrażeń'} wszystkim wrogom."
   Name: Star, Spływające Światło Gwiazd
   ExtraDescription1: '{FriendA}Natychmiast zadaj obrażenia {Value1} razy.'
+  ExtraDescription3: "{FriendU}Gdy dowolna {SelfName} zada obrażenia, nałóż {Light:plural\
+    \ one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|'}.\nNatychmiast zadaj\
+    \ obrażenia {Value2} raz{Value2:plural one='' other='y'}."
 SunnyFriend:
   Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} losowemu wrogowi {Value1:plural one='% raz' other='% razy'}."
   Name: Sunny, Załamane Światło Słoneczne
   ExtraDescription1: "{FriendA}Zyskaj |Kamuflaż Optyczny| na {Light:plural one='%\
     \ turę' few='% tury' many='% tur'}."
+  ExtraDescription3: "{FriendU}Natychmiast zadaj obrażenia {Value1} raz{Value1:plural\
+    \ one='' other='y'}.\nZyskaj {Value2} |Mocy|."
 Xiguadao:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ losowemu wrogowi {Value1:plural one='% raz' other='% razy'}.\nZyskaj {Value2}\
@@ -2640,7 +2660,7 @@ ClownpieceFriend:
     \ many='% kart'} i dodaj |Szaleństwo| do stosu zrzutek."
   Description: "{FriendS}Zyskaj {StartMana}.\n{FriendP}Zyskaj {Value2} |Tymczasowej\
     \ Mocy|."
-  ExtraDescription2: '{FriendU}Zyskaj {Mana} i dodaj |Szaleństwo| do stosu zrzutek.'
+  ExtraDescription2: '{FriendA2}Zyskaj {Mana} i dodaj |Szaleństwo| do stosu zrzutek.'
   Name: Clownpiece, Obłąkana Wróżka
   UpgradedExtraDescription1: "{FriendA}Dobierz {Value1:plural one='% kartę' few='%\
     \ karty' many='% kart'}."
@@ -2696,6 +2716,8 @@ YukariFriend:
     ({Fire})'
   ExtraDescription1: '{FriendA}Wybierz |Wygnaną| kartę i zwróć ją do ręki.'
   DetailText: "{SelfName} nie może zostać utworzona przez efekt |u:Ultimate'a|."
+  ExtraDescription3: '{FriendU}Na początku tury {PlayerName} dodaj losową trójkolorową
+    neutralną kartę do ręki. |Tymczasowo kosztuje| ona {Mana} oraz ma |Eteryczność|.'
 LarvaCure:
   Description: "Usuń |Truciznę| {PlayerName:g}\n|Ograniczenie【{DeckCounter}】|"
   Name: Antidotum
@@ -2773,16 +2795,18 @@ MeilingFriend:
 
     {FriendP}Dodaj |Sztylet do Rzucania| do ręki.
 
-    Gdy {PlayerName} otrzyma całe obrażenia od ataku wroga, jest to aktywowane dodatkowy
-    raz.'
+    Gdy {PlayerName} otrzyma pełne obrażenia od ataku wroga, ten efekt jest aktywowany
+    dodatkowy raz.'
   Name: Meiling, Niedbała Strażniczka
+  ExtraDescription3: "{FriendU}Ulecz {Value1:plural one='% punkt' few='% punkty' many='%\
+    \ punktów'} życia oraz zyskaj {Value2} |Mocy|."
 PatchouliFriend:
   Name: Patchouli, Alchemistka Żywiołów
   Description: "{FriendP}Zamień {PassiveColor:plural one='% losową manę' few='% losowe\
     \ many' many='% losowych man'} w |Manę Filozoficzną|."
   ExtraDescription1: '{FriendA}Zyskaj {Value1} |Mocy| i |Uduchowienia|. Zyskaj {Power}
     <sprite="Point" name="Power">.'
-  ExtraDescription2: "{FriendU}Dodaj {Value2:plural one='|% Niestabilną Miksturę|'\
+  ExtraDescription2: "{FriendA2}Dodaj {Value2:plural one='|% Niestabilną Miksturę|'\
     \ few='|% Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do ręki."
   FlavorText: '"Wstrząs, wstrząs, chwiej, wstrząs."'
 FlowerGone:
