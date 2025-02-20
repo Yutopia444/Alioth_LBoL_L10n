@@ -123,7 +123,7 @@ TwoBalls:
   Name: 均衡の玉
   Description: '|陰陽玉|を{Value1}枚手札に加える。'
   FlavorText: 陰と陽は万物の根源である太極から生じた二極である。
-  UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\nそれらの|臨時コスト|を{Mana}減らす。"
+  UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\n{Value1:plural one='それ' other='それら'}の|臨時コスト|を{Mana}減らす。"
 MingzhuAntou:
   Name: 明珠暗投
   Description: "敵全体に{Damage}ダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
@@ -1668,7 +1668,7 @@ FreezeToIce:
   UpgradedDescription: 手札、山札、捨て札から最大{Value1}枚のカードを|廃棄|する。|廃棄|した数と同数の|氷の翼|を山札に加える。
 FruitShake:
   Name: フルーツクラッシュアイス
-  Description: "敵全体に{Damage}ダメージを与える。\n命中した場合、|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストを{Mana}にする。"
+  Description: "敵全体に{Damage}ダメージを与える。\n命中した場合、|冷気|を与える。\nこのターン中に|パートナー|を召喚した場合、{SelfName}のコストは{Mana}。"
   FlavorText: トロピカルでフルーティな味わい！ひんやり爽やか超おいしい！
 FairyTeam:
   Name: 妖精大戦争
@@ -2325,7 +2325,8 @@ PassionVulnerable:
   Name: 眠れぬ夜
   Description: "|熱情|状態なら敵全体に|弱体|{Value1}を与える。\nそうでない場合、|熱情|に入る。"
 PeaceEndTurn:
-  UpgradedDescription: "捨て札のカードを最大{Value1}枚選んで手札に加え、それらをそのターン|保留|する。\n|平静|に入る。\n{PlayerName}のターンを終了する。"
+  UpgradedDescription: "捨て札のカードを最大{Value1}枚選んで手札に加え、{Value1:plural one='それ' other='それら'}をそのターン|保留|する。\n\
+    |平静|に入る。\n{PlayerName}のターンを終了する。"
   Name: 一時の平穏
   Description: "|平静|に入る。\n{PlayerName}のターンを終了する。"
 MoodChangeBlock:
