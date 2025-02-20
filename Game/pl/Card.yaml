@@ -81,7 +81,9 @@ Jinfuzhen:
     jak się wydaje.
 JingshenYishi:
   Name: Oczyszczający Rytuał
-  Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| kartę z ręki."
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Zyskaj {Value2:plural one='% |Boską Przychylność|' few='% |Boskie Przychylności|'\
+    \ many='% |Boskich Przychylności|'}."
 YinyangBaoyu:
   Name: Kula Dualizmu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -2038,9 +2040,8 @@ ReimuFestival:
     \ zyskaj {Value1} |Tymczasowej Mocy|."
   FlavorText: Najnowsza atrakcja w Świątyni Hakurei jest zaskakująco popularna.
 ReimuDrink:
-  Description: "Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\nDodaj {Value2:plural one='|Nietrzeźwość|' other='% |Nietrzeźwości|'}\
-    \ do ręki."
+  Description: "Zyskaj {Value1:plural one='% |Boską Przychylność|' few='% |Boskie\
+    \ Przychylności|' many='% |Boskich Przychylności|'}."
   Name: Omiki
 ReimuShrine:
   Description: 'Zyskaj {Value1} |Tymczasowego Uduchowienia|.
@@ -2050,7 +2051,8 @@ ReimuShrine:
   FlavorText: '"Hakurei Temple Fair" jest visual novelowym symulatorem randkowania/wychowywania
     z elementami zarządzania, zawierający gameplay strzelanek trzecio-osobowym.'
 SuikaOut:
-  Description: "Wybierz kartę w dłoni, aby |Wygnać|.\nZyskaj {Value1} |Odparcia|."
+  Description: "Wybierz kartę w dłoni, aby |Wygnać|.\nZyskaj {Value1:plural one='%\
+    \ |Odparcie|' few='% |Odparcia|' many='% |Odparć|}."
   Name: Oczyszczający Egzorcyzm
   FlavorText: Wydaje się nieefektywne przeciw wrogom z 999 Mocy.
 ReimuFreeAttack:
@@ -2817,14 +2819,15 @@ TriggerAllPassive:
   Name: Aktywacja Biernych
   Description: (WIP)
 ReimuHuashan:
-  ExtraDescription1: "|Wygnaj| kartę w dłoni. Zyskaj {Value2} <sprite=\"Point\" name=\"\
-    Power\">.\n|d:Jeśli Wygnana w ten sposób karta była kartą Zdolności, zyskaj {Value1}\
-    \ maksymalnego życia. (Aktywowane tylko raz na walkę)|"
+  ExtraDescription1: "Na początku następnej walki, |Wygnaj| {SelfName} i zyskaj {Value1}\
+    \ |Mocy|.\nTylko pierwsze {SelfName} aktywuje swój efekt w walce. (Miało już to\
+    \ miejsce)"
   Name: Otrzymanie Wskazówki
-  Description: "|Wygnaj| kartę w dłoni. Zyskaj {Value2} <sprite=\"Point\" name=\"\
-    Power\">.\nJeśli |Wygnana| w ten sposób karta była kartą |Zdolności|, zyskaj {Value1}\
-    \ maksymalnego życia. (Aktywowane tylko raz na walkę)"
+  Description: "Na początku następnej walki, |Wygnaj| {SelfName} i zyskaj {Value1}\
+    \ |Mocy|.\nTylko pierwsze {SelfName} aktywuje swój efekt w walce."
   FlavorText: '"Okej, dobra, wygrywasz."'
+  DetailText: Tylko {SelfName} z Biblioteki może przenieść swój efekt na następną
+    walkę.
 SacrificeDoll:
   Description: "Wybierz Kukiełkę do |Odejścia|.\nZadaj {Damage:plural one='% obrażenie'\
     \ few='% obrażenia' many='% obrażeń'} wszystkim wrogom."
@@ -3203,7 +3206,7 @@ DefaultPeace:
   Name: Zakochane Czernie
   Description: "Zyskaj {Block} |Bloku|.\nWejdź w stan |Uspokojenia|."
 InspirationCard:
-  Name: Inspiracja
+  Name: Eureka!
   Description: "|Gdy {SelfName} wejdzie do ręki|: Przetransformuj ją w |e:Kartę Inspiracji|\
     \ o losowym kolorze, aktywuj jej efekty, i wygnaj ją.\nPodczas kroku doboru, {SelfName}\
     \ ma |Dopełnienie|."
@@ -3246,3 +3249,13 @@ KokoroFriend:
   ExtraDescription1: '{FriendA}Wejdź w stan |Pasji|.'
   ExtraDescription2: '{FriendA2}Wejdź w stan |Uspokojenia|.'
   ExtraDescription3: '{FriendU}Wejdź w stan |Olśnienia|.'
+ReimuGrace:
+  Name: Opatrzność Hakurei
+  Description: "Zyskaj {Value1:plural one='% |Boską Przychylność|' few='% |Boskie\
+    \ Przychylności|' many='% |Boskich Przychylności|'}.\nNa początku tury {PlayerName:g},\
+    \ zyskaj {Value1:plural one='% |Boską Przychylność|' few='% |Boskie Przychylności|'\
+    \ many='% |Boskich Przychylności|'}."
+ReimuEvilTerminator:
+  Name: Mistrzyni Eksterminacji
+  Description: "Za każdym razem, gdy wróg zostanie pokonany, zyskaj {Mana}.\nZyskaj\
+    \ {Value1:plural one='% |Odparcie|' few='% |Odparcia|' many='% |Odparć|}."
