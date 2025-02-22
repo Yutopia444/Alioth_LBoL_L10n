@@ -8,7 +8,7 @@ ReimuAttackW:
   FlavorText: 眼を閉じながらでも打てるように設計された弾幕。
 DoubleJiejie:
   Name: 二重結界
-  Description: "{Damage}ダメージを与える。\n{PlayerName}に|バリア|がある時、ダメージを2回与える。"
+  Description: "{Damage}ダメージを与える。\n{PlayerName}に|バリア|をある場合、ダメージを{Value1}回与える。"
   FlavorText: 鏡を2面用意するだけで、無限に循環された世界が見れる。
 Shenyuzha:
   Name: 神域札
@@ -37,7 +37,7 @@ LingfuHuti:
   FlavorText: シールドを付与してターンを終える。
 Jinfuzhen:
   Name: 緊縛陣
-  Description: "{Damage}ダメージを与える。\n{PlayerName}に|バリア|がある時、|弱体|{Value1}を与える。"
+  Description: "{Damage}ダメージを与える。\n{PlayerName}に|バリア|をある場合、|弱体|{Value1}を与える。"
   FlavorText: 逃げようとさえしなければ、実は見かけほど強力な効果は無い。
 JingshenYishi:
   Name: 清めの儀式
@@ -49,7 +49,7 @@ YinyangBaoyu:
 ReimuWeiyan:
   Description: 敵全体に|脱力|{Value1}を与える。
   Name: 真のカリスマ
-  FlavorText: 贋作は家で紅茶を飲んでいる。
+  FlavorText: 偽者は家で紅茶を飲んでいる。
 ZhujiThreeGod:
   Name: 住吉三神
   Description: "カードを{Value1}枚引く。\n引いた攻撃カード1枚につき|臨時火力|{Value2}を得る。\n引いた防御カード1枚につき|臨時霊力|{Value2}を得る。"
@@ -123,7 +123,7 @@ TwoBalls:
   Name: 均衡の玉
   Description: '|陰陽玉|を{Value1}枚手札に加える。'
   FlavorText: 陰と陽は万物の根源である太極から生じた二極である。
-  UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\n{Value1:plural one='それ' other='それら'}の|臨時コスト|を{Mana}減らす。"
+  UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\nそれらの|臨時コスト|を{Mana}減らす。"
 MingzhuAntou:
   Name: 明珠暗投
   Description: "敵全体に{Damage}ダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
@@ -280,14 +280,14 @@ RedLaser:
   UpgradedDescription: '{Damage}ダメージを{AttackTimes}回与える。
 
     |弱体|{Value1}を与える。'
-  FlavorText: 冬に来る異変への対抗札。その一つ。
+  FlavorText: 冬に来る異変への対抗策の一つ。
 SatelliteIllusion:
   Name: サテライトイリュージョン
   Description: "{Damage}ダメージを与える。\n|星占い|を{Value1}枚手札に加える。"
 DropBook:
   Name: 逆張り
   Description: "{Block}|ブロック|を得る。\n|星占い|を{Value1}枚手札に加える。"
-  FlavorText: 「伝統の魔法とやらに興味なんて無いわ、だからもう来ないで！」
+  FlavorText: 「伝統の魔法とやらに興味なんて無い、だからもう来ないでくれ！」
 MarisaDraw:
   Name: 臨機応変
   Description: "カード{Value1}枚を引く。\n{PlayerName}が|バースト|状態の時、{Mana}を得る。"
@@ -973,7 +973,7 @@ SakuyaTea:
   Name: ティータイム
   ExtraDescription1: "カードを {Value1} 枚引く。\n|d:初見：ライフを {Value2} 回復し、戦闘終了までこのカードのコストを{Mana}減らす。|"
   Description: "カードを{Value1}枚引く。\n|初見|：ライフを{Value2}回復し、戦闘終了までこのカードのコストを{Mana}減らす。"
-  FlavorText: 一煎目の苦いお茶は健康に良いである。
+  FlavorText: 一煎目のお茶は苦いが、健康に良い。
 SakuyaShop:
   Description: "{Mana}を得る。\nカードを{Value1}枚引く。"
   Name: 物資の購入
@@ -2540,6 +2540,7 @@ KoishiPotential:
   Name: 潜在能力解放
   FlavorText: 脳を25%しか使ってない。
   Description: 山札の上から{Value1}枚のカードを見て1枚選ぶ。そのカードを二回使用した後|廃棄|する。
+  DetailText: '|禁止|を持つカードを選択してもそのカードは使用できず、|廃棄|されない。'
 CommonFire:
   Name: 弱者の力
   Description: "コモンカードを使用する度、{PlayerName}は|臨時火力|{Value1}を得る。\n"
@@ -2561,3 +2562,4 @@ SelfControl:
 KoishiPlayDiscard:
   Description: "捨て札から{Value1}枚までのカードを選び、それらを追加使用する。\n使用した|追撃|を持たないカードを|廃棄|する。"
   Name: 嫌われ者のフィロソフィ
+  DetailText: '|禁止|を持つカードを選択してもそのカードは使用できず、|廃棄|されない。'
