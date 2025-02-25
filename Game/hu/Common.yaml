@@ -66,7 +66,7 @@ Ultimate:
 Explain:
   Title: Megjegyzés
   LoseShinning: Mindig tudsz találni kizárólagosan a játszott karakterhez tartozó
-    kártyákat, még akkor is ha elveszted a |Csillámló Kiállítási Tárgyukat|.
+    kártyákat, még akkor is ha elveszted a |Ragyogó Kiállítási Tárgyukat|.
   RemiliaMeet: "1. Kicseréli a kártyákat ugyanolyan értékűvel.\n2. A kártya felminősített\
     \ változatát megtartja mikor kicseréli."
   PowerDescription: "Egy Varázskártya felhasználja a teljes erőmétert.\n(A karakterportré\
@@ -76,9 +76,31 @@ Explain:
     \ kártyákra."
   SaveWhenSelect: A választás azonnal elmenti az előrehaladást.
   Power: Erő<sprite="Point" name="Power">
-  RollCard: "Felfedezhető Kártyák Kártyajutalmakon Keresztül\n\nCsak akkor tudsz kártyákat\
-    \ találni, ha megfelelnek az alábbi kritériumoknak:\n 1: A kártya manaköltsége\
-    \ kifizethető a |manatárcában| lévő manával.\n 2: Ha egy Egyedi"
+  RollCard: "|Felfedezhető Kártyák Kártyajutalmakon Keresztül|\n\nCsak akkor tudsz\
+    \ kártyákat találni, ha megfelelnek az alábbi kritériumoknak:\n 1: A kártya manaköltsége\
+    \ kifizethető a |manatárcában| lévő manával.\n 2: Ha ez egy Egyedi kártya, akkor\
+    \ csak akkor található meg, ha a megfelelő karakterként játszol, vagy ha a kezedben\
+    \ van az ő |Ragyogó Kiállítási Tárgya|.\n 3: A kártya minden Manája megtalálható\
+    \ a |Mana Bázisában|. A Filozófus Manája nem számít bele ebbe a szabályba.\n\n\
+    Tegyük fel például, hogy Reimuként játszol, és van nálad: |Sötét Varázskönyv|,\
+    \ |Bölcsek köve| és |Csodakalapács|. |d:(Elcserélted a Ragyogó Kiállítási Tárgyad\
+    \ Eirinnél...)|\nA |Mana Bázis| : <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"><sprite.\"=\"ManaSprite\" name=\"C\"> Reimu és Marisa Egyedi kártyáit találhatod\
+    \ meg, mivel a nálad van a |Sötét Varázskönyv|.\n\nEbben az esetben találhatsz\
+    \ egy olyan fekete kártyát, amely költsége <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"B\">, mivel a kijátszásáért fizethetsz <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> manával. De azonban |r:nem tudsz|\
+    \ találni egy kék-fekete kártyát, amely költsége <sprite=\"ManaSprite\" name=\"\
+    U\"><sprite=\"ManaSprite\" name=\"B\">, mivel a |Mana Bázisban| nincs <sprite=\"\
+    ManaSprite\" name=\"U\">, még akkor sem, ha <sprite=\"ManaSprite\" name=\"B\"\
+    =\"><sprite=\"ManaSprite\" to\" name=\"P\"> -vel fizetnél.\n\nAz |Üres kártya|,\
+    \ egy |Ragyogó Kiállítási Tárgy| lehetővé teszi, hogy találj |p:bármilyen színű|\
+    \ kártyát.\nAz 5-nél nagyobb összköltségű kártyák, amelyek általános mana költségkomponenssel\
+    \ rendelkeznek |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\"\
+    \ name=\"2\"> stb.)| akkor is meglelhetőek, ha nincs elég mana a |Mana Bázisban|\
+    \ hogy kijátszd azt. Számos módja van ezen a kártyák manaköltségének csökkentésére."
 Museum:
   HiddenDescription: Ezen teljesítmény részletei addig nem jelennek meg, amíg meg
     nem szerzed.
@@ -109,7 +131,7 @@ Museum:
   LockExhibit: Elzárt Kiállítási Tárgy
   ExhibitType:
     T1: Kincsek
-    T2: Csillámló
+    T2: Ragyogó
     T3: Ritka
     T4: Különleges
     T5: Közönséges
@@ -267,7 +289,7 @@ Tooltip:
     Name: Húzó halom
   BaseMana:
     Description: "A fordulók legelején a |manabázisban| lévő manával egyenlő manát\
-      \ kapsz.\nA |manabázis| mérete bővíthető |Csillámló Kiállítási Tárgyak| gyűjtésével.\n\
+      \ kapsz.\nA |manabázis| mérete bővíthető |Ragyogó Kiállítási Tárgyak| gyűjtésével.\n\
       \nA |manabázisod| hat arra hogy milyen kártyákat tudsz találni."
     Name: Manabázis
   BattleMana:
@@ -568,11 +590,24 @@ GameResult:
   Unlock: Új Tárgy Feloldva
   UnlockHint: Újonnan feloldott Kiállítási Tárgyak és Kártyák fognak megjelenni ezentúl
     a futamjaid során.
+  Score: Pont
+  DifficultyFactor: Nehézség
+  Win: Probléma Megoldva
+  Lose: Elbuktál
+  ClickToOpen: Kattints a Kinyitáshoz
+  ClickToFold: Kattints a Visszazáráshoz
+  NormalEnd: De Hourai Ékköves Ága még mindig nincs meg.
+  TrueEndFail: "A valódi tettest megtaláltad, de Hourai Ékköves Ágát nem sikerült\
+    \ visszaszerezni.\n(Normális Probléma-Megoldásként lett feljegyezve)"
+  TrueEnd: Tökéletes Problémamegoldás
+  BadEnd: Menj vissza az időben és fussunk neki még egyszer...
+  FailReason: 'Bukás oka:'
+  Deprecated: ??? (Már nem használt)
 Rarity:
   Common: Közönséges
   Uncommon: Különleges
   Rare: Ritka
-  Shining: Csillámló
+  Shining: Ragyogó
   Mythic: Mítikusan Ritka
 CardType:
   Attack: Támadás
@@ -630,6 +665,61 @@ Chat:
   HetongKailang1: És kész is vagyunk, olyan mint újkorában!
   HetongKailang2: Hát~, ezekkel kell beérnem egy ideig.
   HetongKailang3: Gyerünk, meg tudjátok csinálni!
+  HetongYinchen2: '{0}!'
+  Scout: Kutat
+  Purifier: Béjmex
+  Terminator:  T-800 
+  Terminator0: DIAGNOSZTIKA FUTTATÁSA...
+  Terminator1: "RENDSZEREK KÉSZEN...\nKORLÁTOZÁSOK KIKAPCSOLÁSA."
+  Terminator2: "SÉRÜLÉS ÉSZLELVE...\nJAVÍTÁS..."
+  Terminator3: "KRITIKUS SÉRÜLÉS ÉSZLELVE...\nJAVÍTÁS..."
+  YaTiangou1: Túl lassú!
+  YaTiangou2: Helyzet!
+  HardworkRabbit1: Földi célpont felderítve!
+  HardworkRabbit2: Fel kell fokoznom magam!
+  LazyRabbit: Tama nagyon haszontalan... Most abba kell hagynom a lustálkodást.
+  Limao1: Úgy hallottam a kaja a hegyteteji szentélyen nagyszerű.
+  Limao2: Lássuk jól használom-e ezt a képességet...
+  Sunny1: Ma megmutatjuk {0:cs} hogy milyen erősek vagyunk!
+  Sunny2: Aki elsőnek ér a Kiállítási Tárgyhoz, az megtarthatja!
+  Luna: Rendben!
+  Star: Rendben!
+  SunnySpell: Napsugarak, gyűljetek össze rajtam!
+  LunaSpell: Legyen a danmaku mozdulatlan.
+  StarSpell: El tudom kapni minden apró mozdulatod~
+  Aya1: Az este történései mögött lévő igazság Eienteiből, amit a Bunbunmaru Hírek
+    hozott.
+  Aya2: Van egy elégedetlen gyanúsítottunk, aki megpróbálja megzavarni az interjút!
+  Aya3: Nézd csak mi van {0:cs} kezében! A bizonyíték, hogy ő a tettes!
+  Rin1: Az egy nagyon cuki {0} nővérkém! Nagyon akarom!
+  Rin2: Áuu! Túl gonosz vagy nővérkém~
+  RinKoishi1: '{0} kisasszony nagyon aranyos! Haza akarom vinni!'
+  RinKoishi2: Áuu! Túl gonosz vagy, {0}~
+  Nitori1: Nagyon sok időt, és erőt fektettem bele a módosításokba.
+  Nitori2: Hát a védekezési képességén még csiszolni kéne.
+  Youmu1: En garde!
+  YoumuTuanzi: Ha még több Jeges Háromszínű Dangót akarsz, fordulj vissza most azonnal!
+  YoumuMooncake: Add vissza a {0}-m!
+  Kokoro1: Úgy érzem nagyon sok maszkom tűnt el mostanság.
+  Clownpiece1: Tündérek! Több danmaku! Több!
+  Clownpiece2: Emészd fel a fény ékköveit!
+  Clownpiece3: Holdkóros idő van!
+  Siji1: Kiállítási Tárgyak lopása a probléma kivizsgálásának leple alatt.
+  Siji2: Milyen visszataszító, {0:cf}.
+  SijiMystia: Éttermi lopás. Az ítéletet egy évvel meghosszabbítom.
+  SijiTurn1: Rossz kifogás. Az ítéletet egy évvel meghosszabbítom.
+  SijiTurn2: A bíróság megvesztegetése. Az ítéletet egy évvel meghosszabbítom.
+  SijiTurn3: Alacsonynak hívtál. Az ítéletet két évvel meghosszabbítom.
+  DoremySleep: Zzzzz...
+  DoremySleepLast: Nem tudok többet enni~
+  DoremyKill: Nem kell többet felébredned~
+  DoremyAwake: Még csak most jött volna a jó rész!
+  DoremyMaster: Az álmok határán vagy.
+  LongBribery1: Ez a jegy~
+  LongBribery2: Okés. Okés.
+  LongEscape1: Ó jaj, legyőztek.
+  LongEscape2: Erre kell menni a Moriya Szentély felé~
+  YuyukoMooncake: Nagyon kívánok egy kis {0}-t...
 History:
   Puzzles: '{0} Kérés'
   Mana: Mana
@@ -640,3 +730,106 @@ History:
   NotAutoSeed: Választott Seed
   ReloadTimes: 'Újrakezdések: {0}'
   PlayedTime: 'Játékidő: {0}'
+ErrorChat:
+  CardCostChanged: A kiválasztott kártya ára megváltozott.
+  UsUsedThisTurn: Már használtam a Varázskártyámat ebben a fordulóban.
+  MoneyNotEnough: Nincs elég pénzem.
+  LowMana: Nincs elég manám.
+  LowPower: Nincs elég erőm
+  LowLoyalty: Nincs elég Összhangom a csapattárssal.
+  CardNotInHand: A kiválasztott kártya nincs a kézben.
+  CardNotUsable: Nem játszhatom ezt a kártyát.
+  CardFengyin: Le vagyok zárva.
+  CardDrunk: Nem vagyok részeg!
+  CardCharm: Összezavarodtam.
+  CardHuiye: Kifutottál az időből.
+  Tired: Olyan fáradt vagyok...
+  UsUsedThisBattle: Már használtam a Varázskártyám ebben a csatában.
+  TargetAlreadyDead: A Célpont már meghalt.
+  NoTarget: Nincs szabályos célpont.
+  HandFull: Tele van a kezem.
+  EmptyDraw: A húzó halom üres.
+  NoCardByMama: Nincs ilyen kártya ezzel a költséggel
+  NoAbilityCardInHand: Nincs képesség kártya a kézben.
+Debut:
+  EirinChats:
+  - Ne tétovázz, {0}.
+  - A gyógyszer hatása el fog tűnni, ha nem indulsz el hamar~
+  KaguyaChats:
+  - Én is ránézek a helyzetre.
+  - Rád bízom a házat, Eirin.
+  - Ne felejts el napfelkeltére visszatérni~
+Shop:
+  Skip: Átlép
+  Close: Bezár
+  CardService: Kártya szolgálttatás
+  SoldOut: Kifogyott
+  Upgrade: Kártya Fejlesztése
+  UpgradeService: 'Fejlesztés:'
+  ShopUpgradePrice: '{0} <sprite="Gold" name="gold">'
+  UpgradeTooltip: "Egy kártya fejlesztése a könyvtárban.\n{0} Pénzbe Kerül."
+  Remove: Kártya Eltávolítása
+  RemoveService: 'Eltávolít:'
+  ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
+  RemoveTooltip: 'Kitöröl egy kártyát a könyvtárból, és növeli az árát| {0} Pénzel|
+    minden törléssel. Maximális ár: {1} Pénz.'
+  BoughtQuotes:
+  - Köszönöm a vásárlást.
+  CantAffordQuotes:
+  - Nem egy jótékonysági vállalat vagyok, remélem tudod.
+  - Nem tudod megvenni.
+  - Nincs elég pénzed.
+  WelcomeQuotes:
+  - Üdvözlet!
+  - Nézz körül.
+  Chats:
+  - Ide-ide, kedves vásárló~
+  - Fair árak mindenhol! Biztos hogy nincs szükséged semmire?
+Cards:
+  UpgradeTips: Válassz egy kártyát a Fejlesztéshez
+  RemoveTips: Válassz egy Kártyát a Kitörléshez.
+  TransformTips: Válassz egy kártyát az átalakításhoz.
+  UpgradeDialog: Kártya Fejlesztése?
+  UpgradePrice: "Ár: {0} <sprite=\"Gold\" name=\"gold\">\nPénz: {1} <sprite=\"Gold\"\
+    \ name=\"gold\">"
+  RemoveDialog: Kártya Kitörlése?
+  TransformDialog: Kártya Átalakítása?
+  Size:  {0} kártya
+  Show: Húzd rá a kurzort, vagy jobb klikkelj a kártyára hogy lásd a részleteit.
+  Remove: '{0} kártya törlése a könyvtárból.'
+  IsUpgraded: Fejlesztett
+  UnUpgradable: Fejleszthetetlen
+  NotInPool: Nincs a Kártya Jutalmak közt.
+SelectCard:
+  DreamCardsToHand: 'Álom: Rakjvlegfeljebb egy kártyát a kézbe'
+Reward:
+  Headers:
+  - Pompás!
+  - Jutalmak Begyűjtése
+  - Jutalmak Begyűjtése
+  CardHeader: Válassz egy Kártyát
+  Card: Adj hozzá egy kártyát a könyvtárhoz.
+  RemoveCard: Készül
+  RemoveCardDescription: Törölj egy kártyát. Nem tudsz Szerencsétlenség, vagy Egyszerű
+    kártyákat választani.
+  Money: '{0} Pénz'
+  Skip: Jutalmak Kihagyása
+  Abandon: Kártya Átlépése
+  AbandonMoney: Szerezz {0} <sprite="Gold" name="gold">
+  AbandonMaxHp: Szerezz {0} Maximális Életerőt
+ManaSelect:
+  Title: Válassz egy Mana Típust
+CardDetail:
+  UpgradeYes: Fejlesztett
+  UpgradeNo: Alap
+  Illustrator: 'Illusztrálta:'
+  SwitchCardStyle: Stílus Váltása
+  Sketch: Befejezetlen
+TopInfo:
+  Original: 'Eredeti:'
+  Artist: 'Szerezte:'
+Gap:
+  HeaderInitial: Pihenj egy kicsit~
+  Headers:
+  - Mit tegyek most~
+  - Olyan fáradt.…
