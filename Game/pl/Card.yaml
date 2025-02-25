@@ -110,8 +110,8 @@ SmallPanding:
 Zhuizongfu:
   Name: Samonaprowadzający Amulet
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'} losowym celom.\nJeżeli {PlayerName}\
-    \ ma |Tymczasową Moc|, zyskaj {Mana}."
+    \ {Value1:plural one='% raz' other='% razy'} losowym celom.\nZyskaj {Mana} na\
+    \ początku następnej tury {PlayerName:g}."
 FengyinYaomo:
   Name: Krąg Zgładzający Smoki
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -198,9 +198,9 @@ YinyangXueyin:
     krwi.
 EvilTuiZhi:
   Name: Eksterminacja Zła
-  Description: "{Value1:plural one='Następna karta' few='Następne % karty' many='Następne\
-    \ % kart'} ataku {Value1:plural one='zada' other='zadadzą'} dwukrotne obrażenia\
-    \ w tej turze."
+  Description: "{Value1:plural one='Następna % karta' few='Następne % karty' many='Następne\
+    \ % kart'} ataku {Value1:plural one='zostanie zagrana' few='zostaną zagrane' many='zostanie\
+    \ zagranych'} dwukrotnie."
   FlavorText: Jedna z fajniejszych rzeczy, które można robić w Gensoukyou.
 TaijiLiangyi:
   Name: Narodziny Kuli Yin-Yang
@@ -307,9 +307,10 @@ DanceAroundLake:
     kapłanki zniknęła.
 AutoQumobang:
   Name: Rozwścieczony Gohei
-  Description: "|Gdy w dłoni:| Dobierz o {Value1:plural one='% kartę' few='% karty'\
-    \ many='% kart'} podczas każdej fazy doboru.\nGdy ta karta zostanie |Przetrzymana|\
-    \ {Value2:plural one='% raz' other='% razy'}, |Wygnaj| ją."
+  Description: "|Gdy w dłoni:| |Wygnaj| {SelfName|, następnie dobierz o {Value1:plural\
+    \ one='% kartę' few='% karty' many='% kart'} więcej podczas {Value2:plural one='%\
+    \ następnej fazy doboru' few='% następnych faz doboru' many='% następnych faz\
+    \ doboru'}."
   FlavorText: '"Automatyczne Goheie zastępują pracę kapląnek." — Gazeta Bunbunmaru,
     Sekcja Ekonomiczna'
 GapLady:
@@ -509,12 +510,12 @@ ShootMoon:
     \ {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}."
   Name: Strzał w Księżyc
 RunAway:
-  UpgradedDescription: "Zrzuć wszystkie karty w dłoni. Karty zrzucone w ten sposób\
+  UpgradedDescription: "Odrzuć wszystkie karty w dłoni. Karty odrzucone w ten sposób\
     \ |tymczasowo kosztują| o {Mana} mniej.\nZyskaj {Value1:plural one='% |Unik|'\
     \ few='% |Uniki|' many='% |Uników|'}.\nDobierz {Value2:plural one='% kartę' few='%\
     \ karty' many='% kart'}."
   Name: Odwrót
-  Description: "Zrzuć wszystkie karty w dłoni. Karty zrzucone w ten sposób |tymczasowo\
+  Description: "Odrzuć wszystkie karty w dłoni. Karty odrzucone w ten sposób |tymczasowo\
     \ kosztują| o {Mana} mniej.\nZyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
     \ many='% |Uników|'}."
   FlavorText: '"Gdyby Marisa mogła po prostu stąd wyjść w biały dzień, to nie przeszkadzała
@@ -820,15 +821,14 @@ DefenseDraw:
 AttackMagic:
   Name: Podstępne Pociski
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nDodaj {Value2:plural\
-    \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
-    \ do Rzucania|} do ręki."
+    Odrzuć maksymalnie {Value1:plural one='% kartę' few='% karty' many='% kart'},\
+    \ następnie dobierz tyle samo kart."
 CleanRoom:
   Name: Porządki
-  Description: "Zrzuć kartę.\nDobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}.\n|Ulepsz| {Value2:plural one='% losową kartę' few='% losowe karty' many='%\
-    \ losowych kart'} w dłoni na czas walki. Jeżeli zrzucono |Sztylet do Rzucania|,\
-    \ |Ulepsz| wszystkie karty w dłoni na czas walki."
+  Description: "Odrzuć kartę.\nDobierz {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\n|Ulepsz| {Value2:plural one='% losową kartę' few='% losowe\
+    \ karty' many='% losowych kart'} w dłoni na czas walki. Jeżeli odrzucono |Sztylet\
+    \ do Rzucania|, |Ulepsz| wszystkie karty w dłoni na czas walki."
 ExileMagic:
   Name: Podmiana
   Description: "|Wygnaj| do {Value1:plural one='% karty' few='% kart' many='% kart'}\
@@ -860,8 +860,8 @@ BladePower:
     \ many='% |Sztyletów do Rzucania|} do ręki."
 SakuyaDraw:
   Name: Szczytowa Perfekcja
-  Description: "|Gdy Zrzucona lub Wygnana|: Dobierz {Value1:plural one='% kartę' few='%\
-    \ karty' many='% kart'}."
+  Description: "|Gdy odrzucona lub Wygnana|: Dobierz {Value1:plural one='% kartę'\
+    \ few='% karty' many='% kart'}."
 PrepareParty:
   Name: Przygotowanie Przyjęcia
   Description: "Połóż kartę z ręki na szczyt stosu doboru.\nZyskaj {Block} |Bloku|."
@@ -916,9 +916,9 @@ LightSpeed:
     Jeżeli jakaś karta została odrzucona w tej turze, zyskaj {Mana}."
 PrivateVision:
   Name: Prywatna Wizja
-  Description: "Zrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
+  Description: "Odrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='% |Uniki|'\
     \ many='% |Uników|'}."
-  UpgradedDescription: "Zrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='%\
+  UpgradedDescription: "Odrzuć kartę.\nZyskaj {Value1:plural one='% |Unik|' few='%\
     \ |Uniki|' many='% |Uników|'}.\nZyskaj {Value2} |Odbicia|."
 FakeTimeline:
   Name: Urojona Oś Czasu
@@ -985,13 +985,13 @@ LunaDial:
     \ karta kosztuje o {Mana} mniej na czas walki."
 SpecialClock:
   Name: Podstęp Pokojówki
-  Description: Na początku tury {PlayerName:g} zrzuć co najwyżej 1 kartę z ręki. Dobierz
-    tyle samo kart.
+  Description: Na początku tury {PlayerName:g} odrzuć maksymalnie 1 kartę z ręki.
+    Dobierz tyle samo kart.
   FlavorText: 'Czas wymagany do posprzątania salonu: 0.4 sekundy'
 DropToKnife:
   Name: Forteca Srebra
-  Description: Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'} z ręki.
-    Dodaj tyle samo |Sztyletów do Rzucania| do ręki.
+  Description: Odrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'} z
+    ręki. Dodaj tyle samo |Sztyletów do Rzucania| do ręki.
   FlavorText: Złoto jest zbyt miękkie, aby było użyteczne w budowaniu fortecę, lecz
     srebro jest prawie takie same.
 BackToFuture:
@@ -1221,10 +1221,10 @@ YuetuInvincible:
 PlayWithWater:
   Name: Zabawa Wodą
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Zrzuć kartę."
+    Odrzuć kartę."
   FlavorText: Pobaw się wodą.
   UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
-    \ kart'}.\nZrzuć do jednej karty."
+    \ kart'}.\nOdrzuć maksymalnie 1 kartę."
 QinglanAttack:
   Name: Lądowanie Królików
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -1244,12 +1244,12 @@ NitoriUnderWater:
   FlavorText: Pod wodą śmiertelność danmaku jest ostro zmniejszona.
 ShuimiUnderWater:
   Name: Duch Okrętu
-  Description: '|Gdy Zrzucona lub Wygnana|: Zyskaj {Mana}.'
+  Description: '|Gdy odrzucona lub Wygnana|: Zyskaj {Mana}.'
 HatateDiscard:
   Name: Fabrykacja Wiadomości
-  Description: "Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+  Description: "Odrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
     Zyskaj {Mana}."
-  UpgradedDescription: "Zrzuć między {Value1} a {Value2} kartami.\nZyskaj {Mana}."
+  UpgradedDescription: "Odrzuć od {Value1} do {Value2} kart.\nZyskaj {Mana}."
   FlavorText: '"Marisa nie była sprawcą."'
 DoremyDuplicate:
   Name: Zatracona w Raju
@@ -1462,11 +1462,11 @@ XingMoney:
   Name: Cudowna Włócznia Skarbów
   FlavorText: Umiejętność, którą Reimu Hakurei nie jest w stanie uniknąć.
 BaitianCard:
-  Description: "Zrzuć wszystkie karty w dłoni i dobierz tyle samo kart."
+  Description: "Odrzuć wszystkie karty w dłoni i dobierz tyle samo kart."
   Name: Reinkarnacja Hiedy
   FlavorText: Po wypróbowaniu elektronicznej pamięci, Panna Hieda no Akyuu ma teraz
     więcej wolnego czasu na popołudniowe przerwy na herbatę.
-  UpgradedDescription: Zrzuć wszystkie karty w dłoni i dobierz tyle samo kart.
+  UpgradedDescription: Odrzuć wszystkie karty w dłoni i dobierz tyle samo kart.
 YukariBox:
   Description: "|Przewidź| {Scry}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
     \ many='% kart'}.\nWtasuj stos zrzutek w stos doboru."
@@ -1487,7 +1487,7 @@ FourFlan:
   ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
     \ obrażeń'}.\nZyskaj {Value1} |Mocy|."
 FlanPlayAlone:
-  Description: "Zyskaj {Value1} |Tymczasowej Mocy|.\nZrzuć wszystkie karty z dłoni\
+  Description: "Zyskaj {Value1} |Tymczasowej Mocy|.\nOdrzuć wszystkie karty z dłoni\
     \ poza kartami ataku."
   Name: Gra w Pojedynkę
   FlavorText: Czy wy dziewczynki nie macie internetu?
@@ -2063,7 +2063,7 @@ ReimuFreeAttack:
 SakuyaGoOut:
   Name: Przygotowania do Podróży
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Zrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nZyskaj {Mana}."
+    Odrzuć {Value1:plural one='% kartę' few='% karty' many='% kart'}.\nZyskaj {Mana}."
   FlavorText: Ubrania robią człowieka, a kostium robi pokojówkę.
 SakuyaInvestigate:
   Name: Detektyw Zatrzymanego Czasu
@@ -2094,8 +2094,8 @@ BulletStudy:
     wszystko poprzez studiowanie danmaku swoich przeciwników.
 DiscardToCharging:
   Name: Odnowa Paliwa
-  Description: "Zrzuć dowolną ilość kart z ręki.\nZa każdą zrzuconą kartę zyskaj {Value1}\
-    \ |Ładunku|."
+  Description: "Odrzuć dowolną ilość kart z ręki.\nZa każdą odrzuconą kartę zyskaj\
+    \ {Value1} |Ładunku|."
   FlavorText: To mini-hakkero naprawdę może spalić wszystko.
 AutoKnife:
   Description: "Wszystkie |Sztylety do Rzucania| zyskują |Samowygnanie| na czas walki.\n\
@@ -2136,7 +2136,7 @@ KnifeAim:
   Name: Świat Deflacji
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Nałóż {Value1:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\n\
-    Zrzuć wszystkie |Sztylety do Rzucania| z dłoni. Celują w wybranego wroga."
+    Odrzuć wszystkie |Sztylety do Rzucania| z dłoni. Celują w wybranego wroga."
 SakuyaUsage:
   FlavorText: Po prostu zatrzymaj czas i przesuń wszystkich innych na sam dół schodów.
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
@@ -2171,8 +2171,8 @@ CirnoDraw:
   Description: Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.
 IceSaber:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż |Chłód|.\nZrzuć dowolną ilość\
-    \ niebieskich kart. Zadaj obrażenia dodatkowy raz za każdą zrzuconą kartę."
+    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż |Chłód|.\nOdrzuć dowolną\
+    \ ilość niebieskich kart. Zadaj obrażenia dodatkowy raz za każdą odrzuconą kartę."
   Name: Ostrze Wykute z Lodu
   FlavorText: Kiedyś był słynny miecz nazwany Frostmourne.
 FairyTree:
@@ -2531,7 +2531,7 @@ Opt:
     Klejnotami…
 CirnoFire:
   Name: Łatwopalny Lód
-  Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| zwiększ obrażenia\
+  Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| zwiększ |Moc|\
     \ {SelfName:g} o {Value2}."
 FairyWrath:
   Name: Gniew Natury
@@ -2634,7 +2634,7 @@ LunaFriend:
 PlayWithWaste:
   Description: "Wybierz 1 z {Value1} nierzadkich kart |Narzędzi| aby dodać do ręki.\n\
     Jest traktowana jako |Kopia| oraz ma |Ograniczony【1】|."
-  Name: Nurkowanie w Śmietniku
+  Name: Sąsiedzi z Piekła Rodem
 StarFriend:
   Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} wszystkim wrogom."
@@ -2676,11 +2676,12 @@ FakeMoon:
   Name: Fałszywy Księżyc
   DetailText: Nie możesz wybierać |Kopii| dla tego efektu.
 RemiliaFate:
-  Description: "Zrzuć do {Value1:plural one='% karty' few='% kart' many='% kart'}\n\
-    Umieść losowe karty z całkowitymi kosztami 1, 2 i 3 ze stosu doboru do ręki."
-  UpgradedDescription: "Zrzuć do {Value1:plural one='% karty' few='% kart' many='%\
-    \ kart'}\nUmieść losowe karty z całkowitymi kosztami 1, 2, 3, 4 i 5 ze stosu doboru\
+  Description: "Odrzuć maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}.\nUmieść losowe karty z całkowitymi kosztami 1, 2 i 3 ze stosu doboru\
     \ do ręki."
+  UpgradedDescription: "Odrzuć maksymalnie {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'}.\nUmieść losowe karty z całkowitymi kosztami 1, 2, 3, 4 i 5 ze\
+    \ stosu doboru do ręki."
   Name: Manipulacja Przeznaczenia
 YouxiangAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -3070,7 +3071,7 @@ FrozenOrb:
     \ few='% |Lodowe Pociski|' many='% |Lodowych Pocisków|'} do ręki."
   Name: Zamrożona Kula
 PassionDefense:
-  Name: Instynktowna Miłość
+  Name: Dyskrecja
   Description: "Zyskaj {Block} |Bloku|.\n|Gdy w stanie Pasji|: Zyskaj o {Value1} więcej\
     \ |Bloku|."
 LunaticPassion:
@@ -3082,7 +3083,7 @@ SunflowerDefense:
   Name: Ogród Słońca
 ShopDefense:
   Name: Czysta Energia
-  Description: "Zyskaj {block} |Bloku|.\nDobierz {Value1:plural one='% kartę' few='%\
+  Description: "Zyskaj {Block} |Bloku|.\nDobierz {Value1:plural one='% kartę' few='%\
     \ karty' many='% kart'}."
 FutoLight:
   Name: Obiad Oomonoimi
@@ -3114,7 +3115,7 @@ QingeDraw:
   Name: Ruch Płodu TAO
   FlavorText: Tzw. "Poszukiwanie chochlików".
   Description: "Zyskaj {Block} |Bloku|.\nDobierz {Value1:plural one='% kartę' few='%\
-    \ karty' many='% kart'}.\nZrzuć wszystkie karty o koście wyższym niż 1 dobrane\
+    \ karty' many='% kart'}.\nOdrzuć wszystkie karty o koście wyższym niż 1 dobrane\
     \ w ten sposób."
 IceWing:
   Name: Lodowe Skrzydło
@@ -3199,11 +3200,11 @@ FindInspiration:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zyskaj {Value1} |Olśnienia|."
 DefaultPassion:
-  Name: Samotne Serce
+  Name: Romantyczna Róża
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Wejdź w stan |Pasji|."
 DefaultPeace:
-  Name: Zakochane Czernie
+  Name: Bezosobowość
   Description: "Zyskaj {Block} |Bloku|.\nWejdź w stan |Uspokojenia|."
 InspirationCard:
   Name: Eureka!
@@ -3259,3 +3260,41 @@ ReimuEvilTerminator:
   Name: Mistrzyni Eksterminacji
   Description: "Za każdym razem, gdy wróg zostanie pokonany, zyskaj {Mana}.\nZyskaj\
     \ {Value1:plural one='% |Odparcie|' few='% |Odparcia|' many='% |Odparć|}."
+CommonFire:
+  Name: Potęga Pospolitości
+  Description: "Gdy {PlayerName:g} zagra pospolitą kartę, zyskaj {Value1} |Tymczasowej\
+    \ Mocy|.\n"
+  UpgradedDescription: "Gdy {PlayerName:g} zagra pospolitą kartę, zyskaj {Value1}\
+    \ |Tymczasowej Mocy|.\nDodaj |Czystość| do ręki."
+JinziDoppelganger:
+  Description: Pierwsza karta zagrana w turze {PlayerName:g} zostanie zagrana dwukrotnie.
+  Name: Okultystyczny Sobowtór
+HuiyeSuperExtraTurn:
+  DetailText: "Dodatkowa tura {SelfName} wydarza się przed innymi dodatkowymi turami.\n\
+    Po zagraniu {SelfName}, możesz najechać na ikony statusu {PlayerName:g}, aby sprawdzić\
+    \ informacje dotyczące aktualnej tury."
+  Name: '"Koniec Nieprzemijającej Nocy"'
+  Description: "Na końcu |Naturalnej Tury| {PlayerName:g}, zacznij dodatkową turę.\n\
+    |Blok| i |Unik| nie są tracone na początku tej dodatkowej tury oraz tylko {Value1:plural\
+    \ one='% karta' few='% karty' many='% kart'} może zostać {Value1:plural one='zagrana'\
+    \ few='zagrane' many='zagranych'}."
+KoishiDiscard:
+  Description: '|Gdy dobrana:| Odrzuć losową kartę.'
+  ExtraDescription1: "|Gdy dobrana:| Odrzuć losową kartę.\nOdrzucono: {CardName}"
+  DetailText: Jeśli inna {SelfName} zostanie odrzucona w ten sposób, zostanie ona
+    |Wygnana|.
+  Name: Nieświadoma Amnezja
+KnifeDamageUp:
+  Name: Srebrna Akceleracja
+  Description: "Zwiększ obrażenia zadawane przez |Sztylety do Rzucania| o {Value1}.\n\
+    Dodaj {Value2:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|'\
+    \ many='% |Sztyletów do Rzucania|} do ręki."
+DreamExpress:
+  Name: Ekspres Snów
+  Description: Na końcu tury {PlayerName:g}, |Wyśnij| {Value1}, następnie zadaj wszystkim
+    wrogom obrażenia równe dwukrotności kosztu |Wyśnionych| kart.
+BailianMagic:
+  Name: Recytacja Diabła
+  Description: W trakcie tej tury, {Value1:plural one='następna % karta' few='następne
+    % karty' many='następne % kart'} |Zdolności| {Value1:plural one='zostanie zagrana'
+    few='zostaną zagrane' many='zostanie zagranych'} dwukrotnie.
