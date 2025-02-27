@@ -1747,6 +1747,7 @@ SummerParty:
 ColdChain:
   Name: 冷链物流
   Description: 从抽牌堆中选择至多 {Value1} 张牌移入手中。
+  FlavorText: 新鲜食品，送货上门。
 
 FrozenOrb:
   Name: 冰封球
@@ -1760,6 +1761,7 @@ IceBlock:
     免疫所有的伤害一回合。
     移除所有的|格挡|、|护盾|和|闪避|。
     |保留|当前的手牌一回合，结束{PlayerName}的回合。
+  FlavorText: 之后释放「强效隐形术」脱离战斗。
 
 DeepFreeze:
   Name: 冰尖之舞
@@ -1800,7 +1802,7 @@ BestFriend:
 CirnoEcho:
   Name: 自然的馈赠
   Description: 从弃牌堆中选择 {Value1} 张牌移回手中，赋予|回响|。
-  FlavorText: 技术指导：秋穰子
+  FlavorText: 技术指导：秋穰子。
 
 FairyAllOut:
   Name: 全体出动
@@ -1831,7 +1833,7 @@ GatherFairy:
     手牌上限提高至 {MaxHand} 张。
     抽 {Value1} 张牌。
     手中所有|同伴|牌提高 {Value2} 点|支援度|。
-  FlavorText: 你们都是我的翅膀。
+  FlavorText: 「你们都是我的翅膀！」
 
 ForeverCool:
   Name: 永远凉爽的幻想四季
@@ -1898,6 +1900,7 @@ BrainOverclock:
     获得{Mana}。
     抽 {Value2} 张牌。
     |透支| {Value1} 。
+  FlavorText: Her brain is so big!
 
 SunnyFriend:
   Name: 闪耀的日光桑尼
@@ -1967,6 +1970,7 @@ BaseFollower:
 InspirationCard:
   Name: 找到灵感了！
   Description: '|进入手中时|：获得{Mana}，获得 {Value1} 层|灵感|，|放逐|{SelfName}。'
+  FlavorText: 尤里卡！
 
 KoishiUltimateToken:
   Name: 生命绽放
@@ -2017,9 +2021,10 @@ KoishiDrawTop:
   UpgradedDescription: |-
     抽 {Value1} 张牌。
     选择 {Value2} 张手牌，|升级|它并置于抽牌堆顶。
+  FlavorText: 「我已经知道犯人是谁了！」
 
 LeaveMoodAttack:
-  Name: 意识漩涡
+  Name: 情绪释放
   Description: |-
     造成 {Damage} 点伤害。
     离开当前的|心境|。
@@ -2151,6 +2156,9 @@ InspirationDefense:
   Description: |-
     获得 {Block} 点|格挡|。
     获得 {Value1} 层|灵感|。
+  FlavorText: |-
+    神秘村民分享了一个神秘的科技秘密。
+    恋对核聚变的认识得到了极大的提升。
 
 KoishiFire:
   Name: 善变
@@ -2202,10 +2210,12 @@ LeaveMoodDraw:
   Description: |-
     离开当前的|心境|。
     抽 {Value1} 张牌。
+  FlavorText: 我可不是小猫哦。
 
 MoodChangeBlock:
   Name: A.T. 力场
   Description: 每当{PlayerName}转化|心境|时，获得 {Value1} 点|格挡|。
+  FlavorText: 不能逃避！不能逃避！
 
 PsycheLock:
   Name: 心灵枷锁
@@ -2221,6 +2231,7 @@ PsycheLock:
   UpgradedNonbattleDescription: |-
     结束{PlayerName}的回合，进行一个额外的回合。这一回合开始时，|升级|所有的手牌。
     {SelfName}在手中时，{PlayerName}进入过三种不同的|心境|后才可以打出。
+  FlavorText: 里面可能是她闭上第三只眼的原因。
 
 BlackEpiphany:
   Name: 意识剥离
@@ -2234,6 +2245,7 @@ KoishiTouying:
     获得{Mana}。
     从 {Value1} 张随机的卡牌中选择一张置于牌堆顶，它具有|填充|、|放逐|、|虚无|。
     这些卡牌的费用总数不少于 {Value2}。
+  FlavorText: 我有一个好主意。
 
 KoishiPlayDiscard:
   Name: 被厌恶者的哲学
@@ -2276,6 +2288,7 @@ GainInspiration:
 PerfectCrime:
   Name: 完美作案
   Description: 窃取目标的|护盾|、|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
+  FlavorText: 你的「月之羽衣」很不错，但是下一秒它就是我的了。
 
 SelfControl:
   Name: 掌控自我
@@ -2292,7 +2305,7 @@ TheFool:
     打出抽牌堆顶的牌。
 
 KoishiDna:
-  Name: 哈德曼的妖怪少女
+  Name: 真我降临
   Description: |-
     打出抽牌堆顶的牌。
     {PlayerName}的回合开始时，打出抽牌堆顶的牌。
@@ -2317,6 +2330,9 @@ ButterflyDream:
     |e:备选牌|无视法力、颜色和所有者限制。
     不能找到{SelfName}。
     不会找到|费用 X |卡牌。
+  FlavorText: |-
+    其实我是蝴蝶？
+    或者说，其实我是虚拟出来的吗？
 
 KokoroFriend:
   Name: 人格面具觉醒秦心
@@ -2324,10 +2340,12 @@ KokoroFriend:
   ExtraDescription1: '{FriendA}进入|热情|。'
   ExtraDescription2: '{FriendA2}进入|平静|。'
   ExtraDescription3: '{FriendU}进入|神游|。'
+  FlavorText: 偏铝酸钠！
 
 EnterEpiphany:
   Name: 顿悟
   Description: 进入|神游|。
+  FlavorText: 我佛了。
 
 KoishiDive:
   Name: 意识下潜
@@ -2341,16 +2359,19 @@ LunaticPassion:
   Description: |-
     {PlayerName}处于|热情|时造成的额外伤害比例改为 {Percentage}%，攻击牌造成的伤害都具有|精准|。
     进入|热情|。
+  FlavorText: 「其实我从上一个周目就开始关注你了！」
 
 KoishiPhone:
   Name: 恐怖的可爱来电
   Description: |-
     每打出一张攻击牌，进行一次|追加攻击|。
     当抽牌堆没有|追击|牌时，将以|电话响了|进行追击。
+  FlavorText: 不许不接哦。
 
 FollowAttackFiller:
   Name: 电话响了
   Description: 造成 {Damage} 点伤害。
+  FlavorText: 叮铃铃——叮铃铃——
 
 AliceAttackW:
   Name: 人形枪击
@@ -3001,6 +3022,7 @@ LimaoSchool:
   Name: 狸猫的变身学校
   Description: 从 {Value1} 张随机的|狸猫变化|中选择 {Value2} 张生效。
   DetailText: '|e:两栖变化|每场战斗中只能生效一次，之后打出的{SelfName}不会以它作为选项。'
+  FlavorText: 下猫们学习后需要面临「中猫考试」。
 
 MorphBird:
   Name: 羽鸟变化
@@ -3062,6 +3084,7 @@ Astrology:
   Description: |-
     |占卜| {Scry} 。
     抽 {Value1} 张牌。
+  FlavorText: 幻想乡观测到的星空，与外界相同吗？
 
 Xiaozhuo:
   Name: 小酌怡情
@@ -3094,6 +3117,7 @@ ShopDefense:
 ShopSearch:
   Name: 私家雷达
   Description: 从抽牌堆中选择一张攻击牌或防御牌移入手中。
+  FlavorText: 建造完毕可以解锁地图功能。
 
 MoonSea:
   Name: 静寂之海
@@ -3209,6 +3233,7 @@ SeeFengshui:
   Description: |-
     {PlayerName}的回合开始时，|占卜| {Value1} 。
     这次|占卜|中每选择一张防御牌，获得 {Value2} 点|格挡|。
+  FlavorText: 除了看风水，还经营看相、算命等业务。
 
 LanCard:
   Name: 式神护法
@@ -3218,6 +3243,7 @@ LanCard:
 RainbowMarket:
   Name: 月虹市场
   Description: 每当一张牌被|放逐|时，将一张随机的卡牌加入手中。
+  FlavorText: 兴旺的集市。
 
 NiuqiDefense:
   Name: 石之婴儿
@@ -3590,6 +3616,7 @@ LifeGame:
   UpgradedDescription: |-
     相邻的卡牌|暂塑|为{Mana}，|升级|它们。
     如果目标是|厄运|或状态牌，改为将其|放逐|。
+  DetailText: 被追加打出时，对最左侧的手牌生效。
 
 PoisonTeaParty:
   Name: 可疑的茶会
