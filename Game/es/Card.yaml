@@ -203,6 +203,8 @@ CManaCard:
 Astrology:
   Name: Astrología
   Description: "|Explora| {Scry}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
+  FlavorText: ¿El cielo estrellado que se ve en Gensokyo es el mismo que el del mundo
+    exterior?
 ReimuFestival:
   Description: "Gana {Value1} de |Poder Temporal|.\nAl comienzo de cada turno de {PlayerName},\
     \ gana {Value1} de |Poder Temporal|."
@@ -1780,6 +1782,7 @@ LimaoSchool:
     Gana sus efectos.
   DetailText: La |e:Forma de Anfibia| sólo tendrá efecto una vez por combate, y los
     usos posteriores de {SelfName} no se incluirán.
+  FlavorText: Los tanukis novatos tienen que estudiar para el "Examen Tanuki Chunin".
 MorphDog:
   Name: Forma Carnívora
   Description: Gana {Value1} de |Poder|.
@@ -1797,10 +1800,13 @@ SeeFengshui:
   Description: "Al comienzo de cada turno de {PlayerName}, |Explora| {Value1}.\nSiempre\
     \ que una carta de defensa se envía a la pila de descarte de esa manera, gana\
     \ {Value2} de |Bloqueo|."
+  FlavorText: Además de las lecturas del Feng Shui, también hace lecturas faciales
+    y de adivinación.
 RainbowMarket:
   Name: Mercado del Arcoíris Lunar
   Description: Siempre que una carta esté |Exiliada|, agrega una carta al azar a la
     mano.
+  FlavorText: Un bullicioso mercado.
 NiuqiDefense:
   Name: Bebe de Piedra
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Bloqueo| por cada carta\
@@ -2182,6 +2188,8 @@ LifeGame:
   UpgradedDescription: "Las cartas que estaban adyacentes a {SelfName} |cuestan temporalmente|\
     \ {Mana} y son |Mejoradas|.\nSi el objetivo de la carta es una |Desgracia| o una\
     \ carta de Estado, en su lugar será |Exiliado|."
+  DetailText: Si se juega como carta Continua, afectara a la carta más a la izquierda
+    de la mano.
 GatherFairy:
   Name: Asamblea de Hadas
   Description: "El tamaño máximo de las cartas en la mano pasa a ser de {MaxHand}.\n\
@@ -2189,12 +2197,13 @@ GatherFairy:
   UpgradedDescription: "El tamaño máximo de la mano se convierte en {MaxHand}.\nRoba\
     \ {Value1} carta{Value1:plural one='' other='s'}.\nTodos las |Compañeras| en la\
     \ mano gana {Value2} de |Influencia|."
-  FlavorText: Ustedes dos son mis alas.
+  FlavorText: '"¡Ustedes dos son mis alas!"'
 IceBlock:
   Name: Bloque de Hielo
   Description: "{PlayerName} no puede perder vida por un turno.\nPierde todo el |Bloqueo|,\
     \ |Barrera| y |Evasión|.\n|Retiene| las cartas de la mano de este turno. Termina\
     \ el turno de {PlayerName}."
+  FlavorText: Después, usas el hechizo "Invisibilidad Superior" para escapar del combate.
 FairyTree:
   Name: Hogar de las Hadas
   Description: "Siempre que una |Compañera| es convocada al jugarse cartas de |Compañeras|,\
@@ -2203,6 +2212,7 @@ BrainOverclock:
   Name: Overclocking Cerebral
   Description: "Gana {Mana}.\nRoba {Value2} carta{Value2:plural one='' other='s'}.\n\
     |Sobregiro| {Value1}."
+  FlavorText: Her brain is so big!
 ColdPotion:
   Name: Liquido Refrigerante
   Description: "Las |Pociones Inestables| también aplican |Frío| cuando se activan.\n\
@@ -2391,7 +2401,7 @@ CirnoEcho:
   Description: "Elige {Value1} carta{Value1:plural one='' other='s'} de la pila de\
     \ descarte y devuélvelo{Value1:plural one='' other='s'} a la mano. Ganará{Value1:plural\
     \ one='' other='n'} |Eco|."
-  FlavorText: 'Soporte Técnico: Minoriko Aki'
+  FlavorText: 'Soporte Técnico: Minoriko Aki.'
 ColdBreath:
   Name: Aliento de Diamante
   Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, gana {Mana}."
@@ -2443,6 +2453,7 @@ ColdChain:
   Name: Cadena de Logística Fría
   Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
     de robo y colócalo{Value1:plural one='' other='s'} en la mano.
+  FlavorText: Comida fresca entregada directamente a tu puerta.
 BestFriend:
   Name: Mejores Amigas
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Compañera{Value1:plural\
@@ -2732,6 +2743,7 @@ PerfectCrime:
   Name: Crimen Perfecto
   Description: "Roba la |Barrera|, |Evasión|, |Camuflaje Óptico|, |Perfección| y hasta\
     \ {Value1} de |Poder| y |Espíritu| del objetivo."
+  FlavorText: Llevas un bonito "velo lunar". ¡Ahora es mío!
 PoisonTeaParty:
   Name: Fiesta de Té Sospechosa
   Description: "{PlayerName} gana {Value1} de vida y {Value1} de |Veneno|.\nAplica\
@@ -2978,6 +2990,7 @@ ShopSearch:
   Description: Elige una carta de ataque o de defensa de la pila de robo y colócalo
     en la mano.
   Name: Radar Privado
+  FlavorText: Al construir esto se desbloquea la función del mapa.
 YijiuDraw:
   Description: "|Explora| {Scry}.\nRoba {Value1} carta{Value1:plural one='' other='s'}."
   Name: Mensaje del Palacio del Dragón
@@ -3091,13 +3104,14 @@ InspirationCard:
   Name: ¡Eureka!
   Description: '|Cuando {SelfName} entra en la mano|: Gana {Mana}, {Value1} de |Inspiración|
     y se |Exilia| {SelfName}.'
+  FlavorText: ¡Eureka!
 QiannianShenqiCard:
   Description: "Las cartas se pueden robar más allá del límite del efecto del |e:Rompecabezas\
     \ Piramidal| a un coste de {Value1} de vida por robo adicional.\nEsto dura hasta\
     \ el final del combate."
   Name: Mi Turno
 LeaveMoodAttack:
-  Name: Vórtice de Conciencia
+  Name: Liberación Mental
   Description: "Inflige {Damage} de daño.\nSale del |Estado Mental| actual."
 IceWing:
   Name: Ala de Hielo
@@ -3119,6 +3133,7 @@ LeaveMoodDraw:
   Name: Curiosidad
   Description: "Sale del |Estado Mental| actual.\nRoba {Value1} carta{Value1:plural\
     \ one='' other='s'}."
+  FlavorText: No soy una gatita.
 PassionAttackToDraw:
   Name: Jaula de Rosas
   Description: "Inflige {Damage} de daño {Value1} veces.\nEntra en el estado |Pasión|.\n\
@@ -3152,6 +3167,7 @@ MoodChangeBlock:
   Name: Campo A.T.
   Description: Siempre que {PlayerName} cambie de |Estados Mentales|, gana {Value1}
     de |Bloqueo|.
+  FlavorText: ¡No debo huir! ¡No debo huir!
 PsycheLock:
   Name: Psicocandado
   NonbattleDescription: "Termina el turno de {PlayerName}. Luego, juega un turno extra.\n\
@@ -3169,11 +3185,13 @@ PsycheLock:
     \ turno extra.\nAl comienzo del próximo turno de {PlayerName}, |Mejora| todas\
     \ las carta en la mano.\nSolo se puede jugar si {PlayerName} ha entrado en 3 |Estados\
     \ Mentales| diferentes mientras que {SelfName} está en la mano."
+  FlavorText: La razón por la que cerró su tercer ojo podría estar dentro de ella.
 LunaticPassion:
   Name: Loca de Amor
   Description: "El modificador del daño del estado |Pasión| para los ataques de {PlayerName}\
     \ pasa a ser del {Percentage}% y el daño de las cartas de ataque se convierte\
     \ en |Certero|.\nEntra en el estado |Pasión|."
+  FlavorText: '"¡De hecho, te he estado siguiendo desde la última partida!"'
 MoodAttack:
   Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de un |Estado\
     \ Mental|. devuelve {SelfName} de la pila de descarte a la mano."
@@ -3232,6 +3250,7 @@ KoishiDrawTop:
   UpgradedDescription: "Roba {Value1} carta{Value1:plural one='' other='s'}.\n|Mejora|\
     \ {Value2} carta{Value2:plural one='' other='s'} de la mano y se coloca{Value2:plural\
     \ one='' other='n'} en la parte superior de la pila de robo."
+  FlavorText: '"¡Ya sé quién es la culpable!"'
 GrazeFollowAttack:
   Description: "Gana {Value1} |Evasión|.\nRealiza un |Ataque Continuo|."
   Name: Acción Instintiva
@@ -3306,7 +3325,7 @@ KoishiSpark:
 KoishiDna:
   Description: "Juega la carta superior de la pila de robo.\nAl comienzo de cada turno\
     \ de {PlayerName}, juega la carta superior de la pila de robo."
-  Name: La Chica Youkai de Hartmann
+  Name: Llegada de mi Verdadero Yo
   DetailText: 'v.1.6.1: El efecto de jugar automáticamente ahora se activa antes de
     la fase de robo.'
 KoishiAttackX:
@@ -3327,6 +3346,8 @@ ButterflyDream:
     \ color de maná y personaje.\n{SelfName} no puede ser producido por este efecto.\n\
     Las cartas con coste X no pueden ser producidas por este efecto."
   Name: El Sueño de la Mariposa
+  FlavorText: ¿La mariposa es un producto de mi imaginación? ¿O soy yo un producto
+    de *su* imaginación?
 KokoroFriend:
   ExtraDescription1: '{FriendA}Entra en el estado |Pasión|.'
   ExtraDescription2: '{FriendA2}Entra en el estado |Serenidad|.'
@@ -3334,9 +3355,11 @@ KokoroFriend:
   Name: Kokoro, Persona Despertada
   Description: '{FriendP}Gana {Value1} |Sueño{Value1:plural one='''' other=''s''}|
     .'
+  FlavorText: ¡Persona!
 EnterEpiphany:
   Description: Entra en el estado |Fuga|.
   Name: Epifanía
+  FlavorText: Orz.
 DreamExpress:
   Name: Sueño Express
   Description: Al final de cada turno de {PlayerName}, gana {Value1} |Sueño{Value1:plural
@@ -3395,6 +3418,8 @@ AncestorDream:
 InspirationDefense:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} de |Inspiración|."
   Name: Momento de Inspiración
+  FlavorText: "Unos misteriosos aldeanos comparten una secreta técnica oculta.\nLos\
+    \ conocimientos de Koishi sobre la fusión nuclear han avanzado considerablemente."
 GainZeroAttack:
   Name: Defecto del ADN
   UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega {Value1}\
@@ -3417,9 +3442,11 @@ KoishiPhone:
   Description: "Siempre que se juegue una carta de ataque, se realiza un |Ataque Continuo|.\n\
     Si no hay cartas |Continuas| en la pila de robo, se usará |Ring-Ring| como |Ataque\
     \ Continuo|."
+  FlavorText: No puedes perderte esta llamada.
 FollowAttackFiller:
   Name: Ring-Ring
   Description: Inflige {Damage} de daño.
+  FlavorText: Ring-ring... ring-ring
 DollBlock:
   Name: Escudo de Muñeca
 Zhendijianzao:
@@ -3458,6 +3485,7 @@ KoishiTouying:
   Description: "Gana {Mana}.\nElige 1 de {Value1} cartas aleatorias para agregarla\
     \ a la parte superior de la pila de robo. Tienen |Reponer|, |Exilio| y |Etéreo|.\n\
     Esas cartas tienen un coste total de al menos {Value2} de maná."
+  FlavorText: Tengo una buena idea.
 CommonFire:
   Name: Poder de lo Ordinario
   Description: "Después de que {PlayerName} juega una carta Común, gana {Value1} de\
