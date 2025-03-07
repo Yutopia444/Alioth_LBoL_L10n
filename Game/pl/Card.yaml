@@ -127,6 +127,8 @@ DanmuDuijue:
     \ na {SelfName:a}."
   FlavorText: Zasady Kart Zaklęć nigdy nie miały żadnych tantiem. Czy to odzwierciedla
     "Ducha Internetu"?
+  UpgradedDescription: "Zyskaj {Shield} |Bariery|.\nZyskaj {Value1} |Odbicia|.\n|Moc|\
+    \ ma wpływ na {SelfName:a}."
 ReimuLucky:
   Description: "Zyskaj {Value1:plural one='% |Amulet|' few='% |Amulety|' many='% |Amuletów|'}.\n\
     Zyskaj {Value2} <sprite=\"Point\" name=\"Gold\">."
@@ -2187,6 +2189,7 @@ IceBlock:
   Description: "{PlayerName} nie może stracić życia na jedną rundę.\nStrać cały |Blok|,\
     \ |Barierę| i |Uniki|.\n|Przetrzymaj| dłoń w tej turze. Zakończ turę {PlayerName:g}."
   Name: Lodowy Blok
+  FlavorText: Następnie rzucam "Potężniejszą Niewidzialność" by uciec z walki.
 IceLance:
   Name: Lodowa Lanca
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -2268,7 +2271,7 @@ CirnoEcho:
   Description: Wybierz do {Value1:plural one='% karty' other='% kart'} ze stosu zrzutek
     i zwróć {Value1:plural one='ją' other='je'} do ręki. {Value1:plural one='Zyskuje'
     other='Zyskują'} |Echo|.
-  FlavorText: 'Wsparcie Techniczne: Minoriko Aki'
+  FlavorText: 'Wsparcie Techniczne: Minoriko Aki.'
 ForeverCool:
   Name: Wiecznie Zimna Sezonowa Fantazja
   Description: "Gdy |a:Zdolność Czynna| lub |u:Ultimate| |Wspólnika| zostanie użyta,\
@@ -2280,7 +2283,7 @@ GatherFairy:
   UpgradedDescription: "Wielkość ręki wzrasta do {MaxHand}.\nDobierz {Value1:plural\
     \ one='% kartę' few='% karty' many='% kart'}.\nWszyscy |Wspólnicy| w dłoni zyskują\
     \ {Value2} |Wspólności|."
-  FlavorText: To wy jesteście moimi skrzydłami!
+  FlavorText: '"To wy jesteście moimi skrzydłami!"'
 WhiteWorld:
   Name: Czysto Biały Świat
   Description: "Na początku tury {PlayerName:g} nałóż |Chłód| na wszystkich wrogów.\n\
@@ -2336,6 +2339,7 @@ BrainOverclock:
   Name: Burza Mózgu
   Description: "Zyskaj {Mana}.\nDobierz {Value2:plural one='% kartę' few='% karty'\
     \ many='% kart'}.\n|Naddobór| {Value1}."
+  FlavorText: Jej neurony są potężne!
 PrismriverBlack:
   Name: Solówka Skrzypiec
   ExtraDescription1: "Zyskaj {Mana}.\nDobierz {Value1:plural one='% kartę' few='%\
@@ -2523,6 +2527,7 @@ ColdChain:
   Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ ze stosu doboru i umieść {Value1:plural one='ją' other='je'} w dłoni."
   Name: Zimny Łańcuch Logistyczny
+  FlavorText: Świeże jedzenie, wprost pod twoje drzwi.
 Opt:
   Name: Na Cienkim Lodzie
   Description: "Spójrz na kartę na szczycie stosu doboru. Możesz ją umieścić na spód\
@@ -3075,6 +3080,8 @@ PassionDefense:
   Name: Dyskrecja
   Description: "Zyskaj {Block} |Bloku|.\n|Gdy w stanie Pasji|: Zyskaj o {Value1} więcej\
     \ |Bloku|."
+  FlavorText: Gdy trafiasz na pierwsze miejsce rankingu popularności, ale pragniesz
+    zostać niezauważoną.
 LunaticPassion:
   Name: Szalona Miłość
   Description: "Mnożnik obrażeń stanu |Pasji| zmienia się na {Percentage}%.\nWejdź\
@@ -3209,9 +3216,9 @@ DefaultPeace:
   Description: "Zyskaj {Block} |Bloku|.\nWejdź w stan |Uspokojenia|."
 InspirationCard:
   Name: Eureka!
-  Description: "|Gdy {SelfName} wejdzie do ręki|: Przetransformuj ją w |e:Kartę Inspiracji|\
-    \ o losowym kolorze, aktywuj jej efekty, i wygnaj ją.\nPodczas kroku doboru, {SelfName}\
-    \ ma |Dopełnienie|."
+  Description: "|Gdy {SelfName} wejdzie do ręki|: Zyskaj {Mana} oraz {Value2:plural\
+    \ one='% |Inspirację|' few='% |Inspiracje|' many='% |Inspiracji|'}. |Wygnaj| {SelfName}."
+  FlavorText: Eureka!
 SuperNova:
   Description: "Zyskaj {Mana}.\nWłóż {Value1:plural one='% losową kartę' few='% losowe\
     \ karty' many='% losowych kart'} ataku ze stosu doboru do ręki."
@@ -3299,3 +3306,25 @@ BailianMagic:
   Description: W trakcie tej tury, {Value1:plural one='następna % karta' few='następne
     % karty' many='następne % kart'} |Zdolności| {Value1:plural one='zostanie zagrana'
     few='zostaną zagrane' many='zostanie zagranych'} dwukrotnie.
+KoishiKiss:
+  Name: Puszczenie Całusa
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Nałóż {Value1} |Osłabienia|.\nWykonaj |Atak Kartą Reakcji|"
+BaseFollower:
+  Name: Instynktowna Miłość
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nNa początku walki i po przetasowaniu\
+    \ stosu zrzutek, {SelfName} jest umieszczana na spodzie stosu doboru."
+KoishiUltimateToken:
+  Description: "Zadaj {Value1:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ oraz zyskaj {TotalMana}.\n|Gdy Przetrzymana:| Zwiększ obrażenia {SelfName} o\
+    \ {Value} oraz zwiększ ilość otrzymanej many o {Mana}."
+  Name: Rozkwit Życia
+PassionMemory:
+  Name: Namiętne Wspomnienia
+  Description: Wejdź w stan |Pasji|.
+Claustrophobia:
+  Name: Klaustrofobia
+  Description: "Zyskaj {Block} |Bloku|.\n|Instynkt:| Zyskaj {Shield} |Bariery|."
+MultiFollower:
+  Name: Taniec Serca
