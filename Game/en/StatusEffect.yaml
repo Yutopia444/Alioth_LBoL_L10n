@@ -108,10 +108,12 @@ LockedOn:
     \ of each turn."
 Graze:
   Description: "{OwnerName} takes 0 damage from the next {Level:plural one='attack'\
-    \ other='% attacks'}.\nLose 1 |Graze| when attacked or when turn starts."
+    \ other='% attacks'}.\nLose 1 |Graze| when attacked or when a |Natural Turn| starts."
   Name: Graze
   Brief: "{OwnerName} takes 0 damage from attacks.\nLose 1 |Graze| when attacked or\
-    \ at the start of each turn."
+    \ when a |Natural Turn| starts."
+  ExtraDescription: "{OwnerName} takes 0 damage from the next {Level:plural one='attack'\
+    \ other='% attacks'}.\nLose 1 |Graze| when attacked or when a |Natural Turn| starts.\n"
 TurnStartDontLoseBlock:
   Description: "{OwnerName} does not lose |Block| at the start of the {Level:plural\
     \ one='next turn' other='next % turns'}."
@@ -139,9 +141,9 @@ Amulet:
 TempElectric:
   Name: Static Charge
   Description: "When damaged, deal {Level} damage back to the attacker.\nRemoved at\
-    \ the start of {OwnerName}'s next turn."
+    \ the start of {OwnerName}'s next |Natural Turn|."
   Brief: "When damaged, deal damage to the attacker.\nRemoved at the start of {OwnerName}'s\
-    \ next turn."
+    \ next |Natural Turn|."
 ScarletDestiny:
   Name: Scarlet Fate
   Description: "After {Limit} cards are played, {OwnerName} ends {PlayerName}'s turn.\n\
@@ -214,7 +216,7 @@ MadokaBowSe:
     \ shuffle half of them to the draw pile and the other half to the discard pile."
   Name: Bow Which Shoots Light
 ShendengSe:
-  Description: At the end of {OwnerName}'s turn, {PlayerName} randomly gains {Level}
+  Description: After all enemies take their turn, {PlayerName} randomly gains {Level}
     |Weak|, |Frail| or |Vulnerable|.
   Name: Teapot With Long Spout
 MasterOfCollectionSe:
@@ -494,7 +496,9 @@ KokoroYou:
     occurred)
   Name: Sorrow
 LongEscape:
-  Description: '{OwnerName} will leave combat when her life is less than {Level}.'
+  Description: '{OwnerName} will leave combat when her life is less than {Level}.
+
+    Will drop {Level} <sprite="Point" name="Gold"> when defeated.'
   Name: Ease Up
 FlatPeach:
   Description: Whenever {OwnerName} takes damage, she gains {Level} life.
@@ -517,8 +521,7 @@ DreamServant:
   Description: "{OwnerName} cannot be harmed."
   Name: Dream Inhabitant
 LongLight:
-  Description: '{OwnerName} shines like a star! She deals more damage and her Status
-    cards are more powerful.'
+  Description: '{OwnerName} shines like a star! Her Status cards are more powerful.'
   Name: Shining Tripod
 Vampire:
   Description: '{OwnerName} gains life equal to unblocked damage dealt. Scary!'
@@ -1021,15 +1024,15 @@ YouxiangWakeSe:
 SuperExtraTurn:
   Name: '"End of Imperishable Night"'
   Description: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
-    |Block| and |Graze| aren't lost at the start of that extra turn, and only {Level}\
-    \ card{Level:plural one='' other='s'} can be played.\nTurn status: {StatusString}."
+    |Block| is not lost at the start of that extra turn, and only {Level} card{Level:plural\
+    \ one='' other='s'} can be played.\nTurn status: {StatusString}."
   Brief: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n|Block|\
     \ and |Graze| aren't lost at the start of that extra turn, and only {Level} card{Level:plural\
     \ one='' other='s'} can be played."
   ExtraDescription: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
-    |Block| and |Graze| aren't lost at the start of that extra turn, and only {Level}\
-    \ card{Level:plural one='' other='s'} can be played.\nTurn Status: {Count} card{Count:plural\
-    \ one='' other='s'} left from {SelfName}'s turn.\n"
+    |Block| is not lost at the start of that extra turn, and only {Level} card{Level:plural\
+    \ one='' other='s'} can be played.\nTurn Status: {Count} card{Count:plural one=''\
+    \ other='s'} left from {SelfName}'s turn.\n"
 BossAct:
   Brief: After {OwnerName} takes an amount of damage, immediately acts once, without
     ending {PlayerName}'s turn.
@@ -1306,3 +1309,12 @@ SelfControlSe:
     in |Passion|, or {Count} |Block| if she's in |Serenity|.
   Brief: At the end of {PlayerName}'s turn, gain |Firepower| if she's in |Passion|,
     or |Block| if she's in |Serenity|.
+MaxHandSe:
+  Name: Fairy Assembly
+  Description: Maximum hand size increased to {MaxHand}.
+  Brief: Maximum hand size increased to {MaxHand}.
+EnemyVulnerable:
+  Description: After all enemies take their turn, {PlayerName} gains {Level} |Vulnerable|.
+EnemyLockedOn:
+  Description: After all enemies take their turn, {PlayerName} gains {Level} |Lock
+    On|.
