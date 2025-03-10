@@ -2853,7 +2853,7 @@ DoubleActiveTrigger:
   Name: Podwójna Aktywacja
   Description: (WIP)
 BabyDream:
-  Name: Sen Zarodka
+  Name: Sen Embrionu
   Description: "Zyskaj {Shield} |Bariery|.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą\
     \ |Wyśnioną| |Kartę Reakcji|. "
 UpgradeDoll:
@@ -2861,9 +2861,9 @@ UpgradeDoll:
   Description: Ulepsz |e:Kukiełkę Shanghai|.
 PerfectCrime:
   Name: Przestępstwo Doskonałe
-  Description: "Ukradnij |Uduchowienie|, |Uniki|, |Amulety|, |Kamuflaż Optyczny|,\
-    \ |Nieskazitelność| celu.\nZadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'}."
+  Description: "Ukradnij celowi |Barierę|, |Unik|, |Kamuflaż Optyczny|, |Nieskazitelny\
+    \ Jedwab| oraz maksymalnie do {Value1} |Mocy| i |Uduchowienia|."
+  FlavorText: Masz śliczny "Księżycowy Welon". Teraz należy do mnie!
 AliceAttackW:
   Name: Futurystyczne Bunraku
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
@@ -3183,6 +3183,11 @@ PsycheLock:
     Na początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie karty w ręce.\n\
     Może zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne |Stany Umysłu| gdy\
     \ ta karta jest w ręce. (Zostało {Count})"
+  UpgradedNonbattleDescription: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową\
+    \ turę.\nNa początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie karty w\
+    \ ręce.\nMoże zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne |Stany\
+    \ Umysłu| gdy ta karta jest w ręce."
+  FlavorText: Powód zamknięcia jej trzeciego oka może mieścić się w środku.
 YukariSwarm:
   Name: Gniazdo Morskich Iskierek
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -3442,3 +3447,70 @@ KoishiSpringOut:
   Name: Wiosenne Wakacje
   Description: "|W stanie Uspokojenia|: Dobierz {Value1:plural one='% kartę' few='%\
     \ karty' many='% kart'}.\nW przeciwnym razie, wejdź w stan |Uspokojenia|."
+KoishiTouying:
+  Name: Żar Miłości
+  Description: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart aby dodać je\
+    \ do ręki. Ma ona |Dopełnienie|, |Wygnanie| oraz |Eteryczność|.\nTe karty mają\
+    \ całkowity koszt co najmniej {Value2}."
+  FlavorText: Mam świetny pomysł.
+SelfControl:
+  ExtraDescription1: Wejdź w stan |Pasji|.
+  ExtraDescription2: Wejdź w stan |Uspokojenia|.
+  Name: Samokontrola
+  Description: "|Wybierz|: Wejdź w stan |Pasji| lub |Uspokojenia|.\nNa końcu tury\
+    \ {PlayerName:g}, zyskaj {Value1} |Mocy| jeśli jest ona w stanie |Pasji|, lub\
+    \ {Value2} |Bloku| jeśli jest ona w stanie |Uspokojenia|."
+BlackEpiphany:
+  Description: "Wejdź w stan |Olśnienia|.\nTylko {Value1:plural one='% karta' few='%\
+    \ karty' many='% kart'} może zostać {Value1:plural one='zagrana' few='% zagrane'\
+    \ many='% zagranych'} w następnej turze {PlayerName:g}."
+  Name: Umykająca Świadomość
+KoishiPlayDiscard:
+  Description: "Wybierz maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'} ze stosu odrzuconych i zagraj {Value1:plural one='ją jak |Kartę Reakcji|\
+    \ ' other='je jak |Karty Reakcji|'}.\nKażda wybrana karta nie będąca |Kartą Reakcji|\
+    \ zostanie |Wygnana|."
+  Name: Filozofia Znienawidzonej Osoby
+  DetailText: Jeśli wybrana zostanie karta |Niegrywalna|, nie będzie ona zagrana ani
+    |Wygnana|.
+KoishiDna:
+  DetailText: 'v.1.6.1: Efekt auto-zagrania aktywuje się przed fazą doboru.'
+  Name: Przybycie Autentycznego Ja
+  Description: "Zagraj wierzchnią kartę ze stosu doboru.\nNa początku tury {PlayerName:g},\
+    \ zagraj wierzchnią kartę ze stosu doboru."
+KoishiPotential:
+  Name: Uwolniony Potencjał
+  DetailText: Jeśli wybrana zostanie karta |Niegrywalna|, nie będzie ona zagrana ani
+    |Wygnana|.
+  Description: Spójrz na {Value1:plural one='% wierzchnią kartę' few='% wierzchnie
+    karty' many='% wierzchnich kart'} ze stosu doboru. Wybierz jedną by zagrać ją
+    dwukrotnie, a następnie |Wygnaj| ją.
+  FlavorText: Gdy używasz tylko 25% swojego mózgu.
+KoishiDrawTopCards:
+  Name: Test Rorschacha
+  Description: Spójrz na {Value1:plural one='% wierzchnią kartę' few='% wierzchnie
+    karty' many='% wierzchnich kart'} ze stosu doboru. Wybierz jedną by została ona
+    na stosie a resztę dobierz.
+KoishiMana:
+  Name: Podziemna Róża
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\nZyskaj {Mana}."
+TheFool:
+  Description: "|Przewidź| {Scry}.\nZagraj wierzchnią kartę ze stosu doboru."
+  Name: 'Tarot: Głupiec'
+KoishiAttackX:
+  Name: Różane Piekło
+FakeBullet:
+  Name: Urojone Danmaku
+  Description: "Wykonaj {Value1:plural one='% |Atak Kartą Reakcji|' few='% |Ataki\
+    \ Kartami Reakcji|' many='% |Ataków Kartami Reakcji|'}.\nJeśli w stosie doboru\
+    \ nie ma wystarczającej liczby |Kart Reacji|, losowe |Karta Reakcji| zostaną wygenerowane\
+    \ do wykonania |{Value1:plural one='Ataku Kartą Reakcji' other='Ataków Kartami\
+    \ Reakcji'}|."
+KoishiSpark:
+  Name: Ostatni Romantyczny Nocny Telefon
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
+    wszystkim wrogom.
+GainInspiration:
+  Name: Daj Pomyśleć
+  Description: "Na końcu tury {PlayerName:g}, dodaj |Eureka!| do stosu doboru.\n"
