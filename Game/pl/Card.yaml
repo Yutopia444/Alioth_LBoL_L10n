@@ -463,7 +463,7 @@ ShibaiChanwu:
 ShinningPotion:
   Name: Świetlny Grzyb
   Description: "Zyskaj {Block} |Bloku|.\nDodaj |Niestabilną Miksturę| do stosu doboru.\n\
-    |Załaduj 2|: Dodaj zamiast tego {Value1}."
+    |Załaduj 2|: Zamiast tego, dodaj {Value1}."
   FlavorText: Powiedziałaś mi, abym weszła w pod kołdrę tylko po to, aby to obejrzeć?"
 Yinhe:
   Name: Droga Mleczna
@@ -791,9 +791,9 @@ Knife:
   FlavorText: Przez ochronę z tymi nie przejdziesz.
 Dejavu:
   Name: Déjà Vu
-  Description: "Połóż do {Value1:plural one='% kartę' few='% kart' many='% kart'}\
-    \ na wierzch stosu doboru.\nDobierz {Value1:plural one='% kartę' few='% karty'\
-    \ many='% kart'}.\nZyskaj {Mana}."
+  Description: "Umieść maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'} na wierzch stosu doboru.\nDobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nZyskaj {Mana}."
   FlavorText: To ponownie ten sam kot.
 SakuyaSnow:
   Name: Postanowienie Zimowe
@@ -867,7 +867,7 @@ SakuyaDraw:
     \ few='% karty' many='% kart'}."
 PrepareParty:
   Name: Przygotowanie Przyjęcia
-  Description: "Połóż kartę z ręki na wierzch stosu doboru.\nZyskaj {Block} |Bloku|."
+  Description: "Umieść kartę z ręki na wierzch stosu doboru.\nZyskaj {Block} |Bloku|."
   FlavorText: Gotowce mają gwarancje na to, że nie zostaną podane.
 MihuanJack:
   Name: Złodziejka Czasu
@@ -1869,8 +1869,8 @@ NewsEntertainment:
   Description: "Dobierz karty do pełnej ręki.\n|Ograniczony【{DeckCounter}】|"
   FlavorText: '...Kaguya Houraisan wyraziła dziennikarce, że jakakolwiek organizacja
     lub mieszkaniec Gensoukyou, który dostarczy użyteczną wskazówkę zostanie nagrodzony
-    kukiełką księżycowego królika limitowanej edycji. Mag, która jest na bierząco
-    i chciała zachować anonimowość, powiedziała naszej dziennikarce…'
+    kukiełką księżycowego królika limitowanej edycji. Mag, która jest na bieżąco i
+    chciała zachować anonimowość, powiedziała naszej dziennikarce…'
 WolfFur:
   Name: Sierść Wilka
   Description: '|Ograniczony【{DeckCounter}】|'
@@ -1909,9 +1909,9 @@ Xuanguang:
     danmaku.'
 SakuyaLock:
   Name: Oblężenie Czasowe
-  Description: "Wywołaj <color=#B7F0FF>Srebrne Oblężenie</color> raz.\n(Otrzymaj {Value1:plural\
+  Description: "Aktywuj <color=#B7F0FF>Srebrne Oblężenie</color> raz.\n(Otrzymaj {Value1:plural\
     \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}.)"
-  NonbattleDescription: Wywołaj |Srebrne Oblężenie|.
+  NonbattleDescription: Aktywuj |Srebrne Oblężenie|.
   FlavorText: '"Niskie HP? To problem przyszłej mnie."'
 Chunguang:
   Name: Czysta Światłość
@@ -2821,7 +2821,7 @@ PatchouliFriend:
     \ few='|% Niestabilne Mikstury|' many='|% Niestabilnych Mikstur|'} do ręki."
   FlavorText: '"Wstrząs, wstrząs, chwiej, wstrząs."'
 FlowerGone:
-  Description: "Zyskaj {Block} |Bloku|.\n|W Stanie Spokoju|: Zyskaj {Shield} |Bariery|."
+  Description: "Zyskaj {Block} |Bloku|.\n|W stanie Spokoju|: Zyskaj {Shield} |Bariery|."
   Name: Zanikające Wspomnienia
 TriggerAllPassive:
   Name: Aktywacja Biernych
@@ -2854,8 +2854,8 @@ DoubleActiveTrigger:
   Description: (WIP)
 BabyDream:
   Name: Sen Zarodka
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\nWejdź w stan |Uspokojenia|."
+  Description: "Zyskaj {Shield} |Bariery|.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą\
+    \ |Wyśnioną| |Kartę Reakcji|. "
 UpgradeDoll:
   Name: Bunraku Panny
   Description: Ulepsz |e:Kukiełkę Shanghai|.
@@ -3000,13 +3000,14 @@ Frog:
   Description: "Ta karta została zapeszona.\nOryginał: {CardName}"
   NonbattleDescription: Ta karta została zapeszona.
 LeaveMoodDraw:
-  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Wyjdź z aktualnego |Stanu Umysłu|."
-  Name: Nieświadome Meandrowanie
+  Description: "Wyjdź z aktualnego |Stanu Umysłu|.\nDobierz {Value1:plural one='%\
+    \ kartę' few='% karty' many='% kart'}."
+  Name: Ciekawość
+  FlavorText: Nie jestem kotem.
 LeaveMoodGraze:
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
     Wyjdź z aktualnego |Stanu Umysłu|."
-  Name: Nieświadomy Unik
+  Name: Ukrycie Obecności
 YoumuAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Wygnaj| kartę w dłoni."
@@ -3081,7 +3082,7 @@ FrozenOrb:
   Name: Zamrożona Kula
 PassionDefense:
   Name: Dyskrecja
-  Description: "Zyskaj {Block} |Bloku|.\n|Gdy w stanie Pasji|: Zyskaj o {Value1} więcej\
+  Description: "Zyskaj {Block} |Bloku|.\n|W stanie Pasji|: Zyskaj o {Value1} więcej\
     \ |Bloku|."
   FlavorText: Gdy trafiasz na pierwsze miejsce rankingu popularności, ale pragniesz
     zostać niezauważoną.
@@ -3112,16 +3113,17 @@ YijiuDraw:
   Description: "|Przewidź| {Scry}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
     \ many='% kart'}."
 PeaceEndTurn:
-  Name: Ocknięcie
+  Name: Chwila Wytchnienia
   Description: "Wejdź w stan |Uspokojenia|.\nZakończ turę {PlayerName:g}."
   UpgradedDescription: "Wybierz do {Value1:plural one='% karty' few='% kart' many='%\
     \ kart'} w stosie zrzutek i zwróć {Value1:plural one='ją' other='je'} do ręki.\
     \ |Przetrzymaj| {Value1:plural one='ją' other='je'} na tę turę.\nWejdź w stan\
     \ |Uspokojenia|.\nZakończ turę {PlayerName:g}."
 MoodChangeBlock:
-  Name: Forteca Umysłu
+  Name: Pole A.T.
   Description: Za każdym razem, gdy {PlayerName} zmieni swój |Stan Umysłu|, zyskaj
     {Value1} |Bloku|.
+  FlavorText: Nie mogę uciekać! Nie mogę uciekać!
 QingeDraw:
   Name: Ruch Płodu TAO
   FlavorText: Tzw. "Poszukiwanie chochlików".
@@ -3138,11 +3140,10 @@ IceWing:
     (Zostało {BlueCount:plural one='% niebieska karta' few='% niebieskie karty' many='%\
     \ niebeiskich kart'} w stosie doboru)"
 KoishiZeroAttack:
-  Name: Ślepa Miłość
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom.\n|Gdy w stanie Fugi|: Zadaj obrażenia dwa razy."
+  Name: Transkrypcja DNA
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
 LeaveMoodAttack:
-  Name: Nieświadomy Czyn
+  Name: Uwolnienie Umysłu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Wyjdź z aktualnego |Stanu Umysłu|."
 ShopAttack:
@@ -3172,14 +3173,16 @@ SakuyaZeroDefense:
   Name: Odbicie Danmaku
 PsycheLock:
   Name: Blokada Psychiki
-  NonbattleDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'} wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\n\
-    Zyskaj {Mana}.\nMoże zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne\
-    \ |Stany Umysłu| gdy ta karta jest w dłoni."
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ wszystkim wrogom {Value1:plural one='% raz' other='% razy'}.\nZyskaj {Mana}.\n\
+  NonbattleDescription: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową\
+    \ turę.\nMoże zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne |Stany\
+    \ Umysłu| gdy ta karta jest w ręce."
+  Description: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\nMoże\
+    \ zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne |Stany Umysłu| gdy\
+    \ ta karta jest w ręce. (Zostało {Count})"
+  UpgradedDescription: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\n\
+    Na początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie karty w ręce.\n\
     Może zostać zagrane tylko jeśli {PlayerName} weszła w 3 różne |Stany Umysłu| gdy\
-    \ ta karta jest w dłoni. (Zostało {Count})"
+    \ ta karta jest w ręce. (Zostało {Count})"
 YukariSwarm:
   Name: Gniazdo Morskich Iskierek
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -3196,7 +3199,7 @@ PassionAttackToDraw:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ {Value1:plural one='% raz' other='% razy'}.\nWejdź w stan |Pasji|.\nWtasuj tę\
     \ kartę do stosu doboru."
-  Name: Altruistyczna Miłość
+  Name: Klatka z Róż
 GreenLotus:
   Name: Lotus w Świetle Księżyca
   Description: Zyskaj {Mana}.
@@ -3207,9 +3210,9 @@ FriendDraw:
     \ aktywowany |u:Ultimate|, zyskaj {Value1:plural one='% losową manę' few='% losowe\
     \ many' many='% losowych man'}."
 FindInspiration:
-  Name: Poszukiwanie Inspiracji
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Zyskaj {Value1} |Olśnienia|."
+  Name: Przebłysk Inspiracji
+  Description: "Dodaj {Level} |Eureka!| do stosu doboru."
+  FlavorText: '"Czy to możliwe...? To ja jestem winna?"'
 DefaultPassion:
   Name: Romantyczna Róża
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -3230,13 +3233,15 @@ MoodAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Gdy {PlayerName} zmieni swój |Stan Umysłu|, zwróć tę kartę ze stosu zrzutek do\
     \ ręki."
+  Name: Ostrze Wahadłowe
 PassionVulnerable:
-  Name: Uwolnienie Id
-  Description: "|Gdy w stanie Pasji|: Nałóż {Value1} |Wrażliwości| na wszystkich wrogów.\n\
-    |Gdy poza stanem Pasji|: Wejdź w stan |Pasji|."
+  Name: Bezsenna Noc
+  Description: "|W stanie Pasji|: Nałóż {Value1} |Wrażliwości| na wszystkich wrogów.\n\
+    W przeciwnym razie, wejdź w stan |Pasji|."
 PassionDraw:
   Description: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz {Value1:plural
     one='% kartę' few='% karty' many='% kart'}.
+  Name: Miłosna Rozłąka
 YoumuHybrid:
   Name: Pól-Człowiek, Pół-Duch
   Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\">|: |Wygnaj| do\
@@ -3312,7 +3317,7 @@ BailianMagic:
 KoishiKiss:
   Name: Puszczenie Całusa
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Nałóż {Value1} |Osłabienia|.\nWykonaj |Atak Kartą Reakcji|"
+    Nałóż {Value1} |Osłabienia|.\nWykonaj |Atak Kartą Reakcji|."
 BaseFollower:
   Name: Instynktowna Miłość
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -3331,3 +3336,109 @@ Claustrophobia:
   Description: "Zyskaj {Block} |Bloku|.\n|Instynkt:| Zyskaj {Shield} |Bariery|."
 MultiFollower:
   Name: Taniec Serca
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ {Value1:plural one='% raz' other='% razy'}.\nNa początku walki i po przetasowaniu\
+    \ stosu zrzutek, {SelfName} jest umieszczana na spodzie stosu doboru."
+CloseEye:
+  Name: Zamknięte Serce
+  Description: "Zyskaj {Shield} |Bariery|.\nNa czas następnej tury {PlayerName:g}\
+    \ intencje wrogów zostaną ukryte."
+  FlavorText: Koishi zamknęła swoje telepatyczne trzecie oko.
+PlayDrawTop:
+  FlavorText: '"Tylko nie Transfer Funduszy!"'
+  Name: Odruch Bezwarunkowy
+  Description: Zagraj wierzchnią kartę ze stosu doboru.
+DefenseFollowAttack:
+  Name: Urojone Prześladowanie
+  Description: "Zyskaj {Block} |Bloku|.\nWykonaj |Atak Kartą Reakcji|."
+YaoguaiLaser:
+  Name: Youkai'owy Elektroencefalograf
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Wykonaj |Atak Kartą Reakcji|.\n|Instynkt|: Wykonaj dodatkowy |Atak Kartą Reakcji|."
+DuplicateFollower:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    Zyskaj {Mana}.\n|Na początku walki|: Dodaj {Value1:plural one='% |Kopię|' few='%\
+    \ |Kopie|' many='% |Kopii|'} {SelfName} do stosu doboru."
+  Name: Samotne Serce
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nZyskaj {Mana}."
+TheHermit:
+  UpgradedDescription: "|Przewidź| {Scry}.\n|Ulepsz| wierzchnią kartę ze stosu doboru.\n\
+    Zyskaj {Mana}.\n|W stanie Olśnienia|: {SelfName} kosztuje <sprite=\"ManaSprite\"\
+    \ name=\"0\">."
+  Description: "|Przewidź| {Scry}.\nZyskaj {Mana}.\n|W stanie Olśnienia|: {SelfName}\
+    \ kosztuje <sprite=\"ManaSprite\" name=\"0\"> do zagrania."
+  Name: 'Tarot: Pustelnik'
+KoishiGainColorless:
+  FlavorText: Nie pamiętam jakiego koloru była ta mana.
+  UpgradedDescription: Zyskaj {Mana}.
+  Name: Spokojny Umysł
+  Description: Zyskaj {Mana}.
+TheChariot:
+  Name: 'Tarot: Powóz'
+  Description: "|Przewidź| {Scry}.\nNa początku następnej tury {PlayerName:g}, wejdź\
+    \ w stan |Pasji| i dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}."
+KoishiDrawTop:
+  UpgradedDescription: "Dobierz {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'}.\n|Ulepsz| {Value2:plural one='% kartę' few='% karty' many='% kart'}\
+    \ w ręce i umieść {Value2:plural one='ją' other='je'} na wierzch talii doboru."
+  Name: Rozmawiaj z Kapeluszem
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Umieść {Value2:plural one='% kartę' few='% karty' many='% kart'} z ręki na wierzch\
+    \ talii doboru."
+  FlavorText: '"Już wiem kto jest winny przestępstwa!"'
+PeaceMemory:
+  Name: Kojące Wspomnienia
+  Description: Wejdź w stan |Uspokojenia|.
+AncestorDream:
+  Name: Marzenia Przodków
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą |Wyśnioną|\
+    \ |Kartę Reakcji|. "
+KoishiWake:
+  Description: "Wyjdź z aktualnego |Stanu Umysłu|. Ulecz {Value1} zdrowia.\n|W stanie\
+    \ Olśnienia|: Zyskaj {Shield} |Bariery|."
+  FlavorText: '"Gdzie ja jestem?"'
+  Name: Reset Umysłu
+InspirationDefense:
+  Name: Moment Inspiracji
+  Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1l:plural one='% |Inspirację|'\
+    \ few='% |Inspiracje|' many='% |Inspiracji|'}."
+  FlavorText: "Mieszkańcy wsi dzielą się sekretami swojej dobrze zorganizowanej społeczności.\n\
+    Koishi udało się poczynić znaczące postępy w pracach nad Fuzją Nuklearną."
+KoishiFlower:
+  Name: Psotna Róża
+  Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nDodaj {Value1} |Letnie Kwiaty| do ręki.\n|W stanie\
+    \ Olśnienia|: Zamiast tego, dodaj {Value2}."
+KoishiFire:
+  Description: "Zyskaj {Value1} |Mocy|.\n|W stanie Pasji|: Zyskaj dodatkowe {Value2}\
+    \ |Mocy|.\n|W stanie Uspokojenia|: Zamiast tego, zyskaj {Value1} |Uduchowienia|."
+  Name: Kapryśność
+GainZeroAttack:
+  Name: Wada DNA
+  Description: Na początku tury {PlayerName:g} dodaj {Value1:plural one='% |Transkrypcję
+    DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|} do ręki. {Value1:plural
+    one='Ma ono' other='Mają one'} |Wygnanie| and |Eteryczność|.
+  UpgradedDescription: "Na początku tury {PlayerName:g} dodaj {Value1:plural one='%\
+    \ |Transkrypcję DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|} do\
+    \ ręki. {Value1:plural one='Ma ono' other='Mają one'} |Wygnanie| and |Eteryczność|.\n\
+    Aktywuj |Wadę DNA| jeden raz."
+KoishiGrowAttack:
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
+    |Przyrost|: Zwiększ obrażenia tej karty o {Value1}.\n|W stanie Uspokojenia|: {SelfName}\
+    \ kosztują {Mana}."
+  Name: Szalone Ciernie
+ToAllFollower:
+  Name: Przypływ Emocji
+  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
+    \ wszystkim wrogom.\n|W stanie Olśnienia|: Zadaj obrażenia dodatkowy raz."
+GrazeFollowAttack:
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
+    Wykonaj |Atak Kartą Reakcji|."
+  Name: Instynktowny Odruch
+KoishiSpringOut:
+  Name: Wiosenne Wakacje
+  Description: "|W stanie Uspokojenia|: Dobierz {Value1:plural one='% kartę' few='%\
+    \ karty' many='% kart'}.\nW przeciwnym razie, wejdź w stan |Uspokojenia|."
