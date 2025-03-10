@@ -1,11 +1,11 @@
-GamerunInitial:
-  Name: 初始卡牌
-  Description: '初始卡牌标记，不会显示给玩家看到。'
-
 #卡牌类型相关
 Basic:
   Name: 基础
   Description: '这是一张基础卡牌。'
+
+Yinyang:
+  Name: 阴阳玉牌
+  Description: '这是一张阴阳玉牌。'
 
 Ability:
   Name: 能力
@@ -199,8 +199,9 @@ NaturalTurn:
   Name: 自然回合
   Description: |-
     |自然回合|与额外回合相对。
-    战斗中的每一个轮次内，每一名角色都只能进行一个|自然回合|。
+    每个轮次内，每名角色都只能进行一个|自然回合|。
 
+#Cirno
 FriendCard:
   Name: 同伴
   Description: |-
@@ -226,6 +227,7 @@ Loyalty:
     用于支付|同伴|的|a:主动技能|和|u:终结技|。
     归零或使用|u:终结技|后，从战斗中移除|同伴|牌。
 
+#Koishi
 Mood:
   Name: 心境
   Description: '|心境|是一类特殊的状态，同一时刻只能处于一种|心境|中。'
@@ -240,18 +242,21 @@ Dream:
     将抽牌堆顶的 X 张牌移入弃牌堆，使之成为|梦境牌|。
     洗牌后，从所有的|梦境牌|中选择一张移入手中。
 
+#Alice
 Deploy:
   Name: 部署
   Description: |-
     将一个人偶置于战场中。
-    数量达到上限时，最旧的人偶会发动|操纵效果|并离开战场。
+    数量达到上限后无法生效。
 
-Magic:
-  Name: 魔力
+Promote:
+  Name: 晋升
   Description: |-
-    达到临界值时，消耗魔力发动人偶的|操纵效果|。
+    强化一个人偶。
+    从随机产生的 3 个晋升方向中，选择一项生效。
 
-Leave:
-  Name: 撤离
+Kicker:
+  Name: 增幅 X
   Description: |-
-    发动一个人偶的|操纵效果|并使其离开战场。
+    打出此卡牌时可以额外支付法力。
+    （通过左下角法力面板设置）

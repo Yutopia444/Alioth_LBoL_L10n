@@ -111,8 +111,8 @@ LingfuHuti:
 JingshenYishi:
   Name: 净身仪式
   Description: |-
-    抽 {Value1} 张牌。
-    获得 {Value2} 点|神恩|。
+    获得 {Block} 点|格挡|。
+    选择一张手牌|放逐|。
 
 YinyangBaoyu:
   Name: 阴阳宝玉
@@ -246,7 +246,7 @@ MingzhuAntou:
   Description: |-
     对所有敌人造成 {Damage} 点伤害。
     从 {Value1} 张|虹龙阴阳玉|中选择一张加入手中。
-    |战场|中每存在一张|阴阳玉|，{SelfName}费用降低{Mana}。
+    |战场|中每存在一张|阴阳玉牌|，{SelfName}费用降低{Mana}。
   FlavorText: 每次投出珠子都有概率触发「重开当前关卡」。
 
 YakongDianxue:
@@ -277,7 +277,7 @@ YinyangXueyin:
   Description: |-
     失去 {Value2} 点生命。
     将一张|阴阳玉|加入手中。
-    打出|阴阳玉|后获得 {Value1} 点|暂得火力|和|暂得灵力|。
+    打出|阴阳玉牌|后获得 {Value1} 点|暂得火力|和|暂得灵力|。
   FlavorText: 买不起别的施法材料，只能用血了。
 
 ReimuFreeAttack:
@@ -2373,7 +2373,7 @@ FollowAttackFiller:
   Description: 造成 {Damage} 点伤害。
   FlavorText: 叮铃铃——叮铃铃——
 
-AliceAttackW:
+AliceAttackU:
   Name: 人形枪击
   Description: 造成 {Damage} 点伤害。
 
@@ -2385,48 +2385,70 @@ AliceBlockU:
   Name: 防御魔法
   Description: 获得 {Block} 点|格挡|。
 
-DeployShanghai:
-  Name: 部署上海人偶
-  Description: '|部署|一个|e:上海人偶|，发动其|操纵效果|。'
+AliceBlockB:
+  Name: 爱丽丝黑色防御
+  Description: 获得 {Block} 点|格挡|。
 
-UpgradeDoll:
-  Name: 少女文乐
-  Description: 升级一个|e:上海人偶|。
+DeployShanghai:
+  Name: 修缮人偶
+  Description: |-
+    |部署|一个|e:上海人偶|；
+    或|晋升|一个人偶。
 
 DeployPenglai:
-  Name: 部署蓬莱人偶
-  Description: '|部署|一个|e:蓬莱人偶|，发动其|操纵效果|。'
+  Name: 少女文乐
+  Description: |-
+    |部署|一个|e:蓬莱人偶|。
+    |增幅{KickerCost}：|改为两个。
 
 SacrificeDoll:
-  Name: 自杀协议
-  Description: 选择一个人偶|撤离|，对所有敌人造成 {Damage} 点伤害。
+  Name: 回归虚无
+  Description: |-
+    选择一个人偶撤离战场，对所有敌人造成 {Damage} 点伤害。
+    |增幅{KickerCost}：|可以执行两次。
+  DetailText: 选择两个人偶才能造成两次伤害。
+
+AliceKickerAttack:
+  Name: 增幅攻击
+  Description: |-
+    造成 {Damage} 点伤害。
+    |增幅{KickerCost}：|造成两次伤害。
 
 DollBlock:
   Name: 人形当身
+  Description: (WIP) 
 
 DollFactory:
   Name: 人形工坊
+  Description: (WIP) 
 
 AutoHousework:
   Name: 家政自动化
-
-DollRepair:
-  Name: 人形修缮
-
-DollSacrifice:
-  Name: 回归虚无
+  Description: (WIP) 
 
 Qianqiang:
   Name: 萌萌大千枪
+  Description: (WIP) 
 
 DollFangzhen:
   Name: 人形方阵
-
-DollZuzhou:
-  Name: 上吊的蓬莱人形
+  Description: (WIP) 
 
 Zhendijianzao:
   Name: 阵地建造
+  Description: (WIP) 
+
+MansionNight:
+  Name: 洋馆惊魂夜
+  Description: (WIP) 
+
+DollFormation:
+  Name: 小小战团
+  Description: (WIP) 
+
+DollFire:
+  Name: 人形火葬
+  Description: (WIP) 
 
 DoubleActiveTrigger:
   Name: 双重触发
@@ -3316,6 +3338,12 @@ MogongAttack:
     造成 {Damage} 点伤害。
     |手牌中|：打出其它牌时，提高{SelfName}的伤害和|格挡|，直到与打出卡牌的基础值相等。
 
+SanaeWind:
+  Name: 神之风
+  Description: |-
+    抽 {Value1} 张牌。
+    获得 {Value2} 点|神恩|。
+
 TianziMana:
   Name: 天人飞翔
   Description: 获得{Mana}。
@@ -3759,7 +3787,7 @@ HuiyeSuperExtraTurn:
   Name: 「永夜返」
   Description: |-
     {PlayerName}的|自然回合|结束时，进行一个额外的回合。
-    这一回合开始时不会失去|格挡|和|闪避|，只能打出 {Value1} 张牌。
+    这一回合开始时不会失去|格挡|，只能打出 {Value1} 张牌。
   DetailText: |-
     {SelfName}所带来的额外回合，总是先于其它额外回合发生。
     打出{SelfName}后，可以悬停{PlayerName}身上的状态来查看当前回合的详细信息。
@@ -3920,6 +3948,9 @@ RabbitFoot:
 GainTreasure:
   Name: 招财进宝
   Description: 获得 {Value1} 点<sprite="Point" name="Gold">。
+  ExtraDescription1: |-
+    获得 {Value1} 点<sprite="Point" name="Gold">。
+    本次游戏已获得 {TotalMoney} 点<sprite="Point" name="Gold">。
   FlavorText: 「你是否认为，以金钱作为报酬损害了符卡决斗的美好初衷？不用担心，X块链技术将用更文明的方式帮您解决资金问题。」
 
 MoonPurify:
@@ -3970,6 +4001,7 @@ NewsTidbit:
   Description: |-
     受到 {Value1} 层|锁定|。
     |消耗品【{DeckCounter}】|
+  DetailText: 不能在首领战后的|整备|中移除。
   FlavorText: ……透露，灵梦此行除有经济方面的考量外，也与她和辉夜私交甚密有关。据悉，灵梦经常出入永远亭内，和辉夜举止亲昵的影像也频繁流出。（花果子念报客户端）
 
 WolfFur:
@@ -4097,8 +4129,11 @@ Frog:
   Name: 青蛙
   Description: |-
     这张牌被诅咒了。
+    打出{SelfName}可以取回原卡牌。
     它曾经是：{CardName}
-  NonbattleDescription: 这张牌被诅咒了。
+  NonbattleDescription: |-
+    这张牌被诅咒了。
+    打出{SelfName}可以取回原卡牌。
 
 BlackResidue:
   Name: 黑暗残留
