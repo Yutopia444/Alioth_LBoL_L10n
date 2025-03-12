@@ -68,9 +68,13 @@ LockedOn:
 Graze:
   Name: Né Tránh
   Description: "{OwnerName} sẽ không nhận sát thương từ {Level} đòn tấn công tiếp\
-    \ theo của địch.\nGiảm 1 |Né Tránh| mỗi khi bị tấn công hoặc khi bắt đầu lượt."
+    \ theo của địch.\nGiảm 1 |Né Tránh| mỗi khi bị tấn công hoặc khi bắt đầu một |Lượt\
+    \ Thường|."
   Brief: "{OwnerName} sẽ không nhận sát thương từ các đòn tấn công của địch.\nGiảm\
-    \ 1 |Né Tránh| mỗi khi bị tấn công hoặc khi bắt đầu lượt."
+    \ 1 |Né Tránh| mỗi khi bị tấn công hoặc khi bắt đầu một |Lượt Thường|."
+  ExtraDescription: "{OwnerName} sẽ không nhận sát thương từ {Level} đòn tấn công\
+    \ tiếp theo của địch.\nGiảm 1 cộng dồn mỗi khi bị tấn công hoặc khi bắt đầu một\
+    \ Lượt Thường.\n"
 ExtraTurn:
   Name: Lượt Phụ
   Description: '{OwnerName} nhận thêm {Level} lượt nữa sau lượt này.'
@@ -169,9 +173,9 @@ Amulet:
   Description: Giải trừ {Level} hiệu ứng bất lợi tiếp theo phải nhận.
 TempElectric:
   Description: "Mỗi khi nhận sát thương, gây {Level} sát thương ngược lại cho kẻ tấn\
-    \ công.\nHiệu ứng bị xóa bỏ ở đầu lượt tiếp theo của {OwnerName}."
+    \ công.\nHiệu ứng bị xóa bỏ ở đầu |Lượt Thường| tiếp theo của {OwnerName}."
   Brief: "Mỗi khi nhận sát thương, gây sát thương ngược lại cho kẻ tấn công.\nHiệu\
-    \ ứng bị xóa bỏ ở đầu lượt tiếp theo của {OwnerName}."
+    \ ứng bị xóa bỏ ở đầu |Lượt Thường| tiếp theo của {OwnerName}."
   Name: Tích Điện
 NextTurnGainShield:
   Name: Hộ Giáp Lượt Kế
@@ -285,7 +289,9 @@ InterviewDone:
   Description: "{OwnerName} đã vén lên tấm màn sự thật về vụ dị biến!\nCô ấy sẽ phát\
     \ tán một số đặc biệt cho Thời Báo Bunbunmaru."
 LongEscape:
-  Description: '{OwnerName} sẽ rời trận đấu khi HP của cô ấy còn ít hơn {Level}.'
+  Description: '{OwnerName} sẽ rời trận đấu khi HP của cô ấy còn ít hơn {Level}.
+
+    Rơi ra thêm {Count} <sprite="Point" name="Gold"> khi bị hạ gục.'
   Name: Nhượng Bộ
 FlatPeach:
   Name: Đào Tiên
@@ -365,7 +371,7 @@ NextTurnGainBlock:
   Description: '{OwnerName} nhận {Level} |Khiên| ở đầu lượt tiếp theo của bản thân.'
 PhoneBillSe:
   Description: "{OwnerName} thu {Level} <sprite=\"Point\" name=\"Gold\"> sau mỗi cuộc\
-    \ gọi.\nRơi ra {Count} <sprite=\"Point\" name=\"Gold\"> khi bị hạ gục."
+    \ gọi.\nRơi ra thêm {Count} <sprite=\"Point\" name=\"Gold\"> khi bị hạ gục."
   Name: Cước Điện Thoại
 EnemyLarva:
   Name: Đôi Cánh Ấu Trùng
@@ -394,8 +400,8 @@ DeathVulnerable:
   Description: Khi {OwnerName} bị hạ gục, {PlayerName} phải nhận {Level} |Dễ Tổn Hại|.
 LongLight:
   Name: Giá Ba Chân Lấp Lánh
-  Description: '{OwnerName} sáng rỡ như sao! Lượng sát thương gây ra và các lá Trạng
-    Thái của cô ấy trở nên mạnh mẽ hơn.'
+  Description: '{OwnerName} sáng rỡ như sao! Các lá Trạng Thái của cô ấy trở nên mạnh
+    mẽ hơn.'
 Drowning:
   Name: Đuối Nước
   Description: '{OwnerName} nhận {Level} sát thương khi kết thúc lượt của bản thân.'
@@ -498,8 +504,8 @@ HuanxiangBlockSe:
   Brief: Mỗi khi một lá bài bị |Trục Xuất|, {PlayerName} nhận |Khiên|.
   Description: Mỗi khi một lá bài bị |Trục Xuất|, {PlayerName} nhận {Level} |Khiên|.
 ShendengSe:
-  Description: Khi {OwnerName} kết thúc lượt, {PlayerName} ngẫu nhiên phải nhận {Level}
-    |Suy Nhược|, |Vụn Vỡ| hoặc |Dễ Tổn Hại|.
+  Description: Sau khi tất cả kẻ địch kết thúc hành động của chúng, {PlayerName} ngẫu
+    nhiên phải chịu {Level} |Suy Nhược|, |Vụn Vỡ| hoặc |Dễ Tổn Hại|.
   Name: Ấm Trà Có Cái Vòi Dài
 InfinityGemsSe:
   Name: Găng Tay Trên Khảm Đá Quý
@@ -957,15 +963,14 @@ PrismriverSe:
 SuperExtraTurn:
   Name: '"Đêm Bất Diệt Phai Tàn"'
   Brief: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n|Khiên|\
-    \ và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối đa {Level}\
-    \ lá."
+    \ được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối đa {Level} lá."
   ExtraDescription: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt\
-    \ phụ.\n|Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi\
-    \ {Level} lá.\nLượt hiện tại là: Lượt Phụ nhận bởi {SelfName}, còn có thể chơi\
-    \ tối đa {Count} lá.\n"
+    \ phụ.\n|Khiên| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi {Level} lá.\n\
+    Lượt hiện tại là: Lượt Phụ nhận bởi {SelfName}, còn có thể chơi tối đa {Count}\
+    \ lá.\n"
   Description: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
-    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối\
-    \ đa {Level} lá.\nLượt hiện tại là: {StatusString}."
+    |Khiên| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối đa {Level} lá.\n\
+    Lượt hiện tại là: {StatusString}."
 LoseSpiritSe:
   Description: Vào đầu lượt của {PlayerName}, giảm {Level} |Linh Lực|.
   Name: Vũ Y Biến Mất
@@ -1278,22 +1283,36 @@ SelfControlSe:
 TempControl:
   Name: Khống Chế Lực Tạm Thời
   Description: "Nhận thêm {Level} |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống\
-    \ Chế Lực| đề cao một số |Búp Bê| hiệu quả."
-  Brief: "Tăng |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống Chế Lực| đề cao\
-    \ một số |Búp Bê| hiệu quả."
+    \ Chế Lực| tăng cường một số hiệu ứng của |Con Rối|."
+  Brief: "Tăng |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống Chế Lực| tăng cường\
+    \ một số hiệu ứng của |Con Rối|."
 Control:
   Name: Khống Chế Lực
-  Description: "Nhận {Level} |Khống Chế Lực|.\n|Khống Chế Lực| đề cao một số |Búp\
-    \ Bê| hiệu quả."
-  Brief: "Tăng |Khống Chế Lực|.\n|Khống Chế Lực| đề cao một số |Búp Bê| hiệu quả."
+  Description: "Nhận {Level} |Khống Chế Lực|.\n|Khống Chế Lực| tăng cường một số hiệu\
+    \ ứng của |Con Rối|."
+  Brief: "Tăng |Khống Chế Lực|.\n|Khống Chế Lực| tăng cường một số hiệu ứng của |Con\
+    \ Rối|."
 TempControlNegative:
   Name: Giảm Khống Chế Lực Tạm Thời
   Description: "Giảm {Level} |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống Chế\
-    \ Lực| đề cao một số |Búp Bê| hiệu quả."
-  Brief: "Giảm |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống Chế Lực| đề cao\
-    \ một số |Búp Bê| hiệu quả."
+    \ Lực| tăng cường một số hiệu ứng của |Con Rối|."
+  Brief: "Giảm |Khống Chế Lực| cho đến khi kết thúc lượt.\n|Khống Chế Lực| tăng cường\
+    \ một số hiệu ứng của |Con Rối|."
 ControlNegative:
   Name: Giảm Khống Chế Lực
-  Brief: "Giảm |Khống Chế Lực|.\n|Khống Chế Lực| đề cao một số |Búp Bê| hiệu quả."
-  Description: "Mất {Level} |Khống Chế Lực|.\n|Khống Chế Lực| đề cao một số |Búp Bê|\
-    \ hiệu quả."
+  Brief: "Giảm |Khống Chế Lực|.\n|Khống Chế Lực| tăng cường một số hiệu ứng của |Con\
+    \ Rối|."
+  Description: "Mất {Level} |Khống Chế Lực|.\n|Khống Chế Lực| tăng cường một số hiệu\
+    \ ứng của |Con Rối|."
+EnemyVulnerable:
+  Name: Sắp Chịu Dễ Tổn Hại
+  Description: Sau khi tất cả kẻ địch kết thúc hành động của chúng, {PlayerName} phải
+    chịu {Level} |Dễ Tổn Hại|.
+MaxHandSe:
+  Name: Tiên Nữ Tập Hợp
+  Description: Số lá tối đa trên tay được tăng lên thành {MaxHand}.
+  Brief: Số lá tối đa trên tay được tăng lên thành {MaxHand}.
+EnemyLockedOn:
+  Name: Sắp Chịu Bị Nhắm Tới
+  Description: Sau khi tất cả kẻ địch kết thúc hành động của chúng, {PlayerName} phải
+    chịu {Level} |Bị Nhắm Tới|.

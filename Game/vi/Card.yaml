@@ -58,7 +58,7 @@ Jinfuzhen:
   Name: Pháp Trận Phong Ấn
 JingshenYishi:
   Name: Nghi Thức Thanh Tẩy
-  Description: "Bốc {Value1} lá.\nNhận {Value2} |Phước Lành|."
+  Description: "Nhận {Block} |Khiên|\n|Trục Xuất| một lá bài trên tay."
 YinyangBaoyu:
   Description: "Gây {Damage} sát thương.\nThêm một lá |Âm Dương Ngọc| lên tay."
   Name: Âm Dương Bảo Ngọc
@@ -163,8 +163,8 @@ QinggeManwu:
   FlavorText: Reimu vi bộ, La miệt sinh trần. (- Lạc thần phú|洛神賦 -)
 YinyangXueyin:
   Description: "Mất {Value2} HP.\nThêm một lá |Âm Dương Ngọc| lên tay.\nMỗi khi lá\
-    \ thuộc nhóm |Âm Dương Ngọc| được chơi, {PlayerName} nhận được {Value1} |Hỏa Lực\
-    \ Tạm Thời| và |Linh Lực Tạm Thời|."
+    \ nhóm |Âm Dương Ngọc| được chơi, {PlayerName} nhận được {Value1} |Hỏa Lực Tạm\
+    \ Thời| và |Linh Lực Tạm Thời|."
   FlavorText: Vì không có nguyên liệu đúc ngọc nên tôi đành dùng máu.
   Name: Âm Dương Huyết Ấn
 ReimuDrink:
@@ -255,8 +255,8 @@ ReverseJiejie:
 MingzhuAntou:
   Name: Bí Mật Đúc Ngọc
   Description: "Gây {Damage} sát thương cho mỗi kẻ địch.\nChọn 1 trong {Value1} |Hồng\
-    \ Long Âm Dương Ngọc| để thêm lên tay.\nVới mỗi |Âm Dương Ngọc| trên |Chiến Trường|,\
-    \ {SelfName} tốn {Mana} để chơi."
+    \ Long Âm Dương Ngọc| để thêm lên tay.\nVới mỗi lá nhóm |Âm Dương Ngọc| trên |Chiến\
+    \ Trường|, {SelfName} tốn {Mana} để chơi."
   FlavorText: Mỗi lần bạn thảy một viên ngọc sẽ cỏ một tỷ lệ kích hoạt "Bắt Đầu Lại".
 ReimuFreeAttack:
   Name: Ảo Tưởng Nhất Trùng
@@ -1627,8 +1627,6 @@ QinglanAttack:
   FlavorText: Dường như chúng đã được dịch chuyển đến ngay vị trí cũ…
   Description: "Gây {Damage} sát thương.\n|Tiên Đoán| {Scry}.\nBốc {Value2} lá."
   Name: Thỏ Đã Hạ Cánh
-AliceAttackW:
-  Name: Búp Bê Thương Kích
 PrismriverWhite:
   UpgradedDescription: "Nhận {Mana}.\nBốc {Value1} lá.\nThêm {Light} lá |Ánh Nắng\
     \ Khúc Xạ| vào Chồng Bài Bỏ.\n|Ra Mắt|: Nhận {Value2} <sprite=\"Point\" name=\"\
@@ -1997,6 +1995,8 @@ GainTreasure:
   FlavorText: Bạn có nghĩ rằng việc sử dụng vàng làm phần thưởng sẽ gây tổn hại đến
     mục đích tốt đẹp ban đầu của đấu Bài Phép không? Đừng lo lắng, công nghệ blockchain
     X sẽ giúp bạn giải quyết vấn đề tài chính một cách văn minh hơn."
+  ExtraDescription1: "Nhận {Value1} <sprite=\"Point\" name=\"Gold\">.\n(Đã nhận tổng\
+    \ cộng {TotalMoney} <sprite=\"Point\" name=\"Gold\"> trong lượt chạy này)"
 YuyukoSing:
   Description: "Gây {Damage} sát thương.\n{SelfName} có thể |Nâng Cấp| nhiều lần."
   Name: Cánh Bướm Vỗ
@@ -2390,6 +2390,7 @@ NewsTidbit:
     báo cáo về việc Reimu thường xuyên đi tới hoặc rời khỏi Vĩnh Viễn Đình, và các
     bức ảnh ghi lại cử chỉ thân mật giữa cô và Kaguya cũng liên tục bị rò rỉ. (Khách
     của báo tâm linh Kakashi)'
+  DetailText: Không thể bị xóa bỏ bằng lựa chọn |Chuẩn Bị| sau trận đấu với Trùm.
 Xingguang:
   Name: Ánh Sao Chói Lóa
   FlavorText: Ánh sao lung linh làm gián đoạn suy nghĩ của {PlayerName}.
@@ -2683,8 +2684,6 @@ DeployPenglai:
 AliceBlockU:
   Description: Nhận {Block} |Khiên|.
   Name: Ma Pháp Phòng Ngự
-UpgradeDoll:
-  Description: Nâng Cấp 1 |e:Búp Bê Thượng Hải|.
 FlanBlack:
   Description: "Thẻ này chưa có sẵn.\nVui lòng đợi cập nhật."
   FlavorText: Cô gái mang theo cái tên U.N.Owen, vứt bỏ mọi thứ phía sau và chiến
@@ -2714,8 +2713,6 @@ WanderingSoul:
     \ nhật."
 AutoHousework:
   Name: Tự Động Hóa Việc Nhà
-DollSacrifice:
-  Name: Về Với Vô Tri
 Qianqiang:
   Name: Thương Trận Đáng Yêu
 HuiyeMarblePhantasm:
@@ -2748,8 +2745,10 @@ DollFangzhen:
   Name: Phương Trận Búp Bê
 Frog:
   Name: Con Ếch
-  Description: "Lá bài này đã bị nguyền rủa.\nLúc trước nó là: {CardName}"
-  NonbattleDescription: Lá bài này đã bị nguyền rủa.
+  Description: "Lá bài này đã bị nguyền rủa.\nChơi lá {SelfName} này để khôi phục\
+    \ nó.\nLúc trước nó là: {CardName}"
+  NonbattleDescription: "Lá bài này đã bị nguyền rủa.\nChơi lá {SelfName} này để khôi\
+    \ phục nó."
 IceBolt:
   FlavorText: Dùng được qua đường miệng.
   Name: Đạn Băng
@@ -3179,8 +3178,7 @@ HuiyeSuperExtraTurn:
     \ đa {Value1} lá.\nSau khi chơi {SelfName}, bạn có thể di chuột đến biểu tượng\
     \ của hiệu ứng này để kiểm tra chi tiết về lượt hiện tại."
   Description: "Mỗi khi {PlayerName} kết thúc một |Lượt Thường|, nhận một lượt phụ.\n\
-    |Khiên| và |Né Tránh| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối\
-    \ đa {Value1} lá."
+    |Khiên| được bảo lưu vào đầu lượt phụ đó và chỉ có thể chơi tối đa {Value1} lá."
 DebugRemoveAllHandWhenDraw:
   Description: 'Thẻ gỡ lỗi: Khi được bốc, loại bỏ tất cả các lá trên tay khỏi trận
     đấu (kể cả chính lá này).'
@@ -3275,14 +3273,20 @@ ReimuEvilTerminator:
   Name: Chuyên Gia Trừ Tà
 TriggerAllPassive:
   Name: Kích Hoạt Toàn Bộ Bị Động
-  Description: (WIP) Kích hoạt hiệu ứng bị động của tất cả Búp Bê.
+  Description: (WIP) Kích hoạt hiệu ứng bị động của tất cả Con Rối.
 Zhendijianzao:
   Name: Thiết Lập Trận Địa
 GainDollSlot:
-  Description: (WIP) Nhận {Value1} ô Búp Bê
+  Description: (WIP) Nhận {Value1} vị trí đặt rối.
   Name: Gain Doll Slot
 DoubleActiveTrigger:
-  Description: (WIP) Kích hoạt hiệu ứng chủ động của Búp Bê ở mặt trước hai lần.
+  Description: (WIP) Kích hoạt hiệu ứng chủ động của Con Rối ở mặt trước hai lần.
   Name: Song Trọng Kích Hoạt
 DollBlock:
   Name: Búp Bê Đỡ Đòn
+AliceAttackU:
+  Description: Gây {Damage} sát thương.
+  Name: Búp Bê Thương Kích
+SanaeWind:
+  Description: "Bốc {Value1} lá.\nNhận {Value2} Phước Lành."
+  Name: Ngọn Gió Của Chư Thần
