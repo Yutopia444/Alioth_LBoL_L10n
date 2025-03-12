@@ -1,7 +1,8 @@
 Graze:
   Name: グレイズ
-  Brief: "{OwnerName}が受ける攻撃ダメージを0にする。\n攻撃されるかターン開始時に1減少する。"
-  Description: "{OwnerName}が受ける攻撃ダメージを0にする。残り{Level}回有効。\n攻撃されるかターン開始時に1減少する。"
+  Brief: "{OwnerName}が受ける攻撃ダメージを0にする。\n攻撃されるか通常ターン開始時に1減少する。"
+  Description: "{OwnerName}が受ける攻撃ダメージを0にする。残り{Level}回有効。\n攻撃されるか通常ターン開始時に1減少する。"
+  ExtraDescription: "{OwnerName}が受ける攻撃ダメージを0にする。残り{Level}回有効。\n攻撃されるか通常ターン開始時に1減少する。\n"
 Reflect:
   Name: 反射
   Description: 攻撃してきた相手に{Level}点のダメージを与え、この効果を取り除く。
@@ -129,8 +130,8 @@ Electric:
   Brief: 攻撃してきた相手にダメージを与える。
 TempElectric:
   Name: 帯電
-  Brief: "攻撃してきた相手にダメージを与える。\n{OwnerName}のターン開始時にこの効果は取り除かれる。"
-  Description: "攻撃してきた相手に{Level}点のダメージを与える。\n{OwnerName}のターン開始時にこの効果は取り除かれる。"
+  Brief: "攻撃してきた相手にダメージを与える。\n{OwnerName}の通常ターン開始時にこの効果は取り除かれる。"
+  Description: "攻撃してきた相手に{Level}点のダメージを与える。\n{OwnerName}の通常ターン開始時にこの効果は取り除かれる。"
 NextAttackUp:
   Name: 攻撃ダメージ増加
   Description: 次に使用する|攻撃カード|のダメージが{Level}点増加する。
@@ -169,7 +170,7 @@ DeathExplodeCount:
 PhoneBillSe:
   Name: 電話代
   Description: "{OwnerName}が通話する度に、{PlayerName}から{Level}点の<sprite=\"Point\" name=\"\
-    Gold\">が課金される。\n倒されたとき {Count} 点の<sprite=\"Point\" name=\"Gold\">をドロップする。"
+    Gold\">が課金される。\n倒されたとき、<sprite=\"Point\" name=\"Gold\">{Count}を追加で入手する。"
 Lunatic:
   Description: "不思議な光が辺りの全員に影響を与えている。{OwnerName}は狂い、行動が強化される。\n{PlayerName}はターン開始時に{Mana}を得る。"
   Name: 狂気
@@ -229,12 +230,14 @@ KokoroYou:
   Description: '{OwnerName}の行動時、{PlayerName}は|脱力|{Level}を受ける。（発生済み）'
 LongLight:
   Name: 光る三脚
-  Description: '{OwnerName}はより眩しく輝き、ダメージが増加し、追加する状態異常カードを強化する。'
+  Description: '{OwnerName}はより眩しく輝き、追加する状態異常カードを強化する。'
 FlatPeach:
   Name: 仙桃
   Description: '{OwnerName}がダメージを受けたとき、ライフを{Level}点回復する。'
 LongEscape:
-  Description: '{OwnerName}は体力が{Level}を下回ると戦闘から離脱する。'
+  Description: '{OwnerName}は体力が{Level}を下回ると戦闘から離脱する。
+
+    撃破すると<sprite="Point" name="Gold">{Level}を得る。'
   Name: 手抜き
 InvincibleEternal:
   Name: 天衣無縫
@@ -617,7 +620,7 @@ SingleJiandaoSe:
   Description: '{PlayerName}はカードを使用するたびに、{Level}ダメージを受ける。'
 ShendengSe:
   Name: 注ぎ口の長いティーポット
-  Description: '{OwnerName}のターン終了時、{PlayerName}は|脱力|、|脆弱化|、|弱体|のうちランダムな一つを{Level}得る。'
+  Description: '敵全体の行動終了時、{PlayerName}は|脱力|、|脆弱化|、|弱体|のうちランダムな一つを{Level}得る。'
 HolyGrailSe:
   Name: 装飾が施された金の杯
   Description: '{OwnerName}のターン開始時、{PlayerName}は|秘宝|と|光耀|を除くすべての展示品を失う。'
@@ -742,10 +745,10 @@ YukariFriendSe:
   Brief: '{PlayerName}のターン開始時、ランダムな三色の共通カードを手札に加える。それは臨時コスト{Mana}と|虚無|を持つ。'
   Description: '{PlayerName}のターン開始時、{Level}枚のランダムな三色の共通カードを手札に加える。それは臨時コスト{Mana}と|虚無|を持つ。'
 SuperExtraTurn:
-  Brief: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Level}枚しか使用できない。"
-  Description: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Level}枚しか使用できない。\n\
+  Brief: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|が失われず、カードを数枚しか使用できない。"
+  Description: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|が失われず、カードを{Level}枚しか使用できない。\n\
     現在のターン：{StatusString}"
-  ExtraDescription: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Level}枚しか使用できない。\n\
+  ExtraDescription: "{PlayerName}が|通常ターン|を終了する度、追加ターンを得る。\nこの効果で得た追加ターンでは|ブロック|が失われず、カードを{Level}枚しか使用できない。\n\
     現在のターン：{SelfName}の効果による追加ターン。（カードを残り{Count}枚使用できる。）\n"
   Name: 「永夜返し」
 NextTurnGainGraze:
@@ -979,3 +982,13 @@ SelfControlSe:
   Description: '{PlayerName}のターン終了時、|熱情|状態なら|火力|{Level}を得る。|平静|状態なら|ブロック|{Count}を得る。'
   Name: エゴコントロール
   Brief: '{PlayerName}のターン終了時、|熱情|状態なら|火力|を得る。|平静|状態なら|ブロック|を得る。'
+EnemyVulnerable:
+  Name: 弱体付与
+  Description: 敵全体の行動終了時、{PlayerName}は|弱体|{Level}を受ける。
+MaxHandSe:
+  Description: 手札の上限が{MaxHand}枚になる。
+  Name: 妖精大集結
+  Brief: 手札の上限が{MaxHand}枚になる。
+EnemyLockedOn:
+  Name: ロックオン付与
+  Description: 敵全体の行動終了時、{PlayerName}は|ロックオン|{Level}を受ける。

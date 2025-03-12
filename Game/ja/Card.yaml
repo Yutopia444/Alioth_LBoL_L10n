@@ -41,7 +41,7 @@ Jinfuzhen:
   FlavorText: 逃げようとさえしなければ、実は見かけほど強力な効果は無い。
 JingshenYishi:
   Name: 清めの儀式
-  Description: "カードを{Value1}枚引く。\n|神恩|{Value2}を得る。"
+  Description: "{Block}|ブロック|を得る。\n手札を1枚|廃棄|する。"
 YinyangBaoyu:
   Name: 陰陽宝玉
   Description: "{Damage}ダメージを与える。\n|陰陽玉|を1枚手札に加える。"
@@ -126,7 +126,7 @@ TwoBalls:
   UpgradedDescription: "|陰陽玉|を{Value1}枚手札に加える。\nそれらの|臨時コスト|を{Mana}減らす。"
 MingzhuAntou:
   Name: 明珠暗投
-  Description: "敵全体に{Damage}ダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉|1枚につき{SelfName}のコストを{Mana}減少。"
+  Description: "敵全体に{Damage}ダメージを与える。\n{Value1}枚の|虹龍陰陽玉|から1枚を選び、手札に加える。\n|フィールド|に存在する|陰陽玉カード|1枚につき{SelfName}のコストを{Mana}減少。"
   FlavorText: 玉を投げるたびに確率で「フロアやり直し」を発動させることがある。
 HuanxiangBlock:
   Name: 幻想辺境
@@ -155,7 +155,7 @@ FreeFly:
   FlavorText: 外界では稀有極まりない飛行能力も、幻想郷では極ありふれた物でしかない。
 YinyangXueyin:
   Name: 陰陽血印
-  Description: "ライフを{Value2}失う。\n|陰陽玉|を1枚手札に加える。\n|陰陽玉|をプレイするたび、|臨時火力|{Value1}と|臨時霊力|{Value1}を得る。"
+  Description: "ライフを{Value2}失う。\n|陰陽玉|を1枚手札に加える。\n|陰陽玉カード|をプレイするたび、|臨時火力|{Value1}と|臨時霊力|{Value1}を得る。"
   FlavorText: 材料が賄えないなら、血を使うしかない。
 EvilTuiZhi:
   Name: 悪霊退散
@@ -686,6 +686,8 @@ WanderingSoul:
 GainTreasure:
   Description: <sprite="Point" name="Gold">{Value1}を得る。
   Name: 一攫千金
+  ExtraDescription1: "<sprite=\"Point\" name=\"Gold\">{Value1}を得る。\n(獲得した<sprite=\"\
+    Point\" name=\"Gold\">の合計:{TotalMoney})"
 AyaNewsMarisaSp:
   Description: '|ターン終了時|：霊力{Value1}を失う。'
   Name: 文々。新聞　『霧雨魔理沙』特集
@@ -1237,7 +1239,7 @@ YinyangQueen:
   Name: 本物の勾玉職人、魅須丸
   Description: '{FriendP}|ブロック|と|バリア|を{Value2}ずつ得る。'
   ExtraDescription1: '{FriendA}ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
-  ExtraDescription3: '{FriendU}全ての|陰陽玉|の効果の基本値を|e:1|倍分増加させる。ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
+  ExtraDescription3: '{FriendU}全ての|陰陽玉カード|の効果の基本値を|e:1|倍分増加させる。ランダムな|虹龍陰陽玉|を{Value1}枚手札に加える。'
 SkyWater:
   Name: お天水の奇跡
   Description: "{Shield}|バリア|を得る。\n手札上限に達するまでカードを引く。"
@@ -1271,7 +1273,7 @@ LimaoAttack:
   Description: "敵全体に{Damage}ダメージを与える、{GainMana}を得る。\n|成長|：追加の {Mana} を得る。"
 JingyeGraze:
   Name: 狂いの落葉
-  Description: "|グレイズ|を{Value1}得る。\n{PlayerName}が持つ|グレイズ|の{Value2}倍の|臨時火力|を得る。"
+  Description: "|グレイズ|{Value1}を得る。\n{PlayerName}が持つ|グレイズ|の{Value2}倍の|臨時火力|を得る。"
 IceSpark:
   Name: 凍結レーザー
   Description: 敵全体に{Damage}ダメージを与え、|冷気|を与える。
@@ -1799,6 +1801,7 @@ NewsTidbit:
   Description: "|ロックオン|{Value1}を受ける。\n|消耗品【{DeckCounter}】|"
   Name: ゴシップニュース
   FlavorText: '.....霊夢氏の行動は経済面での理由以外にも、輝夜氏とのある関係も深く関わっているという旨をお伝えした事がありました。情報によりますと、霊夢氏が度々永遠亭を出入りしているという目撃証言は既に多数あがっており、それだけでなく、輝夜氏とのただならぬ関係を描写した映像も、現在様々なメディアで流出している状態にあるそうです。（花果子念報より）'
+  DetailText: ボス戦後の|整頓|で削除することはできない。
 NueExile:
   Description: "手札を一枚|廃棄|し、ランダムなカードを手札に加える。\nそれは|臨時コスト|{Mana}。"
   Name: 平安のダーククラウド
@@ -2146,8 +2149,8 @@ FlanFirepower:
   NonbattleDescription: 手札のカード全てに|虚無|を付与し、その枚数に等しい|火力|を得る。
 Frog:
   Name: カエル
-  Description: "このカードは呪われた。\n元のカード：{CardName}"
-  NonbattleDescription: このカードは呪われた。
+  Description: "このカードは呪われている。\n{SelfName}を使用すると元のカードに戻る。\n元のカード：{CardName}"
+  NonbattleDescription: "このカードは呪われている。\n{SelfName}を使用すると元のカードに戻る。"
 IceBolt:
   Description: '{Damage}ダメージを与える。
 
@@ -2308,8 +2311,6 @@ AhongMana:
 MeilingLianhua:
   Name: 彩光乱舞
   Description: "敵全体に{Damage}ダメージを与える。\n|火力|{Value1}を得る。"
-UpgradeDoll:
-  Name: 乙女文楽
 AliceAttackW:
   Name: 人形槍撃
 AliceAttackB:
@@ -2413,7 +2414,7 @@ BailianMagic:
   Description: このターン中に次に使用する|能力|カード{Value1}枚は二回使用される。
   Name: 魔神復誦
 HuiyeSuperExtraTurn:
-  Description: '{PlayerName}が|通常ターン|を終了する度、追加ターンを開始する。この効果で得た追加ターンでは|ブロック|と|グレイズ|が失われず、カードを{Value1}枚しか使用できない。'
+  Description: '{PlayerName}が|通常ターン|を終了する度、追加ターンを開始する。この効果で得た追加ターンでは|ブロック|を失わず、カードを{Value1}枚しか使用できない。'
   Name: 「永夜返し」
   DetailText: "{SelfName}の追加ターンは他の追加ターンより先に発生する。\n{SelfName}を使用した後、{PlayerName}のステータスアイコンから現在のターンの詳細を確認できる。"
 AttackX:
@@ -2570,3 +2571,6 @@ KoishiPlayDiscard:
   Description: "捨て札から{Value1}枚までのカードを選び、それらを追加使用する。\n使用した|追撃|を持たないカードを|廃棄|する。"
   Name: 嫌われ者のフィロソフィ
   DetailText: '|禁止|を持つカードを選択してもそのカードは使用できず、|廃棄|されない。'
+SanaeWind:
+  Name: 神の風
+  Description: "カードを{Value1}枚引く。\n|神恩|{Value2}を得る。"
