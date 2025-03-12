@@ -62,11 +62,14 @@ LockedOn:
     \ de cada turno."
 Graze:
   Name: Evasión
-  Brief: "{OwnerName} recibe 0 de daño de los ataques.\nPierde 1 |Evasión| al ser\
-    \ atacada o cuando comienza su turno."
+  Brief: "{OwnerName} recibe 0 de daño de los ataques.\nPierde 1 de |Evasión| al ser\
+    \ atacada o cuando comienza un |Turno Natural|."
   Description: "{OwnerName} recibe 0 de daño {Level:plural one='del próximo ataque'\
-    \ other='de los próximos % ataques'}.\nPierde 1 |Evasión| al ser atacada o cuando\
-    \ comienza su turno."
+    \ other='de los próximos % ataques'}.\nPierde 1 de |Evasión| al ser atacada o\
+    \ cuando comienza un |Turno Natural|."
+  ExtraDescription: "{OwnerName} recibe 0 de daño de{Level:plural one='l siguiente\
+    \ ataque' other=' los % siguientes ataques'}.\nPierde 1 de |Evasión| al ser atacada\
+    \ o cuando comienza un |Turno Natural|.\n"
 ExtraTurn:
   Name: Turno Extra
   Brief: Después de que termine el turno de {OwnerName}, toma otro turno.
@@ -109,9 +112,9 @@ Electric:
 TempElectric:
   Name: Carga Estática
   Description: "Cuando sea atacada, inflige {Level} de daño al atacante.\nEste efecto\
-    \ es removido al inicio del próximo turno de {OwnerName}."
+    \ es removido al inicio del próximo |Turno Natural| de {OwnerName}."
   Brief: "Cuando sea atacada, inflige daño al atacante.\nEste efecto es removido al\
-    \ inicio del próximo turno de {OwnerName}."
+    \ inicio del próximo |Turno Natural| de {OwnerName}."
 Reflect:
   Name: Reflejo
   Description: Cuando sea atacada, inflige {Level} de daño al atacante, y este efecto
@@ -289,8 +292,8 @@ KokoroNu:
     de |Poder|. (Ya ha ocurrido)
 LongLight:
   Name: Trípode Brillante
-  Description: ¡{OwnerName} brilla como una estrella! Hace más daño y sus cartas de
-    Estado son más poderosas.
+  Description: ¡{OwnerName} brilla como una estrella! Sus cartas de Estado son más
+    poderosas.
 YuyukoDeath:
   Name: Ley de la Mortalidad
   Description: "Al final del turno de {OwnerName}, pierde {Level} vida.\n{OwnerName}\
@@ -301,7 +304,9 @@ KokoroYou:
   Name: Tristeza
 LongEscape:
   Name: Relajarse
-  Description: '{OwnerName} dejará el combate cuando su vida sea inferior a {Level}.'
+  Description: '{OwnerName} dejará el combate cuando su vida sea inferior a {Level}.
+
+    Dejará caer {Level} <sprite="Point" name="Gold"> cuando sea derrotada.'
 FlatPeach:
   Name: Melocotón Celestial
   Description: Cada vez que {OwnerName} recibe daño, se cura {Level} de vida.
@@ -423,8 +428,8 @@ DragonBallSe:
   Name: Bola Cristalina con Estrellas
 ShendengSe:
   Name: Lámpara Oriental Larga
-  Description: Al final del turno de {OwnerName}, {PlayerName} gana aleatoriamente
-    {Level} |Débil|, |Frágil| o |Vulnerable|.
+  Description: Después de que todos los enemigos hayan jugado su turno, {PlayerName}
+    recibirá aleatoriamente {Level} de |Débil|, |Frágil| o |Vulnerable|.
 TaijiLiangyiSe:
   Description: Al comienzo del turno de {PlayerName}, si {Level:plural one='no hay'
     other='hay menos de %'} |Orbe Yin-Yang| en la mano, agrega {Level:plural one='un
@@ -1006,16 +1011,15 @@ ControlNegative:
 SuperExtraTurn:
   Name: '"Fin de la Noche Imperecedera"'
   Description: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
-    El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
-    \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
-    \ {StatusString}."
+    El |Bloqueo| no se pierde al comienzo de ese turno extra, y solo se puede jugar\
+    \ {Level} carta{Level:plural one='' other='s'}.\nEstado del turno: {StatusString}."
   Brief: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\nEl |Bloqueo|\
-    \ y |Evasión| no se pierden al comienzo de ese turno extra, y solo se puede jugar\
-    \ {Level} carta{Level:plural one='' other='s'}."
+    \ no se pierde al comienzo de ese turno extra, y solo se pueden jugar algunas\
+    \ cartas."
   ExtraDescription: "Al final del |Turno Natural| de {PlayerName}, toma un turno extra.\n\
-    El |Bloqueo| y |Evasión| no se pierden al comienzo de ese turno extra, y solo\
-    \ se puede jugar {Level} carta{Level:plural one='' other='s'}.\nEstado del turno:\
-    \ {Count} carta{Count:plural one='' other='s'} restante del turno de {SelfName}.\n"
+    El |Bloqueo| no se pierde al comienzo de ese turno extra, y solo se puede jugar\
+    \ {Level} carta{Level:plural one='' other='s'}.\nEstado del turno: {Count} carta{Count:plural\
+    \ one='' other='s'} restante del turno de {SelfName}.\n"
 NextTurnGainGraze:
   Name: Evasión en el Próximo Turno
   Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Evasión|.
@@ -1358,3 +1362,15 @@ SelfControlSe:
     en el estado |Pasión|, o {Count} de |Bloqueo| si está en el estado |Serenidad|.
   Brief: Al final del turno de {PlayerName}, gana {Level} |Poder| si está en el estado
     |Pasión|, o |Bloqueo| si está en el estado |Serenidad|.
+MaxHandSe:
+  Brief: El tamaño máximo de las cartas en la mano pasa a ser de {MaxHand}.
+  Description: El tamaño máximo de las cartas en la mano pasa a ser de {MaxHand}.
+  Name: Asamblea de Hadas
+EnemyVulnerable:
+  Description: Después de que todos los enemigos hayan jugado su turno, {PlayerName}
+    recibe {Level} de |Vulnerable|.
+  Name: Vulnerable Inminente
+EnemyLockedOn:
+  Description: Después de que todos los enemigos hayan jugado su turno, {PlayerName}
+    recibe {Level} de |Marcado|.
+  Name: Marcado Inminente

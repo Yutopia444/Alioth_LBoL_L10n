@@ -71,8 +71,7 @@ Jinfuzhen:
     parece.
 JingshenYishi:
   Name: Ritual de Limpieza
-  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nGana {Value2}\
-    \ |Gracia{Value2:plural one=' Divina' other='s Divinas'}|."
+  Description: "Gana {Block} de |Bloqueo|.\n|Exilia| una carta de la mano."
 YinyangBaoyu:
   Name: Orbe de Dualidad
   Description: "Inflige {Damage} de daño.\nAgrega un |Orbe Yin-Yang| a la mano."
@@ -241,8 +240,8 @@ FreeFly:
 YinyangXueyin:
   Name: Runa Yin-Yang
   Description: "Pierde {Value2} de vida.\nAgrega un |Orbe Yin-Yang| a la mano.\nDespués\
-    \ de que {PlayerName} juegue un |Orbe Yin-Yang|, gana {Value1} de |Poder Temporal|\
-    \ y |Espíritu Temporal|."
+    \ de que {PlayerName} juegue una |Carta de Orbe Yin-Yang|, gana {Value1} de |Poder\
+    \ Temporal| y |Espíritu Temporal|."
   FlavorText: Si no puedes permitirte los ingredientes para el hechizo, tendrás que
     usar tu sangre.
 MarisaBlockR:
@@ -369,6 +368,8 @@ GainTreasure:
   FlavorText: ¿Crees que usar el dinero como una recompensa ha arruinado la autenticidad
     de los duelos de las cartas mágicas? No te preocupes, la tecnología X blockchain
     utilizará métodos más civilizados para resolver sus problemas de financiación.
+  ExtraDescription1: "Gana {Value1} <sprite=\"Point\" name=\"Gold\">.\n({TotalMoney}\
+    \ <sprite=\"Point\" name=\"Gold\"> ganados de {SelfName} durante esta partida)."
 LilyoftheValley:
   Name: Lirio del Valle
   Description: "Gana {Mana}.\n|Limitado【{DeckCounter}】|"
@@ -477,8 +478,8 @@ CirnoBlockU:
     puede utilizarse como una arma de defensa personal.
 MingzhuAntou:
   Description: "Inflige {Damage} de daño a cada enemigo.\nElige 1 de {Value1} |Orbes\
-    \ Yin-Yang del Arcoíris| para agregarla a la mano.\nPor cada |Orbe Yin-Yang| en\
-    \ el |Campo de Batalla|, {SelfName} cuesta {Mana} menos para jugar."
+    \ Yin-Yang del Arcoíris| para agregarla a la mano.\nPor cada |Carta de Orbe Yin-Yang|\
+    \ en el |Campo de Batalla|, {SelfName} cuesta {Mana} menos para jugar."
   Name: Orbes Secretos
   FlavorText: Cada vez que lanzas un orbe, existe la posibilidad de "Reiniciar el
     Nivel".
@@ -529,12 +530,15 @@ NewsTidbit:
     por razones relacionadas con su relación íntima con Kaguya. Se informa que Reimu
     entra y sale a menudo de Eientei, y constantemente se filtran fotos de sus actos
     íntimos con Kaguya. (Noticias del Kakashi Spirit)'
+  DetailText: No se puede eliminar con la opción |Preparar| después de derrotar a
+    los jefes.
 WolfFur:
   Name: Pelaje de Lobo
   Description: '|Limitado【{DeckCounter}】|'
   FlavorText: Ser "Esponjoso" se convirtió en la moda del momento, y varios youkais
     se proclamaron que ellos mismos también podían ser "esponjositos".
-  DetailText: No se puede eliminar con la opción |Preparar| después de los jefes.
+  DetailText: No se puede eliminar con la opción |Preparar| después de derrotar a
+    los jefes.
 ReimuShrine:
   Name: Feria del Templo Hakurei
   Description: "Gana {Value1} de |Espíritu Temporal|.\nAl comienzo de cada turno de\
@@ -1852,7 +1856,7 @@ MeilingBlock:
 MeihongAttack:
   Description: "Pierde {Value1} de vida.\nInflige {Damage} de daño {Value2} {Value2:plural\
     \ one='vez' other='veces'}."
-  Name: Ascenso del Fénix
+  Name: Alas Llameantes del Fénix
   FlavorText: Convierte a Aya Shameimaru en una Yakitori
 HuaBlock:
   Name: Posición de Batalla
@@ -1938,7 +1942,7 @@ SuikaBigball:
     \ demás enemigos.\nPierde {Value1} de |Poder|."
   NonbattleDescription: "Inflige {Damage} de daño. Luego, inflige la mitad de ese\
     \ daño a los demás enemigos.\nPierde {Value1} de |Poder|."
-  Name: Bomba de Espíritu Oni
+  Name: Bomba de Energia Oni
   FlavorText: El poder de los onis es demasiado difícil de manejar para las demás
     razas.
 RangziFanshu:
@@ -2707,8 +2711,6 @@ DoubleDajiejie:
 AliceBlockU:
   Description: Gana {Block} de |Bloqueo|.
   Name: Defensa Mágica
-AliceAttackW:
-  Name: Lanza de Muñeca
 AliceAttackB:
   Description: Inflige {Damage} de daño.
   Name: Flanqueo Destellante
@@ -2716,18 +2718,18 @@ BabyDream:
   Name: Sueño del Embrión
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} |Sueño{Value1:plural one=''\
     \ other='s'}|, luego activa la primera carta |Continua| |Soñada|. "
-UpgradeDoll:
-  Description: Mejora una |e:Muñeca Shanghai|.
 SacrificeDoll:
-  Name: Pacto Suicida
-  Description: "Elige una muñeca para que |salga|.\nInflige {Damage} de daño a cada\
-    \ enemigo."
+  Name: Regreso a la Inanimación
+  Description: "Elige una muñeca para que evacue.\nInflige {Damage} de daño a cada\
+    \ enemigo.\n|Estímulo {KickerCost}|: Se puede realizar hasta 2 veces."
+  DetailText: Elige 2 muñecas e inflige daño dos veces.
 DeployPenglai:
-  Name: 'Desplegar: Hourai'
-  Description: "|Despliega| una |e:Muñeca Hourai|.\nActiva su |Habilidad de Control|."
+  Name: 'Bunraku de la Doncella'
+  Description: "|Despliega| una |e:Muñeca Hourai|.\n|Estímulo {KickerCost}|: Despliega\
+    \ una |e:Muñeca Hourai| adicional."
 DeployShanghai:
-  Name: 'Desplegar: Shanghai'
-  Description: "|Despliega| una |e:Muñeca de Shanghai|.\nActiva su |Habilidad de Control|."
+  Name: 'Reparar Muñeca'
+  Description: "|Despliega| una |e:Muñeca de Shanghai|, o |Promociona| una Muñeca."
 MojingShanjie:
   Name: Frontera de Exorcismo
   Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
@@ -2901,6 +2903,7 @@ AyaWindGirl:
     al comienzo del turno.
 DollFactory:
   Name: Taller de Muñecas
+  Description: (WIP) 
 ZhenmiaowanAbility:
   Description: Todas las cartas cuestan {Mana} maná menos hasta el final del combate.
   Name: Magia del Mazo
@@ -2922,6 +2925,7 @@ DebugAddHandCards:
     la mano.'
 Qianqiang:
   Name: Falange Adorable
+  Description: (WIP) 
 HuiyeMarblePhantasm:
   Name: Manifestación de la Fantasía
   FlavorText: '"Princesa... por favor no uses tu habilidad en este tipo de asuntos..."'
@@ -2945,12 +2949,16 @@ FlanFirepower:
   Name: ¿Y Entonces No Quedará Ninguno?
 Frog:
   Name: Rana
-  Description: "Esta carta ha sido maldecida.\nOriginalmente era: {CardName}"
-  NonbattleDescription: Esta carta ha sido maldecida.
+  Description: "Esta carta ha sido maldecida.\nJuega {SelfName} para ser restaurada.\n\
+    Originalmente era: {CardName}"
+  NonbattleDescription: "Esta carta ha sido maldecida.\nJuega {SelfName} para ser\
+    \ restaurada."
 AutoHousework:
   Name: Limpieza Automatizada
+  Description: (WIP) 
 DollFangzhen:
   Name: Falange de Muñecas
+  Description: (WIP) 
 IceBolt:
   Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear."
   Name: Bala de Hielo
@@ -3368,9 +3376,8 @@ HuiyeSuperExtraTurn:
     \ ícono del estado de {PlayerName} para consultar los detalles del turno actual."
   Name: '"Fin de la Noche Imperecedera"'
   Description: "Al final de cada |Turno Natural| de {PlayerName}, toma un turno extra.\n\
-    El |Bloqueo| y la |Evasión| no se pierden al comienzo de ese turno adicional,\
-    \ y solo se puede{Value1:plural one='' other='n'} jugar {Value1} carta{Value1:plural\
-    \ one='' other='s'}."
+    El |Bloqueo| no se pierde al comienzo de ese turno adicional, y solo se puede{Value1:plural\
+    \ one='' other='n'} jugar {Value1} carta{Value1:plural one='' other='s'}."
 KoishiDiscard:
   Description: '|Cuando se roba|: Descarta una carta aleatoria.'
   ExtraDescription1: "|Cuando se roba|: descarta una carta aleatoria.\nDescartado:\
@@ -3441,8 +3448,10 @@ FollowAttackFiller:
   FlavorText: Ring-ring... ring-ring
 DollBlock:
   Name: Escudo de Muñeca
+  Description: (WIP) 
 Zhendijianzao:
   Name: Creación de Territorio
+  Description: (WIP) 
 DebugAddRandomCardsToExile:
   Name: Agrega Cartas Aleatorias al Exilio
   Description: 'Carta de Prueba: Agrega {Value1} cartas al Exilio.'
@@ -3510,3 +3519,26 @@ KoishiPlayDiscard:
     \ one=' continua' other='s continuas'}.\nTodas las cartas elegidas que no sean\
     \ |cartas Continuas| serán |Exiliadas|."
   DetailText: Si se elige una carta |Injugable|, no se juega o se |Exilia|.
+AliceAttackU:
+  Name: Lanza de Muñeca
+  Description: Inflige {Damage} de daño.
+AliceBlockB:
+  Description: Gana {Block} de |Bloqueo|.
+  Name: Defensa Oscura de Alice
+AliceKickerAttack:
+  Description: "Inflige {Damage} de daño.\n|Estímulo {KickerCost}|: Inflige daño una\
+    \ vez más."
+  Name: Patada
+DollFormation:
+  Description: (WIP) 
+  Name: Pequeña Legión
+MansionNight:
+  Description: (WIP) 
+  Name: Una Noche en la Mansión Embrujada
+DollFire:
+  Description: (WIP) 
+  Name: Cremación de Muñecas
+SanaeWind:
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nGana {Value2}\
+    \ |Favores divinos|."
+  Name: Viento Divino

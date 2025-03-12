@@ -264,7 +264,7 @@ YizangnuoWuzhi:
 LouguanJian:
   Name: Roukanken
   Description: "Después de que {PlayerName} inflige daño por un ataque, aplica {Value1}\
-    \ de |Marcado| al objetivo u objetivos."
+    \ de |Marcado| al objetivo u objetivos.\nEsto dura hasta el final de la partida."
   FlavorText: '"¡Cortado!"'
 Baota:
   Name: Pagoda Enjoyada del Bishamonten
@@ -601,7 +601,8 @@ TiangouShouji:
 TiangouYuyi:
   Name: Alas de Cuervo Tengu
   Description: "{PlayerName} puede ignorar las rutas que puede elegir del siguiente\
-    \ nivel, hasta {Counter:plural one='% vez' other='% veces'}."
+    \ nivel, hasta {Counter:plural one='% vez' other='% veces'}.\nAl comienzo del\
+    \ primer turno de cada combate, {PlayerName} gana {Value1} de |Evasión|."
   FlavorText: Estas alas son la razón por la cual los cuervo tengus pueden correr
     más rápido que cualquier otra persona en Gensokyo.
 ShenmiPifeng:
@@ -669,7 +670,7 @@ Pijiu:
 HeiseBijiben:
   Name: Cuaderno Negro
   Description: Al comienzo del combate, todos los enemigos con nombres conocidos pierden
-    {Value1} de vida.
+    {Value1} de vida y ganan {Value2} de |Vulnerable|.
   FlavorText: '"Se dice que escribir el nombre de alguien matará a esa persona."'
 Guangjian:
   Name: Sable de Luz
@@ -863,14 +864,11 @@ YichuiPiao:
   Description: "Durante el turno de {PlayerName}, si la mano está vacía, roba una\
     \ carta.\nAl comienzo del primer turno de cada combate de {PlayerName}, agrega\
     \ {Value1} |Ebria{Value1:plural one='' other='s'}| a la mano."
-AliceW:
-  Name: Muñeca Shanghai
 AliceB:
   FlavorText: (Trabajo en progreso)
-  Name: Detonadora
+  Name: Muñeca Hourai
   Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Alice| se agregan\
-    \ al grupo de cartas.\nLas |e:Muñecas Hourai| que |Salen| Infligen el doble de\
-    \ daño."
+    \ al grupo de cartas.\nAl comienzo del combate, se |Despliega| una |e:Muñeca Hourai|."
 JuanzengZhengming:
   Description: "La cantidad máxima de cargas de la carta mágica de {PlayerName} aumenta\
     \ en {Value1}. Ahora su Carta Mágica se puede usar varias veces en un mismo turno.\n\
@@ -922,3 +920,14 @@ QicaiLianhua:
     Una vez por combate, si se ha ganado todos los colores de maná (incluidos <sprite=\"\
     ManaSprite\" name=\"C\"> & <sprite=\"ManaSprite\" name=\"P\">), agrega una |e:Danza\
     \ Caótica Colorida| a la mano.\nColores de maná ganados: {ColorRecord}"
+AliceU:
+  Name: Muñeca Shanghai
+  FlavorText: (Sujeto a cambios.)
+  Description: "Agrega {BaseMana} al maná base. Cartas exclusivas de |Alice| se agregan\
+    \ al grupo de cartas.\nAl comienzo del combate, se |Despliega| una |e:Muñeca Shanghai|."
+AliceBook:
+  FlavorText: El grimorio definitivo perdido en el Makai. En la portada se lee «Grimorio
+    de Alice».
+  Description: "Durante los combates, los costes de los |Estímulos| de las cartas\
+    \ cuestan {Mana} menos.\nEsto dura hasta el final de la partida."
+  Name: '"Magia Suprema"'
