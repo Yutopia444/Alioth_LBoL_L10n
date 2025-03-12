@@ -47,8 +47,9 @@ TempSpirit:
   Brief: "턴이 끝날 때까지 영력을 얻습니다.\n영력은 |보호막|과 |방어|의 효과를 높여줍니다."
 Graze:
   Name: 그레이즈
-  Description: "다음에 받는 {Level}번의 공격으로부터 피해를 받지 않습니다.\n공격을 받거나 턴이 시작되면 스택이 1 감소합니다."
-  Brief: "다음에 받는 공격으로부터 피해를 받지 않습니다.\n공격을 받거나 턴이 시작되면 스택이 1 감소합니다."
+  Description: "다음에 받는 {Level}번의 공격으로부터 피해를 받지 않습니다.\n공격을 받거나 일반 턴이 시작되면 스택이 1 감소합니다."
+  Brief: "다음에 받는 공격으로부터 피해를 받지 않습니다.\n공격을 받거나 일반 턴이 시작되면 스택이 1 감소합니다."
+  ExtraDescription: "다음에 받는 {Level}번의 공격으로부터 피해를 받지 않습니다.\n공격을 받거나 턴이 시작되면 스택이 1 감소합니다.\n"
 LockedOn:
   Name: 록온
   Description: "받는 피해가 {Level} 상승합니다.\n턴이 시작되면 스택이 1 감소합니다."
@@ -136,8 +137,8 @@ Electric:
   Brief: 공격을 받을 시 공격자에게 약간의 피해를 줍니다.
   Name: 정전기
 TempElectric:
-  Description: "공격을 받을 시 공격자에게 {Level}의 피해를 줍니다.\n다음 턴 효과가 사라집니다."
-  Brief: "공격을 받을 시 공격자에게 약간의 피해를 줍니다.\n다음 턴 효과가 사라집니다."
+  Description: "공격을 받을 시 공격자에게 {Level}의 피해를 줍니다.\n다음 |일반 턴| 시작 시 효과가 사라집니다."
+  Brief: "공격을 받을 시 공격자에게 약간의 피해를 줍니다.\n다음 |일반 턴| 시작 시 효과가 사라집니다."
   Name: 정전기
 NextAttackUp:
   Name: 공격력 증가
@@ -250,12 +251,12 @@ RockHardAura:
   Description: 요석에 의해 보호받습니다. 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 요석의 비호
 LongLight:
-  Description: '{OwnerName}는 눈부시게 빛납니다. 가하는 피해가 증가하고, 덱에 집어넣는 상태 카드를 강화시킵니다.'
+  Description: '{OwnerName}가 눈부시게 빛납니다. 덱에 집어넣는 상태 카드가 강력해집니다.'
   Name: 빛나는 삼각대
 PhoneBillSe:
   Name: 전화 요금
   Description: "{OwnerName}가 통화하면서 {PlayerName}로부터 <sprite=\"Point\" name=\"Gold\"\
-    >{Level}을 가져갑니다.\n{OwnerName}가 쓰러질 시 <sprite=\"Point\" name=\"Gold\">{Count}을\
+    >{Level}을 가져갑니다.\n{OwnerName}가 쓰러질 시 추가로 <sprite=\"Point\" name=\"Gold\">{Count}을\
     \ 떨굽니다."
 DeathPoison:
   Name: 잔류 독성
@@ -270,7 +271,9 @@ RockHard:
   Description: 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 단단하게!
 LongEscape:
-  Description: '{OwnerName}의 체력이 {Level} 이하일 시 전투에서 이탈합니다.'
+  Description: '{OwnerName}의 체력이 {Level} 이하일 시 전투에서 이탈합니다;
+
+    쓰러질 시 추가로 <sprite="Point" name="Gold">{Count}을 떨굽니다.'
   Name: 봐주기
 FlatPeach:
   Name: 선도
@@ -486,7 +489,7 @@ QiannianShenqiSe:
     |d:{Count}장 남음.|"
 ShendengSe:
   Name: 주둥이가 긴 램프
-  Description: '{OwnerName}의 턴 종료 시 {PlayerName}에게 |허약|, |취약|, |연약| 중 무작위 하나를 {Level}만큼
+  Description: '모든 적이 턴을 끝마치고 나면 {PlayerName}에게 |허약|, |취약|, |연약| 중 무작위 하나를 {Level}만큼
     줍니다.'
 HolyGrailSe:
   Name: 휘황찬란한 금잔
@@ -810,12 +813,11 @@ YouxiangWakeSe:
     가져옵니다. 해당 카드들은 |일시적으로| {Mana}의 코스트를 갖습니다.
 SuperExtraTurn:
   Name: 「영야 되돌리기」
-  Description: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며, 카드는\
-    \ {Level}장만 사용할 수 있게 됩니다.\n현재 {StatusString}을 진행중입니다."
-  Brief: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며, 카드는 {Level}장만\
-    \ 사용할 수 있게 됩니다."
-  ExtraDescription: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|와 |그레이즈|는 사라지지 않으며,\
-    \ 카드는 {Level}장만 사용할 수 있게 됩니다.\n앞으로 {Count}장 남았습니다.\n"
+  Description: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|는 사라지지 않으며, 카드는 {Level}장만\
+    \ 사용할 수 있게 됩니다.\n현재 {StatusString}을 진행 중입니다."
+  Brief: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|는 사라지지 않으며, 카드 사용 횟수에 제한이 걸립니다."
+  ExtraDescription: "내 |일반 턴| 종료 시 추가로 턴을 진행합니다.\n추가 턴 시작 시 |방어|는 사라지지 않으며, 카드는 {Level}장만\
+    \ 사용할 수 있게 됩니다.\n앞으로 {Count}장 남았습니다.\n"
 BossAct:
   Name: 태세 전환
   Description: '{OwnerName}가 피해를 {Count} 입을 시 즉시 행동을 합니다. {PlayerName}의 턴은 종료되지 않습니다.'
@@ -1039,3 +1041,13 @@ SelfControlSe:
   Name: 자아 제어
   Description: 내 턴 종료 시 |열정| 상태라면 |화력|을 {Level}, |평온| 상태라면 |방어|를 {Count} 얻습니다.
   Brief: 내 턴 종료 시 |열정| 상태라면 |화력|을, |평온| 상태라면 |방어|를 얻습니다.
+EnemyVulnerable:
+  Description: 모든 적이 턴을 마치면 {PlayerName}가 |취약|을 {Level} 얻습니다.
+  Name: 취약 부여
+MaxHandSe:
+  Name: 요정 집결
+  Description: 손의 상한이 {MaxHand}까지 증가합니다.
+  Brief: 손의 상한이 {MaxHand}까지 증가합니다.
+EnemyLockedOn:
+  Name: 록온 부여
+  Description: 모든 적이 턴을 마치면 {PlayerName}가 |록온|을 {Level} 얻습니다.

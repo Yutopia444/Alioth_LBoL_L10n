@@ -81,7 +81,7 @@ MengzhiYuzha:
   FlavorText: 소매 속의 바늘
 JingshenYishi:
   Name: 정화의 의식
-  Description: "카드를 {Value1}장 뽑습니다.\n|은총|을 {Value2} 얻습니다."
+  Description: "|방어|를 {Block} 얻습니다.\n손에서 카드를 한 장 |소멸|시킵니다."
 RManaCard:
   Name: 화염
   Description: '{Mana}를 얻습니다.'
@@ -167,7 +167,7 @@ Jiangshen:
   FlavorText: 「신께 소원을 빌었더니, 바로 『경계 출입』을 뽑았지 뭐에요—」
 MingzhuAntou:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n무작위 |홍룡음양옥| {Value1}장 중 한 장을 선택해 얻습니다.\n\
-    |전장|에 존재하는 |음양옥|의 개수마다 {SelfName}의 코스트가 {Mana}씩 감소합니다."
+    |필드|에 존재하는 |음양옥 카드|의 개수마다 {SelfName}의 코스트가 {Mana}씩 감소합니다."
   Name: 명주암투
   FlavorText: 구슬을 던질 때마다 일정 확률로 「이번 스테이지를 재시작」할 수 있습니다.
 JiejieAttack:
@@ -233,7 +233,8 @@ FreeFly:
   FlavorText: 하늘을 나는 능력은 바깥 세계에선 찾아보기 힘들지만 환상향에서는 평범합니다.
 YinyangXueyin:
   Name: 음양혈인
-  Description: "체력을 {Value2} 잃습니다.\n|음양옥|을 한 장 얻습니다.\n|음양옥|을 사용하면, |일시 화력|과 |일시 영력|을 {Value1} 얻습니다."
+  Description: "체력을 {Value2} 잃습니다.\n|음양옥|을 한 장 얻습니다.\n|음양옥 카드|를 사용하면, |일시 화력|과 |일시\
+    \ 영력|을 {Value1} 얻습니다."
   FlavorText: 재료가 없어서 피를 쓸 수 밖에 없었습니다.
 EvilTuiZhi:
   Name: 악령 퇴치
@@ -1144,6 +1145,7 @@ NewsTidbit:
   FlavorText: …이변을 해결하러 나선 하쿠레이 레이무는 재정적 문제 뿐만 아니라 주최자인 호라이산 카구야와도 개인적인 관계가 있기에 이변을
     해결하기로 했다고 한다. 그의 말에 따르면 레이무는 영원정에 자주 드나들었으며, 카구야와 긴밀한 접촉을 갖는 사진 또한 유출되었다고 제보하였다.
     (화과자념보 클라이언트)
+  DetailText: 보스전 후 |정비|를 통해 제거할 수 없습니다.
 AyaNewsCirnoSp:
   Name: 붕붕마루 치르노 특간호
   Description: '|턴 종료 시|: |영력|을 {Value1} 잃습니다.'
@@ -1522,6 +1524,8 @@ GainTreasure:
   Description: <sprite="Point" name="Gold">를 {Value1} 얻습니다.
   FlavorText: '"현금 결제가 스펠 카드 배틀의 아름다움을 해친다고 생각하십니까? 그런 당신께 추천드립니다. X-브릭체인 기술이 더욱 더
     문명화된 방식으로 자금난을 해결해드립니다."'
+  ExtraDescription1: "<sprite=\"Point\" name=\"Gold\">를 {Value1} 얻습니다.\n(이번 게임동안 총\
+    \ {TotalMoney}<sprite=\"Point\" name=\"Gold\">를 벌어들였습니다.)"
 MoonWorld:
   Name: 더러움 없는 세계
   Description: 내 턴 시작 시 손의 무작위 카드 {Value1}장을 |정화|합니다.
@@ -2132,8 +2136,10 @@ DoubleDajiejie:
   Name: 이중대결계
   Description: '|방어|를 {Block}, |보호막|을 {Shield} 얻습니다.'
 DeployPenglai:
-  Name: 봉래인형 배치
-  Description: '|e:봉래인형|을 하나 |배치|하고, |조종 효과|를 발동합니다.'
+  Name: 오토메분라쿠
+  Description: '|e:봉래인형|을 하나 |배치|합니다.
+
+    |증폭 {KickerCost}|: |e:봉래인형|을 하나 더 배치합니다.'
 HatateShot:
   Name: 풀 파노라마 샷
   Description: "|방어|를 {Block} 얻습니다.\n남은 마나 하나마다 얻는 |방어|가 {Value1}씩 늘어납니다. (총 {Special}점)"
@@ -2142,8 +2148,6 @@ BabyDream:
   Description: '|방어|를 {Block} 얻습니다.
 
     |꿈결| {Value1}, 그 중 첫번째 |연계 카드|를 발동시킵니다. '
-AliceAttackW:
-  Description: 피해를 {Damage} 줍니다.
 AliceAttackB:
   Name: 측면의 섬광
   Description: 피해를 {Damage} 줍니다.
@@ -2151,13 +2155,15 @@ AliceBlockU:
   Name: 방어마법
   Description: '|방어|를 {Block} 얻습니다.'
 DeployShanghai:
-  Name: 상해인형 배치
-  Description: '|e:상해인형|을 하나 |배치|하고, |조종 효과|를 발동합니다.'
-UpgradeDoll:
-  Description: '|e:상해인형| 하나를 강화합니다.'
+  Name: 인형 수선
+  Description: '|e:상해인형|을 하나 |배치|합니다;
+
+    또는 인형을 하나 |승급|시킵니다.'
 SacrificeDoll:
-  Name: 수어사이드 팩트
-  Description: 선택한 인형을 |회수|합니다. 모든 적에게 피해를 {Damage} 줍니다.
+  Name: 리턴 인애니메이트니스
+  Description: "선택한 인형을 |이탈|시킵니다. 모든 적에게 피해를 {Damage} 줍니다.\n|증폭 {KickerCost}|: 효과를\
+    \ 한 번 더 진행합니다."
+  DetailText: 인형을 두 개 선택하고 피해를 두 번 줍니다.
 MojingShanjie:
   Name: 마정섬결
   Description: 무작위 방어 카드 {Value1}장 중에서 하나를 선택해 얻습니다. 해당 카드는 {Mana}의 |일시 코스트|를 가집니다.
@@ -2307,17 +2313,19 @@ DebugAddHandCards:
   Description: '테스트 카드: 손의 모든 카드를 소멸시킵니다. 그 후 무작위 {Value1}장을 가져옵니다.'
 DollFactory:
   Name: 인형 공방
+  Description: (제작 중) 
 ZhenmiaowanAbility:
   Name: 요술 망치의 마력
   Description: 이번 전투에서 모든 카드의 코스트가 {Mana} 감소합니다.
 AutoHousework:
   Name: 가사 자동화
-DollSacrifice:
-  Name: 리턴 인애니메이트니스
+  Description: (제작 중) 
 Qianqiang:
   Name: 큐티 대천창
+  Description: (제작 중) 
 DollFangzhen:
   Name: 리틀 레기온
+  Description: (제작 중) 
 HuiyeMarblePhantasm:
   DetailText: 목표 코스트의 선택 가능 카드 수가 부족한 경우 더 낮은 코스트의 카드로 대신합니다.
   FlavorText: '"공주님... 대체 왜 이런 짓을..."'
@@ -2336,8 +2344,8 @@ FlanFirepower:
   NonbattleDescription: 손에 있는 모든 카드에 |휘발성|을 추가하고, 손에 있는 카드의 갯수만큼 |화력|을 얻습니다.
 Frog:
   Name: 개구리
-  Description: "이 카드엔 주술이 걸려 있습니다.\n기존 카드: {CardName}"
-  NonbattleDescription: 이 카드엔 주술이 걸려 있습니다.
+  Description: "이 카드엔 주술이 걸려 있습니다.\n{SelfName}를 사용하여 기존 카드로 되돌릴 수 있습니다.\n기존 카드: {CardName}"
+  NonbattleDescription: "이 카드엔 주술이 걸려 있습니다.\n{SelfName}를 사용하여 기존 카드로 되돌릴 수 있습니다."
 IceBolt:
   Name: 빙결탄
   Description: 피해를 {Damage} 주고 명중 시 |빙결|을 가합니다.
@@ -2705,8 +2713,10 @@ FollowAttackFiller:
   FlavorText: 따르르르르르릉...
 DollBlock:
   Name: 인형 방어
+  Description: (제작 중) 
 Zhendijianzao:
   Name: 영역 전개
+  Description: (제작 중) 
 DreamExpress:
   Name: 드림 익스프레스
   Description: "내 턴 종료 시 |꿈결| {Value1}.\n모든 적에게 |꿈결| 카드의 기본 코스트의 두 배만큼 피해를 줍니다."
@@ -2718,8 +2728,8 @@ JinziDoppelganger:
   Description: 내 턴동안 처음 사용하는 카드가 두 번 발동됩니다.
 HuiyeSuperExtraTurn:
   Name: 「영야 되돌리기」
-  Description: "내 |일반 턴| 종료 시 추가 턴을 진행합니다.\n해당 추가 턴에서는 |방어|와 |그레이즈|가 사라지지 않으며, 카드를\
-    \ {Value1}장만 사용할 수 있습니다."
+  Description: "내 |일반 턴| 종료 시 추가 턴을 진행합니다.\n해당 추가 턴에서는 |방어|가 사라지지 않으며, 카드를 {Value1}장만\
+    \ 사용할 수 있습니다."
   DetailText: "{SelfName}로 유발되는 추가 턴은 다른 추가 턴보다 먼저 발동됩니다.\n{SelfName}가 사용되고 나면, 상태\
     \ 아이콘에서 현재 턴에 대한 세부를 확인할 수 있습니다."
 KoishiDiscard:
@@ -2785,3 +2795,24 @@ KoishiPlayDiscard:
   Description: "버린 카드 더미에서 카드를 최대 {Value1}장 선택해 연계 효과를 발동시킵니다.\n이 때 대상 카드가 |연계 카드|가\
     \ 아니라면 |소멸|됩니다."
   DetailText: '|사용 불가| 카드가 선택될 시 해당 카드를 사용하지 않고 |소멸|시킵니다.'
+AliceAttackU:
+  Description: 피해를 {Damage} 줍니다.
+  Name: 인형 창격
+AliceBlockB:
+  Name: 앨리스(흑) 방어
+  Description: '|방어|를 {Block} 얻습니다.'
+AliceKickerAttack:
+  Name: 증폭 공격
+  Description: "피해를 {Damage} 줍니다.\n|증폭 {KickerCost}|: 피해를 {Damage}씩 두 번 줍니다."
+MansionNight:
+  Name: 으스스한 저택의 밤
+  Description: (제작 중) 
+DollFormation:
+  Name: 리틀 레기온
+  Description: (제작 중) 
+DollFire:
+  Name: 인형화장
+  Description: (제작 중) 
+SanaeWind:
+  Name: 신의 바람
+  Description: "카드를 {Value1}장 뽑습니다.\n|은총|을 {Value2} 얻습니다."
