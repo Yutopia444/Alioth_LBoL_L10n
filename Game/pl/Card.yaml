@@ -1952,7 +1952,7 @@ MarisaForget:
 BuyPeace:
   Name: Kup Bezpieczeństwo
   Description: '|Na Końcu Tury|: Strać {Value1} <sprite="Point" name="Gold"> i ulecz
-    {Value2} zdrowia.'
+    {Value2} życia.'
   FlavorText: '"Czy jeśli nie ma się żadnych pieniędzy, to czy to oznacza, że nigdy
     się nie straci fortuny?"'
 SweetPoison:
@@ -2371,14 +2371,18 @@ YouxiangMoon:
   Description: "Na początku następnej tury {PlayerName:g} zyskaj {Mana}.\nDodaj {Value1}\
     \ |Letnie Kwiaty| do ręki."
 DizangLove:
-  Description: "Gdy {PlayerName} zagra pospolitą kartą, zyskaj {Value1} |Tymczasowej\
-    \ Mocy|.\n"
+  Description: "Zyskaj {Value1} maksymalnego życia.\nTylko pierwsze {SelfName} aktywuje\
+    \ swój efekt w walce."
   Name: Natychmiastowe Bodhi
   FlavorText: Osiągnięcie Nirvany nie jest kwestią długiej ciężkiej pracy.
+  ExtraDescription1: "|d:Zyskaj {Value1} maksymalnego życia.|\nTylko pierwsze {SelfName}\
+    \ aktywuje swój efekt w walce."
 LimaoSchool:
   Name: Uczelnia Zmiennokształtnych
   Description: Wybierz {Value2} z {Value1} losowych |Zwierzęcych Przemian|. Zyskaj
     ich efekty.
+  DetailText: '|e:Forma Płazów| aktywuje swój efekt tylko raz na każdą walkę i kolejne
+    użycia {SelfName} nie będą zawierały tej Przemiany.'
 MorphMan:
   Name: Forma Człowieka
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
@@ -2600,7 +2604,7 @@ LarvaFriend:
   Name: Larva, Bogini Wiecznej Nocy
   FlavorText: Pamiętaj, aby umyć ręce po uścisku dłoni z nią.
   ExtraDescription3: '{FriendU}Nałóż {Value2} |Trucizny| na wszystkich wrogów. Aktywuj
-    efekt tracenia zdrowia od |Trucizny| jeden raz.'
+    efekt tracenia życia od |Trucizny| jeden raz.'
 LeidiFriend:
   Name: Letty, Wcielenie Zimy
   Description: '{FriendP}Nałóż |Chłód| na losowego wroga.'
@@ -2758,7 +2762,7 @@ NightMana4:
 MoonTipsHeal:
   Description: Ulecz {Value1:plural one='% punkt' few='% punkty' many='% punktów'}
     życia.
-  Name: Wskazówka Zdrowia
+  Name: Porada Zdrowotna
 MoonTipsBag:
   FlavorText: 'Yukari: "Wygląda na to, że {PlayerName} jest w tarapatach."'
   Name: Woreczek Podpowiedzi Yukari
@@ -2856,15 +2860,11 @@ BabyDream:
   Name: Sen Embrionu
   Description: "Zyskaj {Block} |Bloku|.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą\
     \ |Wyśnioną| |Kartę Reakcji|. "
-UpgradeDoll:
-  Description: Ulepsz |e:Kukiełkę Shanghai|.
 PerfectCrime:
   Name: Przestępstwo Doskonałe
   Description: "Ukradnij celowi |Barierę|, |Unik|, |Kamuflaż Optyczny|, |Nieskazitelny\
     \ Jedwab| oraz maksymalnie {Value1} |Mocy| i |Uduchowienia|."
   FlavorText: Masz śliczny "Księżycowy Welon". Teraz należy do mnie!
-AliceAttackW:
-  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 DeployPenglai:
   Name: Umieść Kukiełkę Hourai
   Description: "|Umieść| |e:Kukiełkę Hourai|.\nZaktywuj jej |Zdolność Aktywną|."
@@ -3402,7 +3402,7 @@ AncestorDream:
     \ wszystkim wrogom.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą |Wyśnioną|\
     \ |Kartę Reakcji|. "
 KoishiWake:
-  Description: "Wyjdź z aktualnego |Stanu Umysłu|. Ulecz {Value1} zdrowia.\n|W stanie\
+  Description: "Wyjdź z aktualnego |Stanu Umysłu|. Ulecz {Value1} życia.\n|W stanie\
     \ Olśnienia|: Zyskaj {Shield} |Bariery|."
   FlavorText: '"Gdzie ja jestem?"'
   Name: Reset Umysłu
@@ -3561,5 +3561,3 @@ FollowAttackFiller:
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 DollBlock:
   Name: Lalkowa Tarcza
-DollRepair:
-  Name: Naprawa Lalki
