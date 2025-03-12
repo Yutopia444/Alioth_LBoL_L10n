@@ -94,8 +94,8 @@ LingfuHuti:
   FlavorText: En mode défense, et je termine mon tour.
 JingshenYishi:
   Name: Rituel Purifiant
-  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez {Value1:plural\
-    \ one='% |Faveur Divine|' other='% |Faveurs Divines|'}."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Exilez|\
+    \ une carte de la main."
 ReimuWeiyan:
   Name: Vraie Majesté
   Description: Appliquez {Value1} |Faible{Value1:plural one='' other='s'}| à chaque
@@ -1791,6 +1791,7 @@ NewsTidbit:
     \ avec Kaguya. Il est rapporté que Reimu entre et sort souvent du Pavillon de\
     \ l'Éternité, et des images de son comportement intime avec Kaguya sortent également\
     \ fréquemment. (Lecture d'un client du journal)"
+  DetailText: Ne peut pas être supprimé avec l'option |Préparer| après les boss.
 EmpCard:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} d'|Attaque|\
     \ .\nSi la cible est un |drone|, il ne peut pas agir pendant {Value1} tours.\n\
@@ -1992,6 +1993,8 @@ GainTreasure:
     \ à la belle intention originale du Duel de Cartes Sort ? Ne vous inquiétez pas,\
     \ la technologie X block chain vous aidera à résoudre votre problème d'argent\
     \ de manière plus civilisée.\""
+  ExtraDescription1: "Gagnez {Value1} <sprite=\"Point\" name=\"Gold\">.\n({TotalMoney}\
+    \ <sprite=\"Point\" name=\"Gold\"> gagnés grâce à {SelfName} durant cette partie.)"
 ArtificialJewellery:
   Name: Bijou Fantaisie
   Description: Gagnez 1 mana aléatoire.
@@ -2870,8 +2873,6 @@ BabyDream:
   Name: Rêve Fœtal
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\n|Rêve|\
     \ {Value1}, puis activez la première carte |Consécutive| |Rêvée|. "
-AliceAttackW:
-  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
 AliceAttackB:
   Name: Flanc Foudroyé
   Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
@@ -2879,17 +2880,19 @@ AliceBlockU:
   Name: Magie Défensive
   Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
 DeployShanghai:
-  Name: Déployer la Poupée Shanghai
-  Description: '|Déployez| une |e:Poupée Shanghai|, qui active son |effet de manipulation|.'
-UpgradeDoll:
-  Description: Améliorez une |e:Poupée Shanghai|.
+  Name: Peaufinage de Poupée
+  Description: '|Déployez| une |e:Poupée Shanghai|, ou |Promouvez| une Poupée.'
 DeployPenglai:
-  Name: Déployer la Poupée Hourai
-  Description: '|Déployez| une |e:Poupée Hourai|, qui active son |effet de manipulation|.'
+  Name: Bunraku pour Fille
+  Description: '|Déployez| une |e:Poupée Hourai|.
+
+    |Stimulus {KickerCost}|: Déployez une |e:Poupée Hourai| supplémentaire.'
 SacrificeDoll:
-  Name: Pacte de Suicide
-  Description: Choisissez une marionnette à |Évacuer|, infligez {Damage} dégât{Damage:plural
-    one='' other='s'} à tous les ennemis.
+  Name: Retour à l'Inanimé
+  Description: "Choisissez une poupée qui quitte le champ de bataille.\nInfligez {Damage}\
+    \ dégât{Damage:plural one='' other='s'} à chaque ennemi.\n|Stimulus {KickerCost}|\
+    \ : Jouez ces effets jusqu'à 2 fois."
+  DetailText: Choisir 2 poupées inflige deux fois plus de dégâts.
 HatateShot:
   Name: Photo Panoramique
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nChaque\
@@ -3098,13 +3101,16 @@ DebugAddRandomCards:
     \ other='s aléatoires'} à la pile de pioche/défausse."
 DollFactory:
   Name: Atelier de Figurines
+  Description: (WIP) 
 ZhenmiaowanAbility:
   Name: Magie du Maillet
   Description: Toutes les cartes coûtent {Mana} de moins jusqu'à la fin du combat.
 Qianqiang:
   Name: Alice Margatroid
+  Description: (WIP) 
 DollFangzhen:
   Name: Phalange de Poupées
+  Description: (WIP) 
 HuiyeMarblePhantasm:
   Name: Incarnation du Fantasme
   DetailText: S'il n'y a pas suffisamment de cartes avec le coût choisi, des cartes
@@ -3129,10 +3135,12 @@ FlanFirepower:
     \ one=' carte' other='s cartes'} en main."
 AutoHousework:
   Name: Automatisation du Ménage
+  Description: (WIP) 
 Frog:
   Name: Grenouille
-  Description: "Cette carte a été maudite.\nC'était à l'origine : {CardName}"
-  NonbattleDescription: Cette carte a été maudite.
+  Description: "Cette carte a été maudite.\nJouez {SelfName} pour la restaurer.\n\
+    C'était à l'origine : {CardName}"
+  NonbattleDescription: "Cette carte a été maudite.\nJouez {SelfName} pour la restaurer."
 YukariFlyObject:
   Name: Objet Volant Ultra-Rapide
   Description: Lorsque {PlayerName} débute son prochain tour, infligez {Value1} dégât{Value1:plural
@@ -3607,8 +3615,10 @@ KoishiDive:
     \ la main."
 DollBlock:
   Name: Bouclier de Poupée
+  Description: (WIP) 
 Zhendijianzao:
   Name: Création de Territoire
+  Description: (WIP) 
 DreamExpress:
   Name: Rêve Express
   Description: Lorsque {PlayerName} finit son tour, |Rêve| {Value1}, puis infligez
@@ -3641,9 +3651,9 @@ DebugUpgradeAllZone:
 HuiyeSuperExtraTurn:
   Name: 'Fin de la Nuit Éternelle'
   Description: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
-    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
-    \ et seule{Value1:plural one=' %' other='s %'} carte{Value1:plural one=' peut\
-    \ être jouée' other='s peuvent être jouées'} ."
+    Les |Boucliers| ne sont pas perdus au début de ce tour supplémentaire, et seule{Value1:plural\
+    \ one=' %' other='s %'} carte{Value1:plural one=' peut être jouée' other='s peuvent\
+    \ être jouées'} ."
   DetailText: "Le tour supplémentaire de {SelfName} a lieu avant tout autre tour supplémentaire.\n\
     Après avoir joué {SelfName}, vous pouvez survoler les icônes d'état que {PlayerName}\
     \ a pour vérifier les détails du tour en cours."
@@ -3724,3 +3734,26 @@ KoishiPlayDiscard:
     \ other='es comme des consécutives'}.\nLes cartes non-|consécutives| choisies\
     \ sont |Exilées|."
   DetailText: Si une carte |Injouable| est choisie, elle n'est pas jouée ni |Exilée|.
+AliceAttackU:
+  Name: Lance de Poupée
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+AliceBlockB:
+  Name: Défense Noire d'Alice
+  Description: Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.
+AliceKickerAttack:
+  Name: Attaque Stimulée
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Stimulus\
+    \ {KickerCost}|: Infligez les dégâts une fois de plus."
+MansionNight:
+  Name: Nuit du Manoir Hanté
+  Description: (WIP) 
+DollFormation:
+  Name: Petite Légion
+  Description: (WIP) 
+DollFire:
+  Name: Crémation de Poupée
+  Description: (WIP) 
+SanaeWind:
+  Name: Vent Divin
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez {Value2:plural\
+    \ one='% |Faveur Divine|' other='% |Faveurs Divines|'}."

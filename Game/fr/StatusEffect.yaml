@@ -23,12 +23,15 @@ LockedOn:
     \ début de chaque tour."
   Name: Verrouillé
 Graze:
-  Brief: "{OwnerName} subit 0 dégâts des attaques.\nPerdez 1 |Esquive| lorsqu'il est\
-    \ attaqué ou au début du tour."
+  Brief: "{OwnerName} subit 0 dégâts des attaques.\nPerdez 1 |Esquive| lorsque attaqué\
+    \ ou lorsqu'un |Tour Naturel| débute."
   Name: Esquive
   Description: "{OwnerName} subit 0 dégâts lors {Level:plural one='de la prochaine\
-    \ attaque' other='des % prochaines attaques'}.\nPerdez 1 |Esquive| lorsqu'il est\
-    \ attaqué ou au début du tour."
+    \ attaque' other='des % prochaines attaques'}.\nPerdez 1 |Esquive| lorsque attaqué\
+    \ ou lorsqu'un |Tour Naturel| débute."
+  ExtraDescription: "{OwnerName} subit 0 dégâts lors {Level:plural one='de la prochaine\
+    \ attaque' other='des % prochaines attaques'}.\nPerdez 1 |Esquive| lorsque attaqué\
+    \ ou lorsqu'un |Tour Naturel| débute.\n"
 TempFirepower:
   Name: Puissance Temporaire
   Description: "Jusqu'à la fin du tour, gagnez {Level} |Puissance{Level:plural one=''\
@@ -96,10 +99,10 @@ Electric:
   Brief: En cas de dégâts reçus, inflige des dégâts en retour à l'attaquant.
 TempElectric:
   Brief: "En cas de dégâts reçus, inflige des dégâts en retour à l'attaquant.\nRetiré\
-    \ au début du prochain tour de {OwnerName}."
+    \ au début du prochain |Tour Naturel| de {OwnerName}."
   Name: Charge Statique
   Description: "En cas de dégâts reçus, inflige {Level} dégâts en retour à l'attaquant.\n\
-    Retiré au début du prochain tour de {OwnerName}."
+    Retiré au début du prochain |Tour Naturel| de {OwnerName}."
 NextTurnGainBlock:
   Description: Au début du prochain tour de {OwnerName}, gagnez {Level} |Bouclier{Level:plural
     one='' other='s'}|.
@@ -199,7 +202,9 @@ KokoroNu:
   Name: Colère
 LongEscape:
   Description: '{OwnerName} quittera la bataille lorsque sa vie sera inférieure à
-    {Level}.'
+    {Level}.
+
+    Donne {Level} <Sprite="Point" then="Gold"> une fois vaincu.'
   Name: Du Calme
 EnemyEnergy:
   Description: '{OwnerName} gagne <sprite="Point" name="Power"> égal aux dégâts subis.
@@ -426,8 +431,8 @@ LoveGirlDamageReduce:
 PhoneBillSe:
   Name: Facture Téléphonique
   Description: "{OwnerName} collecte {Level} <sprite=\"Point\" name=\"Gold\"> pour\
-    \ chaque appel téléphonique.\nDonne {Count} <sprite=\"Point\" name=\"Gold\"> une\
-    \ fois vaincu."
+    \ chaque appel téléphonique.\nDonne {Count} <sprite=\"Point\" name=\"Gold\"> supplémentaires\
+    \ une fois vaincu."
 AbsorbSpirit:
   Name: Orbe Bleue
   Description: À la fin du tour de {OwnerName}, gagnez {Level} |Esprit{Level:plural
@@ -472,8 +477,8 @@ KokoroYou:
     one='' other='s'}|. (Déjà arrivé)
 LongLight:
   Name: Trépied Brillant
-  Description: '{OwnerName} brille comme une étoile ! Elle fait plus de dégâts, et
-    ses cartes de statut sont plus puissantes.'
+  Description: '{OwnerName} brille comme une étoile ! Ses cartes de statut sont plus
+    puissantes.'
 FlatPeach:
   Name: Pêche Céleste
   Description: Chaque fois que {OwnerName} subit des blessures, elle gagne {Level}
@@ -516,9 +521,9 @@ JunkoPurify:
   Name: Lumière Purifiante
   Description: Chaque fois que {PlayerName} joue une carte, |Purifie| {Level}.
 ShendengSe:
-  Description: À la fin du tour de {OwnerName}, {PlayerName} gagne aléatoirement {Level}
-    |Faible{Level:plural one='' other='s'}|, |Fragile{Level:plural one='' other='s'}|
-    ou |Vulnérable{Level:plural one='' other='s'}|.
+  Description: Après que tous les ennemis aient joué leur tour, {PlayerName} gagne
+    aléatoirement {Level} |Faible{Level:plural one='' other='s'}|, |Fragile{Level:plural
+    one='' other='s'}| ou |Vulnérable{Level:plural one='' other='s'}|.
   Name: Lampe à Huile Orientale
 QiannianShenqiSe:
   Name: Puzzle Pyramidal
@@ -1101,19 +1106,17 @@ YouxiangWakeSe:
 SuperExtraTurn:
   Name: 'Fin de la Nuit Éternelle'
   Description: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
-    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
-    \ et seule{Level:plural one=' %' other='s %'} carte{Level:plural one=' peut être\
-    \ jouée' other='s peuvent être jouées'} .\nStatut du tour : {StatusString}."
+    Les |Boucliers| ne sont pas perdus au début de ce tour supplémentaire, et seule{Level:plural\
+    \ one=' %' other='s %'} carte{Level:plural one=' peut être jouée' other='s peuvent\
+    \ être jouées'} .\nStatut du tour : {StatusString}."
   Brief: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour supplémentaire.\n\
-    |Boucliers| et |Esquives| ne sont pas perdus au début de ce tour supplémentaire,\
-    \ et seule{Level:plural one=' %' other='s %'} carte{Level:plural one=' peut être\
-    \ jouée' other='s peuvent être jouées'} ."
+    Les |Boucliers| ne sont pas perdus au début de ce tour supplémentaire, et seules\
+    \ quelques cartes peuvent être jouées."
   ExtraDescription: "Lorsque {PlayerName} finit son |Tour Naturel|, jouez un tour\
-    \ supplémentaire.\n|Boucliers| et |Esquives| ne sont pas perdus au début de ce\
-    \ tour supplémentaire, et seule{Level:plural one=' %' other='s %'} carte{Level:plural\
-    \ one=' peut être jouée' other='s peuvent être jouées'} .\nStatut du tour : {Count}\
-    \ carte{Count:plural one=' restante' other='s restantes'} dans le tour supplémentaire\
-    \ de {SelfName}.\n"
+    \ supplémentaire.\nLes |Boucliers| ne sont pas perdus au début de ce tour supplémentaire,\
+    \ et seule{Level:plural one=' %' other='s %'} carte{Level:plural one=' peut être\
+    \ jouée' other='s peuvent être jouées'} .\nStatut du tour : {Count} carte{Count:plural\
+    \ one=' restante' other='s restantes'} dans le tour supplémentaire de {SelfName}.\n"
 ClockCorpseSe:
   Name: Cadavre d'Horloge
   Description: Les cartes ne peuvent pas être piochées en dehors de l'étape de pioche
@@ -1426,3 +1429,15 @@ SelfControlSe:
     one='' other='s'}| si dans l'état |Calme|.
   Brief: Lorsque {PlayerName} finit son tour, gagnez de la |Puissance| si dans l'état
     |Passion|, ou du |Bouclier| si dans l'état |Calme|.
+EnemyVulnerable:
+  Description: Une fois que tous les ennemis ont joué leur tour, {PlayerName} gagne
+    {Level} |Vulnérable{Level:plural one='' other='s'}|.
+  Name: Vulnérable Bientôt
+MaxHandSe:
+  Description: La taille maximale de la main augmente à {MaxHand}.
+  Name: Assemblée des Fées
+  Brief: La taille maximale de la main augmente à {MaxHand}.
+EnemyLockedOn:
+  Name: Verrouillé Bientôt
+  Description: Une fois que tous les ennemis ont joué leur tour, {PlayerName} gagne
+    {Level} |Verrouillé{Level:plural one='' other='s'}|.
