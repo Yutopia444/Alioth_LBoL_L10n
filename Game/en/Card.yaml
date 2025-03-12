@@ -60,8 +60,8 @@ Jinfuzhen:
     as it seems.
 JingshenYishi:
   Description: |-
-    Draw {Value1} card{Value1:plural one='' other='s'}.
-    Gain {Value2} |Divine Favor|.
+    Gain {Block} |Block|.
+    |Exile| a card from the hand.
   Name: Cleansing Ritual
 ShengtianKick:
   Description: |-
@@ -120,8 +120,8 @@ Changzhizhen:
   FlavorText: Its strength is equal to Reimu's debt, plus interest.
 MingzhuAntou:
   Description: "Deal {Damage} damage to each enemy.\nChoose 1 of {Value1} |Rainbow\
-    \ Jade Yin-Yang Orbs| to add to the hand.\nFor each |Yin-Yang Orb| on the |battlefield|,\
-    \ {SelfName} costs {Mana} less to play."
+    \ Jade Yin-Yang Orbs| to add to the hand.\nFor each |Yin-Yang Orb card| on the\
+    \ |battlefield|, {SelfName} costs {Mana} less to play."
 
   Name: Secret Orbs
   FlavorText: Every time you toss an orb, there's a chance to "Restart Level".
@@ -214,7 +214,7 @@ YinyangXueyin:
   Description: |-
     Lose {Value2} life.
     Add a |Yin-Yang Orb| to the hand.
-    After {PlayerName} plays a |Yin-Yang Orb|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
+    After {PlayerName} plays a |Yin-Yang Orb card|, gain {Value1} |Temporary Firepower| and |Temporary Spirit|.
 
   Name: Yin-Yang Rune
   FlavorText: If you can't afford spell ingredients, you'll have to use your blood.
@@ -1392,6 +1392,8 @@ GainTreasure:
   FlavorText: Do you think that using money as a reward has ruined the authenticity
     of spell card duels? Don't worry, X blockchain technology will use more civilised
     methods to solve your funding issues.
+  ExtraDescription1: "Gain {Value1} <sprite=\"Point\" name=\"Gold\">.\n({TotalMoney}\
+    \ <sprite=\"Point\" name=\"Gold\"> gained from {SelfName} this run.)"
 QingeUpgrade:
   Description: "Deal {Damage} damage.\n|Expel|: Permanently |Upgrade| a card."
   Name: Trick of Wicked Hermit
@@ -1477,6 +1479,7 @@ NewsTidbit:
     for reasons related to her intimate relationship with Kaguya. It is reported that
     Reimu often goes in and out of Eientei, and photos of her intimate acts with Kaguya
     are constantly being leaked. (Kakashi Spirit News Client)'
+  DetailText: Cannot be removed with the |Prepare| option after bosses.
 EmpCard:
   Description: "Deal {Damage} attack damage.\nIf the target is a |drone|, it cannot\
     \ act for {Value1} turns.\n|Limited【{DeckCounter}】|"
@@ -2779,11 +2782,10 @@ FakeCard:
   Name: Tale of the Bamboo Cutter (Forged)
   Description: "This card is still in Early Access.\nPlease check back in a future\
     \ update."
-AliceAttackW:
-  Description: Deal {Damage} damage.
 DeployPenglai:
-  Name: Deploy Hourai Doll
-  Description: "|Deploy| a |e:Hourai Doll|.\nActivate its |Control Skill|."
+  Name: Maiden's Bunraku
+  Description: "|Deploy| a |e:Hourai Doll|.\n|Kicker {KickerCost}|: Deploy an additional\
+    \ |e:Hourai Doll|."
 AliceBlockU:
   Name: Defense Magic
   Description: Gain {Block} |Block|.
@@ -2791,13 +2793,13 @@ AliceAttackB:
   Name: Flanking Flash
   Description: Deal {Damage} damage.
 DeployShanghai:
-  Name: Deploy Shanghai Doll
-  Description: "|Deploy| a |e:Shanghai Doll|.\nActivate its |Control Skill|."
-UpgradeDoll:
-  Description: Upgrade a |e:Shanghai Doll|.
+  Name: Refine Doll
+  Description: "|Deploy| a |e:Shanghai Doll|, or |Promote| a Doll."
 SacrificeDoll:
-  Name: Suicide Pact
-  Description: "Choose a Doll to |Exit|.\nDeal {Damage} damage to each enemy."
+  Name: Return Inanimateness
+  Description: "Choose a Doll to exit.\nDeal {Damage} damage to each enemy.\n|Kicker\
+    \ {KickerCost}|: Perform up to 2 times."
+  DetailText: Choosing 2 dolls deals damage twice.
 AyaNewsAliceSp:
   Name: Bunbunmaru - Alice Special
   Description: '|At the end of the turn|: Lose {Value1} |Spirit|.'
@@ -2947,8 +2949,9 @@ HuiyinRemove:
     \ this combat."
 Frog:
   Name: Frog
-  Description: "This card has been jinxed.\nIt was originally: {CardName}"
-  NonbattleDescription: This card has been jinxed.
+  Description: "This card has been jinxed.\nPlay {SelfName} to restore it.\nIt was\
+    \ originally: {CardName}"
+  NonbattleDescription: "This card has been jinxed.\nPlay {SelfName} to restore it."
 AutoHousework:
   Name: Automated Housekeeping
 Qianqiang:
@@ -3200,8 +3203,8 @@ JinziDoppelganger:
   Description: The first card played during {PlayerName}'s turn is played twice.
 HuiyeSuperExtraTurn:
   Description: "At the end of {PlayerName}'s |Natural Turn|, take an extra turn.\n\
-    |Block| and |Graze| are not lost at the start of that extra turn, and only {Value1}\
-    \ card{Value1:plural one='' other='s'} may be played."
+    |Block| is not lost at the start of that extra turn, and only {Value1} card{Value1:plural\
+    \ one='' other='s'} may be played."
   DetailText: "{SelfName}'s extra turn happens before any other extra turn.\nAfter\
     \ playing {SelfName}, you can hover over {PlayerName}'s status icons to check\
     \ the details of the current turn."
@@ -3485,3 +3488,23 @@ DebugPlaySelectCard:
   Name: Play Cards From Battlefield
   Description: "Test Card: Choose up to {Value1} cards on the Battlefield to play\
     \ as Follow-Ups.\nOrder of Resolution: Hand, Draw Pile, Discard Pile, Exile"
+AliceAttackU:
+  Name: Doll Lance
+  Description: Deal {Damage} damage.
+AliceBlockB:
+  Name: Alice B Defense
+  Description: Gain {Block} |Block|.
+AliceKickerAttack:
+  Name: Kicker Attack
+  Description: "Deam {Damage} damage.\n|Kicker {KickerCost}|: Deal damage an additional\
+    \ time."
+DollFire:
+  Name: Doll Cremation
+MansionNight:
+  Name: Haunted Mansion Night
+DollFormation:
+  Name: Little Legion
+SanaeWind:
+  Name: Divine Wind
+  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nGain {Value2}\
+    \ |Divine Favor|."
