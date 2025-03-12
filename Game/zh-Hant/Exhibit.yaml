@@ -138,15 +138,11 @@ KoishiB:
     不會受到|折射日光|的傷害。
   FlavorText: 再也不怕被遠光燈閃瞎了！
 
-AliceW:
-  Description: |-
-    提供基礎法力{BaseMana}，|愛麗絲|的專屬卡牌會加入牌池。
-    戰鬥開始時，部署一個|e:上海人偶|。
 AliceB:
-  Name: 引爆裝置
+  Name: 蓬萊人偶
   Description: |-
     提供基礎法力{BaseMana}，|愛麗絲|的專屬卡牌會加入牌池。
-    |撤離||e:蓬萊人偶|時造成雙倍傷害。
+    戰鬥開始時，|部署|一個|e:蓬萊人偶|。
   FlavorText: （設計有可能改動）
 
 PiaoliangPanzi:
@@ -319,7 +315,9 @@ YizangnuoWuzhi:
 
 LouguanJian:
   Name: 樓觀劍
-  Description: '{PlayerName}造成攻擊傷害後，施加 {Value1} 層|鎖定|。'
+  Description: '{PlayerName}造成攻擊傷害後，施加 {Value1} 層|鎖定|。
+
+    不會丟失。'
   FlavorText: 「砍了！」
 
 He3:
@@ -422,7 +420,7 @@ ShanliangDengpao:
 
 ZhanshuDaoliqi:
   Name: 戰術導體
-  Description: 在戰鬥中，{PlayerName}的技能牌費用降低{Mana}。
+  Description: 在戰鬥中，所有的技能牌費用降低{Mana}。
   FlavorText: 上面只有一條長鏈，很適合用於施法。
 
 Yashemao:
@@ -666,7 +664,9 @@ TiangouShouji:
 
 TiangouYuyi:
   Name: 鴉天狗的羽翼
-  Description: '{PlayerName}選擇下一關時可以無視路線，剩餘 {Counter} 次。'
+  Description: '{PlayerName}選擇下一關時可以無視路線，剩餘 {Counter} 次。
+
+    {PlayerName}的第一回合開始時，獲得 {Value1} 層|閃避|。'
   FlavorText: 幻想鄉裏，鴉天狗們之所以跑得比誰都快，仰賴的就是它。
 
 TiangouDunpai:
@@ -815,7 +815,7 @@ Pijiu:
 
 HeiseBijiben:
   Name: 黑色筆記本
-  Description: 戰鬥開始時，已知姓名的敵人失去 {Value1} 點生命。
+  Description: 戰鬥開始時，已知姓名的敵人失去 {Value1} 點生命，受到 {Value2} 回合|易傷|。
   FlavorText: 「據說寫上姓名就能殺死對方。」
 
 Guangjian:
@@ -975,3 +975,11 @@ QicaiLianhua:
   FlavorText: 中國功夫真的能做到這種事嗎。
   ExtraDescription: "{PlayerName}的回合開始時，獲得一點隨機法力。\n每場戰鬥中，擁有過所有七種顏色的法力時，將一張|e:彩光亂舞|加入手中。\n\
     已擁有：{ColorRecord}。"
+AliceU:
+  Name: 上海人偶
+  FlavorText: （設計有可能改動）
+  Description: "提供基礎法力{BaseMana}，|愛麗絲|的專屬卡牌會加入牌池。\n戰鬥開始時，|部署|一個|e:上海人偶|。"
+AliceBook:
+  Name: 《究極的魔法》
+  Description: "在戰鬥中，所有卡牌的|增幅|費用降低{Mana}。\n不會丟失。"
+  FlavorText: 遺失在魔界的究極魔導書，封面上寫的是"Grimoire of Alice"。

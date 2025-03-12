@@ -135,12 +135,13 @@ LockedOn:
 Graze:
   Name: 閃避
   Description: |-
-    {OwnerName}受到的攻擊傷害降至 0 ，剩餘{Level} 次。
-    受到攻擊或回合開始時降低 1 層。
+    {OwnerName}受到的攻擊傷害降至 0 ，剩餘 {Level} 次。
+    受到攻擊或|自然回合|開始時失去 1 層。
   Brief: |-
     {OwnerName}受到的攻擊傷害降至 0 。
-    受到攻擊或回合開始時降低 1 層。
+    受到攻擊或|自然回合|開始時失去 1 層。
 
+  ExtraDescription: "{OwnerName}受到的攻擊傷害降至 0 ，剩餘 {Level} 次。\n受到攻擊或回合開始時失去 1 層。\n"
 ExtraTurn:
   Name: 額外回合
   Description: '{OwnerName}的回合結束後，進行額外的回合，剩餘{Level} 次。'
@@ -185,10 +186,10 @@ TempElectric:
   Name: 帶電
   Description: |-
     受到攻擊傷害時，對攻擊者造成 {Level} 點傷害。
-    {OwnerName}的下回合開始時移除本效果。
+    {OwnerName}的下個|自然回合|開始時移除本效果。
   Brief: |-
     受到攻擊傷害時，對攻擊者造成若干點傷害。
-    {OwnerName}的下回合開始時移除本效果。
+    {OwnerName}的下個|自然回合|開始時移除本效果。
 
 Reflect:
   Name: 反射
@@ -294,7 +295,7 @@ PhoneBillSe:
   Name: 電話費
   Description: |-
     {OwnerName}打電話時收取{PlayerName} {Level} 點<sprite="Point" name="Gold">。
-    被擊敗時掉落 {Count} 點<sprite="Point" name="Gold">。
+    被擊敗時額外掉落 {Count} 點<sprite="Point" name="Gold">。
 
 FoxCharm:
   Name: 妖狐魅惑
@@ -418,11 +419,13 @@ KokoroYou:
 
 LongLight:
   Name: 閃光三腳架
-  Description: '{OwnerName}變得愈發炫光奪目，傷害提高，強化她添加的狀態牌。'
+  Description: '{OwnerName}變得愈發炫光奪目，強化她添加的狀態牌。'
 
 LongEscape:
   Name: 放水
-  Description: '{OwnerName}會在生命值低於 {Level} 時離開戰鬥。'
+  Description: '{OwnerName}會在生命值低於 {Level} 時離開戰鬥；
+
+    被擊敗時額外掉落 {Level} 點<sprite="Point" name="Gold">。'
 
 FlatPeach:
   Name: 仙桃
@@ -517,7 +520,7 @@ SingleJiandaoSe:
 
 ShendengSe:
   Name: 前端很長的茶壺
-  Description: '{OwnerName}的回合結束時，對{PlayerName}施加 {Level} 回合負面狀態。從|虛弱|、|脆弱|及|易傷|中隨機。'
+  Description: '所有敵人行動完畢後，對{PlayerName}施加 {Level} 回合負面狀態。從|虛弱|、|脆弱|和|易傷|中隨機。'
 
 HolyGrailSe:
   Name: 裝飾浮誇的金杯
@@ -1119,10 +1122,10 @@ YouxiangWakeSe:
   ExtraDescription: 下回合的回合開始時：獲得 {Level} 點|火力|，將抽牌堆中隨機的 {Limit} 張攻擊牌移入手中，|暫塑|為{Mana}。
 SuperExtraTurn:
   Name: 「永夜返」
-  Description: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。\n\
+  Description: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|，只能打出 {Level} 張牌。\n\
     目前回合狀態：{StatusString}。"
-  Brief: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。"
-  ExtraDescription: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Level} 張牌。\n\
+  Brief: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|，只能打出若干張牌。"
+  ExtraDescription: "{PlayerName}的|自然回合|結束時，進行額外的回合。\n這一回合開始時不會失去|格擋|，只能打出 {Level} 張牌。\n\
     目前回合狀態：{SelfName}所帶來的額外回合，還可以打出 {Count} 張牌。\n"
 NextTurnGainGraze:
   Name: 下回合獲得閃避
@@ -1329,3 +1332,13 @@ SelfControlSe:
   Name: 掌控自我
   Description: '{PlayerName}的回合結束時：處於|熱情|則獲得 {Level} 點|火力|；處於|平靜|則獲得 {Count} 點|格擋|。'
   Brief: '{PlayerName}的回合結束時：處於|熱情|則獲得若干點|火力|；處於|平靜|則獲得若干點|格擋|。'
+EnemyVulnerable:
+  Name: 即將施加易傷
+  Description: 所有敵人行動完畢後，對{PlayerName}施加 {Level} 回合|易傷|。
+MaxHandSe:
+  Name: 妖精集結
+  Description: 手牌上限提高至 {MaxHand} 張。
+  Brief: 手牌上限提高至 {MaxHand} 張。
+EnemyLockedOn:
+  Name: 即將施加鎖定
+  Description: 所有敵人行動完畢後，對{PlayerName}施加 {Level} 層|鎖定|。

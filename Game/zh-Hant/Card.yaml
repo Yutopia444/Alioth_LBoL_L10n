@@ -103,8 +103,8 @@ Jinfuzhen:
 JingshenYishi:
   Name: 淨身儀式
   Description: |-
-    抽 {Value1} 張牌。
-    獲得 {Value2} 點|神恩|。
+    獲得 {Block} 點|格擋|。
+    選擇一張手牌|放逐|。
 YinyangBaoyu:
   Name: 陰陽寶玉
   Description: |-
@@ -241,7 +241,7 @@ MingzhuAntou:
   Description: |-
     對所有敵人造成 {Damage} 點傷害。
     從 {Value1} 張|虹龍陰陽玉|中選擇一張加入手中。
-    |戰場|中每存在一張|陰陽玉|，{SelfName}費用降低{Mana}。
+    |戰場|中每存在一張|陰陽玉牌|，{SelfName}費用降低{Mana}。
   FlavorText: 每次投出珠子都有概率觸發「重開當前關卡」。
 
 YakongDianxue:
@@ -266,7 +266,7 @@ YinyangXueyin:
   Description: |-
     失去 {Value2} 點生命。
     將一張|陰陽玉|加入手中。
-    打出|陰陽玉|後獲得 {Value1} 點|暫得火力|及|暫得靈力|。
+    打出|陰陽玉牌|後獲得 {Value1} 點|暫得火力|及|暫得靈力|。
   FlavorText: 買不起別的施法材料，只能用血了。
 
 ReimuFreeAttack:
@@ -1799,9 +1799,6 @@ PerfectCrime:
     竊取目標的|護盾|、|閃避|、|光學迷彩|、|天衣無縫|；竊取目標的|火力|、|靈力|，至多 {Value1} 點。
 
   FlavorText: 你的「月之羽衣」很不錯，但是下一秒它就是我的了。
-AliceAttackW:
-  Description: 造成 {Damage} 點傷害。
-
 AliceAttackB:
   Name: 側翼閃光
   Description: 造成 {Damage} 點傷害。
@@ -1811,20 +1808,22 @@ AliceBlockU:
   Description: 獲得 {Block} 點|格擋|。
 
 DeployShanghai:
-  Name: 部署上海人偶
-  Description: '|部署|一個|e:上海人偶|，發動其|操縱效果|。'
+  Name: 修繕人偶
+  Description: '|部署|一個|e:上海人偶|；
 
-UpgradeDoll:
-  Description: 升級一個|e:上海人偶|。
+    或|晉升|一個人偶。'
 
 DeployPenglai:
-  Name: 部署蓬萊人偶
-  Description: '|部署|一個|e:蓬萊人偶|，發動其|操縱效果|。'
+  Name: 少女文樂
+  Description: '|部署|一個|e:蓬萊人偶|。
+
+    |增幅{KickerCost}：|改為兩個。'
 
 SacrificeDoll:
-  Name: 自殺協議
-  Description: 選擇一個人偶|撤離|，對所有敵人造成 {Damage} 點傷害。
+  Name: 回歸虛無
+  Description: "選擇一個人偶撤離戰場，對所有敵人造成 {Damage} 點傷害。\n|增幅{KickerCost}：|可以執行兩次。"
 
+  DetailText: 選擇兩個人偶才能造成兩次傷害。
 DoubleActiveTrigger:
   Name: 雙重觸發
   Description: (WIP) 觸發最前面的 Doll 主動效果兩次
@@ -3025,6 +3024,8 @@ GainTreasure:
   Description: 獲得 {Value1} 點<sprite="Point" name="Gold">。
   FlavorText: 「你是否認為，以金錢作為報酬損害了符卡決鬥的美好初衷？不用擔心，X塊鏈技術將用更文明的方式助您解決資金問題。」
 
+  ExtraDescription1: "獲得 {Value1} 點<sprite=\"Point\" name=\"Gold\">。\n本次遊戲已獲得 {TotalMoney} 點<sprite=\"\
+    Point\" name=\"Gold\">。"
 ArtificialJewellery:
   Name: 人造珠寶
   Description: 獲得一點隨機有色法力。
@@ -3068,6 +3069,7 @@ NewsTidbit:
     |消耗品【{DeckCounter}】|
   FlavorText: ……透露，靈夢此行除有經濟方面的考量外，也與她和輝夜私交甚密有關。據悉，靈夢經常出入永遠亭內，與輝夜舉止親暱的影像也頻繁流出。（花果子念報客戶端）
 
+  DetailText: 不能在首領戰後的|整備|中移除。
 WolfFur:
   Name: 狼毛
   Description: '|消耗品【{DeckCounter}】|'
@@ -3429,17 +3431,19 @@ DebugAddHandCards:
   Description: 測試卡牌：放逐所有手牌，然後添加 {Value1} 張隨機的卡牌到手中。
 DollFactory:
   Name: 人形工房
+  Description: (WIP) 
 ZhenmiaowanAbility:
   Name: 小槌的魔力
   Description: 所有卡牌的費用降低{Mana}，直到戰鬥結束。
 AutoHousework:
   Name: 家政自動化
-DollSacrifice:
-  Name: 回歸虛無
+  Description: (WIP) 
 Qianqiang:
   Name: 萌萌大千槍
+  Description: (WIP) 
 DollFangzhen:
   Name: 人形方陣
+  Description: (WIP) 
 HuiyeMarblePhantasm:
   DetailText: 目標費用的可選卡牌不足時，會補充更低費用的備選卡牌。
   Name: 空想具現化
@@ -3455,8 +3459,8 @@ FlanFirepower:
   Description: "賦予所有手牌|虛無|，並獲得等同手牌數量的|火力|。\n現有 {Count} 張其它手牌。"
 Frog:
   Name: 青蛙
-  Description: "這張牌被詛咒了。\n它曾經是：{CardName}"
-  NonbattleDescription: 這張牌被詛咒了。
+  Description: "這張牌被詛咒了。\n打出{SelfName}可以取回原卡牌。\n它曾經是：{CardName}"
+  NonbattleDescription: "這張牌被詛咒了。\n打出{SelfName}可以取回原卡牌。"
 YoumuHybrid:
   Name: 半人半靈
   Description: "|每支付|<sprite=\"ManaSprite\" name=\"W\">：選擇至多 {Value1} 張手牌|放逐|。\n|每支付|<sprite=\"\
@@ -3789,8 +3793,10 @@ FollowAttackFiller:
   FlavorText: 叮鈴鈴——叮鈴鈴——
 DollBlock:
   Name: 人形當身
+  Description: (WIP) 
 Zhendijianzao:
   Name: 陣地建造
+  Description: (WIP) 
 DreamExpress:
   Name: 夢幻快車
   Description: '{PlayerName}的回合結束時，|入夢| {Value1} ，對所有敵人造成兩倍於它們基礎費用之和的傷害。'
@@ -3802,7 +3808,7 @@ JinziDoppelganger:
   Description: '{PlayerName}每回合打出的第一張牌會打出兩次。'
 HuiyeSuperExtraTurn:
   Name: 「永夜返」
-  Description: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|和|閃避|，只能打出 {Value1} 張牌。"
+  Description: "{PlayerName}的|自然回合|結束時，進行一個額外的回合。\n這一回合開始時不會失去|格擋|，只能打出 {Value1} 張牌。"
   DetailText: "{SelfName}所帶來的額外回合，總是先於其它額外回合發生。\n打出{SelfName}後，可以懸停{PlayerName}身上的狀態來查看當前回合的詳細信息。"
 KoishiDiscard:
   Name: 無意識的遺忘
@@ -3867,3 +3873,24 @@ KoishiPlayDiscard:
 DebugPlaySelectCard:
   Name: 選擇戰場中的牌打出
   Description: "測試卡牌：選擇戰場中的至多 {Value1} 張牌追加打出。\n順序是：手牌、抽牌堆、棄牌堆、放逐區。"
+AliceAttackU:
+  Name: 人形槍擊
+  Description: 造成 {Damage} 點傷害。
+AliceBlockB:
+  Name: 愛麗絲黑色防禦
+  Description: 獲得 {Block} 點|格擋|。
+AliceKickerAttack:
+  Name: 增幅攻擊
+  Description: "造成 {Damage} 點傷害。\n|增幅{KickerCost}：|造成兩次傷害。"
+MansionNight:
+  Name: 洋館驚魂夜
+  Description: (WIP) 
+DollFormation:
+  Description: (WIP) 
+  Name: 小小戰團
+DollFire:
+  Description: (WIP) 
+  Name: 人形火葬
+SanaeWind:
+  Name: 神之風
+  Description: "抽 {Value1} 張牌。\n獲得 {Value2} 點|神恩|。"

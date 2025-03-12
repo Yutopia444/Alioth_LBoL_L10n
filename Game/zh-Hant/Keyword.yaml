@@ -1,7 +1,3 @@
-GamerunInitial:
-  Description: '初始卡牌標記，不會顯示給玩家看到。'
-
-#卡牌類型相關
 Basic:
   Name: 基礎
   Description: '這是一張基礎卡牌。'
@@ -196,18 +192,14 @@ Deploy:
   Name: 部署
   Description: |-
     將一個人偶置於戰場中。
-    數量達到上限時，最舊的人偶會發動|操縱效果|並離開戰場。
-
-Magic:
-  Description: |-
-    達到臨界值時，消耗魔力發動人偶的|操縱效果|。
+    數量達到上限後無法生效。
 
 Leave:
   Description: |-
     發動一個人偶的|操縱效果|並使其離開戰場。
 NaturalTurn:
   Name: 自然回合
-  Description: "|自然回合|與額外回合相對。\n戰鬥中的每一個輪次內，每一名角色都只能進行一個|自然回合|。"
+  Description: "|自然回合|與額外回合相對。\n每個輪次內，每名角色都只能進行一個|自然回合|。"
 HybridCost:
   Name: 混血費用
   Description: 兩種顏色的法力都可以用來支付這一點|混血費用|。
@@ -235,3 +227,12 @@ FollowCard:
 FollowAttack:
   Name: 追加攻擊
   Description: 從抽牌堆中選擇第一張|追擊牌|，將它追加打出。
+Kicker:
+  Description: "打出此卡牌時可以額外支付法力。\n（通過左下角法力面板設置）"
+  Name: 增幅 X
+Yinyang:
+  Name: 陰陽玉牌
+  Description: 這是一張陰陽玉牌。
+Promote:
+  Name: 晉升
+  Description: "強化一個人偶。\n從隨機產生的 3 個晉升方向中，選擇一項生效。"

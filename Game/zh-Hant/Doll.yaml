@@ -3,13 +3,18 @@
 Shanghai:
   Name: 上海人偶
   Description: |-
-    |操縱效果|：對最先行動的敵人造成 {Damage1} 點傷害。
-    |魔力值|：{Magic}/{ActiveMagic}
-    回合開始時恢復一點|魔力|。
+    |操縱 {MagicCost} |：造成 {Damage} 點傷害。
+
+    |魔力值|：{Magic}/{MagicCost}
 
 Penglai:
   Name: 蓬萊人偶
-  Description: '|操縱效果|：對生命值最低的敵人造成 {Damage1} 點傷害。'
+  Description: '|操縱|：將一名敵人標記為目標，然後從戰場中撤離。
+
+    |撤離時|：造成 {Damage} 點傷害，獲得等同於魔力值的{Mana}。
+
+
+    |魔力值|：{Magic}/{MaxMagic}'
 
 DefenseDoll:
   Name: 防禦人偶 (Experimental)
@@ -30,5 +35,3 @@ ManaDoll:
     |主動|：造成 {Mana2}
 
 
-IceCrystal:
-  Description: 犧牲{SelfName}，選擇一名敵人施加|寒冷|。
