@@ -81,9 +81,7 @@ Jinfuzhen:
     jak się wydaje.
 JingshenYishi:
   Name: Oczyszczający Rytuał
-  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Zyskaj {Value2:plural one='% |Boską Przychylność|' few='% |Boskie Przychylności|'\
-    \ many='% |Boskich Przychylności|'}."
+  Description: "Zyskaj {Block} |Bloku|.\n|Wygnaj| kartę z ręki."
 YinyangBaoyu:
   Name: Kula Dualizmu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -153,8 +151,8 @@ MingzhuAntou:
   Name: Sekretna Granica
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nWybierz 1 z {Value1} |Kul Yin-Yang Tęczowego Jadeitu| aby\
-    \ dodać do ręki.\nZa każdą |Kulę Yin-Yang| na |Polu Bitwy|, {SelfName} kosztuje\
-    \ o {Mana} mniej."
+    \ dodać ją do ręki.\nZa każdą |kartę Kuli Yin-Yang| na |Polu Bitwy|, {SelfName}\
+    \ kosztuje o {Mana} mniej."
   FlavorText: Z każdym rzutem kuli jest szansa na "Zrestartowanie Poziomu".
 HuanxiangBlock:
   Name: Na Skraju Fantazji
@@ -194,7 +192,7 @@ FreeFly:
 YinyangXueyin:
   Name: Runa Yin-Yang
   Description: "Strać {Value2:plural one='% punkt' few='% punkty' many='% punktów'}\
-    \ życia.\nDodaj |Kulę Yin-Yang| do ręki.\nGdy {PlayerName} zagra |Kulę Yin-Yang|,\
+    \ życia.\nDodaj |Kulę Yin-Yang| do ręki.\nGdy {PlayerName} zagra |kartę Kuli Yin-Yang|,\
     \ zyskaj {Value1} |Tymczasowej Mocy| i |Tymczasowego Uduchowienia|."
   FlavorText: Jeżeli nie stać cię na składniki na zaklęcie, trzeba będzie użyć własnej
     krwi.
@@ -1358,6 +1356,7 @@ SeeFengshui:
     \ |Obrony| wysłaną do stosu zrzutek podczas tego |Przewidywania| zyskaj {Value2}\
     \ |Bloku|."
   Name: Manipulacja Feng Shui
+  FlavorText: Po za czytaniem shui, zajmuje się ona także fizjonomiką i wróżbiarstwem.
 NiuqiDefense:
   Description: "Zyskaj {Block} |Bloku|.\nZyskaj {Value1} |Bloku| za każdą kartę w\
     \ stosie zrzutek."
@@ -1422,6 +1421,7 @@ LanCard:
 RainbowMarket:
   Name: Księżycowy Tęczowy Targ
   Description: Gdy karta zostanie |Wygnana|, dodaj losową kartę do ręki.
+  FlavorText: Tętniące życiem targowisko.
 XiaodingKill:
   Name: Rytuał Egzorcyzmu
   Description: Jeżeli wróg ma nie więcej niż {Value1:plural one='% punkt' few='% punkty'
@@ -1671,6 +1671,8 @@ Astrology:
   Name: Astrologia
   Description: "|Przewidź| {Scry}.\nDobierz {Value1:plural one='% kartę' few='% karty'\
     \ many='% kart'}."
+  FlavorText: Czy gwiaździsty nieboskłon widziany z Gensokyo jest ten sam co widziany
+    z świata zewnętrznego?
 UManaCard:
   Name: Plusk
   Description: Zyskaj {Mana}.
@@ -1724,7 +1726,7 @@ WanderingSoul:
     \ aktualizacji."
   Name: Wędrująca Dusza
 RabbitFoot:
-  Name: Stópka Szczęśliwego Królika
+  Name: Królicza Łapka
   Description: '|Na końcu walki|: Jeżeli {SelfName} nie została |Wygnana|, zyskaj
     {Value1} <sprite="Point" name="Gold">.'
   FlavorText: Wydawałoby się, że zdobycie Stópki Królika zrobi z ciebie szczęściarę.
@@ -1735,6 +1737,7 @@ ArtificialJewellery:
   Description: Zyskaj jedną losową manę.
   FlavorText: Chociaż jej faktyczna wartość jest o wiele niższa niż jej cena, zdolność
     klejnotu do poprawienia nastroju nie może zostać zmierzona w dolarach czy centach.
+  DetailText: Nie może zostać usunięta przez opcję |Przyszykowania| po pokonaniu bossa.
 Xiaozhuo:
   Description: "Zyskaj {Value1} |Tymczasowej Mocy|."
   Name: Nietrzeźwość
@@ -1754,6 +1757,7 @@ NewsTidbit:
     na jej intymny związek z Kaguyą. Wedle zgłoszeń, Reimu często odwiedza Eientei,
     a zdjęcia jej intymnych czynów z Kaguyą cały czas wyciekają. (Strona Kakashi Spirit
     News)'
+  DetailText: Nie może zostać usunięta przez opcję |Przyszykowania| po pokonaniu bossa.
 EmpCard:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli cel jest |dronem|, nie będzie w stanie wykonywać ruchów na {Value1:plural\
@@ -1852,6 +1856,8 @@ GainTreasure:
   FlavorText: Czy miałaś wrażenie, że używanie nagrody pieniężnej rujnuje autentyczność
     pojedynków na karty zaklęć? Nie martw się, technologia blockchain X użyje bardziej
     cywilizowanych metod na rozwiązanie twoich problemów funduszowych.
+  ExtraDescription1: "Zyskaj {Value1} <sprite=\"Point\" name=\"Gold\">.\n({TotalMoney}\
+    \ <sprite=\"Point\" name=\"Gold\"> zyskanych przez {SelfName} w tym przejściu.)"
 LilyoftheValley:
   Name: Konwalia Majowa
   Description: "Zyskaj {Mana}.\n|Ograniczony【{DeckCounter}】|"
@@ -1864,6 +1870,7 @@ NewsNegative:
     Gałąź. Tym razem, zanim Reimu została zaproszona jako gość wystawy, zostało ujawnione,
     że Świątynia Hakurei była w poważnym kryzysie finansowym i miała problem z nadążaniem
     z kosztami utrzymania. W międzyczasie, organizatorka wystawy…'
+  DetailText: Nie może zostać usunięta przez opcję |Przyszykowania| po pokonaniu bossa.
 NewsEntertainment:
   Name: Rozrywka
   Description: "Dobierz karty do pełnej ręki.\n|Ograniczony【{DeckCounter}】|"
@@ -1876,6 +1883,7 @@ WolfFur:
   Description: '|Ograniczony【{DeckCounter}】|'
   FlavorText: '"Puszystość" stała się modna, i różne youkai ogłosiły, że one też mogą
     być "puszyste".'
+  DetailText: Nie może zostać usunięta przez opcję |Przyszykowania| po pokonaniu bossa.
 AyaNews:
   Name: Gazeta Bunbunmaru
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
@@ -2383,6 +2391,7 @@ LimaoSchool:
     ich efekty.
   DetailText: '|e:Forma Płazów| aktywuje swój efekt tylko raz na każdą walkę i kolejne
     użycia {SelfName} nie będą zawierały tej Przemiany.'
+  FlavorText: Młodociane tanuki muszą się przygotować do Egzaminu na Tanuki Chunina
 MorphMan:
   Name: Forma Człowieka
   Description: Zyskaj {Value1} <sprite="Point" name="Power">.
@@ -2435,6 +2444,7 @@ LifeGame:
   UpgradedDescription: "Karty obok {SelfName:g} |Tymczasowo Kosztują| {Mana}. |Ulepsz|\
     \ je.\nJeżeli była to karta |Nieszczęścia| lub Statusu. jest ona zamiast tego\
     \ |Wygnana|."
+  DetailText: Gdy zagrana jako reakcja, efekt wpływa na kartę najbardziej na lewo.
 SanaeMiracle:
   Name: Gościnne Gwiazdy Dzienne
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -2952,8 +2962,9 @@ ZhenmiaowanAbility:
   Name: Magia Pobijaka
   Description: W tej walce wszystkie karty kosztują o {Mana} mniej.
 FakeCard:
-  Name: Rodowe Sny (Podróbka)
-  Description: "|d:|Koishi Komeiji| nadal śpi.\nProsimy wrócić w przyszłej aktualizacji!|"
+  Name: Opowieść o Zbieraczu Bambusu (Podróbka)
+  Description: "Ta karta jest nadal we Wczesnym Dostępie.\nSprawdźcie ponownie w przyszłych\
+    \ aktualizacjach."
 HistoryCard:
   Description: "Ta karta została usunięta w aktualnej wersji.\nId Karty: {CardId}"
   Name: Usunięta Karta
@@ -2995,8 +3006,9 @@ HuiyeMarblePhantasm:
     karty o niższej wartości zostaną wyprodukowane.
 Frog:
   Name: Żaba
-  Description: "Ta karta została zapeszona.\nOryginał: {CardName}"
-  NonbattleDescription: Ta karta została zapeszona.
+  Description: "Ta karta została zapeszona.\nZagraj {SelfName:a} by ją odzyskać.\n\
+    Oryginał: {CardName}"
+  NonbattleDescription: "Ta karta została zapeszona.\nZagraj {SelfName:a} by ją odzyskać."
 LeaveMoodDraw:
   Description: "Wyjdź z aktualnego |Stanu Umysłu|.\nDobierz {Value1:plural one='%\
     \ kartę' few='% karty' many='% kart'}."
@@ -3199,6 +3211,7 @@ YukariSwarm:
 ShopSearch:
   Name: Prywatny Radar
   Description: Wybierz kartę Ataku lub Obrony ze stosu doboru i dodaj ją do ręki.
+  FlavorText: Zbudowanie tego odblokowuje możliwość korzystania z mapy.
 PassionAttackToDraw:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ {Value1:plural one='% raz' other='% razy'}.\nWejdź w stan |Pasji|.\nWtasuj tę\
@@ -3296,7 +3309,7 @@ HuiyeSuperExtraTurn:
     \ stan aktualnej tury."
   Name: '"Koniec Nieprzemijającej Nocy"'
   Description: "Na końcu |Naturalnej Tury| {PlayerName:g}, zacznij dodatkową turę.\n\
-    |Blok| i |Unik| nie są tracone na początku tej dodatkowej tury oraz tylko {Value1:plural\
+    |Blok| nie jest tracony na początku tej dodatkowej tury oraz tylko {Value1:plural\
     \ one='% karta' few='% karty' many='% kart'} może zostać {Value1:plural one='zagrana'\
     \ few='zagrane' many='zagranych'}."
 KoishiDiscard:
@@ -3561,3 +3574,17 @@ FollowAttackFiller:
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
 DollBlock:
   Name: Lalkowa Tarcza
+AliceAttackU:
+  Name: Lalkowa Lanca
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
+SanaeWind:
+  Name: Boski Wiatr
+  Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
+    Zyskaj {Value2:plural one='% |Boską Przychylność|' few='% |Boskie Przychylności|'\
+    \ many='% |Boskich Przychylności|'}."
+AttackX:
+  Name: Kontynuuj atak po pokonaniu wroga.
+  Description: "|Za każde wydane {Mana}|: Zadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nGdy cel {SelfName} zostanie pokonany nie wykorzystując\
+    \ wszystkich ataków, ataki będą kontynuowane przeciwko losowemu wrogowi jako nowy\
+    \ cel."
