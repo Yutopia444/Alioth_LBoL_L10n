@@ -53,10 +53,13 @@ Weak:
 Graze:
   Description: "{OwnerName} niweluje {Level:plural one='następny otrzymany atak' few='następne\
     \ % otrzymane ataki' many='następne % otrzymanych ataków'}.\nStrać 1 |Unik| po\
-    \ otrzymanym ataku lub na początku każdej tury."
+    \ otrzymanym ataku lub na początku |Naturalnej Tury|."
   Name: Unik
   Brief: "{OwnerName} niweluje otrzymywane ataki.\nStrać 1 |Unik| po otrzymanym ataku\
-    \ lub na początku każdej tury."
+    \ lub na początku |Naturalnej Tury|."
+  ExtraDescription: "{OwnerName} niweluje {Level:plural one='następny otrzymany atak'\
+    \ few='następne % otrzymane ataki' many='następne % otrzymanych ataków'}.\nStrać\
+    \ 1 |Unik| po otrzymanym ataku lub na początku |Naturalnej Tury|.\n"
 ExtraTurn:
   Description: "{OwnerName} zacznie {Level:plural one='dodatkową turę' few='% dodatkowe\
     \ tury' many='% dodatkowych tur'} po tej turze."
@@ -75,10 +78,11 @@ TurnStartDontLoseBlock:
   Brief: '{OwnerName} nie utraci |Bloku| na początku kolejnych tur przez jakąś ilość
     tur.'
 AmuletForCard:
-  Description: Oprzyj się {Level:plural one='kolejnej karcie statusu, którą' other='kolejnym
-    % kartom statusu, które'} otrzymasz (zostają |Wygnane|).
+  Description: Odeprzyj {Level:plural one='następną kartę statusu, którą' few='następne
+    % karty statusu, które' many='następne % kart statusu, które'} otrzymasz (zostaną
+    one |Wygnane|).
   Name: Odparcie
-  Brief: Oprzyj się następnym kartom statusu, które otrzymasz (zostają |Wygnane|).
+  Brief: Odeprzyj następne karty statusu, które otrzymasz (zostaną one |Wygnane|).
 Vulnerable:
   Name: Wrażliwy
   Description: "{OwnerName} otrzymuje o {Value}% więcej obrażeń od ataków {Duration:plural\
@@ -109,8 +113,10 @@ NextAttackUp:
 TempElectric:
   Name: Ładunek Statyczny
   Description: "Gdy trafiony, oddaj {Level:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'} napastnikowi.\nUsunięty na początku następnej tury {OwnerName:g}."
-  Brief: "Gdy trafiony, oddaj napastnikowi.\nUsunięty na początku następnej tury {OwnerName:g}."
+    \ many='% obrażeń'} napastnikowi.\nUsunięty na początku następnej |Naturalnej\
+    \ Tury| {OwnerName:g}."
+  Brief: "Gdy trafiony, oddaj napastnikowi.\nUsunięty na początku następnej |Naturalnej\
+    \ Tury| {OwnerName:g}."
 Electric:
   Name: Ładunek Statyczny
   Description: Gdy trafiony, oddaj {Level:plural one='% obrażenie' few='% obrażenia'
@@ -245,7 +251,9 @@ KokoroNu:
     (Już wykonane)
   Name: Gniew
 LongEscape:
-  Description: '{OwnerName} opuści walkę, gdy jej życie spadnie poniżej {Level}.'
+  Description: '{OwnerName} opuści walkę, gdy jej życie spadnie poniżej {Level}.
+
+    Upuści {Level} <sprite="Point" name="Gold">, gdy zostanie pokonana.'
   Name: Zelrzyj
 EnemyEnergy:
   Description: '{OwnerName} zyskuje <sprite="Point" name="Power"> równą otrzymanym
@@ -276,12 +284,13 @@ SingleJiandaoSe:
     few='% obrażenia' many='% obrażeń'}.
   Name: Gigantyczne Ostrze Nożycy
 ShendengSe:
-  Description: Na końcu tury {OwnerName:g} nałóż na {PlayerName:a} {Level} |Osłabienia|,
-    |Kruchości| lub |Wrażliwości|.
+  Description: Po tym jak wszyscy wrogowie wykonają swoją turę, losowo nałóż na {PlayerName:a}
+    {Level} |Osłabienia|, |Kruchości| lub |Wrażliwości|.
   Name: Czajnik z Długim Dziobkiem
 MadokaBowSe:
-  Description: "Na końcu tury {OwnerName:g} dodaj {Level:plural few='% losowe karty'\
-    \ many='% losowych kart'} Statusu do stosu doboru."
+  Description: "Na końcu tury {OwnerName:g} dodaj {Level:plural one='% losową kartę'\
+    \ few='% losowe karty' many='% losowych kart'} statusu, połowę z nich wmieszaj\
+    \ do stosu doboru, a drugą połowę do stosu zrzutek."
   Name: Łuk Strzelający Światłem
 InfinityGemsSe:
   Description: "Na początku każdej tury {OwnerName:g} |Wygnaj| połowę kart w grze,\
@@ -302,10 +311,11 @@ DoubleLianhuadieSe:
   Name: Dwubarwny Motyl Lotusu
   Brief: Gdy {PlayerName} zyskuje |Blok| lub |Barierę|, zadaj trochę losowemu wrogowi.
 EvilTuiZhiSe:
-  Description: "{Level:plural one='Następna karta' few='Następne % karty' many='Następne\
-    \ % kart'} ataku {Level:plural one='zada' other='zadadzą'} dwukrotne obrażenia."
+  Description: "{Value1:plural one='Następna % karta' few='Następne % karty' many='Następne\
+    \ % kart'} ataku {Value1:plural one='zostanie zagrana' few='zostaną zagrane' many='zostanie\
+    \ zagranych'} dwukrotnie w tej turze."
   Name: Ztępić Zło
-  Brief: Kilka następnych kart ataku zada dwukrotne obrażenia.
+  Brief: W tej turze, następna karta ataku zostanie zagrana dwukrotnie.
 BoliPhantomSe:
   Description: Gdy karta inna od |Igły Perswazji| zostanie |Wygnana|, dodaj {Level:plural
     one='% |Igłę|' few='% |Igły|' many='% |Igieł|'} |Perswazji| do ręki |tymczasowo
@@ -359,7 +369,7 @@ KokoroYou:
     (Już wykonane)
 LongLight:
   Name: Lśniący Statyw
-  Description: "{OwnerName} lśni jak gwiazda!\nJej karty statusu są potężniejsze."
+  Description: "{OwnerName} lśni jak gwiazda! Jej karty statusu są potężniejsze."
 FlatPeach:
   Name: Rajska Brzoskwinia
   Description: Za każdym razem, gdy {OwnerName} otrzymuje obrażenia, regeneruje {Level:plural
@@ -400,17 +410,17 @@ DreamServant:
 ScarletDestiny:
   Name: Szkarłatne Przeznaczenie
   Description: "Jak {Limit:plural few='% karty zostaną zagrane' many='% kart zostanie\
-    \ zagranych'}, {OwnerName} zakończy turę {PlayerName:g}.\n\n|d:({Count:plural\
-    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart})|"
+    \ zagranych'}, {OwnerName} zakończy turę {PlayerName:g}.\n|d:({Count:plural one='Została\
+    \ % karta' few='Zostały % karty' many='Zostało % kart'})|"
 QiannianShenqiSe:
   Name: Piramidowa Układanka
   Description: "{PlayerName} może dobrać conajwyżej {Limit} kart w każdej turze.\n\
     |d:({Count:plural one='Została % karta' few='Zostały % karty' many='Zostało %\
-    \ kart})|"
+    \ kart'})|"
   ExtraDescription: "W każdej turze, jak {PlayerName} dobierze {Limit:plural one='%\
     \ kartę' few='% karty' many='% kart'}, to straci {Level:plural one='% punkt' few='%\
     \ punkty' many='% punktów'} życia za każdą kolejną dobraną kartę.\n|d:({Count:plural\
-    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}.)|"
+    \ one='Została % karta' few='Zostały % karty' many='Zostało % kart}')|"
 SakuraWandSe:
   Name: Uszkrzydlony Klucz
   Description: '{OwnerName} atakuje dwukrotnie.'
@@ -588,8 +598,8 @@ DrawPhaseAddKnife:
   Brief: Pomiń fazę doboru w następnej turze, dodawając do ręki |Noże| zamiast tego.
   ExtraDescription: "Pomiń fazę doboru na początku tury, zamiast tego dodaj {Limit:plural\
     \ one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów\
-    \ do Rzucania|} do ręki.\n{SelfName} jest nieaktywne i zostanie usunięte po turze\
-    \ w której zostanie zaktywowane."
+    \ do Rzucania|} do ręki.\n{SelfName} jest nieaktywny i zostanie usunięty po tym\
+    \ jak zostanie rozpatrzony."
 DangerousMagicianSe:
   Brief: Gdy |Sztylet do Rzucania| zostanie użyty, {PlayerName} zyskuje trochę |Pulsu
     Czasu|.
@@ -842,7 +852,7 @@ FoxCharm:
   Name: Lisi Urok
   Description: "Można zagrać co najwyżej {Limit:plural one='% kartę' few='% karty'\
     \ many='% kart'} w jednej turze.\n{Count:plural one='Została % karta' few='Zostały\
-    \ % karty' many='Zostało % kart}.\nPokonaj |Lisią Youkai|, aby usunąć ten efekt."
+    \ % karty' many='Zostało % kart'}.\nPokonaj |Lisią Youkai|, aby usunąć ten efekt."
 DeathPoison:
   Name: Trucizna Śmierci
   Description: Po pokonaniu {OwnerName:g} {PlayerName} zyskuje {Level} |Trucizny|.
@@ -977,12 +987,12 @@ YonglinUpgradeSe:
 HuiyeTimeSe:
   Name: Między Natychmiastowym
   Description: Jedynie {Limit:plural one='% karta może zostać zagrana' few='% karty
-    mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze. (Zostało
-    {Count})
+    mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze. ({Count:plural
+    one='Została % karta' few='Zostały % karty' many='Zostało % kart'})
   ExtraDescription: "Jedynie {Limit:plural one='% karta może zostać zagrana' few='%\
     \ karty mogą zostać zagrane' many='% kart może zostać zagranych'} w każdej turze.\
-    \ (Zostało {Count})\n{SelfName} jest nieaktywne i zostanie usunięte po turze w\
-    \ której zostanie zaktywowane."
+    \ ({Count:plural one='Została % karta' few='Zostały % karty' many='Zostało % kart'})\n\
+    {SelfName} jest nieaktywny i zostanie usunięty po turze w której został rozpatrzony."
 TempControlNegative:
   Brief: "|Kontrola| jest zmniejszona do końca tury.\n|Kontrola| zwiększa efekty konkretnych\
     \ |Kukiełek|."
@@ -1033,8 +1043,8 @@ BrokenTimelineSe:
   Brief: Na początku następnej tury {PlayerName:g} nie zyskana będzie mana z bazy
     many.
   ExtraDescription: "Na początku następnej tury {PlayerName:g} nie zyskana będzie\
-    \ mana z bazy many.\n{SelfName} jest nieaktywne i zostanie usunięte po turze w\
-    \ której zostanie zaktywowane."
+    \ mana z bazy many.\n{SelfName} jest nieaktywny i zostanie usunięty po turze w\
+    \ której został rozpatrzony."
   Name: Zniszczona Linia Czasowa
 MeilingWaterSe:
   Description: Na początku tury {OwnerName:g} strać {Level:plural one='% punkt' few='%
@@ -1048,19 +1058,20 @@ TianziRockSe:
   ExtraDescription: "Gdy {OwnerName} otrzyma obrażenia od ataku, zredukuj je o {Level}.\n\
     Na {OwnerName:a} nie można nałożyć |Namiarów|."
 SuperExtraTurn:
-  Brief: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową turę.\n|Blok|\
-    \ i |Uniki| nie są utracone na początku tej dodatkowej tury, ale można zagrać\
-    \ jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}."
+  Brief: "Na końcu |Naturalnej Tury| {PlayerName:g}, zacznij dodatkową turę.\n|Blok|\
+    \ nie jest tracony na początku tej dodatkowej tury oraz tylko {Value1:plural one='%\
+    \ karta' few='% karty' many='% kart'} może zostać {Value1:plural one='zagrana'\
+    \ few='zagrane' many='zagranych'}."
   Name: '"Koniec Nieprzemijającej Nocy"'
-  Description: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową turę.\n\
-    |Blok| i |Uniki| nie są utracone na początku tej dodatkowej tury, ale można zagrać\
-    \ jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}.\nStatus tury:\
-    \ {StatusString}."
+  Description: "Na końcu |Naturalnej Tury| {PlayerName:g}, zacznij dodatkową turę.\n\
+    |Blok| nie jest tracony na początku tej dodatkowej tury oraz tylko {Value1:plural\
+    \ one='% karta' few='% karty' many='% kart'} może zostać {Value1:plural one='zagrana'\
+    \ few='zagrane' many='zagranych'}.\nStatus tury: {StatusString}."
   ExtraDescription: "Na końcu |Naturalnych Tur| {PlayerName:g}, zacznij dodatkową\
-    \ turę.\n|Blok| i |Uniki| nie są utracone na początku tej dodatkowej tury, ale\
-    \ można zagrać jedynie {Level:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Status tury: {Count:plural one='Została % karta' few='Zostały % karty' many='Zostało\
-    \ % kart} w turze {SelfName:g}.\n"
+    \ turę.\n|Blok| nie jest tracony na początku tej dodatkowej tury oraz tylko {Value1:plural\
+    \ one='% karta' few='% karty' many='% kart'} może zostać {Value1:plural one='zagrana'\
+    \ few='zagrane' many='zagranych'}.\nStatus tury: {Count:plural one='Została %\
+    \ karta' few='Zostały % karty' many='Zostało % kart'} w turze {SelfName:g}.\n"
 NextTurnGainGraze:
   Name: Unik w Następnej Turze
   Description: Na początku następnej tury {OwnerName:g} zyskaj {Level:plural one='%
@@ -1068,7 +1079,7 @@ NextTurnGainGraze:
   Brief: Na początku następnej tury {OwnerName:g} zyskaj |Uniki|.
 LunaClockSe:
   ExtraDescription: "Ataki {PlayerName:g} nie zadają obrażeń w tej turze.\n{SelfName}\
-    \ jest nieaktywne i zostanie usunięte po turze w której zostanie zaktywowane."
+    \ jest nieaktywny i zostanie usunięty po turze w której został rozpatrzony."
   Brief: Ataki {PlayerName:g} nie zadają obrażeń w tej turze.
   Description: Ataki {PlayerName:g} nie zadają obrażeń w tej turze.
   Name: Rozerwanie Czasoprzestrzeni
@@ -1123,6 +1134,9 @@ MoodPassion:
   Description: "W stanie |Pasji|, {PlayerName} zadaje i otrzymuje o {Percentage}%\
     \ więcej obrażeń.\n|Pasja| jest |Stanem Umysłu|, którego {PlayerName} może mieć\
     \ jedynie jeden na raz."
+  ExtraDescription: "W stanie |Pasji|, {PlayerName} zadaje {Percentage}% więcej obrażeń\
+    \ oraz otrzymuje {Percentage}% więcej obrażeń od ataków.\n|Pasja| jest |Stanem\
+    \ Umysłu|, którego {PlayerName} może mieć jedynie jeden na raz."
 MoodPeace:
   Brief: "Wychodząc ze stanu |Uspokojenia|, zyskaj {Mana}.\n|Uspokojenie| jest |Stanem\
     \ Umysłu|, którego {PlayerName} może mieć jedynie jeden na raz."
@@ -1159,15 +1173,18 @@ PassionDrawSe:
   Brief: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz karty.
   Description: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz {Level:plural
     one='% kartę' few='% karty' many='% kart'}.
+  Name: Miłosna Rozłąka
 MoodChangeBlockSe:
-  Name: Forteca Umysłu
+  Name: Pole A.T.
   Description: Za każdym razem, gdy {PlayerName} zmienia |Stan Umysłu|, zyskaj {Level}
     |Bloku|.
   Brief: Za każdym razem, gdy {PlayerName} zmienia |Stan Umysłu|, zyskaj |Blok|.
 LunaticPassionSe:
-  Brief: Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.
+  Brief: "Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.\nGry {PlayerName}\
+    \ jest w stanie |Pasji|, obrażenia z kart ataków stają się |Celne|."
   Name: Szalona Miłość
-  Description: Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.
+  Description: "Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.\nGry\
+    \ {PlayerName} jest w stanie |Pasji|, obrażenia z kart ataków stają się |Celne|."
 ReimuSilenceSe:
   Name: '"Pieczęć Fantazji -Cisza-"'
   Description: Za {Limit:plural one='każdą dobraną kartę' few='każde dobrane % karty'
@@ -1242,3 +1259,127 @@ GainInspirationSe:
   Name: Nieustanna Inspiracja
   Brief: "Na końcu tury {PlayerName:g}, dodaj {Level} |Eureka!| do stosu doboru.\n"
   Description: "Na końcu tury {PlayerName:g}, dodaj {Level} |Eureka!| do stosu doboru.\n"
+EnemyVulnerable:
+  Name: Nakładanie Wrażliwości
+  Description: Po tym jak wszyscy wrogowie wykonają swoją turę, nałóż na {PlayerName:a}
+    {Level} |Wrażliwości|.
+KnifeDamageUpSe:
+  Name: Srebrna Akceleracja
+  Description: '|Sztylety do Rzucania| zadają o {Level} więcej obrażeń.'
+  Brief: '|Sztylety do Rzucania| zadają więcej obrażeń.'
+NextTurnPassion:
+  Name: Pasja w Następnej Turze
+  Description: Na początku następnej tury {PlayerName:g}, wejdź w stan |Pasji| i dobierz
+    {Level:plural one='% kartę' few='% karty' many='% kart'}.
+  Brief: Na początku następnej tury {PlayerName:g}, wejdź w stan |Pasji| i dobierz
+    karty.
+UpgradePeace:
+  Brief: Zwiększa ilość many zyskiwanej przez wyjście ze stanu |Uspokojenia|.
+  Name: Anatman
+  Description: Zwiększa ilość many zyskiwanej przez wyjście ze stanu |Uspokojenia|.
+Tired:
+  Name: Zmęczenie
+  Description: Tylko {Limit:plural one='% karta' few='% karty' many='% kart'} {Limit:plural
+    one='może zostać zagrana' few='mogą zostać zagrane' many='może zostać zagranych'}
+    w tej turze. ({Count:plural one='Została % karta' few='Zostały % karty' many='Zostało
+    % kart'})
+  ExtraDescription: "Tylko {Limit:plural one='% karta' few='% karty' many='% kart'}\
+    \ {Limit:plural one='może zostać zagrana' few='mogą zostać zagrane' many='może\
+    \ zostać zagranych'} w tej turze. ({Count:plural one='Została % karta' few='Zostały\
+    \ % karty' many='Zostało % kart'})\n{SelfName} jest nieaktywne i zostanie usunięte\
+    \ po turze w której było aktywowane."
+CloseEyeSe:
+  Description: "Intencje wrogów nie są znane.\nPozostało tur: {Level}"
+  Name: Zamknięte Serce
+  Brief: Intencje wrogów nie będą znane przez jakiś czas.
+GainZeroAttackSe:
+  Brief: Na początku tury {PlayerName:g} dodaj |Transkrypcje DNA| do ręki z |Wygnaniem|
+    i |Eterycznością|.
+  Name: Wada DNA
+  Description: Na początku tury {PlayerName:g} dodaj {Level:plural one='% |Transkrypcję
+    DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|} do ręki. {Level:plural
+    one='Ma ono' other='Mają one'} |Wygnanie| i |Eteryczność|.
+KoishiDnaSe:
+  Name: Youkai Dziewczynka Hartmanna
+  Brief: Na początku tury {PlayerName:g}, natychmiast zagraj wierzchnie karty ze stosu
+    doboru.
+  Description: Na początku tury {PlayerName:g}, natychmiast zagraj {Level:plural one='%
+    wierzchnią kartę' few='% wierzchnie karty' many='% wierzchnich kart'} ze stosu
+    doboru.
+ButterflyDreamSe:
+  Name: Sen Motyla
+  Brief: Na początku tury {PlayerName:g}, dodaj |p:całkowicie losowe| rzadkie karty
+    na wierzch stosu doboru. Mają one |Dopełnienie|, |Wygnanie|, |Eteryczność| oraz
+    mana dowolnego koloru może zostać wykorzystana do opłacenia ich kosztu.
+  Description: Na początku tury {PlayerName:g}, dodaj {Level:plural one='% |p:całkowicie
+    losową| rzadką kartę' few='% |p:całkowicie losowa| rzadkie karty' many='% |p:całkowicie
+    losowych| rzadkich kart'} na wierzch stosu doboru. {Value1:plural one='Ma ona'
+    other='Mają one'} |Dopełnienie|, |Wygnanie|, |Eteryczność| oraz mana dowolnego
+    koloru może zostać wykorzystana do opłacenia {Value1:plural one='jej' other='ich'}
+    kosztu.
+KoishiPhoneSe:
+  Brief: "Za każdym razem, gdy karta ataku zostaje zagrana, wykonaj |Ataki Kartami\
+    \ Reakcji|.\nJeżeli w stosie doboru nie ma wystarczającej liczny |Kart Reakcji|,\
+    \ |Dryń-Dryń| zostanie użyte jako |Karta Reakcji|."
+  Description: "Za każdym razem, gdy karta ataku zostaje zagrana, wykonaj {Level:plural\
+    \ one='% |Atak Kartą Reakcji|' few='% |Ataki Kartami Reakcji|' many='% |Ataków\
+    \ Kartami Reakcji|'}.\nJeżeli w stosie doboru nie ma wystarczającej liczny |Kart\
+    \ Reakcji|, |Dryń-Dryń| zostanie użyte jako |Karta Reakcji|."
+  Name: Przerażająco Uroczy Telefon
+BailianMagicSe:
+  Name: Recytacja Diabła
+  Brief: W trakcie tej tury, następne karty |Zdolności| zostaną zagrane dwukrotnie.
+  Description: W trakcie tej tury, {Level:plural one='następna % karta' few='następne
+    % karty' many='następne % kart'} |Zdolności| {Level:plural one='zostanie zagrana'
+    few='zostaną zagrane' many='zostanie zagranych'} dwukrotnie.
+JinziDoppelgangerSe:
+  Name: Okultystyczny Sobowtór
+  Brief: Pierwsze karty w turze {PlayerName:g} zostaną zagrane dwukrotnie.
+  Description: "{Level:plural one='Pierwsza karta' few='Pierwsze % karty' many='Pierwsze\
+    \ % kart'} w turze {PlayerName:g} {Level:plural one='zostanie zagrana' few='zostaną\
+    \ zagrane' many='zostanie zagranych'} dwukrotnie. ({Count:plural one='Została\
+    \ % karta' few='Zostały % karty' many='Zostało % kart'})"
+AutoQumobangSe:
+  Description: "Dobierz o {Value1:plural one='% kartę' few='% karty' many='% kart'}\
+    \ więcej podczas fazy doboru.\nPozostałe tury: {Count}."
+  Brief: Dobierz więcej kart podczas fazy doboru w następnych kilku turach.
+  Name: Rozwścieczony Gohei
+CommonFireSe:
+  Description: Po zagraniu pospolitej karty, {OwnerName} zyskuje {Level} |Tymczasowej
+    Mocy|.
+  Brief: Po zagraniu pospolitej karty, {OwnerName} zyskuje |Tymczasową Moc|.
+  Name: Potęga Pospolitości
+UpgradeAllHandSe:
+  Name: Blokada Psychiki
+  Description: Na początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie karty
+    w ręce.
+  Brief: Na początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie karty w ręce.
+  ExtraDescription: "Na początku następnej tury {PlayerName:g}, |Ulepsz| wszystkie\
+    \ karty w ręce.\n{SelfName} jest nieaktywny i zostanie usunięty po turze w której\
+    \ został rozpatrzony."
+EnemyLockedOn:
+  Name: Nakładanie Namiaru
+  Description: Po tym jak wszyscy wrogowie wykonają swoją turę, nałóż na {PlayerName:a}
+    {Level} |Namiaru|.
+KoishiUnknown:
+  Name: Nieprzewidywalna
+  Description: "Intencje {OwnerName} są częściowo ukryte.\nDodatkowe poziomy spowodują\
+    \ dalsze ukrycie jej intencji."
+MaxHandSe:
+  Name: Zebranie Wróżek
+  Description: Wielkość dłoni zwiększona do {MaxHand} kart.
+  Brief: Wielkość dłoni zwiększona do {MaxHand} kart.
+SelfControlSe:
+  Brief: Na końcu tury {PlayerName:g}, zyskaj |Moc| jeśli jest ona w stanie |Pasji|,
+    lub |Blok| jeśli jest ona w stanie |Uspokojenia|.
+  Name: Samokontrola
+  Description: Na końcu tury {PlayerName:g}, zyskaj {Level} |Mocy| jeśli jest ona
+    w stanie |Pasji|, lub {Count} |Bloku| jeśli jest ona w stanie |Uspokojenia|.
+ReimuEvilTerminatorSe:
+  Name: Mistrzyni Eksterminacji
+  Description: Gdy wróg zostanie pokonany, zyskaj {Mana}.
+  Brief: Gdy wróg zostanie pokonany, zyskaj manę.
+DreamExpressSe:
+  Name: Ekspres Snów
+  Description: Na końcu tury {PlayerName:g}, |Wyśnij| {Level}, następnie zadaj wszystkim
+    wrogom obrażenia równe dwukrotności kosztu |Wyśnionych| kart.
