@@ -1008,11 +1008,14 @@ KnifeBounce:
   Description: |-
     造成 {Damage} 点伤害。
     将 {Value1} 张|飞刀|加入手中。
-  UpgradedDescription: |-
-    造成 {Damage} 点伤害。
-    施加 {Value2} 层|锁定|。
-    将 {Value1} 张|飞刀|加入手中。
   FlavorText: 咲夜所投掷的飞刀看似很多，其实都是她停止时间后从地上回收的。
+
+SakuyaSnow:
+  Name: 雪地决行
+  Description: |-
+    获得 {Block} 点|格挡|。
+    将 {Value1} 张|飞刀|加入手中。
+  FlavorText: 尽职的女仆，就算踏着及腰的积雪也要出门。
 
 Lijian:
   Name: 离剑之见
@@ -1037,6 +1040,9 @@ Knife:
   Description: |-
     造成 {Damage} 点伤害。
     |未打出而离开手牌|：对生命值最低的敌人造成 {DropDamage} 点伤害。
+  ExtraDescription1: |-
+    造成 {Damage} 点伤害，施加 {Value2} 层 |锁定|。
+    |未打出而离开手牌|：对生命值最低的敌人造成 {DropDamage} 点伤害。
   FlavorText: 无法通过安检。
 
 SakuyaZeroDefense:
@@ -1050,13 +1056,6 @@ Dejavu:
     抽 {Value1} 张牌。
     获得{Mana}。
   FlavorText: 又是同一只黑猫。
-
-SakuyaSnow:
-  Name: 雪地决行
-  Description: |-
-    获得 {Block} 点|格挡|。
-    将 {Value1} 张|飞刀|加入手中。
-  FlavorText: 尽职的女仆，就算踏着及腰的积雪也要出门。
 
 CoolMaid:
   Name: 潇洒女仆
@@ -1084,12 +1083,6 @@ SakuyaWeak:
     施加 {Value1} 回合|虚弱|。
     获得{Mana}。
   FlavorText: 时间减缓，用以防御弹幕，和食材保鲜。
-
-TimeAuraAttack:
-  Name: 时间魔术
-  Description: |-
-    造成 {Damage} 点伤害。
-    获得 {Value1} 层|时域冲击|。
 
 SakuyaTea:
   Name: 泡制红茶
@@ -1317,6 +1310,16 @@ LoyalMaid:
     获得 {Shield} 点|护盾|。
     在额外回合开始时，从弃牌堆回到手中，|暂塑|为{Mana}。
 
+TimeMagic:
+  Name: 时间魔术
+  Description: |-
+    从 {Value2} 张|p:完全随机|的非普通卡牌中选择 {Value1} 张加入手中，{Value1:plural one='它' other='它们'}具有|放逐|、|虚无|，费用可以用任意颜色支付并减少{Mana}。
+    {PlayerName}的每个额外回合开始时再次生效。
+  DetailText: |-
+    |e:备选牌|无视法力、颜色和所有者限制。
+    不能找到{SelfName}。
+    多次打出{SelfName}只能提高选取张数，不能进行多次选取或提高备选牌数量。
+
 TimeWalk:
   Name: 时间行走
   Description: |-
@@ -1339,7 +1342,7 @@ SpecialClock:
 SakuyaDio:
   Name: 下一个就轮到你了！
   Description: |-
-    主动使用的|飞刀|施加 {Value1} 层|锁定|。
+    主动使用的|飞刀|额外施加 {Value1} 层|锁定|。
     结束{PlayerName}的回合，进行一个额外的回合。
     跳过这一回合的抽牌阶段，改为将 {Value2} 张|飞刀|加入手中。
   FlavorText: 次は貴様だ！
@@ -2017,9 +2020,6 @@ KoishiDrawTop:
   Name: 信口开河
   Description: |-
     抽 {Value1} 张牌。
-    将 {Value2} 张手牌置于抽牌堆顶。
-  UpgradedDescription: |-
-    抽 {Value1} 张牌。
     选择 {Value2} 张手牌，|升级|它并置于抽牌堆顶。
   FlavorText: 「我已经知道犯人是谁了！」
 
@@ -2058,10 +2058,15 @@ PassionVulnerable:
   Description: |-
     |热情|：对所有敌人施加 {Value1} 回合|易伤|。
     否则，进入|热情|。
+  UpgradedDescription: |-
+    |热情|：对所有敌人施加 {Value1} 回合|易伤|和 {Value2} 层|锁定|。
+    否则，进入|热情|。
 
 PlayDrawTop:
   Name: 无意识的行动
-  Description: 打出抽牌堆顶的牌。
+  Description: |-
+    获得 {Block} 点|格挡|。
+    打出抽牌堆顶的牌。
   FlavorText: 「天啊我打出了转账！」
 
 TheChariot:
@@ -2110,36 +2115,35 @@ AncestorDream:
 YaoguaiLaser:
   Name: 妖怪脑电波
   Description: |-
+    获得 {Block} 点|格挡|。
     造成 {Damage} 点伤害。
     进行一次|追加攻击|。
     |直觉|：额外进行一次|追加攻击|。
 
-KoishiZeroAttack:
-  Name: DNA 转录
-  Description: 造成 {Damage} 点伤害。
-
 KoishiWake:
   Name: 回神
   Description: |-
-    离开当前的|心境|，恢复 {Value1} 点生命。
-    |神游|：额外获得 {Shield} 点|护盾|。
+    |热情|：进行一次|追加攻击|。
+    |平静|：获得 {Shield} 点|护盾|。
+    |神游|：获得 {Value1} 次|神游|出牌机会。
   FlavorText: 「我这是在哪儿？」
-
-PeaceEndTurn:
-  Name: 片刻安宁
-  Description: |-
-    进入|平静|。
-    结束{PlayerName}的回合。
-  UpgradedDescription: |-
-    从弃牌堆中选择至多 {Value1} 张牌移回手中，|保留|它一回合。
-    进入|平静|。
-    结束{PlayerName}的回合。
 
 KoishiGainColorless:
   Name: 放空思绪
   Description: 获得{Mana}。
   UpgradedDescription: 获得{Mana}。
   FlavorText: 忘记了那些法力曾经是什么颜色。
+
+PeaceEndTurn:
+  Name: 片刻安宁
+  Description: |-
+    选择至多 {Value1} 张手牌，|保留|{Value1:plural one='它' other='它们'}一回合。
+    进入|平静|。
+    结束{PlayerName}的回合。
+  UpgradedDescription: |-
+    从手牌或弃牌堆中选择至多 {Value1} 张牌移回手中，|保留|{Value1:plural one='它' other='它们'}一回合。
+    进入|平静|。
+    结束{PlayerName}的回合。
 
 PeaceMemory:
   Name: 平静的回忆
@@ -2186,24 +2190,28 @@ TheHermit:
     获得{Mana}。
     |神游|：{SelfName}费用为<sprite="ManaSprite" name="0">。
 
-GainZeroAttack:
+KoishiDna:
   Name: DNA 的瑕疵
-  Description: '{PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|。'
+  Description: '{PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中。'
   UpgradedDescription: |-
-    {PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中，它具有|放逐|、|虚无|
+    {PlayerName}的回合开始时，将 {Value1} 张| DNA 转录|加入手中。
     立刻生效一次。
+
+KoishiDnaAttack:
+  Name: DNA 转录
+  Description: 造成 {Damage} 点伤害。
 
 FindInspiration:
   Name: 灵光一闪
   Description: 将 {Value1} 张|找到灵感了！|洗入抽牌堆。
   FlavorText: 「难道说，犯人，就是我！？」
 
-KoishiGrowAttack:
+KoishiDance:
   Name: 热舞荆棘
   Description: |-
-    造成 {Damage} 点伤害。
-    |成长|：伤害提高 {Value1} 点。
-    |平静|：{SelfName}费用为{Mana}。
+    获得 {Block} 点|格挡|。
+    对所有敌人造成 {Damage} 点伤害。
+    进行一次|追加攻击|。
 
 LeaveMoodDraw:
   Name: 好奇心
@@ -2304,7 +2312,7 @@ TheFool:
     |占卜| {Scry} 。
     打出抽牌堆顶的牌。
 
-KoishiDna:
+KoishiUltimate:
   Name: 真我降临
   Description: |-
     打出抽牌堆顶的牌。
@@ -2324,7 +2332,7 @@ Anatta:
 ButterflyDream:
   Name: 庄周梦蝶
   Description: |-
-    将 {Value1} 张|p:完全随机|的稀有牌置于牌堆顶，它具有|填充|、|放逐|、|虚无|，费用可以用任意颜色支付。
+    将 {Value1} 张|p:完全随机|的稀有牌置于牌堆顶，{Value1:plural one='它' other='它们'}具有|填充|、|放逐|、|虚无|，费用可以用任意颜色支付。
     {PlayerName}的每个回合开始后再次生效。
   DetailText: |-
     |e:备选牌|无视法力、颜色和所有者限制。
@@ -2342,17 +2350,16 @@ KokoroFriend:
   ExtraDescription3: '{FriendU}进入|神游|。'
   FlavorText: 偏铝酸钠！
 
+KoishiDive:
+  Name: 意识下潜
+  Description: |-
+    |入梦| {Value1}。
+    从弃牌堆的|梦境牌|中选择至多 {Value2} 张移回手中。
+
 EnterEpiphany:
   Name: 顿悟
   Description: 进入|神游|。
   FlavorText: 我佛了。
-
-KoishiDive:
-  Name: 意识下潜
-  Description: |-
-    进入|平静|。
-    |入梦| {Value1}。
-    从弃牌堆的|梦境牌|中选择至多 {Value2} 张移回手中。
 
 LunaticPassion:
   Name: 疯狂之爱
@@ -3000,16 +3007,6 @@ YouxiangMoon:
     {PlayerName}的回合开始时，获得{Mana}。
     将 {Value1} 张|盛夏之花|加入手中。
 
-DizangLove:
-  Name: 即席菩提
-  Description: |-
-    获得 {Value1} 点最大生命值。
-    每场战斗中，只有第一张{SelfName}生效。
-  ExtraDescription1: |-
-    |d:获得 {Value1} 点最大生命值。|
-    每场战斗中，只有第一张{SelfName}生效。
-  FlavorText: 我们不用很久很刻苦就可以成佛。
-
 YuyukoSing:
   Name: 蝶之羽风
   Description: |-
@@ -3203,6 +3200,12 @@ YijiFirepower:
     将 {Value2} 张随机的普通攻击牌加入手中，它们具有|放逐|、|虚无|；
     它们已被|净化|，移除费用的有色部分。
 
+Panzi:
+  Name: 水盘子
+  Description: |-
+    造成 {Damage} 点伤害。
+    |进入手中时|：将一张{SelfName}的复制加入手中。
+
 ReadBook:
   Name: 读书看报
   Description: |-
@@ -3212,12 +3215,6 @@ ReadBook:
     获得 {Block} 点|格挡|。
     |d:初见：从 {Value1} 张随机的卡牌中选择一张加入手中，这些卡牌只能包含蓝色或白色。|
   FlavorText: 在铃奈庵去年的年度报告中，朱鹭子的图书借阅次数达到了少儿组第一名。
-
-Panzi:
-  Name: 水盘子
-  Description: |-
-    造成 {Damage} 点伤害。
-    |进入手中时|：将一张{SelfName}的复制加入手中。
 
 ShuimuBlock:
   Name: 堆砌石林
@@ -3724,12 +3721,12 @@ TodayYesterday:
 AyaExtraTurn:
   Name: 「幻想风靡」
   Description: |-
+    获得 {Value1} 层|闪避|。
     结束{PlayerName}的回合，进行一个额外的回合。
-    下一回合开始时，获得 {Value1} 层|闪避|。
     |时间有限|{Mana}。
   ExtraDescription1: |-
+    获得 {Value1} 层|闪避|。
     结束{PlayerName}的回合，进行一个额外的回合。
-    下一回合开始时，获得 {Value1} 层|闪避|。
     |d:时间有限{Mana}。|
 
 AyaWindGirl:
