@@ -1048,8 +1048,8 @@ SakuyaDio:
   Name: Tiếp Đến Là Ngươi!
   FlavorText: Tsugi wa kisamada!
   Description: "Khi được chơi, lá |Phóng Dao| yểm thêm {Value1} |Bị Nhắm Tới|.\n{PlayerName}\
-    \ kết thúc lượt và nhận một lượt phụ, lượt phụ đó không bốc bài đầu lượt và thêm\
-    \ {Value2} lá |Phóng Dao| lên tay."
+    \ kết thúc lượt và nhận một Lượt Phụ, không thực hiện bốc bài đầu lượt vào đầu\
+    \ Lượt Phụ đó, thay vào đó thêm {Value2} lá |Phóng Dao| lên tay."
 LunaClock:
   Name: Đồng Hồ Mặt Trăng
   Description: '{PlayerName} kết thúc lượt và nhận một lượt phụ, các đòn tấn công
@@ -1771,9 +1771,6 @@ SummerFlower:
   Description: "Gây {Damage} sát thương.\nCho đến hết trận đấu, các lá {SelfName}\
     \ gây thêm {Value1} sát thương."
   FlavorText: Ngập giữa muôn hoa trong nháy mắt.
-DizangLove:
-  ExtraDescription1: "|d:Tăng HP tối đa thêm {Value1}.|\nTrong một trận đấu, chỉ lá\
-    \ {SelfName} đầu tiên được chơi có hiệu lực."
 Yueguang:
   Name: Ánh Trăng Im Lặng
   Description: '|Khi được bốc|: Mất {Value1} mana ngẫu nhiên.'
@@ -1858,10 +1855,10 @@ LimaoAttack:
     \ Trưởng|: Tăng lượng mana nhận được từ lá này thêm {Mana}."
 AyaExtraTurn:
   Name: Chế Ngự Huyễn Tưởng
-  Description: "{PlayerName} kết thúc lượt và nhận một lượt phụ.\nVào đầu lượt sau,\
-    \ nhận {Value1} |Né Tránh|.\n|Giới Hạn Thời Gian| {Mana}."
-  ExtraDescription1: "{PlayerName} kết thúc lượt và nhận một lượt phụ.\nVào đầu lượt\
-    \ sau, nhận {Value1} |Né Tránh|.\n|d:Giới Hạn Thời Gian {Mana}.|"
+  Description: "Nhận {Value1} |Né Tránh|.\n{PlayerName} kết thúc lượt và nhận một\
+    \ lượt phụ.\n|Giới Hạn Thời Gian| {Mana}."
+  ExtraDescription1: "Nhận {Value1} |Né Tránh|.\n{PlayerName} kết thúc lượt và nhận\
+    \ một lượt phụ.\n|d:Giới Hạn Thời Gian {Mana}.|"
 TodayYesterday:
   Name: Ảo Tưởng Hương Xưa Và Nay
   Description: "Mỗi khi {PlayerName} |Né Tránh| một đòn tấn công, nhận {Value1} |Hỏa\
@@ -2923,14 +2920,19 @@ PassionVulnerable:
   Name: Đêm Không Ngủ
   Description: "|Trong Nhiệt Tình|: Yểm {Value1} |Dễ Tổn Hại| lên từng kẻ địch.\n\
     Nếu không, tiến vào |Nhiệt Tình|."
+  UpgradedDescription: "|Trong Nhiệt Tình|: Yểm {Value1} |Dễ Tổn Hại| cùng {Value2}\
+    \ |Bị Nhắm Tới| lên từng kẻ địch.\nNếu không, tiến vào |Nhiệt Tình|."
 PassionDraw:
   Name: Tương Tư
   Description: Mỗi khi {PlayerName} tiến vào |Nhiệt Tình|, bốc {Value1} lá.
 PeaceEndTurn:
   Name: Khoảnh Khắc Bình Yên
-  Description: "Tiến vào |Bình Thản|.\nKết thúc lượt của {PlayerName}."
-  UpgradedDescription: "Chọn tối đa {Value1} lá từ trong Chồng Bài Bỏ để chuyển lên\
-    \ tay, |Bảo Lưu| chúng một lượt.\nTiến vào |Bình Thản|.\nKết thúc lượt của {PlayerName}."
+  Description: "Chọn tối đa {Value1} lá trên tay, |Bảo Lưu| {Value1:plural one='nó'\
+    \ other='chúng'} lượt này.\nTiến vào |Bình Thản|.\nKết thúc lượt của {PlayerName}."
+  UpgradedDescription: "Chọn tối đa {Value1} lá từ bao gồm trên tay và Chồng Bài Bỏ,\
+    \ hoàn trả lên tay nếu {Value1:plural one='nó' other='chúng'} nằm ở trong Chồng\
+    \ Bài Bỏ, |Bảo Lưu| {Value1:plural one='nó' other='chúng'} một lượt.\nTiến vào\
+    \ |Bình Thản|.\nKết thúc lượt của {PlayerName}."
 MoodChangeBlock:
   Name: Trường Lực A.T.
   Description: Mỗi khi |Tâm Trạng| của {PlayerName} thay đổi, nhận {Value1} |Khiên|.
@@ -2991,8 +2993,9 @@ KoishiDrawTop:
     \ one='nó' other='chúng'} lên trên cùng Chồng Bài Bốc."
   FlavorText: '"Tôi đã biết thủ phạm là ai rồi!"'
 KoishiWake:
-  Description: "Trong |Mê Tẩu|: Nhận {Shield} |Hộ Giáp|.\nRời khỏi |Tâm Trạng| hiện\
-    \ tại. Hồi phục {Value1} HP."
+  Description: "Trong |Mê Tẩu|: Thực hiện một lần |Đánh Liên Tiếp|.\nTrong |Bình Thản|:\
+    \ Nhận {Shield} |Hộ Giáp|.\nTrong |Mê Tẩu|: Nhận thêm {Value1} lần chơi bài dưới\
+    \ hiệu ứng |Mê Tẩu|."
   FlavorText: '"Mình đây là đang ở đâu?"'
   Name: Hoàn Hồn
 KoishiGainColorless:
@@ -3062,8 +3065,8 @@ AncestorDream:
     \ hoạt lá |Liên Tiếp| đầu tiên trong số chúng. "
 YaoguaiLaser:
   Name: Yêu Quái Điện Não Đồ
-  Description: "Gây {Damage} sát thương.\nThực hiện một lần |Đánh Liên Tiếp|.\n|Trực\
-    \ Giác|: Thực hiện thêm một lần |Đánh Liên Tiếp|."
+  Description: "Nhận {Block} |Khiên|.\nGây {Damage} sát thương.\nThực hiện một lần\
+    \ |Đánh Liên Tiếp|.\n|Trực Giác|: Thực hiện thêm một lần |Đánh Liên Tiếp|."
 DreamExpress:
   Name: Giấc Mơ Tốc Hành
   Description: Vào cuối lượt của {PlayerName}, |Nhập Mộng| {Value1}, sau đó gây cho
@@ -3123,9 +3126,11 @@ TheFool:
   Description: "Tiên Đoán {Scry}.\nChơi lá bài nằm ở trên cùng Chồng Bài Bốc."
   Name: 'Tarot: The Fool'
 KoishiDna:
-  Name: Chân Ngã Giáng Lâm
-  Description: "Chơi lá bài nằm ở trên cùng Chồng Bài Bốc.\nVào đầu lượt của {PlayerName},\
-    \ chơi lá bài nằm ở trên cùng Chồng Bài Bốc."
+  Name: Khiếm Khuyết Của DNA
+  Description: "Khi bắt đầu lượt của {PlayerName}, thêm {Value1} lá |Phiên Mã DNA|\
+    \ lên tay."
+  UpgradedDescription: "Khi bắt đầu lượt của {PlayerName}, thêm {Value1} lá |Phiên\
+    \ Mã DNA| lên tay.\nNgay lập tức kích hoạt hiệu ứng này một lần."
 KoishiAttackX:
   Name: Địa Ngục Hoa Hồng
   Description: '|Với mỗi <sprite="ManaSprite" name="2"> tiêu hao|: Gây {Damage} sát
@@ -3133,10 +3138,6 @@ KoishiAttackX:
 BailianMagic:
   Name: Niệm Chú Ma Thần
   Description: Trong lượt này, {Value1} lá Năng Lực tiếp theo sẽ được chơi hai lần.
-GainZeroAttack:
-  Description: Vào đầu lượt của {PlayerName}, thêm {Value1} lá |Phiên Mã DNA| lên
-    tay. {Value1:plural one='Nó' other='Chúng'} sở hữu thuộc tính |Trục Xuất| cùng
-    |Hư Vô|.
 BlackEpiphany:
   Name: Tước Bỏ Ý Thức
   Description: "Tiến vào |Mê Tẩu|.\nChỉ có thể chơi tối đa {Value1} lá vào lượt tiếp\
@@ -3196,8 +3197,8 @@ EnterEpiphany:
   FlavorText: Tôi phục rồi.
 KoishiDive:
   Name: Sâu Trong Tiềm Thức
-  Description: "Tiến vào |Bình Thản|.\n|Nhập Mộng| {Value1}.\nHoàn trả tối đa {Value2}\
-    \ lá đã |Nhập Mộng| từ Chồng Bài Bỏ lên tay."
+  Description: "|Nhập Mộng| {Value1}.\nHoàn trả tối đa {Value2} lá đã |Nhập Mộng|\
+    \ từ Chồng Bài Bỏ lên tay."
 KoishiDrawTopCards:
   Name: Trắc Nghiệm Rorschach
   Description: Nhìn trước X lá bài ở nằm ở phía trên cùng của Chồng Bài Bốc, chọn
@@ -3278,8 +3279,19 @@ TimeMagic:
     \ cùng |Hư Vô|, phí mana của {Level:plural one='nó' other='chúng'} có thể được\
     \ trả bằng bất kỳ màu nào và được giảm {Mana}.\nVào đầu Lượt Phụ của {PlayerName},\
     \ tái kích hoạt hiệu ứng trên."
+  DetailText: "|e:Các lá thay thế| được sinh ra bỏ qua mọi giới hạn về mana và nhân\
+    \ vật sở hữu.\nMột lá {SelfName} khác không thể được sinh ra bởi hiệu ứng của\
+    \ lá bài này.\nChơi {SelfName} nhiều lần chỉ tăng số lần thực hiện chọn bài, không\
+    \ tăng số lượng lá có thể chọn cùng một lúc hoặc số lượng lá sinh ra để chọn."
 KoishiUltimate:
   Name: Chân Ngã Giáng Lâm
   Description: "Chơi lá bài nằm ở vị trí trên cùng Chồng Bài Bốc.\nVào đầu lượt của\
     \ {PlayerName}, chơi lá bài nằm ở vị trí trên cùng Chồng Bài Bốc."
   DetailText: 'v1.6.1: Hiệu ứng chơi bài được kích hoạt trước bước bốc bài đầu lượt'
+KoishiDnaAttack:
+  Name: Phiên Mã DNA
+  Description: Gây {Damage} sát thương.
+KoishiDance:
+  Name: Dây Gai Cuồng Vũ
+  Description: "Nhận {Block} |Khiên|.\nGây {Damage} sát thương cho từng kẻ địch.\n\
+    Thực hiện một lần |Đánh Liên TTiếp."
