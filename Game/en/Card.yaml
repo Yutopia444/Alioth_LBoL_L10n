@@ -523,8 +523,6 @@ SakuyaTea:
     \ Gain {Value2} life. {SelfName} costs {Mana} less this combat.|"
   Name: Tea Brewing
   FlavorText: Although the first infusion of tea is bitter, it does have health benefits.
-TimeAuraAttack:
-  Name: Time Magic
 AttackMagic:
   Description: "Deal {Damage} damage.\nDiscard up to {Value1:plural one='% card' other='%\
     \ cards'}, then draw that many cards."
@@ -2094,8 +2092,6 @@ YuetuYuyi:
   Description: Gain |Flawless| for {Value1:plural one='% turn' other='% turns'}.
   FlavorText: A remnant of the Moon's memories.
 DizangLove:
-  Description: "Gain {Value1} maximum life.\nOnly the first {SelfName} will take effect\
-    \ each combat."
   ExtraDescription1: "|d:Gain {Value1} maximum life.|\nOnly the first {SelfName} will\
     \ take effect each combat."
 LimaoSchool:
@@ -2877,10 +2873,10 @@ MeilingWater:
   Name: Last Stand Formation
   FlavorText: "\"Hurry up and open the door. I'm here to deliver water.\""
 AyaExtraTurn:
-  Description: "End {PlayerName}'s turn. Then, take an extra turn.\nAt the start of\
-    \ {PlayerName}'s next turn, gain {Value1} |Graze|.\n|Time Limit| {Mana}."
-  ExtraDescription1: "End {PlayerName}'s turn. Then, take an extra turn.\nAt the start\
-    \ of {PlayerName}'s next turn, gain {Value1} |Graze|.\n|d:Time Limit {Mana}.|"
+  Description: "Gain {Value1} |Graze|.\nEnd {PlayerName}'s turn. Then, take an extra\
+    \ turn.\n|Time Limit| {Mana}."
+  ExtraDescription1: "Gain {Value1} |Graze|.\nEnd {PlayerName}'s turn. Then, take\
+    \ an extra turn.\n|d:Time Limit {Mana}.|"
   Name: Fantastical Storm
 YouxiangWake:
   Name: Early Bird
@@ -3123,13 +3119,13 @@ PeaceEndTurn:
     \ from the discard pile and return them to the hand. |Retain| {Value1:plural one='it'\
     \ other='them'} this turn.\nEnter |Serenity|.\nEnd {PlayerName}'s turn."
   Name: Moment of Respite
-  Description: "Enter |Serenity|.\nEnd {PlayerName}'s turn."
+  Description: "Choose up to {Value1} card{Value1:plural one='' other='s'} in the\
+    \ hand. |Retain| {Value1:plural one='it' other='them'} this turn.\nEnter |Serenity|.\n\
+    End {PlayerName}'s turn."
 PassionVulnerable:
   Name: Sleepless Night
   Description: "|In Passion|: Apply {Value1} |Vulnerable| to each enemy.\nOtherwise,\
     \ enter |Passion|."
-KoishiZeroAttack:
-  Description: "Deal {Damage} damage."
 LeaveMoodDraw:
   Name: Curiosity
   Description: "Exit the current |Mental State|.\nDraw {Value1} card{Value1:plural\
@@ -3242,14 +3238,15 @@ DefenseFollowAttack:
   Name: Persecutory Delusions
 KoishiDrawTop:
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nPlace {Value2}\
-    \ card{Value2:plural one='' other='s'} from the hand on top of the draw pile."
+    \ card{Value2:plural one='' other='s'} from the hand on top of the draw pile and\
+    \ |Upgrade| them."
   Name: Talk Through the Hat
   FlavorText: '"I already know who the culprit is!"'
 GrazeFollowAttack:
   Description: "Gain {Value1} |Graze|.\nPerform a |Follow-Up Attack|."
   Name: Instinctive Action
 PlayDrawTop:
-  Description: Play the top card of the draw pile.
+  Description: "Gain {Block} |Block|.\nPlay the top card of the draw pile."
   Name: Unconscious Action
   FlavorText: '"Oh god, I played a Funds Transfer!"'
 CloseEye:
@@ -3258,8 +3255,8 @@ CloseEye:
   Name: Closed Heart
   FlavorText: Koishi closed her mind-reading third eye.
 YaoguaiLaser:
-  Description: "Deal {Damage} damage.\nPerform a |Follow-Up Attack|.\n|Instinct|:\
-    \ Perform an additional |Follow-Up Attack|."
+  Description: "Gain {Block} |Block|.\nDeal {Damage} damage.\nPerform a |Follow-Up\
+    \ Attack|.\n|Instinct|: Perform an additional |Follow-Up Attack|."
   Name: Youkai EEG
 DuplicateFollower:
   Description: "Deal {Damage} damage.\nGain {Mana}.\n|At the start of combat|: Add\
@@ -3299,8 +3296,6 @@ TheHermit:
   UpgradedDescription: "|Scry| {Scry}.\n|Upgrade| the top card of the draw pile.\n\
     Gain {Mana}.\n|In Fugue|: {SelfName} costs <sprite=\"ManaSprite\" name=\"0\">\
     \ to play."
-KoishiGrowAttack:
-  Name: Crazed Thorns
 BlackEpiphany:
   Description: "Enter |Fugue|.\nOnly {Value1} card{Value1:plural one='' other='s'}\
     \ can be played during {PlayerName}'s next turn."
@@ -3320,7 +3315,7 @@ TheFool:
 KoishiDna:
   Description: "Play the top card of the draw pile.\nAt the start of {PlayerName}'s\
     \ turn, play the top card of the draw pile."
-  Name: True Self's Arrival
+  Name: DNA's Flaw
 KoishiAttackX:
   Description: '|For each <sprite="ManaSprite" name="2"> spent|: Deal {Damage} damage
     to each enemy and gain {Mana}.'
@@ -3383,17 +3378,13 @@ AncestorDream:
   Name: Ancestral Dreams
   Description: "Deal {Damage} damage to each enemy.\n|Dream| {Value1}, then activate\
     \ the first |Follow-Up| card |Dreamed|. "
-GainZeroAttack:
-  Description: At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural
-    one='' other='s'}| to the hand. {Value1:plural one='It has' other='They have'}
-    |Exile| and |Ethereal|.
 GainInspiration:
   Name: Lemme Think
   Description: "At the end of {PlayerName}'s turn, add an |Eureka!| to the draw pile.\n"
 KoishiDive:
   Name: Diving Consciousness
-  Description: "Enter |Serenity|.\n|Dream| {Value1}.\nReturn up to {Value2} |Dream\
-    \ Card{Value2:plural one='' other='s'}| from the discard pile to the hand."
+  Description: "|Dream| {Value1}.\nReturn up to {Value2} |Dream Card{Value2:plural\
+    \ one='' other='s'}| from the discard pile to the hand."
 FollowAttackFiller:
   Name: Ring-Ring
   Description: Deal {Damage} damage.
@@ -3500,3 +3491,6 @@ SanaeWind:
   Name: Divine Wind
   Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nGain {Value2}\
     \ |Divine Favor|."
+KoishiDance:
+  Description: "Gain {Block} |Block|.\nDeal {Damage} damage to each enemy.\nPerform\
+    \ a |Follow-Up Attack|."
