@@ -720,8 +720,6 @@ ManaJungle:
   Description: "|Wchodząc w dłoń|: Dodaj {Value1:plural one='% |Tęczę|' few='% |Tęcze|'\
     \ many='% |Tęcz|'} do ręki i |Wygnaj| {SelfName:a}."
   FlavorText: '"Eureka!"'
-TimeAuraAttack:
-  Name: Magia Czasu
 SakuyaTea:
   Name: Parzenie Herbaty
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
@@ -777,9 +775,14 @@ Lijian:
 Knife:
   Name: Sztylet do Rzucania
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    |Gdy {SelfName} Opuszcza Dłoń Bez Zagrania|: Zadaj {DropDamage:plural one='% obrażenie'\
-    \ few='% obrażenia' many='% obrażeń'} wrogowi, który ma najmniej życia."
+    |Gdy {SelfName} opuszcza dłoń bez zagrania|: Zadaj {DropDamage:plural one='% obrażenie'\
+    \ few='% obrażenia' many='% obrażeń'} wrogowi z najmniejszą ilością życia."
   FlavorText: Przez ochronę z tymi nie przejdziesz.
+  ExtraDescription1: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
+    \ obrażeń'}.\nNałóż {Value2:plural one='% |Namiar|' few='% |Namiary|' many='%\
+    \ |Namiarów|'}.\n|Gdy {SelfName} opuszcza dłoń bez zagrania|: Zadaj {DropDamage:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'} wrogowi z najmniejszą\
+    \ ilością życia."
 Dejavu:
   Name: Déjà Vu
   Description: "Umieść maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
@@ -2115,8 +2118,9 @@ ColdPotion:
     \ Niestabilną Miksturę|' few='|% Niestabilne Mikstury|' many='|% Niestabilnych\
     \ Mikstur|'} do stosu doboru."
 MarisaHoldCard:
-  Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
-    \ w dłoni. |Przetrzymaj| je na tę turę.\nZyskaj {Block} |Bloku|."
+  Description: "Wybierz maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'} w ręce. |Przetrzymaj| {Value1:plural one='ją' other='% je'} na tą turę.\n\
+    Zyskaj {Block} |Bloku|."
   Name: Problemy z Rozstaniem
   FlavorText: '"Hej, nie wyrzucaj tego! Może się to potem przydać."'
 SplitPotion:
@@ -2372,7 +2376,6 @@ YouxiangMoon:
   Description: "Na początku następnej tury {PlayerName:g} zyskaj {Mana}.\nDodaj {Value1}\
     \ |Letnie Kwiaty| do ręki."
 DizangLove:
-  Name: Natychmiastowe Bodhi
   ExtraDescription1: "|d:Zyskaj {Value1} maksymalnego życia.|\nTylko pierwsze {SelfName}\
     \ aktywuje swój efekt w walce."
 LimaoSchool:
@@ -2781,7 +2784,7 @@ ChooseFriend:
     \ do ręki. Mana dowolnego koloru może zostać użyta, aby za nie zapłacić."
   FlavorText: Jeśli czujesz to co ja, złap mnie za rękę.
   DetailText: Te |e:alternatywne karty| ignorują ograniczenia całkowitego kosztu,
-    koloru man oraz postaci, a także mają całkowity koszt równy 4 lub mniej.
+    koloru many oraz postaci, a także mają całkowity koszt równy 4 lub mniej.
 HuiyeTime:
   Name: Wieczność i Natychmiastowość
   Description: "Wybierz do {Value1:plural one='% karty' few='% kart' many='% kart'}\
@@ -2843,7 +2846,7 @@ ReimuHuashan:
 SacrificeDoll:
   Description: "Wybierz Kukiełkę do |Odejścia|.\nZadaj {Damage:plural one='% obrażenie'\
     \ few='% obrażenia' many='% obrażeń'} wszystkim wrogom."
-  Name: Pakt Samobójstwa
+  Name: Przywróć Nieżywotność
 AliceAttackB:
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
   Name: Błyskawiczne Oflankowanie
@@ -2851,8 +2854,8 @@ AliceBlockU:
   Description: Zyskaj {Block} |Bloku|.
   Name: Magia Obronna
 DeployShanghai:
-  Name: Umieść Kukiełkę Shanghai
-  Description: "|Umieść| |e:Kukiełkę Shanghai|.\nZaktywuj jej |Zdolność Aktywną|."
+  Name: Ulepsz Lalkę
+  Description: "|Umieść| |e:Kukiełkę Shanghai|, lub |Awansuj| lalkę."
 DoubleActiveTrigger:
   Name: Podwójna Aktywacja
   Description: (WIP)
@@ -2867,15 +2870,16 @@ PerfectCrime:
   FlavorText: Masz śliczny "Księżycowy Welon". Teraz należy do mnie!
 DeployPenglai:
   Name: Umieść Kukiełkę Hourai
-  Description: "|Umieść| |e:Kukiełkę Hourai|.\nZaktywuj jej |Zdolność Aktywną|."
+  Description: "|Umieść| |e:Kukiełkę Hourai|.\n|Przyśpieszenie|: |Umieść| dodatkową\
+    \ |e:Kukiełkę Hourai|."
 AyaExtraTurn:
-  Description: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\nNa\
-    \ początku następnej tury {PlayerName:g} zyskaj {Value1:plural one='% |Unik|'\
-    \ few='% |Uniki|' many='% |Uników|'}.\n|Ograniczenie Czasowe| {Mana}."
+  Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
+    Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\n|Ograniczenie\
+    \ Czasowe| {Mana}."
   Name: Fantastyczna Burza
-  ExtraDescription1: "Zakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\n\
-    Na początku następnej tury {PlayerName:g} zyskaj {Value1:plural one='% |Unik|'\
-    \ few='% |Uniki|' many='% |Uników|'}.\n|d:Ograniczenie Czasowe {Mana}.|"
+  ExtraDescription1: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='%\
+    \ |Uników|'}.\nZakończ turę {PlayerName:g}. Następnie zacznij dodatkową turę.\n\
+    |d:Ograniczenie Czasowe {Mana}.|"
 AyaWindGirl:
   Description: Zyskaj {Value1} |Bogini Wiatru|.
   Name: Bogini Wiatru
@@ -2965,14 +2969,19 @@ AyaNewsAliceSp:
     wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
 DebugAddDeckCards:
   Name: Dodaj Karty do Biblioteki
+  Description: 'Karta Testowa: Dodaj {Value1} losowych kart do biblioteki.'
 DebugAddRandomCards:
   Name: Dodaj Losowe Karty
+  Description: 'Karta Testowa: Dodaj {Value1} kart do stosu doboru/zrzutek.'
 DebugExileDrawDiscard:
   Name: Stos Wygnań i Stos Zrzutek
+  Description: 'Karta Testowa: |Wygnaj| stos doboru/zrzutek.'
 DebugAddRandomCardsSlow:
   Name: Dodaj Losowe Karty (Powolne)
+  Description: 'Karta Testowa: Powoli dodawaj {Value1} kart do stosu doboru/zrzutek.'
 DebugAddHandCards:
   Name: Wygnaj Dłoń i Dodaj Karty do Ręki
+  Description: 'Karta Testowa: |Wygnaj| rękę, następnie dodaj {Value1} kart do ręki.'
 HuiyinRemove:
   Name: Pożeranie Historii
   Description: "Usuń kartę z biblioteki.\nGdy {SelfName} zostanie zagrana, jest ona\
@@ -3115,11 +3124,13 @@ YijiuDraw:
     \ many='% kart'}."
 PeaceEndTurn:
   Name: Chwila Wytchnienia
-  Description: "Wejdź w stan |Uspokojenia|.\nZakończ turę {PlayerName:g}."
-  UpgradedDescription: "Wybierz do {Value1:plural one='% karty' few='% kart' many='%\
-    \ kart'} w stosie zrzutek i zwróć {Value1:plural one='ją' other='je'} do ręki.\
-    \ |Przetrzymaj| {Value1:plural one='ją' other='je'} na tę turę.\nWejdź w stan\
-    \ |Uspokojenia|.\nZakończ turę {PlayerName:g}."
+  Description: "Wybierz maksymalnie {Value1:plural one='% kartę' few='% karty' many='%\
+    \ kart'} w ręce. |Przetrzymaj| {Value1:plural one='ją' other='% je'} na tą turę.\n\
+    Wejdź w stan |Uspokojenia|.\nZakończ turę {PlayerName:g}."
+  UpgradedDescription: "Wybierz maksymalnie {Value1:plural one='% kartę' few='% karty'\
+    \ many='% kart'} w stosie zrzutek i zwróć {Value1:plural one='ją' other='je'}\
+    \ do ręki. |Przetrzymaj| {Value1:plural one='ją' other='je'} na tą turę.\nWejdź\
+    \ w stan |Uspokojenia|.\nZakończ turę {PlayerName:g}."
 MoodChangeBlock:
   Name: Pole A.T.
   Description: Za każdym razem, gdy {PlayerName} zmieni swój |Stan Umysłu|, zyskaj
@@ -3140,8 +3151,6 @@ IceWing:
     \ doboru. Wybierz jedną, aby dodać do ręki, a drugą umieść na spód stosu doboru.\n\
     (Zostało {BlueCount:plural one='% niebieska karta' few='% niebieskie karty' many='%\
     \ niebeiskich kart'} w stosie doboru)"
-KoishiZeroAttack:
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}."
 LeaveMoodAttack:
   Name: Uwolnienie Umysłu
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -3244,6 +3253,9 @@ PassionVulnerable:
   Name: Bezsenna Noc
   Description: "|W stanie Pasji|: Nałóż {Value1} |Wrażliwości| na wszystkich wrogów.\n\
     W przeciwnym razie, wejdź w stan |Pasji|."
+  UpgradedDescription: "|W stanie Pasji|: Nałóż {Value1} |Wraźliwości| oraz {Level:plural\
+    \ one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|'}.\nW przeciwnym razie,\
+    \ wejdź w stan |Pasji|."
 PassionDraw:
   Description: Za każdym razem, gdy {PlayerName} wejdzie w stan |Pasji|, dobierz {Value1:plural
     one='% kartę' few='% karty' many='% kart'}.
@@ -3354,14 +3366,15 @@ CloseEye:
 PlayDrawTop:
   FlavorText: '"Tylko nie Transfer Funduszy!"'
   Name: Odruch Bezwarunkowy
-  Description: Zagraj wierzchnią kartę ze stosu doboru.
+  Description: "Zyskaj {Block} |Bloku|.\nZagraj wierzchnią kartę ze stosu doboru."
 DefenseFollowAttack:
   Name: Urojone Prześladowanie
   Description: "Zyskaj {Block} |Bloku|.\nWykonaj |Atak Kartą Reakcji|."
 YaoguaiLaser:
   Name: Youkai'owe EEG
-  Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Wykonaj |Atak Kartą Reakcji|.\n|Instynkt|: Wykonaj dodatkowy |Atak Kartą Reakcji|."
+  Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nWykonaj |Atak Kartą Reakcji|.\n|Instynkt|: Wykonaj\
+    \ dodatkowy |Atak Kartą Reakcji|."
 DuplicateFollower:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Zyskaj {Mana}.\n|Na początku walki|: Dodaj {Value1:plural one='% |Kopię|' few='%\
@@ -3389,8 +3402,8 @@ TheChariot:
 KoishiDrawTop:
   Name: Plecenie Głupot
   Description: "Dobierz {Value1:plural one='% kartę' few='% karty' many='% kart'}.\n\
-    Umieść {Value2:plural one='% kartę' few='% karty' many='% kart'} z ręki na wierzch\
-    \ stosu doboru."
+    |Ulepsz| {Value2:plural one='% kartę' few='% karty' many='% kart' w ręce i umieść\
+    \ {Value1} na wierzch stosu doboru."
   FlavorText: '"Już wiem kto jest winny przestępstwa!"'
 PeaceMemory:
   Name: Kojące Wspomnienia
@@ -3401,8 +3414,9 @@ AncestorDream:
     \ wszystkim wrogom.\n|Wyśnij| {Value1}, następnie aktywuj pierwszą |Wyśnioną|\
     \ |Kartę Reakcji|. "
 KoishiWake:
-  Description: "Wyjdź z aktualnego |Stanu Umysłu|. Ulecz {Value1} życia.\n|W stanie\
-    \ Olśnienia|: Zyskaj {Shield} |Bariery|."
+  Description: "|W stanie Pasji|: Wykonaj |Atak Kartą Reakcji|.\n|W stanie Uspokojenia|:\
+    \ Zyskaj {Shield} |Bariery|.\n|W stanie Olśnienia|: Zyskaj {Value1:plural one='%\
+    \ użycie karty' few='% użycia kart' many='% użyć kart'} w |Olśnieniu|."
   FlavorText: '"Gdzie ja jestem?"'
   Name: Reset Umysłu
 InspirationDefense:
@@ -3420,10 +3434,6 @@ KoishiFire:
   Description: "Zyskaj {Value1} |Mocy|.\n|W stanie Pasji|: Zyskaj dodatkowe {Value2}\
     \ |Mocy|.\n|W stanie Uspokojenia|: Zamiast tego, zyskaj {Value1} |Uduchowienia|."
   Name: Kapryśność
-GainZeroAttack:
-  Description: Na początku tury {PlayerName:g} dodaj {Value1:plural one='% |Transkrypcję
-    DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|} do ręki. {Value1:plural
-    one='Ma ono' other='Mają one'} |Wygnanie| i |Eteryczność|.
 KoishiGrowAttack:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     |Przyrost|: Zwiększ obrażenia tej karty o {Value1}.\n|W stanie Uspokojenia|: {SelfName}\
@@ -3467,9 +3477,12 @@ KoishiPlayDiscard:
   DetailText: Jeśli wybrana zostanie karta |Niegrywalna|, nie będzie ona ani zagrana
     ani |Wygnana|.
 KoishiDna:
-  Name: Przybycie Autentycznego Ja
-  Description: "Zagraj wierzchnią kartę ze stosu doboru.\nNa początku tury {PlayerName:g},\
-    \ zagraj wierzchnią kartę ze stosu doboru."
+  Name: Wada DNA
+  Description: "Na początku tury {PlayerName:g}, dodaj {Value1:plural one='% |Transkrypcję\
+    \ DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|'} do ręki."
+  UpgradedDescription: "Na początku tury {PlayerName:g}, dodaj {Value1:plural one='%\
+    \ |Transkrypcję DNA|' few='% |Transkrypcje DNA|' many='% |Transkrypcji DNA|'}\
+    \ do ręki.\nAktywuj efekt {SelfName} raz."
 KoishiPotential:
   Name: Uwolniony Potencjał
   DetailText: Jeśli wybrana zostanie karta |Niegrywalna|, nie będzie ona ani zagrana
@@ -3517,9 +3530,9 @@ AutoHousework:
   Name: Zautomatyzowane Sprzątanie
 KoishiDive:
   Name: Opływająca Przytomność
-  Description: "Wejdź w stan |Uspokojenia|.\n|Wyśnij| {Value1}.\nZwróć maksymalnie\
-    \ {Value2:plural one='% |Wyśnioną| kartę' few='% |Wyśnione| karty' many='% |Wyśnionych|\
-    \ kart'} ze stosu odrzuconych do ręki."
+  Description: "|Wyśnij| {Value1}.\nZwróć maksymalnie {Value2:plural one='% |Wyśnioną|\
+    \ kartę' few='% |Wyśnione| karty' many='% |Wyśnionych| kart'} ze stosu odrzuconych\
+    \ do ręki."
 Qianqiang:
   Name: Uroczy Szyk Bojowy
 DollFactory:
@@ -3567,3 +3580,52 @@ AttackX:
     \ obrażenia' many='% obrażeń'}.\nGdy cel {SelfName} zostanie pokonany nie wykorzystując\
     \ wszystkich ataków, ataki będą kontynuowane przeciwko losowemu wrogowi jako nowy\
     \ cel."
+DebugAddRandomCardsToExile:
+  Name: Dodaj Losowe Karty do Wygnania
+  Description: 'Karta Testowa: Dodaj {Value1} karty do Wygnania.'
+TimeMagic:
+  Name: Magia Czasu
+  DetailText: "Te |e:alternatywne karty| ignorują ograniczenia całkowitego kosztu,\
+    \ koloru many oraz postaci.\n{SelfName} nie może zostać wytworzona przez ten efekt.\n\
+    Wielokrotne użycia (SelfName} zwiększają tylko ilość zaoferowanych kart, a nie\
+    \ ile kart może zostać wybranych lub ile razy karty będą wybierane."
+  Description: "Dodaj {Level} z {Limit} |p:całkowicie losowych| rzadkich kart na wierzch\
+    \ stosu doboru. {Level:plural one='Ma ona' other='Mają one'} |Wygnanie| i |Eteryczność|\
+    \ oraz mana dowolnego koloru może zostać wykorzystana do opłacenia {Value1:plural\
+    \ one='jej' other='ich'} kosztu, który to jest zredukowany o {Mana}.\nPowtórz\
+    \ ten efekt na początku każdej dodatkowej tury."
+KoishiDnaAttack:
+  Name: Transkrypcja DNA
+  Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
+KoishiDance:
+  Name: Szalone Ciernie
+  Description: "Zyskaj {Block} |Bloku|.\nZadaj {Damage:plural one='% obrażenie' few='%\
+    \ obrażenia' many='% obrażeń'}.\nWykonaj |Atak Kartą Reakcji|."
+KoishiUltimate:
+  Name: Przebudzenie Autentycznego Ja
+  DetailText: 'v1.6.1: Efekt automatycznego zagrania aktywowany jest teraz przed fazą
+    doboru.'
+  Description: "Zagraj wierzchnią kartę ze stosu doboru.\nNa początku tury {PlayerName:g},\
+    \ zagraj wierzchnią kartę ze stosu doboru."
+DebugUpgradeAllZone:
+  Description: 'Karta Testowa: Ulepsz {Value1} wierzchnich kart w stosach doboru i
+    zrzutek.'
+  Name: Ulepsz Karty w Każdym Stosie
+DebugRemoveHand:
+  Name: Usuń Rękę
+  Description: 'Karta Testowa: Wybierz dowolną ilość kart z ręki i usuń je z walki.'
+DebugAddRandomCardsToExileSlow:
+  Name: Dodaj Losowe Karty do Wygnania (Wolno)
+  Description: 'Karta Testowa: Wolno dodaje {Value} kart do Wygnania.'
+DebugPlaySelectCard:
+  Name: Zagraj Karty z Pola Bitwy
+  Description: "Karta Testowa: Wybierz maksymalnie {Value1} kart na Polu Bitwy i zagraj\
+    \ je jako |Karty Reakcji|.\nKolejność wykonywania: Ręką, Stos Doboru, Stos Odrzuconych,\
+    \ Wygnanie"
+AliceBlockB:
+  Name: Alice B Obrona
+  Description: Zyskaj {Block} |Bloku|.
+DebugRemoveAllHandWhenDraw:
+  Name: Usuń Rękę Kiedy Dobrana
+  Description: 'Karta Testowa: Kiedy dobrana, usuń wszystkie karty w ręce z walki
+    (wliczają tą).'
