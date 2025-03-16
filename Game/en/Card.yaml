@@ -3126,6 +3126,8 @@ PassionVulnerable:
   Name: Sleepless Night
   Description: "|In Passion|: Apply {Value1} |Vulnerable| to each enemy.\nOtherwise,\
     \ enter |Passion|."
+  UpgradedDescription: "|In Passion|: Apply {Value1} |Vulnerable| and {Value2} |Lock\
+    \ On| to each enemy.\nOtherwise, enter |Passion|."
 LeaveMoodDraw:
   Name: Curiosity
   Description: "Exit the current |Mental State|.\nDraw {Value1} card{Value1:plural\
@@ -3237,9 +3239,9 @@ DefenseFollowAttack:
   Description: "Gain {Block} |Block|.\nPerform a |Follow-Up Attack|."
   Name: Persecutory Delusions
 KoishiDrawTop:
-  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\nPlace {Value2}\
-    \ card{Value2:plural one='' other='s'} from the hand on top of the draw pile and\
-    \ |Upgrade| them."
+  Description: "Draw {Value1} card{Value1:plural one='' other='s'}.\n|Upgrade| {Value2}\
+    \ card{Value2:plural one='' other='s'} in the hand and place {Value1:Plural one=''\
+    \ other='s'} on top of the draw pile."
   Name: Talk Through the Hat
   FlavorText: '"I already know who the culprit is!"'
 GrazeFollowAttack:
@@ -3265,8 +3267,9 @@ DuplicateFollower:
   ExtraDescription1: "Deal {Damage} damage.\nGain {Mana}."
   Name: Lonely Heart
 KoishiWake:
-  Description: "Exit the current |Mental State|. Gain {Value1} life.\n|In Fugue|:\
-    \ Gain {Shield} |Barrier|."
+  Description: "|In Passion|: Perform a |Follow-Up Attack|.\n|In Serenity|: Gain {Shield}\
+    \ |Barrier|.\n|In Fugue|: Gain {Value1} |Fugue| card use{Value1:plural one=''\
+    \ other='s'}."
   Name: Mental Reset
   FlavorText: '"Where am I?"'
 KoishiGainColorless:
@@ -3313,9 +3316,11 @@ TheFool:
   Description: "|Scry| {Scry}.\nPlay the top card of the draw pile."
   Name: 'Tarot: The Fool'
 KoishiDna:
-  Description: "Play the top card of the draw pile.\nAt the start of {PlayerName}'s\
-    \ turn, play the top card of the draw pile."
+  Description: "At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural\
+    \ one='' other='s'}| to the hand."
   Name: DNA's Flaw
+  UpgradedDescription: "At the start of {PlayerName}'s turn, add {Value1} |DNA Transcript{Value1:plural\
+    \ one='' other='s'}| to the hand.\nTrigger {SelfName} once."
 KoishiAttackX:
   Description: '|For each <sprite="ManaSprite" name="2"> spent|: Deal {Damage} damage
     to each enemy and gain {Mana}.'
@@ -3494,5 +3499,23 @@ SanaeWind:
 KoishiDance:
   Description: "Gain {Block} |Block|.\nDeal {Damage} damage to each enemy.\nPerform\
     \ a |Follow-Up Attack|."
+  Name: Crazed Thorns
 TimeMagic:
   Name: Time Magic
+  DetailText: "These |e:alternate cards| ignore total mana, mana color and character\
+    \ restrictions.\n{SelfName} cannot be produced by this effect.\nMultiple uses\
+    \ of {SelfName} only increase the number of cards that can be chosen, not how\
+    \ many cards can be chosen from or how many times cards are chosen."
+  Description: "Choose {Value1} of {Value2} |p:completely random| Common card{Value1:plural\
+    \ one='' other='s'} to the hand. {Value1:plural one='It has' other='They have'}\
+    \ |Exile|, and |Ethereal|, and mana of any color can be spent to pay {Value1:plural\
+    \ one='its cost' other='their costs'}, which is reduced by {Mana}.\nRepeat this\
+    \ effect at the start of each extra turn."
+KoishiUltimate:
+  Description: "Play the top card of the draw pile.\nAt the start of {PlayerName}'s\
+    \ turn, play the top card of the draw pile."
+  Name: True Self's Awakening
+  DetailText: 'v1.6.1: The auto-play effect now triggers before the draw step.'
+KoishiDnaAttack:
+  Name: DNA Transcript
+  Description: Deal {Damage} damage.
