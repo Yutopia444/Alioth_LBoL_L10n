@@ -15,6 +15,9 @@ Knife:
   Description: "Gây {Damage} sát thương.\n|Khi Rời Tay Mà Không Phải Do Được Chơi|:\
     \ Gây {DropDamage} sát thương lên kẻ địch với ít HP nhất."
   FlavorText: Không đi qua được cửa kiểm tra an ninh.
+  ExtraDescription1: "Gây {Damage} sát thương.\nYểm {Value2} |Bị Nhắm Tới|.\n|Khi\
+    \ Rời Tay Mà Không Phải Do Được Chơi|: Gây {DropDamage} sát thương lên kẻ địch\
+    \ với ít HP nhất."
 Misfortune:
   Description: '|Khi kết thúc lượt|: Mất {Value1} HP cho mỗi 100 <sprite="Point" name="Gold">
     đang có.'
@@ -485,8 +488,6 @@ SakuyaSnow:
   Name: Tuyết Địa Quyết Định
   FlavorText: Một hầu gái tận tụy vẫn sẽ ra ngoài dù tuyết đã rơi dày đến thắt lưng.
   Description: "Nhận {Block} |Khiên|.\nThêm {Value1} lá |Phóng Dao| lên tay."
-TimeAuraAttack:
-  Name: Ma Thuật Thời Gian
 SakuyaTea:
   Description: "Bốc {Value1} lá.\n|Ra Mắt|: Hồi {Value2} HP, lá bài này tốn ít đi\
     \ {Mana} cho đến hết trận đấu."
@@ -1771,7 +1772,6 @@ SummerFlower:
     \ gây thêm {Value1} sát thương."
   FlavorText: Ngập giữa muôn hoa trong nháy mắt.
 DizangLove:
-  Name: Bồ Đề Tức Thời
   ExtraDescription1: "|d:Tăng HP tối đa thêm {Value1}.|\nTrong một trận đấu, chỉ lá\
     \ {SelfName} đầu tiên được chơi có hiệu lực."
 Yueguang:
@@ -2958,8 +2958,6 @@ LunaticPassion:
     \ trở thành {Percentage}% và sát thương từ những lá Tấn Công sẽ trở nên |Chuẩn\
     \ Xác|.\nTiến vào |Nhiệt Tình|."
   FlavorText: '"Thực ra, tôi đã luôn dõi theo cô từ lượt chạy trước rồi!"'
-KoishiZeroAttack:
-  Description: "Gây {Damage} sát thương."
 PassionAttackToDraw:
   Name: Lồng Giam Hoa Hồng
   Description: "Gây {Damage} sát thương {Value1} lần.\nTiến vào |Nhiệt Tình|.\nChuyển\
@@ -2989,8 +2987,8 @@ KoishiPhone:
   FlavorText: Bạn không thể từ chối cuộc gọi này.
 KoishiDrawTop:
   Name: Ba Hoa Chích Choè
-  Description: "Bốc {Value1} lá.\nChọn {Value2} lá trên tay, đặt {Value2:plural one='nó'\
-    \ other='chúng'} lên trên cùng Chồng Bài Bốc."
+  Description: "Bốc {Value1} lá.\n|Nâng Cấp| {Value2} lá trên tay và đặt {Value2:plural\
+    \ one='nó' other='chúng'} lên trên cùng Chồng Bài Bốc."
   FlavorText: '"Tôi đã biết thủ phạm là ai rồi!"'
 KoishiWake:
   Description: "Trong |Mê Tẩu|: Nhận {Shield} |Hộ Giáp|.\nRời khỏi |Tâm Trạng| hiện\
@@ -3026,7 +3024,8 @@ Claustrophobia:
   Description: "Nhận {Block} |Khiên|.\n|Trực Giác|: Nhận {Shield} |Hộ Giáp|."
 PlayDrawTop:
   Name: Hành Động Vô Thức
-  Description: Chơi lá bài ở phía trên cùng của Chồng Bài Bốc.
+  Description: "Nhận {Block} |Khiên|.\nChơi lá bài ở phía trên cùng của Chồng Bài\
+    \ Bốc."
   FlavorText: '"Trời ạ sao lại chơi lá Chuyển Phí!"'
 CloseEye:
   Description: "Nhận {Shield} |Hộ Giáp|.\nKhông thể nhìn thấy ý định của kẻ địch trong\
@@ -3134,9 +3133,6 @@ KoishiAttackX:
 BailianMagic:
   Name: Niệm Chú Ma Thần
   Description: Trong lượt này, {Value1} lá Năng Lực tiếp theo sẽ được chơi hai lần.
-KoishiGrowAttack:
-  Description: "Gây {Damage} sát thương.\n|Sinh Trưởng|: Gia tăng sát thương thêm\
-    \ {Value1}.\nTrong |Bình Thản|: {SelfName} chỉ tốn {Mana} để chơi."
 GainZeroAttack:
   Description: Vào đầu lượt của {PlayerName}, thêm {Value1} lá |Phiên Mã DNA| lên
     tay. {Value1:plural one='Nó' other='Chúng'} sở hữu thuộc tính |Trục Xuất| cùng
@@ -3275,3 +3271,15 @@ AliceAttackU:
 SanaeWind:
   Description: "Bốc {Value1} lá.\nNhận {Value2} Phước Lành."
   Name: Ngọn Gió Của Chư Thần
+TimeMagic:
+  Name: Ảo Thuật Thời Gian
+  Description: "Chọn {Value1} từ {Value2} lá Hiếm |p:hoàn toàn ngẫu nhiên| để thêm\
+    \ lên tay. {Value1:plural one='Nó' other='Chúng'} sở hữu thuộc tính |Trục Xuất|\
+    \ cùng |Hư Vô|, phí mana của {Level:plural one='nó' other='chúng'} có thể được\
+    \ trả bằng bất kỳ màu nào và được giảm {Mana}.\nVào đầu Lượt Phụ của {PlayerName},\
+    \ tái kích hoạt hiệu ứng trên."
+KoishiUltimate:
+  Name: Chân Ngã Giáng Lâm
+  Description: "Chơi lá bài nằm ở vị trí trên cùng Chồng Bài Bốc.\nVào đầu lượt của\
+    \ {PlayerName}, chơi lá bài nằm ở vị trí trên cùng Chồng Bài Bốc."
+  DetailText: 'v1.6.1: Hiệu ứng chơi bài được kích hoạt trước bước bốc bài đầu lượt'
