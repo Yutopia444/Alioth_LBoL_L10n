@@ -738,9 +738,9 @@ OutInGap:
   Description: "Elige 1 de {Value1} cartas |p:completamente aleatorias| para agregarla\
     \ a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
   Name: Rompiendo las Fronteras
-  DetailText: "Las |e:cartas altenativas| ignoran el maná total, el color del maná\
-    \ y las restricciones de los personajes.\n{SelfName} no puede ser producido por\
-    \ este efecto."
+  DetailText: "Estas |e:cartas altenativas| ignoran el maná total, el color del maná\
+    \ y la restricción del personaje.\n{SelfName} no puede ser producido por este\
+    \ efecto."
   FlavorText: Yukari Yakumo prohíbe usar Rompiendo las Fronteras para crear más Rompiendo
     las Fronteras.
 Jiangshen:
@@ -1218,6 +1218,9 @@ Knife:
   Description: "Inflige {Damage} de daño.\n|Cuando {SelfName} sale de la mano sin\
     \ ser jugada|: Inflige {DropDamage} de daño al enemigo con menos vida."
   FlavorText: No puedo pasar el control de seguridad con esto.
+  ExtraDescription1: "Inflige {Damage} de daño.\nAplica {Value2} de |Marcado|.\n|Cuando\
+    \ {SelfName} sale de la mano sin ser jugada|: Inflige {DropDamage} de daño al\
+    \ enemigo con menos vida."
 SakuyaKiller:
   Name: Destripadora en la Niebla
   Description: "Al final de cada turno de {PlayerName}, agrega |{Value1} {Value1:plural\
@@ -1321,8 +1324,6 @@ SakuyaDetective:
     (Se han acumulado {BossDamage} de daño)"
   FlavorText: Aunque es posible que lo hayas olvidado, este juego es en realidad un
     juego de investigación criminal.
-TimeAuraAttack:
-  Description: "Inflige {Damage} de daño.\nGana {Value1} de |Pulso Temporal|."
 LightSpeed:
   Name: C. Ricochet
   Description: "Inflige {Damage} de daño.\nSi se descartó una carta en este turno,\
@@ -1878,7 +1879,6 @@ MeihongPower:
   FlavorText: Es una inmortal maldita que vive su vida como una ermitaña.
   Name: La Llama Inmortal
 DizangLove:
-  Name: Bodhi Instantáneo
   ExtraDescription1: "|d:Gana {Value1} de vida máxima.|\nSolo el primer {SelfName}\
     \ tendrá efecto en cada combate."
 HuiyeMana:
@@ -2882,12 +2882,10 @@ YouxiangWake:
     "'
 AyaExtraTurn:
   Name: Tormenta Fantástica
-  ExtraDescription1: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\n\
-    Al comienzo del siguiente turno de {PlayerName}, gana {Value1} de |Evasión|.\n\
-    |d:Límite de Tiempo {Mana}.|"
-  Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\nAl\
-    \ comienzo del siguiente turno de {PlayerName}, gana {Value1} de |Evasión|.\n\
-    |Límite de Tiempo| {Mana}."
+  ExtraDescription1: "Gana {Value1} de |Evasión|.\nFinaliza el turno de {PlayerName}.\
+    \ Luego, toma un turno extra.\n|d:Límite de Tiempo {Mana}.|"
+  Description: "Gana {Value1} de |Evasión|.\nFinaliza el turno de {PlayerName}. Luego,\
+    \ toma un turno extra.\n|Límite de Tiempo| {Mana}."
 AyaWindGirl:
   Name: Joven Diosa del Viento
   Description: Gana {Value1} |Joven Diosa del Viento|.
@@ -3116,8 +3114,6 @@ IceWing:
     \ Elige uno para colocarlo en la mano y el otro se deja en el fondo de la pila\
     \ de robo."
   FlavorText: ¡Lista para despegar!
-KoishiZeroAttack:
-  Description: "Inflige {Damage} de daño."
 LeaveMoodGraze:
   Name: Ocultamiento de Presencia
   Description: "Gana {Value1} de |Evasión|.\nSale del |Estado Mental| actual."
@@ -3144,9 +3140,13 @@ PassionVulnerable:
   Name: Noche de Insomnio
   Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\nDe lo\
     \ contrario, entra en el estado |Pasión|."
+  UpgradedDescription: "|En Pasión|: Aplica {Value1} de Vulnerable y {Value2} de |Marcado|\
+    \ a cada enemigo.\nDe lo contrario, se entra en el estado |Pasión|."
 PeaceEndTurn:
   Name: Momento de Descanso
-  Description: "Entra en el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
+  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.\
+    \ {Value1:plural one='Tiene' other='Tienen'} |Retener| en este turno.\nEntra en\
+    \ el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
   UpgradedDescription: "Elige hasta {Value1} carta{Value1:plural one='' other='s'}\
     \ de la pila de descarte y devuélvela{Value1:plural one='' other='s'} a la mano.\
     \ Tiene{Value1:plural one='' other='n'} |Retener| en este turno.\nEntra en el\
@@ -3235,16 +3235,17 @@ DefenseFollowAttack:
   Description: "Gana {Block} de |Bloqueo|.\nRealiza un |Ataque Continuo|."
   Name: Delirios de Persecución
 KoishiDrawTop:
-  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nColoca {Value2}\
-    \ carta{Value2:plural one='' other='s'} de la mano en la parte superior de la\
-    \ pila de robo."
+  Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\n|Mejora| {Value2}\
+    \ carta{Value2:plural one='' other='s'} en la mano y se coloca{Value2:plural one=''\
+    \ other='n'} en la parte superior de la pila de robo."
   Name: Sin Pelos en la Lengua
   FlavorText: '"¡Ya sé quién es la culpable!"'
 GrazeFollowAttack:
   Description: "Gana {Value1} |Evasión|.\nRealiza un |Ataque Continuo|."
   Name: Acción Instintiva
 PlayDrawTop:
-  Description: Juega la carta superior de la pila de robo.
+  Description: "Gana {Block} de |Bloqueo|.\nJuega la carta superior de la pila de\
+    \ robo."
   Name: Acción Inconsciente
   FlavorText: '"¡Oh Dios mío, jugué una transferencia de fondos!"'
 TheChariot:
@@ -3263,12 +3264,13 @@ DuplicateFollower:
   ExtraDescription1: "Inflige {Damage} de daño.\nGana {Mana}."
   Name: Corazón Solitario
 YaoguaiLaser:
-  Description: "Inflige {Damage} de daño.\nRealiza un |Ataque Continuo|.\n|Instinto|:\
-    \ Realiza un |Ataque Continuo| adicional."
+  Description: "Gana {Block} de |Bloqueo|.\nInflige {Damage} de daño.\nRealiza un\
+    \ |Ataque Continuo|.\n|Instinto|: Realiza un |Ataque Continuo| adicional."
   Name: EEG Youkai
 KoishiWake:
-  Description: "Sale del |Estado Mental| actual. Cura {Value1} de vida.\n|En Fuga|:\
-    \ Gana {Shield} de |Barrera|."
+  Description: "|En Pasión|: Realiza un |Ataque Continuo|.\n|En Serenidad|: Gana {Shield}\
+    \ de |Barrera|.\n|En Fuga|: Gana {Value1} carta{Value1:plural one='' other='s'}\
+    \ de |Fuga| para usarse."
   Name: Recobrar la Razón
   FlavorText: '"¿Dónde estoy?"'
 KoishiGainColorless:
@@ -3299,8 +3301,6 @@ TheHermit:
   UpgradedDescription: "|Explora| {Scry}.\n|Mejora| la carta superior de la pila de\
     \ robo.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"ManaSprite\" name=\"\
     0\"> para jugarlo."
-KoishiGrowAttack:
-  Name: Espinas Enloquecidas
 BlackEpiphany:
   Description: "Entra en el estado |Fuga|.\nSolo se puede{Value1:plural one='' other='n'}\
     \ jugar {Value1} carta{Value1:plural one='' other='s'} durante el próximo turno\
@@ -3310,9 +3310,12 @@ KoishiSpark:
   Description: Inflige {Damage} de daño a cada enemigo.
   Name: Última Llamada de una Noche Romántica
 KoishiDna:
-  Description: "Juega la carta superior de la pila de robo.\nAl comienzo de cada turno\
-    \ de {PlayerName}, juega la carta superior de la pila de robo."
-  Name: Mi Verdadero Yo
+  Description: "Al comienzo de cada turno de {PlayerName}, agrega {Value1} |Transcripci{Value1:plural\
+    \ one='ón' other='ones'} del ADN| a la mano."
+  Name: Defecto del ADN
+  UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega {Value1}\
+    \ |Transcripci{Value1:plural one='ón' other='ones'} del ADN| a la mano.\nSe activa\
+    \ {SelfName} una vez."
 KoishiAttackX:
   Description: '|Por cada <sprite="ManaSprite" name="2"> gastados|: inflige {Damage}
     de daño a cada enemigo y gana {Mana}.'
@@ -3327,9 +3330,9 @@ ButterflyDream:
     \ robo. Tiene{Value1:plural one='' other='n'} |Reponer|, |Exilio|, |Etéreo|, y\
     \ se puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'\
     \ other='s costes'}.\nAl comienzo del turno de {PlayerName}, se repite este efecto."
-  DetailText: "Estas |e:cartas alternativas| ignoran las restricciones del maná total,\
-    \ color de maná y personaje.\n{SelfName} no puede ser producido por este efecto.\n\
-    Las cartas con coste X no pueden ser producidas por este efecto."
+  DetailText: "Estas |e:cartas altenativas| ignoran el maná total, el color del maná\
+    \ y la restricción del personaje.\n{SelfName} no puede ser producido por este\
+    \ efecto.\nLas cartas con coste X no pueden ser producidas por este efecto."
   Name: El Sueño de la Mariposa
   FlavorText: ¿La mariposa es un producto de mi imaginación? ¿O soy yo un producto
     de *su* imaginación?
@@ -3404,19 +3407,15 @@ InspirationDefense:
   Name: Momento de Inspiración
   FlavorText: "Unos misteriosos aldeanos comparten una secreta técnica oculta.\nLos\
     \ conocimientos de Koishi sobre la fusión nuclear han avanzado considerablemente."
-GainZeroAttack:
-  UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega {Value1}\
-    \ |Transcripci{Value1:plural one='ón ' other='ones'} del ADN| a la mano. Tiene{Value1:plural\
-    \ one='' other='n'} |Exilio| y |Etéreo|.\nSe activa {SelfName} una vez más."
 GainInspiration:
   Name: Déjame Pensarlo
   Description: "Al final de cada turno de {PlayerName}, agrega una |¡Eureka!| a la\
     \ pila de robo.\n"
 KoishiDive:
   Name: Introspección Profunda
-  Description: "Entra en el estado |Serenidad|.\nGana {Value1} |Sueño{Value1:plural\
-    \ one='' other='s'}|.\nDevuelve hasta {Value2} |Carta{Value2:plural one=' Soñada'\
-    \ other='s Soñadas'}| de la pila de descarte a la mano."
+  Description: "Gana {Value1} |Sueño{Value1:plural one='' other='s'}|.\nDevuelve hasta\
+    \ {Value2} |Carta{Value2:plural one=' Soñada' other='s Soñadas'}| de la pila de\
+    \ descarte a la mano."
 KoishiPhone:
   Name: Llamada Terroríficamente Linda
   Description: "Siempre que se juegue una carta de ataque, se realiza un |Ataque Continuo|.\n\
@@ -3523,3 +3522,29 @@ SanaeWind:
   Description: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nGana {Value2}\
     \ |Favores divinos|."
   Name: Viento Divino
+TimeMagic:
+  Description: "Elige {Value1} de {Value2} carta{Value1:plural one=' Comun' other='s\
+    \ Comunes'} |p:completamente aleatoria{Value1:plural one='' other='s'}| hacia\
+    \ la mano. {Value1:plural one='Tiene' other='Tienen'} |Exilio| y |Etéreo|, y se\
+    \ puede gastar maná de cualquier color para pagar {Value1:plural one='su coste'\
+    \ other='sus costes'} y del cual se reduce en {Mana}.\nRepite este efecto al comienzo\
+    \ de cada turno extra."
+  DetailText: "Estas |e:cartas altenativas| ignoran el maná total, el color del maná\
+    \ y la restricción del personaje.\n{SelfName} no puede ser producido por este\
+    \ efecto.\nLos usos múltiples de {SelfName} solo aumentan la cantidad de cartas\
+    \ que se pueden elegir, no la cantidad de cartas que se pueden llevar ni la cantidad\
+    \ de veces se da la elección las cartas."
+  Name: Magia del Tiempo
+KoishiDance:
+  Name: Espinas Enloquecidas
+  Description: "Gana {Block} de |Bloqueo|.\nInflige {Damage} de daño a cada enemigo.\n\
+    Realiza un |Ataque Continuo|."
+KoishiUltimate:
+  Name: Mi verdadero yo
+  Description: "Juega la carta superior de la pila de robo.\nAl comienzo del turno\
+    \ de {PlayerName}, juega la carta superior de la pila de robo."
+  DetailText: 'v1.6.1: El efecto de jugar automáticamente ahora se activa antes de
+    la fase de robo.'
+KoishiDnaAttack:
+  Description: Inflige {Damage} de daño.
+  Name: Transcripción del ADN

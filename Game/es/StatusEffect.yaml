@@ -646,9 +646,9 @@ AutoKnifeSe:
   Brief: Todos los |Cuchillos Arrojadizos| tienen |Auto-Exilio|.
 KnifeWithLockedOn:
   Name: ¡Tu eres el Siguiente!
-  Description: '|Cuchillos Arrojadizos| aplica {Level} de |Marcado{Level:plural one=''''
-    other=''s''}| cuando se juega.'
-  Brief: '|Cuchillos Arrojadizos| aplican algunos |Marcados| cuando se juega.'
+  Description: 'Los |Cuchillos Arrojadizos| aplica {Level} de |Marcado{Level:plural
+    one='''' other=''s''}| cuando se juega.'
+  Brief: 'Los |Cuchillos Arrojadizos| aplican algunos |Marcados| cuando se juega.'
 NextTurnLoseGame:
   Name: Perder en el Próximo Turno
   Description: Pierde la partida en el siguiente turno.
@@ -1258,11 +1258,11 @@ CloseEyeSe:
   Brief: Las intenciones de los enemigos se desconocen por un tiempo.
   Name: Ojo Cerrado
 KoishiDnaSe:
-  Description: Al comienzo del turno de {PlayerName}, juega inmediatamente las {Level}
-    cartas superiores de la pila de robo.
-  Brief: Al comienzo del turno de {PlayerName}, juega inmediatamente las cartas superiores
-    de la pila de robo.
-  Name: La Chica Youkai de Hartmann
+  Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Transcripci{Level:plural
+    one='ón' other='ones'} del ADN| a la mano con |Exilio| y |Etéreo|.
+  Brief: Al comienzo del turno de {PlayerName}, agrega |Transcripciones del ADN| a
+    la mano con |Exilio| y |Etéreo|.
+  Name: Defecto del ADN
 ButterflyDreamSe:
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural
     one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
@@ -1315,10 +1315,6 @@ GainInspirationSe:
   Description: "Al final del turno de {PlayerName}, agrega {Level} |¡Eureka!| a la\
     \ pila de robo.\n"
   Brief: "Al final del turno de {PlayerName}, agrega |¡Eureka!| a la pila de robo.\n"
-GainZeroAttackSe:
-  Description: Al comienzo del turno de {PlayerName}, agrega {Level} |Transcripci{Level:plural
-    one='ón ' other='ones'} del ADN| a la mano. Tiene{Level:plural one='' other='n'}
-    |Exilio| y |Etéreo|.
 UpgradeAllHandSe:
   Name: Psicocandado
   Description: Al comienzo del próximo turno de {PlayerName}, |Mejora| cada carta
@@ -1371,3 +1367,17 @@ EnemyLockedOn:
   Description: Después de que todos los enemigos hayan jugado su turno, {PlayerName}
     recibe {Level} de |Marcado|.
   Name: Marcado Inminente
+TimeMagicSe:
+  Name: Magia del Tiempo
+  Description: "Al comienzo del turno extra de {PlayerName}, elige {Level} de {Limit}\
+    \ carta{Valor1:plural one=' Común' other='s Comunes'} |p:completamente aleatoria{Value1:plural\
+    \ one='' other='s'}| a la parte superior de la pila de robo. {Level:plural one='Tiene'\
+    \ other='Tienen'} |Exilio| y |Etéreo|, y se puede gastar maná de cualquier color\
+    \ para pagar su{Level1:plural one=' coste' other='s costes'} y del cual se reduce\
+    \ en {Mana}.\n"
+KoishiUltimateSe:
+  Brief: Al comienzo del turno de {PlayerName}, juega inmediatamente las cartas superiores
+    de la pila de robo.
+  Description: Al comienzo del turno de {PlayerName}, juega inmediatamente la{Level:plural
+    one=' carta superior' other='s % cartas superiores'} de la pila de robo.
+  Name: Mi verdadero yo
