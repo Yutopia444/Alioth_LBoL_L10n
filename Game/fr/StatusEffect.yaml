@@ -765,9 +765,9 @@ SpecialClockSe:
     et piochez autant que défaussée.
 KnifeWithLockedOn:
   Name: Tu es le suivant !
-  Description: les |Couteaux de lancer| appliquent {Level} |Verrouillé| lorsqu'ils
-    sont joués.
-  Brief: les |Couteaux de lancer| appliquent |Verrouillé| lorsqu'ils sont joués.
+  Description: les |Couteaux de lancer| ajoutent {Level} |Verrouillé{Level:plural
+    one='' other='s'}| lorsqu'ils sont joués.
+  Brief: les |Couteaux de lancer| ajoutent |Verrouillé| lorsqu'ils sont joués.
 DrawPhaseAddKnife:
   Name: Main remplacée
   Description: Ignorez la phase de pioche au début du tour, ajoutez {Limit} |Couteau{Limit:plural
@@ -1341,16 +1341,12 @@ CloseEyeSe:
   Name: Œil Fermé
   Description: "Les intentions de l'ennemi sont inconnues.\nTours restants : {Level}"
   Brief: Les intentions de l'ennemi sont inconnues pendant un moment.
-GainZeroAttackSe:
-  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} |Transcription{Level:plural
-    one='' other='s'} d'ADN| à la main, qui {Level:plural one='a' other='ont'} |Exil|
-    et |Éthéré|.
 KoishiDnaSe:
-  Name: Fille Yōkai de Hartmann
-  Description: Lorsque {PlayerName} débute son tour, jouez immédiatement {Level:plural
-    one='la première carte' other='les % premières cartes'} de la pioche.
-  Brief: Lorsque {PlayerName} débute son tour, jouez immédiatement les premières cartes
-    de la pioche.
+  Name: Défaut d'ADN
+  Description: Lorsque {PlayerName} débute son tour, ajoutez {Level} |Transcription{Level:plural
+    one='' other='s'} d'ADN| à la main avec |Exil| et |Éthéré|.
+  Brief: Lorsque {PlayerName} débute son tour, ajoutez des |Transcriptions d'ADN|
+    à la main avec |Exil| et |Éthéré|.
 ButterflyDreamSe:
   Name: Rêve du Papillon
   Brief: Lorsque {PlayerName} débute son tour, ajoutez des cartes rares |p:complètement
@@ -1438,3 +1434,17 @@ EnemyLockedOn:
   Name: Verrouillé Bientôt
   Description: Une fois que tous les ennemis ont joué leur tour, {PlayerName} gagne
     {Level} |Verrouillé{Level:plural one='' other='s'}|.
+TimeMagicSe:
+  Name: Magie du Temps
+  Description: "Lorsque {PlayerName} débute un tour supplémentaire, choisissez {Level}\
+    \ parmis {Limit} cartes communes |p:complètement aléatoires| et ajoutez-l{Level:plural\
+    \ one='a' other='es'} à votre main. {Level:plural one='Elle a' other='Elles ont'}\
+    \ |Exil| et |Éthéré|, et le mana de n'importe quelle couleur peut être dépensé\
+    \ pour payer {Level:plural one='son coût' other='leur coût'}, qui est réduit de\
+    \ {Mana}.\n"
+KoishiUltimateSe:
+  Name: Éveil du Vrai Soi
+  Description: Lorsque {PlayerName} débute son tour, jouez immédiatement {Level:plural
+    one='la première carte' other='les % premières cartes'} de la pile.
+  Brief: Lorsque {PlayerName} débute son tour, jouez immédiatement les premières cartes
+    de la pile.

@@ -800,9 +800,6 @@ SakuyaSnow:
     \ main."
   FlavorText: Une servante dévouée doit sortir même si elle marche dans la neige jusqu'à
     la taille.
-TimeAuraAttack:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez {Value1}\
-    \ |Impulsions temporelles|."
 SakuyaTea:
   Name: Infusion de Thé
   ExtraDescription1: "Piochez {Value1:plural one='% carte' other='% cartes'}.\n|d:Début|\
@@ -858,10 +855,14 @@ SakuyaSleep:
   FlavorText: La meilleure façon d'utiliser l'arrêt du temps.
 Knife:
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Quitte\
-    \ la main sans être joué| : Infligez {DropDamage} dégâts à l'ennemi avec le moins\
-    \ de points de vie."
+    \ la main sans être joué| : Infligez {DropDamage} dégât{DropDamage:plural one=''\
+    \ other='s'} à l'ennemi avec le moins de points de vie."
   FlavorText: Impossible de passer la sécurité.
   Name: Couteau de Lancer
+  ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nAppliquez\
+    \ {Value2} |Verrouillé{Value2:plural one='' other='s'}|.\n|Quitte la main sans\
+    \ être joué| : Infligez {DropDamage} dégât{DropDamage:plural one='' other='s'}\
+    \ à l'ennemi avec le moins de points de vie."
 CoolMaid:
   Name: Domestique Élégante
   Description: "Ajoutez |{Value1:plural one='% Couteau de lancer' other='% Couteaux\
@@ -1580,7 +1581,7 @@ LunaClock:
     attaques n'infligent aucun dégât pendant ce tour supplémentaire.
 SakuyaDio:
   Name: Tu es le Prochain !
-  Description: "Quand un |Couteau de Lancer| est joué, appliquez {Value1} |Verrouillé{Value1:plural\
+  Description: "Quand un |Couteau de Lancer| est joué, ajoutez {Value1} |Verrouillé{Value1:plural\
     \ one='' other='s'}|.\nTerminez le tour, et {PlayerName} joue un tour supplémentaire.\
     \ Pendant ce tour, ajoutez |{Value2:plural one='% Couteau de Lancer' other='%\
     \ Couteaux de Lancer'}| à la main au lieu de piocher des cartes pendant l'étape\
@@ -2190,8 +2191,6 @@ Psychedelic:
     \ de vie et gagnez {Value2} <sprite=\"Point\" name=\"Power\">."
   FlavorText: '"Est-ce que je rêve encore ?"'
 DizangLove:
-  Description: "Gagnez {Value1} point{Value1:plural one='' other='s'} de vie maximum.\n\
-    Seul le premier {SelfName} prend effet à chaque combat."
   ExtraDescription1: "|d:Gagnez {Value1} point{Value1:plural one='' other='s'} de\
     \ vie maximum.|\nSeul le premier {SelfName} prend effet à chaque combat."
 SakuraBlade:
@@ -2512,7 +2511,7 @@ BailianFire:
     à la main, elle |coûte temporairement| {Mana}, avec |Exil|, |Éthéré|.
   UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez une carte de\
     \ talent aléatoire à la main, elle |coûte temporairement| {Mana}, avec |Exil|,\
-    \ |Éthéré|.\nPrend effet immédiatement."
+    \ |Éthéré|.\nDéclenchez {SelfName} immédiatement."
 MarisaHoldCard:
   Name: Difficile de Lâcher Prise
   Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
@@ -3062,12 +3061,11 @@ YouxiangWake:
   FlavorText: «Qui diable est-ce <sprite="TextIcon" name="Anger"> ?»
 AyaExtraTurn:
   Name: Tempête Fantastique
-  Description: "{PlayerName} termine son tour, et joue un tour supplémentaire.\nLorsque\
-    \ {PlayerName} débute son prochain tour, gagnez {Value1} |Esquive{Value1:plural\
-    \ one='' other='s'}|.\n|Limite de Temps| {Mana}."
-  ExtraDescription1: "{PlayerName} termine son tour, et joue un tour supplémentaire.\n\
-    Lorsque {PlayerName} débute son prochain tour, gagnez {Value1} |Esquive{Value1:plural\
-    \ one='' other='s'}|.\n|d:Limite de Temps {Mana}. |"
+  Description: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\n{PlayerName}\
+    \ termine son tour, et joue un tour supplémentaire.\n|Limite de Temps| {Mana}."
+  ExtraDescription1: "Gagnez {Value1} |Esquive{Value1:plural one='' other='s'}|.\n\
+    {PlayerName} termine son tour, et joue un tour supplémentaire.\n|d:Limite de Temps\
+    \ {Mana}. |"
 AyaWindGirl:
   Name: Fille du Dieu du Vent
   Description: Gagnez {Value1} |Bénédiction{Value1:plural one='' other='s'} du Dieu
@@ -3321,8 +3319,6 @@ IceWing:
     \ Choisissez-en une à mettre dans la main et placez l'autre sous la pioche.\n\
     ({BlueCount} carte{BlueCount:plural one=' bleue restante' other's bleues restantes'}\
     \ dans la pioche)"
-KoishiZeroAttack:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}."
 PassionAttackToDraw:
   Name: Cage de Roses
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} {Value1} fois.\n\
@@ -3348,16 +3344,22 @@ PassionVulnerable:
   Name: Nuit Blanche
   Description: "|Passion| : Infligez {Value1} |Vulnérable{Value1:plural one='' other='s'}|\
     \ à chaque ennemi.\nSinon, entrez dans l'état |Passion|."
+  UpgradedDescription: "|Passion| : Appliquez {Value1} |Vulnérable{Value1:plural one=''\
+    \ other='s'}| et {Value2} |Verrouillé{Value2:plural one='' other='s'}| à chaque\
+    \ ennemi.\nSinon, entrez dans l'état |Passion|."
 PassionDraw:
   Name: Mal d'Amour
   Description: Chaque fois que {PlayerName} entre dans l'état |Passion|, piochez {Value1}
     carte{Value1:plural one='' other='s'}.
 PeaceEndTurn:
   Name: Moment de Répit
-  Description: "Entrez dans l'état |calme|.\nTerminez le tour."
+  Description: "Choisissez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
+    \ de la main qui gagne{Value1:plural one='' other='nt'} |Retenue| ce tour-ci.\n\
+    Entrez dans l'état |calme|.\nTerminez le tour."
   UpgradedDescription: "Sélectionnez jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
-    \ dans la pile de défausse et remettez-l{Value1:plural one='a' other='es'} dans\
-    \ votre main, avec |Retenue|.\nEntrez dans l'état |calme|.\nTerminez le tour."
+    \ de la main ou renvoyez-l{Value1:plural one='a' other='es'} de la défausse à\
+    \ votre main. {Value1:plural one='Elle a' other='Elles ont'} |Retenue| ce tour-ci.\n\
+    Entrez dans l'état |Calme|.\nTerminez le tour."
 MoodChangeBlock:
   Name: A.T. Field
   Description: Chaque fois que {PlayerName} change d'|État mental|, gagnez {Value1}
@@ -3443,8 +3445,9 @@ GrazeFollowAttack:
   Name: Action Instinctive
 KoishiDrawTop:
   Name: Parler Sans Filtre
-  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nPlacez {Value2}\
-    \ carte{Value2:plural one='' other='s'} de la main au-dessus de la pioche."
+  Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\n|Améliorez|\
+    \ {Value2} carte{Value2:plural one='' other='s'} de la main et placez-l{Value2:plural\
+    \ one='a' other='es'} dessus la pile."
   FlavorText: '"Je sais déjà qui est le coupable !"'
 TheChariot:
   Name: 'Tarot : Le Chariot'
@@ -3458,7 +3461,8 @@ CloseEye:
   FlavorText: Koishi a fermé son troisième œil qui lisait les pensées.
 PlayDrawTop:
   Name: Action Inconsciente
-  Description: Jouez la première carte de la pioche.
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nJouez la\
+    \ première carte de la pioche."
   FlavorText: "\"Oh mon Dieu, j'ai joué un Transfert de Fonds !\""
 DuplicateFollower:
   ExtraDescription1: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nGagnez\
@@ -3473,14 +3477,14 @@ AncestorDream:
     |Rêve| {Value1}, puis activez la première carte |Consécutive| |Rêvée|. "
 YaoguaiLaser:
   Name: EEG Yōkai
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez\
-    \ une |Attaque Consécutive|.\n|Instinct| : effectuez une |Attaque Consécutive|\
-    \ supplémentaire."
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'}.\nEffectuez une |Attaque Consécutive|.\n\
+    |Instinct| : effectuez une |Attaque Consécutive| supplémentaire."
 KoishiWake:
   Name: Reprise d'Esprit
-  Description: "Quittez l'|État mental| actuel. Gagnez {Value1} point{Value1:plural\
-    \ one='' other='s'} de vie.\n|Fugue| : Gagnez {Shield} |Barrière{Shield:plural\
-    \ one='' other='s'}|."
+  Description: "|Passion| : Effectuez une |Attaque Consécutive|.\n|Calme| : Gagnez\
+    \ {Shield} |Barrière{Shield:plural one='' other='s'}|.\n|Fugue| : Prolongez la\
+    \ Fugue de {Value1} utilisation{Value1:plural one='' other='s'} de carte."
   FlavorText: '"Où suis-je ?"'
 KoishiGainColorless:
   Name: Esprit Calme
@@ -3517,9 +3521,6 @@ TheHermit:
   UpgradedDescription: "|Sonde| {Scry}.\n|Améliorez| la première carte de la pioche.\n\
     Gagnez {Mana}.\n|Fugue| : {SelfName} coûte <sprite=\"ManaSprite\" name=\"0\">\
     \ à jouer."
-KoishiGrowAttack:
-  Description: "Inflige {Damage} dégât{Damage:plural one='' other='s'}.\n|Croissance|\
-    \ : Augmente les dégâts de {Value1}.\n|Calme| : {SelfName} coûte {Mana} à jouer."
 GainZeroAttack:
   Description: Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural
     one='' other='s'} d'ADN| à la main, qui {Value1:plural one='a' other='ont'} |Exil|
@@ -3546,9 +3547,11 @@ TheFool:
   Name: 'Tarot : Le Fou'
   Description: "|Sonde| {Scry}.\nJouez la première carte de la pioche."
 KoishiDna:
-  Name: Éveil de Soi
-  Description: "Jouez la première carte de la pioche.\nLorsque {PlayerName} débute\
-    \ son tour, jouez la première carte de la pioche."
+  Name: Défaut d'ADN
+  Description: "Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural\
+    \ one='' other='s'} d'ADN| à la main."
+  UpgradedDescription: "Lorsque {PlayerName} débute son tour, ajoutez {Value1} |Transcription{Value1:plural\
+    \ one='' other='s'} d'ADN| à la main.\nDéclenchez {SelfName} immédiatement."
 KoishiAttackX:
   Name: Rose Infernale
   Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"2\"> dépensé| : infligez\
@@ -3560,7 +3563,7 @@ Anatta:
 ButterflyDream:
   Description: "Ajoutez {Value1} {Value1:plural one='carte rare |p:complètement aléatoire|'\
     \ other='cartes rares |p:complètement aléatoires|'} dessus la pioche. {Value1:plural\
-    \ one='elle a' other='elles ont'} |Retenue|, |Exil| et |Éthéré|, et du mana de\
+    \ one='Elle a' other='Elles ont'} |Renfloue|, |Exil| et |Éthéré|, et du mana de\
     \ n'importe quelle couleur peut être dépensé pour {Value1:plural one='la' other='les'}\
     \ payer.\nLorsque {PlayerName} débute son tour, répétez cet effet."
   Name: Rêve du Papillon
@@ -3593,9 +3596,8 @@ FollowAttackFiller:
   FlavorText: driiing... driiing...
 KoishiDive:
   Name: Plongée Subconsciente
-  Description: "Entrez dans l'état |Calme|.\n|Rêve| {Value1}.\nRenvoyez jusqu'à {Value2}\
-    \ carte{Value2:plural one=' rêvée' other='s rêvées'} de la pile de défausse dans\
-    \ la main."
+  Description: "|Rêve| {Value1}.\nRenvoyez jusqu'à {Value2} carte{Value2:plural one='\
+    \ rêvée' other='s rêvées'} de la pile de défausse dans la main."
 DollBlock:
   Name: Bouclier de Poupée
   Description: (WIP) 
@@ -3740,3 +3742,30 @@ SanaeWind:
   Name: Vent Divin
   Description: "Piochez {Value1} carte{Value1:plural one='' other='s'}.\nGagnez {Value2:plural\
     \ one='% |Faveur Divine|' other='% |Faveurs Divines|'}."
+TimeMagic:
+  Name: Magie du Temps
+  Description: "Choisissez {Value1} parmis {Value2} cartes communes |p:complètement\
+    \ aléatoires| et ajoutez-l{Value1:plural one='a' other='es'} à votre main. {Value1:plural\
+    \ one='Elle a' other='Elles ont'} |Exil| et |Éthéré|, et le mana de n'importe\
+    \ quelle couleur peut être dépensé pour payer {Value1:plural one='son coût' other='leur\
+    \ coût'}, qui est réduit de {Mana}.\nRépétez cet effet au début de chaque tour\
+    \ supplémentaire."
+  DetailText: "Ces |e:cartes alternatives| ignorent le mana total, la couleur de mana\
+    \ et les restrictions de personnage.\nCet effet ne peut pas produire {SelfName}.\n\
+    L'utilisation répétée de {SelfName} augmente uniquement le nombre d'invites de\
+    \ sélection, et non le nombre de cartes à choisir simultanément ni le nombre de\
+    \ cartes disponibles."
+KoishiDnaAttack:
+  Name: Transcription d'ADN
+  Description: Infligez {Damage} dégât{Damage:plural one='' other='s'}.
+KoishiDance:
+  Name: Épines Folles
+  Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nInfligez\
+    \ {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi.\nEffectuez une\
+    \ |Attaque Consécutive|."
+KoishiUltimate:
+  Name: Éveil du Vrai Soi
+  Description: "Jouez la première carte de la pioche.\nLorsque {PlayerName} débute\
+    \ son tour, jouez la première carte de la pioche."
+  DetailText: "v1.6.1 : L'effet de jouer automatiquement des cartes en début de tour\
+    \ se déclenche désormais avant l'étape de pioche."
