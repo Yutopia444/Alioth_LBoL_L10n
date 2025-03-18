@@ -1020,12 +1020,11 @@ SakuyaSleep:
   Description: "|光明|を手札に加える。\n{PlayerName}のターンを終了する。"
   UpgradedDescription: '|光明|を手札に加える。'
   FlavorText: 時間停止の最高の使い方。
-TimeAuraAttack:
-  Description: "{Damage}ダメージを与える。\n|タイムパルス|{Value1}を得る。"
 Knife:
   Name: 投げナイフ
   Description: "{Damage}ダメージを与える。\n{SelfName}が使用される以外の方法で手札を離れた時、ライフが最も少ない敵に{DropDamage}ダメージを与える。"
   FlavorText: 持ち物検査を通れません。
+  ExtraDescription1: "{Damage}ダメージを与える。\n|ロックオン|{Value2}を与える。\n{SelfName}が使用される以外の方法で手札を離れた時、ライフが最も少ない敵に{DropDamage}ダメージを与える。"
 SakuyaSnow:
   Name: 降雪決行
   Description: "{Block}|ブロック|を得る。\n|投げナイフ|を{Value1}枚手札に加える。"
@@ -1330,7 +1329,6 @@ ReisenAttack:
   Description: '|{Mana}につき|：敵全体に{Damage}ダメージを与える。'
   FlavorText: おお！「月虹市場」と「闇の抱擁」はついに我が手に！
 DizangLove:
-  Description: "最大ライフを{Value1}増やす。\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。"
   ExtraDescription1: "|d:最大ライフを{Value1}増やす。|\n全ての{SelfName}の効果は各戦闘で1回しか発動しない。"
 LoyalMaid:
   Name: 忠実なる召使い
@@ -1340,7 +1338,7 @@ EvilMaid:
   Description: "ライフを{Value1}失う。\n{PlayerName}は次のターン、与える攻撃ダメージが倍になる。"
 SakuyaDio:
   Name: 次は貴様だ！
-  Description: "直接使用された|投げナイフ|は対象に|ロックオン|{Value1}を与える。\n{PlayerName}はターンを終了し、追加ターンを得る。\n\
+  Description: "直接使用された|投げナイフ|は対象に追加で|ロックオン|{Value1}を与える。\n{PlayerName}はターンを終了し、追加ターンを得る。\n\
     その追加ターンはドローフェイズが無くなる代わり、{Value2}枚の|投げナイフ|が手札に加えられる。"
   FlavorText: 次は貴様だ！
 BrokenTimeline:
@@ -2124,9 +2122,8 @@ YouxiangWake:
   FlavorText: 「誰よ！こんな時間に<sprite="TextIcon" name="Anger"> 」
 AyaExtraTurn:
   Name: 幻想風靡
-  Description: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n|時間制限|{Mana}。"
-  ExtraDescription1: "{PlayerName}のターンを終了し、追加ターンを得る。\n次のターン開始時、|グレイズ|{Value1}を得る。\n\
-    |d:時間制限{Mana}。|"
+  Description: "|グレイズ|{Value1}を得る。\n{PlayerName}のターンを終了し、追加ターンを得る。\n|時間制限|{Mana}。"
+  ExtraDescription1: "|グレイズ|{Value1}を得る。\n{PlayerName}のターンを終了し、追加ターンを得る。\n|d:時間制限{Mana}。|"
 ZhenmiaowanAbility:
   Name: 小槌の魔力
   Description: 戦闘終了まで、全てのカードのコストが{Mana}減少する。
@@ -2284,8 +2281,6 @@ DefaultPeace:
 LeaveMoodAttack:
   Description: "{Damage}ダメージを与える。\n現在の|心境|を解除する。"
   Name: 心の解放
-KoishiZeroAttack:
-  Description: "{Damage}ダメージを与える。"
 PassionDefense:
   Name: 控え目
   Description: "{Block}|ブロック|を得る。\n|熱情|状態なら追加で{Value1}|ブロック|を得る。"
@@ -2320,11 +2315,13 @@ MoodAttack:
 PassionVulnerable:
   Name: 眠れぬ夜
   Description: "|熱情|状態なら敵全体に|弱体|{Value1}を与える。\nそうでない場合、|熱情|に入る。"
+  UpgradedDescription: "|熱情|状態なら敵全体に|弱体|{Value1}と|ロックオン|{Value2}を与える。\nそうでない場合、|熱情|に入る。"
 PeaceEndTurn:
-  UpgradedDescription: "捨て札のカードを最大{Value1}枚選んで手札に加え、{Value1:plural one='それ' other='それら'}をそのターン|保留|する。\n\
+  UpgradedDescription: "手札か捨て札のカードを最大{Value1}枚選んで手札に加え、{Value1:plural one='それ' other='それら'}をそのターン|保留|する。\n\
     |平静|に入る。\n{PlayerName}のターンを終了する。"
   Name: 一時の平穏
-  Description: "|平静|に入る。\n{PlayerName}のターンを終了する。"
+  Description: "手札のカードを最大{Value1}枚選び、{Value1:plural one='それ' other='それら'}をそのターン|保留|する。\n\
+    |平静|に入る。\n{PlayerName}のターンを終了する。"
 MoodChangeBlock:
   Name: A.T.フィールド
   Description: '{PlayerName}が|心境|を変化させる度、{Value1}|ブロック|を得る。'
@@ -2366,11 +2363,11 @@ DuplicateFollower:
   Name: 孤独な心
   ExtraDescription1: '{Damage}ダメージを与える。{Mana}を得る。'
 KoishiWake:
-  Description: "現在の|心境|を解除し、ライフを{Value1}回復する。\n|無心|状態なら追加で{Shield}|バリア|を得る。"
+  Description: "|熱情|状態なら|追加攻撃|を行う。\n|平静|状態なら{Shield}|バリア|を得る。\n|無心|状態なら|無心|の発動回数を{Value1}回増やす。"
   Name: 我に返る
   FlavorText: 「ここはどこ？」
 KoishiDrawTop:
-  Description: "カードを{Value1}枚引く。\n手札を{Value2}枚山札の一番上に置く。"
+  Description: "カードを{Value1}枚引く。\n手札を{Value2}枚選んで|アップグレード|し、それを山札の一番上に置く。"
   Name: 出まかせ
 TheChariot:
   Description: "|占術|{Scry}。\n{PlayerName}の次のターン開始時、カードを{Value1}枚引いて|熱情|に入る。"
@@ -2378,18 +2375,15 @@ TheChariot:
 KoishiFlower:
   Description: "{Block}|ブロック|を得る。\n{Damage}ダメージを与える。\n|真夏の花|を{Value1}枚手札に加える。\n|無心|状態なら代わりに{Value2}枚加える。"
   Name: やんちゃな薔薇
-GainZeroAttack:
-  Name: DNAの瑕
 KoishiDna:
-  Description: '山札の一番上のカードを使用する。
-
-    {PlayerName}のターン開始時、山札の一番上のカードを使用する。'
-  Name: 真我の目覚め
+  Description: '{PlayerName}のターン開始時、|DNA転写|を{Value1}枚手札に加える。'
+  Name: DNAの瑕
+  UpgradedDescription: "{PlayerName}のターン開始時、|DNA転写|を{Value1}枚手札に加える。\n使用時に{SelfName}のターン開始時の効果を1回発動する。"
 Anatta:
   Description: "|平静|を解除する際に得るマナを{Mana}にする。\n|平静|に入る。"
   Name: 無我の境地
 ButterflyDream:
-  Description: '|p:完全ランダム|なレアカードを{Value1}枚山札の一番上に置く。それは|補充|、|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。
+  Description: '|p:完全ランダム|なレアカードを{Value1}枚山札の一番上に置く。{Value1:plural one=''それ'' other=''それら''}は|補充|、|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。
 
     {PlayerName}のターン開始時、この効果を発動する。'
   Name: 胡蝶の夢
@@ -2438,7 +2432,7 @@ GrazeFollowAttack:
   Description: "|グレイズ|{Value1}を得る。\n|追加攻撃|を行う。"
 PlayDrawTop:
   Name: 無意識の行動
-  Description: 山札の一番上のカードを使用する。
+  Description: "{Block}|ブロック|を得る。\n山札の一番上のカードを使用する。"
   FlavorText: 「送金ボタンをポチったなんてあり得ない！」
 CloseEye:
   Name: 閉じた心
@@ -2448,7 +2442,7 @@ AncestorDream:
   Name: 夢枕にご先祖総立ち
   Description: "敵全体に{Damage}ダメージを与える。\n|夢見|{Value1}を行い、最初に捨て札に送られた|追撃|カードを使用する。 "
 YaoguaiLaser:
-  Description: "{Damage}ダメージを与える。\n|追加攻撃|を行う。\n|直感|:もう1回|追加攻撃|を行う。"
+  Description: "{Block}|ブロック|を得る。\n{Damage}ダメージを与える。\n|追加攻撃|を行う。\n|直感|:もう1回|追加攻撃|を行う。"
   Name: 妖怪サイコショック
 KoishiGainColorless:
   Name: 無の心
@@ -2476,8 +2470,6 @@ TheHermit:
     \ name=\"0\">。"
   UpgradedDescription: "|占術|{Scry}。山札の一番上のカードを|アップグレード|する。\n{Mana}を得る。\n|無心|状態なら{SelfName}のコストは<sprite=\"\
     ManaSprite\" name=\"0\">。"
-KoishiGrowAttack:
-  Description: "{Damage}ダメージを与える。\n|成長|：ダメージが{Value1}増加する。\n|平静|状態なら{SelfName}のコストは{Mana}。"
 FakeBullet:
   Name: 仮想弾幕
   Description: "|追加攻撃|を{Value1}回行う。\n山札の|追撃|カードが不足している場合、足りない枚数分ランダムな|追撃|カードの効果を発動する。"
@@ -2505,7 +2497,7 @@ EnterEpiphany:
   Description: '|無心|に入る。'
 KoishiDive:
   Name: 意識潜行
-  Description: "|平静|に入る。\n|夢見|{Value1}。\n捨て札の|夢境|を持つカードを{Value2}枚まで選び手札に戻す。"
+  Description: "|夢見|{Value1}。\n捨て札の|夢境|を持つカードを{Value2}枚まで選び手札に戻す。"
 FollowAttackFiller:
   Name: 電話だよ！
   Description: '{Damage}ダメージを与える。'
@@ -2561,3 +2553,18 @@ KoishiPlayDiscard:
 SanaeWind:
   Name: 神の風
   Description: "カードを{Value1}枚引く。\n|神恩|{Value2}を得る。"
+TimeMagic:
+  Name: タイムマジック
+  DetailText: "候補となるカードは合計コストや色、キャラクターの制限を受けない。\n{SelfName}は候補にならない。\n{SelfName}を複数回使用した場合、候補の数や選択回数は増加せず、選んだカードの入手枚数が増加する。"
+  Description: "{Value2}枚の|p:完全ランダム|なアンコモンカードから{Value1}枚選んで手札に加える。{Value1:plural one='それ'\
+    \ other='それら'}|は|廃棄|と|虚無|を持ち、どの色のマナでもコストを支払うことができる。そのコストは{Mana}減少する。\n{PlayerName}の追加ターン開始時、この効果を発動する。"
+KoishiDnaAttack:
+  Name: DNA転写
+  Description: '{Damage}ダメージを与える。'
+KoishiUltimate:
+  Name: 真我の目覚め
+  DetailText: この効果はドローフェイズでカードを引く前に発動する。
+  Description: "山札の一番上のカードを使用する。\n{PlayerName}のターン開始時、山札の一番上のカードを使用する。"
+KoishiDance:
+  Name: いばらの舞
+  Description: "{Block}|ブロック|を得る。\n敵全体に{Damage}ダメージを与える。\n|追加攻撃|を行う。"
