@@ -59,6 +59,8 @@ Knife:
   Name: 단검
   Description: "피해를 {Damage} 줍니다.\n|사용되지 않고 사라질 시|: 체력이 가장 적은 적에게 피해를 {DropDamage} 줍니다."
   FlavorText: 보안 검사대에서 걸립니다.
+  ExtraDescription1: "피해를 {Damage} 주고 |록온|을 {Value2} 줍니다.\n|사용되지 않고 사라질 시| 체력이 가장\
+    \ 적은 적에게 피해를 {DropDamage} 줍니다."
 ReimuBlockW:
   Name: 탄막 방어
   FlavorText: 들어오지 마!
@@ -981,8 +983,6 @@ SakuyaWeak:
   Name: 타임 서프레션
   Description: "|허약|을 {Value1} 줍니다.\n{Mana}를 얻습니다."
   FlavorText: 시간만 멈추면 탄막도 피하고 식재료도 신선하게!
-TimeAuraAttack:
-  Description: "피해를 {Damage} 줍니다.\n|시간 펄스|를 {Value1} 얻습니다."
 DefenseDraw:
   Name: 루나 사이클
   Description: "|방어|를 {Block} 얻습니다.\n카드를 {Value1}장 뽑습니다.\n|손에 들어올 시|: 이 카드의 코스트가 이번\
@@ -1186,7 +1186,7 @@ TimeLord:
   Name: 시공의 지배자
 SakuyaDio:
   Name: 다음은 너다!
-  Description: "|단검|을 사용할 때, 적에게 |록온|을 {Value1} 줍니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n\
+  Description: "|단검|을 사용할 때 추가로 적에게 |록온|을 {Value1} 줍니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n\
     해당 턴 시작 시, 카드를 뽑지 않고 |단검|을 {Value2}장 얻습니다."
   FlavorText: 시간을 멈춰라 마이 월드야-!
 ShengquanZaiwo:
@@ -1797,7 +1797,6 @@ MeihongAttack:
   FlavorText: 아야씨는 이런 맛이구나...
   Description: "체력을 {Value1} 잃습니다.\n피해를 {Damage}씩 {Value2}번 줍니다."
 DizangLove:
-  Description: "최대 체력이 {Value1} 증가합니다.\n{SelfName}는 각 전투당 한 번씩만 발동됩니다."
   ExtraDescription1: "|d:최대 체력이 {Value1} 증가합니다.|\n{SelfName}는 각 전투당 한 번씩만 발동됩니다."
 YuyukoSing:
   Name: 나비 날개바람
@@ -2284,10 +2283,9 @@ YouxiangWake:
   FlavorText: '"대체 이 시간에 누군데<sprite="TextIcon" name="Anger">"'
 AyaExtraTurn:
   Name: 환상풍미
-  Description: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n다음 턴 시작 시 |그레이즈|를 {Value1} 얻습니다.\n\
-    |시간 제한| {Mana}."
-  ExtraDescription1: "지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n다음 턴 시작 시 |그레이즈|를 {Value1} 얻습니다.\n\
-    |d:시간 제한 {Mana}.|"
+  Description: "|그레이즈|를 {Value1} 얻습니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|시간 제한| {Mana}."
+  ExtraDescription1: "|그레이즈|를 {Value1} 얻습니다.\n지금 턴을 종료하고, 내 턴을 한 차례 더 진행합니다.\n|d:시간\
+    \ 제한 {Mana}.|"
 AyaWindGirl:
   Name: 풍신소녀
   Description: '|풍신소녀| 효과를 {Value1} 얻습니다.'
@@ -2481,8 +2479,6 @@ IceWing:
   ExtraDescription1: "{Mana}를 얻습니다.\n뽑을 카드 더미에서 무작위 청색 카드 2장을 확인합니다. 한 장을 손으로 가져오고,\
     \ 나머지 한 장은 카드 더미의 바닥에 놓습니다.\n(뽑을 카드 더미에 있는 청색 카드의 수: {BlueCount}장)"
   FlavorText: 비행 준비 완료!
-KoishiZeroAttack:
-  Description: "피해를 {Damage} 줍니다."
 PassionAttackToDraw:
   Name: 로즈 케이지
   Description: "피해를 {Damage}씩 {Value1}번 줍니다.\n|열정|에 들어섭니다.\n이 카드를 뽑을 카드 더미에 섞어넣습니다."
@@ -2501,14 +2497,16 @@ MoodAttack:
 PassionVulnerable:
   Name: 잠 들지 못하는 밤
   Description: "|열정일 때|: 모든 적에게 |취약|을 {Value1} 줍니다.\n열정이 아니라면 |열정|에 들어섭니다."
+  UpgradedDescription: "|열정일 때|: 모든 적에게 |취약|을 {Value1}, |록온|을 {Value2} 줍니다.\n열정이 아니라면\
+    \ |열정|에 들어섭니다."
 PassionDraw:
   Name: 상사병
   Description: '|열정|에 들어설 시 카드를 {Value1}장 뽑습니다.'
 PeaceEndTurn:
   Name: 한 때의 안정
-  Description: "|평온|에 들어섭니다.\n내 턴을 종료합니다."
-  UpgradedDescription: "버린 카드 더미에서 최대 {Value1}장 골라 손으로 다시 가져옵니다. 해당 카드들은 한 턴간 |보존|이\
-    \ 붙습니다.\n|평온|에 들어섭니다.\n내 턴을 종료합니다."
+  Description: "손에서 카드를 최대 {Value1}장 선택한 뒤 한 턴간 |보존|합니다.\n|평온|에 들어섭니다.\n내 턴을 종료합니다."
+  UpgradedDescription: "손 또는 버린 카드 더미에서 카드를 최대 {Value1}장 선택한 뒤 손으로 다시 가져오고 한 턴간 |보존|합니다.\n\
+    |평온|에 들어섭니다.\n내 턴을 종료합니다."
 MoodChangeBlock:
   Name: A.T. 필드
   Description: '|마음가짐|이 바뀔 때마다 |방어|를 {Value1} 얻습니다.'
@@ -2541,7 +2539,7 @@ MeilingLianhua:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|화력|을 {Value1} 얻습니다."
 ReimuSilence:
   Name: 「몽상봉인 적」
-  Description: "드로우 페이즈가 아닐 때 카드를 {Value1}장 뽑을 때마다 모든 적에게 피해를 {Damage}씩 줍니다.\n카드를 {Value1}장\
+  Description: "카드 뽑기 단계가 아닐 때 카드를 {Value1}장 뽑을 때마다 모든 적에게 피해를 {Damage}씩 줍니다.\n카드를 {Value1}장\
     \ 뽑습니다."
 ButterflyDream:
   Description: "|p:완전 무작위| 희귀 카드 {Value1}장을 뽑을 카드 더미의 꼭대기에 올려놓습니다. 해당 카드에는 |보충|과 |소멸|,\
@@ -2551,8 +2549,7 @@ ButterflyDream:
     \ X| 카드를 대상으로 할 수 없습니다."
   FlavorText: 내가 나비인가? 아니면 나비가 나인가?
 KoishiDive:
-  Description: "|평온|에 들어섭니다.\n|꿈결| {Value1}.\n버린 카드 더미에서 |꿈결 카드| 중 최대 {Value2}개를 다시\
-    \ 손으로 가져옵니다."
+  Description: "|꿈결| {Value1}.\n버린 카드 더미에서 |꿈결 카드| 중 최대 {Value2}개를 다시 손으로 가져옵니다."
   Name: 의식에 잠기다
 AttackX:
   Description: "{Mana}|를 지불할 시|: 피해를 {Damage} 줍니다.\n대상으로 지정한 적이 제거되었을 때 공격 횟수가 남아있다면\
@@ -2589,14 +2586,15 @@ DefenseFollowAttack:
   Description: "|방어|를 {Block} 얻습니다.\n|추가 공격|이 뒤따릅니다."
 KoishiDrawTop:
   Name: 거침없는 말
-  Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드를 {Value2}장 골라 뽑을 카드 더미의 위로 돌려보냅니다."
+  Description: "카드를 {Value1}장 뽑습니다.\n손에서 카드를 {Value2}장 선택한 뒤 |강화|시켜 뽑을 카드 더미의 꼭대기에\
+    \ 올려놓습니다."
   FlavorText: '"이것이 사건의 전모다!"'
 GrazeFollowAttack:
   Name: 본능적인 행동
   Description: "|그레이즈|를 {Value1} 얻습니다.\n|추가 공격|이 뒤따릅니다."
 PlayDrawTop:
   Name: 무의식적인 행동
-  Description: 뽑을 카드 더미의 맨 위에 놓인 카드를 발동시킵니다.
+  Description: "|방어|를 {Block} 얻습니다.\n뽑을 카드 더미의 꼭대기에 놓인 카드를 발동시킵니다."
   FlavorText: '"아, 실수로 송금해버렸다..."'
 TheChariot:
   Name: VII. 전차
@@ -2615,10 +2613,12 @@ AncestorDream:
   Description: "모든 적에게 피해를 {Damage} 줍니다.\n|꿈결| {Value1}, 그 중 첫번째 |연계 카드|를 발동시킵니다. "
 YaoguaiLaser:
   Name: 요괴 심전도
-  Description: "피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다.\n|직감|: |추가 공격|이 한 번 더 뒤따릅니다."
+  Description: "|방어|를 {Block} 얻습니다.\n피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다.\n|직감|: |추가\
+    \ 공격|이 한 번 더 뒤따릅니다."
 KoishiWake:
   Name: 정신차리기
-  Description: "현재 |마음가짐|에서 벗어나고 체력을 {Value1} 회복합니다.\n|둔주|: 추가로 |보호막|을 {Shield} 얻습니다."
+  Description: "|열정일 때|: |추가 공격|이 뒤따릅니다.\n|평온일 때|: |보호막|을 {Shield} 얻습니다.\n|둔주일 때|:\
+    \ |둔주| 상태에서의 카드 상한을 {Value1} 늘립니다."
   FlavorText: '"여긴 어디?"'
 KoishiGainColorless:
   Name: 사고의 방황
@@ -2649,9 +2649,6 @@ TheHermit:
     \ name=\"0\">이 됩니다."
   UpgradedDescription: "|예지| {Scry}.\n뽑을 카드 더미의 꼭대기에 있는 카드를 |강화|시킵니다.\n{Mana}를 얻습니다.\n\
     |둔주|: {SelfName}의 코스트가 <sprite=\"ManaSprite\" name=\"0\">이 됩니다."
-KoishiGrowAttack:
-  Description: "피해를 {Damage} 줍니다.\n|성장|: 피해가 {Value1} 증가합니다.\n|평온|: {SelfName}의 코스트가\
-    \ {Mana}로 변경됩니다."
 GainZeroAttack:
   UpgradedDescription: "내 턴 시작 시 |DNA 전도|를 {Value1}장 얻습니다. 해당 카드에는 |소멸|과 |휘발성|이 붙습니다.\n\
     즉시 효과가 한 번 발동됩니다."
@@ -2672,8 +2669,9 @@ TheFool:
   Name: 0. 바보
   Description: "|예지| {Scry}.\n뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다."
 KoishiDna:
-  Name: 자아의 강림
-  Description: "뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다.\n내 턴 시작 시 뽑을 카드 더미의 꼭대기에 있는 카드를 발동시킵니다."
+  Name: DNA의 흠
+  Description: "내 턴 시작 시 |DNA 전사|를 {Value1}장 얻습니다."
+  UpgradedDescription: "내 턴 시작 시 |DNA 전사|를 {Value1}장 얻습니다.\n이 카드를 사용할 시 효과가 즉시 발동됩니다."
 KoishiAttackX:
   Name: 로즈 지옥
   Description: '<sprite="ManaSprite" name="2">|를 지불할 시|: 모든 적에게 피해를 {Damage} 주고 {Mana}를
@@ -2805,3 +2803,20 @@ DollFire:
 SanaeWind:
   Name: 신의 바람
   Description: "카드를 {Value1}장 뽑습니다.\n|은총|을 {Value2} 얻습니다."
+TimeMagic:
+  Name: 타임 매직
+  DetailText: "|e:대상 카드군|은 마나, 색상 및 소유자 제한에서 자유롭습니다.\n자기 자신을 대상으로 할 수 없습니다.\n{SelfName}을\
+    \ 중첩하여 사용하여도 선택 횟수가 늘어날 뿐이며, 선택지가 늘어나거나 획득 카드의 양이 늘어나지는 않습니다."
+  Description: "일반 등급이 아닌 |p:완전 무작위| 카드 {Value2}장 중 {Value1}장을 얻습니다. 해당 카드는 |소멸|과\
+    \ |휘발성|을 가지며 코스트로는 무작위 마나 {Mana}만 지불해도 사용할 수 있습니다.\n{PlayerName}의 추가 턴 시작 시 효과가\
+    \ 발동합니다."
+KoishiDnaAttack:
+  Name: DNA 전사
+  Description: 피해를 {Damage} 줍니다.
+KoishiDance:
+  Name: 가시돋친 춤
+  Description: "|방어|를 {Block} 얻습니다.\n모든 적에게 피해를 {Damage} 줍니다.\n|추가 공격|이 뒤따릅니다."
+KoishiUltimate:
+  Name: 진아의 각성
+  DetailText: 'v1.6.1: 해당 효과는 카드 뽑기 단계 이전에 발동합니다.'
+  Description: "뽑을 카드 더미의 꼭대기에 있는 카드를 사용합니다.\n내 턴 시작 시 뽑을 카드 더미의 꼭대기에 있는 카드를 바로 사용합니다."
