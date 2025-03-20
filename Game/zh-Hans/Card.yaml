@@ -1981,6 +1981,31 @@ KoishiUltimateToken:
     造成 {Damage} 点伤害，获得{TotalMana}。
     |被保留时|：伤害提高 {Value1} 点，法力获取提高{Mana}。
 
+KoishiDrawTop:
+  Name: 信口开河
+  Description: |-
+    抽 {Value1} 张牌。
+    选择 {Value2} 张手牌，|升级|它并置于抽牌堆顶。
+  FlavorText: 「我已经知道犯人是谁了！」
+
+LeaveMoodAttack:
+  Name: 情绪释放
+  Description: |-
+    造成 {Damage} 点伤害。
+    离开当前的|心境|。
+
+LeaveMoodGraze:
+  Name: 气息遮蔽
+  Description: |-
+    获得 {Value1} 层|闪避|。
+    离开当前的|心境|。
+
+FlowerGone:
+  Name: 旧梦凋零
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |平静|：改为获得 {Shield} 点|护盾|。
+
 PassionDefense:
   Name: 低调
   Description: |-
@@ -2016,31 +2041,6 @@ DefenseFollowAttack:
     获得 {Block} 点|格挡|。
     进行一次|追加攻击|。
 
-KoishiDrawTop:
-  Name: 信口开河
-  Description: |-
-    抽 {Value1} 张牌。
-    选择 {Value2} 张手牌，|升级|它并置于抽牌堆顶。
-  FlavorText: 「我已经知道犯人是谁了！」
-
-LeaveMoodAttack:
-  Name: 情绪释放
-  Description: |-
-    造成 {Damage} 点伤害。
-    离开当前的|心境|。
-
-LeaveMoodGraze:
-  Name: 气息遮蔽
-  Description: |-
-    获得 {Value1} 层|闪避|。
-    离开当前的|心境|。
-
-FlowerGone:
-  Name: 旧梦凋零
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |平静|：改为获得 {Shield} 点|护盾|。
-
 MoodAttack:
   Name: 移情刃
   Description: |-
@@ -2052,73 +2052,6 @@ GrazeFollowAttack:
   Description: |-
     获得 {Value1} 层|闪避|。
     进行一次|追加攻击|。
-
-PassionVulnerable:
-  Name: 无眠之夜
-  Description: |-
-    |热情|：对所有敌人施加 {Value1} 回合|易伤|。
-    否则，进入|热情|。
-  UpgradedDescription: |-
-    |热情|：对所有敌人施加 {Value1} 回合|易伤|和 {Value2} 层|锁定|。
-    否则，进入|热情|。
-
-PlayDrawTop:
-  Name: 无意识的行动
-  Description: |-
-    获得 {Block} 点|格挡|。
-    打出抽牌堆顶的牌。
-  FlavorText: 「天啊我打出了转账！」
-
-TheChariot:
-  Name: 塔罗牌：战车
-  Description: |-
-    |占卜| {Scry} 。
-    {PlayerName}的下回合开始时，进入|热情|，抽 {Value1} 张牌。
-
-CloseEye:
-  Name: 封闭心灵
-  Description: |-
-    获得 {Shield} 点|护盾|。
-    下一回合内无法看到敌人的意图。
-  FlavorText: 恋闭上了能够读心的第三只眼。
-
-PassionAttackToDraw:
-  Name: 蔷薇囚笼
-  Description: |-
-    造成 {Damage} 点伤害 {Value1} 次。
-    进入|热情|。
-    将这张牌洗入抽牌堆。
-
-PassionDraw:
-  Name: 相思之情
-  Description: 每当{PlayerName}进入|热情|时，抽 {Value1} 张牌。
-
-BabyDream:
-  Name: 胎儿之梦
-  Description: |-
-    获得 {Block} 点|格挡|。
-    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
-
-DuplicateFollower:
-  Name: 孤独的心
-  Description: |-
-    造成 {Damage} 点伤害，获得{Mana}。
-    |战斗开始时|：将 {Value1} 张复制洗入抽牌堆中。
-  ExtraDescription1: 造成 {Damage} 点伤害，获得{Mana}。
-
-AncestorDream:
-  Name: 祖先托梦
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害。
-    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
-
-YaoguaiLaser:
-  Name: 妖怪脑电波
-  Description: |-
-    获得 {Block} 点|格挡|。
-    造成 {Damage} 点伤害。
-    进行一次|追加攻击|。
-    |直觉|：额外进行一次|追加攻击|。
 
 KoishiWake:
   Name: 回神
@@ -2213,6 +2146,73 @@ KoishiDance:
     对所有敌人造成 {Damage} 点伤害。
     进行一次|追加攻击|。
 
+PassionVulnerable:
+  Name: 无眠之夜
+  Description: |-
+    |热情|：对所有敌人施加 {Value1} 回合|易伤|。
+    否则，进入|热情|。
+  UpgradedDescription: |-
+    |热情|：对所有敌人施加 {Value1} 回合|易伤|和 {Value2} 层|锁定|。
+    否则，进入|热情|。
+
+PlayDrawTop:
+  Name: 无意识的行动
+  Description: |-
+    获得 {Block} 点|格挡|。
+    打出抽牌堆顶的牌。
+  FlavorText: 「天啊我打出了转账！」
+
+TheChariot:
+  Name: 塔罗牌：战车
+  Description: |-
+    |占卜| {Scry} 。
+    {PlayerName}的下回合开始时，进入|热情|，抽 {Value1} 张牌。
+
+CloseEye:
+  Name: 封闭心灵
+  Description: |-
+    获得 {Shield} 点|护盾|。
+    下一回合内无法看到敌人的意图。
+  FlavorText: 恋闭上了能够读心的第三只眼。
+
+PassionAttackToDraw:
+  Name: 蔷薇囚笼
+  Description: |-
+    造成 {Damage} 点伤害 {Value1} 次。
+    进入|热情|。
+    将这张牌洗入抽牌堆。
+
+PassionDraw:
+  Name: 相思之情
+  Description: 每当{PlayerName}进入|热情|时，抽 {Value1} 张牌。
+
+BabyDream:
+  Name: 胎儿之梦
+  Description: |-
+    获得 {Block} 点|格挡|。
+    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
+
+DuplicateFollower:
+  Name: 孤独的心
+  Description: |-
+    造成 {Damage} 点伤害，获得{Mana}。
+    |战斗开始时|：将 {Value1} 张复制洗入抽牌堆中。
+  ExtraDescription1: 造成 {Damage} 点伤害，获得{Mana}。
+
+AncestorDream:
+  Name: 祖先托梦
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    |入梦| {Value1} ，将其中第一张|追击|牌打出。 
+
+YaoguaiLaser:
+  Name: 妖怪脑电波
+  Description: |-
+    获得 {Block} 点|格挡|。
+    造成 {Damage} 点伤害。
+    进行一次|追加攻击|。
+    |直觉|：额外进行一次|追加攻击|。
+
 LeaveMoodDraw:
   Name: 好奇心
   Description: |-
@@ -2224,6 +2224,34 @@ MoodChangeBlock:
   Name: A.T. 力场
   Description: 每当{PlayerName}转化|心境|时，获得 {Value1} 点|格挡|。
   FlavorText: 不能逃避！不能逃避！
+
+KoishiDrawTopCards:
+  Name: 墨迹测验
+  Description: 展示抽牌堆顶的 {Value1} 张牌，选择一张置于原处，抽取剩余的牌。
+
+GainInspiration:
+  Name: 让我好好想想
+  Description: |
+    {PlayerName}的回合结束时，将一张|找到灵感了！|洗入抽牌堆。
+
+KoishiMana:
+  Name: 地底蔷薇
+  Description: |-
+    对所有敌人造成 {Damage} 点伤害。
+    获得{Mana}。
+
+PerfectCrime:
+  Name: 完美作案
+  Description: 窃取目标的|护盾|、|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
+  FlavorText: 你的「月之羽衣」很不错，但是下一秒它就是我的了。
+
+SelfControl:
+  Name: 掌控自我
+  Description: |-
+    |抉择|：进入|热情|或|平静|。
+    {PlayerName}的回合结束时：处于|热情|则获得 {Value1} 点|火力|；处于|平静|则获得 {Value2} 点|格挡|。
+  ExtraDescription1: 进入|热情|。
+  ExtraDescription2: 进入|平静|。
 
 PsycheLock:
   Name: 心灵枷锁
@@ -2277,34 +2305,6 @@ FakeBullet:
 KoishiSpark:
   Name: 浪漫夜的最后来电
   Description: 对所有敌人造成 {Damage} 点伤害。
-
-KoishiDrawTopCards:
-  Name: 墨迹测验
-  Description: 展示抽牌堆顶的 {Value1} 张牌，选择一张置于原处，抽取剩余的牌。
-
-KoishiMana:
-  Name: 地底蔷薇
-  Description: |-
-    对所有敌人造成 {Damage} 点伤害。
-    获得{Mana}。
-
-GainInspiration:
-  Name: 让我好好想想
-  Description: |
-    {PlayerName}的回合结束时，将一张|找到灵感了！|洗入抽牌堆。
-
-PerfectCrime:
-  Name: 完美作案
-  Description: 窃取目标的|护盾|、|闪避|、|光学迷彩|、|天衣无缝|；窃取目标的|火力|、|灵力|，至多 {Value1} 点。
-  FlavorText: 你的「月之羽衣」很不错，但是下一秒它就是我的了。
-
-SelfControl:
-  Name: 掌控自我
-  Description: |-
-    |抉择|：进入|热情|或|平静|。
-    {PlayerName}的回合结束时：处于|热情|则获得 {Value1} 点|火力|；处于|平静|则获得 {Value2} 点|格挡|。
-  ExtraDescription1: 进入|热情|。
-  ExtraDescription2: 进入|平静|。
 
 TheFool:
   Name: 塔罗牌：愚者
