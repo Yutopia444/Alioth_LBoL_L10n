@@ -1,7 +1,7 @@
 Game:
   ActualOrderExplain: "Megjeleníti, hogy milyen sorrendben kerültek be a kártyák.\n\
     \nPakli: A sorrend a kártyák összegyüjtésének sorrendjét jelképezi.\nHúzó halom:\
-    \ Az első a \"halom teteje\".\nKidobott halom: Az utolsó a \"halom teteje\".\n\
+    \ Az első a \"halom teteje\".\nEldobott halom: Az utolsó a \"halom teteje\".\n\
     \nAlapértelmezetten nem tudod megjeleníttetni a húzó halmot ebben a sorrendben."
   TypeOrderExplain: "Az azonos típusú kártyák az egymás közötti kártyák sorrendje\
     \ szerint vannak megjelenítve.\nAz azonos nevű kártyák a valódi sorrendjük szerint\
@@ -56,6 +56,7 @@ Game:
   Passive:  Passzív 
   UnknownCard: Ismeretlen Kártya
   OtherCards: Más Kártya 
+  KickerPrefer: Kirúgó Költségek Előnyöztetése
 Ultimate:
   ConsumePower: 'Erő költség <sprite="Point" name="Power">: {0}'
   MaxPower: 'Legmagasabb Töltöttség: {0}'
@@ -183,7 +184,7 @@ Setting:
   VideoQuality: Minőség
   RenderScale: Felbontási Skálázás
   FullScreen: Teljes Képernyő
-  Vsync: Vertikális Szinkron (VSync)
+  Vsync: Vertikális Szinkron (VSync) ({0}fps)
   ScreenVibration: Képernyőrezgés
   Language: Nyelv
   AudioBgm: Háttérzene Hangereje
@@ -264,6 +265,14 @@ Setting:
   Cursor: Egérmutató Stílus
   SystemCursor: Rendszer
   LbolCursor: Beépített
+  FrameRate: Képernyőfrissítési sebesség
+  NoLimit: Korlátlan
+  NonVsync: '{0}fps'
+  Monitor: Képernyő
+  CostMoreLeft: Költségek Balra Tolása
+  CostMoreLeftDescription: "A kártyák mana költségei a jobb felső sarokban találhatóak.\n\
+    Ezt bekapcsolva kicsit balrább igazodnak, hogy ne takarják a tőle jobb oldali\
+    \ lapok."
 StatusEffectType:
   Positive: Erősítés
   Negative: Gyengítés
@@ -284,7 +293,7 @@ Tooltip:
       \ előtt történik.)|\nHa a Húzó halmod üres, akkor az eldobott halomból keverődnek\
       \ be kártyák a húzó halmodba.\n\nKattints hogy lásd milyen kártyák maradtak\
       \ a húzó halmodban. |Ez nem mutatja meg a benne lévő kártyák sorrendjét|."
-    Name: Húzó halom
+    Name: Húzó Halom
   BaseMana:
     Description: "A fordulók legelején a |manabázisban| lévő manával egyenlő manát\
       \ kapsz.\nA |manabázis| mérete bővíthető |Ragyogó Kiállítási Tárgyak| gyűjtésével.\n\
@@ -402,9 +411,9 @@ BattleHint:
     \ Varázskártyát."
 MessageDialog:
   EarlyAccess: "|Touhou: Lost Branch of Legend| az jelenleg |d:Korai Hozzáférésben|\
-    \ elérhető.\nBármit megváltozhatunk a közeljövőben.\nJelenleg |g:Koishin| és |y:Alicen|\
-    \ dolgozunk.\nTöbb információért kérlek lesd meg a Steam hirdetményeinket.\n\n\
-    Ha bármilyen bugot, problémát észlelsz el tudsz érni bennünket a Steam Közösségünkön\
+    \ elérhető.\nBármit megváltozhatunk a közeljövőben.\nJelenleg a |Történet módon|\
+    \ és |y:Alicen| dolgozunk.\nTöbb információért kérlek lesd meg a Steam hirdetményeinket.\n\
+    \nHa bármilyen bugot, problémát észlelsz el tudsz érni bennünket a Steam Közösségünkön\
     \ vagy a Discordon szerverünkön keresztül"
   UnsavedWarning: Az utolsó mentési pont utáni előrehaladásod nem lesz elmentve.
   XCostEmptyUsageWarning: Kijátszod a {0} kártyát anélkül hogy beállítanád a manáját?
