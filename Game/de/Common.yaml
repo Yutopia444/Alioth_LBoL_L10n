@@ -46,14 +46,20 @@ Game:
   NaturalTurn: Natürlicher Zug
   IndexOrder: Index
   EnemyTurn: Zug der Feinde
+  PlayerNameTurnCounter: '{0}s Zug ({1})'
+  Next: Weiter
+  Passive:  Passiv 
+  PlayerNameTurn: '{0}s Zug'
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
   OncePerTurn: Kann nur einmal pro Zug verwendet werden.
   MaxPower: 'Maximale Ladungen: {0}'
   OncePerBattle: Kann nur einmal pro Kampf verwendet werden.
+  ConsumePower: 'Energiekosten <sprite="Point" name="Power">: {0}'
 Explain:
   LoseShinning: Du kannst immer die exklusiven Karten deines Charakters finden, auch
     wenn du |Schimmerndes Ausstellungsstück| verloren hast.
+  Power: Energie<sprite="Point" name="Power">
 UI:
   Divide: ','
   Yes: Ja
@@ -107,6 +113,8 @@ MainMenu:
   DeleteNo: Abbrechen
   RestoreGame: Durchlauf Fortsetzen
   NewGame: Neuer Durchlauf
+  InputName: Name Eingeben
+  EmptyProfile: Leeres Profil
 Setting:
   Language: Sprache
   AudioMaster: Gesamtlautstärke
@@ -127,6 +135,13 @@ Setting:
     Select6: Auswählen 6
     Select7: Auswählen 7
     Select2: Auswählen 2
+    ShowEnemyMoveOrder: Zeige Reihenfolge feindlicher Aktionen (Halten)
+    EndTurn: Beende Zug
+    ToggleBaseDeck: Bibliothek Umschalten
+    ToggleMap: Landkarte Umschalten
+    ToggleDiscardZone: Ablagestapel Umschalten
+    ToggleExileZone: Exil Umschalten
+    ToggleDrawZone: Ziehstapel Umschalten
   Key: Steuerung
   ResetDefault: Standard
   FullScreen: Vollbildschirm
@@ -169,13 +184,37 @@ Chat:
   HetongYinchen2: '{0}!'
   LazyRabbit: Tama ist so nutzlos... Jetzt muss ich wohl Ernst machen.
   Star: Alles klar!
-  Aya3: Schaut was {0:cs} in den Händen hält! Das ist Beweis genug, sie ist der Übeltäter!
+  Aya3: Schaut was {0:cs} in den Händen hält! Das ist Beweis genug, sie ist die Übeltäterin!
+  Limao1: Ich habe gehört das Essen im Schrein auf dem Gipfel des Berges ist klasse!
+  DoremyMaster: Du bist nun an den Grenzen meiner Träume.
+  Clownpiece3: It's lunatic time!
+  DoremySleepLast: Ich kann nicht mehr essen~
+  SijiTurn3: Mich als klein bezeichnen, Strafe wird um 2 Jahre verlängert.
+  DoremySleep: Zzzzz~
+  Clownpiece1: Feen! Mehr Danmaku! Mehr!
+  LongPlace: Dein Zuhause
+  LongPaperPlayer: "???\nWer liest so einen Müll?"
+  DoremyKill: Du musst nie mehr aufstehen~
+  SickGirl: '*Hust*... *Hust*...'
+  Sunny1: Heute zeigen wir {0:cs} wie stark wir wirklich sind!
+  SijiTurn1: Deine Ausrede ist unzulässig, Strafe wird um ein Jahr verlängert.
+  SijiTurn2: Missachtung des Gerichts, Strafe wird um ein Jahr verlängert.
+  LongEscape1: Oh nein, ich wurde besiegt.
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
   StoryMode: Story Modus
   FreeMode: Freier Modus
   SelectAll: Alle Auswählen
+  NotShowRandomResultTitle: Unbekanntes Schicksal
+  CheckDeck: Startbibliothek
+  SkillSpellCard: Zauberkarte {0} <sprite="Point" name="Power">
+  Puzzle: Anfragen
+  NotShowRandomResult: Unbekanntes Schicksal
+  Puzzles: "{0:plural one='% |Anfrage|' other='% |Anfragen|'}"
+  SkillExhibit: Start-Ausstellungsstück
+  DifficultyHint: Falls du "Slay the Spire" nie gespielt hast empfehlen wir dir zuerst
+    auf Einfach zu spielen.
 Museum:
   Hidden: Versteckt
   AllCards: Alle Karten
@@ -207,16 +246,30 @@ Museum:
   LockExhibit: Gesperrtes Ausstellungsstück
   Unlock: Erhalten
   NotUnlock: Nicht Erhalten
+  AchievementCount: Erhaltene Errungenschaft
 Lifetime:
   Win: Vorfälle Gelöst
   Perfect: Vorfälle Perfekt Gelöst
   Time: Spielzeit
   Game: Totale Durchläufe
+  TotalBp: Gesamtpunktzahl<sprite="Point" name="Point">
+  Puzzle: Anfragen
+  OldData: Alte Versionsdaten <sprite="TextIcon" name="Info">
+  HighestBp: Höchstpunktzahl<sprite="Point" name="Point">
+  OldDataHint: Vor der Version 1.3.15 wurde nur die Gesamtstatistik aller Charaktere
+    erfasst, nicht aber die individuellen Daten der Charaktere.
+  NoDataHint: Vor der Version 1.3.15 wurden diese Daten nicht aufgezeichnet.
 Map:
   Boss: Boss
   Select: Wähle einen Boss
   Trade: Tauschen
   BattleAdvTest: Test
+  Enemy: Feind
+  Adventure: Event
+  Gap: Spalte
+  Shop: Takanes Laden
+  Map: Landkarte
+  EliteEnemy: Elite
 Tooltip:
   EntityTitle:
     Neutral: Neutral
@@ -230,6 +283,30 @@ Tooltip:
   UsTitle: '{1}'
   DetailedHint:
     Name: Detailierte Hinweise
+  DifficultyHard:
+    Name: 'Schwierigkeitsstufe: Schwer'
+    Description: Feinde haben mehr Leben und verursachen mehr Schaden.
+  DifficultyLunatic:
+    Description: Feinde haben mehr Leben, verursachen mehr Schaden und verwenden gefährlichere
+      Angriffe.
+    Name: 'Schwierigkeitsstufe: Wahnsinn'
+  DrawZone:
+    Name: Ziehstapel
+    Description: "Zu Beginn des Zuges, ziehe {0} Karten von deinem Ziehstapel. |d:(Effekte,\
+      \ die zu Beginn des Zuges aktiviert werden, aktivieren sich erst nachdem gezogen\
+      \ wurde.)|\nWenn dein Ziehstapel leer ist, mische die Karten vom Ablagestapel\
+      \ zurück in den Ziehstapel.\n\nKlicke auf den Ziehstapel um zu sehen, welche\
+      \ Karten sich darin befinden. |Die Karten im Ziehstapel werden ungeordnet angezeigt|"
+  DiscardZone:
+    Name: Abwerfen
+  ExileZone:
+    Name: Exil
+  DifficultyNormal:
+    Name: 'Schwierigkeitsstufe: Normal'
+  GameSeed:
+    Name: Seed
+  EndTurn:
+    Name: Zug beenden
 Credits:
   MW: Animation
   Alioth: Alioth Studio
@@ -238,3 +315,47 @@ Credits:
   SignalE: Musik
   Anima: Animation
   LuvChan: Design
+Shop:
+  UpgradeTooltip: "Werte eine Karte in der Bibliothek auf.\nBezahle {0} <sprite=\"\
+    Point\" name=\"Gold\">."
+  RemoveService: 'Entfernen:'
+  Remove: Karte Entfernen
+  Upgrade: Karte Aufwerten
+  Skip: Überspringen
+  ShopUpgradePrice: '{0} <sprite="Gold" name="gold">'
+  UpgradeService: 'Aufwerten:'
+  ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
+  Close: Schließen
+  CardService: Kartenservice
+  SoldOut: Ausverkauft
+System:
+  ReturnMainMenu: Hauptmenü
+  ResumeGame: Spiel Fortsetzen
+  SystemMenu: Pause & Einstellungen
+  NoJadeBox:
+    Description: Nichts besonderes.
+History:
+  PlayedTime: 'Spielzeit: {0}'
+  ReloadTimes: 'Neustart: {0}'
+  StatsSegment: '{0}: {1}'
+  Card: 'Karten: {0}'
+  AutoSeed: Zufälliger Seed
+  NotAutoSeed: Festgelegter Seed
+  Puzzles: '{0} Anfragen'
+  Mana: Mana
+  Exhibit: 'Ausstellungsstücke: {0}'
+ErrorChat:
+  LowMagic: Diese Puppe hat nicht genug Magie.
+  MoneyNotEnough: Ich habe nicht genug Geld.
+  LowMana: Ich habe nicht genug Mana.
+  UsUsedThisTurn: Ich habe meine Zauberkarte in diesem Zug bereits verwendet.
+  CardCostChanged: Die Kosten dieser Karte haben sich geändert.
+  LowPower: Ich habe nicht genug Energie.
+  CardNotUsable: Karte kann nicht gespielt werden.
+  CardDrunk: Ich bin nicht betrunken!
+  Tired: Ich bin so erschöpft...
+  CardHuiye: Zeit abgelaufen.
+  NoTarget: Kein valides Ziel.
+  HandFull: Meine Hand ist voll.
+  EmptyDraw: Der Ziehstapel ist leer.
+  CardFengyin: Ich wurde versiegelt.
