@@ -618,7 +618,8 @@ SakuyaLock:
   NonbattleDescription: Activa |Encierro Plateado|.
   FlavorText: '"¿Bajo de HP? Eso es un problema para mí futuro yo."'
 Chunguang:
-  Description: '|Cuando se roba|: |Purifica| {Value1}.'
+  Description: '|Cuando se roba|: Se |Purifica| {Value1} maná{Value1:plural one=''''
+    other=''s''}.'
   Name: Resplandor Puro
   FlavorText: Por favor, no ajustes la saturación al máximo. ¡El mínimo tampoco servirá!
 Payment:
@@ -1265,8 +1266,8 @@ SakuyaClock:
 LunaDial:
   Name: Crono-Espacio Privado
   Description: "Finaliza el turno de {PlayerName}. Luego, toma un turno extra.\n|Cuando\
-    \ {SelfName} entra en la mano|: {SelfName} cuesta {Mana} man{Mana:plural one='á'\
-    \ other='as'}. menos en este combate."
+    \ {SelfName} entra en la mano|: {SelfName} cuesta {Mana} maná(s) menos en este\
+    \ combate."
 SakuyaShop:
   Name: Compra de Materiales
   Description: "Gana {Mana}.\nRoba {Value1:plural one='% carta' other='% cartas'}."
@@ -3362,7 +3363,8 @@ ButterflyDream:
     \ aleatoria{Value1:plural one='' other='s'}| a la parte superior de la pila de\
     \ robo. Tiene{Value1:plural one='' other='n'} |Reponer|, |Exilio|, |Etéreo|, y\
     \ se puede gastar maná de cualquier color para pagar su{Value1:plural one=' coste'\
-    \ other='s costes'}.\nAl comienzo del turno de {PlayerName}, se repite este efecto."
+    \ other='s costes'}.\nAl comienzo de cada turno de {PlayerName}, se repite este\
+    \ efecto."
   DetailText: "Estas |e:cartas altenativas| ignoran el maná total, el color del maná\
     \ y la restricción del personaje.\n{SelfName} no puede ser producido por este\
     \ efecto.\nLas cartas con coste X no pueden ser producidas por este efecto."
@@ -3390,8 +3392,8 @@ DreamExpress:
   FlavorText: Atardecer, palmeras y velocidad por el ciberespacio.
 JinziDoppelganger:
   Name: Doppelgangers del Siglo
-  Description: La primera carta jugada durante el turno de {PlayerName} se juega dos
-    veces.
+  Description: La primera carta jugada durante cada turno de {PlayerName} se juega
+    dos veces.
 HuiyeSuperExtraTurn:
   DetailText: "El turno adicional de {SelfName} ocurre antes de cualquier otro turno\
     \ adicional.\nDespués de jugar con {SelfName}, puedes pasar el cursor sobre el\
@@ -3571,7 +3573,7 @@ KoishiDance:
     Realiza un |Ataque Continuo|."
 KoishiUltimate:
   Name: Mi Verdadero Yo
-  Description: "Juega la carta superior de la pila de robo.\nAl comienzo del turno\
+  Description: "Juega la carta superior de la pila de robo.\nAl comienzo de cada turno\
     \ de {PlayerName}, juega la carta superior de la pila de robo."
   DetailText: 'v1.6.1: El efecto de jugar automáticamente ahora se activa antes de
     la fase de robo.'
