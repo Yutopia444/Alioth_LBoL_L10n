@@ -18,6 +18,7 @@ Weak:
   Description: Angriffe von {OwnerName} verursachen {Value}% weniger Schaden {Duration:plural
     one='bis zum Ende des Zuges' other='für die nächsten % Züge'}.
   Brief: Angriffe von {OwnerName} verursachen {Value}% weniger Schaden.
+  Name: Geschwächt
 Vulnerable:
   Name: Verwundbar
   Description: "{OwnerName} erhält {Value}% mehr Schaden durch Angriffe {Duration:plural\
@@ -54,6 +55,7 @@ AbsorbPower:
   Description: '{OwnerName} erhält am Ende des Zuges {Level} |Feuerkraft|.'
 DeathPoison:
   Description: Wird {OwnerName} besiegt erhält {PlayerName} {Level} |Gift|.
+  Name: Todesgift
 AbsorbSpirit:
   Description: '{OwnerName} erhält am Ende des Zuges {Level} |Geist|.'
   Name: Blaue Kugel
@@ -131,14 +133,18 @@ PotionBaseDamageSe:
 PoisonPotionSe:
   Name: Hexenkessel
 TurnStartDontLoseBlock:
-  Description: "{OwnerName} verliert kein |Block| zu Begin {Level:plural one='des\
+  Description: "{OwnerName} verliert kein |Block| zu Beginn {Level:plural one='des\
     \ nächsten Zuges' other='der nächsten % Züge'}."
+  Name: Block Beibehalten
+  Brief: '{OwnerName} verliert für eine gewisse Anzahl an Zügen kein |Block| zu Beginn
+    des Zuges.'
 WindGirl:
   Name: Gabe des Windgottes
 Amulet:
   Name: Amulett
-  Description: Anulliert {Level:plural one='den nächsten negativen Effekt' other='die
+  Description: Annulliert {Level:plural one='den nächsten negativen Effekt' other='die
     nächsten % negativen Effekte'}.
+  Brief: Annulliert eingehende negative Effekte.
 Electric:
   Name: Statische Aufladung
   Description: Nach einem feindlichen Angriff, verursache {Level} Schaden an den Angreifer.
@@ -175,6 +181,10 @@ DroneBlock:
   Name: Defensive Matrix
 Drowning:
   Name: Ertrinken
+  ExtraDescription: "{OwnerName} erhält {Level} Schaden am Ende des Zuges.\nBesiege\
+    \ das Ertrunkene Mädchen um diesen Effekt zu entfernen."
+  Description: '{OwnerName} erhält {Level} Schaden am Ende des Zuges.'
+  Brief: '{OwnerName} erhält Schaden am Ende des Zuges.'
 FoxCharm:
   Description: "Es {Limit:plural one='kann' other='können'} nicht mehr als {Limit}\
     \ Karte{Limit:plural one='' other='n'} pro Zug gespielt werden.\n{Count} Karte{Count:plural\
@@ -214,10 +224,12 @@ TempFirepowerNegative:
     \ den Schaden von Angriffen."
   Description: "Bis zum Ende des Zuges, verliere {Level} |Feuerkraft|.\n|Feuerkraft|\
     \ erhöht den Schaden von Angriffen."
+  Name: Temporär Feuerkraft Senken
 FirepowerNegative:
   Description: "Verliere {Level} |Feuerkraft|.\n|Feuerkraft| erhöht den Schaden von\
     \ Angriffen."
   Brief: "|Feuerkraft| wurde gesenkt.\n|Feuerkraft| erhöht den Schaden von Angriffen."
+  Name: Feuerkraft Senken
 TempSpirit:
   Name: Temporärer Geist
   Brief: "|Geist| wurde erhöht bis zum Ende des Zuges.\n|Geist| erhöht die Menge an\
@@ -235,11 +247,13 @@ TempSpiritNegative:
     \ die Menge an |Block| und |Barriere| durch Karten."
   Brief: "|Geist| wurde gesenkt bis zum Ende des Zuges.\n|Geist| erhöht die Menge\
     \ an |Block| und |Barriere| durch Karten."
+  Name: Temporär Geist Senken
 SpiritNegative:
   Description: "Verliere {Level} |Geist|.\n|Geist| erhöht die Menge an |Block| und\
     \ |Barriere| durch Karten."
   Brief: "|Geist| wurde gesenkt.\n|Geist| erhöht die Menge an |Block| und |Barriere|\
     \ durch Karten."
+  Name: Geist Senken
 TempControl:
   Name: Temporäre Kontrolle
   Description: "Bis zum Ende des Zuges, erhalte {Level} |Kontrolle|.\n|Kontrolle|\
@@ -256,10 +270,12 @@ TempControlNegative:
     \ verbessert die Effekte von |Puppen|."
   Brief: "|Kontrolle| wurde gesenkt bis zum Ende des Zuges.\n|Kontrolle| verbessert\
     \ die Effekte von |Puppen|."
+  Name: Temporär Kontrolle Senken
 ControlNegative:
   Description: "Verliere {Level} |Kontrolle|.\n|Kontrolle| verbessert die Effekte\
     \ von |Puppen|."
   Brief: "|Kontrolle| wurde gesenkt.\n|Kontrolle| verbessert die Effekte von |Puppen|."
+  Name: Kontrolle Senken
 Graze:
   Name: Ausweichen
   Description: "{OwnerName} erhält durch {Level:plural one='den nächsten Angriff'\
@@ -306,3 +322,12 @@ KoishiUnknown:
   Name: Unberechenbar
 ScarletDestiny:
   Name: Scharlachrotes Schicksal
+LimitedDamage:
+  Brief: '{OwnerName} kann pro Zug nur eine gewisse Menge an Schaden erleiden.'
+  Description: '{OwnerName} kann nur bis zu {Limit} Schaden pro Zug erleiden. Verbleibender
+    Schaden: {Count}.'
+AmuletForCard:
+  Name: Schutzfeld
+  Description: Annulliert das Hinzufügen der nächsten {Level:plural one='Statuskarte'
+    other='% Statuskarten'} und sendet die Karte {Level:plural one='' other='n'} ins
+    |Exil|.
