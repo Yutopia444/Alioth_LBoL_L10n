@@ -1207,9 +1207,10 @@ PerfectServant:
   Name: Servante Parfaite
   Description: "|Pour chaque <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\"> dépensé| : Lorsque {PlayerName} débute son prochain tour, chaque\
-    \ carte dans la main |coûte temporairement| 1 mana aléatoire de moins.\n|Pour\
-    \ chaque <sprite=\"ManaSprite\" name=\"U\"> dépensé| : Lorsque {PlayerName} débute\
-    \ son prochain tour, piochez 1 carte en plus et gagnez {Mana}."
+    \ carte dans la main |coûte temporairement| {Value1} mana aléatoire{Value1:plural\
+    \ one='' other='s'} de moins.\n|Pour chaque <sprite=\"ManaSprite\" name=\"U\"\
+    > dépensé| : Lorsque {PlayerName} débute son prochain tour, piochez {Value2} carte{Value2:plural\
+    \ one='' other='s'} en plus et gagnez {Mana}."
 BackToFuture:
   Name: Retour vers le Futur
   Description: "Échangez les piles de pioche et de défausse.\nPiochez {Value1:plural\
@@ -1889,6 +1890,8 @@ KongMana:
   Name: Fusion
   Description: "|Exilez| une carte choisie dans votre main. Gagnez un mana égal au\
     \ coût de cette carte.\nAjoutez un |Arc-en-ciel| à votre main."
+  DetailText: Les cartes |Malheur injouables| et de Statut ont des coûts de mana cachés
+    basés sur leur rareté.
 Shengyan:
   Name: Banquet
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\n|Extermination|\
