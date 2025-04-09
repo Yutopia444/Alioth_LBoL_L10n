@@ -896,8 +896,8 @@ PerfectServant:
   Description: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
     \ name=\"W\">|: Na początku następnej tury {PlayerName:g} wszystkie karty w ręce\
     \ |tymczasowo kosztują| o <sprite=\"ManaSprite\" name=\"1\"> mniej.\n|Za każde\
-    \ wydane <sprite=\"ManaSprite\" name=\"U\">|: Na początku następnej tury {PlayerName:g}\
-    \ dobierz dodatkową kartę i zyskaj {Mana}."
+    \ wydane <sprite=\"ManaSprite\" name=\"U\">|: Na początku następnej tury {PlayerName:g},\
+    \ zyskaj {Mana} oraz dobierz dodatkową kartę."
 SakuyaKiller:
   Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany przeciwnik dodaj
     {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='%
@@ -1628,6 +1628,8 @@ KongMana:
   Name: Stopnienie Rdzenia
   Description: "|Wygnaj| kartę w ręce. Zyskaj manę równą kosztu tamtej karty.\nDodaj\
     \ |Tęczę| do ręki."
+  DetailText: Karty |Nieszczęścia| oraz Statusu, które są |Niegrywalne|, posiadają
+    ukryty koszt many zależny od ich rzadkości.
 ModuoluoFire:
   Name: Ogień Eny
   Description: Gdy zostanie wydana <sprite="ManaSprite" name="P">, zadaj {Value1:plural
@@ -1938,9 +1940,9 @@ Payment:
     wskazówki o incydencie.'
 Nightmare:
   Name: Koszmar
-  NonbattleDescription: Gdy całkowita ilość {Selfname:v} w obiegu wyniesie {Value1},wygnaj
-    je, po czym {PlayerName} przegrywa grę.
-  Description: "Gdy całkowita ilość {Selfname:g} w obiegu wyniesie {Value1},wygnaj\
+  NonbattleDescription: Gdy całkowita ilość {SelfName:v} w obiegu wyniesie {Value1},
+    |Wygnaj| je, po czym {PlayerName} przegrywa grę.
+  Description: "Gdy całkowita ilość {SelfName:g} w obiegu wyniesie {Value1}, wygnaj\
     \ je, po czym {PlayerName} przegrywa grę.\nAktualnie jest razem {NightmareCount}."
   FlavorText: Nie pamiętam żadnych szczegółów po obudzeniu.
 Jealousy:
