@@ -69,11 +69,15 @@ Fengyin:
     \ die nächsten % Züge'} keine Angriffskarten spielen."
 PrivateSquare:
   Name: Silbersperre
-  Description: "Jedes Mal, wenn {Limit} Karten gespielt werden verursacht {OwnerName}\
-    \ {Level} Schaden an {PlayerName}.\n{Count} Karte{Count:plural one='' other='n'}\
-    \ übrig."
+  Description: "Jedes Mal, wenn {Limit} {Limit:plural one='Karte gespielt wird' other='Karten\
+    \ gespielt werden'}, verursacht {OwnerName} {Level} Schaden an {PlayerName}.\n\
+    Verbleibende Karten: {Count}."
+  Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten gespielt werden, verursacht
+    <color=#B7F0FF>Sakuya Izayoi</color> Angriffsschaden an {PlayerName}.
 EnemyLarva:
   Name: Larvas Schwingen
+  Description: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, erhält {PlayerName}
+    {Level} |Gift|.
 EnemyDayaojing:
   Description: '{OwnerName} erhält {Level} Leben am Ende des Zuges.'
 EnemyLily:
@@ -93,12 +97,15 @@ RockHard:
   Description: '{OwnerName} erhält {Level} weniger Schaden durch ungeblockte Angriffe.'
 LouguanJianSe:
   Name: Roukanken
+  Description: Nachdem {OwnerName} Angriffsschaden zugefügt hat, erhält das Ziel {Level}
+    |Anvisieren|.
 KokoroXi:
   Name: Freude
 KokoroDarkPower:
   Name: Ansammlung Dunkler Emotionen
 FlatPeach:
   Name: Himmlischer Pfirsich
+  Description: Jedes Mal, wenn {OwnerName} Schaden erleidet, erhält sie {Level} Leben.
 EnemyEnergy:
   Name: Energie
 YuyukoDeath:
@@ -110,6 +117,9 @@ LimaoDisguiser:
   Description: Dieser Charakter trägt eine Verkleidung.
 SijiZui:
   Name: Urteil über Gut und Schlecht
+  Description: 'Schwere von {PlayerName}s Sünden: Gering.'
+  ExtraDescription2: 'Schwere von {PlayerName}s Sünden: Schwerwiegend.'
+  ExtraDescription: 'Schwere von {PlayerName}s Sünden: Durchschnittlich.'
 MirrorImage:
   Description: Ein Abbild von {OwnerName}.
   Name: Spiegelbild
@@ -164,31 +174,41 @@ Reflect:
     diesen Effekt.
 ManaFreezed:
   Name: Manafrost
+  Description: Die erste Karte in jedem Zug kostet {Mana} mehr.
+  Brief: Die erste Karte in jedem Zug kostet mehr Mana.
 NextAttackUp:
   Brief: Die nächste Angriffskarte verursacht mehr Schaden.
   Description: Die nächste Angriffskarte verursacht {Level} mehr Schaden.
+  Name: Angriffssteigerung
 NextTurnLoseHp:
   Brief: '{OwnerName} verliert zu Beginn des nächsten Zuges Leben.'
   Description: '{OwnerName} verliert zu Beginn des nächsten Zuges {Level} Leben.'
+  Name: Zukünftiger Lebensverlust
 NextTurnGainShield:
   Description: '{OwnerName} erhält zu Beginn des nächsten Zuges {Level} |Barriere|.'
   Brief: '{OwnerName} erhält zu Beginn des nächsten Zuges |Barriere|.'
+  Name: Zukünftige Barriere
 GuangxueMicai:
   Name: Optische Tarnung
-  Description: "{OwnerName} erhält nur halben Schaden {Duration:plural one='bis zum\
-    \ Ende des Zuges' other='für die nächsten % Züge'}."
+  Description: "{OwnerName} erleidet nur halben Schaden durch Angriffe {Duration:plural\
+    \ one='bis zum Ende des Zuges' other='für die nächsten % Züge'}."
+  Brief: '{OwnerName} erleidet für eine gewisse Anzahl an Zügen nur halben Schaden
+    durch Angriffe.'
 DroneBlock:
   Name: Defensive Matrix
+  Description: '{OwnerName} erhält am Ende des Zuges {Level} |Block|.'
+  Brief: '{OwnerName} erhält am Ende des Zuges |Block|.'
 Drowning:
   Name: Ertrinken
-  ExtraDescription: "{OwnerName} erhält {Level} Schaden am Ende des Zuges.\nBesiege\
+  ExtraDescription: "{OwnerName} erhält am Ende des Zuges {Level} Schaden.\nBesiege\
     \ das Ertrunkene Mädchen um diesen Effekt zu entfernen."
-  Description: '{OwnerName} erhält {Level} Schaden am Ende des Zuges.'
-  Brief: '{OwnerName} erhält Schaden am Ende des Zuges.'
+  Description: '{OwnerName} erhält am Ende des Zuges {Level} Schaden.'
+  Brief: '{OwnerName} erhält am Ende des Zuges Schaden.'
 FoxCharm:
   Description: "Es {Limit:plural one='kann' other='können'} nicht mehr als {Limit}\
-    \ Karte{Limit:plural one='' other='n'} pro Zug gespielt werden.\n{Count} Karte{Count:plural\
-    \ one='' other='n'} übrig.\nBesiege |Fuchs-Youkai| um diesen Effekt zu entfernen."
+    \ Karte{Limit:plural one='' other='n'} pro Zug gespielt werden.\nVerbleibende\
+    \ Karten: {Count}.\nBesiege |Fuchs-Youkai| um diesen Effekt zu entfernen."
+  Name: Bann des Fuchses
 FirepowerIsJustice:
   Name: Macht geht vor Recht!
   Description: '{OwnerName} kann niemals weniger |Feuerkraft| haben als {PlayerName}.'
@@ -295,9 +315,12 @@ CantDrawThisTurn:
   Description: Es können bis zum Ende des Zuges keine Karten gezogen werden.
 TimeIsLimited:
   Name: Zeitlimit
+  Brief: Karten kosten mehr Mana bis zum nächsten feindlichen Zug.
+  Description: Karten kosten {Mana} mehr bis zum nächsten feindlichen Zug.
 NextTurnGainGraze:
   Description: '{OwnerName} erhält zu Beginn des nächsten Zuges {Level} |Ausweichen|.'
   Brief: '{OwnerName} erhält zu Beginn des nächsten Zuges |Ausweichen|.'
+  Name: Zukünftiges Ausweichen
 InterviewDone:
   Description: "{OwnerName} konnte über den Vorfall die Wahrheit ans Licht bringen!\n\
     Sie wird eine Spezialausgabe der Bunbunmaru Zeitung veröffentlichen."
@@ -313,6 +336,7 @@ EnemyVulnerable:
 NextTurnGainBlock:
   Brief: '{OwnerName} erhält zu Beginn des nächsten Zuges |Block|.'
   Description: '{OwnerName} erhält zu Beginn des nächsten Zuges {Level} |Block|.'
+  Name: Zukünftiges Block
 Servant:
   Name: Beschwörung
   Description: "Beschworene Feinde werden sofort besiegt, falls sie die letzten verbleibenden\
@@ -402,3 +426,62 @@ CommonFireSe:
     |Temporäre Feuerkraft|.
   Brief: Nachdem eine gewöhnliche Karte gespielt wurde erhält {OwnerName} |Temporäre
     Feuerkraft|.
+DeathExplodeCount:
+  Name: Rachekugel
+DeathExplodeNotCount:
+  Description: "Wenn {OwnerName} besiegt wird, füge {PlayerName} {Level} Schaden zu.\n\
+    Füge die doppelte Menge an Schaden zu, wenn sich {OwnerName} stattdessen sprengt."
+  Name: Rachekugel
+SuwakoHex:
+  Description: Zu Beginn deines Zuges wird eine zufällige Karte in deiner Hand |Verhext|
+    und dadurch nutzlos.
+  Name: Hex
+Curiosity:
+  Description: Jedes Mal, wenn {PlayerName} eine |Talentkarte| spielt, erhält {OwnerName}
+    {Level} |Feuerkraft|.
+MadokaBowSe:
+  Description: Erhalte am Ende des Zuges {Level} zufällige Statuskarten, mische die
+    Hälfte in den Ziehstapel und lege den Rest in den Ablagestapel.
+QiannianShenqiSe:
+  Name: Pyramidenförmiges Puzzle
+  Description: "{PlayerName} kann nicht mehr als {Limit} Karten pro Zug ziehen.\n\
+    |d:Verbleibende Karten: {Count}.|"
+JiangshenSe:
+  Description: Jedes Mal, wenn während des Kampfes Karten hinzugefügt werden, |werte
+    sie auf|.
+FreeFlySe:
+  Description: Zu Beginn deines Zuges, erhalte {Level} {Mana}.
+  Brief: Zu Beginn deines Zuges, erhalte {Level} {Mana}.
+DanceAroundLakeSe:
+  Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe Karten.
+  Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe {Level} Karte{Level:plural
+    one='' other='n'}.
+EvilTuiZhiSe:
+  Brief: Die nächsten Angriffskarten in diesem Zug aktivieren sich zweimal.
+  Description: Die {Level:plural one='nächste Angriffskarte' other='nächsten % Angriffskarten'}
+    in diesem Zug aktivier{Level:plural one='t' other='en'} sich zweimal.
+BossAct:
+  Description: Nachdem {OwnerName} {Count} Schaden erlitten hat, führe eine Aktion
+    aus, ohne den Zug von {PlayerName} zu beenden.
+  Brief: Nachdem {OwnerName} eine gewisse Menge an Schaden erlitten hat, führe eine
+    Aktion aus, ohne den Zug von {PlayerName} zu beenden.
+DoubleLianhuadieSe:
+  Brief: Jedes Mal, wenn {PlayerName} |Block| oder |Barriere| erhält, verursache an
+    einem zufälligen Feind Schaden.
+  Description: Jedes Mal, wenn {PlayerName} |Block| oder |Barriere| erhält, verursache
+    an einem zufälligen Feind {Level} Schaden.
+SuperExtraTurn:
+  Name: Ende einer unvergänglichen Nacht
+LockedOn:
+  Name: Anvisieren
+  Description: "{OwnerName} erhält {Level} mehr Schaden durch Angriffe.\nVerliere\
+    \ 1 |Anvisieren| zu Beginn des Zuges."
+  Brief: "{OwnerName} erhält mehr Schaden durch Angriffe.\nVerliere 1 |Anvisieren|\
+    \ zu Beginn des Zuges."
+YinyangXueyinSe:
+  Brief: Nachdem eine |Yin-Yang Kugel| gespielt wurde, erhalte |Temporäre Feuerkraft|
+    und |Temporärer Geist|.
+  Description: Nachdem eine |Yin-Yang Kugel| gespielt wurde, erhalte {Level} |Temporäre
+    Feuerkraft| und |Temporärer Geist|.
+YouxiangMoonSe:
+  Description: Zu Beginn deines Zuges, erhalte {Level} {Mana}.
