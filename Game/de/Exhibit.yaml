@@ -41,6 +41,7 @@ ShanshuoBishou:
   FlavorText: 'Originaler Preis: 2150 <sprite="Point" name="Gold">.'
   Description: Zu Beginn deines ersten Zuges, werfe eine beliebige Anzahl an Karten
     ab und ziehe die gleiche Menge nach.
+  Name: Blink Dagger
 ZhanshuDaoliqi:
   Description: Während des Kampfes kosten Fähigkeitskarten {Mana} weniger.
 Yashemao:
@@ -58,6 +59,8 @@ FeixiangJian:
   Description: Zu Beginn deines Zuges, füge allen Feinden {Value1} Schaden zu.
 Yaoshi:
   Name: Schlüsselstein
+  Description: Wenn {PlayerName} zum ersten Mal in einem Kampf Schaden erleidet, erhalte
+    {Mana}.
 Heilianhua:
   Name: Schwarzer Lotus
   Description: Zu Beginn des Kampfes erhält {PlayerName} {Mana}.
@@ -65,10 +68,15 @@ Mengriji:
   Name: Traumtagebuch
 Bianhua:
   Name: Spinnenlilie
+  Description: Jedes Mal, wenn ein Feind besiegt wurde, erhalte {Mana}.
 Xiangrikui:
   Name: Sonnenblume
+  Description: Alle {Value1} Züge, zu Beginn der Züge von {Value2} bis {Value3}, erhalte
+    {Mana}.
 LinghunBaoshi:
   Name: Seelenstein
+  Description: Zu Beginn deines ersten Zuges, nachdem {PlayerName} eine Spalte besucht
+    hat, erhalte {Mana}.
 ZheyangSan:
   Name: Regenschirm
   Description: Zu Beginn deines zweiten Zuges erhält {PlayerName} {Value1} |Block|
@@ -214,7 +222,7 @@ TaiguGouyu:
 KongbaiKapai:
   Name: Blanke Karte
 GaodangShoubao:
-  Description: Erlaubt es, beide |Ausstellungsstücke| von Reisen zu erhalten.
+  Description: Erlaubt es {PlayerName}, beide |Ausstellungsstücke| von Reisen zu erhalten.
   Name: Hochwertige Handtasche
 WanglingTideng:
   Name: Seelenfakel
@@ -248,22 +256,33 @@ Taozi:
 XijianSan:
   FlavorText: In diesem Spiel ist es nicht möglich, die Grenze des Bildschirms zu
     überqueren.
+  Description: Zu Beginn deines dritten Zuges erhält {PlayerName} {Value1} |Block|
+    und {Mana}.
+  Name: Schirm der Spalten
 PenzaiYoutan:
   Description: Überschüssiges Mana geht am Ende des Zuges nicht verloren.
   FlavorText: Tatsächlich wäre es nicht schlimm, wenn du den verlorenen Zweig der
     Legenden nicht wiederfinden kannst.
 Yuhangfu:
   Name: Raumanzug
+  Description: Jedes Mal, wenn {PlayerName} im Kampf Leben verlieren würde, reduziere
+    diesen Wert um {Value1}.
 Xunlongchi:
   FlavorText: Der vorherige Besitzer entschloss sich, auf ein echtes Abenteuer zu
     gehen und ließ sie zurück.
   Name: Wünschelrute
 GanzhuYao:
   FlavorText: Was mich umbringt, macht mich stärker.
+  Description: "Wenn {PlayerName} besiegt werden würde, heile stattdessen ihr gesamtes\
+    \ Leben. Dieser Effekt kann nur einmal aktiviert werden.\nNachdem dieses |Ausstellungsstück|\
+    \ atktiviert wurde, reduziere das maximale Leben von {PlayerName} um {Value1}%\
+    \ und erhalte zu Beginn des Kampfes {Value2} |Feuerkraft|."
 Zijing:
   Name: Violetter Spiegel
 DiyuChepiao:
   Name: Ticket zur Hölle
+  Description: Jedes Mal, wenn {PlayerName} Leben verliert, ziehe {Value1:plural one='%
+    Karte' other='% Karten'}.
 Modaoshu:
   Name: Magischer Ratgeber
   FlavorText: Es enthält ein tiefes Verständnis für die Magie.
@@ -443,3 +462,19 @@ HuashanBaiyaosheng:
   Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines ersten Zuges,\
     \ erhalte {Mana}.\nZu Beginn deines zweiten Zuges, erhalte {Value1} Leben.\nZu\
     \ Beginn deines dritten Zuges, erhalte {Value2} |Temporäre Feuerkraft|."
+Zuoshan:
+  Name: Linker Fächer
+  Description: Füge eine |Kopie| der ersten gespielten Karte deiner Hand hinzu. Sie
+    |kostet temporär| {Mana} und hat |Exil|.
+HuanxiangxiangYuanqi:
+  Description: Jedes Mal, wenn eine |Talentkarte| gespielt wird, erhält {PlayerName}
+    {Value1} Leben.
+YuekuangQiang:
+  Description: Jedes Mal, wenn eine Karte von deiner Hand abgeworfen wird, füge einem
+    zufälligen Feind {Value1} Schaden zu.
+  FlavorText: In meinem letzten Spiel war das ein Automatikgewehr.
+PortalGun:
+  Description: Takanes Laden ist {Value1}% günstiger. Gekaufte Gegenstände in Takanes
+    Laden werden aufgestockt.
+Baota:
+  Name: Juwelen-Pagode des Bishamonten
