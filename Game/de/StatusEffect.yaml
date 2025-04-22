@@ -80,14 +80,21 @@ EnemyLarva:
     {Level} |Gift|.
 EnemyDayaojing:
   Description: 'Am Ende des Zuges erhält {OwnerName} {Level} Leben.'
+  Name: Daiyouseis Unterstützung
 EnemyLily:
   Description: Die Aktionen von {OwnerName} werden verstärkt.
+  Name: Ankündigung von Lily White
 ShenlingGold:
   Name: Geschenk des Reichtums
+  Description: Wenn {OwnerName} besiegt wird, erhält {PlayerName} {Level} <sprite="Point"
+    name="Gold">.
 ShenlingHp:
   Name: Geschenk der Eleganz
+  Description: Wenn {OwnerName} besiegt wird, erhält {PlayerName} {Level} maximales
+    Leben.
 Appliance:
   Name: Haushaltsgerät
+  Description: '{OwnerName} ist immun gegen |Geschwächt| und |Verwundbar|.'
 Emi:
   Description: "{OwnerName} kann {Duration:plural one='bis zum Ende des Zuges' other='für\
     \ die nächsten % Züge'} keine Aktionen durchführen."
@@ -103,11 +110,15 @@ KokoroXi:
   Name: Freude
 KokoroDarkPower:
   Name: Ansammlung Dunkler Emotionen
+  Description: "{OwnerName} wird zusätzlichen Schaden mit ihrer nächsten |Zauberkarte|\
+    \ verursachen.\nErhöht sich, wenn {PlayerName} einen negativen Effekt erhält."
 FlatPeach:
   Name: Himmlischer Pfirsich
   Description: Jedes Mal, wenn {OwnerName} Schaden erleidet, erhält sie {Level} Leben.
 EnemyEnergy:
   Name: Energie
+  Description: '{OwnerName} erhält für jeden Schaden die gleiche Menge an <sprite="Point"
+    name="Power">. Wird verwendet, um |Zauberkarten| zu verwenden.'
 YuyukoDeath:
   Description: "{OwnerName} verliert {Level} Leben am Ende des Zuges.\n{OwnerName}\
     \ kann kein Leben erhalten."
@@ -125,6 +136,7 @@ MirrorImage:
   Name: Spiegelbild
 SingleJiandaoSe:
   Name: Riesige Scherenklinge
+  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, erleide {Level} Schaden.
 ReimuFestivalSe:
   Brief: 'Zu Beginn des Zuges erhält {PlayerName} |Temporäre Feuerkraft|.'
   Description: 'Zu Beginn des Zuges erhält {PlayerName} {Level} |Temporäre Feuerkraft|.'
@@ -135,9 +147,13 @@ ReimuShrineSe:
 ReimuFreeAttackSe:
   Brief: Die nächsten Angriffskarten kosten {Mana}.
   Name: Flüchtige Fantasie
+  Description: Die {Level:plural one='nächste Angriffskarte' other='nächsten % Angriffskarten'}
+    kosten {Mana}.
 SolarSystemSe:
   Name: Orrerys Sonne
-  Brief: '{PlayerName} erhält |Ladung| zu Beginn des Zuges.'
+  Brief: 'Zu Beginn deines Zuges erhält {PlayerName} |Aufladungen|.'
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |{Level:plural one='Aufladung'
+    other='Aufladungen'}|.
 PotionBaseDamageSe:
   Description: '|Instabile Tränke| verursachen {Level} mehr Schaden.'
   Name: Explosive Komponenten
@@ -326,8 +342,10 @@ NextTurnGainGraze:
 InterviewDone:
   Description: "{OwnerName} konnte die Wahrheit über den Vorfall ans Licht bringen!\n\
     Sie wird eine Spezialausgabe der Bunbunmaru Zeitung veröffentlichen."
+  Name: Interview Abgeschlossen
 DreamServant:
   Description: '{OwnerName} kann keinen Schaden erleiden.'
+  Name: Traumbewohner
 AutoQumobangSe:
   Description: "Zu Beginn des Zuges, ziehe {Level} Karte{Level:plural one='' other='n'}\
     \ mehr.\nVerbleibende Züge: {Count}"
@@ -351,6 +369,8 @@ LoveGirlDamageReduce:
   Name: Anhaltende Reue
 KoishiUnknown:
   Name: Unberechenbar
+  Description: "Die Intentionen von {OwnerName} sind teilweise unklar.\nIntentionen\
+    \ werden durch weitere Stufen stärker versteckt."
 ScarletDestiny:
   Name: Scharlachrotes Schicksal
 LimitedDamage:
@@ -364,6 +384,8 @@ AmuletForCard:
     |Exil|.
 JunkoLily:
   Name: Mörderische Lilien
+  Description: Jedes Mal, wenn |Läuterndes Licht| aktiviert wird, verliert {PlayerName}
+    {Level} Leben.
 UpgradePotionSe:
   Brief: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabile Tränke|
     im Zieh- und Ablagestapel.
@@ -449,7 +471,7 @@ Curiosity:
     {Level} |Feuerkraft|.
 MadokaBowSe:
   Description: Erhalte am Ende des Zuges {Level} zufällige Statuskarten, mische die
-    Hälfte in den Ziehstapel und lege den Rest in den Ablagestapel.
+    Hälfte in deinen Ziehstapel und lege den Rest in deinen Ablagestapel.
 QiannianShenqiSe:
   Name: Pyramidenförmiges Puzzle
   Description: "{PlayerName} kann nicht mehr als {Limit} Karten pro Zug ziehen.\n\
@@ -460,10 +482,12 @@ JiangshenSe:
 FreeFlySe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
   Brief: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
+  Name: Freiflug
 DanceAroundLakeSe:
   Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe Karten.
   Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe {Level} Karte{Level:plural
     one='' other='n'}.
+  Name: Tanz am Seeufer
 EvilTuiZhiSe:
   Brief: Die nächsten Angriffskarten in diesem Zug aktivieren sich zweimal.
   Description: Die {Level:plural one='nächste Angriffskarte' other='nächsten % Angriffskarten'}
@@ -491,6 +515,7 @@ YinyangXueyinSe:
     Feuerkraft| und |Temporärer Geist|.
   Description: Nachdem eine |Yin-Yang Kugel| gespielt wurde erhält {PlayerName} {Level}
     |Temporäre Feuerkraft| und |Temporärer Geist|.
+  Name: Yin-Yang Rune
 YouxiangMoonSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
 PerfectServantWSe:
@@ -561,11 +586,13 @@ ReverseJiejieSe:
 PowerByDefense:
   Description: Jedes Mal, wenn eine Verteidigungskarte gespielt wird, erhält {OwnerName}
     {Level} |Feuerkraft|.
+  Name: Unbeugsamer Schild
 EnemyTuanzi:
   Name: Leckere Dango
   Description: Am Ende des Zuges erhält {OwnerName} {Level} Leben.
 DoremyLevel:
   Name: Traumstufe
+  Description: Je tiefer der Traum, desto stärker werden die Attacken von {OwnerName}.
 DreamMaster:
   Name: Erschaffer der Träume
   Description: '{OwnerName} ist die Herrscherin der Träume.'
@@ -582,6 +609,7 @@ HuanxiangBlockSe:
   Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName} |Block|.
   Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName}
     {Level} |Block|.
+  Name: Grenze der Fantasie
 DreamExpressSe:
   Name: Traum-Express
 MeihongPowerSe:
@@ -613,3 +641,78 @@ YouxiangWakeSe:
 LoseSpiritSe:
   Description: Zu Beginn deines Zuges verliert {PlayerName} {Level} |Geist|.
   Brief: Zu Beginn deines Zuges verliert {PlayerName} |Geist|.
+LunaticTorch:
+  Name: Fackel des Wahnsinns
+  Description: "Die Fackel von {OwnerName} scheint in einem seltsamen Licht. Alle\
+    \ Feinde werden vom Wahnsinn getrieben.\n{PlayerName} erhält {Mana} zu Beginn\
+    \ des Zuges."
+RinAura:
+  Name: Loderndes Feuer
+EnemyMaid:
+  Name: Kasumis Aufräumarbeiten
+  Description: Füge am Ende des Zuges {Level} Schaden an {PlayerName} zu.
+TurnStartPurify:
+  Name: Zukünftiges Läutern
+RockHardAura:
+  Name: Schutz des Schlüsselsteins
+  Description: '{OwnerName} wird durch einen Schlüsselstein geschützt, Angriffsschaden
+    an Leben werden um {Level} reduziert.'
+KokoroRenzhen:
+  Name: Ernst
+EnemyEnergyNegative:
+  Description: "{OwnerName} hat <sprite=\"Point\" name=\"Power\"> verwendet.\nDieser\
+    \ Status wird nicht im Spiel angezeigt."
+  Name: Energieaufwand
+ShendengSe:
+  Name: Teekanne mit langem Ausguss
+  Description: Nachdem alle Feinde ihren Zug beendet haben, erhält {PlayerName} zufällig
+    {Level} |Geschwächt|, |Fragil| oder |Verwundbar|.
+InfinityGemsSe:
+  Name: Juwelenbesetzter Handschuh
+SakuraWandSe:
+  Name: Geflügelter Schlüssel
+  Description: '{OwnerName} kann zwei Mal so häufig angreifen.'
+BoliDajiejieSe:
+  Name: Große Hakurei Barriere
+MomentPowerSe:
+  Description: Jedes Mal, wenn {OwnerName} |Temporäre Feuerkraft| oder |Temporärer
+    Geist| erhält, konvertiere jeweils {Level} davon in |Feuerkraft| oder |Geist|
+    um.
+  Brief: Jedes Mal, wenn {OwnerName} |Temporäre Feuerkraft| oder |Temporärer Geist|
+    erhält, konvertiere jeweils einen Teil davon in |Feuerkraft| oder |Geist| um.
+SenluoJiejieSe:
+  Brief: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
+  Description: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
+BurstUpgrade:
+  Description: Erhöht den Schadensmultiplikator von |Durchbruch|.
+  Brief: Erhöht den Schadensmultiplikator von |Durchbruch|.
+BurstDrawSe:
+  Description: Wenn |Durchbruch| aktiviert wird, ziehe {Level:plural one='% Karte'
+    other='% Karten'}.
+  Brief: Wenn |Durchbruch| aktiviert wird, ziehe Karten.
+  Name: Blitzduel
+ScryBlockSe:
+  Name: Vorsatz
+Grace:
+  Description: '|Göttliche Gunst| erhöht sowohl |Feuerkraft| als auch |Geist| und
+    wird entfernt, sobald eine Karte gespielt oder die |Zauberkarte| verwendet wird.'
+  Brief: '|Göttliche Gunst| erhöht sowohl |Feuerkraft| als auch |Geist| und wird entfernt,
+    sobald eine Karte gespielt oder die |Zauberkarte| verwendet wird.'
+  Name: Göttliche Gunst
+ReimuGraceSe:
+  Brief: Zu Beginn deines Zuges erhält {PlayerName} |Göttliche Gunst|.
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Göttliche Gunst|.
+ReimuSilenceSe:
+  Name: '"Fantasy-Siegel -Stille-"'
+SihunYuSe:
+  Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde an.
+JunkoPurify:
+  Name: Läuterndes Licht
+  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, |Purify| {Level}.
+LightingModule:
+  Name: Blitzmodul
+AccuracyModule:
+  Description: Die Angriffe von {OwnerName} sind |Präzise|.
+DragonBallSe:
+  Description: 'Zu Beginn des Zuges, erfülle den |Wunsch| von {OwnerName}: {PlayerName}
+    verliert das Spiel.'
