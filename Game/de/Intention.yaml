@@ -1,7 +1,7 @@
 AttackIntention:
   Name: Angriff
   Description: '{OwnerName} wird |Angreifen| und {Damage} Schaden verursachen.'
-  MultiDamageDescription: '{OwnerName} wird |Angreifen| und {Times} mal {Damage} Schaden
+  MultiDamageDescription: '{OwnerName} wird |Angreifen| und {Times} Mal {Damage} Schaden
     verursachen.'
   AccurateDescription: '{OwnerName} wird |Angreifen| und {Damage} Schaden verursachen.
     Kann nicht |Ausgewichen| werden.'
@@ -9,6 +9,7 @@ AttackIntention:
     Schaden verursachen. Kann nicht |Ausgewichen| werden.'
 AddCardIntention:
   Name: Status
+  Description: '{OwnerName} wird eine |Statuskarte| mit negativen Effekten hinzufügen.'
 DefendIntention:
   Name: Verteidigung
   Description: '{OwnerName} wird einen |defensiven Effekt| auf Verbündete anwenden.'
@@ -20,18 +21,22 @@ StunIntention:
   Description: '{OwnerName} kann in diesem Zug keine Aktionen durchführen.'
 EscapeIntention:
   Name: Flüchten
-  Description: '{OwnerName} hat vor zu |flüchten|.'
+  Description: '{OwnerName} wird |flüchten|.'
 ExplodeIntention:
   Name: Explosion
+  Description: '{OwnerName} wird |explodieren| und {Damage} Schaden zu verursachen.'
 SpawnDroneIntention:
   Description: '{OwnerName} wird eine Drohne beschwören.'
   Name: Drohne Beschwören
 ExplodeAllyIntention:
   Name: Sprengung
+  Description: '{OwnerName} wird den Verbündeten mit den niedrigsten Leben |sprengen|.'
 RepairIntention:
   Name: Reparieren
+  Description: '{OwnerName} wird Verbündete |reparieren|, um deren Leben wiederherzustellen.'
 ClearIntention:
   Name: Läutern
+  Description: '{OwnerName} wird die eigenen negativen Effekte entfernen.'
 DoNothingIntention:
   Name: Nichts tun
   Description: '{OwnerName} wird in diesem Zug nichts tun.'
@@ -40,10 +45,36 @@ UnknownIntention:
   Description: '{OwnerName} wird... irgendetwas tun.'
 GrazeIntention:
   Name: Ausweichen
+  Description: '{OwnerName} wird |Ausweichen| auf Verbündete anwenden.'
 SpawnIntention:
   Name: Beschwörung
   Description: '{OwnerName} wird weitere |Verbündete beschwören|.'
 HealIntention:
   Name: Heilen
+  Description: '{OwnerName} wird Verbündete |heilen|, um deren Leben wiederherzustellen.'
 HexIntention:
   Name: Hex
+  Description: '{OwnerName} wird zufällige Karten auf dem Schlachtfeld |verhexen|,
+    um sie nutzlos zu machen.'
+SpellCardIntention:
+  Name: Zauberkarte
+  MultiDamageDescription: '{OwnerName} wird eine |Zauberkarte| entfesseln und {Times}
+    Mal {Damage} Schaden zu verursachen.'
+  AccurateDamageDescription: "{OwnerName} wird eine |Zauberkarte| entfesseln und {Damage}\
+    \ Schaden verursachen.\nKann nicht |ausgewichen| werden."
+  AccurateMultiDamageDescription: "{OwnerName} wird eine |Zauberkarte| entfesseln\
+    \ und {Times} Mal {Damage} Schaden zu verursachen.\nKann nicht |ausgewichen| werden."
+  DamageDescription: '{OwnerName} wird eine |Zauberkarte| entfesseln und {Damage}
+    Schaden verursachen.'
+  Description: '{OwnerName} wird eine |Zauberkarte| entfesseln.'
+KokoroDarkIntention:
+  Name: Noh der Dunkelheit
+PositiveEffectIntention:
+  Name: Positiver Effekt
+  Description: '{OwnerName} wird einen |positiven Effekt| auf Verbündete anwenden.'
+NegativeEffectIntention:
+  Name: Negativer Effekt
+  Description: '{OwnerName} wird einen |negativen Effekt| gegen {PlayerName} anwenden.'
+ChargeIntention:
+  Name: Aufladen
+  Description: '{OwnerName} sammelt Kraft...'

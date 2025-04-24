@@ -160,6 +160,8 @@ PotionBaseDamageSe:
   Brief: '|Instabile Tränke| verursachen mehr Schaden.'
 PoisonPotionSe:
   Name: Hexenkessel
+  Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, verursache zusätzlich
+    {Level} |Gift|.
 TurnStartDontLoseBlock:
   Description: "{OwnerName} verliert kein |Block| zu Beginn {Level:plural one='des\
     \ nächsten Zuges' other='der nächsten % Züge'}."
@@ -248,6 +250,9 @@ MasterOfCollectionSe:
   Name: Meistersammler
 ChargingPotionSe:
   Name: Radioaktive Elemente
+  Brief: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, erhalte |Aufladungen|.
+  Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, erhalte {Level}
+    |Aufladung{Level:plural one='' other='en'}|.
 ColdPotionSe:
   Name: Kühlmittel
 TempFirepower:
@@ -441,10 +446,12 @@ TodayYesterdaySe:
   Brief: Jedesmal wenn {OwnerName} einen Angriff |ausweicht|, erhält sie |Feuerkraft|.
   Name: Gensokyo, Vergangenheit und Gegenwart
 BladePowerSe:
-  Description: Jedesmal wenn |Wurfmesser| gespielt wird, füge {Level} zufällige Angriffskarte{Level:plural
-    one='' other='n'} deiner Hand hinzu. Die Karte{Level:plural one='' other='n'}
-    |koste{Level:plural one='t' other='n'} temporär| {Mana} und ha{Level:plural one='t'
-    other='ben'} |Exil| und |Ätherisch|.
+  Description: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, füge {Level} zufällige
+    Angriffskarte{Level:plural one='' other='n'} deiner Hand hinzu. Die Karte{Level:plural
+    one='' other='n'} |koste{Level:plural one='t' other='n'} temporär| {Mana} und
+    ha{Level:plural one='t' other='ben'} |Exil| und |Ätherisch|.
+  Brief: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, füge zufällige Angriffskarten
+    deiner Hand hinzu. Die Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|.
 RainbowMarketSe:
   Name: Lunar-Regenbogenmarkt
 KokoroDanceSe:
@@ -521,6 +528,8 @@ YouxiangMoonSe:
 PerfectServantWSe:
   Description: Zu Beginn des nächsten Zuges, |senke vorübergehend die Kosten| aller
     Karten auf deiner Hand um {Level} zufälliges Mana.
+  Brief: Zu Beginn des nächsten Zuges |kosten temporär| alle Karten auf der Hand eine
+    zufällige Menge Mana weniger.
 MihuanJackSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Zeitimpuls{Level:plural
     one='' other='e'}|.
@@ -531,10 +540,17 @@ DrawPhaseAddKnife:
   Brief: Ziehe keine Karten zu Beginn des Zuges, füge stattdessen |Wurfmesser| deiner
     Hand hinzu.
 BrokenTimelineSe:
-  Description: Zu Beginn deines nächsten Zuges, erhalte kein Mana von deinem Basismana.
+  Description: Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana von der
+    Manabasis.
   Name: Kaputte Zeitlinie
+  Brief: Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana von der Manabasis.
+  ExtraDescription: "Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana\
+    \ von der Manabasis.\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
+    \ Effekt aktiviert wurde."
 AutoKnifeSe:
   Name: Verhextes Silbermesser
+  Brief: Alle |Wurfmesser| haben |Automatisches Exil|.
+  Description: Alle |Wurfmesser| haben |Automatisches Exil|.
 IceMatrixSe:
   Brief: Jedes Mal, wenn {PlayerName} einem Feind |Kälte| zufügt, erhalte |Eisrüstung|.
   Description: Jedes Mal, wenn {PlayerName} einem Feind |Kälte| zufügt, erhalte {Level}
@@ -552,6 +568,10 @@ EvilMaidDoubleAttack:
   Name: Teuflische Kräfte
 SpecialClockSe:
   Name: Spezielle Stoppuhr
+  Description: Zu Beginn deines Zuges, werfe {Level:plural one='eine Karte' other='bis
+    zu % Karten'} ab und ziehe die gleiche Menge nach.
+  Brief: Zu Beginn deines Zuges, werfe eine gewisse Anzahl an Karten ab und ziehe
+    die gleiche Menge nach.
 DangerousMagicianSe:
   Name: Gefährliche Illusionistin
   Description: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, erhält {PlayerName}
@@ -567,6 +587,9 @@ SakuyaInvestigateSe:
   Brief: Zu Beginn deines Extrazuges, füge allen Feinden |Anvisieren| zu.
 SilverBladeSe:
   Name: Silberdimension
+  Brief: Jedes Mal, wenn eine Angriffskarte aktiviert wird, erhalte |Barriere|.
+  Description: Jedes Mal, wenn eine Angriffskarte aktiviert wird, erhalte {Level}
+    |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
 TimeMagicSe:
@@ -730,3 +753,20 @@ FriendDrawSe:
   Brief: "Jedes Mal, wenn ein |Verbündeter| eine |a:Aktive Fähigkeit| oder eine |u:Ultimative\
     \ Fähigkeit| aktiviert, ziehe Karten.\nJedes Mal, wenn eine |u:Ultimative Fähigkeit|\
     \ aktiviert wird, erhalte zufälliges Mana."
+SakuyaKillerSe:
+  Name: Mörder bei Nacht und Nebel
+  Description: Am Ende deines Zuges, nachdem {PlayerName} einen Feind besiegt hat,
+    füge {Level} |Wurfmesser| deinem Ziehstapel hinzu.
+  Brief: Am Ende deines Zuges, nachdem {PlayerName} einen Feind besiegt hat, füge
+    |Wurfmesser| deinem Ziehstapel hinzu.
+KnifeDamageUpSe:
+  Description: '|Wurfmesser| verursachen {Level} mehr Schaden.'
+  Brief: '|Wurfmesser| verursachen mehr Schaden.'
+Cold:
+  Name: Kälte
+  Description: "Zu Beginn des Zuges verliert {OwnerName} {BaseDamage} Leben und |Kälte|.\n\
+    Jedes Mal, wenn erneut |Kälte| zugefügt wird, verliert {OwnerName} {StackMultiply}\
+    \ Mal so viel Leben. ({StackDamage} Leben.)"
+  Brief: "Zu Beginn des Zuges verliert {OwnerName} {BaseDamage} Leben und |Kälte|.\n\
+    Jedes Mal, wenn erneut |Kälte| zugefügt wird, verliert {OwnerName} zusätzliches\
+    \ Leben."
