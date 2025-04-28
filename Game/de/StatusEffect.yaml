@@ -30,7 +30,10 @@ ExtraTurn:
     \ nach diesem Zug."
   Brief: '{OwnerName} erhält einen weiteren Zug, sobald der Zug endet.'
 Vampire:
-  Brief: '{OwnerName} erhält Leben in Höhe des ungeblockten Schadens. Furchteinflößend!'
+  Brief: '{OwnerName} heilt dieselbe Menge an Leben,. Furchteinflößend!
+
+    Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe Menge
+    Leben. Furchteinflößend!'
   Name: Vampir
   Description: '{OwnerName} erhält Leben in Höhe des ungeblockten Schadens. Furchteinflößend!'
 Poison:
@@ -45,6 +48,7 @@ MaoyuBlock:
 LoveGirlDamageIncrease:
   Description: Die Gefühle von {OwnerName} wurden erwidert. Sie erleidet {Rate}% mehr
     Schaden.
+  Name: Schmetterlinge im Bauch
 PhoneBillSe:
   Description: "{OwnerName} stiehlt {Level} <sprite=\"Point\" name=\"Gold\"> mit jedem\
     \ Anruf.\nWird {OwnerName} besiegt, erhalte {Count} <sprite=\"Point\" name=\"\
@@ -55,7 +59,7 @@ AbsorbPower:
   Description: '{OwnerName} erhält am Ende des Zuges {Level} |Feuerkraft|.'
 DeathPoison:
   Description: Wird {OwnerName} besiegt, erhält {PlayerName} {Level} |Gift|.
-  Name: Todesgift
+  Name: Tödliches Gift
 AbsorbSpirit:
   Description: '{OwnerName} erhält am Ende des Zuges {Level} |Geist|.'
   Name: Blaue Kugel
@@ -108,6 +112,8 @@ LouguanJianSe:
     |Anvisieren|.
 KokoroXi:
   Name: Freude
+  Description: Beschwöre ein |Menreiki|, nachdem {OwnerName} eine Aktion durchgeführt
+    hat. (Bereits geschehen)
 KokoroDarkPower:
   Name: Ansammlung Dunkler Emotionen
   Description: "{OwnerName} wird zusätzlichen Schaden mit ihrer nächsten |Zauberkarte|\
@@ -234,8 +240,12 @@ FirepowerIsJustice:
   Description: '{OwnerName} kann niemals weniger |Feuerkraft| haben als {PlayerName}.'
 KokoroYou:
   Name: Trauer
+  Description: '{PlayerName} erhält {Level} |Weak|, nachdem {OwnerName} eine Aktion
+    durchgeführt hat. (Bereits geschehen)'
 KokoroNu:
   Name: Wut
+  Description: Alle Feinde erhalten {Level} |Feuerkraft|, nachdem {OwnerName} eine
+    Aktion durchgeführt hat. (Bereits geschehen)
 TimeAuraSe:
   Name: Zeitimpuls
   Brief: "Füge am Ende deines Zuges allen Feinden Schaden zu.\nVerliere 1 Zeitimpuls\
@@ -336,6 +346,7 @@ Graze:
 CantDrawThisTurn:
   Brief: Es können bis zum Ende des Zuges keine Karten gezogen werden.
   Description: Es können bis zum Ende des Zuges keine Karten gezogen werden.
+  Name: Ziehsperre
 TimeIsLimited:
   Name: Zeitlimit
   Brief: Karten kosten mehr Mana bis zum nächsten feindlichen Zug.
@@ -358,16 +369,18 @@ AutoQumobangSe:
 EnemyVulnerable:
   Description: '{PlayerName} erhält {Level} |Verwundbar| nachdem alle Feinde ihren
     Zug beendet haben.'
+  Name: Bevorstehendes Verwunden
 NextTurnGainBlock:
   Brief: '{OwnerName} erhält zu Beginn des nächsten Zuges |Block|.'
   Description: '{OwnerName} erhält zu Beginn des nächsten Zuges {Level} |Block|.'
-  Name: Zukünftiges Block
+  Name: Zukünftiger Block
 Servant:
   Name: Beschwörung
   Description: "Beschworene Feinde werden sofort besiegt, falls sie die letzten verbleibenden\
     \ Feinde sind.\nAuf diese Weise besiegten Feinde aktivieren keine Effekte."
 DeathVulnerable:
   Description: Wird {OwnerName} besiegt, erhält {PlayerName} {Level} |Verwundbar|.
+  Name: Heimsuchende Krankheit
 LoveGirlDamageReduce:
   Description: Die Gefühle von {OwnerName} wurden noch nicht erwidert. Sie erleidet
     {Rate}% weniger Schaden.
@@ -378,15 +391,20 @@ KoishiUnknown:
     \ werden durch weitere Stufen stärker versteckt."
 ScarletDestiny:
   Name: Scharlachrotes Schicksal
+  Description: "Nachdem {Limit} Karte{Limit:plural one='' other='n'} aktiviert wurden,\
+    \ beende den Zug von {PlayerName}.\nVerbleibende Karten: {Count}."
 LimitedDamage:
   Brief: '{OwnerName} kann pro Zug nur eine gewisse Menge an Schaden erleiden.'
   Description: '{OwnerName} kann nur bis zu {Limit} Schaden pro Zug erleiden. Verbleibender
     Schaden: {Count}.'
+  Name: Befreier der Gegenstände
 AmuletForCard:
   Name: Schutzfeld
   Description: Annulliert das Hinzufügen der nächsten {Level:plural one='Statuskarte'
     other='% Statuskarten'} und sendet die Karte {Level:plural one='' other='n'} ins
     |Exil|.
+  Brief: Annulliert das Hinzufügen der nächsten Statuskarten und sende die Karten
+    ins |Exil|.
 JunkoLily:
   Name: Mörderische Lilien
   Description: Jedes Mal, wenn |Läuterndes Licht| aktiviert wird, verliert {PlayerName}
@@ -459,10 +477,10 @@ KokoroDanceSe:
 YonglinUpgradeSe:
   Name: Mondhasen Duft
 CommonFireSe:
-  Description: Nachdem eine gewöhnliche Karte gespielt wurde erhält {OwnerName} {Level}
-    |Temporäre Feuerkraft|.
-  Brief: Nachdem eine gewöhnliche Karte gespielt wurde erhält {OwnerName} |Temporäre
-    Feuerkraft|.
+  Description: '{OwnerName} erhält {Level} |Temporäre Feuerkraft|, nachdem eine Gewöhnliche
+    Karte gespielt wurde.'
+  Brief: '{OwnerName} erhält |Temporäre Feuerkraft|, nachdem eine Gewöhnliche Karte
+    gespielt wurde.'
 DeathExplodeCount:
   Name: Rachekugel
 DeathExplodeNotCount:
@@ -473,9 +491,13 @@ SuwakoHex:
   Description: Zu Beginn deines Zuges wird eine zufällige Karte in deiner Hand |Verhext|
     und dadurch nutzlos.
   Name: Hex
+  ExtraDescription: "Zu Beginn deines Zuges wird eine zufällige Karte auf deiner Hand\
+    \ |verhext|.\n(Dieser Effekt wurde bereits verwendet und erneuert sich, nachdem\
+    \ {OwnerName} eine Aktion durchgeführt hat.)"
 Curiosity:
   Description: Jedes Mal, wenn {PlayerName} eine |Talentkarte| spielt, erhält {OwnerName}
     {Level} |Feuerkraft|.
+  Name: Ich bin neugierig!
 MadokaBowSe:
   Description: Erhalte am Ende des Zuges {Level} zufällige Statuskarten, mische die
     Hälfte in deinen Ziehstapel und lege den Rest in deinen Ablagestapel.
@@ -639,6 +661,9 @@ MeihongPowerSe:
   Name: Die unsterbliche Flamme
 Sleep:
   Name: Verschlinger der Träume
+  Description: "Am Ende des Zuges wird die |Barriere| von {OwnerName} auf {Level}\
+    \ gesetzt.\n{OwnerName} wacht nach {Count} Zügen auf, sobald sie Schaden erleidet\
+    \ oder {Count} turns."
 Burst:
   Name: Durchbruch
   Brief: "Wenn {PlayerName} |Durchbruch| aktiviert, erhalte {Mana}.\nAlle Angriffe\
@@ -673,15 +698,21 @@ RinAura:
   Name: Loderndes Feuer
 EnemyMaid:
   Name: Kasumis Aufräumarbeiten
-  Description: Füge am Ende des Zuges {Level} Schaden an {PlayerName} zu.
+  Description: '{OwnerName} fügt am Ende des Zuges {Level} Schaden an {PlayerName}
+    zu.'
 TurnStartPurify:
   Name: Zukünftiges Läutern
+  Description: "Zu Beginn deines nächsten Zuges erhält {PlayerName} {Level} |Läutern|.\n\
+    Entferne diesen Effekt am Ende des Zuges."
 RockHardAura:
   Name: Schutz des Schlüsselsteins
   Description: '{OwnerName} wird durch einen Schlüsselstein geschützt, Angriffsschaden
     an Leben werden um {Level} reduziert.'
 KokoroRenzhen:
   Name: Ernst
+  Description: Entferne alle |Dunklen Emotionen| und füge {PlayerName} für jede entfernte
+    |Dunkle Emotion| {Level} zusätzlichen Schaden zu, nachdem {OwnerName} eine Aktion
+    durchgeführt hat. (Bereits geschehen)
 EnemyEnergyNegative:
   Description: "{OwnerName} hat <sprite=\"Point\" name=\"Power\"> verwendet.\nDieser\
     \ Status wird nicht im Spiel angezeigt."
@@ -734,6 +765,8 @@ JunkoPurify:
   Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, |Purify| {Level}.
 LightingModule:
   Name: Blitzmodul
+  Description: Jedes Mal, wenn {OwnerName} einen Angriff landet, füge {Level} |Glamouröses
+    Sternenlicht| deinem Ziehstapel hinzu.
 AccuracyModule:
   Description: Die Angriffe von {OwnerName} sind |Präzise|.
 DragonBallSe:
@@ -770,3 +803,13 @@ Cold:
   Brief: "Zu Beginn des Zuges verliert {OwnerName} {BaseDamage} Leben und |Kälte|.\n\
     Jedes Mal, wenn erneut |Kälte| zugefügt wird, verliert {OwnerName} zusätzliches\
     \ Leben."
+LongLight:
+  Description: '{OwnerName} scheint wie ein Stern! Ihre Statuskarten sind mächtiger.'
+EnemyLockedOn:
+  Name: Bevorstehendes Anvisieren
+  Description: '{PlayerName} erhält {Level} |Anvisieren| nachdem alle Feinde ihren
+    Zug beendet haben.'
+PurifyModule:
+  Name: Läuterungsmodul
+  Description: Jedes Mal, wenn {OwnerName} einen Angriff landet, erhält {PlayerName}
+    {Level} |Läutern| zu Beginn deines nächsten Zuges.
