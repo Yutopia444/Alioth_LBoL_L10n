@@ -326,8 +326,11 @@ Setting:
     开启此选项会使它更左一些，防止它出现在右侧卡牌的上方。
   AnimatingEnvironment: 使用动态背景
   AnimatingEnvironmentDescription: 在关卡场景和隙间小屋中使用动态背景。
+  AnimatingEnvironmentDescriptionLocked: |-
+    在关卡场景和隙间小屋中使用动态背景。
+    已锁定，请返回主菜单修改。
   SingleEnemyAutoSelect: 自动选择单个敌人
-  SingleEnemyAutoSelectDescription: 是否在剩下单个敌人时自动打出需要选择目标的牌。
+  SingleEnemyAutoSelectDescription: 在剩下最后一名敌人时，指定单个目标的卡牌，不需要精确地瞄准就会选择它。
   ShowShortcut: 显示手牌快捷键
   ShowShortcutDescription: 在手牌上方显示快速选择按键文本
   ShowCardOrder: 显示卡牌顺序
@@ -597,7 +600,7 @@ Shop:
     {0} 点<sprite="Gold" name="gold">
   RemoveTooltip: |-
     从牌库中移除一张牌。
-    在本局游戏中每次使用都会涨价 {0} 点金钱（最大不超过 {1} ）。
+    在本局游戏中每次使用都会涨价 {0} 点金钱。
   BoughtQuotes:
     - 谢谢惠顾
   CantAffordQuotes:
@@ -828,6 +831,16 @@ Tooltip:
     BR: 黑红
     BG: 黑绿
     RG: 红绿
+    UW: 蓝白
+    BW: 黑白
+    RW: 红白
+    GW: 绿白
+    BU: 黑蓝
+    RU: 红蓝
+    GU: 绿蓝
+    RB: 红黑
+    GB: 绿黑
+    GR: 绿红
 
   UsTitle: '{0}「{1}」'
 
@@ -857,7 +870,7 @@ BattleHint:
   Intro: |-
     欢迎来到月都万象展！努力寻找蓬莱玉枝的下落吧！
     如果您已游玩过卡牌构建式游戏，可以选择|简略提示|来查看本游戏较为特别的部分。
-    此后的游戏性提示也会遵循该设置。您可以在设置面板中随时调整游戏性提示的设置。
+    此后的游戏性提示也会遵循该设置。您可以在设置面板中随时调整游戏性提示的等级。
   BasicBattle: |-
     打出手中的卡牌来退治敌人！
     打出后的手牌将会移入弃牌堆。在主角的回合结束时，仍留在手中的牌也将被移入弃牌堆。
@@ -881,7 +894,7 @@ BattleHint:
     敌人可能拥有攻击、防御、强化、施加负面状态或释放符卡等意图。
   UltimateSkill: |-
     在危急时刻使用符卡扭转战局！
-    使用符卡需要消费一整管能量。被击败的敌人会掉落<sprite="Point" name="Power">，用以补充符卡所需的能量。
+    使用符卡需要消耗一整管能量。被击败的敌人会掉落<sprite="Point" name="Power">，用以补充符卡所需的能量。
     符卡每回合只能使用一次。
 
 MessageDialog:
