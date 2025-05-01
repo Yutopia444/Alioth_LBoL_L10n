@@ -287,11 +287,11 @@ Setting:
   Show: Hiện
   Hide: Ẩn
   AnimatingEnvironment: Sử Dụng Nền Động
-  AnimatingEnvironmentDescription: Hiển thị hình nền động trong phòng của Yukari và
-    trong giao tranh.
+  AnimatingEnvironmentDescription: Hiển thị hình nền động trong Khe Nứt và trong trận
+    đấu.
   SingleEnemyAutoSelect: Tự Động Chọn Mục Tiêu Đơn
-  SingleEnemyAutoSelectDescription: Sử dụng thẻ mà không cần chọn mục tiêu khi chỉ
-    có một kẻ địch.
+  SingleEnemyAutoSelectDescription: Sử dụng thẻ mà không cần thực hiện chọn mục tiêu
+    khi chỉ có một kẻ địch.
   ShowShortcut: Hiện Phím Tắt Trên Thẻ
   ShowShortcutDescription: Hiện Phím Tắt ở phía trên các thẻ trong tay.
   Enable: Bật
@@ -362,6 +362,19 @@ Setting:
   CostMoreLeftDescription: "Chi phí mana của thẻ được thể hiện ở góc trên bên phải\
     \ của thẻ.\nBật thiết lập này sẽ dịch chúng sang bên trái một chút, tránh việc\
     \ đè lên thẻ nằm ở bên phải."
+  LoopOrder: Thứ tự màu mana của thẻ
+  LoopOrderOff: Tắt <sprite="ManaSprite" name="HWR">
+  LoopOrderOn: Bật <sprite="ManaSprite" name="HRW">
+  LoopOrderDescription: "Thay đổi thứ tự hiển thị các lá bài hai màu theo trình tự\
+    \ màu tuần hoàn.\nHoán đổi trình tự của các lá Trắng Đỏ, Trắng Lục và Lam Lục.\n\
+    <sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"\
+    ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\"\
+    \ name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">\nChỉ áp dụng lên các màu cơ\
+    \ bản, trình tự thẻ theo chi phí (bao gồm cả mana song sắc), không ảnh hưởng đến\
+    \ thứ tự của nhóm màu."
+  AnimatingEnvironmentDescriptionLocked: "Hiển thị ảnh nền động trong trận đấu và\
+    \ Khe Nứt.\n(Đã khóa, quay lại Màn Hình Chính để thay đổi)"
+  EnableGamepad: Bật Gamepad
 History:
   Puzzles: '{0} Nan Đề'
   Mana: Mana
@@ -549,7 +562,7 @@ Shop:
   Close: Đóng
   Remove: Xoá Thẻ
   RemoveTooltip: Xóa 1 thẻ ra khỏi thư viện và tăng giá lên thêm| {0} vàng| sau mỗi
-    lần sửu dụng. Giá tối đa là {1} vàng.
+    lần sử dụng.
   BoughtQuotes:
   - Cám ơn vì đã mua hàng.
   CantAffordQuotes:
@@ -712,6 +725,16 @@ Tooltip:
     BG: Đen Lục
     RG: Đỏ Lục
     CharacterTitle: '{0} {1} ({2})'
+    UW: Lam Trắng
+    BW: Đen Trắng
+    RW: Đỏ Trắng
+    GW: Lục Trắng
+    BU: Đen Lam
+    RU: Đỏ Lam
+    GU: Lục Lam
+    RB: Đỏ Đen
+    GB: Lục Đen
+    GR: Lục Đỏ
   DetailedHint:
     Name: Gợi Ý Chi Tiết
     Description: "Hiện tất cả gợi ý.\nĐây là tựa game thẻ bài đầu tiên mà tôi chơi..."
@@ -760,7 +783,7 @@ BattleHint:
     \ ý định khác nhau như tấn công, phòng thủ, hỗ trợ đồng minh, gây buff hại, hoặc\
     \ sử dụng Bài Phép."
   UltimateSkill: "Kích hoạt Bài Phép để lật ngược tình thế trận đấu!\nDùng Bài Phép\
-    \ sẽ tiêu hết một thanh năng lượng. Kẻ địch khi bị đánh bại sẽ rơi ra <sprite=\"\
+    \ sẽ tiêu hao hết một thanh năng lượng. Kẻ địch khi bị đánh bại sẽ rơi ra <sprite=\"\
     Point\" name=\"Power\"> dùng để sạc lại Bài Phép.\nBài Phép chỉ có thể được kích\
     \ hoạt một lần mỗi lượt."
 MessageDialog:
@@ -794,6 +817,9 @@ MessageDialog:
   CorruptedSaveData: Dữ liệu lưu bị lỗi
   CorruptedGameRunSaveData: Dữ liệu lượt chạy bị hư hỏng
   CannotReenterStation: Không thể truy cập lại bước này
+  GamepadUnfinishedText: Hỗ trợ cho Gamepad hiện đang trong giai đoạn phát triển.
+  GamepadUnfinishedSubText: Không khuyến khích sử dụng, còn nhiều yếu tố chưa hoàn
+    thiện.
 Lifetime:
   TotalBp: Tổng Số Điểm Xanh<sprite="Point" name="Point">
   OldData: Dữ Liệu Phiên Bản Cũ <sprite="TextIcon" name="Info">
