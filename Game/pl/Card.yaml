@@ -527,8 +527,8 @@ ExilePotion:
   Description: Wygnaj maksymalnie {Value1:plural one='% kartę' few='% karty' many='%
     kart'} z ręki. Dodaj tyle samo |Niestabilnych Mikstur| do stosu zrzutek.
   UpgradedDescription: Wybierz do {Value1:plural one='% karty' few='% kart' many='%
-    kart'} w obiegu do |Wygnania|. Dodaj tyle samo |Niestabilnych Mikstur| do stosu
-    zrzutek.
+    kart'} w ręce oraz stosach doboru i zrzutek do |Wygnania|. Dodaj tyle samo |Niestabilnych
+    Mikstur| do stosu zrzutek.
   FlavorText: '"Mnisi muszą się pozbyć wszystkich swoich dóbr doczesnych. No, to będzie
     pikuś. One nawet nie są moje."'
 PotionJungle:
@@ -578,7 +578,7 @@ MixAndShake:
   Name: Mikstura Fajerwerków
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nZwiększ obrażenia tej karty o {Value1} za każdą |Niestabilną\
-    \ Miksturę| w obiegu."
+    \ Miksturę| w stosach doboru i zrzutek."
   FlavorText: Przed otwieraniem nie potrząsywaj.
 WizardStudy:
   Name: Przewrotnica Magii
@@ -834,12 +834,13 @@ SilverBullet:
   Name: Srebrne Narzędzie
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
     \ wszystkim wrogom.\nZyskaj {Block} |Bloku|. Zyskaj o {Value1} więcej |Bloku|\
-    \ za każdy |Sztylet do Rzucania| w obiegu. (Ilość |Sztyletów do Rzucania|: {KnifeCount})"
+    \ za każdy |Sztylet do Rzucania| w ręce oraz stosach doboru i zrzutek. (Ilość\
+    \ |Sztyletów do Rzucania|: {KnifeCount})"
   FlavorText: Mogą wykreować przepiękne wzory na ubraniach wrogów, a nawet na ich
     samych.
   NonbattleDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} wszystkim wrogom.\nZyskaj {Block} |Bloku|. Zyskaj o {Value1}\
-    \ więcej |Bloku| za każdy |Sztylet do Rzucania| w obiegu."
+    \ więcej |Bloku| za każdy |Sztylet do Rzucania| w ręce oraz stosach doboru i zrzutek."
 SakuyaSleep:
   Name: Krótka Przerwa
   Description: "Dodaj |Światłość| do ręki.\nZakończ turę {PlayerName:g}."
@@ -940,7 +941,7 @@ KnifeHell:
   Name: Srebrna Elegancja
   Description: "Dodaj {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety\
     \ do Rzucania|' many='% |Sztyletów do Rzucania|} do ręki.\nUlepsz wszystkie |Sztylety\
-    \ do Rzucania| w obiegu."
+    \ do Rzucania| w ręce oraz stosach doboru i zrzutek."
 BackOfKnife:
   Name: Moje Ostrze Powraca
   Description: "Usuń wszystkie |Wygnane Sztylety do Rzucania| z walki.\nNastępnie\
@@ -1095,8 +1096,9 @@ RingoJinghua:
   Description: "|Wygnaj| do {Value1:plural one='% karty' few='% kart' many='% kart'}\
     \ z ręki.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
   FlavorText: Ta operacja została nazwana "Projektem Narzędności Ziem".
-  UpgradedDescription: "|Wygnaj| do {Value1:plural one='% karty' other='% kart'} obecnie\
-    \ w obiegu.\nZyskaj {Value2} <sprite=\"Point\" name=\"Power\">."
+  UpgradedDescription: "|Wygnaj| do {Value1:plural one='% karty' other='% kart'} obecnych\
+    \ w ręce oraz stosach doboru i zrzutek.\nZyskaj {Value2} <sprite=\"Point\" name=\"\
+    Power\">."
 ShenziUpgradeAll:
   Name: Apoteoza
   Description: '|Ulepsz| wszystkie karty na czas walki.'
@@ -1940,10 +1942,11 @@ Payment:
     wskazówki o incydencie.'
 Nightmare:
   Name: Koszmar
-  NonbattleDescription: Gdy całkowita ilość {SelfName:v} w obiegu wyniesie {Value1},
-    |Wygnaj| je, po czym {PlayerName} przegrywa grę.
-  Description: "Gdy całkowita ilość {SelfName:g} w obiegu wyniesie {Value1}, wygnaj\
-    \ je, po czym {PlayerName} przegrywa grę.\nAktualnie jest razem {NightmareCount}."
+  NonbattleDescription: Gdy całkowita ilość {SelfName:v} w ręce oraz stosach doboru
+    i zrzutek wyniesie {Value1}, |Wygnaj| je, po czym {PlayerName} przegrywa grę.
+  Description: "Gdy całkowita ilość {SelfName:g} w ręce oraz stosach doboru i zrzutek\
+    \ wyniesie {Value1}, wygnaj je, po czym {PlayerName} przegrywa grę.\nAktualnie\
+    \ jest razem {NightmareCount}."
   FlavorText: Nie pamiętam żadnych szczegółów po obudzeniu.
 Jealousy:
   Name: Zazdrość
@@ -2277,7 +2280,8 @@ FreezeToIce:
     \ tyle same |Lodowych Skrzydeł| do stosu doboru."
   FlavorText: Wy dwaj jesteście moimi skrzydłami! (Dosłownie)
   UpgradedDescription: "|Wygnaj| do {Value1:plural one='% kart' other='% kart'} w\
-    \ obiegu. Dodaj tyle same |Lodowych Skrzydeł| do stosu doboru."
+    \ ręce oraz stosach doboru i zrzutek. Dodaj tyle same |Lodowych Skrzydeł| do stosu\
+    \ doboru."
 FairyOnIce:
   Name: Wróżka na Lodzie
   Description: "Dodaj {Value1:plural many='% |Lodowych Skrzydeł|' other='% |Lodowe\
@@ -2758,11 +2762,11 @@ LarvaCure:
 Lunatic:
   Name: Szaleństwo
   Description: "Na końcu tury {PlayerName:g}, jeżeli jest razem {Value1} {SelfName:v}\
-    \ w obiegu, wygnaj je i strać {Value2:plural one='% punkt' few='% punkty' many='%\
-    \ punktów'} życia.\n\nAktualnie jest {LunaticCount}."
+    \ w ręce oraz stosach doboru i zrzutek, wygnaj je i strać {Value2:plural one='%\
+    \ punkt' few='% punkty' many='% punktów'} życia.\n\nAktualnie jest {LunaticCount}."
   NonbattleDescription: Na końcu tury {PlayerName:g}, jeżeli jest razem {Value1} {SelfName:v}
-    w obiegu, wygnaj je i strać {Value2:plural one='% punkt' few='% punkty' many='%
-    punktów'} życia.
+    w ręce oraz stosach doboru i zrzutek, wygnaj je i strać {Value2:plural one='%
+    punkt' few='% punkty' many='% punktów'} życia.
 CirnoFreeze:
   Description: "Jeżeli w ręce jest {SelfName}, wszystkie karty kosztują o {Mana} więcej.\n\
     Gdy zagran{FreezeTimes:plural one='a zostanie % karta' few='e zostaną % karty'\
@@ -3023,7 +3027,7 @@ HuiyeMarblePhantasm:
   Description: Wybierz 1 z {Value1} losowych kart z całkowitym kosztem X+1 aby dodać
     do ręki. Ona |Tymczasowo Kosztuje| {Mana} i ma |Wygnanie| oraz |Eteryczność|.
   FlavorText: '"Księżniczko... Proszę nie używaj swojej mocy na takie sprawy..."'
-  DetailText: Jeżeli nie ma wystarczającej ilości unikalnych kart o wybranym kaszcie,
+  DetailText: Jeżeli nie ma wystarczającej ilości unikalnych kart o wybranym koszcie,
     karty o niższej wartości zostaną wyprodukowane.
 Frog:
   Name: Żaba
@@ -3302,9 +3306,9 @@ YoumuHybrid:
     ManaSprite\" name=\"G\">|: Zyskaj {Value2:plural one='% |Unik|' few='% |Uniki|'\
     \ many='% |Uników|'}."
   UpgradedDescription: "|Za każde wydane <sprite=\"ManaSprite\" name=\"W\">|: |Wygnaj|\
-    \ do {Value1:plural one='karty' other='kart'} w obiegu.\n|Za każde wydane <sprite=\"\
-    ManaSprite\" name=\"G\">|: Zyskaj {Value2:plural one='% |Unik|' few='% |Uniki|'\
-    \ many='% |Uników|'}."
+    \ do {Value1:plural one='karty' other='kart'} w ręce oraz stosach doboru i zrzutek.\n\
+    |Za każde wydane <sprite=\"ManaSprite\" name=\"G\">|: Zyskaj {Value2:plural one='%\
+    \ |Unik|' few='% |Uniki|' many='% |Uników|'}."
 HuiyinMoreDraw:
   Name: Oddanie Nauczyciela
   Description: Dobierz o {Value1:plural one='% kartę' few='% kart' many='% kart'}
@@ -3488,8 +3492,8 @@ KoishiSpringOut:
 KoishiTouying:
   Name: Żar Miłości
   Description: "Zyskaj {Mana}.\nWybierz jedną z {Value1} losowych kart aby dodać ją\
-    \ do ręki. Ma ona |Dopełnienie|, |Wygnanie| oraz |Eteryczność|.\nCałkowity koszt\
-    \ każdej z kart wynosi co najmniej {Value2}."
+    \ na wierzch stosu doboru. Ma ona |Dopełnienie|, |Wygnanie| oraz |Eteryczność|.\n\
+    Całkowity koszt każdej z kart wynosi co najmniej {Value2}."
   FlavorText: Mam świetny pomysł.
 SelfControl:
   ExtraDescription1: Wejdź w stan |Pasji|.

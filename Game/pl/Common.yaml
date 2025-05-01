@@ -295,8 +295,8 @@ Setting:
   AnimatingEnvironmentDescription: Pokazuj dynamiczne tło podczas walki i w pokoju
     Yukari.
   SingleEnemyAutoSelect: Automatyczne Wybieranie
-  SingleEnemyAutoSelectDescription: Czy zagrać karty które wybierają wroga bez wybierania
-    wroga, gdy jest tylko jeden.
+  SingleEnemyAutoSelectDescription: Czy zagrać kartę bez wybierania celu, jeżeli karta
+    go potrzebuje, a jest tylko jeden wróg.
   Enable: Wł.
   Disable: Wył.
   XCostWarning: Ostrzeżenie Kosztu X?
@@ -366,6 +366,8 @@ Setting:
     \ tej opcji przesunie koszt nieco na lewo, przez co nie będzie się on pokrywał\
     \ z kartami po prawej stronie."
   EnableGamepad: Włącz Kontroler
+  AnimatingEnvironmentDescriptionLocked: "Pokazuj dynamiczne tła w czasie Szpary Yukari\
+    \ oraz walki.\n(Zablokowane, wróć do Menu Głównego aby przełączyć)"
 History:
   Puzzles: "{0:plural one:'% Prośba' two:'% Prośby' many:'% Próśb'}"
   Mana: Mana
@@ -525,8 +527,8 @@ Shop:
   Chats:
   - Proszę tutaj, drogi kliencie~
   - Mam dobre ceny! Czy aby na pewno niczego nie chcesz?
-  RemoveTooltip: "Usuń kartę że swojej biblioteki.\nZ każdym zakupem w tym przejściu\
-    \ cena wzrasta o {0} Złota (Do maksimum {1})."
+  RemoveTooltip: "Usuń kartę że swojej biblioteki oraz zwiększ cenę tej opcji o |{0}\
+    \ Złota| po każdym wykorzystaniu."
   CardService: Usługa Kart
   SoldOut: Wyprzedane
   Upgrade: Ulepsz Kartę
@@ -696,18 +698,28 @@ Tooltip:
     Green: Zielona
     Colorless: Bezkolorowa
     MultiColor: Wielokolorowa
-    CharacterTitle: '{0} {1} ({2})'
-    NeutralTitle: '{0} {1}'
-    WU: Biała/Nieb.
-    WB: Biała/Czarna
-    WR: Biała/Czerw.
-    WG: Biała/Zielona
-    UB: Nieb./Czarna
-    UR: Nieb./Czerw.
-    UG: Nieb./Ziel.
-    BR: Czarna/Czerw.
-    BG: Czarna/Ziel.
-    RG: Czerw./Ziel.
+    CharacterTitle: '{0} {2}'
+    NeutralTitle: '{1} {0}'
+    WU: Biało-niebieska
+    WB: Biało-czarna
+    WR: Biało-czerwona
+    WG: Biało-zielona
+    UB: Niebiesko-czarna
+    UR: Niebiesko-czerwona
+    UG: Niebiesko-zielona
+    BR: Czarno-czerwona
+    BG: Czarno-zielona
+    RG: Czerwono-zielona
+    UW: Niebiesko-biała
+    BW: Czarno-biała
+    RU: Czerwono-niebieska
+    RW: Czerwono-biała
+    GW: Zielono-biała
+    BU: Czarno-niebieska
+    GU: Zielono-niebieska
+    RB: Czerwono-niebieska
+    GB: Zielono-czarna
+    GR: Zielono-czerwona
   DetailedHint:
     Name: Szczegółowe Wskazówki
     Description: "Pokaż wszystkie wskazówki.\nPierwszy raz gram w deckbuildera."
@@ -728,9 +740,9 @@ BattleHint:
   Next: Nast.
   Intro: "Witaj na Wystawie Stolicy Księżyca! Postaraj się znaleźć zaginioną gałęź\
     \ mitów!\nJeżeli już grałeś w jakiegokolwiek innego deckbuildera, możesz wybrać\
-    \ |Drobne Wskazówki| aby obczaić specjalną część gry.\nKolejne wskazówki będą\
-    \ się trzymały tej preferencji. Możesz dostosować ustawienia wskazówek w każdej\
-    \ chwili w zakładce ustawień."
+    \ |Drobne Wskazówki| aby otrzymywać wskazówki tylko do elementów unikalnych dla\
+    \ tej gry.\nNastępne wskazówki będą się trzymały tej preferencji. Możesz dostosować\
+    \ wskazówki w każdej chwili w Ustawieniach."
   BasicBattle: "Użyj kart w swojej ręce aby pozbyć się przeciwników.\nZagrane karty\
     \ są przenoszone do stosu zrzutek. Na końcu twojej tury, karty, które zostały\
     \ w twojej ręce, są przenoszone do stosu zrzutek.\nNowe karty zostaną dobrane\
@@ -745,7 +757,7 @@ BattleHint:
   Intention: "Zamiary wrogów są nad nimi wyświetlane.\nWrogowie mogą mieć takie zamiary\
     \ jak atakowanie, obranianie, buffowanie, debuffowanie czy rzucanie kart Zaklęć."
   UltimateSkill: "Rzuć kartą zaklęć aby odwrócić bieg walki.\nUżycie karty Zaklęć\
-    \ wymaga pełnego paska energii. Pokonani przeciwnicy upuszczają <sprite=\"Point\"\
+    \ konsumuje pełny pasek energii. Pokonani przeciwnicy upuszczają <sprite=\"Point\"\
     \ name=\"Power\">, które uzupełniają energię potrzebną na kartę zaklęć.\nKartę\
     \ zaklęć można użyć tylko raz na turę."
   Mana: "Kliknij prawym na kartę aby wyświetlić szczegóły. (To też działa w większości\
