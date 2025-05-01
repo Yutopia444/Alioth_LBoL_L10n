@@ -235,7 +235,7 @@ Setting:
   AudioUi: UI
   AudioSfx: SE・弾幕
   Illustrator: イラストクレジット表記
-  IllustratorDescription: カードのイラストレーターの名前の表示。
+  IllustratorDescription: カードのイラストレーターの名前を表示します。
   DontShow: 非表示
   KeywordDescription: "簡潔モードにすると、以下の基本的なキーワードの説明が表示されません。\nゲームに慣れてからの利用をお勧めします。\n\
     火力、霊力、ブロック、バリア、グレイズ、精密、彩色、アップグレード、能力、混色コスト。"
@@ -246,13 +246,13 @@ Setting:
   Show: 表示
   Hide: 隠す
   AnimatingEnvironment: 背景アニメーション
-  AnimatingEnvironmentDescription: フィールドやスキマでの動的背景の表示。
-  SingleEnemyAutoSelectDescription: エネミーが一体しかいないとき、カードの対象の指定をスキップします。
+  AnimatingEnvironmentDescription: フィールドやスキマで動的背景を表示します。
+  SingleEnemyAutoSelectDescription: 敵が1体しか存在しない場合、対象を正確に指定していなくてもカードを使用します。
   SingleEnemyAutoSelect: 単体時の対象自動選択
   Disable: 無効
   Enable: 有効
   ShowShortcut: 手札のショートカット表示
-  ShowShortcutDescription: 手札の上のショートカットキー表示。
+  ShowShortcutDescription: 手札の上に対応するショートカットキーを表示します。
   ResetDefault: デフォルトに戻す
   Preference: ゲーム設定
   XCostWarning: Xコストカードの警告
@@ -297,7 +297,7 @@ Setting:
   ResetHint: ヒントのリセット
   Main: 一般
   Shake: 画面揺れ
-  ShakeDescription: ダメージによる画面の振動
+  ShakeDescription: ダメージによる画面の振動を有効にします。
   ShowReload: 時戻しの回数を表示
   ShowReloadDescription: 今回の攻略で行われた時戻しの回数と、運命の可視状態をマップに表示するオプション。
   ShowCardOrder: カードの順番を表示
@@ -314,6 +314,7 @@ Setting:
   NonVsync: （{0}FPS）
   CostMoreLeftDescription: "手札のコストは通常右側に表示されます。\nオンにすると表示がやや左になり、右側の手札の上に重なるのを防ぎます。"
   EnableGamepad: コントローラー有効化
+  AnimatingEnvironmentDescriptionLocked: "フィールドやスキマで動的背景を表示します。\n（メインメニューでのみ設定できます。）"
 Tooltip:
   EntityTitle:
     Character: 専用
@@ -337,6 +338,16 @@ Tooltip:
     BR: 黒赤
     BG: 黒緑
     RG: 赤緑
+    UW: 青白
+    BW: 黒白
+    RW: 赤白
+    GW: 緑白
+    BU: 黒青
+    RU: 赤青
+    GU: 緑青
+    RB: 赤黒
+    GB: 緑黒
+    GR: 緑赤
   UsTitle: '{1}'
   DifficultyLunatic:
     Description: 敵の攻撃力と体力が増加し、より強力な行動をするようになる。
@@ -460,8 +471,7 @@ Shop:
   Chats:
   - お姉さん、どうぞ見てって～
   - 安心価格だよ！本当に何も要らないの？
-  RemoveTooltip: "デッキからカード1枚を削除する。\n利用するたびに費用が<sprite=\"Gold\" name=\"gold\">{0}ずつ上がる。（最大で<sprite=\"\
-    Gold\" name=\"gold\">{1}）"
+  RemoveTooltip: "デッキからカード1枚を削除する。\n利用するたびに費用が<sprite=\"Gold\" name=\"gold\">{0}ずつ上がる。"
   CardService: カードサービス
   SoldOut: 売り切れ
   Upgrade: アップグレード
