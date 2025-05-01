@@ -308,7 +308,7 @@ Setting:
   AnimatingEnvironment: 使用動態背景
   AnimatingEnvironmentDescription: 在關卡場景及隙間小屋中使用動態背景。
   SingleEnemyAutoSelect: 自動選擇單個敵人
-  SingleEnemyAutoSelectDescription: 是否在剩下單個敵人時自動打出需要選擇目標的牌。
+  SingleEnemyAutoSelectDescription: 在剩下最後一名敵人時，指定單個目標的卡牌，不需要精確地瞄準就會選擇它。
   ShowShortcut: 顯示手牌快捷鍵
   ShowShortcutDescription: 在手牌上方顯示快速選擇按鍵文本
   ShowReload: 顯示回到過去次數
@@ -374,6 +374,7 @@ Setting:
   CostMoreLeft: 手牌費用更左
   CostMoreLeftDescription: "手牌的費用圖標顯示在上方最右側。\n開啟此選項會使它更左一些，防止它出現在右側卡牌的上方。"
   EnableGamepad: 啟用手柄
+  AnimatingEnvironmentDescriptionLocked: "在關卡場景和隙間小屋中使用動態背景。\n已鎖定，請返回主選單修改。"
 History:
   Puzzles: '{0}個難題'
   Mana: 法力
@@ -388,8 +389,8 @@ History:
 System:
   ReenterStation: 重開當前關卡
   ResumeGame: 繼續遊戲
-  ReturnMainMenu: 回到主菜單
-  SystemMenu: 系統菜單
+  ReturnMainMenu: 回到主選單
+  SystemMenu: 系統選單
   DoremyLevel: 第{0}層夢境
   NoJadeBox:
     Title: 無玉匣效果
@@ -574,7 +575,7 @@ Shop:
     {0} 點<sprite="Gold" name="gold">
   RemoveTooltip: |-
     從牌庫中移除一張牌。
-    在本局遊戲中每次使用都會漲價 {0} 點金錢（最大不超過 {1} ）。
+    在本局遊戲中每次使用都會漲價 {0} 點金錢。
   BoughtQuotes:
   - 謝謝惠顧
   CantAffordQuotes:
@@ -656,7 +657,7 @@ GameResult:
   FailReason: 失敗原因：
   Deprecated: ？？？（已過期）
   Abandon: 放棄
-  ReturnHint: 點擊任意處返回主菜單
+  ReturnHint: 點擊任意處返回主選單
   Unlock: 新道具解鎖
   UnlockHint: 新解鎖的展品及卡牌可以在未來的遊戲流程中出現
 
@@ -803,6 +804,16 @@ Tooltip:
     BR: 黑紅
     BG: 黑綠
     RG: 紅綠
+    UW: 藍白
+    BW: 黑白
+    RW: 紅白
+    GW: 綠白
+    BU: 黑藍
+    RU: 紅藍
+    GU: 綠藍
+    RB: 紅黑
+    GB: 綠黑
+    GR: 綠紅
   UsTitle: '{0}「{1}」'
 
   DetailedHint:
@@ -831,7 +842,7 @@ BattleHint:
   Intro: |-
     歡迎來到月都萬象展！努力尋找蓬萊玉枝的下落吧！
     如果您已遊玩過卡牌構築式遊戲，可以選擇|簡略提示|來查看本遊戲較為特別的部分。
-    此後的遊戲性提示也會遵循該設置。您可以在設置面板中隨時調整遊戲性提示的設置。
+    此後的遊戲性提示也會遵循該設置。您可以在設置面板中隨時調整遊戲性提示的等級。
   BasicBattle: |-
     打出手中的卡牌來退治敵人！
     打出後的手牌將會移入棄牌堆。在主角的回合結束時，仍留在手中的牌也將被移入棄牌堆。
@@ -855,13 +866,13 @@ BattleHint:
     敵人可能擁有攻擊、防禦、強化、施加負面狀態或釋放符卡等意圖。
   UltimateSkill: |-
     在危急時刻使用符卡扭轉戰局！
-    使用符卡需要消費一整管能量。被擊敗的敵人會掉落<sprite="Point" name="Power">，用以補充符卡所需的能量。
+    使用符卡需要消耗一整管能量。被擊敗的敵人會掉落<sprite="Point" name="Power">，用以補充符卡所需的能量。
     符卡每回合只能使用一次。
 
 MessageDialog:
   # Message
   GameAbandonWarning: 確定放棄已有的遊戲進度？
-  ReturnToMainMenu: 是否要返回主菜單？
+  ReturnToMainMenu: 是否要返回主選單？
   QuitGame: 是否要退出遊戲？
   UnsavedWarning: 任何未保存的進度將丟失。
   XCostEmptyUsageWarning: 是否在未設置法力的情況下使用{0}？
