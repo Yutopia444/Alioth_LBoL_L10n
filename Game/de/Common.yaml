@@ -51,6 +51,7 @@ Game:
   Passive:  Passiv 
   PlayerNameTurn: '{0}s Zug'
   FollowCardOnly: Zeige Folgeaktionskarten
+  UnlockLevel: Untersuchungsstufe
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
   OncePerTurn: Kann nur einmal pro Zug verwendet werden.
@@ -193,7 +194,7 @@ Setting:
     Kampfes oder in Yukaris Spalte.
   CostMoreLeftDescription: "Die Manakosten einer Karte befinden sich im oberen rechten\
     \ Eck.\nDas Aktivieren dieser Einstellung verschiebt die Manakosten etwas nach\
-    \ links, damit die Kosten nicht von den benachbarten Karten verdeckt werden."
+    \ links, damit sie nicht von den benachbarten Karten verdeckt werden."
   Vsync: VSync ({0}FPS)
   AudioUi: Menülautstärke
   AudioSfx: Effektlautstärke
@@ -209,12 +210,17 @@ Setting:
     \ Angriffsintentionen, usw.\nDie Standardgröße ist \"Klein\". Es wird empfohlen\
     \ auf \"Groß\" umzustellen, wenn auf einer geringen Auflösung gespielt wird."
   FrameRate: Framerate
+  Keyword: Schlüsselwörter
+  LoopOrderOff: Aus <sprite="ManaSprite" name="HWR">
+  LoopOrderOn: An <sprite="ManaSprite" name="HRW">
+  VideoQuality: Qualität
+  EnableGamepad: Gamepad aktivieren
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
   Terminator:  T-800 
-  FraudRabbitOnlyOne: Wieso bin ich als einzige übrig! Nutzlose Idioten.
-  FraudRabbitLongTurn: Tzz, das dauert mir zu lange. Ich bin raus.
+  FraudRabbitOnlyOne: Wieso bin ich als Einzige übrig! Nutzlose Idioten.
+  FraudRabbitLongTurn: Tsk, das dauert mir zu lange. Ich bin raus.
   FraudRabbitPlayer: Hey! Sie ist geflüchtet!
   LoveGirlPlayer: Ich liebe dich!
   LoveGirlRespond: Ich bin so glücklich!
@@ -224,7 +230,8 @@ Chat:
   LazyRabbit: Tama ist so nutzlos... Jetzt muss ich wohl Ernst machen.
   Star: Alles klar!
   Aya3: Schaut was {0:cs} in den Händen hält! Das ist Beweis genug, sie ist die Übeltäterin!
-  Limao1: Ich habe gehört das Essen im Schrein auf dem Gipfel des Berges ist klasse!
+  Limao1: Ich habe gehört, dass das Essen im Schrein auf dem Gipfel des Berges klasse
+    ist!
   DoremyMaster: Du bist nun an den Grenzen meiner Träume.
   Clownpiece3: It's lunatic time!
   DoremySleepLast: Ich kann nicht mehr essen~
@@ -235,7 +242,7 @@ Chat:
   LongPaperPlayer: "???\nWer liest so einen Müll?"
   DoremyKill: Du musst nie mehr aufstehen~
   SickGirl: '*Hust*... *Hust*...'
-  Sunny1: Heute zeigen wir {0:cs} wie stark wir wirklich sind!
+  Sunny1: Heute zeigen wir {0:cs}, wie stark wir wirklich sind!
   SijiTurn1: Deine Ausrede ist unzulässig, Strafe wird um ein Jahr verlängert.
   SijiTurn2: Missachtung des Gerichts, Strafe wird um ein Jahr verlängert.
   LongEscape1: Oh nein, ich wurde besiegt.
@@ -247,9 +254,9 @@ Chat:
     ich es dir.
   Rin2: Aua! Du bist wirklich gemein, Schwesterherz~
   YuyukoMooncake: Ich habe wirklich Hunger auf etwas {0}...
-  RinKoishi1: '{0} ist so süß! Ich möchte sie mit mir nach Hause nehmen!'
+  RinKoishi1: 'Miss {0} ist so süß! Ich möchte sie mit mir nach Hause nehmen!'
   YoumuMooncake: Gib mir mein {0} zurück!
-  Kokoro1: Ich habe das Gefühl, dass eine Menge meiner Masken verloren gegangen sind.
+  Kokoro1: Ich habe das Gefühl, dass immer mehr meiner Masken verloren gehen.
   WaterGirl: Du wirst mein Leid zu spüren bekommen!
   Purifier: Baymax
   Fox0: Oh, was für eine liebreizende junge Dame~
@@ -269,6 +276,10 @@ Chat:
   HetongYinchen1: Oh nein, du bist kaputtgegangen {0}.
   Terminator3: "KRITISCHEN SCHADEN ERLITTEN...\nREPARATUR EINLEITEN..."
   RinKoishi2: Aua! Du bist wirklich gemein, {0}~
+  LongBribery1: So gefällt mir das~
+  Limao2: Mal sehen, ob ich diese Fähigkeit richtig verwende...
+  LongBribery2: Nicht schlecht, nicht schlecht.
+  StarSpell: Ich kann jede deiner Bewegungen sehen~
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
@@ -293,7 +304,10 @@ StartGame:
   OpeningComic: Prolog anschauen
   NeedClear: Erledige die vorherige Schwierigkeitsstufe zum freischalten.
   SetSeed: Seed editieren
-  JadeBoxLock: Die Jadebox ist ab Stufe 10 erhältlich.
+  JadeBoxLock: Die Jadebox ist vefügbar ab Untersuchungsstufe 10.
+  IsLockHint: "Dieser Charakter ist verfügbar\nab Untersuchungsstufe {0}."
+  ClearNormal: Abgeschlossen
+  ClearTrue: Perfekt Abgeschlossen
 Museum:
   Hidden: Versteckt
   AllCards: Alle Karten
@@ -354,6 +368,10 @@ Map:
   Shop: Takanes Laden
   Map: Landkarte
   EliteEnemy: Elite
+  Previous: Vorherige
+  Next: Nächste
+  Entry: Aufbrechen
+  Hint: Drücke außerhalb der Landkarte, um diese zu schließen
 Tooltip:
   EntityTitle:
     Neutral: Neutral
@@ -364,6 +382,29 @@ Tooltip:
     Colorless: Farblos
     Green: Grün
     White: Weiß
+    RU: Rot/Blau
+    GU: Grün/Blau
+    RB: Rot/Schwarz
+    GB: Grün/Schwarz
+    GR: Grün/Rot
+    Character: Einzigartig
+    BU: Schwarz/Blau
+    CharacterTitle: '{0} {1} ({2})'
+    NeutralTitle: '{0} {1}'
+    WU: Weiß/Blau
+    WR: Weiß/Rot
+    WG: Weiß/Grün
+    UB: Blau/Schwarz
+    UR: Blau/Rot
+    UG: Blau/Grün
+    BR: Schwarz/Rot
+    UW: Blau/Weiß
+    BW: Schwarz/Weiß
+    RW: Rot/Weiß
+    BG: Schwarz/Grün
+    RG: Rot/Grün
+    GW: Grün/Weiß
+    WB: Weiß/Schwarz
   UsTitle: '{1}'
   DetailedHint:
     Name: Detailierte Hinweise
@@ -376,11 +417,12 @@ Tooltip:
     Name: 'Schwierigkeitsstufe: Wahnsinn'
   DrawZone:
     Name: Ziehstapel
-    Description: "Zu Beginn des Zuges, ziehe {0} Karten von deinem Ziehstapel. |d:(Effekte,\
-      \ die zu Beginn des Zuges aktiviert werden, aktivieren sich erst nachdem gezogen\
-      \ wurde.)|\nWenn dein Ziehstapel leer ist, mische die Karten vom Ablagestapel\
-      \ zurück in den Ziehstapel.\n\nKlicke auf den Ziehstapel um zu sehen, welche\
-      \ Karten sich darin befinden. |Die Karten im Ziehstapel werden ungeordnet angezeigt|"
+    Description: "Zu Beginn deines Zuges, ziehe {0} Karten von deinem Ziehstapel.\
+      \ |d:(Effekte, die zu Beginn des Zuges aktiviert werden, aktivieren sich erst\
+      \ nachdem gezogen wurde.)|\nSobald dein Ziehstapel leer ist, mische die Karten\
+      \ von deinem Ablagestapel zurück in den Ziehstapel.\n\nKlicke auf den Ziehstapel\
+      \ um zu sehen, welche Karten sich darin befinden. |Die Karten im Ziehstapel\
+      \ werden ungeordnet angezeigt|"
   DiscardZone:
     Name: Abwerfen
   ExileZone:
@@ -390,6 +432,9 @@ Tooltip:
     Description: Standard-Schwierigkeitsstufe
   GameSeed:
     Name: Seed
+    Description: "Jeder Durchlauf generiert einen zufälligen Seed. Zwei Durchläufe\
+      \ mit demselben Seed sind identisch.\n\nKlicke hier, um den Seed in der Zwischenablage\
+      \ zu speichern."
   EndTurn:
     Name: Zug beenden
   FinalStage:
@@ -403,7 +448,7 @@ Tooltip:
     Description: Kann gegen Ware in Takanes Laden getauscht werden.
   DifficultyEasy:
     Name: 'Schwierigkeitsstufe: Einfach'
-    Description: "Starte jeden Durchlauf mit einem von Kaguyas |Schätzen|.\nDu |r:kannst\
+    Description: "Starte jeden Durchlauf mit einen von Kaguyas |Schätzen|.\nDu |r:kannst\
       \ nicht| den finalen Akt betreten."
   Character:
     Name: '{0}'
@@ -412,6 +457,15 @@ Tooltip:
   Stage:
     Description: Besiege den Boss am Ende des Gebiets um den Akt abzuschließen.
     Name: Akt {0}
+  DontShowHint:
+    Name: Keine Hinweise
+    Description: "Keine Hinweise anzeigen.\nIch habe dieses Spiel bereits gespielt."
+  BaseMana:
+    Description: "Zu Beginn deines Zuges erhältst du Mana abhängig von deiner |Manabasis|.\n\
+      Deine |Manabasis| kann durch das Einsammeln von |Schimmernden Ausstellungsstücken|\
+      \ erweitert werden.\n\nDeine |Manabasis| beeinflusst außerdem, welche Karten\
+      \ du finden kannst."
+    Name: Manabasis
 Credits:
   MW: Animation
   Alioth: Alioth Studio
@@ -461,6 +515,8 @@ Shop:
   Chats:
   - Hierher, geschätzter Kunde~
   - Rundum faire Preise! Bist du sicher, dass du nichts benötigst?
+  RemoveTooltip: Entferne eine Karte aus der Bibliothek und erhöhe die Kosten jedesmal
+    um {0} <sprite="Point" name="Gold">.
 System:
   ReturnMainMenu: Hauptmenü
   ResumeGame: Spiel Fortsetzen
@@ -481,7 +537,7 @@ ErrorChat:
   LowMagic: Diese Puppe hat nicht genug Magie.
   MoneyNotEnough: Ich habe nicht genug Geld.
   LowMana: Ich habe nicht genug Mana.
-  UsUsedThisTurn: Ich habe meine Zauberkarte in diesem Zug bereits verwendet.
+  UsUsedThisTurn: Ich habe meine Zauberkarte bereits in diesem Zug bereits verwendet.
   CardCostChanged: Die Kosten dieser Karte haben sich geändert.
   LowPower: Ich habe nicht genug Energie.
   CardNotUsable: Karte kann nicht gespielt werden.
@@ -492,6 +548,7 @@ ErrorChat:
   HandFull: Meine Hand ist voll.
   EmptyDraw: Der Ziehstapel ist leer.
   CardFengyin: Ich wurde versiegelt.
+  UsUsedThisBattle: Ich habe meine Zauberkarte bereits in diesem Kampf verwendet.
 CardType:
   Misfortune: Unglück
   Ability: Talent
@@ -504,6 +561,12 @@ CardType:
 GameResult:
   Win: Vorfall gelöst
   DifficultyFactor: Schwierigkeitsstufe
+  UnlockHint: Freigespielte Ausstellungsstücke und Karten werden in zukünftigen Durchläufen
+    erscheinen.
+  Score: Punktzahl
+  Lose: Niederlagen
+  Abandon: Aufgegeben
+  BadEnd: Lass uns in die Zeit zurückreisen und es erneut versuchen...
 Rarity:
   Common: Gewöhnlich
   Uncommon: Ungewöhnlich
@@ -547,7 +610,62 @@ Cards:
   TransformDialog: Möchtest du diese Karte verwandeln?
   RemoveDialog: Möchtest du diese Karte entfernen?
   Size:  {0:plural one='% Karte' other='% Karten'}
+  RemoveTips: Wähle eine Karte und entferne sie
+  UpgradeTips: Wähle eine Karte und werte sie auf
+  TransformTips: Wähle eine Karte und transformiere sie
+  IsUpgraded: Aufgewertet
+  Show: Drücke Rechtsklick oder halte den Mauszeiger über die Karte, um die Details
+    anzuzeigen.
 TopInfo:
   Original: 'Original:'
 SelectCard:
   DreamCardsToHand: 'Traum: Füge 1 Karte deiner Hand hinzu'
+MessageDialog:
+  GameRunSaveDiscarded: Durch das letzte Versionsupdate wurde dein aktiver Durchlauf
+    verworfen.
+  ResetKeyBindingsWarning: Tastenbelegung zurücksetzen?
+  EarlyAccess: "|Touhou: Verlorener Zweig der Legende| befindet sich zurzeit im |d:Early\
+    \ Access|.\nSpielelemente können sich daher noch jederzeit ändern.\nWir arbeiten\
+    \ zurzeit am |Story-Modus| und |y:Alice|.\nBitte schaut euch die Steam Ankündigungen\
+    \ an, um weitere Informationen zu erhalten.\n\nFalls du während des Spielens auf\
+    \ Programmfehler stößt, kontaktiere uns bitte über die Steam Community oder unseren\
+    \ Discordserver."
+  CorruptedGameRunSaveData: Durchlauf-Daten sind beschädigt
+  XCostEmptyUsageTips: Du kannst das Mana für X-Kosten in der unteren linken Ecke
+    setzen.
+  DontShowHintWarning: Alle Hinweise deaktivieren?
+  ResetHintWarning: Hinweise zurücksetzen?
+  CloseBattleHint: Hinweise schließen?
+  SkipDialog: Dialog überspringen?
+  QuitGame: Spiel verlassen?
+  UnsavedWarning: Dein Fortschritt seit dem letzten Speicherpunkt geht verloren.
+  CannotRestoreEndedGameRun: Das Wiederherstellen abgeschlossener Durchläufe ist nicht
+    möglich
+  CorruptedSaveData: Speicherdaten sind beschädigt
+  GamepadUnfinishedText: Die Gamepad-Unterstützung befindet sich noch in der Entwicklung.
+  GamepadUnfinishedSubText: Die Verwendung des Gamepads wird nicht empfohlen, da es
+    zurzeit unvollständig ist.
+BattleHint:
+  Mana: "Drücke Rechtsklick auf eine Karte, um die Details anzeigen zu lassen. (Dies\
+    \ funktioniert auch für viele andere Bereiche in diesem Spiel).\nKarten zu spielen\
+    \ kostet Mana. Die Manakosten werden in der oberen linken Ecke einer Karte angezeigt.\n\
+    Es gibt 7 Arten : farbiges Mana <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"G\">, farbloses Mana <sprite=\"ManaSprite\"\
+    \ name=\"C\"> und Philosophen-Mana <sprite=\"ManaSprite\" name=\"P\">, welches\
+    \ jede farbige Mana ersetzen kann.\nGenerische Manakosten wie beispielsweise <sprite=\"\
+    ManaSprite\" name=\"2\"> kann mit einer beliebigen Farbe bezahlt werden."
+  DontShow: Keine Hinweise anzeigen
+  Prev: Vorherige
+  Next: Nächste
+  Detailed: Detaillierte Hinweise anzeigen
+Debut:
+  KaguyaChats:
+  - Ich werde ebenfalls der Sache nachgehen.
+  - 
+  - Vergiss nicht, bei Sonnenaufgang wieder hier zu sein~
+  EirinChats:
+  - 
+  - Die Wirkung der Medizin wird nachlassen, wenn du nicht bald aufbrichst~
+ManaSelect:
+  Title: Wähle einen Manatyp
