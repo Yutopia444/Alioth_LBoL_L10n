@@ -1685,8 +1685,8 @@ ZoufangWater:
     \ ce combat. ({AdditionalDamage})"
   Name: Eau Claire de Suwa
 RuowujiCard:
-  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à chaque ennemi,\
-    \ appliquez {Value1} |Noyade{Value1:plural one='' other='s'}|.\nCette |Noyade|\
+  Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} et appliquez\
+    \ {Value1} |Noyade{Value1:plural one='' other='s'}| à chaque ennemi.\nCette |Noyade|\
     \ ne s'empile pas."
   Name: Ondes à Échelle Inversée
 LigeluCard:
@@ -2152,11 +2152,11 @@ MeilingRain:
 LifeGame:
   Name: Jeu de la Vie
   Description: "Les cartes qui sont adjacentes à cette carte |coûtent temporairement|\
-    \ {Mana}.\nSi une carte ciblée est un |Malheur| ou une carte Statut, elle est\
-    \ |Exilée| à la place."
+    \ {Mana}.\nSi une carte ciblée par cet effet est un |Malheur| ou une carte Statut,\
+    \ elle est |Exilée| à la place."
   UpgradedDescription: "Les cartes qui sont adjacentes à cette carte |coûtent temporairement|\
-    \ {Mana} et sont |améliorées|.\nSi une carte ciblée est un |Malheur| ou une carte\
-    \ Statut, elle est |Exilée| à la place."
+    \ {Mana} et sont |améliorées|.\nSi une carte ciblée par cet effet est un |Malheur|\
+    \ ou une carte Statut, elle est |Exilée| à la place."
   DetailText: Si elle est jouée en consécutive, elle affecte la carte la plus à gauche
     de la main.
 SanaeRice:
@@ -2185,7 +2185,7 @@ GatherFairy:
   UpgradedDescription: "Limite de main augmentée à {MaxHand} cartes.\nPiochez {Value1}\
     \ cartes.\nToutes les cartes |alliées| en main gagnent {Value2} point{Value2:plural\
     \ one='' other='s'} |Soutien|."
-  FlavorText: '"Vous toutes êtes mes ailes !"'
+  FlavorText: '"Vous deux êtes mes ailes !"'
 WhiteWorld:
   Name: Monde Blanc Pur
   Description: "Lorsque {PlayerName} débute son tour, appliquez |Froid| à chaque ennemi.\n\
@@ -2538,7 +2538,7 @@ CirnoInForest:
   Name: Camouflage Brillant
   Description: "Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|.\nGagnez\
     \ {Value1} |Esquive{Value1:plural one='' other='s'}|."
-  FlavorText: Fée de la forêt.
+  FlavorText: Fées de la forêt.
 MoreFriends:
   Description: "Lorsque {PlayerName} débute son tour, ajoutez {Value1:plural one='%\
     \ carte |alliée| aléatoire' other='% cartes |alliées| aléatoires'} à la main.\n\
@@ -2569,12 +2569,13 @@ ColdBreath:
   Name: Souffle de Diamant
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'}.\nsi la cible\
     \ a |froid|, Gagnez {Mana}."
-  FlavorText: Un coup puissant dans les jeux de combat.
+  FlavorText: Vous pouvez utiliser ce coup pour gagner dans "The Queen of Fighters"
+    de cette année.
 FreezeToIce:
   Name: Spécimen Congelé
   Description: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'} de\
     \ votre main. Ajoutez autant d'|Ailes de Glace| à la pioche."
-  FlavorText: Vous êtes toutes mes ailes !
+  FlavorText: Vous deux êtes mes ailes (Littéralement) !
   UpgradedDescription: "|Exilez| jusqu'à {Value1} carte{Value1:plural one='' other='s'}\
     \ de votre main, pioche et défausse. Ajoutez autant d'|Ailes de Glace| à la pioche."
 DeepFreeze:
@@ -2600,7 +2601,8 @@ FairyTrick:
   UpgradedDescription: "Perdez {Value1} point{Value1:plural one='' other='s'} de vie.\n\
     Invoquez les quatre |e:Fées de Lumière|, ajoutez-en une au hasard à la main et\
     \ mélangez le reste dans la pioche."
-  FlavorText: Bien entendu, il y en a quatre dans le groupe de trois !
+  FlavorText: Bien entendu, il y en a quatre dans le groupe des Trois Fées de Lumière
+    !
 SummerIce:
   Name: Smoothie d'Été
   Description: "Gagnez {Mana} au début du tour suivant."
@@ -2693,7 +2695,7 @@ Xiguadao:
   Name: Couteau Pastèque
   Description: "Infligez {Damage} dégât{Damage:plural one='' other='s'} à un ennemi\
     \ aléatoire {Value1} fois.\nGagnez {Value2} |Puissance{Value2:plural one='' other='s'}|."
-  FlavorText: Super ⑨ Martial God Overlord Slash !
+  FlavorText: ⑨mnislash !
 CirnoFire:
   Name: Glace Combustible
   Description: "Gagnez {Value1} |Puissance{Value1:plural one='' other='s'}|.\nPour\
@@ -2770,7 +2772,7 @@ InstantFreeze:
     \ {PlayerName} joue un tour supplémentaire.\n|d:Limite de Temps {Mana}. |"
 ChooseFriend:
   Name: Rendez-vous au Lac Brumeux
-  FlavorText: Si vous êtes amoureux, tenez-vous la main.
+  FlavorText: Si le sentiment est réciproque, tenons-nous la main.
   Description: "Choisissez jusqu'à {Value2} parmi {Value1} cartes |alliées| aléatoires\
     \ et ajoutez-l{Value2:plural one='a' other='es'} à votre main, {Value2:plural\
     \ one='son coût peut être payé' other='leurs coûts peuvent être payés'} dans n'importe\
@@ -2782,7 +2784,7 @@ LunaFriend:
   Description: "{FriendP}Gagnez {Block} |Bouclier{Block:plural one='' other='s'}|."
   ExtraDescription1: "{FriendA}Infligez {Damage} dégât{Damage:plural one='' other='s'}\
     \ d'attaque à un ennemi aléatoire {Value1} fois."
-  FlavorText: Enquêtez tranquillement et ne faites aucun bruit.
+  FlavorText: Enquêtez furtivement, sans émettre un seul bruit.
   ExtraDescription3: "{FriendU}Gagnez |Perfection| pendant {Value2} tour{Value2:plural\
     \ one='' other='s'}."
 StarFriend:
