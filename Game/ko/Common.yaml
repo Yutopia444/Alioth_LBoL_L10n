@@ -81,6 +81,16 @@ Tooltip:
     BR: 흑/적색
     BG: 흑/녹색
     RG: 적/녹색
+    UW: 청/백색
+    GB: 녹/흑색
+    GR: 녹/적색
+    BW: 흑/백색
+    RW: 적/백색
+    GW: 녹/백색
+    BU: 흑/청색
+    RU: 적/청색
+    GU: 녹/청색
+    RB: 적/흑색
   UsTitle: '{0} 「{1}」'
   DontShowHint:
     Name: 힌트 없음
@@ -240,7 +250,7 @@ Setting:
     ToggleDiscardZone: 버린 카드 더미 표시
     ToggleExileZone: 소멸된 카드 더미 표시
     PoolG: <sprite="ManaSprite" name="G">를 선택지로 이동
-  SingleEnemyAutoSelectDescription: 대상을 지정해야하는 카드가 혼자 남은 적에게 자동으로 적용됩니다.
+  SingleEnemyAutoSelectDescription: 대상 지정이 필요한 카드를 사용할 때, 적이 혼자만 남아 있다면 자동으로 대상을 지정합니다.
   Enable: 켜기
   Disable: 끄기
   HintLevel: 힌트 표시
@@ -267,6 +277,17 @@ Setting:
   CostMoreLeftDescription: "카드의 코스트는 기본적으로 우상단에 표시됩니다.\n이 설정을 킬 시 약간 왼쪽으로 이동하여 우측에\
     \ 있는 카드에 의해 겹쳐보이지 않게 합니다."
   CostMoreLeft: 코스트 좌측 표시
+  LoopOrder: 카드 색 순환
+  LoopOrderOff: 끄기 <sprite="ManaSprite" name="HWR">
+  LoopOrderOn: 켜기 <sprite="ManaSprite" name="HRW">
+  LoopOrderDescription: "카드 색이 MtG 방식대로 순환하도록 만듭니다.\n백/적, 백/녹, 청/녹은 순서가 반대로 표시됩니다.\
+    \ (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"\
+    ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\"\
+    \ name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\n이러한 코스트 순서를 지닌 카드(하이브리드\
+    \ 마나 포함)만 영향을 받으며, 전체적인 마나 색 순서에는 영향을 끼치지 않습니다."
+  AnimatingEnvironmentDescriptionLocked: "필드와 스키마에서의 배경이 움직이는지에 대한 여부입니다.\n(메인 메뉴에서만\
+    \ 설정할 수 있습니다)"
+  EnableGamepad: 게임패드 사용
 UI:
   SaveHint: 게임이 저장되었습니다.
   Numbers:
@@ -604,6 +625,8 @@ MessageDialog:
   CorruptedGameRunSaveData: 게임 진행 데이터가 파손되었습니다.
   CannotReenterStation: 스테이지에 재입장할 수 없습니다.
   GameRunSaveDiscarded: "게임이 업데이트되었습니다.\n마지막 게임 진행 상황이 파기되었습니다."
+  GamepadUnfinishedSubText: 미완성된 그래픽이 표시될 가능성이 있으므로 현시점에서 권장하지 않습니다.
+  GamepadUnfinishedText: 게임패드 지원은 현재 개발 중에 있습니다.
 Cards:
   RemoveTips: 제거할 카드를 선택하세요
   UpgradeDialog: 이 카드를 강화합니까?
@@ -655,7 +678,7 @@ Shop:
   - 사줘서 고마워!
   Skip: 넘기기
   Remove: 카드 제거
-  RemoveTooltip: "덱에서 카드를 제거합니다.\n제거할 때마다 가격이 {0}원씩 올라갑니다. (최대 {1})"
+  RemoveTooltip: "덱에서 카드를 제거합니다.\n제거할 때마다 가격이 {0}원씩 올라갑니다."
   CantAffordQuotes:
   - 자선 사업이 아니란말야.
   - 지금 가진 돈으론 살 수 없을걸.
@@ -685,9 +708,9 @@ TopInfo:
   Artist: '아티스트:'
 BattleHint:
   Brief: 간략한 힌트 표시
-  Intro: "월도만상전에 어서오세요! 봉래의 옥의 가지를 찾는 모험을 떠나보시기 바랍니다.\n이전에 이미 다른 덱빌딩 게임을 해 본 경험이 있다면\
-    \ |간략한 힌트 표시|를 골라 이 게임만의 메커니즘과 관련된 힌트만을 표시할 수 있습니다.\n이후 게임 플레이 힌트 또한 이 설정을 따릅니다.\
-    \ 게임 플레이 힌트는 언제나 설정에서 변경할 수 있습니다."
+  Intro: "월도만상전에 어서 오세요! 봉래의 옥의 가지를 찾는 모험을 떠나보시기 바랍니다.\n이전에 이미 다른 덱 빌딩 게임을 해 본 경험이\
+    \ 있다면 |간략한 힌트 표시|를 골라 이 게임만의 메커니즘과 관련된 힌트만을 표시할 수 있습니다.\n이후 게임 플레이 힌트 또한 이 설정을\
+    \ 따릅니다. 게임 플레이 힌트는 언제나 설정에서 변경할 수 있습니다."
   BasicBattle: "카드를 사용해 적을 퇴치하세요!\n사용된 카드는 버린 카드 더미로 옮겨집니다. 턴이 종료되면, 손에 남아있는 카드들 또한\
     \ 버린 카드 더미로 옮겨집니다.\n새로운 카드들은 내 턴 시작 시 새로 뽑게 됩니다."
   ManaPanel: "마나 패널에는 현재 마나가 얼마나 남았는지가 표시됩니다.\n마나를 좌클릭해 \"사용\" 상태로 전환합니다. 이 상태의 마나는\
