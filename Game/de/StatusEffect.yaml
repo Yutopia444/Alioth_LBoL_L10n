@@ -30,12 +30,11 @@ ExtraTurn:
     \ nach diesem Zug."
   Brief: '{OwnerName} erhält einen weiteren Zug, sobald der Zug endet.'
 Vampire:
-  Brief: '{OwnerName} heilt dieselbe Menge an Leben,. Furchteinflößend!
-
-    Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe Menge
-    Leben. Furchteinflößend!'
+  Brief: 'Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe
+    Menge Leben. Furchteinflößend!'
   Name: Vampir
-  Description: '{OwnerName} erhält Leben in Höhe des ungeblockten Schadens. Furchteinflößend!'
+  Description: 'Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe
+    Menge Leben. Furchteinflößend!'
 Poison:
   Name: Gift
   Brief: '{OwnerName} verliert zu Beginn des Zuges Leben, danach reduziere |Gift|
@@ -166,8 +165,10 @@ PotionBaseDamageSe:
   Brief: '|Instabile Tränke| verursachen mehr Schaden.'
 PoisonPotionSe:
   Name: Hexenkessel
-  Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, verursache zusätzlich
-    {Level} |Gift|.
+  Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, füge zusätzlich
+    {Level} |Gift| zu.
+  Brief: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, füge zusätzlich |Gift|
+    zu.
 TurnStartDontLoseBlock:
   Description: "{OwnerName} verliert kein |Block| zu Beginn {Level:plural one='des\
     \ nächsten Zuges' other='der nächsten % Züge'}."
@@ -176,6 +177,7 @@ TurnStartDontLoseBlock:
     des Zuges.'
 WindGirl:
   Name: Gabe des Windgottes
+  Description: Am Ende des Zuges wird |Ausweichen| von {OwnerName} auf {Level} aufgefüllt.
 Amulet:
   Name: Amulett
   Description: Annulliert {Level:plural one='den nächsten negativen Effekt' other='die
@@ -193,10 +195,10 @@ TempElectric:
     \ Angreifer.\n{OwnerName} verliert diesen Effekt zu Beginn des nächsten |Natürlichen\
     \ Zuges|."
 Reflect:
-  Description: Nach einem feindlichen Angriff, verursache {Level} Schaden an den Angreifer
+  Description: Verursache nach einem feindlichen Angriff {Level} Schaden an den Angreifer
     und entferne diesen Effekt.
   Name: Reflektion
-  Brief: Nach einem feindlichen Angriff, verursache Schaden an den Angreifer und entferne
+  Brief: Verursache nach einem feindlichen Angriff Schaden an den Angreifer und entferne
     diesen Effekt.
 ManaFreezed:
   Name: Manafrost
@@ -254,6 +256,10 @@ TimeAuraSe:
     \ 1 Zeitimpuls für jeden getroffenen Feind."
 FrostArmor:
   Name: Eisrüstung
+  Brief: "Jedes Mal, wenn {PlayerName} |Eisrüstung| erhält, erhalte die gleiche Menge\
+    \ |Block|.\nZu Beginn des Zuges erhält {OwnerName} |Block| in Höhe der |Eisrüstung|\
+    \ und verliert .\nJedes Mal, wenn {OwnerName} Schaden erleidet, verliere zusätzlich\
+    \ 1 |Eisrüstung|."
 Concentration:
   Name: Konzentration
 MasterOfCollectionSe:
@@ -265,6 +271,10 @@ ChargingPotionSe:
     |Aufladung{Level:plural one='' other='en'}|.
 ColdPotionSe:
   Name: Kühlmittel
+  Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, füge zusätzlich
+    |Kälte| zu.
+  Brief: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, füge zusätzlich |Kälte|
+    zu.
 TempFirepower:
   Name: Temporäre Feuerkraft
   Description: "Bis zum Ende des Zuges, erhalte {Level} |Feuerkraft|.\n|Feuerkraft|\
@@ -376,8 +386,9 @@ NextTurnGainBlock:
   Name: Zukünftiger Block
 Servant:
   Name: Beschwörung
-  Description: "Beschworene Feinde werden sofort besiegt, falls sie die letzten verbleibenden\
-    \ Feinde sind.\nAuf diese Weise besiegten Feinde aktivieren keine Effekte."
+  Description: "Falls sich nur noch beschworene Feinde auf dem Schlachtfeld befinden,\
+    \ werden alle Feinde sofort besiegt.\nFeinde aktivieren keine Effekte, wenn sie\
+    \ auf diese Weise besiegt werden."
 DeathVulnerable:
   Description: Wird {OwnerName} besiegt, erhält {PlayerName} {Level} |Verwundbar|.
   Name: Heimsuchende Krankheit
@@ -399,7 +410,7 @@ LimitedDamage:
     Schaden: {Count}.'
   Name: Befreier der Gegenstände
 AmuletForCard:
-  Name: Schutzfeld
+  Name: Bannkreis
   Description: Annulliert das Hinzufügen der nächsten {Level:plural one='Statuskarte'
     other='% Statuskarten'} und sendet die Karte {Level:plural one='' other='n'} ins
     |Exil|.
@@ -552,6 +563,7 @@ PerfectServantWSe:
     Karten auf deiner Hand um {Level} zufälliges Mana.
   Brief: Zu Beginn des nächsten Zuges |kosten temporär| alle Karten auf der Hand eine
     zufällige Menge Mana weniger.
+  Name: Einsatzbereit
 MihuanJackSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Zeitimpuls{Level:plural
     one='' other='e'}|.
@@ -581,11 +593,16 @@ IceMatrixSe:
 Immune:
   Name: Eisblock
   Brief: '{OwnerName} kann kein Leben verlieren.'
+  Description: "{OwnerName} kann für {Duration:plural one='diesen Zug' other='die\
+    \ nächsten % Züge'} kein Leben verlieren."
 LunaClockSe:
   Description: Die Angriffe von {PlayerName} fügen in diesem Zug keinen Schaden zu.
   Brief: Die Angriffe von {PlayerName} fügen in diesem Zug keinen Schaden zu.
 EvilMaidSe:
   Name: Dienstmädchen des Teufels
+  Description: Die Angriffe von {OwnerName} verursachen für {Level:plural one='diesen
+    Zug' other='die nächsten % Züge'} doppelten Schaden.
+  Brief: Angriffe verursachen für die nächsten Züge doppelten Schaden.
 EvilMaidDoubleAttack:
   Name: Teuflische Kräfte
 SpecialClockSe:
@@ -601,8 +618,13 @@ DangerousMagicianSe:
   Brief: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, erhält {PlayerName} |Zeitimpulse|.
 KnifeTarget:
   Name: Ziel anvisieren
+  Description: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
+  Brief: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
 FreezeBulletSe:
   Name: Frostschuss
+  Description: "Füge für die nächsten {Level} feindlichen Angriffe |Kälte| an den\
+    \ Angreifer zu.\nZu Beginn des nächsten Zuges von {OwnerName}, entferne diesen\
+    \ Effekt."
 SakuyaInvestigateSe:
   Description: Zu Beginn deines Extrazuges, füge allen Feinden {Level} |Anvisieren|
     zu.
@@ -614,8 +636,15 @@ SilverBladeSe:
     |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
+  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufäliges überschüssiges
+    Mana.
 TimeMagicSe:
   Name: Zeitmagie
+  Description: "Zu Beginn deines Extrazuges, wähle {Level} von {Limit} |p:vollkommen\
+    \ zufällige| nicht-Gewöhnliche Karte{Limit:plural one='' other='n'} und füge sie\
+    \ deiner Hand hinzu. Diese {Level:plural one='Karte hat' other='Karten haben'}\
+    \ |Exil|, |Ätherisch|, koste{Level:plural one='t' other='n'} {Mana} weniger und\
+    \ die Manakosten können mit jeder Farbe gezahlt werden.\n"
 DeepFreezeSe:
   Description: Jedes Mal, wenn eine blaue Karte gespielt wird, erhält {PlayerName}
     {Level} |Temporäre Feuerkraft|.
@@ -623,6 +652,9 @@ DeepFreezeSe:
     Feuerkraft|.
 ExtraDraw:
   Name: Feenintellekt
+  Description: Zu Beginn des nächsten Zuges von {OwnerName}, ziehe {Level} zusätzliche
+    Karte{Level:plural one='' other='n'}.
+  Brief: Zu Beginn des nächsten Zuges von {OwnerName}, ziehe zusätzliche Karten.
 ReverseJiejieSe:
   Name: Umgekehrte Grenze
   Description: Jedes Mal, wenn {PlayerName} einen |positiven Effekt| verliert, erhalte
@@ -873,3 +905,30 @@ KoishiUltimateSe:
   Brief: Zu Beginn deines Zuges, aktiviere die obersten Karten in deinem Ziehstapel.
 FrozenThroneSe:
   Name: Gefrorener Thron
+ClockCorpseSe:
+  Brief: Karten können nur zu Beginn des Zuges gezogen werden.
+  Description: Karten können nur zu Beginn des Zuges gezogen werden.
+NextTurnColdAll:
+  Brief: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind |Kälte| zugefügt.
+  Description: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind {Level}
+    Mal |Kälte| zugefügt.
+MinengZhuruSe:
+  Description: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand {Level:plural
+    one='wird' other='werden'} {Level} Mal zusätzlich ausgeführt.
+  Brief: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand werden zusätzliche
+    Male ausgeführt.
+SplitPotionSe:
+  Description: "|Instabile Tränke| verursachen {Level} {Level:Plural one='zusätzliches\
+    \ Mal' other='zusätzliche Male'} Schaden."
+FairyTreeSe:
+  Brief: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte |Block|.
+  Description: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte {Level}
+    |Block|.
+ExtraBlizzard:
+  Brief: Zu Beginn des nächsten Zuges verursacht {OwnerName} an allen Feinden |präzisen|
+    Schaden und fügt |Kälte| zu.
+  Description: Zu Beginn des nächsten Zuges verursacht {OwnerName} an allen Feinden
+    {Damage} |präzisen| Schaden und fügt |Kälte| zu.
+KnifeWithLockedOn:
+  Description: '|Wurfmesser| fügen {Level} |Anvisieren| zu, wenn sie gespielt werden.'
+  Brief: '|Wurfmesser| fügen |Anvisieren| zu, wenn sie gespielt werden.'
