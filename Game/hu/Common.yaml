@@ -273,6 +273,18 @@ Setting:
   CostMoreLeftDescription: "A kártyák mana költségei a jobb felső sarokban találhatóak.\n\
     Ezt bekapcsolva kicsit balrább igazodnak, hogy ne takarják a tőle jobb oldali\
     \ lapok."
+  LoopOrder: Színpárok Keringése
+  LoopOrderOff: Ki<sprite="ManaSprite" name="HWR">
+  LoopOrderDescription: "Felcseréli a Kártyaszínpárokat és MtG stílusban mutatja őket.\n\
+    Fehér/Piros, Fehér/Zöld és Kék/Zöld manák sorrendjét megfordítja. (<sprite=\"\
+    ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\"\
+    \ name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"\
+    HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\nCsak vizuális a sorrendváltozás (Hibrid\
+    \ Költségek is), és nem változtat az összességi manasorrenden."
+  LoopOrderOn: Be<sprite="ManaSprite" name="HRW">
+  AnimatingEnvironmentDescriptionLocked: "Dinamikus hátterek használata Yukari Közében\
+    \ és csata közben.\n(Lezárva, menj vissza a Főmenübe hogy változtathass rajta)"
+  EnableGamepad: Játékvezérlő Engedélyezése
 StatusEffectType:
   Positive: Erősítés
   Negative: Gyengítés
@@ -369,6 +381,16 @@ Tooltip:
     BR: Fekete/Piros
     BG: Fekete/Zöld
     RG: Piros/Zöld
+    RW: Piros/Fehér
+    GW: Zöld/Fehér
+    BU: Fekete/Kék
+    RU: Piros/Kék
+    GU: Zöld/Kék
+    GB: Zöld/Fekete
+    GR: Zöld/Piros
+    UW: Kék/Fehér
+    BW: Fekete/Fehér
+    RB: Piros/Fekete
   UsTitle: '{0} "{1}"'
   DetailedHint:
     Name: Részletes Javaslatok
@@ -449,6 +471,9 @@ MessageDialog:
   CorruptedSaveData: A Mentett adatok meghibásodtak
   CorruptedGameRunSaveData: A Játékfutam meghibásodott
   CannotReenterStation: Nem lehet belépni a szintre
+  GamepadUnfinishedSubText: A játékvezérlő használata még nem ajánlott, a befejezetlen
+    grafikák megjelenése miatt.
+  GamepadUnfinishedText: A játékvezérlő támogatás még fejlesztés alatt áll.
 Credits:
   Alioth: Alioth Studio
   Yutopia: Művészeti Irány / VFX (Vizuális Hatások)
@@ -794,8 +819,8 @@ Shop:
   Remove: Kártya Eltávolítása
   RemoveService: 'Eltávolít:'
   ShopRemovePrice: '{0} <sprite="Gold" name="gold">'
-  RemoveTooltip: 'Kitöröl egy kártyát a könyvtárból, és növeli az árát| {0} Pénzel|
-    minden törléssel. Maximális ár: {1} Pénz.'
+  RemoveTooltip: 'Kitöröl egy kártyát a könyvtárból, és növeli az árát |{0} Pénzzel|
+    minden törléssel'
   BoughtQuotes:
   - Köszönöm a vásárlást.
   CantAffordQuotes:
