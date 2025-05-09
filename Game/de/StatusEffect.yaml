@@ -439,10 +439,11 @@ ZhenmiaowanAbilitySe:
 GainKnifeSe:
   Brief: Zu Beginn deines Zuges, füge deiner Hand |Wurfmesser| hinzu.
   Description: Zu Beginn deines Zuges, füge deiner Hand {Level} |Wurfmesser| hinzu.
+  Name: Sternenklarer Schwerttanz
 PerfectServantUSe:
-  Brief: Zu Beginn des Zuges, erhalte {Mana} und ziehe Karten.
-  Description: Zu Beginn des Zuges, erhalte {Level} {Mana} und ziehe {Level:plural
-    one='% Karte' other='% Karten'}.
+  Brief: Zu Beginn des Zuges von {OwnerName}, erhalte {Mana} und ziehe Karten.
+  Description: Zu Beginn des Zuges von {OwnerName}, erhalte {Level} {Mana} und ziehe
+    {Level:plural one='% Karte' other='% Karten'}.
   Name: Zusätzliche Lösungen
 BailianFireSe:
   Description: "Zu Beginn deines Zuges, füge {Level} zufällige Fähigkeitskarte{Level:plural\
@@ -503,8 +504,8 @@ SuwakoHex:
     und dadurch nutzlos.
   Name: Hex
   ExtraDescription: "Zu Beginn deines Zuges wird eine zufällige Karte auf deiner Hand\
-    \ |verhext|.\n(Dieser Effekt wurde bereits verwendet und erneuert sich, nachdem\
-    \ {OwnerName} eine Aktion durchgeführt hat.)"
+    \ |verhext|.\n(Dieser Effekt wurde bereits aktiviert und wird im nächsten Zug\
+    \ von {OwnerName} zurückgesetzt.)"
 Curiosity:
   Description: Jedes Mal, wenn {PlayerName} eine |Talentkarte| spielt, erhält {OwnerName}
     {Level} |Feuerkraft|.
@@ -559,10 +560,10 @@ YinyangXueyinSe:
 YouxiangMoonSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
 PerfectServantWSe:
-  Description: Zu Beginn des nächsten Zuges, |senke vorübergehend die Kosten| aller
-    Karten auf deiner Hand um {Level} zufälliges Mana.
-  Brief: Zu Beginn des nächsten Zuges |kosten temporär| alle Karten auf der Hand eine
-    zufällige Menge Mana weniger.
+  Description: Zu Beginn des nächsten Zuges von {OwnerName}, |senke vorübergehend
+    die Kosten| aller Karten auf deiner Hand um {Level} zufälliges Mana.
+  Brief: Zu Beginn des nächsten Zuges von {OwnerName} |kosten temporär| alle Karten
+    auf der Hand eine zufällige Menge Mana weniger.
   Name: Einsatzbereit
 MihuanJackSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Zeitimpuls{Level:plural
@@ -573,6 +574,10 @@ DrawPhaseAddKnife:
     deiner Hand hinzu.
   Brief: Ziehe keine Karten zu Beginn des Zuges, füge stattdessen |Wurfmesser| deiner
     Hand hinzu.
+  Name: Wurfmesserstapel
+  ExtraDescription: "Ziehe keine Karten zu Beginn des Zuges, füge stattdessen {Limit}\
+    \ |Wurfmesser| deiner Hand hinzu.\n{SelfName} ist inaktiv und wird erst entfernt,\
+    \ nachdem dieser Effekt aktiviert wurde."
 BrokenTimelineSe:
   Description: Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana von der
     Manabasis.
@@ -598,6 +603,10 @@ Immune:
 LunaClockSe:
   Description: Die Angriffe von {PlayerName} fügen in diesem Zug keinen Schaden zu.
   Brief: Die Angriffe von {PlayerName} fügen in diesem Zug keinen Schaden zu.
+  ExtraDescription: "Die Angriffe von {PlayerName} fügen in diesem Zug keinen Schaden\
+    \ zu.\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser Effekt aktiviert\
+    \ wurde."
+  Name: Raumzeit-Riss
 EvilMaidSe:
   Name: Dienstmädchen des Teufels
   Description: Die Angriffe von {OwnerName} verursachen für {Level:plural one='diesen
@@ -605,6 +614,10 @@ EvilMaidSe:
   Brief: Angriffe verursachen für die nächsten Züge doppelten Schaden.
 EvilMaidDoubleAttack:
   Name: Teuflische Kräfte
+  Brief: Der Angriffsschaden von {PlayerName} ist für eine gewisse Anzahl an Zügen
+    verdoppelt.
+  Description: 'Verdopple den Angriffsschaden von {PlayerName} (Verbleibende Züge:
+    {Duration}).'
 SpecialClockSe:
   Name: Spezielle Stoppuhr
   Description: Zu Beginn deines Zuges, werfe {Level:plural one='eine Karte' other='bis
@@ -636,8 +649,10 @@ SilverBladeSe:
     |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
-  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufäliges überschüssiges
+  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges, überschüssiges
     Mana.
+  Brief: Am Ende deines Zuges behält {PlayerName} eine gewisse Menge an zufälliges,
+    überschüssiges Mana.
 TimeMagicSe:
   Name: Zeitmagie
   Description: "Zu Beginn deines Extrazuges, wähle {Level} von {Limit} |p:vollkommen\
@@ -792,18 +807,19 @@ ReimuGraceSe:
 ReimuSilenceSe:
   Name: '"Fantasy-Siegel -Stille-"'
 SihunYuSe:
-  Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde an.
+  Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde auf das Schlachtfeld.
 JunkoPurify:
   Name: Läuterndes Licht
-  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, |Purify| {Level}.
+  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, |Läutere| {Level} Mana.
 LightingModule:
   Name: Blitzmodul
   Description: Jedes Mal, wenn {OwnerName} einen Angriff landet, füge {Level} |Glamouröses
     Sternenlicht| deinem Ziehstapel hinzu.
 AccuracyModule:
   Description: Die Angriffe von {OwnerName} sind |Präzise|.
+  Name: Führungsmodul
 DragonBallSe:
-  Description: 'Zu Beginn des Zuges, erfülle den |Wunsch| von {OwnerName}: {PlayerName}
+  Description: 'Zu Beginn des Zuges von {OwnerName}, erfülle ihren |Wunsch|: {PlayerName}
     verliert das Spiel.'
 ColdHeartedSe:
   Name: Kaltblütig
@@ -891,6 +907,9 @@ UpgradeAllHandSe:
   Brief: Zu Beginn deines nächsten Zuges werden alle Karten auf deiner Hand |aufgewertet|.
   Description: Zu Beginn deines nächsten Zuges werden alle Karten auf deiner Hand
     |aufgewertet|.
+  ExtraDescription: "Zu Beginn deines nächsten Zuges werden alle Karten auf deiner\
+    \ Hand |aufgewertet|.\n{SelfName} ist inaktiv und wird erst entfernt, nachdem\
+    \ dieser Effekt aktiviert wurde."
 GrimoireStudySe:
   Description: Am Ende des Zuges, füge |Regenbogen| deiner Hand hinzu.
   Name: Dunkles Grimoire
@@ -908,6 +927,9 @@ FrozenThroneSe:
 ClockCorpseSe:
   Brief: Karten können nur zu Beginn des Zuges gezogen werden.
   Description: Karten können nur zu Beginn des Zuges gezogen werden.
+  ExtraDescription: "Karten können nur zu Beginn des Zuges gezogen werden.\n{SelfName}\
+    \ ist inaktiv und wird erst entfernt, nachdem dieser Effekt aktiviert wurde."
+  Name: Überreste einer Uhr
 NextTurnColdAll:
   Brief: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind |Kälte| zugefügt.
   Description: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind {Level}
@@ -932,3 +954,31 @@ ExtraBlizzard:
 KnifeWithLockedOn:
   Description: '|Wurfmesser| fügen {Level} |Anvisieren| zu, wenn sie gespielt werden.'
   Brief: '|Wurfmesser| fügen |Anvisieren| zu, wenn sie gespielt werden.'
+  Name: Du bist fällig!
+FastAttack:
+  ExtraDescription: "Jedes Mal, wenn die erste Karte in einem Zug gespielt wird, verursacht\
+    \ {OwnerName} {Level} |Angriffsschaden| an {PlayerName}.\n(Dieser Effekt wurde\
+    \ bereits aktiviert und wird im nächsten Zug von {OwnerName} zurückgesetzt.)"
+  Name: Hochgeschwindigkeitsangriff
+  Description: Jedes Mal, wenn die erste Karte in einem Zug gespielt wird, verursacht
+    {OwnerName} {Level} |Angriffsschaden| an {PlayerName}.
+JunkoColor:
+  ExtraDescription2: "Unreinheit von {PlayerName}: Inakzeptabel.\n{JunkoName} erhält\
+    \ |Feuerkraft| und \"Befreien von irdischen Unreinheiten\" wird verstärkt."
+  Description: 'Unreinheit von {PlayerName}: Geringfügig.'
+  ExtraDescription: "Unreinheit von {PlayerName}: Schwerwiegend.\n{JunkoName} erhält\
+    \ |Feuerkraft| und \"Befreien von irdischen Unreinheiten\" wird verstärkt."
+HuiyeTimeSe:
+  Description: 'In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende
+    Karten: {Count}).'
+  ExtraDescription: "In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende\
+    \ Karten: {Count}).\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
+    \ Effekt aktiviert wurde."
+Tired:
+  ExtraDescription: "In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende\
+    \ Karten: {Count}).\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
+    \ Effekt aktiviert wurde."
+  Description: 'In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende
+    Karten: {Count}).'
+Interview:
+  Name: Anhaltendes Interview
