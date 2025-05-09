@@ -1,9 +1,16 @@
 Friend:
   Name: Csapattárs
-  Description: ''
+  Description: 'Amikor kijátszák, megidéz egy |Csapattársat|.
+
+    A <sprite="Passive" name="x"> |f:Passzív Képesség| fordulónként csak egyszer használható,
+    általában a forduló végén.
+
+    A kártyát többször is ki lehet használni, hogy kijátsszák az <sprite="Active"
+    name="x"> |a:Aktív Képességet| vagy <sprite="Ultimate" name="x"> |u:Végső Képesség|.'
 FriendCard:
   Name: Csapattárs
-  Description: ''
+  Description: 'Miután megidézik őket, |Csapattársak| nagyon széleskörű hatásokat
+    tud nyújtani.'
 Gadgets:
   Description: '|Eszköz| kártyákat csak venni lehet a boltból.'
   Name: 'Eszköz'
@@ -35,23 +42,33 @@ Retain:
   Name: 'Visszatart'
   Description: 'Ez a kártya nem dobódik el a kör végén.'
 Debut:
-  Name: ''
-  Description: ''
+  Name: 'Kezdet'
+  Description: 'Akkor aktiválódik, ha ezt a kártyát első alkalommal játszák ki a csatában.'
 Scry:
-  Name: ''
-  Description: ''
+  Name: 'Jósol X'
+  Description: 'A legfelső X kártyára rátekint a húzó halomból, sorrendben. Bármennyit
+    a száműzött halomra lehet küldeni.'
 Grow:
-  Name: ''
-  Description: ''
+  Name: 'Növekedés'
+  Description: 'Amikor kijátszódik, javítja ezt a kártyát a |Növekedés| hatásával
+    a csata végéig.'
 Plentiful:
-  Name: ''
-  Description: ''
+  Name: 'Túlcsordulás'
+  Description: 'Amikor kihúzzák, kap egy bizonyos mennyiségű manát.
+
+    Csak egyszer lehet egy körben használni ezt a hatást.'
 Battlefield:
-  Description: ''
-  Name: ''
+  Description: '|Csatatér| az összes kártyára utal a kézben, húzó -. dobó -, és |Száműzött|
+    haolmban.
+
+    Nem utal olyan kártyákra, amiket eltávolítottak a csatatérről. Például |Képesség|
+    kártyák.
+
+    Valamint nem utal a könyvtárban lévő kártyákra.'
+  Name: 'Csatatér'
 Basic:
-  Name: ''
-  Description: ''
+  Name: 'Alapvető'
+  Description: 'Ez a kártya a kezdőkönyvtár része.'
 Ability:
   Name: 'Képesség'
   Description: 'Egy folyamatos hatást ad a harc végéig.
@@ -117,40 +134,53 @@ FollowCard:
   Description: '|Következmény Kártyák| a húzó halomból is aktiválhatóak további hatásként.'
 DreamCard:
   Name: 'Álom Kártya'
-  Description: ''
+  Description: 'Összekeverés után, válassz egyet az |Álomkártyák| közül és vedd a
+    kézbe.'
 Instinct:
-  Name: ''
-  Description: ''
+  Name: 'Ösztön'
+  Description: 'Akkor aktiválódik, ha ez a kártya a legbaloldalibb, vagy a legjobboldalibb.'
 XCost:
-  Name: ''
-  Description: ''
+  Name: 'X Költség'
+  Description: 'Amikor ezt a kártyát kijátszák, az összes lebegő mana elköltődik az
+    |X|-ért.
+
+    (A költség a bal lenti sarokban, a mana táblán állítható.)'
 Synergy:
-  Name: ''
-  Description: ''
+  Name: 'Szinergia Y'
+  Description: 'Minden elköltött Y-ért ami erre a kártyára költődött, egyszer megismétli
+    a feltüntetett hatást.'
 Purify:
-  Name: ''
-  Description: ''
+  Name: 'Tisztogat X'
+  Description: 'Átalakít X olyan manát <sprite="ManaSprite" name="C"> Színtelen Manává,
+    amely a leggyakoribb.'
 Expel:
-  Name: ''
-  Description: ''
+  Name: 'Kiutasít'
+  Description: 'Akkor aktiválódik, mikor a kártyát egy nem |idézett | ellenfél legyőzésére
+    használták.'
 Morph:
-  Name: ''
-  Description: ''
+  Name: 'Mana Költség Változás'
+  Description: 'A kártya költsége a csata végéig megváltozott.'
 TempMorph:
-  Name: ''
-  Description: ''
+  Name: 'Ideiglenes Mana Költség Változás'
+  Description: 'Ezen kártya költsége megváltozott amíg el nem hagyja a kezet.'
 Overdrive:
-  Name: ''
-  Description: ''
+  Name: 'Túlhajtás X'
+  Description: 'Aktiválódik, ha a Játékosnak legalább X |Töltése| van, elhasználva
+    azt a |Töltést|.'
 Overdraft:
-  Name: ''
-  Description: ''
+  Name: 'Túlhúzás X'
+  Description: 'A következő fordulód elején elveszesz X manát véletlenszerűen.
+
+    (A képernyő bal felső sarkában)'
 CopyHint:
-  Name: ''
-  Description: ''
+  Name: 'Másol'
+  Description: 'Egy csata során hozzáadott kártya |Másolata|. |Másolatokat| nem lehet
+    másolni.'
 NaturalTurn:
-  Description: ''
-  Name: ''
+  Description: '|Természetes Forduló| extra forduló helyett.
+
+    Mindkét oldal mindössze egy |Természetes fordulója lehet minden körben.'
+  Name: 'Természetes Forduló'
 FollowAttack:
   Name: ''
   Description: ''
@@ -170,10 +200,16 @@ Kicker:
   Name: ''
   Description: ''
 FriendSummoned:
-  Name: ''
-  Description: ''
+  Name: 'Csapattárs (Idézett)'
+  Description: 'Kézben marad fordulók közt
+
+    A <sprite="Passive" name="x"> |f:Passzív Képesség| fordulónként csak egyszer használható,
+    általában a forduló végén.
+
+    A kártyát többször is ki lehet használni, hogy kijátsszák az <sprite="Active"
+    name="x"> |a:Aktív Képességet| vagy <sprite="Ultimate" name="x"> |u:Végső Képesség|.'
 Loyalty:
-  Name: ''
+  Name: 'Egység'
   Description: ''
 Mood:
   Name: ''
