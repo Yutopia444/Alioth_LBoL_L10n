@@ -264,6 +264,10 @@ Concentration:
   Name: Konzentration
 MasterOfCollectionSe:
   Name: Meistersammler
+  Brief: Jedes Mal, wenn eine Karte |beibehalten| wird, reduziere ihre Manakosten
+    bis zum Ende des Kampfes.
+  Description: Jedes Mal, wenn eine Karte |beibehalten| wird, reduziere ihre Manakosten
+    um {Level} bis zum Ende des Kampfes.
 ChargingPotionSe:
   Name: Radioaktive Elemente
   Brief: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, erhalte |Aufladungen|.
@@ -635,9 +639,9 @@ KnifeTarget:
   Brief: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
 FreezeBulletSe:
   Name: Frostschuss
-  Description: "Füge für die nächsten {Level} feindlichen Angriffe |Kälte| an den\
-    \ Angreifer zu.\nZu Beginn des nächsten Zuges von {OwnerName}, entferne diesen\
-    \ Effekt."
+  Description: "Füge nach {Level:plural one='dem nächsten feindlichen Angriff' other='den\
+    \ nächsten % feindlichen Angriffen'} |Kälte| an den Angreifer zu.\nZu Beginn des\
+    \ nächsten Zuges von {OwnerName}, entferne diesen Effekt."
 SakuyaInvestigateSe:
   Description: Zu Beginn deines Extrazuges, füge allen Feinden {Level} |Anvisieren|
     zu.
@@ -665,6 +669,7 @@ DeepFreezeSe:
     {Level} |Temporäre Feuerkraft|.
   Brief: Jedes Mal, wenn eine blaue Karte gespielt wird, erhält {PlayerName} |Temporäre
     Feuerkraft|.
+  Name: Eiszapfentanz
 ExtraDraw:
   Name: Feenintellekt
   Description: Zu Beginn des nächsten Zuges von {OwnerName}, ziehe {Level} zusätzliche
@@ -835,6 +840,7 @@ FriendDrawSe:
   Brief: "Jedes Mal, wenn ein |Verbündeter| eine |a:Aktive Fähigkeit| oder eine |u:Ultimative\
     \ Fähigkeit| aktiviert, ziehe Karten.\nJedes Mal, wenn eine |u:Ultimative Fähigkeit|\
     \ aktiviert wird, erhalte zufälliges Mana."
+  Name: Gartenversammlung
 SakuyaKillerSe:
   Name: Mörder bei Nacht und Nebel
   Description: Am Ende deines Zuges, nachdem {PlayerName} einen Feind besiegt hat,
@@ -916,7 +922,9 @@ GrimoireStudySe:
   Brief: Am Ende des Zuges, füge |Regenbogen| deiner Hand hinzu.
 YukariFlyObjectSe:
   Description: Zu Beginn deines nächsten Zuges fügt {PlayerName} dem Feind mit den
-    meisten Leben {Level} Schaden zu.
+    meisten verbleibenden Leben {Level} Schaden zu.
+  Brief: Zu Beginn deines nächsten Zuges fügt {PlayerName} dem Feind mit den meisten
+    verbleibenden Leben Schaden zu.
 KoishiUltimateSe:
   Description: Zu Beginn deines Zuges, aktiviere die {Level:plural one='oberste Karte'
     other='obersten % Karten'} in deinem Ziehstapel.
@@ -934,6 +942,7 @@ NextTurnColdAll:
   Brief: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind |Kälte| zugefügt.
   Description: Zu Beginn des nächsten Zuges von {OwnerName} wird jedem Feind {Level}
     Mal |Kälte| zugefügt.
+  Name: Der Winter kommt
 MinengZhuruSe:
   Description: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand {Level:plural
     one='wird' other='werden'} {Level} Mal zusätzlich ausgeführt.
@@ -982,3 +991,69 @@ Tired:
     Karten: {Count}).'
 Interview:
   Name: Anhaltendes Interview
+ColdUp:
+  Description: Der Schadensmultiplikator durch das wiederholte Aktivieren von |Kälte|
+    wird um {Level} erhöht.
+  Brief: Der Schadensmultiplikator durch das wiederholte Aktivieren von |Kälte| wird
+    erhöht.
+ForeverCoolSe:
+  Brief: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit| eines\
+    \ |Verbündeten| aktiviert wird, füge zufälligen Feinden |Kälte| zu.\nJedes Mal,\
+    \ wenn einem Feind |Kälte| zugefügt wird, erhalten zufällige |Verbündete| auf\
+    \ deiner Hand 1 |Einigkeit|."
+  Description: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit|\
+    \ eines |Verbündeten| aktiviert wird, füge {Level:plural one='einem zufälligen\
+    \ Feind' other='% zufälligen Feinden'} |Kälte| zu.\nJedes Mal, wenn einem Feind\
+    \ |Kälte| zugefügt wird, {Level:plural one='erhält ein zufälliger |Verbündeter|'\
+    \ other='erhalten % zufällige |Verbündete|'} auf deiner Hand 1 |Einigkeit|."
+MaidFriendSe:
+  Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
+  Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
+  Name: Wurfmesser-Trainer
+StarFriendSe:
+  Description: Wenn {SourceCardName} Schaden verursacht, füge {Level} |Anvisieren|
+    zu.
+  Brief: Wenn {SourceCardName} Schaden verursacht, füge |Anvisieren| zu.
+  Name: Wie die Sterne am Himmel
+MoodPassion:
+  Name: Leidenschaft
+NextTurnPassion:
+  Description: Zu Beginn deines nächsten Zuges betritt {PlayerName} |Leidenschaft|
+    und zieht {Level} Karte{Level:plural one='' other='n'}.
+  Name: Zukünftige Leidenschaft
+  Brief: Zu Beginn deines nächsten Zuges betritt {PlayerName} |Leidenschaft| und zieht
+    Karten.
+PotionDefenseSe:
+  Brief: Jedes Mal, wenn in diesem Zug ein |Instabiler Trank| aktiviert wird, erhalte
+    |Barriere|.
+  Description: Jedes Mal, wenn in diesem Zug ein |Instabiler Trank| aktiviert wird,
+    erhalte {Level} |Barriere|.
+MoodPeace:
+  Name: Gelassenheit
+PassionDrawSe:
+  Brief: Jedes Mal, wenn {PlayerName} |Leidenschaft| betritt, ziehe Karten.
+  Description: Jedes Mal, wenn {PlayerName} |Leidenschaft| betritt, ziehe {Level}
+    Karte{Level:plural one='' other='n'}.
+MoreFriendsSe:
+  Name: Geselliger Schmetterling
+  Description: "Zu Beginn deines Zuges, füge {Level:plural one='einen zufälligen |Verbündeten|'\
+    \ other='% zufällige |Verbündete|'} deiner Hand hinzu.\nDiese {Level:plural one='Karte\
+    \ hat' other='Karten haben'} |Ätherisch| und {Level:plural one='verliert' other='verlieren'}\
+    \ |Ätherisch|, nachdem sie gespielt wurde{Level:plural one='' other='n'}."
+  Brief: "Zu Beginn deines Zuges, füge zufällige |Verbündete| deiner Hand hinzu.\n\
+    Diese Karten haben |Ätherisch| und verlieren |Ätherisch|, nachdem sie gespielt\
+    \ wurden."
+SummerFlowerSe:
+  Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
+  Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
+MaxHandSe:
+  Name: Feenversammlung
+  Description: Das Limit an Karten auf der Hand erhöht sich auf {MaxHand}.
+  Brief: Das Limit an Karten auf der Hand erhöht sich auf {MaxHand}.
+LunaticPassionSe:
+  Name: Wahnsinnige Liebe
+  Description: "Der Schadensmodifikator von |Leidenschaft| wird auf {Percentage}%\
+    \ geändert.\nWährend {PlayerName} sich in |Leidenschaft| befindet, sind alle Angriffskarten\
+    \ |Präzise|."
+UpgradePeace:
+  Name: Anatta

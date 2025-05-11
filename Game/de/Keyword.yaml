@@ -55,7 +55,7 @@ Philosophy:
   Description: '<sprite="ManaSprite" name="P"> repräsentiert ein Mana jeder Farbe.'
 Upgrade:
   Name: 'Aufwertung'
-  Description: ''
+  Description: 'Verbessert den Effekt einer Karte oder verringert deren Kosten.'
 Initial:
   Name: ''
   Description: 'Zu Beginn des Kampfes, platziere diese Karte oben auf deinen Ziehstapel.'
@@ -73,9 +73,10 @@ Purified:
   Name: 'Rein'
 AutoExile:
   Name: 'Automatisches Exil'
-  Description: 'When you''re about to exceed your hand size, |Exile| this card.
+  Description: 'Wenn du dabei bist das Limit an Karten auf deiner Hand zu überschreiten,
+    sende diese Karte ins |Exil|.
 
-    The leftmost card in the hand with |Auto-Exile| is |Exiled| first.
+    Die Karte ganz links auf deiner Hand mit |Automatisches Exil| hat dabei Vorrang.
 
     Bestimmte Effekte werden nicht aktiviert, um Endlosschleifen zu vermeiden.'
 Debut:
@@ -101,7 +102,7 @@ Purify:
   Name: 'Läutern X'
 Expel:
   Name: 'Auslöschung'
-  Description: 'Dieser Effekt aktiviert sich, wenn ein |nicht-beschworener| Feind
+  Description: 'Dieser Effekt aktiviert sich, wenn ein nicht |beschworener| Feind
     mit dieser Karte besiegt wurde.'
 Morph:
   Name: 'Kosten Ändern'
@@ -139,10 +140,24 @@ NaturalTurn:
     Jeder Charakter erhält einen |Natürlichen Zug| pro Runde.'
 Friend:
   Name: 'Verbündeter'
-  Description: ''
+  Description: 'Wenn diese Karte gespielt wird, beschwöre einen |Verbündeten|.
+
+    Die <sprite="Passive" name="x"> |f:Passive Fähigkeit| aktiviert sich nur einmal
+    pro Zug (üblicherweise am Ende des Zuges).
+
+    Diese Karte kann ein weiteres Mal gespielt werden, um die <sprite="Active" name="x">
+    |a:Aktive Fähigkeit| oder <sprite="Ultimate" name="x"> |u:Ultimative Fähigkeit|
+    zu aktivieren.'
 FriendSummoned:
   Name: 'Verbündeter (Beschworen)'
-  Description: ''
+  Description: '|Verbündete| bleiben zwischen den Zügen auf der Hand.
+
+    Die <sprite="Passive" name="x"> |f:Passive Fähigkeit| aktiviert sich nur einmal
+    pro Zug (üblicherweise am Ende des Zuges).
+
+    Diese Karte kann ein weiteres Mal gespielt werden, um die <sprite="Active" name="x">
+    |a:Aktive Fähigkeit| oder <sprite="Ultimate" name="x"> |u:Ultimative Fähigkeit|
+    zu aktivieren.'
 Loyalty:
   Name: 'Einigkeit'
   Description: 'Wird benötigt, um |a:Aktive Fähigkeiten| und |u:Ultimative Fähigkeiten|
@@ -181,7 +196,9 @@ Copy:
   Description: 'Diese Karte ist eine Kopie.'
 Power:
   Name: 'Energie <sprite="Point" name="Power">'
-  Description: ''
+  Description: '<sprite="Point" name="Power"> lädt die Zauberkarte auf.
+
+    |d:(Wird im oberen linken Eck des Bildschirms angezeigt.)|'
 Replenish:
   Name: 'Nachschub'
   Description: 'Wenn diese Karte gezogen wird, ziehe eine Karte.'
