@@ -647,10 +647,19 @@ UpgradePotion:
     ha danmaku csatát akarsz nyerni!"'
 OpenUniverse:
   Name: Nyílt Világegyetem
+  Description: "Eltávolí a húzó halomból egy kártyát.\n2 olyan |Másolatot| tesz a\
+    \ kézbe ami |Ideiglenesen| {Mana} manába kerül és |Száműz| van rajta."
+  DetailText: Nem másolhatsz |Másolatot|.
+  FlavorText: A világegyetem lényege az önismétlés (?)
 SuperNova:
   Name: Szupernóva
+  Description: "{PlayerName} kap {Mana} manát.\nKézbe tesz {Value1} véletlen támadás\
+    \ kártyát a húzó halomból."
 RedGiantStar:
   Name: Vörös Óriás Becsapódás
+  Description: "{Damage} sebzést okoz.\n|Túlhajt {Value2}|: Kézbe tesz egy |Lángot|."
+  UpgradedDescription: "{Damage} sebzést okoz.\n|Túlhajt {Value2}|: Kézbe tesz egy\
+    \ |Szivárványt|."
 SolarSystem:
   Name: Csillagda Napja
   Description: '{PlayerName} fordulója elején, kap {Value1} |Töltést|.'
@@ -662,12 +671,27 @@ FinalSpark:
   UpgradedExtraDescription1: "{Damage} sebzést okoz minden ellenfélnek.\nMikor {PlayerName}\
     \ |Kitörésbe| kezd, {SelfName} visszakerül a dobó halomból a kézbe.\n|d:Túlcsordulás:\
     \ Kap {Mana} manát.|"
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Túlcsorulás|: {PlayerName}\
+    \ kap {Mana} manát."
+  ExtraDescription1: "{Damage} sebzést okoz minden ellenfélnek.\n|d:Túlcsordulás:\
+    \ {PlayerName} kap {Mana} manát.|"
+  FlavorText: '"Danmaku az mindössze tűzerő!"'
 HuoliQuankai:
   Name: Végső Hajrá
+  Description: "Mikor |Kitörésben| van, {PlayerName} támadásai kettő helyett háromszoros\
+    \ sebzést okoznak.\n{Value1} |Töltést| ad."
+  UpgradedDescription: "Mikor |Kitörésben| van, {PlayerName} támadásai kettő helyett\
+    \ háromszoros sebzést okoznak.\n|Kitörésbe| lép."
+  FlavorText: Rejtett energiatartalékok rákapcsolva!
 MasterOfCollection:
   Name: A Gyűjtögetés Mestere
+  Description: "Válassz legfeljebb {Value2} kártyát a kézből, |Visszatart| kerül rájuk.\n\
+    Mikor egy kártya |Visszamarad|, {Value1} véletlen manával kevesebbe kerül."
+  FlavorText: '"Szemét? Hogy lehetne ez szemét?"'
 ChargingPotion:
   Name: Radioaktív Elemek
+  Description: "Mikot egy |Instabil Főzet| aktiválódik, {Value1} |Töltést| ad.\nKézbe\
+    \ tesz {Value2} |Instabil Főzetet|."
 StarlightTaifengSummoner:
   Name: Csillagfény Konvergencia
   Description: "A húzó halomba tesz egy |Csillagfény Tájfunt|.\n|Minden elköltött\
@@ -678,40 +702,73 @@ StarlightTaifengSummoner:
     \ elköltött {Mana} manáért|: A hozzáadott kártya mégegy alkalommal sebez.\n|Minden\
     \ elköltött <sprite=\"ManaSprite\" name=\"R\"> manáért|: Növeli a hozzáadott kártya\
     \ sebzését {Value1} ponttal."
+  FlavorText: Gyűjts manát ezer napon keresztül, majd ereszd ki mind egy pillanatban.
 StarlightTaifeng:
   Name: Csillagfény Tájfun
+  Description: '{Damage} sebzést okoz {Value1} alkalommal.'
+  FlavorText: "\"Utolsó csapás! Várjunk, lássuk csak mi is ez a 'Hibátlan' hatás...\""
 FindCollection:
   Name: Távoli Segítség
   Description: Válassz 1 véletlen nem-{PlayerName} kártyát a {Value1} közül és vedd
     a kézbe. |Ideglenesen| {Mana} |manába kerül|, |Száműz| és |Éteri| van rajta.
+  FlavorText: A földalatti kalandok elengedhetetlen része.
 WhiteLaser:
   Name: Villámlézer
+  Description: "{Damage} sebzést okoz.\n{Shield} |Gátat| ad. Ezek értéke nő |Kitörés|\
+    \ alatt."
 BlazingStar:
   Name: Lángoló Csillag
+  Description: "{Block} |Blokkolást| ad. {PlayerName} következő fordulója elején nem\
+    \ veszti el a |Blokkolását|.\nBefejezi {PlayerName} fordulóját, majd egy extra\
+    \ fordulót kezd.\n|Időkorlát| {Mana}."
+  ExtraDescription1: "{Block} |Blokkolást| ad. {PlayerName} következő fordulója elején\
+    \ nem veszti el a |Blokkolását|.\nBefejezi {PlayerName} fordulóját, majd egy extra\
+    \ fordulót kezd.\n|d:Időkorlát {Mana}.|"
 SplitPotion:
   Name: Kettős Molekula
+  Description: "|Instabil Főzetek| még egy célpontnak okoznak sebzést.\nA húzó halomba\
+    \ tesz {Value1} |Instabil Főzetet|."
+  FlavorText: Egy gyors és egyszerű módja a főzetspórolásnak.
 ColdPotion:
   Name: Hűtőközeg
+  Description: "Az |Instabil Főzetek| aktiválódáskor |Hideget| is tesznek az ellenfélre.\n\
+    A húzó halomba tesz {Value1} |Instabil Főzetet|."
 ChargingToMana:
   Name: Töltésváltás
+  Description: Elveszi az összes |Töltést|. Minden így elvesztett |Töltéstért|, {PlayerName}
+    kap {Mana} manát és húz egy kártyát.
+  FlavorText: Nem lenne jobb az elején kék formában harcolni?
 DiscardToCharging:
   Name: Üzemanyag-utántöltés
+  Description: "Eldob bármennyi kártyát a kézből.\nMinden így eldobott kártyáért,\
+    \ {Value1} |Töltést| ad."
+  FlavorText: A mini-Hakkero tényleg mindent eléget.
 IceSpark:
   Name: Fagyott Lézer
+  Description: '{Damage} sebzést okoz, és |Hideget| tesz minden ellenfélre.'
 PatchouliFriend:
   Name: Patchouli, Elemi Alkimista
   ExtraDescription1: '{FriendA}{PlayerName} kap {Value1} |Tűzerőt| és |Lelket|. Kap
     {Power} <sprite="Point" name="Power">.'
+  Description: '{FriendP}Átalakít {PassiveColor} véletlen manát |Filozófus Manájává|.'
+  ExtraDescription2: '{FriendA2}Kézbe tesz {Value2} |Instabil Főzetet|.'
+  FlavorText: '"Rázd, rázd, lengesd, rázd."'
 MoguMaster:
   Name: Gombaspecialista
+  Description: Válassz {Value2} |Gombát| a {Value1} véletlen |Gomba| közül és vedd
+    a kézbe.
 RedMogu:
   Name: Gyilkos Galóca
+  Description: '{Value1} |Mérget| tesz az ellenfélre.'
 GreenMogu:
   Name: Kis Áldücskőgomba
+  Description: A húzó halomba tesz {Value1} |Instabil Főzetet|.
 BlueMogu:
   Name: Kobalt Laskagomba
+  Description: Húz {Value1} kártyát.
 PurpleMogu:
   Name: Lila Pénzecskegomba
+  Description: '{Value1} életerőt ad.'
 JungleMaster:
   Name: Erdőlakók
   Description: '|A csata elején|: {SelfName} |Száműztetik|, {PlayerName} kap {Value1}
@@ -720,26 +777,53 @@ ManaJungle:
   Name: Erdei Kaland
   Description: '|Mikor {SelfName} kézbe kerül|: Kézbe tesz |{Value1} Szivárványt|
     és {SelfName} |Száműzetik|.'
+  FlavorText: '"Heuréka! Megvan már!"'
 SakuyaAttackW:
   Name: Félrevezetés
+  Description: '{Damage} sebzést okoz.'
 SakuyaBlockU:
   Name: Veszély Megjósolva
+  Description: '{Block} |Blokkolást| ad.'
+  FlavorText: Egyenes mozgás mozdulatlanságot jelent.
 SakuyaAttackU:
   Name: Póker Lövés
+  Description: '{Damage} sebzést okoz.'
+  FlavorText: Talán az éterben lógó zsetonok súlya ami fűti ezeket a franciakártyákat.
 SakuyaBlockW:
   Name: Fekete Kulcsvédelem
+  Description: '{Block} |Blokkolást| ad.'
+  FlavorText: Miközben átvágott a közeledő danmakun, Sakuya érzett egy halvány árnyalatnyi
+    élvezetet.
 KnifeBounce:
   Name: Pattogó Kések
+  Description: "{Damage} sebzést okoz.\nKézbe tesz |{Value1} Dobókést|."
+  FlavorText: Úgy tűnik Sakuya nagyon sok Dobókést hajigál, de igazábol felveszi őket
+    miután megállította az időt.
 Lijian:
   Name: Messzi Kés Látszata
+  FlavorText: Mikor legközelebb látod ezt a dobókést, akkor tudod hogy végzetedre
+    leltél.
+  Description: "{Damage} sebzést okoz.\nHúz {Value1} kártyát.\n|Mikor {SelfName} kézbe\
+    \ kerül|: {SelfName} a csata során {Mana} manával kevesebbe kerül."
 PrivateVision:
   Name: Egyéni Látomás
+  Description: "Eldob egy kártyát.\n{Value1} |Kitérést| ad."
+  UpgradedDescription: "Eldob egy kártyát.\n{Value1} |Kitérést| ad.\n{Value2} |Tükröződést|\
+    \ ad."
 Knife:
   Name: Dobókés
+  ExtraDescription1: "{Damage} sebzést okoz.\n{Value2} |Rögzítést| tesz az ellenfélre.\n\
+    |Mikor {SelfName} elhagyja a kezet anélkül hogy kijátszanák|: {DropDamage} sebzést\
+    \ okoz a legkevesebb életerejű ellenfélnek."
+  Description: "{Damage} sebzést okoz.\n|Mikor {SelfName} kikerül a kézből, anélkül\
+    \ hogy kijátszanák|: {DropDamage} sebzést okoz a legkevesebb életerejű ellenfélnek."
 SakuyaZeroDefense:
   Name: Danmaku Eltérítés
 SakuyaSnow:
   Name: Téli Fogadalom
+  Description: "{Block} |Blokkolást| ad.\nKézbe tesz |{Value1} Dobókést|."
+  FlavorText: Egy kötelességtudatos cseléd kimegy, még akkor is ha derékig érő hóban
+    kell átkalimpálnia magát.
 Dejavu:
   Name: Déjà Vu
 CoolMaid:
