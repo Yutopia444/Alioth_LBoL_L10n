@@ -89,12 +89,11 @@ EnemyLily:
   Name: Ankündigung von Lily White
 ShenlingGold:
   Name: Geschenk des Reichtums
-  Description: Wenn {OwnerName} besiegt wird, erhält {PlayerName} {Level} <sprite="Point"
+  Description: Wird {OwnerName} besiegt, erhält {PlayerName} {Level} <sprite="Point"
     name="Gold">.
 ShenlingHp:
   Name: Geschenk der Eleganz
-  Description: Wenn {OwnerName} besiegt wird, erhält {PlayerName} {Level} maximales
-    Leben.
+  Description: Wird {OwnerName} besiegt, erhält {PlayerName} {Level} maximales Leben.
 Appliance:
   Name: Haushaltsgerät
   Description: '{OwnerName} ist immun gegen |Geschwächt| und |Verwundbar|.'
@@ -432,6 +431,10 @@ UpgradePotionSe:
   Name: Tränke verfeinern
 ModuoluoFireSe:
   Name: Enas Feuer
+  Description: Jedes Mal, wenn <sprite="ManaSprite" name="P"> verwendet wird, verursache
+    allen Feinden {Level} Schaden.
+  Brief: Jedes Mal, wenn <sprite="ManaSprite" name="P"> verwendet wird, verursache
+    allen Feinden Schaden.
 ZhenmiaowanAttackSe:
   Description: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
   Brief: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
@@ -450,12 +453,12 @@ PerfectServantUSe:
     {Level:plural one='% Karte' other='% Karten'}.
   Name: Zusätzliche Lösungen
 BailianFireSe:
-  Description: "Zu Beginn deines Zuges, füge {Level} zufällige Fähigkeitskarte{Level:plural\
-    \ one='' other='n'} deiner Hand hinzu. \nDie Karte{Level:plural one='' other='n'}\
+  Description: "Füge zu Beginn deines Zuges {Level} zufällige Fähigkeitskarte{Level:plural\
+    \ one='' other='n'} deiner Hand hinzu. Diese Karte{Level:plural one='' other='n'}\
     \ |koste{Level:plural one='t' other='n'} temporär| {Mana} und ha{Level:plural\
     \ one='t' other='ben'} |Exil| und |Ätherisch|."
-  Brief: "Zu Beginn deines Zuges, füge zufällige Fähigkeitskarten deiner Hand hinzu.\
-    \ \nDie Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|."
+  Brief: "Füge zu Beginn deines Zuges zufällige Fähigkeitskarten deiner Hand hinzu.\
+    \ Diese Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|."
   Name: Hokkais Feuer
 MeilingAbilitySe:
   Name: Intensive Regenbogenfaust
@@ -466,18 +469,32 @@ PrismriverSe:
     dieselbe Menge <sprite="ManaSprite" name="P">.
   Brief: Jedes Mal, wenn {PlayerName} Mana erhalten würde, erhält sie stattdessen
     dieselbe Menge <sprite="ManaSprite" name="P">.
+  Name: Prismatisches Konzert
 BlackPoisonSe:
   Name: Dunkler Tanz
+  Description: Jedes Mal, wenn {PlayerName} einem Feind , füge diesem Feind {Level}
+    |Gift| zu.
 YukariFriendSe:
   Name: Grenzen der Fantasie
+  Description: Füge zu Beginn deines Zuges {Level} zufällige, dreifarbige, neutrale
+    Karte{Level:plural one='' other='n'} deiner Hand hinzu. Diese Karte{Level:plural
+    one='' other='n'} |koste{Level:plural one='t' other='n'} temporär| {Mana} und
+    ha{Level:plural one='t' other='ben'} |Ätherisch|.
+  Brief: Füge zu Beginn deines Zuges zufällige, dreifarbige, neutrale Karten deiner
+    Hand hinzu. Diese Karten |kosten temporär| {Mana} und haben |Ätherisch|.
 MoonWorldSe:
   Name: Unbefleckte Welt
+  Description: Zu Beginn deines Zuges erhalten {Level} zufällige Karte{Level:plural
+    one='' other='n'} auf deiner Hand |Rein|.
+  Brief: Zu Beginn deines Zuges erhalten zufällige Karten in deiner Hand |Rein|.
 RangziFanshuSe:
   Brief: Erhalte am Ende des Kampfes eine gewisse Menge an Leben.
+  Description: Am Ende des Kampfes, heile {Level} Leben.
+  Name: Süße Süßkartoffel
 TodayYesterdaySe:
-  Description: Jedesmal wenn {OwnerName} einen Angriff |ausweicht|, erhält sie {Level}
+  Description: Jedes Mal, wenn {OwnerName} einem Angriff |ausweicht|, erhalte {Level}
     |Feuerkraft|.
-  Brief: Jedesmal wenn {OwnerName} einen Angriff |ausweicht|, erhält sie |Feuerkraft|.
+  Brief: Jedes Mal, wenn {OwnerName} einem Angriff |ausweicht|, erhalte |Feuerkraft|.
   Name: Gensokyo, Vergangenheit und Gegenwart
 BladePowerSe:
   Description: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, füge {Level} zufällige
@@ -488,8 +505,16 @@ BladePowerSe:
     deiner Hand hinzu. Die Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|.
 RainbowMarketSe:
   Name: Lunar-Regenbogenmarkt
+  Brief: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, füge zufällige Karten
+    deiner Hand hinzu.
+  Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, füge {Level} zufällige
+    Karte{Level:plural one='' other='n'} deiner Hand hinzu.
 KokoroDanceSe:
   Name: Tanz der leeren Masken
+  Brief: Jedes Mal, wenn ein Feind einen |negativen Effekt| erhält, verursacht {PlayerName}
+    an diesem Feind Schaden.
+  Description: Jedes Mal, wenn ein Feind einen |negativen Effekt| erhält, verursacht
+    {PlayerName} diesem Feind {Level} Schaden.
 YonglinUpgradeSe:
   Name: Mondhasen Duft
 CommonFireSe:
@@ -497,6 +522,7 @@ CommonFireSe:
     Karte gespielt wurde.'
   Brief: '{OwnerName} erhält |Temporäre Feuerkraft|, nachdem eine Gewöhnliche Karte
     gespielt wurde.'
+  Name: Gewöhnliche Macht
 DeathExplodeCount:
   Name: Rachekugel
 DeathExplodeNotCount:
@@ -563,6 +589,8 @@ YinyangXueyinSe:
   Name: Yin-Yang Rune
 YouxiangMoonSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
+  Name: Natürliche Schönheit
+  Brief: Zu Beginn deines Zuges erhält {PlayerName} {Mana}.
 PerfectServantWSe:
   Description: Zu Beginn des nächsten Zuges von {OwnerName}, |senke vorübergehend
     die Kosten| aller Karten auf deiner Hand um {Level} zufälliges Mana.
@@ -711,6 +739,11 @@ DreamExpressSe:
   Name: Traum-Express
 MeihongPowerSe:
   Name: Die unsterbliche Flamme
+  Description: "Zu Beginn deines Zuges erhält {PlayerName} {Level} |Feuerkraft|.\n\
+    Wenn das Leben von {PlayerName} am Ende des Kampfes weniger als die Hälfte beträgt,\
+    \ heile {Heal} Leben."
+  Brief: "Zu Beginn deines Zuges erhält {PlayerName} |Feuerkraft|.\nWenn das Leben\
+    \ von {PlayerName} am Ende des Kampfes weniger als die Hälfte beträgt, heile Leben."
 Sleep:
   Name: Verschlinger der Träume
   Description: "Am Ende des Zuges wird die |Barriere| von {OwnerName} auf {Level}\
@@ -731,11 +764,12 @@ Charging:
   Description: Wenn {PlayerName} mindestens {TriggerLevel:plural one='% |Aufladung|'
     other='% |Aufladungen|'} erreicht, aktiviere |Durchbruch|.
 ReimuEvilTerminatorSe:
-  Description: Jedes Mal, wenn ein Feind besiegt wurde, erhalte {Mana}.
-  Brief: Jedes Mal, wenn ein Feind besiegt wurde, erhalte Mana.
+  Description: Jedes Mal, wenn ein Feind besiegt wird, erhalte {Mana}.
+  Brief: Jedes Mal, wenn ein Feind besiegt wird, erhalte Mana.
 MeilingWaterSe:
   Description: Zu Beginn des Zuges verliert {OwnerName} {Level} Leben.
   Brief: Zu Beginn des Zuges verliert {OwnerName} Leben.
+  Name: Bedrängt
 YouxiangWakeSe:
   Name: Frühaufsteher
 LoseSpiritSe:
@@ -876,6 +910,7 @@ UseCardToLoseGame:
 NextTurnLoseGame:
   Description: Zu Beginn deines nächsten Zuges, verliere das Spiel.
   Brief: Zu Beginn deines nächsten Zuges, verliere das Spiel.
+  Name: Mit einem Bein im Grab
 KoishiDnaSe:
   Name: Defekte DNA
 ButterflyDreamSe:
@@ -897,6 +932,9 @@ KoishiPhoneSe:
     \ befinden, wird |Klingelndes Telefon| als |Folgeaktion| verwendet."
 MoreDraw:
   Name: Hingabe des Lehrers
+  Description: Zu Beginn deines Zuges ziehe {Level} zusätzliche Karte{Level:plural
+    one='' other='n'}.
+  Brief: Zu Beginn deines Zuges ziehe zusätzliche Karten.
 CloseEyeSe:
   Name: Geschlossenes Auge
 BailianBlackSe:
@@ -904,6 +942,7 @@ BailianBlackSe:
     Die betroffenen Karten kosten {Mana}.
   Brief: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
     Karten kosten {Mana}.
+  Name: Der Dunkelheit hingeben
 ShannvAbilitySe:
   Name: Unerklärliches Fieber
   Description: Am Ende deines Zuges fügt {PlayerName} allen Feinden {Level} |Gift|
@@ -1057,3 +1096,68 @@ LunaticPassionSe:
     \ |Präzise|."
 UpgradePeace:
   Name: Anatta
+MeihongFireSe:
+  Brief: "Am Ende deines Zuges verursacht {PlayerName} an allen Feinden Schaden.\n\
+    Aktiviere diesen Effekt auch, nachdem eine |Unglückskarte| oder Statuskarte gezogen\
+    \ wird."
+  Description: "Am Ende deines Zuges verursacht {PlayerName} an allen Feinden {Level}\
+    \ Schaden.\nAktiviere diesen Effekt auch, nachdem eine |Unglückskarte| oder Statuskarte\
+    \ gezogen wird."
+  Name: Willkürliche Brandstiftung
+RinDrawSe:
+  Brief: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe Karten.
+  Description: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe {Level} Karte{Level:plural
+    one='' other='n'}.
+HekaHellRainSe:
+  Description: "Am Ende des Zuges von {OwnerName}, verursache allen Feinden {Level}\
+    \ Schaden für jede gespielte Karte in diesem Zug.\nAngesammelter Schaden: {Count}"
+  Name: Höllenregen
+  Brief: Am Ende des Zuges von {OwnerName}, verursache allen Feinden Schaden für jede
+    gespielte Karte in diesem Zug.
+TiangouOrderSe:
+  Name: Erlass des großen Tengus
+  Description: Wenn {OwnerName} Angriffsschaden erleidet, erhält {PlayerName} {Level}
+    |Block|.
+  Brief: Wenn {OwnerName} Angriffsschaden erleidet, erhält {PlayerName} |Block|.
+TianziRockSe:
+  Description: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere den
+    Schaden um {Level}.
+BailianMagicSe:
+  Brief: Die nächsten |Talentkarten| in diesem Zug aktivieren sich zweimal.
+  Description: Die {Level:plural one='nächste |Talentkarte|' other='nächsten % |Talentkarten|'}
+    in diesem Zug {Level:plural one='aktiviert' other='aktivieren'} sich zweimal.
+JinziDoppelgangerSe:
+  Name: Centurys Doppelgängerin
+SeeFengshuiSe:
+  Name: Feng-Shui Manipulation
+  Description: "Zu Beginn deines Zuges {PlayerName}'s turn, |Scry| {Scry}.\nJedes\
+    \ Mal, wenn Verteidigungskarten durch eine |Vorhersehung| abgeworfen wird, erhalte\
+    \ {Block} |Block|."
+YachieDefendSe:
+  Brief: "Verhindere die nächsten Male, an denen {OwnerName} Leben verlieren würde.\n\
+    Stammt der Lebensverlust von einem Feind, verliert dieser Feind stattdessen dieselbe\
+    \ Menge Leben."
+  Description: "Verhindere {Level:plural one='das nächste Mal' other='die nächsten\
+    \ % Male'}, an denen {OwnerName} Leben verlieren würde.\nStammt der Lebensverlust\
+    \ von einem Feind, verliert dieser Feind stattdessen dieselbe Menge Leben."
+CatchGoblinSe:
+  Brief: Erleide 33% weniger Schaden. Wird {OwnerName} besiegt, erhält {PlayerName}
+    50 <sprite="Point" name="Gold">.
+  Description: Erleide 33% weniger Schaden. Wird {OwnerName} besiegt, erhält {PlayerName}
+    50 <sprite="Point" name="Gold">.
+HuiyeManaSe:
+  Brief: "Zu Beginn deines Zuges erhält {PlayerName} zufälliges Mana.\nErhöhe jede\
+    \ Runde die erhaltende Menge."
+  Description: "Zu Beginn deines Zuges erhält {PlayerName} {Count} zufälliges Mana.\n\
+    Erhöhe jede Runde die erhaltende Menge um {Level}."
+YonglinCardSe:
+  Brief: Füge am Ende deines Zuges |Falscher Mond| deinem Ziehstapel hinzu.
+  Description: Füge am Ende deines Zuges {Level} Mal |Falscher Mond| deinem Ziehstapel
+    hinzu.
+YinyangQueenSe:
+  Description: Die Effekte aller |Yin-Yang Kugeln| sind {Level} Mal so wirksam.
+  Brief: Die Effekte aller |Yin-Yang Kugeln| sind um ein vielfaches wirksamer.
+SanaeSummonGodSe:
+  Brief: Nach einer gewissen Anzahl an Zügen, erhalte |Feuerkraft| und |Geist|.
+  ExtraDescription: Zu Beginn deines nächsten Zuges erhält {PlayerName} {Level} |Feuerkraft|
+    und |Geist|.
