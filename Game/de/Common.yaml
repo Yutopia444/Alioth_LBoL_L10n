@@ -67,6 +67,36 @@ Explain:
     \ der Karte bleibt beim Ersetzen erhalten."
   PowerDescription: "Eine Zauberkarte zu verwenden verbraucht eine ganze Ladung.\n\
     |d:(Wird im oberen linken Eck des Bildschirms angezeigt.)|"
+  ShinmyoumaruForge: "1. Angriffskarten und Verteidigungskarten werden durch Karten\
+    \ des gleichen Kartentyps ersetzt.\n2. Die Aufwertung der Karte bleibt beim Ersetzen\
+    \ erhalten."
+  RollCard: "|Mögliche Karten durch Kartenbelohnungen|\n\nDu kannst gewisse Karten\
+    \ nur als Belohnung erhalten, wenn folgende Kriterien erfüllt sind:\n1: Die Manakosten\
+    \ der Karte können mit dem Mana in der |Manabasis| bezahlt werden.\n2: Einzigartige\
+    \ Karten können nur gefunden werden, wenn du den dazugehörigen Charakter spielst\
+    \ oder du das |Schimmernde Ausstellungsstück| des jeweiligen Charakters gefunden\
+    \ hat.\n3: Alle Farben der Karte sind in der |Manabasis| vertreten. Philosophen-Mana\
+    \ wird nicht mitgezählt.\n\nNehmen wir an, du spielst als Reimu und besitzt ein\
+    \ |Dunkles Grimoire|, einen |Stein des Philosophen| und einen |Wunderhammer|.\
+    \ |d:(Du hast zu Beginn dein schimmerndes Ausstellungsstück mit Eirin getauscht...)|\
+    \ \nDie |Manabasis| besteht somit aus <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    P\"><sprite=\"ManaSprite\" name=\"C\">. Es erscheinen nun einzigartige Karten\
+    \ von Reimu und Marisa, da du ein |Dunkles Grimoire| besitzt.\n\nIn solchen Fällen\
+    \ kannst du auch schwarze Karten finden die <sprite=\"ManaSprite\" name=\"B\"\
+    ><sprite=\"ManaSprite\" name=\"B\"> kosten, da du diese Karte durch <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> bezahlen kannst. Was\
+    \ du |r:nicht| finden könntest wäre eine schwarz/blaue Karte die <sprite=\"ManaSprite\"\
+    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"> kostet, da sich kein <sprite=\"\
+    ManaSprite\" name=\"U\"> in deiner |Manabasis| befindet, auch wenn du es durch\
+    \ <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> bezahlen\
+    \ könntest.\n\n|Blanke Karte|, ein |schimmerndes Ausstellungsstück|, erlaubt es\
+    \ dir Karten in |p:jeder Farbe| zu finden.\nDadurch können auch Karten gefunden\
+    \ werden, die mehr als 5 Mana benötigen und generische Manakosten |d:(<sprite=\"\
+    ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, etc.)| haben, obwohl\
+    \ in der |Manabasis| nicht genügend Mana vorhanden ist um sie zu spielen. Es gibt\
+    \ einige Wege, die Kosten solcher Karten zu reduzieren."
 UI:
   Divide: ','
   Yes: Ja
@@ -102,6 +132,8 @@ UI:
   SpellUntitled: '"{0}"'
   SkipHint: '{0} zum überspringen'
   CopyHint: Seed wurde in der Zwischenablage gespeichert.
+  SideCloseHint: Klicken, um zu schließen
+  SeRemove: '{0} ist verschwunden'
 MainMenu:
   Database: Extras
   Setting: Einstellungen
@@ -286,6 +318,13 @@ Chat:
   Limao2: Mal sehen, ob ich diese Fähigkeit richtig verwende...
   LongBribery2: Nicht schlecht, nicht schlecht.
   StarSpell: Ich kann jede deiner Bewegungen sehen~
+  Clownpiece2: Absorbiere die Juwelen des Lichts!
+  YoumuTuanzi: Wenn du mehr Hanami Dango haben möchtest, dann kehr bitte um!
+  Siji1: Stehlen von Ausstellungsstücken unter dem Vorwand, einen Vorfall zu lösen.
+  LongPaper: Sonderausgabe für {0}! Lies es dir durch!
+  HardworkRabbit1: Erdenbewohner gesichtet!
+  Aya2: Die verärgerte Verdächtige versucht das Interview zu stören!
+  LunaSpell: Möge das Danmaku still stehen.
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
@@ -298,7 +337,7 @@ StartGame:
   Puzzle: Anfragen
   NotShowRandomResult: Unbekanntes Schicksal
   Puzzles: "{0:plural one='% |Anfrage|' other='% |Anfragen|'}"
-  SkillExhibit: Start-Ausstellungsstück
+  SkillExhibit: Anfängliches Ausstellungsstück
   DifficultyHint: Falls du "Slay the Spire" nie gespielt hast empfehlen wir dir zuerst
     auf Einfach zu spielen.
   JadeBoxSelectedCount: Ausgewählt {0}/{1}
@@ -314,6 +353,14 @@ StartGame:
   IsLockHint: "Dieser Charakter ist verfügbar\nab Untersuchungsstufe {0}."
   ClearNormal: Abgeschlossen
   ClearTrue: Perfekt Abgeschlossen
+  FreeDescription: "Löse den Vorfall mit einem Charakter deiner Wahl.\nDie meisten\
+    \ Dialoge sind deaktiviert.\nAlle \"freundlichen Begegnungen\" sind zugänglich."
+  StoryDescription: "Löse den Vorfall mit Reimu Hakurei.\nEinige Akte haben vorgeschriebene\
+    \ Feinde.\nEinige \"freundliche Begegnungen\" sind deaktiviert."
+  NoStoryMode: "Der Story Modus ist noch unvollständig.\nBitte geduldige dich bis\
+    \ zu Veröffentlichung weiterer Updates."
+  StartHp: Anfängliches Leben
+  StartMoney: Anfängliches Geld
 Museum:
   Hidden: Versteckt
   AllCards: Alle Karten
@@ -557,6 +604,10 @@ ErrorChat:
   EmptyDraw: Der Ziehstapel ist leer.
   CardFengyin: Ich wurde versiegelt.
   UsUsedThisBattle: Ich habe meine Zauberkarte bereits in diesem Kampf verwendet.
+  LowLoyalty: Ich habe nicht genügend Einigkeit mit diesem Verbündeten.
+  TargetAlreadyDead: Der Feind wurde bereits besiegt.
+  CardNotInHand: Diese Karte befindet sich nicht auf der Hand.
+  CardCharm: Ich bin verwirrt.
 CardType:
   Misfortune: Unglück
   Ability: Talent
@@ -634,7 +685,7 @@ MessageDialog:
   ResetKeyBindingsWarning: Tastenbelegung zurücksetzen?
   EarlyAccess: "|Touhou: Verlorener Zweig der Legende| befindet sich zurzeit im |d:Early\
     \ Access|.\nSpielelemente können sich daher noch jederzeit ändern.\nWir arbeiten\
-    \ zurzeit am |Story-Modus| und |y:Alice|.\nBitte schaut euch die Steam Ankündigungen\
+    \ zurzeit am |Story Modus| und |y:Alice|.\nBitte schaut euch die Steam Ankündigungen\
     \ an, um weitere Informationen zu erhalten.\n\nFalls du während des Spielens auf\
     \ Programmfehler stößt, kontaktiere uns bitte über die Steam Community oder unseren\
     \ Discordserver."
