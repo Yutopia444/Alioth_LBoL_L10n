@@ -253,6 +253,10 @@ Setting:
   Default: Standard
   SingleClick: Einmal klicken
   DoubleClick: Zweimal klicken
+  RenderScale: Render-Skalierung
+  ScreenVibration: Kamerawackeln
+  Monitor: Bildschirm
+  Shake: Kamerawackeln
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -358,7 +362,7 @@ StartGame:
   StoryDescription: "Löse den Vorfall mit Reimu Hakurei.\nEinige Akte haben vorgeschriebene\
     \ Feinde.\nEinige \"freundliche Begegnungen\" sind deaktiviert."
   NoStoryMode: "Der Story Modus ist noch unvollständig.\nBitte geduldige dich bis\
-    \ zu Veröffentlichung weiterer Updates."
+    \ zur Veröffentlichung weiterer Updates."
   StartHp: Anfängliches Leben
   StartMoney: Anfängliches Geld
 Museum:
@@ -397,6 +401,8 @@ Museum:
     \ gewünschten Farben und <sprite=\"ManaSprite\" name=\"P\">.\nBeispiel: Um Karten\
     \ mit blauen/weißen Kosten anzuzeigen, klicke auf <sprite=\"ManaSprite\" name=\"\
     W\">, <sprite=\"ManaSprite\" name=\"U\">, <sprite=\"ManaSprite\" name=\"P\">."
+  CardNotReady: "Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur\
+    \ Veröffentlichung weiterer Updates."
 Lifetime:
   Win: Vorfälle Gelöst
   Perfect: Vorfälle Perfekt Gelöst
@@ -410,6 +416,7 @@ Lifetime:
     erfasst, nicht aber die individuellen Daten der Charaktere.
   NoDataHint: Vor der Version 1.3.15 wurden diese Daten nicht aufgezeichnet.
   NoData: Nicht aufgezeichnete Daten
+  Title: Statistik
 Map:
   Boss: Boss
   Select: Wähle einen Boss
@@ -462,6 +469,7 @@ Tooltip:
   UsTitle: '{1}'
   DetailedHint:
     Name: Detailierte Hinweise
+    Description: "Zeige alle Hinweise an.\nDas ist mein erstes Deckbuilding-Spiel..."
   DifficultyHard:
     Name: 'Schwierigkeitsstufe: Schwer'
     Description: Feinde haben mehr Leben und verursachen mehr Schaden.
@@ -479,8 +487,14 @@ Tooltip:
       \ werden ungeordnet angezeigt|"
   DiscardZone:
     Name: Abwerfen
+    Description: "Jedes Mal, wenn eine Karte abgeworfen wird, landet sie im Ablagestapel.\n\
+      Am Ende des Zuges werden alle übrigen Karten auf deiner Hand abgeworfen. |d:(Es\
+      \ werden dabei keine Effekte aktiviert)|\n\nKlicken, um den Ablagestapel zu\
+      \ prüfen."
   ExileZone:
     Name: Exil
+    Description: "Hier landen Karten, die ins |Exil| gesendet werden.\n\nKlicken,\
+      \ um das |Exil| zu prüfen."
   DifficultyNormal:
     Name: 'Schwierigkeitsstufe: Normal'
     Description: Standard-Schwierigkeitsstufe
@@ -491,6 +505,10 @@ Tooltip:
       \ zu speichern."
   EndTurn:
     Name: Zug beenden
+    Description: "Klicken, um deinen Zug zu beenden.\n\nAlle übrigen Karten auf deiner\
+      \ Hand werden abgeworfen. |d:(Es werden dabei keine Effekte aktiviert)|\nAlle\
+      \ Feinde führen Anhand ihrer |Intentionen| eine Aktion durch, danach ziehst\
+      \ du {0} Karten und beginnst deinen nächsten Zug."
   FinalStage:
     Name: Finaler Akt
     Description: Du bist fast am Ziel. Gib nicht auf!
@@ -520,6 +538,8 @@ Tooltip:
       \ erweitert werden.\n\nDeine |Manabasis| beeinflusst außerdem, welche Karten\
       \ du finden kannst."
     Name: Manabasis
+  BriefHint:
+    Name: Knappe Hinweise
 Credits:
   MW: Animation
   Alioth: Alioth Studio
@@ -541,9 +561,24 @@ Credits:
   Korean: Koreanische Übersetzung
   Turkish: Türkische Übersetzung
   Jiong: Service Support
-  Wuqiqi: 2D Art
+  Wuqiqi: 2D Grafik
   Portuguese: Portugiesische Übersetzung
   MainPartners: Partner
+  UnuseArt: Unbenutzte Grafiken
+  Alice: Design / Entwicklung
+  Yutopia: Grafikdesign / Visuelle Effekte
+  Liya: Visuelle Effekte
+  Zaochuan: Hintergrund Illustration
+  Kyu: Charakter & Hintergrund Illustration
+  Salyu: Entwicklung
+  Jiejiezi: Charakterdesign & Illustration
+  DG: Prototyp Diskussion
+  Aeolian: Visuelle Effekte / Audio
+  Illustrator: Karten Illustration
+  DD: Benutzerinterface / Grafik
+  NeetRudong: Event Illustration
+  FK5: Entwicklung / Animation
+  Sana: Charakter Illustration
 Shop:
   UpgradeTooltip: "Werte eine Karte in der Bibliothek auf.\nBezahle {0} <sprite=\"\
     Point\" name=\"Gold\">."
@@ -608,6 +643,8 @@ ErrorChat:
   TargetAlreadyDead: Der Feind wurde bereits besiegt.
   CardNotInHand: Diese Karte befindet sich nicht auf der Hand.
   CardCharm: Ich bin verwirrt.
+  NoAbilityCardInHand: Es befindet sich keine Talentkarte auf deiner Hand.
+  NoCardByMama: Es existiert keine Karte mit diesen Manakosten.
 CardType:
   Misfortune: Unglück
   Ability: Talent
@@ -626,6 +663,12 @@ GameResult:
   Lose: Niederlagen
   Abandon: Aufgegeben
   BadEnd: Lass uns in die Zeit zurückreisen und es erneut versuchen...
+  ClickToOpen: Klicke, um zu öffnen
+  NormalEnd: Aber der Hourai-Juwelenzweig wird weiterhin vermisst.
+  ReturnHint: Klicken, um zum Hauptmenü zurückzukehren
+  Unlock: Neuer Gegenstand freigeschaltet
+  TrueEnd: Vorfall perfekt gelöst
+  FailReason: 'Grund der Niederlage:'
 Rarity:
   Common: Gewöhnlich
   Uncommon: Ungewöhnlich
@@ -717,6 +760,11 @@ BattleHint:
   Prev: Vorherige
   Next: Nächste
   Detailed: Detaillierte Hinweise anzeigen
+  Brief: Zeige knappe Hinweise
+  UltimateSkill: "Wirke Zauberkarten, um das Blatt in der Schlacht zu wenden!\nDas\
+    \ Verwenden der Zauberkarte verbraucht eine volle Energieleiste. Besiegte Feinde\
+    \ hinterlassen <sprite=\"Point\" name=\"Power\">, womit die Energieleiste aufgefüllt\
+    \ werden kann.\nZauberkarten können nur einmal pro Zug verwendet werden."
 Debut:
   KaguyaChats:
   - Ich werde ebenfalls der Sache nachgehen.
