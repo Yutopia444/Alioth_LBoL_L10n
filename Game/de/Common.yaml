@@ -51,7 +51,8 @@ Game:
   Passive:  Passiv 
   PlayerNameTurn: '{0}s Zug'
   FollowCardOnly: Zeige Folgeaktionskarten
-  UnlockLevel: Untersuchungsstufe
+  UnlockLevel: Profilstufe
+  KickerPrefer: Bonuskosten priorisieren
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
   OncePerTurn: Kann nur einmal pro Zug verwendet werden.
@@ -134,6 +135,7 @@ UI:
   CopyHint: Seed wurde in der Zwischenablage gespeichert.
   SideCloseHint: Klicken, um zu schließen
   SeRemove: '{0} ist verschwunden'
+  SeAmulet: '{0} konnte widerstehen'
 MainMenu:
   Database: Extras
   Setting: Einstellungen
@@ -225,8 +227,8 @@ Setting:
   LbolCursor: Spiel
   CostMoreLeft: Kosten nach links schieben
   AnimatingEnvironment: Animierte Umgebung
-  AnimatingEnvironmentDescription: Zeige Animationen im Hintergrund während eines
-    Kampfes oder in Yukaris Spalte.
+  AnimatingEnvironmentDescription: Aktiviert Hintergrundanimationen bei Kämpfen oder
+    in Spalten.
   CostMoreLeftDescription: "Die Manakosten einer Karte befinden sich im oberen rechten\
     \ Eck.\nDas Aktivieren dieser Einstellung verschiebt die Manakosten etwas nach\
     \ links, damit sie nicht von den benachbarten Karten verdeckt werden."
@@ -240,10 +242,11 @@ Setting:
     \ betroffen."
   NonVsync: '{0}FPS'
   NoLimit: Unbegrenzt
-  TooltipSize: Tooltipp Schriftgröße
-  TooltipSizeDescription: "Anpassung der Schriftgröße in Tooltipps für Karten, Ausstellungsstücke,\
-    \ Angriffsintentionen, usw.\nDie Standardgröße ist \"Klein\". Es wird empfohlen\
-    \ auf \"Groß\" umzustellen, wenn auf einer geringen Auflösung gespielt wird."
+  TooltipSize: Infofenster Schriftgröße
+  TooltipSizeDescription: "Anpassung der Schriftgröße in Infofenstern für Karten,\
+    \ Ausstellungsstücke, Angriffsintentionen, usw.\nDie Standardgröße ist \"Klein\"\
+    . Es wird empfohlen auf \"Groß\" umzustellen, wenn auf einer geringen Auflösung\
+    \ gespielt wird."
   FrameRate: Framerate
   Keyword: Schlüsselwörter
   LoopOrderOff: Aus <sprite="ManaSprite" name="HWR">
@@ -257,6 +260,32 @@ Setting:
   ScreenVibration: Kamerawackeln
   Monitor: Bildschirm
   Shake: Kamerawackeln
+  SingleEnemyAutoSelectDescription: Karten, die ein Ziel benötigen, können gespielt
+    werden ohne ein Ziel auszuwählen, falls nur noch ein Feind anwesend ist.
+  KeywordDescription: "Wird diese Einstellung auf |Kurz| gestellt, werden Beschreibungen\
+    \ für häufig vorkommende Schlüsselwörter nicht mehr eingeblendet.\n|r:Nur für\
+    \ erfahrene Spieler empfohlen.|\n|d:(Häufig vorkommende Schlüsselwörter sind ||Feuerkraft||d:,|\
+    \ |Geist||d:,| |Block||d:,| |Barriere||d:,| |Ausweichen||d:,| |Präzise||d:,| |Philosophen-Mana||d:,|\
+    \ |Aufwertung||d:,| |Talente| |d:und| |Hybridkosten||d:.)|"
+  RightClickCancelDescription: "Bestimmt, ob die rechte Maustaste zum Abbrechen verwendet\
+    \ werden soll.\nBricht Aktionen ab, schließt die meisten Fenster der Bedienoberfläche."
+  TooltipWide: Breite Infofenster
+  ShakeDescription: Aktiviert Kamerawackeln durch Schaden in Kämpfen.
+  IllustratorDescription: Bestimmt, ob der Name des Künstlers der Illustration in
+    der Karte angezeigt werden soll.
+  TooltipWideDescription: "Falls ein Infofenster eine gewisse Größe erreichen würde,\
+    \ wird es stattdessen breiter.\nDurch diese Option werden Infofenster immer zuerst\
+    \ breiter.\nAbhängig von der Sprache kann dadurch das Problem behoben werden,\
+    \ dass die Überschrift des Infofensters zwei Zeilen benötigt."
+  LoopOrderDescription: "Wechselt die Darstellung von Farbpaaren nach dem Schema von\
+    \ Magic: The Gathering.\nDie Darstellung von Weiß/Rot, Weiß/Grün und Blau/Grün\
+    \ wird dadurch gespiegelt. (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
+    \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
+    HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
+    >)\nBeeinflusst nur die Darstellung der Reihenfolge dieser Farbpaare (einschließlich\
+    \ Hybridkosten) und hat keinen Einfluss auf die generelle Reihenfolge des Manas."
+  AnimatingEnvironmentDescriptionLocked: "Aktiviert Hintergrundanimationen bei Kämpfen\
+    \ oder in Spalten.\n(Gesperrt, kann nur im Hauptmenü geändert werden)"
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -325,10 +354,17 @@ Chat:
   Clownpiece2: Absorbiere die Juwelen des Lichts!
   YoumuTuanzi: Wenn du mehr Hanami Dango haben möchtest, dann kehr bitte um!
   Siji1: Stehlen von Ausstellungsstücken unter dem Vorwand, einen Vorfall zu lösen.
-  LongPaper: Sonderausgabe für {0}! Lies es dir durch!
+  LongPaper: Sonderausgabe für {0}! Das musst du gelesen haben!
   HardworkRabbit1: Erdenbewohner gesichtet!
   Aya2: Die verärgerte Verdächtige versucht das Interview zu stören!
   LunaSpell: Möge das Danmaku still stehen.
+  FraudRabbitNoMoney: Nicht einmal eine Münze übrig? Wie langweilig.
+  FraudRabbitStart2: Ich habe die neueste Mondtechnologie, für einen kleinen Betrag
+    gehört sie dir.
+  DoremyAwake: Jetzt kommt der beste Teil!
+  HetongKailang3: Kommt schon, ihr könnt es schaffen!
+  Fox1: Oh, du wirst es lieben, Schätzchen~
+  SunnySpell: Strahlen des Lichts, sammelt euch bei mir!
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
@@ -403,6 +439,10 @@ Museum:
     W\">, <sprite=\"ManaSprite\" name=\"U\">, <sprite=\"ManaSprite\" name=\"P\">."
   CardNotReady: "Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur\
     \ Veröffentlichung weiterer Updates."
+  CardStyleFilter: Kartenstil
+  CardStyleTooltip: "Nur Karten mit mehreren Kartenstilen werden angezeigt.\nWähle\
+    \ die Kartenillustration in der Detailansicht aus, die für diese Karte verwendet\
+    \ werden soll."
 Lifetime:
   Win: Vorfälle Gelöst
   Perfect: Vorfälle Perfekt Gelöst
@@ -540,6 +580,13 @@ Tooltip:
     Name: Manabasis
   BriefHint:
     Name: Knappe Hinweise
+  BattleMana:
+    Name: Manapool
+    Description: "Das verfügbare Mana wird hier angezeigt.\nDu benötigst Mana, um\
+      \ Karten zu spielen und um |X| Kosten zu bezahlen.\n\nKlicke auf das Mana im\
+      \ Manapool, um es hervorzuheben. Dieses Mana wird priorisiert oder für |X| Kosten\
+      \ verwendet.\nKlicke auf hervorgehobenes Mana, um es zurück in den Manapool\
+      \ zu legen."
 Credits:
   MW: Animation
   Alioth: Alioth Studio
@@ -669,6 +716,10 @@ GameResult:
   Unlock: Neuer Gegenstand freigeschaltet
   TrueEnd: Vorfall perfekt gelöst
   FailReason: 'Grund der Niederlage:'
+  TrueEndFail: "Der wahre Übeltäter konnte gefunden werden, aber der Hourai-Juwelenzweig\
+    \ konnte nicht zurückgebracht werden.\n(Dies zählt als eine normale Lösung des\
+    \ Vorfalls)"
+  Deprecated: ??? (Verfallen)
 Rarity:
   Common: Gewöhnlich
   Uncommon: Ungewöhnlich
@@ -678,6 +729,7 @@ Rarity:
 StatusEffectType:
   Negative: Negativer Effekt
   Positive: Positiver Effekt
+  Special: Speziell
 Reward:
   Money: '{0} Geld'
   Skip: Überspringe Belohnungen
@@ -703,6 +755,7 @@ CardDetail:
   Sketch: Unvollständig
   UpgradeYes: Aufgewertet
   UpgradeNo: Standard
+  SwitchCardStyle: Kartenstil wechseln
 Cards:
   UpgradePrice: "Kosten: {0} <sprite=\"Gold\" name=\"gold\">\nGeld: {1} <sprite=\"\
     Gold\" name=\"gold\">"
@@ -723,8 +776,8 @@ TopInfo:
 SelectCard:
   DreamCardsToHand: 'Traum: Füge 1 Karte deiner Hand hinzu'
 MessageDialog:
-  GameRunSaveDiscarded: Durch das letzte Versionsupdate wurde dein aktiver Durchlauf
-    verworfen.
+  GameRunSaveDiscarded: Durch das letzte Versionsupdate ist dein aktiver Durchlauf
+    verfallen.
   ResetKeyBindingsWarning: Tastenbelegung zurücksetzen?
   EarlyAccess: "|Touhou: Verlorener Zweig der Legende| befindet sich zurzeit im |d:Early\
     \ Access|.\nSpielelemente können sich daher noch jederzeit ändern.\nWir arbeiten\
@@ -733,7 +786,7 @@ MessageDialog:
     \ Programmfehler stößt, kontaktiere uns bitte über die Steam Community oder unseren\
     \ Discordserver."
   CorruptedGameRunSaveData: Durchlauf-Daten sind beschädigt
-  XCostEmptyUsageTips: Du kannst das Mana für X-Kosten unten links am Manabalken einstellen.
+  XCostEmptyUsageTips: Du kannst das Mana für X Kosten unten links im Manapool einstellen.
   DontShowHintWarning: Alle Hinweise deaktivieren?
   ResetHintWarning: Hinweise zurücksetzen?
   CloseBattleHint: Hinweise schließen?
@@ -746,6 +799,10 @@ MessageDialog:
   GamepadUnfinishedText: Die Gamepad-Unterstützung befindet sich noch in der Entwicklung.
   GamepadUnfinishedSubText: Die Verwendung des Gamepads wird nicht empfohlen, da es
     zurzeit unvollständig ist.
+  InvalidProfileName: Ungültiger Profilname
+  GameRunSaveDiscardedSubText: Spielerprofile sind davon nicht betroffen.
+  CannotStartGameRunWithoutProfile: 'Neuer Durchlauf kann nicht gestartet werden:
+    Kein Spielerprofil ausgewählt'
 BattleHint:
   Mana: "Drücke Rechtsklick auf eine Karte, um die Details anzeigen zu lassen. (Dies\
     \ funktioniert auch für viele andere Bereiche in diesem Spiel).\nKarten zu spielen\
