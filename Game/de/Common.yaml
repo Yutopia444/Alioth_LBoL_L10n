@@ -197,6 +197,7 @@ Setting:
     PoolP: Bewege <sprite="ManaSprite" name="P">
     UseUs: Zauberkarte Benutzen
     SkipDialog: Dialog beschleunigen (Halten)
+    RebindMessage: Drücke eine Taste für "{0}", drücke ESC zum Verlassen.
   Key: Steuerung
   ResetDefault: Standard
   FullScreen: Vollbildschirm
@@ -365,6 +366,9 @@ Chat:
   HetongKailang3: Kommt schon, ihr könnt es schaffen!
   Fox1: Oh, du wirst es lieben, Schätzchen~
   SunnySpell: Strahlen des Lichts, sammelt euch bei mir!
+  HetongKailang2: Nun~, das sollte erstmal ausreichen.
+  Scout: Analysieren
+  Sunny2: Die Erste, die das Ausstellungsstück findet, darf es behalten!
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
@@ -567,7 +571,7 @@ Tooltip:
   Level:
     Description: Dein Fortschritt im derzeitigen Akt.
   Stage:
-    Description: Besiege den Boss am Ende des Gebiets um den Akt abzuschließen.
+    Description: Besiege den Boss am Ende eines Gebiets, um den Akt abzuschließen.
     Name: Akt {0}
   DontShowHint:
     Name: Keine Hinweise
@@ -579,7 +583,10 @@ Tooltip:
       \ du finden kannst."
     Name: Manabasis
   BriefHint:
-    Name: Knappe Hinweise
+    Name: Kurzhinweise
+    Description: "Nur Hinweise, die für die einzigartigen Spielmechaniken relevant\
+      \ sind, werden angezeigt.\nIch habe bereits ähnliche Spiele gespielt, wie z.B.\
+      \ Slay the Spire."
   BattleMana:
     Name: Manapool
     Description: "Das verfügbare Mana wird hier angezeigt.\nDu benötigst Mana, um\
@@ -660,6 +667,7 @@ System:
   NoJadeBox:
     Description: Nichts besonderes.
     Title: Kein Jadebox-Effekt
+  EA: Early Access - Repräsentiert nicht die finale Qualität.
 History:
   PlayedTime: 'Spielzeit: {0}'
   ReloadTimes: 'Neustart: {0}'
@@ -803,6 +811,7 @@ MessageDialog:
   GameRunSaveDiscardedSubText: Spielerprofile sind davon nicht betroffen.
   CannotStartGameRunWithoutProfile: 'Neuer Durchlauf kann nicht gestartet werden:
     Kein Spielerprofil ausgewählt'
+  ReturnToMainMenu: Zum Hauptmenü zurückkehren?
 BattleHint:
   Mana: "Drücke Rechtsklick auf eine Karte, um die Details anzeigen zu lassen. (Dies\
     \ funktioniert auch für viele andere Bereiche in diesem Spiel).\nKarten zu spielen\
@@ -822,13 +831,35 @@ BattleHint:
     \ Verwenden der Zauberkarte verbraucht eine volle Energieleiste. Besiegte Feinde\
     \ hinterlassen <sprite=\"Point\" name=\"Power\">, womit die Energieleiste aufgefüllt\
     \ werden kann.\nZauberkarten können nur einmal pro Zug verwendet werden."
+  BasicBattle: "Spiele Karten aus deiner Hand, um deine Feinde in die Flucht zu schlagen!\n\
+    Karten, die aus der Hand gespielt werden, landen im Ablagestapel. Am Ende deines\
+    \ Zuges werden die verbleibenden Karten auf der Hand ebenfalls in den Ablagestapel\
+    \ gelegt.\nNeue Karten werden zu Beginn deines Zuges gezogen."
+  ManaPanel: "Dein Manapool zeigt an, wie viel Mana dir in diesem Zug noch bleibt.\n\
+    Klicke mit der linken Maustaste auf das Mana im Manapool, um es hervorzuheben.\
+    \ Dieses Mana wird priorisiert.\nKlicke stattdessen auf die rechte Maustaste,\
+    \ um jedes Mana derselben Farbe im Manapool hervorzuheben.\nMana wird zu Beginn\
+    \ deines Zuges wieder aufgefüllt."
+  BlockShield: "Bevor du Schaden nimmst, spiele Verteidigungskarten, um |Block| und\
+    \ |s:Barriere| zu erhalten.\n|Block| und |s:Barriere| reduzieren die Menge an\
+    \ Schaden, die man durch Angriffe erleidet.\n|Block| verschwindet zu Beginn deines\
+    \ Zuges, |s:Barriere| aber verfällt nicht zwischen den Zügen."
+  Intention: "Die Intention des Feindes wird über ihn angezeigt.\nFeinde können Intentionen\
+    \ haben wie angreifen, verteidigen, positive oder negative Effekte zufügen oder\
+    \ Zauberkarten entfesseln."
+  Intro: "Willkommen in der Exposition der Mondhauptstadt! Gib dein Bestes, um den\
+    \ verlorenen Zweig der Legende zu finden!\nFalls du bereits andere Deckbuilding-Spiele\
+    \ gespielt hast, kannst du |Kurzhinweise| auswählen, damit nur Hinweise angezeigt\
+    \ werden, die für die einzigartigen Spielmechaniken relevant sind.\nAlle nachfolgenden\
+    \ Hinweise werden ebenfalls berücksichtigt. Du kannst die Hinweise jederzeit in\
+    \ den Einstellungen anpassen."
 Debut:
   KaguyaChats:
   - Ich werde ebenfalls der Sache nachgehen.
-  - 
+  - Ich lasse das Haus in deiner Obhut, Eirin.
   - Vergiss nicht, bei Sonnenaufgang wieder hier zu sein~
   EirinChats:
-  - 
+  - Hör auf herumzutrödeln, {0}.
   - Die Wirkung der Medizin wird nachlassen, wenn du nicht bald aufbrichst~
 ManaSelect:
   Title: Wähle einen Manatyp
