@@ -710,7 +710,7 @@ EvilMaidSe:
     fordulóig.'
 MihuanJackSe:
   Brief: '{PlayerName} fordulója elején, kap |Időimpulzust|.'
-  Name: '-'
+  Name: 'Jack az Időtolvaj'
   Description: '{PlayerName} fordulója elején, kap {Level} |Időimpulzust|.'
 StopTimeSe:
   Brief: Mikor {PlayerName} fordulója véget ér, megtart néhány véletlen elköltetlen
@@ -742,7 +742,7 @@ LunaClockSe:
   Brief: '{PlayerName} támadásai nem sebeznek ebben a fordulóban.'
 DrawPhaseAddKnife:
   Name: Fordulókezdéskor |Késeket| kap húzott kártyák helyett.
-  ExtraDescription: "Átlépi a fordulókezdés kártyahúzó lépését és néhány |Kést| tesz\
+  ExtraDescription: "Átlépi a fordulókezdés kártyahúzó lépését és {Limit} |Kést| tesz\
     \ a kézbe helyette.\n{SelfName} az tétlen és el fog tűnni miután ez a forduló\
     \ véget ér."
   Description: Átlépi a fordulókezdés kártyahúzó lépését és {Limit} |Kést| tesz a
@@ -779,3 +779,342 @@ ClockCorpseSe:
   Brief: Kártyát nem lehet húzni a húzó lépésen kívül ebben a fordulóban.
   ExtraDescription: "Kártyát nem lehet húzni a húzó lépésen kívül ebben a fordulóban.\n\
     {SelfName} az tétlen és el fog tűnni miután ez a forduló véget ér."
+MinengZhuruSe:
+  Description: A kézben lévő, megidézett |Csapattárs| kártyák passzív hatásai további
+    {Level} alkalommal hatnak.
+  Brief: A kézben lévő, megidézett |Csapattárs| kártyák passzív hatásai további alkalmakkal
+    hatnak.
+  Name: Elme Energia Injekció
+TimeMagicSe:
+  Description: "{PlayerName} extra fordulója elején, választ és kézbe tesz {Level}\
+    \ kártyát a {Limit} |p:teljesen véletlen| nem-Közönséges kártya közül. A {Level:plural\
+    \ one='kártyán' other='kártyákon mind'} |Száműz| és |Éteri| van és bármilyen manával\
+    \ ki lehet fizetni a {Level:plural one='költségét' other ='költségüket'}, amely\
+    \ csökkentve van {Mana} manával.\n"
+  Name: Időmágia
+ForeverCoolSe:
+  Description: "Mikor egy |Csapattárs| |a:Aktív Kézsége| vagy |u:Végső Kézsége| kijátszódik,\
+    \ |Hideget| tesz {Level:plural one='egy' other='%'} véletlen ellenfélre.\nMikor\
+    \ egy ellenfél |Hideget| kap, {Level} véletlen kézben lévő |Csapattárs| kártya\
+    \ kap 1 |Egységet|."
+  Name: Az Örökké Hűvös Évszak Képzelete
+  Brief: "Mikor egy |Csapattárs| |a:Aktív Kézsége| vagy |u:Végső Kézsége| kijátszódik,\
+    \ |Hideget| tesz néhány véletlen ellenfélre.\nMikor egy ellenfél |Hideget| kap,\
+    \ néhány véletlen kézben lévő |Csapattárs| kártya kap 1 |Egységet|."
+MoreFriendsSe:
+  Description: "{PlayerName} fordulója elején, kézbe tesz {Level} véletlen |Teammate|\
+    \ kártyát.\nAmin |Éteri| van és eltűnik {Level:plural one='róla' other='róluk'}\
+    \ miután kijátszód{Level:plural one='ik' other='nak'}."
+  Name: Társas Mágnes
+  Brief: "{PlayerName} fordulója elején, kézbe tesz néhány véletlen |Teammate| kártyát.\n\
+    Amin |Éteri| van és eltűnik róluk miután kijátszódnak."
+MaidFriendSe:
+  Description: '{SourceCardName} {Level} ponttal többet sebeznek.'
+  Name: Dobókés Edző
+  Brief: '{SourceCardName} többet sebeznek.'
+NextTurnPassion:
+  Brief: '{PlayerName} a következő fordulója elején |Szenvedélybe| lép, és kártyákat
+    húz.'
+  Name: Következő Fordulóbeli Szenvedély
+  Description: '{PlayerName} a következő fordulója elején |Szenvedélybe| lép, és húz
+    {Level} kártyát.'
+LunaticPassionSe:
+  Description: "|Szenvedély| sebzésszorzója {Percentage}%-ra változik.\nMikor {PlayerName}\
+    \ |Szenvedélyben| van, a támadás kártyákból származó sebzés |Pontos|."
+  Name: Őrült Szerelem
+  Brief: "|Szenvedély| sebzésszorzója {Percentage}%-ra változik.\nMikor {PlayerName}\
+    \ |Szenvedélyben| van, a támadás kártyákból származó sebzés |Pontos|."
+MeihongFireSe:
+  Brief: "{PlayerName} fordulója végén, sebzést okoz minden ellenfélnek.\nEz akkor\
+    \ is megtörténik, mikor egy |Szerencsétlenség| vagy Státusz kártya húzódik."
+  Description: "{PlayerName} fordulója végén, {Level} sebzést okoz minden ellenfélnek.\n\
+    Ez akkor is megtörténik, mikor egy |Szerencsétlenség| vagy Státusz kártya húzódik."
+  Name: Elszabadult Pokol
+ButterflyDreamSe:
+  Brief: "{PlayerName} fordulója elején, a húzó halom tetejére tesz néhány |p:teljesen\
+    \ véletlen| Ritka kártyát.\n|Újratölt|, |Száműz| és |Éteri| van rajtuk és bármilyen\
+    \ színű manával ki lehet fizetni a költségüket."
+  Description: "{PlayerName} fordulója elején, a húzó halom tetejére tesz {Level}\
+    \ |p:teljesen véletlen| Ritka kártyát.\n|Újratölt|, |Száműz| és |Éteri| van {Level:plural\
+    \ one='rajta' other='rajtuk'} és bármilyen színű manával ki lehet fizetni a {Level:plural\
+    \ one='költségét' other='költségüket'}."
+  Name: A Pillangó Álom
+PaidTdm:
+  Name: Ingyen Újratöltés
+  Description: '{OwnerName} már fizetett!'
+  Brief: '{OwnerName} már fizetett!'
+MoodPeace:
+  Brief: "|Derűből| kilépve, {PlayerName} {Mana} manát kap.\n|Derű| az egy |Elmeállapot|,\
+    \ melyből {PlayerName:d} egyszerre csak egy lehet."
+  Name: Derű
+  Description: "|Derűből| kilépve, {PlayerName} {Mana} manát kap.\n|Derű| az egy |Elmeállapot|,\
+    \ melyből {PlayerName:d} egyszerre csak egy lehet."
+MoodEpiphany:
+  Name: Fúga
+  Brief: "Míg |Fúgában| van, {PlayerName} {Mana} manát kap minden egyes kijátszott\
+    \ kártyáért.\n{PlayerName} fordulója végén, vagy mikor {Count} kártya kijátszódott,\
+    \ kilép a |Fúgából|.\n|Fúga| az egy |Elmeállapot|, melyből {PlayerName:d} egyszerre\
+    \ csak egy lehet."
+  Description: "Míg |Fúgában| van, {PlayerName} {Mana} manát kap minden egyes kijátszott\
+    \ kártyáért.\n{PlayerName} fordulója végén, vagy mikor {Count} kártya kijátszódott,\
+    \ kilép a |Fúgából|.\n|Fúga| az egy |Elmeállapot|, melyből {PlayerName:d} egyszerre\
+    \ csak egy lehet."
+PassionDrawSe:
+  Name: Epekedés
+  Description: Mikor {PlayerName} |Szenvedélybe| lép, húz {Level} kártyát.
+  Brief: Mikor {PlayerName} |Szenvedélybe| lép, kártyákat húz.
+Tired:
+  Description: Csak {Limit} kártya játszható ki ebben a fordulóban. ({Count} maradt.)
+  ExtraDescription: "Csak {Limit} kártya játszható ki ebben a fordulóban. ({Count}\
+    \ maradt.)\n{SelfName} az tétlen és el fog tűnni miután ez a forduló véget ér."
+  Name: Fáradtság
+GainInspirationSe:
+  Name: Határtalan Ihlet
+  Description: "{PlayerName} fordulója végén, a húzó halomba tesz {Level} |Heuréka!-t|.\n"
+  Brief: "{PlayerName} fordulója végén, a húzó halomba tesz néhány |Heuréka!-t|.\n"
+MoodChangeBlockSe:
+  Description: Mikor {PlayerName} |Elmeállapotot| vált, kap {Level} |Blokkolást|.
+  Brief: Mikor {PlayerName} |Elmeállapotot| vált, |Blokkolást| kap.
+  Name: A.T. Erőtér
+SelfControlSe:
+  Name: Önkontroll
+  Description: '{PlayerName} fordulója végén, kap {Level} |Tűzerőt|, ha |Szenvedélyben|
+    van, vagy {Count} |Blokkolást|, ha |Derűben|.'
+  Brief: '{PlayerName} fordulója végén, kap |Tűzerőt|, ha |Szenvedélyben| van, vagy
+    |Blokkolást|, ha |Derűben|.'
+CloseEyeSe:
+  Name: Csukott Szem
+  Description: "Ellenfél szándéka ismeretlen.\nMaradék forduló: {Level}"
+  Brief: Ellenfél szándéka ismeretlen egy ideig.
+KoishiUltimateSe:
+  Name: Igazi Én Ébredése
+  Description: '{PlayerName} fordulója elején, azonnal eljátsza a húzó halom legfelső
+    {Level} kártyáját.'
+  Brief: '{PlayerName} fordulója elején, azonnal eljátsza a húzó halom legfelső pár
+    kártyáját.'
+BailianBlackSe:
+  Brief: Minden védelem, kézség és Státusz kártyán |Száműz| van. A költségük {Mana}
+    manára csökken.
+  Name: Fogadd be a Sötétséget
+  Description: Minden védelem, kézség és Státusz kártyán |Száműz| van. A költségük
+    {Mana} manára csökken.
+MeihongPowerSe:
+  Name: Az Örök Láng
+  Description: "PlayerName fordulója elején, kap {Level} |Tűzerőt|.\nA csata végén,\
+    \ ha {PlayerName} életereje kevesebb mint a fele, kap {Heal} életerőt."
+  Brief: "PlayerName fordulója elején, kap |Tűzerőt|.\nA csata végén, ha {PlayerName}\
+    \ életereje kevesebb mint a fele, kap életerőt."
+HuiyeManaSe:
+  Name: Bambuszvágó Története
+  Description: '{PlayerName} fordulója elején, kap {Count} véletlen manát; {Level}
+    ponttal növekedik minden fordulóban.'
+  Brief: '{PlayerName} fordulója elején, kap véletlen manát; növekedik egy kevéssel
+    minden fordulóban.'
+YouxiangMoonSe:
+  Name: Természet Gyöngyei
+  Description: '{PlayerName} fordulója elején, kap {Level} {Mana} manát.'
+  Brief: '{PlayerName} fordulója elején, kap {Mana} manát.'
+HuiyeTimeSe:
+  ExtraDescription: "Csak {Limit} kártya játszható ki ebben a fordulóban. ({Count}\
+    \ maradt.)\n{SelfName} az tétlen és el fog tűnni miután ez a forduló véget ér."
+Cold:
+  Brief: "{OwnerName} fordulója elején {BaseDamage} életerőt veszít és eltűnik a hatás\
+    \ róluk.\nMikor |Hideget| tesznek rá, mégtöbb életet veszít {OwnerName}."
+  Description: "{OwnerName} fordulója elején {BaseDamage} életerőt veszít és eltűnik\
+    \ a hatás róluk.\nMikor |Hideget| tesznek rá, {OwnerName} {StackMultiply} szorzóval\
+    \ annyi életet veszít.\n({StackDamage} életet.)"
+  Name: Hideg
+ColdUp:
+  Description: A sebzésszorzó, mikor ismételten rákerül a |Hideg| meg van növelve
+    {Level} ponttal.
+  Name: Velőrázó Hideg
+  Brief: A sebzésszorzó, mikor ismételten rákerül a |Hideg| meg van növelve.
+FreezeBulletSe:
+  Description: "|Hideget| tesz a következő {Level} ellenfélre aki megtámadja {OwnerName:a}.\n\
+    Ez a hatás elvész {OwnerName} következő fordulója elején."
+  Name: Fagylövés
+FrostArmor:
+  Description: "{OwnerName} a fordulója elején, kap {Level} |Blokkolást| és elveszt\
+    \ 1 |Fagypáncélt|.\nMikor {OwnerName} megsebesül, elveszt 1 |Fagypáncélt|."
+  Brief: "Mikor {PlayerName} |Fagypáncélt| kap, annyi |Blokkolást| kap.\n{OwnerName}\
+    \ a fordulója elején, kap a szinttel egyenlő |Blokkolást| és elveszt 1 |Fagypáncélt|.\n\
+    Mikor {OwnerName} megsebesül, elveszt 1 |Fagypáncélt|."
+  Name: Fagypáncél
+IceMatrixSe:
+  Description: Mikor {PlayerName} |Hideget| tesz egy ellenfélre, kap {Level} |Fagypáncélt|.
+  Brief: Mikor {PlayerName} |Hideget| tesz egy ellenfélre, kap |Fagypáncélt|.
+  Name: Fagyott Mátrix
+DeepFreezeSe:
+  Name: Jégcsaptánc
+  Description: Mikor egy kék kártya kijátszódik, {PlayerName} kap {Level} |Ideiglenes
+    Tűzerőt|.
+  Brief: Mikor egy kék kártya kijátszódik, {PlayerName} kap |Ideiglenes Tűzerőt|.
+ExtraBlizzard:
+  Description: '{OwnerName} következő fordulója elején, {Damage} |Pontos| sebzést
+    okoz és |Hideget| tesz minden ellenfélre.'
+  Name: Hóvihar Közeledte
+  Brief: '{OwnerName} következő fordulója elején, |Pontos| sebzést okoz és |Hideget|
+    tesz minden ellenfélre.'
+ColdHeartedSe:
+  Description: "A |Jéglándzsa| háromszoros sebzést okoz olyan ellenfélnek, amin |Hideg|\
+    \ van.\n|Hidegvérű| eltűnik {OwnerName} fordulója végén."
+  Brief: "A |Jéglándzsa| háromszoros sebzést okoz olyan ellenfélnek, amin |Hideg|\
+    \ van.\n|Hidegvérű| eltűnik {OwnerName} fordulója végén."
+  Name: Hidegvérű
+FriendDrawSe:
+  Name: Kerti Kiruccanás
+  Description: "Mikor egy |Csapattárs| |a:Aktív Kézsége| vagy |u:Végső Kézsége| kijátszódik,\
+    \ húz {Level} kártyát.\nMikor egy |u:Végső Képesség| aktiválódik, {Level} véletlen\
+    \ manát ad."
+  Brief: "Mikor egy |Csapattárs| |a:Aktív Kézsége| vagy |u:Végső Kézsége| kijátszódik,\
+    \ húz néhány kártyát.\nMikor egy |u:Végső Képesség| aktiválódik, véletlen manát\
+    \ ad."
+FrozenThroneSe:
+  Name: Fagyott Trón
+  Description: "{PlayerName} fordulója elején, ha {Level:plural one='nincs |Jéggolyó|'\
+    \ other='kevesebb mint % |Jéggolyó| van'} a kézben, kipótolja, hogy a kézben annyi\
+    \ legyen."
+  Brief: '{PlayerName} fordulója elején, ha nincs egy mennyiségű |Jéggolyó| a kézben,
+    kipótolja, hogy a kézben annyi legyen.'
+SummerFlowerSe:
+  Description: '{SourceCardName} {Level} ponttal többet sebez.'
+  Brief: '{SourceCardName} többet sebez.'
+  Name: Nyárközépi Virágzás
+MaxHandSe:
+  Name: Tündérgyár
+  Description: Maximum kézméret megnövelve {MaxHand} kártyára.
+  Brief: Maximum kézméret megnövelve {MaxHand} kártyára.
+MoodPassion:
+  ExtraDescription: "Míg {PlayerName} |Szenvedélyben| van, {AttackPercentage} ponttal\
+    \ több támadási sebzést okoz és\n{Percentage}%-al többet kap.\n|Szenvedély| az\
+    \ egy |Elmeállapot|, melyből {PlayerName:d} egyszerre csak egy lehet."
+  Name: Szenvedély
+  Description: "Míg {PlayerName} |Szenvedélyben| van, {Percentage}%-al több támadási\
+    \ sebzést kap és okoz.\n|Szenvedély| az egy |Elmeállapot|, melyből {PlayerName:d}\
+    \ egyszerre csak egy lehet."
+  Brief: "Míg {PlayerName} |Szenvedélyben| van, {Percentage}%-al több támadási sebzést\
+    \ kap és okoz.\n|Szenvedély| az egy |Elmeállapot|, melyből {PlayerName:d} egyszerre\
+    \ csak egy lehet."
+UpgradePeace:
+  Name: Éntelenség
+  Description: Megnöveli a |Derűből| kapott mana mennyiségét.
+  Brief: Megnöveli a |Derűből| kapott mana mennyiségét.
+Inspiration:
+  Brief: Mikor {PlayerName:d} {TriggerLevel} pontnál több |Ihlete| van, |Fúgába| lép.
+  Name: Ihlet
+  Description: Mikor {PlayerName:d} {TriggerLevel} pontnál több |Ihlete| van, |Fúgába|
+    lép.
+NextTurnLoseGame:
+  Name: Következő Fordulóban Veszt
+  Brief: Elveszti a játékot a következő fordulóban.
+  Description: Elveszti a játékot a következő fordulóban.
+MoreDraw:
+  Name: Tanár Odaadása
+  Description: '{Level} kártyával többet húz a húzó lépés során.'
+  Brief: Több kártyát húz a húzó lépés során.
+UseCardToLoseGame:
+  Brief: Elveszti a játékot miután kijátszik még néhány kártyát.
+  Name: Rövid Élettartam
+  Description: Elveszti a játékot miután kijátszik még {Count} kártyát.
+GrimoireStudySe:
+  Name: Sötét Kötet
+  Description: '{OwnerName} fordulója végén, kézbe tesz egy |Szivárványt|.'
+  Brief: '{OwnerName} fordulója végén, kézbe tesz egy |Szivárványt|.'
+DreamExpressSe:
+  Description: '{PlayerName} fordulója végén, |Álmod| {Level} kártyát, majd kétszer
+    akkora sebzést okoz minden ellenfélnek, mint az |Álmodott| kártyák összköltsége'
+  Name: Álom Expressz
+RangziFanshuSe:
+  Name: Édes Édesburgonya
+  Description: Ezután a csata után, kap {Level} életerőt.
+  Brief: Egy bizonyos mennyiségű életerőt kap a csata végén.
+BrokenTimelineSe:
+  Name: Törött Idővonal
+  Brief: '{PlayerName} következő fordulója elején, nem kap manát a manabázisból.'
+  ExtraDescription: "{PlayerName} következő fordulója elején, nem kap manát a manabázisból.\n\
+    {SelfName} az tétlen és el fog tűnni miután ez a forduló véget ér."
+  Description: '{PlayerName} következő fordulója elején, nem kap manát a manabázisból.'
+DangerousMagicianSe:
+  Name: Veszélyes Bűvész
+  Description: Mikor egy |Dobókés| kijátszódik, {PlayerName} kap {Level} |Időimpulzust|.
+  Brief: Mikor egy |Dobókés| kijátszódik, {PlayerName} kap néhány |Időimpulzust|.
+AutoKnifeSe:
+  Name: Átkozott Ezüstkés
+  Description: Minden |Dobókés| |Önműködően Száműz|.
+  Brief: Minden |Dobókésnek| |Önműködő Száműze| van.
+KnifeDamageUpSe:
+  Description: A |Dobókések| {Level} ponttal többet sebeznek.
+  Brief: A |Dobókések| többet sebeznek.
+  Name: Hajtó Ezüst
+NextTurnColdAll:
+  Name: Közeleg a Tél
+  Description: '{OwnerName} következő fordulójának elején, |Hideget| tesz minden ellenfélre
+    {Level} alkalommal.'
+  Brief: '{OwnerName} következő fordulójának elején, |Hideget| tesz minden ellenfélre.'
+Immune:
+  Brief: '{OwnerName} nem veszthet életerőt.'
+  Name: Jégblokk
+  Description: '{OwnerName} nem veszthet életerőt {Duration} fordulóig.'
+FairyTreeSe:
+  Name: Tündérlak
+  Description: Mikor egy |Csapattárs| megidézetik egy |Csapattárs| kártya kijátszásával,
+    {Level} |Blokkolást| ad.
+  Brief: Mikor egy |Csapattárs| megidézetik egy |Csapattárs| kártya kijátszásával,
+    |Blokkolást| ad.
+ExtraDraw:
+  Name: Tündér Ész
+  Description: '{OwnerName} fordulója elején, {Level} kártyával többet húz.'
+  Brief: '{OwnerName} fordulója elején, néhány kártyával többet húz.'
+WhiteWorldSe:
+  Name: Tiszta Fehér Világ
+  Description: '{PlayerName} fordulója elején, |Hideget| tesz minden ellenfélre {Level}
+    alkalommal.'
+  Brief: '{PlayerName} fordulója elején, |Hideget| tesz minden ellenfélre.'
+StarFriendSe:
+  Name: Mint a Csillagok az Égen
+  Description: Mikor {SourceCardName} sebzést okoz, {Level} |Ráközelítést| tesz az
+    ellenfélre.
+  Brief: Mikor {SourceCardName} sebzést okoz, |Ráközelítést| tesz az ellenfélre.
+KoishiDnaSe:
+  Description: '{PlayerName} fordulója elején, kézbe tesz {Level} |DNS Másolatot|.'
+  Brief: '{PlayerName} fordulója elején, kézbe tesz néhány |DNS Másolatot|.'
+  Name: DNS Hibája
+UpgradeAllHandSe:
+  Name: Pszichés Zár
+  Description: '{PlayerName} következő fordulója elején, |Felfejleszti| a kéz összes
+    kártyáját.'
+  ExtraDescription: "{PlayerName} következő fordulója elején, |Felfejleszti| a kéz\
+    \ összes kártyáját.\n{SelfName} az tétlen és el fog tűnni miután ez a forduló\
+    \ véget ér."
+  Brief: '{PlayerName} következő fordulója elején, |Felfejleszti| a kéz összes kártyáját.'
+KoishiPhoneSe:
+  Brief: "Mikor egy támadás kártya kijátszódik, |Rákövető Támadásokat| indít.\nHa\
+    \ nincs |Rákövető| kártya a húzó halomban, |Csörög a Fón| lesz |Rákövetőnek| használva."
+  Name: Ijesztően Édes Hívás
+  Description: "Mikor egy támadás kártya kijátszódik, {Level} |Rákövető Támadást|\
+    \ indít.\nHa nincs |Rákövető| kártya a húzó halomban, |Csörög a Fón| lesz |Rákövetőnek|\
+    \ használva."
+YukariFlyObjectSe:
+  Brief: '{PlayerName} következő fordulója elején, sebzést okoz a legmagasabb életerejű
+    ellenfélnek.'
+  Name: Szupersebességű Repülő
+  Description: '{PlayerName} következő fordulója elején, {Level} sebzést okoz a legmagasabb
+    életerejű ellenfélnek.'
+LoseSpiritSe:
+  Name: Elveszett Tollak Leple
+  Description: '{PlayerName} fordulója elején, elveszt {Level} |Lelket|.'
+  Brief: '{PlayerName} fordulója elején, |Lelket| veszít.'
+YonglinCardSe:
+  Description: '{PlayerName} fordulója végén, a húzó halomba tesz {Level} |Hamis Holdat|.'
+  Name: A Bezárkózott Bölcs
+  Brief: '{PlayerName} fordulója végén, a húzó halomba tesz néhány |Hamis Holdat|.'
+ShannvAbilitySe:
+  Brief: '{PlayerName} fordulója végén, |Mérget| tesz minden ellenfélre.'
+  Name: Megmagyarázhatatlan Láz
+  Description: '{PlayerName} fordulója végén, {Level} |Mérget| tesz minden ellenfélre.'
+ZhenmiaowanAttackSe:
+  Name: Hüvelyk Matyi Leszármazottja
+KnifeTarget:
+  Name: Célba Véve
+  Description: A |Dobókések| {OwnerName:a} veszik célba mikor kijátszódnak.
+  Brief: A |Dobókések| {OwnerName:a} veszik célba.
