@@ -439,6 +439,7 @@ ZhenmiaowanAttackSe:
   Description: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
   Brief: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
   ExtraDescription: In diesem Zug werden die Kosten von Karten um {Mana} reduziert.
+  Name: Nachfahre von Issun-Boushi
 ZhenmiaowanAbilitySe:
   Name: Magie des Hammers
   Description: Karten kosten {Mana} weniger.
@@ -517,7 +518,10 @@ KokoroDanceSe:
   Description: Jedes Mal, wenn ein Feind einen |negativen Effekt| erhält, verursacht
     {PlayerName} diesem Feind {Level} Schaden.
 YonglinUpgradeSe:
-  Name: Mondhasen Duft
+  Name: Duft der Mondhasen
+  Description: Zu Beginn deines Zuges {Level:plural one='wird' other='werden'} {Level}
+    zufällige Karte{Level:plural one='' other='n'} auf deiner Hand |aufgewertet|.
+  Brief: Zu Beginn deines Zuges werden zufällige Karten auf deiner Hand |aufgewertet|.
 CommonFireSe:
   Description: '{OwnerName} erhält {Level} |Temporäre Feuerkraft|, nachdem eine Gewöhnliche
     Karte gespielt wurde.'
@@ -773,6 +777,17 @@ MeilingWaterSe:
   Name: Bedrängt
 YouxiangWakeSe:
   Name: Frühaufsteher
+  Description: Erhalte nach {Count} Runde{Count:ordinal one='' other='n'} zu Beginn
+    deines Zuges {Level} |Feuerkraft| und füge {Limit} zufällige Angriffskarte{Limit:plural
+    one='' other='n'} vom Ziehstapel deiner Hand hinzu. Diese Karte{Limit:plural one=''
+    other='n'} |kosten temporär| {Mana}.
+  ExtraDescription: Zu Beginn deines nächsten Zuges erhalte {Level} |Feuerkraft| und
+    füge {Limit} zufällige Angriffskarte{Limit:plural one='' other='n'} vom Ziehstapel
+    deiner Hand hinzu. Diese Karte{Limit:plural one='' other='n'} |kosten temporär|
+    {Mana}.
+  Brief: Nach einer gewissen Anzahl an Zügen, erhalte |Feuerkraft| und füge zufällige
+    Angriffskarten vom Ziehstapel deiner Hand hinzu. Diese Karten |kosten temporär|
+    {Mana}.
 LoseSpiritSe:
   Description: Zu Beginn deines Zuges verliert {PlayerName} {Level} |Geist|.
   Brief: Zu Beginn deines Zuges verliert {PlayerName} |Geist|.
@@ -914,15 +929,18 @@ NextTurnLoseGame:
   Name: Mit einem Bein im Grab
 KoishiDnaSe:
   Name: Defekte DNA
+  Brief: Zu Beginn deines Zuges, füge |DNA-Transkription| deiner Hand hinzu.
+  Description: Zu Beginn deines Zuges, füge {Level} |DNA-Transkription| deiner Hand
+    hinzu.
 ButterflyDreamSe:
   Name: Schmetterlingstraum
-  Brief: Zu Beginn deines Zuges, füge |p:vollkommen zufällige| Seltene Karten deiner
-    Hand hinzu. Diese Karten haben |Exil|, |Ätherisch| und farbige Manakosten können
-    mit allen Farben bezahlt werden.
-  Description: Zu Beginn deines Zuges, füge {Level} |p:vollkommen zufällige| Seltene
-    Karte{Level:plural one='' other='n'} deiner Hand hinzu. Diese {Level:plural one='Karte
-    hat' other='Karten haben'} |Exil|, |Ätherisch| und farbige Manakosten können mit
-    allen Farben bezahlt werden.
+  Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige|, Seltene Karten oben
+    auf deinen Ziehstapel. Diese Karten haben |Exil|, |Ätherisch| und farbige Manakosten
+    können mit allen Farben bezahlt werden.
+  Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige|, Seltene
+    Karte{Level:plural one='' other='n'} oben auf deinen Ziehstapel. Diese {Level:plural
+    one='Karte hat' other='Karten haben'} |Exil|, |Ätherisch| und farbige Manakosten
+    können mit allen Farben bezahlt werden.
 KoishiPhoneSe:
   Name: Erschreckend süßer Anruf
   Brief: "Jedes Mal, wenn eine Angriffskarte aktiviert wird, führe |Folgeangriffe|\
@@ -1105,11 +1123,12 @@ MeihongFireSe:
   Description: "Am Ende deines Zuges verursacht {PlayerName} an allen Feinden {Level}\
     \ Schaden.\nAktiviere diesen Effekt auch, nachdem eine |Unglückskarte| oder Statuskarte\
     \ gezogen wird."
-  Name: Willkürliche Brandstiftung
+  Name: Willkürliche Entzündung
 RinDrawSe:
   Brief: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe Karten.
   Description: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe {Level} Karte{Level:plural
     one='' other='n'}.
+  Name: Zuweisung der Geister
 HekaHellRainSe:
   Description: "Am Ende des Zuges von {OwnerName}, verursache allen Feinden {Level}\
     \ Schaden für jede gespielte Karte in diesem Zug.\nAngesammelter Schaden: {Count}"
@@ -1124,17 +1143,24 @@ TiangouOrderSe:
 TianziRockSe:
   Description: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere den
     Schaden um {Level}.
+  Brief: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere den Schaden.
+  ExtraDescription: "Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere\
+    \ den Schaden um {Level}.\n{OwnerName} kann nicht |anvisiert| werden."
 BailianMagicSe:
   Brief: Die nächsten |Talentkarten| in diesem Zug aktivieren sich zweimal.
   Description: Die {Level:plural one='nächste |Talentkarte|' other='nächsten % |Talentkarten|'}
     in diesem Zug {Level:plural one='aktiviert' other='aktivieren'} sich zweimal.
+  Name: Rezitation des Teufels
 JinziDoppelgangerSe:
   Name: Centurys Doppelgängerin
 SeeFengshuiSe:
   Name: Feng-Shui Manipulation
-  Description: "Zu Beginn deines Zuges {PlayerName}'s turn, |Scry| {Scry}.\nJedes\
-    \ Mal, wenn Verteidigungskarten durch eine |Vorhersehung| abgeworfen wird, erhalte\
-    \ {Block} |Block|."
+  Description: "Zu Beginn deines Zuges trifft {PlayerName} eine |Vorhersehung| {Scry}.\n\
+    Jedes Mal, wenn eine Verteidigungskarte durch eine |Vorhersehung| abgeworfen wird,\
+    \ erhalte {Block} |Block|."
+  Brief: "Zu Beginn deines Zuges trifft {PlayerName} eine |Vorhersehung|.\nJedes Mal,\
+    \ wenn eine Verteidigungskarte durch eine |Vorhersehung| abgeworfen wird, erhalte\
+    \ |Block|."
 YachieDefendSe:
   Brief: "Verhindere die nächsten Male, an denen {OwnerName} Leben verlieren würde.\n\
     Stammt der Lebensverlust von einem Feind, verliert dieser Feind stattdessen dieselbe\
@@ -1142,6 +1168,7 @@ YachieDefendSe:
   Description: "Verhindere {Level:plural one='das nächste Mal' other='die nächsten\
     \ % Male'}, an denen {OwnerName} Leben verlieren würde.\nStammt der Lebensverlust\
     \ von einem Feind, verliert dieser Feind stattdessen dieselbe Menge Leben."
+  Name: Schildkrötenpanzer der Hölle
 CatchGoblinSe:
   Brief: Erleide 33% weniger Schaden. Wird {OwnerName} besiegt, erhält {PlayerName}
     50 <sprite="Point" name="Gold">.
@@ -1157,10 +1184,18 @@ YonglinCardSe:
   Brief: Füge am Ende deines Zuges |Falscher Mond| deinem Ziehstapel hinzu.
   Description: Füge am Ende deines Zuges {Level} Mal |Falscher Mond| deinem Ziehstapel
     hinzu.
+  Name: Der zurückgezogene Weise
 YinyangQueenSe:
   Description: Die Effekte aller |Yin-Yang Kugeln| sind {Level} Mal so wirksam.
   Brief: Die Effekte aller |Yin-Yang Kugeln| sind um ein vielfaches wirksamer.
+  Name: Talentierte Handwerkerin Misumaru
 SanaeSummonGodSe:
   Brief: Nach einer gewissen Anzahl an Zügen, erhalte |Feuerkraft| und |Geist|.
   ExtraDescription: Zu Beginn deines nächsten Zuges erhält {PlayerName} {Level} |Feuerkraft|
     und |Geist|.
+  Name: Beschwörung von Take-Minakata
+  Description: Erhalte nach {Count} Runde{Count:ordinal one='' other='n'} zu Beginn
+    des Zuges von {PlayerName} {Level} |Feuerkraft| und |Geist|.
+GainInspirationSe:
+  Description: "Am Ende deines Zuges, füge {Level} |Heureka!| deinem Ziehstapel hinzu.\n"
+  Brief: "Am Ende deines Zuges, füge |Heureka!| deinem Ziehstapel hinzu.\n"
