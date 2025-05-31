@@ -917,6 +917,8 @@ YouxiangMoonSe:
 HuiyeTimeSe:
   ExtraDescription: "Csak {Limit} kártya játszható ki ebben a fordulóban. ({Count}\
     \ maradt.)\n{SelfName} az tétlen és el fog tűnni miután ez a forduló véget ér."
+  Name: Pillanatok Közt
+  Description: Csak {Limit} kártya játszható ki fordulónként. ({Count} maradt.)
 Cold:
   Brief: "{OwnerName} fordulója elején {BaseDamage} életerőt veszít és eltűnik a hatás\
     \ róluk.\nMikor |Hideget| tesznek rá, mégtöbb életet veszít {OwnerName}."
@@ -1114,7 +1116,161 @@ ShannvAbilitySe:
   Description: '{PlayerName} fordulója végén, {Level} |Mérget| tesz minden ellenfélre.'
 ZhenmiaowanAttackSe:
   Name: Hüvelyk Matyi Leszármazottja
+  ExtraDescription: Ebben a fordulóban, a készség kártyák költsége csökkentve van
+    {Mana} manával.
+  Description: Ebben a fordulóban, a készség kártyák költsége csökkentve van {Mana}
+    manával.
+  Brief: Ebben a fordulóban, a készség kártyák költsége csökkentve van {Mana} manával.
 KnifeTarget:
   Name: Célba Véve
   Description: A |Dobókések| {OwnerName:a} veszik célba mikor kijátszódnak.
   Brief: A |Dobókések| {OwnerName:a} veszik célba.
+ModuoluoFireSe:
+  Name: Ena Tüze
+  Description: Mikor egy <sprite="ManaSprite" name="P"> elköltődik, {Level} sebzést
+    okoz minden ellenfélnek.
+  Brief: Mikor egy <sprite="ManaSprite" name="P"> elköltődik, sebzést okoz minden
+    ellenfélnek.
+PrismriverSe:
+  Description: Mikor {PlayerName} egy mennyiségű manát kapna, helyette annyi <sprite="ManaSprite"
+    name="P"> manát kap.
+  Name: Prizma Versenymű
+  Brief: Átalakítja az összes csata során kapott manát <sprite="ManaSprite" name="P">
+    manává.
+MoonWorldSe:
+  Description: '{PlayerName} fordulója elején, {Level} véletlen kártya a kézben |Tisztát|
+    kap.'
+  Name: Tiszta Világ
+  Brief: '{PlayerName} fordulója elején, néhány véletlen kártya a kézben |Tisztát|
+    kap a csata végéig, törölve a színes költségüket.'
+YouxiangWakeSe:
+  ExtraDescription: '{PlayerName} következő fordulója elején, kap {Level} |Tűzerőt|
+    és a húzó halomból kézbe vesz {Limit} véletlen támadás kártyát. Ez a kártya |Ideiglenesen|
+    {Mana} manába kerül.'
+  Description: "{PlayerName} {Count:plural one='következő' other='ezt követő %.'}\
+    \ fordulójában, kap {Level} |Tűzerőt| és {Limit} véletlen támadás kártyát vesz\
+    \ a húzó halomból a kézbe. |Ideiglenesen| {Mana} manába {Limit:plural one='kerül'\
+    \ others='kerülnek'}."
+  Brief: Néhány forduló múlva, kap |Tűzerőt| és egy véletlen támadás kártyát vesz
+    a húzó halomból a kézbe. |Ideiglenesen| {Mana} manába kerül.
+  Name: Koránkelő
+TianziRockSe:
+  Brief: Mikor {OwnerName} támadási sebzést szenvedne, csökkenti azt.
+  Description: Mikor {OwnerName} támadási sebzést szenvedne, {Level} értékkel csökkenti
+    azt.
+  ExtraDescription: "Mikor {OwnerName} támadási sebzést szenvedne, {Level} értékkel\
+    \ csökkenti azt.\n{OwnerName} nem kaphat |Ráközelítés| hatást."
+  Name: Bevehetetlen!
+CatchGoblinSe:
+  Brief: '{OwnerName} 33%-al kevesebb sebzést szenved és 50<sprite="Point" name="Gold">
+    aranyat dob mikor legyőzetik.'
+  Name: Fortuna Próbája
+  Description: '{OwnerName} 33%-al kevesebb sebzést szenved és 50<sprite="Point" name="Gold">
+    aranyat dob mikor legyőzetik.'
+BailianMagicSe:
+  Description: Ebben a fordulóban, a következő {Level} kijátszott |Képesség| kártya
+    kétszer lesz kijátszva.
+  Name: Ördög Szózata
+  Brief: Ebben a fordulóban, a következő néhány kijátszott |Képesség| kártya kétszer
+    lesz kijátszva.
+TiangouOrderSe:
+  Description: Mikor {OwnerName} támadási sebzést szenved, {PlayerName} {Level} |Blokkolást|
+    kap.
+  Brief: Mikor {OwnerName} támadási sebzést szenved, {PlayerName} |Blokkolást| kap.
+  Name: Nagy Tengu Rendelete
+SeeFengshuiSe:
+  Brief: "{PlayerName} fordulója elején, |Jósol|.\nMikor egy védelem kártya eldobódik\
+    \ |Jósolás| közben, |Blokkolást| ad."
+  Name: Feng Shui Manipuláció
+  Description: "{PlayerName} fordulója elején, |Jósol| {Scry} kártyát.\nMikor egy\
+    \ védelem kártya eldobódik |Jósolás| közben, {Block} |Blokkolást| ad."
+RainbowMarketSe:
+  Name: Holdi Szivárványpiac
+  Description: Mikor egy kártya |Száműzetik|, kézbe tesz {Level} véletlen kártyát
+  Brief: Mikor egy kártya |Száműzetik|, kézbe tesz néhány véletlen kártyát.
+KokoroDanceSe:
+  Description: Mikor egy ellenfél |Gyengítést| kap, {PlayerName} {Level} sebzést okoz
+    neki.
+  Name: Üres Maszkok Tánca
+  Brief: Mikor egy ellenfél |Gyengítést| kap, {PlayerName} sebzést okoz neki.
+YachieDefendSe:
+  Name: Teknőspokol
+  Description: "Megakadályozza a következő {Level} alkalommal, hogy {OwnerName} életerőt\
+    \ vesztítsen.\nHa a sebzés forrása egy ellenfél, akkor az ellenfél annyi életerőt\
+    \ veszít, mint amennyit {OwnerName} vesztett volna."
+  Brief: "Megakadályozza a következő alkalommal, hogy {OwnerName} életerőt veszítsen.\n\
+    Ha a sebzés forrása egy ellenfél, akkor az ellenfél annyi életerőt veszít, mint\
+    \ amennyit {OwnerName} vesztett volna."
+BlackPoisonSe:
+  Brief: Mindig mikor {PlayerName} blokkolatlan sebzést okoz egy ellenfélnek, |Mérget|
+    tesz arra az ellenfélre.
+  Name: Tánc a Sötétben
+  Description: Mindig mikor {PlayerName} blokkolatlan sebzést okoz egy ellenfélnek,
+    {Level} |Mérget| tesz arra az ellenfélre.
+MeilingAbilitySe:
+  Name: Erős Szivárávány Ököl
+  Description: '{PlayerName} kétszer annyi |Tűzerőt| és |Ideiglenes Tűzerőt| kap.'
+  Brief: '{OwnerName} kétszer annyi |Tűzerőt| és |Ideiglenes Tűzerőt| kap.'
+YonglinUpgradeSe:
+  Brief: '{PlayerName} fordulója elején, |Felfejlesz| néhány véletlen kártyát a kézben.'
+  Description: '{PlayerName} fordulója elején, |Felfejlesz| {Level} véletlen kártyát
+    a kézben.'
+  Name: Holdi Nyúl Füstölő
+YinyangQueenSe:
+  Brief: Minden |Jin-Jang Gömb| hatása megszorzódik.
+  Name: Misumaru, Bölcs Barkács
+  Description: Az összes |Jin-Jang Gömb| hatása {Level} alkalommal megszorzódik.
+RinDrawSe:
+  Description: Mikor egy Státusz kártya kihúzódik, húz {Level} kártyát.
+  Brief: Mikor egy Státusz kártya kihúzódik, kártyákat húz.
+  Name: Lélek Megbízás
+HekaHellRainSe:
+  Description: "{OwnerName} fordulója végén, {Level} sebzést okoz minden ellenfélnek\
+    \ minden egyes fordulóban kijátszott kártyáért.\n(Felgyűlt sebzés: {Count})"
+  Name: Pokolzápor
+  Brief: '{OwnerName} fordulója végén, sebzést okoz minden ellenfélnek minden egyes
+    fordulóban kijátszott kártyáért.'
+MeilingWaterSe:
+  Name: Sarokba Szorult
+  Description: '{OwnerName} fordulója elején, elveszt {Level} életerőt.'
+  Brief: '{OwnerName} fordulója elején, életerőt veszít.'
+ZhenmiaowanAbilitySe:
+  Name: A Kalapács Varázsa
+  Description: A kártyák {Mana} manával kevesebbe kerülnek.
+  Brief: A kártyák {Mana} manával kevesebbe kerülnek.
+YukariFriendSe:
+  Name: Káprázat Határa
+  Brief: '{PlayerName} fordulója elején, kézbe tesz néhány véletlen háromszínű semleges
+    kártyát. |Ideiglenesen| {Mana} manába kerülnek és |Éteri| van rajtuk.'
+  Description: "{PlayerName} fordulója elején, kézbe tesz {Level} véletlen háromszínű\
+    \ semleges kártyát. |Ideiglenesen| {Mana} manába {Level:plural one='kerül' other='kerülnek'}\
+    \ és |Éteri| van {Level:plural one='rajta' other='rajtuk'}."
+CommonFireSe:
+  Brief: Mikor egy Közönséges kártya kijátszódik, {OwnerName} kap |Ideiglenes Tűzerőt|.
+  Name: Az Átlagosság Ereje
+  Description: Mikor egy Közönséges kártya kijátszódik, {OwnerName} kap {Level} |Ideiglenes
+    Tűzerőt|.
+TodayYesterdaySe:
+  Name: Gensokyo, Múlt és Jelen
+  Brief: Mikor {OwnerName} |Kitér| egy támadástól, |Tűzerőt| kap.
+  Description: Mikor {OwnerName} |Kitér| egy támadástól, {Level} |Tűzerőt| kap.
+JinziDoppelgangerSe:
+  Description: Az első {Level:plural one='' other='%'} {PlayerName} fordulója alatt
+    kijátszott kártya kétszer játszódik ki. ({Count} maradt.)
+  Brief: Az első {PlayerName} fordulója alatt kijátszott kártyák kétszer játszódnak
+    ki.
+  Name: Század Hasonmásai
+BailianFireSe:
+  Brief: "{PlayerName} fordulója elején, kézbe tesz néhány véletlen készség kártyát.\n\
+    |Ideiglenesen| {Mana} manába kerülnek és |Száműz|, |Éteri| van rajtuk."
+  Name: Hokkai Tüzei
+  Description: "{PlayerName} fordulója elején, kézbe tesz {Level} véletlen készség\
+    \ kártyát.\n|Ideiglenesen| {Mana} manába {Level:plural one='kerül' other='kerülnek'}\
+    \ és |Száműz|, |Éteri| van {Level:plural one='rajta' other='rajtuk'} ."
+SanaeSummonGodSe:
+  Name: Take-Minakata Idézése
+  Description: "{PlayerName} {Count:plural one='következő' other='ezt követő %.'}\
+    \ fordulójában kap {Level} |Tűzerőt| és |Lelket|."
+  Brief: Néhány forduló múlva, kap |Tűzerőt| és |Lelket|.
+  ExtraDescription: '{PlayerName} következő fordulójában kap {Level} |Tűzerőt| és
+    |Lelket|.'
