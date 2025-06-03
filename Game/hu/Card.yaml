@@ -114,7 +114,7 @@ Zhuizongfu:
   Description: "{Damage} sebzést okoz egy véletlen ellenfélnek {Value1} alkalommal.\n\
     {PlayerName} kap {Mana} manát a fordulója kezdetén."
 DanmuDuijue:
-  Description: "Kap {Block} |Blokkolást|.\nKap {Value1} |Tükröződést|.\n|Tűzerő| hatására\
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükröződést| ad.\n|Tűzerő| hatására\
     \ {SelfName} erősödik."
   Name: Varázskártya Párbaj
   UpgradedDescription: "Kap {Shield} |Gátat|.\nKap {Value1} |Tükröződést|.\n{SelfName}\
@@ -578,8 +578,8 @@ StarFantasy:
     \ sebzését a csatában {Value1} ponttal."
 StarShower:
   Name: Csillagporban Sütkérezés
-  Description: "{PlayerName} kap {Block} |Blokkolást|.\nHa nincs |Töltése|, kap {Value2}\
-    \ |Töltést|. Egyébként, kap {Value1} |Töltést|."
+  Description: "{Block} |Blokkolást| ad.\nHa nincs |Töltése|, kap {Value2} |Töltést|.\
+    \ Egyébként, kap {Value1} |Töltést|."
   FlavorText: '"Hát, az élet nem mindig rózsás".'
 MarisaHoldCard:
   Name: Búcsú Bánat
@@ -901,24 +901,68 @@ TimeLord:
   Description: '{Value1} |Időimpulzust| ad.'
 FakeTimeline:
   Name: Képzetes Idővonal
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz minden ellenfélnek.\n\
+    {Value1} |Időimpulzust| ad."
 BackOfKnife:
   Name: Pengém Visszatér
+  Description: "Kézbe tesz egy |Éles Penge Expresszt|.\nUtána, töröl minden |Száműzött\
+    \ Dobókést| a csatából. Minden egyes így törölt kártyáért {Value1} ponttal növeli\
+    \ a sebzését.\n(A sebzése {IncreasedDamage} ponttal fog nőni.)"
+  NonbattleDescription: "Kézbe tesz egy |Éles Penge Expresszt|.\nUtána, töröl minden\
+    \ |Száműzött Dobókést| a csatából. Minden egyes így törölt kártyáért {Value1}\
+    \ ponttal növeli a sebzését."
 GroupOfKnife:
   Name: Éles Penge Expressz
+  Description: '{Damage} sebzést okoz.'
 TimeMagic:
   Name: Időmágia
+  Description: "Válassz {Value1} kártyát {Value2} |p:teljesen véletlen| nem-Közönséges\
+    \ kártya közül és vedd a kézbe. |Száműz| és |Éteri| van {Value1:plural one='rajta'\
+    \ other='rajtuk'}, és bármilyen manával ki lehet fizetni a {Value1:plural one='költségét'\
+    \ other='költségüket'}, ami {Mana} manával van csökkentve.\nEz a hatás megismétlődik\
+    \ minden extra forduló elején."
+  DetailText: "Ezek az |e:alternatív kártyák| nem korlátozottak összmana, manaszín\
+    \ vagy karakter által.\n{SelfName} nem idézhető elő így.\n{SelfName} többszörös\
+    \ használata, csak a választási esetek számát növeli, nem pedig hogy hány kártya\
+    \ választható egyszerre, vagy hogy mennyiből lehet választani."
 SpecialClock:
   Name: Cseléd Trükkje
+  Description: '{PlayerName} fordulója elején, eldob legfeljebb 1 kártyát. Utána húz
+    annyi kártyát.'
+  FlavorText: 'A nappali takarítására használt idő: 0.4 másodperc'
 SakuyaUsage:
   Name: Sakuya Helytelen Használata
+  ExtraDescription1: "Húz {Value1} kártyát.\n|Azt követően, miután {Value2} alkalommal\
+    \ kijátszódott|: {SelfName} törlődik a csatából. Befejezi a fordulót. A húzó halom\
+    \ tetejére tesz egy |Sakuya Helyes Használatát|.\n({PlayCount} alkalommal lett\
+    \ kijátszva.)"
+  FlavorText: Csak állítsd meg az időt és cipelj mindenkit a földszintre.
+  Description: "Húz {Value1} kártyát.\n|Azt követően, miután {Value2} alkalommal kijátszódott|:\
+    \ {SelfName} törlődik a csatából. A húzó halom tetejére tesz egy |Sakuya Helyes\
+    \ Használatát|."
 SakuyaUsage2:
   Name: Sakuya Helyes Használata
+  Description: Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.
+  FlavorText: Házimunkát végezni, míg áll az idő.
 UnlimitedTime:
   Name: Tökéletes Időmegállítás
+  Description: Válassz 1-et és vedd kézbe, {Value1} |Időkorlátos| kártya közül. |Ideiglenesen|
+    {Mana} manába kerül, |Száműz| és |Éteri| van rajta, valamint eltűnik az |Időkorlát|
+    róla.
+  FlavorText: Elnézést, korlátlan időm van.
 IceWing:
   Name: Jégszárny
+  Description: "{Mana} manát ad.\nA húzó halom 2 véletlen kék kártyája közül, Válassz\
+    \ egyet, hogy az kézbe kerüljön, a párja pedig a húzó halom aljára."
+  FlavorText: Felszállásra készen!
+  ExtraDescription1: "{Mana} manát ad.\nA húzó halom 2 véletlen kék kártyája közül,\
+    \ Válassz egyet, hogy az kézbe kerüljön, a párja pedig a húzó halom aljára.\n\
+    ({BlueCount} kék kártya maradt a húzó halomban.)"
 Opt:
   Name: Vékony Jégen
+  Description: "Döntsd el a húzó halom tetején lévő kártyáról hogy az aljára kerül\
+    \ vagy sem.\nHúz egy kártyát.\n{Mana} manát ad."
+  FlavorText: Képzeld el, mi lenne, ha Cirno megszerezné Hourai Ékkköves Ágát…
 FriendDraw:
   Name: Kerti Kiruccanás
 LilyFriend:
@@ -971,8 +1015,16 @@ SilverBullet:
     \ |Dobókésért|."
 TimeWalk:
   Name: Időséta
+  Description: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.\nCsak\
+    \ {SelfName} első használata fog hatni minden csatában."
+  ExtraDescription1: "|d:Befejezi {PlayerName} fordulóját. Utána, extra fordulóba\
+    \ lép.|\nCsak {SelfName} első használata fog hatni minden csatában."
+  FlavorText: Még költségnövelés után is túl erős volt,
 CirnoBlockU:
   Name: Kristálypajzs
+  Description: '{Block} |Blokkolást| ad.'
+  FlavorText: A hosszú évekig mélyfagyasztott angol marhahús önvédelmi fegyverként
+    is használható.
 QinglanAttack:
   Name: Nyúlra Szállás
 ShuimiUnderWater:
@@ -1219,42 +1271,91 @@ SakuyaFuneral:
   FlavorText: '"Még nem haltam meg, kisasszony."'
 KnifeAim:
   Name: Lombozó Világ
+  Description: "{Damage} sebzést okoz.\n{Value1} |Ráközelítést| ad.\nEldob minden\
+    \ |Dobókést|. Ezt az ellenfelet célozzák."
 KnifeHell:
   Name: Ezüst Kecsesség
+  Description: "Kézbe tesz {Value1} |Dobókést|.\n|Felfejleszt| minden |Dobókést| a\
+    \ kézben, húzó - és dobó halmokban egyaránt."
 LoyalMaid:
   Name: Hűséges Cseléd
+  Description: "{Shield} |Gátat| ad.\nAz extra fordulók elején, {SelfName} visszatér\
+    \ a kézbe a dobó halomból. |Ideiglenesen| {Mana} manába kerül."
 ClockCorpse:
   Name: Halál Órája
+  Description: Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép. Az extra
+    forduló húzó lépésen kívül nem lehet kártyát húznia forduló végéig.
 StopTime:
   Name: Fagyott Idő
+  Description: Mikor {PlayerName} fordulója véget ér, megtart {Value1} elköltetlen
+    manát, ahelyett hogy elvesztené.
 SakuyaDio:
   Name: Te Következel!
+  Description: "Mikor egy |Dobókés| kijátszódik, {Value1} |Ráközelítést| tesz a célpontjára.\n\
+    Befejezi {PlayerName} fordulóját. Utána extra fordulóba lép. Az extra forduló\
+    \ elején, {Value2} |Dobókést| tesz a kézbe húzó lépés kártyái helyett."
+  FlavorText: 次は貴様だ！
 EvilMaid:
   Name: Az Ördög Cselédje
+  Description: "{Value1} életerőt veszít.\n{PlayerName} következő fordulója során,\
+    \ minden támadás kétszeres sebzést okoz."
 ExtraTurnEveryone:
   Name: Inflációnégyzet
+  Description: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.\nAz\
+    \ ellenfelek is extra fordulóba lépnek, mikor a következő fordulójuk véget ér."
 TunnelEffect:
   Name: Kvantum Alagúthatás
+  Description: "{Damage} sebzést sebez egy véletlen ellenfélnek.\n{Mana} manát ad.\n\
+    Keveréskor, visszakerül {SelfName} a kézbe a dobó halomból."
 SakuyaDetective:
   Name: Telj-Lefedő Jelentés
+  FlavorText: Lehet hogy elfelejtetted, de ez valójában egy bűnügyi nyomozós játék.
+  Description: "{Value2} kártyát húz.\nMikor egy valós tettes ellen játszik, {Value1}\
+    \ sebzést okoz neki a csata elején.\n({BossDamage} sebzés gyűlt össze eddig)"
 SakuyaSpeedup:
   Name: Időgyorsítás
+  FlavorText: Éppen Mögötted.
+  ExtraDescription1: "Megkétszerezi a jelenlegi |Időimpulzust|.\n|d:Túlcsordulás:\
+    \ {Mana} manát ad.|"
+  Description: "Megkétszerezi a jelenlegi |Időimpulzust|.\n|Túlcsordulás|: {Mana}\
+    \ manát ad."
 CirnoAttackG:
   Name: Fagy Levélborotva
+  Description: '{Damage} sebzést okoz.'
+  FlavorText: Cirno szeret fagyott leveleket dobálni a vízen a barátaival.
 FreezeBullet:
   Name: Fagylövés
+  FlavorText: Cirno az Úr és Megmentő!
+  Description: "{Block} |Blokkolást| ad.\n{PlayerName} következő fordulójáig, |Hideget|\
+    \ tesz a {PlayerName:a} legelőször megtámadó ellenségre."
+  UpgradedDescription: "{Block} |Blokkolást| ad.\n{PlayerName} következő fordulójáig,\
+    \ |Hideget| tesz a {PlayerName:a} legelőször megtámadó 2 ellenségre."
 IceBolt:
   Name: Jéggolyó
+  Description: "{Damage} sebzést okoz.\n|Hideget| tesz a célpontra találatkor."
+  FlavorText: Szájon át történő alkalmazása javasolt.
 OptBottom:
   Name: Süllyeszt
+  Description: '{TargetName} a húzó halom aljára kerül.'
+  FlavorText: Nem véletlen hogy baleset történt.
 FrostGarden:
   Name: Hideg Belépő
+  UpgradedDescription: "|Hideget| tesz minden ellenfélre.\n{PlayerName} következő\
+    \ fordulója elején ez a hatás megismétlődik.\nHa van egy megidézett |Csapattárs|\
+    \ a kézben, {SelfName} {Mana} manával kevesebbe kerül."
+  Description: "|Hideget| tesz minden ellenfélre.\nHa van egy megidézett |Csapattárs|\
+    \ a kézben, {SelfName} {Mana} manával kevesebbe kerül."
+  FlavorText: Ingyen klimatizálás.
 ShiverArmor:
   Name: Fagyvisszaverődés
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Fagypáncélt| ad."
 BlueRose:
   Name: Hideg Rózsa
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz."
 SummerIce:
   Name: Nyári Jég
+  FlavorText: A csomagod egy forduló múlva érkezik.
+  Description: '{Mana} manát ad a következő forduló elején.'
 CirnoConsider:
   Name: Óvatos Megfontolás
 CirnoInForest:
@@ -1430,38 +1531,93 @@ LunaDial:
     |Mikor {SelfName} kézbe kerül|: {SelfName} {Mana} manával kevesebbe kerül a csatában."
 SakuyaShop:
   Name: Készletfeltöltés
+  FlavorText: Kérlek ne értsd félre, Gensokyo bevásárlóközpontja nem ad el vámpírokat.
+  Description: "{Mana} manát ad.\n{Value1} kártyát húz."
 SilverBlade:
   Name: Ezüst Dimenzió
+  FlavorText: Sakuya kisasszony, kérlek vigyél az Arany Dimenzióba.
+  Description: Miután egy támadás kártya kijátszódik, {Value1} |Gátat| ad.
 BladePower:
   Name: Káprázatos Vágta
+  Description: "Mikor egy |Dobókés| kijátszódik, kézbe tesz egy véletlen támadás kártyát.\
+    \ A kártya |ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri| van\
+    \ rajta.\nKézbe tesz {Value1} |Dobókést|."
 LunaClock:
   Name: Hold Óra
+  Description: Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép. {PlayerName}
+    támadásai nem sebeznek az extra forduló alatt.
 PerfectServant:
   Name: Tökéletes Cseléd
+  Description: "|Minden elköltött <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"> manáért|: {PlayerName} fordulója elején, minden kézben lévő kártya\
+    \ |ideiglenesen| 1 véletlen manával kevesebbe kerül.\n|Minden elköltött <sprite=\"\
+    ManaSprite\" name=\"U\"> manáért|: {PlayerName} következő fordulója elején, {Mana}\
+    \ manát ad és húz egy extra kártyát."
 BackToFuture:
   Name: Vissza a Jövőbe
+  Description: "Megcseréli a dobó és húzó halmokat.\nHúz {Value1} kártyát."
+  FlavorText: Utak? Ahová mi megyünk, oda nem kellenek utak.
 SakuyaKiller:
   Name: Metsző a Ködben
+  Description: "{PlayerName} fordulója végén, {Value1} |Dobókést| tesz a dobó halomba.\n\
+    Ez egy ellenfél legyőzetésénél megismétlődik."
 BrokenTimeline:
   Name: Törött Idővonal
+  FlavorText: Nem tudok mit kezdeni ezzel az idővonallal, következő játék.
+  Description: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.\nA manabázis\
+    \ nem ad manát ezen extra forduló elején."
 AutoKnife:
   Name: Átkozott Ezüstkés
+  Description: "Minden |Dobókés| |Önműködő Száműzt| kap a csata végéig.\n{Value1}\
+    \ |Dobókést tesz a kézbe."
+  FlavorText: Állítsd a kisállatod automatikus támadás módba.
 MeilingFriend:
   Name: Meiling, Hanyag Kapuőr
+  ExtraDescription3: '{FriendU}{Value1} életerőt és {Value2} |Tűzerőt| ad.'
+  Description: "{FriendS}{Graze} |Kitérést| ad.\n{FriendP}Kézbe tesz egy |Dobókést|.\n\
+    Mikor {PlayerName} sebződik egy ellenfél teljes támadásától, még egyszer hat."
 CirnoAttackU:
   Name: Jéglövet
+  Description: '{Damage} sebzést okoz.'
+  FlavorText: Az utolsó pillanatban Cirno eszébe jutott, hogy valójában hógolyócsatát
+    víva barátaival.
 CirnoBlockG:
   Name: Leveles Védelem
+  FlavorText: A hawaii tündérek fortélyosan használják ezt a táncmozdulatot.
+  Description: '{Block} |Blokkolást| ad.'
 IceLance:
   Name: Jéglándzsa
+  FlavorText: A pletykák szerint Cirno fel-alá kezd ugrálni, miközben ezt a varázskártyát
+    használja.
+  Description: "{Damage} sebzést okoz.\nHa a célponton |Hideg| van, {Value1} szorzóval\
+    \ annyi sebzést okoz."
 DayaojingFriend:
   Name: Daiyousei, Életteli Segéd
+  FlavorText: Egy nyomozónak szüksége van egy segédre; még Cirno szerint is köztudott.
+  Description: '{FriendP}{Damage} sebzést okoz egy véletlen ellenfélnek.'
+  ExtraDescription1: '{FriendA}{Block} |Blokkolást| ad.'
+  UpgradedExtraDescription1: '{FriendA}{Block} |Blokkolást| és {Shield} |Gátat| ad.'
+  ExtraDescription3: '{FriendU}Kézbe tesz {Value1} |Nyárközepi Virágot|.'
+  UpgradedExtraDescription3: '{FriendU}Kézbe tesz {Value1} |Nyárközepi Virágot+|.'
 MaidFriend:
   Name: Kasumi, Kastélyi Cseléd
+  ExtraDescription1: '{FriendA}Azonnali sebzést okoz. Kézbe tesz {Value2} |Dobókést|.'
+  Description: '{FriendP}{Damage} sebzést okoz a legkevesebb életerejű ellenfélnek.'
+  FlavorText: A Bíbor Ördög Kastély összes tündércselédje közül, Kasumi veszi a legkomolyabban
+    a munkáját.
+  ExtraDescription3: '{FriendU}Azonnali sebzést okoz. Minden {SelfName} {Value1} ponttal
+    többet sebez.'
 GlacialSpike:
   Name: Apró Gleccser
+  Description: "{Damage} sebzést okoz.\n|Hideget| tesz a célpontra találatkor.\nKézbe\
+    \ tesz egy |Jéggolyót|."
+  FlavorText: Egy 1 a 10000-hez méretű valósághű replika.
 CoolBreeze:
   Name: Üdítő Fuvallat
+  FlavorText: Habár Cirno számára ez hűs és üdítő lehet, az ellenfele meglehet hogy
+    nincs egy hullámhosszon van vele.
+  Description: "{Block} |Blokkolást| ad.\nHa egy ellenfelen |Hideg| van, |Felfejlesz|\
+    \ {Value1} véletlen kártyát a kézből."
 CirnoDraw:
   Name: Tündér Ész
 ColdSnap:
