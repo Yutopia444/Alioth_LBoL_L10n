@@ -158,6 +158,7 @@ KoishiTouying:
   Description: "{Mana} manát ad.\nVálassz 1 egyet {Value1} véletlen kártya közül hogy\
     \ a húzó halom tetejére kerüljön. |Újratölt|, |Száműz|, és |Éteri| van rajta.\n\
     Ezen kártyák legalább {Value2} költségűek."
+  FlavorText: Van egy jó ötletem.
 FengyinYaomo:
   Name: Sárkányölő Kör
   Description: "{Damage} sebzést okoz.\n{Value1} |Gyengeséget| és |Sebezhetőséget|\
@@ -1000,6 +1001,9 @@ KoishiBlockG:
   Description: '{Block} |Blokkolást| ad.'
 KoishiUltimate:
   Name: Igazi Én Ébredése
+  DetailText: 'v1.6.1: Az önműködő-kijátszás hatás már a húzó lépés előtt történik.'
+  Description: "Kijátssza a húzó halom legfelső kártyáját.\n{PlayerName} fordulója\
+    \ elején, kijátssza a húzó halom legfelső kártyáját."
 YukariFlyObject:
   Name: Szupersebességű Repülő
 PrismriverWhite:
@@ -1105,6 +1109,9 @@ KoishiDnaAttack:
   Description: '{Damage} sebzést okoz.'
 CloseEye:
   Name: Zárt Szív
+  Description: "{Shield} |Gátat| ad.\nAz ellenfelek szándékai láthatatlanok lesznek\
+    \ {PlayerName} következő fordulójában"
+  FlavorText: Koishi bezárta a gondolatolvasó harmadik szemét.
 BestFriend:
   Name: Legjobb Barát
   Description: "Válassz legfeljebb {Value1} |Csapattárs| kártyát. Maximális |Egységet|\
@@ -1127,8 +1134,10 @@ ForeverCool:
     \ véletlen |Csapattárs| a kézben {Value1} |Egységet| kap."
 AliceAttackU:
   Name: Baba Lándzsa
+  Description: '{Damage} sebzést okoz.'
 AliceBlockB:
   Name: Alice B Védelem
+  Description: '{Block} |Blokkolást| ad.'
 AliceKickerAttack:
   Name: Kirúgó Támadás
 MansionNight:
@@ -1237,8 +1246,13 @@ PassionVulnerable:
     Egyébként, |Szenvedélybe| lép."
 BabyDream:
   Name: Embrió Álma
+  Description: "{Block} |Blokkolást| ad.\n|Álmod| {Value1} kártyát, majd kijátsza\
+    \ az első |Megálmodott| |Rákövető| kártyát. "
 DuplicateFollower:
   Name: Magányos Szív
+  Description: "{Damage} sebzést okoz.\n{Mana} manát ad.\n|A csata elején|: A húzó\
+    \ halomba tesz {Value1} {SelfName} |Másolatot|."
+  ExtraDescription1: "{Damage} sebzést okoz.\n{Mana} manát ad."
 PeaceEndTurn:
   Name: Pillanatnyi Nyugalom
   Description: "Válassz a kézből legfeljebb {Value1} kártyát. |Visszatartja| {Value1:plural\
@@ -1261,10 +1275,29 @@ FindInspiration:
   Description: A húzó halomba tesz {Value1} |Heuréka!|-t.
 KoishiPotential:
   Name: Felszabadított Lehetőség
+  Description: Megmutatja a húzó halom legfelső {Value1} lapját. Válassz egy kártyát,
+    ami kétszer kijátszódik, majd |Száműzetik|.
+  DetailText: Ha egy |Játszhatatlan| kártya lett kiválasztva, az se kijátszva, se
+    |Száműzve| nem lesz.
+  FlavorText: Amikor az agyad 25%-át használod.
 ButterflyDream:
   Name: A Pillangó Álom
+  Description: "A húzó halom tetejére tesz {Value1} |p:teljesen véletlen| Ritka kártyát.\n\
+    |Újratölt|, |Száműz| és |Éteri| van {Value1:plural one='rajta' other='rajtuk'},\
+    \ és bármilyen színű manát ki lehet játszani hogy kifizesd a {Value1:plural one='költségét'\
+    \ other='költségüket'}.\n{PlayerName} fordulója elején, megismétli ezt a hatást."
+  FlavorText: A pillangó az én képzeletem szüleménye? Vagy én vagyok az *ő* képzeletének
+    szüleménye?
+  DetailText: "Ezek az |e: alternatív kártyák| teljesen figyelmen kívül hagyják a\
+    \ manát, manaszínt vagy a karaktermegszorításokat.\n{SelfName} nem állítható elő\
+    \ ezen hatás által.\nX Költségű kártyák nem állíthatóak elő ezen hatás által."
 KokoroFriend:
   Name: Kokoro, Felébredt Egyéniség
+  Description: '{FriendP}|Álmod| {Value1} kártyát.'
+  ExtraDescription1: '{FriendA}|Szenvedélybe| lép.'
+  ExtraDescription2: '{FriendA2}|Derűbe| lép.'
+  ExtraDescription3: '{FriendU}|Fúgába| lép.'
+  FlavorText: Per-szonda!
 AutoHousework:
   Name: Automatizált Háztartás
 DollFactory:
@@ -1610,8 +1643,11 @@ MoodAttack:
 PlayDrawTop:
   Name: Eszméletlen Tevékenység
   Description: "{Block} |Blokkolást| ad.\nKijátssza a húzó halom legfelső kártyáját."
+  FlavorText: '"Úristen, kijátsszottam egy Pénzátutalást!"'
 TheChariot:
   Name: 'Tarot: A Szekér'
+  Description: "|Jósol| {Scry} kártyát.\n{PlayerName} következő fordulója elején,\
+    \ |Szenvedélybe| lép és húz {Value1} kártyát."
 KoishiWake:
   Name: Elmevisszállítás
   FlavorText: '"Hol vagyok?"'
@@ -1627,10 +1663,16 @@ KoishiFire:
     |Derűben|: Helyette {Value1} |Lelket| ad."
 BlackEpiphany:
   Name: Illanó Tudat
+  Description: "|Fúgába| lép.ű\nCsak {Value1} kártyát lehet kijátszani {PlayerName}\
+    \ következő fordulója során."
 FakeBullet:
   Name: Képzeletbeli Danmaku
+  Description: "Elvégez {Value1} |Rákövető Támadást|.\nHa nincs elég |Rákövető| kártya\
+    \ a húzó halomban, véletlen |Rákövető| kártyák lesznek készítve, hogy elvégezzék\
+    \ a |Rákövető Támadást|."
 GainInspiration:
   Name: Hadd Gondolkozzak
+  Description: "{PlayerName} fordulója végén, egy |Heuréka!|-t tesz a húzó halomba.\n"
 KoishiDna:
   Name: DNS Hibája
   UpgradedDescription: "{PlayerName} fordulója elején, kézbe tesz {Value1} |DNS Másolatot|.\n\
@@ -1638,10 +1680,16 @@ KoishiDna:
   Description: '{PlayerName} fordulója elején, kézbe tesz {Value1} |DNS Másolatot|.'
 KoishiAttackX:
   Name: Rózsapokol
+  Description: '|Minden elköltött <sprite="ManaSprite" name="2"> manáért|: {Damage}
+    sebzést okoz minden ellenfélnek, és {Mana} manát ad.'
 KoishiPhone:
   Name: Ijesztően Édes Hívás
+  FlavorText: Nem szalaszthatod el ezt a hívást.
+  Description: "Mikor egy támadás kártya kijátszódik, elvégez egy |Rákövető Támadást|.\n\
+    Ha nincs |Rákövető| kártya a húzó halomban, |Csörög a Fón| lesz használva |Rákövetőként|."
 AliceAttackB:
   Name: Kerülő Villanás
+  Description: '{Damage} sebzést okoz.'
 DollBlock:
   Name: Babapajzs
 TriggerAllPassive:
@@ -1865,17 +1913,47 @@ KoishiAttackB:
   Description: '{Damage} sebzést okoz.'
 SelfControl:
   Name: Önmegvalósítás
+  ExtraDescription1: '|Szenvedélybe| lép.'
+  ExtraDescription2: '|Derűbe| lép.'
+  Description: "|Válassz|: |Szenvedélybe| vagy |Derűbe| lép.\n{PlayerName} fordulója\
+    \ végén, ha |Szenvedélyben| van, {Value1} |Tűzerőt| ad, vagy {Value2} |Blokkolást|,\
+    \ ha |Derűben|."
 PerfectCrime:
   Name: Tökéletes Bűntett
+  FlavorText: Szép "Holdi Lepled" van. Most már az enyém!
+  Description: Ellopja a célpont |Gátját|, |Kitérését|, |Optikai Álcáját|, |Hibátlanságát|
+    és legfeljebb {Value1} |Tűzerőt|, |Lelket|.
 PsycheLock:
   Name: Pszichés Zár
+  NonbattleDescription: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba\
+    \ lép.\nCsak akkor lehet kijátszani, ha {PlayerName} már belépett 3 különböző\
+    \ |Elmeállapotba|, miután {SelfName} a kézbe került."
+  Description: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.\nCsak\
+    \ akkor lehet kijátszani, ha {PlayerName} már belépett 3 különböző |Elmeállapotba|,\
+    \ miután {SelfName} a kézbe került. ({Count} maradt)"
+  UpgradedDescription: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba lép.\n\
+    {PlayerName} következő fordulója elején, |Felfejleszti| az összes kézbe lévő kártyát.\n\
+    Csak akkor lehet kijátszani, ha {PlayerName} már belépett 3 különböző |Elmeállapotba|,\
+    \ miután {SelfName} a kézbe került. ({Count} maradt)"
+  FlavorText: Mögötte lapulhat az indok, hogy miért zárta be a harmadik szemét.
+  UpgradedNonbattleDescription: "Befejezi {PlayerName} fordulóját. Utána, extra fordulóba\
+    \ lép.\n{PlayerName} következő fordulója elején, |Felfejleszti| az összes kézbe\
+    \ lévő kártyát.\nCsak akkor lehet kijátszani, ha {PlayerName} már belépett 3 különböző\
+    \ |Elmeállapotba|, miután {SelfName} a kézbe került."
 KoishiPlayDiscard:
   Name: Megvetettek Filozófiája
+  DetailText: Ha egy |Játszhatatlan| kártya lett kiválasztva, az se kijátszva, se
+    |Száműzve| nem lesz.
+  Description: "Válassz legfeljebb {Value1} kártyát a húzó halomból, és kijátssza\
+    \ {Value1:plural one='azt' other='azokat'} |Rákövető| {Value1:plural one='kártyaként'\
+    \ other='kártyákként'}.\nA kiválasztott nem-|Rákövető| kártyák |Száműzetnek|."
 TheFool:
   Name: 'Tarot: A Bolond'
+  Description: "|Jósol| {Scry} kártyát.\nKijátssza a húzó halom legfelső kártyáját."
 FollowAttackFiller:
   Name: Csörög a Fón
   FlavorText: Hallod teltház kell?
+  Description: '{Damage} sebzést okoz.'
 DeployShanghai:
   Name: Baba Finomítás
 NazrinBaota:
@@ -1969,32 +2047,56 @@ KoishiDance:
     Elvégez egy |Rákövető Támadást|."
 PassionAttackToDraw:
   Name: Rózsaketrec
+  Description: "{Damage} sebzést okoz {Value1} alkalommal.\n|Szenvedélybe| lép.\n\
+    {SelfName} bekeveredik a húzó halomba."
 PassionDraw:
   Name: Epekedés
+  Description: Mikor {PlayerName} |Szenvedélybe| lép, húz {Value1} kártyát.
 AncestorDream:
   Name: Ősi Álmok
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Álmod| {Value1} kártyát,\
+    \ majd kijátsza az első |Megálmodott| |Rákövető| kártyát. "
 YaoguaiLaser:
   Name: Youkai EEG
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz.\nElvégez egy |Rákövető\
+    \ Támadást|.\n|Ösztön|: Elvégez meg egy |Rákövető Támadást|."
 LeaveMoodDraw:
   Name: Kíváncsiság
+  FlavorText: Nem vagyok egy kiscica.
+  Description: "Kilép a jelenlegi |Elmeállapotból|.\nHúz {Value1} kártyát."
 MoodChangeBlock:
   Name: A.T. Erőtér
+  Description: Mikor {PlayerName} |Elmeállapotot| vált, {Value1} |Blokkolást| ad.
+  FlavorText: Nem szaladhatok el! Nem tehetem!
 KoishiDrawTopCards:
   Name: Rorschach Teszt
+  Description: Megmutatja a húzó halom legfelső {Value1} lapját. Válassz egyet amit
+    a húzó halomban hagysz, a többit pedig kézbe veszed.
 KoishiMana:
   Name: Alvilági Rózsa
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n{Mana} manát ad."
 KoishiSpark:
   Name: Utolsó Romantikus Esti Hívás
+  Description: '{Damage} sebzést okoz minden ellenfélnek.'
 Anatta:
   Name: Éntelenség
+  Description: "Megnöveli a |Derűből| kapott manát {Mana} manára.\n|Derűbe| lép."
 KoishiDive:
   Name: Merülő Tudat
+  Description: "|Álmod| {Value1} kártyát.\nVisszatesz legfeljebb {Value2} |Álmodott\
+    \ Kártyát| a dobó halomból a kézbe."
 EnterEpiphany:
   Name: Vízkereszt
+  Description: '|Fúgába| lép.'
+  FlavorText: orz
 LunaticPassion:
   Name: Őrült Szerelem
+  Description: "|Szenvedély| sebzésszorzója {PlayerName} támadásaihoz {Percentage}%\
+    \ lesz, és a támadás kártyát sebzése |Pontos| lesz.\n|Szenvedélybe| lép."
+  FlavorText: '"Igazából, már követtelek az előző futam óta!"'
 AliceBlockU:
   Name: Védelmi Mágia
+  Description: '{Block} |Blokkolást| ad.'
 DeployPenglai:
   Name: Leány Bábszínháza
 SacrificeDoll:
