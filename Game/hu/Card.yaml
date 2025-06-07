@@ -981,14 +981,23 @@ SummerParty:
     \ kap."
 ChooseFriend:
   Name: Ködös-Tó Randevú
+  FlavorText: Ha az érzés kölcsönös, fogd a kezem.
+  DetailText: Ezek az |e:alternatív kártyák| figyelmen kívül hagyják a mana mennyiségét,
+    színét és a karakterkorlátozásokat, valamint az összköltségük 4 vagy kevesebb.
+  Description: Válassz {Value2} kártyát {Value1} véletlen |Csapattárs| közül és vedd
+    a kézbe. Bármilyen színű manával ki lehet fizetni a költségüket.
 KoishiAttackG:
   Name: Kettős Spirál
+  Description: '{Damage} sebzést okoz.'
 KoishiBlockB:
   Name: Bezárkózottság
+  Description: '{Block} |Blokkolást| ad.'
 ToAllFollower:
   Name: Érzelemhullám
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Fúgában|:Mégegyszer sebez."
 KoishiBlockG:
   Name: Élénk virágkoszorú
+  Description: '{Block} |Blokkolást| ad.'
 KoishiUltimate:
   Name: Igazi Én Ébredése
 YukariFlyObject:
@@ -1093,6 +1102,7 @@ SanaeSummonGod:
   Name: Take-Minakata Idézése
 KoishiDnaAttack:
   Name: DNS Másolat
+  Description: '{Damage} sebzést okoz.'
 CloseEye:
   Name: Zárt Szív
 BestFriend:
@@ -1103,10 +1113,18 @@ BestFriend:
     \ |Egységet| kapnak.\n|d:Túlcsordulás: {Mana} manát ad.|"
 CirnoEcho:
   Name: Természet Ajándéka
+  Description: Válassz {Value1} kártyát a dobó halomból, és vedd vissza a kézbe. |Visszhang|
+    lesz a {Value1:plural one='rajta' other='rajtuk'}.
+  FlavorText: 'Technikai Segítség: Minoriko Aki.'
 FairyAllOut:
   Name: Minden Kéz a Fedélzetre
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\nKijátsza a |f:Passzív Készségét|\
+    \ minden megidézett |Csapattársnak| a kézben."
 ForeverCool:
   Name: Az Örökké Hűvös Évszak Képzelete
+  Description: "Mikor egy |Csapattárs| |a:Aktív -| vagy |u:Végső Készsége| kijátszódik,\
+    \ |Hideget| tesz egy véletlen ellenfélre.\nMikor egy ellenfél |Hideget| kap, egy\
+    \ véletlen |Csapattárs| a kézben {Value1} |Egységet| kap."
 AliceAttackU:
   Name: Baba Lándzsa
 AliceBlockB:
@@ -1119,6 +1137,12 @@ DollFormation:
   Name: Kis Légió
 HualiIce:
   Name: Káprázatos Nyári Jég
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Hideget| tesz minden ellenfélre.\n\
+    Ha {Value1} kártya már ki lett játszva a fordulóban, {SelfName} {Mana} manával\
+    \ kevesebbe kerül.\n({Countdown} kártya maradt.)"
+  NonbattleDescription: "{Damage} sebzést okoz minden ellenfélnek.\n|Hideget| tesz\
+    \ minden ellenfélre.\nHa {Value1} kártya már ki lett játszva a fordulóban, {SelfName}\
+    \ {Mana} manával kevesebbe kerül."
 DollFire:
   Name: Babahamvasztás
 SanaeSpirit:
@@ -1137,48 +1161,104 @@ QingeUpgrade:
   Name: Gonosz Remete Trükkje
 LunaFriend:
   Name: Luna, Néma Holdfény
+  Description: '{FriendP} {Block} |Blokkolást| ad.'
+  ExtraDescription1: '{FriendA}{Damage} sebzést okoz egy véletlen ellenfélnek {Value1}
+    alkalommal.'
+  ExtraDescription3: '{FriendU}|Hibátlant| ad {Value2} fordulóig.'
+  FlavorText: Nyomozz lopakodva, nesszenés nélkül.
 StarFriend:
   Name: Star, Zuhanó Csillagfény
+  Description: '{FriendP}{Damage} támadási sebzést okoz egy véletlen ellenfélnek.'
+  ExtraDescription1: '{FriendA}Azonnal sebzést okoz {Value1} alkalommal.'
+  ExtraDescription3: "{FriendU}Mikor bármely {SelfName} sebzést okoz, {Light} |Ráközelítést|\
+    \ tesz a célpontra.\nAzonnali sebzést okoz {Value2} alkalommal."
 BrainOverclock:
   Name: Agytúlhajtás
+  Description: "{Mana} manát ad.\n{Value2} kártyát húz.\n|Túlhúz| {Value1} manát."
+  FlavorText: Olyan nagy a gógyija!
 SunnyFriend:
   Name: Sunny, Kápráztató Napfény
+  ExtraDescription3: "{FriendU}Azonnali sebzést okoz {Value1} alkalommal.\n{Value2}\
+    \ |Tűzerőt| ad."
+  ExtraDescription1: '{FriendA}|Optikai Álcát| ad {Light} fordulóig.'
+  Description: '{FriendP}{Damage} támadási sebzést okoz egy véletlen ellenfélnek {Value1}
+    alkalommal.'
 Xiguadao:
   Name: Dinnyekés
+  Description: "{Damage} sebzést okoz egy véletlen ellenfélnek {Value1} alkalommal.\n\
+    {Value2} |Tűzerőt| ad."
+  FlavorText: ⑨rbitális csapás!
 ClownpieceFriend:
   Name: Clownpiece, Őrült Tündér
+  Description: "{FriendS}{StartMana} manát ad.\n{FriendP}{Value2} |Ideiglenes Tűzerőt|\
+    \ ad."
+  ExtraDescription1: '{FriendA}{Value1} kártyát húz és egy |Elmebajt| tesz a dobó
+    halomba.'
+  UpgradedExtraDescription1: '{FriendA}Húz {Value1} kártyát.'
+  ExtraDescription2: '{FriendA2}{Mana} manát ad és egy |Elmebajt| tesz a dobó halomba.'
 DefaultPeace:
   Name: Önzetlenség
+  Description: "{Block} |Blokkolást| ad.\n|Derűbe| lép."
 KoishiKiss:
   Name: Légcsók
+  Description: "{Damage} sebzést okoz.\n{Value1} |Gyengeséget| okoz.\nElvégez egy\
+    \ |Rákövető Támadást|."
 BaseFollower:
   Name: Ösztönös Szerelem
+  Description: "{Damage} sebzést okoz.\nA csata elején és keveréskor, {SelfName} a\
+    \ húzó halom aljára kerül."
 InspirationCard:
   Name: Heuréka!
+  FlavorText: Heuréka!
+  Description: '|Mikor {SelfName} kézbe kerül|: {Mana} manát ad, {Value1} |Ihletet|
+    ad, majd {SelfName} |Száműzetik|.'
 PassionMemory:
   Name: Szenvedélyes Emlékek
+  Description: '|Szenvedélybe| lép.'
 KoishiDrawTop:
   Name: Beszélj a Kalapnak
+  Description: "Húz {Value1} kártyát.\n|Felfejleszt| {Value2} kártyát a kézből és\
+    \ a húzó halom tetejére teszi {Value2:plural one='azt' other='azokat'}."
+  FlavorText: '"Már tudom ki a tettes!"'
 LeaveMoodAttack:
   Name: Mentális Felszabadulás
+  Description: "{Damage} sebzést okoz.\nKilép a jelenlegi |Elmeállapotból|."
 LeaveMoodGraze:
   Name: Jelenlét Rejtés
+  Description: "{Value1} |Kitérést| ad.\nKilép a jelenlegi |Elmeállapotból|."
 FlowerGone:
   Name: Múló Álmok
+  Description: "{Block} |Blokkolást| ad.\n|Derűben|: Inkább {Shield} |Gátat| ad."
 PassionVulnerable:
   Name: Álmatlan Éjszaka
+  UpgradedDescription: "|Szenvedélyben|: {Value1} |Sebezhetőséget| és {Value2} |Ráközelítést|\
+    \ tesz minden ellenfélre.\nEgyébként, |Szenvedélybe| lép."
+  Description: "|Szenvedélyben|: {Value1} |Sebezhetőséget| tesz minden ellenfélre.\n\
+    Egyébként, |Szenvedélybe| lép."
 BabyDream:
   Name: Embrió Álma
 DuplicateFollower:
   Name: Magányos Szív
 PeaceEndTurn:
   Name: Pillanatnyi Nyugalom
+  Description: "Válassz a kézből legfeljebb {Value1} kártyát. |Visszatartja| {Value1:plural\
+    \ one='azt' other='azokat'} ebben a fordulóban.\n|Derűbe| lép.\nBefejezi {PlayerName}\
+    \ fordulóját."
+  UpgradedDescription: "Válassz a kézből, vagy vegyél vissza a kézbe a dobó halomból\
+    \ legfeljebb {Value1} kártyát. |Visszatartja| {Value1:plural one='azt' other='azokat'}\
+    \ ebben a fordulóban.\n|Derűbe| lép.\nBefejezi {PlayerName} fordulóját."
 KoishiSpringOut:
   Name: Tavaszi Vakáció
+  Description: "|Derűben|: {Value1} kártyát húz.\nEgyébként, |Derűbe| lép."
 InspirationDefense:
   Name: Ihlet Pillanata
+  FlavorText: "A titokzatos falusiak egy rejtett technikai titkot osztanak meg.\n\
+    Koishi nukleáris fúzióval kapcsolatos ismeretei jelentősen fejlődtek."
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Ihletet| ad."
 FindInspiration:
   Name: Ihletvillanás
+  FlavorText: '"Meglehet? Hogy a tettes... az én vagyok?"'
+  Description: A húzó halomba tesz {Value1} |Heuréka!|-t.
 KoishiPotential:
   Name: Felszabadított Lehetőség
 ButterflyDream:
@@ -1487,32 +1567,64 @@ ColdHearted:
     \ other='rajtuk}."
 LarvaDefense:
   Name: Szárnycsapás Röpte
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Gyengeséget| tesz minden ellenfélre.\n\
+    Ha van egy megidézett |Larva, Örök Éj Istene| a kézben, {Value2} |Mérget| tesz\
+    \ minden ellenfélre."
+  FlavorText: Bátorság kell ahhoz, hogy a Larva mögött repülj.
 GatherFairy:
   Name: Tündérgyár
+  UpgradedDescription: "A maximális kézméret {MaxHand} kártyára nő.\nHúz {Value1}\
+    \ kártyát.\nMinden |Csapattárs| kártya a kézben {Value2} |Egységet| kap."
+  FlavorText: Ti ketten vagytok a szárnyaim!"
+  Description: "A maximális kézméret {MaxHand} kártyára nő.\nHúz {Value1} kártyát."
 MinengZhuru:
   Name: Elme Energia Injekció
+  Description: "Mikor egy |Csapattárs| |f:Passzív Készsége| kijátszódik, mégegyszer\
+    \ megteszi.\nEz nem növeli/csökkenti a kártya |Egységét|."
 FairyTrick:
   Name: Tündércsíny
+  FlavorText: Természetesen négyen tündér van a Fény Három Tündérében!
+  UpgradedDescription: "Elvesz {Value1} életerőt.\nMegidéz 4 |e:Fénytündért|. Egyet\
+    \ kézbe tesz a többit bekeveri a húzó halomba."
+  Description: "Elvesz {Value1} életerőt.\nMegidéz 3 |e:Fénytündért|. Egyet kézbe\
+    \ tesz a többit bekeveri a húzó halomba."
 DefaultPassion:
   Name: Romantikus Rózsa
+  Description: "{Damage} sebzést okoz.\n|Szenvedélybe| lép."
 KoishiUltimateToken:
   Name: Élet Virágzása
+  Description: "{Damage} sebzést okoz és {TotalMana} manát ad.\n|Mikor Visszatartódik|:\
+    \ Növeli {SelfName} sebzését {Value1} ponttal és növeli az adott manát {Mana}\
+    \ manával."
 MultiFollower:
   Name: Szív Tánca
+  Description: "{Damage} sebzést okoz {Value1} alkalommal.\nA csata elején és keveréskor,\
+    \ {SelfName} a húzó halom aljára kerül."
 Claustrophobia:
   Name: Klausztrofóbia
+  Description: "{Block} |Blokkolást| ad.\n|Ösztön|: {Shield} |Gátat| ad."
 MoodAttack:
   Name: Átadó Penge
+  Description: "{Damage} sebzést okoz.\nMikor {PlayerName} |Elmeállapotot| vált, {SelfName}\
+    \ visszakerül a kézbe a dobó halomból."
 PlayDrawTop:
   Name: Eszméletlen Tevékenység
+  Description: "{Block} |Blokkolást| ad.\nKijátssza a húzó halom legfelső kártyáját."
 TheChariot:
   Name: 'Tarot: A Szekér'
 KoishiWake:
   Name: Elmevisszállítás
+  FlavorText: '"Hol vagyok?"'
+  Description: "|Szenvedélyben|: Elvégez egy |Rákövető Támadást|.\n|Derűben|: {Shield}\
+    \ |Gátat| ad.\n|Fúgában|: {Value1} |Fúga| használatot ad és {SelfName} |Száműzetik|."
 KoishiFlower:
   Name: Csintalan Rózsa
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz.\nKézbe tesz {Value1}\
+    \ |Nyárközepi Virágot|.\n|Fúgában|: Helyette Kézbe tesz {Value2} |Nyárközepi Virágot|."
 KoishiFire:
   Name: Szeszélyesség
+  Description: "{Value1} |Tűzerőt| ad.\n|Szenvedélyben|: Még {Value2} |Tűzerőt| ad.\n\
+    |Derűben|: Helyette {Value1} |Lelket| ad."
 BlackEpiphany:
   Name: Illanó Tudat
 FakeBullet:
@@ -1521,6 +1633,9 @@ GainInspiration:
   Name: Hadd Gondolkozzak
 KoishiDna:
   Name: DNS Hibája
+  UpgradedDescription: "{PlayerName} fordulója elején, kézbe tesz {Value1} |DNS Másolatot|.\n\
+    {SelfName} alkalmazódik egyszer."
+  Description: '{PlayerName} fordulója elején, kézbe tesz {Value1} |DNS Másolatot|.'
 KoishiAttackX:
   Name: Rózsapokol
 KoishiPhone:
@@ -1739,10 +1854,15 @@ DeepFreeze:
     {PlayerName:d}.
 WhiteWorld:
   Name: Tiszta Fehér Világ
+  Description: "{PlayerName} fordulója elején, |Hideget| tesz minden ellenfélre.\n\
+    |Hideget| tesz minden ellenfélre."
 PlayWithWaste:
   Name: Pokoli Szomszédok
+  Description: "Válassz 1 kártyát {Value1} nem-Ritka |Eszköz| közül és vedd a kézbe.\n\
+    Egy |Másolatként| van kezelve és |Korlátozott【1】| van rajta."
 KoishiAttackB:
   Name: Túlcsorduló Szeretet
+  Description: '{Damage} sebzést okoz.'
 SelfControl:
   Name: Önmegvalósítás
 PerfectCrime:
@@ -1804,22 +1924,49 @@ LanCard:
   Name: Shikigami Védelem
 DayaojingTdm:
   Name: Daiyousei, Hótölcsér Segéd
+  Description: '{FriendP}{Damage} sebzést okoz egy véletlen ellenfélnek.'
+  ExtraDescription1: '{FriendA}Kézbe tesz {Value1} |Ködös-Tavi Hótölcsért|.'
+  UpgradedExtraDescription1: '{FriendA}Kézbe tesz {Value1} |Ködös-Tavi Hótölcsért|.
+    |Felfejleszt| egyet közülük.'
+  ExtraDescription3: '{FriendU}{Value2} |Jégpáncélt| ad. Ez növekedik {SelfName} minden
+    egyes |Egységével|.'
+  FlavorText: '"Készülj fel! Meg foglak dobálni hógolyóval!"'
 SnowconeTdm:
   Name: Ködös-Tavi Hótölcsér
+  Description: "{Damage} sebzést okoz.\n|Hideget| tesz a célpontra találatkor.\nMikor\
+    \ az első alkalommal használódik egy ellenfélen, {Value1} <sprite=\"Point\" name=\"\
+    Gold\"> aranyat ad."
+  FlavorText: '"Fúj... Milyen íz ez? Ez nem áfonya!"'
 PassionDefense:
   Name: Alacsony Profil
+  Description: "{Block} |Blokkolást| ad.\n|Szenvedélyben|: Még {Value1} |Blokkolást|\
+    \ ad."
+  FlavorText: 'Mikor #1 vagy a népszerűségi listákon, de nem akarod, hogy felismerjenek.'
 DefenseFollowAttack:
   Name: Üldöző Téveszmék
+  Description: "{Block} |Blokkolást| ad.\nElvégez egy |Rákövető Támadást|."
 GrazeFollowAttack:
   Name: Ösztönös Tett
+  Description: "{Value1} |Kitérést| ad.\nElvégez egy |Rákövető Támadást|."
 KoishiGainColorless:
   Name: Nyugott Elme
+  UpgradedDescription: '{Mana} manát ad.'
+  Description: '{Mana} manát ad.'
+  FlavorText: Elfelejtettem milyen színű volt ez a mana.
 PeaceMemory:
   Name: Nyugott Emlékek
+  Description: '|Derűbe| lép.'
 TheHermit:
   Name: 'Tarot: A Remete'
+  Description: "|Jósol| {Scry} kártyát.\n{Mana} manát ad.\n|Fúgában|: {SelfName} <sprite=\"\
+    ManaSprite\" name=\"0\"> manába kerül."
+  UpgradedDescription: "|Jósol| {Scry} kártyát.\n|Felfejleszti| a húzó halom felső\
+    \ kártyáját.\n{Mana} manát ad.\n|Fúgában|: {SelfName} <sprite=\"ManaSprite\" name=\"\
+    0\"> manába kerül."
 KoishiDance:
   Name: Örült Tüskék
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz minden ellenfélnek.\n\
+    Elvégez egy |Rákövető Támadást|."
 PassionAttackToDraw:
   Name: Rózsaketrec
 PassionDraw:
