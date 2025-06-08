@@ -241,7 +241,7 @@ YinyangQueen:
     van. Azonnal kézbe ad {Value1} |Szivárvány Jáde Jin-Jang Gömböt|.'
 Yinhe:
   Name: Tejút
-  Description: "{Block} |Blokkolást| ad.\n|Mikor Visszatartva marad|: Növeli {SelfName}\
+  Description: "{Block} |Blokkolást| ad.\n|Mikor Visszatartódik|: Növeli {SelfName}\
     \ |Blokkolását| {Value1} ponttal a csata végéig."
 EvilTuiZhi:
   Description: Ebben a fordulóban, a következő támadás kártya kétszer fog kijátszódni.
@@ -434,7 +434,7 @@ SenluoJiejie:
     \ összes |Gátját|, és ugyanannyit sebez az összes ellenfélbe."
 ShuihuoCard:
   Name: Tűz és Víz Gömbje
-  Description: "{Damage} sebzést okoz.\n{Block} |Blokkolást| ad.\n|Amikor visszatartják|:\
+  Description: "{Damage} sebzést okoz.\n{Block} |Blokkolást| ad.\n|Mikor Visszatartódik|:\
     \ Növeli {SelfName} sebzését és |Blokkolását| {Value1} ponttal a csata végéig."
 FengleiCard:
   Name: Szél és Vihar Gömbje
@@ -549,7 +549,7 @@ PotionJungle:
     kell, ezáltal teljes a mágikus energia körforgása.
 AccuracyLaser:
   Name: Irányított Lézer
-  Description: "{Damage} sebzést okoz {Value1} alkalommal.\n|Mikor visszatartódik|:\
+  Description: "{Damage} sebzést okoz {Value1} alkalommal.\n|Mikor Visszatartódik|:\
     \ {SelfName} kevesebbe kerül a csata során."
   FlavorText: '"Meglepetés! Azt hitted egy Irányítatlan Lézert fogok lőni?"'
 RainbowStar:
@@ -1006,12 +1006,35 @@ KoishiUltimate:
     \ elején, kijátssza a húzó halom legfelső kártyáját."
 YukariFlyObject:
   Name: Szupersebességű Repülő
+  FlavorText: Túl gyors a szabad szemnek.
+  Description: '{PlayerName} következő fordulója elején, {Value1} sebzést okoz a legtöbb
+    életerejű ellenfélnek.'
 PrismriverWhite:
   Name: Harsonaszóló
+  UpgradedDescription: "{Mana} manát ad.\n{Value1} kártyát húz.\n{Light} |Visszavert\
+    \ Napfényt| tesz a dobó halomba.\n|Kezdet|: {Value2} <sprite=\"Point\" name=\"\
+    Power\"> erőt ad."
+  Description: "{Mana} manát ad.\n{Value1} kártyát húz.\n{Light} |Visszavert Napfényt|\
+    \ tesz a dobó halomba."
+  ExtraDescription1: "{Mana} manát ad.\n{Value1} kártyát húz.\n{Light} |Visszavert\
+    \ Napfényt| tesz a dobó halomba.\n|d:Kezdet: {Value2} <sprite=\"Point\" name=\"\
+    Power\"> erőt ad.|"
 HuiyeMarblePhantasm:
   Name: Márványfantázia
+  Description: Válassz 1 kártyát {Value1} véletlen, X+1 összköltségű kártya közül
+    és vedd a kézbe. |Ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri|
+    van rajta.
+  FlavorText: '"Hercegnőm... Kérlek ne használd a képességed ilyen anyagon..."'
+  DetailText: Ha nincs elég egyedi kártya a megadott költségért, akkor alacsonyabb
+    költségű kártyákat készít elő.
 FakeMoon:
   Name: Hamis Hold
+  DetailText: Nem másolhatsz |Másolatot|.
+  Description: "Válassz egy kártyát a kézből. {Value1} |Másolatot| tesz róla a kézbe.\n\
+    Minden |Másolat| |Ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri|\
+    \ van rajta.\nHa a választott kártya egy |Képesség| kártya, vagy |Száműz| van\
+    \ rajta, |Másolattá| válik."
+  FlavorText: Szebb, mint az igazi Hold.
 ShannvAbility:
   Name: Megmagyarázhatatlan Láz
 HinaAttack:
@@ -1050,12 +1073,26 @@ CirnoBlockU:
     is használható.
 QinglanAttack:
   Name: Nyúlra Szállás
+  Description: "{Damage} sebzést okoz.\n|Jósol| {Scry} kártyát.\nHúz {Value2} kártyát."
+  FlavorText: Úgy néz ki hogy el TP-zett az eredeti helyére…
 ShuimiUnderWater:
   Name: Hajó Szelleme
+  Description: '|Mikor eldobódik, vagy Száműzetik|: {Mana} manát ad.'
 WaterPrincess:
   Name: Sellőhercegnő
+  Description: "{Shield} |Gátat| ad.\nMinden kézben lévő kártyáért, növeli {SelfName}\
+    \ |Gátját| {Value1} ponttal. (Összesen: {Special} |Gát|)\n|Kezdet|: Kézbe tesz\
+    \ egy |Csobbanást|."
+  NonbattleDescription: "Minden kézben lévő kártyáért, {Value1} |Gátat| ad.\n|Kezdet|:\
+    \ Kézbe tesz egy |Csobbanást|."
+  ExtraDescription1: "{Shield} |Gátat| ad.\nMinden kézben lévő kártyáért, növeli {SelfName}\
+    \ |Gátját| {Value1} ponttal. (Összesen: {Special} |Gát|)\n|d:Kezdet: Kézbe tesz\
+    \ egy Csobbanást.|"
+  FlavorText: Ez a keményfedeles mágikus kisokos vízálló egészen 100 méteres mélységig.
 GuijiZaoxingHu:
   Name: Szobor - ív
+  Description: "{Damage} sebzést okoz.\n{Value1} kártyát húz.\n{SelfName} átalakul\
+    \ egy másik |e:Szoborba| a csata végéig."
 MeihongAttack:
   Name: Főnixszárnyak Emelkedése
 SuikaBigball:
@@ -1139,11 +1176,15 @@ AliceBlockB:
   Name: Alice B Védelem
   Description: '{Block} |Blokkolást| ad.'
 AliceKickerAttack:
-  Name: Kirúgó Támadás
+  Name: Inger Támadás
+  Description: "{Damage} sebzést okoz.\n|Inger {KickerCost}|: A sebzést mégegyszer\
+    \ okozza."
 MansionNight:
   Name: Átkozott Kastélyi Éjszaka
+  Description: (WIP) 
 DollFormation:
   Name: Kis Légió
+  Description: (WIP) 
 HualiIce:
   Name: Káprázatos Nyári Jég
   Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Hideget| tesz minden ellenfélre.\n\
@@ -1154,14 +1195,29 @@ HualiIce:
     \ {Mana} manával kevesebbe kerül."
 DollFire:
   Name: Babahamvasztás
+  Description: (WIP) 
 SanaeSpirit:
   Name: Hitgyűjtés
+  Description: '{Value1} |Lelket| ad.'
+  FlavorText: Valójában hitet kényszerít ki a youkaiokból.
 YonglinCard:
   Name: A Bezárkózott Bölcs
+  FlavorText: Ha a bölcsesség bölcse a rejtőzködést választotta, akkor a rejtőzködés
+    bölcsességnek számít?
+  UpgradedDescription: "{PlayerName} fordulója végén {Value1} |Hamis Holdat| tesz\
+    \ a húzó halomba.\n{Value2} |Hamis Holdat| tesz a húzó halomba."
+  Description: '{PlayerName} fordulója végén, {Value1} |Hamis Holdat| tesz a húzó
+    halomba.'
 SatoriAttack:
   Name: Szívvirágzat
+  FlavorText: Bár a kivitelezésükben eltérhetnek, ennek a mozdulatnak ugyanolyan hatása
+    lehet, mint a külvilágban divatos "kézszívnek".
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Ösztön|: Ha egy ellenfél\
+    \ támadni tervez, {Block} |Blokkolást| ad."
 RumiaBlock:
   Name: Árny
+  Description: "{Block} |Blokkolást| ad.\nKézbe tesz |{Value1} Árnyékot|."
+  FlavorText: Ha nem láttam, akkor 0 sebzést kapok.
 YukariAttack:
   Name: Élet és Halál Határa
 HuiyeTime:
@@ -1300,36 +1356,73 @@ KokoroFriend:
   FlavorText: Per-szonda!
 AutoHousework:
   Name: Automatizált Háztartás
+  Description: (WIP) 
 DollFactory:
   Name: Babaműhely
+  Description: (WIP) 
 Qianqiang:
   Name: Cuki Phalanx
+  Description: (WIP) 
 DollFangzhen:
   Name: Baba Phalanx
+  Description: (WIP) 
 DoubleActiveTrigger:
   Name: Kétszeres Alkalmazás
+  Description: (WIP)
 Zhendijianzao:
   Name: Térkészítés
+  Description: (WIP) 
 YoumuAttack:
   Name: Szív Részlet Vágás
+  Description: "{Damage} sebzést okoz.\n|Száműz| egy kártyát a kézből."
 RingoJinghua:
   Name: Föld Megtisztítása
+  UpgradedDescription: "|Száműz| legfeljebb {Value1} kártyát a kézből, húzó - és dobó\
+    \ halmokból.\n{Value2} <sprite=\"Point\" name=\"Power\"> erőt ad."
+  FlavorText: A műveletet "Land Instrumentality Project"-nek nevezték el.
+  Description: "|Száműz| legfeljebb {Value1} kártyát a kézből.\n{Value2} <sprite=\"\
+    Point\" name=\"Power\"> erőt ad."
 HuiyinRemove:
   Name: Történelem Falás
+  FlavorText: "\"Nem bízok egy youkai szavában.\nÚgy teszek, hogy ez az este soha\
+    \ nem történik meg!\""
+  Description: "Töröl egy kártyát a könyvtárból.\nMikor {SelfName} kijátszódik, törlődik\
+    \ a csatából és a könyvtárból."
+  DetailText: "{SelfName} nem tud véletlenszerűen a csatába kerülni, és nem lehet\
+    \ lemásolni.\nMikor a kiválasztott kártya törlődik a könyvtárból, nem tűnik el\
+    \ a csatából."
 ShenziUpgradeAll:
   Name: Apoteózis
+  Description: '|Felfejleszti| az összes kártyát a csata végéig.'
+  FlavorText: A remeték kik találkoznak Yukari Yakumoval egy Résben, csak Teát Ihatnak.
 YuetuYuyi:
   Name: Elhullott Szőr
+  FlavorText: A Hold emlékeinek maradványa.
+  Description: '|Hibátlant| ad {Value1} fordulóig.'
 PlayWithWater:
   Name: Vízi Játék
+  Description: "Húz {Value1} kártyát.\nEldob egy kártyát."
+  FlavorText: Játék a vízzel.
+  UpgradedDescription: "Húz {Value1} kártyát.\nEldob legfeljebb egy kártyát."
 BlueZeroAttack:
   Name: Dagály
+  FlavorText: Tűz a Vízzel
+  Description: '{Damage} sebzést okoz.'
+  UpgradedDescription: "{Damage} sebzést okoz.\n{Value1} |Gyengeséget| okoz."
 NitoriUnderWater:
   Name: Vízlepel
+  Description: "{Block} |Blokkolást| ad.\n{Value1} kártyát húz."
+  FlavorText: Víz alatt, a danmaku veszélyessége drasztikusan csökken.
 QingeDraw:
   Name: Tao Magzati Mozgás
+  Description: "{Block} |Blokkolást| ad.\n{Value1} kártyát húz.\nEldobja azokat a\
+    \ kártyákat, melyeknek az összköltségük nagyobb mint 1."
+  DetailText: Az így húzott |Kijátszhatatlan| kártyák is eldobódnak.
+  FlavorText: 'Más néven: "Koboldok Nyomában"'
 GuijiZaoxingYuan:
   Name: Szobor - Kör
+  Description: "{Block} |Blokkolást| ad.\n{Damage} sebzést okoz.\n{SelfName} átalakul\
+    \ egy másik |e:Szoborba| a csata végéig."
 SatoriMemory:
   Name: Mély Emlékek
 BlackHorseZui:
@@ -1597,7 +1690,7 @@ ColdHearted:
   Description: "Ebben a fordulóban, |Jéglándzsa| háromszoros sebzést okoz azoknak\
     \ az ellenfeleknek, melyeken |Hideg| van.\n{Value1} |Jéglándzsát| tesz a kézbe.\
     \ |Ideiglenesen| {Mana} manába kerül és |Száműz|, |Éteri| van {Value1:plural one='rajta'\
-    \ other='rajtuk}."
+    \ other='rajtuk'}."
 LarvaDefense:
   Name: Szárnycsapás Röpte
   Description: "{Block} |Blokkolást| ad.\n{Value1} |Gyengeséget| tesz minden ellenfélre.\n\
@@ -1692,16 +1785,38 @@ AliceAttackB:
   Description: '{Damage} sebzést okoz.'
 DollBlock:
   Name: Babapajzs
+  Description: (WIP) 
 TriggerAllPassive:
   Name: Passzív Alkalmazás
+  Description: (WIP)
 BailianNingshen:
   Name: Elmélkedés
+  FlavorText: Byakuren kisasszony „Myourenji hangja” sorozatának rövid videói népszerűek
+    a középkorú és idős falusiak, valamint a fiatal szörnyek körében.
+  UpgradedDescription: "Válassz és vegyél a kézbe 1 kártyát {Value1} véletlen Közönséges\
+    \ kártya közül. |Ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri|\
+    \ van rajta.\n|Kezdet|: Kézbe tesz egy |Ragyogást|."
+  Description: Válassz és vegyél a kézbe 1 kártyát {Value1} véletlen Közönséges kártya
+    közül. |Ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri| van rajta.
+  ExtraDescription1: "Válassz és vegyél a kézbe 1 kártyát {Value1} véletlen Közönséges\
+    \ kártya közül. |Ideiglenesen| {Mana} manába kerül, valamint |Száműz| és |Éteri|\
+    \ van rajta.\n|d:Kezdet: Kézbe tesz egy Ragyogást|."
 YukariSwarm:
   Name: Szentjánosbogár Fészke
+  FlavorText: Bábel (Rés) Kapuja!
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\nHa legalább {Value1} kártya\
+    \ van |Száműzve|, kétszer annyit sebez."
+  UpgradedDescription: "|Száműz| legfeljebb {Value2} kártyát a kézből.\n{Damage} sebzést\
+    \ okoz minden ellenfélnek.\nHa legalább {Value1} kártya van |Száműzve|, kétszer\
+    \ annyit sebez."
 KokoroAttack:
   Name: Melankólia Kitörés
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n{Value1} kártyát húz."
+  FlavorText: Tényleg zavarja a kérdés, hogy mit fog enni következőleg.
 YuyukoDebuff:
   Name: Kortalan Álom
+  Description: '{Value1} |Gyengeséget| és |Sebezhetőséget| okoz.'
+  FlavorText: A Külvilágiak valószínűleg jobban félnének egy "Karcsú-talan Álomtól".
 MystiaSing:
   Name: Éjjeli Veréb Éneke
 PrismriverBlack:
@@ -1956,16 +2071,30 @@ FollowAttackFiller:
   Description: '{Damage} sebzést okoz.'
 DeployShanghai:
   Name: Baba Finomítás
+  Description: "|Telepít| egy |e:Shanghai Babát|,\n(WIP) vagy |Előléptet| egy Babát."
 NazrinBaota:
   Name: Pagoda Ragyogása
+  Description: "{Damage} sebzést okoz egy véletlen ellenfélnek.\n|Felfejleszt| {Value1}\
+    \ véletlen kártyát a kézből. Előnyben részesíti a támadás kártyákat."
+  FlavorText: "\"Ne használj távolsági fényszórót alagútban!\"\n- Yamame Kurodani"
 HuiyinMoreDraw:
   Name: Tanár Odaadása
+  FlavorText: Ez növelte az írástudási arányt Gensokyo felső- és középosztálybeli
+    polgárai körében.
+  Description: '{Value1} kártyával többet húz a húzó lépés során.'
 YonglinDraw:
   Name: Egy Isteni Korszak Emlékei
+  Description: '{Value1} kártyát húz. Az így húzott kártyák |Ideiglenesen| {Mana}
+    manával kevesebbe kerülnek.'
 Shadow:
   Name: Árnyék
+  FlavorText: „Ha csak nem találkoztam volna Rumiával, még mindig el tudnám viselni
+    a vakító fényeket.”
 ShannvAttack:
   Name: Szivárgó Gőz
+  UpgradedDescription: "{Damage} sebzést okoz.\n{Value1} |Mérget| okoz minden ellenfélnek."
+  Description: "{Damage} sebzést okoz.\n{Value1} |Mérget| okoz."
+  FlavorText: Zárt terekben a hátsó részből kiáramló gázok potenciálisan halálosak.
 BailianBlack:
   Name: Fogadd be a Sötétséget
 DreamExpress:
@@ -2099,22 +2228,48 @@ AliceBlockU:
   Description: '{Block} |Blokkolást| ad.'
 DeployPenglai:
   Name: Leány Bábszínháza
+  Description: "|Telepít| egy |e:Hourai Babát|,\n|Inger {KickerCost}|: Teleít még\
+    \ egy |e:Hourai Babát|."
 SacrificeDoll:
   Name: Vissza a Mozdulatlanságba
+  DetailText: 2 baba kiválasztása kétszer okoz sebzést.
+  Description: "(WIP) Válassz egy Babát, hogy kiléptesd.\n{Damage} sebzést okoz minden\
+    \ ellenfélnek.\n|Inger {KickerCost}|: Elvégzi legfeljebb 2 alkalommal."
 GainDollSlot:
   Name: Baba Helyet Ad
+  Description: (WIP)
 BailianJingang:
   Name: Test Sáncolás
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükörképet| ad."
+  FlavorText: Ugyancsak összhangban van Byakuren harmadik mozgástörvényével is.
 YunyouShengdi:
   Name: Vándorló Mennyország
+  Description: "{Block} |Blokkolást| ad.\n|Felfejleszt| egy kártyát a kézben a csata\
+    \ végéig."
+  UpgradedDescription: "{Block} |Blokkolást| ad.\n|Felfejleszti| a kéz összes kártyáját\
+    \ a csata végéig."
+  FlavorText: A tétovák hazája.
 YuetuInvincible:
   Name: A Holdnyúl Esése
+  FlavorText: Menekvés a tisztított világból, a szenny paradicsomába.
+  Description: "|Hibátlant| ad {Value1} fordulóig.\n{Value2} |Elhullott Szőrt| tesz\
+    \ a húzó halomba."
 HatateDiscard:
   Name: Hírhamisítás
+  Description: "Eldob {Value1} kártyát.\n{Mana} manát ad."
+  UpgradedDescription: "Eldob {Value1} és {Value2} közötti kártyát.\n{Mana} manát\
+    \ ad."
+  FlavorText: '"Nem Marisa volt a tettes."'
 DoremyDuplicate:
   Name: Elveszve a Paradicsomban
+  Description: Válassz egy kártyát a kézből. Kézbe teszi {Value1} |Másolatát|.
+  DetailText: Nem választhatsz |Másolatot| ehhez a hatáshoz.
+  FlavorText: Mikor Doremy szomjas lesz, belép az Álomvilágba, csak azért hogy kiszemelje
+    azokat, akik sok vízet isznak lefekvés előtt.
 GuijiZaoxingFang:
   Name: Szobor - Négyzet
+  Description: "{Damage} sebzést okoz {Value1} alkalommal.\n{SelfName} átalakul egy\
+    \ másik |e:Szoborba| a csata végéig."
 HuaBlock:
   Name: Harci Állás
 MoonWorld:
@@ -2441,3 +2596,6 @@ BlackResidue:
   Name: Sötét Maradvány
 LoveLetter:
   Name: Szerelmes Levél
+MagicianMeeting:
+  Name: Mágusgyűlés
+  Description: (WIP) 
