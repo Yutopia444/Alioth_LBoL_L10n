@@ -86,8 +86,8 @@ JinjiBlock:
 ReimuAttackR:
   Name: Hakurei Amulett
   Description: Verursache {Damage} Schaden.
-  FlavorText: Wieso die Bewegungen der Feinde verfolgen, wenn die Kugeln sie stattdessen
-    verfolgen?
+  FlavorText: Wieso sollte man den Bewegungen der Feinde folgen, wenn die Kugeln sie
+    stattdessen verfolgen können?
 ReimuAttackW:
   Description: Verursache {Damage} Schaden.
   FlavorText: Durch ihr Design können sie auch mit verbundenen Augen abgefeuert werden.
@@ -127,9 +127,10 @@ CallFriends:
   Name: Freunde Rufen
 IceBarrier:
   Name: Eisbarriere
+  Description: Erhalte {Value1} |Eisrüstung|.
 Potion:
-  Description: '|Wenn {SelfName} deiner Hand hinzugefügt wird|: Erhalte {Mana}, füge
-    einem zufälligen Feind {Damage} Schaden zu und sende {SelfName} ins |Exil|.'
+  Description: '|Wenn {SelfName} deiner Hand hinzugefügt wird|: Erhalte {Mana}, verursache
+    an einem zufälligen Feind {Damage} Schaden und sende {SelfName} ins |Exil|.'
 UpgradePotion:
   Name: Tränke verfeinern
 HuiyinMoreDraw:
@@ -495,6 +496,7 @@ Yueguang:
   Name: Stilles Mondlicht
 FrozenThrone:
   Name: Gefrorener Thron
+  FlavorText: Now, we are one!
 KoishiKiss:
   Name: Luftkuss
 KoishiWake:
@@ -588,8 +590,8 @@ ShensheRichang:
     \ um."
   FlavorText: Heute ist ein Ruhetag.
 MojingShanjie:
-  Description: Wähle 1 von {Value1} zufälligen Verteidigungskarten und füge sie deiner
-    Hand hinzu. Diese Karte |kostet temporär| {Mana}.
+  Description: Wähle 1 von {Value1} zufälligen Verteidigungskarten aus und füge sie
+    deiner Hand hinzu. Sie |kostet temporär| {Mana}.
   FlavorText: Zufälligkeit ist ein Element religiöser Praktiken.
 DoubleDajiejie:
   Description: "Erhalte {Block} |Block|.\nErhalte {Shield} |Barriere|."
@@ -618,14 +620,14 @@ ChuanyueJiejie:
     \ Hand hinzu."
 HuanxiangTouying:
   Description: "Erhalte {Mana}.\nWähle 1 von {Value1} zufälligen Karten aus und füge\
-    \ sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch|.\nEs wird jeweils\
-    \ eine Karte mit Gesamtkosten von 1, 2 und 3 Mana angezeigt."
+    \ sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch|.\nEs wird jeweils eine\
+    \ Karte mit Gesamtkosten von 1, 2 und 3 Mana angezeigt."
   UpgradedDescription: "Erhalte {Mana}.\nWähle 1 von {Value1} zufälligen Karten aus\
-    \ und füge sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch|.\nEs\
-    \ wird jeweils eine Karte mit Gesamtkosten von 1, 2, 3, 4 und 5 Mana angezeigt."
+    \ und füge sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch|.\nEs wird jeweils\
+    \ eine Karte mit Gesamtkosten von 1, 2, 3, 4 und 5 Mana angezeigt."
 OutInGap:
-  Description: Wähle 1 von {Value1} |p:vollkommen zufälligen| Karten und füge sie
-    deiner Hand hinzu. Diese Karte |kostet temporär| {Mana} und hat |Exil| und |Ätherisch|.
+  Description: Wähle 1 von {Value1} |p:vollkommen zufälligen| Karten aus und füge
+    sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
   Name: Brechen der Grenzen
   FlavorText: Yukari Yakumo hat es verboten, "Brechen der Grenzen" durch "Brechen
     der Grenzen" zu erschaffen.
@@ -738,8 +740,8 @@ ZhujiThreeGod:
     \ Geist| für jede gezogene Verteidigungskarte."
   FlavorText: Sieht so aus, als könntest du den Gott der Fähigkeiten nicht beschwören.
 OverJingjie:
-  Description: Wähle 1 von {Value1} zufälligen Angriffskarten und füge sie deiner
-    Hand hinzu. Diese Karte |kostet temporär| {Mana}.
+  Description: Wähle 1 von {Value1} zufälligen Angriffskarten aus und füge sie deiner
+    Hand hinzu. Sie |kostet temporär| {Mana}.
 ReimuHeavyAttack:
   Description: "Verursache {Damage} Schaden.\n|Feuerkraft| verstärkt den Schaden von\
     \ {SelfName} {Value1} Mal so viel."
@@ -788,6 +790,9 @@ FriendDraw:
   Name: Gartenversammlung
 FairyWrath:
   Name: Zorn der Natur
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nFalls sich eine beschworene\
+    \ |Daiyousei, Lebhafte Assistentin| auf deiner Hand befindet, füge {Value1} |Hochsommerblumen|\
+    \ deiner Hand hinzu."
 FairyTeam:
   Name: Großer Feenkrieg
 LarvaFriend:
@@ -796,12 +801,17 @@ LarvaFriend:
     hast.
   ExtraDescription3: '{FriendU}Füge allen Feinden {Value2} |Gift| zu. Aktiviere einmal
     den Schadenseffekt von |Gift|.'
+  ExtraDescription1: '{FriendA}Alle Karte auf deiner Hand werden |aufgewertet|.'
+  Name: Larva, Göttin der ewigen Nacht
 FairyTree:
   Description: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte {Value1}
     |Block|.
 LilyFriend:
   ExtraDescription1: '{FriendA}Erhalte {ActiveMana}.'
   ExtraDescription3: '{FriendU}Heile {Heal} Leben.'
+  Name: Lily White, Vorbote des Frühlings
+  Description: "{FriendS}Verursache an einem zufälligen Feind {Value1} Mal {Damage}\
+    \ Schaden.\n{FriendP}Erhalte {TurnMana}."
 FruitShake:
   FlavorText: Tropische Früchte sind kalt und lecker!
 TiangouOrder:
@@ -1161,9 +1171,9 @@ ShopSearch:
   Name: Privates Radar
 SijiCard:
   Name: Urteil der Sünden
-  Description: Wähle eine Karte auf deiner Hand. Falls es eine |Unglücks-| oder Statuskarte
-    ist, sende sie ins |Exil|. Andernfalls kostet die Karte bis zum Ende des Kampfes
-    {Mana} weniger |Retained| once.
+  Description: Wähle eine Karte auf deiner Hand, sie erhält |Temporäres Beibehalten|
+    und kostet bis zum Ende des Kampfes {Mana} weniger. Falls es eine |Unglücks-|
+    oder Statuskarte ist, sende sie stattdessen ins |Exil|.
 HinaAttack:
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nFür jedes |Unglück| in\
     \ der Bibliothek verursacht {SelfName} ein zusätzliches Mal Schaden."
@@ -1373,3 +1383,43 @@ PaluxiCurse:
     \ des Kampfes nicht der Bibliothek hinzugefügt.)|"
 MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
+Tether:
+  Description: "Erhalte {Block} |Block|.\nAlle |Verbündeten| auf deiner Hand erhalten\
+    \ {Value1} |Einigkeit|."
+  Name: Bindung
+IceSaber:
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\nFüge |Kälte| zu.\nWirf\
+    \ eine beliebige Anzahl an blauen Karten ab, verursache ein zusätzliches Mal Schaden\
+    \ für jede abgeworfene Karte."
+  Name: Klingenförmiges Eis
+  FlavorText: Es gab einst ein berühmtes Schwert namens Frostmourne.
+LeidiFriend:
+  Name: Letty, Verkörperung des Winters
+  Description: '{FriendP}Füge einem zufälligen Feind |Kälte| zu.'
+  ExtraDescription3: '{FriendU}Verursache {Damage} Angriffsschaden und füge allen
+    Feinden |Kälte| zu.'
+Blizzard:
+  Name: Schneesturm
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nFüge allen Feinden\
+    \ |Kälte| zu.\nSchau dir die unterste Karte in deinem Ziehstapel an. Falls es\
+    \ eine blaue Karte ist, wiederhole diesen Effekt zu Beginn deines nächsten Zuges."
+DoubleMana:
+  Name: Erwachen der Feen
+ZeroK:
+  Name: Absoluter Nullpunkt
+  Description: "Erhöhe den Schadensmultiplikator durch erneutes Zufügen von |Kälte|\
+    \ um {Value1}.\nFüge allen Feinden |Kälte| zu."
+GlacialSpike:
+  FlavorText: Ein Modell im Maßstab 1:10000.
+  Name: Kleiner Gletscher
+ColdBreath:
+  Description: "Verursache {Damage} Schaden. \nFalls das Ziel |Kälte| hat, erhalte\
+    \ {Mana}."
+ColdSnap:
+  Description: "Füge die {Value1:plural one='oberste blaue Karte' other='obersten\
+    \ % blauen Karten'} von deinem Ziehstapel deiner Hand hinzu.\nErhalte für jede\
+    \ gezogene Karte {Value2} |Barriere|."
+  ExtraDescription1: "Füge die {Value1:plural one='oberste blaue Karte' other='obersten\
+    \ % blauen Karten'} von deinem Ziehstapel deiner Hand hinzu.\nErhalte für jede\
+    \ gezogene Karte {Value2} |Barriere|.\n(Verbleibende blaue Karten im Ziehstapel:\
+    \ {BlueCount})"
