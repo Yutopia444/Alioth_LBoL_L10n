@@ -74,6 +74,7 @@ SakuyaZeroDefense:
   Description: Erhalte {Block} |Block|.
 AliceBlockB:
   Description: Erhalte {Block} |Block|.
+  Name: Alice B Verteidigung
 KoishiBlockG:
   Description: Erhalte {Block} |Block|.
 BlueZeroAttack:
@@ -503,6 +504,8 @@ KoishiWake:
   FlavorText: '"Wo bin ich?"'
 KoishiPlayDiscard:
   Name: Philosophie der Verachteten
+  DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
+    noch ins |Exil| gesendet.
 BailianBlack:
   Description: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|.
     Die betroffenen Karten kosten {Mana}.
@@ -522,6 +525,10 @@ KoishiDna:
     hinzu.
 ButterflyDream:
   Name: Schmetterlingstraum
+  Description: "Füge {Value1} |p:vollkommen zufällige|, seltene Karte{Value1:plural\
+    \ one='' other='n'} oben auf deinen Ziehstapel hinzu. Sie {Value1:plural one='hat'\
+    \ other='haben'} |Nachschub|, |Exil| und |Ätherisch| und die Manakosten können\
+    \ mit jeder Farbe gezahlt werden.\nZu Beginn deines Zuges, wiederhole diesen Effekt."
 AyaNewsReimuSp:
   Name: Bunbunmaru - Reimu Sonderausgabe
   Description: '|Am Ende des Zuges|: Verliere {Value1} |Geist|.'
@@ -540,6 +547,8 @@ KoishiTouying:
 KoishiPotential:
   FlavorText: Wenn man 25% seines Gehirns verwendet.
   Name: Entfesseltes Potenzial
+  DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
+    noch ins |Exil| gesendet.
 KoishiMana:
   Description: "Füge allen Feinden {Damage} Schaden zu.\nErhalte {Mana}."
   Name: Unterirdische Rose
@@ -570,8 +579,8 @@ Riguang:
   FlavorText: Starre niemals direkt in die Sonne, vor allem nicht durch ein Teleskop.
   Name: Gebrochenes Sonnenlicht
 KoishiUltimate:
-  Description: "Aktiviere die oberste Karte in deinem Ziehstapel.\nZu Beginn deines\
-    \ Zuges, aktiviere die oberste Karte in deinem Ziehstapel."
+  Description: "Spiele die oberste Karte in deinem Ziehstapel.\nZu Beginn deines Zuges,\
+    \ spiele die oberste Karte in deinem Ziehstapel."
   Name: Das wahre Selbst
 Changzhizhen:
   Name: Permanente Grenze
@@ -778,6 +787,7 @@ MoreFriends:
   Name: Geselliger Schmetterling
 LunaticPassion:
   Name: Wahnsinnige Liebe
+  FlavorText: '"Tatsächlich folge ich dir bereits seit dem letzten Durchlauf!"'
 DeepFreeze:
   Name: Eiszapfentanz
 GatherFairy:
@@ -852,8 +862,13 @@ WolfFur:
     entfernt werden.
 KokoroFriend:
   Description: '{FriendP}|Traum| {Value1}.'
+  ExtraDescription3: '{FriendU}Enter |Dissoziation|.'
+  ExtraDescription1: '{FriendA}Betrete |Leidenschaft|.'
+  FlavorText: Persona!
+  Name: Kokoro, Erwachte Persönlichkeit
 EnterEpiphany:
   Name: Offenbarung
+  Description: Betrete |Dissoziation|.
 PrismriverBlack:
   UpgradedDescription: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Stilles Mondlicht| deinem Ablagestapel hinzu.\n|Debüt|:\
@@ -1423,3 +1438,42 @@ ColdSnap:
     \ % blauen Karten'} von deinem Ziehstapel deiner Hand hinzu.\nErhalte für jede\
     \ gezogene Karte {Value2} |Barriere|.\n(Verbleibende blaue Karten im Ziehstapel:\
     \ {BlueCount})"
+BlackEpiphany:
+  Description: "Betrete |Dissoziation|.\nNur {Value1} {Value1:plural one='Karte kann'\
+    \ other='Karten können'} im nächsten Zug von {PlayerName} gespielt werden."
+AliceKickerAttack:
+  Name: Bonusangriff
+SelfControl:
+  ExtraDescription1: Betrete |Leidenschaft|.
+  Name: Selbstverwirklichung
+PsycheLock:
+  Description: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\nKann nur\
+    \ gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat, während\
+    \ sich {SelfName} auf deiner Hand befindet. (Verbleibend: {Count})"
+  UpgradedDescription: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\n\
+    Zu Beginn deines nächsten Zuges werden alle Karten auf deiner Hand |aufgewertet|.\n\
+    Kann nur gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat,\
+    \ während sich {SelfName} auf deiner Hand befindet. (Verbleibend: {Count})"
+  UpgradedNonbattleDescription: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\n\
+    Zu Beginn deines nächsten Zuges werden alle Karten auf deiner Hand |aufgewertet|.\n\
+    Kann nur gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat,\
+    \ während sich {SelfName} auf deiner Hand befindet."
+  NonbattleDescription: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\n\
+    Kann nur gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat,\
+    \ während sich {SelfName} auf deiner Hand befindet."
+TheHermit:
+  UpgradedDescription: "|Vorhersehung| {Scry}.\nDie oberste Karte im Ziehstapel wird\
+    \ |aufgewertet|.\nErhalte {Mana}.\n|Dissoziation|: {SelfName} kostet <sprite=\"\
+    ManaSprite\" name=\"0\">."
+  Description: "|Vorhersehung| {Scry}.\nErhalte {Mana}.\n|Dissoziation|: {SelfName}\
+    \ kostet <sprite=\"ManaSprite\" name=\"0\">."
+ToAllFollower:
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Dissoziation|: Verursache\
+    \ den Schaden ein zusätzliches Mal."
+FakeBullet:
+  Name: Imaginäres Danmaku
+TheFool:
+  Name: 'Tarot: Der Narr'
+  Description: "|Vorhersehung| {Scry}.\nSpiele die oberste Karte in deinem Ziehstapel."
+PassionMemory:
+  Description: Betrete |Leidenschaft|.
