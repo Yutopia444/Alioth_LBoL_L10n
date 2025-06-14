@@ -22,6 +22,7 @@ SakuyaBlockW:
   Description: Erhalte {Block} |Block|.
 CirnoConsider:
   ExtraDescription1: Erhalte {Block} |Block|.
+  ExtraDescription2: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
 KoishiAttackB:
   Description: Verursache {Damage} Schaden.
 KoishiDnaAttack:
@@ -178,6 +179,7 @@ FreezeBullet:
   FlavorText: Cirno ist unsere Erlöserin!
 CirnoDraw:
   Name: Feenintellekt
+  Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
 IceBlock:
   Name: Eisblock
 IceMatrix:
@@ -317,6 +319,7 @@ CirnoFreeze:
 YuyukoMisfortune:
   FlavorText: Ich frage mich manchmal, falls eine Person die "Fähigkeit zu sterben"
     verliert, ist das dann wirklich noch ein Mensch?
+  Name: Schleichender Hunger
 Psychedelic:
   FlavorText: '"Träume ich etwa noch?"'
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben und erhalte {Value2}
@@ -463,6 +466,7 @@ UManaCard:
   Description: Erhalte {Mana}.
 PlayDrawTop:
   Name: Bewusstloses Handeln
+  Description: "Erhalte {Block} |Block|.\nSpiele die oberste Karte in deinem Ziehstapel."
 ShengquanZaiwo:
   Description: Erhalte {Mana}.
 GManaCard:
@@ -502,6 +506,10 @@ KoishiKiss:
   Name: Luftkuss
 KoishiWake:
   FlavorText: '"Wo bin ich?"'
+  Description: "|Leidenschaft|: Führe einen |Folgeangriff| aus.\n|Gelassenheit|: Erhalte\
+    \ {Shield} |Barriere|.\n|Dissoziation|: Erhöhe die Anzahl an Karten, die während\
+    \ |Dissoziation| gespielt werden können, um {Value1} und sende {SelfName} ins\
+    \ |Exil|."
 KoishiPlayDiscard:
   Name: Philosophie der Verachteten
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
@@ -683,7 +691,7 @@ ReimuHuashan:
     \ pro Kampf verwendet werden. (Bereits geschehen)"
 ReimuSakura:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nHeile {Value1} Leben.\n\
-    |Wachstum|: Bis zum Ende des Kampfes kostet diese Karte {Mana} weniger."
+    |Wachstum|: Diese Karte kostet bis zum Ende des Kampfes {Mana} weniger."
   Name: Blühendes Traumsiegel
 DanmuDuijue:
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Reflektion|.\n\
@@ -796,6 +804,8 @@ SanaeMiracle:
   Name: Stargast des Tages
 Anatta:
   Name: Anatta
+  Description: "Erhöhe die Menge an Mana durch das Verlassen von |Gelassenheit| um\
+    \ {Mana}.\nBetrete |Gelassenheit|."
 FriendDraw:
   Name: Gartenversammlung
 FairyWrath:
@@ -848,6 +858,10 @@ BladePower:
   Name: Blendender Ansturm
 SunnyFriend:
   Name: Sunny, blendendes Sonnenlicht
+  ExtraDescription1: "{FriendA}Erhalte |Optische Tarnung| für {Light:plural one='%\
+    \ Zug' other='% Züge'}."
+  Description: '{FriendP}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
+    Schaden.'
 Chunguang:
   Name: Pure Lichtstrahlen
 LeiguAttack:
@@ -866,6 +880,7 @@ KokoroFriend:
   ExtraDescription1: '{FriendA}Betrete |Leidenschaft|.'
   FlavorText: Persona!
   Name: Kokoro, Erwachte Persönlichkeit
+  ExtraDescription2: '{FriendA2}Betrete |Gelassenheit|.'
 EnterEpiphany:
   Name: Offenbarung
   Description: Betrete |Dissoziation|.
@@ -1024,6 +1039,9 @@ IceWing:
 MeilingFriend:
   Name: Meiling, nachlässige Torwächterin
   ExtraDescription3: '{FriendU}Heile {Value1} Leben und erhalte {Value2} |Feuerkraft|.'
+  Description: "{FriendS}Erhalte {Graze} |Ausweichen|.\n{FriendP}Füge |Wurfmesser|\
+    \ deiner Hand hinzu.\nJedes Mal, wenn {PlayerName} receives damage from an enemy's\
+    \ whole attack, it triggers for an additional time."
 DayaojingTdm:
   Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
   Name: Daiyousei, Eiskugel Assistentin
@@ -1252,6 +1270,7 @@ ToolRandomTool:
     \ deiner Hand hinzu. Sie hat |Kopie| und |Limitiert【1】|.\n|Limitiert【{DeckCounter}】|"
 PurpleMogu:
   Description: Heile {Value1} Leben.
+  Name: Violetter Lacktrichterling
 ZoufangWater:
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nErhöhe den Schaden von\
     \ {SelfName} um {Value2} für jede gespielte |Talentkarte| in diesem Kampf. ({AdditionalDamage})"
@@ -1376,8 +1395,8 @@ LongArm:
     \ one='' other='n'} auf deiner Hand befinde{Value1:plural one='t' other='n'},\
     \ erhalte {Mana}."
 FangxiangAttack:
-  Description: "Falls das Ziel bereits |vergiftet| ist, verursache {Value2} Mal {Damage}\
-    \ Schaden.\nFüge ansonsten {Value1} |Gift| zu."
+  Description: "Verursache an einem Feind mit |Gift| {Value2} Mal {Damage} Schaden.\n\
+    Füge ansonsten {Value1} |Gift| zu."
 AnimalSpirit:
   Description: "Alle anderen Karten auf der Hand werden von Tiergeistern heimgesucht\
     \ und erhalten somit einen der folgenden Effekte:\n|r:Wolf|: Erhält |Echo|.\n\
@@ -1441,11 +1460,16 @@ ColdSnap:
 BlackEpiphany:
   Description: "Betrete |Dissoziation|.\nNur {Value1} {Value1:plural one='Karte kann'\
     \ other='Karten können'} im nächsten Zug von {PlayerName} gespielt werden."
+  Name: Bewusstsein verlieren
 AliceKickerAttack:
   Name: Bonusangriff
 SelfControl:
   ExtraDescription1: Betrete |Leidenschaft|.
   Name: Selbstverwirklichung
+  ExtraDescription2: Betrete |Gelassenheit|.
+  Description: "|Wähle aus|: Betrete entweder |Leidenschaft| oder |Gelassenheit|.\n\
+    Am Ende deines Zuges, erhalte |Feuerkraft|, wenn |Leidenschaft| aktiv ist. Erhalte\
+    \ stattdessen |Block|, wenn |Gelassenheit| aktiv ist."
 PsycheLock:
   Description: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\nKann nur\
     \ gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat, während\
@@ -1477,3 +1501,196 @@ TheFool:
   Description: "|Vorhersehung| {Scry}.\nSpiele die oberste Karte in deinem Ziehstapel."
 PassionMemory:
   Description: Betrete |Leidenschaft|.
+  Name: Hitzige Erinnerungen
+FlowerGone:
+  Description: "Erhalte {Block} |Block|.\n|Gelassenheit|: Erhalte stattdessen {Shield}\
+    \ |Barriere|."
+DebugAddHandCards:
+  Description: "Testkarte: Sende die gesamte Hand ins |Exil| und füge {Value1:plural\
+    \ one='% Karte' other='% Karten'} deiner Hand hinzu."
+  Name: Sende die gesamte Hand ins Exil und füge neue Karten hinzu.
+LeaveMoodDraw:
+  Name: Neugier
+  Description: "Verlasse deinen |Mentalen Zustand|.\nZiehe {Value1:plural one='% Karte'\
+    \ other='% Karten'}."
+  FlavorText: Ich bin doch kein Kätzchen.
+HuoliQuankai:
+  FlavorText: Aktiviere die geheimen Energiereserven!
+  Name: Voller Einsatz
+MasterOfCollection:
+  Name: Meistersammler
+  Description: "Wähle bis zu {Value2:plural one='% Karte' other='% Karten'} auf deiner\
+    \ Hand. Sie {Value2:plural one='hat' other='haben'} |Beibehalten|.\nJedes Mal,\
+    \ wenn eine Karte |Beibehalten| wird, kostet sie bis zum Ende des Kampfes {Value1}\
+    \ zufälliges Mana weniger."
+  FlavorText: '"Müll? Wie kann das bitte Müll sein?"'
+ChargingPotion:
+  Name: Radioaktive Elemente
+  Description: "Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, erhalte {Value1:plural\
+    \ one='% |Aufladung|' other='% |Aufladungen|'}.\nFüge {Value2} |Instabiler Trank|\
+    \ deiner Hand hinzu."
+StarlightTaifengSummoner:
+  Description: "Füge |Sternenlicht-Taifun| deinem Ziehstapel hinzu.\n|For each {Mana}\
+    \ spent|: The added card deals damage an additional time.\n|For each <sprite=\"\
+    ManaSprite\" name=\"R\"> spent|: Verursache {Value1} zusätzlichen Schaden."
+  FlavorText: Sammle Mana für ein Jahrtausend, um alles in einem kurzen Augenblick
+    freizulassen.
+  Name: Zusammenlaufendes Sternenlicht
+StarlightTaifeng:
+  Name: Sternenlicht-Taifun
+  FlavorText: "\"Finaler Angriff! Warte einen Moment, lass mich kurz nachschauen,\
+    \ was genau der Effekt 'Makellos' macht...\""
+  Description: Verursache {Value1} Mal {Damage} Schaden.
+IceSpark:
+  Name: Gefrorener Laser
+  Description: Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.
+ColdPotion:
+  Name: Kühlmittel
+  Description: "|Instabiler Trank| fügt zusätzlich |Kälte| zu.\nFüge {Value1} |Instabiler\
+    \ Trank| deinem Ziehstapel hinzu."
+DebugAddRandomCardsToExileSlow:
+  Name: Füge zufällige Karten dem Exil hinzu. (Langsam)
+  Description: "Testkarte: Füge langsam {Value1:plural one='% Karte' other='% Karten'}\
+    \ dem Exil hinzu."
+DebugAddDeckCards:
+  Name: Füge zufällige Karten der Bibliothek hinzu.
+  Description: "Testkarte: Füge {Value1:plural one='% Karte' other='% Karten'} der\
+    \ Bibliothek hinzu."
+PatchouliFriend:
+  Description: '{FriendP}Konvertiere {PassiveColor} zufälliges Mana in |Philosophen-Mana|
+    um.'
+  ExtraDescription2: '{FriendA2}Füge {Value2} |Instabiler Trank| deiner Hand hinzu.'
+  FlavorText: '"Mischen, mischen, schwenken, mischen."'
+  Name: Patchouli, Elementare Alchemistin
+  ExtraDescription1: '{FriendA}Erhalte {Value1} |Feuerkraft| und |Geist|. Erhalte
+    {Power} <sprite="Point" name="Power">.'
+MoguMaster:
+  Description: Wähle {Value2} von {Value1} zufälligen |Pilzen| aus und füge sie deiner
+    Hand hinzu.
+  Name: Spezialist für Pilze
+GreenMogu:
+  Description: Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.
+  Name: Herber Zwergknäueling
+ClownpieceFriend:
+  Description: "{FriendS}Erhalte {StartMana}.\n{FriendP}Erhalte {Value2} |Temporäre\
+    \ Feuerkraft|."
+  UpgradedExtraDescription1: "{FriendA}Ziehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}."
+  ExtraDescription2: '{FriendA2}Erhalte {Mana} und füge |Wahnsinn| deinem Ablagestapel
+    hinzu.'
+  ExtraDescription1: "{FriendA}Ziehe {Value1:plural one='% Karte' other='% Karten'}\
+    \ und füge |Wahnsinn| deinem Ablagestapel hinzu."
+DefaultPeace:
+  Description: "Erhalte {Block} |Block|.\nBetrete |Gelassenheit|."
+DefaultPassion:
+  Description: "Verursache {Damage} Schaden.\nBetrete |Leidenschaft|."
+CloseEye:
+  Name: Verschlossenes Herz
+  Description: "Erhalte {Shield} |Barriere|.\nFeindliche Intentionen können im nächsten\
+    \ Zug von {PlayerName} nicht gesehen werden."
+DebugAddRandomCardsSlow:
+  Description: "Testkarte: Füge langsam {Value1:plural one='% Karte' other='% Karten'}\
+    \ deinem Zieh- und Ablagestapel hinzu."
+  Name: Füge zufällige Karten hinzu. (Langsam)
+DebugAddRandomCardsToExile:
+  Description: "Testkarte: Füge {Value1:plural one='% Karte' other='% Karten'} dem\
+    \ Exil hinzu."
+  Name: Füge zufällige Karten dem Exil hinzu.
+FindCollection:
+  Description: "Wähle 1 von {Value1} zufälligen Karten aus und füge sie deiner Hand\
+    \ hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.\n\nnon-{PlayerName}\
+    \ cards to add to the hand."
+WhiteLaser:
+  Description: "Verursache {Damage} Schaden.\nErhalte {Shield} |Barriere|. Dieser\
+    \ Effekt wird durch |Durchbruch| beeinflusst."
+DebugRemoveHand:
+  Description: 'Testkarte: Wähle eine beliebige Anzahl an Karten auf deiner Hand aus
+    und entferne sie aus dem Kampf.'
+  Name: Entferne Hand
+DebugAddRandomCards:
+  Name: Füge zufällige Karten hinzu.
+  Description: "Testkarte: Füge {Value1:plural one='% Karte' other='% Karten'} deinem\
+    \ Zieh- und Ablagestapel hinzu."
+KoishiDance:
+  Description: "Erhalte {Block} |Block|.\nVerursache an allen Feinden {Damage} Schaden.\n\
+    Führe einen |Folgeangriff| aus."
+SplitPotion:
+  Description: "|Unstable Potions| deal damage to an additional target.\nFüge {Value1}\
+    \ |Instabiler Trank| deinem Ziehstapel hinzu."
+RedMogu:
+  Name: Fliegenpilz
+  Description: Füge {Value1} |Gift| zu.
+PeaceMemory:
+  Description: Betrete |Gelassenheit|.
+  Name: Ruhige Erinnerungen
+PassionVulnerable:
+  Name: Schlaflose Nacht
+  Description: "|Leidenschaft|: Füge allen Feinden {Value1} |Verwundbar| zu.\nBetrete\
+    \ ansonsten |Leidenschaft|."
+  UpgradedDescription: "|Leidenschaft|: Füge allen Feinden {Value1} |Verwundbar| und\
+    \ {Value2} |Anvisieren| zu.\nBetrete ansonsten |Leidenschaft|."
+PassionDraw:
+  Description: Jedes Mal, wenn {PlayerName} |Leidenschaft| betritt, ziehe {Value1:plural
+    one='% Karte' other='% Karten'}.
+  Name: Liebeskummer
+LunaFriend:
+  Description: '{FriendP}Erhalte {Block} |Block|.'
+  ExtraDescription1: '{FriendA}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
+    Schaden.'
+  ExtraDescription3: "{FriendU}Erhalte |Makellos| für {Value2:plural one='% Zug' other='%\
+    \ Züge'}."
+PeaceEndTurn:
+  UpgradedDescription: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'}\
+    \ auf deiner Hand oder füge {Value1:plural one='% Karte' other='% Karten'} von\
+    \ deinem Ablagestapel deiner Hand hinzu. Sie {Value1:plural one='hat' other='haben'}\
+    \ |Temporäres Beibehalten|.\nBetrete |Gelassenheit|.\nBeende den Zug von {PlayerName}."
+  Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} auf deiner\
+    \ Hand. Sie {Value1:plural one='hat' other='haben'} |Temporäres Beibehalten|.\n\
+    Betrete |Gelassenheit|.\nBeende den Zug von {PlayerName}."
+DuplicateFollower:
+  ExtraDescription1: "Verursache {Damage} Schaden.\nErhalte {Mana}."
+  Name: Einsames Herz
+  Description: "Verursache {Damage} Schaden.\nErhalte {Mana}.\n|Zu Beginn des Kampfes|:\
+    \ Füge {Value1:plural one='% |Kopie|' other='% |Kopien|'} von {SelfName} deinem\
+    \ Ziehstapel hinzu."
+StarFriend:
+  Description: '{FriendP}Verursache an allen Feinden {Damage} Angriffsschaden.'
+MoodChangeBlock:
+  Description: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte
+    {Value1} |Block|.
+  Name: A.T. Feld
+  FlavorText: Ich darf nicht wegrennen! Ich darf nicht wegrennen!
+KoishiDrawTopCards:
+  Name: Rorschach-Test
+GainInspiration:
+  Name: Lass mich nachdenken
+  Description: "Am Ende deines Zuges, füge |Heureka!| deinem Ziehstapel hinzu.\n"
+PerfectCrime:
+  Name: Perfektes Verbrechen
+BlueMogu:
+  Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
+TheChariot:
+  Name: 'Tarot: Der Wagen'
+  Description: "|Vorhersehung| {Scry}.\nZu Beginn deines nächsten Zuges, betrete |Leidenschaft|\
+    \ und ziehe {Value1:plural one='% Karte' other='% Karten'}."
+KoishiSpringOut:
+  Description: "|Gelassenheit|: Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n\
+    Betrete ansonsten |Gelassenheit|."
+DebugExileDrawDiscard:
+  Description: 'Testkarte: Sende deinen Zieh- und Ablagestapel ins |Exil|.'
+PassionAttackToDraw:
+  Name: Rosenkäfig
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\nBetrete |Leidenschaft|.\n\
+    Mische {SelfName} zurück in den Ziehstapel."
+LearnAstrology:
+  Name: Astrologie studieren
+PassionDefense:
+  Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
+    \ |Block|."
+KoishiFire:
+  Description: "Erhalte {Value1} |Feuerkraft|.\n|Leidenschaft|: Erhalte zusätzlich\
+    \ {Value2} |Feuerkraft|.\n|Gelassenheit|: Erhalte stattdessen {Value1} |Geist|."
+KoishiFlower:
+  Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFüge {Value1}\
+    \ |Hochsommerblumen| deiner Hand hinzu.\n|Dissoziation|: Füge stattdessen {Value2}\
+    \ hinzu."

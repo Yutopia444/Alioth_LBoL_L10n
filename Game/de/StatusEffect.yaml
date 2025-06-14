@@ -160,9 +160,9 @@ SolarSystemSe:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |{Level:plural one='Aufladung'
     other='Aufladungen'}|.
 PotionBaseDamageSe:
-  Description: '|Instabile Tränke| verursachen {Level} mehr Schaden.'
+  Description: '|Instabiler Trank| verursacht {Level} zusätzlichen Schaden.'
   Name: Explosive Komponenten
-  Brief: '|Instabile Tränke| verursachen mehr Schaden.'
+  Brief: '|Instabiler Trank| verursacht zusätzlichen Schaden.'
 PoisonPotionSe:
   Name: Hexenkessel
   Description: Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, füge zusätzlich
@@ -426,10 +426,10 @@ JunkoLily:
   Description: Jedes Mal, wenn |Läuterndes Licht| aktiviert wird, verliert {PlayerName}
     {Level} Leben.
 UpgradePotionSe:
-  Brief: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabile Tränke|
+  Brief: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabiler Trank|
     im Zieh- und Ablagestapel.
-  Description: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabile
-    Tränke| im Zieh- und Ablagestapel um {Level}.
+  Description: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabiler
+    Trank| im Zieh- und Ablagestapel um {Level}.
   Name: Tränke verfeinern
 ModuoluoFireSe:
   Name: Enas Feuer
@@ -735,11 +735,12 @@ BoliPhantomSe:
   Name: Hakurei Illusion
 TaijiLiangyiSe:
   Name: Die Geburt des Yin-Yang
-  Description: Zu Beginn deines Zuges, wenn sich {Level:plural one='keine' other='weniger
-    als %'} |Yin-Yang Kugeln| auf deiner Hand befinden, füge {Level:plural one='1
-    |Yin-Yang Kugel|' other='% |Yin-Yang Kugeln|'} deiner Hand hinzu.
-  Brief: Zu Beginn deines Zuges, wenn sich weniger als eine gewisse Anzahl an |Yin-Yang
-    Kugeln| auf deiner Hand befinden, füge |Yin-Yang Kugeln| deiner Hand hinzu.
+  Description: Zu Beginn deines Zuges, falls sich weniger als {Level} |Yin-Yang Kugel|
+    auf deiner Hand {Level:plural one='befindet' other='befinden'}, füge bis zu {Level}
+    |Yin-Yang Kugel| deiner Hand hinzu.
+  Brief: Zu Beginn deines Zuges, falls sich weniger als eine gewisse Anzahl an |Yin-Yang
+    Kugel| auf deiner Hand befinden, füge bis zu dieser Anzahl |Yin-Yang Kugel| deiner
+    Hand hinzu.
 HuanxiangBlockSe:
   Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName} |Block|.
   Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName}
@@ -845,9 +846,11 @@ MomentPowerSe:
 SenluoJiejieSe:
   Brief: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
   Description: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
+  Name: Zusammenführung der Grenzen
 BurstUpgrade:
   Description: Erhöht den Schadensmultiplikator von |Durchbruch|.
   Brief: Erhöht den Schadensmultiplikator von |Durchbruch|.
+  Name: Voller Einsatz
 BurstDrawSe:
   Description: Wenn |Durchbruch| aktiviert wird, ziehe {Level:plural one='% Karte'
     other='% Karten'}.
@@ -855,6 +858,9 @@ BurstDrawSe:
   Name: Blitzduel
 ScryBlockSe:
   Name: Vorsatz
+  Description: Jedes Mal, wenn {PlayerName} eine |Vorhersehung| trifft, erhalte {Level}
+    |Block|.
+  Brief: Jedes Mal, wenn {PlayerName} eine |Vorhersehung| trifft, erhalte |Block|.
 Grace:
   Description: '|Göttliche Gunst| erhöht sowohl |Feuerkraft| als auch |Geist| und
     wird entfernt, sobald eine Karte gespielt oder die |Zauberkarte| verwendet wird.'
@@ -962,6 +968,8 @@ MoreDraw:
   Brief: Zu Beginn deines Zuges ziehe zusätzliche Karten.
 CloseEyeSe:
   Name: Geschlossenes Auge
+  Description: "Feindliche Intentionen sind unbekannt.\nVerbleibende Züge: {Level}"
+  Brief: Feindliche Intentionen sind für eine gewisse Anzahl an Zügen unbekannt.
 BailianBlackSe:
   Description: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|.
     Die betroffenen Karten kosten {Mana}.
@@ -1013,8 +1021,7 @@ MinengZhuruSe:
   Brief: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand werden zusätzliche
     Male ausgeführt.
 SplitPotionSe:
-  Description: "|Instabile Tränke| verursachen {Level} {Level:Plural one='zusätzliches\
-    \ Mal' other='zusätzliche Male'} Schaden."
+  Description: "|Instabiler Trank| verursacht {Level} Mal Schaden."
 FairyTreeSe:
   Brief: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte |Block|.
   Description: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte {Level}
@@ -1081,6 +1088,16 @@ StarFriendSe:
   Name: Wie die Sterne am Himmel
 MoodPassion:
   Name: Leidenschaft
+  Description: "Solange |Leidenschaft| aktiv ist, verursacht und erleidet {PlayerName}\
+    \ {Percentage}% zusätzlichen Schaden.\n|Leidenschaft| ist ein |Mentaler Zustand|,\
+    \ es kann immer nur ein Zustand zur selben Zeit aktiv sein."
+  Brief: "Solange |Leidenschaft| aktiv ist, verursacht und erleidet {PlayerName} {Percentage}%\
+    \ zusätzlichen Schaden.\n|Leidenschaft| ist ein |Mentaler Zustand|, es kann immer\
+    \ nur ein Zustand zur selben Zeit aktiv sein."
+  ExtraDescription: "Solange |Leidenschaft| aktiv ist, verursacht {PlayerName} {AttackPercentage}%\
+    \ zusätzlichen Angriffsschaden und erleidet {Percentage}% zusätzlichen Angriffsschaden.\n\
+    |Leidenschaft| ist ein |Mentaler Zustand|, es kann immer nur ein Zustand zur selben\
+    \ Zeit aktiv sein."
 NextTurnPassion:
   Description: Zu Beginn deines nächsten Zuges betritt {PlayerName} |Leidenschaft|
     und zieht {Level} Karte{Level:plural one='' other='n'}.
@@ -1094,10 +1111,17 @@ PotionDefenseSe:
     erhalte {Level} |Barriere|.
 MoodPeace:
   Name: Gelassenheit
+  Brief: "Wenn |Gelassenheit| verlassen wird, erhalte {Mana}.\n|Gelassenheit| ist\
+    \ ein |Mentaler Zustand|, es kann immer nur ein Zustand zur selben Zeit aktiv\
+    \ sein."
+  Description: "Wenn |Gelassenheit| verlassen wird, erhalte {Mana}.\n|Gelassenheit|\
+    \ ist ein |Mentaler Zustand|, es kann immer nur ein Zustand zur selben Zeit aktiv\
+    \ sein."
 PassionDrawSe:
   Brief: Jedes Mal, wenn {PlayerName} |Leidenschaft| betritt, ziehe Karten.
   Description: Jedes Mal, wenn {PlayerName} |Leidenschaft| betritt, ziehe {Level}
     Karte{Level:plural one='' other='n'}.
+  Name: Liebeskummer
 MoreFriendsSe:
   Name: Geselliger Schmetterling
   Description: "Zu Beginn deines Zuges, füge {Level:plural one='einen zufälligen |Verbündeten|'\
@@ -1110,6 +1134,7 @@ MoreFriendsSe:
 SummerFlowerSe:
   Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
   Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
+  Name: Hochsommerblüten
 MaxHandSe:
   Name: Feenversammlung
   Description: Das Limit an Karten auf der Hand erhöht sich auf {MaxHand}.
@@ -1117,10 +1142,14 @@ MaxHandSe:
 LunaticPassionSe:
   Name: Wahnsinnige Liebe
   Description: "Der Schadensmodifikator von |Leidenschaft| wird auf {Percentage}%\
-    \ geändert.\nWährend {PlayerName} sich in |Leidenschaft| befindet, sind alle Angriffskarten\
+    \ geändert.\nSolange |Leidenschaft| bei {PlayerName} aktiv ist, haben alle Angriffskarten\
     \ |Präzise|."
+  Brief: "Der Schadensmodifikator von |Leidenschaft| wird auf {Percentage}% geändert.\n\
+    Solange |Leidenschaft| bei {PlayerName} aktiv ist, haben alle Angriffskarten |Präzise|."
 UpgradePeace:
   Name: Anatta
+  Description: Erhöhe die Menge an Mana durch das Verlassen von |Gelassenheit|.
+  Brief: Erhöhe die Menge an Mana durch das Verlassen von |Gelassenheit|.
 MeihongFireSe:
   Brief: "Am Ende deines Zuges verursacht {PlayerName} an allen Feinden Schaden.\n\
     Aktiviere diesen Effekt auch, nachdem eine |Unglückskarte| oder Statuskarte gezogen\
@@ -1208,12 +1237,35 @@ MoodEpiphany:
   Description: "Erhalte {Mana} und ziehe eine Karte für jede gespielte Karte, solange\
     \ |Dissoziation| aktiv ist.\nAm Ende deines Zuges oder wenn {Count:plural one='%\
     \ Karte' other='% Karten'} gespielt worden {Count:plural one='ist' other='sind'},\
-    \ verlasse |Dissoziation|.\n|Dissoziation| ist ein |Mentaler Zustand|, von denen\
-    \ nur einer zur selben Zeit aktiv sein kann."
+    \ verlasse |Dissoziation|.\n|Dissoziation| ist ein |Mentaler Zustand|, es kann\
+    \ immer nur ein Zustand zur selben Zeit aktiv sein."
   Name: Dissoziation
+  Brief: "Erhalte {Mana} und ziehe eine Karte für jede gespielte Karte, solange |Dissoziation|\
+    \ aktiv ist.\nAm Ende deines Zuges oder wenn {PlayCount:plural one='% Karte' other='%\
+    \ Karten'} gespielt worden {Count:plural one='ist' other='sind'}, verlasse |Dissoziation|.\n\
+    |Dissoziation| ist ein |Mentaler Zustand|, es kann immer nur ein Zustand zur selben\
+    \ Zeit aktiv sein."
 Inspiration:
   Name: Inspiration
   Brief: Wenn {PlayerName} mindestens {TriggerLevel} |Inspiration| erreicht, betrete
     |Dissoziation|.
   Description: Wenn {PlayerName} mindestens {TriggerLevel} |Inspiration| erreicht,
     betrete |Dissoziation|.
+LearnAstrologySe:
+  Brief: Zu Beginn deines Zuges, falls sich weniger als eine gewisse Anzahl an |Astrologie|
+    auf deiner Hand befinden, füge bis zu dieser Anzahl |Astrologie| deiner Hand hinzu.
+  Name: Astrologie studieren
+  Description: Zu Beginn deines Zuges, falls sich weniger als {Level} |Astrologie|
+    auf deiner Hand {Level:plural one='befindet' other='befinden'}, füge bis zu {Level}
+    |Astrologie| deiner Hand hinzu.
+MoodChangeBlockSe:
+  Brief: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte |Block|.
+  Description: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte
+    {Level} |Block|.
+  Name: A.T. Feld
+SelfControlSe:
+  Name: Selbstbeherrschung
+  Description: Am Ende deines Zuges, erhalte {Level} |Feuerkraft|, wenn |Leidenschaft|
+    aktiv ist. Erhalte stattdessen {Count} |Block|, wenn |Gelassenheit| aktiv ist.
+  Brief: Am Ende deines Zuges, erhalte |Feuerkraft|, wenn |Leidenschaft| aktiv ist.
+    Erhalte stattdessen |Block|, wenn |Gelassenheit| aktiv ist.
