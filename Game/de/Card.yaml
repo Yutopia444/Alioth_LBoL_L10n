@@ -75,7 +75,7 @@ SakuyaZeroDefense:
   Description: Erhalte {Block} |Block|.
 AliceBlockB:
   Description: Erhalte {Block} |Block|.
-  Name: Alice B Verteidigung
+  Name: Alice B Abwehr
 KoishiBlockG:
   Description: Erhalte {Block} |Block|.
 BlueZeroAttack:
@@ -164,6 +164,8 @@ HuiyeSuperExtraTurn:
     \ one='' other='s'} may be played."
 BrokenTimeline:
   Name: Kaputte Zeitlinie
+  Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Zu Beginn
+    dieses Extrazuges, erhalte kein Mana von der Manabasis.
 LoveLetter:
   Name: Liebesbrief
 StopTime:
@@ -172,6 +174,8 @@ TimeMagic:
   Name: Zeitmagie
 EvilMaid:
   Name: Dienstmädchen des Teufels
+  Description: "Verliere {Value1} Leben.\nWährend deines nächsten Zuges verursachen\
+    \ {PlayerName}'s next turn, all attacks deal double damage."
 AutoKnife:
   Name: Verhextes Silbermesser
 FreezeBullet:
@@ -186,6 +190,9 @@ IceMatrix:
   Name: Gefrorene Matrix
 DangerousMagician:
   Name: Gefährliche Illusionistin
+  Description: "Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, erhalte {Value1}\
+    \ |Zeitimpuls{Value1:plural one='' other='e'}|.\nFüge {Value2} |Wurfmesser| deinem\
+    \ Ziehstapel hinzu."
 SilverBlade:
   Name: Silberdimension
 PatchouliLibrary:
@@ -272,7 +279,7 @@ AyaWindGirl:
   Name: Gabe des Windgottes
 YukariFriend:
   Name: Yukari, Grenze der Fantasie
-  Description: '{FriendP}Erhalte |Feuerkraft| in Höhe der gespielten Verteidigungskarten
+  Description: '{FriendP}Erhalte |Feuerkraft| in Höhe der gespielten Abwehrkarten
     in diesem Zug. ({Fire})'
   ExtraDescription1: '{FriendA}Wähle eine Karte aus dem |Exil| und füge sie deiner
     Hand hinzu.'
@@ -515,8 +522,8 @@ KoishiPlayDiscard:
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
     noch ins |Exil| gesendet.
 BailianBlack:
-  Description: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|.
-    Die betroffenen Karten kosten {Mana}.
+  Description: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
+    Karten kosten {Mana}.
   Name: Der Dunkelheit hingeben
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Marisa Sonderausgabe
@@ -607,8 +614,8 @@ ShensheRichang:
     \ um."
   FlavorText: Heute ist ein Ruhetag.
 MojingShanjie:
-  Description: Wähle 1 von {Value1} zufälligen Verteidigungskarten aus und füge sie
-    deiner Hand hinzu. Sie |kostet temporär| {Mana}.
+  Description: Wähle 1 von {Value1} zufälligen Abwehrkarten aus und füge sie deiner
+    Hand hinzu. Sie |kostet temporär| {Mana}.
   FlavorText: Zufälligkeit ist ein Element religiöser Praktiken.
 DoubleDajiejie:
   Description: "Erhalte {Block} |Block|.\nErhalte {Shield} |Barriere|."
@@ -631,6 +638,7 @@ MomentPower:
     um.
   FlavorText: Wenn die Geschwindigkeit von "Temporärer Feuerkraft" sich der Lichtgeschwindigkeit
     nähert, erhöht sich dessen Masse und formt daraus "Feuerkraft".
+  Name: Sofortiger Dimensionsriss
 ChuanyueJiejie:
   Name: Grenze überqueren
   Description: "Erhalte {Shield} |Barriere|.\nFüge eine Karte aus dem |Exil| deiner\
@@ -754,7 +762,7 @@ ZhujiThreeGod:
   Name: Die drei Götter von Sumiyoshi
   Description: "Ziehe {Value1} Karte{Value1:plural one='' other='n'}.\nErhalte {Value2}\
     \ |Temporäre Feuerkraft| für jede gezogene Angriffskarte und {Value2} |Temporärer\
-    \ Geist| für jede gezogene Verteidigungskarte."
+    \ Geist| für jede gezogene Abwehrkarte."
   FlavorText: Sieht so aus, als könntest du den Gott der Fähigkeiten nicht beschwören.
 OverJingjie:
   Description: Wähle 1 von {Value1} zufälligen Angriffskarten aus und füge sie deiner
@@ -779,7 +787,7 @@ LingfuHuti:
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nFüge |Kami-Aura Talisman| deiner\
     \ Hand hinzu."
   Name: Talismanschutz
-  FlavorText: Ich spiele eine Verteidigungskarte und beende meinen Zug.
+  FlavorText: Ich spiele eine Abwehrkarte und beende meinen Zug.
 SmallPanding:
   Description: "Erhalte {Value1} |Ausweichen|.\nErhalte {Value2} |Verwundbar|."
   UpgradedDescription: Erhalte {Value1} |Ausweichen|.
@@ -791,6 +799,9 @@ ClockCorpse:
   Name: Überreste einer Uhr
 GainKnife:
   Name: Sternenklarer Schwerttanz
+  UpgradedDescription: "Zu Beginn deines Zuges, füge {Value1} |Wurfmesser| deiner\
+    \ Hand hinzu.\nFüge {Value2} |Wurfmesser| deiner Hand hinzu."
+  Description: Zu Beginn deines Zuges, füge {Value1} |Wurfmesser| deiner Hand hinzu.
 MoreFriends:
   Name: Geselliger Schmetterling
 LunaticPassion:
@@ -824,8 +835,8 @@ LarvaFriend:
   ExtraDescription1: '{FriendA}Alle Karte auf deiner Hand werden |aufgewertet|.'
   Name: Larva, Göttin der ewigen Nacht
 FairyTree:
-  Description: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte {Value1}
-    |Block|.
+  Description: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen
+    wird, erhalte {Value1} |Block|.
 LilyFriend:
   ExtraDescription1: '{FriendA}Erhalte {ActiveMana}.'
   ExtraDescription3: '{FriendU}Heile {Heal} Leben.'
@@ -1019,6 +1030,7 @@ DayaojingFriend:
 SakuyaUsage2:
   Description: Beende den Zug von {PlayerName}. Erhalte einen Extrazug.
   FlavorText: Den Haushalt machen, während die Zeit gestoppt wurde.
+  Name: Korrekte Verwendung von Sakuya
 IceLance:
   Name: Eislanze
   FlavorText: Gerüchten zufolge springt Cirno immer auf und ab, wenn sie diese Zauberkarte
@@ -1199,8 +1211,8 @@ ShopDefense:
   Description: "Erhalte {Block} |Block|.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}."
 ShopSearch:
-  Description: Wähle eine Angriffs- oder Verteidigungskarte aus deinem Ziehstapel
-    aus und füge sie deiner Hand hinzu.
+  Description: Wähle eine Angriffs- oder Abwehrkarte aus deinem Ziehstapel aus und
+    füge sie deiner Hand hinzu.
   Name: Privates Radar
 SijiCard:
   Name: Urteil der Sünden
@@ -1418,7 +1430,7 @@ PaluxiCurse:
 MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
 Tether:
-  Description: "Erhalte {Block} |Block|.\nAlle |Verbündeten| auf deiner Hand erhalten\
+  Description: "Erhalte {Block} |Block|.\nAlle |Partner| auf deiner Hand erhalten\
     \ {Value1} |Einigkeit|."
   Name: Bindung
 IceSaber:
@@ -1694,3 +1706,151 @@ KoishiFlower:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFüge {Value1}\
     \ |Hochsommerblumen| deiner Hand hinzu.\n|Dissoziation|: Füge stattdessen {Value2}\
     \ hinzu."
+BackToFuture:
+  Description: "Tausche den Ziehstapel mit dem Ablagestapel.\nZiehe {Value1:plural\
+    \ one='% Karte' other='% Karten'}."
+  FlavorText: Straßen? Wo wir hinfahren, brauchen wir keine Straßen.
+  Name: Zurück in die Zukunft
+PerfectServant:
+  Name: Perfekte Dienerin
+SakuyaUsage:
+  Name: Falsche Verwendung von Sakuya
+  FlavorText: Halte einfach die Zeit an und bewege jeden die Treppen runter.
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nNachdem {SelfName}\
+    \ {Value2} Mal gespielt wurde, entferne sie aus dem Kampf und füge |Korrekte Verwendung\
+    \ von Sakuya| oben auf deinen Ziehstapel hinzu."
+SakuyaTea:
+  ExtraDescription1: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n|d:Debüt:\
+    \ Heile {Value2} Leben. {SelfName} kostet bis zum Ende des Kampfes {Mana} weniger.|"
+  Name: Tee zubereiten
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n|Debüt|: Heile\
+    \ {Value2} Leben. {SelfName} kostet bis zum Ende des Kampfes {Mana} weniger."
+SakuyaFuneral:
+  Name: Voreiliges Begräbnis
+  Description: "Verliere {Value1} Leben.\nWähle eine Karte aus dem |Exil| und füge\
+    \ sie deiner Hand hinzu. Sie |kostet temporär| {Mana}."
+SilverBullet:
+  NonbattleDescription: "Verursache an allen Feinden {Damage} Schaden.\nErhalte {Block}\
+    \ |Block|. Erhalte {Value1} zusätzlich |Block| für jedes |Wurfmesser| in deinem\
+    \ Ziehstapel, Ablagestapel und auf deiner Hand."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nErhalte {Block} |Block|.\
+    \ Erhalte {Value1} zusätzlich |Block| für jedes |Wurfmesser| in deinem Ziehstapel,\
+    \ Ablagestapel und auf deiner Hand. (Anzahl |Wurfmesser|: {KnifeCount})"
+TimeAuraAttack:
+  Name: Räumliche Illusion
+  Description: "Verursache {Damage} Schaden.\nErhalte {Value1} |Zeitimpuls|."
+LightSpeed:
+  Description: "Verursache {Damage} Schaden.\nFalls in diesem Zug eine Karte abgeworfen\
+    \ wurde, erhalte {Mana}."
+SakuyaGoOut:
+  FlavorText: Kleider machen Leute und Kostüme machen Dienstmädchen.
+  Name: Reisevorbereitung
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nWerfe {Value1:plural\
+    \ one='% Karte' other='% Karten'} ab.\nErhalte {Mana}."
+VampireHunter:
+  Name: Vampirjägerin
+DropToKnife:
+  Name: Festung aus Silber
+  Description: "Werfe {Value1:plural one='% Karte' other='% Karten'} ab.\nFüge die\
+    \ gleiche Menge |Wurfmesser| deiner Hand hinzu."
+FakeTimeline:
+  Name: Imaginäre Zeitlinie
+  Description: "Erhalte {Block} |Block|.\nVerursache an allen Feinden {Damage} Schaden.\n\
+    Erhalte {Value1} |Zeitimpuls|."
+PrivateVision:
+  UpgradedDescription: "Werfe eine Karte ab.\nErhalte {Value1} |Ausweichen|.\nErhalte\
+    \ {Value2} |Reflektion|."
+  Description: "Werfe eine Karte ab.\nErhalte {Value1} |Ausweichen|."
+Dejavu:
+  Name: Déjà Vu
+  Description: "Lege bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner\
+    \ Hand oben auf deinen Ziehstapel.\nZiehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}.\nErhalte {Mana}."
+SakuyaShop:
+  Description: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='% Karten'}."
+  Name: Beschaffung von Materialien
+PrepareParty:
+  Description: "Lege bis zu 1 Karte von deiner Hand oben auf deinen Ziehstapel.\n\
+    Erhalte {Block} |Block|."
+SakuyaSpeedup:
+  Name: Zeit beschleunigen
+KnifeAim:
+  Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Anvisieren| zu.\nWerfe\
+    \ alle |Wurfmesser| ab, sie werden diesen Feind als Ziel wählen."
+SakuyaSnow:
+  Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
+  Name: Wintervorsatz
+  FlavorText: Ein pflichtbewusstes Dienstmädchen geht sogar dann raus, wenn sie sich
+    durch hüfthohen Schnee schlagen muss.
+DefenseDraw:
+  Name: Mondphasen
+  Description: "Erhalte {Block} |Block|.\nZiehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}.\n|Wenn {SelfName} die Hand betritt|: {SelfName} kostet für den Rest\
+    \ des Kampfes {Mana} weniger."
+SakuyaInvestigate:
+  Description: "Füge allen Feinden {Value1} |Anvisieren| zu.\nFalls d."
+LunaClock:
+  Name: Monduhr
+  Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Die Angriffe
+    von {PlayerName} verursachen während des nächsten Extrazuges keinen Schaden.
+SpecialClock:
+  FlavorText: 'Benötigte Zeit, um das Wohnzimmer aufzuräumen: 0.4 Sekunden'
+  Description: Zu Beginn deines Zuges, werfe bis zu 1 Karte ab und ziehe die gleiche
+    Menge nach.
+ExtraTurnEveryone:
+  Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\nFeinde\
+    \ erhalten nach ihrem Zug ebenfalls einen Extrazug."
+CoolMaid:
+  Description: "Füge {Value1} |Wurfmesser| deiner Hand hinzu.\nErhalte {Mana}."
+  Name: Elegantes Dienstmädchen
+SilverJump:
+  Name: Damoklesschwert
+  Description: "Füge {Value1} |Verwundbar| zu.\nFüge {Value2} |Wurfmesser| deinem\
+    \ Zieh- und Ablagestapel hinzu."
+SakuyaDraw:
+  Name: Perfektion
+SakuyaClock:
+  Name: Sakuyas besondere Uhr
+  FlavorText: Welche App muss ich installieren, damit meine digitale Uhr die gleichen
+    Funktionen hat?
+TimeLord:
+  Description: Erhalte {Value1} |Zeitimpuls{Value1:plural one='' other='e'}|.
+JinziDoppelganger:
+  Name: Jahrhundert-Doppelgänger
+ExileMagic:
+  Description: Sende bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner
+    Hand ins |Exil|. Füge die gleiche Menge |Wurfmesser| deiner Hand hinzu.
+SakuyaWeak:
+  Name: Zeitunterdrückung
+  Description: "Füge {Value1} |Geschwächt| zu.\nErhalte {Mana}."
+Knife:
+  Description: "Verursache {Damage} Schaden.\n|Wenn {SelfName} die Hand verlässt|:\
+    \ Verursache dem Feind mit dem wenigsten Leben {DropDamage} Schaden."
+  Name: Wurfmesser
+SakuyaTwiceAttack:
+  Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFüge {Value2}\
+    \ |Wurfmesser| deinem Ablagestapel hinzu."
+AttackMagic:
+  Name: Trickgeschosse
+  Description: "Verursache {Damage} Schaden.\nWerfe bis zu {Value1:plural one='% Karte'\
+    \ other='% Karten'} ab und ziehe die gleiche Menge nach."
+SakuyaSleep:
+  Description: "Füge |Lichtstrahlen| deiner Hand hinzu.\nBeende den Zug von {PlayerName}."
+  Name: Kurze Pause
+  UpgradedDescription: Füge |Lichtstrahlen| deiner Hand hinzu.
+Lijian:
+  Name: Anblick einer fernen Klinge
+  Description: "Verursache {Damage} Schaden.\nZiehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}.\n|Wenn {SelfName} die Hand betritt|: {SelfName} kostet für den Rest\
+    \ des Kampfes {Mana} weniger."
+SakuyaGraze:
+  Description: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Ausweichen|.\nWhen\
+    \ shuffling, return {SelfName} from the discard pile to the hand."
+  Name: Versehentliches Ausweichen
+CleanRoom:
+  Description: "Werfe eine Karte ab.\nZiehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}.\nBis zum Ende des Kampfes {Value2:plural one='wird % zufällige Karte'\
+    \ other='werden % zufällige Karten'} auf deiner Hand |aufgewertet|. Falls ein\
+    \ |Wurfmesser| abgeworfen wurde, werden stattdessen alle Karten auf der Hand |aufgewertet|."
+MihuanJack:
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.

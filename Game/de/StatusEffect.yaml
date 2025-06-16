@@ -697,11 +697,10 @@ StopTimeSe:
 TimeMagicSe:
   Name: Zeitmagie
   Description: "Zu Beginn deines Extrazuges, wähle {Level} von {Limit} |p:vollkommen\
-    \ zufällige{Limit:plural one='' other='n'}|, nicht-gewöhnliche Karte{Limit:plural\
-    \ one='' other='n'} aus und füge sie deiner Hand hinzu. Diese {Level:plural one='Karte\
-    \ hat' other='Karten haben'} |Exil| und |Ätherisch|, koste{Level:plural one='t'\
-    \ other='n'} {Mana} weniger und die Manakosten können mit jeder Farbe gezahlt\
-    \ werden.\n"
+    \ zufälligen|, nicht-gewöhnlichen Karte{Limit:plural one='' other='n'} aus und\
+    \ füge sie deiner Hand hinzu. Diese {Level:plural one='Karte hat' other='Karten\
+    \ haben'} |Exil| und |Ätherisch|, koste{Level:plural one='t' other='n'} {Mana}\
+    \ weniger und die Manakosten können mit jeder Farbe gezahlt werden.\n"
 DeepFreezeSe:
   Description: Jedes Mal, wenn eine blaue Karte gespielt wird, erhält {PlayerName}
     {Level} |Temporäre Feuerkraft|.
@@ -719,7 +718,7 @@ ReverseJiejieSe:
     {Level} |Barriere|.
   Brief: Jedes Mal, wenn {PlayerName} einen |positiven Effekt| verliert, erhalte |Barriere|.
 PowerByDefense:
-  Description: Jedes Mal, wenn eine Verteidigungskarte gespielt wird, erhält {OwnerName}
+  Description: Jedes Mal, wenn eine Abwehrkarte gespielt wird, erhält {OwnerName}
     {Level} |Feuerkraft|.
   Name: Unbeugsamer Schild
 EnemyTuanzi:
@@ -843,6 +842,7 @@ MomentPowerSe:
     um.
   Brief: Jedes Mal, wenn {OwnerName} |Temporäre Feuerkraft| oder |Temporärer Geist|
     erhält, konvertiere jeweils einen Teil davon in |Feuerkraft| oder |Geist| um.
+  Name: Sofortiger Dimensionsriss
 SenluoJiejieSe:
   Brief: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
   Description: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
@@ -895,11 +895,11 @@ ColdHeartedSe:
   Description: "|Eislanze| verursacht an Feinden mit |Kälte| dreifachen Schaden.\n\
     Am Endes des Zuges verliert {OwnerName} den Effekt von |Kaltblütig|."
 FriendDrawSe:
-  Description: "Jedes Mal, wenn ein |Verbündeter| eine |a:Aktive Fähigkeit| oder eine\
+  Description: "Jedes Mal, wenn ein |Partner| eine |a:Aktive Fähigkeit| oder eine\
     \ |u:Ultimative Fähigkeit| aktiviert, ziehe {Level} Karte{Level:plural one=''\
     \ other='n'}.\nJedes Mal, wenn eine |u:Ultimative Fähigkeit| aktiviert wird, erhalte\
     \ {Level} zufälliges Mana."
-  Brief: "Jedes Mal, wenn ein |Verbündeter| eine |a:Aktive Fähigkeit| oder eine |u:Ultimative\
+  Brief: "Jedes Mal, wenn ein |Partner| eine |a:Aktive Fähigkeit| oder eine |u:Ultimative\
     \ Fähigkeit| aktiviert, ziehe Karten.\nJedes Mal, wenn eine |u:Ultimative Fähigkeit|\
     \ aktiviert wird, erhalte zufälliges Mana."
   Name: Gartenversammlung
@@ -946,10 +946,10 @@ KoishiDnaSe:
     hinzu.
 ButterflyDreamSe:
   Name: Schmetterlingstraum
-  Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige|, Seltene Karten oben
+  Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige|, seltene Karten oben
     auf deinen Ziehstapel. Diese Karten haben |Exil|, |Ätherisch| und farbige Manakosten
     können mit allen Farben bezahlt werden.
-  Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige|, Seltene
+  Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige|, seltene
     Karte{Level:plural one='' other='n'} oben auf deinen Ziehstapel. Diese {Level:plural
     one='Karte hat' other='Karten haben'} |Exil|, |Ätherisch| und farbige Manakosten
     können mit allen Farben bezahlt werden.
@@ -971,9 +971,9 @@ CloseEyeSe:
   Description: "Feindliche Intentionen sind unbekannt.\nVerbleibende Züge: {Level}"
   Brief: Feindliche Intentionen sind für eine gewisse Anzahl an Zügen unbekannt.
 BailianBlackSe:
-  Description: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|.
-    Die betroffenen Karten kosten {Mana}.
-  Brief: Alle Verteidigungs-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
+  Description: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
+    Karten kosten {Mana}.
+  Brief: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
     Karten kosten {Mana}.
   Name: Der Dunkelheit hingeben
 ShannvAbilitySe:
@@ -1016,16 +1016,17 @@ NextTurnColdAll:
     Mal |Kälte| zugefügt.
   Name: Der Winter kommt
 MinengZhuruSe:
-  Description: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand {Level:plural
+  Description: Die passive Fähigkeit beschworener |Partner| auf der Hand {Level:plural
     one='wird' other='werden'} {Level} Mal zusätzlich ausgeführt.
-  Brief: Die passive Fähigkeit beschworener |Verbündeter| auf der Hand werden zusätzliche
+  Brief: Die passive Fähigkeit beschworener |Partner| auf der Hand werden zusätzliche
     Male ausgeführt.
 SplitPotionSe:
   Description: "|Instabiler Trank| verursacht {Level} Mal Schaden."
 FairyTreeSe:
-  Brief: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte |Block|.
-  Description: Jedes Mal, wenn ein |Verbündeter| beschworen wird, erhalte {Level}
-    |Block|.
+  Brief: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen wird,
+    erhalte |Block|.
+  Description: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen
+    wird, erhalte {Level} |Block|.
 ExtraBlizzard:
   Brief: Zu Beginn des nächsten Zuges verursacht {OwnerName} an allen Feinden |präzisen|
     Schaden und fügt |Kälte| zu.
@@ -1069,14 +1070,14 @@ ColdUp:
   Brief: Der Schadensmultiplikator durch erneutes Zufügen von |Kälte| wird erhöht.
 ForeverCoolSe:
   Brief: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit| eines\
-    \ |Verbündeten| aktiviert wird, füge zufälligen Feinden |Kälte| zu.\nJedes Mal,\
-    \ wenn einem Feind |Kälte| zugefügt wird, erhalten zufällige |Verbündete| auf\
-    \ deiner Hand 1 |Einigkeit|."
+    \ |Partners| aktiviert wird, füge zufälligen Feinden |Kälte| zu.\nJedes Mal, wenn\
+    \ einem Feind |Kälte| zugefügt wird, erhalten zufällige |Partner| auf deiner Hand\
+    \ 1 |Einigkeit|."
   Description: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit|\
-    \ eines |Verbündeten| aktiviert wird, füge {Level:plural one='einem zufälligen\
-    \ Feind' other='% zufälligen Feinden'} |Kälte| zu.\nJedes Mal, wenn einem Feind\
-    \ |Kälte| zugefügt wird, {Level:plural one='erhält ein zufälliger |Verbündeter|'\
-    \ other='erhalten % zufällige |Verbündete|'} auf deiner Hand 1 |Einigkeit|."
+    \ eines |Partners| aktiviert wird, füge {Level} zufälligen Feind{Level:plural\
+    \ one='' other='en'} |Kälte| zu.\nJedes Mal, wenn einem Feind |Kälte| zugefügt\
+    \ wird, {Level:plural one='erhält % zufälliger' other='erhalten % zufällige'}\
+    \ |Partner| auf deiner Hand 1 |Einigkeit|."
 MaidFriendSe:
   Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
   Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
@@ -1124,13 +1125,12 @@ PassionDrawSe:
   Name: Liebeskummer
 MoreFriendsSe:
   Name: Geselliger Schmetterling
-  Description: "Zu Beginn deines Zuges, füge {Level:plural one='einen zufälligen |Verbündeten|'\
-    \ other='% zufällige |Verbündete|'} deiner Hand hinzu.\nDiese {Level:plural one='Karte\
-    \ hat' other='Karten haben'} |Ätherisch| und {Level:plural one='verliert' other='verlieren'}\
-    \ |Ätherisch|, nachdem sie gespielt wurde{Level:plural one='' other='n'}."
-  Brief: "Zu Beginn deines Zuges, füge zufällige |Verbündete| deiner Hand hinzu.\n\
-    Diese Karten haben |Ätherisch| und verlieren |Ätherisch|, nachdem sie gespielt\
-    \ wurden."
+  Description: "Zu Beginn deines Zuges, füge {Level} zufällige{Level:plural one='n'\
+    \ other=''} |Partner| deiner Hand hinzu.\nSie {Level:plural one='hat' other='haben'}\
+    \ |Ätherisch| und {Level:plural one='verliert' other='verlieren'} |Ätherisch|,\
+    \ nachdem sie gespielt wurde{Level:plural one='' other='n'}."
+  Brief: "Zu Beginn deines Zuges, füge zufällige |Partner| deiner Hand hinzu.\nDiese\
+    \ Karten haben |Ätherisch| und verlieren |Ätherisch|, nachdem sie gespielt wurden."
 SummerFlowerSe:
   Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
   Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
@@ -1186,15 +1186,14 @@ BailianMagicSe:
     in diesem Zug {Level:plural one='aktiviert' other='aktivieren'} sich zweimal.
   Name: Rezitation des Teufels
 JinziDoppelgangerSe:
-  Name: Centurys Doppelgängerin
+  Name: Jahrhundert-Doppelgänger
 SeeFengshuiSe:
   Name: Feng-Shui Manipulation
   Description: "Zu Beginn deines Zuges trifft {PlayerName} eine |Vorhersehung| {Scry}.\n\
-    Jedes Mal, wenn eine Verteidigungskarte durch eine |Vorhersehung| abgeworfen wird,\
-    \ erhalte {Block} |Block|."
+    Jedes Mal, wenn eine Abwehrkarte durch eine |Vorhersehung| abgeworfen wird, erhalte\
+    \ {Block} |Block|."
   Brief: "Zu Beginn deines Zuges trifft {PlayerName} eine |Vorhersehung|.\nJedes Mal,\
-    \ wenn eine Verteidigungskarte durch eine |Vorhersehung| abgeworfen wird, erhalte\
-    \ |Block|."
+    \ wenn eine Abwehrkarte durch eine |Vorhersehung| abgeworfen wird, erhalte |Block|."
 YachieDefendSe:
   Brief: "Verhindere die nächsten Male, an denen {OwnerName} Leben verlieren würde.\n\
     Stammt der Lebensverlust von einem Feind, verliert dieser Feind stattdessen dieselbe\
