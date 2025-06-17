@@ -4,6 +4,11 @@ AliceAttackB:
   Description: Verursache {Damage} Schaden.
 RedLaser:
   Name: Entzündlicher Laser
+  UpgradedDescription: "Verursache {AttackTimes} Mal {Damage} Schaden.\nFüge {Value1}\
+    \ |Verwundbar| zu."
+  FlavorText: Eine der Maßnahmen gegen Vorfälle im Winter.
+  Description: "Verursache {Damage} Schaden.\n|Überladen {Value2}|: Verursache {AttackTimes}\
+    \ Mal {UpgradeDamage} Schaden und füge {Value1} |Verwundbar| zu."
 MarisaAttackB:
   Description: Verursache {Damage} Schaden.
   Name: Illusionslaser
@@ -16,6 +21,8 @@ MarisaBlockR:
 MarisaBlockB:
   Description: Erhalte {Block} |Block|.
   Name: Sternenstaub Verteidigung
+  FlavorText: Falls jemals ein Meteorit auf Gensokyo einschlagen sollte, wissen wir
+    wen wir um Hilfe bitten.
 SakuyaAttackW:
   Description: Verursache {Damage} Schaden.
 SakuyaBlockW:
@@ -83,8 +90,17 @@ BlueZeroAttack:
   UpgradedDescription: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| zu."
 CraftPotion:
   Name: Mische Trank
+  ExtraDescription1: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\n\
+    Ziehe {Value2:plural one='% Karte' other='% Karten'}.\n|d:Debüt: Ziehe eine weitere\
+    \ Karte.|"
+  Description: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\nZiehe {Value2:plural\
+    \ one='% Karte' other='% Karten'}."
+  UpgradedDescription: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\n\
+    Ziehe {Value2:plural one='% Karte' other='% Karten'}.\n|Debüt|: Ziehe eine weitere\
+    \ Karte."
 JinjiBlock:
   Description: Erhalte {Block} |Block|.
+  Name: Notfallabwehr
 ReimuAttackR:
   Name: Hakurei Amulett
   Description: Verursache {Damage} Schaden.
@@ -133,6 +149,8 @@ IceBarrier:
 Potion:
   Description: '|Wenn {SelfName} deiner Hand hinzugefügt wird|: Erhalte {Mana}, verursache
     an einem zufälligen Feind {Damage} Schaden und sende {SelfName} ins |Exil|.'
+  Name: Instabiler Trank
+  FlavorText: WARNUNG! Tränke könnten zu jedem Zeitpunkt explodieren!
 UpgradePotion:
   Name: Tränke verfeinern
 HuiyinMoreDraw:
@@ -155,6 +173,10 @@ MoonWorld:
   Name: Unbefleckte Welt
 FinalSpark:
   Name: Finales Funkeln
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Überfluss|: Erhalte\
+    \ {Mana}."
+  ExtraDescription1: "Verursache an allen Feinden {Damage} Schaden.\n|d:Überfluss:\
+    \ Erhalte {Mana}.|"
 KokoroDance:
   Name: Tanz der leeren Masken
 HuiyeSuperExtraTurn:
@@ -318,6 +340,8 @@ ReimuSilence:
   Name: '"Traumsiegel -Stille-"'
 BurstDraw:
   Name: Blitzduel
+  Description: Jedes Mal, wenn {PlayerName} |Durchbruch| betritt, ziehe {Value1:plural
+    one='% Karte' other='% Karten'}.
 CirnoFreeze:
   Description: "Solange sich {SelfName} auf deiner Hand befindet, kosten alle Karten\
     \ {Mana} mehr.\nNachdem {FreezeTimes} {FreezeTimes:plural one='Karte gespielt\
@@ -418,6 +442,8 @@ Pressure:
   Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Power">.'
 ScryBlock:
   Name: Vorsatz
+  Description: Jedes Mal, wenn {PlayerName} eine |Vorhersehung| trifft, erhalte {Value1}
+    |Block|.
 PrismriverAll:
   Name: Prismatisches Konzert
   Description: "Erhalte {Mana}.\nKonvertiere das gesamte Mana von {PlayerName} would\
@@ -435,6 +461,7 @@ GreenLotus:
   Description: Erhalte {Mana}.
 RManaCard:
   Description: Erhalte {Mana}.
+  Name: Flamme
 ArtificialJewellery:
   UpgradedDescription: Erhalte {Mana}.
   Name: Künstlicher Schmuck
@@ -454,6 +481,7 @@ YuyukoSing:
     \ werden."
 PManaCard:
   Description: Erhalte {Mana}.
+  Name: Regenbogen
 TianziMana:
   Description: Erhalte {Mana}.
 SakuraBlade:
@@ -478,6 +506,7 @@ ShengquanZaiwo:
   Description: Erhalte {Mana}.
 GManaCard:
   Description: Erhalte {Mana}.
+  Name: Vitalität
 AyaNewsAliceSp:
   Description: '|Am Ende des Zuges|: Verliere {Value1} |Geist|.'
   Name: Bunbunmaru - Alice Sonderausgabe
@@ -1091,6 +1120,10 @@ RemiliaFate:
     \ Ziehstapel deiner Hand hinzu."
 OpenUniverse:
   DetailText: Du kannst keine |Kopien| für diesen Effekt auswählen.
+  Description: "Entferne eine Karte in deinem Ziehstapel aus dem Kampf.\nFüge 2 |Kopien|\
+    \ dieser Karte deiner Hand hinzu. Sie haben |Exil| und |kosten temporär| {Mana}."
+  FlavorText: Die Essenz des Universums ist rekursiv (?)
+  Name: Offenes Universum
 JunkoNightmare:
   UpgradedDescription: "Wähle bis zu {Value2} Karte{Value2:plural one='' other='n'}\
     \ auf deiner Hand.\nVerursache an allen Feinden {Value1} Mal {Damage} Schaden.\n\
@@ -1135,6 +1168,7 @@ GuijiZaoxingHu:
 RumiaBlock:
   FlavorText: Wenn ich es nicht sehe, dann nehme ich auch 0 Schaden.
   Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Schatten| deiner Hand hinzu."
+  Name: Überschattung
 MoonSea:
   Description: "Erhalte {Block} |Block|.\nFüge |Reinheit| deiner Hand hinzu."
   Name: Meer der endlosen Ruhe
@@ -1240,6 +1274,7 @@ Astrology:
 NightSeeStar:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}."
+  Name: Sterne beobachten
 HuiyeMarblePhantasm:
   Description: Wähle 1 von {Value1} zufälligen Karten mit Gesamtkosten von X+1 aus
     und füge sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch| und |kostet
@@ -1696,6 +1731,8 @@ PassionAttackToDraw:
     Mische {SelfName} zurück in den Ziehstapel."
 LearnAstrology:
   Name: Astrologie studieren
+  Description: Zu Beginn deines Zuges, falls sich |Astrologie| nicht auf deiner Hand
+    befindet, füge |Astrologie| deiner Hand hinzu.
 PassionDefense:
   Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
     \ |Block|."
@@ -1854,3 +1891,149 @@ CleanRoom:
     \ |Wurfmesser| abgeworfen wurde, werden stattdessen alle Karten auf der Hand |aufgewertet|."
 MihuanJack:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.
+WinterWarm:
+  Description: "Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner\
+    \ Hand ins |Exil|.\nErhalte |Konzentration| in Höhe der gesendeten Karten.\nZiehe\
+    \ {Value2:plural one='% Karte' other='% Karten'}."
+  FlavorText: Bleib von den hochentzündlichen Materialien fern.
+  Name: Handwärmer
+AsteroidBelt:
+  Name: Asteroidengürtel
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\nIf the last card played\
+    \ this combat was red, erhalte {Value2} |Aufladung{Value2:plural one='' other='en'}|."
+MarisaSteal:
+  Name: '"Ausleihen" von Materialien'
+  Description: "Füge {Value1} |Regenbogen| deiner Hand hinzu.\n|Überziehen| {Value2}."
+  UpgradedDescription: Füge {Value1} |Regenbogen| deiner Hand hinzu.
+  FlavorText: '"Hast du irgendwelche nützlichen, magischen Materialien Zuhause?"'
+MarisaDraw:
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nFalls |Durchbruch|\
+    \ bei {PlayerName} aktiv ist, erhalte {Mana}."
+  Name: Improvisieren
+  FlavorText: '"Vertrau mir, ich habe einen Plan."'
+DropBook:
+  FlavorText: '"Ich habe kein Interesse an traditioneller Magie, bitte kommt nicht
+    wieder!"'
+  Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Astrologie| deiner Hand hinzu."
+DarkSatellite:
+  Description: "Erhalte {Block} |Block|.\nFalls die l, draw {Value1:plural one='%\
+    \ card' other='% cards'}."
+  FlavorText: Man bekämpft Kugeln mit Kugeln!
+  Name: Dunkler Satellit
+HuojianSaoba:
+  Name: Raketenbesen
+  Description: "Erhalte {Value1} |Ausweichen|.\nErhalte {Value2} |Aufladung{Value2:plural\
+    \ one='' other='en'}|."
+  FlavorText: Ein wiederverwendbarer Raketenwerfer, welcher in der Außenwelt sehr
+    begehrt ist.
+PoisonPotion:
+  Description: "|Instabiler Trank| fügt zusätzlich {Value1} |Gift| zu.\nFüge {Value2}\
+    \ |Instabiler Trank| deinem Ziehstapel hinzu."
+  Name: Hexenkessel
+PotionJungle:
+  Description: Am Ende deines Zuges, füge {Value1} |Instabiler Trank| deinem Ablagestapel
+    hinzu.
+  Name: Fluoreszierender Wald
+AccuracyLaser:
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Wenn Beibehalten|: {SelfName}\
+    \ kostet bis zum Ende des Kampfes {Mana} weniger."
+  Name: Direktionaler Laser
+MarisaEat:
+  Description: "Erhalte {Value1} |Konzentration|.\nHeile {Value2} Leben."
+  FlavorText: Die "Pilzplatte" purchased by the "Hakurei Shrine Hot Pot Party" was
+    personally cultivated and handpicked by Marisa. Um die gesundheitlichen Bedenken
+    durch die Lebensunterlief es verschiedener, geheimer Prozesse.
+CollectionDefense:
+  Name: Zu groß zum Scheitern
+  NonbattleDescription: Erhalte |Block| in Höhe der Karten in deinem Ziehstapel.
+  UpgradedDescription: Erhalte |Barriere| in Höhe der Karten in deinem Ziehstapel.
+    ({Shield})
+  UpgradedNonbattleDescription: Erhalte |Barriere| in Höhe der Karten in deinem Ziehstapel.
+  Description: Erhalte |Block| in Höhe der Karten in deinem Ziehstapel. ({Block})
+MarisaHoldCard:
+  Name: Trennungsschmerz
+FireUpBagualu:
+  Name: Den Ofen anzünden
+RunAway:
+  UpgradedDescription: "Werfe deine gesamte Hand ab. Die abgeworfenen Karten |kosten\
+    \ temporär| {Mana} weniger.\nErhalte {Value1} |Ausweichen|.\nZiehe {Value2:plural\
+    \ one='% Karte' other='% Karten'}."
+  Description: "Werfe deine gesamte Hand ab. Die abgeworfenen Karten |kosten temporär|\
+    \ {Mana} weniger.\nErhalte {Value1} |Ausweichen|."
+  Name: Auf der Flucht
+MixAndShake:
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n{SelfName} verursacht\
+    \ {Value1} für jeden |Unstable Potion| in the draw and discard piles."
+  FlavorText: Vor dem Öffnen nicht schütteln.
+EventHorizon:
+  Description: "Betrete |Durchbruch|.\nZu Beginn deines nächsten Zuges verliert {PlayerName}\
+    \ das Spiel."
+  Name: Ereignishorizont
+  UpgradedDescription: "Betrete |Durchbruch|.\nErhalte {Value1} |Temporäre Feuerkraft|.\n\
+    Zu Beginn deines nächsten Zuges verliert {PlayerName} das Spiel."
+PotionDefense:
+  Name: Sternenflug
+  Description: "Erhalte {Shield} |Barriere|.\nJedes Mal, wenn in diesem Zug |Instabiler\
+    \ Trank| aktiviert wird, erhalte {Value1} |Barriere|."
+SolarSystem:
+  Name: Orrerys Sonne
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Aufladung{Value1:plural
+    one='' other='en'}|.
+Alioth:
+  Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}.\nErhalte {Value2} |Aufladung{Value2:plural one='' other='en'}|."
+  Name: Alioth
+ScryAttack:
+  Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} eine |Vorhersehung|\
+    \ trifft, füge {SelfName} von deinem Ablagestapel deiner Hand hinzu."
+  FlavorText: Die Fähigkeit, den großen Wagen im Sternenhimmel zu finden, ist in der
+    Außenwelt verloren gegangen.
+  Name: Navigationsstern
+ShibaiChanwu:
+  Description: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\nFüge {Value2}\
+    \ |Schatten| deiner Hand hinzu."
+WizardStudy:
+  Name: Magiekonvertierer
+  Description: "Erhalte {Value1} |Feuerkraft| und |Geist|.\n|Manafrost| {Mana}."
+BulletStudy:
+  FlavorText: Trotz ihres jungen Alters hat Marisa bereits viele ihrer eigenen Bücher
+    publiziert, nur durch das Studieren des Danmakus ihrer Feinde.
+  Name: Danmaku-Notizen
+  Description: "Erhalte {Block} |Block|.\n|Überladen {Value2}|: Erhalte {Shield} |Barriere|."
+ShiningPotion:
+  Name: Leuchtende Pilze
+  Description: "Erhalte {Block} |Block|.\nFüge |Instabiler Trank| deinem Ziehstapel\
+    \ hinzu.\n|Überladen {Value2}|: Füge stattdessen {Value1} hinzu."
+SatelliteIllusion:
+  Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Astrologie| deiner Hand\
+    \ hinzu."
+  Name: Satellitentäuschung
+ReadyForBurst:
+  Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Aufladung{Value1:plural\
+    \ one='' other='en'}|."
+StarSky:
+  Name: Heller Sternenhimmel
+  Description: Erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|.
+StarShower:
+  Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Aufladung{Value1:plural\
+    \ one='' other='en'}|, falls {PlayerName} keine |Aufladungen| hat, erhalte stattdessen\
+    \ {Value2} |Aufladung{Value2:plural one='' other='en'}|."
+  Name: Im Sternenstaub baden
+ShootMoon:
+  Description: "Verursache {AttackTimes} Mal {Damage} Schaden.\n|Überladen {Value2}|:\
+    \ Erhalte {Value1} |Ausweichen|."
+SuperNova:
+  Description: "Erhalte {Mana}.\nFüge {Value1} zufällige Angriffskarte{Value1:plural\
+    \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu."
+  Name: Supernova
+ThrowBigStar:
+  Name: Rote Sternenexplosion
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Überladen {Value2}|:\
+    \ Verursache den Schaden erneut."
+RedGiantStar:
+  Description: "Verursache {Damage} Schaden.\n|Überladen {Value2}|: Füge |Flamme|\
+    \ deiner Hand hinzu."
+  UpgradedDescription: "Verursache {Damage} Schaden.\n|Überladen {Value2}|: Füge |Regenbogen|\
+    \ deiner Hand hinzu."
+BlazingStar:
+  Name: Brennender Stern
