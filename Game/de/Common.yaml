@@ -7,7 +7,7 @@ Game:
   Deck: Bibliothek
   ActualOrder: Tatsächliche Reihenfolge
   Title: 'Touhou: Lost Branch of Legend'
-  Level: Stufe
+  Level: Level
   EndTurn: Beende Zug
   BattleStart: Kampfbeginn
   RoundCounter: Runde {0}
@@ -51,7 +51,7 @@ Game:
   Passive:  Passiv 
   PlayerNameTurn: '{0}s Zug'
   FollowCardOnly: Zeige Folgeaktionskarten
-  UnlockLevel: Profilstufe
+  UnlockLevel: Untersuchungsstufe
   KickerPrefer: Bonuskosten priorisieren
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
@@ -286,6 +286,15 @@ Setting:
     \ Hybridkosten) und hat keinen Einfluss auf die generelle Reihenfolge des Manas."
   AnimatingEnvironmentDescriptionLocked: "Aktiviert Hintergrundanimationen bei Kämpfen\
     \ oder in Spalten.\n(Gesperrt, kann nur im Hauptmenü geändert werden)"
+  ShowShortcut: Schelltaste für Hand anzeigen
+  ShowShortcutDescription: Bestimmt, ob die Schnelltaste über der Karte auf der Hand
+    angezeigt werden soll.
+  ShowCardOrderDescription: "Bestimmt, ob die Reihenfolge der Karten in den Stapeln\
+    \ numerisch angezeigt werden sollen.\n\nBetrifft nur die Stapel, die in der tatsächlichen\
+    \ Reihenfolge angezeigt werden können (Bibliothek, Ablagestapel und Exil).\nBeim\
+    \ Zieh- und Ablagestapel wird die oberste und unterste Karte des Stapels hervorgehoben.\n\
+    \nKann auch durch das Drücken der Taste für das Anzeigen feindlicher Aktionen\
+    \ angezeigt werden."
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -374,15 +383,15 @@ StartGame:
   StoryMode: Story Modus
   FreeMode: Freier Modus
   SelectAll: Alle Auswählen
-  NotShowRandomResultTitle: Unbekanntes Schicksal
+  NotShowRandomResultTitle: Verberge vorbestimmtes Schicksal
   CheckDeck: Startbibliothek
   SkillSpellCard: Zauberkarte {0} <sprite="Point" name="Power">
   Puzzle: Anfragen
-  NotShowRandomResult: Unbekanntes Schicksal
+  NotShowRandomResult: Verberge Schicksal
   Puzzles: "{0:plural one='% |Anfrage|' other='% |Anfragen|'}"
   SkillExhibit: Anfängliches Ausstellungsstück
-  DifficultyHint: Falls du "Slay the Spire" nie gespielt hast empfehlen wir dir zuerst
-    auf Einfach zu spielen.
+  DifficultyHint: Falls du noch nie "Slay the Spire" gespielt hast, empfehlen wir
+    zuerst auf Einfach zu spielen.
   JadeBoxSelectedCount: Ausgewählt {0}/{1}
   Rate: Komplexität
   Seed: Seed
@@ -392,7 +401,7 @@ StartGame:
   OpeningComic: Prolog anschauen
   NeedClear: Erledige die vorherige Schwierigkeitsstufe zum freischalten.
   SetSeed: Seed editieren
-  JadeBoxLock: Die Jadebox ist vefügbar ab Untersuchungsstufe 10.
+  JadeBoxLock: Die Jadebox ist ab Untersuchungsstufe 10 vefügbar.
   IsLockHint: "Dieser Charakter ist verfügbar\nab Untersuchungsstufe {0}."
   ClearNormal: Abgeschlossen
   ClearTrue: Perfekt Abgeschlossen
@@ -404,6 +413,20 @@ StartGame:
     \ zur Veröffentlichung weiterer Updates."
   StartHp: Anfängliches Leben
   StartMoney: Anfängliches Geld
+  ShowRandomResultTitle: Enthülle vorbestimmtes Schicksal
+  PuzzleHint: "Nimm Anfragen an, um die Menge an blauen Punkten und der erhaltenen\
+    \ Erfahrung zu erhöhen.\nVerfügbar ab Untersuchungsstufe 4."
+  NotShowRandomResultDescription: "Bestimmt, ob die zufälligen Resultate wie Karten\
+    \ oder Ausstellungsstücke bei freundlichen Begegnungen angezeigt werden sollen.\n\
+    Zufällige Resultate werden zu Beginn des Durchlaufs bestimmt und können nicht\
+    \ durch einen Neustart geändert werden.\n\n<color=#dd7473>Du brauchst meine Hilfe\
+    \ nicht? Hmpf!"
+  ShowRandomResultDescription: "Bestimmt, ob die zufälligen Resultate wie Karten oder\
+    \ Ausstellungsstücke bei freundlichen Begegnungen angezeigt werden sollen.\nZufällige\
+    \ Resultate werden zu Beginn des Durchlaufs bestimmt und können nicht durch einen\
+    \ Neustart geändert werden.\n\n<color=#dd7473>Ohohoho! Erhalte eine Kostprobe\
+    \ meiner Macht!"
+  ShowRandomResult: Enthülle Schicksal
 Museum:
   Hidden: Versteckt
   AllCards: Alle Karten
@@ -446,6 +469,8 @@ Museum:
   CardStyleTooltip: "Nur Karten mit mehreren Kartenstilen werden angezeigt.\nWähle\
     \ die Kartenillustration in der Detailansicht aus, die für diese Karte verwendet\
     \ werden soll."
+  HiddenDescription: Die Details dieser Errungenschaft werden erst nach der Freischaltung
+    angezeigt.
 Lifetime:
   Win: Vorfälle Gelöst
   Perfect: Vorfälle Perfekt Gelöst
@@ -569,6 +594,7 @@ Tooltip:
     Name: '{0}'
   Level:
     Description: Dein Fortschritt im derzeitigen Akt.
+    Name: Level {0}
   Stage:
     Description: Besiege den Boss am Ende eines Gebiets, um den Akt abzuschließen.
     Name: Akt {0}
@@ -667,6 +693,8 @@ System:
     Description: Nichts besonderes.
     Title: Kein Jadebox-Effekt
   EA: Early Access - Repräsentiert nicht die finale Qualität.
+  ReenterStation: Level Neustarten
+  DoremyLevel: Traumstufe {0}
 History:
   PlayedTime: 'Spielzeit: {0}'
   ReloadTimes: 'Neustart: {0}'
@@ -812,6 +840,8 @@ MessageDialog:
     Kein Spielerprofil ausgewählt'
   ReturnToMainMenu: Zum Hauptmenü zurückkehren?
   GameAbandonWarning: Möchtest du diesen Durchlauf aufgeben?
+  AlreadyInGameRun: Bereits in einem Durchlauf
+  CannotReenterStation: Level kann nicht betreten werden.
 BattleHint:
   Mana: "Drücke Rechtsklick auf eine Karte, um die Details anzeigen zu lassen. (Dies\
     \ funktioniert auch für viele andere Bereiche in diesem Spiel).\nKarten zu spielen\
