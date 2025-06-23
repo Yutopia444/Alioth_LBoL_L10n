@@ -404,7 +404,7 @@ LoveGirlDamageReduce:
 KoishiUnknown:
   Name: Unberechenbar
   Description: "Die Intentionen von {OwnerName} sind teilweise unklar.\nIntentionen\
-    \ werden durch weitere Stufen stärker versteckt."
+    \ werden durch weitere Stufen stärker verschleiert."
 ScarletDestiny:
   Name: Scharlachrotes Schicksal
   Description: "Nachdem {Limit} Karte{Limit:plural one='' other='n'} aktiviert wurden,\
@@ -532,9 +532,13 @@ CommonFireSe:
   Name: Gewöhnliche Macht
 DeathExplodeCount:
   Name: Rachekugel
+  Description: "Wenn {OwnerName} besiegt wird, verursache an {PlayerName} {Level}\
+    \ Schaden.\nNach {Count:plural one='% Zug' other='% Zügen'} sprengt sich {OwnerName}\
+    \ und verursacht die doppelte Menge an Schaden."
 DeathExplodeNotCount:
-  Description: "Wenn {OwnerName} besiegt wird, füge {PlayerName} {Level} Schaden zu.\n\
-    Füge die doppelte Menge an Schaden zu, wenn sich {OwnerName} stattdessen sprengt."
+  Description: "Wenn {OwnerName} besiegt wird, verursache an {PlayerName} {Level}\
+    \ Schaden.\nVerursache die doppelte Menge an Schaden, falls sich {OwnerName} stattdessen\
+    \ sprengt."
   Name: Rachekugel
 SuwakoHex:
   Description: Zu Beginn deines Zuges wird eine zufällige Karte in deiner Hand |Verhext|
@@ -550,10 +554,14 @@ Curiosity:
 MadokaBowSe:
   Description: Erhalte am Ende des Zuges {Level} zufällige Statuskarten, mische die
     Hälfte in deinen Ziehstapel und lege den Rest in deinen Ablagestapel.
+  Name: Lichtschießender Bogen
 QiannianShenqiSe:
   Name: Pyramidenförmiges Puzzle
   Description: "{PlayerName} kann nicht mehr als {Limit} Karten pro Zug ziehen.\n\
     |d:Verbleibende Karten: {Count}.|"
+  ExtraDescription: "Nachdem {PlayerName} in einem Zug {Limit} Karten gezogen hat,\
+    \ verliert sie für jede weitere gezogene Karte {Level} Leben.\nVerbleibende Karten:\
+    \ {Count}."
 JiangshenSe:
   Description: Jedes Mal, wenn während des Kampfes Karten hinzugefügt werden, |werte
     sie auf|.
@@ -585,6 +593,16 @@ DoubleLianhuadieSe:
   Name: Zweifarbiger Lotusschmetterling
 SuperExtraTurn:
   Name: Ende einer unvergänglichen Nacht
+  Description: "Am Ende deines |natürlichen Zuges| erhält {PlayerName} einen Extrazug.\n\
+    |Block| geht zu Beginn des Extrazuges nicht verloren und nur {Level} Karte{Level:plural\
+    \ one='' other='n'} können gespielt werden.\nStatus des Zuges: {StatusString}."
+  Brief: "Am Ende deines |natürlichen Zuges| erhält {PlayerName} einen Extrazug.\n\
+    |Block| geht zu Beginn des Extrazuges nicht verloren und nur {Level} Karte{Level:plural\
+    \ one='' other='n'} können gespielt werden."
+  ExtraDescription: "Am Ende deines |natürlichen Zuges| erhält {PlayerName} einen\
+    \ Extrazug.\n|Block| geht zu Beginn des Extrazuges nicht verloren und nur {Level}\
+    \ Karte{Level:plural one='' other='n'} können gespielt werden.\nStatus des Zuges:\
+    \ {Count} Karte{Count:plural one='' other='n'} verbleiben.\n"
 LockedOn:
   Name: Anvisieren
   Description: "{OwnerName} erleidet {Level} mehr Schaden durch Angriffe.\nVerliere\
@@ -832,6 +850,9 @@ ShendengSe:
     {Level} |Geschwächt|, |Fragil| oder |Verwundbar|.
 InfinityGemsSe:
   Name: Juwelenbesetzter Handschuh
+  Description: "Zu Beginn des Zuges von {OwnerName}, sende die Hälfte aller Karten\
+    \ auf dem Schlachtfeld ins |Exil|, unabhängig ihrer Position.\nVerbleibende Anwendungen:\
+    \ {Count}."
 SakuraWandSe:
   Name: Geflügelter Schlüssel
   Description: '{OwnerName} kann zwei Mal so häufig angreifen.'
@@ -876,6 +897,7 @@ ReimuSilenceSe:
   Name: '"Traumsiegel -Stille-"'
 SihunYuSe:
   Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde auf das Schlachtfeld.
+  Name: Anhänger mit boshafter Aura
 JunkoPurify:
   Name: Läuterndes Licht
   Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, |Läutere| {Level} Mana.
@@ -922,7 +944,7 @@ Cold:
     Jedes Mal, wenn erneut |Kälte| zugefügt wird, verliert {OwnerName} zusätzliches\
     \ Leben."
 LongLight:
-  Description: '{OwnerName} scheint wie ein Stern! Ihre Statuskarten sind mächtiger.'
+  Description: '{OwnerName} scheint wie ein Stern! Ihre Statuskarten sind verstärkt.'
 EnemyLockedOn:
   Name: Bevorstehendes Anvisieren
   Description: '{PlayerName} erhält {Level} |Anvisieren| nachdem alle Feinde ihren

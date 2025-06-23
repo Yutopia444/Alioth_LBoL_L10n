@@ -25,6 +25,7 @@ MarisaBlockB:
     wen wir um Hilfe bitten.
 SakuyaAttackW:
   Description: Verursache {Damage} Schaden.
+  Name: Fehlleitung
 SakuyaBlockW:
   Description: Erhalte {Block} |Block|.
 CirnoConsider:
@@ -153,6 +154,8 @@ Potion:
   FlavorText: WARNUNG! Tränke könnten zu jedem Zeitpunkt explodieren!
 UpgradePotion:
   Name: Tränke verfeinern
+  FlavorText: '"Erhitzen, destillieren, reagieren, katalysieren. Du solltest dich
+    ausreichend vorbereiten, wenn du in einem Danmaku-Kampf gewinnen möchtest!"'
 HuiyinMoreDraw:
   Description: Ziehe {Value1} Karte{Value1:plural one='' other='n'} mehr zu Beginn
     des Zuges.
@@ -178,6 +181,7 @@ FinalSpark:
     \ {Mana}."
   ExtraDescription1: "Verursache an allen Feinden {Damage} Schaden.\n|d:Überfluss:\
     \ Erhalte {Mana}.|"
+  FlavorText: '"Bei Danmaku kommt es nur auf die Feuerkraft an!"'
 KokoroDance:
   Name: Tanz der leeren Masken
 HuiyeSuperExtraTurn:
@@ -1582,6 +1586,9 @@ LeaveMoodDraw:
 HuoliQuankai:
   FlavorText: Aktiviere die geheimen Energiereserven!
   Name: Voller Einsatz
+  Description: "Wenn |Durchbruch| aktiv ist, {PlayerName}'s Angriffe verursachen die\
+    \ dreifache Menge an Schaden.\nErhalte {Value1} |Aufladung{Value1:plural one=''\
+    \ other='en'}|."
 MasterOfCollection:
   Name: Meistersammler
   Description: "Wähle bis zu {Value2:plural one='% Karte' other='% Karten'} auf deiner\
@@ -1665,9 +1672,11 @@ FindCollection:
   Description: "Wähle 1 von {Value1} zufälligen Karten aus und füge sie deiner Hand\
     \ hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.\n\nnon-{PlayerName}\
     \ cards to add to the hand."
+  FlavorText: Ein Muss für jedes unterirdische Abenteuer.
 WhiteLaser:
   Description: "Verursache {Damage} Schaden.\nErhalte {Shield} |Barriere|. Dieser\
     \ Effekt wird durch |Durchbruch| beeinflusst."
+  Name: Elektrischer Laser
 DebugRemoveHand:
   Description: 'Testkarte: Wähle eine beliebige Anzahl an Karten auf deiner Hand aus
     und entferne sie aus dem Kampf.'
@@ -1680,8 +1689,8 @@ KoishiDance:
   Description: "Erhalte {Block} |Block|.\nVerursache an allen Feinden {Damage} Schaden.\n\
     Führe einen |Folgeangriff| aus."
 SplitPotion:
-  Description: "|Unstable Potions| deal damage to an additional target.\nFüge {Value1}\
-    \ |Instabiler Trank| deinem Ziehstapel hinzu."
+  Description: "|Instabiler Trank| verursacht an einem zusätzlichen Feind Schaden.\n\
+    Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu."
 RedMogu:
   Name: Fliegenpilz
   Description: Füge {Value1} |Gift| zu.
@@ -2053,8 +2062,28 @@ RedGiantStar:
     \ deiner Hand hinzu."
   UpgradedDescription: "Verursache {Damage} Schaden.\n|Überladen {Value2}|: Füge |Regenbogen|\
     \ deiner Hand hinzu."
+  Name: Roter Riesenaufprall
 BlazingStar:
   Name: Brennender Stern
+  ExtraDescription1: "Erhalte {Block} |Block|. |Block Beibehalten|.\nBeende den Zug\
+    \ von {PlayerName} und erhalte einen Extrazug.\n|d:Zeitlimit| {Mana}.|"
+  Description: "Erhalte {Block} |Block|. |Block| geht zu Beginn deines nächsten Zuges\
+    \ nicht verloren.\nBeende den Zug von {PlayerName} und erhalte einen Extrazug.\n\
+    |Zeitlimit| {Mana}."
 MeilingRain:
   Description: "Verursache an allen Feinden {AttackTimes} Mal {Damage} Schaden.\n\
     |Für jedes bezahlte {Mana}|: Verursache an allen Feinden erneut Schaden."
+ChargingToMana:
+  Description: Verliere alle |Aufladungen|. Für jede verlorene |Aufladung|, ziehe
+    eine Karte und erhalte {Mana}.
+DiscardToCharging:
+  Description: "Werfe eine beliebige Anzahl an Karten ab.\nFür jede abgeworfene Karte,\
+    \ erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|."
+ManaJungle:
+  FlavorText: "\"Heureka! Ich hab's!\""
+  Description: '|Wenn {SelfName} die Hand betritt|: Füge {Value1} |Regenbogen| deiner
+    Hand hinzu, sende {SelfName} ins |Exil|.'
+JungleMaster:
+  Description: '|Zu Beginn des Kampfes|: Sende {SelfName} ins |Exil|, erhalte {Value1}
+    |Barriere|.'
+  Name: Waldbewohner
