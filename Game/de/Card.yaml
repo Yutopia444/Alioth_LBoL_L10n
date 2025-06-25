@@ -31,6 +31,9 @@ SakuyaBlockW:
 CirnoConsider:
   ExtraDescription1: Erhalte {Block} |Block|.
   ExtraDescription2: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
+  Description: "|Wähle aus|: Erhalte {Block} |Block| oder ziehe {Value1:plural one='%\
+    \ Karte' other='% Karten'}."
+  Name: Sorgfältige Überlegung
 KoishiAttackB:
   Description: Verursache {Damage} Schaden.
 KoishiDnaAttack:
@@ -60,8 +63,10 @@ Boundary:
   Name: Umgrenzung
 KoishiAttackG:
   Description: Verursache {Damage} Schaden.
+  Name: Doppelhelix
 KoishiBlockB:
   Description: Erhalte {Block} |Block|.
+  Name: Abschottung
 Misfortune:
   Name: Unglück
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben für jede 100 <sprite="Point"
@@ -86,6 +91,7 @@ AliceBlockB:
   Name: Alice B Abwehr
 KoishiBlockG:
   Description: Erhalte {Block} |Block|.
+  Name: Lebhafter Blumenkranz
 BlueZeroAttack:
   Description: Verursache {Damage} Schaden.
   UpgradedDescription: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| zu."
@@ -175,6 +181,7 @@ MeilingAbility:
   FlavorText: Ausnahmslos alle Eindringlinge werden zur Rechenschaft gezogen.
 MoonWorld:
   Name: Unbefleckte Welt
+  FlavorText: 'Reines Land: Der Drachenpalast'
 FinalSpark:
   Name: Finales Funkeln
   Description: "Verursache an allen Feinden {Damage} Schaden.\n|Überfluss|: Erhalte\
@@ -211,6 +218,8 @@ FreezeBullet:
 CirnoDraw:
   Name: Feenintellekt
   Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
+  UpgradedDescription: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nZu\
+    \ Beginn deines nächsten Zuges, ziehe {Value2:plural one='% Karte' other='% Karten'}."
 IceBlock:
   Name: Eisblock
 IceMatrix:
@@ -545,6 +554,8 @@ FrozenThrone:
   FlavorText: Now, we are one!
 KoishiKiss:
   Name: Luftkuss
+  Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| zu.\nFühre\
+    \ einen |Folgeangriff| aus."
 KoishiWake:
   FlavorText: '"Wo bin ich?"'
   Description: "|Leidenschaft|: Führe einen |Folgeangriff| aus.\n|Gelassenheit|: Erhalte\
@@ -587,6 +598,10 @@ KoishiDiscard:
   Name: Unbewusste Amnesie
 KoishiDrawTop:
   FlavorText: '"Ich weiß bereits wer der Übeltäter ist!"'
+  Name: Unüberlegtes Reden
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nWähle {Value2}\
+    \ Karte{Value2:plural one='' other='n'} auf deiner Hand. Sie {Value2:plural one='wird'\
+    \ other='werden'} |aufgewertet| und oben auf deinen Ziehstapel gelegt."
 KoishiTouying:
   Name: Funken der Liebe
   FlavorText: Ich habe eine gute Idee.
@@ -1097,6 +1112,7 @@ IceWing:
   Description: "Erhalte {Mana}.\nWähle 1 von 2 zufälligen, blauen Karten von deinem\
     \ Ziehstapel aus und füge sie deiner Hand hinzu, lege die andere Karten unten\
     \ in den Ziehstapel zurück."
+  Name: Eisflügel
 MeilingFriend:
   Name: Meiling, nachlässige Torwächterin
   ExtraDescription3: '{FriendU}Heile {Value1} Leben und erhalte {Value2} |Feuerkraft|.'
@@ -1106,6 +1122,7 @@ MeilingFriend:
 DayaojingTdm:
   Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
   Name: Daiyousei, Eiskugel Assistentin
+  FlavorText: '"Mach dich bereit! Ich werde Schneebälle auf dich werfen!"'
 YijiuDraw:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}."
@@ -1515,6 +1532,8 @@ ZeroK:
 GlacialSpike:
   FlavorText: Ein Modell im Maßstab 1:10000.
   Name: Kleiner Gletscher
+  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nFüge |Eisgeschoss|\
+    \ deiner Hand hinzu."
 ColdBreath:
   Description: "Verursache {Damage} Schaden. \nFalls das Ziel |Kälte| hat, erhalte\
     \ {Mana}."
@@ -1560,6 +1579,7 @@ TheHermit:
     ManaSprite\" name=\"0\">."
   Description: "|Vorhersehung| {Scry}.\nErhalte {Mana}.\n|Dissoziation|: {SelfName}\
     \ kostet <sprite=\"ManaSprite\" name=\"0\">."
+  Name: 'Tarot: Der Eremit'
 ToAllFollower:
   Description: "Verursache an allen Feinden {Damage} Schaden.\n|Dissoziation|: Verursache\
     \ den Schaden ein zusätzliches Mal."
@@ -1574,6 +1594,7 @@ PassionMemory:
 FlowerGone:
   Description: "Erhalte {Block} |Block|.\n|Gelassenheit|: Erhalte stattdessen {Shield}\
     \ |Barriere|."
+  Name: Verwelkende Träume
 DebugAddHandCards:
   Description: "Testkarte: Sende die gesamte Hand ins |Exil| und füge {Value1:plural\
     \ one='% Karte' other='% Karten'} deiner Hand hinzu."
@@ -1652,10 +1673,13 @@ ClownpieceFriend:
     hinzu.'
   ExtraDescription1: "{FriendA}Ziehe {Value1:plural one='% Karte' other='% Karten'}\
     \ und füge |Wahnsinn| deinem Ablagestapel hinzu."
+  Name: Clownpiece, Wahnsinnige Fee
 DefaultPeace:
   Description: "Erhalte {Block} |Block|.\nBetrete |Gelassenheit|."
+  Name: Selbstlosigkeit
 DefaultPassion:
   Description: "Verursache {Damage} Schaden.\nBetrete |Leidenschaft|."
+  Name: Romantische Rose
 CloseEye:
   Name: Verschlossenes Herz
   Description: "Erhalte {Shield} |Barriere|.\nFeindliche Intentionen können im nächsten\
@@ -1763,9 +1787,11 @@ LearnAstrology:
 PassionDefense:
   Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
     \ |Block|."
+  Name: Unauffällig
 KoishiFire:
   Description: "Erhalte {Value1} |Feuerkraft|.\n|Leidenschaft|: Erhalte zusätzlich\
     \ {Value2} |Feuerkraft|.\n|Gelassenheit|: Erhalte stattdessen {Value1} |Geist|."
+  Name: Unberechenbarkeit
 KoishiFlower:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFüge {Value1}\
     \ |Hochsommerblumen| deiner Hand hinzu.\n|Dissoziation|: Füge stattdessen {Value2}\
@@ -2087,3 +2113,121 @@ JungleMaster:
   Description: '|Zu Beginn des Kampfes|: Sende {SelfName} ins |Exil|, erhalte {Value1}
     |Barriere|.'
   Name: Waldbewohner
+CirnoInForest:
+  FlavorText: Feen des Waldes
+  Name: Offensichtliches Versteck
+  Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Ausweichen|."
+InspirationCard:
+  Description: '|Wenn {SelfName} die Hand betritt|: Erhalte {Mana}, erhalte {Value1}
+    |Inspiration| und sende {SelfName} ins |Exil|.'
+  Name: Heureka!
+  FlavorText: Heureka!
+Opt:
+  Name: Auf dünnem Eis
+  Description: "Schau die oberste Karte deines Ziehstapels an. Du kannst sie unten\
+    \ in den Ziehstapel legen.\nZiehe 1 Karte.\nErhalte {Mana}."
+  FlavorText: Stell dir vor, Cirno würde den Hourai-Juwelenzweig finden…
+MaidFriend:
+  Name: Kasumi, Dienstmädchen der Villa
+  FlavorText: Von allen Feen-Dienstmädchen in der Scharlachrote Teufelsvilla ist Kasumi
+    die gewissenhafteste.
+BlueRose:
+  Name: Kalte Rose
+  Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden."
+IceLaser:
+  FlavorText: Cirno gewann hierfür 1997 den Nobelpreis für Physik, als eine spezielle
+    Mitwirkende.
+  Name: Eisstrahl
+  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nSchau dir die unterste\
+    \ Karte in deinem Ziehstapel an. Falls es eine blaue Karte ist, wiederhole diesen\
+    \ Effekt an einem zufälligen Feind."
+FindInspiration:
+  Name: Geistesblitz
+  Description: Füge {Value1} |Heureka!| deinem Ziehstapel hinzu.
+  FlavorText: '"Kann es sein...? Der Übeltäter... bin ich?"'
+CoolBreeze:
+  Name: Erfrischende Brise
+  FlavorText: Während es sich für Cirno kühl und erfrischend anfühlt, werden ihre
+    Feinde womöglich anders darüber denken.
+SummerIce:
+  FlavorText: Dein Paket wird sich um einen Zug verspäten.
+  Description: Zu Beginn deines nächsten Zuges, erhalte {Mana}.
+  Name: Sommer Smoothie
+FrostGarden:
+  FlavorText: Kostenlose Klimaanlage.
+  UpgradedDescription: "Füge allen Feinden |Kälte| zu.\nWiederhole diesen Effekt zu\
+    \ Beginn deines nächsten Zuges.\nFalls sich ein beschworener |Partner| auf deiner\
+    \ Hand befindet, kostet {SelfName} {Mana}."
+  Description: "Füge allen Feinden |Kälte| zu.\nFalls sich ein beschworener |Partner|\
+    \ auf deiner Hand befindet, kostet {SelfName} {Mana}."
+CirnoFire:
+  Name: Entzündliches Eis
+  Description: "Erhalte {Value1} |Feuerkraft|.\nErhöhe die |Feuerkraft| von {SelfName}\
+    \ für jeden Feind mit |Kälte| um {Value2}."
+FreezeRiver:
+  Description: Füge die unterste Karte aus deinem Ziehstapel deiner Hand hinzu. Sie
+    |kostet temporär| {Mana}.
+YijiGraze:
+  Name: Ame-No-Uzume
+  Description: "Erhalte {Value1} |Ausweichen|.\nZiehe {Value2:plural one='% Karte'\
+    \ other='% Karten'}."
+YijiEarthSpike:
+  Description: Verursache an allen Feinden {Damage} Schaden und füge {Value1} |Geschwächt|
+    zu.
+HuiyeMana:
+  Name: Die Geschichte vom Bambussammler
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} zufälliges Mana;
+    erhöhe jeden Zug die Menge an Mana um {Value1}.
+FreezeToIce:
+  FlavorText: Ihr beide seid meine Flügel! (Buchstäblich)
+  UpgradedDescription: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'}
+    von deinem Ziehstapel, Ablagestapel oder deiner Hand ins |Exil|, füge die gleiche
+    Menge |Eisflügel| deinem Ziehstapel hinzu.
+  Description: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner
+    Hand ins |Exil|, füge die gleiche Menge |Eisflügel| deinem Ziehstapel hinzu.
+OptBottom:
+  Description: Lege {TargetName} unten in deinen Ziehstapel.
+  FlavorText: Es ist kein Unfall, dass es zu einem Unfall kam.
+ShiverArmor:
+  Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Eisrüstung|."
+LeaveMoodGraze:
+  Description: "Erhalte {Value1} |Ausweichen|.\nVerlasse deinen |Mentalen Zustand|."
+  Name: Verschleierung der Präsenz
+MorphDog:
+  Description: Erhalte {Value1} |Feuerkraft|.
+YijiFirepower:
+  Name: Atagos Feuer
+MorphMan:
+  Description: Erhalte {Value1} <sprite="Point" name="Power">.
+GrazeFollowAttack:
+  Description: "Erhalte {Value1} |Ausweichen|.\nFühre einen |Folgeangriff| aus."
+DefenseFollowAttack:
+  Name: Paranoia
+  Description: "Erhalte {Block} |Block|.\nFühre einen |Folgeangriff| aus."
+KoishiUltimateToken:
+  Name: Blühendes Leben
+  Description: "Verursache {Damage} Schaden und erhalte {TotalMana}.\n|Wenn Beibehalten|:\
+    \ Erhöhe den Schaden von {SelfName} um {Value1} und erhöhe die Menge an Mana um\
+    \ {Mana}."
+InspirationDefense:
+  Name: Moment der Inspiration
+  Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Inspiration|."
+YijiPurify:
+  Name: Izunome
+MorphFrog:
+  Description: Erhalte {Value1} maximales Leben.
+SnowconeTdm:
+  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nWhen used for the\
+    \ first time on an enemy, erhalte {Value1} <sprite=\"Point\" name=\"Gold\">."
+  FlavorText: '"Pfui…was ist das denn für ein Geschmack!? Das ist keine Blaubeere!"'
+LeaveMoodAttack:
+  Description: "Verursache {Damage} Schaden.\nVerlasse deinen |Mentalen Zustand|."
+Claustrophobia:
+  Description: "Erhalte {Block} |Block|.\n|Instinkt|: Erhalte {Shield} |Barriere|."
+  Name: Klaustrophobie
+MultiFollower:
+  Name: Tanz des Herzens
+BaseFollower:
+  Name: Instinktive Liebe
+BailianPower:
+  Description: Erhalte {Value1} |Feuerkraft|.
