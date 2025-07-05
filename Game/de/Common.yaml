@@ -53,6 +53,8 @@ Game:
   FollowCardOnly: Zeige Folgeaktionskarten
   UnlockLevel: Untersuchungsstufe
   KickerPrefer: Bonuskosten priorisieren
+  InTurn: Innerhalb des Zuges
+  OutTurn: Außerhalb des Zuges
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
   OncePerTurn: Kann nur einmal pro Zug verwendet werden.
@@ -160,6 +162,7 @@ MainMenu:
   Credits: Mitwirkende
   MusicRoom: Musikraum
   Changelog: Änderungsprotokoll
+  StartDate: Erstelldatum
 Setting:
   Language: Sprache
   AudioMaster: Gesamtlautstärke
@@ -196,7 +199,7 @@ Setting:
     PoolP: Bewege <sprite="ManaSprite" name="P">
     UseUs: Zauberkarte Benutzen
     SkipDialog: Dialog beschleunigen (Halten)
-    RebindMessage: Drücke eine Taste für "{0}", drücke ESC zum Verlassen.
+    RebindMessage: Drücke eine Taste für "{0}", drücke ESC zum Abbrechen.
   Key: Steuerung
   ResetDefault: Standard
   FullScreen: Vollbildschirm
@@ -295,6 +298,7 @@ Setting:
     \ Zieh- und Ablagestapel wird die oberste und unterste Karte des Stapels hervorgehoben.\n\
     \nKann auch durch das Drücken der Taste für das Anzeigen feindlicher Aktionen\
     \ angezeigt werden."
+  RightClickCancel: Abbrechen durch Rechtsklick
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -427,6 +431,9 @@ StartGame:
     \ Neustart geändert werden.\n\n<color=#dd7473>Ohohoho! Erhalte eine Kostprobe\
     \ meiner Macht!"
   ShowRandomResult: Enthülle Schicksal
+  SetJadeBox: Jadebox einstellen
+  NotReadyHint: "Dieser Charakter ist noch nicht bereit.\nBitte geduldige dich bis\
+    \ zur Veröffentlichung weiterer Updates."
 Museum:
   Hidden: Versteckt
   AllCards: Alle Karten
@@ -592,6 +599,7 @@ Tooltip:
       \ nicht| den finalen Akt betreten."
   Character:
     Name: '{0}'
+    Description: Das ist dein derzeitiger Charakter.
   Level:
     Description: Dein Fortschritt im derzeitigen Akt.
     Name: Level {0}
@@ -886,10 +894,10 @@ BattleHint:
 Debut:
   KaguyaChats:
   - Ich werde ebenfalls der Sache nachgehen.
-  - Ich lasse das Haus in deiner Obhut, Eirin.
+  - Ich überlasse das Haus in deiner Obhut, Eirin.
   - Vergiss nicht, bei Sonnenaufgang wieder hier zu sein~
   EirinChats:
-  - Hör auf herumzutrödeln, {0}.
+  - Hör auf hier herumzutrödeln, {0}.
   - Die Wirkung der Medizin wird nachlassen, wenn du nicht bald aufbrichst~
 ManaSelect:
   Title: Wähle einen Manatyp

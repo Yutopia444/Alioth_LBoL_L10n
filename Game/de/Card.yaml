@@ -50,6 +50,7 @@ AliceBlockU:
   Name: Defensive Magie
 SakuyaBlockU:
   Description: Erhalte {Block} |Block|.
+  Name: Vorahnung
 CirnoBlockU:
   Description: Erhalte {Block} |Block|.
   Name: Kristallschild
@@ -151,6 +152,7 @@ CirnoBlockG:
   FlavorText: Feen aus Hawaii haben ein Händchen für diese Tanzbewegung.
 SakuyaAttackU:
   Description: Verursache {Damage} Schaden.
+  Name: Pokerschuss
 ReimuBlockR:
   Description: Erhalte {Block} |Block|.
   Name: Kugelauslöschung
@@ -169,6 +171,8 @@ UpgradePotion:
   Name: Tränke verfeinern
   FlavorText: '"Erhitzen, destillieren, reagieren, katalysieren. Du solltest dich
     ausreichend vorbereiten, wenn du in einem Danmaku-Kampf gewinnen möchtest!"'
+  Description: "Füge {Value2} |Instabiler Trank| deinem Ziehstapel hinzu.\nErhöhe\
+    \ den verursachten Schaden durch |Instabiler Trank| um {Value1}."
 HuiyinMoreDraw:
   Description: Ziehe {Value1} Karte{Value1:plural one='' other='n'} mehr zu Beginn
     des Zuges.
@@ -274,6 +278,8 @@ TaijiLiangyi:
   Description: "Füge eine |Yin-Yang Kugel| deiner Hand hinzu.\nZu Beginn deines Zuges,\
     \ wenn sich keine |Yin-Yang Kugel| auf deiner Hand befindet, füge eine |Yin-Yang\
     \ Kugel| deiner Hand hinzu."
+  FlavorText: Diese Technik hat Reimu entwickelt, nachdem sie 'Was man mit einer unendlich
+    vollen Cola-Flasche machen könnte' gelesen hat.
 BoliPhantom:
   Name: Hakurei Illusion
   FlavorText: '"Transformations-Jutsu: Igel"'
@@ -382,6 +388,8 @@ BurstDraw:
   Name: Blitzduel
   Description: Jedes Mal, wenn {PlayerName} |Durchbruch| betritt, ziehe {Value1:plural
     one='% Karte' other='% Karten'}.
+  FlavorText: Diskutieren? Verhandeln? Umgehen? Wieso klären wir die Angelegenheit
+    nicht mit Danmaku?
 CirnoFreeze:
   Description: "Solange sich {SelfName} auf deiner Hand befindet, kosten alle Karten\
     \ {Mana} mehr.\nNachdem {FreezeTimes} {FreezeTimes:plural one='Karte gespielt\
@@ -444,10 +452,14 @@ BoliDajiejie:
   Name: Die Große Hakurei Barriere
   Description: Für den Rest des Kampfes, konvertiere {PlayerName}s |Block| in dieselbe
     Menge |Barriere| um.
+  FlavorText: Alle flüchtigen Fantasien währen für eine Ewigkeit.
 DanceAroundLake:
   Name: Tanz am Seeufer
   Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, ziehe {Value1}
     Karte{Value1:plural one='' other='n'}.
+  FlavorText: Als Frühaufsteher war ich immer lange in ihrem kalten und gnadenlosen
+    Tanz versunken. Der Regen ließ nie lange auf sich warten und ehe ich mich versah,
+    war das Schreinmädchen verschwunden.
 Nightmare:
   FlavorText: Ich kann mich an keine Details mehr erinnern, nachdem ich aufgewacht
     bin.
@@ -484,6 +496,8 @@ ScryBlock:
   Name: Vorsatz
   Description: Jedes Mal, wenn {PlayerName} eine |Vorhersehung| trifft, erhalte {Value1}
     |Block|.
+  FlavorText: '"Ich gehe nach dem Abendessen immer eine Runde spazieren, um zu schauen,
+    ob man bei irgendjemanden einbrechen... ich meine vorbeischauen kann."'
 PrismriverAll:
   Name: Prismatisches Konzert
   Description: "Erhalte {Mana}.\nKonvertiere das gesamte Mana von {PlayerName} would\
@@ -692,7 +706,9 @@ Changzhizhen:
 ReimuLucky:
   Description: "Erhalte {Value1} |Amulett|.\nErhalte {Value2} <sprite=\"Point\" name=\"\
     Gold\">."
-  FlavorText: Es gibt immer jemanden, der versucht in einer Endlosschleife zu spielen.
+  FlavorText: Es gibt immer jemanden, der versucht 'Glücksmoment' in einer Endlosschleife
+    zu spielen.
+  Name: Glücksmoment
 ShensheRichang:
   Name: Ausschnitt aus dem Alltag
   Description: "Heile {Value1} Leben.\nKonvertiere {PlayerName}s |Block| in |Barriere|\
@@ -717,6 +733,8 @@ QinggeManwu:
     \ auf| bis zum Ende des Kampfes.\nErhalte {Value2} |Barriere| für jede |aufgewertete|\
     \ Karte, die durch diesen Effekt gezogen wurde."
   Name: Walzer der Maid
+  FlavorText: Reimu tappt mit kleinen Schritten voran, ihre Strümpfe fangen dabei
+    Staub.
 ReimuDrink:
   Description: Erhalte {Value1} |Göttliche Gunst|.
   Name: Sake Darbringung
@@ -731,6 +749,8 @@ ChuanyueJiejie:
   Name: Grenze überqueren
   Description: "Erhalte {Shield} |Barriere|.\nFüge eine Karte aus dem |Exil| deiner\
     \ Hand hinzu."
+  FlavorText: "\"Habe ich 'Glücksmoment' etwa noch nicht gespielt? Dann werde ich\
+    \ mir das lieber aufsparen.\""
 HuanxiangTouying:
   Description: "Erhalte {Mana}.\nWähle 1 von {Value1} zufälligen Karten aus und füge\
     \ sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch|.\nEs wird jeweils eine\
@@ -744,8 +764,8 @@ OutInGap:
   Description: Wähle 1 von {Value1} |p:vollkommen zufälligen| Karten aus und füge
     sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
   Name: Brechen der Grenzen
-  FlavorText: Yukari Yakumo hat es verboten, "Brechen der Grenzen" durch "Brechen
-    der Grenzen" zu erschaffen.
+  FlavorText: Yukari Yakumo hat es verboten, 'Brechen der Grenzen' durch 'Brechen
+    der Grenzen' zu erschaffen.
   DetailText: "Diese |e:alternativen Karten| ignorieren Mana-, Farb-, und Charaktereinschränkungen.\n\
     {SelfName} kann nicht durch diesen Effekt erzeugt werden."
 ReimuInstant:
@@ -753,10 +773,16 @@ ReimuInstant:
     \ einen Extrazug.\n|Zeitlimit| {Mana}."
   ExtraDescription1: "Verursache {Damage} Schaden.\nBeende den Zug von {PlayerName}.\
     \ Erhalte einen Extrazug.\n|d:Zeitlimit {Mana}.|"
+  Name: '"Traumsiegel -Blink-"'
+  FlavorText: "Kundenrezension: \"Nach 'Oberhalb des Reiches' die meistgesuchteste\
+    \ Karte.\""
 DoubleLianhuadie:
   Description: Jedes Mal, wenn {PlayerName} |Block| oder |Barriere| erhält, verursache
     an einem zufälligen Feind {Value1} Schaden.
   Name: Zweifarbiger Lotusschmetterling
+  FlavorText: Ein Schmetterlingspärchen tritt zwischen den Blumen hervor und ruhen
+    sich am Schatten des Fensters aus. Ich beobachte sie bereits eine ganze Weile
+    allein.
 KuosanJiejie:
   FlavorText: Ich brauche jede Menge Philosophen-Mana und ich brauche es jetzt!
   Name: Grenzerweiterung
@@ -779,6 +805,7 @@ QiqingYishi:
   Name: Sonnenlichtgebet
   Description: Füge |Regenbogen| deiner Hand hinzu.
   UpgradedDescription: Füge |Regenbogen| und |Lichtstrahlen| deiner Hand hinzu.
+  FlavorText: Der einzige Angriff, den man gegen einen Karakasa-Obake benötigt.
 ReimuHuashan:
   Description: "Zu Beginn des nächsten Kampfes, sende {SelfName} ins |Exil| und erhalte\
     \ {Value1} |Feuerkraft|.\nDer Effekt von {SelfName} kann nur einmal pro Kampf\
@@ -826,6 +853,7 @@ HuijuQiankun:
   UpgradedDescription: "Füge eine |Yin-Yang Kugel| deiner Hand hinzu.\nSende alle\
     \ anderen Karten auf deiner Hand ins |Exil| und erhöhe für jede gesendete Karte\
     \ den Schaden von |Yin-Yang Kugel| um {Value1} und die |Barriere| um {Value2}."
+  Name: Yin-Yang Zusammenfluss
 JingshenYishi:
   Description: "Erhalte {Block} |Block|.\nSende eine Karte von deiner Hand ins |Exil|."
   Name: Läuterungsritual
@@ -853,6 +881,7 @@ YinyangBaoyu:
 ReimuWeiyan:
   Name: Wahre Erhabenheit
   Description: Füge allen Feinden {Value1} |Geschwächt| zu.
+  FlavorText: In der raubkopierten Version trinkt Reimu schwarzen statt grünen Tee.
 ZhujiThreeGod:
   Name: Die drei Götter von Sumiyoshi
   Description: "Ziehe {Value1} Karte{Value1:plural one='' other='n'}.\nErhalte {Value2}\
@@ -862,6 +891,7 @@ ZhujiThreeGod:
 OverJingjie:
   Description: Wähle 1 von {Value1} zufälligen Angriffskarten aus und füge sie deiner
     Hand hinzu. Sie |kostet temporär| {Mana}.
+  Name: Oberhalb des Reiches
 ReimuHeavyAttack:
   Description: "Verursache {Damage} Schaden.\n|Feuerkraft| verstärkt den Schaden von\
     \ {SelfName} {Value1} Mal so viel."
@@ -1086,6 +1116,8 @@ Jiangshen:
   Name: Spirituelle Meditation
   Description: "Bis zum Ende des Kampfes werden Karten, die neu hinzugefügt werden,\
     \ |aufgewertet|.\nFüge {Value1} |Yin-Yang Kugel| deiner Hand hinzu."
+  FlavorText: "\"Ich bete zu den Göttern, im nächsten Zug muss ich 'Brechen der Grenzen'\
+    \ ziehen...\""
 AutoQumobang:
   Name: Furioses Gohei
   FlavorText: '"Automatisierte Gohei ersetzen die Arbeit der Schreinmädchen." — Wirtschaftsteil
@@ -1124,6 +1156,7 @@ ShengtianKick:
 SenluoJiejie:
   Description: "Erhalte {Shield} |Barriere|.\nZu Beginn deines Zuges verliert {PlayerName}\
     \ all ihre |Barriere| und fügt allen Feinden dieselbe Menge an Schaden zu."
+  Name: Zusammenführung der Grenzen
 EvilTuiZhi:
   FlavorText: Einer der lustigen Dinge, die man in Gensokyo machen kann.
   Name: Auslöschung des Bösen
@@ -1803,6 +1836,8 @@ KoishiDance:
 SplitPotion:
   Description: "|Instabiler Trank| verursacht an einem zusätzlichen Feind Schaden.\n\
     Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu."
+  FlavorText: Eine schnelle und einfache Methode, um bei der Herstellung von Tränken
+    zu sparen.
 RedMogu:
   Name: Fliegenpilz
   Description: Füge {Value1} |Gift| zu.
@@ -1858,6 +1893,7 @@ PerfectCrime:
     und bis zu {Value1} |Feuerkraft| und |Geist|.
 BlueMogu:
   Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
+  Name: Blauer Austernpilz
 TheChariot:
   Name: 'Tarot: Der Wagen'
   Description: "|Vorhersehung| {Scry}.\nZu Beginn deines nächsten Zuges, betrete |Leidenschaft|\
@@ -1875,6 +1911,7 @@ LearnAstrology:
   Name: Astrologie studieren
   Description: Zu Beginn deines Zuges, falls sich |Astrologie| nicht auf deiner Hand
     befindet, füge |Astrologie| deiner Hand hinzu.
+  FlavorText: '"Wieso möchte sie nur in den Sternenhimmel starren statt mich?"'
 PassionDefense:
   Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
     \ |Block|."
@@ -1947,6 +1984,7 @@ Dejavu:
   Description: "Lege bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner\
     \ Hand oben auf deinen Ziehstapel.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nErhalte {Mana}."
+  FlavorText: Es ist wieder diese schwarze Katze.
 SakuyaShop:
   Description: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='% Karten'}."
   Name: Beschaffung von Materialien
@@ -1970,6 +2008,7 @@ DefenseDraw:
     \ des Kampfes {Mana} weniger."
 SakuyaInvestigate:
   Description: "Füge allen Feinden {Value1} |Anvisieren| zu.\nFalls d."
+  Name: Zeit anhaltender Detektiv
 LunaClock:
   Name: Monduhr
   Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Die Angriffe
@@ -2019,11 +2058,14 @@ SakuyaSleep:
   Description: "Füge |Lichtstrahlen| deiner Hand hinzu.\nBeende den Zug von {PlayerName}."
   Name: Kurze Pause
   UpgradedDescription: Füge |Lichtstrahlen| deiner Hand hinzu.
+  FlavorText: Die beste Anwendung des Zeitstopps.
 Lijian:
   Name: Anblick einer fernen Klinge
   Description: "Verursache {Damage} Schaden.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\n|Wenn {SelfName} die Hand betritt|: {SelfName} kostet für den Rest\
     \ des Kampfes {Mana} weniger."
+  FlavorText: Das nächste Mal, an dem du dieses Wurfmesser siehst, wird das dein Ende
+    sein.
 SakuyaGraze:
   Description: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Ausweichen|.\nWhen\
     \ shuffling, return {SelfName} from the discard pile to the hand."
@@ -2033,6 +2075,7 @@ CleanRoom:
     \ Karten'}.\nBis zum Ende des Kampfes {Value2:plural one='wird % zufällige Karte'\
     \ other='werden % zufällige Karten'} auf deiner Hand |aufgewertet|. Falls ein\
     \ |Wurfmesser| abgeworfen wurde, werden stattdessen alle Karten auf der Hand |aufgewertet|."
+  Name: Zimmer aufräumen
 MihuanJack:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.
 WinterWarm:
@@ -2045,6 +2088,7 @@ AsteroidBelt:
   Name: Asteroidengürtel
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nIf the last card played\
     \ this combat was red, erhalte {Value2} |Aufladung{Value2:plural one='' other='en'}|."
+  FlavorText: Mini-Hakkero in Benutzung. Bitte nicht direkt in den Strahl schauen.
 MarisaSteal:
   Name: '"Ausleihen" von Materialien'
   Description: "Füge {Value1} |Regenbogen| deiner Hand hinzu.\n|Überziehen| {Value2}."
@@ -2059,6 +2103,7 @@ DropBook:
   FlavorText: '"Ich habe kein Interesse an traditioneller Magie, bitte kommt nicht
     wieder!"'
   Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Astrologie| deiner Hand hinzu."
+  Name: Orthodoxe Rebellion
 DarkSatellite:
   Description: "Erhalte {Block} |Block|.\nFalls die l, draw {Value1:plural one='%\
     \ card' other='% cards'}."
@@ -2079,6 +2124,8 @@ PotionJungle:
   Description: Am Ende deines Zuges, füge {Value1} |Instabiler Trank| deinem Ablagestapel
     hinzu.
   Name: Fluoreszierender Wald
+  FlavorText: Die Verwendung explosiver Tränke nährt den Boden für die Rohmaterialien
+    und schließt somit den Kreis der magischen Energie.
 AccuracyLaser:
   Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Wenn Beibehalten|: {SelfName}\
     \ kostet bis zum Ende des Kampfes {Mana} weniger."
@@ -2097,10 +2144,19 @@ CollectionDefense:
     ({Shield})
   UpgradedNonbattleDescription: Erhalte |Barriere| in Höhe der Karten in deinem Ziehstapel.
   Description: Erhalte |Block| in Höhe der Karten in deinem Ziehstapel. ({Block})
+  FlavorText: Wenn du anderen Leuten viel schuldest, können sie dir nichts antun.
+    ‐ <Schnorrer Einmaleins>
 MarisaHoldCard:
   Name: Trennungsschmerz
+  Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} auf deiner\
+    \ Hand. Sie {Value1:plural one='erhält' other='erhalten'} |Temporäres Beibehalten|.\n\
+    Erhalte {Block} |Block|."
+  FlavorText: '"Hey, wirf das nicht einfach weg! Es könnte irgendwann einmal nützlich
+    sein."'
 FireUpBagualu:
   Name: Den Ofen anzünden
+  Description: "Erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|.\nErhalte\
+    \ {Value2} |Feuerkraft|. Dieser Effekt wird durch |Durchbruch| beeinflusst."
 RunAway:
   UpgradedDescription: "Werfe deine gesamte Hand ab. Die abgeworfenen Karten |kosten\
     \ temporär| {Mana} weniger.\nErhalte {Value1} |Ausweichen|.\nZiehe {Value2:plural\
@@ -2112,6 +2168,7 @@ MixAndShake:
   Description: "Verursache an allen Feinden {Damage} Schaden.\n{SelfName} verursacht\
     \ {Value1} für jeden |Unstable Potion| in the draw and discard piles."
   FlavorText: Vor dem Öffnen nicht schütteln.
+  Name: Feuerwerkstrank
 EventHorizon:
   Description: "Betrete |Durchbruch|.\nZu Beginn deines nächsten Zuges verliert {PlayerName}\
     \ das Spiel."
@@ -2140,6 +2197,7 @@ ShibaiChanwu:
   Description: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\nFüge {Value2}\
     \ |Schatten| deiner Hand hinzu."
   FlavorText: Selbst die Zubereitung von Desserts kann riskant sein.
+  Name: Fehlgeschlagenes Produkt
 WizardStudy:
   Name: Magiekonvertierer
   Description: "Erhalte {Value1} |Feuerkraft| und |Geist|.\n|Manafrost| {Mana}."
@@ -2159,6 +2217,7 @@ SatelliteIllusion:
 ReadyForBurst:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Aufladung{Value1:plural\
     \ one='' other='en'}|."
+  Name: Bereit für den Durchbruch
 StarSky:
   Name: Heller Sternenhimmel
   Description: Erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|.
@@ -2167,9 +2226,11 @@ StarShower:
     \ one='' other='en'}|, falls {PlayerName} keine |Aufladungen| hat, erhalte stattdessen\
     \ {Value2} |Aufladung{Value2:plural one='' other='en'}|."
   Name: Im Sternenstaub baden
+  FlavorText: '"Nun ja, das Leben ist kein Ponyhof."'
 ShootMoon:
   Description: "Verursache {AttackTimes} Mal {Damage} Schaden.\n|Überladen {Value2}|:\
     \ Erhalte {Value1} |Ausweichen|."
+  Name: Schieß auf den Mond
 SuperNova:
   Description: "Erhalte {Mana}.\nFüge {Value1} zufällige Angriffskarte{Value1:plural\
     \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu."
@@ -2200,10 +2261,13 @@ ChargingToMana:
 DiscardToCharging:
   Description: "Werfe eine beliebige Anzahl an Karten ab.\nFür jede abgeworfene Karte,\
     \ erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|."
+  FlavorText: Dieser Mini-Hakkero kann wirklich alles niederbrennen.
+  Name: Auftanken
 ManaJungle:
   FlavorText: "\"Heureka! Ich hab's!\""
   Description: '|Wenn {SelfName} die Hand betritt|: Füge {Value1} |Regenbogen| deiner
     Hand hinzu, sende {SelfName} ins |Exil|.'
+  Name: Abenteuer im Wald
 JungleMaster:
   Description: '|Zu Beginn des Kampfes|: Sende {SelfName} ins |Exil|, erhalte {Value1}
     |Barriere|.'
@@ -2588,3 +2652,22 @@ FutoLight:
 QingeUpgrade:
   Description: "Verursache {Damage} Schaden.\n|Auslöschung|: Eine zufällige Karte\
     \ wird dauerhaft |aufgewertet|."
+ExilePotion:
+  Description: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner
+    Hand ins |Exil|. Füge die gleiche Menge an |Instabiler Trank| deinem Ablagestapel
+    hinzu.
+  Name: Abfallverwertung
+  UpgradedDescription: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'}
+    von deinem Ziehstapel, Ablagestapel oder deiner Hand ins |Exil|. Füge die gleiche
+    Menge an |Instabiler Trank| deinem Ablagestapel hinzu.
+RainbowStar:
+  Name: Regenbogen-Sternenexplosion
+  Description: "Verursache {Damage} Schaden.\n|Pro benutztes <sprite=\"ManaSprite\"\
+    \ name=\"1\">|: verursache {Value1} zusätzlichen Schaden.\n|Pro benutztes <sprite=\"\
+    ManaSprite\" name=\"P\">|: verursache {Value2} zusätzlichen Schaden."
+KnifeBounce:
+  Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Wurfmesser| deiner Hand\
+    \ hinzu."
+  Name: Abprallende Messer
+  FlavorText: Sakuya scheint eine Menge Wurfmesser zu benutzen. but she actually picks
+    them up after stopping time.
