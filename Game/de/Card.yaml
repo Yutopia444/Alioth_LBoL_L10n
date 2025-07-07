@@ -51,9 +51,12 @@ AliceBlockU:
 SakuyaBlockU:
   Description: Erhalte {Block} |Block|.
   Name: Vorahnung
+  FlavorText: Geradlinige Bewegungen sind gleichbedeutend mit Stillstand.
 CirnoBlockU:
   Description: Erhalte {Block} |Block|.
   Name: Kristallschild
+  FlavorText: Englisches Rindfleisch, das bereits für viele Jahre tiefgefroren wurde,
+    eignet sich ebenfalls als Waffe zur Selbstverteidigung.
 GroupOfKnife:
   Description: Verursache {Damage} Schaden.
 Shoot:
@@ -159,6 +162,8 @@ ReimuBlockR:
   FlavorText: Der Retter kann Kugeln mit der bloßen Hand stoppen.
 CallFriends:
   Name: Freunde Rufen
+  Description: Wähle 1 von {Value1} |Partner| aus und füge sie deiner Hand hinzu.
+    Sie ist bereits beschworen.
 IceBarrier:
   Name: Eisbarriere
   Description: Erhalte {Value1} |Eisrüstung|.
@@ -221,18 +226,26 @@ BrokenTimeline:
   Name: Kaputte Zeitlinie
   Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Zu Beginn
     dieses Extrazuges, erhalte kein Mana von der Manabasis.
+  FlavorText: Diese Zeitlinie ist nicht mehr zu retten, auf zur Nächsten.
 LoveLetter:
   Name: Liebesbrief
 StopTime:
   Name: Eingefrorene Zeit
 TimeMagic:
   Name: Zeitmagie
+  Description: "Wähle {Value1} von {Value2} |p:vollkommen zufälligen|, nicht-gewöhnlichen\
+    \ Karten aus und füge sie deiner Hand hinzu. Sie {Value1:plural one='hat' other='haben'}\
+    \ |Exil| und |Ätherisch|, koste{Level:plural one='t' other='n'} {Mana} weniger\
+    \ und die Manakosten können mit jeder Farbe gezahlt werden.\nWiederhole diesen\
+    \ Effekt zu Beginn deines Extrazuges."
 EvilMaid:
   Name: Dienstmädchen des Teufels
   Description: "Verliere {Value1} Leben.\nWährend deines nächsten Zuges verursachen\
     \ {PlayerName}'s next turn, all attacks deal double damage."
 AutoKnife:
   Name: Verhextes Silbermesser
+  Description: "Bis zum Ende des Kampfes erhalten alle |Wurfmesser| |Automatisches\
+    \ Exil|.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
 FreezeBullet:
   Name: Frostschuss
   FlavorText: Cirno ist unsere Erlöserin!
@@ -243,8 +256,13 @@ CirnoDraw:
     \ Beginn deines nächsten Zuges, ziehe {Value2:plural one='% Karte' other='% Karten'}."
 IceBlock:
   Name: Eisblock
+  Description: "{PlayerName} kann in diesem Zug kein Leben verlieren.\nVerliere all\
+    \ dein |Block|, |Barriere| und |Ausweichen|.\nAlle Karten auf deiner Hand erhalten\
+    \ |Temporäres Beibehalten|. Beende den Zug von {PlayerName}."
 IceMatrix:
   Name: Gefrorene Matrix
+  Description: "Jedes Mal, wenn ein Feind |Kälte| erleidet, erhalte {Value1} |Eisrüstung|.\n\
+    Erhalte {Value2} |Eisrüstung|."
 DangerousMagician:
   Name: Gefährliche Illusionistin
   Description: "Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, erhalte {Value1}\
@@ -515,6 +533,8 @@ SanaeRestart:
     Erhalte {Mana}."
 SakuyaKiller:
   Name: Mörder bei Nacht und Nebel
+  Description: "Am Ende deines Zuges, füge {Value1} |Wurfmesser| deinem Ziehstapel\
+    \ hinzu.\nAktiviere diesen Effekt auch, nachdem ein Feind besiegt wurde."
 GreenLotus:
   Description: Erhalte {Mana}.
   Name: Lotus im Mondlicht
@@ -554,6 +574,8 @@ SakuraBlade:
     \ zu.\nErhalte {Value1} |Ausweichen|."
 FrozenOrb:
   Name: Gefrorene Kugel
+  Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
+    Füge {Value1} |Eisgeschoss| deiner Hand hinzu."
 KoishiGainColorless:
   Description: Erhalte {Mana}.
   UpgradedDescription: Erhalte {Mana}.
@@ -602,6 +624,9 @@ Yueguang:
 FrozenThrone:
   Name: Gefrorener Thron
   FlavorText: Now, we are one!
+  Description: "Füge |Eisgeschoss| deiner Hand hinzu.\nZu Beginn deines Zuges, falls\
+    \ sich |Eisgeschoss| nicht auf deiner Hand befindet, füge |Eisgeschoss| deiner\
+    \ Hand hinzu."
 KoishiKiss:
   Name: Luftkuss
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| zu.\nFühre\
@@ -922,6 +947,11 @@ SmallPanding:
   Name: Kleine Hitbox
 SakuyaDio:
   Name: Du bist fällig!
+  Description: "Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge {Value1} |Anvisieren|\
+    \ zu.\nBeende den Zug von {PlayerName} und erhalte einen Extrazug.\nZiehe keine\
+    \ Karten zu Beginn dieses Extrazuges, füge stattdessen {Value2} |Wurfmesser| deiner\
+    \ Hand hinzu."
+  FlavorText: Tsugi wa Kisama da!
 ClockCorpse:
   Name: Überreste einer Uhr
 GainKnife:
@@ -931,11 +961,17 @@ GainKnife:
   Description: Zu Beginn deines Zuges, füge {Value1} |Wurfmesser| deiner Hand hinzu.
 MoreFriends:
   Name: Geselliger Schmetterling
+  Description: "Zu Beginn deines Zuges, füge {Value1} zufälligen |Partner| deiner\
+    \ Hand hinzu.\nSie {Value1:plural one='hat' other='haben'} |Ätherisch| und {Value1:plural\
+    \ one='verliert' other='verlieren'} |Ätherisch|, nachdem sie beschworen wurde{Value1:plural\
+    \ one='' other='n'}."
 LunaticPassion:
   Name: Wahnsinnige Liebe
   FlavorText: '"Tatsächlich folge ich dir bereits seit dem letzten Durchlauf!"'
 DeepFreeze:
   Name: Eiszapfentanz
+  Description: Jedes Mal, wenn eine blaue Karte gespielt wird, erhält {PlayerName}
+    {Value1} |Temporäre Feuerkraft|.
 GatherFairy:
   Name: Feenversammlung
 SanaeMiracle:
@@ -948,6 +984,10 @@ Anatta:
     \ {Mana}.\nBetrete |Gelassenheit|."
 FriendDraw:
   Name: Gartenversammlung
+  Description: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit|\
+    \ eines Partners aktiviert wird, ziehe {Value1:plural one='% Karte' other='% Karten'}.\n\
+    Jedes Mal, wenn die |u:Ultimative Fähigkeit| eines Partners aktiviert wird, erhalte\
+    \ {Value1} zufälliges Mana."
 FairyWrath:
   Name: Zorn der Natur
   Description: "Verursache an allen Feinden {Damage} Schaden.\nFalls sich eine beschworene\
@@ -966,6 +1006,7 @@ LarvaFriend:
 FairyTree:
   Description: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen
     wird, erhalte {Value1} |Block|.
+  Name: Residenz der Feen
 LilyFriend:
   ExtraDescription1: '{FriendA}Erhalte {ActiveMana}.'
   ExtraDescription3: '{FriendU}Heile {Heal} Leben.'
@@ -974,6 +1015,8 @@ LilyFriend:
     \ Schaden.\n{FriendP}Erhalte {TurnMana}."
 FruitShake:
   FlavorText: Tropische Früchte sind kalt und lecker!
+  Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
+    Falls in diesem Zug ein |Partner| beschworen wurde, kostet {SelfName} {Mana}."
 TiangouOrder:
   Name: Erlass des großen Tengus
   Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} Angriffsschaden\
@@ -1200,6 +1243,8 @@ IceLance:
   Name: Eislanze
   FlavorText: Gerüchten zufolge springt Cirno immer auf und ab, wenn sie diese Zauberkarte
     verwendet.
+  Description: "Verursache {Damage} Schaden.\nFalls das Ziel |Kälte| hat, verursache\
+    \ stattdessen {Value1} Mal so viel Schaden."
 UnlimitedTime:
   Name: Perfekter Zeitstopp
   Description: Wähle 1 von {Value1} Karten mit |Zeitlimit| aus und füge sie deiner
@@ -1666,6 +1711,7 @@ ColdSnap:
     \ % blauen Karten'} von deinem Ziehstapel deiner Hand hinzu.\nErhalte für jede\
     \ gezogene Karte {Value2} |Barriere|.\n(Verbleibende blaue Karten im Ziehstapel:\
     \ {BlueCount})"
+  Name: Schnelle Abkühlung
 BlackEpiphany:
   Description: "Betrete |Dissoziation|.\nNur {Value1} {Value1:plural one='Karte kann'\
     \ other='Karten können'} im nächsten Zug von {PlayerName} gespielt werden."
@@ -1931,12 +1977,20 @@ BackToFuture:
   Name: Zurück in die Zukunft
 PerfectServant:
   Name: Perfekte Dienerin
+  Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\">|: Zu Beginn deines nächsten Zuges, senke |temporarily costs| 1 random\
+    \ mana less.\n|Pro benutztes <sprite=\"ManaSprite\" name=\"U\">|: Zu Beginn deines\
+    \ nächsten Zuges, erhalte {Mana} und ziehe 1 zusätzliche Karte."
 SakuyaUsage:
   Name: Falsche Verwendung von Sakuya
   FlavorText: Halte einfach die Zeit an und bewege jeden die Treppen runter.
   Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nNachdem {SelfName}\
     \ {Value2} Mal gespielt wurde, entferne sie aus dem Kampf und füge |Korrekte Verwendung\
     \ von Sakuya| oben auf deinen Ziehstapel hinzu."
+  ExtraDescription1: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nNachdem\
+    \ {SelfName} {Value2} Mal gespielt wurde, entferne sie aus dem Kampf und füge\
+    \ |Korrekte Verwendung von Sakuya| oben auf deinen Ziehstapel hinzu.\n(Anzahl\
+    \ gespielter Karten: {PlayCount})"
 SakuyaTea:
   ExtraDescription1: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n|d:Debüt:\
     \ Heile {Value2} Leben. {SelfName} kostet bis zum Ende des Kampfes {Mana} weniger.|"
@@ -1954,6 +2008,8 @@ SilverBullet:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nErhalte {Block} |Block|.\
     \ Erhalte {Value1} zusätzlich |Block| für jedes |Wurfmesser| in deinem Ziehstapel,\
     \ Ablagestapel und auf deiner Hand. (Anzahl |Wurfmesser|: {KnifeCount})"
+  FlavorText: Man kann damit schöne Muster auf die Kleidung der Feinde stricken, oder
+    sogar auf die Feinde selbst.
 TimeAuraAttack:
   Name: Räumliche Illusion
   Description: "Verursache {Damage} Schaden.\nErhalte {Value1} |Zeitimpuls|."
@@ -1967,6 +2023,8 @@ SakuyaGoOut:
     \ one='% Karte' other='% Karten'} ab.\nErhalte {Mana}."
 VampireHunter:
   Name: Vampirjägerin
+  Description: "Verursache {Damage} Schaden.\nFalls das Ziel |Vampir| hat, verursache\
+    \ stattdessen {Value1} Mal so viel Schaden."
 DropToKnife:
   Name: Festung aus Silber
   Description: "Werfe {Value1:plural one='% Karte' other='% Karten'} ab.\nFüge die\
@@ -1991,6 +2049,7 @@ SakuyaShop:
 PrepareParty:
   Description: "Lege bis zu 1 Karte von deiner Hand oben auf deinen Ziehstapel.\n\
     Erhalte {Block} |Block|."
+  Name: Vorbereitung des Banketts
 SakuyaSpeedup:
   Name: Zeit beschleunigen
 KnifeAim:
@@ -2017,6 +2076,7 @@ SpecialClock:
   FlavorText: 'Benötigte Zeit, um das Wohnzimmer aufzuräumen: 0.4 Sekunden'
   Description: Zu Beginn deines Zuges, werfe bis zu 1 Karte ab und ziehe die gleiche
     Menge nach.
+  Name: Geheimtechnik des Dienstmädchens
 ExtraTurnEveryone:
   Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\nFeinde\
     \ erhalten nach ihrem Zug ebenfalls einen Extrazug."
@@ -2029,6 +2089,8 @@ SilverJump:
     \ Zieh- und Ablagestapel hinzu."
 SakuyaDraw:
   Name: Perfektion
+  Description: "|When discarded or Exiled|: Ziehe {Value1:plural one='% Karte' other='%\
+    \ Karten'}."
 SakuyaClock:
   Name: Sakuyas besondere Uhr
   FlavorText: Welche App muss ich installieren, damit meine digitale Uhr die gleichen
@@ -2045,11 +2107,15 @@ SakuyaWeak:
   Description: "Füge {Value1} |Geschwächt| zu.\nErhalte {Mana}."
 Knife:
   Description: "Verursache {Damage} Schaden.\n|Wenn {SelfName} die Hand verlässt|:\
-    \ Verursache dem Feind mit dem wenigsten Leben {DropDamage} Schaden."
+    \ Verursache dem Feind mit den wenigsten Leben {DropDamage} Schaden."
   Name: Wurfmesser
+  FlavorText: Damit kommt man nicht durch die Sicherheitskontrolle.
+  ExtraDescription1: "Verursache {Damage} Schaden.\nFüge {Value2} |Anvisieren| zu.\n\
+    ||: Verursache dem Feind mit den wenigsten Leben {DropDamage} Schaden."
 SakuyaTwiceAttack:
   Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFüge {Value2}\
     \ |Wurfmesser| deinem Ablagestapel hinzu."
+  Name: Leuchtender Querschläger
 AttackMagic:
   Name: Trickgeschosse
   Description: "Verursache {Damage} Schaden.\nWerfe bis zu {Value1:plural one='% Karte'\
@@ -2249,9 +2315,8 @@ BlazingStar:
   Name: Brennender Stern
   ExtraDescription1: "Erhalte {Block} |Block|. |Block Beibehalten|.\nBeende den Zug\
     \ von {PlayerName} und erhalte einen Extrazug.\n|d:Zeitlimit| {Mana}.|"
-  Description: "Erhalte {Block} |Block|. |Block| geht zu Beginn deines nächsten Zuges\
-    \ nicht verloren.\nBeende den Zug von {PlayerName} und erhalte einen Extrazug.\n\
-    |Zeitlimit| {Mana}."
+  Description: "Erhalte {Block} |Block|. |Block Beibehalten|.\nBeende den Zug von\
+    \ {PlayerName} und erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
 MeilingRain:
   Description: "Verursache an allen Feinden {AttackTimes} Mal {Damage} Schaden.\n\
     |Für jedes bezahlte {Mana}|: Verursache an allen Feinden erneut Schaden."
@@ -2590,6 +2655,7 @@ BestFriend:
   Description: "Wähle bis zu {Value1} |Partnerkarte{Value1:plural one='' other='n'}|.\
     \ Sie {Value1:plural one='erhält' other='erhalten'} maximale |Einigkeit|.\n|Überfluss|:\
     \ Erhalte {Mana}."
+  Name: Beste Freunde
 CirnoEcho:
   Name: Geschenk der Natur
   Description: Wähle {Value1} Karte{Value1:plural one='' other='n'} von deinem Ablagestapel
@@ -2671,3 +2737,48 @@ KnifeBounce:
   Name: Abprallende Messer
   FlavorText: Sakuya scheint eine Menge Wurfmesser zu benutzen. but she actually picks
     them up after stopping time.
+TunnelEffect:
+  Description: "Verursache an einem zufälligen Feind {Damage} Schaden.\nErhalte {Mana}.\n\
+    Wird der Ziehstapel neu gemischt, füge {SelfName} von deinem Ablagestapel deiner\
+    \ Hand hinzu."
+SakuyaDefenseRetain:
+  Name: Alarmbereitschaft
+  Description: "Erhalte {Block} |Block|.\n|Block Beibehalten|."
+TimeWalk:
+  Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\nDer Effekt\
+    \ von {SelfName} kann nur einmal pro Kampf verwendet werden."
+  Name: Zeitreise
+  ExtraDescription1: "|d:Beende den Zug von {PlayerName} und erhalte einen Extrazug.|\n\
+    Der Effekt von {SelfName} kann nur einmal pro Kampf verwendet werden."
+LoyalMaid:
+  Name: Treue Dienerin
+SakuyaDetective:
+  FlavorText: Möglicherweise hast du das bereits vergessen, aber in diesem Spiel geht
+    es um die Aufklärung eines Verbrechens.
+  Description: "Ziehe {Value2:plural one='% Karte' other='% Karten'}.\nZu Beginn des\
+    \ Kampfes gegen den Übeltäter, verursache {Value1} Schaden.\n(Angesammelter Schaden:\
+    \ {BossDamage})"
+FairyOnIce:
+  Description: "Füge {Value1} |Eisflügel| oben auf deinen Ziehstapel hinzu. \nErhalte\
+    \ {Value2} |Ausweichen|. "
+ColdChain:
+  Description: Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem
+    Ziehstapel und füge sie deiner Hand hinzu.
+  FlavorText: Lieferung frischer Lebensmittel, direkt bis zur Haustür.
+InstantFreeze:
+  Description: "Füge allen Feinden |Kälte| zu.\nBeende den Zug von {PlayerName} und\
+    \ erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
+  ExtraDescription1: "Füge allen Feinden |Kälte| zu.\nBeende den Zug von {PlayerName}\
+    \ und erhalte einen Extrazug.\n|d:Zeitlimit {Mana}.|"
+IceBolt:
+  Name: Eisgeschoss
+ForeverCool:
+  Name: Ewig kalte Jahreszeit
+SummerParty:
+  Description: "Erhalte {Value1} |Eisrüstung|.\nJeder |Partner| auf der Hand erhält\
+    \ {Value2} |Einigkeit|."
+  Name: Coole Party
+KnifeDamageUp:
+  Description: "Erhöhe den verursachten Schaden durch |Wurfmesser| um {Value1}.\n\
+    Füge {Value2} |Wurfmesser| deiner Hand hinzu."
+  Name: Silbener Antrieb
