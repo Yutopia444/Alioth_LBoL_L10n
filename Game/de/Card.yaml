@@ -1,5 +1,11 @@
 Lunatic:
   Name: Wahnsinn
+  NonbattleDescription: Am Ende deines Zuges, falls sich insgesamt {Value1} {SelfName}
+    in deinem Ziehstapel, Ablagestapel und auf deiner Hand, sende sie alle ins |Exil|
+    und verliere {Value2} Leben.
+  Description: "Am Ende deines Zuges, falls sich insgesamt {Value1} {SelfName} in\
+    \ deinem Ziehstapel, Ablagestapel und auf deiner Hand, sende sie alle ins |Exil|\
+    \ und verliere {Value2} Leben.\nAnzahl {SelfName}: {LunaticCount}."
 AliceAttackB:
   Description: Verursache {Damage} Schaden.
 RedLaser:
@@ -282,6 +288,7 @@ BManaCard:
   Description: Erhalte {Mana}.
 QiannianShenqiCard:
   Name: MEIN Zug
+  FlavorText: Ich ziehe!
 ReverseJiejie:
   Name: Umgekehrte Grenze
   FlavorText: Glück und Unglück sind zwei Hälften derselben Münze.
@@ -496,6 +503,8 @@ Bribery:
   FlavorText: '"Du glaubst, reich zu sein macht dich so großartig? Und das ich dich
     deswegen schonen werde? Dann liegst du absolut richtig~"'
   Name: Bestechung
+  Description: "Zahle {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#4f6e97>Megumu</color>\
+    \ wird es dir in diesem Kampf leichter machen."
 NightMana2:
   Description: "Solange sich {SelfName} auf deiner Hand befindet, kosten alle Karten\
     \ {Mana} mehr.\nNachdem {FreezeTimes} {FreezeTimes:plural one='Karte gespielt\
@@ -1553,6 +1562,7 @@ MoonPurify:
     \ farbigen Manakosten."
   UpgradedDescription: Bis zum Ende des Kampfes erhält eine Karte auf deiner Hand
     |Rein|, wodurch sie ihre farbigen Manakosten verliert.
+  Name: Entfernen von Unreinheiten
 ToolAttack:
   Name: Wasserpistole
   Description: "Verursache {Damage} Schaden.\n|Limitiert【{DeckCounter}】|"
@@ -1560,11 +1570,20 @@ NewsNegative:
   Description: "Verliere {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limitiert【{DeckCounter}】|"
   DetailText: Kann nicht durch die Option |Vorbereiten| nach Besiegen eines Bosses
     entfernt werden.
+  Name: Schlechte Nachrichten
+  FlavorText: …auf der Suche nach dem wahren Übeltäter, der den Hourai-Juwelenzweig
+    gestohlen hat. Vor Reimus Teilnahme an der Exposition hat sich herausgestellt,
+    dass der Hakurei-Schrein in einer finanziellen Krise steckt und Schwierigkeiten
+    hat, seine Ausgaben zu decken. In der Zwischenzeit hat die Organisatorin der Exposition…
 NewsTidbit:
   DetailText: Kann nicht durch die Option |Vorbereiten| nach Besiegen eines Bosses
     entfernt werden.
   Name: Gerüchte
   Description: "Erhalte {Value1} |Anvisieren|.\n|Limitiert【{DeckCounter}】|"
+  FlavorText: …mit, dass Reimu sich nicht nur des Geldes wegen auf die Reise begeben
+    hat, sondern auch wegen ihrer intimen Beziehung zu Kaguya. Laut Augenzeugen sei
+    Reimu oft in Eientei zu Besuch, zudem werden immer mehr Fotos öffentlich, auf
+    denen intime Handlungen mit Kaguya zu sehen sind. (Kakashi Presse-Agentur)
 EmpCard:
   Description: "Verursache {Damage} Schaden.\nFalls das Ziel eine |Drohne| ist, kann\
     \ es für {Value1:plural one='% Zug' other='% Züge'} keine Aktionen durchführen.\n\
@@ -1598,6 +1617,7 @@ ToolBlock:
   Description: "Erhalte {Block} |Block|.\n|Limitiert【{DeckCounter}】|"
 ToolAmulet:
   Description: "Erhalte {Value1} |Amulett|.\n|Limitiert【{DeckCounter}】|"
+  Name: Einweg-Amulett
 ToolMicai:
   Name: Optische Tarnkleidung
   Description: "Erhalte |Optische Tarnung| für {Value1:plural one='% Zug' other='%\
@@ -1633,13 +1653,26 @@ MoonTipsDefense:
   Name: Mehr Verteidigung
 NewsEntertainment:
   Description: "Ziehe Karten, bis deine Hand voll ist.\n|Limitiert【{DeckCounter}】|"
+  Name: Unterhaltung
+  FlavorText: …Kaguya Houraisan unserem Reporter mitgeteilt, dass alle Organisationen
+    und Einwohner Gensokyos, die einen kritischen Hinweis liefern können, eine streng
+    limitierte Mondhasenpuppe als Belohnung erhalten. Desweiteren teilte uns eine
+    anonyme Magierin…
 WanderingSoul:
   Name: Wandernde Seele
+  Description: "Erhalte |Makellos| für {Value1:plural one='% Zug' other='% Züge'}.\n\
+    Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur Veröffentlichung\
+    \ weiterer Updates."
 ToolDroneBlock:
   Name: Mechanischer Kern
   Description: "Erhalte {Value1} |Defensive Matrix|.\n|Limitiert【{DeckCounter}】|"
 NewsPositive:
   Description: "Erhalte {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limitiert【{DeckCounter}】|"
+  FlavorText: '[Eilmeldung! #Reimu löst den Vorfall#] Unser Korrespondent in Eientei
+    berichtet, dass um 21 Uhr Ortszeit der sagenumwobene Hourai-Juwelenzweig aus der
+    11ten Exposition der Mondhauptstadt unter mysteriösen Umständen gestohlen wurde.
+    Aussagen zufolge sei das Schreinmädchen Reimu Hakurei…'
+  Name: Gute Nachrichten
 LongArm:
   Description: "Verursache {Damage} Schaden.\nFalls sich mindestens {Value1} Karte{Value1:plural\
     \ one='' other='n'} auf deiner Hand befinde{Value1:plural one='t' other='n'},\
@@ -1663,6 +1696,7 @@ ToolWeak:
   Name: Blitzlicht
 MoonTipsHeal:
   Description: Heile {Value1} Leben.
+  Name: Gesundheitstipps
 PaluxiCurse:
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| und |Verwundbar|\
     \ zu.\nFüge ein zufälliges |Unglück| deinem Ablagestapel hinzu. |d:(Wird am Ende\
@@ -2400,7 +2434,7 @@ YijiEarthSpike:
     zu.
   Name: Gions Macht
 HuiyeMana:
-  Name: Die Geschichte vom Bambussammler
+  Name: Legende des Bambussammler
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} zufälliges Mana;
     erhöhe jeden Zug die Menge an Mana um {Value1}.
 FreezeToIce:
@@ -2782,3 +2816,29 @@ KnifeDamageUp:
   Description: "Erhöhe den verursachten Schaden durch |Wurfmesser| um {Value1}.\n\
     Füge {Value2} |Wurfmesser| deiner Hand hinzu."
   Name: Silbener Antrieb
+Yuebiao:
+  FlavorText: Ein trostloses Ödland.
+  Name: Mondlandschaft
+HatateNews:
+  Name: Kakashi Geisternachrichten
+BuyPeace:
+  Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Gold">,
+    heile {Value2} Leben.'
+XiaosanJingxia:
+  Name: Angst
+  Description: '|Am Ende des Zuges|: Erhalte {Value1} |Geschwächt|.'
+MarisaForget:
+  Name: Vergesslichkeit
+  FlavorText: '"Habe ich vergessen den Gasherd auszumachen, bevor ich das Haus verlassen
+    habe?"'
+  Description: '|Am Ende des Zuges|: Erhalte {Value1} |Fragil|.'
+FakeCard:
+  Name: Legende des Bambussammler (Fälschung)
+  Description: "Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur\
+    \ Veröffentlichung weiterer Updates."
+Regret:
+  Name: Reue
+BefuddledLife:
+  Name: Verwirrung
+Jealousy:
+  Name: Neid
