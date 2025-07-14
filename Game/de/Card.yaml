@@ -175,8 +175,8 @@ IceBarrier:
   Name: Eisbarriere
   Description: Erhalte {Value1} |Eisrüstung|.
 Potion:
-  Description: '|Wenn {SelfName} deiner Hand hinzugefügt wird|: Erhalte {Mana}, verursache
-    an einem zufälligen Feind {Damage} Schaden und sende {SelfName} ins |Exil|.'
+  Description: '|Beim Betreten der Hand|: Erhalte {Mana}, verursache an einem zufälligen
+    Feind {Damage} Schaden und sende {SelfName} ins |Exil|.'
   Name: Instabiler Trank
   FlavorText: WARNUNG! Tränke könnten zu jedem Zeitpunkt explodieren!
 UpgradePotion:
@@ -194,6 +194,7 @@ RainbowMarket:
   Name: Lunar-Regenbogenmarkt
   Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, füge eine zufällige
     Karte deiner Hand hinzu.
+  FlavorText: Florierender Marktplatz.
 ModuoluoFire:
   Name: Enas Feuer
   Description: Jedes Mal, wenn <sprite="ManaSprite" name="P"> bezahlt wird, verursache
@@ -319,6 +320,11 @@ ShopAttack:
     \ Karten'}."
 MeihongPower:
   Name: Die unsterbliche Flamme
+  FlavorText: Verflucht mit der Unsterblichkeit, sie verbringt die meiste Zeit ihres
+    Lebens als Einsiedlerin.
+  Description: "Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Feuerkraft|.\n\
+    At the end of combat, if {PlayerName}'s life is less than half, gain {Value2}\
+    \ life."
 Drunk:
   Name: Betrunken
 DreamExpress:
@@ -372,7 +378,8 @@ BailianFire:
   Description: Füge zu Beginn deines Zuges eine zufällige Fähigkeitskarte deiner Hand
     hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
 AyaWindGirl:
-  Name: Gabe des Windgottes
+  Name: Gabe der Windgöttin
+  Description: Erhalte {Value1} |Gabe der Windgöttin|.
 YukariFriend:
   Name: Yukari, Grenze der Fantasie
   Description: '{FriendP}Erhalte |Feuerkraft| in Höhe der gespielten Abwehrkarten
@@ -477,7 +484,7 @@ FlanBlack:
   Description: "|d:Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur\
     \ Veröffentlichung weiterer Updates.|"
 BoliDajiejie:
-  Name: Die Große Hakurei Barriere
+  Name: Die große Hakurei Barriere
   Description: Für den Rest des Kampfes, konvertiere {PlayerName}s |Block| in dieselbe
     Menge |Barriere| um.
   FlavorText: Alle flüchtigen Fantasien währen für eine Ewigkeit.
@@ -543,6 +550,7 @@ SanaeRestart:
   Description: "Lege alle Karten aus dem Ablagestapel und auf der Hand in den Ziehstapel\
     \ und mische den Ziehstapel neu.\nZiehe {Value1} Karte{Value1:plural one='' other='n'}.\n\
     Erhalte {Mana}."
+  Name: Tag des gespaltenen Meeres
 SakuyaKiller:
   Name: Mörder bei Nacht und Nebel
   Description: "Am Ende deines Zuges, füge {Value1} |Wurfmesser| deinem Ziehstapel\
@@ -570,6 +578,7 @@ SunflowerDefense:
   Name: Sonnenblumenfeld
   Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Hochsommerblumen| deiner\
     \ Hand hinzu."
+  FlavorText: Berühmte Landschaft in Gensokyo.
 YuyukoSing:
   Name: Flügelschlag des Schmetterlings
   Description: "Füge {Damage} Schaden zu.\n{SelfName} kann beliebig oft |aufgewertet|\
@@ -824,9 +833,9 @@ DoubleLianhuadie:
 KuosanJiejie:
   FlavorText: Ich brauche jede Menge Philosophen-Mana und ich brauche es jetzt!
   Name: Grenzerweiterung
-  Description: "|Für jedes bezahlte <sprite=\"ManaSprite\" name=\"W\">|: Erhalte {Block}\
-    \ |Block|.\n|Für jedes bezahlte <sprite=\"ManaSprite\" name=\"R\"> |: Verursache\
-    \ an allen Feinden {Damage} Schaden."
+  Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\">|: Erhalte {Block}\
+    \ |Block|.\n|Pro benutztes <sprite=\"ManaSprite\" name=\"R\">|: Verursache an\
+    \ allen Feinden {Damage} Schaden."
 GapLady:
   Name: Spaltendame
   Description: "Verliere {Value1} Leben.\nErhalte {Mana}.\nZiehe {Value2} Karte{Value2:plural\
@@ -1159,6 +1168,9 @@ RinDraw:
   FlavorText: Katzen sind gut darin, mit komischen Sachen zu reden.
 BailianMagic:
   Name: Rezitation des Teufels
+  Description: In diesem Zug {Value1:plural one='aktiviert' other='aktivieren'} sich
+    die {Value1:plural one='nächste |Talentkarte|' other='nächsten % |Talentkarten|'}
+    2 Mal.
 MeihongFire:
   Name: Willkürliche Entzündung
   Description: "Am Ende deines Zuges, verursache an allen Feinden {Value1} Schaden.\n\
@@ -1188,9 +1200,9 @@ AutoQumobang:
   Name: Furioses Gohei
   FlavorText: '"Automatisierte Gohei ersetzen die Arbeit der Schreinmädchen." — Wirtschaftsteil
     der Bunbunmaru Zeitung'
-  Description: "|Wenn {SelfName} die Hand betritt|: Sende {SelfName} ins |Exil| und\
-    \ ziehe {Value1} zusätzliche {Value1:plural one='Karte' other='Karten'} für {Value2}\
-    \ {Value2:plural one='Zug' other='Züge'}."
+  Description: "|Beim Betreten der Hand|: Sende {SelfName} ins |Exil| und ziehe {Value1}\
+    \ zusätzliche {Value1:plural one='Karte' other='Karten'} für {Value2} {Value2:plural\
+    \ one='Zug' other='Züge'}."
 ShuihuoCard:
   Name: Kugel des Feuers und Wassers
   Description: "Verursache {Damage} Schaden.\nErhalte {Block} |Block|.\n|Wenn Beibehalten|:\
@@ -1233,7 +1245,7 @@ Jinfuzhen:
   FlavorText: Diese Technik ist nicht so stark wie sie scheint, solange man nicht
     versucht zu entkommen.
 ReimuEvilTerminator:
-  Name: Auslöschungs-Ass
+  Name: Schädlingsbekämpfer
   Description: "Jedes Mal, wenn ein Feind besiegt wird, erhalte {Mana}.\nErhalte {Value1}\
     \ |Bannkreis|."
 MengzhiYuzha:
@@ -1248,6 +1260,7 @@ StarFantasy:
 Xiaozhuo:
   Name: Angeheitert
   Description: Erhalte {Value1} |Temporäre Feuerkraft|.
+  FlavorText: Du bist betrunken, deine Feinde werden ein leichtes Spiel mit dir haben.
 DayaojingFriend:
   UpgradedExtraDescription1: '{FriendA}Erhalte {Block} |Block| und {Shield} |Barriere|.'
   Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
@@ -1424,15 +1437,15 @@ QingeDraw:
   DetailText: '|Unspielbare| Karten, die auf diese Weise gezogen werden, können ebenfalls
     abgeworfen werden.'
 WaterPrincess:
-  Description: "Erhalte {Shield} |Barriere|.\nErhöhe die |Barriere| von {SelfName}\
-    \ um {Value1} für jede Karte auf deiner Hand. (Zusätzliche |Barriere|: {Special})\n\
-    |Debüt|: Füge |Wasserschwall| deiner Hand hinzu."
+  Description: "Erhalte {Shield} |Barriere|.\nErhalte zusätzlich {Value1} |Barriere|\
+    \ für jede Karte auf deiner Hand. (Zusätzliche |Barriere|: {Special})\n|Debüt|:\
+    \ Füge |Wasserschwall| deiner Hand hinzu."
   Name: Prinzessin Undine
   NonbattleDescription: "Erhalte für jede Karte auf deiner Hand {Value1} |Barriere|.\n\
     |Debüt|: Füge |Wasserschwall| deiner Hand hinzu."
-  ExtraDescription1: "Erhalte {Shield} |Barriere|.\nErhöhe die |Barriere| von {SelfName}\
-    \ um {Value1} für jede Karte auf deiner Hand. (Zusätzliche |Barriere|: {Special})\n\
-    |d:Debüt: Füge Wasserschwall deiner Hand hinzu.|"
+  ExtraDescription1: "Erhalte {Shield} |Barriere|.\nErhalte zusätzlich {Value1} |Barriere|\
+    \ für jede Karte auf deiner Hand. (Zusätzliche |Barriere|: {Special})\n|d:Debüt:\
+    \ Füge Wasserschwall deiner Hand hinzu.|"
 GuijiZaoxingYuan:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\n{SelfName}\
     \ transformiert sich bis zum Ende des Kampfes in eine andere |e:Skulptur|."
@@ -1576,11 +1589,13 @@ ToolMaxHp:
 VampireShoot1:
   Name: Teufelsschuss
   Description: "Verursache {Damage} Schaden. \nHeile {Value1} Leben."
+  FlavorText: '"Ich kann dein Blut saugen, auch wenn du es blockst!"'
 LarvaCure:
   Name: Gegengift
   Description: "Entferne |Gift| von {PlayerName}.\n|Limitiert【{DeckCounter}】|"
 MeilingLianhua:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nErhalte {Value1} |Feuerkraft|."
+  Name: Farbenfroher Chaostanz
 AyaNews:
   Name: Bunbunmaru Zeitung
   Description: Verursache an einem zufälligen Feind {Damage} Schaden.
@@ -1594,6 +1609,8 @@ ToolExile:
   Description: "Sende eine beliebige Anzahl an Karten von deiner Hand ins |Exil|.\n\
     |Limitiert【{DeckCounter}】|"
   Name: Intelligenter Saugroboter
+  FlavorText: Ein intelligenter Saugroboter, der das Haus reinigt und dabei "ZERSTÖREN!
+    ZERSTÖREN!" ruft.
 MoonPurify:
   Description: "Bis zum Ende des Kampfes erhält eine zufällige Karte auf deiner Hand\
     \ |Rein|, wodurch sie ihre farbigen Manakosten verliert.\nPriorisiert Karten mit\
@@ -1626,6 +1643,7 @@ EmpCard:
   Description: "Verursache {Damage} Schaden.\nFalls das Ziel eine |Drohne| ist, kann\
     \ es für {Value1:plural one='% Zug' other='% Züge'} keine Aktionen durchführen.\n\
     |Limitiert【{DeckCounter}】|"
+  Name: Elektromagnetischer Störsender
 SanaeRice:
   Name: Üppiger Reisregen
   Description: "Entferne alle negativen Effekte von {PlayerName}.\nHeile {Value1}\
@@ -1682,6 +1700,8 @@ RabbitFoot:
   Name: Glückbringende Hasenpfote
   Description: '|Am Ende des Kampfes|: Falls {SelfName} nicht ins |Exil| gesendet
     wurde, erhalte {Value1} <sprite="Point" name="Gold">.'
+  FlavorText: Manch einer würde denken, das Finden einer Hasenpfote bringe Glück.
+    Tatsächlich muss man bereits Glück haben, um eine Hasenpfote erst finden zu können.
 MoonTipsAttack:
   Description: Füge {Value1} |Schuss| deinem Ziehstapel hinzu. Sie {Value1:plural
     one='hat' other='haben'} |Nachschub|.
@@ -1739,8 +1759,14 @@ PaluxiCurse:
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| und |Verwundbar|\
     \ zu.\nFüge ein zufälliges |Unglück| deinem Ablagestapel hinzu. |d:(Wird am Ende\
     \ des Kampfes nicht der Bibliothek hinzugefügt.)|"
+  FlavorText: Heute Morgen um 02:30 Uhr wurde eine gewisse Brückenprinzessin, Miss
+    Mizu*****, beim illegalen Betreten des Schreins von einem patrouillierenden Schreinmädchen
+    erwischt.
 MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
+  Description: "Wähle 1 von {Value1} |Tipps gegen den Mond| und erhalte dessen Effekt.\n\
+    |Limitiert【{DeckCounter}】|"
+  Name: Yukaris Tricktasche
 Tether:
   Description: "Erhalte {Block} |Block|.\nAlle |Partner| auf deiner Hand erhalten\
     \ {Value1} |Einigkeit|."
@@ -2135,8 +2161,8 @@ SakuyaSnow:
 DefenseDraw:
   Name: Mondphasen
   Description: "Erhalte {Block} |Block|.\nZiehe {Value1:plural one='% Karte' other='%\
-    \ Karten'}.\n|Wenn {SelfName} die Hand betritt|: {SelfName} kostet für den Rest\
-    \ des Kampfes {Mana} weniger."
+    \ Karten'}.\n|Beim Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName}\
+    \ {Mana} weniger."
 SakuyaInvestigate:
   Description: "Füge allen Feinden {Value1} |Anvisieren| zu.\nFalls d."
   Name: Zeit anhaltender Detektiv
@@ -2152,6 +2178,7 @@ SpecialClock:
 ExtraTurnEveryone:
   Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\nFeinde\
     \ erhalten nach ihrem Zug ebenfalls einen Extrazug."
+  Name: Expandierender Raum
 CoolMaid:
   Description: "Füge {Value1} |Wurfmesser| deiner Hand hinzu.\nErhalte {Mana}."
   Name: Elegantes Dienstmädchen
@@ -2200,8 +2227,8 @@ SakuyaSleep:
 Lijian:
   Name: Anblick einer fernen Klinge
   Description: "Verursache {Damage} Schaden.\nZiehe {Value1:plural one='% Karte' other='%\
-    \ Karten'}.\n|Wenn {SelfName} die Hand betritt|: {SelfName} kostet für den Rest\
-    \ des Kampfes {Mana} weniger."
+    \ Karten'}.\n|Beim Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName}\
+    \ {Mana} weniger."
   FlavorText: Das nächste Mal, an dem du dieses Wurfmesser siehst, wird das dein Ende
     sein.
 SakuyaGraze:
@@ -2216,6 +2243,7 @@ CleanRoom:
   Name: Zimmer aufräumen
 MihuanJack:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.
+  Name: Jack die Zeitdiebin
 WinterWarm:
   Description: "Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner\
     \ Hand ins |Exil|.\nErhalte |Konzentration| in Höhe der gesendeten Karten.\nZiehe\
@@ -2392,6 +2420,7 @@ BlazingStar:
 MeilingRain:
   Description: "Verursache an allen Feinden {AttackTimes} Mal {Damage} Schaden.\n\
     |Für jedes bezahlte {Mana}|: Verursache an allen Feinden erneut Schaden."
+  Name: Farbenfroher Regen
 ChargingToMana:
   Description: Verliere alle |Aufladungen|. Für jede verlorene |Aufladung|, ziehe
     eine Karte und erhalte {Mana}.
@@ -2402,8 +2431,8 @@ DiscardToCharging:
   Name: Auftanken
 ManaJungle:
   FlavorText: "\"Heureka! Ich hab's!\""
-  Description: '|Wenn {SelfName} die Hand betritt|: Füge {Value1} |Regenbogen| deiner
-    Hand hinzu, sende {SelfName} ins |Exil|.'
+  Description: '|Beim Betreten der Hand|: Füge {Value1} |Regenbogen| deiner Hand hinzu,
+    sende {SelfName} ins |Exil|.'
   Name: Abenteuer im Wald
 JungleMaster:
   Description: '|Zu Beginn des Kampfes|: Sende {SelfName} ins |Exil|, erhalte {Value1}
@@ -2414,8 +2443,8 @@ CirnoInForest:
   Name: Offensichtliches Versteck
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Ausweichen|."
 InspirationCard:
-  Description: '|Wenn {SelfName} die Hand betritt|: Erhalte {Mana}, erhalte {Value1}
-    |Inspiration| und sende {SelfName} ins |Exil|.'
+  Description: '|Beim Betreten der Hand|: Erhalte {Mana}, erhalte {Value1} |Inspiration|
+    und sende {SelfName} ins |Exil|.'
   Name: Heureka!
   FlavorText: Heureka!
 Opt:
@@ -2475,6 +2504,7 @@ HuiyeMana:
   Name: Legende des Bambussammler
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} zufälliges Mana;
     erhöhe jeden Zug die Menge an Mana um {Value1}.
+  FlavorText: In dieser Kindergeschichte geht es um glorifizierte Sünder.
 FreezeToIce:
   FlavorText: Ihr beide seid meine Flügel! (Buchstäblich)
   UpgradedDescription: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'}
@@ -2556,6 +2586,7 @@ YijiuAttack:
   Description: "Verursache {Damage} Schaden.\nFalls ein Feind durch {SelfName} besiegt\
     \ wurde, sende diese Karte ins |Exil| und erhalte |Makellos| für {Value1:plural\
     \ one='% Zug' other='% Züge'}."
+  Name: Donnerblitz des Drachengottes
 YukariFlyObject:
   FlavorText: Für das bloße Auge viel zu schnell.
 DollFactory:
@@ -2574,6 +2605,7 @@ RangziSeed:
   Name: Herbsternte
   Description: Lege |Vitalität| oben auf deinen Ziehstapel. Sie hat |Nachschub|.
   UpgradedDescription: Lege |Regenbogen| oben auf deinen Ziehstapel. Sie hat |Nachschub|.
+  FlavorText: 'Landwirte: Unser Herbst ist endlich da!'
 YukariBox:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nLege alle Karten aus dem Ablagestapel in den Ziehstapel und mische\
@@ -2585,6 +2617,7 @@ QingeHeal:
   Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nHeile {Value2} Leben. Zu\
     \ Beginn deines nächsten Zuges, verliere {Value2} Leben."
   Name: Nekromantie
+  FlavorText: '"Du wurdest wieder aufgepäppelt! Los jetzt!"'
 Shengyan:
   Description: "Verursache {Damage} Schaden.\n|Auslöschung|: Erhalte {Value1} maximales\
     \ Leben."
@@ -2593,6 +2626,7 @@ XingMoney:
   Description: "Verursache {Damage} Schaden.\n|Auslöschung|: Erhalte {Value1} <sprite=\"\
     Point\" name=\"Gold\">."
   FlavorText: Eine Fähigkeit, die Reimu Hakurei nicht ausweichen kann.
+  Name: Glorreiche Lanze
 HuiyinRetain:
   ExtraDescription1: "Füge bis zu {Value1:plural one='% Karte' other='% Karten'} von\
     \ deinem Ablagestapel deiner Hand hinzu. Sie {Value1:plural one='erhält' other='erhalten'}\
@@ -2605,8 +2639,12 @@ HuiyinRetain:
 LilyChun:
   Name: Der Frühling ist da!
   FlavorText: '"Der Frühling ist da!"'
+  Description: "Füge {Value1} zufällige Karte{Value1:plural one='' other='n'}, that\
+    \ {Value1:plural one='has' other='have'} a total cost of 1 deiner Hand hinzu.\
+    \ Sie {Value1:plural one='hat' other='haben'} |Exil| und |Ätherisch|.\n"
 Zhulianshen:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Bannkreis|."
+  Name: Shimenawa
 LimaoSchool:
   Description: Wähle {Value2} von {Value1} zufällige |Tierverwandlungen|. Erhalte
     {Value2:plural one='dessen Effekt' other='deren Effekte'}.
@@ -2623,6 +2661,8 @@ KongMana:
   Description: "Sende 1 Karte aus deiner Hand ins |Exil|. Erhalte Mana in Höhe der\
     \ Manakosten.\nFüge |Regenbogen| deiner Hand hinzu."
   Name: Kernschmelze
+  DetailText: Unspielbare |Unglücks-| und |Statuskarten| haben Manakosten abhängig
+    ihrer Seltenheit.
 YoumuHybrid:
   Name: Halb-Mensch, Halb-Phantom
   Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\">|: Sende bis zu {Value1}\
@@ -2649,6 +2689,7 @@ PoorAttack:
   Name: In Armut geraten
   Description: "Verliere {Value1} <sprite=\"Point\" name=\"Gold\">.\nVerursache {Value2}\
     \ Mal {Damage} Schaden."
+  FlavorText: Schikaniert nicht das Mädchen, nur weil sie arm ist.
 YoumuAttack:
   Description: "Verursache {Damage} Schaden.\nSende 1 Karte aus deiner Hand ins |Exil|."
 BailianJingang:
@@ -2661,9 +2702,12 @@ XiangziEcho:
   FlavorText: '"Ya————hoo————"'
   Description: Wähle {Value1} Karte{Value1:plural one='' other='n'} auf deiner Hand
     aus. Sie {Value1:plural one='erhält' other='erhalten'} |Echo|.
+  Name: Gebirgsecho
 AliceAttack:
   Name: Lichtstrahl des Elends
   Description: "Verursache {Damage} Schaden.\nErhalte {Mana}."
+  FlavorText: Neutral, nur für kurze Zeit! Sie wird bald zu einer einzigartigen Karte
+    von Alice.
 ReisenAttack:
   Name: Wahnsinniger Traum
   Description: '|Pro benutztes {Mana}|: Verursache an allen Feinden {Damage} Schaden.'
@@ -2672,6 +2716,7 @@ MeilingWater:
     \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie {Value2:plural\
     \ one='|kostet temporär|' other='|kosten temporär|'} {Mana}.\nZu Beginn deines\
     \ Zuges, verliere {Value1} Leben."
+  Name: Formation des letzten Gefechts
 DollBlock:
   Name: Puppenschild
   Description: (WIP) 
@@ -2680,7 +2725,9 @@ MansionNight:
 PatchouliGreenAttack:
   FlavorText: Patchoulis bester Trick.
   Description: "Verursache {Damage} Schaden.\nKann nur gespielt werden, wenn das derzeitige\
-    \ Mana ({BattleAmount}) höher ist als das Mana in der Manabasis ({BaseAmount})."
+    \ Mana ({BattleAmount}) höher ist als die Manabasis ({BaseAmount})."
+  NonbattleDescription: "Verursache {Damage} Schaden.\nKann nur gespielt werden, wenn\
+    \ das derzeitige Mana höher ist als die Manabasis."
 HehuanAttack:
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nZiehe {Value2:plural one='%\
     \ Karte' other='% Karten'}."
@@ -2689,6 +2736,8 @@ ReadBook:
     \ weißen Karten aus und füge sie deiner Hand hinzu."
   ExtraDescription1: "Erhalte {Block} |Block|.\n|d:Debüt: Wähle 1 von {Value1} blauen\
     \ oder weißen Karten aus und füge sie deiner Hand hinzu.|"
+  FlavorText: Laut Suzunaans letztem Jahresbericht stammen die meisten Bücher, die
+    Tokiko sich ausgeliehen hat, aus der Kinderabteilung.
 HuiyeAttack:
   Name: Hourais Meer der Bäume
   Description: "|Pro Mana mit unterschiedlicher Farbe|: Verursache an allen Feinden\
@@ -2715,6 +2764,7 @@ TianziRock:
   Description: "Jedes Mal, wenn {PlayerName} Angriffsschaden erleiden würde, reduziere\
     \ es um {Value1}.\nDieser Effekt ist nicht stapelbar.\nEntferne |Anvisieren| von\
     \ {PlayerName}."
+  Name: Mauer vor Bhavaagra
 ShuimuBlock:
   Name: Steine stapeln
   Description: "Erhalte {Block} |Block|.\nErhöhe das erhaltene |Block| von {SelfName}\
@@ -2747,6 +2797,7 @@ LanCard:
 SanaeStar:
   Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nErhalte {Value2}\
     \ |Göttliche Gunst|."
+  Name: Fallender Stern
 FangxiangHeal:
   Description: Sende {Value1} zufällige Karte{Value1:plural one='' other='n'} von
     deinem Ablagestapel ins |Exil|. Heile für jede gesendete Karte {Value2} Leben.
@@ -2780,16 +2831,19 @@ ChengDefense:
   Description: "Erhalte {Block} |Block|.\nZu Beginn deines nächsten Zuges, erhalte\
     \ {Block} |Block|."
 Panzi:
-  Description: "Verursache {Damage} Schaden.\n|Wenn {SelfName} die Hand betritt|:\
-    \ Füge eine |Kopie| dieser Karte deiner Hand hinzu."
+  Description: "Verursache {Damage} Schaden.\n|Beim Betreten der Hand|: Füge eine\
+    \ |Kopie| von {SelfName} deiner Hand hinzu."
+  Name: Wasserschale
 TannvCard:
   Description: Füge jeweils die oberste Karte von deinem Zieh- und Ablagestapel deiner
     Hand hinzu. Sie |kosten temporär| {Mana}.
   FlavorText: Einspruch!
+  Name: Den Spieß umdrehen
 HappyNewYear:
   Description: "Wähle 1 von 3 zufälligen Angriffs- oder Abwehrkarten und füge sie\
     \ deiner Hand hinzu. \nFalls eine Angriffskarte gewählt wurde, erhalte {Value1}\
     \ |Feuerkraft|. Erhalte ansonsten {Value1} |Geist|."
+  Name: Neujahrsbesuch
 XiaodingKill:
   Description: Falls das Ziel {Value1} oder weniger Leben hat, besiege es sofort.
 FutoLight:
@@ -2936,5 +2990,37 @@ RemiliaJizao:
 MeilingBlock:
   Description: "Erhalte {Block} |Block| und {Shield} |Barriere|.\n{SelfName} wird\
     \ durch |Feuerkraft| beeinflusst."
+  FlavorText: Mach dich darauf gefasst, getroffen zu werden, bevor du einen Treffer
+    landen kannst.
 YinglangHowl:
   Name: Vollmond Geheul
+FlanFirepower:
+  FlavorText: Die Verstorbenen können durch "Grenze überqueren" gerettet werden.
+  NonbattleDescription: Alle Karten auf deiner Hand erhalten |Ätherisch|, erhalte
+    |Feuerkraft| in Höhe der Karten auf deiner Hand.
+  Description: "Alle Karten auf deiner Hand erhalten |Ätherisch|, erhalte |Feuerkraft|\
+    \ in Höhe der Karten auf deiner Hand.\nAnzahl anderer Handkarten: {Count}."
+YongyiAttack:
+  Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFalls\
+    \ {PlayerName} |Temporäre Feuerkraft| besitzt, verursache ein weiteres Mal Schaden."
+RemiliaBat:
+  Name: Fledermaus Verwandlung
+  Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nErhalte {Value2} |Ausweichen|."
+  FlavorText: Die Ankunft der Königin der Nacht.
+AhongMana:
+  Description: '|Beim Betreten der Hand|: Füge {Value1} |Vitalität| deiner Hand hinzu
+    und sende {SelfName} ins |Exil|.'
+  UpgradedDescription: '|Beim Betreten der Hand|: Füge {Value1} |Vitalität| deiner
+    Hand hinzu, then |Upgrade| {Value2} random  und sende {SelfName} ins |Exil|.'
+MogongAttack:
+  Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\n|While in\
+    \ hand|: Jedes Mal, wenn eine andere Karte gespielt wird, erhöhe den Schaden und\
+    \ |Block| von {SelfName} um damage and |Block|."
+WhiteWorld:
+  Name: Reine weiße Welt
+LunaDial:
+  Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\n|Beim\
+    \ Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName} {Mana} weniger."
+HatateShot:
+  Description: "Erhalte {Block} |Block|.\nErhalte zusätzlich {Value1} |Block| für\
+    \ jedes unbenutzte Mana. (Zusätzliches |Block|: {Special})"

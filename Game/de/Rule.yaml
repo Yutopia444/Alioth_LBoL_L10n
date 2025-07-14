@@ -97,21 +97,32 @@ CardPool:
 BattleFlow:
   Name: Kampfsequenz und Runden
   Description: "Zu Beginn jeden Kampfes werden die notwendigen Feinde und Karten initialisiert,\
-    \ danach wird die Kampfsequenz eingeleitet.\nDabei werden verschiedene Statuseffekte\
-    \ initialisiert, wie z.B. durch das Ausstellungsstück Tengus Holzschuhe.\nDiese\
-    \ Phase wird noch vor dem ersten Zug des Spielers durchgeführt,\nIm Anschluss\
-    \ wird der Kampf über mehrere Runden ausgetragen, bis eine Seite als Sieger hervorgeht.\n\
-    Eine Runde besteht aus mehreren Runden, jeweils eine Runde pro Charakter (z.B.\
-    \ \"Reimus Zug\", \"Rin Kaenbyous Zug\").\n\nIn jeder Runde beginnt zuerst der\
-    \ Zug des Spielers in d\nIm Grunde hat jeder Charakter einen Zug pro Runde, es\
-    \ sei denn der \"Extrazug\" Effekt ist aktiv.\nCharaktere mit einem Extrazug geben\
-    \ ihren Zug nicht weiter sobald dieser endet, sondern erhalten einen neuen Zug.\n\
-    Dieser Vorgang wiederholt sich, bis alle Extrazüge verbraucht wurden.\nSobald\
-    \ alle Charaktere ihre Aktionen durchgeführt haben, endet die Runde und die nächste\
-    \ Runde beginnt.\n\nZum jetzigen Zeitpunkt kann nur der Spieler Extrazüge bekommen,\
-    \ mit dem Effekt von als einzige Ausnahme.\nIn diesem Fall führen alle Feinde\
-    \ jeweils zwei Aktionen hintereinander aus (Nur die erste Intention wird angezeigt).\n\
-    \nIn der Regel ist der Zähler für die feindlichen Runden und\n"
+    \ danach wird die Kampfsequenz eingeleitet.\nDabei werden in dieser Phase verschiedene\
+    \ Statuseffekte der Feinde initialisiert, aber auch eigene Effekte treten in Kraft,\
+    \ z.B. durch das Ausstellungsstück Tengu-Holzschuhe.\nDiese Phase befindet sich\
+    \ noch vor dem Beginn des ersten Zuges des Spielers, bei Eiki Shiki oder dem finalen\
+    \ Boss lässt sich das durch die Aktivierung mehrerer Effekte gut beobachten.\n\
+    Im Anschluss wird der Kampf über mehrere Runden ausgetragen, bis eine Seite als\
+    \ Sieger hervorgeht.\nEine Runde besteht aus mehreren Zügen, jeweils ein Zug pro\
+    \ Charakter (z.B. \"Reimus Zug\", \"Rin Kaenbyous Zug\").\n\nIn jeder Runde beginnt\
+    \ zuerst der Zug des Spielers, danach haben alle Feinde nacheinander ihren Zug.\n\
+    Im Grunde hat jeder Charakter einen Zug pro Runde, es sei denn der \"Extrazug\"\
+    \ Effekt ist aktiv.\nCharaktere mit einem Extrazug geben ihren Zug nicht weiter\
+    \ sobald dieser endet, sondern erhalten einen neuen Zug.\nDieser Vorgang wiederholt\
+    \ sich, bis alle Extrazüge verbraucht wurden.\nSobald alle Charaktere ihre Aktionen\
+    \ durchgeführt haben, endet die Runde und die nächste Runde beginnt.\n\nZum jetzigen\
+    \ Zeitpunkt kann nur der Spieler Extrazüge bekommen, der Effekt von Expandierender\
+    \ Raum ist bisher die einzige Ausnahme.\nIn diesem Fall führen alle Feinde jeweils\
+    \ zwei Aktionen hintereinander aus (Nur die erste Intention wird angezeigt).\n\
+    Für beide Seiten gibt es zudem einen Zähler für die Anzahl der bisherigen Züge.\n\
+    In der Regel ist die Anzahl der Runden und der feindliche Zähler identisch, beim\
+    \ Spieler kann der Zähler aber durch Extrazüge höher sein.\n\nEinige Effekte beziehen\
+    \ sich auf Züge, obwohl Runden eher zutreffen würden, daher ist es für Neueinsteiger\
+    \ nicht immer einfach, den Unterschied zwischen Zügen und Runden zu erkennen.\n\
+    Hier ein Beispiel: Der Zähler für die Statuseffekte Verwundbar, Geschwächt und\
+    \ Fragil senken sich nur am Ende der Runde, dennoch senkt sich der Zähler auch\
+    \ zu Beginn eines Extrazuges (Nur durch diese komplexe Umsetzung kann sichergestellt\
+    \ werden, dass die Spielererfahrung sich korrekt anfühlt).\n"
 FriendCard:
   Name: Partner
   Description: "Here's some additional rules on Teammate cards to help smoothen the\
