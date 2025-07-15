@@ -65,6 +65,7 @@ CirnoBlockU:
     eignet sich ebenfalls als Waffe zur Selbstverteidigung.
 GroupOfKnife:
   Description: Verursache {Damage} Schaden.
+  Name: Scharfer Klingenexpress
 Shoot:
   Description: Verursache {Damage} Schaden.
   Name: Schuss
@@ -110,6 +111,7 @@ BlueZeroAttack:
   Description: Verursache {Damage} Schaden.
   UpgradedDescription: "Verursache {Damage} Schaden.\nFüge {Value1} |Geschwächt| zu."
   FlavorText: Feuer mit Wasser.
+  Name: Flutwelle
 CraftPotion:
   Name: Mische Trank
   ExtraDescription1: "Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.\n\
@@ -240,6 +242,8 @@ LoveLetter:
   Name: Liebesbrief
 StopTime:
   Name: Eingefrorene Zeit
+  Description: Am Ende deines Zuges behält {PlayerName} {Value1} zufälliges, unbenutztes
+    Mana.
 TimeMagic:
   Name: Zeitmagie
   Description: "Wähle {Value1} von {Value2} |p:vollkommen zufälligen|, nicht-gewöhnlichen\
@@ -256,7 +260,7 @@ AutoKnife:
   Description: "Bis zum Ende des Kampfes erhalten alle |Wurfmesser| |Automatisches\
     \ Exil|.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
 FreezeBullet:
-  Name: Frostschuss
+  Name: Eingefrorene Geschosse
   FlavorText: Cirno ist unsere Erlöserin!
 CirnoDraw:
   Name: Feenintellekt
@@ -279,6 +283,8 @@ DangerousMagician:
     \ Ziehstapel hinzu."
 SilverBlade:
   Name: Silberdimension
+  Description: Jedes Mal, wenn eine Angriffskarte aktiviert wird, erhalte {Value1}
+    |Barriere|.
 PatchouliLibrary:
   Name: Große Standhafte Bibliothek
   UpgradedDescription: "Erhalte {Mana}.\nWähle 1 von {Value1} zufälligen, seltenen\
@@ -601,6 +607,7 @@ KoishiGainColorless:
   Description: Erhalte {Mana}.
   UpgradedDescription: Erhalte {Mana}.
   FlavorText: Ich habe vergessen, welche Farbe dieses Mana hatte.
+  Name: Ruhiger Geist
 WManaCard:
   Description: Erhalte {Mana}.
   Name: Lichtstrahlen
@@ -612,6 +619,8 @@ PlayDrawTop:
   Description: "Erhalte {Block} |Block|.\nSpiele die oberste Karte in deinem Ziehstapel."
 ShengquanZaiwo:
   Description: Erhalte {Mana}.
+  Name: Siegessicher
+  FlavorText: '"Versuch erst gar nicht, mit ihr Poker zu spielen!"'
 GManaCard:
   Description: Erhalte {Mana}.
   Name: Vitalität
@@ -663,6 +672,9 @@ KoishiPlayDiscard:
   Name: Philosophie der Verachteten
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
     noch ins |Exil| gesendet.
+  Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem\
+    \ Ablagestapel und spiele {Value1:plural one='es als |Folgeaktion|.' other='sie\
+    \ als |Folgeaktionen|.'}\nGewählte Karten, die  |Folgeaktionen| cards sende |Exiled|."
 BailianBlack:
   Description: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
     Karten kosten {Mana}.
@@ -674,6 +686,8 @@ AyaNewsMarisaSp:
     alle Gerüchte über {PlayerName}.
 KoishiAttackX:
   Name: Höllenrose
+  Description: '|Pro benutztes <sprite="ManaSprite" name="2">|: Verursache an allen
+    Feinden {Damage} Schaden und erhalte {Mana}.'
 KoishiDna:
   Name: Defekte DNA
   UpgradedDescription: "Zu Beginn deines Zuges, füge {Value1} |DNA-Transkription|\
@@ -710,14 +724,20 @@ KoishiPotential:
   Name: Entfesseltes Potenzial
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
     noch ins |Exil| gesendet.
+  Description: Schaue dir die obersten {Value1} Karten deines Ziehstapels an. Wähle
+    1 Karte aus, spiele sie zweimal und sende sie ins |Exil|.
 KoishiMana:
   Description: "Füge allen Feinden {Damage} Schaden zu.\nErhalte {Mana}."
   Name: Unterirdische Rose
 KoishiSpark:
   Description: Verursache an allen Feinden {Damage} Schaden.
+  Name: Letzter romantischer Abendanruf
 KoishiPhone:
   FlavorText: Dir ist es nicht gestattet diesen Anruf zu verpassen.
   Name: Erschreckend süßer Anruf
+  Description: "Jedes Mal, wenn eine Angriffskarte gespielt wird, führe einen |Folgeangriff|\
+    \ aus.\nFalls sich keine |Folgeaktionen| mehr in deinem Ziehstapel befinden, wird\
+    \ |Ring-Ring| als |Folgeaktion| gespielt."
 Fengmozhen4:
   Description: Verursache an allen Feinden {Damage} Schaden.
   UpgradedDescription: Verursache an allen Feinden {Value1} Mal {Damage} Schaden.
@@ -976,6 +996,8 @@ SakuyaDio:
   FlavorText: Tsugi wa Kisama da!
 ClockCorpse:
   Name: Überreste einer Uhr
+  Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Karten
+    können nur zu Beginn dieses Extrazuges gezogen werden.
 GainKnife:
   Name: Sternenklarer Schwerttanz
   UpgradedDescription: "Zu Beginn deines Zuges, füge {Value1} |Wurfmesser| deiner\
@@ -1076,6 +1098,9 @@ GainTreasure:
   Name: Geldregen
 BladePower:
   Name: Blendender Ansturm
+  Description: "Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge eine zufällige\
+    \ Angriffskarte deiner Hand hinzu. Sie erhält |Exil| und |Ätherisch| und |kostet\
+    \ temporär| {Mana}.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
 SunnyFriend:
   Name: Sunny, blendendes Sonnenlicht
   ExtraDescription1: "{FriendA}Erhalte |Optische Tarnung| für {Light:plural one='%\
@@ -1789,6 +1814,8 @@ Blizzard:
     \ eine blaue Karte ist, wiederhole diesen Effekt zu Beginn deines nächsten Zuges."
 DoubleMana:
   Name: Erwachen der Feen
+  Description: "Die Menge deines unbenutzten Manas wird verdoppelt.\n|Überziehen|\
+    \ {Value1}."
 ZeroK:
   Name: Absoluter Nullpunkt
   Description: "Erhöhe den Schadensmultiplikator durch erneutes Zufügen von |Kälte|\
@@ -1801,6 +1828,7 @@ GlacialSpike:
 ColdBreath:
   Description: "Verursache {Damage} Schaden. \nFalls das Ziel |Kälte| hat, erhalte\
     \ {Mana}."
+  Name: Diamant-Atem
 ColdSnap:
   Description: "Füge die {Value1:plural one='oberste blaue Karte' other='obersten\
     \ % blauen Karten'} von deinem Ziehstapel deiner Hand hinzu.\nErhalte für jede\
@@ -1838,6 +1866,7 @@ PsycheLock:
   NonbattleDescription: "Beende den Zug von {PlayerName}. Erhalte einen Extrazug.\n\
     Kann nur gespielt werden, wenn dein |Mentaler Zustand| sich 3 Mal geändert hat,\
     \ während sich {SelfName} auf deiner Hand befindet."
+  Name: Denkblockade
 TheHermit:
   UpgradedDescription: "|Vorhersehung| {Scry}.\nDie oberste Karte im Ziehstapel wird\
     \ |aufgewertet|.\nErhalte {Mana}.\n|Dissoziation|: {SelfName} kostet <sprite=\"\
@@ -1848,6 +1877,7 @@ TheHermit:
 ToAllFollower:
   Description: "Verursache an allen Feinden {Damage} Schaden.\n|Dissoziation|: Verursache\
     \ den Schaden ein zusätzliches Mal."
+  Name: Überwältigende Emotionen
 FakeBullet:
   Name: Imaginäres Danmaku
 TheFool:
@@ -1977,6 +2007,7 @@ DebugAddRandomCards:
 KoishiDance:
   Description: "Erhalte {Block} |Block|.\nVerursache an allen Feinden {Damage} Schaden.\n\
     Führe einen |Folgeangriff| aus."
+  Name: Verrückte Dornen
 SplitPotion:
   Description: "|Instabiler Trank| verursacht an einem zusätzlichen Feind Schaden.\n\
     Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu."
@@ -2028,6 +2059,9 @@ MoodChangeBlock:
   FlavorText: Ich darf nicht wegrennen! Ich darf nicht wegrennen!
 KoishiDrawTopCards:
   Name: Rorschach-Test
+  Description: Schaue dir die obersten {Value1} Karten deines Ziehstapels an. Wähle
+    1 Karte aus und lege sie zurück in den Ziehstapel, füge die anderen Karten deiner
+    Hand hinzu.
 GainInspiration:
   Name: Lass mich nachdenken
   Description: "Am Ende deines Zuges, füge |Heureka!| deinem Ziehstapel hinzu.\n"
@@ -2045,6 +2079,7 @@ TheChariot:
 KoishiSpringOut:
   Description: "|Gelassenheit|: Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n\
     Betrete ansonsten |Gelassenheit|."
+  Name: Frühlingsurlaub
 DebugExileDrawDiscard:
   Description: 'Testkarte: Sende deinen Zieh- und Ablagestapel ins |Exil|.'
 PassionAttackToDraw:
@@ -2060,6 +2095,8 @@ PassionDefense:
   Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
     \ |Block|."
   Name: Unauffällig
+  FlavorText: Wenn du in den Beliebtheitsumfragen ganz oben bist, aber eigentlich
+    nicht wiedererkannt werden möchtest.
 KoishiFire:
   Description: "Erhalte {Value1} |Feuerkraft|.\n|Leidenschaft|: Erhalte zusätzlich\
     \ {Value2} |Feuerkraft|.\n|Gelassenheit|: Erhalte stattdessen {Value1} |Geist|."
@@ -2068,6 +2105,7 @@ KoishiFlower:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFüge {Value1}\
     \ |Hochsommerblumen| deiner Hand hinzu.\n|Dissoziation|: Füge stattdessen {Value2}\
     \ hinzu."
+  Name: Freche Rose
 BackToFuture:
   Description: "Tausche den Ziehstapel mit dem Ablagestapel.\nZiehe {Value1:plural\
     \ one='% Karte' other='% Karten'}."
@@ -2099,6 +2137,7 @@ SakuyaFuneral:
   Name: Voreiliges Begräbnis
   Description: "Verliere {Value1} Leben.\nWähle eine Karte aus dem |Exil| und füge\
     \ sie deiner Hand hinzu. Sie |kostet temporär| {Mana}."
+  FlavorText: '"Ich bin noch nicht tot, meine Herrin."'
 SilverBullet:
   NonbattleDescription: "Verursache an allen Feinden {Damage} Schaden.\nErhalte {Block}\
     \ |Block|. Erhalte {Value1} zusätzlich |Block| für jedes |Wurfmesser| in deinem\
@@ -2127,6 +2166,8 @@ DropToKnife:
   Name: Festung aus Silber
   Description: "Werfe {Value1:plural one='% Karte' other='% Karten'} ab.\nFüge die\
     \ gleiche Menge |Wurfmesser| deiner Hand hinzu."
+  FlavorText: Gold ist zu weich, um sich daraus eine Festung zu bauen. Allerdings
+    ist Silber nicht viel besser.
 FakeTimeline:
   Name: Imaginäre Zeitlinie
   Description: "Erhalte {Block} |Block|.\nVerursache an allen Feinden {Damage} Schaden.\n\
@@ -2150,9 +2191,14 @@ PrepareParty:
   Name: Vorbereitung des Banketts
 SakuyaSpeedup:
   Name: Zeit beschleunigen
+  ExtraDescription1: "Die Menge deiner |Zeitimpulse| werden verdoppelt.\n|d:Überfluss:\
+    \ Erhalte {Mana}.|"
+  Description: "Die Menge deiner |Zeitimpulse| werden verdoppelt.\n|Überfluss|: Erhalte\
+    \ {Mana}."
 KnifeAim:
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Anvisieren| zu.\nWerfe\
     \ alle |Wurfmesser| ab, sie werden diesen Feind als Ziel wählen."
+  Name: Schrumpfende Welt
 SakuyaSnow:
   Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
   Name: Wintervorsatz
@@ -2474,6 +2520,9 @@ CoolBreeze:
   Name: Erfrischende Brise
   FlavorText: Während es sich für Cirno kühl und erfrischend anfühlt, werden ihre
     Feinde womöglich anders darüber denken.
+  Description: "Erhalte {Block} |Block|.\nFalls mindestens ein Feind unter |Kälte|\
+    \ leidet, werden {Value1} zufällige Karte{Value1:plural one='' other='n'} auf\
+    \ deiner Hand |aufgewertet|."
 SummerIce:
   FlavorText: Dein Paket wird sich um einen Zug verspäten.
   Description: Zu Beginn deines nächsten Zuges, erhalte {Mana}.
@@ -2492,6 +2541,7 @@ CirnoFire:
 FreezeRiver:
   Description: Füge die unterste Karte aus deinem Ziehstapel deiner Hand hinzu. Sie
     |kostet temporär| {Mana}.
+  Name: Treibende Eisscholle
 YijiGraze:
   Name: Ame-No-Uzume
   Description: "Erhalte {Value1} |Ausweichen|.\nZiehe {Value2:plural one='% Karte'\
@@ -2515,6 +2565,7 @@ FreezeToIce:
 OptBottom:
   Description: Lege {TargetName} unten in deinen Ziehstapel.
   FlavorText: Es ist kein Unfall, dass es zu einem Unfall kam.
+  Name: Sinken
 ShiverArmor:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Eisrüstung|."
 LeaveMoodGraze:
@@ -2556,8 +2607,10 @@ SnowconeTdm:
   Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nWhen used for the\
     \ first time on an enemy, erhalte {Value1} <sprite=\"Point\" name=\"Gold\">."
   FlavorText: '"Pfui…was ist das denn für ein Geschmack!? Das ist keine Blaubeere!"'
+  Name: Nebelsee-Eiskugel
 LeaveMoodAttack:
   Description: "Verursache {Damage} Schaden.\nVerlasse deinen |Mentalen Zustand|."
+  Name: Mentale Befreiung
 Claustrophobia:
   Description: "Erhalte {Block} |Block|.\n|Instinkt|: Erhalte {Shield} |Barriere|."
   Name: Klaustrophobie
@@ -2698,6 +2751,7 @@ BailianJingang:
 YaoguaiLaser:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFühre einen\
     \ |Folgeangriff| aus.\n|Instinkt|: Führe einen zusätzlichen |Folgeangriff| aus."
+  Name: Youkai EEG
 XiangziEcho:
   FlavorText: '"Ya————hoo————"'
   Description: Wähle {Value1} Karte{Value1:plural one='' other='n'} auf deiner Hand
@@ -2874,6 +2928,7 @@ TunnelEffect:
   Description: "Verursache an einem zufälligen Feind {Damage} Schaden.\nErhalte {Mana}.\n\
     Wird der Ziehstapel neu gemischt, füge {SelfName} von deinem Ablagestapel deiner\
     \ Hand hinzu."
+  Name: Quantentunnel
 SakuyaDefenseRetain:
   Name: Alarmbereitschaft
   Description: "Erhalte {Block} |Block|.\n|Block Beibehalten|."
@@ -2885,6 +2940,8 @@ TimeWalk:
     Der Effekt von {SelfName} kann nur einmal pro Kampf verwendet werden."
 LoyalMaid:
   Name: Treue Dienerin
+  Description: "Erhalte {Shield} |Barriere|.\nZu Beginn deines Extrazuges, füge {SelfName}\
+    \ von deinem Ablagestapel deiner Hand hinzu. Sie |kostet temporär| {Mana}."
 SakuyaDetective:
   FlavorText: Möglicherweise hast du das bereits vergessen, aber in diesem Spiel geht
     es um die Aufklärung eines Verbrechens.
@@ -2905,6 +2962,8 @@ InstantFreeze:
     \ und erhalte einen Extrazug.\n|d:Zeitlimit {Mana}.|"
 IceBolt:
   Name: Eisgeschoss
+  FlavorText: Für die mündliche Verabreichung geeignet.
+  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu."
 ForeverCool:
   Name: Ewig kalte Jahreszeit
 SummerParty:
@@ -2923,6 +2982,7 @@ HatateNews:
 BuyPeace:
   Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Gold">,
     heile {Value2} Leben.'
+  Name: Erpressung
 XiaosanJingxia:
   Name: Angst
   Description: '|Am Ende des Zuges|: Erhalte {Value1} |Geschwächt|.'
@@ -3021,6 +3081,44 @@ WhiteWorld:
 LunaDial:
   Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\n|Beim\
     \ Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName} {Mana} weniger."
+  Name: Persönlicher Raum
 HatateShot:
   Description: "Erhalte {Block} |Block|.\nErhalte zusätzlich {Value1} |Block| für\
     \ jedes unbenutzte Mana. (Zusätzliches |Block|: {Special})"
+BrainOverclock:
+  Description: "Erhalte {Mana}.\nZiehe {Value2:plural one='% Karte' other='% Karten'}.\n\
+    |Überziehen| {Value1}."
+  Name: Gehirn überlastet
+  FlavorText: Ihr Gehirn ist so riesig!
+BabyDream:
+  Description: "Erhalte {Block} |Block|.\n|Träume| {Value1}, spiele die erste |geträumte|\
+    \ Karte als |Folgeaktion|. "
+KoishiDive:
+  Description: "|Träume| {Value1}.\nFüge bis zu {Value2} |Traumkarte{Value2:plural\
+    \ one='' other='n'}| von deinem Ablagestapel deiner Hand hinzu."
+  Name: Gedanklich abtauchen
+Xiguadao:
+  Name: Wassermelonenklinge
+  FlavorText: ⑨mnislash!
+  Description: "Verursache an einem zufälligen Feind {Value1} Mal {Damage} Schaden.\n\
+    Erhalte {Value2} |Feuerkraft|."
+KnifeHell:
+  Description: "Füge {Value1} |Wurfmesser| deiner Hand hinzu.\nAlle |Wurfmesser| in\
+    \ deinem Ziehstapel, Ablagestapel und auf deiner Hand werden |aufgewertet|."
+  Name: Silberne Eleganz
+BackOfKnife:
+  Name: Wiederkehrende Klinge
+  Description: "Füge |Scharfer Klingenexpress| deiner Hand hinzu. \nEntferne alle\
+    \ |Wurfmesser| im |Exil| aus dem Spiel, erhöhe den Schaden um {Value1} für jede\
+    \ entfernte Karte.\n(Bonusschaden: {IncreasedDamage})"
+  NonbattleDescription: "Füge |Scharfer Klingenexpress| deiner Hand hinzu. \nEntferne\
+    \ alle |Wurfmesser| im |Exil| aus dem Spiel, erhöhe den Schaden um {Value1} für\
+    \ jede entfernte Karte."
+AncestorDream:
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Träume| {Value1},\
+    \ spiele die erste |geträumte| Karte als |Folgeaktion|. "
+  Name: Träume der Vorfahren
+FairyTrick:
+  Description: "Verliere {Value1} Leben.\nBeschwöre 3 |e:Lichtfeen|, füge dabei eine\
+    \ zufällige dieser Karten deiner Hand hinzu und mische die den Rest in deinen\
+    \ Ziehstapel."
