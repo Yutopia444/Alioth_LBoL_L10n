@@ -173,6 +173,7 @@ CallFriends:
   Name: Freunde Rufen
   Description: Wähle 1 von {Value1} |Partner| aus und füge sie deiner Hand hinzu.
     Sie ist bereits beschworen.
+  DetailText: Diese |e:alternativen Karten| können höchstens 4 Mana kosten.
 IceBarrier:
   Name: Eisbarriere
   Description: Erhalte {Value1} |Eisrüstung|.
@@ -251,6 +252,9 @@ TimeMagic:
     \ |Exil| und |Ätherisch|, koste{Level:plural one='t' other='n'} {Mana} weniger\
     \ und die Manakosten können mit jeder Farbe gezahlt werden.\nWiederhole diesen\
     \ Effekt zu Beginn deines Extrazuges."
+  DetailText: "|e:Alternative Karten| ignorieren Manakosten, Manafarben und Charakterbeschränkungen.\n\
+    {SelfName} kann nicht durch diesen Effekt erschaffen werden.\nDie mehrfache Anwendung\
+    \ von {SelfName} erhöht , nicht die Auswahl der Karten oder wie viele Karten pro."
 EvilMaid:
   Name: Dienstmädchen des Teufels
   Description: "Verliere {Value1} Leben.\nWährend deines nächsten Zuges verursachen\
@@ -336,6 +340,9 @@ Drunk:
 DreamExpress:
   Name: Traum-Express
   FlavorText: Sonnenuntergänge, Kokospalmen und durch das Cyberspace rasen.
+  Description: Am Ende deines Zuges, |Träume| {Value1} und verursache an allen Feinden
+    Schaden in Höhe der doppelten {Value1:plural one='' other='Summe der'} Manakosten
+    der |geträumten| Karte{Value1:plural one='' other='n'}.
 ReimuFestival:
   Name: Tanz der heiligen Sakura
   Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nZu Beginn deines Zuges erhält\
@@ -405,8 +412,8 @@ LigeluCard:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} <sprite=\"Point\" name=\"\
     Power\">."
 LimaoAttack:
-  Description: "Füge jedem Feind {Damage} Schaden zu. \nErhalte {GainMana}.\n|Wachstum|:\
-    \ Erhalte zusätzlich {Mana}."
+  Description: "Verursache an allen Feinden {Damage} Schaden. \nErhalte {GainMana}.\n\
+    |Wachstum|: Erhalte zusätzlich {Mana}."
 AyaExtraTurn:
   Name: Fantastischer Sturm
   Description: "Erhalte {Value1} |Ausweichen|.\nBeende den Zug von {PlayerName}. Erhalte\
@@ -668,6 +675,7 @@ KoishiWake:
     \ {Shield} |Barriere|.\n|Dissoziation|: Erhöhe die Anzahl an Karten, die während\
     \ |Dissoziation| gespielt werden können, um {Value1} und sende {SelfName} ins\
     \ |Exil|."
+  Name: Zur Besinnung kommen
 KoishiPlayDiscard:
   Name: Philosophie der Verachteten
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
@@ -685,7 +693,7 @@ AyaNewsMarisaSp:
   FlavorText: Ein Sonderbericht über die Exposition der Mondhauptstadt! Es enthält
     alle Gerüchte über {PlayerName}.
 KoishiAttackX:
-  Name: Höllenrose
+  Name: Hölle aus Rosen
   Description: '|Pro benutztes <sprite="ManaSprite" name="2">|: Verursache an allen
     Feinden {Damage} Schaden und erhalte {Mana}.'
 KoishiDna:
@@ -700,6 +708,9 @@ ButterflyDream:
     \ one='' other='n'} oben auf deinen Ziehstapel hinzu. Sie {Value1:plural one='hat'\
     \ other='haben'} |Nachschub|, |Exil| und |Ätherisch| und die Manakosten können\
     \ mit jeder Farbe gezahlt werden.\nZu Beginn deines Zuges, wiederhole diesen Effekt."
+  DetailText: "Diese |e:alternativen Karten| ignorieren Manakosten, Manafarben und\
+    \ Charakterbeschränkungen.\n{SelfName} kann nicht durch diesen Effekt erschaffen\
+    \ werden.\nKarten mit X Kosten können nicht durch diesen Effekt erschaffen werden."
 AyaNewsReimuSp:
   Name: Bunbunmaru - Reimu Sonderausgabe
   Description: '|Am Ende des Zuges|: Verliere {Value1} |Geist|.'
@@ -736,8 +747,8 @@ KoishiPhone:
   FlavorText: Dir ist es nicht gestattet diesen Anruf zu verpassen.
   Name: Erschreckend süßer Anruf
   Description: "Jedes Mal, wenn eine Angriffskarte gespielt wird, führe einen |Folgeangriff|\
-    \ aus.\nFalls sich keine |Folgeaktionen| mehr in deinem Ziehstapel befinden, wird\
-    \ |Ring-Ring| als |Folgeaktion| gespielt."
+    \ aus.\nFalls sich keine |Folgeaktionskarten| in deinem Ziehstapel befinden, wird\
+    \ |Klingelndes Telefon| als |Folgeaktion| verwendet."
 Fengmozhen4:
   Description: Verursache an allen Feinden {Damage} Schaden.
   UpgradedDescription: Verursache an allen Feinden {Value1} Mal {Damage} Schaden.
@@ -1009,9 +1020,13 @@ MoreFriends:
     \ Hand hinzu.\nSie {Value1:plural one='hat' other='haben'} |Ätherisch| und {Value1:plural\
     \ one='verliert' other='verlieren'} |Ätherisch|, nachdem sie beschworen wurde{Value1:plural\
     \ one='' other='n'}."
+  DetailText: Diese |e:alternativen Karten| können höchstens 4 Mana kosten.
 LunaticPassion:
   Name: Wahnsinnige Liebe
   FlavorText: '"Tatsächlich folge ich dir bereits seit dem letzten Durchlauf!"'
+  Description: "Der Schadensmodifikator von |Leidenschaft| für die Angriffe von {PlayerName}\
+    \ wird auf {Percentage}% geändert. Solange |Leidenschaft| aktiv ist, haben alle\
+    \ Angriffskarten |Präzise|.\nBetrete |Leidenschaft|."
 DeepFreeze:
   Name: Eiszapfentanz
   Description: Jedes Mal, wenn eine blaue Karte gespielt wird, erhält {PlayerName}
@@ -1123,7 +1138,7 @@ WolfFur:
   DetailText: Kann nicht durch die Option |Vorbereiten| nach Besiegen eines Bosses
     entfernt werden.
 KokoroFriend:
-  Description: '{FriendP}|Traum| {Value1}.'
+  Description: '{FriendP}|Träume| {Value1}.'
   ExtraDescription3: '{FriendU}Enter |Dissoziation|.'
   ExtraDescription1: '{FriendA}Betrete |Leidenschaft|.'
   FlavorText: Persona!
@@ -1355,7 +1370,7 @@ HatateDiscard:
 DoremyDuplicate:
   Name: Verloren im Paradies
   DetailText: Du kannst keine |Kopien| für diesen Effekt auswählen.
-  Description: Wähle eine Karte auf deiner Hand. Füge {Value1} |Kopie{Value1:plural
+  Description: Wähle eine Karte auf deiner Hand aus, füge {Value1} |Kopie{Value1:plural
     one='' other='n'}| deiner Hand hinzu.
   FlavorText: Wenn Doremy durstig wird, konzentriert sie sich auf die Träume von Menschen,
     die vor dem Schlafen gehen gerne viel Wasser trinken.
@@ -1432,6 +1447,7 @@ GuijiZaoxingHu:
   Description: "Verursache {Damage} Schaden.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\n{SelfName} transformiert sich bis zum Ende des Kampfes in eine andere\
     \ |e:Skulptur|."
+  Name: Skulptur - Ringe
 RumiaBlock:
   FlavorText: Wenn ich es nicht sehe, dann nehme ich auch 0 Schaden.
   Description: "Erhalte {Block} |Block|.\nFüge {Value1} |Schatten| deiner Hand hinzu."
@@ -1474,7 +1490,7 @@ WaterPrincess:
 GuijiZaoxingYuan:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\n{SelfName}\
     \ transformiert sich bis zum Ende des Kampfes in eine andere |e:Skulptur|."
-  Name: Skulptur - Kugel
+  Name: Skulptur - Kreis
 ShannvAttack:
   UpgradedDescription: "Verursache {Damage} Schaden.\nFüge allen Feinden {Value1}\
     \ |Gift| zu."
@@ -1515,7 +1531,7 @@ YonglinDraw:
   Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}. Karten, die auf
     diese Weise gezogen werden, |kosten temporär| {Mana} weniger.
 GuijiZaoxingFang:
-  Name: Skulptur - Würfel
+  Name: Skulptur - Viereck
   Description: "Verursache {Value1} Mal {Damage} Schaden.\n{SelfName} transformiert\
     \ sich bis zum Ende des Kampfes in eine andere |e:Skulptur|."
 ShopDefense:
@@ -1528,7 +1544,7 @@ ShopSearch:
   Name: Privates Radar
 SijiCard:
   Name: Urteil der Sünden
-  Description: Wähle eine Karte auf deiner Hand, sie erhält |Temporäres Beibehalten|
+  Description: Wähle eine Karte auf deiner Hand aus, sie erhält |Temporäres Beibehalten|
     und kostet bis zum Ende des Kampfes {Mana} weniger. Falls es eine |Unglücks-|
     oder Statuskarte ist, sende sie stattdessen ins |Exil|.
 HinaAttack:
@@ -1567,6 +1583,11 @@ FakeMoon:
   DetailText: Du kannst keine |Kopien| für diesen Effekt auswählen.
   FlavorText: Viel schöner als der echte Mond.
   Name: Falscher Mond
+  Description: "Wähle eine Karte auf deiner Hand aus, füge {Value1} |Kopie{Value1:plural\
+    \ one='' other='n'}| deiner Hand hinzu.\nSie {Value1:plural one='hat' other='haben'}\
+    \ |Exil| und |Ätherisch| und |{Value1:plural one='kostet' other='kosten'} temporär|\
+    \ {Mana}.\nFalls das Ziel eine |Talentkarte| ist oder |Exil| hat, wird sie zu\
+    \ einer |Kopie|."
 ShenziUpgradeAll:
   Name: Apotheose
   Description: Bis zum Ende des Kampfes werden alle Karten |aufgewertet|.
@@ -1589,6 +1610,7 @@ NiuqiDefense:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Block| für jede Karte\
     \ im Ablagestapel."
   FlavorText: Nur gut, dass sie nicht ein unsichtbares Baby großziehen muss.
+  Name: Baby aus Stein
 QinglanAttack:
   Description: "Verursache {Damage} Schaden.\n|Vorhersehung| {Scry}.\nZiehe {Value2:plural\
     \ one='% Karte' other='% Karten'}."
@@ -1686,6 +1708,7 @@ ZoufangSnake:
     \ neutralen |Talentkarten| aus und füge sie deiner Hand hinzu. Sie |kostet temporär|\
     \ {Mana}."
   Name: Verehrung einheimischer Götter
+  DetailText: Diese |e:alternativen Karten| ignorieren Manakosten und Manafarben.
 JingyeGraze:
   Description: "Erhalte {Value1} |Ausweichen|.\nErhalte {Value2} |Temporäre Feuerkraft|\
     \ für jedes |Ausweichen| von {PlayerName}."
@@ -1880,6 +1903,10 @@ ToAllFollower:
   Name: Überwältigende Emotionen
 FakeBullet:
   Name: Imaginäres Danmaku
+  Description: "Führe {Value1} |Folgeangriff{Value1:plural one='' other='e'}| aus.\n\
+    Falls sich nicht genügend |Folgeaktionskarten| in deinem Ziehstapel befinden,\
+    \ werden zufällige |Folgeaktionen| erschaffen, um die verbleibenden |Folgeangriffe|\
+    \ auszuführen."
 TheFool:
   Name: 'Tarot: Der Narr'
   Description: "|Vorhersehung| {Scry}.\nSpiele die oberste Karte in deinem Ziehstapel."
@@ -2251,12 +2278,13 @@ SakuyaWeak:
   Name: Zeitunterdrückung
   Description: "Füge {Value1} |Geschwächt| zu.\nErhalte {Mana}."
 Knife:
-  Description: "Verursache {Damage} Schaden.\n|Wenn {SelfName} die Hand verlässt|:\
-    \ Verursache dem Feind mit den wenigsten Leben {DropDamage} Schaden."
+  Description: "Verursache {Damage} Schaden.\n|Beim Verlassen der Hand ohne gespielt\
+    \ zu werden|: Verursache an dem Feind mit dem niedrigsten Leben {DropDamage} Schaden."
   Name: Wurfmesser
   FlavorText: Damit kommt man nicht durch die Sicherheitskontrolle.
   ExtraDescription1: "Verursache {Damage} Schaden.\nFüge {Value2} |Anvisieren| zu.\n\
-    ||: Verursache dem Feind mit den wenigsten Leben {DropDamage} Schaden."
+    |Beim Verlassen der Hand ohne gespielt zu werden|: Verursache an dem Feind mit\
+    \ dem niedrigsten Leben {DropDamage} Schaden."
 SakuyaTwiceAttack:
   Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFüge {Value2}\
     \ |Wurfmesser| deinem Ablagestapel hinzu."
@@ -2616,8 +2644,12 @@ Claustrophobia:
   Name: Klaustrophobie
 MultiFollower:
   Name: Tanz des Herzens
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\nZu Beginn des Kampfes oder\
+    \ wenn der Ziehstapel neu gemischt wird, lege {SelfName} unten in deinen Ziehstapel."
 BaseFollower:
   Name: Instinktive Liebe
+  Description: "Verursache {Damage} Schaden.\nZu Beginn des Kampfes oder wenn der\
+    \ Ziehstapel neu gemischt wird, lege {SelfName} unten in deinen Ziehstapel."
 BailianPower:
   Description: Erhalte {Value1} |Feuerkraft|.
   FlavorText: Die Schriften berichten über den BMI und das Aufbauen von Muskeln.
@@ -2629,6 +2661,7 @@ GrimoireStudy:
     \ one='' other='n'} deiner Hand hinzu. Sie {Value1:plural one='hat' other='haben'}\
     \ |Exil| und |Ätherisch| und |{Value1:plural one='kostet' other='kosten'} temporär|\
     \ {Mana}."
+  Name: Grimoire studieren
 XiaosanReflect:
   Description: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Reflektion|."
   Name: Danmaku Gegenangriff
@@ -2642,6 +2675,8 @@ YijiuAttack:
   Name: Donnerblitz des Drachengottes
 YukariFlyObject:
   FlavorText: Für das bloße Auge viel zu schnell.
+  Description: Zu Beginn deines nächsten Zuges, verursache an dem Feind mit dem höchsten
+    Leben {Value1} Schaden.
 DollFactory:
   Description: (WIP) 
 AutoHousework:
@@ -2695,6 +2730,9 @@ LilyChun:
   Description: "Füge {Value1} zufällige Karte{Value1:plural one='' other='n'}, that\
     \ {Value1:plural one='has' other='have'} a total cost of 1 deiner Hand hinzu.\
     \ Sie {Value1:plural one='hat' other='haben'} |Exil| und |Ätherisch|.\n"
+  DetailText: "Diese |e:alternativen Karten| ignorieren Charakterbeschränkungen.\n\
+    Durch eine |Aufwertung| ignorieren sie auch Manakosten und Manafarben.\n{SelfName}\
+    \ kann nicht durch diesen Effekt erschaffen werden."
 Zhulianshen:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Bannkreis|."
   Name: Shimenawa
@@ -2848,6 +2886,7 @@ LanCard:
   Description: Wähle 1 von {Value1} zufälligen, ungewöhnlichen Karten aus und füge
     sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
   Name: Shikigami-Schutz
+  DetailText: Diese |e:alternativen Karten| können höchstens 5 Mana kosten.
 SanaeStar:
   Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nErhalte {Value2}\
     \ |Göttliche Gunst|."
@@ -2902,6 +2941,8 @@ XiaodingKill:
   Description: Falls das Ziel {Value1} oder weniger Leben hat, besiege es sofort.
 FutoLight:
   Name: Oomonoimis Bankett
+  Description: Alle Karten auf deiner Hand mit mindestens 2 Manakosten |kosten temporär|
+    {Mana}.
 QingeUpgrade:
   Description: "Verursache {Damage} Schaden.\n|Auslöschung|: Eine zufällige Karte\
     \ wird dauerhaft |aufgewertet|."
@@ -3093,6 +3134,7 @@ BrainOverclock:
 BabyDream:
   Description: "Erhalte {Block} |Block|.\n|Träume| {Value1}, spiele die erste |geträumte|\
     \ Karte als |Folgeaktion|. "
+  Name: Traum eines Embryos
 KoishiDive:
   Description: "|Träume| {Value1}.\nFüge bis zu {Value2} |Traumkarte{Value2:plural\
     \ one='' other='n'}| von deinem Ablagestapel deiner Hand hinzu."
@@ -3122,3 +3164,10 @@ FairyTrick:
   Description: "Verliere {Value1} Leben.\nBeschwöre 3 |e:Lichtfeen|, füge dabei eine\
     \ zufällige dieser Karten deiner Hand hinzu und mische die den Rest in deinen\
     \ Ziehstapel."
+MoodAttack:
+  Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} ihren |Mentalen\
+    \ Zustand| ändert, füge {SelfName} von deinem Ablagestapel deiner Hand hinzu."
+  Name: Empathische Klinge
+ChooseFriend:
+  DetailText: Diese |e:alternativen Karten| ignorieren Manakosten, Manafarben und
+    Charakterbeschränkungen und können höchstens 4 Mana kosten.
