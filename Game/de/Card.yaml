@@ -234,6 +234,9 @@ HuiyeSuperExtraTurn:
   Description: "Am Ende deines natürlichen Zuges, erhalte einen Extrazug.\n|Block|\
     \ is not lost at the start of that extra turn, and only {Value1} card{Value1:plural\
     \ one='' other='s'} may be played."
+  DetailText: "Der Extrazug von {SelfName} beginnt immer vor allen anderen Extrazügen.\n\
+    Nachdem {SelfName} gespielt wurde, können die Details des  {PlayerName}'s status\
+    \ icons to check the details of the current turn."
 BrokenTimeline:
   Name: Kaputte Zeitlinie
   Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Zu Beginn
@@ -241,6 +244,8 @@ BrokenTimeline:
   FlavorText: Diese Zeitlinie ist nicht mehr zu retten, auf zur Nächsten.
 LoveLetter:
   Name: Liebesbrief
+  Description: Gib es dem <color=#eab8bf>Liebeskranken Mädchen</color>, sie wird sehr
+    glücklich darüber sein.
 StopTime:
   Name: Eingefrorene Zeit
   Description: Am Ende deines Zuges behält {PlayerName} {Value1} zufälliges, unbenutztes
@@ -302,6 +307,9 @@ BManaCard:
 QiannianShenqiCard:
   Name: MEIN Zug
   FlavorText: Ich ziehe!
+  Description: "Bis zum Ende des Kampfes dürfen Karten über das Limit von |e:Pyramidenförmiges\
+    \ Puzzle| gezogen werden, verliere {Value1} Leben für jede gezogene Karte über\
+    \ dem Limit.\n|Limitiert【{DeckCounter}】|"
 ReverseJiejie:
   Name: Umgekehrte Grenze
   FlavorText: Glück und Unglück sind zwei Hälften derselben Münze.
@@ -337,6 +345,10 @@ MeihongPower:
     \ life."
 Drunk:
   Name: Betrunken
+  Description: "|Auf der Hand|: Es können nur {Value1} Karten pro Zug gespielt werden.\n\
+    (Gespielte Karten: {Count})"
+  NonbattleDescription: '|Auf der Hand|: Es können nur {Value1} Karten pro Zug gespielt
+    werden.'
 DreamExpress:
   Name: Traum-Express
   FlavorText: Sonnenuntergänge, Kokospalmen und durch das Cyberspace rasen.
@@ -447,10 +459,13 @@ YuyukoMisfortune:
   FlavorText: Ich frage mich manchmal, falls eine Person die "Fähigkeit zu sterben"
     verliert, ist das dann wirklich noch ein Mensch?
   Name: Schleichender Hunger
+  Description: '|Auf der Hand|: Jedes Mal, wenn {PlayerName} eine Karte spielt, verliere
+    {Value1} Leben.'
 Psychedelic:
   FlavorText: '"Träume ich etwa noch?"'
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben und erhalte {Value2}
     <sprite="Point" name="Power">.'
+  Name: Psychedelisch
 FanzhuanChongdong:
   Name: Umgekehrter Hunger
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben, falls in diesem Zug
@@ -522,6 +537,7 @@ Nightmare:
     \ Spiel."
 BlackResidue:
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben.'
+  Name: Dunkle Rückstände
 Bribery:
   FlavorText: '"Du glaubst, reich zu sein macht dich so großartig? Und das ich dich
     deswegen schonen werde? Dann liegst du absolut richtig~"'
@@ -535,10 +551,12 @@ NightMana2:
   Name: 'Lange Nacht: 01:00 Uhr'
 Wushuai:
   Name: Schimmerndes Schwert
+  Description: '|Beim Ziehen dieser Karte|: Erhalte {Value1} |Anvisieren| und sende
+    {SelfName} ins |Exil|.'
 SweetPoison:
   FlavorText: Eirin! Eirin! Tasukete EIRIN!
   Name: Süßes Gift
-  Description: '|Am Ende des Zuges|: Erleide {Value1} |Gift|.'
+  Description: '|Am Ende des Zuges|: Erhalte {Value1} |Gift|.'
 Pressure:
   Name: Unsichtbarer Druck
   Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Power">.'
@@ -659,6 +677,7 @@ AyaNewsSakuyaSp:
     alle Gerüchte über {PlayerName}.
 Yueguang:
   Name: Stilles Mondlicht
+  Description: '|Beim Ziehen dieser Karte|: Verliere {Value1} zufälliges Mana.'
 FrozenThrone:
   Name: Gefrorener Thron
   FlavorText: Now, we are one!
@@ -718,6 +737,11 @@ AyaNewsReimuSp:
     alle Gerüchte über {PlayerName}.
 KoishiDiscard:
   Name: Unbewusste Amnesie
+  Description: '|Beim Ziehen dieser Karte|: Werfe eine zufällige Karte ab.'
+  DetailText: Falls ein anderes Exemplar von {SelfName} durch diesen Effekt abgeworfen
+    wird, sende es stattdessen ins |Exil|.
+  ExtraDescription1: "|Beim Ziehen dieser Karte|: Werfe eine zufällige Karte ab.\n\
+    Abgeworfen: {CardName}"
 KoishiDrawTop:
   FlavorText: '"Ich weiß bereits wer der Übeltäter ist!"'
   Name: Unüberlegtes Reden
@@ -980,6 +1004,7 @@ MorphBird:
   Name: Gestalt des Vogels
 CloseEyeShoot:
   Description: Verursache an einem zufälligen Feind {Value1} Mal {Damage} Schaden.
+  Name: Blinder Schuss
 TuimofuLuanwu:
   Description: Verursache an einem zufälligen Feind {Value1} Mal {Damage} Schaden.
   Name: Wilder Exorzismustanz
@@ -1124,6 +1149,7 @@ SunnyFriend:
     Schaden.'
 Chunguang:
   Name: Pure Lichtstrahlen
+  Description: '|Beim Ziehen dieser Karte|: |Läutere| {Value1} Mana.'
 LeiguAttack:
   Name: Taiko-Trommel
   Description: "Verursache an allen Feinden {Damage} Schaden.\nVerursache an Feinden\
@@ -1464,6 +1490,7 @@ ShenziWake:
   Description: Wähle 1 von {Value1} zufälligen Karten mit Gesamtkosten von X+1 aus
     und füge sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch| und |kostet
     temporär| {Mana}.
+  Name: Wiederbelebung des Heiligen
 RingoJinghua:
   Description: "Sende bis zu {Value1} Karten von deiner Hand ins |Exil|.\nErhalte\
     \ {Value2} <sprite=\"Point\" name=\"Power\">."
@@ -1619,6 +1646,7 @@ QinglanAttack:
 Payment:
   Description: "Zahle {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nDer <color=#b7646b>Betrügerischer\
     \ Mondhase</color> verlässt den Kampf."
+  Name: Überweisung
 ToolRandomTool:
   Name: Taktisches Funkgerät
   Description: "Wähle 1 von {Value1} zufälligen |Werkzeugkarten| aus und füge sie\
@@ -1783,6 +1811,7 @@ LongArm:
   Description: "Verursache {Damage} Schaden.\nFalls sich mindestens {Value1} Karte{Value1:plural\
     \ one='' other='n'} auf deiner Hand befinde{Value1:plural one='t' other='n'},\
     \ erhalte {Mana}."
+  Name: Verlängerter Arm
 FangxiangAttack:
   Description: "Verursache an einem Feind mit |Gift| {Value2} Mal {Damage} Schaden.\n\
     Füge ansonsten {Value1} |Gift| zu."
@@ -2109,6 +2138,7 @@ KoishiSpringOut:
   Name: Frühlingsurlaub
 DebugExileDrawDiscard:
   Description: 'Testkarte: Sende deinen Zieh- und Ablagestapel ins |Exil|.'
+  Name: Stapel ins Exil senden
 PassionAttackToDraw:
   Name: Rosenkäfig
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nBetrete |Leidenschaft|.\n\
@@ -3018,6 +3048,7 @@ KnifeDamageUp:
 Yuebiao:
   FlavorText: Ein trostloses Ödland.
   Name: Mondlandschaft
+  Description: '|Beim Ziehen dieser Karte|: |Läutere| {Value1} Mana.'
 HatateNews:
   Name: Kakashi Geisternachrichten
 BuyPeace:
@@ -3171,3 +3202,18 @@ MoodAttack:
 ChooseFriend:
   DetailText: Diese |e:alternativen Karten| ignorieren Manakosten, Manafarben und
     Charakterbeschränkungen und können höchstens 4 Mana kosten.
+HualiIce:
+  Name: Wundervolles Sommereis
+DebugRemoveAllHandWhenDraw:
+  Name: Beim Ziehen alle Karten auf der Hand entfernen
+  Description: 'Testkarte: Beim Ziehen dieser Karte werden alle Karten auf der Hand
+    aus dem Spiel entfernt (einschließlich dieser Karte).'
+DebugUpgradeAllZone:
+  Name: Karten in allen Stapeln aufwerten
+  Description: 'Testkarte: Die obersten {Value1} Karten in deinem Zieh- und Ablagestapel
+    werden |aufgewertet|.'
+DebugPlaySelectCard:
+  Description: "Testkarte: Wähle bis zu {Value1} Karten auf dem Schlachtfeld und spiele\
+    \ sie als Folgeaktion.\nReihenfolge der Folgeaktionen: Hand, Ziehstapel, Ablagestapel,\
+    \ Exil."
+  Name: Spiele Karten vom Schlachtfeld

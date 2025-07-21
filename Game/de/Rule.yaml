@@ -36,36 +36,26 @@ PlayCard:
   Name: Folgeaktionen
   Description: "Das Koishi-Update hat Folgeaktionen in das Spiel eingeführt. Diese\
     \ Mechanik funktioniert dabei wie folgt:\n\n1. Eine Karte normal zu spielen und\
-    \ durch eine Folgeaktion zu aktivieren sind zwei verschiedene Dinge, ähnlich wie\
-    \ natürliche Züge und Extrazüge. Üblicherweise \n1. Playing a card normally and\
-    \ playing a Follow-Up card are two different actions, similar to natural turns\
-    \ and extra turns. Typically, a Follow-Up card play will follow a normal card\
-    \ play.\n2. Folgeaktionen aktivieren keine Effekte, die auf das (z.B. Zähler ),\
-    \ like enemy Remilia's card count, counts of cards like \"End of Imperishable\
-    \ Night\", \"Drunk\", \"Stunning Summer Ice\" and counts of exhibits like \"Silver\
-    \ Pocket Watch\".\n2. A Follow-Up card play does not trigger effects that react\
-    \ to a normal card play, like enemy Remilia's card count, counts of cards like\
-    \ \"End of Imperishable Night\", \"Drunk\", \"Stunning Summer Ice\" and counts\
-    \ of exhibits like \"Silver Pocket Watch\".\n3. Folgeaktionen priorisieren das\
-    \ gleiche Ziel wie die Karte, die normal gespielt wurde. Falls das Ziel ungültig\
-    \ ist, wird stattdessen ein zufälliges Ziel ausgewählt. Betrifft hauptsächlich\
-    \ Angriffskarten.\n4. Folgeaktionskarten verbrauchen kein Mana. Falls aber ein\
-    \ anderer Effekt das Auspielen der Karte verhindern würde, dann wird die Karte\
-    \ stattdessen in den Ablagestapel gelegt, ohne den Effekt zu aktivieren. (z.B.\
-    \ Effekte wie Unspielbar oder )\n4. Follow-Up cards do not consume mana. However,\
-    \ if there are other effects that prevent the card from being played normally,\
-    \ it will not activate, and will instead enter the discard pile. (Effects like\
-    \ Unplayable, insufficient gold while the card has a gold cost, etc.)\n5. If the\
-    \ Follow-Up card played has an effect prerequisite on cards like \"News Fabrication\"\
-    , such effect prerequisites would have been cancellable when the card is played\
-    \ normally, but if the card is played as a Follow-Up card, it cannot be cancelled.\n\
-    6. Folgeaktionskarten werden immer unterbrochen, sobald der Kampf zuvor endet,\
-    \ auch wenn durch die Folgeaktion vorteilhafte Effekte aktiviert \n6. Follow-Up\
-    \ card plays will be interrupted by the ending of the combat, even if the card\
-    \ that would have been played has effects that would gain life, or other similar\
-    \ effects.\n7. Interaktion mit X Kosten: Folgeaktionskarten werden immer .\n7.\
-    \ Interaction with X cost cards: The Follow-Up card played will be treated as\
-    \ being played with 0 cost."
+    \ durch eine Folgeaktion zu spielen sind zwei verschiedene Aktionen, ähnlich wie\
+    \ natürliche Züge und Extrazüge. Üblicherweise aktiviert sich eine Folgeaktion\
+    \ nach einer zuvor normal gespielten Karte.\n2. Folgeaktionen aktivieren keine\
+    \ Effekte, die auf das Ausspielen von Karten reagieren (z.B. die Effekte von \"\
+    Betrunken\" oder \"Wundervolles Sommereis\", das Ausstellungsstück \"Silberne\
+    \ Taschenuhr\" oder die Zähler von Remilia oder \"Ende einer unvergänglichen Nacht\"\
+    ).\n3. Folgeaktionen priorisieren das gleiche Ziel wie die Karte, die normal gespielt\
+    \ wurde. Falls das Ziel ungültig ist, wird stattdessen ein zufälliges Ziel ausgewählt.\
+    \ Dies betrifft hauptsächlich Angriffskarten.\n4. Folgeaktionen verbrauchen kein\
+    \ Mana. Falls aber ein anderer Effekt das Ausspielen der Karte verhindern würde,\
+    \ dann wird die Karte stattdessen in den Ablagestapel gelegt, ohne den Effekt\
+    \ zu aktivieren (z.B. Effekte wie Unspielbar oder eine unzureichende Menge Gold\
+    \ bei Karten mit Goldkosten).\n5. Falls für eine Folgeaktion eine Bedingung erfüllt\
+    \ werden muss (z.B. wie bei \"Nachrichtenfabrikation\"), dann ist es nicht möglich\
+    \ die Aktivierung abzubrechen. Bei normal gespielten Karten kann die Aktivierung\
+    \ vor Erfüllung der Bedingung abgebrochen werden.\n6. Folgeaktionen werden immer\
+    \ unterbrochen, sobald der Kampf zuvor endet, auch wenn durch die Folgeaktion\
+    \ vorteilhafte Effekte wie die Heilung von Leben aktiviert werden könnten.\n7.\
+    \ Interaktion mit X Kosten: Folgeaktionen werden immer so behandelt, als hätte\
+    \ man 0 Mana dafür benutzt."
 CardPool:
   Name: Kartenpool
   Description: "Du kannst gewisse Karten nur als Belohnung erhalten, wenn folgende\
@@ -146,6 +136,28 @@ FriendCard:
     \ begrenzen. Dies würde allerdings das Prinzip einer solchen Fähigkeit widersprechen."
 PlayTwice:
   Name: Karten zweimal ausspielen
+  Description: "Ein spezieller Fall von Folgeaktionen sind Karten, die durch einen\
+    \ Effekt zweimal ausgespielt werden. It goes by the following rules.\n\n1. Dieser\
+    \ Effekt wirkt sich nur auf normal gespielte Karten aus, Folgeaktionen werden\
+    \ somit nicht XXX.\n\n2. Hier noch einmal im Detail: When a normal card play occurs,\
+    \ if it's going to be played twice, dann wird vor der Aktivierung des Effekts\
+    \ ein Schnappschuss dieser Karte erschaffen und nachdem der Effekt, wird der Schnappschuss\
+    \ aktiviert und danach vom Spiel entfernt.\n\n3. Ein Schnappschuss unterscheidet\
+    \ sich von einer Kopie, daher greifen die Regeln für Kopien nicht bei Schnappschüssen.\n\
+    Pros for the player: The player can use the Ultimate Skill of a teammate twice,\
+    \ use a tool twice by only consuming one Limited count, and can use \"Devour History\"\
+    \ twice.\nCons for the player: A copy of the teammate cannot be obtained when\
+    \ summoning a teammate, and Growth on cards cannot be triggered twice.\nThe reason\
+    \ this is handled differently from Slay the Spire is because of the existence\
+    \ of teammates, you for sure don't want to summon \"Daiyousei, Lively Assistant\"\
+    \ only to immediately use her Active Skill.\n\n4. Der Spieler kann weder Schnappschüsse\
+    \ noch Kopien davon erhalten (z.B. wenn eine Karte mit Echo doppelt gespielt wurde,\
+    \ dann wird vom Schnappschuss keine Kopie erschaffen).\n\n5. Interaktionen mit\
+    \ Extrazügen: Schnappschüsse von \"Zeitreise\" haben keinen Effekt, die meisten\
+    \ anderen Karten verleihen dem Spieler jedoch zwei Extrazüge und beenden nur den\
+    \ aktuellen Zug (Es wird noch geprüft, ob diese Interaktion nicht doch zu stark\
+    \ ist).\n\n6. Interaktionen mit X Kosten: Schnappschüsse werden so behandelt,\
+    \ and there will be two full triggers."
 BossLoot:
   Name: Boss Belohnungen
   Description: "Das Besiegen eines Bosses bietet dir die Wahl zwischen 3 verschiedenen\
