@@ -34,6 +34,7 @@ SakuyaAttackW:
   Name: Fehlleitung
 SakuyaBlockW:
   Description: Erhalte {Block} |Block|.
+  Name: Defensive der schwarzen Schlüssel
 CirnoConsider:
   ExtraDescription1: Erhalte {Block} |Block|.
   ExtraDescription2: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
@@ -101,6 +102,7 @@ CirnoAttackU:
     mit ihren Freunden hatte.
 SakuyaZeroDefense:
   Description: Erhalte {Block} |Block|.
+  Name: Danmaku reflektieren
 AliceBlockB:
   Description: Erhalte {Block} |Block|.
   Name: Alice B Abwehr
@@ -171,9 +173,12 @@ ReimuBlockR:
   FlavorText: Der Retter kann Kugeln mit der bloßen Hand stoppen.
 CallFriends:
   Name: Freunde Rufen
-  Description: Wähle 1 von {Value1} |Partner| aus und füge sie deiner Hand hinzu.
-    Sie ist bereits beschworen.
+  Description: Wähle 1 von {Value1} |Partnerkarten| aus, füge sie deiner Hand hinzu
+    und beschwöre sie.
   DetailText: Diese |e:alternativen Karten| können höchstens 4 Mana kosten.
+  UpgradedDescription: "Wähle 1 von {Value1} |Partnerkarten| aus, füge sie deiner\
+    \ Hand hinzu und beschwöre sie.\nEine |e:Lichtfee| steht immer als zusätzliche\
+    \ Option zur Auswahl."
 IceBarrier:
   Name: Eisbarriere
   Description: Erhalte {Value1} |Eisrüstung|.
@@ -224,6 +229,12 @@ FinalSpark:
   ExtraDescription1: "Verursache an allen Feinden {Damage} Schaden.\n|d:Überfluss:\
     \ Erhalte {Mana}.|"
   FlavorText: '"Bei Danmaku kommt es nur auf die Feuerkraft an!"'
+  UpgradedDescription: "Verursache an allen Feinden {Damage} Schaden.\nJedes Mal,\
+    \ wenn {PlayerName} |Durchbruch| betritt, füge {SelfName} von deinem Ablagestapel\
+    \ deiner Hand hinzu.\n|Überfluss|: Erhalte {Mana}."
+  UpgradedExtraDescription1: "Verursache an allen Feinden {Damage} Schaden.\nJedes\
+    \ Mal, wenn {PlayerName} |Durchbruch| betritt, füge {SelfName} von deinem Ablagestapel\
+    \ deiner Hand hinzu.\n|d:Überfluss: Erhalte {Mana}.|"
 KokoroDance:
   Name: Tanz der leeren Masken
   Description: "Jedes Mal, wenn ein Feind einen negativen Effekt erleidet, verursache\
@@ -271,6 +282,10 @@ AutoKnife:
 FreezeBullet:
   Name: Eingefrorene Geschosse
   FlavorText: Cirno ist unsere Erlöserin!
+  Description: "Erhalte {Block} |Block|.\nBis zu deinem nächsten Zug, füge dem ersten\
+    \ Feind der {PlayerName} angreift |Kälte| zu."
+  UpgradedDescription: "Erhalte {Block} |Block|.\nBis zu deinem nächsten Zug, füge\
+    \ den ersten beiden Feinden die {PlayerName} angreifen |Kälte| zu."
 CirnoDraw:
   Name: Feenintellekt
   Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
@@ -577,6 +592,10 @@ PrismriverAll:
     \ Mondlicht| und |Glamouröses Sternenlicht| deinem Ablagestapel hinzu."
 ColdHearted:
   Name: Kaltblütig
+  Description: "Bis zum Ende des Zuges verursacht |Eislanze| an Feinden mit |Kälte|\
+    \ dreifachen Schaden.\nFüge {Value1} |Eislanze| deiner Hand hinzu. Sie {Value1:plural\
+    \ one='hat' other='haben'} |Exil| und |Ätherisch| und |{Value1:plural one='kostet'\
+    \ other='kosten'} temporär| {Mana}."
 SanaeRestart:
   Description: "Lege alle Karten aus dem Ablagestapel und auf der Hand in den Ziehstapel\
     \ und mische den Ziehstapel neu.\nZiehe {Value1} Karte{Value1:plural one='' other='n'}.\n\
@@ -1058,6 +1077,11 @@ DeepFreeze:
     {Value1} |Temporäre Feuerkraft|.
 GatherFairy:
   Name: Feenversammlung
+  UpgradedDescription: "Die maximale Anzahl an Handkarten wird auf {MaxHand} gesetzt.\n\
+    Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nAlle |Partner| auf der\
+    \ Hand erhalten {Value2} |Einigkeit|."
+  Description: "Die maximale Anzahl an Handkarten wird auf {MaxHand} gesetzt.\nZiehe\
+    \ {Value1:plural one='% Karte' other='% Karten'}."
 SanaeMiracle:
   Name: Stargast des Tages
   Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFalls\
@@ -1079,6 +1103,10 @@ FairyWrath:
     \ deiner Hand hinzu."
 FairyTeam:
   Name: Großer Feenkrieg
+  Description: "Wähle eine beliebige Anzahl an |Partner| auf deiner Hand aus und sende\
+    \ sie ins |Exil|. Erhalte Mana abhängig ihrer Manakosten.\nVerursache an einem\
+    \ zufälligen Feind {Damage} Schaden.\nVerursache für jede Karte, die durch diesen\
+    \ Effekt ins |Exil| gesendet wurde, ein weiteres Mal Schaden."
 LarvaFriend:
   Description: '{FriendP}Füge einem zufälligen Feind {Value1} |Gift| zu.'
   FlavorText: Vergiss nicht dir die Hände zu waschen, nachdem du ihre Hand geschüttelt
@@ -1147,6 +1175,8 @@ SunnyFriend:
     \ Zug' other='% Züge'}."
   Description: '{FriendP}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
     Schaden.'
+  ExtraDescription3: "{FriendU}Verursache {Value1} Mal den Schaden sofort. \nErhalte\
+    \ {Value2} |Feuerkraft|."
 Chunguang:
   Name: Pure Lichtstrahlen
   Description: '|Beim Ziehen dieser Karte|: |Läutere| {Value1} Mana.'
@@ -1961,6 +1991,8 @@ HuoliQuankai:
   Description: "Wenn |Durchbruch| aktiv ist, {PlayerName}'s Angriffe verursachen die\
     \ dreifache Menge an Schaden.\nErhalte {Value1} |Aufladung{Value1:plural one=''\
     \ other='en'}|."
+  UpgradedDescription: "Solange |Durchbruch| aktiv ist, verursachen Angriffe von {PlayerName}\
+    \ dreifachen Schaden.\nBetrete |Durchbruch|."
 MasterOfCollection:
   Name: Meistersammler
   Description: "Wähle bis zu {Value2:plural one='% Karte' other='% Karten'} auf deiner\
@@ -1974,12 +2006,17 @@ ChargingPotion:
     \ one='% |Aufladung|' other='% |Aufladungen|'}.\nFüge {Value2} |Instabiler Trank|\
     \ deiner Hand hinzu."
 StarlightTaifengSummoner:
-  Description: "Füge |Sternenlicht-Taifun| deinem Ziehstapel hinzu.\n|For each {Mana}\
-    \ spent|: The added card deals damage an additional time.\n|For each <sprite=\"\
-    ManaSprite\" name=\"R\"> spent|: Verursache {Value1} zusätzlichen Schaden."
+  Description: "Füge |Sternenlicht-Taifun| deinem Ziehstapel hinzu.\n|Pro benutztes\
+    \ {Mana}|: Die hinzugefügte Karte verursacht ein weiteres Mal Schaden.\n|Pro benutztes\
+    \ <sprite=\"ManaSprite\" name=\"R\">|: Die hinzugefügte Karte verursacht {Value1}\
+    \ zusätzlichen Schaden."
   FlavorText: Sammle Mana für ein Jahrtausend, um alles in einem kurzen Augenblick
     freizulassen.
   Name: Zusammenlaufendes Sternenlicht
+  UpgradedDescription: "Füge |Sternenlicht-Taifun| oben auf deinem Ziehstapel hinzu.\n\
+    |Pro benutztes {Mana}|: Die hinzugefügte Karte verursacht ein weiteres Mal Schaden.\n\
+    |Pro benutztes <sprite=\"ManaSprite\" name=\"R\">|: Die hinzugefügte Karte verursacht\
+    \ {Value1} zusätzlichen Schaden."
 StarlightTaifeng:
   Name: Sternenlicht-Taifun
   FlavorText: "\"Finaler Angriff! Warte einen Moment, lass mich kurz nachschauen,\
@@ -2048,6 +2085,7 @@ FindCollection:
     \ hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.\n\nnon-{PlayerName}\
     \ cards to add to the hand."
   FlavorText: Ein Muss für jedes unterirdische Abenteuer.
+  Name: Fernwartung
 WhiteLaser:
   Description: "Verursache {Damage} Schaden.\nErhalte {Shield} |Barriere|. Dieser\
     \ Effekt wird durch |Durchbruch| beeinflusst."
@@ -2069,6 +2107,7 @@ SplitPotion:
     Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu."
   FlavorText: Eine schnelle und einfache Methode, um bei der Herstellung von Tränken
     zu sparen.
+  Name: Chemische Synthese
 RedMogu:
   Name: Fliegenpilz
   Description: Füge {Value1} |Gift| zu.
@@ -2091,6 +2130,7 @@ LunaFriend:
     Schaden.'
   ExtraDescription3: "{FriendU}Erhalte |Makellos| für {Value2:plural one='% Zug' other='%\
     \ Züge'}."
+  Name: Luna, Stilles Mondlicht
 PeaceEndTurn:
   UpgradedDescription: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'}\
     \ auf deiner Hand oder füge {Value1:plural one='% Karte' other='% Karten'} von\
@@ -2108,6 +2148,9 @@ DuplicateFollower:
     \ Ziehstapel hinzu."
 StarFriend:
   Description: '{FriendP}Verursache an allen Feinden {Damage} Angriffsschaden.'
+  ExtraDescription1: '{FriendA}Verursache {Value1} Mal den Schaden sofort.'
+  ExtraDescription3: "{FriendU}Jedes Mal, wenn {SelfName} Schaden verursacht, füge\
+    \ {Light} |Anvisieren| zu. \nVerursache {Value2} Mal den Schaden sofort."
 MoodChangeBlock:
   Description: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte
     {Value1} |Block|.
@@ -2204,12 +2247,14 @@ SilverBullet:
     \ Ablagestapel und auf deiner Hand. (Anzahl |Wurfmesser|: {KnifeCount})"
   FlavorText: Man kann damit schöne Muster auf die Kleidung der Feinde stricken, oder
     sogar auf die Feinde selbst.
+  Name: Silberner Garn
 TimeAuraAttack:
   Name: Räumliche Illusion
   Description: "Verursache {Damage} Schaden.\nErhalte {Value1} |Zeitimpuls|."
 LightSpeed:
   Description: "Verursache {Damage} Schaden.\nFalls in diesem Zug eine Karte abgeworfen\
     \ wurde, erhalte {Mana}."
+  Name: Lichtgeschwindigkeitssprung
 SakuyaGoOut:
   FlavorText: Kleider machen Leute und Kostüme machen Dienstmädchen.
   Name: Reisevorbereitung
@@ -2233,6 +2278,7 @@ PrivateVision:
   UpgradedDescription: "Werfe eine Karte ab.\nErhalte {Value1} |Ausweichen|.\nErhalte\
     \ {Value2} |Reflektion|."
   Description: "Werfe eine Karte ab.\nErhalte {Value1} |Ausweichen|."
+  Name: Nachbild
 Dejavu:
   Name: Déjà Vu
   Description: "Lege bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner\
@@ -2297,8 +2343,12 @@ SakuyaClock:
   Name: Sakuyas besondere Uhr
   FlavorText: Welche App muss ich installieren, damit meine digitale Uhr die gleichen
     Funktionen hat?
+  Description: "Verursache {Damage} Schaden.\nFalls ein Feind durch {SelfName} besiegt\
+    \ wird, sende diese Karte ins |Exil|, beende den Zug von {PlayerName} und erhalte\
+    \ einen Extrazug."
 TimeLord:
   Description: Erhalte {Value1} |Zeitimpuls{Value1:plural one='' other='e'}|.
+  Name: Beherrschung von Raum und Zeit
 JinziDoppelganger:
   Name: Jahrhundert-Doppelgänger
 ExileMagic:
@@ -2528,6 +2578,7 @@ MeilingRain:
 ChargingToMana:
   Description: Verliere alle |Aufladungen|. Für jede verlorene |Aufladung|, ziehe
     eine Karte und erhalte {Mana}.
+  Name: Energieumwandlung
 DiscardToCharging:
   Description: "Werfe eine beliebige Anzahl an Karten ab.\nFür jede abgeworfene Karte,\
     \ erhalte {Value1} |Aufladung{Value1:plural one='' other='en'}|."
@@ -2560,6 +2611,12 @@ MaidFriend:
   Name: Kasumi, Dienstmädchen der Villa
   FlavorText: Von allen Feen-Dienstmädchen in der Scharlachrote Teufelsvilla ist Kasumi
     die gewissenhafteste.
+  Description: '{FriendP}Verursache an dem Feind mit dem niedrigsten Leben {Damage}
+    Angriffsschaden.'
+  ExtraDescription1: '{FriendA}Verursache den Schaden sofort. Füge {Value2} |Wurfmesser|
+    deiner Hand hinzu.'
+  ExtraDescription3: '{FriendU}Verursache den Schaden sofort. Alle Exemplare von {SelfName}
+    verursachen {Value1} zusätzlichen Schaden.'
 BlueRose:
   Name: Kalte Rose
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden."
@@ -2620,12 +2677,14 @@ FreezeToIce:
     Menge |Eisflügel| deinem Ziehstapel hinzu.
   Description: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner
     Hand ins |Exil|, füge die gleiche Menge |Eisflügel| deinem Ziehstapel hinzu.
+  Name: Tiefgefrorene Exemplare
 OptBottom:
   Description: Lege {TargetName} unten in deinen Ziehstapel.
   FlavorText: Es ist kein Unfall, dass es zu einem Unfall kam.
   Name: Sinken
 ShiverArmor:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Eisrüstung|."
+  Name: Lichtbrechender Spiegel
 LeaveMoodGraze:
   Description: "Erhalte {Value1} |Ausweichen|.\nVerlasse deinen |Mentalen Zustand|."
   Name: Verschleierung der Präsenz
@@ -2928,6 +2987,7 @@ LarvaDefense:
   Description: "Erhalte {Block} |Block|.\nFüge allen Feinden {Value1} |Geschwächt|\
     \ zu.\nFalls sich eine beschworene |Larva, Göttin der ewigen Nacht| auf deiner\
     \ Hand befindet, füge allen Feinden {Value2} |Gift| zu."
+  Name: Flügelschlag
 FairyAllOut:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nAktiviere die |f:Passive\
     \ Fähigkeit| aller beschworenen |Partner| auf deiner Hand."
@@ -3019,6 +3079,7 @@ SakuyaDetective:
   Description: "Ziehe {Value2:plural one='% Karte' other='% Karten'}.\nZu Beginn des\
     \ Kampfes gegen den Übeltäter, verursache {Value1} Schaden.\n(Angesammelter Schaden:\
     \ {BossDamage})"
+  Name: Ermittlung
 FairyOnIce:
   Description: "Füge {Value1} |Eisflügel| oben auf deinen Ziehstapel hinzu. \nErhalte\
     \ {Value2} |Ausweichen|. "
@@ -3037,6 +3098,10 @@ IceBolt:
   Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu."
 ForeverCool:
   Name: Ewig kalte Jahreszeit
+  Description: "Wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit| eines\
+    \ |Partners| aktiviert wird, füge einem zufälligen Feind |Kälte| zu.\nJedes Mal,\
+    \ wenn einem Feind |Kälte| zugefügt wird, erhält ein zufälliger |Partner| auf\
+    \ der Hand {Value1} |Einigkeit|."
 SummerParty:
   Description: "Erhalte {Value1} |Eisrüstung|.\nJeder |Partner| auf der Hand erhält\
     \ {Value2} |Einigkeit|."
@@ -3150,6 +3215,8 @@ MogongAttack:
     \ |Block| von {SelfName} um damage and |Block|."
 WhiteWorld:
   Name: Reine weiße Welt
+  Description: "Zu Beginn deines Zuges, füge allen Feinden |Kälte| zu.\nFüge allen\
+    \ Feinden |Kälte| zu."
 LunaDial:
   Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\n|Beim\
     \ Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName} {Mana} weniger."
@@ -3195,6 +3262,10 @@ FairyTrick:
   Description: "Verliere {Value1} Leben.\nBeschwöre 3 |e:Lichtfeen|, füge dabei eine\
     \ zufällige dieser Karten deiner Hand hinzu und mische die den Rest in deinen\
     \ Ziehstapel."
+  Name: Feenstreich
+  UpgradedDescription: "Verliere {Value1} Leben.\nBeschwöre 4 |e:Lichtfeen|, füge\
+    \ dabei eine zufällige dieser Karten deiner Hand hinzu und mische die den Rest\
+    \ in deinen Ziehstapel."
 MoodAttack:
   Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} ihren |Mentalen\
     \ Zustand| ändert, füge {SelfName} von deinem Ablagestapel deiner Hand hinzu."
@@ -3202,8 +3273,17 @@ MoodAttack:
 ChooseFriend:
   DetailText: Diese |e:alternativen Karten| ignorieren Manakosten, Manafarben und
     Charakterbeschränkungen und können höchstens 4 Mana kosten.
+  Name: Verabredung am Nebelsee
+  Description: Wähle bis zu {Value2} von {Value1} zufälligen |Partnerkarten| aus und
+    füge sie deiner Hand hinzu. Die Manakosten können mit jeder Farbe gezahlt werden.
 HualiIce:
   Name: Wundervolles Sommereis
+  NonbattleDescription: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte|\
+    \ zu.\nFalls in diesem Zug {Value1} Karte{Value1:plural one='' other='n'} wurde{Value1:plural\
+    \ one='' other='n'}, kostet {SelfName} {Mana}."
+  Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
+    Falls in diesem Zug {Value1} Karte{Value1:plural one='' other='n'} wurde{Value1:plural\
+    \ one='' other='n'}, kostet {SelfName} {Mana}.\n(Verbleibende Karten: {Countdown})"
 DebugRemoveAllHandWhenDraw:
   Name: Beim Ziehen alle Karten auf der Hand entfernen
   Description: 'Testkarte: Beim Ziehen dieser Karte werden alle Karten auf der Hand
@@ -3217,3 +3297,7 @@ DebugPlaySelectCard:
     \ sie als Folgeaktion.\nReihenfolge der Folgeaktionen: Hand, Ziehstapel, Ablagestapel,\
     \ Exil."
   Name: Spiele Karten vom Schlachtfeld
+PlayWithWaste:
+  Name: Nachbarn aus der Hölle
+  Description: "Wähle 1 von {Value1} nicht-seltenen |Werkzeugkarten| aus und füge\
+    \ sie deiner Hand hinzu.\nSie hat |Kopie| und |Limitiert【1】|."
