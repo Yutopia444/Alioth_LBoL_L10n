@@ -43,6 +43,7 @@ CirnoConsider:
   Name: Sorgfältige Überlegung
 KoishiAttackB:
   Description: Verursache {Damage} Schaden.
+  Name: Überschüttende Liebe
 KoishiDnaAttack:
   Description: Verursache {Damage} Schaden.
   Name: DNA-Transkription
@@ -199,7 +200,7 @@ HuiyinMoreDraw:
   Name: Hingabe des Lehrers
   FlavorText: Dies hat die Literalität der Ober- und Mittelschicht Gensokyos verbessert.
 RainbowMarket:
-  Name: Lunar-Regenbogenmarkt
+  Name: Markt des Mondregenbogens
   Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, füge eine zufällige
     Karte deiner Hand hinzu.
   FlavorText: Florierender Marktplatz.
@@ -584,12 +585,13 @@ ScryBlock:
     ob man bei irgendjemanden einbrechen... ich meine vorbeischauen kann."'
 PrismriverAll:
   Name: Prismatisches Konzert
-  Description: "Erhalte {Mana}.\nKonvertiere das gesamte Mana von {PlayerName} would\
-    \ gain this combat to <sprite=\"ManaSprite\" name=\"P\">.\nFüge |Gebrochenes Sonnenlicht|,\
-    \ |Stilles Mondlicht| und |Glamouröses Sternenlicht| deinem Ablagestapel hinzu."
+  Description: "Erhalte {Mana}.\nBis zum Ende des Kampfes, konvertiere das gesamte\
+    \ Mana von {PlayerName} in <sprite=\"ManaSprite\" name=\"P\"> um.\nFüge |Gebrochenes\
+    \ Sonnenlicht|, |Stilles Mondlicht| und |Glamouröses Sternenlicht| deinem Ablagestapel\
+    \ hinzu."
   UpgradedDescription: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
-    \ Karten'}.\nKonvertiere das gesamte Mana von {PlayerName} would gain this combat\
-    \ to <sprite=\"ManaSprite\" name=\"P\">.\nFüge |Gebrochenes Sonnenlicht|, |Stilles\
+    \ Karten'}.\nBis zum Ende des Kampfes, konvertiere das gesamte Mana von {PlayerName}\
+    \ in <sprite=\"ManaSprite\" name=\"P\"> um.\nFüge |Gebrochenes Sonnenlicht|, |Stilles\
     \ Mondlicht| und |Glamouröses Sternenlicht| deinem Ablagestapel hinzu."
 ColdHearted:
   Name: Kaltblütig
@@ -721,7 +723,8 @@ KoishiPlayDiscard:
     noch ins |Exil| gesendet.
   Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem\
     \ Ablagestapel und spiele {Value1:plural one='es als |Folgeaktion|.' other='sie\
-    \ als |Folgeaktionen|.'}\nGewählte Karten, die  |Folgeaktionen| cards sende |Exiled|."
+    \ als |Folgeaktionen|.'}\nSende die {Value1:plural one='gewählte Karte' other='gewählten\
+    \ Karten'} ins |Exil|, falls sie ursprünglich keine |Folgeaktionen| sind."
 BailianBlack:
   Description: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
     Karten kosten {Mana}.
@@ -1171,7 +1174,7 @@ BladePower:
     \ Angriffskarte deiner Hand hinzu. Sie erhält |Exil| und |Ätherisch| und |kostet\
     \ temporär| {Mana}.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
 SunnyFriend:
-  Name: Sunny, blendendes Sonnenlicht
+  Name: Sunny, Blendendes Sonnenlicht
   ExtraDescription1: "{FriendA}Erhalte |Optische Tarnung| für {Light:plural one='%\
     \ Zug' other='% Züge'}."
   Description: '{FriendP}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
@@ -1213,7 +1216,7 @@ PrismriverBlack:
   ExtraDescription1: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Stilles Mondlicht| deinem Ablagestapel hinzu.\n|d:Debüt:\
     \ Erhalte {Value2} <sprite=\"Point\" name=\"Power\">.|"
-  Name: Violinsolo
+  Name: Violin-Solo
 YinyangQueen:
   Name: Talentierte Handwerkerin Misumaru
   Description: '{FriendP}Erhalte {Value2} |Block| und |Barriere|.'
@@ -1402,6 +1405,9 @@ DayaojingTdm:
   Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
   Name: Daiyousei, Eiskugel Assistentin
   FlavorText: '"Mach dich bereit! Ich werde Schneebälle auf dich werfen!"'
+  ExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand hinzu.'
+  UpgradedExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand
+    hinzu, ein Exemplar wird |aufgewertet|.'
 YijiuDraw:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}."
@@ -1470,7 +1476,7 @@ PrismriverWhite:
   UpgradedDescription: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Gebrochenes Sonnenlicht| deinem Ablagestapel hinzu.\n\
     |Debüt|: Erhalte {Value2} <sprite=\"Point\" name=\"Power\">."
-  Name: Trompetensolo
+  Name: Trompeten-Solo
   ExtraDescription1: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Gebrochenes Sonnenlicht| deinem Ablagestapel hinzu.\n\
     |d:Debüt: Erhalte {Value2} <sprite=\"Point\" name=\"Power\">.|"
@@ -1573,8 +1579,8 @@ BailianNingshen:
     \ temporär| {Mana}.\n|Debüt|: Füge |Lichtstrahlen| deiner Hand hinzu."
 YuetuInvincible:
   FlavorText: Fliehe aus der unbefleckten Welt in das Paradies des Schmutzes.
-  Description: "Erhalte |Makellos| für {Value1} turn{Value1:plural one='' other='s'}.\n\
-    Füge {Value2} |Lost Raiments| deinem Ziehstapel hinzu."
+  Description: "Erhalte |Makellos| für {Value1:plural one='% Zug' other='% Züge'}.\n\
+    Füge {Value2} |Verlorenes Gewand| deinem Ziehstapel hinzu."
   Name: Der fallende Mondhase
 KokoroAttack:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nZiehe {Value1:plural\
@@ -1652,9 +1658,9 @@ ShenziUpgradeAll:
   FlavorText: Eremiten, die Yukari Yakumo an einer Spalte getroffen haben, konnten
     nur Tee trinken.
 NazrinBaota:
-  Description: "Verursache an allen Feinden {Damage} Schaden.\nEs werden {Value1}\
-    \ zufällige Karte{Value1:plural one='' other='n'} auf deiner Hand |aufgewertet|.\
-    \ Priorisiert Angriffskarten."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nEs {Value1:plural one='wird'\
+    \ other='werden'} {Value1} zufällige Karte{Value1:plural one='' other='n'} auf\
+    \ deiner Hand |aufgewertet|. Priorisiert Angriffskarten."
   Name: Grelles Licht der Pagode
   FlavorText: "\"Du sollst in einem Tunnel kein Fernlicht benutzen!\"\n- Yamame Kurodani"
 PlayWithWater:
@@ -1878,7 +1884,7 @@ MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
   Description: "Wähle 1 von {Value1} |Tipps gegen den Mond| und erhalte dessen Effekt.\n\
     |Limitiert【{DeckCounter}】|"
-  Name: Yukaris Tricktasche
+  Name: Yukaris Trickbeutel
 Tether:
   Description: "Erhalte {Block} |Block|.\nAlle |Partner| auf deiner Hand erhalten\
     \ {Value1} |Einigkeit|."
@@ -2155,6 +2161,7 @@ StarFriend:
   ExtraDescription1: '{FriendA}Verursache {Value1} Mal den Schaden sofort.'
   ExtraDescription3: "{FriendU}Jedes Mal, wenn {SelfName} Schaden verursacht, füge\
     \ {Light} |Anvisieren| zu. \nVerursache {Value2} Mal den Schaden sofort."
+  Name: Star, Strahlendes Sternenlicht
 MoodChangeBlock:
   Description: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte
     {Value1} |Block|.
@@ -2616,8 +2623,8 @@ Opt:
   FlavorText: Stell dir vor, Cirno würde den Hourai-Juwelenzweig finden…
 MaidFriend:
   Name: Kasumi, Dienstmädchen der Villa
-  FlavorText: Von allen Feen-Dienstmädchen in der Scharlachrote Teufelsvilla ist Kasumi
-    die gewissenhafteste.
+  FlavorText: Von allen Feen-Dienstmädchen in der scharlachroten Teufelsvilla ist
+    Kasumi die Gewissenhafteste.
   Description: '{FriendP}Verursache an dem Feind mit dem niedrigsten Leben {Damage}
     Angriffsschaden.'
   ExtraDescription1: '{FriendA}Verursache den Schaden sofort. Füge {Value2} |Wurfmesser|
@@ -2731,7 +2738,7 @@ SnowconeTdm:
   Description: "Verursache {Damage} Schaden und füge |Kälte| zu.\nErhalte {Value1}\
     \ <sprite=\"Point\" name=\"Gold\">, falls ein Feind zu ersten Mal durch diese\
     \ Karte ."
-  FlavorText: '"Pfui…was ist das denn für ein Geschmack!? Das ist keine Blaubeere!"'
+  FlavorText: '"Pfui…was ist das denn für ein Geschmack!? Das ist ja gar keine Blaubeere!"'
   Name: Nebelsee-Eiskugel
 LeaveMoodAttack:
   Description: "Verursache {Damage} Schaden.\nVerlasse deinen |Mentalen Zustand|."
@@ -2876,6 +2883,7 @@ DollFangzhen:
   Description: (WIP) 
 Qianqiang:
   Description: (WIP) 
+  Name: Süße Phalanx
 Zhendijianzao:
   Description: (WIP) 
 DollFire:
@@ -2924,6 +2932,7 @@ DollBlock:
   Description: (WIP) 
 MansionNight:
   Description: (WIP) 
+  Name: Nacht in der Geistervilla
 PatchouliGreenAttack:
   FlavorText: Patchoulis bester Trick.
   Description: "Verursache {Damage} Schaden.\nKann nur gespielt werden, wenn das derzeitige\
@@ -3014,13 +3023,15 @@ LarvaDefense:
 FairyAllOut:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nAktiviere die |f:Passive\
     \ Fähigkeit| aller beschworenen |Partner| auf deiner Hand."
+  Name: Alle Feen an Deck
 YukariAttack:
   FlavorText: '"Es existiert eine feine Grenze zwischen Leben und Tod. Dort wirst
     du mich finden."'
   Name: Grenze zwischen Leben und Tod
-  Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Wachstum|: Increase damage\
-    \ per hit by {Value2}.\nAm Ende deines Zuges, falls sich {PlayerName}'s turn,\
-    \ füge {SelfName} vom Ablagestapel deiner Hand hinzu. Sie |kostet temporär| {Mana}."
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Wachstum|: Erhöhe den\
+    \ Schaden um {Value2}.\nAm Ende deines Zuges, falls sich in diesem Zug die Menge\
+    \ an Leben von {PlayerName} verändert hat, füge {SelfName} vom Ablagestapel deiner\
+    \ Hand hinzu. Sie |kostet temporär| {Mana}."
 HuashanDefense:
   Description: "Erhalte {Block} |Block|.\nErhalte bis zu deinem nächsten Zug {Value1}\
     \ |Statische Aufladung|."
@@ -3037,7 +3048,7 @@ HuiyeTime:
 ChengDefense:
   Description: "Erhalte {Block} |Block|.\nZu Beginn deines nächsten Zuges, erhalte\
     \ {Block} |Block|."
-  Name: Grollen des Tianxian
+  Name: Grollen des Tianxians
 Panzi:
   Description: "Verursache {Damage} Schaden.\n|Beim Betreten der Hand|: Füge eine\
     \ |Kopie| von {SelfName} deiner Hand hinzu."
@@ -3054,6 +3065,7 @@ HappyNewYear:
   Name: Neujahrsbesuch
 XiaodingKill:
   Description: Falls das Ziel maximal {Value1} Leben hat, besiege es sofort.
+  Name: Ritual der Seelenerlösung
 FutoLight:
   Name: Oomonoimis Bankett
   Description: Alle Karten auf deiner Hand mit Manakosten von mindestens 2 |kosten
@@ -3166,6 +3178,8 @@ Jealousy:
   Name: Neid
 MinengZhuru:
   Name: Injektion mentaler Energie
+  Description: "Die |f:Passive Fähigkeit| aller |Partner| aktiviert sich ein weiteres\
+    \ Mal.\n|Einigkeit| wird durch die zusätzliche Aktivierung nicht beeinflusst."
 HuaBlock:
   Name: Kampfhaltung
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Temporäre Feuerkraft|."
@@ -3184,7 +3198,7 @@ PrismriverRed:
   UpgradedDescription: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Glamouröses Sternenlicht| deinem Ablagestapel hinzu.\n\
     |Debüt|: Erhalte {Value2} <sprite=\"Point\" name=\"Power\">."
-  Name: Keyboardsolo
+  Name: Keyboard-Solo
   ExtraDescription1: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nFüge {Light} |Glamouröses Sternenlicht| deinem Ablagestapel hinzu.\n\
     |d:Debüt: Erhalte {Value2} <sprite=\"Point\" name=\"Power\">.|"
@@ -3298,6 +3312,7 @@ FairyTrick:
   UpgradedDescription: "Verliere {Value1} Leben.\nBeschwöre 4 |e:Lichtfeen|, füge\
     \ dabei eine zufällige dieser Karten deiner Hand hinzu und mische die den Rest\
     \ in deinen Ziehstapel."
+  FlavorText: Aber natürlich sind es vier Feen in den 'Drei Feen des Lichts'!
 MoodAttack:
   Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} ihren |Mentalen\
     \ Zustand| ändert, füge {SelfName} von deinem Ablagestapel deiner Hand hinzu."
