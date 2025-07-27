@@ -390,9 +390,9 @@ YouxiangWake:
   FlavorText: '"Zu dieser Uhrzeit? Wer könnte da denn <sprite="TextIcon" name="Anger">
     "'
   Description: "Erhalte {Shield} |Barriere|.\nZu Beginn deines zweiten Zuges, nachdem\
-    \ diese Karte gespielt wurde, erhalte {Value1} |Feuerkraft| und füge {Value2}\
-    \ zufällige Angriffskarte{Value2:plural one='' other='n'} von deinem Ziehstapel\
-    \ deiner Hand hinzu. Sie |koste{Value2:plural one='t' other='n'} temporär| {Mana}."
+    \ {SelfName} gespielt wurde, erhalte {Value1} |Feuerkraft| und füge {Value2} zufällige\
+    \ Angriffskarte{Value2:plural one='' other='n'} von deinem Ziehstapel deiner Hand\
+    \ hinzu. Sie |koste{Value2:plural one='t' other='n'} temporär| {Mana}."
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nZu Beginn deines nächsten Zuges,\
     \ erhalte {Value1} |Feuerkraft| und füge {Value2} zufällige Angriffskarte{Value2:plural\
     \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie |koste{Value2:plural\
@@ -421,6 +421,8 @@ BailianFire:
 AyaWindGirl:
   Name: Gabe der Windgöttin
   Description: Erhalte {Value1} |Gabe der Windgöttin|.
+  DetailText: Durch |Gabe der Windgöttin| kann |Ausweichen| zu Beginn des Zuges nicht
+    unter die Anzahl an |Gabe der Windgöttin| fallen.
 YukariFriend:
   Name: Yukari, Grenze der Fantasie
   Description: '{FriendP}Erhalte |Feuerkraft| in Höhe der gespielten Abwehrkarten
@@ -461,6 +463,10 @@ NightMana1:
     \ wurde' other='Karten gespielt wurden'}, sende {SelfName} ins |Exil|."
 ReimuSilence:
   Name: '"Traumsiegel -Stille-"'
+  Description: "Jedes Mal, wenn {Value1} Karte{Value1:plural one='' other='n'} außerhalb\
+    \ der Ziehphase gezogen {Value1:plural one='wird' other='werden'}, verursache\
+    \ an allen Feinden {Damage} Angriffsschaden.\nZiehe {Value1:plural one='% Karte'\
+    \ other='% Karten'}."
 BurstDraw:
   Name: Blitzduel
   Description: Jedes Mal, wenn {PlayerName} |Durchbruch| betritt, ziehe {Value1:plural
@@ -854,9 +860,10 @@ MingzhuAntou:
   FlavorText: Jedes Mal, wenn du eine Kugel wirfst, besteht die Gefahr auf "Level
     Neustarten" zu drücken.
 QinggeManwu:
-  Description: "Ziehe {Value1} Karte{Value1:plural one='' other='n'}, sie wird bis\
-    \ zum Ende des Kampfes |aufgewertet|.\nErhalte {Value2} |Barriere| für jede |aufgewertete|\
-    \ Karte, die durch diesen Effekt gezogen wurde."
+  Description: "Ziehe {Value1} Karte{Value1:plural one='' other='n'}, sie {Value1:plural\
+    \ one='wird' other='werden'} bis zum Ende des Kampfes |aufgewertet|.\nErhalte\
+    \ {Value2} |Barriere| für jede bereits |aufgewertete| Karte, die durch diesen\
+    \ Effekt gezogen wurde."
   Name: Walzer der Maid
   FlavorText: Reimu tappt mit kleinen Schritten voran, ihre Strümpfe fangen dabei
     Staub.
@@ -939,9 +946,12 @@ ReimuHuashan:
   ExtraDescription1: "Zu Beginn des nächsten Kampfes, sende {SelfName} ins |Exil|\
     \ und erhalte {Value1} |Feuerkraft|.\nDer Effekt von {SelfName} kann nur einmal\
     \ pro Kampf verwendet werden. (Bereits geschehen)"
+  Name: Ratschläge erhalten
+  DetailText: Nur Exemplare von {SelfName}, die sich in der Bibliothek befinden, können
+    ihren Effekt im nächsten Kampf aktivieren.
 ReimuSakura:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nHeile {Value1} Leben.\n\
-    |Wachstum|: Diese Karte kostet bis zum Ende des Kampfes {Mana} weniger."
+    |Wachstum|: {SelfName} kostet bis zum Ende des Kampfes {Mana} weniger."
   Name: Blühendes Traumsiegel
 DanmuDuijue:
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Reflektion|.\n\
@@ -953,8 +963,8 @@ DanmuDuijue:
     vielleicht das Werk des "Internetgeistes"?
 TwoBalls:
   Description: Füge {Value1} |Yin-Yang Kugel| deiner Hand hinzu.
-  UpgradedDescription: Füge {Value1} |Yin-Yang Kugel| deiner Hand hinzu. Diese {Value1:plural
-    one='Karte |kostet temporär|' other='Karten |kosten temporär|'} {Mana} weniger.
+  UpgradedDescription: Füge {Value1} |Yin-Yang Kugel| deiner Hand hinzu. Sie |{Value1:plural
+    one='kostet' other='kosten'} temporär| {Mana} weniger.
   Name: Ausgeglichene Kugeln
   FlavorText: Die Ewigkeit erschuff das Absolute und das Absolute erschuff Yin und
     Yang.
@@ -1260,7 +1270,7 @@ SanaeSummonGod:
   UpgradedDescription: "Erhalte {Value2} |Göttliche Gunst|.\nZu Beginn deines nächsten\
     \ Zuges, erhalte {Value1} |Feuerkraft| und |Geist|."
   Description: "Erhalte {Value2} |Göttliche Gunst|.\nZu Beginn deines zweiten Zuges,\
-    \ nachdem diese Karte gespielt wurde, erhalte {Value1} |Feuerkraft| und |Geist|."
+    \ nachdem {SelfName} gespielt wurde, erhalte {Value1} |Feuerkraft| und |Geist|."
 RinDraw:
   Name: Zuweisung der Geister
   Description: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe {Value1:plural
@@ -1285,7 +1295,7 @@ YonglinCard:
 Wunvyu:
   Name: Hakureis bösartigste Kugel
   Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Auf der Hand|: Jedes Mal,\
-    \ wenn diese Karte außerhalb der Ziehphase gezogen wird, erhöhe den Schaden von\
+    \ wenn eine Karte außerhalb der Ziehphase gezogen wird, erhöhe den Schaden von\
     \ {SelfName} um {Value2} bis zum Ende des Kampfes."
   FlavorText: 'Ein uralter Philosoph sagte einst: "Gebt mir einen langen Hebel, der
     lang genug, und einen Ausgangspunkt, der stark genug ist, dann kann ich Hakureis
@@ -1489,7 +1499,7 @@ HuiyinRemove:
     \ gewählte Karte aus der Bibliothek entfernt wird, wird sie nicht aus diesem Kampf\
     \ entfernt."
   Description: "Entferne eine Karte aus der Bibliothek.\nEntferne {SelfName} aus der\
-    \ Bibliothek und aus dem Kampf, nachdem diese Karte gespielt wurde."
+    \ Bibliothek und aus dem Kampf, nachdem sie gespielt wurde."
   Name: Verschlingen der Geschichte
 YukariSwarm:
   FlavorText: Tor von Gapylon!
@@ -1566,17 +1576,16 @@ SatoriAttack:
     \ Feind angreifen wird, erhalte {Block} |Block|."
 BailianNingshen:
   ExtraDescription1: "Wähle 1 von {Value1} zufälligen, gewöhnlichen Karten aus und\
-    \ füge sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch| und |kostet\
-    \ temporär| {Mana}.\n|d:Debüt: Füge Lichtstrahlen deiner Hand hinzu.|"
+    \ füge sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär|\
+    \ {Mana}.\n|d:Debüt: Füge Lichtstrahlen deiner Hand hinzu.|"
   FlavorText: Miss Byakurens Kurzvideos "Stimmen des Myourenji" sind bei den Dorfbewohnern
     mittleren und höheren Alters und sogar bei den jungen Youkais sehr beliebt.
   Name: Meditation
   Description: Wähle 1 von {Value1} zufälligen, gewöhnlichen Karten aus und füge sie
-    deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch| und |kostet temporär|
-    {Mana}.
+    deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
   UpgradedDescription: "Wähle 1 von {Value1} zufälligen, gewöhnlichen Karten aus und\
-    \ füge sie deiner Hand hinzu. Diese Karte hat |Exil| und |Ätherisch| und |kostet\
-    \ temporär| {Mana}.\n|Debüt|: Füge |Lichtstrahlen| deiner Hand hinzu."
+    \ füge sie deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär|\
+    \ {Mana}.\n|Debüt|: Füge |Lichtstrahlen| deiner Hand hinzu."
 YuetuInvincible:
   FlavorText: Fliehe aus der unbefleckten Welt in das Paradies des Schmutzes.
   Description: "Erhalte |Makellos| für {Value1:plural one='% Zug' other='% Züge'}.\n\
@@ -1588,8 +1597,7 @@ KokoroAttack:
   Name: Melancholischer Ausbruch
 ShuimiUnderWater:
   Name: Geist des Schiffs
-  Description: Wenn diese Karte abgeworfen oder ins |Exil| gesendet wird, erhalte
-    {Mana}.
+  Description: Wenn {SelfName} abgeworfen oder ins |Exil| gesendet wird, erhalte {Mana}.
 YonglinDraw:
   Name: Erinnerungen des heiligen Zeitalters
   Description: Ziehe {Value1:plural one='% Karte' other='% Karten'}. Karten, die auf
@@ -1683,7 +1691,7 @@ QinglanAttack:
 Payment:
   Description: "Zahle {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nDer <color=#b7646b>Betrügerischer\
     \ Mondhase</color> verlässt den Kampf."
-  Name: Überweisung
+  Name: Geld überweisen
 ToolRandomTool:
   Name: Taktisches Funkgerät
   Description: "Wähle 1 von {Value1} zufälligen |Werkzeugkarten| aus und füge sie\
@@ -1768,8 +1776,8 @@ LifeGame:
   Description: "Karten, die sich auf der Hand neben {SelfName} befinden, |kosten temporär|\
     \ {Mana}.\nFalls es |Unglücks-| oder Statuskarten sind, sende sie stattdessen\
     \ ins |Exil|."
-  DetailText: Die Karte ganz links auf der Hand wird als Ziel gewählt, falls diese
-    Karte als |Folgeaktion| gespielt wird.
+  DetailText: Die Karte ganz links auf der Hand wird als Ziel gewählt, falls {SelfName}
+    als |Folgeaktion| gespielt wird.
 ZoufangSnake:
   Description: "Verliere {Value1} Leben.\nWähle 1 von {Value2} zufälligen, seltenen,\
     \ neutralen |Talentkarten| aus und füge sie deiner Hand hinzu. Sie |kostet temporär|\
@@ -1903,7 +1911,7 @@ LeidiFriend:
 Blizzard:
   Name: Schneesturm
   Description: "Verursache an allen Feinden {Damage} Schaden.\nFüge allen Feinden\
-    \ |Kälte| zu.\nSchau dir die unterste Karte in deinem Ziehstapel an. Falls es\
+    \ |Kälte| zu.\nSchaue dir die unterste Karte in deinem Ziehstapel an. Falls es\
     \ eine blaue Karte ist, wiederhole diesen Effekt zu Beginn deines nächsten Zuges."
 DoubleMana:
   Name: Erwachen der Feen
@@ -2324,7 +2332,8 @@ DefenseDraw:
     \ Karten'}.\n|Beim Betreten der Hand|: Bis zum Ende des Kampfes kostet {SelfName}\
     \ {Mana} weniger."
 SakuyaInvestigate:
-  Description: "Füge allen Feinden {Value1} |Anvisieren| zu.\nFalls d."
+  Description: "Füge allen Feinden {Value1} |Anvisieren| zu.\nWiederhole diesen Effekt\
+    \ zu Beginn deines Extrazuges."
   Name: Zeit anhaltender Detektiv
 LunaClock:
   Name: Monduhr
@@ -2348,14 +2357,14 @@ SilverJump:
     \ Zieh- und Ablagestapel hinzu."
 SakuyaDraw:
   Name: Perfektion
-  Description: "|When discarded or Exiled|: Ziehe {Value1:plural one='% Karte' other='%\
-    \ Karten'}."
+  Description: "Wenn {SelfName} abgeworfen oder ins |Exil| gesendet wird, ziehe {Value1:plural\
+    \ one='% Karte' other='% Karten'}."
 SakuyaClock:
   Name: Sakuyas besondere Uhr
   FlavorText: Welche App muss ich installieren, damit meine digitale Uhr die gleichen
     Funktionen hat?
   Description: "Verursache {Damage} Schaden.\nFalls ein Feind durch {SelfName} besiegt\
-    \ wird, sende diese Karte ins |Exil|, beende den Zug von {PlayerName} und erhalte\
+    \ wird, sende {SelfName} ins |Exil|, beende den Zug von {PlayerName} und erhalte\
     \ einen Extrazug."
 TimeLord:
   Description: Erhalte {Value1} |Zeitimpuls{Value1:plural one='' other='e'}|.
@@ -2471,6 +2480,7 @@ MarisaEat:
   FlavorText: Die "Pilzplatte" purchased by the "Hakurei Shrine Hot Pot Party" was
     personally cultivated and handpicked by Marisa. Um die gesundheitlichen Bedenken
     durch die Lebensunterlief es verschiedener, geheimer Prozesse.
+  Name: Festmahl aus Pilzen
 CollectionDefense:
   Name: Zu groß zum Scheitern
   NonbattleDescription: Erhalte |Block| in Höhe der Karten in deinem Ziehstapel.
@@ -2499,8 +2509,9 @@ RunAway:
     \ {Mana} weniger.\nErhalte {Value1} |Ausweichen|."
   Name: Auf der Flucht
 MixAndShake:
-  Description: "Verursache an allen Feinden {Damage} Schaden.\n{SelfName} verursacht\
-    \ {Value1} für jeden |Unstable Potion| in the draw and discard piles."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nVerursache für jedes\
+    \ Exemplar von |Instabiler Trank| in deinem Zieh- und Ablagestapel {Value1} zusätzlichen\
+    \ Schaden."
   FlavorText: Vor dem Öffnen nicht schütteln.
   Name: Feuerwerkstrank
 EventHorizon:
@@ -2618,7 +2629,7 @@ InspirationCard:
   FlavorText: Heureka!
 Opt:
   Name: Auf dünnem Eis
-  Description: "Schau die oberste Karte deines Ziehstapels an. Du kannst sie unten\
+  Description: "Schaue die oberste Karte deines Ziehstapels an. Du kannst sie unten\
     \ in den Ziehstapel legen.\nZiehe 1 Karte.\nErhalte {Mana}."
   FlavorText: Stell dir vor, Cirno würde den Hourai-Juwelenzweig finden…
 MaidFriend:
@@ -2638,7 +2649,7 @@ IceLaser:
   FlavorText: Cirno gewann hierfür 1997 den Nobelpreis für Physik, als eine spezielle
     Mitwirkende.
   Name: Eisstrahl
-  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nSchau dir die unterste\
+  Description: "Verursache {Damage} Schaden.\nFüge |Kälte| zu.\nSchaue dir die unterste\
     \ Karte in deinem Ziehstapel an. Falls es eine blaue Karte ist, wiederhole diesen\
     \ Effekt an einem zufälligen Feind."
 FindInspiration:
@@ -2736,8 +2747,8 @@ MorphFrog:
   Name: Amphibiengestalt
 SnowconeTdm:
   Description: "Verursache {Damage} Schaden und füge |Kälte| zu.\nErhalte {Value1}\
-    \ <sprite=\"Point\" name=\"Gold\">, falls ein Feind zu ersten Mal durch diese\
-    \ Karte ."
+    \ <sprite=\"Point\" name=\"Gold\">, falls ein Feind zum ersten Mal durch {SelfName}\
+    \ Schaden erleidet."
   FlavorText: '"Pfui…was ist das denn für ein Geschmack!? Das ist ja gar keine Blaubeere!"'
   Name: Nebelsee-Eiskugel
 LeaveMoodAttack:
@@ -2775,7 +2786,7 @@ BaitianCard:
   Name: Hiedas Reinkarnation
 YijiuAttack:
   Description: "Verursache {Damage} Schaden.\nFalls ein Feind durch {SelfName} besiegt\
-    \ wurde, sende diese Karte ins |Exil| und erhalte |Makellos| für {Value1:plural\
+    \ wurde, sende {SelfName} ins |Exil| und erhalte |Makellos| für {Value1:plural\
     \ one='% Zug' other='% Züge'}."
   Name: Donnerblitz des Drachengottes
 YukariFlyObject:
@@ -2854,8 +2865,8 @@ LimaoSchool:
   Name: Schule der Gestaltwandler
   FlavorText: Niedere Tanuki müssen sich auf die "Tanuki Chunin Auswahlprüfung" vorbereiten.
   DetailText: Der Effekt von |e:Amphibiengestalt| kann nur einmal pro Kampf aktiviert
-    werden, diese Karte steht bei weiteren Exemplaren von {SelfName} nicht als Option
-    zur Auswahl.
+    werden, |e:Amphibiengestalt| steht bei weiteren Exemplaren von {SelfName} nicht
+    als Option zur Auswahl.
 NueExile:
   Description: "Sende 1 Karte aus deiner Hand ins |Exil|.\nFüge 1 zufällige Karte\
     \ deiner Hand hinzu. Sie |kostet temporär| {Mana}."
@@ -3038,8 +3049,8 @@ HuashanDefense:
   Name: Blitzeinschlag des Leibdieners
 HuiyeTime:
   Name: Ewigkeit und Augenblick
-  FlavorText: Für die Arbeit aufzustehen währt für eine Ewigkeit, während sich schlafen
-    zu legen nur einen Augenblick dauert.
+  FlavorText: Für die Arbeit aufzustehen währt für eine Ewigkeit, sich schlafen zu
+    legen hingegen nur einen Augenblick.
   Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} auf deiner\
     \ Hand. Sie {Value1:plural one='erhält' other='erhalten'} |Temporäres Beibehalten|.\n\
     Beende den Zug von {PlayerName} und erhalte einen Extrazug. In diesem Zug {Value1:plural\

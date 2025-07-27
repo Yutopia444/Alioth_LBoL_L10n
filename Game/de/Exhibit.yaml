@@ -64,6 +64,7 @@ ShanshuoBishou:
   Name: Blink Dagger
 ZhanshuDaoliqi:
   Description: Während des Kampfes kosten Fähigkeitskarten {Mana} weniger.
+  Name: Taktisches Orbment
 Yashemao:
   Description: Zu Beginn deines Zuges, ziehe {Value1} Karte{Value1:plural one='' other='n'}
     mehr.
@@ -120,8 +121,8 @@ ZheyangSan:
   FlavorText: Heute Nacht wird sein Besitzer ihn nicht brauchen.
 Pingguo:
   Name: Apfel
-  Description: Bei Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} maximales
-    Leben.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    maximales Leben.
   FlavorText: Stammt aus dem Obstgarten der scharlachroten Teufelsvilla.
 BoreMianju:
   Name: Hannya Maske
@@ -149,8 +150,8 @@ XiwangMianju:
 ZhangchibangQiu:
   Name: Geflügelter Ball
   FlavorText: Es fliegt sehr schnell und erzielt einen guten Preis.
-  Description: Bei Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} <sprite="Point"
-    name="Gold">.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    <sprite="Point" name="Gold">.
 QiannianShenqi:
   Name: Pyramidenförmiges Puzzle
   FlavorText: Kann verwendet werden, um verlorene Erinnerungen wieder zu erlangen.
@@ -167,8 +168,8 @@ BoliHufu:
 Cookie:
   Name: Leckerer Keks
   FlavorText: '"Heute ist ein guter Tag."'
-  Description: Bei Erhalt, {PlayerName} erhält {Value1} maximales Leben, heile dein
-    gesamtes Leben.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    maximales Leben, heile dein gesamtes Leben.
 Pijiu:
   Name: Bier
   FlavorText: Von allen geliebt.
@@ -216,6 +217,7 @@ Zhuzi:
     finden kann?
 FaliJingdian:
   Description: Nachdem eine |Zauberkarte| aktiviert wurde, erhält {PlayerName} {Mana}.
+  Name: Sutra der Macht des Dharmas
 Yushenqian:
   Name: Omikuji
   FlavorText: '"Ich habe es vom Moriya-Schrein auf dem Berg bekommen."'
@@ -232,6 +234,8 @@ LuoboMoxing:
     Boss kämpft, erhalte {Value1} |Feuerkraft|.
 Guangjian:
   Name: Lichtschwert
+  Description: Jedes Mal, wenn {PlayerName} das erste Mal in einem Kampf Angriffsschaden
+    verursacht, füge zusätzlich {Value1} |Anvisieren| zu.
 Shoubiao:
   Name: Armbanduhr
   Description: Fähigkeitskarten werden |aufgewertet|, wenn sie der Bibliothek hinzugefügt
@@ -243,6 +247,8 @@ Moping:
     Power\">.\n|Lädt sich durch das Besuchen von Spalten wieder auf|."
 LouguanJian:
   Name: Roukanken
+  Description: "Jedes Mal, wenn {PlayerName} Angriffsschaden verursacht, füge {Value1}\
+    \ |Anvisieren| zu.\nDieses Ausstellungsstück kann nicht entfernt werden."
 Dianshiji:
   Description: '{PlayerName} ist immun gegen |Geschwächt|.'
   Name: TV
@@ -278,14 +284,14 @@ HouhuMen:
   Name: Hintertür
   FlavorText: Eine Tür, die zu einem zufälligen Ort führt. Kann praktischerweise zur
     Müllentsorgung verwendet werden.
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nBei Erhalt, entferne {Value1}\
-    \ Karte aus der Bibliothek."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nNach Erhalt dieses Ausstellungsstücks,\
+    \ entferne {Value1} Karte aus der Bibliothek."
 FengshouGuolan:
   Name: Fruchtkorb der Ernte
   FlavorText: Es ist Herbst!
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nBei Erhalt, {PlayerName} erhält\
-    \ {Value1} maximales Leben.\nJedes Mal, wenn eine Karte der Bibliothek hinzugefügt\
-    \ wird, erhält {PlayerName} {Value2} maximales Leben."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nNach Erhalt dieses Ausstellungsstücks\
+    \ erhält {PlayerName} {Value1} maximales Leben.\nJedes Mal, wenn eine Karte der\
+    \ Bibliothek hinzugefügt wird, erhält {PlayerName} {Value2} maximales Leben."
 Wanbaochui:
   Name: Wunderhammer
   FlavorText: Gewöhnliche Dinge erlangen ungewöhnliche Kräfte.
@@ -329,7 +335,8 @@ GaodangShoubao:
     ihr Geld ausgeben würden.
 WanglingTideng:
   Name: Seelenfakel
-  Description: Verhindere das erste Mal, an dem {PlayerName} Leben verlieren würde.
+  Description: Verhindere das erste Mal, an dem {PlayerName} während des Kampfes Leben
+    verlieren würde.
 SunhuaiHufu:
   FlavorText: '"Tut mir Leid, du bist nicht God-tier."'
   Name: Kaputtes Amulett
@@ -376,8 +383,8 @@ Taozi:
   Name: Pfirsich
   FlavorText: Viele denken, es stammt von Tenshis Hut, in Wirklichkeit kommt es aber
     aus der Mondhauptstadt.
-  Description: Bei Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} maximales
-    Leben.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    maximales Leben.
 XijianSan:
   FlavorText: In diesem Spiel ist es nicht möglich, die Grenze des Bildschirms zu
     überqueren.
@@ -410,8 +417,9 @@ GanzhuYao:
 Zijing:
   Name: Violetter Spiegel
   FlavorText: Deine Karte ist klasse, aber in der nächsten Sekunde... wurden es zwei.
-  Description: Bei Erhalt, wähle {Value1} Karte{Value1:plural one='' other='n'} in
-    der Bibliothek und füge {Value1:plural one='' other='jeweils'} eine Kopie hinzu.
+  Description: Nach Erhalt dieses Ausstellungsstücks, wähle {Value1} Karte{Value1:plural
+    one='' other='n'} in der Bibliothek und füge {Value1:plural one='' other='jeweils'}
+    eine Kopie hinzu.
 DiyuChepiao:
   Name: Ticket zur Hölle
   Description: Jedes Mal, wenn {PlayerName} Leben verliert, ziehe {Value1:plural one='%
@@ -420,8 +428,8 @@ DiyuChepiao:
 Modaoshu:
   Name: Magischer Ratgeber
   FlavorText: Es enthält ein tiefes Verständnis für die Magie.
-  Description: Bei Erhalt, wähle 1 von {Value1} zufälligen, neutralen, seltenen Karten
-    aus und füge sie der Bibliothek hinzu.
+  Description: Nach Erhalt dieses Ausstellungsstücks, wähle 1 von {Value1} zufälligen,
+    neutralen, seltenen Karten aus und füge sie der Bibliothek hinzu.
 Shaoyao:
   Description: Jedes Mal, wenn {Value1} {Mana} verwendet wird, heilt {PlayerName}
     {Value2} Leben. Kann nur {Value3} Mal pro Kampf verwendet werden und wird am Ende
@@ -492,21 +500,22 @@ ChuRenou:
   FlavorText: Sie wird all dein Pech und Unglück an deiner Stelle auf sich nehmen.
 Jiaobu:
   Name: Klebeband
-  Description: Bei Erhalt werden {Value1} zufällige Abwehrkarten in der Bibliothek
-    |aufgewertet|.
+  Description: Nach Erhalt dieses Ausstellungsstücks werden {Value1} zufällige Abwehrkarten
+    in der Bibliothek |aufgewertet|.
 ChaojiMogu:
   Name: Super-Pilz
   FlavorText: Du fühlst dich, als wäre die Welt kleiner geworden.
-  Description: Bei Erhalt, {PlayerName} erhält {Value1} <sprite="Point" name="Power">.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    <sprite="Point" name="Power">.
 Tuanzi:
   Name: Dango
   Description: Am Ende des Kampfes heilt {PlayerName} {Value1} Leben und erhält {Value2}
     <sprite="Point" name="Power">.
 Bumengwang:
   Name: Traumfänger
-  Description: Bei Erhalt, entferne {Value1} Karte{Value1:plural one='' other='n'}
-    aus der Bibliothek, heile {Value2} Leben und erhalte {Value3} <sprite="Point"
-    name="Power">.
+  Description: Nach Erhalt dieses Ausstellungsstücks, entferne {Value1} Karte{Value1:plural
+    one='' other='n'} aus der Bibliothek, heile {Value2} Leben und erhalte {Value3}
+    <sprite="Point" name="Power">.
 JiangyouPing:
   Description: Jedes Mal, wenn {PlayerName} Takanes Laden besucht, heile {Value1}
     Leben und erhalte {Value2} <sprite="Point" name="Power">.
@@ -533,23 +542,28 @@ JingesiYushou:
     Effekt erleidet, erhalte {Value1} |Barriere|.
 SadinYuebing:
   Name: Sardischer Mondkuchen
+  Description: Zu Beginn deines Zuges {Value1:plural one='wird % zufällige Karte'
+    other='werden % zufällige Karten'} auf deiner Hand bis zum Ende des Kampfes |aufgewertet|.
+    Priorisiert mehrfarbige Karten.
 Qingshu:
   Name: Liebesbrief
   FlavorText: '"Ich weiß unsere Zeit ist begrenzt, aber ich möchte trotzdem jede Sekunde
     mit dir verbringen."'
-  Description: Bei Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} maximales
-    Leben.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    maximales Leben.
 FixBook:
   Description: "Jedes Mal, wenn eine |Werkzeugkarte| gespielt wird, erhält {PlayerName}\
-    \ {Mana}.\nWhen acquired, wähle 1 von {Value1} |Werkzeugkarten| und füge sie der\
-    \ Bibliothek hinzu."
+    \ {Mana}.\nNach Erhalt dieses Ausstellungsstücks, wähle 1 von {Value1} |Werkzeugkarten|\
+    \ und füge sie der Bibliothek hinzu."
   Name: '"Universelles Reparaturhandbuch"'
 FirstAidBook:
-  Description: "|Unglück|- und Statuskarten verlieren |Unspielbar| und erhalten |Exil|.\n\
-    Diese Karten erhalten Manakosten basierend auf ihrer Seltenheit."
+  Description: "|Unglücks|- und Statuskarten verlieren |Unspielbar| und erhalten |Exil|.\n\
+    Sie erhalten Manakosten basierend auf ihrer Seltenheit."
   Name: '"Erste Hilfe Handbuch"'
 Dahuoji:
   Name: Feuerzeug
+  Description: Jedes Mal, wenn {PlayerName} das erste Mal in einem Kampf Angriffsschaden
+    verursacht, füge zusätzlich {Value1} |Verwundbar| zu.
 Laiwating:
   Name: Lævateinn
   Description: "Fügt {BaseMana} der Manabasis hinzu.\nDie Effektivität von |Verwundbar|\
@@ -560,12 +574,16 @@ HuiyeBaoxiang:
   Name: Kaguyas Schatzkiste
   FlavorText: Nachdem diese Schatztruhe geöffnet wurde, erwarten einen drei Brokate.
   Description: "Zu Beginn des Zuges von {PlayerName}, erhalte 1 zufälliges Mana.\n\
-    Bei Erhalt, {PlayerName} erhält {Value1} zufällige |Ausstellungsstücke|.\nFüge\
-    \ |Räumungsbefehl| der Bibliothek hinzu."
+    Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} zufällige |Ausstellungsstücke|.\n\
+    Füge |Räumungsbefehl| der Bibliothek hinzu."
 QipaiYouhua:
   Name: Beeindruckendes Ölgemälde
   FlavorText: "Löse das Rätsel auf diesem Gemälde, um Kaguyas gesamten Besitz zu erben.\n\
     Allerdings nach ihrem Tod, versteht sich."
+  Description: "Zu Beginn des Zuges von {PlayerName}, erhalte 1 zufälliges Mana.\n\
+    Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} <sprite=\"\
+    Point\" name=\"Gold\"> und {Value3} maximales Leben, es {Value2:plural one='wird\
+    \ % zufällige Karte' other='werden % zufällige Karten'} in der Bibliothek |aufgewertet|."
 YizangnuoWuzhi:
   Name: Izanagi Objekt
   FlavorText: Ein mysteriöses Rohmaterial, welches von der Regenbogen-Drachenhöhle
@@ -591,6 +609,9 @@ WaijieYanshuang:
   Description: '{PlayerName} heilt nach jedem Kampf {Value1} Leben.'
 PulpFiction:
   Name: '"Pulp Fiction"'
+  Description: Zu Beginn {Value2:plural one='deines ersten Zuges' other='deiner ersten
+    % Züge'}, füge die {Value1:plural one='unterste Karte' other='untersten % Karten'}
+    von deinem Ziehstapel deiner Hand hinzu.
 TiangouXiangji:
   Description: Zu Beginn des Kampfes, füge allen Feinden {Value1} |Anvisieren| zu.
   Name: Tengu-Kamera
@@ -619,9 +640,10 @@ ShijieSuipian:
   Name: Fragmente dieser Welt
   FlavorText: Durch diese Fragmente ist es möglich, andere Spieler bei ihrem Durchlauf
     zu beobachten.
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nBei Erhalt, wähle bis zu {Value1}\
-    \ Karte{Value1:plural one='' other='n'} in der Bibliothek und ersetze sie durch\
-    \ zufällige, ungewöhnliche Karten oder zufällige, seltene Karten."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nNach Erhalt dieses Ausstellungsstücks,\
+    \ wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} in der Bibliothek\
+    \ und ersetze sie durch zufällige, ungewöhnliche Karten oder zufällige, seltene\
+    \ Karten."
 TianwenWangyuanjing:
   Name: Astronomisches Teleskop
   FlavorText: Der Mond und der große Wagen können genauer betrachtet werden.
@@ -712,8 +734,8 @@ InfinityGems:
 Yuerang:
   Name: Mondstaub
   FlavorText: Ein pures Land ohne Lebenszeichen.
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nBei Erhalt, füge |Mondlandschaft|\
-    \ der Bibliothek hinzu."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nNach Erhalt dieses Ausstellungsstücks,\
+    \ füge |Mondlandschaft| der Bibliothek hinzu."
 YichuiPiao:
   Name: Ibukis Kürbisflasche
   Description: "Jedes Mal, wenn sich während des Zuges von {PlayerName} keine Karten\
@@ -723,8 +745,11 @@ YichuiPiao:
 DiyinLeigu:
   Name: Große Trommel
   FlavorText: Kinder lieben es, beim Vorbeilaufen ein paar Mal daran zu klopfen.
-  Description: Jedes Mal, wenn in diesem Zug eine gespielte Karte die gleiche Farbe
-    wie die vorherige Karte hat, erhält {PlayerName} {Value1} |Temporäre Feuerkraft|.
+  Description: Jedes Mal, wenn in diesem Zug eine Karte mit der gleichen Farbe wie
+    die vorherige Karte gespielt wird, erhält {PlayerName} {Value1} |Temporäre Feuerkraft|.
+  ExtraDescription: "Jedes Mal, wenn in diesem Zug eine Karte mit der gleichen Farbe\
+    \ wie die vorherige Karte gespielt wird, erhält {PlayerName} {Value1} |Temporäre\
+    \ Feuerkraft|.\nFarbe der vorherigen Karte: {LastColor}."
 LoushuiShaozi:
   Description: Jedes Mal, wenn {Value1} Fähigkeitskarte{Value1:plural one='' other='n'}
     in einem Zug gespielt {Value1:plural one='wird' other='werden'}, ziehe {Value2}
@@ -743,6 +768,7 @@ Shendeng:
   Name: Teekanne mit langem Ausguss
 MadokaBow:
   FlavorText: 12. Mein allerbester Freund.
+  Name: Leuchtender Langbogen
 DragonBall:
   FlavorText: Nur noch 6 weitere.
   Name: Kristallkugel mit Sternen
@@ -754,8 +780,8 @@ XiaorenWan:
 Chaidao:
   FlavorText: '"Chop!"'
   Name: Hackmesser
-  Description: Bei Erhalt werden {Value1} zufällige Angriffskarten in der Bibliothek
-    |aufgewertet|.
+  Description: Nach Erhalt dieses Ausstellungsstücks werden {Value1} zufällige Angriffskarten
+    in der Bibliothek |aufgewertet|.
 JingzhiChaju:
   Description: Die Fähigkeit |Trinke Tee| an Spalten heilt zusätzlich {Value1} Leben.
   Name: Exquisites Teeservice
@@ -772,6 +798,7 @@ JingQiXi:
   Name: Atem des Wals
 TimeBook:
   Description: Der Ziehstapel wird in der korrekten Reihenfolge angezeigt.
+  Name: '"Eine kurze Geschichte der Zeit"'
 Duandai:
   Description: Zu Beginn deines Zuges, wenn {PlayerName} gegen eine Elite oder einen
     Boss kämpft, erhalte {Mana}.
@@ -786,10 +813,19 @@ JingboliJing:
   Name: Geläuterter Kristallspiegel
 AliceBook:
   Name: '"Ultimative Magie"'
+  Description: "Während des Kampfes kosten Karten mit |Bonus| {Mana} weniger.\nDieses\
+    \ Ausstellungsstück kann nicht entfernt werden."
 JingjieGanzhiyi:
   Name: Grenzsensor
+  Description: '|p:Erlaubt es dir, die wahre Natur der Realität wahrzunehmen.|'
 ZhinengYinxiang:
   FlavorText: '"Alexx, ziehe diese Karte für mich."'
+  ExtraDescription: "Nach Erhalt dieses Ausstellungsstücks, wähle eine Karte in der\
+    \ Bibliothek aus.\nZu Beginn des Kampfes, lege die gewählte Karte oben auf den\
+    \ Ziehstapel.\nGewählte Karte: |{HoldedCard}|"
+  Description: "Nach Erhalt dieses Ausstellungsstücks, wähle eine Karte in der Bibliothek\
+    \ aus.\nZu Beginn des Kampfes, lege die gewählte Karte oben auf den Ziehstapel."
+  Name: Intelligenter Sprachassistent
 MaorongWanju:
   Name: Plüschtier
   Description: Alle |Partnerkarten| beginnen mit {Value1} zusätzlichen |Einigkeit|.
@@ -797,6 +833,10 @@ MaorongWanju:
 JuanzengZhengming:
   FlavorText: '"Führt die Zauberkartenregeln wieder ein!"'
   Name: Spendennachweis
+  Description: "Die maximale Anzahl an Aufladungen für Zauberkarten wird um {Value1}\
+    \ erhöht, {PlayerName} kann mehrfach pro Zug Zauberkarten verwenden.\nErhalte\
+    \ {Value2} <sprite=\"Point\" name=\"Power\">.\nDieses Ausstellungsstück kann nicht\
+    \ entfernt werden."
 HolyGrail:
   Name: Prunkvoller Goldbecher
 PiaoliangPanzi:
@@ -804,8 +844,8 @@ PiaoliangPanzi:
     \ werden bis zum Ende des Kampfes {Value1} zufällige Karten |aufgewertet|."
   Name: Hübsche Teller
 Putao:
-  Description: Bei Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1} maximales
-    Leben.
+  Description: Nach Erhalt dieses Ausstellungsstücks erhält {PlayerName} {Value1}
+    maximales Leben.
   Name: Trauben
 SihunYu:
   Name: Unheilbringender Anhänger
@@ -817,3 +857,6 @@ ZhuQingting:
   Description: Erhalte {Value1:plural one='jeden Zug' other='alle % Züge'} {Value2}
     |Ausweichen|.
   Name: Takecopter
+Headphone:
+  Name: HiFi-Kopfhörer
+  Description: Alle Karten mit |Synergie| aktivieren ihren Effekt ein weiteres Mal.

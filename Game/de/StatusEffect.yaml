@@ -47,7 +47,7 @@ MaoyuBlock:
 LoveGirlDamageIncrease:
   Description: Die Gefühle von {OwnerName} wurden erwidert. Sie erleidet {Rate}% mehr
     Schaden.
-  Name: Schmetterlinge im Bauch
+  Name: Flatterndes Herz
 PhoneBillSe:
   Description: "{OwnerName} stiehlt {Level} <sprite=\"Point\" name=\"Gold\"> mit jedem\
     \ Anruf.\nWird {OwnerName} besiegt, erhalte {Count} <sprite=\"Point\" name=\"\
@@ -152,8 +152,8 @@ ReimuShrineSe:
 ReimuFreeAttackSe:
   Brief: Die nächsten Angriffskarten kosten {Mana}.
   Name: Flüchtige Fantasie
-  Description: Die {Level:plural one='nächste Angriffskarte' other='nächsten % Angriffskarten'}
-    kosten {Mana}.
+  Description: Die {Level:plural one='nächste Angriffskarte kostet' other='nächsten
+    % Angriffskarten kosten'} {Mana}.
 SolarSystemSe:
   Name: Orrerys Sonne
   Brief: 'Zu Beginn deines Zuges erhält {PlayerName} |Aufladungen|.'
@@ -178,6 +178,9 @@ TurnStartDontLoseBlock:
 WindGirl:
   Name: Gabe der Windgöttin
   Description: Am Ende des Zuges wird |Ausweichen| von {OwnerName} auf {Level} aufgefüllt.
+  Brief: "Nach Erhalt von |Gabe der Windgöttin| erhält {OwnerName} die gleiche Menge\
+    \ |Ausweichen|.\nAm Ende des Zuges wird das |Ausweichen| von {OwnerName} bis zur\
+    \ Anzahl an |Gabe der Windgöttin| aufgefüllt."
 Amulet:
   Name: Amulett
   Description: Annulliert {Level:plural one='den nächsten negativen Effekt' other='die
@@ -256,10 +259,13 @@ TimeAuraSe:
     \ 1 Zeitimpuls für jeden getroffenen Feind."
 FrostArmor:
   Name: Eisrüstung
-  Brief: "Jedes Mal, wenn {PlayerName} |Eisrüstung| erhält, erhalte die gleiche Menge\
-    \ |Block|.\nZu Beginn des Zuges erhält {OwnerName} |Block| in Höhe der |Eisrüstung|\
-    \ und verliert .\nJedes Mal, wenn {OwnerName} Schaden erleidet, verliere zusätzlich\
-    \ 1 |Eisrüstung|."
+  Brief: "Nach Erhalt von |Eisrüstung| erhält {OwnerName} die gleiche Menge |Block|.\n\
+    Zu Beginn des Zuges von {OwnerName} erhält sie |Block| in Höhe der |Eisrüstung|\
+    \ und verliert 1 |Eisrüstung|.\nJedes Mal, wenn {OwnerName} Schaden erleidet,\
+    \ verliert sie 1 |Eisrüstung|."
+  Description: "Zu Beginn des Zuges von {OwnerName} erhält sie |Block| in Höhe der\
+    \ |Eisrüstung| und verliert 1 |Eisrüstung|.\nJedes Mal, wenn {OwnerName} Schaden\
+    \ erleidet, verliert sie 1 |Eisrüstung|."
 Concentration:
   Name: Konzentration
 MasterOfCollectionSe:
@@ -283,7 +289,7 @@ TempFirepower:
   Name: Temporäre Feuerkraft
   Description: "Bis zum Ende des Zuges, erhalte {Level} |Feuerkraft|.\n|Feuerkraft|\
     \ erhöht den Schaden von Angriffen."
-  Brief: "|Feuerkraft| wurde erhöht bis zum Ende des Zuges.\n|Feuerkraft| erhöht den\
+  Brief: "|Feuerkraft| wurde bis zum Ende des Zuges erhöht.\n|Feuerkraft| erhöht den\
     \ Schaden von Angriffen."
 Firepower:
   Name: Feuerkraft
@@ -291,7 +297,7 @@ Firepower:
     \ Angriffen."
   Brief: "|Feuerkraft| wurde erhöht.\n|Feuerkraft| erhöht den Schaden von Angriffen."
 TempFirepowerNegative:
-  Brief: "|Feuerkraft| wurde gesenkt bis zum Ende des Zuges.\n|Feuerkraft| erhöht\
+  Brief: "|Feuerkraft| wurde bis zum Ende des Zuges gesenkt.\n|Feuerkraft| erhöht\
     \ den Schaden von Angriffen."
   Description: "Bis zum Ende des Zuges, verliere {Level} |Feuerkraft|.\n|Feuerkraft|\
     \ erhöht den Schaden von Angriffen."
@@ -303,7 +309,7 @@ FirepowerNegative:
   Name: Feuerkraft Senken
 TempSpirit:
   Name: Temporärer Geist
-  Brief: "|Geist| wurde erhöht bis zum Ende des Zuges.\n|Geist| erhöht die Menge an\
+  Brief: "|Geist| wurde bis zum Ende des Zuges erhöht.\n|Geist| erhöht die Menge an\
     \ |Block| und |Barriere| durch Karten."
   Description: "Bis zum Ende des Zuges, erhalte {Level} |Geist|.\n|Geist| erhöht die\
     \ Menge an |Block| und |Barriere| durch Karten."
@@ -316,7 +322,7 @@ Spirit:
 TempSpiritNegative:
   Description: "Bis zum Ende des Zuges, verliere {Level} |Geist|.\n|Geist| erhöht\
     \ die Menge an |Block| und |Barriere| durch Karten."
-  Brief: "|Geist| wurde gesenkt bis zum Ende des Zuges.\n|Geist| erhöht die Menge\
+  Brief: "|Geist| wurde bis zum Ende des Zuges gesenkt.\n|Geist| erhöht die Menge\
     \ an |Block| und |Barriere| durch Karten."
   Name: Temporär Geist Senken
 SpiritNegative:
@@ -457,11 +463,11 @@ PerfectServantUSe:
   Name: Zusätzliche Lösungen
 BailianFireSe:
   Description: "Füge zu Beginn deines Zuges {Level} zufällige Fähigkeitskarte{Level:plural\
-    \ one='' other='n'} deiner Hand hinzu. Diese Karte{Level:plural one='' other='n'}\
-    \ |koste{Level:plural one='t' other='n'} temporär| {Mana} und ha{Level:plural\
-    \ one='t' other='ben'} |Exil| und |Ätherisch|."
+    \ one='' other='n'} deiner Hand hinzu. Sie {Level:plural one='hat' other='haben'}\
+    \ |Exil| und |Ätherisch| und |{Level:plural one='kostet' other='kosten'} temporär|\
+    \ {Mana}."
   Brief: "Füge zu Beginn deines Zuges zufällige Fähigkeitskarten deiner Hand hinzu.\
-    \ Diese Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|."
+    \ Sie haben |Exil| und |Ätherisch| und |kosten temporär| {Mana}."
   Name: Hokkais Feuer
 MeilingAbilitySe:
   Name: Intensive Regenbogenfaust
@@ -482,11 +488,11 @@ BlackPoisonSe:
 YukariFriendSe:
   Name: Grenzen der Fantasie
   Description: Füge zu Beginn deines Zuges {Level} zufällige, dreifarbige, neutrale
-    Karte{Level:plural one='' other='n'} deiner Hand hinzu. Diese Karte{Level:plural
-    one='' other='n'} |koste{Level:plural one='t' other='n'} temporär| {Mana} und
-    ha{Level:plural one='t' other='ben'} |Ätherisch|.
+    Karte{Level:plural one='' other='n'} deiner Hand hinzu. Sie {Level:plural one='hat'
+    other='haben'} |Ätherisch| und |{Level:plural one='kostet' other='kosten'} temporär|
+    {Mana}.
   Brief: Füge zu Beginn deines Zuges zufällige, dreifarbige, neutrale Karten deiner
-    Hand hinzu. Diese Karten |kosten temporär| {Mana} und haben |Ätherisch|.
+    Hand hinzu. Sie haben |Ätherisch| und |kosten temporär| {Mana}.
 MoonWorldSe:
   Name: Unbefleckte Welt
   Description: Zu Beginn deines Zuges erhalten {Level} zufällige Karte{Level:plural
@@ -556,7 +562,7 @@ Curiosity:
 MadokaBowSe:
   Description: Erhalte am Ende des Zuges {Level} zufällige Statuskarten, mische die
     Hälfte in deinen Ziehstapel und lege den Rest in deinen Ablagestapel.
-  Name: Lichtschießender Bogen
+  Name: Leuchtender Langbogen
 QiannianShenqiSe:
   Name: Pyramidenförmiges Puzzle
   Description: "{PlayerName} kann nicht mehr als {Limit} Karten pro Zug ziehen.\n\
@@ -783,8 +789,8 @@ MeihongPowerSe:
 Sleep:
   Name: Verschlinger der Träume
   Description: "Am Ende des Zuges wird die |Barriere| von {OwnerName} auf {Level}\
-    \ gesetzt.\n{OwnerName} wacht nach {Count} Zügen auf, sobald sie Schaden erleidet\
-    \ oder {Count} turns."
+    \ gesetzt.\n{OwnerName} wacht auf, sobald {Count} Züge vergangen sind oder sie\
+    \ Schaden erleidet."
 Burst:
   Name: Durchbruch
   Brief: "Wenn {PlayerName} |Durchbruch| aktiviert, erhalte {Mana}.\nAlle Angriffe\
@@ -809,17 +815,16 @@ MeilingWaterSe:
   Name: Bedrängt
 YouxiangWakeSe:
   Name: Frühaufsteher
-  Description: Erhalte nach {Count} Runde{Count:ordinal one='' other='n'} zu Beginn
-    deines Zuges {Level} |Feuerkraft| und füge {Limit} zufällige Angriffskarte{Limit:plural
-    one='' other='n'} vom Ziehstapel deiner Hand hinzu. Diese Karte{Limit:plural one=''
-    other='n'} |kosten temporär| {Mana}.
-  ExtraDescription: Zu Beginn deines nächsten Zuges erhalte {Level} |Feuerkraft| und
-    füge {Limit} zufällige Angriffskarte{Limit:plural one='' other='n'} vom Ziehstapel
-    deiner Hand hinzu. Diese Karte{Limit:plural one='' other='n'} |kosten temporär|
-    {Mana}.
+  Description: Zu Beginn deines Zuges, erhalte nach {Count} Runde{Count:ordinal one=''
+    other='n'} {Level} |Feuerkraft| und füge {Limit} zufällige Angriffskarte{Limit:plural
+    one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie |{Limit:plural
+    one='kostet' other='kosten'} temporär| {Mana}.
+  ExtraDescription: Zu Beginn deines nächsten Zuges, erhalte {Level} |Feuerkraft|
+    und füge {Limit} zufällige Angriffskarte{Limit:plural one='' other='n'} von deinem
+    Ziehstapel deiner Hand hinzu. Sie |{Limit:plural one='kostet' other='kosten'}
+    temporär| {Mana}.
   Brief: Nach einer gewissen Anzahl an Zügen, erhalte |Feuerkraft| und füge zufällige
-    Angriffskarten vom Ziehstapel deiner Hand hinzu. Diese Karten |kosten temporär|
-    {Mana}.
+    Angriffskarten vom Ziehstapel deiner Hand hinzu. Sie |kosten temporär| {Mana}.
 LoseSpiritSe:
   Description: Zu Beginn deines Zuges verliert {PlayerName} {Level} |Geist|.
   Brief: Zu Beginn deines Zuges verliert {PlayerName} |Geist|.
@@ -909,6 +914,9 @@ ReimuSilenceSe:
   Name: '"Traumsiegel -Stille-"'
   Brief: Jedes Mal, wenn genügend Karten außerhalb der Ziehphase gezogen wurden, verursache
     an allen Feinden Angriffsschaden.
+  Description: "Jedes Mal, wenn {Limit} Karte{Limit:plural one='' other='n'} außerhalb\
+    \ der Ziehphase gezogen {Limit:plural one='wird' other='werden'}, verursache an\
+    \ allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
 SihunYuSe:
   Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde auf das Schlachtfeld.
   Name: Unheilbringender Anhänger
@@ -961,6 +969,7 @@ Cold:
     \ Leben."
 LongLight:
   Description: '{OwnerName} scheint wie ein Stern! Ihre Statuskarten sind verstärkt.'
+  Name: Leuchtendes Stativ
 EnemyLockedOn:
   Name: Bevorstehendes Anvisieren
   Description: '{PlayerName} erhält {Level} |Anvisieren| nachdem alle Feinde ihren
@@ -986,8 +995,8 @@ KoishiDnaSe:
 ButterflyDreamSe:
   Name: Schmetterlingstraum
   Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige|, seltene Karten oben
-    auf deinen Ziehstapel. Diese Karten haben |Exil|, |Ätherisch| und farbige Manakosten
-    können mit allen Farben bezahlt werden.
+    auf deinen Ziehstapel. Sie haben |Exil|, |Ätherisch| und die Manakosten können
+    mit jeder Farbe bezahlt werden.
   Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige|, seltene
     Karte{Level:plural one='' other='n'} oben auf deinen Ziehstapel. Diese {Level:plural
     one='Karte hat' other='Karten haben'} |Exil|, |Ätherisch| und farbige Manakosten
@@ -1101,12 +1110,14 @@ HuiyeTimeSe:
   ExtraDescription: "In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende\
     \ Karten: {Count}).\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
     \ Effekt aktiviert wurde."
+  Name: In einem Augenblick
 Tired:
   ExtraDescription: "In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende\
     \ Karten: {Count}).\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
     \ Effekt aktiviert wurde."
   Description: 'In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende
     Karten: {Count}).'
+  Name: Erschöpft
 Interview:
   Name: Anhaltendes Interview
   Description: '{OwnerName} führt Interviews am Ort des Geschehens durch.'
@@ -1114,6 +1125,7 @@ ColdUp:
   Description: Der Schadensmultiplikator durch erneutes Zufügen von |Kälte| wird um
     {Level} erhöht.
   Brief: Der Schadensmultiplikator durch erneutes Zufügen von |Kälte| wird erhöht.
+  Name: Bittere Kälte
 ForeverCoolSe:
   Brief: "Jedes Mal, wenn die |a:Aktive Fähigkeit| oder |u:Ultimative Fähigkeit| eines\
     \ |Partners| aktiviert wird, füge zufälligen Feinden |Kälte| zu.\nJedes Mal, wenn\
@@ -1177,8 +1189,8 @@ MoreFriendsSe:
     \ hinzu.\nSie {Level:plural one='hat' other='haben'} |Ätherisch| und {Level:plural\
     \ one='verliert' other='verlieren'} |Ätherisch|, nachdem sie beschworen wurde{Level:plural\
     \ one='' other='n'}."
-  Brief: "Zu Beginn deines Zuges, füge zufällige |Partner| deiner Hand hinzu.\nDiese\
-    \ Karten haben |Ätherisch| und verlieren |Ätherisch|, nachdem sie beschworen wurden."
+  Brief: "Zu Beginn deines Zuges, füge zufällige |Partner| deiner Hand hinzu.\nSie\
+    \ haben |Ätherisch| und verlieren |Ätherisch|, nachdem sie beschworen wurden."
 SummerFlowerSe:
   Description: '{SourceCardName} verursacht {Level} zusätzlichen Schaden.'
   Brief: '{SourceCardName} verursacht zusätzlichen Schaden.'
@@ -1229,6 +1241,7 @@ TianziRockSe:
   Brief: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere den Schaden.
   ExtraDescription: "Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, reduziere\
     \ den Schaden um {Level}.\n{OwnerName} kann nicht |anvisiert| werden."
+  Name: Unüberwindbar!
 BailianMagicSe:
   Brief: Die nächsten |Talentkarten| in diesem Zug aktivieren sich zweimal.
   Description: Die {Level:plural one='nächste |Talentkarte|' other='nächsten % |Talentkarten|'}
@@ -1236,6 +1249,10 @@ BailianMagicSe:
   Name: Rezitation des Teufels
 JinziDoppelgangerSe:
   Name: Jahrhundert-Doppelgänger
+  Brief: Während des Zuges von {PlayerName} werden eine gewisse Anzahl der ersten
+    gespielten Karten zweimal aktiviert.
+  Description: Während des Zuges von {PlayerName} {Level:plural one='wird die erste
+    gespielte Karte' other='werden die ersten % gespielten Karten'} zweimal aktiviert.
 SeeFengshuiSe:
   Name: Feng-Shui Manipulation
   Description: "Zu Beginn deines Zuges trifft {PlayerName} eine |Vorhersehung| {Scry}.\n\
@@ -1283,6 +1300,7 @@ SanaeSummonGodSe:
 GainInspirationSe:
   Description: "Am Ende deines Zuges, füge {Level} |Heureka!| deinem Ziehstapel hinzu.\n"
   Brief: "Am Ende deines Zuges, füge |Heureka!| deinem Ziehstapel hinzu.\n"
+  Name: Kontinuierliche Inspiration
 MoodEpiphany:
   Description: "Erhalte {Mana} und ziehe eine Karte für jede gespielte Karte, solange\
     \ |Dissoziation| aktiv ist.\nAm Ende deines Zuges oder wenn {Count:plural one='%\
