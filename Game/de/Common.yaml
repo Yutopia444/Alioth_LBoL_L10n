@@ -55,6 +55,7 @@ Game:
   KickerPrefer: Bonuskosten priorisieren
   InTurn: Innerhalb des Zuges
   OutTurn: Außerhalb des Zuges
+  NotInThatTurn: 'Inaktiv: Nicht der richtige Zug.'
 Ultimate:
   FreeToUse: Kann mehrfach pro Zug verwendet werden.
   OncePerTurn: Kann nur einmal pro Zug verwendet werden.
@@ -99,6 +100,7 @@ Explain:
     ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, etc.)| haben, obwohl\
     \ in der |Manabasis| nicht genügend Mana vorhanden ist um sie zu spielen. Es gibt\
     \ einige Wege, die Kosten solcher Karten zu reduzieren."
+  SaveWhenSelect: Nach der Auswahl wird der Fortschritt sofort gespeichert.
 UI:
   Divide: ','
   Yes: Ja
@@ -200,6 +202,7 @@ Setting:
     UseUs: Zauberkarte Benutzen
     SkipDialog: Dialog beschleunigen (Halten)
     RebindMessage: Drücke eine Taste für "{0}", drücke ESC zum Abbrechen.
+    ToggleMinimize: Temporär die Benutzeroberfläche ausblenden
   Key: Steuerung
   ResetDefault: Standard
   FullScreen: Vollbildschirm
@@ -299,6 +302,10 @@ Setting:
     \nKann auch durch das Drücken der Taste für das Anzeigen feindlicher Aktionen\
     \ angezeigt werden."
   RightClickCancel: Abbrechen durch Rechtsklick
+  LoopOrder: Zyklische Farbpaare
+  QuickPlay: Schnelles Ausspielen
+  ShowReloadDescription: Bestimmt, ob auf der Landkarte angezeigt wird, wie oft dieser
+    Durchlauf neu gestartet und welches Schicksal ausgewählt wurde.
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -783,7 +790,7 @@ Reward:
   AbandonMoney: Erhalte {0} <sprite="Gold" name="gold">
   Headers:
   - Ausgezeichnet!
-  - Erhalte deinen Preis
+  - Wähle deine Belohnungen aus
   - Erhalte Belohnungen
   Abandon: Überspringe Karte
   CardHeader: Wähle eine Karte
@@ -814,8 +821,10 @@ Cards:
   IsUpgraded: Aufgewertet
   Show: Drücke Rechtsklick oder halte den Mauszeiger über die Karte, um die Details
     anzuzeigen.
+  NotInPool: Diese Karte gehört nicht zu den Kartenbelohnungen
 TopInfo:
   Original: 'Original:'
+  Artist: 'Musiker:'
 SelectCard:
   DreamCardsToHand: 'Traum: Füge 1 Karte deiner Hand hinzu'
 MessageDialog:

@@ -65,7 +65,7 @@ AbsorbSpirit:
 Lunatic:
   Name: Wahnsinn
   Description: "Magisches Licht scheint auf alle herab. {OwnerName} wird vom Wahnsinn\
-    \ getrieben und dadurch verstärkt.\n{PlayerName} erhält {Mana} zu Beginn des Zuges."
+    \ getrieben und dadurch verstärkt.\nZu Beginn des Zuges erhält {PlayerName} {Mana}."
 Fengyin:
   Name: Versiegelt
   Description: "{PlayerName} kann {Duration:plural one='bis zum Ende des Zuges' other='für\
@@ -268,6 +268,9 @@ FrostArmor:
     \ erleidet, verliert sie 1 |Eisrüstung|."
 Concentration:
   Name: Konzentration
+  Description: Die {Level:plural one='nächste Karte' other='nächsten % Karten'} mit
+    |Überladen| {Level:plural one='kostet' other='kosten'} keine |Aufladungen|.
+  Brief: Die nächsten Karten mit |Überladen| kosten keine |Aufladungen|.
 MasterOfCollectionSe:
   Name: Meistersammler
   Brief: Jedes Mal, wenn eine Karte |beibehalten| wird, reduziere ihre Manakosten
@@ -703,7 +706,7 @@ KnifeTarget:
   Description: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
   Brief: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
 FreezeBulletSe:
-  Name: Eingefrorene Geschosse
+  Name: Eingefrorene Projektile
   Description: "Füge nach {Level:plural one='dem nächsten feindlichen Angriff' other='den\
     \ nächsten % feindlichen Angriffen'} |Kälte| an den Angreifer zu.\nZu Beginn des\
     \ nächsten Zuges von {OwnerName}, entferne diesen Effekt."
@@ -761,6 +764,11 @@ DreamMaster:
   Description: '{OwnerName} ist die Herrscherin der Träume.'
 BoliPhantomSe:
   Name: Hakurei Illusion
+  Brief: Jedes Mal, wenn eine Karte (außer |Überzeugungsnadel|) ins |Exil| gesendet
+    wird, füge |Überzeugungsnadel| deiner Hand hinzu. Sie |kosten temporär| {Mana}.
+  Description: Jedes Mal, wenn eine Karte (außer |Überzeugungsnadel|) ins |Exil| gesendet
+    wird, füge {Level} |Überzeugungsnadel| deiner Hand hinzu. Sie |{Level:plural one='kostet'
+    other='kosten'} temporär| {Mana}.
 TaijiLiangyiSe:
   Name: Die Geburt des Yin-Yang
   Description: Zu Beginn deines Zuges, falls sich weniger als {Level} |Yin-Yang Kugel|
@@ -832,10 +840,12 @@ LoseSpiritSe:
 LunaticTorch:
   Name: Fackel des Wahnsinns
   Description: "Die Fackel von {OwnerName} scheint in einem seltsamen Licht. Alle\
-    \ Feinde werden vom Wahnsinn getrieben.\n{PlayerName} erhält {Mana} zu Beginn\
-    \ des Zuges."
+    \ Feinde werden vom Wahnsinn getrieben.\nZu Beginn des Zuges erhält {PlayerName}\
+    \ {Mana}."
 RinAura:
   Name: Loderndes Feuer
+  Description: '|Rachsüchtige Geister|, die durch {OwnerName} beschworen wurden, verursachen
+    durch |Rachekugel| {Level} zusätzlichen Schaden.'
 EnemyMaid:
   Name: Kasumis Aufräumarbeiten
   Description: '{OwnerName} fügt am Ende des Zuges {Level} Schaden an {PlayerName}
@@ -868,7 +878,7 @@ InfinityGemsSe:
     \ {Count}."
 SakuraWandSe:
   Name: Geflügelter Schlüssel
-  Description: '{OwnerName} kann zwei Mal so häufig angreifen.'
+  Description: '{OwnerName} kann zweimal so häufig angreifen.'
 BoliDajiejieSe:
   Name: Große Hakurei Barriere
   Description: Für den Rest des Kampfes, konvertiere {OwnerName}s |Block| in dieselbe
@@ -1046,6 +1056,7 @@ YukariFlyObjectSe:
     meisten verbleibenden Leben {Level} Schaden zu.
   Brief: Zu Beginn deines nächsten Zuges fügt {PlayerName} dem Feind mit den meisten
     verbleibenden Leben Schaden zu.
+  Name: Superschnelles Flugobjekt
 KoishiUltimateSe:
   Description: Zu Beginn deines Zuges, spiele die {Level:plural one='oberste Karte'
     other='obersten % Karten'} in deinem Ziehstapel.
@@ -1053,9 +1064,11 @@ KoishiUltimateSe:
   Brief: Zu Beginn deines Zuges, spiele die obersten Karten in deinem Ziehstapel.
 FrozenThroneSe:
   Name: Gefrorener Thron
-  Description: Zu Beginn deines Zuges, falls sich |Eisgeschoss| {Level:plural one='nicht'
-    other='weniger als % Mal'} auf deiner Hand befindet, füge {Level} |Eisgeschoss|
-    deiner Hand hinzu.
+  Description: Zu Beginn des Zuges von {PlayerName}, falls sich |Eisgeschoss| {Level:plural
+    one='nicht' other='weniger als % Mal'} auf deiner Hand befindet, füge {Level}
+    |Eisgeschoss| deiner Hand hinzu.
+  Brief: Zu Beginn des Zuges von {PlayerName}, falls sich |Eisgeschoss| weniger als
+    eine gewisse Anzahl auf deiner Hand befindet, füge |Eisgeschoss| deiner Hand hinzu.
 ClockCorpseSe:
   Brief: Karten können nur zu Beginn des Zuges gezogen werden.
   Description: Karten können nur zu Beginn des Zuges gezogen werden.
@@ -1074,8 +1087,9 @@ MinengZhuruSe:
     Male ausgeführt.
   Name: Injektion mentaler Energie
 SplitPotionSe:
-  Description: "|Instabiler Trank| verursacht {Level} Mal Schaden."
+  Description: "|Instablier Trank| verursacht an {Level} zusätzlichen Zielen Schaden."
   Name: Chemische Synthese
+  Brief: '|Instablier Trank| verursacht an zusätzlichen Zielen Schaden.'
 FairyTreeSe:
   Brief: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen wird,
     erhalte |Block|.
@@ -1087,6 +1101,7 @@ ExtraBlizzard:
     Schaden und fügt |Kälte| zu.
   Description: Zu Beginn des nächsten Zuges verursacht {OwnerName} an allen Feinden
     {Damage} |präzisen| Schaden und fügt |Kälte| zu.
+  Name: Aufziehender Schneesturm
 KnifeWithLockedOn:
   Description: '|Wurfmesser| fügen {Level} |Anvisieren| zu, wenn sie gespielt werden.'
   Brief: '|Wurfmesser| fügen |Anvisieren| zu, wenn sie gespielt werden.'
@@ -1104,6 +1119,7 @@ JunkoColor:
   Description: 'Unreinheit von {PlayerName}: Geringfügig.'
   ExtraDescription: "Unreinheit von {PlayerName}: Schwerwiegend.\n{JunkoName} erhält\
     \ |Feuerkraft| und \"Befreien von irdischen Unreinheiten\" wird verstärkt."
+  Name: Voller Unreinheiten
 HuiyeTimeSe:
   Description: 'In diesem Zug können nur {Limit} Karten gespielt werden. (Verbleibende
     Karten: {Count}).'
@@ -1354,6 +1370,15 @@ WhiteWorldSe:
     |Kälte| zu.
 LongEscape:
   Name: Entspannen
+  Description: "{OwnerName} verlässt diesen Kampf, falls sie weniger als {Level} Leben\
+    \ hat.\nWird {OwnerName} besiegt, hinterlässt sie {Level} <sprite=\"Point\" name=\"\
+    Gold\">."
 PaidTdm:
   Description: '{OwnerName} hat bereits bezahlt!'
   Brief: '{OwnerName} hat bereits bezahlt!'
+  Name: Kostenloses Nachfüllen
+RinSummon:
+  Name: Wiederbelebung der Geister
+  Description: "{OwnerName} kann {Level} {Level:plural one='rachsüchtigen Geist' other='rachsüchtige\
+    \ Geister'} wiederbeleben.\nDie Anzahl der Geister wird {Limit:plural one='jede\
+    \ Runde' other='alle % Runden'} um 1 erhöht."

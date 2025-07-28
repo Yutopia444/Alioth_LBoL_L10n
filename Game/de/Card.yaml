@@ -194,6 +194,10 @@ UpgradePotion:
     ausreichend vorbereiten, wenn du in einem Danmaku-Kampf gewinnen möchtest!"'
   Description: "Füge {Value2} |Instabiler Trank| deinem Ziehstapel hinzu.\nErhöhe\
     \ den verursachten Schaden durch |Instabiler Trank| um {Value1}."
+  UpgradedDescription: "Füge {Value2} |Instabiler Trank| deinem Ziehstapel hinzu.\n\
+    Erhöhe den verursachten Schaden durch |Instabiler Trank| um {Value1}.\nAm Ende\
+    \ deines Zuges, erhöhe den Schaden aller Exemplare von |Instabiler Trank| in deinem\
+    \ Zieh- und Ablagestapel um {Value1}."
 HuiyinMoreDraw:
   Description: Ziehe {Value1} Karte{Value1:plural one='' other='n'} mehr zu Beginn
     des Zuges.
@@ -243,12 +247,12 @@ KokoroDance:
     \ um {Value2}."
 HuiyeSuperExtraTurn:
   Name: Ende einer unvergänglichen Nacht
-  Description: "Am Ende deines natürlichen Zuges, erhalte einen Extrazug.\n|Block|\
-    \ is not lost at the start of that extra turn, and only {Value1} card{Value1:plural\
-    \ one='' other='s'} may be played."
+  Description: "Erhalte am Ende deines natürlichen Zuges einen Extrazug.\n|Block|\
+    \ geht zu Beginn des Extrazuges nicht verloren und nur {Value1:plural one='% Karte'\
+    \ other='% Karten'} können gespielt werden."
   DetailText: "Der Extrazug von {SelfName} beginnt immer vor allen anderen Extrazügen.\n\
-    Nachdem {SelfName} gespielt wurde, können die Details des  {PlayerName}'s status\
-    \ icons to check the details of the current turn."
+    Nachdem {SelfName} gespielt wurde, können die Details des derzeitgen Zuges am\
+    \ Statussymbol unter {PlayerName} geprüft werden."
 BrokenTimeline:
   Name: Kaputte Zeitlinie
   Description: Beende den Zug von {PlayerName} und erhalte einen Extrazug. Zu Beginn
@@ -281,7 +285,7 @@ AutoKnife:
   Description: "Bis zum Ende des Kampfes erhalten alle |Wurfmesser| |Automatisches\
     \ Exil|.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
 FreezeBullet:
-  Name: Eingefrorene Geschosse
+  Name: Eingefrorene Projektile
   FlavorText: Cirno ist unsere Erlöserin!
   Description: "Erhalte {Block} |Block|.\nBis zu deinem nächsten Zug, füge dem ersten\
     \ Feind der {PlayerName} angreift |Kälte| zu."
@@ -346,7 +350,7 @@ BoliPhantom:
   Name: Hakurei Illusion
   FlavorText: '"Transformations-Jutsu: Igel"'
   Description: Jedes Mal, wenn eine Karte (außer |Überzeugungsnadel|) ins |Exil| gesendet
-    wird, füge eine |Überzeugungsnadel| deiner Hand hinzu. Sie |kostet temporär| {Mana}.
+    wird, füge 1 |Überzeugungsnadel| deiner Hand hinzu. Sie |kostet temporär| {Mana}.
 ShopAttack:
   Name: Gurkenrakete
   FlavorText: Bitte nicht essen!
@@ -628,8 +632,8 @@ ArtificialJewellery:
     entfernt werden.
 TakaneDefense:
   Name: Tiefer Wald
-  Description: "Erhalte {Block} |Block|.\n|Pro zusätzliches {Mana}|: Erhalte {Value1}\
-    \ zusätzliches |Block|."
+  Description: "Erhalte {Block} |Block|.\n|Synergie| {Mana}: Erhalte {Value1} zusätzliches\
+    \ |Block|."
 CManaCard:
   Description: Erhalte {Mana}.
   Name: Reinheit
@@ -727,10 +731,11 @@ KoishiPlayDiscard:
   Name: Philosophie der Verachteten
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
     noch ins |Exil| gesendet.
-  Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem\
+  Description: "Wähle bis zu {Value1:plural one='% Karte' other='% Karten'} von deinem\
     \ Ablagestapel und spiele {Value1:plural one='es als |Folgeaktion|.' other='sie\
     \ als |Folgeaktionen|.'}\nSende die {Value1:plural one='gewählte Karte' other='gewählten\
-    \ Karten'} ins |Exil|, falls sie ursprünglich keine |Folgeaktionen| sind."
+    \ Karten'} ins |Exil|, falls sie ursprünglich keine |Folgeaktionen| {Value1:plural\
+    \ one='war' other='waren'}."
 BailianBlack:
   Description: Alle Abwehr-, Fähigkeits- und Statuskarten erhalten |Exil|. Die betroffenen
     Karten kosten {Mana}.
@@ -742,8 +747,8 @@ AyaNewsMarisaSp:
     alle Gerüchte über {PlayerName}.
 KoishiAttackX:
   Name: Hölle aus Rosen
-  Description: '|Pro benutztes <sprite="ManaSprite" name="2">|: Verursache an allen
-    Feinden {Damage} Schaden und erhalte {Mana}.'
+  Description: '|Synergie| <sprite="ManaSprite" name="2">: Verursache an allen Feinden
+    {Damage} Schaden und erhalte {Mana}.'
 KoishiDna:
   Name: Defekte DNA
   UpgradedDescription: "Zu Beginn deines Zuges, füge {Value1} |DNA-Transkription|\
@@ -918,9 +923,9 @@ DoubleLianhuadie:
 KuosanJiejie:
   FlavorText: Ich brauche jede Menge Philosophen-Mana und ich brauche es jetzt!
   Name: Grenzerweiterung
-  Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\">|: Erhalte {Block}\
-    \ |Block|.\n|Pro benutztes <sprite=\"ManaSprite\" name=\"R\">|: Verursache an\
-    \ allen Feinden {Damage} Schaden."
+  Description: "|Synergie| <sprite=\"ManaSprite\" name=\"W\">: Erhalte {Block} |Block|.\n\
+    |Synergie| <sprite=\"ManaSprite\" name=\"R\">: Verursache an allen Feinden {Damage}\
+    \ Schaden."
 GapLady:
   Name: Spaltendame
   Description: "Verliere {Value1} Leben.\nErhalte {Mana}.\nZiehe {Value2} Karte{Value2:plural\
@@ -1409,8 +1414,8 @@ MeilingFriend:
   Name: Meiling, nachlässige Torwächterin
   ExtraDescription3: '{FriendU}Heile {Value1} Leben und erhalte {Value2} |Feuerkraft|.'
   Description: "{FriendS}Erhalte {Graze} |Ausweichen|.\n{FriendP}Füge |Wurfmesser|\
-    \ deiner Hand hinzu.\nJedes Mal, wenn {PlayerName} receives damage from an enemy's\
-    \ whole attack, it triggers for an additional time."
+    \ deiner Hand hinzu.\nJedes Mal, wenn {PlayerName} den gesamten Schaden eines\
+    \ Angriffs erleidet, wiederhole diesen Effekt."
 DayaojingTdm:
   Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
   Name: Daiyousei, Eiskugel Assistentin
@@ -1418,6 +1423,8 @@ DayaojingTdm:
   ExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand hinzu.'
   UpgradedExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand
     hinzu, ein Exemplar wird |aufgewertet|.'
+  ExtraDescription3: '{FriendU}Erhalte {Value2} |Eisrüstung|, erhöhe die Menge um
+    die Anzahl an |Einigkeit| auf {SelfName}.'
 YijiuDraw:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}."
@@ -2024,16 +2031,16 @@ ChargingPotion:
     \ one='% |Aufladung|' other='% |Aufladungen|'}.\nFüge {Value2} |Instabiler Trank|\
     \ deiner Hand hinzu."
 StarlightTaifengSummoner:
-  Description: "Füge |Sternenlicht-Taifun| deinem Ziehstapel hinzu.\n|Pro benutztes\
-    \ {Mana}|: Die hinzugefügte Karte verursacht ein weiteres Mal Schaden.\n|Pro benutztes\
-    \ <sprite=\"ManaSprite\" name=\"R\">|: Die hinzugefügte Karte verursacht {Value1}\
-    \ zusätzlichen Schaden."
+  Description: "Füge |Sternenlicht-Taifun| deinem Ziehstapel hinzu.\n|Synergie| {Mana}:\
+    \ |Sternenlicht-Taifun| verursacht ein weiteres Mal Schaden.\n|Synergie| <sprite=\"\
+    ManaSprite\" name=\"R\">: |Sternenlicht-Taifun| verursacht {Value1} zusätzlichen\
+    \ Schaden."
   FlavorText: Sammle Mana für ein Jahrtausend, um alles in einem kurzen Augenblick
     freizulassen.
   Name: Zusammenlaufendes Sternenlicht
   UpgradedDescription: "Füge |Sternenlicht-Taifun| oben auf deinem Ziehstapel hinzu.\n\
-    |Pro benutztes {Mana}|: Die hinzugefügte Karte verursacht ein weiteres Mal Schaden.\n\
-    |Pro benutztes <sprite=\"ManaSprite\" name=\"R\">|: Die hinzugefügte Karte verursacht\
+    |Synergie| {Mana}: |Sternenlicht-Taifun| verursacht ein weiteres Mal Schaden.\n\
+    |Synergie| <sprite=\"ManaSprite\" name=\"R\">: |Sternenlicht-Taifun| verursacht\
     \ {Value1} zusätzlichen Schaden."
 StarlightTaifeng:
   Name: Sternenlicht-Taifun
@@ -2232,10 +2239,11 @@ BackToFuture:
   Name: Zurück in die Zukunft
 PerfectServant:
   Name: Perfekte Dienerin
-  Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"W\">|: Zu Beginn deines nächsten Zuges, senke |temporarily costs| 1 random\
-    \ mana less.\n|Pro benutztes <sprite=\"ManaSprite\" name=\"U\">|: Zu Beginn deines\
-    \ nächsten Zuges, erhalte {Mana} und ziehe 1 zusätzliche Karte."
+  Description: "|Synergie| <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\">: Zu Beginn deines nächsten Zuges |kosten temporär| alle Karten auf\
+    \ deiner Hand 1 zufälliges Mana weniger.\n|Synergie| <sprite=\"ManaSprite\" name=\"\
+    U\">: Zu Beginn deines nächsten Zuges, erhalte {Mana} und ziehe 1 zusätzliche\
+    \ Karte."
 SakuyaUsage:
   Name: Falsche Verwendung von Sakuya
   FlavorText: Halte einfach die Zeit an und bewege jeden die Treppen hinunter.
@@ -2598,7 +2606,7 @@ BlazingStar:
     \ {PlayerName} und erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
 MeilingRain:
   Description: "Verursache an allen Feinden {AttackTimes} Mal {Damage} Schaden.\n\
-    |Für jedes bezahlte {Mana}|: Verursache an allen Feinden erneut Schaden."
+    |Synergie| {Mana}: Verursache an allen Feinden den Schaden erneut."
   Name: Farbenfroher Regen
 ChargingToMana:
   Description: Verliere alle |Aufladungen|. Für jede verlorene |Aufladung|, ziehe
@@ -2793,6 +2801,7 @@ YukariFlyObject:
   FlavorText: Viel zu schnell für das bloße Auge.
   Description: Zu Beginn deines nächsten Zuges, verursache an dem Feind mit dem höchsten
     Leben {Value1} Schaden.
+  Name: Superschnelles Flugobjekt
 DollFactory:
   Description: (WIP) 
   Name: Puppenwerkstatt
@@ -2875,6 +2884,7 @@ FlanPlayAlone:
   Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nWerfe alle nicht-Angriffskarten\
     \ ab."
   Name: Alleine spielen
+  FlavorText: Haben die Mädchen denn kein Internet?
 KongMana:
   Description: "Sende 1 Karte von deiner Hand ins |Exil|. Erhalte Mana in Höhe der\
     \ Manakosten.\nFüge |Regenbogen| deiner Hand hinzu."
@@ -2883,13 +2893,13 @@ KongMana:
     ihrer Seltenheit.
 YoumuHybrid:
   Name: Halb-Mensch, Halb-Phantom
-  Description: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\">|: Sende bis zu {Value1}\
-    \ Karte{Value1:plural one='' other='n'} von deiner Hand ins |Exil|.\n|Pro benutztes\
-    \ <sprite=\"ManaSprite\" name=\"G\">|: Erhalte {Value2} |Ausweichen|."
-  UpgradedDescription: "|Pro benutztes <sprite=\"ManaSprite\" name=\"W\">|: Sende\
-    \ bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem Ziehstapel,\
-    \ Ablagestapel oder deiner Hand ins |Exil|.\n|Pro benutztes <sprite=\"ManaSprite\"\
-    \ name=\"G\">|: Erhalte {Value2} |Ausweichen|."
+  Description: "|Synergie| <sprite=\"ManaSprite\" name=\"W\">: Sende bis zu {Value1}\
+    \ Karte{Value1:plural one='' other='n'} von deiner Hand ins |Exil|.\n|Synergie|\
+    \ <sprite=\"ManaSprite\" name=\"G\">: Erhalte {Value2} |Ausweichen|."
+  UpgradedDescription: "|Synergie| <sprite=\"ManaSprite\" name=\"W\">: Sende bis zu\
+    \ {Value1} Karte{Value1:plural one='' other='n'} von deinem Ziehstapel, Ablagestapel\
+    \ oder deiner Hand ins |Exil|.\n|Synergie| <sprite=\"ManaSprite\" name=\"G\">:\
+    \ Erhalte {Value2} |Ausweichen|."
 DollFangzhen:
   Description: (WIP) 
 Qianqiang:
@@ -2931,7 +2941,7 @@ AliceAttack:
     von Alice.
 ReisenAttack:
   Name: Wahnsinniger Traum
-  Description: '|Pro benutztes {Mana}|: Verursache an allen Feinden {Damage} Schaden.'
+  Description: '|Synergie| {Mana}: Verursache an allen Feinden {Damage} Schaden.'
 MeilingWater:
   Description: "Erhalte {Value1} |Feuerkraft|.\nFüge {Value2} zufällige Angriffskarte{Value2:plural\
     \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie {Value2:plural\
@@ -2963,23 +2973,23 @@ ReadBook:
     Tokiko sich ausgeliehen hat, aus der Kinderabteilung.
 HuiyeAttack:
   Name: Hourais Meer der Bäume
-  Description: "|Pro Mana mit unterschiedlicher Farbe|: Verursache an allen Feinden\
+  Description: "|Synergie| Mana mit unterschiedlicher Farbe: Verursache an allen Feinden\
     \ {Damage} Schaden.\nFüge {Value1} Karte{Value1:plural one='' other='n'} vom |Exil|\
     \ deiner Hand hinzu, falls mindestens {Value2} Mana benutzt wurde."
 YouxiangAttack:
   Name: Blütezeit in Gensokyo
-  Description: "Verursache {Damage} Schaden.\n|Pro zusätzliches {Mana}|: Verursache\
-    \ {Value1} zusätzlichen Schaden.\nDer Schaden dieser Karte ist |präzise|, falls\
-    \ mindestens {Value2} Mana benutzt wurde."
+  Description: "Verursache {Damage} Schaden.\n|Synergie| {Mana}: Verursache {Value1}\
+    \ zusätzlichen Schaden.\nDer Schaden dieser Karte ist |präzise|, falls mindestens\
+    \ {Value2} Mana benutzt wurde."
 FengjiAttack:
   Name: Zersetzender Wind
   FlavorText: Der vollständige Name lautet "Zersetzt-einen-Wald-sofort-in-elementare-Partikel
     Windfächer."
   UpgradedDescription: "Verursache an allen Feinden {Value2} Mal {Damage} Schaden.\n\
-    |Pro benutztes <sprite=\"ManaSprite\" name=\"C\">|: Verursache {Value1} zusätzlichen\
+    |Synergie| <sprite=\"ManaSprite\" name=\"C\">: Verursache {Value1} zusätzlichen\
     \ Schaden."
-  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Pro benutztes <sprite=\"\
-    ManaSprite\" name=\"C\">|: Verursache {Value1} zusätzlichen Schaden."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Synergie| <sprite=\"\
+    ManaSprite\" name=\"C\">: Verursache {Value1} zusätzlichen Schaden."
 TianziRock:
   UpgradedDescription: "Jedes Mal, wenn {PlayerName} Angriffsschaden erleiden würde,\
     \ reduziere es um {Value1}.\nDieser Effekt ist nicht stapelbar.\n{PlayerName}\
@@ -2998,8 +3008,7 @@ YijiSkill:
     \ Effekt.\nSeltene Fähigkeiten können ebenfalls erscheinen."
 DanmuJade:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nFüge {Value1} |Regenbogen|\
-    \ deiner Hand hinzu.\n|Pro benutztes {Mana}|: Erhalte {Value2} |Feuerkraft| und\
-    \ |Geist|."
+    \ deiner Hand hinzu.\n|Synergie| {Mana}: Erhalte {Value2} |Feuerkraft| und |Geist|."
 BestFriend:
   ExtraDescription1: "Wähle bis zu {Value1} |Partnerkarte{Value1:plural one='' other='n'}|.\
     \ Sie {Value1:plural one='erhält' other='erhalten'} maximale |Einigkeit|.\n|d:Überfluss:\
@@ -3095,9 +3104,9 @@ ExilePotion:
     Menge an |Instabiler Trank| deinem Ablagestapel hinzu.
 RainbowStar:
   Name: Regenbogen-Sternenexplosion
-  Description: "Verursache {Damage} Schaden.\n|Pro benutztes <sprite=\"ManaSprite\"\
-    \ name=\"1\">|: verursache {Value1} zusätzlichen Schaden.\n|Pro benutztes <sprite=\"\
-    ManaSprite\" name=\"P\">|: verursache {Value2} zusätzlichen Schaden."
+  Description: "Verursache {Damage} Schaden.\n|Synergie| <sprite=\"ManaSprite\" name=\"\
+    1\">: verursache {Value1} zusätzlichen Schaden.\n|Synergie| <sprite=\"ManaSprite\"\
+    \ name=\"P\">: verursache {Value2} zusätzlichen Schaden."
 KnifeBounce:
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Wurfmesser| deiner Hand\
     \ hinzu."
@@ -3361,3 +3370,6 @@ PlayWithWaste:
     \ sie deiner Hand hinzu.\nSie hat |Kopie| und |Limitiert【1】|."
 SacrificeDoll:
   Name: Rückkehr zur Leere
+AttackX:
+  Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nFalls das Ziel besiegt\
+    \ wird, bevor alle Attacken durchgeführt worden sind, ."
