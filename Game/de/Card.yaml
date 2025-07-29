@@ -8,6 +8,7 @@ Lunatic:
     \ und verliere {Value2} Leben.\nAnzahl {SelfName}: {LunaticCount}."
 AliceAttackB:
   Description: Verursache {Damage} Schaden.
+  Name: Flankierender Blitz
 RedLaser:
   Name: Entzündlicher Laser
   UpgradedDescription: "Verursache {AttackTimes} Mal {Damage} Schaden.\nFüge {Value1}\
@@ -832,6 +833,8 @@ KoishiUltimate:
   Description: "Spiele die oberste Karte in deinem Ziehstapel.\nZu Beginn deines Zuges,\
     \ spiele die oberste Karte in deinem Ziehstapel."
   Name: Das wahre Selbst
+  DetailText: 'v1.6.1: Das automatische Ausspielen der Karte aktiviert sich nun vor
+    der Ziehphase.'
 Changzhizhen:
   Name: Permanente Grenze
   Description: "|Am Ende des Zuges|: Verursache an einem zufälligen Feind {Value1}\
@@ -1148,6 +1151,7 @@ FruitShake:
   FlavorText: Tropische Früchte sind kalt und lecker!
   Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
     Falls in diesem Zug ein |Partner| beschworen wurde, kostet {SelfName} {Mana}."
+  Name: Leckeres Fruchteis
 TiangouOrder:
   Name: Erlass des großen Tengus
   Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} Angriffsschaden\
@@ -1815,6 +1819,7 @@ ToolUpgrade:
 RuowujiCard:
   Description: "Verursache an allen Feinden {Damage} Schaden und füge {Value1} |Ertrinken|\
     \ zu.\n|Ertrinken| ist nicht stapelbar."
+  Name: Tosende Gegenströmung
 ToolFirstAid:
   Name: Erste-Hilfe-Kasten
   Description: "Entferne alle negativen Effekte von {PlayerName}.\nHeile {Value1}\
@@ -1895,6 +1900,7 @@ PaluxiCurse:
   FlavorText: Heute Morgen um 02:30 Uhr wurde eine gewisse Brückenprinzessin, Miss
     Mizu*****, beim illegalen Betreten des Schreins von einem patrouillierenden Schreinmädchen
     erwischt.
+  Name: Groll erwidern
 MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
   Description: "Wähle 1 von {Value1} |Tipps gegen den Mond| und erhalte dessen Effekt.\n\
@@ -2748,8 +2754,8 @@ InspirationDefense:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Inspiration|."
 YijiPurify:
   Name: Izunome
-  Description: Jede Karte auf der Hand erhält |Rein|, removing their colored mana
-    cost component.
+  Description: Alle Karten auf deiner Hand erhalten |Rein|, wodurch sie ihre farbigen
+    Manakosten verlieren.
 MorphFrog:
   Description: Erhalte {Value1} maximales Leben.
   Name: Amphibiengestalt
@@ -2902,6 +2908,7 @@ YoumuHybrid:
     \ Erhalte {Value2} |Ausweichen|."
 DollFangzhen:
   Description: (WIP) 
+  Name: Puppenformation
 Qianqiang:
   Description: (WIP) 
   Name: Süße Phalanx
@@ -2971,6 +2978,7 @@ ReadBook:
     \ oder weißen Karten aus und füge sie deiner Hand hinzu.|"
   FlavorText: Laut Suzunaans letztem Jahresbericht stammen die meisten Bücher, die
     Tokiko sich ausgeliehen hat, aus der Kinderabteilung.
+  Name: Lesender Youkai
 HuiyeAttack:
   Name: Hourais Meer der Bäume
   Description: "|Synergie| Mana mit unterschiedlicher Farbe: Verursache an allen Feinden\
@@ -3009,6 +3017,7 @@ YijiSkill:
 DanmuJade:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nFüge {Value1} |Regenbogen|\
     \ deiner Hand hinzu.\n|Synergie| {Mana}: Erhalte {Value2} |Feuerkraft| und |Geist|."
+  Name: Kokon des Regenbogen-Danmakus
 BestFriend:
   ExtraDescription1: "Wähle bis zu {Value1} |Partnerkarte{Value1:plural one='' other='n'}|.\
     \ Sie {Value1:plural one='erhält' other='erhalten'} maximale |Einigkeit|.\n|d:Überfluss:\
@@ -3141,10 +3150,12 @@ SakuyaDetective:
 FairyOnIce:
   Description: "Füge {Value1} |Eisflügel| oben auf deinen Ziehstapel hinzu. \nErhalte\
     \ {Value2} |Ausweichen|. "
+  Name: Feen auf Eis
 ColdChain:
   Description: Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} von deinem
     Ziehstapel und füge sie deiner Hand hinzu.
   FlavorText: Lieferung frischer Lebensmittel, direkt bis zur Haustür.
+  Name: Kühlkettenlogistik
 InstantFreeze:
   Description: "Füge allen Feinden |Kälte| zu.\nBeende den Zug von {PlayerName} und\
     \ erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
@@ -3234,9 +3245,10 @@ ModuoluoSeasons:
   Name: Wütende Jahreszeiten
 ReisenMana:
   Description: Füge entweder 2 |Flamme| oder 2 |Wasserschwall| deiner Hand hinzu.
+  Name: Sehvermögen abstimmen
 SuikaBigball:
   Name: Oni Geisterbombe
-  Description: "Verursache {Damage} Schaden. verursache an allen anderen Feinden {HalfDamage}\
+  Description: "Verursache {Damage} Schaden. Verursache an allen anderen Feinden {HalfDamage}\
     \ Schaden.\nVerliere {Value1} |Feuerkraft|."
   NonbattleDescription: "Verursache {Damage} Schaden. verursache an allen anderen\
     \ Feinden die Hälfte des Schadens.\nVerliere {Value1} |Feuerkraft|."
@@ -3261,11 +3273,13 @@ FlanFirepower:
     |Feuerkraft| in Höhe der Karten auf deiner Hand.
   Description: "Alle Karten auf deiner Hand erhalten |Ätherisch|, erhalte |Feuerkraft|\
     \ in Höhe der Karten auf deiner Hand.\nAnzahl anderer Handkarten: {Count}."
+  Name: Und dann gab es niemanden mehr?
 YongyiAttack:
   Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFalls\
     \ {PlayerName} |Temporäre Feuerkraft| besitzt, verursache ein weiteres Mal Schaden."
+  Name: Furiose Wellen des Schreckens
 RemiliaBat:
-  Name: Fledermaus Verwandlung
+  Name: Fledermaus-Verwandlung
   Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nErhalte {Value2} |Ausweichen|."
   FlavorText: Die Ankunft der Königin der Nacht.
 AhongMana:
@@ -3373,3 +3387,6 @@ SacrificeDoll:
 AttackX:
   Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nFalls das Ziel besiegt\
     \ wird, bevor alle Attacken durchgeführt worden sind, ."
+  Name: Angriff nach Besiegen des Ziels fortsetzen
+DeployPenglai:
+  Name: Bunraku des Mädchens
