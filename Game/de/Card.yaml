@@ -35,7 +35,7 @@ SakuyaAttackW:
   Name: Fehlleitung
 SakuyaBlockW:
   Description: Erhalte {Block} |Block|.
-  Name: Defensive der schwarzen Schlüssel
+  Name: Schwarze Schlüsseldefensive
 CirnoConsider:
   ExtraDescription1: Erhalte {Block} |Block|.
   ExtraDescription2: Ziehe {Value1:plural one='% Karte' other='% Karten'}.
@@ -275,8 +275,9 @@ TimeMagic:
     \ und die Manakosten können mit jeder Farbe gezahlt werden.\nWiederhole diesen\
     \ Effekt zu Beginn deines Extrazuges."
   DetailText: "|e:Alternative Karten| ignorieren Manakosten, Manafarben und Charakterbeschränkungen.\n\
-    {SelfName} kann nicht durch diesen Effekt erschaffen werden.\nDie mehrfache Anwendung\
-    \ von {SelfName} erhöht , nicht die Auswahl der Karten oder wie viele Karten pro."
+    {SelfName} kann nicht durch diesen Effekt erschaffen werden.\nWeitere Exemplare\
+    \ von {SelfName} werden nacheinander aktiviert und haben keinen Einfluss an der\
+    \ Anzahl der Auswahlmöglichkeiten oder Karten, die ausgewählt werden dürfen."
 EvilMaid:
   Name: Dienstmädchen des Teufels
   Description: "Verliere {Value1} Leben.\nWährend deines nächsten Zuges verursachen\
@@ -857,6 +858,7 @@ MojingShanjie:
   Description: Wähle 1 von {Value1} zufälligen Abwehrkarten aus und füge sie deiner
     Hand hinzu. Sie |kostet temporär| {Mana}.
   FlavorText: Zufälligkeit ist ein Element religiöser Praktiken.
+  Name: Austreibende Grenze
 DoubleDajiejie:
   Description: "Erhalte {Block} |Block|.\nErhalte {Shield} |Barriere|."
   Name: Große Doppelbarriere
@@ -1053,6 +1055,7 @@ TuimofuLuanwu:
 SuikaOut:
   Description: "Sende 1 Karte aus deiner Hand ins |Exil|.\nErhalte {Value1} |Bannkreis|."
   FlavorText: Es scheint gegen Feinde mit 999 Feuerkraft nicht sehr effektiv zu sein.
+  Name: Säubernder Exorzismus
 LingfuHuti:
   Description: "Erhalte {Block} |Block|.\nFüge |Kami-Aura Talisman| deiner Hand hinzu."
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nFüge |Kami-Aura Talisman| deiner\
@@ -1241,6 +1244,8 @@ YinyangQueen:
   Description: '{FriendP}Erhalte {Value2} |Block| und |Barriere|.'
   ExtraDescription1: '{FriendA}Füge {Value1} zufällige |Regenbogenjade Yin-Yang Kugel|
     deiner Hand hinzu.'
+  ExtraDescription3: '{FriendU}Bis zum Ende des Kampfes werden die Effekte von |Yin-Yang
+    Kugel| verdoppelt. Füge {Value1} |Regenbogenjade Yin-Yang Kugel| deiner Hand hinzu.'
 XiaoemoBook:
   Name: Teuflischer Kodex
   Description: "Sende eine Karte aus deiner Hand ins|Exil|.\nZiehe {Value1:plural\
@@ -1334,8 +1339,9 @@ ShanyuCard:
   Description: "Erhalte {Block} |Block|.\nErhalte {Shield} |Barriere|."
   Name: Kugel des Berges und Regens
 KuosanLingfu:
-  Description: "Verursache an allen Feinden {Damage} Schaden. \nErhalte dieselbe Menge\
-    \ |Barriere| wie ."
+  Description: "Verursache an allen Feinden {Damage} Schaden. \nErhalte |Barriere|\
+    \ in Höhe der verlorenen Leben aller Feinde durch diesen Angriff."
+  Name: Ausbreitendes Amulett
 ChunseXiaojing:
   Description: "Erhalte {Mana}.\nZiehe {Value1} {Value1:plural one='Karte' other='Karten'}.\n\
     |Überziehe| {Value2}."
@@ -1357,6 +1363,8 @@ SenluoJiejie:
 EvilTuiZhi:
   FlavorText: Einer der lustigen Dinge, die man in Gensokyo machen kann.
   Name: Auslöschung des Bösen
+  Description: Die {Value1:plural one='nächste Angriffskarte' other='nächsten % Angriffskarten'}
+    in diesem Zug {Value1:plural one='aktiviert' other='aktivieren'} sich zweimal.
 Jinfuzhen:
   Name: Bindende Grenze
   Description: "Verursache {Damage} Schaden.\nFalls {PlayerName} |Barriere| besitzt,\
@@ -1427,7 +1435,7 @@ DayaojingTdm:
   ExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand hinzu.'
   UpgradedExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand
     hinzu, ein Exemplar wird |aufgewertet|.'
-  ExtraDescription3: '{FriendU}Erhalte {Value2} |Eisrüstung|, erhöhe die Menge um
+  ExtraDescription3: '{FriendU}Erhalte {Value2} |Eisrüstung|. Erhöhe die Menge um
     die Anzahl an |Einigkeit| auf {SelfName}.'
 YijiuDraw:
   Description: "|Vorhersehung| {Scry}.\nZiehe {Value1:plural one='% Karte' other='%\
@@ -2287,7 +2295,7 @@ TimeAuraAttack:
 LightSpeed:
   Description: "Verursache {Damage} Schaden.\nFalls in diesem Zug eine Karte abgeworfen\
     \ wurde, erhalte {Mana}."
-  Name: Lichtgeschwindigkeitssprung
+  Name: Lichtsprung
 SakuyaGoOut:
   FlavorText: Kleider machen Leute und Kostüme machen Dienstmädchen.
   Name: Reisevorbereitung
@@ -2389,6 +2397,7 @@ JinziDoppelganger:
 ExileMagic:
   Description: Sende bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner
     Hand ins |Exil|. Füge die gleiche Menge |Wurfmesser| deiner Hand hinzu.
+  Name: Verwandlungsmagie
 SakuyaWeak:
   Name: Zeitunterdrückung
   Description: "Füge {Value1} |Geschwächt| zu.\nErhalte {Mana}."
@@ -2433,7 +2442,7 @@ CleanRoom:
   Name: Zimmer aufräumen
 MihuanJack:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.
-  Name: Jack die Zeitdiebin
+  Name: Jack die verrückte Schlitzerin
 WinterWarm:
   Description: "Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner\
     \ Hand ins |Exil|.\nErhalte |Konzentration| in Höhe der gesendeten Karten.\nZiehe\
@@ -2688,6 +2697,7 @@ FrostGarden:
     \ Hand befindet, kostet {SelfName} {Mana}."
   Description: "Füge allen Feinden |Kälte| zu.\nFalls sich ein beschworener |Partner|\
     \ auf deiner Hand befindet, kostet {SelfName} {Mana}."
+  Name: Cooler Auftritt
 CirnoFire:
   Name: Entzündliches Eis
   Description: "Erhalte {Value1} |Feuerkraft|.\nErhöhe die |Feuerkraft| von {SelfName}\
@@ -2929,6 +2939,7 @@ PoorAttack:
   FlavorText: Schikaniert nicht das Mädchen, nur weil sie arm ist.
 YoumuAttack:
   Description: "Verursache {Damage} Schaden.\nSende 1 Karte aus deiner Hand ins |Exil|."
+  Name: Herz herausschneiden
 BailianJingang:
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Reflektion|."
   Name: Verankerung des Körpers
@@ -3136,6 +3147,7 @@ TimeWalk:
   Name: Zeitreise
   ExtraDescription1: "|d:Beende den Zug von {PlayerName} und erhalte einen Extrazug.|\n\
     Der Effekt von {SelfName} kann nur einmal pro Kampf verwendet werden."
+  FlavorText: Selbst nachdem die Kosten erhöht wurden, war es immer noch zu stark.
 LoyalMaid:
   Name: Treue Dienerin
   Description: "Erhalte {Shield} |Barriere|.\nZu Beginn deines Extrazuges, füge {SelfName}\
@@ -3161,6 +3173,7 @@ InstantFreeze:
     \ erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
   ExtraDescription1: "Füge allen Feinden |Kälte| zu.\nBeende den Zug von {PlayerName}\
     \ und erhalte einen Extrazug.\n|d:Zeitlimit {Mana}.|"
+  Name: Frosteinbruch
 IceBolt:
   Name: Eisgeschoss
   FlavorText: Für die mündliche Verabreichung geeignet.
@@ -3277,7 +3290,7 @@ FlanFirepower:
 YongyiAttack:
   Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFalls\
     \ {PlayerName} |Temporäre Feuerkraft| besitzt, verursache ein weiteres Mal Schaden."
-  Name: Furiose Wellen des Schreckens
+  Name: Furiose Schreckenswellen
 RemiliaBat:
   Name: Fledermaus-Verwandlung
   Description: "Erhalte {Value1} |Temporäre Feuerkraft|.\nErhalte {Value2} |Ausweichen|."
@@ -3289,9 +3302,10 @@ AhongMana:
     Hand hinzu, then |Upgrade| {Value2} random  und sende {SelfName} ins |Exil|.'
   Name: Meer aus Kirschblüten
 MogongAttack:
-  Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\n|While in\
-    \ hand|: Jedes Mal, wenn eine andere Karte gespielt wird, erhöhe den Schaden und\
-    \ |Block| von {SelfName} um damage and |Block|."
+  Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\n|Auf der Hand|:\
+    \ {SelfName} übernimmt die höchsten Basiswerte für Schaden und |Block| von zuvor\
+    \ gespielten Karten in diesem Zug."
+  Name: Haniwa Front
 WhiteWorld:
   Name: Reine weiße Welt
   Description: "Zu Beginn deines Zuges, füge allen Feinden |Kälte| zu.\nFüge allen\
