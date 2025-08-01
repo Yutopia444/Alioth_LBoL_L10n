@@ -177,10 +177,11 @@ TurnStartDontLoseBlock:
     des Zuges.'
 WindGirl:
   Name: Gabe der Windgöttin
-  Description: Am Ende des Zuges wird |Ausweichen| von {OwnerName} auf {Level} aufgefüllt.
+  Description: Am Ende des Zuges wird das |Ausweichen| von {OwnerName} auf {Level}
+    aufgefüllt.
   Brief: "Nach Erhalt von |Gabe der Windgöttin| erhält {OwnerName} die gleiche Menge\
-    \ |Ausweichen|.\nAm Ende des Zuges wird das |Ausweichen| von {OwnerName} bis zur\
-    \ Anzahl an |Gabe der Windgöttin| aufgefüllt."
+    \ |Ausweichen|.\nAm Ende des Zuges wird das |Ausweichen| von {OwnerName} bis zu\
+    \ einer gewissen Anzahl aufgefüllt."
 Amulet:
   Name: Amulett
   Description: Annulliert {Level:plural one='den nächsten negativen Effekt' other='die
@@ -596,6 +597,7 @@ BossAct:
     aus, ohne den Zug von {PlayerName} zu beenden.
   Brief: Nachdem {OwnerName} eine gewisse Menge an Schaden erlitten hat, führe eine
     Aktion aus, ohne den Zug von {PlayerName} zu beenden.
+  Name: Übergangsphase
 DoubleLianhuadieSe:
   Brief: Jedes Mal, wenn {PlayerName} |Block| oder |Barriere| erhält, verursache an
     einem zufälligen Feind Schaden.
@@ -722,10 +724,10 @@ SilverBladeSe:
     |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
-  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges, überschüssiges
+  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges, unbenutztes
     Mana.
   Brief: Am Ende deines Zuges behält {PlayerName} eine gewisse Menge an zufälliges,
-    überschüssiges Mana.
+    unbenutztes Mana.
 TimeMagicSe:
   Name: Zeitmagie
   Description: "Zu Beginn deines Extrazuges, wähle {Level} von {Limit} |p:vollkommen\
@@ -790,15 +792,14 @@ DreamExpressSe:
 MeihongPowerSe:
   Name: Die unsterbliche Flamme
   Description: "Zu Beginn deines Zuges erhält {PlayerName} {Level} |Feuerkraft|.\n\
-    Wenn das Leben von {PlayerName} am Ende des Kampfes weniger als die Hälfte beträgt,\
+    Am Ende des Kampfes, falls das Leben von {PlayerName} weniger als die Hälfte beträgt,\
     \ heile {Heal} Leben."
-  Brief: "Zu Beginn deines Zuges erhält {PlayerName} |Feuerkraft|.\nWenn das Leben\
-    \ von {PlayerName} am Ende des Kampfes weniger als die Hälfte beträgt, heile Leben."
+  Brief: "Zu Beginn deines Zuges erhält {PlayerName} |Feuerkraft|.\nAm Ende des Kampfes,\
+    \ falls das Leben von {PlayerName} weniger als die Hälfte beträgt, heile Leben."
 Sleep:
   Name: Verschlinger der Träume
   Description: "Am Ende des Zuges wird die |Barriere| von {OwnerName} auf {Level}\
-    \ gesetzt.\n{OwnerName} wacht auf, sobald {Count} Züge vergangen sind oder sie\
-    \ Schaden erleidet."
+    \ aufgefüllt.\nErwacht, sobald {Count} Züge vergangen sind oder sie Schaden erleidet."
 Burst:
   Name: Durchbruch
   Brief: "Wenn {PlayerName} |Durchbruch| aktiviert, erhalte {Mana}.\nAlle Angriffe\
@@ -1067,8 +1068,9 @@ FrozenThroneSe:
   Description: Zu Beginn des Zuges von {PlayerName}, falls sich |Eisgeschoss| {Level:plural
     one='nicht' other='weniger als % Mal'} auf deiner Hand befindet, füge {Level}
     |Eisgeschoss| deiner Hand hinzu.
-  Brief: Zu Beginn des Zuges von {PlayerName}, falls sich |Eisgeschoss| weniger als
-    eine gewisse Anzahl auf deiner Hand befindet, füge |Eisgeschoss| deiner Hand hinzu.
+  Brief: Zu Beginn des Zuges von {PlayerName}, falls sich weniger als eine gewisse
+    Anzahl an |Eisgeschoss| auf deiner Hand befinden, füge bis zu dieser Anzahl |Eisgeschoss|
+    deiner Hand hinzu.
 ClockCorpseSe:
   Brief: Karten können nur zu Beginn des Zuges gezogen werden.
   Description: Karten können nur zu Beginn des Zuges gezogen werden.
@@ -1336,8 +1338,9 @@ Inspiration:
   Description: Wenn {PlayerName} mindestens {TriggerLevel} |Inspiration| erreicht,
     betrete |Dissoziation|.
 LearnAstrologySe:
-  Brief: Zu Beginn deines Zuges, falls sich weniger als eine gewisse Anzahl an |Astrologie|
-    auf deiner Hand befinden, füge bis zu dieser Anzahl |Astrologie| deiner Hand hinzu.
+  Brief: Zu Beginn des Zuges von {PlayerName}, falls sich weniger als eine gewisse
+    Anzahl an |Astrologie| auf deiner Hand befinden, füge bis zu dieser Anzahl |Astrologie|
+    deiner Hand hinzu.
   Name: Astrologie studieren
   Description: Zu Beginn deines Zuges, falls sich weniger als {Level} |Astrologie|
     auf deiner Hand {Level:plural one='befindet' other='befinden'}, füge bis zu {Level}
