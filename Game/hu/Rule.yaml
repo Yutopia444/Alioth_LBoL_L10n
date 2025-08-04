@@ -1,5 +1,23 @@
 FriendCard:
   Name: Csapattárs Kártyák
+  Description: "Íme néhány további szabály a |Csapattárs| kártyákhoz, amelyek gördülékenyebbé\
+    \ teszik a játékélményt velük.\n1. A Száműzt az Éteri helyettesíti.\nHa egy kártya\
+    \ hatása egy |Csapattárs| kártyának Száműzt adna, helyette Éterit ad neki. Ugyanez\
+    \ igaz a Száműz eltávolítására is.\nMivel a |Csapattárs| kártyák többszöri kijátszásra\
+    \ lettek tervezve, a Száműz használata értelmetlen lenne az esetükben.\n2.Ha egy\
+    \ Éterivel rendelkező |Csapattárs| kártyát kijátsszák, elveszíti az Éterit.\n\
+    Ha egy |Csapattárs| megőrizné az Éteri állapotot kijátszás után, csak azon a körön\
+    \ belül tudná aktiválni a Passzív Készségét amikor megidézték, ami nem kívánatos.\n\
+    A Társas Mágnesnél ez külön ki van emelve, de valójában minden Éterivel rendelkező\
+    \ |Csapattárs| kártyára igaz, függetlenül attól, honnan származik.\n3.Amikor harc\
+    \ közben Másolt használsz egy |Csapattárs| kártyára, a másolat nem örökli se a\
+    \ megidézettségi állapotát, se az Egységét. Minden más attribútum átvitelre kerül.\n\
+    |Csapattárs| kártyák másolatai soha sincsenek megidézve, és alap Egység értékükkel\
+    \ rendelkeznek.\nEnnek az az oka, hogy a megidézett |Csapattárs| kártyák részben\
+    \ más kártyákhoz hasonlóak lesznek kijátszás után, és önmagában előny, hogy lehet\
+    \ őket Másolni.\nHa valaki egy, éppen a Végső Készségét aktiváló |Csapattársat|\
+    \ Másolna azért, hogy kétszer is aktiválja ezt a készséget, csökkenteni kellene\
+    \ a Végső Készségek erejét, ami ellentmond ezen készségek szellemének."
 General:
   Name: Előszó
   Description: "Nem kell tudnod ezen haladó szabályokat hogy élvezd a játékot.\n\n\
@@ -59,3 +77,49 @@ BattleFlow:
     \ élménye olyan amilyennek kell lennie)\n"
 CardPool:
   Name: Pakli
+  Description: "Csak olyan kártyákat találhatsz a Kártya Jutalmak közt, melyek megfelelnek\
+    \ a következő feltételeknek:\n1: A kártya manaköltsége teljes mértékben kifizethető\
+    \ a mana-bázisban lévő manával.\n2: Ha Egyedi kártyáról van szó, csak akkor található\
+    \ meg, ha az adott karakterrel játszol, vagy ha nálad van az adott karakter valamelyik\
+    \ Ragyogó Kiállítási Tárgya.\n3: A kártyá minden egyes színe megtalálható a mana-bázisban.\
+    \ A Filozófus manája nem számít bele ennek a szabálynak a számításába.\n\nPéldául,\
+    \ tegyük fel, hogy Reimuval játszol, és nálad van a Sötét Kötet, a Bölcsek Köve\
+    \ és a Csodakalapács. (A Ragyogó Kiállítási Tárgyad Eirinnél elcserélted...)\n\
+    A mana-bázis a következő manákat tartalmazza: <sprite=\"ManaSprite\" name=\"W\"\
+    ><sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"><sprite=\"ManaSprite\" name=\"C\">. Így Reimuhoz és Marisához tartozó\
+    \ Egyedi kártyákat is találhatsz, mivel nálad van a Dark Grimoire.\n\nEbben az\
+    \ esetben találhatsz egy olyan fekete kártyát, amelynek költsége <sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"B\">, mivel ki tudod fizetni <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> értéket. Azonban nem\
+    \ találhatsz egy kék-fekete kártyát, amelynek költsége <sprite=\"ManaSprite\"\
+    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\">, mert nincs <sprite=\"ManaSprite\"\
+    \ name=\"U\"> a mana-bázisban, még akkor sem, ha ki tudnád fizetni <sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"> értékkel.\n\nUi.\n\
+    Az Üres Kártya, egy Ragyogó Kiállítási Tárgy, mely lehetővé teszi, hogy bármilyen\
+    \ színű kártyát megtalálj.\nAzoknál a kártyáknál, amelyeknek a manaköltsége nagyobb\
+    \ mint 5, és azoknál általános manaköltséggel (<sprite=\"ManaSprite\" name=\"\
+    1\">, <sprite=\"ManaSprite\" name=\"2\"> stb.) rendelkező kártyáknál, csak a nem-általános\
+    \ manaköltség számít az első szabályban. Ezeknek a kártyáknak a manaköltsége csökkenthető\
+    \ hatások által."
+BossLoot:
+  Description: "Egy Főellenség legyőzése után három különböző |Ragyogó Kiállítási\
+    \ Tárgy| közül választhatsz jutalmul. Ezek a |Kiállítási Tárgyak| a következő\
+    \ mintát követik:\nA legjobboldali |Kiállítási Tárgy| a Főellenségtől függ. Az\
+    \ 1. Színben a Főellenség valamelyik egyedi |Ragyogó Kiállítási Tárgya| lesz,\
+    \ míg a további Színekben semleges |Ragyogó Kiállítási Tárgyat| kapsz a főellenség\
+    \ színe alapján (például Remilia egy piros |Kiállítási Tárgyat| adna).\nA legbaloldalibb\
+    \ |Kiállítási Tárgy| a manabázisodtól függ. Ez a |Kiállítási Tárgy| mindig egy\
+    \ olyan semleges |Ragyogó Kiállítási Tárgy| lesz, amely a mana bázisodban megtalálható\
+    \ színhez ad manát, és különböző színű lesz, mint a legjobboldalibb |Kiállítási\
+    \ Tárgy|.\nVégül, a középső |Kiállítási Tárgy| mindig egy olyan semleges |Ragyogó\
+    \ Kiállítási Tárgy| lesz, amely különböző színű, mint a mellette lévő |Kiállítási\
+    \ Tárgyak|, és akár olyan |Kiállítási Tárgy| is lehet, amely egyáltalán nem ad\
+    \ manát a manabázishoz (például az Impozáns Olajfestmény).\n\nHa az adott Színben\
+    \ választható |Kiállítási Tárgyak| köre kimerült, azt egy véletlenszerű |Közönségestől|\
+    \ |Ritkáig| terjedő értékű |Kiállítási Tárgy| váltja fel (Ez főként a 3. Szín\
+    \ főellensége után fordulhat elő, a legjobboldali |Kiállítási Tárgy| esetében.)"
+  Name: Főellenség Jutalmak
+PlayCard:
+  Name: Rákövető Kártya Használat
