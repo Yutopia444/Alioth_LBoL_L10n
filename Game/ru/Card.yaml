@@ -2760,7 +2760,7 @@ PeaceEndTurn:
     \ стопки сброса и верните их в руку. |Оставьте| {Value1:plural one='её' other='их'}\
     \ в руке.\nВойти в |Покой|.\nЗакончите ход."
 TheHermit:
-  UpgradedDescription: "|Предсказать| {Scry} карт{Value1:plural one='у' few='ы' other=''}.\n\
+  UpgradedDescription: "|Предсказать| {Scry} карт{Scry:plural one='у' few='ы' other=''}.\n\
     |Улучшить| верхнюю карту стопки добора.\nДаёт {Mana}.\n|В Фуге|: {SelfName} стоит\
     \ <sprite=\"ManaSprite\" name=\"0\">."
   Name: 'Таро: Отшельник'
@@ -2882,7 +2882,8 @@ KoishiDna:
     \ этот эффект сейчас."
 TheFool:
   Name: 'Таро: Шут'
-  Description: "|Предсказать| {Scry} карт.\nРазыграть верхнюю карту колоды добора."
+  Description: "|Предсказать| {Scry} карт{Scry:plural one='у' few ='ы' other=''}.\n\
+    Разыграть верхнюю карту стопки добора."
 FollowAttackFiller:
   Name: Динь-динь
   Description: Наносит {Damage} урона.
