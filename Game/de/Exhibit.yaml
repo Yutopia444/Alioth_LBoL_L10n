@@ -1,8 +1,8 @@
 MarisaB:
   Name: Dunkles Grimoire
   Description: "Fügt {BaseMana} der Manabasis hinzu. |Marisas| einzigartige Karten\
-    \ werden dem Kartenpool hinzugefügt.\nZu Beginn deines ersten Zuges, füge |Okkultismus|\
-    \ deiner Hand hinzu."
+    \ werden dem Kartenpool hinzugefügt.\nZu Beginn des ersten Zuges von {PlayerName},\
+    \ füge |Okkultismus| deiner Hand hinzu."
   FlavorText: Es enthält eine erschreckende Menge an Dunkles♂ Wissen.
 MarisaR:
   Name: Mini-Hakkero
@@ -21,8 +21,8 @@ KoishiG:
   FlavorText: Eine seltene Pflanze aus der Unterwelt.
   Name: Alte Höllenrose
   Description: "Fügt {BaseMana} der Manabasis hinzu. |Koishis| einzigartige Karten\
-    \ werden dem Kartenpool hinzugefügt.\nZu Beginn {Value1:plural one='deines ersten\
-    \ Zuges' other='deiner ersten % Züge'} erhält {PlayerName} {Mana}."
+    \ werden dem Kartenpool hinzugefügt.\nZu Beginn {Value1:plural one='des ersten\
+    \ Zuges' other='der ersten % Züge'} von {PlayerName}, erhalte {Mana}."
 KoishiB:
   Name: Modifizierte Sonnenbrille
   Description: "Fügt {BaseMana} der Manabasis hinzu. |Koishis| einzigartige Karten\
@@ -62,8 +62,8 @@ ShanliangDengpao:
     um 1 von {Value1} zufälligen, seltenen Karten der Bibliothek hinzuzufügen.
 ShanshuoBishou:
   FlavorText: 'Originaler Preis: 2150 <sprite="Point" name="Gold">.'
-  Description: Zu Beginn deines ersten Zuges, werfe eine beliebige Anzahl an Karten
-    ab und ziehe die gleiche Menge nach.
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, werfe eine beliebige Anzahl
+    an Karten ab und ziehe die gleiche Menge nach.
   Name: Blink Dagger
 ZhanshuDaoliqi:
   Description: Während des Kampfes kosten Fähigkeitskarten {Mana} weniger.
@@ -71,8 +71,8 @@ ZhanshuDaoliqi:
   FlavorText: Es besitzt nur eine lange Kette, wodurch es sich bestens für das Wirken
     von Magie eignet.
 Yashemao:
-  Description: Zu Beginn deines Zuges, ziehe {Value1} Karte{Value1:plural one='' other='n'}
-    mehr.
+  Description: Zu Beginn des Zuges von {PlayerName}, ziehe {Value1} zusätzliche Karte{Value1:plural
+    one='' other='n'}.
   Name: Schirmmütze
   FlavorText: Trage diese Mütze und du wirst nur noch rührselige Geschichten schreiben.
 Yueshan:
@@ -81,12 +81,13 @@ Yueshan:
   FlavorText: Ich habe gehört, dass es früher einmal als Waffe benutzt wurde.
 YueYuyi:
   Name: Mondschleier
-  Description: Zu Beginn deines ersten Zuges, {PlayerName} erhält |Makellos| für {Value1}
-    {Value1:plural one='Zug' other='Züge'}.
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, erhalte |Makellos| für
+    {Value1} {Value1:plural one='Zug' other='Züge'}.
   FlavorText: Die Portalkanone wurde für den Einsatz im Kampf umgebaut, seit jeder
     sie für das Reisen zwischen Erde und Mond verwendet hat.
 FeixiangJian:
-  Description: Zu Beginn deines Zuges, füge allen Feinden {Value1} Schaden zu.
+  Description: Zu Beginn des Zuges von {PlayerName}, verursache an allen Feinden {Value1}
+    Schaden.
   Name: Hisou-Schwert
   FlavorText: Im letzten Spiel war das eine Schrotflinte.
 Yaoshi:
@@ -96,7 +97,7 @@ Yaoshi:
   FlavorText: '"Zugabe, Zugabe!"'
 Heilianhua:
   Name: Schwarzer Lotus
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Mana}.
+  Description: Zu Beginn des Kampfes, erhalte {Mana}.
   FlavorText: Wäre es nicht toll, wenn es drei Mana einer beliebigen Farbe hinzufügen
     würde?
 Mengriji:
@@ -116,12 +117,12 @@ Xiangrikui:
     Blume gepflückt hat.
 LinghunBaoshi:
   Name: Seelenstein
-  Description: Zu Beginn deines ersten Zuges, nachdem {PlayerName} eine Spalte besucht
-    hat, erhalte {Mana}.
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, nachdem eine Spalte besucht
+    wurde, erhalte {Mana}.
   FlavorText: Sei vorsichtig, wenn sich Wolken bilden.
 ZheyangSan:
   Name: Regenschirm
-  Description: Zu Beginn deines zweiten Zuges erhält {PlayerName} {Value1} |Block|
+  Description: Zu Beginn des zweiten Zuges von {PlayerName}, erhalte {Value1} |Block|
     und {Value2} |Temporäre Feuerkraft|.
   FlavorText: Heute Nacht wird sein Besitzer ihn nicht brauchen.
 Pingguo:
@@ -163,8 +164,9 @@ QiannianShenqi:
   FlavorText: Kann verwendet werden, um verlorene Erinnerungen wieder zu erlangen.
 Tnt:
   Name: TNT
-  Description: Füge allen Feinden nach {Value1} Runden zu Beginn deines Zuges {Value2}
-    Schaden zu.
+  Description: Zu Beginn des Zuges von {PlayerName}, nachdem {Value1:plural one='%
+    Runde' other='% Runden'} vergangen {Value1:plural one='ist' other='sind'}, verursache
+    an allen Feinden {Value2} Schaden.
   FlavorText: '"Bist du da? Nun ja, ich habe dein Haus in die Luft gejagt."'
 Huiyuanka:
   Name: Mitgliedskarte
@@ -173,7 +175,7 @@ Huiyuanka:
     drin, worauf wartest du also noch?"'
 BoliHufu:
   Name: Hakurei Amulett
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Value1} |Amulett|.
+  Description: Zu Beginn des Kampfes, erhalte {Value1} |Amulett|.
   FlavorText: Man nimmt an, dass die Amulette des Hakurei-Schreins negative Effekte
     abwehren kann, so wie man es aus anderen Titeln kennt.
 Cookie:
@@ -184,7 +186,7 @@ Cookie:
 Pijiu:
   Name: Bier
   FlavorText: Von allen geliebt.
-  Description: Zu Beginn deines ersten Zuges erhält {PlayerName} {Value1} |Temporäre
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, erhalte {Value1} |Temporäre
     Feuerkraft| und füge {Value2} |Angeheitert| deiner Hand hinzu.
 WaijieYanjing:
   Name: Moderne Brille aus der Außenwelt
@@ -210,8 +212,8 @@ Shouyinji:
     haben.
 SongjingMuyu:
   Name: Holzfisch
-  Description: Zu Beginn des Kampfes gegen einen Boss heilt {PlayerName} Leben in
-    Höhe der Anzahl an Karten in der Bibliothek.
+  Description: Zu Beginn des Kampfes gegen einen Boss, heile Leben in Höhe der Anzahl
+    an Karten in der Bibliothek.
   FlavorText: Mit diesem Gegenstand können Zaubersprüche auf Feinde gewirkt werden,
     um ihnen magischen Schaden zuzufügen.
 Saiqianxiang:
@@ -222,7 +224,7 @@ Saiqianxiang:
     \ mehr <sprite=\"Point\" name=\"Gold\"> durch das Überspringen von Belohnungen."
 Shanbibu:
   Name: Beweglicher Stoff
-  Description: Zu Beginn deines zweiten Zuges erhält {PlayerName} {Value1} |Ausweichen|.
+  Description: Zu Beginn des zweiten Zuges von {PlayerName}, erhalte {Value1} |Ausweichen|.
   FlavorText: Dieser Stoff sieht so aus, als könnte er von Hatates Rock stammen.
 HeijiaoChangpian:
   Description: Jedes Mal, wenn eine Statuskarte gezogen wird, erhält {PlayerName}
@@ -311,8 +313,8 @@ Ganggenier:
 AizheHongshi:
   Name: Ajas Stein
   FlavorText: Kann benutzt werden, um die Eisschuppe zu schmelzen.
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines ersten Zuges\
-    \ erhält {PlayerName} {Value1} |Feuerkraft| und füge {Value2} |Gebrochenes Sonnenlicht|\
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des ersten Zuges von\
+    \ {PlayerName}, erhalte {Value1} |Feuerkraft| und füge {Value2} |Gebrochenes Sonnenlicht|\
     \ deinem Ablagestapel hinzu."
 HouhuMen:
   Name: Hintertür
@@ -376,11 +378,11 @@ WanglingTideng:
 SunhuaiHufu:
   FlavorText: '"Tut mir Leid, du bist nicht God-tier."'
   Name: Kaputtes Amulett
-  ExtraDescription: "Erhalte zu Beginn des Kampfes {Value1} |Feuerkraft| und {Value1}\
+  ExtraDescription: "Zu Beginn des Kampfes, erhalte {Value1} |Feuerkraft| und {Value1}\
     \ |Geist| für jedes |Unglück| in der Bibliothek.\nAnzahl der |Unglückskarten|:\
     \ {Counter}."
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Value1} |Feuerkraft| und
-    {Value1} |Geist| für jedes |Unglück| in der Bibliothek.
+  Description: Zu Beginn des Kampfes, erhalte {Value1} |Feuerkraft| und {Value1} |Geist|
+    für jedes |Unglück| in der Bibliothek.
 JimuWanju:
   Name: Spielzeugblöcke
   Description: Normale Kämpfe bieten {Value1} weitere Kartenbelohnung{Value1:plural
@@ -406,8 +408,8 @@ WaijieYouxiji:
 IdolTshirt:
   Name: Idol T-Shirt
   ExtraDescription: Idol T-Shirt (Large)
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Counter} maximales Leben
-    und {Counter} |Anvisieren|.
+  Description: Zu Beginn des Kampfes, erhalte {Counter} maximales Leben und {Counter}
+    |Anvisieren|.
   FlavorText: Wer das trägt, zieht die Blicke der Leute um einen herum auf sich.
 Bingxiang:
   Name: Kühlschrank
@@ -431,7 +433,7 @@ Taozi:
 XijianSan:
   FlavorText: In diesem Spiel ist es nicht möglich, die Grenze des Bildschirms zu
     überqueren.
-  Description: Zu Beginn deines dritten Zuges erhält {PlayerName} {Value1} |Block|
+  Description: Zu Beginn des dritten Zuges von {PlayerName}, erhalte {Value1} |Block|
     und {Mana}.
   Name: Schirm der Spalten
 PenzaiYoutan:
@@ -493,8 +495,8 @@ Shiyou:
     {Value2} <sprite="Point" name="Gold">. Kann nur {Value3} Mal pro Kampf verwendet
     werden und wird am Ende des Kampfes zurückgesetzt.
 JingwanMudan:
-  Description: Jedes Mal, wenn {Value1} {Mana} verwendet wird, füge allen Feinden
-    {Value2} Schaden zu. Wird am Ende des Kampfes zurückgesetzt.
+  Description: Jedes Mal, wenn {Value1} {Mana} verwendet wird, verursache an allen
+    Feinden {Value2} Schaden. Wird am Ende des Kampfes zurückgesetzt.
   Name: Pfingstrosenstein
   FlavorText: Eine Art Hämatit, der volle Name hiervon lautet "Kyomaru Mudan Spatzstein".
 Shuye:
@@ -505,27 +507,28 @@ Shuye:
     um andere Leute zu täuschen.
 TangSan:
   Name: Karakasa
-  Description: Zu Beginn deines ersten Zuges erhält {PlayerName} {Value1} |Block|
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, erhalte {Value1} |Block|
     und {Value2} zufällige Karte{Value2:plural one='' other='n'} auf deiner Hand {Value2:plural
     one='wird' other='werden'} bis zum Ende des Kampfes |aufgewertet|.
   FlavorText: Kogasas Freund aus ihrer Kindheit.
 TiangouMuji:
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Value1} |Feuerkraft|.
+  Description: Zu Beginn des Kampfes, erhalte {Value1} |Feuerkraft|.
   FlavorText: 'Selbst wenn Menschen sie tragen, können sie damit in der Luft ein weiteres
     Mal springen. Auch bekannt als: "Doppelsprungstiefel".'
   Name: Tengu-Holzschuhe
 TiangouRongqiu:
-  Description: Zu Beginn des Kampfes erhält {PlayerName} {Value1} |Geist|.
+  Description: Zu Beginn des Kampfes, erhalte {Value1} |Geist|.
   Name: Tengu-Pompons
   FlavorText: Ein Statussymbol der Stärke unter den Tengus; je höher der Status, desto
     mehr Pompons tragen sie.
 TiangouShanzi:
-  Description: Zu Beginn deines ersten Zuges erhält {PlayerName} {Value1} |Ausweichen|.
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, erhalte {Value1} |Ausweichen|.
   Name: Tengu-Fächer
   FlavorText: Der Träger fühlt sich dadurch leichter und es reduziert die Fallgeschwindigkeit
     in der Luft.
 TiangouShouji:
-  Description: Zu Beginn deines ersten Zuges, ziehe {Value1} mehr Karten.
+  Description: Zu Beginn des ersten Zuges von {PlayerName}, ziehe {Value1} zusätzliche
+    Karte{Value1:plural one='' other='n'}.
   Name: Tengu-Mobiltelefon
   FlavorText: Die Kamerafunktion ist ebenfalls sehr gut.
 TiangouDunpai:
@@ -538,11 +541,11 @@ TiangouYuyi:
   FlavorText: Diese Flügel sind der Grund, warum Krähen-Tengus schneller sind als
     alle anderen in Gensokyo.
   Description: "{PlayerName} kann bis zu {Counter} Mal den Pfad bei der Levelauswahl\
-    \ ignorieren.\nZu Beginn deines ersten Zuges erhält {PlayerName} {Value1} |Ausweichen|."
+    \ ignorieren.\nZu Beginn des ersten Zuges von {PlayerName}, erhalte {Value1} |Ausweichen|."
 ShenmiPifeng:
   Name: Geheimer Umhang
-  Description: Am Ende deines Zuges erhält {PlayerName} {Value1} |Block| für jede
-    Karte auf der Hand.
+  Description: Am Ende des Zuges von {PlayerName}, erhalte {Value1} |Block| für jede
+    Karte auf deiner Hand.
   FlavorText: Das Innere wurde mit Runen beschriftet.
 ChuRenou:
   Name: Hina Puppe
@@ -605,9 +608,9 @@ JingesiYushou:
     Stil ersetzt.
 SadinYuebing:
   Name: Sardischer Mondkuchen
-  Description: Zu Beginn deines Zuges {Value1:plural one='wird % zufällige Karte'
-    other='werden % zufällige Karten'} auf deiner Hand bis zum Ende des Kampfes |aufgewertet|.
-    Priorisiert mehrfarbige Karten.
+  Description: Zu Beginn des Zuges von {PlayerName} {Value1:plural one='wird % zufällige
+    Karte' other='werden % zufällige Karten'} auf deiner Hand bis zum Ende des Kampfes
+    |aufgewertet|. Priorisiert mehrfarbige Karten.
   FlavorText: Restaurantkritiker wie die Prismriver-Schwestern und Hong Meiling äußerten
     sich sehr negativ über dieses Gericht.
 Qingshu:
@@ -660,8 +663,8 @@ YizangnuoWuzhi:
   Name: Izanagi Objekt
   FlavorText: Ein mysteriöses Rohmaterial, welches von der Regenbogen-Drachenhöhle
     stammt. Es wurde verwendet, um zahlreiche heilige Waffen zu schmieden.
-  Description: "Zu Beginn deines Zuges erhält {PlayerName} 1 zufälliges Mana.\nBesiegte\
-    \ Elite hinterlassen ein zusätzliches |Ausstellungsstück|."
+  Description: "Zu Beginn des Zuges von {PlayerName}, erhalte 1 zufälliges Mana.\n\
+    Besiegte Elite hinterlassen ein zusätzliches |Ausstellungsstück|."
 He3:
   Name: Helium-3
   Description: Jedes Mal, wenn mindestens {Value1} Mana für eine Karte verwendet wurde,
@@ -683,9 +686,9 @@ WaijieYanshuang:
     für ein jüngeres Aussehen."'
 PulpFiction:
   Name: '"Pulp Fiction"'
-  Description: Zu Beginn {Value2:plural one='deines ersten Zuges' other='deiner ersten
-    % Züge'}, füge die {Value1:plural one='unterste Karte' other='untersten % Karten'}
-    von deinem Ziehstapel deiner Hand hinzu.
+  Description: Zu Beginn {Value2:plural one='des ersten Zuges' other='der ersten %
+    Züge'} von {PlayerName}, füge die {Value1:plural one='unterste Karte' other='untersten
+    % Karten'} von deinem Ziehstapel deiner Hand hinzu.
   FlavorText: "Ein Roman mit erotischem Inhalt.\nLass deine Werkzeuge beim Lesen nicht\
     \ draußen liegen!"
 TiangouXiangji:
@@ -693,8 +696,8 @@ TiangouXiangji:
   Name: Tengu-Kamera
   FlavorText: Es sieht sehr elegant aus.
 YanZianbei:
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines Zuges heilt\
-    \ {PlayerName} {Value1} Leben."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des Zuges von {PlayerName},\
+    \ heile {Value1} Leben."
   Name: Schale des Schwalbenkauri
   FlavorText: 「Ewiger Jungbrunnen」
 PenglaiYuzhi:
@@ -706,14 +709,14 @@ PenglaiYuzhi:
 SakuyaU:
   Name: Magische Pokerkarten
   Description: "Fügt {BaseMana} der Manabasis hinzu. |Sakuyas| einzigartige Karten\
-    \ werden dem Kartenpool hinzugefügt.\nZu Beginn {Value2:plural one='deines ersten\
-    \ Zuges' other='deiner ersten % Züge'} oder zu Beginn jedes Extrazuges, ziehe\
-    \ {Value1} Karte{Value1:plural one='' other='n'} mehr."
+    \ werden dem Kartenpool hinzugefügt.\nZu Beginn {Value2:plural one='des ersten\
+    \ Zuges' other='der ersten % Züge'} von {PlayerName} oder zu Beginn jedes Extrazuges,\
+    \ ziehe {Value1} zusätzliche Karte{Value1:plural one='' other='n'}."
   FlavorText: Online-Lizenzierung für fleißige Dienstmädchen.
 ClassicWunvfu:
   Name: Altmodisches Miko-Kostüm
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines Zuges, {PlayerName}\
-    \ erhält {Value1} |Block| für jede |aufgewertete| Karte auf der Hand."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des Zuges von {PlayerName},\
+    \ erhalte {Value1} |Block| für jede |aufgewertete| Karte auf deiner Hand."
   FlavorText: Klassischer Stil.
 ShijieSuipian:
   Name: Fragmente dieser Welt
@@ -726,8 +729,8 @@ ShijieSuipian:
 TianwenWangyuanjing:
   Name: Astronomisches Teleskop
   FlavorText: Der Mond und der große Wagen können genauer betrachtet werden.
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines ersten Zuges,\
-    \ füge {Value1} |Astrologie| deiner Hand hinzu."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des ersten Zuges von\
+    \ {PlayerName}, füge {Value1} |Astrologie| deiner Hand hinzu."
 PingzhuangLinghun:
   Name: Seele in der Flasche
   FlavorText: '"Ich hoffe, du wirst nicht ein tragisches Ende finden."'
@@ -736,9 +739,9 @@ PingzhuangLinghun:
     Point\" name=\"Gold\">, für jede <sprite=\"Point\" name=\"Power\">, die ein Feind\
     \ hinterlassen würde."
 GuizuJiubei:
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines Zuges erhält\
-    \ {PlayerName} |Temporäre Feuerkraft| in Höhe der gespielten Angriffskarten im\
-    \ vorherigen Zug."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des Zuges von {PlayerName},\
+    \ erhalte |Temporäre Feuerkraft| in Höhe der gespielten Angriffskarten im vorherigen\
+    \ Zug."
   FlavorText: Es sieht mehr wie eine große Schüssel aus.
   Name: Sakegeschirr des Oni
 LongjingYu:
@@ -753,8 +756,8 @@ FoyushiBo:
   FlavorText: 「Diamant des Buddhisten」
 CirnoU:
   Description: "Fügt {BaseMana} der Manabasis hinzu. |Cirnos| einzigartige Karten\
-    \ werden dem Kartenpool hinzugefügt.\nZu Beginn deines ersten Zuges, füge {Value1}\
-    \ |Eisflügel| deiner Hand hinzu."
+    \ werden dem Kartenpool hinzugefügt.\nZu Beginn des ersten Zuges von {PlayerName},\
+    \ füge {Value1} |Eisflügel| deiner Hand hinzu."
   FlavorText: Es ist unklar, wie sie selbstständig in der Luft schweben können.
   Name: Kristallschwingen
 HuoshuPiyi:
@@ -777,9 +780,9 @@ ReimuW:
   FlavorText: Ein sehr vielseitiger Gegenstand. Man kann damit Danmaku verschießen,
     Barrieren erschaffen, Flüche läutern, usw.
 HuashanBaiyaosheng:
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines ersten Zuges,\
-    \ erhalte {Mana}.\nZu Beginn deines zweiten Zuges, heile {Value1} Leben.\nZu Beginn\
-    \ deines dritten Zuges, erhalte {Value2} |Temporäre Feuerkraft|."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des ersten Zuges von\
+    \ {PlayerName}, erhalte {Mana}.\nZu Beginn des zweiten Zuges, heile {Value1} Leben.\n\
+    Zu Beginn des dritten Zuges, erhalte {Value2} |Temporäre Feuerkraft|."
   Name: Die 100 Medikamente von Kasen
   FlavorText: Hat oft einen Gastauftritt in anderen RPGs.
 Zuoshan:
@@ -807,7 +810,7 @@ PortalGun:
 Baota:
   Name: Bishamontens Juwelen-Pagode
   FlavorText: Es ist erneut verloren gegangen.
-  Description: "Erhalte zu Beginn des Kampfes {Counter} {Mana} und {Counter} |Feuerkraft|.\n\
+  Description: "Zu Beginn des Kampfes, erhalte {Counter} {Mana} und {Counter} |Feuerkraft|.\n\
     Dieses |Ausstellungsstück| kann bis zu {Value1} Mal an einer Spalte aufgewertet\
     \ werden."
 SakuraWand:
@@ -896,8 +899,8 @@ TimeBook:
   Name: '"Eine kurze Geschichte der Zeit"'
   FlavorText: Ein sehr beliebtes Lehrbuch für Kinder.
 Duandai:
-  Description: Zu Beginn deines Zuges, wenn {PlayerName} gegen eine Elite oder einen
-    Boss kämpft, erhalte {Mana}.
+  Description: Zu Beginn des Zuges von {PlayerName}, falls gegen eine Elite oder einen
+    Boss gekämpft wird, erhalte {Mana}.
   Name: Haarschleife
   FlavorText: '"Ich habe gehört, dass die versiegelten, dämonischen Kräfte freigelassen
     werden, wenn man die Schleife löst. Aber das ist Unsinn, mir geht es blendend."'
@@ -946,8 +949,8 @@ HolyGrail:
   FlavorText: Ein Schatz, der in zu vielen Werken vorkommt, wodurch dessen Ursprung
     schwer zu bestimmen ist.
 PiaoliangPanzi:
-  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn deines ersten Zuges\
-    \ werden bis zum Ende des Kampfes {Value1} zufällige Karten |aufgewertet|."
+  Description: "Fügt {BaseMana} der Manabasis hinzu.\nZu Beginn des ersten Zuges von\
+    \ {PlayerName} werden bis zum Ende des Kampfes {Value1} zufällige Karten |aufgewertet|."
   Name: Hübsche Teller
   FlavorText: Ihr Nutzen besteht darin, sie zu werfen und zu zertrümmern.
 Putao:
