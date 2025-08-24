@@ -157,8 +157,8 @@ ReimuFreeAttackSe:
 SolarSystemSe:
   Name: Orrerys Sonne
   Brief: 'Zu Beginn deines Zuges erhält {PlayerName} |Aufladungen|.'
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |{Level:plural one='Aufladung'
-    other='Aufladungen'}|.
+  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Aufladung{Level:plural
+    one='' other='en'}|.
 PotionBaseDamageSe:
   Description: '|Instabiler Trank| verursacht {Level} zusätzlichen Schaden.'
   Name: Explosive Komponenten
@@ -491,11 +491,11 @@ BlackPoisonSe:
     füge zusätzlich |Gift| zu.
 YukariFriendSe:
   Name: Grenzen der Fantasie
-  Description: Füge zu Beginn deines Zuges {Level} zufällige, dreifarbige, neutrale
+  Description: Füge zu Beginn deines Zuges {Level} zufällige dreifarbige, neutrale
     Karte{Level:plural one='' other='n'} deiner Hand hinzu. Sie {Level:plural one='hat'
     other='haben'} |Ätherisch| und |{Level:plural one='kostet' other='kosten'} temporär|
     {Mana}.
-  Brief: Füge zu Beginn deines Zuges zufällige, dreifarbige, neutrale Karten deiner
+  Brief: Füge zu Beginn deines Zuges zufällige dreifarbige, neutrale Karten deiner
     Hand hinzu. Sie haben |Ätherisch| und |kosten temporär| {Mana}.
 MoonWorldSe:
   Name: Unbefleckte Welt
@@ -512,12 +512,12 @@ TodayYesterdaySe:
   Brief: Jedes Mal, wenn {OwnerName} einem Angriff |ausweicht|, erhalte |Feuerkraft|.
   Name: Gensokyo, Vergangenheit und Gegenwart
 BladePowerSe:
-  Description: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, füge {Level} zufällige
-    Angriffskarte{Level:plural one='' other='n'} deiner Hand hinzu. Die Karte{Level:plural
-    one='' other='n'} |koste{Level:plural one='t' other='n'} temporär| {Mana} und
-    ha{Level:plural one='t' other='ben'} |Exil| und |Ätherisch|.
-  Brief: Jedes Mal, wenn ein |Wurfmesser| aktiviert wird, füge zufällige Angriffskarten
-    deiner Hand hinzu. Die Karten |kosten temporär| {Mana} und haben |Exil| und |Ätherisch|.
+  Description: Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge {Level} zufällige
+    Angriffskarte{Level:plural one='' other='n'} deiner Hand hinzu. Sie {Level:plural
+    one='hat' other='haben'} |Exil| und |Ätherisch| und |koste{Level:plural one='t'
+    other='n'} temporär| {Mana}.
+  Brief: Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge zufällige Angriffskarten
+    deiner Hand hinzu. Sie haben |Exil| und |Ätherisch| und |kosten temporär| {Mana}.
   Name: Blendender Ansturm
 RainbowMarketSe:
   Name: Markt des Mondregenbogens
@@ -537,9 +537,9 @@ YonglinUpgradeSe:
     zufällige Karte{Level:plural one='' other='n'} auf deiner Hand |aufgewertet|.
   Brief: Zu Beginn deines Zuges werden zufällige Karten auf deiner Hand |aufgewertet|.
 CommonFireSe:
-  Description: '{OwnerName} erhält {Level} |Temporäre Feuerkraft|, nachdem eine Gewöhnliche
+  Description: '{OwnerName} erhält {Level} |Temporäre Feuerkraft|, nachdem eine gewöhnliche
     Karte gespielt wurde.'
-  Brief: '{OwnerName} erhält |Temporäre Feuerkraft|, nachdem eine Gewöhnliche Karte
+  Brief: '{OwnerName} erhält |Temporäre Feuerkraft|, nachdem eine gewöhnliche Karte
     gespielt wurde.'
   Name: Gewöhnliche Macht
 DeathExplodeCount:
@@ -724,9 +724,9 @@ SilverBladeSe:
     |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
-  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges, unbenutztes
+  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges unbenutztes
     Mana.
-  Brief: Am Ende deines Zuges behält {PlayerName} eine gewisse Menge an zufälliges,
+  Brief: Am Ende deines Zuges behält {PlayerName} eine gewisse Menge an zufälliges
     unbenutztes Mana.
 TimeMagicSe:
   Name: Zeitmagie
@@ -809,11 +809,11 @@ Burst:
     \ verursachen {DamageRate} Mal so viel Schaden.\nAm Ende deines Zuges, verliere\
     \ |Durchbruch|."
 Charging:
-  Brief: Wenn {PlayerName} mindestens {TriggerLevel:plural one='% |Aufladung|' other='%
-    |Aufladungen|'} erreicht, aktiviere |Durchbruch|.
+  Brief: Wenn {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
+    one='' other='en'}| erreicht, aktiviere |Durchbruch|.
   Name: Aufladung
-  Description: Wenn {PlayerName} mindestens {TriggerLevel:plural one='% |Aufladung|'
-    other='% |Aufladungen|'} erreicht, aktiviere |Durchbruch|.
+  Description: Wenn {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
+    one='' other='en'}| erreicht, aktiviere |Durchbruch|.
 ReimuEvilTerminatorSe:
   Description: Jedes Mal, wenn ein Feind besiegt wird, erhalte {Mana}.
   Brief: Jedes Mal, wenn ein Feind besiegt wird, erhalte Mana.
@@ -1005,13 +1005,13 @@ KoishiDnaSe:
     hinzu.
 ButterflyDreamSe:
   Name: Schmetterlingstraum
-  Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige|, seltene Karten oben
+  Brief: Zu Beginn deines Zuges, lege |p:vollkommen zufällige| seltene Karten oben
     auf deinen Ziehstapel. Sie haben |Exil|, |Ätherisch| und die Manakosten können
     mit jeder Farbe bezahlt werden.
-  Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige|, seltene
-    Karte{Level:plural one='' other='n'} oben auf deinen Ziehstapel. Diese {Level:plural
-    one='Karte hat' other='Karten haben'} |Exil|, |Ätherisch| und farbige Manakosten
-    können mit allen Farben bezahlt werden.
+  Description: Zu Beginn deines Zuges, lege {Level} |p:vollkommen zufällige| seltene
+    Karte{Level:plural one='' other='n'} oben auf deinen Ziehstapel. Sie {Level:plural
+    one='hat' other='haben'} |Exil| und |Ätherisch| und farbige Manakosten können
+    mit allen Farben bezahlt werden.
 KoishiPhoneSe:
   Name: Erschreckend süßer Anruf
   Brief: "Jedes Mal, wenn eine Angriffskarte aktiviert wird, führe |Folgeangriffe|\
