@@ -1107,7 +1107,7 @@ SmallPanding:
   Name: Kleine Hitbox
 SakuyaDio:
   Name: Du bist fällig!
-  Description: "Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge {Value1} |Anvisieren|\
+  Description: "Jedes Mal, wenn |Wurfmesser| gespielt wird, füge {Value1} |Anvisieren|\
     \ zu.\nBeende den Zug von {PlayerName} und erhalte einen Extrazug.\nZiehe keine\
     \ Karten zu Beginn dieses Extrazuges, füge stattdessen {Value2} |Wurfmesser| deiner\
     \ Hand hinzu."
@@ -1243,9 +1243,9 @@ GainTreasure:
     Probleme auf eine zivilisiertere Weise lösen.
 BladePower:
   Name: Blendender Ansturm
-  Description: "Jedes Mal, wenn ein |Wurfmesser| gespielt wird, füge eine zufällige\
-    \ Angriffskarte deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet\
-    \ temporär| {Mana}.\nFüge {Value1} |Wurfmesser| deiner Hand hinzu."
+  Description: "Jedes Mal, wenn |Wurfmesser| gespielt wird, füge eine zufällige Angriffskarte\
+    \ deiner Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.\n\
+    Füge {Value1} |Wurfmesser| deiner Hand hinzu."
 SunnyFriend:
   Name: Sunny, Blendendes Sonnenlicht
   ExtraDescription1: "{FriendA}Erhalte |Optische Tarnung| für {Light:plural one='%\
@@ -1358,7 +1358,7 @@ BailianMagic:
 MeihongFire:
   Name: Willkürliche Entzündung
   Description: "Am Ende deines Zuges, verursache an allen Feinden {Value1} Schaden.\n\
-    Aktiviere diesen Effekt auch, nachdem eine Status- oder |Unglückskarte| gezogen\
+    Aktiviere diesen Effekt auch, nachdem eine Statuskarte oder ein |Unglück| gezogen\
     \ wird."
 YonglinCard:
   Name: Der zurückgezogene Weise
@@ -1710,8 +1710,8 @@ ShopSearch:
 SijiCard:
   Name: Urteil der Sünden
   Description: Wähle eine Karte auf deiner Hand aus, sie erhält |Temporäres Beibehalten|
-    und kostet bis zum Ende des Kampfes {Mana} weniger. Falls es eine Status- oder
-    |Unglückskarte| ist, sende sie stattdessen ins |Exil|.
+    und kostet bis zum Ende des Kampfes {Mana} weniger. Falls es eine Statuskarte
+    oder ein |Unglück| ist, sende sie stattdessen ins |Exil|.
   FlavorText: Ein wichtiger Aspekt für dieses Urteil ist, ob du die Zeche geprellt
     hast oder nicht.
 HinaAttack:
@@ -1879,11 +1879,11 @@ SanaeRice:
 LifeGame:
   Name: Spiel des Lebens
   UpgradedDescription: "Karten, die sich auf der Hand neben {SelfName} befinden, |kosten\
-    \ temporär| {Mana} und werden |aufgewertet|.\nFalls es Status- oder |Unglückskarten|\
+    \ temporär| {Mana} und werden |aufgewertet|.\nFalls es Statuskarten oder |Unglücke|\
     \ sind, sende sie stattdessen ins |Exil|."
   Description: "Karten, die sich auf der Hand neben {SelfName} befinden, |kosten temporär|\
-    \ {Mana}.\nFalls es Status- oder |Unglückskarten| sind, sende sie stattdessen\
-    \ ins |Exil|."
+    \ {Mana}.\nFalls es Statuskarten oder |Unglücke| sind, sende sie stattdessen ins\
+    \ |Exil|."
   DetailText: Die Karte ganz links auf der Hand wird als Ziel gewählt, falls {SelfName}
     als |Folgeaktion| gespielt wird.
 ZoufangSnake:
@@ -2149,7 +2149,7 @@ MasterOfCollection:
   FlavorText: '"Müll? Wie kann das bitte Müll sein?"'
 ChargingPotion:
   Name: Radioaktive Elemente
-  Description: "Jedes Mal, wenn ein |Instabiler Trank| aktiviert wird, erhalte {Value1}\
+  Description: "Jedes Mal, wenn |Instabiler Trank| aktiviert wird, erhalte {Value1}\
     \ |Aufladung{Value1:plural one='' other='en'}.\nFüge {Value2} |Instabiler Trank|\
     \ deiner Hand hinzu."
 StarlightTaifengSummoner:
@@ -2558,8 +2558,8 @@ SakuyaGraze:
 CleanRoom:
   Description: "Werfe eine Karte ab.\nZiehe {Value1:plural one='% Karte' other='%\
     \ Karten'}.\nBis zum Ende des Kampfes {Value2:plural one='wird % zufällige Karte'\
-    \ other='werden % zufällige Karten'} auf deiner Hand |aufgewertet|. Falls ein\
-    \ |Wurfmesser| abgeworfen wurde, werden stattdessen alle Karten auf der Hand |aufgewertet|."
+    \ other='werden % zufällige Karten'} auf deiner Hand |aufgewertet|. Falls |Wurfmesser|\
+    \ abgeworfen wurden, werden stattdessen alle Karten auf der Hand |aufgewertet|."
   Name: Zimmer aufräumen
 MihuanJack:
   Description: Zu Beginn deines Zuges erhält {PlayerName} {Value1} |Zeitimpuls|.
@@ -3046,7 +3046,7 @@ KongMana:
   Description: "Sende 1 Karte von deiner Hand ins |Exil|. Erhalte Mana in Höhe der\
     \ Manakosten.\nFüge |Regenbogen| deiner Hand hinzu."
   Name: Kernschmelze
-  DetailText: Status- oder unspielbare |Unglückskarten| haben Manakosten abhängig
+  DetailText: Statuskarten oder unspielbare |Unglücke| besitzen Manakosten abhängig
     ihrer Seltenheit.
 YoumuHybrid:
   Name: Halb-Mensch, Halb-Phantom
@@ -3274,12 +3274,12 @@ QingeUpgrade:
   Name: List der bösen Einsiedlerin
 ExilePotion:
   Description: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner
-    Hand ins |Exil|. Füge die gleiche Menge an |Instabiler Trank| deinem Ablagestapel
+    Hand ins |Exil|. Füge die gleiche Menge |Instabiler Trank| deinem Ablagestapel
     hinzu.
   Name: Abfallverwertung
   UpgradedDescription: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'}
     von deinem Ziehstapel, Ablagestapel oder deiner Hand ins |Exil|. Füge die gleiche
-    Menge an |Instabiler Trank| deinem Ablagestapel hinzu.
+    Menge |Instabiler Trank| deinem Ablagestapel hinzu.
   FlavorText: '"Mönche müssen all ihre weltlichen Besitztümer aufgeben, nicht wahr?
     Das macht die Sache recht simpel, diese Sachen gehören mir nämlich gar nicht."'
 RainbowStar:
