@@ -60,30 +60,30 @@ CardPool:
   Name: Kartenpool
   Description: "Du kannst gewisse Karten nur als Belohnung erhalten, wenn folgende\
     \ Kriterien erfüllt sind:\n1: Die Manakosten der Karte können mit dem Mana in\
-    \ der |Manabasis| bezahlt werden.\n2: Einzigartige Karten können nur gefunden\
-    \ werden, wenn du den dazugehörigen Charakter spielst oder du das |schimmernde\
-    \ Ausstellungsstück| des jeweiligen Charakters gefunden hat.\n3: Alle Farben der\
-    \ Karte sind in der |Manabasis| vertreten. Philosophen-Mana wird nicht mitgezählt.\n\
-    \nNehmen wir an, du spielst als Reimu und besitzt ein |Dunkles Grimoire|, einen\
-    \ |Stein des Philosophen| und einen |Wunderhammer|. |d:(Du hast zu Beginn dein\
-    \ schimmerndes Ausstellungsstück mit Eirin getauscht ...)| \nDie |Manabasis| besteht\
-    \ somit aus <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"\
-    ><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\"\
-    \ name=\"C\">. Es erscheinen nun einzigartige Karten von Reimu und Marisa, da\
-    \ du ein |Dunkles Grimoire| besitzt.\n\nIn solchen Fällen kannst du auch schwarze\
-    \ Karten finden die <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
-    B\"> kosten, da du diese Karte durch <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
-    ManaSprite\" name=\"P\"> bezahlen kannst. Was du |r:nicht| finden könntest wäre\
-    \ eine schwarz/blaue Karte die <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
-    \ name=\"B\"> kostet, da sich kein <sprite=\"ManaSprite\" name=\"U\"> in deiner\
-    \ |Manabasis| befindet, auch wenn du es durch <sprite=\"ManaSprite\" name=\"B\"\
-    ><sprite=\"ManaSprite\" name=\"P\"> bezahlen könntest.\n\nPS:\n|Blanke Karte|,\
-    \ ein |schimmerndes Ausstellungsstück|, erlaubt es dir Karten in |p:jeder Farbe|\
-    \ zu finden.\nFür Karten, die mehr als 5 Mana benötigen und generische Manakosten\
-    \ |d:(<sprite=\"ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">,\
-    \ etc.)| haben, zählen nur die nicht-generischen Manakosten für das erste Kriterium.\
-    \ Es gibt einige Wege, die Kosten solcher Karten zu reduzieren."
+    \ der |Manabasis| bezahlt werden.\n2: Exklusive Karten können nur gefunden werden,\
+    \ wenn du den dazugehörigen Charakter spielst oder du das |schimmernde Ausstellungsstück|\
+    \ des jeweiligen Charakters gefunden hat.\n3: Alle Farben der Karte sind in der\
+    \ |Manabasis| vertreten. Philosophen-Mana wird nicht mitgezählt.\n\nNehmen wir\
+    \ an, du spielst als Reimu und besitzt ein |Dunkles Grimoire|, einen |Stein des\
+    \ Philosophen| und einen |Wunderhammer|. |d:(Du hast zu Beginn dein schimmerndes\
+    \ Ausstellungsstück mit Eirin getauscht ...)| \nDie |Manabasis| besteht somit\
+    \ aus <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"ManaSprite\" name=\"\
+    C\">. Es erscheinen nun exklusive Karten von Reimu und Marisa, da du ein |Dunkles\
+    \ Grimoire| besitzt.\n\nIn solchen Fällen kannst du auch schwarze Karten finden\
+    \ die <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"B\"> kosten,\
+    \ da du diese Karte durch <sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"P\"> bezahlen kannst. Was du |r:nicht| finden könntest wäre eine schwarz/blaue\
+    \ Karte die <sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"\
+    > kostet, da sich kein <sprite=\"ManaSprite\" name=\"U\"> in deiner |Manabasis|\
+    \ befindet, auch wenn du es durch <sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\"> bezahlen könntest.\n\nPS:\n|Blanke Karte|, ein |schimmerndes\
+    \ Ausstellungsstück|, erlaubt es dir Karten in |p:jeder Farbe| zu finden.\nFür\
+    \ Karten, die mehr als 5 Mana benötigen und generische Manakosten |d:(<sprite=\"\
+    ManaSprite\" name=\"1\">, <sprite=\"ManaSprite\" name=\"2\">, etc.)| haben, zählen\
+    \ nur die nicht-generischen Manakosten für das erste Kriterium. Es gibt einige\
+    \ Wege, die Kosten solcher Karten zu reduzieren."
 BattleFlow:
   Name: Kampfsequenz und Runden
   Description: "Zu Beginn jeden Kampfes werden die notwendigen Feinde und Karten initialisiert,\
@@ -164,7 +164,7 @@ BossLoot:
   Description: "Das Besiegen eines Bosses bietet dir die Wahl zwischen 3 verschiedenen\
     \ |schimmernden Ausstellungsstücken| als Belohnung an. Diese |Ausstellungsstücke|\
     \ folgen einem bestimmten Muster:\nDas rechte |Ausstellungsstück| hängt vom Boss\
-    \ ab. Im ersten Akt ist es das einzigartige, |schimmernde Ausstellungsstück| des\
+    \ ab. Im ersten Akt ist es das exklusive, |schimmernde Ausstellungsstück| des\
     \ Bosses, während es im späteren Spielverlauf ein neutrales, |schimmerndes Ausstellungsstück|\
     \ ist, dessen Farbe vom Boss abhängt (z.B. wäre die Belohnung bei Remilia ein\
     \ rotes |Ausstellungsstück|).\nDas linke |Ausstellungsstück| hängt von deiner\
