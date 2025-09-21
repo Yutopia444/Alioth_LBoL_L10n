@@ -95,6 +95,10 @@ UI:
   SpellUntitled: '"{0}"'
   Skip: Skip
   SkipHint: '{0} to skip'
+  Gamepad:
+    SelectBaseMana: Select
+    OpenCardDetail: Details
+    PlayCard: Play
 MainMenu:
   NewGame: New Run
   RestoreGame: Continue Run
@@ -153,7 +157,7 @@ StartGame:
   DifficultyHint: If you haven't played "Slay the Spire", it is recommended to play
     Easy difficulty first.
   JadeBoxLock: Jade Box will be available at Unlock Level 10.
-  NoStoryMode: "Story Mode is not ready yet.\nPlease look forward to future updates."
+  NoStoryMode: "Story Mode can only be played as Reimu Hakurei."
   PuzzleHint: "Take on additional Requests to increase your blue points and investigation\
     \ experience.\nUnlocked after reaching Unlock Level 4."
   SelectAll: Select All
@@ -641,8 +645,6 @@ MessageDialog:
     cards.
   DontShowHintWarning: Disable all game hints?
   XCostEmptyUsageWarning: Play {0} without floating mana?
-  GamepadUnfinishedSubText: Gamepad use is not recommended currently due to unfinished
-    graphics that could display.
 BattleHint:
   Prev: Prev
   Next: Next
@@ -696,6 +698,12 @@ Cards:
   UpgradePrice: "Cost: {0} <sprite=\"Gold\" name=\"gold\">\nMoney: {1} <sprite=\"\
     Gold\" name=\"gold\">"
   NotInPool: Not in Card Reward Pool
+  PackTooltip: '{0}{1}'
+  PackEnabledSuffix: (Enabled)
+  PackDisabledSuffix: (Disabled)
+  PackNone: None
+  PackDisabled: Disabled
+  PackEnabled: Enabled
 ErrorChat:
   CardCostChanged: The cost of specified card has changed.
   UsUsedThisBattle: I've used my Spell Card this combat already.
@@ -859,7 +867,7 @@ History:
   Card: 'Cards: {0}'
   Exhibit: 'Exhibits: {0}'
   Mana: Mana
-  Puzzles: '{0} Requests'
+  Puzzles: '{0} {1} Requests'
   PlayedTime: 'Play Time: {0}'
   AutoSeed: Random Seed
   NotAutoSeed: Specified Seed
