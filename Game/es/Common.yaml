@@ -213,6 +213,11 @@ UI:
   CopyHint: La semilla se ha copiado en el portapapeles.
   SaveHint: Juego Guardado
   SkipHint: '{0} para omitir'
+  Gamepad:
+    SelectBaseMana: Seleccionar
+    SelectAllSameColorBaseMana: Seleccionar Todo de un Color
+    OpenCardDetail: Detalles
+    PlayCard: Jugar
 MainMenu:
   Setting: Configuración
   Collection: Colección
@@ -223,7 +228,7 @@ MainMenu:
   NewGame: Nueva Partida
   RestoreGame: Continuar Partida
   SelectProfile: Seleccionar Perfil
-  InputName: Introducir Nombre
+  InputName: Introducir Nombre de Perfil
   LastPlayed: <size=85%>Ultima Partida
   Characters: Personajes
   LifeData: Estadísticas
@@ -239,9 +244,25 @@ MainMenu:
   Licenses: Licencia
   ExitGame: Salir del Juego
   DeleteProfile: ¿Eliminar este Perfil?
+  RandomNames:
+  - Viajera
+  - Vigía de la Noche
+  - Luna Escarlata
+  - Mariposa del Inframundo
+  - Media Fantasma
+  - Exploradora del Bambú
+  - Fugitiva Lunar
+  - Alma Perdida
+  - Latidos del Subterráneo
+  - Coneja del Eientei
+  - Youkai del Anochecer
+  - Guardiana de la Barrera
+  - Titiritera
+  - Minera de la Cueva del Dragón
+  - Reportera Tengu
 StartGame:
   JadeBoxLock: El modo Caja de Jade estará disponible al desbloquear el nivel 10.
-  NoStoryMode: "El modo historia aún no está listo,\nEspere a futuras actualizaciones."
+  NoStoryMode: "El modo historia solo se puede jugar con Reimu Hakurei."
   ClearNormal: Completado
   ClearTrue: Completado Perfectamente
   Puzzles: "{0:plural one='% |petición|' other='% |peticiones|'}"
@@ -442,7 +463,7 @@ Setting:
   SingleClick: 1 Clic
 History:
   StatsSegment: '{0}: {1}'
-  Puzzles: "{0:plural one='% Solicitud' other='% Solicitudes'}"
+  Puzzles: "{0} {1} {0:plural one='Solicitud' other='Solicitudes'}"
   PlayedTime: 'Tiempo Jugado: {0}'
   Card: Cartas {0}
   Mana: Mana
@@ -698,8 +719,6 @@ MessageDialog:
     \ actualizaciones, consulte los anuncios de Steam.\n\nSi encuentra algún error\
     \ durante el juego, puede contactarnos en nuestra comunidad de Steam o en el servidor\
     \ de Discord."
-  GamepadUnfinishedSubText: Actualmente no se recomienda el uso del Gamepad debido
-    a los gráficos inacabados que podrían aparecer.
 Debut:
   KaguyaChats:
   - Voy a comprobar la situación también.
@@ -770,6 +789,20 @@ Cards:
   UpgradePrice: "Coste: {0} <sprite=\"Gold\" name=\"gold\">\nDinero: {1} <sprite=\"\
     Gold\" name=\"gold\">"
   NotInPool: No esta en el grupo de Recompensas de Cartas
+  PackName: Paquete de Cartas
+  PackTitle: Activar Paquete de Cartas
+  PackNone: Nada
+  PackTooltip: '{0}{1}'
+  PackEnabledSuffix: (Activado)
+  PackDisabledSuffix: (Desactivado)
+  PackEnabled: Activado
+  PackDisabled: Desactivado
+  PackSwitchTitle: Activar/Desactivar Paquete de Cartas
+  PackSwitchDescription: "Solo se puede activar en el menú principal.\nLos cambios\
+    \ no afectan a las partidas en curso.\n\nUn Paquete de cartas puede contener varias\
+    \ cartas que deben activarse o desactivarse simultáneamente.\nActualmente, solo\
+    \ se admiten paquetes de una sola carta, por lo que no es posible previsualizar\
+    \ el contenido completo de un sobre."
 CardDetail:
   Sketch: Inacabado
   Illustrator: 'Artista :'
@@ -909,3 +942,6 @@ Ultimate:
   MaxPower: 'Cargas Máximas: {0}'
 SelectCard:
   DreamCardsToHand: 'Sueño: Coloca hasta 1 carta en la mano'
+Mod:
+  PlayingMod: Jugando con Mods
+  ModList: Lista de Mods
