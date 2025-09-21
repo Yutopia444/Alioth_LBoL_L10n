@@ -129,6 +129,15 @@ UI:
   SeAmulet: '抵挡 {0}'
   SpellTitled: '  {0}「{1}」'
   SpellUntitled: '「{0}」'
+  Gamepad:
+    SelectBaseMana: 选择
+    SelectAllSameColorBaseMana: 选择同色全部
+    OpenCardDetail: 详细
+    PlayCard: 打出
+
+Mod:
+  PlayingMod: 正在游玩 Mod
+  ModList: 启用的 Mod 列表
 
 MainMenu:
   NewGame: 新游戏
@@ -147,7 +156,8 @@ MainMenu:
   Licenses: 开源许可
   ExitGame: 退出游戏
   SelectProfile: 请选择一个存档
-  InputName: 请写入您的名字
+  InputName: 请设置一个存档名
+  RandomNames: ["幻想的过客", "永夜观测者", "绯色之月", "幽冥蝶舞", "白玉楼剑客", "竹林迷途者", "月都逃亡者", "彼岸引渡人", "地底的心跳", "永远亭的月兔", "宵夜的妖怪", "结界守护者", "魔法人形使", "虹龙洞寻宝者", "见习天狗记者"]
   DeleteProfile: 确定要删除这段历史吗？
   EmptyProfile: 此段历史没有记载
   DeleteYes: 确定删除
@@ -180,8 +190,7 @@ StartGame:
     禁用大部分剧情对话
     开启全部「友好相遇」
   NoStoryMode: |-
-    故事模式还没有准备好
-    请期待游戏更新
+    只能以博丽灵梦进行故事模式
   NotReadyHint: |-
     这名角色还没有准备好
     请期待游戏更新
@@ -416,7 +425,7 @@ Setting:
     RebindMessage: 请按下对应“{0}”的按键，按 Esc 取消
 
 History:
-  Puzzles: '{0}个难题'
+  Puzzles: '{0} {1}个难题'
   Mana: 法力
   Exhibit: 展品总数：{0}
   Card: 卡牌总数：{0}
@@ -652,6 +661,22 @@ Cards:
   IsUpgraded: 此卡牌已升级
   UnUpgradable: 此卡牌不可升级
   NotInPool: 此卡牌不属于「总奖励卡池」
+
+  PackName: 补充包
+  PackTitle: 当前游戏启用的补充包
+  PackNone: 无
+  PackTooltip: '{0}{1}'
+  PackEnabledSuffix: (已启用)
+  PackDisabledSuffix: (未启用)
+  PackEnabled: 已启用
+  PackDisabled: 未启用
+  PackSwitchTitle: 启动/停用补充包。
+  PackSwitchDescription: |-
+    只能在一局游戏外设置。
+    已经开始的游戏不会被影响。
+
+    一个补充包内可能含有多张卡牌，它们必须同时启用或停用。
+    不过由于目前只有一个含有单张卡牌的补充包，暂时没有做预览整个补充包的游戏界面。
 
 SelectCard:
   DreamCardsToHand: 梦现：选择至多一张牌移入手中
@@ -943,8 +968,6 @@ MessageDialog:
 
     如果游玩过程中遇到问题，欢迎到 steam 社区或 QQ 群寻求帮助。
     官方交流群：209636617
-  GamepadUnfinishedText: 手柄操作模块正在开发中
-  GamepadUnfinishedSubText: 你可能会看到未完成的素材，暂不推荐使用
 
   # Error
   InvalidProfileName: 无效的档案名称
