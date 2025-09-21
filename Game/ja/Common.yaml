@@ -110,6 +110,11 @@ UI:
   SpellTitled: '  {0}「{1}」'
   SeAmulet: '{0} 無効化'
   SkipHint: '{0}で早送り'
+  Gamepad:
+    SelectBaseMana: マナを選択
+    SelectAllSameColorBaseMana: 同色のマナを全て選択
+    OpenCardDetail: 詳細
+    PlayCard: カード使用
 MainMenu:
   NewGame: 新規攻略
   Licenses: ライセンス
@@ -136,6 +141,22 @@ MainMenu:
   LastPlayed: 最後にプレイ
   Characters: 登場人物
   LifeData: 統計
+  RandomNames:
+  - 幻想の旅人
+  - 永夜の観測者
+  - 紅色の月
+  - 幽冥なる蝶の舞
+  - 白玉楼の剣客
+  - 竹林の迷い人
+  - 月の都からの逃亡者
+  - 彼岸の渡し守
+  - 
+  - 永遠亭の月兎
+  - 宵闇の妖怪
+  - 結界の守護者
+  - 魔法の人形遣い
+  - 虹龍洞の採掘者
+  - 見習い天狗記者
 StartGame:
   DifficultyTitle: 難易度を選択
   SetSeed: シード値を設定
@@ -163,7 +184,7 @@ StartGame:
   NoClearHind: シード値や玉匣を設定した場合、クリアと実績の達成は記録されない。
   IsLockHint: "このキャラクターは\n調査レベル{0}で解放されます"
   StoryMode: ストーリーモード
-  NoStoryMode: "ストーリーモードはまだ実装されてません\nアップデートを楽しみに待ってね"
+  NoStoryMode: "ストーリーモードは霊夢でのみプレイできます"
   NotReadyHint: "このキャラクターはまだ実装されてません\nアップデートを楽しみに待ってね"
   FreeMode: フリーモード
   StoryDescription: "博麗霊夢を操作して異変を解決しよう。\n一部で固定の敵が出現します。\n一部の「友好的な遭遇」が発生しません。"
@@ -449,7 +470,7 @@ BattleHint:
     \ name=\"G\">, 無色のマナ <sprite=\"ManaSprite\" name=\"C\"> 、そして任意のコストの支払いに使用できる彩色マナ<sprite=\"\
     ManaSprite\" name=\"P\"> があります。\n数字部分の<sprite=\"ManaSprite\" name=\"2\">のようなコストは任意の2マナで支払うことができるという意味です。"
 History:
-  Puzzles: '{0}個の難題'
+  Puzzles: '{0}{1}個の難題'
   Mana: マナ
   Exhibit: 展示品数：{0}
   Card: カード枚数：{0}
@@ -626,6 +647,17 @@ Cards:
   UpgradePrice: "必要な<sprite=\"Gold\" name=\"gold\">：{0}\n現在の<sprite=\"Gold\" name=\"\
     gold\">：{1}"
   NotInPool: このカードは報酬カードプールに含まれない
+  PackName: 拡張パック
+  PackNone: 無し
+  PackTooltip: '{0}{1}'
+  PackTitle: 現在有効な拡張パック
+  PackEnabledSuffix: (有効)
+  PackDisabledSuffix: (無効)
+  PackEnabled: 有効
+  PackDisabled: 無効
+  PackSwitchTitle: 拡張パックの有効/無効の切り替え
+  PackSwitchDescription: "タイトル画面からのみ設定可能です。\n（現在プレイ中のデータには影響しません。）\n\n1つの拡張パックには複数のカードが含まれる場合があり、それらはまとめて有効化または無効化されます。\n\
+    現時点では複数枚が含まれる拡張パックが存在しないため、拡張パック全体のプレビュー機能は実装されていません。"
 TopInfo:
   Original: 原曲：
   Artist: アーティスト：
@@ -697,7 +729,6 @@ MessageDialog:
   CannotRestoreEndedGameRun: 終了したゲームの進行状況を復元できません
   CorruptedSaveData: セーブファイルが破損しています
   XCostEmptyUsageTips: 左下のマナパネルから X コストカードにプレイするマナを設定できます
-  GamepadUnfinishedSubText: 未完成の素材が表示される可能性があるので、現時点では推奨しません
 Rarity:
   Shining: 光耀
   Uncommon: アンコモン
@@ -782,3 +813,6 @@ Ultimate:
   OncePerTurn: 1ターンに1回のみ使用可能
 SelectCard:
   DreamCardsToHand: 夢現：カードを1枚まで選んで手札に加える
+Mod:
+  PlayingMod: 使用中のMod
+  ModList: 有効なMod一覧
