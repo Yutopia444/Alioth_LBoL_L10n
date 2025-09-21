@@ -337,6 +337,11 @@ UI:
   SideCloseHint: 눌러서 닫기
   SeAmulet: '{0} 버텨냄'
   SkipHint: '{0}를 눌러 스킵'
+  Gamepad:
+    SelectBaseMana: 마나 선택
+    SelectAllSameColorBaseMana: 같은 색상의 마나 전부 선택
+    OpenCardDetail: 상세
+    PlayCard: 카드 사용
 MainMenu:
   NewGame: 새 게임
   RestoreGame: 이어하기
@@ -346,7 +351,7 @@ MainMenu:
   Licenses: 라이선스
   ExitGame: 게임 나가기
   SelectProfile: 프로필 선택하기
-  InputName: 여기에 이름 입력
+  InputName: 프로필 이름 입력
   DeleteProfile: 이 프로필을 지울까요?
   EmptyProfile: 빈 프로필
   EarlyAccess: 앞서 해보기 공지
@@ -363,6 +368,22 @@ MainMenu:
   Characters: 캐릭터
   DeleteYes: 삭제
   DeleteNo: 취소
+  RandomNames:
+  - 환상의 여행자
+  - 영야의 관측자
+  - 홍마의 달
+  - 명계의 나비
+  - 백옥루의 검사
+  - 죽림의 손님
+  - 달의 도망자
+  - 피안의 인도자
+  - 지저의 닫힌 마음
+  - 영원정의 토끼
+  - 어스름의 요괴
+  - 결계의 수호자
+  - 마법의 인형사
+  - 홍룡동의 광부
+  - 견습 텐구 기자
 StartGame:
   SkillSpellCard: 스펠 카드  {0}<sprite="Point" name="Power">
   SkillExhibit: 시작 전시품
@@ -382,7 +403,7 @@ StartGame:
   JadeBoxLock: 보물상자은 해금 단계 10에서 해금됩니다.
   StoryDescription: "하쿠레이 레이무로 광요이변을 해결합니다.\n일부 적이 반드시 나옵니다.\n일부 「친근한 조우」가 발생하지 않습니다."
   FreeDescription: "원하는 캐릭터로 이변을 해결합니다.\n대부분의 대화가 나오지 않습니다.\n「친근한 조우」가 발생합니다."
-  NoStoryMode: "스토리 모드는 현재 준비중입니다.\n추후의 업데이트를 기다려주세요."
+  NoStoryMode: "스토리 모드는 레이무로만 플레이할 수 있습니다."
   NotReadyHint: "해당 캐릭터는 현재 준비중입니다.\n추후의 업데이트를 기다려주세요."
   IsLockHint: 이 캐릭터는 해금 단계 {0}에서 해금됩니다.
   SetJadeBox: 보물상자 설정
@@ -408,7 +429,7 @@ StartGame:
   NotShowRandomResultTitle: 운명 감추기
 History:
   Exhibit: 수집한 전시품 {0}개
-  Puzzles: 난제 {0}개
+  Puzzles: '{0} 난제 {1}개'
   Mana: 마나
   Card: 수집한 카드 {0}장
   StatsSegment: '{0}: {1}'
@@ -636,7 +657,6 @@ MessageDialog:
   CorruptedGameRunSaveData: 게임 진행 데이터가 파손되었습니다.
   CannotReenterStation: 스테이지에 재입장할 수 없습니다.
   GameRunSaveDiscarded: "게임이 업데이트되었습니다.\n마지막 게임 진행 상황이 파기되었습니다."
-  GamepadUnfinishedText: 게임패드 지원은 현재 개발 중에 있습니다.
 Cards:
   RemoveTips: 제거할 카드를 선택하세요
   UpgradeDialog: 이 카드를 강화합니까?
@@ -652,6 +672,17 @@ Cards:
   UpgradePrice: "필요 <sprite=\"Gold\" name=\"gold\">: {0}\n현재 <sprite=\"Gold\" name=\"\
     gold\">: {1}"
   NotInPool: 이 카드는 보상 카드 풀에 포함되지 않습니다
+  PackName: 확장 팩
+  PackTitle: 활성화된 확장 팩
+  PackNone: 없음
+  PackTooltip: '{0}{1}'
+  PackEnabledSuffix: (활성화됨)
+  PackDisabledSuffix: (비활성화됨)
+  PackEnabled: 활성화됨
+  PackDisabled: 비활성화됨
+  PackSwitchTitle: 확장 팩 활성/비활성화
+  PackSwitchDescription: "메인 메뉴에서만 설정 가능합니다.\n현재 진행중인 게임에 대해서는 영향을 끼치지 않습니다.\n\n확장\
+    \ 팩은 동시에 여러개를 활성화시킬 수 있습니다.\n현재는 여러 장이 들어있는 확장 팩이 없으므로 확장 팩의 전체 내용물을 미리 볼 수 없습니다."
 ErrorChat:
   LowMana: 마나가 부족해.
   CardNotUsable: 이 카드는 쓸 수 없어.
@@ -809,3 +840,6 @@ Ultimate:
   OncePerBattle: 한 전투에 한 번만 사용할 수 있습니다.
 SelectCard:
   DreamCardsToHand: '꿈결: 최대 한 장을 선택해 손으로 가져옵니다.'
+Mod:
+  PlayingMod: 모드 사용 중
+  ModList: 적용된 모드 목록
