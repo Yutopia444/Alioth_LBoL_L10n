@@ -139,6 +139,11 @@ UI:
   SideCloseHint: Klicken, um zu schließen
   SeRemove: '{0} ist verschwunden'
   SeAmulet: '{0} konnte widerstehen'
+  Gamepad:
+    SelectBaseMana: Auswählen
+    SelectAllSameColorBaseMana: Alle in derselben Farbe auswählen
+    PlayCard: Ausspielen
+    OpenCardDetail: Details
 MainMenu:
   Database: Extras
   Setting: Einstellungen
@@ -159,12 +164,28 @@ MainMenu:
   DeleteNo: Abbrechen
   RestoreGame: Durchlauf Fortsetzen
   NewGame: Neuer Durchlauf
-  InputName: Name Eingeben
+  InputName: Profilname Eingeben
   EmptyProfile: Leeres Profil
   Credits: Mitwirkende
   MusicRoom: Musikraum
   Changelog: Änderungsprotokoll
   StartDate: Erstelldatum
+  RandomNames:
+  - Reisender
+  - Nachtwächter
+  - Scharlachroter Mond
+  - Schmetterlinge der Unterwelt
+  - Halb-Phantom
+  - Wanderer aus dem Bambuswald
+  - Mondflüchtling
+  - Verlorene Seele
+  - Unterirdischer Herzschlag
+  - Hase aus Eientei
+  - Youkai der Dunkelheit
+  - Wächterin der Barriere
+  - Puppenspielerin
+  - Schatzsucher
+  - Tengu-Reporterin
 Setting:
   Language: Sprache
   AudioMaster: Gesamtlautstärke
@@ -397,7 +418,7 @@ Chat:
 StartGame:
   CharacterUnset: Wähle einen Charakter
   DifficultyTitle: Wähle eine Schwierigkeitsstufe
-  StoryMode: Story Modus
+  StoryMode: Story-Modus
   FreeMode: Freier Modus
   SelectAll: Alle Auswählen
   NotShowRandomResultTitle: Verberge vorbestimmtes Schicksal
@@ -426,8 +447,7 @@ StartGame:
     \ Dialoge sind deaktiviert.\nAlle \"freundlichen Begegnungen\" sind zugänglich."
   StoryDescription: "Löse den Vorfall mit Reimu Hakurei.\nEinige Akte haben vorgeschriebene\
     \ Feinde.\nEinige \"freundliche Begegnungen\" sind deaktiviert."
-  NoStoryMode: "Der Story Modus ist noch unvollständig.\nBitte geduldige dich bis\
-    \ zur Veröffentlichung weiterer Updates."
+  NoStoryMode: "Der Story-Modus ist nur als Reimu Hakurei verfügbar."
   StartHp: Anfängliches Leben
   StartMoney: Anfängliches Geld
   ShowRandomResultTitle: Enthülle vorbestimmtes Schicksal
@@ -725,7 +745,7 @@ History:
   Card: 'Karten: {0}'
   AutoSeed: Zufälliger Seed
   NotAutoSeed: Festgelegter Seed
-  Puzzles: '{0} Anfragen'
+  Puzzles: '{0} {1} Anfragen'
   Mana: Mana
   Exhibit: 'Ausstellungsstücke: {0}'
 ErrorChat:
@@ -831,6 +851,20 @@ Cards:
   Show: Drücke Rechtsklick oder halte den Mauszeiger über die Karte, um die Details
     anzuzeigen.
   NotInPool: Diese Karte gehört nicht zu den Kartenbelohnungen
+  PackNone: Keine
+  PackEnabledSuffix: (Aktiviert)
+  PackName: Kartenerweiterungen
+  PackTitle: Aktive Kartenerweiterungen
+  PackTooltip: '{0} {1}'
+  PackDisabledSuffix: (Deaktiviert)
+  PackEnabled: Aktiviert
+  PackDisabled: Deaktiviert
+  PackSwitchTitle: Aktiviere/Deaktiviere Kartenerweiterungen
+  PackSwitchDescription: "Diese Einstellung kann nur im Hauptmenü geändert werden.\n\
+    Änderungen haben keinen Einfluss auf einen aktiven Durchlauf.\n\nEine Kartenerweiterung\
+    \ enthält zusätzliche Karten, die gemeinsam aktiviert/deaktiviert werden müssen.\n\
+    Zurzeit werden nur einzelne Karten in den Kartenerweiterungen unterstützt, es\
+    \ gibt daher noch keine Vorschau für die gesamte Erweiterung."
 TopInfo:
   Original: 'Original:'
   Artist: 'Musiker:'
@@ -842,10 +876,10 @@ MessageDialog:
   ResetKeyBindingsWarning: Tastenbelegung zurücksetzen?
   EarlyAccess: "|Touhou: Verlorener Zweig der Legende| befindet sich zurzeit im |d:Early\
     \ Access|.\nSpielelemente können sich daher noch jederzeit ändern.\nWir arbeiten\
-    \ zurzeit am |Story Modus| und |y:Alice|.\nBitte schaut euch die Steam Ankündigungen\
+    \ zurzeit am |Story-Modus| und |y:Alice|.\nBitte schaut euch die Steam-Ankündigungen\
     \ an, um weitere Informationen zu erhalten.\n\nFalls du während des Spielens auf\
-    \ Programmfehler stößt, kontaktiere uns bitte über die Steam Community oder unseren\
-    \ Discordserver."
+    \ Programmfehler stößt, kontaktiere uns bitte über die Steam-Community oder unseren\
+    \ Discord-Server."
   CorruptedGameRunSaveData: Durchlauf-Daten sind beschädigt
   XCostEmptyUsageTips: Du kannst das Mana für X Kosten unten links im Manapool einstellen.
   DontShowHintWarning: Alle Hinweise deaktivieren?
@@ -917,3 +951,6 @@ Debut:
   - Die Wirkung der Medizin wird nachlassen, wenn du nicht bald aufbrichst~
 ManaSelect:
   Title: Wähle einen Manatyp
+Mod:
+  PlayingMod: Mit Mods spielen
+  ModList: Liste aller Mods
