@@ -534,7 +534,7 @@ SakuyaLock:
   FlavorText: '"Niedrige KP? Das ist ein Problem für mein zukünftiges Ich."'
   Name: Zeitsperre
   Description: "Aktiviere einmal <color=#B7F0FF>Silbersperre</color>.\n({PlayerName}\
-    \ erleidet {Value1} Schaden.)"
+    \ erleidet {Value1} Angriffsschaden.)"
 NightMana4:
   Name: 'Lange Nacht: 05:00 Uhr'
   Description: "Solange sich {SelfName} auf deiner Hand befindet, kosten alle Karten\
@@ -1188,7 +1188,7 @@ LilyFriend:
   ExtraDescription3: '{FriendU}Heile {Heal} Leben.'
   Name: Lily White, Vorbote des Frühlings
   Description: "{FriendS}Verursache an einem zufälligen Feind {Value1} Mal {Damage}\
-    \ Schaden.\n{FriendP}Erhalte {TurnMana}."
+    \ Angriffsschaden.\n{FriendP}Erhalte {TurnMana}."
 FruitShake:
   FlavorText: Tropische Früchte sind kalt und lecker!
   Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
@@ -1250,7 +1250,7 @@ SunnyFriend:
   ExtraDescription1: "{FriendA}Erhalte |Optische Tarnung| für {Light:plural one='%\
     \ Zug' other='% Züge'}."
   Description: '{FriendP}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
-    Schaden.'
+    Angriffsschaden.'
   ExtraDescription3: "{FriendU}Verursache {Value1} Mal den Schaden sofort. \nErhalte\
     \ {Value2} |Feuerkraft|."
 Chunguang:
@@ -1450,7 +1450,7 @@ Xiaozhuo:
   FlavorText: Du bist betrunken, deine Feinde werden ein leichtes Spiel mit dir haben.
 DayaojingFriend:
   UpgradedExtraDescription1: '{FriendA}Erhalte {Block} |Block| und {Shield} |Barriere|.'
-  Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
+  Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Angriffsschaden.'
   Name: Daiyousei, Lebhafte Assistentin
   ExtraDescription1: '{FriendA}Erhalte {Block} |Block|.'
   FlavorText: Ein Detektiv braucht einen Assistenten. Das ist Allgemeinwissen, sogar
@@ -1490,7 +1490,7 @@ MeilingFriend:
     \ deiner Hand hinzu.\nJedes Mal, wenn {PlayerName} den gesamten Schaden eines\
     \ Angriffs erleidet, wiederhole diesen Effekt."
 DayaojingTdm:
-  Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Schaden.'
+  Description: '{FriendP}Verursache an einem zufälligen Feind {Damage} Angriffsschaden.'
   Name: Daiyousei, Eiskugel Assistentin
   FlavorText: '"Mach dich bereit! Ich werde Schneebälle auf dich werfen!"'
   ExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiskugel| deiner Hand hinzu.'
@@ -1842,7 +1842,7 @@ MoonPurify:
   Name: Entfernen von Unreinheiten
 ToolAttack:
   Name: Wasserpistole
-  Description: "Verursache {Damage} Schaden.\n|Limitiert【{DeckCounter}】|"
+  Description: "Verursache {Damage} Angriffsschaden.\n|Limitiert【{DeckCounter}】|"
 NewsNegative:
   Description: "Verliere {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limitiert【{DeckCounter}】|"
   DetailText: Kann nicht durch die Option |Vorbereiten| nach Besiegen eines Bosses
@@ -1863,8 +1863,8 @@ NewsTidbit:
     Reimu oft in Eientei zu Besuch, zudem werden immer mehr Fotos öffentlich, auf
     denen intime Handlungen mit Kaguya zu sehen sind. (Kakashi Presse-Agentur)
 EmpCard:
-  Description: "Verursache {Damage} Schaden.\nFalls das Ziel eine |Drohne| ist, kann\
-    \ es für {Value1:plural one='% Zug' other='% Züge'} keine Aktionen durchführen.\n\
+  Description: "Verursache {Damage} Angriffsschaden.\nFalls das Ziel eine |Drohne|\
+    \ ist, kann es für {Value1:plural one='% Zug' other='% Züge'} keine Aktionen durchführen.\n\
     |Limitiert【{DeckCounter}】|"
   Name: Elektromagnetischer Störsender
 SanaeRice:
@@ -2270,7 +2270,7 @@ PassionDraw:
 LunaFriend:
   Description: '{FriendP}Erhalte {Block} |Block|.'
   ExtraDescription1: '{FriendA}Verursache an einem zufälligen Feind {Value1} Mal {Damage}
-    Schaden.'
+    Angriffsschaden.'
   ExtraDescription3: "{FriendU}Erhalte |Makellos| für {Value2:plural one='% Zug' other='%\
     \ Züge'}."
   Name: Luna, Stilles Mondlicht
@@ -2299,7 +2299,7 @@ StarFriend:
 MoodChangeBlock:
   Description: Jedes Mal, wenn {PlayerName} den |Mentalen Zustand| ändert, erhalte
     {Value1} |Block|.
-  Name: A.T. Feld
+  Name: AT-Feld
   FlavorText: Ich darf nicht wegrennen! Ich darf nicht wegrennen!
 KoishiDrawTopCards:
   Name: Rorschach-Test
@@ -2324,7 +2324,7 @@ TheChariot:
 KoishiSpringOut:
   Description: "|Gelassenheit|: Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n\
     Betrete ansonsten |Gelassenheit|."
-  Name: Frühlingsurlaub
+  Name: Frühlingsreise
 DebugExileDrawDiscard:
   Description: 'Testkarte: Sende deinen Zieh- und Ablagestapel ins |Exil|.'
   Name: Stapel ins Exil senden
@@ -3084,7 +3084,7 @@ BailianJingang:
 YaoguaiLaser:
   Description: "Erhalte {Block} |Block|.\nVerursache {Damage} Schaden.\nFühre einen\
     \ |Folgeangriff| aus.\n|Instinkt|: Führe einen zusätzlichen |Folgeangriff| aus."
-  Name: Youkai EEG
+  Name: Youkai-EEG
 XiangziEcho:
   FlavorText: '"Ya————hoo————"'
   Description: Wähle {Value1} Karte{Value1:plural one='' other='n'} auf deiner Hand
