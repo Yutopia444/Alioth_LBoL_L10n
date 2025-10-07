@@ -78,9 +78,25 @@ MainMenu:
   Changelog: Lista Zmian
   Credits: Napisy
   Licenses: Licencje
-  InputName: Wprowadź Imię
+  InputName: Wprowadź Nazwę Profilu
   PlayedTime: Czas Gry
   LastPlayed: Ostatnio Zagrane
+  RandomNames:
+  - Sumireko
+  - Eirin
+  - Remilia
+  - Yuyuko
+  - Youmu
+  - Mokou
+  - Kaguya
+  - Komachi
+  - Satori
+  - Reisen
+  - Rumia
+  - Yukari
+  - Alice
+  - Momoyo
+  - Hatate
 Explain:
   Title: Notka
   LoseShinning: Zawsze znajdziesz unikalne karty swojej postaci, nawet jeśli stracisz
@@ -155,6 +171,11 @@ UI:
   SpellUntitled: '"{0}"'
   Skip: Pomiń
   SkipHint: Wciśnij {0}, aby pominąć
+  Gamepad:
+    SelectBaseMana: Wybierz
+    SelectAllSameColorBaseMana: Wybierz Wszystkie Jednego Koloru
+    OpenCardDetail: Szczegóły
+    PlayCard: Graj
 StartGame:
   DifficultyTitle: Proszę wybrać poziom trudności
   Rate: Złożoność
@@ -169,8 +190,7 @@ StartGame:
   FreeMode: Tryb swobodny
   FreeDescription: "Rozwiąż incydent twoją ulubioną postacią\nWiększość dialogów fabularnych\
     \ jest usunięta\nWszystkie \"Przyjazne Spotkania\" są obecne"
-  NoStoryMode: "Tryb fabularny jeszcze nie jest gotowy\nProsimy oczekiwać na przyszłe\
-    \ aktualizacje"
+  NoStoryMode: "W trybie fabularnym możesz grać tylko jako Reimu Hakurei."
   NotReadyHint: "Ta postać jeszcze nie jest gotowa\nProsimy oczekiwać na przyszłe\
     \ aktualizacje"
   IsLockHint: "Ta postać będzie odblokowana\nna Poziomie Odblokowania {0}"
@@ -208,6 +228,7 @@ StartGame:
     \ wyniki kart, eksponatów itd.\nLosowe wyniki są decydowane na początku tego przejścia\
     \ i nie zmienią się po ponownym uruchomieniu gry.\n\n<color=#dd7473>Nie potrzebujesz\
     \ mojej pomocy? Hym!"
+  StoryModeNotReady: Tryb fabularny pojawi się już wkrótce.
 Museum:
   UpgradedFilter: Ulepszenie
   CardStyleFilter: Styl Karty
@@ -394,7 +415,7 @@ Setting:
     \ wymaga celu albo opcja \"Automatyczne Wybieranie\" jest włączona, karty będą\
     \ zagrywane szybciej, jeżeli w walce pozostał tylko jeden wróg."
 History:
-  Puzzles: "{0:plural one:'% Prośba' two:'% Prośby' many:'% Próśb'}"
+  Puzzles: "{0:plural one:'% {1} Prośba' two:'% {1} Prośby' many:'% {1} Próśb'}"
   Mana: Mana
   Exhibit: 'Eksponaty: {0}'
   Card: 'Karty: {0}'
@@ -577,6 +598,19 @@ Cards:
   UpgradePrice: "Koszt {0} <sprite=\"Gold\" name=\"gold\">\nGold {1} <sprite=\"Gold\"\
     \ name=\"gold\">"
   NotInPool: To nie jest karta w puli nagród
+  PackTitle: Aktywne Boostery
+  PackNone: Brak
+  PackTooltip: '{0}{1}'
+  PackSwitchTitle: Włącz/Wyłącz Boostery
+  PackName: Boostery
+  PackDisabledSuffix: (Wyłączony)
+  PackEnabled: Włączony
+  PackDisabled: Wyłączony
+  PackEnabledSuffix: (Włączony)
+  PackSwitchDescription: "Tylko do zmiany w Menu Głównym.\nZmiany nie wpłyną na przejście\
+    \ gry w toku.\n\nBooster może zawierać wiele kart, które muszą być włączone jednocześnie.\n\
+    Na ten moment, wspierane są tylko Boostery zawierające pojedyncze karty, dlatego\
+    \ nie ma możliwości sprawdzenia ich pełnej zawartości."
 Reward:
   Headers:
   - Wyśmienicie!
@@ -881,3 +915,6 @@ Ultimate:
   OncePerBattle: Może zostać użyta tylko raz w walce
 SelectCard:
   DreamCardsToHand: 'Wyśnione: Weź jedną kartę do ręki.'
+Mod:
+  PlayingMod: Graj z Modami
+  ModList: Lista Modów
