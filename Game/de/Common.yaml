@@ -3,7 +3,7 @@ Game:
   Money: Geld
   Card: Karten
   Exhibit: Ausstellungsstücke
-  Difficulty: Schwierigkeitsgrad
+  Difficulty: Schwierigkeitsstufe
   Deck: Bibliothek
   ActualOrder: Tatsächliche Reihenfolge
   Title: 'Touhou: Lost Branch of Legend'
@@ -13,13 +13,13 @@ Game:
   RoundCounter: Runde {0}
   TurnCounter: Zug {0}
   ExtraTurn: Extrazug
-  NextSkip: Überspringe Belohnungen
+  NextSkip: Überspringen
   NextStage: Nächster Akt
   Achievement: Errungenschaften
   IndexOrderExplain: "Karten werden nach ihrer Indexnummer in der Sammlung sortiert.\n\
     Karten mit demselben Namen werden in der tatsächlichen Reihenfolge angezeigt."
   ActualOrderExplain: "Zeige die Karten in der Reihenfolge, in der sie den Stapel\
-    \ betreten.\n\nBibliothek: Die Reihenfolge in welcher die Karten erworben wurden.\n\
+    \ betreten.\n\nBibliothek: Die Reihenfolge, in welcher die Karten erworben wurden.\n\
     Ziehstapel: Die erste Karte ist \"die oberste Karte im Stapel\".\nAblagestapel:\
     \ Die letzte Karte ist \"die oberste Karte im Stapel\".\n\nStandardmäßig kann\
     \ der Ziehstapel nicht in der korrekten Reihenfolge angezeigt werden."
@@ -50,7 +50,7 @@ Game:
   Next: Weiter
   Passive:  Passiv 
   PlayerNameTurn: '{0}s Zug'
-  FollowCardOnly: Zeige Folgeaktionskarten an
+  FollowCardOnly: Zeige Folgeaktionen an
   UnlockLevel: Untersuchungsstufe
   KickerPrefer: Bonuskosten priorisieren
   InTurn: Innerhalb des Zuges
@@ -110,9 +110,9 @@ UI:
   Exit: Verlassen
   Skip: Überspringen
   Setting: Einstellungen
-  ExitGame: Verlasse Spiel
+  ExitGame: Spiel Verlassen
   SaveHint: Spiel gespeichert.
-  Display: Zeigen
+  Display: Anzeigen
   Hide: Verstecken
   Hiding: Versteckt
   Confirm: <size=90%>Bestätigen
@@ -134,11 +134,11 @@ UI:
   - '10'
   SpellTitled: '  {0} "{1}"'
   SpellUntitled: '"{0}"'
-  SkipHint: '{0} zum überspringen'
+  SkipHint: 'Drücke {0}, um zu überspringen'
   CopyHint: Seed wurde in der Zwischenablage gespeichert.
   SideCloseHint: Klicken, um zu schließen
   SeRemove: '{0} ist verschwunden'
-  SeAmulet: '{0} konnte widerstehen'
+  SeAmulet: '{0} widerstanden'
   Gamepad:
     SelectBaseMana: Auswählen
     SelectAllSameColorBaseMana: Alle in derselben Farbe auswählen
@@ -157,7 +157,7 @@ MainMenu:
   DeleteProfile: Dieses Profil löschen?
   LastPlayed: <size=80%>Zuletzt Gespielt
   Licenses: Lizenzen
-  ExitGame: Verlasse Spiel
+  ExitGame: Spiel Verlassen
   DeleteYes: Löschen
   EarlyAccess: EA Hinweis
   PlayedTime: Spielzeit
@@ -230,7 +230,7 @@ Setting:
   RecommendVolume: Zurücksetzen
   TurboMode: Turbomodus
   LostFocusMute: Im Hintergrund stummschalten
-  Detailed: Detailiert
+  Detailed: Detailliert
   Preference: Spiel
   Resolution: Auflösung
   DontShow: Deaktiviert
@@ -578,9 +578,8 @@ Tooltip:
     WB: Weiß/Schwarz
   UsTitle: '{1}'
   DetailedHint:
-    Name: Detailierte Hinweise
-    Description: "Zeige alle Hinweise an.\nDas ist mein erstes Deckbuilding-Spiel\
-      \ …"
+    Name: Detaillierte Hinweise
+    Description: "Es werden alle Hinweise angezeigt.\nDas ist mein erstes Deckbuilding-Spiel."
   DifficultyHard:
     Name: 'Schwierigkeitsstufe: Schwer'
     Description: Feinde haben mehr Leben und verursachen mehr Schaden.
@@ -644,7 +643,8 @@ Tooltip:
     Name: Akt {0}
   DontShowHint:
     Name: Keine Hinweise
-    Description: "Keine Hinweise anzeigen.\nIch habe dieses Spiel bereits gespielt."
+    Description: "Es werden keine Hinweise angezeigt.\nIch habe dieses Spiel bereits\
+      \ gespielt."
   BaseMana:
     Description: "Zu Beginn deines Zuges erhältst du Mana abhängig von deiner |Manabasis|.\n\
       Deine |Manabasis| kann durch das Einsammeln von |schimmernden Ausstellungsstücken|\
@@ -652,10 +652,10 @@ Tooltip:
       \ du finden kannst."
     Name: Manabasis
   BriefHint:
-    Name: Kurzhinweise
-    Description: "Nur Hinweise, die für die einzigartigen Spielmechaniken relevant\
-      \ sind, werden angezeigt.\nIch habe bereits ähnliche Spiele gespielt, wie z.B.\
-      \ Slay the Spire."
+    Name: Kurze Hinweise
+    Description: "Es werden nur relevante Hinweise zu den einzigartigen Spielmechaniken\
+      \ angezeigt.\nIch habe bereits ähnliche Spiele gespielt, wie z.B. 'Slay the\
+      \ Spire'."
   BattleMana:
     Name: Manapool
     Description: "Das verfügbare Mana wird hier angezeigt.\nDu benötigst Mana, um\
@@ -812,7 +812,7 @@ StatusEffectType:
   Special: Speziell
 Reward:
   Money: '{0} Gold'
-  Skip: Überspringe Belohnungen
+  Skip: Überspringen
   AbandonMaxHp: Erhalte {0} maximales Leben
   RemoveCard: Vorbereiten
   RemoveCardDescription: Entferne eine Karte. Basiskarten und Unglücke können nicht
@@ -822,7 +822,7 @@ Reward:
   - Ausgezeichnet!
   - Wähle deine Belohnungen aus
   - Erhalte Belohnungen
-  Abandon: <size=80%>Überspringen
+  Abandon: Verzichten
   CardHeader: Wähle eine Karte aus
   Card: Füge eine Karte der Bibliothek hinzu.
 Gap:
@@ -854,7 +854,7 @@ Cards:
   NotInPool: Diese Karte gehört nicht zu den Kartenbelohnungen
   PackNone: Keine
   PackEnabledSuffix: (Aktiviert)
-  PackName: <size=80%>Kartenerweiterungen
+  PackName: Erweiterungen
   PackTitle: Aktive Kartenerweiterungen
   PackTooltip: '{0} {1}'
   PackDisabledSuffix: (Deaktiviert)
@@ -911,11 +911,11 @@ BattleHint:
     \ name=\"C\"> und Philosophen-Mana <sprite=\"ManaSprite\" name=\"P\">, welches\
     \ jede farbige Mana ersetzen kann.\nGenerische Manakosten wie beispielsweise <sprite=\"\
     ManaSprite\" name=\"2\"> kann mit einer beliebigen Farbe bezahlt werden."
-  DontShow: Keine Hinweise anzeigen
+  DontShow: Keine Hinweise
   Prev: Vorherige
   Next: Nächste
-  Detailed: Detaillierte Hinweise anzeigen
-  Brief: Zeige knappe Hinweise
+  Detailed: Detaillierte Hinweise
+  Brief: Kurze Hinweise
   UltimateSkill: "Wirke Zauberkarten, um das Blatt in der Schlacht zu wenden!\nDas\
     \ Verwenden der Zauberkarte verbraucht eine volle Energieleiste. Besiegte Feinde\
     \ hinterlassen <sprite=\"Point\" name=\"Power\">, womit die Energieleiste aufgefüllt\
@@ -937,11 +937,11 @@ BattleHint:
     \ haben wie angreifen, verteidigen, positive oder negative Effekte zufügen oder\
     \ Zauberkarten entfesseln."
   Intro: "Willkommen in der Exposition der Mondhauptstadt! Gib dein Bestes, um den\
-    \ verlorenen Zweig der Legende zu finden!\nFalls du bereits andere Deckbuilding-Spiele\
-    \ gespielt hast, kannst du |Kurzhinweise| auswählen, damit nur Hinweise angezeigt\
-    \ werden, die für die einzigartigen Spielmechaniken relevant sind.\nAlle nachfolgenden\
-    \ Hinweise werden ebenfalls berücksichtigt. Du kannst die Hinweise jederzeit in\
-    \ den Einstellungen anpassen."
+    \ verlorenen Zweig der Legenden zu finden!\nFalls du mit Deckbuilding-Spielen\
+    \ vertraut bist, kannst du |Kurze Hinweise| auswählen, um nur Hinweise zu den\
+    \ einzigartigen Spielmechaniken zu erhalten.\nAlle nachfolgenden Hinweise werden\
+    \ ebenfalls berücksichtigt. Du kannst die Hinweise jederzeit in den Einstellungen\
+    \ anpassen."
 Debut:
   KaguyaChats:
   - Ich werde ebenfalls der Sache nachgehen.

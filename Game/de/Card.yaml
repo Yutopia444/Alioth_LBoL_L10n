@@ -201,8 +201,8 @@ UpgradePotion:
   Description: "Füge {Value2} |Instabiler Trank| deinem Ziehstapel hinzu.\nErhöhe\
     \ den verursachten Schaden durch |Instabiler Trank| um {Value1}."
   UpgradedDescription: "Füge {Value2} |Instabiler Trank| deinem Ziehstapel hinzu.\n\
-    Erhöhe den verursachten Schaden durch |Instabiler Trank| um {Value1}.\nAm Ende\
-    \ deines Zuges erhöhe den Schaden aller Exemplare von |Instabiler Trank| in deinem\
+    Erhöhe den verursachten Schaden durch |Instabiler Trank| um {Value1}.\nErhöhe\
+    \ am Ende deines Zuges den Schaden aller Exemplare von |Instabiler Trank| in deinem\
     \ Zieh- und Ablagestapel um {Value1}."
 HuiyinMoreDraw:
   Description: Ziehe {Value1} zusätzliche Karte{Value1:plural one='' other='n'} zu
@@ -572,10 +572,9 @@ Nightmare:
   FlavorText: Ich kann mich an keine Details mehr erinnern, nachdem ich aufgewacht
     bin.
   Name: Albtraum
-  Description: "Wenn sich insgesamt {Value1} {SelfName}karte{Value1:plural one=''\
-    \ other='n'} im Ziehstapel, Ablagestapel oder in deiner Hand befinden, sende sie\
-    \ ins |Exil| und aktiviere folgenden Effekt: {PlayerName} verliert das Spiel.\n\
-    Anzahl der Albträume: {NightmareCount}."
+  Description: "Wenn sich insgesamt {Value1} {SelfName} im Zieh-, Ablagestapel oder\
+    \ auf deiner Hand befinden, sende sie ins |Exil| und aktiviere folgenden Effekt:\
+    \ {PlayerName} verliert das Spiel.\nAnzahl der Albträume: {NightmareCount}."
   NonbattleDescription: "Wenn sich insgesamt {Value1} {SelfName}karte{Value1:plural\
     \ one='' other='n'} im Ziehstapel, Ablagestapel oder in deiner Hand befinden,\
     \ sende sie ins |Exil| und aktiviere folgenden Effekt: {PlayerName} verliert das\
@@ -898,7 +897,7 @@ DoubleDajiejie:
   Name: Große Doppelbarriere
 MingzhuAntou:
   Description: "Verursache an allen Feinden {Damage} Schaden.\nWähle 1 von {Value1}\
-    \ |Regenbogenjade-Yin-Yang-Kugeln| und füge sie deiner Hand hinzu.\nFür jede |Yin-Yang-Kugel|\
+    \ |Yin-Yang-Regenbogenkugeln| und füge sie deiner Hand hinzu.\nFür jede |Yin-Yang-Kugel|\
     \ auf dem |Schlachtfeld| kostet {SelfName} {Mana} weniger."
   Name: Geheime Kugeln
   FlavorText: Jedes Mal, wenn du eine Kugel wirfst, besteht die Gefahr auf "Level
@@ -1299,10 +1298,11 @@ PrismriverBlack:
 YinyangQueen:
   Name: Misumaru, Talentierte Handwerkerin
   Description: '{FriendP}Erhalte {Value2} |Block| und |Barriere|.'
-  ExtraDescription1: '{FriendA}Füge {Value1} zufällige |Regenbogenjade Yin-Yang-Kugel|
+  ExtraDescription1: '{FriendA}Füge {Value1} zufällige |Yin-Yang-Regenbogenkugel{Value1:plural
+    one='''' other=''n''}| deiner Hand hinzu.'
+  ExtraDescription3: '{FriendU}Bis zum Ende des Kampfes werden die Effekte aller |Yin-Yang-Kugeln|
+    verdoppelt. Füge {Value1} |Yin-Yang-Regenbogenkugel{Value1:plural one='''' other=''n''}|
     deiner Hand hinzu.'
-  ExtraDescription3: '{FriendU}Bis zum Ende des Kampfes werden die Effekte von |Yin-Yang-Kugel|
-    verdoppelt. Füge {Value1} |Regenbogenjade Yin-Yang-Kugel| deiner Hand hinzu.'
 XiaoemoBook:
   Name: Teuflischer Kodex
   Description: "Sende eine Karte aus deiner Hand ins|Exil|.\nZiehe {Value1:plural\
@@ -3579,8 +3579,8 @@ SacrificeDoll:
     \ wiederholt werden."
 AttackX:
   Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nFalls das Ziel besiegt\
-    \ wird, bevor alle Wiederholungen des Angriffs durchgeführt worden sind, wird\
-    \ der Angriff an einem zufälligen Ziel fortgesetzt."
+    \ wird, werden die übrigen Wiederholungen des Angriffs an einem zufälligen Ziel\
+    \ fortgesetzt."
   Name: Angriff nach Besiegen des Ziels fortsetzen
 DeployPenglai:
   Name: Bunraku des Mädchens
