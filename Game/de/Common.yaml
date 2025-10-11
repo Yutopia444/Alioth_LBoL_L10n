@@ -69,8 +69,8 @@ Explain:
   Title: Hinweis
   RemiliaMeet: "1. Ersetze die Karten mit den gleichen Kosten.\n2. Die Verbesserung\
     \ der Karte bleibt beim Ersetzen erhalten."
-  PowerDescription: "Die Verwendung einer Zauberkarte verbraucht eine ganze Ladung.\n\
-    |d:(Wird im oberen linken Eck des Bildschirms angezeigt.)|"
+  PowerDescription: "Die Verwendung einer Zauberkarte verbraucht eine volle Ladung.\n\
+    |d:(Wird im oberen linken Eck des Bildschirms angezeigt)|"
   ShinmyoumaruForge: "1. Angriffs- und Abwehrkarten werden durch Karten des gleichen\
     \ Kartentyps ersetzt.\n2. Die Verbesserung der Karte bleibt beim Ersetzen erhalten."
   RollCard: "|Mögliche Karten durch Kartenbelohnungen|\n\nDu kannst gewisse Karten\
@@ -223,7 +223,7 @@ Setting:
     UseUs: Zauberkarte Benutzen
     SkipDialog: Dialog Beschleunigen (Halten)
     RebindMessage: Drücke eine Taste für "{0}", drücke ESC zum Abbrechen.
-    ToggleMinimize: Temporär die Benutzeroberfläche ausblenden
+    ToggleMinimize: Benutzeroberfläche Temporär Ausblenden
   Key: Steuerung
   ResetDefault: Standard
   FullScreen: Vollbildschirm
@@ -244,7 +244,7 @@ Setting:
   DontWarn: Nicht Warnen
   Enable: Aktivieren
   Main: Allgemein
-  ShowCardOrder: Kartenreihenfolge Anzeigen
+  ShowCardOrder: Kartenreihenfolge anzeigen
   ShowReload: Neustartzähler Anzeigen
   HintLevel: Hinweise
   ResetHint: <size=85%>Hinweise Zurücksetzen
@@ -269,10 +269,10 @@ Setting:
     \ betroffen."
   NonVsync: '{0}FPS'
   NoLimit: Unbegrenzt
-  TooltipSize: Infofenster Schriftgröße
-  TooltipSizeDescription: "Anpassung der Schriftgröße in Infofenstern für Karten,\
-    \ Ausstellungsstücke, Angriffsintentionen, usw.\nDie Standardgröße ist \"Klein\"\
-    . Es wird empfohlen auf \"Groß\" umzustellen, wenn auf einer geringen Auflösung\
+  TooltipSize: Infofenster-Schriftgröße
+  TooltipSizeDescription: "Anpassung der Schriftgröße in den Infofenstern für Karten,\
+    \ Ausstellungsstücke, Angriffsintentionen, usw.\nDie Standardgröße ist |Klein|.\
+    \ Es wird empfohlen auf |Groß| umzustellen, wenn auf einer geringen Auflösung\
     \ gespielt wird."
   FrameRate: Framerate
   Keyword: Schlüsselwörter
@@ -288,24 +288,25 @@ Setting:
   Monitor: Bildschirm
   Shake: Kamerawackeln
   SingleEnemyAutoSelectDescription: Bestimmt, ob Karten ohne die Auswahl eines Ziels
-    ausgespielt werden können, falls nur noch ein Feind anwesend ist.
+    ausgespielt werden können, falls sich nur ein Feind auf dem Schlachtfeld befindet.
   KeywordDescription: "Wird diese Einstellung auf |Kurz| gestellt, werden Beschreibungen\
     \ für häufig vorkommende Schlüsselwörter nicht mehr eingeblendet.\n|r:Nur für\
-    \ erfahrene Spieler empfohlen.|\n|d:(Häufig vorkommende Schlüsselwörter sind ||Feuerkraft||d:,|\
-    \ |Geist||d:,| |Block||d:,| |Barriere||d:,| |Ausweichen||d:,| |Präzise||d:,| |Philosophen-Mana||d:,|\
-    \ |Verbesserung||d:,| |Talente| |d:und| |Hybridkosten||d:.)|"
+    \ erfahrene Spieler empfohlen.|\n|d:(Häufig vorkommende Schlüsselwörter sind|\
+    \ |Feuerkraft||d:,| |Geist||d:,| |Block||d:,| |Barriere||d:,| |Ausweichen||d:,|\
+    \ |Präzise||d:,| |Philosophen-Mana||d:,| |Verbesserung||d:,| |Talente| |d:und|\
+    \ |Hybridkosten||d:.)|"
   RightClickCancelDescription: "Bestimmt, ob die rechte Maustaste zum Abbrechen verwendet\
-    \ werden soll.\nBricht Aktionen ab, schließt die meisten Fenster der Bedienoberfläche."
+    \ werden soll.\nBricht Aktionen ab und schließt die meisten Fenster der Bedienoberfläche."
   TooltipWide: Breite Infofenster
   ShakeDescription: Aktiviert Kamerawackeln durch Schaden in Kämpfen.
-  IllustratorDescription: Bestimmt, ob der Name des Künstlers der Illustration in
+  IllustratorDescription: Bestimmt, ob der Name des Künstlers der Illustration auf
     der Karte angezeigt werden soll.
   TooltipWideDescription: "Falls ein Infofenster eine gewisse Größe erreichen würde,\
     \ wird es stattdessen breiter.\nDurch diese Option werden Infofenster immer zuerst\
     \ breiter.\nAbhängig von der Sprache kann dadurch das Problem behoben werden,\
     \ dass die Überschrift des Infofensters zwei Zeilen benötigt."
   LoopOrderDescription: "Wechselt die Darstellung von Farbpaaren nach dem Schema von\
-    \ Magic: The Gathering.\nDie Darstellung von Weiß/Rot, Weiß/Grün und Blau/Grün\
+    \ 'Magic: The Gathering'.\nDie Darstellung von Weiß/Rot, Weiß/Grün und Blau/Grün\
     \ wird dadurch gespiegelt. (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
     \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
     HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
@@ -314,8 +315,8 @@ Setting:
   AnimatingEnvironmentDescriptionLocked: "Aktiviert Hintergrundanimationen bei Kämpfen\
     \ oder in Spalten.\n(Gesperrt, kann nur im Hauptmenü geändert werden)"
   ShowShortcut: Schelltaste für Hand anzeigen
-  ShowShortcutDescription: Bestimmt, ob die Schnelltaste über der Karte auf der Hand
-    angezeigt werden soll.
+  ShowShortcutDescription: Bestimmt, ob die Schnelltasten über den jeweiligen Handkarten
+    angezeigt werden sollen.
   ShowCardOrderDescription: "Bestimmt, ob die Reihenfolge der Karten in den Stapeln\
     \ numerisch angezeigt werden sollen.\n\nBetrifft nur die Stapel, die in der tatsächlichen\
     \ Reihenfolge angezeigt werden können (Bibliothek, Ablagestapel und Exil).\nBeim\
@@ -331,8 +332,8 @@ Setting:
   XCostWarningDescription: Bestimmt, ob beim Ausspielen einer Karte mit X Kosten eine
     Warnung angezeigt werden soll, falls kein Mana ausgewählt wurde.
   QuickPlayDescription: "Empfohlen für erfahrene Spieler.\nKarten werden schneller\
-    \ ausgespielt, falls sie kein Ziel benötigen oder \"Automatische Einzelauswahl\"\
-    \ aktiv ist und solange sich nur ein Feind auf dem Schlachtfeld befindet."
+    \ ausgespielt, sofern sie kein Ziel benötigen oder \"Automatische Einzelauswahl\"\
+    \ aktiv ist und sich nur ein Feind auf dem Schlachtfeld befindet."
 Chat:
   Luna: Alles klar!
   YaTiangou1: Zu langsam!
@@ -352,17 +353,17 @@ Chat:
     ist!
   DoremyMaster: Du bist nun an den Grenzen meiner Träume.
   Clownpiece3: It's lunatic time!
-  DoremySleepLast: Ich kann nicht mehr essen~
-  SijiTurn3: Mich als klein bezeichnen, Strafe wird um 2 Jahre verlängert.
+  DoremySleepLast: Ich kann nicht noch mehr essen~
+  SijiTurn3: Mich als klein bezeichnen. Deine Strafe wird um zwei Jahre verlängert.
   DoremySleep: Zzzzz~
   Clownpiece1: Feen! Mehr Danmaku! Mehr!
   LongPlace: Dein Zuhause
   LongPaperPlayer: "???\nWer liest so einen Müll?"
-  DoremyKill: Du musst nie mehr aufstehen~
+  DoremyKill: Du musst nie mehr wieder aufstehen~
   SickGirl: '*Hust* … *Hust* …'
   Sunny1: Heute zeigen wir {0:cs}, wie stark wir wirklich sind!
-  SijiTurn1: Deine Ausrede ist unzulässig, Strafe wird um ein Jahr verlängert.
-  SijiTurn2: Missachtung des Gerichts, Strafe wird um ein Jahr verlängert.
+  SijiTurn1: Unzulässige Ausreden. Deine Strafe wird um ein Jahr verlängert.
+  SijiTurn2: Missachtung des Gerichts. Deine Strafe wird um ein Jahr verlängert.
   LongEscape1: Oh nein, ich wurde besiegt.
   Aya1: Die Wahrheit hinter den nächtlichen Unruhen in Eientei, präsentiert euch die
     Bunbunmaru-Zeitung.
@@ -372,8 +373,8 @@ Chat:
     ich es dir.
   Rin2: Aua! Du bist wirklich gemein, Schwesterherz~
   YuyukoMooncake: Ich habe wirklich Hunger auf etwas {0} …
-  RinKoishi1: '{0} ist so süß! Ich möchte sie mit mir nach Hause nehmen!'
-  YoumuMooncake: Gib mir mein {0} zurück!
+  RinKoishi1: '{0} ist so süß! Ich möchte sie mit nach Hause nehmen!'
+  YoumuMooncake: Mein {0}, gib ihn mir zurück!
   Kokoro1: Ich habe das Gefühl, dass immer mehr meiner Masken verloren gehen.
   WaterGirl: Du wirst mein Leid zu spüren bekommen!
   Purifier: Baymax
@@ -384,12 +385,12 @@ Chat:
   HardworkRabbit2: Ich muss einen Zahn zulegen!
   HetongKailang1: Fertig, so gut wie neu!
   Terminator2: "SCHADEN ERLITTEN …\nREPARATUR EINLEITEN …"
-  Rin1: Dein {0} ist wirklich niedlich Schwesterherz! Ich möchte das wirklich gern
+  Rin1: Dein {0} ist wirklich niedlich Schwesterherz! Ich möchte das wirklich gerne
     haben!
   Nitori2: Ich schätze an den defensiven Fähigkeiten muss noch gearbeitet werden.
   Youmu1: En garde!
-  Nitori1: Ich habe dafür eine Menge Zeit und Arbeit reingesteckt.
-  SijiMystia: Essen ohne zu bezahlen, Strafe wird um ein Jahr verlängert.
+  Nitori1: Ich habe darin eine Menge Zeit und Arbeit reingesteckt.
+  SijiMystia: Essen, ohne zu bezahlen. Deine Strafe wird um ein Jahr verlängert.
   Fox2: Das Beste hast du noch gar nicht gesehen, Liebes~
   HetongYinchen1: Oh nein, du bist kaputtgegangen {0}.
   Terminator3: "KRITISCHEN SCHADEN ERLITTEN …\nREPARATUR EINLEITEN …"
@@ -400,11 +401,11 @@ Chat:
   StarSpell: Ich kann jede deiner Bewegungen sehen~
   Clownpiece2: Absorbiere die Juwelen des Lichts!
   YoumuTuanzi: Wenn du mehr Hanami-Dango haben möchtest, dann kehr bitte um!
-  Siji1: Stehlen von Ausstellungsstücken unter dem Vorwand, einen Vorfall zu lösen.
+  Siji1: Das Stehlen von Ausstellungsstücken unter dem Vorwand, einen Vorfall zu lösen.
   LongPaper: Sonderausgabe für {0}! Das musst du gelesen haben!
   HardworkRabbit1: Erdenbewohner gesichtet!
   Aya2: Die verärgerte Verdächtige versucht das Interview zu stören!
-  LunaSpell: Möge das Danmaku still stehen.
+  LunaSpell: Möge das Danmaku stillstehen.
   FraudRabbitNoMoney: Nicht einmal eine Münze übrig? Wie langweilig.
   FraudRabbitStart2: Ich habe die neueste Mondtechnologie, für einen kleinen Betrag
     gehört sie dir.
@@ -501,10 +502,11 @@ Museum:
   Unlock: Erhalten
   NotUnlock: Nicht Erhalten
   AchievementCount: Erhaltene Errungenschaften
-  ManaFilterHint: "Um Karten mit mehrfarbigen Manakosten zu filtern, klicke auf die\
-    \ gewünschten Farben und <sprite=\"ManaSprite\" name=\"P\">.\nBeispiel: Um Karten\
-    \ mit blauen/weißen Kosten anzuzeigen, klicke auf <sprite=\"ManaSprite\" name=\"\
-    W\">, <sprite=\"ManaSprite\" name=\"U\">, <sprite=\"ManaSprite\" name=\"P\">."
+  ManaFilterHint: "Um nach Karten mit mehrfarbigen Manakosten zu suchen, klicke auf\
+    \ die gewünschten Farben und <sprite=\"ManaSprite\" name=\"P\">.\nBeispiel: Um\
+    \ Karten mit blauen/weißen Kosten anzuzeigen, klicke auf <sprite=\"ManaSprite\"\
+    \ name=\"W\">, <sprite=\"ManaSprite\" name=\"U\">, <sprite=\"ManaSprite\" name=\"\
+    P\">."
   CardNotReady: "Diese Karte ist noch unvollständig.\nBitte geduldige dich bis zur\
     \ Veröffentlichung weiterer Updates."
   CardStyleFilter: Kartenstil
@@ -518,10 +520,10 @@ Lifetime:
   Perfect: Perfekt Gelöste Vorfälle
   Time: Spielzeit
   Game: Durchläufe Insgesamt
-  TotalBp: Gesamtpunktzahl<sprite="Point" name="Point">
+  TotalBp: Gesamtpunktzahl <sprite="Point" name="Point">
   Puzzle: Anfragen
   OldData: Alte Versionsdaten <sprite="TextIcon" name="Info">
-  HighestBp: Höchstpunktzahl<sprite="Point" name="Point">
+  HighestBp: Höchstpunktzahl <sprite="Point" name="Point">
   OldDataHint: Vor der Version 1.3.15 wurde nur die Gesamtstatistik aller Charaktere
     erfasst, nicht aber die individuellen Daten der Charaktere.
   NoDataHint: Vor der Version 1.3.15 wurden diese Daten nicht aufgezeichnet.
@@ -734,9 +736,9 @@ System:
   ResumeGame: Spiel Fortsetzen
   SystemMenu: Pause & Einstellungen
   NoJadeBox:
-    Description: Nichts besonderes.
-    Title: Kein Jadebox-Effekt
-  EA: Early Access - Repräsentiert nicht die finale Qualität.
+    Description: Nichts Besonderes.
+    Title: Kein Jadebox-Modifikator
+  EA: Early Access - Repräsentiert nicht die finale Qualität des Spiels.
   ReenterStation: Level Neustarten
   DoremyLevel: Traumstufe {0}
 History:
@@ -756,7 +758,7 @@ ErrorChat:
   UsUsedThisTurn: Meine Zauberkarte habe ich bereits in diesem Zug verwendet.
   CardCostChanged: Die Kosten dieser Karte haben sich geändert.
   LowPower: Ich habe nicht genug Energie.
-  CardNotUsable: Karte kann nicht gespielt werden.
+  CardNotUsable: Diese Karte kann nicht gespielt werden.
   CardDrunk: Ich bin nicht betrunken!
   Tired: Ich bin so erschöpft …
   CardHuiye: Zeit abgelaufen.
@@ -767,7 +769,7 @@ ErrorChat:
   UsUsedThisBattle: Meine Zauberkarte habe ich bereits in diesem Kampf verwendet.
   LowLoyalty: Ich habe nicht genügend Einigkeit mit diesem Partner.
   TargetAlreadyDead: Der Feind wurde bereits besiegt.
-  CardNotInHand: Diese Karte befindet sich nicht auf der Hand.
+  CardNotInHand: Diese Karte befindet sich nicht auf deiner Hand.
   CardCharm: Ich bin verwirrt.
   NoAbilityCardInHand: Es befindet sich keine Talentkarte auf deiner Hand.
   NoCardByMama: Es existiert keine Karte mit diesen Manakosten.
@@ -792,10 +794,10 @@ GameResult:
   ClickToOpen: Klicken, um zu öffnen
   NormalEnd: Aber der Hourai-Juwelenzweig wird weiterhin vermisst.
   ReturnHint: Klicken, um zum Hauptmenü zurückzukehren
-  Unlock: Neuer Gegenstand freigeschaltet
+  Unlock: Neue Gegenstände wurden freigeschaltet
   TrueEnd: Vorfall perfekt gelöst
   FailReason: 'Grund der Niederlage:'
-  TrueEndFail: "Der wahre Übeltäter konnte gefunden werden, aber der Hourai-Juwelenzweig\
+  TrueEndFail: "Der wahre Übeltäter wurde zwar gefunden, aber der Hourai-Juwelenzweig\
     \ konnte nicht zurückgebracht werden.\n(Dies zählt als eine normale Lösung des\
     \ Vorfalls)"
   Deprecated: ??? (Verfallen)
@@ -841,7 +843,7 @@ Cards:
     Gold\" name=\"gold\">"
   UpgradeDialog: Möchtest du diese Karte verbessern?
   Remove: Entferne {0} Karten aus der Bibliothek.
-  UnUpgradable: Karte kann nicht verbessert werden
+  UnUpgradable: Diese Karte kann nicht verbessert werden
   TransformDialog: Möchtest du diese Karte verwandeln?
   RemoveDialog: Möchtest du diese Karte entfernen?
   Size:  {0:plural one='% Karte' other='% Karten'}
@@ -870,7 +872,7 @@ TopInfo:
   Original: 'Original:'
   Artist: 'Musiker:'
 SelectCard:
-  DreamCardsToHand: 'Traum: Füge 1 Karte deiner Hand hinzu'
+  DreamCardsToHand: 'Traum: Füge bis zu eine Karte deiner Hand hinzu'
 MessageDialog:
   GameRunSaveDiscarded: Durch das letzte Versionsupdate ist dein aktiver Durchlauf
     verfallen.
@@ -944,14 +946,14 @@ BattleHint:
     \ anpassen."
 Debut:
   KaguyaChats:
-  - Ich werde ebenfalls der Sache nachgehen.
+  - Ich werde der Sache ebenfalls nachgehen.
   - Ich überlasse das Haus in deiner Obhut, Eirin.
   - Vergiss nicht, bei Sonnenaufgang wieder hier zu sein~
   EirinChats:
   - Hör auf hier herumzutrödeln, {0}.
   - Die Wirkung der Medizin wird nachlassen, wenn du nicht bald aufbrichst~
 ManaSelect:
-  Title: Wähle einen Manatyp
+  Title: Wähle einen Manatyp aus
 Mod:
   PlayingMod: Mit Mods spielen
   ModList: Liste aller Mods
