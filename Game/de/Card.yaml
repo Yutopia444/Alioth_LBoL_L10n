@@ -308,7 +308,7 @@ IceBlock:
   Name: Eisblock
   Description: "{PlayerName} kann in diesem Zug kein Leben verlieren.\nVerliere all\
     \ dein |Block|, |Barriere| und |Ausweichen|.\nAlle Karten auf deiner Hand erhalten\
-    \ |Temporäres Beibehalten|. Beende den Zug von {PlayerName}."
+    \ |temporäres Beibehalten|. Beende den Zug von {PlayerName}."
   FlavorText: Setze im Anschluss "Höhere Unsichtbarkeit" ein, um aus dem Kampf zu
     fliehen.
 IceMatrix:
@@ -803,8 +803,8 @@ AyaNewsReimuSp:
 KoishiDiscard:
   Name: Unbewusste Amnesie
   Description: '|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte ab.'
-  DetailText: Falls ein anderes Exemplar von {SelfName} durch diesen Effekt abgeworfen
-    wird, sende es stattdessen ins |Exil|.
+  DetailText: Sende {SelfName} ins |Exil|, falls ein anderes Exemplar von {SelfName}
+    durch diesen Effekt abgeworfen wurde.
   ExtraDescription1: "|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte ab.\n\
     Abgeworfen: {CardName}"
 KoishiDrawTop:
@@ -836,8 +836,8 @@ KoishiPhone:
   FlavorText: Dir ist es nicht gestattet diesen Anruf zu verpassen.
   Name: Erschreckend süßer Anruf
   Description: "Jedes Mal, wenn eine Angriffskarte gespielt wird, führe einen |Folgeangriff|\
-    \ aus.\nFalls sich keine |Folgeaktionskarten| in deinem Ziehstapel befinden, wird\
-    \ |Klingelndes Telefon| als |Folgeaktion| verwendet."
+    \ aus.\n|Klingelndes Telefon| wird als |Folgeaktion| verwendet, falls sich keine\
+    \ |Folgeaktionen| mehr in deinem Ziehstapel befinden."
 Fengmozhen4:
   Description: Verursache an allen Feinden {Damage} Schaden.
   UpgradedDescription: Verursache an allen Feinden {Value1} Mal {Damage} Schaden.
@@ -1143,8 +1143,8 @@ GatherFairy:
   FlavorText: '"Ihr beide seid meine Flügel!"'
 SanaeMiracle:
   Name: Stargast des Tages
-  Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\nFalls\
-    \ dein Ziehstapel leer ist, kostet {SelfName} {Mana}."
+  Description: "Verursache an allen Feinden {Value1} Mal {Damage} Schaden.\n{SelfName}\
+    \ kostet {Mana}, falls dein Ziehstapel leer ist."
   FlavorText: Nach 1000 Jahren entstand dadurch der Krebsnebel.
 Anatta:
   Name: Anatta
@@ -1165,8 +1165,8 @@ FairyTeam:
   Name: Großer Feenkrieg
   Description: "Wähle eine beliebige Anzahl an |Partner| auf deiner Hand aus und sende\
     \ sie ins |Exil|. Erhalte Mana abhängig ihrer Manakosten.\nVerursache an einem\
-    \ zufälligen Feind {Damage} Schaden.\nVerursache für jede ins |Exil| gesendete\
-    \ Karte ein weiteres Mal Schaden."
+    \ zufälligen Feind {Damage} Schaden.\nVerursache den Schaden für jede ins |Exil|\
+    \ gesendete Karte ein weiteres Mal."
 LarvaFriend:
   Description: '{FriendP}Füge einem zufälligen Feind {Value1} |Gift| zu.'
   FlavorText: Vergiss nicht, dir die Hände zu waschen, nachdem du ihre Hand geschüttelt
@@ -1257,7 +1257,7 @@ Chunguang:
 LeiguAttack:
   Name: Taiko-Trommel
   Description: "Verursache an allen Feinden {Damage} Schaden.\nVerursache an Feinden\
-    \ mit |Barriere| oder |Block| den Schaden ein weiteres Mal Schaden."
+    \ mit |Barriere| oder |Block| den Schaden ein weiteres Mal."
   FlavorText: Ich hoffe, dass deine Nachbarn das nicht ausstehen können.
 LilyoftheValley:
   Name: Maiglöckchen
@@ -1582,13 +1582,13 @@ HuiyinRemove:
 YukariSwarm:
   FlavorText: Tor von Gapylon!
   Name: Nest der Leuchtkäfer
-  Description: "Verursache an allen Feinden {Damage} Schaden.\nFalls sich mindestens\
-    \ {Value1} Karte{Value1:plural one='' other='n'} im |Exil| befinden, verursache\
-    \ den Schaden ein weiteres Mal Schaden."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\nVerursache den Schaden\
+    \ ein weiteres Mal, falls sich mindestens {Value1:plural one='% Karte' other='%\
+    \ Karten'} im |Exil| befinden."
   UpgradedDescription: "Sende bis zu {Value2} Karte{Value2:plural one='' other='n'}\
     \ von deiner Hand ins |Exil|.\nVerursache an allen Feinden {Damage} Schaden.\n\
-    Falls sich mindestens {Value1} Karte{Value1:plural one='' other='n'} im |Exil|\
-    \ befinden, verursache den Schaden ein weiteres Mal Schaden."
+    Verursache den Schaden ein weiteres Mal, falls sich mindestens {Value1:plural\
+    \ one='% Karte' other='% Karten'} im |Exil| befinden."
 NitoriUnderWater:
   Name: Wasserdecke
   Description: "Erhalte {Block} |Block|.\nZiehe {Value1:plural one='% Karte' other='%\
@@ -1654,8 +1654,8 @@ ShannvAttack:
   FlavorText: Austretendes Gas aus dem Heck kann in geschlossenen Räumen tödlich sein.
 SatoriAttack:
   Name: Blühendes Herz
-  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Instinkt|: Falls ein\
-    \ Feind angreifen wird, erhalte {Block} |Block|."
+  Description: "Verursache an allen Feinden {Damage} Schaden.\n|Instinkt|: Erhalte\
+    \ {Block} |Block|, falls ein Feind angreifen wird."
   FlavorText: Diese Handbewegung ähnelt sehr stark einem "Herzzeichen", welches in
     der Außenwelt sehr beliebt ist.
 BailianNingshen:
@@ -1703,9 +1703,9 @@ ShopSearch:
   FlavorText: Diesen Gegenstand zu konstruieren schaltet die Landkarte frei.
 SijiCard:
   Name: Urteil der Sünden
-  Description: Wähle eine Karte auf deiner Hand aus, sie erhält |Temporäres Beibehalten|
-    und kostet bis zum Ende des Kampfes {Mana} weniger. Falls es eine Statuskarte
-    oder ein |Unglück| ist, sende sie stattdessen ins |Exil|.
+  Description: Wähle eine Karte auf deiner Hand aus, sie erhält |temporäres Beibehalten|
+    und kostet bis zum Ende des Kampfes {Mana} weniger. Sende sie stattdessen ins
+    |Exil|, falls es eine Statuskarte oder ein |Unglück| ist.
   FlavorText: Ein wichtiger Aspekt für dieses Urteil ist, ob du die Zeche geprellt
     hast oder nicht.
 HinaAttack:
@@ -1739,8 +1739,8 @@ HuiyeMarblePhantasm:
   FlavorText: '"Prinzessin … Bitte verwendet eure Fähigkeiten nicht für solche Dinge
     …"'
   Name: Phantasma Verwirklichung
-  DetailText: Falls es für die gewählten Manakosten nicht genügend exklusive Karten
-    gibt, werden stattdessen Karten mit geringeren Manakosten erschaffen.
+  DetailText: Es werden Karten mit geringeren Manakosten erschaffen, falls für die
+    gewählten Manakosten nicht genügend exklusive Karten existieren.
 FakeMoon:
   DetailText: Du kannst keine |Kopien| für diesen Effekt auswählen.
   FlavorText: Viel schöner als der echte Mond.
@@ -1748,8 +1748,8 @@ FakeMoon:
   Description: "Wähle eine Karte auf deiner Hand aus, füge {Value1} |Kopie{Value1:plural\
     \ one='' other='n'}| deiner Hand hinzu.\nSie {Value1:plural one='hat' other='haben'}\
     \ |Exil| und |Ätherisch| und |{Value1:plural one='kostet' other='kosten'} temporär|\
-    \ {Mana}.\nFalls das Ziel eine |Talentkarte| ist oder |Exil| hat, wird sie zu\
-    \ einer |Kopie|."
+    \ {Mana}.\nDas Ziel wird zu einer |Kopie|, falls es eine |Talentkarte| ist oder\
+    \ |Exil| hat."
 ShenziUpgradeAll:
   Name: Apotheose
   Description: '|Verbessere| bis zum Ende des Kampfes alle Karten.'
@@ -1861,9 +1861,9 @@ NewsTidbit:
     Reimu oft in Eientei zu Besuch, zudem werden immer mehr Fotos öffentlich, auf
     denen intime Handlungen mit Kaguya zu sehen sind. (Kakashi Presse-Agentur)
 EmpCard:
-  Description: "Verursache {Damage} Angriffsschaden.\nFalls das Ziel eine |Drohne|\
-    \ ist, kann es für {Value1:plural one='% Zug' other='% Züge'} keine Aktionen durchführen.\n\
-    |Limitiert【{DeckCounter}】|"
+  Description: "Verursache {Damage} Angriffsschaden.\nDas Ziel kann für {Value1:plural\
+    \ one='% Zug' other='% Züge'} keine Aktionen durchführen, falls es eine |Drohne|\
+    \ ist.\n|Limitiert【{DeckCounter}】|"
   Name: Elektromagnetischer Störsender
 SanaeRice:
   Name: Üppiger Reisregen
@@ -1872,11 +1872,11 @@ SanaeRice:
 LifeGame:
   Name: Spiel des Lebens
   UpgradedDescription: "Die benachbarten Karten von {SelfName} werden |verbessert|\
-    \ und |kosten temporär| {Mana}.\nFalls es Statuskarten oder |Unglücke| sind, sende\
-    \ sie stattdessen ins |Exil|."
+    \ und |kosten temporär| {Mana}.\nSende sie stattdessen ins |Exil|, falls es Statuskarten\
+    \ oder |Unglücke| sind."
   Description: "Karten, die sich auf der Hand neben {SelfName} befinden, |kosten temporär|\
-    \ {Mana}.\nFalls es Statuskarten oder |Unglücke| sind, sende sie stattdessen ins\
-    \ |Exil|."
+    \ {Mana}.\nSende sie stattdessen ins |Exil|, falls es Statuskarten oder |Unglücke|\
+    \ sind."
   DetailText: Die Karte ganz links auf der Hand wird als Ziel gewählt, falls {SelfName}
     als |Folgeaktion| gespielt wird.
 ZoufangSnake:
@@ -1929,8 +1929,8 @@ VampireShoot2:
     Preis, den künftige Vampire zahlen müssen, lautet Zahnfleischentzündung.'
 RabbitFoot:
   Name: Glückbringende Hasenpfote
-  Description: '|Am Ende des Kampfes|: Falls {SelfName} nicht ins |Exil| gesendet
-    wurde, erhalte {Value1} <sprite="Point" name="Gold">.'
+  Description: '|Am Ende des Kampfes|: Erhalte {Value1} <sprite="Point" name="Gold">,
+    falls {SelfName} nicht ins |Exil| gesendet wurde.'
   FlavorText: Manch einer würde denken, das Finden einer Hasenpfote bringe Glück.
     Tatsächlich muss man bereits Glück haben, um eine Hasenpfote erst finden zu können.
 MoonTipsAttack:
@@ -1963,9 +1963,9 @@ NewsPositive:
     Aussagen zufolge sei das Schreinmädchen Reimu Hakurei …'
   Name: Gute Nachrichten
 LongArm:
-  Description: "Verursache {Damage} Schaden.\nFalls sich mindestens {Value1} Karte{Value1:plural\
-    \ one='' other='n'} auf deiner Hand befinde{Value1:plural one='t' other='n'},\
-    \ erhalte {Mana}."
+  Description: "Verursache {Damage} Schaden.\nErhalte {Mana}, falls sich mindestens\
+    \ {Value1:plural one='% Karte' other='% Karten'} auf deiner Hand befinde{Value1:plural\
+    \ one='t' other='n'}."
   Name: Verlängerter Arm
 FangxiangAttack:
   Description: "Verursache an einem Feind mit |Gift| {Value2} Mal {Damage} Schaden.\n\
@@ -2014,8 +2014,8 @@ Tether:
   FlavorText: Verlasse dich auf deine Freunde, wenn du auf Reisen gehst.
 IceSaber:
   Description: "Verursache {Value1} Mal {Damage} Schaden.\nFüge |Kälte| zu.\nWirf\
-    \ eine beliebige Anzahl an blauen Karten ab. Verursache für jede abgeworfene Karte\
-    \ ein weiteres Mal Schaden."
+    \ eine beliebige Anzahl an blauen Karten ab. Verursache den Schaden für jede abgeworfene\
+    \ Karte ein weiteres Mal."
   Name: Klingenförmiges Eis
   FlavorText: Es gab einst ein berühmtes Schwert namens Frostmourne.
 LeidiFriend:
@@ -2104,9 +2104,8 @@ ToAllFollower:
 FakeBullet:
   Name: Imaginäres Danmaku
   Description: "Führe {Value1} |Folgeangriff{Value1:plural one='' other='e'}| aus.\n\
-    Falls sich nicht genügend |Folgeaktionskarten| in deinem Ziehstapel befinden,\
-    \ werden zufällige |Folgeaktionen| erschaffen, um die verbleibenden |Folgeangriffe|\
-    \ auszuführen."
+    Es werden zufällige |Folgeaktionen| erschaffen und ausgespielt, falls sich nicht\
+    \ genügend |Folgeaktionen| in deinem Ziehstapel befinden."
 TheFool:
   Name: 'Tarot: Der Narr'
   Description: "|Hellsicht| {Scry}.\nSpiele die oberste Karte in deinem Ziehstapel."
@@ -2274,12 +2273,12 @@ LunaFriend:
   Name: Luna, Stilles Mondlicht
   FlavorText: Untersuche im Verborgenen und ohne einen Laut von dir zu geben.
 PeaceEndTurn:
-  UpgradedDescription: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'}\
+  UpgradedDescription: "Wähle bis zu {Value1:plural one='% Karte' other='% Karten'}\
     \ auf deiner Hand aus oder füge {Value1:plural one='% Karte' other='% Karten'}\
     \ von deinem Ablagestapel deiner Hand hinzu. Sie {Value1:plural one='erhält' other='erhalten'}\
-    \ |Temporäres Beibehalten|.\nBetrete |Gelassenheit|.\nBeende den Zug von {PlayerName}."
+    \ |temporäres Beibehalten|.\nBetrete |Gelassenheit|.\nBeende den Zug von {PlayerName}."
   Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} auf deiner\
-    \ Hand aus. Sie {Value1:plural one='hat' other='haben'} |Temporäres Beibehalten|.\n\
+    \ Hand aus. Sie {Value1:plural one='erhält' other='erhalten'} |temporäres Beibehalten|.\n\
     Betrete |Gelassenheit|.\nBeende den Zug von {PlayerName}."
   Name: Moment der Erholung
 DuplicateFollower:
@@ -2744,7 +2743,7 @@ BlazingStar:
     \ {PlayerName} und erhalte einen Extrazug.\n|Zeitlimit| {Mana}."
 MeilingRain:
   Description: "Verursache an allen Feinden {AttackTimes} Mal {Damage} Schaden.\n\
-    |Synergie| {Mana}: Verursache an allen Feinden den Schaden ein weiteres Mal Schaden."
+    |Synergie| {Mana}: Verursache an allen Feinden den Schaden ein weiteres Mal."
   Name: Farbenfroher Regen
 ChargingToMana:
   Description: Verliere alle |Aufladungen|. Ziehe für jede verlorene |Aufladung| 1
@@ -2908,8 +2907,8 @@ Claustrophobia:
   Name: Klaustrophobie
 MultiFollower:
   Name: Tanz des Herzens
-  Description: "Verursache {Value1} Mal {Damage} Schaden.\nZu Beginn des Kampfes oder\
-    \ wenn der Ziehstapel neu gemischt wird, lege {SelfName} unten in deinen Ziehstapel."
+  Description: "Verursache {Value1} Mal {Damage} Schaden.\nLege zu Beginn des Kampfes\
+    \ oder wenn der Ziehstapel neu gemischt wird {SelfName} unten in deinen Ziehstapel."
 BaseFollower:
   Name: Instinktive Liebe
   Description: "Verursache {Damage} Schaden.\nLege zu Beginn des Kampfes oder wenn\
@@ -2936,9 +2935,9 @@ BaitianCard:
   FlavorText: Nachdem sie auf elektronische Datenträger umgestiegen ist, hat Hieda
     no Akyuu nun noch mehr freie Zeit, um nachmittags Tee zu trinken.
 YijiuAttack:
-  Description: "Verursache {Damage} Schaden.\nFalls ein Feind durch {SelfName} besiegt\
-    \ wurde, sende {SelfName} ins |Exil| und erhalte |Makellos| für {Value1:plural\
-    \ one='% Zug' other='% Züge'}."
+  Description: "Verursache {Damage} Schaden.\nSende {SelfName} ins |Exil| und erhalte\
+    \ |Makellos| für {Value1:plural one='% Zug' other='% Züge'}, falls ein Feind durch\
+    \ {SelfName} besiegt wurde."
   Name: Donnerblitz des Drachengottes
 YukariFlyObject:
   FlavorText: Viel zu schnell für das bloße Auge.
@@ -2991,11 +2990,11 @@ XingMoney:
 HuiyinRetain:
   ExtraDescription1: "Füge bis zu {Value1:plural one='% Karte' other='% Karten'} von\
     \ deinem Ablagestapel deiner Hand hinzu. Sie {Value1:plural one='erhält' other='erhalten'}\
-    \ |Temporäres Beibehalten|.\nBeende den Zug von {PlayerName} und erhalte einen\
+    \ |temporäres Beibehalten|.\nBeende den Zug von {PlayerName} und erhalte einen\
     \ Extrazug.\n|d:Zeitlimit {Mana}.|"
   Description: "Füge bis zu {Value1:plural one='% Karte' other='% Karten'} von deinem\
     \ Ablagestapel deiner Hand hinzu. Sie {Value1:plural one='erhält' other='erhalten'}\
-    \ |Temporäres Beibehalten|.\nBeende den Zug von {PlayerName} und erhalte einen\
+    \ |temporäres Beibehalten|.\nBeende den Zug von {PlayerName} und erhalte einen\
     \ Extrazug.\n|Zeitlimit| {Mana}."
   Name: Brücke der Heimkehr
 LilyChun:
@@ -3225,9 +3224,9 @@ HuiyeTime:
   FlavorText: Für die Arbeit aufzustehen währt für eine Ewigkeit, sich schlafen zu
     legen hingegen nur einen Augenblick.
   Description: "Wähle bis zu {Value1} Karte{Value1:plural one='' other='n'} auf deiner\
-    \ Hand aus. Sie {Value1:plural one='erhält' other='erhalten'} |Temporäres Beibehalten|.\n\
+    \ Hand aus. Sie {Value1:plural one='erhält' other='erhalten'} |temporäres Beibehalten|.\n\
     Beende den Zug von {PlayerName} und erhalte einen Extrazug. In diesem Zug {Value1:plural\
-    \ one='kann' other='können'} nur {Value1} Karte{Value1:plural one='' other='n'}\
+    \ one='kann' other='können'} nur {Value1:plural one='% Karte' other='% Karten'}\
     \ gespielt werden."
 ChengDefense:
   Description: "Erhalte {Block} |Block|.\nErhalte zu Beginn deines nächsten Zuges\
@@ -3244,13 +3243,13 @@ TannvCard:
   Name: Den Spieß umdrehen
 HappyNewYear:
   Description: "Wähle 1 von 3 zufälligen Angriffs- oder Abwehrkarten aus und füge\
-    \ sie deiner Hand hinzu. \nFalls eine Angriffskarte gewählt wurde, erhalte {Value1}\
-    \ |Feuerkraft|. Erhalte ansonsten {Value1} |Geist|."
+    \ sie deiner Hand hinzu. \nErhalte {Value1} |Feuerkraft|, falls eine Angriffskarte\
+    \ gewählt wurde. Erhalte ansonsten {Value1} |Geist|."
   Name: Neujahrsbesuch
   FlavorText: (Ich bin mir nicht sicher, welche Bedeutung dieses Bild vermitteln soll.
     Kann mir da irgendjemand helfen?)
 XiaodingKill:
-  Description: Falls das Ziel maximal {Value1} Leben hat, besiege es sofort.
+  Description: Besiege das Ziel sofort, falls es maximal {Value1} Leben hat.
   Name: Ritual der Seelenerlösung
   FlavorText: Es gibt nichts, was die Mondhasen lieber läutern würden, als diese Karte.
 FutoLight:
@@ -3573,9 +3572,9 @@ SacrificeDoll:
     \ an allen Feinden {Damage} Schaden.\n|Bonus {KickerCost}|: Dieser Effekt kann\
     \ wiederholt werden."
 AttackX:
-  Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nFalls das Ziel besiegt\
-    \ wird, werden die übrigen Wiederholungen des Angriffs an einem zufälligen Ziel\
-    \ fortgesetzt."
+  Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nDie übrigen Wiederholungen\
+    \ des Angriffs werden an einem zufälligen Ziel fortgesetzt, falls das Ziel besiegt\
+    \ wird."
   Name: Angriff nach Besiegen des Ziels fortsetzen
 DeployPenglai:
   Name: Bunraku des Mädchens
