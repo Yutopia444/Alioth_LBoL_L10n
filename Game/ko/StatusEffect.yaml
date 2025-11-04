@@ -22,7 +22,7 @@ Cold:
     \ 경우 {StackMultiply}배의 체력을 잃습니다 ({StackDamage})."
 FrostArmor:
   Name: 얼음 갑옷
-  Brief: "|얼음 갑옷|을 얻을 시 그 만큼의 |방어|를 얻습니다.\n턴 시작 시 가진 얼음 갑옷만큼의 |방어|를 얻고 스택을 1 감소시킵니다.\n\
+  Brief: "|얼음 갑옷|을 얻을 시 그만큼의 |방어|를 얻습니다.\n턴 시작 시 가진 얼음 갑옷만큼의 |방어|를 얻고 스택을 1 감소시킵니다.\n\
     공격 피해를 받을 시 스택이 1 감소됩니다."
   Description: "턴 시작 시 |방어|를 {Level} 얻고 스택을 1 감소시킵니다.\n공격 피해를 받을 시 스택이 1 감소됩니다."
 Weak:
@@ -123,7 +123,7 @@ CantDrawThisTurn:
 WindGirl:
   Description: '{OwnerName}의 턴 종료 시 |그레이즈|를 {Level}까지 보충합니다.'
   Name: 풍신소녀
-  Brief: "{OwnerName}가 |풍신소녀|를 얻을 시 그 만큼의 |그레이즈|를 얻습니다.\n{OwnerName}의 턴 종료 시 |그레이즈|를\
+  Brief: "{OwnerName}가 |풍신소녀|를 얻을 시 그만큼의 |그레이즈|를 얻습니다.\n{OwnerName}의 턴 종료 시 |그레이즈|를\
     \ 보충합니다."
 PrivateSquare:
   Description: "{Limit}장의 카드를 사용할 때마다 피해를 {Level} 받습니다.\n{Count}장 남았습니다."
@@ -246,7 +246,7 @@ MaoyuBlock:
   Description: 공격을 받을 시 |방어|를 {Level} 얻습니다.
 Servant:
   Name: 사역마
-  Description: "필드에 사역마만 남아있을 경우 자동으로 사라집니다.\n이 때 사망 효과는 발동되지 않습니다."
+  Description: "전장에 사역마만 남아있을 경우 자동으로 사라집니다.\n이 때 사망 효과는 발동되지 않습니다."
 RockHardAura:
   Description: 요석에 의해 보호받습니다. 방어되지 않은 피해를 {Level} 덜 받습니다.
   Name: 요석의 비호
@@ -283,7 +283,7 @@ EnemyEnergyNegative:
   Description: "<sprite=\"Point\" name=\"Power\">를 소모했습니다.\n게임 중 표시되지 않습니다."
 EnemyEnergy:
   Name: 에너지
-  Description: 피해를 받을 시 그 만큼의 <sprite="Point" name="Power">를 얻습니다. 스펠을 사용할 수 있습니다.
+  Description: 피해를 받을 시 그만큼의 <sprite="Point" name="Power">를 얻습니다. 스펠을 사용할 수 있습니다.
 YuyukoDeath:
   Name: 생자필멸
   Description: "{OwnerName}의 턴 종료 시 체력을 {Level} 잃습니다.\n{OwnerName}는 체력을 회복하지 못합니다."
@@ -404,8 +404,8 @@ PotionBaseDamageSe:
   Brief: '|불안정한 물약|의 기본 피해가 약간 증가합니다.'
 MasterOfCollectionSe:
   Name: 수집 전문가
-  Description: 카드가 |보존|될 시 해당 카드의 코스트를 {Level} 낮춥니다.
-  Brief: 카드가 |보존|될 시 해당 카드의 코스트를 약간 낮춥니다.
+  Description: 카드가 |보존|될 시 전투가 끝날 때까지 해당 카드의 코스트를 {Level} 낮춥니다.
+  Brief: 카드가 |보존|될 시 전투가 끝날 때까지 해당 카드의 코스트를 약간 낮춥니다.
 ColdPotionSe:
   Description: '|불안정한 물약|이 |빙결|을 줍니다.'
   Name: 냉각제
@@ -536,8 +536,8 @@ SakuyaKillerSe:
   Description: "내 턴 종료 시 |단검|을 {Level}장 뽑을 카드 더미에 섞어넣습니다.\n적이 쓰러질 때도 효과가 발동합니다."
 SilverBladeSe:
   Name: 실버 디멘션
-  Description: 공격 카드를 사용할 때마다 |보호막|을 {Level} 얻습니다.
-  Brief: 공격 카드를 사용할 때마다 |보호막|을 약간 얻습니다.
+  Description: 공격 카드가 발동될 시 |보호막|을 {Level} 얻습니다.
+  Brief: 공격 카드가 발동될 시 |보호막|을 약간 얻습니다.
 DangerousMagicianSe:
   Brief: '|단검|이 사용될 때마다 |시간 펄스|를 얻습니다.'
   Name: 위험한 마술사
@@ -646,8 +646,8 @@ NextTurnLoseGame:
   Brief: 다음 턴 시작 시 사망합니다.
 TiangouOrderSe:
   Name: 대텐구의 호령
-  Brief: 소유자가 피해를 받을 시 {PlayerName}가 |방어|를 얻습니다.
-  Description: 소유자가 피해를 받을 시 {PlayerName}가 |방어|를 {Level} 얻습니다.
+  Brief: 소유자가 공격 피해를 받을 시 {PlayerName}가 |방어|를 얻습니다.
+  Description: 소유자가 공격 피해를 받을 시 {PlayerName}가 |방어|를 {Level} 얻습니다.
 ExtraDraw:
   Description: 다음 턴 시작 시 카드를 {Level}장 더 뽑습니다.
   Brief: 다음 턴 시작 시 카드를 더 뽑습니다.
