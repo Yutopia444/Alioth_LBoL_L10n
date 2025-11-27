@@ -1,0 +1,824 @@
+Game:
+  Hp: ライフ
+  Money: 資金力
+  Card: カード
+  Level: フロア
+  Difficulty: 難易度
+  Deck: デッキ
+  ExtraTurn: 追加ターン
+  TurnCounter: ターン {0}
+  Next: 進む
+  EndTurn: ターン終了
+  ActualOrderExplain: "各場所にはカードが追加された順番で表示されます。 \n \nデッキ：ゲーム中に獲得した順番 \n山札：先頭のカードが山札の一番上\n\
+    捨て札：最後尾のカードが捨て札の一番上\n \n通常、山札をこの順番で表示することはできません。"
+  EnemyTurn: 相手のターン
+  BattleStart: 戦闘開始
+  PlayerTurn: あなたのターン
+  ManaAmountOrder: コスト
+  NextSkip: 報酬をスキップ
+  NextStage: 次の章へ
+  Achievement: 実績
+  UnlockLevel: 調査レベル
+  IndexOrder: 索引順
+  TypeOrder: 種類順
+  ActualOrder: 追加順
+  IndexOrderExplain: "コレクション画面と同じ順に表示します。\n同名カードは、追加順で並べられます。"
+  DrawZoneOutOfOrder: 山札
+  DrawZone: 山札
+  DrawZoneInOrder: 山札（実際のカード順）
+  TypeOrderExplain: "同じ種類のカードを索引順に表示します。\n同名カードは追加順で並べられます。"
+  RarityOrder: レア度
+  RarityOrderExplain: "同じレア度のカードを索引順に表示します。\n同名カードは追加順で並べられます。"
+  DiscardZone: 捨て札
+  Exhibit: 展示品
+  Title: 東方光耀夜 ~ Lost Branch of Legend
+  ExileZone: 廃棄場
+  Passive:  自動 
+  NaturalTurn: 通常ターン
+  InTurn: ターン内
+  OutTurn: ターン外
+  NotInThatTurn: 無効：目標ターンに達していない
+  RoundCounter: 第{0}ラウンド
+  PlayerNameTurn: '{0}のターン'
+  PlayerNameTurnCounter: '{0}の第{1}ターン'
+  TopSuffix: 一番上
+  BottomSuffix: 一番下
+  TopBottomSuffix: 一番上/下
+  UnknownCard: 未発見のカード
+  FollowCardOnly: 追撃カードのみ表示
+  OtherCards: その他 
+  DreamCardOnly: 夢境カードのみ表示
+  IllustratorOrder: イラストレーター順
+  KickerPrefer: キッカーを優先
+Explain:
+  Title: 説明
+  RemiliaMeet: "1．同じコストのカードに置き換えられる。\n2．交換の際、カードのアップグレード状態は維持される。"
+  SaveWhenSelect: 選んだ時点でセーブされる。
+  LoseShinning: 操作キャラクターの専用カードは対応する展示品を持っていなくても出現する。
+  ShinmyoumaruForge: "1.攻撃カードは攻撃カードに、防御カードは防御カードに変化する。\n2.交換の際、カードのアップグレード状態は維持される。"
+  RollCard: "カード報酬のルール：\n\n報酬で出現するカードは、以下のすべての条件を満たしている必要があります。\n1. マナ基盤の範囲(数)でそのカードを使用できる。\n\
+    2. キャラクター専用のカードの場合、そのキャラクターでプレイしているか、そのキャラクターのカードが報酬に追加される光耀展示品(ボス報酬)を持っている。\n\
+    3. マナベースの色に、そのカードのすべての色が少なくとも一つ含まれている。現時点ではカード出現条件に関して、彩色マナは別の色とみなされない。\n\n例えば霊夢でプレイ中、以下の光耀展示品(ボス報酬)を所有している場合、\n\
+    （黒魔術の本、賢者の石、打ち出の小槌）\nマナ基盤は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\"><sprite=\"\
+    ManaSprite\" name=\"C\">計7点で、霊夢専用、魔理沙専用、共通のカードを獲得できます。\n\nこのときコストが<sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"B\">の黒のカードは取得できます。マナ基盤にコストを支払うのに十分な量<sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"P\">があるからです。\n<sprite=\"\
+    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\">のコストを持つ青と黒のカードは、<sprite=\"\
+    ManaSprite\" name=\"U\">を持っていないため、<sprite=\"ManaSprite\" name=\"B\"><sprite=\"\
+    ManaSprite\" name=\"P\">でコストを支払えても取得できません。\nこれは彩色マナがカードプールを混乱させて、「賢者の石」をピックしたくないという事態を防ぐためです。\n\
+    \n光耀展示品「空白のカード」はルール3を直接無効にします。\nコストの合計が5以上のカードで、数字部分<sprite=\"ManaSprite\" name=\"\
+    X\">を含めると現在のマナ基盤で支払うことのできないカードはルール１の対象外です。数字部分を軽減する方法は多くあります。"
+  PowerDescription: "スペルカードをプレイするために用いる。\n（画面左上）"
+  Power: パワー<sprite="Point" name="Power">
+UI:
+  Yes: はい
+  No: いいえ
+  On: オン
+  Off: オフ
+  Display: 表示
+  Setting: 設定
+  ExitGame: ゲーム終了
+  Exit: 退出
+  Numbers:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  Hide: 隠す
+  Confirm: 決定
+  Skip: スキップ
+  Divide: 、
+  Take: 取得
+  Cancel: 取り消す
+  Return: 戻る
+  Close: 閉じる
+  CopyHint: シード値をコピーしました
+  SaveHint: セーブしました
+  SideCloseHint: クリックで閉じる
+  Hiding: UI非表示
+  SpellUntitled: 「{0}」
+  SeRemove: '{0} 消失'
+  SpellTitled: '  {0}「{1}」'
+  SeAmulet: '{0} 無効化'
+  SkipHint: '{0}で早送り'
+  Gamepad:
+    SelectBaseMana: マナを選択
+    SelectAllSameColorBaseMana: 同色のマナを全て選択
+    OpenCardDetail: 詳細
+    PlayCard: カード使用
+  GamepadSideCloseHint: '{0}で閉じる'
+MainMenu:
+  NewGame: 新規攻略
+  Licenses: ライセンス
+  SelectProfile: セーブデータ切り替え
+  RestoreGame: 攻略続行
+  Setting: 設定
+  Database: 資料室
+  ComplexRules: 詳細ルール
+  ExitGame: ゲーム終了
+  AbandonGame: あきらめる
+  Collection: コレクション
+  DeleteProfile: このセーブデータを削除しますか？
+  InputName: 名前を入力
+  EmptyProfile: 空きスロット
+  DeleteYes: 削除
+  DeleteNo: 戻る
+  StartDate: 作成日
+  PlayedTime: プレイ時間
+  MusicRoom: 音楽室
+  Credits: クレジット
+  History: プレイ履歴
+  Changelog: 更新内容
+  EarlyAccess: 早期アクセス情報
+  LastPlayed: 最後にプレイ
+  Characters: 登場人物
+  LifeData: 統計
+  RandomNames:
+  - 幻想の旅人
+  - 永夜の観測者
+  - 紅色の月
+  - 幽冥なる蝶の舞
+  - 白玉楼の剣客
+  - 竹林の迷い人
+  - 月の都からの逃亡者
+  - 彼岸の渡し守
+  - 地底の閉じた心
+  - 永遠亭の月兎
+  - 宵闇の妖怪
+  - 結界の守護者
+  - 魔法の人形遣い
+  - 虹龍洞の採掘者
+  - 見習い天狗記者
+StartGame:
+  DifficultyTitle: 難易度を選択
+  SetSeed: シード値を設定
+  Seed: シード値
+  StartHp: 初期ライフ
+  DifficultyHint: 「Slay the Spire」を遊んだことが無い場合、Easyを最初にプレイすることを推奨します。
+  NeedClear: 前の難易度をクリアすると解放される
+  CheckDeck: 初期デッキ
+  StartMoney: 初期資金力
+  CharacterUnset: 主人公を選択
+  SkillSpellCard: スペルカード  {0}<sprite="Point" name="Power">
+  Puzzle: 難題
+  Rate: 複雑さ
+  InvalidSeed: 無効なシード値
+  SetJadeBox: 玉匣を設定
+  SkillExhibit: 初期展示品
+  OpeningComic: プロローグを見る
+  ClearTrue: 完全クリア
+  SelectAll: 全選択
+  Puzzles: "{0:plural one='% |request|' other='% |難題|'}"
+  LockPuzzle: 調査レベル{0}でアンロックされます。
+  ClearNormal: クリア
+  PuzzleHint: "難題に挑戦することで、スコアと経験値を多く獲得することができます。\n調査レベル4でアンロックされます。"
+  JadeBoxLock: 玉匣は調査レベル10でアンロックされます。
+  NoClearHind: シード値や玉匣を設定した場合、クリアと実績の達成は記録されない。
+  IsLockHint: "このキャラクターは\n調査レベル{0}で解放されます"
+  StoryMode: ストーリーモード
+  NoStoryMode: "ストーリーモードは霊夢でのみプレイできます"
+  NotReadyHint: "このキャラクターはまだ実装されてません\nアップデートを楽しみに待ってね"
+  FreeMode: フリーモード
+  StoryDescription: "博麗霊夢を操作して異変を解決しよう。\n一部で固定の敵が出現します。\n一部の「友好的な遭遇」が発生しません。"
+  FreeDescription: "好きなキャラクターで異変を解決しよう\n多くのストーリー会話が発生しません\n全ての「友好的イベント」は発生します"
+  ShowRandomResult: 運命を知る
+  NotShowRandomResult: 運命に従う
+  ShowRandomResultTitle: 定められた運命を明らかにする
+  NotShowRandomResultTitle: 定められた運命を知らないことを選ぶ
+  ShowRandomResultDescription: "「友好的な遭遇」イベントでランダムに手に入れるカードや展示品の抽選結果を事前に見ることができるか、できないかのオプションです。\n\
+    この抽選結果はオプションと全く関係なく、新規攻略がスタートされた時点で既に決めており、同じ攻略で何度リロードしても抽選結果は変わりません。\n\n<color=#dd7473>おっほっほっほ～私の力、その身で味わいなさい！"
+  NotShowRandomResultDescription: "「友好的な遭遇」イベントでランダムに手に入れるカードや展示品の抽選結果を事前に見ることができるか、できないかのオプションです。\n\
+    この抽選結果はオプションと全く関係なく、新規攻略がスタートされた時点で既に決めており、同じ攻略で何度リロードしても抽選結果は変わりません。\n\n<color=#dd7473>私の手助けがいらないって？フッ！"
+  JadeBoxSelectedCount: '{0}/{1}を選択'
+  StoryModeNotReady: ストーリーモードはもうすぐ完成予定です
+Museum:
+  UpgradedFilter: アップ　グレード
+  CardStyleTooltip: "イラストが複数種類あるカードが表示されます。\n各カードの詳細画面から表示するイラストを選択できます。"
+  Rarity: レア度
+  Character: キャラクター
+  ManaCost: マナコスト
+  CardStyleFilter: イラスト違い
+  ExhibitType:
+    T1: 秘宝
+    T2: 光耀
+    T4: アンコモン
+    T5: ノーマル
+    T3: レア
+    T7: イベント＆その他
+    T6: ショップ
+    T8: 最終章
+  UnRevealCard: 不明カード
+  CardType: カードタイプ
+  LockExhibit: 未解禁の展示品
+  UnRevealExhibit: 未発見の展示品
+  Hidden: 秘密の実績
+  CardNotReady: "このカードは未実装です。\nアップデートをお楽しみに。"
+  ManaType: マナタイプ
+  AchievementCount: 達成済み
+  All: 全て
+  Unlock: 獲得済み
+  NotUnlock: 未獲得
+  HiddenDescription: この実績の詳細は獲得するまで表示されない。
+  TextFilterHint: テキスト検索
+  ManaFilterHint: 青と白の色を含むカードだけを見たい場合は、<sprite="ManaSprite" name="W">と<sprite="ManaSprite"
+    name="U">、<sprite="ManaSprite" name="P">を選択する。
+  Increase: 正順
+  Decrease: 逆順
+  AllCards: 全てのカード
+  Revealed: 収集済み
+  UnRevealed: 未収集
+  RevealDescription: "ゲーム中にカードを見かけた時点でそのカードは収集された扱いとなります。\n実際に選択、購入する必要はありません。"
+Setting:
+  Resolution: 解像度
+  Key: 操作
+  FullScreen: フルスクリーン
+  Vsync: 垂直同期（{0}FPS）
+  ScreenVibration: 画面揺れ
+  Language: 言語
+  AudioMaster: 全体
+  AudioBgm: BGM
+  LostFocusMute: 非アクティブ時ミュート
+  RecommendVolume: デフォルト
+  TurboMode: 高速モード
+  TurboModeDescription: "戦闘アニメーションの高速化。\nキャラクターや弾幕のアニメーション速度を{0}倍にする。UIの速度には影響しない。"
+  Keyword: キーワード
+  Brief: 簡潔
+  Detailed: 詳細
+  TooltipSize: ツールチップサイズ
+  RenderScale: 解像度スケール
+  AudioUi: UI
+  AudioSfx: SE・弾幕
+  Illustrator: イラストクレジット表記
+  IllustratorDescription: カードのイラストレーターの名前を表示します。
+  DontShow: 非表示
+  KeywordDescription: "簡潔モードにすると、以下の基本的なキーワードの説明が表示されません。\nゲームに慣れてからの利用をお勧めします。\n\
+    火力、霊力、ブロック、バリア、グレイズ、精密、彩色、アップグレード、能力、混色コスト。"
+  VideoQuality: 品質
+  TooltipSizeDescription: "カードや展示品、攻撃予定のダメージの数字などのツールチップのサイズ調整。\n通常は「小」ですが、低解像度でプレイする場合は「大」を推奨します。"
+  Large: 大
+  Small: 小
+  Show: 表示
+  Hide: 隠す
+  AnimatingEnvironment: 背景アニメーション
+  AnimatingEnvironmentDescription: フィールドやスキマで動的背景を表示します。
+  SingleEnemyAutoSelectDescription: 敵が1体しか存在しない場合、対象を正確に指定していなくてもカードを使用します。
+  SingleEnemyAutoSelect: 単体時の対象自動選択
+  Disable: 無効
+  Enable: 有効
+  ShowShortcut: 手札のショートカット表示
+  ShowShortcutDescription: 手札の上に対応するショートカットキーを表示します。
+  ResetDefault: デフォルトに戻す
+  Preference: ゲーム設定
+  XCostWarning: Xコストカードの警告
+  EnableKeyboard: キーボードの使用
+  Actions:
+    Select1: カード選択 1
+    Select2: カード選択 2
+    Select3: カード選択 3
+    Action: 操作
+    Button: キー
+    Select6: カード選択 6
+    Select7: カード選択 7
+    Select8: カード選択 8
+    Select9: カード選択 9
+    Select10: カード選択 10
+    Select4: カード選択 4
+    Select5: カード選択 5
+    Select11: カード選択 11
+    Select12: カード選択 12
+    EndTurn: ターン終了
+    PoolU: <sprite="ManaSprite" name="U">を候補地に移動させる
+    PoolB: <sprite="ManaSprite" name="B">を候補地に移動させる
+    PoolR: <sprite="ManaSprite" name="R">を候補地に移動させる
+    PoolG: <sprite="ManaSprite" name="G">を候補地に移動させる
+    PoolC: <sprite="ManaSprite" name="C">を候補地に移動させる
+    PoolW: <sprite="ManaSprite" name="W">を候補地に移動させる
+    PoolP: <sprite="ManaSprite" name="P">を候補地に移動させる
+    UseUs: スペルカードの使用
+    ToggleMinimize: UIを一時的に隠す
+    ShowEnemyMoveOrder: エネミーの行動順を表示（長押し）
+    SkipDialog: メッセージのスキップ（長押し）
+    ToggleExileZone: 廃棄場の表示
+    ToggleBaseDeck: デッキの表示
+    ToggleDrawZone: 山札の表示
+    ToggleDiscardZone: 捨て札の表示
+    ToggleMap: マップの表示
+    RebindMessage: '{0}に割り当てるキーを押してください。Escでキャンセル'
+  XCostWarningDescription: 手動でマナを選択せずにコストXのカードをプレイするとき、プレイヤーに警告します。
+  Warn: 表示
+  DontWarn: 非表示
+  HintLevel: ヒントの表示
+  ResetHint: ヒントのリセット
+  Main: 一般
+  Shake: 画面揺れ
+  ShakeDescription: ダメージによる画面の振動を有効にします。
+  ShowReload: 時戻しの回数を表示
+  ShowReloadDescription: 今回の攻略で行われた時戻しの回数と、運命の可視状態をマップに表示するオプション。
+  ShowCardOrder: カードの順番を表示
+  ShowCardOrderDescription: "その場所のカードの順番を番号順に表示します。\n\n実際のカード順で表示できるものに対してのみ有効。(通常時はデッキ、捨て札、廃棄場).\n\
+    山札と捨て札については、一番上と一番下のカードが強調して表示されます。\n\nオフにしている場合でも、「エネミーの行動順を表示」のキーを押すことでオンにできます。"
+  TurboPlaying: 演出速度:{0}倍
+  Cursor: カーソルの種類
+  SystemCursor: 通常
+  LbolCursor: 専用
+  FrameRate: フレームレート
+  NoLimit: 無制限
+  Monitor: モニター
+  CostMoreLeft: コスト左寄り表示
+  NonVsync: （{0}FPS）
+  CostMoreLeftDescription: "手札のコストは通常右側に表示されます。\nオンにすると表示がやや左になり、右側の手札の上に重なるのを防ぎます。"
+  EnableGamepad: コントローラー有効化
+  AnimatingEnvironmentDescriptionLocked: "フィールドやスキマで動的背景を表示します。\n（メインメニューでのみ設定できます。）"
+  LoopOrder: カードの色のサイクル
+  LoopOrderOn: オン<sprite="ManaSprite" name="HRW">
+  LoopOrderOff: オフ <sprite="ManaSprite" name="HWR">
+  LoopOrderDescription: "2色カードの色の表示順をMtGと同じ色のサイクルに変更します。\n白赤、白緑、青緑の表示順がそれぞれ逆になります。\n\
+    <sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"\
+    ManaSprite\" name=\"HUG\">⇒<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\"\
+    \ name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">\nこの変更は混色マナを含むカード上の表示順にのみ影響し、それ以外でのマナの順番には影響しません。"
+  RightClickCancel: マウス右ボタンキャンセル
+  TooltipWide: ツールチップのワイド表示
+  QuickPlay: 高速使用
+  QuickPlayDescription: "（ゲームに慣れたプレーヤー向きです。）\n対象を指定する必要の無いカードを使用した時や「単体時の対象自動選択」をオンにした状態で敵が残り1体の時、カードの使用速度が速くなります。"
+  Default: デフォルト
+  DoubleClick: ダブルクリック
+  SingleClick: シングルクリック
+  RightClickCancelDescription: "マウスの右ボタンによるキャンセルを有効にするかを選択します。\n行動を取り消し、大部分のウィンドウを閉じます。"
+  TooltipWideDescription: "このオプションをオンにすると、全てのツールチップの表示幅が広くなります。\n（デフォルトでは内容が著しく長くなる場合のみ幅広のツールチップが表示されます。）"
+Tooltip:
+  EntityTitle:
+    Character: 専用
+    Neutral: 共通
+    White: 白
+    Red: 赤
+    Green: 緑
+    Colorless: 無色
+    MultiColor: 多色
+    Blue: 青
+    Black: 黒
+    NeutralTitle: '{0}{1}'
+    CharacterTitle: '{0}{1} ({2})'
+    WU: 白青
+    WB: 白黒
+    WR: 白赤
+    WG: 白緑
+    UB: 青黒
+    UR: 青赤
+    UG: 青緑
+    BR: 黒赤
+    BG: 黒緑
+    RG: 赤緑
+    UW: 青白
+    BW: 黒白
+    RW: 赤白
+    GW: 緑白
+    BU: 黒青
+    RU: 赤青
+    GU: 緑青
+    RB: 赤黒
+    GB: 緑黒
+    GR: 緑赤
+  UsTitle: '{1}'
+  DifficultyLunatic:
+    Description: 敵の攻撃力と体力が増加し、より強力な行動をするようになる。
+    Name: 難易度：Lunatic
+  DrawZone:
+    Name: 山札
+    Description: "各ターンの開始時、ここから {0} 枚のカードを引く。\n山札が空になった場合、捨て札を戻してシャッフルする。\nクリックすることで山札にあるカードを確認できる。|(順番はランダム)|"
+  DifficultyHard:
+    Description: 敵の攻撃力と体力が増加する。
+    Name: 難易度：Hard
+  DiscardZone:
+    Name: 捨て札
+    Description: "使用した、あるいは捨てたカードをここに置く。\nターン終了時、手札に残ったカードをここに置く。 |d:(「捨てた時」の効果は発動しない)|。\n\
+      クリックすることで捨て札のカードを表示する。"
+  EndTurn:
+    Name: ターン終了
+    Description: "ターンを終了する。\n\n手札に残ったカードを捨て |d:(「捨てた時」の効果は発動しない)|、敵のターンを開始する。\n敵のターンが終了した後、カードを{0}枚引き自分のターンを開始する。"
+  BattleMana:
+    Name: マナ
+    Description: "現在持っている未使用のマナ。ターン毎にリセットされる。\n\n左クリックしたマナ、右クリックしたマナと同じ色のマナは候補地に移動する。\n\
+      候補地のマナは優先して使用されるほか、|X|コストの支払いに充てられる。"
+  BaseMana:
+    Name: マナ基盤
+    Description: "ターン開始時、マナ基盤と等しいマナを獲得します。\nマナ基盤は光耀展示品を集めることで拡張できます。\n\nマナ基盤はドロップするカードにも影響します。"
+  DifficultyEasy:
+    Name: 難易度：Easy
+    Description: "輝夜の秘宝を持って調査を始めましょう。\n最終章はプレイできません"
+  DifficultyNormal:
+    Name: 難易度：Normal
+    Description: 標準的な難易度。
+  ExileZone:
+    Description: "|廃棄|されたカードをここに置く。\n\nクリックしてこの戦闘中に|廃棄|したカードを見る。"
+    Name: 廃棄場
+  Character:
+    Name: '{0}'
+    Description: あなたがプレイしているキャラクター
+  GameSeed:
+    Name: シード
+    Description: "ゲーム内容はシードによって生成されます。\n\nクリックしてクリップボードにシードをコピーします。"
+  BriefHint:
+    Name: 簡易ヒント
+    Description: "本作特有のシステムに関するヒントのみが表示されます。\n『Slay the Spire』などの似たゲームをプレイした方向け。"
+  FinalStage:
+    Description: もうすぐこのゲームの終点だ、先へ進もう！
+    Name: 最終章
+  Money:
+    Description: 主にショップで物を買う際に使われる
+    Name: 資金力：{0}
+  Hp:
+    Description: ライフが0になった時、ゲームオーバーとなる
+    Name: ライフ：{0}
+  Level:
+    Name: レベル{0}
+    Description: 現在の章の進度
+  Stage:
+    Name: 第{0}章
+    Description: 本作では、各章が一つのマップで構成されています。
+  DontShowHint:
+    Name: ヒント非表示
+    Description: "ヒントを一切表示しません。\n『東方光耀夜』をプレイ済みの方向け"
+  DetailedHint:
+    Name: 詳細ヒント
+    Description: "全てのヒントを表示します。\nデッキ構築ゲームが初めての方向け。"
+BattleHint:
+  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
+  Prev: 前のページ
+  Next: 次のページ
+  Brief: 簡易ヒントを表示
+  Intro: "月都万象展へようこそ！蓬莱の玉の枝の行方を探しましょう！\nデッキ構築ゲームを遊んだことがある場合は、|簡易ヒント|を選択して、本作の特別な部分を確認できます。\n\
+    以後のゲームプレイヒントもこの設定に従います。またメニューからいつでも変更できます。"
+  DontShow: ヒントを表示しない
+  BasicBattle: "手札からカードを使用して敵を倒しましょう！\n手札から使用されたカードは捨て札に送られます。プレイヤーのターン終了時、手札に残っているカードも捨て札に送られます。\n\
+    次のプレイヤーのターン開始時に手札に新しくカードが引かれます。"
+  BlockShield: "ダメージを受ける前に、防御カードを使用して|ブロック|と|s:バリア|を得ましょう。\n|ブロック|と|s:バリア|は受けるダメージを数値分減らします。\n\
+    |ブロック|はキャラクターの次のターン開始時に消滅しますが、|s:バリア|は残ります。"
+  Intention: "敵の行動予定が頭上に表示されます。\n敵は攻撃、防御、バフ、デバフ、スペルカードなどの行動予定を示します。"
+  UltimateSkill: "スペルカードで戦いの流れを変えましょう！\nスペルカードをプレイするためにはパワーゲージが一本（100P）必要です。倒した敵はパワーを補充する\
+    \ <sprite=\"Point\" name=\"Power\">をドロップします。\nスペルカードは一ターンに一回まで使用できます。"
+  Detailed: 詳細ヒントを表示する
+  Mana: "カードを右クリックして詳細を表示します。 (報酬画面などゲーム内のほとんどのカードパネルで機能します。)\nカードをプレイするにはマナを消費する必要があります。カードのマナコストは右上隅に表示されます。\n\
+    マナの種類は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
+    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
+    \ name=\"G\">, 無色のマナ <sprite=\"ManaSprite\" name=\"C\"> 、そして任意のコストの支払いに使用できる彩色マナ<sprite=\"\
+    ManaSprite\" name=\"P\"> があります。\n数字部分の<sprite=\"ManaSprite\" name=\"2\">のようなコストは任意の2マナで支払うことができるという意味です。"
+History:
+  Puzzles: '{0}{1}個の難題'
+  Mana: マナ
+  Exhibit: 展示品数：{0}
+  Card: カード枚数：{0}
+  StatsSegment: '{0}：{1}'
+  PlayedTime: プレイ時間：{0}
+  AutoSeed: シード値未設定
+  NotAutoSeed: シード設定
+  ReloadTimes: 時戻しの回数：{0}
+CardType:
+  Attack: 攻撃
+  Defense: 防御
+  Status: 状態異常
+  Tool: 道具
+  Ability: 能力
+  Skill: スキル
+  Misfortune: 厄災
+  Friend: パートナー
+StatusEffectType:
+  Special: 特殊効果
+  Positive: バフ
+  Negative: デバフ
+Shop:
+  CantAffordQuotes:
+  - 慈善団体じゃないんだからね
+  - 財布にゆとりがないみたいだね
+  - 資金が足りないよ
+  Remove: カード除去
+  BoughtQuotes:
+  - まいどあり～
+  Skip: スキップ
+  Close: 閉じる
+  WelcomeQuotes:
+  - いらっしゃいませ
+  - 見るだけ見て行って
+  Chats:
+  - お姉さん、どうぞ見てって～
+  - 安心価格だよ！本当に何も要らないの？
+  RemoveTooltip: "デッキからカード1枚を削除する。\n利用するたびに費用が<sprite=\"Gold\" name=\"gold\">{0}ずつ上がる。"
+  CardService: カードサービス
+  SoldOut: 売り切れ
+  Upgrade: アップグレード
+  UpgradeService: 'カード強化：'
+  ShopUpgradePrice: '{0}<sprite="Gold" name="gold">'
+  UpgradeTooltip: "デッキのカードを1枚アップグレードする。\n費用は{0}<sprite=\"Gold\" name=\"gold\">。"
+  RemoveService: 'カード除去：'
+  ShopRemovePrice: '{0}<sprite="Gold" name="gold">'
+Map:
+  Shop: ショップ
+  Adventure: イベント
+  Select: ボス選択
+  Boss: ボス
+  BattleAdvTest: テスト
+  Entry: スタート
+  EliteEnemy: エリート
+  Enemy: 敵
+  Supply: 補給
+  Gap: スキマ
+  Hint: マップを閉じるには画面の端をクリックしてください
+  Map: マップ
+  Previous: 前のページ
+  Next: 次のページ
+  Trade: 取引
+  GamepadHint: '{0}でマップを閉じる'
+Chat:
+  SickGirl: ゴホッ・・・　ゴホッ・・・
+  Kokoro1: 最近大量のお面が無くなってる気がする。
+  Clownpiece2: その宝珠の光を奪い取ってやる！
+  Clownpiece3: イッツ、ルナティックターイム！
+  Clownpiece1: 妖精たちよ、もっと弾幕出していこうよ！
+  WaterGirl: 私の苦しみ…お前も味わえ！
+  DoremySleep: Zzzzz~
+  Terminator:  T-800 
+  DoremyMaster: 夢の辺境へと辿り着いたようね。
+  DoremyKill: もう夢から覚めなくていいのよ～
+  DoremyAwake: 今一番いいところだったのに！
+  FraudRabbitStart1: 犯人の情報を教えてあげるわ、金を払えるならね。
+  LongBribery1: 中々気が利くね～
+  DoremySleepLast: もう食べきれないよ～
+  LongEscape1: おっと、どうやら私の負けだ。
+  LongEscape2: 守矢神社か？それなら、こっちに行くといい
+  YuyukoMooncake: 美味しそうな「{0}」ね～
+  LongBribery2: 悪くない。悪くない。
+  LoveGirlPlayer: あなたのことが好きだ！
+  LoveGirlRespond: うれしい！
+  HetongYinchen2: 私の{0}！
+  HetongYinchen1: おい、お前は{0}を壊した。
+  Fox1: ダーリン、虜にしてあげるわ～
+  Fox0: あら！可愛いお嬢さんね～
+  LoveGirlFallInLove: 私の悲願がついに叶った。
+  HetongKailang1: 修理よし、これで新品同様！
+  HetongKailang2: まあ、やれることはやろう。
+  FraudRabbitStart2: 月の都の最新技術の品をあげるわ、金を払えるならね。
+  FraudRabbitPlayer: あっ！あいつ逃げた！
+  Fox2: いい子ね、まだまだこれからよ～
+  LoveGirlEscape: やっぱり、本当の愛は見つからなかった。
+  HetongKailang3: みんな、頑張ってね！
+  Scout: 「探査機」
+  Purifier: 「ベイマックス」
+  HardworkRabbit2: もっと頑張らないと！
+  Sunny2: 展示品を奪った者が持ち主だ！
+  StarSpell: あんたのわずかな動きも私にはお見通しよ～
+  Nitori2: どうやら、防御性能に改善の余地があるみたいだね。
+  Youmu1: 斬！
+  YoumuTuanzi: 「冷やし三色団子」がもっと欲しいなら、ここで引き返して！
+  Siji1: 異変調査の大義名分の下、展示品を盗む。
+  SijiMystia: 食い逃げ、罪を重ねる。
+  SijiTurn3: 私を背が低いと言って辱める、罪を重ねに重ねる。
+  LunaSpell: 弾幕よ、沈黙せよ。
+  SijiTurn2: 法廷侮辱、罪を重ねる。
+  Sunny1: 今日は{0:cs}に、私たちの力を見せてあげるわ！
+  HardworkRabbit1: 地球人を発見！
+  Luna: おーーー！
+  Aya2: 逆上した不審者が取材を妨害しています！
+  Aya3: '{0:cs}の手に持ってるものを見てください！彼女が犯人である証拠です！'
+  Terminator3: "致命的損傷を検知...\n自己修復中..."
+  Rin2: おっと！ 容赦ないねぇ、お姉さん～
+  Nitori1: こいつは私が精一杯努力して改装した機体さ。
+  Star: おーーー！
+  SunnySpell: 全ての光よここに集まれ！
+  YoumuMooncake: 「{0}」を返して！
+  SijiTurn1: 反対無効、罪を重ねる。
+  Siji2: なんとも卑劣ですね、{0:cf}。
+  Terminator1: "システムチェック終了...\n制限を解除します"
+  Rin1: お姉さん、貴方の「{0}」本当に可愛い！家まで持って帰っちゃいたい！
+  Terminator0: 診断実行中...
+  Terminator2: "損傷を検知...\n自己修復中..."
+  LazyRabbit: 使えないやつだなー、もうサボれないじゃないか。
+  Aya1: 今宵の永遠亭騒動の真相に迫る！現場から私、射命丸がお伝えします。
+  FraudRabbitOnlyOne: 残ったのは私だけ！？ほんと役立たず共ね。
+  FraudRabbitNoMoney: 一銭も無いのか、この貧乏人が。
+  FraudRabbitLongTurn: これでも引っかからないとか、もういい、帰る。
+  Limao1: 山の神社には美味しいお供え物がたくさんあるって聞いたよ！
+  Limao2: この能力の使い方を試してみないと…
+  YaTiangou1: 遅い！
+  YaTiangou2: 隙あり！
+  RinKoishi1: 今日のこいし様はおしゃれで超絶かわいいです！お持ち帰りしたいくらいです！
+  RinKoishi2: あらら、こいし様容赦ないですね～
+  LongPlace: 貴方の家
+  LongPaper: '{0}に特別号をお届け！是非御一読を！'
+  LongPaperPlayer: "？？？\nこんな紙クズ誰が読むの？"
+ErrorChat:
+  MoneyNotEnough: 資金力が足りないわ
+  LowMana: マナが足りないわ
+  CardCostChanged: カードのコストが変わったわ
+  LowPower: パワーが足りないわ
+  CardNotInHand: そのカードは手札に無いわ
+  CardNotUsable: このカードは使えない
+  CardDrunk: 酔ってないもん！
+  CardFengyin: 封印されているわ
+  UsUsedThisTurn: このターンはスペルカードを使用済みよ
+  CardCharm: これ以上動けない
+  TargetAlreadyDead: ターゲットは撃破済みよ
+  NoTarget: 適切な対象が居ないわ
+  HandFull: 手札が一杯！
+  EmptyDraw: 山札が空だわ
+  NoCardByMama: そのコストのカードは無いわ
+  UsUsedThisBattle: この戦闘ではスペルカードを使用済みよ
+  LowLoyalty: パートナーの支援度が足りないわ
+  CardHuiye: 時間切れよ
+  NoAbilityCardInHand: 手札に能力カードが無いわ
+  Tired: もう疲れちゃった
+  LowMagic: 人形の魔力が足りないわ
+Cards:
+  Show: 右クリックか、カーソルを合わせると詳細が表示されます。
+  Remove: 'デッキからカード{0}枚を捨てる'
+  IsUpgraded: アップグレード済み
+  UnUpgradable: アップグレードできません
+  UpgradeTips: アップグレードするカードを選んでください
+  RemoveTips: 削除するカードを選んでください
+  UpgradeDialog: アップグレードしますか？
+  TransformTips: 変化させるカードを一枚選んでください
+  TransformDialog: 本当にこのカードを変化させますか？
+  RemoveDialog: 本当にこのカードを削除しますか？
+  Size:  {0} 枚のカード
+  UpgradePrice: "必要な<sprite=\"Gold\" name=\"gold\">：{0}\n現在の<sprite=\"Gold\" name=\"\
+    gold\">：{1}"
+  NotInPool: このカードは報酬カードプールに含まれない
+  PackName: "拡張\nパック"
+  PackNone: 無し
+  PackTooltip: '{0}{1}'
+  PackTitle: 使用した拡張パック
+  PackEnabledSuffix: (有効)
+  PackDisabledSuffix: (無効)
+  PackEnabled: 有効
+  PackDisabled: 無効
+  PackSwitchTitle: 拡張パックの有効/無効の切り替え
+  PackSwitchDescription: "タイトル画面からのみ設定可能です。\n（現在プレイ中のデータには影響しません。）\n\n1つの拡張パックには複数のカードが含まれる場合があり、それらはまとめて有効化または無効化されます。\n\
+    現時点では複数枚が含まれるパックが存在しないため、パック全体のプレビュー機能は実装されていません。"
+TopInfo:
+  Original: 原曲：
+  Artist: アーティスト：
+GameResult:
+  Abandon: 放棄
+  ReturnHint: クリックするとタイトルに戻ります
+  Lose: 満身創痍
+  Unlock: 新しいアイテムをアンロック
+  UnlockHint: アンロックされた展示品とカードは次回以降に使用できます
+  Score: スコア
+  DifficultyFactor: 難易度
+  Win: 異変解決
+  NormalEnd: 蓬莱の玉の枝はまだ見つかっていない
+  BadEnd: もう一度挑戦してみよう
+  FailReason: 敗因：
+  ClickToOpen: 詳細を開く
+  TrueEnd: 事件は完全に解決した
+  TrueEndFail: "犯人は見つかったが、蓬莱の枝は取り返せず\n（ノーマルエンディング）"
+  Deprecated: ？？？（期限切れ）
+  ClickToFold: 詳細を閉じる
+ManaSelect:
+  Title: マナタイプを選択してください
+CardDetail:
+  UpgradeYes: アップグレード済み
+  UpgradeNo: 通常
+  Illustrator: イラストレーター：
+  SwitchCardStyle: イラスト違い
+  Sketch: 少女描画中
+Gap:
+  HeaderInitial: 一休み一休みっと
+  Headers:
+  - どうしよっかな～
+  - 疲れた～
+Reward:
+  Headers:
+  - お見事
+  - 戦利品
+  - 報酬
+  CardHeader: カード選択
+  Card: カードを1枚デッキに加える
+  Money: '{0}資金力'
+  Skip: 報酬をスキップ
+  Abandon: スキップ
+  AbandonMoney: '<sprite="Gold" name="gold">{0}入手'
+  AbandonMaxHp: '最大ライフが{0}増える'
+  RemoveCard: 整頓
+  RemoveCardDescription: カードを1枚削除する。基本カードと厄災は選択できない。
+MessageDialog:
+  GameAbandonWarning: 現在のランの進行状況を放棄してよいですか？
+  EarlyAccess: "《東方光耀夜》はアーリーアクセスで、デザインは変更される場合があります。\n現在プレイヤーキャラのアリスを制作しています。\nゲームのアップデートの詳細はSteam上のアナウンスをご覧ください。\n\
+    \nゲーム中に問題が発生した場合は、 steam コミュニティやDiscordなどでご連絡ください。\n頻繁なアップデートによる追加、変更が行われるため、日本語訳の協力も募集しています。\n\
+    機械翻訳の手直しや、カードの説明を同じ効果の先例を参考に訳すだけでも助かります。\n詳しくはストアページ掲載のDiscordの日本語チャンネルをご覧ください。"
+  QuitGame: ゲームを終了しますか？
+  ReturnToMainMenu: タイトルに戻りますか？
+  InvalidProfileName: この名前は使用できません
+  AlreadyInGameRun: '既にゲーム進行中'
+  UnsavedWarning: 最後のセーブポイントからの記録は保存されません。
+  SkipDialog: 会話をスキップしますか？
+  ResetKeyBindingsWarning: キーバインドをリセットしますか？
+  GameRunSaveDiscarded: "バージョンが更新されました\n中断されていたランの進行状況は破棄されます"
+  GameRunSaveDiscardedSubText: プレイヤーのプロフィールはこの影響を受けません
+  CannotStartGameRunWithoutProfile: ゲームを開始できません：セーブデータが作成されていません
+  CannotReenterStation: ステージに再入場できません
+  XCostEmptyUsageWarning: マナを設定せずに{0}を使用しますか？
+  DontShowHintWarning: 全てのヒントを非表示にしますか？
+  ResetHintWarning: 全てのヒントをリセットしてよろしいですか？
+  CloseBattleHint: 戦闘ヒントを閉じますか？
+  CorruptedGameRunSaveData: ゲーム進行状況のセーブファイルが破損しています
+  CannotRestoreEndedGameRun: 終了したゲームの進行状況を復元できません
+  CorruptedSaveData: セーブファイルが破損しています
+  XCostEmptyUsageTips: 左下のマナパネルから X コストカードにプレイするマナを設定できます
+Rarity:
+  Shining: 光耀
+  Uncommon: アンコモン
+  Common: コモン
+  Rare: レア
+  Mythic: 秘宝
+Debut:
+  KaguyaChats:
+  - 丁度準備してたところよ
+  - 家は任せたわ、永琳
+  - 夜明け前には帰ってくることね～
+  EirinChats:
+  - もうサボってないで、{0}
+  - もたもたしてると、薬の効き目が切れるわよ～
+System:
+  ResumeGame: ゲームを続ける
+  NoJadeBox:
+    Description: 特別なことは何もない
+    Title: 玉匣の効果なし
+  EA: ゲームはアーリーアクセスであり、最終的な品質を示しません。
+  ReenterStation: フロアリトライ
+  ReturnMainMenu: タイトルに戻る
+  SystemMenu: ポーズ＆設定
+  DoremyLevel: 夢の深度 {0}
+Credits:
+  UnuseArt: グラフィック(未実装)
+  Russian: ロシア語協力
+  English: 英語協力
+  Polish: ポーランド語協力
+  Korean: 韓国語協力
+  Spanish: スペイン語協力
+  Japanese: 日本語協力
+  Portuguese: ポルトガル語協力
+  Turkish: トルコ語協力
+  Vietnamese: ベトナム語協力
+  DG: ゲームプロトタイプ協力
+  NoiseClub: 効果音
+  French: フランス語協力
+  Italian: イタリア語協力
+  Alioth: Alioth Studio
+  Alice: ゲームデザイン・プログラミング
+  Yutopia: アートディレクター・エフェクト
+  Salyu: プログラミング
+  MainPartners: 重要協力者
+  DD: グラフィック
+  MW: キャラクターアニメーション
+  LuvChan: ゲームデザイン
+  FK5: プログラミング・エフェクト
+  Jiejiezi: キャライラスト・立ち絵
+  NeetRudong: シナリオ漫画・イベントグラフィック
+  SignalE: 音楽
+  Zackary: 効果音
+  Sana: キャラ立ち絵
+  Kyu: キャラ立ち絵・環境グラフィック
+  Zaochuan: 環境グラフィック
+  Anima: キャラクターアニメーション
+  Illustrator: カードイラスト
+  Thanks: スペシャルサンクス
+  Jiong: 事務サポート
+  Liya: エフェクト
+  Wuqiqi: 2Dグラフィック
+  Aeolian: エフェクト・効果音
+  TChinese: 繁体字協力
+  Ukrainian: ウクライナ語協力
+  Hungarian: ハンガリー語協力
+  German: ドイツ語協力
+Lifetime:
+  TotalBp: 合計<sprite="Point" name="Point">
+  Time: プレー時間
+  Game: プレイ数
+  Win: 勝利数
+  Perfect: 完全勝利数
+  Puzzle: 難題
+  Title: 統計データ
+  HighestBp: 最高得点<sprite="Point" name="Point">
+  OldData: 旧バージョンデータ <sprite="TextIcon" name="Info">
+  NoData: 未記録データ
+  OldDataHint: バージョン1.3.15以前のデータです。本データは全キャラクターの合計数のみを記録しています。
+  NoDataHint: バージョン1.3.15以前は、このデータは記録されていませんでした。
+Ultimate:
+  MaxPower: 最大チャージ数： {0}
+  ConsumePower: 消費<sprite="Point" name="Power">：{0}
+  OncePerBattle: 1回の戦闘につき1回のみ使用可能
+  FreeToUse: 同一ターン中に複数回使用可能
+  OncePerTurn: 1ターンに1回のみ使用可能
+SelectCard:
+  DreamCardsToHand: 夢現：カードを1枚まで選んで手札に加える
+Mod:
+  PlayingMod: Modを使用中
+  ModList: 有効なMod一覧
