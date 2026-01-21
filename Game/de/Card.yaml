@@ -306,9 +306,9 @@ CirnoDraw:
     \ zu Beginn deines nächsten Zuges {Value2:plural one='% Karte' other='% Karten'}."
 IceBlock:
   Name: Eisblock
-  Description: "{PlayerName} kann in diesem Zug kein Leben verlieren.\nVerliere all\
-    \ dein |Block|, |Barriere| und |Ausweichen|.\nAlle Karten auf deiner Hand erhalten\
-    \ |temporäres Beibehalten|. Beende den Zug von {PlayerName}."
+  Description: "{PlayerName} kann in dieser Runde kein Leben verlieren.\nVerliere\
+    \ all dein |Block|, |Barriere| und |Ausweichen|.\nAlle Karten auf deiner Hand\
+    \ erhalten |temporäres Beibehalten|. Beende den Zug von {PlayerName}."
   FlavorText: Setze im Anschluss "Höhere Unsichtbarkeit" ein, um aus dem Kampf zu
     fliehen.
 IceMatrix:
@@ -351,9 +351,9 @@ ReimuFreeAttack:
     \ kostet' other='nächsten % Angriffskarten kosten'} {Mana}."
 TaijiLiangyi:
   Name: Die Geburt des Yin-Yang
-  Description: "Füge eine |Yin-Yang-Kugel| deiner Hand hinzu.\nWenn sich zu Beginn\
-    \ deines Zuges |Yin-Yang-Kugel| nicht auf deiner Hand befindet, füge eine |Yin-Yang-Kugel|\
-    \ deiner Hand hinzu."
+  Description: "Füge |Yin-Yang-Kugel| deiner Hand hinzu.\nFüge zu Beginn deines Zuges\
+    \ |Yin-Yang-Kugel| deiner Hand hinzu, falls sich kein Exemplar von |Yin-Yang-Kugel|\
+    \ auf deiner Hand befindet."
   FlavorText: Diese Technik hat Reimu entwickelt, nachdem sie 'Was man mit einer unendlich
     vollen Cola-Flasche machen könnte' gelesen hat.
 BoliPhantom:
@@ -739,9 +739,9 @@ Yueguang:
 FrozenThrone:
   Name: Gefrorener Thron
   FlavorText: Now, we are one!
-  Description: "Füge |Eisgeschoss| deiner Hand hinzu.\nWenn sich zu Beginn deines\
-    \ Zuges |Eisgeschoss| nicht auf deiner Hand befindet, füge |Eisgeschoss| deiner\
-    \ Hand hinzu."
+  Description: "Füge |Eisgeschoss| deiner Hand hinzu.\nFüge zu Beginn deines Zuges\
+    \ |Eisgeschoss| deiner Hand hinzu, falls sich kein Exemplar von |Eisgeschoss|\
+    \ auf deiner Hand befindet."
 KoishiKiss:
   Name: Luftkuss
   Description: "Verursache {Damage} Schaden.\nFüge {Value1} |Schwach| zu.\nFühre einen\
@@ -1118,8 +1118,8 @@ GainKnife:
   Description: Füge zu Beginn deines Zuges {Value1} |Wurfmesser| deiner Hand hinzu.
 MoreFriends:
   Name: Geselliger Schmetterling
-  Description: "Füge zu Beginn deines Zuges {Value1} zufällige{Value1:plural one='n'\
-    \ other=''} |Partnerkarte| deiner Hand hinzu.\nSie {Value1:plural one='hat' other='haben'}\
+  Description: "Füge zu Beginn deines Zuges {Value1} zufällige |Partnerkarte{Value1:plural\
+    \ one='' other='n'}| deiner Hand hinzu.\nSie {Value1:plural one='hat' other='haben'}\
     \ |Ätherisch| und {Value1:plural one='verliert' other='verlieren'} |Ätherisch|,\
     \ nachdem sie beschworen wurde{Value1:plural one='' other='n'}."
   DetailText: Diese |e:alternativen Karten| können höchstens 4 Mana kosten.
@@ -1136,7 +1136,7 @@ DeepFreeze:
 GatherFairy:
   Name: Feenversammlung
   UpgradedDescription: "Die maximale Anzahl an Handkarten wird auf {MaxHand} gesetzt.\n\
-    Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nAlle |Partner| auf der\
+    Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nAlle |Partner| auf deiner\
     \ Hand erhalten {Value2} |Einigkeit|."
   Description: "Die maximale Anzahl an Handkarten wird auf {MaxHand} gesetzt.\nZiehe\
     \ {Value1:plural one='% Karte' other='% Karten'}."
@@ -1171,13 +1171,13 @@ LarvaFriend:
   Description: '{FriendP}Füge einem zufälligen Feind {Value1} |Gift| zu.'
   FlavorText: Vergiss nicht, dir die Hände zu waschen, nachdem du ihre Hand geschüttelt
     hast.
-  ExtraDescription3: '{FriendU}Füge allen Feinden {Value2} |Gift| zu. Aktiviere einmal
-    den Schadenseffekt von |Gift|.'
+  ExtraDescription3: '{FriendU}Füge allen Feinden {Value2} |Gift| zu. Aktiviere den
+    Schadenseffekt von |Gift| sofort.'
   ExtraDescription1: '{FriendA}|Verbessere| alle Karten auf deiner Hand.'
   Name: Larva, Göttin der ewigen Nacht
 FairyTree:
-  Description: Jedes Mal, wenn ein |Partner| durch eine |Partnerkarte| beschworen
-    wird, erhalte {Value1} |Block|.
+  Description: Jedes Mal, wenn ein |Partner| durch das Spielen einer |Partnerkarte|
+    beschworen wird, erhalte {Value1} |Block|.
   Name: Residenz der Feen
 LilyFriend:
   ExtraDescription1: '{FriendA}Erhalte {ActiveMana}.'
@@ -2021,19 +2021,18 @@ IceSaber:
 LeidiFriend:
   Name: Letty, Verkörperung des Winters
   Description: '{FriendP}Füge einem zufälligen Feind |Kälte| zu.'
-  ExtraDescription3: '{FriendU}Verursache {Damage} Angriffsschaden und füge allen
-    Feinden |Kälte| zu.'
+  ExtraDescription3: '{FriendU}Verursache an allen Feinden {Damage} Angriffsschaden
+    und füge |Kälte| zu.'
   FlavorText: Der Winter kommt. Der Winter ist da. Erneut gegen den Winter kämpfen.
     Der Winter wird zurückkehren.
 Blizzard:
   Name: Schneesturm
-  Description: "Verursache an allen Feinden {Damage} Schaden.\nFüge allen Feinden\
-    \ |Kälte| zu.\nSchaue dir die unterste Karte in deinem Ziehstapel an. Wiederhole\
-    \ diesen Effekt zu Beginn deines nächsten Zuges, falls es eine blaue Karte ist."
+  Description: "Verursache an allen Feinden {Damage} Schaden und füge |Kälte| zu.\n\
+    Schaue dir die unterste Karte in deinem Ziehstapel an. Wiederhole diesen Effekt\
+    \ zu Beginn deines nächsten Zuges, falls es eine blaue Karte ist."
 DoubleMana:
   Name: Erwachen der Feen
-  Description: "Die Menge deines unbenutzten Manas wird verdoppelt.\n|Überziehen|\
-    \ {Value1}."
+  Description: "Verdopple dein derzeitiges Mana.\n|Überziehen| {Value1}."
 ZeroK:
   Name: Absoluter Nullpunkt
   Description: "Erhöhe den Schadensmultiplikator durch erneutes Zufügen von |Kälte|\
@@ -2331,8 +2330,8 @@ PassionAttackToDraw:
     Mische {SelfName} zurück in den Ziehstapel."
 LearnAstrology:
   Name: Astrologische Studien
-  Description: Wenn sich zu Beginn deines Zuges |Astrologie| nicht auf deiner Hand
-    befindet, füge |Astrologie| deiner Hand hinzu.
+  Description: Füge zu Beginn deines Zuges |Astrologie| deiner Hand hinzu, falls sich
+    kein Exemplar von |Astrologie| auf deiner Hand befindet.
   FlavorText: '"Wieso möchte sie nur die Sterne im Himmel anschauen und nicht mich?"'
 PassionDefense:
   Description: "Erhalte {Block} |Block|.\n|Leidenschaft|: Erhalte zusätzlich {Value1}\
@@ -3171,11 +3170,11 @@ DanmuJade:
   Name: Kokon des Regenbogen-Danmakus
 BestFriend:
   ExtraDescription1: "Wähle bis zu {Value1} |Partnerkarte{Value1:plural one='' other='n'}|\
-    \ aus. Sie {Value1:plural one='erhält' other='erhalten'} maximale |Einigkeit|.\n\
-    |d:Überfluss: Erhalte {Mana}.|"
+    \ auf deiner Hand aus. Sie {Value1:plural one='erhält' other='erhalten'} maximale\
+    \ |Einigkeit|.\n|d:Überfluss: Erhalte {Mana}.|"
   Description: "Wähle bis zu {Value1} |Partnerkarte{Value1:plural one='' other='n'}|\
-    \ aus. Sie {Value1:plural one='erhält' other='erhalten'} maximale |Einigkeit|.\n\
-    |Überfluss|: Erhalte {Mana}."
+    \ auf deiner Hand aus. Sie {Value1:plural one='erhält' other='erhalten'} maximale\
+    \ |Einigkeit|.\n|Überfluss|: Erhalte {Mana}."
   Name: Beste Freunde
 CirnoEcho:
   Name: Geschenk der Natur
@@ -3383,8 +3382,9 @@ Jealousy:
   FlavorText: 'Das Kind von nebenan: Cirno.'
 MinengZhuru:
   Name: Injektion mentaler Energie
-  Description: "Die |f:passive Fähigkeit| deiner |Partner| aktiviert sich ein weiteres\
-    \ Mal.\n|Einigkeit| wird durch die zusätzliche Aktivierung nicht beeinflusst."
+  Description: "Jedes Mal, wenn die |f:passive Fähigkeit| eines |Partners| aktiviert\
+    \ wird, aktiviere den Effekt ein weiteres Mal.\n|Einigkeit| wird durch die zusätzliche\
+    \ Aktivierung nicht beeinflusst."
 HuaBlock:
   Name: Kampfhaltung
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |temporäre Feuerkraft|."
@@ -3523,12 +3523,11 @@ AncestorDream:
   Name: Träume der Vorfahren
 FairyTrick:
   Description: "Verliere {Value1} Leben.\nBeschwöre 3 |e:Lichtfeen|, füge dabei eine\
-    \ zufällige dieser Karten deiner Hand hinzu und mische die den Rest in deinen\
-    \ Ziehstapel."
+    \ zufällige dieser Karten deiner Hand hinzu und mische den Rest in deinen Ziehstapel."
   Name: Feenstreich
   UpgradedDescription: "Verliere {Value1} Leben.\nBeschwöre 4 |e:Lichtfeen|, füge\
-    \ dabei eine zufällige dieser Karten deiner Hand hinzu und mische die den Rest\
-    \ in deinen Ziehstapel."
+    \ dabei eine zufällige dieser Karten deiner Hand hinzu und mische den Rest in\
+    \ deinen Ziehstapel."
   FlavorText: Aber natürlich sind es vier Feen in den 'Drei Feen des Lichts'!
 MoodAttack:
   Description: "Verursache {Damage} Schaden.\nJedes Mal, wenn {PlayerName} ihren |mentalen\
