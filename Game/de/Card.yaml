@@ -249,7 +249,7 @@ FinalSpark:
 KokoroDance:
   Name: Tanz der leeren Masken
   Description: "Jedes Mal, wenn ein Feind einen negativen Effekt erleidet, verursache\
-    \ and diesem Feind {Value1} Schaden. \n|Senke temporär die Feuerkraft| aller Feinde\
+    \ an diesem Feind {Value1} Schaden. \n|Senke temporär die Feuerkraft| aller Feinde\
     \ um {Value2}."
 HuiyeSuperExtraTurn:
   Name: Ende einer unvergänglichen Nacht
@@ -1302,9 +1302,9 @@ YinyangQueen:
     one='''' other=''n''}| deiner Hand hinzu.'
 XiaoemoBook:
   Name: Teuflischer Kodex
-  Description: "Sende 1 Karte von deiner Hand ins|Exil|.\nZiehe {Value1:plural one='%\
+  Description: "Sende 1 Karte von deiner Hand ins |Exil|.\nZiehe {Value1:plural one='%\
     \ Karte' other='% Karten'}.\n|Debüt|: Füge |Okkultismus| deiner Hand hinzu."
-  ExtraDescription1: "Sende 1 Karte von deiner Hand ins|Exil|.\nZiehe {Value1:plural\
+  ExtraDescription1: "Sende 1 Karte von deiner Hand ins |Exil|.\nZiehe {Value1:plural\
     \ one='% Karte' other='% Karten'}.\n|d:Debüt: Füge Okkultismus deiner Hand hinzu.|"
   FlavorText: Dieses Buch enthält allerlei Wissenswertes, wie beispielsweise "Mentos
     in Cola werfen".
@@ -1817,7 +1817,7 @@ AyaNews:
 ToolMana:
   Name: Energydrink
   Description: "Erhalte {Mana}.\n|Limitiert【{DeckCounter}】|"
-  FlavorText: Bestehen darauf, dass nur frisch gepresste Gurken aus der Genbu-Schlucht
+  FlavorText: Es wird darauf bestanden, dass nur frisch gepresste Gurken aus der Genbu-Schlucht
     verwendet werden. "Ich trinke es bereits seit meiner Kindheit." — Byakuren Hijiri
 ToolHeal:
   Name: Konservendose
@@ -2070,8 +2070,8 @@ SelfControl:
   Name: Selbstverwirklichung
   ExtraDescription2: Betrete |Gelassenheit|.
   Description: "|Wähle aus|: Betrete entweder |Leidenschaft| oder |Gelassenheit|.\n\
-    Erhalte am Ende deines Zuges |Feuerkraft|, wenn |Leidenschaft| aktiv ist. Erhalte\
-    \ stattdessen |Block|, wenn |Gelassenheit| aktiv ist."
+    Erhalte am Ende deines Zuges {Value1} |Feuerkraft|, wenn |Leidenschaft| aktiv\
+    \ ist. Erhalte stattdessen {Value2} |Block|, wenn |Gelassenheit| aktiv ist."
 PsycheLock:
   Description: "Beende den Zug von {PlayerName} und erhalte einen Extrazug.\nKann\
     \ nur gespielt werden, wenn dein |mentaler Zustand| sich 3 Mal geändert hat, während\
@@ -3615,10 +3615,14 @@ WanderlandAlice:
   Name: Alice im Wunderland
 TewiEscape:
   Name: Moderne Betrüger
+  Description: "Fliehe aus dem Kampf, die Belohnung wird durch {Value1} <sprite=\"\
+    Point\" name=\"Gold\"> ersetzt.\n{SelfName} kann nicht gegen Bosse verwendet werden."
+  FlavorText: '"Operation erfolgreich."'
 RemiliaMidnight:
   Name: Königin der Nacht
   DetailText: Die originalen Manakosten werden im ersten Akt beibehalten und reduzieren
     sich für jeden weiteren Akt um <sprite="ManaSprite" name="R">.
+  FlavorText: Die Nacht ist Remilias Reich.
 YukariKill:
   Description: "Besiege das ausgewählte Ziel sofort. \nVerursache stattdessen {Value1}\
     \ Schaden, falls es sich um eine Elite oder einen Boss handelt."
@@ -3629,3 +3633,4 @@ YonglinBurst:
   Description: "Verdopple den Angriffsschaden bis zum Ende des Zuges. \nZiehe {Value1:plural\
     \ one='% Karte' other='% Karten'}. \nErhalte {Mana}.\n|Überziehen| {Value2}."
   Name: Pille des Schmetterlingstraum
+  FlavorText: Kein Medikament von Eirin wirkt schneller als dieses hier.
