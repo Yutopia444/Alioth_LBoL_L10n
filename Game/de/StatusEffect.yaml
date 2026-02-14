@@ -11,24 +11,24 @@ InvincibleEternal:
 Fragil:
   Name: Fragil
   Brief: '{PlayerName} erhält {Value}% weniger |Block| und |Barriere| durch Karten.'
-  Description: "{PlayerName} erhält {Value}% weniger |Block| und |Barriere| durch\
-    \ Karten {Duration:plural one='bis zum Ende des Zuges' other='für die nächsten\
-    \ % Züge'}."
+  Description: "{PlayerName} erhält {Duration:plural one='bis zum Ende des Zuges'\
+    \ other='für die nächsten % Züge'} {Value}% weniger |Block| und |Barriere| durch\
+    \ Karten."
 Weak:
-  Description: Angriffe von {OwnerName} verursachen {Value}% weniger Schaden {Duration:plural
-    one='bis zum Ende des Zuges' other='für die nächsten % Züge'}.
-  Brief: Angriffe von {OwnerName} verursachen {Value}% weniger Schaden.
+  Description: "{OwnerName} verursacht {Duration:plural one='bis zum Ende des Zuges'\
+    \ other='für die nächsten % Züge'} {Value}% weniger Schaden durch Angriffe."
+  Brief: '{OwnerName} verursacht {Value}% weniger Schaden durch Angriffe.'
   Name: Schwach
 Vulnerable:
   Name: Verwundbar
-  Description: "{OwnerName} erleidet {Value}% mehr Schaden durch Angriffe {Duration:plural\
-    \ one='bis zum Ende des Zuges' other='für die nächsten % Züge'}."
+  Description: "{OwnerName} erleidet {Duration:plural one='bis zum Ende des Zuges'\
+    \ other='für die nächsten % Züge'} {Value}% mehr Schaden durch Angriffe."
   Brief: '{OwnerName} erleidet {Value}% mehr Schaden durch Angriffe.'
 ExtraTurn:
   Name: Extrazug
-  Description: "{OwnerName} erhält {Level:plural one='% Extrazug' other='% Extrazüge'}\
-    \ nach diesem Zug."
-  Brief: '{OwnerName} erhält einen weiteren Zug, sobald der Zug endet.'
+  Description: "{OwnerName} erhält nach diesem Zug {Level:plural one='% Extrazug'\
+    \ other='% Extrazüge'}."
+  Brief: '{OwnerName} erhält nach diesem Zug einen Extrazug.'
 Vampire:
   Brief: 'Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe
     Menge Leben. Furchteinflößend!'
@@ -43,15 +43,15 @@ Poison:
     |Gift| um 1.'
 MaoyuBlock:
   Name: Flauschig
-  Description: '{OwnerName} erhält nach einem Angriff {Level} |Block|.'
+  Description: '{OwnerName} erhält nach einem erlittenen Angriff {Level} |Block|.'
 LoveGirlDamageIncrease:
   Description: Die Gefühle von {OwnerName} wurden erwidert. Sie erleidet {Rate}% mehr
     Schaden.
   Name: Flatterndes Herz
 PhoneBillSe:
-  Description: "{OwnerName} stiehlt {Level} <sprite=\"Point\" name=\"Gold\"> mit jedem\
-    \ Anruf.\nWird {OwnerName} besiegt, erhalte {Count} <sprite=\"Point\" name=\"\
-    Gold\"> zurück."
+  Description: "{OwnerName} stiehlt mit jedem Anruf {Level} <sprite=\"Point\" name=\"\
+    Gold\">.\nWird {OwnerName} besiegt, erhält {PlayerName} {Count} <sprite=\"Point\"\
+    \ name=\"Gold\">."
   Name: Telefonrechnung
 AbsorbPower:
   Name: Rote Kugel
@@ -65,15 +65,15 @@ AbsorbSpirit:
 Lunatic:
   Name: Wahnsinn
   Description: "Magisches Licht scheint auf alle herab. {OwnerName} wird vom Wahnsinn\
-    \ getrieben und dadurch verstärkt.\nZu Beginn des Zuges erhält {PlayerName} {Mana}."
+    \ getrieben und dadurch verstärkt.\n{PlayerName} erhält zu Beginn des Zuges {Mana}."
 Fengyin:
   Name: Versiegelt
   Description: "{PlayerName} kann {Duration:plural one='bis zum Ende des Zuges' other='für\
     \ die nächsten % Züge'} keine Angriffskarten spielen."
 PrivateSquare:
   Name: Silbersperre
-  Description: "Jedes Mal, wenn {Limit} {Limit:plural one='Karte gespielt wird' other='Karten\
-    \ gespielt werden'}, verursacht {OwnerName} {Level} Schaden an {PlayerName}.\n\
+  Description: "Jedes Mal, wenn {Limit:plural one='% Karte gespielt wird' other='%\
+    \ Karten gespielt werden'}, verursacht {OwnerName} {Level} Schaden an {PlayerName}.\n\
     Verbleibende Karten: {Count}."
   Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten gespielt werden, verursacht
     <color=#B7F0FF>Sakuya Izayoi</color> Angriffsschaden an {PlayerName}.
@@ -82,7 +82,7 @@ EnemyLarva:
   Description: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, erhält {PlayerName}
     {Level} |Gift|.
 EnemyDayaojing:
-  Description: 'Am Ende des Zuges heilt {OwnerName} {Level} Leben.'
+  Description: '{OwnerName} heilt am Ende des Zuges {Level} Leben.'
   Name: Daiyouseis Unterstützung
 EnemyLily:
   Description: Die Aktionen von {OwnerName} werden verstärkt.
@@ -170,8 +170,8 @@ PoisonPotionSe:
   Brief: Jedes Mal, wenn |Instabiler Trank| aktiviert wird, füge zusätzlich |Gift|
     zu.
 TurnStartDontLoseBlock:
-  Description: "{OwnerName} verliert kein |Block| zu Beginn {Level:plural one='des\
-    \ nächsten Zuges' other='der nächsten % Züge'}."
+  Description: "{OwnerName} verliert zu Beginn {Level:plural one='des nächsten Zuges'\
+    \ other='der nächsten % Züge'} kein |Block|."
   Name: Block Beibehalten
   Brief: '{OwnerName} verliert für eine gewisse Anzahl an Zügen kein |Block| zu Beginn
     des Zuges.'
@@ -222,9 +222,9 @@ NextTurnGainShield:
   Name: Zukünftige Barriere
 GuangxueMicai:
   Name: Optische Tarnung
-  Description: "{OwnerName} erleidet nur halben Schaden durch Angriffe {Duration:plural\
-    \ one='bis zum Ende des Zuges' other='für die nächsten % Züge'}."
-  Brief: '{OwnerName} erleidet für eine gewisse Anzahl an Zügen nur halben Schaden
+  Description: "{OwnerName} erleidet {Duration:plural one='bis zum Ende des Zuges'\
+    \ other='für die nächsten % Züge'} halbierten Schaden durch Angriffe."
+  Brief: '{OwnerName} erleidet für eine gewisse Anzahl an Zügen halbierten Schaden
     durch Angriffe.'
 DroneBlock:
   Name: Defensive Matrix
@@ -233,13 +233,13 @@ DroneBlock:
 Drowning:
   Name: Ertrinken
   ExtraDescription: "{OwnerName} erleidet am Ende des Zuges {Level} Schaden.\nBesiege\
-    \ das Ertrunkene Mädchen um diesen Effekt zu entfernen."
+    \ das Ertrunkene Mädchen, um diesen Effekt zu entfernen."
   Description: '{OwnerName} erleidet am Ende des Zuges {Level} Schaden.'
   Brief: '{OwnerName} erleidet am Ende des Zuges Schaden.'
 FoxCharm:
   Description: "Es {Limit:plural one='kann' other='können'} nicht mehr als {Limit}\
     \ Karte{Limit:plural one='' other='n'} pro Zug gespielt werden.\nVerbleibende\
-    \ Karten: {Count}.\nBesiege |Fuchs-Youkai| um diesen Effekt zu entfernen."
+    \ Karten: {Count}.\nBesiege |Fuchs-Youkai|, um diesen Effekt zu entfernen."
   Name: Bann des Fuchses
 FirepowerIsJustice:
   Name: Macht geht vor Recht!
@@ -291,7 +291,7 @@ ColdPotionSe:
     zu.
 TempFirepower:
   Name: Temporäre Feuerkraft
-  Description: "Bis zum Ende des Zuges, erhalte {Level} |Feuerkraft|.\n|Feuerkraft|\
+  Description: "Erhalte bis zum Ende des Zuges {Level} |Feuerkraft|.\n|Feuerkraft|\
     \ erhöht den Schaden von Angriffen."
   Brief: "|Feuerkraft| wurde bis zum Ende des Zuges erhöht.\n|Feuerkraft| erhöht den\
     \ Schaden von Angriffen."
@@ -303,7 +303,7 @@ Firepower:
 TempFirepowerNegative:
   Brief: "|Feuerkraft| wurde bis zum Ende des Zuges gesenkt.\n|Feuerkraft| erhöht\
     \ den Schaden von Angriffen."
-  Description: "Bis zum Ende des Zuges, verliere {Level} |Feuerkraft|.\n|Feuerkraft|\
+  Description: "Verliere bis zum Ende des Zuges {Level} |Feuerkraft|.\n|Feuerkraft|\
     \ erhöht den Schaden von Angriffen."
   Name: Temporär Feuerkraft Senken
 FirepowerNegative:
@@ -315,7 +315,7 @@ TempSpirit:
   Name: Temporärer Geist
   Brief: "|Geist| wurde bis zum Ende des Zuges erhöht.\n|Geist| erhöht die Menge an\
     \ |Block| und |Barriere| durch Karten."
-  Description: "Bis zum Ende des Zuges, erhalte {Level} |Geist|.\n|Geist| erhöht die\
+  Description: "Erhalte bis zum Ende des Zuges {Level} |Geist|.\n|Geist| erhöht die\
     \ Menge an |Block| und |Barriere| durch Karten."
 Spirit:
   Name: Geist
@@ -324,8 +324,8 @@ Spirit:
   Brief: "|Geist| wurde erhöht.\n|Geist| erhöht die Menge an |Block| und |Barriere|\
     \ durch Karten."
 TempSpiritNegative:
-  Description: "Bis zum Ende des Zuges, verliere {Level} |Geist|.\n|Geist| erhöht\
-    \ die Menge an |Block| und |Barriere| durch Karten."
+  Description: "Verliere bis zum Ende des Zuges {Level} |Geist|.\n|Geist| erhöht die\
+    \ Menge an |Block| und |Barriere| durch Karten."
   Brief: "|Geist| wurde bis zum Ende des Zuges gesenkt.\n|Geist| erhöht die Menge\
     \ an |Block| und |Barriere| durch Karten."
   Name: Temporär Geist Senken
@@ -337,9 +337,9 @@ SpiritNegative:
   Name: Geist Senken
 TempControl:
   Name: Temporäre Kontrolle
-  Description: "Bis zum Ende des Zuges, erhalte {Level} |Kontrolle|.\n|Kontrolle|\
-    \ verbessert die Effekte von |Puppen|."
-  Brief: "|Kontrolle| wurde erhöht bis zum Ende des Zuges.\n|Kontrolle| verbessert\
+  Description: "Erhalte bis zum Ende des Zuges {Level} |Kontrolle|.\n|Kontrolle| verbessert\
+    \ die Effekte von |Puppen|."
+  Brief: "|Kontrolle| wurde bis zum Ende des Zuges erhöht.\n|Kontrolle| verbessert\
     \ die Effekte von |Puppen|."
 Control:
   Name: Kontrolle
@@ -347,9 +347,9 @@ Control:
     \ |Puppen|."
   Brief: "|Kontrolle| wurde erhöht.\n|Kontrolle| verbessert die Effekte von |Puppen|."
 TempControlNegative:
-  Description: "Bis zum Ende des Zuges, verliere {Level} |Kontrolle|.\n|Kontrolle|\
+  Description: "Verliere bis zum Ende des Zuges {Level} |Kontrolle|.\n|Kontrolle|\
     \ verbessert die Effekte von |Puppen|."
-  Brief: "|Kontrolle| wurde gesenkt bis zum Ende des Zuges.\n|Kontrolle| verbessert\
+  Brief: "|Kontrolle| wurde bis zum Ende des Zuges gesenkt.\n|Kontrolle| verbessert\
     \ die Effekte von |Puppen|."
   Name: Temporär Kontrolle Senken
 ControlNegative:
@@ -373,8 +373,8 @@ CantDrawThisTurn:
   Name: Ziehsperre
 TimeIsLimited:
   Name: Zeitlimit
-  Brief: Karten kosten mehr Mana bis zum nächsten feindlichen Zug.
-  Description: Karten kosten {Mana} mehr bis zum nächsten feindlichen Zug.
+  Brief: Karten kosten bis zum nächsten feindlichen Zug mehr Mana.
+  Description: Karten kosten bis zum nächsten feindlichen Zug {Mana} mehr.
 NextTurnGainGraze:
   Description: '{OwnerName} erhält zu Beginn des nächsten Zuges {Level} |Ausweichen|.'
   Brief: '{OwnerName} erhält zu Beginn des nächsten Zuges |Ausweichen|.'
@@ -392,7 +392,7 @@ AutoQumobangSe:
   Brief: Ziehe zusätzliche Karten zu Beginn der nächsten Züge.
   Name: Furioses Gohei
 EnemyVulnerable:
-  Description: '{PlayerName} erhält {Level} |Verwundbar| nachdem alle Feinde ihren
+  Description: '{PlayerName} erhält {Level} |Verwundbar|, nachdem alle Feinde ihren
     Zug beendet haben.'
   Name: Bevorstehendes Verwunden
 NextTurnGainBlock:
@@ -420,16 +420,16 @@ ScarletDestiny:
   Description: "Nachdem {Limit} Karte{Limit:plural one='' other='n'} gespielt wurden,\
     \ beende den Zug von {PlayerName}.\nVerbleibende Karten: {Count}."
 LimitedDamage:
-  Brief: '{OwnerName} kann pro Zug nur eine gewisse Menge an Schaden erleiden.'
+  Brief: '{OwnerName} kann nur eine gewisse Menge an Schaden pro Zug erleiden.'
   Description: '{OwnerName} kann nur bis zu {Limit} Schaden pro Zug erleiden. Verbleibender
     Schaden: {Count}.'
   Name: Befreier der Gegenstände
 AmuletForCard:
   Name: Bannkreis
   Description: Annulliert das Hinzufügen der nächsten {Level:plural one='Statuskarte'
-    other='% Statuskarten'} und sendet die Karte {Level:plural one='' other='n'} ins
+    other='% Statuskarten'} und sendet die Karte{Level:plural one='' other='n'} ins
     |Exil|.
-  Brief: Annulliert das Hinzufügen der nächsten Statuskarten und sende die Karten
+  Brief: Annulliert das Hinzufügen der nächsten Statuskarten und sendet die Karten
     ins |Exil|.
 JunkoLily:
   Name: Mörderische Lilien
@@ -544,13 +544,12 @@ CommonFireSe:
   Name: Gewöhnliche Macht
 DeathExplodeCount:
   Name: Rachekugel
-  Description: "Wenn {OwnerName} besiegt wird, verursache an {PlayerName} {Level}\
-    \ Schaden.\nNach {Count:plural one='% Zug' other='% Zügen'} sprengt sich {OwnerName}\
-    \ und verursacht die doppelte Menge an Schaden."
+  Description: "Wird {OwnerName} besiegt, erleidet {PlayerName} {Level} Schaden.\n\
+    Nach {Count:plural one='% Zug' other='% Zügen'} sprengt sich {OwnerName} und verursacht\
+    \ die doppelte Menge an Schaden."
 DeathExplodeNotCount:
-  Description: "Wenn {OwnerName} besiegt wird, verursache an {PlayerName} {Level}\
-    \ Schaden.\nVerursache die doppelte Menge an Schaden, falls sich {OwnerName} stattdessen\
-    \ sprengt."
+  Description: "Wird {OwnerName} besiegt, erleidet {PlayerName} {Level} Schaden.\n\
+    Die Menge des Schadens wird verdoppelt, falls sich {OwnerName} stattdessen sprengt."
   Name: Rachekugel
 SuwakoHex:
   Description: Zu Beginn deines Zuges wird eine zufällige Karte in deiner Hand |Verhext|
@@ -593,10 +592,10 @@ EvilTuiZhiSe:
     in diesem Zug {Level:plural one='wird' other='werden'} zweimal aktiviert.
   Name: Austreibung des Bösen
 BossAct:
-  Description: Nachdem {OwnerName} {Count} Schaden erlitten hat, führe eine Aktion
-    aus, ohne den Zug von {PlayerName} zu beenden.
-  Brief: Nachdem {OwnerName} eine gewisse Menge an Schaden erlitten hat, führe eine
-    Aktion aus, ohne den Zug von {PlayerName} zu beenden.
+  Description: '{OwnerName} führt eine Aktion aus, ohne den Zug von {PlayerName} zu
+    beenden, nachdem {Count} Schaden erlitten wurde.'
+  Brief: '{OwnerName} führt eine Aktion aus, ohne den Zug von {PlayerName} zu beenden,
+    nachdem eine gewisse Menge an erlitten wurde.'
   Name: Übergangsphase
 DoubleLianhuadieSe:
   Brief: Jedes Mal, wenn {PlayerName} |Block| oder |Barriere| erhält, verursache an
@@ -619,9 +618,9 @@ SuperExtraTurn:
 LockedOn:
   Name: Anvisieren
   Description: "{OwnerName} erleidet {Level} mehr Schaden durch Angriffe.\nVerliere\
-    \ 1 |Anvisieren| zu Beginn des Zuges."
-  Brief: "{OwnerName} erleidet mehr Schaden durch Angriffe.\nVerliere 1 |Anvisieren|\
-    \ zu Beginn des Zuges."
+    \ zu Beginn des Zuges 1 |Anvisieren|."
+  Brief: "{OwnerName} erleidet mehr Schaden durch Angriffe.\nVerliere zu Beginn des\
+    \ Zuges 1 |Anvisieren|."
 YinyangXueyinSe:
   Brief: Erhalte |temporäre Feuerkraft| und |temporärer Geist|, nachdem eine |Yin-Yang-Kugel|
     gespielt wurde.
@@ -756,7 +755,7 @@ PowerByDefense:
   Name: Unbeugsamer Schild
 EnemyTuanzi:
   Name: Leckere Dango
-  Description: Am Ende des Zuges heilt {OwnerName} {Level} Leben.
+  Description: '{OwnerName} heilt am Ende des Zuges {Level} Leben.'
 DoremyLevel:
   Name: Traumstufe
   Description: Je tiefer der Traum, desto stärker werden die Angriffe von {OwnerName}.
@@ -841,7 +840,7 @@ LoseSpiritSe:
 LunaticTorch:
   Name: Fackel des Wahnsinns
   Description: "Die Fackel von {OwnerName} scheint in einem seltsamen Licht. Alle\
-    \ Feinde werden vom Wahnsinn getrieben.\nZu Beginn des Zuges erhält {PlayerName}\
+    \ Feinde werden vom |Wahnsinn| getrieben.\n{PlayerName} erhält zu Beginn des Zuges\
     \ {Mana}."
 RinAura:
   Name: Loderndes Feuer
@@ -849,11 +848,10 @@ RinAura:
     durch |Rachekugel| {Level} zusätzlichen Schaden.'
 EnemyMaid:
   Name: Kasumis Aufräumarbeiten
-  Description: '{OwnerName} fügt am Ende des Zuges {Level} Schaden an {PlayerName}
-    zu.'
+  Description: '{OwnerName} verursacht am Ende des Zuges {Level} Schaden an {PlayerName}.'
 TurnStartPurify:
   Name: Zukünftiges Läutern
-  Description: "Zu Beginn deines nächsten Zuges erhält {PlayerName} {Level} |Läutern|.\n\
+  Description: "{PlayerName} erhält zu Beginn ihres nächsten Zuges {Level} |Läutern|.\n\
     Entferne diesen Effekt am Ende des Zuges."
 RockHardAura:
   Name: Schutz des Schlüsselsteins
@@ -981,7 +979,7 @@ LongLight:
   Name: Leuchtendes Stativ
 EnemyLockedOn:
   Name: Bevorstehendes Anvisieren
-  Description: '{PlayerName} erhält {Level} |Anvisieren| nachdem alle Feinde ihren
+  Description: '{PlayerName} erhält {Level} |Anvisieren|, nachdem alle Feinde ihren
     Zug beendet haben.'
 PurifyModule:
   Name: Läuterungsmodul
@@ -1379,9 +1377,9 @@ PaidTdm:
   Name: Kostenloses Nachfüllen
 RinSummon:
   Name: Wiederbelebung der Geister
-  Description: "{OwnerName} kann {Level} {Level:plural one='rachsüchtigen Geist' other='rachsüchtige\
-    \ Geister'} wiederbeleben.\nDie Anzahl der Geister wird {Limit:plural one='jede\
-    \ Runde' other='alle % Runden'} um 1 erhöht."
+  Description: "{OwnerName} kann {Level:plural one='% rachsüchtigen Geist' other='%\
+    \ rachsüchtige Geister'} wiederbeleben.\nDie Anzahl der Geister wird {Limit:plural\
+    \ one='jede Runde' other='alle % Runden'} um 1 erhöht."
 YonglinBurstSe:
   Brief: Verdopple den Angriffsschaden von {PlayerName} für eine gewisse Anzahl an
     Zügen.
