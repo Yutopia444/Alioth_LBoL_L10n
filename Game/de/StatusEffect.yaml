@@ -106,8 +106,8 @@ RockHard:
   Description: '{OwnerName} erleidet {Level} weniger Schaden durch ungeblockte Angriffe.'
 LouguanJianSe:
   Name: Roukanken
-  Description: Nachdem {OwnerName} Angriffsschaden zugefügt hat, erhält das Ziel {Level}
-    |Anvisieren|.
+  Description: Nachdem {OwnerName} Angriffsschaden verursacht hat, erhält das Ziel
+    {Level} |Anvisieren|.
 KokoroXi:
   Name: Freude
   Description: Beschwöre ein |Menreiki|, nachdem {OwnerName} eine Aktion durchgeführt
@@ -122,9 +122,9 @@ FlatPeach:
 EnemyEnergy:
   Name: Energie
   Description: '{OwnerName} erhält für jeden Schaden die gleiche Menge an <sprite="Point"
-    name="Power">. Wird verwendet, um |Zauberkarten| zu verwenden.'
+    name="Power">. Wird verwendet, um |Zauberkarten| zu entfesseln.'
 YuyukoDeath:
-  Description: "{OwnerName} verliert {Level} Leben am Ende des Zuges.\n{OwnerName}\
+  Description: "{OwnerName} verliert am Ende des Zuges {Level} Leben.\n{OwnerName}\
     \ kann kein Leben erhalten."
   Name: Gesetz der Sterblichkeit
 LimaoDisguiser:
@@ -140,14 +140,15 @@ MirrorImage:
   Name: Spiegelbild
 SingleJiandaoSe:
   Name: Riesige Scherenklinge
-  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, erleide {Level} Schaden.
+  Description: Jedes Mal, wenn {PlayerName} eine Karte spielt, erleidet sie {Level}
+    Schaden.
 ReimuFestivalSe:
-  Brief: 'Erhalte zu Beginn des Zuges |temporäre Feuerkraft|.'
-  Description: 'Erhalte zu Beginn des Zuges {Level} |temporäre Feuerkraft|.'
-  Name: Tanz der heiligen Sakura
+  Brief: '{PlayerName} erhält zu Beginn des Zuges |temporäre Feuerkraft|.'
+  Description: '{PlayerName} erhält zu Beginn des Zuges {Level} |temporäre Feuerkraft|.'
+  Name: Tanz der heiligen Kirschblüte
 ReimuShrineSe:
-  Brief: 'Erhalte zu Beginn des Zuges |temporärer Geist|.'
-  Description: 'Erhalte zu Beginn des Zuges {Level} |temporärer Geist|.'
+  Brief: '{PlayerName} erhält zu Beginn des Zuges |temporärer Geist|.'
+  Description: '{PlayerName} erhält zu Beginn des Zuges {Level} |temporärer Geist|.'
   Name: Hakurei-Tempelmesse
 ReimuFreeAttackSe:
   Brief: Die nächsten Angriffskarten kosten {Mana}.
@@ -156,9 +157,9 @@ ReimuFreeAttackSe:
     % Angriffskarten kosten'} {Mana}.
 SolarSystemSe:
   Name: Orrerys Sonne
-  Brief: 'Zu Beginn deines Zuges erhält {PlayerName} |Aufladungen|.'
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Aufladung{Level:plural
-    one='' other='en'}|.
+  Brief: '{PlayerName} erhält zu Beginn des Zuges |Aufladungen|.'
+  Description: "{PlayerName} erhält zu Beginn des Zuges {Level} |Aufladung{Level:plural\
+    \ one='' other='en'}|."
 PotionBaseDamageSe:
   Description: '|Instabiler Trank| verursacht {Level} zusätzlichen Schaden.'
   Name: Explosive Komponenten
@@ -387,9 +388,9 @@ DreamServant:
   Description: '{OwnerName} kann keinen Schaden erleiden.'
   Name: Traumbewohner
 AutoQumobangSe:
-  Description: "Zu Beginn des Zuges, ziehe zusätzliche {Level} Karte{Level:plural\
-    \ one='' other='n'}.\nVerbleibende Züge: {Count}"
-  Brief: Ziehe zusätzliche Karten zu Beginn der nächsten Züge.
+  Description: "Ziehe zu Beginn des Zuges {Level} zusätzliche Karte{Level:plural one=''\
+    \ other='n'}.\nVerbleibende Züge: {Count}"
+  Brief: Ziehe zu Beginn der nächsten Züge zusätzliche Karten.
   Name: Furioses Gohei
 EnemyVulnerable:
   Description: '{PlayerName} erhält {Level} |Verwundbar|, nachdem alle Feinde ihren
@@ -436,10 +437,10 @@ JunkoLily:
   Description: Jedes Mal, wenn |Läuterndes Licht| aktiviert wird, verliert {PlayerName}
     {Level} Leben.
 UpgradePotionSe:
-  Brief: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabiler Trank|
-    im Zieh- und Ablagestapel.
-  Description: Am Ende deines Zuges, erhöhe den verursachten Schaden durch |Instabiler
-    Trank| im Zieh- und Ablagestapel um {Level}.
+  Brief: Erhöhe am Ende des Zuges von {PlayerName} den verursachten Schaden durch
+    |Instabiler Trank| im Zieh- und Ablagestapel.
+  Description: Erhöhe am Ende des Zuges von {PlayerName} den verursachten Schaden
+    durch |Instabiler Trank| im Zieh- und Ablagestapel um {Level}.
   Name: Tränke verfeinern
 ModuoluoFireSe:
   Name: Enas Feuer
@@ -457,12 +458,13 @@ ZhenmiaowanAbilitySe:
   Description: Karten kosten {Mana} weniger.
   Brief: Karten kosten {Mana} weniger.
 GainKnifeSe:
-  Brief: Zu Beginn deines Zuges, füge deiner Hand |Wurfmesser| hinzu.
-  Description: Zu Beginn deines Zuges, füge deiner Hand {Level} |Wurfmesser| hinzu.
+  Brief: Füge zu Beginn des Zuges von {PlayerName} |Wurfmesser| deiner Hand hinzu.
+  Description: Füge zu Beginn des Zuges von {PlayerName} {Level} |Wurfmesser| deiner
+    Hand hinzu.
   Name: Sternenklarer Schwerttanz
 PerfectServantUSe:
-  Brief: Zu Beginn des Zuges von {OwnerName}, erhalte {Mana} und ziehe Karten.
-  Description: Zu Beginn des Zuges von {OwnerName}, erhalte {Level} {Mana} und ziehe
+  Brief: Erhalte zu Beginn des Zuges von {OwnerName} {Mana} und ziehe Karten.
+  Description: Erhalte zu Beginn des Zuges von {OwnerName} {Level} {Mana} und ziehe
     {Level:plural one='% Karte' other='% Karten'}.
   Name: Zusätzliche Lösungen
 BailianFireSe:
@@ -552,12 +554,12 @@ DeathExplodeNotCount:
     Die Menge des Schadens wird verdoppelt, falls sich {OwnerName} stattdessen sprengt."
   Name: Rachekugel
 SuwakoHex:
-  Description: Zu Beginn deines Zuges wird eine zufällige Karte in deiner Hand |Verhext|
-    und dadurch nutzlos.
+  Description: Zu Beginn des Zuges von {PlayerName} wird eine zufällige Karte auf
+    ihrer Hand |verhext| und dadurch nutzlos.
   Name: Hex
-  ExtraDescription: "Zu Beginn deines Zuges wird eine zufällige Karte auf deiner Hand\
-    \ |verhext|.\n(Dieser Effekt wurde bereits aktiviert und wird im nächsten Zug\
-    \ von {OwnerName} zurückgesetzt.)"
+  ExtraDescription: "Zu Beginn des Zuges von {PlayerName} wird eine zufällige Karte\
+    \ auf ihrer Hand |verhext|.\n(Dieser Effekt wurde bereits aktiviert und wird im\
+    \ nächsten Zug von {OwnerName} zurückgesetzt.)"
 Curiosity:
   Description: Jedes Mal, wenn {PlayerName} eine |Talentkarte| spielt, erhält {OwnerName}
     {Level} |Feuerkraft|.
@@ -578,13 +580,13 @@ JiangshenSe:
   Name: Spirituelle Meditation
   Brief: '|Verbessere| bis zum Ende des Kampfes alle hinzugefügten Karten.'
 FreeFlySe:
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
-  Brief: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
+  Description: '{PlayerName} erhält zu Beginn ihres Zuges {Level} {Mana}.'
+  Brief: '{PlayerName} erhält zu Beginn ihres Zuges {Level} {Mana}.'
   Name: Freiflug
 DanceAroundLakeSe:
-  Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe Karten.
-  Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, ziehe {Level} Karte{Level:plural
-    one='' other='n'}.
+  Brief: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, ziehe Karten.
+  Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, ziehe {Level:plural
+    one='% Karte' other='% Karten'}.
   Name: Tanz am Seeufer
 EvilTuiZhiSe:
   Brief: Die nächsten Angriffskarten in diesem Zug werden zweimal aktiviert.
@@ -628,7 +630,7 @@ YinyangXueyinSe:
     eine |Yin-Yang-Kugel| gespielt wurde.
   Name: Yin-Yang-Rune
 YouxiangMoonSe:
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} {Mana}.
+  Description: '{PlayerName} erhält zu Beginn ihres Zuges {Level} {Mana}.'
   Name: Natürliche Schönheit
   Brief: Zu Beginn deines Zuges erhält {PlayerName} {Mana}.
 PerfectServantWSe:
@@ -638,25 +640,25 @@ PerfectServantWSe:
     auf der Hand eine zufällige Menge Mana weniger.
   Name: Einsatzbereit
 MihuanJackSe:
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Zeitimpuls{Level:plural
+  Description: Erhalte zu Beginn des Zuges von {PlayerName} {Level} |Zeitimpuls{Level:plural
     one='' other='e'}|.
-  Brief: Zu Beginn deines Zuges erhält {PlayerName} |Zeitimpulse|.
+  Brief: Erhalte zu Beginn des Zuges von {PlayerName} |Zeitimpulse|.
   Name: Jack die verrückte Schlitzerin
 DrawPhaseAddKnife:
-  Description: Ziehe keine Karten zu Beginn des Zuges, füge stattdessen {Limit} |Wurfmesser|
+  Description: Ziehe zu Beginn des Zuges keine Karten, füge stattdessen {Limit} |Wurfmesser|
     deiner Hand hinzu.
-  Brief: Ziehe keine Karten zu Beginn des Zuges, füge stattdessen |Wurfmesser| deiner
+  Brief: Ziehe zu Beginn des Zuges keine Karten, füge stattdessen |Wurfmesser| deiner
     Hand hinzu.
   Name: Wurfmesserstapel
-  ExtraDescription: "Ziehe keine Karten zu Beginn des Zuges, füge stattdessen {Limit}\
+  ExtraDescription: "Ziehe zu Beginn des Zuges keine Karten, füge stattdessen {Limit}\
     \ |Wurfmesser| deiner Hand hinzu.\n{SelfName} ist inaktiv und wird erst entfernt,\
     \ nachdem dieser Effekt aktiviert wurde."
 BrokenTimelineSe:
-  Description: Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana von der
-    Manabasis.
+  Description: Erhalte zu Beginn des nächsten Zuges von {PlayerName} kein Mana von
+    der Manabasis.
   Name: Kaputte Zeitlinie
-  Brief: Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana von der Manabasis.
-  ExtraDescription: "Zu Beginn deines nächsten Zuges erhält {PlayerName} kein Mana\
+  Brief: Erhalte zu Beginn des nächsten Zuges von {PlayerName} kein Mana von der Manabasis.
+  ExtraDescription: "Erhalte zu Beginn des nächsten Zuges von {PlayerName} kein Mana\
     \ von der Manabasis.\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser\
     \ Effekt aktiviert wurde."
 AutoKnifeSe:
@@ -684,7 +686,8 @@ EvilMaidSe:
   Name: Dienstmädchen des Teufels
   Description: Die Angriffe von {OwnerName} verursachen für {Level:plural one='diesen
     Zug' other='die nächsten % Züge'} doppelten Schaden.
-  Brief: Angriffe verursachen für die nächsten Züge doppelten Schaden.
+  Brief: Die Angriffe von {OwnerName} verursachen für die nächsten Züge doppelten
+    Schaden.
 EvilMaidDoubleAttack:
   Name: Teuflische Kräfte
   Brief: Der Angriffsschaden von {PlayerName} ist für eine gewisse Anzahl an Zügen
@@ -693,10 +696,10 @@ EvilMaidDoubleAttack:
     {Duration}).'
 SpecialClockSe:
   Name: Spezielle Stoppuhr
-  Description: Zu Beginn deines Zuges, wirf {Level:plural one='eine Karte' other='bis
-    zu % Karten'} ab und ziehe die gleiche Menge nach.
-  Brief: Zu Beginn deines Zuges, wirf eine gewisse Anzahl an Karten ab und ziehe die
-    gleiche Menge nach.
+  Description: Wirf zu Beginn des Zuges von {PlayerName} {Level:plural one='% Karte'
+    other='bis zu % Karten'} ab und ziehe die gleiche Menge nach.
+  Brief: Wirf zu Beginn des Zuges von {PlayerName} eine gewisse Anzahl an Karten ab
+    und ziehe die gleiche Menge nach.
 DangerousMagicianSe:
   Name: Gefährliche Illusionistin
   Description: Jedes Mal, wenn |Wurfmesser| aktiviert wird, erhält {PlayerName} {Level}
@@ -712,9 +715,10 @@ FreezeBulletSe:
     \ nächsten % feindlichen Angriffen'} |Kälte| an den Angreifer zu.\nZu Beginn des\
     \ nächsten Zuges von {OwnerName}, entferne diesen Effekt."
 SakuyaInvestigateSe:
-  Description: Zu Beginn deines Extrazuges, füge allen Feinden {Level} |Anvisieren|
+  Description: Füge zu Beginn des Extrazuges von {PlayerName} allen Feinden {Level}
+    |Anvisieren| zu.
+  Brief: Füge zu Beginn des Extrazuges von {PlayerName} allen Feinden |Anvisieren|
     zu.
-  Brief: Zu Beginn deines Extrazuges, füge allen Feinden |Anvisieren| zu.
   Name: Zeit anhaltender Detektiv
 SilverBladeSe:
   Name: Silberdimension
@@ -723,9 +727,9 @@ SilverBladeSe:
     |Barriere|.
 StopTimeSe:
   Name: Eingefrorene Zeit
-  Description: Am Ende deines Zuges behält {PlayerName} {Level} zufälliges unbenutztes
+  Description: Behalte am Ende des Zuges von {PlayerName} {Level} zufälliges unbenutztes
     Mana.
-  Brief: Am Ende deines Zuges behält {PlayerName} eine gewisse Menge an zufälliges
+  Brief: Behalte am Ende des Zuges von {PlayerName} eine gewisse Menge an zufälliges
     unbenutztes Mana.
 TimeMagicSe:
   Name: Zeitmagie
@@ -771,15 +775,17 @@ BoliPhantomSe:
     other='kosten'} temporär| {Mana}.
 TaijiLiangyiSe:
   Name: Die Geburt des Yin-Yang
-  Description: Wenn sich zu Beginn des Zuges von {PlayerName} |Yin-Yang-Kugel| {Level:plural
-    one='nicht' other='weniger als % Mal'} auf deiner Hand befindet, füge |Yin-Yang-Kugel|
-    hinzu, bis sich {Level} auf deiner Hand {Level:plural one='befindet' other='befinden'}.
+  Description: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als {Level}
+    |Yin-Yang-Kugel| auf deiner Hand befindet, füge |Yin-Yang-Kugel| hinzu, bis sich
+    {Level:plural one='% Exemplar' other='% Exemplare'} auf deiner Hand {Level:plural
+    one='befindet' other='befinden'}.
   Brief: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als eine gewisse Anzahl
     an |Yin-Yang-Kugel| auf deiner Hand befinden, füge bis zu dieser Anzahl |Yin-Yang-Kugel|
     deiner Hand hinzu.
 HuanxiangBlockSe:
-  Brief: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName} |Block|.
-  Description: Jedes Mal, wenn eine Karte ins |Exil| gelegt wird, erhält {PlayerName}
+  Brief: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, erhält {PlayerName}
+    |Block|.
+  Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, erhält {PlayerName}
     {Level} |Block|.
   Name: Am Rande der Fantasie
 DreamExpressSe:
@@ -801,11 +807,10 @@ Sleep:
     \ aufgefüllt.\nErwacht, sobald {Count} Züge vergangen sind oder sie Schaden erleidet."
 Burst:
   Name: Durchbruch
-  Brief: "Wenn {PlayerName} |Durchbruch| aktiviert, erhalte {Mana}.\nAlle Angriffe\
-    \ verursachen {DamageRate} Mal so viel Schaden.\nAm Ende deines Zuges, verliere\
-    \ |Durchbruch|."
-  Description: "Wenn {PlayerName} |Durchbruch| aktiviert, erhalte {Mana}.\nAlle Angriffe\
-    \ verursachen {DamageRate} Mal so viel Schaden.\nAm Ende deines Zuges, verliere\
+  Brief: "Wenn {PlayerName} |Durchbruch| betritt, erhalte {Mana}.\nAlle Angriffe verursachen\
+    \ {DamageRate} Mal so viel Schaden.\nVerlasse am Ende deines Zuges |Durchbruch|."
+  Description: "Wenn {PlayerName} |Durchbruch| betritt, erhalte {Mana}.\nAlle Angriffe\
+    \ verursachen {DamageRate} Mal so viel Schaden.\nVerlasse am Ende deines Zuges\
     \ |Durchbruch|."
 Charging:
   Brief: Wenn {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
@@ -872,17 +877,17 @@ ShendengSe:
     {Level} |Schwach|, |Fragil| oder |Verwundbar|.
 InfinityGemsSe:
   Name: Juwelenbesetzter Handschuh
-  Description: "Zu Beginn des Zuges von {OwnerName}, sende die Hälfte aller Karten\
+  Description: "Sende zu Beginn des Zuges von {OwnerName} die Hälfte aller Karten\
     \ auf dem Schlachtfeld ins |Exil|, unabhängig ihrer Position.\nVerbleibende Anwendungen:\
     \ {Count}."
 SakuraWandSe:
   Name: Geflügelter Schlüssel
   Description: '{OwnerName} kann zweimal so häufig angreifen.'
 BoliDajiejieSe:
-  Name: Große Hakurei Barriere
-  Description: Für den Rest des Kampfes, wandle {OwnerName}s |Block| in dieselbe Menge
+  Name: Große Hakurei-Barriere
+  Description: Wandle für den Rest des Kampfes {OwnerName}s |Block| in dieselbe Menge
     |Barriere| um.
-  Brief: Für den Rest des Kampfes, wandle {OwnerName}s |Block| in dieselbe Menge |Barriere|
+  Brief: Wandle für den Rest des Kampfes {OwnerName}s |Block| in dieselbe Menge |Barriere|
     um.
 MomentPowerSe:
   Description: Jedes Mal, wenn {OwnerName} |temporäre Feuerkraft| oder |temporärer
@@ -891,17 +896,17 @@ MomentPowerSe:
     erhält, wandle jeweils einen Teil davon in |Feuerkraft| oder |Geist| um.
   Name: Sofortiger Dimensionsriss
 SenluoJiejieSe:
-  Brief: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
-  Description: Zu Beginn des Zuges sprengt {OwnerName} ihre gesamte |Barriere|.
+  Brief: '{OwnerName} sprengt zu Beginn des Zuges ihre gesamte |Barriere|.'
+  Description: '{OwnerName} sprengt zu Beginn des Zuges ihre gesamte |Barriere|.'
   Name: Zusammenführung der Grenzen
 BurstUpgrade:
   Description: Erhöht den Schadensmultiplikator von |Durchbruch|.
   Brief: Erhöht den Schadensmultiplikator von |Durchbruch|.
   Name: Voller Einsatz
 BurstDrawSe:
-  Description: Wenn |Durchbruch| aktiviert wird, ziehe {Level:plural one='% Karte'
+  Description: Wenn |Durchbruch| betreten wird, ziehe {Level:plural one='% Karte'
     other='% Karten'}.
-  Brief: Wenn |Durchbruch| aktiviert wird, ziehe Karten.
+  Brief: Wenn |Durchbruch| betreten wird, ziehe Karten.
   Name: Blitzduel
 ScryBlockSe:
   Name: Vorsatz
@@ -914,18 +919,18 @@ Grace:
     sobald eine Karte gespielt oder die |Zauberkarte| verwendet wird.'
   Name: Göttliche Gunst
 ReimuGraceSe:
-  Brief: Zu Beginn deines Zuges erhält {PlayerName} |Göttliche Gunst|.
-  Description: Zu Beginn deines Zuges erhält {PlayerName} {Level} |Göttliche Gunst|.
+  Brief: '{PlayerName} erhält zu Beginn ihres Zuges |Göttliche Gunst|.'
+  Description: '{PlayerName} erhält zu Beginn ihres Zuges {Level} |Göttliche Gunst|.'
   Name: Hakureis Gunst
 ReimuSilenceSe:
   Name: '"Traumsiegel -Stille-"'
-  Brief: Jedes Mal, wenn genügend Karten außerhalb der Ziehphase gezogen wurden, verursache
-    an allen Feinden Angriffsschaden.
-  Description: "Jedes Mal, wenn {Limit} Karte{Limit:plural one='' other='n'} außerhalb\
-    \ der Ziehphase gezogen {Limit:plural one='wird' other='werden'}, verursache an\
-    \ allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
+  Brief: Jedes Mal, wenn außerhalb der Ziehphase eine gewisse Anzahl an Karten gezogen
+    wurden, verursache an allen Feinden Angriffsschaden.
+  Description: "Jedes Mal, wenn außerhalb der Ziehphase {Limit} Karte{Limit:plural\
+    \ one='' other='n'} gezogen {Limit:plural one='wird' other='werden'}, verursache\
+    \ an allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
 SihunYuSe:
-  Description: Am Ende des Zuges lockt {OwnerName} weitere Feinde auf das Schlachtfeld.
+  Description: '{OwnerName} lockt am Ende des Zuges weitere Feinde auf das Schlachtfeld.'
   Name: Unheilbringender Anhänger
 JunkoPurify:
   Name: Läuterndes Licht
@@ -933,12 +938,12 @@ JunkoPurify:
 LightingModule:
   Name: Blitzmodul
   Description: Jedes Mal, wenn {OwnerName} einen Angriff landet, füge {Level} |Glamouröses
-    Sternenlicht| deinem Ziehstapel hinzu.
+    Sternenlicht| dem Ziehstapel hinzu.
 AccuracyModule:
   Description: Die Angriffe von {OwnerName} sind |Präzise|.
   Name: Führungsmodul
 DragonBallSe:
-  Description: 'Zu Beginn des Zuges von {OwnerName}, erfülle ihren |Wunsch|: {PlayerName}
+  Description: 'Erfülle zu Beginn des Zuges von {OwnerName} ihren |Wunsch|: {PlayerName}
     verliert das Spiel.'
   Name: Kristallkugel mit Sternen
 ColdHeartedSe:
@@ -963,9 +968,9 @@ SakuyaKillerSe:
   Brief: Am Ende deines Zuges, nachdem {PlayerName} einen Feind besiegt hat, füge
     |Wurfmesser| deinem Ziehstapel hinzu.
 KnifeDamageUpSe:
-  Description: '|Wurfmesser| verursachen {Level} mehr Schaden.'
-  Brief: '|Wurfmesser| verursachen mehr Schaden.'
-  Name: Silbener Antrieb
+  Description: '|Wurfmesser| verursacht {Level} zusätzlichen Schaden.'
+  Brief: '|Wurfmesser| verursacht zusätzlichen Schaden.'
+  Name: Silberner Antrieb
 Cold:
   Name: Kälte
   Description: "Zu Beginn des Zuges verliert {OwnerName} {BaseDamage} Leben und |Kälte|.\n\
@@ -1061,9 +1066,10 @@ KoishiUltimateSe:
   Brief: Zu Beginn deines Zuges, spiele die obersten Karten in deinem Ziehstapel.
 FrozenThroneSe:
   Name: Gefrorener Thron
-  Description: Wenn sich zu Beginn des Zuges von {PlayerName} |Eisgeschoss| {Level:plural
-    one='nicht' other='weniger als % Mal'} auf deiner Hand befindet, füge |Eisgeschoss|
-    hinzu, bis sich {Level} auf deiner Hand {Level:plural one='befindet' other='befinden'}.
+  Description: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als {Level}
+    |Eisgeschoss| auf deiner Hand befindet, füge |Eisgeschoss| hinzu, bis sich {Level:plural
+    one='% Exemplar' other='% Exemplare'} auf deiner Hand {Level:plural one='befindet'
+    other='befinden'}.
   Brief: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als eine gewisse Anzahl
     an |Eisgeschoss| auf deiner Hand befinden, füge bis zu dieser Anzahl |Eisgeschoss|
     deiner Hand hinzu.
@@ -1336,10 +1342,11 @@ LearnAstrologySe:
   Brief: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als eine gewisse Anzahl
     an |Astrologie| auf deiner Hand befinden, füge bis zu dieser Anzahl |Astrologie|
     deiner Hand hinzu.
-  Name: Astrologie studieren
-  Description: Wenn sich zu Beginn des Zuges von {PlayerName} |Astrologie| {Level:plural
-    one='nicht' other='weniger als % Mal'} auf deiner Hand befindet, füge |Astrologie|
-    hinzu, bis sich {Level} auf deiner Hand {Level:plural one='befindet' other='befinden'}.
+  Name: Astrologische Studien
+  Description: Wenn sich zu Beginn des Zuges von {PlayerName} weniger als {Level}
+    |Astrologie| auf deiner Hand befindet, füge |Astrologie| hinzu, bis sich {Level:plural
+    one='% Exemplar' other='% Exemplare'} auf deiner Hand {Level:plural one='befindet'
+    other='befinden'}.
 MoodChangeBlockSe:
   Brief: Jedes Mal, wenn {PlayerName} den |mentalen Zustand| ändert, erhalte |Block|.
   Description: Jedes Mal, wenn {PlayerName} den |mentalen Zustand| ändert, erhalte
@@ -1357,9 +1364,9 @@ HolyGrailSe:
     außer |schimmernde| und |mythische Ausstellungsstücke|.
 PotionJungleSe:
   Name: Fluoreszierender Wald
-  Description: Am Ende des Zuges von {PlayerName}, füge {Level} |Instabiler Trank|
+  Description: Füge am Ende des Zuges von {PlayerName} {Level} |Instabiler Trank|
     deinem Ablagestapel hinzu.
-  Brief: Am Ende des Zuges von {PlayerName}, füge |Instabiler Trank| deinem Ablagestapel
+  Brief: Füge am Ende des Zuges von {PlayerName} |Instabiler Trank| deinem Ablagestapel
     hinzu.
 WhiteWorldSe:
   Name: Reine weiße Welt
