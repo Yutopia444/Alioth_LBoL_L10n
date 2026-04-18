@@ -205,7 +205,8 @@ StartGame:
   SkillExhibit: 初始展品
   StartMoney: 初始携带金钱
   StartHp: 初始生命值
-  DifficultyHint: '没玩过《杀戮尖塔》的话，建议先玩 Easy 难度'
+  DifficultyHint: |-
+    没玩过{Censor:select false='《杀戮尖塔》' true='卡牌构筑类游戏'}的话，建议先玩 Easy 难度'。
   ClearNormal: 已通关
   ClearTrue: 已完美通关
   NeedClear: 通关前一个难度解锁
@@ -345,7 +346,7 @@ Setting:
     开启此选项会使它更左一些，防止它出现在右侧卡牌的上方。
   LoopOrder: 循环颜色风格卡牌
   LoopOrderDescription: |-
-    使用《万智牌》风格的、五行相生颜色循环来表示双色卡牌。
+    使用{Censor:select false='《万智牌》风格的、' true='' }五行相生颜色循环来表示双色卡牌。
     白红、白绿、蓝绿这三组颜色的顺序将会被反转。
     <sprite="ManaSprite" name="HWR"><sprite="ManaSprite" name="HWG"><sprite="ManaSprite" name="HUG">→<sprite="ManaSprite" name="HRW"><sprite="ManaSprite" name="HGW"><sprite="ManaSprite" name="HGU">
     只对双色卡牌的底色和费用顺序生效（包含混血费用图标），不会影响法力池的顺序。
@@ -906,7 +907,7 @@ Tooltip:
     Name: 简略提示
     Description: |-
       只显示本游戏较为特别部分的游戏提示。
-      我玩过类似的游戏，比如《杀戮尖塔》。
+      我玩过类似的游戏{Censor:select false='，比如《杀戮尖塔》' true='' }。
   DontShowHint:
     Name: 不提示
     Description: |-
@@ -935,7 +936,7 @@ BattleHint:
     如同<sprite="ManaSprite" name="2">的数字费用，表示该费用可以使用任意的 2 点法力支付。
   ManaPanel: |-
     法力面板显示了主角当前回合剩余的法力。
-    鼠标左键单击任意一点法力，可以将法力移动到待选区。待选区中的法力将被优先消费。
+    选择一点法力，可以将法力移动到待选区。待选区中的法力将被优先消费。
     右键单击任意一点法力，可以将该颜色的所有法力移动到待选区。
     法力在主角的回合开始时恢复。
   BlockShield: |-
