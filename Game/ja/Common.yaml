@@ -163,7 +163,7 @@ StartGame:
   SetSeed: シード値を設定
   Seed: シード値
   StartHp: 初期ライフ
-  DifficultyHint: 「Slay the Spire」を遊んだことが無い場合、Easyを最初にプレイすることを推奨します。
+  DifficultyHint: "{Censor:select false='《Slay the Spire》' true='他のデッキ構築型ローグライト'}を遊んだことが無い場合、Easyを最初にプレイすることを推奨します。"
   NeedClear: 前の難易度をクリアすると解放される
   CheckDeck: 初期デッキ
   StartMoney: 初期資金力
@@ -341,10 +341,11 @@ Setting:
   LoopOrder: カードの色のサイクル
   LoopOrderOn: オン<sprite="ManaSprite" name="HRW">
   LoopOrderOff: オフ <sprite="ManaSprite" name="HWR">
-  LoopOrderDescription: "2色カードの色の表示順をMtGと同じ色のサイクルに変更します。\n白赤、白緑、青緑の表示順がそれぞれ逆になります。\n\
-    <sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"\
-    ManaSprite\" name=\"HUG\">⇒<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\"\
-    \ name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">\nこの変更は混色マナを含むカード上の表示順にのみ影響し、それ以外でのマナの順番には影響しません。"
+  LoopOrderDescription: "2色カードの色の表示順を{Censor:select false='MtGと同じ色のサイクルに' true=''\
+    \ }変更します。\n白赤、白緑、青緑の表示順がそれぞれ逆になります。\n<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"\
+    ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">⇒<sprite=\"ManaSprite\"\
+    \ name=\"HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"\
+    HGU\">\nこの変更は混色マナを含むカード上の表示順にのみ影響し、それ以外でのマナの順番には影響しません。"
   RightClickCancel: マウス右ボタンキャンセル
   TooltipWide: ツールチップのワイド表示
   QuickPlay: 高速使用
@@ -428,7 +429,8 @@ Tooltip:
     Description: "ゲーム内容はシードによって生成されます。\n\nクリックしてクリップボードにシードをコピーします。"
   BriefHint:
     Name: 簡易ヒント
-    Description: "本作特有のシステムに関するヒントのみが表示されます。\n『Slay the Spire』などの似たゲームをプレイした方向け。"
+    Description: "本作特有のシステムに関するヒントのみが表示されます。\n{Censor:select false='《Slay the Spire》などの'\
+      \ true='' }似たゲームをプレイした方向け。"
   FinalStage:
     Description: もうすぐこのゲームの終点だ、先へ進もう！
     Name: 最終章
@@ -451,7 +453,8 @@ Tooltip:
     Name: 詳細ヒント
     Description: "全てのヒントを表示します。\nデッキ構築ゲームが初めての方向け。"
 BattleHint:
-  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを左クリックすると、候補地に移動できます。候補地のマナは先に消費されます。\nプレイヤーのターン開始時にマナが回復します。"
+  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを選択すると、候補地に移動できます。候補地のマナは先に消費されます。\nマナを右クリックすると同じ色のマナを全て候補地に移動します。\n\
+    プレイヤーのターン開始時にマナが回復します。"
   Prev: 前のページ
   Next: 次のページ
   Brief: 簡易ヒントを表示
