@@ -30,11 +30,11 @@ ExtraTurn:
     \ other='% Extrazüge'}."
   Brief: '{OwnerName} erhält nach diesem Zug einen Extrazug.'
 Vampire:
-  Brief: 'Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe
-    Menge Leben. Furchteinflößend!'
+  Brief: '{OwnerName} heilt Leben in Höhe des verursachten ungeblockten Schadens.
+    Furchteinflößend!'
   Name: Vampir
-  Description: 'Verliert ein Feind durch diesen Angriff Leben, heilt {OwnerName} dieselbe
-    Menge Leben. Furchteinflößend!'
+  Description: '{OwnerName} heilt Leben in Höhe des verursachten ungeblockten Schadens.
+    Furchteinflößend!'
 Poison:
   Name: Gift
   Brief: '{OwnerName} verliert zu Beginn des Zuges Leben, danach reduziere |Gift|
@@ -487,10 +487,10 @@ PrismriverSe:
   Name: Prismatisches Konzert
 BlackPoisonSe:
   Name: Dunkler Tanz
-  Description: Jedes Mal, wenn ein Feind durch einen Angriff von {PlayerName} Leben
-    verliert, füge zusätzlich {Level} |Gift| zu.
-  Brief: Jedes Mal, wenn ein Feind durch einen Angriff von {PlayerName} Leben verliert,
-    füge zusätzlich |Gift| zu.
+  Description: Jedes Mal, wenn {PlayerName} ungeblockten Schaden verursacht, füge
+    zusätzlich {Level} |Gift| zu.
+  Brief: Jedes Mal, wenn {PlayerName} ungeblockten Schaden verursacht, füge zusätzlich
+    |Gift| zu.
 YukariFriendSe:
   Name: Grenzen der Fantasie
   Description: Füge zu Beginn des Zuges von {PlayerName} {Level} zufällige, dreifarbige,
@@ -567,8 +567,8 @@ Curiosity:
     {Level} |Feuerkraft|.
   Name: Ich bin neugierig!
 MadokaBowSe:
-  Description: Erhalte am Ende des Zuges von {OwnerName} {Level} zufällige Statuskarten
-    und mische jeweils eine Hälfte in deinen Zieh- und Ablagestapel.
+  Description: Erhalte am Ende des Zuges von {OwnerName} {Level} zufällige Statuskarten,
+    mische die Hälfte davon in deinen Ziehstapel und lege den Rest in deinen Ablagestapel.
   Name: Leuchtender Langbogen
 QiannianShenqiSe:
   Name: Pyramidenförmiges Puzzle
@@ -636,10 +636,10 @@ YouxiangMoonSe:
   Name: Natürliche Schönheit
   Brief: '{PlayerName} erhält zu Beginn ihres Zuges {Mana}.'
 PerfectServantWSe:
-  Description: Zu Beginn des nächsten Zuges von {OwnerName}, |senke vorübergehend
-    die Kosten| aller Karten auf deiner Hand um {Level} zufälliges Mana.
-  Brief: Zu Beginn des nächsten Zuges von {OwnerName} |kosten temporär| alle Karten
-    auf der Hand eine zufällige Menge Mana weniger.
+  Description: Zu Beginn des nächsten Zuges von {OwnerName} kosten alle Karten auf
+    deiner Hand |temporär| {Level} zufälliges Mana weniger.
+  Brief: Zu Beginn des nächsten Zuges von {OwnerName} kosten alle Karten auf deiner
+    Hand |temporär| eine gewisse Menge an zufälliges Mana weniger.
   Name: Einsatzbereit
 MihuanJackSe:
   Description: Erhalte zu Beginn des Zuges von {PlayerName} {Level} |Zeitimpuls{Level:plural
@@ -678,8 +678,8 @@ Immune:
   Description: "{OwnerName} kann für {Duration:plural one='diesen Zug' other='die\
     \ nächsten % Züge'} kein Leben verlieren."
 LunaClockSe:
-  Description: Die Angriffe von {PlayerName} verursachen in diesem Zug keinen Schaden.
-  Brief: Die Angriffe von {PlayerName} verursachen in diesem Zug keinen Schaden.
+  Description: Angriffe verursachen in diesem Zug keinen Schaden.
+  Brief: Angriffe verursachen in diesem Zug keinen Schaden.
   ExtraDescription: "Die Angriffe von {PlayerName} verursachen in diesem Zug keinen\
     \ Schaden.\n{SelfName} ist inaktiv und wird erst entfernt, nachdem dieser Effekt\
     \ aktiviert wurde."
@@ -713,9 +713,9 @@ KnifeTarget:
   Brief: Aktivierte |Wurfmesser| werden {OwnerName} als Ziel wählen.
 FreezeBulletSe:
   Name: Eingefrorene Projektile
-  Description: "Füge nach {Level:plural one='dem nächsten feindlichen Angriff' other='den\
-    \ nächsten % feindlichen Angriffen'} |Kälte| an den Angreifer zu.\nZu Beginn des\
-    \ nächsten Zuges von {OwnerName}, entferne diesen Effekt."
+  Description: "{OwnerName} fügt {Level:plural one='dem nächsten angreifenden Feind'\
+    \ other='den nächsten % angreifenden Feinden'} |Kälte| zu.\nEntferne diesen Effekt\
+    \ zu Beginn des nächsten Zuges von {OwnerName}."
 SakuyaInvestigateSe:
   Description: Füge zu Beginn des Extrazuges von {PlayerName} allen Feinden {Level}
     |Anvisieren| zu.
@@ -805,8 +805,9 @@ MeihongPowerSe:
     \ als die Hälfte beträgt."
 Sleep:
   Name: Verschlinger der Träume
-  Description: "Am Ende des Zuges wird die |Barriere| von {OwnerName} auf {Level}\
-    \ aufgefüllt.\nErwacht, sobald {Count} Züge vergangen sind oder sie Schaden erleidet."
+  Description: "{OwnerName} erhöht am Ende des Zuges ihre |Barriere| auf {Level}.\n\
+    Erwacht, sobald {Count:plural one='% Zug' other='% Züge'} vergangen {Count:plural\
+    \ one='ist' other='sind'} oder sie Schaden erleidet."
 Burst:
   Name: Durchbruch
   Brief: "Wenn {PlayerName} |Durchbruch| betritt, erhalte {Mana}.\nAlle Angriffe verursachen\
@@ -815,11 +816,11 @@ Burst:
     \ verursachen {DamageRate} Mal so viel Schaden.\nVerlasse am Ende deines Zuges\
     \ |Durchbruch|."
 Charging:
-  Brief: Wenn {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
-    one='' other='en'}| erreicht, aktiviere |Durchbruch|.
+  Brief: Sobald {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
+    one='' other='en'}| erreicht hat, betrete |Durchbruch|.
   Name: Aufladung
-  Description: Wenn {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
-    one='' other='en'}| erreicht, aktiviere |Durchbruch|.
+  Description: Sobald {PlayerName} mindestens {TriggerLevel} |Aufladung{TriggerLevel:plural
+    one='' other='en'}| erreicht hat, betrete |Durchbruch|.
 ReimuEvilTerminatorSe:
   Description: Jedes Mal, wenn ein Feind besiegt wird, erhalte {Mana}.
   Brief: Jedes Mal, wenn ein Feind besiegt wird, erhalte Mana.
@@ -863,8 +864,8 @@ TurnStartPurify:
     Entferne diesen Effekt am Ende des Zuges."
 RockHardAura:
   Name: Schutz des Schlüsselsteins
-  Description: '{OwnerName} wird durch einen Schlüsselstein geschützt, Angriffsschaden
-    an Leben werden um {Level} reduziert.'
+  Description: '{OwnerName} wird durch einen Schlüsselstein geschützt, ungeblockter
+    Angriffsschaden wird um {Level} reduziert.'
 KokoroRenzhen:
   Name: Ernst
   Description: Entferne alle |Dunklen Emotionen| und verursache an {PlayerName} für
@@ -927,11 +928,11 @@ ReimuGraceSe:
   Name: Hakureis Gunst
 ReimuSilenceSe:
   Name: '"Traumsiegel -Stille-"'
-  Brief: Jedes Mal, wenn außerhalb der Ziehphase eine gewisse Anzahl an Karten gezogen
+  Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten außerhalb der Ziehphase gezogen
     wurde, verursache an allen Feinden Angriffsschaden.
-  Description: "Jedes Mal, wenn außerhalb der Ziehphase {Limit} Karte{Limit:plural\
-    \ one='' other='n'} gezogen {Limit:plural one='wird' other='werden'}, verursache\
-    \ an allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
+  Description: "Jedes Mal, wenn {Limit} Karte{Limit:plural one='' other='n'} außerhalb\
+    \ der Ziehphase gezogen {Limit:plural one='wird' other='werden'}, verursache an\
+    \ allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
 SihunYuSe:
   Description: '{OwnerName} lockt am Ende des Zuges weitere Feinde auf das Schlachtfeld.'
   Name: Unheilbringender Anhänger
