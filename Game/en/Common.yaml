@@ -172,8 +172,8 @@ StartGame:
   IsLockHint: "This character will be available\nat Unlock Level {0}."
   Puzzle: Requests
   Puzzles: "{0:plural one='% |request|' other='% |requests|'}"
-  DifficultyHint: If you haven't played "Slay the Spire", it is recommended to play
-    Easy difficulty first.
+  DifficultyHint: If you haven't played {Censor:select false='"Slay the Spire"' true='roguelike
+    deckbuilders'}, it is recommended to play Easy difficulty first.
   JadeBoxLock: Jade Box will be available at Unlock Level 10.
   NoStoryMode: "Story Mode can only be played as Reimu Hakurei."
   PuzzleHint: "Take on additional Requests to increase your blue points and investigation\
@@ -359,13 +359,13 @@ Setting:
     \ Gap and combat.\n(Locked, return to the Main Menu to toggle)"
   LoopOrderOn: On<sprite="ManaSprite" name="HRW">
   LoopOrder: Cycling Color Pairs
-  LoopOrderDescription: "Causes the card color pairs to cycle around MtG style.\n\
-    White/Red, White/Green and Blue/Green will have their display order reversed.\
-    \ (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"\
-    ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\"\
-    \ name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\nOnly affects the display\
-    \ order for these color pairs on cards (including Hybrid Costs), and does not\
-    \ affect the overall mana order."
+  LoopOrderDescription: "Causes the card color pairs to cycle around{Censor:select\
+    \ false=' MtG style' true''}.\nWhite/Red, White/Green and Blue/Green will have\
+    \ their display order reversed. (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"\
+    ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\"\
+    \ name=\"HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"\
+    HGU\">)\nOnly affects the display order for these color pairs on cards (including\
+    \ Hybrid Costs), and does not affect the overall mana order."
   LoopOrderOff: Off<sprite="ManaSprite" name="HWR">
   RightClickCancel: Right Click Cancel
   RightClickCancelDescription: "Whether to use the right mouse button as a cancel\
@@ -627,7 +627,7 @@ Tooltip:
   BriefHint:
     Name: Brief Hints
     Description: "Only hints relevant to this game's unique mechanics will be displayed.\n\
-      I've played similar games, such as Slay the Spire."
+      I've played similar games{Censor:select false=', such as Slay the Spire' true=''}."
   DontShowHint:
     Name: No Hints
     Description: "Don't display any hints.\nI've played this game before."
