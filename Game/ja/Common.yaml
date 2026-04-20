@@ -274,8 +274,8 @@ Setting:
   SingleEnemyAutoSelect: 単体時の対象自動選択
   Disable: 無効
   Enable: 有効
-  ShowShortcut: 手札のショートカット表示
-  ShowShortcutDescription: 手札の上に対応するショートカットキーを表示します。
+  ShowShortcut: 手札の{Gamepad:select true='順番' false='ショートカット'}表示
+  ShowShortcutDescription: 手札の上に{Gamepad:select true='手札の順番' false='対応するショートカットキー'}を表示します。
   ResetDefault: デフォルトに戻す
   Preference: ゲーム設定
   XCostWarning: Xコストカードの警告
@@ -394,17 +394,19 @@ Tooltip:
     Name: 難易度：Lunatic
   DrawZone:
     Name: 山札
-    Description: "各ターンの開始時、ここから {0} 枚のカードを引く。\n山札が空になった場合、捨て札を戻してシャッフルする。\nクリックすることで山札にあるカードを確認できる。|(順番はランダム)|"
+    Description: "各ターンの開始時、ここから {0} 枚のカードを引く。\n山札が空になった場合、捨て札を戻してシャッフルする。\n{Gamepad:select\
+      \ true='Aボタンを押す' false='クリックする'}ことで山札にあるカードを確認できる。|(順番はランダム)|"
   DifficultyHard:
     Description: 敵の攻撃力と体力が増加する。
     Name: 難易度：Hard
   DiscardZone:
     Name: 捨て札
     Description: "使用した、あるいは捨てたカードをここに置く。\nターン終了時、手札に残ったカードをここに置く。 |d:(「捨てた時」の効果は発動しない)|。\n\
-      クリックすることで捨て札のカードを表示する。"
+      {Gamepad:select true='Aボタンを押す' false='クリックする'}ことで捨て札のカードを表示する。"
   EndTurn:
     Name: ターン終了
-    Description: "ターンを終了する。\n\n手札に残ったカードを捨て |d:(「捨てた時」の効果は発動しない)|、敵のターンを開始する。\n敵のターンが終了した後、カードを{0}枚引き自分のターンを開始する。"
+    Description: "{Gamepad:select true='Aボタンを押す' false='クリックする'}ことでターンを終了する。\n\n手札に残ったカードを捨て\
+      \ |d:(「捨てた時」の効果は発動しない)|、敵のターンを開始する。\n敵のターンが終了した後、カードを{0}枚引き自分のターンを開始する。"
   BattleMana:
     Name: マナ
     Description: "現在持っている未使用のマナ。ターン毎にリセットされる。\n\n左クリックしたマナ、右クリックしたマナと同じ色のマナは候補地に移動する。\n\
@@ -419,14 +421,15 @@ Tooltip:
     Name: 難易度：Normal
     Description: 標準的な難易度。
   ExileZone:
-    Description: "|廃棄|されたカードをここに置く。\n\nクリックしてこの戦闘中に|廃棄|したカードを見る。"
+    Description: "|廃棄|されたカードをここに置く。\n\n{Gamepad:select true='Aボタンを押す' false='クリックする'}ことでこの戦闘中に|廃棄|したカードを見る。"
     Name: 廃棄場
   Character:
     Name: '{0}'
     Description: あなたがプレイしているキャラクター
   GameSeed:
     Name: シード
-    Description: "ゲーム内容はシードによって生成されます。\n\nクリックしてクリップボードにシードをコピーします。"
+    Description: "ゲーム内容はシードによって生成されます。\n\n{Gamepad:select false='クリックすることでクリップボードにシードをコピーします。'\
+      \ true=''}"
   BriefHint:
     Name: 簡易ヒント
     Description: "本作特有のシステムに関するヒントのみが表示されます。\n{Censor:select false='《Slay the Spire》などの'\
@@ -453,8 +456,8 @@ Tooltip:
     Name: 詳細ヒント
     Description: "全てのヒントを表示します。\nデッキ構築ゲームが初めての方向け。"
 BattleHint:
-  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを選択すると、候補地に移動できます。候補地のマナは先に消費されます。\nマナを右クリックすると同じ色のマナを全て候補地に移動します。\n\
-    プレイヤーのターン開始時にマナが回復します。"
+  ManaPanel: "マナパネルには残りのマナが表示されます。\nマナを選択すると、候補地に移動できます。候補地のマナは先に消費されます。\n{Gamepad:select\
+    \ false='マナを右クリックすると' true='マナを選んでXボタンを押すと'}同じ色のマナを全て候補地に移動します。\nプレイヤーのターン開始時にマナが回復します。"
   Prev: 前のページ
   Next: 次のページ
   Brief: 簡易ヒントを表示
@@ -469,11 +472,12 @@ BattleHint:
   UltimateSkill: "スペルカードで戦いの流れを変えましょう！\nスペルカードをプレイするためにはパワーゲージが一本（100P）必要です。倒した敵はパワーを補充する\
     \ <sprite=\"Point\" name=\"Power\">をドロップします。\nスペルカードは一ターンに一回まで使用できます。"
   Detailed: 詳細ヒントを表示する
-  Mana: "カードを右クリックして詳細を表示します。 (報酬画面などゲーム内のほとんどのカードパネルで機能します。)\nカードをプレイするにはマナを消費する必要があります。カードのマナコストは右上隅に表示されます。\n\
-    マナの種類は<sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
-    \ name=\"G\">, 無色のマナ <sprite=\"ManaSprite\" name=\"C\"> 、そして任意のコストの支払いに使用できる彩色マナ<sprite=\"\
-    ManaSprite\" name=\"P\"> があります。\n数字部分の<sprite=\"ManaSprite\" name=\"2\">のようなコストは任意の2マナで支払うことができるという意味です。"
+  Mana: "{Gamepad:select false='カードを右クリックして' true='Xボタンを押すと' }詳細を表示します。 (報酬画面などゲーム内のほとんどのカードパネルで機能します。)\n\
+    カードをプレイするにはマナを消費する必要があります。カードのマナコストは右上隅に表示されます。\nマナの種類は<sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, 無色のマナ\
+    \ <sprite=\"ManaSprite\" name=\"C\"> 、そして任意のコストの支払いに使用できる彩色マナ<sprite=\"ManaSprite\"\
+    \ name=\"P\"> があります。\n数字部分の<sprite=\"ManaSprite\" name=\"2\">のようなコストは任意の2マナで支払うことができるという意味です。"
 History:
   Puzzles: '{0}{1}個の難題'
   Mana: マナ
@@ -639,7 +643,7 @@ ErrorChat:
   Tired: もう疲れちゃった
   LowMagic: 人形の魔力が足りないわ
 Cards:
-  Show: 右クリックか、カーソルを合わせると詳細が表示されます。
+  Show: カーソルを合わせるか、{Gamepad:select true='Xボタン' false='右クリック'}で詳細を表示します。
   Remove: 'デッキからカード{0}枚を捨てる'
   IsUpgraded: アップグレード済み
   UnUpgradable: アップグレードできません
