@@ -215,8 +215,9 @@ StartGame:
     \ des dialogues d'histoire sont supprimés\nToutes les \"Rencontres amicales\"\
     \ sont possibles"
   StartHp: Vie de Départ
-  DifficultyHint: Si vous n'avez pas joué à "Slay the Spire", il est recommandé de
-    jouer d'abord en difficulté Facile.
+  DifficultyHint: Si vous n'avez pas joué à {Censor:select false='"Slay the Spire"'
+    true='des jeux de construction de decks roguelike'}, il est recommandé de jouer
+    d'abord en difficulté Facile.
   Puzzle: Exigences
   SelectAll: Tout Prendre
   PuzzleHint: "Cédez aux exigences de Kaguya, en rajoutant des complications pour\
@@ -408,13 +409,14 @@ Setting:
   LoopOrder: Cycler les paires de couleur
   LoopOrderOff: Désactivé <sprite="ManaSprite" name="HWR">
   LoopOrderOn: Activé <sprite="ManaSprite" name="HRW">
-  LoopOrderDescription: "Fait en sorte que les paires de couleurs des cartes cyclent\
-    \ dans le style de MtG.\nBlanc/Rouge, Blanc/Vert et Bleu/Vert auront leur ordre\
-    \ d'affichage inversé.\n<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
-    \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
-    HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
-    >\nAffecte uniquement l'ordre d'affichage de ces paires de couleurs sur les cartes\
-    \ (y compris les coûts hybrides) et n'affecte pas l'ordre général du mana."
+  LoopOrderDescription: "Fait en sorte que les paires de couleurs des cartes cyclent{Censor:select\
+    \ false=' dans le style de \"Magic: The Gathering\"' true=''}.\nBlanc/Rouge, Blanc/Vert\
+    \ et Bleu/Vert auront leur ordre d'affichage inversé.\n<sprite=\"ManaSprite\"\
+    \ name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\" name=\"\
+    HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"HGW\"\
+    ><sprite=\"ManaSprite\" name=\"HGU\">\nAffecte uniquement l'ordre d'affichage\
+    \ de ces paires de couleurs sur les cartes (y compris les coûts hybrides) et n'affecte\
+    \ pas l'ordre général du mana."
   RightClickCancel: Annulation Clic droit
   RightClickCancelDescription: "S'il faut utiliser le bouton droit de la souris comme\
     \ bouton d'annulation.\nAnnule les actions, ferme la plupart des fenêtres d'interface."
@@ -818,7 +820,7 @@ Tooltip:
   BriefHint:
     Name: Conseils Brefs
     Description: "Seuls des conseils partiels seront affichés.\nJ'ai joué à des jeux\
-      \ similaires, comme Slay the Spire."
+      \ similaires{Censor:select false=', comme \"Slay the Spire\"' true=''}."
   DontShowHint:
     Name: Aucun Conseil
     Description: "Ne montre aucun conseil.\nJ'ai déjà joué à <Touhou : Lost Branch\
@@ -831,10 +833,10 @@ BattleHint:
   Prev: Précédent
   Next: Suivant
   ManaPanel: "Le panneau de mana affiche le mana restant pour le tour en cours.\n\
-    Faites un clic gauche sur n'importe quel mana pour déplacer le mana vers la zone\
-    \ d'attente. Le mana dans la zone d'attente sera consommé en premier.\nFaites\
-    \ un clic droit sur n'importe quel mana pour déplacer tous les manas de cette\
-    \ couleur vers la zone d'attente.\nLe mana est restauré au début du tour du joueur."
+    Sélectionnez n'importe quel mana pour le déplacer vers la zone d'attente. Le mana\
+    \ dans la zone d'attente sera consommé en premier.\nFaites un clic droit sur n'importe\
+    \ quel mana pour déplacer tous les manas de cette couleur vers la zone d'attente.\n\
+    Le mana est restauré au début du tour du joueur."
   BlockShield: "Avant de subir des dégâts, jouez une carte de défense pour gagner\
     \ |Bouclier| et |s:Barrière|.\n|Bouclier| et |s:Barrière| réduisent la quantité\
     \ des dégâts qui seront infligés.\n|Bouclier| disparaît au début du prochain tour\
