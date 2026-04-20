@@ -328,8 +328,9 @@ Setting:
   AnimatingEnvironment: Animated Environment
   AnimatingEnvironmentDescription: Show dynamic backgrounds during Yukari's Gap and
     combat.
-  ShowShortcutDescription: Whether to show shortcuts above the cards in your hand.
-  ShowShortcut: Show Hand Shortcut
+  ShowShortcutDescription: Whether to show {Gamepad:select true='the numerical order
+    of' false='shortcuts above'} the cards in your hand.
+  ShowShortcut: Show Hand {Gamepad:select true='Order' false='Shortcut'}
   Shake: Screenshake
   ShakeDescription: Toggles screenshake caused by combat damage.
   ShowReload: Display Restart Count
@@ -539,7 +540,7 @@ Tooltip:
       During your draw step, you draw {0} cards from your draw pile. |d:(Your draw step happens at the start of each turn, before start of turn effects.)|
       If your draw pile is empty, the cards in the discard pile are shuffled back into your draw pile.
 
-      Click to see what cards are left in your draw pile. |This does not reveal the order of the cards in your draw pile|.
+      {Gamepad:select true='Press A' false='Click'} to see what cards are left in your draw pile. |This does not reveal the order of the cards in your draw pile|.
 
   DiscardZone:
     Name: Discard
@@ -547,19 +548,19 @@ Tooltip:
       Whenever you discard a card, you send it here.
       At the end of your turn, you also discard the remaining cards in your hand |d:(without triggering discard effects)|.
 
-      Click to see what cards are in your Discard.
+      {Gamepad:select true='Press A' false='Click'} to see what cards are in your Discard.
 
   ExileZone:
     Name: Exile
     Description: |-
       |Exiled| cards are sent here.
 
-      Click to see the cards |Exiled| this combat.
+      {Gamepad:select true='Press A' false='Click'} to see the cards |Exiled| this combat.
 
   EndTurn:
     Name: End Turn
     Description: |-
-      Click to end your turn.
+      {Gamepad:select true='Press A' false='Click'} to end your turn.
 
       You discard your hand |d:(without triggering discard effects)|.
       Each enemy acts based on their |Intent|, then you draw {0} cards and take your next turn.
@@ -586,7 +587,7 @@ Tooltip:
     Description: |-
       Each run generates a random Seed. Two runs with the same Seed will be identical.
 
-      Click to copy the Seed to your clipboard.
+      {Gamepad:select false='Click to copy the Seed to your clipboard.' true=''}
 
   EntityTitle:
     Neutral: Neutral
@@ -675,23 +676,24 @@ BattleHint:
     \ Hints| to only display hints about this game's unique mechanics.\nSubsequent\
     \ gameplay hints will also follow this preference. You can adjust the gameplay\
     \ hints settings in the settings panel at any time."
-  Mana: "Right click on a card to view its details. (This also works for most other\
-    \ places you see cards in the game.)\nPlaying cards costs mana. The card's mana\
-    \ cost is displayed in the upper right corner.\nThere are 7 types of mana base:\
-    \ colored mana <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"\
-    U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"\
-    ManaSprite\" name=\"G\">, Colorless Mana <sprite=\"ManaSprite\" name=\"C\"> and\
-    \ <sprite=\"ManaSprite\" name=\"P\"> which can fill into any mana cost requirement.\n\
-    Generic costs like <sprite=\"ManaSprite\" name=\"2\"> can be paid with any 2 mana."
+  Mana: "{Gamepad:select true='Press X' false='Right click'} on a card to view its\
+    \ details. (This also works for most other places you see cards in the game.)\n\
+    Playing cards costs mana. The card's mana cost is displayed in the upper right\
+    \ corner.\nThere are 7 types of mana base: colored mana <sprite=\"ManaSprite\"\
+    \ name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
+    B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, Colorless\
+    \ Mana <sprite=\"ManaSprite\" name=\"C\"> and <sprite=\"ManaSprite\" name=\"P\"\
+    > which can fill into any mana cost requirement.\nGeneric costs like <sprite=\"\
+    ManaSprite\" name=\"2\"> can be paid with any 2 mana."
   Brief: Show Brief Hints
   BasicBattle: "Play cards from your hand to expel the enemy!\nCards played from your\
     \ hand will be moved to the discard pile. At the end of the player's turn, cards\
     \ that remain in your hand will also be moved to the discard pile.\nNew cards\
     \ will be drawn at the beginning of the player's turn."
   ManaPanel: "The mana panel shows how much mana is left.\nChoose a mana symbol to\
-    \ \"float\" it. Floating mana will be spent before all other mana.\nRight click\
-    \ on a mana symbol to float all mana of that color.\nMana is restored at the beginning\
-    \ of the player's turn."
+    \ \"float\" it. Floating mana will be spent before all other mana.\n{Gamepad:select\
+    \ true='Press X' false='Right click'} on a mana symbol to float all mana of that\
+    \ color.\nMana is restored at the beginning of the player's turn."
   BlockShield: "Before taking damage, play a defense card to gain |Block| and |s:Barrier|.\n\
     |Block| and |s:Barrier| reduce the amount of damage that will be dealt.\n|Block|\
     \ disappears at the beginning of the main character's next turn, but |s:Barrier|\
@@ -707,7 +709,8 @@ Cards:
   UnUpgradable: Non-Upgradable
   IsUpgraded: Upgraded
   Size:  {0:plural one='% card' other='% cards'}
-  Show: Hover or right click the cards to see details
+  Show: "{Gamepad:select true='Press X over' false='Hover or right click'} the cards\
+    \ to see details"
   Remove: Remove {0} cards from the library.
   UpgradeTips: Choose a card to Upgrade
   RemoveTips: Choose a card to Remove
