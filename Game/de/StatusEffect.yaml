@@ -177,11 +177,10 @@ TurnStartDontLoseBlock:
   Brief: '{OwnerName} verliert zu Beginn der nächsten Züge kein |Block|.'
 WindGirl:
   Name: Gabe der Windgöttin
-  Description: Am Ende des Zuges wird das |Ausweichen| von {OwnerName} auf {Level}
-    aufgefüllt.
-  Brief: "Nach Erhalt von |Gabe der Windgöttin| erhält {OwnerName} die gleiche Menge\
-    \ |Ausweichen|.\nAm Ende des Zuges wird das |Ausweichen| von {OwnerName} bis zu\
-    \ einer gewissen Anzahl aufgefüllt."
+  Description: Erhöhe am Ende des Zuges von {OwnerName} |Ausweichen| auf {Level}.
+  Brief: "{OwnerName} erhält sofort bei der Aktivierung von |Gabe der Windgöttin|\
+    \ die gleiche Menge |Ausweichen|.\nErhöhe am Ende des Zuges von {OwnerName} |Ausweichen|\
+    \ auf eine gewisse Menge."
 Amulet:
   Name: Amulett
   Description: Annulliert {Level:plural one='den nächsten negativen Effekt' other='die
@@ -189,21 +188,23 @@ Amulet:
   Brief: Annulliert eingehende negative Effekte.
 Electric:
   Name: Statische Aufladung
-  Description: Nach einem feindlichen Angriff, verursache {Level} Schaden an den Angreifer.
-  Brief: Nach einem feindlichen Angriff, verursache Schaden an den Angreifer.
+  Description: Verursache am angreifenden Feind {Level} Schaden, nachdem Schaden durch
+    einen Angriff erlitten wurde.
+  Brief: Verursache am angreifenden Feind Schaden, nachdem Schaden durch einen Angriff
+    erlitten wurde.
 TempElectric:
   Name: Statische Aufladung
-  Brief: "Nach einem feindlichen Angriff, verursache Schaden an den Angreifer.\n{OwnerName}\
-    \ verliert diesen Effekt zu Beginn des nächsten |natürlichen Zuges|."
-  Description: "Nach einem feindlichen Angriff, verursache {Level} Schaden an den\
-    \ Angreifer.\n{OwnerName} verliert diesen Effekt zu Beginn des nächsten |natürlichen\
+  Brief: "Verursache am angreifenden Feind Schaden, nachdem Schaden durch einen Angriff\
+    \ erlitten wurde.\n{OwnerName} verliert diesen Effekt zu Beginn des nächsten |natürlichen\
     \ Zuges|."
+  Description: "Verursache am angreifenden Feind {Level} Schaden, nachdem Schaden\
+    \ durch einen Angriff erlitten wurde.\n{OwnerName} verliert diesen Effekt zu Beginn\
+    \ des nächsten |natürlichen Zuges|."
 Reflect:
-  Description: Verursache nach einem feindlichen Angriff {Level} Schaden an den Angreifer
-    und entferne diesen Effekt.
-  Name: Reflektion
-  Brief: Verursache nach einem feindlichen Angriff Schaden an den Angreifer und entferne
+  Description: Verursache an einem angreifenden Feind {Level} Schaden und entferne
     diesen Effekt.
+  Name: Reflektion
+  Brief: Verursache an einem angreifenden Feind Schaden und entferne diesen Effekt.
 ManaFreezed:
   Name: Manafrost
   Description: Die erste Karte in jedem Zug kostet {Mana} mehr.
@@ -449,8 +450,8 @@ ModuoluoFireSe:
   Brief: Jedes Mal, wenn <sprite="ManaSprite" name="P"> verwendet wird, verursache
     an allen Feinden Schaden.
 ZhenmiaowanAttackSe:
-  Description: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
-  Brief: In diesem Zug werden die Kosten von Fähigkeitskarten um {Mana} reduziert.
+  Description: Fähigkeitskarten kosten in diesem Zug {Mana} weniger.
+  Brief: Fähigkeitskarten kosten in diesem Zug {Mana} weniger.
   ExtraDescription: In diesem Zug werden die Kosten von Karten um {Mana} reduziert.
   Name: Nachfahre von Issun-Boushi
 ZhenmiaowanAbilitySe:
@@ -929,7 +930,7 @@ ReimuGraceSe:
 ReimuSilenceSe:
   Name: '"Traumsiegel -Stille-"'
   Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten außerhalb der Ziehphase gezogen
-    wurde, verursache an allen Feinden Angriffsschaden.
+    wird, verursache an allen Feinden Angriffsschaden.
   Description: "Jedes Mal, wenn {Limit} Karte{Limit:plural one='' other='n'} außerhalb\
     \ der Ziehphase gezogen {Limit:plural one='wird' other='werden'}, verursache an\
     \ allen Feinden {Damage} Angriffsschaden.\nVerbleibende Karten: {Count}."
@@ -1252,11 +1253,12 @@ RinDrawSe:
     one='' other='n'}.
   Name: Zuweisung der Geister
 HekaHellRainSe:
-  Description: "Verursache am Ende des Zuges von {OwnerName} für jede gespielte Karte\
-    \ in diesem Zug an allen Feinden {Level} Schaden.\nAngesammelter Schaden: {Count}"
+  Description: "Verursache am Ende des Zuges von {OwnerName} an allen Feinden für\
+    \ jede gespielte Karte in diesem Zug {Level} Schaden.\nAngesammelter Schaden:\
+    \ {Count}"
   Name: Höllenregen
-  Brief: Verursache am Ende des Zuges von {OwnerName} für jede gespielte Karte in
-    diesem Zug an allen Feinden Schaden.
+  Brief: Verursache am Ende des Zuges von {OwnerName} an allen Feinden für jede gespielte
+    Karte in diesem Zug Schaden.
 TiangouOrderSe:
   Name: Erlass des großen Tengus
   Description: '{PlayerName} erhält {Level} |Block|, wenn {OwnerName} Angriffsschaden
@@ -1331,16 +1333,16 @@ GainInspirationSe:
   Name: Kontinuierliche Inspiration
 MoodEpiphany:
   Description: "Erhalte {Mana} und ziehe eine Karte für jede gespielte Karte, solange\
-    \ |Dissoziation| aktiv ist.\nAm Ende deines Zuges oder wenn {Count:plural one='%\
-    \ Karte' other='% Karten'} gespielt worden {Count:plural one='ist' other='sind'},\
-    \ verlasse |Dissoziation|.\n|Dissoziation| ist ein |mentaler Zustand|, es kann\
-    \ immer nur ein Zustand zur selben Zeit aktiv sein."
+    \ |Dissoziation| aktiv ist.\nVerlasse am Ende des Zuges von {PlayerName} oder\
+    \ nachdem {Count:plural one='% Karte' other='% Karten'} gespielt wurde{Count:plural\
+    \ one='' other='n'} |Dissoziation|.\n|Dissoziation| ist ein |mentaler Zustand|,\
+    \ es kann immer nur ein Zustand zur selben Zeit aktiv sein."
   Name: Dissoziation
   Brief: "Erhalte {Mana} und ziehe eine Karte für jede gespielte Karte, solange |Dissoziation|\
-    \ aktiv ist.\nAm Ende deines Zuges oder wenn {PlayCount:plural one='% Karte' other='%\
-    \ Karten'} gespielt worden {Count:plural one='ist' other='sind'}, verlasse |Dissoziation|.\n\
-    |Dissoziation| ist ein |mentaler Zustand|, es kann immer nur ein Zustand zur selben\
-    \ Zeit aktiv sein."
+    \ aktiv ist.\nVerlasse am Ende des Zuges von {PlayerName} oder nachdem {PlayCount:plural\
+    \ one='% Karte' other='% Karten'} gespielt wurde{PlayCount:plural one='' other='n'}\
+    \ |Dissoziation|.\n|Dissoziation| ist ein |mentaler Zustand|, es kann immer nur\
+    \ ein Zustand zur selben Zeit aktiv sein."
 Inspiration:
   Name: Inspiration
   Brief: Betrete |Dissoziation|, wenn {PlayerName} mindestens {TriggerLevel} |Inspiration|
