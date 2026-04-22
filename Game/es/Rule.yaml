@@ -7,18 +7,20 @@ General:
 ManaColor:
   Name: Colores de Maná
   Description: "La intención del diseño de este juego es interpretar a los personajes\
-    \ de Touhou con un sistema de maná de colores como el que se encuentra en Magic:\
-    \ The Gathering.\nHay 8 tipos de maná diferentes en el juego.\n5 colores monocromáticos:\
-    \ Rojo, Verde, Azul, Blanco, Negro, Maná Incoloro que no tiene color y Maná Filosofal\
-    \ que puede sustituir a cualquier color. Mientras que el Maná Genérico se pueden\
-    \ pagar con cualquier color y se representa con un número.\nLos costes de algunas\
-    \ cartas requieren Maná Incoloro, específicamente, como la carta \"Mundo Impuro\"\
-    .\nEs importante mencionar que el Mana Filosofal, al ser de todos los colores\
-    \ a la vez, puede ser más poderosa que las multicolores del Magic: The Gathering.\
-    \ Por ejemplo, si el jugador tiene la exhibición |Peonía de Piedra| que requiere\
-    \ gastar Maná Rojo y el |Cubo de Hielo| que requiere que se gastes Maná Azul,\
-    \ un solo Maná Filosofal gastado se contará como el respectivo maná gastado requerido\
-    \ para ambos efectos de las exhibiciones."
+    \ de Touhou con un sistema de maná de colores como el que se encuentra en {Censor:select\
+    \ false='Magic: The Gathering' true='juegos de construcción de mazos pentacolor'}.\n\
+    Hay 8 tipos de maná diferentes en el juego.\n5 colores monocromáticos: Rojo, Verde,\
+    \ Azul, Blanco, Negro, Maná Incoloro que no tiene color y Maná Filosofal que puede\
+    \ sustituir a cualquier color. Mientras que el Maná Genérico se pueden pagar con\
+    \ cualquier color y se representa con un número.\nLos costes de algunas cartas\
+    \ requieren Maná Incoloro, específicamente, como la carta \"Mundo Impuro\".\n\
+    Es importante mencionar que el Mana Filosofal, al ser de todos los colores a la\
+    \ vez, puede ser más poderosa que las multicolores de {Censor:select false=' las\
+    \ tierras del Magic: The Gathering' true='los recursos de cierto juego de construcción\
+    \ de mazos pentacolor'}. Por ejemplo, si el jugador tiene la exhibición |Peonía\
+    \ de Piedra| que requiere gastar Maná Rojo y el |Cubo de Hielo| que requiere que\
+    \ se gastes Maná Azul, un solo Maná Filosofal gastado se contará como el respectivo\
+    \ maná gastado requerido para ambos efectos de las exhibiciones."
 CardPool:
   Description: "Solo puede encontrar cartas especificas en las recompensas de cartas\
     \ si cumplen con los siguientes criterios:\n1: El coste de maná de la carta se\
@@ -169,14 +171,15 @@ PlayTwice:
     \ y puede usarse la carta \"Devorar la historia\" dos veces.\nDesventajas para\
     \ el jugador: No se puede obtener una copia de una \"Compañera\" al convocar a\
     \ una compañera y el efecto de las cartas con \"Crecimiento\" no se pueden activar\
-    \ dos veces.\nLa razón por la que esto se maneja de forma diferente a Slay the\
-    \ Spire es por la existencia de las cartas \"Compañeras\", seguro que no quieres\
-    \ convocar a \"Daiyousei, la Alegre Asistente\" sólo para usar inmediatamente\
-    \ su \"Habilidad sctiva\".\n4. El jugador no puede obtener la instantánea, o una\
-    \ copia de la instantánea. Por ejemplo, cuando una carta con \"Eco\" se juega\
-    \ dos veces, la instantánea no producirá una copia.\n5. Interacciones con turnos\
-    \ extra: La instantánea del \"Paseo en el tiempo\" no tendrán ningún efecto, y\
-    \ la mayoría de las otras cartas de turnos extras ganarán dos turnos extra, y\
-    \ sólo terminarán el turno actual. (Aún por determinar si esto es demasiado desbalanceado)\n\
-    6. Interacciones con cartas de coste X: Las instantáneas heredan el maná pagado\
-    \ para jugar la carta original, y habrá dos activaciones completas."
+    \ dos veces.\nLa razón por la que esto se maneja de forma diferente {Censor:select\
+    \ false='a Slay the Spire' true='la mayoría de los demás constructores de mazos'}\
+    \ es por la existencia de las cartas \"Compañeras\", seguro que no quieres convocar\
+    \ a \"Daiyousei, la Alegre Asistente\" sólo para usar inmediatamente su \"Habilidad\
+    \ activa\".\n4. El jugador no puede obtener la instantánea, o una copia de la\
+    \ instantánea. Por ejemplo, cuando una carta con \"Eco\" se juega dos veces, la\
+    \ instantánea no producirá una copia.\n5. Interacciones con turnos extra: La instantánea\
+    \ del \"Paseo en el tiempo\" no tendrán ningún efecto, y la mayoría de las otras\
+    \ cartas de turnos extras ganarán dos turnos extra, y sólo terminarán el turno\
+    \ actual. (Aún por determinar si esto es demasiado desbalanceado)\n6. Interacciones\
+    \ con cartas de coste X: Las instantáneas heredan el maná pagado para jugar la\
+    \ carta original, y habrá dos activaciones completas."

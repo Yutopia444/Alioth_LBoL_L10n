@@ -296,8 +296,8 @@ StartGame:
   SkillExhibit: Exhibición inicial
   StartMoney: Dinero Inicial
   StartHp: Vida Inicial
-  DifficultyHint: Si no has jugado "Slay the Spire", se recomienda jugar primero en
-    dificultad fácil.
+  DifficultyHint: Si no has jugado {Censor:select false='"Slay the Spire"' true='construcciones
+    de mazos roguelike'}, se recomienda jugar primero en la dificultad fácil.
   NeedClear: Completa la dificultad anterior para desbloquearlo.
   JadeBoxSelectedCount: '{0}/{1} seleccionado'
   ShowRandomResult: Destino revelado
@@ -405,9 +405,9 @@ Setting:
   Show: Mostrar
   DontWarn: No advertir
   HintLevel: Consejos del juego
-  ShowShortcutDescription: Muestra los atajos en la parte superior de las cartas que
-    están en la mano
-  ShowShortcut: Mostrar atajos de la mano
+  ShowShortcutDescription: Muestra {Gamepad:select true='el orden numérico' false='los
+    atajos en la parte superior'} de las cartas que están en la mano
+  ShowShortcut: Mostrar {Gamepad:select true='orden' false='atajos'} de la mano
   Shake: Vibración de pantalla
   ShakeDescription: Establece si la pantalla vibre cuando se inflige daño.
   ShowReload: Mostrar reinicios usados
@@ -436,13 +436,13 @@ Setting:
   EnableGamepad: Habilitar gamepad
   LoopOrderOff: Desactivado<sprite="ManaSprite" name="HWR">
   LoopOrderOn: Activado<sprite="ManaSprite" name="HRW">
-  LoopOrderDescription: "Hace que los pares de colores de las cartas circulen su diseño\
-    \ al estilo MtG.\nBlanco/Rojo, Blanco/Verde y Azul/Verde tendrán su orden de visualización\
-    \ invertido. \n(<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"\
-    HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"\
-    ><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\nSolo\
-    \ afecta el orden de visualización de estos pares de colores en las cartas (incluidos\
-    \ los costes híbridos) y no afecta el orden de maná general."
+  LoopOrderDescription: "Hace que los pares de colores de las cartas circulen su diseño{Censor:select\
+    \ false=' al estilo MtG' true''}. \nBlanco/Rojo, Blanco/Verde y Azul/Verde tendrán\
+    \ su orden de visualización invertido. \n(<sprite=\"ManaSprite\" name=\"HWR\"\
+    ><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"\
+    ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\"\
+    \ name=\"HGU\">)\nSolo afecta el orden de visualización de estos pares de colores\
+    \ en las cartas (incluidos los costes híbridos) y no afecta el orden de maná general."
   LoopOrder: Orden de los colores del maná de las cartas
   AnimatingEnvironmentDescriptionLocked: "Muestra los fondos dinámicos durante las\
     \ brechas de Yukari y en el combate.\n(Bloqueado, vuelve al menú principal para\
@@ -593,9 +593,9 @@ Tooltip:
     Description: "Durante tu fase de robar, robas {0} cartas de tu pila de robo. |d:(Tu\
       \ fase de robar ocurre al comienzo de cada turno, antes de los efectos del comienzo\
       \ del turno.)|\nSi la pila de robo está vacía, las cartas de la pila de descarte\
-      \ se barajan nuevamente en la pila de robo.\n\nHaz clic para ver qué cartas\
-      \ quedan en tu pila de robo. |Esto no revela el orden de las cartas en la pila\
-      \ de robo|."
+      \ se barajan nuevamente en la pila de robo.\n\n{Gamepad:select true='Presione\
+      \ A' false='Haz click'} para ver qué cartas quedan en tu pila de robo. |Esto\
+      \ no revela el orden de las cartas en la pila de robo|."
   Hp:
     Name: 'Vida: {0}'
     Description: Cuando tu vida llega a 0, |r:pierdes el juego|.
@@ -620,13 +620,14 @@ Tooltip:
     Description: Dificultad estándar.
   ExileZone:
     Name: Exilio
-    Description: "Las cartas |Exiliadas| se envían aquí.\n\nHaz clic para ver las\
-      \ cartas |Exiliadas| en este combate."
+    Description: "Las cartas |Exiliadas| se envían aquí.\n\n{Gamepad:select true='Presione\
+      \ A' false='Haz click'} para ver las cartas |Exiliadas| en este combate."
   EndTurn:
     Name: Finalizar turno
-    Description: "Haz clic para finalizar tu turno.\n\nDescartas tu mano |d:(sin desencadenar\
-      \ efectos de descarte)|.\nCada enemigo actúa en función de su |Intención|, luego\
-      \ robas {0} cartas y tomas tu próximo turno."
+    Description: "{Gamepad:select true='Presione A' false='Haz click'} para finalizar\
+      \ tu turno.\n\nDescartas tu mano |d:(sin desencadenar efectos de descarte)|.\n\
+      Cada enemigo actúa en función de su |Intención|, luego se roba {0} cartas y\
+      \ tomas tu próximo turno."
   BattleMana:
     Name: Reserva de maná
     Description: "Aquí se muestra el maná no gastado.\nNecesitas maná para usar las\
@@ -636,7 +637,8 @@ Tooltip:
       \ a tu reserva de maná."
   GameSeed:
     Description: "Cada partida genera una semilla aleatoria. Dos partidas con la misma\
-      \ semilla serán idénticas.\n\nHaga clic para copiar la semilla en su portapapeles."
+      \ semilla serán idénticas.\n\n{Gamepad:select false='Haga click para copiar\
+      \ la semilla en su portapapeles.' true=''}"
     Name: Semilla
   EntityTitle:
     Blue: Azul
@@ -673,9 +675,10 @@ Tooltip:
   UsTitle: '{1}'
   DiscardZone:
     Name: Descarte
-    Description: "Cada vez que descartas una carta, la envías aquí.\nAl final de tu\
-      \ turno, también descartas las cartas restantes en tu mano |d:(sin activar efectos\
-      \ de descarte)|.\n\nHaz clic para ver qué cartas hay en tu descarte."
+    Description: "Cada vez que descartas una carta, se enviara aquí.\nAl final de\
+      \ tu turno, también descartas las cartas restantes en tu mano |d:(sin activar\
+      \ efectos de descarte)|.\n\n{Gamepad:select true='Presione A' false='Haz click'}\
+      \ para ver qué cartas hay en tu pila de descarte."
   DetailedHint:
     Description: "Mostrar todas las sugerencias.\nEste es el primer juego de creación\
       \ de mazos que he jugado..."
@@ -686,7 +689,8 @@ Tooltip:
   BriefHint:
     Name: Sugerencia corta
     Description: "Solo se mostrarán sugerencias relevantes para la mecánica única\
-      \ de este juego.\nHe jugado juegos similares, como Slay the Spire."
+      \ de este juego.\nSi has jugado juegos similares, {Censor:select false=', como\
+      \ Slay the Spire' true=''}."
   BaseMana:
     Name: Base de maná
     Description: "Al comienzo de cada turno, obtienes maná igual al maná en tu |base\
@@ -784,8 +788,8 @@ Cards:
   RemoveTips: Elige una carta para remover
   UpgradeDialog: ¿Mejorar esta carta?
   Size:  {0:plural one='% carta' other='% cartas'}
-  Show: Pase el cursor o haga clic con el botón derecho en las cartas para ver los
-    detalles
+  Show: "{Gamepad:select true='Presiona X ' false='Pase el cursor o haga clic con\
+    \ el botón derecho'} en las cartas para ver los detalles."
   TransformTips: Elige una carta para transformar
   RemoveDialog: ¿Remover esta carta?
   TransformDialog: ¿Transformar esta carta?
@@ -862,18 +866,20 @@ BattleHint:
   Intention: "La intención del enemigo se muestra encima de ellos.\nLos enemigos pueden\
     \ tener intenciones como atacar, defender, mejorar a sus aliados, aplicar desventajas\
     \ o lanzar una carta mágica."
-  Mana: "Haz clic derecho en una carta para ver sus detalles. (Esto también funciona\
-    \ para la mayoría de los otros lugares en el juego donde se verán las cartas).\n\
-    Usar cartas cuesta maná. El coste de maná de la carta se muestra en la esquina\
-    \ superior derecha.\nHay 7 tipos de maná base: maná de color <sprite=\"ManaSprite\"\
-    \ name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"\
-    B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, Maná\
-    \ Incoloro <sprite=\"ManaSprite\" name=\"C\"> y Maná Filosofal <sprite=\"ManaSprite\"\
-    \ name=\"P\"> que puede rellenar cualquier requisito de coste de maná.\nLos costes\
-    \ genéricos como <sprite=\"ManaSprite\" name=\"2\"> se usan cualquier par de maná."
-  ManaPanel: "El panel de maná muestra cuánto maná queda.\nHaz clic izquierdo en un\
-    \ símbolo de maná para \"flotarlo\". El maná flotante se gastará antes que el\
-    \ resto del maná.\nHaz clic derecho en un símbolo de maná para hacer flotar todo\
+  Mana: "{Gamepad:select true='Presione X' false='Haz click derecho'} en una carta\
+    \ para ver sus detalles. (Esto también funciona para la mayoría de los otros lugares\
+    \ en el juego donde se verán las cartas).\nUsar cartas cuesta maná. El coste de\
+    \ maná de la carta se muestra en la esquina superior derecha.\nHay 7 tipos de\
+    \ maná base: maná de color <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
+    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
+    R\"><sprite=\"ManaSprite\" name=\"G\">, Maná Incoloro <sprite=\"ManaSprite\" name=\"\
+    C\"> y Maná Filosofal <sprite=\"ManaSprite\" name=\"P\"> que puede rellenar cualquier\
+    \ requisito de coste de maná.\nLos costes genéricos como <sprite=\"ManaSprite\"\
+    \ name=\"2\"> se usan cualquier par de maná."
+  ManaPanel: "El panel de maná muestra cuánto maná queda.\n{Gamepad:select true='Elige'\
+    \ false='Haz click izquierdo en'} un símbolo de maná para \"flotarlo\". El maná\
+    \ flotante se gastará antes que el resto del maná.\n{Gamepad:select true='Presione\
+    \ la X' false='Haz click derecho'} en un símbolo de maná para hacer flotar todo\
     \ el maná del mismo color.\nEl maná se restaura al comienzo del turno del jugador."
   BlockShield: "Antes de recibir daño, juega una carta de defensa para ganar |Bloqueo|\
     \ y |s:Barrera|.\n|Bloqueo| y |s:Barrera| reducirá la cantidad de daño que se\
