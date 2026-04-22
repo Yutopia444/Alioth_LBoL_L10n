@@ -315,8 +315,9 @@ Setting:
   SingleEnemyAutoSelect: Tự Động Chọn Mục Tiêu Đơn
   SingleEnemyAutoSelectDescription: Sử dụng thẻ mà không cần thực hiện chọn mục tiêu
     khi chỉ có một kẻ địch.
-  ShowShortcut: Hiện Phím Tắt Trên Thẻ
-  ShowShortcutDescription: Hiện Phím Tắt ở phía trên các thẻ trong tay.
+  ShowShortcut: Hiện {Gamepad:select true='Thứ Tự'false='Phím Tắt'} Trên Thẻ
+  ShowShortcutDescription: Bật tắt việc hiển thị {Gamepad:select true='số thứ tự của'false='phím
+    tắt phía trên'} các lá bài có trong tay.
   Enable: Bật
   Disable: Tắt
   XCostWarning: Cảnh cáo về Phí Sử Dụng X
@@ -627,7 +628,8 @@ Cards:
   RemoveTips: Chọn một thẻ để Xóa Bỏ
   UpgradeDialog: Xác nhận Nâng Cấp?
   Size:  {0} lá
-  Show: Di chuột/nhấp chuột phải vào thẻ để xem thêm chi tiết.
+  Show: "{Gamepad:select true='Nhấn X khi đang chọn'false='Di chuột rồi nhấp chuột\
+    \ phải vào'} thẻ để xem thông tin chi tiết."
   Remove: Loại bỏ {0} thẻ ra khỏi thư viện.
   IsUpgraded: Lá Đã Nâng Cấp
   UnUpgradable: Không Thể Nâng Cấp
@@ -721,23 +723,25 @@ Tooltip:
   DrawZone:
     Description: "Ở đầu lượt, bốc {0} lá từ đây.\nNếu chồng bài bốc trống, các lá\
       \ nằm trong chồng bài bỏ sẽ được trộn ngẫu nhiên thành một chồng bài bốc mới.\n\
-      \nNhấn vào đây để xem các lá hiện có trong chồng bài bốc, tuy nhiên đây không\
-      \ phải là thứ tự thực sự của chồng bài bốc."
+      \n{Gamepad:select true='Bấm A'false='Nhấp vào đây'} để xem các lá hiện có trong\
+      \ chồng bài bốc, tuy nhiên đây không phải là thứ tự thực sự của chồng bài bốc."
     Name: Chồng Bài Bốc
   DiscardZone:
     Name: Chồng Bài Bỏ
     Description: "Mỗi khi bạn bỏ 1 lá, nó sẽ được đưa vào đây.\nKhi mỗi lượt kết thúc,\
       \ tất cả các lá trên tay sẽ bị bỏ |d:(mà không kích hoạt hiệu ứng bỏ bài của\
-      \ chúng)|.\n\nNhấn vào đây để xem các lá hiện có trong chồng bài bỏ."
+      \ chúng)|.\n\n{Gamepad:select true='Bấm A'false='Nhấp vào đây'} để xem các lá\
+      \ hiện có trong chồng bài bỏ."
   ExileZone:
     Name: Khu Trục Xuất
-    Description: "Lá bị |Trục Xuất| sẽ được đưa vào đây.\n\nNhấn vào đây để xem các\
-      \ lá đã bị trục xuất trong trận đấu này."
+    Description: "Lá bị |Trục Xuất| sẽ được đưa vào đây.\n\n{Gamepad:select true='Bấm\
+      \ A'false='Nhấp vào đây'} để xem các lá đã bị trục xuất trong trận đấu này."
   EndTurn:
     Name: Kết Thúc Lượt
-    Description: "Nhấn để kết thúc lượt của bạn.\n\nCác lá bài còn lại trong tay sẽ\
-      \ bị bỏ |d:(mà không kích hoạt hiệu ứng bỏ bài)| \nTừng kẻ địch sẽ hành động\
-      \ dựa trên |Ý Định| của chúng, sau đó, bạn bốc {0} lá và bắt đầu lượt mới."
+    Description: "{Gamepad:select true='Bấm A'false='Nhấp'} để kết thúc lượt của bạn.\n\
+      \nCác lá bài còn lại trong tay sẽ bị bỏ |d:(mà không kích hoạt hiệu ứng bỏ bài)|\
+      \ \nTừng kẻ địch sẽ hành động dựa trên |Ý Định| của chúng, sau đó, bạn bốc {0}\
+      \ lá và bắt đầu lượt mới."
   BaseMana:
     Description: "Ở đầu lượt, bạn sẽ nhận số mana trùng với số mana trong |kho mana|\
       \ của bạn.\n|Kho mana| của bạn có thể được mở rộng bằng cách thu thập |Chứng\
@@ -753,7 +757,8 @@ Tooltip:
   GameSeed:
     Name: Seed
     Description: "Mỗi lượt chạy sẽ có 1 Seed ngẫu nhiên. Hai lượt chạy có Seed giống\
-      \ nhau sẽ giống y hệt nhau.\n\nNhấn để sao chép Seed vào bộ nhớ tạm."
+      \ nhau sẽ giống y hệt nhau.\n\n{Gamepad:select false='Nhấp chuột để sao chép\
+      \ Seed vào bộ nhớ tạm.'true=''}"
   EntityTitle:
     Character: ' Độc Quyền Thẻ'
     Neutral: Trung Lập
@@ -804,15 +809,16 @@ BattleHint:
     \ thì bạn có thể chọn |Gợi Ý Ngắn Gọn| để chỉ hiện các gợi ý về các cơ chế đặc\
     \ trưng của trò chơi.\nCác gợi ý sau này cũng sẽ dựa trên lựa chọn này. Bạn có\
     \ thể điều chỉnh cài đặt về gợi ý ở bảng cài đặt bất cứ lúc nào bạn muốn."
-  Mana: "Nhấn chuột phải vào 1 thẻ để xem chi tiết của nó. (Hoạt động ở hầu hết các\
-    \ nơi mà bạn xem được thẻ trong game.)\nViệc chơi một lá bài sẽ tiêu hao mana.\
-    \ Chi phí của một lá bài được hiển thị ở góc trên bên phải của lá đó.\nCó 7 loại\
-    \ mana: Mana Đơn Sắc <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"\
-    R\"><sprite=\"ManaSprite\" name=\"G\">, Mana Vô Sắc <sprite=\"ManaSprite\" name=\"\
-    C\"> và cuối cùng là Mana Đa Sắc <sprite=\"ManaSprite\" name=\"P\"> có thể được\
-    \ dùng để chi trả cho bất kì màu mana nào.\nChi phí chung ví dụ như <sprite=\"\
-    ManaSprite\" name=\"2\"> có thể được chi trả bằng 2 mana bất kì."
+  Mana: "{Gamepad:select true='Bấm X đi đang trỏ tới'false='Nhấp chuột phải vào'}\
+    \ 1 thẻ để xem chi tiết của nó. (Hoạt động ở hầu hết các nơi mà bạn xem được thẻ\
+    \ trong game.)\nViệc chơi một lá bài sẽ tiêu hao mana. Chi phí của một lá bài\
+    \ được hiển thị ở góc trên bên phải của lá đó.\nCó 7 loại mana: Mana Đơn Sắc <sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    G\">, Mana Vô Sắc <sprite=\"ManaSprite\" name=\"C\"> và cuối cùng là Mana Đa Sắc\
+    \ <sprite=\"ManaSprite\" name=\"P\"> có thể được dùng để chi trả cho bất kì màu\
+    \ mana nào.\nChi phí chung ví dụ như <sprite=\"ManaSprite\" name=\"2\"> có thể\
+    \ được chi trả bằng 2 mana bất kì."
   Detailed: Hiện Gợi Ý Chi Tiết
   Brief: Hiện Gợi Ý Ngắn Gọn
   DontShow: Không Hiện Gợi Ý
@@ -824,8 +830,9 @@ BattleHint:
     \ bốc vào đầu lượt của người chơi."
   ManaPanel: "Thanh mana hiển thị các mana bạn đang có.\nChọn 1 biểu tượng mana để\
     \ đưa vào hàng chờ sử dụng. Mana trong hàng chờ sẽ được ưu tiên tiêu thụ trước.\n\
-    Nhấn chuột phải vào 1 biểu tượng mana để chỉ định tất cả các mana có màu đó.\n\
-    Mana sẽ được phục hồi vào đầu lượt của người chơi."
+    {Gamepad:select true='Bấm X khi đang trỏ tới'false='Nhấp chuột phải vào'} 1 biểu\
+    \ tượng mana để chỉ định tất cả các mana có màu đó.\nMana sẽ được phục hồi vào\
+    \ đầu lượt của người chơi."
   BlockShield: "Trước khi nhận sát thương, hãy chơi 1 lá Phòng Thủ để nhận |Khiên|\
     \ và |s:Hộ Giáp|.\n|Khiên| và |s:Hộ Giáp| sẽ giảm lượng sát thương mà bạn phải\
     \ chịu.\n|Khiên| sẽ biến mất vào đầu lượt tiếp theo của người chơi, còn |s:Hộ\
