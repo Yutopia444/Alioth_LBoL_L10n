@@ -331,8 +331,8 @@ Setting:
   AnimatingEnvironmentDescription: 在關卡場景及隙間小屋中使用動態背景。
   SingleEnemyAutoSelect: 自動選擇單個敵人
   SingleEnemyAutoSelectDescription: 在剩下最後一名敵人時，指定單個目標的卡牌，不需要精確地瞄準就會選擇它。
-  ShowShortcut: 顯示手牌快捷鍵
-  ShowShortcutDescription: 在手牌上方顯示快速選擇按鍵文本
+  ShowShortcut: 顯示{Gamepad:select true='手牌序列' false='手牌快捷鍵'}
+  ShowShortcutDescription: 在手牌上方顯示{Gamepad:select true='手牌序列' false='快速選擇按鍵文本'}
   ShowReload: 顯示回到過去次數
   ShowReloadDescription: 在地圖界面顯示本次遊戲的回到過去次數、是否揭示命運狀態
   Shake: 螢幕震動
@@ -640,7 +640,7 @@ Cards:
   RemoveDialog: 確定移除卡牌？
   TransformDialog: 確定變化卡牌？
   Size: ' {0} 張牌'
-  Show: 懸停/右鍵卡牌，以查看詳細信息
+  Show: 懸停/{Gamepad:select true='X鍵點擊' false='右鍵'}卡牌，以查看詳細資訊
   Remove: 從牌庫中移除 {0} 張牌
   IsUpgraded: 此卡牌已升級
   UnUpgradable: 此卡牌不可升級
@@ -785,7 +785,7 @@ Tooltip:
       你的每個回合開始時，從這裏抽 {0} 張牌。
       如果你的抽牌堆空了，棄牌堆中的牌會打亂順序，洗入抽牌堆中。
 
-      點擊這裏查看抽牌堆中的牌，不過顯示的不是它們的實際順序。
+      {Gamepad:select true='按A鍵' false='點擊這裏'}查看抽牌堆中的牌，不過你無法看到它們的實際順序。
 
   DiscardZone:
     Name: 棄牌堆
@@ -793,19 +793,19 @@ Tooltip:
       你打出或主動丟棄的牌會進入棄牌堆。
       回合結束時，手牌會移入棄牌堆（不觸發「主動丟棄」效果）。
 
-      點擊這裏查看棄牌堆中的牌
+      {Gamepad:select true='按A鍵' false='點擊這裏'}查看棄牌堆中的牌
 
   ExileZone:
     Name: 放逐區
     Description: |-
       在一場戰鬥中，被|放逐|的牌會進入放逐區
 
-      點擊這裏查看放逐區中的牌
+      {Gamepad:select true='按A鍵' false='點擊這裏'}查看放逐區中的牌
 
   EndTurn:
     Name: 結束回合
     Description: |-
-      按下以結束你的回合。
+      {Gamepad:select true='按A鍵' false='按下以'}結束你的回合。
 
       你的手牌會移入棄牌堆（不觸發「主動丟棄」效果）。
       敵人依次進行她們的回合，之後你重新抽 {0} 張牌進行你的下一個回合。
@@ -830,7 +830,7 @@ Tooltip:
     Description: |-
       每局遊戲由一個種子生成
 
-      點擊複製到剪貼板
+      {Gamepad:select false='點擊複製到剪貼板' true=''}
 
   EntityTitle:
     Character: 角色牌
@@ -899,15 +899,15 @@ BattleHint:
     打出後的手牌將會移入棄牌堆。在主角的回合結束時，仍留在手中的牌也將被移入棄牌堆。
     主角的回合開始時將會抽取新的卡牌。
   Mana: |-
-    鼠標右鍵點擊卡牌可查看詳情。（遊戲中的大多數卡牌面板均可如此操作。）
+    {Gamepad:select false='滑鼠右鍵點擊卡牌可查看詳情' true='按X鍵可查看卡牌詳情' }。（遊戲中的大多數卡牌面板均可如此操作。）
     打出卡牌需要消費法力。卡牌的法力費用顯示在右上角。
-    法力的種類有<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="U"><sprite="ManaSprite" name="B"><sprite="ManaSprite" name="R"><sprite="ManaSprite" name="G">五種顔色的基礎法力，無色法力<sprite="ManaSprite" name="C">及可以用於支付任意費用的彩色法力<sprite="ManaSprite" name="P">。
+    法力的種類有<sprite="ManaSprite" name="W"><sprite="ManaSprite" name="U"><sprite="ManaSprite" name="B"><sprite="ManaSprite" name="R"><sprite="ManaSprite" name="G">五種顏色的基礎法力，無色法力<sprite="ManaSprite" name="C">及可以用於支付任意費用的彩色法力<sprite="ManaSprite" name="P">。
     如同<sprite="ManaSprite" name="2">的數字費用，表示該費用可以使用任意的 2 點法力支付。
   ManaPanel: |-
     法力面板顯示了主角當前回合剩餘的法力。
     選擇一點法力，可以將法力移動到待選區。待選區中的法力將被優先消費。
-    右鍵單擊任意一點法力，可以將該顔色的所有法力移動到待選區。
-    法力在主角的回合開始時恢複。
+    {Gamepad:select false='右鍵單擊任意一點法力' true='對任意法力按X鍵'}，可以將該顏色的所有法力移動到待選區。
+    法力在主角的回合開始時恢復。
   BlockShield: |-
     在受到傷害之前，打出防禦牌來獲得|格擋|及|s:護盾|。
     |格擋|及|s:護盾|可以降低將要受到的傷害。
