@@ -377,8 +377,9 @@ Setting:
     ToggleMinimize: Masquer temporairement l'interface
     Select11: Sélectionner 11
     Select12: Sélectionner 12
-  ShowShortcut: Afficher les raccourcis
-  ShowShortcutDescription: Affiche les raccourcis au-dessus des cartes de la main
+  ShowShortcut: Afficher {Gamepad:select true="l'ordre" false="les raccourcis"}
+  ShowShortcutDescription: Affiche {Gamepad:select true="l'ordre numérique" false="les
+    raccourcis au-dessus"} des cartes de la main .
   Shake: Tremblement de l'écran
   ShakeDescription: Les dégâts en combat font vibrer l'écran
   ShowReload: Afficher les retours
@@ -619,7 +620,8 @@ Cards:
   UpgradeTips: Choisissez une carte à améliorer
   RemoveTips: Choisissez une carte à supprimer
   Size:  {0:plural one='% carte' other='% cartes'}
-  Show: Survolez ou faites un clic droit sur les cartes pour voir les détails
+  Show: "{Gamepad:select true='Appuyez X' false='Survolez ou faites un clic droit'}\
+    \ sur les cartes pour voir les détails"
   Remove: Retirez {0} cartes de la bibliothèque.
   IsUpgraded: Amélioré
   UpgradeDialog: Confirmer l'amélioration
@@ -745,24 +747,26 @@ Tooltip:
     Description: "Durant votre étape de pioche, vous piochez {0} cartes de votre bibliothèque.\
       \ |d:(Votre étape de pioche se produit au début de chaque tour, avant les effets\
       \ de début de tour.)|\nÀ chaque fois que votre bibliothèque est vide, les cartes\
-      \ de votre défausse sont mélangées dans votre bibliothèque.\n\nCliquez pour\
-      \ voir quelles cartes restent dans votre bibliothèque. |Cela ne révèle pas l'ordre\
-      \ réel des cartes dans votre bibliothèque.|"
+      \ de votre défausse sont mélangées dans votre bibliothèque.\n\n{Gamepad:select\
+      \ true='Appuyez A' false='Cliquez'} pour voir quelles cartes restent dans votre\
+      \ bibliothèque. |Cela ne révèle pas l'ordre réel des cartes dans votre bibliothèque.|"
   DiscardZone:
     Name: Défausse
     Description: "Chaque fois que vous vous défaussez d'une carte, vous l'envoyez\
       \ ici.\nÀ la fin de votre tour, vous défaussez également les cartes restantes\
-      \ de votre main |d:(sans déclencher d'effets de défausse)|.\n\nCliquez pour\
-      \ voir quelles cartes se trouvent dans votre défausse."
+      \ de votre main |d:(sans déclencher d'effets de défausse)|.\n\n{Gamepad:select\
+      \ true='Appuyez A' false='Cliquez'} pour voir quelles cartes se trouvent dans\
+      \ votre défausse."
   ExileZone:
     Name: Zone d'Exil
-    Description: "Les cartes |Exilées| sont envoyées ici.\n\nCliquez pour voir les\
-      \ cartes |Exilées| durant ce combat."
+    Description: "Les cartes |Exilées| sont envoyées ici.\n\n{Gamepad:select true='Appuyez\
+      \ A' false='Cliquez'} pour voir les cartes |Exilées| durant ce combat."
   EndTurn:
     Name: Fin de Tour
-    Description: "Cliquez pour terminer votre tour.\n\nVous défaussez votre main |d:(sans\
-      \ déclencher d'effets de défausse)|, puis chaque ennemi agit en fonction de\
-      \ ses |Intentions|.\nAprès que chaque ennemi a agi, un nouveau tour commence."
+    Description: "{Gamepad:select true='Appuyez A' false='Cliquez'} pour terminer\
+      \ votre tour.\n\nVous défaussez votre main |d:(sans déclencher d'effets de défausse)|,\
+      \ puis chaque ennemi agit en fonction de ses |Intentions|.\nAprès que chaque\
+      \ ennemi a agi, un nouveau tour commence."
   BattleMana:
     Name: Réserve de Mana
     Description: "Le mana non dépensé est affiché ici.\nVous avez besoin de mana pour\
@@ -779,8 +783,8 @@ Tooltip:
   GameSeed:
     Name: Graine
     Description: "Chaque partie génère une graine aléatoire. Deux parties avec la\
-      \ même graine seront identiques.\n\nCliquez pour copier la graine dans votre\
-      \ presse-papiers."
+      \ même graine seront identiques.\n\n{Gamepad:select false='Cliquez pour copier\
+      \ la graine dans votre presse-papiers.' true=''}"
   EntityTitle:
     Character: 'Unique'
     Neutral: Neutre
@@ -834,9 +838,10 @@ BattleHint:
   Next: Suivant
   ManaPanel: "Le panneau de mana affiche le mana restant pour le tour en cours.\n\
     Sélectionnez n'importe quel mana pour le déplacer vers la zone d'attente. Le mana\
-    \ dans la zone d'attente sera consommé en premier.\nFaites un clic droit sur n'importe\
-    \ quel mana pour déplacer tous les manas de cette couleur vers la zone d'attente.\n\
-    Le mana est restauré au début du tour du joueur."
+    \ dans la zone d'attente sera consommé en premier.\n{Gamepad:select true='Appuyez\
+    \ X' false='Faites un clic droit'} sur n'importe quel mana pour déplacer tous\
+    \ les manas de cette couleur vers la zone d'attente.\nLe mana est restauré au\
+    \ début du tour du joueur."
   BlockShield: "Avant de subir des dégâts, jouez une carte de défense pour gagner\
     \ |Bouclier| et |s:Barrière|.\n|Bouclier| et |s:Barrière| réduisent la quantité\
     \ des dégâts qui seront infligés.\n|Bouclier| disparaît au début du prochain tour\
@@ -855,16 +860,16 @@ BattleHint:
     \ tour du joueur, les cartes qui restent dans votre main seront également placées\
     \ dans la pile de défausse.\nDe nouvelles cartes seront piochées au début du tour\
     \ du joueur."
-  Mana: "Faites un clic droit sur la carte pour afficher ses détails. (Cela fonctionne\
-    \ également pour la plupart des panneaux du jeu.)\nJouer des cartes nécessite\
-    \ une consommation de mana. Le coût en mana de la carte est affiché dans le coin\
-    \ supérieur droit.\nIl existe 7 types de base de mana différents : mana coloré\
-    \ <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
-    \ name=\"G\">, mana incolore <sprite=\"ManaSprite\" name=\"C\"> et mana multicolore\
-    \ <sprite=\"ManaSprite\" name=\"P\"> qui peut payer n'importe quel type de coût\
-    \ de mana.\nUn coût générique comme <sprite=\"ManaSprite\" name=\"2\"> peut être\
-    \ payé avec n'importe quelle paire de mana."
+  Mana: "{Gamepad:select true='Appuyez X' false='Faites un clic droit'} sur la carte\
+    \ pour afficher ses détails. (Cela fonctionne également pour la plupart des panneaux\
+    \ du jeu.)\nJouer des cartes nécessite une consommation de mana. Le coût en mana\
+    \ de la carte est affiché dans le coin supérieur droit.\nIl existe 7 types de\
+    \ base de mana différents : mana coloré <sprite=\"ManaSprite\" name=\"W\"><sprite=\"\
+    ManaSprite\" name=\"U\"><sprite=\"ManaSprite\" name=\"B\"><sprite=\"ManaSprite\"\
+    \ name=\"R\"><sprite=\"ManaSprite\" name=\"G\">, mana incolore <sprite=\"ManaSprite\"\
+    \ name=\"C\"> et mana multicolore <sprite=\"ManaSprite\" name=\"P\"> qui peut\
+    \ payer n'importe quel type de coût de mana.\nUn coût générique comme <sprite=\"\
+    ManaSprite\" name=\"2\"> peut être payé avec n'importe quelle paire de mana."
   UltimateSkill: "Lancez la Carte Sort pour inverser le cours de la bataille !\nUtiliser\
     \ une Carte Sort consomme une pleine charge d'omnipotence. Les ennemis vaincus\
     \ laissent tomber <sprite=\"Point\" name=\"Power\">, qui reconstitue l'omnipotence\
