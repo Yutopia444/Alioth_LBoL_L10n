@@ -360,8 +360,8 @@ WanderingSoul:
     |d:Esta carta está actualmente en desarrollo.\n¡Vuelva a mirar en una futura actualización!|"
 RabbitFoot:
   Name: Pata de conejo de la suerte
-  Description: '|Al final del combate|: Si {SelfName} no está |Exiliada|, gana {Value1}<sprite="Point"
-    name="Gold">.'
+  Description: '|Al final del combate|: Si la {SelfName} no está |Exiliada|, gana
+    {Value1}<sprite="Point" name="Gold">.'
   FlavorText: Uno podría pensar que conseguir una pata de conejo te traerá suerte.
     En realidad, sólo las personas que ya tienen suerte pueden conseguir una pata
     de conejo.
@@ -804,7 +804,7 @@ Potion:
 MomentPower:
   Name: Grieta dimensional instantánea
   Description: Siempre que {PlayerName} gana |Poder temporal| o |Espíritu temporal|,
-    convierte {Value1} de ellos en |Poder| o |Espíritu|, respectivamente.
+    convierte {Value1} de ellos en |Poder| o |Espíritu| de manera permanente, respectivamente.
   FlavorText: A medida que la velocidad del "Poder temporal" se acerca a la velocidad
     de la luz, su masa aumentará, convirtiéndose en "Poder" permanente.
 BoliDajiejie:
@@ -1093,7 +1093,7 @@ SolarSystem:
   Name: Planetario solar
 WhiteLaser:
   Description: "Inflige {Damage} de daño.\nGana {Shield} de |Barrera|. La |Barrera|\
-    \ se ve afectada por la bonificación del |Burst|."
+    \ ganada se ve afectada por la bonificación del |Burst|."
   Name: Láser relámpago
 IceSpark:
   Description: "Inflige {Damage} de daño a cada enemigo y aplica |Frío| a cada enemigo."
@@ -1241,8 +1241,8 @@ SakuyaSleep:
   FlavorText: El mejor uso para detener el tiempo.
 SakuyaDefenseRetain:
   Name: Vigilancia
-  Description: "Gana {Block} de |Bloqueo|.\nEl |Bloqueo| no se pierde de {PlayerName}\
-    \ al comienzo del próximo turno."
+  Description: "Gana {Block} de |Bloqueo|.\nEl |Bloqueo| no se pierde al comienzo\
+    \ del próximo turno de {PlayerName}."
 VampireHunter:
   Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Vampiro|, inflige\
     \ {Value1} veces más de daño."
@@ -1961,7 +1961,7 @@ YukariBox:
     caer a continuación.
 YijiuAttack:
   Description: "Inflige {Damage} de daño.\nCuando un enemigo es derrotado usando {SelfName},\
-    \ |Exílialo| y gana |Perfección| por {Value1} {Value1:plural one='turno' other='turnos'}."
+    \ Se |Exilia| y gana |Perfección| por {Value1} {Value1:plural one='turno' other='turnos'}."
   Name: Trueno del dios dragón
 ReisenMana:
   Name: Afinación visionaria
@@ -2094,12 +2094,12 @@ TodayYesterday:
 LilyChun:
   Name: ¡Llegó la primavera!
   Description: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste total de\
-    \ 1 en la mano. Teniendo |Exilio| y |Etéreo|.\n"
+    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste de maná\
+    \ de 1 en la mano. Teniendo |Exilio| y |Etéreo|.\n"
   UpgradedDescription: "Agrega {Value1} {Value1:plural one='carta aleatoria' other='cartas\
-    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste total de\
-    \ 1 en la mano. |{Value1:plural one='cuesta' other='cuestan'} temporalmente| {Mana}.\
-    \ teniendo |Exilio| y |Etéreo|."
+    \ aleatorias'} que {Value1:plural one='tiene' other='tienen'} un coste de maná\
+    \ de 1 en la mano. |{Value1:plural one='cuesta' other='cuestan'} temporalmente|\
+    \ {Mana}. teniendo |Exilio| y |Etéreo|."
   DetailText: "Estas |e:cartas alternativas| ignoran las restricciones de los personajes.\n\
     En la |Mejora|, también ignoran las restricciones de maná total y del color de\
     \ maná.\n{SelfName} no puede ser producido por este efecto."
@@ -2130,8 +2130,8 @@ ZoufangSnake:
 YachieDefend:
   Name: Caparazón de tortuga infernal
   Description: "Evita que {Value1:plural one='la siguiente % vez' other='las siguientes\
-    \ % veces'} {PlayerName} pierda vida.\nSi esa pérdida de vida fue de un enemigo,\
-    \ redirige esa pérdida de vida a ese enemigo."
+    \ % veces'} {PlayerName} pierda vida.\nSi esa pérdida de vida fue por un enemigo,\
+    \ se redirige esa pérdida de vida a ese enemigo."
 LimaoAttack:
   Name: Pompokolín de luna llena
   Description: "Inflige {Damage} de daño a cada enemigo.\nGana {GainMana}.\n|Crecimiento|:\
@@ -2286,9 +2286,9 @@ XiangziEcho:
     {Value1:plural one='Ganará' other='Ganarán'} |Eco|.
   FlavorText: '"Ya————hoo————"'
 ReimuHeavyAttack:
-  Name: Puño de los Hakurei
-  Description: "Inflige {Damage} de daño.\nEl |Poder| aumenta el daño de {SelfName}\
-    \ {Value1} {Value1:plural one='vez' other='veces'}."
+  Name: Puño Hakurei
+  Description: "Inflige {Damage} de daño.\nEl |Poder| se multiplica por {Value1:plural\
+    \ one='vez' other='veces'} su valor al usar {SelfName}."
   FlavorText: '"¡Omae wa mou shindeiru!"'
 BulletStudy:
   Description: "Gana {Block} de |Bloqueo|.\n|Sobrecarga {Value2}| : Gana {Shield}\
@@ -2693,21 +2693,21 @@ TriggerAllPassive:
 HuiyeAttack:
   Name: Mar de árboles de Hourai
   Description: "|Por cada maná gastado de un color diferente|: Inflige {Damage} de\
-    \ daño a cada enemigo.\nSi se gastó al menos {Value2} de maná, devuelve hasta\
-    \ {Value1} carta{Value1:plural one='' other='s'} del |Exilio| a la mano."
+    \ daño a cada enemigo.\nSi se gastó al menos {Value2} manás diferentes, devuelve\
+    \ hasta {Value1} carta{Value1:plural one='' other='s'} del |Exilio| a la mano."
 SanaeRestart:
   Name: El día en que el mar se dividió
   Description: "Devuelve cualquier cantidad de cartas en la mano y de la pila de descarte\
     \ hacia la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
     \ one='' other='s'}.\nGana {Mana}."
 RemiliaFate:
-  Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nColoca\
-    \ cartas aleatorias con costes totales de 1, 2 y 3 desde la pila de robo hacia\
-    \ la mano."
+  Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nSe\
+    \ coloca desde la pila de robo hacia la mano, cartas aleatorias con costes de\
+    \ maná de 1, 2 y 3."
   Name: Manipulación del destino
   UpgradedDescription: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\n\
-    Coloca cartas aleatorias con costes totales de 1, 2, 3, 4 y 5 desde la pila de\
-    \ robo hacia la mano."
+    Se coloca desde la pila de robo hacia la mano, cartas aleatorias con costes de\
+    \ maná de 1, 2, 3, 4 y 5."
   FlavorText: ¿Realmente Remilia tiene esta habilidad?
 HuiyeTime:
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.\
@@ -2944,7 +2944,7 @@ Qianqiang:
 HuiyeMarblePhantasm:
   Name: Manifestación de la fantasía
   FlavorText: '"Princesa... por favor no uses tu habilidad en este tipo de asuntos..."'
-  Description: Elige 1 de {Value1} cartas aleatorias con un coste total de X+1 para
+  Description: Elige 1 de {Value1} cartas aleatorias con un coste de maná de X+1 para
     agregarla a la mano. |Cuesta temporalmente| {Mana} teniendo |Exilio| y |Etéreo|.
   DetailText: Si no hay suficientes cartas únicas para el coste especificado, se producirán
     cartas de menor coste.
@@ -3082,7 +3082,7 @@ BlueZeroAttack:
 QingeDraw:
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
     \ other='s'}.\nSe descarta cualquier carta que haya sido robada de esta manera\
-    \ con un coste total mayor a 1."
+    \ con un coste de maná mayor a 1."
   Name: Movimiento fetal tao
   FlavorText: Alias "Buscando a los diablillos"
   DetailText: Las cartas |No-Jugables| robadas de esta forma también se descartan.
@@ -3232,7 +3232,7 @@ AhongMana:
     \ one='' other='es'}| a la mano, luego |Mejora| {Value2} carta{Value2:plural one='\
     \ aleatoria' other='s aleatorias'} en la mano y {SelfName} se |Exilia|."
   Name: Mar colorido de sakuras
-  FlavorText: Es una pena que te hayas perdido el incidente de la Nieve en Primavera.
+  FlavorText: Es una pena que te hayas perdido el incidente de la nieve en Primavera.
 MeilingLianhua:
   Description: "Inflige {Damage} de daño a cada enemigo.\nGana {Value1} de |Poder|."
   Name: Danza caótica colorida
@@ -3467,7 +3467,7 @@ FollowAttackFiller:
   Description: Inflige {Damage} de daño.
   FlavorText: Ring-ring... ring-ring
 DollBlock:
-  Name: Escudo de muñeca
+  Name: Escudo de la Muñeca
   Description: (WIP) 
 Zhendijianzao:
   Name: Territorio de creación
@@ -3540,7 +3540,7 @@ KoishiPlayDiscard:
     \ |cartas Continuas| serán |Exiliadas|."
   DetailText: Si se elige una carta |Injugable|, no se juega y no se |Exiliara|.
 AliceAttackU:
-  Name: Lanza de muñeca
+  Name: Lanza de la muñeca
   Description: Inflige {Damage} de daño.
 AliceBlockB:
   Description: Gana {Block} de |Bloqueo|.
