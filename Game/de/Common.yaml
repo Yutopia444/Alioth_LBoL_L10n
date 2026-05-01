@@ -306,18 +306,21 @@ Setting:
     \ wird es stattdessen breiter.\nDurch diese Option werden Infofenster immer zuerst\
     \ breiter.\nAbhängig von der Sprache kann dadurch das Problem behoben werden,\
     \ dass die Überschrift des Infofensters zwei Zeilen benötigt."
-  LoopOrderDescription: "Wechselt die Darstellung von Farbpaaren nach dem Schema von\
-    \ 'Magic: The Gathering'.\nDie Darstellung von Weiß/Rot, Weiß/Grün und Blau/Grün\
-    \ wird dadurch gespiegelt. (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
-    \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
-    HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
-    >)\nBeeinflusst nur die Darstellung der Reihenfolge dieser Farbpaare (einschließlich\
-    \ Hybridkosten) und hat keinen Einfluss auf die generelle Reihenfolge des Manas."
+  LoopOrderDescription: "Wechselt die Darstellung von Farbpaaren{Censor:select false='\
+    \ nach dem Schema von \"Magic: The Gathering\"' true=''}.\nDie Darstellung von\
+    \ Weiß/Rot, Weiß/Grün und Blau/Grün wird dadurch gespiegelt. (<sprite=\"ManaSprite\"\
+    \ name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\" name=\"\
+    HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"HGW\"\
+    ><sprite=\"ManaSprite\" name=\"HGU\">)\nBeeinflusst nur die Darstellung der Reihenfolge\
+    \ dieser Farbpaare (einschließlich Hybridkosten) und hat keinen Einfluss auf die\
+    \ generelle Reihenfolge des Manas."
   AnimatingEnvironmentDescriptionLocked: "Aktiviert Hintergrundanimationen bei Kämpfen\
     \ oder in Spalten.\n(Gesperrt, kann nur im Hauptmenü geändert werden)"
-  ShowShortcut: Schelltaste für Hand anzeigen
-  ShowShortcutDescription: Bestimmt, ob die Schnelltasten über den jeweiligen Handkarten
-    angezeigt werden sollen.
+  ShowShortcut: "{Gamepad:select true='Reihenfolge' false='Schnelltaste'} für Hand\
+    \ anzeigen"
+  ShowShortcutDescription: Bestimmt, ob die {Gamepad:select true='numerische Reihenfolge'
+    false='Schnelltasten'} über den jeweiligen Handkarten angezeigt werden soll{Gamepad:select
+    true='' false='en'}.
   ShowCardOrderDescription: "Bestimmt, ob die Reihenfolge der Karten in den Stapeln\
     \ numerisch angezeigt werden sollen.\n\nBetrifft nur die Stapel, die in der tatsächlichen\
     \ Reihenfolge angezeigt werden können (Bibliothek, Ablagestapel und Exil).\nBeim\
@@ -430,8 +433,8 @@ StartGame:
   NotShowRandomResult: Verborgenes Schicksal
   Puzzles: "{0:plural one='% |Anfrage|' other='% |Anfragen|'}"
   SkillExhibit: Ausstellungsstück
-  DifficultyHint: Falls du noch nie 'Slay the Spire' gespielt hast, empfehlen wir
-    zuerst auf Einfach zu spielen.
+  DifficultyHint: Falls du noch nie {Censor:select false='"Slay the Spire"' true='Roguelike
+    Deckbuilding-Spiele'} gespielt hast, empfehlen wir zuerst auf Einfach zu spielen.
   JadeBoxSelectedCount: Ausgewählt {0}/{1}
   Rate: Komplexität
   Seed: Seed
@@ -596,14 +599,15 @@ Tooltip:
     Description: "Ziehe zu Beginn deines Zuges {0} Karten von deinem Ziehstapel. |d:(Effekte,\
       \ die zu Beginn des Zuges aktiviert werden, aktivieren sich erst nachdem gezogen\
       \ wurde)|\nSobald dein Ziehstapel leer ist, mische die Karten von deinem Ablagestapel\
-      \ zurück in den Ziehstapel.\n\nKlicke hier, um den Ziehstapel zu prüfen. |Die\
-      \ Karten im Ziehstapel werden unsortiert angezeigt|."
+      \ zurück in den Ziehstapel.\n\n{Gamepad:select true='Drücke A' false='Klicke\
+      \ hier'}, um den Ziehstapel zu prüfen. |Die Karten im Ziehstapel werden unsortiert\
+      \ angezeigt|."
   DiscardZone:
     Name: Abwerfen
     Description: "Jedes Mal, wenn eine Karte abgeworfen wird, landet sie im Ablagestapel.\n\
       Am Ende des Zuges werden alle übrigen Karten auf deiner Hand abgeworfen. |d:(Es\
-      \ werden dabei keine Effekte aktiviert)|\n\nKlicke hier, um den Ablagestapel\
-      \ zu prüfen."
+      \ werden dabei keine Effekte aktiviert)|\n\n{Gamepad:select true='Drücke A'\
+      \ false='Klicke hier'}, um den Ablagestapel zu prüfen."
   ExileZone:
     Name: Exil
     Description: "Hier landen alle Karten, die ins |Exil| gesendet werden.\n\n{Gamepad:select\
@@ -614,14 +618,15 @@ Tooltip:
   GameSeed:
     Name: Seed
     Description: "Jeder Durchlauf generiert einen zufälligen Seed. Zwei Durchläufe\
-      \ mit demselben Seed sind identisch.\n\nKlicke hier, um den Seed in die Zwischenablage\
-      \ zu speichern."
+      \ mit demselben Seed sind identisch.\n\n{Gamepad:select true='' false='Klicke\
+      \ hier, um den Seed in die Zwischenablage zu speichern.'}"
   EndTurn:
     Name: Zug beenden
-    Description: "Klicke hier, um deinen Zug zu beenden.\n\nAlle übrigen Karten auf\
-      \ deiner Hand werden abgeworfen. |d:(Es werden dabei keine Effekte aktiviert)|\n\
-      Alle Feinde führen anhand ihrer |Intentionen| eine Aktion aus, danach ziehst\
-      \ du {0} Karten und beginnst deinen nächsten Zug."
+    Description: "{Gamepad:select true='Drücke A' false='Klicke hier'}, um deinen\
+      \ Zug zu beenden.\n\nAlle übrigen Karten auf deiner Hand werden abgeworfen.\
+      \ |d:(Es werden dabei keine Effekte aktiviert)|\nAlle Feinde führen anhand ihrer\
+      \ |Intentionen| eine Aktion aus, danach ziehst du {0} Karten und beginnst deinen\
+      \ nächsten Zug."
   FinalStage:
     Name: Finaler Akt
     Description: Du bist fast am Ziel. Gib nicht auf!
@@ -657,8 +662,8 @@ Tooltip:
   BriefHint:
     Name: Kurze Hinweise
     Description: "Es werden nur relevante Hinweise zu den einzigartigen Spielmechaniken\
-      \ angezeigt.\nIch habe bereits ähnliche Spiele gespielt, wie z.B. 'Slay the\
-      \ Spire'."
+      \ angezeigt.\nIch habe bereits ähnliche Spiele gespielt{Censor:select false=',\
+      \ wie z.B.\"Slay the Spire\"' true=''}."
   BattleMana:
     Name: Manapool
     Description: "Das verfügbare Mana wird hier angezeigt.\nDu benötigst Mana, um\
@@ -931,10 +936,10 @@ BattleHint:
     \ werden die verbleibenden Karten auf deiner Hand ebenfalls in den Ablagestapel\
     \ gelegt.\nNeue Karten werden zu Beginn deines Zuges gezogen."
   ManaPanel: "Dein Manapool zeigt an, wie viel Mana dir in diesem Zug noch bleibt.\n\
-    Klicke mit der linken Maustaste auf das Mana im Manapool, um es hervorzuheben.\
-    \ Dieses Mana wird priorisiert.\nVerwende stattdessen die rechte Maustaste, um\
-    \ jedes Mana derselben Farbe hervorzuheben.\nDas Mana im Manapool wird zu Beginn\
-    \ deines Zuges wieder aufgefüllt."
+    Wähle ein Mana im Manapool aus, um es hervorzuheben. Dieses Mana wird priorisiert.\n\
+    Drücke {Gamepad:select true='X' false='die rechte Maustaste'}, um jedes Mana derselben\
+    \ Farbe hervorzuheben.\nDas Mana im Manapool wird zu Beginn deines Zuges wieder\
+    \ aufgefüllt."
   BlockShield: "Verwende Abwehrkarten, um |Block| und |s:Barriere| zu erhalten.\n\
     |Block| und |s:Barriere| reduzieren die Menge an Schaden, die durch Angriffe verursacht\
     \ werden.\n|Block| verschwindet zu Beginn deines Zuges, |s:Barriere| aber bleibt\
