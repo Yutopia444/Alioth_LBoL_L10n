@@ -209,8 +209,9 @@ Setting:
     és Yukari Résében.
   SingleEnemyAutoSelectDescription: Autómaikusan kiválassza-e a kártya célpontját
     ha csak egy ellenfél van életben.
-  ShowShortcutDescription: Mutassa-e a gyorsgombokat a kézben lévő kártyákhoz.
-  ShowShortcut: Kéz gyorsgomb mutatása
+  ShowShortcutDescription: Mutassa-e a {Gamepad:select true='számozott sorrendjét'
+    false='gyorsgombokat'} a kézben lévő kártyák{Gamepad:select true='nak' false='hoz'}.
+  ShowShortcut: Kéz {Gamepad:select false='gyorsgomb' true='sorrend'} mutatása
   SingleEnemyAutoSelect: Egy ellenfél kiválasztás
   ShowCardOrder: Kártyasorrend mutatása
   ShowReload: Újrakezdések számának mutatása
@@ -275,12 +276,13 @@ Setting:
     \ lapok."
   LoopOrder: Színpárok keringése
   LoopOrderOff: Ki<sprite="ManaSprite" name="HWR">
-  LoopOrderDescription: "Felcseréli a Kártyaszínpárokat és MtG stílusban mutatja őket.\n\
-    Fehér/Piros, Fehér/Zöld és Kék/Zöld manák sorrendjét megfordítja. (<sprite=\"\
-    ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\"\
-    \ name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"\
-    HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\nCsak vizuális a sorrendváltozás (Hibrid\
-    \ Költségek is), és nem változtat az összességi manasorrenden."
+  LoopOrderDescription: "Felcseréli a kártya-színpárokat{Censor:select false=' és\
+    \ MtG stílusban mutatja őket' true=''}.\nFehér/Piros, Fehér/Zöld és Kék/Zöld manák\
+    \ sorrendjét megfordítja. (<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
+    \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
+    HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
+    >)\nCsak vizuális a sorrendváltozás (Hibrid Költségek is), és nem változtat az\
+    \ összességi manasorrenden."
   LoopOrderOn: Be<sprite="ManaSprite" name="HRW">
   AnimatingEnvironmentDescriptionLocked: "Dinamikus hátterek használata Yukari Közében\
     \ és csata közben.\n(Lezárva, menj vissza a Főmenübe hogy változtathass rajta)"
@@ -317,8 +319,9 @@ Tooltip:
     Description: "A húzó lépésed közben: húzol {0} kártyát a húzó halomból. |d:(A\
       \ Húzó lépésed minden forduló legelején, a forduló elején aktiválódó hatások\
       \ előtt történik.)|\nHa a Húzó halmod üres, akkor az eldobott halomból keverődnek\
-      \ be kártyák a húzó halmodba.\n\nKattints hogy lásd milyen kártyák maradtak\
-      \ a húzó halmodban. |Ez nem mutatja meg a benne lévő kártyák sorrendjét|."
+      \ be kártyák a húzó halmodba.\n\n{Gamepad:select true='Nyomd meg az A-t' false='Kattints\
+      \ rá'}, hogy lásd milyen kártyák maradtak a húzó halmodban. |Ez nem mutatja\
+      \ meg a benne lévő kártyák sorrendjét|."
     Name: Húzó halom
   BaseMana:
     Description: "A fordulók legelején a |manabázisban| lévő manával egyenlő manát\
@@ -358,21 +361,24 @@ Tooltip:
     Name: Eldob
     Description: "Akármikor el dobsz egy kártyát, itt köt ki.\nA forduló végén. az\
       \ el nem használt kártyáid is itt végzik. |d:(Anélkül hogy aktiválnák az eldobó\
-      \ hatásokat)|.\n\nKattints hogy lásd milyen kártyák vannak az Eldobottak közt."
+      \ hatásokat)|.\n\n{Gamepad:select true='Nyomd meg az A-t' false='Kattints rá'},\
+      \ hogy lásd milyen kártyák vannak az Eldobottak közt."
   ExileZone:
     Name: Száműz
-    Description: "A |Száműzött| kártyák itt lyukadnak ki.\nKattints hogy ebben a csatában\
-      \ milyen kártyák kerültek |Száműzetésre|."
+    Description: "A |Száműzött| kártyák itt lyukadnak ki.\n\n{Gamepad:select true='Nyomd\
+      \ meg az A-t' false='Kattints rá'}, hogy lásd ebben a csatában milyen kártyák\
+      \ kerültek |Száműzetésre|."
   EndTurn:
     Name: Forduló vége
-    Description: "Kattints hogy befejezd a fordulódat.\n\nEldobod a kezedben lévő\
-      \ lapokat |d:(Anélkül hogy aktiválódnának az eldobó hatásaik)|.\nMinden ellenfél\
-      \ úgy viselkedik ahogy ő |Szándékozik|. végül húzol {0} kártyát és kezdődik\
-      \ a következő fordulód."
+    Description: "{Gamepad:select true='Nyomd meg az A-t' false='Kattints rá'} hogy\
+      \ befejezd a fordulódat.\n\nEldobod a kezedben lévő lapokat |d:(Anélkül hogy\
+      \ aktiválódnának az eldobó hatásaik)|.\nMinden ellenfél úgy viselkedik ahogy\
+      \ ő |Szándékozik|. végül húzol {0} kártyát és kezdődik a következő fordulód."
   GameSeed:
     Name: Seed
-    Description: "Minden futam véletéeszerű Seed-et használ. Két futam ugyanazzal\
-      \ a Seed-del meg fog egyezni.\n\nKattints hogy kimásold a Seed-et a vágólapra."
+    Description: "Minden futam véletlenszerű Seed-et használ. Két futam ugyanazzal\
+      \ a Seed-del meg fog egyezni.\n\n{Gamepad:select true='' false='Kattints rá,\
+      \ hogy kimásold a Seed-et a vágólapra.'}"
   EntityTitle:
     Character: ' Egyedi'
     Neutral: Semleges
@@ -413,7 +419,8 @@ Tooltip:
   BriefHint:
     Name: Rövid javaslatok
     Description: "Csak a játék egyedi mechanikáihoz lényeges információkat jeleníti\
-      \ meg.\nMár játszottam hasonló játékkal, mint például Slay the Spire"
+      \ meg.\nMár játszottam hasonló játékkal{Censor:select false=', mint például\
+      \ Slay the Spire' true=''}."
   DontShowHint:
     Name: Javaslatok nélkül
     Description: "Nem jelenít meg semilyen javaslatot.\nMár játszottam ezzel a játékkal."
@@ -423,19 +430,21 @@ BattleHint:
     \ amiket kijátszol az eldobott halomra kerülnek. A játékos fordulójának végén\
     \ azok a kártyák, amelyek kézben maradtak, is az eldobott halomra kerülnek.\n\
     Új kártyák fognak húzódni a húzó halomból a játékos következő fordulója legelején."
-  Mana: "Jobb klikkelj a kártyára hogy megnézd a részleteit. (Ez nagyon sok máshol\
-    \ is működik a játékban.)\nA kártyák kijátszása manába kerül. A kártyák értéke\
-    \ a jobb felső sarkukban található.\n7 féle mana lehet a bázisban: Színes mana\
-    \ <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"\
-    ManaSprite\" name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\"\
-    \ name=\"G\">, Színtelen mana <sprite=\"ManaSprite\" name=\"C\"> és Többszínű\
-    \ <sprite=\"ManaSprite\" name=\"P\"> amely egyszerre bármely manát helyettesítheti.\n\
-    Általános értékeket, mint <sprite=\"ManaSprite\" name=\"2\"> bármely 2 manával\
-    \ ki lehet fizetni."
+  Mana: "{Gamepad:select true='Nyomd meg az X-et a kártya felett' false='Jobb gombbal\
+    \ kattints rá a kártyára'}, hogy megnézd a részleteit. (Ez nagyon sok máshol is\
+    \ működik a játékban.)\nA kártyák kijátszása manába kerül. A kártyák értéke a\
+    \ jobb felső sarkukban található.\n7 féle mana lehet a bázisban: Színes mana <sprite=\"\
+    ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
+    \ name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
+    G\">, Színtelen mana <sprite=\"ManaSprite\" name=\"C\"> és Többszínű <sprite=\"\
+    ManaSprite\" name=\"P\"> amely egyszerre bármely manát helyettesítheti.\nÁltalános\
+    \ értékeket, mint <sprite=\"ManaSprite\" name=\"2\"> bármely 2 manával ki lehet\
+    \ fizetni."
   ManaPanel: "A mana panel mutatja mennyi mana van még hátra a tárcában.\nEgy manára\
-    \ bal klikkelve ki tudod \"emelni\". A kiemelt mana minden más mana előtt lesz\
-    \ elköltve.\nJobb klikkelj egy manára hogy az olyan színű összes manát kiemeld.\n\
-    A mana visszatöltődik a játékos fordulója legelején."
+    \ {Gamepad:select true='A-t nyomva' false='rákattintva'} ki tudod \"emelni\".\
+    \ A kiemelt mana minden más mana előtt lesz elköltve.\n{Gamepad:select true='Nyomd\
+    \ meg az X-et egy mana felett' false='Kattints rá egy manára'}, hogy az olyan\
+    \ színű összes manát kiemeld.\nA mana visszatöltődik a játékos fordulója legelején."
   Intro: "Üdvözlünk a Hold-Fővárosi Expon! Tegyél bele mindent hogy megtaláld a Legendák\
     \ Elveszett Ágát!\nHa már játszottál más pakliépítős játékkal ezelőtt, akkor nyugodtan\
     \ kiválaszthatod a |Rövid Javaslatok| opciót, hogy csak azok az információk jelenjenek\
@@ -647,8 +656,8 @@ StartGame:
   SkillExhibit: Kezdő kiállítási tárgy
   StartMoney: Kezdőtőke
   StartHp: Kezdő életerő
-  DifficultyHint: Ha még nem játszottál "Slay the Spire"-t, akkor javasolt könnyű
-    módban játszanod először.
+  DifficultyHint: Ha még nem játszottál {Censor:select false='"Slay the Spire"-el'
+    true='roguelike pakliépítőkkel'}, akkor javasolt könnyű módban játszanod először.
   ClearNormal: Teljesítve
   ClearTrue: Tökéletesen teljesítve
   NeedClear: Teljesítsd az előző nehézséget hogy feloldd.
@@ -880,7 +889,8 @@ Cards:
   RemoveDialog: Kártya Kitörlése?
   TransformDialog: Kártya Átalakítása?
   Size:  {0} kártya
-  Show: Húzd rá a kurzort, vagy jobb klikkelj a kártyára hogy lásd a részleteit.
+  Show: "{Gamepad:select true='Nyomd meg az X-et a kártya felett' false='Húzd rá a\
+    \ kurzort, vagy jobb klikkelj a kártyára'} hogy lásd a részleteit."
   Remove: '{0} kártya törlése a könyvtárból.'
   IsUpgraded: Fejlesztett
   UnUpgradable: Fejleszthetetlen
