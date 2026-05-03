@@ -444,7 +444,7 @@ YukariFriend:
   Name: Yukari, Grenze der Fantasie
   Description: '{FriendP}Erhalte |Feuerkraft| in Höhe der gespielten Abwehrkarten
     in diesem Zug. ({Fire})'
-  ExtraDescription1: '{FriendA}Wähle eine Karte aus dem |Exil| und füge sie deiner
+  ExtraDescription1: '{FriendA}Wähle eine Karte aus dem |Exil| aus und füge sie deiner
     Hand hinzu.'
   ExtraDescription3: '{FriendU}Füge zu Beginn deines Zuges eine zufällige, dreifarbige,
     neutrale Karte deiner Hand hinzu. Sie hat |Ätherisch| und |kostet temporär| {Mana}.'
@@ -1321,8 +1321,8 @@ YachieDefend:
     \ dieselbe Menge Leben."
 SatoriMemory:
   FlavorText: '"Was war das Passwort für diese Webseite?"'
-  Description: "Wähle 1 von {Value1} zufälligen Karten aus deinem Ablagestapel und\
-    \ füge sie deiner Hand hinzu.\n|Instinkt|: Sie |kostet temporär| {Mana}."
+  Description: "Wähle 1 von {Value1} zufälligen Karten von deinem Ablagestapel aus\
+    \ und füge sie deiner Hand hinzu.\n|Instinkt|: Sie |kostet temporär| {Mana}."
   Name: Tiefes Gedächtnis
 ZhenmiaowanAttack:
   Name: Nachfahre von Issun-Boushi
@@ -1340,7 +1340,7 @@ SanaeSummonGod:
     \ nächsten Zuges {Value1} |Feuerkraft| und |Geist|."
   Description: "Erhalte {Value2} |Göttliche Gunst|.\nErhalte zu Beginn deines zweiten\
     \ Zuges {Value1} |Feuerkraft| und |Geist|, nachdem {SelfName} gespielt wurde."
-  FlavorText: Einen Gott beschwören, um sich Essen und Trinken zu schnorren.
+  FlavorText: Einen Gott beschwören, nur um sich Essen und Trinken zu schnorren.
 RinDraw:
   Name: Zuweisung der Geister
   Description: Jedes Mal, wenn eine Statuskarte gezogen wird, ziehe {Value1:plural
@@ -1695,7 +1695,7 @@ ShopDefense:
     \ Karten'}."
   Name: Saubere Energie
 ShopSearch:
-  Description: Wähle eine Angriffs- oder Abwehrkarte aus deinem Ziehstapel aus und
+  Description: Wähle eine Angriffs- oder Abwehrkarte von deinem Ziehstapel aus und
     füge sie deiner Hand hinzu.
   Name: Privates Radar
   FlavorText: Diesen Gegenstand zu konstruieren schaltet die Landkarte frei.
@@ -3356,8 +3356,9 @@ XiaosanJingxia:
   Name: Angst
   Description: '|Am Ende des Zuges|: Erhalte {Value1} |Schwach|.'
   FlavorText: In letzter Zeit schaut sich Kogasa Tatara Horrorfilme aus der Außenwelt
-    an, um sich Inspiration in der Kunst des Erschreckens zu suchen. Gerüchten zufolge
-    soll sie sich bei dem Klassiker 'The Shining' zu Tode erschreckt haben.
+    an, um sich Inspiration in der Kunst des Erschreckens zu suchen. {Censor:select
+    false='Gerüchten zufolge soll sie sich bei dem Klassiker 'The Shining' zu Tode
+    erschreckt haben.' true=''}
 MarisaForget:
   Name: Vergesslichkeit
   FlavorText: '"Habe ich vergessen den Gasherd auszumachen, bevor ich das Haus verlassen
@@ -3636,3 +3637,9 @@ YonglinBurst:
     \ one='% Karte' other='% Karten'}. \nErhalte {Mana}.\n|Überziehen| {Value2}."
   Name: Pille des Schmetterlingstraum
   FlavorText: Kein Medikament von Eirin wirkt schneller als dieses hier.
+MarisaShopTwnm:
+  Name: Ladendiebstahl
+  DetailText: Die Kartenauswahl von {SelfName} wird auf die gleiche Weise wie in Takanes
+    Laden generiert.
+  Description: Wähle 1 Karte aus Takanes Laden aus und füge sie deiner Hand und der
+    Bibliothek hinzu.
