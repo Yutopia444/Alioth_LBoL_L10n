@@ -1,9 +1,9 @@
 ReimuAttackR:
-  Name: Hakurei Tılsımı
+  Name: Hakurei Muskası
   Description: '{Damage} hasar ver.'
-  FlavorText: Bırak bu güdümlü tılsımlar yollarını kendi bulsun, sen keyfine bak.
+  FlavorText: Bırak bu güdümlü muskalar yollarını kendi bulsun, sen keyfine bak.
 ReimuBlockW:
-  Name: Danmaku Geçirmez
+  Name: Mermi Geçirmez
   Description: '{Block} |Blok| elde et.'
   FlavorText: İzinsiz giriş yasak!
 Fengmozhen:
@@ -15,9 +15,9 @@ ShengtianKick:
   Name: Göğe Yükseliş
   FlavorText: İnsanların yüzüne gülümseme konduran bir saldırı tekniği.
 ReimuAttackW:
-  Name: Muska Atışı
+  Name: Tılsım Atışı
   Description: '{Damage} hasar ver.'
-  FlavorText: Gözlerin kapalıyken bile kullanabilmen için özel tasarlanmış muskalar.
+  FlavorText: Gözlerin kapalıyken bile kullanabilmen için özel tasarlanmış tılsımlar.
 ReimuBlockR:
   Name: Mermi İmhası
   Description: '{Block} |blok| elde et.'
@@ -112,94 +112,136 @@ DanmuDuijue:
     {SelfName} |ateş gücünden| etkilenir."
 ReverseJiejie:
   Name: Ters Hudut
-  Description: '{PlayerName} bir buff kaybettiğinde {Value1} |Bariyer| edin.'
+  Description: 'Her güçlendirme kaybettiğinde {Value1} |bariyer| elde et.'
+  FlavorText: Talih ve talihsizlik, aynı madalyonun iki farklıyüzüdür.
 ShensheRichang:
-  Description: "{Value1} Sağlık edin.\n{PlayerName:sg} |Bloğunu| |Bariyere| dönüştürür."
+  Description: "{Value1} can elde et.\n{PlayerName:sg} |bloğunu| |bariyere| dönüştür."
   Name: Hayattan Kesitler
+  FlavorText: Hadi bugün paydos.
 MingzhuAntou:
-  Description: Ele eklemek için {Value1} kart arasından birini seç. |Geçici olarak|
-    {Mana} bedelindedir.
-  Name: Gizli Sınır
+  Description: "Tüm düşmanlara {Damage} hasar ver.\n{Value1} |Gökkuşağı Yin-Yang Küresi|\
+    \ arasından birini eline ekle.\n|Savaş alanındaki| her |Yin-Yang Küresi kartı|,\
+    \ {SelfName}'nin mana bedelini {Mana} düşürür."
+  Name: Gizli Yin-Yang Küreleri
 JiejieAttack:
-  Description: "{Damage} Hasar ver.\nEk olarak {PlayerName:sg} |Bariyerine| eşit hasar\
-    \ ver. ({ShieldDamage})"
-  Name: Bariyer Vuruşu
-  NonbattleDescription: "{Damage} Hasar ver.\nEk olarak {PlayerName:sg} |Bariyerine|\
-    \ eşit hasar ver."
+  Description: "{Damage} hasar ver.\nEk olarak {PlayerName:sg} |bariyeri| kadar ({ShieldDamage})\
+    \ hasar ver."
+  Name: Bariyer Darbesi
+  NonbattleDescription: "{Damage} hasar ver.\nEk olarak {PlayerName:sg} |bariyeri|\
+    \ kadar hasar ver."
+  FlavorText: Bariyerler, mermileri engellemenin yanı sıra insanların kafalarına vurmak
+    için de kullanılabilir.
 Changzhizhen:
-  Name: Kalıcı Sınır
-  Description: "|Turun sonunda|: Rastgele bir düşmana {Value1} hasar ver.\n|Eldeyken|:\
-    \ {PlayerName} bir buff kaybettiğinde, kartın hasarını {Value2} yükselt."
+  Name: Daimi Çember
+  Description: "|Turunun sonunda|: Rastgele bir düşmana {Value1} hasar ver.\n|Elindeyken|:\
+    \ Her güçlendirme kaybettiğinde bu kartın hasarını {Value2} arttır."
+  DetailText: "{SelfName}'i elden oynamanın, kartı |sürgün etmek| dışında bir etkisi\
+    \ yoktur."
+  FlavorText: "Daimi Çember'in gücünü hesaplama formülü: Reimu'nun borcu + Faiz."
 ReimuLucky:
-  Name: Talihli Mola
-  Description: "{Value1} |Tılsım| edin.\n{Value2} <sprite=\"Point\" name=\"Gold\"\
-    > edin."
+  Name: Talih Tılsımı
+  Description: "{Value1} |Muska| elde et.\n{Value2} <sprite=\"Point\" name=\"Gold\"\
+    > elde et."
 TwoBalls:
-  Name: Dengeli Küreler
+  Name: Denge Küreleri
   Description: "Eline {Value1} |Yin-Yang Küresi| ekle."
+  UpgradedDescription: Eline |geçici olarak| {Mana} bedelinde olan {Value1} |Yin-Yang
+    Küresi| ekle.
 HuanxiangBlock:
-  Name: Fantezinin Doruğu
-  Description: Bir kart |Sürgün| edildiğinde {Value1} |Blok| edin.
+  Name: Hayallerin Doruğu
+  Description: Bir kart |sürgün| edildiğinde {Value1} |blok| elde et.
+  FlavorText: Dış Dünya'da isekai romanları popüler olduğun beri Reimu epey meşgul.
 YakongDianxue:
-  Name: Boyutsal Yarık
-  Description: "{Damage} Hasar ver.\n{PlayerName} bir buff kaybettiğinde bu kart ıskarta\
-    \ yığınından eline geri döner."
+  Name: Evrensel Yırtılma
+  Description: "{Damage} hasar ver.\n{PlayerName} her güçlendirme kaybettiğinde bu\
+    \ kart ıskartadan eline geri döner."
+  FlavorText: Düşmanlarını arkadan bıçakla.
 QinggeManwu:
-  Name: Rahibenin Valsı
-  Description: '{Value1} kart çek ve savaşın sonuna kadar onları |Yükselt|.'
+  Name: Rahibe Dansı
+  Description: '{Value1} kart çek. Bu kart ile çektiğin kartlar savaşın sonuna kadar
+    |geliştirilmiş| kalır.
+
+    Bu kart ile çektiğin her |geliştirilmiş| kart için {Value2} |bariyer| elde et.'
+  FlavorText: Dans etti rahibe sakince dalgaların üstünde, çoraplarındaki su damlalarıysa
+    tozdan hallice.
 FreeFly:
-  Name: Serbest Uçuş
-  Description: '{PlayerName:sg} turu başında {Mana} edin.'
+  Name: Özgürlük
+  Description: '{PlayerName:sg} turunun başında {Mana} elde et.'
+  FlavorText: Özgürce uçabilmek Dış Dünya'da her ne kadar nadir görülen bir yetenek
+    olsa da Gensoukyou'da oldukça yaygındır.
 YinyangXueyin:
-  Name: Yin-Yang Rünü
-  Description: "{Value2} Sağlık kaybet.\n{PlayerName} bir |Yin-Yang Küresi| oynadığında\
-    \ {Value1} |Geçici Ateşgücü| ve {Value1} |Geçici Ruh| edin."
+  Name: Yin-Yang Kan Damgası
+  Description: "{Value2} can kaybet.\nHer |Yin-Yang Küresi| oynadığında {Value1} |geçici\
+    \ ateş gücü| ve {Value1} |geçici ruh| elde et."
+  FlavorText: 'Alternatif ödeme yöntemi: Kan.'
 EvilTuiZhi:
-  Name: Kötülüğü Yok Et
-  Description: Sıradaki oynanan {Value1} saldırı kartı iki kat hasar verir.
+  Name: Kötülüğün İnfazı
+  Description: Bu tur içerisinde oynayacağın sonraki {Value1} saldırı kartı, iki kez
+    oynanır.
+  FlavorText: Gensoukyou'da yapabileceğin eğlenceli aktivitelerden bir tanesi.
 TaijiLiangyi:
   Name: Yin-Yang'in Doğuşu
-  Description: '{PlayerName:sg} turu başlangıcında eğer yoksa |Yin-Yang Küresi| edin.'
+  Description: 'Eline bir |Yin-Yang Küresi| ekle.
+
+    {PlayerName:sg} turunun başlangıcında eğer elinde |Yin-Yang Küresi| yoksa eline
+    |Yin-Yang Küresi| ekle.'
+  FlavorText: Reimu'nun "Sınırsız Kola İle Yapılabilecekler" isimli kitabı okuduktan
+    sonra geliştirdiği teknik.
 Wunvyu:
-  Name: Hakurei'nin En Fena Küreleri
-  Description: "{Value1} Sefer {Damage} hasar ver.\n|Elde iken|: Tur başı dışında\
-    \ bir kart çekildiğinde kartın hasarını {Value2} arttır."
+  Name: En Acımasız Rahibe Küreleri
+  Description: "{Value1} kez {Damage} hasar ver.\n|Elindeyken|: Turun başında çektiğin\
+    \ kart haricinde her kart çektiğinde bu kartın hasarı {Value2} artar."
 OutInGap:
-  Description: Ele eklemek için |p:rastgele| {Value1} kart arasından birini seç. |Geçici
-    bedeli| {Mana} olmak ile birlikte |Sürgünlü| ve |Eteriktir|.
-  Name: Sınırların Ötesinde
+  Description: '|p:Rastgele| {Value1} kart arasından birini seç. Seçtiğin kartı |Sürgün|
+    ve |Ruhani| özellikleri olacak şekilde eline ekle. Eline eklediğin kartın mana
+    bedeli |geçici olarak| {Mana} olacaktır.'
+  Name: Hududun Ötesinde Hac
+  FlavorText: Yukari Yakumo, Hududun Ötesinde Hac kartlarını kullanıp daha fazla Hududun
+    Ötesinde Hac kartı oluşturmanı istemiyor.
+  DetailText: "{SelfName} ile oluşturulacak |e:kartlar|; toplam manan, mana renklerin\
+    \ ve karakter kısıtlamalarından bağımsızdır.\n{SelfName} kendisini oluşturamaz."
 MomentPower:
-  Name: Ani Boyutsal Yarık
-  Description: "{PlayerName} |Geçici Ateşgücü| veya |Geçici Ruh| edindiğinde {Value1}\
-    \ tanesini sırasıyla |Ateşgücü| veya |Ruh|'a dönüştür."
+  Name: Ani Evrensel Yırtılma
+  Description: "{PlayerName} her |geçici ateş gücü| elde ettiğinde bu güçlendirmelerin\
+    \ {Value1} tanesini |ateş gücüne| dönüştür. \n{PlayerName} her |geçici ruh| elde\
+    \ ettiğinde bu güçlendirmelerin {Value1} tanesini |ruha| dönüştür."
+  FlavorText: '"Geçici ateş gücü" süratini arttırıp ışık hızına yaklaştığı vakit kütlesi
+    artarak "ateş gücüne" dönüşür.'
 ChuanyueJiejie:
-  Name: Sınırdan Geçiş
-  Description: "{Shield} |Bariyer| edin.\n|Sürgün| edilmiş bir kartı eline döndür."
+  Name: Hududu Geçiş
+  Description: "{Shield} |bariyer| elde et.\n|Sürgün ettiğin| bir kartı eline geri\
+    \ koy."
+  FlavorText: '"Talih Tılsımı" kartımı daha oynamadım mı? Bu kart beklesin o zaman.'
 HuanxiangTouying:
-  Name: Etkin Tasarım
-  Description: "{Mana} Edin.\nEle eklemek için {Value1} kart arasından birini seç.\
-    \ Seçtiğin kart |Sürgünlü| ve |Eterik| olacaktır.\nKartlar ayrıca sırasıyla 1,\
-    \ 2 ve 3 bedel isteyeceklerdir."
-  UpgradedDescription: "{Mana} Edin.\nEle eklemek için {Value1} kart arasından birini\
-    \ seç. Seçtiğin kart |Sürgünlü| ve |Eterik| olacaktır.\nKartlar ayrıca sırasıyla\
-    \ 1, 2, 3, 4 ve 5 bedel isteyeceklerdir."
+  Name: Seri Üretim
+  Description: "{Mana} elde et.\nMana bedeli sırasıyla 1, 2 ve 3 olan {Value1} kart\
+    \ arasından birini seç. Seçtiğin kartı |Sürgün| ve |Ruhani| özellikleri olacak\
+    \ şekilde eline ekle."
+  UpgradedDescription: "{Mana} elde et.\nMana bedeli sırasıyla 1, 2, 3, 4 ve 5 olan\
+    \ {Value1} kart arasından birini seç. Seçtiğin kartı |Sürgün| ve |Ruhani| özellikleri\
+    \ olacak şekilde eline ekle."
+  FlavorText: '"Mesai vakti."'
 BoliDajiejie:
   Name: Görkemli Hakurei Bariyeri
-  Description: 'Bu savaşın sonuna kadar {PlayerName:sg} |Bloğu| |Bariyere| dönüştürülür.'
+  Description: 'Bu savaşın sonuna kadar {PlayerName:sg} |bloğu|, |bariyere| dönüştürülür.'
+  FlavorText: Uçup giden her düş, bu bariyerlerin arkasında güvendedir.
 Jiangshen:
-  Name: Vefalı Meditasyon
-  Description: "{PlayerName} bu savaş esnasında bir kart eklediğinde |Yükseltilir|.\n\
-    Ele {Value1} |Yin-Yang Küresi| ekler."
+  Name: Ruh Çağırma
+  Description: "{PlayerName:sg} bu savaş esnasında oluşturacağı her kart, |geliştirilmiş|\
+    \ vaziyette oluşturulur.\nEline {Value1} |Yin-Yang Küresi| ekle."
+  FlavorText: "\"Tanrılara dua ediyorum ki tepeden 'Hududun Ötesinde Hac' çekebileyim...\""
 HuijuQiankun:
   Name: Yin-Yang Birleşmesi
   Description: "Elden her kartı |Sürgün| et ve bir |Yin-Yang Küresi| ekle. \n|Sürgün|\
     \ edilen her kart için |Yin-Yang Küresi| {Value1} daha fazla hasar verir."
 ReimuInstant:
-  Description: "{Damage} Hasar ver.\nTuru sonlandırır ve {PlayerName} ekstra bir tur\
-    \ daha oynar.\n|Zaman Sınırı| {Mana}."
-  Name: '"Hayali Mühür -Flaş-"'
-  ExtraDescription1: "{Damage} Hasar ver.\nTuru sonlandırır ve {PlayerName} ekstra\
-    \ bir tur daha oynar.\n|d: Zaman Sınırı {Mana}.|"
+  Description: "{Damage} hasar ver.\n{PlayerName:sg} turunu bitir ve ardından ekstra\
+    \ bir tur daha oyna.\n|Zaman Sınırı| {Mana}."
+  Name: '"Düş Mührü: Hız"'
+  ExtraDescription1: "{Damage} hasar ver.\n{PlayerName:sg} turunu bitir ve ardından\
+    \ ekstra bir tur daha oyna.\n|d: Zaman Sınırı {Mana}.|"
+  FlavorText: 'Müşteri incelemesi: "Hududun Üstünde" kartından sonra en çok aranan
+    kart.'
 DoubleLianhuadie:
   Name: Renkli Nilüfer Kelebeği
   Description: '{PlayerName} |Blok| veya |Bariyer| edindiğinde rastgele bir düşmana
@@ -337,14 +379,17 @@ ReimuFestival:
     Turunun başlangıcında {Value1} |geçici ateş gücü| elde et.'
   FlavorText: Hakurei Tapınağı'nın yeni ücretli gösterisi son zamanlarda pek popüler.
 ReimuShrine:
-  Name: Hakurei Tapınak Toplantısı
-  Description: '{PlayerName:sg} turunun sonunda {Value1} |Geçici Ruh| edin.'
+  Name: Hakurei Tapınağı Festivali
+  Description: '{PlayerName:sg} turunun sonunda {Value1} |geçici ruh| elde et.'
+  FlavorText: '"Hakurei Tapınağı Festivali", içinde üçüncü şahıs atış ve zaman yönetimi
+    unsurları olan bir aşk simülasyonu oyunudur.'
 ReimuFreeAttack:
-  Description: "{Block} |Blok| edin.\nSıradaki {Value1} saldırı kartının bedeli {Mana}."
-  Name: Tekil Kurgu
+  Description: "{Block} |blok| elde et.\nOynayacağın sonraki {Value1} saldırı kartının\
+    \ mana bedeli {Mana} olur."
+  Name: Anlık Hayal
 ReimuDrink:
-  Name: Sake Adağı
-  Description: "{Value1} Sağlık edin.\nEline {Value2} |İçkili| ekle."
+  Name: İçki Adağı
+  Description: "{Value1} |İlahi lütuf| elde et."
 MarisaBlockR:
   Name: Süpürge Defansı
   Description: '{Block} |Blok| edin.'
@@ -839,3 +884,15 @@ UnlimitedTime:
   Description: '{Value1} |Zaman Sınırı| kartlarının arasından birini seç. |Geçici
     olarak| {mana} bedelindedir, |Sürgün| ve |Eterik| edinir, ve de |Zaman Sınırını|
     kaybeder.'
+MojingShanjie:
+  Name: Arınma Alanı
+  FlavorText: Rastgelelik, dini geleneklerin bir parçasıdır.
+  Description: Rastgele {Value1} savunma kartı arasından birini seç. Seçtiğin kartı
+    |geçici olarak| {Mana} bedelinde olacak şekilde eline ekle.
+ReimuSilence:
+  Name: '"Düş Mührü: Sessizlik"'
+  Description: "Turun başında çektiğin kart haricinde çektiğin her {Value1} kart için\
+    \ tüm düşmanlara {Damage} hasar ver.\n{Value1} kart çek."
+DoubleDajiejie:
+  Name: Büyük İkili Bariyer
+  Description: "{Block} |blok| elde et.\n{Shield} |bariyer| elde et."
