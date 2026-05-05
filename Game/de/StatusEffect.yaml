@@ -75,8 +75,8 @@ PrivateSquare:
   Description: "Jedes Mal, wenn {Limit:plural one='% Karte gespielt wird' other='%\
     \ Karten gespielt werden'}, verursacht {OwnerName} {Level} Schaden an {PlayerName}.\n\
     Verbleibende Karten: {Count}."
-  Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten gespielt werden, verursacht
-    <color=#B7F0FF>Sakuya Izayoi</color> Angriffsschaden an {PlayerName}.
+  Brief: Jedes Mal, wenn eine gewisse Anzahl an Karten gespielt wird, verursacht <color=#B7F0FF>Sakuya
+    Izayoi</color> Angriffsschaden an {PlayerName}.
 EnemyLarva:
   Name: Larvas Schwingen
   Description: Jedes Mal, wenn {OwnerName} Angriffsschaden erleidet, erhält {PlayerName}
@@ -676,8 +676,8 @@ IceMatrixSe:
 Immune:
   Name: Eisblock
   Brief: '{OwnerName} kann kein Leben verlieren.'
-  Description: "{OwnerName} kann für {Duration:plural one='diesen Zug' other='die\
-    \ nächsten % Züge'} kein Leben verlieren."
+  Description: "{OwnerName} kann {Duration:plural one='in diesem Zug' other='die nächsten\
+    \ % Züge'} kein Leben verlieren."
 LunaClockSe:
   Description: Angriffe verursachen in diesem Zug keinen Schaden.
   Brief: Angriffe verursachen in diesem Zug keinen Schaden.
@@ -793,9 +793,9 @@ HuanxiangBlockSe:
   Name: Am Rande der Fantasie
 DreamExpressSe:
   Name: Traumexpress
-  Description: Am Ende des Zuges von {PlayerName}, |Träume| {Level} und verursache
+  Description: Aktiviere am Ende des Zuges von {PlayerName} |Traum| {Level} und verursache
     an allen Feinden Schaden in Höhe der doppelten {Level:plural one='' other='Summe
-    der'} Manakosten der |geträumten| Karte{Level:plural one='' other='n'}.
+    der'} Manakosten der |Traumkarte{Level:plural one='' other='n'}|.
 MeihongPowerSe:
   Name: Die unsterbliche Flamme
   Description: "{PlayerName} erhält zu Beginn des Zuges {Level} |Feuerkraft|.\nHeile\
@@ -915,8 +915,9 @@ BurstDrawSe:
   Name: Blitzduel
 ScryBlockSe:
   Name: Vorsatz
-  Description: Jedes Mal, wenn {PlayerName} |Hellsicht| benutzt, erhalte {Level} |Block|.
-  Brief: Jedes Mal, wenn {PlayerName} |Hellsicht| benutzt, erhalte |Block|.
+  Description: Jedes Mal, wenn {PlayerName} |Hellsicht| aktiviert, erhalte {Level}
+    |Block|.
+  Brief: Jedes Mal, wenn {PlayerName} |Hellsicht| aktiviert, erhalte |Block|.
 Grace:
   Description: '|Göttliche Gunst| erhöht sowohl |Feuerkraft| als auch |Geist| und
     wird entfernt, sobald eine Karte gespielt oder die |Zauberkarte| verwendet wird.'
@@ -1093,10 +1094,10 @@ NextTurnColdAll:
     Mal |Kälte| zu.
   Name: Der Winter kommt
 MinengZhuruSe:
-  Description: Die passive Fähigkeit beschworener |Partner| auf der Hand werden {Level}
-    Mal zusätzlich ausgeführt.
-  Brief: Die passive Fähigkeit beschworener |Partner| auf der Hand werden zusätzliche
-    Male ausgeführt.
+  Description: Die passive Fähigkeit aller beschworenen |Partner| auf deiner Hand
+    werden {Level} Mal zusätzlich ausgeführt.
+  Brief: Die passive Fähigkeit aller beschworenen |Partner| auf deiner Hand werden
+    zusätzliche Male ausgeführt.
   Name: Injektion mentaler Energie
 SplitPotionSe:
   Description: "|Instablier Trank| verursacht an {Level} zusätzlichen Zielen Schaden."
@@ -1284,10 +1285,11 @@ JinziDoppelgangerSe:
     gespielte Karte' other='werden die ersten % gespielten Karten'} zweimal aktiviert.
 SeeFengshuiSe:
   Name: Feng-Shui-Manipulation
-  Description: "Zu Beginn deines Zuges: |Hellsicht| {Scry}.\nJedes Mal, wenn durch\
-    \ |Hellsicht| eine Abwehrkarte abgeworfen wird, erhalte {Block} |Block|."
-  Brief: "Zu Beginn deines Zuges: |Hellsicht|.\nJedes Mal, wenn durch |Hellsicht|\
-    \ eine Abwehrkarte abgeworfen wird, erhalte |Block|."
+  Description: "Aktiviere zu Beginn des Zuges von {PlayerName} |Hellsicht| {Scry}.\n\
+    Jedes Mal, wenn durch |Hellsicht| eine Abwehrkarte abgeworfen wird, erhalte {Block}\
+    \ |Block|."
+  Brief: "Aktiviere zu Beginn des Zuges von {PlayerName} |Hellsicht|.\nJedes Mal,\
+    \ wenn durch |Hellsicht| eine Abwehrkarte abgeworfen wird, erhalte |Block|."
 YachieDefendSe:
   Brief: "Verhindere die nächsten Male, an denen {OwnerName} Leben verlieren würde.\n\
     Stammt der Lebensverlust von einem Feind, verliert dieser Feind stattdessen dieselbe\
@@ -1324,8 +1326,9 @@ SanaeSummonGodSe:
   ExtraDescription: '{PlayerName} erhält zu Beginn des nächsten Zuges {Level} |Feuerkraft|
     und |Geist|.'
   Name: Beschwörung von Take-Minakata
-  Description: Erhalte nach {Count} Runde{Count:ordinal one='' other='n'} zu Beginn
-    des Zuges von {PlayerName} {Level} |Feuerkraft| und |Geist|.
+  Description: "{PlayerName} erhält zu Beginn ihres Zuges {Level} |Feuerkraft| und\
+    \ |Geist|, nachdem {Count:ordinal one='% Runde vergangen ist' other='% Runden\
+    \ vergangen sind'}."
 GainInspirationSe:
   Description: "Füge am Ende des Zuges von {PlayerName} {Level} |Heureka!| deinem\
     \ Ziehstapel hinzu.\n"
