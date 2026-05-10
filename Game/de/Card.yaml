@@ -562,8 +562,8 @@ BoliDajiejie:
   FlavorText: Alle flüchtigen Fantasien währen hier für die Ewigkeit.
 DanceAroundLake:
   Name: Tanz am Seeufer
-  Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, ziehe {Value1}
-    Karte{Value1:plural one='' other='n'}.
+  Description: Jedes Mal, wenn eine Karte ins |Exil| gesendet wird, ziehe {Value1:plural
+    one='% Karte' other='% Karten'}.
   FlavorText: Als Frühaufsteher war ich immer lange in ihrem kalten und gnadenlosen
     Tanz versunken. Der Regen ließ nie lange auf sich warten und ehe ich mich versah,
     war das Schreinmädchen verschwunden.
@@ -572,10 +572,10 @@ Nightmare:
     bin.
   Name: Albtraum
   Description: "Wenn sich insgesamt {Value1} {SelfName} in deinem Zieh-, Ablagestapel\
-    \ oder auf deiner Hand befinden, sende sie ins |Exil| und aktiviere den folgenden\
+    \ und auf deiner Hand befinden, sende sie ins |Exil| und aktiviere den folgenden\
     \ Effekt: {PlayerName} verliert das Spiel.\nAnzahl der Albträume: {NightmareCount}."
   NonbattleDescription: "Wenn sich insgesamt {Value1} {SelfName} in deinem Zieh-,\
-    \ Ablagestapel oder auf deiner Hand befinden, sende sie ins |Exil| und aktiviere\
+    \ Ablagestapel und auf deiner Hand befinden, sende sie ins |Exil| und aktiviere\
     \ den folgenden Effekt: {PlayerName} verliert das Spiel."
 BlackResidue:
   Description: '|Am Ende des Zuges|: Verliere {Value1} Leben.'
@@ -901,7 +901,7 @@ MingzhuAntou:
   FlavorText: Jedes Mal, wenn du eine Kugel wirfst, besteht die Gefahr auf "Level
     Neustarten" zu drücken.
 QinggeManwu:
-  Description: "Ziehe {Value1} Karte{Value1:plural one='' other='n'} und |verbessere|\
+  Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'} und |verbessere|\
     \ sie bis zum Ende des Kampfes.\nErhalte {Value2} |Barriere| für jede bereits\
     \ |verbesserte| Karte, die durch diesen Effekt gezogen wurde."
   Name: Walzer der Maid
@@ -962,8 +962,8 @@ KuosanJiejie:
     \ Schaden."
 GapLady:
   Name: Spaltendame
-  Description: "Verliere {Value1} Leben.\nErhalte {Mana}.\nZiehe {Value2} Karte{Value2:plural\
-    \ one='' other='n'}."
+  Description: "Verliere {Value1} Leben.\nErhalte {Mana}.\nZiehe {Value2:plural one='%\
+    \ Karte' other='% Karten'}."
 JiejieAttack:
   Description: "Verursache {Damage} Schaden.\nVerursache zusätzlichen Schaden in Höhe\
     \ von {PlayerName}s |Barriere|. ({ShieldDamage})"
@@ -1384,7 +1384,7 @@ AutoQumobang:
   FlavorText: '"Automatisierte Gohei ersetzen die Arbeit der Schreinmädchen." — Wirtschaftsteil
     der Bunbunmaru-Zeitung'
   Description: "|Beim Betreten der Hand|: Sende {SelfName} ins |Exil| und ziehe für\
-    \ {Value2} {Value2:plural one='Zug' other='Züge'} {Value1} zusätzliche {Value1:plural\
+    \ {Value2:plural one='% Zug' other='% Züge'} {Value1} zusätzliche {Value1:plural\
     \ one='Karte' other='Karten'}."
 ShuihuoCard:
   Name: Kugel des Feuers und Wassers
@@ -1402,7 +1402,7 @@ KuosanLingfu:
     \ in Höhe des ungeblockten Schadens durch diesen Angriff."
   Name: Ausbreitendes Amulett
 ChunseXiaojing:
-  Description: "Erhalte {Mana}.\nZiehe {Value1} {Value1:plural one='Karte' other='Karten'}.\n\
+  Description: "Erhalte {Mana}.\nZiehe {Value1:plural one='% Karte' other='% Karten'}.\n\
     |Überziehen| {Value2}."
   Name: Frühlingsweg
 Yinhe:
@@ -2176,16 +2176,16 @@ DebugAddDeckCards:
   Description: "Testkarte: Füge {Value1:plural one='% Karte' other='% Karten'} der\
     \ Bibliothek hinzu."
 PatchouliFriend:
-  Description: '{FriendP}Wandle {PassiveColor} zufälliges Mana in |Philosophen-Mana|
-    um.'
+  Description: '{FriendP}Wandle {PassiveColor} zufälliges Mana in <sprite="ManaSprite"
+    name="P"> um.'
   ExtraDescription2: '{FriendA2}Füge {Value2} |Instabiler Trank| deiner Hand hinzu.'
   FlavorText: '"Mischen, mischen, schwenken, mischen."'
   Name: Patchouli, Elementare Alchemistin
-  ExtraDescription1: '{FriendA}Erhalte {Value1} |Feuerkraft| und |Geist|. Erhalte
-    {Power} <sprite="Point" name="Power">.'
+  ExtraDescription1: '{FriendA}Erhalte {Power} <sprite="Point" name="Power">. Erhalte
+    {Value1} |Feuerkraft| und |Geist|.'
 MoguMaster:
-  Description: Wähle {Value2} von {Value1} zufälligen |Pilzen| aus und füge sie deiner
-    Hand hinzu.
+  Description: Wähle {Value2} von {Value1} zufälligen |Pilzen| aus und füge {Value2:plural
+    one='ihn' other='sie'} deiner Hand hinzu.
   Name: Spezialist für Pilze
 GreenMogu:
   Description: Füge {Value1} |Instabiler Trank| deinem Ziehstapel hinzu.
@@ -2542,9 +2542,9 @@ Lijian:
   FlavorText: Der Tag, an dem du dieses Wurfmesser wiedersiehst, wird dein letzter
     sein.
 SakuyaGraze:
-  Description: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Ausweichen|.\nJedes\
-    \ Mal, wenn der Ziehstapel neu gemischt wird, füge {SelfName} von deinem Ablagestapel\
-    \ deiner Hand hinzu."
+  Description: "Erhalte {Shield} |Barriere|.\nErhalte {Value1} |Ausweichen|.\nFüge\
+    \ {SelfName} von deinem Ablagestapel deiner Hand hinzu, falls der Ziehstapel neu\
+    \ gemischt wird."
   Name: Versehentliches Ausweichen
 CleanRoom:
   Description: "Wirf eine Karte ab.\nZiehe {Value1:plural one='% Karte' other='% Karten'}.\n\
