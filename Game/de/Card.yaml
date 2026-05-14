@@ -248,14 +248,14 @@ FinalSpark:
     \ deiner Hand hinzu.\n|d:Überfluss: Erhalte {Mana}.|"
 KokoroDance:
   Name: Tanz der leeren Masken
-  Description: "Jedes Mal, wenn ein Feind einen negativen Effekt erleidet, verursache\
+  Description: "Jedes Mal, wenn ein Feind einen negativen Effekt erhält, verursache\
     \ an diesem Feind {Value1} Schaden. \n|Senke temporär die Feuerkraft| aller Feinde\
     \ um {Value2}."
 HuiyeSuperExtraTurn:
   Name: Ende einer unvergänglichen Nacht
   Description: "Erhalte am Ende deines natürlichen Zuges einen Extrazug.\n|Block|\
-    \ geht zu Beginn des Extrazuges nicht verloren und nur {Value1:plural one='% Karte'\
-    \ other='% Karten'} können gespielt werden."
+    \ geht zu Beginn dieses Extrazuges nicht verloren und nur {Value1:plural one='%\
+    \ Karte kann' other='% Karten können'} gespielt werden."
   DetailText: "Der Extrazug von {SelfName} beginnt immer vor allen anderen Extrazügen.\n\
     Nachdem {SelfName} gespielt wurde, können die Details des derzeitgen Zuges am\
     \ Statussymbol unter {PlayerName} geprüft werden."
@@ -266,8 +266,8 @@ BrokenTimeline:
   FlavorText: Diese Zeitlinie ist nicht mehr zu retten, auf zur Nächsten.
 LoveLetter:
   Name: Liebesbrief
-  Description: Gib es dem <color=#eab8bf>Liebeskranken Mädchen</color>, sie wird sehr
-    glücklich darüber sein.
+  Description: Überreiche es dem <color=#eab8bf>Liebeskranken Mädchen</color>, sie
+    wird sehr glücklich darüber sein.
   FlavorText: Bitte schau nicht heimlich hinein.
 StopTime:
   Name: Eingefrorene Zeit
@@ -406,10 +406,10 @@ YouxiangWake:
   Name: Frühaufsteher
   FlavorText: '"Zu dieser Uhrzeit? Wer könnte das nur sein <sprite="TextIcon" name="Anger">
     "'
-  Description: "Erhalte {Shield} |Barriere|.\nErhalte zu Beginn deines zweiten Zuges\
-    \ {Value1} |Feuerkraft| und füge {Value2} zufällige Angriffskarte{Value2:plural\
-    \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu, nachdem {SelfName}\
-    \ gespielt wurde. Sie |koste{Value2:plural one='t' other='n'} temporär| {Mana}."
+  Description: "Erhalte {Shield} |Barriere|.\nErhalte zu Beginn deines übernächsten\
+    \ Zuges {Value1} |Feuerkraft| und füge {Value2} zufällige Angriffskarte{Value2:plural\
+    \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie |koste{Value2:plural\
+    \ one='t' other='n'} temporär| {Mana}."
   UpgradedDescription: "Erhalte {Shield} |Barriere|.\nErhalte zu Beginn deines nächsten\
     \ Zuges {Value1} |Feuerkraft| und füge {Value2} zufällige Angriffskarte{Value2:plural\
     \ one='' other='n'} von deinem Ziehstapel deiner Hand hinzu. Sie |koste{Value2:plural\
@@ -423,8 +423,8 @@ PoisonTeaParty:
   Description: "Heile {Value1} Leben und erhalte {Value1} |Gift|.\nFüge {Value2} |Gift|\
     \ zu."
 MedicineGarden:
-  Description: "Heile jeden Feind um {Value1} Leben.\nFüge jedem Feind {Value1} |Gift|\
-    \ zu."
+  Description: "Heile alle Feinde um {Value1} Leben.\nFüge allen Feinden {Value1}\
+    \ |Gift| zu."
   Name: Melancholischer Garten
 ZhenmiaowanAbility:
   Name: Magie des Hammers
@@ -434,7 +434,7 @@ BailianFire:
   UpgradedDescription: "Füge zu Beginn deines Zuges 1 zufällige Fähigkeitskarte deiner\
     \ Hand hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.\nAktiviere\
     \ den Effekt von {SelfName} sofort."
-  Description: Füge zu Beginn deines Zuges eine zufällige Fähigkeitskarte deiner Hand
+  Description: Füge zu Beginn deines Zuges 1 zufällige Fähigkeitskarte deiner Hand
     hinzu. Sie hat |Exil| und |Ätherisch| und |kostet temporär| {Mana}.
 AyaWindGirl:
   Name: Gabe der Windgöttin
@@ -533,8 +533,8 @@ SakuyaLock:
   NonbattleDescription: Aktiviere |Silbersperre|.
   FlavorText: '"Niedrige KP? Das ist ein Problem für mein zukünftiges Ich."'
   Name: Zeitsperre
-  Description: "Aktiviere einmal <color=#B7F0FF>Silbersperre</color>.\n({PlayerName}\
-    \ erleidet {Value1} Angriffsschaden.)"
+  Description: "Aktiviere <color=#B7F0FF>Silbersperre</color>.\n({PlayerName} erleidet\
+    \ {Value1} Angriffsschaden.)"
 NightMana4:
   Name: 'Lange Nacht: 05:00 Uhr'
   Description: "Alle Karten kosten {Mana} mehr, solange sich {SelfName} auf deiner\
@@ -628,9 +628,8 @@ ColdHearted:
     \ one='hat' other='haben'} |Exil| und |Ätherisch| und |{Value1:plural one='kostet'\
     \ other='kosten'} temporär| {Mana}."
 SanaeRestart:
-  Description: "Lege alle Karten aus dem Ablagestapel und auf der Hand in den Ziehstapel\
-    \ und mische den Ziehstapel neu.\nZiehe {Value1} Karte{Value1:plural one='' other='n'}.\n\
-    Erhalte {Mana}."
+  Description: "Mische deine Hand und deinen Ablagestapel in deinen Ziehstapel.\n\
+    Ziehe {Value1} Karte{Value1:plural one='' other='n'}.\nErhalte {Mana}."
   Name: Tag des gespaltenen Meeres
 SakuyaKiller:
   Name: Mörder bei Nacht und Nebel
@@ -696,7 +695,7 @@ UManaCard:
   Name: Wasserschwall
 PlayDrawTop:
   Name: Bewusstloses Handeln
-  Description: "Erhalte {Block} |Block|.\nSpiele die oberste Karte in deinem Ziehstapel."
+  Description: "Erhalte {Block} |Block|.\nSpiele die oberste Karte aus deinem Ziehstapel."
   FlavorText: '"Oh mein Gott, ich habe eine Geldüberweisung getätigt!"'
 ShengquanZaiwo:
   Description: Erhalte {Mana}.
@@ -760,7 +759,7 @@ KoishiPlayDiscard:
   DetailText: Wird eine Karte mit |Unspielbar| ausgewählt, wird sie weder gespielt
     noch ins |Exil| gesendet.
   Description: "Wähle bis zu {Value1:plural one='% Karte' other='% Karten'} von deinem\
-    \ Ablagestapel und spiele sie.\nSende die {Value1:plural one='gewählte Karte'\
+    \ Ablagestapel aus und spiele sie.\nSende die {Value1:plural one='gewählte Karte'\
     \ other='gewählten Karten'} ins |Exil|, falls sie keine {Value1:plural one='|Folgeaktion|\
     \ war' other='|Folgeaktionen| waren'}."
 BailianBlack:
@@ -803,11 +802,12 @@ AyaNewsReimuSp:
     alle Gerüchte über {PlayerName}.
 KoishiDiscard:
   Name: Unbewusste Amnesie
-  Description: '|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte ab.'
+  Description: '|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte von deiner Hand
+    ab.'
   DetailText: Sende {SelfName} ins |Exil|, falls ein anderes Exemplar von {SelfName}
     durch diesen Effekt abgeworfen wurde.
-  ExtraDescription1: "|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte ab.\n\
-    Abgeworfen: {CardName}"
+  ExtraDescription1: "|Beim Ziehen dieser Karte|: Wirf eine zufällige Karte von deiner\
+    \ Hand ab.\nAbgeworfen: {CardName}"
 KoishiDrawTop:
   FlavorText: '"Ich weiß bereits wer der Übeltäter ist!"'
   Name: Unüberlegtes Reden
@@ -861,8 +861,8 @@ Riguang:
   FlavorText: Starre niemals direkt in die Sonne, vor allem nicht durch ein Teleskop.
   Name: Gebrochenes Sonnenlicht
 KoishiUltimate:
-  Description: "Spiele die oberste Karte in deinem Ziehstapel.\nSpiele zu Beginn deines\
-    \ Zuges die oberste Karte in deinem Ziehstapel."
+  Description: "Spiele die oberste Karte aus deinem Ziehstapel.\nSpiele zu Beginn\
+    \ deines Zuges die oberste Karte aus deinem Ziehstapel."
   Name: Das wahre Selbst
   DetailText: 'v1.6.1: Das automatische Ausspielen der Karte aktiviert sich nun vor
     der Ziehphase.'
@@ -1149,8 +1149,8 @@ SanaeMiracle:
   FlavorText: Nach 1000 Jahren entstand dadurch der Krebsnebel.
 Anatta:
   Name: Anatta
-  Description: "Erhöhe die erhaltene Menge an Mana durch das Verlassen von |Gelassenheit|\
-    \ um {Mana}.\nBetrete |Gelassenheit|."
+  Description: "Erhöhe die Menge an Mana durch das Verlassen von |Gelassenheit| um\
+    \ {Mana}.\nBetrete |Gelassenheit|."
 FriendDraw:
   Name: Gartenversammlung
   Description: "Jedes Mal, wenn die |a:aktive Fähigkeit| oder |u:ultimative Fähigkeit|\
@@ -1235,7 +1235,7 @@ GainTreasure:
   ExtraDescription1: "Erhalte {Value1} <sprite=\"Point\" name=\"Gold\">.\n(Durch {SelfName}\
     \ erhalten: {TotalMoney} <sprite=\"Point\" name=\"Gold\">)"
   Name: Geldregen
-  FlavorText: Glaubst du, dass Geldbelohnungen die Authentizität von Zauberkartenduelle
+  FlavorText: Glaubst du, dass Geldbelohnungen die Authentizität von Zauberkartenduellen
     ruiniert hat? Keine Sorge, die X-Blockchain Technologie wird deine finanziellen
     Probleme auf eine zivilisiertere Weise lösen.
 BladePower:
@@ -1339,8 +1339,8 @@ SanaeSummonGod:
   Name: Beschwörung von Take-Minakata
   UpgradedDescription: "Erhalte {Value2} |Göttliche Gunst|.\nErhalte zu Beginn deines\
     \ nächsten Zuges {Value1} |Feuerkraft| und |Geist|."
-  Description: "Erhalte {Value2} |Göttliche Gunst|.\nErhalte zu Beginn deines zweiten\
-    \ Zuges {Value1} |Feuerkraft| und |Geist|, nachdem {SelfName} gespielt wurde."
+  Description: "Erhalte {Value2} |Göttliche Gunst|.\nErhalte zu Beginn deines übernächsten\
+    \ Zuges {Value1} |Feuerkraft| und |Geist|."
   FlavorText: Einen Gott beschwören, nur um sich Essen und Trinken zu schnorren.
 RinDraw:
   Name: Zuweisung der Geister
@@ -1494,7 +1494,7 @@ DayaojingTdm:
   FlavorText: '"Mach dich bereit! Ich werde Schneebälle auf dich werfen!"'
   ExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiswaffel| deiner Hand hinzu.'
   UpgradedExtraDescription1: '{FriendA}Füge {Value1} |Nebelsee-Eiswaffel| deiner Hand
-    hinzu, |verbessere| ein Exemplar.'
+    hinzu und |verbessere| ein Exemplar.'
   ExtraDescription3: '{FriendU}Erhalte {Value2} |Eisrüstung|. Erhöhe die Menge um
     die Anzahl an |Einigkeit| auf {SelfName}.'
 YijiuDraw:
@@ -1542,7 +1542,7 @@ RemiliaFate:
     \ Ziehstapel deiner Hand hinzu."
 OpenUniverse:
   DetailText: Du kannst keine |Kopien| für diesen Effekt auswählen.
-  Description: "Entferne eine Karte in deinem Ziehstapel aus dem Kampf.\nFüge 2 |Kopien|\
+  Description: "Entferne eine Karte von deinem Ziehstapel aus dem Kampf.\nFüge 2 |Kopien|\
     \ dieser Karte deiner Hand hinzu. Sie haben |Exil| und |kosten temporär| {Mana}."
   FlavorText: Die Essenz des Universums ist rekursiv (?)
   Name: Öffnung des Universums
@@ -1777,8 +1777,8 @@ QinglanAttack:
   Name: Hasenlandung
   FlavorText: Es scheint, als haben sie sich zurück teleportiert …
 Payment:
-  Description: "Zahle {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nDer <color=#b7646b>Betrügerischer\
-    \ Mondhase</color> verlässt den Kampf."
+  Description: "Zahle {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#b7646b>Betrügerischer\
+    \ Mondhase</color> verlässt sofort den Kampf."
   Name: Geldüberweisung
   FlavorText: 'Die Organisatoren der Mondhauptstadt-Exposition weisen nochmal darauf
     hin: Bitte kommen Sie keinen fremden Zahlungsaufforderungen nach. Vor allem dann,
@@ -1786,7 +1786,7 @@ Payment:
 ToolRandomTool:
   Name: Taktisches Funkgerät
   Description: "Wähle 1 von {Value1} zufälligen |Werkzeugkarten| aus und füge sie\
-    \ deiner Hand hinzu. Sie hat |Kopie| und |Limitiert【1】|.\n|Limitiert【{DeckCounter}】|"
+    \ deiner Hand hinzu. Sie hat |Kopie| und |Limitiert| 1.\n|Limitiert【{DeckCounter}】|"
   FlavorText: ' "Hier spricht Pequod, Versorgungspaket wird abgeworfen!"'
 PurpleMogu:
   Description: Heile {Value1} Leben.
@@ -1831,10 +1831,9 @@ ToolExile:
     ZERSTÖREN!" ruft.
 MoonPurify:
   Description: "Eine zufällige Karte auf deiner Hand erhält bis zum Ende des Kampfes\
-    \ |Rein|, wodurch sie ihre farbigen Manakosten verliert.\nPriorisiert Karten mit\
-    \ farbigen Manakosten."
-  UpgradedDescription: Eine Karte auf deiner Hand erhält bis zum Ende des Kampfes
-    |Rein|, wodurch sie ihre farbigen Manakosten verliert.
+    \ |Rein|.\nPriorisiert Karten mit farbigen Manakosten."
+  UpgradedDescription: Wähle 1 Karte auf deiner Hand aus. Sie erhält bis zum Ende
+    des Kampfes |Rein|.
   Name: Entfernen von Unreinheiten
 ToolAttack:
   Name: Wasserpistole
@@ -1883,8 +1882,8 @@ ZoufangSnake:
   Name: Verehrung einheimischer Götter
   DetailText: Diese |e:alternativen Karten| ignorieren Manakosten und Manafarben.
 JingyeGraze:
-  Description: "Erhalte {Value1} |Ausweichen|.\nErhalte für jedes |Ausweichen| auf\
-    \ {PlayerName} {Value2} |temporäre Feuerkraft|."
+  Description: "Erhalte {Value1} |Ausweichen|.\nErhalte für jedes |Ausweichen| {Value2}\
+    \ |temporäre Feuerkraft|."
   Name: Hektisch fallende Blätter
 ToolVulnerable:
   Name: Elektrisches Tamburin
@@ -1938,7 +1937,7 @@ MoonTipsDefense:
   Description: Erhalte {Value1} |Barriere|.
   Name: Mehr Verteidigung
 NewsEntertainment:
-  Description: "Ziehe Karten, bis deine Hand voll ist.\n|Limitiert【{DeckCounter}】|"
+  Description: "Ziehe so lange Karten, bis deine Hand voll ist.\n|Limitiert【{DeckCounter}】|"
   Name: Unterhaltung
   FlavorText: … Kaguya Houraisan unserem Reporter mitgeteilt, dass alle Organisationen
     und Einwohner Gensokyos, die einen kritischen Hinweis liefern können, eine streng
@@ -1969,13 +1968,13 @@ FangxiangAttack:
     Füge ansonsten {Value1} |Gift| zu."
   Name: Giftige Zerstörung
 AnimalSpirit:
-  Description: "Alle anderen Karten auf der Hand werden von Tiergeistern heimgesucht\
-    \ und erhalten somit einen der folgenden Effekte:\n|r:Wolf|: Erhält |Echo|.\n\
-    |g:Otter|: Erhält |Nachschub|.\n|p:Adler|: Sie |kostet temporär| {Mana}."
+  Description: "Alle anderen Karten auf deiner Hand werden von Tiergeistern heimgesucht\
+    \ und erhalten einen der folgenden Effekte:\n|r:Wolf|: Erhalte |Echo|.\n|g:Otter|:\
+    \ Erhalte |Nachschub|.\n|p:Adler|: |Kostet temporär| {Mana}."
   UpgradedDescription: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\nAlle\
-    \ anderen Karten auf der Hand werden von Tiergeistern heimgesucht und erhalten\
-    \ somit einen der folgenden Effekte:\n|r:Wolf|: Erhält |Echo|.\n|g:Otter|: Erhält\
-    \ |Nachschub|.\n|p:Adler|: Sie |kostet temporär| {Mana}."
+    \ anderen Karten auf deiner Hand werden von Tiergeistern heimgesucht und erhalten\
+    \ einen der folgenden Effekte:\n|r:Wolf|: Erhalte |Echo|.\n|g:Otter|: Erhalte\
+    \ |Nachschub|.\n|p:Adler|: |Kostet temporär| {Mana}."
   Name: Tierreich der Unterwelt
 ToolDraw:
   Description: "Ziehe {Value1:plural one='% Karte' other='% Karten'}.\n|Limitiert【{DeckCounter}】|"
@@ -2001,8 +2000,8 @@ PaluxiCurse:
   Name: Groll erwidern
 MoonTipsBag:
   FlavorText: 'Yukari: "Scheint so, als wäre {PlayerName} in Schwierigkeiten."'
-  Description: "Wähle 1 von {Value1} |Tipps gegen den Mond| aus und erhalte dessen\
-    \ Effekt.\n|Limitiert【{DeckCounter}】|"
+  Description: "Wähle 1 von {Value1} |Tipps gegen den Mond| aus. Erhalte dessen Effekt.\n\
+    |Limitiert【{DeckCounter}】|"
   Name: Yukaris Trickbeutel
 Tether:
   Description: "Erhalte {Block} |Block|.\nAlle |Partner| auf deiner Hand erhalten\
@@ -2104,7 +2103,7 @@ FakeBullet:
     \ genügend |Folgeaktionen| in deinem Ziehstapel befinden."
 TheFool:
   Name: 'Tarot: Der Narr'
-  Description: "|Hellsicht| {Scry}.\nSpiele die oberste Karte in deinem Ziehstapel."
+  Description: "|Hellsicht| {Scry}.\nSpiele die oberste Karte aus deinem Ziehstapel."
 PassionMemory:
   Description: Betrete |Leidenschaft|.
   Name: Hitzige Erinnerungen
@@ -2500,7 +2499,7 @@ TimeLord:
   Name: Beherrschung von Raum und Zeit
 JinziDoppelganger:
   Name: Jahrhundert-Doppelgänger
-  Description: Während deines Zuges wird die erste gespielte Karte zweimal aktiviert.
+  Description: Die erste gespielte Karte während deines Zuges wird zweimal aktiviert.
 ExileMagic:
   Description: Sende bis zu {Value1:plural one='% Karte' other='% Karten'} von deiner
     Hand ins |Exil|. Füge die gleiche Menge |Wurfmesser| deiner Hand hinzu.
@@ -2823,7 +2822,7 @@ CirnoFire:
   Description: "Erhalte {Value1} |Feuerkraft|.\nErhalte für jeden Feind mit |Kälte|\
     \ zusätzlich {Value2} |Feuerkraft|."
 FreezeRiver:
-  Description: Füge die unterste Karte aus deinem Ziehstapel deiner Hand hinzu. Sie
+  Description: Füge die unterste Karte von deinem Ziehstapel deiner Hand hinzu. Sie
     |kostet temporär| {Mana}.
   Name: Treibende Eisscholle
 YijiGraze:
@@ -2836,8 +2835,8 @@ YijiEarthSpike:
   Name: Gions Macht
 HuiyeMana:
   Name: Legende des Bambussammler
-  Description: Erhalte zu Beginn deines Zuges {Value1} zufälliges Mana und erhöhe
-    die erhaltene Menge an Mana um {Value1}.
+  Description: Erhalte zu Beginn deines Zuges {Value1} zufälliges Mana. Erhöhe jede
+    Runde die Menge an Mana um {Value1}.
   FlavorText: In dieser Kindergeschichte geht es um glorifizierte Sünder.
 FreezeToIce:
   FlavorText: Ihr beide seid (buchstäblich) meine Flügel!
@@ -2877,8 +2876,7 @@ DefenseFollowAttack:
 KoishiUltimateToken:
   Name: Blühendes Leben
   Description: "Verursache {Damage} Schaden und erhalte {TotalMana}.\n|Wenn Beibehalten|:\
-    \ Erhöhe den Schaden von {SelfName} um {Value1} und erhöhe die erhaltene Menge\
-    \ an Mana um {Mana}."
+    \ Erhöhe den Schaden von {SelfName} um {Value1} und die Menge an Mana um {Mana}."
 InspirationDefense:
   Name: Moment der Inspiration
   Description: "Erhalte {Block} |Block|.\nErhalte {Value1} |Inspiration|."
@@ -2934,7 +2932,7 @@ BaitianCard:
 YijiuAttack:
   Description: "Verursache {Damage} Schaden.\nSende {SelfName} ins |Exil| und erhalte\
     \ |Makellos| für {Value1:plural one='% Zug' other='% Züge'}, falls ein Feind durch\
-    \ {SelfName} besiegt wurde."
+    \ {SelfName} besiegt wird."
   Name: Donnerblitz des Drachengottes
 YukariFlyObject:
   FlavorText: Viel zu schnell für das bloße Auge.
@@ -3116,10 +3114,10 @@ HehuanAttack:
     \ Karte' other='% Karten'}."
   Name: Verrückte aus der Wildnis
 ReadBook:
-  Description: "Erhalte {Block} |Block|.\n|Debüt|: Wähle 1 von {Value1} blauen oder\
+  Description: "Erhalte {Block} |Block|.\n|Debüt|: Wähle 1 von {Value1} blauen und/oder\
     \ weißen Karten aus und füge sie deiner Hand hinzu."
   ExtraDescription1: "Erhalte {Block} |Block|.\n|d:Debüt: Wähle 1 von {Value1} blauen\
-    \ oder weißen Karten aus und füge sie deiner Hand hinzu.|"
+    \ und/oder weißen Karten aus und füge sie deiner Hand hinzu.|"
   FlavorText: Laut dem letzten Jahresbericht von Suzunaan stammen die meisten Bücher,
     die Tokiko sich ausgeliehen hat, aus der Kinderabteilung.
   Name: Lesender Youkai
@@ -3144,10 +3142,10 @@ FengjiAttack:
     ManaSprite\" name=\"C\">: Verursache {Value1} zusätzlichen Schaden."
 TianziRock:
   UpgradedDescription: "Jedes Mal, wenn {PlayerName} Angriffsschaden erleiden würde,\
-    \ reduziere diesen Wert um {Value1}.\nDieser Effekt ist nicht stapelbar.\n{PlayerName}\
+    \ reduziere den Schaden um {Value1}.\nDieser Effekt ist nicht stapelbar.\n{PlayerName}\
     \ ist immun gegen |Anvisieren|."
   Description: "Jedes Mal, wenn {PlayerName} Angriffsschaden erleiden würde, reduziere\
-    \ diesen Wert um {Value1}.\nDieser Effekt ist nicht stapelbar.\nEntferne |Anvisieren|\
+    \ den Schaden um {Value1}.\nDieser Effekt ist nicht stapelbar.\nEntferne |Anvisieren|\
     \ von {PlayerName}."
   Name: Mauer vor Bhavaagra
   FlavorText: Verleiht diesen fliegenden Säugetieren im Namen der Himmelsbewohner
@@ -3210,7 +3208,7 @@ YukariAttack:
     du mich finden."'
   Name: Grenze zwischen Leben und Tod
   Description: "Verursache {Value1} Mal {Damage} Schaden.\n|Wachstum|: Erhöhe den\
-    \ Schaden um {Value2}.\nFüge am Ende deines Zuges {SelfName} vom Ablagestapel\
+    \ Schaden um {Value2}.\nFüge am Ende deines Zuges {SelfName} von deinem Ablagestapel\
     \ deiner Hand hinzu, falls sich in diesem Zug die Menge an Leben von {PlayerName}\
     \ verändert hat. Sie |kostet temporär| {Mana}."
 HuashanDefense:
@@ -3256,8 +3254,8 @@ FutoLight:
   Description: Alle Karten auf deiner Hand mit mindestens 2 Manakosten |kosten temporär|
     {Mana}.
 QingeUpgrade:
-  Description: "Verursache {Damage} Schaden.\n|Auslöschung|: |Verbessere| eine zufällige\
-    \ Karte dauerhaft."
+  Description: "Verursache {Damage} Schaden.\n|Auslöschung|: |Verbessere| dauerhaft\
+    \ eine zufällige Karte."
   Name: List der bösen Einsiedlerin
 ExilePotion:
   Description: Sende bis zu {Value1} Karte{Value1:plural one='' other='n'} von deiner
@@ -3347,8 +3345,8 @@ HatateNews:
   Name: Kakashi-Geisternachrichten
   FlavorText: Eine Tengu-Zeitung mit ziemlich brisanten Titelblättern.
 BuyPeace:
-  Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Gold">,
-    heile {Value2} Leben.'
+  Description: '|Am Ende des Zuges|: Verliere {Value1} <sprite="Point" name="Gold">
+    und heile {Value2} Leben.'
   Name: Erpressung
   FlavorText: '"Wenn man kein Geld hat, kann man auch kein Vermögen verlieren, richtig?"'
 XiaosanJingxia:
@@ -3573,9 +3571,9 @@ SacrificeDoll:
     \ an allen Feinden {Damage} Schaden.\n|Bonus {KickerCost}|: Dieser Effekt kann\
     \ wiederholt werden."
 AttackX:
-  Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nDie übrigen Wiederholungen\
-    \ des Angriffs werden an einem zufälligen Ziel fortgesetzt, falls das Ziel besiegt\
-    \ wird."
+  Description: "|Synergie| {Mana}: Verursache {Damage} Schaden.\nFühre die übrigen\
+    \ Angriffe an einem zufälligen Ziel fort, falls das ursprüngliche Ziel besiegt\
+    \ wurde."
   Name: Angriff nach Besiegen des Ziels fortsetzen
 DeployPenglai:
   Name: Bunraku des Mädchens
