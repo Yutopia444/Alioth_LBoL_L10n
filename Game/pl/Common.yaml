@@ -10,7 +10,7 @@ Game:
   Difficulty: Poziom Trudności
   DrawZone: Stos Doboru
   DrawZoneOutOfOrder: Stos Doboru (Nieuporządkowany)
-  DiscardZone: Stos Zrzutek
+  DiscardZone: Stos Odrzuconych
   ExileZone: Wygnane Karty
   EndTurn: Zakończ Turę
   BattleStart: Początek Walki
@@ -32,10 +32,10 @@ Game:
   RarityOrderExplain: "Karty o tej same rzadkości są pokazane w kolejności w Kolekcji.\n\
     Karty o tej samej nazwie są pokazane w kolejności nabycia."
   TypeOrder: Rodzaj
-  ActualOrderExplain: "Pokazuje karty w kolejności, w której weszły w stos.\n\nBiblioteka:\
-    \ Kolejność, w której karty zostały pozyskane w tej grze.\nStos doboru: Pierwsza\
-    \ jest na \"szczycie stosu\".\nStos zrzutek: Ostatnia jest na \"szczycie stosu\"\
-    .\n\nDomyślnie nie można obejrzeć stosu doboru w tej kolejności."
+  ActualOrderExplain: "Pokazuje karty w kolejności, w której weszły w dany stos.\n\
+    \nBiblioteka: Kolejność, w której karty zostały pozyskane w tej grze.\nStos doboru:\
+    \ Pierwsza jest na \"szczycie stosu\".\nStos odrzuconych: Ostatnia jest na \"\
+    szczycie stosu\".\n\nDomyślnie nie można obejrzeć stosu doboru w tej kolejności."
   ManaAmountOrder: Koszt
   Achievement: Osiągnięcia
   Passive:  Zdolność Bierna 
@@ -199,8 +199,9 @@ StartGame:
   SkillSpellCard: Karta Zaklęć {0} <sprite="Point" name="Power">
   SkillExhibit: Początkowy Eksponat
   StartMoney: Początkowe Złoto
-  DifficultyHint: Jeżeli nie zagrałeś jeszcze w "Slay the Spire", to rekomendujemy
-    Łatwy poziom trudności
+  DifficultyHint: Jeżeli nie grałeś jeszcze w {Censor:select false='"Slay the Spire"'
+    true='gry rougelike z budowaniem talii'}, to rekomendujemy na start Łatwy poziom
+    trudności.
   ClearNormal: Ukończony
   ClearTrue: Perfekcyjne Przejście
   Puzzle: Prośba
@@ -350,7 +351,7 @@ Setting:
     SkipDialog: Pomiń Dialogi (Trzymaj)
     ShowEnemyMoveOrder: Pokaż Kolejność Wrogów (Trzymaj)
     Select8: Wybierz 8
-    ToggleDiscardZone: Pokaż Stos Zrzutek
+    ToggleDiscardZone: Pokaż Stos Odrzuconych
     RebindMessage: Proszę wcisnąć klawisz dla {0}. Wciśnij ESC aby anulować.
     Select12: Wybierz 12
     ToggleMinimize: Tymczasowo ukryj interfejs
@@ -363,8 +364,9 @@ Setting:
     PoolP: Przenieś <sprite="ManaSprite" name="P"> do wybranej sekcji
     Select11: Wybierz 11
   EnableKeyboard: Włącz Klawiaturę
-  ShowShortcut: Skrót do Pokazania Kart w Ręce
-  ShowShortcutDescription: Pokaż skróty nad kartami w ręce
+  ShowShortcut: Pokaż {Gamepad:select true='Kolejność' false='Skrót do'} Ręki.
+  ShowShortcutDescription: Pokaż {Gamepad:select true='numeryczną kolejność kart'
+    false='skróty nad kartami'} w ręce.
   Shake: Trzęsienie Ekranu
   ShowReloadDescription: Czy pokazać na mapie ile razy aktualne przejście zostało
     zrestartowane oraz czy losowe wyniki były ujawnione.
@@ -374,7 +376,7 @@ Setting:
   ShowCardOrder: Pokaż Kolejność Kart
   ShowCardOrderDescription: "Czy pokazać numeryczną kolejność kart w danych stosach.\n\
     \nMa wpływ na tylko na stosy, które można wyświetlić w właściwej kolejności (domyślnie:\
-    \ biblioteka, stos zrzutek i stos Wygnań).\nW przypadku stosów doboru i zrzutek,\
+    \ biblioteka, stos odrzuconych i stos Wygnań).\nW przypadku stosów doboru i odrzuconych,\
     \ szczytowe oraz spodnie karty w stosie są zaznaczone.\n\nMoże być włączone poprzez\
     \ wciśnięcie klawisza \"Pokaż Kolejność Wrogów\"."
   Cursor: Styl Kursora
@@ -394,13 +396,14 @@ Setting:
   LoopOrder: Pętla Par Kolorów
   LoopOrderOff: Wył.<sprite="ManaSprite" name="HWR">
   LoopOrderOn: Wł.<sprite="ManaSprite" name="HRW">
-  LoopOrderDescription: "Powoduje, że kolory zapętlają się zgodnie ze stylem MtG.\n\
-    Biało-czerwona, Biało-zielona oraz Niebiesko-zielona mana będzie wyświetlona w\
-    \ odwrotnej kolejności.\n<sprite=\"ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\"\
-    \ name=\"HWG\"><sprite=\"ManaSprite\" name=\"HUG\">→<sprite=\"ManaSprite\" name=\"\
-    HRW\"><sprite=\"ManaSprite\" name=\"HGW\"><sprite=\"ManaSprite\" name=\"HGU\"\
-    >)\nTe ustawienie wpływa jedynie na te pary kolorów występujących na kartach (wliczając\
-    \ w to Hybrydowy Koszt) i nie wpływa ono na ogólną kolejność many."
+  LoopOrderDescription: "Powoduje, że pary kolorów zapętlają się {Censor:select false='w\
+    \ stylu MtG' true='w alternatywny sposób'}.\nBiało-czerwona, Biało-zielona oraz\
+    \ Niebiesko-zielona mana będzie wyświetlona w odwrotnej kolejności.\n<sprite=\"\
+    ManaSprite\" name=\"HWR\"><sprite=\"ManaSprite\" name=\"HWG\"><sprite=\"ManaSprite\"\
+    \ name=\"HUG\">→<sprite=\"ManaSprite\" name=\"HRW\"><sprite=\"ManaSprite\" name=\"\
+    HGW\"><sprite=\"ManaSprite\" name=\"HGU\">)\nTe ustawienie wpływa jedynie na te\
+    \ pary kolorów występujących na kartach (wliczając w to Hybrydowy Koszt) i nie\
+    \ wpływa ono na ogólną kolejność many."
   RightClickCancel: Wycofywanie Myszką
   TooltipWide: Szerokość Chmurek
   TooltipWideDescription: "Chmurka poszerza się w sytuacji, kiedy stanie się zbyt\
@@ -590,7 +593,8 @@ Cards:
   UpgradeTips: Wybierz kartę do Ulepszenia
   UpgradeDialog: Zatwierdź Ulepszenie
   Size:  {0:plural one='% karta' few='% karty' many='% kart'}
-  Show: Najedź lub kliknij prawym na karty aby wyświetlić szczegóły
+  Show: "{Gamepad:select true='Naciśnij X nad kartą' false='Najedź lub kliknij prawym\
+    \ przyciskiem myszy na karcie'}, aby wyświetlić szczegóły"
   IsUpgraded: Ulepszona
   RemoveTips: Wybierz kartę do Usunięcia
   Remove: Usuń {0:plural one='% karta' few='% karty' many='% kart'} z biblioteki.
@@ -717,24 +721,25 @@ Tooltip:
     Name: Stos Doboru
     Description: "Podczas swojego kroku doboru, dobierz {0} kart ze stosu doboru.\
       \ |d:(Twój krok doboru dzieje się na początku każdej tury przed efektami turowymi.)|\n\
-      Jeżeli twój stos doboru jest pusty, to karty że stosu zrzutek zostaną przetasowane\
-      \ do w stos doboru.\n\nKliknij, aby zobaczyć jakie karty masz w stosie doboru.\
-      \ |Pokazane karty nie są w kolejności dobierania.|"
+      Jeżeli twój stos doboru jest pusty, to karty że stosu odrzuconych zostaną z\
+      \ powrotem przetasowane w stos doboru.\n\n{Gamepad:select true='Naciśnij A'\
+      \ false='Kliknij'}, aby zobaczyć jakie karty masz w stosie doboru. |Pokazane\
+      \ karty nie są w kolejności dobierania|."
   DiscardZone:
-    Name: Stos Zrzutek
-    Description: "Gdy zrzucasz kartę, wędruje ona tutaj.\nNa końcu twojej tury zrzucasz\
-      \ wszystkie karty w ręce. |d:(Bez aktywowania efektów zrzucania)|\n\nKliknij,\
-      \ aby zobaczyć jakie karty są w tym stosie."
+    Name: Stos Odrzuconych
+    Description: "Gdy odrzucasz kartę, trafia ona tutaj.\nNa końcu twojej tury odrzucasz\
+      \ wszystkie karty w ręce. |d:(Bez aktywowania efektów ich odrzucania)|\n\n{Gamepad:select\
+      \ true='Naciśnij A' false='Kliknij'}, aby zobaczyć jakie karty są w tym stosie."
   ExileZone:
     Name: Wygnane Karty
-    Description: "Tutaj są wysyłane Wygnane Karty.\n\nKliknij, aby zobaczyć |Wygnane|\
-      \ Karty w tej walce."
+    Description: "Tutaj są wysyłane Wygnane Karty.\n\n{Gamepad:select true='Naciśnij\
+      \ A' false='Kliknij'}, aby zobaczyć karty |Wygnane| w tej walce."
   EndTurn:
     Name: Zakończ Turę
-    Description: "Kliknij, aby zakończyć swoją turę.\n\nZrzucasz swoją rękę |d:(bez\
-      \ aktywowania efektów zrzucania)|, po czym wszyscy wrogowie działają zgodnie\
-      \ ze swoimi |Zamiarami|.\nGdy wszyscy wrogowie już wykonali ruch, zaczynasz\
-      \ nową turę."
+    Description: "{Gamepad:select true='Naciśnij A' false='Kliknij'}, aby zakończyć\
+      \ swoją turę.\n\nOdrzucasz swoją rękę |d:(bez aktywowania efektów odrzucania)|,\
+      \ po czym wszyscy wrogowie działają zgodnie ze swoimi |Zamiarami|.\nGdy wszyscy\
+      \ wrogowie już wykonali ruch, zaczynasz nową turę."
   BattleMana:
     Name: Zapas Many
     Description: "Pozostała mana jest tutaj pokazywana.\nPotrzebujesz many aby używać\
@@ -749,7 +754,8 @@ Tooltip:
   GameSeed:
     Name: Ziarno
     Description: "Każda gra generuje losowe Ziarno. Dwie rozgrywki z tym samym Ziarnem\
-      \ będą identyczne.\n\nKliknij, aby skopiować Ziarno do schowka."
+      \ będą identyczne.\n\n{Gamepad:select false='Kliknij, aby skopiować Ziarno do\
+      \ schowka.' true=''}"
   EntityTitle:
     Character: 'Unikalna'
     Neutral: Neutralna
@@ -791,8 +797,8 @@ Tooltip:
       \ Legends>."
   BriefHint:
     Name: Drobne Wskazówki
-    Description: "Występują tylko częściowe wskazówki.\nGrałem w podobne gry jak Slay\
-      \ the Spire."
+    Description: "Występują tylko częściowe wskazówki.\nGrałem w podobne gry{Censor:select\
+      \ false=' jak \"Slay the Spire\"' true=''}."
   UsTitle: '{0} 「{1}」'
 BattleHint:
   Detailed: Szczegółowe wskazówki
@@ -806,13 +812,14 @@ BattleHint:
     \ tej gry.\nNastępne wskazówki będą się trzymały tej preferencji. Możesz dostosować\
     \ wskazówki w każdej chwili w Ustawieniach."
   BasicBattle: "Użyj kart w swojej ręce aby pozbyć się przeciwników.\nZagrane karty\
-    \ są przenoszone do stosu zrzutek. Na końcu twojej tury, karty, które zostały\
-    \ w twojej ręce, są przenoszone do stosu zrzutek.\nNowe karty zostaną dobrane\
-    \ na początku twojej tury."
-  ManaPanel: "Tabliczka many pokazuje jaka mana ci pozostała na aktualną turę.\nKliknij\
-    \ na którąkolwiek manę, aby przenieść ją do strefy oczekującej. Mana w strefie\
-    \ oczekującej mają pierwszeństwo.\nKliknij prawym aby przenieść całą manę danego\
-    \ koloru do strefy oczekującej.\nMana jest regenerowana na początku każdej tury."
+    \ trafiają do stosu odrzuconych. Na końcu twojej tury, karty pozostałe w twojej\
+    \ ręce również trafiają do stosu odrzuconych.\nNowe karty zostaną dobrane na początku\
+    \ twojej tury."
+  ManaPanel: "Tabliczka many pokazuje ile many ci pozostało w turze.\nWybierz dowolną\
+    \ manę, aby przenieść ją do strefy oczekującej. Mana w strefie oczekującej ma\
+    \ pierwszeństwo przy zagrywaniu kart.\n{Gamepad:select true='Naciśnij X' false='Kliknij\
+    \ prawym przyciskiem myszy'}, aby przenieść całą manę danego koloru do strefy\
+    \ oczekującej.\nMana jest regenerowana na początku każdej tury."
   BlockShield: "Zanim otrzymasz obrażenia, zagraj kartą bloku aby zyskać |Blok| i\
     \ |s:Barierę|.\n|Blok| i |s:Bariera| redukują ilość obrażeń, które zostaną zadane.\n\
     |Blok| znika na początku tury, ale nie |s:Bariera|."
@@ -822,9 +829,10 @@ BattleHint:
     \ konsumuje pełny pasek energii. Pokonani przeciwnicy upuszczają <sprite=\"Point\"\
     \ name=\"Power\">, które uzupełniają energię potrzebną na kartę zaklęć.\nKartę\
     \ zaklęć można użyć tylko raz na turę."
-  Mana: "Kliknij prawym na kartę aby wyświetlić szczegóły. (To też działa w większości\
-    \ innych menu w grze.)\nGranie kartami wymaga wydawania many. Koszt karty znajduje\
-    \ się w jej prawym górnym rogu.\nJest 7 rodzajów bazowej many: mana kolorowa <sprite=\"\
+  Mana: "{Gamepad:select true='Naciśnij X' false='Kliknij prawym przyciskiem myszy'}\
+    \ na karcie, aby wyświetlić szczegóły. (Możesz tak robić w większości miejsc w\
+    \ grze.)\nGranie kartami wymaga wydawania many. Koszt karty znajduje się w jej\
+    \ prawym górnym rogu.\nJest 7 rodzajów bazowej many: mana kolorowa <sprite=\"\
     ManaSprite\" name=\"W\"><sprite=\"ManaSprite\" name=\"U\"><sprite=\"ManaSprite\"\
     \ name=\"B\"><sprite=\"ManaSprite\" name=\"R\"><sprite=\"ManaSprite\" name=\"\
     G\">, mana bez koloru <sprite=\"ManaSprite\" name=\"C\"> oraz <sprite=\"ManaSprite\"\
@@ -832,7 +840,7 @@ BattleHint:
     ManaSprite\" name=\"2\"> można zapłacić dwoma dowolnymi manami."
 MessageDialog:
   GameAbandonWarning: Zakończyć to przejście?
-  ReturnToMainMenu: Wrócić do głównego menu?
+  ReturnToMainMenu: Wrócić do menu głównego?
   QuitGame: Wyjść z gry?
   UnsavedWarning: Twój postęp od ostatniego punktu zapisu nie zostanie zapisany.
   XCostEmptyUsageTips: Możesz nastawić manę w lewym dolnym rogu dla karty z kosztem
