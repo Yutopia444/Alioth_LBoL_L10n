@@ -3,17 +3,20 @@
 Shanghai:
   Name: 上海人偶
   Description: |-
-    |操纵 {MagicCost} |：造成 {Damage} 点伤害。
-
-    |魔力值|：{Magic}/{MagicCost}
+    |被动|：回合结束时，造成 {Damage} 点伤害。
+    |主动使用|：为所有{SelfName}指定攻击目标。
+    |离场时|：触发被动效果。
+  Brief: 每回合造成 {Damage} 点伤害。
 
 Penglai:
   Name: 蓬莱人偶
   Description: |-
-    |操纵|：将一名敌人标记为目标，然后从战场中撤离。
-    |撤离时|：造成 {Damage} 点伤害，获得等同于魔力值的{Mana}。
-
-    |魔力值|：{Magic}/{MaxMagic}
+    |被动|：回合结束时，伤害提高 {Value1} 点。
+    |主动使用|：造成 {Damage} 点伤害，获得{Mana}，撤离战场。
+    |离场时|：对生命值最低的敌人触发主动效果。
+  Brief: |-
+    造成 {Damage} 点伤害，获得{Mana}。
+    每回合提高 {Value1} 点。
 
 DefenseDoll:
   Name: 防御人偶 (Experimental)
