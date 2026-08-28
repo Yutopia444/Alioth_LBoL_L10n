@@ -1,14 +1,18 @@
 Shanghai:
   Name: Shanghai Doll
-  Description: "|Control {MagicCost}|: Deal {Damage} damage.\n\n|Magic|: {Magic}/{MagicCost}"
+  Description: "|Passive|: At the end of {PlayerName}'s turn, deal {Damage} damage.\n\
+    |Activate|: Change the target of each {SelfName}.\n|On Exit|:Trigger the passive\
+    \ effect."
+  Brief: Deal {Damage} damage each turn.
 Penglai:
   Name: Hourai Doll
-  Description: '|Control|: Mark an enemy as a target, then exit the battlefield.
+  Description: '|Passive|: At the end of {PlayerName}''s turn, increase {SelfName}''s
+    damage by {Value1}
 
-    |On Exit|: Deal {Damage} and gain {Mana} equal to this doll''s Magic.
+    |Activate|: Deal {Damage} damage. Gain {Mana}. {SelfName} exits.
 
-
-    |Magic|: {Magic}/{MaxMagic}'
+    |On Exit|:Trigger the activate effect on the enemy with the least life.'
+  Brief: "Deal {Damage} damage . Gain {Mana}.\nIncrease damage by {Value1} each turn."
 DefenseDoll:
   Name: Defense Doll (Experimental)
   Description: "|Passive|: Gain {Value1} |Block|.\n|Active|: Gain {Value2} |Block|."
