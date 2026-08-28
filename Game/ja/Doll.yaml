@@ -1,6 +1,7 @@
 Shanghai:
   Name: 上海人形
-  Description: "|操作{MagicCost}|：{Damage}ダメージを与える。\n\n|魔力値|：{Magic}/{MagicCost}"
+  Description: "|自動|：ターン終了時、{Damage}ダメージを与える。\n|起動|：{SelfName}の攻撃対象を指定する。\n|離脱時|：自動効果を発動する。"
+  Brief: 毎ターン{Damage}ダメージを与える。
 DefenseDoll:
   Description: "|自動|： {Value1}ブロックを得る。\n|起動|： {Value2}ブロックを得る。"
   Name: 防御人形（テスト）
@@ -9,8 +10,9 @@ ChargeDoll:
   Description: "|自動|：ダメージを{Value1}増加させる。\n|起動|： {Damage}ダメージを与える。"
 Penglai:
   Name: 蓬莱人形
-  Description: "|操作|：敵1体を対象とし、その後戦闘から離脱する。\n|離脱時|： {Damage}ダメージを与え、魔力値に等しい{Mana}を得る。\n\
-    \n|魔力値|：{Magic}/{MaxMagic}"
+  Description: "|自動|：ターン終了時、ダメージを{Value1}増やす。\n|起動|：{Damage}ダメージを与え、{Mana}を得る。これを離脱させる。\n\
+    |離脱時|：ライフの最も少ない敵に起動効果を発動する。"
+  Brief: "{Damage}ダメージを与え、{Mana}を得る。\n毎ターンダメージが{Value1}増加する。"
 ManaDoll:
   Name: マナ人形（テスト）
   Description: "|自動|：{Mana1}を得る。\n|起動|：{Mana2}を得る。"
