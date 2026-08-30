@@ -22,7 +22,7 @@ ReimuBlockR:
 YaoguaiBuster:
   Name: Pogromczyni Youkai
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
-    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż {Value2} |Osłabienia|."
+    \ {Value1:plural one='% raz' other='% razy'}.\nNałóż {Value2} |Bezsilności|."
   FlavorText: Nie dość, że możesz sprowadzić youkaia do płaczu dwa razy tą kartą,
     to po ulepszeniu możesz to zrobić trzeci raz!
 DoubleJiejie:
@@ -113,11 +113,11 @@ Zhuizongfu:
 FengyinYaomo:
   Name: Krąg Zgładzający Smoki
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Nałóż {Value1} |Osłabienia| i |Wrażliwości|."
+    Nałóż {Value1} |Bezsilności| i |Wrażliwości|."
   FlavorText: 'Cel: Yachie Kicchou, Kraków, Walia…'
 ReimuWeiyan:
   Name: Prawdziwa Majestatyczność
-  Description: Nałóż {Value1} |Osłabienia| na wszystkich wrogów.
+  Description: Nałóż {Value1} |Bezsilności| na wszystkich wrogów.
   FlavorText: Podróbka jej Wysokości popija sobie czarną herbatę w domu.
 DanmuDuijue:
   Name: Pojedynek na Karty Zaklęć
@@ -170,7 +170,7 @@ JiejieAttack:
 YakongDianxue:
   Name: Punkt Wyrwy Wymiaru
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Gdy {PlayerName} straci buffa, zwróć tę kartę ze stosu odrzuconych do ręki."
+    Gdy {PlayerName} straci wzmocnienie, zwróć tę kartę ze stosu odrzuconych do ręki."
   FlavorText: Dźgnięcie w plecy!
 HuojianSaoba:
   Description: "Zyskaj {Value1:plural one='% |Unik|' few='% |Uniki|' many='% |Uników|'}.\n\
@@ -473,12 +473,12 @@ LearnAstrology:
   FlavorText: '"Dlaczego ona ciągle chce patrzeć na gwiazdy zamiast na mnie?"'
 ReverseJiejie:
   Name: Odwrotna Bariera
-  Description: Gdy {PlayerName} straci buffa, zyskaj {Value1} |Bariery|.
+  Description: Gdy {PlayerName} straci wzmocnienie, zyskaj {Value1} |Bariery|.
   FlavorText: Szczęście i pech to dwie strony tej samej monety.
 Changzhizhen:
   Name: Stała Bariera
   Description: "|Na końcu tury:| Zadaj {Value1:plural one='% obrażenie' few='% obrażenia'\
-    \ many='% obrażeń'} losowemu wrogowi.\n|Gdy w ręce:| Gdy {PlayerName} straci buffa,\
+    \ many='% obrażeń'} losowemu wrogowi.\n|Gdy w ręce:| Gdy {PlayerName} straci wzmocnienie,\
     \ zwiększ obrażenia tej karty o {Value2} na czas walki."
   DetailText: Zagranie {SelfName:g} nie ma innych efektów niż jej |Wygnanie|.
   FlavorText: Jej siła jest równa długom Reimu, z odsetkami.
@@ -803,7 +803,7 @@ SakuyaTwiceAttack:
     \ do Rzucania|} do stosu odrzuconych."
 SakuyaWeak:
   Name: Stłamszenie Czasowe
-  Description: "Nałóż {Value1} |Osłabienia|.\nZyskaj {Mana}."
+  Description: "Nałóż {Value1} |Bezsilności|.\nZyskaj {Mana}."
   FlavorText: Spowalnianie czasu może zostać użyty do obrony przeciw danmaku, a także
     do utrzymania świeżości składników.
 DefenseDraw:
@@ -896,9 +896,9 @@ PerfectServant:
     \ wydane <sprite=\"ManaSprite\" name=\"U\">|: Na początku następnej tury {PlayerName:g},\
     \ zyskaj {Mana} oraz dobierz dodatkową kartę."
 SakuyaKiller:
-  Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany przeciwnik dodaj
-    {Value1:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='%
-    |Sztyletów do Rzucania|} do stosu doboru.
+  Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany wróg, dodaj {Value1:plural
+    one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów
+    do Rzucania|} do stosu doboru.
   Name: Rozpruwacz we Mgle
 ShengquanZaiwo:
   Name: Poker Królewski
@@ -1263,7 +1263,7 @@ Shadow:
   FlavorText: '"Gdybym tylko nie spotkała Rumii, to bym mogła znieść jasne światła."'
 YuyukoDebuff:
   Name: Bezwieczny Sen
-  Description: Nałóż {Value1} |Osłabienia| i |Wrażliwości|.
+  Description: Nałóż {Value1} |Bezsilności| i |Wrażliwości|.
   FlavorText: Ludzie ze Świata Zewnętrznego raczej bardziej by się bali "Bezsmukłego
     Snu".
 RumiaBlock:
@@ -1362,9 +1362,9 @@ SijiCard:
   Name: Biało-Czarny Osąd
   FlavorText: Ważną podstawą do osądu jest to, czy zdine i zdashowałaś.
 KokoroDance:
-  Description: "Gdy na wroga zostanie nałożony debuff, zadaj im {Value1:plural one='%\
-    \ obrażenie' few='% obrażenia' many='% obrażeń'}.\nNałóż {Value2} |Tymczasowej\
-    \ Mocy| na wszystkich wrogów."
+  Description: "Gdy na wroga zostanie nałożone osłabienie, zadaj im {Value1:plural\
+    \ one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\nNałóż {Value2} |Tymczasowej\
+    \ utraty Mocy| na wszystkich wrogów."
   Name: Noh Mroku
 Panzi:
   Name: Talerz Wody
@@ -1582,7 +1582,7 @@ ZoufangWater:
   Name: Czysta Woda Suwa
 PaluxiCurse:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Nałóż {Value1} |Osłabienia| oraz |Wrażliwości|.\nDodaj losową kartę |Nieszczęścia|\
+    Nałóż {Value1} |Bezsilności| oraz |Wrażliwości|.\nDodaj losową kartę |Nieszczęścia|\
     \ do stosu odrzuconych. |d:(Nie pozostanie w bibliotece po walce.)|"
   Name: Powrót Urazy
   FlavorText: Dziś o 2:30 pewna księżniczka mostu, Pani Mizu*****, została przyłapana
@@ -1713,8 +1713,8 @@ ToolMicai:
   FlavorText: '"Nosząc ten produkt, prosimy abyś nie robiła niczego niebezpiecznego
     jak skakanie na bungee."'
 ToolFirstAid:
-  Description: "Usuń wszystkie debuffy z {PlayerName:g}.\nUlecz {Value1:plural one='%\
-    \ punkt' few='% punkty' many='% punktów'} życia.\n|Limit【{DeckCounter}】|"
+  Description: "Usuń wszystkie osłabienia z {PlayerName:g}.\nUlecz {Value1:plural\
+    \ one='% punkt' few='% punkty' many='% punktów'} życia.\n|Limit【{DeckCounter}】|"
   Name: Apteczka
 ToolDroneBlock:
   Description: "Zyskaj {Value1} |Macierzy Obronnej|.\n|Limit【{DeckCounter}】|"
@@ -1750,9 +1750,9 @@ NewsPositive:
   Description: "Zyskaj {Value1} <sprite=\"Point\" name=\"Power\">.\n|Limit【{DeckCounter}】|"
   Name: Pozytywne Wiadomości
   FlavorText: '[Z Ostatniej Chwili! #Reimu rozwiązuje incydent#] Nasza dziennikarka
-    z Eientei zgłasza, że o 21 czasu lokalnego cenna Gałąź z Hourai Obsadzona Klejnotami,
-    która była wystawiona na 11-stej Wystawie Księżycowej Stolicy, została tajemniczo
-    skradziona. Zgłoszono, że kałanka Świątyni Hakurei, Reimu Hakurei…'
+    z Eientei zgłasza, że o 21 czasu lokalnego cenna Obsadzona Klejnotami Gałąź z
+    Hourai, która była wystawiona na 11-stej Wystawie Stolicy Księżycowej, została
+    tajemniczo skradziona. Zgłoszono, że kapłanka Świątyni Hakurei, Reimu Hakurei…'
 NewsTidbit:
   Description: "Zyskaj {Value1:plural one='% |Namiar|' few='% |Namiary|' many='% |Namiarów|}.\n\
     |Limit【{DeckCounter}】|"
@@ -1770,18 +1770,18 @@ EmpCard:
 AyaNewsSakuyaSp:
   Name: Bunbunmaru - Edycja Sakuyi
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 AyaNewsCirnoSp:
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
   Name: Bunbunmaru - Edycja Cirno
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 AyaNewsKoishiSp:
   Name: Bunbunmaru - Edycja Koishi
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 Riguang:
   Description: "|Na Końcu Tury|: Otrzymaj {Value1:plural one='% obrażenie' few='%\
     \ obrażenia' many='% obrażeń'}."
@@ -1811,7 +1811,7 @@ ToolDraw:
     nad tym, co chcesz z niej wyjąć."'
 ToolWeak:
   Name: Latarka
-  Description: "Nałóż {Value1} |Osłabienia|.\n|Limit【{DeckCounter}】|"
+  Description: "Nałóż {Value1} |Bezsilności|.\n|Limit【{DeckCounter}】|"
   FlavorText: '"Kappa Specials Limited Company uroczyście przysięga, że ten model
     poręcznej latarki retro z pewnością nie ma żadnych skutków ubocznych, jak odbieranie
     ludziom oddech czy powodowanie przyspieszonego starzenia.'
@@ -1861,7 +1861,7 @@ GainTreasure:
     pojedynków na karty zaklęć? Nie martw się, technologia blockchain X użyje bardziej
     cywilizowanych metod na rozwiązanie twoich problemów funduszowych.
   ExtraDescription1: "Zyskaj {Value1} <sprite=\"Point\" name=\"Gold\">.\n({TotalMoney}\
-    \ <sprite=\"Point\" name=\"Gold\"> zyskanych przez {SelfName} w tym przejściu.)"
+    \ <sprite=\"Point\" name=\"Gold\"> zyskanych przez {SelfName} w tej rozgrywce.)"
 LilyoftheValley:
   Name: Konwalia Majowa
   Description: "Zyskaj {Mana}.\n|Limit【{DeckCounter}】|"
@@ -1899,13 +1899,13 @@ HatateNews:
 AyaNewsReimuSp:
   Name: Bunbunmaru - Edycja Reimu
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 AyaNewsMarisaSp:
   Name: Bunbunmaru - Edycja Marisy
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 Yueguang:
   Name: Cicha Noc
   Description: "|Gdy dobrana:| Strać {Value1:plural one='% losową manę' few='% losowe\
@@ -1933,9 +1933,9 @@ Payment:
   Name: Transfer Funduszy
   Description: "Zapłać {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\n<color=#b7646b>Królik\
     \ Naciągacz</color> odejdzie natychmiast."
-  FlavorText: 'Życzliwe przypomnienie od organizatorów Wystawy Stolicy Księżyca: Prosimy
-    nie dać się oszukać na prośby o opłaty lub transfery od kogokolwiek w zamian za
-    wskazówki o incydencie.'
+  FlavorText: 'Życzliwe przypomnienie od organizatorów Wystawy Stolicy Księżycowej:
+    Prosimy nie dać się oszukać na prośby o opłaty lub transfery od kogokolwiek w
+    zamian za wskazówki o incydencie.'
 Nightmare:
   Name: Koszmar
   NonbattleDescription: Gdy całkowita ilość {SelfName:v} w ręce oraz stosach doboru
@@ -1954,7 +1954,7 @@ BefuddledLife:
     zabicia czasu, i zanim się zorientujesz, dzień ci się skończył."
 XiaosanJingxia:
   Name: Przestraszenie
-  Description: '|Na Końcu Tury|: Zyskaj {Value1} |Osłabienia|.'
+  Description: '|Na Końcu Tury|: Zyskaj {Value1} |Bezsilności|.'
   FlavorText: Ostatnio Kogasa Tatara szukała filmów z Zewnętrznego Świata, aby wpaść
     na nowe techniki straszenia ludzi. Wedle plotek, Kogasa przestraszyła się na śmierć
     oglądając "Lśnienie".
@@ -2146,8 +2146,8 @@ VampireHunter:
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
     Jeżeli cel ma status |Vampira|, zadaj {Value1:plural one='% raz' other='% razy'}\
     \ więcej obrażeń."
-  FlavorText: Jak Sakuya została zatrudniona przez Willę Szkarłatnego Diabła, nazwa
-    tej karty została zmieniona na "Łowczyni Pensji".
+  FlavorText: Jak Sakuya została zatrudniona przez Rezydencję Szkarłatnego Diabła,
+    nazwa tej karty została zmieniona na "Łowczyni Pensji".
 SakuyaFuneral:
   Name: Przedwczesny Pogrzeb
   Description: "Strać {Value1:plural one='% punkt' few='% punkty' many='% punktów'}\
@@ -2435,8 +2435,8 @@ YinyangQueen:
     \ Yin-Yang Tęczowego Smoka|'} do ręki."
 SanaeRice:
   Name: Deszcz Rekordowych Zbiorów Ryżu
-  Description: "Usuń wszystkie debuffy z {PlayerName:g}.\nUlecz {Value1:plural one='%\
-    \ punkt' few='% punkty' many='% punktów'} życia."
+  Description: "Usuń wszystkie osłabienia z {PlayerName:g}.\nUlecz {Value1:plural\
+    \ one='% punkt' few='% punkty' many='% punktów'} życia."
 SakuraBlade:
   Name: Rozbłysk Kwitnącej Wiśni
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}\
@@ -2558,8 +2558,8 @@ Opt:
   Name: Na Cienkim Lodzie
   Description: "Spójrz na kartę na szczycie stosu doboru. Możesz ją umieścić na spód\
     \ stosu doboru.\nDobierz kartę.\nZyskaj {Mana}."
-  FlavorText: Wyobraź sobie, co by było, gdyby Cirno zdobyła Gałąź z Hourai Obsadzonego
-    Klejnotami…
+  FlavorText: Wyobraź sobie, co by było, gdyby Cirno zdobyła Obsadzoną klejnotami
+    Gałąź z Hourai…
 CirnoFire:
   Name: Łatwopalny Lód
   Description: "Zyskaj {Value1} |Mocy|.\nZa każdego wroga z |Chłodem| zwiększ |Moc|\
@@ -2598,8 +2598,8 @@ MaidFriend:
     \ Rzucania|} do ręki."
   Description: "{FriendP}Zadaj {Damage:plural one='% obrażenie' few='% obrażenia'\
     \ many='% obrażeń'} wrogowi, który ma najmniej życia."
-  FlavorText: Ze wszystkich wróżek pokojówek w Willi Szkarłatnego Diabła, Kasumi już
-    jest najbardziej poważną w jej pracy.
+  FlavorText: Ze wszystkich wróżek pokojówek w Rezydencji Szkarłatnego Diabła, Kasumi
+    już jest najbardziej poważną w jej pracy.
   ExtraDescription3: "{FriendU}Zadaj obrażenia natychmiast. Wszystkie {SelfName} zadają\
     \ {Value1:plural one='% dodatkowe obrażenie' few='% dodatkowe obrażenia' many='%\
     \ dodatkowych obrażeń'}."
@@ -2646,7 +2646,7 @@ InstantFreeze:
   Name: Natychmiastowe Zamrożenie
 LarvaDefense:
   Name: Lot Małych Skrzydeł
-  Description: "Zyskaj {Block} |Bloku|.\nNałóż {Value1} |Osłabienia| na wszystkich\
+  Description: "Zyskaj {Block} |Bloku|.\nNałóż {Value1} |Bezsilności| na wszystkich\
     \ wrogów.\nJeżeli w ręce jest przywołana |Larva, Bogini Nocy Letniej|, Nałóż {Value2}\
     \ |Trucizny| na wszystkich wrogów."
   FlavorText: Potrzebujesz odwagi aby latać za Larvą.
@@ -2941,7 +2941,7 @@ TianziRock:
 YijiEarthSpike:
   Name: Moc Giona
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}
-    i nałóż {Value1} |Osłabienia|.
+    i nałóż {Value1} |Bezsilności|.
 YouxiangWake:
   Description: "Zyskaj {Shield} |Bariery|.\nNa początku drugiej tury {PlayerName:g}\
     \ po zagraniu {SelfName} zyskaj {Value1} |Mocy| i umieść {Value2:plural one='%\
@@ -2965,8 +2965,8 @@ MoonSea:
   Name: Morze Spokoju
   Description: "Zyskaj {Block} |Bloku|.\nDodaj |Czystość| do ręki."
   UpgradedDescription: "Zyskaj {Block} |Bloku|.\nDodaj |Czystość| lub |Plusk| do ręki."
-  FlavorText: "Ocean Urodzajności.\nZ okolicy Stolicy Księżyca, która znajduje się\
-    \ po ciemnej strony Księżyca, zobaczenie Ziemi powinno być w zwykłych warunkach\
+  FlavorText: "Ocean Urodzajności.\nZ okolicy Stolicy Księżycowej, która znajduje\
+    \ się po ciemnej strony Księżyca, zobaczenie Ziemi powinno być w zwykłych warunkach\
     \ niemożliwe."
 YijiGraze:
   Name: Ame-No-Uzume
@@ -2985,8 +2985,8 @@ HistoryCard:
 AyaNewsAliceSp:
   Name: Bunbunmaru - Edycja Alice
   Description: '|Na Końcu Tury|: Strać {Value1} |Uduchowienia|.'
-  FlavorText: Edycja specjalna o Wystawie Księżycowej Stolicy! Ze skupieniem na plotki
-    wokół {PlayerName:g}.siężycowej Stolicy! Ze skupieniem na plotki wokół {PlayerName:g}.
+  FlavorText: Edycja specjalna o Wystawie Stolicy Księżycowej! Wyjaśniamy wszystkie
+    plotki dotyczące {PlayerName:g}.
 DebugAddDeckCards:
   Name: Dodaj Karty do Biblioteki
   Description: 'Karta Testowa: Dodaj {Value1} losowych kart do biblioteki.'
@@ -3056,7 +3056,7 @@ BlueZeroAttack:
   Name: Cięcie Wodą
   Description: Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
   UpgradedDescription: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='%\
-    \ obrażeń'}.\nNałóż {Value1} |Osłabienia|."
+    \ obrażeń'}.\nNałóż {Value1} |Bezsilności|."
   FlavorText: Ogień z wody.
 PatchouliGreenAttack:
   Name: Błysk Wiosny
@@ -3373,7 +3373,7 @@ BailianMagic:
 KoishiKiss:
   Name: Puszczenie Całusa
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
-    Nałóż {Value1} |Osłabienia|.\nWykonaj |Atak Kartą Reakcji|."
+    Nałóż {Value1} |Bezsilności|.\nWykonaj |Atak Kartą Reakcji|."
 BaseFollower:
   Name: Instynktowna Miłość
   Description: "Zadaj {Damage:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.\n\
@@ -3746,8 +3746,8 @@ YukariKill:
 TewiEscape:
   Name: Metoda "Na Królika"
   FlavorText: '"Mamy to."'
-  Description: "Ucieknij z trwającej walki. Nagroda za nią zastąpiona jest {Value1} <sprite=\"\
-    Point\" name=\"Gold\">.\nNie można użyć przeciwko bossowi."
+  Description: "Ucieknij z trwającej walki. Nagroda za nią zostaje zastąpiona przez\
+    \ {Value1} <sprite=\"Point\" name=\"Gold\">.\nNie można użyć przeciwko bossom."
 RemiliaMidnight:
   Name: Królowa Nocy
   DetailText: Zachowuje swój początkowy koszt w akcie pierwszym, który następnie zmniejsza

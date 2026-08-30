@@ -46,7 +46,7 @@ Fragil:
     \ one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
   Brief: '{PlayerName} zyskuje o {Value}% mniej |Bloku| i |Bariery| z kart.'
 Weak:
-  Name: Osłabienie
+  Name: Bezsilność
   Description: Ataki {OwnerName:g} zadawają o {Value}% mniej obrażeń {Duration:plural
     one='do końca tej tury' few='przez kolejne % tury' many='przez kolejne % tur}.
   Brief: Ataki {OwnerName:g} zadawają o {Value}% mniej obrażeń.
@@ -102,9 +102,9 @@ Invincible:
     obrażenia przez jakąś ilość tur.'
 Amulet:
   Name: Amulet
-  Description: Niweluje {Level:plural one='następny debuff' few='następne % debuffy'
-    many='następne % debuffów'}.
-  Brief: Niweluje nakładane debuffy.
+  Description: Neguje {Level:plural one='następne osłabienie' few='następne % osłabienia'
+    many='następne % osłabień'}.
+  Brief: Niweluje nakładane osłabienia.
 NextAttackUp:
   Description: Następna karta |Ataku| zada o {Level:plural one='% obrażenie' few='%
     obrażenia' many='% obrażeń'} więcej.
@@ -285,7 +285,7 @@ SingleJiandaoSe:
   Name: Gigantyczne Ostrze Nożycy
 ShendengSe:
   Description: Po tym jak wszyscy wrogowie wykonają swoją turę, losowo nałóż na {PlayerName:a}
-    {Level} |Osłabienia|, |Kruchości| lub |Wrażliwości|.
+    {Level} |Bezsilności|, |Kruchości| lub |Wrażliwości|.
   Name: Czajnik z Długim Dziobkiem
 MadokaBowSe:
   Description: "Na końcu tury {OwnerName:g} dodaj {Level:plural one='% losową kartę'\
@@ -365,7 +365,7 @@ LouguanJianSe:
     \ many='% |Namiarów|'} zadając obrażenia atakami."
 KokoroYou:
   Name: Smutek
-  Description: Na końcu tury {OwnerName:g} nałóż {Level} |Osłabienia| na {PlayerName:a}.
+  Description: Na końcu tury {OwnerName:g} nałóż {Level} |Bezsilności| na {PlayerName:a}.
     (Już wykonane)
 LongLight:
   Name: Lśniący Statyw
@@ -447,10 +447,10 @@ YinyangXueyinSe:
     o {Level}.
   Brief: Po zagraniu |Kuli Yin-Yang|, |tymczasowo| podnieś |Moc| oraz |Uduchowienie|.
 ReverseJiejieSe:
-  Description: Gdy {PlayerName} straci |Buffa|, zyskuje {Level:plural one='% punkt'
-    few='% punky' many='% punktów'} |Bariery|.
+  Description: Gdy {PlayerName} straci |wzmocnienie|, zyskuje {Level:plural one='%
+    punkt' few='% punky' many='% punktów'} |Bariery|.
   Name: Odwrotna Granica
-  Brief: Gdy {PlayerName} straci |Buffa|, zyskuje trochę |Bariery|.
+  Brief: Gdy {PlayerName} straci |wzmocnienie|, zyskuje trochę |Bariery|.
 MomentPowerSe:
   Description: Gdy {OwnerName} |tymczasowo| zwiększa |Moc| lub |Uduchowienie|, zamień
     {Level:plural one='% stopień' few='% stopnie' many='% stopni'} z każdego z nich
@@ -574,11 +574,11 @@ StopTimeSe:
     niewydaną manę' few='% losowe niewydane many' many='% losowych niewydanych man'}
     zamiast {Level:plural one='jej' other='ich'} stracenia.
 SakuyaKillerSe:
-  Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany przeciwnik dodaj
-    {Level:plural one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='%
-    |Sztyletów do Rzucania|} do stosu doboru.
+  Description: Na końcu tury {PlayerName:g} i gdy zostanie pokonany wróg, dodaj {Level:plural
+    one='% |Sztylet do Rzucania|' few='% |Sztylety do Rzucania|' many='% |Sztyletów
+    do Rzucania|} do stosu doboru.
   Name: Rozpruwacz we Mgle
-  Brief: Na końcu tury {PlayerName:g} i gdy zostanie pokonany przeciwnik dodaj |Sztylety
+  Brief: Na końcu tury {PlayerName:g} i gdy zostanie pokonany wróg, dodaj |Sztylety
     do Rzucania| do stosu doboru.
 SpecialClockSe:
   Description: Na początku tury {PlayerName:g} wybierz i odrzuć {Level:plural one='%
@@ -666,8 +666,8 @@ TiangouOrderSe:
   Description: Gdy {OwnerName} otrzymuje obrażenia od ataków, {PlayerName} zyskuje
     {Level:plural one='% punkt' few='% punkty' many='% punktów'} |Bloku|.
 KokoroDanceSe:
-  Description: Gdy na wroga zostanie nałożony |Debuff|, {PlayerName} zadaje im {Level:plural
-    one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
+  Description: Gdy na wroga zostanie nałożone |osłabienie|, {PlayerName} zadaje im
+    {Level:plural one='% obrażenie' few='% obrażenia' many='% obrażeń'}.
   Name: Noh Mroku
   Brief: Gdy na wroga są nakładane negatywne efekty, {PlayerName} zadaje im obrażenia.
 YachieDefendSe:
@@ -1021,7 +1021,7 @@ KokoroRenzhen:
 KokoroDarkPower:
   Name: Zebranie Mrocznych Emocji
   Description: "{OwnerName} zada dodatkowe obrażenia {PlayerName:d} jej następną |Kartą\
-    \ Zaklęć|.\nZwiększa się, gdy {PlayerName} otrzyma debuff."
+    \ Zaklęć|.\nZwiększa się, gdy {PlayerName} otrzyma osłabienie."
 JunkoColor:
   Name: Wylewająca się Nieczystość
   Description: 'Poziom nieczystości {PlayrName:g}: Lekkie.'
@@ -1095,11 +1095,12 @@ YouxiangWakeSe:
     doboru do ręki. {Limit:plural one='Ona |Tymczasowo Kosztuje|' other='One |Tymczasowo
     Kosztują|'} {Mana}.
 BossAct:
-  Name: Przejście Etapu
+  Name: Zmiana sceny
   Description: Gdy {OwnerName} otrzyma {Count:plural one='% obrażenie' few='% obrażenia'
-    many='% obrażeń'}, natychmiastowo wykona ruch raz, nie kończąc tury {PlayerName:g}.
-  Brief: Gdy {OwnerName} otrzyma jakąś ilość obrażeń, natychmiastowo wykona ruch raz,
-    nie kończąc tury {PlayerName:g}.
+    many='% obrażeń'}, natychmiastowo wykonuje akcję jeden raz, nie wymuszając końca
+    tury {PlayerName:g}.
+  Brief: Gdy {OwnerName} otrzyma jakąś ilość obrażeń, natychmiastowo wykonuje akcję
+    jeden raz, nie wymuszając końca tury {PlayerName:g}.
 JunkoLily:
   Name: Lilie Morderczej Intencji
   Description: Gdy |Oczyszczające Światło| zostanie zaktywowane, {PlayerName} straci
@@ -1123,7 +1124,7 @@ ShenlingHp:
     życia.
 Appliance:
   Name: Sprzęt AGD
-  Description: '{OwnerName} jest odporny na |Osłabienie| i |Wrażliwość|.'
+  Description: '{OwnerName} jest odporny na |Bezsilność| i |Wrażliwość|.'
 MoodPassion:
   Name: Pasja
   Brief: "W stanie |Pasji|, {PlayerName} zadaje i otrzymuje o {Percentage}% więcej\
