@@ -19,27 +19,27 @@ FirepowerNegative:
 TempSpirit:
   Name: Tymczasowe Uduchowienie
   Description: "Do końca tury zyskaj {Level} |Uduchowienia|.\n(|Uduchowienie| zwiększa\
-    \ ilość |Bloku| i |Bariery| zdobywanego z obrony.)"
+    \ ilość |Bloku| i |Bariery| zdobywanego z zagrywanych kart.)"
   Brief: "|Uduchowienie| zwiększone do końca tury.\n(|Uduchowienie| zwiększa ilość\
-    \ |Bloku| i |Bariery| zdobywanego z obrony.)"
+    \ |Bloku| i |Bariery| zdobywanego z zagrywanych kart.)"
 Spirit:
   Name: Uduchowienie
   Description: "Zyskaj {Level} |Uduchowienia|.\n(|Uduchowienie| zwiększa ilość |Bloku|\
-    \ i |Bariery| zdobywanego z obrony.)"
+    \ i |Bariery| zdobywanego z zagrywanych kart.)"
   Brief: "|Uduchowienie| zwiększone.\n(|Uduchowienie| zwiększa ilość |Bloku| i |Bariery|\
-    \ zdobywanego z obrony.)"
+    \ zdobywanego z zagrywanych kart.)"
 TempSpiritNegative:
   Name: Tymczasowa Utrata Uduchowienia
   Brief: "|Uduchowienie| zmniejszone do końca tury.\n(|Uduchowienie| zwiększa ilość\
-    \ |Bloku| i |Bariery| zdobywanego z obrony.)"
+    \ |Bloku| i |Bariery| zdobywanego z zagrywanych kart.)"
   Description: "Do końca tury strać {Level} |Uduchowienia|.\n(|Uduchowienie| zwiększa\
-    \ ilość |Bloku| i |Bariery| zdobywanego z obrony.)"
+    \ ilość |Bloku| i |Bariery| zdobywanego z zagrywanych kart.)"
 SpiritNegative:
   Name: Utrata Uduchowienia
   Brief: "|Uduchowienie| zmniejszone.\n(|Uduchowienie| zwiększa ilość |Bloku| i |Bariery|\
-    \ zdobywanego z obrony.)"
+    \ zdobywanego z zagrywanych kart.)"
   Description: "Strać {Level} |Uduchowienia|.\n(|Uduchowienie| zwiększa ilość |Bloku|\
-    \ i |Bariery| zdobywanego z obrony.)"
+    \ i |Bariery| zdobywanego z zagrywanych kart.)"
 Fragil:
   Name: Kruchość
   Description: "{PlayerName} zyskuje o {Value}% mniej |Bloku| i |Bariery| z kart {Duration:plural\
@@ -241,7 +241,7 @@ RinSummon:
     \ many='% tur'}."
 Fengyin:
   Name: Zapieczętowana
-  Description: "{PlayerName} nie może zagrać kart ataku {Duration:plural one='do końca\
+  Description: "{PlayerName} nie może zagrać kart Ataku {Duration:plural one='do końca\
     \ tej tury' few='przez kolejne % tury' many='przez kolejne % tur}."
 KokoroXi:
   Description: Na końcu tury {OwnerName:g} przywołaj |Menreikiego|. (Już wykonane)
@@ -264,7 +264,7 @@ YuyukoDeath:
     \ punky' many='% punktów'} życia.\n{OwnerName} nie może się uzdrawiać."
   Name: Prawo Śmiertelności
 PowerByDefense:
-  Description: Gdy karta obrony jest zagrana, {OwnerName} zwiększa swoją |Moc| o {Level}.
+  Description: Gdy karta Obrony jest zagrana, {OwnerName} zwiększa swoją |Moc| o {Level}.
   Name: Niesłabnąca Tarcza
 Sleep:
   Description: "|Bariera| {OwnerName} jest odnawiana do {Level:plural one='% punkt'\
@@ -273,7 +273,7 @@ Sleep:
     \ many='gdy upłynie % tur'}."
   Name: Pożeracz Snów
 Curiosity:
-  Description: Gdy {PlayerName} zagrą kartą zdolności, {OwnerName} zwiększa |Moc|
+  Description: Gdy {PlayerName} zagrą kartą Zdolności, {OwnerName} zwiększa |Moc|
     o {Level}.
   Name: Jestem Naprawdę Ciekawa!
 JunkoPurify:
@@ -703,9 +703,9 @@ MihuanJackSe:
   Brief: Na początku tury {PlayerName:g} zyskaj |Puls Czasu|.
 SilverBladeSe:
   Name: Srebrny Wymiar
-  Description: Gdy zostanie użyta karta ataku, zyskaj {Level:plural one='% punkt'
+  Description: Gdy zostanie użyta karta Ataku, zyskaj {Level:plural one='% punkt'
     few='% punkty' many='% punktów'} |Bariery|.
-  Brief: Gdy zostanie użyta karta ataku, zyskaj |Barierę|.
+  Brief: Gdy zostanie użyta karta Ataku, zyskaj |Barierę|.
 Cold:
   Name: Chłód
   Description: "Na początku tury, {OwnerName} traci {BaseDamage:plural one='% punkt'\
@@ -726,10 +726,10 @@ NextTurnLoseGame:
   Brief: Przegraj grę w następnej turze.
 BailianBlackSe:
   Name: Przyjmij Ciemność
-  Description: Wszystkie karty poza kartami ataku i zdolności mają koszt zredukowany
-    do {Mana}. Mają one |Wygnanie|.
-  Brief: Wszystkie karty poza kartami ataku i zdolności mają koszt zredukowany do
-    {Mana}. Mają one |Wygnanie|.
+  Description: Wszystkie karty Obrony, Biegłości i Statusu mają |Wygnanie|. Ich koszt
+    jest zredukowany do {Mana}.
+  Brief: Wszystkie karty Obrony, Biegłości i Statusu mają |Wygnanie|. Ich koszt jest
+    zredukowany do {Mana}.
 RinDrawSe:
   Name: Przypisanie Duszy
   Description: Gdy dobrana zostanie karta Statusu, dobierz {Level:plural one='% kartę'
@@ -822,7 +822,7 @@ AutoKnifeSe:
 ReimuFreeAttackSe:
   Description: "{Level:plural one='Następna karta' few='Następne % karty' many='Następne\
     \ % kart'} ataku kosztuj{Level:plural one='e' few='ą' many='e'} {Mana}."
-  Brief: Następne kilka kart ataku kosztuje {Mana}.
+  Brief: Następne kilka kart Ataku kosztuje {Mana}.
   Name: Chwilowa Fantazja
 BlackPoisonSe:
   Name: Taniec w Ciemnościach
@@ -1180,10 +1180,10 @@ MoodChangeBlockSe:
   Brief: Za każdym razem, gdy {PlayerName} zmienia |Stan Umysłu|, zyskaj |Blok|.
 LunaticPassionSe:
   Brief: "Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.\nGry {PlayerName}\
-    \ jest w stanie |Pasji|, obrażenia z kart ataków stają się |Celne|."
+    \ jest w stanie |Pasji|, obrażenia z kart Ataków stają się |Celne|."
   Name: Szalona Miłość
   Description: "Mnożnik obrażeń stanu |Pasji| jest zmieniony na {Percentage}%.\nGry\
-    \ {PlayerName} jest w stanie |Pasji|, obrażenia z kart ataków stają się |Celne|."
+    \ {PlayerName} jest w stanie |Pasji|, obrażenia z kart Ataków stają się |Celne|."
 ReimuSilenceSe:
   Name: '"Pieczęć Fantazji -Cisza-"'
   Description: Za {Limit:plural one='każdą dobraną kartę' few='każde dobrane % karty'
@@ -1212,9 +1212,9 @@ SanaeSummonGodSe:
 BladePowerSe:
   Name: Olśniewający Pęd
   Brief: Za każdym razem gdy zostanie zagrany |Sztylet do Rzucana| dodaj losowe karty
-    ataku do ręki. One |Tymczasowo Kosztują| {Mana} oraz mają |Wygnanie| i |Eteryczność|.
+    Ataku do ręki. One |Tymczasowo Kosztują| {Mana} oraz mają |Wygnanie| i |Eteryczność|.
   Description: Za każdym razem gdy zagrany zostanie |Sztylet do Rzucania| dodaj {Level:plural
-    one='losową kartę' few='% losowe karty' many='% losowych kart'} ataku do ręki.
+    one='losową kartę' few='% losowe karty' many='% losowych kart'} Ataku do ręki.
     {Level:plural one='Ona |Tymczasowo Kosztuje|' other='One |Tymczasowo kosztują|'}
     {Mana} oraz {Level:plural one='ma' other='mają'} |Wygnanie| i |Eteryczność|.
 FriendDrawSe:
@@ -1308,12 +1308,12 @@ ButterflyDreamSe:
     koloru może zostać wykorzystana do opłacenia {Value1:plural one='jej' other='ich'}
     kosztu.
 KoishiPhoneSe:
-  Brief: "Za każdym razem, gdy karta ataku zostaje zagrana, wykonaj |Ataki Kartami\
-    \ Reakcji|.\nJeżeli w stosie doboru nie ma wystarczającej liczny |Kart Reakcji|,\
+  Brief: "Za każdym razem, gdy karta Ataku zostaje zagrana, wykonaj |Ataki Kartami\
+    \ Reakcji|.\nJeżeli w stosie doboru nie ma wystarczającej liczby |Kart Reakcji|,\
     \ |Dryń-Dryń| zostanie użyte jako |Karta Reakcji|."
-  Description: "Za każdym razem, gdy karta ataku zostaje zagrana, wykonaj {Level:plural\
+  Description: "Za każdym razem, gdy karta Ataku zostaje zagrana, wykonaj {Level:plural\
     \ one='% |Atak Kartą Reakcji|' few='% |Ataki Kartami Reakcji|' many='% |Ataków\
-    \ Kartami Reakcji|'}.\nJeżeli w stosie doboru nie ma wystarczającej liczny |Kart\
+    \ Kartami Reakcji|'}.\nJeżeli w stosie doboru nie ma wystarczającej liczby |Kart\
     \ Reakcji|, |Dryń-Dryń| zostanie użyte jako |Karta Reakcji|."
   Name: Przerażająco Uroczy Telefon
 BailianMagicSe:
