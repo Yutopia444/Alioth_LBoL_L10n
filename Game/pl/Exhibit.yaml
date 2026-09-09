@@ -98,7 +98,7 @@ TaiguGouyu:
   Name: Starożytna Magatama
   FlavorText: "Im więcej masz haków, tym więcej masz maksymalnego życia."
 HuiyeBaoxiang:
-  Description: "Na początku tury {PlayerName} zyskaj jedną losową manę.\nGdy nabyte,\
+  Description: "Na początku tury {PlayerName} zyskaj jedną losową manę.\nPo otrzymaniu,\
     \ zyskaj {Value1:plural one='% losowy |eksponat|' few='% losowe |eksponaty|' many='%\
     \ losowych |eksponatów|'} i dodaj |Nakaz Eksmisji| do biblioteki."
   Name: Pudełko Skarbów Kaguyi
@@ -118,8 +118,8 @@ Baota:
   Name: Pagoda Bishamontena
   FlavorText: Ponownie się zgubiła.
 GanzhuYao:
-  Description: "Następnym razem gdyby {PlayerName} miałaby zostać pokonana, uleczają\
-    \ się do pełna. Ten efekt aktywuje się tylko raz.\nGdy ten efekt zostanie aktywowany,\
+  Description: "Następnym razem gdyby życie {PlayerName:g} spadło by do 0, ulecz wszystkie\
+    \ obrażenia. Ten efekt aktywuje się tylko raz.\nGdy ten efekt zostanie aktywowany,\
     \ maksymalne życie {PlayerName:g} jest zredukowane o {Value1}% i na początku walki\
     \ zyskaj {Value2} |Mocy|.\nTen eksponat nie może zostać utracony."
   Name: Eliksir Ultramaryny
@@ -136,7 +136,7 @@ TiangouDunpai:
   Name: Tarcza Wilczej Tengu
   FlavorText: Niczym Opowieść Klonowa.
 Zijing:
-  Description: Gdy nabyte, wybierz {Value1:plural one='% kartę' few='% karty' many='%
+  Description: Po otrzymaniu, wybierz {Value1:plural one='% kartę' few='% karty' many='%
     kart'} aby skopiować.
   Name: Purpurowe Lusterko
   FlavorText: Twoja świetna karta w sekundę zamieni się w dwie.
@@ -175,7 +175,7 @@ Xiangrikui:
   FlavorText: Imię odważnego mężczyzny, któremu udało się zerwać kwiat tamtego dnia,
     nadal pozostaje zagadką.
 Pingguo:
-  Description: Gdy nabyte, {PlayerName} zyskuje {Value1} maksymalnego życia.
+  Description: Po otrzymaniu, {PlayerName} zyskuje {Value1} maksymalnego życia.
   Name: Jabłko
   FlavorText: Produkowany w sadzie Rezydencji Szkarłatnego Diabła.
 TiangouYuyi:
@@ -264,7 +264,7 @@ Bingzhilin:
   FlavorText: Nie topi się nawet pod ogniem.
 ShijieSuipian:
   Name: Fragmenty Świata
-  Description: "Dodają {BaseMana} do bazy many.\nGdy nabyte, wybierz do {Value1:plural\
+  Description: "Dodają {BaseMana} do bazy many.\nPo otrzymaniu, wybierz do {Value1:plural\
     \ one='% karty' few='% kart' many='% kart'} w bibliotece. Podmień je na tyle samo\
     \ losowych niepospolitych i rzadkich kart."
   FlavorText: Dzięki tym fragmentom można oglądać, jak inni grają.
@@ -291,7 +291,7 @@ AizheHongshi:
   FlavorText: Można z tego użyć aby roztopić Lodową Łuskę.
 HouhuMen:
   Name: Tylne Drzwi
-  Description: "Dodają {BaseMana} do bazy many.\nGdy nabyte, usuń do {Value1:plural\
+  Description: "Dodają {BaseMana} do bazy many.\nPo otrzymaniu, usuń do {Value1:plural\
     \ one='% karty' few='% kart' many='% kart'} z biblioteki."
   FlavorText: Drzwi prowadzące do losowej lokacji dla łatwego wyrzucania śmieci.
 FengshouGuolan:
@@ -334,7 +334,8 @@ He3:
   FlavorText: Miejscowa specjalność Księżyca.
 XijianSan:
   Name: Parasol Wyrw
-  Description: Na początku trzeciej tury {PlayerName} zyskaj {Value1} |Bloku| i {Mana}.
+  Description: Na początku trzeciej tury {PlayerName:g} zyskaj {Value1} |Bloku| i
+    {Mana}.
   FlavorText: W tej grze wyjście poza krawędź ekranu jest niemożliwa.
 Taozi:
   Name: Brzoskwinia
@@ -479,7 +480,7 @@ Zixingche:
   FlavorText: Klasyczny styl w latach 50-tych.
 Fengrenji:
   Name: Maszyna do Szycia
-  Description: Gdy do biblioteki jest dodawana karta obrony, |Ulepsz| ją.
+  Description: Gdy do biblioteki jest dodawana karta Obrony, |Ulepsz| ją.
   FlavorText: Pedał dostarcza mocy.
 Shoubiao:
   Name: Zegarek
@@ -573,7 +574,8 @@ HuangyouJiqiren:
   FlavorText: "Robocik zastanawiający się nad sensem jego istnienia.\n\"What is my\
     \ purpose?\""
   Name: Robocik od Masła
-  Description: '|Herbata| w Wyrwach dodatkowo pozwala dodać 1 z {Value1} kart do biblioteki.'
+  Description: '|Picie herbaty| w Wyrwach dodatkowo pozwala dodać 1 z {Value1} kart
+    do biblioteki.'
 JiangyouPing:
   Description: Gdy {PlayerName} odwiedza Takanę, ulecz {Value1:plural one='% punkt'
     few='% punkty' many='% punktów'} życia i zyskaj {Value2} <sprite="Point" name="Power">.
@@ -599,7 +601,7 @@ BoliHufu:
   FlavorText: Wierzy się, że talizmany Świątyni Hakurei chronią przed negatywnymi
     efektami tak jak w innych grach.
 Cookie:
-  Description: Gdy nabyte, {PlayerName} zyskuje {Value1} maksymalnego życia i uzdrawia
+  Description: Po otrzymaniu, {PlayerName} zyskuje {Value1} maksymalnego życia i uzdrawia
     całe życie.
   Name: Pyszne Ciasteczko
   FlavorText: '"Dobry dzień"'
@@ -692,12 +694,12 @@ ChaojiMogu:
   FlavorText: Masz wrażenie, że świat zmalał.
 JingzhiChaju:
   Name: Wyborny Serwis do Herbaty
-  Description: '|Herbata| w Wyrwach leczy o {Value1} więcej życia.'
+  Description: '|Picie herbaty| w Wyrwach leczy o {Value1} więcej życia.'
   FlavorText: Za grzecznością Rezydencji Szkarłatnego Diabła okazuje atmosferę 'wyrafinowanego
     życia'.
 DiannaoPeijian:
   Name: Części Komputerowe
-  Description: '|Herbata| w Wyrwach dodatkowo pozwala zyskać {Value1} <sprite="Point"
+  Description: '|Picie herbaty| w Wyrwach dodatkowo pozwala zyskać {Value1} <sprite="Point"
     name="Power">.'
   FlavorText: "Akcesoria usprawniające zdolności przetwarzania twojego komputera.\n\
     Można je też dodać do herbaty aby pomóc Onee-samie się zrelaksować."
@@ -817,7 +819,7 @@ Bingxiang:
   Description: '{PlayerName} jest odporna na |Kruchość|.'
   FlavorText: Pudełko, które może zamrozić składniki, co kappy uwielbiają.
 SadinYuebing:
-  Name: Sardyńskie Ciasteczko Księżycowe
+  Name: Sardyńskie Ciasto Księżycowe
   Description: Na początku każdej tury |Ulepsz| {Value1:plural one='% losową kartę'
     few='% losowe karty' many='% losowych kart'} w ręce na czas walki. Priorytetuje
     wielokolorowe karty.
