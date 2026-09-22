@@ -1630,8 +1630,8 @@ RingoJinghua:
     Point\" name=\"Power\">."
 ShenziWake:
   Name: Revivir a la santa
-  Description: Elige 1 de {Value1} cartas aleatorias con un coste total de X+1 para
-    agregarla a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y |Etéreo|.
+  Description: Elige 1 de {Value1} cartas aleatorias con un coste de maná de X+1 y
+    agrégala a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y |Etéreo|.
 YuetuInvincible:
   Description: "Gana |Perfección| durante {Value1} turno{Value1:plural one='' other='s'}.\n\
     Agrega {Value2} |{Value2:plural one='Vestidura perdida' other='Vestiduras perdidas'}|\
@@ -2278,28 +2278,28 @@ YouxiangMoon:
 IceSaber:
   Name: Hoja forjada en hielo
   Description: "Inflige {Damage} de daño {Value1} ve{Value1:plural one='z' other='ces'}.\n\
-    Aplica |Frío|.\nDescarta cualquier numero de carta azules. Inflige ese daño una\
+    Aplica |Frío|.\nDescarta cualquier número de carta azules. Inflige ese daño una\
     \ vez adicional por cada carta que haya sido descartada de esta manera."
   FlavorText: Había una vez una espada famosa llamada "Frostmourne".
 XiangziEcho:
   Name: Eco de la montaña
-  Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.
+  Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la mano.
     {Value1:plural one='Ganará' other='Ganarán'} |Eco|.
   FlavorText: '"Ya————hoo————"'
 ReimuHeavyAttack:
   Name: Puño de los Hakurei
   Description: "Inflige {Damage} de daño.\nEl |Poder| se multiplica {Value1:plural\
-    \ one='una vez' other='% veces'} su valor al usar {SelfName}."
+    \ one='una vez' other='por %'} su valor al usar {SelfName}."
   FlavorText: '"¡Omae wa mou shindeiru!"'
 BulletStudy:
   Description: "Gana {Block} de |Bloqueo|.\n|Sobrecarga {Value2}| : Gana {Shield}\
     \ de |Barrera|."
   Name: Notas del danmaku
-  FlavorText: A pesar de su corta edad, Marisa ha publicado muchos de sus propios
-    libros, todos ellos estudiando el danmaku de sus enemigos.
+  FlavorText: Pese a su corta edad, Marisa ha publicado muchos libros propios, fruto
+    de sus estudios sobre los danmakus de sus adversarios.
 SplitPotion:
   Description: "Las |Pociones inestables| infligen daño una vez más.\nAgrega {Value1}\
-    \ {Value1:plural one='|Poción Inestable|' other='|Pociones inestables|'} a la\
+    \ {Value1:plural one='|Poción inestable|' other='|Pociones inestables|'} a la\
     \ pila de robo."
   Name: Químico de doble efecto
   FlavorText: Una forma rápida y sencilla de ahorrar pociones artesanales.
@@ -2324,7 +2324,7 @@ BailianFire:
     aleatoria a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y |Etéreo|.
   UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega una carta\
     \ técnica aleatoria a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y\
-    \ |Etéreo|.\nSe activa {SelfName} en el mismo turno jugado."
+    \ |Etéreo|.\nEl efecto de {SelfName} se activa en el mismo turno en que se juega."
 WhiteWorld:
   Description: "Al comienzo de cada turno de {PlayerName}, aplica |Frío| a cada enemigo.\n\
     Aplica |Frío| a cada enemigo."
@@ -2347,16 +2347,17 @@ LongArm:
 CallFriends:
   Name: Llamar a los amigos
   Description: Elige 1 de {Value1} |Compañeras| para agregarla a la mano. Entra en
-    la mano convocada
+    la mano ya convocada
   UpgradedDescription: "Elige 1 de {Value1} |Compañeras| para agregarla a la mano.\
-    \ Entra en la mano convocada.\nUna |e:Hada de la luz| siempre se incluye como\
+    \ Entra en la mano ya convocada.\nUna |e:Hada de la luz| siempre se incluye como\
     \ una opción adicional."
   DetailText: Estas |e:cartas alternativas| tienen un coste total de 4 o menos.
 HualiIce:
   Name: Impresionante hielo de verano
   Description: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a cada enemigo.\n\
-    Si se jugaron {Value1} carta{Value1:plural one='' other='s'} en este turno, {SelfName}\
-    \ cuesta {Mana}.\n({Countdown:plural one='% carta restante' other='% cartas restantes'}.)"
+    Si se han jugado {Value1} carta{Value1:plural one='' other='s'} en este turno,\
+    \ {SelfName} cuesta {Mana}.\n({Countdown:plural one='% carta restante' other='%\
+    \ cartas restantes'}.)"
   NonbattleDescription: "Inflige {Damage} de daño a cada enemigo.\nAplica |Frío| a\
     \ cada enemigo.\nSi se jugaron {Value1} carta{Value1:plural one='' other='s'}\
     \ en este turno, {SelfName} cuesta {Mana}."
@@ -2370,8 +2371,8 @@ IceBarrier:
   Description: Gana {Value1} |Armaduras de escarcha|.
 MarisaHoldCard:
   Description: "Elige hasta {Value1} {Value1:plural one='carta' other='cartas'} de\
-    \ la mano. |Retenlo{Value1:plural one='' other='s'}| durante un turno.\nGana {Block}\
-    \ de |Bloqueo|."
+    \ la mano. Se |Retiene{Value1:plural one='' other='n'}| durante un turno.\nGana\
+    \ {Block} de |Bloqueo|."
   Name: Me cuesta dejarlo ir
   FlavorText: '"¡Oye, no tires eso! Quizás te resulte útil más adelante."'
 UnlimitedTime:
@@ -2398,7 +2399,7 @@ FreezeToIce:
   Description: "|Exilia| hasta {Value1} carta{Value1:plural one='' other='s'} de la\
     \ mano. Agrega esa misma cantidad de |Ala{Value1:plural one='' other='s'} de Hielo|\
     \ en la pila de robo."
-  FlavorText: ¡Ustedes dos son mis alas (Literalmente)!
+  FlavorText: ¡Ustedes dos son mis alas! (¡Literalmente!)
   UpgradedDescription: "|Exilia| hasta {Value1} carta{Value1:plural one='' other='s'}\
     \ de la mano, pila de robo y/o pila de descarte. Agrega esa misma cantidad de\
     \ |Ala{Value1:plural one='' other='s'} de Hielo| en la pila de robo."
@@ -2412,7 +2413,7 @@ DeepFreeze:
     \ |Poder temporal|."
 FairyTeam:
   Name: Gran guerra de hadas
-  Description: "Elige cualquier cantidad de |Compañeras| en la mano y |Exílialos|.\
+  Description: "Elige cualquier cantidad de |Compañeras| en la mano y |Exílialas|.\
     \ Gana maná igual a su coste.\nInflige {Damage} de daño a un enemigo aleatorio.\n\
     Por cada carta |Exiliada| de esta manera, inflige el mismo daño una vez más."
 CirnoEcho:
@@ -2446,7 +2447,7 @@ FairyTrick:
   FlavorText: ¡Por supuesto que hay cuatro en "Las tres Hadas de la luz"!
 Xiguadao:
   FlavorText: ⑨mnislash!
-  Name: Espada de sandia
+  Name: Espada de sandía
   Description: "Inflige {Damage} de daño a un enemigo aleatorio {Value1} ve{Value1:plural\
     \ one='z' other='ces'}.\nGana {Value2} de |Poder|."
 CirnoFire:
@@ -2456,8 +2457,8 @@ CirnoFire:
 FrozenThrone:
   Name: Trono de hielo
   FlavorText: Now, we are one!
-  Description: "Agrega una |Bala de Hielo| a la mano.\nAl comienzo de cada turno de\
-    \ {PlayerName}, si no hay |Balas de Hielo| en la mano, agrega una |Bala de Hielo|\
+  Description: "Agrega una |Bala de hielo| a la mano.\nAl comienzo de cada turno de\
+    \ {PlayerName}, si no hay |Balas de hielo| en la mano, agrega una |Bala de Hielo|\
     \ a la mano."
 FairyWrath:
   Name: Cólera de la naturaleza
@@ -2471,7 +2472,7 @@ FreezeRiver:
 ColdChain:
   Name: Cadena de logística fría
   Description: Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila
-    de robo y colócalo{Value1:plural one='' other='s'} en la mano.
+    de robo y colócala{Value1:plural one='' other='s'} en la mano.
   FlavorText: Comida fresca entregada directamente a tu puerta.
 BestFriend:
   Name: Mejores amigas
@@ -2483,15 +2484,15 @@ BestFriend:
     \ al máximo.\n|d:Desbordamiento: Gana {Mana}.|"
 PlayWithWaste:
   Name: Una vecina infernal
-  Description: "Elige 1 de {Value1} cartas |Herramientas| que no son raras para agregarla\
-    \ a la mano.\nSe considera una |Copia| y tiene |Limitado【1】|."
+  Description: "Elige 1 de {Value1} cartas |Herramientas| que no sean |Raras| para\
+    \ agregarla a la mano.\nSe considera una |Copia| y tiene |Limitado【1】|."
 SummerIce:
   Name: Granizado de verano
   Description: "Gana {Mana} al comienzo del siguiente turno."
   FlavorText: Tu paquete llegará un turno más tarde.
 Opt:
   Name: En hielo frágil
-  Description: "Revela la carta superior de la pila de robo, elige si será enviado\
+  Description: "Revela la carta superior de la pila de robo, elige si será enviada\
     \ a la parte inferior de la pila de robo.\nRoba una carta.\nGana {Mana}."
   FlavorText: Imagínate que Cirno consiguiera la Rama enjoyada de Hourai…
 CirnoConsider:
@@ -2505,7 +2506,7 @@ ColdSnap:
   Description: "Coloca las {Value1} cartas azules que están en la parte superior de\
     \ la pila de robo hacia la mano.\nGana {Value2} de |Barrera| por cada carta que\
     \ haya sido colocada en la mano de esta manera."
-  ExtraDescription1: "Coloca las {Value1} cartas azules que están el parte superior\
+  ExtraDescription1: "Coloca las {Value1} cartas azules que están en la parte superior\
     \ de la pila de robo hacia la mano.\nGana {Value2} de |Barrera| por cada carta\
     \ que haya sido colocada en la mano de esta manera.\n(Queda{BlueCount:plural one=''\
     \ other='n'} {BlueCount} carta{BlueCount:plural one=' azul' other='s azules'}\
@@ -2513,14 +2514,14 @@ ColdSnap:
 SummerParty:
   Name: Fiesta cool
   Description: "Gana {Value1} |Armaduras de escarcha|.\nCada |Compañera| en la mano\
-    \ ganan {Value2} |Influencia|."
+    \ gana {Value2} |Influencia|."
 FairyAllOut:
   Name: Chicas, manos a la obra
   Description: "Inflige {Damage} de daño a cada enemigo.\nTodas las |Compañeras| convocadas\
     \ en la mano activan su |f:Habilidad pasiva|."
 FakeMoon:
   Name: Luna falsa
-  Description: "Elige una carta en la mano. Agrega {Value1} |Copia{Value1:plural one=''\
+  Description: "Elige una carta de la mano. Agrega {Value1} |Copia{Value1:plural one=''\
     \ other='s'}| de ella en la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
     \ {Mana} y {Value1:plural one='tiene' other='tienen'} |Exilio| y |Etéreo|.\nSi\
     \ el objetivo es una carta de |Habilidad| o tiene |Exilio|, se convierte en una\
@@ -2536,12 +2537,12 @@ LarvaCure:
   Description: "Elimina el |Veneno| de {PlayerName}.\n|Limitado【{DeckCounter}】|"
 CirnoFreeze:
   Description: "Si hay algún {SelfName} en la mano, todas las cartas en la mano cuestan\
-    \ {Mana} maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ {Mana} maná más para jugar.\nDespués de jugar {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, una {SelfName} se |Exilia| de la mano."
   Name: Maná congelado
 DoubleMana:
   Name: Despertar del hada
-  Description: "Duplica el maná existente.\n|Sobregiro| {Value1} ."
+  Description: "Duplica el maná existente.\n|Sobregiro| {Value1}."
 YonglinUpgrade:
   Name: Incienso del conejo lunar
   Description: "Cura {Value2} de vida.\nAl comienzo de cada turno de {PlayerName},\
@@ -2564,8 +2565,8 @@ MoonTipsHeal:
 Lunatic:
   Name: Locura
   Description: "Al final del turno de {PlayerName}, si hay un total de {Value1} |e:Locuras|\
-    \ en la mano, pila de robo y/o pila de descarte, se |Exilian| y pierde {Value2}\
-    \ de vida.\nActualmente hay {LunaticCount}."
+    \ en la mano, en la pila de robo y/o en la pila de descarte, se |Exilian| y pierde\
+    \ {Value2} de vida.\nActualmente hay {LunaticCount}."
   NonbattleDescription: Al final del turno de {PlayerName}, si hay un total de {Value1}
     |e:Locuras| en la mano, pila de robo y/o pila de descarte, se |Exilian| y pierde
     {Value2} de vida.
@@ -2580,7 +2581,7 @@ DayaojingFriend:
   ExtraDescription1: '{FriendA}Gana {Block} de |Bloqueo|.'
   UpgradedExtraDescription1: '{FriendA}Gana {Block} de |Bloqueo| y {Shield} de |Barrera|.'
   Name: Daiyousei, Alegre Asistente
-  FlavorText: Un detective necesita un asistente; Incluso Cirno sabe que esto es de
+  FlavorText: Un detective necesita un asistente; incluso Cirno sabe que esto es de
     conocimiento común.
   ExtraDescription3: "{FriendU}Agrega {Value1} |Flor{Value1:plural one='' other='es'}\
     \ de verano| a la mano."
@@ -2589,8 +2590,8 @@ DayaojingFriend:
 ChooseFriend:
   Name: Encuentro en el lago brumoso
   Description: "Elige hasta {Value2} de {Value1} cartas |Compañeras| aleatorias para\
-    \ agregarla a la mano. Se puede gastar maná de cualquier color para pagar sus\
-    \ costes de maná."
+    \ agregarla{Value2:plural one='' other='s'} a la mano. Se puede gastar maná de\
+    \ cualquier color para pagar sus costes de maná."
   DetailText: Las |e:cartas alternativas| ignoran el maná total, el color del maná
     y las restricciones de los personajes, tienen un coste total de 4 o menos.
   FlavorText: Si el sentimiento es mutuo, tomémonos de la mano.
@@ -2612,7 +2613,7 @@ MaidFriend:
   ExtraDescription1: "{FriendA}Inflige daño inmediatamente. Agrega {Value2} |Cuchillo{Value2:plural\
     \ one=' arrojadizo' other='s arrojadizos'}| a la mano."
   FlavorText: De todas las hadas sirvientas de la mansión Scarlet Devil, Kasumi es
-    la más dedicada en su trabajo.
+    la más dedicada a su trabajo.
   ExtraDescription3: '{FriendU}Inflige daño inmediatamente. Todas las {SelfName} infligen
     {Value1} de daño adicional.'
 LarvaFriend:
@@ -2670,8 +2671,8 @@ LarvaDefense:
   Name: Aleteos del vuelo
   FlavorText: Necesitas valor para volar mientras sigues a Larva.
 FakeCard:
-  Description: "Esta carta todavía está en acceso anticipado.\nEstén atentos a las\
-    \ futuras actualizaciones."
+  Description: "Esta carta todavía está en acceso anticipado.\nEstén atentos a futuras\
+    \ actualizaciones."
   Name: Cuento del cortador de bambú (Temporal)
 HistoryCard:
   Description: "Esta carta ha sido eliminada en la versión actual del juego.\nCarta\
@@ -2683,35 +2684,36 @@ YouxiangAttack:
     \ |Certero|."
   Name: Florecimiento de gensokyo
 GainDollSlot:
-  Name: Gana una Ranura de Muñeca
+  Name: Gana una ranura de muñeca
   Description: (WIP)
 DoubleActiveTrigger:
   Name: Doble activación
   Description: (WIP)
 TriggerAllPassive:
-  Name: Activar las Pasivas
+  Name: Activar las pasivas
   Description: (WIP)
 HuiyeAttack:
   Name: Mar de árboles de Hourai
   Description: "|Por cada maná gastado de un color diferente|: Inflige {Damage} de\
-    \ daño a cada enemigo.\nSi se gastó al menos {Value2} manás diferentes, devuelve\
-    \ hasta {Value1} carta{Value1:plural one='' other='s'} del |Exilio| a la mano."
+    \ daño a cada enemigo.\nSi se gastó al menos {Value2} manás de colores diferentes,\
+    \ devuelve hasta {Value1} carta{Value1:plural one='' other='s'} del |Exilio| a\
+    \ la mano."
 SanaeRestart:
   Name: El día en que el mar se dividió
-  Description: "Devuelve cualquier cantidad de cartas en la mano y de la pila de descarte\
-    \ hacia la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
+  Description: "Devuelve cualquier cantidad de cartas de la mano y de la pila de descarte\
+    \ a la pila de robo. Baraja la pila de robo.\nRoba {Value1} carta{Value1:plural\
     \ one='' other='s'}.\nGana {Mana}."
 RemiliaFate:
   Description: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\nSe\
-    \ coloca desde la pila de robo hacia la mano, cartas aleatorias con costes de\
-    \ maná de 1, 2 y 3."
+    \ colocan en la mano, desde la pila de robo, cartas aleatorias con costes de maná\
+    \ de 1, 2 y 3."
   Name: Manipulación del destino
   UpgradedDescription: "Descarta hasta {Value1} carta{Value1:plural one='' other='s'}.\n\
-    Se coloca desde la pila de robo hacia la mano, cartas aleatorias con costes de\
+    Se colocan en la mano, desde la pila de robo, cartas aleatorias con costes de\
     \ maná de 1, 2, 3, 4 y 5."
   FlavorText: ¿Realmente Remilia tiene esta habilidad?
 HuiyeTime:
-  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} en la mano.\
+  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la mano.\
     \ {Value1:plural one='Tiene' other='Tienen'} |Retener| en este turno.\nFinaliza\
     \ el turno de {PlayerName}. Luego, toma un turno extra. Solo se pueden jugar hasta\
     \ {Value1} carta{Value1:plural one='' other='s'} durante ese turno."
@@ -2750,8 +2752,8 @@ DeployShanghai:
     \ Muñeca."
 MojingShanjie:
   Name: Frontera de exorcismo
-  Description: Elige 1 de {Value1} cartas de defensa aleatorias para agregarla a la
-    mano. |Cuesta temporalmente| {Mana}.
+  Description: Elige 1 de {Value1} cartas de defensa aleatorias y agrégala a la mano.
+    |Cuesta temporalmente| {Mana}.
   FlavorText: La aleatoriedad es un elemento de las prácticas religiosas.
 FlowerGone:
   Name: Sueños marchitos
@@ -2759,8 +2761,8 @@ FlowerGone:
     \ en su lugar."
 PerfectCrime:
   Name: Crimen perfecto
-  Description: "Roba la |Barrera|, |Evasión|, |Camuflaje óptico|, |Perfección| y hasta\
-    \ {Value1} de |Poder| y |Espíritu| del objetivo."
+  Description: "Roba del objetivo la |Barrera|, |Evasión|, |Camuflaje óptico|, |Perfección|\
+    \ y hasta {Value1} de |Poder| y |Espíritu|."
   FlavorText: Llevas un bonito "Velo lunar". ¡Ahora es mío!
 PoisonTeaParty:
   Name: Fiesta de té sospechosa
@@ -2768,13 +2770,14 @@ PoisonTeaParty:
     \ {Value2} de |Veneno|."
 AnimalSpirit:
   Description: "Todas las demás cartas en la mano estarán poseídas por los espíritus\
-    \ de los animales, otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan\
-    \ |Eco|.\n|g:Nutria|: Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente| {Mana}."
+    \ de los animales, lo que les otorgará uno de los siguientes efectos:\n|r:Lobo|:\
+    \ Ganan |Eco|.\n|g:Nutria|: Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente|\
+    \ {Mana}."
   Name: Reino animal del infierno
   UpgradedDescription: "Roba {Value1} carta{Value1:plural one='' other='s'}.\nTodas\
     \ las demás cartas en la mano estarán poseídas por los espíritus de los animales,\
-    \ otorgándoles uno de los siguientes efectos:\n|r:Lobo|: Ganan |Eco|.\n|g:Nutria|:\
-    \ Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente| {Mana}."
+    \ lo que les otorgará uno de los siguientes efectos:\n|r:Lobo|: Ganan |Eco|.\n\
+    |g:Nutria|: Ganan |Reponer|.\n|p:Águila|: |Cuestan temporalmente| {Mana}."
 YukariFriend:
   Name: Yukari, Frontera de la Fantasía
   Description: '{FriendP}Gana |Poder| igual a la cantidad de cartas de defensa jugadas
@@ -2783,26 +2786,26 @@ YukariFriend:
   DetailText: '{SelfName} no puede ser producido por el efecto de la |u:Habilidad
     definitiva|.'
   ExtraDescription3: '{FriendU}Al comienzo del turno de {PlayerName}, agrega una carta
-    neutral aleatoria tri-color a la mano. Cuesta temporalmente {Mana} y tiene |Etéreo|.'
+    neutral aleatoria tricolor a la mano. Cuesta temporalmente {Mana} y tiene |Etéreo|.'
 NightMana1:
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas en la mano cuestan\
-    \ {Mana} maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ {Mana} maná más para jugar.\nDespués de jugar {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, una {SelfName} se |Exilia| de la mano."
   Name: 'Noche larga: 11PM'
 NightMana2:
   Name: 'Noche larga: 1AM'
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas en la mano cuestan\
-    \ {Mana} maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ {Mana} maná más para jugar.\nDespués de jugar {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, una {SelfName} se |Exilia| de la mano."
 NightMana3:
   Name: 'Noche larga: 3AM'
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas en la mano cuestan\
-    \ {Mana} maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ {Mana} maná más para jugar.\nDespués de jugar {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, una {SelfName} se |Exilia| de la mano."
 NightMana4:
   Name: 'Noche larga: 5AM'
   Description: "Si hay alguna {SelfName} en la mano, todas las cartas en la mano cuestan\
-    \ {Mana} maná más para jugar.\nDespués de que se juega {FreezeTimes} carta{FreezeTimes:plural\
+    \ {Mana} maná más para jugar.\nDespués de jugar {FreezeTimes} carta{FreezeTimes:plural\
     \ one='' other='s'}, una {SelfName} se |Exilia| de la mano."
 AyaNewsAliceSp:
   Name: Bunbunmaru - Especial de Alice
@@ -2820,7 +2823,7 @@ MeilingFriend:
   ExtraDescription3: '{FriendU}Cura {Value1} de vida y gana {Value2} de |Poder|.'
 PatchouliFriend:
   Description: "{FriendP}Convierte {PassiveColor} man{PassiveColor:plural one='á aleatorio'\
-    \ other='as aleatorios'} en |Maná Filosofal|."
+    \ other='ás aleatorios'} en |Maná filosofal|."
   ExtraDescription2: "{FriendA2}Agrega {Value2} |Po{Value2:plural one='ción inestable'\
     \ other='ciones inestables'}| a la mano."
   Name: Patchouli, Alquimista Elemental
@@ -2844,7 +2847,7 @@ MoonSea:
     \ a la mano."
   FlavorText: "El océano de la fertilidad.\nDentro de los límites de la capital lunar,\
     \ que se encuentra en la cara oculta de la luna, normalmente debería ser imposible\
-    \ ver la tierra en el cielo."
+    \ ver la Tierra en el cielo."
 FengjiAttack:
   Description: "Inflige {Damage} de daño a cada enemigo.\n|Por cada <sprite=\"ManaSprite\"\
     \ name=\"C\"> gastado|: Inflige {Value1} más de daño."
@@ -2876,10 +2879,10 @@ YijiFirepower:
     \ plural one='' other='s'} de ataque común a la mano.\nTiene{Value2: plural one=''\
     \ other='n'} |Exilio|, |Etéreo| y |Puro|."
 TianziRock:
-  Description: "Siempre que {PlayerName} recibe daño por un ataque, se reduce {Value1}\
+  Description: "Siempre que {PlayerName} recibe daño por un ataque, recibe {Value1}\
     \ menos de daño.\nEste efecto no se acumula.\nRemueve las |Marcas| de {PlayerName}."
   Name: Muro de Bhava-Agra
-  UpgradedDescription: "Siempre que {PlayerName} recibe daño por un ataque, se reduce\
+  UpgradedDescription: "Siempre que {PlayerName} recibe daño por un ataque, recibe\
     \ {Value1} menos de daño.\nEste efecto no se acumula.\nA {PlayerName} no se le\
     \ puede aplicar con |Marcado|."
   FlavorText: Les da un pequeño shock a estos mamíferos voladores, cortesía de los
@@ -2914,7 +2917,7 @@ AyaExtraTurn:
 AyaWindGirl:
   Name: Joven diosa del viento
   Description: Gana {Value1} |Joven diosa del viento|.
-  DetailText: Tener el efecto de |Joven diosa del viento| no dejará que la |Evasión|
+  DetailText: Tener el efecto de |Joven diosa del viento| impedirá que la |Evasión|
     esté por debajo de la cantidad de cargas de la |Joven diosa del viento| al comienzo
     del turno.
 DollFactory:
@@ -2945,13 +2948,13 @@ Qianqiang:
 HuiyeMarblePhantasm:
   Name: Manifestación de la fantasía
   FlavorText: '"Princesa... por favor no uses tu habilidad en este tipo de asuntos..."'
-  Description: Elige 1 de {Value1} cartas aleatorias con un coste de maná de X+1 para
-    agregarla a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y |Etéreo|.
+  Description: Elige 1 de {Value1} cartas aleatorias con un coste de maná de X+1 y
+    agrégala a la mano. |Cuesta temporalmente| {Mana}, tiene |Exilio| y |Etéreo|.
   DetailText: Si no hay suficientes cartas únicas para el coste especificado, se producirán
     cartas de menor coste.
 HuiyinRemove:
-  DetailText: "Cuando la carta seleccionada sea removida de la biblioteca, no será\
-    \ eliminada de este combate."
+  DetailText: "Cuando la carta seleccionada sea removida de la biblioteca, no se eliminará\
+    \ de este combate."
   Description: "Remueve una carta de la biblioteca."
   Name: Devorar la historia
   FlavorText: "\"No confiaré en las palabras de una youkai. \n¡Haré que esta noche\
@@ -2962,7 +2965,7 @@ FlanFirepower:
   Description: "Cada carta en la mano gana |Etéreo|. Gana |Poder| igual al número\
     \ de cartas en la mano.\nActualmente hay {Count:plural one='% carta' other='%\
     \ cartas'} en la mano."
-  Name: ¿Y Entonces no quedará ninguno?
+  Name: ¿Y entonces no quedará ninguno?
   FlavorText: Los muertos pueden ser recuperados al usar "Cruzando la frontera".
 Frog:
   Name: Rana
@@ -2980,7 +2983,7 @@ DollFangzhen:
 IceBolt:
   Description: "Inflige {Damage} de daño.\nAplica |Frío| al golpear."
   Name: Bala de hielo
-  FlavorText: Apto para la administración oral.
+  FlavorText: Apta para la administración oral.
 ShiverArmor:
   Description: "Gana {Block} de |Bloqueo|.\nGana {Value1} |Armaduras de escarcha|."
   Name: Refracción de escarcha
@@ -2992,10 +2995,10 @@ GlacialSpike:
 FrozenOrb:
   Name: Orbe congelado
   Description: "Inflige {Damage} de daño y aplica |Frío| a cada enemigo.\nAgrega {Value1}\
-    \ |Bala{Value1:plural one='' other='s'} de Hielo| a la mano."
+    \ |Bala{Value1:plural one='' other='s'} de hielo| a la mano."
 ColdHearted:
-  Description: "En este turno, la |Lanza de hielo| Inflige el triple de daño a los\
-    \ enemigos con |Frío|.\nAgrega {Value1} |{Value1:plural one='Lanza' other='Lanzas'}\
+  Description: "En este turno, la |Lanza de hielo| inflige el triple de daño a los\
+    \ enemigos con |Frío|.\nAgrega {Value1} |Lanza{Value1:plural one='' other='s'}\
     \ de Hielo| a la mano. |Cuesta{Value1:plural one='' other='n'} temporalmente|\
     \ {Mana} y tiene{Value1:plural one='s' other='n'} |Exilio| y |Etéreo|."
   Name: Venas heladas
@@ -3005,7 +3008,7 @@ ShopAttack:
   Name: Misil pepino
   FlavorText: ¡No te comas eso!
 ShopSearch:
-  Description: Elige una carta de ataque o de defensa de la pila de robo y colócalo
+  Description: Elige una carta de ataque o de defensa de la pila de robo y colócala
     en la mano.
   Name: Radar privado
   FlavorText: Al construir esto, se desbloquea la función del mapa.
@@ -3014,9 +3017,9 @@ YijiuDraw:
   Name: Mensaje del palacio del dragón
   FlavorText: Señorita Tenshi, es hora de cenar.
 FutoLight:
-  Description: Todas las cartas en la mano con un coste superior a 1 |cuestan temporalmente|
+  Description: Todas las cartas de la mano con un coste superior a 1 |cuestan temporalmente|
     {Mana}.
-  Name: Banquete de oomonoimi
+  Name: Banquete de Oomonoimi
 SuikaDraw:
   Name: Reunión de la oni borracha
   Description: Roba cartas hasta que queden {Value1} cartas en la mano.
@@ -3030,13 +3033,13 @@ YoumuHybrid:
     \ {Value1} carta{Value1:plural one='' other='s'} de la mano.\n|Por cada <sprite=\"\
     ManaSprite\" name=\"G\"> gastado|: Gana {Value2} de |Evasión|."
   UpgradedDescription: "|Por cada <sprite=\"ManaSprite\" name=\"W\"> gastado|: |Exilia|\
-    \ hasta {Value1} carta{Value1:plural one='' other='s'} de la mano, pila de robo\
-    \ y/o pila de descarte.\n|Por cada <sprite=\"ManaSprite\" name=\"G\"> gastado|:\
-    \ Gana {Value2} de |Evasión|."
+    \ hasta {Value1} carta{Value1:plural one='' other='s'} de la mano, de la pila\
+    \ de robo y/o de la pila de descarte.\n|Por cada <sprite=\"ManaSprite\" name=\"\
+    G\"> gastado|: Gana {Value2} de |Evasión|."
 SuperNova:
   Name: Supernova
   Description: "Gana {Mana}.\nColoca {Value1} carta{Value1:plural one=' de ataque\
-    \ aleatorio' other='s de ataques aleatorios'} desde la pila de robo hacia la mano."
+    \ aleatorio' other='s de ataques aleatorios'} de la pila de robo a la mano."
 SakuyaZeroDefense:
   Description: Gana {Block} de |Bloqueo|.
   Name: Desviación de danmaku
@@ -3045,8 +3048,8 @@ YoumuAttack:
   Name: Corte del epítome del corazón
 YukariFlyObject:
   Name: Objeto volador superveloz
-  Description: Al comienzo del siguiente turno de {PlayerName}, inflige {Value1} daño
-    al enemigo con más vida.
+  Description: Al comienzo del siguiente turno de {PlayerName}, inflige {Value1} de
+    daño al enemigo con más vida.
   FlavorText: Demasiado rápido para el ojo humano.
 SanaeSpirit:
   Name: Reunir fe
@@ -3056,15 +3059,15 @@ YukariSwarm:
   Description: "Inflige {Damage} de daño a cada enemigo.\nSi hay {Value1} o más carta{Value1:plural\
     \ one='' other='s'} en el |Exilio|, inflige esa misma cantidad de daño dos veces."
   UpgradedDescription: "|Exilia| hasta {Value2} carta{Value2:plural one='' other='s'}\
-    \ en la mano.\nInflige {Damage} de daño a cada enemigo.\nSi hay {Value1} o más\
+    \ de la mano.\nInflige {Damage} de daño a cada enemigo.\nSi hay {Value1} o más\
     \ carta{Value1:plural one='' other='s'} en el |Exilio|, inflige esa misma cantidad\
     \ de daño dos veces."
-  Name: Nido del noctilucae
+  Name: Nido del Noctilucae
   FlavorText: ¡Puerta de Brechilonia!
 SanaeSummonGod:
   Description: "Gana {Value2} |Gracia{Value2:plural one=' Divina' other='s Divinas'}|.\n\
-    Al comienzo del segundo turno de {PlayerName} después de jugar la {SelfName},\
-    \ gana {Value1} de |Poder| y de |Espíritu|."
+    Al comienzo del segundo turno de {PlayerName} después de jugar {SelfName}, gana\
+    \ {Value1} de |Poder| y de |Espíritu|."
   UpgradedDescription: "Gana {Value2} |Gracia{Value2:plural one=' Divina' other='s\
     \ Divinas'}|.\nAl comienzo del siguiente turno de {PlayerName}, gana {Value1}\
     \ de |Poder| y de |Espíritu|."
@@ -3083,8 +3086,8 @@ BlueZeroAttack:
 QingeDraw:
   Description: "Gana {Block} de |Bloqueo|.\nRoba {Value1} carta{Value1:plural one=''\
     \ other='s'}.\nSe descarta cualquier carta que haya sido robada de esta manera\
-    \ con un coste de maná mayor a 1."
-  Name: Movimiento fetal tao
+    \ y tenga un coste de maná superior a 1."
+  Name: Movimiento fetal Tao
   FlavorText: También conocida como "atrapar a esos pequeños diablillos".
   DetailText: Las cartas |No-Jugables| robadas de esta forma también se descartan.
 TakaneDefense:
@@ -3096,7 +3099,7 @@ YonglinDraw:
     de esta forma |cuestan temporalmente| {Mana} maná menos.
   Name: Memorias de la era divina
 PatchouliGreenAttack:
-  Description: "Inflige {Damage} de daño\nSolo se puede jugar si el maná total actual\
+  Description: "Inflige {Damage} de daño.\nSolo se puede jugar si el maná total actual\
     \ ({BattleAmount}) es mayor que el maná total base ({BaseAmount})."
   Name: Destello de primavera
   NonbattleDescription: "Inflige {Damage} de daño.\nSolo se puede jugar si el maná\
@@ -3107,10 +3110,10 @@ GreenLotus:
   Name: Loto iluminado por la luna
 ModuoluoSeasons:
   Description: Agrega aleatoriamente |Rocíos|, |Llamas| y |Flores de verano| a la
-    mano hasta que este llena.
+    mano hasta que esté llena.
   Name: Temporada fuera de control
   UpgradedDescription: "Gana {Value1} de |Poder|.\nAgrega aleatoriamente |Rocíos|,\
-    \ |Llamas| y |Flores de verano| a la mano hasta que este llena."
+    \ |Llamas| y |Flores de verano| a la mano hasta que esté llena."
 DefaultPassion:
   Description: "Inflige {Damage} de daño.\nEntra en el estado |Pasión|."
   Name: Rosa romántica
@@ -3127,7 +3130,7 @@ FindInspiration:
   Description: "Agrega {Value1} |¡Eureka{Value1:plural one='' other='s'}!| a la pila\
     \ de robo."
   Name: Destello de inspiración
-  FlavorText: '"¿Podría ser que...? ¿¡La culpable soy... yo!?"'
+  FlavorText: '"¿Podría ser que...? ¡¿La culpable soy... yo?!"'
 InspirationCard:
   Name: ¡Eureka!
   Description: '|Cuando {SelfName} entra en la mano|: Gana {Mana}, {Value1} |Inspiración|
@@ -3136,7 +3139,7 @@ InspirationCard:
 QiannianShenqiCard:
   Description: "Durante el resto del combate, se pueden robar cartas más allá del\
     \ límite del efecto del |e:Rompecabezas piramidal| a un coste de {Value1} de vida\
-    \ por cada carta extra robada.\n|Limitado【{DeckCounter}】|"
+    \ por cada carta adicional robada.\n|Limitado【{DeckCounter}】|"
   Name: Mi turno
   FlavorText: ¡Robo, una carta mágica!
 LeaveMoodAttack:
@@ -3145,11 +3148,11 @@ LeaveMoodAttack:
 IceWing:
   Name: Ala de hielo
   ExtraDescription1: "Gana {Mana}.\nMira 2 cartas azules aleatorias de la pila de\
-    \ robo. Elige uno para colocarlo en la mano y el otro se deja en el fondo de la\
+    \ robo. Elige una para colocarla en la mano y la otra se deja en el fondo de la\
     \ pila de robo.\n(Queda{BlueCount:plural one='' other='n'} {BlueCount} carta{BlueCount:plural\
     \ one=' azul' other='s azules'} en la pila de robo)"
   Description: "Gana {Mana}.\nMira 2 cartas azules aleatorias de la pila de robo.\
-    \ Elige uno para colocarlo en la mano y el otro se deja en el fondo de la pila\
+    \ Elige una para colocarla en la mano y la otra se deja en el fondo de la pila\
     \ de robo."
   FlavorText: ¡Lista para despegar!
 LeaveMoodGraze:
@@ -3165,7 +3168,7 @@ PassionAttackToDraw:
   Description: "Inflige {Damage} de daño {Value1} veces.\nEntra en el estado |Pasión|.\n\
     Baraja {SelfName} en la pila de robo."
 FriendDraw:
-  Description: "Siempre que se active la |a:Habilidad activa| o |u:Habilidad definitiva|\
+  Description: "Siempre que se active la |a:Habilidad activa| o la |u:Habilidad definitiva|\
     \ de una |Compañera|, roba {Value1} carta{Value1:plural one='' other='s'}.\nSiempre\
     \ que se active una |u:Habilidad definitiva|, gana {Value1} maná aleatorio."
   Name: Reunión en el jardín
@@ -3178,16 +3181,16 @@ PassionVulnerable:
   Name: Noche de insomnio
   Description: "|En Pasión|: Aplica {Value1} de |Vulnerable| a cada enemigo.\nDe lo\
     \ contrario, entra en el estado |Pasión|."
-  UpgradedDescription: "|En Pasión|: Aplica {Value1} de Vulnerable y {Value2} de |Marcado|\
-    \ a cada enemigo.\nDe lo contrario, entra en el estado |Pasión|."
+  UpgradedDescription: "|En Pasión|: Aplica {Value1} de |Vulnerable| y {Value2} de\
+    \ |Marcado| a cada enemigo.\nDe lo contrario, entra en el estado |Pasión|."
 PeaceEndTurn:
   Name: Momento de descanso
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la mano.\
-    \ {Value1:plural one='Tiene' other='Tienen'} |Retener| en este turno.\nEntra en\
-    \ el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
+    \ Tiene{Value1:plural one='' other='n'} |Retener| en este turno.\nEntra en el\
+    \ estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
   UpgradedDescription: "Elige hasta {Value1} carta{Value1:plural one='' other='s'}\
     \ de la mano y/o pila de descarte y se regresa{Value1:plural one='' other='n'}\
-    \ hacia la mano. Tiene{Value1:plural one='' other='n'} |Retener| en este turno.\n\
+    \ a la mano. Tiene{Value1:plural one='' other='n'} |Retener| en este turno.\n\
     Entra en el estado |Serenidad|.\nFinaliza el turno de {PlayerName}."
 PassionDraw:
   Name: Enfermedad del amor
@@ -3208,13 +3211,13 @@ PsycheLock:
     \ mientras que {SelfName} está en la mano. (Queda{Count:plural one='' other='n'}\
     \ {Count})"
   UpgradedDescription: "Termina el turno de {PlayerName}. Luego, toma un turno extra.\n\
-    Al comienzo del próximo turno de {PlayerName}, |Mejora| todas las carta en la\
+    Al comienzo del próximo turno de {PlayerName}, |Mejora| todas las cartas en la\
     \ mano.\nSolo se puede jugar si {PlayerName} ha entrado en 3 |Estados mentales|\
     \ diferentes mientras que {SelfName} está en la mano. (Queda {Count})"
   UpgradedNonbattleDescription: "Termina el turno de {PlayerName}. Luego, toma un\
     \ turno extra.\nAl comienzo del próximo turno de {PlayerName}, |Mejora| todas\
-    \ las carta en la mano.\nSolo se puede jugar si {PlayerName} ha entrado en 3 |Estados\
-    \ mentales| diferentes mientras que {SelfName} está en la mano."
+    \ las cartas en la mano.\nSolo se puede jugar si {PlayerName} ha entrado en 3\
+    \ |Estados mentales| diferentes mientras que {SelfName} está en la mano."
   FlavorText: La razón por la que cerró su tercer ojo podría estar dentro de ella.
 LunaticPassion:
   Name: Loca de amor
@@ -3223,7 +3226,7 @@ LunaticPassion:
     \ en |Certero|.\nEntra en el estado |Pasión|."
   FlavorText: '"¡De hecho, te he estado siguiendo desde la última partida!"'
 MoodAttack:
-  Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de un |Estado\
+  Description: "Inflige {Damage} de daño.\nSiempre que {PlayerName} cambie de |Estado\
     \ mental|, {SelfName} se devuelve de la pila de descarte a la mano."
   Name: Cuchilla de transferencia
 AhongMana:
@@ -3244,11 +3247,11 @@ ReimuSilence:
     \ carta{Value1:plural one='' other='s'}."
 KnifeDamageUp:
   Name: Propulsión plateada
-  Description: "Aumenta el daño infligido de los |Cuchillos arrojadizos| en {Value1}.\n\
+  Description: "Aumenta en {Value1} el daño infligido por los |Cuchillos arrojadizos|.\n\
     Agrega {Value2} |Cuchillo{Value2:plural one=' Arrojadizo' other='s arrojadizos'}|\
     \ a la mano."
 KoishiKiss:
-  Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|\nRealiza un\
+  Description: "Inflige {Damage} de daño.\nAplica {Value1} de |Débil|.\nRealiza un\
     \ |Ataque continuo|."
   Name: Beso al aire
 BaseFollower:
@@ -3286,7 +3289,7 @@ PlayDrawTop:
   Description: "Gana {Block} de |Bloqueo|.\nJuega la carta superior de la pila de\
     \ robo."
   Name: Acción inconsciente
-  FlavorText: '"¡Oh dios mío, jugué una transferencia de fondos!"'
+  FlavorText: '"¡Oh, Dios mío, jugué una transferencia de fondos!"'
 TheChariot:
   Description: "|Explora| {Scry}.\nAl comienzo del siguiente turno de {PlayerName},\
     \ entra en el estado |Pasión| y roba {Value1} carta{Value1:plural one='' other='s'}."
@@ -3295,7 +3298,7 @@ CloseEye:
   Description: "Gana {Shield} de |Barrera|.\nLas intenciones de los enemigos no se\
     \ pueden ver durante el próximo turno de {PlayerName}."
   Name: Corazón cerrado
-  FlavorText: Koishi cerró su tercer ojo que leía la mente.
+  FlavorText: Koishi cerró su tercer ojo, que leía la mente.
 DuplicateFollower:
   Description: "Inflige {Damage} de daño.\nGana {Mana}.\n|Al comienzo del combate|:\
     \ Agrega {Value1} |Copia{Value1:plural one='' other='s'}| de {SelfName} a la pila\
@@ -3308,8 +3311,8 @@ YaoguaiLaser:
   Name: EEG Youkai
 KoishiWake:
   Description: "|En Pasión|: Realiza un |Ataque continuo|.\n|En Serenidad|: Gana {Shield}\
-    \ de |Barrera|.\n|En Fuga|: Gana {Value1} carta{Value1:plural one='' other='s'}\
-    \ de |Fuga| para usarse y {SelfName} se |Exilia|."
+    \ de |Barrera|.\n|En Fuga|: Gana {Value1} carga{Value1:plural one='' other='s'}\
+    \ |Fuga| y {SelfName} se |Exilia|."
   Name: Recobrar la razón
   FlavorText: '"¿Dónde estoy?"'
 KoishiGainColorless:
@@ -3335,11 +3338,11 @@ KoishiFlower:
   Name: Rosa traviesa
 TheHermit:
   Description: "|Explora| {Scry}.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"\
-    ManaSprite\" name=\"0\"> para jugar."
+    ManaSprite\" name=\"0\">."
   Name: 'Tarot: El ermitaño'
   UpgradedDescription: "|Explora| {Scry}.\n|Mejora| la carta superior de la pila de\
     \ robo.\nGana {Mana}.\n|En Fuga|: {SelfName} cuesta <sprite=\"ManaSprite\" name=\"\
-    0\"> para jugarlo."
+    0\"> ."
 BlackEpiphany:
   Description: "Entra en el estado |Fuga|.\nSolo se puede{Value1:plural one='' other='n'}\
     \ jugar {Value1} carta{Value1:plural one='' other='s'} durante el próximo turno\
@@ -3353,8 +3356,8 @@ KoishiDna:
     \ one='ón' other='ones'} del ADN| a la mano."
   Name: Defecto del ADN
   UpgradedDescription: "Al comienzo de cada turno de {PlayerName}, agrega {Value1}\
-    \ |Transcripci{Value1:plural one='ón' other='ones'} del ADN| a la mano.\nSe activa\
-    \ {SelfName} en el mismo turno jugado."
+    \ |Transcripci{Value1:plural one='ón' other='ones'} del ADN| a la mano.\nEl efecto\
+    \ de {SelfName} se activa en el mismo turno en que se juega."
 KoishiAttackX:
   Description: '|Por cada <sprite="ManaSprite" name="2"> gastados|: inflige {Damage}
     de daño a cada enemigo y gana {Mana}.'
@@ -3366,8 +3369,8 @@ Anatta:
 ButterflyDream:
   Description: "Agrega {Value1} carta{Value1:plural one=' Rara' other='s Raras'} |p:completamente\
     \ aleatoria{Value1:plural one='' other='s'}| a la parte superior de la pila de\
-    \ robo. Tiene{Value1:plural one='' other='n'} |Reponer|, |Exilio|, |Etéreo|, y\
-    \ puede gastarse maná de cualquier color para pagar su{Value1:plural one=' coste'\
+    \ robo. Tiene{Value1:plural one='' other='n'} |Reponer|, |Exilio| y |Etéreo|,\
+    \ y puede gastarse maná de cualquier color para pagar su{Value1:plural one=' coste'\
     \ other='s costes'}.\nAl comienzo de cada turno de {PlayerName}, se repite este\
     \ efecto."
   DetailText: "Estas |e:cartas alternativas| ignoran el maná total, el color del maná\
@@ -3381,19 +3384,18 @@ KokoroFriend:
   ExtraDescription2: '{FriendA2}Entra en el estado |Serenidad|.'
   ExtraDescription3: '{FriendU}Entra en el estado |Fuga|.'
   Name: Kokoro, Persona Despertada
-  Description: '{FriendP}Gana {Value1} |Sueño{Value1:plural one='''' other=''s''}|
-    .'
+  Description: '{FriendP}Gana {Value1} |Sueño{Value1:plural one='''' other=''s''}|.'
   FlavorText: ¡Persona!
 EnterEpiphany:
   Description: Entra en el estado |Fuga|.
   Name: Epifanía
   FlavorText: Orz.
 DreamExpress:
-  Name: Sueño expreso
+  Name: Sueño exprés
   Description: Al final de cada turno de {PlayerName}, gana {Value1} |Sueño{Value1:plural
-    one='' other='s'}|, luego inflige daño a cada enemigo igual al doble d{Value1:plural
-    one='el coste de maná' other='e la suma de los costes manás'} de la{Value1:plural
-    one=' carta' other='s cartas'} |Soñada{Value1:plural one='' other='s'}|.
+    one='' other='s'}|, luego inflige a cada enemigo un daño igual al doble del {Value1
+    one='coste total' other='coste total acumulado'} de la{Value1 one=' carta' other='s
+    cartas'} |Soñada{Value1 one='' other='s'}|.
   FlavorText: Atardecer, palmeras y velocidad por el ciberespacio.
 JinziDoppelganger:
   Name: Doppelgangers del siglo
@@ -3401,8 +3403,8 @@ JinziDoppelganger:
     juega dos veces.
 HuiyeSuperExtraTurn:
   DetailText: "El turno adicional de {SelfName} ocurre antes de cualquier otro turno\
-    \ adicional.\nDespués de jugar con {SelfName}, puedes pasar el cursor sobre el\
-    \ ícono del estado de {PlayerName} para consultar los detalles del turno actual."
+    \ adicional.\nDespués de jugar {SelfName}, puedes pasar el cursor sobre el ícono\
+    \ del estado de {PlayerName} para consultar los detalles del turno actual."
   Name: '"Fin de la noche imperecedera"'
   Description: "Al final de cada |Turno Natural| de {PlayerName}, toma un turno extra.\n\
     El |Bloqueo| no se pierde al comienzo de ese turno adicional, y solo se puede{Value1:plural\
@@ -3415,8 +3417,8 @@ KoishiDiscard:
   DetailText: Si otro {SelfName} se descarta de esta manera, es |Exiliado|.
 AttackX:
   Description: "|Por cada {Mana} gastado|: inflige {Damage} de daño.\nCuando el objetivo\
-    \ de {SelfName} es derrotado, si aún le sobran ataques, continúa atacando utilizando\
-    \ un enemigo aleatorio como nuevo objetivo."
+    \ de {SelfName} es derrotado, si aún quedan ataques, continúa atacando y elige\
+    \ aleatoriamente a otro enemigo como objetivo."
   Name: Continuar atacando después de derrotar al objetivo.
 DebugRemoveHand:
   Description: 'Carta de prueba: Elige cualquier cantidad de cartas en tu mano para
@@ -3460,7 +3462,7 @@ KoishiDive:
 KoishiPhone:
   Name: Llamada terroríficamente linda
   Description: "Siempre que se juegue una carta de ataque, se realiza un |Ataque continuo|.\n\
-    Si no hay |cartas continuas| en la pila de robo, se usará |Ring-Ring| como |Ataque\
+    Si no hay |Cartas continuas| en la pila de robo, se usará |Ring-Ring| como |Ataque\
     \ continuo|."
   FlavorText: No puedes perderte esta llamada.
 FollowAttackFiller:
@@ -3501,22 +3503,22 @@ KoishiPotential:
   Description: Mira las {Value1} primeras cartas de la pila de robo. Elige una para
     jugarla dos veces y luego se |Exilia|.
   FlavorText: Cuando utilizas el 25% de tu cerebro.
-  DetailText: Si se elige una carta |Injugable|, no se juega y no se |Exiliara|.
+  DetailText: Si se elige una carta |Injugable|, no se juega y no se |Exiliará|.
 KoishiTouying:
   Name: Ascuas del amor
-  Description: "Gana {Mana}.\nElige 1 de {Value1} cartas aleatorias para agregarla\
-    \ a la parte superior de la pila de robo. Tiene |Reponer|, |Exilio| y |Etéreo|.\n\
+  Description: "Gana {Mana}.\nElige 1 de {Value1} cartas aleatorias y colócala en\
+    \ la parte superior de la pila de robo. Tiene |Reponer|, |Exilio| y |Etéreo|.\n\
     Esa carta tendrá un coste total de al menos {Value2} de maná."
   FlavorText: Tengo una idea.
 CommonFire:
   Name: Poder de lo ordinario
-  Description: "Después de que {PlayerName} juega una carta común, gana {Value1} de\
-    \ |Poder Temporal|.\n"
-  UpgradedDescription: "Después de que {PlayerName} juega una carta común, gana {Value1}\
+  Description: "Después de que {PlayerName} juegue una carta común, gana {Value1}\
+    \ de |Poder Temporal|.\n"
+  UpgradedDescription: "Después de que {PlayerName} juegue una carta común, gana {Value1}\
     \ de |Poder Temporal|.\nAgrega una |Pureza| a la mano."
 KoishiDrawTopCards:
   Description: Mira las {Value1} primeras cartas de la pila de robo. Elige una para
-    dejarla en la pila de robo y coloca las demás a la mano.
+    dejarla en la pila de robo y coloca las demás en la mano.
   Name: Test de Rorschach
 SelfControl:
   ExtraDescription2: Entra en el estado |Serenidad|.
@@ -3531,15 +3533,15 @@ KoishiMana:
 DebugPlaySelectCard:
   Name: Juega cartas del campo de batalla
   Description: "Carta de prueba: Elige hasta {value1} cartas del campo de batalla\
-    \ para jugar como carta continúa.\nOrden de resolución: mano, pila de robo, pila\
-    \ de descarte, exilio."
+    \ para jugar como cartas continuas.\nOrden de resolución: mano, pila de robo,\
+    \ pila de descarte, exilio."
 KoishiPlayDiscard:
   Name: Filosofía del detestado
   Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} de la pila\
     \ de descarte y juégala{Value1:plural one='' other='s'} como carta{Value1:plural\
     \ one=' continua' other='s continuas'}.\nTodas las cartas elegidas que no sean\
     \ |cartas Continuas| serán |Exiliadas|."
-  DetailText: Si se elige una carta |Injugable|, no se juega y no se |Exiliara|.
+  DetailText: Si se elige una carta |Injugable|, no se juega y no se |Exiliará|.
 AliceAttackU:
   Name: Lanza de la muñeca
   Description: Inflige {Damage} de daño.
@@ -3562,15 +3564,15 @@ DollFire:
 TimeMagic:
   Description: "Elige {Value1} de {Value2} carta{Value2:plural one=' Poco Común o\
     \ Rara' other='s Poco Comunes o Raras'} |p:completamente aleatoria{Value2:plural\
-    \ one='' other='s'}| y agrégalo a la mano. {Value1:plural one='Tiene' other='Tienen'}\
-    \ |Exilio| y |Etéreo| y puede gastarse maná de cualquier color para pagar {Value1:plural\
-    \ one='su coste' other='sus costes'} y del cual se reduce en {Mana}.\nSe repite\
-    \ este efecto al comienzo de cada turno extra."
+    \ one='' other='s'}| y agrégala a la mano. {Value1:plural one='Tiene' other='Tienen'}\
+    \ |Exilio| y |Etéreo| y puede pagarse su{Value1:plural one=' coste' other='s costes'}\
+    \ con maná de cualquier color, y dicho coste se reduce en {Mana}.\nSe repite este\
+    \ efecto al comienzo de cada turno extra."
   DetailText: "Estas |e:cartas alternativas| ignoran el maná total, el color del maná\
     \ y la restricción del personaje.\n{SelfName} no puede ser producido por este\
-    \ efecto.\nLos usos múltiples de {SelfName} solo aumenta el número de cartas disponibles\
-    \ para la elegir, no aumenta el número de elecciones ni el número de cartas seleccionadas\
-    \ conseguidas."
+    \ efecto.\nLos usos múltiples de {SelfName} solo aumentan el número de cartas\
+    \ disponibles para elegir, no aumenta el número de elecciones ni el número de\
+    \ cartas seleccionadas que se pueden conseguir."
   Name: Magia del tiempo
 KoishiDance:
   Name: Espinas enloquecidas
@@ -3599,13 +3601,13 @@ ShiningPotion:
   FlavorText: '"¿Me dijiste que entrara dentro de la cama solo para ver esto?"'
 DayaojingTdm:
   FlavorText: '"¡Prepárate! ¡Porque voy a lanzarte bolas de nieve!"'
-  Description: '{FriendP}Inflinge {Damage} de daño de ataque a un enemigo aleatorio.'
+  Description: '{FriendP}Inflige {Damage} de daño a un enemigo aleatorio.'
   ExtraDescription1: "{FriendA}Agrega {Value1} |Cono{Value1:plural one=' de nieve'\
     \ other='s de nieve'} del lago brumoso| a la mano."
   UpgradedExtraDescription1: "{FriendA}Agrega {Value1} |Cono{Value1:plural one=' de\
     \ nieve' other='s de nieve'} del lago brumoso| a la mano. |Mejora| uno de ellos."
   ExtraDescription3: '{FriendU}Gana {Value2} |Armaduras de escarcha|. Aumenta por
-    cada punto de |Influencia| que tiene {SelfName}.'
+    cada punto de |Influencia| que tenga {SelfName}.'
   Name: Daiyousei, Helada Asistente
 SnowconeTdm:
   Name: Cono de nieve del lago brumoso
@@ -3644,7 +3646,7 @@ TewiEscape:
   FlavorText: '"Operación completada con éxito."'
 YukariKill:
   Name: El rapto de Yukari
-  Description: "Derrota a el enemigo objetivo. \nSi se usa contra un elite o un jefe,\
+  Description: "Derrota al enemigo objetivo. \nSi se usa contra un élite o un jefe,\
     \ inflige {Value1} de daño."
   DetailText: Las tres hadas de la luz pueden ser derrotadas instantáneamente.
   FlavorText: Y entonces, un día... simplemente no apareció. ¡Puf!
@@ -3660,10 +3662,10 @@ YonglinBurst:
   Description: "En este turno, el daño del ataque infligido se duplica.\nRoba {Value1:plural\
     \ one='% carta' other='% cartas'}.\nGana {Mana}.\n|Sobregiro| {Value2}."
   FlavorText: De todas las medicinas de Eirin, ninguna hace efecto más rápido que
-    ésta.
+    esta.
 MarisaShopTwnm:
   DetailText: La selección de cartas de {SelfName} se genera de la misma manera que
     el inventario de la tienda de Takane.
-  Name: Robar
+  Name: Robar la tienda
   Description: Elige hasta 1 carta de un conjunto de cartas que se pueden encontrar
     en la tienda para agregarla a la mano y a la biblioteca.

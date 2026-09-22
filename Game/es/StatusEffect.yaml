@@ -1,23 +1,23 @@
 Firepower:
   Name: Poder
-  Description: "Gana {Level} de |Poder|.\nEl |Poder| aumenta el daño infligido con\
+  Description: "Gana {Level} de |Poder|.\nEl |Poder| aumenta el daño infligido por\
     \ los ataques."
-  Brief: "|Poder| incrementado.\nEl |Poder| aumenta el daño infligido con los ataques."
+  Brief: "|Poder| incrementado.\nEl |Poder| aumenta el daño infligido por los ataques."
 TempFirepowerNegative:
   Description: "Hasta el final del turno, pierde {Level} de |Poder|.\nEl |Poder| aumenta\
-    \ el daño infligido con los ataques."
+    \ el daño infligido por los ataques."
   Name: Reducción temporal de poder
   Brief: "|Poder| disminuido hasta el final del turno.\nEl |Poder| aumenta el daño\
-    \ infligido con los ataques."
+    \ infligido por los ataques."
 FirepowerNegative:
   Name: Reducción de poder
-  Description: "Pierde {Level} de |Poder|.\nEl |Poder| aumenta el daño infligido con\
+  Description: "Pierde {Level} de |Poder|.\nEl |Poder| aumenta el daño infligido por\
     \ los ataques."
-  Brief: "|Poder| disminuido.\nEl |Poder| aumenta el daño infligido con los ataques."
+  Brief: "|Poder| disminuido.\nEl |Poder| aumenta el daño infligido por los ataques."
 TempSpirit:
   Name: Espíritu temporal
   Description: "Hasta el final del turno, gana {Level} de |Espíritu|.\nEl |Espíritu|\
-    \ aumenta el |Bloqueo| y |Barrera| obtenidos al jugar cartas."
+    \ aumenta el |Bloqueo| y la |Barrera| obtenidos al jugar cartas."
   Brief: "|Espíritu| aumentado hasta el final del turno.\nEl |Espíritu| aumenta el\
     \ |Bloqueo| y la |Barrera| obtenidos al jugar cartas."
 Spirit:
@@ -40,10 +40,10 @@ SpiritNegative:
     \ obtenidos al jugar cartas."
 Fragil:
   Name: Frágil
-  Description: "{PlayerName} gana {Value}% menos de |Bloqueo| y de |Barrera| de las\
+  Description: "{PlayerName} gana un {Value}% menos de |Bloqueo| y |Barrera| de las\
     \ cartas {Duration:plural one='hasta el final del turno' other='hasta los siguientes\
     \ % turnos'}."
-  Brief: '{PlayerName} gana {Value}% menos de |Bloqueo| y |Barrera| de las cartas.'
+  Brief: '{PlayerName} gana un {Value}% menos de |Bloqueo| y |Barrera| de las cartas.'
 Weak:
   Name: Débil
   Brief: Los ataques de {OwnerName} infligen {Value}% menos de daño.
@@ -78,16 +78,14 @@ ExtraTurn:
 LimitedDamage:
   Name: Liberador de artículos
   Description: '{OwnerName} solo puede recibir hasta {Limit} de daño cada turno. Todavía
-    se le puede infligir {Count} de daño en este turno.'
-  Brief: '{OwnerName} solo puede ser infligida una cierta cantidad de daño en cada
-    turno.'
+    puede recibir {Count} de daño en este turno.'
+  Brief: '{OwnerName} solo puede recibir una cierta cantidad de daño en cada turno.'
 Invincible:
   Name: Perfección
-  Description: "{OwnerName} no perderá más de 1 de vida por cualquier daño recibido\
-    \ {Duration:plural one='hasta el final de su turno' other='durante los próximos\
-    \ % turnos'}."
-  Brief: '{OwnerName} no perderá más de 1 de vida cada vez que reciba daño durante
-    una cierta cantidad de turnos.'
+  Description: "{OwnerName} no perderá más de 1 de vida por cada daño recibido {Duration:plural\
+    \ one='hasta el final de su turno' other='durante los próximos % turnos'}."
+  Brief: '{OwnerName} no perderá más de 1 de vida por cada daño recibido durante una
+    cierta cantidad de turnos.'
 TurnStartDontLoseBlock:
   Name: Bloqueo conservado
   Brief: '{OwnerName} no pierde |Bloqueo| al comienzo de cada turno durante un cierto
@@ -100,14 +98,15 @@ Amulet:
     % efectos negativos'}.
   Brief: Niega efectos negativos.
 AmuletForCard:
-  Brief: Niega las cartas de estado que se agregarían (Serán |Exiliados| en su lugar).
+  Brief: Niega las cartas de estado que se agregarían (serán |Exiliadas| en su lugar).
   Name: Resguardo
-  Description: Niega la {Level} siguiente{Level:plural one=' carta de estado' other='s
-    cartas de estados'} que se {Level:plural one='agregaría' other='agregarían'} (En
-    su lugar {Level:plural one='será |Exiliada|' other='serán |Exiliadas|'}).
+  Description: Niega la{Level:plural one='' other='s'} {Level} siguiente{Level:plural
+    one=' carta de estado' other='s cartas de estados'} que se {Level:plural one='agregaría'
+    other='agregarían'} (en su lugar {Level:plural one='será |Exiliada|' other='serán
+    |Exiliadas|'}).
 Electric:
   Name: Carga estática
-  Brief: Cuando sea atacada, inflige daño al atacante.
+  Brief: Cuando sea atacado, inflige daño al atacante.
   Description: Cuando sea atacado, inflige {Level} de daño al atacante.
 TempElectric:
   Name: Carga estática
@@ -117,13 +116,13 @@ TempElectric:
     \ inicio del próximo |Turno natural| de {OwnerName}."
 Reflect:
   Name: Reflejo
-  Description: Cuando sea atacada, inflige {Level} de daño al atacante, y este efecto
+  Description: Cuando sea atacada, inflige {Level} de daño al atacante y este efecto
     se remueve.
   Brief: Cuando sea atacada, inflige daño al atacante y este efecto se remueve.
 NextAttackUp:
   Name: Ataque potenciado
-  Description: La próxima carta de |Ataque| inflige {Level} más de daño.
-  Brief: La próxima carta de ataque inflige un mayor daño.
+  Description: La próxima carta de |Ataque| inflige {Level} de daño adicional.
+  Brief: La próxima carta de ataque que juegues inflige más daño.
 NextTurnLoseHp:
   Name: Pérdida de vida en el próximo turno
   Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} de vida.
@@ -143,21 +142,21 @@ CantDrawThisTurn:
 TempFirepower:
   Name: Poder temporal
   Description: "Hasta el final del turno, gana {Level} de |Poder|.\nEl |Poder| aumenta\
-    \ el daño infligido con los ataques."
+    \ el daño infligido por los ataques."
   Brief: "|Poder| aumentado hasta el final del turno.\nEl |Poder| aumenta el daño\
-    \ infligido con los ataques."
+    \ infligido por los ataques."
 TimeIsLimited:
   Name: Límite de tiempo
-  Description: Hasta el siguiente turno del enemigo, las cartas cuesta {Mana} maná
-    más para ser jugadas.
-  Brief: Hasta el siguiente turno del enemigo, las cartas cuestan más maná para ser
-    jugadas.
+  Description: Hasta el siguiente turno del enemigo, las cartas cuestan {Mana} maná
+    adicional para jugarse.
+  Brief: Hasta el siguiente turno del enemigo, las cartas cuestan más maná adicional
+    para jugarse.
 GuangxueMicai:
   Brief: '{OwnerName} recibe la mitad de daño de los ataques durante una cierta cantidad
     de turnos.'
   Name: Camuflaje óptico
   Description: "{OwnerName} recibe la mitad de daño de los ataques {Duration:plural\
-    \ one='hasta el final del turno' other='por los próximos % turnos'}."
+    \ one='hasta el final del turno' other='durante los próximos % turnos'}."
 DroneBlock:
   Name: Matriz de defensa
   Description: Al final del turno de {OwnerName}, gana {Level} de |Bloqueo|.
@@ -167,8 +166,8 @@ MaoyuBlock:
   Description: '{OwnerName} gana {Level} de |Bloqueo| después de ser atacado.'
 Servant:
   Name: Invocación
-  Description: "Si solo quedan enemigos con |Convocación|, serán derrotados inmediatamente.\n\
-    No desencadena efectos de muerte."
+  Description: "Si solo quedan enemigos que son |Convocación|, estos serán derrotados\
+    \ inmediatamente.\nNo desencadena efectos de muerte."
 DeathExplodeNotCount:
   Name: Balas vengativas
   Description: "Inflige {Level} de daño a {PlayerName} cuando {OwnerName} es derrotado.\n\
@@ -182,7 +181,7 @@ DeathVulnerable:
   Name: Palidez mortal
   Description: Cuando {OwnerName} es derrotada, {PlayerName} gana {Level} de |Vulnerable|.
 Drowning:
-  Name: Ahogar
+  Name: Ahogamiento
   Description: '{OwnerName} recibe {Level} de daño al final de cada turno.'
   Brief: '{OwnerName} recibe daño al final de su turno.'
   ExtraDescription: "{OwnerName} recibe {Level} de daño al final de cada turno.\n\
@@ -208,9 +207,9 @@ AbsorbSpirit:
   Description: Al final del turno de {OwnerName}, gana {Level} de |Espíritu|.
 Lunatic:
   Name: Locura
-  Description: "Una luz mágica brilla sobre todos. Llevándola a la locura, las acciones\
-    \ de la {OwnerName} se amplifican.\n{PlayerName} gana maná {Mana} al inicio del\
-    \ turno."
+  Description: "Una luz mágica brilla sobre todos. Consumida por la locura, las acciones\
+    \ de la {OwnerName} se amplifican.\nAl comienzo del turno de {PlayerName}, gana\
+    \ maná {Mana}"
 LunaticTorch:
   Name: Antorcha lunática
   Description: "La antorcha de {OwnerName} brilla con una luz peculiar. Todos los\
@@ -218,8 +217,7 @@ LunaticTorch:
     \ del turno."
 WindGirl:
   Name: Joven diosa del viento
-  Description: La |Evasión| de {OwnerName} se reabastece en {Level}, al final de su
-    turno.
+  Description: Al final de su turno, la |Evasión| de {OwnerName} se restablece a {Level}.
   Brief: "Cada vez que {OwnerName} gana el efecto |Joven diosa del viento|, ganará\
     \ la misma cantidad de |Evasión|.\nLa |Evasión| de {OwnerName} es reabastecida\
     \ hasta una cierta cantidad al final de su turno."
@@ -851,8 +849,8 @@ FrostArmor:
     \ recibe daño por un ataque, pierde 1 |Armadura de escarcha|."
 InvincibleEternal:
   Name: Perfección
-  Description: '{OwnerName} no perderá más de 1 de vida por cualquier daño recibido.'
-  Brief: '{OwnerName} no perderá más de 1 de vida por cualquier daño recibido.'
+  Description: '{OwnerName} no perderá más de 1 de vida por cada daño recibido.'
+  Brief: '{OwnerName} no perderá más de 1 de vida por cada daño recibido.'
 SplitPotionSe:
   Name: Químico de doble efecto
   Description: Las |Pociones inestables| infligen daño {Level} ve{Level:Plural one='z
