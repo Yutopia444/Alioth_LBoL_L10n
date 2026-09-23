@@ -983,9 +983,10 @@ HuiyeTimeSe:
   Description: Solo se pueden jugar {Limit} carta{Limit:plural one='' other='s'} en
     cada turno. (Queda{Count:plural one='' other='n'} {Count}.)
   Name: Momento fugaz
-  ExtraDescription: "Solo {Limit} carta{Limit:plural one='' other='s'} se pueden jugar\
-    \ en este turno. (Queda{Count:plural one='' other='n'} {Count}.)\n{SelfName} está\
-    \ inactivo y solo se removerá después del turno en que se resuelva."
+  ExtraDescription: "Solo {Limit} carta{Limit:plural one='' other='s'} se puede{Limit:plural\
+    \ one='' other='n'} jugar en este turno. (Queda{Count:plural one=' % carta' other='n\
+    \ % cartas'}'}.)\n{SelfName} está inactivo y solo se eliminará después del turno\
+    \ en que se haya activado."
 YukariFriendSe:
   Name: Frontera de la fantasía
   Brief: Al comienzo de cada turno de {PlayerName}, agrega cartas neutrales aleatorias
@@ -1208,10 +1209,10 @@ LunaticPassionSe:
   Name: Loca de amor
   Description: "El modificador de daño de |Pasión| se cambia al {Percentage}%.\nMientras\
     \ {PlayerName} está en el estado |Pasión|, el daño de las cartas de ataque se\
-    \ vuelven |Certeros|."
-  Brief: "El modificador de daño del estado |Pasión| ha cambiado al {Percentage}%.\n\
-    El modificador de daño de |Pasión| se cambia al {Percentage}%.\nMientras {PlayerName}\
-    \ está en el estado |Pasión|, el daño de las cartas de ataque se vuelven |Certeros|."
+    \ vuelve |Certero|."
+  Brief: "El modificador de daño del estado |Pasión| se cambia al {Percentage}%.\n\
+    Mientras {PlayerName} está en el estado |Pasión|, el daño de las cartas de ataque\
+    \ se vuelve |Certero|."
 ReimuSilenceSe:
   Description: "Por cada {Limit} carta{Limit:plural one=' robada' other='s robadas'}\
     \ fuera de la fase de robo, inflige {Damage} de daño a cada enemigo.\nQueda{Count:plural\
@@ -1226,10 +1227,10 @@ SakuyaInvestigateSe:
   Name: Detective del tiempo detenido
 BladePowerSe:
   Name: Arremetida deslumbrante
-  Brief: Cada vez que un |Cuchillo arrojadizo| se juega, agrega cartas de ataques
-    aleatorias a la mano. |Cuestan temporalmente| {Mana}, tienen |Exilio| y |Etéreo|.
+  Brief: Cada vez que un |Cuchillo arrojadizo| se juega, agrega cartas de ataque aleatorias
+    a la mano. |Cuestan temporalmente| {Mana}, tienen |Exilio| y |Etéreo|.
   Description: Cada vez que un |Cuchillo arrojadizo| se juega, agrega {Level} carta{Level:plural
-    one=' de ataque aleatoria' other='s de ataques aleatorias'} a la mano. |Cuesta{Level:plural
+    one=' de ataque aleatoria' other='s de ataque aleatorias'} a la mano. |Cuesta{Level:plural
     one='' other='n'} temporalmente| {Mana}, tiene{Level:plural one='' other='n'}
     |Exilio| y |Etéreo|.
 KnifeDamageUpSe:
@@ -1249,7 +1250,7 @@ MoodEpiphany:
     \ one=' % carta' other='n % cartas'}, se sale del estado |Fuga|.\n|Fuga| es un\
     \ |Estado mental|, del cual {PlayerName} solo puede tener uno a la vez."
   Brief: "Mientras está en el estado |Fuga|, gana {Mana} y roba una carta por cada\
-    \ carta jugada.\nAl final del turno de {PlayerName}, o cuando se juega{PlayCount:plural\
+    \ carta jugada.\nAl final del turno de {PlayerName}, o cuando se juegue{PlayCount:plural\
     \ one=' % carta' other='n % cartas'}, se sale del estado |Fuga|.\n|Fuga| es un\
     \ |Estado mental|, del cual {PlayerName} solo puede tener uno a la vez."
 UpgradePeace:
@@ -1258,11 +1259,13 @@ UpgradePeace:
   Name: Anatta
 Tired:
   Name: Fatiga
-  Description: "Solo se pueden jugar {Limit} carta{Limit:plural one='' other='s'}\
-    \ en este turno. (Queda{Count:plural one=' %' other='n %'}"
-  ExtraDescription: "Solo se pueden jugar {Limit} cartas en este turno. (Queda{Count:plural\
-    \ one='' other='n'}. {Count})\n{SelfName} está inactivo y solo se puede eliminar\
-    \ después del turno en que se ha activado."
+  Description: "Solo se puede{Limit:plural one='' other='n'} jugar {Limit} carta{Limit:plural\
+    \ one='' other='s'} en este turno. (Queda{Count:plural one=' % carta' other='n\
+    \ % cartas'})"
+  ExtraDescription: "Solo {Limit} carta{Limit:plural one='' other='s'} se puede{Limit:plural\
+    \ one='' other='n'} jugar en este turno. (Queda{Count:plural one=' % carta' other='n\
+    \ % cartas'}'}.)\n{SelfName} está inactivo y solo se eliminará después del turno\
+    \ en que se haya activado."
 CloseEyeSe:
   Description: "Se desconocen las intenciones de los enemigos.\nTurnos restantes:\
     \ {Level}"
@@ -1277,12 +1280,12 @@ KoishiDnaSe:
 ButterflyDreamSe:
   Description: Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural
     one=' Rara |p:completamente aleatoria|' other='s Raras |p:completamente aleatorias|'}
-    a la parte superior de la pila de robo. Esta{Level:plural one=' carta tiene' other='s
-    cartas tienen'} |Reponer|, |Exilio|, |Etéreo| y se puede gastar maná de cualquier
-    color para pagar su coste de maná.
+    en la parte superior de la pila de robo. Esta{Level:plural one=' carta tiene'
+    other='s cartas tienen'} |Reponer|, |Exilio| y |Etéreo|, y se puede gastar maná
+    de cualquier color para pagar su coste de maná.
   Brief: Al comienzo del turno de {PlayerName}, agrega |p:cartas raras completamente
-    aleatorias| a la parte superior de la pila de robo. Tienen |Reponer|, |Exilio|,
-    |Etéreo| y se puede gastar maná de cualquier color para pagar su coste de maná.
+    aleatorias| en la parte superior de la pila de robo. Tienen |Reponer|, |Exilio|
+    y |Etéreo|, y se puede gastar maná de cualquier color para pagar su coste de maná.
   Name: El sueño de la mariposa
 DreamExpressSe:
   Name: Sueño exprés
@@ -1292,17 +1295,18 @@ DreamExpressSe:
     \ |Soñadas|'}."
 JinziDoppelgangerSe:
   Name: Doppelgangers del siglo
-  Description: "Las primera{Level:plural one='carta jugada' other='s % cartas jugadas'}\
-    \ durante el turno de {PlayerName} se juegan dos veces. (Queda{Count:plural one=''\
-    \ other='n'} {Count})."
-  Brief: Las primera carta jugada durante el turno de {PlayerName} se juega dos veces.
+  Description: "La{Level:plural one='' other='s'} primera{Level:plural one='carta\
+    \ jugada' other='s % cartas jugadas'} durante el turno de {PlayerName} se juega{Level:plural\
+    \ one='' other='n'} dos veces. (Queda{Count:plural one='' other='n'} {Count})."
+  Brief: Las primeras carta jugadas durante el turno de {PlayerName} se juegan dos
+    veces.
 BailianMagicSe:
   Description: En este turno, la próxima{Level:plural one=' carta de |Habilidad|'
     other='s % cartas de |Habilidad|'} activada{Level:plural one=' se jugará' other='s
     se jugarán'} dos veces.
   Brief: En este turno, las próximas cartas de |Habilidad| se jugarán dos veces en
     este turno.
-  Name: Recitación del diablo
+  Name: Recitación demoníaca
 KoishiUnknown:
   Name: Impredecible
   Description: "La intención de {OwnerName} es parcialmente desconocida.\nLas acumulaciones\
@@ -1316,10 +1320,10 @@ Inspiration:
 KoishiPhoneSe:
   Name: Llamada terroríficamente linda
   Description: "Siempre que se juegue una carta de ataque, se realiza {Level} |Ataque{Level:plural\
-    \ one=' continuo' other='s continuos'}|.\nSi no hay cartas |Continuas| en la pila\
-    \ de robo, se jugara en su lugar |Ring-ring| como |Ataque continuo|."
+    \ one=' continuo' other='s continuos'}|.\nSi no hay |cartas continuas| en la pila\
+    \ de robo, se jugará en su lugar |Ring-ring| como |Ataque continuo|."
   Brief: "Siempre que se juegue una carta de ataque, se realiza |Ataques continuos|.\n\
-    Si no hay cartas |Continuas| en la pila de robo, se jugara en su lugar |Ring-Ring|\
+    Si no hay |cartas continuas| en la pila de robo, se jugará en su lugar |Ring-ring|\
     \ como |Ataque continuo|."
 GainInspirationSe:
   Name: Inspiración inagotable
@@ -1337,18 +1341,18 @@ UpgradeAllHandSe:
     \ turno en que se resuelva."
 Grace:
   Name: Gracia divina
-  Description: '|Gracia Divina| cuenta como |Poder| e |Espíritu| y desaparece cuando
+  Description: '|Gracia divina| cuenta como |Poder| e |Espíritu| y desaparece cuando
     surte efecto en una carta o cuando se activa la |Carta mágica|.'
-  Brief: '|Gracia Divina| cuenta como |Poder| e |Espíritu| y desaparece cuando surte
+  Brief: '|Gracia divina| cuenta como |Poder| e |Espíritu| y desaparece cuando surte
     efecto en una carta o cuando se activa la |Carta mágica|.'
 ReimuEvilTerminatorSe:
   Name: Exterminadora experta
   Description: Siempre que un enemigo es derrotado, gana {Mana}.
-  Brief: Siempre que un enemigo es derrotado, gana mana.
+  Brief: Siempre que un enemigo es derrotado, gana maná.
 ReimuGraceSe:
   Description: Al comienzo del turno de {PlayerName}, gana {Level} |Gracia{Level:plural
     one=' divina' other='s divinas'}|.
-  Brief: Al comienzo del turno de {PlayerName}, gana |Gracias divinas|.
+  Brief: Al comienzo del turno de {PlayerName}, gana |Gracia divina|.
   Name: Providencia de los Hakurei
 AutoQumobangSe:
   Name: Vara de purificación furiosa
@@ -1382,10 +1386,10 @@ TimeMagicSe:
   Name: Magia del tiempo
   Description: "Al comienzo del turno extra de {PlayerName}, elige {Level} de {Limit}\
     \ carta{Limit:plural one=' poco común o rara' other='s Poco comunes o raras'}\
-    \ |p:completamente aleatoria{Value1:plural one='' other='s'}|y agrégalo a la mano.\
-    \ Tiene{Level:plural one='' other='n'} |Exilio| y |Etéreo|, y se puede gastar\
-    \ maná de cualquier color para pagar su{Level:plural one=' coste' other='s costes'}\
-    \ y del cual se reduce en {Mana}.\n"
+    \ |p:completamente aleatoria{Level:plural one='' other='s'}|y agrégala{Level:plural\
+    \ one='' other='s'} a la mano. Tiene{Level:plural one='' other='n'} |Exilio| y\
+    \ |Etéreo|, y se puede gastar maná de cualquier color para pagar su{Level:plural\
+    \ one=' coste' other='s costes'} y cuyo coste se reduce en {Mana}.\n"
 KoishiUltimateSe:
   Brief: Al comienzo del turno de {PlayerName}, juega inmediatamente las cartas superiores
     de la pila de robo.
@@ -1395,7 +1399,7 @@ KoishiUltimateSe:
 PaidTdm:
   Description: ¡{OwnerName} ya pagó!
   Brief: ¡{OwnerName} ya pagó!
-  Name: Llene su helado gratis
+  Name: Más helado gratis
 YonglinBurstSe:
   Name: Píldora del sueño de la mariposa
   Description: Duplica el daño de los ataques de {PlayerName} {Duration:plural one='hasta
