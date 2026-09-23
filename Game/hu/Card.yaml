@@ -66,7 +66,7 @@ Fengmozhen4:
     jobb oldalán lévőkre.
 SmallPanding:
   Name: Kis Támadási Felület
-  Description: "{Value1} |Kitérést| ad.\n{Value2} |Gyengeséget| ad."
+  Description: "{Value1} |Kitérést| ad.\n{Value2} |Sebezhetőséget| ad."
   UpgradedDescription: '{Value1} |Kitérést| ad.'
   FlavorText: '"Addig okés amíg nem találnak el!"'
 TuimofuLuanwu:
@@ -121,8 +121,8 @@ Zhuizongfu:
   Description: "{Damage} sebzést okoz egy véletlen ellenfélnek {Value1} alkalommal.\n\
     {PlayerName} a következő fordulója elején, kap {Mana} manát."
 DanmuDuijue:
-  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükröződést| ad.\n|Tűzerő| hatására\
-    \ {SelfName} erősödik."
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükröződést| ad.\n{SelfName} hatását\
+    \ |Tűzerő| is növeli."
   Name: Varázskártya Párbaj
   UpgradedDescription: "{Shield} |Gátat| ad.\n{Value1} |Tükröződést| ad.\n{SelfName}\
     \ hatását |Tűzerő| is növeli."
@@ -245,7 +245,8 @@ Yinhe:
   Description: "{Block} |Blokkolást| ad.\n|Mikor Visszatartódik|: Növeli {SelfName}\
     \ |Blokkolását| {Value1} ponttal a csata végéig."
 EvilTuiZhi:
-  Description: Ebben a fordulóban, a következő támadás kártya kétszer fog kijátszódni.
+  Description: Ebben a fordulóban, a következő {Value1} támadás kártya kétszer fog
+    kijátszódni.
   Name: Gonosz Írtás
   FlavorText: Gensokyo egyik szórakoztató tevékenysége.
 MomentPower:
@@ -256,7 +257,7 @@ MomentPower:
     drasztikusan megnő, átalakulva ezzel "Tűzerővé".
 Wunvyu:
   Description: "{Damage} sebzést okoz {Value1} alkalommal.\n|Amíg kézben van|: Amikor\
-    \ egy kártya a húzó lépésen kívül kerül a kézbe, növeli {SelfName} sebzését {Value2}\
+    \ egy kártya a húzó lépésen kívül húzódik fel, növeli {SelfName} sebzését {Value2}\
     \ ponttal a csata végéig."
   Name: Hakurei Leggonoszabb Gömbjei
   FlavorText: Ahogy egy ősi filozófus mondta, "Adj egy elég hosszú rudat és egy éket
@@ -358,7 +359,7 @@ ReimuHuashan:
 KuosanLingfu:
   Name: Amulett Terjesztés
   Description: "{Damage} sebzést okoz minden ellenfélnek.\n{PlayerName} |Gátat| kap\
-    \ minden így kiosztott sebzésért."
+    \ minden így okozott kivédetlen sebzésért."
 DanceAroundLake:
   Name: Tóparti Tánc
   Description: Amikor egy kártya |Száműzetik|, húz {Value1} kártyát.
@@ -382,7 +383,7 @@ HuashanDefense:
 HuashanQingjing:
   Name: Nyugalom
   Description: '{Block} |Blokkolást| ad.'
-  UpgradedDescription: "{Block} |Blokkolást| ad.\nTörli {PlayerName} |Sérülékenységét|."
+  UpgradedDescription: "{Block} |Blokkolást| ad.\nTörli {PlayerName} |Sebezhetőségét|."
   FlavorText: Kasen egy szennymentes helyen él, ahol nem kell megosztoznia egy nappalin
     a szobatársaival.
 GapLady:
@@ -511,7 +512,7 @@ ScryAttack:
     szép lassan eltűnt a külvilág tudatából.
 MarisaSteal:
   Name: '"Kölcsön" Anyagok'
-  Description: "Kézbe tesz {Value1} |Szivárványt|.\n|Túllépés| {Value2}."
+  Description: "Kézbe tesz {Value1} |Szivárványt|.\n|Túlhúz| {Value2}."
   UpgradedDescription: Kézbe tesz {Value1} |Szivárványt|.
   FlavorText: '"Van-e otthon hasznos mágikus alapanyagod?"'
 NightSeeStar:
@@ -551,12 +552,12 @@ PotionJungle:
 AccuracyLaser:
   Name: Irányított Lézer
   Description: "{Damage} sebzést okoz {Value1} alkalommal.\n|Mikor Visszatartódik|:\
-    \ {SelfName} kevesebbe kerül a csata során."
+    \ {SelfName} {Mana} manával kevesebbe kerül a csata végéig."
   FlavorText: '"Meglepetés! Azt hitted egy Irányítatlan Lézert fogok lőni?"'
 RainbowStar:
   Description: "{Damage} sebzést okoz.\n|Minden elköltött <sprite=\"ManaSprite\" name=\"\
-    1\"> manáért: {SelfName} {Value1} ponttal több sebzést okoz.\n|Minden elköltött\
-    \ <sprite=\"ManaSprite\" name=\"P\"> manáért: {SelfName} {Value2} ponttal több\
+    1\"> manáért|: {SelfName} {Value1} ponttal több sebzést okoz.\n|Minden elköltött\
+    \ <sprite=\"ManaSprite\" name=\"P\"> manáért|: {SelfName} {Value2} ponttal több\
     \ sebzést okoz."
   Name: Szivárvány Csillagdurranás
 WinterWarm:
@@ -694,7 +695,8 @@ HuoliQuankai:
 MasterOfCollection:
   Name: A Gyűjtögetés Mestere
   Description: "Válassz legfeljebb {Value2} kártyát a kézből, |Visszatart| kerül rájuk.\n\
-    Mikor egy kártya |Visszamarad|, {Value1} véletlen manával kevesebbe kerül."
+    Mikor egy kártya |Visszamarad|, {Value1} véletlen manával kevesebbe kerül a csata\
+    \ végéig."
   FlavorText: '"Szemét? Hogy lehetne ez szemét?"'
 ChargingPotion:
   Name: Radioaktív Elemek
@@ -866,10 +868,10 @@ TimeAuraAttack:
   Description: "{Damage} sebzést okoz.\n{Value1} |Időimpulzust| ad."
 Lunatic:
   Name: Elmebaj
-  Description: "{PlayerName} fordulója elején, ha legalább {Value1} {SelfName} van\
-    \ a kézben, húzó - és dobó halmokban, |Száműzi| azokat és elveszt {Value2} életerőt.\n\
+  Description: "{PlayerName} fordulója végén, ha legalább {Value1} {SelfName} van\
+    \ a kézben, húzó - és dobó halmokban, |Száműzi| azokat és elvesz {Value2} életerőt.\n\
     Jelenleg {LunaticCount} {SelfName} van a birtokodban."
-  NonbattleDescription: '{PlayerName} fordulója elején, ha legalább {Value1} {SelfName}
+  NonbattleDescription: '{PlayerName} fordulója végén, ha legalább {Value1} {SelfName}
     van a kézben, húzó - és dobó halmokban, |Száműzi| azokat és elveszt {Value2} életerőt.'
 SakuyaSleep:
   UpgradedDescription: Egy |Ragyogást| ad a kézbe.
@@ -984,15 +986,15 @@ LilyFriend:
   ExtraDescription3: '{FriendU}{Heal} életerőt ad.'
 SummerParty:
   Name: Hűs Parti
-  Description: "{Value1} |Jégpáncélt| ad.\nMinden |Csapattárs| a kézben {Value2} |Egységet|\
-    \ kap."
+  Description: "{Value1} |Fagypáncélt| ad.\nMinden |Csapattárs| a kézben {Value2}\
+    \ |Egységet| kap."
 ChooseFriend:
   Name: Ködös-Tó Randevú
   FlavorText: Ha az érzés kölcsönös, fogd a kezem.
   DetailText: Ezek az |e:alternatív kártyák| figyelmen kívül hagyják a mana mennyiségét,
     színét és a karakterkorlátozásokat, valamint az összköltségük 4 vagy kevesebb.
-  Description: Válassz {Value2} kártyát {Value1} véletlen |Csapattárs| közül és vedd
-    a kézbe. Bármilyen színű manával ki lehet fizetni a költségüket.
+  Description: Válassz legfeljebb {Value2} kártyát {Value1} véletlen |Csapattárs|
+    közül és vedd a kézbe. Bármilyen színű manával ki lehet fizetni a költségüket.
 KoishiAttackG:
   Name: Kettős Spirál
   Description: '{Damage} sebzést okoz.'
@@ -1293,7 +1295,7 @@ HualiIce:
     \ manába kerül.\n({Countdown} kártya maradt.)"
   NonbattleDescription: "{Damage} sebzést okoz minden ellenfélnek.\n|Hideget| tesz\
     \ minden ellenfélre.\nHa {Value1} kártya már ki lett játszva a fordulóban, {SelfName}\
-    \ {Mana} manával kevesebbe kerül."
+    \ {Mana} manába kerül."
 DollFire:
   Name: Bábhamvasztás
   Description: (WIP) 
@@ -1306,7 +1308,7 @@ YonglinCard:
   FlavorText: Ha a bölcsesség bölcse a rejtőzködést választotta, akkor a rejtőzködés
     bölcsességnek számít?
   UpgradedDescription: "{PlayerName} fordulója végén {Value1} |Hamis Holdat| tesz\
-    \ a húzó halomba.\n{Value2} |Hamis Holdat| tesz a húzó halomba."
+    \ a húzó halomba.\n{Value2} |Hamis Holdat| tesz a húzó halom tetejére."
   Description: '{PlayerName} fordulója végén, {Value1} |Hamis Holdat| tesz a húzó
     halomba.'
 SatoriAttack:
@@ -1345,7 +1347,7 @@ LunaFriend:
   FlavorText: Nyomozz lopakodva, nesszenés nélkül.
 StarFriend:
   Name: Star, Zuhanó Csillagfény
-  Description: '{FriendP}{Damage} támadási sebzést okoz egy véletlen ellenfélnek.'
+  Description: '{FriendP}{Damage} támadási sebzést okoz minden ellenfélnek.'
   ExtraDescription1: '{FriendA}Azonnal sebzést okoz {Value1} alkalommal.'
   ExtraDescription3: "{FriendU}Mikor bármely {SelfName} sebzést okoz, {Light} |Ráközelítést|\
     \ tesz a célpontra.\nAzonnali sebzést okoz {Value2} alkalommal."
@@ -1784,7 +1786,7 @@ Blizzard:
     \ következő fordulója elején."
 IceBarrier:
   Name: Jéggát
-  Description: '{Value1} |Jégpáncélt| ad.'
+  Description: '{Value1} |Fagypáncélt| ad.'
 ZeroK:
   Name: Abszolút Nulla
   Description: "Növeli a halmozott |Hideg| sebzését {Value1} alkalommal.\n|Hideget|\
@@ -1829,8 +1831,7 @@ FruitShake:
   FlavorText: A trópusi gyümölcsök klasszak és fincsik!
 ColdChain:
   Name: Hideg Logisztikai Lánc
-  Description: Válassz legfeljebb 1 kártyát a húzó halomból {Value1} közül és kézbe
-    teszi.
+  Description: Válassz legfeljebb {Value1} kártyát a húzó halomból és vedd kézbe azokat.
   FlavorText: Friss ételek házhozszállítással.
 FrozenOrb:
   Name: Fagyott Gömb
@@ -2094,7 +2095,7 @@ AliceAttack:
 YukariBox:
   Name: Adott "Ajándékok"
   Description: "|Jósol| {Scry} kártyát.\nHúz {Value1} kártyát.\nVisszakeveri a húzó\
-    \ halomba a húzott kártyát."
+    \ halomba a dobó halom összes kártyáját."
   FlavorText: Az élet olyan sodródó egy résben; sosem tudhatod, mit hoz a jövő.
 SakuyaDraw:
   Name: Csúcs Tökéletesség
@@ -2145,18 +2146,18 @@ LunaClock:
 PerfectServant:
   Name: Tökéletes Cseléd
   Description: "|Minden elköltött <sprite=\"ManaSprite\" name=\"W\"><sprite=\"ManaSprite\"\
-    \ name=\"W\"> manáért|: {PlayerName} fordulója elején, minden kézben lévő kártya\
-    \ |ideiglenesen| 1 véletlen manával kevesebbe kerül.\n|Minden elköltött <sprite=\"\
-    ManaSprite\" name=\"U\"> manáért|: {PlayerName} következő fordulója elején, {Mana}\
-    \ manát ad és húz egy extra kártyát."
+    \ name=\"W\"> manáért|: {PlayerName} következő fordulója elején, a húzó lépés\
+    \ végén, minden kézben lévő kártya |Ideiglenesen| {Value1} véletlen manával kevesebbe\
+    \ kerül.\n|Minden elköltött <sprite=\"ManaSprite\" name=\"U\"> manáért|: {PlayerName}\
+    \ következő fordulója elején, {Mana} manát ad és {Value2} kártyával többet húz."
 BackToFuture:
   Name: Vissza a Jövőbe
   Description: "Megcseréli a dobó és húzó halmokat.\nHúz {Value1} kártyát."
   FlavorText: Utak? Ahová mi megyünk, oda nem kellenek utak.
 SakuyaKiller:
   Name: Metsző a Ködben
-  Description: "{PlayerName} fordulója végén, {Value1} |Dobókést| tesz a dobó halomba.\n\
-    Ez egy ellenfél legyőzetésénél megismétlődik."
+  Description: "{PlayerName} fordulója végén, {Value1} |Dobókést| tesz a húzó halomba.\n\
+    Ez egy ellenfél legyőzése után is megtörténik."
 BrokenTimeline:
   Name: Törött Idővonal
   FlavorText: Nem tudok mit kezdeni ezzel az idővonallal, következő játék.
@@ -2239,7 +2240,7 @@ Tether:
   FlavorText: Mikor kimész, támaszkodj a barátaidra.
 FairyTeam:
   Name: Nagy Tündérháború
-  Description: "Válassz a kézből bármennyi |Csapattársat| és |Száműzd| őket. A költségükkel\
+  Description: "Válassz a kézből bármennyi |Csapattársat| és |Száműzd| őket. Az alapköltségükkel\
     \ egyenlő manát ad.\n{Damage} sebzést okoz egy véletlen ellenfélnek.\nMinden így\
     \ |Száműzött| kártyáért, mégegyszer okozza azt a sebzést."
 IceBlock:
@@ -2311,7 +2312,7 @@ DeployShanghai:
   Description: "|Telepít| egy |e:Shanghai Bábot|,\n(WIP) vagy |Előléptet| egy Bábot."
 NazrinBaota:
   Name: Pagoda Ragyogása
-  Description: "{Damage} sebzést okoz egy véletlen ellenfélnek.\n|Felfejleszt| {Value1}\
+  Description: "{Damage} sebzést okoz minden ellenfélnek.\n|Felfejleszt| {Value1}\
     \ véletlen kártyát a kézből. Előnyben részesíti a támadás kártyákat."
   FlavorText: "\"Ne használj távolsági fényszórót alagútban!\"\n- Yamame Kurodani"
 HuiyinMoreDraw:
@@ -2418,8 +2419,8 @@ DayaojingTdm:
   ExtraDescription1: '{FriendA}Kézbe tesz {Value1} |Ködös-Tavi Hótölcsért|.'
   UpgradedExtraDescription1: '{FriendA}Kézbe tesz {Value1} |Ködös-Tavi Hótölcsért|.
     |Felfejleszt| egyet közülük.'
-  ExtraDescription3: '{FriendU}{Value2} |Jégpáncélt| ad. Ez növekedik {SelfName} minden
-    egyes |Egységével|.'
+  ExtraDescription3: '{FriendU}{Value2} |Fagypáncélt| ad. Ez növekedik {SelfName}
+    minden egyes |Egységével|.'
   FlavorText: '"Készülj fel! Meg foglak dobálni hógolyóval!"'
 SnowconeTdm:
   Name: Ködös-Tavi Hótölcsér
@@ -2523,7 +2524,7 @@ GainDollSlot:
   Description: (WIP)
 BailianJingang:
   Name: Test Sáncolás
-  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükörképet| ad."
+  Description: "{Block} |Blokkolást| ad.\n{Value1} |Tükröződést| ad."
   FlavorText: Ugyancsak összhangban van Byakuren harmadik mozgástörvényével is.
 YunyouShengdi:
   Name: Vándorló Mennyország
@@ -2568,7 +2569,7 @@ YijiGraze:
   Description: "{Value1} |Kitérést| ad.\n{Value2} kártyát húz."
 TiangouOrder:
   Name: Nagy Tengu Rendelete
-  Description: "{Damage} sebzést okoz.\nMikor egy ellenfél támadási sebzést kap, {PlayerName}\
+  Description: "{Damage} sebzést okoz.\nMikor a célpont támadási sebzést kap, {PlayerName}\
     \ {Value1} |Blokkolást| kap."
   FlavorText: A csillagképekből ihletet merítve Megumu Iizunamaru teljesen megújította
     a modern táncmozgalmat, ezzel elindítva a tenguk körében népszerű táncmozdulatok
@@ -2777,8 +2778,9 @@ MoonTipsHeal:
 QiannianShenqiCard:
   Name: Én Jövök
   FlavorText: Húzz!
-  Description: A csata végéig, a |e:Piramis Alakú Rejtvény| korlátozásán túl is lehet
-    kártyát húzni, ha {PlayerName} megfizeti {Value1} életerővel extra kártyánként.
+  Description: "A csata végéig, a |e:Piramis Alakú Rejtvény| korlátozásán túl is lehet\
+    \ kártyát húzni, ha {PlayerName} megfizeti {Value1} életerővel extra kártyánként.\n\
+    |Korlátozott【{DeckCounter}】|"
 MeilingLianhua:
   Name: Élénk Káosztánc
   Description: "{Damage} sebzést okoz minden ellenfélnek.\n{Value1} |Tűzerőt| ad."
@@ -2861,10 +2863,10 @@ DebugRemoveAllHandWhenDraw:
     (ezt beleértve).'
 HuiyinRetain:
   Name: Ichijou Visszatérő Híd
-  ExtraDescription1: "Visszavesz a kézbe {Value1} kártyát a dobó halomból. |Visszatartja|\
-    \ azokat ebben a fordulóban.\nBefejezi {PlayerName} fordulóját. Utána, extra fordulóba\
-    \ lép.\n|d:Időkorlátoz {Mana} manát.|"
-  Description: "Visszavesz a kézbe {Value1} kártyát a dobó halomból. |Visszatartja|\
+  ExtraDescription1: "Visszavesz a kézbe legfeljebb {Value1} kártyát a dobó halomból.\
+    \ |Visszatartja| azokat ebben a fordulóban.\nBefejezi {PlayerName} fordulóját.\
+    \ Utána, extra fordulóba lép.\n|d:Időkorlátoz {Mana} manát.|"
+  Description: "Visszavesz a kézbe legfeljebb {Value1} kártyát a dobó halomból. |Visszatartja|\
     \ azokat ebben a fordulóban.\nBefejezi {PlayerName} fordulóját. Utána, extra fordulóba\
     \ lép.\n|Időkorlátoz| {Mana} manát."
 HehuanAttack:
@@ -3154,8 +3156,8 @@ NewsTidbit:
   Description: "{Value1} |Ráközelítést| ad.\n|Korlátozott【{DeckCounter}】|"
 XiangziEcho:
   Name: Hegyi Visszhang
-  Description: Válassz {Value1} kártyát a kézből. |Visszhangot| {Value1:plural one='kap'
-    other='kapnak'}.
+  Description: Válassz legfeljebb {Value1} kártyát a kézből. |Visszhangot| {Value1:plural
+    one='kap' other='kapnak'}.
   FlavorText: '"Já————húú————"'
 BlackPoison:
   Name: Sötét Táncos
@@ -3175,8 +3177,8 @@ LimaoAttack:
     |Növekedés|: {Mana} manával többet ad."
 SanaeRestart:
   Name: A Nap Mikor Kettévált a Tenger
-  Description: "Visszateszi a kézbe az egész dobó halmot, valamint bárhány kártyát\
-    \ a húzó halomból. Megkeveri a húzó halmot.\nHúz {Value1} kártyát.\n{Mana} manát\
+  Description: "Visszateszi a húzó halomba az egész dobó halmot, valamint bárhány\
+    \ kártyát a kézből. Megkeveri a húzó halmot.\nHúz {Value1} kártyát.\n{Mana} manát\
     \ ad."
 ToolHeal:
   Name: Dobozolt Étel
@@ -3192,7 +3194,7 @@ ToolWeak:
   Description: "{Value1} |Gyengeséget| okoz.\n|Korlátozott【{DeckCounter}】|"
 ToolVulnerable:
   Name: Töltött Lábdob
-  Description: "{Value1} |Sérülékenységet| okoz.\n|Korlátozott【{DeckCounter}】|"
+  Description: "{Value1} |Sebezhetőséget| okoz.\n|Korlátozott【{DeckCounter}】|"
 MoonPurify:
   Name: Szenny Eltávolítása
   Description: "Egy véletlen kártya a kézből |Tisztát| kap a csata végéig, törölve\
@@ -3314,8 +3316,8 @@ JunkoNightmare:
   Name: Borzongó Rémálom
   FlavorText: Valaha az első háromszínű kártya volt.
   UpgradedDescription: "Válassz legfeljebb {Value2} kártyát.\n{Damage} sebzést okoz\
-    \ minden ellenfélnek {Value1} alkalommal.\n|Száműzi| az összes választott kártyát\
-    \ a kézből. Ugyanannyi |Tisztát| tesz a kézbe."
+    \ minden ellenfélnek {Value1} alkalommal.\n|Száműzi| az összes nem-kiválasztott\
+    \ kártyát a kézből. Ugyanannyi |Tisztát| tesz a kézbe."
   Description: "{Damage} sebzést okoz minden ellenfélnek {Value1} alkalommal.\n|Száműzi|\
     \ a kezet. Utána, ugyanannyi |Tisztát| tesz a kézbe."
 XiaosanReflect:
