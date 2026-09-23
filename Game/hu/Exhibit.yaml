@@ -63,8 +63,7 @@ ClassicWunvfu:
 Bingzhilin:
   Name: Jégpikkely
   Description: "{BaseMana} manát tesz a manabázisba.\nMiután egy képesség kártya kijátszódik,\
-    \ {Value1} véletlen kártya a kézben |ideiglenesen| {Value1} {Mana} manával kevesebbe\
-    \ kerül."
+    \ {Value1} véletlen kártya a kézben |ideiglenesen| {Mana} manával kevesebbe kerül."
   FlavorText: Még akkor se olvad el, ha tűz felé tartod.
 ShijieSuipian:
   Name: Világ Szilánkjai
@@ -94,7 +93,7 @@ Laiwating:
   Name: Levatin
   FlavorText: Úgy néz ki mint egy elhajtott óramutató.
   Description: "{BaseMana} manát tesz a manabázisba.\n|Sebezhető| hatása {Value1}%-al\
-    \ növekszik mikor ellenfélnek van.\n|Sebezhető| hatása {Value1}%-al növekszik\
+    \ növekszik mikor ellenfélnek van.\n|Sebezhető| hatása {Value2}%-al növekszik\
     \ mikor {PlayerName:d} van."
 Ganggenier:
   Name: Güngnir
@@ -104,8 +103,8 @@ Ganggenier:
 GuizuJiubei:
   Name: Oni Sake Tál
   Description: "{BaseMana} manát tesz a manabázisba.\n{PlayerName} fordulója elején,\
-    \ kap a csata utolsó fordulójában kijátszott támadás kártyák számával egyenlő\
-    \ |Ideiglenes Tűzerőt|."
+    \ a csata előző fordulójában kijátszott támadás kártyák számával egyenlő |Ideiglenes\
+    \ Tűzerőt| kap."
   FlavorText: Inkább úgy néz ki mint egy nagy tál.
 AizheHongshi:
   Name: Aja Köve
@@ -232,8 +231,8 @@ GanzhuYao:
   FlavorText: Ami megöl, az megerősít.
   Description: "{PlayerName} következő vereségénél, maximális életerőre gyógyul inkább.\
     \ Ez a hatás csak egyszer működik.\nMiután ez a |Kiállítási Tárgy| hatott, {PlayerName}\
-    \ maximális életereje {Value1}%-al kevesebb lesz és a csata elején kap {Value2}\
-    \ |Tűzerőt|."
+    \ maximális életereje {Value1}%-ára csökken és a csata elején kap {Value2} |Tűzerőt|.\n\
+    Ezt a Kiállítási tárgyat nem lehet elvenni {PlayerName} kezéből."
 Xunlongchi:
   Name: Varázsvesszők
   Description: Feloldja a |Kincsvadászatot| a Réseknél, hogy új |Kiállítási Tárgyakat|
@@ -356,7 +355,7 @@ ReimuW:
   Name: Hakurei Tisztítópálca
   Description: "{BaseMana} manát tesz a manabázisba. |Reimu| egyedi kártyái bekerülnek\
     \ a pakliba.\nHa van elköltetlen mana {PlayerName} fordulója végén, kap {Value1}\
-    \ |Gátat|.\nA csata elején, {Value1} |Gátat| ad."
+    \ |Gátat|.\nA csata elején, {Value2} |Gátat| ad."
   FlavorText: Egy nagyon sokrétű tárgy, amit danmaku lövésre, határok készítésére,
     átkok feloldására, stb. lehet használni.
 MarisaB:
@@ -364,10 +363,10 @@ MarisaB:
   FlavorText: Szörnyű mennyiségű Dark♂ tudást tartalmaz.
   Description: "{BaseMana} manát tesz a manabázisba. |Marisa| egyedi kártyái bekerülnek\
     \ a pakliba.\nA minden csatában, {PlayerName} első fordulója elején, kézbe tesz\
-    \ egy |Okkultot|."
+    \ {Value1} |Okkultot|."
 YueYuyi:
   Name: Holdlepel
-  Description: Minden csatában, {PlayerName} első fordulója elején, |Tökéletest| ad
+  Description: Minden csatában, {PlayerName} első fordulója elején, |Hibátlant| ad
     {Value1} fordulóig.
   FlavorText: A Portálvető át lett alakítva egy harcászati eszközzé miután mindenki
     arra használta, hogy a Föld és a Hold között utazzon.
@@ -720,8 +719,8 @@ HeiseBijiben:
     és {Value2} |Sebezhetőséget| kap.
 Guangjian:
   Name: Fénykard
-  Description: Mikor {PlayerName} a csatában első alkalommal okoz sebzést, {Value1}
-    |Ráközelítést| tesz a célpont(ok)ra.
+  Description: Mikor {PlayerName} a csatában első alkalommal okoz támadási sebzést,
+    {Value1} |Ráközelítést| tesz a célpont(ok)ra.
   FlavorText: '"Egy a Holdfővárosban készült fegyver, amely meglendítéskor zümmögő
     hangot ad ki."'
 LuoboMoxing:
@@ -739,7 +738,7 @@ JingboliJing:
   FlavorText: '"Láthatod hogy milyen lesz holnap az idő bentről."'
 Headphone:
   Name: Stúdióminőségű Fejhallgatók
-  Description: Minden |Összhang| kártyahatást megismétlődik.
+  Description: Minden |X-költség| kártyahatás mégegyszer kijátszódik.
   FlavorText: '"Mély basszus; ropogós magas."'
 ZhinengYinxiang:
   Name: Okoshangszóró
@@ -756,7 +755,8 @@ LouguanJian:
   Name: Roukanken
   FlavorText: '"Darabolva!"'
   Description: "Miután {PlayerName} támadási sebzést okoz, {Value1} |Ráközelítést|\
-    \ tesz a célpont(ok)ra.\nEz a futam végéig tart."
+    \ tesz a célpont(ok)ra.\nEzt a Kiállítási tárgyat nem lehet elvenni {PlayerName}\
+    \ kezéből."
 WaijieYanjing:
   Name: Csúcstechnológiás Szemüveg a Külvilágból
   Description: <sprite="Point" name="Gold"> arany csatajutalmak {Value1}%-al több
@@ -802,7 +802,8 @@ JuanzengZhengming:
   Name: Adományozás Tanújele
   Description: "{PlayerName} maximális Varázskártya töltése {Value1} értékkel nő.\
     \ A Varázskártyáját mostantól többször is elhasználhatja egyetlen fordulóban.\n\
-    {Value2} <sprite=\"Point\" name=\"Power\"> erőt ad.\nEz a futam végéig tart."
+    {Value2} <sprite=\"Point\" name=\"Power\"> erőt ad.\nEzt a Kiállítási tárgyat\
+    \ nem lehet elvenni {PlayerName} kezéből."
   FlavorText: '"Állítsák vissza a Varázskártya Szabályait!"'
 PulpFiction:
   Name: '"Ponyvaregény"'
