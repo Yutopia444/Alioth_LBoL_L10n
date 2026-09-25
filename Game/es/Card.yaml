@@ -272,7 +272,7 @@ ReimuFreeAttack:
   Name: Fantasía fugaz
 MinengZhuru:
   Name: Inyección de energía mental
-  Description: "Cuando la |f:Habilidad pasiva| de una |Compañera| se activa, se activa\
+  Description: "Cuando la |f:Habilidad pasiva| de una |Aliada| se activa, se activa\
     \ una vez más.\nEsto no afecta a la Influencia ganada o perdida."
 SummerFlower:
   Description: "Inflige {Damage} de daño.\nDurante el resto del combate, cada {SelfName}\
@@ -1311,7 +1311,7 @@ PerfectServant:
     \ name=\"W\"> gastados|: Al comienzo del próximo turno de {PlayerName}, cada carta\
     \ en la mano |cuesta temporalmente| {Value1} maná aleatorio menos.\n|Por cada\
     \ <sprite=\"ManaSprite\" name=\"U\"> gastado|: Al comienzo del próximo turno de\
-    \ {PlayerName}, gana {Mana} y roba una carta adicional."
+    \ {PlayerName}, gana {Value2} maná {Mana} y roba una carta adicional."
 BackToFuture:
   FlavorText: ¿Carretera? A donde vamos, no necesitamos... carreteras.
   Description: "Intercambia las pilas de robar y de descarte.\nRoba {Value1:plural\
@@ -2211,8 +2211,8 @@ GatherFairy:
   Description: "El tamaño máximo de las cartas en la mano pasa a ser de {MaxHand}.\n\
     Roba {Value1} carta{Value1:plural one='' other='s'}."
   UpgradedDescription: "El tamaño máximo de la mano se convierte en {MaxHand}.\nRoba\
-    \ {Value1} carta{Value1:plural one='' other='s'}.\nTodas las |Compañeras| en la\
-    \ mano ganan {Value2} |Influencias|."
+    \ {Value1} carta{Value1:plural one='' other='s'}.\nTodas las |Aliadas| en la mano\
+    \ ganan {Value2} |Influencia{Value1:plural one='' other='s'}|."
   FlavorText: '"¡Ustedes dos son mis alas!"'
 IceBlock:
   Name: Bloque de hielo
@@ -2222,8 +2222,8 @@ IceBlock:
   FlavorText: Después, usas el hechizo "Invisibilidad superior" para escapar del combate.
 FairyTree:
   Name: Hogar de las hadas
-  Description: "Siempre que una |Compañera| sea convocada al jugarse cartas de |Compañeras|,\
-    \ gana {Value1} de |Bloqueo|."
+  Description: "Cada vez que se convoca una |Aliada| al jugar una carta |Aliada|,\
+    \ gana {Value1} de |Bloqueo|"
 BrainOverclock:
   Name: Overclock cerebral
   Description: "Gana {Mana}.\nRoba {Value2} carta{Value2:plural one='' other='s'}.\n\
@@ -2236,12 +2236,12 @@ ColdPotion:
     \ a la pila de robo."
 FrostGarden:
   Name: Entrada Cool
-  Description: "Aplica |Frío| a cada enemigo.\nSi hay una |Compañera| convocada en\
-    \ la mano, {SelfName} cuesta {Mana}."
+  Description: "Aplica |Frío| a cada enemigo.\nSi hay una |Aliada| convocada en la\
+    \ mano, {SelfName} cuesta {Mana}."
   FlavorText: Aire acondicionado gratuito.
   UpgradedDescription: "Aplica |Frío| a cada enemigo.\nSe repite el efecto al comienzo\
-    \ del siguiente turno de {PlayerName}.\nSi hay una |Compañera| convocada en la\
-    \ mano, {SelfName} cuesta {Mana}."
+    \ del siguiente turno de {PlayerName}.\nSi hay una |Aliada| convocada en la mano,\
+    \ {SelfName} cuesta {Mana}."
 IceLance:
   Name: Lanza de hielo
   Description: "Inflige {Damage} de daño.\nSi el objetivo tiene |Frío|, inflige {Value1}\
@@ -2265,8 +2265,8 @@ CirnoDraw:
     \ del siguiente turno, roba {Value2} carta{Value2:plural one='' other='s'}."
 Tether:
   Name: Lazos
-  Description: "Gana {Block} de |Bloqueo|.\nCada |Compañera| en la mano gana {Value1}\
-    \ |Influencia|."
+  Description: "Gana {Block} de |Bloqueo|.\nCada |Aliada| en la mano gana {Value1}\
+    \ |Influencia{Value1:plural one='' other='s'}|."
   FlavorText: Confía en tus amigas cuando salgas afuera.
 YouxiangMoon:
   Name: Belleza de la naturaleza
@@ -2346,11 +2346,11 @@ LongArm:
   Name: Braaazo exteeensible
 CallFriends:
   Name: Llamar a los amigos
-  Description: Elige 1 de {Value1} |Compañeras| para agregarla a la mano. Entra en
-    la mano ya convocada
-  UpgradedDescription: "Elige 1 de {Value1} |Compañeras| para agregarla a la mano.\
-    \ Entra en la mano ya convocada.\nUna |e:Hada de la luz| siempre se incluye como\
-    \ una opción adicional."
+  Description: Elige 1 de {Value1} |Aliadas| para agregarla a la mano. Entra en la
+    mano ya convocada
+  UpgradedDescription: "Elige 1 de {Value1} |Aliadas| para agregarla a la mano. Entra\
+    \ en la mano ya convocada.\nUna |e:Hada de la luz| siempre se incluye como una\
+    \ opción adicional."
   DetailText: Estas |e:cartas alternativas| tienen un coste total de 4 o menos.
 HualiIce:
   Name: Impresionante hielo de verano
@@ -2363,9 +2363,9 @@ HualiIce:
     \ en este turno, {SelfName} cuesta {Mana}."
 ForeverCool:
   Name: Eterna fría época de fantasía
-  Description: "Cuando la |Compañera| use la |a:Habilidad activa| o |u:Habilidad definitiva|,\
+  Description: "Cuando una |Aliada| use la |a:Habilidad activa| o |u:Habilidad definitiva|,\
     \ aplica |Frío| a un enemigo aleatorio.\nSiempre que un enemigo gana |Frío|, una\
-    \ |Compañera| aleatoria en la mano gana {Value1} |Influencia|."
+    \ |Aliada| aleatoria en la mano gana {Value1} |Influencia|."
 IceBarrier:
   Name: Barrera de hielo
   Description: Gana {Value1} |Armaduras de escarcha|.
@@ -2413,9 +2413,9 @@ DeepFreeze:
     \ |Poder temporal|."
 FairyTeam:
   Name: Gran guerra de hadas
-  Description: "Elige cualquier cantidad de |Compañeras| en la mano y |Exílialas|.\
-    \ Gana maná igual a su coste.\nInflige {Damage} de daño a un enemigo aleatorio.\n\
-    Por cada carta |Exiliada| de esta manera, inflige el mismo daño una vez más."
+  Description: "Elige cualquier cantidad |Aliadas| en la mano y |Exílialas|. Gana\
+    \ maná igual a su coste.\nInflige {Damage} de daño a un enemigo aleatorio.\nPor\
+    \ cada carta |Exiliada| de esta manera, inflige el mismo daño una vez más."
 CirnoEcho:
   Name: Regalo de la naturaleza
   Description: "Elige {Value1} carta{Value1:plural one='' other='s'} de la pila de\
@@ -2434,7 +2434,7 @@ CirnoInForest:
 MoreFriends:
   Name: Mariposa social
   Description: "Al comienzo de cada turno de {PlayerName}, agrega {Value1} carta{Value1:plural\
-    \ one='' other='s'} |Compañera{Value1:plural one='' other='s'}| aleatoria{Value1:plural\
+    \ one='' other='s'} |Aliada{Value1:plural one='' other='s'}| aleatoria{Value1:plural\
     \ one='' other='s'} a la mano.\nEstas cartas tienen |Etéreo| y pierden el |Etéreo|\
     \ después de ser convocadas."
   DetailText: Estas |e:cartas alternativas| tienen un coste total de 4 o menos.
@@ -2476,10 +2476,10 @@ ColdChain:
   FlavorText: Comida fresca entregada directamente a tu puerta.
 BestFriend:
   Name: Mejores amigas
-  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Compañera{Value1:plural\
+  Description: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Aliada{Value1:plural\
     \ one='' other='s'}|. Establece{Value1:plural one='' other='n'} su |Influencia|\
     \ al máximo.\n|Desbordamiento|: Gana {Mana}."
-  ExtraDescription1: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Compañera{Value1:plural\
+  ExtraDescription1: "Elige hasta {Value1} carta{Value1:plural one='' other='s'} |Aliada{Value1:plural\
     \ one='' other='s'}|. Establece{Value1:plural one='' other='n'} su |Influencia|\
     \ al máximo.\n|d:Desbordamiento: Gana {Mana}.|"
 PlayWithWaste:
@@ -2513,11 +2513,11 @@ ColdSnap:
     \ en la pila de robo)"
 SummerParty:
   Name: Fiesta cool
-  Description: "Gana {Value1} |Armaduras de escarcha|.\nCada |Compañera| en la mano\
-    \ gana {Value2} |Influencia|."
+  Description: "Gana {Value1} |Armaduras de escarcha|.\nCada |Aliada| en la mano gana\
+    \ {Value2} |Influencia{Value2:plural one='' other='s'}|."
 FairyAllOut:
   Name: Chicas, manos a la obra
-  Description: "Inflige {Damage} de daño a cada enemigo.\nTodas las |Compañeras| convocadas\
+  Description: "Inflige {Damage} de daño a cada enemigo.\nTodas las |Aliadas| convocadas\
     \ en la mano activan su |f:Habilidad pasiva|."
 FakeMoon:
   Name: Luna falsa
@@ -2573,7 +2573,7 @@ Lunatic:
 FruitShake:
   Name: Deliciosos helados de frutas
   Description: "Inflige {Damage} de daño a cada enemigo. Aplica |Frío| a cada enemigo\
-    \ al golpear.\nSi una |Compañera| fue convocada en este turno, {SelfName} cuesta\
+    \ al golpear.\nSi una |Aliada| fue convocada en este turno, {SelfName} cuesta\
     \ {Mana} para jugar."
   FlavorText: ¡Sabor a frutas tropicales, fresco y delicioso!
 DayaojingFriend:
@@ -2589,7 +2589,7 @@ DayaojingFriend:
     \ other='es'} de verano+| a la mano."
 ChooseFriend:
   Name: Encuentro en el lago brumoso
-  Description: "Elige hasta {Value2} de {Value1} cartas |Compañeras| aleatorias para\
+  Description: "Elige hasta {Value2} de {Value1} cartas |Aliadas| aleatorias para\
     \ agregarla{Value2:plural one='' other='s'} a la mano. Se puede gastar maná de\
     \ cualquier color para pagar sus costes de maná."
   DetailText: Las |e:cartas alternativas| ignoran el maná total, el color del maná
@@ -3169,7 +3169,7 @@ PassionAttackToDraw:
     Baraja {SelfName} en la pila de robo."
 FriendDraw:
   Description: "Siempre que se active la |a:Habilidad activa| o la |u:Habilidad definitiva|\
-    \ de una |Compañera|, roba {Value1} carta{Value1:plural one='' other='s'}.\nSiempre\
+    \ de una |Aliada|, roba {Value1} carta{Value1:plural one='' other='s'}.\nSiempre\
     \ que se active una |u:Habilidad definitiva|, gana {Value1} maná aleatorio."
   Name: Reunión en el jardín
 PassionDefense:

@@ -124,12 +124,12 @@ NextAttackUp:
   Description: La próxima carta de |Ataque| inflige {Level} de daño adicional.
   Brief: La próxima carta de ataque que juegues inflige más daño.
 NextTurnLoseHp:
-  Name: Pérdida de vida en el próximo turno
+  Name: Pérdida de vida en el siguiente turno
   Description: Al inicio del próximo turno de {OwnerName}, pierde {Level} de vida.
   Brief: Al inicio del próximo turno de {OwnerName}, pierde vida.
 NextTurnGainBlock:
   Brief: Al inicio del próximo turno de {OwnerName}, gana |Bloqueo|.
-  Name: Bloqueo en el próximo turno
+  Name: Bloqueo en el siguiente turno
   Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Bloqueo|.
 NextTurnGainShield:
   Name: Barrera en el siguiente turno
@@ -248,9 +248,9 @@ PrivateSquare:
     infligirá daño a {PlayerName}.
 TurnStartPurify:
   Name: Purificación inminente
-  Description: "Al inicio del próximo turno de {PlayerName}, se |Purifica| {Level}\
-    \ maná{Value1:plural one='' other='s'}.\nEste efecto es removido al final del\
-    \ turno."
+  Description: "Al inicio del próximo turno de {PlayerName}, se |Purifica{Level:plural\
+    \ one='' other='n'}| {Level} maná{Level:plural one='' other='s'}.\nEste efecto\
+    \ es removido al final del turno."
 InterviewDone:
   Name: Entrevista completa
   Description: "¡{OwnerName} ha descubierto la verdad del incidente!\nElla distribuirá\
@@ -656,9 +656,9 @@ KnifeWithLockedOn:
     one='''' other=''s''}| cuando se juegan.'
   Brief: 'Los |Cuchillos arrojadizos| aplican algunos |Marcados| cuando se juegan.'
 NextTurnLoseGame:
-  Name: Perder en el próximo turno
-  Description: Pierde la partida en el siguiente turno.
-  Brief: Pierde la partida en el siguiente turno.
+  Name: Al borde de la muerte
+  Description: Pierdes la partida en el siguiente turno.
+  Brief: Pierdes la partida en el siguiente turno.
 GrimoireStudySe:
   Name: Grimorio oscuro
   Description: Al final del turno de {OwnerName}, agrega un |Arcoíris| a la mano.
@@ -763,9 +763,9 @@ LoseSpiritSe:
   Name: Capa de plumas perdida
 UseCardToLoseGame:
   Name: Corta esperanza de vida
-  Description: Pierde la partida después de jugar {Count:plural one='% carta más'
+  Description: Pierdes la partida después de jugar {Count:plural one='% carta más'
     other='% cartas más'}.
-  Brief: Pierde la partida después de jugar algunas cartas.
+  Brief: Pierdes la partida después de jugar algunas cartas.
 BailianBlackSe:
   Name: Abraza la oscuridad
   Description: Todas las cartas de Defensa, Habilidad y de Estado tienen |Exilio|.
@@ -842,10 +842,9 @@ BailianFireSe:
     \ a la mano.\n|Cuestan temporalmente| {Mana} teniendo |Exilio| y |Etéreo|."
 FairyTreeSe:
   Name: Hogar de las hadas
-  Brief: Siempre que una |Compañera| es convocada al jugar cartas |Compañeras|, gana
-    |Bloqueo|.
-  Description: Siempre que una |Compañera| es convocada al jugar cartas |Compañeras|,
-    gana {Level} de |Bloqueo|.
+  Brief: Cada vez que se convoca una |Aliada| al jugar una carta |Aliada|, gana |Bloqueo|.
+  Description: Cada vez que se convoca una |Aliada| al jugar una carta |Aliada|, gana
+    {Level} de |Bloqueo|.
 FrostArmor:
   Name: Armadura de escarcha
   Description: "Al comienzo de cada turno de {OwnerName}, gana {Level} de |Bloqueo|\
@@ -872,20 +871,21 @@ IceMatrixSe:
 ForeverCoolSe:
   Name: Eterna fría época de fantasía
   Brief: "Después de que la |a:Habilidad activa| o |u:Habilidad definitiva| de una\
-    \ |Compañera| se active, aplica |Frío| a enemigos aleatorios.\nCada vez que un\
-    \ enemigo gana |Frío|, las |Compañeras| aleatorias en la mano ganan algo de |Influencia|."
-  Description: "Cuando la |a:Habilidad activa| o |u:Habilidad definitiva| de una |Compañera|\
+    \ |Aliada| se active, aplica |Frío| a enemigos aleatorios.\nCada vez que un enemigo\
+    \ gana |Frío|, las |Aliadas| aleatorias en la mano ganan algo de |Influencia|."
+  Description: "Cuando la |a:Habilidad activa| o |u:Habilidad definitiva| de una |Aliada|\
     \ se activa, aplica |Frío| a {Level} enemigo{Level:plural one=' aleatorio' other='s\
-    \ aleatorios'}.\nCada vez que un enemigo gana |Frío|, {Level} |Compañera{Level:plural\
+    \ aleatorios'}.\nCada vez que un enemigo gana |Frío|, {Level} |Aliada{Level:plural\
     \ one='' other='s'}| aleatoria{Level:plural one='' other='s'} en la mano gana{Level:plural\
     \ one=' % |Influencia|' other='n % |Influencias|'}."
 MoreFriendsSe:
   Name: Mariposa social
   Description: "Al comienzo del turno de {PlayerName}, agrega {Level} carta{Level:plural\
-    \ one='' other='s'} de |Compañera| aleatoria{Level:plural one='' other='s'} a\
-    \ la mano.\n{Level:plural one='Tiene' other='Tienen'} |Etéreo| y pierde{Level:plural\
-    \ one='' other='n'} el |Etéreo| después de ser convocada{Level:plural one='' other='s'}."
-  Brief: "Al comienzo del turno de {PlayerName}, agrega cartas |Compañeras| aleatorias\
+    \ one='' other='s'} |Aliada{Level:plural one='' other='s'}| aleatoria{Level:plural\
+    \ one='' other='s'} a la mano.\n{Level:plural one='Tiene' other='Tienen'} |Etéreo|\
+    \ y pierde{Level:plural one='' other='n'} el |Etéreo| después de ser convocada{Level:plural\
+    \ one='' other='s'}."
+  Brief: "Al comienzo del turno de {PlayerName}, agrega cartas |Aliadas| aleatorias\
     \ a la mano.\nTienen |Etéreo| y perderán el |Etéreo| después de ser convocadas."
 YouxiangMoonSe:
   Name: Belleza de la naturaleza
@@ -894,10 +894,10 @@ YouxiangMoonSe:
   Brief: Al comienzo del turno de {PlayerName}, gana {Mana}.
 MinengZhuruSe:
   Name: Inyección de energía mental
-  Description: "Las habilidades pasivas de las cartas |Compañeras| convocadas se activa{Level:plural\
+  Description: "Las habilidades pasivas de las cartas |Aliadas| convocadas se activa{Level:plural\
     \ one='' other='n'} {Level} ve{Level:plural one='z' other='ces'} más."
-  Brief: "Las habilidades pasivas de las cartas |Compañeras| convocadas se activan\
-    \ varias veces más."
+  Brief: "Las habilidades pasivas de las cartas |Aliadas| convocadas se activan varias\
+    \ veces más."
 PurifyModule:
   Name: Módulo de purificación
   Description: Cada vez que {OwnerName} golpea a {PlayerName} con un ataque, se |Purifica|
@@ -1032,7 +1032,7 @@ SuperExtraTurn:
     \ del turno: a {SelfName} le queda{Count:plural one='' other='n'} {Count} carta{Count:plural\
     \ one='' other='s'} por jugar.\n"
 NextTurnGainGraze:
-  Name: Evasión en el próximo turno
+  Name: Evasión en el siguiente turno
   Description: Al inicio del próximo turno de {OwnerName}, gana {Level} de |Evasión|.
   Brief: Al inicio del próximo turno de {OwnerName}, gana |Evasión|.
 ClockCorpseSe:
@@ -1188,11 +1188,11 @@ ZhenmiaowanAbilitySe:
   Name: Magia del mazo
 FriendDrawSe:
   Description: "Siempre que se active la |a:Habilidad activa| o |u:Habilidad definitiva|\
-    \ de una |Compañera|, roba {Level} carta{level:plural one='' other='s'}.\nSiempre\
+    \ de una |Aliada|, roba {Level} carta{level:plural one='' other='s'}.\nSiempre\
     \ que se active una |u:Habilidad definitiva|, gana {Level} man{Level:plural one='á\
     \ aleatorio' other='as aleatorios'}."
   Brief: "Siempre que se active la |a:Habilidad activa| o |u:Habilidad definitiva|\
-    \ de una |Compañera|, roba cartas\nSiempre que se active una |u:Habilidad definitiva|,\
+    \ de una |Aliada|, roba cartas\nSiempre que se active una |u:Habilidad definitiva|,\
     \ gana maná aleatorio."
   Name: Reunión en el jardín
 PassionDrawSe:
