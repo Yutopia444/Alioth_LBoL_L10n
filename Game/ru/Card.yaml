@@ -287,8 +287,8 @@ HuijuQiankun:
     \ каждую карту, |Изгнанную| таким способом."
   FlavorText: Выберите все файлы, нажмите ПКМ и "Удалить", очистите "Корзину".
 KuosanLingfu:
-  Description: "Наносит {Damage} урона всем врагам.\nДаёт |Барьер|, равный количеству\
-    \ незаблокированному урону, нанесённому таким способом."
+  Description: "Наносит {Damage} урона всем врагам.\nДаёт |Барьер|, равный незаблокированному\
+    \ урону, нанесённому таким способом."
   Name: Расширяющаяся печать
 DanceAroundLake:
   Description: Каждый раз, когда карта |Изгоняется|, вытягивайте {Value1:plural one='%
@@ -2299,9 +2299,10 @@ DayaojingFriend:
   UpgradedExtraDescription1: '{FriendA}Даёт {Block} |Защиты| и {Shield} |Барьера|.'
   Name: Дайёсей, помощница сыщика
   FlavorText: Детективу нужен ассистент - это знает даже Чирно.
-  ExtraDescription3: '{FriendU}Добавляет {Value1} карты |Летних цветов| в руку.'
-  UpgradedExtraDescription3: '{FriendU}Добавляет {Value1} карты |Летних цветов+| в
-    руку.'
+  ExtraDescription3: '{FriendU}Добавляет {Value1:plural one=''|Летние цветы|'' other=''%
+    |Летних цветов|''} в руку.'
+  UpgradedExtraDescription3: '{FriendU}Добавляет {Value1:plural one=''|Летние цветы|''
+    other=''% |Летних цветов|''} в руку.'
 CirnoInForest:
   Description: "Даёт {Block} |Защиты|.\nДаёт {Value1} |Уворота|."
   FlavorText: Просто лесная фея.
@@ -2385,7 +2386,7 @@ SunnyFriend:
     раз.'
   ExtraDescription1: "{FriendA}Даёт |Оптический камуфляж| на {Light} {Light:plural\
     \ one='ход' other='хода'}."
-  ExtraDescription3: "{FriendU}Сразу наносит {Value1} урона раз{Value1:plural one=''\
+  ExtraDescription3: "{FriendU}Сразу наносит урон {Value1} раз{Value1:plural one=''\
     \ other='а'}.\nДаёт {Value2} |Огневой мощи|."
 BrainOverclock:
   Name: Истощение мозга
@@ -2893,7 +2894,8 @@ FriendDraw:
   Name: Сбор в саду
   Description: "Когда активируется |a:Активное умение| или |u:Ультимативное умение|\
     \ |Товарища|, возьмите {Value1} карт{Value1:plural one='у' other='ы'}.\nЕсли активировано\
-    \ именно |u:Ультимативное умение|, также даёт {Value1} случайной маны."
+    \ именно |u:Ультимативное умение|, также даёт {Value1} случайн{Value1:plural one='ую'\
+    \ other='ой'} ман{Value1:plural one='у' other='ы'}."
 Qianqiang:
   Name: Милая фаланга
   Description: (WIP) 
@@ -3126,7 +3128,7 @@ YuetuYuyi:
   FlavorText: Оставшееся напоминание о Луне.
 YouxiangMoon:
   Description: "В начале хода {PlayerName:g} даёт {Mana}.\nДобавляет {Value1:plural\
-    \ one='карту |Летние цветы|' other='% карты |Летние цветы|'} в руку."
+    \ one='|Летние цветы|' other='% |Летних цветов|'} в руку."
   Name: Красоты природы
   FlavorText: 'Другими словами: Качо Фугецу, Шофу Рогецу.'
 YouxiangAttack:
@@ -3200,7 +3202,7 @@ HatateShot:
     \ сейчас ману. (Итого: {Special} |Защиты|)"
 SunflowerDefense:
   Name: Солнечный сад
-  Description: "Даёт {Block} |Защиты|.\nДобавляет {Value1} |Летние Цветы| в руку."
+  Description: "Даёт {Block} |Защиты|.\nДобавляет {Value1} |Летние цветы| в руку."
   FlavorText: Знаменитый пейзаж из Гэнсокё.
 ShopSearch:
   Description: Выберите карту Атаки или Обороны из стопки добора и положите её в руку.
