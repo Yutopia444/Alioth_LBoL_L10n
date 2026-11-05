@@ -683,7 +683,7 @@ DarkSatellite:
   Name: Тёмный спутник
   FlavorText: Используй снаряд против снаряда!
 WinterWarm:
-  Description: "Даёт {Value1} |Собранности|.\n|Изгнать| до {Value1} карт{Value1:plural\
+  Description: "Даёт {Value1} |Собранности|.\n|Изгоните| до {Value1} карт{Value1:plural\
     \ one='ы' other=''} в руке.\nПолучить |Собранность|, равную числу |Изгнанных|\
     \ карт.\nВзять {Value2} карт{Value2:plural one='у' other='ы'}."
   Name: Рукогрейка
@@ -1328,7 +1328,7 @@ Shengyan:
   Name: Пир
 CloseEyeShoot:
   Description: Наносит {Damage} урона случайному врагу {Value1:plural one='% раз'
-    other='% раза'}.
+    few='% раза' other='% раз'}.
   Name: Выстрел из закрытых глаз
 ToolDraw:
   Description: "Возьмите {Value1:plural one='% карту' other='% карты'}.\n|Кол-во использований\
@@ -1497,11 +1497,11 @@ YijiuAttack:
     \ |Безупречности| и |Изгоняется|."
   Name: Молния бога-дракона
 HuiyinRetain:
-  Description: "Верните до {Value1} выбранных карт из стопки сброса в руку. В этом\
+  Description: "Выберите и верните до {Value1} карт из стопки сброса в руку. В этом\
     \ ходу они |Оставляются|.\nЗакончите текущий ход и сделайте |Доп. ход|.\n|Ограничение\
     \ времени| {Mana}"
   Name: Возвращение по мосту Итидзё
-  ExtraDescription1: "Верните до {Value1} выбранных карт из стопки сброса в руку.\
+  ExtraDescription1: "Выберите и верните до {Value1} карт из стопки сброса в руку.\
     \ В этом ходу они |Оставляются|.\nЗакончите текущий ход и сделайте |Доп. ход|.\n\
     |d:|Ограничение времени| {Mana}|"
 BaitianCard:
@@ -2130,8 +2130,9 @@ DoubleDajiejie:
 MarisaHoldCard:
   FlavorText: '"Не выбрасывай, когда-нибудь обязательно пригодится."'
   Name: Тяжесть расставания
-  Description: "Выберите до {Value1} {Value1:plural one='карты' other='карт'} в руке.\
-    \ В этом ходу они |Оставляются|.\nДаёт {Block} |Защиты|."
+  Description: "Выберите до {Value1:plural one='% карты' other='% карт'} в руке. {Value1:plural\
+    \ one='Она' other='Они'} |{Value1:plural one='Оставляется' other='Оставляются'}|.\n\
+    Даёт {Block} |Защиты|."
 DiscardToCharging:
   Name: Заливание топлива
   FlavorText: Мини-хаккэро сжигает что угодно.
@@ -2396,7 +2397,7 @@ BrainOverclock:
 LilyFriend:
   Name: Лили Уайт, предвестница весны
   Description: "{FriendS}Наносит {Damage} урона от атак случайному врагу {Value1:plural\
-    \ one='% раз' other='% раза'}.\n{FriendP}Даёт {TurnMana}."
+    \ one='% раз' few='% раза' other='% раз'}.\n{FriendP}Даёт {TurnMana}."
   ExtraDescription1: '{FriendA}Даёт {ActiveMana}.'
   ExtraDescription3: '{FriendU}Восстанавливает {Heal} здоровья.'
 HualiIce:
